@@ -1,0 +1,11 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DW08Bx/dw08a.sch at 10/03/2007 09:16:09a
+
+WARNING: Sheet 4/6: POWER Pin B22V2 GND connected to P_BREAK
+WARNING: Sheet 4/6: POWER Pin B23V2 GND connected to P_BREAK
+
+Board and schematic are consistent
+
+    0 errors
+    2 warnings

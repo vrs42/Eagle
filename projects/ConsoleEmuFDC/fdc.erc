@@ -1,0 +1,19 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/ConsoleEmuFDC/fdc.sch at  4/07/2006 02:05:22p
+
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC1 CS0
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC1 CS2
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC1 CS1
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC1 E
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC1 CA1
+WARNING: Sheet 1/1: POWER Pin IC1P VSS connected to GND
+ERROR: Only INPUT Pins on net A00
+ERROR: Only INPUT Pins on net A01
+ERROR: Only INPUT Pins on net R/W\
+ERROR: Only INPUT Pins on net RST\
+
+Board and schematic are consistent
+
+    9 errors
+    1 warnings

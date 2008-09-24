@@ -1,0 +1,83 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/NTC08/nt08.sch at  1/17/2008 08:23:41p
+
+WARNING: Only 1 Pin on net 00
+ERROR: Only INPUT Pins on net 0_TO_DTB
+WARNING: Only 1 Pin on net 0_TO_DTB
+WARNING: Only 1 Pin on net 0_TO_STATE\
+WARNING: Only 1 Pin on net 0_TO_W\
+WARNING: Only 1 Pin on net 01
+WARNING: Only 1 Pin on net 02
+WARNING: Only 1 Pin on net 03
+WARNING: Only 1 Pin on net 04
+WARNING: Only 1 Pin on net 05
+WARNING: Only 1 Pin on net 06
+WARNING: Only 1 Pin on net 07
+ERROR: Only INPUT Pins on net BAC_04
+WARNING: Only 1 Pin on net BAC_10
+WARNING: Only 1 Pin on net BAC_11
+ERROR: Only INPUT Pins on net BMB_04
+WARNING: Only 1 Pin on net BMB_04
+WARNING: Only 1 Pin on net BMB_04\
+ERROR: 2 OUTPUT Pins on net IM_00\_
+ERROR: 2 OUTPUT Pins on net IM_01\_
+ERROR: 2 OUTPUT Pins on net IM_02\_
+ERROR: 2 OUTPUT Pins on net IM_03\_
+ERROR: 2 OUTPUT Pins on net IM_04\_
+ERROR: 2 OUTPUT Pins on net IM_05\_
+ERROR: 2 OUTPUT Pins on net IM_06\_
+ERROR: 2 OUTPUT Pins on net IM_07\_
+ERROR: 2 OUTPUT Pins on net IM_08\_
+ERROR: Only INPUT Pins on net MK_BLK_END
+WARNING: Only 1 Pin on net MK_BLK_END
+ERROR: Only INPUT Pins on net MK_BLK_END\
+WARNING: Only 1 Pin on net MK_BLK_END\
+ERROR: Only INPUT Pins on net MK_BLK_MK
+ERROR: Only INPUT Pins on net MK_BLK_START\
+WARNING: Only 1 Pin on net MK_BLK_START\
+ERROR: Only INPUT Pins on net MK_DATA\
+WARNING: Only 1 Pin on net MK_DATA\
+ERROR: Only INPUT Pins on net MK_END
+WARNING: Only 1 Pin on net MK_END
+ERROR: Only INPUT Pins on net MK_END\
+WARNING: Only 1 Pin on net MK_END\
+WARNING: Only 1 Pin on net MOVE
+WARNING: Only 1 Pin on net N$32
+WARNING: Only 1 Pin on net PWR_CLR
+WARNING: Only 1 Pin on net RDD_00\
+WARNING: Only 1 Pin on net RDD_01\
+WARNING: Only 1 Pin on net RDD_02\
+WARNING: Only 1 Pin on net RDMK
+WARNING: Only 1 Pin on net RDMK\
+WARNING: Only 1 Pin on net READ_ALL
+WARNING: Only 1 Pin on net RSTA
+WARNING: Only 1 Pin on net RSTB
+WARNING: Only 1 Pin on net SE
+WARNING: Only 1 Pin on net SHIFT_CK
+ERROR: Only INPUT Pins on net SH_ST
+WARNING: Only 1 Pin on net SH_ST
+WARNING: Only 1 Pin on net SH_ST-B
+WARNING: Only 1 Pin on net SP_DY
+WARNING: Only 1 Pin on net ST_DATA\
+ERROR: Only INPUT Pins on net ST_FINAL\
+WARNING: Only 1 Pin on net ST_REV_CK\
+ERROR: Only INPUT Pins on net SYNC
+WARNING: Only 1 Pin on net SYNC_EN
+WARNING: Only 1 Pin on net U+M_DY
+WARNING: Only 1 Pin on net W-INH
+WARNING: Only 1 Pin on net W01
+WARNING: Only 1 Pin on net W02
+WARNING: Only 1 Pin on net W03
+WARNING: Only 1 Pin on net W04
+WARNING: Only 1 Pin on net W05
+WARNING: Only 1 Pin on net W06
+WARNING: Only 1 Pin on net W07
+WARNING: Only 1 Pin on net W08
+WARNING: Only 1 Pin on net W09
+ERROR: Only INPUT Pins on net WRITE_OK+UTS
+
+Board and schematic are consistent
+
+   23 errors
+   51 warnings

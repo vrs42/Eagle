@@ -1,0 +1,15 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/Mxxx/M121/M121.sch at  1/11/2008 09:18:40a
+
+ERROR: Sheet 1/1: unconnected INPUT Pin: E1 1X
+ERROR: Sheet 1/1: unconnected INPUT Pin: E1 1X\
+ERROR: Sheet 1/1: unconnected INPUT Pin: E2 1X
+ERROR: Sheet 1/1: unconnected INPUT Pin: E2 1X\
+ERROR: Sheet 1/1: unconnected INPUT Pin: E3 1X
+ERROR: Sheet 1/1: unconnected INPUT Pin: E3 1X\
+
+Board and schematic are consistent
+
+    6 errors
+    0 warnings

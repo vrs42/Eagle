@@ -1,0 +1,22 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/mmu6100/mmu6100cp.sch at  1/17/2008 05:01:09p
+
+ERROR: Sheet 1/3: unconnected INPUT Pin: IC15C I0
+ERROR: Sheet 1/3: unconnected INPUT Pin: IC15C I1
+ERROR: Sheet 1/3: unconnected INPUT Pin: IC15D I0
+ERROR: Sheet 1/3: unconnected INPUT Pin: IC15D I1
+WARNING: Sheet 3/3: POWER Pin IC20 VSS connected to GND
+WARNING: Sheet 3/3: POWER Pin IC21 VSS connected to GND
+ERROR: 3 OUTPUT Pins on net OSCOUT
+WARNING: Only 1 Pin on net XTA\
+WARNING: Only 1 Pin on net XTB\
+WARNING: Sheet 1/3: pins overlap at (0.4 2.7)
+WARNING: Sheet 1/3: pins overlap at (0.4 3.1)
+WARNING: Sheet 1/3: pins overlap at (1.2 2.9)
+WARNING: Sheet 1/3: pins overlap at (1.2 3.1)
+
+Board and schematic are consistent
+
+    5 errors
+    8 warnings

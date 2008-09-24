@@ -1,0 +1,4 @@
+PDP-8/L
+<UL>
+<LI><b>pdp8l</b> is a drawing of DEC's PDP-8/L computer backplane, with some NC pins 
+grounded to suppress warnings, and the hand-wired +5 distribution connections omitted.</LI>

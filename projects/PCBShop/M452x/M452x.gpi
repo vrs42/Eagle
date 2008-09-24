@@ -1,0 +1,43 @@
+Photoplotter Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/PCB Shop/M452x/M452x.gpi
+
+ Date              : 12/02/2003 11:08:16a
+ Plotfile          : C:/PROGRAM FILES/EAGLE-4.11/projects/PCB Shop/M452x/M452x.sts
+ Apertures         : generated: 
+ Device            : Gerber photoplotter with RS-274-X aperture generation
+
+Parameter settings:
+
+ Emulate Apertures : no
+ Emulate Thermal   : no
+ Emulate Annulus   : no
+ Tolerance Draw  + :  0.00 %
+ Tolerance Draw  - :  0.00 %
+ Tolerance Flash + :  0.00 %
+ Tolerance Flash - :  0.00 %
+ Rotate            : no
+ Mirror            : yes
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+
+Plotfile Info:
+
+ Coordinate Format : 2.4
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Apertures used:
+
+ Code     Shape     Size                  used
+
+ D10      square    0.0672inch              36
+ D11      rectangle 0.6750inch x 0.0850inch    18
+ D12      octagon   0.0672inch              30
+ D13      round     0.0672inch               4
+ D14      oval      0.1232inch x 0.0672inch    70
+ D15      oval      0.0672inch x 0.1232inch    70
+ D16      octagon   0.0756inch              12
+

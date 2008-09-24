@@ -1,0 +1,14 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/ConsoleEmu/core09ss.sch at  5/25/2004 06:54:00a
+
+WARNING: Sheet 1/3: POWER Pin IC21P VSS connected to GND
+WARNING: Sheet 1/3: POWER Pin IC24P VSS connected to GND
+WARNING: Sheet 1/3: POWER Pin IC27A V+ connected to VCC
+WARNING: Sheet 1/3: POWER Pin IC22 VSS connected to GND
+WARNING: Sheet 1/3: POWER Pin IC17P VSS connected to GND
+
+Board and schematic are consistent
+
+    0 errors
+    5 warnings

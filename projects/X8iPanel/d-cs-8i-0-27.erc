@@ -1,0 +1,141 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/X8iPanel/d-cs-8i-0-27.sch at 11/19/2006 01:31:47p
+
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin C40G$31 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin C40G$32 VCC
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin C40G$32 GND
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP1 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP2 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP3 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP4 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP5 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP6 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP7 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP8 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP12 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP13 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP14 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP15 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP16 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP17 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40TOP18 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT1 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT2 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT3 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT4 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT5 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT6 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT9 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT11 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT12 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT14 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT15 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT16 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT17 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT18 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: C40BOT19 1
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E40G$31 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E40G$32 VCC
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E40G$32 GND
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP1 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP2 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP3 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP4 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP5 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP6 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP7 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP8 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP12 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP13 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP14 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP15 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP16 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP17 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40TOP18 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT1 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT2 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT3 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT4 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT5 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT6 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT9 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT11 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT12 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT14 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT15 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT16 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT17 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT18 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E40BOT19 1
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin F40G$31 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin F40G$32 VCC
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin F40G$32 GND
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP1 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP2 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP3 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP4 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP5 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP6 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP7 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP8 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP12 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP13 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP14 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP15 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP16 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP17 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40TOP18 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT1 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT2 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT3 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT4 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT5 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT6 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT9 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT11 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT12 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT14 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT15 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT16 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT17 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT18 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F40BOT19 1
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin D40G$31 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin D40G$32 VCC
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin D40G$32 GND
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP1 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP2 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP3 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP4 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP5 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP6 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP7 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP8 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP12 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP13 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP14 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP15 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP16 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP17 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40TOP18 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT1 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT2 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT3 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT4 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT5 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT6 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT9 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT11 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT12 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT14 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT15 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT16 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT17 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT18 1
+ERROR: Sheet 1/1: unconnected INPUT Pin: D40BOT19 1
+
+Board and schematic are consistent
+
+  132 errors
+    0 warnings

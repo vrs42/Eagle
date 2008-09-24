@@ -1,0 +1,23 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/mmu6100/ts6907.sch at  7/07/2007 08:58:01a
+
+WARNING: Only 1 Pin on net C0\
+WARNING: Only 1 Pin on net C1\
+WARNING: Only 1 Pin on net DATAF
+WARNING: Only 1 Pin on net DMAGNT
+WARNING: Only 1 Pin on net EM0
+WARNING: Only 1 Pin on net EM1
+WARNING: Only 1 Pin on net EM2
+WARNING: Only 1 Pin on net INTDIS
+WARNING: Only 1 Pin on net MEMSEL\
+WARNING: Only 1 Pin on net RDF\
+WARNING: Only 1 Pin on net RIB\
+WARNING: Only 1 Pin on net RIF\
+WARNING: Only 1 Pin on net RMF\
+WARNING: Only 1 Pin on net XTC
+
+Board and schematic are consistent
+
+    0 errors
+   14 warnings

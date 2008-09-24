@@ -1,0 +1,55 @@
+Drill Station Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/ConsoleEmu/core.dri
+
+ Date              :  4/22/2004 05:15:04p
+ Drills            : C:/PROGRAM FILES/EAGLE-4.11/projects/ConsoleEmu/core.drl
+ Device            : Excellon drill station
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Data Mode         : Absolute
+ Units             : 1/1000 Inch
+ End Of Block      : CR/LF
+
+Drill Tolerances:
+
+ -- Requested --  -- Used Drill --
+
+ Size       used  Code  Size
+
+ 40.000mil    34  T04   1.000mm
+ 130.000mil     2  T05   3.300mm
+ 36.000mil     6  T02   0.900mm
+
+Missing Drills:
+
+ -- Requested --
+
+ Size       used
+
+ 32.000mil   350
+ 2.800mm       4
+ 24.000mil   127
+
+Drills used:
+
+ Code  Size       used
+
+ T02   0.900mm       6
+ T04   1.000mm      34
+ T05   3.300mm       2
+
+Total number of drills: 42
+
+!!!!!!!!! DRILLS MISSING - NO DRILL FILE HAS BEEN PRODUCED!

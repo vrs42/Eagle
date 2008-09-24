@@ -1,0 +1,254 @@
+Partlist
+
+Exported from both.brd at  8/03/2005 02:12:41p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Value          Package      Library        Position (inch)       Orientation
+
+BOOT                    B3F-40XX     switch-omron   (12.2 7.05)           R90
+C1                      C-5          discrete       (14.5 2.25)           R90
+C2                      C-5          discrete       (14.5 1.45)           R90
+C3                      C-5          discrete       (14.5 0.65)           R90
+C4                      C-5          discrete       (13.4 3.05)           R90
+C5                      C-5          discrete       (13.4 2.25)           R90
+C6                      C-5          discrete       (13.4 1.45)           R90
+C7                      C-5          discrete       (13.4 0.65)           R90
+C8                      C-5          discrete       (12.2 3.05)           R90
+C9                      C-5          discrete       (12.2 2.25)           R90
+C10                     C-5          discrete       (12.2 1.45)           R90
+C11                     C-5          discrete       (12.2 0.65)           R90
+C12                     C-5          discrete       (10.3 3)              R90
+C13                     C-5          discrete       (10.3 2.25)           R90
+C14                     C-5          discrete       (10.3 1.45)           R90
+C15                     C-5          discrete       (10.3 0.7)            R90
+C16                     C-5          discrete       (9.2 3.05)            R90
+C17                     C-5          discrete       (9.2 2.25)            R90
+C18                     C-5          discrete       (9.2 1.45)            R90
+C19                     C-5          discrete       (9.2 0.65)            R90
+C20                     C-5          discrete       (8.2 3)               R90
+C21                     C-5          discrete       (8.2 2.25)            R90
+C22                     C-5          discrete       (8.2 1.45)            R90
+C23                     C-5          discrete       (8.2 0.65)            R90
+C24                     C-5          discrete       (7.2 2.25)            R90
+C25                     C-5          discrete       (7.2 1.45)            R90
+C26                     C-5          discrete       (7.2 0.65)            R90
+C27                     C-5          discrete       (6.2 3.05)            R90
+C28                     C-5          discrete       (6.2 2.25)            R90
+C29                     C-5          discrete       (6.2 1.45)            R90
+C30                     C-5          discrete       (6.2 0.65)            R90
+C31                     C-5          discrete       (5.1 2.25)            R90
+C32                     C-5          discrete       (5.1 1.45)            R90
+C33                     C-5          discrete       (5.1 0.65)            R90
+C34                     C-5          discrete       (4 2.25)              R90
+C35                     C-5          discrete       (4 1.45)              R90
+C36                     C-5          discrete       (4 0.7)               R90
+C37      10             C-5          discrete       (14.5 2.95)           R270
+C38      6.8uf          E15-5        rcl            (0.4 2.9)             R90
+C39      6.8uf          E15-5        rcl            (0.6 2.9)             R90
+C40      47             C-5          discrete       (14.6 2.95)           R270
+C41      0.01           C050-025X075 rcl            (10.05 5)             R180
+C42      0.01           C050-025X075 rcl            (8.85 5.1)            R180
+C43      0.01           C050-025X075 rcl            (7.55 5)              R180
+C44      0.01           C050-025X075 rcl            (7.05 6.3)            R180
+C45      0.01           C050-025X075 rcl            (6.35 5.1)            R180
+C46      0.01           C050-025X075 rcl            (5.65 5)              R180
+C47      0.01           C050-025X075 rcl            (4.95 5)              R180
+C48      0.01           C050-025X075 rcl            (4.25 5)              R180
+C49      0.01           C050-025X075 rcl            (1.95 5.2)            R180
+C50      0.01           C050-025X075 rcl            (1.95 6.5)            R180
+C51      0.01           C050-025X075 rcl            (1.25 4.2)            R180
+C52      0.01           C050-025X075 rcl            (1.25 5.3)            R180
+C53      0.01           C050-025X075 rcl            (1.25 6.4)            R180
+C54      0.01           C050-025X075 rcl            (0.55 4.2)            R180
+C55      0.01           C050-025X075 rcl            (0.55 5.3)            R180
+C56      0.01           C050-025X075 rcl            (0.55 6.5)            R180
+C57      6.8uf          E22-6        rcl            (3.7 5.45)            R270
+C58      6.8uf          E22-6        rcl            (3.3 5.45)            R270
+C59      1.0uf          E15-5        rcl            (2.4 5.9)             R270
+C60      82pf           C050-025X075 rcl            (1.6 5.5)             R90
+D1       MQ             LED5MM       led            (9.45 4.4)            R180
+D2       SR             LED5MM       led            (9.45 5.1)            R180
+D3       MD             LED5MM       led            (9.45 5.8)            R180
+D4       AC             LED5MM       led            (8.25 4.4)            R180
+D5       STATUS         LED5MM       led            (8.25 5.1)            R180
+D6       STATE          LED5MM       led            (8.25 5.8)            R180
+D7       BUS            LED5MM       led            (7.05 5.1)            R180
+D8       RUN            LED5MM       led            (7.05 5.8)            R180
+DISP                    B3F-40XX     switch-omron   (13.1 7.05)           R90
+DNEXT                   B3F-40XX     switch-omron   (11.3 6.15)           R90
+DTHIS                   B3F-40XX     switch-omron   (11.3 7.05)           R90
+E1       74LS95N        DIL14        74xx-us        (14.9 2.25)           R0
+E2       74LS95N        DIL14        74xx-us        (14.9 1.45)           R0
+E3       74LS95N        DIL14        74xx-us        (14.9 0.65)           R0
+E4       74LS123N       DIL16        74xx-us        (13.85 3.05)          R0
+E5       74LS175N       DIL16        74xx-us        (13.85 2.25)          R0
+E6       74LS175N       DIL16        74xx-us        (13.85 1.45)          R0
+E7       74LS175N       DIL16        74xx-us        (13.85 0.65)          R0
+E8       74LS00N        DIL14        74xx-us        (12.6 3.05)           R0
+E9       74S244N        DIL20        74xx-us        (12.75 2.25)          R0
+E10      74S244N        DIL20        74xx-us        (12.75 1.45)          R0
+E11      74S244N        DIL20        74xx-us        (12.75 0.65)          R0
+E12      74LS174N       DIL16        74xx-us        (10.75 3)             R0
+E13      74LS174N       DIL16        74xx-us        (10.75 2.25)          R0
+E14      74LS174N       DIL16        74xx-us        (10.75 1.45)          R0
+E15      74LS174N       DIL16        74xx-us        (10.75 0.7)           R0
+E16      74LS74N        DIL14        74xx-us        (9.6 3.05)            R0
+E17      74LS153N       DIL16        74xx-us        (9.65 2.25)           R0
+E18      74LS153N       DIL16        74xx-us        (9.65 1.45)           R0
+E19      74LS153N       DIL16        74xx-us        (9.65 0.65)           R0
+E20      74LS74N        DIL14        74xx-us        (8.6 3.05)            R0
+E21      74LS27N        DIL14        74xx-us        (8.6 2.25)            R0
+E22      74LS02N        DIL14        74xx-us        (8.6 1.45)            R0
+E23      7416N          DIL14        74xx-us        (8.6 0.65)            R0
+E24      74LS04N        DIL14        74xx-us        (7.6 2.25)            R0
+E25      74LS27N        DIL14        74xx-us        (7.6 1.45)            R0
+E26      74LS75N        DIL16        74xx-us        (7.65 0.65)           R0
+E27      7404N          DIL14        74xx-us        (6.6 3.05)            R0
+E28      74LS367N       DIL16        74xx-us        (6.65 2.25)           R0
+E29      74LS138N       DIL16        74xx-us        (6.65 1.45)           R0
+E30      74LS00N        DIL14        74xx-us        (6.6 0.65)            R0
+E31      74LS367N       DIL16        74xx-us        (5.55 2.25)           R0
+E32      74LS08N        DIL14        74xx-us        (5.5 1.45)            R0
+E33      74LS02N        DIL14        74xx-us        (5.5 0.65)            R0
+E34      74LS367N       DIL16        74xx-us        (4.45 2.25)           R0
+E35      74LS138N       DIL16        74xx-us        (4.45 1.45)           R0
+E36      74LS174N       DIL16        74xx-us        (4.45 0.7)            R0
+E37      74LS148N       DIL16        74xx-us        (10.05 5.45)          R270
+E38      74LS148N       DIL16        74xx-us        (7.55 5.45)           R270
+E39      74LS08N        DIL14        74xx-us        (6.35 5.5)            R270
+E40      74LS20N        DIL14        74xx-us        (1.25 5.7)            R270
+E41      74LS95N        DIL14        74xx-us        (0.55 5.7)            R270
+E42      74LS74N        DIL14        74xx-us        (0.55 4.6)            R270
+E43      74LS04N        DIL14        74xx-us        (1.25 4.6)            R270
+E44      74LS123N       DIL16        74xx-us        (1.95 5.65)           R270
+E45      74LS08N        DIL14        74xx-us        (8.85 5.5)            R270
+E46      7446N          DIL16        74xx-us        (5.65 5.45)           R270
+E47      7446N          DIL16        74xx-us        (7.05 6.75)           R270
+E48      HD-H101        HDSP-M       display-hp     (6.3 7)               R0
+E49      HD-H101        HDSP-M       display-hp     (5.8 7)               R0
+E50      HD-H101        HDSP-M       display-hp     (5.3 7)               R0
+E51      HD-H101        HDSP-M       display-hp     (4.8 7)               R0
+E52      HD-H101        HDSP-M       display-hp     (9.6 7)               R0
+E53      HD-H101        HDSP-M       display-hp     (9.1 7)               R0
+E54      HD-H101        HDSP-M       display-hp     (8.6 7)               R0
+E55      HD-H101        HDSP-M       display-hp     (8.1 7)               R0
+E56      7446N          DIL16        74xx-us        (4.95 5.45)           R270
+E57      7416N          DIL14        74xx-us        (1.95 6.9)            R270
+E58      74LS42N        DIL16        74xx-us        (1.25 6.85)           R270
+E59      HD-H101        HDSP-M       display-hp     (4.3 7)               R0
+E60      74LS90N        DIL14        74xx-us        (0.55 6.9)            R270
+E61      74LS145N       DIL16        74xx-us        (4.25 5.45)           R270
+ENEXT                   B3F-40XX     switch-omron   (11.3 4.35)           R90
+ETHIS                   B3F-40XX     switch-omron   (11.3 5.25)           R90
+GND                     3,81/1,4     wirepad        (0.3 1.6)             R0
+GND1                    3,81/1,4     wirepad        (0.3 6.2)             R0
+INIT                    B3F-40XX     switch-omron   (14.9 5.25)           R90
+J1                      40H          con-harting-h  (2.15 1.55)           R180
+J2                      40H          con-harting-h  (2.15 3.15)           R180
+J3                      SOCKED-16    ic-package     (5.55 3.05)           R0
+J4                      SOCKED-16    ic-package     (4.45 3.05)           R0
+J5                      SOCKED-16    ic-package     (5.55 4.35)           R0
+J6                      SOCKED-16    ic-package     (4.45 4.35)           R0
+KEY0                    B3F-40XX     switch-omron   (12.2 4.35)           R90
+KEY1                    B3F-40XX     switch-omron   (13.1 4.35)           R90
+KEY2                    B3F-40XX     switch-omron   (12.2 5.25)           R90
+KEY3                    B3F-40XX     switch-omron   (13.1 5.25)           R90
+KEY4                    B3F-40XX     switch-omron   (14 5.25)             R90
+KEY5                    B3F-40XX     switch-omron   (12.2 6.15)           R90
+KEY6                    B3F-40XX     switch-omron   (13.1 6.15)           R90
+KEY7                    B3F-40XX     switch-omron   (14 6.15)             R90
+LA                      B3F-40XX     switch-omron   (14.9 7.05)           R90
+LSR                     B3F-40XX     switch-omron   (14 7.05)             R90
+LXA                     B3F-40XX     switch-omron   (14.9 6.15)           R90
+Q1       MPSA05         TO18         transistor-npn (4.35 6.35)           R0
+Q2       MPSA05         TO18         transistor-npn (6.35 6.35)           R0
+Q3       MPSA05         TO18         transistor-npn (5.85 6.35)           R0
+Q4       MPSA05         TO18         transistor-npn (5.35 6.35)           R0
+Q5       MPSA05         TO18         transistor-npn (4.85 6.35)           R0
+R1       680            0207/10      rcl            (11.4 2.3)            R90
+R2       680            0207/10      rcl            (11.6 2.3)            R90
+R3       680            0207/10      rcl            (12 2.3)              R90
+R4       680            0207/10      rcl            (11.8 2.3)            R90
+R5       330            0207/10      rcl            (11.9 1.4)            R90
+R6       330            0207/10      rcl            (11.7 1.4)            R90
+R7       330            0207/10      rcl            (11.3 1.4)            R90
+R8       330            0207/10      rcl            (11.5 1.4)            R90
+R9       330            0207/10      rcl            (11.9 0.7)            R90
+R10      330            0207/10      rcl            (11.7 0.7)            R90
+R11      330            0207/10      rcl            (11.5 0.7)            R270
+R12      330            0207/10      rcl            (11.3 0.7)            R270
+R13      330            0207/10      rcl            (11.3 2.3)            R90
+R14      330            0207/10      rcl            (11.5 2.3)            R90
+R15      330            0207/10      rcl            (11.9 2.3)            R90
+R16      330            0207/10      rcl            (11.7 2.3)            R90
+R17      680            0207/10      rcl            (12 1.4)              R90
+R18      680            0207/10      rcl            (11.8 1.4)            R90
+R19      680            0207/10      rcl            (11.4 1.4)            R90
+R20      680            0207/10      rcl            (11.6 1.4)            R90
+R21      680            0207/10      rcl            (12 0.7)              R90
+R22      680            0207/10      rcl            (11.8 0.7)            R90
+R23      680            0207/10      rcl            (11.6 0.7)            R270
+R24      680            0207/10      rcl            (11.4 0.7)            R270
+R25      6K8            R-10         discrete       (14.4 3.05)           R90
+R26      180            R-10         discrete       (0.4 0.7)             R270
+R27      390            R-10         discrete       (0.2 0.7)             R90
+R28      1K             0207/10      rcl            (0.3 0.7)             R90
+R29      180            R-10         discrete       (0.4 1.2)             R270
+R30      390            R-10         discrete       (0.5 1.2)             R270
+R31      1K             R-10         discrete       (0.25 2.9)            R90
+R32      1K             R-10         discrete       (11.7 3)              R270
+R33      1K             R-10         discrete       (0.6 1.2)             R270
+R34      1K             0207/10      rcl            (0.6 0.7)             R270
+R35      1K             0207/10      rcl            (0.7 0.7)             R270
+R36      1K             0207/10      rcl            (0.5 0.7)             R270
+R37      1K             R-10         discrete       (7.4 4.6)             R90
+R38      1K             R-10         discrete       (7.5 4.6)             R90
+R39      1K             R-10         discrete       (7.7 4.6)             R90
+R40      1K             R-10         discrete       (7.6 4.6)             R90
+R41      1K             R-10         discrete       (7.8 4.6)             R90
+R42      1K             R-10         discrete       (8.7 6.2)             R270
+R43      1K             R-10         discrete       (6.3 4.6)             R90
+R44      1K             R-10         discrete       (10.3 4.6)            R90
+R45      1K             R-10         discrete       (10.4 4.6)            R90
+R46      1K             R-10         discrete       (10.2 4.6)            R90
+R47      1K             R-10         discrete       (10.1 4.6)            R90
+R48      1K             R-10         discrete       (10 4.6)              R90
+R49      1K             R-10         discrete       (9.9 4.6)             R90
+R50      1K             R-10         discrete       (9.8 4.6)             R90
+R51      1K             R-10         discrete       (9.7 4.6)             R90
+R52      1K             R-10         discrete       (8.6 6.2)             R270
+R53      1K             R-10         discrete       (9 6.2)               R270
+R54      1K             R-10         discrete       (9.1 6.2)             R270
+R55      1K             R-10         discrete       (8.8 6.2)             R270
+R56      1K             R-10         discrete       (8.9 6.2)             R270
+R57      470            R-10         discrete       (3.7 6.8)             R270
+R58      470            R-10         discrete       (3.5 6.8)             R270
+R59      470            R-10         discrete       (3.3 6.8)             R270
+R60      470            R-10         discrete       (3.1 6.8)             R270
+R61      470            R-10         discrete       (2.9 6.8)             R270
+R62      10             R-10         discrete       (3.8 6.8)             R270
+R63      10             R-10         discrete       (3.6 6.8)             R270
+R64      10             R-10         discrete       (3.4 6.8)             R270
+R65      10             R-10         discrete       (3.2 6.8)             R270
+R66      27             R-10         discrete       (3 6.8)               R270
+R67      27             R-10         discrete       (3.1 6.3)             R90
+R68      27             R-10         discrete       (3.3 6.3)             R90
+R69      27             R-10         discrete       (3.5 6.3)             R90
+R70      27             R-10         discrete       (3.7 6.3)             R90
+R71      27             R-10         discrete       (2.9 6.3)             R90
+R72      330            R-10         discrete       (8.9 4.6)             R90
+R73      330            R-10         discrete       (8.8 4.6)             R90
+R74      330            R-10         discrete       (9 4.6)               R90
+R75      330            R-10         discrete       (8.7 4.6)             R90
+R76      330            R-10         discrete       (7.2 4.6)             R90
+R77      330            R-10         discrete       (9.1 4.6)             R90
+R78      330            R-10         discrete       (8.6 4.6)             R90
+R79      330            R-10         discrete       (7.3 4.6)             R90
+R80      10K            0207/10      rcl            (1.6 5.1)             R270
+R81      10K            0207/10      rcl            (4.6 4.9)             R270
+R82      6.8K           0207/10      rcl            (2.1 6.3)             R0
+RUN                     B3F-40XX     switch-omron   (14.9 4.35)           R90
+SHLT\                   B3F-40XX     switch-omron   (14 4.35)             R90
+VCC                     3,81/1,4     wirepad        (0.3 2.2)             R0
+VCC1                    3,81/1,4     wirepad        (0.3 5.1)             R0

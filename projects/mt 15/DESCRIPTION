@@ -1,0 +1,7 @@
+Transistor CPU by Dieter Mueller
+<UL>
+<LI><b>mt15_c</b> is a look-ahead carry generator.</LI>
+<LI><b>mt15_alu</b> is the ALU bit slice.</LI>
+<LI><b>mt15_pla</b> is a PLA-like gate array.</LI>
+<LI><b>mt15_n</b> is a board with 9 4-input NAND gates.</LI>
+<LI><b>mt15_reg</b> is a register bit slice.</LI>

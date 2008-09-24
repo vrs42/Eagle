@@ -1,0 +1,6 @@
+Partlist exported from C:/PROGRAM FILES/EAGLE-4.11/projects/Watch/watch.sch at  3/08/2006 04:44:58p
+
+Qty Value       Device      Parts                                                                                  
+6               R-US_R0805  R1, R2, R3, R4, R5, R6                                                                 
+14              SMD2        PAD1, PAD2, PAD3, PAD4, PAD5, PAD6, PAD7, PAD8, PAD9, PAD10, PAD11, PAD12, PAD15, PAD16
+1   PIC16F627SO PIC16C622SO IC1                                                                                    

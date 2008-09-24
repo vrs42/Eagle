@@ -1,0 +1,369 @@
+1 General Help=1
+1 Installation=2
+1 Quick Introduction
+1 Quick Introduction=3
+1 Control Panel and Editor Windows=4
+1 Entering Parameters and Values=5
+1 Drawing a Schematic=6
+1 Checking the Schematic=7
+1 Generating a Board from a Schematic=8
+1 Checking the Layout=9
+1 Creating a Library Device=10
+1 Control Panel
+1 Control Panel=11
+1 Context Menus=12
+1 Directories=13
+1 Backup=14
+1 User Interface=15
+1 Keyboard and Mouse
+1 Keyboard and Mouse=16
+1 Selecting objects in dense areas=17
+1 Editor Windows
+1 Editor Windows=18
+2 Library Editor
+2 Library Editor=19
+2 Edit Library Object=20
+1 Board Editor=21
+1 Schematic Editor=22
+1 Text Editor=23
+1 Editor Commands
+1 Editor Commands=24
+1 Command Syntax=25
+1 ADD=26
+1 ARC=27
+1 ASSIGN=28
+1 AUTO=29
+1 BOARD=30
+1 BUS=31
+1 CHANGE=32
+1 CIRCLE=33
+1 CLASS=34
+1 CLOSE=35
+1 CONNECT=36
+1 COPY=37
+1 CUT=38
+1 DELETE=39
+1 DESCRIPTION=40
+1 DISPLAY=41
+1 DRC=42
+1 EDIT=43
+1 ERC=44
+1 ERRORS=45
+1 EXPORT=46
+1 GATESWAP=47
+1 GRID=48
+1 GROUP=49
+1 HELP=50
+1 HOLE=51
+1 INFO=52
+1 INVOKE=53
+1 JUNCTION=54
+1 LABEL=55
+1 LAYER=56
+1 MARK=57
+1 MENU=58
+1 MIRROR=59
+1 MITER=60
+1 MOVE=61
+1 NAME=62
+1 NET=63
+1 OPEN=64
+1 OPTIMIZE=65
+1 PACKAGE=66
+1 PAD=67
+1 PASTE=68
+1 PIN=69
+1 PINSWAP=70
+1 POLYGON=71
+1 PREFIX=72
+1 PRINT=73
+1 QUIT=74
+1 RATSNEST=75
+1 RECT=76
+1 REDO=77
+1 REMOVE=78
+1 RENAME=79
+1 REPLACE=80
+1 RIPUP=81
+1 ROTATE=82
+1 ROUTE=83
+1 RUN=84
+1 SCRIPT=85
+1 SET=86
+1 SHOW=87
+1 SIGNAL=88
+1 SMASH=89
+1 SMD=90
+1 SPLIT=91
+1 TECHNOLOGY=92
+1 TEXT=93
+1 UNDO=94
+1 UPDATE=95
+1 USE=96
+1 VALUE=97
+1 VIA=98
+1 WINDOW=99
+1 WIRE=100
+1 WRITE=101
+1 Generating Output
+1 Generating Output=102
+2 Printing
+2 Printing=103
+2 Printing a Drawing=104
+2 Printing a Text=105
+2 Printer Page Setup=106
+2 CAM Processor
+2 CAM Processor=107
+2 Main CAM Menu=108
+2 CAM Processor Job=109
+3 Output Device
+3 Output Device=110
+4 Device Parameters
+4 Device Parameters=111
+4 Aperture Wheel File=112
+4 Aperture Emulation=113
+4 Aperture Tolerances=114
+4 Drill Rack File=115
+4 Drill Tolerances=116
+4 Offset=117
+4 Printable Area=118
+4 Pen Data=119
+3 Defining Your Own Device Driver=120
+2 Output File=121
+2 Flag Options=122
+2 Layers and Colors=123
+1 Outlines data=124
+1 Autorouter
+1 Autorouter=125
+1 Design Checks
+1 Design Checks=126
+1 Design Rules=127
+1 User Language
+1 User Language=128
+1 Writing a ULP=129
+1 Executing a ULP=130
+2 Syntax
+2 Syntax=131
+2 Whitespace=132
+2 Comments=133
+3 Directives
+3 Directives=134
+3 #include=135
+3 #usage=136
+2 Keywords=137
+2 Identifiers=138
+3 Constants
+3 Constants=139
+3 Character Constants=140
+3 Integer Constants=141
+3 Real Constants=142
+3 String Constants=143
+3 Escape Sequences=144
+3 Punctuators
+3 Punctuators=145
+3 Brackets=146
+3 Parentheses=147
+3 Braces=148
+3 Comma=149
+3 Semicolon=150
+3 Colon=151
+3 Equal Sign=152
+2 Data Types
+2 Data Types=153
+2 char=154
+2 int=155
+2 real=156
+2 string=157
+2 Type Conversions=158
+2 Typecast=159
+2 Object Types
+2 Object Types=160
+2 UL_ARC=161
+2 UL_AREA=162
+2 UL_BOARD=163
+2 UL_BUS=164
+2 UL_CIRCLE=165
+2 UL_CLASS=166
+2 UL_CONTACT=167
+2 UL_CONTACTREF=168
+2 UL_DEVICE=169
+2 UL_DEVICESET=170
+2 UL_ELEMENT=171
+2 UL_GATE=172
+2 UL_GRID=173
+2 UL_HOLE=174
+2 UL_INSTANCE=175
+2 UL_JUNCTION=176
+2 UL_LAYER=177
+2 UL_LIBRARY=178
+2 UL_NET=179
+2 UL_PACKAGE=180
+2 UL_PAD=181
+2 UL_PART=182
+2 UL_PIN=183
+2 UL_PINREF=184
+2 UL_POLYGON=185
+2 UL_RECTANGLE=186
+2 UL_SCHEMATIC=187
+2 UL_SEGMENT=188
+2 UL_SHEET=189
+2 UL_SIGNAL=190
+2 UL_SMD=191
+2 UL_SYMBOL=192
+2 UL_TEXT=193
+2 UL_VIA=194
+2 UL_WIRE=195
+2 Definitions
+2 Definitions=196
+2 Constant Definitions=197
+2 Variable Definitions=198
+2 Function Definitions=199
+2 Operators
+2 Operators=200
+2 Bitwise Operators=201
+2 Logical Operators=202
+2 Comparison Operators=203
+2 Evaluation Operators=204
+2 Arithmetic Operators=205
+2 String Operators=206
+2 Expressions
+2 Expressions=207
+2 Arithmetic Expression=208
+2 Assignment Expression=209
+2 String Expression=210
+2 Comma Expression=211
+2 Conditional Expression=212
+2 Function Call=213
+2 Statements
+2 Statements=214
+2 Compound Statement=215
+2 Expression Statement=216
+3 Control Statements
+3 Control Statements=217
+3 break=218
+3 continue=219
+3 do...while=220
+3 for=221
+3 if...else=222
+3 return=223
+3 switch=224
+3 while=225
+2 Builtins
+2 Builtins=226
+2 Builtin Constants=227
+2 Builtin Variables=228
+3 Builtin Functions
+3 Builtin Functions=229
+4 Character Functions
+4 Character Functions=230
+4 is...()=231
+4 to...()=232
+4 File Handling Functions
+4 File Handling Functions=233
+4 fileerror()=234
+4 fileglob()=235
+4 Filename Functions=236
+4 Filedata Functions=237
+5 File Input Functions
+5 File Input Functions=238
+5 fileread()=239
+4 Mathematical Functions
+4 Mathematical Functions=240
+4 Absolute, Maximum and Minimum Functions=241
+4 Rounding Functions=242
+4 Trigonometric Functions=243
+4 Exponential Functions=244
+4 Miscellaneous Functions
+4 Miscellaneous Functions=245
+4 exit()=246
+4 lookup()=247
+4 palette()=248
+4 sort()=249
+4 status()=250
+4 Unit Conversions=251
+4 Printing Functions
+4 Printing Functions=252
+4 printf()=253
+4 sprintf()=254
+4 String Functions
+4 String Functions=255
+4 strchr()=256
+4 strjoin()=257
+4 strlen()=258
+4 strlwr()=259
+4 strrchr()=260
+4 strrstr()=261
+4 strsplit()=262
+4 strstr()=263
+4 strsub()=264
+4 strtod()=265
+4 strtol()=266
+4 strupr()=267
+4 Time Functions
+4 Time Functions=268
+4 time()=269
+4 Time Conversions=270
+3 Builtin Statements
+3 Builtin Statements=271
+3 board()=272
+3 deviceset()=273
+3 library()=274
+3 output()=275
+3 package()=276
+3 schematic()=277
+3 sheet()=278
+3 symbol()=279
+2 Dialogs
+2 Dialogs=280
+3 Predefined Dialogs
+3 Predefined Dialogs=281
+3 dlgDirectory()=282
+3 dlgFileOpen(), dlgFileSave()=283
+3 dlgMessageBox()=284
+3 Dialog Objects
+3 Dialog Objects=285
+3 dlgCell=286
+3 dlgCheckBox=287
+3 dlgComboBox=288
+3 dlgDialog=289
+3 dlgGridLayout=290
+3 dlgGroup=291
+3 dlgHBoxLayout=292
+3 dlgIntEdit=293
+3 dlgLabel=294
+3 dlgListBox=295
+3 dlgListView=296
+3 dlgPushButton=297
+3 dlgRadioButton=298
+3 dlgRealEdit=299
+3 dlgSpacing=300
+3 dlgSpinBox=301
+3 dlgStretch=302
+3 dlgStringEdit=303
+3 dlgTabPage=304
+3 dlgTabWidget=305
+3 dlgTextEdit=306
+3 dlgTextView=307
+3 dlgVBoxLayout=308
+2 Layout Information=309
+3 Dialog Functions
+3 Dialog Functions=310
+3 dlgAccept()=311
+3 dlgRedisplay()=312
+3 dlgReset()=313
+3 dlgReject()=314
+2 Escape Character=315
+2 A Complete Example=316
+1 Rich Text=317
+1 Automatic Backup
+1 Automatic Backup=318
+1 Forward&Back Annotation
+1 Forward&Back Annotation=319
+1 Consistency Check=320
+1 Limitations=321
+1 Technical Support
+1 Technical Support=322
+1 License
+1 License=323
+1 Product Registration=324
+2 EAGLE Editions=325

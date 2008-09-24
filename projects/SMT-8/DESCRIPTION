@@ -1,0 +1,5 @@
+Thoughts about a discrete SMT PDP-8.
+<UL>
+<LI><b>adapter</b> is a drawing of an adapter from the DEC connector to 
+something more current and affordable (2x20 header).</LI>
+<LI><b>r202smt</b> is an SMT version of the R202 flip-flop board.</LI>

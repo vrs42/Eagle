@@ -1,0 +1,6 @@
+TU10 CRC Checker
+<UL>
+<LI><b>M896</b> is a drawing of DEC's M896 CRC Checker module, using the hard to find
+8202.</LI>
+<LI><b>M896n</b> is a version of the M896 CRC Checker with the 8202 replaced with
+the more common 74174.</LI>

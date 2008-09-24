@@ -1,0 +1,3327 @@
+Netlist
+
+Exported from tc08.sch at  8/06/2006 06:34:37p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Net      Part     Pad      Pin        Sheet
+
+Change Class 0;
++3V@A09U1 A07      S1       EN2        2
+         A07      S2       EN1        2
+         A07      T2       EN3        2
+         A08      D1       S          6
+         A08      F2       S          6
+         A08      K2       R          6
+         A09      U1       P$1        2
+         B13      R1       S          4
+         B13      U2       S          4
+
+Change Class 0;
++3V@B12U1 B12      U1       P$1        4
+         B13      D1       S          4
+         B13      F2       S          4
+         B13      K1       S          4
+         B14      A1       R          2
+         B14      K2       R          2
+         B14      N2       S          2
+         B14      R1       S          3
+         B14      U2       S          3
+
+Change Class 0;
++3V@C08U1 C01      C1       IN2        1
+         C02      C1       ENABLE     11
+         C04      J1       IN2        1
+         C04      L2       L2         1
+         C04      N2       N2         1
+         C04      U2       U2         1
+         C05      J1       IN2        1
+         C05      L2       L2         1
+         C05      N2       N2         1
+         C05      U2       U2         1
+         C08      U1       P$1        1
+
+Change Class 0;
++3V@C15U1 C14      A1       R          8
+         C14      D1       S          8
+         C14      F2       S          8
+         C14      K1       S          8
+         C14      K2       R          3
+         C15      U1       P$1        3
+         C16      H2       IN4        5
+
+Change Class 0;
++3V@D09U1 D07      S1       EN2        2
+         D07      S2       EN1        2
+         D07      T2       EN3        2
+         D09      U1       P$1        2
+
+Change Class 0;
++3V@D10U1 D10      L2       IN6        3
+         D10      M2       IN7        3
+         D10      N2       IN8        3
+         D10      U1       P$1        4
+         D11      D1       S          1
+         D11      F2       S          1
+         D11      K1       S          1
+         D11      K2       R          4
+         D14      M1       M1         3
+
+Change Class 0;
++11V     AB01     BM2      +11V       10
+
+Change Class 1;
+-15V     A18      B2       -15V       * none *
+         A20      B2       -15V       * none *
+         A21      B2       -15V       * none *
+         A22      B2       -15V       * none *
+         A23      B2       -15V       * none *
+         AB01     AB2      -15V       10
+         AB01     AE2      -15V       10
+         AB01     AF2      -15V       10
+         B18      B2       -15V       * none *
+         B20      B2       -15V       * none *
+         B21      B2       -15V       * none *
+         B22      B2       -15V       * none *
+         B23      B2       -15V       * none *
+
+Change Class 0;
+00       A07      D2       O0         2
+
+Change Class 0;
+00\      A07      D1       O0\        2
+         B22      S2       B          2
+
+Change Class 0;
+0_TO_AC\ B05      H1       B          11
+         B06      T2       OUT        1
+
+Change Class 0;
+0_TO_DTB A11      M1       OUT        5
+         C11      R1       IN2        4
+
+Change Class 0;
+0_TO_DTB\ A11      L1       IN         5
+         B09      A1       R          8
+         B09      K2       R          8
+         B10      L1       OUT        5
+         C09      A1       R          8
+         C09      K2       R          8
+
+Change Class 0;
+0_TO_EF  A10      K2       OUT        6
+         A11      E2       IN         6
+
+Change Class 0;
+0_TO_EF\ A08      A1       R          6
+         A08      N2       S          6
+         A08      R1       S          6
+         A11      F2       OUT        6
+
+Change Class 0;
+0_TO_LPB\ D08      A1       A1         9
+         D08      K2       K2         9
+         D12      J2       OUT        9
+
+Change Class 0;
+0_TO_STA A10      N2       OUT        2
+         A11      N1       IN         2
+
+Change Class 0;
+0_TO_STATE\ C16      L1       OUT        3
+         CD18     AV2      AV2        7
+
+Change Class 0;
+0_TO_STA\ A11      P1       OUT        2
+         B07      A1       A1         2
+         B07      K2       K2         2
+         B11      P2       IN2        2
+         C07      A1       A1         2
+
+Change Class 0;
+0_TO_W\  C16      E1       OUT        3
+         CD18     BH2      BH2        7
+
+Change Class 0;
+01       A07      E2       O1         2
+
+Change Class 0;
+01\      A07      E1       O1\        2
+         A23      N1       B          2
+
+Change Class 0;
+1_TO_DF  A08      H1       C          6
+         C12      J1       OUT        4
+         C12      L1       IN2        4
+         D11      L2       C          4
+
+Change Class 0;
+1_TO_DTF B12      P2       OUT        4
+         D11      S2       C          4
+
+Change Class 0;
+02       A07      J2       O2         2
+
+Change Class 0;
+02\      A07      J1       O2\        2
+         A23      D2       A          2
+
+Change Class 0;
+03       A07      N2       O3         2
+
+Change Class 0;
+03\      A07      N1       O3\        2
+         A23      E2       B          2
+
+Change Class 0;
+04       A07      F2       O4         2
+
+Change Class 0;
+04\      A07      F1       O4\        2
+         A23      K2       A          2
+
+Change Class 0;
+05       A07      M2       O5         2
+
+Change Class 0;
+05\      A07      M1       O5\        2
+         A23      L2       B          2
+
+Change Class 0;
+06       A07      H2       O6         2
+
+Change Class 0;
+06\      A07      H1       O6\        2
+         A23      R2       A          2
+
+Change Class 0;
+07       A07      L2       O7         2
+
+Change Class 0;
+07\      A07      L1       O7\        2
+         A23      S2       B          2
+
+Change Class 0;
+76       C04      V2       V2         1
+         C06      S2       IN         1
+
+Change Class 0;
+76+77    C03      C1       ENABLE     11
+         D12      V2       OUT        1
+
+Change Class 0;
+76\      C06      T2       OUT        1
+         D12      R2       IN1        1
+         D12      S2       IN2        1
+
+Change Class 0;
+77       C05      V2       V2         1
+         C06      U2       IN         1
+
+Change Class 0;
+77\      C06      V2       OUT        1
+         D12      T2       IN3        1
+         D12      U2       IN4        1
+
+Change Class 0;
+ADDR_ACC C02      V2       O15        11
+         C17      N1       IN         1
+
+Change Class 0;
+ADDR_ACC\ B08      T2       IN1        4
+         C17      P1       OUT        1
+
+Change Class 0;
+B-BRK    B10      R2       IN1        1
+         B10      S2       IN2        1
+         B10      T2       IN3        1
+         B10      U2       IN4        1
+         C01      E1       OUT        1
+         D12      M1       IN1        1
+
+Change Class 0;
+B-BRK\   B02      C1       C          11
+         B02      F2       C          11
+         B02      J1       C          11
+         B02      M2       C          11
+         B02      P1       C          11
+         B02      T2       C          11
+         B10      V2       OUT        1
+
+Change Class 0;
+B-RUN    B11      N2       IN1        2
+         C01      B1       OUT        1
+
+Change Class 0;
+B-XSTA   A10      E2       IN2        6
+         C11      P2       IN1        4
+         D12      E1       OUT        1
+
+Change Class 0;
+BAC_00   B06      B1       OUT        10
+         B07      C1       C1         2
+         B07      D1       D1         2
+
+Change Class 0;
+BAC_00\  B06      A1       IN         10
+         C03      B1       O1         11
+         D10      F1       IN1        3
+
+Change Class 0;
+BAC_01   B06      E1       OUT        10
+         B07      E2       E2         2
+         B07      F2       F2         2
+
+Change Class 0;
+BAC_01\  B06      D1       IN         10
+         C03      E1       O2         11
+         D10      H1       IN2        3
+
+Change Class 0;
+BAC_02   B06      H1       OUT        10
+         B07      J1       J1         2
+         B07      K1       K1         2
+
+Change Class 0;
+BAC_02\  B06      F1       IN         10
+         C03      H1       O3         11
+         D10      J1       IN3        3
+
+Change Class 0;
+BAC_03   B06      K1       OUT        10
+         B07      M2       M2         2
+         B07      N2       N2         2
+
+Change Class 0;
+BAC_03\  B06      J1       IN         10
+         C03      K1       O4         11
+         D10      K1       IN4        3
+
+Change Class 0;
+BAC_04   B06      M1       OUT        10
+         C07      M2       M2         2
+         C07      N2       N2         2
+
+Change Class 0;
+BAC_04\  B06      L1       IN         10
+         C03      M1       O5         11
+         D10      K2       IN5        3
+
+Change Class 0;
+BAC_05   B06      P1       OUT        10
+         B07      P1       P1         2
+         B07      R1       R1         2
+
+Change Class 0;
+BAC_05\  B06      N1       IN         10
+         C03      P1       O6         11
+
+Change Class 0;
+BAC_06   B06      S1       OUT        10
+         B07      T2       T2         2
+         B07      U2       U2         2
+         D11      C1       D          1
+
+Change Class 0;
+BAC_06\  B06      R1       IN         10
+         C03      S1       O7         11
+
+Change Class 0;
+BAC_07   B06      U1       OUT        10
+         C07      C1       C1         2
+         C07      D1       D1         2
+         D11      E2       D          1
+
+Change Class 0;
+BAC_07\  B06      V1       IN         10
+         C03      U1       O8         11
+
+Change Class 0;
+BAC_08   B06      D2       OUT        10
+         C07      E2       E2         2
+         C07      F2       F2         2
+         D11      J1       D          1
+
+Change Class 0;
+BAC_08\  B06      C1       IN         10
+         C03      F2       O9         11
+
+Change Class 0;
+BAC_09   B06      F2       OUT        10
+         C07      J1       J1         2
+         C07      K1       K1         2
+
+Change Class 0;
+BAC_09\  B06      E2       IN         10
+         C03      J2       O10        11
+
+Change Class 0;
+BAC_10   B06      J2       OUT        10
+
+Change Class 0;
+BAC_10\  A10      D2       IN1        6
+         B06      H2       IN         10
+         C03      L2       O11        11
+
+Change Class 0;
+BAC_11   B06      L2       OUT        10
+
+Change Class 0;
+BAC_11\  B06      K2       IN         10
+         C03      N2       O12        11
+         C11      R2       IN2        4
+
+Change Class 0;
+BLK_IN_SYNC C11      E2       IN2        4
+         C13      S1       OUT        4
+         CD18     AP2      AP2        7
+
+Change Class 0;
+BLK_IN_SYNC\ A10      A1       IN1        5
+         C13      R1       IN         4
+         D10      J2       OUT        4
+
+Change Class 0;
+BMB_00   C06      B1       OUT        10
+         C08      B1       IN1B       8
+
+Change Class 0;
+BMB_00\  C02      B1       O1         11
+         C06      A1       IN         10
+
+Change Class 0;
+BMB_01   C06      E1       OUT        10
+         C08      H1       IN1B       8
+
+Change Class 0;
+BMB_01\  C02      E1       O2         11
+         C06      D1       IN         10
+
+Change Class 0;
+BMB_02   C06      H1       OUT        10
+         C08      N1       IN1B       8
+
+Change Class 0;
+BMB_02\  C02      H1       O3         11
+         C06      F1       IN         10
+
+Change Class 0;
+BMB_03   C06      K1       OUT        10
+         C08      E2       IN1B       8
+
+Change Class 0;
+BMB_03\  C02      K1       O4         11
+         C06      J1       IN         10
+
+Change Class 0;
+BMB_04   C06      M1       OUT        10
+         C08      L2       IN1B       8
+
+Change Class 0;
+BMB_04\  C02      M1       O5         11
+         C06      L1       IN         10
+
+Change Class 0;
+BMB_05   C06      P1       OUT        10
+         C08      S2       IN1B       8
+
+Change Class 0;
+BMB_05\  C02      P1       O6         11
+         C06      N1       IN         10
+
+Change Class 0;
+BMB_06   B08      B1       IN2        8
+         C06      S1       OUT        10
+
+Change Class 0;
+BMB_06\  C02      S1       O7         11
+         C06      R1       IN         10
+
+Change Class 0;
+BMB_07   B08      E1       IN2        8
+         C06      U1       OUT        10
+
+Change Class 0;
+BMB_07\  C02      U1       O8         11
+         C06      V1       IN         10
+
+Change Class 0;
+BMB_08   B08      E2       IN2        8
+         C06      D2       OUT        10
+
+Change Class 0;
+BMB_08\  C02      F2       O9         11
+         C06      C1       IN         10
+
+Change Class 0;
+BMB_09   B08      M1       IN2        8
+         C06      F2       OUT        10
+
+Change Class 0;
+BMB_09\  C02      J2       O10        11
+         C06      E2       IN         10
+
+Change Class 0;
+BMB_10   B08      R1       IN2        8
+         C06      J2       OUT        10
+
+Change Class 0;
+BMB_10\  C02      L2       O11        11
+         C06      H2       IN         10
+
+Change Class 0;
+BMB_11   B08      J1       IN2        8
+         C06      L2       OUT        10
+
+Change Class 0;
+BMB_11\  C02      N2       O12        11
+         C06      K2       IN         10
+
+Change Class 0;
+BMB_TO_DTB B08      A1       IN1        8
+         B08      D1       IN1        8
+         B08      D2       IN1        8
+         B08      H1       IN1        8
+         B08      L1       IN1        8
+         B08      P1       IN1        8
+         C08      A1       IN1A       8
+         C08      D2       IN1A       8
+         C08      F1       IN1A       8
+         C08      K2       IN1A       8
+         C08      M1       IN1A       8
+         C08      R2       IN1A       8
+         D12      L1       OUT        1
+
+Change Class 0;
+BMR00    A23      F1       A          2
+         B14      P2       1          2
+
+Change Class 0;
+BMR00\   A23      H1       B          2
+         B14      R2       0          2
+
+Change Class 0;
+BMR01    A23      B1       B          2
+         B14      F1       0          2
+
+Change Class 0;
+BMR01\   A23      A1       A          2
+         B14      E1       1          2
+
+Change Class 0;
+C00      A12      L2       IN1        5
+         A26      E2       P$2        12
+         B12      R2       IN1        4
+         B13      S1       1          4
+         C15      E2       IN2        9
+         D10      C1       IN3        4
+
+Change Class 0;
+C00\     A12      P2       IN1        5
+         B13      P1       D          4
+         B13      S2       C          4
+         B13      U1       0          4
+         B15      H1       IN1        4
+         C15      J2       IN2        9
+
+Change Class 0;
+C01      A12      M2       IN2        5
+         A26      F2       P$2        12
+         B10      J1       IN3        5
+         B11      V2       IN3        5
+         B13      P2       1          4
+
+Change Class 0;
+C01\     A12      R2       IN2        5
+         B10      P1       IN3        4
+         B13      M2       D          4
+         B13      R2       0          4
+         C12      F2       IN3        9
+         D10      D1       IN4        4
+
+Change Class 0;
+CK00     A18      P2       P2         10
+         B14      S1       1          3
+
+Change Class 0;
+CK00\    A18      N2       N2         10
+         B14      T2       D          3
+         B14      U1       0          3
+
+Change Class 0;
+CK01     B14      P1       D          3
+         B14      V2       1          3
+         C16      N1       IN2        3
+         C16      P1       IN3        3
+         C16      R1       IN4        3
+
+Change Class 0;
+CK01\    B14      V1       0          3
+         C16      S2       IN2        3
+         C16      T2       IN3        3
+         C16      U2       IN4        3
+
+Change Class 0;
+CLR_DF\  A11      U1       OUT        4
+         D11      N2       S          4
+
+Change Class 0;
+CLR_DTF\ C13      U1       OUT        4
+         D11      U2       S          4
+
+Change Class 0;
+COMP+SH  A12      D2       IN1        5
+         C14      B1       C          8
+         C14      D2       C          8
+         C14      H1       C          8
+         C15      K1       OUT        5
+
+Change Class 0;
+CSTA     C04      C1       C1         1
+         D16      P2       K2         6
+
+Change Class 0;
+CSTA\    A10      L2       IN1        2
+         C04      D1       D1         1
+
+Change Class 0;
+DATA     A26      M1       P$2        12
+         C13      F1       IN         5
+         CD18     BK2      BK2        7
+
+Change Class 0;
+DATA\    B12      N1       IN2        4
+         C11      L2       IN1        4
+         C13      H1       OUT        5
+         C16      D2       IN1        5
+
+Change Class 0;
+DB_00\   A06      B1       P$2        12
+         B02      D1       D          11
+         D06      B1       P$2        12
+
+Change Class 0;
+DB_01\   A06      D1       P$2        12
+         B02      E1       E          11
+         D06      D1       P$2        12
+
+Change Class 0;
+DB_02\   A06      E1       P$2        12
+         B02      K1       D          11
+         D06      E1       P$2        12
+
+Change Class 0;
+DB_03\   A06      H1       P$2        12
+         B02      L1       E          11
+         D06      H1       P$2        12
+
+Change Class 0;
+DB_04\   A06      J1       P$2        12
+         B02      R1       D          11
+         D06      J1       P$2        12
+
+Change Class 0;
+DB_05\   A06      L1       P$2        12
+         B02      S1       E          11
+         D06      L1       P$2        12
+
+Change Class 0;
+DB_06\   A06      M1       P$2        12
+         B02      H2       D          11
+         D06      M1       P$2        12
+
+Change Class 0;
+DB_07\   A06      P1       P$2        12
+         B02      J2       E          11
+         D06      P1       P$2        12
+
+Change Class 0;
+DB_08\   A06      S1       P$2        12
+         B02      N2       D          11
+         D06      S1       P$2        12
+
+Change Class 0;
+DB_09\   A06      D2       P$2        12
+         B02      P2       E          11
+         D06      D2       P$2        12
+
+Change Class 0;
+DB_10\   A06      E2       P$2        12
+         B02      U2       D          11
+         D06      E2       P$2        12
+
+Change Class 0;
+DB_11\   A06      H2       P$2        12
+         B02      V2       E          11
+         D06      H2       P$2        12
+
+Change Class 0;
+DF       A10      P2       IN1        6
+         A26      E1       P$2        12
+         D11      R2       0          4
+
+Change Class 0;
+DF\      B05      A1       A          11
+         B12      J1       IN3        5
+         D11      P2       1          4
+
+Change Class 0;
+DTB_00   A25      A2       P$2        12
+         C09      E1       1          8
+         C10      B1       IN1B       8
+         D09      D2       IN1A       9
+
+Change Class 0;
+DTB_00\  B02      A1       A          11
+         C09      F1       0          8
+
+Change Class 0;
+DTB_01   A25      B2       P$2        12
+         C09      H2       1          8
+         C10      H1       IN1B       8
+         D09      K2       IN1A       9
+
+Change Class 0;
+DTB_01\  B02      B1       B          11
+         C09      J2       0          8
+
+Change Class 0;
+DTB_02   A25      C2       P$2        12
+         C09      L1       1          8
+         C10      N1       IN1B       8
+         D09      R2       IN1A       9
+
+Change Class 0;
+DTB_02\  B02      F1       A          11
+         C09      M1       0          8
+
+Change Class 0;
+DTB_03   A25      D2       P$2        12
+         C09      C1       D          8
+         C09      P2       1          8
+
+Change Class 0;
+DTB_03\  B02      H1       B          11
+         C09      R2       0          8
+
+Change Class 0;
+DTB_04   A25      E2       P$2        12
+         C09      E2       D          8
+         C09      S1       1          8
+
+Change Class 0;
+DTB_04\  B02      M1       A          11
+         C09      U1       0          8
+
+Change Class 0;
+DTB_05   A25      F2       P$2        12
+         C09      J1       D          8
+         C09      V2       1          8
+
+Change Class 0;
+DTB_05\  B02      N1       B          11
+         C09      V1       0          8
+
+Change Class 0;
+DTB_06   A25      H2       P$2        12
+         B09      E1       1          8
+         C09      M2       D          8
+
+Change Class 0;
+DTB_06\  B02      D2       A          11
+         B09      F1       0          8
+
+Change Class 0;
+DTB_07   A25      J2       P$2        12
+         B09      V2       1          8
+         C09      P1       D          8
+
+Change Class 0;
+DTB_07\  B02      E2       B          11
+         B09      V1       0          8
+
+Change Class 0;
+DTB_08   A25      K2       P$2        12
+         B09      L1       1          8
+         C09      T2       D          8
+
+Change Class 0;
+DTB_08\  B02      K2       A          11
+         B09      M1       0          8
+
+Change Class 0;
+DTB_09   A25      L2       P$2        12
+         B09      C1       D          8
+         B09      P2       1          8
+
+Change Class 0;
+DTB_09\  B02      L2       B          11
+         B09      R2       0          8
+
+Change Class 0;
+DTB_10   A25      M2       P$2        12
+         B09      S1       1          8
+         B09      T2       D          8
+
+Change Class 0;
+DTB_10\  B02      R2       A          11
+         B09      U1       0          8
+
+Change Class 0;
+DTB_11   A25      N2       P$2        12
+         B09      H2       1          8
+         B09      J1       D          8
+
+Change Class 0;
+DTB_11\  B02      S2       B          11
+         B09      J2       0          8
+
+Change Class 0;
+DTF      A08      J1       D          6
+         A12      M1       IN2        1
+         A26      C1       P$2        12
+         D11      V1       0          4
+
+Change Class 0;
+DTF\     B04      L2       B          11
+         B12      C1       IN3        5
+         D11      V2       1          4
+
+Change Class 0;
+DTSF     A12      R1       IN2        1
+         C05      A1       A1         1
+
+Change Class 0;
+DTSF\    C05      B1       B1         1
+
+Change Class 0;
+EA_00\   A06      V2       P$2        12
+         B05      R1       D          11
+         D06      V2       P$2        12
+
+Change Class 0;
+EA_01\   A06      T2       P$2        12
+         B05      S1       E          11
+         D06      T2       P$2        12
+
+Change Class 0;
+EA_02\   A06      S2       P$2        12
+         B05      H2       D          11
+         D06      S2       P$2        12
+
+Change Class 0;
+EF       A11      J1       IN         6
+         A12      F1       OUT        6
+         A12      L1       IN1        1
+         A25      N1       P$2        12
+
+Change Class 0;
+EF\      A11      K1       OUT        6
+         B04      A1       A          11
+
+Change Class 0;
+END      A08      E1       1          6
+         A25      R1       P$2        12
+
+Change Class 0;
+END\     A08      F1       0          6
+         A09      M2       IN3        6
+         B04      F1       A          11
+
+Change Class 0;
+ENI      A12      H1       IN1        1
+         A25      L1       P$2        12
+         C07      L1       L1         2
+
+Change Class 0;
+ENI\     B03      L2       B          11
+         C07      M1       M1         2
+
+Change Class 0;
+FR_00    A25      F1       P$2        12
+         B07      S1       S1         2
+         B12      E2       IN2        4
+         C12      U2       IN2        4
+
+Change Class 0;
+FR_00\   B03      N1       B          11
+         B07      U1       U1         2
+         C12      K1       IN1        4
+         C12      P1       IN1        4
+
+Change Class 0;
+FR_01    A10      H1       IN1        6
+         A25      H1       P$2        12
+         B07      V2       V2         2
+         B15      M1       IN2        5
+         C15      D1       IN1        5
+         D07      V2       IN2        2
+         D12      R1       IN4        1
+
+Change Class 0;
+FR_01\   A12      H2       IN1        5
+         B03      D2       A          11
+         B05      E2       B          11
+         B07      V1       V1         2
+
+Change Class 0;
+FR_02    A25      J1       P$2        12
+         C07      E1       E1         2
+         D07      U2       IN1        2
+
+Change Class 0;
+FR_02\   B03      E2       B          11
+         C07      F1       F1         2
+
+Change Class 0;
+FR_03    A25      K1       P$2        12
+         B15      R2       IN2        5
+         C07      H2       H2         2
+         D07      V1       IN0        2
+
+Change Class 0;
+FR_03\   B03      K2       A          11
+         B08      J2       IN2        2
+         C07      J2       J2         2
+
+Change Class 1;
+GND      A02      A1       GND        * none *
+         A02      C1       GND        * none *
+         A02      C2       GND        * none *
+         A02      F1       GND        * none *
+         A02      F2       GND        * none *
+         A02      J2       GND        * none *
+         A02      K1       GND        * none *
+         A02      L2       GND        * none *
+         A02      N1       GND        * none *
+         A02      N2       GND        * none *
+         A02      R1       GND        * none *
+         A02      R2       GND        * none *
+         A02      T1       GND        * none *
+         A02      U2       GND        * none *
+         A03      A1       GND        * none *
+         A03      C1       GND        * none *
+         A03      C2       GND        * none *
+         A03      F1       GND        * none *
+         A03      F2       GND        * none *
+         A03      J2       GND        * none *
+         A03      K1       GND        * none *
+         A03      L2       GND        * none *
+         A03      N1       GND        * none *
+         A03      N2       GND        * none *
+         A03      R1       GND        * none *
+         A03      R2       GND        * none *
+         A03      T1       GND        * none *
+         A03      U2       GND        * none *
+         A04      A1       GND        * none *
+         A04      C1       GND        * none *
+         A04      C2       GND        * none *
+         A04      F1       GND        * none *
+         A04      F2       GND        * none *
+         A04      J2       GND        * none *
+         A04      K1       GND        * none *
+         A04      L2       GND        * none *
+         A04      N1       GND        * none *
+         A04      N2       GND        * none *
+         A04      R1       GND        * none *
+         A04      R2       GND        * none *
+         A04      T1       GND        * none *
+         A04      U2       GND        * none *
+         A05      A1       GND        * none *
+         A05      B1       P$2        12
+         A05      C1       GND        * none *
+         A05      C2       GND        * none *
+         A05      D1       P$2        12
+         A05      D2       P$2        12
+         A05      E1       P$2        12
+         A05      F1       GND        * none *
+         A05      F2       GND        * none *
+         A05      H1       P$2        12
+         A05      J1       P$2        12
+         A05      J2       GND        * none *
+         A05      K1       GND        * none *
+         A05      L1       P$2        12
+         A05      L2       GND        * none *
+         A05      M1       P$2        12
+         A05      N1       GND        * none *
+         A05      N2       GND        * none *
+         A05      P1       P$2        12
+         A05      R1       GND        * none *
+         A05      R2       GND        * none *
+         A05      S1       P$2        12
+         A05      T1       GND        * none *
+         A05      U2       GND        * none *
+         A06      A1       GND        * none *
+         A06      C1       GND        * none *
+         A06      C2       GND        * none *
+         A06      F1       GND        * none *
+         A06      F2       GND        * none *
+         A06      J2       GND        * none *
+         A06      K1       GND        * none *
+         A06      K2       P$2        12
+         A06      L2       GND        * none *
+         A06      N1       GND        * none *
+         A06      N2       GND        * none *
+         A06      R1       GND        * none *
+         A06      R2       GND        * none *
+         A06      T1       GND        * none *
+         A06      U2       GND        * none *
+         A07      C2       GND        * none *
+         A07      T1       GND        * none *
+         A07      U1       IN*        2
+         A08      C2       GND        * none *
+         A08      T1       GND        * none *
+         A08      T2       D          4
+         A09      C2       GND        * none *
+         A09      T1       GND        * none *
+         A10      B2       GND        * none *
+         A10      T1       GND        * none *
+         A11      C2       GND        * none *
+         A11      T1       GND        * none *
+         A12      B2       GND        * none *
+         A12      T1       GND        * none *
+         A14      C2       GND        * none *
+         A14      T1       GND        * none *
+         A15      C2       GND        * none *
+         A15      T1       GND        * none *
+         A16      C2       GND        * none *
+         A16      T1       GND        * none *
+         A18      C2       GND        * none *
+         A20      C2       GND        * none *
+         A21      C2       GND        * none *
+         A22      C2       GND        * none *
+         A22      M2       GND        * none *
+         A23      C1       C          2
+         A23      C2       GND        * none *
+         A23      F2       C          2
+         A23      J1       C          2
+         A23      M2       C          2
+         A23      P1       C          2
+         A23      T1       GND        * none *
+         A23      T2       C          2
+         A23      U1       GND        * none *
+         A23      V1       GND        * none *
+         A25      M1       P$2        12
+         A26      D2       P$2        12
+         A26      U2       P$2        12
+         A26      V1       P$2        12
+         AB01     AC2      GND        10
+         AB01     AH2      GND        10
+         AB01     AK2      GND        10
+         AB01     AL2      GND        10
+         AB01     AT1      GND        10
+         AB01     BC2      GND        10
+         AB01     BD2      GND        10
+         AB01     BH2      GND        10
+         AB01     BK2      GND        10
+         AB01     BL2      GND        10
+         AB01     BT1      GND        10
+         AB19     AC2      GND        * none *
+         AB19     AJ2      P$2        10
+         AB19     AK2      GND        * none *
+         AB19     AR2      P$2        10
+         AB19     AS2      GND        * none *
+         AB19     AT2      GND        * none *
+         AB19     AU2      P$2        10
+         AB19     BE2      GND        * none *
+         AB19     BF2      P$2        10
+         AB19     BL2      GND        * none *
+         AB19     BM2      P$2        10
+         B02      C2       GND        * none *
+         B02      T1       GND        * none *
+         B02      U1       GND        * none *
+         B02      V1       GND        * none *
+         B03      C2       GND        * none *
+         B03      T1       GND        * none *
+         B03      U1       GND        * none *
+         B03      V1       GND        * none *
+         B04      C2       GND        * none *
+         B04      T1       GND        * none *
+         B04      U1       GND        * none *
+         B04      V1       GND        * none *
+         B05      C1       C          11
+         B05      C2       GND        * none *
+         B05      F2       C          11
+         B05      J1       C          11
+         B05      M2       C          11
+         B05      P1       C          11
+         B05      T1       GND        * none *
+         B05      U1       GND        * none *
+         B05      V1       GND        * none *
+         B06      C2       GND        * none *
+         B06      T1       GND        * none *
+         B07      C2       GND        * none *
+         B07      T1       GND        * none *
+         B08      B2       GND        * none *
+         B08      T1       GND        * none *
+         B09      C2       GND        * none *
+         B09      T1       GND        * none *
+         B10      C2       GND        * none *
+         B10      T1       GND        * none *
+         B11      C2       GND        * none *
+         B11      T1       GND        * none *
+         B12      C2       GND        * none *
+         B12      T1       GND        * none *
+         B13      C2       GND        * none *
+         B13      T1       GND        * none *
+         B14      C2       GND        * none *
+         B14      T1       GND        * none *
+         B15      B2       GND        * none *
+         B15      T1       GND        * none *
+         B16      C2       GND        * none *
+         B16      T1       GND        * none *
+         B18      C2       GND        * none *
+         B20      C2       GND        * none *
+         B21      C2       GND        * none *
+         B22      C2       GND        * none *
+         B22      T1       GND        * none *
+         B22      T2       C          2
+         B22      U1       GND        * none *
+         B22      V1       GND        * none *
+         B23      C2       GND        * none *
+         C01      C2       GND        * none *
+         C01      T1       GND        * none *
+         C02      C2       GND        * none *
+         C02      T1       GND        * none *
+         C03      C2       GND        * none *
+         C03      T1       GND        * none *
+         C04      C2       GND        * none *
+         C04      T1       GND        * none *
+         C05      C2       GND        * none *
+         C05      T1       GND        * none *
+         C06      C2       GND        * none *
+         C06      T1       GND        * none *
+         C07      C2       GND        * none *
+         C07      T1       GND        * none *
+         C08      C2       GND        * none *
+         C08      T1       GND        * none *
+         C09      C2       GND        * none *
+         C09      T1       GND        * none *
+         C10      C2       GND        * none *
+         C10      T1       GND        * none *
+         C11      B2       GND        * none *
+         C11      T1       GND        * none *
+         C12      C2       GND        * none *
+         C12      T1       GND        * none *
+         C13      C2       GND        * none *
+         C13      T1       GND        * none *
+         C14      C2       GND        * none *
+         C14      T1       GND        * none *
+         C15      B2       GND        * none *
+         C15      T1       GND        * none *
+         C16      C2       GND        * none *
+         C16      T1       GND        * none *
+         C17      C2       GND        * none *
+         C17      T1       GND        * none *
+         CD18     AC2      GND        * none *
+         CD18     AT1      GND        * none *
+         CD18     BC2      GND        * none *
+         CD18     BT1      GND        * none *
+         D02      A1       GND        * none *
+         D02      C1       GND        * none *
+         D02      C2       GND        * none *
+         D02      F1       GND        * none *
+         D02      F2       GND        * none *
+         D02      J2       GND        * none *
+         D02      K1       GND        * none *
+         D02      L2       GND        * none *
+         D02      N1       GND        * none *
+         D02      N2       GND        * none *
+         D02      R1       GND        * none *
+         D02      R2       GND        * none *
+         D02      T1       GND        * none *
+         D02      U2       GND        * none *
+         D03      A1       GND        * none *
+         D03      C1       GND        * none *
+         D03      C2       GND        * none *
+         D03      F1       GND        * none *
+         D03      F2       GND        * none *
+         D03      J2       GND        * none *
+         D03      K1       GND        * none *
+         D03      L2       GND        * none *
+         D03      N1       GND        * none *
+         D03      N2       GND        * none *
+         D03      R1       GND        * none *
+         D03      R2       GND        * none *
+         D03      T1       GND        * none *
+         D03      U2       GND        * none *
+         D04      A1       GND        * none *
+         D04      C1       GND        * none *
+         D04      C2       GND        * none *
+         D04      F1       GND        * none *
+         D04      F2       GND        * none *
+         D04      J2       GND        * none *
+         D04      K1       GND        * none *
+         D04      L2       GND        * none *
+         D04      N1       GND        * none *
+         D04      N2       GND        * none *
+         D04      R1       GND        * none *
+         D04      R2       GND        * none *
+         D04      T1       GND        * none *
+         D04      U2       GND        * none *
+         D05      A1       GND        * none *
+         D05      B1       P$2        12
+         D05      C1       GND        * none *
+         D05      C2       GND        * none *
+         D05      D1       P$2        12
+         D05      D2       P$2        12
+         D05      E1       P$2        12
+         D05      F1       GND        * none *
+         D05      F2       GND        * none *
+         D05      H1       P$2        12
+         D05      J1       P$2        12
+         D05      J2       GND        * none *
+         D05      K1       GND        * none *
+         D05      L1       P$2        12
+         D05      L2       GND        * none *
+         D05      M1       P$2        12
+         D05      N1       GND        * none *
+         D05      N2       GND        * none *
+         D05      P1       P$2        12
+         D05      R1       GND        * none *
+         D05      R2       GND        * none *
+         D05      S1       P$2        12
+         D05      T1       GND        * none *
+         D05      U2       GND        * none *
+         D06      A1       GND        * none *
+         D06      C1       GND        * none *
+         D06      C2       GND        * none *
+         D06      F1       GND        * none *
+         D06      F2       GND        * none *
+         D06      J2       GND        * none *
+         D06      K1       GND        * none *
+         D06      K2       P$2        12
+         D06      L2       GND        * none *
+         D06      N1       GND        * none *
+         D06      N2       GND        * none *
+         D06      R1       GND        * none *
+         D06      R2       GND        * none *
+         D06      T1       GND        * none *
+         D06      U2       GND        * none *
+         D07      C2       GND        * none *
+         D07      T1       GND        * none *
+         D07      U1       IN*        2
+         D08      C2       GND        * none *
+         D08      T1       GND        * none *
+         D09      C2       GND        * none *
+         D09      T1       GND        * none *
+         D10      C2       GND        * none *
+         D10      T1       GND        * none *
+         D11      C2       GND        * none *
+         D11      P1       D          1
+         D11      T1       GND        * none *
+         D11      T2       D          4
+         D12      C2       GND        * none *
+         D12      T1       GND        * none *
+         D13      C2       GND        * none *
+         D13      T1       GND        * none *
+         D14      C2       GND        * none *
+         D14      T1       GND        * none *
+         D15      C2       GND        * none *
+         D15      T1       GND        * none *
+         D16      C2       GND        * none *
+         D16      T1       GND        * none *
+         D17      C2       GND        * none *
+         D17      T1       GND        * none *
+
+Change Class 0;
+I/O_0_TO_AC\ A04      P2       P$2        12
+         B05      L1       E          11
+         D04      P2       P$2        12
+
+Change Class 0;
+I/O_1_TO_CA_INH\ A06      M2       P$2        12
+         B05      N2       D          11
+         D06      M2       P$2        12
+
+Change Class 0;
+I/O_ADDR_ACC\ A05      S2       P$2        12
+         C02      U2       IN15       11
+         D05      S2       P$2        12
+
+Change Class 0;
+I/O_B-BRK A05      P2       P$2        12
+         C01      D1       IN         1
+         D05      P2       P$2        12
+
+Change Class 0;
+I/O_B-RUN A04      S2       P$2        12
+         C01      A1       IN1        1
+         D04      S2       P$2        12
+
+Change Class 0;
+I/O_BAC_00 A02      B1       P$2        12
+         C03      A1       IN1        11
+         D02      B1       P$2        12
+
+Change Class 0;
+I/O_BAC_01 A02      D1       P$2        12
+         C03      D1       IN2        11
+         D02      D1       P$2        12
+
+Change Class 0;
+I/O_BAC_02 A02      E1       P$2        12
+         C03      F1       IN3        11
+         D02      E1       P$2        12
+
+Change Class 0;
+I/O_BAC_03 A02      H1       P$2        12
+         C03      J1       IN4        11
+         D02      H1       P$2        12
+
+Change Class 0;
+I/O_BAC_04 A02      J1       P$2        12
+         C03      L1       IN5        11
+         D02      J1       P$2        12
+
+Change Class 0;
+I/O_BAC_05 A02      L1       P$2        12
+         C03      N1       IN6        11
+         D02      L1       P$2        12
+
+Change Class 0;
+I/O_BAC_06 A02      M1       P$2        12
+         C03      R1       IN7        11
+         D02      M1       P$2        12
+
+Change Class 0;
+I/O_BAC_07 A02      P1       P$2        12
+         C03      V1       IN8        11
+         D02      P1       P$2        12
+
+Change Class 0;
+I/O_BAC_08 A02      S1       P$2        12
+         C03      E2       IN9        11
+         D02      S1       P$2        12
+
+Change Class 0;
+I/O_BAC_09 A02      D2       P$2        12
+         C03      H2       IN10       11
+         D02      D2       P$2        12
+
+Change Class 0;
+I/O_BAC_10 A02      E2       P$2        12
+         C03      K2       IN11       11
+         D02      E2       P$2        12
+
+Change Class 0;
+I/O_BAC_11 A02      H2       P$2        12
+         C03      M2       IN12       11
+         D02      H2       P$2        12
+
+Change Class 0;
+I/O_BMB_00 A03      B1       P$2        12
+         C02      A1       IN1        11
+         D03      B1       P$2        12
+
+Change Class 0;
+I/O_BMB_01 A03      D1       P$2        12
+         C02      D1       IN2        11
+         D03      D1       P$2        12
+
+Change Class 0;
+I/O_BMB_02 A03      E1       P$2        12
+         C02      F1       IN3        11
+         D03      E1       P$2        12
+
+Change Class 0;
+I/O_BMB_03 A03      J1       P$2        12
+         C02      J1       IN4        11
+         C04      D2       D2         1
+         C05      D2       D2         1
+         D03      J1       P$2        12
+
+Change Class 0;
+I/O_BMB_03\ A03      H1       P$2        12
+         D03      H1       P$2        12
+
+Change Class 0;
+I/O_BMB_04 A03      M1       P$2        12
+         C02      L1       IN5        11
+         C04      E2       E2         1
+         C05      E2       E2         1
+         D03      M1       P$2        12
+
+Change Class 0;
+I/O_BMB_04\ A03      L1       P$2        12
+         D03      L1       P$2        12
+
+Change Class 0;
+I/O_BMB_05 A03      S1       P$2        12
+         C02      N1       IN6        11
+         C04      F2       F2         1
+         C05      F2       F2         1
+         D03      S1       P$2        12
+
+Change Class 0;
+I/O_BMB_05\ A03      P1       P$2        12
+         D03      P1       P$2        12
+
+Change Class 0;
+I/O_BMB_06 A03      E2       P$2        12
+         C02      R1       IN7        11
+         C04      H2       H2         1
+         C05      H2       H2         1
+         D03      E2       P$2        12
+
+Change Class 0;
+I/O_BMB_06\ A03      D2       P$2        12
+         D03      D2       P$2        12
+
+Change Class 0;
+I/O_BMB_07 A03      K2       P$2        12
+         C02      V1       IN8        11
+         C04      J2       J2         1
+         C05      J2       J2         1
+         D03      K2       P$2        12
+
+Change Class 0;
+I/O_BMB_07\ A03      H2       P$2        12
+         D03      H2       P$2        12
+
+Change Class 0;
+I/O_BMB_08 A03      P2       P$2        12
+         C02      E2       IN9        11
+         C05      K2       K2         1
+         D03      P2       P$2        12
+
+Change Class 0;
+I/O_BMB_08\ A03      M2       P$2        12
+         C04      K2       K2         1
+         D03      M2       P$2        12
+
+Change Class 0;
+I/O_BMB_09 A03      S2       P$2        12
+         C02      H2       IN10       11
+         D03      S2       P$2        12
+
+Change Class 0;
+I/O_BMB_10 A03      T2       P$2        12
+         C02      K2       IN11       11
+         D03      T2       P$2        12
+
+Change Class 0;
+I/O_BMB_11 A03      V2       P$2        12
+         C02      M2       IN12       11
+         D03      V2       P$2        12
+
+Change Class 0;
+I/O_BRK_RQ\ A05      K2       P$2        12
+         B05      D1       D          11
+         D05      K2       P$2        12
+
+Change Class 0;
+I/O_BWC0\ A06      P2       P$2        12
+         C01      F1       IN         1
+         D06      P2       P$2        12
+
+Change Class 0;
+I/O_DATA_IN A05      M2       P$2        12
+         B05      J2       E          11
+         D05      M2       P$2        12
+
+Change Class 0;
+I/O_INT_RQ\ A04      M2       P$2        12
+         B05      E1       E          11
+         D04      M2       P$2        12
+
+Change Class 0;
+I/O_PWR_CLR A02      V2       P$2        12
+         C05      H1       IN1        1
+         D02      V2       P$2        12
+
+Change Class 0;
+I/O_SKP_RQ\ A04      K2       P$2        12
+         B05      K1       D          11
+         D04      K2       P$2        12
+
+Change Class 0;
+I/O_TS03 A02      S2       P$2        12
+         C04      H1       IN1        1
+         D02      S2       P$2        12
+
+Change Class 0;
+I/O_TS04 A02      T2       P$2        12
+         D02      T2       P$2        12
+
+Change Class 0;
+IM_00\   A04      B1       P$2        12
+         B03      D1       D          11
+         B04      D1       D          11
+         D04      B1       P$2        12
+
+Change Class 0;
+IM_01\   A04      D1       P$2        12
+         B03      E1       E          11
+         B04      E1       E          11
+         D04      D1       P$2        12
+
+Change Class 0;
+IM_02\   A04      E1       P$2        12
+         B03      K1       D          11
+         B04      K1       D          11
+         D04      E1       P$2        12
+
+Change Class 0;
+IM_03\   A04      H1       P$2        12
+         B03      L1       E          11
+         B04      L1       E          11
+         D04      H1       P$2        12
+
+Change Class 0;
+IM_04\   A04      J1       P$2        12
+         B03      R1       D          11
+         B04      R1       D          11
+         D04      J1       P$2        12
+
+Change Class 0;
+IM_05\   A04      L1       P$2        12
+         B03      S1       E          11
+         B04      S1       E          11
+         D04      L1       P$2        12
+
+Change Class 0;
+IM_06\   A04      M1       P$2        12
+         B03      H2       D          11
+         B04      H2       D          11
+         D04      M1       P$2        12
+
+Change Class 0;
+IM_07\   A04      P1       P$2        12
+         B03      J2       E          11
+         B04      J2       E          11
+         D04      P1       P$2        12
+
+Change Class 0;
+IM_08\   A04      S1       P$2        12
+         B03      N2       D          11
+         B04      N2       D          11
+         D04      S1       P$2        12
+
+Change Class 0;
+IM_09\   A04      D2       P$2        12
+         B03      P2       E          11
+         D04      D2       P$2        12
+
+Change Class 0;
+IM_10\   A04      E2       P$2        12
+         D04      E2       P$2        12
+
+Change Class 0;
+IM_11\   A04      H2       P$2        12
+         B04      P2       E          11
+         D04      H2       P$2        12
+
+Change Class 0;
+INT_RQ\  A12      K1       OUT        1
+         B05      B1       B          11
+
+Change Class 0;
+IOP_1    A02      K2       P$2        12
+         C04      P2       P2         1
+         C05      P2       P2         1
+         D02      K2       P$2        12
+
+Change Class 0;
+IOP_2    A02      M2       P$2        12
+         C04      R2       R2         1
+         C05      R2       R2         1
+         D02      M2       P$2        12
+
+Change Class 0;
+IOP_4    A02      P2       P$2        12
+         C04      S2       S2         1
+         C05      S2       S2         1
+         D02      P2       P$2        12
+
+Change Class 0;
+LDMF     C05      E1       E1         1
+         D11      B1       C          1
+         D11      D2       C          1
+         D11      H1       C          1
+
+Change Class 0;
+LDMF\    B08      P2       IN1        1
+         C05      F1       F1         1
+
+Change Class 0;
+LPB_00   A25      T2       P$2        12
+         C08      D1       IN2B       8
+         D08      E1       E1         9
+
+Change Class 0;
+LPB_00\  D08      F1       F1         9
+         D10      M1       IN1        9
+
+Change Class 0;
+LPB_01   A25      U2       P$2        12
+         C08      K1       IN2B       8
+         D08      L1       L1         9
+
+Change Class 0;
+LPB_01\  D08      M1       M1         9
+         D10      N1       IN2        9
+
+Change Class 0;
+LPB_02   A25      V2       P$2        12
+         C08      R1       IN2B       8
+         D08      S1       S1         9
+
+Change Class 0;
+LPB_02\  D08      U1       U1         9
+         D10      P1       IN3        9
+
+Change Class 0;
+LPB_03   A26      A2       P$2        12
+         C08      H2       IN2B       8
+         D08      H2       H2         9
+
+Change Class 0;
+LPB_03\  D08      J2       J2         9
+         D10      R1       IN4        9
+
+Change Class 0;
+LPB_04   A26      B2       P$2        12
+         C08      N2       IN2B       8
+         D08      P2       P2         9
+
+Change Class 0;
+LPB_04\  D08      R2       R2         9
+         D10      R2       IN5        9
+
+Change Class 0;
+LPB_05   A26      C2       P$2        12
+         C08      U2       IN2B       8
+         D08      V2       V2         9
+
+Change Class 0;
+LPB_05\  D08      V1       V1         9
+         D10      S2       IN6        9
+         D10      T2       IN7        9
+         D10      U2       IN8        9
+
+Change Class 0;
+LPB_NOT_EQ_1 A10      M1       IN2        6
+         D10      V2       OUT        9
+
+Change Class 0;
+LPB_TO_DTB A11      T2       OUT        9
+         C08      C1       IN2A       8
+         C08      F2       IN2A       8
+         C08      J1       IN2A       8
+         C08      M2       IN2A       8
+         C08      P1       IN2A       8
+         C08      T2       IN2A       8
+
+Change Class 0;
+M-STOP\  A11      S1       OUT        2
+         B14      D1       S          2
+         C07      K2       K2         2
+         D14      L1       M1         3
+
+Change Class 0;
+MB_TO_DTB\ D12      F1       IN1        1
+         D12      H1       IN2        1
+         D12      J1       IN3        1
+         D12      K1       IN4        1
+         D12      S1       OUT        1
+
+Change Class 0;
+MC00     A26      S1       P$2        12
+         B13      E1       1          4
+         B13      E2       D          4
+         D10      D2       IN5        4
+
+Change Class 0;
+MC00\    A10      R1       IN2        6
+         B11      T2       IN1        5
+         B13      F1       0          4
+
+Change Class 0;
+MC01     A08      L2       C          6
+         A26      T1       P$2        12
+         B13      H2       1          4
+         B13      J1       D          4
+         C11      E1       IN2        4
+
+Change Class 0;
+MC01\    B11      P1       IN1        5
+         B13      J2       0          4
+         C11      B1       IN2        4
+         D10      E2       IN6        4
+
+Change Class 0;
+MC02     A26      U1       P$2        12
+         B11      U2       IN2        5
+         B13      L1       1          4
+         D12      D2       IN1        9
+         D12      E2       IN2        9
+
+Change Class 0;
+MC02\    B13      C1       D          4
+         B13      M1       0          4
+         D10      F2       IN7        4
+
+Change Class 0;
+MF00     A25      V1       P$2        12
+         D11      E1       1          1
+
+Change Class 0;
+MF00\    B04      D2       A          11
+         B05      M1       A          11
+         D11      F1       0          1
+
+Change Class 0;
+MF01     A26      A1       P$2        12
+         D11      H2       1          1
+
+Change Class 0;
+MF01\    B04      E2       B          11
+         B05      N1       B          11
+         D11      J2       0          1
+
+Change Class 0;
+MF02     A26      B1       P$2        12
+         D11      L1       1          1
+
+Change Class 0;
+MF02\    B04      K2       A          11
+         B05      D2       A          11
+         D11      M1       0          1
+
+Change Class 0;
+MKT      A26      H2       P$2        12
+         B12      S2       IN2        4
+         B13      V2       1          4
+         B15      L1       IN1        5
+         C15      L2       IN1        9
+
+Change Class 0;
+MKTK     A08      R2       0          6
+         A25      P1       P$2        12
+
+Change Class 0;
+MKTK\    A08      P2       1          6
+         A09      K2       IN1        6
+         B04      B1       B          11
+
+Change Class 0;
+MKT\     B10      R1       IN4        4
+         B13      T2       D          4
+         B13      V1       0          4
+         C14      N1       C          5
+         D10      H2       IN8        4
+
+Change Class 0;
+MK_BLK_END A09      T2       IN3        9
+         CD18     BU1      BU1        7
+
+Change Class 0;
+MK_BLK_END\ A09      C1       IN3        6
+         CD18     BV1      BV1        7
+
+Change Class 0;
+MK_BLK_MK CD18     AE2      AE2        7
+         D10      A1       IN1        4
+         D10      B1       IN2        4
+
+Change Class 0;
+MK_BLK_MK\ CD18     AD2      AD2        7
+
+Change Class 0;
+MK_BLK_START CD18     AJ2      AJ2        7
+
+Change Class 0;
+MK_BLK_START\ A09      A1       IN1        6
+         CD18     AF1      AF1        7
+
+Change Class 0;
+MK_BLK_SYNC CD18     BS2      BS2        7
+
+Change Class 0;
+MK_BLK_SYNC\ CD18     BT2      BT2        7
+
+Change Class 0;
+MK_DATA  CD18     BP2      BP2        7
+
+Change Class 0;
+MK_DATA\ A09      B1       IN2        6
+         CD18     AU2      AU2        7
+
+Change Class 0;
+MK_DATA_SYNC CD18     AH1      AH1        7
+
+Change Class 0;
+MK_DATA_SYNC\ CD18     AJ1      AJ1        7
+
+Change Class 0;
+MK_END   A08      C1       D          6
+         CD18     AF2      AF2        7
+
+Change Class 0;
+MK_END\  A09      D1       IN4        6
+         CD18     AH2      AH2        7
+
+Change Class 0;
+MOVE     D07      D2       O0         2
+
+Change Class 0;
+MOVE\    A09      F2       IN3        6
+         D07      D1       O0\        2
+
+Change Class 0;
+MR00     A25      D1       P$2        12
+         B07      P2       P2         2
+         B14      M2       D          2
+
+Change Class 0;
+MR00\    B03      H1       B          11
+         B07      R2       R2         2
+
+Change Class 0;
+MR01     A25      E1       P$2        12
+         C07      P2       P2         2
+         C12      B1       IN2        3
+
+Change Class 0;
+MR01\    B03      M1       A          11
+         B14      C1       D          2
+         C07      R2       R2         2
+
+Change Class 0;
+N$1      B06      S2       IN         1
+         B08      S2       OUT        1
+
+Change Class 0;
+N$2      C16      K2       IN1        1
+         C16      L2       IN2        1
+         C16      M2       IN3        1
+         C16      N2       IN4        1
+         C17      B1       OUT        1
+
+Change Class 0;
+N$3      A11      R1       IN         2
+         B11      S2       OUT        2
+
+Change Class 0;
+N$4      D13      R2       E2         1
+         D13      S2       D2         1
+
+Change Class 0;
+N$5      A16      H2       H2         3
+         C16      V2       OUT        3
+
+Change Class 0;
+N$6      D12      A1       IN1        1
+         D12      B1       IN2        1
+         D12      C1       IN3        1
+         D12      D1       IN4        1
+         D13      F2       F2         1
+
+Change Class 0;
+N$7      A12      J1       IN2        1
+         A12      N1       OUT        1
+         A12      P1       IN1        1
+
+Change Class 0;
+N$8      C17      R1       IN         1
+         D17      F2       F2         1
+
+Change Class 0;
+N$10     B12      M1       IN1        4
+         C11      C1       OUT        4
+
+Change Class 0;
+N$11     B12      R1       IN4        4
+         C11      F1       OUT        4
+
+Change Class 0;
+N$12     D17      D2       D2         1
+         D17      E2       E2         1
+
+Change Class 0;
+N$13     A14      H2       H2         3
+         A14      J2       J2         3
+         A14      K2       K2         3
+         B15      F1       OUT        3
+
+Change Class 0;
+N$14     A16      D2       D2         3
+         A16      E2       E2         3
+
+Change Class 0;
+N$15     A16      F2       F2         3
+         C17      C1       IN         3
+
+Change Class 0;
+N$16     A15      C1       IN3        3
+         A15      D1       IN4        3
+         C17      D2       OUT        3
+
+Change Class 0;
+N$17     B14      N1       C          3
+         B14      S2       C          3
+         D15      D2       D2         3
+
+Change Class 0;
+N$18     A14      M2       H2         3
+         A14      N2       J2         3
+         A14      P2       K2         3
+         B15      F2       OUT        3
+
+Change Class 0;
+N$19     A14      H1       H1         3
+         A14      L2       L2         3
+
+Change Class 0;
+N$20     A16      R2       E2         3
+         A16      S2       D2         3
+
+Change Class 0;
+N$21     A14      D2       D2         3
+         A14      E2       E2         3
+
+Change Class 0;
+N$22     A11      U2       IN         3
+         A14      T2       F2         3
+
+Change Class 0;
+N$23     A11      P2       IN         3
+         A14      F2       F2         3
+
+Change Class 0;
+N$24     B16      K2       K2         3
+         C16      S1       OUT        3
+
+Change Class 0;
+N$25     A14      R2       E2         3
+         A14      V2       D2         3
+
+Change Class 0;
+N$26     A14      S1       H1         3
+         A14      S2       L2         3
+
+Change Class 0;
+N$27     D15      N2       N2         3
+         D15      S2       S2         3
+
+Change Class 0;
+N$28     B12      L2       IN2        4
+         C12      U1       OUT        4
+
+Change Class 0;
+N$29     B16      D2       D2         3
+         B16      E2       E2         3
+
+Change Class 0;
+N$30     B16      F2       F2         3
+         C17      E2       IN         3
+
+Change Class 0;
+N$31     A15      D2       IN1        3
+         A15      E2       IN2        3
+         C17      F2       OUT        3
+
+Change Class 0;
+N$32     B15      S1       OUT        5
+         C17      L1       IN         5
+
+Change Class 0;
+N$33     A08      U2       S          4
+         B10      S1       OUT        4
+
+Change Class 0;
+N$34     C17      S2       IN         6
+         D16      T2       F2         6
+
+Change Class 0;
+N$35     A09      F1       IN1        6
+         C10      P2       OUT        6
+
+Change Class 0;
+N$36     C13      D2       OUT        5
+         C14      P1       D          5
+
+Change Class 0;
+N$37     B16      R2       E2         3
+         B16      S2       D2         3
+
+Change Class 0;
+N$38     C15      C1       OUT        5
+         C15      H1       IN1        5
+
+Change Class 0;
+N$39     C15      F1       OUT        5
+         C15      J1       IN2        5
+
+Change Class 0;
+N$40     D14      M2       M2         3
+         D14      V2       V2         3
+
+Change Class 0;
+N$41     D14      P1       P1         3
+         D14      V1       V1         3
+
+Change Class 0;
+N$42     C11      K1       OUT        4
+         C11      L1       IN1        4
+
+Change Class 0;
+N$43     A12      N2       OUT        5
+         A12      T2       IN1        5
+
+Change Class 0;
+N$44     B12      U2       IN4        4
+         C11      N1       OUT        4
+
+Change Class 0;
+N$45     A12      S2       OUT        5
+         A12      U2       IN2        5
+
+Change Class 0;
+N$46     A09      J1       IN3        6
+         A10      K1       OUT        6
+
+Change Class 0;
+N$47     B11      H2       OUT        5
+         C13      C1       IN         5
+
+Change Class 0;
+N$48     B12      S1       OUT        4
+         C11      P1       IN1        4
+
+Change Class 0;
+N$49     B11      E2       IN2        5
+         B12      L1       OUT        5
+
+Change Class 0;
+N$50     C12      S2       OUT        3
+         C15      P1       IN1        3
+
+Change Class 0;
+N$51     B12      V2       OUT        4
+         C12      F1       IN2        4
+
+Change Class 0;
+N$52     C11      S1       OUT        4
+         C12      E1       IN1        4
+
+Change Class 0;
+N$53     C15      N1       OUT        3
+         C15      R1       IN2        3
+
+Change Class 0;
+N$54     C11      F2       OUT        4
+         C12      H1       IN3        4
+
+Change Class 0;
+N$55     B11      D2       IN1        5
+         B12      E1       OUT        5
+
+Change Class 0;
+N$56     B11      D1       OUT        5
+         B11      F2       IN3        5
+
+Change Class 0;
+N$58     A11      V1       IN         4
+         B08      V2       OUT        4
+
+Change Class 0;
+N$59     C11      V2       OUT        4
+         C13      V1       IN         4
+
+Change Class 0;
+N$60     B12      K2       IN1        4
+         C12      N1       OUT        4
+
+Change Class 0;
+N$61     B12      M2       IN3        4
+         C12      V1       OUT        4
+
+Change Class 0;
+N$62     B12      J2       OUT        4
+         B12      N2       IN4        4
+
+Change Class 0;
+N$63     B13      N2       S          4
+         B15      K1       OUT        4
+
+Change Class 0;
+N$64     A12      K2       OUT        5
+         B10      C1       IN3        5
+         B10      D1       IN4        5
+
+Change Class 0;
+N$65     C11      S2       OUT        4
+         C11      T2       IN1        4
+
+Change Class 0;
+N$66     A12      F2       OUT        5
+         B10      A1       IN1        5
+         B10      B1       IN2        5
+
+Change Class 0;
+N$67     D10      P2       OUT        3
+         D14      J2       N1         3
+
+Change Class 0;
+N$68     D14      D2       M2         3
+         D14      H1       P2         3
+
+Change Class 0;
+N$69     D14      A1       V1         3
+         D14      C1       P1         3
+
+Change Class 0;
+N$70     B11      E1       IN1        5
+         B11      U1       OUT        5
+
+Change Class 0;
+N$71     B15      N1       OUT        5
+         C17      F1       IN         5
+
+Change Class 0;
+N$72     B11      H1       IN3        5
+         B11      N1       OUT        5
+
+Change Class 0;
+N$73     B08      N1       OUT        8
+         B09      N2       S          8
+
+Change Class 0;
+N$76     C14      L2       C          3
+         C15      S2       OUT        3
+
+Change Class 0;
+N$77     B10      F1       IN1        5
+         B11      J1       OUT        5
+
+Change Class 0;
+N$78     B10      K1       IN4        5
+         C17      H1       OUT        5
+
+Change Class 0;
+N$79     C13      N2       OUT        3
+         C14      N2       S          3
+
+Change Class 0;
+N$80     A09      K1       IN4        6
+         B21      U2       OUT        6
+
+Change Class 0;
+N$81     C12      D1       OUT        3
+         C13      M2       IN         3
+
+Change Class 0;
+N$82     B11      V1       OUT        5
+         C17      J1       IN         5
+
+Change Class 0;
+N$83     A08      E2       D          6
+         A09      L1       OUT        6
+
+Change Class 0;
+N$84     A10      C1       OUT        5
+         A10      D1       IN1        5
+
+Change Class 0;
+N$85     A10      B1       IN2        5
+         A10      F1       OUT        5
+         B15      P2       IN1        5
+
+Change Class 0;
+N$86     B11      L2       IN3        5
+         B15      S2       OUT        5
+
+Change Class 0;
+N$88     D17      R2       E2         4
+         D17      S2       D2         4
+
+Change Class 0;
+N$91     B08      S1       OUT        8
+         B09      R1       S          8
+
+Change Class 0;
+N$92     B08      K1       OUT        8
+         B09      F2       S          8
+
+Change Class 0;
+N$93     D08      C1       C1         9
+         D08      D1       D1         9
+         D09      E1       OUT        9
+
+Change Class 0;
+N$94     D08      E2       E2         9
+         D08      F2       F2         9
+         D09      J2       OUT        9
+
+Change Class 0;
+N$95     D08      J1       J1         9
+         D08      K1       K1         9
+         D09      L1       OUT        9
+
+Change Class 0;
+N$96     D08      P1       P1         9
+         D08      R1       R1         9
+         D09      S1       OUT        9
+
+Change Class 0;
+N$97     B08      C1       OUT        8
+         B09      D1       S          8
+
+Change Class 0;
+N$99     D08      T2       T2         9
+         D08      U2       U2         9
+         D09      V2       OUT        9
+
+Change Class 0;
+N$100    D08      M2       M2         9
+         D08      N2       N2         9
+         D09      P2       OUT        9
+
+Change Class 0;
+N$101    C17      U1       OUT        9
+         D08      D2       D2         9
+         D08      L2       L2         9
+         D08      S2       S2         9
+
+Change Class 0;
+N$103    C17      N2       OUT        9
+         D08      B1       B1         9
+         D08      H1       H1         9
+         D08      N1       N1         9
+
+Change Class 0;
+N$104    C08      J2       OUT        8
+         C09      N2       S          8
+
+Change Class 0;
+N$105    A09      E1       OUT        6
+         A11      A1       IN         6
+
+Change Class 0;
+N$106    A09      H2       IN4        6
+         A11      B1       OUT        6
+
+Change Class 0;
+N$107    A08      M2       D          6
+         A09      J2       OUT        6
+
+Change Class 0;
+N$108    C10      J2       OUT        9
+         C17      M2       IN         9
+
+Change Class 0;
+N$109    C10      V2       OUT        9
+         C17      V1       IN         9
+
+Change Class 0;
+N$111    A09      U2       IN4        9
+         C17      R2       OUT        9
+
+Change Class 0;
+N$112    B08      F1       OUT        8
+         B09      U2       S          8
+
+Change Class 0;
+N$113    B08      F2       OUT        8
+         B09      K1       S          8
+
+Change Class 0;
+N$114    A09      V2       OUT        9
+         A11      S2       IN         9
+
+Change Class 0;
+N$115    C15      N2       OUT        9
+         C17      P2       IN         9
+
+Change Class 0;
+N$116    C13      S2       IN         9
+         C15      K2       OUT        9
+
+Change Class 0;
+N$117    C12      H2       OUT        9
+         D12      M2       IN3        9
+         D12      N2       IN4        9
+
+Change Class 0;
+N$118    C11      K2       OUT        9
+         D12      K2       IN1        9
+         D12      L2       IN2        9
+
+Change Class 0;
+N$119    C13      P2       IN         9
+         C15      F2       OUT        9
+
+Change Class 0;
+N$123    A18      D2       D2         10
+         A18      J2       J2         10
+         AB19     AF2      P$2        10
+
+Change Class 0;
+N$124    A10      S1       OUT        6
+         A11      C1       IN         6
+
+Change Class 0;
+N$125    A08      P1       D          6
+         A10      N1       OUT        6
+
+Change Class 0;
+N$126    A18      E2       E2         10
+         A18      K2       K2         10
+         AB19     AH2      P$2        10
+
+Change Class 0;
+N$127    AB19     AN2      P$2        10
+         B18      D2       D2         10
+         B18      J2       J2         10
+
+Change Class 0;
+N$128    A08      N1       C          6
+         A11      D2       OUT        6
+
+Change Class 0;
+N$129    C08      V2       OUT        8
+         C09      U2       S          8
+
+Change Class 0;
+N$130    AB19     AP2      P$2        10
+         B18      E2       E2         10
+         B18      K2       K2         10
+
+Change Class 0;
+N$131    A20      D2       D2         10
+         A20      J2       J2         10
+         AB19     AV2      P$2        10
+
+Change Class 0;
+N$132    A08      K1       S          6
+         A11      E1       OUT        6
+
+Change Class 0;
+N$133    A20      E2       E2         10
+         A20      K2       K2         10
+         AB19     BD2      P$2        10
+
+Change Class 0;
+N$134    AB19     BH2      P$2        10
+         B20      D2       D2         10
+         B20      J2       J2         10
+
+Change Class 0;
+N$135    AB19     BJ2      P$2        10
+         B20      E2       E2         10
+         B20      K2       K2         10
+
+Change Class 0;
+N$136    A21      D2       D2         10
+         A21      J2       J2         10
+         AB19     BN2      P$2        10
+
+Change Class 0;
+N$137    A10      V2       OUT        6
+         A11      D1       IN         6
+
+Change Class 0;
+N$138    A09      S1       OUT        6
+         A10      U2       IN2        6
+
+Change Class 0;
+N$139    A10      S2       OUT        6
+         A10      T2       IN1        6
+
+Change Class 0;
+N$140    A21      E2       E2         10
+         A21      K2       K2         10
+         AB19     BP2      P$2        10
+
+Change Class 0;
+N$142    C08      P2       OUT        8
+         C09      R1       S          8
+
+Change Class 0;
+N$146    C08      E1       OUT        8
+         C09      D1       S          8
+
+Change Class 0;
+N$147    C08      L1       OUT        8
+         C09      F2       S          8
+
+Change Class 0;
+N$148    C08      S1       OUT        8
+         C09      K1       S          8
+
+Change Class 0;
+N$150    D16      S1       H1         6
+         D16      S2       L2         6
+
+Change Class 0;
+N$151    D16      R2       E2         6
+         D16      V2       D2         6
+
+Change Class 0;
+N$153    A10      F2       OUT        6
+         A10      J2       IN2        6
+
+Change Class 0;
+N$155    C10      L1       OUT        8
+         C14      E2       D          8
+
+Change Class 0;
+N$161    A09      P2       OUT        6
+         A11      F1       IN         6
+
+Change Class 0;
+N$162    A11      H1       OUT        6
+         A12      B1       IN2        6
+         A12      D1       IN1        6
+
+Change Class 0;
+N$185    C10      E1       OUT        8
+         C14      C1       D          8
+
+Change Class 0;
+N$193    C10      S1       OUT        8
+         C14      J1       D          8
+
+Change Class 0;
+NC       A04      T2       P$2        12
+         A04      V2       P$2        12
+         A05      E2       P$2        12
+         A05      H2       P$2        12
+         A05      T2       P$2        12
+         A05      V2       P$2        12
+         A18      H2       H2         10
+         A18      L2       L2         10
+         A18      M2       M2         10
+         A20      H2       H2         10
+         A20      L2       L2         10
+         A20      M2       M2         10
+         A21      H2       H2         10
+         A21      L2       L2         10
+         A21      M2       M2         10
+         A24      A2       P$2        12
+         A24      B2       P$2        12
+         A24      J2       P$2        12
+         A26      D1       P$2        12
+         AB01     BN1      BN1        10
+         AB01     BP1      BP1        10
+         B05      L2       B          11
+         B18      H2       H2         10
+         B18      L2       L2         10
+         B18      M2       M2         10
+         B20      H2       H2         10
+         B20      L2       L2         10
+         B20      M2       M2         10
+         B22      R2       A          2
+         C02      P2       IN13       11
+         C02      S2       IN14       11
+         C03      P2       IN13       11
+         C03      S2       IN14       11
+         C03      U2       IN15       11
+         C07      N1       N1         2
+         C07      P1       P1         2
+         C07      R1       R1         2
+         C07      S2       S2         2
+         C07      T2       T2         2
+         C07      U2       U2         2
+         D04      T2       P$2        12
+         D04      V2       P$2        12
+         D05      E2       P$2        12
+         D05      H2       P$2        12
+         D05      T2       P$2        12
+         D05      V2       P$2        12
+         D14      B1       V2         3
+         D14      D1       U2         3
+         D14      E1       S2         3
+         D14      F1       R2         3
+         D14      J1       N2         3
+         D14      N2       N2         3
+         D14      P2       P2         3
+         D14      R2       R2         3
+         D14      S2       S2         3
+         D14      U2       U2         3
+         D15      M2       M2         3
+         D15      P2       P2         3
+         D15      R2       R2         3
+         D15      T2       T2         3
+
+Change Class 0;
+PAR      A08      U1       0          6
+         A25      T1       P$2        12
+
+Change Class 0;
+PAR\     A08      S1       1          6
+         A12      E1       IN2        6
+         B04      M1       A          11
+
+Change Class 0;
+PC+ES    A11      H2       IN         6
+         A12      C1       OUT        6
+
+Change Class 0;
+PC+ES\   A11      J2       OUT        6
+         B11      R2       IN3        2
+
+Change Class 0;
+PWR_CLR  C06      R2       OUT        1
+
+Change Class 0;
+PWR_CLR\ A10      H2       IN1        6
+         A10      M2       IN2        2
+         A12      A1       IN1        6
+         A23      M1       A          2
+         B08      U2       IN2        4
+         C05      K1       OUT        1
+         C06      P2       IN         1
+         C11      U2       IN2        4
+         C14      R1       S          5
+         D11      A1       R          1
+
+Change Class 0;
+RD+WD    A09      P1       IN3        6
+         B08      N2       OUT        2
+         B12      D2       IN1        4
+         C12      R1       IN2        4
+
+Change Class 0;
+RDD_00   A21      U2       U2         10
+         B09      M2       D          8
+         D09      C1       IN2A       9
+         D09      F2       IN2A       9
+
+Change Class 0;
+RDD_00\  A21      V2       V2         10
+
+Change Class 0;
+RDD_01   B09      P1       D          8
+         B20      U2       U2         10
+         D09      J1       IN2A       9
+         D09      M2       IN2A       9
+
+Change Class 0;
+RDD_01\  B20      V2       V2         10
+
+Change Class 0;
+RDD_02   A20      U2       U2         10
+         B09      E2       D          8
+         D09      P1       IN2A       9
+         D09      T2       IN2A       9
+
+Change Class 0;
+RDD_02\  A20      V2       V2         10
+
+Change Class 0;
+RDMK     B18      U2       U2         10
+         CD18     AS2      AS2        7
+
+Change Class 0;
+RDMK\    B18      V2       V2         10
+
+Change Class 0;
+RD_EN    C11      J1       IN2        4
+         C11      N2       OUT        4
+
+Change Class 0;
+RD_EN_LPB_00-02 C10      D2       IN1A       9
+         C13      T2       OUT        9
+         D09      D1       IN2B       9
+         D09      K1       IN2B       9
+         D09      R1       IN2B       9
+
+Change Class 0;
+RD_EN_LPB_03-05 C10      R2       IN1A       9
+         C13      R2       OUT        9
+         D09      H2       IN2B       9
+         D09      N2       IN2B       9
+         D09      U2       IN2B       9
+
+Change Class 0;
+READ_ALL D07      N2       O3         2
+
+Change Class 0;
+READ_ALL\ C11      M1       IN2        4
+         D07      N1       O3\        2
+
+Change Class 0;
+READ_DATA A10      L1       IN1        6
+         C11      H1       IN1        4
+         D07      J2       O2         2
+
+Change Class 0;
+READ_DATA\ B08      L2       IN1        2
+         B11      J2       IN1        5
+         D07      J1       O2\        2
+
+Change Class 0;
+RSTA     C04      A1       A1         1
+
+Change Class 0;
+RSTA\    B03      C1       C          11
+         B03      F2       C          11
+         B03      J1       C          11
+         B03      M2       C          11
+         B03      P1       C          11
+         C04      B1       B1         1
+
+Change Class 0;
+RSTB     C05      C1       C1         1
+
+Change Class 0;
+RSTB\    B04      C1       C          11
+         B04      F2       C          11
+         B04      J1       C          11
+         B04      M2       C          11
+         B04      P1       C          11
+         C05      D1       D1         1
+
+Change Class 0;
+SE       D07      L2       O7         2
+
+Change Class 0;
+SEARCH   C11      D2       IN1        4
+         D07      E2       O1         2
+
+Change Class 0;
+SEARCH\  B05      K2       A          11
+         B11      K2       IN2        5
+         D07      E1       O1\        2
+
+Change Class 0;
+SEL      A08      H2       1          6
+         A25      S1       P$2        12
+
+Change Class 0;
+SEL\     A08      J2       0          6
+         A09      N2       IN4        6
+         B04      H1       B          11
+
+Change Class 0;
+SE\      A09      H1       IN2        6
+         D07      L1       O7\        2
+
+Change Class 0;
+SHIFT_CK C17      K1       OUT        5
+         CD18     BR2      BR2        7
+
+Change Class 0;
+SH_DTB   A10      R2       IN2        6
+         B09      B1       C          8
+         B09      D2       C          8
+         B09      H1       C          8
+         B09      L2       C          8
+         B09      N1       C          8
+         B09      S2       C          8
+         B10      E1       OUT        5
+         C09      B1       C          8
+         C09      D2       C          8
+         C09      H1       C          8
+         C09      L2       C          8
+         C09      N1       C          8
+         C09      S2       C          8
+
+Change Class 0;
+SH_EN    A11      N2       OUT        5
+         A12      E2       IN2        5
+         C10      A1       IN1A       8
+         C10      F1       IN1A       8
+         C10      M1       IN1A       8
+
+Change Class 0;
+SH_EN\   A11      M2       IN         5
+         A12      V2       OUT        5
+         C10      C1       IN2A       8
+         C10      J1       IN2A       8
+         C10      P1       IN2A       8
+
+Change Class 0;
+SH_ST    C17      A1       IN         1
+         CD18     AM1      AM1        7
+
+Change Class 0;
+SH_ST-B  C16      P2       OUT        1
+         CD18     BC1      BC1        7
+
+Change Class 0;
+SKP_RQ\  A12      S1       OUT        1
+         B05      F1       A          11
+
+Change Class 0;
+SP_DY    D14      H2       H2         3
+
+Change Class 0;
+SP_DY\   C14      M2       D          3
+         D14      F2       F2         3
+
+Change Class 0;
+ST_BLK_MK A26      K1       P$2        12
+         C13      E2       IN         5
+         CD18     AR2      AR2        7
+
+Change Class 0;
+ST_BLK_MK\ A09      D2       IN1        6
+         A09      M1       IN1        6
+         C13      F2       OUT        5
+
+Change Class 0;
+ST_CK    A10      P1       IN1        6
+         A26      P1       P$2        12
+         C13      J1       IN         5
+         CD18     BR1      BR1        7
+         D17      M2       K2         4
+         D17      N2       J2         4
+         D17      P2       H2         4
+
+Change Class 0;
+ST_CK\   C13      K1       OUT        5
+         C16      E2       IN2        5
+
+Change Class 0;
+ST_CK_0P B12      H2       IN4        4
+         C12      S1       IN3        4
+         C13      B1       OUT        4
+
+Change Class 0;
+ST_CK_0P\ C13      A1       IN         4
+         D17      L2       F2         4
+
+Change Class 0;
+ST_DATA  B12      A1       IN1        5
+         C13      H2       IN         5
+         C16      J2       OUT        5
+
+Change Class 0;
+ST_DATA\ C13      J2       OUT        5
+
+Change Class 0;
+ST_FINAL A09      S2       IN2        9
+         A26      N1       P$2        12
+         C11      D1       IN1        4
+         C13      L1       IN         5
+         CD18     BL2      BL2        7
+
+Change Class 0;
+ST_FINAL\ C11      M2       IN2        4
+         C13      M1       OUT        5
+         C16      F2       IN3        5
+
+Change Class 0;
+ST_IDLE  A26      R1       P$2        12
+         C13      K2       IN         5
+         CD18     BD2      BD2        7
+
+Change Class 0;
+ST_IDLE\ A09      E2       IN2        6
+         A09      N1       IN2        6
+         C13      L2       OUT        5
+
+Change Class 0;
+ST_REV_CK A26      L1       P$2        12
+         B11      S1       IN3        5
+         C11      A1       IN1        4
+         C13      D1       IN         5
+         CD18     BS1      BS1        7
+         D12      F2       IN3        9
+         D12      H2       IN4        9
+
+Change Class 0;
+ST_REV_CK\ C13      E1       OUT        5
+
+Change Class 0;
+SWTM     A26      V2       P$2        12
+         B06      P2       IN         5
+         B08      V1       P$1        5
+         B11      B1       IN2        5
+         C10      N2       IN2B       6
+         C12      P2       IN2        3
+         C15      L1       IN1        3
+
+Change Class 0;
+SWTM\    B06      R2       OUT        5
+         C10      L2       IN1B       6
+
+Change Class 0;
+SYNC     B10      D2       IN1        4
+         B10      E2       IN2        4
+         CD18     BN2      BN2        7
+
+Change Class 0;
+SYNC-P\  B10      J2       OUT        4
+         B13      A1       R          4
+         B13      K2       R          4
+
+Change Class 0;
+SYNC\    CD18     BM2      BM2        7
+
+Change Class 0;
+SYNC_EN  B11      M2       OUT        5
+         CD18     BH1      BH1        7
+
+Change Class 0;
+T3       C17      S1       OUT        1
+         D12      N1       IN2        1
+         D12      P1       IN3        1
+
+Change Class 0;
+TIM      A08      L1       1          6
+         A25      U1       P$2        12
+
+Change Class 0;
+TIM\     A08      M1       0          6
+         A09      L2       IN2        6
+         B04      N1       B          11
+
+Change Class 0;
+TM_EN    A18      R2       R2         10
+         B18      R2       R2         10
+         C13      N1       IN         3
+         C15      S1       OUT        3
+         C16      M1       IN1        3
+         C16      R2       IN1        3
+
+Change Class 0;
+TM_EN\   B15      D1       IN1        3
+         B15      D2       IN1        3
+         C12      C1       IN3        3
+         C12      K2       IN2        3
+         C13      P1       OUT        3
+         D15      J2       J2         3
+         D15      K2       K2         3
+
+Change Class 0;
+TP00     A08      B1       C          6
+         A15      L1       OUT        3
+         A16      M2       K2         3
+         A16      N2       J2         3
+         A16      P2       H2         3
+         B10      F2       IN3        4
+         B10      H2       IN4        4
+         B10      N1       IN2        4
+         B13      B1       C          4
+         B13      D2       C          4
+         B13      H1       C          4
+         B15      J1       IN2        4
+         C15      E1       IN2        5
+
+Change Class 0;
+TP00\    A15      E1       OUT        3
+         A15      F1       IN1        3
+         A15      H1       IN2        3
+         A15      J1       IN3        3
+         A15      K1       IN4        3
+         B13      N1       C          4
+         CD18     AN1      AN1        7
+
+Change Class 0;
+TP00_A   A15      S1       OUT        3
+         B10      H1       IN2        5
+         C12      E2       IN2        9
+
+Change Class 0;
+TP00_A\  A15      M1       IN1        3
+         A15      N1       IN2        3
+         A15      P1       IN3        3
+         A15      R1       IN4        3
+         A16      L2       F2         3
+
+Change Class 0;
+TP0_XTLK_DY\ A11      R2       OUT        3
+         A15      F2       IN3        3
+         A16      J2       J2         3
+         A16      K2       K2         3
+
+Change Class 0;
+TP01     A12      J2       IN2        5
+         A15      P2       OUT        3
+         B16      M2       K2         3
+         B16      N2       J2         3
+         B16      P2       H2         3
+         C11      J2       IN2        9
+         C15      B1       IN2        5
+         CD18     BF1      BF1        7
+
+Change Class 0;
+TP01\    A15      J2       OUT        3
+         A15      K2       IN1        3
+         A15      L2       IN2        3
+         A15      M2       IN3        3
+         A15      N2       IN4        3
+         B13      L2       C          4
+
+Change Class 0;
+TP01_A   A15      V2       OUT        3
+         B12      T2       IN3        4
+         C15      M2       IN2        9
+
+Change Class 0;
+TP01_A\  A15      R2       IN1        3
+         A15      S2       IN2        3
+         A15      T2       IN3        3
+         A15      U2       IN4        3
+         B16      L2       F2         3
+
+Change Class 0;
+TP1_XTLK_DY\ A11      V2       OUT        3
+         A15      B1       IN2        3
+         B16      H2       H2         3
+         B16      J2       J2         3
+
+Change Class 0;
+TS03\    C04      K1       OUT        1
+         D17      H2       H2         1
+         D17      J2       J2         1
+         D17      K2       K2         1
+
+Change Class 0;
+T_00\    A24      V2       P$2        12
+         B22      V2       E          2
+         B23      V2       P$1        2
+
+Change Class 0;
+T_01\    A23      S1       E          2
+         A24      M2       P$2        12
+         B23      M2       P$1        2
+
+Change Class 0;
+T_02\    A23      H2       D          2
+         A24      N2       P$2        12
+         B23      N2       P$1        2
+
+Change Class 0;
+T_03\    A23      J2       E          2
+         A24      P2       P$2        12
+         B23      P2       P$1        2
+
+Change Class 0;
+T_04\    A23      N2       D          2
+         A24      R2       P$2        12
+         B23      R2       P$1        2
+
+Change Class 0;
+T_05\    A23      P2       E          2
+         A24      S2       P$2        12
+         B23      S2       P$1        2
+
+Change Class 0;
+T_06\    A23      U2       D          2
+         A24      T2       P$2        12
+         B23      T2       P$1        2
+
+Change Class 0;
+T_07\    A23      V2       E          2
+         A24      U2       P$2        12
+         B23      U2       P$1        2
+
+Change Class 0;
+T_FWD\   A23      K1       D          2
+         A24      E2       P$2        12
+         B23      H2       P$1        2
+
+Change Class 0;
+T_GO\    A23      D1       D          2
+         A24      C2       P$2        12
+         B23      D2       P$1        2
+
+Change Class 0;
+T_PWR_CLR\ A23      R1       D          2
+         A24      H2       P$2        12
+         B23      K2       P$1        2
+
+Change Class 0;
+T_REV\   A23      L1       E          2
+         A24      F2       P$2        12
+         B23      J2       P$1        2
+
+Change Class 0;
+T_SINGLE_UNIT\ A24      K2       P$2        12
+         B21      T2       IN         6
+
+Change Class 0;
+T_STOP\  A23      E1       E          2
+         A24      D2       P$2        12
+         B23      E2       P$1        2
+
+Change Class 0;
+T_TRK    A18      U2       U2         10
+         B15      E2       IN2        3
+         C15      R2       IN2        3
+         D14      S1       S1         3
+         D14      U1       U1         3
+
+Change Class 0;
+T_TRK\   A18      V2       V2         10
+         B15      E1       IN2        3
+
+Change Class 0;
+T_WRITE_OK\ A22      H2       H2         2
+         A24      L2       P$2        12
+         B23      L2       P$1        2
+
+Change Class 0;
+U+M_DY   D14      K1       H2         3
+
+Change Class 0;
+U+M_DY\  C12      A1       IN1        3
+         C12      R2       IN3        3
+         D14      E2       F2         3
+         D14      N1       N1         3
+
+Change Class 0;
+USR_00   A07      V2       IN2        2
+         A25      A1       P$2        12
+         B07      E1       E1         2
+
+Change Class 0;
+USR_00\  B03      A1       A          11
+         B07      F1       F1         2
+
+Change Class 0;
+USR_01   A07      U2       IN1        2
+         A25      B1       P$2        12
+         B07      H2       H2         2
+
+Change Class 0;
+USR_01\  B03      B1       B          11
+         B07      J2       J2         2
+
+Change Class 0;
+USR_02   A07      V1       IN0        2
+         A25      C1       P$2        12
+         B07      L1       L1         2
+
+Change Class 0;
+USR_02\  B03      F1       A          11
+         B07      M1       M1         2
+
+Change Class 0;
+UTS      A10      E1       IN2        5
+         A26      J1       P$2        12
+         B15      P1       IN1        5
+         C14      R2       0          3
+
+Change Class 0;
+UTS\     C12      L2       IN3        3
+         C14      P2       1          3
+         C15      P2       IN1        3
+         C16      A1       IN1        3
+         C16      B1       IN2        3
+         C16      C1       IN3        3
+         C16      D1       IN4        3
+         C16      F1       IN1        3
+         C16      H1       IN2        3
+         C16      J1       IN3        3
+         C16      K1       IN4        3
+
+Change Class 1;
+VCC      A07      A2       VCC        * none *
+         A08      A2       VCC        * none *
+         A09      A2       VCC        * none *
+         A10      A2       VCC        * none *
+         A11      A2       VCC        * none *
+         A12      A2       VCC        * none *
+         A14      A2       VCC        * none *
+         A15      A2       VCC        * none *
+         A16      A2       VCC        * none *
+         A18      A2       VCC        * none *
+         A20      A2       VCC        * none *
+         A21      A2       VCC        * none *
+         A22      A2       VCC        * none *
+         A23      A2       VCC        * none *
+         AB01     AA2      VCC        10
+         AB01     AB1      VCC        10
+         AB01     AC1      VCC        10
+         AB01     AD1      VCC        10
+         AB01     AE1      VCC        10
+         AB01     AF1      VCC        10
+         AB01     AH1      VCC        10
+         AB01     AJ1      VCC        10
+         AB01     AK1      VCC        10
+         AB01     AL1      VCC        10
+         AB01     BA2      VCC        10
+         AB01     BB1      VCC        10
+         AB01     BC1      VCC        10
+         AB01     BD1      VCC        10
+         AB01     BE1      VCC        10
+         B02      A2       VCC        * none *
+         B03      A2       VCC        * none *
+         B04      A2       VCC        * none *
+         B05      A2       VCC        * none *
+         B06      A2       VCC        * none *
+         B07      A2       VCC        * none *
+         B08      A2       VCC        * none *
+         B09      A2       VCC        * none *
+         B10      A2       VCC        * none *
+         B11      A2       VCC        * none *
+         B12      A2       VCC        * none *
+         B13      A2       VCC        * none *
+         B14      A2       VCC        * none *
+         B15      A2       VCC        * none *
+         B16      A2       VCC        * none *
+         B18      A2       VCC        * none *
+         B20      A2       VCC        * none *
+         B21      A2       VCC        * none *
+         B22      A2       VCC        * none *
+         C01      A2       VCC        * none *
+         C02      A2       VCC        * none *
+         C03      A2       VCC        * none *
+         C04      A2       VCC        * none *
+         C05      A2       VCC        * none *
+         C06      A2       VCC        * none *
+         C07      A2       VCC        * none *
+         C08      A2       VCC        * none *
+         C09      A2       VCC        * none *
+         C10      A2       VCC        * none *
+         C11      A2       VCC        * none *
+         C12      A2       VCC        * none *
+         C13      A2       VCC        * none *
+         C14      A2       VCC        * none *
+         C15      A2       VCC        * none *
+         C16      A2       VCC        * none *
+         C17      A2       VCC        * none *
+         CD18     AA2      VCC        * none *
+         CD18     BA2      VCC        * none *
+         D07      A2       VCC        * none *
+         D08      A2       VCC        * none *
+         D09      A2       VCC        * none *
+         D10      A2       VCC        * none *
+         D11      A2       VCC        * none *
+         D12      A2       VCC        * none *
+         D13      A2       VCC        * none *
+         D14      A2       VCC        * none *
+         D15      A2       VCC        * none *
+         D16      A2       VCC        * none *
+         D17      A2       VCC        * none *
+
+Change Class 0;
+W+UTS    A15      A1       IN1        3
+         A15      H2       IN4        3
+         C12      M2       OUT        3
+
+Change Class 0;
+W-INH    A08      V1       0          4
+
+Change Class 0;
+W-INH\   A08      V2       1          4
+         B11      L1       IN2        5
+         B12      H1       IN2        5
+
+Change Class 0;
+W01      A26      J2       P$2        12
+         CD18     BJ2      BJ2        7
+
+Change Class 0;
+W01-W05  CD18     AK1      AK1        7
+
+Change Class 0;
+W02      A26      K2       P$2        12
+         CD18     BV2      BV2        7
+
+Change Class 0;
+W03      A26      L2       P$2        12
+         CD18     BE2      BE2        7
+
+Change Class 0;
+W04      A26      M2       P$2        12
+         CD18     AT2      AT2        7
+
+Change Class 0;
+W05      A26      N2       P$2        12
+         CD18     BU2      BU2        7
+
+Change Class 0;
+W06      A26      P2       P$2        12
+         CD18     AM2      AM2        7
+
+Change Class 0;
+W07      A26      R2       P$2        12
+         CD18     AK2      AK2        7
+
+Change Class 0;
+W08      A26      S2       P$2        12
+         CD18     AL1      AL1        7
+
+Change Class 0;
+W09      A26      T2       P$2        12
+         CD18     BF2      BF2        7
+
+Change Class 0;
+WB00     A21      N2       N2         10
+         A25      P2       P$2        12
+         B18      N2       N2         10
+         C14      F1       0          8
+         D09      A1       IN1A       9
+
+Change Class 0;
+WB00\    A21      P2       P2         10
+         B18      P2       P2         10
+         C10      D1       IN2B       8
+         C14      E1       1          8
+
+Change Class 0;
+WB01     A25      R2       P$2        12
+         B20      N2       N2         10
+         C14      J2       0          8
+         D09      F1       IN1A       9
+
+Change Class 0;
+WB01\    B20      P2       P2         10
+         C10      K1       IN2B       8
+         C14      H2       1          8
+
+Change Class 0;
+WB02     A20      N2       N2         10
+         A25      S2       P$2        12
+         C14      M1       0          8
+         D09      M1       IN1A       9
+
+Change Class 0;
+WB02\    A20      P2       P2         10
+         C10      R1       IN2B       8
+         C14      L1       1          8
+
+Change Class 0;
+WC       A26      H1       P$2        12
+         B10      M1       IN1        4
+         B11      K1       IN1        5
+         D11      S1       1          1
+
+Change Class 0;
+WC0      C01      H1       OUT        1
+         C06      M2       IN         1
+
+Change Class 0;
+WC0\     C06      N2       OUT        1
+         D11      R1       S          1
+
+Change Class 0;
+WC\      B12      F2       IN3        4
+         C12      T2       IN1        4
+         D11      M2       D          4
+         D11      U1       0          1
+
+Change Class 0;
+WRITE_ALL A08      S2       C          4
+         B11      M1       IN3        5
+         B12      F1       IN1        5
+         D07      M2       O5         2
+
+Change Class 0;
+WRITE_ALL\ D07      M1       O5\        2
+
+Change Class 0;
+WRITE_DATA A09      R2       IN1        9
+         B11      R1       IN2        5
+         B12      B1       IN2        5
+         B12      P1       IN3        4
+         D07      F2       O4         2
+
+Change Class 0;
+WRITE_DATA\ B08      M2       IN2        2
+         D07      F1       O4\        2
+
+Change Class 0;
+WRITE_OK A22      D2       D2         2
+         B11      C1       IN3        5
+         B15      R1       IN2        5
+         C17      H2       IN         6
+
+Change Class 0;
+WRITE_OK+UTS B12      D1       IN4        5
+         B12      K1       IN4        5
+         C17      M1       OUT        5
+
+Change Class 0;
+WRITE_OK\ A10      J1       IN2        6
+         C17      J2       OUT        6
+
+Change Class 0;
+WRTM     B11      A1       IN1        5
+         C10      K2       IN1A       6
+         C12      N2       IN1        3
+         D07      H2       O6         2
+
+Change Class 0;
+WRTM+FR03 B08      K2       OUT        2
+         C12      M1       IN3        4
+         C12      V2       IN3        4
+
+Change Class 0;
+WRTM\    B08      H2       IN1        2
+         C10      M2       IN2A       6
+         D07      H1       O6\        2
+
+Change Class 0;
+WR_EN    A20      R2       R2         10
+         A21      R2       R2         10
+         A26      F1       P$2        12
+         B20      R2       R2         10
+         C10      H2       IN2B       9
+         C10      U2       IN2B       9
+         C12      D2       IN1        9
+         C14      U1       0          5
+         C15      A1       IN1        5
+         C15      M1       IN2        3
+         D09      B1       IN1B       9
+         D09      E2       IN1B       9
+         D09      H1       IN1B       9
+         D09      L2       IN1B       9
+         D09      N1       IN1B       9
+         D09      S2       IN1B       9
+
+Change Class 0;
+WR_EN\   B11      F1       IN2        5
+         C11      H2       IN1        9
+         C12      J2       IN1        3
+         C14      S1       1          5
+         C15      D2       IN1        9
+         C15      H2       IN1        9
+
+Change Class 0;
+XOR_TO_LPB C10      E2       IN1B       9
+         C10      F2       IN2A       9
+         C10      S2       IN1B       9
+         C10      T2       IN2A       9
+         D12      P2       OUT        9
+
+Change Class 0;
+XSAD     A09      R1       IN4        6
+         A11      L2       OUT        1
+
+Change Class 0;
+XSAD\    A11      K2       IN         1
+         D13      L2       F2         1
+
+Change Class 0;
+XSA_DY   A08      D2       C          6
+         B14      B1       C          2
+         B14      L2       C          2
+         C17      T2       OUT        6
+
+Change Class 0;
+XSTA     B07      B1       B1         2
+         B07      D2       D2         2
+         B07      H1       H1         2
+         B07      L2       L2         2
+         B07      N1       N1         2
+         B07      S2       S2         2
+         C04      E1       E1         1
+         C07      B1       B1         2
+         C07      D2       D2         2
+         C07      H1       H1         2
+         C07      L2       L2         2
+         D11      N1       C          1
+         D13      M2       K2         1
+         D13      N2       J2         1
+         D13      P2       H2         1
+
+Change Class 0;
+XSTA\    B08      R2       IN2        1
+         C04      F1       F1         1
+         D13      H2       H2         1
+         D13      J2       J2         1
+         D13      K2       K2         1
+         D14      K2       U1         3
+         D14      L2       S1         3
+         D16      M2       H2         6
+         D16      N2       J2         6
+

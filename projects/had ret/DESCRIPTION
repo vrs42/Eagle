@@ -1,0 +1,4 @@
+Hack-A-Day board from the net.
+<UL>
+<LI><b>had_ret</b> is a small controller with networking, USB, and A/D, designed by Razvan
+for a HackADay contest.</LI>

@@ -1,0 +1,28 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/XDS32/ds32.sch at 12/12/2004 01:25:25p
+
+WARNING: Sheet 2/3: POWER Pin IC15P V+ connected to VCC
+WARNING: Sheet 2/3: POWER Pin IC15P V- connected to GND
+WARNING: Sheet 2/3: POWER Pin IC16P V+ connected to VCC
+WARNING: Sheet 2/3: POWER Pin IC16P V- connected to GND
+ERROR: Sheet 2/3: unconnected INPUT Pin: IC18D -IN
+WARNING: Sheet 2/3: POWER Pin IC18P V+ connected to VCC
+WARNING: Sheet 2/3: POWER Pin IC18P V- connected to GND
+WARNING: Sheet 2/3: POWER Pin IC19P V+ connected to GND
+WARNING: Sheet 2/3: POWER Pin IC19P V- connected to -3V
+WARNING: Sheet 2/3: POWER Pin IC20P V+ connected to VCC
+WARNING: Sheet 2/3: POWER Pin IC20P V- connected to GND
+WARNING: Sheet 3/3: POWER Pin IC22A V+ connected to VCC
+WARNING: Only 1 Pin on net DSP
+WARNING: Only 1 Pin on net EWL
+WARNING: Only 1 Pin on net SAD
+WARNING: Only 1 Pin on net T1D
+WARNING: Only 1 Pin on net TBD
+WARNING: Only 1 Pin on net WLO
+WARNING: Only 1 Pin on net ~NEX
+
+No board loaded - consistency has not been checked
+
+    1 errors
+   18 warnings

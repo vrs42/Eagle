@@ -1,0 +1,44 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/X127026/12706.sch at  1/15/2008 07:16:08a
+
+WARNING: Sheet 1/1: unconnected Pin: E11A O
+WARNING: Sheet 1/1: unconnected Pin: E11D O
+ERROR: Sheet 1/1: unconnected INPUT Pin: E9A I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E9B I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E9C I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E9D I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E5A CLR
+ERROR: Sheet 1/1: unconnected INPUT Pin: E5A CLK
+ERROR: Sheet 1/1: unconnected INPUT Pin: E5A PRE
+ERROR: Sheet 1/1: unconnected INPUT Pin: E3A I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E3A I1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E3C I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E3D I1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E6A CLR
+ERROR: Sheet 1/1: unconnected INPUT Pin: E6A PRE
+ERROR: Sheet 1/1: unconnected INPUT Pin: E6B CLR
+ERROR: Sheet 1/1: unconnected INPUT Pin: E6B D
+ERROR: Sheet 1/1: unconnected INPUT Pin: E6B CLK
+ERROR: Sheet 1/1: unconnected INPUT Pin: E6B PRE
+ERROR: Sheet 1/1: unconnected INPUT Pin: E8A I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E8A I1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E8B I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E8C I1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E8D I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E7A I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E7A I1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E7D I0
+ERROR: Sheet 1/1: unconnected INPUT Pin: E7D I1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E4 R
+WARNING: Only 1 Pin on net INITIALIZE
+WARNING: Only 1 Pin on net INTERNAL_I/O\
+WARNING: Only 1 Pin on net INT_RQST\
+ERROR: Only INPUT Pins on net N$23
+WARNING: Sheet 1/1: Nets N$15 and N$2 too close at (-2.5 -2.3)
+WARNING: Sheet 1/1, Net N$15: wire overlaps pin at (-2.5 -2.3)
+
+Board and schematic are consistent
+
+   28 errors
+    7 warnings

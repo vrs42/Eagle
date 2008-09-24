@@ -1,0 +1,28 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/TR02x/tr02.sch at  1/13/2008 05:36:11p
+
+ERROR: Only INPUT Pins on net 0RD_FWD_F_H
+WARNING: Only 1 Pin on net 0RD_FWD_F_H
+WARNING: Only 1 Pin on net 0RD_P_L
+ERROR: Only INPUT Pins on net 0READY
+WARNING: Only 1 Pin on net 0READY
+WARNING: Only 1 Pin on net 1AC00H
+WARNING: Only 1 Pin on net 1AC01H
+WARNING: Only 1 Pin on net 1AC02H
+WARNING: Only 1 Pin on net 1INITA_L
+WARNING: Only 1 Pin on net 1INITB_L
+WARNING: Only 1 Pin on net 1IOT01L
+WARNING: Only 1 Pin on net 1IOT02L
+WARNING: Only 1 Pin on net 1IOT03_1L
+WARNING: Only 1 Pin on net 1IOT05_1L
+WARNING: Only 1 Pin on net 1IOT07_1L
+WARNING: Only 1 Pin on net 1IOT07_2L
+WARNING: Only 1 Pin on net 1RESET_L
+ERROR: Only INPUT Pins on net 1REWIND_L
+WARNING: Only 1 Pin on net 1REWIND_L
+
+Board and schematic are consistent
+
+    3 errors
+   16 warnings

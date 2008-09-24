@@ -1,0 +1,49 @@
+inputs (11):
+ devsel
+ n$20 (ir3 or ir5) (could be 2xx)
+-- n$36 (ir9 and (ir10 or ir11)\) (xxx4)
+ ir4
+ ir6
+ ir7
+ ir8
+ n$10 (delayed xtc\)
+-- n$37 devsel\ or n$10 (redundant)
+ ir9
+ ir10
+ ir11
+outputs (10):
+ rmen (activate c1\)
+ io6004 (read inhibit flag)
+ clkif
+ rif
+ ensf
+ rdf
+-- n$28 (test point 1)
+-- n$29 (test point 3)
+ inhset
+ clkib
+ clkdf
+ selir
+
+Second Gal Inputs (13):
+ memsel\
+ dx0
+ dx1
+ dx3
+ delayed ifetch
+ xta
+ delayed xtc
+ dirj
+ clkif
+ n$6
+ inhset
+ inhibit
+ io6004
+Outputs (7):
+ n$18 (unlatched Anyj)
+ n$19 (unlatched Dirj)
+ n$15 (drive 6004)
+ n$11 (clock 3DA)
+ n$12 (preset 3DA)
+ n$61 (latch IF)
+ loadir

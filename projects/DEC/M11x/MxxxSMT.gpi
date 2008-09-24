@@ -1,0 +1,41 @@
+Photoplotter Info File: C:/Program Files/EAGLE-4.11/projects/M11x/MxxxSMT.gpi
+
+ Date              :  9/15/2004 09:55:17p
+ Plotfile          : C:/Program Files/EAGLE-4.11/projects/M11x/MxxxSMT.sts
+ Apertures         : generated: 
+ Device            : Gerber photoplotter with RS-274-X aperture generation
+
+Parameter settings:
+
+ Emulate Apertures : no
+ Emulate Thermal   : no
+ Emulate Annulus   : no
+ Tolerance Draw  + :  0.00 %
+ Tolerance Draw  - :  0.00 %
+ Tolerance Flash + :  0.00 %
+ Tolerance Flash - :  0.00 %
+ Rotate            : no
+ Mirror            : yes
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+
+Plotfile Info:
+
+ Coordinate Format : 2.4
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Apertures used:
+
+ Code     Shape     Size                  used
+
+ D10      round     0.1512inch               2
+ D11      rectangle 0.5310inch x 0.0900inch    18
+ D12      octagon   0.0624inch              50
+ D13      octagon   0.0756inch               8
+ D14      round     0.0480inch             326
+

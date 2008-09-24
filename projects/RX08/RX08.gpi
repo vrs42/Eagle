@@ -1,0 +1,46 @@
+Photoplotter Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/RX08/RX08.gpi
+
+ Date              :  2/08/2005 03:48:58p
+ Plotfile          : C:/PROGRAM FILES/EAGLE-4.11/projects/RX08/RX08.sts
+ Apertures         : generated: 
+ Device            : Gerber photoplotter with RS-274-X aperture generation
+
+Parameter settings:
+
+ Emulate Apertures : no
+ Emulate Thermal   : no
+ Emulate Annulus   : no
+ Tolerance Draw  + :  0.00 %
+ Tolerance Draw  - :  0.00 %
+ Tolerance Flash + :  0.00 %
+ Tolerance Flash - :  0.00 %
+ Rotate            : no
+ Mirror            : yes
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+
+Plotfile Info:
+
+ Coordinate Format : 2.4
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Apertures used:
+
+ Code     Shape     Size                  used
+
+ D10      octagon   0.0756inch              57
+ D11      octagon   0.0624inch             118
+ D12      octagon   0.0720inch             280
+ D13      oval      0.0624inch x 0.1144inch   526
+ D14      round     0.1701inch               6
+ D15      round     0.1488inch               1
+ D16      octagon   0.1488inch               1
+ D17      oval      0.1144inch x 0.0624inch    10
+ D18      oval      0.1232inch x 0.0672inch     4
+ D19      round     0.0480inch             128
+

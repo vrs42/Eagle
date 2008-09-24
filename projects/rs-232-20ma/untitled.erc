@@ -1,0 +1,16 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/rs-232-20ma/untitled.sch at  1/23/2004 03:38:46p
+
+WARNING: Sheet 1/1: unconnected Pin: R8 2
+WARNING: Sheet 1/1: unconnected Pin: R10 1
+WARNING: Sheet 1/1: unconnected Pin: D5 A
+WARNING: Sheet 1/1: unconnected Pin: D5 C
+WARNING: Sheet 1/1: unconnected Pin: D2 A
+WARNING: Sheet 1/1: unconnected Pin: D2 C
+WARNING: Sheet 1/1, Net N$9: wire overlaps pin at (3.2 2.7)
+
+No board loaded - consistency has not been checked
+
+    0 errors
+    7 warnings

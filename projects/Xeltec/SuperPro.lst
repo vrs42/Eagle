@@ -1,0 +1,396 @@
+Netlist
+
+Exported from SuperPro.brd at  8/09/2004 10:44:43p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Net      Part     Pad
+
++12V     C11      +
+         PIN22    1
+         R4       1
+         ST1      B9
+         X1       5
+
+-12V     C12      -
+         ST1      B7
+         X1       6
+
+2A0      ADDRESS  11
+         IC5      10
+
+2C0      ADDRESS  13
+         IC5      9
+
+2E0      ADDRESS  15
+         IC5      7
+
+200      ADDRESS  1
+         IC5      15
+
+220      ADDRESS  3
+         IC5      14
+
+240      ADDRESS  5
+         IC5      13
+
+260      ADDRESS  7
+         IC5      12
+
+280      ADDRESS  9
+         IC5      11
+
+A0       IC9      2
+         ST1      A31
+
+A1       IC9      3
+         ST1      A30
+
+A2       IC9      4
+         ST1      A29
+
+A3       IC9      5
+         ST1      A28
+
+A4       IC6      2
+         ST1      A27
+
+A4\      IC6      17
+         IC6      18
+
+A5       IC5      1
+         ST1      A26
+
+A6       IC5      2
+         ST1      A25
+
+A7       IC5      3
+         ST1      A24
+
+A8       IC5      6
+         ST1      A23
+
+A9       IC5      4
+         ST1      A22
+
+AEN      IC5      5
+         ST1      A11
+
+BA0      R6       2
+         X1       11
+
+BA1      R7       2
+         X1       12
+
+BA2      R8       2
+         X1       25
+
+BA3      R9       2
+         X1       24
+
+BA4      R2       2
+         X1       23
+
+BCLK     IC1      1
+         PIN9     3
+         R11      2
+
+BD0      R14      2
+         X1       14
+
+BD1      R15      2
+         X1       15
+
+BD2      R16      2
+         X1       16
+
+BD3      R17      2
+         X1       17
+
+BD4      R18      2
+         X1       18
+
+BD5      R19      2
+         X1       19
+
+BD6      R20      2
+         X1       20
+
+BD7      R21      2
+         X1       21
+
+BIOR\    IC3      1
+         R13      2
+         X1       8
+
+BIOW\    IC3      2
+         R12      2
+         X1       7
+
+BSELECT\ IC2      1
+         PIN4     3
+         R10      2
+
+CCLK     IC2      10
+         IC4      3
+         IC8      10
+
+CLK      IC9      7
+         ST1      B20
+
+D0       IC10     2
+         ST1      A9
+
+D1       IC10     3
+         ST1      A8
+
+D2       IC10     4
+         ST1      A7
+
+D3       IC10     5
+         ST1      A6
+
+D4       IC10     6
+         ST1      A5
+
+D5       IC10     7
+         ST1      A4
+
+D6       IC10     8
+         ST1      A3
+
+D7       IC10     9
+         ST1      A2
+
+DCLK     IC6      4
+         IC8      8
+
+GND      C1       2
+         C10      2
+         C11      -
+         C12      +
+         C2       2
+         C3       2
+         C4       2
+         C5       2
+         C6       2
+         C7       -
+         C8       2
+         C9       2
+         IC1      2
+         IC1      7
+         IC10     10
+         IC10     19
+         IC2      7
+         IC3      7
+         IC4      12
+         IC4      7
+         IC5      8
+         IC6      1
+         IC6      10
+         IC6      15
+         IC6      19
+         IC8      7
+         IC9      10
+         IC9      19
+         Q1       3
+         R5       1
+         ST1      B1
+         ST1      B10
+         ST1      B31
+         X1       1
+         X1       13
+
+IODELAY  IC3      6
+         PIN22    4
+         R23      1
+
+IORDY    Q1       1
+         R22      1
+         ST1      A10
+
+IORDYB   IC6      11
+         PIN22    3
+
+IOR\     IC8      2
+         IC9      9
+         ST1      B14
+
+IOW\     IC9      8
+         ST1      B13
+
+LATCH2   IC3      10
+         IC3      5
+         IC4      5
+
+N$1      IC10     1
+         IC8      3
+
+N$2      IC7      2
+         R5       2
+
+N$3      IC10     13
+         R19      1
+
+N$4      IC10     17
+         R15      1
+
+N$5      IC10     16
+         R16      1
+
+N$6      IC10     15
+         R17      1
+
+N$7      IC10     14
+         R18      1
+
+N$8      IC10     12
+         R20      1
+
+N$9      IC10     11
+         R21      1
+
+N$10     IC10     18
+         R14      1
+
+N$11     IC9      18
+         R6       1
+
+N$12     IC9      17
+         R7       1
+
+N$13     IC9      16
+         R8       1
+
+N$14     IC9      15
+         R9       1
+
+N$15     IC9      14
+         R10      1
+
+N$16     IC9      13
+         R11      1
+
+N$17     IC9      12
+         R12      1
+
+N$18     IC9      11
+         R13      1
+
+N$19     IC6      12
+         R1       1
+
+N$20     IC2      6
+         IC2      9
+
+N$21     IC2      2
+         IC2      3
+
+N$22     IC1      6
+         IC2      11
+
+N$23     IC6      3
+         R2       1
+
+N$24     IC1      5
+         IC2      13
+
+N$25     IC7      1
+         R4       2
+
+N$26     IC2      12
+         IC8      9
+
+N$28     IC6      16
+         IC6      6
+
+N$29     IC3      3
+         IC8      13
+
+N$30     IC3      4
+         IC4      2
+         IC4      9
+
+N$32     IC6      9
+         R3       1
+
+N$33     IC3      8
+         IC4      10
+
+N$34     IC2      8
+         IC3      9
+
+N$37     Q1       2
+         R3       2
+
+OCLK     IC6      14
+         PIN9     1
+
+OSELECT\ IC2      4
+         IC8      12
+         PIN4     1
+
+PIN4     PIN4     2
+         X1       4
+
+PIN9     PIN9     2
+         X1       9
+
+PIN22    PIN22    2
+         X1       22
+
+RESET    IC6      8
+         ST1      B2
+
+RESET\   IC2      5
+         R1       2
+         X1       2
+
+SELECT\  ADDRESS  10
+         ADDRESS  12
+         ADDRESS  14
+         ADDRESS  16
+         ADDRESS  2
+         ADDRESS  4
+         ADDRESS  6
+         ADDRESS  8
+         IC8      1
+         IC9      6
+
+STROBE   IC4      11
+         IC6      7
+
+STROBE\  IC6      13
+         IC8      11
+
+VCC      C1       1
+         C10      1
+         C2       1
+         C3       1
+         C4       1
+         C5       1
+         C6       1
+         C8       1
+         C9       1
+         IC1      14
+         IC10     20
+         IC2      14
+         IC3      14
+         IC4      1
+         IC4      13
+         IC4      14
+         IC4      4
+         IC5      16
+         IC6      20
+         IC8      14
+         IC9      1
+         IC9      20
+         R22      2
+         R23      2
+         ST1      B29
+
+VCCO     C7       +
+         IC7      3
+         X1       10
+         X1       3
+

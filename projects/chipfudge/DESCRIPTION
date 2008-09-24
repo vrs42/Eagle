@@ -1,0 +1,4 @@
+Replacements for obsolete chips
+<UL>
+<LI><b>AM27S13</b> is my board that uses a 27256 to replace the AM27S13
+(but has trouble meeting the speed specifications).</LI>

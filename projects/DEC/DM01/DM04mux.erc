@@ -1,0 +1,21 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/DM01/DM04muxl.sch at 12/05/2007 08:24:49p
+
+WARNING: Only 1 Pin on net ADD_ACC
+WARNING: Only 1 Pin on net ADD_ACC0
+WARNING: Only 1 Pin on net ADD_ACC1
+WARNING: Only 1 Pin on net ADD_ACC2
+WARNING: Only 1 Pin on net ADD_ACC3
+WARNING: Only 1 Pin on net BREAK
+WARNING: Only 1 Pin on net BRK_REQ
+WARNING: Only 1 Pin on net WCOV
+WARNING: Only 1 Pin on net WCOV0
+WARNING: Only 1 Pin on net WCOV1
+WARNING: Only 1 Pin on net WCOV2
+WARNING: Only 1 Pin on net WCOV3
+
+Board and schematic are consistent
+
+    0 errors
+   12 warnings

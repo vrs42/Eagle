@@ -1,0 +1,4 @@
+Omnibus 32K SRAM board
+<UL><LI><b>msc3102</b> is a drawing of the MSC3102 design.</LI>
+<LI><b>Omnimem</b> is a simplified version using 74244 instead of 74125.</LI>
+(Both are oversimplified implementations.)

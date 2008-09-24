@@ -1,0 +1,19 @@
+Replacement for M11[13579] modules.
+<UL>
+<LI><b>MxxxRow</b> is a drawing for TTL versions of the M11[13579], all 
+on one board.  (Populate only the row for the desired module type.)</LI>
+<LI><b>MxxxCol</b> is similar to MxxxRow, but arranges the chips in columns
+(less successful).</LI>
+<LI><b>Mxxx</b> is a module that implements the M11[13579] in TTL
+(a newer version of MxxxRow).</LI>
+<LI><b>mxxx.pl</b> is some Perl code to look at input-output mapping for 
+PAL implementations.</LI>
+<LI><b>PALFromPerl</b> is a PAL-based version based on the results 
+from mxxx.pl.</LI>
+<LI><b>PALVersion</b> is another PAL-based version similar to PalFromPerl.</LI>
+<LI><b>PAL3579</b> is a PAL version that fits everything except the M111.</LI>
+<LI><b>PAL13579</b> is a PAL version that fits everything, but needs a 
+fourth PAL.</LI>
+<LI><b>MxxxOVR</b> is the latest through-hole TTL version.</LI>
+<LI><b>MxxxSMT</b> is an SMT verstion, which adds the M206/M216 and M207.</LI>
+<LI><b>MxxxSMT8x11</b> is an 7.7"x10.1" panelization of six MxxxSMT.</LI>

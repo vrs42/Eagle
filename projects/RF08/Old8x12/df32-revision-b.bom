@@ -1,0 +1,46 @@
+Partlist exported from C:/PROGRAM FILES/EAGLE-4.11/projects/RF08/DF32-revision-B.sch at  1/30/2004 02:51:37p
+
+Part Value      Device    Package Description                                                    
++5V  SE14       SE14      SE14    SOLDER PAD E1553,  drill 1,4mm, distributor Buerklin, 07F820   
+C1-10           C5/3.5    C5B3.5  CAPACITORS                                                     
+C11             CAP-2,5   C-2,5                                                                  
+GND  SE14       SE14      SE14    SOLDER PAD E1553,  drill 1,4mm, distributor Buerklin, 07F820   
+IC1  74LS240N   74LS240N  DIL20   Octal BUFFER and LINE DRIVER, 3-state                          
+IC2  74LS244N   74LS244N  DIL20   Octal BUFFER and LINE DRIVER, 3-state                          
+IC3  74LS00N    74LS00N   DIL14   Quad 2-input NAND gate                                         
+IC4  74LS138N   74LS138N  DIL16   3-line to 8-line DECODER/DEMULTIPLEXER                         
+IC5  74LS32N    74LS32N   DIL14   Quad 2-input OR gate                                           
+IC6  74LS244N   74LS244N  DIL20   Octal BUFFER and LINE DRIVER, 3-state                          
+IC7  74LS74N    74LS74N   DIL14   Dual D type positive edge triggered FLIP FLOP, preset and clear
+IC8  74LS240N   74LS240N  DIL20   Octal BUFFER and LINE DRIVER, 3-state                          
+IC9  74LS240N   74LS240N  DIL20   Octal BUFFER and LINE DRIVER, 3-state                          
+IC10 74LS04N    74LS04N   DIL14   Hex INVERTER                                                   
+IC11 74LS191N   74LS190N  DIL16   Synchronous  UP/DOWN COUNTER                                   
+IC12 74LS191N   74LS190N  DIL16   Synchronous  UP/DOWN COUNTER                                   
+IC13 74LS191N   74LS190N  DIL16   Synchronous  UP/DOWN COUNTER                                   
+IC14 74LS191N   74LS190N  DIL16   Synchronous  UP/DOWN COUNTER                                   
+IC15 74LS191N   74LS190N  DIL16   Synchronous  UP/DOWN COUNTER                                   
+IC16 74LS191N   74LS190N  DIL16   Synchronous  UP/DOWN COUNTER                                   
+IC17 DS1258     DS1258    DIL40   DS1258 128K x 16 NVRAM                                         
+IC18 74LS74N    74LS74N   DIL14   Dual D type positive edge triggered FLIP FLOP, preset and clear
+IC19 74LS240N   74LS240N  DIL20   Octal BUFFER and LINE DRIVER, 3-state                          
+IC20 74LS02N    74LS02N   DIL14   Quad 2-input NOR gate                                          
+IC21 74LS01N    74LS01N   DIL14   Quad 2-input NAND gate, open collector                         
+IC22 74LS155N   74LS155N  DIL16   Dual 2-line to 4-line data DECODER/DEMULTIPLEXER               
+IC24 74LS155N   74LS155N  DIL16   Dual 2-line to 4-line data DECODER/DEMULTIPLEXER               
+IC25 74LS74N    74LS74N   DIL14   Dual D type positive edge triggered FLIP FLOP, preset and clear
+IC26 74LS30N    74LS30N   DIL14   8-input NAND gate                                              
+IC27 74LS86N    74LS86N   DIL14   Quad 2-input EXCLUSIV-OR (XOR) gate                            
+IC28 74LS07N    74LS07N   DIL14   Hex BUFFER, open collector high-voltage output                 
+Q1   2N3904     2N3904    TO92    NPN Transistor                                                 
+R1   1K         RESUS-5   R-5                                                                    
+R2   1K         RESUS-7,5 R-7,5                                                                  
+R3   220        RESUS-5   R-5                                                                    
+R4   220        RESUS-5   R-5                                                                    
+R5   220        RESUS-5   R-5                                                                    
+R6   0          RESUS-5   R-5                                                                    
+R7   4.7K       RESUS-5   R-5                                                                    
+SV1  BUS1       MA20-2    MA20-2  PIN HEADER                                                     
+SV2  BUS2       MA20-2    MA20-2  PIN HEADER                                                     
+SV3  WRLOCK     MA05-2    MA05-2  PIN HEADER                                                     
+SV4  PANEL LEDS MA04-2    MA04-2  PIN HEADER                                                     

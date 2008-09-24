@@ -1,0 +1,6 @@
+PIC based timepieces
+<UL>
+<LI><b>bcdwatch</b> is a drawing of an SMT version of a BCD wrist-watch.</LI>
+<LI><b>watch</b> is a drawing of an SMT version of a binary wrist-watch.</LI>
+<LI><b>clock</b> is a drawing of a binary clock using a 5704 dot-matrix 
+display.</LI>

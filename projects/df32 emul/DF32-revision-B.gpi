@@ -1,0 +1,46 @@
+Photoplotter Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/df32 emul/DF32-revision-B.gpi
+
+ Date              : 11/16/2003 10:34:48a
+ Plotfile          : C:/PROGRAM FILES/EAGLE-4.11/projects/df32 emul/DF32-revision-B.sts
+ Apertures         : generated: 
+ Device            : Gerber photoplotter with RS-274-X aperture generation
+
+Parameter settings:
+
+ Emulate Apertures : no
+ Emulate Thermal   : no
+ Emulate Annulus   : no
+ Tolerance Draw  + :  0.00 %
+ Tolerance Draw  - :  0.00 %
+ Tolerance Flash + :  0.00 %
+ Tolerance Flash - :  0.00 %
+ Rotate            : no
+ Mirror            : yes
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+
+Plotfile Info:
+
+ Coordinate Format : 2.4
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Apertures used:
+
+ Code     Shape     Size                  used
+
+ D10      oval      0.1120inch x 0.0600inch   204
+ D11      oval      0.0600inch x 0.1120inch   100
+ D12      oval      0.1110inch x 0.0595inch    98
+ D13      octagon   0.0680inch              98
+ D14      octagon   0.0710inch              36
+ D15      oval      0.0595inch x 0.1110inch    56
+ D16      octagon   0.1080inch               2
+ D17      round     0.1261inch               4
+ D18      octagon   0.0600inch               3
+ D19      round     0.0480inch            1363
+

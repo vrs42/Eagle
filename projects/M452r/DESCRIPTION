@@ -1,0 +1,4 @@
+M452 Replacement based on MC14411
+<UL>
+<LI><b>M452r</b> is a replacement for DEC's M452 Baud Rate Generator, based on the 
+MC14411 baud rate generator chip.</LI>

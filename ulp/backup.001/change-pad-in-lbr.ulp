@@ -1,0 +1,268 @@
+#usage "<b>Change shape, diameter and drill of all pads in a library</b>\n"
+       "<p>"
+       "<author>Author: support@cadsoft.de</author>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+// Version 4.1 -- 12.06.2003 libraryan@cadsoft.de
+
+string ulp_path = "";
+string script_change = "";
+
+int Result = 0;
+string grid = "GRID MM FINEST;\n";
+
+       // *** flags for changes
+int    to_change[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+
+int    begin = - 1;   // *** pointer of flags
+int    P_shape      = begin + 1;
+int    P_diameter   = P_shape + 1;
+int    P_drill      = P_diameter + 1;
+int    P_stopmask   = P_drill + 1;
+int    P_creammask  = P_stopmask + 1;
+int    last         = P_creammask + 1;
+
+
+int    changefrom = P_diameter;
+int    changeto = last - 1;
+
+real   change_values[] = {
+          0,   //  Pad-Shape
+          0,   //  Pad-Diameter
+          0,   //  Pad-Drill
+          0,   //  Pad-Stop-Mask
+          0,   //  Pad-Cream-Mask
+          0 };
+
+string tochange[] = {
+          "Change pad shape",
+          "Change pad diameter",
+          "Change pad drill",
+          "Change pad stop mask ON/OFF",
+          "Change pad cream mask ON/OFF",
+          "" };
+
+real    min_val[] = {
+           0.0,
+           0.0,
+           0.0,
+           0.0,
+           0.0
+           };
+
+real   max_val[] = {
+           13.1,
+           13.1,
+           13.1,
+           1,
+           1,
+           0
+           };
+
+string min_max[] = {
+           "in the range of 0.0...13.1 &mm",
+           "in the range of 0.0...13.1 &mm",
+           "in the range of 0.0...13.1 &mm",
+           "in the range of 0 Off / 1 On",
+           "in the range of 0 Off / 1 On",
+           ""
+           };
+
+string stop_onoff = "ON";
+string cream_onoff = "ON";
+
+int    shape = 0;
+int    shape1 = 0;
+
+string pad1, padx;
+
+string shape_form[] = {      // change Shape
+           "NONE",
+           "SQUARE",
+           "ROUND",
+           "OCTAGON",
+           "" };
+
+void get_changemenue(string lib) {
+   Result = dlgDialog("Change Library") {
+      dlgLabel("(" + lib + ")");
+      dlgStretch(0);
+      dlgHBoxLayout {
+         dlgGroup("Change") {
+            dlgStretch(0);
+            for (int n = 0; n <= changeto; n++) {
+               dlgCheckBox(tochange[n], to_change[n]);
+               }
+            }
+         dlgStretch(1);
+         }
+      dlgStretch(1);
+      dlgHBoxLayout {
+         dlgStretch(0);
+         dlgPushButton("+Change") dlgAccept();
+         dlgStretch(1);
+         dlgPushButton("-ESC") dlgReject();
+         dlgStretch(0);
+         }
+      dlgStretch(0);
+      };
+   if (Result == 0) exit (0);
+
+   if (to_change[P_shape]) {
+      Result = dlgDialog("Change pad shape") {
+        dlgHBoxLayout {
+           dlgStretch(0);
+           dlgGroup("Shape pin 1") {
+              dlgStretch(0);
+              dlgGridLayout {
+                 dlgCell(1, 1)  dlgRadioButton(shape_form[0], shape1);
+                 dlgCell(2, 1)  dlgRadioButton(shape_form[1], shape1);
+                 dlgCell(3, 1)  dlgRadioButton(shape_form[2], shape1);
+                 dlgCell(4, 1)  dlgRadioButton(shape_form[3], shape1);
+                 }
+              }
+           dlgStretch(0);
+           dlgLabel(pad1);
+           dlgStretch(0);
+           dlgGroup("Shape") {
+              dlgStretch(0);
+              dlgGridLayout {
+                 dlgCell(1, 1)  dlgRadioButton(shape_form[0], shape);
+                 dlgCell(2, 1)  dlgRadioButton(shape_form[1], shape);
+                 dlgCell(3, 1)  dlgRadioButton(shape_form[2], shape);
+                 dlgCell(4, 1)  dlgRadioButton(shape_form[3], shape);
+                 }
+              }
+           dlgStretch(0);
+           dlgLabel(padx);
+           dlgStretch(1);
+           }
+         dlgHBoxLayout {
+           dlgStretch(0);
+           dlgPushButton("+OK") dlgAccept();
+           dlgStretch(1);
+           dlgPushButton("-ESC") dlgReject();
+           dlgStretch(0);
+           }
+        };
+     if (Result == 0) exit (0);
+     }
+   for (int n = changefrom; n <= changeto; n++) {
+     if (to_change[n]) {
+         Result = dlgDialog(tochange[n]){
+               dlgLabel(min_max[n]);
+               dlgRealEdit(change_values[n], min_val[n], max_val[n]);
+               dlgVBoxLayout {
+                 dlgHBoxLayout {
+                   dlgStretch(0);
+                   dlgPushButton("+OK") dlgAccept();
+                   dlgStretch(1);
+                   dlgSpacing(100);
+                   dlgPushButton("-Cancel") dlgReject();
+                   dlgStretch(0);
+                   }
+                 }
+            };
+         }
+      if (Result == 0) exit (0);
+      }
+   return;
+   }
+
+  // change Pad Shape
+void change_shape(string shape, int x, int y) {
+  printf("Change SHAPE %s (%.4f %.4f);\n", shape, u2mm(x), u2mm(y));
+  return;
+  }
+  // change Pad Diameter
+void change_pdiameter(real diameter, int x, int y) {
+  printf("Change DIAMETER %.4f (%.4f %.4f);\n", diameter, u2mm(x), u2mm(y));
+  return;
+  }
+  // change Drill Diameter
+void change_prill(real diameter, int x, int y) {
+  printf("Change DRILL %.4f (%.4f %.4f);\n", diameter, u2mm(x), u2mm(y));
+  return;
+}
+  // change Stop mask flag
+void change_mask(string onoff, int x, int y) {
+  printf("Change %s (%.4f %.4f);\n", onoff, u2mm(x), u2mm(y));
+  return;
+}
+
+
+if (library) {
+   char bkslash = '/';
+   int pos = strrchr(argv[0], bkslash);
+   if (pos >= 0) {
+      ulp_path = strsub(argv[0], 0, pos + 1);
+   }
+   pad1 = "<img src=" + ulp_path + "change-pad-in-lbr-1.bmp>";
+   padx = "<img src=" + ulp_path + "change-pad-in-lbr-x.bmp>";
+  int n = 0;
+  library(L) {
+    int posb = strrchr(argv[0], bkslash);
+    if (posb >= 0) {
+       ulp_path = strsub(argv[0], 0, posb + 1);
+       }
+    get_changemenue(L.name);
+    if (!to_change[P_shape] && !to_change[P_diameter] && !to_change[P_drill] && !to_change[P_stopmask] && !to_change[P_creammask]) exit (0);
+
+    if (change_values[P_stopmask]) stop_onoff = "ON";
+    else stop_onoff = "OFF";
+    if (change_values[P_creammask]) cream_onoff = "ON";
+    else cream_onoff = "OFF";
+
+    script_change = filesetext(L.name, "~~~.scr");
+
+    output(script_change, "wtD") {
+       printf("DISPLAY NONE 1 16 17;\n");
+       int firstf = 1;
+       L.packages(P) {
+          printf("EDIT %s.PAC;\n", P.name);
+          if (firstf) {
+            printf("%s",grid);
+            firstf = 0;
+            }
+          if (to_change[P_shape] && (shape || shape1)){
+             P.contacts(C) {
+                if (C.pad) {
+                   if (C.name == "1" && shape1) change_shape(shape_form[shape1], C.pad.x, C.pad.y);
+                   else { if (shape) change_shape(shape_form[shape], C.pad.x, C.pad.y); }
+                   }
+                }
+             }
+          if (to_change[P_diameter]) {
+             P.contacts(C) {
+                if (C.pad) change_pdiameter(change_values[P_diameter], C.pad.x, C.pad.y);
+                }
+             }
+          if (to_change[P_drill]) {
+             P.contacts(C) {
+                if (C.pad) change_prill(change_values[P_drill], C.pad.x, C.pad.y);
+                }
+             }
+          if (to_change[P_stopmask]) {
+             P.contacts(C) {
+                if (C.pad) change_mask("STOP " + stop_onoff, C.pad.x, C.pad.y);
+                if (C.smd) change_mask("STOP " + stop_onoff, C.smd.x, C.smd.y);
+                }
+             }
+          if (to_change[P_creammask]) {
+             P.contacts(C) {
+                if (C.smd) change_mask("CREAM " + cream_onoff, C.smd.x, C.smd.y);
+                }
+             }
+          }
+
+       printf("GRID DEFAULT;\n");
+       printf("DISPLAY NONE 1 16 17 21;\n");
+       }
+    }
+  exit ("SCRIPT '" + script_change + "';\n"); // REMOVE " + script_change + ";\n");
+  }
+
+else {
+   dlgMessageBox("\n*** Start this ULP in a Library ***\n");
+   exit (0);
+ }

@@ -1,0 +1,33 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/ConsoleEmu/core+io.sch at  4/22/2004 09:27:11a
+
+WARNING: Sheet 2/3: POWER Pin IC17P VSS connected to GND
+WARNING: Sheet 2/3: POWER Pin IC17P VSS connected to GND
+WARNING: Sheet 2/3: POWER Pin IC21P VSS connected to GND
+WARNING: Sheet 2/3: POWER Pin IC24P VSS connected to GND
+WARNING: Sheet 2/3: POWER Pin IC27A V+ connected to VCC
+WARNING: Sheet 2/3: POWER Pin IC22 VSS connected to GND
+WARNING: Only 1 Pin on net IN06
+WARNING: Only 1 Pin on net IN07
+WARNING: Only 1 Pin on net IN08
+WARNING: Only 1 Pin on net IN09
+WARNING: Only 1 Pin on net IN10
+WARNING: Only 1 Pin on net IN11
+WARNING: Only 1 Pin on net IN12
+WARNING: Only 1 Pin on net IN13
+WARNING: Only 1 Pin on net IN14
+WARNING: Only 1 Pin on net IN15
+WARNING: Only 1 Pin on net OUT08
+WARNING: Only 1 Pin on net OUT09
+WARNING: Only 1 Pin on net OUT10
+WARNING: Only 1 Pin on net OUT11
+WARNING: Only 1 Pin on net OUT12
+WARNING: Only 1 Pin on net OUT13
+WARNING: Only 1 Pin on net OUT14
+WARNING: Only 1 Pin on net OUT15
+
+Board and schematic are consistent
+
+    0 errors
+   24 warnings

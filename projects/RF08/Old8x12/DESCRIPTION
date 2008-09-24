@@ -1,0 +1,39 @@
+RF08 Replacement (Old Version)
+<UL>
+<LI><b>writelockswitches</b> is the writelockswitches board from the DF32 
+project, for reference.</LI>
+<LI><b>RS08-.brd</b> is the disk emulator from the DF32 project, for
+reference.</LI>
+<LI><b>RF08-</b> is the disk emulator from the DF32 project, for
+reference.</LI>
+<LI><b>DF32-revision-B</b> is revision B of the DF32 project, for
+reference.</LI>
+<LI><b>DEC8i-buscon</b> is a slightly updated version of the paddle cable 
+used with the DF32 project.</LI>
+<LI><b>DEC8L-buscon</b> is a paddle cable similar to the BC08J.</LI>
+<LI><b>busadapt</b> is the bus adaptor board from the DF32 project.</LI>
+<LI><b>DF32-revision-C</b> is an attempted revision to the DF32 board.</LI>
+<LI><b>DF32-revision-D</b> is another attempted revision to the DF32 board.</LI>
+<LI><b>DataBreak</b> is some schematic musings about data break.</LI>
+<LI><b>array</b> is a design for an RF08-sized "drive".</LI>
+<LI><b>cmorris</b> is the board from the DF32 project, yet again.</LI>
+<LI><b>foo</b> is a tangled attempt to route a revision to the DF32
+project.</LI>
+<LI><b>RF08bck</b> is a checkpoint of some early work on an RF08 board.</LI>
+<LI><b>RF08x</b> is a much more complete attempt at an RF08 replacement.</LI>
+<LI><b>RS08</b> is a fairly complete RS08 "drive" pair.</LI>
+<LI><b>RF08nv</b> is a newer version of the RF08 replacement, that didn't
+route.</LI>
+<LI><b>RF08indx.sch</b> is the RF08 schematic with an extra sheet for 
+the indicators and their drivers.</LI>
+<LI><b>RF08ind</b> is a routed oversize board with the controller and the 
+indicators.</LI>
+<LI><b>olimex</b> is the controller and the drives, without the indicators.</LI>
+<LI><b>spe10</b> is a set of controller, drives and indicators in an 8"x12.6"
+panel.</LI>
+<LI><b>swizzle</b> is a swizzle board to allow the use of new paddles (34 
+wire ribbons) with the DF32 project.</LI>
+<LI><b>RF08-1</b> is a revision to the controller that doesn't quite route.</LI>
+<LI><b>RF08</b> is just the RF08 controller, in the panel by itself.</LI>
+<LI><b>olimex10</b> is the RF08 replacement controller, drives, and
+indicators, all on an olimex sized panel, with 10mil design rules.</LI>

@@ -1,0 +1,46 @@
+Drill Station Info File: C:/Program Files/EAGLE-4.11/projects/X8iPanel/8iSwitches.dri
+
+ Date              :  5/17/2008 02:19:12p
+ Drills            : C:/Program Files/EAGLE-4.11/projects/X8iPanel/8iSwitches.drl
+ Device            : Excellon drill station
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Data Mode         : Absolute
+ Units             : 1/1000 Inch
+ End Of Block      : CR/LF
+
+Drill Tolerances:
+
+ -- Requested --  -- Used Drill --
+
+ Size       used  Code  Size
+
+ 3.600mm      14  T04   142.000mil
+
+Drills used:
+
+ Code  Size       used
+
+ T01   40.000mil    68
+ T02   76.000mil   138
+ T03   125.000mil     6
+ T04   142.000mil    14
+
+Total number of drills: 226
+
+Plotfiles:
+
+ C:/Program Files/EAGLE-4.11/projects/X8iPanel/8iSwitches.drd

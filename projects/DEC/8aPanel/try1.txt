@@ -1,0 +1,735 @@
+Pinlist
+
+Exported from try1.sch at  5/26/2005 09:20:10p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+BOOT     1        S          Pas      BOOT
+         2        S1         Pas      BOOT
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+C1       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C2       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C3       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C4       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C5       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C6       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C7       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C8       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C9       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C10      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C11      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C12      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C13      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C14      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C15      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C16      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C17      +        +          Pas      N$20
+         -        -          Pas      N$22
+
+C18      1        1          Pas      N$19
+         2        2          Pas      N$21
+
+C19      +        +          Pas      VCC
+         -        -          Pas      GND
+
+C20      +        +          Pas      VCC
+         -        -          Pas      GND
+
+D1       A        A          Pas      N$67
+         K        C          Pas      N$72
+
+D2       A        A          Pas      N$64
+         K        C          Pas      N$75
+
+D3       A        A          Pas      N$38
+         K        C          Pas      N$77
+
+D4       A        A          Pas      N$68
+         K        C          Pas      N$71
+
+D5       A        A          Pas      N$65
+         K        C          Pas      N$74
+
+D6       A        A          Pas      N$63
+         K        C          Pas      N$76
+
+D7       A        A          Pas      N$66
+         K        C          Pas      N$73
+
+D8       A        A          Pas      N$69
+         K        C          Pas      N$70
+
+DISP     1        S          Pas      DISP
+         2        S1         Pas      DISP
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+DNEXT    1        S          Pas      DNEXT
+         2        S1         Pas      DNEXT
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+DTHIS    1        S          Pas      DTHIS
+         2        S1         Pas      DTHIS
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+E1       1        4          In       KEY3
+         2        5          In       KEY2
+         3        6          In       KEY1
+         4        7          In       KEY0
+         5        EI         In       GND
+         6        A2         Out      N$1
+         7        A1         Out      N$2
+         8        GND        Pwr      GND
+         9        A0         Out      N$3
+         10       0          In       KEY7
+         11       1          In       KEY6
+         12       2          In       KEY5
+         13       3          In       KEY4
+         14       GS         Out      N$4
+         15       EO         Out      N$8
+         16       VCC        Pwr      VCC
+
+E2       1        I0         In       RUN
+         2        I1         In       SHLT\
+         3        O          Out      N$23
+         4        I0         In       ETHIS
+         5        I1         In       DTHIS
+         6        O          Out      STHIS\
+         7        GND        Pwr      GND
+         8        O          Out      N$26
+         9        I0         In       DTHIS
+         10       I1         In       DNEXT
+         11       O          Out      N$25
+         12       I0         In       ETHIS
+         13       I1         In       ENEXT
+         14       VCC        Pwr      VCC
+
+E3       1        E          Pas      E
+         2        D          Pas      D
+         3        CA         Pas      N$62
+         4        C          Pas      C
+         5        DP         Pas               *** unconnected ***
+         6        B          Pas      B
+         7        A          Pas      A
+         8        CA         Pas      N$62
+         9        F          Pas      F
+         10       G          Pas      G
+
+E4       1        E          Pas      E
+         2        D          Pas      D
+         3        CA         Pas      N$61
+         4        C          Pas      C
+         5        DP         Pas               *** unconnected ***
+         6        B          Pas      B
+         7        A          Pas      A
+         8        CA         Pas      N$61
+         9        F          Pas      F
+         10       G          Pas      G
+
+E5       1        E          Pas      E
+         2        D          Pas      D
+         3        CA         Pas      N$60
+         4        C          Pas      C
+         5        DP         Pas               *** unconnected ***
+         6        B          Pas      B
+         7        A          Pas      A
+         8        CA         Pas      N$60
+         9        F          Pas      F
+         10       G          Pas      G
+
+E6       1        4          In       LXA
+         2        5          In       LA
+         3        6          In       LSR
+         4        7          In       DISP
+         5        EI         In       N$8
+         6        A2         Out      N$5
+         7        A1         Out      N$6
+         8        GND        Pwr      GND
+         9        A0         Out      N$7
+         10       0          In       N$26
+         11       1          In       N$25
+         12       2          In       N$23
+         13       3          In       INIT
+         14       GS         Out      FUN\
+         15       EO         Out               *** unconnected ***
+         16       VCC        Pwr      VCC
+
+E7       1        E          Pas      E
+         2        D          Pas      D
+         3        CA         Pas      N$54
+         4        C          Pas      C
+         5        DP         Pas               *** unconnected ***
+         6        B          Pas      B
+         7        A          Pas      A
+         8        CA         Pas      N$54
+         9        F          Pas      F
+         10       G          Pas      G
+
+E8       1        IB         In       DISPLAY1
+         2        IC         In       DISPLAY2
+         3        LT         In       VCC
+         4        BI/RBO     In       VCC
+         5        RBI        In       VCC
+         6        ID         In       GND
+         7        IA         In       DISPLAY0
+         8        GND        Pwr      GND
+         9        E          OC       E
+         10       D          OC       D
+         11       C          OC       C
+         12       B          OC       B
+         13       A          OC       A
+         14       G          OC       G
+         15       F          OC       F
+         16       VCC        Pwr      VCC
+
+E9       1        E          Pas      E
+         2        D          Pas      D
+         3        CA         Pas      N$62
+         4        C          Pas      C
+         5        DP         Pas               *** unconnected ***
+         6        B          Pas      B
+         7        A          Pas      A
+         8        CA         Pas      N$62
+         9        F          Pas      F
+         10       G          Pas      G
+
+E10      1        I0         In       N$27
+         2        I1         In       EXTPUL\
+         3        O          Out      MCLOCK\
+         4        I0         In       N$3
+         5        I1         In       N$7
+         6        O          Out      KFUN2\
+         7        GND        Pwr      GND
+         8        O          Out      KFUN1\
+         9        I0         In       N$2
+         10       I1         In       N$6
+         11       O          Out      KFUN0\
+         12       I0         In       N$1
+         13       I1         In       N$5
+         14       VCC        Pwr      VCC
+
+E11      1        E          Pas      E
+         2        D          Pas      D
+         3        CA         Pas      N$61
+         4        C          Pas      C
+         5        DP         Pas               *** unconnected ***
+         6        B          Pas      B
+         7        A          Pas      A
+         8        CA         Pas      N$61
+         9        F          Pas      F
+         10       G          Pas      G
+
+E12      1        E          Pas      E
+         2        D          Pas      D
+         3        CA         Pas      N$60
+         4        C          Pas      C
+         5        DP         Pas               *** unconnected ***
+         6        B          Pas      B
+         7        A          Pas      A
+         8        CA         Pas      N$60
+         9        F          Pas      F
+         10       G          Pas      G
+
+E13      1        IB         In       ADDR1
+         2        IC         In       ADDR2
+         3        LT         In       VCC
+         4        BI/RBO     In       VCC
+         5        RBI        In       VCC
+         6        ID         In       GND
+         7        IA         In       ADDR0
+         8        GND        Pwr      GND
+         9        E          OC       E
+         10       D          OC       D
+         11       C          OC       C
+         12       B          OC       B
+         13       A          OC       A
+         14       G          OC       G
+         15       F          OC       F
+         16       VCC        Pwr      VCC
+
+E14      1        E          Pas      E
+         2        D          Pas      D
+         3        CA         Pas      N$54
+         4        C          Pas      C
+         5        DP         Pas               *** unconnected ***
+         6        B          Pas      B
+         7        A          Pas      A
+         8        CA         Pas      N$54
+         9        F          Pas      F
+         10       G          Pas      G
+
+E15      1        E          Pas      N$32
+         2        D          Pas      N$31
+         3        CA         Pas      N$47
+         4        C          Pas      N$30
+         5        DP         Pas               *** unconnected ***
+         6        B          Pas      N$29
+         7        A          Pas      N$28
+         8        CA         Pas      N$47
+         9        F          Pas      N$33
+         10       G          Pas      N$34
+
+E16      1        IB         In       BEMA1
+         2        IC         In       BEMA2
+         3        LT         In       VCC
+         4        BI/RBO     In       VCC
+         5        RBI        In       VCC
+         6        ID         In       GND
+         7        IA         In       BEMA0
+         8        GND        Pwr      GND
+         9        E          OC       N$32
+         10       D          OC       N$31
+         11       C          OC       N$30
+         12       B          OC       N$29
+         13       A          OC       N$28
+         14       G          OC       N$34
+         15       F          OC       N$33
+         16       VCC        Pwr      VCC
+
+E17      1        0          Out      N$71
+         2        1          Out      N$72
+         3        2          Out      N$73
+         4        3          Out      N$74
+         5        4          Out      N$75
+         6        5          Out      N$76
+         7        6          Out      N$77
+         8        GND        Pwr      GND
+         9        7          Out               *** unconnected ***
+         10       8          Out               *** unconnected ***
+         11       9          Out               *** unconnected ***
+         12       D          In       DISPINH
+         13       C          In       DISP0
+         14       B          In       DISP1
+         15       A          In       DISP2
+         16       VCC        Pwr      VCC
+
+E18      1        A          In       N$18
+         2        B          In       BPWR-OK
+         3        CLR        In       VCC
+         4        Q\         Out      N$24
+         5        Q          Out      N$18
+         6        C          In       N$21
+         7        R/C        In       N$19
+         8        GND        Pwr      GND
+         9        A          In       GND
+         10       B          In       N$24
+         11       CLR        In       BPWR-OK
+         12       Q\         Out      N$27
+         13       Q          Out               *** unconnected ***
+         14       C          In       N$22
+         15       R/C        In       N$20
+         16       VCC        Pwr      VCC
+
+E19      1        I          In       BRUN
+         2        O          OC       N$70
+         3        I          In       N$44
+         4        O          OC       N$46
+         5        I          In       N$45
+         6        O          OC       N$59
+         7        GND        Pwr      GND
+         8        O          OC       N$40
+         9        I          In       N$43
+         10       O          OC       N$36
+         11       I          In       N$42
+         12       O          OC       N$35
+         13       I          In       N$41
+         14       VCC        Pwr      VCC
+
+E20      1        I          In       N$12
+         2        O          Out      N$14
+         3        I          In       MCLOCK\
+         4        O          Out      MCLOCK
+         5        I          In                ***   unused    ***
+         6        O          Out               ***   unused    ***
+         7        GND        Pwr      GND
+         8        O          Out               ***   unused    ***
+         9        I          In                ***   unused    ***
+         10       O          Out      NUM
+         11       I          In       N$4
+         12       O          Out      N$16
+         13       I          In       N$15
+         14       VCC        Pwr      VCC
+
+E21      1        I0         In       N$4
+         2        I1         In       BOOT
+         4        I2         In       FUN\
+         5        I3         In       FUN\
+         6        O          Out      N$15
+         7        GND        Pwr      GND
+         8        O          Out      N$13
+         9        I0         In       N$9
+         10       I1         In       N$10
+         12       I2         In       N$11
+         13       I3         In       N$12
+         14       VCC        Pwr      VCC
+
+E22      1        O0         Out      N$41
+         2        O1         Out      N$42
+         3        O2         Out      N$43
+         4        O3         Out      N$44
+         5        O4         Out      N$45
+         6        O5         Out               *** unconnected ***
+         7        O6         Out               *** unconnected ***
+         8        GND        Pwr      GND
+         9        O7         Out               *** unconnected ***
+         10       O8         Out               *** unconnected ***
+         11       O9         Out               *** unconnected ***
+         12       D          In       GND
+         13       C          In       MPXB
+         14       B          In       MPXA
+         15       A          In       N$37
+         16       VCC        Pwr      VCC
+
+E23      1        CLR        In       N$13
+         2        D          In       N$15
+         3        CLK        In       N$14
+         4        PRE        In       VCC
+         5        Q          Out      N$17
+         6        Q\         Out      KE-F\
+         7        GND        Pwr      GND
+         8        Q\         Out               *** unconnected ***
+         9        Q          Out      KEYSTB
+         10       PRE        In       VCC
+         11       CLK        In       N$17
+         12       D          In       VCC
+         13       CLR        In       MCLOCK\
+         14       VCC        Pwr      VCC
+
+E24      1        SER        In       N$16
+         2        A          In       VCC
+         3        B          In       VCC
+         4        C          In       VCC
+         5        D          In       VCC
+         6        MOD        In       GND
+         7        GND        Pwr      GND
+         8        CK2        In       VCC
+         9        CK1        In       MCLOCK\
+         10       QD         Out      N$12
+         11       QC         Out      N$11
+         12       QB         Out      N$10
+         13       QA         Out      N$9
+         14       VCC        Pwr      VCC
+
+E25      1        CKB        In       N$39
+         2        R0(1)      In       GND
+         3        R0(2)      In       GND
+         5        VCC        Pwr      VCC
+         6        R9(1)      In       GND
+         7        R9(2)      In       GND
+         8        QC         Out      MPXA
+         9        QB         Out      N$37
+         10       GND        Pwr      GND
+         11       QD         Out      MPXB
+         12       QA         Out      N$39
+         14       CKA        In       MCLOCK
+
+ENEXT    1        S          Pas      ENEXT
+         2        S1         Pas      ENEXT
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+ETHIS    1        S          Pas      ETHIS
+         2        S1         Pas      ETHIS
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+INIT     1        S          Pas      INIT
+         2        S1         Pas      INIT
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+J1       1        1          Pas      KFUN2\
+         2        2          Pas      KFUN1\
+         3        3          Pas      KFUN0\
+         4        4          Pas      STHIS\
+         5        5          Pas      SHLT\
+         6        6          Pas      DISPLAY0
+         7        7          Pas      DISPLAY2
+         8        8          Pas      GND
+         9        9          Pas      ADDR2
+         10       10         Pas      ADDR0
+         11       11         Pas      DISPLAY1
+         12       12         Pas      ADDR1
+         13       13         Pas      BEMA0
+         14       14         Pas      BEMA2
+         15       15         Pas      BEMA1
+         16       16         Pas      VCC
+
+J2       1        1          Pas      MCLOCK\
+         2        2          Pas      KEYSTB
+         3        3          Pas      KE-F\
+         4        4          Pas      DISPINH
+         5        5          Pas      DISP0
+         6        6          Pas      DISP1
+         7        7          Pas      DISP2
+         8        8          Pas      GND
+         9        9          Pas      EXTPUL\
+         10       10         Pas      BPWR-OK
+         11       11         Pas      NUM
+         12       12         Pas      BRUN
+         13       13         Pas      MPXB
+         14       14         Pas      MPXA
+         15       15         Pas      FUN\
+         16       16         Pas      VCC
+
+KEY0     1        S          Pas      KEY0
+         2        S1         Pas      KEY0
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+KEY1     1        S          Pas      KEY1
+         2        S1         Pas      KEY1
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+KEY2     1        S          Pas      KEY2
+         2        S1         Pas      KEY2
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+KEY3     1        S          Pas      KEY3
+         2        S1         Pas      KEY3
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+KEY4     1        S          Pas      KEY4
+         2        S1         Pas      KEY4
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+KEY5     1        S          Pas      KEY5
+         2        S1         Pas      KEY5
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+KEY6     1        S          Pas      KEY6
+         2        S1         Pas      KEY6
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+KEY7     1        S          Pas      KEY7
+         2        S1         Pas      KEY7
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+LA       1        S          Pas      LA
+         2        S1         Pas      LA
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+LSR      1        S          Pas      LSR
+         2        S1         Pas      LSR
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+LXA      1        S          Pas      LXA
+         2        S1         Pas      LXA
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+Q1       1        E          Pas      N$47
+         2        B          Pas      N$53
+         3        C          Pas      N$52
+
+Q2       1        E          Pas      N$62
+         2        B          Pas      N$58
+         3        C          Pas      N$48
+
+Q3       1        E          Pas      N$61
+         2        B          Pas      N$57
+         3        C          Pas      N$49
+
+Q4       1        E          Pas      N$60
+         2        B          Pas      N$56
+         3        C          Pas      N$50
+
+Q5       1        E          Pas      N$54
+         2        B          Pas      N$55
+         3        C          Pas      N$51
+
+R1       1        1          Pas      N$19
+         2        2          Pas      VCC
+
+R2       1        1          Pas      VCC
+         2        2          Pas      N$20
+
+R3       1        1          Pas      VCC
+         2        2          Pas      DISP
+
+R4       1        1          Pas      VCC
+         2        2          Pas      EXTPUL\
+
+R5       1        1          Pas      VCC
+         2        2          Pas      LSR
+
+R6       1        1          Pas      VCC
+         2        2          Pas      LA
+
+R7       1        1          Pas      VCC
+         2        2          Pas      LXA
+
+R8       1        1          Pas      VCC
+         2        2          Pas      INIT
+
+R9       1        1          Pas      VCC
+         2        2          Pas      RUN
+
+R10      1        1          Pas      VCC
+         2        2          Pas      BOOT
+
+R11      1        1          Pas      VCC
+         2        2          Pas      KEY7
+
+R12      1        1          Pas      VCC
+         2        2          Pas      KEY6
+
+R13      1        1          Pas      VCC
+         2        2          Pas      KEY5
+
+R14      1        1          Pas      VCC
+         2        2          Pas      KEY4
+
+R15      1        1          Pas      VCC
+         2        2          Pas      KEY3
+
+R16      1        1          Pas      VCC
+         2        2          Pas      KEY2
+
+R17      1        1          Pas      VCC
+         2        2          Pas      KEY1
+
+R18      1        1          Pas      VCC
+         2        2          Pas      KEY0
+
+R19      1        1          Pas      VCC
+         2        2          Pas      SHLT\
+
+R20      1        1          Pas      VCC
+         2        2          Pas      ETHIS
+
+R21      1        1          Pas      VCC
+         2        2          Pas      ENEXT
+
+R22      1        1          Pas      VCC
+         2        2          Pas      DTHIS
+
+R23      1        1          Pas      VCC
+         2        2          Pas      DNEXT
+
+R24      1        1          Pas      VCC
+         2        2          Pas      N$35
+
+R25      1        1          Pas      VCC
+         2        2          Pas      N$36
+
+R26      1        1          Pas      VCC
+         2        2          Pas      N$40
+
+R27      1        1          Pas      VCC
+         2        2          Pas      N$46
+
+R28      1        1          Pas      VCC
+         2        2          Pas      N$59
+
+R29      1        1          Pas      VCC
+         2        2          Pas      N$48
+
+R30      1        1          Pas      VCC
+         2        2          Pas      N$49
+
+R31      1        1          Pas      VCC
+         2        2          Pas      N$50
+
+R32      1        1          Pas      VCC
+         2        2          Pas      N$51
+
+R33      1        1          Pas      VCC
+         2        2          Pas      N$52
+
+R34      1        1          Pas      N$55
+         2        2          Pas      N$46
+
+R35      1        1          Pas      N$56
+         2        2          Pas      N$40
+
+R36      1        1          Pas      N$57
+         2        2          Pas      N$36
+
+R37      1        1          Pas      N$58
+         2        2          Pas      N$35
+
+R38      1        1          Pas      N$53
+         2        2          Pas      N$59
+
+R39      1        1          Pas      VCC
+         2        2          Pas      N$38
+
+R40      1        1          Pas      VCC
+         2        2          Pas      N$63
+
+R41      1        1          Pas      VCC
+         2        2          Pas      N$64
+
+R42      1        1          Pas      VCC
+         2        2          Pas      N$65
+
+R43      1        1          Pas      VCC
+         2        2          Pas      N$66
+
+R44      1        1          Pas      VCC
+         2        2          Pas      N$67
+
+R45      1        1          Pas      VCC
+         2        2          Pas      N$68
+
+R46      1        1          Pas      VCC
+         2        2          Pas      N$69
+
+RUN      1        S          Pas      RUN
+         2        S1         Pas      RUN
+         3        P          Pas      GND
+         4        P1         Pas      GND
+
+SHLT\    1        S          Pas      SHLT\
+         2        S1         Pas      SHLT\
+         3        P          Pas      GND
+         4        P1         Pas      GND
+

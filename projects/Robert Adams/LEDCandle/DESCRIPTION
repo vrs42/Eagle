@@ -1,0 +1,9 @@
+LED Candles
+<UL>
+<LI><b>candle-</b> is a set of four candles, two tea, two long and thin.</LI>
+<LI><b>candle</b> is a slightly newer set of four candles, with polygon 
+fill.</LI>
+<LI><b>candle3x.brd</b> is three sets of four candles.</LI>
+<LI><b>candle8x11.brd</b> is the 7.7"x10.3" panel of 62 candles, as 
+ordered from the PCB house.</LI>
+<LI><b>candle8x11n.brd</b> is a newer 7.7"x10.3" panel of 62 candles.</LI>

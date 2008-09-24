@@ -1,0 +1,13 @@
+DF32 Emulator based on NVRAM (by Charles E. Morris)
+<UL>
+<LI><b>writelockswitches</b> is a small board which has the write-lock
+toggle switches.</LI>
+<LI><b>DF32-revision-A</b> is Revision A of Charles' DF32 replacement, which
+matches the prototype boards, but has known incompatibilities with the real
+DF32.</LI>
+<LI><b>busadapt-revision-A</b> is a little board to interface between the
+Posibus paddles and the ribbon cables from the DF32 replacement.</LI>
+<LI><b>DF32-revision-B</b> is Revision B of Charles' DF32 replacement, which
+is meant to fix the compatibility bugs.</LI>
+<LI><b>DEC8L-buscon</b> is Charles' version of the bus paddle, which isn't
+quite compatible with anything but his DF32 replacement.</LI>

@@ -1,0 +1,929 @@
+Netlist
+
+Exported from dw08b.sch at 10/03/2007 05:57:07p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Net      Part     Pad      Pin        Sheet
+
+Change Class 0;
+N$1      A16      D2       OUT        2
+         A17      K2       CATHODE    2
+         A18      H2       IN1        2
+
+Change Class 0;
+N$2      A16      F2       OUT        2
+         A17      M2       CATHODE    2
+         A18      N2       IN1        2
+
+Change Class 0;
+N$3      A16      J2       OUT        2
+         A17      P2       CATHODE    2
+         A18      U2       IN1        2
+
+Change Class 0;
+N$4      A16      L2       OUT        2
+         A17      S2       CATHODE    2
+         A19      H2       IN1        2
+
+Change Class 0;
+N$5      A16      N2       OUT        2
+         A17      T2       CATHODE    2
+         A19      N2       IN1        2
+
+Change Class 0;
+N$6      A16      R2       OUT        2
+         A17      V2       CATHODE    2
+         A19      U2       IN1        2
+
+Change Class 0;
+N$7      A18      J2       IN2        2
+         A18      P2       IN2        2
+         A18      V2       IN2        2
+         A19      J2       IN2        2
+         A19      P2       IN2        2
+         A19      V2       IN2        2
+         B15      B1       CATHODE    2
+
+Change Class 0;
+N_3CYCLE A10      K2       P$2        5
+         B10      K2       P$2        5
+         B17      M1       OUT        3
+
+Change Class 0;
+N_AC00   A05      D2       P$2        5
+         B05      D2       P$2        5
+         B16      D1       OUT        3
+
+Change Class 0;
+N_AC01   A05      E2       P$2        5
+         B05      E2       P$2        5
+         B16      E1       OUT        3
+
+Change Class 0;
+N_AC02   A05      H2       P$2        5
+         B05      H2       P$2        5
+         B16      F1       OUT        3
+
+Change Class 0;
+N_AC03   A05      K2       P$2        5
+         B05      K2       P$2        5
+         B16      H1       OUT        3
+
+Change Class 0;
+N_AC04   A05      M2       P$2        5
+         B05      M2       P$2        5
+         B16      J1       OUT        3
+
+Change Class 0;
+N_AC05   A05      P2       P$2        5
+         B05      P2       P$2        5
+         B16      K1       OUT        3
+
+Change Class 0;
+N_AC06   A05      S2       P$2        5
+         B05      S2       P$2        5
+         B16      L1       OUT        3
+
+Change Class 0;
+N_AC07   A05      T2       P$2        5
+         B05      T2       P$2        5
+         B16      M1       OUT        3
+
+Change Class 0;
+N_AC08   A05      V2       P$2        5
+         B05      V2       P$2        5
+         B16      N1       OUT        3
+
+Change Class 0;
+N_AC09   A06      D2       P$2        5
+         B06      D2       P$2        5
+         B16      P1       OUT        3
+
+Change Class 0;
+N_AC10   A06      E2       P$2        5
+         B06      E2       P$2        5
+         B16      R1       OUT        3
+
+Change Class 0;
+N_AC11   A06      H2       P$2        5
+         B06      H2       P$2        5
+         B16      S1       OUT        3
+
+Change Class 0;
+N_ACCEPT A08      S2       P$2        5
+         B08      S2       P$2        5
+         B14      M2       IN         1
+
+Change Class 0;
+N_ACCLR  A06      P2       P$2        5
+         B06      P2       P$2        5
+         B17      F1       OUT        3
+
+Change Class 0;
+N_ADD00  A07      D2       P$2        5
+         B07      D2       P$2        5
+         B19      D1       OUT        4
+
+Change Class 0;
+N_ADD01  A07      E2       P$2        5
+         B07      E2       P$2        5
+         B19      E1       OUT        4
+
+Change Class 0;
+N_ADD02  A07      H2       P$2        5
+         B07      H2       P$2        5
+         B19      F1       OUT        4
+
+Change Class 0;
+N_ADD03  A07      K2       P$2        5
+         B07      K2       P$2        5
+         B19      H1       OUT        4
+
+Change Class 0;
+N_ADD04  A07      M2       P$2        5
+         B07      M2       P$2        5
+         B19      J1       OUT        4
+
+Change Class 0;
+N_ADD05  A07      P2       P$2        5
+         B07      P2       P$2        5
+         B19      K1       OUT        4
+
+Change Class 0;
+N_ADD06  A07      S2       P$2        5
+         B07      S2       P$2        5
+         B19      L1       OUT        4
+
+Change Class 0;
+N_ADD07  A07      T2       P$2        5
+         B07      T2       P$2        5
+         B19      M1       OUT        4
+
+Change Class 0;
+N_ADD08  A07      V2       P$2        5
+         B07      V2       P$2        5
+         B19      N1       OUT        4
+
+Change Class 0;
+N_ADD09  A08      D2       P$2        5
+         B08      D2       P$2        5
+         B19      P1       OUT        4
+
+Change Class 0;
+N_ADD10  A08      E2       P$2        5
+         B08      E2       P$2        5
+         B19      R1       OUT        4
+
+Change Class 0;
+N_ADD11  A08      H2       P$2        5
+         B08      H2       P$2        5
+         B19      S1       OUT        4
+
+Change Class 0;
+N_BAC00  A01      D2       P$2        5
+         B01      D2       P$2        5
+         B12      E2       IN         1
+
+Change Class 0;
+N_BAC01  A01      E2       P$2        5
+         B01      E2       P$2        5
+         B12      H2       IN         1
+
+Change Class 0;
+N_BAC02  A01      H2       P$2        5
+         B01      H2       P$2        5
+         B12      K2       IN         1
+
+Change Class 0;
+N_BAC03  A01      K2       P$2        5
+         B01      K2       P$2        5
+         B12      M2       IN         1
+
+Change Class 0;
+N_BAC04  A01      M2       P$2        5
+         B01      M2       P$2        5
+         B12      P2       IN         1
+
+Change Class 0;
+N_BAC05  A01      P2       P$2        5
+         B01      P2       P$2        5
+         B12      S2       IN         1
+
+Change Class 0;
+N_BAC06  A01      S2       P$2        5
+         B01      S2       P$2        5
+         B13      E2       IN         1
+
+Change Class 0;
+N_BAC07  A01      T2       P$2        5
+         B01      T2       P$2        5
+         B13      H2       IN         1
+
+Change Class 0;
+N_BAC08  A01      V2       P$2        5
+         B01      V2       P$2        5
+         B13      K2       IN         1
+
+Change Class 0;
+N_BAC09  A02      D2       P$2        5
+         B02      D2       P$2        5
+         B13      M2       IN         1
+
+Change Class 0;
+N_BAC10  A02      E2       P$2        5
+         B02      E2       P$2        5
+         B13      P2       IN         1
+
+Change Class 0;
+N_BAC11  A02      H2       P$2        5
+         B02      H2       P$2        5
+         B13      S2       IN         1
+
+Change Class 0;
+N_BREAK  A08      P2       P$2        5
+         B08      P2       P$2        5
+         B14      K2       IN         1
+
+Change Class 0;
+N_BRKRQ  A08      K2       P$2        5
+         B08      K2       P$2        5
+         B17      J1       OUT        3
+
+Change Class 0;
+N_CAINCR A10      M2       P$2        5
+         B10      M2       P$2        5
+         B17      N1       OUT        3
+
+Change Class 0;
+N_DATA00 A09      D2       P$2        5
+         B09      D2       P$2        5
+         B20      D1       OUT        4
+
+Change Class 0;
+N_DATA01 A09      E2       P$2        5
+         B09      E2       P$2        5
+         B20      E1       OUT        4
+
+Change Class 0;
+N_DATA02 A09      H2       P$2        5
+         B09      H2       P$2        5
+         B20      F1       OUT        4
+
+Change Class 0;
+N_DATA03 A09      K2       P$2        5
+         B09      K2       P$2        5
+         B20      H1       OUT        4
+
+Change Class 0;
+N_DATA04 A09      M2       P$2        5
+         B09      M2       P$2        5
+         B20      J1       OUT        4
+
+Change Class 0;
+N_DATA05 A09      P2       P$2        5
+         B09      P2       P$2        5
+         B20      K1       OUT        4
+
+Change Class 0;
+N_DATA06 A09      S2       P$2        5
+         B09      S2       P$2        5
+         B20      L1       OUT        4
+
+Change Class 0;
+N_DATA07 A09      T2       P$2        5
+         B09      T2       P$2        5
+         B20      M1       OUT        4
+
+Change Class 0;
+N_DATA08 A09      V2       P$2        5
+         B09      V2       P$2        5
+         B20      N1       OUT        4
+
+Change Class 0;
+N_DATA09 A10      D2       P$2        5
+         B10      D2       P$2        5
+         B20      P1       OUT        4
+
+Change Class 0;
+N_DATA10 A10      E2       P$2        5
+         B10      E2       P$2        5
+         B20      R1       OUT        4
+
+Change Class 0;
+N_DATA11 A10      H2       P$2        5
+         B10      H2       P$2        5
+         B20      S1       OUT        4
+
+Change Class 0;
+N_DATAIN A08      M2       P$2        5
+         B08      M2       P$2        5
+         B17      K1       OUT        3
+
+Change Class 0;
+N_EXTA0  A11      H2       P$2        5
+         B11      H2       P$2        5
+         B17      S1       OUT        3
+
+Change Class 0;
+N_EXTA1  A11      E2       P$2        5
+         B11      E2       P$2        5
+         B17      R1       OUT        3
+
+Change Class 0;
+N_EXTA2  A11      D2       P$2        5
+         B11      D2       P$2        5
+         B17      P1       OUT        3
+
+Change Class 0;
+N_INIT   A02      V2       P$2        5
+         A16      S2       IN         2
+         B02      V2       P$2        5
+
+Change Class 0;
+N_IOP1   A02      K2       P$2        5
+         A16      E2       IN         2
+         B02      K2       P$2        5
+
+Change Class 0;
+N_IOP2   A02      M2       P$2        5
+         A16      H2       IN         2
+         B02      M2       P$2        5
+
+Change Class 0;
+N_IOP4   A02      P2       P$2        5
+         A16      K2       IN         2
+         B02      P2       P$2        5
+
+Change Class 0;
+N_IRQ    A06      M2       P$2        5
+         B06      M2       P$2        5
+         B17      E1       OUT        3
+
+Change Class 0;
+N_LINE   A06      V2       P$2        5
+         B06      V2       P$2        5
+         B17      H1       OUT        3
+
+Change Class 0;
+N_MB00   A03      D2       P$2        5
+         A12      E2       IN         1
+         B03      D2       P$2        5
+
+Change Class 0;
+N_MB01   A03      E2       P$2        5
+         A12      H2       IN         1
+         B03      E2       P$2        5
+
+Change Class 0;
+N_MB02   A03      H2       P$2        5
+         A12      K2       IN         1
+         B03      H2       P$2        5
+
+Change Class 0;
+N_MB03   A03      M2       P$2        5
+         A12      P2       IN         1
+         B03      M2       P$2        5
+
+Change Class 0;
+N_MB03\  A03      K2       P$2        5
+         A12      M2       IN         1
+         B03      K2       P$2        5
+
+Change Class 0;
+N_MB04   A03      S2       P$2        5
+         A13      E2       IN         1
+         B03      S2       P$2        5
+
+Change Class 0;
+N_MB04\  A03      P2       P$2        5
+         A12      S2       IN         1
+         B03      P2       P$2        5
+
+Change Class 0;
+N_MB05   A03      V2       P$2        5
+         A13      K2       IN         1
+         B03      V2       P$2        5
+
+Change Class 0;
+N_MB05\  A03      T2       P$2        5
+         A13      H2       IN         1
+         B03      T2       P$2        5
+
+Change Class 0;
+N_MB06   A04      E2       P$2        5
+         A13      P2       IN         1
+         B04      E2       P$2        5
+
+Change Class 0;
+N_MB06\  A04      D2       P$2        5
+         A13      M2       IN         1
+         B04      D2       P$2        5
+
+Change Class 0;
+N_MB07   A04      K2       P$2        5
+         A14      E2       IN         1
+         B04      K2       P$2        5
+
+Change Class 0;
+N_MB07\  A04      H2       P$2        5
+         A13      S2       IN         1
+         B04      H2       P$2        5
+
+Change Class 0;
+N_MB08   A04      P2       P$2        5
+         A14      K2       IN         1
+         B04      P2       P$2        5
+
+Change Class 0;
+N_MB08\  A04      M2       P$2        5
+         A14      H2       IN         1
+         B04      M2       P$2        5
+
+Change Class 0;
+N_MB09   A04      S2       P$2        5
+         A14      M2       IN         1
+         B04      S2       P$2        5
+
+Change Class 0;
+N_MB10   A04      T2       P$2        5
+         A14      P2       IN         1
+         B04      T2       P$2        5
+
+Change Class 0;
+N_MB11   A04      V2       P$2        5
+         A14      S2       IN         1
+         B04      V2       P$2        5
+
+Change Class 0;
+N_MBINCR A08      T2       P$2        5
+         B08      T2       P$2        5
+         B17      L1       OUT        3
+
+Change Class 0;
+N_RUN    A06      S2       P$2        5
+         B06      S2       P$2        5
+         B14      E2       IN         1
+
+Change Class 0;
+N_SKIP   A06      K2       P$2        5
+         B06      K2       P$2        5
+         B17      D1       OUT        3
+
+Change Class 0;
+N_TS1    A02      T2       P$2        5
+         A16      P2       IN         2
+         B02      T2       P$2        5
+
+Change Class 0;
+N_TS3    A02      S2       P$2        5
+         A16      M2       IN         2
+         B02      S2       P$2        5
+
+Change Class 0;
+N_TT_INST A06      T2       P$2        5
+         B06      T2       P$2        5
+         B14      H2       IN         1
+
+Change Class 0;
+N_WCOV   A10      P2       P$2        5
+         B10      P2       P$2        5
+         B14      P2       IN         1
+
+Change Class 0;
+P_3CYCLE A17      H1       CATHODE    3
+         A24      K2       P$2        6
+         B17      M2       IN         3
+
+Change Class 0;
+P_AC00   A22      B1       P$2        6
+         B16      D2       IN         3
+         B18      B1       CATHODE    3
+
+Change Class 0;
+P_AC01   A22      D1       P$2        6
+         B16      E2       IN         3
+         B18      D1       CATHODE    3
+
+Change Class 0;
+P_AC02   A22      E1       P$2        6
+         B16      F2       IN         3
+         B18      E1       CATHODE    3
+
+Change Class 0;
+P_AC03   A22      H1       P$2        6
+         B16      H2       IN         3
+         B18      H1       CATHODE    3
+
+Change Class 0;
+P_AC04   A22      J1       P$2        6
+         B16      J2       IN         3
+         B18      J1       CATHODE    3
+
+Change Class 0;
+P_AC05   A22      L1       P$2        6
+         B16      K2       IN         3
+         B18      L1       CATHODE    3
+
+Change Class 0;
+P_AC06   A22      M1       P$2        6
+         B16      L2       IN         3
+         B18      M1       CATHODE    3
+
+Change Class 0;
+P_AC07   A22      P1       P$2        6
+         B16      M2       IN         3
+         B18      P1       CATHODE    3
+
+Change Class 0;
+P_AC08   A22      S1       P$2        6
+         B16      N2       IN         3
+         B18      S1       CATHODE    3
+
+Change Class 0;
+P_AC09   A22      D2       P$2        6
+         B16      P2       IN         3
+         B18      D2       CATHODE    3
+
+Change Class 0;
+P_AC10   A22      E2       P$2        6
+         B16      R2       IN         3
+         B18      E2       CATHODE    3
+
+Change Class 0;
+P_AC11   A22      H2       P$2        6
+         B16      S2       IN         3
+         B18      H2       CATHODE    3
+
+Change Class 0;
+P_ACCEPT A23      S2       P$2        6
+         B14      L2       OUT        1
+         B15      T2       CATHODE    1
+
+Change Class 0;
+P_ACCLR  A22      P2       P$2        6
+         B17      F2       IN         3
+         B18      P2       CATHODE    3
+
+Change Class 0;
+P_ADD00  A17      S1       CATHODE    4
+         A23      B1       P$2        6
+         B19      D2       IN         4
+
+Change Class 0;
+P_ADD01  A17      D2       CATHODE    4
+         A23      D1       P$2        6
+         B19      E2       IN         4
+
+Change Class 0;
+P_ADD02  A17      E2       CATHODE    4
+         A23      E1       P$2        6
+         B19      F2       IN         4
+
+Change Class 0;
+P_ADD03  A17      H2       CATHODE    4
+         A23      H1       P$2        6
+         B19      H2       IN         4
+
+Change Class 0;
+P_ADD04  A23      J1       P$2        6
+         B19      J2       IN         4
+
+Change Class 0;
+P_ADD05  A23      L1       P$2        6
+         B19      K2       IN         4
+
+Change Class 0;
+P_ADD06  A23      M1       P$2        6
+         B19      L2       IN         4
+         B21      K2       CATHODE    4
+
+Change Class 0;
+P_ADD07  A23      P1       P$2        6
+         B19      M2       IN         4
+         B21      M2       CATHODE    4
+
+Change Class 0;
+P_ADD08  A23      S1       P$2        6
+         B19      N2       IN         4
+         B21      P2       CATHODE    4
+
+Change Class 0;
+P_ADD09  A23      D2       P$2        6
+         B19      P2       IN         4
+         B21      S2       CATHODE    4
+
+Change Class 0;
+P_ADD10  A23      E2       P$2        6
+         B19      R2       IN         4
+         B21      T2       CATHODE    4
+
+Change Class 0;
+P_ADD11  A23      H2       P$2        6
+         B19      S2       IN         4
+         B21      V2       CATHODE    4
+
+Change Class 0;
+P_BAC00  A20      B1       P$2        6
+         B12      D2       OUT        1
+         B15      D1       CATHODE    1
+
+Change Class 0;
+P_BAC01  A20      D1       P$2        6
+         B12      F2       OUT        1
+         B15      E1       CATHODE    1
+
+Change Class 0;
+P_BAC02  A20      E1       P$2        6
+         B12      J2       OUT        1
+         B15      H1       CATHODE    1
+
+Change Class 0;
+P_BAC03  A20      H1       P$2        6
+         B12      L2       OUT        1
+         B15      J1       CATHODE    1
+
+Change Class 0;
+P_BAC04  A20      J1       P$2        6
+         B12      N2       OUT        1
+         B15      L1       CATHODE    1
+
+Change Class 0;
+P_BAC05  A20      L1       P$2        6
+         B12      R2       OUT        1
+         B15      M1       CATHODE    1
+
+Change Class 0;
+P_BAC06  A20      M1       P$2        6
+         B13      D2       OUT        1
+         B15      P1       CATHODE    1
+
+Change Class 0;
+P_BAC07  A20      P1       P$2        6
+         B13      F2       OUT        1
+         B15      S1       CATHODE    1
+
+Change Class 0;
+P_BAC08  A20      S1       P$2        6
+         B13      J2       OUT        1
+         B15      D2       CATHODE    1
+
+Change Class 0;
+P_BAC09  A20      D2       P$2        6
+         B13      L2       OUT        1
+         B15      E2       CATHODE    1
+
+Change Class 0;
+P_BAC10  A20      E2       P$2        6
+         B13      N2       OUT        1
+         B15      H2       CATHODE    1
+
+Change Class 0;
+P_BAC11  A20      H2       P$2        6
+         B13      R2       OUT        1
+         B15      K2       CATHODE    1
+
+Change Class 0;
+P_BREAK  A23      P2       P$2        6
+         B14      J2       OUT        1
+         B15      S2       CATHODE    1
+
+Change Class 0;
+P_BRKRQ  A17      B1       CATHODE    3
+         A23      K2       P$2        6
+         B17      J2       IN         3
+
+Change Class 0;
+P_CAINCR A17      J1       CATHODE    3
+         A24      M2       P$2        6
+         B17      N2       IN         3
+
+Change Class 0;
+P_DATA00 A24      B1       P$2        6
+         B20      D2       IN         4
+         B21      B1       CATHODE    4
+
+Change Class 0;
+P_DATA01 A24      D1       P$2        6
+         B20      E2       IN         4
+         B21      D1       CATHODE    4
+
+Change Class 0;
+P_DATA02 A24      E1       P$2        6
+         B20      F2       IN         4
+         B21      E1       CATHODE    4
+
+Change Class 0;
+P_DATA03 A24      H1       P$2        6
+         B20      H2       IN         4
+         B21      H1       CATHODE    4
+
+Change Class 0;
+P_DATA04 A24      J1       P$2        6
+         B20      J2       IN         4
+         B21      J1       CATHODE    4
+
+Change Class 0;
+P_DATA05 A24      L1       P$2        6
+         B20      K2       IN         4
+         B21      L1       CATHODE    4
+
+Change Class 0;
+P_DATA06 A24      M1       P$2        6
+         B20      L2       IN         4
+         B21      M1       CATHODE    4
+
+Change Class 0;
+P_DATA07 A24      P1       P$2        6
+         B20      M2       IN         4
+         B21      P1       CATHODE    4
+
+Change Class 0;
+P_DATA08 A24      S1       P$2        6
+         B20      N2       IN         4
+         B21      S1       CATHODE    4
+
+Change Class 0;
+P_DATA09 A24      D2       P$2        6
+         B20      P2       IN         4
+         B21      D2       CATHODE    4
+
+Change Class 0;
+P_DATA10 A24      E2       P$2        6
+         B20      R2       IN         4
+         B21      E2       CATHODE    4
+
+Change Class 0;
+P_DATA11 A24      H2       P$2        6
+         B20      S2       IN         4
+         B21      H2       CATHODE    4
+
+Change Class 0;
+P_DATAIN A17      D1       CATHODE    3
+         A23      M2       P$2        6
+         B17      K2       IN         3
+
+Change Class 0;
+P_EXTA0  A17      P1       CATHODE    3
+         A24      V2       P$2        6
+         B17      S2       IN         3
+
+Change Class 0;
+P_EXTA1  A17      M1       CATHODE    3
+         A24      T2       P$2        6
+         B17      R2       IN         3
+
+Change Class 0;
+P_EXTA2  A17      L1       CATHODE    3
+         A24      S2       P$2        6
+         B17      P2       IN         3
+
+Change Class 0;
+P_INIT   A19      S2       OUT        2
+         A20      V2       P$2        6
+         A23      V2       P$2        6
+
+Change Class 0;
+P_IOP1   A18      D2       OUT        2
+         A20      K2       P$2        6
+
+Change Class 0;
+P_IOP2   A18      K2       OUT        2
+         A20      M2       P$2        6
+
+Change Class 0;
+P_IOP4   A18      S2       OUT        2
+         A20      P2       P$2        6
+
+Change Class 0;
+P_IRQ    A22      M2       P$2        6
+         B17      E2       IN         3
+         B18      M2       CATHODE    3
+
+Change Class 0;
+P_LINE   A22      V2       P$2        6
+         B17      H2       IN         3
+         B18      S2       CATHODE    3
+
+Change Class 0;
+P_MB00   A12      D2       OUT        1
+         A15      B1       CATHODE    1
+         A21      B1       P$2        6
+
+Change Class 0;
+P_MB01   A12      F2       OUT        1
+         A15      D1       CATHODE    1
+         A21      D1       P$2        6
+
+Change Class 0;
+P_MB02   A12      J2       OUT        1
+         A15      E1       CATHODE    1
+         A21      E1       P$2        6
+
+Change Class 0;
+P_MB03   A12      N2       OUT        1
+         A15      J1       CATHODE    1
+         A21      J1       P$2        6
+
+Change Class 0;
+P_MB03\  A12      L2       OUT        1
+         A15      H1       CATHODE    1
+         A21      H1       P$2        6
+
+Change Class 0;
+P_MB04   A13      D2       OUT        1
+         A15      M1       CATHODE    1
+         A21      M1       P$2        6
+
+Change Class 0;
+P_MB04\  A12      R2       OUT        1
+         A15      L1       CATHODE    1
+         A21      L1       P$2        6
+
+Change Class 0;
+P_MB05   A13      J2       OUT        1
+         A15      S1       CATHODE    1
+         A21      S1       P$2        6
+
+Change Class 0;
+P_MB05\  A13      F2       OUT        1
+         A15      P1       CATHODE    1
+         A21      P1       P$2        6
+
+Change Class 0;
+P_MB06   A13      N2       OUT        1
+         A15      E2       CATHODE    1
+         A21      E2       P$2        6
+
+Change Class 0;
+P_MB06\  A13      L2       OUT        1
+         A15      D2       CATHODE    1
+         A21      D2       P$2        6
+
+Change Class 0;
+P_MB07   A14      D2       OUT        1
+         A15      K2       CATHODE    1
+         A21      K2       P$2        6
+
+Change Class 0;
+P_MB07\  A13      R2       OUT        1
+         A15      H2       CATHODE    1
+         A21      H2       P$2        6
+
+Change Class 0;
+P_MB08   A14      J2       OUT        1
+         A15      P2       CATHODE    1
+         A21      P2       P$2        6
+
+Change Class 0;
+P_MB08\  A14      F2       OUT        1
+         A15      M2       CATHODE    1
+         A21      M2       P$2        6
+
+Change Class 0;
+P_MB09   A14      L2       OUT        1
+         A15      S2       CATHODE    1
+         A21      S2       P$2        6
+
+Change Class 0;
+P_MB10   A14      N2       OUT        1
+         A15      T2       CATHODE    1
+         A21      T2       P$2        6
+
+Change Class 0;
+P_MB11   A14      R2       OUT        1
+         A15      V2       CATHODE    1
+         A21      V2       P$2        6
+
+Change Class 0;
+P_MBINCR A17      E1       CATHODE    3
+         A23      T2       P$2        6
+         B17      L2       IN         3
+
+Change Class 0;
+P_RUN    A22      S2       P$2        6
+         B14      D2       OUT        1
+         B15      M2       CATHODE    1
+
+Change Class 0;
+P_SKIP   A22      K2       P$2        6
+         B17      D2       IN         3
+         B18      K2       CATHODE    3
+
+Change Class 0;
+P_TS1    A19      K2       OUT        2
+         A20      T2       P$2        6
+
+Change Class 0;
+P_TS3    A19      D2       OUT        2
+         A20      S2       P$2        6
+
+Change Class 0;
+P_TT_INST A22      T2       P$2        6
+         B14      F2       OUT        1
+         B15      P2       CATHODE    1
+
+Change Class 0;
+P_WCOV   A24      P2       P$2        6
+         B14      N2       OUT        1
+         B15      V2       CATHODE    1

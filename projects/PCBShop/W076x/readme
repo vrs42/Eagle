@@ -1,0 +1,20 @@
+PCBpro Order# 8500
+12/01/03
+Vincent Slyngstad
+P/N W076o Rev A
+
+Please build a quantity of 30 pieces of this 6-layer board. We are requesting 1-oz. finished copper weight, 0.062" thick on FR4 material, green solder mask, and white legend.
+
+The Gerber files included in this zip:
+
+File Name Description:
+w076o.cmp Layer 1 (component side) 
+w076o.sol Layer 2 solder side
+w076o.stc Component-side solder mask
+w076o.sts Solder-side solder mask
+w076o.plc Component-side silkscreen (nomenclature)
+w076o.drd Excellon drill file
+w076o.drl Drill tool description 
+
+Any technical questions can be referred to v.slyngstad@verizon.net. 
+My contact number is 503-259-9615.

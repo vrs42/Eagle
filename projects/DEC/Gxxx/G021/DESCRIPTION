@@ -1,0 +1,13 @@
+G021 Sense Amplifier
+<UL>
+<LI><b>G021old</b> is a drawing of DEC's G021 Core Sense Amplifier board,
+with the unobtainium MC1540 sense amp chips.</LI>
+<LI><b>G021dec</b> is a drawing of DEC's G021 Core Sense Amplifier board,
+with the unobtainium MC1540 sense amp chips.</LI>
+<LI><b>G021vrs</b> is a drawing of DEC's G021 Core Sense Amplifier board,
+with the unobtainium MC1540 sense amp chips.</LI>
+<LI><b>sense-amp</b> is an approximation of the function of the MC1540,
+using LM148 op-amps.</LI>
+<LI><b>G021-1</b> is a 12/04/2004 checkpoint of G021.</LI>
+<LI><b>G021</b> is a version of the G021 with the MC1540 replaced with
+LM837.</LI>

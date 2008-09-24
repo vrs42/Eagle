@@ -1,0 +1,1162 @@
+Netlist
+
+Exported from M868.brd at  9/11/2007 03:18:37p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Net      Part     Pad
+
+-1.5V    C42      2
+         D3       C
+         D4       A
+         D5       A
+
+-3V      C41      2
+         D1       A
+         D6       C
+         R29      1
+
+-4.7V    C48      2
+         Q4       2
+         R35      2
+         R36      1
+
+-9V      C44      2
+         Q3       2
+         R37      1
+         R38      2
+
+-15V     EDGE$    DB2
+         R29      2
+         R30      1
+         R31      1
+         R32      1
+         R33      1
+         R34      1
+         R35      1
+         R38      1
+         R39      1
+         R40      1
+         R41      1
+
+C0       E33      13
+         EDGE$    CE1
+
+C1       E33      1
+         EDGE$    CH1
+
+CC_67X   E24      3
+         E26      11
+         E33      5
+         E33      6
+
+CC_67X\  E07      11
+         E07      5
+         E07      6
+         E07      9
+         E12      11
+         E12      4
+         E12      6
+         E12      9
+         E17      11
+         E17      4
+         E17      6
+         E17      9
+         E26      10
+         E44      10
+         E44      12
+         E44      6
+         E45      2
+         R6       1
+
+CC_BTP3  E01      2
+         E38      2
+
+CC_CLK_TE\ E26      6
+         E27      1
+
+CC_DTP   E08      13
+         E23      1
+         E23      10
+         E23      5
+         E27      10
+
+CC_DTP0  E19      6
+         E31      3
+         E35      9
+
+CC_DTP0\ E22      2
+         E31      13
+         E31      4
+         E38      13
+
+CC_DTP1  E19      3
+         E31      1
+         E35      2
+         E36      1
+         E36      14
+
+CC_DTP1\ E22      12
+         E22      5
+         E22      9
+         E31      2
+
+CC_F/R   E18      1
+         E34      5
+
+CC_F/R\  E05      14
+         E34      6
+         E39      9
+
+CC_INIT  E28      3
+         E32      11
+         E37      8
+         E44      4
+
+CC_INIT\ E27      2
+         E32      10
+         E34      1
+         E34      13
+         E40      12
+
+CC_PWR_OK E28      2
+         E40      11
+         E40      4
+         E40      6
+         E46      12
+         E46      9
+
+CC_R/W   E30      9
+         E35      10
+         E38      9
+
+CC_R/W\  E05      2
+         E30      8
+         E35      1
+
+CC_RUN   E26      12
+         E37      9
+         E46      2
+         E46      3
+
+CC_RUN\  E20      14
+         E26      13
+         E40      3
+
+CC_S/G   E30      5
+         E42      12
+         E43      8
+
+CC_S/G\  E02      6
+         E05      5
+         E30      6
+
+CC_SDLC\ E19      13
+         E37      12
+         E45      9
+
+CC_SDLD\ E02      3
+         E06      13
+         E11      13
+         E16      13
+         E27      5
+         E33      12
+         E45      3
+
+CC_SDRC\ E05      9
+         E10      9
+         E15      9
+         E27      3
+         E45      4
+
+CC_SDRD\ E05      7
+         E10      7
+         E15      7
+         E27      4
+         E45      5
+
+CC_SDSQ\ E32      1
+         E45      10
+
+CC_SDSS\ E32      3
+         E45      12
+
+CC_SDST\ E32      5
+         E45      11
+
+CC_SETDLY\ E02      5
+         E03      6
+         E04      2
+         E22      4
+
+CC_T/M_EN E02      12
+         E04      11
+         E23      2
+         E23      4
+         E31      5
+         E43      6
+         E46      5
+         R16      1
+         WTM      2
+
+CC_T/M_EN\ E02      9
+         E03      10
+         E31      6
+         E43      2
+
+CC_TP3\  E01      1
+         E02      2
+         E20      13
+         E37      11
+
+CC_TPG1  E14      12
+         E14      5
+
+CC_TPG1\ E14      6
+         E42      1
+
+CC_TPG_CLK E01      13
+         E04      5
+         E04      9
+         E14      11
+         E14      3
+
+CC_TPG_CLK\ C40      1
+         E04      10
+         R25      1
+
+CC_TT_EN E08      10
+         E19      8
+
+CC_UNIT  E34      9
+         E39      11
+         E42      8
+
+CC_UNIT\ E05      11
+         E34      8
+
+CC_UTS   E03      9
+         E09      1
+         E21      13
+         E29      13
+         E38      5
+
+CC_UTS\  E02      11
+         E03      8
+
+CC_WRT_OK E26      2
+         E46      6
+
+CON_ALL_HALT E46      1
+         J1       RR
+
+DATA00   E05      12
+         E17      10
+         EDGE$    AR1
+
+DATA01   E05      13
+         E12      10
+         EDGE$    AS1
+
+DATA02   E05      4
+         E07      10
+         EDGE$    AU1
+
+DATA03   E05      3
+         E17      12
+         EDGE$    AV1
+
+DATA04   E10      12
+         E12      12
+         EDGE$    BR1
+
+DATA05   E07      12
+         E10      13
+         EDGE$    BS1
+
+DATA06   E10      4
+         E17      5
+         EDGE$    BU1
+
+DATA07   E10      3
+         E12      5
+         EDGE$    BV1
+
+DATA08   E07      4
+         E15      12
+         EDGE$    DR1
+
+DATA09   E15      13
+         E17      7
+         EDGE$    DS1
+
+DATA10   E12      7
+         E15      4
+         EDGE$    DU1
+
+DATA11   E07      7
+         E15      3
+         EDGE$    DV1
+
+DF_COMP_WD E18      12
+         E18      5
+         E18      9
+         E22      13
+         E22      3
+
+DF_DB00  E16      14
+         E17      14
+         E34      12
+         E42      9
+
+DF_DB01  E11      14
+         E12      14
+         E18      2
+         E34      2
+
+DF_DB02  E06      14
+         E07      14
+         E30      2
+         E42      13
+
+DF_DB03  E16      15
+         E17      13
+         E30      12
+
+DF_HLD\  E10      11
+         E32      8
+         E40      2
+
+DF_SEL_ER E32      12
+         E37      6
+
+DF_SEL_ER\ E32      13
+         E40      5
+         Q2       3
+         Q3       3
+         R11      1
+
+DF_TIME_ER E27      13
+         E35      6
+         E37      5
+         E41      2
+
+DF_TIME_ER\ E27      12
+         E35      5
+         E40      1
+
+F/R\     E39      8
+         J1       TT
+
+GND      C1       2
+         C10      2
+         C11      2
+         C12      2
+         C13      2
+         C14      2
+         C15      2
+         C16      2
+         C17      2
+         C18      2
+         C19      2
+         C2       2
+         C20      2
+         C21      2
+         C22      2
+         C23      2
+         C24      2
+         C25      2
+         C26      2
+         C27      2
+         C28      2
+         C29      2
+         C3       2
+         C30      2
+         C31      2
+         C32      2
+         C33      2
+         C34      -
+         C35      -
+         C4       2
+         C40      2
+         C41      1
+         C42      1
+         C43      2
+         C44      1
+         C46      -
+         C47      2
+         C48      1
+         C5       2
+         C6       2
+         C7       2
+         C8       2
+         C9       2
+         D2       A
+         E01      7
+         E02      7
+         E03      7
+         E04      1
+         E04      8
+         E05      8
+         E06      8
+         E07      1
+         E08      1
+         E08      8
+         E08      9
+         E09      7
+         E10      8
+         E11      8
+         E12      1
+         E13      12
+         E14      7
+         E15      8
+         E16      8
+         E17      1
+         E18      7
+         E19      7
+         E20      1
+         E20      10
+         E20      12
+         E21      8
+         E22      7
+         E23      7
+         E24      7
+         E25      8
+         E26      7
+         E27      7
+         E28      1
+         E28      10
+         E28      5
+         E28      7
+         E29      8
+         E30      7
+         E31      7
+         E32      7
+         E33      7
+         E34      7
+         E35      7
+         E36      10
+         E37      7
+         E38      7
+         E39      7
+         E40      7
+         E41      7
+         E42      7
+         E43      7
+         E44      1
+         E45      8
+         E46      7
+         EDGE$    AC2
+         EDGE$    AF1
+         EDGE$    AF2
+         EDGE$    AN1
+         EDGE$    AN2
+         EDGE$    AT1
+         EDGE$    AT2
+         EDGE$    BC1
+         EDGE$    BC2
+         EDGE$    BF1
+         EDGE$    BF2
+         EDGE$    BN2
+         EDGE$    BT1
+         EDGE$    BT2
+         EDGE$    CC1
+         EDGE$    CC2
+         EDGE$    CF1
+         EDGE$    CF2
+         EDGE$    CN1
+         EDGE$    CN2
+         EDGE$    CT1
+         EDGE$    CT2
+         EDGE$    DC1
+         EDGE$    DC2
+         EDGE$    DF1
+         EDGE$    DF2
+         EDGE$    DN1
+         EDGE$    DN2
+         EDGE$    DT1
+         EDGE$    DT2
+         J1       A
+         J1       AA
+         J1       B
+         J1       C
+         J1       CC
+         J1       E
+         J1       EE
+         J1       H
+         J1       HH
+         J1       K
+         J1       KK
+         J1       M
+         J1       MM
+         J1       P
+         J1       PP
+         J1       S
+         J1       SS
+         J1       U
+         J1       UU
+         J1       VV
+         J1       W
+         J1       Y
+         Q4       3
+         Q5       3
+         R36      2
+         R37      2
+         WTM      1
+
+INITIALIZE E28      4
+         EDGE$    CR1
+
+INTERNAL_IO E33      4
+         EDGE$    CL1
+
+IO_PAUSE E28      9
+         EDGE$    CD1
+
+IO_PAUSE\ E20      4
+         E20      7
+         E24      10
+         E28      14
+
+MD03     E24      9
+         EDGE$    AP1
+
+MD04     E24      4
+         EDGE$    BK1
+
+MD05     E24      5
+         EDGE$    BL1
+
+MD06     E24      6
+         EDGE$    BM1
+
+MD07     E20      5
+         EDGE$    BP1
+         W2W1     1
+
+MD08     E20      6
+         EDGE$    DK1
+         W4W3     1
+
+MD09     E44      7
+         EDGE$    DL1
+
+MD10     E44      9
+         EDGE$    DM1
+
+MD11     E44      11
+         EDGE$    DP1
+
+MTR0\    E10      5
+         E29      7
+
+MTR1\    E10      2
+         E29      5
+
+MTR2\    E15      11
+         E21      11
+         E29      4
+
+MTR3\    E15      14
+         E21      9
+
+MTR4\    E15      5
+         E21      7
+
+MTR5\    E15      2
+         E21      5
+
+N$1      E06      1
+         E06      10
+         E11      1
+         E11      10
+         E16      1
+         E16      10
+         R3       1
+
+N$2      E02      1
+         E31      9
+
+N$3      E16      2
+         E17      3
+
+N$4      E16      3
+         E17      2
+
+N$5      E21      1
+         E21      10
+         E21      14
+         E21      15
+         E21      2
+         E21      3
+         E29      1
+         E29      10
+         E29      14
+         E29      15
+         E29      2
+         E29      3
+         R2       1
+
+N$6      E43      13
+         E43      9
+         R14      2
+
+N$7      E06      6
+         E11      6
+         E16      6
+         E26      8
+
+N$8      E11      2
+         E12      3
+
+N$9      E11      3
+         E12      2
+
+N$11     E11      15
+         E12      13
+
+N$13     E06      2
+         E07      3
+
+N$14     E06      3
+         E07      2
+
+N$16     E06      15
+         E07      13
+
+N$17     E08      11
+         E08      3
+         E09      10
+         E09      13
+         E09      4
+         E14      1
+         E14      10
+         E14      13
+         E14      4
+         R22      2
+
+N$18     E30      1
+         E37      10
+
+N$20     E26      3
+         E43      10
+         E43      11
+         R13      2
+
+N$22     E27      6
+         E37      2
+         E38      1
+
+N$25     E36      12
+         E41      8
+
+N$29     E22      8
+         E26      9
+
+N$30     E22      10
+         E31      8
+
+N$31     E21      6
+         E22      6
+         E29      6
+
+N$32     E13      1
+         E18      13
+
+N$33     E18      11
+         E39      1
+         R8       1
+
+N$34     E13      8
+         E18      8
+
+N$35     E13      13
+         E13      4
+         E31      12
+
+N$36     E13      11
+         E18      6
+         E37      3
+
+N$37     E22      1
+         E22      11
+
+N$38     E18      10
+         E39      3
+         R9       1
+
+N$39     E18      4
+         E39      13
+         R10      1
+
+N$40     E36      11
+         E41      12
+
+N$41     E10      14
+         E37      4
+
+N$42     E36      2
+         E36      3
+         E38      6
+
+N$43     E38      3
+         E38      4
+
+N$44     E32      6
+         E41      3
+
+N$45     E32      2
+         E41      11
+
+N$46     E32      4
+         E41      9
+
+N$47     E31      11
+         E37      1
+
+N$48     E31      10
+         E35      11
+         E35      13
+
+N$49     E35      12
+         E35      3
+
+N$50     E35      4
+         E35      8
+
+N$51     D1       C
+         Q1       2
+         R48      2
+
+N$52     D5       C
+         Q1       1
+         R41      2
+
+N$53     E32      9
+         Q1       3
+         R27      1
+
+N$54     D2       C
+         D3       A
+
+N$55     D10      C
+         D9       C
+         R40      2
+
+N$56     D4       C
+         D6       A
+
+N$57     D10      A
+         Q5       1
+
+N$58     D9       A
+         Q3       1
+
+N$59     D9A      A
+         Q2       1
+
+N$60     D7       A
+         Q4       1
+
+N$61     E24      11
+         W2W1     2
+
+N$62     E24      12
+         W4W3     2
+
+N$63     D7       C
+         D9A      C
+         R39      2
+
+N$65     E20      3
+         W2W1     3
+
+N$66     E19      12
+         E26      1
+         E40      8
+
+N$67     E20      2
+         W4W3     3
+
+N$68     E19      11
+         E30      13
+
+N$69     E33      11
+         E33      2
+         E44      2
+         E45      1
+
+N$70     E33      3
+         E44      14
+         E45      14
+
+N$71     E44      13
+         E45      15
+
+N$72     E42      4
+         E43      3
+         R19      1
+
+N$73     E19      10
+         E43      1
+         E43      4
+         R21      1
+
+N$74     E42      3
+         E43      5
+         R20      1
+
+N$77     E08      2
+         E08      5
+
+N$78     C37      1
+         E08      7
+         R23      1
+
+N$79     C38      1
+         E08      15
+         R24      1
+
+N$80     E08      12
+         E09      11
+         E09      3
+         E19      9
+
+N$81     C38      2
+         E08      14
+
+N$82     C37      2
+         E08      6
+
+N$83     E03      3
+         E26      5
+         E30      11
+         E30      3
+         E34      11
+         E34      3
+         E37      13
+
+N$84     E30      10
+         E30      4
+         E34      10
+         E34      4
+         R12      1
+
+N$85     E38      10
+         E38      11
+
+N$86     E02      8
+         E38      12
+         E38      8
+
+N$87     E03      4
+         E43      12
+         E44      3
+
+N$88     E26      4
+         E46      11
+
+N$89     E02      10
+         E46      8
+
+N$90     E03      2
+         E18      3
+         E42      10
+         E42      11
+         R15      1
+
+N$92     E03      1
+         E04      3
+         R42      2
+
+N$94     C36      +
+         E04      15
+         R17      1
+
+N$95     C36      -
+         E04      14
+
+N$96     E03      11
+         E04      4
+
+N$97     E02      4
+         E03      12
+         E03      13
+
+N$98     E02      13
+         E09      2
+
+N$100    E19      5
+         E23      6
+
+N$101    E09      5
+         E23      9
+         E27      9
+
+N$102    E09      12
+         E09      8
+         E23      11
+
+N$104    E19      2
+         E23      12
+
+N$106    E19      1
+         E23      8
+
+N$107    E14      2
+         E14      8
+         E23      3
+         E39      5
+
+N$108    C39      1
+         E04      7
+         R43      1
+
+N$109    E19      4
+         E27      8
+
+N$110    C39      2
+         E04      6
+
+N$111    R26      2
+         R43      2
+
+N$112    E01      12
+         R25      2
+
+ND0      E39      12
+         J1       FF
+
+ND1      E39      4
+         J1       DD
+
+ND2      E39      2
+         J1       X
+
+POWER_OK\ E28      6
+         EDGE$    BV2
+
+RD00     E16      4
+         J1       D
+         R4       1
+
+RD01     E11      4
+         J1       L
+         R5       1
+
+RD02     E06      4
+         J1       V
+         R7       1
+
+RMT      E21      4
+         J1       F
+         R1       1
+
+RTT\     E42      6
+         J1       J
+         R18      1
+
+RUN      E20      9
+         EDGE$    BU2
+
+S/G\     E46      13
+         J1       JJ
+
+SEL_ECHO J1       N
+         Q2       2
+         Q5       2
+         R30      2
+         R31      2
+         R32      2
+         R33      2
+         R34      2
+
+SKIP\    E41      1
+         E41      10
+         E41      13
+         EDGE$    CS1
+
+SR00     E05      10
+         E13      6
+         E16      11
+
+SR01     E05      15
+         E11      11
+         E13      7
+
+SR02     E05      6
+         E06      11
+         E13      2
+
+SR03     E05      1
+         E16      9
+
+SR04     E10      10
+         E11      9
+
+SR05     E06      9
+         E10      15
+
+SR06     E10      6
+         E16      7
+
+SR07     E10      1
+         E11      7
+
+SR08     E06      7
+         E15      10
+
+SR09     E15      15
+         E16      5
+
+SR10     E11      5
+         E15      6
+
+SR11     E06      5
+         E15      1
+
+SYNC     E09      9
+         E27      11
+         E42      2
+         E42      5
+
+T/M_ENABLE E46      4
+         J1       NN
+
+TP3      E20      11
+         EDGE$    CH2
+
+TP4      E44      5
+         EDGE$    CJ2
+
+TPG0     E14      9
+         E23      13
+
+UNITH    E39      10
+         J1       LL
+
+VCC      C1       1
+         C10      1
+         C11      1
+         C12      1
+         C13      1
+         C14      1
+         C15      1
+         C16      1
+         C17      1
+         C18      1
+         C19      1
+         C2       1
+         C20      1
+         C21      1
+         C22      1
+         C23      1
+         C24      1
+         C25      1
+         C26      1
+         C27      1
+         C28      1
+         C29      1
+         C3       1
+         C30      1
+         C31      1
+         C32      1
+         C33      1
+         C34      +
+         C35      +
+         C4       1
+         C43      1
+         C46      +
+         C5       1
+         C6       1
+         C7       1
+         C8       1
+         C9       1
+         E01      14
+         E02      14
+         E03      14
+         E04      16
+         E05      16
+         E06      16
+         E07      8
+         E08      16
+         E09      14
+         E10      16
+         E11      16
+         E12      8
+         E13      5
+         E14      14
+         E15      16
+         E16      16
+         E17      8
+         E18      14
+         E19      14
+         E20      8
+         E21      16
+         E22      14
+         E23      14
+         E24      14
+         E25      16
+         E26      14
+         E27      14
+         E28      8
+         E29      16
+         E30      14
+         E31      14
+         E32      14
+         E33      14
+         E34      14
+         E35      14
+         E36      5
+         E37      14
+         E38      14
+         E39      14
+         E40      14
+         E41      14
+         E42      14
+         E43      14
+         E44      8
+         E45      16
+         E46      14
+         EDGE$    AA2
+         EDGE$    BA2
+         EDGE$    CA2
+         R1       2
+         R10      2
+         R11      2
+         R12      2
+         R13      1
+         R14      1
+         R15      2
+         R16      2
+         R17      2
+         R18      2
+         R19      2
+         R2       2
+         R20      2
+         R21      2
+         R22      1
+         R23      2
+         R24      2
+         R26      1
+         R26      3
+         R27      2
+         R3       2
+         R4       2
+         R42      1
+         R5       2
+         R6       2
+         R7       2
+         R8       2
+         R9       2
+
+WD_ENAB  E46      10
+         J1       Z
+
+WPT      E39      6
+         J1       BB
+
+WRT_ECHO C47      1
+         J1       T
+         R48      1
+

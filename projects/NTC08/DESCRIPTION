@@ -1,0 +1,6 @@
+Bogus TC08 clone in TTL.
+<UL>
+<LI><b>nt08</b> is an early version of a mechanical translation of the 
+TC08 DECtape controller into TTL.</LI>
+<LI><b>ntc08</b> is a start at a "big-board" version of the TC08 DECtape 
+controller.</LI>

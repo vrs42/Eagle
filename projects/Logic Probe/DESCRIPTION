@@ -1,0 +1,4 @@
+Fancy logic probe.
+<UL>
+<LI><b>probe</b> is a board to count and report rising and falling transitions to determine 
+the logic activity on a pin.</LI>

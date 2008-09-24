@@ -1,0 +1,28 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/RF08/RF08x.sch at  9/06/2004 08:49:20a
+
+WARNING: Sheet 2/3: POWER Pin IC8 V+ connected to VCC
+WARNING: Sheet 3/3: NC Pin IC23 NC connected to DAR05
+WARNING: Sheet 3/3: POWER Pin IC23 VSS connected to GND
+WARNING: Sheet 3/3: NC Pin IC27 NC connected to DAR05
+WARNING: Sheet 3/3: POWER Pin IC27 VSS connected to GND
+WARNING: Sheet 3/3: NC Pin IC33 NC connected to DAR05
+WARNING: Sheet 3/3: POWER Pin IC33 VSS connected to GND
+WARNING: Sheet 3/3: NC Pin IC39 NC connected to DAR05
+WARNING: Sheet 3/3: POWER Pin IC39 VSS connected to GND
+WARNING: Only 1 Pin on net BMB03\
+WARNING: Only 1 Pin on net BMB04\
+WARNING: Only 1 Pin on net BMB05\
+WARNING: Only 1 Pin on net BMB06\
+WARNING: Only 1 Pin on net BMB07\
+WARNING: Only 1 Pin on net BMB08\
+WARNING: Only 1 Pin on net BRUN\
+WARNING: Only 1 Pin on net BTS3
+WARNING: Only 1 Pin on net DATA_IN
+WARNING: Only 1 Pin on net MEM_INC
+
+Board and schematic are consistent
+
+    0 errors
+   19 warnings

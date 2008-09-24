@@ -1,0 +1,69 @@
+#usage "<b>Adjust net name positions</b>\n"
+       "<p>"
+       "This ULP adjusts the net name positions so that they do not lie directly on the net wire."
+       "<p>"
+       "<author>Author: klcallan@yahoo.com"
+
+if (schematic)
+
+  schematic(S) {
+
+    real x, y, old_y, new_y;
+    real net_offset = 0.015;
+    real bus_offset = 0.030;
+    string p = "";
+    string s = "";
+    string e = "";
+
+    s = S.name;
+    char c = '/';
+    int pos = strrchr(s, c);
+    if (pos >= 0) {
+      p = strsub(s, 0, pos + 1);
+    }
+
+    string fileName = p + "temp.scr";
+
+    output(fileName) {
+      printf("GRID INCH 0.005\n");
+      S.sheets(SH) {
+        printf("EDIT .S%d\n", SH.number);
+        printf("DISPLAY -NETS -BUSSES\n");
+
+        // process all the nets
+        SH.nets(N) {
+          N.segments(SEG) {
+            SEG.texts(T) {
+              x = T.x / 254000.0;
+              old_y = T.y / 254000.0; 
+              new_y = (T.y / 25400) / 10.0 + net_offset;
+              printf("MOVE (%5.3f %5.3f) (%5.3f %5.3f);\n", x, old_y, x, new_y);
+            }
+          }
+        }
+
+        // process all the busses
+        SH.busses(BUS) {
+          BUS.segments(SEG) {
+            SEG.texts(T) {
+              x = T.x / 254000.0;
+              old_y = T.y / 254000.0; 
+              new_y = (T.y / 25400) / 10.0 + bus_offset;
+              printf("MOVE (%5.3f %5.3f) (%5.3f %5.3f);\n", x, old_y, x, new_y);
+            }
+          }
+        }
+
+        printf("DISPLAY NETS BUSSES\n");
+      }
+      printf("GRID LAST");
+    }
+    sprintf(e, "SCRIPT '%s'", fileName);
+    exit(e);
+  }
+
+else {
+   dlgMessageBox("\n    Start this ULP in a schematic    \n");
+   exit(0);
+}
+

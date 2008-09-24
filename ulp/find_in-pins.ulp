@@ -1,0 +1,60 @@
+#usage 	"en:	This ULP is a extension for normal ERC,n "
+		"	it will search for all uninvoked gates with INPUT-Pins.\n"
+		"	A doubleclick on a gate in the list will invoke this gate and close the ULP.\n"
+		"	Klick on OK close the ULP without any change.		\n"
+		"	Author: s. waldeck\n",
+	   	"de:	Dieses ULP ergänzt den normalen ERC,\n"
+		"	es sucht alle nicht eingefügten GATE's welche Input-Pins enthalten.\n"
+		"	Doppelklick auf ein aufgelistetes Gate fügt das Gate per Invoke ein.\n"
+		"	OK beendet das ULP ohne das ein Gate eingefügt wird.		\n"
+		"	Author: S. Waldeck"
+
+
+string result;
+string gate_list[];
+string last;
+int i;
+
+if (schematic) schematic(SCH)
+{
+ SCH.parts(P)
+ { 
+ P.instances(I)
+   {
+   if (I.sheet ==0)
+	{	
+	I.gate.symbol.pins(PIN)
+		{
+		if (PIN.direction == PIN_DIRECTION_IN)
+			{
+			if (last == I.name);
+			else
+				{
+				sprintf(gate_list[i++],"%10s \t %5s \t  %s", P.name, I.gate.name, P.value);
+				last = I.name;
+				}
+			}
+		}
+	}	
+   }
+ } 
+}
+
+if (i==0)  dlgMessageBox(";No uninvoked Gates with INPUT-Pins       ");
+else
+ {
+   int Selected =-1;
+   dlgDialog("  ! Uninvoked Gates !")
+  {
+   dlgListView("NAME \t GATE \t VALUE", gate_list, Selected) 
+    {
+      if (Selected == -1);   
+       else  sprintf(result,"invoke %s",strsub(gate_list[Selected],0,strrstr(gate_list[Selected],"\t")));
+      dlgAccept();
+     }	
+   dlgHBoxLayout
+    {     dlgPushButton("+OK") dlgAccept(1);
+     dlgPushButton("Help") dlgMessageBox(usage);}
+    };
+ };
+exit(result);

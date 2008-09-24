@@ -1,0 +1,29 @@
+DONE has been disconnected from E17 pin 4, which is now tied to VCC.
+DONE has been disconnected from E31 pin 10, which is now tied to MAINT\ (pin 9).
+
+DONE_SKIP has been disconnected from E17 pin 16, and is now tied to VCC.
+
+ERROR has been disconnected from E19 pin 9, which is now tied to VCC.
+
+ERR_SKIP has been disconnected from E19 pin 12, which is now tied to VCC.
+
+GND has been disconnected from E1 pins 4 and 5, which are now tied to VCC.
+GND has been connected to IC11 pin 7.  IC11 is a new 74LS04 or equivalent.
+
+A new net N$36 connects E26 pin 8 to IC11 pin 5.
+
+N$47 has been connected to E2 pin 1, which has been disconnected from VCC.
+
+N$90 (E19, pin 6) has been disconnected from E26 pin 6, and connected to IC11 pin 4.
+N$91 (E19, pin 1) has been disconnected from E26 pin 3, and connected to IC11 pin 2.
+N$97 (E17, pin 1) has been disconnected from E26 pin 8, and connected to IC11 pin 6.
+
+A new net N$103 connects E26 pin 6 to IC11 pin 3.
+A new net N$107 connects E26 pin 3 to IC11 pin 1.
+
+TR_SKIP has been disconnected from E19 pin 16, which is now tied to VCC.
+
+VCC has been connected to IC11 pin 14.
+
+XFER_REQ has been disconnected from E19 pin 4, which is how tied to VCC.
+

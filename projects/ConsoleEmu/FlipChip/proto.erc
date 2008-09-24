@@ -1,0 +1,17 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/ConsoleEmu/FlipChip/proto.sch at 12/02/2005 09:48:08a
+
+ERROR: Only INPUT Pins on net N$57
+WARNING: Only 1 Pin on net N$57
+ERROR: Only INPUT Pins on net N$58
+WARNING: Only 1 Pin on net N$58
+ERROR: Only INPUT Pins on net N$59
+WARNING: Only 1 Pin on net N$59
+ERROR: Only INPUT Pins on net N$60
+WARNING: Only 1 Pin on net N$60
+
+Board and schematic are consistent
+
+    4 errors
+    4 warnings

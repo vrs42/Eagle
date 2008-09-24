@@ -1,0 +1,4 @@
+EPROM Emulator based on work of Philip Pemberton.
+<UL>
+<LI><b>EpromEmu</b> is an adaptation of Philip Pemberton's EPROM emulator, which 
+attaches to the parallel port of a PC.</LI>

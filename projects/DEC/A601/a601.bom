@@ -1,0 +1,27 @@
+Partlist exported from C:/PROGRAM FILES/EAGLE-4.11/projects/DEC/A601/A601.sch at  3/04/2006 01:28:23p
+
+Qty Value            Device              Parts                     
+4   .01uf            C-US050-025X075     C2, C5, C8, C11           
+1   .47 20V          CPOL-USE22-6AXIAL   C10                       
+6   1N645            1N4148              D2, D3, D5, D6, D8, D9    
+3   1N994            1N4148              D1, D4, D7                
+6   2N1305           2N2904A             Q3, Q4, Q7, Q8, Q11, Q12  
+3   2N3009           2N1613-NPN-TO39-EBC Q1, Q5, Q9                
+1   10M 5%           R-US_0207/10        R24'                      
+3   15K 5%           R-US_0207/10        R8, R17, R26              
+3   56               C-US075-032X103     C1, C4, C7                
+3   68K              R-US_0207/10        R7, R16, R25              
+3   120K             R-US_0207/10        R3, R13, R21              
+3   330              C-US102-043X133     C3, C6, C9                
+3   820              R-US_0207/10        R6, R15, R23              
+1   1000 .1%         R-US_0309/12        R4                        
+6   1500 5%          R-US_0207/10        R1, R5, R12, R14, R20, R22
+1   2000 .1%         R-US_0309/12        R10                       
+1   4000 .1%         R-US_0309/12        R18                       
+3   5600             R-US_0207/10        R2, R11, R19              
+1   7000 0.1%        R-US_0309/12        R9                        
+1   8000 .1%         R-US_0309/12        R27                       
+3   DEC6B            2N2904A             Q2, Q6, Q10               
+1   EDGE-1           EDGE-1              U$3                       
+3   J10MM            J10MM               J1, J2, J3                
+1   OUTLINE-SINGLE-R OUTLINE-SINGLE-R    U$2                       

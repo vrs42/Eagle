@@ -1,0 +1,6 @@
+Floppy Controller for ConsoleEmu Project
+<UL>
+<LI><b>core09gnd</b> is a copy of the 6809E CPU core, used as a starting point
+to get the board dimensions and connectors in the right place.</LI>
+<LI><b>fdc</b> is my Eagle drawing of Henk's floppy disk controller
+prototype.</LI>

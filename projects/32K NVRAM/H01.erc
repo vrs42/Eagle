@@ -1,0 +1,24 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/32K-NVRAM/H01.sch at 12/11/2003 09:06:02p
+
+WARNING: Sheet 1/1: POWER Pin IC1 VSS connected to GND
+WARNING: Only 1 Pin on net BTP2
+WARNING: Only 1 Pin on net MBODD_P
+WARNING: Only 1 Pin on net MCBMB08(0)
+WARNING: Only 1 Pin on net MCBMB09(0)
+WARNING: Only 1 Pin on net MCBMB10(0)
+WARNING: Only 1 Pin on net MCBMB11(0)
+WARNING: Only 1 Pin on net MEM08
+WARNING: Only 1 Pin on net MEM09
+WARNING: Only 1 Pin on net MEM10
+WARNING: Only 1 Pin on net MEM11
+WARNING: Only 1 Pin on net MEMDONE(1)
+WARNING: Only 1 Pin on net MEMSTART(0)
+WARNING: Only 1 Pin on net MEM_P
+WARNING: Only 1 Pin on net STROBE(0)
+
+Board and schematic are consistent
+
+    0 errors
+   15 warnings

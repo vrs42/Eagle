@@ -1,0 +1,19 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/XG021/G021dec.sch at  1/15/2008 09:37:07p
+
+WARNING: Sheet 1/1: POWER Pin E4 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin E4 V- connected to -6.2VA
+WARNING: Sheet 1/1: POWER Pin E1 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin E1 V- connected to -6.2VA
+WARNING: Sheet 1/1: POWER Pin E5 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin E5 V- connected to -6.2VB
+WARNING: Sheet 1/1: POWER Pin E2 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin E2 V- connected to -6.2VB
+ERROR: 2 OUTPUT Pins on net C1
+ERROR: 2 OUTPUT Pins on net S1
+
+Board and schematic are consistent
+
+    2 errors
+    8 warnings

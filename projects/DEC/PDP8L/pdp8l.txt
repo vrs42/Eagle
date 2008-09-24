@@ -1,0 +1,4327 @@
+Netlist
+
+Exported from pdp8l.brd at  1/03/2008 04:33:19p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Net      Part     Pad
+
+(IOT+OPR)\ C09      N2
+         C11      F1
+         D12      F2
+
++3V(1)   C02      J1
+         C02      M1
+         C02      U1
+         C04      C1
+
++3V(2)   C05      U1
+         C06      D1
+         C06      F2
+         C06      K2
+
++3V(3)   C05      V1
+         C08      D1
+         C08      F2
+         C08      K1
+         C08      R1
+         C08      U2
+
++3V(4)   D10      A1
+         D10      N2
+         D10      R1
+         D10      U2
+         D11      A1
+         D11      L2
+         D11      U1
+
++3V(5)   C10      F2
+         C10      H2
+         C10      M1
+         C10      N2
+         C10      U1
+
++3V(6)   A09      U1
+         A10      B1
+         A10      E2
+         A10      H1
+         A10      H2
+
++3V(7)   B09      U1
+         B10      D2
+         B10      R2
+         B10      S2
+
++3V(8)   D09      D1
+         D09      D2
+         D09      E2
+         D09      N1
+         D09      P1
+         D11      V1
+
++3V(9)   A09      V1
+         A12      H2
+         A12      N2
+
++3V(10)  B08      K2
+         B08      L2
+         B08      U1
+
++3V(11)  B09      V1
+         B11      A1
+         B11      K2
+         B11      N2
+
++3V(12)  B08      V1
+         B10      A1
+         B10      C1
+         B10      P1
+
++3V(13)  C14      R1
+         C25      A1
+         D16      D1
+         D17      V1
+         D25      A1
+
++3V(15)  C31      N1
+         C31      N2
+         D31      F2
+         D31      J1
+         D31      S2
+
++3V(16)  C32      D1
+         D32      R1
+
++3V(17)  B14      U1
+         B14      U2
+
++3V(18)  A08      R1
+         A08      U1
+
++5V(1)   A28A     F2
+
++5V(2)   A28A     H2
+
++5V(3)   A28A     J2
+
++5V(4)   A28A     K2
+
++5V(5)   A28A     L2
+
++5V(6)   A28A     M2
+
+-15V     A17      B2
+         A18      B2
+         A19      B2
+         A20      B2
+         B18      B2
+         B19      B2
+         B20      B2
+         C34      B2
+         D33      B2
+
+3CYCLE   A34      V2
+         D12      P2
+
+A        AB30     BS1
+         C34      P2
+
+A01B2    A01      B2
+         A28A     B2
+
+A01V1    A01      V1
+         A28A     N2
+
+AC00     AB07     BA1
+         C14      L1
+         D27      A1
+
+AC00\    A01      J2
+         AB07     BB1
+         B14      F1
+
+AC01     AB07     AV1
+         D27      B1
+
+AC01\    A01      L2
+         AB07     AV2
+         B14      H1
+
+AC02     AB06     BA1
+         D27      F1
+
+AC02\    A01      L1
+         AB06     BB1
+         B14      J1
+
+AC03     AB06     AV1
+         D27      H1
+
+AC03\    A01      K1
+         AB06     AV2
+         B14      K1
+
+AC04     AB05     BA1
+         AB31     AH1
+         C31      P2
+         D27      M1
+
+AC04\    AB05     BB1
+         B01      D2
+         B14      K2
+
+AC05     AB05     AV1
+         AB31     AH2
+         C31      R2
+         D27      N1
+
+AC05\    AB05     AV2
+         B01      E2
+         B14      L2
+
+AC06     AB04     BA1
+         AB31     AF1
+         C31      L2
+         D27      D2
+
+AC06\    AB04     BB1
+         B01      J2
+         B14      M2
+
+AC07     AB04     AV1
+         AB31     AF2
+         C31      M2
+         D27      E2
+
+AC07\    AB04     AV2
+         B01      K2
+         B14      N2
+
+AC08     AB03     BA1
+         AB31     AE1
+         C31      U2
+         D27      K2
+
+AC08\    AB03     BB1
+         B01      U2
+         C13      M1
+
+AC09     AB03     AV1
+         AB31     AE2
+         C31      S2
+         D27      L2
+
+AC09\    AB03     AV2
+         B01      V2
+         C13      N1
+
+AC10     AB02     BA1
+         AB31     AD1
+         C31      T2
+         D27      R2
+
+AC10\    AB02     BB1
+         C01      H1
+         C13      P1
+
+AC11     AB02     AV1
+         AB31     AD2
+         C31      U1
+         D27      S2
+
+AC11\    AB02     AV2
+         C01      F1
+         C13      R1
+
+AC\_ENABLE A08      L1
+         AB02     BJ2
+         AB03     BJ2
+         AB04     BJ2
+         AB05     BJ2
+         AB06     BJ2
+         AB07     BJ2
+
+AC_CLEAR A33      S1
+         D13      F1
+
+AC_CLEAR\ D09      K2
+         D13      H1
+
+AC_ENABLE A09      L1
+         AB02     BH2
+         AB03     BH2
+         AB04     BH2
+         AB05     BH2
+         AB06     BH2
+         AB07     BH2
+
+AC_LOAD  AB02     AU1
+         AB03     AU1
+         AB04     AU1
+         AB05     AU1
+         AB06     AU1
+         AB07     AU1
+         B08      V2
+         B11      L2
+
+ADDER00  AB02     AJ2
+         AB06     AB1
+         AB07     AE2
+         B10      K1
+
+ADDER01  AB06     AC1
+         AB07     AF1
+         B10      M1
+
+ADDER02  AB05     AB1
+         AB06     AE2
+         AB07     AH2
+
+ADDER03  AB05     AC1
+         AB06     AF1
+         AB07     AJ2
+
+ADDER04  AB04     AB1
+         AB05     AE2
+         AB06     AH2
+
+ADDER05  AB04     AC1
+         AB05     AF1
+         AB06     AJ2
+
+ADDER06  AB03     AB1
+         AB04     AE2
+         AB05     AH2
+
+ADDER07  AB03     AC1
+         AB04     AF1
+         AB05     AJ2
+
+ADDER08  AB02     AB1
+         AB03     AE2
+         AB04     AH2
+
+ADDER09  AB02     AC1
+         AB03     AF1
+         AB04     AJ2
+
+ADDER10  AB02     AE2
+         AB03     AH2
+         B10      E1
+
+ADDER11  AB02     AF1
+         AB03     AJ2
+         AB07     AB1
+         B10      B1
+
+ADDER_L\ AB02     AH2
+         AB07     AC1
+         B10      H1
+         B10      V2
+
+ADD\     A08      K2
+         A09      K1
+         C12      D1
+
+ADD_ACCEPTED\ C27      R2
+         D10      E1
+
+AND      A11      P1
+         C07      E1
+
+AND\     C07      D1
+         C09      H2
+         C12      N2
+
+AND_ENABLE AB02     AA1
+         AB03     AA1
+         AB04     AA1
+         AB05     AA1
+         AB06     AA1
+         AB07     AA1
+         B08      L1
+
+AND_ENABLE\ A09      F1
+         A11      U1
+         B08      F1
+         B08      H1
+         B08      J1
+         B08      K1
+
+A\       AB30     BP2
+         C34      R2
+
+B        AB30     BU2
+         C34      T2
+
+B01V1    A28A     P2
+         B01      V1
+
+B29B2    AB29     BB2
+         B28      B2
+
+BEMA     B35      T2
+         C10      T2
+         C26      P2
+
+BREAK    D10      V2
+         D11      H2
+
+BREAK\   C07      U2
+         C26      J2
+         C27      L2
+         D01      L2
+         D10      V1
+
+BREAK_OK D11      M1
+         D12      L2
+         D12      R2
+         D13      E1
+
+BREAK_OK\ C11      B1
+         C11      J2
+         D10      C1
+         D13      D1
+
+BRK_RQST\ B11      T2
+         C36      K2
+         D29      T2
+
+BTP2     B34      T2
+         D05      J1
+
+BTP3     B36      H1
+         D07      J1
+
+B\       AB30     BR1
+         C34      S2
+
+B_BK     A10      L2
+         A12      S2
+         C07      V2
+         C11      M2
+
+B_CA     A10      L1
+         A12      M2
+         D02      V2
+
+B_EXECUTE A10      D2
+         A10      K2
+         A11      S1
+         A12      E2
+         A12      N1
+         A13      C1
+         A13      E2
+         B09      L1
+         B10      F2
+         C11      S2
+         C12      C1
+         C12      L2
+         C14      E2
+         D09      R2
+
+B_FETCH  A13      F1
+         B09      E1
+         B10      K2
+         C09      P2
+         C10      D1
+         C10      K1
+         C11      H1
+         C11      R1
+         C13      C1
+         C14      R2
+         D12      J1
+
+B_INHIBIT A23      A1
+         A24      A1
+         B23      A1
+         B24      A1
+         D17      J2
+
+B_MEM_ENABLE A17      T2
+         A18      T2
+         A19      T2
+         A20      T2
+         A23      E2
+         A23      N2
+         A24      E2
+         B18      T2
+         B19      T2
+         B20      T2
+         B23      E2
+         B23      N2
+         B24      E2
+         B24      N2
+         C18      D2
+         C19      D2
+         C23      D2
+         C24      D2
+         C25      E2
+         C25      N2
+         D17      E1
+         D17      L1
+         D18      D2
+         D19      D2
+         D23      D2
+         D24      D2
+         D25      E2
+         D25      N2
+
+B_SET    A35      C1
+         D10      T2
+         D12      S1
+
+B_WC     B10      P2
+         D02      T2
+
+C01V1    A28A     R2
+         C01      V1
+
+CARRYOUT0 A13      F2
+         B10      U1
+         B12      D2
+         D11      E2
+
+CARRYOUT0\ AB07     BK2
+         B10      U2
+         B12      C1
+
+CARRYOUT6\ AB04     BK2
+         AB05     BJ1
+
+CARRY_INSERT AB02     BJ1
+         B13      N2
+
+CA_INCREMENT A12      L2
+         B33      M2
+         C35      M2
+
+CLOCK1   AB29     AU2
+         AB30     BS2
+
+CLOCK_SCALE2 D32      P2
+         D32      T2
+
+CLR_PARITY_ERROR\ A14      M1
+         B15      J2
+
+CONTROL_IOT B12      R2
+         C13      M2
+
+CURRENT_ADDR\ C26      H2
+         D01      K2
+         D02      U2
+         D10      U1
+         D12      L1
+         D12      R1
+
+CYCLE    C15      E2
+         D16      H2
+
+CYC_DONE C15      J2
+         C15      M1
+         D15      F1
+         D16      H1
+         D16      L2
+         D16      N1
+
+D01V1    A28A     S2
+         D01      V1
+
+DATA00   A34      H1
+         AB07     BM2
+
+DATA01   A34      K1
+         AB07     BP2
+
+DATA02   A34      M1
+         AB06     BM2
+
+DATA03   A34      P1
+         AB06     BP2
+
+DATA04   A34      S1
+         AB05     BM2
+
+DATA05   A34      U1
+         AB05     BP2
+
+DATA06   A34      F2
+         AB04     BM2
+
+DATA07   A34      J2
+         AB04     BP2
+
+DATA08   A34      L2
+         AB03     BM2
+
+DATA09   A34      N2
+         AB03     BP2
+
+DATA10   A34      R2
+         AB02     BM2
+
+DATA11   A34      T2
+         AB02     BP2
+
+DATA_ADD00 AB07     BS1
+         D11      S1
+
+DATA_ADD01 AB07     BU1
+         D11      S2
+
+DATA_ADD02 AB06     BS1
+         D11      V2
+
+DATA_ADD03 AB06     BU1
+         B12      K1
+
+DATA_ADD04 AB05     BS1
+         D13      B1
+
+DATA_ADD05 AB05     BU1
+         D13      K1
+
+DATA_ADD06 AB04     BS1
+         D13      R2
+
+DATA_ADD07 AB04     BU1
+         D13      T2
+
+DATA_ADD08 AB03     BS1
+         D13      V2
+
+DATA_ADD09 A34      B1
+         AB03     BU1
+
+DATA_ADD10 A34      D2
+         AB02     BS1
+
+DATA_ADD11 A34      E1
+         AB02     BU1
+
+DATA_ADD_EN A09      V2
+         AB02     BT2
+         AB03     BT2
+         AB04     BT2
+         AB05     BT2
+         AB06     BT2
+         AB07     BT2
+
+DATA_ENABLE A09      S1
+         AB02     BL1
+         AB03     BL1
+         AB04     BL1
+         AB05     BL1
+         AB06     BL1
+         AB07     BL1
+
+DATA_IN  A10      M2
+         B32      M2
+         C11      N2
+         C36      M2
+
+DCA      A10      J2
+         C07      M1
+         D09      S2
+
+DCA\     C07      L1
+         C09      M2
+         C12      R2
+
+DEFER    A10      C1
+         A10      N1
+         A12      C1
+         A13      N1
+         C08      S1
+         C15      P1
+
+DEFER\   C08      U1
+         D01      E2
+         D12      D1
+
+DOUBLE_LEFT_ROTATE AB02     AH1
+         AB03     AH1
+         AB04     AH1
+         AB05     AH1
+         AB06     AH1
+         AB07     AH1
+         B09      V2
+         B10      N1
+
+DOUBLE_RIGHT_ROTATE AB02     AD1
+         AB03     AD1
+         AB04     AD1
+         AB05     AD1
+         AB06     AD1
+         AB07     AD1
+         B09      J2
+         B10      F1
+
+D_SET    C07      R2
+         C08      P1
+
+D_SET\   B13      A1
+         C07      P2
+         C09      S2
+         C11      D1
+         C11      H2
+
+EA\      B34      B1
+         C13      R2
+         C26      D2
+         D16      C1
+
+EMA\     A01      F1
+         B35      V2
+
+ENABLE\  AB29     AK2
+         AB30     BK2
+
+EXECUTE  B09      F1
+         B09      H1
+         B09      J1
+         B09      K1
+         C08      V2
+
+EXECUTE\ C01      U2
+         C08      V1
+
+E_SET    C07      S2
+         C08      T2
+         C09      V1
+
+E_SET\   B13      B1
+         C07      T2
+         C11      C1
+         C11      D2
+         D17      T2
+         D17      U2
+
+FEED_HOLE AB30     BM2
+         C34      N2
+
+FETCH    A12      F1
+         B09      A1
+         B09      B1
+         B09      C1
+         B09      D1
+         C08      P2
+
+FETCH\   C01      P2
+         C08      R2
+
+F_SET    B13      E1
+         C07      N2
+         C08      M2
+         C28      F2
+         D09      F1
+
+F_SET\   C07      M2
+         C11      E1
+         D17      R2
+         D17      S2
+
+GND      A01      C2
+         A01      T1
+         A08      C2
+         A08      T1
+         A09      C2
+         A09      T1
+         A10      C2
+         A10      J1
+         A10      T1
+         A11      C2
+         A11      T1
+         A12      C2
+         A12      T1
+         A13      C2
+         A13      T1
+         A14      C2
+         A14      T1
+         A15      C2
+         A15      T1
+         A16      C2
+         A16      T1
+         A17      C2
+         A17      L1
+         A17      M1
+         A17      T1
+         A18      C2
+         A18      T1
+         A19      C2
+         A19      T1
+         A20      C2
+         A20      T1
+         A23      C2
+         A23      T1
+         A24      C2
+         A24      D1
+         A24      L1
+         A24      M2
+         A24      N2
+         A24      T1
+         A25      E2
+         A28A     C2
+         A28A     D2
+         A28A     E2
+         A32      C2
+         A32      T1
+         A33      C2
+         A33      T1
+         A34      C2
+         A34      T1
+         A35      C2
+         A35      T1
+         A36      C2
+         A36      T1
+         AB02     AB2
+         AB02     AC2
+         AB02     AT1
+         AB02     BB2
+         AB02     BC2
+         AB02     BD1
+         AB02     BE2
+         AB02     BF1
+         AB02     BF2
+         AB02     BH1
+         AB02     BN1
+         AB02     BN2
+         AB02     BT1
+         AB03     AB2
+         AB03     AC2
+         AB03     AT1
+         AB03     BB2
+         AB03     BC2
+         AB03     BD1
+         AB03     BE2
+         AB03     BF1
+         AB03     BF2
+         AB03     BH1
+         AB03     BN1
+         AB03     BN2
+         AB03     BT1
+         AB04     AB2
+         AB04     AC2
+         AB04     AT1
+         AB04     BB2
+         AB04     BC2
+         AB04     BD1
+         AB04     BE2
+         AB04     BF1
+         AB04     BF2
+         AB04     BH1
+         AB04     BN1
+         AB04     BN2
+         AB04     BT1
+         AB05     AB2
+         AB05     AC2
+         AB05     AT1
+         AB05     BB2
+         AB05     BC2
+         AB05     BD1
+         AB05     BE2
+         AB05     BF1
+         AB05     BF2
+         AB05     BH1
+         AB05     BN1
+         AB05     BN2
+         AB05     BT1
+         AB06     AB2
+         AB06     AC2
+         AB06     AT1
+         AB06     BB2
+         AB06     BC2
+         AB06     BD1
+         AB06     BE2
+         AB06     BF1
+         AB06     BF2
+         AB06     BH1
+         AB06     BN1
+         AB06     BN2
+         AB06     BT1
+         AB07     AB2
+         AB07     AC2
+         AB07     AT1
+         AB07     BB2
+         AB07     BC2
+         AB07     BD1
+         AB07     BE2
+         AB07     BF1
+         AB07     BF2
+         AB07     BH1
+         AB07     BN1
+         AB07     BN2
+         AB07     BT1
+         AB29     AC2
+         AB29     BC2
+         AB30     AC2
+         AB30     AT1
+         AB30     BC2
+         AB30     BT1
+         AB31     AC2
+         AB31     AT1
+         AB31     BC2
+         AB31     BT1
+         B01      C2
+         B01      T1
+         B08      C2
+         B08      T1
+         B09      C2
+         B09      T1
+         B10      C2
+         B10      T1
+         B11      C2
+         B11      T1
+         B12      C2
+         B12      T1
+         B13      C2
+         B13      T1
+         B14      C2
+         B14      T1
+         B15      C2
+         B15      T1
+         B16      C2
+         B16      T1
+         B17      C2
+         B17      J1
+         B17      T1
+         B18      C2
+         B18      T1
+         B19      C2
+         B19      T1
+         B20      C2
+         B20      T1
+         B23      C2
+         B23      T1
+         B24      C2
+         B24      T1
+         B26      E2
+         B28      C2
+         B28      D2
+         B28      E2
+         B28      F2
+         B28      H2
+         B32      A1
+         B32      C1
+         B32      C2
+         B32      F1
+         B32      F2
+         B32      J2
+         B32      K1
+         B32      L2
+         B32      N1
+         B32      N2
+         B32      R1
+         B32      R2
+         B32      T1
+         B32      U2
+         B33      A1
+         B33      C1
+         B33      C2
+         B33      F1
+         B33      F2
+         B33      J2
+         B33      K1
+         B33      L2
+         B33      N1
+         B33      N2
+         B33      R1
+         B33      R2
+         B33      T1
+         B33      U2
+         B34      A1
+         B34      C1
+         B34      C2
+         B34      F1
+         B34      F2
+         B34      J2
+         B34      K1
+         B34      L2
+         B34      N1
+         B34      N2
+         B34      R1
+         B34      R2
+         B34      T1
+         B34      U2
+         B35      A1
+         B35      C1
+         B35      C2
+         B35      F1
+         B35      F2
+         B35      J2
+         B35      K1
+         B35      L2
+         B35      N1
+         B35      N2
+         B35      R1
+         B35      R2
+         B35      T1
+         B35      U2
+         B36      A1
+         B36      C1
+         B36      C2
+         B36      F1
+         B36      F2
+         B36      J2
+         B36      K1
+         B36      L2
+         B36      N1
+         B36      N2
+         B36      R1
+         B36      R2
+         B36      T1
+         B36      U2
+         C01      C2
+         C01      T1
+         C02      C2
+         C02      T1
+         C04      C2
+         C04      D2
+         C04      E2
+         C04      J1
+         C04      M2
+         C04      P1
+         C04      T1
+         C04      T2
+         C05      C2
+         C05      T1
+         C06      C2
+         C06      J1
+         C06      T1
+         C07      C2
+         C07      T1
+         C08      C2
+         C08      T1
+         C09      C2
+         C09      T1
+         C10      C2
+         C10      T1
+         C11      C2
+         C11      T1
+         C12      C2
+         C12      T1
+         C13      C2
+         C13      T1
+         C14      C2
+         C14      T1
+         C15      C2
+         C15      T1
+         C16      C2
+         C16      T1
+         C17      C2
+         C18      C2
+         C19      C2
+         C23      C2
+         C24      C2
+         C25      C2
+         C25      T1
+         C26      C2
+         C27      C1
+         C27      C2
+         C27      E2
+         C27      F2
+         C27      J1
+         C27      M2
+         C27      P1
+         C27      T1
+         C27      T2
+         C27      U1
+         C27      V1
+         C28      C2
+         C28      T1
+         C29      C2
+         C30      C2
+         C31      C2
+         C31      T1
+         C32      C2
+         C32      T1
+         C33      C2
+         C34      C1
+         C34      T1
+         C35      A1
+         C35      C1
+         C35      C2
+         C35      F1
+         C35      F2
+         C35      J2
+         C35      K1
+         C35      L2
+         C35      N1
+         C35      N2
+         C35      R1
+         C35      R2
+         C35      T1
+         C35      U2
+         C36      A1
+         C36      C1
+         C36      C2
+         C36      F1
+         C36      F2
+         C36      J2
+         C36      K1
+         C36      L2
+         C36      N1
+         C36      N2
+         C36      R1
+         C36      R2
+         C36      T1
+         C36      U2
+         CD03     AC2
+         CD03     BC2
+         D01      C2
+         D01      T1
+         D02      C2
+         D02      T1
+         D04      C2
+         D04      T1
+         D05      C2
+         D05      T1
+         D06      C2
+         D06      T1
+         D07      C2
+         D07      T1
+         D08      C2
+         D08      T1
+         D09      C2
+         D09      T1
+         D10      C2
+         D10      T1
+         D11      C2
+         D11      T1
+         D12      C2
+         D12      T1
+         D13      C2
+         D13      T1
+         D14      C2
+         D14      T1
+         D15      C2
+         D15      T1
+         D16      C2
+         D16      E2
+         D16      J1
+         D16      M2
+         D16      P1
+         D16      T1
+         D16      T2
+         D17      C2
+         D17      T1
+         D18      C2
+         D19      C2
+         D23      C2
+         D24      C2
+         D25      C2
+         D25      T1
+         D27      C1
+         D27      C2
+         D27      F2
+         D27      J1
+         D27      M2
+         D27      P1
+         D27      T1
+         D27      T2
+         D27      U1
+         D27      V1
+         D28      C1
+         D28      C2
+         D28      F2
+         D28      J1
+         D28      M2
+         D28      P1
+         D28      T1
+         D28      T2
+         D28      U1
+         D28      V1
+         D29      A1
+         D29      C1
+         D29      C2
+         D29      F1
+         D29      F2
+         D29      J2
+         D29      K1
+         D29      L2
+         D29      N1
+         D29      N2
+         D29      R1
+         D29      R2
+         D29      T1
+         D29      U2
+         D30      A1
+         D30      C1
+         D30      C2
+         D30      F1
+         D30      F2
+         D30      J2
+         D30      K1
+         D30      L2
+         D30      N1
+         D30      N2
+         D30      R1
+         D30      R2
+         D30      T1
+         D30      U2
+         D31      C2
+         D31      T1
+         D32      C2
+         D32      D1
+         D32      T1
+         D33      C2
+         D34      A1
+         D34      C1
+         D34      C2
+         D34      F1
+         D34      F2
+         D34      J2
+         D34      K1
+         D34      L2
+         D34      N1
+         D34      N2
+         D34      R1
+         D34      R2
+         D34      T1
+         D34      U2
+         D35      A1
+         D35      C1
+         D35      C2
+         D35      F1
+         D35      F2
+         D35      J2
+         D35      K1
+         D35      L2
+         D35      N1
+         D35      N2
+         D35      R1
+         D35      R2
+         D35      T1
+         D35      U2
+         D36      A1
+         D36      C1
+         D36      C2
+         D36      F1
+         D36      F2
+         D36      J2
+         D36      K1
+         D36      L2
+         D36      N1
+         D36      N2
+         D36      R1
+         D36      R2
+         D36      T1
+         D36      U2
+
+GO\      B08      T2
+         B13      R2
+         C08      N2
+         D12      C1
+
+HSR_RUN\ AB29     BS2
+         AB30     AK1
+
+HZ880    C33      J2
+         C33      P2
+
+ILLEGAL_REF\ A13      D1
+         C02      D2
+         C06      V2
+         D01      F2
+
+INHIBIT  C15      H1
+         D16      P2
+
+INHIBIT\ D16      R2
+         D17      D2
+         D17      E2
+         D17      F2
+         D17      H2
+         D17      P1
+         D17      R1
+
+INITIALIZE C05      N1
+         C27      S2
+         D02      M2
+         D31      E2
+         D32      F2
+
+INITIALIZE\ AB30     BP1
+         AB31     AS2
+         C06      A1
+         C06      N2
+         C30      U2
+         C30      V2
+         D02      N2
+
+INPUT_BUS00 AB07     BK1
+         D13      F2
+
+INPUT_BUS01 AB07     BM1
+         D13      J2
+
+INPUT_BUS02 AB06     BK1
+         D13      L2
+
+INPUT_BUS03 AB06     BM1
+         D13      N2
+
+INPUT_BUS04 A32      E1
+         AB05     BK1
+
+INPUT_BUS05 A32      J2
+         AB05     BM1
+
+INPUT_BUS06 A32      L1
+         AB04     BK1
+
+INPUT_BUS07 A32      P2
+         AB04     BM1
+
+INPUT_BUS08 A32      S1
+         AB03     BK1
+
+INPUT_BUS09 A32      V2
+         AB03     BM1
+
+INPUT_BUS10 A33      E1
+         AB02     BK1
+
+INPUT_BUS11 A33      J2
+         AB02     BM1
+
+INT_DELAY B11      J2
+         C13      D2
+
+INT_ENABLE B11      F1
+         B11      F2
+
+INT_ENABLE\ B11      E1
+         B11      E2
+         C01      S2
+
+INT_INHIBIT\ B36      L1
+         C13      F2
+         C26      E2
+
+INT_IO_BUS4\ A32      B1
+         A32      D1
+         AB30     AP2
+
+INT_IO_BUS5\ A32      E2
+         A32      H2
+         AB30     AS2
+
+INT_IO_BUS6\ A32      H1
+         A32      K1
+         AB30     AR1
+
+INT_IO_BUS7\ A32      L2
+         A32      N2
+         AB30     AN2
+
+INT_IO_BUS8\ A32      N1
+         A32      R1
+         AB30     AS1
+
+INT_IO_BUS9\ A32      S2
+         A32      U2
+         AB30     AP1
+
+INT_IO_BUS10\ A33      B1
+         A33      D1
+         AB30     AR2
+
+INT_IO_BUS11\ A33      E2
+         A33      H2
+         AB30     AN1
+
+INT_OK   B12      N2
+         B13      U2
+         C15      L2
+         D12      J2
+
+INT_OK\  B12      M2
+         C09      T2
+         C13      J1
+         C13      J2
+
+INT_RQST A33      P2
+         C28      D2
+
+INT_SKIP_EN\ A08      S2
+         A14      T2
+         C11      V2
+
+INT_STROBE B11      H1
+         C05      F1
+         C13      K2
+         C14      P2
+         D02      R1
+
+INT_SYNC B11      M1
+         C13      E2
+
+IN_STOP2\ D32      R2
+         D32      V2
+
+IOP1     AB30     AU2
+         AB31     AR2
+         B15      H1
+         D02      F2
+         D31      H2
+         D32      D2
+
+IOP1\    A08      P1
+         C29      H2
+         C29      J2
+         D02      E2
+         D04      H2
+
+IOP2     A36      M2
+         AB30     AV2
+         AB31     AR1
+         D02      J2
+         D31      D2
+         D32      J2
+
+IOP2\    A08      N1
+         C29      N2
+         C29      P2
+         D02      H2
+         D04      M2
+
+IOP4     AB30     BK1
+         AB31     AP2
+         B15      A1
+         B15      B1
+         C31      S1
+         C32      L2
+         D02      L2
+
+IOP4\    A08      M1
+         C29      U2
+         C29      V2
+         D02      K2
+         D04      S2
+
+IOP_A    C06      E1
+         D04      E2
+
+IOP_A\   C06      F1
+         C06      M2
+
+IOP_B    C06      R2
+         D04      K2
+
+IOP_B\   C06      E2
+         C06      P2
+
+IOP_C    C05      J1
+         C06      C1
+         C06      J2
+         D04      P2
+
+IOP_C\   C05      J2
+         C06      H2
+
+IOT      B14      M1
+         C05      E2
+         C07      U1
+
+IOT\     C05      B1
+         C07      V1
+         C11      S1
+
+IO_ENABLE A08      S1
+         A13      J2
+         A35      D1
+         AB02     BL2
+         AB03     BL2
+         AB04     BL2
+         AB05     BL2
+         AB06     BL2
+         AB07     BL2
+         B13      M1
+         C12      U2
+         D09      J2
+
+IO_END\  C05      E1
+         C05      K1
+         D02      P2
+
+IO_ON    C06      L1
+         D04      D2
+         D04      J2
+         D04      N2
+
+IO_PC_ENABLE\ A08      U2
+         A14      U2
+         C28      D1
+
+IO_RECYCLE\ C05      K2
+         C05      P1
+
+IO_ROT\  C06      B1
+         C06      D2
+         C06      L2
+         D08      J1
+
+IO_SKIP  A13      K2
+         A33      L1
+
+IO_START\ C04      K1
+         C05      F2
+         C05      R1
+
+IO_STROBE B13      L1
+         C05      H1
+         C05      H2
+         C06      H1
+         C12      T2
+         D08      F1
+
+IR0      C08      F1
+         C09      K1
+         C09      P1
+         C10      A1
+         C10      F1
+         C11      M1
+         D12      D2
+
+IR0\     C01      R2
+         C08      E1
+         C09      A1
+         C09      D2
+         C09      E1
+         C09      J2
+         C15      R1
+
+IR1      C08      H2
+         C09      F1
+         C09      K2
+         C10      B1
+         C10      H1
+         C11      N1
+         D12      E2
+
+IR1\     C01      V2
+         C08      J2
+         C09      B1
+         C09      E2
+         C09      L1
+         C09      R1
+
+IR2      C08      L1
+         C09      C1
+         C09      L2
+         C09      S1
+         C10      C1
+         C10      J1
+
+IR2\     C08      M1
+         C09      F2
+         C09      H1
+         C09      M1
+         C11      P1
+         D01      D2
+
+ISZ      A12      F2
+         A13      H2
+         C07      K1
+
+ISZ\     C07      J1
+         C09      J1
+
+JMP      A10      D1
+         A13      P1
+         C07      S1
+         C13      B1
+
+JMP\     A10      P1
+         C07      R1
+         C09      U1
+         C11      J1
+         C15      R2
+         D12      E1
+
+JMP_DIRECT\ A09      K2
+         A09      L2
+         B12      N1
+         C13      E1
+
+JMS      A10      F2
+         A12      P1
+         A13      B1
+         B10      H2
+         C07      P1
+         C11      U2
+
+JMS\     C07      N1
+         C09      N1
+         C15      P2
+
+KCC\     C32      E2
+         C32      V2
+
+KEY_CONT C02      R2
+         D02      H1
+
+KEY_CONT\ B08      A1
+         C05      R2
+         D01      P2
+         D01      S1
+         D02      F1
+
+KEY_DP   A10      P2
+         A10      R2
+         A10      S2
+         C12      P1
+         D02      D2
+
+KEY_DP\  C02      D1
+         D01      V2
+         D02      C1
+
+KEY_EX+DP A12      K2
+         B10      M2
+         C02      F1
+         D02      D1
+
+KEY_EX+DP\ C02      H2
+         D01      P1
+         D02      E1
+         D04      M1
+
+KEY_EX\  C02      E1
+         D01      U2
+
+KEY_LA   B13      D2
+         D02      B1
+         D17      M2
+         D17      N2
+
+KEY_LA+EX+DP A13      L1
+         C02      K2
+         C14      P1
+         D09      H1
+
+KEY_LA+EX+DP\ C14      S1
+         C28      E2
+
+KEY_LA\  C02      J2
+         C05      U2
+         D01      S2
+         D01      U1
+         D02      A1
+
+KEY_PROTECT\ A01      A1
+         D02      V1
+
+KEY_SS+I_REF C02      F2
+         D09      M1
+
+KEY_SS\  C02      E2
+         D01      T2
+
+KEY_ST   A12      U2
+         C02      C1
+         C02      U2
+         D12      B1
+
+KEY_ST+EX+DP C12      M1
+         D04      N1
+
+KEY_STOP C02      K1
+         D09      E1
+
+KEY_STOP\ C02      H1
+         D01      N2
+
+KEY_ST\  C02      A1
+         D01      R1
+         D01      R2
+         D04      K1
+
+LEFT_SHIFT AB02     AF2
+         AB03     AF2
+         AB04     AF2
+         AB05     AF2
+         AB06     AF2
+         AB07     AF2
+         B09      P2
+         B10      L1
+
+LINK     A10      S1
+         B11      P2
+         C14      L2
+
+LINK\    A01      E1
+         A10      V1
+         B11      R2
+
+LOCK     C15      H2
+         D16      V2
+
+LOCK\    C13      S2
+         C13      T2
+         C15      L1
+         D16      V1
+
+L\_ENABLE A10      U2
+         B12      H1
+
+L_ENABLE A10      U1
+         A12      V2
+
+MA00     AB07     AM2
+         C10      N1
+         C23      E2
+
+MA00\    A01      M2
+         A35      J1
+         AB07     AM1
+         B14      A1
+         C24      E2
+
+MA01     AB07     AL2
+         C10      P1
+         C23      H2
+         C24      H2
+
+MA01\    A01      J1
+         A35      L1
+         AB07     AL1
+         B14      B1
+
+MA02     AB06     AM2
+         C10      R1
+         C23      F2
+         C24      F2
+
+MA02\    A01      P2
+         A35      N1
+         AB06     AM1
+         B14      C1
+
+MA03     AB06     AL2
+         C10      R2
+         D19      E2
+
+MA03\    A01      S2
+         A35      R1
+         AB06     AL1
+         B14      D1
+         D18      E2
+
+MA04     AB05     AM2
+         C10      S2
+         D18      H2
+         D19      H2
+
+MA04\    A01      U2
+         A35      V1
+         AB05     AM1
+         B14      D2
+         B23      D2
+
+MA05     AB05     AL2
+         D18      F2
+         D19      F2
+
+MA05\    A35      E2
+         AB05     AL1
+         B01      H2
+         B14      E2
+         B23      D1
+
+MA06     AB04     AM2
+         C18      E2
+
+MA06\    A35      H2
+         AB04     AM1
+         B01      M2
+         B14      F2
+         B23      M2
+         C19      E2
+
+MA07     AB04     AL2
+         C18      H2
+         C19      H2
+
+MA07\    A35      K2
+         AB04     AL1
+         B01      P2
+         B14      H2
+         B23      L1
+
+MA08     A12      D1
+         AB03     AM2
+         C18      F2
+         C19      F2
+
+MA08\    A35      M2
+         AB03     AM1
+         B01      T2
+
+MA09     AB03     AL2
+         D24      E2
+
+MA09\    A35      P2
+         AB03     AL1
+         C01      E1
+         D23      E2
+
+MA10     AB02     AM2
+         D23      H2
+         D24      H2
+
+MA10\    A35      S2
+         AB02     AM1
+         C01      J1
+
+MA11     AB02     AL2
+         D23      F2
+         D24      F2
+
+MA11\    A35      U2
+         AB02     AL1
+         C01      N2
+
+MANUAL_PRESET\ B08      E1
+         B11      K1
+         B11      U2
+         C04      D1
+         C04      K2
+         C06      U2
+         C08      K2
+         D10      K2
+         D11      E1
+
+MA_ENABLE(0-4) A08      J2
+         AB05     BP1
+         AB06     BP1
+         AB06     BR2
+         AB07     BP1
+         AB07     BR2
+
+MA_ENABLE(5-11) A09      J2
+         AB02     BP1
+         AB02     BR2
+         AB03     BP1
+         AB03     BR2
+         AB04     BP1
+         AB04     BR2
+         AB05     BR2
+
+MA_LOAD  AB02     AK1
+         AB03     AK1
+         AB04     AK1
+         AB05     AK1
+         AB06     AK1
+         AB07     AK1
+         B08      S1
+
+MB00     AB07     AT2
+         B16      E1
+         D28      A1
+
+MB00\    A01      K2
+         A23      D2
+         AB07     AU2
+         B16      A1
+
+MB01     AB07     AS2
+         B16      F1
+         D28      B1
+
+MB01\    A01      H1
+         A23      D1
+         AB07     AS1
+         B16      B1
+
+MB02     AB06     AT2
+         B16      H1
+         D28      F1
+
+MB02\    A01      N2
+         A23      M2
+         AB06     AU2
+         B16      C1
+
+MB03     AB06     AS2
+         B16      J1
+         C09      R2
+         C10      L2
+         D28      M1
+
+MB03\    A01      R2
+         A23      L1
+         A36      D2
+         AB06     AS1
+         AB30     BD2
+         AB31     BF2
+         B14      N1
+         B15      H2
+         B15      N2
+         B16      D1
+         C10      E2
+         C11      K1
+         C13      D1
+         C31      E2
+         C32      D2
+         D28      H1
+
+MB04     AB05     AT2
+         B17      P2
+         C12      H1
+         D09      V1
+         D28      D2
+
+MB04\    A01      T2
+         A36      E2
+         AB05     AU2
+         AB30     BE2
+         AB31     BD1
+         B14      P1
+         B15      F2
+         B15      M2
+         B17      K2
+         C31      E1
+         C32      E1
+         D09      H2
+         D09      S1
+         D28      N1
+
+MB05     A13      V1
+         A36      F2
+         AB05     AS2
+         B15      E2
+         B15      L2
+         B17      R2
+         C14      M1
+         D28      K2
+
+MB05\    A13      S1
+         AB05     AS1
+         AB30     BE1
+         AB31     BD2
+         B01      F2
+         B14      R1
+         B17      L2
+         C31      F2
+         C32      F1
+         D28      E2
+
+MB06     A14      F1
+         AB04     AT2
+         B13      J2
+         B17      S2
+         C31      F1
+         D09      U1
+         D28      R2
+
+MB06\    A36      H2
+         AB04     AU2
+         AB30     BF2
+         AB31     BE1
+         B01      L2
+         B14      R2
+         B15      D2
+         B15      K2
+         B17      M2
+         C32      H1
+         D09      U2
+         D28      L2
+
+MB07     A13      U2
+         AB04     AS2
+         AB31     BE2
+         B13      J1
+         B17      T2
+         C14      M2
+         C27      A1
+         C32      H2
+
+MB07\    A13      U1
+         A36      J2
+         AB04     AS1
+         AB30     BF1
+         B01      R2
+         B14      S2
+         B15      D1
+         B15      K1
+         B17      N2
+         C31      H2
+         D28      S2
+
+MB08     A11      D2
+         A11      E1
+         A13      R2
+         AB03     AT2
+         AB30     BH2
+         B16      P2
+         C27      F1
+         C32      J1
+
+MB08\    A11      K1
+         A13      M2
+         A36      K2
+         AB03     AU2
+         AB31     BF1
+         B01      S2
+         B14      T2
+         B15      C1
+         B15      J1
+         B16      K2
+         B24      D2
+         C27      B1
+         C31      J2
+
+MB09     A11      A1
+         A11      J2
+         AB03     AS2
+         B16      R2
+         C12      F2
+         C27      H1
+         D04      R2
+
+MB09\    A11      M1
+         AB03     AS1
+         B16      L2
+         B24      D1
+         C01      D1
+
+MB10     A11      C1
+         A11      F2
+         AB02     AT2
+         B16      S2
+         C27      M1
+         D04      L2
+         D09      A1
+
+MB10\    A11      H1
+         A11      L2
+         AB02     AU2
+         B16      M2
+         B24      M2
+         C01      K1
+         C14      T2
+
+MB11     A12      J1
+         AB02     AS2
+         B16      T2
+         C27      N1
+         D04      F2
+
+MB11\    AB02     AS1
+         B11      C1
+         B16      N2
+         B24      L1
+         C01      M2
+         C10      M2
+         C12      E2
+         C14      U2
+         D09      B1
+
+MB_LOAD  AB02     AR1
+         AB03     AR1
+         AB04     AR1
+         AB05     AR1
+         AB06     AR1
+         AB07     AR1
+         B08      P2
+
+MB_PARITY_ODD A24      D2
+         B17      K1
+
+MEM00    A15      E1
+         A18      A1
+         AB07     BR1
+         B35      D1
+         C16      C1
+         D13      R1
+
+MEM00\   A15      A1
+         C16      D2
+
+MEM01    A15      F1
+         A18      U2
+         AB07     BV2
+         B35      E1
+         C08      E2
+         C16      D1
+
+MEM01\   A15      B1
+         C16      E1
+
+MEM02    A15      H1
+         A19      A1
+         AB06     BR1
+         B35      H1
+         C08      J1
+         C16      E2
+
+MEM02\   A15      C1
+         C16      F2
+
+MEM03    A15      J1
+         A19      U2
+         AB06     BV2
+         B35      J1
+         C16      F1
+
+MEM03\   A15      D1
+         C16      H1
+
+MEM04    A16      P2
+         A20      A1
+         AB05     BR1
+         B35      L1
+         C16      H2
+
+MEM04\   A16      K2
+         C16      J2
+
+MEM05    A16      R2
+         A20      U2
+         AB05     BV2
+         B35      M1
+         C16      J1
+
+MEM05\   A16      L2
+         C16      K1
+
+MEM06    A16      S2
+         AB04     BR1
+         B18      A1
+         B35      P1
+         C16      K2
+
+MEM06\   A16      M2
+         C16      L2
+
+MEM07    A16      T2
+         AB04     BV2
+         B18      U2
+         B35      S1
+         C16      L1
+
+MEM07\   A16      N2
+         C16      M1
+
+MEM08    A15      P2
+         AB03     BR1
+         B19      A1
+         B35      D2
+         C16      M2
+
+MEM08\   A15      K2
+         C16      N2
+
+MEM09    A15      R2
+         AB03     BV2
+         B19      U2
+         B35      E2
+         C16      N1
+
+MEM09\   A15      L2
+         C16      P1
+
+MEM10    A15      S2
+         AB02     BR1
+         B20      A1
+         B35      H2
+         C16      P2
+
+MEM10\   A15      M2
+         C16      R2
+
+MEM11    A15      T2
+         AB02     BV2
+         B20      U2
+         B35      K2
+         C16      R1
+
+MEM11\   A15      N2
+         C16      S1
+
+MEMORY_INCREMENT A12      R2
+         A33      V2
+         D11      J2
+
+MEM_ALT1\ A10      F1
+         A10      T2
+         D04      P1
+
+MEM_ALT2\ A11      P2
+         A12      T2
+         D04      R1
+
+MEM_BEGIN\ A17      B1
+         A18      B1
+         A19      B1
+         A20      B1
+         B18      B1
+         B19      B1
+         B20      B1
+         D16      K1
+         D16      U2
+         D17      S1
+
+MEM_DONE\ B34      V2
+         C04      F2
+         C17      V2
+         CD03     BF2
+         D10      F2
+
+MEM_ENABLE(0-4) A08      P2
+         A12      B1
+         AB05     BU2
+         AB06     BU2
+         AB06     BV1
+         AB07     BU2
+         AB07     BV1
+         B12      D1
+
+MEM_ENABLE(5-11) A09      P2
+         AB02     BU2
+         AB02     BV1
+         AB03     BU2
+         AB03     BV1
+         AB04     BU2
+         AB04     BV1
+         AB05     BV1
+         C12      E1
+
+MEM_IDLE C04      H2
+         D04      A1
+
+MEM_P    A16      J1
+         A17      A1
+         B35      B1
+         C16      A1
+
+MEM_PARITY_EVEN A14      P1
+         A14      R1
+         A16      L1
+
+MEM_P\   A16      D1
+         C16      B1
+
+MEM_RET  A25      B2
+         A26      B2
+         B25      B2
+         B26      B2
+         B28      L2
+
+MEM_START B34      P2
+         C02      N2
+         C13      U2
+         D16      B1
+
+MEM_SUPPLY+ A23      K1
+         A23      L2
+         A23      S1
+         A23      U2
+         A24      L2
+         A25      J2
+         A25      U2
+         A26      E2
+         A26      J2
+         A26      U2
+         B23      K1
+         B23      L2
+         B23      S1
+         B23      U2
+         B24      K1
+         B24      L2
+         B24      S1
+         B24      U2
+         B25      E2
+         B26      H2
+         B27      M2
+         B28      M2
+         B28      N2
+         B28      P2
+         B28      R2
+
+MEM_SUPPLY- A23      V2
+         A24      V2
+         A25      H2
+         A26      H2
+         A26      M2
+         B23      V2
+         B24      V2
+         B25      H2
+         B25      J2
+         B25      U2
+         B26      J2
+         B26      U2
+         B27      V2
+         B28      S2
+         B28      T2
+         B28      U2
+         B28      V2
+         D33      V2
+
+MFTP0    B08      B1
+         B08      C1
+         B08      D1
+         C02      T2
+         C15      U2
+         CD03     AT2
+
+MFTP1    C05      P2
+         CD03     AE2
+         D17      K2
+         D17      L2
+
+MFTP2    A13      K1
+         C02      L1
+         C02      P2
+         CD03     BD2
+         D12      A1
+
+MFTS0    CD03     AM2
+         D04      E1
+         D09      J1
+
+MFTS1    C12      L1
+         CD03     AJ2
+
+MFTS1\   C15      D1
+         CD03     AK2
+         D04      F1
+
+MFTS2    A12      J2
+         A12      V1
+         B10      L2
+         CD03     AF2
+
+MFTS2\   C15      E1
+         CD03     AH2
+         D04      H1
+
+MFTS3    A10      N2
+         C12      S1
+         D02      K1
+
+MP_INT\  A14      F2
+         B15      F1
+         C16      T2
+         C26      V2
+
+MP_SKIP\ A14      R2
+         B15      P2
+         C26      R2
+
+N$1      C02      R1
+         C02      S2
+
+N$2      C02      L2
+         C02      N1
+
+N$3      C02      M2
+         C02      P1
+         D04      D1
+
+N$4      D05      E1
+         D05      R2
+
+N$5      D02      R2
+         D05      H2
+
+N$6      C04      H1
+         D05      F1
+
+N$7      D02      J1
+         D04      J1
+
+N$8      D05      H1
+         D06      E1
+         D06      M2
+
+N$9      D06      H1
+         D06      T2
+         D07      H1
+
+N$10     C05      S1
+         D07      H2
+
+N$11     C04      U2
+         D02      S1
+
+N$12     C05      C1
+         C05      D1
+
+N$13     D07      K2
+         D08      H1
+
+N$14     D07      E1
+         D07      N2
+
+N$15     C05      L2
+         C05      M2
+         D07      F1
+         D08      H2
+
+N$16     D08      E1
+         D08      V2
+
+N$17     AB31     AU1
+         AB31     BV1
+
+N$18     AB31     AK1
+         C34      H1
+
+N$19     C07      A1
+         D09      R1
+
+N$20     C06      P1
+         C07      B1
+
+N$21     C02      V2
+         C05      L1
+
+N$22     CD03     AS2
+         D01      N1
+
+N$23     C07      C1
+         D12      K1
+
+N$24     D10      M2
+         D11      N2
+
+N$25     D12      N2
+         D12      P1
+
+N$26     C07      D2
+         C08      B1
+         C08      D2
+         C08      H1
+
+N$27     C08      A1
+         D12      K2
+
+N$28     C08      C1
+         D13      S1
+
+N$29     C10      U2
+         D02      U1
+
+N$30     C07      L2
+         D04      T2
+
+N$31     D04      U1
+         D04      V2
+
+N$32     C07      K2
+         C10      V2
+
+N$33     AB31     AL1
+         C34      J1
+
+N$34     AB31     AM1
+         C34      K1
+
+N$35     AB31     AN1
+         C34      L1
+
+N$36     D12      N1
+         D13      C1
+
+N$37     C09      U2
+         D12      F1
+
+N$38     C09      V2
+         C11      L1
+
+N$39     A08      L2
+         A08      M2
+         A10      R1
+
+N$40     A35      E1
+         C28      C1
+
+N$41     A09      M2
+         B12      E1
+         C12      F1
+
+N$42     A08      D2
+         C12      J1
+
+N$43     A08      R2
+         C12      N1
+
+N$44     A09      N2
+         C13      L1
+
+N$45     A08      E2
+         A08      F2
+         A08      H2
+         A09      D2
+         A09      E2
+         A09      F2
+         A09      H2
+         B10      T2
+
+N$46     B13      C1
+         C13      H1
+
+N$47     A09      H1
+         A09      J1
+         D09      T2
+
+N$48     D09      M2
+         D09      V2
+
+N$49     A09      R2
+         A09      S2
+         A09      T2
+         A09      U2
+         D11      N1
+
+N$50     A09      M1
+         A09      N1
+         A09      P1
+         A09      R1
+         C11      P2
+
+N$51     A08      A1
+         A08      D1
+         C12      U1
+
+N$52     B12      F1
+         B13      K1
+
+N$53     B13      E2
+         C15      F1
+
+N$54     B12      L1
+         B14      J2
+
+N$55     A12      S1
+         A13      V2
+
+N$56     A08      F1
+         A08      H1
+         A08      J1
+         A08      K1
+         B13      K2
+
+N$57     A11      H2
+         B09      D2
+         B09      E2
+         B09      F2
+         B09      H2
+
+N$58     A12      A1
+         B12      M1
+
+N$59     A11      M2
+         B09      K2
+         B09      L2
+         B09      M2
+         B09      N2
+
+N$60     A11      J1
+         B09      M1
+         B09      N1
+         B09      P1
+         B09      R1
+
+N$61     A11      D1
+         B09      R2
+         B09      S2
+         B09      T2
+         B09      U2
+
+N$62     A09      A1
+         A09      B1
+         A11      N1
+
+N$63     A08      B1
+         C12      H2
+
+N$64     A08      C1
+         B13      F2
+
+N$65     A11      S2
+         B13      L2
+
+N$66     A11      N2
+         A12      R1
+
+N$67     C12      K2
+         C12      S2
+
+N$68     B08      P1
+         B08      R1
+         B12      V2
+
+N$69     B08      M1
+         B08      N1
+         C05      S2
+
+N$70     B08      R2
+         C12      M2
+
+N$71     B08      S2
+         B13      N1
+
+N$72     A13      J1
+         B12      P1
+
+N$73     A12      K1
+         A14      V1
+
+N$74     A13      R1
+         B08      D2
+         B08      E2
+         B08      F2
+
+N$75     B12      R1
+         B14      P2
+
+N$76     B12      V1
+         C13      S1
+
+N$77     A14      E1
+         B12      S1
+
+N$78     A14      H1
+         B12      U1
+
+N$79     A14      B1
+         A14      J1
+
+N$80     A14      C1
+         C14      N2
+
+N$81     A14      A1
+         C14      N1
+
+N$82     A14      D1
+         C14      H2
+
+N$83     A13      N2
+         A13      S2
+         B12      S2
+         C14      K2
+
+N$84     A13      L2
+         B12      T2
+
+N$85     B11      R1
+         C14      K1
+
+N$86     A11      V1
+         B11      N1
+
+N$87     A13      T2
+         B11      P1
+
+N$88     C14      C1
+         C14      D1
+
+N$89     A11      U2
+         C14      F2
+
+N$90     A11      V2
+         C12      V1
+
+N$91     B12      P2
+         B14      V2
+         C13      H2
+
+N$92     C13      L2
+         C13      N2
+         C14      V2
+
+N$93     B12      K2
+         C13      P2
+
+N$94     B13      P2
+         B13      V2
+
+N$95     B12      H2
+         B13      S2
+
+N$96     B11      B1
+         B12      L2
+
+N$97     B11      D1
+         B12      J2
+
+N$98     B11      J1
+         C28      H2
+
+N$99     D11      J1
+         D11      K2
+
+N$100    B11      D2
+         B12      F2
+
+N$101    B12      E2
+         C14      S2
+
+N$102    D10      E2
+         D11      F2
+
+N$103    D11      D2
+         D11      K1
+
+N$104    D11      B1
+         D11      F1
+
+N$105    D10      D1
+         D11      C1
+
+N$106    B10      R1
+         B11      M2
+
+N$107    AB31     AK2
+         C34      N1
+
+N$108    A14      S2
+         D13      V1
+
+N$109    AB06     BK2
+         AB07     BJ1
+
+N$110    AB05     BK2
+         AB06     BJ1
+
+N$111    AB03     BK2
+         AB04     BJ1
+
+N$112    AB02     BK2
+         AB03     BJ1
+
+N$113    C30      S2
+         D36      V2
+
+N$114    C30      K2
+         D36      T2
+
+N$115    C30      D2
+         D36      S2
+
+N$116    A10      V2
+         B10      S1
+         B12      A1
+
+N$117    C29      S2
+         D36      P2
+
+N$118    C29      K2
+         D36      M2
+
+N$119    C29      D2
+         D36      K2
+
+N$120    D27      D1
+         D29      B1
+         D36      B1
+
+N$121    D27      E1
+         D29      D1
+         D36      D1
+
+N$122    D27      K1
+         D29      E1
+         D36      E1
+
+N$123    B10      V1
+         B12      B1
+
+N$124    D27      L1
+         D29      H1
+         D36      H1
+
+N$125    D27      R1
+         D29      J1
+         D36      J1
+
+N$126    D27      S1
+         D29      L1
+         D36      L1
+
+N$127    D27      H2
+         D29      M1
+         D36      M1
+
+N$128    D27      J2
+         D29      P1
+         D36      P1
+
+N$129    D27      N2
+         D29      S1
+         D36      S1
+
+N$130    D27      P2
+         D29      D2
+         D36      D2
+
+N$131    D27      U2
+         D29      E2
+         D36      E2
+
+N$132    D27      V2
+         D29      H2
+         D36      H2
+
+N$133    D28      D1
+         D30      B1
+         D35      B1
+
+N$134    D28      E1
+         D30      D1
+         D35      D1
+
+N$135    D28      K1
+         D30      E1
+         D35      E1
+
+N$136    D28      L1
+         D30      H1
+         D35      H1
+
+N$137    D28      R1
+         D30      J1
+         D35      J1
+
+N$138    D28      S1
+         D30      L1
+         D35      L1
+
+N$139    D28      H2
+         D30      M1
+         D35      M1
+
+N$140    D28      J2
+         D30      P1
+         D35      P1
+
+N$141    D28      N2
+         D30      S1
+         D35      S1
+
+N$142    D28      P2
+         D30      D2
+         D35      D2
+
+N$143    D28      U2
+         D30      E2
+         D35      E2
+
+N$144    D28      V2
+         D30      H2
+         D35      H2
+
+N$145    C27      D1
+         D30      K2
+         D35      K2
+
+N$146    C27      E1
+         D30      M2
+         D35      M2
+
+N$147    C27      K1
+         D30      P2
+         D35      P2
+
+N$148    C27      L1
+         D30      S2
+         D35      S2
+
+N$149    C27      R1
+         D30      T2
+         D35      T2
+
+N$150    C27      S1
+         D30      V2
+         D35      V2
+
+N$151    D13      E2
+         D29      K2
+         D34      B1
+
+N$152    D13      H2
+         D29      M2
+         D34      D1
+
+N$153    D13      K2
+         D29      P2
+         D34      E1
+
+N$154    D13      M2
+         D29      S2
+         D34      H1
+
+N$155    A32      A1
+         D34      J1
+
+N$156    A32      D2
+         D34      L1
+
+N$157    B32      B1
+         C36      B1
+         D11      P1
+         D11      R1
+
+N$158    B32      D1
+         C36      D1
+         D11      P2
+         D11      R2
+
+N$159    A32      F1
+         D34      M1
+
+N$160    B32      E1
+         C36      E1
+         D11      T2
+         D11      U2
+
+N$161    A33      R2
+         C36      T2
+
+N$162    A32      K2
+         D34      P1
+
+N$163    A33      S2
+         A33      T2
+         A33      U2
+
+N$164    B32      J1
+         C36      J1
+         D13      A1
+
+N$165    A32      M1
+         D34      S1
+
+N$166    C27      H2
+         D29      V2
+         D34      S2
+
+N$167    B12      J1
+         B32      H1
+         C36      H1
+
+N$168    B32      L1
+         C36      L1
+         D13      J1
+
+N$169    B32      M1
+         C36      M1
+         D13      P2
+
+N$170    A32      R2
+         D34      D2
+
+N$171    B32      P1
+         C36      P1
+         D13      S2
+
+N$172    A33      A1
+         D34      E2
+
+N$173    B32      S1
+         C36      S1
+         D13      U2
+
+N$174    A34      A1
+         B32      D2
+         C36      D2
+
+N$175    A33      D2
+         D34      H2
+
+N$176    A34      C1
+         B32      E2
+         C36      E2
+
+N$177    A34      D1
+         B32      H2
+         C36      H2
+
+N$178    B32      P2
+         C27      P2
+         C36      P2
+
+N$179    B32      S2
+         C27      U2
+         C36      S2
+
+N$180    A33      F1
+         D34      K2
+
+N$181    B32      V2
+         C27      V2
+         C36      V2
+
+N$182    A34      F1
+         B33      B1
+         C35      B1
+
+N$183    A34      J1
+         B33      D1
+         C35      D1
+
+N$184    A33      M1
+         D34      P2
+
+N$185    A34      L1
+         B33      E1
+         C35      E1
+
+N$186    A33      K2
+         D34      M2
+
+N$187    A34      N1
+         B33      H1
+         C35      H1
+
+N$188    A34      R1
+         B33      J1
+         C35      J1
+
+N$189    A34      V1
+         B33      L1
+         C35      L1
+
+N$190    A34      E2
+         B33      M1
+         C35      M1
+
+N$191    A34      H2
+         B33      P1
+         C35      P1
+
+N$192    A34      K2
+         B33      S1
+         C35      S1
+
+N$193    A34      M2
+         B33      D2
+         C35      D2
+
+N$194    A34      P2
+         B33      E2
+         C35      E2
+
+N$195    A34      S2
+         B33      H2
+         C35      H2
+
+N$196    A34      U2
+         B33      K2
+         C35      K2
+
+N$197    A14      H2
+         D13      L1
+
+N$198    B33      P2
+         C27      N2
+         C35      P2
+
+N$199    B33      S2
+         C35      S2
+
+N$200    C32      J2
+         C32      K1
+
+N$201    D16      F1
+         D17      A1
+         D17      B1
+         D17      C1
+         D17      D1
+         D17      F1
+         D17      H1
+         D17      J1
+         D17      K1
+
+N$202    AB31     AL2
+         C34      P1
+
+N$203    C13      V2
+         C15      A1
+
+N$204    C15      B1
+         C15      K2
+         D16      F2
+
+N$205    C15      C1
+         D14      H2
+
+N$206    C17      P2
+         D15      J1
+         D16      D2
+
+N$207    C15      F2
+         D16      N2
+
+N$208    D14      H1
+         D14      N2
+
+N$209    D14      E1
+         D14      M2
+
+N$210    C15      J1
+         D14      J1
+         D15      H2
+         D17      M1
+         D17      N1
+
+N$211    D15      H1
+         D15      L2
+
+N$212    D15      E1
+         D15      T2
+
+N$213    C15      K1
+         D16      R1
+
+N$214    B22      T2
+         B27      S2
+
+N$215    C15      D2
+         D14      F1
+
+N$216    B22      S2
+         B27      R2
+
+N$217    B27      F2
+         B36      S2
+
+N$218    A27      T2
+         A28A     U2
+         B36      V2
+
+N$219    B27      J2
+         B27      K2
+         B28      J2
+         B28      K2
+
+N$220    AB31     AM2
+         C34      R1
+
+N$221    A26      F2
+         C25      L2
+         D25      L2
+
+N$222    C17      U2
+         D13      P1
+
+N$223    C15      N1
+         D13      N1
+
+N$224    B26      F2
+         C25      M1
+         D25      M1
+
+N$225    B25      F2
+         C25      E1
+         D25      E1
+
+N$226    A25      F2
+         C25      U2
+         D25      U2
+
+N$227    A17      D2
+         A21      S2
+
+N$228    A17      E2
+         A21      T2
+
+N$229    A18      D2
+         A21      C2
+
+N$230    A18      E2
+         A21      D2
+
+N$231    A18      L1
+         A21      E2
+
+N$232    A18      M1
+         A21      F2
+
+N$233    A19      D2
+         A21      H2
+
+N$234    A19      E2
+         A21      J2
+
+N$235    A19      L1
+         A21      K2
+
+N$236    A19      M1
+         A21      L2
+
+N$237    A20      D2
+         A21      M2
+
+N$238    A20      E2
+         A21      N2
+
+N$239    A20      L1
+         A21      P2
+
+N$240    A20      M1
+         A21      R2
+
+N$241    B18      D2
+         B21      C2
+
+N$242    B18      E2
+         B21      D2
+
+N$243    B18      L1
+         B21      E2
+
+N$244    B18      M1
+         B21      F2
+
+N$245    B19      D2
+         B21      H2
+
+N$246    B19      E2
+         B21      J2
+
+N$247    B19      L1
+         B21      K2
+
+N$248    B19      M1
+         B21      L2
+
+N$249    B20      D2
+         B21      M2
+
+N$250    B20      E2
+         B21      N2
+
+N$251    B20      L1
+         B21      P2
+
+N$252    B20      M1
+         B21      R2
+
+N$253    A24      H2
+         A26      P2
+
+N$254    AB31     AN2
+         C34      S1
+
+N$255    AB31     BH2
+         C34      M1
+
+N$256    AB31     AT2
+         C34      E1
+
+N$257    AB31     AV2
+         C34      D1
+
+N$258    AB31     BU2
+         C34      U1
+
+N$259    A15      K1
+         A16      E1
+
+N$260    A15      L1
+         A16      A1
+
+N$261    A16      F1
+         A16      U2
+
+N$262    A16      B1
+         A16      V2
+
+N$263    A15      V2
+         A16      C1
+
+N$264    A15      U2
+         A16      H1
+
+N$265    B16      K1
+         B17      E1
+
+N$266    B17      F1
+         B17      U2
+
+N$267    A22      T2
+         A24      K2
+
+N$268    A22      S2
+         A24      J2
+
+N$269    B23      M1
+         B25      K2
+
+N$270    A23      F2
+         A25      N2
+
+N$271    A24      F2
+         A26      N2
+
+N$272    A23      E1
+         A25      M2
+
+N$273    A23      P2
+         A25      L2
+
+N$274    A23      M1
+         A25      K2
+
+N$275    A23      H2
+         A25      P2
+
+N$276    A23      F1
+         A25      R2
+
+N$277    A23      N1
+         A25      T2
+
+N$278    A23      R2
+         A25      S2
+
+N$279    A22      D2
+         A23      K2
+
+N$280    A22      C2
+         A23      J2
+
+N$281    A22      E2
+         A23      H1
+
+N$282    A22      F2
+         A23      J1
+
+N$283    A22      H2
+         A23      S2
+
+N$284    A22      J2
+         A23      T2
+
+N$285    A22      L2
+         A23      R1
+
+N$286    A22      K2
+         A23      P1
+
+N$287    B23      P2
+         B25      L2
+
+N$288    B23      E1
+         B25      M2
+
+N$289    B23      F2
+         B25      N2
+
+N$290    B23      H2
+         B25      P2
+
+N$291    B23      F1
+         B25      R2
+
+N$292    B23      R2
+         B25      S2
+
+N$293    B23      N1
+         B25      T2
+
+N$294    A22      M2
+         B23      J2
+
+N$295    A22      N2
+         B23      K2
+
+N$296    A22      R2
+         B23      J1
+
+N$297    A22      P2
+         B23      H1
+
+N$298    B22      C2
+         B23      S2
+
+N$299    B22      D2
+         B23      T2
+
+N$300    B22      E2
+         B23      P1
+
+N$301    B22      F2
+         B23      R1
+
+N$302    B24      M1
+         B26      K2
+
+N$303    B24      P2
+         B26      L2
+
+N$304    B24      E1
+         B26      M2
+
+N$305    B24      F2
+         B26      N2
+
+N$306    B24      H2
+         B26      P2
+
+N$307    B24      F1
+         B26      R2
+
+N$308    B24      R2
+         B26      S2
+
+N$309    B24      N1
+         B26      T2
+
+N$310    B22      L2
+         B24      J1
+
+N$311    B22      K2
+         B24      H1
+
+N$312    B22      J2
+         B24      K2
+
+N$313    B22      H2
+         B24      J2
+
+N$314    B22      M2
+         B24      S2
+
+N$315    B22      N2
+         B24      T2
+
+N$316    B22      P2
+         B24      P1
+
+N$317    B22      R2
+         B24      R1
+
+N$318    A35      K1
+         B34      D1
+
+N$319    A35      M1
+         B34      E1
+
+N$320    A35      P1
+         B34      H1
+
+N$321    A35      S1
+         B34      J1
+
+N$322    A35      U1
+         B34      L1
+
+N$323    A35      F2
+         B34      M1
+
+N$324    A35      J2
+         B34      P1
+
+N$325    A35      L2
+         B34      S1
+
+N$326    A35      R2
+         B34      E2
+
+N$327    A35      N2
+         B34      D2
+
+N$328    A35      T2
+         B34      H2
+
+N$329    A35      V2
+         B34      K2
+
+N$330    B36      H2
+         D17      P2
+
+N$331    B36      E2
+         C15      S2
+
+N$332    B36      D2
+         D17      V2
+
+N$333    A01      B1
+         B36      S1
+
+N$334    A01      C1
+         B36      P1
+
+N$335    B36      M1
+         C15      N2
+
+N$336    B36      J1
+         C15      V2
+
+N$337    A35      D2
+         B36      E1
+
+N$338    A35      B1
+         B36      D1
+
+N$339    B36      B1
+         C15      S1
+
+N$340    A35      A1
+         D12      V2
+
+N$341    C05      V2
+         C15      T2
+
+N$342    C22      V2
+         C23      R2
+
+N$343    C22      U2
+         C23      S2
+
+N$344    C22      T2
+         C23      N2
+
+N$345    C22      S2
+         C23      P2
+
+N$346    C22      C2
+         C24      K2
+
+N$347    C22      D2
+         C24      J2
+
+N$348    C22      E2
+         C24      M2
+
+N$349    C22      F2
+         C24      L2
+
+N$350    C22      H2
+         C24      P2
+
+N$351    C22      J2
+         C24      N2
+
+N$352    C22      K2
+         C24      S2
+
+N$353    C22      L2
+         C24      R2
+
+N$354    C22      M2
+         C23      K2
+
+N$355    C22      N2
+         C23      J2
+
+N$356    C22      P2
+         C23      M2
+
+N$357    C22      R2
+         C23      L2
+
+N$358    D18      R2
+         D20      C2
+
+N$359    D18      S2
+         D20      D2
+
+N$360    D18      N2
+         D20      E2
+
+N$361    D18      P2
+         D20      F2
+
+N$362    D18      L2
+         D20      H2
+
+N$363    D18      M2
+         D20      J2
+
+N$364    D18      J2
+         D20      K2
+
+N$365    D18      K2
+         D20      L2
+
+N$366    D19      R2
+         D20      M2
+
+N$367    D19      S2
+         D20      N2
+
+N$368    D19      N2
+         D20      P2
+
+N$369    D19      P2
+         D20      R2
+
+N$370    D19      L2
+         D20      S2
+
+N$371    D19      M2
+         D20      T2
+
+N$372    D19      J2
+         D20      U2
+
+N$373    D19      K2
+         D20      V2
+
+N$374    C18      R2
+         C20      V2
+
+N$375    C18      S2
+         C20      U2
+
+N$376    C18      N2
+         C20      T2
+
+N$377    C18      P2
+         C20      S2
+
+N$378    C18      L2
+         C20      R2
+
+N$379    C18      M2
+         C20      P2
+
+N$380    C18      J2
+         C20      N2
+
+N$381    C18      K2
+         C20      M2
+
+N$382    C19      K2
+         C20      C2
+
+N$383    C19      J2
+         C20      D2
+
+N$384    C19      M2
+         C20      E2
+
+N$385    C19      L2
+         C20      F2
+
+N$386    C19      P2
+         C20      H2
+
+N$387    C19      N2
+         C20      J2
+
+N$388    C19      S2
+         C20      K2
+
+N$389    C19      R2
+         C20      L2
+
+N$390    D22      C2
+         D23      R2
+
+N$391    D22      D2
+         D23      S2
+
+N$392    D22      E2
+         D23      N2
+
+N$393    D22      F2
+         D23      P2
+
+N$394    D22      H2
+         D23      L2
+
+N$395    D22      J2
+         D23      M2
+
+N$396    D22      K2
+         D23      J2
+
+N$397    D22      L2
+         D23      K2
+
+N$398    D22      M2
+         D24      R2
+
+N$399    D22      N2
+         D24      S2
+
+N$400    D22      P2
+         D24      N2
+
+N$401    D22      R2
+         D24      P2
+
+N$402    D22      S2
+         D24      L2
+
+N$403    D22      T2
+         D24      M2
+
+N$404    D22      U2
+         D24      J2
+
+N$405    D22      V2
+         D24      K2
+
+N$406    B16      U2
+         B17      H1
+
+N$407    B16      V2
+         B17      C1
+
+N$408    B17      B1
+         B17      V2
+
+N$409    B16      L1
+         B17      A1
+
+N$410    B15      U1
+         B17      D1
+
+N$411    A14      J2
+         A14      U1
+
+N$412    A14      K1
+         A14      L1
+         A14      M2
+
+N$413    A14      K2
+         A14      L2
+         A14      N1
+         C16      S2
+
+N$414    A28A     E1
+         B36      T2
+
+NEG_CLAMP A26      R2
+         C18      V2
+         C19      V2
+         C23      V2
+         C24      V2
+         C25      V2
+         D18      V2
+         D19      V2
+         D23      V2
+         D24      V2
+         D25      V2
+
+NO_SHIFT A09      E1
+         AB02     AE1
+         AB03     AE1
+         AB04     AE1
+         AB05     AE1
+         AB06     AE1
+         AB07     AE1
+         B10      J1
+
+OP1      A09      C1
+         A09      D1
+         A11      B1
+         A11      E2
+         A11      F1
+         A11      K2
+         A11      L1
+         A12      H1
+         A12      U1
+         B13      H1
+         B13      H2
+         C07      F2
+         D09      L2
+
+OP1\     C07      E2
+         C10      J2
+         C14      A1
+
+OP2      A13      P2
+         C07      J2
+         C12      D2
+         C14      J2
+         D09      C1
+         D09      F2
+
+OP2\     C07      H2
+         C10      P2
+         C14      B1
+
+OP_STROBE\ A11      T2
+         B08      U2
+         C14      F1
+
+OUT_STOP2\ D31      N1
+         D31      N2
+
+PANEL_LOCK A28A     T2
+         B01      N2
+
+PAUSE    C04      L1
+         C28      A1
+
+PAUSE\   C04      M1
+         D04      B1
+
+PC_ENABLE A08      V2
+         AB02     BS2
+         AB03     BS2
+         AB04     BS2
+         AB05     BS2
+         AB06     BS2
+         AB07     BS2
+
+PC_ENABLE\ A08      T2
+         A14      V2
+         B13      F1
+         C13      K1
+
+PC_LOAD  AB02     AN2
+         AB03     AN2
+         AB04     AN2
+         AB05     AN2
+         AB06     AN2
+         AB07     AN2
+         B08      J2
+         C14      H1
+         C14      J1
+
+POWER_CLEAR\ A27      S2
+         C05      M1
+         C06      R1
+         CD03     AL2
+         D16      A1
+         D16      K2
+
+POWER_OK\ A27      J2
+         D09      L1
+
+PROTECT\ A08      N2
+         B13      M2
+         C06      T2
+         C11      L2
+         C11      T2
+         C12      R1
+         D04      V1
+         D09      N2
+
+PWR      AB30     BR2
+         C34      U2
+
+PWR_LOW\ A33      N2
+         A36      R2
+         C26      S2
+
+PWR_SKP\ A33      K1
+         A36      L2
+
+RDR_FEED_SW AB29     BP2
+         AB30     BM1
+         C34      V2
+
+RDR_INT\ A33      L2
+         AB30     AL2
+         AB31     BS2
+
+RDR_SKP\ A33      H1
+         AB30     AK2
+         AB31     BN2
+
+RD_HOLE1 AB30     AD2
+         C34      D2
+
+RD_HOLE2 AB30     AD1
+         C34      E2
+
+RD_HOLE3 AB30     AE2
+         C34      F2
+
+RD_HOLE4 AB30     AE1
+         C34      H2
+
+RD_HOLE5 AB30     AH2
+         C34      J2
+
+RD_HOLE6 AB30     AH1
+         C34      K2
+
+RD_HOLE7 AB30     AF2
+         C34      L2
+
+RD_HOLE8 AB30     AF1
+         C34      M2
+
+READ     C17      R2
+         C25      D2
+         C25      M2
+         D16      L1
+         D25      D1
+         D25      L1
+
+READER_RUN C32      U2
+         D33      M2
+
+RESTART\ A36      U1
+         C02      B1
+         C05      T2
+         C12      K1
+         C26      U2
+         CD03     AR2
+         D04      L1
+
+RIGHT_SHIFT AB02     AD2
+         AB03     AD2
+         AB04     AD2
+         AB05     AD2
+         AB06     AD2
+         AB07     AD2
+         B09      S1
+         B10      D1
+
+RUN      C06      U1
+         D04      C1
+
+RUN\     C06      S1
+         C27      D2
+         CD03     AP2
+
+RXD      D32      M2
+         D33      E2
+
+SET_IO_ON\ B08      H2
+         C05      N2
+         C06      K1
+
+SHIFT    AB29     AS2
+         AB30     BJ1
+
+SHIFT\   AB29     AT2
+         AB30     BD1
+
+SHUT_DOWN\ A27      F2
+         A36      U2
+
+SKIP     A12      L1
+         B11      U1
+
+SKIP\    B11      S1
+         C12      V2
+
+SLICE    A17      S2
+         A18      S2
+         A19      S2
+         A20      S2
+         A28A     V2
+         B18      S2
+         B19      S2
+         B20      S2
+
+SPECIAL_CYCLE\ C11      A1
+         C11      F2
+         D13      D2
+
+SPIKE_DETECT C32      M2
+         C32      R1
+
+SR00     A01      H2
+         AB07     BE1
+
+SR01     A01      F2
+         AB07     BD2
+
+SR02     A01      E2
+         AB06     BE1
+
+SR03     A01      D2
+         AB06     BD2
+
+SR04     A01      D1
+         AB05     BE1
+
+SR05     AB05     BD2
+         C01      L2
+
+SR06     AB04     BE1
+         C01      K2
+
+SR07     AB04     BD2
+         C01      J2
+
+SR08     AB03     BE1
+         C01      H2
+
+SR09     AB03     BD2
+         C01      E2
+
+SR10     AB02     BE1
+         C01      F2
+
+SR11     AB02     BD2
+         D01      M2
+
+SR_ENABLE A08      E1
+         AB02     BC1
+         AB03     BC1
+         AB04     BC1
+         AB05     BC1
+         AB06     BC1
+         AB07     BC1
+
+STOP_COMPLETE AB29     BR2
+         AB30     BN2
+
+STOP_OK  A27      H2
+         A36      P2
+         D09      K1
+
+STROBE\  B34      S2
+         C04      A1
+         C04      N2
+         C17      T2
+         CD03     BE2
+         D02      L1
+         D11      D1
+
+STROBE_FIELD0 A17      D1
+         A17      R1
+         A18      D1
+         A18      R1
+         A19      D1
+         A19      R1
+         A20      D1
+         A20      R1
+         B18      D1
+         B18      R1
+         B19      D1
+         B19      R1
+         B20      D1
+         B20      R1
+         C17      S2
+
+SYNC     B11      V1
+         C11      E2
+
+TAD      C07      H1
+         C12      A1
+
+TAD\     C07      F1
+         C09      D1
+         C12      P2
+
+TP1      A13      E1
+         B11      S2
+         B13      T2
+         D02      M1
+         D06      H2
+
+TP2      C04      L2
+         C06      S2
+         C14      D2
+         D02      N1
+         D06      F1
+         D10      D2
+         D12      H1
+
+TP2\     B08      M2
+         B08      N2
+         C04      R1
+         D02      P1
+
+TP3      A13      A1
+         A13      H1
+         A13      M1
+         A14      S1
+         C04      N1
+         C05      A1
+         C05      D2
+         C06      N1
+         C12      J2
+         C14      E1
+         D06      J1
+
+TP4      B12      U2
+         C02      S1
+         C04      B1
+         C04      S2
+         C08      L2
+         C08      N1
+         C08      S2
+         D10      B1
+         D10      L2
+         D10      N1
+         D10      S2
+         D12      H2
+
+TS1      A12      E1
+         B10      J2
+         C04      E1
+
+TS1\     C04      F1
+         C30      N2
+         C30      P2
+
+TS2      A10      E1
+         A12      D2
+         A12      P2
+         A13      D2
+         C04      P2
+         C11      K2
+         C11      R2
+         D04      U2
+         D09      P2
+
+TS3      A10      A1
+         A11      R1
+         A12      M1
+         B10      E2
+         C04      S1
+         C10      D2
+         C10      K2
+         C12      B1
+         C13      A1
+
+TS3\     C04      U1
+         C30      H2
+         C30      J2
+
+TS4      A10      K1
+         A10      M1
+         B10      N2
+         B13      D1
+         C04      V2
+         C13      F1
+         C15      M2
+         D11      L1
+
+TS4\     C04      V1
+         C28      B1
+
+TT0\     A32      C1
+         C32      K2
+
+TT1\     A32      F2
+         C32      R2
+
+TT2\     A32      J1
+         C32      S2
+
+TT3\     A32      M2
+         C32      L1
+
+TT4\     A32      P1
+         C32      M1
+
+TT5\     A32      T2
+         C32      P2
+
+TT6\     A33      C1
+         C32      T2
+
+TT7\     A33      F2
+         C32      N2
+
+TTI_CLOCK C32      N1
+         C33      R2
+
+TTI_FLAG\ A14      D2
+         C32      F2
+
+TTI_SKIP\ A14      N2
+         D32      H2
+
+TTO_CLOCK\ C33      K2
+         D31      P2
+
+TTO_ENABLE C31      K1
+         C31      K2
+
+TTO_ENABLE\ C31      H1
+         C31      L1
+
+TTO_FLAG\ A14      E2
+         D31      K2
+
+TTO_SKIP\ A14      P2
+         D31      J2
+
+TT_AC_CLEAR\ A33      N1
+         A33      P1
+         A33      R1
+         D32      E2
+
+TT_INT\  A33      M2
+         D13      M1
+
+TT_SKIP\ A33      J1
+         D13      U1
+
+TXD      C31      V2
+         D33      H2
+
+VCC      A01      A2
+         A08      A2
+         A09      A2
+         A10      A2
+         A11      A2
+         A12      A2
+         A13      A2
+         A14      A2
+         A15      A2
+         A16      A2
+         A17      A2
+         A18      A2
+         A19      A2
+         A20      A2
+         A23      A2
+         A24      A2
+         A28A     A2
+         A32      A2
+         A33      A2
+         A34      A2
+         A35      A2
+         A36      A2
+         AB02     AA2
+         AB02     BA2
+         AB03     AA2
+         AB03     BA2
+         AB04     AA2
+         AB04     BA2
+         AB05     AA2
+         AB05     BA2
+         AB06     AA2
+         AB06     BA2
+         AB07     AA2
+         AB07     BA2
+         AB29     AA2
+         AB29     BA2
+         AB30     AA2
+         AB30     BA2
+         AB31     AA2
+         AB31     BA2
+         B01      A2
+         B08      A2
+         B09      A2
+         B10      A2
+         B11      A2
+         B12      A2
+         B13      A2
+         B14      A2
+         B15      A2
+         B16      A2
+         B17      A2
+         B18      A2
+         B19      A2
+         B20      A2
+         B23      A2
+         B24      A2
+         B28      A2
+         B32      A2
+         B33      A2
+         C01      A2
+         C02      A2
+         C04      A2
+         C05      A2
+         C06      A2
+         C07      A2
+         C08      A2
+         C09      A2
+         C10      A2
+         C11      A2
+         C12      A2
+         C13      A2
+         C14      A2
+         C15      A2
+         C16      A2
+         C17      A2
+         C18      A2
+         C19      A2
+         C23      A2
+         C24      A2
+         C25      A2
+         C26      A2
+         C27      A2
+         C28      A2
+         C29      A2
+         C30      A2
+         C31      A2
+         C32      A2
+         C33      A2
+         CD03     AA2
+         CD03     BA2
+         D01      A2
+         D02      A2
+         D04      A2
+         D05      A2
+         D06      A2
+         D07      A2
+         D08      A2
+         D09      A2
+         D10      A2
+         D11      A2
+         D12      A2
+         D13      A2
+         D14      A2
+         D15      A2
+         D16      A2
+         D17      A2
+         D18      A2
+         D19      A2
+         D23      A2
+         D24      A2
+         D25      A2
+         D27      A2
+         D28      A2
+         D29      A2
+         D30      A2
+         D31      A2
+         D32      A2
+         D33      A2
+
+WC_OVERFLOW\ C27      K2
+         D10      H2
+
+WC_SET\  C26      T2
+         D11      M2
+         D12      M2
+         D12      S2
+         D12      T2
+
+WORD_COUNT D10      P1
+         D10      P2
+
+WORD_COUNT\ A11      R2
+         C26      F2
+         D01      J2
+         D02      S2
+         D04      S1
+         D10      R2
+         D11      H1
+         D12      M1
+         D12      U2
+
+WRITE    C25      D1
+         C25      L1
+         D16      S1
+         D16      S2
+         D25      D2
+         D25      M2
+
+X_R/W_RETURN B26      D2
+         D18      T2
+         D19      T2
+         D25      F2
+         D25      K1
+
+X_R/W_SOURCE A26      D2
+         C23      T2
+         C24      T2
+         C25      F2
+         C25      K1
+
+Y_R/W_RETURN A25      D2
+         D23      T2
+         D24      T2
+         D25      P2
+         D25      S1
+
+Y_R/W_SOURCE B25      D2
+         C18      T2
+         C19      T2
+         C25      P2
+         C25      S1
+

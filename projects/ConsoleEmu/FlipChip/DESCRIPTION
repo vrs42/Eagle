@@ -1,0 +1,6 @@
+FlipChip Test Jig based on core and i/o boards.
+<UL>
+<LI><b>flipchip</b> is a design for a flipchip tester based 
+on the core and IO boards.</LI>
+<LI><b>proto</b> explores some ideas output interfacing to 
+Rxxx modules.</LI>

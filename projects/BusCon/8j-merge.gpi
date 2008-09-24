@@ -1,0 +1,40 @@
+Photoplotter Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/BusCon/8j-merge.gpi
+
+ Date              :  2/01/2005 06:32:29p
+ Plotfile          : C:/PROGRAM FILES/EAGLE-4.11/projects/BusCon/8j-merge.sts
+ Apertures         : generated: 
+ Device            : Gerber photoplotter with RS-274-X aperture generation
+
+Parameter settings:
+
+ Emulate Apertures : no
+ Emulate Thermal   : no
+ Emulate Annulus   : no
+ Tolerance Draw  + :  0.00 %
+ Tolerance Draw  - :  0.00 %
+ Tolerance Flash + :  0.00 %
+ Tolerance Flash - :  0.00 %
+ Rotate            : no
+ Mirror            : yes
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+
+Plotfile Info:
+
+ Coordinate Format : 2.4
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Apertures used:
+
+ Code     Shape     Size                  used
+
+ D10      octagon   0.0720inch             108
+ D11      rectangle 0.5285inch x 0.0960inch    18
+ D12      round     0.1500inch               2
+ D13      round     0.1323inch               2
+

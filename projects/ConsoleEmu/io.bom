@@ -1,0 +1,12 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/ConsoleEmu/io.sch at  7/15/2004 06:40:46p
+
+Qty Value     Device          Parts                                                                                                                     
+8             MA08-2          IN1-2, IN3-4, IN5-6, IN7-8, OUT1-2, OUT3-4, OUT5-6, OUT7-8                                                                
+1             MA09-2          DEVSEL                                                                                                                    
+1             MA10-2          CORE-IO                                                                                                                   
+19  0.1uf     C-US050-025X075 BYP1, BYP2, BYP3, BYP4, BYP5, BYP6, BYP7, BYP8, BYP9, BYP10, BYP11, BYP12, BYP13, BYP14, BYP15, BYP16, BYP17, BYP18, BYP19
+1   100uf 25V C-US150-064X183 BYP20                                                                                                                     
+3   138N      74LS138N        IC9, IC10, IC19                                                                                                           
+8   373N      74LS373N        IC11, IC12, IC13, IC14, IC15, IC16, IC17, IC18                                                                            
+8   374N      74LS374N        IC1, IC2, IC3, IC4, IC5, IC6, IC7, IC8                                                                                    
+1   POWER     JP1Q            JP2                                                                                                                       

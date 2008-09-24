@@ -1,0 +1,24 @@
+PDP-8/i Front Panel PCB
+<UL>
+<LI><b>foo</b> is a messed up version of the indicator PCB of an 8/i front
+panel.</LI>
+<LI><b>M900dec</b> is a drawing of DEC's M900 paddle card, which contains
+the indicator drivers, as well as connecting to the front panel cabling.</LI>
+<LI><b>M900</b> is my version of the M900 indicator driver card, which
+provides through-hole (ribbon cable header) connections as well as DEC's
+surface mount.</LI>
+<LI><b>d-cs-8i-0-27</b> is a schematic of the M900 indicator sockets in
+the 8/i backplane.</LI>
+<LI><b>8iPanelDec</b> is a drawing of DEC's indicator PCB, using the
+surface mount ribbon connectors.</LI>
+<LI><b>8iPanel</b> is my version of the indicator PCB, allowing through-hole
+headers for ribbon connection, as well as DEC's original surface mount.</LI>
+<LI><b>8iPanelLED</b> is a version of 8iPanel with current limiting resistors suitable for 
+the use of LEDs instead of indicator lamps.</LI>
+<LI><b>protol</b> is a version of my indicator panel, broken in two, so it
+could be ordered from a protoype shop.</LI>
+<LI><b>proto2.brd</b> is a panelized set of six M900 boards, suitable
+for ordering from a prototype house.</LI>
+<LI><b>8iSwitches</b> is a drawing of a replacement for the switches PCB.</LI>
+<LI><b>8iSwitchesOK</b> is a checkpoint of the replacement for the switches PCB.</LI>
+<LI><b>W077</b> is a pull-up and clamping module for the switch register of the PDP-8/i.</LI>

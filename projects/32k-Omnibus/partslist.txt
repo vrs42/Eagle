@@ -1,0 +1,65 @@
+Partlist
+
+Exported from msc3102.brd at 11/08/2006 05:23:20p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Value          Package      Library        Position (inch)       Orientation
+
+BAT+                    2,15/1,0     wirepad        (3.4 3.9)             R270
+C1       .1uf           C050-025X075 rcl            (10.05 1.4)           R180
+C2       .1uf           C050-025X075 rcl            (10.05 2.6)           R180
+C3       .1uf           C050-025X075 rcl            (9.45 1.4)            R180
+C4       .1uf           C050-025X075 rcl            (8.85 1.4)            R180
+C5       .1uf           C050-025X075 rcl            (8.85 2.6)            R180
+C6       .1uf           C050-025X075 rcl            (8.25 1.4)            R180
+C7       .1uf           C050-025X075 rcl            (8.25 2.6)            R180
+C8       .1uf           C050-025X075 rcl            (7.65 1.4)            R180
+C9       .1uf           C050-025X075 rcl            (6.95 1.4)            R180
+C10      .1uf           C050-025X075 rcl            (6.95 2.6)            R180
+C11      .1uf           C050-025X075 rcl            (6.35 1.4)            R180
+C12      .1uf           C050-025X075 rcl            (6.35 2.6)            R180
+C13      .1uf           C050-025X075 rcl            (5.75 1.4)            R180
+C14      .1uf           C050-025X075 rcl            (5.75 2.6)            R180
+C15      .1uf           C050-025X075 rcl            (4.7 1.4)             R180
+C16      .1uf           C050-025X075 rcl            (3.4 1.4)             R180
+C17      .1uf           C050-025X075 rcl            (2.35 1.4)            R180
+C18      .1uf           C050-025X075 rcl            (2.35 2.6)            R180
+C19      .1uf           C050-025X075 rcl            (1.75 1.4)            R180
+C20      .1uf           C050-025X075 rcl            (1.05 1.4)            R180
+C21      .1uf           C050-025X075 rcl            (1.05 2.6)            R180
+C22                     E22-6        rcl            (9.85 1)              R180
+C23                     E22-6        rcl            (7.15 1)              R180
+C24                     E22-6        rcl            (4.65 1)              R180
+C25                     E22-6        rcl            (1.85 0.9)            R180
+C99      100pf          C050-025X075 rcl            (1.9 2.9)             R90
+E1       AM26S10        DIL16        dec-con        (10.05 1.85)          R270
+E2       74LS30N        DIL14        74xx-jameco    (10.05 3)             R270
+E3       AM26S10        DIL16        dec-con        (9.45 1.85)           R270
+E4       AM26S10        DIL16        dec-con        (8.85 1.85)           R270
+E5       74HCT138N      DIL16        74xx-jameco    (8.85 3.05)           R270
+E6       74LS75N        DIL16        74xx-jameco    (8.25 1.85)           R270
+E7       74HCT02N       DIL14        74xx-jameco    (8.25 3)              R270
+E8       74LS125N       DIL14        74xx-jameco    (7.65 1.8)            R270
+E9       AM26S10        DIL16        dec-con        (6.95 1.85)           R270
+E10      74HCT08N       DIL14        74xx-jameco    (6.95 3)              R270
+E11      AM26S10        DIL16        dec-con        (6.35 1.85)           R270
+E12      74HCT02N       DIL14        74xx-jameco    (6.35 3)              R270
+E13      74LS75N        DIL16        74xx-jameco    (5.75 1.85)           R270
+E14      74LS125N       DIL14        74xx-jameco    (5.75 3)              R270
+E15      62256          DIL28-6      memory-hitachi (4.7 2.15)            R270
+E16      62256          DIL28-6      memory-hitachi (3.4 2.15)            R270
+E17      74LS75N        DIL16        74xx-jameco    (2.35 1.85)           R270
+E18      74HCT123N      DIL16        74xx-jameco    (2.35 3.05)           R270
+E19      AM26S10        DIL16        dec-con        (1.75 1.85)           R270
+E20      AM26S10        DIL16        dec-con        (1.05 1.85)           R270
+E21      74LS125N       DIL14        74xx-jameco    (1.05 3)              R270
+GND                     2,15/1,0     wirepad        (3.4 3.6)             R270
+IC1                     DIL08        ic-package     (4.05 3.15)           R270
+R1       5K             0207/10      rcl            (4.1 2.1)             R90
+R2       5K             0207/10      rcl            (4.2 2.1)             R90
+R3       8.2K           0207/10      rcl            (2 3)                 R270
+R4       5K             0207/10      rcl            (4 2.1)               R90
+R5       5K             0207/10      rcl            (3.9 2.1)             R90
+SV2                     MA08-2       con-lstb       (9.45 2.95)           R90
+U$2                     EDGE-CON8    dec-con        (0 0)                 R0

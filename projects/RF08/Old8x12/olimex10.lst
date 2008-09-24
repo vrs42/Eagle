@@ -1,0 +1,274 @@
+Partlist
+
+Exported from olimex10.brd at  5/16/2007 07:03:20p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Value          Package      Library        Position (inch)       Orientation
+
+C1       0.1            C050-025X075 rcl            (0.4 5.55)            R270
+C2       0.1            C050-025X075 rcl            (1.5 5.55)            R270
+C3       0.1            C050-025X075 rcl            (2.6 5.55)            R270
+C4       0.1            C050-025X075 rcl            (3.7 5.55)            R270
+C5       0.1            C050-025X075 rcl            (5 5.55)              R270
+C6       0.1            C050-025X075 rcl            (6.1 5.55)            R270
+C7       0.1            C050-025X075 rcl            (7.1 5.05)            R270
+C8       0.1            C050-025X075 rcl            (5.45 3.8)            R180
+C9       0.1            C050-025X075 rcl            (5 5.05)              R270
+C10      0.1            C050-025X075 rcl            (6.1 5.05)            R270
+C11      0.1            C050-025X075 rcl            (7.2 4.55)            R270
+C12      0.1            C050-025X075 rcl            (8.45 4.5)            R180
+C13      0.1            C050-025X075 rcl            (0.6 4.55)            R270
+C14      0.1            C050-025X075 rcl            (1.7 4.55)            R270
+C15      0.1            C050-025X075 rcl            (2.8 4.55)            R270
+C16      0.1            C050-025X075 rcl            (3.8 4.55)            R270
+C17      0.1            C050-025X075 rcl            (5 4.55)              R270
+C18      0.1            C050-025X075 rcl            (6.1 4.55)            R270
+C19      0.1            C050-025X075 rcl            (7.4 3.9)             R0
+C20      0.1            C050-025X075 rcl            (0.4 3.95)            R270
+C21      0.1            C050-025X075 rcl            (2.8 3.95)            R270
+C22      0.1            C050-025X075 rcl            (3.9 3.95)            R270
+C23      0.1            C050-025X075 rcl            (4.1 0.45)            R270
+C24      0.1            C050-025X075 rcl            (6.65 4)              R180
+C25      0.1            C050-025X075 rcl            (3.7 3.05)            R270
+C26      0.1            C050-025X075 rcl            (1.05 3)              R180
+C27      0.1            C050-025X075 rcl            (6.05 3.8)            R180
+C28      0.1            C050-025X075 rcl            (2.75 3)              R180
+C29      0.1            C050-025X075 rcl            (3.7 2.45)            R270
+C30      0.1            C050-025X075 rcl            (8.45 2.5)            R180
+C31      0.1            C050-025X075 rcl            (6.65 2.65)           R180
+C32      0.1            C050-025X075 rcl            (3.7 1.85)            R270
+C33      0.1            C050-025X075 rcl            (1.7 3.95)            R270
+C34      0.1            C050-025X075 rcl            (1.05 1.7)            R180
+C35      0.1            C050-025X075 rcl            (2.75 1.7)            R180
+C35L                    MA20-2       con-lstb       (0.55 1.85)           R90
+C36      0.1            C050-025X075 rcl            (3.7 1.05)            R270
+C36L                    MA20-2       con-lstb       (7.95 1.85)           R90
+C37      0.1            C050-025X075 rcl            (8.45 1.3)            R180
+C38      0.1            C050-025X075 rcl            (6.65 1.3)            R180
+C39      0.1            C050-025X075 rcl            (5.45 2.45)           R180
+C40      0.1            C050-025X075 rcl            (6.05 1)              R180
+C41      0.1            C050-025X075 rcl            (3 0.45)              R270
+C42      0.1            C050-025X075 rcl            (6.05 2.45)           R180
+C43      0.1            C050-025X075 rcl            (7.3 0.55)            R270
+C44      0.1            C050-025X075 rcl            (8.45 3.6)            R180
+C45      100uf          E22-6        rcl            (7.65 5.5)            R180
+C46      0.1            C050-025X075 rcl            (5.45 1.1)            R180
+C47      0.1            C050-025X075 rcl            (8.45 5.3)            R180
+C48      0.1            C050-025X075 rcl            (8.7 5)               R270
+CIE                     LED5MM       led            (0.55 6.5)            R0
+D1       1N4148         DO35-10      diode          (9.3 2)               R90
+D2       1N4148         DO35-10      diode          (11.2 1.7)            R0
+D3       1N4148         DO35-10      diode          (11.2 0.5)            R0
+D4       1N4148         DO35-10      diode          (11.7 2.3)            R180
+D5       1N4148         DO35-10      diode          (11.2 4.3)            R0
+D6       1N4148         DO35-10      diode          (9.3 4.6)             R90
+D7       1N4148         DO35-10      diode          (11.2 3.1)            R0
+D8       1N4148         DO35-10      diode          (11.7 4.9)            R180
+D34L                    MA20-2       con-lstb       (7.25 1.85)           R90
+D35L                    MA20-2       con-lstb       (3.35 1.85)           R90
+D36L                    MA20-2       con-lstb       (4.95 1.85)           R90
+DAR4-7   74LS193N       DIL16        74xx-us        (6.05 2)              R270
+DAR8-11  74LS193N       DIL16        74xx-us        (6.05 3.35)           R270
+DBR                     LED5MM       led            (4.45 6.5)            R0
+DCF                     LED5MM       led            (9.85 6.5)            R0
+DEA0                    LED5MM       led            (9.85 7.4)            R0
+DEA1                    LED5MM       led            (9.25 7.4)            R0
+DEA2                    LED5MM       led            (8.65 7.4)            R0
+DEA3                    LED5MM       led            (7.15 7.4)            R0
+DEA4                    LED5MM       led            (6.55 7.4)            R0
+DEA5                    LED5MM       led            (5.95 7.4)            R0
+DEA6                    LED5MM       led            (4.45 7.4)            R0
+DEA7                    LED5MM       led            (3.85 7.4)            R0
+DEA8                    LED5MM       led            (3.25 7.4)            R0
+DMA00                   LED5MM       led            (0.55 7.1)            R0
+DMA0-3   74LS193N       DIL16        74xx-us        (5.45 0.65)           R270
+DMA01                   LED5MM       led            (1.15 7.1)            R0
+DMA02                   LED5MM       led            (1.75 7.1)            R0
+DMA03                   LED5MM       led            (3.25 7.1)            R0
+DMA04                   LED5MM       led            (3.85 7.1)            R0
+DMA4-7   74LS193N       DIL16        74xx-us        (5.45 2)              R270
+DMA05                   LED5MM       led            (4.45 7.1)            R0
+DMA06                   LED5MM       led            (5.95 7.1)            R0
+DMA07                   LED5MM       led            (6.55 7.1)            R0
+DMA08                   LED5MM       led            (7.15 7.1)            R0
+DMA8-11  74LS193N       DIL16        74xx-us        (5.45 3.35)           R270
+DMA09                   LED5MM       led            (8.65 7.1)            R0
+DMA10                   LED5MM       led            (9.25 7.1)            R0
+DMA11                   LED5MM       led            (9.85 7.1)            R0
+DMB00                   LED5MM       led            (0.55 6.8)            R0
+DMB01                   LED5MM       led            (1.15 6.8)            R0
+DMB02                   LED5MM       led            (1.75 6.8)            R0
+DMB03                   LED5MM       led            (3.25 6.8)            R0
+DMB04                   LED5MM       led            (3.85 6.8)            R0
+DMB05                   LED5MM       led            (4.45 6.8)            R0
+DMB06                   LED5MM       led            (5.95 6.8)            R0
+DMB07                   LED5MM       led            (6.55 6.8)            R0
+DMB08                   LED5MM       led            (7.15 6.8)            R0
+DMB09                   LED5MM       led            (8.65 6.8)            R0
+DMB10                   LED5MM       led            (9.25 6.8)            R0
+DMB11                   LED5MM       led            (9.85 6.8)            R0
+DRE                     LED5MM       led            (3.25 6.5)            R0
+DRL                     LED5MM       led            (5.95 6.5)            R0
+EIE                     LED5MM       led            (1.15 6.5)            R0
+F.1                     LED5MM       led            (1.75 7.4)            R0
+F.2                     LED5MM       led            (1.15 7.4)            R0
+F.3                     LED5MM       led            (0.55 7.4)            R0
+FIELD    74LS193N       DIL16        74xx-us        (8.45 3.15)           R270
+G1       B2430UNI       B2430UNI     battery        (12.075 1.75)         R90
+G2       B2430UNI       B2430UNI     battery        (12.075 0.55)         R90
+G3       B2430UNI       B2430UNI     battery        (12.075 4.35)         R90
+G4       B2430UNI       B2430UNI     battery        (12.075 3.15)         R90
+IC1      74LS151N       DIL16        74xx-eu        (0.85 5.55)           R0
+IC2      74LS151N       DIL16        74xx-eu        (1.95 5.55)           R0
+IC3      74LS151N       DIL16        74xx-eu        (3.05 5.55)           R0
+IC4      74LS151N       DIL16        74xx-eu        (4.15 5.55)           R0
+IC5      74LS20N        DIL14        74xx-us        (5.4 5.55)            R0
+IC6      74LS139N       DIL16        74xx-us        (6.55 5.55)           R0
+IC7      74LS139N       DIL16        74xx-us        (7.55 5.05)           R0
+IC8      LM555N         DIL08        linear         (8.45 5.05)           R270
+IC9      74S74N         DIL14        74xx-us        (5.4 5.05)            R0
+IC10     74S74N         DIL14        74xx-us        (6.5 5.05)            R0
+IC11     74S74N         DIL14        74xx-us        (7.6 4.55)            R0
+IC12     74LS00N        DIL14        74xx-eu        (8.45 4.1)            R270
+IC13     74180N         DIL14        74xx-us        (1 4.55)              R0
+IC14     74180N         DIL14        74xx-us        (2.1 4.55)            R0
+IC15     74180N         DIL14        74xx-us        (3.2 4.55)            R0
+IC16     74LS139N       DIL16        74xx-us        (4.25 4.55)           R0
+IC17     74LS139N       DIL16        74xx-us        (5.45 4.55)           R0
+IC18     74LS00N        DIL14        74xx-eu        (6.5 4.55)            R0
+IC19     7407N          DIL14        74xx-us        (7.6 3.65)            R0
+IC20     74S240N        DIL20        74xx-us        (0.95 3.95)           R0
+IC21     74LS139N       DIL16        74xx-us        (3.25 3.95)           R0
+IC22     7407N          DIL14        74xx-us        (4.3 3.95)            R0
+IC23     74S74N         DIL14        74xx-us        (4.5 0.45)            R0
+IC24     74S240N        DIL20        74xx-us        (6.65 3.45)           R270
+IC25     74S138N        DIL16        74xx-us        (4.15 3.05)           R0
+IC26     74S240N        DIL20        74xx-us        (1.05 2.45)           R270
+IC27     SPARE          DIL20        ic-package     (2.15 1.15)           R270
+IC28     74LS244N       DIL20        74xx-us        (2.75 2.45)           R270
+IC29     74S138N        DIL16        74xx-us        (4.15 2.45)           R0
+IC30     74S240N        DIL20        74xx-us        (8.45 1.95)           R270
+IC31     74S240N        DIL20        74xx-us        (6.65 2.1)            R270
+IC32     74S138N        DIL16        74xx-us        (4.15 1.85)           R0
+IC33     74LS139N       DIL16        74xx-us        (2.15 3.95)           R0
+IC34     74S240N        DIL20        74xx-us        (1.05 1.15)           R270
+IC35     74LS244N       DIL20        74xx-us        (2.75 1.15)           R270
+IC36     74S138N        DIL16        74xx-us        (4.15 1.05)           R0
+IC37     74S240N        DIL20        74xx-us        (8.45 0.75)           R270
+IC38     74S240N        DIL20        74xx-us        (6.65 0.75)           R270
+IC39     628512         DIL32        memory-hitachi (10.15 4.1)           R0
+IC40     74S03N         DIL14        74xx-us        (6.05 0.6)            R270
+IC41     74LS139N       DIL16        74xx-us        (3.45 0.45)           R0
+IC42     628512         DIL32        memory-hitachi (10.15 1.5)           R0
+IC43     628512         DIL32        memory-hitachi (10.15 0.55)          R0
+IC44     4011N          DIL14        40xx           (11.4 1.15)           R0
+IC45     628512         DIL32        memory-hitachi (10.15 3.1)           R0
+IC46     4011N          DIL14        40xx           (11.4 3.75)           R0
+IC47     7404N          DIL14        74xx-us        (2.5 7.25)            R0
+IC48     7404N          DIL14        74xx-us        (2.5 6.65)            R0
+IC49     7404N          DIL14        74xx-us        (5.2 7.3)             R0
+IC50     7404N          DIL14        74xx-us        (5.2 6.65)            R0
+IC51     7404N          DIL14        74xx-us        (7.9 7.25)            R0
+IC52     7404N          DIL14        74xx-us        (7.9 6.65)            R0
+IC53     7404N          DIL14        74xx-us        (10.6 7.25)           R0
+IC54     7404N          DIL14        74xx-us        (10.6 6.65)           R0
+INTENB   74LS193N       DIL16        74xx-us        (7.75 0.55)           R0
+J1                      04C          jumper         (11.4 2.125)          R270
+J2       J5MM           05           jumper         (0.4 2.1)             R270
+J3       J5MM           05           jumper         (7.7 2.1)             R180
+J4       J5MM           05           jumper         (7.7 2)               R180
+J5       J5MM           05           jumper         (7.7 1.9)             R180
+J6       J5MM           05           jumper         (7.7 1.7)             R180
+J7       J5MM           05           jumper         (7.7 1.6)             R180
+J8       J5MM           05           jumper         (7.7 1.5)             R180
+J9       J5MM           05           jumper         (7.7 1.4)             R180
+J10      J5MM           05           jumper         (7.7 1.3)             R180
+J11      J5MM           05           jumper         (7.7 1.2)             R180
+J12      J5MM           05           jumper         (7.7 1.1)             R180
+J13      J5MM           05           jumper         (7.7 1)               R180
+J14      J5MM           05           jumper         (7.7 0.9)             R180
+J15                     04C          jumper         (11.4 4.725)          R270
+NXD                     LED5MM       led            (7.15 6.5)            R0
+PAD1                    1,6/0,8      wirepad        (4.5 1.4)             R90
+PAD2                    1,6/0,8      wirepad        (3.9 1.3)             R90
+PAD3                    1,6/0,8      wirepad        (4 1.3)               R90
+PAD4                    1,6/0,8      wirepad        (4.1 1.3)             R90
+PAD5                    1,6/0,8      wirepad        (4.2 1.3)             R90
+PAD6                    1,6/0,8      wirepad        (4.3 1.3)             R90
+PAD7                    1,6/0,8      wirepad        (4.4 1.3)             R90
+PAD8                    1,6/0,8      wirepad        (4.5 1.3)             R90
+PAD9                    1,6/0,8      wirepad        (4.6 1.3)             R90
+PAD10                   1,6/0,8      wirepad        (3.3 6.3)             R0
+PAD11                   1,6/0,8      wirepad        (6 6.3)               R0
+PER                     LED5MM       led            (9.25 6.5)            R0
+PIE                     LED5MM       led            (1.75 6.5)            R0
+R/W                     LED5MM       led            (3.85 6.5)            R0
+R1       4.7K           0207/10      rcl            (7.2 3.6)             R90
+R2       4.7K           0207/10      rcl            (1.6 0.7)             R180
+R3       10 Megohm      0207/10      rcl            (9.3 0.8)             R90
+R4       10 Megohm      0207/10      rcl            (9.3 3.3)             R90
+R5       330            0207/10      rcl            (0.4 7.4)             R90
+R6       330            0207/10      rcl            (1 7.4)               R90
+R7       330            0207/10      rcl            (1.6 7.4)             R90
+R8       330            0207/10      rcl            (3.1 7.4)             R90
+R9       330            0207/10      rcl            (3.7 7.4)             R90
+R10      330            0207/10      rcl            (4.3 7.4)             R90
+R11      330            0207/10      rcl            (5.8 7.4)             R90
+R12      330            0207/10      rcl            (6.4 7.4)             R90
+R13      330            0207/10      rcl            (7 7.4)               R90
+R14      330            0207/10      rcl            (8.5 7.4)             R90
+R15      330            0207/10      rcl            (9.1 7.4)             R90
+R16      330            0207/10      rcl            (9.7 7.4)             R90
+R17      330            0207/10      rcl            (0.3 7.4)             R90
+R18      330            0207/10      rcl            (0.9 7.4)             R90
+R19      330            0207/10      rcl            (1.5 7.4)             R90
+R20      330            0207/10      rcl            (3 7.4)               R90
+R21      330            0207/10      rcl            (3.6 7.4)             R90
+R22      330            0207/10      rcl            (4.2 7.4)             R90
+R23      330            0207/10      rcl            (5.7 7.4)             R90
+R24      330            0207/10      rcl            (6.3 7.4)             R90
+R25      330            0207/10      rcl            (6.9 7.4)             R90
+R26      330            0207/10      rcl            (8.4 7.4)             R90
+R27      330            0207/10      rcl            (9 7.4)               R90
+R28      330            0207/10      rcl            (9.6 7.4)             R90
+R29      330            0207/10      rcl            (0.3 6.5)             R270
+R30      330            0207/10      rcl            (0.9 6.5)             R270
+R31      330            0207/10      rcl            (1.5 6.5)             R270
+R32      330            0207/10      rcl            (3 6.5)               R270
+R33      330            0207/10      rcl            (3.6 6.5)             R270
+R34      330            0207/10      rcl            (4.2 6.5)             R270
+R35      330            0207/10      rcl            (5.7 6.5)             R270
+R36      330            0207/10      rcl            (6.3 6.5)             R270
+R37      330            0207/10      rcl            (6.9 6.5)             R270
+R38      330            0207/10      rcl            (8.4 6.5)             R270
+R39      330            0207/10      rcl            (9 6.5)               R270
+R40      330            0207/10      rcl            (9.6 6.5)             R270
+R41      330            0207/10      rcl            (0.4 6.5)             R270
+R42      330            0207/10      rcl            (1 6.5)               R270
+R43      330            0207/10      rcl            (1.6 6.5)             R270
+R44      330            0207/10      rcl            (3.1 6.5)             R270
+R45      330            0207/10      rcl            (3.7 6.5)             R270
+R46      330            0207/10      rcl            (4.3 6.5)             R270
+R47      330            0207/10      rcl            (5.8 6.5)             R270
+R48      330            0207/10      rcl            (6.4 6.5)             R270
+R49      330            0207/10      rcl            (7 6.5)               R270
+R50      330            0207/10      rcl            (8.5 6.5)             R270
+R51      330            0207/10      rcl            (9.1 6.5)             R270
+R52      330            0207/10      rcl            (9.7 6.5)             R270
+RA       470K           0207/10      rcl            (8.5 4.7)             R0
+RB       1.5K           0207/10      rcl            (8.5 4.8)             R180
+RF08A                   MA20-2       con-lstb       (10.35 2.25)          R0
+RF08B                   MA20-2       con-lstb       (10.35 4.85)          R0
+RL       1K             0207/10      rcl            (8.2 4.9)             R90
+RS08                    MA20-2       con-lstb       (1.55 1.85)           R270
+SV1                     MA13-2       con-lstb       (1.1 0.35)            R0
+SV2                     MA13-2       con-lstb       (1.1 3.35)            R180
+SV3                     MA13-2       con-lstb       (10.2 6)              R0
+SV4                     MA13-2       con-lstb       (11.35 7)             R90
+SW1                     EDG-08       special        (0.85 5.05)           R0
+SW2                     EDG-08       special        (1.95 5.05)           R0
+SW3                     EDG-08       special        (3.05 5.05)           R0
+SW4                     EDG-08       special        (4.15 5.05)           R0
+WCO                     LED5MM       led            (8.65 6.5)            R0
+WLS                     LED5MM       led            (6.55 6.5)            R0

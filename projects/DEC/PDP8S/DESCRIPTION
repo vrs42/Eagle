@@ -1,0 +1,14 @@
+PDP-8/S
+<UL>
+<LI><b>Memory-4K.sch</b> is a schematic by John Price of a proposed core 
+replacement for the 8/S.</LI>
+<LI><b>memory-32kx13.sch</b> is another schematic by John Price of a proposed
+core replacement for the 8/S.</LI>
+<LI><b>ramboard</b> is my drawing for a battery backed SRAM for the 8/S.
+This one uses an open collector bus to reduce the number of drivers.</LI>
+<LI><b>mtiming</b> is a schematic with my notes on memory timing in the 
+8/S.</LI>
+<LI><b>PDP8S</b> is a snapshot of the 8/S schematics (just the first page).</LI>
+<LI><b>pre-io</b> is another snapshot of the 8/S schematics (9 pages done).</LI>
+<LI><b>memory</b> is a complete schematic for the 8/S, with the core memory 
+subsystem replaced with level converters and a ramboard.</LI>

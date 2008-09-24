@@ -1,0 +1,17 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/M452r/M452r.sch at 11/03/2003 07:45:31p
+
+WARNING: Sheet 1/1: POWER Pin IC2/+UB +UB connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC2/-UB -UB connected to GND
+WARNING: Only 1 Pin on net 75
+WARNING: Only 1 Pin on net 134.5
+WARNING: Only 1 Pin on net 200
+WARNING: Only 1 Pin on net 1800
+WARNING: Only 1 Pin on net 3600
+WARNING: Only 1 Pin on net 7200
+
+Board and schematic are consistent
+
+    0 errors
+    8 warnings

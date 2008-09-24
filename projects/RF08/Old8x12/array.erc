@@ -1,0 +1,19 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/RF08/array.sch at  5/19/2004 04:43:57p
+
+WARNING: Sheet 1/1: NC Pin IC1 NC connected to A18
+WARNING: Sheet 1/1: POWER Pin IC1 VSS connected to GND
+WARNING: Sheet 1/1: NC Pin IC2 NC connected to A18
+WARNING: Sheet 1/1: POWER Pin IC2 VSS connected to GND
+WARNING: Sheet 1/1: NC Pin IC3 NC connected to A18
+WARNING: Sheet 1/1: POWER Pin IC3 VSS connected to GND
+WARNING: Sheet 1/1: NC Pin IC4 NC connected to A18
+WARNING: Sheet 1/1: POWER Pin IC4 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC6P VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC6P VDD connected to VCC
+
+Board and schematic are consistent
+
+    0 errors
+   10 warnings

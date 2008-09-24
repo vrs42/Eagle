@@ -1,0 +1,22 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/DEC/Wxxx/W07x/M850x.sch at  6/06/2007 07:11:53a
+
+Qty Value          Device             Parts                                             
+1                  10HS               PL1                                               
+1                  26H                PL2                                               
+3                  MA05-1             CTSRTS, DTRDCR, TXRX                              
+2   .01uf          C-US050-025X075    C1, C2                                            
+11  1.5K           R-US_0207/10       R1, R4, R9, R10, R15, R18, R22, R23, R27, R28, R30
+2   1K             R-US_0207/10       R5, R6                                            
+1   1N753          ZENER-DIODEDO35Z10 D4                                                
+10  1N3606         1N4148             D1, D2, D3, D5, D6, D7, D8, D9, D10, D11          
+2   7.5K           R-US_0207/10       R3, R26                                           
+1   10K            R-US_0207/10       R29                                               
+3   15K            R-US_0207/10       R2, R13, R21                                      
+2   33K            R-US_0207/10       R12, R19                                          
+6   47             R-US_0207/10       R7, R8, R16, R17, R24, R25                        
+1   100K           R-US_0207/10       R14                                               
+2   470            R-US_0207/10       R11, R20                                          
+2   3009B          -NPN-TO18-         Q3, Q7                                            
+6   6534B          -PNP-TO92/         Q1, Q2, Q4, Q5, Q6, Q8                            
+1   EDGE-1         EDGE-1             EDGE                                              
+1   OUTLINE-SINGLE OUTLINE-SINGLE     U$1                                               

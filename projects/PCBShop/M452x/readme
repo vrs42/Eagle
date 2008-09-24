@@ -1,0 +1,20 @@
+PCBpro Order# 8471
+12/01/03
+Vincent Slyngstad
+P/N M452x Rev A
+
+Please build a quantity of 30 pieces of this 6-layer board. We are requesting 1-oz. finished copper weight, 0.062" thick on FR4 material, green solder mask, and white legend.
+
+The Gerber files included in this zip:
+
+File Name Description:
+m452x.cmp Layer 1 (component side) 
+m452x.sol Layer 2 solder side
+m452x.stc Component-side solder mask
+m452x.sts Solder-side solder mask
+m452x.plc Component-side silkscreen (nomenclature)
+m452x.drd Excellon drill file
+m452x.drl Drill tool description 
+
+Any technical questions can be referred to v.slyngstad@verizon.net. 
+My contact number is 503-259-9615.

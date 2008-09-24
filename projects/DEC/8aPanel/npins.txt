@@ -1,0 +1,947 @@
+Pinlist
+
+Exported from board2.brd at  6/02/2005 06:06:17p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Pad      Net
+
+C1       1        GND
+         2        VCC
+
+C2       1        GND
+         2        VCC
+
+C3       1        GND
+         2        VCC
+
+C4       1        GND
+         2        VCC
+
+C5       1        GND
+         2        VCC
+
+C6       1        GND
+         2        VCC
+
+C7       1        GND
+         2        VCC
+
+C8       1        GND
+         2        VCC
+
+C9       1        GND
+         2        VCC
+
+C10      1        GND
+         2        VCC
+
+C11      1        GND
+         2        VCC
+
+C12      1        GND
+         2        VCC
+
+C13      1        GND
+         2        VCC
+
+C14      1        GND
+         2        VCC
+
+C15      1        GND
+         2        VCC
+
+C16      1        GND
+         2        VCC
+
+C17      1        GND
+         2        VCC
+
+C18      1        GND
+         2        VCC
+
+C19      1        GND
+         2        VCC
+
+C20      1        GND
+         2        VCC
+
+C21      1        GND
+         2        VCC
+
+C22      1        GND
+         2        VCC
+
+C23      1        GND
+         2        VCC
+
+C24      1        GND
+         2        VCC
+
+C25      1        GND
+         2        VCC
+
+C26      1        GND
+         2        VCC
+
+C27      1        GND
+         2        VCC
+
+C28      1        GND
+         2        VCC
+
+C29      1        GND
+         2        VCC
+
+C30      1        GND
+         2        VCC
+
+C31      1        GND
+         2        VCC
+
+C32      1        GND
+         2        VCC
+
+C33      1        GND
+         2        VCC
+
+C34      1        GND
+         2        VCC
+
+C35      1        GND
+         2        VCC
+
+C36      1        GND
+         2        VCC
+
+C37      1        N$88
+         2        N$89
+
+C38      +        VCC
+         -        GND
+
+C39      +        VCC
+         -        GND
+
+E1       1        KFUN2\
+         10       N$4
+         11       N$3
+         12       N$2
+         13       ENT2
+         14       VCC
+         2        KFUN2\
+         3        GND
+         4        GND
+         5        GND
+         6        EMODE\
+         7        GND
+         8        NUMCLK
+         9        NUMCLK
+
+E2       1        KFUN1\
+         10       N$6
+         11       N$5
+         12       N$1
+         13       ENT1
+         14       VCC
+         2        KFUN1\
+         3        GND
+         4        GND
+         5        GND
+         6        EMODE\
+         7        GND
+         8        NUMCLK
+         9        NUMCLK
+
+E3       1        KFUN0\
+         10       N$9
+         11       N$8
+         12       N$7
+         13       ENT0
+         14       VCC
+         2        KFUN0\
+         3        GND
+         4        GND
+         5        GND
+         6        EMODE\
+         7        GND
+         8        NUMCLK
+         9        NUMCLK
+
+E4       1                 *** unconnected ***
+         10       VCC
+         11       VCC
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14                *** unconnected ***
+         15                *** unconnected ***
+         16       VCC
+         2                 *** unconnected ***
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5        N$75
+         6        N$88
+         7        N$89
+         8        GND
+         9        N$41
+
+E5       1        BPOK
+         10       N$84
+         11                *** unconnected ***
+         12       ENT2
+         13       N$2
+         14                *** unconnected ***
+         15       N$83
+         16       VCC
+         2        N$85
+         3                 *** unconnected ***
+         4        N$3
+         5        N$4
+         6                 *** unconnected ***
+         7        N$86
+         8        GND
+         9        LDSR
+
+E6       1        BPOK
+         10       N$80
+         11                *** unconnected ***
+         12       ENT1
+         13       N$1
+         14                *** unconnected ***
+         15       N$79
+         16       VCC
+         2        N$82
+         3                 *** unconnected ***
+         4        N$5
+         5        N$6
+         6                 *** unconnected ***
+         7        N$81
+         8        GND
+         9        LDSR
+
+E7       1        BPOK
+         10       N$64
+         11                *** unconnected ***
+         12       ENT0
+         13       N$7
+         14                *** unconnected ***
+         15       N$63
+         16       VCC
+         2        N$66
+         3                 *** unconnected ***
+         4        N$8
+         5        N$9
+         6                 *** unconnected ***
+         7        N$65
+         8        GND
+         9        LDSR
+
+E8       1        SRDATA\
+         10       N$75
+         11       ADRLTH\
+         12       N$75
+         13       MH0
+         14       VCC
+         2        MH0\
+         3        N$38
+         4        NUM
+         5        KEYSTB
+         6        NUMCLK
+         7        GND
+         8        DSPLTH\
+         9        MH0\
+
+E9       1        GATESR\
+         10       GND
+         11       N$83
+         12       BUS11
+         13       N$84
+         14       BUS8
+         15       N$86
+         16       BUS5
+         17       N$85
+         18       BUS2
+         19       GATEENT\
+         2        N$3
+         20       VCC
+         3        BUS2
+         4        N$4
+         5        BUS5
+         6        ENT2
+         7        BUS8
+         8        N$2
+         9        BUS11
+
+E10      1        GATESR\
+         10       GND
+         11       N$79
+         12       BUS10
+         13       N$80
+         14       BUS7
+         15       N$81
+         16       BUS4
+         17       N$82
+         18       BUS1
+         19       GATEENT\
+         2        N$5
+         20       VCC
+         3        BUS1
+         4        N$6
+         5        BUS4
+         6        ENT1
+         7        BUS7
+         8        N$1
+         9        BUS10
+
+E11      1        GATESR\
+         10       GND
+         11       N$63
+         12       BUS9
+         13       N$64
+         14       BUS6
+         15       N$65
+         16       BUS3
+         17       N$66
+         18       BUS0
+         19       GATEENT\
+         2        N$8
+         20       VCC
+         3        BUS0
+         4        N$9
+         5        BUS3
+         6        ENT0
+         7        BUS6
+         8        N$7
+         9        BUS9
+
+E12      1        BPOK
+         10       N$28
+         11       BUS5
+         12       N$27
+         13       BUS8
+         14       BUS11
+         15       N$26
+         16       VCC
+         2        N$32
+         3        BUS7
+         4        BUS10
+         5        N$33
+         6        BUS2
+         7        N$29
+         8        GND
+         9        ADRLTH\
+
+E13      1        BPOK
+         10       N$19
+         11       BUS5
+         12       N$20
+         13       BUS8
+         14       BUS11
+         15       N$21
+         16       VCC
+         2        N$16
+         3        BUS7
+         4        BUS10
+         5        N$17
+         6        BUS2
+         7        N$18
+         8        GND
+         9        DSPLTH\
+
+E14      1        BPOK
+         10       N$25
+         11       BUS9
+         12       N$31
+         13       BUS1
+         14       BUS4
+         15       N$30
+         16       VCC
+         2        N$22
+         3        BUS0
+         4        BUS3
+         5        N$23
+         6        BUS6
+         7        N$24
+         8        GND
+         9        ADRLTH\
+
+E15      1        BPOK
+         10       N$13
+         11       BUS9
+         12       N$14
+         13       BUS1
+         14       BUS4
+         15       N$15
+         16       VCC
+         2        N$10
+         3        BUS0
+         4        BUS3
+         5        N$11
+         6        BUS6
+         7        N$12
+         8        GND
+         9        DSPLTH\
+
+E16      1        BPOK
+         10       VCC
+         11       KEYSTB\
+         12       NUM
+         13       BPOK
+         14       VCC
+         2        BOOTF\
+         3        N$34
+         4        VCC
+         5                 *** unconnected ***
+         6        BOOTF\
+         7        GND
+         8        EMODE\
+         9        DISPINH
+
+E17      1        GND
+         10       N$26
+         11       N$28
+         12       N$27
+         13       N$29
+         14       MPXA
+         15       GND
+         16       VCC
+         2        MPXB
+         3        N$31
+         4        N$32
+         5        N$30
+         6        N$33
+         7        ADDR1
+         8        GND
+         9        ADDR2
+
+E18      1        GND
+         10       N$25
+         11       N$23
+         12       N$24
+         13       N$22
+         14       MPXA
+         15       GND
+         16       VCC
+         2        MPXB
+         3        N$18
+         4        N$20
+         5        N$19
+         6        N$21
+         7        DISPLAY2
+         8        GND
+         9        ADDR0
+
+E19      1        GND
+         10       N$17
+         11       N$15
+         12       N$16
+         13       N$14
+         14       MPXA
+         15       GND
+         16       VCC
+         2        MPXB
+         3        N$10
+         4        N$12
+         5        N$11
+         6        N$13
+         7        DISPLAY0
+         8        GND
+         9        DISPLAY1
+
+E20      1        BPOK
+         10       VCC
+         11       N$41
+         12       MH0\
+         13       BPOK
+         14       VCC
+         2        STHIS\
+         3        TSI\
+         4        N$93
+         5        THIS
+         6                 *** unconnected ***
+         7        GND
+         8        MH0\
+         9        MH0
+
+E21      1        N$35
+         10       TSI\
+         11       E30PIN8
+         12       N$34
+         13       NUM
+         14       VCC
+         2        KEYSTB\
+         3        N$52
+         4        N$52
+         5        E30PIN8
+         6        GATEENT\
+         7        GND
+         8        N$87
+         9        MH0\
+
+E22      1        N$41
+         10       N$36
+         11       MH0
+         12       DISPINH
+         13       N$37
+         14       VCC
+         2        N$40
+         3        N$39
+         4        N$52
+         5        N$38
+         6        EMODE\
+         7        GND
+         8        N$42
+         9        N$53
+
+E23      1        N$62
+         10       BPOK
+         11       N$47
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14       VCC
+         2        LAENAB\
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5                 *** unconnected ***
+         6                 *** unconnected ***
+         7        GND
+         8        MAEN\
+         9        N$87
+
+E24      1        KEYSTB
+         10       N$47
+         11       POWCK
+         12       N$43
+         13       PANLOCK\
+         14       VCC
+         2        KEYSTB\
+         3        FUN\
+         4        N$35
+         5        RUN\
+         6        BRUN
+         7        GND
+         8        N$44
+         9        TSI\
+
+E25      1        N$51
+         10       N$43
+         11       FUN\
+         12       N$42
+         13       N$50
+         14       VCC
+         2        FUN\
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5                 *** unconnected ***
+         6                 *** unconnected ***
+         7        GND
+         8        N$53
+         9        N$94
+
+E26      1                 *** unconnected ***
+         10       N$49
+         11                *** unconnected ***
+         12       GND
+         13       KEY-F\
+         14                *** unconnected ***
+         15       N$50
+         16       N$51
+         2        KFUN0\
+         3        KFUN1\
+         4        KEY-F\
+         5        VCC
+         6        KFUN2\
+         7        BRUN
+         8        N$93
+         9        N$94
+
+E27      1        SHLT\
+         10       BEMA0
+         11       EMA0\
+         12       BEMA2
+         13       EMA2\
+         14       VCC
+         2        N$77
+         3        N$50
+         4        N$74
+         5        KEY-F\
+         6        N$67
+         7        GND
+         8        BEMA1
+         9        EMA1\
+
+E28      1        N$43
+         10       BOOTF\
+         11       MALC\
+         12       THIS
+         13       SINGSTEP\
+         14       N$68
+         15       N$43
+         16       VCC
+         2        N$56
+         3        BKDTACNTL\
+         4        N$55
+         5        DEP\
+         6        N$71
+         7        IND1\
+         8        GND
+         9        BFSW\
+
+E29      1        N$49
+         10       N$57
+         11       N$58
+         12       N$59
+         13       N$60
+         14       N$61
+         15       N$48
+         16       VCC
+         2        N$50
+         3        N$51
+         4        N$36
+         5        N$36
+         6        VCC
+         7        N$55
+         8        GND
+         9        N$56
+
+E30      1        N$50
+         10       N$55
+         11       N$68
+         12       N$77
+         13       N$67
+         14       VCC
+         2        N$60
+         3        N$76
+         4        N$37
+         5        GATEENT\
+         6        N$70
+         7        GND
+         8        E30PIN8
+         9        N$71
+
+E31      1        KEYSTB\
+         10       N$58
+         11       MSIRDIS\
+         12       N$74
+         13       KEYCNTL\
+         14       N$76
+         15       N$36
+         16       VCC
+         2        N$57
+         3        MEMSTART\
+         4        N$69
+         5        MEMSTART\
+         6        N$71
+         7        PULSELOADADD\
+         8        GND
+         9        INIT\
+
+E32      1        N$55
+         10       N$60
+         11       GATESR\
+         12       N$45
+         13       SRDATA\
+         14       VCC
+         2        N$56
+         3        N$69
+         4        BRUN
+         5        N$44
+         6        N$40
+         7        GND
+         8        N$71
+         9        N$59
+
+E33      1        N$39
+         10       N$46
+         11       KEYSTB\
+         12       N$61
+         13       LDSR
+         14       VCC
+         2        MCLOCK\
+         3        BRUN
+         4        N$62
+         5        N$71
+         6        N$43
+         7        GND
+         8        N$48
+         9        KEYSTB\
+
+E34      1        N$70
+         10       VCC
+         11       STATE\
+         12       N$72
+         13       BUSEN\
+         14       DISP2
+         15       N$70
+         16       VCC
+         2        DISP0
+         3        IND1\
+         4        DISP1
+         5        IND2\
+         6        N$73
+         7        MD\
+         8        GND
+         9                 *** unconnected ***
+
+E35      1        DISP2
+         10       N$72
+         11       N$45
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14                *** unconnected ***
+         15                *** unconnected ***
+         16       VCC
+         2        DISP1
+         3        DISP0
+         4        N$70
+         5        N$70
+         6        VCC
+         7                 *** unconnected ***
+         8        GND
+         9        N$73
+
+E36      1        VCC
+         10                *** unconnected ***
+         11       VCC
+         12                *** unconnected ***
+         13       VCC
+         14       ENT0
+         15       DISP0
+         16       VCC
+         2        DISP2
+         3        ENT2
+         4        ENT1
+         5        DISP1
+         6        VCC
+         7                 *** unconnected ***
+         8        GND
+         9        N$46
+
+J1       1        GND
+         10       BUS9
+         11       GND
+         12       BUS8
+         13       GND
+         14       BUS11
+         15       GND
+         16       BUS10
+         17       GND
+         18       RUN\
+         19       GND
+         2                 *** unconnected ***
+         20       BUS4
+         21       GND
+         22       BUS5
+         23       GND
+         24       BUSEN\
+         25       GND
+         26       TSI\
+         27       GND
+         28       EMA1\
+         29       GND
+         3        GND
+         30       EMA0\
+         31       GND
+         32       EMA2\
+         33       GND
+         34       BUS0
+         35       GND
+         36       BUS1
+         37       GND
+         38       BUS2
+         39       GND
+         4                 *** unconnected ***
+         40       BUS3
+         5        GND
+         6        BUS7
+         7        GND
+         8        BUS6
+         9        GND
+
+J2       1        GND
+         10       KEYCNTL\
+         11       GND
+         12       BKDTACNTL\
+         13       GND
+         14       SINGSTEP\
+         15       GND
+         16       GND
+         17       GND
+         18       MD\
+         19       GND
+         2        MSIRDIS\
+         20       DEP\
+         21       GND
+         22       LAENAB\
+         23       GND
+         24       BFSW\
+         25       GND
+         26       MEMSTART\
+         27       GND
+         28       POWCK
+         29       GND
+         3        GND
+         30       SRDATA\
+         31       GND
+         32       MAEN\
+         33       GND
+         34       INIT\
+         35       GND
+         36       MALC\
+         37       GND
+         38       STATE\
+         39       GND
+         4        IND2\
+         40       PULSELOADADD\
+         5        GND
+         6        PANLOCK\
+         7        GND
+         8        IND1\
+         9        GND
+
+J3       1        KFUN2\
+         10       ADDR0
+         11       DISPLAY1
+         12       ADDR1
+         13       BEMA0
+         14       BEMA2
+         15       BEMA1
+         16       VCC
+         2        KFUN1\
+         3        KFUN0\
+         4        STHIS\
+         5        SHLT\
+         6        DISPLAY2
+         7        DISPLAY0
+         8        GND
+         9        ADDR2
+
+J4       1        MCLOCK\
+         10       BPOK
+         11       NUM
+         12       BRUN
+         13       MPXB
+         14       MPXA
+         15       FUN\
+         16       VCC
+         2        KEYSTB
+         3        KEY-F\
+         4        DISPINH
+         5        DISP0
+         6        DISP1
+         7        DISP2
+         8        GND
+         9        EXTPUL\
+
+PAD7     1        VCC
+
+PAD8     1        GND
+
+R1       1        GND
+         2        BUS8
+
+R2       1        GND
+         2        BUS11
+
+R3       1        GND
+         2        BUS2
+
+R4       1        GND
+         2        BUS5
+
+R5       1        BUS1
+         2        VCC
+
+R6       1        BUS4
+         2        VCC
+
+R7       1        BUS7
+         2        VCC
+
+R8       1        BUS10
+         2        VCC
+
+R9       1        BUS0
+         2        VCC
+
+R10      1        BUS3
+         2        VCC
+
+R11      1        BUS6
+         2        VCC
+
+R12      1        BUS8
+         2        VCC
+
+R13      1        BUS8
+         2        VCC
+
+R14      1        BUS11
+         2        VCC
+
+R15      1        BUS2
+         2        VCC
+
+R16      1        BUS5
+         2        VCC
+
+R17      1        GND
+         2        BUS1
+
+R18      1        GND
+         2        BUS4
+
+R19      1        GND
+         2        BUS7
+
+R20      1        GND
+         2        BUS10
+
+R21      1        GND
+         2        BUS0
+
+R22      1        GND
+         2        BUS3
+
+R23      1        GND
+         2        BUS6
+
+R24      1        GND
+         2        BUS8
+
+R25      1        N$89
+         2        VCC
+
+R26      1        VCC
+         2        TSI\
+
+R27      1        TSI\
+         2        GND
+
+R28      1        RUN\
+         2        VCC
+
+R29      1        VCC
+         2        SRDATA\
+
+R30      1        SRDATA\
+         2        GND
+
+R31      1        VCC
+         2        PANLOCK\
+
+R32      1        VCC
+         2        BPOK
+
+R33      1        VCC
+         2        POWCK
+
+R34      1        VCC
+         2        EMA0\
+
+R35      1        VCC
+         2        EMA1\
+
+R36      1        VCC
+         2        EMA2\
+

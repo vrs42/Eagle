@@ -1,0 +1,2256 @@
+EAGLE Version 4.1 Update Information
+====================================
+
+This file contains information for users of previous EAGLE versions.
+Please read this file entirely if you are updating from an EAGLE version
+prior to 4.11!
+
+WARNING: Due to some necessary changes in the data structure once you edit
+         a file with version 4.1 you will no longer be able to edit it
+         with versions prior to 4.1!
+
+         PLEASE MAKE BACKUP COPIES OF YOUR CURRENT BOARD-, SCHEMATIC- AND
+         LIBRARY-FILES BEFORE EDITING THEM WITH VERSION 4.1!
+
+WARNING: AFTER UPDATING ANY FILES PLEASE RUN BOTH AN ELECTRICAL RULE CHECK
+         (ERC) AND A DESIGN RULE CHECK (DRC)! YOU MAY NEED TO ADJUST THE
+         DESIGN RULE PARAMETERS UNDER "Edit/Design rules..." TO YOUR
+         SPECIFIC NEEDS! SEE ALSO THE REMARKS REGARDING RESTRINGS AND
+         MINIMUM DISTANCES BETWEEN COPPER AND DIMENSIONS UNDER "Design Rules"
+         BELOW!
+
+Release notes for EAGLE 4.11
+============================
+
+* Library Management:
+
+  - Packages and Device Sets can now be copied into the currently edited
+    library from other libraries, either through Drag&Drop from the Control
+    Panel or by using the COPY command's new extended syntax (see "Help Copy").
+  - New package variants can now be created by directly using packages from
+    other libraries, either through Drag&Drop from the Control Panel or by
+    using the PACKAGE command's new extended syntax.
+  - The packages of the currently edited library can now be updated with those
+    from other libraries, either through Drag&Drop from the Control Panel or
+    by using the UPDATE command's new extended syntax.
+
+* Blind & buried vias:
+
+  - The program can now handle so-called "blind & buried" vias. "Blind" vias
+    are those that are not drilled all the way through the current layer stack.
+    "Buried" vias are produced by drilling through the entire current layer
+    stack. Vias that go all the way through the complete board are basically
+    the same as "buried" vias, but sometimes are also referred to as "through"
+    vias. "Micro vias" are small blind vias that go from one layer to the next
+    inner layer. These are typically used to connect SMD pads to an inner layer,
+    without having to run a wire away from the SMD.
+  - The Design Rules dialog now has a new tab named "Layers", in which the
+    layer setup can be defined. The minimum drill size and aspect ratio for
+    blind vias can be defined on the "Sizes" tab.
+  - When updating an existing board from an older version, the layer setup
+    will be determined by the layers that are actually in use (either because
+    there are objects in them, or they are supply layers, or they are used by
+    the Autorouter setup). The layer stack will consist of a sequence of
+    "core" and "prepreg" material (with the thickness of the individual layers
+    chosen so that the final board results in a thickness between 1mm and 1.5mm),
+    and which allows a via that goes through all layers.
+    After loading an old board into this version you should verify the layer
+    setup in the Design Rules and adjust it to your actual needs.
+  - The DISPLAY and LAYER dialogs (and related combo boxes) will only display
+    those signal layers that are used in the layer setup.
+  - The CHANGE LAYER and ROUTE command only set the minimum necessary vias
+    (according to the layer setup in the Design Rules). It may happen that an
+    already existing via of the same signal is extended accordingly, or that
+    existing vias are combined to form a longer via if that's necessary to
+    allow the desired layer change.
+  - The VIA command has a new parameter that defines the layers this via shall
+    cover. The syntax is from-to, where 'from' and 'to' are the layer numbers
+    that shall be covered. For instance 2-7 would create a via that goes from
+    layer 2 to layer 7 (7-2 would have the same meaning). If that exact via is
+    not available in the layer setup of the Design Rules, the next longer via
+    will be used (or an error message will be issued in case no such via can be
+    set).
+  - The Autorouter cannot work with supply layers and non-through vias at the
+    same time. In such cases you need to replace the supply layers with signal
+    polygons accordingly.
+  - The CHANGE command has a new option named VIA, which can be used to change
+    the layers a via covers. The syntax is
+
+    CHANGE VIA from-to *
+
+    where 'from' and 'to' are the layer numbers the via shall cover. If that
+    exact via is not available in the layer setup of the Design Rules, the
+    next longer via will be used (or an error message will be issued in case
+    no such via can be set).
+  - The User Language object UL_VIA, now has two new data members 'start' and
+    'end', which return the layer numbers in which that via starts and ends.
+    The value of 'start' will always be less than that of 'end'. Note that the
+    data members 'diameter' and 'shape' will always return the diameter or shape
+    that a via would have in the given layer, even if that particular via doesn't
+    cover that layer (or if that layer isn't used in the layer setup at all).
+  - The DRC now checks whether all vias and objects in signal layers correspond
+    to the actual layer setup. If they don't, a "Layer Setup" error is flagged.
+  - If the layer setup of a board contains blind or buried vias, the CAM
+    Processor generates a separate drill file for each via length that is
+    actually used in the board (see "CAM Processor").
+  - The DRC performs new checks for blind vias: vias that don't pass the check
+    against the "Minimum Drill" parameter and are blind vias that are exactly
+    one layer deep (so-called "micro vias") are checked against the "Min.
+    Micro Via" parameter. Blind vias that pass these tests will further be
+    checked to see whether they have a drill diameter that conforms to the
+    "Min. Blind Via Ratio" parameter in "Edit/Design Rules/Sizes".
+
+* Arbitrary angles:
+
+  - Texts and elements in a board context can now be rotated by any angle,
+    in steps of 0.1 degrees (see "Help Add" for a description of the
+    "orientation" flags).
+  - The new "Spin" flag in orientations can be used to disable the function
+    that keeps texts readable from the bottom or right side.
+  - Pads and SMDs can now be placed with arbitrary angles.
+
+* Arcs and Wires:
+
+  - In many aspects Arcs are now treated the same way as Wires. They are
+    part of a signal when drawn in a signal layer, they can be used when
+    drawing a polygon, and they now also have a wire style.
+  - The endings of arcs can now be either round or flat. You should use
+    flat arc endings only when absolutely necessary (round endings have
+    advantages when generating, e.g., Gerber files).
+  - The end points of an arc can now be moved independently, just like those
+    of wires. When moving such points, the radius of the arc will be scaled
+    accordingly.
+  - All commands that draw wires can now draw arcs by using the new 'curve'
+    or '@radius' parameter (see "Help/Editor Commands/WIRE").
+  - There are no more 'arcs()' loop members in the User Language. Any ULPs
+    that used to loop through arcs must now check the new data member
+    UL_WIRE.arc when looping through the wires (see "Help/User Language/Object
+    Types/UL_WIRE"). The "User Language" section below contains an example
+    that shows how to adapt existing ULPs.
+  - The new command MITER can be used to take the edge off wire joins
+    (see "Help Miter").
+  - The wire bend styles 0, 1, 3 and 4 now use an additional miter radius as
+    defined with the MITER command.
+
+* Additional flags for pads, vias and smds:
+
+  - Pads, Vias and SMDs now have additional flags that control the generation
+    of the stop and cream masks, the thermals and the shape of the "first" pad
+    within a package.
+  - The User Language objects UL_PAD, UL_VIA and UL_SMD have a new data member
+    'flags', which returns the setting of these flags (see "Help/User
+    Language/Object Types/UL_PAD", "Help/User Language/Object Types/UL_VIA" and
+    "Help/User Language/Object Types/UL_SMD").
+  - The PAD and SMD commands support the new options NOSTOP, NOTHERMALS,
+    NOCREAM, and FIRST, respectively, to define these flags. The VIA command
+    supports the new option STOP.
+  - The CHANGE command has the new options STOP, CREAM, and FIRST to modify
+    these flags (the THERMALS option already exists).
+
+* User definable colors:
+
+  - The layer, background and grid colors are now completely user definable.
+  - There are now three "palettes" for black, white and colored background,
+    respectively. Each palette has 64 color entries, which can be set to any
+    RGB value. The palette entry number 0 is used as the background color
+    (in the "white" palette this entry cannot be modified, since this palette
+    will also be used for printing, where the background is always white).
+  - The color palettes can be modified either through the dialog under
+    "Options/Set.../Colors" or by using the command
+
+    SET PALETTE <index> <rgb>
+
+    where <index> is a number in the range 0..63 and <rgb> is a hexadecimal
+    RGB value, like 0xFFFF00 (which would result in a bright yellow). Note
+    that the RGB value must begin with "0x", otherwise it would be taken as a
+    decimal number. You can use
+
+    SET PALETTE BLACK|WHITE|COLORED
+
+    to switch to the black, white or colored background palette, respectively.
+    Note that there will be no automatic window refresh after this command, so
+    you should do a WINDOW; command after this.
+  - By default only the palette entries 0..15 are used and they contain the
+    same colors as previous versions.
+  - The palette entries are grouped into "normal" and "highlight" colors. There
+    are always 8 "normal" colors, followed by the corresponding 8 "highlight"
+    colors. So colors 0..7 are "normal" colors, 8..15 are their "highlight"
+    values, 16..23 are another 8 "normal" colors with 24..31 being their
+    "highlight" values and so on. The "highlight" colors are used to visualize
+    objects, for instance in the SHOW command.
+  - The background color for layout and schematic can now be set to any color.
+    Note, though, that in case the background color is neither pure black nor
+    pure white, the drawing will be displayed layer by layer, which usually
+    makes a window refresh slower than with black or white background.
+  - Changes to the "Options/Set..." dialog:
+    + The "Grid" Tab has been renamed to "Colors".
+    + The minimum visible grid size parameter has been move to the "Misc" tab.
+  - The new User Language builtin function 'palette()' can be used to determine
+    the currently used palette as well as the palette entries (see "Help/User
+    Language/Builtins/Builtin Functions/Miscellaneous Functions/palette()").
+
+* Control Panel:
+
+  - The tree view in the Control Panel can now be sorted by 'name' or by
+    'type' via the pulldown menu option "View/Sort".
+  - The Control Panel's pulldown menu option "File/Refresh tree" has been
+    moved to "View/Refresh".
+  - Directory entries in the Control Panel's tree view which can contain
+    libraries now all have the "Use all" and "Use none" options in their
+    context menus.
+  - New context menu options for libraries, device sets and packages as well
+    as Drag&Drop features for copying and updating library objects, and for
+    creating new package variants.
+  - Drag&Drop of a board, schematic or library file into the appropriate
+    editor window now loads the file into that window for editing. The
+    previous functionality of performing a library update when dropping a
+    library into any editor window has been removed.
+
+* Design Rules:
+
+  - The new Design Rule parameters Shapes/Elongation can be used to define
+    the elongation of Long and Offset shaped Pads. Valid values are from 0 to
+    200, where 0 results in a regular octagon shape (no elongation) and 100
+    gives you a side ratio of 2:1 (100% elongation), which is the ratio that
+    has been hard-coded in previous program versions.
+  - The Design Rules dialog now has a new tab named "Layers", which defines
+    the layer setup for multilayer boards (see "Help/Design Checks/Design Rules").
+  - The Design Rules tab "Shapes" contains a new combo box named "First", which
+    defines the shape of the "first" pad within a package.
+  - The Design Rules tab "Sizes" contains the two new parameters "Min. Micro Via"
+    and "Min. Blind Via Ratio".
+  - The Design Rules tab "Restring" contains a new set of restring parameters
+    for micro vias.
+
+* User Language:
+
+  - The User Language member functions UL_PAD.shape and UL_VIA.shape now return
+    PAD_SHAPE_ANNULUS, PAD_SHAPE_THERMAL, VIA_SHAPE_ANNULUS and
+    VIA_SHAPE_THERMAL, respectively, if their shape is requested for a supply
+    layer (see Help/User Language/Object Types/UL_PAD and UL_VIA).
+  - The User Language dialog object dlgListView now accepts a new parameter
+    that defines the column and direction to use for sorting.
+  - The User Language functions strchr(), strstr(), strrchr() and strrstr()
+    now accept an 'index' parameter to start the search at a given position.
+  - Opening the same file concurrently in two output() statements in a User
+    Language Program is now treated as an error.
+  - The User Language objects UL_HOLE, UL_PAD and UL_VIA now have a new
+    data member 'drillsymbol'.
+  - A User Language Program can now be aborted even if it is currently
+    executing a lengthy 'for' or 'while' loop.
+  - The new ULP function status() can be used to display a message in the
+    editor window's status bar.
+  - The User Language dialog function dlgTextView now accepts a second
+    parameter to support hyperlinks in Rich Text (see "Help/User
+    Language/Dialogs/Dialog objects/dlgTextView()").
+  - The User Language dialog function dlgMessageBox can now add an icon
+    to the message box by prepending the message string with one of the
+    characters '!', ';' or ':' (see "Help/User Language/Dialogs/Predefined
+    Dialogs/dlgMessageBox()").
+  - Due to the implementation of arbitrary angles and "spin" the following new
+    member functions have been added to the User Language:
+    UL_PAD.angle, UL_SMD.angle, UL_RECTANGLE.angle, UL_ELEMENT.angle,
+    UL_ELEMENT.spin and UL_TEXT.spin.
+    Make sure you take these into account in your own ULPs as necessary,
+    otherwise boards containing objects with these new features may be handled
+    incorrectly. See the 'dxf.ulp' for an example.
+  - Due to the modifications of pad shapes, the User Language constants
+    PAD_SHAPE_XLONGOCT and PAD_SHAPE_YLONGOCT have been replaced with
+    PAD_SHAPE_LONG, and the new constant PAD_SHAPE_OFFSET has been introduced.
+  - The new User Language member function UL_PAD.elongation returns the
+    elongation value for pads with shapes Long or Offset.
+  - The User Language object UL_VIA, now has two new data members 'start' and
+    'end', which return the layer numbers in which that via starts and ends.
+    The value of 'start' will always be less than that of 'end'. Note that the
+    data members 'diameter' and 'shape' will always return the diameter or shape
+    that a via would have in the given layer, even if that particular via doesn't
+    cover that layer (or if that layer isn't used in the layer setup at all).
+  - Due to the implementation of different arc cap styles the member function
+    UL_ARC.cap has been added to the User Language.
+  - The loop member functions UL_BOARD.arcs(), UL_PACKAGE.arcs(), UL_SHEET.arcs()
+    and UL_SYMBOL.arcs() no longer exist, since arcs are now treated a lot like
+    wires. Any ULPs that used to loop through arcs must now check the new data
+    member UL_WIRE.arc when looping through the wires (see "Help/User
+    Language/Object Types/UL_WIRE").
+    To convert an existing ULP that uses the arcs() loop member functions
+    consider the following example:
+
+    Assume you have a ULP that looks like this:
+
+    void ProcessArc(UL_ARC A) { /* do something with the arc */ }
+    void ProcessWire(UL_WIRE W) { /* do something with the wire */ }
+    board(B) {
+      B.arcs(A) ProcessArc(A);
+      B.wires(W) ProcessWire(W);
+      }
+
+    To make it run with EAGLE version 4.1 you need to eliminate the 'arcs()'
+    call and move the actual arc processing into the ProcessWire() function:
+
+    void ProcessArc(UL_ARC A) { /* do something with the arc */ }
+    void ProcessWire(UL_WIRE W)
+    {
+      if (W.arc)
+         ProcessArc(W.arc);
+      else
+         /* do something with the wire */
+    }
+    board(B) {
+      B.wires(W) ProcessWire(W);
+      }
+
+    Note that you only need this explicit handling of arcs if you actually
+    need to gain access to parameters only the UL_ARC can provide. If you are
+    not interested in that kind of information, you can handle the arcs just
+    like ordinary wires, using the parameters the UL_WIRE provides.
+  - To be able to handle any UL_ARC on UL_WIRE level the UL_WIRE object now
+    has the two additional members 'cap' and 'curve'.
+  - The User Language objects UL_PAD, UL_VIA and UL_SMD have a new data member
+    'flags', which returns the setting of the flags that control mask and
+    thermal generation (see "Help/User Language/Object Types/UL_PAD",
+    "Help/User Language/Object Types/UL_VIA" and "Help/User Language/Object
+    Types/UL_SMD").
+  - The User Language object UL_HOLE has a new data member 'diameter[]' which
+    returns the diameter of the solder stop masks.
+  - The output() statement in a User Language Program now supports the new
+    mode character 'D', which causes the file to be automatically deleted at
+    the end of the EAGLE session (see "Help/User Language/Builtins/Builtin
+    Statements/output()").
+  - The User Language object UL_GRID now has an additional data member named
+    'unitdist', which returns the grid unit that was used to define the actual
+    grid distance (see "Help/User Language/Object Types/UL_GRID).
+
+* Autorouter:
+
+  - The Autorouter no longer attempts to route within the borders of the
+    signal's surrounding rectangle first, because that way it sometimes was
+    forced to take an "expensive" path, which it would have avoided if it
+    had been allowed to use the entire board area in the first place. This
+    may cause longer routing times in some cases, but may just as well speed
+    up the routing, especially on complex boards.
+
+* CAM Processor:
+
+  - The new parameter MaxApertureSize can be used in the 'eagle.def' file to
+    define an upper limit for the size of the generated apertures for the
+    GERBERAUTO and GERBER_RS274X devices. If objects larger than this limit
+    are to be displayed, apertures will be emulated for them.
+  - If the board contains blind or buried vias, the CAM Processor generates a
+    separate drill file for each via length that is actually used in the board.
+    The file names are built by adding the number of the start and end layer
+    to the base file name, as in
+
+    boardname.drd.0104
+
+    which would be the drill file for the layer stack 1-4. If you want to have
+    the layer numbers at a different position, you can use the placeholder %L,
+    as in
+
+    .%L.drd
+
+    which would result in
+
+    boardname.0104.drd
+
+    The drill info file name is always generated without layer numbers, and
+    any '.' before the %L will be dropped.
+    Any previously existing files that would match the given drill file name
+    pattern, but would not result from the current job, will be deleted before
+    generating any new files. There will be one drill info file per job, which
+    contains (amoung other information) a list of all generated drill data files.
+  - The aperture wheel file is now checked for duplicate D-codes (see
+    "Help/Generating Output/CAM Processor/Output Device/Device
+    Parameters/Aperture Wheel File").
+
+* Text editor:
+
+  - Setting the font in a text editor window is now done via the pulldown
+    menu option "File/Font..." and no longer via the printer setup. The
+    selected font is now also used in the text editor window.
+
+* ADD command:
+
+  - The ADD command now mirrors the object that is attached to the cursor
+    when the center mouse button is pressed.
+
+* ARC command:
+
+  - Arcs are now part of a signal if drawn in a signal layer of a board.
+    When updating an existing board drawing, arcs in signal layers are
+    transferred into signals (either newly generated ones or the ones that
+    the arcs are apparently connected to by sharing the same end points).
+  - The ARC command now accepts a signal name (just like the WIRE command).
+  - The endings of arcs can now be either round or flat (the ARC command
+    therefore accepts the new parameters ROUND and FLAT).
+    When updating an existing drawing, the 'cap' parameter of all arcs in
+    boards, packages and symbols, that have their endings covered by other
+    objects (like wires or vias) will be set to 'round'. This allows them
+    to be drawn more easily on the various output devices.
+
+* BUS command:
+
+  - The BUS command now has an extended syntax to allow drawing arcs (see
+    "Help/Editor Commands/BUS").
+
+* CHANGE command:
+
+  - When changing the layer of a signal wire, only the minimum necessary
+    via will be set (according to the layer setup in the Design Rules). It may
+    happen that an already existing via of the same signal is extended
+    accordingly, or that existing vias are combined to form a longer via if
+    that's necessary to allow the desired layer change.
+  - The CHANGE command has a new option named VIA, which can be used to change
+    the layers a via covers. The syntax is
+
+    CHANGE VIA from-to *
+
+    where 'from' and 'to' are the layer numbers the via shall cover. If that
+    exact via is not available in the layer setup of the Design Rules, the
+    next longer via will be used (or an error message will be issued in case
+    no such via can be set).
+  - The CHANGE command can now change the cap style of arcs by using
+
+    CHANGE CAP ROUND | FLAT
+  - The CHANGE command has the new options STOP, CREAM, and FIRST to modify
+    the new pad/smd flags (the THERMALS option already exists).
+  - The parameters Spacing and Isolate in the CHANGE popup menu now present
+    a list of predefined values (just like, for instance, the Width parameter).
+    All such popup menus now contain the entry "..." at the bottom, which
+    brings up a dialog to enter a new value.
+
+* COPY command:
+
+  - The COPY command can now copy parts in a schematic (see "Help Copy").
+  - The COPY command can now copy packages and device sets from other
+    libraries into the currently edited library (see "Help Copy").
+  - The COPY command now mirrors the object that is attached to the cursor
+    when the center mouse button is pressed.
+
+
+* DELETE command:
+
+  - The option "SIGNALS" must now be written in full.
+
+* DISPLAY command:
+
+  - The automatic enabling/disabling of related layers when activating or
+    deactivating the t/bPlace or Symbols layer in the DISPLAY command can now
+    be turned off by appending the line
+
+    Option.DisplayRelatedLayers = "0"
+
+    to the eaglerc.usr file.
+
+* DRC command:
+
+  - The DRC now checks for objects in the Pads and Vias layer that are not
+    Pads or Vias (i.e. wires, rectangles etc.) and flags them as "Layer Abuse"
+    errors. The reason for this is that EAGLE does not handle these object
+    in any special way, so they might cause short circuits. If you get such
+    an error from the DRC, you should move the object in question into the
+    proper signal layer(s).
+  - The DRC now checks objects in the t/bKeepout layers only if the
+    respective layer is activated.
+  - The DRC now checks whether all vias and objects in signal layers correspond
+    to the actual layer setup. If they don't, a "Layer Setup" error is flagged.
+
+* GRID command:
+
+  - The GRID command accepts the new option 'alt', which allows you to define
+    an "alternate" grid that will be used whenever you press the Alt key while
+    selecting or moving objects. The alternate grid can have its own size and
+    unit, and is typically used to temporarily switch into a finer grid if the
+    normal grid is too coarse. See "Help/Editor Commands/GRID".
+  - The GRID dialog has been changed to allow the user to enter the alternate
+    grid parameters.
+
+* INVOKE command:
+
+  - The INVOKE command now mirrors the object that is attached to the cursor
+    when the center mouse button is pressed.
+
+* MIRROR command:
+
+  - The MIRROR command now accepts the name of an element in a board, just
+    like the MOVE command.
+
+* MITER command:
+
+  - The new command MITER can be used to "take the edge off" wire joins
+    (see "Help Miter").
+
+* MOVE command:
+
+  - When picking up an object with the MOVE command, the status line now
+    displays the same information as the SHOW command (currently this only
+    works if the "User guidance" is turned off).
+  - If an Arc is selected at one of its end points, that point can now be moved
+    freely (just like that of a Wire). The Radius of the Arc is then scaled
+    accordingly.
+  - The MOVE command now mirrors the object that is attached to the cursor
+    when the center mouse button is pressed.
+  - The MOVE command can now select objects at their origin by pressing the
+    Ctrl key (see "Help/Editor Commands/MOVE").
+
+* NET command:
+
+  - The NET command now displays information about the current net in the
+    status line.
+  - The NET command now has an extended syntax to allow drawing arcs (see
+    "Help/Editor Commands/NET").
+
+* PACKAGE command:
+
+  - The PACKAGE command can now create package variants with packages from
+    other libraries (see "Help Package").
+
+* PAD command:
+
+  - The PAD command can now create pads with arbitrary angles and therefore
+    accepts an "orientation" parameter (See "Help Pad").
+  - The pad shapes XLongOct and YLongOct have been renamed to Long. When
+    updating an existing drawing from a previous version, XLongOct pads will
+    be converted to Long pads with an angle of 0 degrees, and YLongOct pads
+    will become Long with 90 degrees.
+  - The new pad shape "Offset" can be used to have pads that have the shape as
+    defined by Long, but extend only to one side.
+  - The PAD command supports the new options NOSTOP, NOTHERMALS and FIRST to
+    define the new 'flags' (see "Help/Editor Commands/PAD").
+
+* PASTE command:
+
+  - The PASTE command now mirrors the object that is attached to the cursor
+    when the center mouse button is pressed.
+
+* POLYGON command:
+
+  - The 'width' and 'layer' can now be changed at any time while drawing a
+    polygon.
+  - The POLYGON command now has an extended syntax to allow drawing arcs (see
+    "Help/Editor Commands/POLYGON").
+
+* RATSNEST command:
+
+  - The RATSNEST command now processes all points of a signal, even if that
+    signal is very complex (in previous versions it dropped wire end points
+    from processing if the total number of connection points exceeded 254).
+    This requires more memory when calculating the ratsnest. In case this
+    is a problem on your system, you can revert to the original method
+    by appending the line
+
+    Option.RatsnestLimit = "254"
+
+    to the eaglerc.usr file. The value given
+    here is the number of connection points up to which all wire end points
+    will be taken into account and thus limits the amount of memory used
+    (processing will use up to the square of this value in bytes, so a value
+    of 1024 will limit the used memory to 1MB). A value of "0" means there is
+    no limit. A value of "1" will result in airwires being connected only to
+    pads, smds and vias.
+  - RATSNEST no longer marks the board drawing as modified, since the
+    calculated polygon data (if any) is not stored in the board, and the
+    recalculated airwires don't really constitute a modification of the drawing.
+
+* ROTATE command:
+
+  - The ROTATE command now accepts an "orientation" parameter (e.g. SMR359.9).
+  - The ROTATE command now accepts the name of an element in a board, just
+    like the MOVE command.
+  - The ROTATE command can now be used with Click&Drag to rotate objects or
+    groups by any angle (see "Help Rotate").
+
+* ROUTE command:
+
+  - The ROUTE command now dynamically recalculates the current airwire while
+    routing. In doing so, it also takes into account points along a wire, if
+    those are closer to the cursor than the ends of that wire. If there is
+    a pad, via or smd that is at most Snap_Length away from the end of the
+    airwire (in the current layer), that end will now snap to the center of
+    the object.
+  - The ROUTE command no longer automatically sets a Via at the end point
+    of a wire. If you want to place a Via at the end point of a routed wire
+    you can do so by holding the Shift key down while clicking at the end
+    point.
+  - When determining the layer in which to route, the ROUTE command now also
+    considers Wires (not only SMDs).
+  - When changing the layer in the ROUTE command, only the minimum necessary
+    via will be set (according to the layer setup in the Design Rules). It may
+    happen that an already existing via of the same signal is extended
+    accordingly, or that existing vias are combined to form a longer via if
+    that's necessary to allow the desired layer change.
+  - The ROUTE command now has an extended syntax to allow drawing arcs (see
+    "Help/Editor Commands/ROUTE").
+  - The ROUTE command now creates a new airwire if necessary when Ctrl is
+    pressed while selecting the starting point (see "Help/Editor Commands/ROUTE").
+
+* SET command:
+
+  - The SET USED_LAYERS command also takes into account the layers from the
+    new multilayer setup in the Design Rules and keeps them in the menus.
+  - The SET WIRE_BEND command accepts the two new values 5 and 6 to define
+    bend styles that start or end in a 90 degree arc, plus the new value 7
+    for a bend style that results in an arc that exactly fits to the wire at
+    the starting point.  If there isn't exactly one wire at the starting point,
+    a straight wire is drawn. This bend style can be used to draw wires in sort
+    of a "freehand" way.
+  - The special character '@' can be used with the SET WIRE_BEND command to
+    define which bend styles shall actually be used when switching with the
+    right mouse but (as in SET WIRE_BEND @ 1 2 4 5;).
+  - The SET command now restores the program default values for the parameter
+    menus when executed as, for instance,
+
+    SET WIDTH_MENU;
+
+    (i.e. without any values). This applies to all *_WIDTH parameters.
+
+* SHOW command:
+
+  - The SHOW command now displays the net class (in case of a net or signal)
+    and the gate name (in case of a multi gate part).
+
+* SMASH command:
+
+  - The SMASH command can now be applied to a GROUP.
+  - Pressing the Shift key while clicking on a part or group with the SMASH
+    command will now "un-smash" the object.
+  - The >PART and >GATE parameters are now also smashed.
+
+* SMD command:
+
+  - The SMD command supports the new options NOSTOP, NOTHERMALS and NOCREAM to
+    define the new 'flags' (see "Help/Editor Commands/SMD").
+
+* SPLIT command:
+
+  - The SPLIT command now has an extended syntax to allow drawing arcs (see
+    "Help/Editor Commands/SPLIT").
+
+* UPDATE command:
+
+  - The UPDATE command can now update packages in a library (see "Help Update").
+
+* VIA command:
+
+  - The VIA command has a new parameter that defines the layers this via shall
+    cover. The syntax is from-to, where 'from' and 'to' are the layer numbers
+    that shall be covered. For instance 2-7 would create a via that goes from
+    layer 2 to layer 7 (7-2 would have the same meaning). If that exact via is
+    not available in the layer setup of the Design Rules, the next longer via
+    will be used (or an error message will be issued in case no such via can be
+    set).
+  - The VIA command supports the new option STOP to define the new 'flags'
+    (see "Help/Editor Commands/VIA").
+
+* WIRE command:
+
+  - The WIRE command now has an extended syntax to allow drawing arcs (see
+    "Help/Editor Commands/WIRE").
+
+* Miscellaneous:
+
+  - If a net gets renamed because a Supply pin was placed on it, the user is
+    now notified of this.
+  - Improved part placement in BOARD and PASTE command.
+  - The files created with EXPORT IMAGE now contain the image resolution in
+    case the image format supports this.
+  - The RIPUP command can now be interrupted.
+  - The cursor is now switched to the "hour glass" while the Autorouter run.
+  - The size of the text origins is now limited to the actual size of the text.
+  - There is now a new item "Stop command" in the "Edit" pull down menu which
+    has the same effect as the "Stop" button in the action toolbar.
+  - When printing on DOS based Windows systems (Windows 95, 98, ME) EAGLE can
+    now render the drawing in memory and send the complete bitmap to the printer
+    in order to overcome problems with printing texts on some printer drivers.
+    This slows down printing, but at least it produces correct results. If you
+    happen to have a printer driver that doesn't work correctly, you can
+    turn this workaround on by setting the parameter
+
+    Printer.InternalRendering
+
+    in the eaglerc.usr file to a value other than
+    the default "0".
+    The individual bits in the number each stand for a specific Windows version:
+
+    00000001 = Win32s
+    00000010 = Windows 95
+    00000100 = Windows 98
+    00001000 = Windows Me
+    00010000 = Windows NT
+    00100000 = Windows 2000
+    01000000 = Windows XP
+
+    You can use any combination of these bits in order to turn InternalRendering
+    on or off for specific platforms. For instance the setting
+
+    Printer.InternalRendering = "6"
+
+    would turn this feature on only for Windows 95 and Windows 98.
+    If you had "Options/User interface/Always vector font" active because
+    your printer wouldn't print non-vector fonts correctly, you may want to
+    turn that option off now and try printing non-vector fonts. You may also
+    need to turn off the "Persistent in this drawing" option for a particular
+    drawing. Selecting the "Black" option in the PRINT dialog may speed up
+    printing (in case you are printing to a black&white device).
+  - Printing under Linux now supports CUPS.
+  - When selecting an object in a densly populated area, the "Select
+    highlighted object" message now also displays the information about
+    that object, as would the SHOW command.
+  - Opening the same file concurrently in two output() statements in a User
+    Language Program is now treated as an error.
+  - Error message dialogs now use the system defined sound effects.
+  - When connecting net segments the user is now always informed about the
+    resulting name.
+  - The SIGNAL and PINSWAP commands now offer a selection if there are, for
+    instance, two SMD pads on Top and Bottom at the same location.
+  - The DELETE command can now be interrupted when deleting a GROUP.
+  - The cursor now changes to the "hour glass" while processing polygons.
+  - Improved selecting smashed names/values in densely populated areas.
+  - If changing a package in a board results in connected pads of that
+    element being moved outside of the allowed board area of the Light or
+    Standard edition, the wires attached to these pads are now ripped up
+    in order to comply with the board area limitations.
+  - Fixed handling of '\' at the end of script lines (the '\' inserted an
+    additional blank, which caused problems with 'Description' lines in muliple
+    EXPORT/SCRIPT of a library).
+  - An airwire in a dense area now triggers the selection mechanism even if the
+    other objects belong to the same signal.
+  - Avoiding flickering status bar in library script with many EDIT commands.
+  - Changed mouse button handling under Windows to improve application
+    button selectability.
+  - The progress bar in the status line of an editor window is now only
+    displayed when it is actually active, and the percentage value is
+    displayed outside of the bar under Windows.
+  - When moving a part in a schematic causes net wires to be automatically
+    generated, both ends of these wires are now checked to see if any
+    junctions are missing or can be deleted (this only works if
+    "Options/Set.../Misc/Auto set junction" is active).
+  - Improved ERC's checks for unconnected net wires and missing junctions.
+  - The parameter toolbar in board context now contains a combo box where
+    angles can be selected and entered (instead of the former four buttons
+    for R0...R270).
+  - Panning is now done through Click&Drag with the center mouse button (no
+    longer with the Ctrl button). If you want to have the old functionality
+    back you can add the line
+
+    Interface.UseCtrlForPanning = "1"
+
+    to your eaglerc.usr file. Note, though, that the
+    Ctrl key is now used for special functions in some commands, so when using
+    these special functions (like selecting an object at its origin in MOVE)
+    with this parameter enabled you may inadvertently pan your draw window.
+  - Zero length airwires are now displayed as X-shaped crosses to improve their
+    visibility.
+  - The new fill styles Stipple1, Stipple2, Stipple3 and Stipple4 (numerical
+    values 12..15) can be used to have layers be drawn and erased without
+    disturbing each other.
+  - Improved library update in case of device sets with a large number of
+    package variants.
+  - When switching through the wire bend styles with the right mouse button
+    (for instance in the WIRE command), the Shift key reverses the direction
+    and the Ctrl key toggles between corresponding bend styles.
+  - When a Mark is active, the relative coordinates are now also displayed as
+    "polar coordinates" (radius + angle), indicated by "(P ...)" in the
+    coordinate display. This can also be used to measure the distance between
+    any two points.
+  - Coordinates entered in the command line or in scripts can now be given
+    relative to the mark, as polar coordinates, and can simulate a right mouse
+    button click, which is mainly useful to select a group (see "Help/Editor
+    Commands/Command Syntax").
+  - Dialog input fields that accept decimal numbers now automatically
+    convert the ',' (or whatever the local decimal point is set to) into
+    a real decimal point ('.').
+  - When loading a board/schematic pair that doesn't indicate consistency, a
+    consistency check will now be performed automatically.
+  - The sheet selection combo box in the action toolbar now contains an entry
+    named "remove", which can be used to remove the current sheet from the
+    schematic.
+  - The highlighted objects from SHOW now stay hightlighted if a WINDOW
+    command is given.
+  - The Rich Text tag <author> no longer uses a smaller font.
+  - The relative coordinate display now uses at least the mark's precision.
+  - Editor windows now have a new menu entry "File/Open recent" which allows
+    to easily reload recently used files.
+  - Increased grid display pecision for mil and inch.
+  - No more popup message for undefined or empty group, rather 'beep' and
+    status message.
+  - Avoiding unnecessary backups (for instance "*.b#1") when saving files
+    that have not been modified.
+  - Fixed EXPORT PARTLIST in case of long names or values.
+
+* Bugfixes:
+
+  - Fixed delimiting the undo buffer in CHANGE PACKAGE and CHANGE TECHNOLOGY.
+  - The "Change Isolate" menu option is now also available in the package
+    editor.
+  - A polygon that consists only of two defined points is now rejected.
+  - Fixed removing an ASSIGNed key from the 'eaglerc' file.
+  - Fixed setting the default grid when changing the drawing type (package,
+    symbol, device) inside a library.
+  - Fixed cancelling a command by pressing the "Cancel" button in a dialog
+    (for instance the NET command was not completely terminated).
+  - Fixed searching the 'eagle.scr' file in the current directory and handling
+    directory paths in the -S option.
+  - Fixed skipping unsuitable objects when pasting between different drawing
+    types.
+  - The User Language now generates an message if accessing a contact from a
+    pin without a device context.
+  - Fixed switching off the DRC check "copper against t/bRestrict" (polygons
+    in the t/bRestrict layers were still checked).
+  - Fixed renaming a package variant in the library editor.
+  - Fixed displaying pads/vias in case an additional signal layer is activated
+    with the DISPLAY command.
+  - Fixed UL_AREA for packages and symbols in an UL_ELEMENT or UL_INSTANCE
+    context, respectively.
+  - Fixed detecting an error condition in accessing an uninitialized User
+    Language variable while it is being defined.
+  - Fixed storing NET_WIRE_WIDTH and BUS_WIRE_WIDTH in the eaglerc file.
+  - Fixed double file name entries in the Control Panel under Windows after
+    renaming files with upper-/lowercase.
+  - Fixed refreshing the Control Panel tree after creating a new CAM job.
+  - Fixed handling CAM job descriptions that contain double quotes.
+  - Fixed handling mouse wheel events when zooming in/out (previously the
+    given "Mouse wheel zoom" factor was applied twice for each event).
+  - Fixed setting the focus in the DISPLAY and LAYER dialogs.
+  - Fixed displaying 'not saved' in >LAST_DATE_TIME on printed output.
+  - Fixed entering negative values in 'real' dialog fields.
+  - Fixed raplacing an identical package from a different library.
+  - Objects that don't cover any raster point are now virtually enlarged
+    by the Autorouter to make them cover at least one raster point, so that
+    the Autorouter can "see" them.
+  - Fixed a problem when deleting a layer from within the DISPLAY dialog.
+  - Fixed updating library devices with newly added packages.
+  - Fixed handling value on/off in the library update.
+  - The BOARD command no longer copies all package variants into the newly
+    created board, but rather just the ones that are actually used. When
+    loading a board from a previous version, the superfluous packages will
+    automatically be deleted.
+  - The Autorouter sometimes didn't route between objects where it
+    actually should have been able to do so.
+  - The 'Cancel' button sometimes didn't work when a message box was
+    displayed while, for instance, running a script.
+  - The ADD dialog didn't display all used libraries after a device has been
+    added from the Control Panel.
+  - Fixed handling layer of mirrored text wires in UL_TEXT.wires.
+  - Fixed drawing objects attached to the cursor when doing Ctrl+MouseMove
+    (wasn't drawn correctly under Windows).
+  - Fixed the Technology parameter in EXPORTed library scripts (the values
+    were not quoted).
+  - Fixed mirroring labels in a schematic.
+  - Fixed a crash if INVOKE was used in a board.
+  - Fixed 'Replace all' in the text editor for several occurrences in the same
+    line with different lengths of find and replace text.
+  - Fixed a bug in the library update of standalone boards in case a pad was
+    removed from a package.
+  - Fixed CHANGE PACKAGE in case both devices have no connects.
+  - Fixed flickering smashed texts when dragging parts.
+  - Fixed displaying wires when zooming far into the drawing.
+  - Fixed handling empty packages and symbols in CUT/PASTE.
+  - Fixed setting the size of the ERRORS window.
+  - The 'scale factor' and 'page limit' in the PRINT dialog are now limited
+    to values >=0.
+  - Fixed handling of net classes when renaming nets.
+  - Added missing 'L' parameter to the format statement (FS) of GERBER_RS274X
+    in eagle.def.
+  - Fixed closing a project if the user doesn't have write access to the
+    directory.
+  - Fixed setting user defined default Design Rules when loading an existing
+    library.
+  - Fixed handling of objects that don't belong to any signal in the DRC, in
+    case there are no signals with the default net class.
+  - Fixed the header for Postscript files in 'eagle.def'.
+  - Fixed UL_VIA.diameter[] for LAYER_TSTOP and LAYER_BSTOP in case the drill
+    isn't larger than the stop limit in the Design Rules.
+  - Fixed ADDing devices with '(' or ')' in their name.
+  - Fixed a crash in GROUP/CUT in case only net labels where in the group.
+  - Fixed handling packages that contain both pads and smds.
+  - Fixed handling multiple smashed '>NAME' etc. texts in User Language
+    Programs.
+  - Fixed handling the layer of polygons when doing GROUP/CUT/PASTE with
+    mirroring.
+  - Fixed printing hatched polygons with "pos. Coord" option in the
+    CAM Processor.
+  - The CAM Processor no longer complains about layers that are enabled in
+    the job but not used in the drawing.
+  - Fixed 'dxf.ulp' to correctly display solder stop masks for pads, vias
+    and holes.
+  - Fixed rotating with right mouse button while moving an object with
+    click&drag.
+  - Fixed deleting a net wire that was connected to a supply pin (the remaining
+    net wasn't renamed accordingly).
+  - Fixed setting the >DRAWING_NAME parameter when creating a board from a
+    schematic.
+  - Fixed handling wires that ended exactly on a vertical polygon edge (the
+    polygon was not considered to be connected to that wire).
+  - Fixed closing ULP include file after an error message (text editor was
+    unable to save the edited file under Windows).
+  - Fixed checking empty (value) texts in the DRC.
+  - Fixed snapping bended wires if "Options/Set/Misc/Snap bended wires" is on.
+  - Fixed buffer overflow in printf() with very long '%*' formats in ULPs.
+  - Fixed handling SET WIRE_BEND while drawing a wire.
+  - Fixed calculating zero length airwires in case there is another wire end
+    point very close to these coordinates.
+  - Fixed searching the library in the library path in case of
+    "ADD part@libraryname".
+  - Fixed execution of 'eagle.scr' in case there is a command following the
+    EDIT command in the command line.
+  - Fixed EXPORT SCRIPT in case the library description contains the backslash
+    character.
+  - Fixed emulating thin arcs on photoplotters.
+  - Fixed some superfluous '*' in the Gerber RS274X output format.
+  - Fixed an abort if a ULP accesses a schematic's nets from a board via
+    project.schematic(SCH).
+  - Fixed the location of pad names for pins in mirrored instances in
+    the User Language.
+
+Release notes for EAGLE 4.09r2
+==============================
+
+* CAM Processor:
+
+  - The new command line option '-N' can be used to turn off the command line
+    message prompts in the CAM Processor. This is mostly useful for fully
+    automated CAM batch jobs.
+
+* Bugfixes:
+
+  - Fixed a case where the original pad/via shape was drawn in a supply
+    layer (in addition to the thermal/annulus symbol). This also may have
+    caused the autorouter to route a signal that actually had a supply layer
+    (and therefore didn't have to be routed).
+  - Fixed the DRC check between copper and Dimension lines with zero width.
+  - Fixed reacting on system color changes in the Help window under Windows.
+  - Fixed handling Pwr pins in the library update (consistency could be lost
+    if the pins had a different sequence in the new symbol).
+
+Release notes for EAGLE 4.09r1
+==============================
+
+* Bugfixes:
+
+  - Fixed drawing SMDs with Roundness values other than 0 or 100 on photo
+    plotters with fixed aperture wheels. Note that aperture tolerances are
+    relative to the final object dimensions, so when drawing SMDs with
+    Roundness the aperture actually used may be larger, even if only a
+    negative tolerance value was specified. Also, the difference between the
+    initially requested aperture and the actually used one may be a lot
+    bigger than the absolute value of the tolerance would indicate.
+    If you are processing CAM data for a board that contains SMDs with Roundness
+    and you get an "Aperture missing" error regarding a Draw aperture, you can
+    try specifying a negative draw tolerance of a few percent to enable
+    drawing of the rounded SMDs (which will then be drawn as if they had a
+    larger Roundness value).
+  - Fixed handling GROUP rectangles with zero width (which caused a program
+    crash).
+  - Fixed printing drill symbols with Postscript in the CAM Processor in case
+    the Pads or Vias layer was not activated.
+  - Avoiding unjustified 'close but unconnected...' warnings in the ERC.
+  - Fixed net class handling in forward annotation when splitting a net.
+  - Fixed library update in case of CUT/PASTE from one schematic into another
+    (there was no error message if a package variant was no longer available).
+  - Added the missing "Cam Processor" entry to the pulldown menu in the
+    schematic editor.
+  - Fixed handling description when checking for modified CAM job.
+
+Release notes for EAGLE 4.09
+============================
+
+Version number changed for final release.
+
+Release notes for EAGLE 4.08r2
+==============================
+
+* Bugfixes:
+
+  - Fixed deleting net segments from pins that overlap with another segment
+    (in such cases it could have happened that the consistency between board
+    and schematic was lost).
+
+Release notes for EAGLE 4.08r1
+==============================
+
+* Bugfixes:
+
+  - Fixed a problem when closing a window and cancelling the "Save?" dialog.
+  - Fixed library update in ADD when package variant is missing.
+
+Release notes for EAGLE 4.08
+============================
+
+* Bugfixes:
+
+  - Fixed another unjustified error message "Load error 293".
+
+Release notes for EAGLE 4.07
+============================
+
+* Bugfixes:
+
+  - Fixed unjustified error message "Load error 293".
+  - Fixed a possible crash when closing a window in a script.
+
+Release notes for EAGLE 4.06
+============================
+
+* Bugfixes:
+
+  - Fixed checking rectangular objects versus circular objects in the DRC.
+  - Fixed installing executable file and manual page under Linux.
+
+Release notes for EAGLE 4.05
+============================
+
+* Bugfixes:
+
+  - Fixed polygon calculation under Windows.
+  - Fixed cancelling the Autorouter during ripup.
+  - Fixed handling circles in the autorouter (sometimes it routed right through
+    them).
+
+Release notes for EAGLE 4.04
+============================
+
+* DELETE command:
+
+  - Net segments connected to a bus now keep their name when splitting segments.
+  - Added a note to the online help of the DELETE command, regarding ripup of
+    signal wires when deleting a part with SHIFT+Delete.
+
+* ERC command:
+
+  - In order to handle board/schematic pairs that have only minor inconsistencies,
+    the user can now enable a dialog that allows him to force the editor to
+    perform forward-/backannotation, even if the ERC detects that the files are
+    inconsistent. This can be done by appending the line
+
+    Erc.AllowUserOverrideConsistencyCheck = "1"
+
+    to the eaglerc.usr file.
+    PLEASE NOTE THAT YOU ARE DOING THIS AT YOUR OWN RISK - if the files get
+    corrupted in the process, there may be nothing anybody can do to recover
+    them. After all, the ERC *did* state that the files were inconsistent!
+  - The ERC now reports an error if supply pins with the same name are
+    overwritten with more than one signal.
+
+* EXPORT command:
+
+  - The EXPORT SCRIPT command now sets the grid unit to 'mm' if the current
+    grid isn't metric, in order to avoid loss of precision.
+
+* INFO command:
+
+  - The INFO command now displays the VIA diameter separately for outer and
+    inner layers (as determined by the Design Rules), plus the value that has
+    been originally defined by the user.
+    The format is "Diameter = outer/inner (original)".
+
+* OPTIMIZE command:
+
+  - The OPTIMIZE command now also optimizes the "flat" wires in a board (i.e.
+    those not being part of a signal).
+
+* PACKAGE command:
+
+  - The PACKAGE dialog now accepts an empty "Variant name" field and no longer
+    requires the explicit entry of '' (two single quotes) to define a
+    package variant with an "empty" name.
+
+* TECHNOLOGY command:
+
+  - The TECHNOLOGY command no longer asks before removing a Technology from
+    a device.
+
+* WIRE command:
+
+  - In order to speed up execution of large scripts that produce many wires,
+    'Set Optimizing Off' now also disables automatic wire splitting in scripts.
+
+* User Language:
+
+  - When running a ULP the internal search path for images will now be set to
+    the ULP's directory.
+  - The help page for Rich Text now contains a list of the supported image
+    formats for the "<img...>" tag.
+  - The new member function UL_LAYER.used can be used in a ULP to check if a
+    given layer is actually used in a drawing.
+  - The new builtin constants "path_...[]" and "used_libraries[]" can be used
+    to determine the entries in the "Options/Directories" dialog and the
+    currently used libraries from within a ULP.
+    See "Help/User Language/Builtins/Builtin-Constants".
+  - The new mode character 'F' in the 'output()' statement of the User Language
+    can be used to force opening a file with an otherwise protected extension
+    (*.brd, *.sch or *.lbr).
+
+* Miscellaneous:
+
+  - Improved speed of CAM Processor.
+  - NET and SIGNAL commands are no longer terminated when cancelling a
+    'Connect...?' dialog.
+  - Pad and via drill holes are no longer subtracted from polygons.
+  - The position of the "splitters" in dialogs like for instance "ADD" are no
+    longer stored as percentage values in the file eaglerc.usr,
+    but rather as absolute pixel values. The first time such a dialog is opened
+    with this program version the splitter positions may therefore not be the
+    same as when the dialog was left last time.
+  - Polygons that would completely disappear after being calculated with RATSNEST
+    are now shown on the screen with their original outlines. This allows editing
+    or deleting them.
+  - The string edit dialog now adjusts its width to completely show longer
+    strings (for instance when editing a long bus name).
+  - Command text buttons (defined with the MENU command) now stay pressed to
+    indicate the currently active command (this does not apply to buttons that
+    result in a submenu).
+  - The Windows file dialog no longer checks for the existence of a file, thus
+    allowing the user to leave out the filename extension when typing in a
+    file name.
+  - The command button groups are now separated by horizontal lines, which saves
+    space in the command menu.
+  - The default value for the solder stop mask ("Edit/Design rules/Masks/Stop")
+    has been changed to a fixed value of 4mil.
+  - The size of SMD names displayed when SET PAD_NAMES is on is now limited to
+    20mil.
+  - The "Description" field in the library editor and the right pane in the
+    Control Panel can now be completely minimized with the splitter.
+  - If a package variant or technology is no longer there (e.g. because it has
+    been deleted or renamed) the user can now select a different one in the
+    library update.
+  - The automatic unit determination in dialog input fields can now be controlled
+    by appending the line
+
+    Interface.PreferredUnit = "x"
+
+    to the eaglerc.usr file, where "x" can be
+    "0" for automatic unit determination (default)
+    "1" for imperial units
+    "2" for metric units.
+  - The 'dxf.ulp' now has radio buttons to choose the unit of the generated
+    data ('mm' or 'inch'), and outputs data in 'mm' with 4 decimal digits
+    instead of 3.
+  - When using the CAM Processor in command line mode it no longer stops if
+    a warning message is given, but rather offers a prompt that allows the user
+    to decide whether to continue or not.
+
+* Bugfixes:
+
+  - Fixed handling of upper/lowercase umlauts in removing/renaming library
+    objects.
+  - Fixed error handling if a non existing member function was used in a ULP.
+  - Fixed library update error 403-1362.
+  - Fixed library update in case a device set is no longer present in the
+    library.
+  - Fixed printing Thermal symbols.
+  - Technologies can no longer contain lowercase characters.
+  - Fixed handling devices with double quotes in their name in the Control Panel.
+  - Fixed focus handling in 'Connect Nets' dialog.
+  - The internal object counters are now checked against a safety limit in order
+    to avoid overflows.
+  - Fixed optimizing wires after MOVE.
+  - Fixed layer in UL_POLYGON.contours and UL_POLYGON.fillings in case of
+    mirrored polygons.
+  - Fixed handling of PWR pins in library update.
+  - Fixed exporting images.
+  - Fixed handling printer specific page sizes under Windows.
+  - Fixed updating libraries in case packages had been replaced in the board.
+  - Empty values of smashed parts are no longer selectable by mistake.
+  - Fixed handling '\' in the "Options/Directories" dialog under Windows.
+  - Fixed displaying User Language dialogs under Windows.
+  - Fixed handling Technology values that add up to exactly 13 characters.
+  - The EXPORT SCRIPT command now explicitly generates a "-''" if a device
+    does not contain the empty Technology.
+  - Fixed handling lowercase characters when deleting Technologies.
+  - Fixed splitting net segments with supply symbols.
+  - Fixed EXPORTing net class for implicit PWR pins.
+  - Fixed optimizing wires after deleting a group.
+  - Fixed handling the PRINT option '-0'.
+  - Fixed handling lines longer than 1000 characters in eaglerc.
+  - Fixed handling "SET BEEP ON|OFF".
+  - Fixed a possible crash that happened under Windows if the system date was
+    outside the range 1970..2037.
+  - Fixed parsing '(' in the command line (caused an error message when
+    renaming a package variant that contained this character).
+  - Fixed a possible crash that could happen if a part on a sheet was deleted
+    with SHIFT+Delete, and that part was the last of this type in the schematic.
+  - Fixed 'Shift-Deleting' parts with gates on different sheets.
+  - The terminating ';' was missing for "Hole..." in exported scripts.
+  - Fixed handling "WRITE @filename;".
+  - Fixed handling directory paths after navigating with the file dialog.
+  - Fixed the "...not saved" dialog in case an other board should be edited
+    after a modification that changed both the board and the schematic (it
+    didn't list the schematic as modified).
+  - Fixed setting the net class of a newly drawn net or signal in case the
+    net/signal name is specified in the command line.
+  - Fixed library update in case a non-pwr pin became a pwr pin.
+  - Fixed handling unconnected supply pins. They are now implicitly mapped to
+    the same net name as any other overwritten supply pin with the same name.
+  - Fixed handling "&xxx;" tags in the tree view of the control panel.
+  - When drawing a new net/signal segment towards an existing one, the net
+    class of the existing net/signal is no longer overwritten.
+  - "File/Open/Text..." now always opens a text editor window, even if the file
+    name has an extension that would indicate a different kind of window (like
+    ".cam").
+  - The library editor window is now refreshed after executing a script.
+  - Closing a "Description" or "Connect" dialog with the system's close button
+    now reacts correctly if the user selects not to discard changes.
+  - When opening a file from the Control Panel with "File/Open/..." the proper
+    filename extension is now added if it is missing.
+  - Fixed naming nets if the NET command contains an explicit net name.
+  - Fixed delimiting the undo buffer in the REPLACE command.
+  - Fixed setting the directory in "Save as...".
+  - Fixed handling command line PRINT parameters.
+  - Fixed selecting objects that are close together.
+  - Fixed using expressions as title in a dlgGroup.
+  - The User Language no longer returns wires in layer 0.
+  - Fixed PASTEing nets with different net classes than an existing net of the
+    same name.
+  - Fixed toolbar positioning.
+  - Fixed checking user defined print borders against the printer driver's
+    minimums.
+  - Fixed library update in case of pins with '@' in their name.
+  - Fixed handling pin names with '@' in the User Language.
+  - Fixed handling parameter strings (like '>NAME') in ULPs in case the editor
+    window was refreshed after a dialog.
+  - Fixed handling the '>GATE' parameter String in ULPs.
+  - Fixed UL_TEXT.wires() for mirrored texts of smashed elements.
+  - Fixed calculating ratsnest when adding a part with many Pwr pins (this took
+    a very long time).
+  - Fixed page size of PS_DINA3 device in CAM Processor.
+  - Fixed the polygon subtractor to handle cases where many identical objects
+    have to be subtracted from the same polygon.
+  - Fixed closing a window in a script that has been called from an other
+    window.
+  - Fixed version 3.5 compatibility mode in PACKAGE command.
+  - Fixed the UL_PIN.contact function if called from a UL_PINREF context.
+
+Release notes for EAGLE 4.03
+============================
+
+WARNING: Due to some necessary changes in the data structure once you edit
+         a file with version 4.03 you will no longer be able to edit it
+         with earlier versions!
+
+         PLEASE MAKE BACKUP COPIES OF YOUR CURRENT BOARD-, SCHEMATIC- AND
+         LIBRARY-FILES BEFORE EDITING THEM WITH VERSION 4.03!
+
+* ADD command:
+
+  - The ADD dialog now has a 'Drop' button that removes a library from the list
+    of used libraries.
+  - The ADD command can now fetch a particular gate from a device, without
+    automatically fetching the MUST and ALWAYS gates, too.
+  - Some users always want to use the device name as part value, even if the
+    part needs a user supplied value. Those who want this can now append the line
+
+    Sch.Cmd.Add.AlwaysUseDeviceNameAsValue = "1"
+
+    to the eaglerc.usr file.
+
+* DELETE command:
+
+  - The DELETE command now deletes an entire part when clicking on a gate
+    with the Shift key pressed. In that case, the wires connected to the element
+    in the board will not be ripped up.
+  - The DELETE command now deletes the entire polygon when clicking on a
+    polygon wire with the Shift key pressed.
+  - The DELETE command now deletes the entire net or bus segment when clicking
+    on a net or bus wire with the Shift key pressed.
+
+* ERC command:
+
+  - Since some people did not appreciate the new checks implemented into the
+    ERC, these can now be suppressed by appending the line
+
+    Erc.SuppressAdditionalWarnings = "1"
+
+    to the eaglerc.usr file.
+  - The ERC now reports uninvoked MUST gates as errors.
+  - The ERC now checks whether nets and signals have consistent net classes.
+  - The ERC no longer checks pin overlaps within the same gate.
+
+* EXPORT command:
+
+  - The EXPORT IMAGE command now accepts the new keyword MONOCHROME to produce
+    a black&white image.
+  - EXPORT IMAGE now displays a 'wait' cursor if the operation takes some time.
+  - EXPORT NETSCRIPT now outputs the net classes.
+
+* INFO command:
+
+  - The INFO command now displays the layer name.
+
+* LAYER command:
+
+  - The new option '??' can be used to suppress error messages when deleting
+    a layer.
+
+* UPDATE command:
+
+  - The UPDATE command now accepts the parameters '+@' and '-@' which allow
+    renaming the libraries contained in a drawing.
+
+* VALUE command:
+
+  - Some users don't want the warning message about a part not having a user
+    definable value, so that warning can now be disabled by appending the line
+
+    Warning.PartHasNoUserDefinableValue = "0"
+
+    to the eaglerc.usr file.
+
+* Design Rules:
+
+  - The DRC check "copper against t/bRestrict" can now be completely turned
+    off through "Misc/Check restrict" in the Design Rules dialog. By default
+    any copper objects in the Top and Bottom layers are checked against objects
+    in t/bRestrict.
+  - There are now checkboxes on the "Restring" tab that can be
+    set to enable using the actual pad or via diameter in inner layers, too.
+    By default this option is off for newly created boards, but will be set
+    when updating a board from version 3.5 or earlier, since previous versions
+    used the same pad/via diameter on all layers.
+    TO IMPLEMENT THIS FEATURE IT WAS NECESSARY TO MODIFY THE DATA STRUCTURE
+    IN A WAY SO THAT FILES EDITED WITH VERSION 4.03 CAN NO LONGER BE LOADED
+    INTO EARLIER VERSIONS (OTHERWISE THE RESULTS MIGHT NOT BE CORRECT).
+  - The Restring parameters in the Design Rules are no longer set to 0 when
+    updating a board file from version 3.55 or earlier. They are now left at
+    their default values and if the file contains any pads or vias that would
+    become larger due to these new parameters, the user will pe prompted to
+    confirm this and to adjust the Design Rules if necessary.
+    When the CAM Processor loads a version 3.55 (or earlier) file, the Restring
+    Parameters will still be set to 0, which makes sure that the result will be
+    the same as in previous versions.
+    When loading a file from version 4.0 or 4.01, the restring parameters will
+    be checked, and if they are 0 the user will be prompted to confirm this and
+    and to adjust the Design Rules if necessary.
+  - The DRC now checks the Design Rules for plausibilities.
+  - The DRC now only checks pads and smds, as well as any copper objects
+    connected to them, against dimensions.
+
+* Polygons:
+
+  - The polygon named _OUTLINES_, which is used for calculating outlines, no
+    longer needs to have an Isolate parameter of 0 (See "Help/Generating
+    Output/Outlines data").
+  - When calculating the _OUTLINES_ polygon, objects in the layers t/bRestrict
+    and Dimension were wrongly subtracted.
+
+* User Language:
+
+  - New data members UL_PART.deviceset, UL_DEVICESET.library,
+    UL_DEVICE.library and UL_SYMBOL.library.
+
+* CAM Processor:
+
+  - The CAM Processor can print schematics again.
+
+* Miscellaneous:
+
+  - Improved selectability of arcs.
+  - Speeded up saving a file when there are many entries in the CP tree and the
+    network is slow.
+  - The "Always vector font" flag that is stored in a drawing file can now
+    be controlled via "Options/Set/Persistent in this drawing" (previously
+    this was only possible by entering the SET command in the command line).
+  - The vector font characters '&', '@' and '~' have been improved.
+  - The 'dxf.ulp' now outputs texts always with the builtin vector font by
+    default (this can be changed through a new checkbox in the dialog).
+  - Junctions are now also set automatically when a part is placed, and they
+    will be automatically deleted if a part or a net wire is deleted.
+  - The automatic opening of the project folder at program start (or when
+    activating a project by clicking on its gray button) can now be disabled
+    by appending the line
+
+    ControlPanel.View.AutoOpenProjectFolder = "0"
+
+    to the eaglerc.usr file.
+
+* Bugfixes:
+
+  - The Autorouter sometimes routed too close towards pads, which could result
+    in short circuits (this only happened when the pad shape was different in
+    the various routing layers).
+  - A crash could happen in EXPORT IMAGE unter Linux with 8bpp X-servers.
+  - A crash could happen when removing a sheet with the REMOVE command.
+  - When using the CAM Processor device GERBER_RS274X to generate data for
+    a supply layer, the thermal gaps were missing.
+  - When printing several sheets the caption was not printed correctly under
+    Windows with some printers.
+  - The CAM Processor's GERBERAUTO didn't always create all apertures when
+    pads or vias had different shapes in the various layers.
+  - Resource usage under Windows was drastically reduced.
+  - Entering command names that were too long caused a crash.
+  - The values used with the CAM Processor command line options -h, -w, -x and
+    -y have been wrongly rejected.
+  - Values for Width and Height defined in 'eagle.def' were not copied into
+    the CAM Processor window, and values entered in the CAM Processor were not
+    used.
+  - CUT didn't work with the right mouse button.
+  - The library update mechanism sometimes didn't recognize different symbols
+    or packages, which made it impossible to add certain parts to a schematic.
+  - If the resulting bitmap was too large, the EXPORT IMAGE sometimes crashed
+    or didn't create any output (without an error message).
+  - When creating new library objects it was possible to enter names that
+    contained blanks.
+  - When EXPORT IMAGE was used in a newly loaded library with no object being
+    edited, the program crashed.
+  - A possible crash under Windows that happened when the program was left with
+    Alt-X was fixed.
+  - The User Language function fileglob() didn't work if the filename pattern
+    contained a blank.
+  - Sometimes some layers were not displayed in the CHANGE PACKAGE preview.
+  - The selected window area was not restored correctly when a schematic was
+    loaded from a project file.
+  - Avoiding ERC warnings about net wires being too close if there is a bus
+    wire at that point.
+  - Under Windows the UPDATE command didn't search for libraries case
+    insensitively.
+  - Fixed changing the layer of a polygon in a package.
+  - When printing more than one sheet on Windows 2000 the offset of the second
+    and following sheets was incorrect with some printer drivers.
+  - Empty lines in text files were not printed.
+  - Editing the DESCRIPTION of a directory produced faulty line ends under
+    Windows.
+  - There was no error message when the DESCRIPTION file couldn't be written.
+  - Speeded up DRC processing and deleting errors when the large cursor is
+    used.
+  - Reading a Design Rules file didn't work if the description contained the
+    '=' character.
+  - When a package was renamed, the package variant list wasn't updated.
+  - The Control Panel did not open the tree to the initial project if the
+    "Projects" path contained more than one entry.
+  - The Control Panel tree was not refreshed after operations like rename,
+    copy etc.
+  - The chapter describing the User Language function 'lookup()' was missing
+    from the German online help under Windows.
+  - Relative symbolic links were not expanded correctly under Linux.
+  - Pads and vias didn't keep their drills open inside signal polygons.
+  - The DRC now reports texts in signal layers that don't use the builtin
+    vector font (this check can be disabled through "Check texts" on the
+    Design Rules' "Misc" page).
+  - The DRC and Autorouter sometimes crashed when the board contained a large
+    arc or circle.
+  - Polygon wires no longer react on CHANGE STYLE.
+  - The SIGNAL command did not ask the user whether to combine newly defined
+    signals with existing ones, but rather silently connected them.
+  - When a dialog is cancelled, any running script will now also be cancelled.
+  - Previously entered text in the text editor's 'Find' dialog is now selected.
+  - Avoiding 'wait' cursor in dialogs during lengthy operations.
+  - EXPORT IMAGE didn't use the board's Design Rules.
+  - A UL_GATE that has been derived from a UL_INSTANCE did not provide the
+    correct x and y values.
+  - When loading an Autorouter control file that contained a routing grid with a
+    precision that exceeded the internal editor resolution of 0.0001mm, the
+    routing grid was rounded to the internal resolution.
+  - When a file was opened using the Control Panel's context menu, the buttons
+    in the editor window's toolbars didn't work correctly under Windows.
+  - The program crashed when a device was added to a schematic via Drag&Drop
+    from the Control Panel, and the library needed to be updated from an older
+    version.
+  - Some paper sizes were not handled correctly in the PRINT command under Linux.
+  - When a device that supports colors has been used in the CAM Processor,
+    selecting "Layer/Show selected" or "Layer/Show all" disabled the display of
+    the color numbers in the layer list.
+  - Removing a key assignment with "ASSIGN key;" didn't work.
+  - The ADD command didn't add a new part if a part name was given and there
+    were still unused NEXT gates of that type available in an already existing
+    part.
+  - The 'Stop' button wasn't disabled correctly when pressed in the LABEL
+    command.
+  - Supply layers were not printed correctly if the print was done rotated.
+  - Fixed missing cursor in text editor if the first character in a line is
+    something like '{'.
+  - When using the MOVE command with "click&drag" mode, releasing the mouse
+    button outside the drawing area is now ignored (as was the case in version
+    3.55).
+  - The next command was sometimes skipped when an error message was given in
+    a script file.
+  - When routing a large board with many layers and a fine grid, the autorouter
+    sometimes needed extremely much memory. This has been improved to make it
+    work with less memory.
+  - When using a fine routing grid the Autorouter sometimes inserted an extra
+    (jagged) wire segment at the starting point of a trace.
+  - When the routing grid was not an integer multiple of the internal editor
+    resolution of 1/10000mm (e.g. 6.25mil), the Autorouter sometimes didn't
+    round the resulting coordinates corrrectly.
+  - Fixed updating the contents of a dlgComboBox when a statement is executed.
+  - Fixed the bahaviour of the "Again" function in the text editor in case
+    nothing has been searched yet.
+  - Fixed setting colors, fill styles and long strings when adding new layers
+    from a library to a board or schematic drawing.
+  - Fixed processing textual coordinate values (sometimes in script files only
+    every other coordinate pair was recognized).
+  - Fixed recalculating the "Window Fit;" area of a sheet after a library
+    update.
+  - User Language Dialogs sometimes became inoperative after cancelling a
+    message box.
+  - The bounding box of texts will be recalculated in order to fit exactly to
+    the text size when using vector font.
+  - The CAM Processor didn't correctly write the offsets into the info files.
+  - The PASTE command in a schematic didn't always forward annotate the net
+    classes of the pasted nets correctly.
+  - Fixed handling empty strings in dlgComboBox.
+  - Fixed updating libraries in the PASTE command.
+  - Sometimes small white "dots" appeared when a file was newly loaded.
+    These also caused zero-length/zero-width apertures to be generated in
+    Gerber output.
+  - When renaming a file in the Control Panel, a possibly existing target file
+    is no longer overwritten.
+  - Sometimes under Windows a click on a push button was not recognized when
+    the mouse button was released while moving the mouse pointer away from the
+    push button.
+  - Fixed handling parameters (e.g. package variant names) containing '='.
+  - Fixed creating new projects and folders in case several branches in the
+    Control Panel tree view contained the same directory.
+  - Sometimes thermal and annulus symbols were not correctly generated for
+    supply layers if a window refresh in the board editor was caused while the
+    CAM Processor was running.
+  - CHANGE PACKAGE sometimes didn't map the pad assignments correctly, which
+    could cause wrong connections in the board and a loss of consistency.
+  - The ROUTE command no longer generates a via at points where there is
+    already a wire in the same layer.
+  - The layer of SMDs was sometimes not recognized correctly.
+
+Release notes for EAGLE 4.01
+============================
+
+* Bugfixes:
+
+  - The 'bom.ulp' didn't print the "Description" if no database was in use.
+  - 'bom.ulp' now uses '.htm' as default extension when saving as HTML.
+  - Added missing warning messages to the ERC help page.
+  - Holes will be subtracted from signal polygons even if the Distance
+    parameter for Copper/Dimension in the Design Rules is 0 (for better
+    compatibility with version 3.55).
+  - Fixed restoring the visible area in a schematic when loading a project.
+  - Fixed handling umlauts in NAME command.
+  - Sometimes text files were not correctly recognized and thus not listed
+    in the Control Panel's tree view.
+  - Making sure a very small circle with Width=0 is drawn as at least one pixel
+    on the screen (this is sometimes used as a reference marker).
+  - Fixed not limiting the zoom factor for small drawings.
+  - Avoiding flickering hour glass cursor when loading many libraries in ADD.
+  - No longer displaying text origins in device set drawing.
+  - Fixed checking whether a pad or via is connected to a polygon.
+  - Fixed calculating airwires between partial polygons.
+  - Checking if coordinates are within the allowed range.
+  - Fixed calculating polygons with widths less than 1 micron.
+  - The "Use all/none" option was missing in the context menu of the "Libraries"
+    entry in the Control Panel if there was only one entry in the
+    "Options/Directories/Libraries" path.
+  - Sometimes a faulty "used" indicator appeared in the Control Panel on
+    directories that are not project directories.
+  - After loading Design Rules from a file into the Design Rules dialog, the
+    percentage values of e.g. the Restring parameters were not updated
+    correctly.
+  - Fixed switching back the mouse cursor from the four-way selection cursor.
+  - Fixed editing the library description from a symbol drawing.
+  - The "mouse click" symbol was not displayed correctly in the Linux help.
+  - Changing "Options/Set/Display mode" did not propagate the parameter change
+    to the other windows.
+  - Polygons and non-continuous wires in packages and symbols were not handled
+    correctly in the User Language.
+  - Since version 4.0 a bus name that is used with a range can no longer end
+    with a digit. However, if such a name was already present in a drawing from
+    a previous version and a net was extracted from that bus, the program
+    crashed. Now there will be an error message in such a case.
+  - If a library was saved and parts from that library were added very quickly
+    (within the same second, for example in a script) it could happen that the
+    current version of the library was not used, but rather the previously
+    loaded version.
+  - The obsolete description of DISPLAY_MODE FAST has been removed from the
+    online help.
+  - Fixed a bug in the library update mechanism that caused an error code
+    of 400-1363.
+
+Release notes for EAGLE 4.0
+===========================
+
+* Control Panel:
+
+  - The Control Panel now has a "Tree View" which provides an overview over
+    all areas of EAGLE, like Libraries, User Language Programs, Projects etc.
+  - The Control Panel's tree view supports "Drag&Drop" to copy or move files
+    and directories. Files (like ULPs or scripts) can also be dragged over
+    an editor window and dropped there; this results in the file being RUN
+    or executed by the SCRIPT command inside the respective window. Devices
+    and packages can also be dragged and dropped onto editor windows. Dropping
+    an entire library onto a board or schematic editor window will perform
+    a library update.
+  - Objects in the tree view have a context menu that can be accessed by
+    pressing the right mouse button.
+  - The menu option "Save project as..." is no longer available. New projects
+    can now be created via the context menu in the "Projects" tree item, or
+    by selecting "File/New/Project" from the Control Panel.
+  - The path settings in "Options/Directories" can now use the special names
+    "$HOME" and "$EAGLEDIR" to access the user's home directory or the EAGLE
+    installation directory, respectively.
+  - The new "Auto backup" feature will automatically save any modified
+    drawing into a safety backup file after a certain time.
+    See "Help/Automatic backup" for details.
+
+* New Project Structure:
+
+  - The names of files that are under the current project directory are
+    no longer written as absolute paths into the 'eagle.epf' file, but rather
+    relative to the project directory. This allows for complete project
+    directories to be easily copied or renamed.
+  - A project is now held in a subdirectory that contains a file named
+    'eagle.epf' (which stores the location and settings of open windows).
+
+* Converting projects from previous versions:
+
+  - Previous versions of EAGLE used individually named project files (*.epf)
+    to store project information. Beginning with version 4 a project is stored
+    entirely in a subdirectory, and that directory contains a file with the
+    fixed name 'eagle.epf'.
+  - The easiest way to convert projects from older versions is to create one
+    directory for each project and copy that project's '.epf' file into this
+    directory under the name 'eagle.epf'. The name of the project in version 4
+    is the name of the project's directory.
+  - In the Control Panel use the "Options/Directories" dialog to enter the
+    name of the directory that contains your project subdirectories into the
+    "Projects" field.
+
+* User Interface:
+
+  - The textual command menu can now be configured to display aliased
+    command buttons as well as submenus (see HELP MENU for details).
+  - Changes made in the "Options/User interface" dialog now take effect
+    immediately for open editor windows.
+  - The cursor inside a layout or schematic editor window can now be set
+    to a "large" crosshair cursor (see "Options/User interface").
+  - The "Delete" icon was changed from a pencil with an eraser to an 'X'.
+  - The "Split" icon was changed to better indicate what will happen.
+
+* Keyboard and mouse control:
+
+  - Alt-0 no longer popups up the window list, but leads directly
+    to the Control Panel.
+  - Pressing the Ctrl key while moving the mouse now scrolls the
+    draw window in any direction.
+  - The mouse wheel now zooms in and out in editor windows (zoom factor can be
+    adjusted in "Options/User interface/Mouse wheel zoom", a value of '0'
+    disables this feature and the sign of this factor defines the direction
+    of the zoom operation).
+
+* Screen display:
+
+  - The default for "minimum visible text size" has been changed to 3.
+  - The display mode parameter FAST has been dropped.
+  - By default the zoom factor in editor windows is limited so that the
+    resulting virtual drawing area does not exceed the 16-bit coordinate range.
+    This is necessary to avoid problems with graphics drivers that are not
+    32-bit proof. If the graphics driver on a particular system can handle
+    coordinates that exceeed the 16-bit range, "Options/User interface/Limit
+    zoom factor" can be switched off allow larger zoom factors.
+
+* Design Rules:
+
+  - EAGLE now supports a full set of Design Rules that are stored inside
+    the board file (and can also be saved to disk files). Both the Design
+    Rule Check and the Autorouter will use the same set of rules.
+  - Newly created boards take their design rules from the file 'default.dru',
+    which is searched for in the first directory listed in the
+    "Options/Directories/Design rules" path.
+  - Cream mask values are now measured "inwards" and thus have a positive sign.
+  - The parameters AnnulusConduct and ThermalConduct are no longer available.
+    There are now checkboxes in the Design Rules dialog's "Supply" tab that
+    define whether a Thermal or Annulus symbol shall have a "Restring" or not.
+  - In order to assure that existing boards yield the same results when
+    producing CAM data after they have been updated to version 4, the minimum
+    restring parameters for the outer layers are set to 0 in the design rules
+    (this allows the existing pads and vias to keep their defined diameters).
+    The user should adjust these parameters to some reasonable values and run
+    a design rule check after adding new parts from version 4 libraries.
+
+    NOTE: The above has been changed in version 4.03 - see release notes for
+    version 4.03!
+
+    Also, the new design rule parameter that controls the minimum distance
+    between objects in signal layers and the board dimensions (default: 40mil)
+    will be set to 0 if a board that is updated from an older version contains
+    any signal polygons.  The reason for this is that in previous versions
+    polygons didn't take the board dimensions into account when they were
+    calculated, but starting with version 4 polygons keep the minimum distance
+    defined in "Edit/Design rules/Distance/Copper/Dimensions" from the boards
+    dimensions. In order to guarantee that updated boards will yield the same
+    results when producing CAM data with version 4 this parameter is set to 0.
+    Note that this will also have an impact on the autorouter, so the user
+    should adjust this parameter to some reasonable value.
+
+* Net Classes:
+
+  - Nets and Signals now have a new parameter called "Net Class".
+  - The new command CLASS is used to define and select net classes.
+  - The CHANGE command has a new option 'class' to change the net class
+    of a net or signal.
+
+* Polygons:
+
+  - When calculating polygons, the minimum distances defined in the design
+    rules and net classes will be taken into account. Therefore the default
+    value for the Isolate parameter of newly created polygons is now 0. If a
+    particular polygon is given an Isolate value that exceeds that from the
+    design rules and net classes, the larger value will be taken.
+  - The new parameter 'rank' defines if and how polygons are subtracted from
+    each other. When updating existing files, polygons in signals will get
+    a rank of '1', while polygons in packages will get rank '7'.
+  - Polygons are now checked in the Design Rule Check if they have the same
+    'rank'.
+  - Sometimes the polygon subtractor didn't go through a gap where, according
+    to the actual widths and minimum distances, it should have.
+  - Polygons in the t/bRestrict layers are now subtracted from signal polygons
+    in the Top and bottom layer, respectively.
+
+* Design Rule Check:
+
+  - The DRC now runs a lot faster.
+  - Progress is now displayed in a progress bar (the progress rectangles
+    are no longer displayed and the SET variables DRC_SHOW and DRC_COLOR
+    are now obsolete).
+  - Since the DRC is now much faster its error messages are no longer
+    stored in a separate '*.drc' file (this separate file sometimes
+    caused board and DRC error messages to be out of sync).
+  - Polygons from different signals with the same 'rank' are checked
+    against each other.
+  - All objects in layers Top..Bottom (including arcs, circles etc.)
+    are now checked.
+  - The 'overlap' and 'minimum distance' check are no longer separate checks.
+  - The DRC no longer checks an individual signal against everything else.
+    The newly introduced "Net Classes" can be used to do this.
+  - The rectangle for a selective DRC can now be defined with "click&drag"
+    (just as in the WINDOW command).
+  - Holes are no longer checked in the "Grid" check (only pads, vias, smds
+    and wires in signal layers are checked).
+  - Any objects in signal layers within a package are now checked against each
+    other.
+  - Several new checks have been added (see the DRC dialog for more information
+    about the new parameters).
+  - Due to a calculation problem the DRC sometimes reported very small errors
+    where in reality there were no errors.
+
+* Long strings:
+
+  - All names, values and texts can now be of any length.
+  - The User Language constants regarding name lengths still exist,
+    but the program uses these constants only for formatted output
+    as in the EXPORT command. They are still present for compatibility
+    only.
+  - There is no more limit to the number of members in a bus (bus index
+    values are limited to 0..511).
+  - Bus member names can now contain any characters, except ':', ',', '[', ']'
+    and blanks.
+
+* Wire styles:
+
+  - Wires now have a new parameter 'Style', which can be set to one of the
+    following values:
+
+    Continuous      _______________  (default)
+    LongDash        ___ ___ ___ ___
+    ShortDash       _ _ _ _ _ _ _ _
+    DashDot         ___ . ___ . ___
+
+  - The variable for setting the bend type of a wire has been renamed from
+    Wires_Style to Wire_Bend to avoid confusing the two parameters.
+  - Note that the DRC and Autorouter will always treat wires as "Continuous",
+    even if their style is different. Wire styles are mainly for electrical
+    and mechanical drawings and should not be used on copper layers. It is
+    an explicit DRC error to use a non-continuous wire as part of a signal
+    that is connected to any pad.
+
+* Text fonts:
+
+  - Texts can now have three different fonts:
+    'Vector'  the program's internal vector font (as used in previous versions)
+    'Proportional'  a proportional pixel font (usually 'Helvetica')
+    'Fixed'  a monospaced pixel font (usually 'Courier')
+  - When updating drawings from older versions, all texts are converted to
+    'Proportional' font, except for those in layers Top...Bottom, tRestrict
+    and bRestrict, since these texts probably need to be subtracted from
+    signal polygons, which only works with the 'Vector' font.
+  - The program makes great efforts to output texts with fonts other than
+    'Vector' as good as possible. However, since the actual font is drawn
+    by the system's graphics interface, 'Proportional' and 'Fixed' fonts
+    may be output with different sizes and/or lengths.
+    See HELP TEXT if you don't want texts to be displayed with fonts other
+    than 'Vector'. You can set the user interface option "Always vector font"
+    to always have texts output with the builtin vector font.
+  - When creating output files with the CAM Processor, texts with fonts
+    other than 'Vector' may be output using the 'Vector' font instead.
+    This happens if the actual output device is unable to produce texts
+    with different fonts.
+  - If a text with a font other than 'Vector' is subtracted from a signal
+    polygon, only the surrounding rectangle is subtracted. Due to the
+    above mentioned possible size/length problems, the actually printed
+    font may exceed that rectangle. Therefore, if you need to subtract
+    a text from a signal polygon it is recommended that you use the 'Vector'
+    font.
+  - The 'Ratio' parameter has no meaning for texts with fonts other than
+    'Vector'.
+  - The CHANGE command has a new option "Font".
+
+* Pads and Vias:
+
+  - The diameter of pads and vias is now derived from the drill diameter
+    using the Design Rules (the pad and via diameter '0' is now allowed
+    and results in a diameter that is derived from the current design rules).
+    If a pad is defined with a diameter that exceeds the one that would
+    result from the current design rules, the larger diameter is taken.
+    The default value for the diameter of newly created pads and vias is now
+    '0' to allow the Design Rules to define the actual diameters.
+  - Pads can have different shapes on Top and Bottom (they will always be
+    'round' on the inner layers).
+  - The via shape now only applies to the outer layers (they will always be
+    'round' on the inner layers).
+  - The diameter of pads with shape X/YLongOct now defines the smaller side
+    of the pad (formerly the wider side). Existing files will be modified
+    accordingly during the update.
+  - By default vias no longer generate Thermal symbols in supply layers.
+    There is a new design rules parameter that enables Thermal symbols to
+    be generated for vias in supply layers and signal polygons.
+  - When updating files from older versions, pads and vias with diameter <=
+    drill will be replaced with a 'hole' of that drill diameter. This only
+    works for unconnected pads; if a pad is connected to a pin (in a library
+    or schematic) or to a signal (in a board) it can't be converted to a hole
+    and the user must decide what to do in such a case. This conversion has
+    become necessary because pads and vias now always have a 'restring' that
+    is determined by the design rules.
+    If a consistent board/schematic pair is updated to version 4 and such pads
+    are replaced with holes in only one of the drawings, the board/schematic
+    pair will become inconsistent. If that happens you will need to modify
+    the respective package/device definition to make things consistent again.
+
+* Round SMDs:
+
+  - SMDs have a new parameter "Roundness", which can range between 0 and 100
+    and defines the percentage by which the corners are "rounded". A value
+    of 0 (default) results in a rectangle, while a value of 100 results in
+    a circular shape (if the x and y dimension of the SMD are the same),
+    which can be used for BGAs.
+  - The SMD command accepts roundness values as numbers with a leading '-'
+    (to be able to distinguish it from the SMD size values).
+  - The CHANGE command has a new option "Roundness".
+
+* New Library structure:
+
+  - What was called a "Device" in previous versions is now called a "Device Set".
+    A "Device Set" consists of the gate definitions and several actual devices,
+    implemented through "Package Variants"
+  - The PACKAGE command can now assign several different package variants
+    to a device (as in 7400N, 7400D,...).
+  - The new command TECHNOLOGY can be used to define various "technology"
+    variants for a device's package variants (as in 74LS00N, 74S00N,...).
+  - The CHANGE command has the new options PACKAGE and TECHNOLOGY, which
+    can be used to select from the packages and/or technologies a device
+    set defines. This can be done from within the schematic or board.
+  - The new command DESCRIPTION can be used to provide detailed textual
+    information about a device, package or library.
+  - The CONNECT dialog now allows copying pin/pad connections from an other
+    package variant. Only those package variants are offered in the "Copy from"
+    combo box that have the same pad names as the current package variant
+    (only connected pads are checked).
+  - The CONNECT dialog now asks the user if he want's to discard any changes
+    before cancelling the dialog.
+  - The CONNECT command can now handle gate names that contain periods.
+  - The device editor now displays a list of package variants, a preview of the
+    current package and the description of the device.
+  - Since it is now possible to "completely" define a device with all
+    package and technology variants, the default setting of the "Value"
+    parameter has been changed to "Off".
+  - The meaning of the "Value" parameter in a device set is now as follows:
+    + "Value Off" means there is no user definable value, i.e. the value of
+      a part is defined by the dievice name (including, if present, technology
+      and package variant). A device like "74LS00N" would be an example.
+    + "Value On" means this device needs a user defined value to be fully
+      specified. A resistor is an example.
+    Even in the "value off" case the user can (after a confirmation dialog)
+    change a part's value to handle any special cases that might otherwise
+    cause problems. Any CHANGE TECHNOLOGY or CHANGE PACKAGE command that is
+    executed after such a change will set the value back to the device name.
+
+* Automatic Library update:
+
+  - If a library has been modified after parts or packages from it have been
+    added to a schematic or board, the new command UPDATE can be used to
+    automatically update all used library objects with their latest version
+    (see "Help Update").
+  - The UPDATE command can be selected from the "Library" pulldown menu in a
+    board or schematic, or from the context menu of a library in the Control
+    Panel. It is also possible to drag&drop a library from the Control Panel
+    onto a schematic or board drawing and perform the update that way.
+
+* Bill Of Material:
+
+  - The User Language Program 'bom.ulp' to generate the "Bill Of Material"
+    has been rewritten. It now has a dialog in which the user can
+    interactively generate the BOM, pulling in additional data from a
+    user defined database file. Use "RUN bom.ulp" and click on the "Help"
+    button for more information.
+
+* Generating Outlines for milling prototypes:
+
+  - The User Language Program 'outlines.ulp' can be used to generate the data
+    necessary to control a milling machine for generating a prototype board.
+
+* User Language:
+
+  - The User Language now supports user defined dialogs as well as standard
+    file dialogs and message boxes.
+  - The RUN command now accepts additional arguments that are available
+    to the ULP as 'argc' and 'argv' parameters.
+  - Data can now be read into a ULP.
+  - The new lookup() function can be used to perform database lookups.
+  - The new fileglob() function can be used to do a directory search.
+  - The new fileerror() function can be used check for I/O errors.
+  - The 'exit()' function can now have a string parameter which is sent
+    to the editor window and executed as a command string.
+  - ULPs can now include other ULP files with the new #include directive.
+  - The new #usage directive can be used to provide information about a ULP.
+  - The new object UL_DEVICESET is used to access device sets in a library.
+  - The builtin statement device() has been renamed to deviceset() to conform
+    with the new library structure.
+  - UL_POLYGON has a new member 'rank'.
+  - UL_POLYGON has new members 'contours()' and 'fillings()' to access
+    the calculated polygon data. The 'dxf.ulp' now uses these new members
+    to draw the actual shape of calculated polygons.
+  - The new object UL_CLASS is used to access net classes.
+  - UL_BOARD and UL_SCHEMATIC have new members 'classes()'.
+  - UL_NET and UL_SIGNAL have new members 'class'.
+  - UL_WIRE has new members 'style' and 'pieces()'.
+  - UL_TEXT has a new member 'font'.
+  - The data members 'diameter' and 'shape' of UL_PAD and UL_VIA are now layer
+    dependent and thus require the layer number for which the data shall be
+    retrieved, because depending on the new Design Rules diameters and shapes
+    of pads and vias can be different in the various layers. The syntax is
+    now, e.g., pad.diameter[LAYER_TOP] to get the pad diameter in layer 1.
+    Existing User Language Programs need to be edited to conform to this new
+    syntax. See "Help UL_PAD/UL_VIA" for further details.
+    The 'dxf.ulp' now generates the pads and vias separately in each active
+    layer, including stopmask layers.
+  - The data members UL_SMD.dx and UL_SMD.dy can now have an optional layer
+    index to retrieve the dimensions in the t/bStop and t/bCream mask layers.
+    The 'dxf.ulp' now generates mask data if those layers are active.
+  - New builtin constants INT_MAX, INT_MIN, REAL_EPSILON, REAL_MAX and REAL_MIN
+    (see "Help/User Language/Builtins/Builtin Constants").
+
+* Script files:
+
+  - Script files can now call other scripts (as long as no recursive
+    call is made).
+  - Script files can now contain comments. Everything after (and uncluding)
+    a '#' character will be ignored. '#' characters inside quotes have no
+    special meaning. Note that script labels (e.g. "BRD:") and continuation
+    characters ("\") must not be followed by anything else than white space,
+    and therefore can not be followed by comments (otherwise they loose
+    their special meaning).
+  - The 'eagle.scr' file is now first searched for in the current project
+    directory (which is equal to the current working directory in case there
+    is no project open) and then in the directories listed in the Control
+    Panel's "Options/Directories/Scripts".
+
+* Autorouter:
+
+  - The Autorouter can now route "through" signal polygons (this can be
+    controlled by the new cost factor 'cfPolygon'). A side effect of this
+    is that a connection that has been made by the polygon before the
+    Autorouter was started may be lost if a track generated by the Autorouter
+    "splits" the polygon. Therefore, even if the Autorouter reaches 100%,
+    the final result (after recalculating the polygon by RATSNEST) may be
+    below 100%.
+  - The Autorouter control parameters are now stored inside the board file.
+    They can be saved to and loaded from external files via the Autorouter
+    dialog. Existing control files will be automatically read and stored in
+    the board file when updating files from previous versions (the old *.ctl
+    file then becomes obsolete and will not be read when the autorouter is
+    started - any changes made to such a file with a text editor are ignored!).
+  - The Autorouter and DRC now use the same set of Design Rules. The old
+    Autorouter parameters are stored in their corresponding DRC parameters,
+    except for the following:
+
+    + Instead of the separate 'mdWireDimension' and 'mdViaDimension' there is
+      now only a single 'Copper/Dimension' parameter. This parameter will be
+      set to the last of the two 'md*' parameters from the *.ctl file (which
+      typically is 'mdViaDimension').
+    + The 'mdWireRestrict' and 'mdViaRestrict' parameters are ignored because
+      the minimum distance between any copper (except pads and smds) and a
+      restrict area is now 0.
+    + The 'tpViaDiameter' parameter is ignored because the actual via diameter
+      is now generated from the via drill and the restring parameters.
+    + The 'tpWireWidth' and 'tpViaDrill' parameters are stored in the default
+      net class 0.
+
+    When saving Autorouter control parameters to disk, the minimum distance
+    parameters are no longer part of that file.
+  - There can now be any number of 'Optimize' passes. By default there are
+    now 4 'Optimize' passes.
+  - Each pass can be separately activated or deactivated.
+  - The Autorouter can now route different wire widths and minimum distances
+    simultaneously by using "Net Classes".
+  - The minimum distance parameters are no longer defined in the Autorouter
+    dialog, but rather in the Design Rules dialog.
+  - The track parameters (wire width and via diameter) are now defined in
+    the Design Rules dialog (absolute minimums) and the Net Classes dialog.
+  - The minimum routing grid is now 0.02mm (about 0.8mil).
+  - The default control parameters and the internal handling of cfChangeDir
+    have been modified to avoid jagged tracks.
+  - The value 99 for the cfNonPref parameter now causes the router to
+    completely avoid traces that are not in the preferred direction of the
+    respective layer. You should carefully decide if this behaviour is really
+    what you want. To avoid unexpected effects with existing boards, the value
+    99 will be silently changed to 98 when updating older files.
+  - With very small routing grids the Autorouter sometimes routed a little bit
+    too close towards round pads/vias.
+  - Sometimes the autorouter didn't go through a gap where, according to the
+    actual widths and minimum distances, it should have.
+
+* ADD command:
+
+  - The ADD command can now be used with wildcards ('*' or '?') to find
+    a specific device. The ADD dialog offers a tree view of the matching
+    devices, as well as a preview of the device and package variant.
+  - To add directly from a specific library, the command syntax
+
+       ADD devicename@libraryname
+
+    can be used. 'devicename' may contain wildcards and 'libraryname' can
+    be either a plain library name (like "ttl" or "ttl.lbr") or a full
+    file name (like "/home/mydir/myproject/ttl.lbr" or "../lbr/ttl").
+  - If a device or package shall be added, and there is already such an object
+    (with the same name from the same library) in the drawing, an automatic
+    library update will be performed which replaces the existing object in
+    the drawing with the current version from the library.
+  - The new command UPDATE can be used to update all parts in a board or
+    schematic with modified library versions (see "Help Update").
+
+* CHANGE command:
+
+  - CHANGE LAYER for wires and polygons now works between any layers within
+    packages and symbols.
+
+* CONNECT command:
+
+  - Pressing the SPACE key in the CONNECT dialog while a list element has
+    the focus will now perform the 'connect' or 'disconnect' action,
+    respectively.
+
+* DELETE command:
+
+  - If the last supply symbol of a given type is deleted from a net segment
+    that has the same name as the deleted supply pin, that segment is now given
+    a newly generated name (if there are no other supply symbols still
+    attached to that segment) or the name of one of the remaining supply
+    symbols.
+
+* DISPLAY command:
+
+  - The new parameters '?' and '??' can be used to control what happens if
+    a layer that is given in a DISPLAY command does not exist in the current
+    drawing. See "Help Display" for details.
+
+* GROUP command:
+
+  - If the selected group is empty, the GROUP command no longer displays
+    a message box saying "Group is empty". It rather prompts that message
+    in the status bar (with a beep) and stays active for a new group
+    definition.
+
+* ERC command:
+
+  - The ERC now lists the package names when reporting parts/elements with
+    inconsistent packages.
+  - The ERC now detects inconsistencies between the implicit power and supply
+    pins in the schematic and the actual signal connections in the board. Such
+    inconsistencies can occur if the supply pin configuration is modified
+    after the board has been created with the BOARD command. Since the power
+    pins are only connected "implicitly", these changes can't always be forward
+    annotated. If such errors are detected, forward-/backannotation will still
+    be performed, but the supply pin configuration should be checked!
+  - The ERC now checks for missing junctions and overlapping wires and pins.
+
+* ERRORS command:
+
+  - The ERRORS dialog is no longer modal (it stays "on top" of the editor
+    window) and can be kept open while resuming normal editing in the editor
+    window.
+  - The various error types are now listed more detailed.
+
+* EXPORT command:
+
+  - The EXPORT can now export image files (BMP, PNG, etc.).
+    See "Help/EXPORT" for details.
+
+* NET and BUS command:
+
+  - If a net wire is placed at a point where there is already another net
+    or bus wire or a pin, the current net wire will be ended at that point
+    (in previous versions the user had to click twice to end a net wire).
+    The same applies to a bus wire that is placed at a point where there
+    is already another bus wire. This function can be disabled with
+    "SET AUTO_END_NET OFF;", or by unchecking
+    "Options/Set/Misc/Auto end net and bus".
+  - If a net wire is placed at a point where there are at least two other
+    net wires and/or pins, a junction will automatically be placed.
+    This function can be disabled with "SET AUTO_JUNCTION OFF;", or by
+    unchecking "Options/Set/Misc/Auto set junction".
+  - If a bus name is used with a range, that name must not end with digits,
+    because it would become unclear which digits belong to the Name and which
+    belong to the range.
+
+* PASTE command:
+
+  - When pasting objects into a drawing that already contains earlier
+    (different) versions of these objects, an automatic library update will be
+    performed which replaces the existing objects in the drawing with the new
+    versions from the paste buffer.
+
+* PRINT command:
+
+  - The PRINT dialog's "Page setup" now allows border values that are smaller
+    than the initial values derived from the printer driver. To get back to
+    the original default you can enter '0'. Note, though, that your actual
+    printer may not be able to print that close to the page limits.
+  - The printer settings are no longer stored in the project file, but are now
+    stored in the user parameters ('eaglerc').
+  - Version 3.5 stored the binary printer setup in the Windows registry in
+    order to remember which printer was last used in EAGLE. This, however,
+    has frequently caused problems, sometimes even total system crashes.
+    As of version 4 EAGLE (like most other Windows applications) no longer
+    stores the used printer and always starts up with the system default
+    printer.
+
+* REMOVE command:
+
+  - The REMOVE command can now handle device, symbol and package names with
+    extension (for example REMOVE name.pac). If the name is given without
+    extension, you have to be in the respective mode to remove an object
+    (i.e. editing a package if you want to remove packages).
+
+* RENAME command:
+
+  - The RENAME command now allows '.' in names.
+  - The RENAME command can now handle device, symbol and package names with
+    extension (for example RENAME name1.pac name2[.pac] - note that the
+    extension is optional in the second parameter). If the first parameter
+    is given without extension, you have to be in the respective mode to
+    rename an object (i.e. editing a package if you want to rename packages).
+
+* REPLACE command:
+
+  - The REPLACE command can no longer be used with active forward- and
+    backannotation. This is due to the now complete definition of a device
+    set with all its package variants. Use the CHANGE PACKAGE command to select
+    one of the defined package variants, or use the UPDATE command to update a
+    package with a modified version from the same library.
+
+* SET command:
+
+  - The SET options for Thermal and Annulus parameters as well as the Solder
+    Stop and Cream mask data have been removed.
+    These values are now defined in the Design Rules.
+  - The SET variables DRC_SHOW and DRC_COLOR are now obsolete (progress in the
+    Design Rule Check is now displayed in a progress bar).
+  - The SET variable MAX_ERROR_ZOOM is now obsolete. The ERRORS dialog is no
+    longer modal (it stays "on top" of the editor window) and zooming can be
+    done with the usual WINDOW commands or buttons.
+
+* SHOW command:
+
+  - Highlighted objects are now kept highlighted during subsequent window
+    operations.
+  - Pressing ESCape in the SHOW command now lowlights the currently highlighted
+    object.
+
+* USE command:
+
+  - The USE command is now mainly for use in script files.
+  - The actually used libraries can now be comfortably selected in the
+    Control Panel.
+
+* CAM Processor:
+
+  - The CAM Processor no longer supports matrix printers. Use the PRINT
+    command to print to the system printer.
+  - The CAM Processor no longer prints schematics. Use the PRINT command instead.
+    (As of version 4.03 the CAM Processor can print schematics again).
+  - The command line option -I is no longer available, since the CAM Processor
+    can now be used freely in the Freeware version.
+  - Output is now only possible into files. If data shall be sent to a COM
+    or LPT port under Windows the UNC filename of a queue attached to that
+    port has to be used.
+  - If the "Section" text in a CAM Processor section consists of a string
+    like "Title: Descriptive text...", the "Title" will appear on the section's
+    tab, while the "Descriptive text..." will only be visible in the "Section"
+    field.
+  - CAM Processor jobs can now have a description.
+  - The diameter of octagonal pads in RS274-X has been increased by a factor of
+    1.08239 to compensate for the different interpretation of pad diameters in
+    EAGLE and RS274-X.
+  - Wires are no longer shortened in the CAM Processor in order to keep the
+    drills open. Only devices that can actually remove pixels from the output
+    can now keep the drills open (currently only the Postscript devices "PS"
+    and "EPS" can do this).
+  - The new CAM Processor device PS_INVERTED can be used to produce inverted
+    Postscript output.
+
+* Parameter storage:
+
+  - User specific parameters are now stored in an "eaglerc" file.
+    At program start, parameters are read (in the given sequence) from the
+    files
+
+      <prgdir>/eaglerc                    (Linux and Windows)
+      /etc/eaglerc                        (Linux only)
+      $HOME/.eaglerc                      (Linux)
+      $HOME/eaglerc.usr                   (Windows)
+
+    where <prgdir> means the directory that contains the EAGLE program file.
+    If no environment variable HOME is defined, the <prgdir> will be used
+    instead. When the program ends, the current values of all parameters
+    (if any of them have changed) are written to the eaglerc file in the HOME
+    directory.
+    Under Linux "$HOME" stands for the environment variable HOME.
+    Under Windows "$HOME" is either the environment variable HOME (if set)
+    or the value of the registry key "HKEY_CURRENT_USER\Software\Microsoft\
+    Windows\CurrentVersion\Explorer\Shell Folders\Personal", which contains
+    the actual name of the "My Documents" directory.
+  - The file 'eagle.cfg' is not read any more.
+  - Key assignments made with the ASSIGN command are now stored in the user
+    specific parameters.
+
+* Command line options:
+
+  - The options '-A' and '-T' are now obsolete (thermal and annulus data
+    is now defined in the Design Rules).
+  - The options '-B' and '-M' are now obsolete (solder stop and cream mask
+    data is now defined in the Design Rules).
+  - The option '-C' is now obsolete, since the CAM Processor no longer
+    supports matrix printers (all printing is done with the PRINT command).
+  - The options '-Z' and '-Y' are now obsolete (drill symbols are
+    configured in "Options/Set/Drill" and are stored in the user specific
+    "eaglerc" file).
+
+* Bugfixes:
+
+  - When printing several sheets at once, the >SHEET always displayed the
+    number of the currently edited sheet.
+  - When saving a file with more than one dot in its name the name was
+    cut off.
+
+* Miscellaneous:
+
+  - The DOS and OS/2 platforms is no longer supported.
+  - Due to changes in the file data structure you will most likely be asked
+    whether to run the ERC when loading a board/schematic pair created with
+    an earlier version of EAGLE.
+  - Files from earlier versions of EAGLE may contain library objects with
+    the same names. This was caused by PASTE or ADD operations with modified
+    devices or packages. Version 4 no longer allows this to happen, and
+    therefore needs to make sure updated files do not contain multiple
+    objects with the same name. In order to assure this, the update routine
+    adds the '@' character and a number to the names of such library objects.
+  - The library editor can now edit devices and symbols, even if the user's
+    license does not contain the schematic module.
+  - Avoiding multiple 'Save?' prompts for boards and schematics that are
+    connected via f/b annotation.
+  - When a file is modified while updating from a previous version the resulting
+    update report is now presented in a separate text window.
+

@@ -1,0 +1,39 @@
+Partlist exported from C:/PROGRAM FILES/EAGLE-4.11/projects/DEC/X8aPanel/board1.sch at  8/02/2005 09:11:07p
+
+Qty Value    Device            Parts                                                                                                                 
+2            3,81/1,4          GND, VCC                                                                                                              
+20           40-XX             BOOT, DISP, DNEXT, DTHIS, ENEXT, ETHIS, INIT, KEY0, KEY1, KEY2, KEY3, KEY4, KEY5, KEY6, KEY7, LA, LSR, LXA, RUN, SHLT\
+2            DIL16S            J1, J2                                                                                                                
+16  0.01     C-US050-025X075   C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16                                                 
+1   1.0uf    CPOL-USE15-5AXIAL C17                                                                                                                   
+20  1K       RESUS-10          R3, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23                          
+1   6.8K     R-US_0207/10      R2                                                                                                                    
+2   6.8uf    CPOL-USE22-6AXIAL C19, C20                                                                                                              
+4   10       RESUS-10          R29, R30, R31, R32                                                                                                    
+2   10K      R-US_0207/10      R1, R4                                                                                                                
+6   27       RESUS-10          R33, R34, R35, R36, R37, R38                                                                                          
+1   74LS04N  74LS04N           E20                                                                                                                   
+2   74LS08N  74LS08N           E2, E10                                                                                                               
+1   74LS20N  74LS20N           E21                                                                                                                   
+1   74LS42N  74LS42N           E22                                                                                                                   
+1   74LS74N  74LS74N           E23                                                                                                                   
+1   74LS90N  74LS90N           E25                                                                                                                   
+1   74LS95N  74LS95N           E24                                                                                                                   
+1   74LS123N 74LS123N          E18                                                                                                                   
+1   74LS145N 74LS145N          E17                                                                                                                   
+2   74LS148N 74LS148N          E1, E6                                                                                                                
+1   82pf     C-US050-025X075   C18                                                                                                                   
+8   330      RESUS-10          R39, R40, R41, R42, R43, R44, R45, R46                                                                                
+5   470      RESUS-10          R24, R25, R26, R27, R28                                                                                               
+1   7416N    7416N             E19                                                                                                                   
+3   7446N    7446N             E8, E13, E16                                                                                                          
+1   AC       LED5MM            D4                                                                                                                    
+1   BUS      LED5MM            D7                                                                                                                    
+9   HD-H101  HD-H101           E3, E4, E5, E7, E9, E11, E12, E14, E15                                                                                
+1   MD       LED5MM            D3                                                                                                                    
+5   MPSA05   2N2222A           Q1, Q2, Q3, Q4, Q5                                                                                                    
+1   MQ       LED5MM            D1                                                                                                                    
+1   RUN      LED5MM            D8                                                                                                                    
+1   SR       LED5MM            D2                                                                                                                    
+1   STATE    LED5MM            D6                                                                                                                    
+1   STATUS   LED5MM            D5                                                                                                                    

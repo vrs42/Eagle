@@ -1,0 +1,57 @@
+;PALASM Design Description
+
+;---------------------------------- Declaration Segment ------------
+TITLE    m220ic2.pds
+PATTERN  A
+REVISION 1.0
+AUTHOR   V.Slyngstad
+COMPANY  VRS
+DATE     01/08/08
+
+CHIP  M220IC2  PAL22V10
+
+;---------------------------------- PIN Declarations ---------------
+PIN  1          d1                   COMBINATORIAL             ; INPUT
+PIN  2          e1                   COMBINATORIAL             ; INPUT
+PIN  3          d2                   COMBINATORIAL             ; INPUT
+PIN  4          e2                   COMBINATORIAL             ; INPUT
+PIN  5          d3                   COMBINATORIAL             ; INPUT
+PIN  6          e3                   COMBINATORIAL             ; INPUT
+PIN  7          d4                   COMBINATORIAL             ; INPUT
+PIN  8          e4                   COMBINATORIAL             ; INPUT
+PIN  9          a1                   COMBINATORIAL             ; INPUT
+PIN  10         a2                   COMBINATORIAL             ; INPUT
+PIN  11         b1                   COMBINATORIAL             ; INPUT
+PIN  12         GND                                            ; INPUT
+PIN  13         b2                   COMBINATORIAL             ; INPUT
+PIN  14         o1                   COMBINATORIAL             ; OUTPUT
+PIN  15         c0                   COMBINATORIAL             ; INPUT
+PIN  16         s1                   COMBINATORIAL             ; OUTPUT
+PIN  17         s2                   COMBINATORIAL             ; OUTPUT
+PIN  18         c1                   COMBINATORIAL             ; OUTPUT
+PIN  19         c2                   COMBINATORIAL             ; OUTPUT
+PIN  20         g1                   COMBINATORIAL             ; INPUT
+PIN  21         /g2                  COMBINATORIAL             ; INPUT
+PIN  22         go                   COMBINATORIAL             ; OUTPUT
+PIN  24         VCC                                            ; INPUT
+
+;----------------------------------- Boolean Equation Segment ------
+EQUATIONS
+; Basically a 4x2 AND-OR-INVERT gate,
+/o1 = d1 * e1 + d2 * e2 + d3 * e3 + d4 * e4
+; A two-bit full adder
+s1 = a1 :+: b1 :+: c0
+c1 = a1*b1 + a1*c0 + b1*c0
+s2 = a2 :+: b2 :+: c1
+c2 = a2*b2 + a2*c1 + b2*c1
+; And an AND_NOT.
+go = g1 * g2
+
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+TRACE_ON d1 e1 d2 e2 d3 e3 d4 e4 
+SETF /d1 /e1 /d2 /e2 /d3 /e3 /d4 /e4
+CHECK  /o1
+TRACE_OFF
+
+;-------------------------------------------------------------------

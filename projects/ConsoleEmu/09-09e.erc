@@ -1,0 +1,25 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/ConsoleEmu/09-09e.sch at  5/25/2004 09:53:06a
+
+WARNING: Sheet 1/2: POWER Pin IC17P VSS connected to GND
+ERROR: Sheet 1/2: unconnected INPUT Pin: IC1 DMA/BREQ
+ERROR: Sheet 1/2: unconnected INPUT Pin: IC1 MRDY
+ERROR: Sheet 1/2: unconnected INPUT Pin: IC1 EXTAL
+ERROR: Sheet 1/2: unconnected INPUT Pin: IC1 XTAL
+WARNING: Sheet 1/2: POWER Pin IC1P VSS connected to GND
+ERROR: 2 OUTPUT Pins on net E
+ERROR: 2 OUTPUT Pins on net N$1
+ERROR: 2 OUTPUT Pins on net N$4
+ERROR: Only INPUT Pins on net N$5
+ERROR: Only INPUT Pins on net N$6
+ERROR: Only INPUT Pins on net N$8
+ERROR: Only INPUT Pins on net N$9
+ERROR: Only INPUT Pins on net N$10
+ERROR: 2 OUTPUT Pins on net Q
+ERROR: 2 OUTPUT Pins on net R/W\
+
+Board and schematic are consistent
+
+   14 errors
+    2 warnings

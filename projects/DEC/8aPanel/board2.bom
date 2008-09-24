@@ -1,0 +1,34 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/DEC/X8aPanel/board2.sch at  8/02/2005 09:11:44p
+
+Qty Value    Device            Parts                                                                                                                                                                    
+2            3,81/1,4          GND, VCC                                                                                                                                                                 
+2            40H               J1, J2                                                                                                                                                                   
+36           CAPNP-5           C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31, C32, C33, C34, C35, C36
+2            DIL16S            J3, J4                                                                                                                                                                   
+4   1K       R-US_0207/10      R28, R34, R35, R36                                                                                                                                                       
+3   1K       RESUS-10          R31, R32, R33                                                                                                                                                            
+2   6.8uf    CPOL-USE15-5AXIAL C38, C39                                                                                                                                                                 
+1   6K8      RESUS-10          R25                                                                                                                                                                      
+1   10       CAPNP-5           C37                                                                                                                                                                      
+1   47       CAPNP-5           C40                                                                                                                                                                      
+2   74LS00N  74LS00N           E8, E30                                                                                                                                                                  
+2   74LS02N  74LS02N           E22, E33                                                                                                                                                                 
+1   74LS04N  74LS04N           E24                                                                                                                                                                      
+1   74LS08N  74LS08N           E32                                                                                                                                                                      
+2   74LS27N  74LS27N           E21, E25                                                                                                                                                                 
+2   74LS74N  74LS74N           E16, E20                                                                                                                                                                 
+1   74LS75N  74LS75N           E26                                                                                                                                                                      
+3   74LS95N  74LS95N           E1, E2, E3                                                                                                                                                               
+1   74LS123N 74LS123N          E4                                                                                                                                                                       
+2   74LS138N 74LS138N          E29, E35                                                                                                                                                                 
+3   74LS153N 74LS153N          E17, E18, E19                                                                                                                                                            
+5   74LS174N 74LS174N          E12, E13, E14, E15, E36                                                                                                                                                  
+3   74LS175N 74LS175N          E5, E6, E7                                                                                                                                                               
+3   74LS367N 74367N            E28, E31, E34                                                                                                                                                            
+3   74S244N  74S244N           E9, E10, E11                                                                                                                                                             
+2   180      RESUS-10          R26, R29                                                                                                                                                                 
+12  330      R-US_0207/10      R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16                                                                                                                    
+2   390      RESUS-10          R27, R30                                                                                                                                                                 
+12  680      R-US_0207/10      R1, R2, R3, R4, R17, R18, R19, R20, R21, R22, R23, R24                                                                                                                   
+1   7404N    7404N             E27                                                                                                                                                                      
+1   7416N    7416N             E23                                                                                                                                                                      

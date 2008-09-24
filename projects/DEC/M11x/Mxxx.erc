@@ -1,0 +1,20 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/M11x/Mxxx.sch at  7/14/2004 03:25:26p
+
+ERROR: 2 OUTPUT Pins on net E1
+ERROR: 2 OUTPUT Pins on net F2
+ERROR: 3 OUTPUT Pins on net J2
+ERROR: 2 OUTPUT Pins on net K1
+ERROR: 2 OUTPUT Pins on net N1
+ERROR: 2 OUTPUT Pins on net N2
+ERROR: 2 OUTPUT Pins on net P2
+ERROR: 3 OUTPUT Pins on net S1
+ERROR: 2 OUTPUT Pins on net S2
+ERROR: 2 OUTPUT Pins on net U1
+ERROR: 4 OUTPUT Pins on net V2
+
+Board and schematic are consistent
+
+   11 errors
+    0 warnings

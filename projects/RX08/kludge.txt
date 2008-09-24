@@ -1,0 +1,123 @@
+Exported from kludge.sch at  8/12/2005 03:03:55p
+
+Net      Part     Pad      Pin        Sheet
+
+BINIT    LASTDEV  2        2          1
+         SV1      2        2          1
+
+BIOP1    LASTDEV  7        7          1
+         SV1      7        7          1
+
+BIOP2    LASTDEV  6        6          1
+         SV1      6        6          1
+
+BIOP4    LASTDEV  5        5          1
+         SV1      5        5          1
+
+BTS1     E16      13       C12        1
+         E16      4        C34        1
+         LASTDEV  3        3          1
+         SV1      3        3          1
+
+BTS3     LASTDEV  4        4          1
+         SV1      4        4          1
+
+CLK_PARITY\ E17   6        CLK        1
+         P17      6        6          1
+
+DONE     E6       11       CLK        1
+         P26      9        9          1
+
+DONE_FF  E16      10       Q3         1
+         P17      15       15         1
+
+DONE_FF\ E16      11       Q3\        1
+         P17      14       14         1
+
+DONE_SKIP E26     9        I1         1
+         P26      10       10         1
+
+ERROR    E19      11       CLK        1
+         P26      4        4          1
+
+ERR_FF\  E16      14       Q2\        1
+         P19      10       10         1
+
+ERR_SKIP E26      6        I1         1
+         P26      5        5          1
+
+GND      E16      12       GND        * none *
+         E17      13       GND        * none *
+         E19      7        GND        * none *
+         E26      7        GND        * none *
+         E6       7        GND        * none *
+         LASTDEV  1        1          1
+         P19      13       13         1
+         P26      7        7          1
+         SV1      1        1          1
+
+INIT     E26      13       O          1
+         E26      2        I0         1
+         E26      5        I0         1
+         E26      8        I0         1
+
+INIT\    E26      11       I0         1
+         E26      12       I1         1
+         P19      3        3          1
+
+MAINT\   E19      10       PRE        1
+         E19      4        PRE        1
+         E6       10       PRE        1
+         P19      2        2          1
+
+N$42     E17      12       K          1
+         E17      9        J          1
+         P17      12       12         1
+         P17      9        9          1
+
+N$46     E17      8        CLR        1
+         P17      8        8          1
+
+N$100    E16      2        D1         1
+         E19      5        Q          1
+
+N$103    E16      3        D2         1
+         E19      9        Q          1
+
+N$107    E16      6        D3         1
+         E16      7        D4         1
+         E6       9        Q          1
+
+N$108    E19      1        CLR        1
+         E26      1        O          1
+
+N$110    E19      13       CLR        1
+         E26      4        O          1
+
+N$111    E26      10       O          1
+         E6       13       CLR        1
+
+PARITY\  E17      10       Q\         1
+         P17      10       10         1
+
+TR_FF\   E16      1        Q1\        1
+         P19      14       14         1
+
+TR_SKIP  E26      3        I1         1
+         P26      2        2          1
+
+VCC      E16      5        VCC        * none *
+         E17      5        VCC        * none *
+         E17      7        PRE        1
+         E19      12       D          1
+         E19      14       VCC        * none *
+         E19      2        D          1
+         E26      14       VCC        * none *
+         E6       12       D          1
+         E6       14       VCC        * none *
+         P17      7        7          1
+         P19      5        5          1
+         P26      14       14         1
+
+XFER_REQ E19      3        CLK        1
+         P26      1        1          1

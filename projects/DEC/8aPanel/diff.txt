@@ -1,0 +1,8 @@
+3c3
+< Exported from try1.sch at  5/26/2005 09:20:10p
+---
+> Exported from try2.sch at  5/26/2005 09:18:15p
+433c433
+<          13       CLR        In       MCLOCK\
+---
+>          13       CLR        In       MCLOCK

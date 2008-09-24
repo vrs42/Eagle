@@ -1,0 +1,17 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/Robert Adams/LEDCandle/candle.sch at  9/16/2005 04:41:02p
+
+WARNING: Sheet 1/1: POWER Pin IC1 VDD connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC1 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC3 VDD connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC3 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC5 VDD connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC5 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC7 VDD connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC7 VSS connected to GND
+
+Board and schematic are consistent
+
+    0 errors
+    8 warnings

@@ -1,0 +1,45 @@
+Drill Station Info File: C:/Program Files/EAGLE-4.11/projects/M11x/MxxxSMT.dri
+
+ Date              :  9/15/2004 09:56:32p
+ Drills            : C:/Program Files/EAGLE-4.11/projects/M11x/MxxxSMT.drl
+ Device            : Excellon drill station
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Data Mode         : Absolute
+ Units             : 1/1000 Inch
+ End Of Block      : CR/LF
+
+Drill Tolerances:
+
+ -- Requested --  -- Used Drill --
+
+ Size       used  Code  Size
+
+ 3.200mm       2  T03   126.000mil
+
+Drills used:
+
+ Code  Size       used
+
+ T01   24.000mil   326
+ T02   32.000mil    58
+ T03   126.000mil     2
+
+Total number of drills: 386
+
+Plotfiles:
+
+ C:/Program Files/EAGLE-4.11/projects/M11x/MxxxSMT.drd

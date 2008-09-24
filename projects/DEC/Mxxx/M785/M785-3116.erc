@@ -1,0 +1,25 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/Mxxx/M875/M785-3116.sch at  1/12/2008 08:32:32p
+
+WARNING: Sheet 1/1: POWER Pin IC3 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC3 V- connected to GND
+WARNING: Sheet 1/1: POWER Pin IC4 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC4 V- connected to GND
+WARNING: Sheet 1/1: POWER Pin IC5 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC5 V- connected to GND
+WARNING: Sheet 1/1: POWER Pin IC6 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC6 V- connected to GND
+WARNING: Sheet 1/1: POWER Pin IC7 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC7 V- connected to GND
+WARNING: Sheet 1/1: POWER Pin IC8 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC8 V- connected to GND
+WARNING: Sheet 1/1: POWER Pin IC9 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC9 V- connected to GND
+WARNING: Sheet 1/1: POWER Pin IC10 V+ connected to VCC
+WARNING: Sheet 1/1: POWER Pin IC10 V- connected to GND
+
+Board and schematic are consistent
+
+    0 errors
+   16 warnings

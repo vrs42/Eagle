@@ -1,0 +1,13 @@
+EAGLE Version 4.16r1 Copyright (c) 1988-2006 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.16r1/projects/18F Proto2 HomeDIP/18F Proto2.sch at 05/12/2006 09:28:52p
+
+WARNING: Sheet 1/1: POWER Pin 18F2X5X VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin 18F2X5X VSS connected to GND
+WARNING: Sheet 1/1, Net GND: missing Junction at (4 -1.4)
+WARNING: Sheet 1/1, Net VDD: missing Junction at (3.9 -0.9)
+
+Board and schematic are consistent
+
+    0 errors
+    4 warnings

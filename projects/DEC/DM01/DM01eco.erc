@@ -1,0 +1,46 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/DM01/DM01eco.sch at  4/13/2008 08:15:08p
+
+ERROR: Sheet 1/6: unconnected INPUT Pin: B14J SET
+ERROR: Sheet 1/6: unconnected INPUT Pin: B16J SET
+ERROR: Sheet 1/6: unconnected INPUT Pin: B17J SET
+ERROR: Sheet 1/6: unconnected INPUT Pin: B18J SET
+ERROR: Sheet 1/6: unconnected INPUT Pin: B19J SET
+ERROR: Sheet 1/6: unconnected INPUT Pin: B20J SET
+ERROR: Sheet 1/6: unconnected INPUT Pin: B21J SET
+ERROR: Sheet 1/6: unconnected INPUT Pin: A19J SET
+ERROR: Sheet 1/6: unconnected INPUT Pin: B03F PU0
+ERROR: Sheet 1/6: unconnected INPUT Pin: B03F EN0
+ERROR: Sheet 1/6: unconnected INPUT Pin: B03M I$1
+ERROR: Sheet 1/6: unconnected INPUT Pin: B03T I$1
+ERROR: Sheet 1/6: unconnected INPUT Pin: B23H I$3
+ERROR: Sheet 1/6: unconnected INPUT Pin: B22N E
+ERROR: Sheet 1/6: unconnected INPUT Pin: A18N I$2
+ERROR: Sheet 1/6: unconnected INPUT Pin: A18N I$3
+ERROR: Sheet 1/6: unconnected INPUT Pin: B12G$1 H
+ERROR: Sheet 1/6: unconnected INPUT Pin: B30H I$3
+ERROR: Sheet 1/6: unconnected INPUT Pin: B30N I$3
+ERROR: Sheet 1/6: unconnected INPUT Pin: B30U I$3
+ERROR: Sheet 1/6: unconnected INPUT Pin: B31H I$3
+ERROR: Sheet 1/6: unconnected INPUT Pin: B31N I$3
+ERROR: Sheet 1/6: unconnected INPUT Pin: B31U I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: B06H I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: B06N I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: B06U I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: B08H I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: B08N I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: B08U I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: B23U I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: A16H I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: A16N I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: A16U I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: A17H I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: A17N I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: A17U I$3
+ERROR: Sheet 4/6: unconnected INPUT Pin: A18H I$3
+
+Board and schematic are consistent
+
+   37 errors
+    0 warnings

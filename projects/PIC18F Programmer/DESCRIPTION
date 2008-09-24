@@ -1,0 +1,7 @@
+PIC 18Fxxx Programmer related files
+<UL>
+<LI><b>hack1.lbr</b> is a library with the HackADay logo.</LI>
+<LI><b>hack2.lbr</b> is another version of the library with the HackADay
+logo.</LI>
+<LI><b>hackaday.lbr</b> is a library with a different version of the HackADay
+logo.</LI>

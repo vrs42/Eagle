@@ -1,0 +1,10 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/C64 SCSI/C64 SCSI-Interface.sch at  5/26/2004 10:12:01a
+
+WARNING: Sheet 1/1: SUPPLY Pin +5V overwritten with VCC
+
+Board and schematic are consistent
+
+    0 errors
+    1 warnings

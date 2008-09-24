@@ -1,0 +1,47 @@
+Project with Henk Gooijen.
+<UL>
+<LI><b>core+io1</b> is an early draft of a 6802 CPU core and some I/O latches
+(to drive lights from SIMH).</LI>
+<LI><b>core+io2</b> is an early draft of the 6802+I/O board.</LI>
+<LI><b>core+io3</b> is the 6802 board again, experimenting with form-factor 
+and component placement.</LI>
+<LI><b>core+io4</b> the bigger 6802 version again, with bypass caps added.</LI>
+<LI><b>core1</b> splitting the 6802 board up -- this is the CPU core.</LI>
+<LI><b>io1</b> splitting the 6802 board up -- this is the I/O stuff.</LI>
+<LI><b>core+io5</b> another version of the combined core+io 6802 board.</LI>
+<LI><b>core2</b> a newer version of core1.</LI>
+<LI><b>io2</b> a newer version of io1.</LI>
+<LI><b>core+io</b> is the last version of core+io.</LI>
+<LI><b>io-ok</b> is a snapshot of the I/O board before io3.</LI>
+<LI><b>io3</b> everything rearranged to get another pair of LS373 in.</LI>
+<LI><b>core3</b> is a version of the core board that matches io3.</LI>
+<LI><b>io-ol</b> is io3 with the Olimex scripts run to beef up the
+silkscreen.</LI>
+<LI><b>core4</b> is another revision of the 6802 CPU core.</LI>
+<LI><b>core5</b> is another revision of the 6802 CPU core.</LI>
+<LI><b>core6</b> is another revision of the 6802 CPU core.</LI>
+<LI><b>core-ol</b> is the core board with the Olimex silkscreen scripts
+run.</LI>
+<LI><b>core</b>  is the last version of the 6802 core board.</LI>
+<LI><b>quadrature</b> is a simple quadrature clock.</LI>
+<LI><b>adaptor</b> is a simple adaptor board to put a 6809 in an 6802
+socket.</LI>
+<LI><b>core09ss</b> is an early version of the 6809 core board, with the 6809 
+replacing the 6802 (essentially building in the adapter board).</LI>
+<LI><b>09-09e</b> is an adapter board for using the 6809E in a 6809 socket.</LI>
+<LI><b>core09</b> is an early 6809E based CPU core.</LI>
+<LI><b>core09e2</b> is a later version of the 6809E core.</LI>
+<LI><b>core09e3</b> is a later version of the 6809E core, with Olimex
+silkscreen scripts run.</LI>
+<LI><b>io-ol2</b> is a version of the IO board to match the 6809E core, and 
+with Olimex scripts run.</LI>
+<LI><b>core-ol2</b> is the 6809E core, with Olimex scripts run.</LI>
+<LI><b>corex</b> is a slightly different version of the 6809E core.</LI>
+<LI><b>core09e</b> is the latest version of the 6809E CPU core.</LI>
+<LI><b>corex2</b> is the latest version of the 6809E CPU core.</LI>
+<LI><b>iognd</b> is the IO board, with a ground plane added on both sides.</LI>
+<LI><b>core09gnd</b> is the 6809E core board, with a ground plane added on
+both sides.</LI>
+<LI><b>io</b> is the latest version of the IO board.</LI>
+<LI><b>iotester</b> is a slight modification of the IO board, folding in the 
+hooks for the tester board.</LI>

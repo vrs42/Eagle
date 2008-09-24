@@ -1,0 +1,12 @@
+MMU for the 6100 PDP-8 on a chip
+<UL>
+<LI><b>error</b> is a schematic fragment of the error circuitry.</LI>
+<LI><b>mmu6100</b> is an early incomplete attempt at a 6100 with an MMU.</LI>
+<LI><b>mmu6100x</b> is another incomplete attempt at a 6100 with an MMU.</LI>
+<LI><b>mmu6100cp</b> is a snapshot of a nearly complete 6100 with an MMU.</LI>
+<LI><b>ts6907</b> is a timeshare enhancement for the EMC 6907 MMU for the
+6100.</LI>
+<LI><b>emc6907</b> is a drawing of the EMC6907 MMU used with the Intersil
+Intercept (not the Junior).</LI>
+<LI><b>vrs6907</b> is my design for an EMC6907 MMU board with the timeshare
+features added.</LI>

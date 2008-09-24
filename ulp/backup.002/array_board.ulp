@@ -1,0 +1,127 @@
+/*
+ *  This EAGLE User Language Program create an array of a previously
+ *    created board, it create a script file "array_board.scr"
+ 
+ *    Author: Maurice SAAB (Lebanon) morisaab@yahoo.fr
+ */
+ 
+int nb_sig_cmn=0;
+string cmn_sig[];
+
+/***** edit this values according to your needs **********************/ 
+real deltax=86;  /* distance horizontaly between modules in mm */
+real deltay=51;    /* distance verticaly between modules in mm */
+int nx=3;         /* number of horizontal modules */
+int ny=2;         /* number of vertical modules   */
+int dirx=1;       /* +1 to increment in x direction (to left), -1 to decrement (to right) */
+int diry=1;         /* +1 to increment in y direction (up), -1 to decrement (down) */
+int orgx=0;       /* x origin  */
+int orgy=0;       /* y origin  */
+string scr_path="e:\\my_data\\dev\\eagle\\scr\\"; /* path to your script files*/
+//cmn_sig[nb_sig_cmn++]="GND";   /* common signal for all modules, if any */
+//cmn_sig[nb_sig_cmn++]="VCC";   /* common signal for all modules, if any */
+                                 /* add more common signals here */
+/*****************************************************************/
+
+int i,j,k,cmn;
+
+real GridDist = .025; // in Mil, can be changed to other values
+real xx1,yy1,xx2,yy2,wid,dia,dril,dx,dy;
+int ang,current_layer=0;
+string dumy;
+
+deltax = deltax/25.4;
+deltay = deltay/25.4;
+
+dumy=scr_path;
+dumy=dumy+"array_board.scr";
+output(dumy) {
+   printf("Set wire_bend 2\n");
+   printf("Grid inch %f\n",GridDist);
+
+   for(i=1;i<=nx;i++) {
+      for(j=1;j<=ny;j++) {
+         dx=(i-1)*dirx*deltax+orgx;
+         dy=(j-1)*diry*deltay+orgy;
+         board(B) {
+            B.elements(E) {
+               xx1= E.x/254000.+dx;
+               yy1= E.y/254000.+dy;
+               ang = E.angle;
+               printf("add '%sx%d%d' %s@%s R%d (%f %f) \n",
+               E.name,i,j,E.package.name,E.package.library,ang,xx1,yy1);
+               if(E.value!=" ")printf("value %s (%f %f) \n",E.value,xx1,yy1);
+               }
+            B.signals(s) {
+               cmn=0;
+               for(k=1;k<=nb_sig_cmn;k++) if(s.name==cmn_sig[k-1]) cmn=1;
+               s.wires(w) {
+                  wid= w.width/254000.;
+                  xx1= w.x1/254000.+dx;
+                  yy1= w.y1/254000.+dy;
+                  xx2= w.x2/254000.+dx;
+                  yy2= w.y2/254000.+dy;
+                  printf("change layer %d\n",w.layer);
+                  if(cmn==0) printf("wire '%sx%d%d' %f (%f %f) (%f %f)\n",s.name,i,j,wid,xx1,yy1,xx2,yy2);
+                  else printf("wire '%s' %f (%f %f) (%f %f)\n",s.name,wid,xx1,yy1,xx2,yy2);
+                  }
+               s.vias(v) {
+                  dia = v.diameter[1]/254000.;
+                  xx1= v.x/254000.+dx;
+                  yy1= v.y/254000.+dy;
+                  dril=v.drill/254000.;
+                  if(v.shape[1]==0) dumy="square";
+                  if(v.shape[1]==1) dumy="round";
+                  if(v.shape[1]==2) dumy="octagon";
+                  printf("change drill %f\n",dril);
+                  if(cmn==0) printf("via '%sx%d%d' %f %s (%f %f)\n",s.name,i,j,dia,dumy,xx1,yy1);
+                  else printf("via '%s' %f %s (%f %f)\n",s.name,dia,dumy,xx1,yy1);
+                  }
+               s.polygons(p) {
+                  wid=p.width/254000;
+                  printf("change layer %d;\n",p.layer);
+                  if(cmn==0) printf("polygon %sx%d%d %f",s.name,i,j,wid);
+                  else printf("polygon %s %f",s.name,wid);
+                  p.wires(w){
+                     xx1= w.x1/254000.+dx;
+                     yy1= w.y1/254000.+dy;
+                     xx2= w.x2/254000.+dx;
+                     yy2= w.y2/254000.+dy;
+                     printf(" (%f %f)",xx1,yy1);
+                     }
+                  printf(" (%f %f);\n",xx2,yy2);
+                  }
+               }
+            B.rectangles(r) {
+               xx1= r.x1/254000.+dx;
+               yy1= r.y1/254000.+dy;
+               xx2= r.x2/254000.+dx;
+               yy2= r.y2/254000.+dy;
+               printf("change layer %d\n",r.layer);
+               printf("rect (%f %f) (%f %f)\n",xx1,yy1,xx2,yy2);
+               }
+            B.wires(w) {
+              wid= w.width/254000.;
+              xx1= w.x1/254000.+dx;
+              yy1= w.y1/254000.+dy;
+              xx2= w.x2/254000.+dx;
+              yy2= w.y2/254000.+dy;
+              printf("change layer %d\n",w.layer);
+              printf("wire %f (%f %f) (%f %f)\n",wid,xx1,yy1,xx2,yy2);
+              }
+            B.signals(s) {
+               cmn=0;
+               for(k=1;k<=nb_sig_cmn;k++) if(s.name==cmn_sig[k-1]) cmn=1;
+               if(cmn==0) printf("signal '%sx%d%d'",s.name,i,j);
+               else printf("signal '%s'",s.name);
+               s.contactrefs(c) {
+                  printf("\t'%sx%d%d'\t'%s'\\\n",c.element.name,i,j,c.contact.name);
+                  }
+               printf("\n");
+               }
+            }
+         } /* for j */
+      } /* for i */
+   printf("window fit;\n");
+   printf("ratsnest;\n");
+   }

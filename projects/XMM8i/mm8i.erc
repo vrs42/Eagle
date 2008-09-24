@@ -1,0 +1,61 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/XMM8i/mm8i.sch at 12/06/2004 02:29:12p
+
+WARNING: Sheet 1/1: unconnected Pin: A32G$4 P$2
+WARNING: Sheet 1/1: unconnected Pin: A32G$5 P$2
+WARNING: Sheet 1/1: unconnected Pin: A32G$7 P$2
+WARNING: Sheet 1/1: unconnected Pin: A32G$9 P$2
+WARNING: Sheet 1/1: unconnected Pin: A32G$13 P$2
+WARNING: Sheet 1/1: unconnected Pin: A32G$16 P$2
+WARNING: Sheet 1/1: unconnected Pin: D32G$4 P$2
+WARNING: Sheet 1/1: unconnected Pin: D32G$5 P$2
+WARNING: Sheet 1/1: unconnected Pin: D32G$7 P$2
+WARNING: Sheet 1/1: unconnected Pin: D32G$9 P$2
+WARNING: Sheet 1/1: unconnected Pin: D32G$13 P$2
+WARNING: Sheet 1/1: unconnected Pin: D32G$16 P$2
+WARNING: Sheet 1/1: SUPPLY Pin -6V overwritten with -6V@3
+WARNING: Sheet 1/1: SUPPLY Pin -30V overwritten with -30V@4
+WARNING: Sheet 1/1: POWER Pin AB01G$9 -30V connected to -30V@5
+WARNING: Sheet 1/1: POWER Pin AB01G$10 -30V connected to -30V@6
+WARNING: Sheet 1/1: POWER Pin AB01G$11 -30V connected to -30V@1
+WARNING: Sheet 1/1: POWER Pin AB01G$12 -30V connected to -30V@2
+WARNING: Sheet 1/1: POWER Pin AB01G$13 -30V connected to -30V@2
+WARNING: Sheet 1/1: POWER Pin AB01G$14 -30V connected to -30V@3
+WARNING: Sheet 1/1: POWER Pin AB01G$15 -30V connected to -30V@3
+WARNING: Sheet 1/1: POWER Pin AB01G$16 -6V connected to -6V@1
+WARNING: Sheet 1/1: POWER Pin AB01G$17 -6V connected to -6V@1
+WARNING: Sheet 1/1: POWER Pin AB01G$18 -6V connected to -6V@2
+WARNING: Sheet 1/1: POWER Pin AB01G$19 -6V connected to -6V@2
+WARNING: Sheet 1/1: POWER Pin AB01G$20 -6V connected to -6V@4
+WARNING: Sheet 1/1: POWER Pin AB01G$21 -6V connected to -6V@5
+WARNING: Sheet 1/1: POWER Pin AB01G$22 -6V connected to -6V@6
+ERROR: Sheet 1/1: unconnected INPUT Pin: A07 H2
+WARNING: Only 1 Pin on net -6V@4
+WARNING: Only 1 Pin on net -6V@5
+WARNING: Only 1 Pin on net -6V@6
+WARNING: Only 1 Pin on net -30V@5
+WARNING: Only 1 Pin on net -30V@6
+WARNING: Only 1 Pin on net B_FIELD
+WARNING: Only 1 Pin on net B_FIELD\
+WARNING: Only 1 Pin on net B_INHIBIT
+WARNING: Only 1 Pin on net B_MEM_ENABLE
+ERROR: Only INPUT Pins on net EA0
+WARNING: Only 1 Pin on net EA0
+ERROR: Only INPUT Pins on net EA1
+WARNING: Only 1 Pin on net EA1
+ERROR: Only INPUT Pins on net EA2\
+WARNING: Only 1 Pin on net EA2\
+WARNING: Only 1 Pin on net INHIBIT
+WARNING: Only 1 Pin on net NEG_CLAMP
+WARNING: Only 1 Pin on net PWR_OK\
+WARNING: Only 1 Pin on net READ\
+WARNING: Only 1 Pin on net SHUT_DOWN\
+ERROR: Only INPUT Pins on net STOP_OK
+WARNING: Only 1 Pin on net STOP_OK
+WARNING: Only 1 Pin on net WRITE\
+
+Board and schematic are consistent
+
+    5 errors
+   47 warnings

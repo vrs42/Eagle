@@ -1,0 +1,13 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/R210/smt.sch at  9/12/2004 09:42:03p
+
+WARNING: Sheet 1/1: unconnected Pin: D1 A
+WARNING: Sheet 1/1: unconnected Pin: D1 C
+WARNING: Sheet 1/1: unconnected Pin: LED1 C
+WARNING: Sheet 1/1: unconnected Pin: LED1 A
+
+Board and schematic are consistent
+
+    0 errors
+    4 warnings

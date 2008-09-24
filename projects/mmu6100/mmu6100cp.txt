@@ -1,0 +1,756 @@
+Netlist
+
+Exported from mmu6100cp.sch at  6/29/2007 10:25:30p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Net      Part     Pad      Pin        Sheet
+
+Change Class 0;
+00FLT\   IC13     3        I          1
+         IC16     8        O          1
+
+Change Class 0;
+00\      IC12     8        O          1
+         IC16     9        I0         1
+
+Change Class 0;
+2XFLT\   IC13     5        I          1
+         IC16     11       O          1
+         IC18     2        I1         1
+
+Change Class 0;
+2X\      IC14     6        O          1
+         IC16     12       I0         1
+
+Change Class 0;
+AND\     IC9      15       Y0         1
+         PAD1     1        P          3
+
+Change Class 0;
+BADHLT\  IC18     11       O          1
+         IC19     1        I0         1
+
+Change Class 0;
+BFLD0    IC23     2        A1         1
+         IC25     15       Q6         1
+         IC27     7        D3         1
+
+Change Class 0;
+BFLD1    IC23     4        A2         1
+         IC25     12       Q5         1
+         IC27     4        D2         1
+
+Change Class 0;
+BFLD2    IC23     6        A3         1
+         IC25     9        Q4         1
+         IC27     3        D1         1
+
+Change Class 0;
+C0\      CPU      32       C0         1
+         RN1      8        8          1
+         SV1      24       24         3
+
+Change Class 0;
+C1\      CPU      33       C1         1
+         RN1      9        9          1
+         SV1      22       22         3
+
+Change Class 0;
+C2\      CPU      34       C2         1
+         RN1      10       10         1
+         SV1      20       20         3
+
+Change Class 0;
+CLRST\   IC15     11       O          1
+         IC25     1        CLR        1
+         IC26     1        CLR        1
+         IC27     1        CLR        1
+
+Change Class 0;
+CPREQ\   CPU      5        CPREQ      1
+         IC13     2        O          1
+         IC13     4        O          1
+         IC13     6        O          1
+         IC13     8        O          1
+         RN1      6        6          1
+         SV1      36       36         3
+
+Change Class 0;
+CPSEL    IC14     11       I2         1
+         IC22     8        O          1
+
+Change Class 0;
+CPSEL\   CPU      38       CPSEL      1
+         IC22     9        I          1
+
+Change Class 0;
+CPUDEVSEL\ CPU      30       DEVSEL     1
+         IC11     1        CLR        1
+         IC14     13       I2         1
+         IC16     10       I1         1
+         IC16     13       I1         1
+         IC18     4        I0         1
+
+Change Class 0;
+CPUINTREQ\ CPU      8        INTREQ     1
+         IC16     3        O          1
+         RN1      3        3          1
+
+Change Class 0;
+CPUSWSEL\ CPU      31       SWSEL      1
+         IC14     2        I1         1
+         IC18     10       I1         1
+
+Change Class 0;
+DATAF    CPU      40       DATAF      1
+         IC16     4        I0         1
+         IC17     19       G          1
+         IC24     3        C          1
+
+Change Class 0;
+DCA\     IC9      12       Y3         1
+         PAD4     1        P          3
+
+Change Class 0;
+DEVSEL\  IC18     6        O          1
+         SV1      16       16         3
+
+Change Class 0;
+DFLD0    IC17     11       A1         1
+         IC25     6        Q3         1
+
+Change Class 0;
+DFLD1    IC17     13       A2         1
+         IC25     5        Q2         1
+
+Change Class 0;
+DFLD2    IC17     15       A3         1
+         IC25     2        Q1         1
+
+Change Class 0;
+DMAGNT   CPU      3        DMAGNT     1
+         SV1      5        5          3
+
+Change Class 0;
+DMAREQ\  CPU      4        DMAREQ     1
+         RN1      7        7          1
+         SV1      7        7          3
+
+Change Class 0;
+DX0      CPU      16       DX0        1
+         IC21     15       I/O3       3
+         IC26     8        D4         1
+         IC3      7        D4         1
+         IC7      8        4D         3
+         RN2      2        2          1
+         SV1      13       13         3
+
+Change Class 0;
+DX1      CPU      17       DX1        1
+         IC21     13       I/O2       3
+         IC26     7        D3         1
+         IC3      6        D3         1
+         IC7      7        3D         3
+         RN2      3        3          1
+         SV1      15       15         3
+
+Change Class 0;
+DX2      CPU      18       DX2        1
+         IC21     12       I/O1       3
+         IC26     4        D2         1
+         IC3      3        D2         1
+         IC7      4        2D         3
+         RN2      4        4          1
+         SV1      17       17         3
+
+Change Class 0;
+DX3      CPU      19       DX3        1
+         IC21     11       I/O0       3
+         IC26     3        D1         1
+         IC3      2        D1         1
+         IC7      3        1D         3
+         RN2      5        5          1
+         SV1      19       19         3
+
+Change Class 0;
+DX4      CPU      20       DX4        1
+         IC2      2        D1         1
+         IC20     19       I/O7       3
+         IC25     18       D8         1
+         IC6      18       8D         3
+         RN2      6        6          1
+         SV1      21       21         3
+
+Change Class 0;
+DX5      CPU      21       DX5        1
+         IC2      3        D2         1
+         IC20     18       I/O6       3
+         IC25     17       D7         1
+         IC6      17       7D         3
+         RN2      13       13         1
+         SV1      35       35         3
+
+Change Class 0;
+DX6      CPU      22       DX6        1
+         IC2      6        D3         1
+         IC20     17       I/O5       3
+         IC25     14       D6         1
+         IC6      14       6D         3
+         RN2      12       12         1
+         SV1      33       33         3
+
+Change Class 0;
+DX7      CPU      23       DX7        1
+         IC2      7        D4         1
+         IC20     16       I/O4       3
+         IC25     13       D5         1
+         IC6      13       5D         3
+         RN2      11       11         1
+         SV1      31       31         3
+
+Change Class 0;
+DX8      CPU      24       DX8        1
+         IC1      7        D4         1
+         IC20     15       I/O3       3
+         IC25     8        D4         1
+         IC6      8        4D         3
+         RN2      10       10         1
+         SV1      29       29         3
+
+Change Class 0;
+DX9      CPU      25       DX9        1
+         IC1      6        D3         1
+         IC20     13       I/O2       3
+         IC25     7        D3         1
+         IC6      7        3D         3
+         RN2      9        9          1
+         SV1      27       27         3
+
+Change Class 0;
+DX10     CPU      27       DX10       1
+         IC1      3        D2         1
+         IC20     12       I/O1       3
+         IC25     4        D2         1
+         IC6      4        2D         3
+         RN2      8        8          1
+         SV1      25       25         3
+
+Change Class 0;
+DX11     CPU      28       DX11       1
+         IC1      2        D1         1
+         IC20     11       I/O0       3
+         IC25     3        D1         1
+         IC6      3        1D         3
+         RN2      7        7          1
+         SV1      23       23         3
+
+Change Class 0;
+EMA0     IC17     14       Y3         1
+         IC17     9        Y1         1
+         IC20     1        A14        3
+         IC21     1        A14        3
+         IC23     18       Y1         1
+         RN3      2        2          1
+         SV1      34       34         3
+
+Change Class 0;
+EMA1     IC17     16       Y2         1
+         IC17     7        Y2         1
+         IC20     26       A13        3
+         IC21     26       A13        3
+         IC23     16       Y2         1
+         RN3      3        3          1
+         SV1      32       32         3
+
+Change Class 0;
+EMA2     IC17     18       Y1         1
+         IC17     5        Y3         1
+         IC20     2        A12        3
+         IC21     2        A12        3
+         IC23     14       Y3         1
+         RN3      4        4          1
+         SV1      30       30         3
+
+Change Class 0;
+ERROR\   IC10     3        O          1
+         IC13     1        I          1
+
+Change Class 0;
+GND      CPU      15       OSCIN      1
+         CPU      26       GND        * none *
+         IC1      12       GND        * none *
+         IC10     7        GND        * none *
+         IC11     7        GND        * none *
+         IC12     7        GND        * none *
+         IC13     7        GND        * none *
+         IC14     7        GND        * none *
+         IC15     7        GND        * none *
+         IC16     7        GND        * none *
+         IC17     10       GND        * none *
+         IC17     17       A4         1
+         IC17     8        A4         1
+         IC18     7        GND        * none *
+         IC19     7        GND        * none *
+         IC2      12       GND        * none *
+         IC20     14       VSS        3
+         IC21     14       VSS        3
+         IC22     7        GND        * none *
+         IC23     10       GND        * none *
+         IC23     8        A4         1
+         IC24     8        GND        * none *
+         IC25     10       GND        * none *
+         IC26     10       GND        * none *
+         IC27     10       GND        * none *
+         IC3      12       GND        * none *
+         IC6      1        OC         3
+         IC6      10       GND        * none *
+         IC7      1        OC         3
+         IC7      10       GND        * none *
+         IC7      13       5D         3
+         IC7      14       6D         3
+         IC7      17       7D         3
+         IC7      18       8D         3
+         IC8      7        GND        * none *
+         IC9      4        G2A        1
+         IC9      5        G2B        1
+         IC9      8        GND        * none *
+         QG1      4        GND        1
+         QG2      7        GND        1
+         RN2      1        1          1
+         RN3      1        1          1
+         SV1      2        2          3
+         SV1      39       39         3
+
+Change Class 0;
+IFETCH   CPU      36       IFETCH     1
+         IC10     4        I0         1
+         IC14     10       I1         1
+         IC15     4        I0         1
+         IC8      13       I2         1
+
+Change Class 0;
+IFLD0    IC17     6        A3         1
+         IC27     6        Q3         1
+
+Change Class 0;
+IFLD1    IC17     4        A2         1
+         IC27     5        Q2         1
+
+Change Class 0;
+IFLD2    IC17     2        A1         1
+         IC27     2        Q1         1
+
+Change Class 0;
+INHIBIT  IC16     2        I1         1
+         IC25     19       Q8         1
+         IC8      2        I1         1
+
+Change Class 0;
+INTCLR\  IC10     11       O          1
+         IC15     13       I1         1
+
+Change Class 0;
+INTGNT   CPU      39       INTGNT     1
+         IC10     12       I0         1
+         SV1      6        6          3
+
+Change Class 0;
+INTREQ\  IC13     10       O          1
+         IC16     1        I0         1
+         SV1      8        8          3
+
+Change Class 0;
+IOT\     IC9      9        Y6         1
+         PAD7     1        P          3
+
+Change Class 0;
+IR0      IC3      9        Q4         1
+         IC9      3        C          1
+
+Change Class 0;
+IR1      IC3      10       Q3         1
+         IC9      2        B          1
+
+Change Class 0;
+IR2      IC3      15       Q2         1
+         IC9      1        A          1
+
+Change Class 0;
+IR3\     IC12     12       I7         1
+         IC14     5        I2         1
+         IC3      1        Q1\        1
+
+Change Class 0;
+IR4      IC14     4        I1         1
+         IC2      16       Q1         1
+
+Change Class 0;
+IR4\     IC12     11       I6         1
+         IC2      1        Q1\        1
+
+Change Class 0;
+IR5\     IC12     6        I5         1
+         IC14     3        I0         1
+         IC2      14       Q2\        1
+
+Change Class 0;
+IR6\     IC12     5        I4         1
+         IC2      11       Q3\        1
+
+Change Class 0;
+IR7\     IC12     4        I3         1
+         IC2      8        Q4\        1
+
+Change Class 0;
+IR8\     IC1      8        Q4\        1
+         IC12     3        I2         1
+
+Change Class 0;
+IR9      IC1      10       Q3         1
+         IC8      11       I2         1
+
+Change Class 0;
+IR10     IC1      15       Q2         1
+         IC8      10       I1         1
+
+Change Class 0;
+IR11     IC1      16       Q1         1
+         IC8      9        I0         1
+
+Change Class 0;
+ISZ\     IC9      13       Y2         1
+         PAD3     1        P          3
+
+Change Class 0;
+JMPFLT   IC8      12       O          1
+         IC8      3        I0         1
+         IC8      4        I1         1
+         IC8      5        I2         1
+
+Change Class 0;
+JMP\     IC10     9        I0         1
+         IC9      10       Y5         1
+
+Change Class 0;
+JMP_OR_JMS IC10     8        O          1
+         IC24     1        A          1
+         IC8      1        I0         1
+
+Change Class 0;
+JMP_OR_JMS\ IC19     9        I0         1
+
+Change Class 0;
+JMS\     IC10     10       I1         1
+         IC9      11       Y4         1
+
+Change Class 0;
+LINK     CPU      29       LINK       1
+         PAD5     1        P          3
+
+Change Class 0;
+LXMAR    CPU      10       LXMAR      1
+         IC10     13       I1         1
+         IC6      11       ENC        3
+         IC7      11       ENC        3
+         SV1      28       28         3
+
+Change Class 0;
+MA0      IC20     23       A11        3
+         IC21     23       A11        3
+         IC7      9        4Q         3
+
+Change Class 0;
+MA1      IC20     21       A10        3
+         IC21     21       A10        3
+         IC7      6        3Q         3
+
+Change Class 0;
+MA2      IC20     24       A9         3
+         IC21     24       A9         3
+         IC7      5        2Q         3
+
+Change Class 0;
+MA3      IC20     25       A8         3
+         IC21     25       A8         3
+         IC7      2        1Q         3
+
+Change Class 0;
+MA4      IC20     3        A7         3
+         IC21     3        A7         3
+         IC6      19       8Q         3
+
+Change Class 0;
+MA5      IC20     4        A6         3
+         IC21     4        A6         3
+         IC6      16       7Q         3
+
+Change Class 0;
+MA6      IC20     5        A5         3
+         IC21     5        A5         3
+         IC6      15       6Q         3
+
+Change Class 0;
+MA7      IC20     6        A4         3
+         IC21     6        A4         3
+         IC6      12       5Q         3
+
+Change Class 0;
+MA8      IC20     7        A3         3
+         IC21     7        A3         3
+         IC6      9        4Q         3
+
+Change Class 0;
+MA9      IC20     8        A2         3
+         IC21     8        A2         3
+         IC6      6        3Q         3
+
+Change Class 0;
+MA10     IC20     9        A1         3
+         IC21     9        A1         3
+         IC6      5        2Q         3
+
+Change Class 0;
+MA11     IC20     10       A0         3
+         IC21     10       A0         3
+         IC6      2        1Q         3
+
+Change Class 0;
+MEMSEL\  CPU      37       MEMSEL     1
+         IC10     5        I1         1
+         IC15     1        I0         3
+         IC15     9        I0         3
+         IC20     20       CS\        3
+         IC21     20       CS\        3
+
+Change Class 0;
+N$2      QG1      1        TS         1
+         QG2      1        TS         1
+
+Change Class 0;
+N$3      IC1      13       C12        1
+         IC1      4        C34        1
+         IC15     6        O          1
+         IC2      13       C12        1
+         IC2      4        C34        1
+         IC3      13       C12        1
+         IC3      4        C34        1
+
+Change Class 0;
+N$5      IC13     11       I          1
+         IC22     6        O          1
+
+Change Class 0;
+N$6      IC10     6        O          1
+         IC11     11       CLK        1
+
+Change Class 0;
+N$7      IC13     13       I          1
+         IC19     3        O          1
+
+Change Class 0;
+N$8      IC16     6        O          1
+         IC19     5        I1         1
+
+Change Class 0;
+N$9      IC24     6        G1         1
+
+Change Class 0;
+N$10     IC17     1        G          1
+         IC19     6        O          1
+
+Change Class 0;
+N$11     IC24     4        G2A        1
+
+Change Class 0;
+N$13     IC27     11       CLK        1
+
+Change Class 0;
+N$15     IC13     9        I          1
+         IC8      6        O          1
+
+Change Class 0;
+OE\      IC15     3        O          3
+         IC20     22       OE\        3
+         IC21     22       OE\        3
+
+Change Class 0;
+OPR\     IC9      7        Y7         1
+         PAD6     1        P          3
+
+Change Class 0;
+OSCOUT   CPU      14       OSCOUT     1
+         QG1      5        OUT        1
+         QG2      8        OUT        1
+
+Change Class 0;
+POPR     IC10     2        I1         1
+         IC14     12       O          1
+
+Change Class 0;
+RESET\   CPU      7        RESET      1
+         IC15     12       I0         1
+         RN1      4        4          1
+         SV1      11       11         3
+
+Change Class 0;
+RUN      CPU      2        RUN        1
+         IC14     1        I0         1
+         IC18     12       I0         1
+
+Change Class 0;
+RUNHLT\  CPU      6        RUNHLT     1
+         IC13     12       O          1
+         RN1      5        5          1
+         SV1      9        9          3
+
+Change Class 0;
+SETST    IC18     3        O          1
+         IC25     11       CLK        1
+         IC26     11       CLK        1
+
+Change Class 0;
+SETZF\   IC11     13       CLR        1
+         IC11     4        PRE        1
+         IC14     8        O          1
+         IC19     2        I1         1
+
+Change Class 0;
+SKP\     CPU      35       SKP        1
+         RN1      11       11         1
+         SV1      18       18         3
+
+Change Class 0;
+SWSEL\   IC18     8        O          1
+         SV1      38       38         3
+
+Change Class 0;
+TAD\     IC9      14       Y1         1
+         PAD2     1        P          3
+
+Change Class 0;
+UB       IC25     16       Q7         1
+         IC27     8        D4         1
+
+Change Class 0;
+UIF      IC22     5        I          1
+         IC26     2        Q1         1
+
+Change Class 0;
+USEBF    IC19     4        I0         1
+         IC22     10       O          1
+
+Change Class 0;
+USEBF\   IC19     8        O          1
+         IC22     11       I          1
+         IC23     1        G          1
+
+Change Class 0;
+USER_MODE IC10     1        I0         1
+         IC18     5        I1         1
+         IC18     9        I0         1
+         IC22     13       I          1
+         IC27     9        Q4         1
+
+Change Class 0;
+USER_MODE\ IC18     13       I1         1
+         IC22     12       O          1
+
+Change Class 0;
+VCC      CPU      1        VCC        * none *
+         IC1      5        VCC        * none *
+         IC10     14       VCC        * none *
+         IC11     10       PRE        1
+         IC11     12       D          1
+         IC11     14       VCC        * none *
+         IC11     2        D          1
+         IC11     3        CLK        1
+         IC12     1        I0         1
+         IC12     14       VCC        * none *
+         IC12     2        I1         1
+         IC13     14       VCC        * none *
+         IC14     14       VCC        * none *
+         IC15     14       VCC        * none *
+         IC16     14       VCC        * none *
+         IC17     20       VCC        * none *
+         IC18     14       VCC        * none *
+         IC19     12       I0         1
+         IC19     13       I1         1
+         IC19     14       VCC        * none *
+         IC2      5        VCC        * none *
+         IC20     28       VCC        3
+         IC21     28       VCC        3
+         IC22     14       VCC        * none *
+         IC23     20       VCC        * none *
+         IC24     16       VCC        * none *
+         IC25     20       VCC        * none *
+         IC26     13       D5         1
+         IC26     14       D6         1
+         IC26     17       D7         1
+         IC26     18       D8         1
+         IC26     20       VCC        * none *
+         IC27     13       D5         1
+         IC27     14       D6         1
+         IC27     17       D7         1
+         IC27     18       D8         1
+         IC27     20       VCC        * none *
+         IC3      5        VCC        * none *
+         IC6      20       VCC        * none *
+         IC7      20       VCC        * none *
+         IC8      14       VCC        * none *
+         IC9      16       VCC        * none *
+         IC9      6        G1         1
+         QG1      8        VCC        1
+         QG2      14       VCC        1
+         RN1      1        1          1
+         SV1      1        1          3
+         SV1      40       40         3
+
+Change Class 0;
+WAIT\    CPU      11       WAIT       1
+         RN1      2        2          1
+         SV1      26       26         3
+
+Change Class 0;
+WASMEM   IC11     9        Q          1
+         IC14     9        I0         1
+
+Change Class 0;
+WE\      IC15     8        O          3
+         IC20     27       WE\        3
+         IC21     27       WE\        3
+
+Change Class 0;
+XTA      CPU      9        XTA        1
+         IC15     5        I1         1
+         IC22     1        I          1
+         SV1      10       10         3
+
+Change Class 0;
+XTA\     IC15     2        I1         3
+         IC22     2        O          1
+
+Change Class 0;
+XTB      CPU      12       XTB        1
+         IC22     3        I          1
+         SV1      12       12         3
+
+Change Class 0;
+XTB\     IC15     10       I1         3
+         IC22     4        O          1
+
+Change Class 0;
+XTC      CPU      13       XTC        1
+         IC19     10       I1         1
+         IC24     2        B          1
+         SV1      14       14         3
+
+Change Class 0;
+XXX7\    IC18     1        I0         1
+         IC8      8        O          1
+
+Change Class 0;
+ZF       IC11     5        Q          1
+         IC16     5        I1         1
+         IC24     5        G2B        1
+

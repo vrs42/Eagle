@@ -1,0 +1,45 @@
+Drill Station Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/BusCon/8j-merge.dri
+
+ Date              :  2/01/2005 06:34:54p
+ Drills            : C:/PROGRAM FILES/EAGLE-4.11/projects/BusCon/8j-merge.drl
+ Device            : Excellon drill station
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Data Mode         : Absolute
+ Units             : 1/1000 Inch
+ End Of Block      : CR/LF
+
+Drill Tolerances:
+
+ -- Requested --  -- Used Drill --
+
+ Size       used  Code  Size
+
+ 2.800mm       2  T02   110.000mil
+
+Drills used:
+
+ Code  Size       used
+
+ T01   40.000mil   108
+ T02   110.000mil     2
+ T03   125.000mil     2
+
+Total number of drills: 112
+
+Plotfiles:
+
+ C:/PROGRAM FILES/EAGLE-4.11/projects/BusCon/8j-merge.drd

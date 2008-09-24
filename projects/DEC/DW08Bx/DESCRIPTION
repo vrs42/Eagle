@@ -1,0 +1,7 @@
+Negibus to Posibus Converter
+<UL>
+<LI><b>dw08a</b> is a version of the DW08A Posibus to Negibus Converter backplane,
+for reference.</LI>
+<LI><b>dw08b</b> is a drawing that approximates DEC's DW08B Negibus to Posibus
+Converter backplane.  It is still an "x" version because the part/pin numbering has not 
+been checked against the DEC version.</LI>

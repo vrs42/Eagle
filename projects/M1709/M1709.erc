@@ -1,0 +1,38 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/M1709/M1709.sch at  6/15/2006 09:02:18a
+
+WARNING: Only 1 Pin on net D\
+WARNING: Only 1 Pin on net EMA0\
+WARNING: Only 1 Pin on net EMA1\
+WARNING: Only 1 Pin on net EMA2\
+WARNING: Only 1 Pin on net E\
+WARNING: Only 1 Pin on net FSET\
+WARNING: Only 1 Pin on net F\
+WARNING: Only 1 Pin on net IND1\
+WARNING: Only 1 Pin on net IND2\
+WARNING: Only 1 Pin on net INHIBIT
+WARNING: Only 1 Pin on net INT_IN_PROG
+WARNING: Only 1 Pin on net IR0\
+WARNING: Only 1 Pin on net IR1\
+WARNING: Only 1 Pin on net IR2\
+WARNING: Only 1 Pin on net KEY_CONT\
+WARNING: Only 1 Pin on net LA_ENABLE\
+WARNING: Only 1 Pin on net MEM_START\
+WARNING: Only 1 Pin on net NTS_STALL\
+WARNING: Only 1 Pin on net POWER_OK
+WARNING: Only 1 Pin on net PULSE_LA
+WARNING: Only 1 Pin on net RETURN
+WARNING: Only 1 Pin on net ROM_ADDR\
+WARNING: Only 1 Pin on net RUN\
+WARNING: Only 1 Pin on net SOURCE
+WARNING: Only 1 Pin on net STOP\
+WARNING: Only 1 Pin on net STROBE
+WARNING: Only 1 Pin on net SWITCH
+WARNING: Only 1 Pin on net USER_MODE\
+WARNING: Only 1 Pin on net WRITE
+
+Board and schematic are consistent
+
+    0 errors
+   29 warnings

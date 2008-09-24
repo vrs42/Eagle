@@ -1,0 +1,81 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/32k-Omnibus/Omnimem.sch at  8/13/2006 12:17:27a
+
+ERROR: Sheet 2/3: unconnected INPUT Pin: IC7 IN
+WARNING: Sheet 2/3: POWER Pin IC10 VSS connected to GND
+WARNING: Sheet 2/3: POWER Pin IC4 VSS connected to GND
+WARNING: Only 1 Pin on net BREAK_CYCLE\
+WARNING: Only 1 Pin on net BRK_DATA_CONT\
+WARNING: Only 1 Pin on net BRK_IN_PROG\
+WARNING: Only 1 Pin on net BUS_STROBE\
+WARNING: Only 1 Pin on net C0\
+WARNING: Only 1 Pin on net C1\
+WARNING: Only 1 Pin on net C2\
+WARNING: Only 1 Pin on net CPMA_DISABLE\
+WARNING: Only 1 Pin on net DATA0\
+WARNING: Only 1 Pin on net DATA1\
+WARNING: Only 1 Pin on net DATA2\
+WARNING: Only 1 Pin on net DATA3\
+WARNING: Only 1 Pin on net DATA4\
+WARNING: Only 1 Pin on net DATA5\
+WARNING: Only 1 Pin on net DATA6\
+WARNING: Only 1 Pin on net DATA7\
+WARNING: Only 1 Pin on net DATA8\
+WARNING: Only 1 Pin on net DATA9\
+WARNING: Only 1 Pin on net DATA10\
+WARNING: Only 1 Pin on net DATA11\
+WARNING: Only 1 Pin on net D\
+WARNING: Only 1 Pin on net E\
+WARNING: Only 1 Pin on net FSET\
+WARNING: Only 1 Pin on net F\
+WARNING: Only 1 Pin on net IND1\
+WARNING: Only 1 Pin on net IND2\
+WARNING: Only 1 Pin on net INHIBIT
+WARNING: Only 1 Pin on net INITIALIZE
+WARNING: Only 1 Pin on net INTERNAL_IO\
+WARNING: Only 1 Pin on net INT_IN_PROG
+WARNING: Only 1 Pin on net INT_RQST\
+WARNING: Only 1 Pin on net INT_STROBE
+WARNING: Only 1 Pin on net IO_PAUSE\
+WARNING: Only 1 Pin on net IR0\
+WARNING: Only 1 Pin on net IR1\
+WARNING: Only 1 Pin on net IR2\
+WARNING: Only 1 Pin on net KEY_CONT\
+WARNING: Only 1 Pin on net LA_ENABLE\
+WARNING: Only 1 Pin on net LINK\
+WARNING: Only 1 Pin on net LINK_DATA\
+WARNING: Only 1 Pin on net LINK_LOAD\
+WARNING: Only 1 Pin on net LOAD_CONT\
+ERROR: Only INPUT Pins on net MDDIR\
+WARNING: Only 1 Pin on net MDDIR\
+WARNING: Only 1 Pin on net MD_DIR\
+WARNING: Only 1 Pin on net MEM_START\
+WARNING: Only 1 Pin on net MS_DISABLE\
+WARNING: Only 1 Pin on net NOT_LAST_TR\
+WARNING: Only 1 Pin on net NTS_STALL\
+WARNING: Only 1 Pin on net OVERFLOW\
+WARNING: Only 1 Pin on net POWER_OK
+WARNING: Only 1 Pin on net PULSE_LA
+WARNING: Only 1 Pin on net RETURN
+WARNING: Only 1 Pin on net ROM_ADDR\
+WARNING: Only 1 Pin on net RUN\
+WARNING: Only 1 Pin on net SKIP\
+WARNING: Only 1 Pin on net SOURCE
+WARNING: Only 1 Pin on net STOP\
+WARNING: Only 1 Pin on net STROBE
+WARNING: Only 1 Pin on net SWITCH
+WARNING: Only 1 Pin on net TP1
+WARNING: Only 1 Pin on net TP2
+WARNING: Only 1 Pin on net TP3
+WARNING: Only 1 Pin on net TP4
+WARNING: Only 1 Pin on net TS1\
+WARNING: Only 1 Pin on net TS2\
+WARNING: Only 1 Pin on net TS3\
+WARNING: Only 1 Pin on net TS4\
+WARNING: Only 1 Pin on net USER_MODE\
+
+Board and schematic are consistent
+
+    2 errors
+   70 warnings

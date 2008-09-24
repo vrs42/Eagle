@@ -1,0 +1,18 @@
+Partlist
+
+Exported from kludge.brd at  8/14/2005 10:45:08a
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Value          Package  Library      Position (inch)       Orientation
+
+E6       74LS74N        DIL14    74xx-us      (1.4 1.45)            R180
+E16      74LS75N        DIL16    74xx-us      (2.35 1.45)           R180
+E17      74LS76N        DIL16    74xx-jameco  (2.35 2.65)           R180
+E19      74LS74N        DIL14    74xx-us      (1.4 2.65)            R180
+E26      74LS02N        DIL14    74xx-us      (0.5 2.65)            R180
+LASTDEV  100            SIL10    resistor-sil (2.25 3.5)            R180
+P17                     DIL16    ic-package   (2.35 2.05)           R180
+P19                     DIL16    ic-package   (1.35 2.05)           R180
+P26                     DIL14    ic-package   (0.5 2.05)            R180
+SV1                     FE07     con-lsta     (2.4 3.1)             R180

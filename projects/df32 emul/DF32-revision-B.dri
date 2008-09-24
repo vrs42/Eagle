@@ -1,0 +1,51 @@
+Drill Station Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/df32 emul/DF32-revision-B.dri
+
+ Date              : 11/16/2003 10:37:10a
+ Drills            : C:/PROGRAM FILES/EAGLE-4.11/projects/df32 emul/DF32-revision-B.drl
+ Device            : Excellon drill station
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Data Mode         : Absolute
+ Units             : 1/1000 Inch
+ End Of Block      : CR/LF
+
+Drill Tolerances:
+
+ -- Requested --  -- Used Drill --
+
+ Size       used  Code  Size
+
+ 32.000mil   343  T03   0.810mm
+ 40.000mil    98  T04   1.020mm
+ 55.000mil     2  T05   1.400mm
+ 24.000mil  1363  T01   0.610mm
+
+Drills used:
+
+ Code  Size       used
+
+ T01   0.610mm    1363
+ T02   0.800mm     154
+ T03   0.810mm     343
+ T04   1.020mm      98
+ T05   1.400mm       2
+ T06   3.000mm       4
+
+Total number of drills: 1964
+
+Plotfiles:
+
+ C:/PROGRAM FILES/EAGLE-4.11/projects/df32 emul/DF32-revision-B.drd

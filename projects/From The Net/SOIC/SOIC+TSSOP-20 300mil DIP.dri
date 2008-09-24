@@ -1,0 +1,35 @@
+Drill Station Info File: //hub/ladyada/Projects/BoogieBoards/soic+tssop/20pin/SOIC+TSSOP-20 300mil DIP.dri
+
+ Date              :  3/07/2004 03:03:07p
+ Drills            : //hub/ladyada/Projects/BoogieBoards/soic+tssop/20pin/SOIC+TSSOP-20 300mil DIP.drl
+ Device            : Excellon drill station
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Data Mode         : Absolute
+ Units             : 1/1000 Inch
+ End Of Block      : CR/LF
+
+Drills used:
+
+ Code  Size       used
+
+ T01   40.000mil    20
+
+Total number of drills: 20
+
+Plotfiles:
+
+ //hub/ladyada/Projects/BoogieBoards/soic+tssop/20pin/SOIC+TSSOP-20 300mil DIP.drd

@@ -1,0 +1,10 @@
+Stuff for Zane Healy
+<UL>
+<LI><b>1541-III.brd</b> is the original 1542 adaptor board.</LI>
+<LI><b>1541-3</b> is my redrawing of the board and schematic, using the 
+SD card adapter from the SDCARD Eagle library.</LI>
+<LI><b>1541-3z</b> is a newer version of 1541-3.</LI>
+<LI><b>1541-3mf</b> is a version using the SCDA1A from Mouser.</LI>
+<LI><b>1541-3m</b> is a version using the SCDA1A from mouser.</LI>
+<LI><b>1541-3n</b> is a version using the SDBMF from Newark/Farnell.</LI>
+<LI><b>1541-3d</b> is a version using the WM24032 from Digikey.</LI>

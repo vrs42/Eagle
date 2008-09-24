@@ -1,0 +1,21 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/xPT08/untitled.sch at  5/21/2007 10:03:19a
+
+WARNING: Sheet 1/1: unconnected Pin: A12G$2 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$3 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$4 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$5 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$6 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$8 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$9 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$10 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$11 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$12 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$13 P$1
+WARNING: Sheet 1/1: unconnected Pin: A12G$15 P$1
+
+Board and schematic are consistent
+
+    0 errors
+   12 warnings

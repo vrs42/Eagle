@@ -1,0 +1,7 @@
+Backplane Probe Cards
+<P>
+The idea here is to try to map the netlist of a backplane.
+<P>
+The problem with this approach is that each socket has to be probed approximately N times, 
+where N is the number of sockets.  Since that's typically dozens, or even hundreds, it quickly 
+wears out the sockets or requires a prohibitive number of probe cards.

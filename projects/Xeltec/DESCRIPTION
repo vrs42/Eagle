@@ -1,0 +1,8 @@
+Replacement for Xeltec SuperPro interface card.
+<UL>
+<LI><b>foo1</b> is a messed up old version of the SuperPro card.</LI>
+<LI><b>fie</b> is a messed up old version of the SuperPro card.</LI>
+<LI><b>SuperPro</b> is a replacement ISA card to interface the Xeltec
+SuperPro to a PC.</LI>
+<LI><b>SuperPro-res-moved</b> is a newer version of the replacement ISA 
+card to interface the Xeltec SuperPro to a PC.</LI>

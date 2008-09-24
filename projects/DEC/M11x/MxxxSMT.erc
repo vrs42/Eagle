@@ -1,0 +1,27 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/M11x/MxxxSMT.sch at 11/21/2005 10:32:53p
+
+WARNING: Only 1 Pin on net B2
+ERROR: 4 OUTPUT Pins on net E1
+ERROR: 3 OUTPUT Pins on net F1
+ERROR: 2 OUTPUT Pins on net F2
+ERROR: 3 OUTPUT Pins on net H2
+ERROR: 5 OUTPUT Pins on net J2
+ERROR: 2 OUTPUT Pins on net K1
+ERROR: 3 OUTPUT Pins on net L1
+ERROR: 3 OUTPUT Pins on net M1
+ERROR: 2 OUTPUT Pins on net N1
+ERROR: 2 OUTPUT Pins on net N2
+ERROR: 4 OUTPUT Pins on net P2
+ERROR: 3 OUTPUT Pins on net R2
+ERROR: 5 OUTPUT Pins on net S1
+ERROR: 2 OUTPUT Pins on net S2
+ERROR: 4 OUTPUT Pins on net U1
+ERROR: 3 OUTPUT Pins on net V1
+ERROR: 6 OUTPUT Pins on net V2
+
+No board loaded - consistency has not been checked
+
+   17 errors
+    1 warnings

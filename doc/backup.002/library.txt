@@ -1,0 +1,81 @@
+GENERAL COMMENTS ABOUT EAGLE COMPONENT LIBRARIES
+================================================
+
+The component libraries supplied with EAGLE have been compiled with
+great care as an additional service to you, our customer.  However,
+the large number of available components and suppliers of these
+components means that the occasional discrepancy is unavoidable.
+Please note, therefore, that CadSoft takes no responsibility for the
+complete accuracy of information included in library files.
+
+Please note that libraries are not necessarily identical to former
+libraries with the same name. Therefore, it is advisable to back up
+your old libraries before installing the new ones.
+
+Additional new libraries, that have not yet been officially released,
+can be found on CadSoft's internet site in the download section
+(www.cadsoftusa.com).
+
+Please note, that libraries can be edited very conveniently with the
+commands EXPORT and SCRIPT.
+
+All packages are defined in such a way, that tNames contains the
+names of the components and tPlace contains the additional pc board
+print. For the documentation print, tDocu is selected additionally.
+This layer contains graphical objects which must not be printed onto
+the board.
+
+If components are placed on the bottom side of the board, the related
+information changes from t.. to b.. layers (e.g. from tNames to
+bNames).
+
+Further usage of layers:
+
+Holes:       mounting holes
+TFinish:     finish, e.g. AT-Slot
+TStop:       areas without solder stop mask, e.g. for bridging connections
+TRestrict:   area without tracks, e.g. around mounting holes
+TKeepout:    area without components, e.g. EURO-19"
+
+
+Defining your own Libraries
+===========================
+
+All of the libraries for this EAGLE-Version have been designed
+according to the following rules, with exceptions where useful.
+
+Symbols:
+
+  - Origin in the center
+  - Width: 16 Mil
+  - Pin Lenght for IC's: Middle
+  - Text Size for >Name and >Value: 70 Mil, Ratio: 8
+  - Inputs on the left
+  - Outputs on the right
+  - Pin distance: 100 Mil
+  - Pins only on the left and right, if possible
+  - "Set" at the upper part of the symbol, "Reset" at lower part,
+    Clock in the center
+  - Data lines at the upper part, control lines at lower part
+  - Counting starts from top (e.g. D0 above D1 etc.)
+  - Ouput pins start 100 Mil from upper edge of symbol
+  - Outputs opposite to related inputs
+    (e.g. In0 opposite to Out0)
+  - Symbol height of ICs as small as possible
+  - Symbol width of ICs as small as possible
+
+Packages:
+
+  - Origin in the center
+  - Text Size for >NAME and >VALUE: 70 Mil, Ratio: 10
+  - Wire Width for outlines: 5 Mil
+  - Pad Shape:    Octagon
+  - Pad Diameter: 63 Mil
+  - Pad Drill:    32 Mil
+  - Rectangle on SMD pads in tDocu (for documentation print)
+
+Devices:
+
+  - Value On
+  - Power pins for VCC and GND in separate symbol
+  - Power pins for VDD, VSS etc. not in separate symbol

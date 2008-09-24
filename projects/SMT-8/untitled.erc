@@ -1,0 +1,27 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/SMT-8/untitled.sch at  8/08/2007 08:37:00p
+
+WARNING: Only 1 Pin on net A1
+WARNING: Only 1 Pin on net B1
+WARNING: Only 1 Pin on net C1
+WARNING: Only 1 Pin on net D1
+WARNING: Only 1 Pin on net E1
+WARNING: Only 1 Pin on net F1
+WARNING: Only 1 Pin on net H1
+WARNING: Only 1 Pin on net J1
+WARNING: Only 1 Pin on net K1
+WARNING: Only 1 Pin on net L1
+WARNING: Only 1 Pin on net M1
+WARNING: Only 1 Pin on net N1
+WARNING: Only 1 Pin on net P1
+WARNING: Only 1 Pin on net R1
+WARNING: Only 1 Pin on net S1
+WARNING: Only 1 Pin on net T1
+WARNING: Only 1 Pin on net U1
+WARNING: Only 1 Pin on net V1
+
+Board and schematic are consistent
+
+    0 errors
+   18 warnings

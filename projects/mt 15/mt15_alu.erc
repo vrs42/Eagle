@@ -1,0 +1,35 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/mt15/mt15_alu.sch at  4/04/2007 03:40:47p
+
+WARNING: Only 1 Pin on net !P+1
+WARNING: Only 1 Pin on net C
+WARNING: Only 1 Pin on net D_IN
+WARNING: Only 1 Pin on net GS0
+WARNING: Only 1 Pin on net GS1
+WARNING: Only 1 Pin on net GS2
+WARNING: Only 1 Pin on net GS3
+WARNING: No Pins on net N$9
+WARNING: No Pins on net N$10
+WARNING: No Pins on net N$11
+WARNING: No Pins on net N$12
+WARNING: No Pins on net N$13
+WARNING: No Pins on net N$14
+WARNING: No Pins on net N$15
+WARNING: No Pins on net N$16
+WARNING: No Pins on net N$17
+WARNING: No Pins on net N$18
+WARNING: Only 1 Pin on net PS0
+WARNING: Only 1 Pin on net PS1
+WARNING: Only 1 Pin on net PS2
+WARNING: Only 1 Pin on net PS3
+WARNING: Only 1 Pin on net SHR
+WARNING: Only 1 Pin on net Y
+WARNING: Only 1 Pin on net Z
+WARNING: Sheet 1/4, Net N$17: missing Junction at (8.3 2.9)
+WARNING: Sheet 1/4, Net N$18: missing Junction at (8.1 3.1)
+
+Board and schematic are consistent
+
+    0 errors
+   26 warnings

@@ -1,0 +1,37 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/RF08/8x11.sch at  5/19/2007 08:33:10p
+
+WARNING: Sheet 2/5: POWER Pin IC8 V+ connected to VCC
+WARNING: Sheet 4/5: NC Pin IC42 NC connected to DAR05
+WARNING: Sheet 4/5: POWER Pin IC42 VSS connected to GND
+WARNING: Sheet 4/5: POWER Pin IC42 VCC connected to MEMSUPPLY
+WARNING: Sheet 4/5: NC Pin IC43 NC connected to DAR05
+WARNING: Sheet 4/5: POWER Pin IC43 VSS connected to GND
+WARNING: Sheet 4/5: POWER Pin IC43 VCC connected to MEMSUPPLY
+WARNING: Sheet 4/5: POWER Pin IC44P VSS connected to GND
+WARNING: Sheet 4/5: POWER Pin IC44P VDD connected to MEMSUPPLY
+WARNING: Sheet 4/5: NC Pin IC39 NC connected to DAR05
+WARNING: Sheet 4/5: POWER Pin IC39 VSS connected to GND
+WARNING: Sheet 4/5: POWER Pin IC39 VCC connected to MEMSUPPLY
+WARNING: Sheet 4/5: NC Pin IC45 NC connected to DAR05
+WARNING: Sheet 4/5: POWER Pin IC45 VSS connected to GND
+WARNING: Sheet 4/5: POWER Pin IC45 VCC connected to MEMSUPPLY
+WARNING: Sheet 4/5: POWER Pin IC46P VSS connected to GND
+WARNING: Sheet 4/5: POWER Pin IC46P VDD connected to MEMSUPPLY
+WARNING: Only 1 Pin on net BINIT2
+WARNING: Only 1 Pin on net BMB03\
+WARNING: Only 1 Pin on net BMB04\
+WARNING: Only 1 Pin on net BMB05\
+WARNING: Only 1 Pin on net BMB06\
+WARNING: Only 1 Pin on net BMB07\
+WARNING: Only 1 Pin on net BMB08\
+WARNING: Only 1 Pin on net BRUN\
+WARNING: Only 1 Pin on net BTS3
+WARNING: Only 1 Pin on net CA_INCR
+WARNING: Only 1 Pin on net MEM_INC\
+
+Board and schematic are consistent
+
+    0 errors
+   28 warnings

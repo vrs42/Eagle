@@ -1,0 +1,27 @@
+Partlist exported from C:/PROGRAM FILES/EAGLE-4.11/projects/M452r/M452r.sch at 10/25/2003 11:12:41p
+
+Part Value    Device          Package      Description                           
+C1   .1uf     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol            
+C2   .1uf     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol            
+C3   .1uf     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol            
+C4   .1uf     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol            
+C5   .1uf     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol            
+C8   .1uf     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol            
+C9   470pf    C-EU050-025X075 C050-025X075 CAPACITOR, European symbol            
+IC1  MC14411  DIL24-6         DIL24-6      Dual In Line                          
+IC2  74151N   74151N          DIL16        Data SELECTOR/MULTIPLEXER             
+IC3  74LS393N 74LS393N        DIL14        Dual 4-bit decade and binary COUNTER  
+IC4  74H00N   7400N           DIL14        Quad 2-input NAND gate                
+IC5  74123N   74123N          DIL16        Retriggerable monostable MULTIVIBRATOR
+J1   J30MM    J30MM           30           Bridge                                
+PAD1          1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                      
+PAD2          1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                      
+Q2            CRYTALHC49U-H   HC49U-H      CRYSTAL                               
+R1   7.5M     R-US_0204/7     0204/7       RESISTOR, American symbol             
+R2   7.5M     R-US_0204/7     0204/7       RESISTOR, American symbol             
+R3   10K      R-US_0204/7     0204/7       RESISTOR, American symbol             
+R4   10K      R-US_0204/7     0204/7       RESISTOR, American symbol             
+R5   10K      R-US_0204/7     0204/7       RESISTOR, American symbol             
+R8   470      R-US_0204/7     0204/7       RESISTOR, American symbol             
+S1            DIP04S          DIP04S       DIL/CODE SWITCH                       
+U$1           DEC-FLIPCHIP    DEC-FLIPCHIP DEC Flip-Chip single card fingers     

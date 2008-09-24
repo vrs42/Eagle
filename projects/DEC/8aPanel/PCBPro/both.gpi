@@ -1,0 +1,52 @@
+Photoplotter Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/DEC/X8aPanel/both.gpi
+
+ Date              :  6/24/2005 10:23:35p
+ Plotfile          : C:/PROGRAM FILES/EAGLE-4.11/projects/DEC/X8aPanel/both.sts
+ Apertures         : generated: 
+ Device            : Gerber photoplotter with RS-274-X aperture generation
+
+Parameter settings:
+
+ Emulate Apertures : no
+ Emulate Thermal   : no
+ Emulate Annulus   : no
+ Tolerance Draw  + :  0.00 %
+ Tolerance Draw  - :  0.00 %
+ Tolerance Flash + :  0.00 %
+ Tolerance Flash - :  0.00 %
+ Rotate            : no
+ Mirror            : yes
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+
+Plotfile Info:
+
+ Coordinate Format : 2.4
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Apertures used:
+
+ Code     Shape     Size                  used
+
+ D10      oval      0.0624inch x 0.1144inch   712
+ D11      octagon   0.0756inch             178
+ D12      octagon   0.0624inch             127
+ D13      round     0.1512inch              20
+ D14      round     0.0672inch               2
+ D15      octagon   0.0672inch              78
+ D16      round     0.1560inch               4
+ D17      octagon   0.1800inch               4
+ D18      round     0.1020inch               3
+ D19      octagon   0.1020inch               3
+ D20      oval      0.1144inch x 0.0624inch   240
+ D21      oval      0.0846inch x 0.1551inch    80
+ D22      round     0.0852inch              40
+ D23      round     0.1488inch               2
+ D24      octagon   0.1488inch               2
+ D25      round     0.0480inch             462
+

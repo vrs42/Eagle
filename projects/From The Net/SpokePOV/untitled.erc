@@ -1,0 +1,13 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/FromTheNet/SpokePOV/untitled.sch at  9/14/2005 04:37:30p
+
+ERROR: Only INPUT Pins on net B_SELECT
+ERROR: Only INPUT Pins on net F_SELECT
+ERROR: Only INPUT Pins on net N$121
+ERROR: Only INPUT Pins on net SCK
+
+No board loaded - consistency has not been checked
+
+    4 errors
+    0 warnings

@@ -1,0 +1,49 @@
+Netlist
+
+Exported from watch.sch at 12/01/2005 04:55:02p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Net      Part     Pad      Pin        Sheet
+C1\      IC1      17       RA0        1
+         R1       1        1          1
+C2\      IC1      18       RA1        1
+         R2       1        1          1
+C3\      IC1      1        RA2        1
+         R3       1        1          1
+C4\      IC1      2        RA3        1
+         R4       1        1          1
+C5\      IC1      3        T0CKI      1
+         R5       1        1          1
+COL1\    PAD4     1        P          1
+         R1       2        2          1
+COL2\    PAD3     1        P          1
+         R2       2        2          1
+COL3\    PAD7     1        P          1
+         R3       2        2          1
+COL4\    PAD9     1        P          1
+         R4       2        2          1
+COL5\    PAD12    1        P          1
+         R5       2        2          1
+GND      IC1      5        VSS        1
+         R6       2        2          1
+ROW1     IC1      6        RB0        1
+         PAD1     1        P          1
+ROW2     IC1      7        RB1        1
+         PAD2     1        P          1
+ROW3     IC1      8        RB2        1
+         PAD11    1        P          1
+ROW4     IC1      9        RB3        1
+         PAD10    1        P          1
+ROW5     IC1      10       RB4        1
+         PAD8     1        P          1
+ROW6     IC1      11       RB5        1
+         PAD5     1        P          1
+ROW7     IC1      12       RB6        1
+         PAD6     1        P          1
+STEM\    IC1      4        MCLR\      1
+         PAD15    1        P          1
+         R6       1        1          1
+VCC      IC1      14       VDD        1
+         PAD16    1        P          1
+

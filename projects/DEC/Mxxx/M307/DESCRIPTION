@@ -1,0 +1,8 @@
+Integrating One Shot
+<UL>
+<LI><b>M307-9601</b> is DEC's M307 Integrating One Shot module, with the 
+now hard to find 9601 monostables.</LI>
+<LI><b>M307foo</b> is a messed up version.</LI>
+<LI><b>M307mod</b> is a checkpoint of an early version of M307.</LI>
+<LI><b>M307</b> is a version of the M307 using the more readily available 
+74123 instead of the 9601.</LI>

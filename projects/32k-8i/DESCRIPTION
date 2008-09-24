@@ -1,0 +1,4 @@
+PDP-8/i Core replacement.
+<UL><LI><b>sboardnew</b> is an SRAM core replacement that uses simple paddle cards to
+hook into a PDP-8/i or PDP-12.</LI>
+</UL>

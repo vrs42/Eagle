@@ -1,0 +1,4 @@
+1.5V Battery Tester
+<UL>
+<LI><b>100ma</b> is a simple battery tester to check whether the voltage drops below 1V 
+at 100ma.</LI>

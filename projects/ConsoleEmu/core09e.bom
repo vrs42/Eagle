@@ -1,0 +1,35 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/ConsoleEmu/core09e.sch at  7/15/2004 06:40:11p
+
+Qty Value    Device          Parts                                                                                                                        
+1            C-US050-025X075 C                                                                                                                            
+1            F09HP           COM                                                                                                                          
+1            JP1Q            DEBUG                                                                                                                        
+1            LED3MM          LED1                                                                                                                         
+2            MA03-1          EP-1, RS-232                                                                                                                 
+1            MA05-1          EPROM                                                                                                                        
+1            MA10-2          CORE-IO                                                                                                                      
+21  0.1uf    C-US050-025X075 BYP2, BYP17, BYP18, BYP19, BYP20, BYP21, BYP22, BYP23, BYP24, BYP25, BYP26, BYP27, BYP28, BYP29, C4, C5, C7, C8, C9, C10, C11
+7   3.3K     R-US_0207/7     R5, R6, R7, R8, R9, R13, R14                                                                                                 
+1   4Mhz     QG5860          QG1                                                                                                                          
+3   10K      R-US_0207/7     R1, R2, R10                                                                                                                  
+1   10K      TRIM_EU-B90P    R11                                                                                                                          
+1   22uf     C-US102-054X133 C3                                                                                                                           
+1   27C128P  27C128P         IC23                                                                                                                         
+1   74LS73N  74LS73N         IC2                                                                                                                          
+1   74LS132N 74LS00N         IC18                                                                                                                         
+1   74LS138N 74LS138N        IC19                                                                                                                         
+1   74LS139N 74LS139N        IC28                                                                                                                         
+2   74LS245N 74LS245N        IC25, IC26                                                                                                                   
+2   100K     R-US_0207/7     R3, R4                                                                                                                       
+1   220pf    C-US050-025X075 C6                                                                                                                           
+1   270      R-US_0207/7     R12                                                                                                                          
+1   6264A    6264A           IC22                                                                                                                         
+1   6809E    6809E           IC17                                                                                                                         
+1   6821     6821            IC24                                                                                                                         
+1   6850     6850            IC21                                                                                                                         
+1   27256    27256           IC29                                                                                                                         
+1   CB1      JP1Q            JP3                                                                                                                          
+1   LM556N   LM556N          IC27                                                                                                                         
+1   MAX232   MAX232          IC20                                                                                                                         
+1   POWER    JP1Q            JP4                                                                                                                          
+1   RESET    JP1Q            JP1                                                                                                                          

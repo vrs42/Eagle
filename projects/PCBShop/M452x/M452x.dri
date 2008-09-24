@@ -1,0 +1,37 @@
+Drill Station Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/PCB Shop/M452x/M452x.dri
+
+ Date              : 12/01/2003 11:47:39a
+ Drills            : C:/PROGRAM FILES/EAGLE-4.11/projects/PCB Shop/M452x/M452x.drl
+ Device            : Gerber Drill Code
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Coordinate Format : 2.3
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Drills used:
+
+ Code  Size       used
+
+ T01   32.000mil   222
+
+Total number of drills: 222
+
+Plotfiles:
+
+ C:/PROGRAM FILES/EAGLE-4.11/projects/PCB Shop/M452x/M452x.drd

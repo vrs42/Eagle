@@ -1,0 +1,36 @@
+Drill Station Info File: C:/Program Files/EAGLE-4.11/projects/Robert Adams/LEDCandle/candle8x11.dri
+
+ Date              :  9/18/2005 04:54:16p
+ Drills            : C:/Program Files/EAGLE-4.11/projects/Robert Adams/LEDCandle/candle8x11.drl
+ Device            : Excellon drill station
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Data Mode         : Absolute
+ Units             : 1/1000 Inch
+ End Of Block      : CR/LF
+
+Drills used:
+
+ Code  Size       used
+
+ T01   32.000mil  1860
+ T02   44.000mil   124
+
+Total number of drills: 1984
+
+Plotfiles:
+
+ C:/Program Files/EAGLE-4.11/projects/Robert Adams/LEDCandle/candle8x11.drd

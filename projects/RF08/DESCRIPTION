@@ -1,0 +1,12 @@
+RF08 Replacement
+<UL>
+<LI><b>8x11</b> is an old version of all the boards for the RF08 replacement, 
+panelized on an 8"x11" sheet.</LI>
+<LI><b>RF08old</b> is an old version of the controller part of the RF08
+replacement.</LI>
+<LI><b>lights</b> is the debug display for the RF08 replacement.</LI>
+<LI><b>drives</b> contains the "drives" for the RF08 replacement.</LI>
+<LI><b>drivessop</b> contains a variation of drives that allows for the
+cheaper SMT versions of the SRAM chip.</LI>
+<LI><b>RF08b</b> is the latest version of the controller for the RF08 
+replacement.</LI>

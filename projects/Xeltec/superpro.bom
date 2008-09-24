@@ -1,0 +1,29 @@
+Partlist exported from C:/PROGRAM FILES/EAGLE-4.11/projects/Xeltec/SuperPro.sch at  8/13/2004 06:01:02p
+
+Qty Value    Device          Parts                                                                   
+1            F25H            X1                                                                      
+1            IBM8BIT         ST1                                                                     
+1            JP8Q            ADDRESS                                                                 
+2            MA03-1          PIN4, PIN9                                                              
+1            MA04-1          PIN22                                                                   
+16           R-US_0207/10    R1, R2, R6, R7, R8, R9, R10, R11, R12, R14, R15, R16, R17, R18, R19, R20
+9   0.1uf    C-US050-025X075 C1, C2, C3, C4, C5, C6, C8, C9, C10                                     
+1   1k       R-US_0207/10    R22                                                                     
+2   1uf      CPOL-USE5-10.5  C7, C12                                                                 
+1   2.2 5W   R-US_0922/22    R4                                                                      
+1   2N4401   2N4416          Q1                                                                      
+1   10k      R-US_0207/10    R23                                                                     
+1   22uf     CPOL-USE5-10.5  C11                                                                     
+1   33       R-US_0207/10    R5                                                                      
+1   74LS08N  74LS08N         IC3                                                                     
+1   74LS14N  74LS14N         IC2                                                                     
+1   74LS32N  74LS32N         IC8                                                                     
+1   74LS74N  74LS74N         IC4                                                                     
+1   74LS138N 74LS138N        IC5                                                                     
+1   74LS240N 74LS240N        IC6                                                                     
+2   74LS245N 74LS245N        IC9, IC10                                                               
+1   74LS393N 74LS393N        IC1                                                                     
+2   100      R-US_0207/10    R13, R21                                                                
+1   330      R-US_0207/10    R3                                                                      
+1   7805T    7805T           IC7                                                                     
+1   SK13/35  SK13/35         KK1                                                                     

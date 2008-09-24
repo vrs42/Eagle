@@ -1,0 +1,37 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/For Zane/1541-3mf.sch at 11/08/2007 01:41:14p
+
+Qty Value         Device          Parts                                              
+5                 2,15/1,0        1, 2, 3, AC1, AC2                                  
+6                 10-XX           S1, S2, S3, S4, S5, S6                             
+1                 G05R            R1                                                 
+2                 JP1Q            J2, J3                                                 
+2                 LM317TS         IC1, IC5                                           
+1                 M10             J5                                                 
+1                 MA03-1          SV2                                                
+1                 ML16            SV3                                                
+1                 RB1A            D3-7                                               
+12  .01uf         C-US025-024X044 C1, C2, C5, C6, C7, C8, C9, C10, C11, C12, C18, C19
+1   0.33          R-US_0207/7     R35                                                
+1   1.8K          R-US_0207/7     R3                                                 
+10  1K            R-US_0207/7     R5, R14, R15, R16, R26, R30, R31, R32, R33, R34    
+1   1K            TRIM_US-LI10    P1                                                 
+7   3.3K          R-US_0207/7     R2, R19, R20, R21, R22, R23, R36                   
+1   10            R-US_0207/7     R24                                                
+1   10K           R-US_0207/7     R38                                                
+2   15pf          C-US025-024X044 C13, C14                                           
+1   20Mhz         CRYTALHC49U70   X1                                                 
+6   22            R-US_0207/7     R8, R10, R13, R18, R28, R29                        
+1   100           R-US_0207/7     R9                                                 
+1   100K          R-US_0207/7     R6                                                 
+3   100uf         CPOL-USE2-5     C3, C4, C20                                        
+1   200           R-US_0207/7     R11                                                
+1   220           R-US_0207/7     R37                                                
+1   330           R-US_0207/7     R12                                                
+1   680           R-US_0207/7     R25                                                
+1   ?             R-US_0207/7     R7                                                 
+1   GREEN         LED3MM          D2                                                 
+1   MAX232        MAX232          IC4                                                
+1   MAX702CPA     MAX702CPA       IC2                                                
+1   PIC18F252I/SP PIC16F870P      IC3                                                
+1   RED           LED3MM          D1                                                 
+1   SDCARDMOUSER  SDCARDMOUSER    J1                                                 

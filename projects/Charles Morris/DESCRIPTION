@@ -1,0 +1,20 @@
+Projects with Charles Morris
+<UL>
+<LI><b>punch driver Rev A</b> is Charles' punch driver use with the PC8E.
+<LI><b>simple-loop*</b> is a simple passive EIA to current loop converter for
+terminals with active loops.</LI>
+<LI><b>simple-loop-active</b> is an EIA to current loop converter for terminals
+with active or passive loops and either active or passive reader run.</LI>
+<LI><b>simple-loop-active[1-5]</b> is an EIA to current loop converter for
+terminals with active or passive loops (i.e., earlier versions).</LI>
+<LI><b>Loopsup</b> is an inexpensive (but inefficient) set of loop supplies to
+drive active loops (if the DC-DC converters are not available).</LI>
+<LI><b>simple-loop-activevrs</b> is simple-loop-active, with an improved design
+for the jumper blocks.</LI>
+<LI><b>simple-loop-screws</b> is simple-loop-activevrs with screw terminals
+for use inside the TTY, instead of the more dangerous DB-9.</LI>
+<LI><b>simple-loop-vrs</b> is simple-loop-screws, with the overlap of the
+DB-25 and the mounting hole fixed.  This is very close to what Charles 
+ordered the prototype from (he flipped some diodes around).</LI>
+<LI><b>simple-loop-v2</b> is simple-loop-vrs, with bugs fixed from the
+prototype, and the diodes flipped to match the prototype.</LI>

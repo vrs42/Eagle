@@ -1,0 +1,16 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/DEC/Mxxx/M220b/m220.sch at  6/19/2007 03:12:52p
+
+Qty Value          Device            Parts                               
+2                  74S20N            E7, E11                             
+1                  DOUBLE            U$1                                 
+1   2N3009B        2N1613            T1                                  
+3   3K             R-US_0207/10      R3, R4, R7                          
+9   6.8uf          CPOL-USE15-5AXIAL C1, C2, C3, C4, C5, C6, C7, C8, C9  
+4   74S74N         74S74N            E4, E8, E9, E10                     
+2   180            R-US_0207/10      R1, R2                              
+1   330            R-US_0207/10      R5                                  
+1   750            R-US_0207/10      R6                                  
+8   7453N          7453N             E1, E2, E12, E14, E15, E16, E17, E18
+3   7460N          7460N             E3, E5, E6                          
+1   7482N          7482N             E13                                 
+1   OUTLINE-DOUBLE OUTLINE-DOUBLE    U$2                                 

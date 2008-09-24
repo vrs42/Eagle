@@ -1,0 +1,41 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/Xeltec/SuperPro-res-moved.sch at  8/30/2004 08:44:46p
+
+WARNING: Sheet 1/1: unconnected Pin: ST1_I/OCHK\ P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A19 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A18 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A17 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A16 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A15 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A14 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A13 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A12 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A11 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_A10 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_+5V@2 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_IRQ9 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_-5V P
+WARNING: Sheet 1/1: unconnected Pin: ST1_DRQ2 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_CARDS P
+WARNING: Sheet 1/1: unconnected Pin: ST1_MEMW\ P
+WARNING: Sheet 1/1: unconnected Pin: ST1_MEMR\ P
+WARNING: Sheet 1/1: unconnected Pin: ST1_DACK3\ P
+WARNING: Sheet 1/1: unconnected Pin: ST1_DRQ3 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_DACK1\ P
+WARNING: Sheet 1/1: unconnected Pin: ST1_DRQ1 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_REFRS P
+WARNING: Sheet 1/1: unconnected Pin: ST1_IRQ7 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_IRQ6 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_IRQ5 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_IRQ4 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_IRQ3 P
+WARNING: Sheet 1/1: unconnected Pin: ST1_DACK2\ P
+WARNING: Sheet 1/1: unconnected Pin: ST1_T/C P
+WARNING: Sheet 1/1: unconnected Pin: ST1_ALE P
+WARNING: Sheet 1/1: unconnected Pin: ST1_OSC P
+
+Board and schematic are consistent
+
+    0 errors
+   32 warnings

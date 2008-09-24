@@ -1,0 +1,26 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/New_Project_1/untitled.sch at 12/10/2004 03:09:30p
+
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC1 P1
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC1 RES
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin IC1P VSS
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin IC1P VDD
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 D
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 J1
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 J2
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 J3
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 J4
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 PRE
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 J5
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 CLK
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC2 RES
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin IC2P VSS
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin IC2P VDD
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin IC4P VSS
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin IC4P VDD
+
+No board loaded - consistency has not been checked
+
+   17 errors
+    0 warnings

@@ -1,0 +1,4 @@
+DS32 Disk Drive Emulation
+<UL>
+<LI><b>ds32</b> is a preliminary drawing of a replacement for a DS32 disk drive, which 
+would attach to a DEC RF08 controller.</LI>

@@ -1,0 +1,27 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/RF08/RF08.sch at  6/15/2004 08:16:35p
+
+Qty Value    Device          Parts                                                      
+9            1,6/0,8         PAD1, PAD2, PAD3, PAD4, PAD5, PAD6, PAD7, PAD8, PAD9       
+5            MA20-2          C35L, C36L, D34L, D35L, D36L                               
+4            SW_DIP-8        SW1, SW2, SW3, SW4                                         
+2   .1uf     C-US050-025X075 C1, C2                                                     
+1   1.5K     R-US_0207/10    RB                                                         
+1   1K       R-US_0207/10    RL                                                         
+1   5.1K     R-US_0207/10    R1                                                         
+2   74LS00N  74LS00N         IC8, IC20                                                  
+1   74LS20N  74LS20N         IC32                                                       
+3   74LS139N 74LS139N        IC22, IC26, IC41                                           
+4   74LS151N 74LS151N        IC25, IC31, IC37, IC38                                     
+7   74LS193N 74LS192N        DAR4-1, DAR8-1, DMA0-1, DMA4-1, DMA8-1, FIELD, INTENB      
+2   74LS244N 74LS244N        IC33, IC39                                                 
+1   74S03N   74S03N          IC13                                                       
+3   74S74N   74S74N          IC10, IC11, IC14                                           
+4   74S138N  74S138N         IC4, IC5, IC6, IC7                                         
+3   74S139N  74S139N         IC1, IC2, IC9                                              
+8   74S240N  74S240N         IC12, IC15, IC16, IC17, IC18, IC19, IC34, IC40             
+1   470K     R-US_0207/10    RA                                                         
+2   7407N    7407N           IC3, IC23                                                  
+3   74180N   74180N          IC24, IC29, IC30                                           
+4   628512   628128P         IC27, IC28, IC35, IC36                                     
+14  J5MM     J5MM            J1, J2, J3, J4, J5, J6, J7, J8, J9, J10, J11, J12, J13, J14
+1   LM555N   LM555N          IC21                                                       

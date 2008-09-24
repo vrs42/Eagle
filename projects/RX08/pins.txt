@@ -1,0 +1,155 @@
+Pinlist
+
+Exported from kludge.brd at  8/14/2005 10:43:54a
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Pad      Net
+
+E6       1                 *** unconnected ***
+         10       MAINT\
+         11       DONE
+         12       VCC
+         13       N$111
+         14       VCC
+         2                 *** unconnected ***
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5                 *** unconnected ***
+         6                 *** unconnected ***
+         7        GND
+         8                 *** unconnected ***
+         9        N$107
+
+E16      1        TR_FF\
+         10       DONE_FF
+         11       DONE_FF\
+         12       GND
+         13       BTS1
+         14       ERR_FF\
+         15                *** unconnected ***
+         16                *** unconnected ***
+         2        N$100
+         3        N$103
+         4        BTS1
+         5        VCC
+         6        N$107
+         7        N$107
+         8                 *** unconnected ***
+         9                 *** unconnected ***
+
+E17      1                 *** unconnected ***
+         10       PARITY\
+         11                *** unconnected ***
+         12       N$42
+         13       GND
+         14                *** unconnected ***
+         15                *** unconnected ***
+         16                *** unconnected ***
+         2                 *** unconnected ***
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5        VCC
+         6        CLK_PARITY\
+         7        VCC
+         8        N$46
+         9        N$42
+
+E19      1        N$108
+         10       MAINT\
+         11       ERROR
+         12       VCC
+         13       N$110
+         14       VCC
+         2        VCC
+         3        XFER_REQ
+         4        MAINT\
+         5        N$100
+         6                 *** unconnected ***
+         7        GND
+         8                 *** unconnected ***
+         9        N$103
+
+E26      1        N$108
+         10       N$111
+         11       INIT\
+         12       INIT\
+         13       INIT
+         14       VCC
+         2        INIT
+         3        TR_SKIP
+         4        N$110
+         5        INIT
+         6        ERR_SKIP
+         7        GND
+         8        INIT
+         9        DONE_SKIP
+
+LASTDEV  1        GND
+         10                *** unconnected ***
+         2        BINIT
+         3        BTS1
+         4        BTS3
+         5        BIOP4
+         6        BIOP2
+         7        BIOP1
+         8                 *** unconnected ***
+         9                 *** unconnected ***
+
+P17      1                 *** unconnected ***
+         10       PARITY\
+         11                *** unconnected ***
+         12       N$42
+         13                *** unconnected ***
+         14       DONE_FF\
+         15       DONE_FF
+         16                *** unconnected ***
+         2                 *** unconnected ***
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5                 *** unconnected ***
+         6        CLK_PARITY\
+         7        VCC
+         8        N$46
+         9        N$42
+
+P19      1                 *** unconnected ***
+         10       ERR_FF\
+         11                *** unconnected ***
+         12                *** unconnected ***
+         13       GND
+         14       TR_FF\
+         15                *** unconnected ***
+         16                *** unconnected ***
+         2        MAINT\
+         3        INIT\
+         4                 *** unconnected ***
+         5        VCC
+         6                 *** unconnected ***
+         7                 *** unconnected ***
+         8                 *** unconnected ***
+         9                 *** unconnected ***
+
+P26      1        XFER_REQ
+         10       DONE_SKIP
+         11                *** unconnected ***
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14       VCC
+         2        TR_SKIP
+         3                 *** unconnected ***
+         4        ERROR
+         5        ERR_SKIP
+         6                 *** unconnected ***
+         7        GND
+         8                 *** unconnected ***
+         9        DONE
+
+SV1      1        GND
+         2        BINIT
+         3        BTS1
+         4        BTS3
+         5        BIOP4
+         6        BIOP2
+         7        BIOP1
+

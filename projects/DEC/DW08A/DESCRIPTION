@@ -1,0 +1,13 @@
+Posibus to Negibus Converter
+<UL>
+<LI><b>dw08a2s</b> is a two-sided board based on DEC's DW08A Posibus
+Converter backplane.</LI>
+<LI><b>dw08aholes</b> is a version of dw08a2s with un-needed cutout holes, 
+and only 6 mil traces (too thin).</LI>
+<LI><b>dw08a</b> is dw08aholes with the power traces beefed up, and is 
+the version that matches the prototypes.  It has a mechanical interference 
+fit at the right edge.</LI>
+<LI><b>dw08aRev2</b> is a version of the dw08a backplane with the 
+interference fit fixed, and the un-needed holes removed.</LI>
+<LI><b>dw08a4lyr</b> is a four layer version, with all the traces 
+beefed up.</LI>

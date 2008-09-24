@@ -1,0 +1,4 @@
+RL0x Termininator boards.
+<UL>
+<LI><b>terminator-sil</b> is a terminator implemented with SIL resistors.</LI>
+<LI><b>terminator</b> is a terminator implemented with discrete SMT (0805) resistors.</LI>

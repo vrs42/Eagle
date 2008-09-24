@@ -1,0 +1,47 @@
+Photoplotter Info File: C:/Program Files/EAGLE-4.11/projects/ConsoleEmu/core09e.gpi
+
+ Date              :  7/09/2004 10:00:07p
+ Plotfile          : C:/Program Files/EAGLE-4.11/projects/ConsoleEmu/core09e.sts
+ Apertures         : generated: 
+ Device            : Gerber photoplotter with RS-274-X aperture generation
+
+Parameter settings:
+
+ Emulate Apertures : no
+ Emulate Thermal   : no
+ Emulate Annulus   : no
+ Tolerance Draw  + :  0.00 %
+ Tolerance Draw  - :  0.00 %
+ Tolerance Flash + :  0.00 %
+ Tolerance Flash - :  0.00 %
+ Rotate            : no
+ Mirror            : yes
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+
+Plotfile Info:
+
+ Coordinate Format : 2.4
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Apertures used:
+
+ Code     Shape     Size                  used
+
+ D10      oval      0.1144inch x 0.0624inch   262
+ D11      octagon   0.0624inch              74
+ D12      octagon   0.0720inch              31
+ D13      oval      0.0720inch x 0.1320inch    14
+ D14      round     0.2400inch               2
+ D15      oval      0.0624inch x 0.1144inch    56
+ D16      round     0.1323inch               4
+ D17      oval      0.0672inch x 0.1232inch     4
+ D18      oval      0.1232inch x 0.0672inch     4
+ D19      round     0.0624inch               4
+ D20      round     0.0480inch             105
+

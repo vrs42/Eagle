@@ -1,0 +1,14 @@
+Omnibus Memory adapter for PDP-8/i and PDP-12
+<UL>
+
+<LI><b>proto</b> is a version od the bm812i board scaled down to a few
+sockets, to make ordering a prototype cheaper.</LI>
+<LI><b>bm812i</b> is a version of DEC's BM812i with extra space between the
+connector blocks.</LI>
+<LI><b>singleboard</b> is an implementation designed to fit into a single
+slot in a standard Omnibus backplane.</LI>
+<LI><b>sboardnew</b> is a newer version of singleboard, using 74S240
+instead of 74H40 to drive the bus.</LI>
+<LI><b>bm812inl</b> is a version of the BM812i board without the extra
+space around the connector blocks.  (It needs to be checked against the
+chassis to see if it has the needed clearances.)</LI>

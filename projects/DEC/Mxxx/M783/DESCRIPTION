@@ -1,0 +1,7 @@
+Unibus/Omnibus Drivers
+<UL>
+<LI><b>M783bad</b> is a version of the M783 that won't work.</LI>
+<LI><b>M783</b> is basically DEC's version of the M783 Bus Drivers module,
+using the now hard to find DS8881.</LI>
+<LI><b>M783new</b> is a version of DEC's M783 Bus Drivers module using the 
+AM26S10 instead of the DS8881.</LI>

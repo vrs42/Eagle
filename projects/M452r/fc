@@ -1,0 +1,19 @@
+Directory
+
+Exported from con-dec.lbr at 10/25/2003 02:46:56a
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Device     Prefix  Value Package  Contents
+
+DEC-FLIPCHIP         On    DEC-FLIPCHIP 1*DEC-FLIPCHIP
+DEC-FLIPCHIPONE-SIDED         On    DEC-FLIPCHIP 1*DEC-FLIPCHIP
+
+Packages:
+
+DEC-FLIPCHIP
+
+Symbols:
+
+DEC-FLIPCHIP
+

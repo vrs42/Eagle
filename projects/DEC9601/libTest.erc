@@ -1,0 +1,21 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC9601/libTest.sch at  1/16/2008 09:25:51p
+
+ERROR: Only INPUT Pins on net 1A
+ERROR: Only INPUT Pins on net 1B
+ERROR: Only INPUT Pins on net 1C
+ERROR: Only INPUT Pins on net 1D
+ERROR: 2 OUTPUT Pins on net 1Q
+ERROR: 2 OUTPUT Pins on net 1Q\
+ERROR: Only INPUT Pins on net 2A
+ERROR: Only INPUT Pins on net 2B
+ERROR: Only INPUT Pins on net 2C
+ERROR: Only INPUT Pins on net 2D
+ERROR: 2 OUTPUT Pins on net 2Q
+ERROR: 2 OUTPUT Pins on net 2Q\
+
+Board and schematic are consistent
+
+   12 errors
+    0 warnings

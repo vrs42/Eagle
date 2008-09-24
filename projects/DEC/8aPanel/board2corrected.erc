@@ -1,0 +1,37 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/X8aPanel/board2corrected.sch at  1/16/2008 08:51:10p
+
+WARNING: Sheet 4/4: unconnected Pin: D1 A
+WARNING: Sheet 4/4: unconnected Pin: D1 C
+WARNING: Sheet 4/4: unconnected Pin: D2 A
+WARNING: Sheet 4/4: unconnected Pin: D2 C
+WARNING: Only 1 Pin on net EXTPUL\
+
+Parts/Elements with inconsistent values:
+
+  Name     Schematic      Board
+
+  E31      74LS367N       74367N
+
+Pins/Pads with different connections:
+
+  Part     Gate     Pin        Net      Pad      Signal
+
+  D1                                    A        N$54
+  D1                                    C        N$43
+  D2                                    A        N$54
+  D2                                    C        N$45
+  E23                                   12       MEMSTART\
+  E23                                   13       N$78
+  E25                                   3        VCC
+  E25                                   4        VCC
+  E25                                   5        N$54
+  E25                                   6        N$78
+  E31      A        1Y1        MEMSTART\ 3        N$45
+  E31      A        1Y2        MEMSTART\ 5        N$43
+
+ERROR: Board and schematic are not consistent!
+
+    1 errors
+    5 warnings

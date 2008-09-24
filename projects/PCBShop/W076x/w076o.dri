@@ -1,0 +1,40 @@
+Drill Station Info File: C:/PROGRAM FILES/EAGLE-4.11/projects/PCB Shop/W076x/w076o.dri
+
+ Date              : 12/02/2003 04:56:34p
+ Drills            : C:/PROGRAM FILES/EAGLE-4.11/projects/PCB Shop/W076x/w076o.drl
+ Device            : Gerber Drill Code
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Coordinate Format : 2.3
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Drills used:
+
+ Code  Size       used
+
+ T01   32.000mil   110
+ T02   36.000mil    40
+ T03   44.000mil     6
+ T04   130.000mil     2
+
+Total number of drills: 158
+
+Plotfiles:
+
+ C:/PROGRAM FILES/EAGLE-4.11/projects/PCB Shop/W076x/w076o.drd

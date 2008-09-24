@@ -1,0 +1,43 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/PT08/PT08pos.sch at  9/11/2008 08:05:32p
+
+WARNING: Sheet 1/2: unconnected Pin: M103_1G$6 P$1
+WARNING: Sheet 1/2: unconnected Pin: M103_2G$6 P$1
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$4 IN1
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$4 IN2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$5 IN1
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$5 IN2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 D2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 E2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 F2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 H2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 J2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 K2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 L2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 N2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 U2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 P2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 R2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_1G$1 S2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$4 IN1
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$4 IN2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$5 IN1
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$5 IN2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 D2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 E2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 F2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 H2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 J2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 K2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 L2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 N2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 U2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 P2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 R2
+ERROR: Sheet 1/2: unconnected INPUT Pin: M103_2G$1 S2
+
+Board and schematic are consistent
+
+   32 errors
+    2 warnings

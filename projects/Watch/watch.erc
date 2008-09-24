@@ -1,0 +1,12 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/Watch/watch.sch at 11/14/2005 09:20:38p
+
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC1 OSC1
+WARNING: Sheet 1/1: POWER Pin IC1 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC1 VDD connected to VCC
+
+Board and schematic are consistent
+
+    1 errors
+    2 warnings

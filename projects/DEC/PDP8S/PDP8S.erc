@@ -1,0 +1,91 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/PDP8S/PDP8S.sch at 11/18/2007 10:22:45p
+
+ERROR: Sheet 1/2: unconnected INPUT Pin: D06F I$2
+ERROR: Sheet 1/2: unconnected INPUT Pin: D06V I$2
+ERROR: Sheet 1/2: unconnected INPUT Pin: D09M I$1
+ERROR: Sheet 1/2: unconnected INPUT Pin: D09T I$1
+ERROR: Sheet 1/2: unconnected INPUT Pin: E06J SET
+ERROR: Sheet 1/2: unconnected INPUT Pin: E06J RESET
+ERROR: Sheet 1/2: unconnected INPUT Pin: E06T RESET
+ERROR: Sheet 1/2: unconnected INPUT Pin: F05T RESET
+ERROR: Sheet 1/2: unconnected INPUT Pin: D10F I$1
+ERROR: Only INPUT Pins on net -(OP+IOT)
+WARNING: Only 1 Pin on net -(OP+IOT)
+ERROR: Only INPUT Pins on net -(SP+PCP)
+WARNING: Only 1 Pin on net -(SP+PCP)
+ERROR: Only INPUT Pins on net -A(00-11)
+WARNING: Only 1 Pin on net -A(00-11)
+ERROR: Only INPUT Pins on net -A12
+ERROR: Only INPUT Pins on net -A13
+WARNING: Only 1 Pin on net -A13
+WARNING: Only 1 Pin on net -BMB00
+WARNING: Only 1 Pin on net -BMB01
+WARNING: Only 1 Pin on net -BMB02
+WARNING: Only 1 Pin on net -BMB03
+WARNING: Only 1 Pin on net -BMB04
+WARNING: Only 1 Pin on net -BMB05
+WARNING: Only 1 Pin on net -BMB06
+WARNING: Only 1 Pin on net -BMB07
+WARNING: Only 1 Pin on net -BMB08
+WARNING: Only 1 Pin on net -BMB09
+WARNING: Only 1 Pin on net -BMB10
+WARNING: Only 1 Pin on net -BMB11
+ERROR: Only INPUT Pins on net -EPA
+WARNING: Only 1 Pin on net -EPA
+ERROR: Only INPUT Pins on net -IOP4
+WARNING: Only 1 Pin on net -IOP4
+WARNING: Only 1 Pin on net -MB00
+WARNING: Only 1 Pin on net -MB01
+WARNING: Only 1 Pin on net -MB02
+WARNING: Only 1 Pin on net -MB03
+WARNING: Only 1 Pin on net -MB04
+WARNING: Only 1 Pin on net -MB05
+WARNING: Only 1 Pin on net -MB06
+WARNING: Only 1 Pin on net -MB07
+WARNING: Only 1 Pin on net -MB08
+WARNING: Only 1 Pin on net -MB09
+WARNING: Only 1 Pin on net -MB10
+ERROR: Only INPUT Pins on net -OPR
+WARNING: Only 1 Pin on net -OPR
+ERROR: Only INPUT Pins on net -PESEL
+WARNING: Only 1 Pin on net -PESEL
+ERROR: Only INPUT Pins on net -SP
+WARNING: Only 1 Pin on net -SP
+ERROR: Only INPUT Pins on net -WTMEM
+WARNING: Only 1 Pin on net -WTMEM
+ERROR: Only INPUT Pins on net -WTWR
+WARNING: Only 1 Pin on net -WTWR
+ERROR: Only INPUT Pins on net AC11B
+ERROR: Only INPUT Pins on net AND+TAD+ISZ
+WARNING: Only 1 Pin on net AND+TAD+ISZ
+WARNING: Only 1 Pin on net BPAR
+ERROR: Only INPUT Pins on net DC
+ERROR: Only INPUT Pins on net N$43
+WARNING: Only 1 Pin on net N$43
+ERROR: Only INPUT Pins on net N$45
+WARNING: Only 1 Pin on net N$45
+ERROR: Only INPUT Pins on net PC11
+ERROR: Only INPUT Pins on net S
+ERROR: Only INPUT Pins on net WTB
+WARNING: Only 1 Pin on net WTB
+ERROR: Only INPUT Pins on net WTE
+WARNING: Only 1 Pin on net WTE
+ERROR: Only INPUT Pins on net WTF
+WARNING: Only 1 Pin on net WTF
+ERROR: Only INPUT Pins on net WTF+WTI+WTD+WTB
+ERROR: Only INPUT Pins on net WTI
+WARNING: Only 1 Pin on net WTI
+ERROR: Only INPUT Pins on net WTX
+ERROR: Only INPUT Pins on net WTX*DCA
+WARNING: Only 1 Pin on net WTX*DCA
+ERROR: Only INPUT Pins on net WTX*ISZ
+WARNING: Only 1 Pin on net WTX*ISZ
+ERROR: Only INPUT Pins on net WTX*JMS
+WARNING: Only 1 Pin on net WTX*JMS
+
+Board and schematic are consistent
+
+   37 errors
+   45 warnings

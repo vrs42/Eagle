@@ -1,0 +1,15 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/EpromEmu/untitled.sch at  9/03/2004 05:39:10p
+
+WARNING: Sheet 1/1: POWER Pin IC3 VSS connected to GND
+ERROR: Sheet 1/1: unconnected INPUT Pin: IC5 G
+ERROR: Only INPUT Pins on net AIN14
+ERROR: Only INPUT Pins on net AIN15
+ERROR: Only INPUT Pins on net N$9
+ERROR: Only INPUT Pins on net N$10
+
+No board loaded - consistency has not been checked
+
+    5 errors
+    1 warnings

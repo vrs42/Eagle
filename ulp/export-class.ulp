@@ -1,0 +1,77 @@
+#usage "<b>Export Net-Classes</b>\n"
+       "<p>"
+       "<author>Author: support@cadsoft.de</author>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+
+string grid[] = { "MIC", "MM", "MIL", "INCH" };
+int Gridval = 1;              // 0=mic 1=mm 2=mil 3=inch    ***
+                              // choose the value for the units you're working with
+
+string cmd, s;
+
+real u2u(int val) {
+  switch(Gridval) {
+    case 0 : return u2mic(val);
+    case 1 : return u2mm(val);
+    case 2 : return u2mil(val);
+    case 3 : return u2inch(val);
+  }
+}
+
+void savescr(string projectname) {
+  string file = dlgFileSave("save CLASS script", filesetext(projectname, "-class.scr"), "*.scr");
+  if (file) {
+    output(file, "wt" ) printf("%s", cmd);
+    exit(0);
+  }
+  else return;
+}
+
+void menue(string projectname) {
+  int Result = dlgDialog("Export Net CLASSes") {
+     dlgStretch(0);
+     dlgHBoxLayout dlgSpacing(400);
+     dlgHBoxLayout {
+       dlgVBoxLayout dlgSpacing(160);
+       dlgTextEdit(cmd);
+     }
+     dlgStretch(1);
+     dlgHBoxLayout {
+        dlgStretch(0);
+        dlgPushButton("+&Cancel") dlgAccept();
+        dlgPushButton("&Save script") savescr(projectname);
+        dlgStretch(1);
+        }
+     dlgStretch(0);
+     };
+  if (Result == 0) exit (0);
+  return;
+  }
+
+// main
+if (board) board(B) {
+   sprintf(cmd, "# export from: %s\nGRID %s;\n", B.name, grid[Gridval] );
+   B.classes(C) {
+     if (C.name) {
+       sprintf(s, "CLASS %d %s %.3f %.3f %.3f;\n", C.number, C.name, u2u(C.width), u2u(C.clearance), u2u(C.drill) );
+       cmd += s;
+     }
+   }
+   cmd += "GRID LAST;\n";
+   menue(B.name);
+   }
+
+else if (schematic) schematic(S) {
+   sprintf(cmd, "# export from %s\nGRID %s;\n", S.name, grid[Gridval] );
+   S.classes(C) {
+     if (C.name) {
+        sprintf(s, "CLASS %d %s %.3f %.3f %.3f;\n", C.number, C.name, u2u(C.width), u2u(C.clearance), u2u(C.drill) );
+        cmd += s;
+     }
+   }
+   cmd += "GRID LAST;\n";
+   menue(S.name);
+   }
+
+else dlgMessageBox("start this ULP in Board or Schematic", "OK");

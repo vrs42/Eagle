@@ -1,0 +1,11 @@
+EAGLE Version 4.16r1 Copyright (c) 1988-2006 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.16r1/projects/18F Proto2 OtherUSB/18F Proto2.sch at 19/12/2006 04:21:12p
+
+WARNING: Sheet 1/1: POWER Pin 18F2X5X VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin 18F2X5X VSS connected to GND
+
+Board and schematic are consistent
+
+    0 errors
+    2 warnings

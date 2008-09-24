@@ -1,0 +1,22 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/FlipChipTester/tester-7410.sch at  3/21/2006 11:04:04a
+
+Qty Value     Device          Parts                                                   
+4             G10R            RN1, RN2, RN3, RN4                                      
+7             MA08-2          IN1-2, IN3-4, IN5-6, OUT1-2, OUT3-4, OUT5-6, OUT7-8     
+2             MA17-2          SIDE1, SIDE2                                            
+4             PINHD-1X18      JP1, JP2, JP3, JP4                                      
+10  0.1uf     C-US050-025X075 BYP1, BYP2, BYP3, BYP4, BYP5, BYP6, BYP7, BYP8, BYP9, C1
+1   1K        R-US_0207/10    R1                                                      
+1   74LS10N   74LS10N         IC9                                                     
+8   74LS125N  74LS125N        IC1, IC2, IC3, IC4, IC5, IC6, IC7, IC8                  
+1   100uf 25V C-US150-064X183 BYP10                                                   
+1   A1-K1     SW_DIP-9        A1-K1                                                   
+1   A2-K2     SW_DIP-9        A2-K2                                                   
+1   GND       PINHD-1X1       GND                                                     
+1   IO8\      PINHD-1X1       IO8\                                                    
+1   IO9\      PINHD-1X1       IO9\                                                    
+1   L1-V1     SW_DIP-9        L1-V1                                                   
+1   L2-V2     SW_DIP-9        L2-V2                                                   
+1   MR\       PINHD-1X1       MR\                                                     
+1   OC        PINHD-1X1       OC                                                      
+2   POWER     JP1Q            POWER, POWER2                                           

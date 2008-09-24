@@ -1,0 +1,21 @@
+Partlist exported from C:/PROGRAM FILES/EAGLE-4.11/projects/20ma-rs232/loop-rs232.sch at 10/27/2003 05:02:53p
+
+Part Value   Device          Package      Description               
+C1   .1uf    C-EU050-025X075 C050-025X075 CAPACITOR, European symbol
+C2   .1uf    C-EU050-025X075 C050-025X075 CAPACITOR, European symbol
+C3   .1uf    C-EU050-025X075 C050-025X075 CAPACITOR, European symbol
+C4   .1uf    C-EU050-025X075 C050-025X075 CAPACITOR, European symbol
+IC1  MAX232A MAX232          DIL16        RS232 TRANSEIVER          
+J1   J20MM   J20MM           20           Bridge                    
+J2   J25MM   J25MM           25           Bridge                    
+OK2  ILQ1    ILQ1            DIL16        SIEMENS OPTO COUPLER      
+PL1          40H             40H          CONNECTOR                 
+R1   250     R-US_0207/10    0207/10      RESISTOR, American symbol 
+R2   5.1K    R-US_0207/10    0207/10      RESISTOR, American symbol 
+R3   250     R-US_0207/10    0207/10      RESISTOR, American symbol 
+R4   250     R-US_0207/10    0207/10      RESISTOR, American symbol 
+R5   250     R-US_0207/10    0207/10      RESISTOR, American symbol 
+R6   5.1K    R-US_0207/10    0207/10      RESISTOR, American symbol 
+R7   250     R-US_0207/10    0207/10      RESISTOR, American symbol 
+R8   250     R-US_0207/10    0207/10      RESISTOR, American symbol 
+X1           F25H            F25H         SUB-D                     

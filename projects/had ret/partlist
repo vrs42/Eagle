@@ -1,0 +1,28 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/had ret/had_ret.sch at  3/20/2007 07:08:03p
+
+Qty Value                      Device        Parts                                                                                                                                                 
+1                              8P8C-TRAF     J4                                                                                                                                                    
+7                              C0805         C3, C7, C8, C15, C17, C18, C19                                                                                                                        
+2                              L0805         L1, L2                                                                                                                                                
+1                              PINHD-2X3     GAIN                                                                                                                                                  
+32                             PINMA01       J1, J2, J3, J5, J6, J7, J8, J9, J10, J11, J12, J13, J14, J15, J16, J17, J18, J19, J20, J21, J22, J23, J24, J25, J26, J27, J28, J29, J30, J31, J32, J33
+1                              PN61729       X1                                                                                                                                                    
+2                              R-EU_0204/5   RA, RB                                                                                                                                                
+6   0u1                        C0805         C1, C2, C4, C5, C10, C14                                                                                                                              
+1   1M                         R0805         R12                                                                                                                                                   
+1   1N4004                     1N4004        D2                                                                                                                                                    
+1   2.32k                      R-EU_0204/7   RBIAS                                                                                                                                                 
+2   2k2                        R0805         R1, R10                                                                                                                                               
+2   10n                        C0805         C11, C12                                                                                                                                              
+3   10u                        CPOL-EUCT3528 CE1, CE2, CE3                                                                                                                                         
+1   12.00M                     CRYTALHC49S   Y1                                                                                                                                                    
+3   22p                        C0805         C6, C9, C21                                                                                                                                           
+1   25.000M                    CRYTALHC49S   Y2                                                                                                                                                    
+4   51                         R0805         R2, R3, R4, R5                                                                                                                                        
+2   68                         R0805         R8, R9                                                                                                                                                
+2   100k                       R0805         R13, R14                                                                                                                                              
+1   4069N                      4069N         IC4                                                                                                                                                   
+1   ENC28J60-DIL               ENC28J60-DIL  IC2                                                                                                                                                   
+1   LM1086IT-3.3               LM317TS       IC3                                                                                                                                                   
+2   Z3V6                       DIODE         D1, D3                                                                                                                                                
+1   mega8535,16,32,324,644,... MEGA16-P      IC1                                                                                                                                                   

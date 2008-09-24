@@ -1,0 +1,189 @@
+// Miter Traces
+// Version 0.1
+// Sep 30th, 2007
+
+#usage "<b>Trace Miter Tool</b>"
+       "<p>"
+       "Finds corners in traces, then miters them for rounded edges."
+       "<p>"
+       "The miters values are done with a <mumble> radius."
+       "<p>"
+       "<i>Author: V. Slyngstad</i><br>"
+
+string Credits = "This was based loosely on <b>tracres</b> by Chris Holmes (christopher.d.holmes@grc.nasa.gov).";
+
+string Help = "<h2>Trace Miter Tool</h2> \
+              <p> \
+              <hr> \
+              <p> \
+              <b>Overview</b> \
+              <p> \
+              For each trace layer on your circuit board, this program will find unmitered corners in the traces, \
+              then create a command to miter that corner.  \
+              <p> \
+              <b>Parameters</b> \
+              <p> \
+              <b>Script File Location</b> \
+              <p> \
+              The output of this program is a script file that tells EAGLE to do the MITERs. \
+              You will have to specify a location for the script file to be written to. It is recommended to \
+              place the file (tracemiter.scr) in one of your default script directories as this will enable \
+              the auto execute function. When auto execute is checked, the resistance drawing script will automatically \
+              be run when the ULP exits.";
+              
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+int bLayerVisible[];			// Remembers which layers are visible when the program starts and
+						//  restores the same visibility upon exiting
+
+// The following variables are set in the
+// user dialog. The values shown are defaults
+// used in the event that the user's saved
+// values cannot be restored.
+
+string sScriptFile;			// The script file output
+int bAutoExecute = 0;			// Flags auto execution
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Process
+//
+// This function does all the work after the user has OK'd the setup dialog
+//
+
+void Process() {
+  string str, str2;					// Temporary strings
+
+  int  iLayer;						// Layer currently displayed
+  real fRadius;						// Radius for MITER
+  int  i;							// Index variable
+
+  str = filedir(argv[0]) + "tracemiter.dat";	// Write (most of) the dialog values out to the
+  output(str, "wt") {					// defaults file so we can remember them for next time
+    printf("%s\n", sScriptFile);
+  }
+
+  output(sScriptFile, "wt") {				// Open the script file for output
+    printf("GRID MIL 1;\n");				// Set up the grid and font. I happen to like mils,
+
+    iLayer = -1;						// Don't have the correct layer yet
+
+    board(B) {
+      B.signals(S) {
+        S.wires(W) {
+          if ((W.layer <= 16) && (!W.arc)) {	// Only pay attention to wires on signal layers that
+            if (W.layer != iLayer) {		//  aren't arcs
+              // Change to the correct layer.  Display only one layer at a time, to prevent selection errors.
+              printf("DISPLAY NONE;\n");
+              printf("DISPLAY %d;\n", W.layer);
+              iLayer = W.layer;
+            }
+            // (W.x1 W.y1) is one end point, the other is (W.x2 W.y2).
+            // We use W.width as our miter radius, to make it look proportional without
+            // risking "Clearance" design errors.
+            fRadius = u2mil(W.width);
+            // It should be harmless to miter junctions that are already mitered.  In 
+            // practice, running the script more than once will probably generate "Width" 
+            // errors from DRC.
+            // First, a round miter, to knock down any 90 degree bends.
+            printf("MITER %f (%f %f);\n",  fRadius, u2mil(W.x1), u2mil(W.y1));
+            printf("MITER %f (%f %f);\n",  fRadius, u2mil(W.x2), u2mil(W.y2));
+            // Since a round miter probably generated "Width" design rule violations, 
+            // follow up with a straight miter, which should behave, as there are no 
+            // 90 degree bends.
+            printf("MITER %f (%f %f);\n", -fRadius, u2mil(W.x1), u2mil(W.y1));
+            printf("MITER %f (%f %f);\n", -fRadius, u2mil(W.x2), u2mil(W.y2));
+          }
+        }
+      }
+    }
+    printf("DISPLAY");			// Restore the layer display to the way it was when the
+    for(i = 1; i <= 255; i++)		// program was started
+      if (bLayerVisible[i] == 1)
+        printf(" %d", i);
+    printf(";\n");
+    printf("GRID LAST;\n");		// Reset the user's grid.
+  }
+
+  if (bAutoExecute)			// Run the script if the user has requested it
+    exit("script tracemiter.scr");
+  else
+    exit(0);
+}
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Main code
+// 
+// Sets up the default values and displays a dialog for the user
+//
+
+string defaults[];	// Array of strings containing default values from the defaults file
+int itemsRead;		// Number of items read from the defaults file
+string defaultFile;	// String containing the path and file name of the defaults file
+
+if (schematic || library) {
+  dlgMessageBox("!The mitering only works on a board!");
+  exit(-1);
+}
+
+defaultFile = filedir(argv[0]) + "tracemiter.dat";	// The defaults file should be in the same path as the ULP
+
+if (fileglob(defaults, defaultFile)) {			// Check if the defaults file exists already. 'defaults' is
+							//  used as a dummy variable.
+  fileerror();						// Reset the file error flag
+  itemsRead = fileread(defaults, defaultFile);		// Try to read the defaults in
+
+  if (itemsRead == 1 && !fileerror()) {		// If successful then update variables with default values
+    sScriptFile = defaults[0];
+  }
+} else {
+  dlgMessageBox(";Please begin by choosing a location for the output script file (normally your default EAGLE script directory).");
+}
+
+board(B) {						// Gather information about board layers
+  B.layers(L) {
+    bLayerVisible[L.number] = L.visible;		// Remember which layers are visible
+  }
+}
+
+// Display the setup dialog to the user
+
+string str;
+
+dlgDialog("Trace Miter Tool") {
+  dlgTabWidget {
+    dlgTabPage("Setup") {
+      dlgGroup("Script File Location") {
+        dlgHBoxLayout {
+          dlgStringEdit(sScriptFile);
+          dlgSpacing(5);
+          dlgPushButton("Browse") {
+            sScriptFile = dlgFileSave("Select Location", "tracemiter.scr", "EAGLE script files (*.scr)");
+          }
+        }
+        dlgCheckBox("Auto Execute", bAutoExecute);
+      }
+      dlgHBoxLayout {
+        dlgStretch(1);
+        dlgPushButton("+Go")	{
+          if (sScriptFile == "")
+            dlgMessageBox("!Please set up the script file location");
+          else {
+            Process();
+            dlgAccept();
+          }
+        }
+        dlgPushButton("Cancel")	dlgReject();
+      }
+    }
+
+    dlgTabPage("Credits") {
+      dlgTextView(Credits);
+    }
+
+    dlgTabPage("Help") {
+      dlgTextView(Help);
+    }
+  }
+};

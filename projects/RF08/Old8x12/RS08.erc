@@ -1,0 +1,17 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/RF08/RS08.sch at  6/18/2004 09:54:12a
+
+WARNING: Sheet 1/1: NC Pin IC42 NC connected to DAR05
+WARNING: Sheet 1/1: POWER Pin IC42 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC42 VCC connected to MEMSUPPLY
+WARNING: Sheet 1/1: NC Pin IC43 NC connected to DAR05
+WARNING: Sheet 1/1: POWER Pin IC43 VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC43 VCC connected to MEMSUPPLY
+WARNING: Sheet 1/1: POWER Pin IC44P VSS connected to GND
+WARNING: Sheet 1/1: POWER Pin IC44P VDD connected to MEMSUPPLY
+
+Board and schematic are consistent
+
+    0 errors
+    8 warnings

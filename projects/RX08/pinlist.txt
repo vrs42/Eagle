@@ -1,0 +1,1184 @@
+Pinlist
+
+Exported from asbuilt.sch at  6/17/2005 08:33:18a
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+70       1        P          Pas      N$5
+
+71       1        P          Pas      N$6
+
+72       1        P          Pas      N$7
+
+73       1        P          Pas      N$8
+
+74       1        P          Pas      N$9
+
+75       1        P          Pas      N$10
+
+76       1        P          Pas      N$1
+
+77       1        P          Pas      N$11
+
+C1       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C2       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C3       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C4       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C5       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C6       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C7       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C8       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C9       1        1          Pas      VCC
+         2        2          Pas      GND
+
+C10      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C11      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C12      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C13      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C14      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C15      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C16      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C17      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C18      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C19      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C20      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C21      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C22      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C23      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C24      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C25      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C26      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C27      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C28      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C29      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C30      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C31      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C32      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C33      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C34      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C35      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C36      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C37      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C38      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C39      1        1          Pas      VCC
+         2        2          Pas      GND
+
+C40      +        +          Pas      VCC
+         -        -          Pas      GND
+
+D34L1    A        1          Pas      GND
+         B        2          Pas               *** unconnected ***
+         C        3          Pas      GND
+         D        4          Pas      ACB00\
+         E        5          Pas      GND
+         F        6          Pas      ACB09\
+         H        7          Pas      GND
+         J        8          Pas      ACB01\
+         K        9          Pas      GND
+         L        10         Pas      ACB10\
+         M        11         Pas      GND
+         N        12         Pas      ACB02\
+         P        13         Pas      GND
+         R        14         Pas      ACB11\
+         S        15         Pas      GND
+         T        16         Pas      ACB03\
+         U        17         Pas      GND
+         V        18         Pas      IOS\
+         W        19         Pas      GND
+         X        20         Pas      ACB04\
+         Y        21         Pas      GND
+         Z        22         Pas      INT_RQ\
+         AA       23         Pas      GND
+         BB       24         Pas      ACB05\
+         CC       25         Pas      GND
+         DD       26         Pas      ACCLEAR\
+         EE       27         Pas      GND
+         FF       28         Pas      ACB06\
+         HH       29         Pas      GND
+         JJ       30         Pas      BRUN\
+         KK       31         Pas      GND
+         LL       32         Pas      ACB07\
+         MM       33         Pas      GND
+         NN       34         Pas               *** unconnected ***
+         PP       35         Pas      GND
+         RR       36         Pas      ACB08\
+         SS       37         Pas      GND
+         TT       38         Pas               *** unconnected ***
+         UU       39         Pas      GND
+         VV       40         Pas               *** unconnected ***
+
+D34L2    A        1          Pas      GND
+         B        2          Pas               *** unconnected ***
+         C        3          Pas      GND
+         D        4          Pas      ACB00\
+         E        5          Pas      GND
+         F        6          Pas      ACB09\
+         H        7          Pas      GND
+         J        8          Pas      ACB01\
+         K        9          Pas      GND
+         L        10         Pas      ACB10\
+         M        11         Pas      GND
+         N        12         Pas      ACB02\
+         P        13         Pas      GND
+         R        14         Pas      ACB11\
+         S        15         Pas      GND
+         T        16         Pas      ACB03\
+         U        17         Pas      GND
+         V        18         Pas      IOS\
+         W        19         Pas      GND
+         X        20         Pas      ACB04\
+         Y        21         Pas      GND
+         Z        22         Pas      INT_RQ\
+         AA       23         Pas      GND
+         BB       24         Pas      ACB05\
+         CC       25         Pas      GND
+         DD       26         Pas      ACCLEAR\
+         EE       27         Pas      GND
+         FF       28         Pas      ACB06\
+         HH       29         Pas      GND
+         JJ       30         Pas      BRUN\
+         KK       31         Pas      GND
+         LL       32         Pas      ACB07\
+         MM       33         Pas      GND
+         NN       34         Pas               *** unconnected ***
+         PP       35         Pas      GND
+         RR       36         Pas      ACB08\
+         SS       37         Pas      GND
+         TT       38         Pas               *** unconnected ***
+         UU       39         Pas      GND
+         VV       40         Pas               *** unconnected ***
+
+D35L1    A        1          Pas      GND
+         B        2          Pas               *** unconnected ***
+         C        3          Pas      GND
+         D        4          Pas      BMB00
+         E        5          Pas      GND
+         F        6          Pas      BMB06\
+         H        7          Pas      GND
+         J        8          Pas      BMB01
+         K        9          Pas      GND
+         L        10         Pas      BMB06
+         M        11         Pas      GND
+         N        12         Pas      BMB02
+         P        13         Pas      GND
+         R        14         Pas      BMB07\
+         S        15         Pas      GND
+         T        16         Pas      BMB03\
+         U        17         Pas      GND
+         V        18         Pas      BMB07
+         W        19         Pas      GND
+         X        20         Pas      BMB03
+         Y        21         Pas      GND
+         Z        22         Pas      BMB08\
+         AA       23         Pas      GND
+         BB       24         Pas      BMB04\
+         CC       25         Pas      GND
+         DD       26         Pas      BMB08
+         EE       27         Pas      GND
+         FF       28         Pas      BMB04
+         HH       29         Pas      GND
+         JJ       30         Pas      BMB09
+         KK       31         Pas      GND
+         LL       32         Pas      BMB05\
+         MM       33         Pas      GND
+         NN       34         Pas      BMB10
+         PP       35         Pas      GND
+         RR       36         Pas      BMB05
+         SS       37         Pas      GND
+         TT       38         Pas      BMB11
+         UU       39         Pas      GND
+         VV       40         Pas               *** unconnected ***
+
+D35L2    A        1          Pas      GND
+         B        2          Pas               *** unconnected ***
+         C        3          Pas      GND
+         D        4          Pas      BMB00
+         E        5          Pas      GND
+         F        6          Pas      BMB06\
+         H        7          Pas      GND
+         J        8          Pas      BMB01
+         K        9          Pas      GND
+         L        10         Pas      BMB06
+         M        11         Pas      GND
+         N        12         Pas      BMB02
+         P        13         Pas      GND
+         R        14         Pas      BMB07\
+         S        15         Pas      GND
+         T        16         Pas      BMB03\
+         U        17         Pas      GND
+         V        18         Pas      BMB07
+         W        19         Pas      GND
+         X        20         Pas      BMB03
+         Y        21         Pas      GND
+         Z        22         Pas      BMB08\
+         AA       23         Pas      GND
+         BB       24         Pas      BMB04\
+         CC       25         Pas      GND
+         DD       26         Pas      BMB08
+         EE       27         Pas      GND
+         FF       28         Pas      BMB04
+         HH       29         Pas      GND
+         JJ       30         Pas      BMB09
+         KK       31         Pas      GND
+         LL       32         Pas      BMB05\
+         MM       33         Pas      GND
+         NN       34         Pas      BMB10
+         PP       35         Pas      GND
+         RR       36         Pas      BMB05
+         SS       37         Pas      GND
+         TT       38         Pas      BMB11
+         UU       39         Pas      GND
+         VV       40         Pas               *** unconnected ***
+
+D36L1    A        1          Pas      GND
+         B        2          Pas               *** unconnected ***
+         C        3          Pas      GND
+         D        4          Pas      BAC00
+         E        5          Pas      GND
+         F        6          Pas      BAC09
+         H        7          Pas      GND
+         J        8          Pas      BAC01
+         K        9          Pas      GND
+         L        10         Pas      BAC10
+         M        11         Pas      GND
+         N        12         Pas      BAC02
+         P        13         Pas      GND
+         R        14         Pas      BAC11
+         S        15         Pas      GND
+         T        16         Pas      BAC03
+         U        17         Pas      GND
+         V        18         Pas      BIOP1
+         W        19         Pas      GND
+         X        20         Pas      BAC04
+         Y        21         Pas      GND
+         Z        22         Pas      BIOP2
+         AA       23         Pas      GND
+         BB       24         Pas      BAC05
+         CC       25         Pas      GND
+         DD       26         Pas      BIOP4
+         EE       27         Pas      GND
+         FF       28         Pas      BAC06
+         HH       29         Pas      GND
+         JJ       30         Pas      BTS3
+         KK       31         Pas      GND
+         LL       32         Pas      BAC07
+         MM       33         Pas      GND
+         NN       34         Pas      BTS1
+         PP       35         Pas      GND
+         RR       36         Pas      BAC08
+         SS       37         Pas      GND
+         TT       38         Pas      BINIT
+         UU       39         Pas      GND
+         VV       40         Pas               *** unconnected ***
+
+D36L2    A        1          Pas      GND
+         B        2          Pas               *** unconnected ***
+         C        3          Pas      GND
+         D        4          Pas      BAC00
+         E        5          Pas      GND
+         F        6          Pas      BAC09
+         H        7          Pas      GND
+         J        8          Pas      BAC01
+         K        9          Pas      GND
+         L        10         Pas      BAC10
+         M        11         Pas      GND
+         N        12         Pas      BAC02
+         P        13         Pas      GND
+         R        14         Pas      BAC11
+         S        15         Pas      GND
+         T        16         Pas      BAC03
+         U        17         Pas      GND
+         V        18         Pas      BIOP1
+         W        19         Pas      GND
+         X        20         Pas      BAC04
+         Y        21         Pas      GND
+         Z        22         Pas      BIOP2
+         AA       23         Pas      GND
+         BB       24         Pas      BAC05
+         CC       25         Pas      GND
+         DD       26         Pas      BIOP4
+         EE       27         Pas      GND
+         FF       28         Pas      BAC06
+         HH       29         Pas      GND
+         JJ       30         Pas      BTS3
+         KK       31         Pas      GND
+         LL       32         Pas      BAC07
+         MM       33         Pas      GND
+         NN       34         Pas      BTS1
+         PP       35         Pas      GND
+         RR       36         Pas      BAC08
+         SS       37         Pas      GND
+         TT       38         Pas      BINIT
+         UU       39         Pas      GND
+         VV       40         Pas               *** unconnected ***
+
+DRIVE    A        1          Pas      GND
+         B        2          Pas      GND
+         C        3          Pas      GND
+         D        4          Pas      RX_RUN\
+         E        5          Pas      GND
+         F        6          Pas      GND
+         H        7          Pas      GND
+         J        8          Pas      RX_ERROR\
+         K        9          Pas      GND
+         L        10         Pas      GND
+         M        11         Pas      GND
+         N        12         Pas      RX_INIT\
+         P        13         Pas      GND
+         R        14         Pas      GND
+         S        15         Pas      GND
+         T        16         Pas      RX_TR_REQ\
+         U        17         Pas      GND
+         V        18         Pas      GND
+         W        19         Pas      GND
+         X        20         Pas      RX_DONE\
+         Y        21         Pas      GND
+         Z        22         Pas      GND
+         AA       23         Pas      GND
+         BB       24         Pas      RX_DATA\
+         CC       25         Pas      GND
+         DD       26         Pas      GND
+         EE       27         Pas      GND
+         FF       28         Pas      RX_12_BIT\
+         HH       29         Pas      GND
+         JJ       30         Pas      GND
+         KK       31         Pas      GND
+         LL       32         Pas      RX_SHIFT\
+         MM       33         Pas      GND
+         NN       34         Pas      GND
+         PP       35         Pas      GND
+         RR       36         Pas      RX_OUT\
+         SS       37         Pas      GND
+         TT       38         Pas      GND
+         UU       39         Pas      GND
+         VV       40         Pas      GND
+
+E1       1        I0         In       BMB05
+         2        I1         In       BMB04
+         3        I0         In       BINIT
+         4        I1         In       VCC
+         5        I2         In       VCC
+         6        O          Out      N$47
+         7        GND        Pwr      GND
+         8        O          Out      INIT
+         9        I0         In       N$47
+         10       I1         In       N$47
+         11       I2         In       N$45
+         12       O          Out      N$49
+         13       I2         In       BMB03
+         14       VCC        Pwr      VCC
+
+E2       1        CLR        In       N$47
+         2        D          In       GND
+         3        CLK        In       INIT4\
+         4        PRE        In       INIT1\
+         5        Q          Out               *** unconnected ***
+         6        Q\         Out      N$45
+         7        GND        Pwr      GND
+         8        Q\         Out               *** unconnected ***
+         9        Q          Out               *** unconnected ***
+         10       PRE        In       VCC
+         11       CLK        In       VCC
+         12       D          In       VCC
+         13       CLR        In       VCC
+         14       VCC        Pwr      VCC
+
+E4       1        CLR        In       INIT\
+         2        CLK        In       CLK_BUF
+         3        A          In       N$48
+         4        B          In       N$48
+         5        C          In       N$21
+         6        D          In       GND
+         7        ENP        In       N$48
+         8        GND        Pwr      GND
+         9        LD         In       ENB_BUF_LD\
+         10       ENT        In       N$48
+         11       QD         Out               *** unconnected ***
+         12       QC         Out               *** unconnected ***
+         13       QB         Out               *** unconnected ***
+         14       QA         Out               *** unconnected ***
+         15       RCO        Out      PARITY
+         16       VCC        Pwr      VCC
+
+E5       1        I0         In       N$35
+         2        I1         In       8/12\
+         3        O          Out      N$21
+         4        I0         In       CLK_PARITY\
+         5        I1         In       CLK_PARITY\
+         6        O          Out      CLK_BUF
+         7        GND        Pwr      GND
+         8        O          Out      XDR2
+         9        I0         In       XDR2\
+         10       I1         In       XDR2\
+         11       O          Out      N$35
+         12       I0         In       XDR2
+         13       I1         In       8/12
+         14       VCC        Pwr      VCC
+
+E8       1        I0         In       8/12\
+         2        I1         In       MSB12
+         3        I0         In       N$37
+         4        I1         In       8/12
+         5        I2         In       MSB8
+         6        O          Out      N$39
+         7        GND        Pwr      GND
+         8        O          Out      N$42
+         9        I0         In       N$39
+         10       I1         In       N$40
+         11       I2         In       N$38
+         12       O          Out      N$38
+         13       I2         In       N$37
+         14       VCC        Pwr      VCC
+
+E10      1        I0         In       N$104
+         2        I1         In       XDR2
+         3        I0         In       MAINT\
+         4        I1         In       DONE\
+         5        I2         In       WRT
+         6        O          Out      N$104
+         7        GND        Pwr      GND
+         8        O          Out      N$106
+         9        I0         In       LCD1\
+         10       I1         In       N$105
+         11       I2         In       N$105
+         12       O          Out      N$105
+         13       I2         In       8/12\
+         14       VCC        Pwr      VCC
+
+E11      1        A          In       BMB11
+         2        B          In       BMB10
+         3        C          In       BMB09
+         4        G2A        In       MYDEV\
+         5        G2B        In       GND
+         6        G1         In       BIOP1
+         7        Y7         Out      INIT1\
+         8        GND        Pwr      GND
+         9        Y6         Out               *** unconnected ***
+         10       Y5         Out               *** unconnected ***
+         11       Y4         Out               *** unconnected ***
+         12       Y3         Out               *** unconnected ***
+         13       Y2         Out               *** unconnected ***
+         14       Y1         Out      LCD1\
+         15       Y0         Out               *** unconnected ***
+         16       VCC        Pwr      VCC
+
+E12      1        A          In       BMB11
+         2        B          In       BMB10
+         3        C          In       BMB09
+         4        G2A        In       MYDEV\
+         5        G2B        In       GND
+         6        G1         In       BIOP2
+         7        Y7         Out               *** unconnected ***
+         8        GND        Pwr      GND
+         9        Y6         Out               *** unconnected ***
+         10       Y5         Out               *** unconnected ***
+         11       Y4         Out               *** unconnected ***
+         12       Y3         Out      STR2\
+         13       Y2         Out      XDR2\
+         14       Y1         Out               *** unconnected ***
+         15       Y0         Out               *** unconnected ***
+         16       VCC        Pwr      VCC
+
+E13      1        A          In       BMB11
+         2        B          In       BMB10
+         3        C          In       BMB09
+         4        G2A        In       MYDEV\
+         5        G2B        In       GND
+         6        G1         In       BIOP4
+         7        Y7         Out      INIT4\
+         8        GND        Pwr      GND
+         9        Y6         Out      INTR4\
+         10       Y5         Out      SDN4\
+         11       Y4         Out      SER4\
+         12       Y3         Out               *** unconnected ***
+         13       Y2         Out               *** unconnected ***
+         14       Y1         Out               *** unconnected ***
+         15       Y0         Out               *** unconnected ***
+         16       VCC        Pwr      VCC
+
+E14      1        A          In       BMB08
+         2        B          In       BMB07
+         3        C          In       BMB06
+         4        G2A        In       N$49
+         5        G2B        In       N$49
+         6        G1         In       VCC
+         7        Y7         Out      N$11
+         8        GND        Pwr      GND
+         9        Y6         Out      N$1
+         10       Y5         Out      N$10
+         11       Y4         Out      N$9
+         12       Y3         Out      N$8
+         13       Y2         Out      N$7
+         14       Y1         Out      N$6
+         15       Y0         Out      N$5
+         16       VCC        Pwr      VCC
+
+E15      1        I0         In       PARITY
+         2        I1         In       PARITY
+         3        O          Out      N$37
+         4        I0         In       INIT
+         5        I1         In       INIT
+         6        O          Out      INIT\
+         7        GND        Pwr      GND
+         8        O          Out      N$32
+         9        I0         In       N$22
+         10       I1         In       WRT
+         11       O          Out      N$40
+         12       I0         In       PARITY\
+         13       I1         In       PARITY
+         14       VCC        Pwr      VCC
+
+E16      1        CLR        In       INIT\
+         2        D          In       BAC05
+         3        CLK        In       LCD1\
+         4        PRE        In       VCC
+         5        Q          Out      8/12
+         6        Q\         Out      8/12\
+         7        GND        Pwr      GND
+         8        Q\         Out      MAINT\
+         9        Q          Out      MAINT
+         10       PRE        In       VCC
+         11       CLK        In       LCD1\
+         12       D          In       BAC04
+         13       CLR        In       INIT\
+         14       VCC        Pwr      VCC
+
+E17      1        CLK        In       N$97
+         2        PRE        In       MAINT\
+         3        CLR        In       INIT\
+         4        J          In       VCC
+         5        VCC        Pwr      VCC
+         6        CLK        In       CLK_PARITY\
+         7        PRE        In       VCC
+         8        CLR        In       N$46
+         9        J          In       N$42
+         10       Q\         Out      PARITY\
+         11       Q          Out               *** unconnected ***
+         12       K          In       N$42
+         13       GND        Pwr      GND
+         14       Q\         Out      N$96
+         15       Q          Out      DONE_FF
+         16       K          In       VCC
+
+E18      1        O          Out      TR_SKIP
+         2        I0         In       STR2\
+         3        I1         In       N$92
+         4        O          Out      ERR_SKIP
+         5        I0         In       SER4\
+         6        I1         In       N$93
+         7        GND        Pwr      GND
+         8        I0         In       SDN4\
+         9        I1         In       N$96
+         10       O          Out      DONE_SKIP
+         11       I0         In       RUN
+         12       I1         In       INIT
+         13       O          Out      N$46
+         14       VCC        Pwr      VCC
+
+E19      1        CLK        In       N$91
+         2        PRE        In       MAINT\
+         3        CLR        In       INIT\
+         4        J          In       VCC
+         5        VCC        Pwr      VCC
+         6        CLK        In       N$90
+         7        PRE        In       MAINT\
+         8        CLR        In       INIT\
+         9        J          In       VCC
+         10       Q\         Out      N$93
+         11       Q          Out               *** unconnected ***
+         12       K          In       VCC
+         13       GND        Pwr      GND
+         14       Q\         Out      N$92
+         15       Q          Out               *** unconnected ***
+         16       K          In       VCC
+
+E20      1        I0         In       TR_SKIP
+         2        I1         In       N$88
+         3        O          Out      N$89
+         4        I0         In       ERR_SKIP
+         5        I1         In       DONE_SKIP
+         6        O          Out      N$88
+         7        GND        Pwr      GND
+         8        O          Out               *** unconnected ***
+         9        I0         In       VCC
+         10       I1         In       VCC
+         11       O          Out      N$22
+         12       I0         In       XFER_REQ
+         13       I1         In       DONE
+         14       VCC        Pwr      VCC
+
+E21      1        CLR        In       INIT\
+         2        J          In       N$31
+         3        K          In       N$31
+         4        A          In       BAC07
+         5        B          In       BAC06
+         6        C          In       BAC05
+         7        D          In       BAC04
+         8        GND        Pwr      GND
+         9        S/L\       In       ENB_BUF_LD\
+         10       CLK        In       CLK_BUF
+         11       QD\        Out               *** unconnected ***
+         12       QD         Out      MSB8
+         13       QC         Out      N$62
+         14       QB         Out      N$63
+         15       QA         Out      N$64
+         16       VCC        Pwr      VCC
+
+E22      1        CLR        In       INIT\
+         2        J          In       RX_DATA
+         3        K          In       RX_DATA
+         4        A          In       BAC11
+         5        B          In       BAC10
+         6        C          In       BAC09
+         7        D          In       BAC08
+         8        GND        Pwr      GND
+         9        S/L\       In       ENB_BUF_LD\
+         10       CLK        In       CLK_BUF
+         11       QD\        Out               *** unconnected ***
+         12       QD         Out      N$31
+         13       QC         Out      N$66
+         14       QB         Out      N$67
+         15       QA         Out      N$65
+         16       VCC        Pwr      VCC
+
+E23      1        CLR        In       INIT\
+         2        J          In       MSB8
+         3        K          In       MSB8
+         4        A          In       BAC03
+         5        B          In       BAC02
+         6        C          In       BAC01
+         7        D          In       BAC00
+         8        GND        Pwr      GND
+         9        S/L\       In       ENB_BUF_LD\
+         10       CLK        In       CLK_BUF
+         11       QD\        Out               *** unconnected ***
+         12       QD         Out      MSB12
+         13       QC         Out      N$33
+         14       QB         Out      N$2
+         15       QA         Out      N$60
+         16       VCC        Pwr      VCC
+
+E24      1        I0         In       8/12\
+         2        I1         In       N$3
+         3        O          Out      N$12
+         4        I0         In       XDR2\
+         5        I1         In       LCD1\
+         6        O          Out      N$44
+         7        GND        Pwr      GND
+         8        O          Out      N$99
+         9        I0         In       INIT\
+         10       I1         In       N$22
+         11       O          Out      ENB_BUF_LD\
+         12       I0         In       N$32
+         13       I1         In       MAINT\
+         14       VCC        Pwr      VCC
+
+E25      1        I          In       RD
+         2        O          Out      WRT
+         3        I          In       DONE
+         4        O          Out      DONE\
+         5        I          In       LCD1\
+         6        O          Out      LCD1
+         7        GND        Pwr      GND
+         8        O          Out      N$102
+         9        I          In       XDR2\
+         10       O          Out      N$100
+         11       I          In       VCC
+         12       O          Out      N$101
+         13       I          In       VCC
+         14       VCC        Pwr      VCC
+
+E26      1        I0         In       XFER_REQ
+         2        I1         In       TR_SKIP
+         3        O          Out      N$107
+         4        I0         In       ERROR
+         5        I1         In       ERR_SKIP
+         6        O          Out      N$103
+         7        GND        Pwr      GND
+         8        O          Out      N$36
+         9        I0         In       DONE
+         10       I1         In       DONE_SKIP
+         11       O          Out               *** unconnected ***
+         12       I0         In       N$100
+         13       I1         In       N$100
+         14       VCC        Pwr      VCC
+
+E30      1        CLR        In       INIT\
+         2        D          In       BAC11
+         3        CLK        In       INTR4\
+         4        PRE        In       VCC
+         5        Q          Out      N$86
+         6        Q\         Out               *** unconnected ***
+         7        GND        Pwr      GND
+         8        Q\         Out               *** unconnected ***
+         9        Q          Out      RUN
+         10       PRE        In       VCC
+         11       CLK        In       N$94
+         12       D          In       VCC
+         13       CLR        In       N$99
+         14       VCC        Pwr      VCC
+
+E31      1        I0         In       LCD1
+         2        I1         In       LCD1
+         4        I2         In       DONE
+         5        I3         In       MAINT\
+         6        O          Out      N$98
+         7        GND        Pwr      GND
+         8        O          Out      N$95
+         9        I0         In       MAINT\
+         10       I1         In       MAINT\
+         12       I2         In       DONE\
+         13       I3         In       N$102
+         14       VCC        Pwr      VCC
+
+E32      1        I0         In       N$44
+         2        I1         In       ENB_BUF_LD\
+         3        I0         In       SHIFT
+         4        I1         In       N$87
+         5        I2         In       N$87
+         6        O          Out      CLK_PARITY\
+         7        GND        Pwr      GND
+         8        O          Out      N$4
+         9        I0         In       MAINT
+         10       I1         In       RD
+         11       I2         In       DONE
+         12       O          Out      N$87
+         13       I2         In       ENB_BUF_LD\
+         14       VCC        Pwr      VCC
+
+E35      1        O          Out      RX_DATA
+         2        I0         In       RX_DATA\
+         3        I1         In       MAINT
+         4        O          Out      SHIFT
+         5        I0         In       RX_SHIFT\
+         6        I1         In       MAINT
+         7        GND        Pwr      GND
+         8        I0         In       RX_OUT\
+         9        I1         In       MAINT
+         10       O          Out      RD
+         11       I0         In       N$4
+         12       I1         In       XDR2\
+         13       O          Out      N$3
+         14       VCC        Pwr      VCC
+
+E36      1        O          Out      ERROR
+         2        I0         In       MAINT
+         3        I1         In       RX_ERROR\
+         4        O          Out      XFER_REQ
+         5        I0         In       RX_TR_REQ\
+         6        I1         In       MAINT
+         7        GND        Pwr      GND
+         8        I0         In       RX_DONE\
+         9        I1         In       MAINT
+         10       O          Out      DONE
+         11       I0         In       N$101
+         12       I1         In       N$101
+         13       O          Out               *** unconnected ***
+         14       VCC        Pwr      VCC
+
+E38      1        1          Pas      N$13
+         2        2          Pas      N$14
+         3        3          Pas      N$15
+         4        4          Pas      N$16
+         5        5          Pas      N$17
+         6        6          Pas      N$18
+         7        7          Pas      N$19
+         8        8          Pas      N$20
+         9        9          Pas      N$30
+         10       10         Pas      N$29
+         11       11         Pas      N$28
+         12       12         Pas      N$27
+         13       13         Pas      N$26
+         14       14         Pas      N$25
+         15       15         Pas      N$24
+         16       16         Pas      N$23
+
+E39      1        1          Pas      N$70
+         2        2          Pas      N$71
+         3        3          Pas      N$72
+         4        4          Pas      N$73
+         5        5          Pas      N$74
+         6        6          Pas      N$75
+         7        7          Pas      N$76
+         8        8          Pas      N$77
+         9        9          Pas      N$85
+         10       10         Pas      N$84
+         11       11         Pas      N$83
+         12       12         Pas      N$82
+         13       13         Pas      N$81
+         14       14         Pas      N$80
+         15       15         Pas      N$79
+         16       16         Pas      N$78
+
+E40      1        1          Pas      N$34
+         2        2          Pas      N$41
+         3        3          Pas      N$43
+         4        4          Pas      N$50
+         5        5          Pas      N$51
+         6        6          Pas      N$52
+         7        7          Pas      N$53
+         8        8          Pas      N$54
+         9        9          Pas      N$69
+         10       10         Pas      N$68
+         11       11         Pas      N$61
+         12       12         Pas      N$59
+         13       13         Pas      N$58
+         14       14         Pas      N$57
+         15       15         Pas      N$56
+         16       16         Pas      N$55
+
+IC1      1        I0         In       N$2
+         2        I1         In       N$12
+         3        O          OC       ACB02\
+         4        GND        Pwr      GND
+         5        O          OC       ACB04\
+         6        I0         In       MSB8
+         7        I1         In       N$3
+         8        VCC        Pwr      VCC
+
+IC2      1        I0         In       N$65
+         2        I1         In       N$3
+         3        O          OC       ACB11\
+         4        GND        Pwr      GND
+         5        O          OC       ACB03\
+         6        I0         In       N$60
+         7        I1         In       N$12
+         8        VCC        Pwr      VCC
+
+IC3      1        I0         In       N$63
+         2        I1         In       N$3
+         3        O          OC       ACB06\
+         4        GND        Pwr      GND
+         5        O          OC       ACB07\
+         6        I0         In       N$64
+         7        I1         In       N$3
+         8        VCC        Pwr      VCC
+
+IC4      1        I0         In       N$62
+         2        I1         In       N$3
+         3        O          OC       ACB05\
+         4        GND        Pwr      GND
+         5        O          OC       ACB08\
+         6        I0         In       N$31
+         7        I1         In       N$3
+         8        VCC        Pwr      VCC
+
+IC5      1        I0         In       N$66
+         2        I1         In       N$3
+         3        O          OC       ACB09\
+         4        GND        Pwr      GND
+         5        O          OC       ACB10\
+         6        I0         In       N$67
+         7        I1         In       N$3
+         8        VCC        Pwr      VCC
+
+IC6      1        I0         In       MSB12
+         2        I1         In       N$12
+         3        O          OC       ACB00\
+         4        GND        Pwr      GND
+         5        O          OC       ACB01\
+         6        I0         In       N$33
+         7        I1         In       N$12
+         8        VCC        Pwr      VCC
+
+IC7      1        I0         In       N$106
+         2        I1         In       N$106
+         3        O          OC       ACCLEAR\
+         4        GND        Pwr      GND
+         5        O          OC       RX_DATA\
+         6        I0         In       WRT
+         7        I1         In       N$42
+         8        VCC        Pwr      VCC
+
+IC8      1        I0         In       8/12\
+         2        I1         In       8/12\
+         3        O          OC       RX_12_BIT\
+         4        GND        Pwr      GND
+         5        O          OC       RX_INIT\
+         6        I0         In       INIT
+         7        I1         In       INIT
+         8        VCC        Pwr      VCC
+
+IC9      1        I0         In       N$98
+         2        I1         In       N$95
+         3        O          OC       N$94
+         4        GND        Pwr      GND
+         5        O          OC       RX_RUN\
+         6        I0         In       RUN
+         7        I1         In       RUN
+         8        VCC        Pwr      VCC
+
+IC10     1        I0         In       N$89
+         2        I1         In       N$89
+         3        O          OC       IOS\
+         4        GND        Pwr      GND
+         5        O          OC       INT_RQ\
+         6        I0         In       DONE_FF
+         7        I1         In       N$86
+         8        VCC        Pwr      VCC
+
+IC11     1        I          In       N$107
+         2        O          Out      N$91
+         3        I          In       N$103
+         4        O          Out      N$90
+         5        I          In       N$36
+         6        O          Out      N$97
+         7        GND        Pwr      GND
+         8        O          Out               ***   unused    ***
+         9        I          In                ***   unused    ***
+         10       O          Out               ***   unused    ***
+         11       I          In                ***   unused    ***
+         12       O          Out               ***   unused    ***
+         13       I          In                ***   unused    ***
+         14       VCC        Pwr      VCC
+
+IOT      1        P          Pas      MYDEV\
+
+LASTDEV  1        1          Pas      GND
+         2        2          Pas      BINIT
+         3        3          Pas      BTS1
+         4        4          Pas      BTS3
+         5        5          Pas      BIOP4
+         6        6          Pas      BIOP2
+         7        7          Pas      BIOP1
+         8        8          Pas               *** unconnected ***
+         9        9          Pas               *** unconnected ***
+         10       10         Pas               *** unconnected ***
+
+PAD10    1        P          Pas      N$13
+
+PAD11    1        P          Pas      N$14
+
+PAD12    1        P          Pas      N$15
+
+PAD13    1        P          Pas      N$16
+
+PAD14    1        P          Pas      N$17
+
+PAD15    1        P          Pas      N$18
+
+PAD16    1        P          Pas      N$19
+
+PAD17    1        P          Pas      N$20
+
+PAD18    1        P          Pas      N$34
+
+PAD19    1        P          Pas      N$41
+
+PAD20    1        P          Pas      N$23
+
+PAD21    1        P          Pas      N$24
+
+PAD22    1        P          Pas      N$25
+
+PAD23    1        P          Pas      N$26
+
+PAD24    1        P          Pas      N$27
+
+PAD25    1        P          Pas      N$28
+
+PAD26    1        P          Pas      N$29
+
+PAD27    1        P          Pas      N$30
+
+PAD28    1        P          Pas      N$43
+
+PAD29    1        P          Pas      N$50
+
+PAD30    1        P          Pas      N$51
+
+PAD31    1        P          Pas      N$52
+
+PAD32    1        P          Pas      N$53
+
+PAD33    1        P          Pas      N$54
+
+PAD34    1        P          Pas      N$55
+
+PAD35    1        P          Pas      N$56
+
+PAD36    1        P          Pas      N$57
+
+PAD37    1        P          Pas      N$58
+
+PAD38    1        P          Pas      N$59
+
+PAD39    1        P          Pas      N$61
+
+PAD40    1        P          Pas      N$68
+
+PAD41    1        P          Pas      N$69
+
+PAD42    1        P          Pas      N$70
+
+PAD43    1        P          Pas      N$71
+
+PAD44    1        P          Pas      N$72
+
+PAD45    1        P          Pas      N$73
+
+PAD46    1        P          Pas      N$74
+
+PAD47    1        P          Pas      N$75
+
+PAD48    1        P          Pas      N$76
+
+PAD49    1        P          Pas      N$77
+
+PAD50    1        P          Pas      N$78
+
+PAD51    1        P          Pas      N$79
+
+PAD52    1        P          Pas      N$80
+
+PAD53    1        P          Pas      N$81
+
+PAD54    1        P          Pas      N$82
+
+PAD55    1        P          Pas      N$83
+
+PAD56    1        P          Pas      N$84
+
+PAD57    1        P          Pas      N$85
+
+R1       1        1          Pas      RX_TR_REQ\
+         2        2          Pas      VCC
+
+R2       1        1          Pas      RX_SHIFT\
+         2        2          Pas      VCC
+
+R3       1        1          Pas      RX_OUT\
+         2        2          Pas      VCC
+
+R4       1        1          Pas      RX_DONE\
+         2        2          Pas      VCC
+
+R5       1        1          Pas      RX_ERROR\
+         2        2          Pas      VCC
+
+R6       1        1          Pas      RX_RUN\
+         2        2          Pas      VCC
+
+R7       1        1          Pas      RX_12_BIT\
+         2        2          Pas      VCC
+
+R8       1        1          Pas      RX_DATA\
+         2        2          Pas      VCC
+
+R9       1        1          Pas      RX_INIT\
+         2        2          Pas      VCC
+
+R10      1        1          Pas      GND
+         2        2          Pas      RX_SHIFT\
+
+R11      1        1          Pas      GND
+         2        2          Pas      RX_TR_REQ\
+
+R12      1        1          Pas      GND
+         2        2          Pas      RX_OUT\
+
+R13      1        1          Pas      GND
+         2        2          Pas      RX_DONE\
+
+R14      1        1          Pas      GND
+         2        2          Pas      RX_ERROR\
+
+R15      1        1          Pas      GND
+         2        2          Pas      RX_RUN\
+
+R16      1        1          Pas      GND
+         2        2          Pas      RX_12_BIT\
+
+R17      1        1          Pas      GND
+         2        2          Pas      RX_DATA\
+
+R18      1        1          Pas      N$94
+         2        2          Pas      VCC
+
+R19      1        1          Pas      VCC
+         2        2          Pas      N$48
+
+R20      1        1          Pas      RX_INIT\
+         2        2          Pas      VCC
+
+SL1      1        S          Pas      VCC
+         2        S          Pas      GND
+         3        S          Pas      GND
+         4        S          Pas               ***   unused    ***
+

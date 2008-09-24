@@ -1,0 +1,5 @@
+FPGA PDP-8 Demultiplexer to Posibus
+<UL>
+<LI><b>8j-merge</b> is the paddle card used to interface to the Posibus device.</LI>
+<LI><b>posidmux</b> is an attempt to design an interface between the XESS based 
+FPGA implementation of the PDP-8 and older Posibus gear.</LI>

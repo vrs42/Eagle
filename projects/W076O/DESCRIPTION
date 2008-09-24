@@ -1,0 +1,4 @@
+W076 for either RS-232 or Current Loop
+<UL>
+<LI><b>w076o</b> is a board to implement M8655 style interface to RS-232 or current loop 
+for machines which use DEC's W076 card.</LI>

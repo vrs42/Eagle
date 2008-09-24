@@ -1,0 +1,40 @@
+Partlist exported from C:/PROGRAM FILES/EAGLE-4.11/projects/M452X/M452x.sch at 11/05/2003 11:47:35a
+
+Part  Value     Device          Package      Description                                         
+C1    .1uf      C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+C2    .1uf      C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+C3    .1uf      C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+C4    .1uf      C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+C5    .1uf      C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+C6    .1uf      C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+C7    .1uf      C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+C8    .1uf      C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+C9    470pf     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+C10   .1uf      C-EU050-025X075 C050-025X075 CAPACITOR, European symbol                          
+IC1   74LS86N   74LS86N         DIL14        Quad 2-input EXCLUSIV-OR (XOR) gate                 
+IC2   74LS393N  74LS393N        DIL14        Dual 4-bit decade and binary COUNTER                
+IC3   74LS157N  74LS157N        DIL16        Quadruple 2-line to 1-line data SELECTOR/MULTIPLEXER
+IC4   74LS86N   74LS86N         DIL14        Quad 2-input EXCLUSIV-OR (XOR) gate                 
+IC5   74LS393N  74LS393N        DIL14        Dual 4-bit decade and binary COUNTER                
+IC6   74LS151N  74151N          DIL16        Data SELECTOR/MULTIPLEXER                           
+IC7   74LS393N  74LS393N        DIL14        Dual 4-bit decade and binary COUNTER                
+IC9   74123N    74123N          DIL16        Retriggerable monostable MULTIVIBRATOR              
+IC11  7440N     74S20N          DIL14        Dual 4-input NAND gate                              
+PAD1            1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+PAD2            1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+PAD5            1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+PAD6            1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+PAD7            1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+PAD8            1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+PAD9            1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+PAD12           1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+PAD15           1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+PAD16           1,6/0,8         1,6/0,8      THROUGH-HOLE PAD                                    
+QG1   5.0688Mhz QG5860          DIL14S       CRYSTAL RESONATOR                                   
+R1    10K       R-US_0204/7     0204/7       RESISTOR, American symbol                           
+R2    10K       R-US_0204/7     0204/7       RESISTOR, American symbol                           
+R3    10K       R-US_0204/7     0204/7       RESISTOR, American symbol                           
+R4    10K       R-US_0204/7     0204/7       RESISTOR, American symbol                           
+R5    470       R-US_0204/7     0204/7       RESISTOR, American symbol                           
+S2              DIP04S          DIP04S       DIL/CODE SWITCH                                     
+U$1             DEC-FLIPCHIP    DEC-FLIPCHIP DEC Flip-Chip single card fingers                   

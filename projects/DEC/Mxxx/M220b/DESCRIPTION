@@ -1,0 +1,10 @@
+Major Registers
+<UL>
+<LI><b>m220print</b> is a snapshot of M220.</LI>
+<LI><b>m220</b> is DEC's M220 Major Registers card (revision B).</LI>
+<LI><b>m220noadder</b> is an incomplete attempt to replace the adder chip 
+with gate-level logic.</LI>
+<LI><b>m220new</b> is an implementation that doesn't use the hard to find 
+7453 and 7482 chips.</LI>
+<LI><b>m220pal</b> is a PAL implementation, using PALs programed with
+m220pgm1.pds and m220pgm2.pds.</LI>

@@ -1,0 +1,7 @@
+RS-232 converter to go in the Logic Lab
+<UL>
+<LI><b>loop-rs232o</b> is an older version of the  current loop to RS-232 converter (CTS 
+flow control only).</LI>
+<LI><b>loop-rs232</b> is a slightly newer version of the current loop to RS-232 converter, 
+with CTS or DTR flow control.</LI>
+<LI><b>sel-driver.sch</b> is a schematic of the selector magnet driver card in the TTY.</LI>

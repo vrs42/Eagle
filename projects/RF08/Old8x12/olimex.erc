@@ -1,0 +1,21 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/PROGRAM FILES/EAGLE-4.11/projects/RF08/olimex.sch at  9/06/2004 10:58:09p
+
+WARNING: Sheet 2/3: POWER Pin IC8 V+ connected to VCC
+WARNING: Only 1 Pin on net BINIT2
+WARNING: Only 1 Pin on net BMB03\
+WARNING: Only 1 Pin on net BMB04\
+WARNING: Only 1 Pin on net BMB05\
+WARNING: Only 1 Pin on net BMB06\
+WARNING: Only 1 Pin on net BMB07\
+WARNING: Only 1 Pin on net BMB08\
+WARNING: Only 1 Pin on net BRUN\
+WARNING: Only 1 Pin on net BTS3
+WARNING: Only 1 Pin on net CA_INCR
+WARNING: Only 1 Pin on net MEM_INC\
+
+Board and schematic are consistent
+
+    0 errors
+   12 warnings

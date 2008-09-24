@@ -1,0 +1,23 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/DEC/Mxxx/M307/M307foo.sch at  1/11/2008 02:42:10p
+
+WARNING: Only 1 Pin on net D1
+WARNING: Only 1 Pin on net D2
+WARNING: Only 1 Pin on net E1
+WARNING: Only 1 Pin on net F1
+WARNING: Only 1 Pin on net H1
+WARNING: Only 1 Pin on net J1
+WARNING: Only 1 Pin on net M2
+WARNING: Only 1 Pin on net N2
+WARNING: Only 1 Pin on net P2
+ERROR: 2 OUTPUT Pins on net R1
+WARNING: Only 1 Pin on net R2
+WARNING: Only 1 Pin on net S2
+WARNING: Only 1 Pin on net T2
+WARNING: Only 1 Pin on net V2
+
+Board and schematic are consistent
+
+    1 errors
+   13 warnings

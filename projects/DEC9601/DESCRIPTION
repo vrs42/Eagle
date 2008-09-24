@@ -1,0 +1,5 @@
+Functional equivalent to DEC9601 chip.
+<LI><b>DEC9601</b> is an attempt to draw an equivalent for the DEC 9601 monostable
+chip.</LI>
+<LI><b>libTest</b> is an failed attempt to create and use a library part for the equivalent.
+(The libary part is full of DRC errors.)</LI>

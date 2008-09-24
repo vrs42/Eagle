@@ -1,0 +1,3325 @@
+# NetScript
+# 
+# Exported from tc08.sch at  8/06/2006 06:35:29p
+# 
+# EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+# 
+Change Class 0;
+Signal '+3V@A09U1' 'A07'      'S1' \
+                  'A07'      'S2' \
+                  'A07'      'T2' \
+                  'A08'      'D1' \
+                  'A08'      'F2' \
+                  'A08'      'K2' \
+                  'A09'      'U1' \
+                  'B13'      'R1' \
+                  'B13'      'U2' \
+                  ;
+Change Class 0;
+Signal '+3V@B12U1' 'B12'      'U1' \
+                  'B13'      'D1' \
+                  'B13'      'F2' \
+                  'B13'      'K1' \
+                  'B14'      'A1' \
+                  'B14'      'K2' \
+                  'B14'      'N2' \
+                  'B14'      'R1' \
+                  'B14'      'U2' \
+                  ;
+Change Class 0;
+Signal '+3V@C08U1' 'C01'      'C1' \
+                  'C02'      'C1' \
+                  'C04'      'J1' \
+                  'C04'      'L2' \
+                  'C04'      'N2' \
+                  'C04'      'U2' \
+                  'C05'      'J1' \
+                  'C05'      'L2' \
+                  'C05'      'N2' \
+                  'C05'      'U2' \
+                  'C08'      'U1' \
+                  ;
+Change Class 0;
+Signal '+3V@C15U1' 'C14'      'A1' \
+                  'C14'      'D1' \
+                  'C14'      'F2' \
+                  'C14'      'K1' \
+                  'C14'      'K2' \
+                  'C15'      'U1' \
+                  'C16'      'H2' \
+                  ;
+Change Class 0;
+Signal '+3V@D09U1' 'D07'      'S1' \
+                  'D07'      'S2' \
+                  'D07'      'T2' \
+                  'D09'      'U1' \
+                  ;
+Change Class 0;
+Signal '+3V@D10U1' 'D10'      'L2' \
+                  'D10'      'M2' \
+                  'D10'      'N2' \
+                  'D10'      'U1' \
+                  'D11'      'D1' \
+                  'D11'      'F2' \
+                  'D11'      'K1' \
+                  'D11'      'K2' \
+                  'D14'      'M1' \
+                  ;
+Change Class 0;
+Signal '+11V'     'AB01'     'BM2' \
+                  ;
+Change Class 1;
+Signal '-15V'     'A18'      'B2' \
+                  'A20'      'B2' \
+                  'A21'      'B2' \
+                  'A22'      'B2' \
+                  'A23'      'B2' \
+                  'AB01'     'AB2' \
+                  'AB01'     'AE2' \
+                  'AB01'     'AF2' \
+                  'B18'      'B2' \
+                  'B20'      'B2' \
+                  'B21'      'B2' \
+                  'B22'      'B2' \
+                  'B23'      'B2' \
+                  ;
+Change Class 0;
+Signal '00'       'A07'      'D2' \
+                  ;
+Change Class 0;
+Signal '00\'      'A07'      'D1' \
+                  'B22'      'S2' \
+                  ;
+Change Class 0;
+Signal '0_TO_AC\' 'B05'      'H1' \
+                  'B06'      'T2' \
+                  ;
+Change Class 0;
+Signal '0_TO_DTB' 'A11'      'M1' \
+                  'C11'      'R1' \
+                  ;
+Change Class 0;
+Signal '0_TO_DTB\' 'A11'      'L1' \
+                  'B09'      'A1' \
+                  'B09'      'K2' \
+                  'B10'      'L1' \
+                  'C09'      'A1' \
+                  'C09'      'K2' \
+                  ;
+Change Class 0;
+Signal '0_TO_EF'  'A10'      'K2' \
+                  'A11'      'E2' \
+                  ;
+Change Class 0;
+Signal '0_TO_EF\' 'A08'      'A1' \
+                  'A08'      'N2' \
+                  'A08'      'R1' \
+                  'A11'      'F2' \
+                  ;
+Change Class 0;
+Signal '0_TO_LPB\' 'D08'      'A1' \
+                  'D08'      'K2' \
+                  'D12'      'J2' \
+                  ;
+Change Class 0;
+Signal '0_TO_STA' 'A10'      'N2' \
+                  'A11'      'N1' \
+                  ;
+Change Class 0;
+Signal '0_TO_STATE\' 'C16'      'L1' \
+                  'CD18'     'AV2' \
+                  ;
+Change Class 0;
+Signal '0_TO_STA\' 'A11'      'P1' \
+                  'B07'      'A1' \
+                  'B07'      'K2' \
+                  'B11'      'P2' \
+                  'C07'      'A1' \
+                  ;
+Change Class 0;
+Signal '0_TO_W\'  'C16'      'E1' \
+                  'CD18'     'BH2' \
+                  ;
+Change Class 0;
+Signal '01'       'A07'      'E2' \
+                  ;
+Change Class 0;
+Signal '01\'      'A07'      'E1' \
+                  'A23'      'N1' \
+                  ;
+Change Class 0;
+Signal '1_TO_DF'  'A08'      'H1' \
+                  'C12'      'J1' \
+                  'C12'      'L1' \
+                  'D11'      'L2' \
+                  ;
+Change Class 0;
+Signal '1_TO_DTF' 'B12'      'P2' \
+                  'D11'      'S2' \
+                  ;
+Change Class 0;
+Signal '02'       'A07'      'J2' \
+                  ;
+Change Class 0;
+Signal '02\'      'A07'      'J1' \
+                  'A23'      'D2' \
+                  ;
+Change Class 0;
+Signal '03'       'A07'      'N2' \
+                  ;
+Change Class 0;
+Signal '03\'      'A07'      'N1' \
+                  'A23'      'E2' \
+                  ;
+Change Class 0;
+Signal '04'       'A07'      'F2' \
+                  ;
+Change Class 0;
+Signal '04\'      'A07'      'F1' \
+                  'A23'      'K2' \
+                  ;
+Change Class 0;
+Signal '05'       'A07'      'M2' \
+                  ;
+Change Class 0;
+Signal '05\'      'A07'      'M1' \
+                  'A23'      'L2' \
+                  ;
+Change Class 0;
+Signal '06'       'A07'      'H2' \
+                  ;
+Change Class 0;
+Signal '06\'      'A07'      'H1' \
+                  'A23'      'R2' \
+                  ;
+Change Class 0;
+Signal '07'       'A07'      'L2' \
+                  ;
+Change Class 0;
+Signal '07\'      'A07'      'L1' \
+                  'A23'      'S2' \
+                  ;
+Change Class 0;
+Signal '76'       'C04'      'V2' \
+                  'C06'      'S2' \
+                  ;
+Change Class 0;
+Signal '76+77'    'C03'      'C1' \
+                  'D12'      'V2' \
+                  ;
+Change Class 0;
+Signal '76\'      'C06'      'T2' \
+                  'D12'      'R2' \
+                  'D12'      'S2' \
+                  ;
+Change Class 0;
+Signal '77'       'C05'      'V2' \
+                  'C06'      'U2' \
+                  ;
+Change Class 0;
+Signal '77\'      'C06'      'V2' \
+                  'D12'      'T2' \
+                  'D12'      'U2' \
+                  ;
+Change Class 0;
+Signal 'ADDR_ACC' 'C02'      'V2' \
+                  'C17'      'N1' \
+                  ;
+Change Class 0;
+Signal 'ADDR_ACC\' 'B08'      'T2' \
+                  'C17'      'P1' \
+                  ;
+Change Class 0;
+Signal 'B-BRK'    'B10'      'R2' \
+                  'B10'      'S2' \
+                  'B10'      'T2' \
+                  'B10'      'U2' \
+                  'C01'      'E1' \
+                  'D12'      'M1' \
+                  ;
+Change Class 0;
+Signal 'B-BRK\'   'B02'      'C1' \
+                  'B02'      'F2' \
+                  'B02'      'J1' \
+                  'B02'      'M2' \
+                  'B02'      'P1' \
+                  'B02'      'T2' \
+                  'B10'      'V2' \
+                  ;
+Change Class 0;
+Signal 'B-RUN'    'B11'      'N2' \
+                  'C01'      'B1' \
+                  ;
+Change Class 0;
+Signal 'B-XSTA'   'A10'      'E2' \
+                  'C11'      'P2' \
+                  'D12'      'E1' \
+                  ;
+Change Class 0;
+Signal 'BAC_00'   'B06'      'B1' \
+                  'B07'      'C1' \
+                  'B07'      'D1' \
+                  ;
+Change Class 0;
+Signal 'BAC_00\'  'B06'      'A1' \
+                  'C03'      'B1' \
+                  'D10'      'F1' \
+                  ;
+Change Class 0;
+Signal 'BAC_01'   'B06'      'E1' \
+                  'B07'      'E2' \
+                  'B07'      'F2' \
+                  ;
+Change Class 0;
+Signal 'BAC_01\'  'B06'      'D1' \
+                  'C03'      'E1' \
+                  'D10'      'H1' \
+                  ;
+Change Class 0;
+Signal 'BAC_02'   'B06'      'H1' \
+                  'B07'      'J1' \
+                  'B07'      'K1' \
+                  ;
+Change Class 0;
+Signal 'BAC_02\'  'B06'      'F1' \
+                  'C03'      'H1' \
+                  'D10'      'J1' \
+                  ;
+Change Class 0;
+Signal 'BAC_03'   'B06'      'K1' \
+                  'B07'      'M2' \
+                  'B07'      'N2' \
+                  ;
+Change Class 0;
+Signal 'BAC_03\'  'B06'      'J1' \
+                  'C03'      'K1' \
+                  'D10'      'K1' \
+                  ;
+Change Class 0;
+Signal 'BAC_04'   'B06'      'M1' \
+                  'C07'      'M2' \
+                  'C07'      'N2' \
+                  ;
+Change Class 0;
+Signal 'BAC_04\'  'B06'      'L1' \
+                  'C03'      'M1' \
+                  'D10'      'K2' \
+                  ;
+Change Class 0;
+Signal 'BAC_05'   'B06'      'P1' \
+                  'B07'      'P1' \
+                  'B07'      'R1' \
+                  ;
+Change Class 0;
+Signal 'BAC_05\'  'B06'      'N1' \
+                  'C03'      'P1' \
+                  ;
+Change Class 0;
+Signal 'BAC_06'   'B06'      'S1' \
+                  'B07'      'T2' \
+                  'B07'      'U2' \
+                  'D11'      'C1' \
+                  ;
+Change Class 0;
+Signal 'BAC_06\'  'B06'      'R1' \
+                  'C03'      'S1' \
+                  ;
+Change Class 0;
+Signal 'BAC_07'   'B06'      'U1' \
+                  'C07'      'C1' \
+                  'C07'      'D1' \
+                  'D11'      'E2' \
+                  ;
+Change Class 0;
+Signal 'BAC_07\'  'B06'      'V1' \
+                  'C03'      'U1' \
+                  ;
+Change Class 0;
+Signal 'BAC_08'   'B06'      'D2' \
+                  'C07'      'E2' \
+                  'C07'      'F2' \
+                  'D11'      'J1' \
+                  ;
+Change Class 0;
+Signal 'BAC_08\'  'B06'      'C1' \
+                  'C03'      'F2' \
+                  ;
+Change Class 0;
+Signal 'BAC_09'   'B06'      'F2' \
+                  'C07'      'J1' \
+                  'C07'      'K1' \
+                  ;
+Change Class 0;
+Signal 'BAC_09\'  'B06'      'E2' \
+                  'C03'      'J2' \
+                  ;
+Change Class 0;
+Signal 'BAC_10'   'B06'      'J2' \
+                  ;
+Change Class 0;
+Signal 'BAC_10\'  'A10'      'D2' \
+                  'B06'      'H2' \
+                  'C03'      'L2' \
+                  ;
+Change Class 0;
+Signal 'BAC_11'   'B06'      'L2' \
+                  ;
+Change Class 0;
+Signal 'BAC_11\'  'B06'      'K2' \
+                  'C03'      'N2' \
+                  'C11'      'R2' \
+                  ;
+Change Class 0;
+Signal 'BLK_IN_SYNC' 'C11'      'E2' \
+                  'C13'      'S1' \
+                  'CD18'     'AP2' \
+                  ;
+Change Class 0;
+Signal 'BLK_IN_SYNC\' 'A10'      'A1' \
+                  'C13'      'R1' \
+                  'D10'      'J2' \
+                  ;
+Change Class 0;
+Signal 'BMB_00'   'C06'      'B1' \
+                  'C08'      'B1' \
+                  ;
+Change Class 0;
+Signal 'BMB_00\'  'C02'      'B1' \
+                  'C06'      'A1' \
+                  ;
+Change Class 0;
+Signal 'BMB_01'   'C06'      'E1' \
+                  'C08'      'H1' \
+                  ;
+Change Class 0;
+Signal 'BMB_01\'  'C02'      'E1' \
+                  'C06'      'D1' \
+                  ;
+Change Class 0;
+Signal 'BMB_02'   'C06'      'H1' \
+                  'C08'      'N1' \
+                  ;
+Change Class 0;
+Signal 'BMB_02\'  'C02'      'H1' \
+                  'C06'      'F1' \
+                  ;
+Change Class 0;
+Signal 'BMB_03'   'C06'      'K1' \
+                  'C08'      'E2' \
+                  ;
+Change Class 0;
+Signal 'BMB_03\'  'C02'      'K1' \
+                  'C06'      'J1' \
+                  ;
+Change Class 0;
+Signal 'BMB_04'   'C06'      'M1' \
+                  'C08'      'L2' \
+                  ;
+Change Class 0;
+Signal 'BMB_04\'  'C02'      'M1' \
+                  'C06'      'L1' \
+                  ;
+Change Class 0;
+Signal 'BMB_05'   'C06'      'P1' \
+                  'C08'      'S2' \
+                  ;
+Change Class 0;
+Signal 'BMB_05\'  'C02'      'P1' \
+                  'C06'      'N1' \
+                  ;
+Change Class 0;
+Signal 'BMB_06'   'B08'      'B1' \
+                  'C06'      'S1' \
+                  ;
+Change Class 0;
+Signal 'BMB_06\'  'C02'      'S1' \
+                  'C06'      'R1' \
+                  ;
+Change Class 0;
+Signal 'BMB_07'   'B08'      'E1' \
+                  'C06'      'U1' \
+                  ;
+Change Class 0;
+Signal 'BMB_07\'  'C02'      'U1' \
+                  'C06'      'V1' \
+                  ;
+Change Class 0;
+Signal 'BMB_08'   'B08'      'E2' \
+                  'C06'      'D2' \
+                  ;
+Change Class 0;
+Signal 'BMB_08\'  'C02'      'F2' \
+                  'C06'      'C1' \
+                  ;
+Change Class 0;
+Signal 'BMB_09'   'B08'      'M1' \
+                  'C06'      'F2' \
+                  ;
+Change Class 0;
+Signal 'BMB_09\'  'C02'      'J2' \
+                  'C06'      'E2' \
+                  ;
+Change Class 0;
+Signal 'BMB_10'   'B08'      'R1' \
+                  'C06'      'J2' \
+                  ;
+Change Class 0;
+Signal 'BMB_10\'  'C02'      'L2' \
+                  'C06'      'H2' \
+                  ;
+Change Class 0;
+Signal 'BMB_11'   'B08'      'J1' \
+                  'C06'      'L2' \
+                  ;
+Change Class 0;
+Signal 'BMB_11\'  'C02'      'N2' \
+                  'C06'      'K2' \
+                  ;
+Change Class 0;
+Signal 'BMB_TO_DTB' 'B08'      'A1' \
+                  'B08'      'D1' \
+                  'B08'      'D2' \
+                  'B08'      'H1' \
+                  'B08'      'L1' \
+                  'B08'      'P1' \
+                  'C08'      'A1' \
+                  'C08'      'D2' \
+                  'C08'      'F1' \
+                  'C08'      'K2' \
+                  'C08'      'M1' \
+                  'C08'      'R2' \
+                  'D12'      'L1' \
+                  ;
+Change Class 0;
+Signal 'BMR00'    'A23'      'F1' \
+                  'B14'      'P2' \
+                  ;
+Change Class 0;
+Signal 'BMR00\'   'A23'      'H1' \
+                  'B14'      'R2' \
+                  ;
+Change Class 0;
+Signal 'BMR01'    'A23'      'B1' \
+                  'B14'      'F1' \
+                  ;
+Change Class 0;
+Signal 'BMR01\'   'A23'      'A1' \
+                  'B14'      'E1' \
+                  ;
+Change Class 0;
+Signal 'C00'      'A12'      'L2' \
+                  'A26'      'E2' \
+                  'B12'      'R2' \
+                  'B13'      'S1' \
+                  'C15'      'E2' \
+                  'D10'      'C1' \
+                  ;
+Change Class 0;
+Signal 'C00\'     'A12'      'P2' \
+                  'B13'      'P1' \
+                  'B13'      'S2' \
+                  'B13'      'U1' \
+                  'B15'      'H1' \
+                  'C15'      'J2' \
+                  ;
+Change Class 0;
+Signal 'C01'      'A12'      'M2' \
+                  'A26'      'F2' \
+                  'B10'      'J1' \
+                  'B11'      'V2' \
+                  'B13'      'P2' \
+                  ;
+Change Class 0;
+Signal 'C01\'     'A12'      'R2' \
+                  'B10'      'P1' \
+                  'B13'      'M2' \
+                  'B13'      'R2' \
+                  'C12'      'F2' \
+                  'D10'      'D1' \
+                  ;
+Change Class 0;
+Signal 'CK00'     'A18'      'P2' \
+                  'B14'      'S1' \
+                  ;
+Change Class 0;
+Signal 'CK00\'    'A18'      'N2' \
+                  'B14'      'T2' \
+                  'B14'      'U1' \
+                  ;
+Change Class 0;
+Signal 'CK01'     'B14'      'P1' \
+                  'B14'      'V2' \
+                  'C16'      'N1' \
+                  'C16'      'P1' \
+                  'C16'      'R1' \
+                  ;
+Change Class 0;
+Signal 'CK01\'    'B14'      'V1' \
+                  'C16'      'S2' \
+                  'C16'      'T2' \
+                  'C16'      'U2' \
+                  ;
+Change Class 0;
+Signal 'CLR_DF\'  'A11'      'U1' \
+                  'D11'      'N2' \
+                  ;
+Change Class 0;
+Signal 'CLR_DTF\' 'C13'      'U1' \
+                  'D11'      'U2' \
+                  ;
+Change Class 0;
+Signal 'COMP+SH'  'A12'      'D2' \
+                  'C14'      'B1' \
+                  'C14'      'D2' \
+                  'C14'      'H1' \
+                  'C15'      'K1' \
+                  ;
+Change Class 0;
+Signal 'CSTA'     'C04'      'C1' \
+                  'D16'      'P2' \
+                  ;
+Change Class 0;
+Signal 'CSTA\'    'A10'      'L2' \
+                  'C04'      'D1' \
+                  ;
+Change Class 0;
+Signal 'DATA'     'A26'      'M1' \
+                  'C13'      'F1' \
+                  'CD18'     'BK2' \
+                  ;
+Change Class 0;
+Signal 'DATA\'    'B12'      'N1' \
+                  'C11'      'L2' \
+                  'C13'      'H1' \
+                  'C16'      'D2' \
+                  ;
+Change Class 0;
+Signal 'DB_00\'   'A06'      'B1' \
+                  'B02'      'D1' \
+                  'D06'      'B1' \
+                  ;
+Change Class 0;
+Signal 'DB_01\'   'A06'      'D1' \
+                  'B02'      'E1' \
+                  'D06'      'D1' \
+                  ;
+Change Class 0;
+Signal 'DB_02\'   'A06'      'E1' \
+                  'B02'      'K1' \
+                  'D06'      'E1' \
+                  ;
+Change Class 0;
+Signal 'DB_03\'   'A06'      'H1' \
+                  'B02'      'L1' \
+                  'D06'      'H1' \
+                  ;
+Change Class 0;
+Signal 'DB_04\'   'A06'      'J1' \
+                  'B02'      'R1' \
+                  'D06'      'J1' \
+                  ;
+Change Class 0;
+Signal 'DB_05\'   'A06'      'L1' \
+                  'B02'      'S1' \
+                  'D06'      'L1' \
+                  ;
+Change Class 0;
+Signal 'DB_06\'   'A06'      'M1' \
+                  'B02'      'H2' \
+                  'D06'      'M1' \
+                  ;
+Change Class 0;
+Signal 'DB_07\'   'A06'      'P1' \
+                  'B02'      'J2' \
+                  'D06'      'P1' \
+                  ;
+Change Class 0;
+Signal 'DB_08\'   'A06'      'S1' \
+                  'B02'      'N2' \
+                  'D06'      'S1' \
+                  ;
+Change Class 0;
+Signal 'DB_09\'   'A06'      'D2' \
+                  'B02'      'P2' \
+                  'D06'      'D2' \
+                  ;
+Change Class 0;
+Signal 'DB_10\'   'A06'      'E2' \
+                  'B02'      'U2' \
+                  'D06'      'E2' \
+                  ;
+Change Class 0;
+Signal 'DB_11\'   'A06'      'H2' \
+                  'B02'      'V2' \
+                  'D06'      'H2' \
+                  ;
+Change Class 0;
+Signal 'DF'       'A10'      'P2' \
+                  'A26'      'E1' \
+                  'D11'      'R2' \
+                  ;
+Change Class 0;
+Signal 'DF\'      'B05'      'A1' \
+                  'B12'      'J1' \
+                  'D11'      'P2' \
+                  ;
+Change Class 0;
+Signal 'DTB_00'   'A25'      'A2' \
+                  'C09'      'E1' \
+                  'C10'      'B1' \
+                  'D09'      'D2' \
+                  ;
+Change Class 0;
+Signal 'DTB_00\'  'B02'      'A1' \
+                  'C09'      'F1' \
+                  ;
+Change Class 0;
+Signal 'DTB_01'   'A25'      'B2' \
+                  'C09'      'H2' \
+                  'C10'      'H1' \
+                  'D09'      'K2' \
+                  ;
+Change Class 0;
+Signal 'DTB_01\'  'B02'      'B1' \
+                  'C09'      'J2' \
+                  ;
+Change Class 0;
+Signal 'DTB_02'   'A25'      'C2' \
+                  'C09'      'L1' \
+                  'C10'      'N1' \
+                  'D09'      'R2' \
+                  ;
+Change Class 0;
+Signal 'DTB_02\'  'B02'      'F1' \
+                  'C09'      'M1' \
+                  ;
+Change Class 0;
+Signal 'DTB_03'   'A25'      'D2' \
+                  'C09'      'C1' \
+                  'C09'      'P2' \
+                  ;
+Change Class 0;
+Signal 'DTB_03\'  'B02'      'H1' \
+                  'C09'      'R2' \
+                  ;
+Change Class 0;
+Signal 'DTB_04'   'A25'      'E2' \
+                  'C09'      'E2' \
+                  'C09'      'S1' \
+                  ;
+Change Class 0;
+Signal 'DTB_04\'  'B02'      'M1' \
+                  'C09'      'U1' \
+                  ;
+Change Class 0;
+Signal 'DTB_05'   'A25'      'F2' \
+                  'C09'      'J1' \
+                  'C09'      'V2' \
+                  ;
+Change Class 0;
+Signal 'DTB_05\'  'B02'      'N1' \
+                  'C09'      'V1' \
+                  ;
+Change Class 0;
+Signal 'DTB_06'   'A25'      'H2' \
+                  'B09'      'E1' \
+                  'C09'      'M2' \
+                  ;
+Change Class 0;
+Signal 'DTB_06\'  'B02'      'D2' \
+                  'B09'      'F1' \
+                  ;
+Change Class 0;
+Signal 'DTB_07'   'A25'      'J2' \
+                  'B09'      'V2' \
+                  'C09'      'P1' \
+                  ;
+Change Class 0;
+Signal 'DTB_07\'  'B02'      'E2' \
+                  'B09'      'V1' \
+                  ;
+Change Class 0;
+Signal 'DTB_08'   'A25'      'K2' \
+                  'B09'      'L1' \
+                  'C09'      'T2' \
+                  ;
+Change Class 0;
+Signal 'DTB_08\'  'B02'      'K2' \
+                  'B09'      'M1' \
+                  ;
+Change Class 0;
+Signal 'DTB_09'   'A25'      'L2' \
+                  'B09'      'C1' \
+                  'B09'      'P2' \
+                  ;
+Change Class 0;
+Signal 'DTB_09\'  'B02'      'L2' \
+                  'B09'      'R2' \
+                  ;
+Change Class 0;
+Signal 'DTB_10'   'A25'      'M2' \
+                  'B09'      'S1' \
+                  'B09'      'T2' \
+                  ;
+Change Class 0;
+Signal 'DTB_10\'  'B02'      'R2' \
+                  'B09'      'U1' \
+                  ;
+Change Class 0;
+Signal 'DTB_11'   'A25'      'N2' \
+                  'B09'      'H2' \
+                  'B09'      'J1' \
+                  ;
+Change Class 0;
+Signal 'DTB_11\'  'B02'      'S2' \
+                  'B09'      'J2' \
+                  ;
+Change Class 0;
+Signal 'DTF'      'A08'      'J1' \
+                  'A12'      'M1' \
+                  'A26'      'C1' \
+                  'D11'      'V1' \
+                  ;
+Change Class 0;
+Signal 'DTF\'     'B04'      'L2' \
+                  'B12'      'C1' \
+                  'D11'      'V2' \
+                  ;
+Change Class 0;
+Signal 'DTSF'     'A12'      'R1' \
+                  'C05'      'A1' \
+                  ;
+Change Class 0;
+Signal 'DTSF\'    'C05'      'B1' \
+                  ;
+Change Class 0;
+Signal 'EA_00\'   'A06'      'V2' \
+                  'B05'      'R1' \
+                  'D06'      'V2' \
+                  ;
+Change Class 0;
+Signal 'EA_01\'   'A06'      'T2' \
+                  'B05'      'S1' \
+                  'D06'      'T2' \
+                  ;
+Change Class 0;
+Signal 'EA_02\'   'A06'      'S2' \
+                  'B05'      'H2' \
+                  'D06'      'S2' \
+                  ;
+Change Class 0;
+Signal 'EF'       'A11'      'J1' \
+                  'A12'      'F1' \
+                  'A12'      'L1' \
+                  'A25'      'N1' \
+                  ;
+Change Class 0;
+Signal 'EF\'      'A11'      'K1' \
+                  'B04'      'A1' \
+                  ;
+Change Class 0;
+Signal 'END'      'A08'      'E1' \
+                  'A25'      'R1' \
+                  ;
+Change Class 0;
+Signal 'END\'     'A08'      'F1' \
+                  'A09'      'M2' \
+                  'B04'      'F1' \
+                  ;
+Change Class 0;
+Signal 'ENI'      'A12'      'H1' \
+                  'A25'      'L1' \
+                  'C07'      'L1' \
+                  ;
+Change Class 0;
+Signal 'ENI\'     'B03'      'L2' \
+                  'C07'      'M1' \
+                  ;
+Change Class 0;
+Signal 'FR_00'    'A25'      'F1' \
+                  'B07'      'S1' \
+                  'B12'      'E2' \
+                  'C12'      'U2' \
+                  ;
+Change Class 0;
+Signal 'FR_00\'   'B03'      'N1' \
+                  'B07'      'U1' \
+                  'C12'      'K1' \
+                  'C12'      'P1' \
+                  ;
+Change Class 0;
+Signal 'FR_01'    'A10'      'H1' \
+                  'A25'      'H1' \
+                  'B07'      'V2' \
+                  'B15'      'M1' \
+                  'C15'      'D1' \
+                  'D07'      'V2' \
+                  'D12'      'R1' \
+                  ;
+Change Class 0;
+Signal 'FR_01\'   'A12'      'H2' \
+                  'B03'      'D2' \
+                  'B05'      'E2' \
+                  'B07'      'V1' \
+                  ;
+Change Class 0;
+Signal 'FR_02'    'A25'      'J1' \
+                  'C07'      'E1' \
+                  'D07'      'U2' \
+                  ;
+Change Class 0;
+Signal 'FR_02\'   'B03'      'E2' \
+                  'C07'      'F1' \
+                  ;
+Change Class 0;
+Signal 'FR_03'    'A25'      'K1' \
+                  'B15'      'R2' \
+                  'C07'      'H2' \
+                  'D07'      'V1' \
+                  ;
+Change Class 0;
+Signal 'FR_03\'   'B03'      'K2' \
+                  'B08'      'J2' \
+                  'C07'      'J2' \
+                  ;
+Change Class 1;
+Signal 'GND'      'A02'      'A1' \
+                  'A02'      'C1' \
+                  'A02'      'C2' \
+                  'A02'      'F1' \
+                  'A02'      'F2' \
+                  'A02'      'J2' \
+                  'A02'      'K1' \
+                  'A02'      'L2' \
+                  'A02'      'N1' \
+                  'A02'      'N2' \
+                  'A02'      'R1' \
+                  'A02'      'R2' \
+                  'A02'      'T1' \
+                  'A02'      'U2' \
+                  'A03'      'A1' \
+                  'A03'      'C1' \
+                  'A03'      'C2' \
+                  'A03'      'F1' \
+                  'A03'      'F2' \
+                  'A03'      'J2' \
+                  'A03'      'K1' \
+                  'A03'      'L2' \
+                  'A03'      'N1' \
+                  'A03'      'N2' \
+                  'A03'      'R1' \
+                  'A03'      'R2' \
+                  'A03'      'T1' \
+                  'A03'      'U2' \
+                  'A04'      'A1' \
+                  'A04'      'C1' \
+                  'A04'      'C2' \
+                  'A04'      'F1' \
+                  'A04'      'F2' \
+                  'A04'      'J2' \
+                  'A04'      'K1' \
+                  'A04'      'L2' \
+                  'A04'      'N1' \
+                  'A04'      'N2' \
+                  'A04'      'R1' \
+                  'A04'      'R2' \
+                  'A04'      'T1' \
+                  'A04'      'U2' \
+                  'A05'      'A1' \
+                  'A05'      'B1' \
+                  'A05'      'C1' \
+                  'A05'      'C2' \
+                  'A05'      'D1' \
+                  'A05'      'D2' \
+                  'A05'      'E1' \
+                  'A05'      'F1' \
+                  'A05'      'F2' \
+                  'A05'      'H1' \
+                  'A05'      'J1' \
+                  'A05'      'J2' \
+                  'A05'      'K1' \
+                  'A05'      'L1' \
+                  'A05'      'L2' \
+                  'A05'      'M1' \
+                  'A05'      'N1' \
+                  'A05'      'N2' \
+                  'A05'      'P1' \
+                  'A05'      'R1' \
+                  'A05'      'R2' \
+                  'A05'      'S1' \
+                  'A05'      'T1' \
+                  'A05'      'U2' \
+                  'A06'      'A1' \
+                  'A06'      'C1' \
+                  'A06'      'C2' \
+                  'A06'      'F1' \
+                  'A06'      'F2' \
+                  'A06'      'J2' \
+                  'A06'      'K1' \
+                  'A06'      'K2' \
+                  'A06'      'L2' \
+                  'A06'      'N1' \
+                  'A06'      'N2' \
+                  'A06'      'R1' \
+                  'A06'      'R2' \
+                  'A06'      'T1' \
+                  'A06'      'U2' \
+                  'A07'      'C2' \
+                  'A07'      'T1' \
+                  'A07'      'U1' \
+                  'A08'      'C2' \
+                  'A08'      'T1' \
+                  'A08'      'T2' \
+                  'A09'      'C2' \
+                  'A09'      'T1' \
+                  'A10'      'B2' \
+                  'A10'      'T1' \
+                  'A11'      'C2' \
+                  'A11'      'T1' \
+                  'A12'      'B2' \
+                  'A12'      'T1' \
+                  'A14'      'C2' \
+                  'A14'      'T1' \
+                  'A15'      'C2' \
+                  'A15'      'T1' \
+                  'A16'      'C2' \
+                  'A16'      'T1' \
+                  'A18'      'C2' \
+                  'A20'      'C2' \
+                  'A21'      'C2' \
+                  'A22'      'C2' \
+                  'A22'      'M2' \
+                  'A23'      'C1' \
+                  'A23'      'C2' \
+                  'A23'      'F2' \
+                  'A23'      'J1' \
+                  'A23'      'M2' \
+                  'A23'      'P1' \
+                  'A23'      'T1' \
+                  'A23'      'T2' \
+                  'A23'      'U1' \
+                  'A23'      'V1' \
+                  'A25'      'M1' \
+                  'A26'      'D2' \
+                  'A26'      'U2' \
+                  'A26'      'V1' \
+                  'AB01'     'AC2' \
+                  'AB01'     'AH2' \
+                  'AB01'     'AK2' \
+                  'AB01'     'AL2' \
+                  'AB01'     'AT1' \
+                  'AB01'     'BC2' \
+                  'AB01'     'BD2' \
+                  'AB01'     'BH2' \
+                  'AB01'     'BK2' \
+                  'AB01'     'BL2' \
+                  'AB01'     'BT1' \
+                  'AB19'     'AC2' \
+                  'AB19'     'AJ2' \
+                  'AB19'     'AK2' \
+                  'AB19'     'AR2' \
+                  'AB19'     'AS2' \
+                  'AB19'     'AT2' \
+                  'AB19'     'AU2' \
+                  'AB19'     'BE2' \
+                  'AB19'     'BF2' \
+                  'AB19'     'BL2' \
+                  'AB19'     'BM2' \
+                  'B02'      'C2' \
+                  'B02'      'T1' \
+                  'B02'      'U1' \
+                  'B02'      'V1' \
+                  'B03'      'C2' \
+                  'B03'      'T1' \
+                  'B03'      'U1' \
+                  'B03'      'V1' \
+                  'B04'      'C2' \
+                  'B04'      'T1' \
+                  'B04'      'U1' \
+                  'B04'      'V1' \
+                  'B05'      'C1' \
+                  'B05'      'C2' \
+                  'B05'      'F2' \
+                  'B05'      'J1' \
+                  'B05'      'M2' \
+                  'B05'      'P1' \
+                  'B05'      'T1' \
+                  'B05'      'U1' \
+                  'B05'      'V1' \
+                  'B06'      'C2' \
+                  'B06'      'T1' \
+                  'B07'      'C2' \
+                  'B07'      'T1' \
+                  'B08'      'B2' \
+                  'B08'      'T1' \
+                  'B09'      'C2' \
+                  'B09'      'T1' \
+                  'B10'      'C2' \
+                  'B10'      'T1' \
+                  'B11'      'C2' \
+                  'B11'      'T1' \
+                  'B12'      'C2' \
+                  'B12'      'T1' \
+                  'B13'      'C2' \
+                  'B13'      'T1' \
+                  'B14'      'C2' \
+                  'B14'      'T1' \
+                  'B15'      'B2' \
+                  'B15'      'T1' \
+                  'B16'      'C2' \
+                  'B16'      'T1' \
+                  'B18'      'C2' \
+                  'B20'      'C2' \
+                  'B21'      'C2' \
+                  'B22'      'C2' \
+                  'B22'      'T1' \
+                  'B22'      'T2' \
+                  'B22'      'U1' \
+                  'B22'      'V1' \
+                  'B23'      'C2' \
+                  'C01'      'C2' \
+                  'C01'      'T1' \
+                  'C02'      'C2' \
+                  'C02'      'T1' \
+                  'C03'      'C2' \
+                  'C03'      'T1' \
+                  'C04'      'C2' \
+                  'C04'      'T1' \
+                  'C05'      'C2' \
+                  'C05'      'T1' \
+                  'C06'      'C2' \
+                  'C06'      'T1' \
+                  'C07'      'C2' \
+                  'C07'      'T1' \
+                  'C08'      'C2' \
+                  'C08'      'T1' \
+                  'C09'      'C2' \
+                  'C09'      'T1' \
+                  'C10'      'C2' \
+                  'C10'      'T1' \
+                  'C11'      'B2' \
+                  'C11'      'T1' \
+                  'C12'      'C2' \
+                  'C12'      'T1' \
+                  'C13'      'C2' \
+                  'C13'      'T1' \
+                  'C14'      'C2' \
+                  'C14'      'T1' \
+                  'C15'      'B2' \
+                  'C15'      'T1' \
+                  'C16'      'C2' \
+                  'C16'      'T1' \
+                  'C17'      'C2' \
+                  'C17'      'T1' \
+                  'CD18'     'AC2' \
+                  'CD18'     'AT1' \
+                  'CD18'     'BC2' \
+                  'CD18'     'BT1' \
+                  'D02'      'A1' \
+                  'D02'      'C1' \
+                  'D02'      'C2' \
+                  'D02'      'F1' \
+                  'D02'      'F2' \
+                  'D02'      'J2' \
+                  'D02'      'K1' \
+                  'D02'      'L2' \
+                  'D02'      'N1' \
+                  'D02'      'N2' \
+                  'D02'      'R1' \
+                  'D02'      'R2' \
+                  'D02'      'T1' \
+                  'D02'      'U2' \
+                  'D03'      'A1' \
+                  'D03'      'C1' \
+                  'D03'      'C2' \
+                  'D03'      'F1' \
+                  'D03'      'F2' \
+                  'D03'      'J2' \
+                  'D03'      'K1' \
+                  'D03'      'L2' \
+                  'D03'      'N1' \
+                  'D03'      'N2' \
+                  'D03'      'R1' \
+                  'D03'      'R2' \
+                  'D03'      'T1' \
+                  'D03'      'U2' \
+                  'D04'      'A1' \
+                  'D04'      'C1' \
+                  'D04'      'C2' \
+                  'D04'      'F1' \
+                  'D04'      'F2' \
+                  'D04'      'J2' \
+                  'D04'      'K1' \
+                  'D04'      'L2' \
+                  'D04'      'N1' \
+                  'D04'      'N2' \
+                  'D04'      'R1' \
+                  'D04'      'R2' \
+                  'D04'      'T1' \
+                  'D04'      'U2' \
+                  'D05'      'A1' \
+                  'D05'      'B1' \
+                  'D05'      'C1' \
+                  'D05'      'C2' \
+                  'D05'      'D1' \
+                  'D05'      'D2' \
+                  'D05'      'E1' \
+                  'D05'      'F1' \
+                  'D05'      'F2' \
+                  'D05'      'H1' \
+                  'D05'      'J1' \
+                  'D05'      'J2' \
+                  'D05'      'K1' \
+                  'D05'      'L1' \
+                  'D05'      'L2' \
+                  'D05'      'M1' \
+                  'D05'      'N1' \
+                  'D05'      'N2' \
+                  'D05'      'P1' \
+                  'D05'      'R1' \
+                  'D05'      'R2' \
+                  'D05'      'S1' \
+                  'D05'      'T1' \
+                  'D05'      'U2' \
+                  'D06'      'A1' \
+                  'D06'      'C1' \
+                  'D06'      'C2' \
+                  'D06'      'F1' \
+                  'D06'      'F2' \
+                  'D06'      'J2' \
+                  'D06'      'K1' \
+                  'D06'      'K2' \
+                  'D06'      'L2' \
+                  'D06'      'N1' \
+                  'D06'      'N2' \
+                  'D06'      'R1' \
+                  'D06'      'R2' \
+                  'D06'      'T1' \
+                  'D06'      'U2' \
+                  'D07'      'C2' \
+                  'D07'      'T1' \
+                  'D07'      'U1' \
+                  'D08'      'C2' \
+                  'D08'      'T1' \
+                  'D09'      'C2' \
+                  'D09'      'T1' \
+                  'D10'      'C2' \
+                  'D10'      'T1' \
+                  'D11'      'C2' \
+                  'D11'      'P1' \
+                  'D11'      'T1' \
+                  'D11'      'T2' \
+                  'D12'      'C2' \
+                  'D12'      'T1' \
+                  'D13'      'C2' \
+                  'D13'      'T1' \
+                  'D14'      'C2' \
+                  'D14'      'T1' \
+                  'D15'      'C2' \
+                  'D15'      'T1' \
+                  'D16'      'C2' \
+                  'D16'      'T1' \
+                  'D17'      'C2' \
+                  'D17'      'T1' \
+                  ;
+Change Class 0;
+Signal 'I/O_0_TO_AC\' 'A04'      'P2' \
+                  'B05'      'L1' \
+                  'D04'      'P2' \
+                  ;
+Change Class 0;
+Signal 'I/O_1_TO_CA_INH\' 'A06'      'M2' \
+                  'B05'      'N2' \
+                  'D06'      'M2' \
+                  ;
+Change Class 0;
+Signal 'I/O_ADDR_ACC\' 'A05'      'S2' \
+                  'C02'      'U2' \
+                  'D05'      'S2' \
+                  ;
+Change Class 0;
+Signal 'I/O_B-BRK' 'A05'      'P2' \
+                  'C01'      'D1' \
+                  'D05'      'P2' \
+                  ;
+Change Class 0;
+Signal 'I/O_B-RUN' 'A04'      'S2' \
+                  'C01'      'A1' \
+                  'D04'      'S2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_00' 'A02'      'B1' \
+                  'C03'      'A1' \
+                  'D02'      'B1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_01' 'A02'      'D1' \
+                  'C03'      'D1' \
+                  'D02'      'D1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_02' 'A02'      'E1' \
+                  'C03'      'F1' \
+                  'D02'      'E1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_03' 'A02'      'H1' \
+                  'C03'      'J1' \
+                  'D02'      'H1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_04' 'A02'      'J1' \
+                  'C03'      'L1' \
+                  'D02'      'J1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_05' 'A02'      'L1' \
+                  'C03'      'N1' \
+                  'D02'      'L1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_06' 'A02'      'M1' \
+                  'C03'      'R1' \
+                  'D02'      'M1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_07' 'A02'      'P1' \
+                  'C03'      'V1' \
+                  'D02'      'P1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_08' 'A02'      'S1' \
+                  'C03'      'E2' \
+                  'D02'      'S1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_09' 'A02'      'D2' \
+                  'C03'      'H2' \
+                  'D02'      'D2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_10' 'A02'      'E2' \
+                  'C03'      'K2' \
+                  'D02'      'E2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BAC_11' 'A02'      'H2' \
+                  'C03'      'M2' \
+                  'D02'      'H2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_00' 'A03'      'B1' \
+                  'C02'      'A1' \
+                  'D03'      'B1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_01' 'A03'      'D1' \
+                  'C02'      'D1' \
+                  'D03'      'D1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_02' 'A03'      'E1' \
+                  'C02'      'F1' \
+                  'D03'      'E1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_03' 'A03'      'J1' \
+                  'C02'      'J1' \
+                  'C04'      'D2' \
+                  'C05'      'D2' \
+                  'D03'      'J1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_03\' 'A03'      'H1' \
+                  'D03'      'H1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_04' 'A03'      'M1' \
+                  'C02'      'L1' \
+                  'C04'      'E2' \
+                  'C05'      'E2' \
+                  'D03'      'M1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_04\' 'A03'      'L1' \
+                  'D03'      'L1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_05' 'A03'      'S1' \
+                  'C02'      'N1' \
+                  'C04'      'F2' \
+                  'C05'      'F2' \
+                  'D03'      'S1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_05\' 'A03'      'P1' \
+                  'D03'      'P1' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_06' 'A03'      'E2' \
+                  'C02'      'R1' \
+                  'C04'      'H2' \
+                  'C05'      'H2' \
+                  'D03'      'E2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_06\' 'A03'      'D2' \
+                  'D03'      'D2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_07' 'A03'      'K2' \
+                  'C02'      'V1' \
+                  'C04'      'J2' \
+                  'C05'      'J2' \
+                  'D03'      'K2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_07\' 'A03'      'H2' \
+                  'D03'      'H2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_08' 'A03'      'P2' \
+                  'C02'      'E2' \
+                  'C05'      'K2' \
+                  'D03'      'P2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_08\' 'A03'      'M2' \
+                  'C04'      'K2' \
+                  'D03'      'M2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_09' 'A03'      'S2' \
+                  'C02'      'H2' \
+                  'D03'      'S2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_10' 'A03'      'T2' \
+                  'C02'      'K2' \
+                  'D03'      'T2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BMB_11' 'A03'      'V2' \
+                  'C02'      'M2' \
+                  'D03'      'V2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BRK_RQ\' 'A05'      'K2' \
+                  'B05'      'D1' \
+                  'D05'      'K2' \
+                  ;
+Change Class 0;
+Signal 'I/O_BWC0\' 'A06'      'P2' \
+                  'C01'      'F1' \
+                  'D06'      'P2' \
+                  ;
+Change Class 0;
+Signal 'I/O_DATA_IN' 'A05'      'M2' \
+                  'B05'      'J2' \
+                  'D05'      'M2' \
+                  ;
+Change Class 0;
+Signal 'I/O_INT_RQ\' 'A04'      'M2' \
+                  'B05'      'E1' \
+                  'D04'      'M2' \
+                  ;
+Change Class 0;
+Signal 'I/O_PWR_CLR' 'A02'      'V2' \
+                  'C05'      'H1' \
+                  'D02'      'V2' \
+                  ;
+Change Class 0;
+Signal 'I/O_SKP_RQ\' 'A04'      'K2' \
+                  'B05'      'K1' \
+                  'D04'      'K2' \
+                  ;
+Change Class 0;
+Signal 'I/O_TS03' 'A02'      'S2' \
+                  'C04'      'H1' \
+                  'D02'      'S2' \
+                  ;
+Change Class 0;
+Signal 'I/O_TS04' 'A02'      'T2' \
+                  'D02'      'T2' \
+                  ;
+Change Class 0;
+Signal 'IM_00\'   'A04'      'B1' \
+                  'B03'      'D1' \
+                  'B04'      'D1' \
+                  'D04'      'B1' \
+                  ;
+Change Class 0;
+Signal 'IM_01\'   'A04'      'D1' \
+                  'B03'      'E1' \
+                  'B04'      'E1' \
+                  'D04'      'D1' \
+                  ;
+Change Class 0;
+Signal 'IM_02\'   'A04'      'E1' \
+                  'B03'      'K1' \
+                  'B04'      'K1' \
+                  'D04'      'E1' \
+                  ;
+Change Class 0;
+Signal 'IM_03\'   'A04'      'H1' \
+                  'B03'      'L1' \
+                  'B04'      'L1' \
+                  'D04'      'H1' \
+                  ;
+Change Class 0;
+Signal 'IM_04\'   'A04'      'J1' \
+                  'B03'      'R1' \
+                  'B04'      'R1' \
+                  'D04'      'J1' \
+                  ;
+Change Class 0;
+Signal 'IM_05\'   'A04'      'L1' \
+                  'B03'      'S1' \
+                  'B04'      'S1' \
+                  'D04'      'L1' \
+                  ;
+Change Class 0;
+Signal 'IM_06\'   'A04'      'M1' \
+                  'B03'      'H2' \
+                  'B04'      'H2' \
+                  'D04'      'M1' \
+                  ;
+Change Class 0;
+Signal 'IM_07\'   'A04'      'P1' \
+                  'B03'      'J2' \
+                  'B04'      'J2' \
+                  'D04'      'P1' \
+                  ;
+Change Class 0;
+Signal 'IM_08\'   'A04'      'S1' \
+                  'B03'      'N2' \
+                  'B04'      'N2' \
+                  'D04'      'S1' \
+                  ;
+Change Class 0;
+Signal 'IM_09\'   'A04'      'D2' \
+                  'B03'      'P2' \
+                  'D04'      'D2' \
+                  ;
+Change Class 0;
+Signal 'IM_10\'   'A04'      'E2' \
+                  'D04'      'E2' \
+                  ;
+Change Class 0;
+Signal 'IM_11\'   'A04'      'H2' \
+                  'B04'      'P2' \
+                  'D04'      'H2' \
+                  ;
+Change Class 0;
+Signal 'INT_RQ\'  'A12'      'K1' \
+                  'B05'      'B1' \
+                  ;
+Change Class 0;
+Signal 'IOP_1'    'A02'      'K2' \
+                  'C04'      'P2' \
+                  'C05'      'P2' \
+                  'D02'      'K2' \
+                  ;
+Change Class 0;
+Signal 'IOP_2'    'A02'      'M2' \
+                  'C04'      'R2' \
+                  'C05'      'R2' \
+                  'D02'      'M2' \
+                  ;
+Change Class 0;
+Signal 'IOP_4'    'A02'      'P2' \
+                  'C04'      'S2' \
+                  'C05'      'S2' \
+                  'D02'      'P2' \
+                  ;
+Change Class 0;
+Signal 'LDMF'     'C05'      'E1' \
+                  'D11'      'B1' \
+                  'D11'      'D2' \
+                  'D11'      'H1' \
+                  ;
+Change Class 0;
+Signal 'LDMF\'    'B08'      'P2' \
+                  'C05'      'F1' \
+                  ;
+Change Class 0;
+Signal 'LPB_00'   'A25'      'T2' \
+                  'C08'      'D1' \
+                  'D08'      'E1' \
+                  ;
+Change Class 0;
+Signal 'LPB_00\'  'D08'      'F1' \
+                  'D10'      'M1' \
+                  ;
+Change Class 0;
+Signal 'LPB_01'   'A25'      'U2' \
+                  'C08'      'K1' \
+                  'D08'      'L1' \
+                  ;
+Change Class 0;
+Signal 'LPB_01\'  'D08'      'M1' \
+                  'D10'      'N1' \
+                  ;
+Change Class 0;
+Signal 'LPB_02'   'A25'      'V2' \
+                  'C08'      'R1' \
+                  'D08'      'S1' \
+                  ;
+Change Class 0;
+Signal 'LPB_02\'  'D08'      'U1' \
+                  'D10'      'P1' \
+                  ;
+Change Class 0;
+Signal 'LPB_03'   'A26'      'A2' \
+                  'C08'      'H2' \
+                  'D08'      'H2' \
+                  ;
+Change Class 0;
+Signal 'LPB_03\'  'D08'      'J2' \
+                  'D10'      'R1' \
+                  ;
+Change Class 0;
+Signal 'LPB_04'   'A26'      'B2' \
+                  'C08'      'N2' \
+                  'D08'      'P2' \
+                  ;
+Change Class 0;
+Signal 'LPB_04\'  'D08'      'R2' \
+                  'D10'      'R2' \
+                  ;
+Change Class 0;
+Signal 'LPB_05'   'A26'      'C2' \
+                  'C08'      'U2' \
+                  'D08'      'V2' \
+                  ;
+Change Class 0;
+Signal 'LPB_05\'  'D08'      'V1' \
+                  'D10'      'S2' \
+                  'D10'      'T2' \
+                  'D10'      'U2' \
+                  ;
+Change Class 0;
+Signal 'LPB_NOT_EQ_1' 'A10'      'M1' \
+                  'D10'      'V2' \
+                  ;
+Change Class 0;
+Signal 'LPB_TO_DTB' 'A11'      'T2' \
+                  'C08'      'C1' \
+                  'C08'      'F2' \
+                  'C08'      'J1' \
+                  'C08'      'M2' \
+                  'C08'      'P1' \
+                  'C08'      'T2' \
+                  ;
+Change Class 0;
+Signal 'M-STOP\'  'A11'      'S1' \
+                  'B14'      'D1' \
+                  'C07'      'K2' \
+                  'D14'      'L1' \
+                  ;
+Change Class 0;
+Signal 'MB_TO_DTB\' 'D12'      'F1' \
+                  'D12'      'H1' \
+                  'D12'      'J1' \
+                  'D12'      'K1' \
+                  'D12'      'S1' \
+                  ;
+Change Class 0;
+Signal 'MC00'     'A26'      'S1' \
+                  'B13'      'E1' \
+                  'B13'      'E2' \
+                  'D10'      'D2' \
+                  ;
+Change Class 0;
+Signal 'MC00\'    'A10'      'R1' \
+                  'B11'      'T2' \
+                  'B13'      'F1' \
+                  ;
+Change Class 0;
+Signal 'MC01'     'A08'      'L2' \
+                  'A26'      'T1' \
+                  'B13'      'H2' \
+                  'B13'      'J1' \
+                  'C11'      'E1' \
+                  ;
+Change Class 0;
+Signal 'MC01\'    'B11'      'P1' \
+                  'B13'      'J2' \
+                  'C11'      'B1' \
+                  'D10'      'E2' \
+                  ;
+Change Class 0;
+Signal 'MC02'     'A26'      'U1' \
+                  'B11'      'U2' \
+                  'B13'      'L1' \
+                  'D12'      'D2' \
+                  'D12'      'E2' \
+                  ;
+Change Class 0;
+Signal 'MC02\'    'B13'      'C1' \
+                  'B13'      'M1' \
+                  'D10'      'F2' \
+                  ;
+Change Class 0;
+Signal 'MF00'     'A25'      'V1' \
+                  'D11'      'E1' \
+                  ;
+Change Class 0;
+Signal 'MF00\'    'B04'      'D2' \
+                  'B05'      'M1' \
+                  'D11'      'F1' \
+                  ;
+Change Class 0;
+Signal 'MF01'     'A26'      'A1' \
+                  'D11'      'H2' \
+                  ;
+Change Class 0;
+Signal 'MF01\'    'B04'      'E2' \
+                  'B05'      'N1' \
+                  'D11'      'J2' \
+                  ;
+Change Class 0;
+Signal 'MF02'     'A26'      'B1' \
+                  'D11'      'L1' \
+                  ;
+Change Class 0;
+Signal 'MF02\'    'B04'      'K2' \
+                  'B05'      'D2' \
+                  'D11'      'M1' \
+                  ;
+Change Class 0;
+Signal 'MKT'      'A26'      'H2' \
+                  'B12'      'S2' \
+                  'B13'      'V2' \
+                  'B15'      'L1' \
+                  'C15'      'L2' \
+                  ;
+Change Class 0;
+Signal 'MKTK'     'A08'      'R2' \
+                  'A25'      'P1' \
+                  ;
+Change Class 0;
+Signal 'MKTK\'    'A08'      'P2' \
+                  'A09'      'K2' \
+                  'B04'      'B1' \
+                  ;
+Change Class 0;
+Signal 'MKT\'     'B10'      'R1' \
+                  'B13'      'T2' \
+                  'B13'      'V1' \
+                  'C14'      'N1' \
+                  'D10'      'H2' \
+                  ;
+Change Class 0;
+Signal 'MK_BLK_END' 'A09'      'T2' \
+                  'CD18'     'BU1' \
+                  ;
+Change Class 0;
+Signal 'MK_BLK_END\' 'A09'      'C1' \
+                  'CD18'     'BV1' \
+                  ;
+Change Class 0;
+Signal 'MK_BLK_MK' 'CD18'     'AE2' \
+                  'D10'      'A1' \
+                  'D10'      'B1' \
+                  ;
+Change Class 0;
+Signal 'MK_BLK_MK\' 'CD18'     'AD2' \
+                  ;
+Change Class 0;
+Signal 'MK_BLK_START' 'CD18'     'AJ2' \
+                  ;
+Change Class 0;
+Signal 'MK_BLK_START\' 'A09'      'A1' \
+                  'CD18'     'AF1' \
+                  ;
+Change Class 0;
+Signal 'MK_BLK_SYNC' 'CD18'     'BS2' \
+                  ;
+Change Class 0;
+Signal 'MK_BLK_SYNC\' 'CD18'     'BT2' \
+                  ;
+Change Class 0;
+Signal 'MK_DATA'  'CD18'     'BP2' \
+                  ;
+Change Class 0;
+Signal 'MK_DATA\' 'A09'      'B1' \
+                  'CD18'     'AU2' \
+                  ;
+Change Class 0;
+Signal 'MK_DATA_SYNC' 'CD18'     'AH1' \
+                  ;
+Change Class 0;
+Signal 'MK_DATA_SYNC\' 'CD18'     'AJ1' \
+                  ;
+Change Class 0;
+Signal 'MK_END'   'A08'      'C1' \
+                  'CD18'     'AF2' \
+                  ;
+Change Class 0;
+Signal 'MK_END\'  'A09'      'D1' \
+                  'CD18'     'AH2' \
+                  ;
+Change Class 0;
+Signal 'MOVE'     'D07'      'D2' \
+                  ;
+Change Class 0;
+Signal 'MOVE\'    'A09'      'F2' \
+                  'D07'      'D1' \
+                  ;
+Change Class 0;
+Signal 'MR00'     'A25'      'D1' \
+                  'B07'      'P2' \
+                  'B14'      'M2' \
+                  ;
+Change Class 0;
+Signal 'MR00\'    'B03'      'H1' \
+                  'B07'      'R2' \
+                  ;
+Change Class 0;
+Signal 'MR01'     'A25'      'E1' \
+                  'C07'      'P2' \
+                  'C12'      'B1' \
+                  ;
+Change Class 0;
+Signal 'MR01\'    'B03'      'M1' \
+                  'B14'      'C1' \
+                  'C07'      'R2' \
+                  ;
+Change Class 0;
+Signal 'N$1'      'B06'      'S2' \
+                  'B08'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$2'      'C16'      'K2' \
+                  'C16'      'L2' \
+                  'C16'      'M2' \
+                  'C16'      'N2' \
+                  'C17'      'B1' \
+                  ;
+Change Class 0;
+Signal 'N$3'      'A11'      'R1' \
+                  'B11'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$4'      'D13'      'R2' \
+                  'D13'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$5'      'A16'      'H2' \
+                  'C16'      'V2' \
+                  ;
+Change Class 0;
+Signal 'N$6'      'D12'      'A1' \
+                  'D12'      'B1' \
+                  'D12'      'C1' \
+                  'D12'      'D1' \
+                  'D13'      'F2' \
+                  ;
+Change Class 0;
+Signal 'N$7'      'A12'      'J1' \
+                  'A12'      'N1' \
+                  'A12'      'P1' \
+                  ;
+Change Class 0;
+Signal 'N$8'      'C17'      'R1' \
+                  'D17'      'F2' \
+                  ;
+Change Class 0;
+Signal 'N$10'     'B12'      'M1' \
+                  'C11'      'C1' \
+                  ;
+Change Class 0;
+Signal 'N$11'     'B12'      'R1' \
+                  'C11'      'F1' \
+                  ;
+Change Class 0;
+Signal 'N$12'     'D17'      'D2' \
+                  'D17'      'E2' \
+                  ;
+Change Class 0;
+Signal 'N$13'     'A14'      'H2' \
+                  'A14'      'J2' \
+                  'A14'      'K2' \
+                  'B15'      'F1' \
+                  ;
+Change Class 0;
+Signal 'N$14'     'A16'      'D2' \
+                  'A16'      'E2' \
+                  ;
+Change Class 0;
+Signal 'N$15'     'A16'      'F2' \
+                  'C17'      'C1' \
+                  ;
+Change Class 0;
+Signal 'N$16'     'A15'      'C1' \
+                  'A15'      'D1' \
+                  'C17'      'D2' \
+                  ;
+Change Class 0;
+Signal 'N$17'     'B14'      'N1' \
+                  'B14'      'S2' \
+                  'D15'      'D2' \
+                  ;
+Change Class 0;
+Signal 'N$18'     'A14'      'M2' \
+                  'A14'      'N2' \
+                  'A14'      'P2' \
+                  'B15'      'F2' \
+                  ;
+Change Class 0;
+Signal 'N$19'     'A14'      'H1' \
+                  'A14'      'L2' \
+                  ;
+Change Class 0;
+Signal 'N$20'     'A16'      'R2' \
+                  'A16'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$21'     'A14'      'D2' \
+                  'A14'      'E2' \
+                  ;
+Change Class 0;
+Signal 'N$22'     'A11'      'U2' \
+                  'A14'      'T2' \
+                  ;
+Change Class 0;
+Signal 'N$23'     'A11'      'P2' \
+                  'A14'      'F2' \
+                  ;
+Change Class 0;
+Signal 'N$24'     'B16'      'K2' \
+                  'C16'      'S1' \
+                  ;
+Change Class 0;
+Signal 'N$25'     'A14'      'R2' \
+                  'A14'      'V2' \
+                  ;
+Change Class 0;
+Signal 'N$26'     'A14'      'S1' \
+                  'A14'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$27'     'D15'      'N2' \
+                  'D15'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$28'     'B12'      'L2' \
+                  'C12'      'U1' \
+                  ;
+Change Class 0;
+Signal 'N$29'     'B16'      'D2' \
+                  'B16'      'E2' \
+                  ;
+Change Class 0;
+Signal 'N$30'     'B16'      'F2' \
+                  'C17'      'E2' \
+                  ;
+Change Class 0;
+Signal 'N$31'     'A15'      'D2' \
+                  'A15'      'E2' \
+                  'C17'      'F2' \
+                  ;
+Change Class 0;
+Signal 'N$32'     'B15'      'S1' \
+                  'C17'      'L1' \
+                  ;
+Change Class 0;
+Signal 'N$33'     'A08'      'U2' \
+                  'B10'      'S1' \
+                  ;
+Change Class 0;
+Signal 'N$34'     'C17'      'S2' \
+                  'D16'      'T2' \
+                  ;
+Change Class 0;
+Signal 'N$35'     'A09'      'F1' \
+                  'C10'      'P2' \
+                  ;
+Change Class 0;
+Signal 'N$36'     'C13'      'D2' \
+                  'C14'      'P1' \
+                  ;
+Change Class 0;
+Signal 'N$37'     'B16'      'R2' \
+                  'B16'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$38'     'C15'      'C1' \
+                  'C15'      'H1' \
+                  ;
+Change Class 0;
+Signal 'N$39'     'C15'      'F1' \
+                  'C15'      'J1' \
+                  ;
+Change Class 0;
+Signal 'N$40'     'D14'      'M2' \
+                  'D14'      'V2' \
+                  ;
+Change Class 0;
+Signal 'N$41'     'D14'      'P1' \
+                  'D14'      'V1' \
+                  ;
+Change Class 0;
+Signal 'N$42'     'C11'      'K1' \
+                  'C11'      'L1' \
+                  ;
+Change Class 0;
+Signal 'N$43'     'A12'      'N2' \
+                  'A12'      'T2' \
+                  ;
+Change Class 0;
+Signal 'N$44'     'B12'      'U2' \
+                  'C11'      'N1' \
+                  ;
+Change Class 0;
+Signal 'N$45'     'A12'      'S2' \
+                  'A12'      'U2' \
+                  ;
+Change Class 0;
+Signal 'N$46'     'A09'      'J1' \
+                  'A10'      'K1' \
+                  ;
+Change Class 0;
+Signal 'N$47'     'B11'      'H2' \
+                  'C13'      'C1' \
+                  ;
+Change Class 0;
+Signal 'N$48'     'B12'      'S1' \
+                  'C11'      'P1' \
+                  ;
+Change Class 0;
+Signal 'N$49'     'B11'      'E2' \
+                  'B12'      'L1' \
+                  ;
+Change Class 0;
+Signal 'N$50'     'C12'      'S2' \
+                  'C15'      'P1' \
+                  ;
+Change Class 0;
+Signal 'N$51'     'B12'      'V2' \
+                  'C12'      'F1' \
+                  ;
+Change Class 0;
+Signal 'N$52'     'C11'      'S1' \
+                  'C12'      'E1' \
+                  ;
+Change Class 0;
+Signal 'N$53'     'C15'      'N1' \
+                  'C15'      'R1' \
+                  ;
+Change Class 0;
+Signal 'N$54'     'C11'      'F2' \
+                  'C12'      'H1' \
+                  ;
+Change Class 0;
+Signal 'N$55'     'B11'      'D2' \
+                  'B12'      'E1' \
+                  ;
+Change Class 0;
+Signal 'N$56'     'B11'      'D1' \
+                  'B11'      'F2' \
+                  ;
+Change Class 0;
+Signal 'N$58'     'A11'      'V1' \
+                  'B08'      'V2' \
+                  ;
+Change Class 0;
+Signal 'N$59'     'C11'      'V2' \
+                  'C13'      'V1' \
+                  ;
+Change Class 0;
+Signal 'N$60'     'B12'      'K2' \
+                  'C12'      'N1' \
+                  ;
+Change Class 0;
+Signal 'N$61'     'B12'      'M2' \
+                  'C12'      'V1' \
+                  ;
+Change Class 0;
+Signal 'N$62'     'B12'      'J2' \
+                  'B12'      'N2' \
+                  ;
+Change Class 0;
+Signal 'N$63'     'B13'      'N2' \
+                  'B15'      'K1' \
+                  ;
+Change Class 0;
+Signal 'N$64'     'A12'      'K2' \
+                  'B10'      'C1' \
+                  'B10'      'D1' \
+                  ;
+Change Class 0;
+Signal 'N$65'     'C11'      'S2' \
+                  'C11'      'T2' \
+                  ;
+Change Class 0;
+Signal 'N$66'     'A12'      'F2' \
+                  'B10'      'A1' \
+                  'B10'      'B1' \
+                  ;
+Change Class 0;
+Signal 'N$67'     'D10'      'P2' \
+                  'D14'      'J2' \
+                  ;
+Change Class 0;
+Signal 'N$68'     'D14'      'D2' \
+                  'D14'      'H1' \
+                  ;
+Change Class 0;
+Signal 'N$69'     'D14'      'A1' \
+                  'D14'      'C1' \
+                  ;
+Change Class 0;
+Signal 'N$70'     'B11'      'E1' \
+                  'B11'      'U1' \
+                  ;
+Change Class 0;
+Signal 'N$71'     'B15'      'N1' \
+                  'C17'      'F1' \
+                  ;
+Change Class 0;
+Signal 'N$72'     'B11'      'H1' \
+                  'B11'      'N1' \
+                  ;
+Change Class 0;
+Signal 'N$73'     'B08'      'N1' \
+                  'B09'      'N2' \
+                  ;
+Change Class 0;
+Signal 'N$76'     'C14'      'L2' \
+                  'C15'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$77'     'B10'      'F1' \
+                  'B11'      'J1' \
+                  ;
+Change Class 0;
+Signal 'N$78'     'B10'      'K1' \
+                  'C17'      'H1' \
+                  ;
+Change Class 0;
+Signal 'N$79'     'C13'      'N2' \
+                  'C14'      'N2' \
+                  ;
+Change Class 0;
+Signal 'N$80'     'A09'      'K1' \
+                  'B21'      'U2' \
+                  ;
+Change Class 0;
+Signal 'N$81'     'C12'      'D1' \
+                  'C13'      'M2' \
+                  ;
+Change Class 0;
+Signal 'N$82'     'B11'      'V1' \
+                  'C17'      'J1' \
+                  ;
+Change Class 0;
+Signal 'N$83'     'A08'      'E2' \
+                  'A09'      'L1' \
+                  ;
+Change Class 0;
+Signal 'N$84'     'A10'      'C1' \
+                  'A10'      'D1' \
+                  ;
+Change Class 0;
+Signal 'N$85'     'A10'      'B1' \
+                  'A10'      'F1' \
+                  'B15'      'P2' \
+                  ;
+Change Class 0;
+Signal 'N$86'     'B11'      'L2' \
+                  'B15'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$88'     'D17'      'R2' \
+                  'D17'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$91'     'B08'      'S1' \
+                  'B09'      'R1' \
+                  ;
+Change Class 0;
+Signal 'N$92'     'B08'      'K1' \
+                  'B09'      'F2' \
+                  ;
+Change Class 0;
+Signal 'N$93'     'D08'      'C1' \
+                  'D08'      'D1' \
+                  'D09'      'E1' \
+                  ;
+Change Class 0;
+Signal 'N$94'     'D08'      'E2' \
+                  'D08'      'F2' \
+                  'D09'      'J2' \
+                  ;
+Change Class 0;
+Signal 'N$95'     'D08'      'J1' \
+                  'D08'      'K1' \
+                  'D09'      'L1' \
+                  ;
+Change Class 0;
+Signal 'N$96'     'D08'      'P1' \
+                  'D08'      'R1' \
+                  'D09'      'S1' \
+                  ;
+Change Class 0;
+Signal 'N$97'     'B08'      'C1' \
+                  'B09'      'D1' \
+                  ;
+Change Class 0;
+Signal 'N$99'     'D08'      'T2' \
+                  'D08'      'U2' \
+                  'D09'      'V2' \
+                  ;
+Change Class 0;
+Signal 'N$100'    'D08'      'M2' \
+                  'D08'      'N2' \
+                  'D09'      'P2' \
+                  ;
+Change Class 0;
+Signal 'N$101'    'C17'      'U1' \
+                  'D08'      'D2' \
+                  'D08'      'L2' \
+                  'D08'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$103'    'C17'      'N2' \
+                  'D08'      'B1' \
+                  'D08'      'H1' \
+                  'D08'      'N1' \
+                  ;
+Change Class 0;
+Signal 'N$104'    'C08'      'J2' \
+                  'C09'      'N2' \
+                  ;
+Change Class 0;
+Signal 'N$105'    'A09'      'E1' \
+                  'A11'      'A1' \
+                  ;
+Change Class 0;
+Signal 'N$106'    'A09'      'H2' \
+                  'A11'      'B1' \
+                  ;
+Change Class 0;
+Signal 'N$107'    'A08'      'M2' \
+                  'A09'      'J2' \
+                  ;
+Change Class 0;
+Signal 'N$108'    'C10'      'J2' \
+                  'C17'      'M2' \
+                  ;
+Change Class 0;
+Signal 'N$109'    'C10'      'V2' \
+                  'C17'      'V1' \
+                  ;
+Change Class 0;
+Signal 'N$111'    'A09'      'U2' \
+                  'C17'      'R2' \
+                  ;
+Change Class 0;
+Signal 'N$112'    'B08'      'F1' \
+                  'B09'      'U2' \
+                  ;
+Change Class 0;
+Signal 'N$113'    'B08'      'F2' \
+                  'B09'      'K1' \
+                  ;
+Change Class 0;
+Signal 'N$114'    'A09'      'V2' \
+                  'A11'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$115'    'C15'      'N2' \
+                  'C17'      'P2' \
+                  ;
+Change Class 0;
+Signal 'N$116'    'C13'      'S2' \
+                  'C15'      'K2' \
+                  ;
+Change Class 0;
+Signal 'N$117'    'C12'      'H2' \
+                  'D12'      'M2' \
+                  'D12'      'N2' \
+                  ;
+Change Class 0;
+Signal 'N$118'    'C11'      'K2' \
+                  'D12'      'K2' \
+                  'D12'      'L2' \
+                  ;
+Change Class 0;
+Signal 'N$119'    'C13'      'P2' \
+                  'C15'      'F2' \
+                  ;
+Change Class 0;
+Signal 'N$123'    'A18'      'D2' \
+                  'A18'      'J2' \
+                  'AB19'     'AF2' \
+                  ;
+Change Class 0;
+Signal 'N$124'    'A10'      'S1' \
+                  'A11'      'C1' \
+                  ;
+Change Class 0;
+Signal 'N$125'    'A08'      'P1' \
+                  'A10'      'N1' \
+                  ;
+Change Class 0;
+Signal 'N$126'    'A18'      'E2' \
+                  'A18'      'K2' \
+                  'AB19'     'AH2' \
+                  ;
+Change Class 0;
+Signal 'N$127'    'AB19'     'AN2' \
+                  'B18'      'D2' \
+                  'B18'      'J2' \
+                  ;
+Change Class 0;
+Signal 'N$128'    'A08'      'N1' \
+                  'A11'      'D2' \
+                  ;
+Change Class 0;
+Signal 'N$129'    'C08'      'V2' \
+                  'C09'      'U2' \
+                  ;
+Change Class 0;
+Signal 'N$130'    'AB19'     'AP2' \
+                  'B18'      'E2' \
+                  'B18'      'K2' \
+                  ;
+Change Class 0;
+Signal 'N$131'    'A20'      'D2' \
+                  'A20'      'J2' \
+                  'AB19'     'AV2' \
+                  ;
+Change Class 0;
+Signal 'N$132'    'A08'      'K1' \
+                  'A11'      'E1' \
+                  ;
+Change Class 0;
+Signal 'N$133'    'A20'      'E2' \
+                  'A20'      'K2' \
+                  'AB19'     'BD2' \
+                  ;
+Change Class 0;
+Signal 'N$134'    'AB19'     'BH2' \
+                  'B20'      'D2' \
+                  'B20'      'J2' \
+                  ;
+Change Class 0;
+Signal 'N$135'    'AB19'     'BJ2' \
+                  'B20'      'E2' \
+                  'B20'      'K2' \
+                  ;
+Change Class 0;
+Signal 'N$136'    'A21'      'D2' \
+                  'A21'      'J2' \
+                  'AB19'     'BN2' \
+                  ;
+Change Class 0;
+Signal 'N$137'    'A10'      'V2' \
+                  'A11'      'D1' \
+                  ;
+Change Class 0;
+Signal 'N$138'    'A09'      'S1' \
+                  'A10'      'U2' \
+                  ;
+Change Class 0;
+Signal 'N$139'    'A10'      'S2' \
+                  'A10'      'T2' \
+                  ;
+Change Class 0;
+Signal 'N$140'    'A21'      'E2' \
+                  'A21'      'K2' \
+                  'AB19'     'BP2' \
+                  ;
+Change Class 0;
+Signal 'N$142'    'C08'      'P2' \
+                  'C09'      'R1' \
+                  ;
+Change Class 0;
+Signal 'N$146'    'C08'      'E1' \
+                  'C09'      'D1' \
+                  ;
+Change Class 0;
+Signal 'N$147'    'C08'      'L1' \
+                  'C09'      'F2' \
+                  ;
+Change Class 0;
+Signal 'N$148'    'C08'      'S1' \
+                  'C09'      'K1' \
+                  ;
+Change Class 0;
+Signal 'N$150'    'D16'      'S1' \
+                  'D16'      'S2' \
+                  ;
+Change Class 0;
+Signal 'N$151'    'D16'      'R2' \
+                  'D16'      'V2' \
+                  ;
+Change Class 0;
+Signal 'N$153'    'A10'      'F2' \
+                  'A10'      'J2' \
+                  ;
+Change Class 0;
+Signal 'N$155'    'C10'      'L1' \
+                  'C14'      'E2' \
+                  ;
+Change Class 0;
+Signal 'N$161'    'A09'      'P2' \
+                  'A11'      'F1' \
+                  ;
+Change Class 0;
+Signal 'N$162'    'A11'      'H1' \
+                  'A12'      'B1' \
+                  'A12'      'D1' \
+                  ;
+Change Class 0;
+Signal 'N$185'    'C10'      'E1' \
+                  'C14'      'C1' \
+                  ;
+Change Class 0;
+Signal 'N$193'    'C10'      'S1' \
+                  'C14'      'J1' \
+                  ;
+Change Class 0;
+Signal 'NC'       'A04'      'T2' \
+                  'A04'      'V2' \
+                  'A05'      'E2' \
+                  'A05'      'H2' \
+                  'A05'      'T2' \
+                  'A05'      'V2' \
+                  'A18'      'H2' \
+                  'A18'      'L2' \
+                  'A18'      'M2' \
+                  'A20'      'H2' \
+                  'A20'      'L2' \
+                  'A20'      'M2' \
+                  'A21'      'H2' \
+                  'A21'      'L2' \
+                  'A21'      'M2' \
+                  'A24'      'A2' \
+                  'A24'      'B2' \
+                  'A24'      'J2' \
+                  'A26'      'D1' \
+                  'AB01'     'BN1' \
+                  'AB01'     'BP1' \
+                  'B05'      'L2' \
+                  'B18'      'H2' \
+                  'B18'      'L2' \
+                  'B18'      'M2' \
+                  'B20'      'H2' \
+                  'B20'      'L2' \
+                  'B20'      'M2' \
+                  'B22'      'R2' \
+                  'C02'      'P2' \
+                  'C02'      'S2' \
+                  'C03'      'P2' \
+                  'C03'      'S2' \
+                  'C03'      'U2' \
+                  'C07'      'N1' \
+                  'C07'      'P1' \
+                  'C07'      'R1' \
+                  'C07'      'S2' \
+                  'C07'      'T2' \
+                  'C07'      'U2' \
+                  'D04'      'T2' \
+                  'D04'      'V2' \
+                  'D05'      'E2' \
+                  'D05'      'H2' \
+                  'D05'      'T2' \
+                  'D05'      'V2' \
+                  'D14'      'B1' \
+                  'D14'      'D1' \
+                  'D14'      'E1' \
+                  'D14'      'F1' \
+                  'D14'      'J1' \
+                  'D14'      'N2' \
+                  'D14'      'P2' \
+                  'D14'      'R2' \
+                  'D14'      'S2' \
+                  'D14'      'U2' \
+                  'D15'      'M2' \
+                  'D15'      'P2' \
+                  'D15'      'R2' \
+                  'D15'      'T2' \
+                  ;
+Change Class 0;
+Signal 'PAR'      'A08'      'U1' \
+                  'A25'      'T1' \
+                  ;
+Change Class 0;
+Signal 'PAR\'     'A08'      'S1' \
+                  'A12'      'E1' \
+                  'B04'      'M1' \
+                  ;
+Change Class 0;
+Signal 'PC+ES'    'A11'      'H2' \
+                  'A12'      'C1' \
+                  ;
+Change Class 0;
+Signal 'PC+ES\'   'A11'      'J2' \
+                  'B11'      'R2' \
+                  ;
+Change Class 0;
+Signal 'PWR_CLR'  'C06'      'R2' \
+                  ;
+Change Class 0;
+Signal 'PWR_CLR\' 'A10'      'H2' \
+                  'A10'      'M2' \
+                  'A12'      'A1' \
+                  'A23'      'M1' \
+                  'B08'      'U2' \
+                  'C05'      'K1' \
+                  'C06'      'P2' \
+                  'C11'      'U2' \
+                  'C14'      'R1' \
+                  'D11'      'A1' \
+                  ;
+Change Class 0;
+Signal 'RD+WD'    'A09'      'P1' \
+                  'B08'      'N2' \
+                  'B12'      'D2' \
+                  'C12'      'R1' \
+                  ;
+Change Class 0;
+Signal 'RDD_00'   'A21'      'U2' \
+                  'B09'      'M2' \
+                  'D09'      'C1' \
+                  'D09'      'F2' \
+                  ;
+Change Class 0;
+Signal 'RDD_00\'  'A21'      'V2' \
+                  ;
+Change Class 0;
+Signal 'RDD_01'   'B09'      'P1' \
+                  'B20'      'U2' \
+                  'D09'      'J1' \
+                  'D09'      'M2' \
+                  ;
+Change Class 0;
+Signal 'RDD_01\'  'B20'      'V2' \
+                  ;
+Change Class 0;
+Signal 'RDD_02'   'A20'      'U2' \
+                  'B09'      'E2' \
+                  'D09'      'P1' \
+                  'D09'      'T2' \
+                  ;
+Change Class 0;
+Signal 'RDD_02\'  'A20'      'V2' \
+                  ;
+Change Class 0;
+Signal 'RDMK'     'B18'      'U2' \
+                  'CD18'     'AS2' \
+                  ;
+Change Class 0;
+Signal 'RDMK\'    'B18'      'V2' \
+                  ;
+Change Class 0;
+Signal 'RD_EN'    'C11'      'J1' \
+                  'C11'      'N2' \
+                  ;
+Change Class 0;
+Signal 'RD_EN_LPB_00-02' 'C10'      'D2' \
+                  'C13'      'T2' \
+                  'D09'      'D1' \
+                  'D09'      'K1' \
+                  'D09'      'R1' \
+                  ;
+Change Class 0;
+Signal 'RD_EN_LPB_03-05' 'C10'      'R2' \
+                  'C13'      'R2' \
+                  'D09'      'H2' \
+                  'D09'      'N2' \
+                  'D09'      'U2' \
+                  ;
+Change Class 0;
+Signal 'READ_ALL' 'D07'      'N2' \
+                  ;
+Change Class 0;
+Signal 'READ_ALL\' 'C11'      'M1' \
+                  'D07'      'N1' \
+                  ;
+Change Class 0;
+Signal 'READ_DATA' 'A10'      'L1' \
+                  'C11'      'H1' \
+                  'D07'      'J2' \
+                  ;
+Change Class 0;
+Signal 'READ_DATA\' 'B08'      'L2' \
+                  'B11'      'J2' \
+                  'D07'      'J1' \
+                  ;
+Change Class 0;
+Signal 'RSTA'     'C04'      'A1' \
+                  ;
+Change Class 0;
+Signal 'RSTA\'    'B03'      'C1' \
+                  'B03'      'F2' \
+                  'B03'      'J1' \
+                  'B03'      'M2' \
+                  'B03'      'P1' \
+                  'C04'      'B1' \
+                  ;
+Change Class 0;
+Signal 'RSTB'     'C05'      'C1' \
+                  ;
+Change Class 0;
+Signal 'RSTB\'    'B04'      'C1' \
+                  'B04'      'F2' \
+                  'B04'      'J1' \
+                  'B04'      'M2' \
+                  'B04'      'P1' \
+                  'C05'      'D1' \
+                  ;
+Change Class 0;
+Signal 'SE'       'D07'      'L2' \
+                  ;
+Change Class 0;
+Signal 'SEARCH'   'C11'      'D2' \
+                  'D07'      'E2' \
+                  ;
+Change Class 0;
+Signal 'SEARCH\'  'B05'      'K2' \
+                  'B11'      'K2' \
+                  'D07'      'E1' \
+                  ;
+Change Class 0;
+Signal 'SEL'      'A08'      'H2' \
+                  'A25'      'S1' \
+                  ;
+Change Class 0;
+Signal 'SEL\'     'A08'      'J2' \
+                  'A09'      'N2' \
+                  'B04'      'H1' \
+                  ;
+Change Class 0;
+Signal 'SE\'      'A09'      'H1' \
+                  'D07'      'L1' \
+                  ;
+Change Class 0;
+Signal 'SHIFT_CK' 'C17'      'K1' \
+                  'CD18'     'BR2' \
+                  ;
+Change Class 0;
+Signal 'SH_DTB'   'A10'      'R2' \
+                  'B09'      'B1' \
+                  'B09'      'D2' \
+                  'B09'      'H1' \
+                  'B09'      'L2' \
+                  'B09'      'N1' \
+                  'B09'      'S2' \
+                  'B10'      'E1' \
+                  'C09'      'B1' \
+                  'C09'      'D2' \
+                  'C09'      'H1' \
+                  'C09'      'L2' \
+                  'C09'      'N1' \
+                  'C09'      'S2' \
+                  ;
+Change Class 0;
+Signal 'SH_EN'    'A11'      'N2' \
+                  'A12'      'E2' \
+                  'C10'      'A1' \
+                  'C10'      'F1' \
+                  'C10'      'M1' \
+                  ;
+Change Class 0;
+Signal 'SH_EN\'   'A11'      'M2' \
+                  'A12'      'V2' \
+                  'C10'      'C1' \
+                  'C10'      'J1' \
+                  'C10'      'P1' \
+                  ;
+Change Class 0;
+Signal 'SH_ST'    'C17'      'A1' \
+                  'CD18'     'AM1' \
+                  ;
+Change Class 0;
+Signal 'SH_ST-B'  'C16'      'P2' \
+                  'CD18'     'BC1' \
+                  ;
+Change Class 0;
+Signal 'SKP_RQ\'  'A12'      'S1' \
+                  'B05'      'F1' \
+                  ;
+Change Class 0;
+Signal 'SP_DY'    'D14'      'H2' \
+                  ;
+Change Class 0;
+Signal 'SP_DY\'   'C14'      'M2' \
+                  'D14'      'F2' \
+                  ;
+Change Class 0;
+Signal 'ST_BLK_MK' 'A26'      'K1' \
+                  'C13'      'E2' \
+                  'CD18'     'AR2' \
+                  ;
+Change Class 0;
+Signal 'ST_BLK_MK\' 'A09'      'D2' \
+                  'A09'      'M1' \
+                  'C13'      'F2' \
+                  ;
+Change Class 0;
+Signal 'ST_CK'    'A10'      'P1' \
+                  'A26'      'P1' \
+                  'C13'      'J1' \
+                  'CD18'     'BR1' \
+                  'D17'      'M2' \
+                  'D17'      'N2' \
+                  'D17'      'P2' \
+                  ;
+Change Class 0;
+Signal 'ST_CK\'   'C13'      'K1' \
+                  'C16'      'E2' \
+                  ;
+Change Class 0;
+Signal 'ST_CK_0P' 'B12'      'H2' \
+                  'C12'      'S1' \
+                  'C13'      'B1' \
+                  ;
+Change Class 0;
+Signal 'ST_CK_0P\' 'C13'      'A1' \
+                  'D17'      'L2' \
+                  ;
+Change Class 0;
+Signal 'ST_DATA'  'B12'      'A1' \
+                  'C13'      'H2' \
+                  'C16'      'J2' \
+                  ;
+Change Class 0;
+Signal 'ST_DATA\' 'C13'      'J2' \
+                  ;
+Change Class 0;
+Signal 'ST_FINAL' 'A09'      'S2' \
+                  'A26'      'N1' \
+                  'C11'      'D1' \
+                  'C13'      'L1' \
+                  'CD18'     'BL2' \
+                  ;
+Change Class 0;
+Signal 'ST_FINAL\' 'C11'      'M2' \
+                  'C13'      'M1' \
+                  'C16'      'F2' \
+                  ;
+Change Class 0;
+Signal 'ST_IDLE'  'A26'      'R1' \
+                  'C13'      'K2' \
+                  'CD18'     'BD2' \
+                  ;
+Change Class 0;
+Signal 'ST_IDLE\' 'A09'      'E2' \
+                  'A09'      'N1' \
+                  'C13'      'L2' \
+                  ;
+Change Class 0;
+Signal 'ST_REV_CK' 'A26'      'L1' \
+                  'B11'      'S1' \
+                  'C11'      'A1' \
+                  'C13'      'D1' \
+                  'CD18'     'BS1' \
+                  'D12'      'F2' \
+                  'D12'      'H2' \
+                  ;
+Change Class 0;
+Signal 'ST_REV_CK\' 'C13'      'E1' \
+                  ;
+Change Class 0;
+Signal 'SWTM'     'A26'      'V2' \
+                  'B06'      'P2' \
+                  'B08'      'V1' \
+                  'B11'      'B1' \
+                  'C10'      'N2' \
+                  'C12'      'P2' \
+                  'C15'      'L1' \
+                  ;
+Change Class 0;
+Signal 'SWTM\'    'B06'      'R2' \
+                  'C10'      'L2' \
+                  ;
+Change Class 0;
+Signal 'SYNC'     'B10'      'D2' \
+                  'B10'      'E2' \
+                  'CD18'     'BN2' \
+                  ;
+Change Class 0;
+Signal 'SYNC-P\'  'B10'      'J2' \
+                  'B13'      'A1' \
+                  'B13'      'K2' \
+                  ;
+Change Class 0;
+Signal 'SYNC\'    'CD18'     'BM2' \
+                  ;
+Change Class 0;
+Signal 'SYNC_EN'  'B11'      'M2' \
+                  'CD18'     'BH1' \
+                  ;
+Change Class 0;
+Signal 'T3'       'C17'      'S1' \
+                  'D12'      'N1' \
+                  'D12'      'P1' \
+                  ;
+Change Class 0;
+Signal 'TIM'      'A08'      'L1' \
+                  'A25'      'U1' \
+                  ;
+Change Class 0;
+Signal 'TIM\'     'A08'      'M1' \
+                  'A09'      'L2' \
+                  'B04'      'N1' \
+                  ;
+Change Class 0;
+Signal 'TM_EN'    'A18'      'R2' \
+                  'B18'      'R2' \
+                  'C13'      'N1' \
+                  'C15'      'S1' \
+                  'C16'      'M1' \
+                  'C16'      'R2' \
+                  ;
+Change Class 0;
+Signal 'TM_EN\'   'B15'      'D1' \
+                  'B15'      'D2' \
+                  'C12'      'C1' \
+                  'C12'      'K2' \
+                  'C13'      'P1' \
+                  'D15'      'J2' \
+                  'D15'      'K2' \
+                  ;
+Change Class 0;
+Signal 'TP00'     'A08'      'B1' \
+                  'A15'      'L1' \
+                  'A16'      'M2' \
+                  'A16'      'N2' \
+                  'A16'      'P2' \
+                  'B10'      'F2' \
+                  'B10'      'H2' \
+                  'B10'      'N1' \
+                  'B13'      'B1' \
+                  'B13'      'D2' \
+                  'B13'      'H1' \
+                  'B15'      'J1' \
+                  'C15'      'E1' \
+                  ;
+Change Class 0;
+Signal 'TP00\'    'A15'      'E1' \
+                  'A15'      'F1' \
+                  'A15'      'H1' \
+                  'A15'      'J1' \
+                  'A15'      'K1' \
+                  'B13'      'N1' \
+                  'CD18'     'AN1' \
+                  ;
+Change Class 0;
+Signal 'TP00_A'   'A15'      'S1' \
+                  'B10'      'H1' \
+                  'C12'      'E2' \
+                  ;
+Change Class 0;
+Signal 'TP00_A\'  'A15'      'M1' \
+                  'A15'      'N1' \
+                  'A15'      'P1' \
+                  'A15'      'R1' \
+                  'A16'      'L2' \
+                  ;
+Change Class 0;
+Signal 'TP0_XTLK_DY\' 'A11'      'R2' \
+                  'A15'      'F2' \
+                  'A16'      'J2' \
+                  'A16'      'K2' \
+                  ;
+Change Class 0;
+Signal 'TP01'     'A12'      'J2' \
+                  'A15'      'P2' \
+                  'B16'      'M2' \
+                  'B16'      'N2' \
+                  'B16'      'P2' \
+                  'C11'      'J2' \
+                  'C15'      'B1' \
+                  'CD18'     'BF1' \
+                  ;
+Change Class 0;
+Signal 'TP01\'    'A15'      'J2' \
+                  'A15'      'K2' \
+                  'A15'      'L2' \
+                  'A15'      'M2' \
+                  'A15'      'N2' \
+                  'B13'      'L2' \
+                  ;
+Change Class 0;
+Signal 'TP01_A'   'A15'      'V2' \
+                  'B12'      'T2' \
+                  'C15'      'M2' \
+                  ;
+Change Class 0;
+Signal 'TP01_A\'  'A15'      'R2' \
+                  'A15'      'S2' \
+                  'A15'      'T2' \
+                  'A15'      'U2' \
+                  'B16'      'L2' \
+                  ;
+Change Class 0;
+Signal 'TP1_XTLK_DY\' 'A11'      'V2' \
+                  'A15'      'B1' \
+                  'B16'      'H2' \
+                  'B16'      'J2' \
+                  ;
+Change Class 0;
+Signal 'TS03\'    'C04'      'K1' \
+                  'D17'      'H2' \
+                  'D17'      'J2' \
+                  'D17'      'K2' \
+                  ;
+Change Class 0;
+Signal 'T_00\'    'A24'      'V2' \
+                  'B22'      'V2' \
+                  'B23'      'V2' \
+                  ;
+Change Class 0;
+Signal 'T_01\'    'A23'      'S1' \
+                  'A24'      'M2' \
+                  'B23'      'M2' \
+                  ;
+Change Class 0;
+Signal 'T_02\'    'A23'      'H2' \
+                  'A24'      'N2' \
+                  'B23'      'N2' \
+                  ;
+Change Class 0;
+Signal 'T_03\'    'A23'      'J2' \
+                  'A24'      'P2' \
+                  'B23'      'P2' \
+                  ;
+Change Class 0;
+Signal 'T_04\'    'A23'      'N2' \
+                  'A24'      'R2' \
+                  'B23'      'R2' \
+                  ;
+Change Class 0;
+Signal 'T_05\'    'A23'      'P2' \
+                  'A24'      'S2' \
+                  'B23'      'S2' \
+                  ;
+Change Class 0;
+Signal 'T_06\'    'A23'      'U2' \
+                  'A24'      'T2' \
+                  'B23'      'T2' \
+                  ;
+Change Class 0;
+Signal 'T_07\'    'A23'      'V2' \
+                  'A24'      'U2' \
+                  'B23'      'U2' \
+                  ;
+Change Class 0;
+Signal 'T_FWD\'   'A23'      'K1' \
+                  'A24'      'E2' \
+                  'B23'      'H2' \
+                  ;
+Change Class 0;
+Signal 'T_GO\'    'A23'      'D1' \
+                  'A24'      'C2' \
+                  'B23'      'D2' \
+                  ;
+Change Class 0;
+Signal 'T_PWR_CLR\' 'A23'      'R1' \
+                  'A24'      'H2' \
+                  'B23'      'K2' \
+                  ;
+Change Class 0;
+Signal 'T_REV\'   'A23'      'L1' \
+                  'A24'      'F2' \
+                  'B23'      'J2' \
+                  ;
+Change Class 0;
+Signal 'T_SINGLE_UNIT\' 'A24'      'K2' \
+                  'B21'      'T2' \
+                  ;
+Change Class 0;
+Signal 'T_STOP\'  'A23'      'E1' \
+                  'A24'      'D2' \
+                  'B23'      'E2' \
+                  ;
+Change Class 0;
+Signal 'T_TRK'    'A18'      'U2' \
+                  'B15'      'E2' \
+                  'C15'      'R2' \
+                  'D14'      'S1' \
+                  'D14'      'U1' \
+                  ;
+Change Class 0;
+Signal 'T_TRK\'   'A18'      'V2' \
+                  'B15'      'E1' \
+                  ;
+Change Class 0;
+Signal 'T_WRITE_OK\' 'A22'      'H2' \
+                  'A24'      'L2' \
+                  'B23'      'L2' \
+                  ;
+Change Class 0;
+Signal 'U+M_DY'   'D14'      'K1' \
+                  ;
+Change Class 0;
+Signal 'U+M_DY\'  'C12'      'A1' \
+                  'C12'      'R2' \
+                  'D14'      'E2' \
+                  'D14'      'N1' \
+                  ;
+Change Class 0;
+Signal 'USR_00'   'A07'      'V2' \
+                  'A25'      'A1' \
+                  'B07'      'E1' \
+                  ;
+Change Class 0;
+Signal 'USR_00\'  'B03'      'A1' \
+                  'B07'      'F1' \
+                  ;
+Change Class 0;
+Signal 'USR_01'   'A07'      'U2' \
+                  'A25'      'B1' \
+                  'B07'      'H2' \
+                  ;
+Change Class 0;
+Signal 'USR_01\'  'B03'      'B1' \
+                  'B07'      'J2' \
+                  ;
+Change Class 0;
+Signal 'USR_02'   'A07'      'V1' \
+                  'A25'      'C1' \
+                  'B07'      'L1' \
+                  ;
+Change Class 0;
+Signal 'USR_02\'  'B03'      'F1' \
+                  'B07'      'M1' \
+                  ;
+Change Class 0;
+Signal 'UTS'      'A10'      'E1' \
+                  'A26'      'J1' \
+                  'B15'      'P1' \
+                  'C14'      'R2' \
+                  ;
+Change Class 0;
+Signal 'UTS\'     'C12'      'L2' \
+                  'C14'      'P2' \
+                  'C15'      'P2' \
+                  'C16'      'A1' \
+                  'C16'      'B1' \
+                  'C16'      'C1' \
+                  'C16'      'D1' \
+                  'C16'      'F1' \
+                  'C16'      'H1' \
+                  'C16'      'J1' \
+                  'C16'      'K1' \
+                  ;
+Change Class 1;
+Signal 'VCC'      'A07'      'A2' \
+                  'A08'      'A2' \
+                  'A09'      'A2' \
+                  'A10'      'A2' \
+                  'A11'      'A2' \
+                  'A12'      'A2' \
+                  'A14'      'A2' \
+                  'A15'      'A2' \
+                  'A16'      'A2' \
+                  'A18'      'A2' \
+                  'A20'      'A2' \
+                  'A21'      'A2' \
+                  'A22'      'A2' \
+                  'A23'      'A2' \
+                  'AB01'     'AA2' \
+                  'AB01'     'AB1' \
+                  'AB01'     'AC1' \
+                  'AB01'     'AD1' \
+                  'AB01'     'AE1' \
+                  'AB01'     'AF1' \
+                  'AB01'     'AH1' \
+                  'AB01'     'AJ1' \
+                  'AB01'     'AK1' \
+                  'AB01'     'AL1' \
+                  'AB01'     'BA2' \
+                  'AB01'     'BB1' \
+                  'AB01'     'BC1' \
+                  'AB01'     'BD1' \
+                  'AB01'     'BE1' \
+                  'B02'      'A2' \
+                  'B03'      'A2' \
+                  'B04'      'A2' \
+                  'B05'      'A2' \
+                  'B06'      'A2' \
+                  'B07'      'A2' \
+                  'B08'      'A2' \
+                  'B09'      'A2' \
+                  'B10'      'A2' \
+                  'B11'      'A2' \
+                  'B12'      'A2' \
+                  'B13'      'A2' \
+                  'B14'      'A2' \
+                  'B15'      'A2' \
+                  'B16'      'A2' \
+                  'B18'      'A2' \
+                  'B20'      'A2' \
+                  'B21'      'A2' \
+                  'B22'      'A2' \
+                  'C01'      'A2' \
+                  'C02'      'A2' \
+                  'C03'      'A2' \
+                  'C04'      'A2' \
+                  'C05'      'A2' \
+                  'C06'      'A2' \
+                  'C07'      'A2' \
+                  'C08'      'A2' \
+                  'C09'      'A2' \
+                  'C10'      'A2' \
+                  'C11'      'A2' \
+                  'C12'      'A2' \
+                  'C13'      'A2' \
+                  'C14'      'A2' \
+                  'C15'      'A2' \
+                  'C16'      'A2' \
+                  'C17'      'A2' \
+                  'CD18'     'AA2' \
+                  'CD18'     'BA2' \
+                  'D07'      'A2' \
+                  'D08'      'A2' \
+                  'D09'      'A2' \
+                  'D10'      'A2' \
+                  'D11'      'A2' \
+                  'D12'      'A2' \
+                  'D13'      'A2' \
+                  'D14'      'A2' \
+                  'D15'      'A2' \
+                  'D16'      'A2' \
+                  'D17'      'A2' \
+                  ;
+Change Class 0;
+Signal 'W+UTS'    'A15'      'A1' \
+                  'A15'      'H2' \
+                  'C12'      'M2' \
+                  ;
+Change Class 0;
+Signal 'W-INH'    'A08'      'V1' \
+                  ;
+Change Class 0;
+Signal 'W-INH\'   'A08'      'V2' \
+                  'B11'      'L1' \
+                  'B12'      'H1' \
+                  ;
+Change Class 0;
+Signal 'W01'      'A26'      'J2' \
+                  'CD18'     'BJ2' \
+                  ;
+Change Class 0;
+Signal 'W01-W05'  'CD18'     'AK1' \
+                  ;
+Change Class 0;
+Signal 'W02'      'A26'      'K2' \
+                  'CD18'     'BV2' \
+                  ;
+Change Class 0;
+Signal 'W03'      'A26'      'L2' \
+                  'CD18'     'BE2' \
+                  ;
+Change Class 0;
+Signal 'W04'      'A26'      'M2' \
+                  'CD18'     'AT2' \
+                  ;
+Change Class 0;
+Signal 'W05'      'A26'      'N2' \
+                  'CD18'     'BU2' \
+                  ;
+Change Class 0;
+Signal 'W06'      'A26'      'P2' \
+                  'CD18'     'AM2' \
+                  ;
+Change Class 0;
+Signal 'W07'      'A26'      'R2' \
+                  'CD18'     'AK2' \
+                  ;
+Change Class 0;
+Signal 'W08'      'A26'      'S2' \
+                  'CD18'     'AL1' \
+                  ;
+Change Class 0;
+Signal 'W09'      'A26'      'T2' \
+                  'CD18'     'BF2' \
+                  ;
+Change Class 0;
+Signal 'WB00'     'A21'      'N2' \
+                  'A25'      'P2' \
+                  'B18'      'N2' \
+                  'C14'      'F1' \
+                  'D09'      'A1' \
+                  ;
+Change Class 0;
+Signal 'WB00\'    'A21'      'P2' \
+                  'B18'      'P2' \
+                  'C10'      'D1' \
+                  'C14'      'E1' \
+                  ;
+Change Class 0;
+Signal 'WB01'     'A25'      'R2' \
+                  'B20'      'N2' \
+                  'C14'      'J2' \
+                  'D09'      'F1' \
+                  ;
+Change Class 0;
+Signal 'WB01\'    'B20'      'P2' \
+                  'C10'      'K1' \
+                  'C14'      'H2' \
+                  ;
+Change Class 0;
+Signal 'WB02'     'A20'      'N2' \
+                  'A25'      'S2' \
+                  'C14'      'M1' \
+                  'D09'      'M1' \
+                  ;
+Change Class 0;
+Signal 'WB02\'    'A20'      'P2' \
+                  'C10'      'R1' \
+                  'C14'      'L1' \
+                  ;
+Change Class 0;
+Signal 'WC'       'A26'      'H1' \
+                  'B10'      'M1' \
+                  'B11'      'K1' \
+                  'D11'      'S1' \
+                  ;
+Change Class 0;
+Signal 'WC0'      'C01'      'H1' \
+                  'C06'      'M2' \
+                  ;
+Change Class 0;
+Signal 'WC0\'     'C06'      'N2' \
+                  'D11'      'R1' \
+                  ;
+Change Class 0;
+Signal 'WC\'      'B12'      'F2' \
+                  'C12'      'T2' \
+                  'D11'      'M2' \
+                  'D11'      'U1' \
+                  ;
+Change Class 0;
+Signal 'WRITE_ALL' 'A08'      'S2' \
+                  'B11'      'M1' \
+                  'B12'      'F1' \
+                  'D07'      'M2' \
+                  ;
+Change Class 0;
+Signal 'WRITE_ALL\' 'D07'      'M1' \
+                  ;
+Change Class 0;
+Signal 'WRITE_DATA' 'A09'      'R2' \
+                  'B11'      'R1' \
+                  'B12'      'B1' \
+                  'B12'      'P1' \
+                  'D07'      'F2' \
+                  ;
+Change Class 0;
+Signal 'WRITE_DATA\' 'B08'      'M2' \
+                  'D07'      'F1' \
+                  ;
+Change Class 0;
+Signal 'WRITE_OK' 'A22'      'D2' \
+                  'B11'      'C1' \
+                  'B15'      'R1' \
+                  'C17'      'H2' \
+                  ;
+Change Class 0;
+Signal 'WRITE_OK+UTS' 'B12'      'D1' \
+                  'B12'      'K1' \
+                  'C17'      'M1' \
+                  ;
+Change Class 0;
+Signal 'WRITE_OK\' 'A10'      'J1' \
+                  'C17'      'J2' \
+                  ;
+Change Class 0;
+Signal 'WRTM'     'B11'      'A1' \
+                  'C10'      'K2' \
+                  'C12'      'N2' \
+                  'D07'      'H2' \
+                  ;
+Change Class 0;
+Signal 'WRTM+FR03' 'B08'      'K2' \
+                  'C12'      'M1' \
+                  'C12'      'V2' \
+                  ;
+Change Class 0;
+Signal 'WRTM\'    'B08'      'H2' \
+                  'C10'      'M2' \
+                  'D07'      'H1' \
+                  ;
+Change Class 0;
+Signal 'WR_EN'    'A20'      'R2' \
+                  'A21'      'R2' \
+                  'A26'      'F1' \
+                  'B20'      'R2' \
+                  'C10'      'H2' \
+                  'C10'      'U2' \
+                  'C12'      'D2' \
+                  'C14'      'U1' \
+                  'C15'      'A1' \
+                  'C15'      'M1' \
+                  'D09'      'B1' \
+                  'D09'      'E2' \
+                  'D09'      'H1' \
+                  'D09'      'L2' \
+                  'D09'      'N1' \
+                  'D09'      'S2' \
+                  ;
+Change Class 0;
+Signal 'WR_EN\'   'B11'      'F1' \
+                  'C11'      'H2' \
+                  'C12'      'J2' \
+                  'C14'      'S1' \
+                  'C15'      'D2' \
+                  'C15'      'H2' \
+                  ;
+Change Class 0;
+Signal 'XOR_TO_LPB' 'C10'      'E2' \
+                  'C10'      'F2' \
+                  'C10'      'S2' \
+                  'C10'      'T2' \
+                  'D12'      'P2' \
+                  ;
+Change Class 0;
+Signal 'XSAD'     'A09'      'R1' \
+                  'A11'      'L2' \
+                  ;
+Change Class 0;
+Signal 'XSAD\'    'A11'      'K2' \
+                  'D13'      'L2' \
+                  ;
+Change Class 0;
+Signal 'XSA_DY'   'A08'      'D2' \
+                  'B14'      'B1' \
+                  'B14'      'L2' \
+                  'C17'      'T2' \
+                  ;
+Change Class 0;
+Signal 'XSTA'     'B07'      'B1' \
+                  'B07'      'D2' \
+                  'B07'      'H1' \
+                  'B07'      'L2' \
+                  'B07'      'N1' \
+                  'B07'      'S2' \
+                  'C04'      'E1' \
+                  'C07'      'B1' \
+                  'C07'      'D2' \
+                  'C07'      'H1' \
+                  'C07'      'L2' \
+                  'D11'      'N1' \
+                  'D13'      'M2' \
+                  'D13'      'N2' \
+                  'D13'      'P2' \
+                  ;
+Change Class 0;
+Signal 'XSTA\'    'B08'      'R2' \
+                  'C04'      'F1' \
+                  'D13'      'H2' \
+                  'D13'      'J2' \
+                  'D13'      'K2' \
+                  'D14'      'K2' \
+                  'D14'      'L2' \
+                  'D16'      'M2' \
+                  'D16'      'N2' \
+                  ;
