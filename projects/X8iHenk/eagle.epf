@@ -221,8 +221,8 @@ UsedLibrary="C:/Program Files/EAGLE-4.11/lbr/zilog.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="-31712 -30344 -29809 -29245"
-State=1
+Loc="-31692 -30229 -29789 -29130"
+State=0
 Number=1
 File="DeMux3.sch"
 View="-80122 -55229 3966456 2696891"
@@ -257,12 +257,12 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Sheet=3
+Sheet=1
 
 [Win_2]
 Type="Board Editor"
-Loc="-31712 -30344 -29844 -29414"
-State=1
+Loc="-31692 -30229 -29824 -29299"
+State=0
 Number=2
 File="DeMux3.brd"
 View="-75919 -53596 3871885 1428826"
@@ -300,7 +300,7 @@ Layer=16
 
 [Win_3]
 Type="Control Panel"
-Loc="832 178 1593 802"
+Loc="62 352 823 976"
 State=2
 Number=0
 
