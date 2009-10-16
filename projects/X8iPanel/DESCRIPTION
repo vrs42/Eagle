@@ -15,6 +15,10 @@ surface mount ribbon connectors.</LI>
 headers for ribbon connection, as well as DEC's original surface mount.</LI>
 <LI><b>8iPanelLED</b> is a version of 8iPanel with current limiting resistors suitable for
 the use of LEDs instead of indicator lamps.</LI>
+<LI><b>LEDPanel</b> is a version of 8iPanel with current limiting resistors suitable for
+the use of LEDs instead of indicator lamps.</LI>
+<LI><b>LEDPanelmpsl</b> is a version of 8iPanel with current limiting resistors suitable for
+the use of LEDs instead of indicator lamps.</LI>
 <LI><b>protol</b> is a version of my indicator panel, broken in two, so it
 could be ordered from a protoype shop.</LI>
 <LI><b>proto2.brd</b> is a panelized set of six M900 boards, suitable
