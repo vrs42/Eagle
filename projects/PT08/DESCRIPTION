@@ -1,3 +1,7 @@
 PT08 TTY Interface
 <UL>
 <LI><b>PT08</b> is a drawing of DEC's PT08 TTY Interface for the PDP-8/S.</LI>
+<LI><b>PT08pos</b> is a thought experiment about a Posibus variation on DEC's PT08 TTY Interface for the PDP-8/S.</LI>
+<LI><b>PT08ttl</b> is a Posibus TTY TTY Interface implemented in TTL.</LI>
+<LI><b>PT08ttl2</b> is a Posibus TTY TTY Interface implemented in TTL with some bugs fixed.</LI>
+<LI><b>PT08ttl3</b> is a Posibus TTY TTY Interface implemented in TTL, designed for a ribbon cable bus.</LI>
