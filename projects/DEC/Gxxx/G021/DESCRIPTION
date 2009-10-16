@@ -4,6 +4,12 @@ G021 Sense Amplifier
 with the unobtainium MC1540 sense amp chips.</LI>
 <LI><b>G021dec</b> is a drawing of DEC's G021 Core Sense Amplifier board,
 with the unobtainium MC1540 sense amp chips.</LI>
+<LI><b>G021K</b> is a drawing of DEC's G021K Core Sense Amplifier board,
+with the layout based on the G021H.</LI>
+<LI><b>G021K-E</b> is a drawing of DEC's G021 Core Sense Amplifier board,
+with the layout based on the G021E.</LI>
+<LI><b>G021Kng</b> is a drawing of DEC's G021 Core Sense Amplifier board,
+with the H layout, but without the gold edge connector.</LI>
 <LI><b>G021vrs</b> is a drawing of DEC's G021 Core Sense Amplifier board,
 with the unobtainium MC1540 sense amp chips.</LI>
 <LI><b>sense-amp</b> is an approximation of the function of the MC1540,
