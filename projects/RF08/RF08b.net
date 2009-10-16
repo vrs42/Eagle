@@ -1,6 +1,6 @@
 Netlist
 
-Exported from RF08b.sch at  6/05/2007 08:42:11p
+Exported from RF08b.sch at 10/16/2009 11:35:56a
 
 EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
 
@@ -12,23 +12,20 @@ Change Class 0;
 
 Change Class 0;
 601\     IC11     13       CLR        1
-         IC18     4        I0         2
-         IC18     5        I1         2
-         IC23     1        CLR        2
+         IC18     12       I0         2
+         IC23     3        CLK        2
          IC32     15       Y0         1
-         IC9      1        CLR        2
-         IC9      13       CLR        2
+         IC9      11       CLK        2
+         IC9      3        CLK        2
 
 Change Class 0;
-602\     IC10     1        CLR        1
-         IC18     1        I0         2
-         IC18     12       I0         1
+602\     IC10     3        CLK        1
+         IC18     1        I0         1
          IC29     15       Y0         1
 
 Change Class 0;
 604\     IC10     4        PRE        1
-         IC18     13       I1         1
-         IC18     2        I1         2
+         IC18     2        I1         1
          IC25     15       Y0         1
 
 Change Class 0;
@@ -41,9 +38,9 @@ Change Class 0;
          IC29     14       Y1         1
 
 Change Class 0;
-614\     IC17     13       B          1
-         IC22     3        I          1
+614\     IC22     3        I          1
          IC25     14       Y1         1
+         IC6      13       B          1
 
 Change Class 0;
 621\     IC32     13       Y2         1
@@ -224,24 +221,34 @@ BADDAC\  C36L     34       34         1
          IC11     1        CLR        1
 
 Change Class 0;
+BBREAK   DMA8-11  5        UP         2
+         IC12     12       O          1
+
+Change Class 0;
 BBREAK\  C36L     32       32         1
-         DMA8-11  5        UP         2
-         IC20     19       G          1
+         IC12     13       I          1
          IC21     15       G          3
+         IC26     1        G          1
          IC41     1        G          3
          IC41     15       G          3
          IC6      1        G          1
 
 Change Class 0;
 BINIT    D36L     38       38         1
-         IC10     11       CLK        1
-         IC10     3        CLK        1
-         IC23     3        CLK        2
-         IC9      11       CLK        2
-         IC9      3        CLK        2
+         IC12     1        I          1
 
 Change Class 0;
 BINIT2   C36L     38       38         1
+
+Change Class 0;
+BINIT\   IC10     1        CLR        1
+         IC10     13       CLR        1
+         IC12     2        O          1
+         IC18     10       I1         2
+         IC18     13       I1         2
+         IC23     1        CLR        2
+         IC9      1        CLR        2
+         IC9      13       CLR        2
 
 Change Class 0;
 BIOP1    D36L     28       28         1
@@ -330,8 +337,8 @@ BMB09    D35L     34       34         1
 Change Class 0;
 BMB10    D35L     36       36         1
          IC16     2        A          1
-         IC17     14       A          1
          IC28     4        A2         3
+         IC6      14       A          1
 
 Change Class 0;
 BMB11    D35L     38       38         1
@@ -359,8 +366,7 @@ BUSY     IC10     9        Q          1
 
 Change Class 0;
 BWC0\    C35L     32       32         1
-         IC10     13       CLR        1
-         IC12     4        I0         1
+         IC18     4        I0         1
          SV1      19       19         3
 
 Change Class 0;
@@ -486,51 +492,51 @@ DAR11    DAR8-11  3        QA         2
 
 Change Class 0;
 DATA00\  C35L     2        2          1
-         IC34     12       Y4         3
+         IC34     3        Y4         3
 
 Change Class 0;
 DATA01\  C35L     4        4          1
-         IC34     14       Y3         3
+         IC34     5        Y3         3
 
 Change Class 0;
 DATA02\  C35L     6        6          1
-         IC34     16       Y2         3
+         IC34     7        Y2         3
 
 Change Class 0;
 DATA03\  C35L     8        8          1
-         IC34     18       Y1         3
+         IC34     9        Y1         3
 
 Change Class 0;
 DATA04\  C35L     10       10         1
-         IC26     3        Y4         3
+         IC34     12       Y4         3
 
 Change Class 0;
 DATA05\  C35L     12       12         1
-         IC26     5        Y3         3
+         IC34     14       Y3         3
 
 Change Class 0;
 DATA06\  C35L     14       14         1
-         IC26     7        Y2         3
+         IC34     16       Y2         3
 
 Change Class 0;
 DATA07\  C35L     16       16         1
-         IC26     9        Y1         3
+         IC34     18       Y1         3
 
 Change Class 0;
 DATA08\  C35L     18       18         1
-         IC26     12       Y4         3
+         IC26     3        Y4         3
 
 Change Class 0;
 DATA09\  C35L     22       22         1
-         IC26     14       Y3         3
+         IC26     5        Y3         3
 
 Change Class 0;
 DATA10\  C35L     24       24         1
-         IC26     16       Y2         3
+         IC26     7        Y2         3
 
 Change Class 0;
 DATA11\  C35L     26       26         1
-         IC26     18       Y1         3
+         IC26     9        Y1         3
 
 Change Class 0;
 DATA_IN  C36L     30       30         1
@@ -538,24 +544,23 @@ DATA_IN  C36L     30       30         1
 
 Change Class 0;
 DCXA\    IC16     12       Y0         1
-         IC18     10       I1         2
          IC18     9        I0         2
 
 Change Class 0;
-DIMA\    IC17     11       Y1         1
-         IC30     1        G          2
+DIMA\    IC30     1        G          2
          IC30     19       G          2
          IC37     1        G          2
+         IC6      11       Y1         1
 
 Change Class 0;
 DIML\    FIELD    11       LD         2
-         IC17     12       Y0         1
+         IC6      12       Y0         1
          INTENB   11       LD         2
 
 Change Class 0;
 DIO00    IC13     12       E          3
          IC14     12       E          3
-         IC34     8        A4         3
+         IC34     17       A4         3
          IC35     12       Y4         3
          RS08     36       36         3
          SV1      2        2          3
@@ -563,7 +568,7 @@ DIO00    IC13     12       E          3
 Change Class 0;
 DIO01    IC13     11       D          3
          IC14     11       D          3
-         IC34     6        A3         3
+         IC34     15       A3         3
          IC35     14       Y3         3
          RS08     37       37         3
          SV1      4        4          3
@@ -571,7 +576,7 @@ DIO01    IC13     11       D          3
 Change Class 0;
 DIO02    IC13     10       C          3
          IC14     10       C          3
-         IC34     4        A2         3
+         IC34     13       A2         3
          IC35     16       Y2         3
          RS08     35       35         3
          SV1      6        6          3
@@ -579,63 +584,63 @@ DIO02    IC13     10       C          3
 Change Class 0;
 DIO03    IC13     9        B          3
          IC14     9        B          3
-         IC34     2        A1         3
+         IC34     11       A1         3
          IC35     18       Y1         3
          RS08     33       33         3
          SV1      8        8          3
 
 Change Class 0;
 DIO04    IC15     2        H          3
-         IC26     17       A4         3
          IC28     3        Y4         3
+         IC34     8        A4         3
          RS08     24       24         3
          SV1      10       10         3
 
 Change Class 0;
 DIO05    IC15     1        G          3
-         IC26     15       A3         3
          IC28     5        Y3         3
+         IC34     6        A3         3
          RS08     26       26         3
          SV1      12       12         3
 
 Change Class 0;
 DIO06    IC15     13       F          3
-         IC26     13       A2         3
          IC28     7        Y2         3
+         IC34     4        A2         3
          RS08     28       28         3
          SV1      14       14         3
 
 Change Class 0;
 DIO07    IC15     12       E          3
-         IC26     11       A1         3
          IC28     9        Y1         3
+         IC34     2        A1         3
          RS08     30       30         3
          SV1      16       16         3
 
 Change Class 0;
 DIO08    IC15     11       D          3
-         IC26     8        A4         3
+         IC26     17       A4         3
          IC28     12       Y4         3
          RS08     32       32         3
          SV1      18       18         3
 
 Change Class 0;
 DIO09    IC15     10       C          3
-         IC26     6        A3         3
+         IC26     15       A3         3
          IC28     14       Y3         3
          RS08     29       29         3
          SV1      20       20         3
 
 Change Class 0;
 DIO10    IC15     9        B          3
-         IC26     4        A2         3
+         IC26     13       A2         3
          IC28     16       Y2         3
          RS08     27       27         3
          SV1      22       22         3
 
 Change Class 0;
 DIO11    IC15     8        A          3
-         IC26     2        A1         3
+         IC26     11       A1         3
          IC28     18       Y1         3
          RS08     25       25         3
          SV1      24       24         3
@@ -646,10 +651,14 @@ DIOEVEN  IC13     13       F          3
          RS08     34       34         3
 
 Change Class 0;
-DMA-IN\  IC13     4        OI         3
-         IC26     1        G          3
+DMA-IN   IC12     10       O          3
+         IC13     3        EI         3
+
+Change Class 0;
+DMA-IN\  IC12     11       I          3
          IC26     19       G          3
          IC34     1        G          3
+         IC34     19       G          3
          IC41     12       Y0         3
 
 Change Class 0;
@@ -758,43 +767,42 @@ EIE      IC37     2        A1         2
          SV1      3        3          3
 
 Change Class 0;
-ERROR    IC12     12       I0         1
-         IC12     13       I1         1
+ERROR    IC12     3        I          1
          IC5      8        O          2
          IC55     10       I1         2
          IC7      2        A          2
 
 Change Class 0;
-ERROR\   IC12     11       O          1
-         IC12     5        I1         1
+ERROR\   IC12     4        O          1
+         IC18     5        I1         1
 
 Change Class 0;
 EXAD0\   C35L     34       34         1
-         IC20     9        Y1         1
+         IC26     18       Y1         1
 
 Change Class 0;
 EXAD1\   C35L     36       36         1
-         IC20     7        Y2         1
+         IC26     16       Y2         1
 
 Change Class 0;
 EXAD2\   C35L     38       38         1
-         IC20     5        Y3         1
+         IC26     14       Y3         1
 
 Change Class 0;
 F.1      FIELD    3        QA         2
-         IC20     11       A1         1
+         IC26     2        A1         1
          IC30     8        A4         2
          SV2      6        6          3
 
 Change Class 0;
 F.2      FIELD    2        QB         2
-         IC20     13       A2         1
+         IC26     4        A2         1
          IC30     11       A1         2
          SV2      4        4          3
 
 Change Class 0;
 F.3      FIELD    6        QC         2
-         IC20     15       A3         1
+         IC26     6        A3         1
          IC30     13       A2         2
          SV2      2        2          3
 
@@ -969,6 +977,7 @@ GND      C1       2        2          2
          IC12     7        GND        * none *
          IC13     1        G          3
          IC13     2        H          3
+         IC13     4        OI         3
          IC13     7        GND        * none *
          IC14     1        G          3
          IC14     13       F          3
@@ -981,14 +990,11 @@ GND      C1       2        2          2
          IC16     15       G          1
          IC16     8        GND        * none *
          IC17     1        G          1
-         IC17     15       G          1
          IC17     8        GND        * none *
          IC18     7        GND        * none *
          IC19     7        GND        * none *
          IC2      7        G          3
          IC2      8        GND        * none *
-         IC20     10       GND        * none *
-         IC20     17       A4         1
          IC21     8        GND        * none *
          IC22     7        GND        * none *
          IC23     2        D          2
@@ -997,6 +1003,7 @@ GND      C1       2        2          2
          IC25     5        G2B        1
          IC25     8        GND        * none *
          IC26     10       GND        * none *
+         IC26     8        A4         1
          IC28     10       GND        * none *
          IC29     5        G2B        1
          IC29     8        GND        * none *
@@ -1027,6 +1034,7 @@ GND      C1       2        2          2
          IC41     8        GND        * none *
          IC5      7        GND        * none *
          IC55     7        GND        * none *
+         IC6      15       G          1
          IC6      8        GND        * none *
          IC7      1        G          2
          IC7      15       G          2
@@ -1157,7 +1165,8 @@ N$17     IC21     5        Y1         3
          SW2      8        8          3
 
 Change Class 0;
-N$18     IC12     8        O          1
+N$18     IC10     11       CLK        1
+         IC18     6        O          1
 
 Change Class 0;
 N$19     IC21     6        Y2         3
@@ -1189,7 +1198,7 @@ Change Class 0;
 N$22     DMA0-3   14       CLR        2
          DMA4-7   14       CLR        2
          DMA8-11  14       CLR        2
-         IC18     6        O          2
+         IC18     11       O          2
 
 Change Class 0;
 N$23     IC1      5        Y          3
@@ -1221,14 +1230,9 @@ N$29     IC8      7        DIS        2
          RB       1        1          2
 
 Change Class 0;
-N$30     IC12     1        I0         2
-         IC12     2        I1         2
+N$30     IC12     9        I          2
          IC8      3        Q          2
          RL       2        2          2
-
-Change Class 0;
-N$31     IC10     10       PRE        1
-         IC18     11       O          1
 
 Change Class 0;
 N$32     C47      1        1          2
@@ -1243,11 +1247,6 @@ N$33     IC19     11       I          2
 Change Class 0;
 N$34     C48      2        2          2
          IC8      5        CV         2
-
-Change Class 0;
-N$36     IC12     10       I1         1
-         IC12     6        O          1
-         IC12     9        I0         1
 
 Change Class 0;
 N$53     IC1      4        D0         3
@@ -1391,7 +1390,7 @@ PBIT     IC14     6        ODD        3
          IC35     11       A1         3
 
 Change Class 0;
-PCA      IC12     3        O          2
+PCA      IC12     8        O          2
          IC37     8        A4         2
          IC55     5        I1         2
 
@@ -1435,10 +1434,15 @@ SKIP\    IC17     2        A          1
          R1       1        1          2
 
 Change Class 0;
+START    IC12     5        I          1
+         IC18     3        O          1
+
+Change Class 0;
 START\   DMA0-3   11       LD         2
          DMA4-7   11       LD         2
          DMA8-11  11       LD         2
-         IC18     3        O          2
+         IC10     10       PRE        1
+         IC12     6        O          1
 
 Change Class 1;
 VCC      C1       1        1          2
@@ -1502,7 +1506,6 @@ VCC      C1       1        1          2
          IC11     4        PRE        1
          IC12     14       VCC        * none *
          IC13     14       VCC        * none *
-         IC13     3        EI         3
          IC14     14       VCC        * none *
          IC14     3        EI         3
          IC15     14       VCC        * none *
@@ -1512,7 +1515,6 @@ VCC      C1       1        1          2
          IC18     14       VCC        * none *
          IC19     14       VCC        * none *
          IC2      16       VCC        * none *
-         IC20     20       VCC        * none *
          IC21     16       VCC        * none *
          IC22     14       VCC        * none *
          IC23     14       VCC        * none *
