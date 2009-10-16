@@ -6,11 +6,12 @@ TC08 Backplane
 board.</LI>
 <LI><b>so-indicators-ok</b> is a backup of so-indicators.</LI>
 <LI><b>tc08ss</b> is an experiment with routing one layer at a time.</LI>
-<LI><b>tc08nh</b> is a successful routing without screw holes.  (It also 
+<LI><b>tc08nh</b> is a successful routing without screw holes.  (It also
 lacks an NC layer.)</LI>
-<LI><b>tc08ttl</b> is an aborted attempt to convert to a "big board" 
+<LI><b>tc08ttl</b> is an aborted attempt to convert to a "big board"
 TTL implementation.</LI>
 <LI><b>tc08</b> is a drawing of DEC's TC08 DECtape Controller.</LI>
-<LI><b>tc08-8-07</b> is an 8/2007 checkpoint of the TC08 drawing.  This one 
-does have the hidden "NC" layer, to simplify routing and reduce spurious 
+<LI><b>tc08-6u</b> is a drawing of DEC's TC08 DECtape Controller, drawn to fit in 6Uin a DEC rack.</LI>
+<LI><b>tc08-8-07</b> is an 8/2007 checkpoint of the TC08 drawing.  This one
+does have the hidden "NC" layer, to simplify routing and reduce spurious
 error messages.</LI>
