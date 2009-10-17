@@ -1,0 +1,45 @@
+Photoplotter Info File: C:/Program Files/EAGLE-4.11/projects/X8iPanel/LEDpanelmpsl.gpi
+
+ Date              :  2/20/2009 04:42:20p
+ Plotfile          : C:/Program Files/EAGLE-4.11/projects/X8iPanel/LEDpanelmpsl.sts
+ Apertures         : generated: 
+ Device            : Gerber photoplotter with RS-274-X aperture generation
+
+Parameter settings:
+
+ Emulate Apertures : no
+ Emulate Thermal   : no
+ Emulate Annulus   : no
+ Tolerance Draw  + :  0.00 %
+ Tolerance Draw  - :  0.00 %
+ Tolerance Flash + :  0.00 %
+ Tolerance Flash - :  0.00 %
+ Rotate            : no
+ Mirror            : yes
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+
+Plotfile Info:
+
+ Coordinate Format : 2.4
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Apertures used:
+
+ Code     Shape     Size                  used
+
+ D10      octagon   0.1008inch             178
+ D11      round     0.1500inch               8
+ D12      rectangle 0.0396inch x 0.1316inch    76
+ D13      round     0.1701inch               6
+ D14      octagon   0.0720inch             136
+ D15      round     0.3400inch               8
+ D16      octagon   0.0624inch             178
+ D17      oval      0.0624inch x 0.1144inch    54
+ D18      oval      0.1144inch x 0.0624inch   213
+

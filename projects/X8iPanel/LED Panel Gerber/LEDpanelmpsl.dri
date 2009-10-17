@@ -1,0 +1,47 @@
+Drill Station Info File: C:/Program Files/EAGLE-4.11/projects/X8iPanel/LEDpanelmpsl.dri
+
+ Date              :  2/20/2009 04:43:48p
+ Drills            : C:/Program Files/EAGLE-4.11/projects/X8iPanel/LEDpanelmpsl.drl
+ Device            : Excellon drill station
+
+Parameter settings:
+
+ Tolerance Drill + :  2.50 %
+ Tolerance Drill - :  2.50 %
+ Rotate            : no
+ Mirror            : no
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+ Layers            : Drills Holes
+
+Drill File Info:
+
+ Data Mode         : Absolute
+ Units             : 1/1000 Inch
+ End Of Block      : CR/LF
+
+Drill Tolerances:
+
+ -- Requested --  -- Used Drill --
+
+ Size       used  Code  Size
+
+ 3.600mm       6  T05   142.000mil
+
+Drills used:
+
+ Code  Size       used
+
+ T01   32.000mil   445
+ T02   40.000mil   136
+ T03   56.000mil   178
+ T04   125.000mil    16
+ T05   142.000mil     6
+
+Total number of drills: 781
+
+Plotfiles:
+
+ C:/Program Files/EAGLE-4.11/projects/X8iPanel/LEDpanelmpsl.drd

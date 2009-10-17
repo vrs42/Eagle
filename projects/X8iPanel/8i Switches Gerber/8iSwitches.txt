@@ -1,0 +1,8 @@
+8iSwitches.txt	This filee
+8iSwitches.dri	Drill Tool Info
+8iSwitches.drd	Excellon Drill File
+8iSwitches.cmp	Component Side Copper
+8iSwitches.plc	Component Side Silkscreen
+8iSwitches.stc	Component Side Solder Mask
+8iSwitches.sts	Solder Side Solder Mask
+8iSwitches.sol	Solder Side Copper

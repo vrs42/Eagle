@@ -1,0 +1,8 @@
+LEDpanelmpsl.txt	This filee
+LEDpanelmpsl.dri	Drill Tool Info
+LEDpanelmpsl.drd	Excellon Drill File
+LEDpanelmpsl.cmp	Component Side Copper
+LEDpanelmpsl.plc	Component Side Silkscreen
+LEDpanelmpsl.stc	Component Side Solder Mask
+LEDpanelmpsl.sts	Solder Side Solder Mask
+LEDpanelmpsl.sol	Solder Side Copper
