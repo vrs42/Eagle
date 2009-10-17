@@ -1,0 +1,18 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/Rk8 RK05/rk8-05.sch at  8/05/2009 01:22:01p
+
+WARNING: Only 1 Pin on net AC_LO_L
+WARNING: Only 1 Pin on net DC_LO_L
+WARNING: Only 1 Pin on net FILE_READY_L
+WARNING: Only 1 Pin on net HIGH_DENSITY_L
+WARNING: Only 1 Pin on net SEC_CNTR_0_L
+WARNING: Only 1 Pin on net SEC_CNTR_1_L
+WARNING: Only 1 Pin on net SEC_CNTR_2_L
+WARNING: Only 1 Pin on net SEC_CNTR_3_L
+WARNING: Only 1 Pin on net WT_PROT_STATUS_L
+
+Board and schematic are consistent
+
+    0 errors
+    9 warnings
