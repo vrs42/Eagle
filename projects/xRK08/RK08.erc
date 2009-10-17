@@ -1,0 +1,109 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/xRK08/RK08.sch at 11/07/2008 02:00:12p
+
+WARNING: Sheet 1/1: unconnected Pin: F17N2 OUT
+WARNING: Sheet 1/1: unconnected Pin: F17R2 OUT
+WARNING: Sheet 1/1: unconnected Pin: F17U1 OUT
+WARNING: Sheet 1/1: unconnected Pin: E15A P$2
+WARNING: Sheet 1/1: unconnected Pin: E15B P$2
+WARNING: Sheet 1/1: unconnected Pin: E15C P$2
+WARNING: Sheet 1/1: unconnected Pin: E15D P$2
+WARNING: Sheet 1/1: unconnected Pin: E15E P$2
+WARNING: Sheet 1/1: unconnected Pin: E15H P$2
+WARNING: Sheet 1/1: unconnected Pin: E15K P$2
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12J2 IN1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12J2 IN2
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12J2 IN3
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12J2 IN4
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12J2 IN5
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12J2 IN6
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12J2 IN7
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12J2 IN8
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12P2 IN1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12P2 IN2
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12P2 IN3
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12P2 IN4
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12P2 IN5
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12P2 IN6
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12P2 IN7
+ERROR: Sheet 1/1: unconnected INPUT Pin: E12P2 IN8
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E12G$4 VCC
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E12G$4 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E12G$5 GND
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14J2 IN1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14J2 IN2
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14J2 IN3
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14J2 IN4
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14J2 IN5
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14J2 IN6
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14J2 IN7
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14J2 IN8
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14P2 IN1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14P2 IN2
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14P2 IN3
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14P2 IN4
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14P2 IN5
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14P2 IN6
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14P2 IN7
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14P2 IN8
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14V2 IN1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14V2 IN2
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14V2 IN3
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14V2 IN4
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14V2 IN5
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14V2 IN6
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14V2 IN7
+ERROR: Sheet 1/1: unconnected INPUT Pin: E14V2 IN8
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E14G$4 VCC
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E14G$4 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E14G$5 GND
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13J2 IN1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13J2 IN2
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13J2 IN3
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13J2 IN4
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13J2 IN5
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13J2 IN6
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13J2 IN7
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13J2 IN8
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13P2 IN1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13P2 IN2
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13P2 IN3
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13P2 IN4
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13P2 IN5
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13P2 IN6
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13P2 IN7
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13P2 IN8
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13V2 IN1
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13V2 IN2
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13V2 IN3
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13V2 IN4
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13V2 IN5
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13V2 IN6
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13V2 IN7
+ERROR: Sheet 1/1: unconnected INPUT Pin: E13V2 IN8
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E13G$4 VCC
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E13G$4 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin E13G$5 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin F17G$17 VCC
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin F17G$17 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin F17G$1 GND
+ERROR: Sheet 1/1: unconnected INPUT Pin: F17N2 IN
+ERROR: Sheet 1/1: unconnected INPUT Pin: F17R2 IN
+ERROR: Sheet 1/1: unconnected INPUT Pin: F17U1 IN
+ERROR: Sheet 1/1: unconnected INPUT Pin: F16V2 IN1
+ERROR: Sheet 1/1: unconnected INPUT Pin: F16V2 IN2
+ERROR: Sheet 1/1: unconnected INPUT Pin: F16V2 IN3
+ERROR: Sheet 1/1: unconnected INPUT Pin: F16V2 IN4
+ERROR: Sheet 1/1: unconnected INPUT Pin: F16V2 IN5
+ERROR: Sheet 1/1: unconnected INPUT Pin: F16V2 IN6
+ERROR: Sheet 1/1: unconnected INPUT Pin: F16V2 IN7
+ERROR: Sheet 1/1: unconnected INPUT Pin: F16V2 IN8
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin F16G$4 VCC
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin F16G$4 GND
+ERROR: Sheet 1/1: no SUPPLY for implicit POWER Pin F16G$5 GND
+
+Board and schematic are consistent
+
+   90 errors
+   10 warnings

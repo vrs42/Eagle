@@ -1,0 +1,10 @@
+Flip Chip Edge Connector
+<UL>
+<LI><b>EdgeConnector</b> is a gold plated edge connector (outer).</LI>
+<LI><b>Outline</b> is a board outline to match EdgeConnector.</LI>
+<LI><b>Alignment</b> is a drawing of an EdgeConnector overlaid on the board Outline.</LI>
+<LI><b>OuterConnector</b> is an EdgeConnector aligned for the outer quad slots.</LI>
+<LI><b>InnerConnector</b> is an EdgeConnector aligned for the inner quad slots.</LI>
+<LI><b>ConnectorPair</b> is a pair of EdgeConnectors one inner, one outer.</LI>
+<LI><b>proto</b> is a drawing of a single-height proto board.</LI>
+<LI><b>proto2</b> is a drawing of a double-height proto board.</LI>

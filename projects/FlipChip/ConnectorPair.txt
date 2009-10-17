@@ -1,0 +1,12 @@
+I need a 155inch panel of these 2-layer boards with nickel-gold fingers.
+
+Thanks!
+
+Files:
+.cmp	Component Side Copper
+.plc	Component Side Silkscreen
+.stc	Component Side Stop Mask
+.sol	Solder Side Copper
+.sts	Solder Side Stop Mask
+.drl	Drill Rack
+.drd	Drill Data
