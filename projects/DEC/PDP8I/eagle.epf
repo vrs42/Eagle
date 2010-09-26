@@ -242,7 +242,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/zilog.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="-31976 -31862 -30068 -30722"
+Loc="-31964 -31793 -30056 -30653"
 State=1
 Number=2
 File="pdp8i.brd"
@@ -281,11 +281,11 @@ Layer=16
 
 [Win_2]
 Type="Schematic Editor"
-Loc="-31976 -31862 -30068 -30718"
+Loc="-31964 -31793 -30056 -30649"
 State=1
 Number=1
 File="pdp8i.sch"
-View="-80122 -71157 3966456 2697203"
+View="-80122 -55229 3966456 2696891"
 WireWidths=" 0 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064 1524"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 PadDrills=" 2540 3048 4064 6096 10160 12700 14224 16764 17780 19304 21844 25400 38100 50800 64516 8128"
@@ -317,7 +317,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=94
-Sheet=25
+Sheet=17
 
 [Win_3]
 Type="Control Panel"
