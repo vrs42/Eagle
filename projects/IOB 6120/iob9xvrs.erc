@@ -1,6 +1,6 @@
 EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
 
-Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/IOB 6120/iob7c.sch at 11/30/2009 03:33:20p
+Electrical Rule Check for C:/Program Files/EAGLE-4.11/projects/IOB 6120/iob9xvrs.sch at 12/14/2009 05:29:34p
 
 WARNING: Sheet 4/7: unconnected Pin: CPREQ 1
 WARNING: Sheet 7/7: unconnected Pin: IC17F O
@@ -9,13 +9,13 @@ WARNING: Sheet 7/7: unconnected Pin: IC15D O
 WARNING: Sheet 7/7: unconnected Pin: IC15E O
 WARNING: Sheet 7/7: unconnected Pin: IC15F O
 WARNING: Sheet 1/7: POWER Pin IC8P VCC connected to 5V
-WARNING: Sheet 1/7: POWER Pin IC6P VCC connected to VCC_NV
 WARNING: Sheet 1/7: POWER Pin IC9P VCC connected to 5V
 WARNING: Sheet 1/7: POWER Pin IC10P VCC connected to 5V
-WARNING: Sheet 2/7: POWER Pin IC3VDD 5V connected to N$84
-WARNING: Sheet 2/7: POWER Pin IC2VDD 5V connected to N$84
-WARNING: Sheet 2/7: POWER Pin IC5VDD 5V connected to N$84
-WARNING: Sheet 2/7: POWER Pin IC4VDD 5V connected to N$84
+WARNING: Sheet 1/7: POWER Pin IC6P VCC connected to 5V
+WARNING: Sheet 2/7: POWER Pin IC3VDD 5V connected to VCC_NV
+WARNING: Sheet 2/7: POWER Pin IC2VDD 5V connected to VCC_NV
+WARNING: Sheet 2/7: POWER Pin IC5VDD 5V connected to VCC_NV
+WARNING: Sheet 2/7: POWER Pin IC4VDD 5V connected to VCC_NV
 WARNING: Sheet 3/7: POWER Pin IC7P VCC connected to 5V
 ERROR: Sheet 3/7: unconnected INPUT Pin: CF1 RESET#
 ERROR: Sheet 3/7: unconnected INPUT Pin: CF1 IORD#
@@ -30,17 +30,9 @@ WARNING: Sheet 6/7: POWER Pin KBD PE1 connected to GND
 WARNING: Sheet 6/7: POWER Pin KBD PE3 connected to GND
 WARNING: Sheet 6/7: POWER Pin KBD PE2 connected to GND
 WARNING: Only 1 Pin on net DA7
-ERROR: 3 OUTPUT Pins on net N$90
-WARNING: Sheet 3/7: Nets 5V and N$13 too close at (4975 2000)
-WARNING: Sheet 3/7: Nets 5V and N$14 too close at (1900 6700)
-WARNING: Sheet 3/7: Nets N$13 and 5V too close at (4575 2000)
-WARNING: Sheet 3/7: Nets N$14 and 5V too close at (1900 6300)
-WARNING: Sheet 3/7, Net 5V: wire overlaps pin at (4925 2000)
-WARNING: Sheet 3/7, Net N$13: wire overlaps pin at (4625 2000)
-WARNING: Sheet 3/7, Net 5V: wire overlaps pin at (1900 6650)
-WARNING: Sheet 3/7, Net N$14: wire overlaps pin at (1900 6350)
+ERROR: 3 OUTPUT Pins on net SPEAKER
 
 Board and schematic are consistent
 
     6 errors
-   31 warnings
+   23 warnings

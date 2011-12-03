@@ -1,0 +1,39 @@
+Project Library Creation Log File 12/07/2009 08:23:40p
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+Created from: iob9cvrs.brd
+
+LIBRARY: iob9cvrs.lbr
+   PAC: 74xx-eu_SOP16
+   PAC: 74xx-us_SO14
+   PAC: 74xx-us_SO16
+   PAC: 74xx-us_SO20W
+   PAC: buzzer_KSS1201
+   PAC: con-harting-ml_ML10
+   PAC: con-harting-ml_ML50
+   PAC: con-lstb_MA03-2
+   PAC: con-lstb_MA13-2
+   PAC: con-subd_F25H
+   PAC: con-subd_HDF15H
+   PAC: crystal_TC26H
+   PAC: ds1321_SO16
+   PAC: jumper_JP1
+   PAC: jumper_JP2
+   PAC: marks_ANGLE-ARROW-NW1-16
+   PAC: marks_ANGLE-ARROW-SE1-16
+   PAC: marks_PASS-ROUND
+   PAC: maxim_SO24L
+   PAC: mini_din_M_DIN6
+   PAC: parts_CF_SOCKET2_SMT
+   PAC: parts_CR2032HOLDER
+   PAC: parts_RN-CTS-744C043
+   PAC: parts_SG636
+   PAC: parts_SO08
+   PAC: parts_SOP32
+   PAC: parts_TQFP144
+   PAC: parts_TSOP48
+   PAC: rcl_C0805
+   PAC: rcl_C1206
+   PAC: rcl_D/7343-31W
+   PAC: rcl_M0805
+   PAC: rcl_M1206
+   PAC: rcl_R0805
