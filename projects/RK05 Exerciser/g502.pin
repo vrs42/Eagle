@@ -1,0 +1,383 @@
+Pinlist
+
+Exported from G502.brd at  1/20/2010 11:01:23a
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Pad      Net
+
+AB04     AA1      N$16
+         AA2      VCC
+         AB1      N$17
+         AB2               *** unconnected ***
+         AC1      N$10
+         AC2      GND
+         AD1      N$18
+         AD2               *** unconnected ***
+         AE1               *** unconnected ***
+         AE2               *** unconnected ***
+         AF1               *** unconnected ***
+         AF2      BUS_DATA&CLOCK_L
+         AH1      N$19
+         AH2               *** unconnected ***
+         AJ1      N$20
+         AJ2               *** unconnected ***
+         AK1      N$21
+         AK2               *** unconnected ***
+         AL1      N$22
+         AL2               *** unconnected ***
+         AM1               *** unconnected ***
+         AM2               *** unconnected ***
+         AN1      N$23
+         AN2               *** unconnected ***
+         AP1      N$24
+         AP2      SECTOR_CNTR_1L
+         AR1      N$25
+         AR2               *** unconnected ***
+         AS1      N$26
+         AS2               *** unconnected ***
+         AT1      GND
+         AT2               *** unconnected ***
+         AU1      N$27
+         AU2               *** unconnected ***
+         AV1      N$28
+         AV2               *** unconnected ***
+         BA1      WRITE_H
+         BA2      VCC
+         BB1      WRITE_L
+         BB2               *** unconnected ***
+         BC1      DATA_BITS
+         BC2      GND
+         BD1      N$33
+         BD2               *** unconnected ***
+         BE1      CONSTANT_WRITE
+         BE2               *** unconnected ***
+         BF1               *** unconnected ***
+         BF2      +3VA
+         BH1               *** unconnected ***
+         BH2               *** unconnected ***
+         BJ1      SECTOR_CNTR_3L
+         BJ2               *** unconnected ***
+         BK1               *** unconnected ***
+         BK2      SECTOR_CNTR_2L
+         BL1      SECTOR_CNTR_0L
+         BL2      BUS_WRITE_GATE_L
+         BM1      BUS_INDEX_L
+         BM2               *** unconnected ***
+         BN1               *** unconnected ***
+         BN2               *** unconnected ***
+         BP1               *** unconnected ***
+         BP2      DC_ERASE
+         BR1               *** unconnected ***
+         BR2               *** unconnected ***
+         BS1               *** unconnected ***
+         BS2               *** unconnected ***
+         BT1      GND
+         BT2               *** unconnected ***
+         BU1               *** unconnected ***
+         BU2               *** unconnected ***
+         BV1               *** unconnected ***
+         BV2      N$1
+
+BIT0     1                 *** unconnected ***
+         2        GND
+         3        N$18
+
+BIT1     1                 *** unconnected ***
+         2        GND
+         3        N$10
+
+BIT2     1                 *** unconnected ***
+         2        GND
+         3        N$17
+
+BIT3     1                 *** unconnected ***
+         2        GND
+         3        N$16
+
+C1       1        VCC
+         2        GND
+
+C2       1        VCC
+         2        GND
+
+C3       1        VCC
+         2        GND
+
+C4       1        VCC
+         2        GND
+
+C5       1        VCC
+         2        GND
+
+C6       1        VCC
+         2        GND
+
+C7       1        VCC
+         2        GND
+
+C8       1        VCC
+         2        GND
+
+C9       1        VCC
+         2        GND
+
+C10      1        VCC
+         2        GND
+
+C11      1        VCC
+         2        GND
+
+C12      1        N$14
+         2        N$12
+
+C13      1        N$13
+         2        N$11
+
+C14      +        VCC
+         -        GND
+
+C15      +        VCC
+         -        GND
+
+CONSTANT_WRITE 1        N$1
+         2        CONSTANT_WRITE
+         3        GND
+
+DC_ERASE 1        +3VA
+         2        DC_ERASE
+         3        GND
+
+E1       1        4H
+         10       4L
+         11       2H
+         12       2BIT
+         13       N$17
+         14       VCC
+         2        2L
+         3        2L
+         4        4L
+         5        N$18
+         6        0BIT
+         7        GND
+         8        1BIT
+         9        N$10
+
+E2       1        WRITE_GATE
+         10       N$5
+         11       1L
+         12       2L
+         13       WRITE_GATE
+         14       VCC
+         2        4L
+         3        2L
+         4        N$5
+         5        4H
+         6        4L
+         7        GND
+         8        2L
+         9        2H
+
+E3       1        N$19
+         10       N$27
+         11       N$28
+         12       N$32
+         13       N$31
+         14       N$30
+         15       N$29
+         16       VCC
+         2        N$20
+         3        N$21
+         4        N$22
+         5        N$23
+         6        N$24
+         7        N$25
+         8        GND
+         9        N$26
+
+E4       1        2H
+         10       1BIT
+         11                *** unconnected ***
+         12       2BIT
+         13       3BIT
+         14       VCC
+         2        4H
+         3                 *** unconnected ***
+         4        +3VB
+         5        N$16
+         6        3BIT
+         7        GND
+         8        N$9
+         9        0BIT
+
+E5       1        VCC
+         10       N$5
+         11       1.44MHZ
+         12       1L
+         13       WRITE_GATE
+         14       VCC
+         2        GND
+         3        GND
+         4        VCC
+         5                 *** unconnected ***
+         6                 *** unconnected ***
+         7        GND
+         8        1L
+         9                 *** unconnected ***
+
+E6       1        GND
+         10       N$31
+         11       SECTOR_CNTR_2L
+         12       N$30
+         13       SECTOR_CNTR_1L
+         14       VCC
+         2        N$34
+         3        N$34
+         4        N$36
+         5        SECTOR_CNTR_0L
+         6        N$29
+         7        GND
+         8        N$32
+         9        SECTOR_CNTR_3L
+
+E7       1        N$33
+         10       CLOCK_H
+         11       N$6
+         12       CLOCK_H
+         13       1L
+         14       VCC
+         2        +3VA
+         3        N$15
+         4        N$6
+         5        N$7
+         6        N$2
+         7        GND
+         8        N$7
+         9        N$9
+
+E8       1        CLOCK_H
+         10       2.88MHZ
+         11       WRITE_GATE
+         12       1.44MHZ
+         13                *** unconnected ***
+         14       N$11
+         15       N$13
+         16       VCC
+         2        WRITE_GATE
+         3        WRITE_GATE
+         4        2.88MHZ
+         5        CLOCK_H
+         6        N$12
+         7        N$14
+         8        GND
+         9        GND
+
+E9       1                 *** unconnected ***
+         10       BUS_DATA&CLOCK_L
+         11       WRITE_GATE
+         12       N$15
+         13       BUS_WRITE_GATE_L
+         14       VCC
+         2        GND
+         3        GND
+         4                 *** unconnected ***
+         5        GND
+         6        GND
+         7        GND
+         8        DC_ERASE
+         9        N$2
+
+E10      1        N$36
+         10       N$4
+         11       N$4
+         12       WRITE_H
+         13       N$3
+         14       VCC
+         2        N$36
+         3                 *** unconnected ***
+         4        N$36
+         5        N$36
+         6                 *** unconnected ***
+         7        GND
+         8        N$3
+         9        WRITE_L
+
+E11      1        BUS_INDEX_L
+         10       N$1
+         11       BUS_INDEX_L
+         12       N$3
+         13       N$3
+         14       VCC
+         2        N$1
+         3        N$8
+         4        CONSTANT_WRITE
+         5        WRITE_GATE
+         6                 *** unconnected ***
+         7        GND
+         8                 *** unconnected ***
+         9        N$8
+
+R1       A        VCC
+         E        N$13
+         S        N$13
+
+R2       1        N$14
+         2        VCC
+
+R3       1        N$5
+         2        VCC
+
+R4       1        N$1
+         2        VCC
+
+R5       1        WRITE_H
+         2        VCC
+
+R6       1        WRITE_L
+         2        VCC
+
+R7       1        DATA_BITS
+         2        VCC
+
+R8       1        SECTOR_CNTR_3L
+         2        VCC
+
+R9       1        SECTOR_CNTR_2L
+         2        VCC
+
+R10      1        SECTOR_CNTR_0L
+         2        VCC
+
+R11      1        SECTOR_CNTR_1L
+         2        VCC
+
+R12      1        +3VB
+         2        VCC
+
+R13      1        +3VA
+         2        VCC
+
+R14      1        GND
+         2        +3VB
+
+R15      1        GND
+         2        +3VA
+
+SECTOR_SELECT 1        N$19
+         10       N$28
+         11       GND
+         12       GND
+         2        N$20
+         3        N$21
+         4        N$22
+         5        N$23
+         6        N$24
+         7        N$25
+         8        N$26
+         9        N$27
+         A        N$33
+
+WRITE_BUTTON 1        WRITE_H
+         2        GND
+         3        WRITE_L
+

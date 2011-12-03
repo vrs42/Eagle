@@ -1,0 +1,304 @@
+Pinlist
+
+Exported from RK05TA.brd at  1/20/2010 07:44:39p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Pad      Net
+
+A01      A1                *** unconnected ***
+         A2       VCC
+         B1       N$50
+         B2       -15V
+         C1       BUS_CA_03_L
+         C2       GND
+         D1       BUS_CA_01_L
+         D2                *** unconnected ***
+         E1       BUS_CA_06_L
+         E2                *** unconnected ***
+         F1       BUS_CA_04_L
+         F2       BUS_DATA&CLOCK_L
+         H1       BUS_CA_07_L
+         H2       BUS_RWS_READY_L
+         J1       BUS_CA_05_L
+         J2       SELECT_0L
+         K1       BUS_CA_00_L
+         K2       SELECT_1L
+         L1       BUS_CA_02_L
+         L2       SELECT_2L
+         M1       BUS_RESTORE_L
+         M2       SELECT_3L
+         N1                *** unconnected ***
+         N2                *** unconnected ***
+         P1                *** unconnected ***
+         P2       BUS_SECTOR_ADDR_1L
+         R1                *** unconnected ***
+         R2       BUS_ADDR_ACCEPTED_L
+         S1                *** unconnected ***
+         S2       BUS_SEEK_INCOMPLETE_L
+         T1       GND
+         T2       BUS_ADDRESS_INVALID_L
+         U1                *** unconnected ***
+         U2       N$45
+         V1                *** unconnected ***
+         V2                *** unconnected ***
+
+A02      A1                *** unconnected ***
+         A2       VCC
+         B1       N$50
+         B2       -15V
+         C1       BUS_CA_03_L
+         C2       GND
+         D1       BUS_CA_01_L
+         D2                *** unconnected ***
+         E1       BUS_CA_06_L
+         E2                *** unconnected ***
+         F1       BUS_CA_04_L
+         F2       BUS_DATA&CLOCK_L
+         H1       BUS_CA_07_L
+         H2       BUS_RWS_READY_L
+         J1       BUS_CA_05_L
+         J2       SELECT_0L
+         K1       BUS_CA_00_L
+         K2       SELECT_1L
+         L1       BUS_CA_02_L
+         L2       SELECT_2L
+         M1       BUS_RESTORE_L
+         M2       SELECT_3L
+         N1                *** unconnected ***
+         N2                *** unconnected ***
+         P1                *** unconnected ***
+         P2       BUS_SECTOR_ADDR_1L
+         R1                *** unconnected ***
+         R2       BUS_ADDR_ACCEPTED_L
+         S1                *** unconnected ***
+         S2       BUS_SEEK_INCOMPLETE_L
+         T1       GND
+         T2       BUS_ADDRESS_INVALID_L
+         U1                *** unconnected ***
+         U2       N$45
+         V1                *** unconnected ***
+         V2                *** unconnected ***
+
+A03      A1       RUN_L
+         A2       VCC
+         B1       RTZ_L
+         B2       -15V
+         C1       BUS_RWS_READY_L
+         C2       GND
+         D1       FWD_L
+         D2       +15V
+         E1       REV_L
+         E2                *** unconnected ***
+         F1       BUS_ADDRESS_INVALID_L
+         F2                *** unconnected ***
+         H1       BUS_SEEK_INCOMPLETE_L
+         H2       STEP_L
+         J1                *** unconnected ***
+         J2                *** unconnected ***
+         K1                *** unconnected ***
+         K2                *** unconnected ***
+         L1       CA_SW_128
+         L2                *** unconnected ***
+         M1       CA_SW_64
+         M2                *** unconnected ***
+         N1       CA_SW_32
+         N2                *** unconnected ***
+         P1       CA_SW_16
+         P2                *** unconnected ***
+         R1       CA_SW_8
+         R2       RANDOM_L
+         S1       CA_SW_4
+         S2                *** unconnected ***
+         T1       GND
+         T2                *** unconnected ***
+         U1       CA_SW_2
+         U2                *** unconnected ***
+         V1       CA_SW_1
+         V2                *** unconnected ***
+
+A04      A1       BIT_3L
+         A2       VCC
+         B1       BIT_2L
+         B2       -15V
+         C1       BIT_1L
+         C2       GND
+         D1       BIT_0L
+         D2                *** unconnected ***
+         E1                *** unconnected ***
+         E2                *** unconnected ***
+         F1                *** unconnected ***
+         F2       BUS_DATA&CLOCK_L
+         H1       SECTOR_0L
+         H2                *** unconnected ***
+         J1       SECTOR_1L
+         J2                *** unconnected ***
+         K1       SECTOR_2L
+         K2                *** unconnected ***
+         L1       SECTOR_3L
+         L2                *** unconnected ***
+         M1                *** unconnected ***
+         M2                *** unconnected ***
+         N1       SECTOR_4L
+         N2                *** unconnected ***
+         P1       SECTOR_5L
+         P2       BUS_SECTOR_ADDR_1L
+         R1       SECTOR_6L
+         R2                *** unconnected ***
+         S1       SECTOR_7L
+         S2                *** unconnected ***
+         T1       GND
+         T2                *** unconnected ***
+         U1       SECTOR_8L
+         U2                *** unconnected ***
+         V1       SECTOR_9L
+         V2                *** unconnected ***
+
+B01      A1                *** unconnected ***
+         A2       VCC
+         B1                *** unconnected ***
+         B2       -15V
+         C1                *** unconnected ***
+         C2       GND
+         D1                *** unconnected ***
+         D2                *** unconnected ***
+         E1                *** unconnected ***
+         E2                *** unconnected ***
+         F1       N$51
+         F2       N$52
+         H1       BUS_STROBE_L
+         H2       N$54
+         J1       BUS_SECTOR_ADDR_3L
+         J2                *** unconnected ***
+         K1       N$56
+         K2       BUS_SECTOR_ADDR_2L
+         L1       BUS_SECTOR_ADDR_0L
+         L2       BUS_WRITE_GATE_L
+         M1       BUS_INDEX_L
+         M2       HEAD_SELECT_L
+         N1       BUS_FILE_READY
+         N2       BUS_SECTOR_PULSE_L
+         P1       BUS_WP_STATUS_L
+         P2       N$74
+         R1       BUS_READ_GATE_L
+         R2       BUS_WP_SET_L
+         S1       READ_CLOCK
+         S2       READ_DATA
+         T1       GND
+         T2       N$49
+         U1                *** unconnected ***
+         U2       N$79
+         V1                *** unconnected ***
+         V2                *** unconnected ***
+
+B02      A1                *** unconnected ***
+         A2       VCC
+         B1                *** unconnected ***
+         B2       -15V
+         C1                *** unconnected ***
+         C2       GND
+         D1                *** unconnected ***
+         D2                *** unconnected ***
+         E1                *** unconnected ***
+         E2                *** unconnected ***
+         F1       N$51
+         F2       N$52
+         H1       BUS_STROBE_L
+         H2       N$54
+         J1       BUS_SECTOR_ADDR_3L
+         J2                *** unconnected ***
+         K1       N$56
+         K2       BUS_SECTOR_ADDR_2L
+         L1       BUS_SECTOR_ADDR_0L
+         L2       BUS_WRITE_GATE_L
+         M1       BUS_INDEX_L
+         M2       HEAD_SELECT_L
+         N1       BUS_FILE_READY
+         N2       BUS_SECTOR_PULSE_L
+         P1       BUS_WP_STATUS_L
+         P2       N$74
+         R1       BUS_READ_GATE_L
+         R2       BUS_WP_SET_L
+         S1       READ_CLOCK
+         S2       READ_DATA
+         T1       GND
+         T2       N$49
+         U1                *** unconnected ***
+         U2       N$79
+         V1                *** unconnected ***
+         V2                *** unconnected ***
+
+B03      A1                *** unconnected ***
+         A2       VCC
+         B1                *** unconnected ***
+         B2       -15V
+         C1                *** unconnected ***
+         C2       GND
+         D1       BUS_STROBE_L
+         D2                *** unconnected ***
+         E1       BUS_RESTORE_L
+         E2       SEEK_INCOMPLETE_L
+         F1       BUS_CA_00_L
+         F2       OSC_L
+         H1       BUS_CA_01_L
+         H2       ADDRESS_INVALID_L
+         J1       BUS_CA_02_L
+         J2                *** unconnected ***
+         K1       BUS_CA_03_L
+         K2                *** unconnected ***
+         L1       BUS_CA_04_L
+         L2                *** unconnected ***
+         M1       BUS_CA_05_L
+         M2                *** unconnected ***
+         N1       BUS_CA_06_L
+         N2                *** unconnected ***
+         P1       BUS_CA_07_L
+         P2                *** unconnected ***
+         R1                *** unconnected ***
+         R2                *** unconnected ***
+         S1                *** unconnected ***
+         S2                *** unconnected ***
+         T1       GND
+         T2                *** unconnected ***
+         U1                *** unconnected ***
+         U2                *** unconnected ***
+         V1                *** unconnected ***
+         V2                *** unconnected ***
+
+B04      A1       WRITE_H
+         A2       VCC
+         B1       WRITE_L
+         B2       -15V
+         C1       DATA_BITS
+         C2       GND
+         D1       SECTOR_SELECT_L
+         D2                *** unconnected ***
+         E1       CONSTANT_WRITE_L
+         E2                *** unconnected ***
+         F1                *** unconnected ***
+         F2       +3VA
+         H1                *** unconnected ***
+         H2                *** unconnected ***
+         J1       BUS_SECTOR_ADDR_3L
+         J2                *** unconnected ***
+         K1                *** unconnected ***
+         K2       BUS_SECTOR_ADDR_2L
+         L1       BUS_SECTOR_ADDR_0L
+         L2       BUS_WRITE_GATE_L
+         M1       BUS_INDEX_L
+         M2                *** unconnected ***
+         N1                *** unconnected ***
+         N2                *** unconnected ***
+         P1                *** unconnected ***
+         P2       DC_ERASE
+         R1                *** unconnected ***
+         R2                *** unconnected ***
+         S1                *** unconnected ***
+         S2                *** unconnected ***
+         T1       GND
+         T2                *** unconnected ***
+         U1                *** unconnected ***
+         U2                *** unconnected ***
+         V1                *** unconnected ***
+         V2       +3VC
+

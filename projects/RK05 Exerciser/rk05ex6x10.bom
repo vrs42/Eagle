@@ -1,0 +1,56 @@
+Partlist exported from C:/Program Files/EAGLE-4.11/projects/RK05 Exerciser/RK05ex6x10.sch at  1/28/2010 11:25:58a
+
+Qty Value      Device             Parts                                                                                                                                                
+18             255SB              BIT0, BIT1, BIT2, BIT3, CONSTANT_WRITE, CYL1, CYL2, CYL4, CYL8, CYL16, CYL32, CYL64, CYL128, DC_ERASE, FWD/REV, HEAD, RTZ, RUN                       
+3              BULB               ADDR_INV, POWER_ON, SEEK_INC                                                                                                                         
+1              FLOPPY-4           POWER                                                                                                                                                
+2   .001       C-US050-025X075    C39, C53                                                                                                                                             
+2   .001uf     C-US075-032X103    C34, C37                                                                                                                                             
+32  .01uf      C-US075-032X103    C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C26, C27, C28, C29, C30, C31, C32, C33
+4   .22uf      C-US050-025X075    C40, C41, C42, C43                                                                                                                                   
+1   .033uf     C-US075-032X103    C36                                                                                                                                                  
+3   0ohm       R-US_0207/10       R1, R2, R3                                                                                                                                           
+25  1K         R-US_0207/10       R4, R7, R10, R11, R16, R17, R18, R19, R24, R26, R27, R32, R33, R34, R35, R36, R37, R38, R39, R40, R41, R42, R43, R44, R45                            
+1   1M         R-US_0207/10       R31                                                                                                                                                  
+1   1N746      ZENER-DIODEDO35Z10 D5                                                                                                                                                   
+1   2N4894     2N4870             Q1                                                                                                                                                   
+1   5.6k       R-US_0207/10       R8                                                                                                                                                   
+6   6.8uf      CPOL-USE15-5AXIAL  C44, C45, C60, C61, C67, C68                                                                                                                         
+1   10K        R-US_0207/10       R25                                                                                                                                                  
+1   10K        TRIM_EU-B90P       R9                                                                                                                                                   
+1   22K        R-US_0207/10       R28                                                                                                                                                  
+1   27pf       C-US075-032X103    C62                                                                                                                                                  
+1   39uf       CPOL-USE15-5AXIAL  C52                                                                                                                                                  
+1   47pf       C-US075-032X103    C63                                                                                                                                                  
+1   50-1POLE30 50-1POLE30         SECTOR                                                                                                                                               
+2   50-3POLE30 50-3POLE30         DRIVE, FUNCTION                                                                                                                                      
+2   56K        R-US_0207/10       R5, R6                                                                                                                                               
+1   68         R-US_0207/10       R23                                                                                                                                                  
+8   74LS00N    74LS00N            E7, E10, E15, E17, E26, E27, E28, E29                                                                                                                
+2   74LS04N    74LS04N            E6, E12                                                                                                                                              
+2   74LS10N    74AS10N            E16, E23                                                                                                                                             
+1   74LS10N    74LS10N            E1                                                                                                                                                   
+2   74LS20N    74LS20N            E4, E24                                                                                                                                              
+1   74LS42N    74LS42N            E3                                                                                                                                                   
+4   74LS74N    74LS74N            E2, E5, E11, E18                                                                                                                                     
+2   74LS193N   74LS193N           E19, E20                                                                                                                                             
+2   100K       R-US_0207/10       R29, R30                                                                                                                                             
+1   100pf      C-US075-032X103    C38                                                                                                                                                  
+1   120        R-US_0207/10       R22                                                                                                                                                  
+4   180        GE09R              RN1, RN2, RN3, RN4                                                                                                                                   
+2   180        R-US_0207/10       R69, R147                                                                                                                                            
+3   330        R-US_0207/10       R12, R13, R21                                                                                                                                        
+4   390        GE09R              RN5, RN6, RN7, RN8                                                                                                                                   
+4   390        R-US_0207/10       R46, R50, R70, R148                                                                                                                                  
+1   470K       R-US_0207/10       R20                                                                                                                                                  
+2   470pf      C-US075-032X103    C25, C35                                                                                                                                             
+2   750        R-US_0207/10       R14, R15                                                                                                                                             
+1   74123N     74HCT123N          E14                                                                                                                                                  
+1   74123N     74LS123N           E8                                                                                                                                                   
+4   D664       1N4148             D1, D2, D3, D4                                                                                                                                       
+2   DEC40PINSV DEC40PINSV         J1, J2                                                                                                                                               
+1   DS8881N    DS8881N            E9                                                                                                                                                   
+7   DS75451N   DS75451N           E13, E21, E22, E30, E31, E32, E33                                                                                                                    
+1   LM741P     LM741P             E25                                                                                                                                                  
+1   MOM        255SB              WRITE_BUTTON                                                                                                                                         
+1   OPA1013P   OPA1013P           IC1                                                                                                                                                  
