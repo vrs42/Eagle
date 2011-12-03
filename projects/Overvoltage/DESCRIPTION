@@ -1,0 +1,6 @@
+Power Safety Switch
+<UL>
+<LI><b>max486x</b> is a drawing using the max486x chips to isolate valuable
+circuits from power supply anomalies.</LI>
+<LI><b>ncp346</b> is a drawing using the ncp346 chip to isolate valuable
+circuits from power supply anomalies.</LI>
