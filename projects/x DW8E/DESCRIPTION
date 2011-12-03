@@ -1,5 +1,6 @@
 DW8E I/O Interface
 <UL>
 <LI><b>dw8e</b> is DEC's Posibus/Negibus to Omnibus I/O adapter.</LI>
+<LI><b>M7101</b> is DEC's DW8E control logic board.</LI>
 <LI><b>M7102</b> is DEC's Posibus interface board.</LI>
 <LI><b>M7103</b> is DEC's Negibus interface board.</LI>
