@@ -1,4 +1,5 @@
 Diagram of the 20ma connections in 8i, 8L.
 <UL><LI><b>20ma</b> is a schematic of the various parts and their connections.</LI>
-<LI><b>4915</b> is a board similar to DEC's 4915.</LI>
+<LI><b>4915dec</b> is a drawing of DEC's 4915.</LI>
+<LI><b>4915</b> is a more modern board similar to DEC's 4915.</LI>
 </UL>
