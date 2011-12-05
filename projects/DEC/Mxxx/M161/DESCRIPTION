@@ -1,4 +1,6 @@
 Binary to Octal/Decimal Decoder
 <UL>
-<LI><b>M161</b> is an Eagle version of DEC's M161 Octal/Decimal Decoder module.
-</LI>
+<LI><b>M161</b> is an Eagle version of DEC's M161 Octal/Decimal Decoder module.</LI>
+<LI><b>M161C</b> is a drawing of DEC's M161C.</LI>
+<LI><b>M161x</b> is a version of revision C with design rules more suited to milling individual PCBs.</LI>
+</UL>
