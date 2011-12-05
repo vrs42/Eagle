@@ -2,3 +2,4 @@ Mark Track Decoder
 <UL>
 <LI><b>M228</b> is DEC's M228 Mark Track Decoder</LI>
 <LI><b>M228pnames</b> is a version where the pin names are used instead of signal names.</LI>
+<LI><b>M228A</b> needs a drawing.</LI>
