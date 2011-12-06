@@ -1,3 +1,5 @@
 PDP-8/i
 <UL>
 <LI><b>pdp8i</b> is a drawing of DEC's PDP-8/i computer backplane, rounded up from the CPU and option drawings.</LI>
+<LI><b>pdp8i-dec</b> is a drawing of DEC's PDP-8/i computer backplane.</LI>
+<LI><b>pdp8i-fpga</b> is a drawing of DEC's PDP-8/i computer backplane, tweaked for FPGA conversion.</LI>
