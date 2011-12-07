@@ -13,8 +13,12 @@ drive active loops (if the DC-DC converters are not available).</LI>
 for the jumper blocks.</LI>
 <LI><b>simple-loop-screws</b> is simple-loop-activevrs with screw terminals
 for use inside the TTY, instead of the more dangerous DB-9.</LI>
+<LI><b>simple-loop-screwsfixed</b> is simple-loop-screws with the pinout
+of the PS2501 and the EIA connector fixed.</LI>
 <LI><b>simple-loop-vrs</b> is simple-loop-screws, with the overlap of the
-DB-25 and the mounting hole fixed.  This is very close to what Charles 
+DB-25 and the mounting hole fixed.  This is very close to what Charles
 ordered the prototype from (he flipped some diodes around).</LI>
 <LI><b>simple-loop-v2</b> is simple-loop-vrs, with bugs fixed from the
 prototype, and the diodes flipped to match the prototype.</LI>
+<LI><b>simple-loop-v3</b> is simple-loop-v2, with the pinout of the PS2501 
+and the EIA connector fixed.</LI>
