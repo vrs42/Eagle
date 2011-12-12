@@ -25,6 +25,8 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
   ".sch",
   "front.jpg",
   "back.jpg",
+  ".wtb",
+  ".wts",
 # "brd.pdf",
 # "sch.pdf",
 # "hb.pdf",
@@ -35,14 +37,20 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
   "Eagle schematic",
   "Front side photo",
   "Back side photo",
+  "Want to buy",
+  "Want to sell",
   "Eagle board PDF",
   "Eagle schematic PDF",
   "Logic Handbook PDF",
 );
 
-$modules = "modules.txt";
-open(MODULES, ">$modules") || die "$modules: $!";
-print MODULES "Module\tVersions  Description\r\n";
+$modules = "modules";
+open(MTXT, ">$modules.txt") || die "$modules.txt: $!";
+print MTXT "Module\tVersions  Description\r\n";
+open(MHTM, ">$modules.htm") || die "$modules.htm: $!";
+print MHTM "<html><body><table border=0>\r\n";
+print MHTM "<tr><th align=left>Module";
+print MHTM "<th align=left>Versions<th align=left>Description</tr>\r\n";
 for $d1 ('Gxxx', 'Mxxx', 'Rxxx', 'Wxxx') {
   opendir(DIR1, $d1) || die "$d1: $!";
   open(STDOUT, ">$d1.htm") || die "$d1.htm: $!";
@@ -93,16 +101,19 @@ for $d1 ('Gxxx', 'Mxxx', 'Rxxx', 'Wxxx') {
       $i = 0;
       foreach $suf (@suffix) {
         if (-f "$d/$b$suf") {
-          print "<br><a href=$d/$b$suf>$desc[$i]</a>";
+          print "<br><a href=$WEBURL/$d/$b$suf>$desc[$i]</a>";
         } else {
-          print STDERR "$d/$b: no $desc[$i]\n";
+          print STDERR "$d/$b: no $desc[$i]\n" unless $suf =~ /^.wt/;
         }
         $i++;
       }
     }
-    print MODULES "$d2\t$versions\t  $desc\r\n";
+    print MTXT "$d2\t$versions\t  $desc\r\n";
+    print MHTM "<tr><td><a href=$WEBURL/$d1/$d2>$d2</a>";
+    print MHTM "<td>$versions<td>$desc</tr>\r\n";
   }
   print "<tr>\n</table>";
   print "</div>";
 }
-close(MODULES);
+close(MTXT);
+close(MHTM);
