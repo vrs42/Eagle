@@ -27,6 +27,7 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
   "back.jpg",
   ".wtb",
   ".wts",
+  ".xpl",
 # "brd.pdf",
 # "sch.pdf",
 # "hb.pdf",
@@ -39,6 +40,7 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
   "Back side photo",
   "Want to buy",
   "Want to sell",
+  "Have example",
   "Eagle board PDF",
   "Eagle schematic PDF",
   "Logic Handbook PDF",
@@ -97,13 +99,18 @@ for $d1 ('Gxxx', 'Mxxx', 'Rxxx', 'Wxxx') {
         print "<tr>\n";
         $column = 0;
       }
+      die "$d/$b: Inventory info conflict\n"
+        if -f "$d/$b.wtb" && -f "$d/$b.wts";
+      print STDERR "$d/$b: no Inventory info\n"
+        unless -f "$d/$b.wtb" || -f "$d/$b.wts" || -f "$d/$b.xpl";
       print "<td>$b:\n";
       $i = 0;
       foreach $suf (@suffix) {
         if (-f "$d/$b$suf") {
           print "<br><a href=$WEBURL/$d/$b$suf>$desc[$i]</a>";
         } else {
-          print STDERR "$d/$b: no $desc[$i]\n" unless $suf =~ /^.wt/;
+          print STDERR "$d/$b: no $desc[$i]\n"
+            unless $suf =~ /^.wt/ || $suf =~ /^.xpl/;
         }
         $i++;
       }
