@@ -107,7 +107,7 @@ for $d1 ('Gxxx', 'Mxxx', 'Rxxx', 'Wxxx') {
       $i = 0;
       foreach $suf (@suffix) {
         if (-f "$d/$b$suf") {
-          print "<br><a href=$WEBURL/$d/$b$suf>$desc[$i]</a>";
+          print "<br><a href=$WEBURL/$d/$b$suf>$desc[$i]</a>\n";
         } else {
           print STDERR "$d/$b: no $desc[$i]\n"
             unless $suf =~ /^.wt/ || $suf =~ /^.xpl/;
