@@ -1,1 +1,1 @@
-I have one of these in the flipchip expemplar collection.
+I have one of these in the flipchip exemplar collection.
