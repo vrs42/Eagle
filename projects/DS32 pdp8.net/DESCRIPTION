@@ -1,3 +1,4 @@
 DS32 replacement based on effort of Dave G. at www.pdp8.net.
 <UL>
-<LI><b>ds32</b> is the schematic of the main emulation board..</LI>
+<LI><b>ds32djg</b> follows Dave's schematic closely, laid out on one long and two standard paddles.</LI>
+<LI><b>ds32</b> is a start on a "shrink" using SMT.</LI>
