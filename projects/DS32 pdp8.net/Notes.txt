@@ -1,0 +1,3 @@
+The ds32djg boards only work DF32 with backplanes made from older Rxxx
+flipchips.  The newer, smaller backplanes made with Mxxx flipchips have
+different cabling to the DS32.
