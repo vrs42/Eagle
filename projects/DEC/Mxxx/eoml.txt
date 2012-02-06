@@ -1,0 +1,1143 @@
+MODEL	PROD	DES	STATUS		Height		DESCRIPTION
+NO	LINE	ENGR		MO/YR		Length	
+" Loads, Drivers"							
+M002	CAT		5	Jan-72	single	"5"""	"Resistor Network, 15 Ckts for a source of logic 1 (3V)"
+M002-YA	11	SR	5		single	"5"""	10 390 ohm resistor to GND & 5 180 ohm resistor to +5V
+M040	CAT		5		single	"5"""	"High Current Driver, 2 4-input gates, 70V, 600mA max/driver"
+M044	PERIPH		5	May-73	single	"5"""	"4 Solenoid drivers, 2 input AND gates, loads returned to neg voltage, 100ma, -30V max"
+M050	CAT		5		single	"5"""	"Inverter driver, 12 circuits, switch -30V and 50mA max/driver"
+M051	CAT		5		single	"5"""	"Level Converter, positive logic in and negative logic out, 12 circuits, open collector"
+M057			7		single	"5"""	"(Never made), Gate expander"
+M060	CAT	DCB	5		single	"5"""	"4 Drivers, 1.2 Amps and 50V"
+ Gates							
+M1000	QC	EWB	1	Nov-73	single	"5"""	"Dual 3-input ECL NOR gates (10111), 4 layer single 5, 5010874 (W9611)"
+M1001	QC	EWB	1	Nov-73	single	"5"""	"Quad 2-input ECL AND gate (10104), 4 layer single 5, 5010874 (W9611)"
+M1002	QC	EWB	1	Nov-73	single	"5"""	"Quad 2-input ECL NOR gate (10102), 4 layer single 5, 5010874 (W9611)"
+M1003	QC	EWB	1	Nov-73	single	"5"""	"Triple 2-3-2-input ECL OR/NOR gate, MC10105, 4 layer single 5, 5010874 (W9611)"
+M100	8	MA	5		single	"5"""	Negative Bus Equivalent to M101
+M101	CAT		5		single	"5"""	"2-input gates, 15 circuits, 1 common and one independent input"
+M102	8	MA	5		single	"5"""	Negative Bus Equivalent to M103
+M103	CAT		5		single	"5"""	"Device Selector for positive 8/I bus, 6-bit and IOP decoding"
+M104	15	DO	5		single	"5"""	"I/O bus Multiplex control for PDP-15 peripherals, see M194"
+M105	11	PJ	5	May-73	single	"8.5"""	Device Selector for PDP-11
+M106	14	AR	5		single	"5"""	Bus receiver with wired-OR output capability
+M107	MOD	JJO	5		double	"5"""	"Device Selector, 12 output pulses, 2 flags"
+M108	MOD	JJO	5				"Flag module for 12 bits & bus, general purpose, fits into E100"
+M109	11	PD	5	May-73	single	"8.5"""	"PDP-11 device selector with jumpers, bits 13 thru 17"
+M1091	11	PD	5	Feb-72	single		"Memory device selector, jumpers, bits 11 thru 17"
+M1103	MOD	BVN	5		single	"5"""	"2-input AND, 10 circuits, M113 pins, 7408 IC, KOR16-A"
+M111	CAT		5		single	"5"""	16 independent inverters
+M111-YA	SSCAL	BLE	3	Jun-73	single	"5"""	M111 with 74H01 instead of 7400 (open collector)
+M112	CAT		5		single	"5"""	"2-input NOR gates, 10 independent circuits"
+M1125	CAT	RF	5	Sep-73	single	"5"""	"2-input XOR gates, 10 circuits, M113 etch"
+M113	CAT		5		single	"5"""	"2-input NAND gates, 10 independent circuits"
+M1131	QC	RM	5	Apr-72	single	"5"""	M113 with open collector
+M115	CAT		5		single	"5"""	"3-input AND gates, 8 independent circuits"
+M116	CAT	DCB	5				"4-input NOR gates, 6 circuits, DEC8815's"
+M117	CAT		5		single	"5"""	"4-input NAND gates, 6 independent circuits"
+M119	CAT		5		single	"5"""	"8-input NAND gates, 3 independent circuits"
+M121	CAT		5		single	"5"""	"2-2 AND-NOR, 6 circuits"
+M122							Reserved for non-H version of M127
+M123			7	Nov-68			"Obsolete, renumbered to M133"
+M124							Reserved for non-H version of M129
+M126	10	WW	5	Jan-72	single	"5"""	"H version of M121, not pin compatible"
+M127	15	DO	5		single	"5"""	"2-2-2-3 AND-NOR, H, 3 circuits"
+M128	10	DREW	5	Jan-72			"4-4 AND-NOR, H, 3 circuits"
+M129	15	DO	5		single	"5"""	"4-4 AND-NOR, H, 4 circuits"
+M130	10	SU	5	Mar-72	double	"5"""	5 8-bit parity circuits + 5 2-input XOR gates (MC4008)
+M1307	16	RVN	5		single	"5"""	"4 input AND, 6 circuits, M117 pins, 74H21 IC, KOR16-B"
+M131			7	Mar-69			"Obsolete, H version of M111 (see M611)"
+M132	10	WW	1	Jul-69			"Adder (8260) 4 bits, KI10, 6 buffers"
+M133	CAT		5		single	"5"""	H version of M113
+M134	10	WW	1	Jul-69			"Adder, look ahead, used with M132, KI10"
+M135	CAT	DCB	5		single	"5"""	H version of M115
+M137	CAT	DCB	5		single	"5"""	H version of M117
+M139	CAT	DCB	5		single	"5"""	H version of M119
+M141	CAT		5		single	"5"""	"2-2-2-2 AND-NOR gates, 3 circuits, 2 inverters"
+M142	10	WW	5	Jan-72	double	"5"""	"Adder, discrete equivalent to M132, double"
+M143	10	SU	5	May-73	single	"5"""	"10 2-input NAND gates, with one pair sharing common input, KI10"
+M145	10	SU	5	Jan-72	single	"5"""	"3-input NAND gates, 7 circuits, 74H, KI10"
+M147	10	SU	5	Jan-72			"5 4-input NAND gates, 1 2-input NAND, 74H, KI10"
+M149	15	FA	5		single	"5"""	"9x2 NAND wired-OR, 2 sections of 9 2-input NANDs Ored to 9 outputs"
+M1500	CAT	DCB	5	Jan-72			"Bus gates module, PDP8/E or PDP11 bus"
+M1501	CAT	DCB	5	May-73			"Bus input interface, 8/E or 11 bus"
+M1502	CAT	DCB	5	Aug-72	double	"8.5"""	Bus output interface 8/E or 11 bus
+M1503	CAT				double	"8.5"""	"SPC General Purpose Input, H854"
+M151	10	ATT	5	Jan-72	single	"5"""	"Dual binary to octal with enable, H series, KI10, 74H20"
+M1510	CAT	DCB	5	May-73	double		"Bus device selector, PDP8/E bus"
+M152	10	ATT	5	Jan-72	single	"5"""	"M151 non-inverting, KI10, 74H21"
+M155	CAT	DCB	5				"1 of 16 decoder with enable, 74154 on board 50-08908A (W962)"
+M159	CAT	JJO	5		single	"5"""	"4 bit arithmetic logic unit (DEC 74181), uses 50-08908 board"
+M160	CAT		5		single	"5"""	"4-2-2-2-3 AND-NOR 4-2-2-4 AND-NOR, 2-2 AND-NOR"
+M1603	16	RVN	5				"RT T-decoder, 3 or 4 bit decoder"
+M161	CAT		5		single	"5"""	"Binary to octal/decimal decoder, 3 enable inputs"
+M162	CAT		5		single	"5"""	"Parity generator for 8/I, 4-bit input, odd & even parity out"
+M1621	CAT	JB	5	May-73	double	"8.5"""	DVM Data input interface
+M1622	CAT	JB	1	Sep-71	double	"8.5"""	DVM Remote control
+M1623	CAT	JB	5	Feb-72	quad	"8.5"""	Programmable power supply interface
+M163	8		5		single	"5"""	Dual binary to decimal decoder
+M164	15		5		single	"5"""	"6-bit adder for PDP-15, 2 adders for carry-in 1 or 0"
+M165	10	ATT	5	Jan-72	single	"5"""	"Memory buffer, inverting and non-inverting output from open collector, 8 channels for KI10"
+M166	10	SU	5	Jan-72	single	"5"""	"9-bit Counting Gate, KI10"
+M167	11	PM	5				"Compares 2 8-bit words, <, =, >"
+M168	CAT	JJO	5				"12-bit Comparator, <, =, >"
+M169	CAT		5		single	"5"""	"Functional gate module for PDP-12, 4 4-bit output multiplexors"
+M170	10	WW	5	Jan-72	single	"5"""	"3-3-3-2-2-2-2-2 AND-NOR & 3-2-2-2 AND-NOR, H series, KI10"
+M1701	CAT	DCB	5		single	"5"""	"4 to 1 MUX, 4 circuits, 50-08912 etch, 74153"
+M1702	MOD	JJO	7	Aug-72	quad	"8.5"""	Quad buffered 3 12-bit word interface
+M1703	MOD	JJO	5	May-73	quad	"8.5"""	Single 12-bit word 8/E interface
+M1704	MOD	JJO	2	Jan-72	quad	"8.5"""	Dual Async serial 8/E bus transceiver
+M1705	MOD	JJO	4	May-73	quad	"8.5"""	Dual 12-bit word Omnibus output interface
+M1709	MOD	JB	5	Nov-72	quad	"8.5"""	"8/E Universal interface, space for 16 16-pin + 2 40-pin Ics, partial wirewrap"
+M171	10	DREW	5	Jan-72	single	"5"""	"2-2-2-3 AND-NOR, 3 circuits, different pins than M127"
+M1710	CAT	JB	4	Aug-73			"Unibus DD11-A interface w/ wire-wrap pins, space for 19 16-pin Ics"
+M1713	CAT	DCB	5		single	"5"""	"16 to 1 MUX inverting, 74150, 50-08908 etch"
+M172	10	WW	5	Jan-72	single	"5"""	"2 En x 9 out mixer, 74H50, for KI10"
+M173	10	WW	5	Nov-71	single	"5"""	Non-inverting M143
+M174	10	WW	5	Jan-72	double	"5"""	"4 En x 9 out mixer, 74H53s, KI10"
+M175	10	WW	5	Jan-72	single	"5"""	"7 3-input AND gates, 74H, KI10"
+M177	10	WW	5	May-73	single	"5"""	Non-inverting M147
+M178	10	WW	5		double	"5"""	"8 En x 6 out mixer, 74H53, 74H62, KI10"
+M1801	CAT	JB	5	May-73	quad	"8.5"""	"16-bit Reed relay register, 100V or 0.5A, 10W"
+M181	10	WW	5	Jan-72	single	"5"""	Non-inverting M171
+M182	15	DD	5	May-73	single	"5"""	"M162 with fast Ics, 74H"
+M190	12	SNT	5				"4 Arithmetic logic, in & out buffers, 74181, FPP12"
+M191	CAT	DCB	5		single	"5"""	"2 Look-ahead elements (74182), uses W961 board, used with M190 or M159 (board 50-08912)"
+M192	12	SNT	5	Nov-71	single	"5"""	"2 8-bit Priority encoders, 9318 IC, 50-08912 board"
+M194	15	ELTA	5		single	"5"""	"I/O bus MUX controller for PDP9 peripherals (enable bus in/out -3V logic), see M104"
+ Flip-flops			4				
+M2000	DAS	RCR	2	May-73	double	"5"""	18-bit Register with parity
+M2001	CAT	RF	5	Aug-73	single	"5"""	2 4-bit tri-state D flip flop registers
+M202	CAT		5		single	"5"""	"3 JK flip-flops, S, CL, C"
+M203	CAT		5		single	"5"""	8 Set-reset flip-flops (M113 gates)
+M204	CAT		5		single	"5"""	"4 JK flip-flops, can do synchronous binary counting"
+M205	CAT	DCB	5		single	"5"""	"5 D flip-flops, all pins available"
+M206	CAT		5		single	"5"""	6 D flip-flops
+M207	CAT		5		single	"5"""	6 Independent JK flip-flops
+M208	CAT		5		single	"5"""	"8-bit Shift register & buffer register, D flip-flops"
+M209			7				"Never made, 8-bit up/down counter"
+M210			7				"Never made, 10-bit buffer, shift register"
+M2100	CSS	JTN	1	Sep-73	single	"8.5"""	"TTL output module, 16-bit register, open collector to H854"
+M2101	CSS	JTN	1	Sep-73	single	"8.5"""	"TTL input moduke, 16-bit register from H854, single, 8.5"""
+M211	CAT		5		single	"5"""	6-bit Up/down counter
+M212	12	CL	5		single	"5"""	"6-bit Left/right shift register, load from 2 sources (2-R212s)"
+M213	CAT		5		double		1 Decade BCD up/down jam counter with parallel read in
+M214	15	DO	5		single	"5"""	6-bit Accumulator with 3 inputs
+M215	15	LH	5				"4 Bits of 3 registers, common adder per bit, common clock per word"
+M216	8		5		single	"5"""	6 D flip-flops (M206 without clear jumper choice)
+M217	12	RI	5		single	"5"""	"Clock register for PDP-12, 4 bit counter with buffer register for preset or readout"
+M218	15		5		double	"5"""	"Bi-directional shift register, 9 bits, 2 parallel loads"
+M219	15		5		double	"5"""	7-bit synchronous counter with jam and clear presets
+M220	8		5		double	"5"""	"Register for PDP-8/I, 2 bits each of MA, MB, PC, AC, & adder"
+M221	12	CL	5		double	"5"""	Register for PDP-12 (M220 plus extra logic)
+M222	12	CL	5		double	"5"""	"Tape register for PDP-12, 2 bits, 6 registers"
+M223	15		5		single	"5"""	"Register for PDP-15, 4 bits, MA & MB"
+M224	11	JO	5		double	"8.5"""	"8 Bits with data paths for KA11, 2 latches, adder"
+M224-JA	11	JO	1	Jul-72	double	"8.5"""	System tested M224
+M225	11	JO	5	May-73	double		"Processor memory for KA11, 16 bits x 16 bits"
+M225-JA	11	JO	1	Jul-72	double		System tested M225
+M226	15		5	May-73	double	"5"""	"1 Bit, all registers (except ACC) for PDP-15"
+M227	15		5	May-73	double	"5"""	"Accumulator for PDP-15, 9 bits"
+M228	15		5	May-73	double	"5"""	"Mark track decoder for TC08, TC15"
+M229	15	DR	5				"4 Unit selector driver, VP15-M, 4 flip-flops with buffered output gates"
+M230	CAT	JJO	5				"Binary/BCD/binary converter, 12 bits, 5 MHz count rate"
+M231	12	SNT	5		double		"Dual 12-bit presettable repeatable counter, AIP12"
+M232	CAT	AR	5	May-73			16 Word 1 bit memory with common clear
+M233	8	WH	5	May-73			"12 Word shift register with parallel load, clear, common clock"
+M234	11	SR	5				"3 8-bit Registers, adder & L/R shift, KE11-A"
+M235	14	AR	5		double		"3 12-bit Registers, 2 storage & 1 CTS for 14/L"
+M236	MOD	JJO	5		single	"5"""	"12-bit Synchronous up/down counter with parallel load, board etch 50-08931"
+M237	MOD	JJO	5		single	"5"""	"3 Digit BCD synchronous up/down counter with parallel load, board etch 50-08931"
+M238	CAT	DCB	5		single	"5"""	"2 4-bit Synchronous up/down counters with parallel load, separate up & down clocks, board etch 50-08912"
+M239	11	PJ	5		single	"5"""	"3 4-bit Counters (8291's) or 74197, parallel load"
+M240	15		5		single	"5"""	6 RS Flip-flops made from 74H40 buffers
+M241	10	WW	5	Jan-72	single	"5"""	6 D Flip-flops (74H74) with common clock
+M242	15		5	May-73	single	"5"""	H version of M202
+M243	10	WW	5	Jan-72	single	"5"""	"8 D Flip-flops (74H74) with 2 common clocks, 4 bits each"
+M244	11	BD	5		single	"8.5"""	"6 circuits, each 3-input MUX w/latch, non-inverting, enables 4 & 2, 3 times"
+M245	CAT	DCB	5				"2 4-bit Shift Registers w/parallel read in, uses board 50-08912 (see W961)"
+M246	10	WW	5	Jan-72	single	"5"""	"5 D flip-flops, all pins available (74H74)"
+M247	10	SU	5	Apr-72	single	"5"""	"6 RS flip-flops, clocked to 6 D flip-flops"
+M248	CAT	DCB	5		single	"5"""	"8-bit Shift right, parallel load, 50-08914 etch, 7495"
+M249	14	AR	5		single	"5"""	12-bit Buffer register with open collector output gates
+ Memories							
+M250	10	ATT	5	Jan-72	single	"5"""	"16 Words, 4-bit memory (F9035), KI10"
+M2500	11	DI	5	Nov-72	single	"5"""	"2 64-word, 4-bit MOS 1st in 1st out memories, 50-09912, needs -12V"
+M251	10	ATT	7				"16 Words, 8-bit memory (F9033), M250 pins intended, KI10"
+M252	10	ATT	2	Oct-69			"16 Words, 4-bit memory (Motorola 4005L), KI10, M250"
+M253	10	ATT	5	Jan-72	single	"5"""	"16 Words, 12-bit memory (TI 7489)"
+M254	12	SNT	1	May-71	quad	"8.5"""	"256 20-bit, 3 256-word 4-bit RAM, 120ns"
+M255	10	TO	4	Jul-73	double	"5"""	"256 Words, 12-bit RAM (Intel 3106) + buffer"
+M259	11	BD	5		single	"8.5"""	"Associative memory, 2x8, shift register capability, KT11"
+M260	10	ATT	5	Jan-72	double	"5"""	"Associative memory, 4x12, KI10, Fairchild 4102 IC, 35ns match time"
+M261	CAT	DCB	5				"Slo syn/response stepping motor translator, 4 windings"
+M262	CAT	DCB	5				"Fujitsu/Warner stepping motor translator, 5 windings"
+M266	IPG	EK	6	Apr-71			K206 with input filters removed
+M270	10	DREW	1	Mar-72	single	"5"""	"256x12 ROM (74187), RF10"
+M2700	QC	EWB	1	Nov-73	single	"5"""	"8x12 ECL blastable PROM (10139), 4 layer, 50-10874 (W9611)"
+"One-shots, Delays"							
+M302	CAT		5		single	"5"""	2 One-shots
+M3020	CAT	MORO	5	Jul-73	single	"5"""	"2 One-shots to replace M302, hysterisis added to prevent noise triggering"
+M304	12	RI	5		single	"5"""	"4 One-shots, 100ns or 1us only"
+M306	MOD	JJO	5				"Integrating one-shot, 500ns minimum"
+M307	12	GPB	5		single	"5"""	"Dual integrating one-shot (F9601), 5us to 500ms"
+M3070	10	DREW	5	Jan-72	single	"5"""	Dual integrating one-shot 200ns to 20ms in 5 steps
+M308	10	SU	5	Apr-72	single	"5"""	"Integrating one-shot, edge or pulse triggered, clock, power up & down"
+M310	CAT		5		single	"5"""	"Tapped delay line, 500ns total, 50ns taps, 2 pulse amplifiers, IC levels in & out"
+M310-YA	8	AC	5	May-73	single	"5"""	M310 with FI inverted & 2.3us long
+M311	15		5		single	"5"""	"2 Tapped delay lines, 250ns each, 25ns steps"
+M312	15		5		single	"5"""	"6 100 ohm delays, 2 at 30ns, 3 at 50ns, 1 variable 0-40ns, 74H40 inputs"
+M321	10	ATT	5	Jan-72	single	"5"""	"M311 except one delay line, one output buffer can drive 30 TTL H loads"
+M360	CAT		5		single	"5"""	"Variable delay line, IC levels in (like 8360)"
+M362	10	SU	5	Jan-72	single	"5"""	"Delay, 25 to 50 ns"
+M363	10	SU	5	Jan-72	single	"5"""	"Delay, 15 to 30 ns, inverts"
+M380	IPG		5	Nov-71			"Single-shots, DR80"
+ Clocks							
+M401	CAT		5		single	"5"""	Variable Clock
+M402	15	ELIA	5		single	"5"""	"Remotely variable clock, Uses 5V photomod, 2Hz to 1MHz"
+M402-YA	SSCA	DPS	3	Jan-73	single	"5"""	"R8 changed to 680K, C1 to 1mfd (halves frequency)"
+M402-YB	SSCA	DPS	3	Jan-73	single	"5"""	"R8 changed to 680K, C1 to 3.9mfd"
+M403	CAT	JB	5	Mar-72			"Variable clock, 1KHz to 50KHz, 2 one-shots, 74123"
+M404	CAT	JB	5	Apr-72			"Crystal Clock, 2MHz to 5KHz binary or BCD countdown"
+M405	CAT		5		single	"5"""	"Crystal Clock, positive and negative pulse outputs, 5KHz to 10MHz"
+M4050	COM	SS	2	Sep-73			"Crystal Clock, 5KHz to 5Mhz, not tunable, no chokes"
+M4051	TYP	JG	1	Oct-73	quad	"8.5"""	"8/E Omnibus M4050, handle end fingers for DP8-E (M866)"
+M410	MOD	AR	5		single	"5"""	Resonant Reed Clock
+M410-YA	15	FA	1	May-70	single	"5"""	879 Hz M410
+M415	12		5				20 Mhz Crystal Clock
+M420	15	ELIA	5		double	"5"""	"Phase Lock Clock, RP09, RP15"
+M4201	PERIPH	PM	5				"Phase Lock Clock, RS64, 750 KHz"
+M430	MOD	DCB	6	Apr-71	double	"5"""	"Multiplies frequency by .001*x^n, 0<=X<=10, 0<=N==3"
+M452	CAT		5		single	"5"""	"Teletype Clock, square waves at 880Hz and 220Hz for M706, M707"
+M452-YA	FS	FMS	1	Oct-71	single	"5"""	5.65us M452 for PMK02
+M453	8	WH	2	Feb-70	single	"5"""	M452 with variable frequency
+M454	11	VB	5		single	"8.5"""	"Crystal Clock w/simultaneous outputs of 28.8,19.2,9.6.4.8,2.4,1.76, 2.152 KHz, DC11-A, DP11-A"
+M4540	11	MC	2	Aug-73	single	"5"""	M454 with more frequencies available
+M455	8	HDF	5	Aug-73			"Variable Clock, 2 ranges, 4-20ms, 0.4-2ms, by jumper"
+M499	8/E	WH	1	Nov-70			100 KHz clock - pulls MEM START in 8/E
+ Input Converters							
+M5000	QC	EWB	1	Dec-73	single	"5"""	"4-channel ECL to TTL converter, MC10125, 50-10874, 4 layer (W9611)"
+M500	CAT	DCB	5		single	"5"""	Negative Bus Receiver (Negative equivalent to M510)
+M501	CAT		5		single	"5"""	Schmitt Trigger
+M502	CAT		5		single	"5"""	"Negative Input Converter, 2 channels, 0 and -3V in"
+M503	12	RI	5		single	"5"""	"Differential Schmitt, 2 channels, pulse amplifier in each"
+M503-YA	FS	ERK	5	Oct-73	single	"5"""	"Replace MC1709 with LM0024 to make faster, BL01"
+M504	8		7	Mar-72			"4 Schmitt triggers, 4 one-shots"
+M506	CAT		5		single	"5"""	"Negative Input Converter, 6 channels, 0 and -3V in"
+M506-YA	CSS	EK	2	Sep-69	single	"5"""	M506 with 470 ohm input resistors changed to 300 ohms
+M507	CAT		5		single	"5"""	"Negative bus to positive bus converter, 6 circuits, open collector outputs, GND in = GND out"
+M508	8	JO	5		single	"5"""	"Negative bus to positive bus converter, 6 circuits, open collector outputs, GND in = positive out"
+M509	14	AR	5	May-73			10 Differential Bus Receivers (F9622) 130 ohm differential terminators
+M510	CAT	DCB	5		single	"5"""	"I/O Bus Receiver, 8 circuits, positive bus"
+M510-YA	12	AW	6	Apr-71	single	"5"""	M510 modified to accept RTL inputs with 1V threshold
+M511	10	WW	5	Nov-71	single	"5"""	"Unibus Reciever, 15 circuits, 4 GND, DS11, DL10"
+M514	PERIPH		5		double	"5"""	"TU10 Transceiver (for connection to TC58, TC59, & TM10), see M519"
+M515	12		5		single	"5"""	"Real Time Clock, 12VAC input on tabs, uses +11V & +5V"
+M516	8	JO	5		single	"5"""	"Positive Input Receiver, 6 circuits, 1.4V threshold (M506 pins)"
+M517	8	MA	5	May-73	single	"5"""	M507 with an enable input
+M518	8/E	LN	5	Nov-71			"3 Differential Schmitts & 8-bit input register (A503 circuits), DS8-EA"
+M519	PERIPH		1	Jan-71			"TU10-C, TU10-D Bus Transceiver, see M514"
+M520	MOD		5				"Positive Bus Receiver with strobe, 6 channels, high impedance"
+M521	CAT	JB	5				"4 channel K to M converter w/schmitt trigger, inverting and non-inverting outputs"
+M521-YA	MS	AW	3	Oct-72			"M521 w/3 circuits w/1ms time constant, 1 circuit standard"
+M522	TYP	FP	5	Aug-73	single	"5"""	"2 Input Converters 0 & -6V 1.6mA, 40us, 1 channel + 15V & 0V 2 channels 0 & 5V clamps w/filter (for photocomp)"
+M523	TYP	JW	1	Nov-73	single	"5"""	Selectable range input converter + Selectable load resistors & voltage
+M530	MOD		7	Jul-69			"Never built, Negative Bus Receiver"
+M531	PERIPH		5		single	"5"""	8 channel Negative Bus Receiver with noise filtering (M500 pins)
+M563	10	DREW	2	Jul-72	single	"5"""	"4 Transmitters & 4 Receivers, RS10"
+M564	10	SU	5	Jan-72	single	"5"""	"I/O Bus Receiver, 8 circuits, negative bus, positive logic, light input load"
+M565	10	SU	2	Nov-70	single	"5"""	"Memory Bus Receiver, 8 circuite, negative bus, positive logic"
+M570		AR	7				"Never built, EIA Input Converter to TTL output, replaces W570, 5V instead of 10V, 4 channels"
+M586	11	MC	2	Aug-73	double	"8.5"""	1 channel Asynchronous modem DF11-BA (Bell 113A) originate only
+M587	11	MC	2	Aug-73	double	"8.5"""	1 channel Asynchronous modem DF11-BB (Bell 113B) answer only
+M588	CSS	BMW	2	Nov-73	single	"8.5"""	"4 channel differential send/receive for DM11 (DM8820, DM8830)"
+M589	14	AR	5	Nov-72	single	"5"""	"1 channel optical coupled 45 ohm 200 Kc send and receive, w/mate-n-lock"
+ Input/Output Converters							
+M590	CSS	PETERS	3	Feb-70			"Differential Send/Receive for Mark Century Interface, 2 channels"
+M5900	11	VB	4	May-73	double	"8.5"""	"16 channel TTL receiver, DJ11"
+M5901	11	VB	4	May-73	double	"8.5"""	"16 channel EIA receiver, DJ11"
+M5902	11	VB	4	May-73	double	"8.5"""	"16 channel full duplex TTY transceiver, DJ11"
+M5903	11	POT	4	Sep-73	double	"8.5"""	Mass Bus Terminal Transceiver
+M5903-YA	11	POT	2	Aug-73	double	"8.5"""	M5903 with terminator
+M5904	11	POT	4	Sep-73	double	"8.5"""	Mass Bus Control Transceiver
+M591	11	VB	5		single	"8.5"""	"5 channel EIA to DEC, 4 channel DEC to EIA"
+M592	10	SU	5	Jan-72	single	"5"""	I/O Device Select (used with M71000)10 74H IC's
+M593	CSS	KB	2	Apr-72	single	"5"""	"6 channel Differential Receiver, NS8820"
+M594	11	RL	5		single	"8.5"""	"8 channel EIA-CCITT to DEC, 7 DEC to EIA-CCITT, DF11-A, 1V hysteresis"
+M594-YA	11	RL	1	Jun-73	single	"8.5"""	M594 + clock recovery
+M594-YB	11	SS	2	Jul-73	single	"8.5"""	M594 with 3V hysteresis
+M5940	10	WW	5	Mar-72	single	"5"""	"M594 single 5"""
+M5941	CSS	SPRY	1	Aug-72	single	"8.5"""	8 channel MIL 188C to DEC Interface for DFS11-H
+M5942	11	SS	2	Oct-73	double	"8.5"""	"8 channel EIA-CCITT to DEC, 7 DEC to EIA-CCITT, 300, 600, 1200, 1800 baud crystal clock, DF11-L"
+M5943	CSS	DRS	2	Sep-73	single	"8.5"""	"5 channel EIA-CCITT to TTL, 4 channel TTL to tri-state"
+M595	11	RL	5	Aug-72			"Current mode converter for 301 and 303 modem, DF11"
+M596	11	MC	5	Jul-73	single	"8.5"""	"20mA to DEC, DEC to 20mA, 4 channels each, DF11, replaced by M5960"
+M5960	11	DR	2	Jul-73	single	"8.5"""	Replaces M596
+M597	COM	DR	5	Nov-71	single	"5"""	"6 channel IBM receiver, positive bus, 50-08912, Signetics 8T14 (W961)"
+M598	COM	RF	5	May-73	single	"8.5"""	"1 channel optical coupled 20mA to DEC send & receive, DF11-K"
+M599	COM	VB	2	Oct-71	single	"8.5"""	4 channel transmit & receive Western Union High Level (+/-6V 10mA) Telex
+ Output Converters							
+M6000	QC	EWB	1	Nov-73	single	"5"""	"Quad TTL to ECL translator (10124), 4 layer, 30-10874 (W9611)"
+M602	CAT		5		single	"5"""	2 Pulse Amplifiers
+M603	10	WW	5	Jan-72	single	"5"""	"2 Pulse Amplifiers, negative edge in, 1 positive 60ns & 1 positive 45-100ns out, 4 2-input NANDs (74H00), 3 3-input ANDs (74H11)"
+M606	CLP	JJO	5		single	"5"""	6 Pulse Amplifiers
+M610	CLP	JJO	5				"6 2-input NANDs, open collector (M620 pins)"
+M611	15	ELIA	5		single	"5"""	"14 Power Inverters, 6 grounds"
+M612	10	ATT	5	Jan-72	single	"5"""	"6 Power Gates, 6 grounds, 5 inputs per gate pair"
+M617	CAT		5		single	"5"""	6 4-input NAND buffers
+M620	MOD		7	Jul-69			"Never made, Positive Bus Driver with strobe, 6 circuits, bus grounders"
+M621	15	ELIA	5		single	"5"""	"Bus Driver, 6 circuits, enables for each of 2 6-bit words"
+M622	CAT	DCB	5		single	"5"""	"Bus Grounder, 8 circuits, 74H50, for memory and I/O bus, 2 input neg and ea"
+M623	CAT	DCB	5		single	"5"""	"Bus Driver, 12 circuits, open collector, 100mA at ground"
+M624	CAT		5		single	"5"""	"Bus Driver, open collector, 12 inputs & 1 enable, 2 inputs & enable, 1 input inverter, 100mA at ground"
+M6240	SSCAL	DPS	3	Aug-72	single	"5"""	M624 with 300mA output at ground
+M625	15	JZ	5	May-73			"Bus Switch for PDP-15, 8 circuits"
+M626	IPG		5	May-73			M623 with ground isolation (with transformers)
+M627	CAT		5		single	"5"""	"6 4-input NAND Buffers, H version of M617"
+M628	15	ELIA	5	May-73	single	"5"""	"3 switches, 2 bit adder, 1 M621 type driver, for MX15"
+M629	10	WW	5	Nov-71	single	"5"""	"Bus Driver, 11 circuits, for positive bus, PDP11, 8881's"
+M630	MOD		7	Jul-69			"Never made, Negative Bus equivalent to M620"
+M631	15	ELIA	5		single	"5"""	Negative Bus equivalent to M621
+M632	CAT	DCB	5		single	"5"""	Negative Bus equivalent to M622
+M633	CAT	DCB	5				Negative Bus equivalent to M623
+M633-YA	SSCAL	RWI	3	Jun-73			M633 with inverted outputs
+M636	IPG		5	May-73			M633 with ground isolation
+M640	PERIPH	MDM	5				TU10 Bus Drivers (30 circuits)
+M650	CAT		5		single	"5"""	"Negative output converter, 3 channels, R650 type outputs"
+M651	8	JD	5		single	"5"""	M650 with outputs clamped to ground when 5V goes away
+M652	CAT		5		single	"5"""	"Negative output converter, 2 channels, 0 & -1V output"
+M660	CAT		5		single	"5"""	"Positive Level Driver for 8/I bus, 3 circuits, +/-50ma output"
+M661	CAT		5		single	"5"""	"Positive Level Driver for 8/I bus, 3 circuits, output clamped to +3V, M660 pins"
+M662	8	PS	5				"Non-inverting Bus Drivers for KVGS (VT02), 6 circuits, 6us rise & fall into open line"
+M663	10	SU	5	May-73	single	"5"""	"3 negative Memory Bus Drivers, positive input, 50 ohm load, KI10"
+M664	10	SU	5	Jan-72	single	"5"""	"I/O Bus Driver, 0 to +3V in, 0 to -3V out, 8 circuits"
+M665	10	SU	5	Jan-72	single	"5"""	"Memory Bus Driver, 0 to +3V in, 0 to -3V out, 8 circuits"
+M665-YA	CSS	DH	3	May-73	single	"5"""	M665 with 130ns outputs
+M666	10	SU	5	Feb-72	single	"5"""	"I/O Bus Reset, 12 outputs, 20mA@-3V, 1/3 duty factor max"
+M667	10	DREW	7	Oct-73	single	"5"""	"Photo-coupled Isolator, 4 circuits, RS10"
+M670		AR	7	Jun-72			"Never made, EIA line driver, 4 circuits, to replace W670 except +5V instead of +10V"
+M671	CAT	JB	5				"M to K series converter, 4 circuits"
+M681	IPG	MORO	4	Aug-73			Isolated M685 Relay Driver
+M683	IPG		5		double		"6 Relay Drivers, K683 circuit, DR80"
+M684	IPG		5				12 bit flip-flop Relay Driver for UDC (DD01)
+M685	IPG		5				16 bit M684
+M685-YA	IPG	BWH	3	May-73			M685 with 55V 500mA output
+M686	IPG		5				12 bit Single Shot Relay Driver for UDC (DD01)
+M687	IPG		5	Jan-72			16 bit M686
+M688	11	CA	5	Sep-72	single	"5"""	Unibus Power Fail Driver
+M689	CSS	SPRY	2	Oct-73	quad		"30 Solenoid Drivers, 330mA up to 30V, uses BC40F cable"
+M693	CSS		2	Mar-72			"6 channel Differential Driver, N8830"
+M694	CSS	BV	2	Mar-72			"4 channel CDC 3000 Driver, +/-20mA, 2 input negative OR"
+M697	COM	DR	5	Nov-71	single	"5"""	"4 channel IBM Transmitter, Signetics 8T13, 50-08912 (W961)"
+ Complex Logic Modules							
+M700	8		5	May-73	double	"5"""	"Manual Timing Generator-Filter, one-shots, 8/I, 8/L"
+M7000	15		5		quad	"8.5"""	Cursor Control for VT05
+M7001	15	DOANE	5	Nov-71	quad	"8.5"""	"Character Generator & Timing, VT05"
+M7002	15	DOANE	5		quad	"8.5"""	"MOS Memory & Memory Timing, VT05"
+M7003	15		5	Nov-71	quad	"8.5"""	"I/O Interface, VT05, up to 300 baud"
+M7004	15		5	Nov-71	quad	"8.5"""	"I/O Interface, Vt05, up to 2400 baud"
+M7005	15		1	Jan-71	quad	"8.5"""	M7004 plus transmit option
+M7006	15	DOANE	1	Sep-71			Split Screen Option for VT05
+M7007	TYP	TM	4	May-73	quad	"8.5"""	"FK11 Control, VT20"
+M7008	TYP	TM	2	May-73	hex	"8.5"""	"Display Control, VT20"
+M7009	TYP	TM	4	Aug-73	hex	"8.5"""	"Data Interface, FT10"
+M701	8	JDL	5	May-73		"5"""	"Display Control, VC8/I"
+M7010	LDP	HL	5	Nov-71	double	"8.5"""	"Timing & Control, VV15"
+M7011	LDP	HL	4	May-73	single	"5"""	"UART Serial Interface, H854 + split lugs, LK40"
+M7012	LDP	AA	1	Mar-72	single	"8.5"""	"768x8 ROM, no ROMs included, simulates PC05, plugs into PC05 cable slot"
+M7013	LDP	GEG	4	May-73	hex	"8.5"""	"Vector Generator & Character Generator Control, VT40"
+M7014	LDP	BQ	4	May-73	quad	"8.5"""	Unibus Control & Bootstrap for VT40
+M7014-YA	LDP	BQ	2	May-73	quad	"8.5"""	M7014 with no bus terminators
+M7015	LDP	AW	4	May-73	quad	"8.5"""	Unibus Interface for LPS
+M7016	LDP	AW	4	May-73	quad	"8.5"""	"Programmable Real Time Clock with 3 Schmitt Triggers, LPSKW"
+M7017	LDP	AW	4	May-73	quad	"8.5"""	"Digital I/O, 16 bits, TTL levels, similar to M863, LPSDR"
+M7018	LDP	AW	4	May-73	double	"8.5"""	"A/D Control, LPSAD-12, LPSAD-15, used with A804, A865, A406"
+M7019	LDP	AW	4	May-73	double	"8.5"""	"Display Control, LVSVC, color tube, storage tube & plotter capability"
+M7020	LDP	AW	4	May-73	double	"8.5"""	"LPSAD-NP; NPR Control, LPSAD"
+M7021	LDP	HL	4	Jul-73	quad	"8.5"""	M7014 with bus terminators only
+M7022	LDP	BQ	1	May-73	double	"8.5"""	"Logic Interface, VW40"
+M7023	LDP	ML	2	Sep-73	quad		"Digital I/O, 16 bits, latch choice, interrupt on any input bit, LPSDR-A"
+M703	8		5		single	"5"""	"Power Fail Logic, 8/I"
+M7030	CSS	PWD	1	Nov-72	quad	"8.5"""	Control for CTS11-J
+M7031	CSS	PWD	1	Nov-72	double	"8.5"""	"Drivers, Receivers, Code Converter for CTS11-JA"
+M7032	CSS	PWD	1	Nov-72	double	"8.5"""	"Drivers, Receivers, Code Converter for CTS11-JB"
+M7033	CSS	JTN	2	Oct-73			Scanner Module for use with Hickok card equipment
+M7034	CSS	JTN	2	Oct-73			80 Column Driver for use with Hickok card equipment
+M7035	CSS	JTN	2	Oct-73			22 Column Driver for use with Hickok card equipment
+M7036	CSS	JTN	2	Nov-73			Diode Module Assembly for use with Hickok card equipment
+M704	8		5		double	"5"""	"Plotter Control, 8/I"
+M7040	CSS	JTN	1	Nov-72	quad	"8.5"""	"X-Y Register Card, VB08"
+M7044	CSS	JTN	1	Nov-72	quad	"8.5"""	"Vector Control, VB08"
+M7045	CSS	JTN	2	Sep-73	quad	"8.5"""	"Vector Data Card, VB08"
+M705	8		5	May-73	double	"5"""	"Reader Control, 8/I"
+M7050	PERIPH	MDL	5		double	"5"""	Reader Control with feed hole strobe & feed hole transistion out-of-tape sense
+M7050-YA	8	KQ	3	May-73	double	"5"""	M7050 modified to drive PR68
+M706	CAT		5		double	"5"""	"Asynch Line Receiver, 8 or 5 bit, positive logic (equivalent to 4706)"
+M7065	11	RL	5	May-73	single	"8.5"""	"Synch Line Receiver, 6, 7, or 8 bits"
+M707	CAT		5		double	5'	"Asynch Line Transmitter, 8 or 5 bit, positive logic (equivalent to 4707)"
+M7075	11	RL	5		single	"8.5"""	"Synch Line Transmitter, 6, 7, or 8 bits"
+M708	8	JO	5		single	"5"""	"Clock Control, 8/I"
+M709	8	JO	5		double	"5"""	"Clock Counter, 8/I"
+M710	8		5		double	"5"""	"Punch Control, 8/I"
+M710-YA	TYP	ER	6	Apr-71	double	"5"""	M710 with shorter punch done delay recovery time
+M7100	10	SU	5	Feb-72	single	"5"""	"I/O Device Control, used with M592, 10 74H IC's"
+M7101	TPL	ER	4	Jul-73	double	"8.5"""	"Timing, takes 8+ to generate 8/E timing, DW08-E"
+M7102	TPL	ER	4	Jul-73	double	"8.5"""	"AC Transfer, DW08-E"
+M7103	TPL	ER	4	Jul-73	double	"8.5"""	"Data Transfer, DW08-E"
+M7104	TPL	SG	4	May-73	quad	"8.5"""	"Data Buffer & Status, RK8-E"
+M7104-YA	TPL	SG	2	Mar-73	quad	"8.5"""	Modified for DW8-E
+M7105	TPL	SG	4	May-73	quad	"8.5"""	"Major Registers, RK8-E"
+M7105-YA	CSS	LO	1	Jul-72	quad	"8.5"""	Modified for CODON RK8-E
+M7105-YB	TPL	SG	1	Mar-73	quad	"8.5"""	Modified for DW8-E
+M7105-YC	CSS	LO	2	Nov-73	quad	"8.5"""	Modified for RKS8-E
+M7106	TPL	SG	5	Oct-73	quad	"8.5"""	"Control, RK8-E"
+M7106-YA	CSS	LO	1	Aug-73	quad	"8.5"""	Modified for CODON RK8-E
+M7106-YB	CSS	LO	2	Nov-73	quad	"8.5"""	Modified for RKS8-E
+M7107	CSS	LO	1	Jan-73			4096 Word Count Transfer Module
+M711	12		5		double	"5"""	"Scope Control, PDP-12"
+M7110	10	WW	5	Jan-72	quad	"8.5"""	"Synch Modem Interface, DS11"
+M7111	10	DREW	4	May-73			"Error Correction, RF10, 5 bit correction/128 36 bit words"
+M7112	10	SU	4	May-73	double	"8.5"""	Control for MF10
+M712	8	ADL	5				Display Control for KV8/I
+M713	8	PS	5				Multiplex Interface for KV8/I
+M714	8		5		single	"5"""	"Control Logic I, CR8-I, CR8-L"
+M715	8		5		double	"5"""	"Reader Clock, PC8/I, clock accelerator, pulse amplifiers, non-IC parts of M705"
+M715-YA	8	KQ	3	May-73	double	"5"""	M715 modified for PR68
+M715-YB	CSS	BM	2	Jan-72	double	"5"""	M715 modified for longer start-up time
+M716	8		5		double	"5"""	"Control Logic II, CR8-I, CR8-L"
+M717	15	FA	3	May-73	double	"5"""	"Display Control, VP09, VP15"
+M7170	15	HL	4	Jul-73	double	"8.5"""	PDP15 to MM11-L Interface
+M7171	15		1	Feb-72	single	"5"""	"Color Switch, VP15-D"
+M718	11	RH	4				Bus Interface for PDP-11
+M719	12	CL	5	May-73	single	"5"""	"Clock Sync & Decade Counter, KW12"
+M720	8		5		single	"5"""	"Non-existant Memory Detection, integrating one-shot, other one-shot, & misc. logic"
+M721	11	JO	5		single	"2.5"""	"Bus Interface I, KA11, 8 bits gated in and out"
+M7210	11	SR	5		quad	"8.5"""	"Data Control, KE11-A"
+M7211	11	SR	5		quad	"8.5"""	"Register Control, KE11-A"
+M7212	11	VB	5		single		"Address Line Repeater, DB11, 75ns per each of 10 channels"
+M7213	11	VB	5	May-73	double	"8.5"""	"Bus Repeater Control, DB11"
+M7213-YA	CSS	FA	3	May-73	double	"8.5"""	"M7213 Modified by special systems, 2 etch cuts, 2 jumpers"
+M7214	11	CRB	1	Sep-70	double	"8.5"""	"Reader Card, PDP11-MA"
+M7215	11	CRB	1	Sep-70	double	"8.5"""	"Reader Interface, PDP11-MA"
+M7216	11	CMD	5	Nov-71	double	"8.5"""	"Priority & Control, KC11"
+M7216-YA	11	JO	5	Apr-72	double	"8.5"""	M7216 for KH11-A
+M7217	11	JO	5		single	"8.5"""	"Power Fail & Restart, KP11-A"
+M7218	11	JO	5				Bus Requests
+M7219	11	KK	5	Nov-71	quad	"8.5"""	"Bus Interface, RC11"
+M722	11	PD	2				"A Source & Timing, MM11"
+M7220	11	KK	5	Nov-71	single	"8.5"""	"Clock Control, RC11"
+M7221	11	KK	5	Jan-72	quad	"8.5"""	"Disk Interface, RC11"
+M7222	11	KK	5	Jan-72	quad	"8.5"""	"Status Control, RC11"
+M7223	11	RL	5	Nov-71	quad	"8.5"""	"Control, DP11-AA"
+M7224	11	KK	5	Jan-72	single	"8.5"""	"Unit & Track Selector, RC11"
+M7225	11	KK	5	Jan-72	single	"8.5"""	"Status Control Extender, RC11"
+M7226	11	VB	5	Jan-72	double	"8.5"""	"Control, DN11"
+M7227	CSS	GSZ	4	Aug-73	double	"8.5"""	"Plotter Control, XY11"
+M7228	11	BDW	5	Jan-72	quad	"8.5"""	"Real Time Programmable Clock, KW11-P"
+M7229	11	BPF	4	May-73	double	"8.5"""	DR11-B Interface for DA11-B
+M723	11	PD	7	Jun-69			"Never built, Logic for MM11"
+M7231	11/40	RAA	4	May-73	hex	"8.5"""	"Data Paths, KD11-A"
+M7232	11/40	RAA	5	Jan-73	quad	"8.5"""	"U Word, KD11-A"
+M7233	11/40	RAA	5	Jan-73	hex	"8.5"""	"IR Decode, KD11-A"
+M7234	11/40	RAA	4	May-73	hex	"8.5"""	"Timing, KD11-A"
+M7234-YA	11/40	RAA	1	Mar-73	hex	"8.5"""	M7234 as used in 2338-3 XOR Tester
+M7235	11/40	RAA	4	May-73	hex	"8.5"""	"Processor Status, KD11-A"
+M7235-YA	11/40	RAA	1	Mar-73	hex	"8.5"""	M7235 as used in 2238-3 XOR Tester
+M7236	11/40	PJ	4	May-73	hex	"8.5"""	"Memory Management, KT11-D"
+M7237	11/40	PJ	5	Aug-72	single	"8.5"""	Stack Limit Register
+M7238	11/40	RAA	4	May-73	hex	"8.5"""	"EIS (Expanded Instruction Set), KE11-E"
+M7239	11/40	RAA	4	May-73	quad	"8.5"""	"FIS Control, KE11-F"
+M724	11	JO	5		quad	"8.5"""	"Bus & Console Control, KA11"
+M724-JA	11	JO	1	Jul-72	quad	"8.5"""	System Tested M724
+M724-YA	11	JO	5	May-73	quad	"8.5"""	M724 for KH11-A
+M7240	11	VB	5	May-73			DM11-A Control
+M7241	11	VB	5	May-73	quad	"8.5"""	DM11-B Control
+M7242	11	VB	5	May-73			DM11-C Control
+M7243	11	VB	5	May-73			DM11 Transmitter D
+M7244	11	VB	5	Nov-71			DM11 Transmitter E
+M7245	11	VB	4	May-73	quad	"8.5"""	DM11 Receiver
+M7246	11	RL	4	May-73			"Modem Control Scan, 16 lines, DM11-BB"
+M7247	11	RL	5	Feb-72	double		"Modem Control Mux, 8 lines, DM11-BB, see M7807, M7808"
+M7248	11	VB	5	Jan-72	single		Unibus Repeater BBSY
+M7249	11	MC	5	Apr-72	single	"5"""	"Hollerith Check (multiple ones error detector), CD11"
+M725	11	JO	5		quad	"8.5"""	"Bus Interface & IR, KA11"
+M725-JA	11	JO	1	Jul-72	quad	"8.5"""	System tested M725
+M725-YA	11	JO	5	May-73	quad	"8.5"""	M725 for KH11-A
+M7250	11	GH	7	Sep-72	hex	"8.5"""	"MOS Memory Matrix, 4Kx18"
+M7251	11	RL	5	May-73	double	"8.5"""	"XOR & CRC Block Check, KG11-A"
+M7252	11	BD	1	Sep-71			64x16 ROM Bootstrap
+M7253	SSCAL	OF	3	Sep-73			11 to Lear Siegler 7700 Terminal
+M7254	11	ORR	4	May-73	quad	"8.5"""	"Status Control, RK11-D"
+M7255	11	ORR	4	May-73	quad	"8.5"""	"Disk Control, RK11-D"
+M7256	11	ORR	4	May-73	quad	"8.5"""	"Registers, RK11-D"
+M7257	11	ORR	4	May-73	quad	"8.5"""	"Bus Control, RK11-D"
+M7258	11	LC	4	May-73	quad	"8.5"""	"Interface, LS11"
+M7259	11	MOOR	4	May-73	double	"8.5"""	"Parity Control, MF11-LP"
+M726	11	JO	5		quad	"8.5"""	"Instruction Register Decoder, KA11"
+M726-JA	11	JO	1	Jul-72	quad	"8.5"""	System tested M726
+M726-YA	11	JO	5	May-73	quad	"8.5"""	M726 for KH11-A
+M7260	11/05	SNT	4	May-73	hex	"8.5"""	"Data Paths, KD11-B"
+M7261	11/05	SNT	4	May-73	hex	"8.5"""	"Control Logic & Microprogram, KD11-B"
+M727	11	JO	5		quad	"8.5"""	"State Control, KA11"
+M727-JA	11	JO	1	Jul-72	quad	"8.5"""	System tested M727
+M727-YA	11	JO	5	May-73	quad	"8.5"""	M727 for KH11-A
+M7270	11				quad	"8.5"""	
+M7271	SSU	GO	1	Jan-72	quad	"8.5"""	CA11 Board 1
+M7272	SSU	GO	1	Jan-72	quad	"8.5"""	CA11 Board 2
+M7273	SSU	GO	1	Jan-72	quad	"8.5"""	CA11 Board 3
+M7274	SSU	GO	1	Jan-72			"CA11 Board 4, Terminator, 50-09045"
+M7275	SSU	MUT	2	Apr-72	double	"8.5"""	"Punch Interface, BRPE-11"
+M7276	SSU	MUT	2	Apr-72	double	"8.5"""	Trend Reader Interface
+M7277	11	MC	4	May-73	hex	"8.5"""	"Transmit Scanner & NPR, DH11"
+M7278	11	MC	4	Jul-73	hex	"8.5"""	"Registers & Byte Count, DH11"
+M7279	11	MC	4	May-73	double	"8.5"""	"FIFO Buffer, DH11, DJ11"
+M728	11	JO	5		quad	"8.5"""	"Timing & States, KA11"
+M728-JA	11	JO	1	Jul-72	quad	"8.5"""	System tested M728
+M728-YA	11	JO	5	May-73	quad	"8.5"""	M728 for KH11-A
+M7280	11	YB	4	May-73	quad	"8.5"""	"8 UARTS, DJ11"
+M7281	11	JFB	4	May-73	hex	"8.5"""	"Unibus to 32 point Relay Distributor, CB11-DA"
+M7282	11	JFB	4	May-73	hex	"8.5"""	"Unibus to 64 point Input Scan, CB11-SA"
+M7283	11	BPF	5	Oct-73	quad	"8.5"""	"Window Data Path, DA11-F"
+M7284	11	BPF	5	Oct-73	quad	"8.5"""	"Window Control, DA11-F"
+M7285	11	VB	4	May-73	hex	"8.5"""	"MUX Control Board, DJ11"
+M7285-YA	CSS	RLM	1	Aug-73	hex	"8.5"""	M7285 with baud rate of 50
+M7286	11	TM	4	May-73	quad	"8.5"""	"FK11 Interface, VT20"
+M7288	11	MC	4	May-73	hex	"8.5"""	"Line Parameter Control, DH11"
+M7289	11	MC	4	May-73		"8.5"""	"Receive Scanner, DH11"
+M729	11	PD	5	May-73	double	"8.5"""	"Control Logic & Timing, MM11-E (16 or 17 bit), 1.2us memory"
+M729-YA	11	PD	5	Jan-72	double	"8.5"""	M729 modified for 1.5us rugged memory
+M7290	11	PD	5	Nov-71	double	"8.5"""	M729 modified for 980ns memory
+M7291	11	RAC	4	Sep-73	hex	"8.5"""	"16 point Input Interrupt, CB11-HA"
+M7292	11	DRM	5	May-73	quad	"8.5"""	"Interface, TU60"
+M7293	11	DWS	1	Nov-72	quad	"8.5"""	"Timing & Control, Unibus Interface, MM11-U"
+M7294	11	SJ	2	May-73	hex	"8.5"""	"Data Buffer & Control, RH11"
+M7295	11	SJ	2	May-73	hex	"8.5"""	"Bus Control, RH11-A"
+M7296	11	SJ	4	Sep-73	double	"8.5"""	"Control & Status Registers, RH11"
+M7297	11	SJ	5	Oct-73	double	"8.5"""	"Mass Bus Parity Control, RH11"
+M7298	11	SJ	4	Aug-73	quad	"8.5"""	"Watchdog Timer with Restart & Crystal Clock, 11/40"
+M7299	SSMU	WK	2	Jun-73	quad		"Control for CalComp 936, XY11-B"
+M730	CAT	DCB	5		double		"Positive Bus to positive logic, fits in E100, 8/I"
+M7300	16	RVN	5		double	"8.5"""	"PDP16 GPA Control, general purpose arithmetic unit, 4 4-bit bytes, used with M7301's KAC16"
+M7301	16	RVN	5	Nov-71	double	"8.5"""	"PDP16 GPA Register, general purpose arithmetic unit registers, 4 4-bit bytes, KAR16"
+M7302	16	RVN	7		single	"8.5"""	"PDP16 K-simple, 5 or 6 independent control circuits"
+M7303	16	RVN	4	May-73	single	"8.5"""	"PDP16 K-decision, 6 circuits, splits control flow"
+M7304	16	JLE	5		double	"8.5"""	"PDP16 Bus Sense, senses all zero, overflow, manual start, KBS16"
+M7305	16	RVN	5				"PDP16 Transfer Register, provides 16 bit data storage, masking & byte control, MS16-A"
+M7306	16	RVN	5		single	"8.5"""	"PDP16 Flag Module, 3 single-bit storage and control, KFL16"
+M7307	16	RVN	5	Nov-71	double	"8.5"""	"PDP16 Constants Register, small ROM, MR16-A"
+M7308	16	RVN	2	Dec-70			PDP16 to 11 Interface
+M7309	16	RVN	2	Dec-70			"PDP16 Parallel Merge, a gate means of returning to a single control path after a branch"
+M731	CAT	DCB	5				"Positive Bus to -3V logic for 8/I, fits in E100"
+M7310	16	JLE	5		single	"8.5"""	"PDP16 Evoke, 6 circuits, more general version of K-simple, KEV16"
+M7311	16	JLE	5		double	"8.5"""	"PDP16 GPI, General Purpose I/O, DB16-A"
+M7312	16	RVN	5		single	"8.5"""	"PDP16 2-way branch (K decision + K simple), 8 circuits, KB16-A"
+M7313	16	JLE	5	May-73	double	"8.5"""	"PDP16 TTY Interface, transducer, TTY transmitter & receiver, DC16-A"
+M7314	16	JLE	5		single	"8.5"""	"PDP16 8-way branch, 2 3-bit latch & decoder, KB16-B"
+M7315	16	JLE	5		single	"8.5"""	"PDP16 Subroutine Return, 6 circuits, 6 bits, independent storage, KSR16"
+M7316	16	RVN	5		double	"8.5"""	"PDP16 Output Interface, 16 bit register, DB16-B"
+M7317	16	RVN	5		double	"8.5"""	"PDP16 Input Interface, 16 gates, single strobe, DB16-C"
+M7318	16	JLE	5	May-73	double	"8.5"""	"PDP16 Scratch Pad, 16x16, MS16-C"
+M7319	16	JLE	5	May-73	double	"8.5"""	"PDP16 Scratch Pad, 256x16, MS16-D"
+M732	CAT		5				"Positive Bus from positive logic, 8/I"
+M7320	16	JLE	5	Aug-72	double	"8.5"""	"Byte Register, Register Transfer, MS16-B"
+M7321	16	JLE	7	Jul-72	double	"8.5"""	"No-op Module, KNP16"
+M7322	16	JLE	5	Aug-72	double	"8.5"""	"PDP16 Bus Monitor, KBM16"
+M7323	16	JLE	5	Aug-72			PDP16 Contact Interrogater Unit
+M7324	16	JLE	2	May-73	double	"8.5"""	"1Kx16 MOS RAM, 1us cycle"
+M7325	16	JLE	5	Nov-72	double	"8.5"""	24x16 ROM
+M7326	16	JLE	4	May-73	double	"8.5"""	"PCS Control, micro-processor control"
+M7327	16	JLE	5	Aug-72	single	"8.5"""	"PCS Instruction Memory, 256x8, programmed by M8307"
+M7327-YA	16	JLE	1	Mar-73	single	"8.5"""	Basic Diagnostic Option ROM 0
+M7327-YB	16	JLE	1	Mar-73	single	"8.5"""	Basic Diagnostic Option ROM 1
+M7327-YC	16	JLE	1	Mar-73	single	"8.5"""	Basic Diagnostic ROM 2
+M7327-YD	16	JLE	1	Mar-73	single	"8.5"""	Basic Diagnostic ROM 3
+M7328	16	JLE	5	Aug-72	double	"8.5"""	"PCS Evoke Decoder, 32 states"
+M7329	16	JLE	5	Aug-72	double	"8.5"""	"PCS Multiplex Inputs, 29 inputs"
+M733	CAT		5				"Positive Bus from -3V logic, 8/I"
+M7330	16	JLE	1	Nov-71	double	"8.5"""	"Arithmetic Register Unit, operates on 2 16-bit words"
+M7331	16	JLE	1	Nov-71	double	"8.5"""	"ARU Encoder, use with M7330"
+M7332	16	JLE	5	Nov-72	double	"8.5"""	Bus Control
+M7333	16	JLE	5	Aug-72	single	"8.5"""	"Serial Interface Adapter, DC16-B"
+M7334	16	JLE	5	Nov-72	double	"8.5"""	PDP16 Light & Switch Interface
+M7335	16	JLE	5	Nov-72	double	"8.5"""	PDP16 Service Board
+M7336	16	JLE	5	Nov-72	double	"8.5"""	Expanded Program Control Sequencer
+M7337	16	JLE	2	Mar-73	double	"8.5"""	PDP16/M TU60 Read Only Interface
+M7338	16	JLE	1	Jan-73			PDP16/M Unibus Converter/Input Interface
+M7339	16	JLE	2	Mar-73	double	"8.5"""	PDP16/M Hand Held Controller (HHC) Interface
+M734	CAT		5		double	"5"""	"I/O Bus Multiplexer, 3 12-bit words to bus"
+M7340	16	JLE	2	Mar-73			PDP16/M Extended Control Memory
+M7341	CAT	CYR	1	Nov-73	quad		MPS-1 PM (Programmable Module) 8008-1
+M7342	CAT	CYR	1	Nov-73			MPS-1 PM Monitor/Console
+M7343	CAT	CYR	1	Nov-73			MPS~1 PM Foundation Module
+M7344-YA	CAT	OM	1	Nov-73	quad		1Kx8 Static MOS RAM (Intel 2102)
+M7344-YB	CAT	OM	1	Nov-73	quad		2Kx8 Static MOS RAM (Intel 2102)
+M7344-YC	CAT	OM	1	Nov-73	quad		4Kx8 Static MOS RAM (Intel 2102)
+M7345	CAT	OM	1	Nov-73	quad		Sockets for 4Kx8 Reprogrammable PROM (Intel 1702A)
+M7346	CAT	OM	1	Nov-73	quad		"PM Power Fail, 6.3VAC input required"
+M735	CAT		5				"I/O Transfer, 12 bit register, 12 output bus drivers"
+M7350	CLP	AC	1	Sep-73	double	"8.5"""	"Badge Reader, RT02-C, RT02-D, RT02-E"
+M736	CAT		5				"Priority Interrupt, 4 channels"
+M737	CLP	JJO	5				"I/O Bus Receiver with buffer register & buffered outputs, fits in E100"
+M7379	CLP	EN	4	Sep-73	double	"8.5"""	"CLOCK, 110 TO 39.6K BAUD, PDM70"
+M738	CLP	JJO	5		double	"5"""	"I/O BUS TRANSMITTER, PARTIALLY REPLACES M732. FITS IN E100"
+M7380	CLP	EN	2	Jun-73	double	"8.5"""	"Control, PDM70"
+M7381	CLP	JJO	2	Jun-73	quad	"8.5"""	"Digital Input, 32 bits, PDM70-D"
+M7382	CLP	JJO	2	Jun-73	quad	"8.5"""	"Digital Output, 32 bits, PDM70-E"
+M7383	CLP	PDM	2	Jun-73	quad	"8.5"""	"4 CH ANALOG INPUT CARD, PDM70-F"
+M7384	CLP	PDM	2	Jun-73	quad	"8.5"""	"2 CH ANALOG OUTPUT CARD, PDM70-K"
+M7385	CLP	JJO	4	Sep-73	quad	"8.5"""	"BIT SERIAL INPUT/OUTPUT, EIA OR 20 MA, PDM10~J"
+M7386	CLP	EN	2	Jun-73	quad	"8.5"""	"CHARACTER SERIAL INPUT/OUTPUT, 16 KEY KEYBOARD, PDM70-K"
+M7387	CLP	PDM	4	Sep-73	single	"8.5"""	HARDWARE READ-IN MODULE FOR PDM70-N
+M7388	CLP	JJO	4	Oct-73	quad	"8.5"""	"CHARACTER SERIAL INPUT/OUTPUT GENERAL PURPOSE, PDM70-M"
+M7389	CLP	EN	5	May-73	double	"8.5"""	"ADDRESSABLE ASYNC TRANSCEIVER WITH PROGRAMMABLE CLOCKS, 110 TO 4800 BAUD"
+M7389-YA	CLP	EN	7	Feb-72	double	"8.5"""	M7389 W OPEN COLLECTOR OUTPUTS
+M7390	CLP	RJM	5	May-73			"ASYNCH TRANSCEIVER, RT01"
+M7391	CLP	RJM	5	May-73			"12x4 Buffer, RT01"
+M7392	CLP	RJM	1	Feb-71			"NIXIE DISPLAY, RT01, RENAMED 54-09457"
+M7393	CLP	RJM	5	Nov-71			"16 CHAR KEYBOARD ENCODER, RT01"
+M7394	CLP	AC	1	May-72			"16 CHAR KEYBOARO/CARD READER ENCOOER, RT01-A, RTA01-B"
+M7394-YA	MOD	AC	2	Apr-72			"16 CHAR KEYBOARD/CARD READER ENCODER, RT01"
+M7395	CLP	AC	4	May-73	single	"8.5"""	"DISPLAY CONTROL, RT02"
+M7396	CLP	AC	4	May-73	single	"8.5"""	16 KEY NKR KEYBOARD ENCOOER
+M7396-YA	CLP	CYR	2	Nov-72	single	"8.5"""	M7396 W RT01 KEYBOARD DECODER
+M7397	CLP	AC	1	Jan-73	double	"8.5"""	"KEYBOARD + ELECTRONICS, HHC01"
+M7398	CLP	AC	1	Jan-73	double	"8.5"""	"DISPLAY + ELECTRONlCS, HHC01"
+M7399	CLP	AC	2	Oct-73	double	"8.5"""	"AUDIO ALARM, RT02-B"
+M740	14	AR	6	Jul-73	double	"5"""	INSTRUCTION DECODING & REGISTER CONTROL FOR PDP14
+M7400	14	VDB	5	Aug-72	double	"5"""	"PDP14 INSTR DECOOER , CONTROL, TO REPLACE M740"
+M7403	14	VDB	5	Nov-72	double	"5"""	TIMING FOR DL14
+M7404	14	VDB	5	Nov-72	double	"5"""	CONTROL FOR DL14
+M7405	14	VDB	4	May-73	double	"5"""	"MEMORY FOR DLt4, 256x4 + 156x6"
+M7406	14	VDB	4	May-73	hex	"8.5"""	"STEPPING MOTOR CONTROL, BMC01-A"
+M7407	14	LD	4	May-73	quad		MM11-E INTERFACE
+M741	14	AR	5		double	"5"""	MAJOR STATES & TIMING FOR PDP14
+N742	14	AR	5		double	"5"""	SWITCH & POWER CONTROL FOR PDP!4
+M743	14	AR	5		double	"5"""	K INTERFACE CONTROL FOR PDP14
+M7431	14	AR	2	Aug-73	quad	"8.5"""	PDP14/30 MEM CONTROL
+M7432	14	AR	1	Jun-73	quad		PDP14/30 1/0 TIMING CONTROL
+M7433	14	AR	4	Oct-73	quad	"8.5"""	PDP14/30 I/0 MULTIPLEX DRIVERS
+M744	14	AR	5		double	"5"""	"COMPARE CONTROL FOR PDP14, COMPARES 2 12-81T WORDS WITH EACH OTHER OR ZERO"
+M7441	14	MORO	2	Aug-73	quad		"KEYBOARD CONTROL, OMNIBUS, VT14, TOP CONNECTED TO M7443"
+M7443	14	MORO	2	Aug-73	quad		"VIDEO CONTROL, OMNIBUS, VT14, TOP CONNECTEO TO M7441"
+M745	14	AR	5		double	"5"""	"INTERFACE, PDP14 TO PDP8/I,L, 72 PINS, DOUBLE BUS TERMINATION INCLUDED"
+M7450	14	AR	5	Nov-72	double	"5"""	"PDP14 TO PDP8 INTERFACE, REPLACES M745"
+M7451	14	AR	2	Aug-73	quad	"8.5"""	PDP14/30 TO PDP8 POS BUS I/O INTERFACE
+M7454					quad	"8.5"""	
+M7455					hex	"8.5"""	
+M746	14	AR	5				"BUS REGISTER FOR PDP14, 6 D FF'S WITH OPEN COLLECTOR OUTPUT GATING, DIRECT SETS, COMMON CLEAR"
+M747	14	AR	5				"BUS REGISTER FOR PDPl4, (SIMILAR TO M746), INCREMENTS & DECREMENTS"
+M748	14	AR	5	Nov-72	double	"5"""	"SERIAL TRANSMITTER, 14 8IT ERROR CORRECTION, ASYNC"
+M7481	14	AR	1	Apr-73	quad	"8.5"""	"M748 + M749, PDP14/30"
+M7483	14	AR	2	Nov-73	quad	"8.5"""	"UART VERSION OF M7481, 2 8-LEVEL CODE WORDS W PARITY"
+M7485					hex	"8.5"""	
+M7486					hex	"8.5"""	
+M749	14	AR	5	Nov-72	double	"5"""	"SERIAL RECEIVER, 14 BIT ERROR CORRECTION, ASYNC"
+M750	8	RL	5		single	"5"""	"LINE I/O CONTROL, EQUIV TO 2 W750'S"
+M751	8	AC	5		double	"5"""	"LINE REGISTER & R REG FOR DC08A, I/O BUS CONNECTION"
+M752	8	AC	5		double	"5"""	INSTRUCTION DECODER & GATES FOR DC08A
+M753	8	AC	5		single	"5"""	CONTROL FOR 2 DATA SET LINES IN DC08F
+M754		GORMAN	1	Aug-69			"TELETYPE RECEIVER, 6,7 BITS"
+M755		GORMAN	1	Aug-69			"TELETYPE TRANSMITTER 6,7 BITS"
+M756	8	WH	1	Apr-69			"TELETYPE RECEIVER, 5,6,7, OR 8 BlTS"
+M757	8	WH	1	Apr-69			"TELETYPE TRANSMITTER, 5,6,7, OR 8 BITS"
+M758	CSS	KB	6	Apr-71			"SYNCHRONOUS SERIAL DATA RECEIVER, (6,8 BITS), DOU8LE BUFFERED"
+M759	CSS	KB	6	Apr-71			"SYNCHRONOUS SERIAL DATA TRANSMITTER, (6,8 BITS), DOUBLE BUFFERED"
+M760	12	RI	5		single	"5"""	"A/D CONTROL FOR PDP-12, POSSIBLE GENERAL APPLICATION"
+M7600	12	MORO	5	Aug-72	single	"5"""	M760 WITH MODIFIED TIMING FOR AD12~F
+M7601	12	AF	5	May-73	single	"5"""	CONTROL FOR TEKTRONIX 611 OR COLOR SCOPE
+M761	15	HL	5	May-73			32 TO 8 BIT MULTIPLEXER
+M762	15	HL	5	May-73			ROM DIODE MATRIX RECEIVER
+M763	PERIPH	JH	5		double	"5"""	"9 TRACK WRITE BUFFER, FOR TU10, NEG LOGIC, SEE M893"
+M764	PERIPH	JH	1	Aug-69			"7 TRACK WRITE BUFFER, FOR TU10, NEG LOGIC, SEE M894"
+M765	PERIPH	JH	5	May-73	double	"5"""	"9 TRACK READ BUFFER, FOR TU10"
+M766	PERIPH	JH	1	Aug-69			"7 TRACK READ BUFFER, FOR TU10"
+M767	PERIPH	JH	5		single	"5"""	CLOCK & SKEW DELAY LOGIC FOR TU10
+M7670	PERIPH	JH	5		single	"5"""	"FORWARD BOT TIMER, TU10"
+N7671	PERIPH	JH	5		double	"5"""	"MASTER/SLAVE 8US DRIVER FOR TU10 MASTERS, 25 CKTS"
+M7672	PERIPH	JH	5		double	"5"""	TU10 MASTER CONTROL BUFFERS
+M7673	PERIPH	JH	5		double	"5"""	TU10 DATA CHECKER
+M7674	PERIPH		1	Dec-72			IMPROVED M7670
+M768	PERIPH	JH	5		double	"5"""	"DELAY SELECTOR FOR TU10 WITH TC58, TC59, TM10"
+M769	PERIPH	JH	5		double	"5"""	FUNCTION CONTROL FOR TU10
+M770	15		5	May-73	double	"5"""	EAE CONTROL FOR PDP-15
+M7700	PERIPH	ES	5	May-73	double	"8.5"""	"SECTOR CTR, INDEX & PHOTOAMP FOR DECPACK"
+M7701	PERIPH	ES	5	May-73	double	"8.5"""	CONTROL & SAFETY INTERLOCKS FOR DECPACK
+M7702	PERIPH	ES	5	May-73	double	"8.5"""	TRACK ADDRESS & DIFFERENCE CNTR FOR DECPACK
+M7703	PERIPH	ES	1	Nov-70			DECPACK OFFLINE TESTER
+M771	15		5	May-73	single	"5"""	INTERNAL DEVICE DECODER FOR PDP-15
+M7710	PERIPH	CAY	5	Jan-72	double	"8.5"""	"PRINT CYCLE TIMING, LA30"
+M7711	PERIPH	CAY	5	Nov-71	double		"CONTROL LOGIC A, LA30"
+M7712	PERIPH	CAY	5	Feb-72	double	"8.5"""	"CONTROL LOGIC B, LA30"
+M7713	PERIPH	CAY	5	Nov-71	double	"8.5"""	"RIBBON CONTROL & LAST CHAR VISIBILITY, LA30"
+M7714	PERIPH	CAY	5	Nov-71	double		"CHARACTER GENERATOR, LA30"
+M7715	PERIPH	CAY	5	Nov-71	single	"8.5"""	"LINE FEED CONTROL, LA30"
+M7716	PERIPH	CAY	5		single	"8.5"""	MOTOR TRANSLATOR. LA30
+M7717	PERIPH	CAY	5		single	"8.5"""	"MOTOR CONTROL, LA30"
+M7718	PERIPH	CAY	5	Jan-72	double	"5"""	"KEYBOARD INTERFACE, LA30, CONNECT TO 8/I, 8/L, 12, OR 15, PARALLEL (CAN REPLACE M706)"
+M7719	PERIPH	CAY	5	Jan-72	double	"5"""	"TRANSMIT DATA TO LA30 PRINTER, PARALLEL (CAN REPLACE M707)"
+M772	15	FA	5		double	"5"""	CONSOLE CONTROL #1 FOR PDP-15
+M7720	PERIPH	CAY	5	May-73	double		"KEYBOARD TRANSMITTER, LA30"
+M7721	PERIPH	CAY	4	May-73	double	"5"""	"CONTROL LOGIC A, (M7711 WITH BELL LOGIC) LA30"
+M7722	PERIPH	CAY	1	Oct-73	hex	"8.5"""	"LA30L MlCROPROCESSOR, TEST FINGERS"
+M7724	PERIPH	CAY	5	Apr-72	double	"8.5"""	M7714 WITH 7474'S INSTEAD OF MC4015'S
+M7725	SCCAN	DBR	3	Mar-73	single	"8.5"""	"SHORT CARRIAGE RETURN CONTROL, LAS30"
+M773	15	FA	5	May-73	double	"5"""	CONSOLE CONTROL #2 FOR PDP-15
+M7731	PERIPH	RF	5	May-73	double	"8.5"""	"SERIAL INTERFACE CONTROL, LA30"
+M7731-YA	PERIPH	RF	2	Feb-72	double	"8.5"""	M7731 W PULL UP RESISTORS 4.7K INSTEAD OF 220 OHMS
+M7734	PERIPH	CAY	2	Oct-72	double	"8.5"""	UPPER/LOWER CASE LA30 CHAR GEN
+M774	14	AR	5				PDP14-L INSTRUCTION DECODER
+M7741	14	AR	2	Aug-73	quad	"8.5"""	PDP14/30 TIMING & REGISTERS
+M775	15		5	May-73	single	"5"""	TIME STATE GENERATOR
+M7751	PERIPH	CHI	2	Jul-73	double	"8.5"""	"ENCODER-DECODER PLL (PHASE LOCK LOOP), 4 LAYER, RS03"
+M7752	PERIPH	TFF	2	Jul-73	double	"8.5"""	"DESKEW LOGIC, RS03"
+M7753	PERIPH	NF	4	Sep-73	double	"8.5"""	"DATA BUFFER, RS03, INCLUDES CRC"
+M7754	PERIPH	NF	2	Jul-73	double	"8.5"""	"ADDRESS REGISTER, RS03"
+M7755	PERIPH	NF	2	Jul-73	double	"8.5"""	"CONTROL, RS03"
+M7756	PERIPH	CHI	4	Jun-73	double	"8.5"""	"ALTERNATE TRACK OPTION, RS03"
+M7757	PERIPH	PM	4	Jul-73	quad	"8.5"""	RS04-TA TIMING TRACK WRITER
+M7758	PERIPH	CHI	4	Jul-73			RS04 HEAD MATRIX
+M7759	PERIPH	TFF	2	Jul-73	double	"8.5"""	COMMAND DECOD
+M776	15	FA	5		double	"5"""	READER REGISTER
+M7760	PERIPH	MDL	4	May-73	hex	"8.5"""	"CASSETTE LOGIC, TU60, NO FINGERS"
+M7761	PERIPH	MDL	4	May-73	hex	"8.5"""	"CASSETTE SERVO & READ, TU60, NO FINGERS"
+M7770	PERIPH	TFF	2	Jul-73	double	"8.5"""	RS03 STATUS
+M7771	PERIPH	TFF	2	Jul-73	double	"8.5"""	RS03 FORMAT
+M7772	PERIPH	KG	1	Jul-73	hex	"8.5"""	"RP04 SYNCHRONOUS LOGIC, 4 LAYER"
+M7773	PERIPH	KG	1	Jul-73	hex	"8.5"""	RP04 ASYNCHRONOUS LOGIC
+M7774	PERIPH	SERG	1	Jul-73	hex	"8.5"""	RP04 REGISTER LOGIC
+M7775	PERIPH	SERG	1	Jul-73	hex	"8.5"""	RP04 DUAL PORT LOGIC
+M7776	PERIPH	DL	1	Jul-73	hex	"8.5"""	"RP04 ERROR CORRECTION LOGIC, 4 LAYER"
+M7777	PERIPH	KG	1	Jul-73	double	"8.5"""	RP04 MDLI (MIN DEVICE LEVEL INTERFACE) BOARD 1
+M7778	PERIPH	KG	1	Jul-73	double	"8.5"""	RP04 MDLI BOARD 2
+M780	11	PJ	5		double	"8.5"""	"TELETYPE TRANSMITTER, RECEIVER FOR KL11, 110 BAUD"
+M780-YB	11	PJ	5		double	"8.5"""	150 BAUD M780
+M780-YC	11	PJ	5		double	"8.5"""	300 BAUO M780
+M780-YD	11	PJ	5		double	"8.5"""	600 BAUD M780
+M780-YE	11	PJ	5		double	"8.5"""	"1200 SEND, 110 RECEIVE M780"
+M780-YF	11	PJ	5		double	"8.5"""	2400 8AUD M780
+M780-YH	FS	EB	3	Mar-72	double	"8.5"""	USED IN PMK02-C OPTION
+M7800	11	PJ	5	Nov-72	quad	"8.5"""	"ASYNC TRANSMITTER & RCVR, KL11, JUMPER BAUD RATE FROM 110 TO 2400, TO REPLACE M750, M105, M782"
+M7800-YA	11	PJ	5	Jan-73	quad	"8.5"""	"M7800 WITHOUT EIA CHIPS, CURRENT LOOP ONLY"
+M7800-YB	11	BLE	3	Oct-73	quad	"8.5"""	M7800 W 24.6 K BAUD
+M7801	CSS	SKJ	2	Jan-73			DATA WORD CONTROL FOR MC11
+M7802	CSS	SKJ	2	Jan-73			ADDRESS CONTROL FOR MC11
+M7803	CSS	SKJ	2	Jan-73			ARBITRATION CONTROL FOR MC11
+M7804	11	BES	1	Jan-73	double	"8.5"""	ARBITRATOR CARD FOR MA11
+M7805	11	BES	1	Jan-73	quad	"8.5"""	"TlMING, MA11"
+M7806	11	BES	1	Jan-73	hex	"8.5"""	"PORT, MA11"
+M7807	11	WF	1	Nov-73	quad	"8.5"""	"M7247, M105, M7821 ON ONE QUAD"
+M7808	11	WF	1	Nov-73	quad	"8.5"""	M7247 & M7246 ON ONE QUAD
+M7809	11	JL	1	Nov-73	hex	"8.5"""	"16CH 10 BIT A/D, 1 CH D/A, CLOCK, 4 LAYER"
+M781	11	PJ	5				"PC11 CONTROL BOARD, FOR KA11"
+M7810	11	DJD	5	Nov-72	quad	"8.5"""	"M781 + M105 + M7821, INTERFACE BETWEEN 11 & HIGH SPEED READER/PUNCH"
+M7812	11	RL	2	Sep-73	hex	"8.5"""	"DQ11-AA BUS SELECTORS, CSR'S, SHIFT REGISTERS"
+M7813	11	RL	2	Sep-73	hex	"8.5"""	"DQ11-AA CHAR COUNT, 8US ADDRESS, SHIFT.CONT"
+M7815	11	RL	2	Sep-73	single	"8.5"""	"DQ11-AA MODEM CONTROL, DQ11-BA"
+M7816	11	RL	1	Mar-73	hex	"8.5"""	DQ11-AB BUS SELECTORS & BLOCK CHECK CHAR
+M7817	11	RL	1	Mar-73	hex	"8.5"""	DQ11-AB CHAR DETECTION & SEQUENCE CONT (DQ11-BB)
+M7818	11	RL	2	Sep-73	double	"8.5"""	DQ11·AA HARDWIRED CHAR DETECTION & NPR CONT
+M782	11	PJ	6	Oct-71			"INTERRUPT CONTROL, 6 BITS, 1 PER PDP11 PERIPHERAL"
+M7820	11	PJ	5		single	"8.5"""	"INTERRUPT CONTROL, 7 BITS, 1 PER PDP11 PERIPHERAL, WlLL BE REPLACED BY M7821"
+M7821	11	SR	5	Feb-72	single	"8.5"""	FAST M7820
+M7822	11	FZ	2	Sep-73	quad	"8.5"""	DU11
+M7823	11	DEB	2	Nov-73	double	"8.5"""	"WATCH DOG TIMER, KW11-W"
+M7824	SSCAL	GSD	3	May-73	quad	"8.5"""	"PUNCH INTERFACE, CP11~UP"
+M7825	11	FZ	1	Jul-73	hex	"8.5"""	"BACKUP FOR M7822, DU11"
+M7826	CSS	ABW	2	Sep-73	double	"8.5"""	"DVS11 SERIAL LINE XMIT/RECEIVER, SYNC, ASYNC, ISOCHRONOUS"
+M7827	CSS	LO	1	Sep-73	double	"8.5"""	XY311 CONTROL BOARD
+M7828	CSS	DRS	2	Sep-73	double	"8.5"""	REMOTE DT03 BUS SWITCH CONTROL
+M7829	SSCAN	DLM	3	Sep-73			"X BUS TO UNIBUS INTERFACE, USED WITH W7400 MODULES"
+M783	11	PJ	5		single	"8.5"""	"12 8US DRIVERS, PDP-11"
+M7831	11	GH	1	Sep-72	hex	"8.5"""	4Kx16 STATIC N-CHANNEL MOS MEM
+M7832	11	GH	1	Oct-73	hex	"8.5"""	"8Kx18 DYNAMIC RAM (4K CHIPS), 4 LAYER"
+M7834	11/40	JO	1	Jan-73	hex	"8.5"""	"TIMlNG (PARITY), KD11-A"
+M784	11	PJ	5		single	"8.5"""	"UNIBUS RECEIVER, PDP-l1"
+M785	11	PJ	5	May-73	single	"8.5"""	"UNIBUS DRlVER & RECEIVER, 8 B1T5, PDP-11"
+M786	11	PJ	5		double	"8.5"""	"UNIBUS TRANS & REC, & REG, 16 BITS, PDP-11"
+M7860	11	DJD	5	Nov-72	quad	"8.5"""	M786 + M105 + M7821 (GENERAL DEVICE INTERFACE TO 11)
+M787	11	CA	5				LINE FREQUENCY INTERRUPT CLOCK
+M788	11	Pd	5		double	"8.5"""	MR11-A CONTROL LOGIC
+M789	11	PD	1	Feb-70	double	"8.5"""	MR11~A DEVICE.SELECTOR
+M7892	11	DRM	4	Jul-73	quad	"8.5"""	M7292 W 8881 & 380
+M790	11	PD	1	Feb-70	double	"8.5"""	MR11-A DATA REGISTER
+M791	11	BEATTY	5	Nov-71	double	"8.5"""	LA30 INTERFACE FOR PDP11
+M7910	11	DJD	4	May-73	quad	"8.5"""	M791 & M105 & M7821 (PARALLEL INTERFACE BETWEEN 11 & LA30P)
+M7911					quad	"8.5"""	
+M792	11	BPF	5		quad	"8.5"""	"32x16 ROM DIODE MATRIX, ALL DlODES IN, USED IN DD11"
+M792-YA	11	BPF	5	Nov-71	quad	"8.5"""	PAPER TAPE LOADER
+M792-YB	11	BPF	5		quad	"8.5"""	DISK LOADER ROM
+M792-YC	11	GEF	5	May-73	quad	"8.5"""	CARD READER BOOTSTRAP ROM
+M792-YD	11/45	BPF	5	Aug-72	quad	"8.5"""	CARD 1 OF MR11-DB BOOTSTRAP LOADER
+M792-YE	11/45	BPF	5	Aug-72	quad	"8.5"""	CARD 2 OF MR11-DB BOOTSTRAP LOADER
+M792-YF	CPL	BALL	5	Oct-73	quad	"8.5"""	DS500 LOADER ROM
+M792-YH	11	PJ	4	May-73	quad	"8.5"""	TA11 BOOTSTRAP LOADER
+M792-YJ	CSS	LO	1	Apr-73	quad	"8.5"""	BELL SPECIAL TM11 LOADER
+M792-YK	11	TM	2	Oct-73	quad	"8.5"""	VT20 BOOTSTRAP
+M793	11	CA	5		double	"8.5"""	"CONTROL FOR LINE PRINTER (LP11), SIDE M904 CONNECTOR"
+M793-YA	SSCAL	BE	3	Mar-72	double	"8.5"""	CONTROL FOR DATA PRODUCTS 2440 & 2770 (FORM FEED)
+M793-YB	SSCAL	OF	1	Oct-72	double	"8.5"""	CONTROL FOR DATAMETRICS MC3000 LlNE PRINTER
+M7930	11	DJD	5	May-73	quad	"8.5"""	M793 & M105 & M7821 (INTERFACE TO DATA PRODUCTS LINE PRINTERS)
+M7930-YA	CSS	ABW	1	Mar-73	quad	"8.5"""	M7900 W ADDED ZONING & VERTICAL FORMAT
+M794	11	VB	5				MODEM INTERFACE & CONTROL CARD (DC11-D)
+M7942					double	"8.5"""	
+M795	CAT	DCB	5		double	"8.5"""	WORD COUNT & CURRENT MEM ADDRESS
+M796	11		5		double	"8.5"""	"UNIBUS MASTER CONTROL, USED WITH M782"
+M796-YA	DAS	RCR	2	Jun-73	double	"8.5"""	M796 W Cl=5UF (DA28-C)
+M797	11		5		single	"5"""	"REGISTER SELECT MODULE, USED WlTH M105"
+M798	11		5		single	"5"""	"UNIBUS DRlVER, 16 CHANNELS, WIRED OR lNPUTS"
+M799	11	RG	5		double	"8.5"""	DISPLAY CONTROL FOR AA11
+M7990	11	FS	5	Mar-72	single	"8.5"""	LAB11 COLOR CONTROL
+M7999	CSS	ST	3	Nov-71	double	"8.5"""	M799 WITH ABILITY TO HANDLE A LIGHT PEN
+M800	IPG	FE	5		double	"5"""	6 RELAYS & 6 M050 DRIVERS
+M8000	CSS	MS	1	Apr-73	double	"5"""	"SOLID STATE M800, 50 MA MAX, +/- 50V, TELEDYNE 640-1 RELAYS"
+M801	IPG	BG	5		double	"5"""	6 LATCHING RELAYS
+M802	IPG	FE	5				12 BIT LATCHING RELAYS FOR DD01
+M802-YA	IPG	RG	7	Jun-71			"M802 WITH JUMPERS INSTEAD OF RELAYS, DRIVES CUSTOMER RELAYS"
+M803	IPG	FE	5				16 BIT M802
+M804	IPG	FE	5				12 BIT FLIP FLOP RELAYS FOR DD01
+M805	IPG	FE	5				16 BIT M804
+M806	IPG	FE	1	May-73			12 BIT SINGLE SHOT RELAYS FOR DD01
+M807	IPG	FE	5				16 BIT M806
+M8100	11/45	SJ	4	May-73	hex	"8.5"""	"DAP (DATA PATH MODULE), 11/45, 4 LAYER"
+M8101	11/45	SJ	4	May-73	hex	"8.5"""	"GRA (GENERAL REGISTER ADDRESS), 11/45, 4 LAYER"
+M8102	11/45	SJ	4	May-73	hex	"8.5"""	"IRC (INSTRUCTION REGISTER CONTROL), 11/45, 4 LAYER"
+M8103	11/45	SJ	4	May-73	hex	"8.5"""	"RAC (ROM ADDRESS CONTROL), 4 LAYER"
+M8104	11/45	AEH	4	May-73	hex	"8.5"""	"PDR (PROCESSOR DATA & UNIBUS REGISTERS), 11/45, 4 LAYER"
+M8105	11/45	AEH	4	May-73	hex	"8.5"""	"TMC (TIMING & MISC CONTROL), 11/45, 4 LAYER"
+M8106	11/45	AEH	4	May-73	hex	"8.5"""	"UBC (UNIBUS CONTROL), 4 LAYER"
+M8107	11/45	BG	4	May-73	hex	"8.5"""	"SAP (SEGMENTATION ADDRESS PATHS), 4 LAYER"
+M8108	11/45	BG	4	May-73	hex	"8.5"""	"SSR (SEGMENTATION STATUS REG), 4 LAYER"
+M8109	11/45	DV	4	May-73	quad	"8.5"""	"TIG (TIMING GENERATOR), 4 LAYER"
+M8110	11/45	JZ	4	May-73	hex	"8.5"""	"MEM CONTROL FOR MOS OR BIPOLAR MEM, 4 LAYER"
+M8111	11/45	SW	4	May-73			lK X 16 BITS BIPOLAR MEMORY
+M8111-YA	11/45	SW	4	May-73			18 BIT M8111
+M8112	11/45	LBH	4	May-73	hex	"8.5"""	FRM (FLOATlNG POINT ROM CONTROL) 4 LAYER
+M8113	11/45	LBH	4	May-73	hex	"8.5"""	FXP (FLOATING POINT EXPONENT DATA PATHS) 4 LAYER
+M8114	11/45	LBH	4	May-73	hex	"8.5"""	FRH (FRACTION HIGH ORDER DATA PATH) 4 LAYER
+M8115	11/45	LBH	5	Sep-73	hex	"8.5"""	FRL (FRACTION LOW ORDER DATA PATH) 4 LAYER
+M8116	11/45	BG	4	May-73	hex	"8.5"""	"SJB (SEGMENTATION JUMPER BOARD), 2 SIDES"
+M8198	11/45	DI	1	Nov-71	hex	"8.5"""	"FlO (FLOATING INTERFACE DATA PATH), 2 SIDES"
+M8199	11/45	DI	1	Nov-71	hex	"8.5"""	"FIC (FLOATING INTERFACE CONTROL), 2 SIDES"
+M820	11	JO	5		quad	"8.5"""	"DATA PATHS CONTROL, KA11"
+M820-JA	11	JO	1	Jul-72	quad	"8.5"""	SYSTEM.TESTED M820
+M821	11	JO	5		double	"8.5"""	"MEMORY CONTROL, KA11"
+M821-JA	11	JO	1	Jul-72	double	"8.5"""	SYSTEM~TESTED M821
+M822	11	JO	5		double	"8.5"""	"FLAG CONTROL, KA11"
+M822-JA	11	JO	1	Jul-72	double	"8.5"""	SYSTEM-TESTED M822
+M822-YA	11	JO	5	May-73	double	"8.5"""	M822 FOR KH11-A
+M823	11	JO	5	May-73	single	"8.5"""	"CODES, DATA, PDP~11"
+M823-JA	11	JO	1	Jul-72	single	"8.5"""	SYSTEM~TESTED M823
+M824	11	JO	5		double	"8.5"""	"PRIORITY, KA11"
+M824-JA	11	JO	1	Jul-71	double	"8.5"""	SYSTEM-TESTED M824
+M824-YA	11	JO	5	May-73	double	"8.5"""	M824 FOR KH11-A
+M825	11	JO	5		single	"8.5"""	POWER FAIL
+M825-JA	11	JO	1	Jul-72	single	"8.5"""	SYSTEM-TESTED M825
+M825-YA	11	JO	5	May-73	single	"8.5"""	M825 FOR KH11-A
+M8251	11	JO	5	May-73			"NPR EXPANSION, KH11-A"
+M826	11	BD	5		single	"8.5"""	"75 TO 250 NS CLOCK WITH SR, (8 PHASE CLOCK)"
+M827	11	SR	5		quad	"8.5"""	"CLOCK & STATES, KE11-A"
+M828	11	CA	5	Nov-71	single	"8.5"""	KY11-B CONSOLE BOARD
+M8280	11	DV	5	May-71	quad	"8.5"""	"CONSOLE INTERFACE FOR 11R20, KY11-E, KY11-F"
+M829	11	KK	5	Jul-73	double	"8.5"""	"CARD READER CONTROL, FOR CR11 & CM11"
+M8290	11	DJD	5	Aug-73	quad	"8.5"""	M829 + M105 + M829
+M8293	11	DWS	4	Jul-73	quad	"8.5"""	M7293 W NO 8838'S
+M8294	11	DWS	1	Aug-73	quad	"8.5"""	"32K TIMING & UNIBUS INTERFACE, MM11-W, MM11-WP"
+M830	8/E	LK	6	Jul-71	quad	"8.5"""	MAJOR REGISTER FOR KK8-E
+M8300	8/E	GHL	5		quad	"8.5"""	"MAJOR REGISTER YOR KK8-E, REPLACES M830 WHEN USED WITH M8310"
+M8301	8/E	LK	1	Jul-72	quad	"8.5"""	"8/E INDEX REGISTER OPTION, WIRE WRAPPED"
+M8302	8/E	JRB	4	May-73	quad	"8.5"""	"LV01 CONTROL, LV8"
+M8303	8/E	LN	1	Sep-72	quad	"8.5"""	"VT8-E MUX, USED W1TH M8335-7"
+M8304	8/E	RBR	1	Nov-72	quad	"8.5"""	"INT£GRAL MODEM (113A EQUIVALENT), DF8-BA"
+M8305	8/E	RBR	1	Nov-72	quad	"8.5"""	"INTEGRAL MODEM (113B EQUIVALENT), DF8-BB"
+M8306	16	VDB	2	May-73	quad	"8.5"""	SMC01 INTERFACE
+M8307	LVP	MWS	1	Jan-73			"PROM SIMULATOR/LOADER CONTROL, LOADS M7327"
+M8308	8/E	BM	2	Jun-73	quad	"8.5"""	COORDINATE MEASURING SYSTEM INTERFACE
+M831	8/E	LK	6	Jun-71	quad	"8.5"""	REGISTER CONTROL FOR KK8-E
+M8310	8/E	GHL	5		quad	"8.5"""	"REGISTER CONTROL FOR KK8-E, REPLACES M831 WHEN USED WITH M8300"
+M8311	8/E	BT	1	May-73	quad	"8.5"""	4K X 12 MOS RAM W ROM INTERFACE (MS8-AA)
+M8312	8/A	BT	1	May-73	quad	"8.5"""	ROM
+M832	8/A	JK	6	Feb-72	quad	"8.5"""	"LOAD RESISTORS FOR BUS, 8/E"
+M8320	8/E	GHL	5		quad	"8.5"""	"BUS LOADS FOR 8/E, REPLACES M832"
+M8321	8/E	GHL	4	Jul-73	quad	"8.5"""	TM8-E OUTPUT CONTROL
+M8322	8/E	GHL	4	May-73	quad	"8.5"""	TM8-E CONTROL & BREAK
+M8323	8/E	GHL	4	May-73	quad	"8.5"""	TM8-E TRANSPORT STATUS CONTROL
+M8326	8/E	LN	5	Jan-72	quad	"8.5"""	"INTERPROCESSOR BUFFER, 8/E TO 8/E, UP TO 8 PER COMPUTER"
+M8327	8/E	GHL	5	Sep-73	quad	"8.5"""	TM8-E REGISTERS
+M8328	TPL	SG	5		quad	"8.5"""	"BUF MEM CLAMP LOADS, SWITCHES & INDICATORS"
+M8329	8/E	JK	5	May-73	quad	"8.5"""	LC8-E PARALLEL INTERFACE TO LA30-P
+M833	8/E	GHL	6	Feb-72	quad	"8.5"""	TIMING GEN FOR KK8-E
+M8330	8/E	GHL	5	May-73	quad	"8.5"""	IMPROVED M33 (SEE M8347)
+M8331	8/E	LN	4	Apr-73	quad	"8.5"""	CASSETTE CONTROL (TA8/E)
+M8332	14	AR	5	Nov-72	quad	"8.5"""	"DC14-B CONTROL (USED WITH UP TO 12 M8333'S), PLUG INTO OMNIBUS"
+M8333	14	AR	5	Jan-73	quad	"8.5"""	"DC14-C ASYNC l4 BIT ERROR CORR, XMIT & RECEIVE, PLUG INTO OMNlBUS"
+M8334	14	AR	5	Nov-72	quad	"8.5"""	"DC14-D CONTROL (USED WITH UP TO 12 M8333'S), UNlBUS COMPATIBLE"
+M8335	8/E	PK	5	May-73	quad	"8.5"""	VT8-E KEYBOARD PRINTER CONTROL
+M8336	8/E	PK	4	May-73	quad	"8.5"""	VT8-E FREQUENCY DIVIDER
+M8337	8/E	PK	4	May-73	quad	"8.5"""	VT8-E LINE BUFFER
+M8338	SSMU	WE	3	Feb-72			8/E INTERFACE TO FACIT 4001 & 4003 PAPER TAPE READER
+M8339	SSMU	WE	3	Feb-72			8/E INTERFACE TO FACIT 4060 & 4061 PAPER TAPE PUNCH
+M8340	8/E	GHL	5	Aug-72	quad	"8.5"""	EAE INSTRUCTION DECODER
+M8341	8/E	GHL	5	Nov-72	quad	"8.5"""	EAE REGISTER CONTROL
+M8342	8/E	JK	5	Oct-73	quad	"8.5"""	"LS8-E PARALLEL CONT, WILL REPLACE M8329"
+M8343	8/E	DA	1	Mar-72	quad	"8.5"""	RC8/E BOARD 1
+M8344	8/E	DA	1	Mar-72	quad	"8.5"""	RC8/E BOARD 2
+M8345	8/E	DA	1	Mar-72	quad	"8.5"""	RC8/E BOARD 3
+M8346	8/E	DA	1	Mar-72	quad	"8.5"""	RC8/E BOARD 4
+M8347	8/E	BT	7	Sep-73	quad	"8.5"""	"TIMING GENERATOR FOR 8/E W STOP CLOCK INPUT, CAN REPLACE M8330, (KM8-F) (ECO'D INTO M8330)"
+M8349	8/E	DA	4	Sep-73	quad	"8.5"""	"1K 12 BIT PROM & CONT + 256 WORDS R/W, (INTEL 1702 REPROGRAMMABLE ROM), NEEDS +5V & -15V"
+M8349-YA	8/E	DA	2	Jul-73	quad	"8.5"""	M8349 WITH ONLY 256 WORDS OF PROM
+M8349-YC	8/E	DA	2	Aug-73	quad	"8.5"""	M8349 W lK 12-81T PROM ONLY
+M8349-YD	8/E	DA	2	Aug-73	quad	"8.5"""	M8349 W 512 12~81T PROM ONLY
+M8349-YE	14	AR	2	Sep-73	quad	"8.5"""	M8349 WITH ONLY 1K 12 BIT PROM & NO SWITCH START LOGIC
+M835	8/E	LK	6	Aug-71	quad	"8.5"""	POSITIVE BUS INTERFACE CARD FOR PDP8-E
+M8350	8/E	LT	5	Nov-71	quad	"8.5"""	"FASTER M835, REPLACES M835"
+M8350-YA	QC	DO	5	Aug-72	quad	"8.5"""	M8350 MODIFIED FOR TERRADYNE IC TESTER
+M8351	8/E	GHL	1	Jun-73			"MASS BUS INTERFACE, CARD 1"
+M8352	8/E	GHL	1	Jun-73			"MASS BUS lNTERFACE, CARD 2"
+M8353	8/E	GHL	1	Jun-73			"MASS BUS INTERFACE, CARD 3"
+M8354	8/E	GHL	1	Jun-73			"MASS 8US INTERFACE, CARD 4"
+M8355	8/E	RI	2	Oct-73	quad	"8.5"""	MARS (MAJOR ACTIVE REGISTERS & STATUS BITS) PANEL DRIVER
+M8356	8/E	RI	2	Oct-73	quad	"8.5"""	KEY OPTION; MATCHES KEYS TO MEM AODRESS REGlSTER & HALTS
+M8357	8/E				quad	"8.5"""	
+M836	8/E	LK	6	Aug-71	quad	"8.5"""	DATA BREAK BUS INTERFACE CARD FOR PDP8-E
+M8360	8/E	LT	5		quad	"8.5"""	"FASTER M836, REPLACES M836"
+M837	8/E	LN	5		quad	"8.5"""	"MEMORY EXTENSION CONTROL FOR PDP8-E, ALSO TIME SHARE"
+M8370	8/A	LK	1	Jul-73	hex	"8.5"""	CP BOARD
+M838	8/E	RBR	7	Nov-70			ASYNCHRONOUS CONTROL FOR DT8-E
+M839	8/E	RBR	5	Nov-72			SYNC MODE INTERFACE CARO FOR DP8-E
+M840	8/E	LN	5	Jan-72	quad	"8.5"""	"PC04-BL & PC04-BM CONTROL (PC8~E, PC8-EA)"
+M840-YA	8/E	KQ	3	May-73	quad	"8.5"""	M840 MODIFIED TO DRlVE PR68
+M8401	8/E	CRB	1	Sep-70	double	"8.5"""	"PR68-D INTERFACE TO OMNIBUS, FOR PDP11-MA"
+M841	8/E	LN	5		quad	"8.5"""	"DATA PRODUCTS LlNE PRINTER CONTROL, LP8-E"
+M842	8/E	LN	5		quad	"8.5"""	XY PLOTTER CONTROL
+M8420	SSMU	WK	2	Jun-73	quad	"8.5"""	"CONTROL FOR CALCOMP 936, XY8-F"
+M843	8/E	LT	5	Nov-71			GDI CARD READER CONTROL
+M843-YA	CSS	MB	2	Jul-71			M843 WITH DEVICE CODE OF 33 & 37
+M844	8/E	ADL	7				TIMING & CONTROL FOR VS8-E
+M845	8/E	ADL	7	Mar-71			CHARACTOR GENERATOR FOR VA8-E
+M846	8/E		1	Jan-70	quad	"8.5"""	"PUSH DOWN LIST CONTROL, KH8-E"
+M847	8/E	LT	5	Aug-72	quad	"8.5"""	"ROM, MI8-E, ALL DIODES IN"
+M847-YA	8/E	LT	5	Aug-72	quad	"8.5"""	ROM FOR MI8-EA HIGH/LOW SPEED PAPER TAPE RIM
+M847-YC	8/E	LT	5	Aug-72	quad	"8.5"""	"ROM FOR MI8-EC, TC08 BOOTSTRAP"
+M847-YD	8/E	LT	5	Aug-72	quad	"8.5"""	"ROM FOR MI8-ED, RK8 BOOTSTRAP"
+M847-YE	8/E	LT	5	Aug-72	quad	"8.5"""	ROM FOR MI8-EE TYPSET RIM LOADER
+M847-YF	8/E	LT	5	Aug-72	quad	"8.5"""	"ROM FOR MI8-EF, EDU SYSTEM BOOTSTRAP, LOW SPEED"
+M847-YG	8/E	LT	5	Aug-72	quad	"8.5"""	"ROM FOR MI8-EG, EDU SYSTEM BOOTSTRAP, HIGH SPEED"
+M847-YH	8/E	LT	5	Mar-72	quad	"8.5"""	TD8-E BOOTSTRAP (MI8-EH)
+M847-YJ	8/E	NR	5	Jul-73	quad	"8.5"""	RK8/E BOOTSTRAP (Ml8-EJ)
+M847-YK	10	KE	5	Jun-73	quad	"8.5"""	CR8 BOOTSTRAP FOR DC72
+M847-YL	8/E	LT	5	Sep-73	quad	"8.5"""	TU60 BOOTSTRAP (Ml8-EL)
+M847-YM	TYP	JDL	5	Sep-73	quad	"8.5"""	TYPESET DECTAPE BOOTSTRAP
+M848	8/E	LN	5		quad	"8.5"""	"POWER FAIL DETECT & AUTO RESTART, 8-E"
+M8480	8/E	LN	6	Sep-72	quad	"8.5"""	"IMPROVED M848, USED ONLY WITH M8330"
+M849	8/E	ADL	5		quad	"8.5"""	"RFI SHIELD, 8-E"
+M850	8	WH	5		single	"5"""	"EIA FULL DUPLEX LEVEL CONVERTER, W076 PINS, PIN K MUST BE -15V"
+M8501	CSS	DH	1	Sep-71	double	"8.5"""	"TELEX INVERTER, (W941)"
+M8502	CSS	DH	1	Sep-71	quad	"8.5"""	"TELEX DIALER, (W940)"
+M8503	CSS	JTN	2	Nov-71	quad	"8.5"""	"DP11/DMA CONTROL CARD, WIRE WRAPPED"
+M8504	CSS	JTN	2	Nov-71	quad	"8.5"""	"DQS11-A REGISTER CARD, WIRE WRAPPED"
+M8505	CSS	JTN	1	Jun-72	quad	"8.5"""	"DQS11-D REGISTER CARD, WIRE WRAPPED"
+M8506	CSS	JTN	1	Jun-72	quad	"8.5"""	"DQS11 CONTROL CARD, WIRE WRAPPED"
+M8507	CSS	JLM	2	Oct-73	quad	"8.5"""	"READER INTERFACE & CONTROL (3 PORT ASYNC MUX), RT90"
+M8508	CSS	JLM	2	Oct-73	double	"8.5"""	KEYBOARD ENCODER MODULE
+M8509	CSS	JLM	2	Oct-73			"INDICATOR MOD, 24 LIGHTS ON 1 1/16"" CENTERS, 12.6V CT"
+M851	IPG	FE	5				BUS RECEIVER & 8 BIT ADDRESS DECODER FOR DD02
+M860	8/E	LN	5	Jun-73	quad	"8.5"""	"REAL TIME CLOCK, DK8-EF, 8-E"
+M861	8/E	BT	1	Feb-71	quad	"8.5"""	"256 WORD R/W, 8-E, DRIVERS, DECODE"
+M8610	8/E	BT	1	Feb-71			256 WORD STACK BOARD
+M8611	8/E	BT	1	Jun-71			M8610 WITH CORE STACK ATTACHED
+M862	8/E	BT	1	Feb-71	quad	"8.5"""	"256 WORD R/W SENS~, INHIBIT, & DATA REGISTER, 8/E"
+M863	8/E	AW	5	Feb-72	quad	"8.5"""	12 CH DIGITAL I/O (DR8-EA)
+M864	8/E	ADL	7	Sep-73			MULTlPLEX INTERFACE FOR VS8-E
+M865	8/E	RBR	7	Sep-73	quad	"8.5"""	"CONSOLE TELETYPE CONTROL, 110 BAUD, KL8-E"
+M865-YA	8/E	RBR	1	Aug-70	quad	"8.5"""	"150 BAUD, KL8-EB"
+M865-YB	8/E	RBR	1	Mar-71	quad	"8.5"""	300 BAUD M865
+M865-YC	FS	EB	1	Jun-72	quad	"8.5"""	M865 FOR PMK02 CASSETTE
+M8650	8/E	RBR	5		quad	"8.5"""	REPLACEMENT FOR M865
+M8650-YA	8/E	RBR	5	Dec-71	quad	"8.5"""	REPLACEMENT FOR M865-YA
+M8650-YB	FS	EB	1	Sep-72	quad	"8.5"""	"TTY CONTROL, PMK02-B"
+M8651	CSS	BV	3	Apr-71	quad	"8.5"""	"CONSOLE TTY CONTROL, DIF DEVICE CODE FOM TTY (40 & 41)"
+M8652	8/E	RBR	4	May-73	quad	"8.5"""	"DOUBLE BUFFERED ASYNCH DATA CONTROL, KL8-FA, 110 BAUD"
+M8652-YA	8/E	RBR	4	May-73	quad	"8.5"""	"M8652 150 BAUD, KL8-FB THRU KL8-FG"
+M8652-YB	8/E	RBR	4	May-73	quad	"8.5"""	"M8652 134,5 BAUD, KL8-FH"
+M8652-YC	8/E	RBR	4	May-73	quad	"8.5"""	"M8652 (14.746 MHZ CRYSTAL), KLB-FJ"
+M8652-YD	CSS	WE	3	Dec-71	quad	"8.5"""	M8652 WITH 13.107 MHZ CRYSTAL (FOR 100 BAUD)
+M8652-YE	TPL	MI	1	Jun-73	quad	"8.5"""	"M8652, 4800 BAUD, KL8-FL, COMMUNICATES W DL11-C"
+M8653	8/E	RBR	2	Jan-72	quad	"8.5"""	"MODEM CONTROL, KL8-M"
+M8655	8/E	RBR	2	Sep-73	quad	"8.5"""	"KL8-J, 110 TO 9600 BAUD CONT, 20 MA & EIA"
+M866	8/E	RBR	6	May-73			EIA LEVEL CONVERTERS FOR M839 (DP8-E)
+M867	8/E	OF	7	May-73			INCREMENTAL TAPE CONTROL (TR8-EA)
+M868	8/E	DA	5	Jan-72	quad	"8.5"""	"DECTAPE CONTROL, SIMPLE, (TD8-EA)"
+M869	8/E	AC	5	Nov-71	quad	"8.5"""	"POINT PLOTTING SCOPE CONTROL SECTION 1, (VC8-E)"
+M869-YA	CSS	MS	1	Jul-72	quad	"8.5"""	MODIFICATION FOR HP130C SCOPE (10 USEC INTENSIFY PULSE)
+M870	12	SNT	5	May-73	single	"5"""	IMPLEMENTS SIMPLE CLOCK IN PDP12
+M871	12		1	Oct-70	double	"5"""	"2 16 8IT REGlSTER5, 1 4 BCD FOR BINARY-BCD-BINARY CONV, NEEDS M872"
+M872	12		1	Oct-70			CONTROL FOR M871
+M873	11	DR	2	Oct-73	quad	"8.5"""	"UNIBUS RESTART W SPACE FOR 4 ROMS, EA 256x4"
+M873-YA	11	DR	2	Nov-73	quad	"8.5"""	"UNIBUS RESTART W 128 WORD ROM, INCLUDES M792-YA, -YB, -YD, -YE, -YF, -YH; DD11"
+M880	8/E	RH	5	May-73	quad	"8.5"""	"256 WORD ROM, 8-E, (USES G643) (MR8-EA)"
+M881	8/E	WH	7	Sep-73	quad	"8.5"""	"AUTOMATIC PRIORlTY INTERRUPT, KF8-E"
+M882	8/E	ADL	5		quad	"8.5"""	"REAL TIME CLOCK, LINE FREQUENCY (DK8-EA)"
+M883	8/E	ADL	6	Feb-72	quad	"8.5"""	"REAL TIME CLOCK, CRYSTAL, (DK8-EC), 3 FREQ CHOICE, REPLACED 8Y M8330"
+M8830	8/E	ADL	5	Jan-72	quad	"8.5"""	M883 WITH 4 FREQ CHOICE
+M884	8/E	JK	5		quad	"8.5"""	"REDUNDANCY CHECK, CRC, LRC & VRC GEN & CHECK, KG8-E"
+M885	8/E	AW	5	May-73	quad	"8.5"""	"POINT PLOTTING SCOPE CONTROL SECTION 2, (VC8-E)"
+M886	8/E	WH	7	Sep-73			"1024 WORD ROM, 8-£, USES G642"
+M890	PERIPH	JH	5		double	"5"""	MOTION CONTROL FOR TU10
+M8901	PERIPH	JH	1	Dec-72	quad	"8.5"""	"DATA SYNCHRONIZER, TU16"
+M8902	PERIPH	JH	1	Aug-73	quad	"8.5"""	"TM02 TAPE CONTROL, PE"
+M8903	PERIPH	JH	1	Aug-73	hex	"8.5"""	"TM02 TAPE CONTROL, COMMON MODE"
+M8904	PERIPH	JH	1	Aug-73	quad	"8.5"""	"TM02 TAPE CONTROL, NRZI"
+M8905	PERIPH	JH	1	Aug-73	quad	"8.5"""	TM02 MAINTENANCE REGISTER
+M8906	PERIPH	JH	1	Aug-73	quad	"8.5"""	TM02 16-BlT FIDDLER
+M8907	PERIPH	HD			double	"8.5"""	"1 H854, 15 LINES TO PINS. 5 DRIVEN IN BOARD, TM02"
+M8908	PERIPH	HD			double	"8.5"""	"1 H854, 12 LINES RECEIVED ON CARD, 28 BROUGHT OUT, TM02"
+M8909	PERIPH	HD	1	Aug-73	hex	"8.5"""	TM02 MASS BUS INTERFACE
+M891	PERIPH	MDM	5		double		CRC & WRITE GATING FOR TU10
+M8910	PERIPH	JH	1	Jan-73	hex	"8.5"""	TU16 LOGIC & WRITE BOARD
+M8911	PERIPH	JH	1	Jan-73	double	"8.5"""	"TU16 SLAVE CLOCK, MOTION DELAY"
+M8912	PERIPH	JH	1	Aug-73	double	"8.5"""	TU16 SLAVE TEST FUNCTION GENERATOR
+M892	PERIPH	MDM	5				"GAP TIMING & READ PARITY, FOR TU10 MASTER"
+N893	PERIPH		7	Jan-71			"9 TRACK WRITE BUFfER FOR TU10, +LOGIC VERSION OF M763"
+M894	PERIPH		7	Jan-71			"7 TRACK WRITE BUFFER FOR TU10, +LOGIC VERSION OF M764"
+M895	PERIPH		5		double		READ & WRITE TIMING FOR TU10 MASTER
+M896	PERIPH	JH	5	Nov-71	single	"5"""	CRCC CHECKER FOR TU10
+M897	CSS	CC			hex	"8.5"""	RH01 ARBITRATION & CONTROL
+M898	PERIPH		1	Aug-70			"DELAY SELECTOR FOR TU10-C,-D"
+ Connectors & Terminators							
+M900	8		5		single	"5"""	"CONNECTOR TO 8/I CONSOLE, 30 SIGNALS, 2 GNDS, TTL BUFFERING"
+M9000	COM	RAC	4	May-73	double	"2.5"""	GRANT CONTINUITY BOARD FOR UNIBUS SLOTS IN CB11
+M9001	PERIPH	JH	1	Mar-73	double	"8.5"""	"BUS CONNECTOR, 2 H854'S BUSSED TOGETHER, ALL SIGNALS COME OUT"
+M9002	PERIPH	JH	1	Mar-73	double	"8.5"""	"BUS TERMINATOR, 1 H854, ALL SIGNALS COME OUT"
+M9003	QC	EF	1	Jun-73	double		"DOUBLE MODULE TO FLAT MYLAR (40 SIGS), ALL PINS, ROOM FOR RESlSTORS TO +5, GND, & IN SERIES"
+M9004	QC	EF	1	Jun-73			"1 H856, 2 H854, CAN BE WIRED TO ANY CONFIGURAtION, TU60 XOR"
+M9005	10	SU	1	Aug-73	double	"8.5"""	"MA20 TERMINATOR, SAME PINS AS M9006"
+M9006	10	SU	2	Sep-73	double	"8.5"""	"MA20 S BUS CABLE BOARD, 2 3M CASLES, 40 SlG"
+M9007	QC	IR	1	Sep-73			33 1000-OHM RESISTORS TO +5v
+M9008	TPL	AJM	1	Oct-73	single	"5"""	"H854 TO 36 PINS, A, B, UU, VV NOT CONNECTED (54-09209)"
+M9009	TPL	AJM	1	Oct-73	single	"5"""	"H854 TO 36 PINS, M, N, P, S NOT CONNECTED"
+M901	CAT		5		single	"5"""	"FLAT MYLAR CABLE CONNECTOR, 10 OHMS IN A2,B2,U1 & V1, 2 CA8LES"
+M902	15	HL	6	Jan-71	single	"5"""	"TERMINATOR, 18 100 OHM RESISTORS, M903 & M904 CONNECTIONS"
+M902-YA	8	MA	5		single	"5"""	"18 470 OHM RESlSTORS (MB. TERMINATOR, 8 + BUS)"
+M902-YB	8	MA	5		single	"5"""	"6 100 OHM & 12 470 OHM RESISTORS (TERMINATES AC, lOP, ON 8 + BUS)"
+M903	CAT		5		single	"5"""	"FLAT MYLAR CONNECTOR, 18 SIGNALS, 14 GND PINS·"
+M904	CAT		5		single	"5"""	"COAX CONNECTOR, 2 9-CONDUCTOR COAXES, M903 PINS"
+M905	8		5		single	"5"""	"SPECIAL RIBBON CABLE CONNECTOR, DF32"
+M906	CAT		5		single	"5"""	"CABLE TERMINATOR, 220 OHMS TO +5V, CLAMPED TO 3V & GND, M903 PINS"
+M906-YA	12	MOOR	5	May-73	single	"5"""	M906 WITH NO 220 OHM RESISTORS
+M907	CAT		5		single	"5"""	M906 WlTH CLAMPS ONLY TO GND
+M908	CAT		5		single	"5"""	"RIBBON CABLE CONNECTOR, 10 OHMS IN A2,82,U1 & V1, ALL OTHERS STRAIGHT THRU"
+M908-YA	15	DV	2	Jan-70	single	"5"""	"RF09 MAINTENANCE CARD, REPLACES CABLE TO RS09"
+M908-YB	11	DR	5	May-73	single	"5"""	M908 WITH HANDLE
+M909	CAT	DCB	5		single	"5"""	"TERMINATOR, 18 68 OHM RESISTORS TO GND, FOR 15 I/O BUS"
+M910	CAT	DCB	5		single	"5"""	"TERMINATOR, 18 68 OHM RESISTORS TO +5V, FOR 15 I/O BUS, PROC END"
+M9100	MOD	DCB	5	May-73	single	"8.5"""	2 H854 ON SINGLE 8.5 CARD
+M911	15	HL	6	Jan-71	single	"5"""	"TERMINATOR, 18 100 OHM RESISTORS TO +5V, FOR 15 MEM BUS"
+M911-YA	SSCA	DPS	3	Jan-73	single	"5"""	M911 W 1.2K RESISTORS
+M912	CAT	DCB	5		double	"5"""	"I/O BUS CARD, 36 PAIRS, M904 CONNECTIONS"
+M913	MOD		7	Jul-69			"NEVER HADE, 6 TERMINATORS, PIN COMPATlBLE WITH M520,530,620, & 630"
+M914	15	DV	5				"CA8LE CONNECTOR, RF09 TO PATCH PANEL"
+M915	CAT	DCB	5		single	"5"""	35 WIRES TO PDP-15 CONSOLE WITH PULL-UP RESISTORS
+M916	15	FA	5				35 WIRES TO PDP15 CONSOLE WITH +5V CLAMP DIODES
+M917	CAT	DCB	5		single	"5"""	"M904 WITH RIBBON CABLE COMING IN EITHER SIDE, FOR MM15"
+M9170	10	JD	5	Sep-73	single	"5"""	M917 W SPLIT LUGS & CLAMP ON SIDE 2
+M918	CAT	DCB	5		single	"5"""	"M901 WITH CABLE COMING OUT EITHER SIDE BUT JUMPERS IN U1 & V1, NONE IN A2 & B2"
+M919	11	CRB	5	May-73	double	"2.5"""	"11 EXTERNAL BUS, 2 60-WIRE MYLAR, 56 SIGNALS, 14 GND PINS"
+M9190	10	STP	1	Jun-73	double	"2.5"""	"M919 WITH +5 ON AA2, BA2"
+M9191	11	KA	1	Sep-73	double	"2.5"""	M919 W SIDE 1 & 2 INTERCHANGED
+M920	11	CRB	5	May-73	double	"2.5"""	"73 WIRE MYLAR, 11 INTERNAL BUS, 2 BOARDS 1"" APART, M919 PlNS"
+M9200	11	SW	5	May-73	double	"2.5"""	"M920 W BOARDS 0,5"" APART"
+M921	12	LG	5		single	"5"""	"DEVICE CODE SELECT JUMPER MODULE, FOR 3 IOT'S"
+M922	CAT	DCB	5	May-73	single	"5"""	"M901 WITH JUMPERS INSTEAD OF RESISTORS FOR INDICATOR BUS, NOT TO BE USED ON BOTH ENDS OF ANY CABLE"
+M923	PERIPH		5		double	"5"""	"TU56 OPTION CONNECTOR, REPLACES W032 WHEN READER/WRITERS ARE IN TU56"
+M924	CSS	CV	7	Apr-72			"24 LINES IN, ROOM FOR SERIES & SHUNT COMP TO COMMON"
+M925	11	PJ	5		single	"3.75"""	"SHORT M903 WITH NO SLOTS, RIGHT ANGLE"
+M926	CAT	DCB	5		single	"5"""	M901 WITH 100 OHMS IN SERIES WITH SOME OF THE PINS
+M927	11	CA	5		single	"3.75"""	"SHORT RIGHT ANGLE M904, FOR DD11-R"
+M929	11	CRB	5	May-73	double	"2.5"""	MIRROR IMAGE OF M919 FOR OTHER END OF CABLE
+M9290	10	STP	1	Jun-73	double	"2.5"""	"M929 WITH +5 ON AA2, BA2"
+M930	11	PJ	5		double	"2.5"""	"TERMINATOR FOR PDP-11 BUS, (M919 PINS), 120 OHMS TO +3V, 1000PF ON BF1 & BF2"
+M930-JA	11	PJ	1	Jul-72	double	"2.5"""	SYSTEM-TESTED M930
+M930-YA	11	KA	1	Aug-73	double	"2.5"""	M930 W EXTERNAL CABLE FOR +5V & GND
+M9300	11	SJ	4	Jul-73	double	"2.5"""	UNI8US B TERMINATOR (M930 + NPR LOGIC)
+M931	10	SU	5	Jan-72	single	"5"""	"15 TERMINATORS, 2K TO +5V, CLAMPED AT +.75 & +3V, M903 PINS EXCEPT 9 INDICATOR OUTPUTS, KI10"
+M932	10	FF	1	Nov-69	double		DOUBLE HEIGHT M901 WITH CABLE CLAMPS IN MIDDLE & HANDLES ON END
+M933	CAT	AR	5		single	"5"""	"20 RIBBON CABLE LUGS, ALL STRAIGHT THRU, SP FOR SHUNT COMP TO GND OR JUMPER SEL VOLT BUS"
+M934	12	AW	5				"ROBOT CHEMIST CABLE CONN, 14 CH, ATTENUATORS, AMPS"
+M935	8/E	PG	5		double	"5"""	VARIATION OF M920 FOR 8/E INTERNAL BUS
+M936	8/E	PG	5				PDP8-E lNTERNAL BUS CONNECTOR
+M937	8/E	PG	5				MIRROR IMAGE M936
+M938	8	MI	5	May-73	single	"5"""	M903 CONNECTIONS WITH 18 3K LOADS CLAMPED TO -3V
+M939	8	MIPP	5	May-73	single	"5"""	M906 WITH 1K RESISTORS INSTEAD OF 220 OHMS
+M940	14	AR	5		single	"5"""	"M933 PINS, 10 GND, 10 SIG WITH 82 OHMS TO +5V"
+M941	PERIPH		5	May-73	single	"5"""	JUMPER/EXTENDER BOARD FOR TU56
+M942	IPG		5		double	"2.5"""	"M930 ETCH, DIFFERENT RESISTORS. DD02"
+M943	15	HL	5	May-73	single	"5"""	M903 WITH CABLE COMING OUT ElTHER SlDE
+M944	IPG	MORO	5	May-73			BUS TERMINATOR FOR AM07
+M945	IPG		5		double	"5"""	"EXTERNAL 8US CONNECTOR FOR UDC, M935 CONNECTIONS + A1 & B1 GND"
+M946	IPG		5		double	"5"""	MIRROR IMAGE M945
+M947	10	SU	5	Nov-71	single	"5"""	"INDICATOR DRIVER, 24 CKTS, CABLE OUT BACK"
+M948	10	SU	5	Nov-71	single	"5"""	"24 RESISTORS TO CABLE, 4 RESISTORS TO COMMON POINT, COMPANION TO M947"
+M949	10	SU	5	Nov-71	single	"5"""	"9 INDICATOR DRIVERS, 18 SIGNALS, FOR KI CONSOLE"
+M950	10	SU	5	Nov-71	single	"5"""	"9 RESISTORS TO CABLE, 9 R TO COMMON, 18 RC FILTERS, COMPANION TO M949"
+M951	CSS	CV	4		single	"5"""	"SELECTABLE CLAMPS MOOULE, 12 CKTS, M906 PINS, (LOW VOLUME MODULE)"
+M952	10	ATT	5	May-73	single	"5"""	"27 LEVEL TERMINATORS, CLAMPS AT +.75 & 3.25V"
+M953	8/E	PG	5		single	"5"""	"40 CONDUCTOR 3M CABLE TO M903 CONNECTIONS, ,05 SPACING, USED ON BC08J~XX (18 SIGNALS)"
+M954	8/E	PG	5				"2 40 CONDUCTION 3M CABLES TO M901 CONN, 10 OHMS IN A2, B2, U1, Vl, .05 SPACING"
+M955	8/E	PG	5				"1 40 CONDUCTOR CABLE TO W077 CONN, 10 OHMS IN A2 ,B2, PC8-E"
+M956	10	SU	5	Jan-72	single	"5"""	"18 130 OHMS TO +3.0V, M903 PINS"
+M957	CAT	DCB	5		single	"8.5"""	"8,5"" LONG M908, NO HANOLE, CABLE CLAMP LOCATION ON SIDES & END"
+M957-YA	LDP	FS	5	Jan-72	single	"8.5"""	M957 WITH DIFFERENT VALUE RESISTORS
+M957-YB	PERIPH	PH	3	May-73	single	"8.5"""	"M957 W HANDLE, 0 OHMS IN A2, 10 OHMS IN B2, U1, V1 (RS03)"
+M958	PERIPH		2	Aug-70	single	"5"""	"POS BUS TERMINATOR, 32 OHMS TO GND, DIODE CLAMPS"
+M959	11	KK	5				"22 FORKED LUGS ON SHORT BOARD FOR RIBBON CABLE, CR11"
+M960	8/E	PK	5	Nov-71	single	"5"""	COMMAND CABLE CONNECTOR FOR TU56
+M961	8/E	PK	5	Nov-71	double	"5"""	DATA CABLE CONNECTOR FOR TU56
+M962	16	RVN	5		double	"5"""	"RT K-BUS TERMINATOR, REQUIRED TO TERMINATE RTM BUS"
+M963	PERIPH	WWO	5				CONNECTOR FOR LA30 PRINT HEAD (14 COND)
+M9630	PERIPH	WWO	5	Oct-73			CONNECTOR FOR LA30L PRINT HEAD (15 COND)
+M964	PERIPH	PH	1	Nov-70			TERMINATOR FOR DECPACK
+M965	PERIPH	CAY	1	Nov-70			HEAD CABLE CARD FOR LA30
+M9650	PERIPH	PNH	1	Sep-73			HEAD CABLE CARD FOR LA30L
+M966	15	HL	5		single	"5"""	"18 60-0HM RESISTORS TO +2.5V, M903 PINS"
+M967	PERIPH	PM	1	Nov-70	double	"8.5"""	"40 CONDUCTOR 3M CABLE, RIGHT ANGLE, ALL PINS BROUGHT OUT, D THRU P"
+M968	11	PJ	5				JUMPER BOARD FOR DR11-B TESTING
+M9680	11	BPF	2	Mar-73	double	"2.5"""	M968 JUMPER BOARD FOR DR11-S TESTING WITH CKT FOR INCREASING DELAY BETWEEN CYCLES
+M969	10	DREW	5	Nov-71	single	"5"""	24 LEVEL TERMINATORS LIKE M952 + 1 THERMISTOR
+M970	8/E	RBR	5	Jan-72	single	"8.5"""	"H854 MTD ON SINGLE X 8.5 CARD, ACCEPTS BC05C & BC01V"
+M9700	COM	WRS	2	Sep-72	single	"8.5"""	M970 W SPLIT LUGS INSTEAD OF H854. USED ON BC05M-XX
+M971	8/E	RBR	5	Apr-72	single	"8.5"""	"H854 MTD ON SINGLE X 8.5 CARD, ACCEPTS BC08R"
+M9710	CSS	JLM	2	Oct-73	single	"8.5"""	M971 W 2 10-POS & 2 SPDT SWITCHES (RT90)
+M9711	CSS	CV	1	Nov-73	single	"8.5"""	"ONE PUSH BUTTON & 1 DPDT SWITCH, RT90 MAINTENANCE MODULE"
+M972	11	SS	5		single	"8.5"""	"CABLE CONNECTOR, 2 FLAT CABLES, M901 W 10 OHM IN A2 & B2 ONLY"
+M973	11	SS	5		single	"8.5"""	"TTY MATE-N-LOCK, 5 PINS"
+M9730	11	AJM	1	Oct-73	single	"5"""	6-INCH M973
+M974	11	SS	5				DM11 MAINTENANCE JUMPER BOARD
+M975	11	REL	5	Nov-71	double		"DOUBLE FLIP CHIP TO 2 H854, M903 CONNECTIONS"
+M976	11	CA	5	Feb-72	double	"2.5"""	M919 WITH SPLIT LUGS
+M9760	11	DV	2	May-73	double	"8.5"""	"8,5 M976 W FILTERS"
+M977	LDP	FS	5	Feb-72	single	"3.75"""	"RIGHT ANGLE M953, CABLE ON V SIDE"
+M978	11	HDF	5	Feb-72			CONTROL END OF PR68-D CABLE
+M9780	TPL	MI	4	Aug-73			"M978 ETCH, CONTROL END OF PR68-A CABLE W FILTERS (70-05063)"
+M979	11	HDF	5	Mar-72			CONTROL END OF PP67-D CABLE
+M980	11	CA	5	Jan-72			DR11-A TEST BOARD
+M981	11	CRB	4	May-73	double	"2.5"""	"M920 lNTERNAL BUS JUMPER WITH M930 TERMINATIONS, 2 BOARDS 1"" APART"
+M982	15	ERP	5	Apr-72	single	"5"""	"TERMINATOR FOR CR15, USES W964 ETCH"
+M983	PERIPH	DJ	5	Feb-72	double	"8.5"""	"ALL SIDE 1 PINS TO FORKED LUGS, 2 ROUND CABLES OUT V SIDE, RK05"
+M984	11	DR	5	May-73	single	"5"""	M902 WITH 51 OHM RESISTORS
+M984-YA	11	DR	5	May-73	single	"5"""	M984 WITH 2 PINS SHORTED & 1 RESISTOR REMOVED
+M988	10	JRP	5	Nov-72			2 BOARDS 0.5 TO 0.75 APART- AMP PINS & SOCKET MAKES STRETCHABLE JUMPERS
+M989	8/E	GHL	4	May-73			TERMINATOR FOR 8/E TO TU10-M CABLE
+M990	PERIPH	NF	1	May-72	double	"5"""	"RS03 BUS INPUT CONN, 3M CABLE, 40 SIG, AA2-AD2, BA2-BD2, AS1-ASV, BS1-BSV NOT USED"
+M991	PERIPH	NF	1	May-72	double	"8.5"""	"RS03 BUS OUTPUT CONN, BUS CABLE USES M990 ON ONE END, M991 ON OTHER"
+M992	PERIPH	NF	1	May-72	double	"8.5"""	"TERMINATOR, PINS LIKE M990, M991, 75 OHMS TO +3.6V"
+M993	TPL	SG	4	May-73			"RK8-E CONTROL CABLE, 2 3M, 42 SIGNALS, 38 GND"
+M994	8/E	DA	4	May-73			"40 COND 3M CABLE TO M901 PINS, 10 OHMS IN A2, B2, U1, V1"
+M995	QC	ALB	1	Aug-72	double	"8.5"""	"3 H854 ON DOU8LE 8.5, 22 SIG EACH"
+M996	LDP	AW	4	May-73	hex	"8.5"""	"3 LAYER (MIDDLE LAYER GROUND SHIELD), FRONT & BACK PANEL INTERCONNECTIONS, LPS"
+M997	PROE	DS	2	Oct-72	double	"5"""	"H854 ON DOUBLE X 5 MODULE, ALL PINS BROUGHT OUT"
+M9970	11/05	RAA	4	May-73	double	"8.5"""	"M997, M854 FACING EDGE A"
+M998	FS	EB	3	Nov-73	single	"5"""	"M999 W FINGERS INSTEAD OF H807, (USE M9980 FOR OTHER END OF CABLE)"
+M9980	FS	EB	3	Nov-73	single	"5"""	M998 FOR OPPOSITE END OF CABLE
+M999	FS	EB	2	Sep-73	single	"5"""	"H807 FOR 2 3M CABLES, Fl, F2, N1, N2 JUMPER GND (USE M9990 FOR OTHER END OF CABLE)"
+M9990	FS	EB	3	Oct-73	single	"5"""	M999 FOR OPPOSITE END OF CABLE
