@@ -1,3 +1,3 @@
-Positive Bus Control Signal Terminator.
+Positive Bus Control Signal Terminator, 5 100 ohms to ground, pins K2, M2, P2, S2, T2, same grounds as W022
 <UL>
 <LI><b>G717</b> is an implementation of DEC's G717 bus terminator.</LI>
