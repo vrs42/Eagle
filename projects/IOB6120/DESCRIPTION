@@ -1,10 +1,10 @@
 IOB 6120 by Jim Kearney
 <UL>
-<LI><B>iob6-r</B>is the "A" version from Jim Kearney.</LI>
-<LI><B>iob7c</B>is the "B" version from Jim Kearney.</LI>
-<LI><B>iob7cvrs</B>is iob7c with the silk-screen visible.</LI>
-<LI><B>iob9avrs</B>is my first attempt at fixing the battery issue (single CE#, lots of read/write enables).</LI>
-<LI><B>iob9bvrs</B>is my second attempt at fixing the battery issue (DS1321D, CE# per ramdisk, series batteries).</LI>
-<LI><B>iob9cvrs</B>is the fixed "9C" version manufactured in 2009 (DS1321D with parallel batteries).</LI>
-<LI><B>iob9xvrs</B>is iob9c re-routed with slightly beefed up power rails.</LI>
-<LI><B>iob10avrs</B>is a copy of iob9c with the bottom side silkscreen glitch (RN2) fixed.</LI>
+<LI><b>iob6-r</b>is the "A" version from Jim Kearney.</LI>
+<LI><b>iob7c</b>is the "B" version from Jim Kearney.</LI>
+<LI><b>iob7cvrs</b>is iob7c with the silk-screen visible.</LI>
+<LI><b>iob9avrs</b>is my first attempt at fixing the battery issue (single CE#, lots of read/write enables).</LI>
+<LI><b>iob9bvrs</b>is my second attempt at fixing the battery issue (DS1321D, CE# per ramdisk, series batteries).</LI>
+<LI><b>iob9cvrs</b>is the fixed "9C" version manufactured in 2009 (DS1321D with parallel batteries).</LI>
+<LI><b>iob9xvrs</b>is iob9c re-routed with slightly beefed up power rails.</LI>
+<LI><b>iob10avrs</b>is a copy of iob9c with the bottom side silkscreen glitch (RN2) fixed.</LI>
