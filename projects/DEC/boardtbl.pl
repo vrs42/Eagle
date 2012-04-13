@@ -28,6 +28,7 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
   ".wtb",
   ".wts",
   ".xpl",
+  "ds.pdf",
 # "brd.pdf",
 # "sch.pdf",
 # "hb.pdf",
@@ -41,6 +42,7 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
   "Want to buy",
   "Want to sell",
   "Have example",
+  "Data Sheet",
   "Eagle board PDF",
   "Eagle schematic PDF",
   "Logic Handbook PDF",
@@ -79,7 +81,7 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
     foreach $f (readdir(DIR2)) {
       foreach $suf (@suffix) {
         $b = $f;
-        # Beware: .pdf picks up "sch.pdf" and "brd.pdf".
+        # Beware: .pdf picks up "ds.pdf", "sch.pdf", and "brd.pdf".
         $boards{$b} = 1 if $b =~ s/$suf$//; ;
       }
     }
@@ -89,6 +91,7 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
     $d = "$d1/$d2";
     foreach $b (sort byname @boards) {
       next unless $b =~ /^$d2([A-Z])$/;
+      $generic = $b; $generic =~ s/[A-Z]$/-/;
       if ($b =~ /^$d2([A-Z])$/) {
         $versions .= $1;
         $versions .= "*" unless -f "$d/$b.brd";
@@ -106,6 +109,9 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
       print "<td>$b:\n";
       $i = 0;
       foreach $suf (@suffix) {
+        if (-f "$d/$generic$suf") {
+          print "<br><a href=$WEBURL/$d/$generic$suf>$desc[$i]</a>\n";
+        }
         if (-f "$d/$b$suf") {
           print "<br><a href=$WEBURL/$d/$b$suf>$desc[$i]</a>\n";
         } else {
@@ -117,7 +123,12 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
     }
     print MTXT "$d2\t$versions\t  $desc\r\n";
     print MHTM "<tr><td><a href=$WEBURL/$d1/$d2>$d2</a>";
-    print MHTM "<td>$versions<td>$desc</tr>\r\n";
+    print MHTM "<td>$versions<td>";
+    if (-f "$d1/$d2/$d2-ds.pdf") {
+      print MHTM "<a href=$WEBURL/$d1/$d2/$d2-ds.pdf>$desc</a></tr>\r\n";
+    } else {
+      print MHTM "$desc</tr>\r\n";
+    }
   }
   print "<tr>\n</table>";
   print "</div>";
