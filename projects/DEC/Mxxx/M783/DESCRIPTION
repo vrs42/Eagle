@@ -1,4 +1,4 @@
-Unibus/Omnibus Drivers
+Unibus/Omnibus Drivers, extended single
 <UL>
 <LI><b>M783bad</b> is a version of the M783 that won't work.</LI>
 <LI><b>M783</b> is basically DEC's version of the M783 Bus Drivers module,
