@@ -29,6 +29,7 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
   ".wts",
   ".xpl",
   "ds.pdf",
+  "ds2.pdf",
 # "brd.pdf",
 # "sch.pdf",
 # "hb.pdf",
@@ -43,6 +44,7 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
   "Want to sell",
   "Have example",
   "Data Sheet",
+  "Another Data Sheet",
   "Eagle board PDF",
   "Eagle schematic PDF",
   "Logic Handbook PDF",
@@ -125,9 +127,14 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
     print MHTM "<tr><td><a href=$WEBURL/$d1/$d2>$d2</a>";
     print MHTM "<td>$versions<td>";
     if (-f "$d1/$d2/$d2-ds.pdf") {
-      print MHTM "<a href=$WEBURL/$d1/$d2/$d2-ds.pdf>$desc</a></tr>\r\n";
+      print MHTM "<a href=$WEBURL/$d1/$d2/$d2-ds.pdf>$desc</a>";
     } else {
-      print MHTM "$desc</tr>\r\n";
+      print MHTM "$desc";
+    }
+    if (-f "$d1/$d2/$d2-ds2.pdf") {
+      print MHTM " (<a href=$WEBURL/$d1/$d2/$d2-ds2.pdf>another</a>)</tr>\r\n";
+    } else {
+      print MHTM "</tr>\r\n";
     }
   }
   print "<tr>\n</table>";
