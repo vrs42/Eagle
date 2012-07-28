@@ -1,0 +1,10 @@
+This information is derived from the Small Computer Handbook, 1970
+edition.
+
+KW8/[IL]A	Fixed Interval, Line Frequency Clock (M501)
+KW8/[IL]B	Fixed Interval, Variable Frequency Clock (M401)
+KW8/[IL]C	Fixed Interval, Crystal Clock (M405)
+KW8/[IL]D	Programmable Interval, Line Frequency (M501, M709)
+KW8/[IL]E	Programmable Interval, Variable Frequency Clock (M401, M709)
+KW8/[IL]F	Programmable Interval, Crystal Clock (M405, M709)
+

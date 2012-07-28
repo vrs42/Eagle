@@ -479,7 +479,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-m.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="171 359 1294 982"
+Loc="175 382 1298 1005"
 State=1
 Number=1
 File="M501B.sch"
@@ -519,7 +519,7 @@ Sheet=1
 
 [Win_2]
 Type="Board Editor"
-Loc="377 531 1500 1154"
+Loc="381 554 1504 1177"
 State=1
 Number=2
 File="M501B.brd"
