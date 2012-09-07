@@ -93,7 +93,6 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
     $d = "$d1/$d2";
     foreach $b (sort byname @boards) {
       next unless $b =~ /^$d2([A-Z])$/ || $b =~ /^$d2([S]..)$/;
-      $generic = $b; $generic =~ s/[A-Z]$/-/;
       if ($b =~ /^$d2([A-Z])$/) {
         $versions .= $1;
         $versions .= "*" unless -f "$d/$b.brd";
@@ -111,8 +110,8 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
       print "<td>$b:\n";
       $i = 0;
       foreach $suf (@suffix) {
-        if (-f "$d/$generic$suf") {
-          print "<br><a href=$WEBURL/$d/$generic$suf>$desc[$i]</a>\n";
+        if (-f "$d/$d2-$suf") {
+          print "<br><a href=$WEBURL/$d/$d2-$suf>$desc[$i]</a>\n";
         }
         if (-f "$d/$b$suf") {
           print "<br><a href=$WEBURL/$d/$b$suf>$desc[$i]</a>\n";
