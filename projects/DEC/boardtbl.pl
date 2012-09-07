@@ -92,7 +92,7 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
     @boards = grep(!/brd$/ && !/sch$/, @boards);
     $d = "$d1/$d2";
     foreach $b (sort byname @boards) {
-      next unless $b =~ /^$d2([A-Z])$/;
+      next unless $b =~ /^$d2([A-Z])$/ || $b =~ /^$d2([S]..)$/;
       $generic = $b; $generic =~ s/[A-Z]$/-/;
       if ($b =~ /^$d2([A-Z])$/) {
         $versions .= $1;
