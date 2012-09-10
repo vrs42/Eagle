@@ -50,6 +50,49 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
   "Logic Handbook PDF",
 );
 
+#
+# Look at the situation with respect to a board and decide what 
+# next further action should be taken.
+# $d is the name of the directory.
+# $b is the name of the board (M111A).
+# $d2 is the basename of the module (M111).
+sub NextAction {
+  #
+  # A .pdf should imply a .wtb or .xpl.
+# return print STDERR "$d/$b: Missing .wtb and .xpl!\n"
+#   if ! (-f "$d/$b.wtb" || -f "$d/$b.xpl");
+  #
+  # A .wts should imply a .xpl.
+  return print STDERR "$d/$b: Missing $d/$b.xpl!\n"
+    if -f "$d/$b.wts" && ! -f "$d/$b.xpl";
+  #
+  # A .xpl should imply no .wtb.
+  return print STDERR "$d/$b: .wtb with $d/$b.xpl!\n"
+    if -f "$d/$b.xpl" && -f "$d/$b.wtb";
+  # A .wtb should imply no .wts or .xpl.
+  # (A .wtb with .xpl already checked for.)
+  return print STDERR "$d/$b: .wtb with .wts!\n"
+    if -f "$d/$b.wtb" && -f "$d/$b.wts";
+  #
+  # A .xpl of the board should imply photographs of the board.
+  return print STDERR "$d/$b: .xpl without photos!\n"
+    if -f "$d/$b.xpl" && ! (-f "$d/${b}front.jpg" && -f "$d/${b}back.jpg");
+  #
+  # Photographs of the board should imply the existence of .sch and .brd.
+  return print STDERR "$d/$b: needs Eagle drawings!\n"
+    if (-f "$d/${b}front.jpg" && -f "$d/${b}back.jpg")
+    && ! (-f "$d/$b.sch" && -f "$d/$b.brd");
+  #
+  # A .pdf should imply the existence of .sch and .brd for an "X"
+  # version of the board, as well.
+  return print STDERR "$d/$b: needs Eagle 'X' version!\n"
+    if -f "$d/$b.pdf"
+    && ! (-f "$d/${d2}X.sch" && -f "$d/${d2}X.brd");
+  #
+  # I can't believe something got finished!
+  return 0;
+}
+
 $modules = "modules";
 open(MTXT, ">$modules.txt") || die "$modules.txt: $!";
 print MTXT "Module\tVersions  Description\r\n";
@@ -105,8 +148,9 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
       }
       die "$d/$b: Inventory info conflict\n"
         if -f "$d/$b.wtb" && -f "$d/$b.wts";
-      print STDERR "$d/$b: no Inventory info\n"
-        unless -f "$d/$b.wtb" || -f "$d/$b.wts" || -f "$d/$b.xpl";
+      &NextAction;
+#     print STDERR "$d/$b: no Inventory info\n"
+#       unless -f "$d/$b.wtb" || -f "$d/$b.wts" || -f "$d/$b.xpl";
       print "<td>$b:\n";
       $i = 0;
       foreach $suf (@suffix) {
@@ -115,9 +159,9 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
         }
         if (-f "$d/$b$suf") {
           print "<br><a href=$WEBURL/$d/$b$suf>$desc[$i]</a>\n";
-        } else {
-          print STDERR "$d/$b: no $desc[$i]\n"
-            unless $suf =~ /^.wt/ || $suf =~ /^.xpl/;
+#       } else {
+#         print STDERR "$d/$b: no $desc[$i]\n"
+#           unless $suf =~ /^.wt/ || $suf =~ /^.xpl/;
         }
         $i++;
       }
