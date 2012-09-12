@@ -83,6 +83,10 @@ sub NextAction {
     if (-f "$d/${b}front.jpg" && -f "$d/${b}back.jpg")
     && ! (-f "$d/$b.sch" && -f "$d/$b.brd");
   #
+  # Existence of schematic and board should imply a .pdf
+  return print STDERR "$d/$b: needs .pdf!\n"
+    if -f "$d/$b.sch" && ! -f "$d/$b.pdf";
+  #
   # A .pdf should imply the existence of .sch and .brd for an "X"
   # version of the board, as well.
   return print STDERR "$d/$b: needs Eagle 'X' version!\n"
@@ -134,8 +138,11 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
     @boards = sort byname keys %boards;
     @boards = grep(!/brd$/ && !/sch$/, @boards);
     $d = "$d1/$d2";
+    warn "$d2: no extant revisions??" unless @boards;
     foreach $b (sort byname @boards) {
-      next unless $b =~ /^$d2([A-Z])$/ || $b =~ /^$d2([S]..)$/;
+      next unless $b =~ /^$d2([A-Z])$/
+               || $b =~ /^$d2([S]..)$/
+               || $b =~ /^$d2([Y].)$/;
       if ($b =~ /^$d2([A-Z])$/) {
         $versions .= $1;
         $versions .= "*" unless -f "$d/$b.brd";
