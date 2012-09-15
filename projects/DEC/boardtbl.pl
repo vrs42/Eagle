@@ -142,11 +142,12 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
     foreach $b (sort byname @boards) {
       next unless $b =~ /^$d2([A-Z])$/
                || $b =~ /^$d2([S]..)$/
-               || $b =~ /^$d2([Y].)$/;
-      if ($b =~ /^$d2([A-Z])$/) {
+               || $b =~ /^$d2([A-Z]Y.)$/;
+      if ($b =~ /^$d2([A-Z]\w*)$/) {
         $versions .= $1;
         $versions .= "*" unless -f "$d/$b.brd";
         $versions .= "-" if -f "$d/$b.brd-";
+        $versions .= " ";
       }
       if (++$column > 7) {
         print "</tr>" unless $column == 99;
@@ -175,7 +176,7 @@ for $d1 ('Bxxx', 'Gxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
     }
     print MTXT "$d2\t$versions\t  $desc\r\n";
     print MHTM "<tr><td><a href=$WEBURL/$d1/$d2>$d2</a>";
-    print MHTM "<td>$versions<td>";
+    print MHTM "<td nowrap=\"nowrap\">$versions<td nowrap=\"nowrap\">";
     if (-f "$d1/$d2/$d2-ds.pdf") {
       print MHTM "<a href=$WEBURL/$d1/$d2/$d2-ds.pdf>$desc</a>";
     } else {

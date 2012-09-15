@@ -1,4 +1,4 @@
-Major Registers
+Major Registers, double
 <UL>
 <LI><b>m220print</b> is a snapshot of M220.</LI>
 <LI><b>m220</b> is DEC's M220 Major Registers card (revision B).</LI>
