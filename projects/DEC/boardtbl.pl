@@ -35,7 +35,7 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
 # "hb.pdf",
 );
 @desc = (
-  "DEC schematic",
+  "PDF schematic",
   "Eagle board",
   "Eagle schematic",
   "Front side photo",
