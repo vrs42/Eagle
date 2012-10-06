@@ -1,0 +1,121 @@
+#usage "<qt><b>Perform substitutions in a DEC schematic to bring in into the 21st century.</b>\n"
+       "<p>"
+       "Changes part numbers (values) to modern equivalents."
+       "<p>"
+       "Usage: RUN xversion"
+       "<p>"
+       "<h3>You can also run this ULP from the command line:</h3><p>"
+       "RUN xversion<br>"
+       "<hr> "
+       "<author>Author: vrs@msn.com</author></qt>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+
+string Version = "4.1.1";
+//string find;
+//string vfind;
+//string again;
+//string fpin;
+//string fndpin = "Element";
+//string foundelement = "";
+string fPinPad[] = { "", "PIN", "PAD" };
+//int    fcnt = 0;
+//int    all;
+//int    cnt;
+//int    Result;
+//int    mx, my;
+//real   lastZoom = 0;
+//int    lastSheet = 0;
+
+string old[], new[];
+int count = 0;
+
+string cmd;
+
+int i;
+
+old[count] = "D662";
+new[count] = "1N4154";
+count++;
+old[count] = "1N3606";
+new[count] = "1N4154";
+count++;
+old[count] = "D664";
+new[count] = "1N914";
+count++;
+old[count] = "1N645";
+new[count] = "1N914";
+count++;
+old[count] = "DEC3639";
+new[count] = "PN3640";
+count++;
+old[count] = "2N3639";
+new[count] = "PN3640";
+count++;
+old[count] = "DEC3009";
+new[count] = "PN3569";
+count++;
+old[count] = "2N3009";
+new[count] = "PN3569";
+count++;
+old[count] = "16J1";
+new[count] = "2N2222";
+count++;
+old[count] = "2N3605";
+new[count] = "2N2222";
+count++;
+old[count] = "DEC1008";
+new[count] = "BC639";
+count++;
+old[count] = "MM1008";
+new[count] = "BC639";
+count++;
+
+
+// *** Board coord. ***
+if (board) {
+   cmd = "";
+   board(B) {
+      B.elements(E) {
+         for (i = 0; i < count; i++) {
+            if (E.value == old[i]) {
+               cmd += "VALUE " + E.name + " " + new[i] + ";\n";
+            }
+         }
+      }
+   }
+   exit (cmd);
+}
+
+// *** Schematic coord. ***
+if (schematic) {
+   cmd = "";
+   schematic(S) {
+      // Iterate over all sheets
+      S.sheets(SH) {
+         // Iterate over all parts
+         SH.parts(PA) {
+            for (i = 0; i < count; i++) {
+               if (PA.value == old[i]) {
+                  cmd += "VALUE " + PA.name + " " + new[i] + ";\n";
+               }
+            }
+
+//            if (PA.value == "1N3606") {
+//               cmd += "VALUE " + PA.name + " 1N4154;\n";
+//            }
+//            if (PA.value == "1N645") {
+//               cmd += "VALUE " + PA.name + " 1N914;\n";
+//            }
+//            if (PA.value == "2N3639") {
+//               cmd += "VALUE " + PA.name + " PN3640;\n";
+//            }
+         }
+      }
+   }
+   exit(cmd);
+}
+else {
+   dlgMessageBox("Start this ULP from schematic or board!", "OK");
+   exit (0);
+}
