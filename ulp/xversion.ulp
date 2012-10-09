@@ -34,13 +34,13 @@ string cmd;
 
 int i;
 
-old[count] = "D662";
+old[count] = "D664";
 new[count] = "1N4154";
 count++;
 old[count] = "1N3606";
 new[count] = "1N4154";
 count++;
-old[count] = "D664";
+old[count] = "D662";
 new[count] = "1N914";
 count++;
 old[count] = "1N645";
