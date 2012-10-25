@@ -1,1 +1,5 @@
-PDP9 Clock, 1 MC
+PDP9 Clock (R405 configured for 1MC)
+<UL>
+<LI><b>R409H</b> is a drawing of DEC's R409H.</LI>
+<LI><b>R409J</b> is a drawing of DEC's R409J.</LI>
+<LI><b>R409X</b> is a 'modernized' R409.</LI>
