@@ -244,7 +244,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/zilog.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="159 290 1282 913"
+Loc="163 313 1286 936"
 State=1
 Number=1
 File="M113B.sch"
@@ -284,7 +284,7 @@ Sheet=1
 
 [Win_2]
 Type="Board Editor"
-Loc="365 462 1488 1085"
+Loc="369 485 1492 1108"
 State=1
 Number=2
 File="M113B.brd"
@@ -323,7 +323,7 @@ Layer=1
 
 [Win_3]
 Type="Control Panel"
-Loc="313 173 1074 797"
+Loc="22 22 621 421"
 State=2
 Number=0
 
