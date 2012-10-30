@@ -67,6 +67,12 @@ count++;
 old[count] = "DEC2219";
 new[count] = "2N2219";
 count++;
+old[count] = "DEC4258";
+new[count] = "PN4250A";
+count++;
+old[count] = "2N4258";
+new[count] = "PN4250A";
+count++;
 
 
 // *** Board coord. ***
