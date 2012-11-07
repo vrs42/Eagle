@@ -329,9 +329,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/con-yamaichi.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/crystal.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/cypress.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dc-dc-converter.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-con.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-m.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-r.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/diode.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/discrete.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/display-hp.lbr"
@@ -480,7 +478,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/zilog.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="48 253 1958 1397"
+Loc="52 276 1962 1420"
 State=1
 Number=1
 File="R210X.brd"
@@ -519,7 +517,7 @@ Layer=16
 
 [Win_2]
 Type="Schematic Editor"
-Loc="44 249 1952 1389"
+Loc="48 272 1956 1412"
 State=1
 Number=2
 File="R210X.sch"
@@ -559,7 +557,7 @@ Sheet=1
 
 [Win_3]
 Type="Control Panel"
-Loc="22 22 621 421"
+Loc="264 264 863 663"
 State=2
 Number=0
 
