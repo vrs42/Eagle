@@ -89,9 +89,12 @@ sub NextAction {
   #
   # A .pdf should imply the existence of .sch and .brd for an "X"
   # version of the board, as well.
+# BUGBUG: for now, check for the .brd instead.
   return print STDERR "$d/$b: needs Eagle 'X' version!\n"
-    if -f "$d/$b.pdf"
-    && ! (-f "$d/${d2}X.sch" && -f "$d/${d2}X.brd");
+#   if -f "$d/$b.pdf"
+    if -f "$d/$b.brd"
+    && ! (-f "$d/${d2}X.sch" && -f "$d/${d2}X.brd")
+    && ! (-f "$d/${d2}.nox");
   #
   # I can't believe something got finished!
   return 0;
