@@ -73,6 +73,21 @@ count++;
 old[count] = "2N4258";
 new[count] = "PN4250A";
 count++;
+old[count] = "MPS6534";
+new[count] = "MPS6534";
+count++;
+old[count] = "2N3568";
+new[count] = "PN3567";
+count++;
+old[count] = "PN3568";
+new[count] = "PN3567";
+count++;
+old[count] = "2N3790";
+new[count] = "2N3792";
+count++;
+old[count] = "1N823";
+new[count] = "1N4735";
+count++;
 
 
 // *** Board coord. ***
