@@ -139,6 +139,9 @@ count++;
 old[count] = "2N3494";
 new[count] = "2N5401";
 count++;
+old[count] = "PAD-0465";
+new[count] = "PAD-0465";
+count++;
 
 
 // *** Board coord. ***
