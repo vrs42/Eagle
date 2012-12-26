@@ -130,6 +130,16 @@ count++;
 old[count] = "1/4M 6.8AZ";	// 6.8V Zener
 new[count] = "1N5235";	// also 1N4736, 1N754
 count++;
+old[count] = "MR2066";
+new[count] = "1N4003";
+count++;
+old[count] = "DEC3494";
+new[count] = "2N5401";
+count++;
+old[count] = "2N3494";
+new[count] = "2N5401";
+count++;
+
 
 // *** Board coord. ***
 if (board) {
