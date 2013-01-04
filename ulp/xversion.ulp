@@ -145,8 +145,14 @@ count++;
 old[count] = "MPS3568";
 new[count] = "2N2907";
 count++;
-old[count] = "MM999";		// No data sheet, but crosses to NTE159 (nteinc.com)
+old[count] = "MM999";		// 15-01836 No data sheet, but crosses to NTE159 (nteinc.com)
 new[count] = "2N3906";	// vetcosurplus.com sells 2N3906/NTE159 as replacement for MM999.
+count++;
+old[count] = "DEC6";		// 15-09090 No data sheet, but crosses to NTE159 (nteinc.com)
+new[count] = "2N3906";	// vetcosurplus.com sells 2N3906/NTE159 as replacement for 15-09090.
+count++;
+old[count] = "DEC6B";		// 15-09090-01 No data sheet, but crosses to NTE159 (nteinc.com)
+new[count] = "2N3906";	// vetcosurplus.com sells 2N3906/NTE159 as replacement for 15-09090-01.
 count++;
 
 
