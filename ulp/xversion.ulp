@@ -154,6 +154,9 @@ count++;
 old[count] = "DEC6B";		// 15-09090-01 No data sheet, but crosses to NTE159 (nteinc.com)
 new[count] = "2N3906";	// vetcosurplus.com sells 2N3906/NTE159 as replacement for 15-09090-01.
 count++;
+old[count] = "MR2064";	// Needs 1.25V-1.3V forward drop, 1.5A
+new[count] = "FR154";
+count++;
 
 
 // *** Board coord. ***
