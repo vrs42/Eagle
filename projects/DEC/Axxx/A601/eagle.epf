@@ -247,7 +247,7 @@ UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/zilog.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="264 467 1387 1090"
+Loc="268 490 1391 1113"
 State=1
 Number=2
 File="A601X.brd"
@@ -286,7 +286,7 @@ Layer=16
 
 [Win_2]
 Type="Schematic Editor"
-Loc="58 295 1181 918"
+Loc="62 318 1185 941"
 State=1
 Number=1
 File="A601X.sch"
