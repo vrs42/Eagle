@@ -157,6 +157,15 @@ count++;
 old[count] = "MR2064";	// Needs 1.25V-1.3V forward drop, 1.5A
 new[count] = "FR154";
 count++;
+old[count] = "SDA-4";
+new[count] = "2N2060";
+count++;
+old[count] = "SDA-5";
+new[count] = "2N2060";
+count++;
+old[count] = "SDA-6";
+new[count] = "2N2060";
+count++;
 
 
 // *** Board coord. ***
