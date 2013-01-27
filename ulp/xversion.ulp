@@ -166,6 +166,12 @@ count++;
 old[count] = "SDA-6";
 new[count] = "2N2060";
 count++;
+old[count] = "2N1305";	// Sigh.  There just aren't many choices for germanium.
+new[count] = "NTE102";
+count++;
+old[count] = "1N994"; 	// Sigh.  There just aren't many choices for germanium.
+new[count] = "NTE109";
+count++;
 
 
 // *** Board coord. ***
