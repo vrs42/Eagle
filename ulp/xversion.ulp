@@ -172,7 +172,9 @@ count++;
 old[count] = "1N994"; 	// Sigh.  There just aren't many choices for germanium.
 new[count] = "NTE109";
 count++;
-
+old[count] = "DEC2904";
+new[count] = "2N2904";
+count++;
 
 // *** Board coord. ***
 if (board) {
