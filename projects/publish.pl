@@ -37,7 +37,7 @@ sub description {
   }
   @work = ();
   while (<INPUT>) {
-    if (s/<b>([^<]*)<\/b> *//) {
+    if (s/<b>([^<]*)<\/b> *//i) {
       $tag = $1;
       $desc = $_;
       while ($desc !~ /<\/LI>/) {
