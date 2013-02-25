@@ -190,6 +190,9 @@ count++;
 old[count] = "1N429";		// 6.2V 5%
 new[count] = "1N753A";
 count++;
+old[count] = "2N4912";		// Newark/Farnell
+new[count] = "NTE274";
+count++;
 
 
 // *** Board coord. ***
