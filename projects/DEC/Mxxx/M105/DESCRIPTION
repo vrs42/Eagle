@@ -1,6 +1,4 @@
 Address Selector
 <UL>
-<LI><b>M105-bad</b> is an Eagle version of DEC's M105 Address Selector, but 
-without bus receivers that won't actually work.</LI>
-<LI><b>M105</b> is an Eagle version of DEC's M105 Address Selector with 
-proper bus receivers.</LI>
+<LI><b>M105C</b> is a drawing of DEC's M105C.</LI>
+<LI><b>M105X</b> is a 'modernized' M105.</LI>
