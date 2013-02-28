@@ -93,9 +93,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/con-yamaichi.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/crystal.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/cypress.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dc-dc-converter.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-con.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-m.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-r.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/diode.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/discrete.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/display-hp.lbr"
@@ -244,10 +242,10 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/zilog.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="192 278 1315 902"
+Loc="200 324 1323 948"
 State=1
 Number=1
-File="M115D.sch"
+File="M115X.sch"
 View="-52183 -39480 2541525 1893686"
 WireWidths=" 0 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064 1524"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
@@ -284,10 +282,10 @@ Sheet=1
 
 [Win_2]
 Type="Board Editor"
-Loc="27 141 1150 764"
+Loc="35 187 1158 810"
 State=1
 Number=2
-File="M115D.brd"
+File="M115X.brd"
 View="-25702 -63293 1297508 685371"
 WireWidths=" 0 2540 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
@@ -323,7 +321,7 @@ Layer=16
 
 [Win_3]
 Type="Control Panel"
-Loc="309 150 1070 774"
+Loc="44 44 670 443"
 State=2
 Number=0
 
