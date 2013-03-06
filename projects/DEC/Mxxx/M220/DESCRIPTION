@@ -1,6 +1,6 @@
 Major Registers, double
 <UL>
-<LI><b>m220print</b> is a snapshot of M220.</LI>
+<LI><b>M220B</b> is a drawing of DEC's M220B.</LI>
 <LI><b>m220</b> is DEC's M220 Major Registers card (revision B).</LI>
 <LI><b>m220noadder</b> is an incomplete attempt to replace the adder chip 
 with gate-level logic.</LI>
