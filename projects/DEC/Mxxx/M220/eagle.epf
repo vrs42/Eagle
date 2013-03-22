@@ -244,10 +244,11 @@ UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xl_cpld.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xl_fpga.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/zetex.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/zilog.lbr"
+UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/atf1502als.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="426 1144 1549 1767"
+Loc="438 1213 1561 1836"
 State=1
 Number=2
 File="M220pal.brd"
@@ -286,11 +287,11 @@ Layer=16
 
 [Win_2]
 Type="Schematic Editor"
-Loc="219 972 1342 1595"
+Loc="231 1041 1354 1664"
 State=1
 Number=1
 File="M220pal.sch"
-View="-55736 -82662 2722742 4095972"
+View="140276 1755045 1341664 3154461"
 WireWidths=" 0 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064 1524"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 PadDrills=" 2540 3048 4064 6096 10160 12700 14224 16764 17780 19304 21844 25400 38100 50800 64516 8128"
@@ -326,7 +327,7 @@ Sheet=1
 
 [Win_3]
 Type="Control Panel"
-Loc="44 44 670 443"
+Loc="47 109 646 508"
 State=2
 Number=0
 

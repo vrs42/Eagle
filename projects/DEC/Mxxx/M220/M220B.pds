@@ -1,0 +1,44 @@
+;PALASM Design Description
+
+;---------------------------------- Declaration Segment ------------
+TITLE    M220B.PDS
+PATTERN  A
+REVISION 1.0
+AUTHOR   Vincent Slyngstad
+COMPANY  None
+DATE     03/20/2013
+
+CHIP   M220B   PAL16V8
+
+;---------------------------------- PIN Declarations ---------------
+PIN  1          clock                COMBINATORIAL             ; INPUT
+PIN  2          aj1                  COMBINATORIAL             ; INPUT
+PIN  3          ak2                  COMBINATORIAL             ; INPUT
+PIN  4          br2                  COMBINATORIAL             ; INPUT
+PIN  5          bs2                  COMBINATORIAL             ; INPUT
+PIN  6          bv1                  COMBINATORIAL             ; INPUT
+PIN  7          bt2                  COMBINATORIAL             ; INPUT
+PIN  8          ma3                  COMBINATORIAL             ; INPUT
+PIN  9          pc3                  COMBINATORIAL             ; INPUT
+PIN  10         GND                                            ; INPUT
+PIN  12         bv2                  COMBINATORIAL             ; INPUT
+PIN  13         bu1                  COMBINATORIAL             ; INPUT
+
+PIN  15         /b3                  COMBINATORIAL             ; OUTPUT
+PIN  16         q2_                  COMBINATORIAL             ; OUTPUT
+PIN  17         q3_                  COMBINATORIAL             ; OUTPUT
+PIN  18         q2                   REGISTERED                ; OUTPUT
+PIN  19         q3                   REGISTERED                ; OUTPUT
+PIN  20         VCC                                            ; INPUT
+
+EQUATIONS
+
+b3 = ma3*br2 + pc3*bs2 + bv2*bv1 + bu1*bt2;
+
+q3 := ak2;
+q3.clkf = clock;
+q3_ = /q3;
+
+q2 := aj1;
+q2.clkf = clock;
+q2_ = /q2;

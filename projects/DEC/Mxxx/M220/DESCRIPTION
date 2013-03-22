@@ -4,5 +4,10 @@ Major Registers, double
 <LI><b>M220</b> is DEC's M220 Major Registers card (revision B).</LI>
 <LI><b>M220new</b> is an implementation that doesn't use the hard to find
 7453 and 7482 chips.</LI>
-<LI><b>M220pal</b> is a PAL implementation, using PALs programed with
+<LI><b>M220pal</b> is a PAL implementation, using 22V10 programed with
 m220pgm1.pds and m220pgm2.pds.</LI>
+<LI><b>M220p16</b> is a PAL implementation, using 16V8 programed with
+m220a.pds, m220b.pds, and m220c.pds.</LI>
+<LI><b>M220xc</b> is a PLD implementation, using XC9536XL programed with
+m220a.v, m220b.v, and m220c.v.</LI>
+<LI><b>M220X</b> is a 'modernized' M220 (M220p16).</LI></UL>

@@ -1,0 +1,35 @@
+;PALASM Design Description
+
+;---------------------------------- Declaration Segment ------------
+TITLE    M220A.PDS
+PATTERN  A
+REVISION 1.0
+AUTHOR   Vincent Slyngstad
+COMPANY  None
+DATE     03/20/2013
+
+CHIP   M220A   PAL16V8
+
+;---------------------------------- PIN Declarations ---------------
+PIN  2          bh2                  COMBINATORIAL             ; INPUT
+PIN  3          bj2                  COMBINATORIAL             ; INPUT
+PIN  4          bf1                  COMBINATORIAL             ; INPUT
+PIN  5          bc1                  COMBINATORIAL             ; INPUT
+PIN  6          bf2                  COMBINATORIAL             ; INPUT
+PIN  7          bl1                  COMBINATORIAL             ; INPUT
+PIN  8          bl2                  COMBINATORIAL             ; INPUT
+;PIN  9          be2                  COMBINATORIAL             ; INPUT
+PIN  10         GND                                            ; INPUT
+PIN  12         ac3                  COMBINATORIAL             ; INPUT
+PIN  13         ac3_                 COMBINATORIAL             ; INPUT
+PIN  14         bn2                  COMBINATORIAL             ; INPUT
+PIN  15         bd2                  COMBINATORIAL             ; INPUT
+PIN  16         bn1                  COMBINATORIAL             ; INPUT
+PIN  17         bp2                  COMBINATORIAL             ; INPUT
+PIN  18         bm1                  COMBINATORIAL             ; INPUT
+PIN  19         /a3                  COMBINATORIAL             ; OUTPUT
+PIN  20         VCC                                            ; INPUT
+
+EQUATIONS
+; There's only really room for the AOI-style gate in a 16V8.
+a3 = ac3*bh2 + (/ac3)*bj2 + bn2*bf1 + bd2*bc1 + bn1*bf2 + bp2*bl1 + bm1*bl2;
