@@ -148,7 +148,9 @@ for $d1 ('Axxx', 'Bxxx', 'Gxxx', 'Kxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
                || $b =~ /^$d2([A-Z]Y.)$/;
       if ($b =~ /^$d2([A-Z]\w*)$/) {
         $versions .= $1;
-        $versions .= "*" unless -f "$d/$b.brd";
+#       $versions .= "*" unless -f "$d/$b.brd";
+        $versions .= "+" if !-f "$d/$b.brd" && -f "$d/${b}back.jpg";
+        $versions .= "*" if !-f "$d/$b.brd" && !-f "$d/${b}back.jpg";
         $versions .= "-" if -f "$d/$b.brd-";
         $versions .= " ";
       }
