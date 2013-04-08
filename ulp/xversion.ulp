@@ -193,6 +193,9 @@ count++;
 old[count] = "2N4912";		// Newark/Farnell
 new[count] = "NTE274";
 count++;
+old[count] = "2N4274";
+new[count] = "PN3569";
+count++;
 
 
 // *** Board coord. ***
