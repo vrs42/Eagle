@@ -242,7 +242,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/zilog.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="26 45 625 444"
+Loc="30 68 629 467"
 State=1
 Number=1
 File="M304X.brd"
@@ -281,7 +281,7 @@ Layer=16
 
 [Win_2]
 Type="Schematic Editor"
-Loc="136 155 735 554"
+Loc="140 178 739 577"
 State=1
 Number=2
 File="M304X.sch"
