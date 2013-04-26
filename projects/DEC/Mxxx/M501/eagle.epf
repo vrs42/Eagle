@@ -254,6 +254,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/74xx-jameco.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/74xx-us.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/74xxN.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/751xx.lbr"
+UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/Copy of dec-r.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/ForTim.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/OverVoltage.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/SparkFun5.lbr"
@@ -327,8 +328,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/con-yamaichi.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/crystal.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/cypress.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dc-dc-converter.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-con.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-r.lbr"
+UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-m.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/diode.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/discrete.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/display-hp.lbr"
@@ -474,15 +474,13 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/xl_cpld.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/xl_fpga.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/zilog.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/Copy of dec-r.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-m.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="175 382 1298 1005"
+Loc="179 405 1302 1028"
 State=1
 Number=1
-File="M501B.sch"
+File="M501X.sch"
 View="-80122 -55229 3966456 2696891"
 WireWidths=" 0 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064 1524"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
@@ -519,10 +517,10 @@ Sheet=1
 
 [Win_2]
 Type="Board Editor"
-Loc="381 554 1504 1177"
+Loc="385 577 1508 1200"
 State=1
 Number=2
-File="M501B.brd"
+File="M501X.brd"
 View="-25692 -64076 1296986 685386"
 WireWidths=" 0 2540 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 6096 3048 8128 4064"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
@@ -558,7 +556,7 @@ Layer=16
 
 [Win_3]
 Type="Control Panel"
-Loc="110 110 709 820"
+Loc="242 242 841 641"
 State=2
 Number=0
 
