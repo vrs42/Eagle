@@ -178,13 +178,22 @@ count++;
 old[count] = "1N994"; 	// Sigh.  There just aren't many choices for germanium.
 new[count] = "NTE109";
 count++;
+old[count] = "2N1132";
+new[count] = "2N2904";
+count++;
 old[count] = "DEC2904";
 new[count] = "2N2904";
+count++;
+old[count] = "1N746A";		// 3.3V 5%
+new[count] = "1N746A 3.3V";
 count++;
 old[count] = "1N748";		// 3.9V 5%
 new[count] = "1N748A";
 count++;
 old[count] = "1N752";		// 5.6V 5%
+new[count] = "1N752A 5.6V";
+count++;
+old[count] = "1N752A";	// 5.6V 5%
 new[count] = "1N752A 5.6V";
 count++;
 old[count] = "1N762";		// 5.5V 5%
@@ -204,6 +213,15 @@ new[count] = "BC557";
 count++;
 old[count] = "2N4250";
 new[count] = "BC557";
+count++;
+old[count] = "7400N";
+new[count] = "7400N";
+count++;
+//old[count] = "7440N";	// 7440 is totally obsoleted
+//new[count] = "7440N";
+//count++;
+old[count] = "7486N";
+new[count] = "7486N";
 count++;
 
 
@@ -226,6 +244,7 @@ if (board) {
             // Better be from rcl or dec-con.
             if (E.package.library != "rcl"
             &&  E.package.library != "frames"
+            &&  E.package.library != "resistor-power"
             &&  E.package.library != "supply2"
             &&  E.package.library != "wirepad"
             &&  E.package.library != "dec-con") {
@@ -259,6 +278,7 @@ if (schematic) {
                // Better be from rcl, dec-con, frames,  or supply2.
                if (PA.device.library != "rcl"
                &&  PA.device.library != "frames"
+               &&  PA.device.library != "resistor-power"
                &&  PA.device.library != "supply2"
                &&  PA.device.library != "wirepad"
                &&  PA.device.library != "dec-con") {
