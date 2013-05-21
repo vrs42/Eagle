@@ -217,6 +217,9 @@ count++;
 old[count] = "7400N";
 new[count] = "7400N";
 count++;
+old[count] = "7420N";
+new[count] = "7420N";
+count++;
 //old[count] = "7440N";	// 7440 is totally obsoleted
 //new[count] = "7440N";
 //count++;
