@@ -217,6 +217,9 @@ count++;
 old[count] = "7400N";
 new[count] = "7400N";
 count++;
+old[count] = "7401N";
+new[count] = "7401N";
+count++;
 old[count] = "7420N";
 new[count] = "7420N";
 count++;
@@ -248,6 +251,7 @@ if (board) {
             if (E.package.library != "rcl"
             &&  E.package.library != "frames"
             &&  E.package.library != "resistor-power"
+            &&  E.package.library != "supply1"
             &&  E.package.library != "supply2"
             &&  E.package.library != "wirepad"
             &&  E.package.library != "dec-con") {
@@ -282,6 +286,7 @@ if (schematic) {
                if (PA.device.library != "rcl"
                &&  PA.device.library != "frames"
                &&  PA.device.library != "resistor-power"
+               &&  PA.device.library != "supply1"
                &&  PA.device.library != "supply2"
                &&  PA.device.library != "wirepad"
                &&  PA.device.library != "dec-con") {
