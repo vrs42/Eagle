@@ -188,7 +188,10 @@ old[count] = "1N746A";		// 3.3V 5%
 new[count] = "1N746A 3.3V";
 count++;
 old[count] = "1N748";		// 3.9V 5%
-new[count] = "1N748A";
+new[count] = "1N748A 3.9V";
+count++;
+old[count] = "1N750";		// 3.9V 5%
+new[count] = "1N750A 4.7V";
 count++;
 old[count] = "1N752";		// 5.6V 5%
 new[count] = "1N752A 5.6V";
@@ -222,6 +225,9 @@ new[count] = "7401N";
 count++;
 old[count] = "7402N";
 new[count] = "7402N";
+count++;
+old[count] = "7410N";
+new[count] = "7410N";
 count++;
 old[count] = "7420N";
 new[count] = "7420N";
