@@ -1,0 +1,24 @@
+The two appear to be generally pin compatible, with a few exceptions:
+
+One exception is that the M7050 has an "on/off line" input on pin BU1 that must 
+be high when the reader is on line.  
+
+Another exception is that the M7050 detects an "out of tape" condition if no 
+character appears within 7 milliseconds of an enable.  This output is also 
+forced for the "off line" condition, and is presented on BL2.
+
+The M7050 also presents "inhibit_strobe\" at pin BT2.  This signal is basically 
+a delayed version of FEED_HOLE.
+
+The M7050 has an additional input on BC1, which when grounded will disable driving 
+the input bus during RRB.
+
+The M7050 has an additional test point brought out on pin AC1, which carries the 
+enable for the reader data latches.
+
+The M705 initializes the input buffer to 0000 on INITIALIZE.  The M7050 will leave
+the prior contents.
+
+The M705 loads FEED_HOLE with two TTL loads; the M7050 uses a pair of MPS6531 in 
+a darlington arrangement that adds a small delay and has an AC impedence of 330 
+ohms and a DC impedance of about 5K.
