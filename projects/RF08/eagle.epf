@@ -112,6 +112,7 @@ UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/fiber-optic-siemens
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/fifo.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/fox-electronics.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/frames.lbr"
+UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/ftdi.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/fuse.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/heatsink.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/holes.lbr"
@@ -241,12 +242,11 @@ UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xilinx_spartan3.lbr
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xilinx_spartan3_virtex4_and_5.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xilinx_virtexii-xc2v80-flashprom.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xilinx_xc9572xl-tq100.lbr"
+UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xilinxx.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xl_cpld.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xl_fpga.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/zetex.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/zilog.lbr"
-UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/ftdi.lbr"
-UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xilinxx.lbr"
 
 [Win_1]
 Type="Board Editor"
@@ -329,7 +329,7 @@ Sheet=3
 
 [Win_3]
 Type="Control Panel"
-Loc="250 288 849 687"
+Loc="114 133 713 532"
 State=2
 Number=0
 
