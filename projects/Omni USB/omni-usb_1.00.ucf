@@ -1,0 +1,82 @@
+
+NET "MD<3>" LOC="42"  ;
+NET "MD<4>" LOC="41"  ;
+NET "MD<5>" LOC="37"  ;
+NET "MD<6>" LOC="39"  ;
+NET "MD<7>" LOC="40"  ;
+NET "MD<8>" LOC="13"  ;
+NET "MD<9>" LOC="10"  ;
+NET "MD<10>" LOC="11"  ;
+NET "MD<11>" LOC="12"  ;
+
+NET "RX_ADDR<5>" LOC="70"  ;
+NET "RX_ADDR<4>" LOC="68"  ;
+NET "RX_ADDR<3>" LOC="67"  ;
+NET "RX_ADDR<2>" LOC="66"  ;
+NET "RX_ADDR<1>" LOC="65"  ;
+NET "RX_ADDR<0>" LOC="64"  ;
+
+NET "TX_ADDR<5>" LOC="63"  ;
+NET "TX_ADDR<4>" LOC="61"  ;
+NET "TX_ADDR<3>" LOC="60"  ;
+NET "TX_ADDR<2>" LOC="59"  ;
+NET "TX_ADDR<1>" LOC="58"  ;
+NET "TX_ADDR<0>" LOC="56"  ;
+
+NET "K1" LOC="53"  ;    
+NET "K2" LOC="54"  ;
+NET "K3" LOC="55"  ;
+NET "K4" LOC="50"  ;
+NET "K5" LOC="52"  ;
+NET "K6" LOC="49"  ;
+
+NET "LD1" LOC="74"   ;
+NET "LD2" LOC="72"   ;
+NET "LD3" LOC="71"   ;
+
+NET "rxf_n" LOC="93"  ;
+NET "txe_n" LOC="94" ;
+NET "wr" LOC="76" ;
+NET "rd_n" LOC="77" ;
+NET "io_pause" LOC="28";
+NET "c0_d" LOC="23";
+NET "c1_d" LOC="18";
+NET "tp3_n" LOC="25";
+NET "ts3" LOC="17";
+NET "internal_io_d" LOC="20";
+NET "int_rqst_d" LOC="14";
+NET "sw_n" LOC="97";
+NET "initialize_n" LOC="16";
+NET "skip_d" LOC="15";
+NET "cbus6" LOC="92";
+NET "cbus5" LOC="91";
+NET "siwu_n" LOC="78";
+NET "ftdi_reset_n" LOC="95";
+
+NET "DATA_R<4>" LOC="30" ;
+NET "DATA_R<5>" LOC="29" ;
+NET "DATA_R<6>" LOC="36" ;
+NET "DATA_R<7>" LOC="27" ;
+NET "DATA_R<8>" LOC="03" ;
+NET "DATA_R<9>" LOC="96" ;
+NET "DATA_R<10>" LOC="01" ;
+NET "DATA_R<11>" LOC="99" ;
+
+
+NET "DATA_D<4>" LOC="33" ;
+NET "DATA_D<5>" LOC="32" ;
+NET "DATA_D<6>" LOC="35" ;
+NET "DATA_D<7>" LOC="22" ;
+NET "DATA_D<8>" LOC="09" ;
+NET "DATA_D<9>" LOC="04" ;
+NET "DATA_D<10>" LOC="08" ;
+NET "DATA_D<11>" LOC="06" ;
+
+NET "D<7>" LOC="85";
+NET "D<6>" LOC="81";
+NET "D<5>" LOC="82";
+NET "D<4>" LOC="89";
+NET "D<3>" LOC="79";
+NET "D<2>" LOC="87";
+NET "D<1>" LOC="86" ;
+NET "D<0>" LOC="90" ;
