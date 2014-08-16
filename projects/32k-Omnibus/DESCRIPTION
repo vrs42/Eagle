@@ -2,6 +2,8 @@ Omnibus 32K SRAM board
 <UL>
 <LI><b>Lafferty1</b> is a drawing based on Steve Lafferty's prototype.</LI>
 <LI><b>Lafferty1ab</b> is an "as built" version of Lafferty1, with the changes incorporated in the group buy.</LI>
+<LI><b>Lafferty2</b> is a drawing with ideas about a follow-on to Lafferty1.</LI>
 <LI><b>msc3102</b> is a drawing of the MSC3102 design.</LI>
 <LI><b>Omnimem</b> is a simplified version using 74244 instead of 74125.</LI>
+<LI><b>rtc</b> is a version of Lafferty1 with some thoughts about adding a clock circuit.</LI>
 (All are oversimplified implementations.)
