@@ -1,0 +1,42 @@
+Changes from old M868 schematic to M868H.sch:
+
+Added missing C45 bypass cap from VCC to GND.
+
+There was confusion between the active high and active low
+versions of CC_SETDLY.  Previously sheet 2 had connected 
+CC_SETDLY\ to what should be CC_SETDLY, and failed to 
+identify CC_SETDLY.  This affected 
+E03 pad 5, not 6 now outputs CC_SETDLY\.
+E03 pad 6 now outputs CC_SETDLY.
+E02 pad 5 and E04 pad 2 are now CC_SETDLY, not CC_SETDLY\. 
+The stuff on sheet 1 that references CC_SETDLY\ is now connected to E03 pad 5.
+
+E02 pad 9 is now correctly connected to CC_T/M_EN instead CC_T/M_EN\.
+
+The WTM switch has pads 1 and 2 exchanged.
+
+E12 pads 9 and 10 (DATA01 and CC_67X\) were swapped.
+
+E13 pad 3 is now documented to float high (NC).
+
+E37 pad 3 now correctly connects to E36 pad 11, not E13 pad 11.
+
+Power connections for E24 have been corrected.  Pad 1 is GND, pad 
+8 is VCC; previously pad 14 had been VCC, and pad 7 had been GND.
+
+E25 has is now a 14 pad spare, to match the actual board, instead 
+of a 16 pad spare.
+
+E27 pads 1 and 2 (CC_CLK_TE\ and CC_INIT\) have been swapped.
+
+E28 pads 4 and 5 (INITIALIZE and GND) have been swapped.
+
+E40 pads 4 and 6 are now documented to float high (NC).  They 
+had previously been shown connected to CC_PWR_OK.
+
+R13 and R14 are now correctly identified.  (Previosly they had 
+been swapped.)
+
+R26 has been replaced with a part of the correct footprint, been 
+flipped to correctly show pads 2 and 3 connected to VCC, and the 
+value has been corrected to show a 20K potentiometer.
