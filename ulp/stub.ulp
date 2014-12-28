@@ -1,0 +1,96 @@
+//
+// This ULP scans a board for wires that don't end any place 
+// usefule -- that is:
+//   at an endpoint of another wire in the same layer,
+//   at a via with at least one other connection, or
+//   at a contact.
+//
+// Errors are displayed in a dialog box.  No box means no errors!
+//
+//  Written by vrs, 12/26/2014.
+//
+int points = 0;
+int xp[];
+int yp[];
+int layerp[];
+int refs[];
+void EndPoint(int x, int y, int layer) {
+  for (int i = 0; i < points; i++) {
+    if ((x == xp[i]) && (y == yp[i]) && layer == layerp[i]) {
+      refs[i]++;
+      return;
+    }
+  }
+  xp[points] = x;
+  yp[points] = y;
+  layerp[i] = layer;
+  refs[points] = 1;
+  points = points + 1;
+  return;
+}
+
+int ViaCnt = 0;
+int xv[];
+int yv[];
+void SetVia(int x, int y) {
+  xv[ViaCnt] = x;
+  yv[ViaCnt] = y;
+  ViaCnt = ViaCnt + 1;
+}
+int IsVia(int x, int y) {
+  for (int i = 0; i < ViaCnt; i++) {
+    if ((x == xv[i]) && (y == yv[i])) {
+      return 1;
+    }
+  }
+  return 0;
+}
+
+if (!board) {
+  dlgMessageBox("<hr><b>ERROR: No board!</b><p>\nThis program can only work in the board editor.");
+  exit(1);
+}
+
+string outstr = "";
+string tmp;
+int errors = 0;
+board(B) {
+  B.signals(S){
+    S.vias(V) {
+      // A via causes all references to appear to be in layer 1.
+      SetVia(V.x, V.y);
+    }
+    S.contactrefs(C) {
+      // A contact appears as a via that needs no more traces.
+      SetVia(C.contact.x, C.contact.y);
+      EndPoint(C.contact.x, C.contact.y, 1);
+      EndPoint(C.contact.x, C.contact.y, 1);
+    }
+    S.wires(W) {
+      if (IsVia(W.x1, W.y1)) {
+        EndPoint(W.x1, W.y1, 1);
+      } else {
+        EndPoint(W.x1, W.y1, W.layer);
+      }
+      if (IsVia(W.x2, W.y2)) {
+        EndPoint(W.x2, W.y2, 1);
+      } else {
+        EndPoint(W.x2, W.y2, W.layer);
+      }
+    }
+  }
+}
+for (int i = 0; i < points; i++) {
+  if (refs[i] < 2) {
+    sprintf(tmp, "Stub endpoint (%f %f) in layer %d\n",
+           u2inch(xp[i]), u2inch(yp[i]), layerp[i]);
+    outstr += tmp;
+    errors++;
+  }
+}
+
+if (errors) {
+  dlgMessageBox(outstr);
+  exit(1);
+}
+exit(0);
