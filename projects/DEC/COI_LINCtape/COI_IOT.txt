@@ -1,0 +1,43 @@
+The COI LINC tape hoard responds to all IOTs in the 676X and 677X range:
+
+6760 Output, no clear
+6761 C1 Input, OR
+6762 Output, no clear
+6763 C1 Input, OR
+6764 C0 Output, clear
+6765 C0 Output, clear
+6766 C0 Output, clear
+6767 C0 Output, clear
+6770 Output, no clear
+6771 Output, no clear
+6772 C1 Input, OR
+6773 C1 Input, OR
+6774 C0 Output, clear
+6775 C0 Output, clear
+6776 C0 Output, clear
+6777 C0 Output, clear
+
+C0 is asserted (low) for all IOTs with bit 9 set, provided 
+XDONE is set.
+
+C1 is asserted (low) for IOTs which are in 676[13] or in
+677[23], again provided XDONE is set.   (The operation of 
+the IOTs appears to be undefined if the device is busy.)
+thes IOTs also present data on the DATA bus.
+
+The device handles book-keeping for 3-cycle DMA, performing 
+transfers as requested by the device until XDONE, which 
+will inhibit further DMA.  (It is up to the device to set 
+XDONE when notified of OVERFLOW.)
+
+TC08 Instructions:
+6761 DRTA Input, OR -- Read Status register A
+6762 DTCA Clear Status register A
+6764 DTXA
+6771 DTSF
+6772 DTRB
+6774 DTLB
+and their microcoded combinations, as allowed by Posibus.
+
+It would appear that to the extent that can be determined, 
+this device is (or could be) compatible with the TC08.
