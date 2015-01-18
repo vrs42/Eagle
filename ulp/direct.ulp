@@ -1,0 +1,58 @@
+//
+// This ULP scans a schematic for segments that hang in the air,
+// but could be directly connected, as only one other segment
+// with that name exists.
+//
+// Errors are displayed in a dialog box.  No box means no errors!
+//
+//  Written by vrs, 12/26/2014.
+//
+int named = 0; // Set to report named signals too.
+
+if (!schematic) {
+  dlgMessageBox("<hr><b>ERROR: No schematic!</b><p>\nThis program can only work in the schematic editor.");
+  exit(1);
+}
+
+string outstr = "";
+string tmp;
+int errors = 0;
+int segments;
+string part;
+schematic(SC) {
+  SC.sheets(SH){
+    SH.nets(N) {
+      if (named || strchr(N.name, '$') >= 0) {
+        // First, count the segments.
+        segments = 0;
+        N.segments(S) segments++;
+        // If there are less than <threshold> of them, report it.
+        if ((segments != 1) && (segments < 3)) {
+          sprintf(tmp, "Signal %s can be directly connected on sheet %d:",
+                 N.name, SH.number);
+          outstr += tmp;
+          N.segments(S) {
+            S.pinrefs(P) {
+              part = P.instance.name;
+              sprintf(tmp, " %s", P.instance.name);
+              outstr += tmp;
+            }
+          }
+          outstr += "\n";
+          errors++;
+        }
+      }
+    }
+  }
+}
+
+if (errors) {
+  dlgMessageBox(outstr);
+  if (errors > 50) {
+    output("ulp.txt", "wt") {
+      printf("%s", outstr);
+    }
+  }
+  exit(1);
+}
+exit(0);

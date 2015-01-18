@@ -1,0 +1,53 @@
+//
+// This ULP scans a schematic for nets that hang in the air,
+// but have only a generated name (N$<foo>).
+//
+// Errors are displayed in a dialog box.  No box means no errors!
+//
+//  Written by vrs, 12/26/2014.
+//
+
+if (!schematic) {
+  dlgMessageBox("<hr><b>ERROR: No schematic!</b><p>\nThis program can only work in the schematic editor.");
+  exit(1);
+}
+
+string outstr = "";
+string tmp;
+int errors = 0;
+int pinrefs;
+string part;
+schematic(SC) {
+  SC.sheets(SH){
+    SH.nets(N) {
+      if (strchr(N.name, '$') >= 0) {
+        N.segments(S) {
+          pinrefs = 0;
+          part = "<none>";
+          S.pinrefs(P) {
+            // A segment is considered hanging unless it has 2 or more pinrefs.
+            pinrefs++;
+            part = P.instance.name;
+          }
+          if (pinrefs < 2) {
+            sprintf(tmp, "Signal %s needs a name (%s) in sheet %d\n",
+                   N.name, part, SH.number);
+            outstr += tmp;
+            errors++;
+          }
+        }
+      }
+    }
+  }
+}
+
+if (errors) {
+  dlgMessageBox(outstr);
+  if (errors > 50) {
+    output("ulp.txt", "wt") {
+      printf("%s", outstr);
+    }
+  }
+  exit(1);
+}
+exit(0);
