@@ -15,7 +15,7 @@ if (!schematic) {
 string outstr = "";
 string tmp;
 int errors = 0;
-int pinrefs;
+int pinrefs, hastext;
 string part;
 schematic(SC) {
   SC.sheets(SH){
@@ -34,6 +34,15 @@ schematic(SC) {
                    N.name, part, SH.number);
             outstr += tmp;
             errors++;
+          } else {
+            hastext = 0;
+            S.texts(T) { hastext = 1; }
+            if (hastext) {
+              sprintf(tmp, "Signal %s needs a name (%s) in sheet %d\n",
+                     N.name, part, SH.number);
+              outstr += tmp;
+              errors++;
+            }
           }
         }
       }
