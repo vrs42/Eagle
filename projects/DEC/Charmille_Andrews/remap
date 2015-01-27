@@ -1,0 +1,67 @@
+#!/usr/bin/perl
+
+#
+# Compare board and schematic netlists.
+# The board is presumed correct, the schematic is 
+# presumed damaged by copying and pasting.
+#
+
+open(INPUT, "ok.txt") || die "ok.txt: $!";
+%ok = ();
+while (<INPUT>) {
+  last if /^Net /;
+}
+%ok = ();
+while (<INPUT>) {
+  if (/^(\S+)\s+(\S+)\s+(\S+)\r*$/) {
+    ($net, $part, $pad) = ($1, $2, $3);
+    $ok{$net} .= "$part.$pad ";
+    next;
+  }
+  if (/^\s+(\S+)\s+(\S+)\r*$/) {
+    ($part, $pad) = ($1, $2);
+    $ok{$net} .= "$part.$pad ";
+    next;
+  }
+}
+
+open(INPUT, "bad.txt") || die "bad.txt: $!";
+%bad = ();
+while (<INPUT>) {
+  last if /^Net /;
+}
+%bad = ();
+while (<INPUT>) {
+  if (/^(\S+)\s+(\S+)\s+(\S+)\s+/) {
+    ($net, $part, $pad) = ($1, $2, $3);
+    $bad{$net} .= "$part.$pad ";
+    next;
+  }
+  if (/^\s+(\S+)\s+(\S+)\s+/) {
+    ($part, $pad) = ($1, $2);
+    $bad{$net} .= "$part.$pad ";
+    next;
+  }
+}
+
+#
+# Now compare good and bad netlists, generating 
+# A list of remappings.
+#
+foreach $net (keys %ok) {
+  chop $ok{$net};
+  chop $bad{$net};
+  %list = ();
+  foreach $pin (split(/ /, $ok{$net})) {
+    $list{$pin} = 1;
+  }
+  %badlist = ();
+  foreach $pin (split(/ /, $bad{$net})) {
+    $list{$pin} -= 1;
+  }
+  $toprint = "";
+  foreach $pin (keys %list) {
+    $toprint .= " $pin($list{$pin})" if $list{$pin} != 0;
+  }
+  print "$net:$toprint\n" if $toprint;
+}
