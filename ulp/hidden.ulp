@@ -1,0 +1,63 @@
+//
+// This ULP scans a schematic for nets that have multiple segments,
+// and at least one lacks a name.  This means that there is a 
+// connection that cannot be deduced by eye.
+//
+// Errors are displayed in a dialog box.  No box means no errors!
+//
+//  Written by vrs, 1/26/2015.
+//
+
+if (!schematic) {
+  dlgMessageBox("<hr><b>ERROR: No schematic!</b><p>\nThis program can only work in the schematic editor.");
+  exit(1);
+}
+
+string outstr = "";
+string tmp;
+int errors = 0;
+int segments, unnamed;
+int hassupply, hastext;
+string part;
+schematic(SC) {
+  SC.sheets(SH){
+    SH.nets(N) {
+      segments = 0;
+      unnamed = 0;
+      part = "";
+      N.segments(S) {
+        segments++;
+        hastext = 0;
+        hassupply = 0;
+        S.texts(T) { hastext = 1; }
+        if (!hastext) {
+          S.pinrefs(P) {
+            part = part + " " + P.instance.name;
+            if (P.pin.direction == PIN_DIRECTION_SUP)
+              hassupply++;
+          }
+          if (!hassupply) {
+            unnamed++;
+          }
+        }
+      }
+      if ((segments > 1) && unnamed) {
+        sprintf(tmp, "Signal %s has hidden connections (%s) in sheet %d\n",
+               N.name, part, SH.number);
+        outstr += tmp;
+        errors++;
+      }
+    }
+  }
+}
+
+if (errors) {
+  dlgMessageBox(outstr);
+  if (errors > 50) {
+    output("ulp.txt", "wt") {
+      printf("%s", outstr);
+    }
+  }
+  exit(1);
+}
+exit(0);
