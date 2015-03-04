@@ -130,6 +130,9 @@ count++;
 old[count] = "1N3653";	// Vishay 914 for 100PrV, still
 new[count] = "1N914V";	// 300mA instead of desired 400mA
 count++;
+old[count] = "D670";  	// Vishay 914 for 100PrV, still
+new[count] = "1N914V";	// 300mA instead of desired 400mA
+count++;
 old[count] = "1/4M6.8AZ";	// 6.8V Zener
 new[count] = "1N5235";	// also 1N4736, 1N754
 count++;
