@@ -1,9 +1,5 @@
 Manchester Reader/Writer
 <UL>
-<LI><b>G888</b> is an early attempt to draw the G888.</LI>
-<LI><b>G888a</b> is an Eagle version of DEC's G888 with DIP versions of the 
-MC1709.</LI>
-<LI><b>G888b</b> an updated version of G888a.</LI>
-<LI><b>G888c</b> an older version of G888a.</LI>
+<LI><b>G888A</b> is a drawing DEC's G888A.</LI>
 <LI><b>G888x</b> The latest verion of the G888, with a bunch of
 cross-reference information in the schematic.</LI>
