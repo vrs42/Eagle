@@ -6,5 +6,5 @@ Replacements for obsolete chips
 providing additional RAM and flash.</LI>
 <LI><b>6540</b>is Nicolas Welte's board to replace the 6540 with a
 27xxx EPROM.</LI>
-<LI><b>6550</b> is Nicolas Welte's board to replace the a pair of 6550
+<LI><b>6550</b> is Nicolas Welte's board to replace a pair of 6550
 with a 62256.</LI>
