@@ -1,3 +1,6 @@
 TD8E Simple Dectape Controller
 <UL>
 <LI><b>M868H</b> is an Eagle version of DEC's M868 (ECO Rev. K) Simple Dectape Controller.</LI>
+<LI><b>M868Hcjl</b> is a version of M868Hl with an SDLD bug fix described by Charles Lasner.</LI>
+<LI><b>M868Hvrs1</b> is a version of M868Hl with an SDLD bug with easier mods.</LI>
+<LI><b>M868Hcjl</b> is another version of M868Hl with an SDLD bug fix (cleaner design).</LI>

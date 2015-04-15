@@ -1,0 +1,9 @@
+   1            sdld=6775
+   2            *200
+   3 00200 7240 start,  cla cma         / Get all ones
+   4 00201 6775         sdld            / None should clear
+   5 00202 7040         cma             / Should get zero
+   6 00203 7440         sza             / All OK?
+   7 00204 7402         hlt             / Nope, note error bits
+   8 00205 5200         jmp start       / Restart
+   9            $
