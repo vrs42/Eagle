@@ -53,10 +53,10 @@ old[count] = "2N3605";
 new[count] = "2N2222";
 count++;
 old[count] = "DEC1008";
-new[count] = "BC639";
+new[count] = "BC639"; // or 2N3444 per Anders
 count++;
 old[count] = "MM1008";
-new[count] = "BC639";
+new[count] = "BC639"; // or 2N3444 per Anders
 count++;
 old[count] = "DEC2894";
 new[count] = "PN4355"; // or select (fast) PN3640.
@@ -256,6 +256,15 @@ count++;
 old[count] = "7486N";
 new[count] = "7486N";
 count++;
+//old[count] = "MC1709";	// aka LM709 or UA709
+//new[count] = "LM301AH";	// Too expensive (10X)
+//count++;
+//old[count] = "MC1709H";	// aka LM709 or UA709
+//new[count] = "LM301AH";
+//count++;
+old[count] = "MC1709N";	// aka LM709 or UA709
+new[count] = "LM301AN";
+count++;
 
 
 // *** Board coord. ***
@@ -277,6 +286,7 @@ if (board) {
             // Better be from rcl or dec-con.
             if (E.package.library != "rcl"
             &&  E.package.library != "frames"
+            &&  E.package.library != "jumper"
             &&  E.package.library != "resistor-power"
             &&  E.package.library != "supply1"
             &&  E.package.library != "supply2"
@@ -312,6 +322,7 @@ if (schematic) {
                // Better be from rcl, dec-con, frames,  or supply2.
                if (PA.device.library != "rcl"
                &&  PA.device.library != "frames"
+               &&  PA.device.library != "jumper"
                &&  PA.device.library != "resistor-power"
                &&  PA.device.library != "supply1"
                &&  PA.device.library != "supply2"
