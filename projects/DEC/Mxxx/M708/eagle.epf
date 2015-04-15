@@ -19,6 +19,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/74xx-jameco.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/74xx-us.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/74xxN.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/751xx.lbr"
+UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/Copy of dec-r.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/ForTim.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/OverVoltage.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/SparkFun5.lbr"
@@ -92,8 +93,7 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/con-yamaichi.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/crystal.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/cypress.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dc-dc-converter.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-con.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-r.lbr"
+UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-m.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/diode.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/discrete.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/display-hp.lbr"
@@ -239,15 +239,13 @@ UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/xl_cpld.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/xl_fpga.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/zilog.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/Copy of dec-r.lbr"
-UsedLibrary="C:/Program Files (x86)/Eagle-4.11/lbr/dec-m.lbr"
 
 [Win_1]
 Type="Schematic Editor"
 Loc="4 2 1913 1142"
 State=2
 Number=1
-File="M708B.sch"
+File="M708X.sch"
 View="-80122 -55229 3966456 2696891"
 WireWidths=" 0 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064 1524"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
@@ -284,11 +282,11 @@ Sheet=1
 
 [Win_2]
 Type="Board Editor"
-Loc="13 48 1920 1176"
+Loc="29 140 1936 1268"
 State=1
 Number=2
-File="M708B.brd"
-View="-25702 -63293 1297508 685371"
+File="M708X.brd"
+View="-25646 -64358 1294636 686436"
 WireWidths=" 0 2540 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 PadDrills=" 2540 3048 4064 6096 10160 12700 14224 16764 17780 19304 21844 25400 38100 50800 64516 8128"
@@ -323,7 +321,7 @@ Layer=16
 
 [Win_3]
 Type="Control Panel"
-Loc="110 110 709 820"
+Loc="666 232 1265 631"
 State=2
 Number=0
 
