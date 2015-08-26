@@ -1,6 +1,6 @@
 # Library script
 # 
-# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/74xx-us.lbr at  8/26/2015 10:51:31a
+# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/74xx-us.lbr at  8/26/2015 10:41:20a
 # 
 # EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
 # 
@@ -5189,12 +5189,12 @@ Change Ratio 8;
 Text 'GND' R90 (1.905 -7.62);
 
 Edit 7460.sym;
-Pin 'A' In None Middle R0 Both 0 (-10.16 5.08);
-Pin 'B' In None Middle R0 Both 0 (-10.16 2.54);
-Pin 'C' In None Middle R0 Both 0 (-10.16 0);
+Pin 'A' In None Middle R0 Both 1 (-10.16 5.08);
+Pin 'B' In None Middle R0 Both 1 (-10.16 2.54);
+Pin 'C' In None Middle R0 Both 1 (-10.16 0);
 Pin 'X' OC None Middle R180 Both 0 (12.7 5.08);
 Pin 'X\' OC None Middle R180 Both 0 (12.7 -2.54);
-Pin 'D' In None Middle R0 Both 0 (-10.16 -2.54);
+Pin 'D' In None Middle R0 Both 1 (-10.16 -2.54);
 Layer 94;
 Wire  0.4064 (-5.08 -5.08) (7.62 -5.08) (7.62 7.62) (-5.08 7.62) \
       (-5.08 -5.08);
@@ -16165,6 +16165,13 @@ Connect  'A.CAB' '1'  'A.SAB' '2'  'A.GAB' '3'  'A.A1' '4'  'A.A2' '5' \
          'P.GND' '12'  'A.B8' '13'  'A.B7' '14'  'A.B6' '15'  'A.B5' '16'  'A.B4' '17' \
          'A.B3' '18'  'A.B2' '19'  'A.B1' '20'  'A.GBA' '21'  'A.SBA' '22'  'A.CBA' '23' \
          'P.VCC' '24';
+Package 'SO24W' 'DW';
+Technology  '';
+Connect  'A.CAB' '1'  'A.SAB' '2'  'A.GAB' '3'  'A.A1' '4'  'A.A2' '5' \
+         'A.A3' '6'  'A.A4' '7'  'A.A5' '8'  'A.B4' '17'  'A.B3' '18'  'A.B2' '19' \
+         'A.B1' '20'  'A.GBA' '21'  'A.SBA' '22'  'A.CBA' '23'  'P.VCC' '24'  'A.B5' '16' \
+         'A.B6' '15'  'A.B7' '14'  'A.B8' '13'  'A.A6' '9'  'A.A7' '10'  'A.A8' '11' \
+         'P.GND' '12';
 
 Edit 74*668.dev;
 Prefix 'IC';
