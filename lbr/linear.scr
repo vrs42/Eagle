@@ -1,6 +1,6 @@
 # Library script
 # 
-# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/linear.lbr at  8/26/2015 10:53:00a
+# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/linear.lbr at  8/26/2015 10:39:23a
 # 
 # EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
 # 
@@ -6441,6 +6441,10 @@ Package 'SO08' 'D';
 Technology -'' 'LM';
 Connect  'A.-IN' '2'  'A.V+' '7'  'A.ON1' '1'  'A.+IN' '3'  'A.V-' '4' \
          'A.ON2' '8'  'A.OUT' '6'  'A.OPT' '5';
+Package 'H08C' '''''';
+Technology  '';
+Connect  'A.V-' '4'  'A.ON2' '8'  'A.-IN' '2'  'A.OUT' '6'  'A.ON1' '1' \
+         'A.+IN' '3'  'A.OPT' '5'  'A.V+' '7';
 
 Edit AD515.dev;
 Prefix 'IC';
