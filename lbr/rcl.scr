@@ -1,6 +1,6 @@
 # Library script
 # 
-# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/rcl.lbr at  8/26/2015 10:53:40a
+# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/rcl.lbr at  8/26/2015 10:38:36a
 # 
 # EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
 # 
@@ -9473,8 +9473,8 @@ Edit E15-5.pac;
 Description '\
 <b>ELECTROLYTIC CAPACITOR</b><p>\n\
 grid 15.24 mm, diameter 5 mm';
-Change Drill 0.8128;Pad '+' Round 2.159 R0 (-7.62 0);
-Change Drill 0.8128;Pad '-' Octagon 2.159 R0 (7.62 0);
+Change Drill 0.8128;Pad '+' Round 0 R0 (-7.62 0);
+Change Drill 0.8128;Pad '-' Octagon 0 R0 (7.62 0);
 Layer 21;
 Wire  0.1524 (-4.064 0) (-3.175 0) (-3.175 -1.27) (-2.667 -1.27) \
       (-2.667 1.27) (-3.175 1.27) (-3.175 0);
@@ -15899,6 +15899,9 @@ Package '0204V' '0204/2V';
 Technology  '';
 Connect  'G$1.1' '1'  'G$1.2' '2';
 Package '0309V' '0309/V';
+Technology  '';
+Connect  'G$1.1' '1'  'G$1.2' '2';
+Package '0309/20' '0309/20';
 Technology  '';
 Connect  'G$1.1' '1'  'G$1.2' '2';
 
