@@ -1,6 +1,6 @@
 # Library script
 # 
-# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/dec-r.lbr at  8/26/2015 10:51:56a
+# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/dec-r.lbr at  8/26/2015 10:40:08a
 # 
 # EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
 # 
@@ -20606,4 +20606,96 @@ Package 'H807S' 'S';
 Technology  '';
 Connect  'U.P$2' 'U2'  'G$2.-30V' 'V2'  'G$1.VCC' 'A2'  'G$1.GND' 'C2'  'E.P$2' 'E2' \
          'H.P$2' 'H2'  'K.P$2' 'K2'  'M.P$2' 'M2'  'G$3.-15V' 'B2';
+
+Edit W971.dev;
+Prefix 'W971_';
+Description 'Double sided Double Height Connector, 72 pins';
+Value Off;
+Add PIN 'AA1' Always 1 (-10.16 45.72);
+Add PIN 'AB1' Always 1 (-10.16 43.18);
+Add PIN 'AC1' Always 1 (-10.16 40.64);
+Add PIN 'AD1' Always 1 (-10.16 38.1);
+Add PIN 'AE1' Always 1 (-10.16 35.56);
+Add PIN 'AF1' Always 1 (-10.16 33.02);
+Add PIN 'AH1' Always 1 (-10.16 30.48);
+Add PIN 'AJ1' Always 1 (-10.16 27.94);
+Add PIN 'AK1' Always 1 (-10.16 25.4);
+Add PIN 'AL1' Always 1 (-10.16 22.86);
+Add PIN 'AM1' Always 1 (-10.16 20.32);
+Add PIN 'AN1' Always 1 (-10.16 17.78);
+Add PIN 'AP1' Always 1 (-10.16 15.24);
+Add PIN 'AR1' Always 1 (-10.16 12.7);
+Add PIN 'AS1' Always 1 (-10.16 10.16);
+Add PIN 'AT1' Always 1 (-10.16 7.62);
+Add PIN 'AU1' Always 1 (-10.16 5.08);
+Add PIN 'AV1' Always 1 (-10.16 2.54);
+Add PIN 'AA2' Always 1 (7.62 45.72);
+Add PIN 'AB2' Always 1 (7.62 43.18);
+Add PIN 'AC2' Always 1 (7.62 40.64);
+Add PIN 'AD2' Always 1 (7.62 38.1);
+Add PIN 'AE2' Always 1 (7.62 35.56);
+Add PIN 'AF2' Always 1 (7.62 33.02);
+Add PIN 'AH2' Always 1 (7.62 30.48);
+Add PIN 'AJ2' Always 1 (7.62 27.94);
+Add PIN 'AK2' Always 1 (7.62 25.4);
+Add PIN 'AL2' Always 1 (7.62 22.86);
+Add PIN 'AM2' Always 1 (7.62 20.32);
+Add PIN 'AN2' Always 1 (7.62 17.78);
+Add PIN 'AP2' Always 1 (7.62 15.24);
+Add PIN 'AR2' Always 1 (7.62 12.7);
+Add PIN 'AS2' Always 1 (7.62 10.16);
+Add PIN 'AT2' Always 1 (7.62 7.62);
+Add PIN 'AU2' Always 1 (7.62 5.08);
+Add PIN 'AV2' Always 1 (7.62 2.54);
+Add PIN 'BA1' Always 1 (-10.16 -2.54);
+Add PIN 'BB1' Always 1 (-10.16 -5.08);
+Add PIN 'BC1' Always 1 (-10.16 -7.62);
+Add PIN 'BD1' Always 1 (-10.16 -10.16);
+Add PIN 'BE1' Always 1 (-10.16 -12.7);
+Add PIN 'BF1' Always 1 (-10.16 -15.24);
+Add PIN 'BH1' Always 1 (-10.16 -17.78);
+Add PIN 'BJ1' Always 1 (-10.16 -20.32);
+Add PIN 'BK1' Always 1 (-10.16 -22.86);
+Add PIN 'BL1' Always 1 (-10.16 -25.4);
+Add PIN 'BM1' Always 1 (-10.16 -27.94);
+Add PIN 'BN1' Always 1 (-10.16 -30.48);
+Add PIN 'BP1' Always 1 (-10.16 -33.02);
+Add PIN 'BR1' Always 1 (-10.16 -35.56);
+Add PIN 'BS1' Always 1 (-10.16 -38.1);
+Add PIN 'BT1' Always 1 (-10.16 -40.64);
+Add PIN 'BU1' Always 1 (-10.16 -43.18);
+Add PIN 'BV1' Always 1 (-10.16 -45.72);
+Add PIN 'BA2' Always 1 (7.62 -2.54);
+Add PIN 'BB2' Always 1 (7.62 -5.08);
+Add PIN 'BC2' Always 1 (7.62 -7.62);
+Add PIN 'BD2' Always 1 (7.62 -10.16);
+Add PIN 'BE2' Always 1 (7.62 -12.7);
+Add PIN 'BF2' Always 1 (7.62 -15.24);
+Add PIN 'BH2' Always 1 (7.62 -17.78);
+Add PIN 'BJ2' Always 1 (7.62 -20.32);
+Add PIN 'BK2' Always 1 (7.62 -22.86);
+Add PIN 'BL2' Always 1 (7.62 -25.4);
+Add PIN 'BM2' Always 1 (7.62 -27.94);
+Add PIN 'BN2' Always 1 (7.62 -30.48);
+Add PIN 'BP2' Always 1 (7.62 -33.02);
+Add PIN 'BR2' Always 1 (7.62 -35.56);
+Add PIN 'BS2' Always 1 (7.62 -38.1);
+Add PIN 'BT2' Always 1 (7.62 -40.64);
+Add PIN 'BU2' Always 1 (7.62 -43.18);
+Add PIN 'BV2' Always 1 (7.62 -45.72);
+Package 'H807-2' '''''';
+Technology  '';
+Connect  'AU2.P$2' 'AU2'  'AV2.P$2' 'AV2'  'AU1.P$2' 'AU1'  'AV1.P$2' 'AV1'  'AT2.P$2' 'AT2' \
+         'AR2.P$2' 'AR2'  'AN2.P$2' 'AN2'  'AT1.P$2' 'AT1'  'AS1.P$2' 'AS1'  'AS2.P$2' 'AS2'  'AR1.P$2' 'AR1' \
+         'AP1.P$2' 'AP1'  'AP2.P$2' 'AP2'  'AN1.P$2' 'AN1'  'AM1.P$2' 'AM1'  'AK1.P$2' 'AK1'  'AH1.P$2' 'AH1' \
+         'AE1.P$2' 'AE1'  'AC1.P$2' 'AC1'  'AA1.P$2' 'AA1'  'AA2.P$2' 'AA2'  'AC2.P$2' 'AC2'  'AE2.P$2' 'AE2' \
+         'AH2.P$2' 'AH2'  'AK2.P$2' 'AK2'  'AM2.P$2' 'AM2'  'AL2.P$2' 'AL2'  'AJ2.P$2' 'AJ2'  'AF2.P$2' 'AF2' \
+         'AD2.P$2' 'AD2'  'AB2.P$2' 'AB2'  'AB1.P$2' 'AB1'  'AD1.P$2' 'AD1'  'AF1.P$2' 'AF1'  'AJ1.P$2' 'AJ1' \
+         'AL1.P$2' 'AL1'  'BA1.P$2' 'BA1'  'BA2.P$2' 'BA2'  'BB2.P$2' 'BB2'  'BB1.P$2' 'BB1'  'BC2.P$2' 'BC2' \
+         'BC1.P$2' 'BC1'  'BD1.P$2' 'BD1'  'BD2.P$2' 'BD2'  'BE1.P$2' 'BE1'  'BH1.P$2' 'BH1'  'BK1.P$2' 'BK1' \
+         'BM1.P$2' 'BM1'  'BP1.P$2' 'BP1'  'BS1.P$2' 'BS1'  'BU1.P$2' 'BU1'  'BF2.P$2' 'BF2'  'BJ2.P$2' 'BJ2' \
+         'BL2.P$2' 'BL2'  'BN2.P$2' 'BN2'  'BR2.P$2' 'BR2'  'BT2.P$2' 'BT2'  'BV2.P$2' 'BV2'  'BV1.P$2' 'BV1' \
+         'BT1.P$2' 'BT1'  'BR1.P$2' 'BR1'  'BN1.P$2' 'BN1'  'BL1.P$2' 'BL1'  'BJ1.P$2' 'BJ1'  'BF1.P$2' 'BF1' \
+         'BE2.P$2' 'BE2'  'BH2.P$2' 'BH2'  'BK2.P$2' 'BK2'  'BM2.P$2' 'BM2'  'BP2.P$2' 'BP2'  'BS2.P$2' 'BS2' \
+         'BU2.P$2' 'BU2';
 Grid inch;
