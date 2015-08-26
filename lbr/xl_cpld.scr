@@ -1,6 +1,6 @@
 # Library script
 # 
-# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xl_cpld.lbr at  8/26/2015 01:49:55p
+# Exported from C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/xl_cpld.lbr at  8/26/2015 10:38:08a
 # 
 # EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
 # 
@@ -67,12 +67,12 @@ Layer  96 Values;
 Description '';
 
 Edit XC9536.sym;
-Pin 'GCK@0' In Clk Long R0 Both 0 (-20.32 25.4);
-Pin 'GCK@1' In Clk Long R0 Both 0 (-20.32 22.86);
-Pin 'GCK@2' In Clk Long R0 Both 0 (-20.32 20.32);
-Pin 'GTS@0' In None Long R0 Both 0 (-20.32 15.24);
-Pin 'GTS@1' In None Long R0 Both 0 (-20.32 12.7);
-Pin 'GSR' In None Long R0 Both 0 (-20.32 7.62);
+Pin 'GCK@0' In Clk Long R0 Both 1 (-20.32 25.4);
+Pin 'GCK@1' In Clk Long R0 Both 1 (-20.32 22.86);
+Pin 'GCK@2' In Clk Long R0 Both 1 (-20.32 20.32);
+Pin 'GTS@0' In None Long R0 Both 1 (-20.32 15.24);
+Pin 'GTS@1' In None Long R0 Both 1 (-20.32 12.7);
+Pin 'GSR' In None Long R0 Both 1 (-20.32 7.62);
 Layer 94;
 Change Style Continuous;
 Wire  0.254 (-12.7 27.94) (15.24 27.94) (15.24 -33.02) (-12.7 -33.02) \
@@ -88,34 +88,34 @@ Change Ratio 8;
 Text '>NAME' R0 (-12.7 30.48);
 Layer 94;
 Wire  0.254 (-12.7 -2.54) (-12.7 -15.24);
-Pin 'FB1MC1' I/O None Long R0 Both 0 (-20.32 2.54);
-Pin 'FB1MC2' I/O None Long R0 Both 0 (-20.32 0);
-Pin 'FB1MC6' I/O None Long R0 Both 0 (-20.32 -5.08);
-Pin 'FB1MC4' I/O None Long R0 Both 0 (-20.32 -2.54);
-Pin 'FB1MC9' I/O None Long R0 Both 0 (-20.32 -10.16);
-Pin 'FB1MC8' I/O None Long R0 Both 0 (-20.32 -7.62);
-Pin 'FB1MC10' I/O None Long R0 Both 0 (-20.32 -12.7);
-Pin 'FB1MC11' I/O None Long R0 Both 0 (-20.32 -15.24);
-Pin 'FB1MC12' I/O None Long R0 Both 0 (-20.32 -17.78);
-Pin 'FB1MC13' I/O None Long R0 Both 0 (-20.32 -20.32);
-Pin 'FB1MC14' I/O None Long R0 Both 0 (-20.32 -22.86);
-Pin 'FB1MC15' I/O None Long R0 Both 0 (-20.32 -25.4);
-Pin 'FB1MC16' I/O None Long R0 Both 0 (-20.32 -27.94);
-Pin 'FB1MC17' I/O None Long R0 Both 0 (-20.32 -30.48);
-Pin 'FB2MC1' I/O Dot Long R180 Both 0 (22.86 -7.62);
-Pin 'FB2MC2' I/O Dot Long R180 Both 0 (22.86 -5.08);
-Pin 'FB2MC17' I/O Dot Long R180 Both 0 (22.86 25.4);
-Pin 'FB2MC4' I/O Dot Long R180 Both 0 (22.86 -2.54);
-Pin 'FB2MC16' I/O Dot Long R180 Both 0 (22.86 22.86);
-Pin 'FB2MC15' I/O Dot Long R180 Both 0 (22.86 20.32);
-Pin 'FB2MC7' I/O Dot Long R180 Both 0 (22.86 0);
-Pin 'FB2MC8' I/O Dot Long R180 Both 0 (22.86 2.54);
-Pin 'FB2MC9' I/O Dot Long R180 Both 0 (22.86 5.08);
-Pin 'FB2MC10' I/O Dot Long R180 Both 0 (22.86 7.62);
-Pin 'FB2MC11' I/O Dot Long R180 Both 0 (22.86 10.16);
-Pin 'FB2MC12' I/O Dot Long R180 Both 0 (22.86 12.7);
-Pin 'FB2MC13' I/O Dot Long R180 Both 0 (22.86 15.24);
-Pin 'FB2MC14' I/O Dot Long R180 Both 0 (22.86 17.78);
+Pin 'FB1MC1' I/O None Long R0 Both 1 (-20.32 2.54);
+Pin 'FB1MC2' I/O None Long R0 Both 1 (-20.32 0);
+Pin 'FB1MC6' I/O None Long R0 Both 1 (-20.32 -5.08);
+Pin 'FB1MC4' I/O None Long R0 Both 1 (-20.32 -2.54);
+Pin 'FB1MC9' I/O None Long R0 Both 1 (-20.32 -10.16);
+Pin 'FB1MC8' I/O None Long R0 Both 1 (-20.32 -7.62);
+Pin 'FB1MC10' I/O None Long R0 Both 1 (-20.32 -12.7);
+Pin 'FB1MC11' I/O None Long R0 Both 1 (-20.32 -15.24);
+Pin 'FB1MC12' I/O None Long R0 Both 1 (-20.32 -17.78);
+Pin 'FB1MC13' I/O None Long R0 Both 1 (-20.32 -20.32);
+Pin 'FB1MC14' I/O None Long R0 Both 1 (-20.32 -22.86);
+Pin 'FB1MC15' I/O None Long R0 Both 1 (-20.32 -25.4);
+Pin 'FB1MC16' I/O None Long R0 Both 1 (-20.32 -27.94);
+Pin 'FB1MC17' I/O None Long R0 Both 1 (-20.32 -30.48);
+Pin 'FB2MC1' I/O Dot Long R180 Both 1 (22.86 -7.62);
+Pin 'FB2MC2' I/O Dot Long R180 Both 1 (22.86 -5.08);
+Pin 'FB2MC17' I/O Dot Long R180 Both 1 (22.86 25.4);
+Pin 'FB2MC4' I/O Dot Long R180 Both 1 (22.86 -2.54);
+Pin 'FB2MC16' I/O Dot Long R180 Both 1 (22.86 22.86);
+Pin 'FB2MC15' I/O Dot Long R180 Both 1 (22.86 20.32);
+Pin 'FB2MC7' I/O Dot Long R180 Both 1 (22.86 0);
+Pin 'FB2MC8' I/O Dot Long R180 Both 1 (22.86 2.54);
+Pin 'FB2MC9' I/O Dot Long R180 Both 1 (22.86 5.08);
+Pin 'FB2MC10' I/O Dot Long R180 Both 1 (22.86 7.62);
+Pin 'FB2MC11' I/O Dot Long R180 Both 1 (22.86 10.16);
+Pin 'FB2MC12' I/O Dot Long R180 Both 1 (22.86 12.7);
+Pin 'FB2MC13' I/O Dot Long R180 Both 1 (22.86 15.24);
+Pin 'FB2MC14' I/O Dot Long R180 Both 1 (22.86 17.78);
 
 Edit JTAG.sym;
 Pin 'TCK' In Clk Middle R0 Both 0 (-10.16 2.54);
