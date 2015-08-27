@@ -1,5 +1,7 @@
-Omnibus Timeshare Option
+Omnibus Memory Extension and Timeshare Option
 <UL>
-<LI><b>M837bb</b> is a 06/15/2007 checkpoint of M837.
 <LI><b>M837</b> is a drawing of DEC's M837 Omnibus Timeshare Option board,
-which uses a lot of hard to find chips.</LI>
+which uses a lot of hard to find chips.
+<LI><b>M837bb</b> is a version of M837 with the signals renamed to match their function.
+<LI><b>M837cc</b> is a variant without the the TP_CB1 input.
+</LI>
