@@ -111,6 +111,7 @@ UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/fiber-optic-hp.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/fiber-optic-siemens.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/fifo.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/fox-electronics.lbr"
+UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/frames-b.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/frames.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/ftdi.lbr"
 UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/fuse.lbr"
@@ -250,11 +251,11 @@ UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/zilog.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="230 694 1353 1317"
+Loc="200 314 799 713"
 State=1
 Number=2
-File="M868Hvrs2.brd"
-View="-630118 -55203 2769764 2189729"
+File="M8330.brd"
+View="-129822 -55434 4025116 2201480"
 WireWidths=" 0 2540 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 PadDrills=" 2540 3048 4064 6096 10160 12700 14224 16764 17780 19304 21844 25400 38100 50800 64516 8128"
@@ -289,11 +290,11 @@ Layer=16
 
 [Win_2]
 Type="Schematic Editor"
-Loc="395 831 1518 1455"
+Loc="423 992 1546 1616"
 State=1
 Number=1
-File="M868Hvrs2.sch"
-View="336559 997976 3146683 2909172"
+File="M8330.sch"
+View="-3143649 -66293 4855263 3261171"
 WireWidths=" 0 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064 1524"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 PadDrills=" 2540 3048 4064 6096 10160 12700 14224 16764 17780 19304 21844 25400 38100 50800 64516 8128"
@@ -325,11 +326,11 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Sheet=2
+Sheet=1
 
 [Win_3]
 Type="Control Panel"
-Loc="22 22 621 421"
+Loc="666 232 1265 631"
 State=2
 Number=0
 
