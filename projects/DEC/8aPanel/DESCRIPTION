@@ -1,23 +1,10 @@
 PDP-8a Programmer's Panel
 <UL>
-<LI><b>8235.sch</b> is a schematic for an approximation of the function of
-the unobtainium 8235 chip.</LI>
-<LI><b>8235sub.sch</b> is a schematic for an approximation of the function of
-the unobtainium 8235 chip.</LI>
-<LI><b>8235sub1.sch</b> is a schematic for an approximation of the function of
-the unobtainium 8235 chip.</LI>
-<LI><b>8235sub2.sch</b> is a schematic for an approximation of the function of
-the unobtainium 8235 chip.</LI>
-<LI><b>programmerconsole.sch</b> is a schematic (before board layout) of 
-an early draft of board1.</LI>
-<LI><b>programmerconsolebrd2.sch</b> is a schematic (before board layout) of
-an early draft of board1.</LI>
-<LI><b>try1</b> is an early draft (05/26/2005) of board1 (the front-side
-board).</LI>
-<LI><b>try2</b> is an early draft (05/27/2005) of board2 (the back-side
-board).</LI>
-<LI><b>cut</b> is the stuff cut from board 1 and pasted to start board2, to
-ensure size and alignment match up.
+<LI><b>board1</b> is the latest drawing of board 1 (front) of the 8/A front
+panel replacement.</LI>
+<LI><b>board2</b> is the latest drawing of board 2 (back) of the 8/A front
+panel replacement.</LI>
+<LI><b>board2-4layer</b> is a 4 layer version of board2.</LI>
 <LI><b>oboard2</b> is a checkpoint of an old version (06/02/2005) of
 board2.</LI>
 <LI><b>Progpanl.fpd</b> is a Front Panel Express drawing of the Programmer's
@@ -30,11 +17,7 @@ were ordered.  This version has had the silkscreen scripts run.</LI>
 <LI><b>board2-0</b> is a snapshot of revision 0 of board2.</LI>
 <LI><b>board1corrected</b> is board1 with the corrections to make DEC's
 schematics work.</LI>
-<LI><b>board2corrected</b> is board2 with the corrections to make DEC's
-schematics work. (Has a consistency problem.)</LI>
-<LI><b>board2eco</b> is board2 with the ECO's applied to make it work.
+<LI><b>board2corrected</b> is board2 with the first set of corrections to make DEC's
+schematics work. (Has a consistency problem to highlight changes.)</LI>
+<LI><b>board2eco</b> is board2 with the first and second set of corrections applied to make it work.
 (Has a consistency problem which highlights the ECOs.)</LI>
-<LI><b>board1</b> is the latest drawing of board 1 (front) of the 8/A front
-panel replacement.</LI>
-<LI><b>board2</b> is the latest drawing of board 2 (back) of the 8/A front
-panel replacement.</LI>
