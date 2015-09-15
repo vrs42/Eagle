@@ -1,0 +1,7 @@
+Ideas for using CPLD devices to build Omnibus cards.
+<UL>
+<LI><b>TD8Edaughter</b> is a daughter card that can be either TD8E or RX8E.</LI>
+<LI><b>RX8Edaughter</b> is a daughter card that implements an RX8E controller.</LI>
+<LI><b>M8357pld</b> is an RX8E implementation in an ATF1508 CPLD.</LI>
+<LI><b>M868pld</b> is a TD8E implementation in an ATF1508 CPLD.</LI>
+<LI><b>Lafferty1ab</b> is a copy of the Omnibus memory board (for the prototype area).</LI>
