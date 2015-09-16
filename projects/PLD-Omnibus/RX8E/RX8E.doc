@@ -1,0 +1,2331 @@
+
+*******************************************************************************
+                                     rx8e
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          f1508ispqfp100  Library DLIB-h-40-2
+Created         Mon Sep 07 17:50:20 2015
+Name            rx8e 
+Partno          cpld 
+Revision        01 
+Date            9/1/2015 
+Designer        
+Company         
+Assembly        None 
+Location        E1 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+a =>
+    1 
+
+b =>
+    1 
+
+b_maint =>
+    maint
+
+binit_low =>
+    !initialize & n_t_45x
+
+btp3 =>
+    tp3
+
+btp4 =>
+    tp4
+
+c0_low =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & 
+      md11_low & n8_12 & !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & 
+      rx_done_low & rx_out_low
+  # !md10_low & !md11_low
+  # !md09_low
+  # md10_low & md11_low
+  # n_t_6x
+  # n_t_5x
+  # n_t_1x
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+c0_low.oe  =>
+    !c0_low
+
+c1_low =>
+    !maint & rx_done_low & rx_out_low
+  # n8_12
+
+c1_low.oe  =>
+    !c1_low
+
+clk_buf_low =>
+    rx_shift_low & !tp3
+  # !maint & rx_done_low & rx_shift_low & rx_tr_req_low
+  # !maint & !rx_out_low & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !md11_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x & rx_shift_low
+  # md10_low & md11_low & rx_shift_low
+  # md03_low & rx_shift_low
+  # md05_low & rx_shift_low
+  # md04_low & rx_shift_low
+  # io_pause_low & rx_shift_low
+  # n_t_1x & rx_shift_low
+  # n_t_5x & rx_shift_low
+  # n_t_6x & rx_shift_low
+  # maint & !tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md09_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # maint & md10_low & md11_low
+  # maint & md03_low
+  # maint & md05_low
+  # maint & md04_low
+  # io_pause_low & maint
+  # maint & n_t_1x
+  # maint & n_t_5x
+  # maint & n_t_6x
+
+clk_parity_low =>
+    rx_shift_low & !tp3
+  # !maint & rx_done_low & rx_shift_low & rx_tr_req_low
+  # !maint & !rx_out_low & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !md11_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x & rx_shift_low
+  # md10_low & md11_low & rx_shift_low
+  # md03_low & rx_shift_low
+  # md05_low & rx_shift_low
+  # md04_low & rx_shift_low
+  # io_pause_low & rx_shift_low
+  # n_t_1x & rx_shift_low
+  # n_t_5x & rx_shift_low
+  # n_t_6x & rx_shift_low
+  # maint & !tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md09_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # maint & md10_low & md11_low
+  # maint & md03_low
+  # maint & md05_low
+  # maint & md04_low
+  # io_pause_low & maint
+  # maint & n_t_1x
+  # maint & n_t_5x
+  # maint & n_t_6x
+
+data0 =>
+    !data0_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data0_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # n_t_5x
+  # n_t_1x
+  # n8_12
+  # !msb12
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data0_low.oe  =>
+    !data0_low
+
+data1 =>
+    !data1_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data10 =>
+    !data10_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data10_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # !n_t_67x
+  # n_t_5x
+  # n_t_1x
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data10_low.oe  =>
+    !data10_low
+
+data11 =>
+    !data11_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data11_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # !n_t_65x
+  # n_t_5x
+  # n_t_1x
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data11_low.oe  =>
+    !data11_low
+
+data1_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # n_t_5x
+  # !n_t_33x
+  # n_t_1x
+  # n8_12
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data1_low.oe  =>
+    !data1_low
+
+data2 =>
+    !data2_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data2_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # n_t_5x
+  # !n_t_2x
+  # n_t_1x
+  # n8_12
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data2_low.oe  =>
+    !data2_low
+
+data3 =>
+    !data3_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data3_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # !n_t_60x
+  # n_t_5x
+  # n_t_1x
+  # n8_12
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data3_low.oe  =>
+    !data3_low
+
+data4 =>
+    !data4_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data4_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # n_t_5x
+  # n_t_1x
+  # !msb8
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data4_low.oe  =>
+    !data4_low
+
+data5 =>
+    !data5_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data5_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # !n_t_62x
+  # n_t_5x
+  # n_t_1x
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data5_low.oe  =>
+    !data5_low
+
+data6 =>
+    !data6_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data6_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # !n_t_63x
+  # n_t_5x
+  # n_t_1x
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data6_low.oe  =>
+    !data6_low
+
+data7 =>
+    !data7_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data7_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # !n_t_64x
+  # n_t_5x
+  # n_t_1x
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data7_low.oe  =>
+    !data7_low
+
+data8 =>
+    !data8_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data8_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # n_t_5x
+  # !n_t_31x
+  # n_t_1x
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data8_low.oe  =>
+    !data8_low
+
+data9 =>
+    !data9_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data9_low =>
+    !maint & rx_done_low & rx_out_low
+  # n_t_6x
+  # !n_t_66x
+  # n_t_5x
+  # n_t_1x
+  # !md11_low
+  # md10_low
+  # !md09_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+data9_low.oe  =>
+    !data9_low
+
+done =>
+    !maint & !rx_done_low
+
+done_low =>
+    rx_done_low
+  # maint
+
+!done_skip_low =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & n_t_69x & !n_t_6x
+
+enb_buf_ld_low =>
+    !maint & !rx_out_low
+  # !maint & rx_done_low & rx_tr_req_low
+
+err_skip_low =>
+    !n_t_70x
+  # md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # md09_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+error =>
+    !maint & !rx_error_low
+
+!gdollar_0.k  =>
+    rx_out_low & !rx_tr_req_low
+  # !rx_done_low & rx_out_low
+  # maint
+
+!gdollar_0.j  =>
+    0 
+
+gdollar_0.ar  =>
+    initialize
+  # !n_t_45x
+
+gdollar_0.ck  =>
+    rx_shift_low & !tp3
+  # !maint & rx_done_low & rx_shift_low & rx_tr_req_low
+  # !maint & !rx_out_low & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !md11_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x & rx_shift_low
+  # md10_low & md11_low & rx_shift_low
+  # md03_low & rx_shift_low
+  # md05_low & rx_shift_low
+  # md04_low & rx_shift_low
+  # io_pause_low & rx_shift_low
+  # n_t_1x & rx_shift_low
+  # n_t_5x & rx_shift_low
+  # n_t_6x & rx_shift_low
+  # maint & !tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md09_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # maint & md10_low & md11_low
+  # maint & md03_low
+  # maint & md05_low
+  # maint & md04_low
+  # io_pause_low & maint
+  # maint & n_t_1x
+  # maint & n_t_5x
+  # maint & n_t_6x
+
+!gdollar_1.k  =>
+    !gdollar_0
+  # rx_out_low & !rx_tr_req_low
+  # !rx_done_low & rx_out_low
+  # maint
+
+!gdollar_1.j  =>
+    !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
+  # !gdollar_0 & !maint & !rx_out_low
+
+gdollar_1.ar  =>
+    initialize
+  # !n_t_45x
+
+gdollar_1.ck  =>
+    rx_shift_low & !tp3
+  # !maint & rx_done_low & rx_shift_low & rx_tr_req_low
+  # !maint & !rx_out_low & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !md11_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x & rx_shift_low
+  # md10_low & md11_low & rx_shift_low
+  # md03_low & rx_shift_low
+  # md05_low & rx_shift_low
+  # md04_low & rx_shift_low
+  # io_pause_low & rx_shift_low
+  # n_t_1x & rx_shift_low
+  # n_t_5x & rx_shift_low
+  # n_t_6x & rx_shift_low
+  # maint & !tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md09_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # maint & md10_low & md11_low
+  # maint & md03_low
+  # maint & md05_low
+  # maint & md04_low
+  # io_pause_low & maint
+  # maint & n_t_1x
+  # maint & n_t_5x
+  # maint & n_t_6x
+
+!gdollar_2.j  =>
+    data5_low & !io_pause_low & maint & !md03_low & !md04_low & !md05_low & 
+      md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x
+  # data5_low & !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & 
+      md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & 
+      !rx_done_low & rx_out_low & rx_tr_req_low
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & 
+      !rx_done_low & rx_out_low & rx_tr_req_low
+  # data5_low & !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & 
+      md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & 
+      rx_out_low & !rx_tr_req_low
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & 
+      rx_out_low & !rx_tr_req_low
+  # !md10_low & !md11_low & rx_out_low & !rx_tr_req_low
+  # !md10_low & !md11_low & !rx_done_low & rx_out_low
+  # maint & !md04_low & !md10_low & !md11_low
+  # !md09_low & rx_out_low & !rx_tr_req_low
+  # !md09_low & !rx_done_low & rx_out_low
+  # maint & !md04_low & !md09_low
+  # !gdollar_1 & !maint & rx_done_low & rx_tr_req_low
+  # !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
+  # md10_low & md11_low & rx_out_low & !rx_tr_req_low
+  # md10_low & md11_low & !rx_done_low & rx_out_low
+  # maint & md10_low & md11_low
+  # n_t_6x & rx_out_low & !rx_tr_req_low
+  # n_t_5x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & rx_out_low & !rx_tr_req_low
+  # md05_low & rx_out_low & !rx_tr_req_low
+  # md04_low & rx_out_low & !rx_tr_req_low
+  # md03_low & rx_out_low & !rx_tr_req_low
+  # io_pause_low & rx_out_low & !rx_tr_req_low
+  # n_t_6x & !rx_done_low & rx_out_low
+  # n_t_5x & !rx_done_low & rx_out_low
+  # n_t_1x & !rx_done_low & rx_out_low
+  # md05_low & !rx_done_low & rx_out_low
+  # md04_low & !rx_done_low & rx_out_low
+  # md03_low & !rx_done_low & rx_out_low
+  # io_pause_low & !rx_done_low & rx_out_low
+  # !gdollar_1 & !maint & !rx_out_low
+  # !gdollar_0 & !maint & !rx_out_low
+  # maint & n_t_6x
+  # maint & n_t_5x
+  # maint & n_t_1x
+  # maint & md05_low
+  # maint & md04_low
+  # maint & md03_low
+  # io_pause_low & maint
+
+!gdollar_2.k  =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & 
+      md11_low & n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low
+  # !data5_low & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & 
+      md11_low & n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low
+  # !data5_low & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & n8_12 & !n_t_1x & !n_t_5x & !n_t_6x
+  # !data5_low & !io_pause_low & maint & !md03_low & !md04_low & !md05_low & 
+      md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # !gdollar_1 & !maint & rx_done_low & rx_tr_req_low
+  # !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
+  # !gdollar_1 & !maint & !rx_out_low
+  # !gdollar_0 & !maint & !rx_out_low
+
+gdollar_2.ar  =>
+    initialize
+  # !n_t_45x
+
+gdollar_2.ck  =>
+    rx_shift_low & !tp3
+  # !maint & rx_done_low & rx_shift_low & rx_tr_req_low
+  # !maint & !rx_out_low & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !md11_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x & rx_shift_low
+  # md10_low & md11_low & rx_shift_low
+  # md03_low & rx_shift_low
+  # md05_low & rx_shift_low
+  # md04_low & rx_shift_low
+  # io_pause_low & rx_shift_low
+  # n_t_1x & rx_shift_low
+  # n_t_5x & rx_shift_low
+  # n_t_6x & rx_shift_low
+  # maint & !tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md09_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # maint & md10_low & md11_low
+  # maint & md03_low
+  # maint & md05_low
+  # maint & md04_low
+  # io_pause_low & maint
+  # maint & n_t_1x
+  # maint & n_t_5x
+  # maint & n_t_6x
+
+!gdollar_3.j  =>
+    !gdollar_2
+  # !gdollar_1
+  # !gdollar_0
+  # rx_out_low & !rx_tr_req_low
+  # !rx_done_low & rx_out_low
+  # maint
+
+!gdollar_3.k  =>
+    !gdollar_2 & !maint & rx_done_low & rx_tr_req_low
+  # !gdollar_1 & !maint & rx_done_low & rx_tr_req_low
+  # !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
+  # !gdollar_2 & !maint & !rx_out_low
+  # !gdollar_1 & !maint & !rx_out_low
+  # !gdollar_0 & !maint & !rx_out_low
+
+gdollar_3.ar  =>
+    initialize
+  # !n_t_45x
+
+gdollar_3.ck  =>
+    rx_shift_low & !tp3
+  # !maint & rx_done_low & rx_shift_low & rx_tr_req_low
+  # !maint & !rx_out_low & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !md11_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x & rx_shift_low
+  # md10_low & md11_low & rx_shift_low
+  # md03_low & rx_shift_low
+  # md05_low & rx_shift_low
+  # md04_low & rx_shift_low
+  # io_pause_low & rx_shift_low
+  # n_t_1x & rx_shift_low
+  # n_t_5x & rx_shift_low
+  # n_t_6x & rx_shift_low
+  # maint & !tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md09_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # maint & md10_low & md11_low
+  # maint & md03_low
+  # maint & md05_low
+  # maint & md04_low
+  # io_pause_low & maint
+  # maint & n_t_1x
+  # maint & n_t_5x
+  # maint & n_t_6x
+
+init =>
+    initialize
+  # !n_t_45x
+
+!init_iot_low =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # md09_low
+  # md10_low
+  # md11_low
+
+init_low =>
+    !initialize & n_t_45x
+
+int_rqst_low =>
+    !n_t_76x
+  # !n_t_69x
+
+int_rqst_low.oe  =>
+    !int_rqst_low
+
+internal_io_low =>
+    n_t_6x
+  # n_t_5x
+  # n_t_1x
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+internal_io_low.oe  =>
+    !internal_io_low
+
+!intr_iot_low =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # md09_low
+  # md10_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+lcd_iot =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+!lcd_iot_low =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # md11_low
+
+!maint.d  =>
+    n_t_6x
+  # n_t_5x
+  # n_t_1x
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+  # data4_low
+
+maint.ap  =>
+    0 
+
+maint.ar  =>
+    initialize
+  # !n_t_45x
+
+maint.ck  =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+
+maint_low =>
+    !maint
+
+!msb8.d  =>
+    !maint & !n_t_62x & rx_done_low & rx_tr_req_low
+  # !msb8 & n_t_6x & rx_out_low & !rx_tr_req_low
+  # !msb8 & n_t_5x & rx_out_low & !rx_tr_req_low
+  # !msb8 & n_t_1x & rx_out_low & !rx_tr_req_low
+  # md05_low & !msb8 & rx_out_low & !rx_tr_req_low
+  # md04_low & !msb8 & rx_out_low & !rx_tr_req_low
+  # md03_low & !msb8 & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !msb8 & rx_out_low & !rx_tr_req_low
+  # data4_low & !msb8 & rx_out_low & !rx_tr_req_low
+  # !msb8 & n_t_6x & !rx_done_low & rx_out_low
+  # !msb8 & n_t_5x & !rx_done_low & rx_out_low
+  # !msb8 & n_t_1x & !rx_done_low & rx_out_low
+  # md05_low & !msb8 & !rx_done_low & rx_out_low
+  # md04_low & !msb8 & !rx_done_low & rx_out_low
+  # md03_low & !msb8 & !rx_done_low & rx_out_low
+  # io_pause_low & !msb8 & !rx_done_low & rx_out_low
+  # data4_low & !msb8 & !rx_done_low & rx_out_low
+  # !maint & !n_t_62x & !rx_out_low
+  # maint & !msb8 & n_t_6x
+  # maint & !msb8 & n_t_5x
+  # maint & !msb8 & n_t_1x
+  # maint & md05_low & !msb8
+  # maint & md04_low & !msb8
+  # maint & md03_low & !msb8
+  # io_pause_low & maint & !msb8
+  # data4_low & maint & !msb8
+
+msb8.ar  =>
+    initialize
+  # !n_t_45x
+
+msb8.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!msb12.d  =>
+    !maint & !n_t_33x & rx_done_low & rx_tr_req_low
+  # !msb12 & n_t_6x & rx_out_low & !rx_tr_req_low
+  # !msb12 & n_t_5x & rx_out_low & !rx_tr_req_low
+  # !msb12 & n_t_1x & rx_out_low & !rx_tr_req_low
+  # md05_low & !msb12 & rx_out_low & !rx_tr_req_low
+  # md04_low & !msb12 & rx_out_low & !rx_tr_req_low
+  # md03_low & !msb12 & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !msb12 & rx_out_low & !rx_tr_req_low
+  # data0_low & !msb12 & rx_out_low & !rx_tr_req_low
+  # !msb12 & n_t_6x & !rx_done_low & rx_out_low
+  # !msb12 & n_t_5x & !rx_done_low & rx_out_low
+  # !msb12 & n_t_1x & !rx_done_low & rx_out_low
+  # md05_low & !msb12 & !rx_done_low & rx_out_low
+  # md04_low & !msb12 & !rx_done_low & rx_out_low
+  # md03_low & !msb12 & !rx_done_low & rx_out_low
+  # io_pause_low & !msb12 & !rx_done_low & rx_out_low
+  # data0_low & !msb12 & !rx_done_low & rx_out_low
+  # !maint & !n_t_33x & !rx_out_low
+  # maint & !msb12 & n_t_6x
+  # maint & !msb12 & n_t_5x
+  # maint & !msb12 & n_t_1x
+  # maint & md05_low & !msb12
+  # maint & md04_low & !msb12
+  # maint & md03_low & !msb12
+  # io_pause_low & maint & !msb12
+  # data0_low & maint & !msb12
+
+msb12.ar  =>
+    initialize
+  # !n_t_45x
+
+msb12.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n8_12.d  =>
+    n_t_6x
+  # n_t_5x
+  # n_t_1x
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+  # data5_low
+
+n8_12.ap  =>
+    0 
+
+n8_12.ar  =>
+    initialize
+  # !n_t_45x
+
+n8_12.ck  =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+
+n8_12_low =>
+    !n8_12
+
+n_t_10x =>
+    io_pause_low
+
+!n_t_11x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & 
+      !n_t_6x
+
+n_t_12x =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & 
+      !rx_out_low
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & 
+      !rx_done_low
+
+n_t_21x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & 
+      md11_low & n8_12 & !n_t_1x & !n_t_5x & !n_t_6x
+  # !data5_low & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+n_t_22x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & 
+      !rx_done_low
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & 
+      !rx_out_low
+
+!n_t_2x.d  =>
+    !maint & !n_t_60x & rx_done_low & rx_tr_req_low
+  # !n_t_2x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # !n_t_2x & n_t_5x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_2x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_2x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_2x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_2x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_2x & rx_out_low & !rx_tr_req_low
+  # data2_low & !n_t_2x & rx_out_low & !rx_tr_req_low
+  # !n_t_2x & n_t_6x & !rx_done_low & rx_out_low
+  # !n_t_2x & n_t_5x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_2x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_2x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_2x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_2x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_2x & !rx_done_low & rx_out_low
+  # data2_low & !n_t_2x & !rx_done_low & rx_out_low
+  # !maint & !n_t_60x & !rx_out_low
+  # maint & !n_t_2x & n_t_6x
+  # maint & !n_t_2x & n_t_5x
+  # maint & n_t_1x & !n_t_2x
+  # maint & md05_low & !n_t_2x
+  # maint & md04_low & !n_t_2x
+  # maint & md03_low & !n_t_2x
+  # io_pause_low & maint & !n_t_2x
+  # data2_low & maint & !n_t_2x
+
+n_t_2x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_2x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n_t_31x.d  =>
+    !maint & !n_t_66x & rx_done_low & rx_tr_req_low
+  # !n_t_31x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # !n_t_31x & n_t_5x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_31x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_31x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_31x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_31x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_31x & rx_out_low & !rx_tr_req_low
+  # data8_low & !n_t_31x & rx_out_low & !rx_tr_req_low
+  # !n_t_31x & n_t_6x & !rx_done_low & rx_out_low
+  # !n_t_31x & n_t_5x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_31x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_31x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_31x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_31x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_31x & !rx_done_low & rx_out_low
+  # data8_low & !n_t_31x & !rx_done_low & rx_out_low
+  # !maint & !n_t_66x & !rx_out_low
+  # maint & !n_t_31x & n_t_6x
+  # maint & !n_t_31x & n_t_5x
+  # maint & n_t_1x & !n_t_31x
+  # maint & md05_low & !n_t_31x
+  # maint & md04_low & !n_t_31x
+  # maint & md03_low & !n_t_31x
+  # io_pause_low & maint & !n_t_31x
+  # data8_low & maint & !n_t_31x
+
+n_t_31x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_31x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+n_t_32x =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # md10_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !maint & rx_done_low & rx_out_low
+  # n8_12
+
+!n_t_33x.d  =>
+    !maint & !n_t_2x & rx_done_low & rx_tr_req_low
+  # !n_t_33x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # !n_t_33x & n_t_5x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_33x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_33x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_33x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_33x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_33x & rx_out_low & !rx_tr_req_low
+  # data1_low & !n_t_33x & rx_out_low & !rx_tr_req_low
+  # !n_t_33x & n_t_6x & !rx_done_low & rx_out_low
+  # !n_t_33x & n_t_5x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_33x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_33x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_33x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_33x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_33x & !rx_done_low & rx_out_low
+  # data1_low & !n_t_33x & !rx_done_low & rx_out_low
+  # !maint & !n_t_2x & !rx_out_low
+  # maint & !n_t_33x & n_t_6x
+  # maint & !n_t_33x & n_t_5x
+  # maint & n_t_1x & !n_t_33x
+  # maint & md05_low & !n_t_33x
+  # maint & md04_low & !n_t_33x
+  # maint & md03_low & !n_t_33x
+  # io_pause_low & maint & !n_t_33x
+  # data1_low & maint & !n_t_33x
+
+n_t_33x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_33x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+n_t_34x =>
+    maint
+  # !maint & !rx_done_low
+  # !maint & !rx_out_low
+
+n_t_35x =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # md10_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !n8_12
+
+n_t_36x =>
+    data5_low
+  # md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # md11_low
+
+n_t_37x =>
+    !parity
+
+n_t_38x =>
+    n8_12
+  # !msb12
+  # parity
+
+n_t_39x =>
+    parity
+  # !n8_12
+  # !msb8
+
+n_t_3x =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_out_low
+
+n_t_40x =>
+    !parity_low
+  # !parity
+
+n_t_42x =>
+    msb8 & n8_12 & !parity
+  # parity & parity_low
+  # msb12 & !n8_12 & !parity
+
+n_t_43x =>
+    !tp4
+
+n_t_44x =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n_t_45x.d  =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+n_t_45x.ap  =>
+    tp4
+
+n_t_45x.ar  =>
+    0 
+
+n_t_45x.ck  =>
+    tp3
+
+n_t_46x =>
+    !initialize & n_t_45x & !run
+
+n_t_47x =>
+    !initialize
+
+n_t_48x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+
+n_t_49x =>
+    !done_skip_low & tp3
+
+n_t_4x =>
+    !maint & rx_done_low & rx_out_low
+
+n_t_50x =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+
+n_t_51x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+n_t_52x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+n_t_53x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+n_t_54x =>
+    !tp3
+  # done_skip_low
+
+n_t_55x =>
+    !tp3
+  # !n_t_70x
+  # md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # md09_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+n_t_56x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md10_low & 
+      md11_low & !n_t_1x & !n_t_5x & !n_t_6x & n_t_70x & tp3
+
+n_t_57x =>
+    tp3 & !tr_skip_low
+
+n_t_58x =>
+    !initialize & n_t_45x & !tp3
+  # !initialize & n_t_45x & tr_skip_low
+
+!n_t_59x.d  =>
+    0 
+
+n_t_59x.ap  =>
+    maint
+
+n_t_59x.ar  =>
+    tp3 & !tr_skip_low
+  # initialize
+  # !n_t_45x
+
+n_t_59x.ck  =>
+    !maint & !rx_tr_req_low
+
+!n_t_60x.d  =>
+    !maint & !msb8 & rx_done_low & rx_tr_req_low
+  # !n_t_60x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # n_t_5x & !n_t_60x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_60x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_60x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_60x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_60x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_60x & rx_out_low & !rx_tr_req_low
+  # data3_low & !n_t_60x & rx_out_low & !rx_tr_req_low
+  # !n_t_60x & n_t_6x & !rx_done_low & rx_out_low
+  # n_t_5x & !n_t_60x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_60x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_60x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_60x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_60x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_60x & !rx_done_low & rx_out_low
+  # data3_low & !n_t_60x & !rx_done_low & rx_out_low
+  # !maint & !msb8 & !rx_out_low
+  # maint & !n_t_60x & n_t_6x
+  # maint & n_t_5x & !n_t_60x
+  # maint & n_t_1x & !n_t_60x
+  # maint & md05_low & !n_t_60x
+  # maint & md04_low & !n_t_60x
+  # maint & md03_low & !n_t_60x
+  # io_pause_low & maint & !n_t_60x
+  # data3_low & maint & !n_t_60x
+
+n_t_60x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_60x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n_t_61x.d  =>
+    0 
+
+n_t_61x.ap  =>
+    maint
+
+n_t_61x.ar  =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md10_low & 
+      md11_low & !n_t_1x & !n_t_5x & !n_t_6x & n_t_70x & tp3
+
+n_t_61x.ck  =>
+    !maint & !rx_error_low
+
+!n_t_62x.d  =>
+    !maint & !n_t_63x & rx_done_low & rx_tr_req_low
+  # !n_t_62x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # n_t_5x & !n_t_62x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_62x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_62x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_62x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_62x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_62x & rx_out_low & !rx_tr_req_low
+  # data5_low & !n_t_62x & rx_out_low & !rx_tr_req_low
+  # !n_t_62x & n_t_6x & !rx_done_low & rx_out_low
+  # n_t_5x & !n_t_62x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_62x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_62x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_62x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_62x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_62x & !rx_done_low & rx_out_low
+  # data5_low & !n_t_62x & !rx_done_low & rx_out_low
+  # !maint & !n_t_63x & !rx_out_low
+  # maint & !n_t_62x & n_t_6x
+  # maint & n_t_5x & !n_t_62x
+  # maint & n_t_1x & !n_t_62x
+  # maint & md05_low & !n_t_62x
+  # maint & md04_low & !n_t_62x
+  # maint & md03_low & !n_t_62x
+  # io_pause_low & maint & !n_t_62x
+  # data5_low & maint & !n_t_62x
+
+n_t_62x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_62x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n_t_63x.d  =>
+    !maint & !n_t_64x & rx_done_low & rx_tr_req_low
+  # !n_t_63x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # n_t_5x & !n_t_63x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_63x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_63x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_63x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_63x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_63x & rx_out_low & !rx_tr_req_low
+  # data6_low & !n_t_63x & rx_out_low & !rx_tr_req_low
+  # !n_t_63x & n_t_6x & !rx_done_low & rx_out_low
+  # n_t_5x & !n_t_63x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_63x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_63x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_63x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_63x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_63x & !rx_done_low & rx_out_low
+  # data6_low & !n_t_63x & !rx_done_low & rx_out_low
+  # !maint & !n_t_64x & !rx_out_low
+  # maint & !n_t_63x & n_t_6x
+  # maint & n_t_5x & !n_t_63x
+  # maint & n_t_1x & !n_t_63x
+  # maint & md05_low & !n_t_63x
+  # maint & md04_low & !n_t_63x
+  # maint & md03_low & !n_t_63x
+  # io_pause_low & maint & !n_t_63x
+  # data6_low & maint & !n_t_63x
+
+n_t_63x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_63x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n_t_64x.d  =>
+    !maint & !n_t_31x & rx_done_low & rx_tr_req_low
+  # !n_t_64x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # n_t_5x & !n_t_64x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_64x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_64x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_64x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_64x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_64x & rx_out_low & !rx_tr_req_low
+  # data7_low & !n_t_64x & rx_out_low & !rx_tr_req_low
+  # !n_t_64x & n_t_6x & !rx_done_low & rx_out_low
+  # n_t_5x & !n_t_64x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_64x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_64x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_64x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_64x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_64x & !rx_done_low & rx_out_low
+  # data7_low & !n_t_64x & !rx_done_low & rx_out_low
+  # !maint & !n_t_31x & !rx_out_low
+  # maint & !n_t_64x & n_t_6x
+  # maint & n_t_5x & !n_t_64x
+  # maint & n_t_1x & !n_t_64x
+  # maint & md05_low & !n_t_64x
+  # maint & md04_low & !n_t_64x
+  # maint & md03_low & !n_t_64x
+  # io_pause_low & maint & !n_t_64x
+  # data7_low & maint & !n_t_64x
+
+n_t_64x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_64x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n_t_65x.d  =>
+    !maint & rx_data_low & rx_done_low & rx_tr_req_low
+  # !n_t_65x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # n_t_5x & !n_t_65x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_65x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_65x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_65x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_65x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_65x & rx_out_low & !rx_tr_req_low
+  # data11_low & !n_t_65x & rx_out_low & !rx_tr_req_low
+  # !n_t_65x & n_t_6x & !rx_done_low & rx_out_low
+  # n_t_5x & !n_t_65x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_65x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_65x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_65x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_65x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_65x & !rx_done_low & rx_out_low
+  # data11_low & !n_t_65x & !rx_done_low & rx_out_low
+  # !maint & rx_data_low & !rx_out_low
+  # maint & !n_t_65x & n_t_6x
+  # maint & n_t_5x & !n_t_65x
+  # maint & n_t_1x & !n_t_65x
+  # maint & md05_low & !n_t_65x
+  # maint & md04_low & !n_t_65x
+  # maint & md03_low & !n_t_65x
+  # io_pause_low & maint & !n_t_65x
+  # data11_low & maint & !n_t_65x
+
+n_t_65x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_65x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n_t_66x.d  =>
+    !maint & !n_t_67x & rx_done_low & rx_tr_req_low
+  # !n_t_66x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # n_t_5x & !n_t_66x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_66x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_66x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_66x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_66x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_66x & rx_out_low & !rx_tr_req_low
+  # data9_low & !n_t_66x & rx_out_low & !rx_tr_req_low
+  # !n_t_66x & n_t_6x & !rx_done_low & rx_out_low
+  # n_t_5x & !n_t_66x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_66x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_66x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_66x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_66x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_66x & !rx_done_low & rx_out_low
+  # data9_low & !n_t_66x & !rx_done_low & rx_out_low
+  # !maint & !n_t_67x & !rx_out_low
+  # maint & !n_t_66x & n_t_6x
+  # maint & n_t_5x & !n_t_66x
+  # maint & n_t_1x & !n_t_66x
+  # maint & md05_low & !n_t_66x
+  # maint & md04_low & !n_t_66x
+  # maint & md03_low & !n_t_66x
+  # io_pause_low & maint & !n_t_66x
+  # data9_low & maint & !n_t_66x
+
+n_t_66x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_66x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n_t_67x.d  =>
+    !maint & !n_t_65x & rx_done_low & rx_tr_req_low
+  # !n_t_67x & n_t_6x & rx_out_low & !rx_tr_req_low
+  # n_t_5x & !n_t_67x & rx_out_low & !rx_tr_req_low
+  # n_t_1x & !n_t_67x & rx_out_low & !rx_tr_req_low
+  # md05_low & !n_t_67x & rx_out_low & !rx_tr_req_low
+  # md04_low & !n_t_67x & rx_out_low & !rx_tr_req_low
+  # md03_low & !n_t_67x & rx_out_low & !rx_tr_req_low
+  # io_pause_low & !n_t_67x & rx_out_low & !rx_tr_req_low
+  # data10_low & !n_t_67x & rx_out_low & !rx_tr_req_low
+  # !n_t_67x & n_t_6x & !rx_done_low & rx_out_low
+  # n_t_5x & !n_t_67x & !rx_done_low & rx_out_low
+  # n_t_1x & !n_t_67x & !rx_done_low & rx_out_low
+  # md05_low & !n_t_67x & !rx_done_low & rx_out_low
+  # md04_low & !n_t_67x & !rx_done_low & rx_out_low
+  # md03_low & !n_t_67x & !rx_done_low & rx_out_low
+  # io_pause_low & !n_t_67x & !rx_done_low & rx_out_low
+  # data10_low & !n_t_67x & !rx_done_low & rx_out_low
+  # !maint & !n_t_65x & !rx_out_low
+  # maint & !n_t_67x & n_t_6x
+  # maint & n_t_5x & !n_t_67x
+  # maint & n_t_1x & !n_t_67x
+  # maint & md05_low & !n_t_67x
+  # maint & md04_low & !n_t_67x
+  # maint & md03_low & !n_t_67x
+  # io_pause_low & maint & !n_t_67x
+  # data10_low & maint & !n_t_67x
+
+n_t_67x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_67x.ck  =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !maint & !rx_shift_low
+
+!n_t_68x.d  =>
+    0 
+
+n_t_68x.ap  =>
+    maint
+
+n_t_68x.ar  =>
+    !done_skip_low & tp3
+
+n_t_68x.ck  =>
+    !maint & !rx_done_low
+
+!n_t_69x.d  =>
+    !n_t_68x
+
+n_t_69x.ap  =>
+    0 
+
+n_t_69x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_69x.ck  =>
+    tp4
+
+!n_t_70x.d  =>
+    !n_t_61x
+
+n_t_70x.ap  =>
+    0 
+
+n_t_70x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_70x.ck  =>
+    tp4
+
+n_t_71x =>
+    tp3
+
+!n_t_72x.d  =>
+    !n_t_59x
+
+n_t_72x.ap  =>
+    0 
+
+n_t_72x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_72x.ck  =>
+    tp4
+
+n_t_73x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md10_low & 
+      md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+n_t_74x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+n_t_75x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+!n_t_76x.d  =>
+    n_t_6x
+  # n_t_5x
+  # n_t_1x
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+  # data11_low
+
+n_t_76x.ap  =>
+    0 
+
+n_t_76x.ar  =>
+    initialize
+  # !n_t_45x
+
+n_t_76x.ck  =>
+    tp3
+
+n_t_77x =>
+    !tr_skip_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md10_low & 
+      md11_low & !n_t_1x & !n_t_5x & !n_t_6x & n_t_70x
+  # !done_skip_low
+
+n_t_78x =>
+    maint
+  # !tp3
+  # md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # md11_low
+  # rx_done_low
+
+n_t_79x =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !md11_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x
+  # md10_low & md11_low
+  # md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+
+!n_t_7x =>
+    md08_low
+  # io_pause_low
+
+n_t_80x =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # md10_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !maint & !rx_done_low
+  # maint
+  # !tp3
+
+n_t_81x =>
+    !maint & !rx_done_low
+  # !maint & !rx_tr_req_low
+
+n_t_82x =>
+    rx_done_low & rx_tr_req_low
+  # maint
+  # !maint & !rx_out_low
+
+n_t_83x =>
+    !initialize & !maint & n_t_45x & !rx_tr_req_low
+  # !initialize & !maint & n_t_45x & !rx_done_low
+
+n_t_84x =>
+    !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & 
+      rx_out_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & 
+      !rx_tr_req_low & tp3
+
+n_t_85x =>
+    !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_done_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & tp3
+
+!n_t_8x =>
+    md07_low
+  # io_pause_low
+
+!n_t_9x =>
+    md06_low
+  # io_pause_low
+
+!parity =>
+    !gdollar_3
+  # !gdollar_2
+  # !gdollar_1
+  # !gdollar_0
+
+!parity_low.j  =>
+    !msb12 & !n8_12 & !parity
+  # !msb8 & n8_12 & !parity
+  # parity & !parity_low
+
+!parity_low.k  =>
+    !msb12 & !n8_12 & !parity
+  # !msb8 & n8_12 & !parity
+  # parity & !parity_low
+
+parity_low.ap  =>
+    run
+  # initialize
+  # !n_t_45x
+
+parity_low.ar  =>
+    0 
+
+parity_low.ck  =>
+    rx_shift_low & !tp3
+  # !maint & rx_done_low & rx_shift_low & rx_tr_req_low
+  # !maint & !rx_out_low & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x & rx_shift_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !md11_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x & rx_shift_low
+  # md10_low & md11_low & rx_shift_low
+  # md03_low & rx_shift_low
+  # md05_low & rx_shift_low
+  # md04_low & rx_shift_low
+  # io_pause_low & rx_shift_low
+  # n_t_1x & rx_shift_low
+  # n_t_5x & rx_shift_low
+  # n_t_6x & rx_shift_low
+  # maint & !tp3
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md09_low & 
+      !n_t_1x & !n_t_5x & !n_t_6x
+  # !io_pause_low & maint & !md03_low & !md04_low & !md05_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+  # maint & md10_low & md11_low
+  # maint & md03_low
+  # maint & md05_low
+  # maint & md04_low
+  # io_pause_low & maint
+  # maint & n_t_1x
+  # maint & n_t_5x
+  # maint & n_t_6x
+
+rd =>
+    !maint & !rx_out_low
+
+!run.d  =>
+    0 
+
+run.ap  =>
+    0 
+
+run.ar  =>
+    rx_done_low & rx_tr_req_low
+  # maint
+  # initialize
+  # !n_t_45x
+
+run.ck  =>
+    !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_done_low & tp3
+  # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & 
+      md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & tp3
+
+rx8_sel_low =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+
+rx_12_bit_low =>
+    n8_12
+
+rx_12_bit_low.oe  =>
+    !rx_12_bit_low
+
+rx_data =>
+    !maint & !rx_data_low
+
+rx_data_low =>
+    !msb12 & !n8_12 & !parity
+  # !msb8 & n8_12 & !parity
+  # !maint & !rx_out_low
+  # parity & !parity_low
+
+rx_data_low.oe  =>
+    !rx_data_low
+
+rx_init_low =>
+    !initialize & n_t_45x
+
+rx_init_low.oe  =>
+    !rx_init_low
+
+rx_run_low =>
+    !run
+
+rx_run_low.oe  =>
+    !rx_run_low
+
+!sdn_iot_low =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # md09_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # md11_low
+
+!ser_iot_low =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # md09_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md10_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+shift =>
+    !maint & !rx_shift_low
+
+skip_low =>
+    done_skip_low & !n_t_70x & tr_skip_low
+  # done_skip_low & n_t_6x & tr_skip_low
+  # done_skip_low & n_t_5x & tr_skip_low
+  # done_skip_low & n_t_1x & tr_skip_low
+  # done_skip_low & !md11_low & tr_skip_low
+  # done_skip_low & !md10_low & tr_skip_low
+  # done_skip_low & md09_low & tr_skip_low
+  # done_skip_low & md05_low & tr_skip_low
+  # done_skip_low & md04_low & tr_skip_low
+  # done_skip_low & md03_low & tr_skip_low
+  # done_skip_low & io_pause_low & tr_skip_low
+
+skip_low.oe  =>
+    !skip_low
+
+!str_iot_low =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # md10_low
+  # md11_low
+
+tp3_low =>
+    !tp3
+
+!tr_skip_low =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & 
+      !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & n_t_72x
+
+wrt =>
+    rx_out_low
+  # maint
+
+xfer_iot =>
+    !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & 
+      md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+!xfer_iot_low =>
+    md03_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+  # n_t_1x
+  # n_t_5x
+  # n_t_6x
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+  # md10_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+xfer_req =>
+    !maint & !rx_tr_req_low
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    a                           0        I        1       -       -     
+    b                           0        I        1       -       -     
+    b_maint                     0        I        1       -       -     
+    binit_low                   0        I        1       -       -     
+    btp3                        0        I        1       -       -     
+    btp4                        0        I        1       -       -     
+    c0_low                      23       V        12      0       4     
+    c0_low              oe      23       X        1       0       1     
+    c1_low                      22       V        2       0       4     
+    c1_low              oe      22       X        1       0       1     
+    clk_buf_low                 0        I        24      -       -     
+    clk_parity_low              0        I        24      -       -     
+    data0                       0        I        1       -       -     
+    data0_low                   42       V        13      0       4     
+    data0_low           oe      42       X        1       0       1     
+    data1                       0        I        1       -       -     
+    data10                      0        I        1       -       -     
+    data10_low                  2        V        12      0       4     
+    data10_low          oe      2        X        1       0       1     
+    data11                      0        I        1       -       -     
+    data11_low                  1        V        12      0       4     
+    data11_low          oe      1        X        1       0       1     
+    data1_low                   39       V        13      0       4     
+    data1_low           oe      39       X        1       0       1     
+    data2                       0        I        1       -       -     
+    data2_low                   38       V        13      0       4     
+    data2_low           oe      38       X        1       0       1     
+    data3                       0        I        1       -       -     
+    data3_low                   37       V        13      0       4     
+    data3_low           oe      37       X        1       0       1     
+    data4                       0        I        1       -       -     
+    data4_low                   31       V        12      0       4     
+    data4_low           oe      31       X        1       0       1     
+    data5                       0        I        1       -       -     
+    data5_low                   30       V        12      0       4     
+    data5_low           oe      30       X        1       0       1     
+    data6                       0        I        1       -       -     
+    data6_low                   29       V        12      0       4     
+    data6_low           oe      29       X        1       0       1     
+    data7                       0        I        1       -       -     
+    data7_low                   26       V        12      0       4     
+    data7_low           oe      26       X        1       0       1     
+    data8                       0        I        1       -       -     
+    data8_low                   4        V        12      0       4     
+    data8_low           oe      4        X        1       0       1     
+    data9                       0        I        1       -       -     
+    data9_low                   3        V        12      0       4     
+    data9_low           oe      3        X        1       0       1     
+    done                        0        I        1       -       -     
+    done_low                    0        I        2       -       -     
+    done_skip_low               59       V        1       0       4     
+    enb_buf_ld_low              0        I        2       -       -     
+    err_skip_low                0        I        11      -       -     
+    error                       0        I        1       -       -     
+    gdollar_0                   0        N        -       -       -     
+    gdollar_0           k       0        M        3       0       4     
+    gdollar_0           j       0        M        1       0       4     
+    gdollar_0           ar      0        M        2       0       1     
+    gdollar_0           ck      0        M        24      0       1     
+    gdollar_1                   0        N        -       -       -     
+    gdollar_1           k       0        M        4       0       4     
+    gdollar_1           j       0        M        2       0       4     
+    gdollar_1           ar      0        M        2       0       1     
+    gdollar_1           ck      0        M        24      0       1     
+    gdollar_2                   0        N        -       -       -     
+    gdollar_2           j       0        M        40      0       4     
+    gdollar_2           k       0        M        10      0       4     
+    gdollar_2           ar      0        M        2       0       1     
+    gdollar_2           ck      0        M        24      0       1     
+    gdollar_3                   0        N        -       -       -     
+    gdollar_3           j       0        M        6       0       4     
+    gdollar_3           k       0        M        6       0       4     
+    gdollar_3           ar      0        M        2       0       1     
+    gdollar_3           ck      0        M        24      0       1     
+    init                        0        I        2       -       -     
+    init_iot_low                0        I        10      -       -     
+    init_low                    0        I        1       -       -     
+    initialize                  12       V        -       -       -     
+    int_rqst_low                14       V        2       0       4     
+    int_rqst_low        oe      14       X        1       0       1     
+    internal_io_low             18       V        7       0       4     
+    internal_io_low     oe      18       X        1       0       1     
+    intr_iot_low                0        I        10      -       -     
+    io_pause_low                24       V        -       -       -     
+    lcd_iot                     0        I        1       -       -     
+    lcd_iot_low                 0        I        10      -       -     
+    maint                       0        N        -       -       -     
+    maint               d       0        M        8       0       4     
+    maint               ap      0        M        1       0       1     
+    maint               ar      0        M        2       0       1     
+    maint               ck      0        M        1       0       1     
+    maint_low                   0        I        1       -       -     
+    md03_low                    44       V        -       -       -     
+    md04_low                    35       V        -       -       -     
+    md05_low                    34       V        -       -       -     
+    md06_low                    33       V        -       -       -     
+    md07_low                    32       V        -       -       -     
+    md08_low                    10       V        -       -       -     
+    md09_low                    9        V        -       -       -     
+    md10_low                    8        V        -       -       -     
+    md11_low                    7        V        -       -       -     
+    msb8                        0        N        -       -       -     
+    msb8                d       0        M        26      0       4     
+    msb8                ar      0        M        2       0       1     
+    msb8                ck      0        M        7       0       1     
+    msb12                       0        N        -       -       -     
+    msb12               d       0        M        26      0       4     
+    msb12               ar      0        M        2       0       1     
+    msb12               ck      0        M        7       0       1     
+    n8_12                       0        N        -       -       -     
+    n8_12               d       0        M        8       0       4     
+    n8_12               ap      0        M        1       0       1     
+    n8_12               ar      0        M        2       0       1     
+    n8_12               ck      0        M        1       0       1     
+    n8_12_low                   0        I        1       -       -     
+    n_t_10x                     0        I        1       -       -     
+    n_t_11x                     0        I        1       -       -     
+    n_t_12x                     0        I        3       -       -     
+    n_t_1x                      92       V        -       -       -     
+    n_t_21x                     0        I        2       -       -     
+    n_t_22x                     0        I        4       -       -     
+    n_t_2x                      0        N        -       -       -     
+    n_t_2x              d       0        M        26      0       4     
+    n_t_2x              ar      0        M        2       0       1     
+    n_t_2x              ck      0        M        7       0       1     
+    n_t_31x                     0        N        -       -       -     
+    n_t_31x             d       0        M        26      0       4     
+    n_t_31x             ar      0        M        2       0       1     
+    n_t_31x             ck      0        M        7       0       1     
+    n_t_32x                     0        I        12      -       -     
+    n_t_33x                     0        N        -       -       -     
+    n_t_33x             d       0        M        26      0       4     
+    n_t_33x             ar      0        M        2       0       1     
+    n_t_33x             ck      0        M        7       0       1     
+    n_t_34x                     0        I        3       -       -     
+    n_t_35x                     0        I        11      -       -     
+    n_t_36x                     0        I        11      -       -     
+    n_t_37x                     0        I        1       -       -     
+    n_t_38x                     0        I        3       -       -     
+    n_t_39x                     0        I        3       -       -     
+    n_t_3x                      0        I        3       -       -     
+    n_t_40x                     0        I        2       -       -     
+    n_t_42x                     0        I        3       -       -     
+    n_t_43x                     0        I        1       -       -     
+    n_t_44x                     0        I        7       -       -     
+    n_t_45x                     0        N        -       -       -     
+    n_t_45x             d       0        M        1       0       4     
+    n_t_45x             ap      0        M        1       0       1     
+    n_t_45x             ar      0        M        1       0       1     
+    n_t_45x             ck      0        M        1       0       1     
+    n_t_46x                     0        I        1       -       -     
+    n_t_47x                     0        I        1       -       -     
+    n_t_48x                     0        I        1       -       -     
+    n_t_49x                     0        I        1       -       -     
+    n_t_4x                      0        I        1       -       -     
+    n_t_50x                     0        I        7       -       -     
+    n_t_51x                     0        I        1       -       -     
+    n_t_52x                     0        I        1       -       -     
+    n_t_53x                     0        I        1       -       -     
+    n_t_54x                     0        I        2       -       -     
+    n_t_55x                     0        I        12      -       -     
+    n_t_56x                     0        I        1       -       -     
+    n_t_57x                     0        I        1       -       -     
+    n_t_58x                     0        I        2       -       -     
+    n_t_59x                     0        N        -       -       -     
+    n_t_59x             d       0        M        1       0       4     
+    n_t_59x             ap      0        M        1       0       1     
+    n_t_59x             ar      0        M        3       0       1     
+    n_t_59x             ck      0        M        1       0       1     
+    n_t_5x                      91       V        -       -       -     
+    n_t_60x                     0        N        -       -       -     
+    n_t_60x             d       0        M        26      0       4     
+    n_t_60x             ar      0        M        2       0       1     
+    n_t_60x             ck      0        M        7       0       1     
+    n_t_61x                     0        N        -       -       -     
+    n_t_61x             d       0        M        1       0       4     
+    n_t_61x             ap      0        M        1       0       1     
+    n_t_61x             ar      0        M        1       0       1     
+    n_t_61x             ck      0        M        1       0       1     
+    n_t_62x                     0        N        -       -       -     
+    n_t_62x             d       0        M        26      0       4     
+    n_t_62x             ar      0        M        2       0       1     
+    n_t_62x             ck      0        M        7       0       1     
+    n_t_63x                     0        N        -       -       -     
+    n_t_63x             d       0        M        26      0       4     
+    n_t_63x             ar      0        M        2       0       1     
+    n_t_63x             ck      0        M        7       0       1     
+    n_t_64x                     0        N        -       -       -     
+    n_t_64x             d       0        M        26      0       4     
+    n_t_64x             ar      0        M        2       0       1     
+    n_t_64x             ck      0        M        7       0       1     
+    n_t_65x                     0        N        -       -       -     
+    n_t_65x             d       0        M        26      0       4     
+    n_t_65x             ar      0        M        2       0       1     
+    n_t_65x             ck      0        M        7       0       1     
+    n_t_66x                     0        N        -       -       -     
+    n_t_66x             d       0        M        26      0       4     
+    n_t_66x             ar      0        M        2       0       1     
+    n_t_66x             ck      0        M        7       0       1     
+    n_t_67x                     0        N        -       -       -     
+    n_t_67x             d       0        M        26      0       4     
+    n_t_67x             ar      0        M        2       0       1     
+    n_t_67x             ck      0        M        7       0       1     
+    n_t_68x                     0        N        -       -       -     
+    n_t_68x             d       0        M        1       0       4     
+    n_t_68x             ap      0        M        1       0       1     
+    n_t_68x             ar      0        M        1       0       1     
+    n_t_68x             ck      0        M        1       0       1     
+    n_t_69x                     0        N        -       -       -     
+    n_t_69x             d       0        M        1       0       4     
+    n_t_69x             ap      0        M        1       0       1     
+    n_t_69x             ar      0        M        2       0       1     
+    n_t_69x             ck      0        M        1       0       1     
+    n_t_6x                      89       V        -       -       -     
+    n_t_70x                     0        N        -       -       -     
+    n_t_70x             d       0        M        1       0       4     
+    n_t_70x             ap      0        M        1       0       1     
+    n_t_70x             ar      0        M        2       0       1     
+    n_t_70x             ck      0        M        1       0       1     
+    n_t_71x                     0        I        1       -       -     
+    n_t_72x                     0        N        -       -       -     
+    n_t_72x             d       0        M        1       0       4     
+    n_t_72x             ap      0        M        1       0       1     
+    n_t_72x             ar      0        M        2       0       1     
+    n_t_72x             ck      0        M        1       0       1     
+    n_t_73x                     0        I        1       -       -     
+    n_t_74x                     0        I        1       -       -     
+    n_t_75x                     0        I        1       -       -     
+    n_t_76x                     0        N        -       -       -     
+    n_t_76x             d       0        M        8       0       4     
+    n_t_76x             ap      0        M        1       0       1     
+    n_t_76x             ar      0        M        2       0       1     
+    n_t_76x             ck      0        M        1       0       1     
+    n_t_77x                     0        I        3       -       -     
+    n_t_78x                     0        I        13      -       -     
+    n_t_79x                     0        I        10      -       -     
+    n_t_7x                      85       V        2       0       4     
+    n_t_80x                     0        I        13      -       -     
+    n_t_81x                     0        I        2       -       -     
+    n_t_82x                     0        I        3       -       -     
+    n_t_83x                     0        I        2       -       -     
+    n_t_84x                     0        I        6       -       -     
+    n_t_85x                     0        I        2       -       -     
+    n_t_8x                      86       V        2       0       4     
+    n_t_9x                      94       V        2       0       4     
+    parity                      58       V        4       0       4     
+    parity_low                  0        N        -       -       -     
+    parity_low          j       0        M        3       0       4     
+    parity_low          k       0        M        3       0       4     
+    parity_low          ap      0        M        3       0       1     
+    parity_low          ar      0        M        1       0       1     
+    parity_low          ck      0        M        24      0       1     
+    rd                          0        I        1       -       -     
+    run                         0        N        -       -       -     
+    run                 d       0        M        1       0       4     
+    run                 ap      0        M        1       0       1     
+    run                 ar      0        M        4       0       1     
+    run                 ck      0        M        2       0       1     
+    rx8_sel_low                 0        I        7       -       -     
+    rx_12_bit_low               83       V        1       0       4     
+    rx_12_bit_low       oe      83       X        1       0       1     
+    rx_data                     0        I        1       -       -     
+    rx_data_low                 81       V        4       0       4     
+    rx_data_low         oe      81       X        1       0       1     
+    rx_done_low                 79       V        -       -       -     
+    rx_error_low                72       V        -       -       -     
+    rx_init_low                 74       V        1       0       4     
+    rx_init_low         oe      74       X        1       0       1     
+    rx_out_low                  99       V        -       -       -     
+    rx_run_low                  70       V        1       0       4     
+    rx_run_low          oe      70       X        1       0       1     
+    rx_shift_low                96       V        -       -       -     
+    rx_tr_req_low               77       V        -       -       -     
+    sdn_iot_low                 0        I        10      -       -     
+    ser_iot_low                 0        I        10      -       -     
+    shift                       0        I        1       -       -     
+    skip_low                    11       V        11      0       4     
+    skip_low            oe      11       X        1       0       1     
+    str_iot_low                 0        I        10      -       -     
+    tp3                         21       V        -       -       -     
+    tp3_low                     0        I        1       -       -     
+    tp4                         19       V        -       -       -     
+    tr_skip_low                 60       V        1       0       4     
+    wrt                         0        I        2       -       -     
+    xfer_iot                    0        I        1       -       -     
+    xfer_iot_low                0        I        10      -       -     
+    xfer_req                    0        I        1       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

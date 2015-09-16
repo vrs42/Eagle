@@ -1,0 +1,131 @@
+Partlist
+
+Exported from RX8E.sch at  8/31/2015 07:19:33p
+
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Part     Value          Device            Package      Library    Sheet
+
+C1       0.1            C-US050-025X075   C050-025X075 rcl        2
+C2       0.1            C-US050-025X075   C050-025X075 rcl        2
+C3       0.1            C-US050-025X075   C050-025X075 rcl        2
+C4       0.1            C-US050-025X075   C050-025X075 rcl        2
+C5       0.1            C-US050-025X075   C050-025X075 rcl        2
+C6       0.1            C-US050-025X075   C050-025X075 rcl        2
+C7       0.1            C-US050-025X075   C050-025X075 rcl        2
+C8       0.1            C-US050-025X075   C050-025X075 rcl        2
+C9       0.1            C-US050-025X075   C050-025X075 rcl        2
+C10      0.1            C-US050-025X075   C050-025X075 rcl        2
+C11      0.1            C-US050-025X075   C050-025X075 rcl        2
+C12      0.1            C-US050-025X075   C050-025X075 rcl        2
+C13      0.1            C-US050-025X075   C050-025X075 rcl        2
+C14      0.1            C-US050-025X075   C050-025X075 rcl        2
+C15      0.1            C-US050-025X075   C050-025X075 rcl        2
+C16      0.1            C-US050-025X075   C050-025X075 rcl        2
+C17      0.1            C-US050-025X075   C050-025X075 rcl        2
+C18      0.1            C-US050-025X075   C050-025X075 rcl        2
+C19      0.1            C-US050-025X075   C050-025X075 rcl        2
+C20      0.1            C-US050-025X075   C050-025X075 rcl        2
+C21      0.1            C-US050-025X075   C050-025X075 rcl        2
+C22      0.1            C-US050-025X075   C050-025X075 rcl        2
+C23      0.1            C-US050-025X075   C050-025X075 rcl        2
+C24      0.1            C-US050-025X075   C050-025X075 rcl        2
+C25      0.1            C-US050-025X075   C050-025X075 rcl        2
+C26      0.1            C-US050-025X075   C050-025X075 rcl        2
+C27      0.1            C-US050-025X075   C050-025X075 rcl        2
+C28      0.1            C-US050-025X075   C050-025X075 rcl        2
+C29      0.1            C-US050-025X075   C050-025X075 rcl        2
+C30      0.1            C-US050-025X075   C050-025X075 rcl        2
+C31      0.1            C-US050-025X075   C050-025X075 rcl        2
+C32      0.1            C-US050-025X075   C050-025X075 rcl        2
+C33      0.1            C-US050-025X075   C050-025X075 rcl        2
+C34      0.1            C-US050-025X075   C050-025X075 rcl        2
+C35      0.1            C-US050-025X075   C050-025X075 rcl        2
+C36      0.1            C-US050-025X075   C050-025X075 rcl        2
+C37      0.1            C-US050-025X075   C050-025X075 rcl        2
+C38      0.1            C-US050-025X075   C050-025X075 rcl        2
+C39      0.1            C-US050-025X075   C050-025X075 rcl        2
+C40      0.1            C-US050-025X075   C050-025X075 rcl        2
+C41      0.1            C-US050-025X075   C050-025X075 rcl        2
+C42      6.8uf          CPOL-USE22-6AXIAL E22-6        rcl        2
+C43      6.8uf          CPOL-USE22-6AXIAL E22-6        rcl        2
+C44      6.8uf          CPOL-USE22-6AXIAL E22-6        rcl        2
+C45      6.8uf          CPOL-USE22-6AXIAL E22-6        rcl        2
+DRIVE                   DEC40PINH         DEC40PINH    dec-con    1
+E1       DS8837N        8837N             DIL16        dec-con    2
+E2       7474N          74LS74N           DIL14        74xx-us    2
+E3       7410N          74LS10N           DIL14        74xx-us    2
+E4       74161N         74161N            DIL16        74ttl-din  2
+E5       DS8881N        74LS01N           DIL14        74xx-us    2
+E6       7402N          74LS02N           DIL14        74xx-us    1
+E7       7474N          74LS74N           DIL14        74xx-us    2
+E8       7404N          74LS04N           DIL14        74xx-us    2
+E9       74179N         74179N            DIL16        74xx-us    2
+E10      7410N          74LS10N           DIL14        74xx-us    1
+E11      DS8640N        8640N             DIL14        dec-con    1
+E12      7400N          74LS00N           DIL14        74xx-us    2
+E13      SPARE          DIL16             DIL16        ic-package 2
+E14      DS8881N        74LS01N           DIL14        74xx-us    2
+E15      7474N          74LS74N           DIL14        74xx-us    1
+E16      7408N          74LS08N           DIL14        74xx-us    1
+E17      DS8881N        74LS01N           DIL14        74xx-us    2
+E18      DS8881N        74LS01N           DIL14        74xx-us    1
+E19      7402N          74LS02N           DIL14        74xx-us    1
+E20      7427N          74LS27N           DIL14        74xx-us    1
+E21      74179N         74179N            DIL16        74xx-us    2
+E22      7474N          74LS74N           DIL14        74xx-us    1
+E23      7402N          74LS02N           DIL14        74xx-us    1
+E24      7400N          74LS00N           DIL14        74xx-us    1
+E25      DS8837N        8837N             DIL16        dec-con    2
+E26      7474N          74LS74N           DIL14        74xx-us    1
+E27      7476N          7476N             DIL16        74xx-us    2
+E28      7420N          74LS20N           DIL14        74xx-us    1
+E29      DS8881N        74LS01N           DIL14        74xx-us    2
+E30      7474N          74LS74N           DIL14        74xx-us    1
+E31                     SW_DIP-8          EDG-08       special    1
+E32      7404N          74LS04N           DIL14        74xx-us    1
+E33      74179N         74179N            DIL16        74xx-us    2
+E34      7400N          7400N             DIL14        74xx-us    1
+E35      SP314N         SP314N            DIL14        dec-con    1
+E36      DS8837N        8837N             DIL16        dec-con    1
+E37      DS8881N        74LS01N           DIL14        74xx-us    2
+E38      7404N          74LS04N           DIL14        74xx-us    1
+E39      SP384N         SP384N            DIL14        dec-con    1
+E40      DS8837N        8837N             DIL16        dec-con    1
+E41      7442N          74LS42N           DIL16        74xx-us    1
+PAD10                   1,6/0,8           1,6/0,8      wirepad    2
+PAD11                   1,6/0,8           1,6/0,8      wirepad    2
+PAD12                   1,6/0,8           1,6/0,8      wirepad    2
+PAD13                   1,6/0,8           1,6/0,8      wirepad    2
+PAD14                   1,6/0,8           1,6/0,8      wirepad    2
+PAD15                   1,6/0,8           1,6/0,8      wirepad    2
+PAD16                   1,6/0,8           1,6/0,8      wirepad    2
+PAD17                   1,6/0,8           1,6/0,8      wirepad    2
+PAD20                   1,6/0,8           1,6/0,8      wirepad    2
+PAD21                   1,6/0,8           1,6/0,8      wirepad    2
+PAD22                   1,6/0,8           1,6/0,8      wirepad    2
+PAD23                   1,6/0,8           1,6/0,8      wirepad    2
+PAD24                   1,6/0,8           1,6/0,8      wirepad    2
+PAD25                   1,6/0,8           1,6/0,8      wirepad    2
+PAD26                   1,6/0,8           1,6/0,8      wirepad    2
+PAD27                   1,6/0,8           1,6/0,8      wirepad    2
+R1       180            R-US_0207/10      0207/10      rcl        1
+R2       180            R-US_0207/10      0207/10      rcl        1
+R3       180            R-US_0207/10      0207/10      rcl        1
+R4       180            R-US_0207/10      0207/10      rcl        1
+R5       180            R-US_0207/10      0207/10      rcl        1
+R6       180            R-US_0207/10      0207/10      rcl        1
+R7       180            R-US_0207/10      0207/10      rcl        2
+R8       180            R-US_0207/10      0207/10      rcl        1
+R9       120            R-US_0207/10      0207/10      rcl        2
+R10      390            R-US_0207/10      0207/10      rcl        1
+R11      390            R-US_0207/10      0207/10      rcl        1
+R12      390            R-US_0207/10      0207/10      rcl        1
+R13      390            R-US_0207/10      0207/10      rcl        1
+R14      390            R-US_0207/10      0207/10      rcl        1
+R15      390            R-US_0207/10      0207/10      rcl        1
+R16      390            R-US_0207/10      0207/10      rcl        2
+R17      390            R-US_0207/10      0207/10      rcl        1
+R19      10K            R-US_0207/10      0207/10      rcl        2
+R20      10K            R-US_0207/10      0207/10      rcl        1
+U$2                     QUAD              EDGE-CON8    dec-con    3
