@@ -13,7 +13,9 @@ PIN  29 =  data6_low
 PIN  26 =  data7_low 
 PIN   4 =  data8_low 
 PIN   3 =  data9_low 
+PIN  82 =  dd 
 PIN  59 =  done_skip_low 
+PIN  71 =  f 
 PIN   0 =  gdollar_0 
 PIN   0 =  gdollar_1 
 PIN   0 =  gdollar_2 
@@ -22,6 +24,8 @@ PIN  12 =  initialize
 PIN  14 =  int_rqst_low 
 PIN  18 =  internal_io_low 
 PIN  24 =  io_pause_low 
+PIN  95 =  jj 
+PIN  73 =  l 
 PIN   0 =  maint 
 PIN  44 =  md03_low 
 PIN  35 =  md04_low 
@@ -59,6 +63,7 @@ PIN   0 =  n_t_76x
 PIN  85 =  n_t_7x 
 PIN  86 =  n_t_8x 
 PIN  94 =  n_t_9x 
+PIN  98 =  nn 
 PIN  58 =  parity 
 PIN   0 =  parity_low 
 PIN   0 =  run 
@@ -75,6 +80,9 @@ PIN  11 =  skip_low
 PIN  21 =  tp3 
 PIN  19 =  tp4 
 PIN  60 =  tr_skip_low 
+PIN 100 =  tt 
+PIN  78 =  v 
+PIN  80 =  z 
 %END
 
 %FIELD
@@ -199,9 +207,6 @@ data0_low.oe  =>
 data1 =>
     !data1_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
 
-data10 =>
-    !data10_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
-
 data10_low =>
     !maint & rx_done_low & rx_out_low
   # n_t_6x
@@ -218,9 +223,6 @@ data10_low =>
 
 data10_low.oe  =>
     !data10_low
-
-data11 =>
-    !data11_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
 
 data11_low =>
     !maint & rx_done_low & rx_out_low
@@ -342,6 +344,18 @@ data5_low.oe  =>
 data6 =>
     !data6_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
 
+data7 =>
+    !data7_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+data8 =>
+    !data8_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+data10 =>
+    !data10_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+data11 =>
+    !data11_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
+
 data6_low =>
     !maint & rx_done_low & rx_out_low
   # n_t_6x
@@ -359,9 +373,6 @@ data6_low =>
 data6_low.oe  =>
     !data6_low
 
-data7 =>
-    !data7_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
-
 data7_low =>
     !maint & rx_done_low & rx_out_low
   # n_t_6x
@@ -378,9 +389,6 @@ data7_low =>
 
 data7_low.oe  =>
     !data7_low
-
-data8 =>
-    !data8_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x
 
 data8_low =>
     !maint & rx_done_low & rx_out_low
@@ -419,6 +427,9 @@ data9_low =>
 data9_low.oe  =>
     !data9_low
 
+!dd =>
+    1 
+
 done =>
     !maint & !rx_done_low
 
@@ -449,13 +460,16 @@ err_skip_low =>
 error =>
     !maint & !rx_error_low
 
+!f =>
+    1 
+
+!gdollar_0.j  =>
+    0 
+
 !gdollar_0.k  =>
     rx_out_low & !rx_tr_req_low
   # !rx_done_low & rx_out_low
   # maint
-
-!gdollar_0.j  =>
-    0 
 
 gdollar_0.ar  =>
     initialize
@@ -487,15 +501,15 @@ gdollar_0.ck  =>
   # maint & n_t_5x
   # maint & n_t_6x
 
+!gdollar_1.j  =>
+    !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
+  # !gdollar_0 & !maint & !rx_out_low
+
 !gdollar_1.k  =>
     !gdollar_0
   # rx_out_low & !rx_tr_req_low
   # !rx_done_low & rx_out_low
   # maint
-
-!gdollar_1.j  =>
-    !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
-  # !gdollar_0 & !maint & !rx_out_low
 
 gdollar_1.ar  =>
     initialize
@@ -536,10 +550,10 @@ gdollar_1.ck  =>
   # !io_pause_low & !maint & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n8_12 & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low
   # !md10_low & !md11_low & rx_out_low & !rx_tr_req_low
   # !md10_low & !md11_low & !rx_done_low & rx_out_low
-  # maint & !md04_low & !md10_low & !md11_low
+  # maint & !md10_low & !md11_low
   # !md09_low & rx_out_low & !rx_tr_req_low
   # !md09_low & !rx_done_low & rx_out_low
-  # maint & !md04_low & !md09_low
+  # maint & !md09_low
   # !gdollar_1 & !maint & rx_done_low & rx_tr_req_low
   # !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
   # md10_low & md11_low & rx_out_low & !rx_tr_req_low
@@ -611,14 +625,6 @@ gdollar_2.ck  =>
   # maint & n_t_5x
   # maint & n_t_6x
 
-!gdollar_3.j  =>
-    !gdollar_2
-  # !gdollar_1
-  # !gdollar_0
-  # rx_out_low & !rx_tr_req_low
-  # !rx_done_low & rx_out_low
-  # maint
-
 !gdollar_3.k  =>
     !gdollar_2 & !maint & rx_done_low & rx_tr_req_low
   # !gdollar_1 & !maint & rx_done_low & rx_tr_req_low
@@ -626,6 +632,14 @@ gdollar_2.ck  =>
   # !gdollar_2 & !maint & !rx_out_low
   # !gdollar_1 & !maint & !rx_out_low
   # !gdollar_0 & !maint & !rx_out_low
+
+!gdollar_3.j  =>
+    !gdollar_2
+  # !gdollar_1
+  # !gdollar_0
+  # rx_out_low & !rx_tr_req_low
+  # !rx_done_low & rx_out_low
+  # maint
 
 gdollar_3.ar  =>
     initialize
@@ -706,6 +720,12 @@ internal_io_low.oe  =>
   # md09_low
   # md10_low
   # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
+
+!jj =>
+    1 
+
+!l =>
+    1 
 
 lcd_iot =>
     !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x
@@ -1631,18 +1651,21 @@ n_t_85x =>
     md06_low
   # io_pause_low
 
+!nn =>
+    1 
+
 !parity =>
     !gdollar_3
   # !gdollar_2
   # !gdollar_1
   # !gdollar_0
 
-!parity_low.j  =>
+!parity_low.k  =>
     !msb12 & !n8_12 & !parity
   # !msb8 & n8_12 & !parity
   # parity & !parity_low
 
-!parity_low.k  =>
+!parity_low.j  =>
     !msb12 & !n8_12 & !parity
   # !msb8 & n8_12 & !parity
   # parity & !parity_low
@@ -1800,6 +1823,12 @@ tp3_low =>
 !tr_skip_low =>
     !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & n_t_72x
 
+!tt =>
+    1 
+
+!v =>
+    1 
+
 wrt =>
     rx_out_low
   # maint
@@ -1821,5 +1850,8 @@ xfer_iot =>
 
 xfer_req =>
     !maint & !rx_tr_req_low
+
+!z =>
+    1 
 
 %END

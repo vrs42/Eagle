@@ -138,6 +138,7 @@ sub qcode {
 # $qcode .= $code;
 }
 
+#Tests for expression optimizer.
 #&qcode("uf.d = 'b'0&'b'0 # tp_ba1&renamed0&!'b'0 # uf&!renamed0&!'b'0;\n");
 #&qcode("uf.d = tp_ba1&renamed0 # uf&!renamed0;\n");
 #exit 1;
@@ -167,6 +168,14 @@ sub sn74h00 {
 }
 $hidden{'sn74h00'} = 0;
 
+sub sn7401 {
+  &ocassign($pad{1}, "$pad{2} & $pad{3}") if defined $pad{1};
+  &ocassign($pad{4}, "$pad{5} & $pad{6}") if defined $pad{4};
+  &ocassign($pad{10}, "$pad{8} & $pad{9}") if defined $pad{10};
+  &ocassign($pad{13}, "$pad{11} & $pad{12}") if defined $pad{13};
+}
+$hidden{'sn7401'} = 0;
+
 sub sn7402 {
   &qcode("$pad{1} = !($pad{2} # $pad{3});\n") if defined $pad{1};
   &qcode("$pad{4} = !($pad{5} # $pad{5});\n") if defined $pad{4};
@@ -174,6 +183,11 @@ sub sn7402 {
   &qcode("$pad{13} = !($pad{11} # $pad{12});\n") if defined $pad{13};
 }
 $hidden{'sn7402'} = 0;
+
+sub sn74hct02 {
+  &sn7402;
+}
+$hidden{'sn74hct02'} = 0;
 
 sub sn7404 {
   &qcode("$pad{2} = !$pad{1};\n") if defined $pad{2};
@@ -184,6 +198,11 @@ sub sn7404 {
   &qcode("$pad{12} = !$pad{13};\n") if defined $pad{12};
 }
 $hidden{'sn7404'} = 0;
+
+sub sn74h04 {
+  &sn7404;
+}
+$hidden{'sn74h04'} = 0;
 
 sub sn7407 {
   &ocassign($pad{2}, $pad{1}) if defined $pad{2};
@@ -210,6 +229,11 @@ sub sn7410 {
 }
 $hidden{'sn7410'} = 0;
 
+sub sn7417 {
+  &sn7407;
+}
+$hidden{'sn7417'} = 0;
+
 sub sn7420 {
   &qcode("$pad{6} = !($pad{1} & $pad{2} & $pad{4} & $pad{5});\n")
     if defined $pad{6};
@@ -229,6 +253,24 @@ sub sn7427 {
   &qcode("$pad{ 8} = !($pad{9} # $pad{10} # $pad{11});\n") if defined $pad{8};
 }
 $hidden{'sn7427'} = 0;
+
+sub sn7430 {
+  &qcode("$pad{8} = !($pad{1} & $pad{2} & $pad{3} & $pad{4} & $pad{5} & $pad{6} & $pad{11} & $pad{12});\n");
+}
+$hidden{'sn7430'} = 0;
+
+sub sn7432n {
+  &qcode("$pad{3} = $pad{1} # $pad{2};\n") if defined $pad{3};
+  &qcode("$pad{6} = $pad{4} # $pad{5};\n") if defined $pad{6};
+  &qcode("$pad{8} = $pad{9} # $pad{10};\n") if defined $pad{8};
+  &qcode("$pad{11} = $pad{12} # $pad{13};\n") if defined $pad{11};
+}
+$hidden{'sn7432n'} = 0;
+
+sub sn74hct32 {
+  &sn7432n;
+}
+$hidden{'sn74hct32'} = 0;
 
 sub sn7438 {
   &ocassign($pad{3}, "$pad{1} & $pad{2}") if defined $pad{3};
@@ -284,6 +326,41 @@ sub sn7474 {
 }
 $hidden{'sn7474'} = 0;
 
+sub sn7475 {
+  # We need Qa..Qd even if their pads are NC.
+  $pad{16} = &gnext unless defined $pad{16};
+  $pad{15} = &gnext unless defined $pad{15};
+  $pad{10} = &gnext unless defined $pad{10};
+  $pad{9} = &gnext unless defined $pad{9};
+  # These are registers.
+  &pinnode($pad{16});
+  &pinnode($pad{15});
+  &pinnode($pad{10});
+  &pinnode($pad{9});
+  # Now the hair
+  &qcode("$pad{16}.ap = $pad{13} &  $pad{2};\n");
+  &qcode("$pad{16}.ar = $pad{13} & !$pad{2};\n");
+  &qcode("$pad{16}.ck = 'b'0;\n");
+  &qcode("$pad{16}.d = 'b'0;\n");
+  &qcode("$pad{15}.ap = $pad{13} &  $pad{3};\n");
+  &qcode("$pad{15}.ar = $pad{13} & !$pad{3};\n");
+  &qcode("$pad{15}.ck = 'b'0;\n");
+  &qcode("$pad{15}.d = 'b'0;\n");
+  &qcode("$pad{10}.ap = $pad{4} &  $pad{6};\n");
+  &qcode("$pad{10}.ar = $pad{4} & !$pad{6};\n");
+  &qcode("$pad{10}.ck = 'b'0;\n");
+  &qcode("$pad{10}.d = 'b'0;\n");
+  &qcode("$pad{9}.ap = $pad{4} &  $pad{7};\n");
+  &qcode("$pad{9}.ar = $pad{4} & !$pad{7};\n");
+  &qcode("$pad{9}.ck = 'b'0;\n");
+  &qcode("$pad{9}.d = 'b'0;\n");
+  &qcode("$pad{1} = !$pad{16};\n") if defined $pad{1};
+  &qcode("$pad{14} = !$pad{15};\n") if defined $pad{14};
+  &qcode("$pad{11} = !$pad{10};\n") if defined $pad{11};
+  &qcode("$pad{8} = !$pad{9};\n") if defined $pad{8};
+}
+$hidden{'sn7475'} = 0;
+
 sub sn7476 {
   if (defined $pad{14} && !defined $pad{15}) {
     &pinnode($pad{14});
@@ -320,15 +397,43 @@ sub sn7476 {
 }
 $hidden{'sn7476'} = 0;
 
+sub sn7493 {
+  # We need Qa..Qd even if their pads are NC.
+  $pad{12} = &gnext unless defined $pad{12};
+  $pad{9} = &gnext unless defined $pad{9};
+  $pad{8} = &gnext unless defined $pad{8};
+  $pad{11} = &gnext unless defined $pad{11};
+  # These are registers.
+  &pinnode($pad{12});
+  &pinnode($pad{9});
+  &pinnode($pad{8});
+  &pinnode($pad{11});
+  # Now the hair
+  &qcode("$pad{12}.ck = $pad{14};\n");
+  &qcode("$pad{12}.t = 'b'1;\n");
+  &qcode("$pad{12}.ar = !($pad{2} & $pad{3});\n");
+  &qcode("$pad{9}.ck = $pad{1};\n");
+  &qcode("$pad{9}.t = 'b'1;\n");
+  &qcode("$pad{9}.ar = !($pad{2} & $pad{3});\n");
+  &qcode("$pad{8}.ck = $pad{9};\n");
+  &qcode("$pad{8}.t = 'b'1;\n");
+  &qcode("$pad{8}.ar = !($pad{2} & $pad{3});\n");
+  &qcode("$pad{11}.ck = $pad{8};\n");
+  &qcode("$pad{11}.t = 'b'1;\n");
+  &qcode("$pad{11}.ar = !($pad{2} & $pad{3});\n");
+}
+$hidden{'sn7493'} = 0;
+
+
 sub sn74138 {
-  &qcode("!$pad{15} = ($pad{1}, $pad{2}, $pad{3}, $pad{4}, $pad{5}, $pad{6}) = 'b'000001;\n") if defined $pad{15};
-  &qcode("!$pad{14} = ($pad{1}, $pad{2}, $pad{3}, $pad{4}, $pad{5}, $pad{6}) = 'b'001001;\n") if defined $pad{14};
-  &qcode("!$pad{13} = ($pad{1}, $pad{2}, $pad{3}, $pad{4}, $pad{5}, $pad{6}) = 'b'010001;\n") if defined $pad{13};
-  &qcode("!$pad{12} = ($pad{1}, $pad{2}, $pad{3}, $pad{4}, $pad{5}, $pad{6}) = 'b'011001;\n") if defined $pad{12};
-  &qcode("!$pad{11} = ($pad{1}, $pad{2}, $pad{3}, $pad{4}, $pad{5}, $pad{6}) = 'b'100001;\n") if defined $pad{11};
-  &qcode("!$pad{10} = ($pad{1}, $pad{2}, $pad{3}, $pad{4}, $pad{5}, $pad{6}) = 'b'101001;\n") if defined $pad{10};
-  &qcode("!$pad{9} = ($pad{1}, $pad{2}, $pad{3}, $pad{4}, $pad{5}, $pad{6}) = 'b'110001;\n") if defined $pad{9};
-  &qcode("!$pad{7} = ($pad{1}, $pad{2}, $pad{3}, $pad{4}, $pad{5}, $pad{6}) = 'b'111001;\n") if defined $pad{7};
+  &qcode("!$pad{15} = !$pad{1} & !$pad{2} & !$pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{15};
+  &qcode("!$pad{14} = !$pad{1} & !$pad{2} &  $pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{14};
+  &qcode("!$pad{13} = !$pad{1} &  $pad{2} & !$pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{13};
+  &qcode("!$pad{12} = !$pad{1} &  $pad{2} &  $pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{12};
+  &qcode("!$pad{11} =  $pad{1} & !$pad{2} & !$pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{11};
+  &qcode("!$pad{10} =  $pad{1} & !$pad{2} &  $pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{10};
+  &qcode("!$pad{ 9} =  $pad{1} &  $pad{2} & !$pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{9};
+  &qcode("!$pad{ 7} =  $pad{1} &  $pad{2} &  $pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{7};
 }
 $hidden{'sn74138'} = 0;
 
@@ -453,6 +558,34 @@ sub sn74193 {
 }
 $hidden{'sn74193'} = 0;
 
+sub sn74195 {
+  # We need Qa..Qd even if their pads are NC.
+  $pad{12} = &gnext unless defined $pad{12};
+  $pad{13} = &gnext unless defined $pad{13};
+  $pad{14} = &gnext unless defined $pad{14};
+  $pad{15} = &gnext unless defined $pad{15};
+  # These are registers.
+  &pinnode($pad{12});
+  &pinnode($pad{13});
+  &pinnode($pad{14});
+  &pinnode($pad{15});
+  # Now the hair
+  &qcode("$pad{12}.ar = !$pad{1};\n");
+  &qcode("$pad{12}.ck = $pad{10} & !$pad{1};\n");
+  &qcode("$pad{12}.d = !($pad{7}&!$pad{9} # $pad{13}&$pad{9});\n");
+  &qcode("$pad{13}.ar = !$pad{1};\n");
+  &qcode("$pad{13}.ck = $pad{10} & !$pad{1};\n");
+  &qcode("$pad{13}.d = !($pad{6}&!$pad{9} # $pad{14}&$pad{9});\n");
+  &qcode("$pad{14}.ar = !$pad{1};\n");
+  &qcode("$pad{14}.ck = $pad{10} & !$pad{1};\n");
+  &qcode("$pad{14}.d = !($pad{5}&!$pad{9} # $pad{15}&$pad{9});\n");
+  &qcode("$pad{15}.ar = !$pad{1};\n");
+  &qcode("$pad{15}.ck = $pad{10} & !$pad{1};\n");
+  &qcode("$pad{15}.d = !($pad{4}&!$pad{9} # $pad{2}&!$pad{15}&$pad{9} # $pad{3}&$pad{15}&$pad{9});\n");
+  &qcode("$pad{11} = !$pad{12};\n") if defined $pad{11};
+}
+$hidden{'sn74195'} = 0;
+
 sub sn74240 {
   &qcode("$pad{18} = !$pad{2};\n") if defined $pad{18};
   &qcode("$pad{18}.oe = !$pad{1};\n") if defined $pad{18};
@@ -501,13 +634,21 @@ sub dec8235 {
 }
 $hidden{'dec8235'} = 0;
 
+sub dec8242 {
+  &ocassign($pad{3}, "!$pad{1}&!$pad{2} # $pad{1}&$pad{2}") if defined $pad{3};
+  &ocassign($pad{4}, "!$pad{5}&!$pad{6} # $pad{5}&$pad{6}") if defined $pad{4};
+  &ocassign($pad{10}, "!$pad{8}&!$pad{9} # $pad{8}&$pad{9}") if defined $pad{10};
+  &ocassign($pad{11}, "!$pad{12}&!$pad{13} # $pad{12}&$pad{13}") if defined $pad{11};
+}
+$hidden{'dec8242'} = 0;
+
 sub dec8251 {
-  &qcode("!$pad{13} = !$pad{2} & !$pad{1} & !$pad{14} & !$pad{15};\n") if defined $pad{15};
-  &qcode("!$pad{12} = !$pad{2} & !$pad{1} & !$pad{14} & $pad{15};\n") if defined $pad{14};
-  &qcode("!$pad{11} = !$pad{2} & !$pad{1} & $pad{14} & !$pad{15};\n") if defined $pad{13};
-  &qcode("!$pad{10} = !$pad{2} & !$pad{1} & $pad{14} & $pad{15};\n") if defined $pad{12};
-  &qcode("!$pad{9} = !$pad{2} & $pad{1} & !$pad{14} & !$pad{15};\n") if defined $pad{11};
-  &qcode("!$pad{3} = !$pad{2} & $pad{1} & !$pad{14} & $pad{15};\n") if defined $pad{10};
+  &qcode("!$pad{13} = !$pad{2} & !$pad{1} & !$pad{14} & !$pad{15};\n") if defined $pad{13};
+  &qcode("!$pad{12} = !$pad{2} & !$pad{1} & !$pad{14} & $pad{15};\n") if defined $pad{12};
+  &qcode("!$pad{11} = !$pad{2} & !$pad{1} & $pad{14} & !$pad{15};\n") if defined $pad{11};
+  &qcode("!$pad{10} = !$pad{2} & !$pad{1} & $pad{14} & $pad{15};\n") if defined $pad{10};
+  &qcode("!$pad{9} = !$pad{2} & $pad{1} & !$pad{14} & !$pad{15};\n") if defined $pad{9};
+  &qcode("!$pad{3} = !$pad{2} & $pad{1} & !$pad{14} & $pad{15};\n") if defined $pad{3};
   &qcode("!$pad{4} = !$pad{2} & $pad{1} & $pad{14} & !$pad{15};\n") if defined $pad{9};
   &qcode("!$pad{5} = !$pad{2} & $pad{1} & $pad{14} & $pad{15};\n") if defined $pad{5};
   &qcode("!$pad{6} = $pad{2} & !$pad{1} & !$pad{14} & !$pad{15};\n") if defined $pad{6};
@@ -554,6 +695,12 @@ sub mc8271 {
 }
 $hidden{'mc8271'} = 0;
 
+sub ds75452n {
+  &ocassign($pad{3}, "!($pad{1} & $pad{2})") if defined $pad{3};
+  &ocassign($pad{5}, "!($pad{6} & $pad{7})") if defined $pad{5};
+}
+$hidden{'ds75452n'} = 0;
+
 sub ds8640n {
   &qcode("$pad{3} = !($pad{4} # $pad{5});\n") if defined $pad{3};
   &qcode("$pad{2} = !($pad{6} # $pad{7});\n") if defined $pad{2};
@@ -584,6 +731,11 @@ sub ds8881n {
   &ds8881;
 }
 $hidden{'ds8881n'} = 0;
+
+sub n8881n {
+  &ds8881;
+}
+$hidden{'n8881n'} = 0;
 
 sub sp314 {
   &qcode("!$pad{3} = $pad{4} # $pad{5} # $pad{6} # $pad{9} # $pad{10} # $pad{11} # $pad{12};\n");
@@ -623,13 +775,13 @@ $hidden{'sp384n'} = 0;
 
 # Capacitors generate warnings unless connected across supplies.
 sub c_us {
-  warn "warning: non-bypass capacitor deleted: $part"
+  warn "warning: non-bypass capacitor deleted: $part\n"
     unless $pad{'1'} =~ /'/ && $pad{'2'} =~ /'/;
 }
 $hidden{'c_us'} = 0;
 
 sub cpol_use {
-  warn "warning: non-bypass capacitor deleted: $part"
+  warn "warning: non-bypass capacitor deleted: $part\n"
     unless $pad{'+'} =~ /'/ && $pad{'-'} =~ /'/;
 }
 $hidden{'cpol_use'} = 0;
@@ -639,7 +791,8 @@ $hidden{'cpol_use'} = 0;
 sub r_us_ {
   local($tmp) = $pad{1};
   $tmp = $pad{2} unless $tmp =~ /'/;
-  warn "warning: non-pullup resistor deleted: $part" unless $tmp =~ /'/;
+  warn "warning: non-pullup resistor deleted: $part\n" unless $tmp =~ /'/;
+  return unless $tmp =~ /'/;
   $tmp = $pad{1};
   $tmp = $pad{2} if $tmp =~ /'/;
   &qcode("$tmp = 'b'1;\n") if !$out{$tmp} && !defined $con{$tmp};
@@ -688,15 +841,20 @@ while (<INPUT>) {
 }
 while (<INPUT>) {
   y/A-Z/a-z/;
-  next unless /^(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)/;
-  ($part, $value, $device, $pack, $lib) = ($1, $2, $3, $4, $5);
+  if (/^(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)/) {
+    ($part, $value, $device, $pack, $lib, $foo) = ($1, $2, $3, $4, $5, $6);
+    ($device, $pack, $lib) = ($pack, $lib, $foo) if $device =~ /[%]/;
+  } else {
+    next unless /^(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)/;
+    ($part, $value, $device, $pack, $lib) = ($1, $2, $3, $4, $5);
+  }
   if ($lib eq rcl) {
     # Value is set, but not needed.  Also, numeric part of the
     # device name encodes the package size, which is not needed.
     $device =~ s/\d.*//;
     $value = $device;
   }
-#print STDERR "'$part' '$value' '$device' '$pack' '$lib'\n";
+#print STDERR "'$part' '$value' '$device' '$pack' '$lib'\n" if $part eq 'r35';
   $part =~ s/-/_/g;
   $value =~ s/-/_/g;
   $device =~ s/-/_/g;
@@ -707,10 +865,10 @@ while (<INPUT>) {
   next unless $device =~ /\w+/;
   $device =~ s/x$//;
   $device =~ s/-array$//;
-  $value = $device if $device eq 'cpol';
+  $value = 'cpol_use' if $device =~ /^cpol/;
   $value = $device if $device eq 'r';
+  $value = $device if $device =~ /^r-us/;
   warn "$value ne $device\n" unless $value eq $device;
-  next if $value eq "j5mm";
   next if $value eq "spare";
   $value =~ s/^74s/74/;
   $value =~ s/^74ls/74/;
@@ -720,10 +878,18 @@ while (<INPUT>) {
   $partlist{$part} = $value;
   $connector{$part} = ($pack =~ /^con-/);
   $connector{$part} = 1 if $pack =~ /^wirepad$/;
+  $connector{$part} = 1 if $pack =~ /^do35-/;
+  $connector{$part} = 1 if $pack =~ /^to5$/;
   $connector{$part} = 1 if $device =~ /^edg/;
   $connector{$part} = 1 if $pack =~ /^edg/;
+  $connector{$part} = 1 if $device =~ /^j5mm/;
   $connector{$part} = 1 if $device =~ /^j10mm/;
   $connector{$part} = 1 if $device =~ /^dec40pin/;
+  $connector{$part} = 1 if $device =~ /^b3f/;
+  $connector{$part} = 1 if $device =~ /^0r2/;
+  $connector{$part} = 1 if $device =~ /^275p$/;
+  $connector{$part} = 1 if $device =~ /^g09r/;
+  $connector{$part} = 1 if $device =~ /^74123/; # BUGBUG vrs kludge
   $used{$value} = 1;
 }
 
@@ -902,7 +1068,8 @@ while (<INPUT>) {
   if (/^$/) {
     if ($part && !$connector{$part}) {
       &qcode("\n/* $part: $partlist{$part} */\n");
-      die "No definition for $part: $partlist{$part}"
+      warn "No definition for $part: $partlist{$part}"
+      #die "No definition for $part: $partlist{$part}"
         unless defined $hidden{$partlist{$part}};
       eval "&"."$partlist{$part}";
     }
@@ -932,6 +1099,7 @@ while (<INPUT>) {
   next if $dir eq 'pwr';
   # Ignore unconnected pins.
   next if $signal =~ /^[\*]/;
+$signal = "'b'1" if $signal eq 'nc'; # vrs
   next if $signal =~ /^nc$/;
   $pad{$pad} = $signal;
 }

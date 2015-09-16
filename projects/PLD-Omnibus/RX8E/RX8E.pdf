@@ -1,11 +1,11 @@
-{COMPONENT C:\CYGWIN\HOME\VINCE\TTL2PLD\M8357\RX8E.SYM
+{COMPONENT C:\USERS\VINCE\DOCUMENTS\WEBSVN\TRUNK\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E.SYM
 
  {ENVIRONMENT
   {PDIFvrev 3.00}
   {Program "CUPL(WM) Version 5.0a"}
   {DBtype "Schematic"}
   {DBvrev 1.01}
-  {DBtime "Mon Sep 07 17:50:20 2015 "}
+  {DBtime "Wed Sep 16 12:22:31 2015 "}
   {DBunit "MIL"}
   {DBgrid 10}
   {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
@@ -75,18 +75,26 @@
    {P DONE_SKI {Pt "I/O"}{Lq 0}{Ploc 360 380}}
    {P TR_SKIP_ {Pt "I/O"}{Lq 0}{Ploc 360 400}}
    {P RX_RUN_L {Pt "I/O"}{Lq 0}{Ploc 360 420}}
-   {P RX_INIT_ {Pt "I/O"}{Lq 0}{Ploc 360 440}}
-   {P RX_DATA_ {Pt "I/O"}{Lq 0}{Ploc 360 460}}
-   {P RX_12_BI {Pt "I/O"}{Lq 0}{Ploc 360 480}}
-   {P N_T_7X {Pt "I/O"}{Lq 0}{Ploc 360 500}}
-   {P N_T_8X {Pt "I/O"}{Lq 0}{Ploc 360 520}}
-   {P N_T_9X {Pt "I/O"}{Lq 0}{Ploc 360 540}}
+   {P F {Pt "I/O"}{Lq 0}{Ploc 360 440}}
+   {P L {Pt "I/O"}{Lq 0}{Ploc 360 460}}
+   {P RX_INIT_ {Pt "I/O"}{Lq 0}{Ploc 360 480}}
+   {P V {Pt "I/O"}{Lq 0}{Ploc 360 500}}
+   {P Z {Pt "I/O"}{Lq 0}{Ploc 360 520}}
+   {P RX_DATA_ {Pt "I/O"}{Lq 0}{Ploc 360 540}}
+   {P DD {Pt "I/O"}{Lq 0}{Ploc 360 560}}
+   {P RX_12_BI {Pt "I/O"}{Lq 0}{Ploc 360 580}}
+   {P N_T_7X {Pt "I/O"}{Lq 0}{Ploc 360 600}}
+   {P N_T_8X {Pt "I/O"}{Lq 0}{Ploc 360 620}}
+   {P N_T_9X {Pt "I/O"}{Lq 0}{Ploc 360 640}}
+   {P JJ {Pt "I/O"}{Lq 0}{Ploc 360 660}}
+   {P NN {Pt "I/O"}{Lq 0}{Ploc 360 680}}
+   {P TT {Pt "I/O"}{Lq 0}{Ploc 360 700}}
   }
 
   {PKG
    [Ly "REFDES"]
    [Ts 25][Tj "CB"][Tr 0][Tm "N"]
-   {Rdl 230 570}
+   {Rdl 230 730}
 
    [Ly "PINNUM"]
    [Ts 15][Tj "RC"]
@@ -140,14 +148,22 @@
    {Pnl 340 510}
    {Pnl 340 530}
    {Pnl 340 550}
+   {Pnl 340 570}
+   {Pnl 340 590}
+   {Pnl 340 610}
+   {Pnl 340 630}
+   {Pnl 340 650}
+   {Pnl 340 670}
+   {Pnl 340 690}
+   {Pnl 340 710}
 
-   {Sd A 89 7 8 9 10 12 19 21 24 32 33 34 35 44 72 77 79 91 92 96 99 1 2 3 4 11 14 18 22 23 26 29 30 31 37 38 39 42 58 59 60 70 74 81 83 85 86 94}
+   {Sd A 89 7 8 9 10 12 19 21 24 32 33 34 35 44 72 77 79 91 92 96 99 1 2 3 4 11 14 18 22 23 26 29 30 31 37 38 39 42 58 59 60 70 71 73 74 78 80 81 82 83 85 86 94 95 98 100}
   }
 
   {PIC
    [Ly "GATE"]
    [Ts 15][Tj "LC"][Tr 0][Tm "N"]
-   {R 130 560 330 0}
+   {R 130 720 330 0}
    {L 130 440 100 440}
    {L 130 450 140 440 130 430}
    {L 130 400 100 400}
@@ -197,6 +213,14 @@
    {L 330 500 360 500}
    {L 330 520 360 520}
    {L 330 540 360 540}
+   {L 330 560 360 560}
+   {L 330 580 360 580}
+   {L 330 600 360 600}
+   {L 330 620 360 620}
+   {L 330 640 360 640}
+   {L 330 660 360 660}
+   {L 330 680 360 680}
+   {L 330 700 360 700}
    [Ly "PINNAM"]
    [Tj "LC"]
    {T "N_T_6X" 140 440}
@@ -242,12 +266,20 @@
    {T "DONE_SKI" 320 380}
    {T "TR_SKIP_" 320 400}
    {T "RX_RUN_L" 320 420}
-   {T "RX_INIT_" 320 440}
-   {T "RX_DATA_" 320 460}
-   {T "RX_12_BI" 320 480}
-   {T "N_T_7X" 320 500}
-   {T "N_T_8X" 320 520}
-   {T "N_T_9X" 320 540}
+   {T "F" 320 440}
+   {T "L" 320 460}
+   {T "RX_INIT_" 320 480}
+   {T "V" 320 500}
+   {T "Z" 320 520}
+   {T "RX_DATA_" 320 540}
+   {T "DD" 320 560}
+   {T "RX_12_BI" 320 580}
+   {T "N_T_7X" 320 600}
+   {T "N_T_8X" 320 620}
+   {T "N_T_9X" 320 640}
+   {T "JJ" 320 660}
+   {T "NN" 320 680}
+   {T "TT" 320 700}
    [Ly "DEVICE"]
    [Tj "CT"]
    {T "F1508ISPQFP100" 230 -10}
@@ -261,7 +293,7 @@
    {EX
     [Ly "ATTR2"]
     [Ts 12][Tj "CT"][Tr 0][Tm "N"]
-    {At PLD C:\CYGWIN\HOME\VINCE\TTL2PLD\M8357\RX8E 230 560}
+    {At PLD C:\USERS\VINCE\DOCUMENTS\WEBSVN\TRUNK\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E 230 720}
    }
   }
  }
@@ -355,9 +387,19 @@
    }
    {N RX_RUN_L
    }
+   {N F
+   }
+   {N L
+   }
    {N RX_INIT_
    }
+   {N V
+   }
+   {N Z
+   }
    {N RX_DATA_
+   }
+   {N DD
    }
    {N RX_12_BI
    }
@@ -366,6 +408,12 @@
    {N N_T_8X
    }
    {N N_T_9X
+   }
+   {N JJ
+   }
+   {N NN
+   }
+   {N TT
    }
   }
 

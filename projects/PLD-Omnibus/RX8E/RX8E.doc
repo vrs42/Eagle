@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          f1508ispqfp100  Library DLIB-h-40-2
-Created         Mon Sep 07 17:50:20 2015
+Created         Wed Sep 16 12:22:31 2015
 Name            rx8e 
 Partno          cpld 
 Revision        01 
@@ -150,10 +150,6 @@ data1 =>
     !data1_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
       !n_t_5x & !n_t_6x
 
-data10 =>
-    !data10_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
-      !n_t_5x & !n_t_6x
-
 data10_low =>
     !maint & rx_done_low & rx_out_low
   # n_t_6x
@@ -170,10 +166,6 @@ data10_low =>
 
 data10_low.oe  =>
     !data10_low
-
-data11 =>
-    !data11_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
-      !n_t_5x & !n_t_6x
 
 data11_low =>
     !maint & rx_done_low & rx_out_low
@@ -300,6 +292,22 @@ data6 =>
     !data6_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
       !n_t_5x & !n_t_6x
 
+data7 =>
+    !data7_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data8 =>
+    !data8_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data10 =>
+    !data10_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
+data11 =>
+    !data11_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
+      !n_t_5x & !n_t_6x
+
 data6_low =>
     !maint & rx_done_low & rx_out_low
   # n_t_6x
@@ -317,10 +325,6 @@ data6_low =>
 data6_low.oe  =>
     !data6_low
 
-data7 =>
-    !data7_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
-      !n_t_5x & !n_t_6x
-
 data7_low =>
     !maint & rx_done_low & rx_out_low
   # n_t_6x
@@ -337,10 +341,6 @@ data7_low =>
 
 data7_low.oe  =>
     !data7_low
-
-data8 =>
-    !data8_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & 
-      !n_t_5x & !n_t_6x
 
 data8_low =>
     !maint & rx_done_low & rx_out_low
@@ -380,6 +380,9 @@ data9_low =>
 data9_low.oe  =>
     !data9_low
 
+!dd =>
+    1 
+
 done =>
     !maint & !rx_done_low
 
@@ -413,13 +416,16 @@ err_skip_low =>
 error =>
     !maint & !rx_error_low
 
+!f =>
+    1 
+
+!gdollar_0.j  =>
+    0 
+
 !gdollar_0.k  =>
     rx_out_low & !rx_tr_req_low
   # !rx_done_low & rx_out_low
   # maint
-
-!gdollar_0.j  =>
-    0 
 
 gdollar_0.ar  =>
     initialize
@@ -455,15 +461,15 @@ gdollar_0.ck  =>
   # maint & n_t_5x
   # maint & n_t_6x
 
+!gdollar_1.j  =>
+    !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
+  # !gdollar_0 & !maint & !rx_out_low
+
 !gdollar_1.k  =>
     !gdollar_0
   # rx_out_low & !rx_tr_req_low
   # !rx_done_low & rx_out_low
   # maint
-
-!gdollar_1.j  =>
-    !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
-  # !gdollar_0 & !maint & !rx_out_low
 
 gdollar_1.ar  =>
     initialize
@@ -518,10 +524,10 @@ gdollar_1.ck  =>
       rx_out_low & !rx_tr_req_low
   # !md10_low & !md11_low & rx_out_low & !rx_tr_req_low
   # !md10_low & !md11_low & !rx_done_low & rx_out_low
-  # maint & !md04_low & !md10_low & !md11_low
+  # maint & !md10_low & !md11_low
   # !md09_low & rx_out_low & !rx_tr_req_low
   # !md09_low & !rx_done_low & rx_out_low
-  # maint & !md04_low & !md09_low
+  # maint & !md09_low
   # !gdollar_1 & !maint & rx_done_low & rx_tr_req_low
   # !gdollar_0 & !maint & rx_done_low & rx_tr_req_low
   # md10_low & md11_low & rx_out_low & !rx_tr_req_low
@@ -607,14 +613,6 @@ gdollar_2.ck  =>
   # maint & n_t_5x
   # maint & n_t_6x
 
-!gdollar_3.j  =>
-    !gdollar_2
-  # !gdollar_1
-  # !gdollar_0
-  # rx_out_low & !rx_tr_req_low
-  # !rx_done_low & rx_out_low
-  # maint
-
 !gdollar_3.k  =>
     !gdollar_2 & !maint & rx_done_low & rx_tr_req_low
   # !gdollar_1 & !maint & rx_done_low & rx_tr_req_low
@@ -622,6 +620,14 @@ gdollar_2.ck  =>
   # !gdollar_2 & !maint & !rx_out_low
   # !gdollar_1 & !maint & !rx_out_low
   # !gdollar_0 & !maint & !rx_out_low
+
+!gdollar_3.j  =>
+    !gdollar_2
+  # !gdollar_1
+  # !gdollar_0
+  # rx_out_low & !rx_tr_req_low
+  # !rx_done_low & rx_out_low
+  # maint
 
 gdollar_3.ar  =>
     initialize
@@ -707,6 +713,12 @@ internal_io_low.oe  =>
   # md10_low
   # !io_pause_low & !md03_low & !md04_low & !md05_low & !md11_low & !n_t_1x & 
       !n_t_5x & !n_t_6x
+
+!jj =>
+    1 
+
+!l =>
+    1 
 
 lcd_iot =>
     !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & 
@@ -1821,18 +1833,21 @@ n_t_85x =>
     md06_low
   # io_pause_low
 
+!nn =>
+    1 
+
 !parity =>
     !gdollar_3
   # !gdollar_2
   # !gdollar_1
   # !gdollar_0
 
-!parity_low.j  =>
+!parity_low.k  =>
     !msb12 & !n8_12 & !parity
   # !msb8 & n8_12 & !parity
   # parity & !parity_low
 
-!parity_low.k  =>
+!parity_low.j  =>
     !msb12 & !n8_12 & !parity
   # !msb8 & n8_12 & !parity
   # parity & !parity_low
@@ -2001,6 +2016,12 @@ tp3_low =>
     !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & 
       !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & n_t_72x
 
+!tt =>
+    1 
+
+!v =>
+    1 
+
 wrt =>
     rx_out_low
   # maint
@@ -2025,6 +2046,9 @@ xfer_iot =>
 
 xfer_req =>
     !maint & !rx_tr_req_low
+
+!z =>
+    1 
 
 
 ===============================================================================
@@ -2051,10 +2075,8 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     data0_low                   42       V        13      0       4     
     data0_low           oe      42       X        1       0       1     
     data1                       0        I        1       -       -     
-    data10                      0        I        1       -       -     
     data10_low                  2        V        12      0       4     
     data10_low          oe      2        X        1       0       1     
-    data11                      0        I        1       -       -     
     data11_low                  1        V        12      0       4     
     data11_low          oe      1        X        1       0       1     
     data1_low                   39       V        13      0       4     
@@ -2072,31 +2094,35 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     data5_low                   30       V        12      0       4     
     data5_low           oe      30       X        1       0       1     
     data6                       0        I        1       -       -     
+    data7                       0        I        1       -       -     
+    data8                       0        I        1       -       -     
+    data10                      0        I        1       -       -     
+    data11                      0        I        1       -       -     
     data6_low                   29       V        12      0       4     
     data6_low           oe      29       X        1       0       1     
-    data7                       0        I        1       -       -     
     data7_low                   26       V        12      0       4     
     data7_low           oe      26       X        1       0       1     
-    data8                       0        I        1       -       -     
     data8_low                   4        V        12      0       4     
     data8_low           oe      4        X        1       0       1     
     data9                       0        I        1       -       -     
     data9_low                   3        V        12      0       4     
     data9_low           oe      3        X        1       0       1     
+    dd                          82       V        1       0       4     
     done                        0        I        1       -       -     
     done_low                    0        I        2       -       -     
     done_skip_low               59       V        1       0       4     
     enb_buf_ld_low              0        I        2       -       -     
     err_skip_low                0        I        11      -       -     
     error                       0        I        1       -       -     
+    f                           71       V        1       0       4     
     gdollar_0                   0        N        -       -       -     
-    gdollar_0           k       0        M        3       0       4     
     gdollar_0           j       0        M        1       0       4     
+    gdollar_0           k       0        M        3       0       4     
     gdollar_0           ar      0        M        2       0       1     
     gdollar_0           ck      0        M        24      0       1     
     gdollar_1                   0        N        -       -       -     
-    gdollar_1           k       0        M        4       0       4     
     gdollar_1           j       0        M        2       0       4     
+    gdollar_1           k       0        M        4       0       4     
     gdollar_1           ar      0        M        2       0       1     
     gdollar_1           ck      0        M        24      0       1     
     gdollar_2                   0        N        -       -       -     
@@ -2105,8 +2131,8 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     gdollar_2           ar      0        M        2       0       1     
     gdollar_2           ck      0        M        24      0       1     
     gdollar_3                   0        N        -       -       -     
-    gdollar_3           j       0        M        6       0       4     
     gdollar_3           k       0        M        6       0       4     
+    gdollar_3           j       0        M        6       0       4     
     gdollar_3           ar      0        M        2       0       1     
     gdollar_3           ck      0        M        24      0       1     
     init                        0        I        2       -       -     
@@ -2119,6 +2145,8 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     internal_io_low     oe      18       X        1       0       1     
     intr_iot_low                0        I        10      -       -     
     io_pause_low                24       V        -       -       -     
+    jj                          95       V        1       0       4     
+    l                           73       V        1       0       4     
     lcd_iot                     0        I        1       -       -     
     lcd_iot_low                 0        I        10      -       -     
     maint                       0        N        -       -       -     
@@ -2280,10 +2308,11 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_85x                     0        I        2       -       -     
     n_t_8x                      86       V        2       0       4     
     n_t_9x                      94       V        2       0       4     
+    nn                          98       V        1       0       4     
     parity                      58       V        4       0       4     
     parity_low                  0        N        -       -       -     
-    parity_low          j       0        M        3       0       4     
     parity_low          k       0        M        3       0       4     
+    parity_low          j       0        M        3       0       4     
     parity_low          ap      0        M        3       0       1     
     parity_low          ar      0        M        1       0       1     
     parity_low          ck      0        M        24      0       1     
@@ -2318,10 +2347,13 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     tp3_low                     0        I        1       -       -     
     tp4                         19       V        -       -       -     
     tr_skip_low                 60       V        1       0       4     
+    tt                          100      V        1       0       4     
+    v                           78       V        1       0       4     
     wrt                         0        I        2       -       -     
     xfer_iot                    0        I        1       -       -     
     xfer_iot_low                0        I        10      -       -     
     xfer_req                    0        I        1       -       -     
+    z                           80       V        1       0       4     
 
 
 LEGEND    D : default variable         F : field      G : group

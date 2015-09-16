@@ -1,7 +1,7 @@
-Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Mon Sep 07 17:50:20 2015
+Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Wed Sep 16 12:22:31 2015
 
 
-fit1508 C:\CYGWIN\HOME\VINCE\TTL2PLD\M8357\RX8E.tt2 -CUPL -dev P1508Q100 -JTAG ON
+fit1508 C:\USERS\VINCE\DOCUMENTS\WEBSVN\TRUNK\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E.tt2 -CUPL -dev P1508Q100 -JTAG ON
 
 
 ****** Initial fitting strategy and property ******
@@ -55,6 +55,10 @@ fit1508 C:\CYGWIN\HOME\VINCE\TTL2PLD\M8357\RX8E.tt2 -CUPL -dev P1508Q100 -JTAG O
 ---------------------------------------------------------
  Fitter_Pass 2, Preassign = KEEP, CASCADE_LOGIC : (TRY) 
  ... 
+ ## Warning : Placement fail 
+---------------------------------------------------------
+ Fitter_Pass 3, Preassign = KEEP, CASCADE_LOGIC : (OFF) 
+ ... 
 
 Performing global Output Enable pin assignments ...
 
@@ -73,112 +77,146 @@ Performing input pin pre-assignments ...
 n_t_1x assigned to pin  92
 n_t_6x assigned to pin  89
 n_t_5x assigned to pin  91
-n_t_59x.AR equation needs patching.
-run.AR equation needs patching.
-run.C equation needs patching.
 parity_low.C equation needs patching.
+run.AR equation needs patching.
+n_t_59x.AR equation needs patching.
+run.C equation needs patching.
 4 control equtions need patching
 
 Attempt to place floating signals ...
 ------------------------------------
 data8_low is placed at pin 4 (MC 1)
-n_t_76x is placed at feedback node 602 (MC 2)
+Com_Ctrl_291 is placed at feedback node 602 (MC 2)
 data9_low is placed at pin 3 (MC 3)
-XXL_292 is placed at feedback node 604 (MC 4)
+parity_low.C is placed at feedback node 604 (MC 4)
 data10_low is placed at pin 2 (MC 5)
 data11_low is placed at pin 1 (MC 6)
-n_t_31x is placed at feedback node 608 (MC 8)
+maint is placed at feedback node 607 (MC 7)
+tt is placed at pin 100 (MC 8)
 rx_out_low is placed at pin 99 (MC 9)
-n_t_67x is placed at feedback node 610 (MC 10)
-n_t_66x is placed at feedback node 612 (MC 12)
+n_t_76x is placed at feedback node 609 (MC 9)
+Com_Ctrl_290 is placed at feedback node 610 (MC 10)
+nn is placed at pin 98 (MC 11)
+XXL_300 is placed at feedback node 612 (MC 12)
 rx_shift_low is placed at pin 96 (MC 13)
-XXL_286 is placed at feedback node 613 (MC 13)
-n_t_65x is placed at feedback node 615 (MC 15)
+XXL_301 is placed at feedback node 613 (MC 13)
+jj is placed at pin 95 (MC 14)
+XXL_294 is placed at feedback node 615 (MC 15)
 n_t_9x is placed at pin 94 (MC 16)
-Com_Ctrl_284 is placed at foldback expander node 316 (MC 16)
+Com_Ctrl_292 is placed at foldback expander node 316 (MC 16)
 int_rqst_low is placed at pin 14 (MC 21)
 initialize is placed at pin 12 (MC 22)
-maint is placed at feedback node 622 (MC 22)
-n_t_59x.AR is placed at feedback node 623 (MC 23)
 skip_low is placed at pin 11 (MC 24)
 md08_low is placed at pin 10 (MC 25)
 run.AR is placed at feedback node 625 (MC 25)
-run.C is placed at feedback node 626 (MC 26)
+n_t_59x.AR is placed at feedback node 626 (MC 26)
 md09_low is placed at pin 9 (MC 27)
-parity_low.C is placed at feedback node 627 (MC 27)
+run.C is placed at feedback node 627 (MC 27)
+n_t_45x is placed at feedback node 628 (MC 28)
 md10_low is placed at pin 8 (MC 29)
 n_t_68x is placed at feedback node 629 (MC 29)
-Com_Ctrl_284 is placed at foldback expander node 329 (MC 29)
 md11_low is placed at pin 7 (MC 30)
-XXL_293 is placed at feedback node 630 (MC 30)
+n_t_61x is placed at feedback node 630 (MC 30)
+msb8 is placed at feedback node 631 (MC 31)
+Com_Ctrl_292 is placed at foldback expander node 331 (MC 31)
 TDI is placed at pin 6 (MC 32)
-msb8 is placed at feedback node 632 (MC 32)
+gdollar_2 is placed at feedback node 632 (MC 32)
+XXL_297 is placed at feedback node 634 (MC 34)
 data7_low is placed at pin 26 (MC 35)
+XXL_317 is placed at feedback node 636 (MC 36)
 io_pause_low is placed at pin 24 (MC 38)
-n_t_64x is placed at feedback node 639 (MC 39)
+XXL_319 is placed at feedback node 638 (MC 38)
+gdollar_0 is placed at feedback node 639 (MC 39)
 c0_low is placed at pin 23 (MC 40)
 c1_low is placed at pin 22 (MC 41)
+gdollar_3 is placed at feedback node 642 (MC 42)
 tp3 is placed at pin 21 (MC 43)
-n_t_63x is placed at feedback node 644 (MC 44)
+XXL_298 is placed at feedback node 643 (MC 43)
+XXL_316 is placed at feedback node 644 (MC 44)
 tp4 is placed at pin 19 (MC 45)
-XXL_287 is placed at feedback node 645 (MC 45)
+XXL_318 is placed at feedback node 645 (MC 45)
 internal_io_low is placed at pin 18 (MC 46)
-Com_Ctrl_284 is placed at foldback expander node 346 (MC 46)
+Com_Ctrl_292 is placed at foldback expander node 346 (MC 46)
+XXL_295 is placed at feedback node 647 (MC 47)
 TMS is placed at pin 17 (MC 48)
-n_t_62x is placed at feedback node 648 (MC 48)
+XXL_296 is placed at feedback node 648 (MC 48)
 data1_low is placed at pin 39 (MC 49)
+XXL_315 is placed at feedback node 650 (MC 50)
 data2_low is placed at pin 38 (MC 51)
+XXL_313 is placed at feedback node 652 (MC 52)
 data3_low is placed at pin 37 (MC 53)
 md04_low is placed at pin 35 (MC 54)
+XXL_311 is placed at feedback node 654 (MC 54)
+XXL_303 is placed at feedback node 655 (MC 55)
 md05_low is placed at pin 34 (MC 56)
+XXL_307 is placed at feedback node 656 (MC 56)
 md06_low is placed at pin 33 (MC 57)
+XXL_314 is placed at feedback node 657 (MC 57)
+XXL_310 is placed at feedback node 658 (MC 58)
 md07_low is placed at pin 32 (MC 59)
-XXL_289 is placed at feedback node 659 (MC 59)
-XXL_288 is placed at feedback node 660 (MC 60)
+XXL_306 is placed at feedback node 659 (MC 59)
+XXL_302 is placed at feedback node 660 (MC 60)
 data4_low is placed at pin 31 (MC 61)
 data5_low is placed at pin 30 (MC 62)
-XXL_290 is placed at feedback node 663 (MC 63)
+XXL_312 is placed at feedback node 663 (MC 63)
 data6_low is placed at pin 29 (MC 64)
 data0_low is placed at pin 42 (MC 65)
+XXL_305 is placed at feedback node 666 (MC 66)
+n_t_33x is placed at feedback node 668 (MC 68)
 md03_low is placed at pin 44 (MC 69)
-Com_Ctrl_283 is placed at feedback node 669 (MC 69)
-Com_Ctrl_282 is placed at feedback node 671 (MC 71)
-Com_Ctrl_284 is placed at foldback expander node 372 (MC 72)
-msb12 is placed at feedback node 674 (MC 74)
-n_t_33x is placed at feedback node 676 (MC 76)
-n_t_60x is placed at feedback node 678 (MC 78)
-n_t_2x is placed at feedback node 680 (MC 80)
-n_t_69x is placed at feedback node 682 (MC 82)
-n_t_45x is placed at feedback node 684 (MC 84)
-n_t_59x is placed at feedback node 687 (MC 87)
+msb12 is placed at feedback node 669 (MC 69)
+n_t_2x is placed at feedback node 671 (MC 71)
+XXL_320 is placed at feedback node 674 (MC 74)
+XXL_308 is placed at feedback node 676 (MC 76)
+XXL_321 is placed at feedback node 678 (MC 78)
+XXL_304 is placed at feedback node 679 (MC 79)
+XXL_309 is placed at feedback node 680 (MC 80)
+Com_Ctrl_292 is placed at foldback expander node 380 (MC 80)
+XXL_325 is placed at feedback node 682 (MC 82)
+XXL_327 is placed at feedback node 684 (MC 84)
+n_t_63x is placed at feedback node 687 (MC 87)
 parity is placed at pin 58 (MC 88)
 done_skip_low is placed at pin 59 (MC 89)
-gdollar_0 is placed at feedback node 690 (MC 90)
+n_t_60x is placed at feedback node 690 (MC 90)
 tr_skip_low is placed at pin 60 (MC 91)
-gdollar_2 is placed at feedback node 692 (MC 92)
-Com_Ctrl_284 is placed at foldback expander node 394 (MC 94)
+n_t_31x is placed at feedback node 692 (MC 92)
+Com_Ctrl_292 is placed at foldback expander node 394 (MC 94)
+XXL_326 is placed at feedback node 695 (MC 95)
 TCK is placed at pin 64 (MC 96)
-gdollar_3 is placed at feedback node 696 (MC 96)
-run is placed at feedback node 703 (MC 103)
+XXL_324 is placed at feedback node 696 (MC 96)
+gdollar_1 is placed at feedback node 697 (MC 97)
+parity_low is placed at feedback node 698 (MC 98)
+n_t_72x is placed at feedback node 699 (MC 99)
+n_t_59x is placed at feedback node 700 (MC 100)
+n_t_69x is placed at feedback node 701 (MC 101)
+n_t_70x is placed at feedback node 702 (MC 102)
+XXL_299 is placed at feedback node 703 (MC 103)
 rx_run_low is placed at pin 70 (MC 104)
-gdollar_1 is placed at feedback node 706 (MC 106)
+f is placed at pin 71 (MC 105)
+n_t_67x is placed at feedback node 706 (MC 106)
 rx_error_low is placed at pin 72 (MC 107)
-n_t_72x is placed at feedback node 707 (MC 107)
-parity_low is placed at feedback node 708 (MC 108)
+n_t_66x is placed at feedback node 707 (MC 107)
+n_t_65x is placed at feedback node 708 (MC 108)
+l is placed at pin 73 (MC 109)
 rx_init_low is placed at pin 74 (MC 110)
-n_t_70x is placed at feedback node 711 (MC 111)
-FB_285 is placed at foldback expander node 411 (MC 111)
+n_t_64x is placed at feedback node 711 (MC 111)
+FB_293 is placed at foldback expander node 411 (MC 111)
 TDO is placed at pin 75 (MC 112)
-XXL_291 is placed at feedback node 712 (MC 112)
-Com_Ctrl_284 is placed at foldback expander node 412 (MC 112)
+n_t_62x is placed at feedback node 712 (MC 112)
+Com_Ctrl_292 is placed at foldback expander node 412 (MC 112)
 rx_tr_req_low is placed at pin 77 (MC 113)
+v is placed at pin 78 (MC 115)
 rx_done_low is placed at pin 79 (MC 117)
+z is placed at pin 80 (MC 118)
 rx_data_low is placed at pin 81 (MC 120)
+dd is placed at pin 82 (MC 121)
+run is placed at feedback node 722 (MC 122)
 rx_12_bit_low is placed at pin 83 (MC 123)
+XXL_323 is placed at feedback node 724 (MC 124)
 n_t_7x is placed at pin 85 (MC 125)
 n_t_8x is placed at pin 86 (MC 126)
-n_t_61x is placed at feedback node 727 (MC 127)
-Com_Ctrl_284 is placed at foldback expander node 428 (MC 128)
+XXL_322 is placed at feedback node 727 (MC 127)
+Com_Ctrl_292 is placed at foldback expander node 428 (MC 128)
 
                                                                                     
                                  r                                                  
@@ -191,21 +229,21 @@ Com_Ctrl_284 is placed at foldback expander node 428 (MC 128)
                            t     t   _   _ _   _     _ _       a                    
                            _     _   t   t t   t     t t       _                    
                            l   G l   _ V _ _   _ G   _ _ V     l                    
-                           o   N o   9 C 1 5   6 N   8 7 C     o                    
-                           w   D w   x C x x   x D   x x C     w                    
+                         t o n N o j 9 C 1 5   6 N   8 7 C   d o                    
+                         t w n D w j x C x x   x D   x x C   d w                    
                        --------------------------------------------                 
                       / 100  98  96  94  92  90  88  86  84  82    \               
                      /     99  97  95  93  91  89  87  85  83  81   \              
-         data11_low |  1 (*)                                      80 |              
+         data11_low |  1 (*)                                      80 | z            
          data10_low |  2                                          79 | rx_done_low  
-          data9_low |  3                                          78 |              
+          data9_low |  3                                          78 | v            
           data8_low |  4                                          77 | rx_tr_req_low
                 VCC |  5                                          76 | GND          
                 TDI |  6                                          75 | TDO          
            md11_low |  7                                          74 | rx_init_low  
-           md10_low |  8                                          73 |              
+           md10_low |  8                                          73 | l            
            md09_low |  9                                          72 | rx_error_low 
-           md08_low | 10                                          71 |              
+           md08_low | 10                                          71 | f            
            skip_low | 11                                          70 | rx_run_low   
          initialize | 12                                          69 |              
                 GND | 13                                          68 | VCC          
@@ -251,515 +289,474 @@ NC = Unused I/O pins which must be unconnected on the board
 
 Universal-Interconnect-Multiplexer assignments
 ------------------------------------------------
-FanIn assignment for block A [29]
+FanIn assignment for block A [31]
 {
-Com_Ctrl_282,
-data8_low,data10_low,data11_low,data9_low,
-io_pause_low,initialize,
-md09_low,md11_low,md06_low,md04_low,maint,md03_low,md05_low,md10_low,
-n_t_66x,n_t_5x,n_t_45x,n_t_6x,n_t_1x,n_t_31x,n_t_65x,n_t_67x,
-rx_out_low,rx_done_low,rx_data_low,rx_tr_req_low,rx_shift_low,
+XXL_294,XXL_301,XXL_300,
+data8_low,data11_low,data10_low,data9_low,data4_low,
+initialize,io_pause_low,
+md11_low,md06_low,maint,md05_low,md03_low,md09_low,md04_low,md10_low,
+n_t_5x,n_t_1x,n_t_45x,n_t_65x,n_t_67x,n_t_66x,n_t_31x,n_t_6x,
+rx_done_low,rx_tr_req_low,rx_shift_low,rx_out_low,
 tp3,
 }
 Multiplexer assignment for block A
-rx_out_low		(MC13	P)   : MUX 0		Ref (A9p)
+md11_low		(MC20	P)   : MUX 0		Ref (B30p)
 data8_low		(MC1	P)   : MUX 1		Ref (A1p)
-md09_low		(MC16	P)   : MUX 2		Ref (B27p)
-rx_done_low		(MC26	P)   : MUX 3		Ref (H117p)
-md11_low		(MC18	P)   : MUX 4		Ref (B30p)
-n_t_66x			(MC7	FB)  : MUX 5		Ref (A12fb)
-md06_low		(MC23	P)   : MUX 6		Ref (D57p)
-md04_low		(MC21	P)   : MUX 7		Ref (D54p)
-maint			(MC9	FB)  : MUX 8		Ref (B22fb)
-rx_data_low		(MC12	P)   : MUX 9		Ref (H120p)
-md03_low		(MC24	P)   : MUX 11		Ref (E69p)
+rx_done_low		(MC28	P)   : MUX 3		Ref (H117p)
+XXL_294			(MC8	FB)  : MUX 5		Ref (A15fb)
+md06_low		(MC25	P)   : MUX 6		Ref (D57p)
+initialize		(MC17	P)   : MUX 7		Ref (B22p)
+maint			(MC5	FB)  : MUX 8		Ref (A7fb)
+data11_low		(MC4	P)   : MUX 9		Ref (A6p)
+rx_tr_req_low		(MC27	P)   : MUX 11		Ref (H113p)
 data10_low		(MC3	P)   : MUX 13		Ref (A5p)
-n_t_5x			(MC29	FB)  : MUX 14		Ref (GCLR)
-data11_low		(MC4	P)   : MUX 15		Ref (A6p)
-n_t_45x			(MC11	FB)  : MUX 16		Ref (F84fb)
-n_t_6x			(MC28	FB)  : MUX 17		Ref (GCLK)
-tp3			(MC20	P)   : MUX 18		Ref (C43p)
-rx_tr_req_low		(MC25	P)   : MUX 19		Ref (H113p)
-rx_shift_low		(MC14	P)   : MUX 20		Ref (A13p)
-md05_low		(MC22	P)   : MUX 21		Ref (D56p)
-n_t_1x			(MC27	FB)  : MUX 22		Ref (OE2)
-io_pause_low		(MC19	P)   : MUX 25		Ref (C38p)
-initialize		(MC15	P)   : MUX 27		Ref (B22p)
-n_t_31x			(MC5	FB)  : MUX 30		Ref (A8fb)
-data9_low		(MC2	P)   : MUX 31		Ref (A3p)
-md10_low		(MC17	P)   : MUX 32		Ref (B29p)
-n_t_65x			(MC8	FB)  : MUX 37		Ref (A15fb)
-Com_Ctrl_282		(MC10	FB)  : MUX 38		Ref (E71fb)
-n_t_67x			(MC6	FB)  : MUX 39		Ref (A10fb)
+n_t_5x			(MC31	FB)  : MUX 14		Ref (GCLR)
+XXL_301			(MC7	FB)  : MUX 15		Ref (A13fb)
+data9_low		(MC2	P)   : MUX 17		Ref (A3p)
+XXL_300			(MC6	FB)  : MUX 19		Ref (A12fb)
+rx_shift_low		(MC16	P)   : MUX 20		Ref (A13p)
+md05_low		(MC24	P)   : MUX 21		Ref (D56p)
+n_t_1x			(MC29	FB)  : MUX 22		Ref (OE2)
+md03_low		(MC26	P)   : MUX 23		Ref (E69p)
+md09_low		(MC18	P)   : MUX 24		Ref (B27p)
+io_pause_low		(MC21	P)   : MUX 25		Ref (C38p)
+rx_out_low		(MC15	P)   : MUX 26		Ref (A9p)
+n_t_45x			(MC9	FB)  : MUX 27		Ref (B28fb)
+tp3			(MC22	P)   : MUX 28		Ref (C43p)
+md04_low		(MC23	P)   : MUX 29		Ref (D54p)
+n_t_65x			(MC14	FB)  : MUX 31		Ref (G108fb)
+md10_low		(MC19	P)   : MUX 32		Ref (B29p)
+n_t_67x			(MC12	FB)  : MUX 33		Ref (G106fb)
+n_t_66x			(MC13	FB)  : MUX 35		Ref (G107fb)
+data4_low		(MC10	P)   : MUX 36		Ref (D61p)
+n_t_31x			(MC11	FB)  : MUX 37		Ref (F92fb)
+n_t_6x			(MC30	FB)  : MUX 39		Ref (GCLK)
 
-FanIn assignment for block B [30]
+FanIn assignment for block B [32]
 {
-Com_Ctrl_282,
-XXL_286,
-done_skip_low,data4_low,
-int_rqst_low,io_pause_low,initialize,
-md09_low,md11_low,md03_low,md10_low,md05_low,maint,md04_low,msb8,
-n_t_6x,n_t_70x,n_t_45x,n_t_1x,n_t_5x,n_t_76x,n_t_69x,n_t_62x,
-rx_done_low,rx_tr_req_low,rx_shift_low,rx_out_low,
+Com_Ctrl_291,Com_Ctrl_290,
+XXL_302,XXL_295,XXL_296,XXL_303,XXL_297,
+done_skip_low,
+initialize,int_rqst_low,io_pause_low,
+md11_low,md05_low,maint,md10_low,md09_low,md03_low,md04_low,
+n_t_6x,n_t_1x,n_t_76x,n_t_70x,n_t_5x,n_t_69x,n_t_45x,
+rx_error_low,rx_tr_req_low,rx_done_low,
 skip_low,
-tr_skip_low,tp3,
+tp4,tr_skip_low,tp3,
 }
 Multiplexer assignment for block B
-md09_low		(MC18	P)   : MUX 0		Ref (B27p)
-done_skip_low		(MC12	P)   : MUX 2		Ref (F89p)
-rx_done_low		(MC27	P)   : MUX 3		Ref (H117p)
-md11_low		(MC20	P)   : MUX 4		Ref (B30p)
-n_t_6x			(MC29	FB)  : MUX 5		Ref (GCLK)
-tr_skip_low		(MC13	P)   : MUX 6		Ref (F91p)
-n_t_70x			(MC14	FB)  : MUX 7		Ref (G111fb)
-data4_low		(MC8	P)   : MUX 8		Ref (D61p)
-md03_low		(MC25	P)   : MUX 9		Ref (E69p)
-tp3			(MC22	P)   : MUX 10		Ref (C43p)
-int_rqst_low		(MC3	P)   : MUX 11		Ref (B21p)
-XXL_286			(MC2	FB)  : MUX 13		Ref (A13fb)
+md11_low		(MC20	P)   : MUX 0		Ref (B30p)
+md05_low		(MC25	P)   : MUX 1		Ref (D56p)
+done_skip_low		(MC13	P)   : MUX 2		Ref (F89p)
+skip_low		(MC6	P)   : MUX 3		Ref (B24p)
+tp4			(MC23	P)   : MUX 4		Ref (C45p)
+n_t_6x			(MC31	FB)  : MUX 5		Ref (GCLK)
+tr_skip_low		(MC14	P)   : MUX 6		Ref (F91p)
+initialize		(MC17	P)   : MUX 7		Ref (B22p)
+maint			(MC2	FB)  : MUX 8		Ref (A7fb)
+XXL_302			(MC12	FB)  : MUX 9		Ref (D60fb)
+Com_Ctrl_291		(MC1	FB)  : MUX 10		Ref (A2fb)
+int_rqst_low		(MC5	P)   : MUX 11		Ref (B21p)
+rx_error_low		(MC27	P)   : MUX 12		Ref (G107p)
 md10_low		(MC19	P)   : MUX 14		Ref (B29p)
-md05_low		(MC24	P)   : MUX 15		Ref (D56p)
-n_t_45x			(MC11	FB)  : MUX 16		Ref (F84fb)
-io_pause_low		(MC21	P)   : MUX 17		Ref (C38p)
-rx_tr_req_low		(MC26	P)   : MUX 19		Ref (H113p)
-rx_shift_low		(MC16	P)   : MUX 20		Ref (A13p)
-n_t_1x			(MC28	FB)  : MUX 22		Ref (OE2)
-n_t_5x			(MC30	FB)  : MUX 24		Ref (GCLR)
-skip_low		(MC5	P)   : MUX 25		Ref (B24p)
-rx_out_low		(MC15	P)   : MUX 26		Ref (A9p)
-initialize		(MC17	P)   : MUX 27		Ref (B22p)
-maint			(MC4	FB)  : MUX 30		Ref (B22fb)
-md04_low		(MC23	P)   : MUX 33		Ref (D54p)
-n_t_76x			(MC1	FB)  : MUX 34		Ref (A2fb)
-n_t_69x			(MC10	FB)  : MUX 36		Ref (F82fb)
-msb8			(MC6	FB)  : MUX 37		Ref (B32fb)
-Com_Ctrl_282		(MC9	FB)  : MUX 38		Ref (E71fb)
-n_t_62x			(MC7	FB)  : MUX 39		Ref (C48fb)
+XXL_295			(MC9	FB)  : MUX 15		Ref (C47fb)
+n_t_1x			(MC30	FB)  : MUX 16		Ref (OE2)
+n_t_76x			(MC3	FB)  : MUX 17		Ref (A9fb)
+tp3			(MC22	P)   : MUX 18		Ref (C43p)
+rx_tr_req_low		(MC28	P)   : MUX 19		Ref (H113p)
+md09_low		(MC18	P)   : MUX 20		Ref (B27p)
+XXL_296			(MC10	FB)  : MUX 21		Ref (C48fb)
+n_t_70x			(MC16	FB)  : MUX 22		Ref (G102fb)
+md03_low		(MC26	P)   : MUX 23		Ref (E69p)
+n_t_5x			(MC32	FB)  : MUX 24		Ref (GCLR)
+n_t_69x			(MC15	FB)  : MUX 30		Ref (G101fb)
+rx_done_low		(MC29	P)   : MUX 31		Ref (H117p)
+XXL_303			(MC11	FB)  : MUX 32		Ref (D55fb)
+md04_low		(MC24	P)   : MUX 33		Ref (D54p)
+io_pause_low		(MC21	P)   : MUX 35		Ref (C38p)
+XXL_297			(MC8	FB)  : MUX 36		Ref (C34fb)
+n_t_45x			(MC7	FB)  : MUX 37		Ref (B28fb)
+Com_Ctrl_290		(MC4	FB)  : MUX 39		Ref (A10fb)
 
-FanIn assignment for block C [30]
+FanIn assignment for block C [32]
 {
-Com_Ctrl_282,
+Com_Ctrl_291,
+XXL_326,XXL_327,
 c1_low,c0_low,
 data7_low,data5_low,data6_low,
-gdollar_1,gdollar_2,
+gdollar_1,gdollar_0,gdollar_2,
 internal_io_low,io_pause_low,initialize,
-md09_low,md05_low,md11_low,md04_low,md10_low,md03_low,maint,
-n_t_31x,n_t_6x,n_t_45x,n_t_62x,n_t_1x,n_t_5x,n_t_64x,n_t_63x,
+md09_low,md11_low,md04_low,md10_low,md05_low,maint,md03_low,
+n_t_64x,n_t_63x,n_t_45x,n_t_31x,n_t_1x,n_t_5x,n_t_6x,
 rx_tr_req_low,rx_out_low,rx_done_low,rx_12_bit_low,
 }
 Multiplexer assignment for block C
-md09_low		(MC19	P)   : MUX 0		Ref (B27p)
-md05_low		(MC24	P)   : MUX 1		Ref (D56p)
-c1_low			(MC6	P)   : MUX 2		Ref (C41p)
-c0_low			(MC5	P)   : MUX 3		Ref (C40p)
-md11_low		(MC21	P)   : MUX 4		Ref (B30p)
-rx_tr_req_low		(MC26	P)   : MUX 5		Ref (H113p)
-n_t_31x			(MC1	FB)  : MUX 6		Ref (A8fb)
-rx_out_low		(MC17	P)   : MUX 8		Ref (A9p)
-data7_low		(MC3	P)   : MUX 9		Ref (C35p)
+md09_low		(MC21	P)   : MUX 0		Ref (B27p)
+c1_low			(MC8	P)   : MUX 2		Ref (C41p)
+c0_low			(MC7	P)   : MUX 3		Ref (C40p)
+md11_low		(MC23	P)   : MUX 4		Ref (B30p)
+XXL_326			(MC15	FB)  : MUX 5		Ref (F95fb)
+gdollar_1		(MC16	FB)  : MUX 6		Ref (G97fb)
+n_t_64x			(MC17	FB)  : MUX 7		Ref (G111fb)
+n_t_63x			(MC13	FB)  : MUX 8		Ref (F87fb)
+data7_low		(MC5	P)   : MUX 9		Ref (C35p)
 data5_low		(MC10	P)   : MUX 10		Ref (D62p)
-md04_low		(MC23	P)   : MUX 11		Ref (D54p)
-data6_low		(MC11	P)   : MUX 12		Ref (D64p)
-gdollar_1		(MC15	FB)  : MUX 15		Ref (G106fb)
-md10_low		(MC20	P)   : MUX 16		Ref (B29p)
-n_t_6x			(MC29	FB)  : MUX 17		Ref (GCLK)
-n_t_45x			(MC13	FB)  : MUX 18		Ref (F84fb)
-internal_io_low		(MC8	P)   : MUX 20		Ref (C46p)
-n_t_62x			(MC9	FB)  : MUX 21		Ref (C48fb)
-n_t_1x			(MC28	FB)  : MUX 22		Ref (OE2)
-md03_low		(MC25	P)   : MUX 23		Ref (E69p)
-n_t_5x			(MC30	FB)  : MUX 24		Ref (GCLR)
-io_pause_low		(MC22	P)   : MUX 25		Ref (C38p)
-initialize		(MC18	P)   : MUX 29		Ref (B22p)
-maint			(MC2	FB)  : MUX 30		Ref (B22fb)
-rx_done_low		(MC27	P)   : MUX 31		Ref (H117p)
-rx_12_bit_low		(MC16	FB)  : MUX 35		Ref (H123fb)
-n_t_64x			(MC4	FB)  : MUX 36		Ref (C39fb)
-gdollar_2		(MC14	FB)  : MUX 37		Ref (F92fb)
-Com_Ctrl_282		(MC12	FB)  : MUX 38		Ref (E71fb)
-n_t_63x			(MC7	FB)  : MUX 39		Ref (C44fb)
+md04_low		(MC25	P)   : MUX 11		Ref (D54p)
+internal_io_low		(MC9	P)   : MUX 12		Ref (C46p)
+n_t_45x			(MC3	FB)  : MUX 13		Ref (B28fb)
+md10_low		(MC22	P)   : MUX 14		Ref (B29p)
+md05_low		(MC26	P)   : MUX 15		Ref (D56p)
+XXL_327			(MC12	FB)  : MUX 16		Ref (F84fb)
+n_t_31x			(MC14	FB)  : MUX 17		Ref (F92fb)
+rx_tr_req_low		(MC28	P)   : MUX 19		Ref (H113p)
+maint			(MC2	FB)  : MUX 20		Ref (A7fb)
+n_t_1x			(MC30	FB)  : MUX 22		Ref (OE2)
+md03_low		(MC27	P)   : MUX 23		Ref (E69p)
+n_t_5x			(MC32	FB)  : MUX 24		Ref (GCLR)
+io_pause_low		(MC24	P)   : MUX 25		Ref (C38p)
+rx_out_low		(MC19	P)   : MUX 26		Ref (A9p)
+initialize		(MC20	P)   : MUX 27		Ref (B22p)
+data6_low		(MC11	P)   : MUX 30		Ref (D64p)
+rx_done_low		(MC29	P)   : MUX 31		Ref (H117p)
+rx_12_bit_low		(MC18	FB)  : MUX 33		Ref (H123fb)
+gdollar_0		(MC6	FB)  : MUX 36		Ref (C39fb)
+gdollar_2		(MC4	FB)  : MUX 37		Ref (B32fb)
+Com_Ctrl_291		(MC1	FB)  : MUX 38		Ref (A2fb)
+n_t_6x			(MC31	FB)  : MUX 39		Ref (GCLK)
 
-FanIn assignment for block D [30]
+FanIn assignment for block D [27]
 {
-data3_low,data1_low,data6_low,data5_low,data2_low,data4_low,
-gdollar_1,gdollar_0,gdollar_2,
+data3_low,data1_low,data6_low,data4_low,data2_low,data5_low,
 io_pause_low,
-md11_low,md04_low,md03_low,md09_low,md05_low,msb8,maint,md10_low,
-n_t_5x,n_t_60x,n_t_1x,n_t_63x,n_t_2x,n_t_33x,n_t_62x,n_t_6x,
-rx_out_low,rx_tr_req_low,rx_done_low,rx_12_bit_low,
+maint,md05_low,md11_low,md03_low,md10_low,md09_low,md04_low,msb8,
+n_t_33x,n_t_60x,n_t_2x,n_t_63x,n_t_6x,n_t_5x,n_t_62x,n_t_1x,
+rx_tr_req_low,rx_done_low,rx_out_low,rx_12_bit_low,
 }
 Multiplexer assignment for block D
-md11_low		(MC21	P)   : MUX 0		Ref (B30p)
-gdollar_1		(MC16	FB)  : MUX 1		Ref (G106fb)
-data3_low		(MC7	P)   : MUX 3		Ref (D53p)
-data1_low		(MC5	P)   : MUX 5		Ref (D49p)
-data6_low		(MC10	P)   : MUX 6		Ref (D64p)
-md04_low		(MC23	P)   : MUX 7		Ref (D54p)
-rx_out_low		(MC18	P)   : MUX 8		Ref (A9p)
-md03_low		(MC25	P)   : MUX 9		Ref (E69p)
-data5_low		(MC9	P)   : MUX 10		Ref (D62p)
-rx_tr_req_low		(MC26	P)   : MUX 11		Ref (H113p)
-data2_low		(MC6	P)   : MUX 13		Ref (D51p)
-n_t_5x			(MC30	FB)  : MUX 14		Ref (GCLR)
-n_t_60x			(MC12	FB)  : MUX 15		Ref (E78fb)
-n_t_1x			(MC28	FB)  : MUX 16		Ref (OE2)
-io_pause_low		(MC22	P)   : MUX 17		Ref (C38p)
-n_t_63x			(MC3	FB)  : MUX 19		Ref (C44fb)
-md09_low		(MC19	P)   : MUX 20		Ref (B27p)
-md05_low		(MC24	P)   : MUX 21		Ref (D56p)
-n_t_2x			(MC13	FB)  : MUX 23		Ref (E80fb)
-n_t_33x			(MC11	FB)  : MUX 25		Ref (E76fb)
-n_t_62x			(MC4	FB)  : MUX 27		Ref (C48fb)
-msb8			(MC2	FB)  : MUX 29		Ref (B32fb)
-maint			(MC1	FB)  : MUX 30		Ref (B22fb)
-rx_done_low		(MC27	P)   : MUX 31		Ref (H117p)
-md10_low		(MC20	P)   : MUX 32		Ref (B29p)
-gdollar_0		(MC14	FB)  : MUX 33		Ref (F90fb)
-rx_12_bit_low		(MC17	FB)  : MUX 35		Ref (H123fb)
-data4_low		(MC8	P)   : MUX 36		Ref (D61p)
-gdollar_2		(MC15	FB)  : MUX 37		Ref (F92fb)
-n_t_6x			(MC29	FB)  : MUX 39		Ref (GCLK)
+maint			(MC1	FB)  : MUX 0		Ref (A7fb)
+md05_low		(MC21	P)   : MUX 1		Ref (D56p)
+data3_low		(MC5	P)   : MUX 3		Ref (D53p)
+md11_low		(MC18	P)   : MUX 4		Ref (B30p)
+data1_low		(MC3	P)   : MUX 5		Ref (D49p)
+data6_low		(MC8	P)   : MUX 6		Ref (D64p)
+io_pause_low		(MC19	P)   : MUX 7		Ref (C38p)
+data4_low		(MC6	P)   : MUX 8		Ref (D61p)
+data2_low		(MC4	P)   : MUX 9		Ref (D51p)
+n_t_33x			(MC9	FB)  : MUX 10		Ref (E68fb)
+md03_low		(MC22	P)   : MUX 11		Ref (E69p)
+md10_low		(MC17	P)   : MUX 14		Ref (B29p)
+n_t_60x			(MC12	FB)  : MUX 15		Ref (F90fb)
+n_t_2x			(MC10	FB)  : MUX 18		Ref (E71fb)
+rx_tr_req_low		(MC23	P)   : MUX 19		Ref (H113p)
+md09_low		(MC16	P)   : MUX 20		Ref (B27p)
+rx_done_low		(MC24	P)   : MUX 21		Ref (H117p)
+n_t_63x			(MC11	FB)  : MUX 22		Ref (F87fb)
+n_t_6x			(MC26	FB)  : MUX 23		Ref (GCLK)
+n_t_5x			(MC27	FB)  : MUX 24		Ref (GCLR)
+rx_out_low		(MC15	P)   : MUX 26		Ref (A9p)
+data5_low		(MC7	P)   : MUX 28		Ref (D62p)
+md04_low		(MC20	P)   : MUX 29		Ref (D54p)
+n_t_62x			(MC13	FB)  : MUX 33		Ref (G112fb)
+rx_12_bit_low		(MC14	FB)  : MUX 35		Ref (H123fb)
+n_t_1x			(MC25	FB)  : MUX 38		Ref (OE2)
+msb8			(MC2	FB)  : MUX 39		Ref (B31fb)
 
-FanIn assignment for block E [30]
+FanIn assignment for block E [32]
 {
-Com_Ctrl_282,
-XXL_292,XXL_293,
-data3_low,data1_low,data2_low,data0_low,
-io_pause_low,initialize,
-md11_low,md05_low,md04_low,md10_low,msb12,md09_low,maint,md03_low,msb8,
-n_t_45x,n_t_1x,n_t_2x,n_t_33x,n_t_60x,n_t_5x,n_t_6x,
-rx_out_low,rx_tr_req_low,rx_12_bit_low,rx_done_low,
-tp3,
+Com_Ctrl_290,
+XXL_306,XXL_305,XXL_310,XXL_311,XXL_304,XXL_307,
+data8_low,data9_low,data0_low,
+initialize,io_pause_low,
+md09_low,msb12,md05_low,maint,md11_low,md03_low,md04_low,md10_low,
+n_t_45x,n_t_33x,n_t_1x,n_t_67x,n_t_5x,n_t_66x,n_t_31x,n_t_6x,
+rx_tr_req_low,rx_done_low,rx_out_low,rx_12_bit_low,
 }
 Multiplexer assignment for block E
-md11_low		(MC20	P)   : MUX 0		Ref (B30p)
-md05_low		(MC24	P)   : MUX 1		Ref (D56p)
-XXL_292			(MC1	FB)  : MUX 2		Ref (A4fb)
-data3_low		(MC7	P)   : MUX 3		Ref (D53p)
-data1_low		(MC5	P)   : MUX 5		Ref (D49p)
-md04_low		(MC23	P)   : MUX 7		Ref (D54p)
-rx_out_low		(MC16	P)   : MUX 8		Ref (A9p)
-data2_low		(MC6	P)   : MUX 9		Ref (D51p)
-tp3			(MC22	P)   : MUX 10		Ref (C43p)
-rx_tr_req_low		(MC26	P)   : MUX 11		Ref (H113p)
-data0_low		(MC8	P)   : MUX 13		Ref (E65p)
-md10_low		(MC19	P)   : MUX 14		Ref (B29p)
-rx_12_bit_low		(MC15	FB)  : MUX 15		Ref (H123fb)
-n_t_45x			(MC14	FB)  : MUX 16		Ref (F84fb)
-msb12			(MC10	FB)  : MUX 17		Ref (E74fb)
-XXL_293			(MC3	FB)  : MUX 19		Ref (B30fb)
-rx_done_low		(MC27	P)   : MUX 21		Ref (H117p)
-n_t_1x			(MC28	FB)  : MUX 22		Ref (OE2)
-n_t_2x			(MC13	FB)  : MUX 23		Ref (E80fb)
-md09_low		(MC18	P)   : MUX 24		Ref (B27p)
-io_pause_low		(MC21	P)   : MUX 25		Ref (C38p)
-initialize		(MC17	P)   : MUX 27		Ref (B22p)
-n_t_33x			(MC11	FB)  : MUX 29		Ref (E76fb)
-maint			(MC2	FB)  : MUX 30		Ref (B22fb)
-n_t_60x			(MC12	FB)  : MUX 31		Ref (E78fb)
-md03_low		(MC25	P)   : MUX 33		Ref (E69p)
-n_t_5x			(MC30	FB)  : MUX 36		Ref (GCLR)
-msb8			(MC4	FB)  : MUX 37		Ref (B32fb)
-Com_Ctrl_282		(MC9	FB)  : MUX 38		Ref (E71fb)
-n_t_6x			(MC29	FB)  : MUX 39		Ref (GCLK)
+md09_low		(MC21	P)   : MUX 0		Ref (B27p)
+data8_low		(MC1	P)   : MUX 1		Ref (A1p)
+XXL_306			(MC9	FB)  : MUX 3		Ref (D59fb)
+rx_tr_req_low		(MC28	P)   : MUX 5		Ref (H113p)
+msb12			(MC13	FB)  : MUX 6		Ref (E69fb)
+data9_low		(MC2	P)   : MUX 7		Ref (A3p)
+XXL_305			(MC11	FB)  : MUX 8		Ref (E66fb)
+n_t_45x			(MC5	FB)  : MUX 9		Ref (B28fb)
+n_t_33x			(MC12	FB)  : MUX 10		Ref (E68fb)
+XXL_310			(MC8	FB)  : MUX 11		Ref (D58fb)
+XXL_311			(MC6	FB)  : MUX 12		Ref (D54fb)
+initialize		(MC20	P)   : MUX 13		Ref (B22p)
+md05_low		(MC26	P)   : MUX 15		Ref (D56p)
+n_t_1x			(MC30	FB)  : MUX 16		Ref (OE2)
+XXL_304			(MC14	FB)  : MUX 17		Ref (E79fb)
+n_t_67x			(MC16	FB)  : MUX 19		Ref (G106fb)
+maint			(MC3	FB)  : MUX 20		Ref (A7fb)
+rx_done_low		(MC29	P)   : MUX 21		Ref (H117p)
+md11_low		(MC23	P)   : MUX 22		Ref (B30p)
+md03_low		(MC27	P)   : MUX 23		Ref (E69p)
+n_t_5x			(MC32	FB)  : MUX 24		Ref (GCLR)
+io_pause_low		(MC24	P)   : MUX 25		Ref (C38p)
+rx_out_low		(MC19	P)   : MUX 26		Ref (A9p)
+Com_Ctrl_290		(MC4	FB)  : MUX 27		Ref (A10fb)
+md04_low		(MC25	P)   : MUX 29		Ref (D54p)
+data0_low		(MC10	P)   : MUX 31		Ref (E65p)
+md10_low		(MC22	P)   : MUX 32		Ref (B29p)
+rx_12_bit_low		(MC18	FB)  : MUX 33		Ref (H123fb)
+n_t_66x			(MC17	FB)  : MUX 35		Ref (G107fb)
+XXL_307			(MC7	FB)  : MUX 36		Ref (D56fb)
+n_t_31x			(MC15	FB)  : MUX 37		Ref (F92fb)
+n_t_6x			(MC31	FB)  : MUX 39		Ref (GCLK)
 
-FanIn assignment for block F [30]
+FanIn assignment for block F [32]
 {
-Com_Ctrl_283,
-XXL_287,XXL_289,XXL_288,
-gdollar_1,gdollar_3,gdollar_2,gdollar_0,
+Com_Ctrl_290,
+XXL_312,XXL_316,XXL_313,XXL_309,XXL_308,XXL_317,
+data10_low,
+gdollar_1,gdollar_3,gdollar_0,gdollar_2,
 initialize,io_pause_low,
-md11_low,md03_low,md10_low,md09_low,md05_low,md04_low,maint,
-n_t_68x,n_t_45x,n_t_6x,n_t_5x,n_t_72x,n_t_59x.AR,n_t_69x,n_t_1x,
-rx_tr_req_low,rx_out_low,rx_done_low,
-tp3,tp4,
+md09_low,maint,md03_low,md05_low,md11_low,md04_low,md10_low,
+n_t_72x,n_t_5x,n_t_67x,n_t_69x,n_t_45x,n_t_1x,n_t_65x,n_t_6x,
+rx_done_low,rx_tr_req_low,rx_out_low,
 }
 Multiplexer assignment for block F
-md11_low		(MC19	P)   : MUX 0		Ref (B30p)
-XXL_287			(MC4	FB)  : MUX 1		Ref (C45fb)
-XXL_289			(MC5	FB)  : MUX 3		Ref (D59fb)
-rx_tr_req_low		(MC26	P)   : MUX 5		Ref (H113p)
-Com_Ctrl_283		(MC7	FB)  : MUX 6		Ref (E69fb)
-initialize		(MC16	P)   : MUX 7		Ref (B22p)
-rx_out_low		(MC15	P)   : MUX 8		Ref (A9p)
-XXL_288			(MC6	FB)  : MUX 9		Ref (D60fb)
-tp3			(MC21	P)   : MUX 10		Ref (C43p)
-md03_low		(MC25	P)   : MUX 11		Ref (E69p)
-rx_done_low		(MC27	P)   : MUX 13		Ref (H117p)
-md10_low		(MC18	P)   : MUX 14		Ref (B29p)
-n_t_68x			(MC3	FB)  : MUX 15		Ref (B29fb)
-n_t_45x			(MC9	FB)  : MUX 16		Ref (F84fb)
-io_pause_low		(MC20	P)   : MUX 17		Ref (C38p)
-gdollar_1		(MC13	FB)  : MUX 19		Ref (G106fb)
-md09_low		(MC17	P)   : MUX 20		Ref (B27p)
-md05_low		(MC24	P)   : MUX 21		Ref (D56p)
-n_t_6x			(MC29	FB)  : MUX 23		Ref (GCLK)
-n_t_5x			(MC30	FB)  : MUX 24		Ref (GCLR)
-gdollar_3		(MC12	FB)  : MUX 25		Ref (F96fb)
-n_t_72x			(MC14	FB)  : MUX 27		Ref (G107fb)
-md04_low		(MC23	P)   : MUX 29		Ref (D54p)
-maint			(MC1	FB)  : MUX 30		Ref (B22fb)
-gdollar_2		(MC11	FB)  : MUX 31		Ref (F92fb)
-n_t_59x.AR		(MC2	FB)  : MUX 32		Ref (B23fb)
-tp4			(MC22	P)   : MUX 34		Ref (C45p)
-n_t_69x			(MC8	FB)  : MUX 36		Ref (F82fb)
-gdollar_0		(MC10	FB)  : MUX 37		Ref (F90fb)
-n_t_1x			(MC28	FB)  : MUX 38		Ref (OE2)
+md09_low		(MC21	P)   : MUX 0		Ref (B27p)
+data10_low		(MC1	P)   : MUX 1		Ref (A5p)
+rx_done_low		(MC29	P)   : MUX 3		Ref (H117p)
+XXL_312			(MC11	FB)  : MUX 5		Ref (D63fb)
+gdollar_1		(MC14	FB)  : MUX 6		Ref (G97fb)
+XXL_316			(MC9	FB)  : MUX 7		Ref (C44fb)
+maint			(MC2	FB)  : MUX 8		Ref (A7fb)
+gdollar_3		(MC8	FB)  : MUX 9		Ref (C42fb)
+gdollar_0		(MC7	FB)  : MUX 10		Ref (C39fb)
+md03_low		(MC27	P)   : MUX 11		Ref (E69p)
+n_t_72x			(MC15	FB)  : MUX 12		Ref (G99fb)
+initialize		(MC20	P)   : MUX 13		Ref (B22p)
+n_t_5x			(MC32	FB)  : MUX 14		Ref (GCLR)
+n_t_67x			(MC17	FB)  : MUX 15		Ref (G106fb)
+XXL_313			(MC10	FB)  : MUX 18		Ref (D52fb)
+rx_tr_req_low		(MC28	P)   : MUX 19		Ref (H113p)
+md05_low		(MC26	P)   : MUX 21		Ref (D56p)
+md11_low		(MC23	P)   : MUX 22		Ref (B30p)
+XXL_309			(MC13	FB)  : MUX 23		Ref (E80fb)
+XXL_308			(MC12	FB)  : MUX 25		Ref (E76fb)
+rx_out_low		(MC19	P)   : MUX 26		Ref (A9p)
+Com_Ctrl_290		(MC3	FB)  : MUX 27		Ref (A10fb)
+md04_low		(MC25	P)   : MUX 29		Ref (D54p)
+n_t_69x			(MC16	FB)  : MUX 30		Ref (G101fb)
+n_t_45x			(MC4	FB)  : MUX 31		Ref (B28fb)
+md10_low		(MC22	P)   : MUX 32		Ref (B29p)
+gdollar_2		(MC5	FB)  : MUX 33		Ref (B32fb)
+n_t_1x			(MC30	FB)  : MUX 34		Ref (OE2)
+io_pause_low		(MC24	P)   : MUX 35		Ref (C38p)
+XXL_317			(MC6	FB)  : MUX 36		Ref (C36fb)
+n_t_65x			(MC18	FB)  : MUX 37		Ref (G108fb)
+n_t_6x			(MC31	FB)  : MUX 39		Ref (GCLK)
 
-FanIn assignment for block G [19]
+FanIn assignment for block G [32]
 {
-Com_Ctrl_283,
-XXL_290,XXL_291,
+Com_Ctrl_290,Com_Ctrl_291,
+XXL_318,XXL_325,XXL_319,XXL_298,XXL_321,XXL_315,XXL_299,XXL_314,XXL_324,XXL_320,XXL_322,XXL_323,
 initialize,
-msb12,msb8,
-n_t_45x,n_t_59x,n_t_61x,
+maint,msb12,msb8,
+n_t_59x.AR,n_t_59x,n_t_68x,n_t_59x.AR,n_t_61x,n_t_45x,
 parity,parity_low,
-run.AR,run,rx_run_low,run.AR,run.AR,rx_init_low,rx_12_bit_low,
+rx_tr_req_low,run,rx_init_low,rx_12_bit_low,rx_run_low,
 tp4,
 }
 Multiplexer assignment for block G
-n_t_45x			(MC8	FB)  : MUX 0		Ref (F84fb)
-parity			(MC10	P)   : MUX 3		Ref (F88p)
-tp4			(MC19	P)   : MUX 4		Ref (C45p)
-parity_low.C		(MC3	FB)  : MUX 5		Ref (B27fb)
-Com_Ctrl_283		(MC6	FB)  : MUX 6		Ref (E69fb)
-initialize		(MC18	P)   : MUX 7		Ref (B22p)
-n_t_59x			(MC9	FB)  : MUX 8		Ref (F87fb)
-XXL_290			(MC5	FB)  : MUX 9		Ref (D63fb)
-run			(MC11	FB)  : MUX 10		Ref (G103fb)
-rx_run_low		(MC12	P)   : MUX 15		Ref (G104p)
-msb12			(MC7	FB)  : MUX 17		Ref (E74fb)
-run.C			(MC2	FB)  : MUX 23		Ref (B26fb)
-run.AR			(MC1	FB)  : MUX 25		Ref (B25fb)
-rx_init_low		(MC14	P)   : MUX 26		Ref (G110p)
-msb8			(MC4	FB)  : MUX 29		Ref (B32fb)
-parity_low		(MC13	FB)  : MUX 31		Ref (G108fb)
-rx_12_bit_low		(MC16	FB)  : MUX 35		Ref (H123fb)
-XXL_291			(MC15	FB)  : MUX 37		Ref (G112fb)
-n_t_61x			(MC17	FB)  : MUX 39		Ref (H127fb)
+maint			(MC3	FB)  : MUX 0		Ref (A7fb)
+XXL_318			(MC12	FB)  : MUX 1		Ref (C45fb)
+parity_low.C		(MC2	FB)  : MUX 2		Ref (A4fb)
+parity			(MC19	P)   : MUX 3		Ref (F88p)
+rx_tr_req_low		(MC32	P)   : MUX 5		Ref (H113p)
+msb12			(MC15	FB)  : MUX 6		Ref (E69fb)
+initialize		(MC30	P)   : MUX 7		Ref (B22p)
+n_t_59x			(MC22	FB)  : MUX 8		Ref (G100fb)
+n_t_68x			(MC7	FB)  : MUX 9		Ref (B29fb)
+XXL_325			(MC18	FB)  : MUX 10		Ref (F82fb)
+n_t_59x.AR		(MC5	FB)  : MUX 11		Ref (B26fb)
+XXL_319			(MC10	FB)  : MUX 12		Ref (C38fb)
+XXL_298			(MC11	FB)  : MUX 13		Ref (C43fb)
+XXL_321			(MC17	FB)  : MUX 15		Ref (E78fb)
+XXL_315			(MC13	FB)  : MUX 16		Ref (D50fb)
+msb8			(MC9	FB)  : MUX 17		Ref (B31fb)
+n_t_61x			(MC8	FB)  : MUX 19		Ref (B30fb)
+run			(MC26	FB)  : MUX 21		Ref (H122fb)
+XXL_299			(MC23	FB)  : MUX 22		Ref (G103fb)
+XXL_314			(MC14	FB)  : MUX 23		Ref (D57fb)
+parity_low		(MC21	FB)  : MUX 24		Ref (G98fb)
+XXL_324			(MC20	FB)  : MUX 25		Ref (F96fb)
+rx_init_low		(MC25	P)   : MUX 26		Ref (G110p)
+rx_12_bit_low		(MC27	FB)  : MUX 27		Ref (H123fb)
+Com_Ctrl_290		(MC4	FB)  : MUX 29		Ref (A10fb)
+rx_run_low		(MC24	P)   : MUX 31		Ref (G104p)
+XXL_320			(MC16	FB)  : MUX 33		Ref (E74fb)
+tp4			(MC31	P)   : MUX 34		Ref (C45p)
+XXL_322			(MC29	FB)  : MUX 35		Ref (H127fb)
+n_t_45x			(MC6	FB)  : MUX 37		Ref (B28fb)
+Com_Ctrl_291		(MC1	FB)  : MUX 38		Ref (A2fb)
+XXL_323			(MC28	FB)  : MUX 39		Ref (H124fb)
 
-FanIn assignment for block H [27]
+FanIn assignment for block H [31]
 {
-data5_low,
-io_pause_low,initialize,
-md03_low,md04_low,md07_low,md10_low,md09_low,md05_low,md11_low,maint,md08_low,msb12,msb8,
-n_t_70x,n_t_5x,n_t_45x,n_t_6x,n_t_1x,
+data11_low,data5_low,
+initialize,io_pause_low,
+md11_low,md09_low,msb12,md04_low,md03_low,md07_low,md08_low,md05_low,maint,md10_low,msb8,
+n_t_6x,n_t_45x,n_t_65x,n_t_5x,n_t_1x,
 parity,parity_low,
-rx_out_low,rx_error_low,rx_12_bit_low,rx_12_bit_low,rx_data_low,
+rx_data_low,run.AR,rx_12_bit_low,rx_tr_req_low,rx_out_low,rx_done_low,rx_12_bit_low,run.AR,
 tp3,
 }
 Multiplexer assignment for block H
-rx_out_low		(MC12	P)   : MUX 0		Ref (A9p)
-n_t_70x			(MC8	FB)  : MUX 1		Ref (G111fb)
-n_t_5x			(MC27	FB)  : MUX 2		Ref (GCLR)
-parity			(MC6	P)   : MUX 3		Ref (F88p)
-n_t_45x			(MC5	FB)  : MUX 4		Ref (F84fb)
-rx_error_low		(MC24	P)   : MUX 6		Ref (G107p)
-io_pause_low		(MC18	P)   : MUX 7		Ref (C38p)
-rx_12_bit_low		(MC11	P)   : MUX 8		Ref (H123p)
-md03_low		(MC23	P)   : MUX 9		Ref (E69p)
-data5_low		(MC3	P)   : MUX 10		Ref (D62p)
-md04_low		(MC20	P)   : MUX 11		Ref (D54p)
-md07_low		(MC22	P)   : MUX 12		Ref (D59p)
-rx_12_bit_low		(MC10	FB)  : MUX 13		Ref (H123fb)
-md10_low		(MC16	P)   : MUX 16		Ref (B29p)
-n_t_6x			(MC26	FB)  : MUX 17		Ref (GCLK)
-rx_data_low		(MC9	P)   : MUX 19		Ref (H120p)
-md09_low		(MC15	P)   : MUX 20		Ref (B27p)
-md05_low		(MC21	P)   : MUX 21		Ref (D56p)
-md11_low		(MC17	P)   : MUX 22		Ref (B30p)
-maint			(MC1	FB)  : MUX 26		Ref (B22fb)
-tp3			(MC19	P)   : MUX 28		Ref (C43p)
-initialize		(MC13	P)   : MUX 29		Ref (B22p)
-md08_low		(MC14	P)   : MUX 30		Ref (B25p)
-parity_low		(MC7	FB)  : MUX 31		Ref (G108fb)
-msb12			(MC4	FB)  : MUX 33		Ref (E74fb)
-msb8			(MC2	FB)  : MUX 37		Ref (B32fb)
-n_t_1x			(MC25	FB)  : MUX 38		Ref (OE2)
+md11_low		(MC20	P)   : MUX 0		Ref (B30p)
+rx_data_low		(MC12	P)   : MUX 1		Ref (H120p)
+md09_low		(MC18	P)   : MUX 2		Ref (B27p)
+run.C			(MC4	FB)  : MUX 5		Ref (B27fb)
+msb12			(MC8	FB)  : MUX 6		Ref (E69fb)
+md04_low		(MC23	P)   : MUX 7		Ref (D54p)
+rx_12_bit_low		(MC14	P)   : MUX 8		Ref (H123p)
+data11_low		(MC1	P)   : MUX 9		Ref (A6p)
+data5_low		(MC7	P)   : MUX 10		Ref (D62p)
+md03_low		(MC26	P)   : MUX 11		Ref (E69p)
+md07_low		(MC25	P)   : MUX 12		Ref (D59p)
+initialize		(MC16	P)   : MUX 13		Ref (B22p)
+md08_low		(MC17	P)   : MUX 14		Ref (B25p)
+md05_low		(MC24	P)   : MUX 15		Ref (D56p)
+parity			(MC9	P)   : MUX 17		Ref (F88p)
+rx_tr_req_low		(MC27	P)   : MUX 19		Ref (H113p)
+maint			(MC2	FB)  : MUX 20		Ref (A7fb)
+n_t_6x			(MC30	FB)  : MUX 23		Ref (GCLK)
+io_pause_low		(MC21	P)   : MUX 25		Ref (C38p)
+rx_out_low		(MC15	P)   : MUX 26		Ref (A9p)
+n_t_45x			(MC5	FB)  : MUX 27		Ref (B28fb)
+tp3			(MC22	P)   : MUX 28		Ref (C43p)
+n_t_65x			(MC11	FB)  : MUX 29		Ref (G108fb)
+parity_low		(MC10	FB)  : MUX 30		Ref (G98fb)
+rx_done_low		(MC28	P)   : MUX 31		Ref (H117p)
+md10_low		(MC19	P)   : MUX 32		Ref (B29p)
+rx_12_bit_low		(MC13	FB)  : MUX 33		Ref (H123fb)
+n_t_5x			(MC31	FB)  : MUX 36		Ref (GCLR)
+run.AR			(MC3	FB)  : MUX 37		Ref (B25fb)
+n_t_1x			(MC29	FB)  : MUX 38		Ref (OE2)
+msb8			(MC6	FB)  : MUX 39		Ref (B31fb)
 
-Creating JEDEC file C:\CYGWIN\HOME\VINCE\TTL2PLD\M8357\RX8E.jed ...
+Creating JEDEC file C:\USERS\VINCE\DOCUMENTS\WEBSVN\TRUNK\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E.jed ...
 
 PQFP100 programmed logic:
 -----------------------------------
-c1_low = ((!maint.Q & rx_done_low & rx_out_low)
-	# rx_12_bit_low.Q);
+c1_low = (rx_12_bit_low.Q
+	# (!maint.Q & rx_done_low & rx_out_low));
 
-!c0_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_12_bit_low.Q & maint.Q)
+!c0_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_12_bit_low.Q & maint.Q)
 	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_12_bit_low.Q & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_12_bit_low.Q & !rx_out_low));
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_12_bit_low.Q & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x));
 
-!data0_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb12.Q & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb12.Q & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb12.Q & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+!data0_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb12.Q & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb12.Q & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb12.Q & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low));
 
-!data10_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_67x.Q & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_67x.Q & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_67x.Q & !n_t_6x & maint.Q));
+!data10_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_67x.Q & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_67x.Q & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_67x.Q & !n_t_6x & !rx_done_low));
 
-!data1_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_33x.Q & !n_t_5x & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_33x.Q & !n_t_5x & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_33x.Q & !n_t_5x & !n_t_6x & maint.Q));
+!data1_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_33x.Q & !n_t_5x & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_33x.Q & !n_t_5x & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_33x.Q & !n_t_5x & !n_t_6x & !rx_done_low));
 
-!data11_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_65x.Q & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_65x.Q & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_65x.Q & !n_t_6x & maint.Q));
+!data11_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_65x.Q & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_65x.Q & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_65x.Q & !n_t_6x & !rx_done_low));
 
-!data2_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_2x.Q & !n_t_5x & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_2x.Q & !n_t_5x & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_2x.Q & !n_t_5x & !n_t_6x & maint.Q));
+!data2_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_2x.Q & !n_t_5x & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_2x.Q & !n_t_5x & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & n_t_2x.Q & !n_t_5x & !n_t_6x & !rx_done_low));
 
-!data4_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb8.Q & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb8.Q & !n_t_1x & !n_t_5x & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb8.Q & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+!data3_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & n_t_60x.Q & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & n_t_60x.Q & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & n_t_60x.Q & !n_t_6x & !rx_done_low));
 
-!data3_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & n_t_60x.Q & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & n_t_60x.Q & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !rx_12_bit_low.Q & !n_t_1x & !n_t_5x & n_t_60x.Q & !n_t_6x & maint.Q));
+!data4_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb8.Q & !n_t_1x & !n_t_5x & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb8.Q & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & msb8.Q & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low));
 
-!data5_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_62x.Q & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_62x.Q & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_62x.Q & !n_t_6x & maint.Q));
+!data7_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_64x.Q & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_64x.Q & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_64x.Q & !n_t_6x & !rx_done_low));
 
-!data6_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_63x.Q & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_63x.Q & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_63x.Q & !n_t_6x & maint.Q));
+!data5_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_62x.Q & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_62x.Q & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_62x.Q & !n_t_6x & !rx_done_low));
 
-!data8_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & n_t_31x.Q & !n_t_5x & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & n_t_31x.Q & !n_t_5x & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & n_t_31x.Q & !n_t_5x & !n_t_6x & maint.Q));
+!data6_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_63x.Q & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_63x.Q & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_63x.Q & !n_t_6x & !rx_done_low));
 
-!data7_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_64x.Q & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_64x.Q & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_64x.Q & !n_t_6x & maint.Q));
+!data9_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_66x.Q & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_66x.Q & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_66x.Q & !n_t_6x & !rx_done_low));
+
+!data8_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & n_t_31x.Q & !n_t_5x & !n_t_6x & !rx_out_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & n_t_31x.Q & !n_t_5x & !n_t_6x & maint.Q)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & n_t_31x.Q & !n_t_5x & !n_t_6x & !rx_done_low));
 
 !done_skip_low = (!io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & n_t_69x.Q & !n_t_6x);
 
-!data9_low = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_66x.Q & !n_t_6x & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_66x.Q & !n_t_6x & !rx_out_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & n_t_66x.Q & !n_t_6x & maint.Q));
+dd = 0;
 
-maint.D = (!n_t_6x & !n_t_5x & !n_t_1x & !md05_low & !md04_low & !md03_low & !io_pause_low & !data4_low.PIN);
+f = 0;
+
+jj = 0;
 
 !int_rqst_low = (n_t_69x.Q & n_t_76x.Q);
 
+l = 0;
+
 !internal_io_low = (!io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x);
 
-msb8.D = ((rx_out_low & !rx_done_low & msb8.Q)
-	# (!data4_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & msb8.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_62x.Q)
-	# (!rx_out_low & !maint.Q & n_t_62x.Q)
-	# (!data4_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (msb8.Q & maint.Q)
-	# (!data4_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+maint.D = (!n_t_6x & !n_t_5x & !n_t_1x & !md05_low & !md04_low & !md03_low & !io_pause_low & !data4_low.PIN);
 
-msb12.D = ((rx_out_low & !rx_done_low & msb12.Q)
-	# (!data0_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & msb12.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_33x.Q)
-	# (!rx_out_low & !maint.Q & n_t_33x.Q)
-	# (!data0_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (msb12.Q & maint.Q)
-	# (!data0_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+msb8.D = (XXL_303
+	# XXL_302);
+
+msb12.D = (XXL_305
+	# XXL_304);
 
 rx_12_bit_low.D = (!n_t_6x & !n_t_5x & !n_t_1x & !md05_low & !md04_low & !md03_low & !io_pause_low & !data5_low.PIN);
 
-n_t_2x.D = ((rx_out_low & !rx_done_low & n_t_2x.Q)
-	# (!data2_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_2x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_60x.Q)
-	# (!rx_out_low & !maint.Q & n_t_60x.Q)
-	# (!data2_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_2x.Q & maint.Q)
-	# (!data2_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_2x.D = (XXL_307
+	# XXL_306);
 
-n_t_31x.D = ((rx_out_low & !rx_done_low & n_t_31x.Q)
-	# (!data8_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_31x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_66x.Q)
-	# (!rx_out_low & !maint.Q & n_t_66x.Q)
-	# (!data8_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_31x.Q & maint.Q)
-	# (!data8_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_31x.D = (XXL_309
+	# XXL_308);
 
-n_t_33x.D = ((rx_out_low & !rx_done_low & n_t_33x.Q)
-	# (!data1_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_33x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_2x.Q)
-	# (!rx_out_low & !maint.Q & n_t_2x.Q)
-	# (!data1_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_33x.Q & maint.Q)
-	# (!data1_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_33x.D = (XXL_311
+	# XXL_310);
 
 !n_t_45x.D = (!io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & !md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x);
 
-n_t_59x.D = 1;
+n_t_60x.D = (XXL_313
+	# XXL_312);
 
-n_t_60x.D = ((rx_out_low & !rx_done_low & n_t_60x.Q)
-	# (!data3_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_60x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & msb8.Q)
-	# (!rx_out_low & !maint.Q & msb8.Q)
-	# (!data3_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_60x.Q & maint.Q)
-	# (!data3_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_59x.D = 1;
 
 n_t_61x.D = 1;
 
-n_t_62x.D = ((rx_out_low & !rx_done_low & n_t_62x.Q)
-	# (!data5_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_62x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_63x.Q)
-	# (!rx_out_low & !maint.Q & n_t_63x.Q)
-	# (!data5_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_62x.Q & maint.Q)
-	# (!data5_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_62x.D = (XXL_315
+	# XXL_314);
 
-n_t_63x.D = ((rx_out_low & !rx_done_low & n_t_63x.Q)
-	# (!data6_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_63x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_64x.Q)
-	# (!rx_out_low & !maint.Q & n_t_64x.Q)
-	# (!data6_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_63x.Q & maint.Q)
-	# (!data6_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_63x.D = (XXL_317
+	# XXL_316);
 
-n_t_64x.D = ((rx_out_low & !rx_done_low & n_t_64x.Q)
-	# (!data7_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_64x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_31x.Q)
-	# (!rx_out_low & !maint.Q & n_t_31x.Q)
-	# (!data7_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_64x.Q & maint.Q)
-	# (!data7_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_64x.D = (XXL_319
+	# XXL_318);
 
-n_t_66x.D = ((rx_out_low & !rx_done_low & n_t_66x.Q)
-	# (!data9_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_66x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_67x.Q)
-	# (!rx_out_low & !maint.Q & n_t_67x.Q)
-	# (!data9_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_66x.Q & maint.Q)
-	# (!data9_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_66x.D = (XXL_321
+	# XXL_320);
 
-n_t_65x.D = ((rx_out_low & !rx_done_low & n_t_65x.Q)
-	# (!data11_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_65x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & !rx_data_low.PIN)
-	# (!rx_out_low & !maint.Q & !rx_data_low.PIN)
-	# (!data11_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_65x.Q & maint.Q)
-	# (!data11_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_65x.D = (XXL_323
+	# XXL_322);
 
-n_t_67x.D = ((rx_out_low & !rx_done_low & n_t_67x.Q)
-	# (!data10_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_tr_req_low)
-	# (rx_out_low & n_t_67x.Q & !rx_tr_req_low)
-	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_65x.Q)
-	# (!rx_out_low & !maint.Q & n_t_65x.Q)
-	# (!data10_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q)
-	# (n_t_67x.Q & maint.Q)
-	# (!data10_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low));
+n_t_67x.D = (XXL_325
+	# XXL_324);
 
 n_t_68x.D = 1;
 
@@ -771,106 +768,238 @@ n_t_72x.D = n_t_59x.Q;
 
 n_t_76x.D = (!n_t_6x & !n_t_5x & !n_t_1x & !md05_low & !md04_low & !md03_low & !io_pause_low & !data11_low.PIN);
 
-n_t_7x = (!io_pause_low & !md08_low);
+n_t_9x = (!io_pause_low & !md06_low);
 
-parity = (gdollar_0.Q & gdollar_2.Q & gdollar_1.Q & gdollar_3.Q);
+n_t_7x = (!io_pause_low & !md08_low);
 
 n_t_8x = (!io_pause_low & !md07_low);
 
-n_t_9x = (!io_pause_low & !md06_low);
+nn = 0;
+
+parity = (gdollar_0.Q & gdollar_2.Q & gdollar_1.Q & gdollar_3.Q);
 
 run.D = 1;
 
 rx_init_low = (!initialize & n_t_45x.Q);
 
+tt = 0;
+
 rx_run_low = !run.Q;
+
+v = 0;
 
 !tr_skip_low = (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & n_t_72x.Q);
 
-rx_data_low = ((!parity & !rx_12_bit_low.Q & !msb12.Q)
-	# (!parity & rx_12_bit_low.Q & !msb8.Q)
+z = 0;
+
+rx_data_low = ((!parity & rx_12_bit_low.Q & !msb8.Q)
 	# (parity & !parity_low.Q)
-	# (!maint.Q & !rx_out_low));
+	# (!maint.Q & !rx_out_low)
+	# (!parity & !rx_12_bit_low.Q & !msb12.Q));
 
-!skip_low = (!done_skip_low
-	# !tr_skip_low
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & n_t_70x.Q));
+!skip_low = (!tr_skip_low
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & n_t_70x.Q)
+	# !done_skip_low);
 
-gdollar_3.D = ((gdollar_3.Q & !rx_out_low & !maint.Q & !gdollar_2.Q)
-	# (gdollar_3.Q & !maint.Q & rx_tr_req_low & !gdollar_0.Q & rx_done_low)
-	# (gdollar_3.Q & !gdollar_1.Q & !maint.Q & rx_tr_req_low & rx_done_low)
-	# (gdollar_3.Q & !maint.Q & !gdollar_2.Q & rx_tr_req_low & rx_done_low)
-	# (!gdollar_3.Q & !rx_out_low & gdollar_1.Q & !maint.Q & gdollar_2.Q & gdollar_0.Q)
-	# (!gdollar_3.Q & gdollar_1.Q & !maint.Q & gdollar_2.Q & rx_tr_req_low & gdollar_0.Q & rx_done_low)
-	# (gdollar_3.Q & !rx_out_low & !maint.Q & !gdollar_0.Q)
-	# (gdollar_3.Q & !rx_out_low & !gdollar_1.Q & !maint.Q));
+gdollar_3.D = (XXL_327
+	# XXL_326);
 
-gdollar_2.D = (XXL_288
-	# XXL_289
-	# XXL_287);
+gdollar_2.D = (XXL_297
+	# XXL_295
+	# XXL_296);
 
-gdollar_1.D = XXL_290;
+gdollar_1.D = XXL_298;
 
-!gdollar_0.D = ((gdollar_0.Q & !maint.Q & !rx_out_low)
-	# (gdollar_0.Q & !maint.Q & rx_done_low & rx_tr_req_low));
+!gdollar_0.D = ((gdollar_0.Q & !maint.Q & rx_done_low & rx_tr_req_low)
+	# (gdollar_0.Q & !maint.Q & !rx_out_low));
 
-parity_low.D = XXL_291;
+parity_low.D = XXL_299;
 
-Com_Ctrl_282 = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & !rx_done_low & rx_out_low)
-	# XXL_292
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & maint.Q));
-
-Com_Ctrl_283 = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_done_low)
-	# XXL_293
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_tr_req_low));
-
-!Com_Ctrl_284 = (!initialize & n_t_45x.Q);
-
-!FB_285 = (!initialize & n_t_45x.Q & !run.Q);
-
-XXL_286 = ((!maint.Q & !rx_shift_low)
+Com_Ctrl_290 = (XXL_300
 	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & maint.Q)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & maint.Q)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_tr_req_low));
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & !rx_done_low & rx_out_low));
 
-XXL_287 = ((rx_out_low & !rx_tr_req_low & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x)
-	# (rx_out_low & !rx_tr_req_low & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !data5_low.PIN)
+Com_Ctrl_291 = (XXL_301
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_tr_req_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_done_low));
+
+!Com_Ctrl_292 = (!initialize & n_t_45x.Q);
+
+!FB_293 = (!initialize & n_t_45x.Q & !run.Q);
+
+XXL_294 = ((maint.Q & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3)
+	# (maint.Q & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & rx_out_low & !rx_done_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & rx_out_low & !rx_tr_req_low)
+	# (!maint.Q & !rx_shift_low));
+
+XXL_295 = ((rx_out_low & !rx_tr_req_low & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !data5_low.PIN)
 	# (rx_out_low & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low)
 	# (rx_out_low & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !data5_low.PIN & !rx_done_low)
-	# (gdollar_2.Q & !maint.Q & !gdollar_1.Q & !rx_out_low));
+	# (!rx_out_low & gdollar_2.Q & !maint.Q & !gdollar_1.Q)
+	# (rx_out_low & !rx_tr_req_low & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x));
 
-XXL_288 = ((maint.Q & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !data5_low.PIN)
-	# (!maint.Q & gdollar_2.Q & rx_done_low & rx_tr_req_low & !gdollar_0.Q)
+XXL_296 = ((!maint.Q & gdollar_2.Q & rx_done_low & rx_tr_req_low & !gdollar_0.Q)
 	# (!maint.Q & gdollar_2.Q & !gdollar_0.Q & !rx_out_low)
 	# (!maint.Q & !gdollar_2.Q & rx_done_low & rx_tr_req_low & gdollar_0.Q & gdollar_1.Q)
-	# (maint.Q & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & rx_12_bit_low.Q & !n_t_1x & !n_t_5x & !n_t_6x));
+	# (maint.Q & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_12_bit_low.Q)
+	# (maint.Q & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !data5_low.PIN));
 
-XXL_289 = ((gdollar_2.Q & !maint.Q & !gdollar_1.Q & rx_done_low & rx_tr_req_low)
-	# (!gdollar_2.Q & !maint.Q & gdollar_1.Q & !rx_out_low & gdollar_0.Q));
+XXL_297 = ((!gdollar_2.Q & !maint.Q & gdollar_1.Q & !rx_out_low & gdollar_0.Q)
+	# (gdollar_2.Q & !maint.Q & !gdollar_1.Q & rx_done_low & rx_tr_req_low));
 
-XXL_290 = ((rx_out_low & !rx_done_low)
-	# (rx_out_low & !rx_tr_req_low)
+XXL_298 = ((rx_out_low & !rx_tr_req_low)
 	# (!gdollar_1.Q & gdollar_0.Q)
 	# (gdollar_1.Q & !gdollar_0.Q)
-	# maint.Q);
+	# maint.Q
+	# (rx_out_low & !rx_done_low));
 
-XXL_291 = ((!parity_low.Q & !parity & !rx_12_bit_low.Q & msb12.Q)
-	# (!parity_low.Q & !parity & rx_12_bit_low.Q & msb8.Q)
+XXL_299 = ((!parity_low.Q & !parity & rx_12_bit_low.Q & msb8.Q)
 	# (parity_low.Q & !parity & !rx_12_bit_low.Q & !msb12.Q)
-	# (parity_low.Q & !parity & rx_12_bit_low.Q & !msb8.Q));
+	# (parity_low.Q & !parity & rx_12_bit_low.Q & !msb8.Q)
+	# (!parity_low.Q & !parity & !rx_12_bit_low.Q & msb12.Q));
 
-XXL_292 = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & rx_out_low & !rx_tr_req_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & rx_out_low & !rx_tr_req_low)
+XXL_300 = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & rx_out_low & !rx_tr_req_low)
 	# (!maint.Q & !rx_shift_low)
 	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & maint.Q)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & !rx_done_low & rx_out_low));
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & rx_out_low & !rx_done_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & rx_out_low & !rx_tr_req_low));
 
-XXL_293 = ((!maint.Q & !rx_shift_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & maint.Q)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & maint.Q)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_done_low)
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_tr_req_low));
+XXL_301 = ((maint.Q & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3)
+	# (maint.Q & !io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & rx_out_low & !rx_done_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3 & rx_out_low & !rx_tr_req_low)
+	# (!maint.Q & !rx_shift_low));
+
+XXL_302 = ((rx_out_low & !data4_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & msb8.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_62x.Q)
+	# (!rx_out_low & !maint.Q & n_t_62x.Q)
+	# (rx_out_low & !rx_done_low & msb8.Q));
+
+XXL_303 = ((maint.Q & msb8.Q)
+	# (!data4_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data4_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_304 = ((rx_out_low & !data0_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & msb12.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_33x.Q)
+	# (!rx_out_low & !maint.Q & n_t_33x.Q)
+	# (rx_out_low & !rx_done_low & msb12.Q));
+
+XXL_305 = ((maint.Q & msb12.Q)
+	# (!data0_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data0_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_306 = ((rx_out_low & !data2_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_2x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_60x.Q)
+	# (!rx_out_low & !maint.Q & n_t_60x.Q)
+	# (rx_out_low & !rx_done_low & n_t_2x.Q));
+
+XXL_307 = ((maint.Q & n_t_2x.Q)
+	# (!data2_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data2_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_308 = ((rx_out_low & !data8_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_31x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_66x.Q)
+	# (!rx_out_low & !maint.Q & n_t_66x.Q)
+	# (rx_out_low & !rx_done_low & n_t_31x.Q));
+
+XXL_309 = ((maint.Q & n_t_31x.Q)
+	# (!data8_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data8_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_310 = ((rx_out_low & !data1_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_33x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_2x.Q)
+	# (!rx_out_low & !maint.Q & n_t_2x.Q)
+	# (rx_out_low & !rx_done_low & n_t_33x.Q));
+
+XXL_311 = ((maint.Q & n_t_33x.Q)
+	# (!data1_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data1_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_312 = ((rx_out_low & !data3_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_60x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & msb8.Q)
+	# (!rx_out_low & !maint.Q & msb8.Q)
+	# (rx_out_low & !rx_done_low & n_t_60x.Q));
+
+XXL_313 = ((maint.Q & n_t_60x.Q)
+	# (!data3_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data3_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_314 = ((rx_out_low & !data5_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_62x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_63x.Q)
+	# (!rx_out_low & !maint.Q & n_t_63x.Q)
+	# (rx_out_low & !rx_done_low & n_t_62x.Q));
+
+XXL_315 = ((maint.Q & n_t_62x.Q)
+	# (!data5_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data5_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_316 = ((rx_out_low & !data6_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_63x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_64x.Q)
+	# (!rx_out_low & !maint.Q & n_t_64x.Q)
+	# (rx_out_low & !rx_done_low & n_t_63x.Q));
+
+XXL_317 = ((maint.Q & n_t_63x.Q)
+	# (!data6_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data6_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_318 = ((rx_out_low & !data7_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_64x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_31x.Q)
+	# (!rx_out_low & !maint.Q & n_t_31x.Q)
+	# (rx_out_low & !rx_done_low & n_t_64x.Q));
+
+XXL_319 = ((maint.Q & n_t_64x.Q)
+	# (!data7_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data7_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_320 = ((rx_out_low & !data9_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_66x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_67x.Q)
+	# (!rx_out_low & !maint.Q & n_t_67x.Q)
+	# (rx_out_low & !rx_done_low & n_t_66x.Q));
+
+XXL_321 = ((maint.Q & n_t_66x.Q)
+	# (!data9_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data9_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_322 = ((rx_out_low & !data11_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_65x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & !rx_data_low.PIN)
+	# (!rx_out_low & !maint.Q & !rx_data_low.PIN)
+	# (rx_out_low & !rx_done_low & n_t_65x.Q));
+
+XXL_323 = ((maint.Q & n_t_65x.Q)
+	# (!data11_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data11_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_324 = ((rx_out_low & !data10_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_tr_req_low)
+	# (rx_out_low & n_t_67x.Q & !rx_tr_req_low)
+	# (rx_done_low & rx_tr_req_low & !maint.Q & n_t_65x.Q)
+	# (!rx_out_low & !maint.Q & n_t_65x.Q)
+	# (rx_out_low & !rx_done_low & n_t_67x.Q));
+
+XXL_325 = ((maint.Q & n_t_67x.Q)
+	# (!data10_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & !rx_done_low)
+	# (!data10_low.PIN & !io_pause_low & !md03_low & !md04_low & !md05_low & !n_t_1x & !n_t_5x & !n_t_6x & maint.Q));
+
+XXL_326 = ((gdollar_3.Q & !maint.Q & rx_tr_req_low & !gdollar_0.Q & rx_done_low)
+	# (gdollar_3.Q & !maint.Q & rx_tr_req_low & rx_done_low & !gdollar_1.Q)
+	# (gdollar_3.Q & !maint.Q & !gdollar_2.Q & rx_tr_req_low & rx_done_low)
+	# (!gdollar_3.Q & !rx_out_low & !maint.Q & gdollar_2.Q & gdollar_0.Q & gdollar_1.Q)
+	# (gdollar_3.Q & !rx_out_low & !maint.Q & !gdollar_2.Q));
+
+XXL_327 = ((gdollar_3.Q & !maint.Q & !gdollar_0.Q & !rx_out_low)
+	# (gdollar_3.Q & !gdollar_1.Q & !maint.Q & !rx_out_low)
+	# (!gdollar_3.Q & gdollar_1.Q & !maint.Q & gdollar_2.Q & rx_tr_req_low & gdollar_0.Q & rx_done_low));
 
 c1_low.OE = !c1_low.PIN;
 
@@ -886,68 +1015,68 @@ data11_low.OE = !data11_low.PIN;
 
 data2_low.OE = !data2_low.PIN;
 
+data3_low.OE = !data3_low.PIN;
+
 data4_low.OE = !data4_low.PIN;
 
-data3_low.OE = !data3_low.PIN;
+data7_low.OE = !data7_low.PIN;
 
 data5_low.OE = !data5_low.PIN;
 
 data6_low.OE = !data6_low.PIN;
 
-data8_low.OE = !data8_low.PIN;
-
-data7_low.OE = !data7_low.PIN;
-
 data9_low.OE = !data9_low.PIN;
 
-maint.C = (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3);
-
-maint.AR = Com_Ctrl_284;
+data8_low.OE = !data8_low.PIN;
 
 int_rqst_low.OE = !int_rqst_low.PIN;
 
 internal_io_low.OE = !internal_io_low.PIN;
 
-msb8.C = Com_Ctrl_282;
+maint.C = (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3);
 
-msb8.AR = Com_Ctrl_284;
+maint.AR = Com_Ctrl_292;
 
-msb12.C = Com_Ctrl_282;
+msb8.C = Com_Ctrl_290;
 
-msb12.AR = Com_Ctrl_284;
+msb8.AR = Com_Ctrl_292;
+
+msb12.C = Com_Ctrl_290;
+
+msb12.AR = Com_Ctrl_292;
 
 rx_12_bit_low.C = (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & tp3);
 
-rx_12_bit_low.AR = Com_Ctrl_284;
+rx_12_bit_low.AR = Com_Ctrl_292;
 
 rx_12_bit_low.OE = !rx_12_bit_low.PIN;
 
-n_t_2x.C = Com_Ctrl_282;
+n_t_2x.C = Com_Ctrl_290;
 
-n_t_2x.AR = Com_Ctrl_284;
+n_t_2x.AR = Com_Ctrl_292;
 
-n_t_31x.C = Com_Ctrl_282;
+n_t_31x.C = Com_Ctrl_290;
 
-n_t_31x.AR = Com_Ctrl_284;
+n_t_31x.AR = Com_Ctrl_292;
 
-n_t_33x.C = Com_Ctrl_282;
+n_t_33x.C = Com_Ctrl_290;
 
-n_t_33x.AR = Com_Ctrl_284;
+n_t_33x.AR = Com_Ctrl_292;
 
 n_t_45x.C = tp3;
 
 n_t_45x.AP = tp4;
 
+n_t_60x.C = Com_Ctrl_290;
+
+n_t_60x.AR = Com_Ctrl_292;
+
 n_t_59x.C = (!maint.Q & !rx_tr_req_low);
 
-!n_t_59x.AR = ((!initialize & n_t_45x.Q & tr_skip_low)
-	# (!initialize & n_t_45x.Q & !tp3));
+!n_t_59x.AR = ((!initialize & n_t_45x.Q & !tp3)
+	# (!initialize & n_t_45x.Q & tr_skip_low));
 
 n_t_59x.AP = maint.Q;
-
-n_t_60x.C = Com_Ctrl_282;
-
-n_t_60x.AR = Com_Ctrl_284;
 
 n_t_61x.C = (!maint.Q & !rx_error_low);
 
@@ -955,29 +1084,29 @@ n_t_61x.AR = (!io_pause_low & !md03_low & !md04_low & !md05_low & !md09_low & md
 
 n_t_61x.AP = maint.Q;
 
-n_t_62x.C = Com_Ctrl_282;
+n_t_62x.C = Com_Ctrl_290;
 
-n_t_62x.AR = Com_Ctrl_284;
+n_t_62x.AR = Com_Ctrl_292;
 
-n_t_63x.C = Com_Ctrl_282;
+n_t_63x.C = Com_Ctrl_290;
 
-n_t_63x.AR = Com_Ctrl_284;
+n_t_63x.AR = Com_Ctrl_292;
 
-n_t_64x.C = Com_Ctrl_282;
+n_t_64x.C = Com_Ctrl_290;
 
-n_t_64x.AR = Com_Ctrl_284;
+n_t_64x.AR = Com_Ctrl_292;
 
-n_t_66x.C = Com_Ctrl_282;
+n_t_66x.C = Com_Ctrl_290;
 
-n_t_66x.AR = Com_Ctrl_284;
+n_t_66x.AR = Com_Ctrl_292;
 
-n_t_65x.C = Com_Ctrl_282;
+n_t_65x.C = Com_Ctrl_290;
 
-n_t_65x.AR = Com_Ctrl_284;
+n_t_65x.AR = Com_Ctrl_292;
 
-n_t_67x.C = Com_Ctrl_282;
+n_t_67x.C = Com_Ctrl_290;
 
-n_t_67x.AR = Com_Ctrl_284;
+n_t_67x.AR = Com_Ctrl_292;
 
 n_t_68x.C = (!maint.Q & !rx_done_low);
 
@@ -987,25 +1116,25 @@ n_t_68x.AP = maint.Q;
 
 n_t_69x.C = tp4;
 
-n_t_69x.AR = Com_Ctrl_284;
+n_t_69x.AR = Com_Ctrl_292;
 
 n_t_70x.C = tp4;
 
-n_t_70x.AR = Com_Ctrl_284;
+n_t_70x.AR = Com_Ctrl_292;
 
 n_t_72x.C = tp4;
 
-n_t_72x.AR = Com_Ctrl_284;
+n_t_72x.AR = Com_Ctrl_292;
 
 n_t_76x.C = tp3;
 
-n_t_76x.AR = Com_Ctrl_284;
+n_t_76x.AR = Com_Ctrl_292;
 
-run.C = ((!io_pause_low & !maint.Q & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_done_low & tp3)
-	# (!io_pause_low & !maint.Q & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & tp3));
+run.C = ((!io_pause_low & !maint.Q & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & !rx_done_low & tp3)
+	# (!io_pause_low & !maint.Q & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_done_low & tp3));
 
-!run.AR = ((!initialize & !maint.Q & n_t_45x.Q & !rx_done_low)
-	# (!initialize & !maint.Q & n_t_45x.Q & !rx_tr_req_low));
+!run.AR = ((!initialize & !maint.Q & n_t_45x.Q & !rx_tr_req_low)
+	# (!initialize & !maint.Q & n_t_45x.Q & !rx_done_low));
 
 rx_init_low.OE = !rx_init_low.PIN;
 
@@ -1015,27 +1144,27 @@ rx_data_low.OE = !rx_data_low.PIN;
 
 skip_low.OE = !skip_low.PIN;
 
-gdollar_3.C = !Com_Ctrl_283;
+gdollar_3.C = !Com_Ctrl_291;
 
-gdollar_3.AR = Com_Ctrl_284;
+gdollar_3.AR = Com_Ctrl_292;
 
-gdollar_2.C = !Com_Ctrl_283;
+gdollar_2.C = !Com_Ctrl_291;
 
-gdollar_2.AR = Com_Ctrl_284;
+gdollar_2.AR = Com_Ctrl_292;
 
-gdollar_1.C = !Com_Ctrl_283;
+gdollar_1.C = !Com_Ctrl_291;
 
-gdollar_1.AR = Com_Ctrl_284;
+gdollar_1.AR = Com_Ctrl_292;
 
-gdollar_0.C = !Com_Ctrl_283;
+gdollar_0.C = !Com_Ctrl_291;
 
-gdollar_0.AR = Com_Ctrl_284;
+gdollar_0.AR = Com_Ctrl_292;
 
-!parity_low.C = ((!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_done_low)
-	# XXL_286
-	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_tr_req_low));
+!parity_low.C = (XXL_294
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & !md10_low & md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_tr_req_low)
+	# (!io_pause_low & !md03_low & !md04_low & !md05_low & md09_low & md10_low & !md11_low & !n_t_1x & !n_t_5x & !n_t_6x & rx_out_low & tp3 & !rx_done_low));
 
-parity_low.AP = FB_285;
+parity_low.AP = FB_293;
 
 
 PQFP100 Pin/Node Placement:
@@ -1077,12 +1206,17 @@ Pin 59 = done_skip_low; /* MC 89 */
 Pin 60 = tr_skip_low; /* MC 91 */ 
 Pin 64 = TCK; /* MC 96 */ 
 Pin 70 = rx_run_low; /* MC 104 */ 
+Pin 71 = f; /* MC 105 */ 
 Pin 72 = rx_error_low; /* MC 107 */ 
+Pin 73 = l; /* MC 109 */ 
 Pin 74 = rx_init_low; /* MC 110 */ 
 Pin 75 = TDO; /* MC 112 */ 
 Pin 77 = rx_tr_req_low; /* MC 113 */ 
+Pin 78 = v; /* MC 115 */ 
 Pin 79 = rx_done_low; /* MC 117 */ 
+Pin 80 = z; /* MC 118 */ 
 Pin 81 = rx_data_low; /* MC 120 */ 
+Pin 82 = dd; /* MC 121 */ 
 Pin 83 = rx_12_bit_low; /* MC 123 */ 
 Pin 85 = n_t_7x; /* MC 125 */ 
 Pin 86 = n_t_8x; /* MC 126 */ 
@@ -1090,57 +1224,86 @@ Pin 89 = n_t_6x;
 Pin 91 = n_t_5x;
 Pin 92 = n_t_1x;
 Pin 94 = n_t_9x; /* MC 16 */ 
+Pin 95 = jj; /* MC 14 */ 
 Pin 96 = rx_shift_low; /* MC 13 */ 
+Pin 98 = nn; /* MC 11 */ 
 Pin 99 = rx_out_low; /* MC  9 */
-PINNODE 316 = Com_Ctrl_284; /* MC 16 Foldback */
-PINNODE 329 = Com_Ctrl_284; /* MC 29 Foldback */
-PINNODE 346 = Com_Ctrl_284; /* MC 46 Foldback */
-PINNODE 372 = Com_Ctrl_284; /* MC 72 Foldback */
-PINNODE 394 = Com_Ctrl_284; /* MC 94 Foldback */
-PINNODE 411 = FB_285; /* MC 111 Foldback */
-PINNODE 412 = Com_Ctrl_284; /* MC 112 Foldback */
-PINNODE 428 = Com_Ctrl_284; /* MC 128 Foldback */
-PINNODE 602 = n_t_76x; /* MC 2 Feedback */
-PINNODE 604 = XXL_292; /* MC 4 Feedback */
-PINNODE 608 = n_t_31x; /* MC 8 Feedback */
-PINNODE 610 = n_t_67x; /* MC 10 Feedback */
-PINNODE 612 = n_t_66x; /* MC 12 Feedback */
-PINNODE 613 = XXL_286; /* MC 13 Feedback */
-PINNODE 615 = n_t_65x; /* MC 15 Feedback */
-PINNODE 622 = maint; /* MC 22 Feedback */
-PINNODE 623 = n_t_59x.AR; /* MC 23 Feedback */
+Pin 100 = tt; /* MC  8 */
+PINNODE 316 = Com_Ctrl_292; /* MC 16 Foldback */
+PINNODE 331 = Com_Ctrl_292; /* MC 31 Foldback */
+PINNODE 346 = Com_Ctrl_292; /* MC 46 Foldback */
+PINNODE 380 = Com_Ctrl_292; /* MC 80 Foldback */
+PINNODE 394 = Com_Ctrl_292; /* MC 94 Foldback */
+PINNODE 411 = FB_293; /* MC 111 Foldback */
+PINNODE 412 = Com_Ctrl_292; /* MC 112 Foldback */
+PINNODE 428 = Com_Ctrl_292; /* MC 128 Foldback */
+PINNODE 602 = Com_Ctrl_291; /* MC 2 Feedback */
+PINNODE 604 = parity_low.C; /* MC 4 Feedback */
+PINNODE 607 = maint; /* MC 7 Feedback */
+PINNODE 609 = n_t_76x; /* MC 9 Feedback */
+PINNODE 610 = Com_Ctrl_290; /* MC 10 Feedback */
+PINNODE 612 = XXL_300; /* MC 12 Feedback */
+PINNODE 613 = XXL_301; /* MC 13 Feedback */
+PINNODE 615 = XXL_294; /* MC 15 Feedback */
 PINNODE 625 = run.AR; /* MC 25 Feedback */
-PINNODE 626 = run.C; /* MC 26 Feedback */
-PINNODE 627 = parity_low.C; /* MC 27 Feedback */
+PINNODE 626 = n_t_59x.AR; /* MC 26 Feedback */
+PINNODE 627 = run.C; /* MC 27 Feedback */
+PINNODE 628 = n_t_45x; /* MC 28 Feedback */
 PINNODE 629 = n_t_68x; /* MC 29 Feedback */
-PINNODE 630 = XXL_293; /* MC 30 Feedback */
-PINNODE 632 = msb8; /* MC 32 Feedback */
-PINNODE 639 = n_t_64x; /* MC 39 Feedback */
-PINNODE 644 = n_t_63x; /* MC 44 Feedback */
-PINNODE 645 = XXL_287; /* MC 45 Feedback */
-PINNODE 648 = n_t_62x; /* MC 48 Feedback */
-PINNODE 659 = XXL_289; /* MC 59 Feedback */
-PINNODE 660 = XXL_288; /* MC 60 Feedback */
-PINNODE 663 = XXL_290; /* MC 63 Feedback */
-PINNODE 669 = Com_Ctrl_283; /* MC 69 Feedback */
-PINNODE 671 = Com_Ctrl_282; /* MC 71 Feedback */
-PINNODE 674 = msb12; /* MC 74 Feedback */
-PINNODE 676 = n_t_33x; /* MC 76 Feedback */
-PINNODE 678 = n_t_60x; /* MC 78 Feedback */
-PINNODE 680 = n_t_2x; /* MC 80 Feedback */
-PINNODE 682 = n_t_69x; /* MC 82 Feedback */
-PINNODE 684 = n_t_45x; /* MC 84 Feedback */
-PINNODE 687 = n_t_59x; /* MC 87 Feedback */
-PINNODE 690 = gdollar_0; /* MC 90 Feedback */
-PINNODE 692 = gdollar_2; /* MC 92 Feedback */
-PINNODE 696 = gdollar_3; /* MC 96 Feedback */
-PINNODE 703 = run; /* MC 103 Feedback */
-PINNODE 706 = gdollar_1; /* MC 106 Feedback */
-PINNODE 707 = n_t_72x; /* MC 107 Feedback */
-PINNODE 708 = parity_low; /* MC 108 Feedback */
-PINNODE 711 = n_t_70x; /* MC 111 Feedback */
-PINNODE 712 = XXL_291; /* MC 112 Feedback */
-PINNODE 727 = n_t_61x; /* MC 127 Feedback */
+PINNODE 630 = n_t_61x; /* MC 30 Feedback */
+PINNODE 631 = msb8; /* MC 31 Feedback */
+PINNODE 632 = gdollar_2; /* MC 32 Feedback */
+PINNODE 634 = XXL_297; /* MC 34 Feedback */
+PINNODE 636 = XXL_317; /* MC 36 Feedback */
+PINNODE 638 = XXL_319; /* MC 38 Feedback */
+PINNODE 639 = gdollar_0; /* MC 39 Feedback */
+PINNODE 642 = gdollar_3; /* MC 42 Feedback */
+PINNODE 643 = XXL_298; /* MC 43 Feedback */
+PINNODE 644 = XXL_316; /* MC 44 Feedback */
+PINNODE 645 = XXL_318; /* MC 45 Feedback */
+PINNODE 647 = XXL_295; /* MC 47 Feedback */
+PINNODE 648 = XXL_296; /* MC 48 Feedback */
+PINNODE 650 = XXL_315; /* MC 50 Feedback */
+PINNODE 652 = XXL_313; /* MC 52 Feedback */
+PINNODE 654 = XXL_311; /* MC 54 Feedback */
+PINNODE 655 = XXL_303; /* MC 55 Feedback */
+PINNODE 656 = XXL_307; /* MC 56 Feedback */
+PINNODE 657 = XXL_314; /* MC 57 Feedback */
+PINNODE 658 = XXL_310; /* MC 58 Feedback */
+PINNODE 659 = XXL_306; /* MC 59 Feedback */
+PINNODE 660 = XXL_302; /* MC 60 Feedback */
+PINNODE 663 = XXL_312; /* MC 63 Feedback */
+PINNODE 666 = XXL_305; /* MC 66 Feedback */
+PINNODE 668 = n_t_33x; /* MC 68 Feedback */
+PINNODE 669 = msb12; /* MC 69 Feedback */
+PINNODE 671 = n_t_2x; /* MC 71 Feedback */
+PINNODE 674 = XXL_320; /* MC 74 Feedback */
+PINNODE 676 = XXL_308; /* MC 76 Feedback */
+PINNODE 678 = XXL_321; /* MC 78 Feedback */
+PINNODE 679 = XXL_304; /* MC 79 Feedback */
+PINNODE 680 = XXL_309; /* MC 80 Feedback */
+PINNODE 682 = XXL_325; /* MC 82 Feedback */
+PINNODE 684 = XXL_327; /* MC 84 Feedback */
+PINNODE 687 = n_t_63x; /* MC 87 Feedback */
+PINNODE 690 = n_t_60x; /* MC 90 Feedback */
+PINNODE 692 = n_t_31x; /* MC 92 Feedback */
+PINNODE 695 = XXL_326; /* MC 95 Feedback */
+PINNODE 696 = XXL_324; /* MC 96 Feedback */
+PINNODE 697 = gdollar_1; /* MC 97 Feedback */
+PINNODE 698 = parity_low; /* MC 98 Feedback */
+PINNODE 699 = n_t_72x; /* MC 99 Feedback */
+PINNODE 700 = n_t_59x; /* MC 100 Feedback */
+PINNODE 701 = n_t_69x; /* MC 101 Feedback */
+PINNODE 702 = n_t_70x; /* MC 102 Feedback */
+PINNODE 703 = XXL_299; /* MC 103 Feedback */
+PINNODE 706 = n_t_67x; /* MC 106 Feedback */
+PINNODE 707 = n_t_66x; /* MC 107 Feedback */
+PINNODE 708 = n_t_65x; /* MC 108 Feedback */
+PINNODE 711 = n_t_64x; /* MC 111 Feedback */
+PINNODE 712 = n_t_62x; /* MC 112 Feedback */
+PINNODE 722 = run; /* MC 122 Feedback */
+PINNODE 724 = XXL_323; /* MC 124 Feedback */
+PINNODE 727 = XXL_322; /* MC 127 Feedback */
 
 ** Resource Usage **
 
@@ -1161,159 +1324,159 @@ For input only = INPUT.
 
 MCell Pin# Oe   PinDrive        DCERP  FBDrive      DCERP  Foldback     CascadeOut     TotPT output_slew
 MC1   4    PT   data8_low       C----  --                  --           --             4     slow
-MC2   0         --                     n_t_76x      Dc-r-  --           --             3     slow
+MC2   0         --                     Com_Ctrl_291 C----  --           --             3     slow
 MC3   3    PT   data9_low       C----  --                  --           --             4     slow
-MC4   0         --                     XXL_292      C----  NA           --             5     slow
+MC4   0         --                     parity_low.C C----  --           --             3     slow
 MC5   2    PT   data10_low      C----  --                  --           --             4     slow
 MC6   1    PT   data11_low      C----  --                  --           --             4     slow
-MC7   0         --                     --                  NA           -> n_t_31x     5     slow
-MC8   100       --                     n_t_31x      Dc-r-  NA           --             5     slow
-MC9   99   --   rx_out_low      INPUT  --                  NA           -> n_t_67x     5     slow
-MC10  0         --                     n_t_67x      Dc-r-  NA           --             5     slow
-MC11  98        --                     --                  NA           -> n_t_66x     5     slow
-MC12  0         --                     n_t_66x      Dc-r-  NA           --             5     slow
-MC13  96   --   rx_shift_low    INPUT  XXL_286      C----  NA           --             5     slow
-MC14  95        --                     --                  NA           -> n_t_65x     5     slow
-MC15  0         --                     n_t_65x      Dc-r-  NA           --             5     slow
-MC16  94   on   n_t_9x          C----  --                  Com_Ctrl_284 --             2     slow
+MC7   0         --                     maint        Dc-r-  --           --             3     slow
+MC8   100  on   tt              C----  --                  --           --             0     slow
+MC9   99   --   rx_out_low      INPUT  n_t_76x      Dc-r-  --           --             3     slow
+MC10  0         --                     Com_Ctrl_290 C----  --           --             3     slow
+MC11  98   on   nn              C----  --                  --           --             0     slow
+MC12  0         --                     XXL_300      C----  NA           --             5     slow
+MC13  96   --   rx_shift_low    INPUT  XXL_301      C----  NA           --             5     slow
+MC14  95   on   jj              C----  --                  --           --             0     slow
+MC15  0         --                     XXL_294      C----  NA           --             5     slow
+MC16  94   on   n_t_9x          C----  --                  Com_Ctrl_292 --             2     slow
 MC17  16        --                     --                  --           --             0     slow
 MC18  0         --                     --                  --           --             0     slow
 MC19  15        --                     --                  --           --             0     slow
 MC20  0         --                     --                  --           --             0     slow
 MC21  14   PT   int_rqst_low    C----  --                  --           --             2     slow
-MC22  12   --   initialize      INPUT  maint        Dc-r-  --           --             3     slow
-MC23  0         --                     n_t_59x.AR   C----  --           --             2     slow
+MC22  12   --   initialize      INPUT  --                  --           --             0     slow
+MC23  0         --                     --                  --           --             0     slow
 MC24  11   PT   skip_low        C----  --                  --           --             4     slow
 MC25  10   --   md08_low        INPUT  run.AR       C----  --           --             2     slow
-MC26  0         --                     run.C        C----  --           --             2     slow
-MC27  9    --   md09_low        INPUT  parity_low.C C----  --           --             3     slow
-MC28  0         --                     --                  --           --             0     slow
-MC29  8    --   md10_low        INPUT  n_t_68x      Dc-rp  Com_Ctrl_284 --             4     slow
-MC30  7    --   md11_low        INPUT  XXL_293      C----  NA           --             5     slow
-MC31  0         --                     --                  NA           -> msb8        5     slow
-MC32  6    --   TDI             INPUT  msb8         Dc-r-  NA           --             5     slow
+MC26  0         --                     n_t_59x.AR   C----  --           --             2     slow
+MC27  9    --   md09_low        INPUT  run.C        C----  --           --             2     slow
+MC28  0         --                     n_t_45x      Dc--p  --           --             3     slow
+MC29  8    --   md10_low        INPUT  n_t_68x      Dc-rp  --           --             3     slow
+MC30  7    --   md11_low        INPUT  n_t_61x      Dc-rp  --           --             3     slow
+MC31  0         --                     msb8         Dc-r-  Com_Ctrl_292 --             5     slow
+MC32  6    --   TDI             INPUT  gdollar_2    Dc-r-  NA           --             5     slow
 MC33  27        --                     --                  --           --             0     slow
-MC34  0         --                     --                  --           --             0     slow
+MC34  0         --                     XXL_297      C----  --           --             2     slow
 MC35  26   PT   data7_low       C----  --                  --           --             4     slow
-MC36  0         --                     --                  --           --             0     slow
+MC36  0         --                     XXL_317      C----  --           --             3     slow
 MC37  25        --                     --                  --           --             0     slow
-MC38  24   --   io_pause_low    INPUT  --                  NA           -> n_t_64x     5     slow
-MC39  0         --                     n_t_64x      Dc-r-  NA           --             5     slow
+MC38  24   --   io_pause_low    INPUT  XXL_319      C----  --           --             3     slow
+MC39  0         --                     gdollar_0    Dc-r-  --           --             4     slow
 MC40  23   PT   c0_low          C----  --                  NA           --             5     slow
 MC41  22   PT   c1_low          C----  --                  --           --             3     slow
-MC42  0         --                     --                  --           --             0     slow
-MC43  21   --   tp3             INPUT  --                  NA           -> n_t_63x     5     slow
-MC44  0         --                     n_t_63x      Dc-r-  NA           --             5     slow
-MC45  19   --   tp4             INPUT  XXL_287      C----  NA           --             5     slow
-MC46  18   PT   internal_io_low C----  --                  Com_Ctrl_284 --             3     slow
-MC47  0         --                     --                  NA           -> n_t_62x     5     slow
-MC48  17   --   TMS             INPUT  n_t_62x      Dc-r-  NA           --             5     slow
+MC42  0         --                     gdollar_3    Dc-r-  --           --             4     slow
+MC43  21   --   tp3             INPUT  XXL_298      C----  NA           --             5     slow
+MC44  0         --                     XXL_316      C----  NA           --             5     slow
+MC45  19   --   tp4             INPUT  XXL_318      C----  NA           --             5     slow
+MC46  18   PT   internal_io_low C----  --                  Com_Ctrl_292 --             3     slow
+MC47  0         --                     XXL_295      C----  NA           --             5     slow
+MC48  17   --   TMS             INPUT  XXL_296      C----  NA           --             5     slow
 MC49  39   PT   data1_low       C----  --                  --           --             4     slow
-MC50  0         --                     --                  --           --             0     slow
+MC50  0         --                     XXL_315      C----  --           --             3     slow
 MC51  38   PT   data2_low       C----  --                  --           --             4     slow
-MC52  0         --                     --                  --           --             0     slow
+MC52  0         --                     XXL_313      C----  --           --             3     slow
 MC53  37   PT   data3_low       C----  --                  --           --             4     slow
-MC54  35   --   md04_low        INPUT  --                  --           --             0     slow
-MC55  0         --                     --                  --           --             0     slow
-MC56  34   --   md05_low        INPUT  --                  --           --             0     slow
-MC57  33   --   md06_low        INPUT  --                  --           --             0     slow
-MC58  0         --                     --                  --           --             0     slow
-MC59  32   --   md07_low        INPUT  XXL_289      C----  --           --             2     slow
-MC60  0         --                     XXL_288      C----  NA           --             5     slow
+MC54  35   --   md04_low        INPUT  XXL_311      C----  --           --             3     slow
+MC55  0         --                     XXL_303      C----  --           --             3     slow
+MC56  34   --   md05_low        INPUT  XXL_307      C----  --           --             3     slow
+MC57  33   --   md06_low        INPUT  XXL_314      C----  NA           --             5     slow
+MC58  0         --                     XXL_310      C----  NA           --             5     slow
+MC59  32   --   md07_low        INPUT  XXL_306      C----  NA           --             5     slow
+MC60  0         --                     XXL_302      C----  NA           --             5     slow
 MC61  31   PT   data4_low       C----  --                  --           --             4     slow
 MC62  30   PT   data5_low       C----  --                  --           --             4     slow
-MC63  0         --                     XXL_290      C----  NA           --             5     slow
+MC63  0         --                     XXL_312      C----  NA           --             5     slow
 MC64  29   PT   data6_low       C----  --                  --           --             4     slow
 MC65  42   PT   data0_low       C----  --                  --           --             4     slow
-MC66  0         --                     --                  --           --             0     slow
+MC66  0         --                     XXL_305      C----  --           --             3     slow
 MC67  43        --                     --                  --           --             0     slow
-MC68  0         --                     --                  --           --             0     slow
-MC69  44   --   md03_low        INPUT  Com_Ctrl_283 C----  --           --             3     slow
+MC68  0         --                     n_t_33x      Dc-r-  --           --             4     slow
+MC69  44   --   md03_low        INPUT  msb12        Dc-r-  --           --             4     slow
 MC70  46        --                     --                  --           --             0     slow
-MC71  0         --                     Com_Ctrl_282 C----  --           --             3     slow
-MC72  47        --                     --                  Com_Ctrl_284 --             1     slow
-MC73  48        --                     --                  NA           -> msb12       5     slow
-MC74  0         --                     msb12        Dc-r-  NA           --             5     slow
-MC75  49        --                     --                  NA           -> n_t_33x     5     slow
-MC76  0         --                     n_t_33x      Dc-r-  NA           --             5     slow
-MC77  50        --                     --                  NA           -> n_t_60x     5     slow
-MC78  51        --                     n_t_60x      Dc-r-  NA           --             5     slow
-MC79  0         --                     --                  NA           -> n_t_2x      5     slow
-MC80  52        --                     n_t_2x       Dc-r-  NA           --             5     slow
+MC71  0         --                     n_t_2x       Dc-r-  --           --             4     slow
+MC72  47        --                     --                  --           --             0     slow
+MC73  48        --                     --                  --           --             0     slow
+MC74  0         --                     XXL_320      C----  NA           --             5     slow
+MC75  49        --                     --                  --           --             0     slow
+MC76  0         --                     XXL_308      C----  NA           --             5     slow
+MC77  50        --                     --                  --           --             0     slow
+MC78  51        --                     XXL_321      C----  --           --             3     slow
+MC79  0         --                     XXL_304      C----  NA           --             5     slow
+MC80  52        --                     XXL_309      C----  Com_Ctrl_292 --             4     slow
 MC81  54        --                     --                  --           --             0     slow
-MC82  0         --                     n_t_69x      Dc-r-  --           --             3     slow
+MC82  0         --                     XXL_325      C----  --           --             3     slow
 MC83  55        --                     --                  --           --             0     slow
-MC84  0         --                     n_t_45x      Dc--p  --           --             3     slow
+MC84  0         --                     XXL_327      C----  --           --             3     slow
 MC85  56        --                     --                  --           --             0     slow
 MC86  57        --                     --                  --           --             0     slow
-MC87  0         --                     n_t_59x      Dc-rp  --           --             3     slow
+MC87  0         --                     n_t_63x      Dc-r-  --           --             4     slow
 MC88  58   on   parity          C----  --                  --           --             1     slow
 MC89  59   on   done_skip_low   C----  --                  --           --             1     slow
-MC90  0         --                     gdollar_0    Dc-r-  --           --             4     slow
+MC90  0         --                     n_t_60x      Dc-r-  --           --             4     slow
 MC91  60   on   tr_skip_low     C----  --                  --           --             1     slow
-MC92  0         --                     gdollar_2    Dc-r-  NA           --             5     slow
+MC92  0         --                     n_t_31x      Dc-r-  --           --             4     slow
 MC93  62        --                     --                  --           --             0     slow
-MC94  63        --                     --                  Com_Ctrl_284 --             1     slow
-MC95  0         --                     --                  NA           -> gdollar_3   5     slow
-MC96  64   --   TCK             INPUT  gdollar_3    Dc-r-  NA           --             5     slow
-MC97  65        --                     --                  --           --             0     slow
-MC98  0         --                     --                  --           --             0     slow
-MC99  66        --                     --                  --           --             0     slow
-MC100 0         --                     --                  --           --             0     slow
-MC101 67        --                     --                  --           --             0     slow
-MC102 69        --                     --                  --           --             0     slow
-MC103 0         --                     run          Dc-r-  --           --             2     slow
+MC94  63        --                     --                  Com_Ctrl_292 --             1     slow
+MC95  0         --                     XXL_326      C----  NA           --             5     slow
+MC96  64   --   TCK             INPUT  XXL_324      C----  NA           --             5     slow
+MC97  65        --                     gdollar_1    Dc-r-  --           --             3     slow
+MC98  0         --                     parity_low   Dc--p  --           --             3     slow
+MC99  66        --                     n_t_72x      Dc-r-  --           --             3     slow
+MC100 0         --                     n_t_59x      Dc-rp  --           --             3     slow
+MC101 67        --                     n_t_69x      Dc-r-  --           --             3     slow
+MC102 69        --                     n_t_70x      Dc-r-  --           --             3     slow
+MC103 0         --                     XXL_299      C----  --           --             4     slow
 MC104 70   PT   rx_run_low      C----  --                  --           --             2     slow
-MC105 71        --                     --                  --           --             0     slow
-MC106 0         --                     gdollar_1    Dc-r-  --           --             3     slow
-MC107 72   --   rx_error_low    INPUT  n_t_72x      Dc-r-  --           --             3     slow
-MC108 0         --                     parity_low   Dc--p  --           --             3     slow
-MC109 73        --                     --                  --           --             0     slow
+MC105 71   on   f               C----  --                  --           --             0     slow
+MC106 0         --                     n_t_67x      Dc-r-  --           --             4     slow
+MC107 72   --   rx_error_low    INPUT  n_t_66x      Dc-r-  --           --             4     slow
+MC108 0         --                     n_t_65x      Dc-r-  --           --             4     slow
+MC109 73   on   l               C----  --                  --           --             0     slow
 MC110 74   PT   rx_init_low     C----  --                  --           --             2     slow
-MC111 0         --                     n_t_70x      Dc-r-  FB_285       --             4     slow
-MC112 75   --   TDO             INPUT  XXL_291      C----  Com_Ctrl_284 --             5     slow
+MC111 0         --                     n_t_64x      Dc-r-  FB_293       --             5     slow
+MC112 75   --   TDO             INPUT  n_t_62x      Dc-r-  Com_Ctrl_292 --             5     slow
 MC113 77   --   rx_tr_req_low   INPUT  --                  --           --             0     slow
 MC114 0         --                     --                  --           --             0     slow
-MC115 78        --                     --                  --           --             0     slow
+MC115 78   on   v               C----  --                  --           --             0     slow
 MC116 0         --                     --                  --           --             0     slow
 MC117 79   --   rx_done_low     INPUT  --                  --           --             0     slow
-MC118 80        --                     --                  --           --             0     slow
+MC118 80   on   z               C----  --                  --           --             0     slow
 MC119 0         --                     --                  --           --             0     slow
 MC120 81   PT   rx_data_low     C----  --                  NA           --             5     slow
-MC121 82        --                     --                  --           --             0     slow
-MC122 0         --                     --                  --           --             0     slow
+MC121 82   on   dd              C----  --                  --           --             0     slow
+MC122 0         --                     run          Dc-r-  --           --             2     slow
 MC123 83   PT   rx_12_bit_low   Dc-r-  --                  --           --             4     slow
-MC124 0         --                     --                  --           --             0     slow
+MC124 0         --                     XXL_323      C----  --           --             3     slow
 MC125 85   on   n_t_7x          C----  --                  --           --             1     slow
 MC126 86   on   n_t_8x          C----  --                  --           --             1     slow
-MC127 0         --                     n_t_61x      Dc-rp  --           --             3     slow
-MC128 87        --                     --                  Com_Ctrl_284 --             1     slow
+MC127 0         --                     XXL_322      C----  NA           --             5     slow
+MC128 87        --                     --                  Com_Ctrl_292 --             1     slow
 MC0   92        n_t_1x          INPUT  --                  --           --             0     slow
 MC0   91        n_t_5x          INPUT  --                  --           --             0     slow
 MC0   90        --                     --                  --           --             0     slow
 MC0   89        n_t_6x          INPUT  --                  --           --             0     slow
 
 Logic Array Block	Logic Cells	I/O Pins	Foldbacks	TotalPT		FanIN	Cascades
-A: LC1	- LC16		12/16(75%)	7/16(43%)	1/16(6%)	71/80(88%)	(29)	4
-B: LC17	- LC32		10/16(62%)	8/16(50%)	1/16(6%)	37/80(46%)	(30)	1
-C: LC33	- LC48		8/16(50%)	8/16(50%)	1/16(6%)	50/80(62%)	(30)	3
-D: LC49	- LC64		9/16(56%)	10/16(62%)	0/16(0%)	36/80(45%)	(30)	0
-E: LC65	- LC80		7/16(43%)	2/16(12%)	1/16(6%)	51/80(63%)	(30)	4
-F: LC81	- LC96		9/16(56%)	4/16(25%)	1/16(6%)	32/80(40%)	(30)	1
-G: LC97	- LC112		8/16(50%)	4/16(25%)	2/16(12%)	24/80(30%)	(19)	0
-H: LC113- LC128		5/16(31%)	6/16(37%)	1/16(6%)	15/80(18%)	(27)	0
+A: LC1	- LC16		16/16(100%)	10/16(62%)	1/16(6%)	48/80(60%)	(31)	0
+B: LC17	- LC32		10/16(62%)	8/16(50%)	1/16(6%)	31/80(38%)	(32)	0
+C: LC33	- LC48		14/16(87%)	8/16(50%)	1/16(6%)	56/80(70%)	(32)	0
+D: LC49	- LC64		16/16(100%)	10/16(62%)	0/16(0%)	64/80(80%)	(27)	0
+E: LC65	- LC80		10/16(62%)	2/16(12%)	1/16(6%)	41/80(51%)	(32)	0
+F: LC81	- LC96		10/16(62%)	4/16(25%)	1/16(6%)	32/80(40%)	(32)	0
+G: LC97	- LC112		16/16(100%)	6/16(37%)	2/16(12%)	48/80(60%)	(32)	0
+H: LC113- LC128		10/16(62%)	9/16(56%)	1/16(6%)	22/80(27%)	(31)	0
 
 Total dedicated input used:	3/4 	(75%)
-Total I/O pins used		49/80 	(61%)
-Total Logic cells used 		81/128 	(63%)
+Total I/O pins used		57/80 	(71%)
+Total Logic cells used 		102/128 	(79%)
 Total Flip-Flop used 		28/128 	(21%)
 Total Foldback logic used 	8/128 	(6%)
-Total Nodes+FB/MCells 		76/128 	(59%)
-Total cascade used 		13
+Total Nodes+FB/MCells 		110/128 	(85%)
+Total cascade used 		0
 Total input pins 		25
-Total output pins 		27
-Total Pts 			316
-Creating pla file C:\CYGWIN\HOME\VINCE\TTL2PLD\M8357\RX8E.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+Total output pins 		35
+Total Pts 			342
+Creating pla file C:\USERS\VINCE\DOCUMENTS\WEBSVN\TRUNK\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
 
 ----------------  End fitter, Design FITS
 $Device PQFP100 fits 
