@@ -5,6 +5,7 @@ panel replacement.</LI>
 <LI><b>board2</b> is the latest drawing of board 2 (back) of the 8/A front
 panel replacement.</LI>
 <LI><b>board2-4layer</b> is a 4 layer version of board2.</LI>
+<LI><b>board2-c</b> is a version of board2 with a different layout (requested by Charles).</LI>
 <LI><b>oboard2</b> is a checkpoint of an old version (06/02/2005) of
 board2.</LI>
 <LI><b>Progpanl.fpd</b> is a Front Panel Express drawing of the Programmer's
