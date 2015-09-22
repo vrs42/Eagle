@@ -250,7 +250,7 @@ UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/zilog.lbr"
 
 [Win_1]
 Type="Library Editor"
-Loc="206 244 805 643"
+Loc="222 336 821 735"
 State=1
 Number=3
 File="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/dec-con.lbr"
@@ -290,7 +290,7 @@ Device="JUMPER"
 
 [Win_2]
 Type="Schematic Editor"
-Loc="174 269 773 668"
+Loc="190 361 789 760"
 State=1
 Number=1
 File="TD8Edaughter.sch"
@@ -330,7 +330,7 @@ Sheet=1
 
 [Win_3]
 Type="Board Editor"
-Loc="284 379 883 778"
+Loc="300 471 899 870"
 State=1
 Number=2
 File="TD8Edaughter.brd"
@@ -369,7 +369,7 @@ Layer=16
 
 [Win_4]
 Type="Control Panel"
-Loc="66 66 675 465"
+Loc="70 89 679 488"
 State=2
 Number=0
 
