@@ -1,0 +1,56 @@
+Newsgroups: alt.sys.pdp8
+Path: sparky!uunet!amdahl!news.fai.com!news.ossi.com!agate!howland.reston.ans.net!sol.ctr.columbia.edu!news.columbia.edu!watsun.cc.columbia.edu!lasner
+From: las...@watsun.cc.columbia.edu (Charles Lasner)
+Subject: Teeny Tiny RX01 Bootstrap
+Message-ID: <1993Mar29.171612.23495@news.columbia.edu>
+Sender: use...@news.columbia.edu (The Network News)
+Nntp-Posting-Host: watsun.cc.columbia.edu
+Reply-To: las...@watsun.cc.columbia.edu (Charles Lasner)
+Organization: Columbia University
+Date: Mon, 29 Mar 1993 17:16:12 GMT
+Lines: 44
+
+By popular demand, here is the tiny bootstrap for the RX01.  It is for drive
+zero only, does not retry indefinitely, depends on the "kerclunka" self-test
+to do the reading for it, and is either for actual RX01 or compatible, or
+for RX02 set for RX01 mode only.
+
+There are only 13 significent words to load, and a bunch of zeroes in a row
+(which must be 0000) and one don't care location (a subroutine header) which
+can be loaded with the previous or next location's contents to save a switch
+setting operation, etc.
+
+/	TINY RX01 DRIVE ZERO ONLY BOOTSTRAP.
+
+			*33			/STARTS LOADING HERE
+
+00033	6755	SHANGG,	SDN			/BOOTSTRAP STARTS HERE; DONE FLAG UP?
+00034	5054		JMP	SLODE1		/TRY TRANSFER FLAG IF DONE FLAG IS NOT UP
+00035	7326		NL0002			/SETUP FOR EMPTYING
+00036	6751		LCD			/LOAD THE COMMAND
+
+00037	0000		ZBLOCK	SLP-.		/0000'S WILL EXECUTE AND FALL THROUGH TO SLP!
+00040	0000
+00041	0000
+00042	0000
+00043	0000
+00044	0000
+00045	0000
+00046	0000
+
+00047	4053	SLP,	JMS	SLODE		/GET A WORD
+00050	3002	SLPSTR,	DCA	SBOOT&177+2	/PUT A WORD
+00051	2050		ISZ	SLPSTR		/BUMP TO NEXT WORD
+00052	5047		JMP	SLP		/KEEP GOING UNTIL SLP IS OVERLAYED!
+
+00053	5047	SLODE,	.-.			/LOAD A WORD ROUTINE;OK to use same as previous or following or anything else
+00054	6753	SLODE1,	STR			/WORD READY?
+00055	5033		JMP	SHANGG		/NO, TRY DONE
+00056	6752		XDR			/YES, GET A WORD
+00057	5453		JMP I	SLODE		/RETURN
+
+00060	7004	SBU,	0^20+7004		/INDICATE UNIT ZERO TO NEXT LEVEL
+
+This is the shortest way to get an RX system going by hand.
+
+cjl
