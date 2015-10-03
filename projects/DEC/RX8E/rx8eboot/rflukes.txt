@@ -1,0 +1,87 @@
+Received: from lcs.mit.edu (CHAOS 15044) by MC.LCS.MIT.EDU;  6 Jan 90 16:58:01 EST
+Received: from MITVMA.MIT.EDU by mintaka.lcs.mit.edu id aa28639;
+          6 Jan 90 16:13 EST
+Received: from MITVMA.MIT.EDU by mitvma.mit.edu (IBM VM SMTP R1.2.1MX) with BSMTP id 2262; Sat, 06 Jan 90 15:50:11 EST
+Received: from ccm.UManitoba.CA by MITVMA.MIT.EDU (Mailer R2.05) with BSMTP id
+ 9703; Sat, 06 Jan 90 15:50:10 EST
+Date:    Sat, 06 Jan 90 14:48 CST
+From:    RFLUKES%ccm.UManitoba.CA@mitvma.mit.edu
+To:      pdp8-lovers@mc.lcs.mit.edu
+Subject: Minimal Bootstrap for RX8E
+Message-ID:  <9001061613.aa28639@mintaka.lcs.mit.edu>
+
+I got this bootstrap code from a manual for an 8/e disk subsystem
+built by DSD.  I have been using this bootstrap with my RX8E
+controller and find that it is shorter and easier to toggle into
+the 8/e than the DEC bootstrap.
+
+------------------------------------------------------------------------
+
+                MINIMAL PDP-8 BOOTSTRAP PROGRAM (RX)
+
+   The following is a minimal length boot program for both the RX01 and
+RX02 mode systems.  This boot tries only the specified drive with the
+specified density.  Start at location 32 to BOOT drive 0.  Start at
+location 22 to boot drive 1.
+
+/ * THIS FIRST SECTION IS NECESSARY ONLY WHEN BOOTING ONTO DRIVE 1.
+         / READS IN SECTOR 1 TRACK 1 ON SPECIFIED DRIVE
+22*6755  BOTDV1,  SDNF            /START HERE TO BOOT DRIVE 1.
+23*7000           NOP             /SKIP THIS WHEN CLEARING FLAG
+24*7327           AC6             /SET AC=6
+25*1061           TAD  UNIT       /MAKE INTO READ SECTOR COMMAND
+26*6751           LCD             /COMMAND = CONTROLLER
+27*7301           CLA  IAC        /SET AC TO 1 FOR SECTOR, TRACK
+30*4053           JMS  LOAD       /SEND SECTOR TO CONTROLLER
+31*4053           JMS  LOAD       /SEND TRACK TO CONTROLLER
+         / DOES NOT USE LOCATIONS 22-31 WHEN STARTED AT 32
+         /
+         / START AT LOCATION 32 TO BOOT DRIVE 0.
+         / USES INIT TO READ DRIVE 0 TRACK 1 SECTOR 1
+         /
+32 7305  BOTDV0,  CLA CLL IAC RAL /GENERATE THE EMPTY BUFFER COMMAN
+33 6755  CHKFLG,  SDNF            /WAIT FOR DONE FLAG UP
+34 5054           JMP  LOAD+1     /NO - CHECK FOR READY TRANSFER
+35 1061           TAD  UNIT       /YES-PUT IN READ UNIT, DENSITY
+36 6751           LCD             /SEND EMPTY BUFFER COMMAND
+37 5047           JMP  BOTLP      /START TO LOAD SECTOR BUFFER
+         ////////
+         ////////
+47 4053  BOTLP,   JMS  LOAD       /READ NEXT WORD FROM SILO
+50 3002           DCA  2          / START LOADING AT LOC. 2
+51 2050           ISZ  .-1        / BUMP LOAD ADDRESS
+52 5047           JMP  BOTLP      /CONTINUE EMPTYING BUFFER
+         /
+53 ****  LOAD,    0               /DATA TRANSFER SUBROUTINE
+54 6753           STRF            / SKIP IF CONTROLLER WILL SPEAK
+55 5033           JMP  CHKFLG     / NO - CHECK IF FINISHED
+56 6752           XDR             / TRANSFER DATA IN OR OUT
+57 5453           JMP  I LOAD     / RETURN TO CALLER
+         /
+60 7004  (DY0)    OR   7024  (DY1)/ USED BY SECONDARY BOOT
+                                  / TO SELECT DRIVE 0 OR DRIVE 1
+61 0000  OR  0400 OR  0020 OR 0420/ DX0-SD, DX0-DD, DX1-SD, DX1-DD
+
+
+  This bootstrap requires different values in locations 60 and 61
+for single or double density,  and drive 0 or drive 1 bootstrapping.
+These values are listed below.
+
+    Drive 0, Single Density - Start at location 32
+             60/ 7004
+             61/ 0000
+
+    Drive 0, Double Density - Start at location 32
+             60/ 7004
+             61/ 0400
+
+    Drive 1, Double Density - Start at location 22
+             60/ 7024
+             61/ 0420
+
+
+------------
+Richard
+
+
+

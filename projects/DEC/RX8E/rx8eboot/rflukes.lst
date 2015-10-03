@@ -1,0 +1,79 @@
+   1            /               MINIMAL PDP-8 BOOTSTRAP PROGRAM (RX)
+   2            /
+   3            / Taken from a manual for an 8/e disk subsystem built by DSD;
+   4            / shorter and easier to toggle in than DECs bootstrap.
+   5            
+   6            / The following is a minimal length boot program for both
+   7            / the RX01 and RX02.  This boot tries only the specified
+   8            / drive with the specified density.  Start at location 32 to
+   9            / BOOT drive 0.  Start at location 22 to boot drive 1.
+  10            / This has been verified to work with an OS/8 diskette.
+  11            
+  12            / the contents of locations 60 and 61 can be fudged to
+  13            / change what disk and what density are used.
+  14            
+  15            / configuration section
+  16            
+  17            IOTADR=0750             / default system drive is at IOT 75
+  18            
+  19            DRIVE0=0000
+  20            DRIVE1=0020
+  21            DRIVE=DRIVE0            / set to either DRIVE0 or DRIVE1
+  22            
+  23            SINGLE=0000
+  24            DOUBLE=0400
+  25            DENSTY=SINGLE           / set to either SINGLE or DOUBLE
+  26            
+  27            / RX01 and other opcode definitions
+  28            
+  29            LCD=6001+IOTADR
+  30            XDR=6002+IOTADR
+  31            STR=6003+IOTADR
+  32            SDN=6005+IOTADR
+  33            
+  34            NL001=CLA CLL IAC
+  35            NL002=CLA CLL CML RTL / VRS was IAC RAL
+  36            NL006=CLA CLL CML IAC RTL
+  37            
+  38            / THIS SECTION IS NEEDED ONLY WHEN BOOTING FROM DRIVE 1.
+  39            / READS IN SECTOR 1 TRACK 1 ON DRIVE O OR 1.
+  40            / VRS Because of the NL006, this also won't work on the straight-8.
+  41            *22
+  42 00022 6755 BOTDV1, SDN             /START HERE TO BOOT DRIVE 1.
+  43 00023 7000         NOP             /SKIP THIS WHEN CLEARING FLAG
+  44 00024 7327         NL006           /SET AC=6
+  45 00025 1061         TAD  UNIT       /MAKE INTO READ SECTOR COMMAND
+  46 00026 6751         LCD             /COMMAND = CONTROLLER
+  47 00027 7301         CLA CLL IAC     /SET AC TO 1 FOR SECTOR, TRACK
+  48 00030 4053         JMS  LOAD       /SEND SECTOR TO CONTROLLER
+  49 00031 4053         JMS  LOAD       /SEND TRACK TO CONTROLLER
+  50            / DOES NOT USE LOCATIONS 22-31 WHEN STARTED AT 32
+  51            
+  52            / START HERE TO BOOT DRIVE 0 (ASSUME MASTER CLEAR HAS
+  53            / READ DRIVE 0 TRACK 1 SECTOR 1 FOR YOU).
+  54            
+  55            *32
+  56 00032 7326 BOTDV0, NL002           / MAKE EMPTY BUFFER COMMAND
+  57 00033 6755 CHKFLG, SDN             / WAIT FOR DONE FLAG UP
+  58 00034 5054         JMP     LOAD+1  / NO - CHECK FOR READY TRANSFER
+  59 00035 1061         TAD     UNIT    / YES-PUT IN READ UNIT, DENSITY
+  60 00036 6751         LCD             / SEND EMPTY BUFFER COMMAND
+  61 00037 5047         JMP     BOTLP   / START TO LOAD SECTOR BUFFER
+  62            
+  63            *47     /////////////////
+  64            
+  65 00047 4053 BOTLP,  JMS     LOAD    / READ NEXT WORD FROM SILO
+  66 00050 3002         DCA     2       / START LOADING AT LOC. 2
+  67 00051 2050         ISZ     .-1     / BUMP LOAD ADDRESS
+  68 00052 5047         JMP     BOTLP   / CONTINUE EMPTYING BUFFER
+  69            /
+  70 00053 0000 LOAD,   .-.             / DATA TRANSFER SUBROUTINE
+  71 00054 6753         STR             / SKIP IF CONTROLLER WILL SPEAK
+  72 00055 5033         JMP     CHKFLG  / NO - CHECK IF FINISHED
+  73 00056 6752         XDR             / TRANSFER DATA IN OR OUT
+  74 00057 5453         JMP I   LOAD    / RETURN TO CALLER
+  75            /
+  76 00060 7004         7004+DRIVE      / USED BY SECONDARY BOOT
+  77                                    / TO SELECT DRIVE 0 OR DRIVE 1
+  78 00061 0000 UNIT,   DENSTY+DRIVE    / WHAT TRANSPORT, WHAT DENSITY?
+  79            $
