@@ -4,10 +4,6 @@
 
 IOTADR=0750             / default system drive is at IOT 75
 
-DRIVE0=0000
-DRIVE1=0020
-DRIVE=DRIVE0            / set to either DRIVE0 or DRIVE1
-
 / RX01 and other opcode definitions
 
 LCD=6001+IOTADR
@@ -18,7 +14,7 @@ SDN=6005+IOTADR
 NL0001=CLA CLL IAC
 NL0002=CLA CLL CML RTL
 
-/ Contstants pertaining to the bootstrap sector being read.
+/ Constants pertaining to the bootstrap sector being read.
 SBOOT=0002
 SLP=0047
 
@@ -42,5 +38,5 @@ SLODE1,	STR			/WORD READY?
 	XDR			/YES, GET A WORD
 	JMP I	SLODE		/RETURN
 
-SBU,	DRIVE+7004		/INDICATE UNIT ZERO TO NEXT LEVEL
+SBU,	0^20+7004		/INDICATE UNIT ZERO TO NEXT LEVEL
 $
