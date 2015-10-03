@@ -8,32 +8,28 @@
    8            DRIVE1=0020
    9            DRIVE=DRIVE0            / set to either DRIVE0 or DRIVE1
   10            
-  11            SINGLE=0000
-  12            DOUBLE=0400
-  13            DENSTY=SINGLE           / set to either SINGLE or DOUBLE
-  14            
-  15            / RX01 and other opcode definitions
-  16            
-  17            LCD=6001+IOTADR
-  18            XDR=6002+IOTADR
-  19            STR=6003+IOTADR
-  20            SDN=6005+IOTADR
-  21            
-  22            NL0001=CLA CLL IAC
-  23            NL0002=CLA CLL CML RTL
+  11            / RX01 and other opcode definitions
+  12            
+  13            LCD=6001+IOTADR
+  14            XDR=6002+IOTADR
+  15            STR=6003+IOTADR
+  16            SDN=6005+IOTADR
+  17            
+  18            NL0001=CLA CLL IAC
+  19            NL0002=CLA CLL CML RTL
+  20            
+  21            / Contstants pertaining to the bootstrap sector being read.
+  22            SBOOT=0002
+  23            SLP=0047
   24            
-  25            / Contstants pertaining to the bootstrap sector being read.
-  26            SBOOT=0002
-  27            SLP=0047
-  28            
-  29                    *33                     /STARTS LOADING HERE
-  30            
-  31 00033 6755 SHANGG, SDN                     /BOOTSTRAP STARTS HERE; DONE FLAG UP?
-  32 00034 5054         JMP     SLODE1          /TRY TRANSFER FLAG IF DONE FLAG IS NOT UP
-  33 00035 7326         NL0002                  /SETUP FOR EMPTYING
-  34 00036 6751         LCD                     /LOAD THE COMMAND
-  35            
-  36 00037 0000         ZBLOCK  SLP-.           /0000'S WILL EXECUTE AND FALL THROUGH TO SLP!
+  25                    *33                     /STARTS LOADING HERE
+  26            
+  27 00033 6755 SHANGG, SDN                     /BOOTSTRAP STARTS HERE; DONE FLAG UP?
+  28 00034 5054         JMP     SLODE1          /TRY TRANSFER FLAG IF DONE FLAG IS NOT UP
+  29 00035 7326         NL0002                  /SETUP FOR EMPTYING
+  30 00036 6751         LCD                     /LOAD THE COMMAND
+  31            
+  32 00037 0000         ZBLOCK  SLP-.           /0000'S WILL EXECUTE AND FALL THROUGH TO SLP!
      00040 0000 
      00041 0000 
      00042 0000 
@@ -41,17 +37,17 @@
      00044 0000 
      00045 0000 
      00046 0000 
-  37            
-  38 00047 4053 SLP,    JMS     SLODE           /GET A WORD
-  39 00050 3004 SLPSTR, DCA     SBOOT&177+2     /PUT A WORD
-  40 00051 2050         ISZ     SLPSTR          /BUMP TO NEXT WORD
-  41 00052 5047         JMP     SLP             /KEEP GOING UNTIL SLP IS OVERLAYED!
-  42            
-  43 00053 5047 SLODE,  JMP     SLP             /LOAD A WORD ROUTINE;OK to use same as previous or following or anything else  44            
-  45 00054 6753 SLODE1, STR                     /WORD READY?
-  46 00055 5033         JMP     SHANGG          /NO, TRY DONE
-  47 00056 6752         XDR                     /YES, GET A WORD
-  48 00057 5453         JMP I   SLODE           /RETURN
-  49            
-  50 00060 7004 SBU,    0^20+7004               /INDICATE UNIT ZERO TO NEXT LEVEL
-  51            $
+  33            
+  34 00047 4053 SLP,    JMS     SLODE           /GET A WORD
+  35 00050 3004 SLPSTR, DCA     SBOOT&177+2     /PUT A WORD
+  36 00051 2050         ISZ     SLPSTR          /BUMP TO NEXT WORD
+  37 00052 5047         JMP     SLP             /KEEP GOING UNTIL SLP IS OVERLAYED!
+  38            
+  39 00053 5047 SLODE,  JMP     SLP             /LOAD A WORD ROUTINE;OK to use same as previous or following or anything else  40            
+  41 00054 6753 SLODE1, STR                     /WORD READY?
+  42 00055 5033         JMP     SHANGG          /NO, TRY DONE
+  43 00056 6752         XDR                     /YES, GET A WORD
+  44 00057 5453         JMP I   SLODE           /RETURN
+  45            
+  46 00060 7004 SBU,    DRIVE+7004              /INDICATE UNIT ZERO TO NEXT LEVEL
+  47            $
