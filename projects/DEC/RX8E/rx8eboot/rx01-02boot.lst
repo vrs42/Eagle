@@ -1,76 +1,82 @@
-   1                    LCD=6751
-   2                    SDN=6755
-   3                    SER=6754
-   4                    STR=6753
-   5                    XDR=6752
+   1            / THIS IS A DISASSEMBLY OF THE RX28 BOOT 
+   2            / LOADER IN TABLE 1-8 OF the EK-RX012-PS-002 
+   3            / "RX01 & RX02 POCKET SERVICE GUIDE".
+   4            / I got it from David Gesswein:
+   5            / http://www.pdp8online.com/ftp/software/rx02boot/
    6            
-   7                    *20
-   8            /  DEVICE IOT SYMBOLIC EQUATES
-   9            /
-  10            LCD=6751                /LOAD COMMAND
-  11            XDR=6752                /TRANSFER DATA
-  12            STR=6753                /SKIP IF READY TO TRANSFER
-  13            SER=6754                /SKIP ON ERROR
-  14            SDN=6755                /SKIP ON DONE
+   7                    LCD=6751
+   8                    SDN=6755
+   9                    SER=6754
+  10                    STR=6753
+  11                    XDR=6752
+  12            
+  13                    *20
+  14            /  DEVICE IOT SYMBOLIC EQUATES
   15            /
-  16            /
-  17            /
-  18            /
-  19 00020 1061 READ,   TAD     UNIT    /TRY NEXT COMBINATION OF DENSITY AND UNIT
-  20 00021 1046         TAD     CON360  /ADDING IN 360
-  21 00022 0060         AND     CON420  /KEEPING ONLY 420 BITS
-  22 00023 3061         DCA     UNIT    /CYCLES 400,420,0,20,400,,,,,,,,
-  23 00024 7327         CLL CLA CML IAC RTL /COMMAND TO READ DISK - MUST BE ON OMNIBUS!
-  24 00025 1061         TAD     UNIT    /UNIT AND DENSITY
-  25 00026 6751         LCD             /COMMAND TO CONTROLLER
-  26 00027 7301         CLL CLA IAC     /TO SET SECTOR AND TRACK TO 1
-  27 00030 4053         JMS     LOAD    /SECTOR TO CONTROLLER, LEAVES AC ALONE
-  28 00031 4053         JMS     LOAD    /AND TRACK
-  29 00032 7004 LITRAL, 7004            /LEAVING A 2 IN AC; SERVES AS LITERAL
-  30            /
-  31            /  FOLLOWING IS PART OF WAIT LOOP, SAME SECONDARY BOOTS, OLD PRIMARY BOOT
-  32            /
-  33            RXSTRT,
-  34 00033 6755 XSTRT,  SDN             /HAS DONE COME UP; CODE STARTS HERE!
-  35 00034 5054         JMP     LOAD+1  /NO, GO CHECK FOR READY TO TRANSFER
+  16            LCD=6751                /LOAD COMMAND
+  17            XDR=6752                /TRANSFER DATA
+  18            STR=6753                /SKIP IF READY TO TRANSFER
+  19            SER=6754                /SKIP ON ERROR
+  20            SDN=6755                /SKIP ON DONE
+  21            /
+  22            /
+  23            /
+  24            /
+  25 00020 1061 READ,   TAD     UNIT    /TRY NEXT COMBINATION OF DENSITY AND UNIT
+  26 00021 1046         TAD     CON360  /ADDING IN 360
+  27 00022 0060         AND     CON420  /KEEPING ONLY 420 BITS
+  28 00023 3061         DCA     UNIT    /CYCLES 400,420,0,20,400,,,,,,,,
+  29 00024 7327         CLL CLA CML IAC RTL /COMMAND TO READ DISK - MUST BE ON OMNIBUS!
+  30 00025 1061         TAD     UNIT    /UNIT AND DENSITY
+  31 00026 6751         LCD             /COMMAND TO CONTROLLER
+  32 00027 7301         CLL CLA IAC     /TO SET SECTOR AND TRACK TO 1
+  33 00030 4053         JMS     LOAD    /SECTOR TO CONTROLLER, LEAVES AC ALONE
+  34 00031 4053         JMS     LOAD    /AND TRACK
+  35 00032 7004 LITRAL, 7004            /LEAVING A 2 IN AC; SERVES AS LITERAL
   36            /
-  37            /  NOW, DONE OR ERROR
+  37            /  FOLLOWING IS PART OF WAIT LOOP, SAME SECONDARY BOOTS, OLD PRIMARY BOOT
   38            /
-  39 00035 6754         SER             /SKIP ON AN ERROR, TRY ANOTHER DENSITY ETC.
-  40 00036 7450         SNA             /NASTY, AC=2 FOR ABOUT TO DO SILO, 0 ON START-UP
-  41 00037 5020         JMP     READ    /START-UP, GO SET UP UNIT, THEN READ TO SILO
-  42 00040 1061         TAD     UNIT    /AC ALREADY 2, PUT IN UNIT, DENSITY
-  43 00041 6751         LCD             /TO EMPTY THE SILO
-  44 00042 1061         TAD     UNIT    /SET UP LOC 60 FOR OLD SECONDARY BOOT
-  45 00043 0046         AND     CON360  /KEEPING UNLY DENSITY BIT
-  46 00044 1032         TAD     LITRAL  /ADDING IN 7004, BECAUSE THAT'S WHAT SYS WANTS
-  47 00045 3060         DCA     RX1SAV  /OLD SECONDARY BOOT MOVES IT TO HANDLER
-  48 00046 0360 CON360, 360             /LITERAL; EXECUTES IN LINE AS A NO-OP
-  49            /                       /FALLS THRU TO NEXT PAGE OF LISTING
-  50            /
-  51            /
-  52            /  FOLLOWING CODE SAME AS OLD PRIMARY BOOT
-  53            /
-  54 00047 4053         JMS     LOAD    /GRAB NEXT ITEM FROM SILO
-  55 00050 3002         DCA     2       /TRADITION; SECONDARY BOOT STARTS LOADING AT 2 !
-  56 00051 2050         ISZ     50      /INCREMENT LOAD ADDRESS
-  57 00052 5047         JMP     47      /GO BACK FOR ANOTHER
-  58            /
-  59            /  SECONDARY BOOT LOADS OVER PRIMARY BOOT UNIT LOCATION 47 IS LOADED,
-  60            /  THEN CONTROL PASSES TO SECONDARY BOOT
-  61            /
-  62 00053 0000 LOAD,   0               /SUBROUTINE TO GIVE AND TAKE DATA FROM CONTROLLER
-  63 00054 6753         STR             /IS HE READY TO TALK TO US?
-  64 00055 5033         JMP XSTRT       /NO, IS HE PERHAPS DONE WITH SILO, OR IN ERROR?
-  65 00056 6752         XDR             /YES, DATA IN OR OUT;IF DATA TO CONTROLLER, AC UNCHANGED
-  66 00057 5453         JMP I   LOAD    /NO MAGIC, JUST EXIT FROM SUBROUTINE
+  39            RXSTRT,
+  40 00033 6755 XSTRT,  SDN             /HAS DONE COME UP; CODE STARTS HERE!
+  41 00034 5054         JMP     LOAD+1  /NO, GO CHECK FOR READY TO TRANSFER
+  42            /
+  43            /  NOW, DONE OR ERROR
+  44            /
+  45 00035 6754         SER             /SKIP ON AN ERROR, TRY ANOTHER DENSITY ETC.
+  46 00036 7450         SNA             /NASTY, AC=2 FOR ABOUT TO DO SILO, 0 ON START-UP
+  47 00037 5020         JMP     READ    /START-UP, GO SET UP UNIT, THEN READ TO SILO
+  48 00040 1061         TAD     UNIT    /AC ALREADY 2, PUT IN UNIT, DENSITY
+  49 00041 6751         LCD             /TO EMPTY THE SILO
+  50 00042 1061         TAD     UNIT    /SET UP LOC 60 FOR OLD SECONDARY BOOT
+  51 00043 0046         AND     CON360  /KEEPING UNLY DENSITY BIT
+  52 00044 1032         TAD     LITRAL  /ADDING IN 7004, BECAUSE THAT'S WHAT SYS WANTS
+  53 00045 3060         DCA     RX1SAV  /OLD SECONDARY BOOT MOVES IT TO HANDLER
+  54 00046 0360 CON360, 360             /LITERAL; EXECUTES IN LINE AS A NO-OP
+  55            /                       /FALLS THRU TO NEXT PAGE OF LISTING
+  56            /
+  57            /
+  58            /  FOLLOWING CODE SAME AS OLD PRIMARY BOOT
+  59            /
+  60 00047 4053         JMS     LOAD    /GRAB NEXT ITEM FROM SILO
+  61 00050 3002         DCA     2       /TRADITION; SECONDARY BOOT STARTS LOADING AT 2 !
+  62 00051 2050         ISZ     50      /INCREMENT LOAD ADDRESS
+  63 00052 5047         JMP     47      /GO BACK FOR ANOTHER
+  64            /
+  65            /  SECONDARY BOOT LOADS OVER PRIMARY BOOT UNIT LOCATION 47 IS LOADED,
+  66            /  THEN CONTROL PASSES TO SECONDARY BOOT
   67            /
-  68            /  60 GOES TO OLD SECONDARY BOOT
-  69            /  61 HAS DENSITY AND UNIT THAT BOOTED SUCCESSFULLY
-  70            /
-  71            /
-  72            CON420,                 /USE IT TO HOLD 420 LITERAL TO START OUT
-  73 00060 0420 RX1SAV, 420             /UNIT^20+7004 TO GO TO SYS HANDLER
-  74 00061 0020 UNIT,   20              /<DENSITY^400>+<UNIT^20> THAT BOOTED OK
-  75            /
-  76                    $
+  68 00053 0000 LOAD,   0               /SUBROUTINE TO GIVE AND TAKE DATA FROM CONTROLLER
+  69 00054 6753         STR             /IS HE READY TO TALK TO US?
+  70 00055 5033         JMP XSTRT       /NO, IS HE PERHAPS DONE WITH SILO, OR IN ERROR?
+  71 00056 6752         XDR             /YES, DATA IN OR OUT;IF DATA TO CONTROLLER, AC UNCHANGED
+  72 00057 5453         JMP I   LOAD    /NO MAGIC, JUST EXIT FROM SUBROUTINE
+  73            /
+  74            /  60 GOES TO OLD SECONDARY BOOT
+  75            /  61 HAS DENSITY AND UNIT THAT BOOTED SUCCESSFULLY
+  76            /
+  77            /
+  78            CON420,                 /USE IT TO HOLD 420 LITERAL TO START OUT
+  79 00060 0420 RX1SAV, 420             /UNIT^20+7004 TO GO TO SYS HANDLER
+  80 00061 0020 UNIT,   20              /<DENSITY^400>+<UNIT^20> THAT BOOTED OK
+  81            /
+  82                    $

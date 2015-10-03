@@ -1,68 +1,72 @@
-   1            DRIVE0=0000
-   2            DRIVE1=0020
-   3            DRIVE=DRIVE1
+   1            / THIS IS A DISASSEMBLY OF THE "RX8" BOOT 
+   2            / LOADER IN TABLE 1-8 OF the EK-RX012-PS-002 
+   3            / "RX01 & RX02 POCKET SERVICE GUIDE".
    4            
-   5                    *24
-   6            /  DEVICE IOT SYMBOLIC EQUATES
-   7            /
-   8            LCD=6751                /LOAD COMMAND
-   9            XDR=6752                /TRANSFER DATA
-  10            STR=6753                /SKIP IF READY TO TRANSFER
-  11            SER=6754                /SKIP ON ERROR
-  12            SDN=6755                /SKIP ON DONE
-  13            /
-  14            /
-  15            /
-  16            /
-  17 00024 7126 READ,   CLL CML RTL     /COMMAND TO EMPTY BUFFER (0002)
-  18 00025 1060         TAD     UNIT    /UNIT AND DENSITY
-  19 00026 6751         LCD             /COMMAND TO CONTROLLER
-  20 00027 7201         CLA IAC         /TO SET SECTOR AND TRACK TO 1
-  21 00030 4053         JMS     LOAD    /SECTOR TO CONTROLLER, LEAVES AC ALONE
-  22 00031 4053         JMS     LOAD    /AND TRACK
-  23 00032 7104         CLL RAL         /LEAVING A 2 IN AC
-  24            /
-  25            /  FOLLOWING IS PART OF WAIT LOOP, SAME SECONDARY BOOTS, OLD PRIMARY BOOT
-  26            /
-  27            RXSTRT,
-  28 00033 6755 XSTRT,  SDN             /HAS DONE COME UP; CODE STARTS HERE!
-  29 00034 5054         JMP     LOAD+1  /NO, GO CHECK FOR READY TO TRANSFER
+   5            DRIVE0=0000
+   6            DRIVE1=0020
+   7            DRIVE=DRIVE1
+   8            
+   9                    *24
+  10            /  DEVICE IOT SYMBOLIC EQUATES
+  11            /
+  12            LCD=6751                /LOAD COMMAND
+  13            XDR=6752                /TRANSFER DATA
+  14            STR=6753                /SKIP IF READY TO TRANSFER
+  15            SER=6754                /SKIP ON ERROR
+  16            SDN=6755                /SKIP ON DONE
+  17            /
+  18            /
+  19            /
+  20            /
+  21 00024 7126 READ,   CLL CML RTL     /COMMAND TO EMPTY BUFFER (0002)
+  22 00025 1060         TAD     UNIT    /UNIT AND DENSITY
+  23 00026 6751         LCD             /COMMAND TO CONTROLLER
+  24 00027 7201         CLA IAC         /TO SET SECTOR AND TRACK TO 1
+  25 00030 4053         JMS     LOAD    /SECTOR TO CONTROLLER, LEAVES AC ALONE
+  26 00031 4053         JMS     LOAD    /AND TRACK
+  27 00032 7104         CLL RAL         /LEAVING A 2 IN AC
+  28            /
+  29            /  FOLLOWING IS PART OF WAIT LOOP, SAME SECONDARY BOOTS, OLD PRIMARY BOOT
   30            /
-  31            /  NOW, DONE OR ERROR
-  32            /
-  33 00035 6754         SER             /SKIP ON AN ERROR, TRY ANOTHER DENSITY ETC.
-  34 00036 7450         SNA             /NASTY, AC=2 FOR ABOUT TO DO SILO, 0 ON START-UP
-  35 00037 7610         SKP CLA
-  36 00040 5046         JMP     GOLCD   /START-UP, GO SET UP UNIT, THEN READ TO SILO
-  37 00041 1060         TAD     UNIT    /GET UNIT, DENSITY
-  38 00042 7041         CIA
-  39 00043 1061         TAD     OTHER   /COMPLEMENT DRIVE BIT AND RESTORE
-  40 00044 3060         DCA     UNIT    /OLD SECONDARY BOOT MOVES IT TO HANDLER
-  41 00045 5024         JMP     READ
-  42 00046 6751 GOLCD,  LCD             /SEND COMMAND TO CONTROLLER
-  43            /                       /FALLS THRU TO NEXT PAGE OF LISTING
-  44            /
-  45            /
-  46            /  FOLLOWING CODE SAME AS OLD PRIMARY BOOT
-  47            /
-  48 00047 4053         JMS     LOAD    /GRAB NEXT ITEM FROM SILO
-  49 00050 3002         DCA     2       /TRADITION; SECONDARY BOOT STARTS LOADING AT 2 !
-  50 00051 2050         ISZ     50      /INCREMENT LOAD ADDRESS
-  51 00052 5047         JMP     47      /GO BACK FOR ANOTHER
-  52            /
-  53            /  SECONDARY BOOT LOADS OVER PRIMARY BOOT UNIT LOCATION 47 IS LOADED,
-  54            /  THEN CONTROL PASSES TO SECONDARY BOOT
-  55            /
-  56 00053 0000 LOAD,   0               /SUBROUTINE TO GIVE AND TAKE DATA FROM CONTROLLER
-  57 00054 6753         STR             /IS HE READY TO TALK TO US?
-  58 00055 5033         JMP XSTRT       /NO, IS HE PERHAPS DONE WITH SILO, OR IN ERROR?
-  59 00056 6752         XDR             /YES, DATA IN OR OUT;IF DATA TO CONTROLLER, AC UNCHANGED
-  60 00057 5453         JMP I   LOAD    /NO MAGIC, JUST EXIT FROM SUBROUTINE
-  61            /
-  62            /  60 GOES TO OLD SECONDARY BOOT
-  63            /  61 HAS DENSITY AND UNIT THAT BOOTED SUCCESSFULLY
-  64            /
+  31            RXSTRT,
+  32 00033 6755 XSTRT,  SDN             /HAS DONE COME UP; CODE STARTS HERE!
+  33 00034 5054         JMP     LOAD+1  /NO, GO CHECK FOR READY TO TRANSFER
+  34            /
+  35            /  NOW, DONE OR ERROR
+  36            /
+  37 00035 6754         SER             /SKIP ON AN ERROR, TRY ANOTHER DENSITY ETC.
+  38 00036 7450         SNA             /NASTY, AC=2 FOR ABOUT TO DO SILO, 0 ON START-UP
+  39 00037 7610         SKP CLA
+  40 00040 5046         JMP     GOLCD   /START-UP, GO SET UP UNIT, THEN READ TO SILO
+  41 00041 1060         TAD     UNIT    /GET UNIT, DENSITY
+  42 00042 7041         CIA
+  43 00043 1061         TAD     OTHER   /COMPLEMENT DRIVE BIT AND RESTORE
+  44 00044 3060         DCA     UNIT    /OLD SECONDARY BOOT MOVES IT TO HANDLER
+  45 00045 5024         JMP     READ
+  46 00046 6751 GOLCD,  LCD             /SEND COMMAND TO CONTROLLER
+  47            /                       /FALLS THRU TO NEXT PAGE OF LISTING
+  48            /
+  49            /
+  50            /  FOLLOWING CODE SAME AS OLD PRIMARY BOOT
+  51            /
+  52 00047 4053         JMS     LOAD    /GRAB NEXT ITEM FROM SILO
+  53 00050 3002         DCA     2       /TRADITION; SECONDARY BOOT STARTS LOADING AT 2 !
+  54 00051 2050         ISZ     50      /INCREMENT LOAD ADDRESS
+  55 00052 5047         JMP     47      /GO BACK FOR ANOTHER
+  56            /
+  57            /  SECONDARY BOOT LOADS OVER PRIMARY BOOT UNIT LOCATION 47 IS LOADED,
+  58            /  THEN CONTROL PASSES TO SECONDARY BOOT
+  59            /
+  60 00053 0000 LOAD,   0               /SUBROUTINE TO GIVE AND TAKE DATA FROM CONTROLLER
+  61 00054 6753         STR             /IS HE READY TO TALK TO US?
+  62 00055 5033         JMP XSTRT       /NO, IS HE PERHAPS DONE WITH SILO, OR IN ERROR?
+  63 00056 6752         XDR             /YES, DATA IN OR OUT;IF DATA TO CONTROLLER, AC UNCHANGED
+  64 00057 5453         JMP I   LOAD    /NO MAGIC, JUST EXIT FROM SUBROUTINE
   65            /
-  66 00060 7024 UNIT,   7004+DRIVE
-  67 00061 6030 OTHER,  7004+DRIVE0+7004+DRIVE1
-  68                    $
+  66            /  60 GOES TO OLD SECONDARY BOOT
+  67            /  61 HAS DENSITY AND UNIT THAT BOOTED SUCCESSFULLY
+  68            /
+  69            /
+  70 00060 7024 UNIT,   7004+DRIVE
+  71 00061 6030 OTHER,  7004+DRIVE0+7004+DRIVE1
+  72                    $

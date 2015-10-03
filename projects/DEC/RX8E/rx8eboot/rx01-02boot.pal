@@ -1,3 +1,9 @@
+/ THIS IS A DISASSEMBLY OF THE RX28 BOOT 
+/ LOADER IN TABLE 1-8 OF the EK-RX012-PS-002 
+/ "RX01 & RX02 POCKET SERVICE GUIDE".
+/ I got it from David Gesswein:
+/ http://www.pdp8online.com/ftp/software/rx02boot/
+
 	LCD=6751
 	SDN=6755
 	SER=6754
