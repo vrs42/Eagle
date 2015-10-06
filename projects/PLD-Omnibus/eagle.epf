@@ -250,7 +250,7 @@ UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/zilog.lbr"
 
 [Win_1]
 Type="Library Editor"
-Loc="222 336 821 735"
+Loc="226 359 825 758"
 State=1
 Number=3
 File="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/dec-con.lbr"
@@ -290,7 +290,7 @@ Device="JUMPER"
 
 [Win_2]
 Type="Schematic Editor"
-Loc="190 361 789 760"
+Loc="194 384 793 783"
 State=1
 Number=1
 File="TD8Edaughter.sch"
@@ -306,7 +306,7 @@ PolygonSpacings=" 2540 3048 4064 6096 8128 10160 14224 16764 17780 19304 21844 2
 PolygonIsolates=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 MiterRadiuss=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 SmdSizes=" 3048 1524 4064 2032 6096 3048 8128 4064 10160 5080 12700 6604 14224 7112 16764 8128 17780 9144 19304 9652 21844 10668 25400 12700 38100 19304 50800 25400 64516 32512 12700 6350"
-WireBend=0
+WireBend=1
 WireBendSet=31
 WireCap=1
 MiterStyle=0
@@ -326,11 +326,11 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Sheet=1
+Sheet=2
 
 [Win_3]
 Type="Board Editor"
-Loc="300 471 899 870"
+Loc="304 494 903 893"
 State=1
 Number=2
 File="TD8Edaughter.brd"
