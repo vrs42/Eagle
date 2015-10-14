@@ -15,7 +15,7 @@
   15            NL0002=CLA CLL CML RTL
   16            
   17            / Constants pertaining to the bootstrap sector being read.
-  18            SBOOT=0002
+  18            SBOOT=0000
   19            SLP=0047
   20            
   21                    *33                     /STARTS LOADING HERE
@@ -35,7 +35,7 @@
      00046 0000 
   29            
   30 00047 4053 SLP,    JMS     SLODE           /GET A WORD
-  31 00050 3004 SLPSTR, DCA     SBOOT&177+2     /PUT A WORD
+  31 00050 3002 SLPSTR, DCA     SBOOT&177+2     /PUT A WORD
   32 00051 2050         ISZ     SLPSTR          /BUMP TO NEXT WORD
   33 00052 5047         JMP     SLP             /KEEP GOING UNTIL SLP IS OVERLAYED!
   34            

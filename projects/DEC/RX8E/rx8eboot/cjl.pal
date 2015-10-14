@@ -15,7 +15,7 @@ NL0001=CLA CLL IAC
 NL0002=CLA CLL CML RTL
 
 / Constants pertaining to the bootstrap sector being read.
-SBOOT=0002
+SBOOT=0000
 SLP=0047
 
 	*33			/STARTS LOADING HERE
