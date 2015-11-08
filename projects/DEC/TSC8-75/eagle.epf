@@ -256,7 +256,7 @@ UsedLibrary="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/zilog.lbr"
 
 [Win_1]
 Type="Library Editor"
-Loc="310 424 909 823"
+Loc="314 447 913 846"
 State=1
 Number=3
 File="C:/Users/Vince/Documents/websvn/trunk/Eagle/lbr/dec-con.lbr"
@@ -296,7 +296,7 @@ Device="BUSBAR"
 
 [Win_2]
 Type="Board Editor"
-Loc="26 45 625 444"
+Loc="268 287 867 686"
 State=1
 Number=2
 File="TSC8-75.brd"
@@ -335,11 +335,11 @@ Layer=16
 
 [Win_3]
 Type="Schematic Editor"
-Loc="74 112 673 511"
+Loc="78 135 677 534"
 State=1
 Number=1
 File="TSC8-75.sch"
-View="-4227941 -110090 4177253 5494792"
+View="-82662 -55736 4095972 2722742"
 WireWidths=" 0 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064 1524"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 PadDrills=" 2540 3048 4064 6096 10160 12700 14224 16764 17780 19304 21844 25400 38100 50800 64516 8128"
