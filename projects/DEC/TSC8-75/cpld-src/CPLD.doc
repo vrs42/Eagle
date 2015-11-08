@@ -1,0 +1,1718 @@
+
+*******************************************************************************
+                                    TSC8-75
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          f1508isptqfp100  Library DLIB-h-40-2
+Created         Sun Nov 08 14:31:54 2015
+Name            TSC8-75 
+Partno          cpld 
+Revision        01 
+Date            11/8/2015 
+Designer        
+Company         
+Assembly        None 
+Location        E1 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+as =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & !md10_low & !md11_low
+
+becdf =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # !md09_low
+  # md10_low
+  # md11_low
+
+btp2 =>
+    tp2
+
+btp3 =>
+    tp3
+
+c0_low =>
+    !md11_low
+  # md09_low
+  # !md08_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # !md03_low
+  # io_pause_low
+
+c0_low.oe  =>
+    !c0_low
+
+c1_low =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md10_low & !md11_low
+  # !md09_low & !md11_low
+  # md09_low & md11_low
+  # !md08_low
+  # !md03_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+c1_low.oe  =>
+    !c1_low
+
+data00_low =>
+    md10_low & !rtb00
+  # !md10_low & !riot00
+  # !md08_low
+  # !md03_low
+  # !md11_low
+  # md09_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data00_low.oe  =>
+    !data00_low
+
+data01_low =>
+    md10_low & !rtb01
+  # !md10_low & !riot01
+  # !md08_low
+  # !md03_low
+  # !md11_low
+  # md09_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data01_low.oe  =>
+    !data01_low
+
+data02_low =>
+    md10_low & !rtb02
+  # !md10_low & !riot02
+  # !md08_low
+  # !md03_low
+  # !md11_low
+  # md09_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data02_low.oe  =>
+    !data02_low
+
+data03_low =>
+    md10_low & !rtb03
+  # !md10_low & !riot03
+  # !md08_low
+  # !md03_low
+  # !md11_low
+  # md09_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data03_low.oe  =>
+    !data03_low
+
+data04_low =>
+    md10_low & !rtb04
+  # !md10_low & !riot04
+  # !md08_low
+  # !md03_low
+  # !md11_low
+  # md09_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data04_low.oe  =>
+    !data04_low
+
+data05_low =>
+    md10_low & !rtb05
+  # !md10_low & !riot05
+  # !md08_low
+  # !md03_low
+  # !md11_low
+  # md09_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data05_low.oe  =>
+    !data05_low
+
+data06_low =>
+    md10_low & !rtb06
+  # !md10_low & !riot06
+  # !md08_low
+  # !md03_low
+  # !md11_low
+  # md09_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data06_low.oe  =>
+    !data06_low
+
+data07_low =>
+    md10_low & !rtb07
+  # !md10_low & !riot07
+  # !md08_low
+  # !md03_low
+  # !md11_low
+  # md09_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data07_low.oe  =>
+    !data07_low
+
+data08_low =>
+    md10_low & !rtb08
+  # !md10_low & !riot08
+  # !md08_low
+  # !md03_low
+  # !md11_low
+  # md09_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data08_low.oe  =>
+    !data08_low
+
+data09_low =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md10_low & !md11_low & riot06 & rtb09
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & !md11_low & !riot06
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & !md10_low & md11_low & !riot09
+  # !md08_low
+  # !md03_low
+  # md10_low & !rtb09
+  # !md09_low & !md11_low
+  # md09_low & md11_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data09_low.oe  =>
+    !data09_low
+
+data10_low =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md10_low & !md11_low & riot07 & rtb10
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & !md11_low & !riot07
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & !md10_low & md11_low & !riot10
+  # !md08_low
+  # !md03_low
+  # md10_low & !rtb10
+  # !md09_low & !md11_low
+  # md09_low & md11_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data10_low.oe  =>
+    !data10_low
+
+data11_low =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md10_low & !md11_low & riot08 & rtb11
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & !md11_low & !riot08
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & !md10_low & md11_low & !riot11
+  # !md08_low
+  # !md03_low
+  # md10_low & !rtb11
+  # !md09_low & !md11_low
+  # md09_low & md11_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # io_pause_low
+
+data11_low.oe  =>
+    !data11_low
+
+ecdf =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & !md10_low & !md11_low
+
+!ecdf_f.d  =>
+    1 
+
+ecdf_f.ap  =>
+    !f_low & !user_mode
+
+ecdf_f.ar  =>
+    0 
+
+ecdf_f.ck  =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # !md09_low
+  # md10_low
+  # md11_low
+
+!ecdf_low =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # !md09_low
+  # md10_low
+  # md11_low
+
+!ectf_low =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # !md09_low
+  # md10_low
+  # !md11_low
+
+!enabled =>
+    !n_t_161x & !user_mode
+
+eriot =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & !md10_low & md11_low
+
+!eriot_low =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # md09_low
+  # md10_low
+  # !md11_low
+
+!ertb_low =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # md09_low
+  # !md10_low
+  # !md11_low
+
+eskp =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md10_low & !md11_low
+
+!eskp_low =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # !md09_low
+  # !md10_low
+  # md11_low
+
+esme =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & md10_low & !md11_low
+
+!esme_low =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # md09_low
+  # !md10_low
+  # md11_low
+
+!etds_low =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # !md09_low
+  # !md10_low
+  # !md11_low
+
+!eten_low =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # md09_low
+  # md10_low
+  # md11_low
+
+inith =>
+    initialize
+
+!initialize_low =>
+    !initialize
+
+int_rqst_low =>
+    !irq
+
+int_rqst_low.oe  =>
+    !int_rqst_low
+
+internal_io_low =>
+    !md08_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # !md03_low
+  # io_pause_low
+
+internal_io_low.oe  =>
+    !internal_io_low
+
+!io_pause =>
+    !io_pause_low
+
+!iot36 =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low
+
+!ir1 =>
+    !ir1_low
+
+!irq.d  =>
+    0 
+
+irq.ap  =>
+    0 
+
+irq.ar  =>
+    initialize
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md11_low & tp3
+
+irq.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!iscdf =>
+    riot04 & !riot05 & !riot09 & !riot10
+  # riot03
+  # riot02
+  # !riot00
+  # !riot01
+
+!md01h =>
+    !md01_low
+
+!md09h =>
+    !md09_low
+
+!md10h =>
+    !md10_low
+
+!md11h =>
+    !md11_low
+
+md_dir_low =>
+    !n_t_516x
+
+md_dir_low.oe  =>
+    !md_dir_low
+
+n3va =>
+    1 
+
+n3vb =>
+    1 
+
+n_t_104x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & !md10_low & !md11_low & riot06
+  # !md09_low & riot09
+  # md10_low & riot09
+  # md11_low & riot09
+  # !io_pause_low & !md03_low & riot09
+  # md04_low & riot09
+  # md05_low & riot09
+  # md06_low & riot09
+  # md07_low & riot09
+  # !io_pause_low & !md08_low & riot09
+  # io_pause_low & riot09
+
+!n_t_109x =>
+    !f_low & !md08_low & !user_mode
+
+!n_t_10x =>
+    !ma03_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+n_t_115x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & !md10_low & !md11_low & riot08
+  # !md09_low & riot11
+  # md10_low & riot11
+  # md11_low & riot11
+  # !io_pause_low & !md03_low & riot11
+  # md04_low & riot11
+  # md05_low & riot11
+  # md06_low & riot11
+  # md07_low & riot11
+  # !io_pause_low & !md08_low & riot11
+  # io_pause_low & riot11
+
+n_t_116x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & !md10_low & !md11_low & riot07
+  # !md09_low & riot10
+  # md10_low & riot10
+  # md11_low & riot10
+  # !io_pause_low & !md03_low & riot10
+  # md04_low & riot10
+  # md05_low & riot10
+  # md06_low & riot10
+  # md07_low & riot10
+  # !io_pause_low & !md08_low & riot10
+  # io_pause_low & riot10
+
+n_t_117x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & !md10_low & md11_low
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & !md10_low & !md11_low
+
+!n_t_11x =>
+    !ma02_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_12x =>
+    !ma00_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_131x =>
+    !io_pause_low & !md03_low
+
+n_t_133x =>
+    io_pause_low
+
+!n_t_136x =>
+    !io_pause_low & !md08_low
+
+n_t_139x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & md10_low & md11_low
+
+!n_t_14x =>
+    !ma04_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_160x =>
+    !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+
+n_t_160x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low
+
+!n_t_161x =>
+    md11_low
+  # md10_low
+  # md09_low
+  # !md08_low
+  # md07_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # !md03_low
+  # io_pause_low
+
+!n_t_161x.d  =>
+    0 
+
+n_t_161x.ar  =>
+    initialize
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md10_low & md11_low
+
+n_t_161x.ck  =>
+    1 
+
+!n_t_167x =>
+    !e_low & tp4
+
+!n_t_172x =>
+    !md00_low & md01_low
+
+n_t_177x =>
+    riot04 & !riot05 & !riot09 & !riot10 & riot11
+  # riot03 & riot11
+  # riot02 & riot11
+  # !riot00 & riot11
+  # !riot01 & riot11
+
+n_t_178x =>
+    !f_low & tp3 & !user_mode
+
+n_t_18x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & md10_low & md11_low
+
+n_t_1x =>
+    md00_low
+  # !md01_low
+  # n_t_161x
+  # user_mode
+  # f_low
+  # !tp2
+
+n_t_20x =>
+    md00_low
+  # !md01_low
+  # n_t_161x
+  # user_mode
+
+n_t_212x =>
+    !f_low & tp2 & !user_mode
+
+!n_t_218x =>
+    !ir0_low & ir1_low
+
+!n_t_21x =>
+    !tp2
+
+!n_t_22x =>
+    !ma07_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_23x =>
+    !ma06_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_248x =>
+    !f_low & !md00_low & !user_mode
+
+!n_t_24x =>
+    !ma05_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_250x =>
+    user_mode
+  # f_low
+
+!n_t_256x =>
+    !f_low & !md03_low & !user_mode
+
+!n_t_257x =>
+    !f_low & !md02_low & !user_mode
+
+!n_t_258x =>
+    !f_low & !md01_low & !user_mode
+
+!n_t_25x.d  =>
+    !riot08
+
+n_t_25x.ar  =>
+    initialize
+
+n_t_25x.ck  =>
+    !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
+  # !f_low & riot03 & riot11 & tp3 & !user_mode
+  # !f_low & riot02 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
+  # !f_low & !riot00 & riot11 & tp3 & !user_mode
+
+!n_t_274x =>
+    !f_low & !md05_low & !user_mode
+
+!n_t_275x =>
+    !f_low & !md04_low & !user_mode
+
+!n_t_2x =>
+    !ma01_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_30x.d  =>
+    !n_t_34x
+
+n_t_30x.ap  =>
+    initialize
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md10_low & md11_low
+
+n_t_30x.ar  =>
+    !n_t_49x
+
+n_t_30x.ck  =>
+    !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
+  # !f_low & riot03 & riot11 & tp3 & !user_mode
+  # !f_low & riot02 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
+  # !f_low & !riot00 & riot11 & tp3 & !user_mode
+
+!n_t_31x.d  =>
+    !n_t_35x
+
+n_t_31x.ar  =>
+    initialize
+
+n_t_31x.ck  =>
+    !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
+  # !f_low & riot03 & riot11 & tp3 & !user_mode
+  # !f_low & riot02 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
+  # !f_low & !riot00 & riot11 & tp3 & !user_mode
+
+!n_t_32x.d  =>
+    !n_t_36x
+
+n_t_32x.ar  =>
+    initialize
+
+n_t_32x.ck  =>
+    !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
+  # !f_low & riot03 & riot11 & tp3 & !user_mode
+  # !f_low & riot02 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
+  # !f_low & !riot00 & riot11 & tp3 & !user_mode
+
+!n_t_330x =>
+    !f_low & tp2
+
+!n_t_333x =>
+    !initialize & !tp3
+
+!n_t_334x =>
+    !initialize & !md09_low
+  # !initialize & !md11_low
+  # !initialize & !io_pause_low & !md03_low
+  # !initialize & md04_low
+  # !initialize & md05_low
+  # !initialize & md06_low
+  # !initialize & md07_low
+  # !initialize & !io_pause_low & !md08_low
+  # !initialize & io_pause_low
+
+n_t_336x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md11_low
+
+!n_t_33x.d  =>
+    !n_t_25x
+
+n_t_33x.ar  =>
+    initialize
+
+n_t_33x.ck  =>
+    !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
+  # !f_low & riot03 & riot11 & tp3 & !user_mode
+  # !f_low & riot02 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
+  # !f_low & !riot00 & riot11 & tp3 & !user_mode
+
+!n_t_342x =>
+    initialize
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md11_low & tp3
+
+!n_t_34x.d  =>
+    0 
+
+n_t_34x.ap  =>
+    0 
+
+n_t_34x.ar  =>
+    initialize
+  # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & md09_low & md10_low & md11_low
+
+n_t_34x.ck  =>
+    !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
+  # !f_low & riot03 & riot11 & tp3 & !user_mode
+  # !f_low & riot02 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
+  # !f_low & !riot00 & riot11 & tp3 & !user_mode
+
+n_t_350x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & md10_low & md11_low
+
+n_t_356x =>
+    md09_low
+  # !md10_low
+  # !md11_low
+  # !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+
+!n_t_358x =>
+    riot00 & riot01 & !riot02 & !riot03
+
+!n_t_35x.d  =>
+    !riot06
+
+n_t_35x.ar  =>
+    initialize
+
+n_t_35x.ck  =>
+    !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
+  # !f_low & riot03 & riot11 & tp3 & !user_mode
+  # !f_low & riot02 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
+  # !f_low & !riot00 & riot11 & tp3 & !user_mode
+
+!n_t_36x.d  =>
+    !riot07
+
+n_t_36x.ar  =>
+    initialize
+
+n_t_36x.ck  =>
+    !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
+  # !f_low & riot03 & riot11 & tp3 & !user_mode
+  # !f_low & riot02 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
+  # !f_low & !riot00 & riot11 & tp3 & !user_mode
+
+!n_t_372x =>
+    !ma09_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_380x =>
+    !ma11_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_381x =>
+    !ma10_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+!n_t_382x =>
+    !ma08_low & !md00_low & md01_low & !n_t_161x & !user_mode
+
+n_t_3x =>
+    ecdf_f & !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & 
+      !md07_low & md08_low & md09_low & !md10_low & !md11_low
+
+n_t_401x =>
+    !md00_low & md01_low & !n_t_161x & !user_mode
+
+n_t_408x =>
+    md00_low
+  # !md01_low
+  # n_t_161x
+  # user_mode
+
+n_t_40x =>
+    !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
+  # !f_low & riot03 & riot11 & tp3 & !user_mode
+  # !f_low & riot02 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
+  # !f_low & !riot00 & riot11 & tp3 & !user_mode
+
+n_t_413x =>
+    1 
+
+!n_t_457x.d  =>
+    n_t_32x & !n_t_36x
+  # !n_t_32x & n_t_36x
+  # n_t_31x & !n_t_35x
+  # !n_t_31x & n_t_35x
+  # n_t_30x & !n_t_34x
+  # !n_t_30x & n_t_34x
+  # n_t_25x & !n_t_33x
+  # !n_t_25x & n_t_33x
+
+n_t_457x.ap  =>
+    0 
+
+n_t_457x.ar  =>
+    0 
+
+n_t_457x.ck  =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & md10_low & !md11_low
+
+!n_t_483x =>
+    !f_low & !md06_low & !user_mode
+
+!n_t_486x =>
+    !f_low & !md11_low & !user_mode
+
+!n_t_487x =>
+    !f_low & !md10_low & !user_mode
+
+!n_t_488x =>
+    !f_low & !md09_low & !user_mode
+
+!n_t_490x =>
+    !f_low & !md07_low & !user_mode
+
+n_t_498x =>
+    !riot11
+  # riot00 & riot01 & !riot02 & !riot03 & riot10
+  # riot00 & riot01 & !riot02 & !riot03 & riot09
+  # riot00 & riot01 & !riot02 & !riot03 & riot05
+  # riot00 & riot01 & !riot02 & !riot03 & !riot04
+  # !io_pause_low & !md03_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md07_low
+  # !io_pause_low & !md08_low
+  # io_pause_low
+  # !md09_low
+  # md10_low
+  # md11_low
+  # !ecdf_f
+
+n_t_4x =>
+    md00_low
+  # !md01_low
+  # n_t_161x
+  # user_mode
+
+!n_t_516x.d  =>
+    user_mode
+  # n_t_161x
+  # !ir1_low
+  # ir0_low
+
+n_t_516x.ap  =>
+    0 
+
+n_t_516x.ar  =>
+    !e_low & tp4
+  # initialize
+
+n_t_516x.ck  =>
+    !e_low & tp1
+
+n_t_57x =>
+    !initialize & !md09_low
+  # !initialize & !md10_low
+  # !initialize & !md11_low
+  # !initialize & !io_pause_low & !md03_low
+  # !initialize & md04_low
+  # !initialize & md05_low
+  # !initialize & md06_low
+  # !initialize & md07_low
+  # !initialize & !io_pause_low & !md08_low
+  # !initialize & io_pause_low
+
+!n_t_5x =>
+    !n_t_25x & !n_t_30x & !n_t_31x & !n_t_32x & !n_t_33x & !n_t_34x & !n_t_35x & 
+      !n_t_36x
+  # !n_t_25x & n_t_30x & !n_t_31x & !n_t_32x & !n_t_33x & n_t_34x & !n_t_35x & 
+      !n_t_36x
+  # !n_t_25x & !n_t_30x & n_t_31x & !n_t_32x & !n_t_33x & !n_t_34x & n_t_35x & 
+      !n_t_36x
+  # !n_t_25x & n_t_30x & n_t_31x & !n_t_32x & !n_t_33x & n_t_34x & n_t_35x & 
+      !n_t_36x
+  # !n_t_25x & !n_t_30x & !n_t_31x & n_t_32x & !n_t_33x & !n_t_34x & !n_t_35x & 
+      n_t_36x
+  # !n_t_25x & n_t_30x & !n_t_31x & n_t_32x & !n_t_33x & n_t_34x & !n_t_35x & 
+      n_t_36x
+  # !n_t_25x & !n_t_30x & n_t_31x & n_t_32x & !n_t_33x & !n_t_34x & n_t_35x & 
+      n_t_36x
+  # !n_t_25x & n_t_30x & n_t_31x & n_t_32x & !n_t_33x & n_t_34x & n_t_35x & 
+      n_t_36x
+  # n_t_25x & !n_t_30x & !n_t_31x & n_t_32x & n_t_33x & !n_t_34x & !n_t_35x & 
+      n_t_36x
+  # n_t_25x & n_t_30x & !n_t_31x & n_t_32x & n_t_33x & n_t_34x & !n_t_35x & 
+      n_t_36x
+  # n_t_25x & !n_t_30x & n_t_31x & n_t_32x & n_t_33x & !n_t_34x & n_t_35x & 
+      n_t_36x
+  # n_t_25x & n_t_30x & n_t_31x & n_t_32x & n_t_33x & n_t_34x & n_t_35x & 
+      n_t_36x
+  # n_t_25x & !n_t_30x & n_t_31x & !n_t_32x & n_t_33x & !n_t_34x & n_t_35x & 
+      !n_t_36x
+  # n_t_25x & n_t_30x & n_t_31x & !n_t_32x & n_t_33x & n_t_34x & n_t_35x & 
+      !n_t_36x
+  # n_t_25x & !n_t_30x & !n_t_31x & !n_t_32x & n_t_33x & !n_t_34x & !n_t_35x & 
+      !n_t_36x
+  # n_t_25x & n_t_30x & !n_t_31x & !n_t_32x & n_t_33x & n_t_34x & !n_t_35x & 
+      !n_t_36x
+
+!n_t_63x =>
+    !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
+      md08_low & !md09_low & md10_low & !md11_low & n_t_457x
+
+!n_t_82x =>
+    !e_low & tp1
+
+n_t_91x =>
+    !initialize & !tp3
+  # !initialize & !md09_low
+  # !initialize & !md11_low
+  # !initialize & !io_pause_low & !md03_low
+  # !initialize & md04_low
+  # !initialize & md05_low
+  # !initialize & md06_low
+  # !initialize & md07_low
+  # !initialize & !io_pause_low & !md08_low
+  # !initialize & io_pause_low
+
+n_t_94x =>
+    ir0_low
+  # !ir1_low
+  # n_t_161x
+  # user_mode
+
+!n_t_97x =>
+    e_low & !initialize
+  # !initialize & !tp4
+
+newrtb =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!riot00.d  =>
+    user_mode
+  # md00_low
+  # f_low
+
+riot00.ar  =>
+    initialize
+
+riot00.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot01.d  =>
+    user_mode
+  # md01_low
+  # f_low
+
+riot01.ar  =>
+    initialize
+
+riot01.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot02.d  =>
+    user_mode
+  # md02_low
+  # f_low
+
+riot02.ar  =>
+    initialize
+
+riot02.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot03.d  =>
+    user_mode
+  # md03_low
+  # f_low
+
+riot03.ar  =>
+    initialize
+
+riot03.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot04.d  =>
+    user_mode
+  # md04_low
+  # f_low
+
+riot04.ar  =>
+    initialize
+
+riot04.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot05.d  =>
+    user_mode
+  # md05_low
+  # f_low
+
+riot05.ar  =>
+    initialize
+
+riot05.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot06.d  =>
+    user_mode
+  # md06_low
+  # f_low
+
+riot06.ar  =>
+    initialize
+
+riot06.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot07.d  =>
+    user_mode
+  # md07_low
+  # f_low
+
+riot07.ar  =>
+    initialize
+
+riot07.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot08.d  =>
+    user_mode
+  # md08_low
+  # f_low
+
+riot08.ar  =>
+    initialize
+
+riot08.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot09.d  =>
+    user_mode
+  # md09_low
+  # f_low
+
+riot09.ar  =>
+    initialize
+
+riot09.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot10.d  =>
+    user_mode
+  # md10_low
+  # f_low
+
+riot10.ar  =>
+    initialize
+
+riot10.ck  =>
+    !f_low & tp2 & !user_mode
+
+!riot11.d  =>
+    user_mode
+  # md11_low
+  # f_low
+
+riot11.ar  =>
+    initialize
+
+riot11.ck  =>
+    !f_low & tp2 & !user_mode
+
+!rtb00.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma00_low
+
+rtb00.ar  =>
+    initialize
+
+rtb00.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb01.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma01_low
+
+rtb01.ar  =>
+    initialize
+
+rtb01.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb02.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma02_low
+
+rtb02.ar  =>
+    initialize
+
+rtb02.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb03.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma03_low
+
+rtb03.ar  =>
+    initialize
+
+rtb03.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb04.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma04_low
+
+rtb04.ar  =>
+    initialize
+
+rtb04.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb05.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma05_low
+
+rtb05.ar  =>
+    initialize
+
+rtb05.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb06.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma06_low
+
+rtb06.ar  =>
+    initialize
+
+rtb06.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb07.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma07_low
+
+rtb07.ar  =>
+    initialize
+
+rtb07.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb08.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma08_low
+
+rtb08.ar  =>
+    initialize
+
+rtb08.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb09.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma09_low
+
+rtb09.ar  =>
+    initialize
+
+rtb09.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb10.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma10_low
+
+rtb10.ar  =>
+    initialize
+
+rtb10.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+!rtb11.d  =>
+    user_mode
+  # n_t_161x
+  # !md01_low
+  # md00_low
+  # ma11_low
+
+rtb11.ar  =>
+    initialize
+
+rtb11.ck  =>
+    !f_low & !md00_low & md01_low & !n_t_161x & tp2 & !user_mode
+
+skip =>
+    ecdf_f & !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & 
+      !md07_low & md08_low & md09_low & !md10_low & !md11_low & riot04 & 
+      !riot05 & !riot09 & !riot10 & riot11
+  # ecdf_f & !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & 
+      !md07_low & md08_low & md09_low & !md10_low & !md11_low & riot03 & 
+      riot11
+  # ecdf_f & !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & 
+      !md07_low & md08_low & md09_low & !md10_low & !md11_low & riot02 & 
+      riot11
+  # ecdf_f & !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & 
+      !md07_low & md08_low & md09_low & !md10_low & !md11_low & !riot01 & 
+      riot11
+  # ecdf_f & !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & 
+      !md07_low & md08_low & md09_low & !md10_low & !md11_low & !riot00 & 
+      riot11
+  # !n_t_63x
+
+skip_low =>
+    !md10_low & n_t_63x & riot00 & riot01 & !riot02 & !riot03 & riot10
+  # !md10_low & n_t_63x & riot00 & riot01 & !riot02 & !riot03 & riot09
+  # !md10_low & n_t_63x & riot00 & riot01 & !riot02 & !riot03 & riot05
+  # !md10_low & n_t_63x & riot00 & riot01 & !riot02 & !riot03 & !riot04
+  # !md08_low & n_t_63x
+  # !md03_low & n_t_63x
+  # !md10_low & n_t_63x & !riot11
+  # !ecdf_f & !md10_low & n_t_63x
+  # !irq & md10_low & n_t_63x
+  # md11_low & n_t_63x
+  # !md09_low & n_t_63x
+  # md07_low & n_t_63x
+  # md06_low & n_t_63x
+  # md05_low & n_t_63x
+  # md04_low & n_t_63x
+  # io_pause_low & n_t_63x
+
+skip_low.oe  =>
+    !skip_low
+
+!tp1_low =>
+    !tp1
+
+!tp2_low =>
+    !tp2
+
+!tp3_low =>
+    !tp3
+
+!tp4_low =>
+    !tp4
+
+!ufetch =>
+    !f_low & !user_mode
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    as                          0        I        1       -       -     
+    becdf                       0        I        10      -       -     
+    btp2                        0        I        1       -       -     
+    btp3                        0        I        1       -       -     
+    c0_low                      0        V        9       0       4     
+    c0_low              oe      0        X        1       0       1     
+    c1_low                      0        V        10      0       4     
+    c1_low              oe      0        X        1       0       1     
+    data00_low                  0        V        11      0       4     
+    data00_low          oe      0        X        1       0       1     
+    data01_low                  0        V        11      0       4     
+    data01_low          oe      0        X        1       0       1     
+    data02_low                  0        V        11      0       4     
+    data02_low          oe      0        X        1       0       1     
+    data03_low                  0        V        11      0       4     
+    data03_low          oe      0        X        1       0       1     
+    data04_low                  0        V        11      0       4     
+    data04_low          oe      0        X        1       0       1     
+    data05_low                  0        V        11      0       4     
+    data05_low          oe      0        X        1       0       1     
+    data06_low                  0        V        11      0       4     
+    data06_low          oe      0        X        1       0       1     
+    data07_low                  0        V        11      0       4     
+    data07_low          oe      0        X        1       0       1     
+    data08_low                  0        V        11      0       4     
+    data08_low          oe      0        X        1       0       1     
+    data09_low                  0        V        13      0       4     
+    data09_low          oe      0        X        1       0       1     
+    data10_low                  0        V        13      0       4     
+    data10_low          oe      0        X        1       0       1     
+    data11_low                  0        V        13      0       4     
+    data11_low          oe      0        X        1       0       1     
+    e_low                       0        V        -       -       -     
+    ecdf                        0        I        1       -       -     
+    ecdf_f                      0        N        -       -       -     
+    ecdf_f              d       0        M        1       0       4     
+    ecdf_f              ap      0        M        1       0       1     
+    ecdf_f              ar      0        M        1       0       1     
+    ecdf_f              ck      0        M        10      0       1     
+    ecdf_low                    0        I        10      -       -     
+    ectf_low                    0        I        10      -       -     
+    enabled                     0        I        1       -       -     
+    eriot                       0        I        1       -       -     
+    eriot_low                   0        I        10      -       -     
+    ertb_low                    0        I        10      -       -     
+    eskp                        0        I        1       -       -     
+    eskp_low                    0        I        10      -       -     
+    esme                        0        I        1       -       -     
+    esme_low                    0        I        10      -       -     
+    etds_low                    0        I        10      -       -     
+    eten_low                    0        I        10      -       -     
+    f_low                       0        V        -       -       -     
+    inith                       0        I        1       -       -     
+    initialize                  0        V        -       -       -     
+    initialize_low              0        I        1       -       -     
+    int_rqst_low                0        V        1       0       4     
+    int_rqst_low        oe      0        X        1       0       1     
+    internal_io_low             0        V        7       0       4     
+    internal_io_low     oe      0        X        1       0       1     
+    io_pause                    0        I        1       -       -     
+    io_pause_low                0        V        -       -       -     
+    iot36                       0        I        1       -       -     
+    ir0_low                     0        V        -       -       -     
+    ir1                         0        I        1       -       -     
+    ir1_low                     0        V        -       -       -     
+    irq                         0        N        -       -       -     
+    irq                 d       0        M        1       0       4     
+    irq                 ap      0        M        1       0       1     
+    irq                 ar      0        M        2       0       1     
+    irq                 ck      0        M        1       0       1     
+    iscdf                       0        I        5       -       -     
+    ma00_low                    0        V        -       -       -     
+    ma01_low                    0        V        -       -       -     
+    ma02_low                    0        V        -       -       -     
+    ma03_low                    0        V        -       -       -     
+    ma04_low                    0        V        -       -       -     
+    ma05_low                    0        V        -       -       -     
+    ma06_low                    0        V        -       -       -     
+    ma07_low                    0        V        -       -       -     
+    ma08_low                    0        V        -       -       -     
+    ma09_low                    0        V        -       -       -     
+    ma10_low                    0        V        -       -       -     
+    ma11_low                    0        V        -       -       -     
+    md00_low                    0        V        -       -       -     
+    md01_low                    0        V        -       -       -     
+    md01h                       0        I        1       -       -     
+    md02_low                    0        V        -       -       -     
+    md03_low                    0        V        -       -       -     
+    md04_low                    0        V        -       -       -     
+    md05_low                    0        V        -       -       -     
+    md06_low                    0        V        -       -       -     
+    md07_low                    0        V        -       -       -     
+    md08_low                    0        V        -       -       -     
+    md09_low                    0        V        -       -       -     
+    md09h                       0        I        1       -       -     
+    md10_low                    0        V        -       -       -     
+    md10h                       0        I        1       -       -     
+    md11_low                    0        V        -       -       -     
+    md11h                       0        I        1       -       -     
+    md_dir_low                  0        V        1       0       4     
+    md_dir_low          oe      0        X        1       0       1     
+    n3va                        0        I        1       -       -     
+    n3vb                        0        I        1       -       -     
+    n_t_104x                    0        I        11      -       -     
+    n_t_109x                    0        I        1       -       -     
+    n_t_10x                     0        I        1       -       -     
+    n_t_115x                    0        I        11      -       -     
+    n_t_116x                    0        I        11      -       -     
+    n_t_117x                    0        I        2       -       -     
+    n_t_11x                     0        I        1       -       -     
+    n_t_12x                     0        I        1       -       -     
+    n_t_131x                    0        I        1       -       -     
+    n_t_133x                    0        I        1       -       -     
+    n_t_136x                    0        I        1       -       -     
+    n_t_139x                    0        I        1       -       -     
+    n_t_14x                     0        I        1       -       -     
+    n_t_160x                    0        I        7       -       -     
+    n_t_160x            oe      0        I        1       -       -     
+    n_t_161x                    0        N        10      0       4     
+    n_t_161x            d       0        M        1       0       4     
+    n_t_161x            ar      0        M        2       0       1     
+    n_t_161x            ck      0        M        1       0       1     
+    n_t_167x                    0        I        1       -       -     
+    n_t_172x                    0        I        1       -       -     
+    n_t_177x                    0        I        5       -       -     
+    n_t_178x                    0        I        1       -       -     
+    n_t_18x                     0        I        1       -       -     
+    n_t_1x                      0        I        6       -       -     
+    n_t_20x                     0        I        4       -       -     
+    n_t_212x                    0        I        1       -       -     
+    n_t_218x                    0        I        1       -       -     
+    n_t_21x                     0        I        1       -       -     
+    n_t_22x                     0        I        1       -       -     
+    n_t_23x                     0        I        1       -       -     
+    n_t_248x                    0        I        1       -       -     
+    n_t_24x                     0        I        1       -       -     
+    n_t_250x                    0        I        2       -       -     
+    n_t_256x                    0        I        1       -       -     
+    n_t_257x                    0        I        1       -       -     
+    n_t_258x                    0        I        1       -       -     
+    n_t_25x                     0        N        -       -       -     
+    n_t_25x             d       0        M        1       0       4     
+    n_t_25x             ar      0        M        1       0       1     
+    n_t_25x             ck      0        M        5       0       1     
+    n_t_274x                    0        I        1       -       -     
+    n_t_275x                    0        I        1       -       -     
+    n_t_2x                      0        I        1       -       -     
+    n_t_30x                     0        N        -       -       -     
+    n_t_30x             d       0        M        1       0       4     
+    n_t_30x             ap      0        M        2       0       1     
+    n_t_30x             ar      0        M        1       0       1     
+    n_t_30x             ck      0        M        5       0       1     
+    n_t_31x                     0        N        -       -       -     
+    n_t_31x             d       0        M        1       0       4     
+    n_t_31x             ar      0        M        1       0       1     
+    n_t_31x             ck      0        M        5       0       1     
+    n_t_32x                     0        N        -       -       -     
+    n_t_32x             d       0        M        1       0       4     
+    n_t_32x             ar      0        M        1       0       1     
+    n_t_32x             ck      0        M        5       0       1     
+    n_t_330x                    0        I        1       -       -     
+    n_t_333x                    0        I        1       -       -     
+    n_t_334x                    0        I        9       -       -     
+    n_t_336x                    0        I        1       -       -     
+    n_t_33x                     0        N        -       -       -     
+    n_t_33x             d       0        M        1       0       4     
+    n_t_33x             ar      0        M        1       0       1     
+    n_t_33x             ck      0        M        5       0       1     
+    n_t_342x                    0        I        2       -       -     
+    n_t_34x                     0        N        -       -       -     
+    n_t_34x             d       0        M        1       0       4     
+    n_t_34x             ap      0        M        1       0       1     
+    n_t_34x             ar      0        M        2       0       1     
+    n_t_34x             ck      0        M        5       0       1     
+    n_t_350x                    0        I        1       -       -     
+    n_t_356x                    0        I        10      -       -     
+    n_t_358x                    0        I        1       -       -     
+    n_t_35x                     0        N        -       -       -     
+    n_t_35x             d       0        M        1       0       4     
+    n_t_35x             ar      0        M        1       0       1     
+    n_t_35x             ck      0        M        5       0       1     
+    n_t_36x                     0        N        -       -       -     
+    n_t_36x             d       0        M        1       0       4     
+    n_t_36x             ar      0        M        1       0       1     
+    n_t_36x             ck      0        M        5       0       1     
+    n_t_372x                    0        I        1       -       -     
+    n_t_380x                    0        I        1       -       -     
+    n_t_381x                    0        I        1       -       -     
+    n_t_382x                    0        I        1       -       -     
+    n_t_3x                      0        I        1       -       -     
+    n_t_401x                    0        I        1       -       -     
+    n_t_408x                    0        I        4       -       -     
+    n_t_40x                     0        I        5       -       -     
+    n_t_413x                    0        I        1       -       -     
+    n_t_457x                    0        N        -       -       -     
+    n_t_457x            d       0        M        8       0       4     
+    n_t_457x            ap      0        M        1       0       1     
+    n_t_457x            ar      0        M        1       0       1     
+    n_t_457x            ck      0        M        1       0       1     
+    n_t_483x                    0        I        1       -       -     
+    n_t_486x                    0        I        1       -       -     
+    n_t_487x                    0        I        1       -       -     
+    n_t_488x                    0        I        1       -       -     
+    n_t_490x                    0        I        1       -       -     
+    n_t_498x                    0        I        16      -       -     
+    n_t_49x                     0        V        -       -       -     
+    n_t_4x                      0        I        4       -       -     
+    n_t_516x                    0        N        -       -       -     
+    n_t_516x            d       0        M        4       0       4     
+    n_t_516x            ap      0        M        1       0       1     
+    n_t_516x            ar      0        M        2       0       1     
+    n_t_516x            ck      0        M        1       0       1     
+    n_t_57x                     0        I        10      -       -     
+    n_t_5x                      0        I        16      -       -     
+    n_t_63x                     0        V        1       0       4     
+    n_t_82x                     0        I        1       -       -     
+    n_t_91x                     0        I        10      -       -     
+    n_t_94x                     0        I        4       -       -     
+    n_t_97x                     0        I        2       -       -     
+    newrtb                      0        I        1       -       -     
+    riot00                      0        N        -       -       -     
+    riot00              d       0        M        3       0       4     
+    riot00              ar      0        M        1       0       1     
+    riot00              ck      0        M        1       0       1     
+    riot01                      0        N        -       -       -     
+    riot01              d       0        M        3       0       4     
+    riot01              ar      0        M        1       0       1     
+    riot01              ck      0        M        1       0       1     
+    riot02                      0        N        -       -       -     
+    riot02              d       0        M        3       0       4     
+    riot02              ar      0        M        1       0       1     
+    riot02              ck      0        M        1       0       1     
+    riot03                      0        N        -       -       -     
+    riot03              d       0        M        3       0       4     
+    riot03              ar      0        M        1       0       1     
+    riot03              ck      0        M        1       0       1     
+    riot04                      0        N        -       -       -     
+    riot04              d       0        M        3       0       4     
+    riot04              ar      0        M        1       0       1     
+    riot04              ck      0        M        1       0       1     
+    riot05                      0        N        -       -       -     
+    riot05              d       0        M        3       0       4     
+    riot05              ar      0        M        1       0       1     
+    riot05              ck      0        M        1       0       1     
+    riot06                      0        N        -       -       -     
+    riot06              d       0        M        3       0       4     
+    riot06              ar      0        M        1       0       1     
+    riot06              ck      0        M        1       0       1     
+    riot07                      0        N        -       -       -     
+    riot07              d       0        M        3       0       4     
+    riot07              ar      0        M        1       0       1     
+    riot07              ck      0        M        1       0       1     
+    riot08                      0        N        -       -       -     
+    riot08              d       0        M        3       0       4     
+    riot08              ar      0        M        1       0       1     
+    riot08              ck      0        M        1       0       1     
+    riot09                      0        N        -       -       -     
+    riot09              d       0        M        3       0       4     
+    riot09              ar      0        M        1       0       1     
+    riot09              ck      0        M        1       0       1     
+    riot10                      0        N        -       -       -     
+    riot10              d       0        M        3       0       4     
+    riot10              ar      0        M        1       0       1     
+    riot10              ck      0        M        1       0       1     
+    riot11                      0        N        -       -       -     
+    riot11              d       0        M        3       0       4     
+    riot11              ar      0        M        1       0       1     
+    riot11              ck      0        M        1       0       1     
+    rtb00                       0        N        -       -       -     
+    rtb00               d       0        M        5       0       4     
+    rtb00               ar      0        M        1       0       1     
+    rtb00               ck      0        M        1       0       1     
+    rtb01                       0        N        -       -       -     
+    rtb01               d       0        M        5       0       4     
+    rtb01               ar      0        M        1       0       1     
+    rtb01               ck      0        M        1       0       1     
+    rtb02                       0        N        -       -       -     
+    rtb02               d       0        M        5       0       4     
+    rtb02               ar      0        M        1       0       1     
+    rtb02               ck      0        M        1       0       1     
+    rtb03                       0        N        -       -       -     
+    rtb03               d       0        M        5       0       4     
+    rtb03               ar      0        M        1       0       1     
+    rtb03               ck      0        M        1       0       1     
+    rtb04                       0        N        -       -       -     
+    rtb04               d       0        M        5       0       4     
+    rtb04               ar      0        M        1       0       1     
+    rtb04               ck      0        M        1       0       1     
+    rtb05                       0        N        -       -       -     
+    rtb05               d       0        M        5       0       4     
+    rtb05               ar      0        M        1       0       1     
+    rtb05               ck      0        M        1       0       1     
+    rtb06                       0        N        -       -       -     
+    rtb06               d       0        M        5       0       4     
+    rtb06               ar      0        M        1       0       1     
+    rtb06               ck      0        M        1       0       1     
+    rtb07                       0        N        -       -       -     
+    rtb07               d       0        M        5       0       4     
+    rtb07               ar      0        M        1       0       1     
+    rtb07               ck      0        M        1       0       1     
+    rtb08                       0        N        -       -       -     
+    rtb08               d       0        M        5       0       4     
+    rtb08               ar      0        M        1       0       1     
+    rtb08               ck      0        M        1       0       1     
+    rtb09                       0        N        -       -       -     
+    rtb09               d       0        M        5       0       4     
+    rtb09               ar      0        M        1       0       1     
+    rtb09               ck      0        M        1       0       1     
+    rtb10                       0        N        -       -       -     
+    rtb10               d       0        M        5       0       4     
+    rtb10               ar      0        M        1       0       1     
+    rtb10               ck      0        M        1       0       1     
+    rtb11                       0        N        -       -       -     
+    rtb11               d       0        M        5       0       4     
+    rtb11               ar      0        M        1       0       1     
+    rtb11               ck      0        M        1       0       1     
+    skip                        0        I        6       -       -     
+    skip_low                    0        V        16      0       4     
+    skip_low            oe      0        X        1       0       1     
+    tp1                         0        V        -       -       -     
+    tp1_low                     0        I        1       -       -     
+    tp2                         0        V        -       -       -     
+    tp2_low                     0        I        1       -       -     
+    tp3                         0        V        -       -       -     
+    tp3_low                     0        I        1       -       -     
+    tp4                         0        V        -       -       -     
+    tp4_low                     0        I        1       -       -     
+    ufetch                      0        I        1       -       -     
+    user_mode                   0        V        -       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
