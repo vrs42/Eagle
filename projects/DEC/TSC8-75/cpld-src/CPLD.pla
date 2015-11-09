@@ -1,7 +1,7 @@
 #$ TOOL CUPL
 # Berkeley PLA format generated using CUPL(WM) 5.0a
 # Serial#  60008009
-# Created  Sun Nov 08 14:31:54 2015
+# Created  Sun Nov 08 23:24:46 2015
 #
 #    Name        TSC8-75
 #    Partno      cpld
@@ -15,8 +15,8 @@
 #$ TITLE  TSC8-75
 #$ MODULE  TSC8-75
 #$ JEDECFILE  TSC8-75
-#$ DEVICE  f1508isptqfp100
-#$ PINS  55 c0_low+ c1_low+ data00_low+ data01_low+ data02_low+ data03_low+ data04_low+ data05_low+ data06_low+ data07_low+ data08_low+ data09_low+ data10_low+ data11_low+ e_low+ f_low+ initialize+ int_rqst_low+ internal_io_low+ io_pause_low+ ir0_low+ ir1_low+ ma00_low+ ma01_low+ ma02_low+ ma03_low+ ma04_low+ ma05_low+ ma06_low+ ma07_low+ ma08_low+ ma09_low+ ma10_low+ ma11_low+ md00_low+ md01_low+ md02_low+ md03_low+ md04_low+ md05_low+ md06_low+ md07_low+ md08_low+ md09_low+ md10_low+ md11_low+ md_dir_low+ n_t_49x+ n_t_63x+ skip_low+ tp1+ tp2+ tp3+ tp4+ user_mode+ 
+#$ DEVICE  f1508ispqfp100
+#$ PINS  55 c0_low+:35 c1_low+:33 data00_low+:66 data01_low+:65 data02_low+:63 data03_low+:62 data04_low+:48 data05_low+:47 data06_low+:46 data07_low+:44 data08_low+:4 data09_low+:2 data10_low+:1 data11_low+:3 e_low+:12 f_low+:14 initialize+:27 int_rqst_low+:29 internal_io_low+:30 io_pause_low+:38 ir0_low+:22 ir1_low+:21 ma00_low+:78 ma01_low+:77 ma02_low+:74 ma03_low+:73 ma04_low+:57 ma05_low+:56 ma06_low+:55 ma07_low+:54 ma08_low+:19 ma09_low+:18 ma10_low+:16 ma11_low+:15 md00_low+:71 md01_low+:70 md02_low+:69 md03_low+:67 md04_low+:52 md05_low+:51 md06_low+:50 md07_low+:49 md08_low+:10 md09_low+:9 md10_low+:8 md11_low+:7 md_dir_low+:72 n_t_49x+:82 n_t_63x+:83 skip_low+:26 tp1+:37 tp2+:34 tp3+:32 tp4+:31 user_mode+:11 
 #$ NODES 37 ecdf_f+ irq+ n_t_161x+ n_t_25x+ n_t_30x+ n_t_31x+ n_t_32x+ n_t_33x+ n_t_34x+ n_t_35x+ n_t_36x+ n_t_457x+ n_t_516x+ riot00+ riot01+ riot02+ riot03+ riot04+ riot05+ riot06+ riot07+ riot08+ riot09+ riot10+ riot11+ rtb00+ rtb01+ rtb02+ rtb03+ rtb04+ rtb05+ rtb06+ rtb07+ rtb08+ rtb09+ rtb10+ rtb11+ 
 .i 92
 .o 155
