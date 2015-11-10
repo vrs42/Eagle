@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          f1508ispqfp100  Library DLIB-h-40-2
-Created         Sun Nov 08 23:24:46 2015
+Created         Mon Nov 09 14:22:32 2015
 Name            TSC8-75 
 Partno          cpld 
 Revision        01 
@@ -288,9 +288,6 @@ ecdf =>
 ecdf_f.ap  =>
     !f_low & !user_mode
 
-ecdf_f.ar  =>
-    0 
-
 ecdf_f.ck  =>
     !io_pause_low & !md03_low
   # md04_low
@@ -451,9 +448,6 @@ internal_io_low.oe  =>
 !irq.d  =>
     0 
 
-irq.ap  =>
-    0 
-
 irq.ar  =>
     initialize
   # !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
@@ -466,8 +460,8 @@ irq.ck  =>
     riot04 & !riot05 & !riot09 & !riot10
   # riot03
   # riot02
-  # !riot00
   # !riot01
+  # !riot00
 
 !md01h =>
     !md01_low
@@ -486,12 +480,6 @@ md_dir_low =>
 
 md_dir_low.oe  =>
     !md_dir_low
-
-n3va =>
-    1 
-
-n3vb =>
-    1 
 
 n_t_104x =>
     !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
@@ -615,8 +603,8 @@ n_t_177x =>
     riot04 & !riot05 & !riot09 & !riot10 & riot11
   # riot03 & riot11
   # riot02 & riot11
-  # !riot00 & riot11
   # !riot01 & riot11
+  # !riot00 & riot11
 
 n_t_178x =>
     !f_low & tp3 & !user_mode
@@ -683,8 +671,8 @@ n_t_25x.ck  =>
     !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
   # !f_low & riot03 & riot11 & tp3 & !user_mode
   # !f_low & riot02 & riot11 & tp3 & !user_mode
-  # !f_low & !riot01 & riot11 & tp3 & !user_mode
   # !f_low & !riot00 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
 
 !n_t_274x =>
     !f_low & !md05_low & !user_mode
@@ -710,8 +698,8 @@ n_t_30x.ck  =>
     !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
   # !f_low & riot03 & riot11 & tp3 & !user_mode
   # !f_low & riot02 & riot11 & tp3 & !user_mode
-  # !f_low & !riot01 & riot11 & tp3 & !user_mode
   # !f_low & !riot00 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
 
 !n_t_31x.d  =>
     !n_t_35x
@@ -723,8 +711,8 @@ n_t_31x.ck  =>
     !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
   # !f_low & riot03 & riot11 & tp3 & !user_mode
   # !f_low & riot02 & riot11 & tp3 & !user_mode
-  # !f_low & !riot01 & riot11 & tp3 & !user_mode
   # !f_low & !riot00 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
 
 !n_t_32x.d  =>
     !n_t_36x
@@ -736,8 +724,8 @@ n_t_32x.ck  =>
     !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
   # !f_low & riot03 & riot11 & tp3 & !user_mode
   # !f_low & riot02 & riot11 & tp3 & !user_mode
-  # !f_low & !riot01 & riot11 & tp3 & !user_mode
   # !f_low & !riot00 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
 
 !n_t_330x =>
     !f_low & tp2
@@ -770,8 +758,8 @@ n_t_33x.ck  =>
     !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
   # !f_low & riot03 & riot11 & tp3 & !user_mode
   # !f_low & riot02 & riot11 & tp3 & !user_mode
-  # !f_low & !riot01 & riot11 & tp3 & !user_mode
   # !f_low & !riot00 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
 
 !n_t_342x =>
     initialize
@@ -779,9 +767,6 @@ n_t_33x.ck  =>
       md08_low & md09_low & md11_low & tp3
 
 !n_t_34x.d  =>
-    0 
-
-n_t_34x.ap  =>
     0 
 
 n_t_34x.ar  =>
@@ -793,24 +778,24 @@ n_t_34x.ck  =>
     !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
   # !f_low & riot03 & riot11 & tp3 & !user_mode
   # !f_low & riot02 & riot11 & tp3 & !user_mode
-  # !f_low & !riot01 & riot11 & tp3 & !user_mode
   # !f_low & !riot00 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
 
 n_t_350x =>
     !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
       md08_low & !md09_low & md10_low & md11_low
 
 n_t_356x =>
-    md09_low
-  # !md10_low
-  # !md11_low
-  # !io_pause_low & !md03_low
+    !io_pause_low & !md03_low
   # md04_low
   # md05_low
   # md06_low
   # md07_low
   # !io_pause_low & !md08_low
   # io_pause_low
+  # md09_low
+  # !md10_low
+  # !md11_low
 
 !n_t_358x =>
     riot00 & riot01 & !riot02 & !riot03
@@ -825,8 +810,8 @@ n_t_35x.ck  =>
     !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
   # !f_low & riot03 & riot11 & tp3 & !user_mode
   # !f_low & riot02 & riot11 & tp3 & !user_mode
-  # !f_low & !riot01 & riot11 & tp3 & !user_mode
   # !f_low & !riot00 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
 
 !n_t_36x.d  =>
     !riot07
@@ -838,8 +823,8 @@ n_t_36x.ck  =>
     !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
   # !f_low & riot03 & riot11 & tp3 & !user_mode
   # !f_low & riot02 & riot11 & tp3 & !user_mode
-  # !f_low & !riot01 & riot11 & tp3 & !user_mode
   # !f_low & !riot00 & riot11 & tp3 & !user_mode
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
 
 !n_t_372x =>
     !ma09_low & !md00_low & md01_low & !n_t_161x & !user_mode
@@ -870,11 +855,8 @@ n_t_40x =>
     !f_low & riot04 & !riot05 & !riot09 & !riot10 & riot11 & tp3 & !user_mode
   # !f_low & riot03 & riot11 & tp3 & !user_mode
   # !f_low & riot02 & riot11 & tp3 & !user_mode
-  # !f_low & !riot01 & riot11 & tp3 & !user_mode
   # !f_low & !riot00 & riot11 & tp3 & !user_mode
-
-n_t_413x =>
-    1 
+  # !f_low & !riot01 & riot11 & tp3 & !user_mode
 
 !n_t_457x.d  =>
     n_t_32x & !n_t_36x
@@ -885,12 +867,6 @@ n_t_413x =>
   # !n_t_30x & n_t_34x
   # n_t_25x & !n_t_33x
   # !n_t_25x & n_t_33x
-
-n_t_457x.ap  =>
-    0 
-
-n_t_457x.ar  =>
-    0 
 
 n_t_457x.ck  =>
     !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & !md07_low & 
@@ -940,9 +916,6 @@ n_t_4x =>
   # n_t_161x
   # !ir1_low
   # ir0_low
-
-n_t_516x.ap  =>
-    0 
 
 n_t_516x.ar  =>
     !e_low & tp4
@@ -1328,10 +1301,10 @@ skip =>
       !md07_low & md08_low & md09_low & !md10_low & !md11_low & riot02 & 
       riot11
   # ecdf_f & !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & 
-      !md07_low & md08_low & md09_low & !md10_low & !md11_low & !riot01 & 
+      !md07_low & md08_low & md09_low & !md10_low & !md11_low & !riot00 & 
       riot11
   # ecdf_f & !io_pause_low & md03_low & !md04_low & !md05_low & !md06_low & 
-      !md07_low & md08_low & md09_low & !md10_low & !md11_low & !riot00 & 
+      !md07_low & md08_low & md09_low & !md10_low & !md11_low & !riot01 & 
       riot11
   # !n_t_63x
 
@@ -1417,7 +1390,6 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     ecdf_f                      0        N        -       -       -     
     ecdf_f              d       0        M        1       0       4     
     ecdf_f              ap      0        M        1       0       1     
-    ecdf_f              ar      0        M        1       0       1     
     ecdf_f              ck      0        M        10      0       1     
     ecdf_low                    0        I        10      -       -     
     ectf_low                    0        I        10      -       -     
@@ -1447,7 +1419,6 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     ir1_low                     21       V        -       -       -     
     irq                         0        N        -       -       -     
     irq                 d       0        M        1       0       4     
-    irq                 ap      0        M        1       0       1     
     irq                 ar      0        M        2       0       1     
     irq                 ck      0        M        1       0       1     
     iscdf                       0        I        5       -       -     
@@ -1481,8 +1452,6 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     md11h                       0        I        1       -       -     
     md_dir_low                  72       V        1       0       4     
     md_dir_low          oe      72       X        1       0       1     
-    n3va                        0        I        1       -       -     
-    n3vb                        0        I        1       -       -     
     n_t_104x                    0        I        11      -       -     
     n_t_109x                    0        I        1       -       -     
     n_t_10x                     0        I        1       -       -     
@@ -1551,7 +1520,6 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_342x                    0        I        2       -       -     
     n_t_34x                     0        N        -       -       -     
     n_t_34x             d       0        M        1       0       4     
-    n_t_34x             ap      0        M        1       0       1     
     n_t_34x             ar      0        M        2       0       1     
     n_t_34x             ck      0        M        5       0       1     
     n_t_350x                    0        I        1       -       -     
@@ -1573,11 +1541,8 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_401x                    0        I        1       -       -     
     n_t_408x                    0        I        4       -       -     
     n_t_40x                     0        I        5       -       -     
-    n_t_413x                    0        I        1       -       -     
     n_t_457x                    0        N        -       -       -     
     n_t_457x            d       0        M        8       0       4     
-    n_t_457x            ap      0        M        1       0       1     
-    n_t_457x            ar      0        M        1       0       1     
     n_t_457x            ck      0        M        1       0       1     
     n_t_483x                    0        I        1       -       -     
     n_t_486x                    0        I        1       -       -     
@@ -1589,7 +1554,6 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_4x                      0        I        4       -       -     
     n_t_516x                    0        N        -       -       -     
     n_t_516x            d       0        M        4       0       4     
-    n_t_516x            ap      0        M        1       0       1     
     n_t_516x            ar      0        M        2       0       1     
     n_t_516x            ck      0        M        1       0       1     
     n_t_57x                     0        I        10      -       -     

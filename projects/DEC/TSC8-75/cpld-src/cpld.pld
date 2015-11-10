@@ -111,15 +111,6 @@ pinnode = n_t_30x;
 
 /* Equations */
 
-/* r5: r_us_ */
-n_t_413x = 'b'1;
-
-/* r6: r_us_ */
-n3va = 'b'1;
-
-/* r9: r_us_ */
-n3vb = 'b'1;
-
 /* u1: sn7400 */
 n_t_117x = !(eriot_low&becdf);
 n_t_498x = !(n_t_177x&n_t_3x);
@@ -166,14 +157,11 @@ n_t_63x = !(n_t_457x&esme);
 /* u10: sn7438 */
 
 /* u11: sn7474 */
-ecdf_f.ar = !n3va;
 ecdf_f.d = 'b'0;
 ecdf_f.ck = becdf;
 ecdf_f.ap = !n_t_250x;
-n_t_457x.ar = !n3va;
 n_t_457x.d = n_t_5x;
 n_t_457x.ck = esme;
-n_t_457x.ap = !n3va;
 
 /* u12: sn74174 */
 rtb06.ar = !initialize_low;
@@ -286,17 +274,15 @@ riot05.d = n_t_274x;
 /* u25: sn7438 */
 
 /* u26: sn7474 */
-irq.ap = !n3vb;
 irq.d = 'b'1;
 irq.ck = newrtb;
 irq.ar = !n_t_91x;
-n_t_516x.ap = !n3vb;
 n_t_516x.d = !n_t_94x;
 n_t_516x.ck = n_t_82x;
 n_t_516x.ar = !n_t_97x;
 
 /* u27: sn7485 */
-!n_t_5x = ((n_t_34x $ n_t_30x) # (n_t_35x $ n_t_31x) # (n_t_36x $ n_t_32x) # (n_t_25x $ n_t_33x))&n3vb;
+!n_t_5x = (n_t_34x $ n_t_30x) # (n_t_35x $ n_t_31x) # (n_t_36x $ n_t_32x) # (n_t_25x $ n_t_33x);
 
 /* u28: sp380n */
 !n_t_275x = md04_low # n_t_250x;
@@ -307,7 +293,7 @@ n_t_516x.ar = !n_t_97x;
 /* u29: sn7438 */
 
 /* u30: sn7410 */
-n_t_350x = !(ertb_low&n_t_413x);
+n_t_350x = !ertb_low;
 n_t_94x = !(n_t_218x&enabled);
 
 /* Remove cross-couple NAND flop */
@@ -392,10 +378,10 @@ riot11.ck = n_t_212x;
 riot11.d = n_t_486x;
 
 /* u39: sn7485 */
-!iscdf = (riot10 # riot09 # riot05 # (riot04 $ n3va))&n_t_358x;
+!iscdf = (riot10 # riot09 # riot05 # !riot04)&n_t_358x;
 
 /* u40: sn7485 */
-!n_t_358x = (riot03 # riot02 # (riot01 $ n3va) # (riot00 $ n3va))&n3va;
+!n_t_358x = (riot03 # riot02 # !riot01 # !riot00);
 
 /* u41: sn7438 */
 
@@ -417,9 +403,8 @@ n_t_177x = (riot11&iscdf);
 
 /* u45: sn7474 */
 n_t_34x.ar = !n_t_57x;
-n_t_34x.d = n3vb;
+n_t_34x.d = 'b'1;
 n_t_34x.ck = n_t_40x;
-n_t_34x.ap = !n3vb;
 n_t_30x.ar = !n_t_49x;
 n_t_30x.d = n_t_34x;
 n_t_30x.ck = n_t_40x;
