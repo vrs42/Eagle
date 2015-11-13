@@ -1,0 +1,54 @@
+// CUPL Design Description
+
+//---------------------------------- Declaration Segment ------------
+NAME     m220reg+aoi4x2.p1d;
+PARTNO   A;
+ASSEMBLY M220;
+REVISION 1.0;
+DESIGNER V.Slyngstad;
+COMPANY  VRS;
+DATE     01/08/08;
+LOCATION M220;
+
+DEVICE   G16V8MS;	// For P16R8 compatibility
+//DEVICE   P16R8;	// Not supported in WinCUPL
+
+//-------------------------------- PIN Declarations ---------------
+PIN  2   =      d1;                  //             INPUT
+PIN  3   =      e1;                  //             INPUT
+PIN  4   =      d2;                  //             INPUT
+PIN  5   =      e2;                  //             INPUT
+PIN  6   =      d3;                  //             INPUT
+PIN  7   =      e3;                  //             INPUT
+PIN  8   =      d4;                  //             INPUT
+PIN  9   =      e4;                  //             INPUT
+PIN  12   =     o1;                  //             INPUT
+
+PIN  1   =      clk;                 //             INPUT
+PIN  14  =      da;                  //             INPUT
+PIN  15  =      qa;                  //             OUTPUT
+PIN  16  =      qba;                 //             OUTPUT
+PIN  17  =      db;                  //             INPUT
+PIN  18  =      qb;                  //             OUTPUT
+PIN  19  =      qbb;                 //             OUTPUT
+
+//----------------------------------- Boolean Equation Segment ------
+//EQUATIONS
+// Basically a 4x2 AND-OR-INVERT gate,
+!o1 = d1&e1 # d2&e2 # d3&e3 # d4&e4;
+
+// and a couple of register bits.
+qa.d = da;
+!qba = qa;
+
+qb.d = db;
+!qbb = qb;
+
+//----------------------------------- Simulation Segment ------------
+//SIMULATION
+//TRACE_ON d1 e1 d2 e2 d3 e3 d4 e4 
+//SETF /d1 /e1 /d2 /e2 /d3 /e3 /d4 /e4
+//CHECK  /o1
+//TRACE_OFF
+
+//-------------------------------------------------------------------

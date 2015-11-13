@@ -1,0 +1,58 @@
+// CUPL Design Description
+
+//---------------------------------- Declaration Segment ------------
+NAME     m220reg+adder.p1d;
+PARTNO   A;
+ASSEMBLY M220;
+REVISION 1.0;
+DESIGNER V.Slyngstad;
+COMPANY  VRS;
+DATE     01/08/08;
+LOCATION M220;
+
+DEVICE   G16V8MS;	// For P16R8 compatibility
+//DEVICE   P16R8;	// Not supported in WinCUPL
+
+//-------------------------------- PIN Declarations ---------------
+PIN  2   =      a1;                  //             INPUT
+PIN  3   =      a2;                  //             INPUT
+PIN  4   =      b1;                  //             INPUT
+PIN  5   =      b2;                  //             INPUT
+PIN  6   =      c0;                  //             INPUT
+PIN  11  =      s1;                  //             OUTPUT
+PIN  12  =      s2;                  //             OUTPUT
+PIN  14  =      c1;                  //             OUTPUT
+PIN  15  =      c2;                  //             OUTPUT
+
+PIN  1   =      clk;                 //             INPUT
+PIN  8   =      da;                  //             INPUT
+PIN  9   =      db;                  //             INPUT
+PIN  16  =      qa;                  //             OUTPUT
+PIN  17  =      qba;                 //             OUTPUT
+PIN  18  =      qb;                  //             OUTPUT
+PIN  19  =      qbb;                 //             OUTPUT
+
+
+//----------------------------------- Boolean Equation Segment ------
+//EQUATIONS
+// Basically a two-bit full adder
+s1 = a1 $ b1 $ c0;
+c1 = a1&b1 # a1&c0 # b1&c0;
+s2 = a2 $ b2 $ c1;
+c2 = a2&b2 $ a2&c1 $ b2&c1;
+
+// and a couple of register bits.
+qa = da;
+!qba = qa;
+
+qb = db;
+!qbb = qb;
+
+//----------------------------------- Simulation Segment ------------
+//SIMULATION
+//TRACE_ON d1 e1 d2 e2 d3 e3 d4 e4 
+//SETF /d1 /e1 /d2 /e2 /d3 /e3 /d4 /e4
+//CHECK  /o1
+//TRACE_OFF
+
+//-------------------------------------------------------------------

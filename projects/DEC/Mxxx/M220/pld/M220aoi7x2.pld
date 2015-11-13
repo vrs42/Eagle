@@ -1,0 +1,56 @@
+// CUPL Design Description
+
+//---------------------------------- Declaration Segment ------------
+NAME     m220aoi7x2.pld;
+PARTNO   A;
+ASSEMBLY M220;
+REVISION 1.0;
+DESIGNER V.Slyngstad;
+COMPANY  VRS;
+DATE     01/08/08;
+LOCATION M220;
+
+DEVICE   G16V8MA;	// For P16L8 compatibility
+//DEVICE   P16L8;	// Not supported in WinCUPL
+
+//---------------------------------- PIN Declarations ---------------
+
+// Pins pins 1 and 11 are input only in complex mode.
+// Pins pins 12 and 19 are output only in complex mode.
+// In simple mode, pins 15 and 16 must be output only.
+
+PIN  1  =       i1  ;                // INPUT
+PIN  2  =       e1  ;                // INPUT
+PIN  3  =       i2  ;                // INPUT
+PIN  4  =       e2  ;                // INPUT
+PIN  5  =       i3  ;                // INPUT
+PIN  6  =       e3  ;                // INPUT
+PIN  7  =       i4  ;                // INPUT
+PIN  8  =       e4  ;                // INPUT
+
+PIN  9  =       i5  ;                // INPUT
+
+PIN  11 =       e5  ;                // INPUT
+PIN  13 =       i6  ;                // INPUT
+PIN  14 =       e6  ;                // INPUT
+PIN  15 =       i7  ;                // INPUT
+PIN  16 =       e7  ;                // INPUT
+PIN  17 =       i8  ;                // INPUT
+
+PIN  18 =       aoi ;                // OUTPUT
+PIN  19 =       o1  ;                // OUTPUT
+
+//----------------------------------- Boolean Equation Segment ------
+//EQUATIONS
+// Basically a 7x2 AND-OR-INVERT gate with an extra OR input term
+!aoi = i1 & e1 # i2 & e2 # i3 & e3 # i4 & e4 # i5 & e5 # i6 & e6 # i7 & e7;
+o1 = aoi & !i8;
+
+//----------------------------------- Simulation Segment ------------
+//SIMULATION
+//TRACE_ON i1 e1 i2 e2 i3 e3 i4 e4 i5 e5 i6 e6 i7 e7 o1
+//SETF /i1 /e1 /i2 /e2 /i3 /e3 /i4 /e4 /i5 /e5 /i6 /e6 /i7 /e7
+//CHECK  /o1
+//TRACE_OFF
+
+//-------------------------------------------------------------------
