@@ -8,6 +8,7 @@ Major Registers, double
 m220pgm1.pds and m220pgm2.pds.</LI>
 <LI><b>M220p16</b> is a PAL implementation, using 16V8 programed with
 m220a.pds, m220b.pds, and m220c.pds.</LI>
+<LI><b>M220at</b> is a PLD implementation, using ATF1508.</LI>
 <LI><b>M220xc</b> is a PLD implementation, using XC9536XL programed with
 m220a.v, m220b.v, and m220c.v.</LI>
 <LI><b>M220X</b> is a 'modernized' M220 (using 16V8).</LI></UL>
