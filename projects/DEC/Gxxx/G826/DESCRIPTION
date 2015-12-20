@@ -1,5 +1,6 @@
-Regulator Control for 8/I, drives G805 & detects presence of other voltages
+Regulator Control for 8/I, drives G805 & detects presence of other voltages (double)
 <UL>
 <LI><b>G826D</b> needs a drawing.</LI>
 <LI><b>G826K</b> is a drawing of DEC's G826K.</LI>
 <LI><b>G826X</b> is a 'modernized' version of DEC's G826K.</LI>
+
