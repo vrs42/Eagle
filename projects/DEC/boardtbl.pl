@@ -107,7 +107,7 @@ open(MHTM, ">$modules.htm") || die "$modules.htm: $!";
 print MHTM "<html><body><table border=0>\r\n";
 print MHTM "<tr><th align=left>Module";
 print MHTM "<th align=left>Versions<th align=left>Description</tr>\r\n";
-for $d1 ('Axxx', 'Bxxx', 'Gxxx', 'Kxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
+for $d1 ('Axxx', 'Bxxx', 'Gxxx', 'Hxxx', 'Kxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx') {
   opendir(DIR1, $d1) || die "$d1: $!";
   open(STDOUT, ">$d1.htm") || die "$d1.htm: $!";
   print "<div>\n";
