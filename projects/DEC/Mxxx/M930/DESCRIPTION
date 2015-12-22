@@ -1,5 +1,7 @@
 RK05/Unibus Terminator
 <UL>
 <LI><b>M930</b> is a version of DEC's M930 RK05/Unibus Terminator card using discrete resistors.</LI>
-<LI><b>M930c</b> is a version of DEC's M930C RK05/Unibus Terminator card, which uses
+<LI><b>M930C</b> is a version of DEC's M930C RK05/Unibus Terminator card, which uses
 DIP resistor packs.</LI>
+<LI><b>M930D</b> needs a drawing.</LI>
+<LI><b>M930E</b> needs a drawing.</LI>
