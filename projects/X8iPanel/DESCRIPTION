@@ -1,7 +1,5 @@
 PDP-8/i Front Panel PCB
 <UL>
-<LI><b>foo</b> is a messed up version of the indicator PCB of an 8/i front
-panel.</LI>
 <LI><b>M900dec</b> is a drawing of DEC's M900 paddle card, which contains
 the indicator drivers, as well as connecting to the front panel cabling.</LI>
 <LI><b>M900</b> is my version of the M900 indicator driver card, which
