@@ -21110,31 +21110,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-r">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21428,10 +21403,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C32" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="V56" library="supply2" deviceset="GND" device=""/>
 <part name="V57" library="supply2" deviceset="+12V" device=""/>
-<part name="U$4" library="dec-r" deviceset="NC" device=""/>
-<part name="U$5" library="dec-r" deviceset="NC" device=""/>
-<part name="U$6" library="dec-r" deviceset="NC" device=""/>
-<part name="U$7" library="dec-r" deviceset="NC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23770,10 +23741,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="C32" gate="G$1" x="271.78" y="30.48"/>
 <instance part="V56" gate="GND" x="271.78" y="22.86"/>
 <instance part="V57" gate="+12V" x="271.78" y="35.56"/>
-<instance part="U$4" gate="NC" x="302.26" y="187.96"/>
-<instance part="U$5" gate="NC" x="302.26" y="182.88"/>
-<instance part="U$6" gate="NC" x="302.26" y="177.8"/>
-<instance part="U$7" gate="NC" x="302.26" y="172.72"/>
 </instances>
 <busses>
 </busses>
@@ -25914,27 +25881,37 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="E26" gate="E$1" pin="I0"/>
-<pinref part="U$4" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E26" gate="E$1" pin="I1"/>
-<pinref part="U$5" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E26" gate="E$1" pin="I2"/>
-<pinref part="U$6" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E26" gate="E$1" pin="I3"/>
-<pinref part="U$7" gate="NC" pin="NC"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,2,302.26,187.96,E26,I0,,,,"/>
+<approved hash="202,2,302.26,182.88,E26,I1,,,,"/>
+<approved hash="202,2,302.26,177.8,E26,I2,,,,"/>
+<approved hash="202,2,302.26,172.72,E26,I3,,,,"/>
+<approved hash="114,2,353.06,121.327,E17,B,RC,,,"/>
+<approved hash="114,2,353.06,121.327,E17,B,I,,,"/>
+<approved hash="114,2,353.06,121.327,E17,C,RC,,,"/>
+<approved hash="114,2,353.06,121.327,E17,C,I,,,"/>
+<approved hash="114,2,353.06,121.327,E17,D,RC,,,"/>
+<approved hash="114,2,353.06,121.327,E17,D,I,,,"/>
+<approved hash="114,2,309.88,83.7565,E32,C,I0,,,"/>
+<approved hash="114,2,309.88,83.7565,E32,C,I1,,,"/>
+<approved hash="114,2,309.88,83.7565,E32,D,I0,,,"/>
+<approved hash="114,2,309.88,83.7565,E32,D,I1,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,1,152.4,19.431,U$2,,,,,"/>
+<approved hash="113,1,287.02,239.691,H123,,,,,"/>
+<approved hash="113,1,68.58,208.28,B,,,,,"/>
+<approved hash="113,1,68.58,185.42,A,,,,,"/>
+<approved hash="113,1,68.58,157.48,F,,,,,"/>
+<approved hash="113,1,68.58,137.16,E,,,,,"/>
+<approved hash="113,1,68.58,114.3,D,,,,,"/>
+<approved hash="113,1,68.58,91.44,C,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME3,,,,,"/>
+<approved hash="113,2,375.92,76.3947,J1,,,,,"/>
+<approved hash="113,2,339.429,177.8,J23,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

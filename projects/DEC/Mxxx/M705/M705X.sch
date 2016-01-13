@@ -6823,31 +6823,6 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-r">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6916,19 +6891,6 @@ high speed (Philips)</description>
 <part name="FRAME2" library="frames" deviceset="DINA3_L" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
-<part name="U$1" library="dec-r" deviceset="NC" device=""/>
-<part name="U$4" library="dec-r" deviceset="NC" device=""/>
-<part name="U$7" library="dec-r" deviceset="NC" device=""/>
-<part name="U$8" library="dec-r" deviceset="NC" device=""/>
-<part name="U$9" library="dec-r" deviceset="NC" device=""/>
-<part name="U$10" library="dec-r" deviceset="NC" device=""/>
-<part name="U$11" library="dec-r" deviceset="NC" device=""/>
-<part name="U$12" library="dec-r" deviceset="NC" device=""/>
-<part name="U$13" library="dec-r" deviceset="NC" device=""/>
-<part name="U$14" library="dec-r" deviceset="NC" device=""/>
-<part name="U$15" library="dec-r" deviceset="NC" device=""/>
-<part name="U$16" library="dec-r" deviceset="NC" device=""/>
-<part name="U$17" library="dec-r" deviceset="NC" device=""/>
 <part name="C19" library="dec-con" deviceset="CPOL-USE20-8AXIAL" device="" value="6.8uF"/>
 <part name="C20" library="dec-con" deviceset="CPOL-USE20-8AXIAL" device="" value="6.8uF"/>
 <part name="C21" library="dec-con" deviceset="CPOL-USE20-8AXIAL" device="" value="6.8uF"/>
@@ -7087,19 +7049,6 @@ high speed (Philips)</description>
 <instance part="FRAME2" gate="G$2" x="287.02" y="0"/>
 <instance part="V3" gate="GND" x="116.84" y="241.3"/>
 <instance part="V7" gate="GND" x="304.8" y="71.12"/>
-<instance part="U$1" gate="NC" x="304.8" y="238.76" rot="MR180"/>
-<instance part="U$4" gate="NC" x="304.8" y="218.44" rot="MR180"/>
-<instance part="U$7" gate="NC" x="304.8" y="198.12" rot="MR180"/>
-<instance part="U$8" gate="NC" x="304.8" y="177.8" rot="MR180"/>
-<instance part="U$9" gate="NC" x="304.8" y="157.48" rot="MR180"/>
-<instance part="U$10" gate="NC" x="304.8" y="137.16" rot="MR180"/>
-<instance part="U$11" gate="NC" x="304.8" y="116.84" rot="MR180"/>
-<instance part="U$12" gate="NC" x="304.8" y="96.52" rot="MR180"/>
-<instance part="U$13" gate="NC" x="304.8" y="55.88" rot="MR180"/>
-<instance part="U$14" gate="NC" x="215.9" y="50.8" rot="MR180"/>
-<instance part="U$15" gate="NC" x="215.9" y="60.96" rot="MR180"/>
-<instance part="U$16" gate="NC" x="215.9" y="88.9" rot="MR180"/>
-<instance part="U$17" gate="NC" x="215.9" y="99.06" rot="MR180"/>
 <instance part="C19" gate="G$1" x="147.32" y="248.92"/>
 <instance part="C20" gate="G$1" x="154.94" y="248.92"/>
 <instance part="C21" gate="G$1" x="162.56" y="248.92"/>
@@ -8457,63 +8406,28 @@ high speed (Philips)</description>
 <pinref part="E7" gate="A" pin="I0"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="E4" gate="A" pin="PRE"/>
-<pinref part="U$1" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E4" gate="B" pin="PRE"/>
-<pinref part="U$4" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E3" gate="A" pin="PRE"/>
-<pinref part="U$7" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E3" gate="B" pin="PRE"/>
-<pinref part="U$8" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E1" gate="A" pin="PRE"/>
-<pinref part="U$9" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E1" gate="B" pin="PRE"/>
-<pinref part="U$10" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E2" gate="A" pin="PRE"/>
-<pinref part="U$11" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E2" gate="B" pin="PRE"/>
-<pinref part="U$12" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E10" gate="A" pin="PRE"/>
-<pinref part="U$13" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E18" gate="B" pin="CLR"/>
-<pinref part="U$14" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E18" gate="B" pin="PRE"/>
-<pinref part="U$15" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E18" gate="A" pin="CLR"/>
-<pinref part="U$16" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E18" gate="A" pin="PRE"/>
-<pinref part="U$17" gate="NC" pin="NC"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,304.8,55.88,E10A,PRE,,,,"/>
+<approved hash="202,1,215.9,88.9,E18A,CLR,,,,"/>
+<approved hash="202,1,215.9,99.06,E18A,PRE,,,,"/>
+<approved hash="202,1,215.9,50.8,E18B,CLR,,,,"/>
+<approved hash="202,1,215.9,60.96,E18B,PRE,,,,"/>
+<approved hash="114,1,35.56,35.4965,E6,B,I0,,,"/>
+<approved hash="114,1,35.56,35.4965,E6,B,I1,,,"/>
+<approved hash="202,1,304.8,238.76,E4A,PRE,,,,"/>
+<approved hash="202,1,304.8,218.44,E4B,PRE,,,,"/>
+<approved hash="202,1,304.8,116.84,E2A,PRE,,,,"/>
+<approved hash="202,1,304.8,96.52,E2B,PRE,,,,"/>
+<approved hash="202,1,304.8,157.48,E1A,PRE,,,,"/>
+<approved hash="202,1,304.8,137.16,E1B,PRE,,,,"/>
+<approved hash="202,1,304.8,198.12,E3A,PRE,,,,"/>
+<approved hash="202,1,304.8,177.8,E3B,PRE,,,,"/>
+<approved hash="113,1,46.609,172.72,U$5,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

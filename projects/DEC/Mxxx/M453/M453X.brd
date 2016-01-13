@@ -8184,7 +8184,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
@@ -8805,7 +8805,9 @@ design rules under a new name.</description>
 <wire x1="116.84" y1="26.67" x2="117.7925" y2="26.3525" width="0.8128" layer="1"/>
 <wire x1="111.76" y1="26.67" x2="116.84" y2="26.67" width="0.8128" layer="1"/>
 <wire x1="101.473" y1="35.56" x2="101.6" y2="35.56" width="0.8128" layer="1"/>
-<wire x1="101.6" y1="35.56" x2="111.76" y2="26.67" width="0.8128" layer="1"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="34.29" width="0.8128" layer="1"/>
+<wire x1="101.6" y1="34.29" x2="110.49" y2="26.67" width="0.8128" layer="1"/>
+<wire x1="110.49" y1="26.67" x2="111.76" y2="26.67" width="0.8128" layer="1"/>
 </signal>
 <signal name="N1">
 <contactref element="U$3" pad="N1"/>
@@ -8829,7 +8831,9 @@ design rules under a new name.</description>
 <wire x1="116.84" y1="16.51" x2="117.7925" y2="16.8275" width="0.8128" layer="1"/>
 <wire x1="111.76" y1="16.51" x2="116.84" y2="16.51" width="0.8128" layer="1"/>
 <wire x1="105.156" y1="11.43" x2="105.41" y2="11.43" width="0.8128" layer="1"/>
-<wire x1="105.41" y1="11.43" x2="111.76" y2="16.51" width="0.8128" layer="1"/>
+<wire x1="105.41" y1="11.43" x2="105.41" y2="13.97" width="0.8128" layer="1"/>
+<wire x1="105.41" y1="13.97" x2="110.49" y2="16.51" width="0.8128" layer="1"/>
+<wire x1="110.49" y1="16.51" x2="111.76" y2="16.51" width="0.8128" layer="1"/>
 </signal>
 <signal name="U1">
 <contactref element="U$3" pad="U1"/>

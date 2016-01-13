@@ -6025,31 +6025,6 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-r">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6091,10 +6066,6 @@ LETTER landscape</description>
 <part name="V4" library="supply2" deviceset="VCC" device=""/>
 <part name="V5" library="supply2" deviceset="VCC" device=""/>
 <part name="V8" library="supply2" deviceset="VCC" device=""/>
-<part name="U$2" library="dec-r" deviceset="NC" device=""/>
-<part name="U$3" library="dec-r" deviceset="NC" device=""/>
-<part name="U$6" library="dec-r" deviceset="NC" device=""/>
-<part name="U$7" library="dec-r" deviceset="NC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6179,10 +6150,6 @@ LETTER landscape</description>
 <instance part="V4" gate="G$1" x="91.44" y="175.26"/>
 <instance part="V5" gate="G$1" x="83.82" y="175.26"/>
 <instance part="V8" gate="G$1" x="76.2" y="175.26"/>
-<instance part="U$2" gate="NC" x="198.12" y="53.34"/>
-<instance part="U$3" gate="NC" x="198.12" y="83.82"/>
-<instance part="U$6" gate="NC" x="198.12" y="116.84"/>
-<instance part="U$7" gate="NC" x="198.12" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -6649,27 +6616,17 @@ LETTER landscape</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="E7" gate="A" pin="I1"/>
-<pinref part="U$2" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E7" gate="B" pin="I1"/>
-<pinref part="U$3" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E7" gate="D" pin="I1"/>
-<pinref part="U$6" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E7" gate="C" pin="I1"/>
-<pinref part="U$7" gate="NC" pin="NC"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,198.12,53.34,E7A,I1,,,,"/>
+<approved hash="202,1,198.12,83.82,E7B,I1,,,,"/>
+<approved hash="202,1,198.12,147.32,E7C,I1,,,,"/>
+<approved hash="202,1,198.12,116.84,E7D,I1,,,,"/>
+<approved hash="113,1,69.469,119.38,U$4,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

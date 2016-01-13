@@ -14435,6 +14435,19 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,73.66,35.56,E1G$9,VCCINT,VCC,,,"/>
+<approved hash="104,1,76.2,35.56,E1G$10,VCCINT,VCC,,,"/>
+<approved hash="104,1,81.28,35.56,E1G$11,VCCIO,VCC,,,"/>
+<approved hash="104,1,83.82,35.56,E1G$12,VCCIO,VCC,,,"/>
+<approved hash="104,1,86.36,35.56,E1G$13,VCCIO,VCC,,,"/>
+<approved hash="104,1,88.9,35.56,E1G$14,VCCIO,VCC,,,"/>
+<approved hash="104,1,91.44,35.56,E1G$15,VCCIO,VCC,,,"/>
+<approved hash="104,1,93.98,35.56,E1G$16,VCCIO,VCC,,,"/>
+<approved hash="113,1,164.211,157.48,U$1,,,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME2,,,,,"/>
+<approved hash="113,1,289.56,222.055,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

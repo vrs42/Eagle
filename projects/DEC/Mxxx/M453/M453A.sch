@@ -6245,7 +6245,7 @@ DIN A3, landscape with extra doc field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-r">
+<library name="dec-m">
 <packages>
 </packages>
 <symbols>
@@ -6330,7 +6330,7 @@ DIN A3, landscape with extra doc field</description>
 <part name="U$5" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$6" library="supply1" deviceset="+3V3" device=""/>
 <part name="C4" library="rcl" deviceset="C-US" device="050-025X075" value="270pF"/>
-<part name="U$4" library="dec-r" deviceset="NC" device=""/>
+<part name="U$4" library="dec-m" deviceset="NC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6928,6 +6928,12 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,48.26,165.1,NC,,,,,"/>
+<approved hash="106,1,50.8,165.1,NC,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,308.991,223.52,U$3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

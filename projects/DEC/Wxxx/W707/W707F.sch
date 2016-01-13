@@ -6418,20 +6418,20 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-r">
+<library name="dec-m">
+<description>DEC M-series Flip-Chips</description>
 <packages>
 </packages>
 <symbols>
 <symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
+<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup"/>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="NC">
 <description>An unconnected pin</description>
 <gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
+<gate name="G$1" symbol="NC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -6573,10 +6573,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
 <part name="V41" library="supply2" deviceset="VCC" device=""/>
 <part name="V18" library="supply2" deviceset="GND" device=""/>
-<part name="U$4" library="dec-r" deviceset="NC" device=""/>
-<part name="U$5" library="dec-r" deviceset="NC" device=""/>
-<part name="U$6" library="dec-r" deviceset="NC" device=""/>
 <part name="R38" library="rcl" deviceset="R-US_" device="0207/10" value="2.4K"/>
+<part name="U$4" library="dec-m" deviceset="NC" device=""/>
+<part name="U$5" library="dec-m" deviceset="NC" device=""/>
+<part name="U$6" library="dec-m" deviceset="NC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6798,10 +6798,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="V1" gate="G$1" x="307.34" y="60.96"/>
 <instance part="V41" gate="G$1" x="228.6" y="106.68"/>
 <instance part="V18" gate="GND" x="27.94" y="111.76"/>
-<instance part="U$4" gate="NC" x="335.28" y="157.48" rot="R270"/>
-<instance part="U$5" gate="NC" x="347.98" y="157.48" rot="R270"/>
-<instance part="U$6" gate="NC" x="360.68" y="157.48" rot="R270"/>
 <instance part="R38" gate="G$1" x="304.8" y="116.84"/>
+<instance part="U$4" gate="G$1" x="335.28" y="157.48" rot="R90"/>
+<instance part="U$5" gate="G$1" x="347.98" y="157.48" rot="R90"/>
+<instance part="U$6" gate="G$1" x="360.68" y="157.48" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -8217,21 +8217,66 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="NC" class="0">
 <segment>
+<pinref part="E11" gate="PWR" pin="VCC"/>
+<pinref part="U$4" gate="G$1" pin="NC"/>
+</segment>
+<segment>
 <pinref part="E14" gate="PWR" pin="VCC"/>
-<pinref part="U$5" gate="NC" pin="NC"/>
+<pinref part="U$5" gate="G$1" pin="NC"/>
 </segment>
 <segment>
 <pinref part="E20" gate="PWR" pin="VCC"/>
-<pinref part="U$6" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E11" gate="PWR" pin="VCC"/>
-<pinref part="U$4" gate="NC" pin="NC"/>
+<pinref part="U$6" gate="G$1" pin="NC"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,381,193.04,E14E,O,,,,"/>
+<approved hash="101,1,381,182.88,E20F,O,,,,"/>
+<approved hash="104,1,335.28,157.48,E11PWR,VCC,NC,,,"/>
+<approved hash="104,1,347.98,157.48,E14PWR,VCC,NC,,,"/>
+<approved hash="104,1,360.68,157.48,E20PWR,VCC,NC,,,"/>
+<approved hash="106,1,375.92,68.58,+10V,,,,,"/>
+<approved hash="106,1,378.46,68.58,+10V,,,,,"/>
+<approved hash="206,1,119.38,185.42,N$33,,,,,"/>
+<approved hash="206,1,116.84,162.56,N$33,,,,,"/>
+<approved hash="206,1,152.4,185.42,N$35,,,,,"/>
+<approved hash="206,1,149.86,162.56,N$35,,,,,"/>
+<approved hash="206,1,185.42,185.42,N$38,,,,,"/>
+<approved hash="206,1,182.88,162.56,N$38,,,,,"/>
+<approved hash="206,1,218.44,185.42,N$39,,,,,"/>
+<approved hash="206,1,215.9,162.56,N$39,,,,,"/>
+<approved hash="206,1,251.46,185.42,N$41,,,,,"/>
+<approved hash="206,1,248.92,162.56,N$41,,,,,"/>
+<approved hash="206,1,284.48,185.42,N$43,,,,,"/>
+<approved hash="206,1,281.94,162.56,N$43,,,,,"/>
+<approved hash="206,1,317.5,185.42,N$45,,,,,"/>
+<approved hash="206,1,314.96,162.56,N$45,,,,,"/>
+<approved hash="206,1,86.36,185.42,N$54,,,,,"/>
+<approved hash="206,1,83.82,162.56,N$54,,,,,"/>
+<approved hash="206,1,53.34,185.42,N$61,,,,,"/>
+<approved hash="206,1,48.26,162.56,N$61,,,,,"/>
+<approved hash="206,1,15.24,137.16,N$63,,,,,"/>
+<approved hash="206,1,17.78,185.42,N$63,,,,,"/>
+<approved hash="206,1,299.72,137.16,N$68,,,,,"/>
+<approved hash="206,1,33.02,137.16,N$68,,,,,"/>
+<approved hash="206,1,99.06,137.16,N$68,,,,,"/>
+<approved hash="206,1,165.1,137.16,N$68,,,,,"/>
+<approved hash="206,1,231.14,137.16,N$68,,,,,"/>
+<approved hash="206,1,127,66.04,N$78,,,,,"/>
+<approved hash="206,1,160.02,71.12,N$78,,,,,"/>
+<approved hash="113,1,339.471,93.98,U$2,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,244.119,75.0274,TP1,,,,,"/>
+<approved hash="113,1,216.179,29.3074,TP2,,,,,"/>
+<approved hash="113,1,77.5674,169.901,TP3,,,,,"/>
+<approved hash="113,1,143.607,169.901,TP4,,,,,"/>
+<approved hash="113,1,137.439,82.6474,TP5,,,,,"/>
+<approved hash="113,1,275.687,169.901,TP6,,,,,"/>
+<approved hash="113,1,317.779,133.447,TP7,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

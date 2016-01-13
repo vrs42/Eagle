@@ -6038,31 +6038,6 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-r">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6095,8 +6070,6 @@ LETTER landscape</description>
 <part name="E2" library="74xx-us" deviceset="74*74" device="N" technology="S" value="7474N"/>
 <part name="E3" library="74xx-us" deviceset="74*74" device="N" technology="S" value="7474N"/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
-<part name="U$3" library="dec-r" deviceset="NC" device=""/>
-<part name="U$4" library="dec-r" deviceset="NC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6164,8 +6137,6 @@ LETTER landscape</description>
 <instance part="E3" gate="A" x="182.88" y="160.02"/>
 <instance part="E3" gate="B" x="182.88" y="101.6"/>
 <instance part="V7" gate="GND" x="165.1" y="91.44"/>
-<instance part="U$3" gate="NC" x="170.18" y="106.68"/>
-<instance part="U$4" gate="NC" x="170.18" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -6454,19 +6425,15 @@ LETTER landscape</description>
 <pinref part="U$2" gate="N1" pin="1"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="E3" gate="B" pin="PRE"/>
-<pinref part="U$3" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E3" gate="B" pin="CLR"/>
-<pinref part="U$4" gate="NC" pin="NC"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,170.18,96.52,E3B,CLR,,,,"/>
+<approved hash="202,1,170.18,106.68,E3B,PRE,,,,"/>
+<approved hash="113,1,102.489,152.4,U$2,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

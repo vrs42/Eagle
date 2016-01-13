@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9075,31 +9075,6 @@ DIN A3, landscape with extra doc field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-r">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9256,8 +9231,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="V54" library="supply2" deviceset="GND" device=""/>
 <part name="R22" library="rcl" deviceset="R-US_" device="0207/10" value="5.6K"/>
 <part name="FRAME3" library="frames" deviceset="DINA3_L" device=""/>
-<part name="U$5" library="dec-r" deviceset="NC" device=""/>
-<part name="U$7" library="dec-r" deviceset="NC" device=""/>
 <part name="R24" library="dec-con" deviceset="275P" device="" value="(option)"/>
 <part name="E3" library="74xx-us" deviceset="74*04" device="N"/>
 <part name="E34" library="74xx-us" deviceset="74*08" device="N" technology="LS" value="7408N"/>
@@ -9305,8 +9278,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="V55" library="supply2" deviceset="GND" device=""/>
 <part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="5.6K"/>
 <part name="FRAME2" library="frames" deviceset="DINA3_L" device=""/>
-<part name="U$1" library="dec-r" deviceset="NC" device=""/>
-<part name="U$6" library="dec-r" deviceset="NC" device=""/>
 <part name="E18" library="74xx-us" deviceset="74*13" device="N"/>
 <part name="R23" library="dec-con" deviceset="275P" device="" value="(option)"/>
 </parts>
@@ -10997,8 +10968,6 @@ DIN A3, landscape with extra doc field</description>
 <instance part="R22" gate="G$1" x="109.22" y="119.38" rot="MR270"/>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="FRAME3" gate="G$2" x="287.02" y="0"/>
-<instance part="U$5" gate="NC" x="58.42" y="114.3"/>
-<instance part="U$7" gate="NC" x="226.06" y="53.34"/>
 <instance part="R24" gate="G$1" x="99.06" y="129.54" rot="MR180"/>
 <instance part="E3" gate="C" x="86.36" y="167.64"/>
 <instance part="E3" gate="D" x="93.98" y="198.12"/>
@@ -12507,16 +12476,6 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="E43" gate="A" pin="O"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="E35" gate="B" pin="D"/>
-<pinref part="U$5" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E30" gate="B" pin="D"/>
-<pinref part="U$7" gate="NC" pin="NC"/>
-</segment>
-</net>
 <net name="AIOT2H" class="0">
 <segment>
 <wire x1="96.52" y1="177.8" x2="109.22" y2="177.8" width="0.1524" layer="91"/>
@@ -12595,8 +12554,6 @@ DIN A3, landscape with extra doc field</description>
 <instance part="R21" gate="G$1" x="109.22" y="119.38" rot="MR270"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="FRAME2" gate="G$2" x="287.02" y="0"/>
-<instance part="U$1" gate="NC" x="58.42" y="114.3"/>
-<instance part="U$6" gate="NC" x="226.06" y="53.34"/>
 <instance part="E18" gate="A" x="71.12" y="198.12"/>
 <instance part="E18" gate="B" x="71.12" y="231.14"/>
 <instance part="R23" gate="G$1" x="99.06" y="129.54" rot="MR180"/>
@@ -14136,16 +14093,6 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="E44" gate="A" pin="R/C"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="E35" gate="A" pin="D"/>
-<pinref part="U$1" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E30" gate="A" pin="D"/>
-<pinref part="U$6" gate="NC" pin="NC"/>
-</segment>
-</net>
 <net name="3V4" class="0">
 <segment>
 <wire x1="60.96" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="91"/>
@@ -14161,6 +14108,22 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,335.28,198.056,E45,C,I0,,,"/>
+<approved hash="114,1,335.28,198.056,E45,C,I1,,,"/>
+<approved hash="114,1,335.28,198.056,E45,D,I0,,,"/>
+<approved hash="114,1,335.28,198.056,E45,D,I1,,,"/>
+<approved hash="202,3,58.42,114.3,E35A,D,,,,"/>
+<approved hash="202,2,58.42,114.3,E35B,D,,,,"/>
+<approved hash="202,3,226.06,53.34,E30A,D,,,,"/>
+<approved hash="202,2,226.06,53.34,E30B,D,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,44.069,223.52,U$2,,,,,"/>
+<approved hash="113,2,368.3,78.9347,J1,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME3,,,,,"/>
+<approved hash="113,3,368.3,78.9347,J2,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Program Files/EAGLE-4.11/projects/DEC/PDP8L/pdp8l.brd
+Job           : C:/Users/Vince/Documents/eagle/projects/4.11/DEC/PDP8L/pdp8l.brd
 
-Start at      :   02:02:11p ( 9/23/2009)
-End at        :   09:00:10p ( 9/23/2009)
-Elapsed time  :   06:57:56
+Start at      : 07:49:00 (1/13/2016)
+End at        : 07:51:03 (1/13/2016)
+Elapsed time  : 00:02:02
 
 Signals       :   901   RoutingGrid: 8 mil  Layers: 4
-Connections   :  2553   predefined:  0 ( 0 Vias )
+Connections   :  2553   predefined:  2552 ( 2570 Vias )
 
-Router memory :   24643584
+Router memory :   24215744
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:40  01:03:26  01:24:36  01:30:54  01:26:55  01:31:25
-Number of Ripups  :         0        40         0         0         0         0
-max. Level        :         0         8         0         0         0         0
-max. Total        :         0        10         0         0         0         0
+Time per pass     :  00:00:07  00:00:29  00:00:28  00:00:29  00:00:29
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         0         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :       348      2553      2553      2553      2553      2553
-Vias              :         0      6929      4165      3221      2826      2570
-Resolution        :    13.6 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         1         1         1         1         1
+Vias              :         0         0         0         0         0
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

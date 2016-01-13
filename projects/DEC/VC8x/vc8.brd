@@ -10,18 +10,18 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="vcc$" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="gnd$" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
@@ -165,92 +165,6 @@
 </package>
 </packages>
 </library>
-<library name="dec-r">
-<packages>
-<package name="H807">
-<description>One-wide female edge connector</description>
-<wire x1="-6.35" y1="-31.75" x2="-6.35" y2="34.925" width="0.127" layer="21"/>
-<wire x1="6.4135" y1="34.925" x2="6.4135" y2="-31.75" width="0.127" layer="21"/>
-<wire x1="6.4135" y1="-31.75" x2="4.7625" y2="-31.75" width="0.127" layer="21"/>
-<wire x1="4.7625" y1="-31.75" x2="1.5875" y2="-31.75" width="0.127" layer="21"/>
-<wire x1="-4.7625" y1="-31.75" x2="-6.35" y2="-31.75" width="0.127" layer="21"/>
-<wire x1="-4.7625" y1="34.925" x2="-6.35" y2="34.925" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="30.48" x2="1.27" y2="30.48" width="0.3048" layer="21"/>
-<wire x1="1.27" y1="30.48" x2="1.27" y2="-26.67" width="0.3048" layer="21"/>
-<wire x1="1.27" y1="-26.67" x2="-1.27" y2="-26.67" width="0.3048" layer="21"/>
-<wire x1="-1.27" y1="-26.67" x2="-1.27" y2="30.48" width="0.3048" layer="21"/>
-<wire x1="1.5875" y1="34.925" x2="4.7625" y2="34.925" width="0.127" layer="21"/>
-<wire x1="4.7625" y1="34.925" x2="6.35" y2="34.925" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="34.925" x2="-4.7625" y2="34.925" width="0.127" layer="21" curve="-126.869898"/>
-<wire x1="-4.7625" y1="-31.75" x2="1.5875" y2="-31.75" width="0.127" layer="21" curve="-126.869898"/>
-<wire x1="4.7625" y1="34.925" x2="-1.5875" y2="34.925" width="0.127" layer="21" curve="-126.869898"/>
-<wire x1="-1.5875" y1="34.925" x2="-4.7625" y2="34.925" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="-31.75" x2="4.7625" y2="-31.75" width="0.127" layer="21" curve="-126.869898"/>
-<wire x1="-1.5875" y1="-31.75" x2="-4.7625" y2="-31.75" width="0.127" layer="21"/>
-<pad name="U2" x="-1.5875" y="-22.225" drill="1.0922" shape="octagon"/>
-<pad name="V2" x="-4.7625" y="-25.4" drill="1.0922" shape="octagon"/>
-<pad name="U1" x="4.7625" y="-22.225" drill="1.0922" shape="octagon"/>
-<pad name="V1" x="1.5875" y="-25.4" drill="1.0922" shape="octagon"/>
-<pad name="T2" x="-4.7625" y="-19.05" drill="1.0922" shape="octagon"/>
-<pad name="R2" x="-4.7625" y="-12.7" drill="1.0922" shape="octagon"/>
-<pad name="N2" x="-4.7625" y="-6.35" drill="1.0922" shape="octagon"/>
-<pad name="T1" x="1.5875" y="-19.05" drill="1.0922" shape="octagon"/>
-<pad name="S1" x="4.7625" y="-15.875" drill="1.0922" shape="octagon"/>
-<pad name="S2" x="-1.5875" y="-15.875" drill="1.0922" shape="octagon"/>
-<pad name="R1" x="1.5875" y="-12.7" drill="1.0922" shape="octagon"/>
-<pad name="P1" x="4.7625" y="-9.525" drill="1.0922" shape="octagon"/>
-<pad name="P2" x="-1.5875" y="-9.525" drill="1.0922" shape="octagon"/>
-<pad name="N1" x="1.5875" y="-6.35" drill="1.0922" shape="octagon"/>
-<pad name="M1" x="4.7625" y="-3.175" drill="1.0922" shape="octagon"/>
-<pad name="K1" x="4.7625" y="3.175" drill="1.0922" shape="octagon"/>
-<pad name="H1" x="4.7625" y="9.525" drill="1.0922" shape="octagon"/>
-<pad name="E1" x="4.7625" y="15.875" drill="1.0922" shape="octagon"/>
-<pad name="C1" x="4.7625" y="22.225" drill="1.0922" shape="octagon"/>
-<pad name="A1" x="4.7625" y="28.575" drill="1.0922" shape="octagon"/>
-<pad name="A2" x="-1.5875" y="28.575" drill="1.0922" shape="octagon"/>
-<pad name="C2" x="-1.5875" y="22.225" drill="1.0922" shape="octagon"/>
-<pad name="E2" x="-1.5875" y="15.875" drill="1.0922" shape="octagon"/>
-<pad name="H2" x="-1.5875" y="9.525" drill="1.0922" shape="octagon"/>
-<pad name="K2" x="-1.5875" y="3.175" drill="1.0922" shape="octagon"/>
-<pad name="M2" x="-1.5875" y="-3.175" drill="1.0922" shape="octagon"/>
-<pad name="L2" x="-4.7625" y="0" drill="1.0922" shape="octagon"/>
-<pad name="J2" x="-4.7625" y="6.35" drill="1.0922" shape="octagon"/>
-<pad name="F2" x="-4.7625" y="12.7" drill="1.0922" shape="octagon"/>
-<pad name="D2" x="-4.7625" y="19.05" drill="1.0922" shape="octagon"/>
-<pad name="B2" x="-4.7625" y="25.4" drill="1.0922" shape="octagon"/>
-<pad name="B1" x="1.5875" y="25.4" drill="1.0922" shape="octagon"/>
-<pad name="D1" x="1.5875" y="19.05" drill="1.0922" shape="octagon"/>
-<pad name="F1" x="1.5875" y="12.7" drill="1.0922" shape="octagon"/>
-<pad name="J1" x="1.5875" y="6.35" drill="1.0922" shape="octagon"/>
-<pad name="L1" x="1.5875" y="0" drill="1.0922" shape="octagon"/>
-<text x="-0.635" y="-25.4" size="1.27" layer="22" rot="MR0">V</text>
-<text x="2.54" y="-22.225" size="1.27" layer="22" rot="MR0">U</text>
-<text x="-0.635" y="-19.05" size="1.27" layer="22" rot="MR0">T</text>
-<text x="2.54" y="-15.875" size="1.27" layer="22" rot="MR0">S</text>
-<text x="-0.635" y="-12.7" size="1.27" layer="22" rot="MR0">R</text>
-<text x="2.54" y="-9.525" size="1.27" layer="22" rot="MR0">P</text>
-<text x="-0.635" y="-6.35" size="1.27" layer="22" rot="MR0">N</text>
-<text x="2.54" y="-3.175" size="1.27" layer="22" rot="MR0">M</text>
-<text x="-0.635" y="0" size="1.27" layer="22" rot="MR0">L</text>
-<text x="2.54" y="3.175" size="1.27" layer="22" rot="MR0">K</text>
-<text x="-0.635" y="6.35" size="1.27" layer="22" rot="MR0">J</text>
-<text x="2.54" y="9.525" size="1.27" layer="22" rot="MR0">H</text>
-<text x="-0.635" y="12.7" size="1.27" layer="22" rot="MR0">F</text>
-<text x="2.54" y="15.875" size="1.27" layer="22" rot="MR0">E</text>
-<text x="-0.635" y="19.05" size="1.27" layer="22" rot="MR0">D</text>
-<text x="2.54" y="22.225" size="1.27" layer="22" rot="MR0">C</text>
-<text x="-0.635" y="25.4" size="1.27" layer="22" rot="MR0">B</text>
-<text x="2.54" y="28.575" size="1.27" layer="22" rot="MR0">A</text>
-<text x="3.175" y="30.48" size="1.27" layer="22" rot="MR0">1</text>
-<text x="-3.175" y="30.48" size="1.27" layer="22" rot="MR0">2</text>
-<text x="-3.175" y="-27.94" size="1.27" layer="22" rot="MR0">2</text>
-<text x="3.175" y="-27.94" size="1.27" layer="22" rot="MR0">1</text>
-<text x="-3.81" y="31.75" size="1.27" layer="21">&gt;Name</text>
-<text x="-3.81" y="-29.21" size="1.27" layer="21">&gt;Name</text>
-<rectangle x1="-6.35" y1="-29.21" x2="6.2865" y2="33.02" layer="39"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -262,7 +176,7 @@
 <class number="1" name="Supply" width="0.635" drill="0">
 </class>
 </classes>
-<designrules name="custompcb">
+<designrules name="custompcb *">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -270,7 +184,7 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<param name="layerSetup" value="(1*16)"/>
+<param name="layerSetup" value="(1*2*15*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="8mil"/>
@@ -440,24 +354,24 @@ design rules under a new name.</description>
 <element name="B01" library="dec-m" package="H807" value="M903" x="146.05" y="30.1625"/>
 <element name="B02" library="dec-m" package="H807" value="M903" x="133.35" y="30.1625"/>
 <element name="B03" library="dec-m" package="H807" value="M903" x="120.65" y="30.1625"/>
-<element name="B04" library="dec-r" package="H807" value="M103" x="107.95" y="30.1625"/>
-<element name="B05" library="dec-r" package="H807" value="M103" x="95.25" y="30.1625"/>
-<element name="B10" library="dec-r" package="H807" value="M103" x="31.75" y="30.1625"/>
-<element name="B06" library="dec-r" package="H807" value="EMPTY" x="82.55" y="30.1625"/>
-<element name="A07" library="dec-r" package="H807" value="A618A" x="69.85" y="100.0125"/>
-<element name="B07" library="dec-r" package="H807" value="A618B" x="69.85" y="30.1625"/>
-<element name="A09" library="dec-r" package="H807" value="A618A" x="44.45" y="100.0125"/>
-<element name="B09" library="dec-r" package="H807" value="A618B" x="44.45" y="30.1625"/>
-<element name="B08" library="dec-r" package="H807" value="EMPTY" x="57.15" y="30.1625"/>
-<element name="A04" library="dec-r" package="H807" value="M101" x="107.95" y="100.0125"/>
-<element name="A05" library="dec-r" package="H807" value="M111" x="95.25" y="100.0125"/>
-<element name="A06" library="dec-r" package="H807" value="M206" x="82.55" y="100.0125"/>
-<element name="A08" library="dec-r" package="H807" value="A702" x="57.15" y="100.0125"/>
-<element name="A10" library="dec-r" package="H807" value="A702" x="31.75" y="100.0125"/>
-<element name="A11" library="dec-r" package="H807" value="M921" x="19.05" y="100.0125"/>
-<element name="A12" library="dec-r" package="H807" value="M113" x="6.35" y="100.0125"/>
-<element name="B11" library="dec-r" package="H807" value="M306" x="19.05" y="30.1625"/>
-<element name="B12" library="dec-r" package="H807" value="M306" x="6.35" y="30.1625"/>
+<element name="B04" library="dec-m" package="H807" value="M103" x="107.95" y="30.1625"/>
+<element name="B05" library="dec-m" package="H807" value="M103" x="95.25" y="30.1625"/>
+<element name="B10" library="dec-m" package="H807" value="M103" x="31.75" y="30.1625"/>
+<element name="B06" library="dec-m" package="H807" value="EMPTY" x="82.55" y="30.1625"/>
+<element name="A07" library="dec-m" package="H807" value="A618A" x="69.85" y="100.0125"/>
+<element name="B07" library="dec-m" package="H807" value="A618B" x="69.85" y="30.1625"/>
+<element name="A09" library="dec-m" package="H807" value="A618A" x="44.45" y="100.0125"/>
+<element name="B09" library="dec-m" package="H807" value="A618B" x="44.45" y="30.1625"/>
+<element name="B08" library="dec-m" package="H807" value="EMPTY" x="57.15" y="30.1625"/>
+<element name="A04" library="dec-m" package="H807" value="M101" x="107.95" y="100.0125"/>
+<element name="A05" library="dec-m" package="H807" value="M111" x="95.25" y="100.0125"/>
+<element name="A06" library="dec-m" package="H807" value="M206" x="82.55" y="100.0125"/>
+<element name="A08" library="dec-m" package="H807" value="A702" x="57.15" y="100.0125"/>
+<element name="A10" library="dec-m" package="H807" value="A702" x="31.75" y="100.0125"/>
+<element name="A11" library="dec-m" package="H807" value="M921" x="19.05" y="100.0125"/>
+<element name="A12" library="dec-m" package="H807" value="M113" x="6.35" y="100.0125"/>
+<element name="B11" library="dec-m" package="H807" value="M306" x="19.05" y="30.1625"/>
+<element name="B12" library="dec-m" package="H807" value="M306" x="6.35" y="30.1625"/>
 </elements>
 <signals>
 <signal name="GND">

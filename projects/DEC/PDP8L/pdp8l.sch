@@ -131,7 +131,7 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-r">
+<library name="dec-m">
 <packages>
 <package name="H807">
 <description>One-wide female edge connector</description>
@@ -4596,88 +4596,88 @@
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="TABL_L" device=""/>
-<part name="C04" library="dec-r" deviceset="M206X" device="" value="M216"/>
-<part name="C02" library="dec-r" deviceset="M113" device=""/>
-<part name="D04" library="dec-r" deviceset="M115" device=""/>
+<part name="C04" library="dec-m" deviceset="M206X" device="" value="M216"/>
+<part name="C02" library="dec-m" deviceset="M113" device=""/>
+<part name="D04" library="dec-m" deviceset="M115" device=""/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
-<part name="D02" library="dec-r" deviceset="M111" device=""/>
-<part name="B34" library="dec-r" deviceset="M903" device=""/>
-<part name="D05" library="dec-r" deviceset="M310" device=""/>
+<part name="D02" library="dec-m" deviceset="M111" device=""/>
+<part name="B34" library="dec-m" deviceset="M903" device=""/>
+<part name="D05" library="dec-m" deviceset="M310" device=""/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
-<part name="D06" library="dec-r" deviceset="M310" device=""/>
-<part name="C05" library="dec-r" deviceset="M113" device=""/>
-<part name="D07" library="dec-r" deviceset="M310" device=""/>
-<part name="D08" library="dec-r" deviceset="M310" device=""/>
-<part name="C06" library="dec-r" deviceset="M206X" device="" value="M216"/>
+<part name="D06" library="dec-m" deviceset="M310" device=""/>
+<part name="C05" library="dec-m" deviceset="M113" device=""/>
+<part name="D07" library="dec-m" deviceset="M310" device=""/>
+<part name="D08" library="dec-m" deviceset="M310" device=""/>
+<part name="C06" library="dec-m" deviceset="M206X" device="" value="M216"/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
-<part name="C07" library="dec-r" deviceset="M111" device=""/>
-<part name="D09" library="dec-r" deviceset="M160" device=""/>
-<part name="B36" library="dec-r" deviceset="M903" device=""/>
-<part name="CD03" library="dec-r" deviceset="M700" device=""/>
-<part name="D01" library="dec-r" deviceset="M916" device="" value="G921"/>
-<part name="B08" library="dec-r" deviceset="M617" device=""/>
+<part name="C07" library="dec-m" deviceset="M111" device=""/>
+<part name="D09" library="dec-m" deviceset="M160" device=""/>
+<part name="B36" library="dec-m" deviceset="M903" device=""/>
+<part name="CD03" library="dec-m" deviceset="M700" device=""/>
+<part name="D01" library="dec-m" deviceset="M916" device="" value="G921"/>
+<part name="B08" library="dec-m" deviceset="M617" device=""/>
 <part name="V8" library="supply2" deviceset="VCC" device=""/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" deviceset="TABL_L" device=""/>
-<part name="D12" library="dec-r" deviceset="M113" device=""/>
-<part name="D13" library="dec-r" deviceset="M111" device=""/>
-<part name="C08" library="dec-r" deviceset="M206X" device="" value="M216"/>
-<part name="D10" library="dec-r" deviceset="M206X" device="" value="M216"/>
-<part name="C01" library="dec-r" deviceset="M916" device="" value="G921"/>
-<part name="C26" library="dec-r" deviceset="M002" device=""/>
-<part name="C09" library="dec-r" deviceset="M115" device=""/>
-<part name="C11" library="dec-r" deviceset="M117" device=""/>
-<part name="C10" library="dec-r" deviceset="M119" device=""/>
-<part name="B35" library="dec-r" deviceset="M903" device=""/>
-<part name="A01" library="dec-r" deviceset="M916" device="" value="G921"/>
-<part name="D11" library="dec-r" deviceset="M113" device=""/>
-<part name="B11" library="dec-r" deviceset="M206X" device="" value="M216"/>
-<part name="B09" library="dec-r" deviceset="M617" device=""/>
+<part name="D12" library="dec-m" deviceset="M113" device=""/>
+<part name="D13" library="dec-m" deviceset="M111" device=""/>
+<part name="C08" library="dec-m" deviceset="M206X" device="" value="M216"/>
+<part name="D10" library="dec-m" deviceset="M206X" device="" value="M216"/>
+<part name="C01" library="dec-m" deviceset="M916" device="" value="G921"/>
+<part name="C26" library="dec-m" deviceset="M002" device=""/>
+<part name="C09" library="dec-m" deviceset="M115" device=""/>
+<part name="C11" library="dec-m" deviceset="M117" device=""/>
+<part name="C10" library="dec-m" deviceset="M119" device=""/>
+<part name="B35" library="dec-m" deviceset="M903" device=""/>
+<part name="A01" library="dec-m" deviceset="M916" device="" value="G921"/>
+<part name="D11" library="dec-m" deviceset="M113" device=""/>
+<part name="B11" library="dec-m" deviceset="M206X" device="" value="M216"/>
+<part name="B09" library="dec-m" deviceset="M617" device=""/>
 <part name="V10" library="supply2" deviceset="VCC" device=""/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" deviceset="TABL_L" device=""/>
-<part name="A08" library="dec-r" deviceset="M617" device=""/>
-<part name="A10" library="dec-r" deviceset="M160" device=""/>
+<part name="A08" library="dec-m" deviceset="M617" device=""/>
+<part name="A10" library="dec-m" deviceset="M160" device=""/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
-<part name="C28" library="dec-r" deviceset="M115" device=""/>
-<part name="A35" library="dec-r" deviceset="M111" device=""/>
-<part name="C12" library="dec-r" deviceset="M115" device=""/>
-<part name="B13" library="dec-r" deviceset="M113" device=""/>
-<part name="B12" library="dec-r" deviceset="M111" device=""/>
-<part name="A09" library="dec-r" deviceset="M617" device=""/>
-<part name="C13" library="dec-r" deviceset="M117" device=""/>
-<part name="B10" library="dec-r" deviceset="M160" device=""/>
-<part name="C15" library="dec-r" deviceset="M113" device=""/>
-<part name="A12" library="dec-r" deviceset="M160" device=""/>
-<part name="A13" library="dec-r" deviceset="M160" device=""/>
+<part name="C28" library="dec-m" deviceset="M115" device=""/>
+<part name="A35" library="dec-m" deviceset="M111" device=""/>
+<part name="C12" library="dec-m" deviceset="M115" device=""/>
+<part name="B13" library="dec-m" deviceset="M113" device=""/>
+<part name="B12" library="dec-m" deviceset="M111" device=""/>
+<part name="A09" library="dec-m" deviceset="M617" device=""/>
+<part name="C13" library="dec-m" deviceset="M117" device=""/>
+<part name="B10" library="dec-m" deviceset="M160" device=""/>
+<part name="C15" library="dec-m" deviceset="M113" device=""/>
+<part name="A12" library="dec-m" deviceset="M160" device=""/>
+<part name="A13" library="dec-m" deviceset="M160" device=""/>
 <part name="V12" library="supply2" deviceset="VCC" device=""/>
 <part name="V13" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME4" library="frames" deviceset="TABL_L" device=""/>
 <part name="V14" library="supply2" deviceset="VCC" device=""/>
 <part name="V15" library="supply2" deviceset="GND" device=""/>
-<part name="A11" library="dec-r" deviceset="M115" device=""/>
-<part name="B14" library="dec-r" deviceset="M119" device=""/>
-<part name="A14" library="dec-r" deviceset="M115" device=""/>
+<part name="A11" library="dec-m" deviceset="M115" device=""/>
+<part name="B14" library="dec-m" deviceset="M119" device=""/>
+<part name="A14" library="dec-m" deviceset="M115" device=""/>
 <part name="FRAME5" library="frames" deviceset="TABL_L" device=""/>
 <part name="V16" library="supply2" deviceset="VCC" device=""/>
 <part name="V17" library="supply2" deviceset="GND" device=""/>
-<part name="C14" library="dec-r" deviceset="M113" device=""/>
+<part name="C14" library="dec-m" deviceset="M113" device=""/>
 <part name="FRAME6" library="frames" deviceset="TABL_L" device=""/>
 <part name="V18" library="supply2" deviceset="VCC" device=""/>
 <part name="V19" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME7" library="frames" deviceset="TABL_L" device=""/>
 <part name="V20" library="supply2" deviceset="VCC" device=""/>
 <part name="V21" library="supply2" deviceset="GND" device=""/>
-<part name="AB07" library="dec-r" deviceset="M220X" device="" value="M220"/>
-<part name="AB06" library="dec-r" deviceset="M220X" device="" value="M220"/>
-<part name="AB05" library="dec-r" deviceset="M220X" device="" value="M220"/>
-<part name="AB04" library="dec-r" deviceset="M220X" device="" value="M220"/>
-<part name="AB03" library="dec-r" deviceset="M220X" device="" value="M220"/>
-<part name="AB02" library="dec-r" deviceset="M220X" device="" value="M220"/>
-<part name="B01" library="dec-r" deviceset="M916" device="" value="G921"/>
+<part name="AB07" library="dec-m" deviceset="M220X" device="" value="M220"/>
+<part name="AB06" library="dec-m" deviceset="M220X" device="" value="M220"/>
+<part name="AB05" library="dec-m" deviceset="M220X" device="" value="M220"/>
+<part name="AB04" library="dec-m" deviceset="M220X" device="" value="M220"/>
+<part name="AB03" library="dec-m" deviceset="M220X" device="" value="M220"/>
+<part name="AB02" library="dec-m" deviceset="M220X" device="" value="M220"/>
+<part name="B01" library="dec-m" deviceset="M916" device="" value="G921"/>
 <part name="FRAME8" library="frames" deviceset="TABL_L" device=""/>
 <part name="V22" library="supply2" deviceset="VCC" device=""/>
 <part name="V23" library="supply2" deviceset="GND" device=""/>
@@ -4729,21 +4729,21 @@
 <part name="FRAME13" library="frames" deviceset="TABL_L" device=""/>
 <part name="V57" library="supply2" deviceset="VCC" device=""/>
 <part name="V58" library="supply2" deviceset="GND" device=""/>
-<part name="D36" library="dec-r" deviceset="M903" device=""/>
-<part name="D35" library="dec-r" deviceset="M903" device=""/>
-<part name="D34" library="dec-r" deviceset="M903" device=""/>
-<part name="D27" library="dec-r" deviceset="M623" device=""/>
-<part name="D28" library="dec-r" deviceset="M623" device=""/>
-<part name="C27" library="dec-r" deviceset="M623" device=""/>
-<part name="C29" library="dec-r" deviceset="M660" device=""/>
-<part name="C30" library="dec-r" deviceset="M660" device=""/>
+<part name="D36" library="dec-m" deviceset="M903" device=""/>
+<part name="D35" library="dec-m" deviceset="M903" device=""/>
+<part name="D34" library="dec-m" deviceset="M903" device=""/>
+<part name="D27" library="dec-m" deviceset="M623" device=""/>
+<part name="D28" library="dec-m" deviceset="M623" device=""/>
+<part name="C27" library="dec-m" deviceset="M623" device=""/>
+<part name="C29" library="dec-m" deviceset="M660" device=""/>
+<part name="C30" library="dec-m" deviceset="M660" device=""/>
 <part name="V70" library="supply2" deviceset="GND" device=""/>
 <part name="V71" library="supply2" deviceset="GND" device=""/>
 <part name="V72" library="supply2" deviceset="GND" device=""/>
 <part name="V73" library="supply2" deviceset="GND" device=""/>
 <part name="V74" library="supply2" deviceset="GND" device=""/>
 <part name="V75" library="supply2" deviceset="GND" device=""/>
-<part name="A34" library="dec-r" deviceset="M111" device=""/>
+<part name="A34" library="dec-m" deviceset="M111" device=""/>
 <part name="V76" library="supply2" deviceset="GND" device=""/>
 <part name="V77" library="supply2" deviceset="GND" device=""/>
 <part name="V78" library="supply2" deviceset="GND" device=""/>
@@ -4753,84 +4753,84 @@
 <part name="V82" library="supply2" deviceset="GND" device=""/>
 <part name="V83" library="supply2" deviceset="GND" device=""/>
 <part name="V84" library="supply2" deviceset="GND" device=""/>
-<part name="A32" library="dec-r" deviceset="M516" device=""/>
-<part name="A33" library="dec-r" deviceset="M516" device=""/>
+<part name="A32" library="dec-m" deviceset="M516" device=""/>
+<part name="A33" library="dec-m" deviceset="M516" device=""/>
 <part name="V85" library="supply2" deviceset="GND" device=""/>
-<part name="D29" library="dec-r" deviceset="M906" device=""/>
-<part name="D30" library="dec-r" deviceset="M906" device=""/>
-<part name="C36" library="dec-r" deviceset="M903" device=""/>
-<part name="C35" library="dec-r" deviceset="M903" device=""/>
-<part name="B32" library="dec-r" deviceset="M906" device=""/>
+<part name="D29" library="dec-m" deviceset="M906" device=""/>
+<part name="D30" library="dec-m" deviceset="M906" device=""/>
+<part name="C36" library="dec-m" deviceset="M903" device=""/>
+<part name="C35" library="dec-m" deviceset="M903" device=""/>
+<part name="B32" library="dec-m" deviceset="M906" device=""/>
 <part name="V86" library="supply2" deviceset="GND" device=""/>
-<part name="B33" library="dec-r" deviceset="M906" device=""/>
+<part name="B33" library="dec-m" deviceset="M906" device=""/>
 <part name="V87" library="supply2" deviceset="GND" device=""/>
 <part name="V133" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME12" library="frames" deviceset="TABL_L" device=""/>
 <part name="V55" library="supply2" deviceset="VCC" device=""/>
 <part name="V56" library="supply2" deviceset="GND" device=""/>
-<part name="C32" library="dec-r" deviceset="M916" device="" value="M706A"/>
-<part name="D32" library="dec-r" deviceset="M916" device="" value="M706B"/>
+<part name="C32" library="dec-m" deviceset="M916" device="" value="M706A"/>
+<part name="D32" library="dec-m" deviceset="M916" device="" value="M706B"/>
 <part name="V94" library="supply2" deviceset="GND" device=""/>
 <part name="V95" library="supply2" deviceset="VCC" device=""/>
 <part name="V96" library="supply2" deviceset="GND" device=""/>
-<part name="D33" library="dec-r" deviceset="W023" device="" value="W076"/>
+<part name="D33" library="dec-m" deviceset="W023" device="" value="W076"/>
 <part name="V97" library="supply2" deviceset="VCC" device=""/>
 <part name="V59" library="supply2" deviceset="GND" device=""/>
 <part name="V108" library="supply2" deviceset="-15V" device=""/>
 <part name="FRAME14" library="frames" deviceset="TABL_L" device=""/>
 <part name="V88" library="supply2" deviceset="VCC" device=""/>
 <part name="V89" library="supply2" deviceset="GND" device=""/>
-<part name="C31" library="dec-r" deviceset="M916" device="" value="M707A"/>
-<part name="D31" library="dec-r" deviceset="M916" device="" value="M707B"/>
+<part name="C31" library="dec-m" deviceset="M916" device="" value="M707A"/>
+<part name="D31" library="dec-m" deviceset="M916" device="" value="M707B"/>
 <part name="V60" library="supply2" deviceset="GND" device=""/>
 <part name="V98" library="supply2" deviceset="VCC" device=""/>
-<part name="C33" library="dec-r" deviceset="W023" device="" value="M452"/>
+<part name="C33" library="dec-m" deviceset="W023" device="" value="M452"/>
 <part name="V99" library="supply2" deviceset="VCC" device=""/>
 <part name="V100" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME15" library="frames" deviceset="TABL_L" device=""/>
 <part name="V90" library="supply2" deviceset="VCC" device=""/>
 <part name="V91" library="supply2" deviceset="GND" device=""/>
-<part name="D17" library="dec-r" deviceset="M617" device=""/>
-<part name="D16" library="dec-r" deviceset="M206X" device="" value="M216"/>
+<part name="D17" library="dec-m" deviceset="M617" device=""/>
+<part name="D16" library="dec-m" deviceset="M206X" device="" value="M216"/>
 <part name="V101" library="supply2" deviceset="GND" device=""/>
 <part name="V102" library="supply2" deviceset="GND" device=""/>
 <part name="V103" library="supply2" deviceset="GND" device=""/>
-<part name="D14" library="dec-r" deviceset="M310" device=""/>
-<part name="D15" library="dec-r" deviceset="M310" device=""/>
+<part name="D14" library="dec-m" deviceset="M310" device=""/>
+<part name="D15" library="dec-m" deviceset="M310" device=""/>
 <part name="V104" library="supply2" deviceset="GND" device=""/>
-<part name="A27" library="dec-r" deviceset="W023" device="" value="G826A"/>
-<part name="B27" library="dec-r" deviceset="W023" device="" value="G826B"/>
-<part name="B28" library="dec-r" deviceset="W023" device="" value="G785B"/>
+<part name="A27" library="dec-m" deviceset="W023" device="" value="G826A"/>
+<part name="B27" library="dec-m" deviceset="W023" device="" value="G826B"/>
+<part name="B28" library="dec-m" deviceset="W023" device="" value="G785B"/>
 <part name="V105" library="supply2" deviceset="VCC" device=""/>
 <part name="V106" library="supply2" deviceset="GND" device=""/>
-<part name="C17" library="dec-r" deviceset="M360" device=""/>
-<part name="A25" library="dec-r" deviceset="G624" device=""/>
+<part name="C17" library="dec-m" deviceset="M360" device=""/>
+<part name="A25" library="dec-m" deviceset="G624" device=""/>
 <part name="V107" library="supply2" deviceset="GND" device=""/>
-<part name="B25" library="dec-r" deviceset="G624" device=""/>
-<part name="A26" library="dec-r" deviceset="G624" device=""/>
-<part name="B26" library="dec-r" deviceset="G624" device=""/>
-<part name="C25" library="dec-r" deviceset="G228" device=""/>
-<part name="D25" library="dec-r" deviceset="G228" device=""/>
-<part name="B22" library="dec-r" deviceset="W023" device="" value="W025B"/>
+<part name="B25" library="dec-m" deviceset="G624" device=""/>
+<part name="A26" library="dec-m" deviceset="G624" device=""/>
+<part name="B26" library="dec-m" deviceset="G624" device=""/>
+<part name="C25" library="dec-m" deviceset="G228" device=""/>
+<part name="D25" library="dec-m" deviceset="G228" device=""/>
+<part name="B22" library="dec-m" deviceset="W023" device="" value="W025B"/>
 <part name="V122" library="supply2" deviceset="GND" device=""/>
-<part name="A28" library="dec-r" deviceset="M916" device="" value="G785A"/>
+<part name="A28" library="dec-m" deviceset="M916" device="" value="G785A"/>
 <part name="FRAME16" library="frames" deviceset="TABL_L" device=""/>
 <part name="V92" library="supply2" deviceset="VCC" device=""/>
 <part name="V93" library="supply2" deviceset="GND" device=""/>
-<part name="A22" library="dec-r" deviceset="W023" device="" value="W025A"/>
-<part name="A21" library="dec-r" deviceset="W023" device="" value="W025A"/>
-<part name="B21" library="dec-r" deviceset="W023" device="" value="W025B"/>
-<part name="A17" library="dec-r" deviceset="G020" device=""/>
-<part name="A18" library="dec-r" deviceset="G020" device=""/>
-<part name="A19" library="dec-r" deviceset="G020" device=""/>
-<part name="A20" library="dec-r" deviceset="G020" device=""/>
-<part name="B18" library="dec-r" deviceset="G020" device=""/>
-<part name="B19" library="dec-r" deviceset="G020" device=""/>
-<part name="B20" library="dec-r" deviceset="G020" device=""/>
-<part name="A24" library="dec-r" deviceset="G228" device=""/>
-<part name="A23" library="dec-r" deviceset="G228" device=""/>
-<part name="B23" library="dec-r" deviceset="G228" device=""/>
-<part name="B24" library="dec-r" deviceset="G228" device=""/>
+<part name="A22" library="dec-m" deviceset="W023" device="" value="W025A"/>
+<part name="A21" library="dec-m" deviceset="W023" device="" value="W025A"/>
+<part name="B21" library="dec-m" deviceset="W023" device="" value="W025B"/>
+<part name="A17" library="dec-m" deviceset="G020" device=""/>
+<part name="A18" library="dec-m" deviceset="G020" device=""/>
+<part name="A19" library="dec-m" deviceset="G020" device=""/>
+<part name="A20" library="dec-m" deviceset="G020" device=""/>
+<part name="B18" library="dec-m" deviceset="G020" device=""/>
+<part name="B19" library="dec-m" deviceset="G020" device=""/>
+<part name="B20" library="dec-m" deviceset="G020" device=""/>
+<part name="A24" library="dec-m" deviceset="G228" device=""/>
+<part name="A23" library="dec-m" deviceset="G228" device=""/>
+<part name="B23" library="dec-m" deviceset="G228" device=""/>
+<part name="B24" library="dec-m" deviceset="G228" device=""/>
 <part name="V119" library="supply2" deviceset="-15V" device=""/>
 <part name="V135" library="supply2" deviceset="GND" device=""/>
 <part name="V136" library="supply2" deviceset="GND" device=""/>
@@ -4838,56 +4838,56 @@
 <part name="FRAME17" library="frames" deviceset="TABL_L" device=""/>
 <part name="V109" library="supply2" deviceset="VCC" device=""/>
 <part name="V110" library="supply2" deviceset="GND" device=""/>
-<part name="C23" library="dec-r" deviceset="G221" device=""/>
-<part name="C24" library="dec-r" deviceset="G221" device=""/>
-<part name="D18" library="dec-r" deviceset="G221" device=""/>
-<part name="D19" library="dec-r" deviceset="G221" device=""/>
-<part name="C22" library="dec-r" deviceset="W023" device="" value="G610A"/>
-<part name="D20" library="dec-r" deviceset="W023" device="" value="G611B"/>
-<part name="C21" library="dec-r" deviceset="H807" device=""/>
-<part name="D21" library="dec-r" deviceset="H807" device=""/>
+<part name="C23" library="dec-m" deviceset="G221" device=""/>
+<part name="C24" library="dec-m" deviceset="G221" device=""/>
+<part name="D18" library="dec-m" deviceset="G221" device=""/>
+<part name="D19" library="dec-m" deviceset="G221" device=""/>
+<part name="C22" library="dec-m" deviceset="W023" device="" value="G610A"/>
+<part name="D20" library="dec-m" deviceset="W023" device="" value="G611B"/>
+<part name="C21" library="dec-m" deviceset="H807" device=""/>
+<part name="D21" library="dec-m" deviceset="H807" device=""/>
 <part name="FRAME18" library="frames" deviceset="TABL_L" device=""/>
 <part name="V111" library="supply2" deviceset="VCC" device=""/>
 <part name="V112" library="supply2" deviceset="GND" device=""/>
-<part name="C18" library="dec-r" deviceset="G221" device=""/>
-<part name="C19" library="dec-r" deviceset="G221" device=""/>
-<part name="D23" library="dec-r" deviceset="G221" device=""/>
-<part name="D24" library="dec-r" deviceset="G221" device=""/>
-<part name="C20" library="dec-r" deviceset="W023" device="" value="G610A"/>
-<part name="D22" library="dec-r" deviceset="W023" device="" value="G611B"/>
+<part name="C18" library="dec-m" deviceset="G221" device=""/>
+<part name="C19" library="dec-m" deviceset="G221" device=""/>
+<part name="D23" library="dec-m" deviceset="G221" device=""/>
+<part name="D24" library="dec-m" deviceset="G221" device=""/>
+<part name="C20" library="dec-m" deviceset="W023" device="" value="G610A"/>
+<part name="D22" library="dec-m" deviceset="W023" device="" value="G611B"/>
 <part name="FRAME19" library="frames" deviceset="TABL_L" device=""/>
 <part name="V113" library="supply2" deviceset="VCC" device=""/>
 <part name="V114" library="supply2" deviceset="GND" device=""/>
-<part name="D26" library="dec-r" deviceset="H807" device=""/>
+<part name="D26" library="dec-m" deviceset="H807" device=""/>
 <part name="V120" library="supply2" deviceset="VCC" device=""/>
 <part name="V121" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME20" library="frames" deviceset="TABL_L" device=""/>
 <part name="V115" library="supply2" deviceset="VCC" device=""/>
 <part name="V116" library="supply2" deviceset="GND" device=""/>
-<part name="A36" library="dec-r" deviceset="M916" device="" value="M703"/>
+<part name="A36" library="dec-m" deviceset="M916" device="" value="M703"/>
 <part name="V117" library="supply2" deviceset="GND" device=""/>
 <part name="V118" library="supply2" deviceset="VCC" device=""/>
 <part name="FRAME21" library="frames" deviceset="TABL_L" device=""/>
 <part name="V123" library="supply2" deviceset="VCC" device=""/>
 <part name="V124" library="supply2" deviceset="GND" device=""/>
-<part name="AB31" library="dec-r" deviceset="M710" device=""/>
-<part name="C34" library="dec-r" deviceset="M916" device=""/>
+<part name="AB31" library="dec-m" deviceset="M710" device=""/>
+<part name="C34" library="dec-m" deviceset="M916" device=""/>
 <part name="V125" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME22" library="frames" deviceset="TABL_L" device=""/>
 <part name="V126" library="supply2" deviceset="VCC" device=""/>
 <part name="V127" library="supply2" deviceset="GND" device=""/>
-<part name="AB30" library="dec-r" deviceset="M705" device=""/>
-<part name="AB29" library="dec-r" deviceset="M715" device=""/>
+<part name="AB30" library="dec-m" deviceset="M705" device=""/>
+<part name="AB29" library="dec-m" deviceset="M715" device=""/>
 <part name="V128" library="supply2" deviceset="-15V" device=""/>
 <part name="FRAME23" library="frames" deviceset="TABL_L" device=""/>
 <part name="V129" library="supply2" deviceset="VCC" device=""/>
 <part name="V130" library="supply2" deviceset="GND" device=""/>
-<part name="A15" library="dec-r" deviceset="M162" device=""/>
-<part name="A16" library="dec-r" deviceset="M162" device=""/>
-<part name="B16" library="dec-r" deviceset="M162" device=""/>
-<part name="B17" library="dec-r" deviceset="M162" device=""/>
-<part name="B15" library="dec-r" deviceset="M119" device=""/>
-<part name="C16" library="dec-r" deviceset="M111" device=""/>
+<part name="A15" library="dec-m" deviceset="M162" device=""/>
+<part name="A16" library="dec-m" deviceset="M162" device=""/>
+<part name="B16" library="dec-m" deviceset="M162" device=""/>
+<part name="B17" library="dec-m" deviceset="M162" device=""/>
+<part name="B15" library="dec-m" deviceset="M119" device=""/>
+<part name="C16" library="dec-m" deviceset="M111" device=""/>
 <part name="V131" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -5104,6 +5104,7 @@
 </segment>
 <segment>
 <wire x1="40.64" y1="160.02" x2="88.9" y2="160.02" width="0.1524" layer="91"/>
+<label x="76.2" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="175.26" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
@@ -8314,6 +8315,7 @@
 <segment>
 <wire x1="66.04" y1="7.62" x2="53.34" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="A08" gate="U1" pin="P$1"/>
+<label x="55.88" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!MEM_ENABLE(0-4)" class="0">
@@ -11602,12 +11604,14 @@
 <segment>
 <wire x1="30.48" y1="254" x2="40.64" y2="254" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="254" x2="40.64" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="228.6" x2="40.64" y2="233.68" width="0.1524" layer="91"/>
 <label x="30.48" y="254" size="1.778" layer="95"/>
-<label x="30.48" y="228.6" size="1.778" layer="95"/>
 <pinref part="B11" gate="P2" pin="R"/>
+</segment>
+<segment>
+<wire x1="30.48" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
+<label x="30.48" y="228.6" size="1.778" layer="95"/>
 <pinref part="B11" gate="P2" pin="S"/>
+<wire x1="40.64" y1="228.6" x2="40.64" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B10R1" class="0">
@@ -11625,7 +11629,7 @@
 <pinref part="B10" gate="R1" pin="IN5C"/>
 </segment>
 <segment>
-<wire x1="10.16" y1="203.2" x2="10.16" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="203.2" x2="10.16" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="170.18" x2="5.08" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="200.66" x2="5.08" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="200.66" x2="5.08" y2="200.66" width="0.1524" layer="91"/>
@@ -21853,6 +21857,76 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,2,260.35,223.52,D10,L1,D,,,"/>
+<approved hash="114,2,260.35,223.52,D10,L1,C,,,"/>
+<approved hash="114,2,260.35,223.52,D10,L1,S,,,"/>
+<approved hash="114,3,48.26,91.44,C28,J1,IN1,,,"/>
+<approved hash="114,3,48.26,91.44,C28,J1,IN2,,,"/>
+<approved hash="114,3,48.26,91.44,C28,J1,IN3,,,"/>
+<approved hash="114,3,48.26,91.44,C28,N1,IN1,,,"/>
+<approved hash="114,3,48.26,91.44,C28,N1,IN2,,,"/>
+<approved hash="114,3,48.26,91.44,C28,N1,IN3,,,"/>
+<approved hash="114,3,48.26,91.44,C28,U1,IN1,,,"/>
+<approved hash="114,3,48.26,91.44,C28,U1,IN2,,,"/>
+<approved hash="114,3,48.26,91.44,C28,U1,IN3,,,"/>
+<approved hash="114,3,48.26,91.44,C28,M2,IN1,,,"/>
+<approved hash="114,3,48.26,91.44,C28,M2,IN2,,,"/>
+<approved hash="114,3,48.26,91.44,C28,M2,IN3,,,"/>
+<approved hash="114,3,48.26,91.44,C28,S2,IN1,,,"/>
+<approved hash="114,3,48.26,91.44,C28,S2,IN2,,,"/>
+<approved hash="114,3,48.26,91.44,C28,S2,IN3,,,"/>
+<approved hash="114,3,48.26,91.44,C28,V1,IN1,,,"/>
+<approved hash="114,3,48.26,91.44,C28,V1,IN2,,,"/>
+<approved hash="114,3,48.26,91.44,C28,V1,IN3,,,"/>
+<approved hash="114,3,27.94,99.0177,A35,H1,IN,,,"/>
+<approved hash="114,3,157.522,147.32,B13,S1,IN1,,,"/>
+<approved hash="114,3,157.522,147.32,B13,S1,IN2,,,"/>
+<approved hash="114,15,292.1,94.2255,C25,H2,H,,,"/>
+<approved hash="114,15,292.1,94.2255,C25,F1,H,,,"/>
+<approved hash="114,15,292.1,94.2255,C25,R2,H,,,"/>
+<approved hash="114,15,292.1,94.2255,C25,N1,H,,,"/>
+<approved hash="114,15,355.6,94.2255,D25,H2,H,,,"/>
+<approved hash="114,15,355.6,94.2255,D25,F1,H,,,"/>
+<approved hash="114,15,355.6,94.2255,D25,R2,H,,,"/>
+<approved hash="114,15,355.6,94.2255,D25,N1,H,,,"/>
+<approved hash="114,16,33.02,221.226,A24,F1,H,,,"/>
+<approved hash="114,16,33.02,221.226,A24,R2,H,,,"/>
+<approved hash="114,16,33.02,221.226,A24,N1,H,,,"/>
+<approved hash="114,23,36.83,78.74,B15,V2,IN1,,,"/>
+<approved hash="114,23,36.83,78.74,B15,V2,IN2,,,"/>
+<approved hash="114,23,36.83,78.74,B15,V2,IN3,,,"/>
+<approved hash="114,23,36.83,78.74,B15,V2,IN4,,,"/>
+<approved hash="114,23,36.83,78.74,B15,V2,IN5,,,"/>
+<approved hash="114,23,36.83,78.74,B15,V2,IN6,,,"/>
+<approved hash="114,23,36.83,78.74,B15,V2,IN7,,,"/>
+<approved hash="114,23,36.83,78.74,B15,V2,IN8,,,"/>
+<approved hash="114,23,302.26,220.938,C16,U1,IN,,,"/>
+<approved hash="114,23,302.26,220.938,C16,V2,IN,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME2,,,,,"/>
+<approved hash="113,3,200.508,133.198,FRAME3,,,,,"/>
+<approved hash="113,4,200.508,133.198,FRAME4,,,,,"/>
+<approved hash="113,5,200.508,133.198,FRAME5,,,,,"/>
+<approved hash="113,6,200.508,133.198,FRAME6,,,,,"/>
+<approved hash="113,7,200.508,133.198,FRAME7,,,,,"/>
+<approved hash="113,8,200.508,133.198,FRAME8,,,,,"/>
+<approved hash="113,9,200.508,133.198,FRAME9,,,,,"/>
+<approved hash="113,10,200.508,133.198,FRAME10,,,,,"/>
+<approved hash="113,11,200.508,133.198,FRAME11,,,,,"/>
+<approved hash="113,12,200.508,135.738,FRAME13,,,,,"/>
+<approved hash="113,13,200.508,133.198,FRAME12,,,,,"/>
+<approved hash="113,14,200.508,133.198,FRAME14,,,,,"/>
+<approved hash="113,15,200.508,133.198,FRAME15,,,,,"/>
+<approved hash="113,16,200.508,133.198,FRAME16,,,,,"/>
+<approved hash="113,17,200.508,133.198,FRAME17,,,,,"/>
+<approved hash="113,18,200.508,133.198,FRAME18,,,,,"/>
+<approved hash="113,19,200.508,133.198,FRAME19,,,,,"/>
+<approved hash="113,20,200.508,133.198,FRAME20,,,,,"/>
+<approved hash="113,21,200.508,133.198,FRAME21,,,,,"/>
+<approved hash="113,22,200.508,133.198,FRAME22,,,,,"/>
+<approved hash="113,23,200.508,133.198,FRAME23,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
