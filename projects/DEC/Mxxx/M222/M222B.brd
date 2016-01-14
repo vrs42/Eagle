@@ -9,7 +9,7 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="2" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="NC" color="1" fill="3" visible="no" active="yes"/>
+<layer number="2" name="NC" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -15424,6 +15424,31 @@
 <package name="FLIPCHIP">
 <text x="5.08" y="19.05" size="2.54" layer="1" font="vector" ratio="24" rot="R90">FLIP CHIP</text>
 </package>
+<package name="DIL14">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="74xxN">
@@ -15509,35 +15534,6 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-eu">
-<packages>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="74xx-us">
 <packages>
 <package name="DIL14">
@@ -15618,7 +15614,7 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<param name="layerSetup" value="(1*16)"/>
+<param name="layerSetup" value="(1+16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="15mil"/>
@@ -15632,7 +15628,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
@@ -15786,7 +15782,7 @@ design rules under a new name.</description>
 <element name="E16" library="74xxN" package="DIL14" value="7453N" x="73.66" y="17.78"/>
 <element name="E13" library="74xxN" package="DIL14" value="7453N" x="73.66" y="35.56"/>
 <element name="R1" library="rcl" package="0207/10" value="220" x="22.86" y="6.35" rot="R180"/>
-<element name="E9" library="74xx-eu" package="DIL14" value="7482N" x="99.06" y="62.23"/>
+<element name="E9" library="dec-con" package="DIL14" value="7482N" x="99.06" y="62.23"/>
 <element name="E1" library="74xxN" package="DIL14" value="7453N" x="99.06" y="115.57"/>
 <element name="E2" library="74xxN" package="DIL14" value="7453N" x="73.66" y="115.57"/>
 <element name="E7" library="74xx-us" package="DIL14" value="7474N" x="48.26" y="86.36"/>
@@ -15834,7 +15830,7 @@ design rules under a new name.</description>
 <contactref element="E8" pad="7"/>
 <contactref element="E3" pad="7"/>
 <contactref element="E4" pad="7"/>
-<contactref element="E9" pad="7"/>
+<contactref element="E9" pad="11"/>
 <contactref element="E11" pad="7"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
@@ -15917,7 +15913,7 @@ design rules under a new name.</description>
 <wire x1="60.96" y1="60.96" x2="60.96" y2="59.69" width="0.8128" layer="16"/>
 <wire x1="55.88" y1="53.34" x2="55.88" y2="58.42" width="0.8128" layer="16"/>
 <wire x1="29.21" y1="53.34" x2="29.21" y2="58.42" width="0.8128" layer="16"/>
-<wire x1="99.06" y1="74.93" x2="106.68" y2="58.42" width="0.8128" layer="16"/>
+<wire x1="99.06" y1="74.93" x2="99.06" y2="66.04" width="0.8128" layer="16"/>
 <wire x1="99.06" y1="74.93" x2="106.68" y2="82.55" width="0.8128" layer="16"/>
 <wire x1="55.88" y1="68.58" x2="55.88" y2="78.74" width="0.8128" layer="16"/>
 <wire x1="55.88" y1="78.74" x2="55.88" y2="82.55" width="0.8128" layer="16"/>
@@ -15927,7 +15923,7 @@ design rules under a new name.</description>
 <wire x1="55.88" y1="82.55" x2="60.96" y2="85.09" width="0.8128" layer="16"/>
 <wire x1="88.9" y1="60.96" x2="87.63" y2="59.69" width="0.8128" layer="16"/>
 <wire x1="93.98" y1="60.96" x2="88.9" y2="60.96" width="0.8128" layer="16"/>
-<wire x1="106.68" y1="58.42" x2="93.98" y2="60.96" width="0.8128" layer="16"/>
+<wire x1="99.06" y1="66.04" x2="93.98" y2="60.96" width="0.8128" layer="16"/>
 <wire x1="55.88" y1="78.74" x2="73.66" y2="78.74" width="0.8128" layer="16"/>
 <wire x1="73.66" y1="78.74" x2="77.47" y2="78.74" width="0.8128" layer="16"/>
 <wire x1="77.47" y1="78.74" x2="81.28" y2="82.55" width="0.8128" layer="16"/>
@@ -16498,7 +16494,8 @@ design rules under a new name.</description>
 <wire x1="66.04" y1="82.55" x2="71.12" y2="87.63" width="0.4064" layer="1"/>
 <wire x1="116.84" y1="92.71" x2="117.7925" y2="93.0275" width="0.4064" layer="1"/>
 <wire x1="111.76" y1="92.71" x2="116.84" y2="92.71" width="0.4064" layer="1"/>
-<wire x1="106.68" y1="87.63" x2="111.76" y2="92.71" width="0.4064" layer="1"/>
+<wire x1="106.68" y1="87.63" x2="110.49" y2="92.71" width="0.4064" layer="1"/>
+<wire x1="110.49" y1="92.71" x2="111.76" y2="92.71" width="0.4064" layer="1"/>
 <wire x1="71.12" y1="87.63" x2="106.68" y2="87.63" width="0.4064" layer="1"/>
 <via x="59.69" y="102.87" extent="1-16" drill="0.8128"/>
 <via x="24.13" y="105.41" extent="1-16" drill="0.8128"/>
@@ -16753,8 +16750,8 @@ design rules under a new name.</description>
 <wire x1="76.2" y1="90.17" x2="73.66" y2="101.6" width="0.4064" layer="16"/>
 <wire x1="76.2" y1="90.17" x2="80.01" y2="93.98" width="0.4064" layer="1"/>
 <wire x1="116.84" y1="99.06" x2="117.7925" y2="99.3775" width="0.4064" layer="1"/>
-<wire x1="111.76" y1="99.06" x2="116.84" y2="99.06" width="0.4064" layer="1"/>
-<wire x1="106.68" y1="93.98" x2="111.76" y2="99.06" width="0.4064" layer="1"/>
+<wire x1="110.49" y1="99.06" x2="116.84" y2="99.06" width="0.4064" layer="1"/>
+<wire x1="106.68" y1="93.98" x2="110.49" y2="99.06" width="0.4064" layer="1"/>
 <wire x1="80.01" y1="93.98" x2="106.68" y2="93.98" width="0.4064" layer="1"/>
 </signal>
 <signal name="AE2">
