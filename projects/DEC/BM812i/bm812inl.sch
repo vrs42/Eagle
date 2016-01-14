@@ -3046,13 +3046,17 @@ DIN A4, landscape with extra doc field</description>
 <net name="B17S1" class="0">
 <segment>
 <wire x1="-132.08" y1="-73.66" x2="-119.38" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="-73.66" x2="-71.12" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="-73.66" x2="-15.24" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-132.08" y="-73.66" size="1.27" layer="95"/>
-<label x="-83.82" y="-73.66" size="1.27" layer="95"/>
-<label x="-27.94" y="-73.66" size="1.27" layer="95"/>
 <pinref part="B17" gate="G$4" pin="IN1"/>
+</segment>
+<segment>
+<wire x1="-83.82" y1="-73.66" x2="-71.12" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-83.82" y="-73.66" size="1.27" layer="95"/>
 <pinref part="B17" gate="G$5" pin="IN1"/>
+</segment>
+<segment>
+<wire x1="-27.94" y1="-73.66" x2="-15.24" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-27.94" y="-73.66" size="1.778" layer="95"/>
 <pinref part="B17" gate="G$6" pin="IN1"/>
 </segment>
 </net>
@@ -9302,6 +9306,50 @@ DIN A4, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,-73.66,75.0782,D18,13,IN,,,"/>
+<approved hash="114,1,-73.66,75.0782,D18,15,IN,,,"/>
+<approved hash="114,1,-73.66,75.0782,D18,14,IN,,,"/>
+<approved hash="114,1,-73.66,75.0782,D18,16,IN,,,"/>
+<approved hash="114,1,-73.66,75.0782,D18,8,IN,,,"/>
+<approved hash="114,1,-73.66,75.0782,D18,10,IN,,,"/>
+<approved hash="114,1,33.02,57.15,D17,A1B,D,,,"/>
+<approved hash="114,1,33.02,57.15,D17,A1B,C,,,"/>
+<approved hash="114,1,33.02,57.15,D17,A1B,S,,,"/>
+<approved hash="114,1,33.02,57.15,D17,A1C,D,,,"/>
+<approved hash="114,1,33.02,57.15,D17,A1C,C,,,"/>
+<approved hash="114,1,33.02,57.15,D17,A1C,S,,,"/>
+<approved hash="114,3,-109.22,-76.2,B17,G$3,IN1,,,"/>
+<approved hash="114,3,-109.22,-76.2,B17,G$3,IN2,,,"/>
+<approved hash="114,3,-109.22,-76.2,B17,G$7,IN1,,,"/>
+<approved hash="114,3,-109.22,-76.2,B17,G$7,IN2,,,"/>
+<approved hash="114,3,-109.22,-76.2,B17,G$9,IN1,,,"/>
+<approved hash="114,3,-109.22,-76.2,B17,G$9,IN2,,,"/>
+<approved hash="114,4,61.4045,10.16,C18,G$5,IN,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$1,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$1,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$1,B,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$2,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$2,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$2,B,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$3,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$3,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$3,B,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$4,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$4,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$4,B,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$5,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$5,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,G$5,B,,,"/>
+<approved hash="113,1,2.436,-8.994,FRAME1,,,,,"/>
+<approved hash="113,2,-5.184,-3.914,FRAME2,,,,,"/>
+<approved hash="113,3,-5.184,1.166,FRAME3,,,,,"/>
+<approved hash="113,4,-0.104,6.246,FRAME4,,,,,"/>
+<approved hash="113,5,10.056,-3.914,FRAME5,,,,,"/>
+<approved hash="113,5,135.987,75.9206,+5V,,,,,"/>
+<approved hash="113,5,130.713,79.0194,GND,,,,,"/>
+<approved hash="113,5,125.633,79.0194,-15V,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

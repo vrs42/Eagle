@@ -106,12 +106,12 @@
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
 <pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
@@ -126,7 +126,7 @@
 <pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="DIL16">
@@ -1075,6 +1075,69 @@
 <rectangle x1="6.985" y1="-0.254" x2="7.747" y2="0.254" layer="21"/>
 <rectangle x1="-4.445" y1="-0.635" x2="-4.1275" y2="0.635" layer="21"/>
 </package>
+<package name="E15-5">
+<description>A 0.5" electrolytic with smaller pads.</description>
+<wire x1="-4.064" y1="0" x2="-3.175" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="0" x2="-3.175" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-0.635" x2="-2.667" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.667" y1="-0.635" x2="-2.667" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.667" y1="0.635" x2="-3.175" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="0.635" x2="-3.175" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="0" x2="7.747" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.8255" x2="-3.81" y2="0.3175" width="0.1524" layer="21"/>
+<wire x1="-4.064" y1="0.5715" x2="-3.556" y2="0.5715" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.9685" x2="-5.715" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="2.2225" x2="5.461" y2="2.2225" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.9685" x2="5.461" y2="2.2225" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.9685" x2="-4.191" y2="2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.461" y1="2.2225" x2="-5.715" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.2225" x2="-4.826" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-5.461" y1="2.0955" x2="-5.08" y2="2.0955" width="0.3048" layer="21"/>
+<wire x1="-5.461" y1="2.2225" x2="-5.08" y2="2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.9685" x2="-4.826" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="1.9685" x2="-4.826" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.9685" x2="-4.445" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="2.0955" x2="5.461" y2="2.0955" width="0.3048" layer="21"/>
+<wire x1="-4.445" y1="1.9685" x2="5.715" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="1.397" x2="-4.445" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="1.9685" x2="-4.445" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="-2.2225" x2="5.461" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="1.397" x2="-4.826" y2="-1.8415" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.8415" x2="-4.826" y2="-1.9177" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.397" x2="-4.445" y2="-1.8415" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.8415" x2="-4.445" y2="-1.9177" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.9685" x2="-4.445" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.8415" x2="-4.445" y2="-1.8415" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.9685" x2="5.715" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-1.9685" x2="5.588" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.9685" x2="-5.588" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="-2.0955" x2="-5.461" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.2225" x2="-4.953" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="-2.0955" x2="-4.826" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="-5.461" y1="-2.2225" x2="-5.08" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="-2.0955" x2="-4.953" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.9685" x2="-4.318" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="-2.0955" x2="-4.191" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="-2.0955" x2="5.588" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="5.588" y1="-2.0955" x2="5.461" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="5.461" y1="-2.1717" x2="-4.191" y2="-2.1717" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="-2.1717" x2="-4.191" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.1717" x2="-5.461" y2="-2.1717" width="0.1524" layer="21"/>
+<wire x1="-5.461" y1="-2.1717" x2="-5.461" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.9177" x2="-4.826" y2="-1.9177" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.9177" x2="-4.445" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.9177" x2="-4.826" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.699" y1="1.8415" x2="-4.572" y2="1.8415" width="0.3048" layer="21"/>
+<wire x1="7.62" y1="0" x2="6.477" y2="0" width="0.508" layer="51"/>
+<wire x1="-7.62" y1="0" x2="-6.477" y2="0" width="0.508" layer="51"/>
+<pad name="+" x="-7.62" y="0" drill="0.8128"/>
+<pad name="-" x="7.62" y="0" drill="0.8128" shape="octagon"/>
+<text x="-5.461" y="2.4765" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.461" y="-3.8227" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-6.477" y1="-0.254" x2="-5.715" y2="0.254" layer="21"/>
+<rectangle x1="5.715" y1="-0.254" x2="6.477" y2="0.254" layer="21"/>
+<rectangle x1="-2.2225" y1="-0.635" x2="-1.905" y2="0.635" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DEVICE">
@@ -1426,6 +1489,23 @@
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CPOL-USE15-5AXIAL" uservalue="yes">
+<description>0.5" veresion of an electrolytic</description>
+<gates>
+<gate name="1" symbol="CPOL-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="E15-5">
+<connects>
+<connect gate="1" pin="+" pad="+"/>
+<connect gate="1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13701,7 +13781,7 @@ high speed (Philips)</description>
 <part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="4700"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="V12" library="supply2" deviceset="+5V/1" device=""/>
-<part name="C16" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value=".47uF"/>
+<part name="C16" library="dec-con" deviceset="CPOL-USE15-5AXIAL" device="" value=".47uF"/>
 <part name="V14" library="supply2" deviceset="GND" device=""/>
 <part name="R15" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
@@ -13933,7 +14013,7 @@ high speed (Philips)</description>
 <instance part="R9" gate="G$1" x="40.64" y="215.9"/>
 <instance part="R11" gate="G$1" x="25.4" y="215.9"/>
 <instance part="V12" gate="G$1" x="129.54" y="238.76"/>
-<instance part="C16" gate="G$1" x="33.02" y="208.28"/>
+<instance part="C16" gate="1" x="33.02" y="208.28"/>
 <instance part="V14" gate="GND" x="33.02" y="200.66"/>
 <instance part="R15" gate="G$1" x="134.62" y="200.66"/>
 <instance part="R5" gate="G$1" x="66.04" y="25.4" rot="R90"/>
@@ -14931,7 +15011,7 @@ high speed (Philips)</description>
 <pinref part="V11" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C16" gate="G$1" pin="-"/>
+<pinref part="C16" gate="1" pin="-"/>
 <pinref part="V14" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -15235,7 +15315,7 @@ high speed (Philips)</description>
 <junction x="33.02" y="215.9"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="C16" gate="G$1" pin="+"/>
+<pinref part="C16" gate="1" pin="+"/>
 </segment>
 </net>
 <net name="!INHIBIT_STROBE" class="0">
@@ -15834,6 +15914,37 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-33.02,160.02,E18P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-17.78,193.04,E15P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-48.26,223.52,E6P,VCC,+5V/1,,,"/>
+<approved hash="104,1,-33.02,223.52,E9P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-48.26,160.02,E16P,VCC,+5V/2,,,"/>
+<approved hash="114,1,226.06,98.9965,E19,A,I0,,,"/>
+<approved hash="114,1,226.06,98.9965,E19,A,I1,,,"/>
+<approved hash="104,1,-25.4,160.02,E19P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-45.72,254,E2P,VCC,+5V/1,,,"/>
+<approved hash="104,1,-25.4,193.04,E14P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-27.94,223.52,E10P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-40.64,193.04,E12P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-25.4,254,E5P,VCC,+5V/1,,,"/>
+<approved hash="104,1,-48.26,193.04,E11P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-38.1,223.52,E7P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-43.18,223.52,E8P,VCC,+5V/1,,,"/>
+<approved hash="114,1,314.96,233.617,E13,E,I,,,"/>
+<approved hash="104,1,-33.02,193.04,E13P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-40.64,160.02,E17P,VCC,+5V/2,,,"/>
+<approved hash="104,1,-40.64,254,E3G$2,VCC,+5V/1,,,"/>
+<approved hash="104,1,-50.8,254,E1P,VCC,+5V/1,,,"/>
+<approved hash="104,1,-30.48,254,E4P,VCC,+5V/1,,,"/>
+<approved hash="208,1,139.7,215.9,+3V3,sup,,,,"/>
+<approved hash="208,1,193.04,68.58,+3V3,sup,,,,"/>
+<approved hash="208,1,294.64,162.56,+3V3,sup,,,,"/>
+<approved hash="208,1,373.38,48.26,+3V3,sup,,,,"/>
+<approved hash="208,1,360.68,45.72,+3V3,out,,,,"/>
+<approved hash="113,1,46.609,139.7,U$5,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

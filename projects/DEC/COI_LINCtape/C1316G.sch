@@ -17239,31 +17239,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-m">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="ptc-ntc">
 <packages>
 <package name="N644B">
@@ -17689,7 +17664,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="P5" library="con-amp" deviceset="MTA05-156" device=""/>
 <part name="V92" library="supply2" deviceset="GND" device=""/>
 <part name="V93" library="supply2" deviceset="VCC" device=""/>
-<part name="U$1" library="dec-m" deviceset="NC" device=""/>
 <part name="CR30" library="ptc-ntc" deviceset="NTC644B" device="" value="7J5E5"/>
 <part name="CR29" library="ptc-ntc" deviceset="NTC644B" device="" value="7J5E5"/>
 <part name="V94" library="supply2" deviceset="+15V" device=""/>
@@ -17745,7 +17719,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="P1" gate="B7" x="647.7" y="137.16" rot="MR0"/>
 <instance part="P1" gate="B8" x="424.18" y="177.8"/>
 <instance part="P1" gate="B9" x="530.86" y="66.04" rot="R180"/>
-<instance part="P1" gate="B10" x="650.24" y="10.16"/>
 <instance part="P1" gate="B11" x="690.88" y="17.78"/>
 <instance part="P1" gate="B12" x="670.56" y="17.78" rot="MR180"/>
 <instance part="P1" gate="B13" x="670.56" y="10.16" rot="MR180"/>
@@ -18205,7 +18178,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="P5" gate="G$1" x="640.08" y="93.98" rot="R90"/>
 <instance part="V92" gate="GND" x="675.64" y="7.62"/>
 <instance part="V93" gate="G$1" x="675.64" y="25.4"/>
-<instance part="U$1" gate="NC" x="655.32" y="10.16" rot="R180"/>
 <instance part="CR30" gate="1" x="673.1" y="246.38" rot="R90"/>
 <instance part="CR29" gate="1" x="701.04" y="246.38" rot="R90"/>
 <instance part="V94" gate="+15V" x="561.34" y="231.14"/>
@@ -21256,16 +21228,59 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="V88" gate="G$1" pin="-UB"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<wire x1="652.78" y1="10.16" x2="655.32" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="P1" gate="B10" pin="P$2"/>
-<pinref part="U$1" gate="NC" pin="NC"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,15.24,15.24,U1P,V-,-5V,,,"/>
+<approved hash="104,1,15.24,35.56,U1P,V+,VCC,,,"/>
+<approved hash="104,1,22.86,15.24,U2P,V-,-5V,,,"/>
+<approved hash="104,1,22.86,35.56,U2P,V+,VCC,,,"/>
+<approved hash="104,1,30.48,15.24,U4P,V-,-5V,,,"/>
+<approved hash="104,1,30.48,35.56,U4P,V+,VCC,,,"/>
+<approved hash="104,1,38.1,15.24,U5P,V-,-5V,,,"/>
+<approved hash="104,1,38.1,35.56,U5P,V+,VCC,,,"/>
+<approved hash="104,1,45.72,15.24,U7P,V-,-5V,,,"/>
+<approved hash="104,1,45.72,35.56,U7P,V+,VCC,,,"/>
+<approved hash="104,1,53.34,15.24,U8P,V-,-5V,,,"/>
+<approved hash="104,1,53.34,35.56,U8P,V+,VCC,,,"/>
+<approved hash="104,1,60.96,15.24,U10P,V-,-5V,,,"/>
+<approved hash="104,1,60.96,35.56,U10P,V+,VCC,,,"/>
+<approved hash="104,1,68.58,15.24,U11P,V-,-5V,,,"/>
+<approved hash="104,1,68.58,35.56,U11P,V+,VCC,,,"/>
+<approved hash="104,1,76.2,15.24,U13P,V-,-5V,,,"/>
+<approved hash="104,1,76.2,35.56,U13P,V+,VCC,,,"/>
+<approved hash="104,1,83.82,15.24,U14P,V-,-5V,,,"/>
+<approved hash="104,1,83.82,35.56,U14P,V+,VCC,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,1,369.758,63.5,P2,,,,,"/>
+<approved hash="113,1,611.988,133.198,FRAME2,,,,,"/>
+<approved hash="113,1,736.896,193.37,P6,,,,,"/>
+<approved hash="113,1,736.896,170.51,P7,,,,,"/>
+<approved hash="113,1,729.276,225.12,P8,,,,,"/>
+<approved hash="113,1,642.62,42.0975,P3,,,,,"/>
+<approved hash="113,1,469.604,122.86,P4,,,,,"/>
+<approved hash="113,1,52.1674,211.099,10,,,,,"/>
+<approved hash="113,1,52.1674,210.541,11,,,,,"/>
+<approved hash="113,1,52.1674,81.5594,12,,,,,"/>
+<approved hash="113,1,52.1674,81.0006,13,,,,,"/>
+<approved hash="113,1,498.119,217.267,4,,,,,"/>
+<approved hash="113,1,507.721,217.073,5,,,,,"/>
+<approved hash="113,1,498.119,209.647,6,,,,,"/>
+<approved hash="113,1,498.119,237.587,1,,,,,"/>
+<approved hash="113,1,507.721,237.393,2,,,,,"/>
+<approved hash="113,1,498.119,229.967,3,,,,,"/>
+<approved hash="113,1,515.341,74.8326,7,,,,,"/>
+<approved hash="113,1,505.739,75.0274,8,,,,,"/>
+<approved hash="113,1,515.341,82.4526,9,,,,,"/>
+<approved hash="113,1,747.039,100.233,PAD1,,,,,"/>
+<approved hash="113,1,754.659,234.853,PAD2,,,,,"/>
+<approved hash="113,1,683.539,108.047,14,,,,,"/>
+<approved hash="113,1,683.539,102.967,15,,,,,"/>
+<approved hash="113,1,596.621,49.4326,PAD3,,,,,"/>
+<approved hash="113,1,777.519,128.367,PAD4,,,,,"/>
+<approved hash="113,1,642.324,100.66,P5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

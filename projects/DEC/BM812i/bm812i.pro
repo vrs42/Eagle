@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Program Files/EAGLE-4.11/projects/DEC/BM812i/bm812i.brd
+Job           : C:/Users/Vince/Documents/eagle/projects/4.11/DEC/BM812i/bm812i.brd
 
-Start at      :   04:44:11p ( 9/21/2009)
-End at        :   05:07:45p ( 9/21/2009)
-Elapsed time  :   00:23:33
+Start at      : 00:16:29 (1/14/2016)
+End at        : 00:22:37 (1/14/2016)
+Elapsed time  : 00:06:07
 
-Signals       :   225   RoutingGrid: 10 mil  Layers: 2
-Connections   :  2364   predefined:  0 ( 0 Vias )
+Signals       :   224   RoutingGrid: 10 mil  Layers: 2
+Connections   :  2364   predefined:  2361 ( 387 Vias )
 
-Router memory :   5251920
+Router memory :   5238624
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:13  00:08:05  00:03:48  00:03:55  00:03:48  00:03:44
-Number of Ripups  :         0         2         0         0         0         0
+Time per pass     :  00:00:01  00:05:45  00:00:05  00:00:05  00:00:05  00:00:06
+Number of Ripups  :         0         0         0         0         0         0
 max. Level        :         0         1         0         0         0         0
-max. Total        :         0        15         0         0         0         0
+max. Total        :         0         0         0         0         0         0
 
-Routed            :      1433      2361      2361      2361      2361      2361
-Vias              :         0       512       496       423       390       387
-Resolution        :    60.6 %    99.9 %    99.9 %    99.9 %    99.9 %    99.9 %
+Routed            :         0         0         0         0         0         0
+Vias              :         0         0         0         0         0         0
+Resolution        :    99.9 %    99.9 %    99.9 %    99.9 %    99.9 %    99.9 %
 
 Final             : 99.9% finished

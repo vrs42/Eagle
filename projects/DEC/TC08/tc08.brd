@@ -15,7 +15,6 @@
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
 <layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="NC$" color="1" fill="2" visible="yes" active="yes"/>
 <layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
 <layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
@@ -141,7 +140,6 @@
 <text x="6.35" y="46.0375" size="1.778" layer="21">D</text>
 <text x="6.35" y="249.2375" size="1.778" layer="16" ratio="15" rot="MR0">A</text>
 <text x="377.825" y="287.3375" size="1.778" layer="1" ratio="15">1</text>
-<text x="-47.625" y="282.575" size="1.778" layer="21">Rip Up NC</text>
 <text x="-47.625" y="279.4" size="1.778" layer="21">Fix G821 connections</text>
 <text x="-47.625" y="276.225" size="1.778" layer="21">Fold in ECOs.</text>
 </plain>
@@ -657,8 +655,8 @@ design rules under a new name.</description>
 <element name="D04" library="dec-m" package="H807" value="M903" x="339.725" y="44.45"/>
 <element name="D05" library="dec-m" package="H807" value="M903" x="323.5325" y="44.45"/>
 <element name="D06" library="dec-m" package="H807" value="M903" x="311.15" y="44.45"/>
-<element name="A26" library="dec-m" package="H807" value="" x="41.275" y="247.65"/>
-<element name="A25" library="dec-m" package="H807" value="" x="53.975" y="247.65"/>
+<element name="A26" library="dec-m" package="H807" value="M916" x="41.275" y="247.65"/>
+<element name="A25" library="dec-m" package="H807" value="M916" x="53.975" y="247.65"/>
 <element name="A24" library="dec-m" package="H807" value="W023" x="69.85" y="247.65"/>
 <element name="A13" library="dec-m" package="H807" value="H807" x="215.9" y="247.65"/>
 <element name="B17" library="dec-m" package="H807" value="H807" x="161.925" y="177.8"/>
@@ -34506,74 +34504,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="!RDD_00">
 <contactref element="A21" pad="V2"/>
-</signal>
-<signal name="NC">
-<contactref element="AB01" pad="BN1"/>
-<contactref element="AB01" pad="BP1"/>
-<contactref element="A04" pad="T2"/>
-<contactref element="A04" pad="V2"/>
-<contactref element="A05" pad="T2"/>
-<contactref element="A05" pad="V2"/>
-<contactref element="A24" pad="A2"/>
-<contactref element="A24" pad="B2"/>
-<contactref element="A26" pad="D1"/>
-<contactref element="A05" pad="E2"/>
-<contactref element="A05" pad="H2"/>
-<contactref element="D05" pad="T2"/>
-<contactref element="D05" pad="V2"/>
-<contactref element="D04" pad="V2"/>
-<contactref element="D04" pad="T2"/>
-<contactref element="D05" pad="E2"/>
-<contactref element="D05" pad="H2"/>
-<contactref element="A24" pad="J2"/>
-<contactref element="C07" pad="U2"/>
-<contactref element="C07" pad="S2"/>
-<contactref element="C07" pad="T2"/>
-<contactref element="C07" pad="P1"/>
-<contactref element="C07" pad="N1"/>
-<contactref element="C07" pad="R1"/>
-<contactref element="B22" pad="R2"/>
-<contactref element="D15" pad="M2"/>
-<contactref element="D15" pad="R2"/>
-<contactref element="D15" pad="T2"/>
-<contactref element="D15" pad="P2"/>
-<contactref element="D14" pad="U2"/>
-<contactref element="D14" pad="S2"/>
-<contactref element="D14" pad="R2"/>
-<contactref element="D14" pad="P2"/>
-<contactref element="D14" pad="N2"/>
-<contactref element="A21" pad="M2"/>
-<contactref element="A21" pad="L2"/>
-<contactref element="A21" pad="H2"/>
-<contactref element="B20" pad="H2"/>
-<contactref element="B20" pad="M2"/>
-<contactref element="B20" pad="L2"/>
-<contactref element="A20" pad="L2"/>
-<contactref element="A20" pad="M2"/>
-<contactref element="A20" pad="H2"/>
-<contactref element="B18" pad="H2"/>
-<contactref element="B18" pad="M2"/>
-<contactref element="B18" pad="L2"/>
-<contactref element="A18" pad="L2"/>
-<contactref element="A18" pad="H2"/>
-<contactref element="A18" pad="M2"/>
-<contactref element="B05" pad="L2"/>
-<contactref element="C02" pad="S2"/>
-<contactref element="C02" pad="P2"/>
-<contactref element="C03" pad="P2"/>
-<contactref element="C03" pad="S2"/>
-<contactref element="C03" pad="U2"/>
-<contactref element="D14" pad="D1"/>
-<contactref element="D14" pad="B1"/>
-<contactref element="D14" pad="E1"/>
-<contactref element="D14" pad="F1"/>
-<contactref element="D14" pad="J1"/>
-<polygon width="0.254" layer="8" orphans="yes">
-<vertex x="-0.0358" y="0.0126"/>
-<vertex x="393.7204" y="0.0126"/>
-<vertex x="393.7204" y="298.4501"/>
-<vertex x="-0.0358" y="298.4501"/>
-</polygon>
 </signal>
 <signal name="+11V">
 <contactref element="AB01" pad="BM2"/>

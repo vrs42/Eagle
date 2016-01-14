@@ -9044,31 +9044,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-m">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9207,15 +9182,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V43" library="supply2" deviceset="VCC" device=""/>
 <part name="A53" library="dec-con" deviceset="220/330" device=""/>
 <part name="V44" library="supply2" deviceset="GND" device=""/>
-<part name="U$3" library="dec-m" deviceset="NC" device=""/>
-<part name="U$5" library="dec-m" deviceset="NC" device=""/>
-<part name="U$6" library="dec-m" deviceset="NC" device=""/>
-<part name="U$7" library="dec-m" deviceset="NC" device=""/>
 <part name="FRAME2" library="frames" deviceset="TABL_L" device=""/>
 <part name="FRAME3" library="frames" deviceset="TABL_L" device=""/>
-<part name="U$8" library="dec-m" deviceset="NC" device=""/>
-<part name="U$9" library="dec-m" deviceset="NC" device=""/>
-<part name="U$10" library="dec-m" deviceset="NC" device=""/>
 <part name="V46" library="supply2" deviceset="GND" device=""/>
 <part name="V47" library="supply2" deviceset="GND" device=""/>
 <part name="V48" library="supply2" deviceset="GND" device=""/>
@@ -9606,17 +9574,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="A53" gate="M" x="314.96" y="441.96"/>
 <instance part="A53" gate="N" x="314.96" y="416.56"/>
 <instance part="V44" gate="GND" x="30.48" y="73.66"/>
-<instance part="U$3" gate="NC" x="347.98" y="55.88"/>
-<instance part="U$5" gate="NC" x="337.82" y="50.8"/>
-<instance part="U$6" gate="NC" x="337.82" y="48.26"/>
-<instance part="U$7" gate="NC" x="337.82" y="43.18"/>
 <instance part="FRAME2" gate="G$1" x="408.94" y="0"/>
 <instance part="FRAME2" gate="G$2" x="708.66" y="0"/>
 <instance part="FRAME3" gate="G$1" x="0" y="276.86"/>
 <instance part="FRAME3" gate="G$2" x="299.72" y="276.86"/>
-<instance part="U$8" gate="NC" x="304.8" y="48.26"/>
-<instance part="U$9" gate="NC" x="124.46" y="358.14"/>
-<instance part="U$10" gate="NC" x="124.46" y="353.06"/>
 <instance part="V46" gate="GND" x="30.48" y="180.34"/>
 <instance part="V47" gate="GND" x="30.48" y="162.56"/>
 <instance part="V48" gate="GND" x="30.48" y="109.22"/>
@@ -13725,36 +13686,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="A56" gate="C" pin="I0"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="A14" gate="A" pin="G"/>
-<pinref part="U$3" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="A14" gate="A" pin="I0"/>
-<pinref part="U$5" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="A14" gate="A" pin="I1"/>
-<pinref part="U$6" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="A14" gate="A" pin="I2"/>
-<pinref part="U$7" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="A7" gate="A" pin="I1"/>
-<pinref part="U$8" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="A31" gate="A" pin="D"/>
-<pinref part="U$9" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="A31" gate="A" pin="CLK"/>
-<pinref part="U$10" gate="NC" pin="NC"/>
-</segment>
-</net>
 <net name="CDJ2P09" class="0">
 <segment>
 <wire x1="203.2" y1="350.52" x2="205.74" y2="350.52" width="0.1524" layer="91"/>
@@ -13872,6 +13803,42 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,304.8,48.26,A7A,I1,,,,"/>
+<approved hash="202,1,124.46,358.14,A31A,D,,,,"/>
+<approved hash="202,1,124.46,353.06,A31A,CLK,,,,"/>
+<approved hash="114,1,434.34,246.317,A43,E,I,,,"/>
+<approved hash="114,1,43.18,149.797,A50,A,I0,,,"/>
+<approved hash="114,1,43.18,149.797,A50,A,I1,,,"/>
+<approved hash="114,1,43.18,149.797,A50,B,I0,,,"/>
+<approved hash="114,1,43.18,149.797,A50,B,I1,,,"/>
+<approved hash="114,1,93.98,198.056,A54,C,I0,,,"/>
+<approved hash="114,1,93.98,198.056,A54,C,I1,,,"/>
+<approved hash="114,1,93.98,198.056,A54,D,I0,,,"/>
+<approved hash="114,1,93.98,198.056,A54,D,I1,,,"/>
+<approved hash="202,1,337.82,50.8,A14A,I0,,,,"/>
+<approved hash="202,1,337.82,48.26,A14A,I1,,,,"/>
+<approved hash="202,1,347.98,55.88,A14A,G,,,,"/>
+<approved hash="202,1,337.82,43.18,A14A,I2,,,,"/>
+<approved hash="114,1,316.438,375.92,A53,C,TERM,,,"/>
+<approved hash="114,1,316.438,375.92,A53,D,TERM,,,"/>
+<approved hash="114,1,316.438,375.92,A53,E,TERM,,,"/>
+<approved hash="114,1,316.438,375.92,A53,F,TERM,,,"/>
+<approved hash="114,1,316.438,375.92,A53,H,TERM,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,1,269.24,29.591,U$2,,,,,"/>
+<approved hash="113,1,360.638,138.625,A3,,,,,"/>
+<approved hash="113,1,348.259,135.987,P,,,,,"/>
+<approved hash="113,1,254,73.573,A25,,,,,"/>
+<approved hash="113,1,254,87.965,A25B,,,,,"/>
+<approved hash="113,1,254,103.134,A25C,,,,,"/>
+<approved hash="113,1,254,118.374,A25D,,,,,"/>
+<approved hash="113,1,609.448,133.198,FRAME2,,,,,"/>
+<approved hash="113,1,200.508,410.058,FRAME3,,,,,"/>
+<approved hash="113,1,264.331,426.72,CDJ2,,,,,"/>
+<approved hash="113,1,264.331,375.92,CCJ1,,,,,"/>
+<approved hash="113,1,264.331,325.12,CDJ1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

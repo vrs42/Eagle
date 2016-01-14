@@ -60,6 +60,9 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -69,8 +72,33 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="ATT_MISO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="centerline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -12599,35 +12627,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </library>
 <library name="jumper">
 <packages>
-<package name="JP2Q">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<wire x1="-2.54" y1="-2.159" x2="-2.54" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="2.54" x2="0" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="0" y1="2.159" x2="0.381" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="0.381" y1="2.54" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="2.159" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="2.159" x2="2.54" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-2.159" x2="2.159" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-2.54" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="0" y1="-2.159" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="0" y1="-2.159" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="2.159" x2="-2.159" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="2.54" x2="-0.381" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-2.159" x2="-2.159" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="-2.54" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="2" x="1.27" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="3" x="-1.27" y="1.27" drill="0.9144" shape="octagon"/>
-<pad name="4" x="1.27" y="1.27" drill="0.9144" shape="octagon"/>
-<text x="-1.778" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
-<text x="0.762" y="-4.191" size="1.27" layer="21" ratio="10">2</text>
-<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="4.445" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.5748" y1="0.9652" x2="-0.9652" y2="1.5748" layer="51"/>
-<rectangle x1="0.9652" y1="0.9652" x2="1.5748" y2="1.5748" layer="51"/>
-<rectangle x1="0.9652" y1="-1.5748" x2="1.5748" y2="-0.9652" layer="51"/>
-<rectangle x1="-1.5748" y1="-1.5748" x2="-0.9652" y2="-0.9652" layer="51"/>
-</package>
 <package name="JP3Q">
 <description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
 <wire x1="-3.81" y1="-2.159" x2="-3.81" y2="2.159" width="0.1524" layer="21"/>
@@ -12670,26 +12669,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="J2">
-<wire x1="0" y1="2.54" x2="0" y2="3.81" width="0.4064" layer="94"/>
-<wire x1="0" y1="3.81" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-3.81" width="0.4064" layer="94"/>
-<wire x1="0" y1="-3.81" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="3.81" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="3.81" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-3.81" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="-3.81" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="5.08" x2="4.445" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="4.445" y1="5.08" x2="4.445" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="4.445" y1="-5.08" x2="-1.905" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-1.905" y1="-5.08" x2="-1.905" y2="5.08" width="0.4064" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="6.985" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="1" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="3" x="2.54" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="4" x="2.54" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
-</symbol>
 <symbol name="J3">
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.81" width="0.4064" layer="94"/>
 <wire x1="-2.54" y1="3.81" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
@@ -12718,25 +12697,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="JP2Q" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<gates>
-<gate name="B1" symbol="J2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="JP2Q">
-<connects>
-<connect gate="B1" pin="1" pad="1"/>
-<connect gate="B1" pin="2" pad="2"/>
-<connect gate="B1" pin="3" pad="3"/>
-<connect gate="B1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="JP3Q" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
 <gates>
@@ -13220,6 +13180,83 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="dec-con">
+<description>DEC Edge Connectors and Parts</description>
+<packages>
+<package name="JP2Q">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-2.159" x2="-2.54" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-0.381" y1="2.54" x2="0" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="0" y1="2.159" x2="0.381" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="2.54" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="2.159" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="2.159" x2="2.54" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-2.159" x2="2.159" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-2.54" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0" y1="-2.159" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0" y1="-2.159" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="2.159" x2="-2.159" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="2.54" x2="-0.381" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-2.159" x2="-2.159" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="-2.54" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="-1.27" drill="0.9144" shape="octagon"/>
+<pad name="2" x="-1.27" y="1.27" drill="0.9144" shape="octagon"/>
+<pad name="3" x="1.27" y="-1.27" drill="0.9144" shape="octagon"/>
+<pad name="4" x="1.27" y="1.27" drill="0.9144" shape="octagon"/>
+<text x="-1.778" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
+<text x="0.762" y="-4.191" size="1.27" layer="21" ratio="10">2</text>
+<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="4.445" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.5748" y1="0.9652" x2="-0.9652" y2="1.5748" layer="51"/>
+<rectangle x1="0.9652" y1="0.9652" x2="1.5748" y2="1.5748" layer="51"/>
+<rectangle x1="0.9652" y1="-1.5748" x2="1.5748" y2="-0.9652" layer="51"/>
+<rectangle x1="-1.5748" y1="-1.5748" x2="-0.9652" y2="-0.9652" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="J2">
+<wire x1="0" y1="2.54" x2="0" y2="3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="3.81" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.81" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-3.81" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="5.08" x2="4.445" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="4.445" y1="5.08" x2="4.445" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="4.445" y1="-5.08" x2="-1.905" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-1.905" y1="-5.08" x2="-1.905" y2="5.08" width="0.4064" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="6.985" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="3" x="2.54" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="4" x="2.54" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JP2Q" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="B1" symbol="J2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JP2Q">
+<connects>
+<connect gate="B1" pin="1" pad="1"/>
+<connect gate="B1" pin="2" pad="2"/>
+<connect gate="B1" pin="3" pad="3"/>
+<connect gate="B1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13303,8 +13340,8 @@ high speed (Philips)</description>
 <part name="E3" library="74xx-jameco" deviceset="74*10" device="N"/>
 <part name="E11" library="74xx-jameco" deviceset="74*10" device="N"/>
 <part name="E21" library="74xx-jameco" deviceset="DS75453" device="N"/>
-<part name="JP1" library="jumper" deviceset="JP2Q" device=""/>
-<part name="JP3" library="jumper" deviceset="JP2Q" device=""/>
+<part name="JP1" library="dec-con" deviceset="JP2Q" device=""/>
+<part name="JP3" library="dec-con" deviceset="JP2Q" device=""/>
 <part name="JP2" library="jumper" deviceset="JP3Q" device=""/>
 <part name="JP4" library="jumper" deviceset="JP3Q" device=""/>
 <part name="E15" library="74xx-jameco" deviceset="74*04" device="N"/>
@@ -13353,64 +13390,64 @@ high speed (Philips)</description>
 <part name="PAD42" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD43" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD44" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="C6" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C7" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C8" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C9" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C10" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C11" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C12" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C13" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C14" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C15" library="rcl" deviceset="C-US" device="050-025X075"/>
+<part name="C6" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C7" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C8" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C9" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C10" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C11" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C12" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C13" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C14" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C15" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="V27" library="supply2" deviceset="VCC" device=""/>
 <part name="V36" library="supply2" deviceset="GND" device=""/>
-<part name="C16" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C17" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C18" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C19" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C20" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C21" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C22" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C23" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C24" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C25" library="rcl" deviceset="C-US" device="050-025X075"/>
+<part name="C16" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C17" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C18" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C19" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C20" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C21" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C22" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C23" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C24" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C25" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="V37" library="supply2" deviceset="VCC" device=""/>
 <part name="V38" library="supply2" deviceset="GND" device=""/>
-<part name="C26" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C27" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C28" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C29" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C30" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C31" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C32" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C33" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C34" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C35" library="rcl" deviceset="C-US" device="050-025X075"/>
+<part name="C26" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C27" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C28" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C29" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C30" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C31" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C32" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C33" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C34" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C35" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="V39" library="supply2" deviceset="VCC" device=""/>
 <part name="V59" library="supply2" deviceset="GND" device=""/>
-<part name="C36" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C37" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C38" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C39" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C40" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C41" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C42" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C43" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C44" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C45" library="rcl" deviceset="C-US" device="050-025X075"/>
+<part name="C36" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C37" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C38" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C39" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C40" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C41" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C42" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C43" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C44" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C45" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="V60" library="supply2" deviceset="VCC" device=""/>
 <part name="V61" library="supply2" deviceset="GND" device=""/>
-<part name="C46" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C47" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C48" library="rcl" deviceset="C-US" device="050-025X075"/>
+<part name="C46" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C47" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
+<part name="C48" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="V62" library="supply2" deviceset="VCC" device=""/>
 <part name="V63" library="supply2" deviceset="GND" device=""/>
-<part name="C49" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
-<part name="C50" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
-<part name="C51" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
-<part name="C52" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
-<part name="E10" library="memory-hitachi" deviceset="62256P" device=""/>
+<part name="C49" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uF"/>
+<part name="C50" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uF"/>
+<part name="C51" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uF"/>
+<part name="C52" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uF"/>
+<part name="E10" library="memory-hitachi" deviceset="62256P" device="" value="62256P"/>
 <part name="V13" library="supply2" deviceset="GND" device=""/>
 <part name="V64" library="supply2" deviceset="VCC" device=""/>
 <part name="V65" library="supply2" deviceset="VCC" device=""/>
@@ -13423,7 +13460,7 @@ high speed (Philips)</description>
 <part name="GND" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="V10" library="supply2" deviceset="GND" device=""/>
 <part name="V14" library="supply2" deviceset="GND" device=""/>
-<part name="E16" library="memory-hitachi" deviceset="62256P" device=""/>
+<part name="E16" library="memory-hitachi" deviceset="62256P" device="" value="62256P"/>
 <part name="PAD1" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD2" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD3" library="wirepad" deviceset="1,6/0,8" device=""/>
@@ -13437,7 +13474,7 @@ high speed (Philips)</description>
 <part name="PAD11" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD16" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD17" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="E44" library="ic-package" deviceset="DIL16" device=""/>
+<part name="E44" library="ic-package" deviceset="DIL16" device="" value="SPARE"/>
 <part name="PAD18" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD19" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD20" library="wirepad" deviceset="1,6/0,8" device=""/>
@@ -13454,7 +13491,7 @@ high speed (Philips)</description>
 <part name="PAD41" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD45" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD46" library="wirepad" deviceset="1,6/0,8" device=""/>
-<part name="E13" library="ic-package" deviceset="DIL16" device=""/>
+<part name="E13" library="ic-package" deviceset="DIL16" device="" value="SPARE"/>
 <part name="PAD47" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD48" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD49" library="wirepad" deviceset="1,6/0,8" device=""/>
@@ -14872,45 +14909,63 @@ high speed (Philips)</description>
 </net>
 <net name="B17V1" class="0">
 <segment>
-<wire x1="50.8" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="200.66" x2="40.64" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="147.32" x2="40.64" y2="147.32" width="0.1524" layer="91"/>
-<label x="40.64" y="228.6" size="1.778" layer="95"/>
-<label x="40.64" y="200.66" size="1.778" layer="95"/>
-<label x="40.64" y="175.26" size="1.778" layer="95"/>
-<label x="40.64" y="147.32" size="1.778" layer="95"/>
 <pinref part="E2" gate="B" pin="CLR"/>
+<wire x1="50.8" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
+<label x="40.64" y="228.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="50.8" y1="200.66" x2="40.64" y2="200.66" width="0.1524" layer="91"/>
+<label x="40.64" y="200.66" size="1.778" layer="95"/>
 <pinref part="E2" gate="A" pin="CLR"/>
+</segment>
+<segment>
+<pinref part="E18" gate="A" pin="CLR"/>
+<wire x1="132.08" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
+<label x="132.08" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="132.08" y1="228.6" x2="142.24" y2="228.6" width="0.1524" layer="91"/>
+<label x="132.08" y="228.6" size="1.778" layer="95"/>
+<pinref part="E17" gate="B" pin="CLR"/>
+</segment>
+<segment>
+<pinref part="E42" gate="B" pin="CLR"/>
+<wire x1="226.06" y1="175.26" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
+<label x="226.06" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="226.06" y1="228.6" x2="236.22" y2="228.6" width="0.1524" layer="91"/>
+<label x="226.06" y="228.6" size="1.778" layer="95"/>
+<pinref part="E43" gate="B" pin="CLR"/>
+</segment>
+<segment>
+<wire x1="50.8" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="E5" gate="B" pin="CLR"/>
+<label x="40.64" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="50.8" y1="147.32" x2="40.64" y2="147.32" width="0.1524" layer="91"/>
+<label x="40.64" y="147.32" size="1.778" layer="95"/>
 <pinref part="E5" gate="A" pin="CLR"/>
 </segment>
 <segment>
-<wire x1="132.08" y1="175.26" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="200.66" x2="142.24" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="228.6" x2="142.24" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
-<label x="132.08" y="175.26" size="1.778" layer="95"/>
-<label x="132.08" y="228.6" size="1.778" layer="95"/>
 <label x="132.08" y="200.66" size="1.778" layer="95"/>
-<label x="132.08" y="147.32" size="1.778" layer="95"/>
-<pinref part="E17" gate="B" pin="CLR"/>
 <pinref part="E17" gate="A" pin="CLR"/>
+</segment>
+<segment>
+<wire x1="132.08" y1="175.26" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="E18" gate="B" pin="CLR"/>
-<pinref part="E18" gate="A" pin="CLR"/>
+<label x="132.08" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="226.06" y1="200.66" x2="236.22" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="228.6" x2="236.22" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="175.26" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="147.32" x2="236.22" y2="147.32" width="0.1524" layer="91"/>
-<label x="226.06" y="200.66" size="1.778" layer="95"/>
-<label x="226.06" y="147.32" size="1.778" layer="95"/>
-<label x="226.06" y="175.26" size="1.778" layer="95"/>
-<label x="226.06" y="228.6" size="1.778" layer="95"/>
-<pinref part="E43" gate="B" pin="CLR"/>
 <pinref part="E43" gate="A" pin="CLR"/>
-<pinref part="E42" gate="B" pin="CLR"/>
+<label x="226.06" y="200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="226.06" y1="147.32" x2="236.22" y2="147.32" width="0.1524" layer="91"/>
+<label x="226.06" y="147.32" size="1.778" layer="95"/>
 <pinref part="E42" gate="A" pin="CLR"/>
 </segment>
 </net>
@@ -14993,15 +15048,19 @@ high speed (Philips)</description>
 </net>
 <net name="B17S1" class="0">
 <segment>
-<wire x1="66.04" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
 <label x="15.24" y="78.74" size="1.778" layer="95"/>
-<label x="66.04" y="78.74" size="1.778" layer="95"/>
-<label x="129.54" y="78.74" size="1.778" layer="95"/>
-<pinref part="E39" gate="B" pin="I0"/>
-<pinref part="E39" gate="C" pin="I0"/>
 <pinref part="E39" gate="A" pin="I0"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="E39" gate="B" pin="I0"/>
+<label x="66.04" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="129.54" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<label x="129.54" y="78.74" size="1.778" layer="95"/>
+<pinref part="E39" gate="C" pin="I0"/>
 </segment>
 </net>
 <net name="D01LOADMDL" class="0">
@@ -17387,6 +17446,120 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,5,162.56,137.16,E10,VSS,GND,,,"/>
+<approved hash="104,5,162.56,203.2,E16,VSS,GND,,,"/>
+<approved hash="206,4,154.94,144.78,N$2,,,,,"/>
+<approved hash="206,4,154.94,144.78,N$2,,,,,"/>
+<approved hash="206,4,43.18,149.86,N$10,,,,,"/>
+<approved hash="206,4,43.18,149.86,N$10,,,,,"/>
+<approved hash="206,4,43.18,129.54,N$31,,,,,"/>
+<approved hash="206,4,43.18,129.54,N$31,,,,,"/>
+<approved hash="206,4,154.94,149.86,N$38,,,,,"/>
+<approved hash="206,4,154.94,149.86,N$38,,,,,"/>
+<approved hash="206,4,154.94,139.7,N$48,,,,,"/>
+<approved hash="206,4,154.94,139.7,N$48,,,,,"/>
+<approved hash="206,4,154.94,160.02,N$49,,,,,"/>
+<approved hash="206,4,154.94,160.02,N$49,,,,,"/>
+<approved hash="206,4,154.94,154.94,N$50,,,,,"/>
+<approved hash="206,4,154.94,154.94,N$50,,,,,"/>
+<approved hash="206,4,43.18,144.78,N$51,,,,,"/>
+<approved hash="206,4,43.18,144.78,N$51,,,,,"/>
+<approved hash="206,4,43.18,139.7,N$52,,,,,"/>
+<approved hash="206,4,43.18,139.7,N$52,,,,,"/>
+<approved hash="206,4,43.18,134.62,N$53,,,,,"/>
+<approved hash="206,4,43.18,134.62,N$53,,,,,"/>
+<approved hash="112,4,33.02,161.29,,,,,,"/>
+<approved hash="112,4,41.91,149.86,,,,,,"/>
+<approved hash="112,4,41.91,144.78,,,,,,"/>
+<approved hash="112,4,41.91,139.7,,,,,,"/>
+<approved hash="112,4,41.91,129.54,,,,,,"/>
+<approved hash="112,4,41.91,134.62,,,,,,"/>
+<approved hash="112,4,144.78,128.27,,,,,,"/>
+<approved hash="112,4,153.67,139.7,,,,,,"/>
+<approved hash="112,4,153.67,144.78,,,,,,"/>
+<approved hash="112,4,153.67,149.86,,,,,,"/>
+<approved hash="112,4,153.67,160.02,,,,,,"/>
+<approved hash="112,4,153.67,154.94,,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME7,,,,,"/>
+<approved hash="113,1,144.78,133.155,H01/H20,,,,,"/>
+<approved hash="113,1,187.96,133.155,H02/H21,,,,,"/>
+<approved hash="113,1,233.68,133.155,H03/H22,,,,,"/>
+<approved hash="113,1,279.4,133.155,H04/H23,,,,,"/>
+<approved hash="113,1,320.04,133.155,H05/H24,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME6,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,4,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,4,33.02,106.811,JP1,,,,,"/>
+<approved hash="113,4,33.02,76.3312,JP3,,,,,"/>
+<approved hash="113,4,33.02,92.8412,JP2,,,,,"/>
+<approved hash="113,4,78.74,42.0412,JP4,,,,,"/>
+<approved hash="113,5,194.206,131.976,FRAME8,,,,,"/>
+<approved hash="113,5,28.0493,24.0326,PAD12,,,,,"/>
+<approved hash="113,5,48.1507,21.6874,PAD13,,,,,"/>
+<approved hash="113,5,61.0693,41.8126,PAD14,,,,,"/>
+<approved hash="113,5,86.2507,39.4674,PAD15,,,,,"/>
+<approved hash="113,5,61.0693,26.5726,PAD27,,,,,"/>
+<approved hash="113,5,61.0693,24.0326,PAD28,,,,,"/>
+<approved hash="113,5,61.0693,21.4926,PAD29,,,,,"/>
+<approved hash="113,5,86.2507,21.6874,PAD30,,,,,"/>
+<approved hash="113,5,99.1693,44.3526,PAD31,,,,,"/>
+<approved hash="113,5,99.1693,39.2726,PAD32,,,,,"/>
+<approved hash="113,5,124.351,39.4674,PAD33,,,,,"/>
+<approved hash="113,5,99.1693,24.0326,PAD34,,,,,"/>
+<approved hash="113,5,99.1693,18.9526,PAD35,,,,,"/>
+<approved hash="113,5,124.351,19.1474,PAD36,,,,,"/>
+<approved hash="113,5,137.269,24.0326,PAD42,,,,,"/>
+<approved hash="113,5,137.269,18.9526,PAD43,,,,,"/>
+<approved hash="113,5,162.451,19.1474,PAD44,,,,,"/>
+<approved hash="113,5,74.9516,222.153,VCC,,,,,"/>
+<approved hash="113,5,74.9516,206.913,GND,,,,,"/>
+<approved hash="113,5,136.881,41.8126,PAD1,,,,,"/>
+<approved hash="113,5,162.839,39.4674,PAD2,,,,,"/>
+<approved hash="113,5,27.6606,41.8126,PAD3,,,,,"/>
+<approved hash="113,5,48.5394,39.4674,PAD4,,,,,"/>
+<approved hash="113,5,177.521,36.7326,PAD5,,,,,"/>
+<approved hash="113,5,177.521,34.1926,PAD6,,,,,"/>
+<approved hash="113,5,177.521,31.6526,PAD7,,,,,"/>
+<approved hash="113,5,177.521,29.1126,PAD8,,,,,"/>
+<approved hash="113,5,177.521,24.0326,PAD9,,,,,"/>
+<approved hash="113,5,203.091,34.3874,PAD10,,,,,"/>
+<approved hash="113,5,203.091,31.8474,PAD11,,,,,"/>
+<approved hash="113,5,203.091,29.3074,PAD16,,,,,"/>
+<approved hash="113,5,203.091,26.7674,PAD17,,,,,"/>
+<approved hash="113,5,221.089,232.313,PAD18,,,,,"/>
+<approved hash="113,5,221.089,229.773,PAD19,,,,,"/>
+<approved hash="113,5,221.089,227.233,PAD20,,,,,"/>
+<approved hash="113,5,221.089,224.693,PAD21,,,,,"/>
+<approved hash="113,5,221.089,222.153,PAD22,,,,,"/>
+<approved hash="113,5,221.089,219.613,PAD23,,,,,"/>
+<approved hash="113,5,221.089,217.073,PAD24,,,,,"/>
+<approved hash="113,5,221.089,214.533,PAD25,,,,,"/>
+<approved hash="113,5,236.111,229.967,PAD26,,,,,"/>
+<approved hash="113,5,236.111,227.427,PAD37,,,,,"/>
+<approved hash="113,5,236.111,224.887,PAD38,,,,,"/>
+<approved hash="113,5,236.111,222.347,PAD39,,,,,"/>
+<approved hash="113,5,236.111,219.807,PAD40,,,,,"/>
+<approved hash="113,5,236.111,217.267,PAD41,,,,,"/>
+<approved hash="113,5,236.111,214.727,PAD45,,,,,"/>
+<approved hash="113,5,236.111,212.187,PAD46,,,,,"/>
+<approved hash="113,5,249.029,232.313,PAD47,,,,,"/>
+<approved hash="113,5,249.029,229.773,PAD48,,,,,"/>
+<approved hash="113,5,249.029,227.233,PAD49,,,,,"/>
+<approved hash="113,5,249.029,224.693,PAD50,,,,,"/>
+<approved hash="113,5,249.029,222.153,PAD51,,,,,"/>
+<approved hash="113,5,249.029,219.613,PAD52,,,,,"/>
+<approved hash="113,5,249.029,217.073,PAD53,,,,,"/>
+<approved hash="113,5,249.029,214.533,PAD54,,,,,"/>
+<approved hash="113,5,264.051,229.967,PAD55,,,,,"/>
+<approved hash="113,5,264.051,227.427,PAD56,,,,,"/>
+<approved hash="113,5,264.051,224.887,PAD57,,,,,"/>
+<approved hash="113,5,264.051,222.347,PAD58,,,,,"/>
+<approved hash="113,5,264.051,219.807,PAD59,,,,,"/>
+<approved hash="113,5,264.051,217.267,PAD60,,,,,"/>
+<approved hash="113,5,264.051,214.727,PAD61,,,,,"/>
+<approved hash="113,5,264.051,212.187,PAD62,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

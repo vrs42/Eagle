@@ -67418,10 +67418,6 @@ design rules under a new name.</description>
 <contactref element="CR32" pad="A"/>
 <wire x1="240.03" y1="33.02" x2="245.11" y2="33.02" width="0.8128" layer="16"/>
 </signal>
-<signal name="NC">
-<contactref element="P1" pad="B10"/>
-<wire x1="171.45" y1="173.99" x2="171.45" y2="185.3575" width="0.8128" layer="16"/>
-</signal>
 </signals>
 </board>
 </drawing>

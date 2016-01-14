@@ -2851,6 +2851,8 @@
 <part name="M916_21" library="dec-m" deviceset="M916" device="" value="M401"/>
 <part name="M916_22" library="dec-m" deviceset="M916" device="" value="M302"/>
 <part name="M916_23" library="dec-m" deviceset="M916" device="" value="M602"/>
+<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="supply2" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2973,11 +2975,8 @@
 <instance part="M916_3" gate="C2" x="88.9" y="665.48"/>
 <instance part="M916_3" gate="D2" x="88.9" y="655.32"/>
 <instance part="M916_3" gate="E2" x="88.9" y="645.16"/>
-<instance part="M916_3" gate="H2" x="88.9" y="624.84"/>
 <instance part="M916_3" gate="J2" x="88.9" y="614.68"/>
 <instance part="M916_3" gate="K2" x="88.9" y="604.52"/>
-<instance part="M916_3" gate="L2" x="114.3" y="685.8"/>
-<instance part="M916_3" gate="M2" x="114.3" y="675.64"/>
 <instance part="M916_3" gate="N2" x="114.3" y="665.48"/>
 <instance part="M916_3" gate="P2" x="114.3" y="655.32"/>
 <instance part="M916_3" gate="R2" x="114.3" y="645.16"/>
@@ -2988,11 +2987,8 @@
 <instance part="M916_4" gate="C2" x="88.9" y="767.08"/>
 <instance part="M916_4" gate="D2" x="88.9" y="756.92"/>
 <instance part="M916_4" gate="E2" x="88.9" y="746.76"/>
-<instance part="M916_4" gate="H2" x="88.9" y="726.44"/>
 <instance part="M916_4" gate="J2" x="88.9" y="716.28"/>
 <instance part="M916_4" gate="K2" x="88.9" y="706.12"/>
-<instance part="M916_4" gate="L2" x="114.3" y="787.4"/>
-<instance part="M916_4" gate="M2" x="114.3" y="777.24"/>
 <instance part="M916_4" gate="N2" x="114.3" y="767.08"/>
 <instance part="M916_4" gate="P2" x="114.3" y="756.92"/>
 <instance part="M916_4" gate="R2" x="114.3" y="746.76"/>
@@ -3003,11 +2999,8 @@
 <instance part="M916_5" gate="C2" x="142.24" y="55.88"/>
 <instance part="M916_5" gate="D2" x="142.24" y="45.72"/>
 <instance part="M916_5" gate="E2" x="142.24" y="35.56"/>
-<instance part="M916_5" gate="H2" x="142.24" y="15.24"/>
 <instance part="M916_5" gate="J2" x="142.24" y="5.08"/>
 <instance part="M916_5" gate="K2" x="142.24" y="-5.08"/>
-<instance part="M916_5" gate="L2" x="167.64" y="76.2"/>
-<instance part="M916_5" gate="M2" x="167.64" y="66.04"/>
 <instance part="M916_5" gate="N2" x="167.64" y="55.88"/>
 <instance part="M916_5" gate="P2" x="167.64" y="45.72"/>
 <instance part="M916_5" gate="R2" x="167.64" y="35.56"/>
@@ -3055,14 +3048,11 @@
 <instance part="M916_7" gate="U2" x="167.64" y="208.28"/>
 <instance part="M916_7" gate="V1" x="167.64" y="203.2"/>
 <instance part="M916_7" gate="V2" x="167.64" y="198.12"/>
-<instance part="M916_8" gate="A2" x="142.24" y="381"/>
-<instance part="M916_8" gate="B2" x="142.24" y="370.84"/>
 <instance part="M916_8" gate="C2" x="142.24" y="360.68"/>
 <instance part="M916_8" gate="D2" x="142.24" y="350.52"/>
 <instance part="M916_8" gate="E2" x="142.24" y="340.36"/>
 <instance part="M916_8" gate="F2" x="142.24" y="330.2"/>
 <instance part="M916_8" gate="H2" x="142.24" y="320.04"/>
-<instance part="M916_8" gate="J2" x="142.24" y="309.88"/>
 <instance part="M916_8" gate="K2" x="142.24" y="299.72"/>
 <instance part="M916_8" gate="L2" x="167.64" y="381"/>
 <instance part="M916_8" gate="M2" x="167.64" y="370.84"/>
@@ -3115,7 +3105,6 @@
 <instance part="M916_10" gate="B2" x="142.24" y="574.04"/>
 <instance part="M916_10" gate="C1" x="142.24" y="568.96"/>
 <instance part="M916_10" gate="C2" x="142.24" y="563.88"/>
-<instance part="M916_10" gate="D1" x="142.24" y="558.8"/>
 <instance part="M916_10" gate="D2" x="142.24" y="553.72"/>
 <instance part="M916_10" gate="E1" x="142.24" y="548.64"/>
 <instance part="M916_10" gate="E2" x="142.24" y="543.56"/>
@@ -3320,11 +3309,8 @@
 <instance part="M916_12" gate="C2" x="408.94" y="767.08"/>
 <instance part="M916_12" gate="D2" x="408.94" y="756.92"/>
 <instance part="M916_12" gate="E2" x="408.94" y="746.76"/>
-<instance part="M916_12" gate="H2" x="408.94" y="726.44"/>
 <instance part="M916_12" gate="J2" x="408.94" y="716.28"/>
 <instance part="M916_12" gate="K2" x="408.94" y="706.12"/>
-<instance part="M916_12" gate="L2" x="434.34" y="787.4"/>
-<instance part="M916_12" gate="M2" x="434.34" y="777.24"/>
 <instance part="M916_12" gate="N2" x="434.34" y="767.08"/>
 <instance part="M916_12" gate="P2" x="434.34" y="756.92"/>
 <instance part="M916_12" gate="R2" x="434.34" y="746.76"/>
@@ -3335,11 +3321,8 @@
 <instance part="M916_13" gate="C2" x="462.28" y="55.88"/>
 <instance part="M916_13" gate="D2" x="462.28" y="45.72"/>
 <instance part="M916_13" gate="E2" x="462.28" y="35.56"/>
-<instance part="M916_13" gate="H2" x="462.28" y="15.24"/>
 <instance part="M916_13" gate="J2" x="462.28" y="5.08"/>
 <instance part="M916_13" gate="K2" x="462.28" y="-5.08"/>
-<instance part="M916_13" gate="L2" x="487.68" y="76.2"/>
-<instance part="M916_13" gate="M2" x="487.68" y="66.04"/>
 <instance part="M916_13" gate="N2" x="487.68" y="55.88"/>
 <instance part="M916_13" gate="P2" x="487.68" y="45.72"/>
 <instance part="M916_13" gate="R2" x="487.68" y="35.56"/>
@@ -3353,7 +3336,6 @@
 <instance part="M916_15" gate="A2" x="462.28" y="279.4"/>
 <instance part="M916_15" gate="B2" x="462.28" y="269.24"/>
 <instance part="M916_15" gate="C2" x="462.28" y="259.08"/>
-<instance part="M916_15" gate="R2" x="487.68" y="238.76"/>
 <instance part="M916_15" gate="S2" x="487.68" y="228.6"/>
 <instance part="M916_15" gate="T1" x="487.68" y="223.52"/>
 <instance part="M916_15" gate="T2" x="487.68" y="218.44"/>
@@ -6261,168 +6243,6 @@
 <wire x1="754.38" y1="568.96" x2="767.08" y2="568.96" width="0.1524" layer="91"/>
 <label x="754.38" y="568.96" size="1.778" layer="95"/>
 <pinref part="SV10" gate="G$1" pin="32"/>
-</segment>
-</net>
-<net name="NC" class="0">
-<segment>
-<wire x1="7.62" y1="134.62" x2="20.32" y2="134.62" width="0.1524" layer="91"/>
-<label x="7.62" y="134.62" size="1.778" layer="95"/>
-<pinref part="SV3" gate="G$1" pin="34"/>
-</segment>
-<segment>
-<wire x1="7.62" y1="129.54" x2="20.32" y2="129.54" width="0.1524" layer="91"/>
-<label x="7.62" y="129.54" size="1.778" layer="95"/>
-<pinref part="SV3" gate="G$1" pin="38"/>
-</segment>
-<segment>
-<wire x1="7.62" y1="228.6" x2="20.32" y2="228.6" width="0.1524" layer="91"/>
-<label x="7.62" y="228.6" size="1.778" layer="95"/>
-<pinref part="SV4" gate="G$1" pin="10"/>
-</segment>
-<segment>
-<wire x1="7.62" y1="223.52" x2="20.32" y2="223.52" width="0.1524" layer="91"/>
-<label x="7.62" y="223.52" size="1.778" layer="95"/>
-<pinref part="SV4" gate="G$1" pin="14"/>
-</segment>
-<segment>
-<wire x1="7.62" y1="198.12" x2="20.32" y2="198.12" width="0.1524" layer="91"/>
-<label x="7.62" y="198.12" size="1.778" layer="95"/>
-<pinref part="SV4" gate="G$1" pin="34"/>
-</segment>
-<segment>
-<wire x1="7.62" y1="193.04" x2="20.32" y2="193.04" width="0.1524" layer="91"/>
-<label x="7.62" y="193.04" size="1.778" layer="95"/>
-<pinref part="SV4" gate="G$1" pin="38"/>
-</segment>
-<segment>
-<wire x1="93.98" y1="624.84" x2="106.68" y2="624.84" width="0.1524" layer="91"/>
-<label x="93.98" y="624.84" size="1.778" layer="95"/>
-<pinref part="M916_3" gate="H2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="119.38" y1="685.8" x2="132.08" y2="685.8" width="0.1524" layer="91"/>
-<label x="119.38" y="685.8" size="1.778" layer="95"/>
-<pinref part="M916_3" gate="L2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="119.38" y1="675.64" x2="132.08" y2="675.64" width="0.1524" layer="91"/>
-<label x="119.38" y="675.64" size="1.778" layer="95"/>
-<pinref part="M916_3" gate="M2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="93.98" y1="726.44" x2="106.68" y2="726.44" width="0.1524" layer="91"/>
-<label x="93.98" y="726.44" size="1.778" layer="95"/>
-<pinref part="M916_4" gate="H2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="119.38" y1="787.4" x2="132.08" y2="787.4" width="0.1524" layer="91"/>
-<label x="119.38" y="787.4" size="1.778" layer="95"/>
-<pinref part="M916_4" gate="L2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="119.38" y1="777.24" x2="132.08" y2="777.24" width="0.1524" layer="91"/>
-<label x="119.38" y="777.24" size="1.778" layer="95"/>
-<pinref part="M916_4" gate="M2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="15.24" x2="160.02" y2="15.24" width="0.1524" layer="91"/>
-<label x="147.32" y="15.24" size="1.778" layer="95"/>
-<pinref part="M916_5" gate="H2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="172.72" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
-<label x="172.72" y="76.2" size="1.778" layer="95"/>
-<pinref part="M916_5" gate="L2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="172.72" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
-<label x="172.72" y="66.04" size="1.778" layer="95"/>
-<pinref part="M916_5" gate="M2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="381" x2="160.02" y2="381" width="0.1524" layer="91"/>
-<label x="147.32" y="381" size="1.778" layer="95"/>
-<pinref part="M916_8" gate="A2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="370.84" x2="160.02" y2="370.84" width="0.1524" layer="91"/>
-<label x="147.32" y="370.84" size="1.778" layer="95"/>
-<pinref part="M916_8" gate="B2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="309.88" x2="160.02" y2="309.88" width="0.1524" layer="91"/>
-<label x="147.32" y="309.88" size="1.778" layer="95"/>
-<pinref part="M916_8" gate="J2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="558.8" x2="160.02" y2="558.8" width="0.1524" layer="91"/>
-<label x="147.32" y="558.8" size="1.778" layer="95"/>
-<pinref part="M916_10" gate="D1" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="414.02" y1="726.44" x2="426.72" y2="726.44" width="0.1524" layer="91"/>
-<label x="414.02" y="726.44" size="1.778" layer="95"/>
-<pinref part="M916_12" gate="H2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="439.42" y1="787.4" x2="452.12" y2="787.4" width="0.1524" layer="91"/>
-<label x="439.42" y="787.4" size="1.778" layer="95"/>
-<pinref part="M916_12" gate="L2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="439.42" y1="777.24" x2="452.12" y2="777.24" width="0.1524" layer="91"/>
-<label x="439.42" y="777.24" size="1.778" layer="95"/>
-<pinref part="M916_12" gate="M2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="467.36" y1="15.24" x2="480.06" y2="15.24" width="0.1524" layer="91"/>
-<label x="467.36" y="15.24" size="1.778" layer="95"/>
-<pinref part="M916_13" gate="H2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="492.76" y1="76.2" x2="505.46" y2="76.2" width="0.1524" layer="91"/>
-<label x="492.76" y="76.2" size="1.778" layer="95"/>
-<pinref part="M916_13" gate="L2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="492.76" y1="66.04" x2="505.46" y2="66.04" width="0.1524" layer="91"/>
-<label x="492.76" y="66.04" size="1.778" layer="95"/>
-<pinref part="M916_13" gate="M2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="492.76" y1="238.76" x2="505.46" y2="238.76" width="0.1524" layer="91"/>
-<label x="492.76" y="238.76" size="1.778" layer="95"/>
-<pinref part="M916_15" gate="R2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="754.38" y1="566.42" x2="767.08" y2="566.42" width="0.1524" layer="91"/>
-<label x="754.38" y="566.42" size="1.778" layer="95"/>
-<pinref part="SV10" gate="G$1" pin="34"/>
-</segment>
-<segment>
-<wire x1="754.38" y1="561.34" x2="767.08" y2="561.34" width="0.1524" layer="91"/>
-<label x="754.38" y="561.34" size="1.778" layer="95"/>
-<pinref part="SV10" gate="G$1" pin="38"/>
-</segment>
-<segment>
-<wire x1="754.38" y1="660.4" x2="767.08" y2="660.4" width="0.1524" layer="91"/>
-<label x="754.38" y="660.4" size="1.778" layer="95"/>
-<pinref part="SV11" gate="G$1" pin="10"/>
-</segment>
-<segment>
-<wire x1="754.38" y1="655.32" x2="767.08" y2="655.32" width="0.1524" layer="91"/>
-<label x="754.38" y="655.32" size="1.778" layer="95"/>
-<pinref part="SV11" gate="G$1" pin="14"/>
-</segment>
-<segment>
-<wire x1="754.38" y1="629.92" x2="767.08" y2="629.92" width="0.1524" layer="91"/>
-<label x="754.38" y="629.92" size="1.778" layer="95"/>
-<pinref part="SV11" gate="G$1" pin="34"/>
-</segment>
-<segment>
-<wire x1="754.38" y1="624.84" x2="767.08" y2="624.84" width="0.1524" layer="91"/>
-<label x="754.38" y="624.84" size="1.778" layer="95"/>
-<pinref part="SV11" gate="G$1" pin="38"/>
 </segment>
 </net>
 <net name="!IM_08" class="0">
@@ -15996,18 +15816,13 @@
 <instance part="M916_19" gate="T1" x="7.62" y="248.92"/>
 <instance part="M916_20" gate="A1" x="-17.78" y="411.48"/>
 <instance part="M916_20" gate="A2" x="-17.78" y="406.4"/>
-<instance part="M916_20" gate="B1" x="-17.78" y="401.32"/>
 <instance part="M916_20" gate="C1" x="-17.78" y="391.16"/>
 <instance part="M916_20" gate="C2" x="-17.78" y="386.08"/>
-<instance part="M916_20" gate="D1" x="-17.78" y="381"/>
 <instance part="M916_20" gate="D2" x="-17.78" y="375.92"/>
-<instance part="M916_20" gate="E1" x="-17.78" y="370.84"/>
 <instance part="M916_20" gate="E2" x="-17.78" y="365.76"/>
-<instance part="M916_20" gate="F1" x="-17.78" y="360.68"/>
 <instance part="M916_20" gate="F2" x="-17.78" y="355.6"/>
 <instance part="M916_20" gate="H1" x="-17.78" y="350.52"/>
 <instance part="M916_20" gate="H2" x="-17.78" y="345.44"/>
-<instance part="M916_20" gate="J1" x="-17.78" y="340.36"/>
 <instance part="M916_20" gate="J2" x="-17.78" y="335.28"/>
 <instance part="M916_20" gate="K1" x="-17.78" y="330.2"/>
 <instance part="M916_20" gate="K2" x="-17.78" y="325.12"/>
@@ -16016,15 +15831,10 @@
 <instance part="M916_20" gate="M1" x="7.62" y="401.32"/>
 <instance part="M916_20" gate="M2" x="7.62" y="396.24"/>
 <instance part="M916_20" gate="N1" x="7.62" y="391.16"/>
-<instance part="M916_20" gate="N2" x="7.62" y="386.08"/>
 <instance part="M916_20" gate="P1" x="7.62" y="381"/>
-<instance part="M916_20" gate="P2" x="7.62" y="375.92"/>
-<instance part="M916_20" gate="R2" x="7.62" y="365.76"/>
 <instance part="M916_20" gate="S1" x="7.62" y="360.68"/>
-<instance part="M916_20" gate="S2" x="7.62" y="355.6"/>
 <instance part="M916_20" gate="T1" x="7.62" y="350.52"/>
 <instance part="M916_20" gate="U1" x="7.62" y="340.36"/>
-<instance part="M916_20" gate="U2" x="7.62" y="335.28"/>
 <instance part="M916_20" gate="V1" x="7.62" y="330.2"/>
 <instance part="M916_20" gate="V2" x="7.62" y="325.12"/>
 <instance part="M916_21" gate="A2" x="-17.78" y="508"/>
@@ -16032,13 +15842,9 @@
 <instance part="M916_21" gate="D2" x="-17.78" y="477.52"/>
 <instance part="M916_21" gate="J2" x="-17.78" y="436.88"/>
 <instance part="M916_21" gate="K2" x="-17.78" y="426.72"/>
-<instance part="M916_21" gate="M2" x="7.62" y="497.84"/>
 <instance part="M916_21" gate="N2" x="7.62" y="487.68"/>
-<instance part="M916_21" gate="P2" x="7.62" y="477.52"/>
-<instance part="M916_21" gate="R2" x="7.62" y="467.36"/>
 <instance part="M916_21" gate="S2" x="7.62" y="457.2"/>
 <instance part="M916_21" gate="T1" x="7.62" y="452.12"/>
-<instance part="M916_21" gate="T2" x="7.62" y="447.04"/>
 <instance part="M916_22" gate="A2" x="-17.78" y="609.6"/>
 <instance part="M916_22" gate="C2" x="-17.78" y="589.28"/>
 <instance part="M916_22" gate="M2" x="7.62" y="599.44"/>
@@ -16065,6 +15871,8 @@
 <instance part="M916_23" gate="R2" x="7.62" y="670.56"/>
 <instance part="M916_23" gate="S2" x="7.62" y="660.4"/>
 <instance part="M916_23" gate="T1" x="7.62" y="655.32"/>
+<instance part="SUPPLY1" gate="GND" x="45.72" y="345.44"/>
+<instance part="SUPPLY2" gate="G$1" x="43.18" y="355.6"/>
 </instances>
 <busses>
 </busses>
@@ -16539,78 +16347,6 @@
 <pinref part="M916_20" gate="C1" pin="P$2"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<wire x1="-12.7" y1="401.32" x2="0" y2="401.32" width="0.1524" layer="91"/>
-<label x="-12.7" y="401.32" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="B1" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="-12.7" y1="381" x2="0" y2="381" width="0.1524" layer="91"/>
-<label x="-12.7" y="381" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="D1" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="-12.7" y1="370.84" x2="0" y2="370.84" width="0.1524" layer="91"/>
-<label x="-12.7" y="370.84" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="E1" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="-12.7" y1="360.68" x2="0" y2="360.68" width="0.1524" layer="91"/>
-<label x="-12.7" y="360.68" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="F1" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="-12.7" y1="340.36" x2="0" y2="340.36" width="0.1524" layer="91"/>
-<label x="-12.7" y="340.36" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="J1" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="12.7" y1="386.08" x2="25.4" y2="386.08" width="0.1524" layer="91"/>
-<label x="12.7" y="386.08" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="N2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="12.7" y1="375.92" x2="25.4" y2="375.92" width="0.1524" layer="91"/>
-<label x="12.7" y="375.92" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="P2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="12.7" y1="365.76" x2="25.4" y2="365.76" width="0.1524" layer="91"/>
-<label x="12.7" y="365.76" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="R2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="12.7" y1="355.6" x2="25.4" y2="355.6" width="0.1524" layer="91"/>
-<label x="12.7" y="355.6" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="S2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="12.7" y1="335.28" x2="25.4" y2="335.28" width="0.1524" layer="91"/>
-<label x="12.7" y="335.28" size="1.778" layer="95"/>
-<pinref part="M916_20" gate="U2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="12.7" y1="497.84" x2="25.4" y2="497.84" width="0.1524" layer="91"/>
-<label x="12.7" y="497.84" size="1.778" layer="95"/>
-<pinref part="M916_21" gate="M2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="12.7" y1="477.52" x2="25.4" y2="477.52" width="0.1524" layer="91"/>
-<label x="12.7" y="477.52" size="1.778" layer="95"/>
-<pinref part="M916_21" gate="P2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="12.7" y1="467.36" x2="25.4" y2="467.36" width="0.1524" layer="91"/>
-<label x="12.7" y="467.36" size="1.778" layer="95"/>
-<pinref part="M916_21" gate="R2" pin="P$2"/>
-</segment>
-<segment>
-<wire x1="12.7" y1="447.04" x2="25.4" y2="447.04" width="0.1524" layer="91"/>
-<label x="12.7" y="447.04" size="1.778" layer="95"/>
-<pinref part="M916_21" gate="T2" pin="P$2"/>
-</segment>
-</net>
 <net name="N$68" class="0">
 <segment>
 <wire x1="-12.7" y1="375.92" x2="0" y2="375.92" width="0.1524" layer="91"/>
@@ -16850,6 +16586,45 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,320.04,126.937,IC48,B,I0,,,"/>
+<approved hash="114,1,320.04,126.937,IC48,B,I1,,,"/>
+<approved hash="114,1,320.04,126.937,IC48,C,I0,,,"/>
+<approved hash="114,1,320.04,126.937,IC48,C,I1,,,"/>
+<approved hash="114,1,320.04,126.937,IC48,D,I0,,,"/>
+<approved hash="114,1,320.04,126.937,IC48,D,I1,,,"/>
+<approved hash="114,1,320.04,355.536,IC53,B,I0,,,"/>
+<approved hash="114,1,320.04,355.536,IC53,B,I1,,,"/>
+<approved hash="114,1,693.42,507.937,IC119,B,I0,,,"/>
+<approved hash="114,1,693.42,507.937,IC119,B,I1,,,"/>
+<approved hash="114,1,693.42,507.937,IC119,C,I0,,,"/>
+<approved hash="114,1,693.42,507.937,IC119,C,I1,,,"/>
+<approved hash="114,1,693.42,507.937,IC119,D,I0,,,"/>
+<approved hash="114,1,693.42,507.937,IC119,D,I1,,,"/>
+<approved hash="114,1,693.42,685.736,IC122,B,I0,,,"/>
+<approved hash="114,1,693.42,685.736,IC122,B,I1,,,"/>
+<approved hash="114,1,693.42,685.736,IC122,B,I2,,,"/>
+<approved hash="114,1,693.42,685.736,IC122,B,I3,,,"/>
+<approved hash="114,1,800.1,711.137,IC136,B,I,,,"/>
+<approved hash="114,1,800.1,711.137,IC136,C,I,,,"/>
+<approved hash="114,1,800.1,711.137,IC136,D,I,,,"/>
+<approved hash="114,1,800.1,711.137,IC136,E,I,,,"/>
+<approved hash="114,1,800.1,711.137,IC136,F,I,,,"/>
+<approved hash="114,2,0,50.7365,IC139,B,CLR,,,"/>
+<approved hash="114,2,0,50.7365,IC139,B,D,,,"/>
+<approved hash="114,2,0,50.7365,IC139,B,CLK,,,"/>
+<approved hash="114,2,0,50.7365,IC139,B,PRE,,,"/>
+<approved hash="113,1,0,25.5947,SV1,,,,,"/>
+<approved hash="113,1,0,89.0947,SV2,,,,,"/>
+<approved hash="113,1,0,152.595,SV3,,,,,"/>
+<approved hash="113,1,0,216.095,SV4,,,,,"/>
+<approved hash="113,1,0,279.595,SV5,,,,,"/>
+<approved hash="113,1,746.76,457.395,SV8,,,,,"/>
+<approved hash="113,1,746.76,520.895,SV9,,,,,"/>
+<approved hash="113,1,746.76,584.395,SV10,,,,,"/>
+<approved hash="113,1,746.76,647.895,SV11,,,,,"/>
+<approved hash="113,1,746.76,711.395,SV12,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

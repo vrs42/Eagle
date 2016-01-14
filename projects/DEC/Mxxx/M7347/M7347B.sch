@@ -6970,31 +6970,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-m">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="74xx-us">
 <packages>
 <package name="DIL14">
@@ -7468,8 +7443,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GRN" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="WHT" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="RED" library="wirepad" deviceset="2,15/1,0" device=""/>
-<part name="U$4" library="dec-m" deviceset="NC" device=""/>
-<part name="U$5" library="dec-m" deviceset="NC" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10"/>
@@ -7521,8 +7494,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GRN" gate="1" x="213.36" y="137.16" rot="MR0"/>
 <instance part="WHT" gate="1" x="213.36" y="149.86" rot="MR0"/>
 <instance part="RED" gate="1" x="213.36" y="160.02" rot="MR0"/>
-<instance part="U$4" gate="NC" x="203.2" y="162.56" rot="R180"/>
-<instance part="U$5" gate="NC" x="203.2" y="114.3" rot="R180"/>
 <instance part="R1" gate="G$1" x="185.42" y="96.52" rot="MR270"/>
 <instance part="R2" gate="G$1" x="170.18" y="142.24" rot="R90"/>
 <instance part="R3" gate="G$1" x="177.8" y="111.76" rot="MR270"/>
@@ -7766,16 +7737,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="Q1" gate="G$1" pin="B"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="8" gate="1" pin="P"/>
-<pinref part="U$5" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="1" gate="1" pin="P"/>
-<pinref part="U$4" gate="NC" pin="NC"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <wire x1="71.12" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
@@ -7800,6 +7761,34 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,203.2,162.56,1,P,,,,"/>
+<approved hash="101,1,203.2,114.3,8,P,,,,"/>
+<approved hash="114,1,50.8,139.637,E1,D,I,,,"/>
+<approved hash="114,1,50.8,139.637,E1,E,I,,,"/>
+<approved hash="114,1,50.8,139.637,E1,F,I,,,"/>
+<approved hash="114,1,83.82,124.397,E2,C,I0,,,"/>
+<approved hash="114,1,83.82,124.397,E2,C,I1,,,"/>
+<approved hash="114,1,83.82,124.397,E2,D,I0,,,"/>
+<approved hash="114,1,83.82,124.397,E2,D,I1,,,"/>
+<approved hash="114,1,129.54,126.937,E3,A,CLR,,,"/>
+<approved hash="114,1,129.54,126.937,E3,A,D,,,"/>
+<approved hash="114,1,129.54,126.937,E3,A,CLK,,,"/>
+<approved hash="114,1,129.54,126.937,E3,A,PRE,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,203.479,163.733,1,,,,,"/>
+<approved hash="113,1,203.479,156.113,2,,,,,"/>
+<approved hash="113,1,203.479,145.953,3,,,,,"/>
+<approved hash="113,1,203.479,140.873,4,,,,,"/>
+<approved hash="113,1,203.479,133.253,5,,,,,"/>
+<approved hash="113,1,203.479,128.173,6,,,,,"/>
+<approved hash="113,1,203.479,120.553,7,,,,,"/>
+<approved hash="113,1,203.479,115.473,8,,,,,"/>
+<approved hash="113,1,211.099,125.633,BLK,,,,,"/>
+<approved hash="113,1,211.099,138.333,GRN,,,,,"/>
+<approved hash="113,1,211.099,151.033,WHT,,,,,"/>
+<approved hash="113,1,211.099,161.193,RED,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

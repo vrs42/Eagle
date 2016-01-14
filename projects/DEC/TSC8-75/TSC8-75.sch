@@ -8315,31 +8315,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-m">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8478,8 +8453,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R5" library="rcl" deviceset="R-US_" device="0204/7" value="1K"/>
 <part name="V24" library="supply2" deviceset="VCC" device=""/>
 <part name="V36" library="supply2" deviceset="GND" device=""/>
-<part name="U$2" library="dec-m" deviceset="NC" device=""/>
-<part name="U$3" library="dec-m" deviceset="NC" device=""/>
 <part name="FRAME3" library="frames" deviceset="TABL_L" device=""/>
 <part name="U1" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="U32" library="74xx-jameco" deviceset="74*38" device="N"/>
@@ -11076,8 +11049,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R5" gate="G$1" x="220.98" y="60.96" rot="MR270"/>
 <instance part="V24" gate="G$1" x="220.98" y="68.58"/>
 <instance part="V36" gate="GND" x="109.22" y="68.58"/>
-<instance part="U$2" gate="NC" x="109.22" y="81.28"/>
-<instance part="U$3" gate="NC" x="109.22" y="78.74"/>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="FRAME3" gate="G$2" x="299.72" y="0"/>
 <instance part="U42" gate="A" x="83.82" y="53.34"/>
@@ -11727,16 +11698,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="V36" gate="GND" pin="GND"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="U35" gate="A" pin="4A"/>
-<pinref part="U$2" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="U35" gate="A" pin="4B"/>
-<pinref part="U$3" gate="NC" pin="NC"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
@@ -12277,6 +12238,27 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,220.98,58.3565,U34,A,I0,,,"/>
+<approved hash="114,1,220.98,58.3565,U34,A,I1,,,"/>
+<approved hash="114,1,198.12,96.4565,U6,D,I0,,,"/>
+<approved hash="114,1,198.12,96.4565,U6,D,I1,,,"/>
+<approved hash="114,1,160.02,43.1165,U24,C,I0,,,"/>
+<approved hash="114,1,160.02,43.1165,U24,C,I1,,,"/>
+<approved hash="114,1,287.02,162.496,U31,A,I,,,"/>
+<approved hash="114,2,259.08,60.8965,U14,A,I0,,,"/>
+<approved hash="114,2,259.08,60.8965,U14,A,I1,,,"/>
+<approved hash="114,2,259.08,60.8965,U14,B,I0,,,"/>
+<approved hash="114,2,259.08,60.8965,U14,B,I1,,,"/>
+<approved hash="202,3,109.22,78.74,U35,4B,,,,"/>
+<approved hash="202,3,109.22,81.28,U35,4A,,,,"/>
+<approved hash="114,3,170.18,170.117,U32,D,I0,,,"/>
+<approved hash="114,3,170.18,170.117,U32,D,I1,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME2,,,,,"/>
+<approved hash="113,3,200.508,133.198,FRAME3,,,,,"/>
+<approved hash="113,4,200.508,133.198,FRAME4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

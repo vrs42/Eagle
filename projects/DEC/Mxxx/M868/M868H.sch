@@ -9699,31 +9699,6 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-m">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9832,7 +9807,6 @@ high speed (Philips)</description>
 <part name="Q2" library="transistor-npn" deviceset="2N2219" device="" value="MPS6534"/>
 <part name="Q3" library="transistor-npn" deviceset="2N2219" device="" value="MPS6534"/>
 <part name="Q1" library="transistor-npn" deviceset="2N2219" device="" value="MPS6534"/>
-<part name="U$4" library="dec-m" deviceset="NC" device=""/>
 <part name="E41" library="dec-con" deviceset="N8881" device="N"/>
 <part name="FRAME2" library="frames" deviceset="DINA3_L" device=""/>
 <part name="E01" library="74xx-jameco" deviceset="74*04" device="N" technology="S" value="74H04N"/>
@@ -9903,8 +9877,6 @@ high speed (Philips)</description>
 <part name="WTM" library="switch-omron" deviceset="31-XX" device=""/>
 <part name="W2W1" library="jumper" deviceset="0R2" device=""/>
 <part name="W4W3" library="jumper" deviceset="0R2" device=""/>
-<part name="U$2" library="dec-m" deviceset="NC" device=""/>
-<part name="U$3" library="dec-m" deviceset="NC" device=""/>
 <part name="E33" library="dec-con" deviceset="N8881" device="N"/>
 <part name="J1" library="dec-con" deviceset="DEC40PIN" device="H"/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
@@ -9958,7 +9930,7 @@ high speed (Philips)</description>
 <part name="FRAME3" library="frames" deviceset="DINA3_L" device=""/>
 <part name="C34" library="dec-con" deviceset="CPOL-USE20-8AXIAL" device="" value="6.8uF"/>
 <part name="C35" library="dec-con" deviceset="CPOL-USE20-8AXIAL" device="" value="6.8uF"/>
-<part name="E25" library="ic-package" deviceset="DIL14" device=""/>
+<part name="E25" library="ic-package" deviceset="DIL14" device="" value="SPARE"/>
 </parts>
 <sheets>
 <sheet>
@@ -10104,7 +10076,6 @@ high speed (Philips)</description>
 <instance part="Q2" gate="G$1" x="299.72" y="63.5"/>
 <instance part="Q3" gate="G$1" x="274.32" y="63.5" rot="MR0"/>
 <instance part="Q1" gate="G$1" x="228.6" y="99.06"/>
-<instance part="U$4" gate="NC" x="198.12" y="238.76" rot="R180"/>
 <instance part="E41" gate="A" x="350.52" y="208.28"/>
 <instance part="E41" gate="C" x="350.52" y="243.84"/>
 <instance part="E41" gate="D" x="350.52" y="226.06" rot="MR180"/>
@@ -11854,12 +11825,6 @@ high speed (Philips)</description>
 <pinref part="E13" gate="A" pin="!Q3"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="E13" gate="A" pin="D2"/>
-<pinref part="U$4" gate="NC" pin="NC"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
@@ -12008,8 +11973,6 @@ high speed (Philips)</description>
 <instance part="WTM" gate="1" x="264.16" y="63.5" rot="MR270"/>
 <instance part="W2W1" gate="1" x="45.72" y="208.28" rot="R270"/>
 <instance part="W4W3" gate="1" x="45.72" y="182.88" rot="R270"/>
-<instance part="U$2" gate="NC" x="25.4" y="40.64" rot="R180"/>
-<instance part="U$3" gate="NC" x="25.4" y="33.02" rot="R180"/>
 <instance part="E33" gate="A" x="210.82" y="251.46" rot="MR180"/>
 <instance part="E33" gate="B" x="124.46" y="170.18"/>
 <instance part="E33" gate="D" x="162.56" y="251.46" rot="MR180"/>
@@ -13651,16 +13614,6 @@ high speed (Philips)</description>
 <pinref part="E24" gate="G$1" pin="I5"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="E40" gate="A" pin="I3"/>
-<pinref part="U$2" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E40" gate="A" pin="I5"/>
-<pinref part="U$3" gate="NC" pin="NC"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
@@ -14349,6 +14302,29 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,198.12,238.76,E13,D2,,,,"/>
+<approved hash="114,1,350.52,208.216,E41,B,I0,,,"/>
+<approved hash="114,1,350.52,208.216,E41,B,I1,,,"/>
+<approved hash="114,2,68.58,139.637,E01,B,I,,,"/>
+<approved hash="114,2,68.58,139.637,E01,C,I,,,"/>
+<approved hash="114,2,68.58,139.637,E01,D,I,,,"/>
+<approved hash="114,2,68.58,139.637,E01,E,I,,,"/>
+<approved hash="114,2,45.72,246.444,E28,D,I0,,,"/>
+<approved hash="114,2,45.72,246.444,E28,D,I1,,,"/>
+<approved hash="202,2,25.4,40.64,E40,I3,,,,"/>
+<approved hash="202,2,25.4,33.02,E40,I5,,,,"/>
+<approved hash="114,2,210.82,251.524,E33,C,I0,,,"/>
+<approved hash="114,2,210.82,251.524,E33,C,I1,,,"/>
+<approved hash="113,1,11.049,198.12,EDGE$,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,2,264.16,66.9205,WTM,,,,,"/>
+<approved hash="113,2,46.6513,203.2,W2W1,,,,,"/>
+<approved hash="113,2,46.6513,177.8,W4W3,,,,,"/>
+<approved hash="113,3,93.98,109.415,J1,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

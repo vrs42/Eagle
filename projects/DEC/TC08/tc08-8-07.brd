@@ -15,7 +15,6 @@
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
 <layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="NC$" color="1" fill="2" visible="yes" active="yes"/>
 <layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
 <layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
@@ -141,7 +140,6 @@
 <text x="6.35" y="46.0375" size="1.778" layer="21">D</text>
 <text x="6.35" y="249.2375" size="1.778" layer="16" ratio="15" rot="MR0">A</text>
 <text x="358.775" y="287.3375" size="1.778" layer="1" ratio="15">1</text>
-<text x="-47.625" y="282.575" size="1.778" layer="21">Rip Up NC</text>
 <text x="-47.625" y="279.4" size="1.778" layer="21">Fix G821 connections</text>
 <text x="-47.625" y="276.225" size="1.778" layer="21">Fold in ECOs.</text>
 </plain>
@@ -666,8 +664,8 @@ design rules under a new name.</description>
 <element name="D04" library="dec-m" package="H807" value="M903" x="320.675" y="44.45"/>
 <element name="D05" library="dec-m" package="H807" value="M903" x="307.975" y="44.45"/>
 <element name="D06" library="dec-m" package="H807" value="M903" x="295.275" y="44.45"/>
-<element name="A26" library="dec-m" package="H807" value="" x="41.275" y="247.65"/>
-<element name="A25" library="dec-m" package="H807" value="" x="53.975" y="247.65"/>
+<element name="A26" library="dec-m" package="H807" value="M916" x="41.275" y="247.65"/>
+<element name="A25" library="dec-m" package="H807" value="M916" x="53.975" y="247.65"/>
 <element name="A24" library="dec-m" package="H807" value="W023" x="66.675" y="247.65"/>
 <element name="A13" library="dec-m" package="H807" value="H807" x="206.375" y="247.65"/>
 <element name="B17" library="dec-m" package="H807" value="H807" x="155.575" y="177.8"/>
@@ -34149,12 +34147,6 @@ design rules under a new name.</description>
 <contactref element="D14" pad="E1"/>
 <contactref element="D14" pad="F1"/>
 <contactref element="D14" pad="J1"/>
-<polygon width="0.254" layer="8" orphans="yes">
-<vertex x="-0.0358" y="0.0126"/>
-<vertex x="374.6704" y="0.0126"/>
-<vertex x="374.6704" y="298.4501"/>
-<vertex x="-0.0358" y="298.4501"/>
-</polygon>
 </signal>
 <signal name="+11V">
 <contactref element="AB01" pad="BM2"/>

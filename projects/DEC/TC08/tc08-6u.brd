@@ -15,7 +15,7 @@
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
 <layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="NC$" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
 <layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
 <layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
@@ -135,11 +135,11 @@
 <text x="406.4" y="163.5125" size="1.778" layer="22" rot="MR0">B</text>
 <text x="406.4" y="100.0125" size="1.778" layer="22" rot="MR0">C</text>
 <text x="406.4" y="30.1625" size="1.778" layer="22" rot="MR0">D</text>
-<text x="3.175" y="234.95" size="1.778" layer="21">A</text>
+<text x="1.5875" y="234.95" size="1.778" layer="21">A</text>
 <text x="3.175" y="165.1" size="1.778" layer="21">B</text>
 <text x="3.175" y="100.0125" size="1.778" layer="21">C</text>
 <text x="3.175" y="31.75" size="1.778" layer="21">D</text>
-<text x="4.7625" y="234.95" size="1.778" layer="16" ratio="15" rot="MR0">A</text>
+<text x="3.175" y="234.95" size="1.778" layer="16" ratio="15" rot="MR0">A</text>
 <text x="403.225" y="263.525" size="1.778" layer="16" ratio="15" rot="MR0">1</text>
 <text x="-44.45" y="260.35" size="1.778" layer="21">Fix G821 connections</text>
 <text x="-44.45" y="257.175" size="1.778" layer="21">Fold in ECOs.</text>
@@ -647,8 +647,8 @@ design rules under a new name.</description>
 <element name="D04" library="dec-m" package="H807" value="M903" x="361.95" y="30.1625"/>
 <element name="D05" library="dec-m" package="H807" value="M903" x="349.25" y="30.1625"/>
 <element name="D06" library="dec-m" package="H807" value="M903" x="336.55" y="30.1625"/>
-<element name="A26" library="dec-m" package="H807" value="" x="82.55" y="233.3625"/>
-<element name="A25" library="dec-m" package="H807" value="" x="95.25" y="233.3625"/>
+<element name="A26" library="dec-m" package="H807" value="M916" x="82.55" y="233.3625"/>
+<element name="A25" library="dec-m" package="H807" value="M916" x="95.25" y="233.3625"/>
 <element name="A24" library="dec-m" package="H807" value="W023" x="107.95" y="233.3625"/>
 <element name="A13" library="dec-m" package="H807" value="H807" x="247.65" y="233.3625"/>
 <element name="B17" library="dec-m" package="H807" value="H807" x="196.85" y="163.5125"/>
@@ -31544,7 +31544,6 @@ design rules under a new name.</description>
 <via x="352.552" y="245.618" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="I/O_B-RUN">
-<contactref element="A04" pad="S2"/>
 <contactref element="D04" pad="S2"/>
 <contactref element="C01" pad="A1"/>
 <wire x1="360.934" y1="11.938" x2="360.934" y2="13.716" width="0.254" layer="16"/>
@@ -31602,10 +31601,9 @@ design rules under a new name.</description>
 <wire x1="404.622" y1="123.952" x2="403.606" y2="122.936" width="0.254" layer="2"/>
 <wire x1="405.638" y1="124.968" x2="404.622" y2="123.952" width="0.254" layer="16"/>
 <wire x1="405.638" y1="127.762" x2="405.638" y2="124.968" width="0.254" layer="16"/>
-<wire x1="405.638" y1="127.762" x2="405.384" y2="128.016" width="0.254" layer="16"/>
 <wire x1="360.934" y1="13.716" x2="360.3625" y2="14.2875" width="0.254" layer="16"/>
-<wire x1="405.384" y1="128.016" x2="404.8125" y2="128.5875" width="0.254" layer="16"/>
-<wire x1="359.918" y1="213.36" x2="359.918" y2="216.916" width="0.254" layer="16"/>
+<wire x1="405.638" y1="127.762" x2="404.8125" y2="128.5875" width="0.254" layer="16"/>
+<wire x1="359.918" y1="213.36" x2="359.918" y2="217.043" width="0.254" layer="16"/>
 <wire x1="358.902" y1="212.344" x2="359.918" y2="213.36" width="0.254" layer="1"/>
 <wire x1="358.902" y1="206.756" x2="358.902" y2="212.344" width="0.254" layer="1"/>
 <wire x1="367.284" y1="206.756" x2="358.902" y2="206.756" width="0.254" layer="1"/>
@@ -31653,7 +31651,6 @@ design rules under a new name.</description>
 <wire x1="403.606" y1="149.606" x2="403.606" y2="139.954" width="0.254" layer="16"/>
 <wire x1="403.606" y1="139.954" x2="405.638" y2="137.922" width="0.254" layer="16"/>
 <wire x1="405.638" y1="137.922" x2="405.638" y2="127.762" width="0.254" layer="16"/>
-<wire x1="359.918" y1="216.916" x2="360.3625" y2="217.4875" width="0.254" layer="16"/>
 <via x="360.934" y="11.938" extent="1-16" drill="0.6096"/>
 <via x="398.272" y="22.86" extent="1-16" drill="0.6096"/>
 <via x="401.32" y="53.34" extent="1-16" drill="0.6096"/>
@@ -31669,6 +31666,8 @@ design rules under a new name.</description>
 <via x="398.272" y="155.702" extent="1-16" drill="0.6096"/>
 <via x="401.828" y="155.194" extent="1-16" drill="0.6096"/>
 <via x="404.622" y="152.146" extent="1-16" drill="0.6096"/>
+<contactref element="A04" pad="S2"/>
+<wire x1="359.918" y1="217.043" x2="360.3625" y2="217.4875" width="0.254" layer="16"/>
 </signal>
 <signal name="I/!O_BMB_08">
 <contactref element="A03" pad="M2"/>
@@ -32793,74 +32792,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="!RDD_00">
 <contactref element="A21" pad="V2"/>
-</signal>
-<signal name="NC">
-<contactref element="AB01" pad="BN1"/>
-<contactref element="AB01" pad="BP1"/>
-<contactref element="A04" pad="T2"/>
-<contactref element="A04" pad="V2"/>
-<contactref element="A05" pad="T2"/>
-<contactref element="A05" pad="V2"/>
-<contactref element="A24" pad="A2"/>
-<contactref element="A24" pad="B2"/>
-<contactref element="A26" pad="D1"/>
-<contactref element="A05" pad="E2"/>
-<contactref element="A05" pad="H2"/>
-<contactref element="D05" pad="T2"/>
-<contactref element="D05" pad="V2"/>
-<contactref element="D04" pad="V2"/>
-<contactref element="D04" pad="T2"/>
-<contactref element="D05" pad="E2"/>
-<contactref element="D05" pad="H2"/>
-<contactref element="A24" pad="J2"/>
-<contactref element="C07" pad="U2"/>
-<contactref element="C07" pad="S2"/>
-<contactref element="C07" pad="T2"/>
-<contactref element="C07" pad="P1"/>
-<contactref element="C07" pad="N1"/>
-<contactref element="C07" pad="R1"/>
-<contactref element="B22" pad="R2"/>
-<contactref element="D15" pad="M2"/>
-<contactref element="D15" pad="R2"/>
-<contactref element="D15" pad="T2"/>
-<contactref element="D15" pad="P2"/>
-<contactref element="D14" pad="U2"/>
-<contactref element="D14" pad="S2"/>
-<contactref element="D14" pad="R2"/>
-<contactref element="D14" pad="P2"/>
-<contactref element="D14" pad="N2"/>
-<contactref element="A21" pad="M2"/>
-<contactref element="A21" pad="L2"/>
-<contactref element="A21" pad="H2"/>
-<contactref element="B20" pad="H2"/>
-<contactref element="B20" pad="M2"/>
-<contactref element="B20" pad="L2"/>
-<contactref element="A20" pad="L2"/>
-<contactref element="A20" pad="M2"/>
-<contactref element="A20" pad="H2"/>
-<contactref element="B18" pad="H2"/>
-<contactref element="B18" pad="M2"/>
-<contactref element="B18" pad="L2"/>
-<contactref element="A18" pad="L2"/>
-<contactref element="A18" pad="H2"/>
-<contactref element="A18" pad="M2"/>
-<contactref element="B05" pad="L2"/>
-<contactref element="C02" pad="S2"/>
-<contactref element="C02" pad="P2"/>
-<contactref element="C03" pad="P2"/>
-<contactref element="C03" pad="S2"/>
-<contactref element="C03" pad="U2"/>
-<contactref element="D14" pad="D1"/>
-<contactref element="D14" pad="B1"/>
-<contactref element="D14" pad="E1"/>
-<contactref element="D14" pad="F1"/>
-<contactref element="D14" pad="J1"/>
-<polygon width="0.254" layer="8" orphans="yes">
-<vertex x="-0.0358" y="0.0126"/>
-<vertex x="406.4204" y="0.0126"/>
-<vertex x="406.4204" y="266.7001"/>
-<vertex x="-0.0358" y="266.7001"/>
-</polygon>
 </signal>
 <signal name="+11V">
 <contactref element="AB01" pad="BM2"/>

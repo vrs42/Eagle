@@ -16368,46 +16368,64 @@ high speed (Philips)</description>
 </net>
 <net name="B17V1" class="0">
 <segment>
-<wire x1="50.8" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="200.66" x2="40.64" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="147.32" x2="40.64" y2="147.32" width="0.1524" layer="91"/>
-<label x="40.64" y="228.6" size="1.778" layer="95"/>
-<label x="40.64" y="200.66" size="1.778" layer="95"/>
-<label x="40.64" y="175.26" size="1.778" layer="95"/>
-<label x="40.64" y="147.32" size="1.778" layer="95"/>
 <pinref part="E2" gate="B" pin="CLR"/>
+<wire x1="50.8" y1="228.6" x2="40.64" y2="228.6" width="0.1524" layer="91"/>
+<label x="40.64" y="228.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="50.8" y1="200.66" x2="40.64" y2="200.66" width="0.1524" layer="91"/>
+<label x="40.64" y="200.66" size="1.778" layer="95"/>
 <pinref part="E2" gate="A" pin="CLR"/>
-<pinref part="E5" gate="B" pin="CLR"/>
+</segment>
+<segment>
+<pinref part="E18" gate="B" pin="CLR"/>
+<wire x1="132.08" y1="175.26" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
+<label x="132.08" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="132.08" y1="228.6" x2="142.24" y2="228.6" width="0.1524" layer="91"/>
+<label x="132.08" y="228.6" size="1.778" layer="95"/>
+<pinref part="E17" gate="B" pin="CLR"/>
+</segment>
+<segment>
+<pinref part="E42" gate="B" pin="CLR"/>
+<wire x1="226.06" y1="175.26" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
+<label x="226.06" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="226.06" y1="228.6" x2="236.22" y2="228.6" width="0.1524" layer="91"/>
+<label x="226.06" y="228.6" size="1.778" layer="95"/>
+<pinref part="E43" gate="B" pin="CLR"/>
+</segment>
+<segment>
+<wire x1="50.8" y1="147.32" x2="40.64" y2="147.32" width="0.1524" layer="91"/>
+<label x="40.64" y="147.32" size="1.778" layer="95"/>
 <pinref part="E5" gate="A" pin="CLR"/>
 </segment>
 <segment>
-<wire x1="132.08" y1="175.26" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="E5" gate="B" pin="CLR"/>
+<label x="40.64" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
 <wire x1="132.08" y1="200.66" x2="142.24" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="228.6" x2="142.24" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
-<label x="132.08" y="175.26" size="1.778" layer="95"/>
-<label x="132.08" y="228.6" size="1.778" layer="95"/>
-<label x="132.08" y="200.66" size="1.778" layer="95"/>
-<label x="132.08" y="147.32" size="1.778" layer="95"/>
-<pinref part="E17" gate="B" pin="CLR"/>
 <pinref part="E17" gate="A" pin="CLR"/>
-<pinref part="E18" gate="B" pin="CLR"/>
+<label x="132.08" y="200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="132.08" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="E18" gate="A" pin="CLR"/>
+<label x="132.08" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="226.06" y1="147.32" x2="236.22" y2="147.32" width="0.1524" layer="91"/>
+<label x="226.06" y="147.32" size="1.778" layer="95"/>
+<pinref part="E42" gate="A" pin="CLR"/>
 </segment>
 <segment>
 <wire x1="226.06" y1="200.66" x2="236.22" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="228.6" x2="236.22" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="175.26" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="147.32" x2="236.22" y2="147.32" width="0.1524" layer="91"/>
-<label x="226.06" y="200.66" size="1.778" layer="95"/>
-<label x="226.06" y="147.32" size="1.778" layer="95"/>
-<label x="226.06" y="175.26" size="1.778" layer="95"/>
-<label x="226.06" y="228.6" size="1.778" layer="95"/>
-<pinref part="E43" gate="B" pin="CLR"/>
 <pinref part="E43" gate="A" pin="CLR"/>
-<pinref part="E42" gate="B" pin="CLR"/>
-<pinref part="E42" gate="A" pin="CLR"/>
+<label x="226.06" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D01SELECTH" class="0">
@@ -16484,15 +16502,19 @@ high speed (Philips)</description>
 </net>
 <net name="B17S1" class="0">
 <segment>
-<wire x1="66.04" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
 <label x="15.24" y="78.74" size="1.778" layer="95"/>
-<label x="66.04" y="78.74" size="1.778" layer="95"/>
-<label x="129.54" y="78.74" size="1.778" layer="95"/>
-<pinref part="E39" gate="B" pin="I0"/>
-<pinref part="E39" gate="C" pin="I0"/>
 <pinref part="E39" gate="A" pin="I0"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
+<label x="66.04" y="78.74" size="1.778" layer="95"/>
+<pinref part="E39" gate="B" pin="I0"/>
+</segment>
+<segment>
+<wire x1="129.54" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="E39" gate="C" pin="I0"/>
+<label x="129.54" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D01LOADMDL" class="0">
@@ -19184,6 +19206,77 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,33.02,123.127,E38,B,G,,,"/>
+<approved hash="114,1,33.02,123.127,E38,B,A1,,,"/>
+<approved hash="114,1,33.02,123.127,E38,B,A2,,,"/>
+<approved hash="114,1,33.02,123.127,E38,B,A3,,,"/>
+<approved hash="114,1,33.02,123.127,E38,B,A4,,,"/>
+<approved hash="206,4,43.18,149.86,N$10,,,,,"/>
+<approved hash="206,4,43.18,149.86,N$10,,,,,"/>
+<approved hash="206,4,154.94,144.78,N$11,,,,,"/>
+<approved hash="206,4,154.94,144.78,N$11,,,,,"/>
+<approved hash="206,4,43.18,129.54,N$31,,,,,"/>
+<approved hash="206,4,43.18,129.54,N$31,,,,,"/>
+<approved hash="206,4,154.94,149.86,N$38,,,,,"/>
+<approved hash="206,4,154.94,149.86,N$38,,,,,"/>
+<approved hash="206,4,154.94,139.7,N$48,,,,,"/>
+<approved hash="206,4,154.94,139.7,N$48,,,,,"/>
+<approved hash="206,4,154.94,160.02,N$49,,,,,"/>
+<approved hash="206,4,154.94,160.02,N$49,,,,,"/>
+<approved hash="206,4,154.94,154.94,N$50,,,,,"/>
+<approved hash="206,4,154.94,154.94,N$50,,,,,"/>
+<approved hash="206,4,43.18,144.78,N$51,,,,,"/>
+<approved hash="206,4,43.18,144.78,N$51,,,,,"/>
+<approved hash="206,4,43.18,139.7,N$52,,,,,"/>
+<approved hash="206,4,43.18,139.7,N$52,,,,,"/>
+<approved hash="206,4,43.18,134.62,N$53,,,,,"/>
+<approved hash="206,4,43.18,134.62,N$53,,,,,"/>
+<approved hash="112,4,33.02,161.29,,,,,,"/>
+<approved hash="112,4,41.91,149.86,,,,,,"/>
+<approved hash="112,4,41.91,144.78,,,,,,"/>
+<approved hash="112,4,41.91,139.7,,,,,,"/>
+<approved hash="112,4,41.91,129.54,,,,,,"/>
+<approved hash="112,4,41.91,134.62,,,,,,"/>
+<approved hash="112,4,144.78,128.27,,,,,,"/>
+<approved hash="112,4,153.67,139.7,,,,,,"/>
+<approved hash="112,4,153.67,144.78,,,,,,"/>
+<approved hash="112,4,153.67,149.86,,,,,,"/>
+<approved hash="112,4,153.67,160.02,,,,,,"/>
+<approved hash="112,4,153.67,154.94,,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME7,,,,,"/>
+<approved hash="113,1,144.78,133.155,H01/H20,,,,,"/>
+<approved hash="113,1,187.96,133.155,H02/H21,,,,,"/>
+<approved hash="113,1,233.68,133.155,H03/H22,,,,,"/>
+<approved hash="113,1,279.4,133.155,H04/H23,,,,,"/>
+<approved hash="113,1,320.04,133.155,H05/H24,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME6,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,4,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,4,33.02,106.811,JP1,,,,,"/>
+<approved hash="113,4,33.02,76.3312,JP3,,,,,"/>
+<approved hash="113,4,33.02,92.8412,JP2,,,,,"/>
+<approved hash="113,4,78.74,42.0412,JP4,,,,,"/>
+<approved hash="113,5,61.849,236.22,U$1,,,,,"/>
+<approved hash="113,5,194.206,131.976,FRAME8,,,,,"/>
+<approved hash="113,5,28.0493,41.8126,PAD12,,,,,"/>
+<approved hash="113,5,48.1507,39.4674,PAD13,,,,,"/>
+<approved hash="113,5,28.0493,24.0326,PAD14,,,,,"/>
+<approved hash="113,5,48.1507,21.6874,PAD15,,,,,"/>
+<approved hash="113,5,61.0693,44.3526,PAD27,,,,,"/>
+<approved hash="113,5,61.0693,41.8126,PAD28,,,,,"/>
+<approved hash="113,5,61.0693,39.2726,PAD29,,,,,"/>
+<approved hash="113,5,86.2507,39.4674,PAD30,,,,,"/>
+<approved hash="113,5,61.0693,24.0326,PAD31,,,,,"/>
+<approved hash="113,5,61.0693,18.9526,PAD32,,,,,"/>
+<approved hash="113,5,86.2507,19.1474,PAD33,,,,,"/>
+<approved hash="113,5,96.6293,44.3526,PAD34,,,,,"/>
+<approved hash="113,5,96.6293,39.2726,PAD35,,,,,"/>
+<approved hash="113,5,121.811,39.4674,PAD36,,,,,"/>
+<approved hash="113,5,96.6293,24.0326,PAD42,,,,,"/>
+<approved hash="113,5,96.6293,18.9526,PAD43,,,,,"/>
+<approved hash="113,5,121.811,19.1474,PAD44,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

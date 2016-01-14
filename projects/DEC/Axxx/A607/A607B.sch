@@ -1288,6 +1288,34 @@ DIN A3, landscape with extra doc field</description>
 <rectangle x1="-10.8204" y1="-0.4064" x2="-8.89" y2="0.4064" layer="21"/>
 <rectangle x1="8.89" y1="-0.4064" x2="10.8204" y2="0.4064" layer="21"/>
 </package>
+<package name="0414/20">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+type 0414, grid 15 mm</description>
+<wire x1="10.16" y1="0" x2="6.604" y2="0" width="0.8128" layer="51"/>
+<wire x1="-10.16" y1="0" x2="-6.604" y2="0" width="0.8128" layer="51"/>
+<wire x1="-6.096" y1="1.905" x2="-5.842" y2="2.159" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-6.096" y1="-1.905" x2="-5.842" y2="-2.159" width="0.1524" layer="21" curve="90"/>
+<wire x1="5.842" y1="-2.159" x2="6.096" y2="-1.905" width="0.1524" layer="21" curve="90"/>
+<wire x1="5.842" y1="2.159" x2="6.096" y2="1.905" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-6.096" y1="-1.905" x2="-6.096" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-5.842" y1="2.159" x2="-4.953" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="2.032" x2="-4.953" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-5.842" y1="-2.159" x2="-4.953" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-2.032" x2="-4.953" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="2.032" x2="4.953" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="2.032" x2="-4.826" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="-2.032" x2="4.953" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="-2.032" x2="-4.826" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="5.842" y1="2.159" x2="4.953" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="5.842" y1="-2.159" x2="4.953" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="-1.905" x2="6.096" y2="1.905" width="0.1524" layer="21"/>
+<pad name="1" x="-10.16" y="0" drill="1.016" shape="octagon"/>
+<pad name="2" x="10.16" y="0" drill="1.016" shape="octagon"/>
+<text x="-6.096" y="2.5654" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.318" y="-0.5842" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="6.096" y1="-0.4064" x2="6.5024" y2="0.4064" layer="21"/>
+<rectangle x1="-6.5024" y1="-0.4064" x2="-6.096" y2="0.4064" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DEVICE">
@@ -1541,25 +1569,17 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="dec-m">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
+<deviceset name="R-US_0414/20" prefix="R" uservalue="yes">
+<description>0.8" Resistor</description>
 <gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
+<gate name="G$1" symbol="R-US_" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="0414/20">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -16177,16 +16197,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="E5" library="74xx-us" deviceset="74*74" device="N" technology="S" value="7474N"/>
 <part name="U$1" library="dec-con" deviceset="OUTLINE-*" device="DOUBLE"/>
 <part name="U$2" library="dec-con" deviceset="DOUBLE" device=""/>
-<part name="U$3" library="dec-m" deviceset="NC" device=""/>
-<part name="U$4" library="dec-m" deviceset="NC" device=""/>
-<part name="U$5" library="dec-m" deviceset="NC" device=""/>
-<part name="U$6" library="dec-m" deviceset="NC" device=""/>
-<part name="U$7" library="dec-m" deviceset="NC" device=""/>
-<part name="U$8" library="dec-m" deviceset="NC" device=""/>
-<part name="U$9" library="dec-m" deviceset="NC" device=""/>
-<part name="U$10" library="dec-m" deviceset="NC" device=""/>
-<part name="U$11" library="dec-m" deviceset="NC" device=""/>
-<part name="U$12" library="dec-m" deviceset="NC" device=""/>
 <part name="D1" library="diode" deviceset="DIODE-" device="DO35-10" value="D664"/>
 <part name="D2" library="diode" deviceset="DIODE-" device="DO35-10" value="D664"/>
 <part name="D3" library="diode" deviceset="DIODE-" device="DO35-10" value="D664"/>
@@ -16302,8 +16312,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="R50" library="rcl" deviceset="R-US_" device="0207/15" value="2000"/>
 <part name="R49" library="rcl" deviceset="R-US_" device="0207/15" value="4000"/>
 <part name="R47" library="rcl" deviceset="R-US_" device="0207/15" value="8000"/>
-<part name="R33" library="rcl" deviceset="R-US_" device="0309/20" value="1024000"/>
-<part name="R35" library="rcl" deviceset="R-US_" device="0309/20" value="512000"/>
+<part name="R33" library="dec-con" deviceset="R-US_0414/20" device="" value="1024000"/>
+<part name="R35" library="dec-con" deviceset="R-US_0414/20" device="" value="512000"/>
 <part name="R37" library="rcl" deviceset="R-US_" device="0207/15" value="256000"/>
 <part name="R39" library="rcl" deviceset="R-US_" device="0207/15" value="128000"/>
 <part name="R41" library="rcl" deviceset="R-US_" device="0207/15" value="64000"/>
@@ -16407,16 +16417,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="U$2" gate="BH2" x="261.62" y="50.8" rot="R90"/>
 <instance part="U$2" gate="BE2" x="233.68" y="50.8" rot="R90"/>
 <instance part="U$2" gate="BD2" x="205.74" y="50.8" rot="R90"/>
-<instance part="U$3" gate="NC" x="35.56" y="71.12" rot="R90"/>
-<instance part="U$4" gate="NC" x="63.5" y="71.12" rot="R90"/>
-<instance part="U$5" gate="NC" x="91.44" y="71.12" rot="R90"/>
-<instance part="U$6" gate="NC" x="119.38" y="71.12" rot="R90"/>
-<instance part="U$7" gate="NC" x="147.32" y="71.12" rot="R90"/>
-<instance part="U$8" gate="NC" x="175.26" y="71.12" rot="R90"/>
-<instance part="U$9" gate="NC" x="203.2" y="71.12" rot="R90"/>
-<instance part="U$10" gate="NC" x="231.14" y="71.12" rot="R90"/>
-<instance part="U$11" gate="NC" x="259.08" y="71.12" rot="R90"/>
-<instance part="U$12" gate="NC" x="287.02" y="71.12" rot="R90"/>
 <instance part="D1" gate="G$1" x="297.18" y="99.06" rot="R90"/>
 <instance part="D2" gate="G$1" x="297.18" y="111.76" rot="R90"/>
 <instance part="D3" gate="G$1" x="269.24" y="99.06" rot="R90"/>
@@ -16795,48 +16795,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="E4" gate="B" pin="CLK"/>
 <pinref part="E5" gate="A" pin="CLK"/>
 <pinref part="U$2" gate="AD2" pin="1"/>
-</segment>
-</net>
-<net name="NC" class="0">
-<segment>
-<pinref part="E1" gate="A" pin="PRE"/>
-<pinref part="U$3" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E1" gate="B" pin="PRE"/>
-<pinref part="U$4" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E2" gate="A" pin="PRE"/>
-<pinref part="U$5" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E2" gate="B" pin="PRE"/>
-<pinref part="U$6" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E3" gate="A" pin="PRE"/>
-<pinref part="U$7" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E3" gate="B" pin="PRE"/>
-<pinref part="U$8" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E4" gate="A" pin="PRE"/>
-<pinref part="U$9" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E4" gate="B" pin="PRE"/>
-<pinref part="U$10" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E5" gate="A" pin="PRE"/>
-<pinref part="U$11" gate="NC" pin="NC"/>
-</segment>
-<segment>
-<pinref part="E5" gate="B" pin="PRE"/>
-<pinref part="U$12" gate="NC" pin="NC"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -18037,6 +17995,20 @@ diameter 5 mm, grid 2.54 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,35.56,71.12,E1A,PRE,,,,"/>
+<approved hash="202,1,63.5,71.12,E1B,PRE,,,,"/>
+<approved hash="202,1,91.44,71.12,E2A,PRE,,,,"/>
+<approved hash="202,1,119.38,71.12,E2B,PRE,,,,"/>
+<approved hash="202,1,147.32,71.12,E3A,PRE,,,,"/>
+<approved hash="202,1,175.26,71.12,E3B,PRE,,,,"/>
+<approved hash="202,1,203.2,71.12,E4A,PRE,,,,"/>
+<approved hash="202,1,231.14,71.12,E4B,PRE,,,,"/>
+<approved hash="202,1,259.08,71.12,E5A,PRE,,,,"/>
+<approved hash="202,1,287.02,71.12,E5B,PRE,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,16.129,66.04,U$2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

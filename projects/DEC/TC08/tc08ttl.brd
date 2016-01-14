@@ -15,7 +15,6 @@
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
 <layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="NC$" color="1" fill="2" visible="yes" active="yes"/>
 <layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
 <layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
@@ -2805,14 +2804,14 @@ design rules under a new name.</description>
 <contactref element="C16" pad="H2"/>
 <contactref element="C14" pad="A1"/>
 <contactref element="C14" pad="D1"/>
-<contactref element="C14" pad="K1"/>
 <contactref element="C14" pad="F2"/>
-<wire x1="207.9625" y1="142.875" x2="204.7875" y2="133.35" width="0" layer="19" extent="1-1"/>
-<wire x1="204.7875" y1="133.35" x2="198.4375" y2="127" width="0" layer="19" extent="1-1"/>
-<wire x1="198.4375" y1="127" x2="201.6125" y2="117.475" width="0" layer="19" extent="1-1"/>
+<contactref element="C14" pad="K1"/>
+<wire x1="204.7875" y1="133.35" x2="207.9625" y2="142.875" width="0" layer="19" extent="1-1"/>
+<wire x1="198.4375" y1="127" x2="204.7875" y2="133.35" width="0" layer="19" extent="1-1"/>
+<wire x1="201.6125" y1="117.475" x2="198.4375" y2="127" width="0" layer="19" extent="1-1"/>
 <wire x1="207.9625" y1="117.475" x2="201.6125" y2="117.475" width="0" layer="19" extent="1-1"/>
-<wire x1="198.4375" y1="127" x2="176.2125" y2="123.825" width="0" layer="19" extent="1-1"/>
-<wire x1="201.6125" y1="117.475" x2="195.2625" y2="92.075" width="0" layer="19" extent="1-1"/>
+<wire x1="176.2125" y1="123.825" x2="198.4375" y2="127" width="0" layer="19" extent="1-1"/>
+<wire x1="195.2625" y1="92.075" x2="201.6125" y2="117.475" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="B14" pad="N1"/>
@@ -5578,74 +5577,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="!RDD_00">
 <contactref element="A21" pad="V2"/>
-</signal>
-<signal name="NC">
-<contactref element="AB01" pad="BN1"/>
-<contactref element="AB01" pad="BP1"/>
-<contactref element="A04" pad="T2"/>
-<contactref element="A04" pad="V2"/>
-<contactref element="A05" pad="T2"/>
-<contactref element="A05" pad="V2"/>
-<contactref element="A24" pad="A2"/>
-<contactref element="A24" pad="B2"/>
-<contactref element="A26" pad="D1"/>
-<contactref element="A05" pad="E2"/>
-<contactref element="A05" pad="H2"/>
-<contactref element="D05" pad="T2"/>
-<contactref element="D05" pad="V2"/>
-<contactref element="D04" pad="V2"/>
-<contactref element="D04" pad="T2"/>
-<contactref element="D05" pad="E2"/>
-<contactref element="D05" pad="H2"/>
-<contactref element="A24" pad="J2"/>
-<contactref element="C07" pad="U2"/>
-<contactref element="C07" pad="S2"/>
-<contactref element="C07" pad="T2"/>
-<contactref element="C07" pad="P1"/>
-<contactref element="C07" pad="N1"/>
-<contactref element="C07" pad="R1"/>
-<contactref element="B22" pad="R2"/>
-<contactref element="D15" pad="M2"/>
-<contactref element="D15" pad="R2"/>
-<contactref element="D15" pad="T2"/>
-<contactref element="D15" pad="P2"/>
-<contactref element="D14" pad="U2"/>
-<contactref element="D14" pad="S2"/>
-<contactref element="D14" pad="R2"/>
-<contactref element="D14" pad="P2"/>
-<contactref element="D14" pad="N2"/>
-<contactref element="A21" pad="M2"/>
-<contactref element="A21" pad="L2"/>
-<contactref element="A21" pad="H2"/>
-<contactref element="B20" pad="H2"/>
-<contactref element="B20" pad="M2"/>
-<contactref element="B20" pad="L2"/>
-<contactref element="A20" pad="L2"/>
-<contactref element="A20" pad="M2"/>
-<contactref element="A20" pad="H2"/>
-<contactref element="B18" pad="H2"/>
-<contactref element="B18" pad="M2"/>
-<contactref element="B18" pad="L2"/>
-<contactref element="A18" pad="L2"/>
-<contactref element="A18" pad="H2"/>
-<contactref element="A18" pad="M2"/>
-<contactref element="B05" pad="L2"/>
-<contactref element="C02" pad="S2"/>
-<contactref element="C02" pad="P2"/>
-<contactref element="C03" pad="P2"/>
-<contactref element="C03" pad="S2"/>
-<contactref element="C03" pad="U2"/>
-<contactref element="D14" pad="D1"/>
-<contactref element="D14" pad="B1"/>
-<contactref element="D14" pad="E1"/>
-<contactref element="D14" pad="F1"/>
-<contactref element="D14" pad="J1"/>
-<polygon width="0.254" layer="8" orphans="yes">
-<vertex x="-0.0358" y="0.0126"/>
-<vertex x="414.02" y="0.0126"/>
-<vertex x="414.02" y="298.4501"/>
-<vertex x="-0.0358" y="298.4501"/>
-</polygon>
 </signal>
 <signal name="+11V">
 <contactref element="AB01" pad="BM2"/>
