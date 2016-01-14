@@ -563,6 +563,35 @@
 <vertex x="14.478" y="5.207"/>
 </polygon>
 </package>
+<package name="JP2Q">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-2.159" x2="-2.54" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-0.381" y1="2.54" x2="0" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="0" y1="2.159" x2="0.381" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="2.54" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="2.159" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="2.159" x2="2.54" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-2.159" x2="2.159" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-2.54" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0" y1="-2.159" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0" y1="-2.159" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="2.159" x2="-2.159" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="2.54" x2="-0.381" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-2.159" x2="-2.159" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="-2.54" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="-1.27" drill="0.9144" shape="octagon"/>
+<pad name="2" x="-1.27" y="1.27" drill="0.9144" shape="octagon"/>
+<pad name="3" x="1.27" y="-1.27" drill="0.9144" shape="octagon"/>
+<pad name="4" x="1.27" y="1.27" drill="0.9144" shape="octagon"/>
+<text x="-1.778" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
+<text x="0.762" y="-4.191" size="1.27" layer="21" ratio="10">2</text>
+<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="4.445" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.5748" y1="0.9652" x2="-0.9652" y2="1.5748" layer="51"/>
+<rectangle x1="0.9652" y1="0.9652" x2="1.5748" y2="1.5748" layer="51"/>
+<rectangle x1="0.9652" y1="-1.5748" x2="1.5748" y2="-0.9652" layer="51"/>
+<rectangle x1="-1.5748" y1="-1.5748" x2="-0.9652" y2="-0.9652" layer="51"/>
+</package>
 </packages>
 </library>
 <library name="con-lstb">
@@ -758,39 +787,6 @@
 </package>
 </packages>
 </library>
-<library name="jumper">
-<packages>
-<package name="JP2Q">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<wire x1="-2.54" y1="-2.159" x2="-2.54" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="2.54" x2="0" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="0" y1="2.159" x2="0.381" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="0.381" y1="2.54" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="2.159" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="2.159" x2="2.54" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-2.159" x2="2.159" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-2.54" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="0" y1="-2.159" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="0" y1="-2.159" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="2.159" x2="-2.159" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="2.54" x2="-0.381" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-2.159" x2="-2.159" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="-2.54" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="2" x="1.27" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="3" x="-1.27" y="1.27" drill="0.9144" shape="octagon"/>
-<pad name="4" x="1.27" y="1.27" drill="0.9144" shape="octagon"/>
-<text x="-1.778" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
-<text x="0.762" y="-4.191" size="1.27" layer="21" ratio="10">2</text>
-<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="4.445" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.5748" y1="0.9652" x2="-0.9652" y2="1.5748" layer="51"/>
-<rectangle x1="0.9652" y1="0.9652" x2="1.5748" y2="1.5748" layer="51"/>
-<rectangle x1="0.9652" y1="-1.5748" x2="1.5748" y2="-0.9652" layer="51"/>
-<rectangle x1="-1.5748" y1="-1.5748" x2="-0.9652" y2="-0.9652" layer="51"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -972,212 +968,212 @@ design rules under a new name.</description>
 <elements>
 <element name="U$1" library="dec-con" package="EDGE-CON2" value="" x="0" y="0"/>
 <element name="SV1" library="con-lstb" package="MA18-2" value="" x="22.86" y="31.75" rot="R90"/>
-<element name="P2" library="jumper" package="JP2Q" value="" x="22.86" y="59.69" rot="R90"/>
-<element name="P1" library="jumper" package="JP2Q" value="" x="22.86" y="3.81" rot="R90"/>
+<element name="P2" library="dec-con" package="JP2Q" value="" x="22.86" y="59.69" rot="R90"/>
+<element name="P1" library="dec-con" package="JP2Q" value="" x="22.86" y="3.81" rot="R90"/>
 <element name="U$2" library="dec-con" package="EDGE-CON2" value="" x="0" y="63.5"/>
 <element name="SV2" library="con-lstb" package="MA18-2" value="" x="22.86" y="93.98" rot="R90"/>
-<element name="P3" library="jumper" package="JP2Q" value="" x="22.86" y="121.92" rot="R90"/>
-<element name="P4" library="jumper" package="JP2Q" value="" x="22.86" y="66.04" rot="R90"/>
+<element name="P3" library="dec-con" package="JP2Q" value="" x="22.86" y="121.92" rot="R90"/>
+<element name="P4" library="dec-con" package="JP2Q" value="" x="22.86" y="66.04" rot="R90"/>
 <element name="U$3" library="dec-con" package="EDGE-CON2" value="" x="26.67" y="0"/>
 <element name="SV3" library="con-lstb" package="MA18-2" value="" x="49.53" y="31.75" rot="R90"/>
-<element name="P5" library="jumper" package="JP2Q" value="" x="49.53" y="59.69" rot="R90"/>
-<element name="P6" library="jumper" package="JP2Q" value="" x="49.53" y="3.81" rot="R90"/>
+<element name="P5" library="dec-con" package="JP2Q" value="" x="49.53" y="59.69" rot="R90"/>
+<element name="P6" library="dec-con" package="JP2Q" value="" x="49.53" y="3.81" rot="R90"/>
 <element name="U$4" library="dec-con" package="EDGE-CON2" value="" x="26.67" y="63.5"/>
 <element name="SV4" library="con-lstb" package="MA18-2" value="" x="49.53" y="93.98" rot="R90"/>
-<element name="P7" library="jumper" package="JP2Q" value="" x="49.53" y="121.92" rot="R90"/>
-<element name="P8" library="jumper" package="JP2Q" value="" x="49.53" y="66.04" rot="R90"/>
+<element name="P7" library="dec-con" package="JP2Q" value="" x="49.53" y="121.92" rot="R90"/>
+<element name="P8" library="dec-con" package="JP2Q" value="" x="49.53" y="66.04" rot="R90"/>
 <element name="U$5" library="dec-con" package="EDGE-CON2" value="" x="53.34" y="0"/>
 <element name="SV5" library="con-lstb" package="MA18-2" value="" x="76.2" y="31.75" rot="R90"/>
-<element name="P9" library="jumper" package="JP2Q" value="" x="76.2" y="59.69" rot="R90"/>
-<element name="P10" library="jumper" package="JP2Q" value="" x="76.2" y="3.81" rot="R90"/>
+<element name="P9" library="dec-con" package="JP2Q" value="" x="76.2" y="59.69" rot="R90"/>
+<element name="P10" library="dec-con" package="JP2Q" value="" x="76.2" y="3.81" rot="R90"/>
 <element name="U$6" library="dec-con" package="EDGE-CON2" value="" x="53.34" y="63.5"/>
 <element name="SV6" library="con-lstb" package="MA18-2" value="" x="76.2" y="93.98" rot="R90"/>
-<element name="P11" library="jumper" package="JP2Q" value="" x="76.2" y="121.92" rot="R90"/>
-<element name="P12" library="jumper" package="JP2Q" value="" x="76.2" y="66.04" rot="R90"/>
+<element name="P11" library="dec-con" package="JP2Q" value="" x="76.2" y="121.92" rot="R90"/>
+<element name="P12" library="dec-con" package="JP2Q" value="" x="76.2" y="66.04" rot="R90"/>
 <element name="U$7" library="dec-con" package="EDGE-CON2" value="" x="80.01" y="0"/>
 <element name="SV7" library="con-lstb" package="MA18-2" value="" x="102.87" y="31.75" rot="R90"/>
-<element name="P13" library="jumper" package="JP2Q" value="" x="102.87" y="59.69" rot="R90"/>
-<element name="P14" library="jumper" package="JP2Q" value="" x="102.87" y="3.81" rot="R90"/>
+<element name="P13" library="dec-con" package="JP2Q" value="" x="102.87" y="59.69" rot="R90"/>
+<element name="P14" library="dec-con" package="JP2Q" value="" x="102.87" y="3.81" rot="R90"/>
 <element name="U$8" library="dec-con" package="EDGE-CON2" value="" x="80.01" y="63.5"/>
 <element name="SV8" library="con-lstb" package="MA18-2" value="" x="102.87" y="93.98" rot="R90"/>
-<element name="P15" library="jumper" package="JP2Q" value="" x="102.87" y="121.92" rot="R90"/>
-<element name="P16" library="jumper" package="JP2Q" value="" x="102.87" y="66.04" rot="R90"/>
+<element name="P15" library="dec-con" package="JP2Q" value="" x="102.87" y="121.92" rot="R90"/>
+<element name="P16" library="dec-con" package="JP2Q" value="" x="102.87" y="66.04" rot="R90"/>
 <element name="U$9" library="dec-con" package="EDGE-CON2" value="" x="106.68" y="0"/>
 <element name="SV9" library="con-lstb" package="MA18-2" value="" x="129.54" y="31.75" rot="R90"/>
-<element name="P17" library="jumper" package="JP2Q" value="" x="129.54" y="59.69" rot="R90"/>
-<element name="P18" library="jumper" package="JP2Q" value="" x="129.54" y="3.81" rot="R90"/>
+<element name="P17" library="dec-con" package="JP2Q" value="" x="129.54" y="59.69" rot="R90"/>
+<element name="P18" library="dec-con" package="JP2Q" value="" x="129.54" y="3.81" rot="R90"/>
 <element name="U$10" library="dec-con" package="EDGE-CON2" value="" x="106.68" y="63.5"/>
 <element name="SV10" library="con-lstb" package="MA18-2" value="" x="129.54" y="93.98" rot="R90"/>
-<element name="P19" library="jumper" package="JP2Q" value="" x="129.54" y="121.92" rot="R90"/>
-<element name="P20" library="jumper" package="JP2Q" value="" x="129.54" y="66.04" rot="R90"/>
+<element name="P19" library="dec-con" package="JP2Q" value="" x="129.54" y="121.92" rot="R90"/>
+<element name="P20" library="dec-con" package="JP2Q" value="" x="129.54" y="66.04" rot="R90"/>
 <element name="U$11" library="dec-con" package="EDGE-CON2" value="" x="133.35" y="0"/>
 <element name="SV11" library="con-lstb" package="MA18-2" value="" x="156.21" y="31.75" rot="R90"/>
-<element name="P21" library="jumper" package="JP2Q" value="" x="156.21" y="59.69" rot="R90"/>
-<element name="P22" library="jumper" package="JP2Q" value="" x="156.21" y="3.81" rot="R90"/>
+<element name="P21" library="dec-con" package="JP2Q" value="" x="156.21" y="59.69" rot="R90"/>
+<element name="P22" library="dec-con" package="JP2Q" value="" x="156.21" y="3.81" rot="R90"/>
 <element name="U$12" library="dec-con" package="EDGE-CON2" value="" x="133.35" y="63.5"/>
 <element name="SV12" library="con-lstb" package="MA18-2" value="" x="156.21" y="93.98" rot="R90"/>
-<element name="P23" library="jumper" package="JP2Q" value="" x="156.21" y="121.92" rot="R90"/>
-<element name="P24" library="jumper" package="JP2Q" value="" x="156.21" y="66.04" rot="R90"/>
+<element name="P23" library="dec-con" package="JP2Q" value="" x="156.21" y="121.92" rot="R90"/>
+<element name="P24" library="dec-con" package="JP2Q" value="" x="156.21" y="66.04" rot="R90"/>
 <element name="U$13" library="dec-con" package="EDGE-CON2" value="" x="0" y="127"/>
 <element name="SV13" library="con-lstb" package="MA18-2" value="" x="22.86" y="158.75" rot="R90"/>
-<element name="P25" library="jumper" package="JP2Q" value="" x="22.86" y="186.69" rot="R90"/>
-<element name="P26" library="jumper" package="JP2Q" value="" x="22.86" y="130.81" rot="R90"/>
+<element name="P25" library="dec-con" package="JP2Q" value="" x="22.86" y="186.69" rot="R90"/>
+<element name="P26" library="dec-con" package="JP2Q" value="" x="22.86" y="130.81" rot="R90"/>
 <element name="U$14" library="dec-con" package="EDGE-CON2" value="" x="0" y="190.5"/>
 <element name="SV14" library="con-lstb" package="MA18-2" value="" x="22.86" y="220.98" rot="R90"/>
-<element name="P27" library="jumper" package="JP2Q" value="" x="22.86" y="248.92" rot="R90"/>
-<element name="P28" library="jumper" package="JP2Q" value="" x="22.86" y="193.04" rot="R90"/>
+<element name="P27" library="dec-con" package="JP2Q" value="" x="22.86" y="248.92" rot="R90"/>
+<element name="P28" library="dec-con" package="JP2Q" value="" x="22.86" y="193.04" rot="R90"/>
 <element name="U$15" library="dec-con" package="EDGE-CON2" value="" x="26.67" y="127"/>
 <element name="SV15" library="con-lstb" package="MA18-2" value="" x="49.53" y="158.75" rot="R90"/>
-<element name="P29" library="jumper" package="JP2Q" value="" x="49.53" y="186.69" rot="R90"/>
-<element name="P30" library="jumper" package="JP2Q" value="" x="49.53" y="130.81" rot="R90"/>
+<element name="P29" library="dec-con" package="JP2Q" value="" x="49.53" y="186.69" rot="R90"/>
+<element name="P30" library="dec-con" package="JP2Q" value="" x="49.53" y="130.81" rot="R90"/>
 <element name="U$16" library="dec-con" package="EDGE-CON2" value="" x="26.67" y="190.5"/>
 <element name="SV16" library="con-lstb" package="MA18-2" value="" x="49.53" y="220.98" rot="R90"/>
-<element name="P31" library="jumper" package="JP2Q" value="" x="49.53" y="248.92" rot="R90"/>
-<element name="P32" library="jumper" package="JP2Q" value="" x="49.53" y="193.04" rot="R90"/>
+<element name="P31" library="dec-con" package="JP2Q" value="" x="49.53" y="248.92" rot="R90"/>
+<element name="P32" library="dec-con" package="JP2Q" value="" x="49.53" y="193.04" rot="R90"/>
 <element name="U$17" library="dec-con" package="EDGE-CON2" value="" x="53.34" y="127"/>
 <element name="SV17" library="con-lstb" package="MA18-2" value="" x="76.2" y="158.75" rot="R90"/>
-<element name="P33" library="jumper" package="JP2Q" value="" x="76.2" y="186.69" rot="R90"/>
-<element name="P34" library="jumper" package="JP2Q" value="" x="76.2" y="130.81" rot="R90"/>
+<element name="P33" library="dec-con" package="JP2Q" value="" x="76.2" y="186.69" rot="R90"/>
+<element name="P34" library="dec-con" package="JP2Q" value="" x="76.2" y="130.81" rot="R90"/>
 <element name="U$18" library="dec-con" package="EDGE-CON2" value="" x="53.34" y="190.5"/>
 <element name="SV18" library="con-lstb" package="MA18-2" value="" x="76.2" y="220.98" rot="R90"/>
-<element name="P35" library="jumper" package="JP2Q" value="" x="76.2" y="248.92" rot="R90"/>
-<element name="P36" library="jumper" package="JP2Q" value="" x="76.2" y="193.04" rot="R90"/>
+<element name="P35" library="dec-con" package="JP2Q" value="" x="76.2" y="248.92" rot="R90"/>
+<element name="P36" library="dec-con" package="JP2Q" value="" x="76.2" y="193.04" rot="R90"/>
 <element name="U$19" library="dec-con" package="EDGE-CON2" value="" x="80.01" y="127"/>
 <element name="SV19" library="con-lstb" package="MA18-2" value="" x="102.87" y="158.75" rot="R90"/>
-<element name="P37" library="jumper" package="JP2Q" value="" x="102.87" y="186.69" rot="R90"/>
-<element name="P38" library="jumper" package="JP2Q" value="" x="102.87" y="130.81" rot="R90"/>
+<element name="P37" library="dec-con" package="JP2Q" value="" x="102.87" y="186.69" rot="R90"/>
+<element name="P38" library="dec-con" package="JP2Q" value="" x="102.87" y="130.81" rot="R90"/>
 <element name="U$20" library="dec-con" package="EDGE-CON2" value="" x="80.01" y="190.5"/>
 <element name="SV20" library="con-lstb" package="MA18-2" value="" x="102.87" y="220.98" rot="R90"/>
-<element name="P39" library="jumper" package="JP2Q" value="" x="102.87" y="248.92" rot="R90"/>
-<element name="P40" library="jumper" package="JP2Q" value="" x="102.87" y="193.04" rot="R90"/>
+<element name="P39" library="dec-con" package="JP2Q" value="" x="102.87" y="248.92" rot="R90"/>
+<element name="P40" library="dec-con" package="JP2Q" value="" x="102.87" y="193.04" rot="R90"/>
 <element name="U$21" library="dec-con" package="EDGE-CON2" value="" x="106.68" y="127"/>
 <element name="SV21" library="con-lstb" package="MA18-2" value="" x="129.54" y="158.75" rot="R90"/>
-<element name="P41" library="jumper" package="JP2Q" value="" x="129.54" y="186.69" rot="R90"/>
-<element name="P42" library="jumper" package="JP2Q" value="" x="129.54" y="130.81" rot="R90"/>
+<element name="P41" library="dec-con" package="JP2Q" value="" x="129.54" y="186.69" rot="R90"/>
+<element name="P42" library="dec-con" package="JP2Q" value="" x="129.54" y="130.81" rot="R90"/>
 <element name="U$22" library="dec-con" package="EDGE-CON2" value="" x="106.68" y="190.5"/>
 <element name="SV22" library="con-lstb" package="MA18-2" value="" x="129.54" y="220.98" rot="R90"/>
-<element name="P43" library="jumper" package="JP2Q" value="" x="129.54" y="248.92" rot="R90"/>
-<element name="P44" library="jumper" package="JP2Q" value="" x="129.54" y="193.04" rot="R90"/>
+<element name="P43" library="dec-con" package="JP2Q" value="" x="129.54" y="248.92" rot="R90"/>
+<element name="P44" library="dec-con" package="JP2Q" value="" x="129.54" y="193.04" rot="R90"/>
 <element name="U$23" library="dec-con" package="EDGE-CON2" value="" x="133.35" y="127"/>
 <element name="SV23" library="con-lstb" package="MA18-2" value="" x="156.21" y="158.75" rot="R90"/>
-<element name="P45" library="jumper" package="JP2Q" value="" x="156.21" y="186.69" rot="R90"/>
-<element name="P46" library="jumper" package="JP2Q" value="" x="156.21" y="130.81" rot="R90"/>
+<element name="P45" library="dec-con" package="JP2Q" value="" x="156.21" y="186.69" rot="R90"/>
+<element name="P46" library="dec-con" package="JP2Q" value="" x="156.21" y="130.81" rot="R90"/>
 <element name="U$24" library="dec-con" package="EDGE-CON2" value="" x="133.35" y="190.5"/>
 <element name="SV24" library="con-lstb" package="MA18-2" value="" x="156.21" y="220.98" rot="R90"/>
-<element name="P47" library="jumper" package="JP2Q" value="" x="156.21" y="248.92" rot="R90"/>
-<element name="P48" library="jumper" package="JP2Q" value="" x="156.21" y="193.04" rot="R90"/>
+<element name="P47" library="dec-con" package="JP2Q" value="" x="156.21" y="248.92" rot="R90"/>
+<element name="P48" library="dec-con" package="JP2Q" value="" x="156.21" y="193.04" rot="R90"/>
 <element name="U$25" library="dec-con" package="EDGE-CON2" value="" x="160.02" y="127"/>
 <element name="SV25" library="con-lstb" package="MA18-2" value="" x="182.88" y="158.75" rot="R90"/>
-<element name="P49" library="jumper" package="JP2Q" value="" x="182.88" y="186.69" rot="R90"/>
-<element name="P50" library="jumper" package="JP2Q" value="" x="182.88" y="130.81" rot="R90"/>
+<element name="P49" library="dec-con" package="JP2Q" value="" x="182.88" y="186.69" rot="R90"/>
+<element name="P50" library="dec-con" package="JP2Q" value="" x="182.88" y="130.81" rot="R90"/>
 <element name="U$26" library="dec-con" package="EDGE-CON2" value="" x="160.02" y="190.5"/>
 <element name="SV26" library="con-lstb" package="MA18-2" value="" x="182.88" y="220.98" rot="R90"/>
-<element name="P51" library="jumper" package="JP2Q" value="" x="182.88" y="248.92" rot="R90"/>
-<element name="P52" library="jumper" package="JP2Q" value="" x="182.88" y="193.04" rot="R90"/>
+<element name="P51" library="dec-con" package="JP2Q" value="" x="182.88" y="248.92" rot="R90"/>
+<element name="P52" library="dec-con" package="JP2Q" value="" x="182.88" y="193.04" rot="R90"/>
 <element name="U$27" library="dec-con" package="EDGE-CON2" value="" x="186.69" y="127"/>
 <element name="SV27" library="con-lstb" package="MA18-2" value="" x="209.55" y="158.75" rot="R90"/>
-<element name="P53" library="jumper" package="JP2Q" value="" x="209.55" y="186.69" rot="R90"/>
-<element name="P54" library="jumper" package="JP2Q" value="" x="209.55" y="130.81" rot="R90"/>
+<element name="P53" library="dec-con" package="JP2Q" value="" x="209.55" y="186.69" rot="R90"/>
+<element name="P54" library="dec-con" package="JP2Q" value="" x="209.55" y="130.81" rot="R90"/>
 <element name="U$28" library="dec-con" package="EDGE-CON2" value="" x="186.69" y="190.5"/>
 <element name="SV28" library="con-lstb" package="MA18-2" value="" x="209.55" y="220.98" rot="R90"/>
-<element name="P55" library="jumper" package="JP2Q" value="" x="209.55" y="248.92" rot="R90"/>
-<element name="P56" library="jumper" package="JP2Q" value="" x="209.55" y="193.04" rot="R90"/>
+<element name="P55" library="dec-con" package="JP2Q" value="" x="209.55" y="248.92" rot="R90"/>
+<element name="P56" library="dec-con" package="JP2Q" value="" x="209.55" y="193.04" rot="R90"/>
 <element name="U$29" library="dec-con" package="EDGE-CON2" value="" x="213.36" y="127"/>
 <element name="SV29" library="con-lstb" package="MA18-2" value="" x="236.22" y="158.75" rot="R90"/>
-<element name="P57" library="jumper" package="JP2Q" value="" x="236.22" y="186.69" rot="R90"/>
-<element name="P58" library="jumper" package="JP2Q" value="" x="236.22" y="130.81" rot="R90"/>
+<element name="P57" library="dec-con" package="JP2Q" value="" x="236.22" y="186.69" rot="R90"/>
+<element name="P58" library="dec-con" package="JP2Q" value="" x="236.22" y="130.81" rot="R90"/>
 <element name="U$30" library="dec-con" package="EDGE-CON2" value="" x="213.36" y="190.5"/>
 <element name="SV30" library="con-lstb" package="MA18-2" value="" x="236.22" y="220.98" rot="R90"/>
-<element name="P59" library="jumper" package="JP2Q" value="" x="236.22" y="248.92" rot="R90"/>
-<element name="P60" library="jumper" package="JP2Q" value="" x="236.22" y="193.04" rot="R90"/>
+<element name="P59" library="dec-con" package="JP2Q" value="" x="236.22" y="248.92" rot="R90"/>
+<element name="P60" library="dec-con" package="JP2Q" value="" x="236.22" y="193.04" rot="R90"/>
 <element name="U$31" library="dec-con" package="EDGE-CON2" value="" x="240.03" y="127"/>
 <element name="SV31" library="con-lstb" package="MA18-2" value="" x="262.89" y="158.75" rot="R90"/>
-<element name="P61" library="jumper" package="JP2Q" value="" x="262.89" y="186.69" rot="R90"/>
-<element name="P62" library="jumper" package="JP2Q" value="" x="262.89" y="130.81" rot="R90"/>
+<element name="P61" library="dec-con" package="JP2Q" value="" x="262.89" y="186.69" rot="R90"/>
+<element name="P62" library="dec-con" package="JP2Q" value="" x="262.89" y="130.81" rot="R90"/>
 <element name="U$32" library="dec-con" package="EDGE-CON2" value="" x="240.03" y="190.5"/>
 <element name="SV32" library="con-lstb" package="MA18-2" value="" x="262.89" y="220.98" rot="R90"/>
-<element name="P63" library="jumper" package="JP2Q" value="" x="262.89" y="248.92" rot="R90"/>
-<element name="P64" library="jumper" package="JP2Q" value="" x="262.89" y="193.04" rot="R90"/>
+<element name="P63" library="dec-con" package="JP2Q" value="" x="262.89" y="248.92" rot="R90"/>
+<element name="P64" library="dec-con" package="JP2Q" value="" x="262.89" y="193.04" rot="R90"/>
 <element name="U$33" library="dec-con" package="EDGE-CON2" value="" x="266.7" y="127"/>
 <element name="SV33" library="con-lstb" package="MA18-2" value="" x="289.56" y="158.75" rot="R90"/>
-<element name="P65" library="jumper" package="JP2Q" value="" x="289.56" y="186.69" rot="R90"/>
-<element name="P66" library="jumper" package="JP2Q" value="" x="289.56" y="130.81" rot="R90"/>
+<element name="P65" library="dec-con" package="JP2Q" value="" x="289.56" y="186.69" rot="R90"/>
+<element name="P66" library="dec-con" package="JP2Q" value="" x="289.56" y="130.81" rot="R90"/>
 <element name="U$34" library="dec-con" package="EDGE-CON2" value="" x="266.7" y="190.5"/>
 <element name="SV34" library="con-lstb" package="MA18-2" value="" x="289.56" y="220.98" rot="R90"/>
-<element name="P67" library="jumper" package="JP2Q" value="" x="289.56" y="248.92" rot="R90"/>
-<element name="P68" library="jumper" package="JP2Q" value="" x="289.56" y="193.04" rot="R90"/>
+<element name="P67" library="dec-con" package="JP2Q" value="" x="289.56" y="248.92" rot="R90"/>
+<element name="P68" library="dec-con" package="JP2Q" value="" x="289.56" y="193.04" rot="R90"/>
 <element name="U$35" library="dec-con" package="EDGE-CON2" value="" x="293.37" y="127"/>
 <element name="SV35" library="con-lstb" package="MA18-2" value="" x="316.23" y="158.75" rot="R90"/>
-<element name="P69" library="jumper" package="JP2Q" value="" x="316.23" y="186.69" rot="R90"/>
-<element name="P70" library="jumper" package="JP2Q" value="" x="316.23" y="130.81" rot="R90"/>
+<element name="P69" library="dec-con" package="JP2Q" value="" x="316.23" y="186.69" rot="R90"/>
+<element name="P70" library="dec-con" package="JP2Q" value="" x="316.23" y="130.81" rot="R90"/>
 <element name="U$36" library="dec-con" package="EDGE-CON2" value="" x="293.37" y="190.5"/>
 <element name="SV36" library="con-lstb" package="MA18-2" value="" x="316.23" y="220.98" rot="R90"/>
-<element name="P71" library="jumper" package="JP2Q" value="" x="316.23" y="248.92" rot="R90"/>
-<element name="P72" library="jumper" package="JP2Q" value="" x="316.23" y="193.04" rot="R90"/>
+<element name="P71" library="dec-con" package="JP2Q" value="" x="316.23" y="248.92" rot="R90"/>
+<element name="P72" library="dec-con" package="JP2Q" value="" x="316.23" y="193.04" rot="R90"/>
 <element name="U$37" library="dec-con" package="EDGE-CON2" value="" x="160.02" y="0"/>
 <element name="SV37" library="con-lstb" package="MA18-2" value="" x="182.88" y="31.75" rot="R90"/>
-<element name="P73" library="jumper" package="JP2Q" value="" x="182.88" y="59.69" rot="R90"/>
-<element name="P74" library="jumper" package="JP2Q" value="" x="182.88" y="3.81" rot="R90"/>
+<element name="P73" library="dec-con" package="JP2Q" value="" x="182.88" y="59.69" rot="R90"/>
+<element name="P74" library="dec-con" package="JP2Q" value="" x="182.88" y="3.81" rot="R90"/>
 <element name="U$38" library="dec-con" package="EDGE-CON2" value="" x="160.02" y="63.5"/>
 <element name="SV38" library="con-lstb" package="MA18-2" value="" x="182.88" y="93.98" rot="R90"/>
-<element name="P75" library="jumper" package="JP2Q" value="" x="182.88" y="121.92" rot="R90"/>
-<element name="P76" library="jumper" package="JP2Q" value="" x="182.88" y="66.04" rot="R90"/>
+<element name="P75" library="dec-con" package="JP2Q" value="" x="182.88" y="121.92" rot="R90"/>
+<element name="P76" library="dec-con" package="JP2Q" value="" x="182.88" y="66.04" rot="R90"/>
 <element name="U$39" library="dec-con" package="EDGE-CON2" value="" x="186.69" y="0"/>
 <element name="SV39" library="con-lstb" package="MA18-2" value="" x="209.55" y="31.75" rot="R90"/>
-<element name="P77" library="jumper" package="JP2Q" value="" x="209.55" y="59.69" rot="R90"/>
-<element name="P78" library="jumper" package="JP2Q" value="" x="209.55" y="3.81" rot="R90"/>
+<element name="P77" library="dec-con" package="JP2Q" value="" x="209.55" y="59.69" rot="R90"/>
+<element name="P78" library="dec-con" package="JP2Q" value="" x="209.55" y="3.81" rot="R90"/>
 <element name="U$40" library="dec-con" package="EDGE-CON2" value="" x="186.69" y="63.5"/>
 <element name="SV40" library="con-lstb" package="MA18-2" value="" x="209.55" y="93.98" rot="R90"/>
-<element name="P79" library="jumper" package="JP2Q" value="" x="209.55" y="121.92" rot="R90"/>
-<element name="P80" library="jumper" package="JP2Q" value="" x="209.55" y="66.04" rot="R90"/>
+<element name="P79" library="dec-con" package="JP2Q" value="" x="209.55" y="121.92" rot="R90"/>
+<element name="P80" library="dec-con" package="JP2Q" value="" x="209.55" y="66.04" rot="R90"/>
 <element name="U$41" library="dec-con" package="EDGE-CON2" value="" x="213.36" y="0"/>
 <element name="SV41" library="con-lstb" package="MA18-2" value="" x="236.22" y="31.75" rot="R90"/>
-<element name="P81" library="jumper" package="JP2Q" value="" x="236.22" y="59.69" rot="R90"/>
-<element name="P82" library="jumper" package="JP2Q" value="" x="236.22" y="3.81" rot="R90"/>
+<element name="P81" library="dec-con" package="JP2Q" value="" x="236.22" y="59.69" rot="R90"/>
+<element name="P82" library="dec-con" package="JP2Q" value="" x="236.22" y="3.81" rot="R90"/>
 <element name="U$42" library="dec-con" package="EDGE-CON2" value="" x="213.36" y="63.5"/>
 <element name="SV42" library="con-lstb" package="MA18-2" value="" x="236.22" y="93.98" rot="R90"/>
-<element name="P83" library="jumper" package="JP2Q" value="" x="236.22" y="121.92" rot="R90"/>
-<element name="P84" library="jumper" package="JP2Q" value="" x="236.22" y="66.04" rot="R90"/>
+<element name="P83" library="dec-con" package="JP2Q" value="" x="236.22" y="121.92" rot="R90"/>
+<element name="P84" library="dec-con" package="JP2Q" value="" x="236.22" y="66.04" rot="R90"/>
 <element name="U$43" library="dec-con" package="EDGE-CON2" value="" x="240.03" y="0"/>
 <element name="SV43" library="con-lstb" package="MA18-2" value="" x="262.89" y="31.75" rot="R90"/>
-<element name="P85" library="jumper" package="JP2Q" value="" x="262.89" y="59.69" rot="R90"/>
-<element name="P86" library="jumper" package="JP2Q" value="" x="262.89" y="3.81" rot="R90"/>
+<element name="P85" library="dec-con" package="JP2Q" value="" x="262.89" y="59.69" rot="R90"/>
+<element name="P86" library="dec-con" package="JP2Q" value="" x="262.89" y="3.81" rot="R90"/>
 <element name="U$44" library="dec-con" package="EDGE-CON2" value="" x="240.03" y="63.5"/>
 <element name="SV44" library="con-lstb" package="MA18-2" value="" x="262.89" y="93.98" rot="R90"/>
-<element name="P87" library="jumper" package="JP2Q" value="" x="262.89" y="121.92" rot="R90"/>
-<element name="P88" library="jumper" package="JP2Q" value="" x="262.89" y="66.04" rot="R90"/>
+<element name="P87" library="dec-con" package="JP2Q" value="" x="262.89" y="121.92" rot="R90"/>
+<element name="P88" library="dec-con" package="JP2Q" value="" x="262.89" y="66.04" rot="R90"/>
 <element name="U$45" library="dec-con" package="EDGE-CON2" value="" x="266.7" y="0"/>
 <element name="SV45" library="con-lstb" package="MA18-2" value="" x="289.56" y="31.75" rot="R90"/>
-<element name="P89" library="jumper" package="JP2Q" value="" x="289.56" y="59.69" rot="R90"/>
-<element name="P90" library="jumper" package="JP2Q" value="" x="289.56" y="3.81" rot="R90"/>
+<element name="P89" library="dec-con" package="JP2Q" value="" x="289.56" y="59.69" rot="R90"/>
+<element name="P90" library="dec-con" package="JP2Q" value="" x="289.56" y="3.81" rot="R90"/>
 <element name="U$46" library="dec-con" package="EDGE-CON2" value="" x="266.7" y="63.5"/>
 <element name="SV46" library="con-lstb" package="MA18-2" value="" x="289.56" y="93.98" rot="R90"/>
-<element name="P91" library="jumper" package="JP2Q" value="" x="289.56" y="121.92" rot="R90"/>
-<element name="P92" library="jumper" package="JP2Q" value="" x="289.56" y="66.04" rot="R90"/>
+<element name="P91" library="dec-con" package="JP2Q" value="" x="289.56" y="121.92" rot="R90"/>
+<element name="P92" library="dec-con" package="JP2Q" value="" x="289.56" y="66.04" rot="R90"/>
 <element name="U$47" library="dec-con" package="EDGE-CON2" value="" x="293.37" y="0"/>
 <element name="SV47" library="con-lstb" package="MA18-2" value="" x="316.23" y="31.75" rot="R90"/>
-<element name="P93" library="jumper" package="JP2Q" value="" x="316.23" y="59.69" rot="R90"/>
-<element name="P94" library="jumper" package="JP2Q" value="" x="316.23" y="3.81" rot="R90"/>
+<element name="P93" library="dec-con" package="JP2Q" value="" x="316.23" y="59.69" rot="R90"/>
+<element name="P94" library="dec-con" package="JP2Q" value="" x="316.23" y="3.81" rot="R90"/>
 <element name="U$48" library="dec-con" package="EDGE-CON2" value="" x="293.37" y="63.5"/>
 <element name="SV48" library="con-lstb" package="MA18-2" value="" x="316.23" y="93.98" rot="R90"/>
-<element name="P95" library="jumper" package="JP2Q" value="" x="316.23" y="121.92" rot="R90"/>
-<element name="P96" library="jumper" package="JP2Q" value="" x="316.23" y="66.04" rot="R90"/>
+<element name="P95" library="dec-con" package="JP2Q" value="" x="316.23" y="121.92" rot="R90"/>
+<element name="P96" library="dec-con" package="JP2Q" value="" x="316.23" y="66.04" rot="R90"/>
 <element name="U$49" library="dec-con" package="EDGE-CON2" value="" x="320.04" y="190.5"/>
 <element name="SV49" library="con-lstb" package="MA18-2" value="" x="342.9" y="222.25" rot="R90"/>
-<element name="P97" library="jumper" package="JP2Q" value="" x="342.9" y="250.19" rot="R90"/>
-<element name="P98" library="jumper" package="JP2Q" value="" x="342.9" y="194.31" rot="R90"/>
+<element name="P97" library="dec-con" package="JP2Q" value="" x="342.9" y="250.19" rot="R90"/>
+<element name="P98" library="dec-con" package="JP2Q" value="" x="342.9" y="194.31" rot="R90"/>
 <element name="U$50" library="dec-con" package="EDGE-CON2" value="" x="320.04" y="127"/>
 <element name="SV50" library="con-lstb" package="MA18-2" value="" x="342.9" y="158.75" rot="R90"/>
-<element name="P99" library="jumper" package="JP2Q" value="" x="342.9" y="186.69" rot="R90"/>
-<element name="P100" library="jumper" package="JP2Q" value="" x="342.9" y="130.81" rot="R90"/>
+<element name="P99" library="dec-con" package="JP2Q" value="" x="342.9" y="186.69" rot="R90"/>
+<element name="P100" library="dec-con" package="JP2Q" value="" x="342.9" y="130.81" rot="R90"/>
 <element name="U$51" library="dec-con" package="EDGE-CON2" value="" x="320.04" y="63.5"/>
 <element name="SV51" library="con-lstb" package="MA18-2" value="" x="342.9" y="95.25" rot="R90"/>
-<element name="P101" library="jumper" package="JP2Q" value="" x="342.9" y="123.19" rot="R90"/>
-<element name="P102" library="jumper" package="JP2Q" value="" x="342.9" y="67.31" rot="R90"/>
+<element name="P101" library="dec-con" package="JP2Q" value="" x="342.9" y="123.19" rot="R90"/>
+<element name="P102" library="dec-con" package="JP2Q" value="" x="342.9" y="67.31" rot="R90"/>
 <element name="U$52" library="dec-con" package="EDGE-CON2" value="" x="320.04" y="0"/>
 <element name="SV52" library="con-lstb" package="MA18-2" value="" x="342.9" y="31.75" rot="R90"/>
-<element name="P103" library="jumper" package="JP2Q" value="" x="342.9" y="59.69" rot="R90"/>
-<element name="P104" library="jumper" package="JP2Q" value="" x="342.9" y="3.81" rot="R90"/>
+<element name="P103" library="dec-con" package="JP2Q" value="" x="342.9" y="59.69" rot="R90"/>
+<element name="P104" library="dec-con" package="JP2Q" value="" x="342.9" y="3.81" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$1">
