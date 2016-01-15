@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -53260,17 +53260,23 @@ National Semiconductor</description>
 </devices>
 </deviceset>
 <deviceset name="74*82" prefix="IC">
-<description>2-bit binary full &lt;b&gt;ADDER&lt;/b&gt;</description>
+<description>2-bit binary full &lt;b&gt;ADDER&lt;/b&gt;
+Has the wrong GND pin in other libraries.</description>
 <gates>
 <gate name="A" symbol="7482" x="20.32" y="0"/>
 <gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
-<gate name="1" symbol="PIN" x="10.16" y="-15.24" addlevel="request"/>
-<gate name="2" symbol="PIN" x="10.16" y="-17.78" addlevel="request"/>
-<gate name="3" symbol="PIN" x="10.16" y="-20.32" addlevel="request"/>
+<gate name="6" symbol="PIN" x="10.16" y="-15.24" addlevel="request" swaplevel="1"/>
+<gate name="7" symbol="PIN" x="10.16" y="-20.32" addlevel="request" swaplevel="1"/>
+<gate name="8" symbol="PIN" x="10.16" y="-25.4" addlevel="request" swaplevel="1"/>
+<gate name="9" symbol="PIN" x="10.16" y="-30.48" addlevel="request" swaplevel="1"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
 <connects>
+<connect gate="6" pin="P$2" pad="6"/>
+<connect gate="7" pin="P$2" pad="7"/>
+<connect gate="8" pin="P$2" pad="8"/>
+<connect gate="9" pin="P$2" pad="9"/>
 <connect gate="A" pin="A1" pad="2"/>
 <connect gate="A" pin="A2" pad="14"/>
 <connect gate="A" pin="B1" pad="3"/>
