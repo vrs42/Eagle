@@ -876,8 +876,8 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="75ALS057" prefix="E">
-<description>Qbus Compatible Transceiver</description>
+<deviceset name="SN75ALS057" prefix="E">
+<description>Qbus-likeTransceiver</description>
 <gates>
 <gate name="PWR" symbol="PWRN" x="-25.4" y="0" addlevel="request"/>
 <gate name="G$1" symbol="75057" x="0" y="0"/>
@@ -9717,11 +9717,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="V5" library="supply2" deviceset="VCC" device=""/>
 <part name="C5" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="6.8uf"/>
-<part name="E1" library="dec-con" deviceset="75ALS057" device=""/>
-<part name="E2" library="dec-con" deviceset="75ALS057" device=""/>
+<part name="E1" library="dec-con" deviceset="SN75ALS057" device=""/>
+<part name="E2" library="dec-con" deviceset="SN75ALS057" device=""/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
-<part name="E3" library="dec-con" deviceset="75ALS057" device=""/>
-<part name="E4" library="dec-con" deviceset="75ALS057" device=""/>
+<part name="E3" library="dec-con" deviceset="SN75ALS057" device=""/>
+<part name="E4" library="dec-con" deviceset="SN75ALS057" device=""/>
 <part name="V6" library="supply2" deviceset="VCC" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="V10" library="supply2" deviceset="VCC" device=""/>
@@ -10235,6 +10235,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,123.571,12.7,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

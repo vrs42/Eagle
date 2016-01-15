@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -477,8 +477,8 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="75ALS057" prefix="E">
-<description>Qbus Compatible Transceiver</description>
+<deviceset name="SN75ALS057" prefix="E">
+<description>Qbus-likeTransceiver</description>
 <gates>
 <gate name="PWR" symbol="PWRN" x="-25.4" y="0" addlevel="request"/>
 <gate name="G$1" symbol="75057" x="0" y="0"/>
@@ -12771,18 +12771,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="V5" library="supply2" deviceset="VCC" device=""/>
 <part name="C14" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="6.8uf"/>
-<part name="E2" library="dec-con" deviceset="75ALS057" device=""/>
-<part name="E3" library="dec-con" deviceset="75ALS057" device=""/>
+<part name="E2" library="dec-con" deviceset="SN75ALS057" device=""/>
+<part name="E3" library="dec-con" deviceset="SN75ALS057" device=""/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
-<part name="E11" library="dec-con" deviceset="75ALS057" device=""/>
-<part name="E10" library="dec-con" deviceset="75ALS057" device=""/>
+<part name="E11" library="dec-con" deviceset="SN75ALS057" device=""/>
+<part name="E10" library="dec-con" deviceset="SN75ALS057" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-US" device="050-025X075" value=".01"/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
 <part name="V12" library="supply2" deviceset="GND" device=""/>
-<part name="E7" library="dec-con" deviceset="75ALS057" device=""/>
+<part name="E7" library="dec-con" deviceset="SN75ALS057" device=""/>
 <part name="V13" library="supply2" deviceset="GND" device=""/>
-<part name="E6" library="dec-con" deviceset="75ALS057" device=""/>
+<part name="E6" library="dec-con" deviceset="SN75ALS057" device=""/>
 <part name="V15" library="supply2" deviceset="GND" device=""/>
 <part name="RN1" library="resistor-sil" deviceset="G10R" device="" value="1K"/>
 <part name="SW1" library="special" deviceset="SW_DIP-10" device=""/>
@@ -12806,13 +12806,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C10" library="rcl" deviceset="C-US" device="050-025X075" value=".01"/>
 <part name="C11" library="rcl" deviceset="C-US" device="050-025X075" value=".01"/>
 <part name="C8" library="rcl" deviceset="C-US" device="050-025X075" value=".01"/>
-<part name="E12" library="dec-con" deviceset="75ALS057" device=""/>
+<part name="E12" library="dec-con" deviceset="SN75ALS057" device=""/>
 <part name="V20" library="supply2" deviceset="GND" device=""/>
 <part name="V21" library="supply2" deviceset="VCC" device=""/>
 <part name="E1" library="74xx-jameco" deviceset="74*00" device="N" technology="LS"/>
 <part name="V18" library="supply2" deviceset="GND" device=""/>
 <part name="V22" library="supply2" deviceset="GND" device=""/>
-<part name="E4" library="dec-con" deviceset="75ALS057" device=""/>
+<part name="E4" library="dec-con" deviceset="SN75ALS057" device=""/>
 <part name="V23" library="supply2" deviceset="VCC" device=""/>
 <part name="V24" library="supply2" deviceset="VCC" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
@@ -14141,6 +14141,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,336.931,121.92,U$1,,,,,"/>
+<approved hash="113,1,190.369,25.4,SW1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
