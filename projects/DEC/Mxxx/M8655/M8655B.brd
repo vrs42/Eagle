@@ -2082,8 +2082,8 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <wire x1="-9.271" y1="8.128" x2="-9.271" y2="7.112" width="0.1524" layer="51"/>
 <pad name="1" x="-6.223" y="-5.08" drill="1.016"/>
 <pad name="2" x="6.223" y="-5.08" drill="1.016"/>
-<pad name="GND@1" x="-10.16" y="7.62" drill="0.8128"/>
-<pad name="GND@2" x="10.16" y="7.62" drill="0.8128"/>
+<pad name="M" x="-10.16" y="7.62" drill="0.8128"/>
+<pad name="M1" x="10.16" y="7.62" drill="0.8128"/>
 <text x="-7.62" y="17.272" size="1.778" layer="25" ratio="10">&gt;NAME</text>
 <text x="-6.35" y="2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-7.62" y1="-3.175" x2="-6.985" y2="16.51" layer="21"/>
@@ -2475,9 +2475,9 @@ design rules under a new name.</description>
 <element name="R4" library="rcl" package="0207/10" value="10K" x="241.3" y="73.66" rot="R90"/>
 <element name="R5" library="rcl" package="0207/10" value="10K" x="238.76" y="73.66" rot="R90"/>
 <element name="R6" library="rcl" package="0207/10" value="10K" x="259.08" y="73.66" rot="R90"/>
-<element name="E2" library="74xx-jameco" package="DIL14" value="8242" x="250.19" y="99.06" rot="R270"/>
-<element name="E5" library="74xx-jameco" package="DIL14" value="8242" x="224.79" y="45.72" rot="R270"/>
-<element name="E1" library="74xx-jameco" package="DIL14" value="8242" x="250.19" y="45.72" rot="R270"/>
+<element name="E2" library="74xx-us" package="DIL14" value="8242" x="250.19" y="99.06" rot="R270"/>
+<element name="E5" library="74xx-us" package="DIL14" value="8242" x="224.79" y="45.72" rot="R270"/>
+<element name="E1" library="74xx-us" package="DIL14" value="8242" x="250.19" y="45.72" rot="R270"/>
 <element name="R60" library="rcl" package="0207/10" value="220" x="259.08" y="101.6" rot="R90"/>
 <element name="R61" library="rcl" package="0207/10" value="220" x="241.3" y="101.6" rot="R90"/>
 <element name="E52" library="dec-con" package="DIL14" value="SP380N" x="34.29" y="45.72" rot="R270"/>
@@ -2548,7 +2548,7 @@ design rules under a new name.</description>
 <element name="E35" library="74xx-us" package="DIL14" value="7402N" x="95.25" y="71.12" rot="R270"/>
 <element name="E32" library="74xx-us" package="DIL14" value="7404N" x="115.57" y="127" rot="R270"/>
 <element name="E49" library="74xx-us" package="DIL14" value="7404N" x="54.61" y="127" rot="R270"/>
-<element name="E48" library="74xx-jameco" package="DIL14" value="7440" x="54.61" y="99.06" rot="R270"/>
+<element name="E48" library="74xx-us" package="DIL14" value="7440" x="54.61" y="99.06" rot="R270"/>
 <element name="E37" library="74xx-us" package="DIL14" value="7402N" x="95.25" y="127" rot="R270"/>
 <element name="E13" library="dec-con" package="DIL14" value="N8815" x="196.85" y="127" rot="R270"/>
 <element name="E20" library="74xx-us" package="DIL14" value="7474N" x="156.21" y="127" rot="R270"/>
@@ -2563,7 +2563,7 @@ design rules under a new name.</description>
 <element name="E38" library="74xx-us" package="DIL14" value="7400N" x="95.25" y="154.94" rot="R270"/>
 <element name="E3" library="74xx-us" package="DIL14" value="7400N" x="250.19" y="127" rot="R270"/>
 <element name="R24" library="rcl" package="0207/10" value="1K" x="124.46" y="157.48" rot="R90"/>
-<element name="E28" library="ic-package" package="SOCKET-16" value="" x="135.89" y="181.61" rot="R270"/>
+<element name="E28" library="ic-package" package="SOCKET-16" value="E28-TP" x="135.89" y="181.61" rot="R270"/>
 <element name="Y1B" library="crystal" package="DIL08S" value="5.0688 MHz" x="250.19" y="156.21" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="250.19" y="156.21" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="250.19" y="156.21" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2602,11 +2602,11 @@ design rules under a new name.</description>
 <element name="E30" library="dec-con" package="DIL14" value="SP380N" x="115.57" y="71.12" rot="R270"/>
 <element name="E24" library="dec-con" package="DIL14" value="SP380N" x="135.89" y="71.12" rot="R270"/>
 <element name="R33" library="rcl" package="0207/10" value="1K" x="144.78" y="73.66" rot="R90"/>
-<element name="E26" library="74xx-jameco" package="DIL14" value="7430N" x="135.89" y="127" rot="R270"/>
+<element name="E26" library="74xx-us" package="DIL14" value="7430N" x="135.89" y="127" rot="R270"/>
 <element name="R27" library="rcl" package="0207/10" value="1K" x="180.34" y="83.82" rot="R270"/>
 <element name="E29" library="74xx-us" package="DIL14" value="97401" x="115.57" y="45.72" rot="R270"/>
 <element name="E23" library="74xx-us" package="DIL14" value="97401" x="135.89" y="45.72" rot="R270"/>
-<element name="E6" library="ic-package" package="SOCKET-16" value="" x="224.79" y="97.79" rot="R270"/>
+<element name="E6" library="ic-package" package="SOCKET-16" value="E6-TP" x="224.79" y="97.79" rot="R270"/>
 <element name="FIL" library="jumper" package="10" value="J10MM" x="120.65" y="185.42" rot="SR90"/>
 <element name="R22" library="rcl" package="0207/10" value="10K" x="116.84" y="185.42" rot="R90"/>
 <element name="NB1" library="jumper" package="10" value="J10MM" x="180.34" y="48.26" rot="R90"/>
@@ -2683,7 +2683,12 @@ design rules under a new name.</description>
 <element name="C55" library="rcl" package="C050-025X075" value=".01uF" x="114.3" y="143.51" rot="R180"/>
 <element name="C53" library="rcl" package="C050-025X075" value=".01uF" x="195.58" y="166.37" rot="R180"/>
 <element name="C54" library="rcl" package="C050-025X075" value=".01uF" x="134.62" y="167.64" rot="R180"/>
-<element name="X0" library="crystal" package="HC33U-H" value="" x="233.68" y="181.61" rot="R270"/>
+<element name="X0" library="crystal" package="HC33U-H" value="" x="233.68" y="182.88" rot="R270">
+<attribute name="OC_NEWARK" value="unknown" x="233.68" y="182.88" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="233.68" y="182.88" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="233.68" y="182.88" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="233.68" y="182.88" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="R34" library="rcl" package="0207/10" value="1K" x="259.08" y="129.54" rot="R90"/>
 <element name="R13" library="rcl" package="0207/10" value="10K" x="236.22" y="157.48" rot="R90"/>
 </elements>
@@ -5117,9 +5122,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="RTSDTR">
 <contactref element="E50" pad="6"/>
-<contactref element="J1" pad="Y"/>
 <contactref element="J1" pad="DD"/>
-<wire x1="50.8" y1="149.86" x2="25.4" y2="160.02" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="Y"/>
+<wire x1="25.4" y1="160.02" x2="50.8" y2="149.86" width="0" layer="19" extent="1-1"/>
 <wire x1="22.86" y1="165.1" x2="25.4" y2="160.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$126">
@@ -5287,13 +5292,13 @@ design rules under a new name.</description>
 <signal name="N$148">
 <contactref element="X0" pad="1"/>
 <contactref element="R34" pad="2"/>
-<wire x1="228.6" y1="187.833" x2="259.08" y2="134.62" width="0" layer="19" extent="1-1"/>
+<wire x1="228.6" y1="189.103" x2="259.08" y2="134.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$149">
 <contactref element="X0" pad="2"/>
 <contactref element="R13" pad="1"/>
 <contactref element="R13" pad="2"/>
-<wire x1="228.6" y1="175.387" x2="236.22" y2="162.56" width="0" layer="19" extent="1-1"/>
+<wire x1="228.6" y1="176.657" x2="236.22" y2="162.56" width="0" layer="19" extent="1-1"/>
 <wire x1="236.22" y1="162.56" x2="236.22" y2="152.4" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>

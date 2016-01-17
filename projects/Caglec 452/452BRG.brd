@@ -8420,7 +8420,12 @@ design rules under a new name.</description>
 <element name="C5" library="rcl" package="C075-032X103" value="0.1uF" x="95.25" y="13.97" rot="R270"/>
 <element name="C6" library="rcl" package="C075-032X103" value="0.1uF" x="73.66" y="41.91" rot="R270"/>
 <element name="C7" library="rcl" package="C075-032X103" value="0.1uF" x="52.07" y="43.18" rot="R270"/>
-<element name="Q1" library="crystal" package="HC49U-H" value="2.4576MHz" x="27.94" y="7.62" rot="R90"/>
+<element name="Q1" library="crystal" package="HC49U-H" value="2.4576MHz" x="27.94" y="7.62" rot="R90">
+<attribute name="OC_NEWARK" value="unknown" x="27.94" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="27.94" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="27.94" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="1666973" x="27.94" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="S1" library="switch-dil" package="DIP04S" value="" x="20.32" y="50.8" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="20.32" y="50.8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="20.32" y="50.8" size="1.778" layer="27" rot="R270" display="off"/>

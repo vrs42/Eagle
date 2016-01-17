@@ -1419,66 +1419,6 @@
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
-<packages>
-<package name="DIL20">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="12.7" y1="2.921" x2="-12.7" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="-2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="12.7" y1="2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="2.921" x2="-12.7" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="-2.921" x2="-12.7" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="1.016" x2="-12.7" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="19" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="20" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-13.081" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="-9.779" y="-0.381" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="memory-hitachi">
 <packages>
 <package name="DIL28-3">
@@ -1930,6 +1870,76 @@
 </package>
 </packages>
 </library>
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL14">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="DIL20">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="12.7" y1="2.921" x2="-12.7" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="2.921" x2="-12.7" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-2.921" x2="-12.7" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="1.016" x2="-12.7" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-13.081" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-9.779" y="-0.381" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2114,25 +2124,25 @@ design rules under a new name.</description>
 <element name="E1" library="dec-con" package="DIL16" value="AM26S10" x="224.79" y="34.29" rot="R270"/>
 <element name="E2" library="dec-con" package="DIL16" value="AM26S10" x="160.02" y="36.83" rot="R270"/>
 <element name="E3" library="dec-con" package="DIL16" value="AM26S10" x="26.67" y="36.83" rot="R270"/>
-<element name="IC2" library="74xx-jameco" package="DIL20" value="74HC244N" x="41.91" y="67.31" rot="R270"/>
-<element name="IC3" library="74xx-jameco" package="DIL20" value="74HC244N" x="176.53" y="67.31" rot="R270"/>
-<element name="IC4" library="74xx-jameco" package="DIL20" value="74HC244N" x="240.03" y="67.31" rot="R270"/>
+<element name="IC2" library="74xx-us" package="DIL20" value="74HC244N" x="41.91" y="67.31" rot="R270"/>
+<element name="IC3" library="74xx-us" package="DIL20" value="74HC244N" x="176.53" y="67.31" rot="R270"/>
+<element name="IC4" library="74xx-us" package="DIL20" value="74HC244N" x="240.03" y="67.31" rot="R270"/>
 <element name="IC5" library="dec-con" package="DIL40" value="IM6102" x="139.7" y="52.07" rot="R270"/>
 <element name="IC1" library="dec-con" package="DIL40" value="IM6100" x="116.84" y="52.07" rot="R270"/>
 <element name="E4" library="dec-con" package="DIL16" value="AM26S10" x="58.42" y="36.83" rot="R270"/>
 <element name="E5" library="dec-con" package="DIL16" value="AM26S10" x="176.53" y="36.83" rot="R270"/>
 <element name="E6" library="dec-con" package="DIL16" value="AM26S10" x="240.03" y="34.29" rot="R270"/>
-<element name="IC8" library="74xx-jameco" package="DIL20" value="74HCT373N" x="224.79" y="67.31" rot="R270"/>
-<element name="IC9" library="74xx-jameco" package="DIL20" value="74HCT373N" x="57.15" y="67.31" rot="R270"/>
+<element name="IC8" library="74xx-us" package="DIL20" value="74LS373N" x="224.79" y="67.31" rot="R270"/>
+<element name="IC9" library="74xx-us" package="DIL20" value="74LS373N" x="57.15" y="67.31" rot="R270"/>
 <element name="E7" library="dec-con" package="DIL16" value="AM26S10" x="82.55" y="36.83" rot="R270"/>
-<element name="IC6" library="74xx-jameco" package="DIL14" value="74HCT04N" x="82.55" y="63.5" rot="R270"/>
-<element name="IC7" library="74xx-jameco" package="DIL14" value="74AS02N" x="97.79" y="63.5" rot="R270"/>
+<element name="IC6" library="74xx-us" package="DIL14" value="74LS04N" x="82.55" y="63.5" rot="R270"/>
+<element name="IC7" library="74xx-us" package="DIL14" value="74AS02N" x="97.79" y="63.5" rot="R270"/>
 <element name="E8" library="dec-con" package="DIL16" value="AM26S10" x="97.79" y="36.83" rot="R270"/>
-<element name="IC11" library="74xx-jameco" package="DIL14" value="74HCT08N" x="97.79" y="93.98" rot="R270"/>
-<element name="IC10" library="74xx-jameco" package="DIL14" value="74HCT74N" x="113.03" y="93.98" rot="R270"/>
+<element name="IC11" library="74xx-us" package="DIL14" value="74LS08N" x="97.79" y="93.98" rot="R270"/>
+<element name="IC10" library="74xx-us" package="DIL14" value="74LS74N" x="113.03" y="93.98" rot="R270"/>
 <element name="E9" library="dec-con" package="DIL16" value="AM26S10" x="255.27" y="34.29" rot="R270"/>
-<element name="IC12" library="74xx-jameco" package="DIL20" value="74HCT373N" x="158.75" y="67.31" rot="R270"/>
-<element name="IC13" library="74xx-jameco" package="DIL20" value="74HCT373N" x="158.75" y="97.79" rot="R270"/>
+<element name="IC12" library="74xx-us" package="DIL20" value="74LS373N" x="158.75" y="67.31" rot="R270"/>
+<element name="IC13" library="74xx-us" package="DIL20" value="74LS373N" x="158.75" y="97.79" rot="R270"/>
 <element name="IC16" library="memory" package="DIL28" value="" x="220.98" y="184.15" rot="R270"/>
 <element name="IC17" library="memory" package="DIL28" value="" x="193.04" y="184.15" rot="R270"/>
 <element name="U$3" library="memory-hitachi" package="DIL32" value="628512P" x="165.1" y="181.61" rot="R270"/>
@@ -2155,7 +2165,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="64.77" y="184.15" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="64.77" y="184.15" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="IC18" library="74xx-jameco" package="DIL14" value="74HCT74N" x="49.53" y="175.26" rot="R270"/>
+<element name="IC18" library="74xx-us" package="DIL14" value="74LS74N" x="49.53" y="175.26" rot="R270"/>
 <element name="IC24" library="pal" package="DIL24-3" value="22V10" x="57.15" y="100.33" rot="R270">
 <attribute name="OC_NEWARK" value="97M0480" x="57.15" y="100.33" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="GAL22V10D-7LPN" x="57.15" y="100.33" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2174,9 +2184,9 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="26.67" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="9699740" x="26.67" y="67.31" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="IC21" library="74xx-jameco" package="DIL14" value="74HC05N" x="8.89" y="-11.43"/>
-<element name="IC22" library="74xx-jameco" package="DIL14" value="74HCT74N" x="8.89" y="-31.75"/>
-<element name="IC23" library="74xx-jameco" package="DIL14" value="74AS02N" x="8.89" y="-52.07"/>
+<element name="IC21" library="74xx-us" package="DIL14" value="74HC05N" x="8.89" y="-11.43"/>
+<element name="IC22" library="74xx-us" package="DIL14" value="74LS74N" x="8.89" y="-31.75"/>
+<element name="IC23" library="74xx-us" package="DIL14" value="74AS02N" x="8.89" y="-52.07"/>
 <element name="IC26" library="XILINX" package="PLCC-S44" value="" x="11.43" y="-77.47" rot="R90"/>
 </elements>
 <signals>

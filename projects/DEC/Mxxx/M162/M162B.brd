@@ -546,6 +546,45 @@ grid 15.24 mm, diameter 5 mm</description>
 </package>
 </packages>
 </library>
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL14">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -733,13 +772,13 @@ design rules under a new name.</description>
 <element name="E2" library="74xx-jameco" package="DIL14" value="7420N" x="54.61" y="53.34"/>
 <element name="E4" library="74xx-jameco" package="DIL14" value="7420N" x="82.55" y="38.1"/>
 <element name="E5" library="74xx-jameco" package="DIL14" value="7420N" x="54.61" y="38.1"/>
-<element name="E6" library="74xx-jameco" package="DIL14" value="7420N" x="26.67" y="38.1"/>
+<element name="E6" library="74xx-us" package="DIL14" value="7420N" x="26.67" y="38.1"/>
 <element name="E7" library="74xx-jameco" package="DIL14" value="7420N" x="82.55" y="22.86"/>
 <element name="E8" library="74xx-jameco" package="DIL14" value="7420N" x="54.61" y="22.86"/>
 <element name="E10" library="74xx-jameco" package="DIL14" value="7420N" x="82.55" y="8.89"/>
 <element name="E11" library="74xx-jameco" package="DIL14" value="7420N" x="54.61" y="8.89"/>
-<element name="E3" library="74xx-jameco" package="DIL14" value="7430N" x="26.67" y="53.34"/>
-<element name="E9" library="74xx-jameco" package="DIL14" value="7430N" x="26.67" y="22.86"/>
+<element name="E3" library="74xx-us" package="DIL14" value="7430N" x="26.67" y="53.34"/>
+<element name="E9" library="74xx-us" package="DIL14" value="7430N" x="26.67" y="22.86"/>
 <element name="C1" library="rcl" package="C050-025X075" value=".01uf" x="69.85" y="54.61" rot="R90"/>
 <element name="C2" library="rcl" package="C050-025X075" value=".01uf" x="41.91" y="54.61" rot="R270"/>
 <element name="C3" library="rcl" package="C050-025X075" value=".01uf" x="13.97" y="54.61" rot="R90"/>

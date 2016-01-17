@@ -343,62 +343,6 @@ grid 25.4 mm, diameter 9 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
-<packages>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="pot">
 <packages>
 <package name="SP19L">
@@ -1087,6 +1031,72 @@ grid 25.4 mm, diameter 9 mm</description>
 </package>
 </packages>
 </library>
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL14">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="DIL16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1269,20 +1279,20 @@ design rules under a new name.</description>
 <element name="CONSTANT_WRITE" library="switch" package="255SB" value="" x="224.79" y="49.53"/>
 <element name="WRITE_BUTTON" library="switch" package="255SB" value="MOM" x="224.79" y="58.42"/>
 <element name="R4" library="rcl" package="0207/10" value="1K" x="172.72" y="10.16"/>
-<element name="E10" library="74xx-jameco" package="DIL14" value="74LS00N" x="170.18" y="21.59" rot="R180"/>
-<element name="E11" library="74xx-jameco" package="DIL14" value="74LS74N" x="134.62" y="21.59" rot="R180"/>
+<element name="E10" library="74xx-us" package="DIL14" value="74LS00N" x="170.18" y="21.59" rot="R180"/>
+<element name="E11" library="74xx-us" package="DIL14" value="74LS74N" x="134.62" y="21.59" rot="R180"/>
 <element name="R5" library="rcl" package="0207/10" value="56K" x="172.72" y="50.8" rot="R180"/>
 <element name="R6" library="rcl" package="0207/10" value="56K" x="172.72" y="48.26" rot="R180"/>
 <element name="R7" library="rcl" package="0207/10" value="1K" x="172.72" y="45.72" rot="R180"/>
-<element name="E8" library="74xx-jameco" package="DIL16" value="74LS123N" x="100.33" y="77.47" rot="R180"/>
+<element name="E8" library="74xx-us" package="DIL16" value="74LS123N" x="100.33" y="77.47" rot="R180"/>
 <element name="R2" library="rcl" package="0207/10" value="5.6k*" x="99.06" y="68.58" rot="R180"/>
 <element name="R1" library="pot" package="SP19L" value="10K*" x="24.13" y="67.31"/>
 <element name="C13" library="rcl" package="C075-032X103" value="47pf" x="83.82" y="90.17" rot="R270"/>
 <element name="C12" library="rcl" package="C075-032X103" value="27pf" x="100.33" y="63.5" rot="R180"/>
-<element name="E5" library="74xx-jameco" package="DIL14" value="74LS74N" x="99.06" y="102.87" rot="R180"/>
-<element name="E2" library="74xx-jameco" package="DIL14" value="74LS74N" x="99.06" y="123.19" rot="R180"/>
+<element name="E5" library="74xx-us" package="DIL14" value="74LS74N" x="99.06" y="102.87" rot="R180"/>
+<element name="E2" library="74xx-us" package="DIL14" value="74LS74N" x="99.06" y="123.19" rot="R180"/>
 <element name="R3" library="rcl" package="0207/10" value="1K" x="101.6" y="91.44"/>
-<element name="E7" library="74xx-jameco" package="DIL14" value="74LS00N" x="134.62" y="77.47" rot="R180"/>
+<element name="E7" library="74xx-us" package="DIL14" value="74LS00N" x="134.62" y="77.47" rot="R180"/>
 <element name="R12" library="rcl" package="0207/10" value="330" x="127" y="91.44" rot="R180"/>
 <element name="R13" library="rcl" package="0207/10" value="330" x="127" y="60.96" rot="R180"/>
 <element name="R14" library="rcl" package="0207/10" value="750" x="139.7" y="91.44" rot="R180"/>
@@ -1293,11 +1303,11 @@ design rules under a new name.</description>
 <element name="BIT1" library="switch" package="255SB" value="" x="224.79" y="120.65" rot="R180"/>
 <element name="BIT2" library="switch" package="255SB" value="" x="224.79" y="125.73" rot="R180"/>
 <element name="BIT0" library="switch" package="255SB" value="" x="224.79" y="115.57" rot="R180"/>
-<element name="E4" library="74xx-jameco" package="DIL14" value="" x="134.62" y="102.87" rot="R180"/>
-<element name="E1" library="74xx-jameco" package="DIL14" value="74LS10N" x="134.62" y="123.19" rot="R180"/>
+<element name="E4" library="74xx-us" package="DIL14" value="74LS20N" x="134.62" y="102.87" rot="R180"/>
+<element name="E1" library="74xx-us" package="DIL14" value="74LS10N" x="134.62" y="123.19" rot="R180"/>
 <element name="SECTOR_SELECT" library="switch" package="CK101X12" value="" x="231.14" y="88.9" rot="R270"/>
-<element name="E3" library="74xx-jameco" package="DIL16" value="74LS42N" x="171.45" y="102.87"/>
-<element name="E6" library="74xx-jameco" package="DIL14" value="74LS04N" x="170.18" y="77.47" rot="R180"/>
+<element name="E3" library="74xx-us" package="DIL16" value="74LS42N" x="171.45" y="102.87"/>
+<element name="E6" library="74xx-us" package="DIL14" value="74LS04N" x="170.18" y="77.47" rot="R180"/>
 <element name="R8" library="rcl" package="0207/10" value="1K" x="172.72" y="43.18" rot="R180"/>
 <element name="R9" library="rcl" package="0207/10" value="1K" x="172.72" y="40.64" rot="R180"/>
 <element name="R10" library="rcl" package="0207/10" value="1K" x="172.72" y="38.1" rot="R180"/>

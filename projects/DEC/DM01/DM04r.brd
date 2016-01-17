@@ -318,10 +318,6 @@
 <rectangle x1="21.336" y1="1.016" x2="21.844" y2="1.524" layer="51"/>
 <rectangle x1="23.876" y1="1.016" x2="24.384" y2="1.524" layer="51"/>
 </package>
-</packages>
-</library>
-<library name="74xx-jameco">
-<packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
@@ -397,6 +393,45 @@ type 0207, grid 10 mm</description>
 <text x="-2.2606" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="3.175" y1="-0.3048" x2="4.0386" y2="0.3048" layer="21"/>
 <rectangle x1="-4.0386" y1="-0.3048" x2="-3.175" y2="0.3048" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL14">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -583,17 +618,17 @@ design rules under a new name.</description>
 <element name="C35" library="dec-con" package="DEC40PINV" value="" x="156.21" y="92.71" rot="R270"/>
 <element name="B0" library="dec-con" package="DEC40PINV" value="" x="8.89" y="29.21" rot="R270"/>
 <element name="A0" library="dec-con" package="DEC40PINV" value="" x="8.89" y="92.71" rot="R270"/>
-<element name="IC2" library="74xx-jameco" package="DIL14" value="74F38N" x="87.63" y="12.7" rot="R270"/>
-<element name="IC3" library="74xx-jameco" package="DIL14" value="74F30N" x="52.07" y="35.56" rot="R270"/>
-<element name="IC1" library="74xx-jameco" package="DIL14" value="74F30N" x="87.63" y="35.56" rot="R270"/>
+<element name="IC2" library="dec-con" package="DIL14" value="74F38N" x="87.63" y="12.7" rot="R270"/>
+<element name="IC3" library="74xx-us" package="DIL14" value="74F30N" x="52.07" y="35.56" rot="R270"/>
+<element name="IC1" library="74xx-us" package="DIL14" value="74F30N" x="87.63" y="35.56" rot="R270"/>
 <element name="VCC" library="wirepad" package="2,54/0,8" value="" x="15.24" y="121.92"/>
 <element name="GND" library="wirepad" package="2,54/0,8" value="" x="7.62" y="121.92"/>
-<element name="IC9" library="74xx-jameco" package="DIL14" value="74F38N" x="36.83" y="12.7" rot="R270"/>
-<element name="IC6" library="74xx-jameco" package="DIL14" value="74F04N" x="21.59" y="12.7" rot="R270"/>
-<element name="IC8" library="74xx-jameco" package="DIL14" value="74F38N" x="36.83" y="35.56" rot="R270"/>
-<element name="IC5" library="74xx-jameco" package="DIL14" value="74F04N" x="21.59" y="43.18" rot="R270"/>
-<element name="IC7" library="74xx-jameco" package="DIL14" value="74F38N" x="36.83" y="58.42" rot="R270"/>
-<element name="IC4" library="74xx-jameco" package="DIL14" value="74F38N" x="52.07" y="12.7" rot="R270"/>
+<element name="IC9" library="dec-con" package="DIL14" value="74F38N" x="36.83" y="12.7" rot="R270"/>
+<element name="IC6" library="74xx-us" package="DIL14" value="74F04N" x="21.59" y="12.7" rot="R270"/>
+<element name="IC8" library="dec-con" package="DIL14" value="74F38N" x="36.83" y="35.56" rot="R270"/>
+<element name="IC5" library="74xx-us" package="DIL14" value="74F04N" x="21.59" y="43.18" rot="R270"/>
+<element name="IC7" library="dec-con" package="DIL14" value="74F38N" x="36.83" y="58.42" rot="R270"/>
+<element name="IC4" library="dec-con" package="DIL14" value="74F38N" x="52.07" y="12.7" rot="R270"/>
 <element name="R1" library="rcl" package="0207/10" value="" x="45.72" y="60.96" rot="R90"/>
 <element name="VCC1" library="wirepad" package="2,54/0,8" value="" x="2.54" y="-5.08" rot="R90"/>
 <element name="VCC2" library="wirepad" package="2,54/0,8" value="" x="10.16" y="-5.08" rot="R90"/>
@@ -602,7 +637,7 @@ design rules under a new name.</description>
 <element name="VCC5" library="wirepad" package="2,54/0,8" value="" x="33.02" y="-5.08" rot="R90"/>
 <element name="VCC6" library="wirepad" package="2,54/0,8" value="" x="40.64" y="-5.08" rot="R90"/>
 <element name="VCC7" library="wirepad" package="2,54/0,8" value="" x="48.26" y="-5.08" rot="R90"/>
-<element name="IC10" library="74xx-jameco" package="DIL14" value="74F74N" x="12.7" y="-19.05"/>
+<element name="IC10" library="74xx-us" package="DIL14" value="74F74N" x="12.7" y="-19.05"/>
 </elements>
 <signals>
 <signal name="GND">

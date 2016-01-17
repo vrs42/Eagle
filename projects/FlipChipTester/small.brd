@@ -180,7 +180,17 @@ grid 2.54 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="DIL20">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -423,7 +433,7 @@ design rules under a new name.</description>
 <element name="Q5" library="transistor-small-signal" package="SOT54E" value="BS250" x="19.05" y="22.86" rot="R90"/>
 <element name="D1" library="diode" package="DO35Z10" value="1N5229B" x="25.4" y="7.62" rot="R270"/>
 <element name="D2" library="diode" package="DO35Z10" value="1N5229B" x="22.86" y="7.62" rot="R90"/>
-<element name="IC1" library="74xx-jameco" package="DIL20" value="74LS244N" x="8.89" y="21.59" rot="R270"/>
+<element name="IC1" library="74xx-us" package="DIL20" value="74LS244N" x="8.89" y="21.59" rot="R270"/>
 <element name="-5V" library="wirepad" package="1,6/0,9" value="" x="7.62" y="2.54"/>
 <element name="GND" library="wirepad" package="1,6/0,9" value="" x="2.54" y="6.35"/>
 <element name="5V" library="wirepad" package="1,6/0,9" value="" x="2.54" y="2.54"/>

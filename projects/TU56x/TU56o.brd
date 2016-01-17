@@ -654,7 +654,71 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="transistor-pnp">
+<packages>
+<package name="TO5">
+<description>&lt;b&gt;TO-5&lt;/b&gt;</description>
+<wire x1="-4.0386" y1="-3.5306" x2="-3.5052" y2="-2.9972" width="0.1524" layer="21"/>
+<wire x1="-2.9718" y1="-3.5306" x2="-3.5052" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="-3.5052" y1="-4.064" x2="-4.0386" y2="-3.5306" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="4.572" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="3.8608" width="0.0508" layer="21"/>
+<pad name="1" x="0" y="-2.54" drill="0.8128" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="3" x="0" y="2.54" drill="0.8128" shape="octagon"/>
+<text x="-2.54" y="5.08" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="wirepad">
+<packages>
+<package name="2,15/1,0">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<wire x1="1.143" y1="-1.143" x2="1.143" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-1.143" x2="0.635" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.635" x2="1.143" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="1.143" x2="0.635" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.143" x2="-1.143" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="1.143" x2="-1.143" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-0.635" x2="-1.143" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-1.143" x2="-0.635" y2="-1.143" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
+<text x="-1.143" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="1" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="holes">
+<packages>
+<package name="3,2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.2 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.7" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="3.2"/>
+</package>
+</packages>
+</library>
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="DIL16">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -713,60 +777,6 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <pad name="20" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <text x="-13.081" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-9.779" y="-0.381" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="transistor-pnp">
-<packages>
-<package name="TO5">
-<description>&lt;b&gt;TO-5&lt;/b&gt;</description>
-<wire x1="-4.0386" y1="-3.5306" x2="-3.5052" y2="-2.9972" width="0.1524" layer="21"/>
-<wire x1="-2.9718" y1="-3.5306" x2="-3.5052" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="-3.5052" y1="-4.064" x2="-4.0386" y2="-3.5306" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="4.572" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="3.8608" width="0.0508" layer="21"/>
-<pad name="1" x="0" y="-2.54" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="0" y="2.54" drill="0.8128" shape="octagon"/>
-<text x="-2.54" y="5.08" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="wirepad">
-<packages>
-<package name="2,15/1,0">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<wire x1="1.143" y1="-1.143" x2="1.143" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="-1.143" x2="0.635" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="0.635" x2="1.143" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="1.143" x2="0.635" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.143" x2="-1.143" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="1.143" x2="-1.143" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="-0.635" x2="-1.143" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="-1.143" x2="-0.635" y2="-1.143" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
-<text x="-1.143" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="1" size="0.0254" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="holes">
-<packages>
-<package name="3,2">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.2 mm with drill center</description>
-<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
-<circle x="0" y="0" radius="1.7" width="0.2032" layer="21"/>
-<hole x="0" y="0" drill="3.2"/>
 </package>
 </packages>
 </library>
@@ -956,7 +966,12 @@ design rules under a new name.</description>
 <element name="J1" library="sdcards" package="SCDA1A" value="SDCARDMOUSER" x="133.35" y="27.94" rot="MR90"/>
 <element name="R1" library="rcl" package="0207/10" value="" x="109.22" y="15.24" rot="R90"/>
 <element name="R2" library="rcl" package="0207/10" value="0" x="116.84" y="15.24" rot="R90"/>
-<element name="X1" library="crystal" package="HC49/S" value="" x="88.9" y="17.78" rot="R90"/>
+<element name="X1" library="crystal" package="HC49/S" value="" x="88.9" y="17.78" rot="R90">
+<attribute name="OC_NEWARK" value="unknown" x="88.9" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="88.9" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="88.9" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="1667008" x="88.9" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="D1" library="diode" package="DO35Z10" value="3.3V" x="111.76" y="15.24" rot="R90"/>
 <element name="C1" library="rcl" package="C050-025X075" value=".01" x="114.3" y="15.24" rot="R90"/>
 <element name="A2" library="dec-con" package="DEC40PINV" value="" x="39.37" y="95.25"/>
@@ -997,7 +1012,7 @@ design rules under a new name.</description>
 <element name="D23" library="diode" package="DO35Z10" value="3.3V" x="58.42" y="27.94" rot="R180"/>
 <element name="D24" library="diode" package="DO35Z10" value="3.3V" x="58.42" y="25.4" rot="R180"/>
 <element name="D25" library="diode" package="DO35Z10" value="3.3V" x="58.42" y="22.86" rot="R180"/>
-<element name="IC4" library="74xx-jameco" package="DIL16" value="74LS148N" x="77.47" y="21.59" rot="R270"/>
+<element name="IC4" library="74xx-us" package="DIL16" value="74LS148N" x="77.47" y="21.59" rot="R270"/>
 <element name="RN3" library="resistor-sil" package="SIL9" value="" x="68.58" y="20.32" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="68.58" y="20.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="68.58" y="20.32" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1014,8 +1029,8 @@ design rules under a new name.</description>
 <element name="R9" library="rcl" package="0207/10" value="10K" x="35.56" y="45.72"/>
 <element name="D26" library="diode" package="DO35Z10" value="3.3V" x="48.26" y="43.18" rot="R180"/>
 <element name="R11" library="rcl" package="0207/10" value="10K" x="35.56" y="43.18"/>
-<element name="IC5" library="74xx-jameco" package="DIL20" value="74LS244N" x="41.91" y="19.05" rot="R270"/>
-<element name="IC8" library="74xx-jameco" package="DIL20" value="74LS244N" x="26.67" y="19.05" rot="R270"/>
+<element name="IC5" library="74xx-us" package="DIL20" value="74LS244N" x="41.91" y="19.05" rot="R270"/>
+<element name="IC8" library="74xx-us" package="DIL20" value="74LS244N" x="26.67" y="19.05" rot="R270"/>
 <element name="D27" library="diode" package="DO35Z10" value="3.3V" x="10.16" y="25.4" rot="R180"/>
 <element name="D28" library="diode" package="DO35Z10" value="3.3V" x="10.16" y="22.86" rot="R180"/>
 <element name="D29" library="diode" package="DO35Z10" value="3.3V" x="10.16" y="20.32" rot="R180"/>

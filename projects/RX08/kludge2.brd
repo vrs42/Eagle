@@ -106,10 +106,6 @@
 <text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-</packages>
-</library>
-<library name="74xx-jameco">
-<packages>
 <package name="DIL16">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
@@ -583,7 +579,7 @@ design rules under a new name.</description>
 <element name="P26" library="ic-package" package="DIL14" value="" x="8.89" y="48.26" rot="R270"/>
 <element name="P19" library="ic-package" package="DIL16" value="" x="24.13" y="46.99" rot="R270"/>
 <element name="P17" library="ic-package" package="DIL16" value="" x="39.37" y="46.99" rot="R270"/>
-<element name="E17" library="74xx-jameco" package="DIL16" value="74LS76N" x="69.85" y="13.97" rot="R270"/>
+<element name="E17" library="74xx-us" package="DIL16" value="7476N" x="69.85" y="13.97" rot="R270"/>
 <element name="SV1" library="con-lsta" package="FE07" value="" x="58.42" y="48.26" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="58.42" y="48.26" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="58.42" y="48.26" size="1.778" layer="27" rot="R270" display="off"/>
@@ -596,7 +592,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="50.8" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="50.8" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="E16" library="74xx-jameco" package="DIL16" value="74LS195N" x="54.61" y="13.97" rot="R270"/>
+<element name="E16" library="74xx-us" package="DIL16" value="74LS195N" x="54.61" y="13.97" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND" class="1">

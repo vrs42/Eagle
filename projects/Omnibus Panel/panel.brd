@@ -1613,7 +1613,17 @@ type 0207, grid 10 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="DIL20">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -2145,8 +2155,8 @@ design rules under a new name.</description>
 <element name="T88" library="transistor" package="TO92-CBE" value="" x="315.9125" y="109.5375" rot="R270"/>
 <element name="T89" library="transistor" package="TO92-CBE" value="" x="315.9125" y="98.425" rot="R270"/>
 <element name="U$10" library="dec-con" package="EDGE-CON8" value="" x="96.52" y="0"/>
-<element name="IC1" library="74xx-jameco" package="DIL20" value="74HCT373N" x="20.955" y="160.02"/>
-<element name="IC2" library="74xx-jameco" package="DIL20" value="74HCT373N" x="49.53" y="160.3375"/>
+<element name="IC1" library="74xx-us" package="DIL20" value="74LS373N" x="20.955" y="160.02"/>
+<element name="IC2" library="74xx-us" package="DIL20" value="74LS373N" x="49.53" y="160.3375"/>
 </elements>
 <signals>
 <signal name="+15V" class="1">

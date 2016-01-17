@@ -347,41 +347,6 @@
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
-<packages>
-<package name="DIL20">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="12.7" y1="2.921" x2="-12.7" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="-2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="12.7" y1="2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="2.921" x2="-12.7" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="-2.921" x2="-12.7" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="1.016" x2="-12.7" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="19" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="20" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-13.081" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="-9.779" y="-0.381" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="con-lstb">
 <packages>
 <package name="MA10-2">
@@ -492,6 +457,51 @@
 <rectangle x1="11.176" y1="1.016" x2="11.684" y2="1.524" layer="51"/>
 <rectangle x1="8.636" y1="-1.524" x2="9.144" y2="-1.016" layer="51"/>
 <rectangle x1="11.176" y1="-1.524" x2="11.684" y2="-1.016" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL20">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="12.7" y1="2.921" x2="-12.7" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="2.921" x2="12.7" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="2.921" x2="-12.7" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-2.921" x2="-12.7" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="1.016" x2="-12.7" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-13.081" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-9.779" y="-0.381" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -684,17 +694,17 @@ design rules under a new name.</description>
 <element name="U$8" library="dec-con" package="DEC40PINV" value="BC08J" x="128.27" y="118.11"/>
 <element name="U$9" library="dec-con" package="DEC40PINV" value="BC08J" x="128.27" y="87.63"/>
 <element name="U$10" library="dec-con" package="DEC40PINV" value="BC08J" x="128.27" y="57.15"/>
-<element name="IC13" library="74xx-jameco" package="DIL20" value="74S240N" x="227.33" y="163.83"/>
-<element name="IC14" library="74xx-jameco" package="DIL20" value="74S240N" x="191.77" y="163.83"/>
+<element name="IC13" library="74xx-us" package="DIL20" value="74S240N" x="227.33" y="163.83"/>
+<element name="IC14" library="74xx-us" package="DIL20" value="74S240N" x="191.77" y="163.83"/>
 <element name="E16" library="dec-con" package="DIL16" value="AM26S10" x="240.03" y="179.07"/>
 <element name="E17" library="dec-con" package="DIL16" value="AM26S10" x="212.09" y="179.07"/>
 <element name="E18" library="dec-con" package="DIL16" value="AM26S10" x="184.15" y="179.07"/>
-<element name="IC11" library="74xx-jameco" package="DIL20" value="74S240N" x="227.33" y="133.35"/>
-<element name="IC12" library="74xx-jameco" package="DIL20" value="74S240N" x="191.77" y="133.35"/>
-<element name="IC15" library="74xx-jameco" package="DIL20" value="74S240N" x="227.33" y="102.87"/>
-<element name="IC16" library="74xx-jameco" package="DIL20" value="74S240N" x="191.77" y="102.87"/>
-<element name="IC17" library="74xx-jameco" package="DIL20" value="74S240N" x="227.33" y="72.39"/>
-<element name="IC18" library="74xx-jameco" package="DIL20" value="74S240N" x="191.77" y="72.39"/>
+<element name="IC11" library="74xx-us" package="DIL20" value="74S240N" x="227.33" y="133.35"/>
+<element name="IC12" library="74xx-us" package="DIL20" value="74S240N" x="191.77" y="133.35"/>
+<element name="IC15" library="74xx-us" package="DIL20" value="74S240N" x="227.33" y="102.87"/>
+<element name="IC16" library="74xx-us" package="DIL20" value="74S240N" x="191.77" y="102.87"/>
+<element name="IC17" library="74xx-us" package="DIL20" value="74S240N" x="227.33" y="72.39"/>
+<element name="IC18" library="74xx-us" package="DIL20" value="74S240N" x="191.77" y="72.39"/>
 <element name="SV2" library="con-lstb" package="MA10-2" value="" x="151.13" y="43.18">
 <attribute name="OC_NEWARK" value="unknown" x="151.13" y="43.18" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="151.13" y="43.18" size="1.778" layer="27" display="off"/>
@@ -702,17 +712,17 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="151.13" y="43.18" size="1.778" layer="27" display="off"/>
 </element>
 <element name="E1" library="dec-con" package="DIL16" value="AM26S10" x="191.77" y="41.91"/>
-<element name="IC19" library="74xx-jameco" package="DIL20" value="74S240N" x="146.05" y="163.83"/>
-<element name="IC20" library="74xx-jameco" package="DIL20" value="74S240N" x="110.49" y="163.83"/>
+<element name="IC19" library="74xx-us" package="DIL20" value="74S240N" x="146.05" y="163.83"/>
+<element name="IC20" library="74xx-us" package="DIL20" value="74S240N" x="110.49" y="163.83"/>
 <element name="E2" library="dec-con" package="DIL16" value="AM26S10" x="156.21" y="179.07"/>
 <element name="E3" library="dec-con" package="DIL16" value="AM26S10" x="128.27" y="179.07"/>
 <element name="E4" library="dec-con" package="DIL16" value="AM26S10" x="100.33" y="179.07"/>
-<element name="IC21" library="74xx-jameco" package="DIL20" value="74S240N" x="146.05" y="133.35"/>
-<element name="IC22" library="74xx-jameco" package="DIL20" value="74S240N" x="110.49" y="133.35"/>
-<element name="IC23" library="74xx-jameco" package="DIL20" value="74S240N" x="146.05" y="102.87"/>
-<element name="IC24" library="74xx-jameco" package="DIL20" value="74S240N" x="110.49" y="102.87"/>
-<element name="IC25" library="74xx-jameco" package="DIL20" value="74S240N" x="146.05" y="72.39"/>
-<element name="IC26" library="74xx-jameco" package="DIL20" value="74S240N" x="110.49" y="72.39"/>
+<element name="IC21" library="74xx-us" package="DIL20" value="74S240N" x="146.05" y="133.35"/>
+<element name="IC22" library="74xx-us" package="DIL20" value="74S240N" x="110.49" y="133.35"/>
+<element name="IC23" library="74xx-us" package="DIL20" value="74S240N" x="146.05" y="102.87"/>
+<element name="IC24" library="74xx-us" package="DIL20" value="74S240N" x="110.49" y="102.87"/>
+<element name="IC25" library="74xx-us" package="DIL20" value="74S240N" x="146.05" y="72.39"/>
+<element name="IC26" library="74xx-us" package="DIL20" value="74S240N" x="110.49" y="72.39"/>
 <element name="E5" library="dec-con" package="DIL16" value="AM26S10" x="110.49" y="41.91"/>
 </elements>
 <signals>

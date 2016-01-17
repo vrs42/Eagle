@@ -60,6 +60,9 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -68,8 +71,33 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="ATT_MISO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="centerline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -587,62 +615,6 @@
 </package>
 </packages>
 </library>
-<library name="74xx-eu">
-<packages>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="jumper">
 <packages>
 <package name="05">
@@ -937,7 +909,19 @@ grid 22.86 mm, diameter 6 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="pcb">
+<packages>
+<package name="SIERRA-PROTO">
+<description>Sierra Proto -- not to exceed 85 sq".</description>
+<wire x1="0" y1="0" x2="276.86" y2="0" width="0.127" layer="21"/>
+<wire x1="276.86" y1="0" x2="276.86" y2="200.66" width="0.127" layer="21"/>
+<wire x1="276.86" y1="200.66" x2="0" y2="200.66" width="0.127" layer="21"/>
+<wire x1="0" y1="200.66" x2="0" y2="0" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="dec-con">
+<description>DEC Edge Connectors and Parts</description>
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -963,17 +947,6 @@ grid 22.86 mm, diameter 6 mm</description>
 <pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="pcb">
-<packages>
-<package name="SIERRA-PROTO">
-<description>Sierra Proto -- not to exceed 85 sq".</description>
-<wire x1="0" y1="0" x2="276.86" y2="0" width="0.127" layer="21"/>
-<wire x1="276.86" y1="0" x2="276.86" y2="200.66" width="0.127" layer="21"/>
-<wire x1="276.86" y1="200.66" x2="0" y2="200.66" width="0.127" layer="21"/>
-<wire x1="0" y1="200.66" x2="0" y2="0" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1181,7 +1154,7 @@ design rules under a new name.</description>
 <element name="U$1" library="holes" package="2,8" value="" x="2.54" y="149.86"/>
 <element name="U$3" library="holes" package="2,8" value="" x="2.54" y="2.54"/>
 <element name="U$4" library="holes" package="2,8" value="" x="210.82" y="2.54"/>
-<element name="IC18" library="74xx-eu" package="DIL14" value="74LS00N" x="157.48" y="115.57"/>
+<element name="IC18" library="74xx-us" package="DIL14" value="74LS00N" x="157.48" y="115.57"/>
 <element name="DAR4-7" library="74xx-us" package="DIL16" value="74LS193N" x="140.97" y="50.8" rot="R270"/>
 <element name="DAR8-11" library="74xx-us" package="DIL16" value="74LS193N" x="140.97" y="85.09" rot="R270"/>
 <element name="IC24" library="74xx-us" package="DIL20" value="74S240N" x="156.21" y="87.63" rot="R270"/>
@@ -1242,10 +1215,10 @@ design rules under a new name.</description>
 <element name="SW2" library="special" package="EDG-08" value="" x="44.45" y="128.27"/>
 <element name="SW3" library="special" package="EDG-08" value="" x="72.39" y="128.27"/>
 <element name="SW4" library="special" package="EDG-08" value="" x="100.33" y="128.27"/>
-<element name="IC1" library="74xx-eu" package="DIL16" value="74LS151N" x="16.51" y="140.97"/>
-<element name="IC2" library="74xx-eu" package="DIL16" value="74LS151N" x="44.45" y="140.97"/>
-<element name="IC3" library="74xx-eu" package="DIL16" value="74LS151N" x="72.39" y="140.97"/>
-<element name="IC4" library="74xx-eu" package="DIL16" value="74LS151N" x="100.33" y="140.97"/>
+<element name="IC1" library="74xx-us" package="DIL16" value="74LS151N" x="16.51" y="140.97"/>
+<element name="IC2" library="74xx-us" package="DIL16" value="74LS151N" x="44.45" y="140.97"/>
+<element name="IC3" library="74xx-us" package="DIL16" value="74LS151N" x="72.39" y="140.97"/>
+<element name="IC4" library="74xx-us" package="DIL16" value="74LS151N" x="100.33" y="140.97"/>
 <element name="IC5" library="74xx-us" package="DIL14" value="74LS20N" x="127" y="140.97"/>
 <element name="IC17" library="74xx-us" package="DIL16" value="74LS139N" x="130.81" y="115.57"/>
 <element name="IC16" library="74xx-us" package="DIL16" value="74LS139N" x="102.87" y="115.57"/>
@@ -1260,7 +1233,7 @@ design rules under a new name.</description>
 <element name="RB" library="rcl" package="0207/10" value="1.5K" x="203.2" y="121.92" rot="R180"/>
 <element name="RA" library="rcl" package="0207/10" value="470K" x="203.2" y="119.38"/>
 <element name="RL" library="rcl" package="0207/10" value="1K" x="195.58" y="124.46" rot="R90"/>
-<element name="IC12" library="74xx-eu" package="DIL14" value="74LS00N" x="201.93" y="104.14" rot="R270"/>
+<element name="IC12" library="74xx-us" package="DIL14" value="74LS00N" x="201.93" y="104.14" rot="R270"/>
 <element name="IC11" library="74xx-us" package="DIL14" value="74S74N" x="182.88" y="115.57"/>
 <element name="IC6" library="74xx-us" package="DIL16" value="74LS139N" x="156.21" y="140.97"/>
 <element name="IC7" library="74xx-us" package="DIL16" value="74LS139N" x="181.61" y="128.27"/>
@@ -1337,7 +1310,7 @@ design rules under a new name.</description>
 <element name="U$14" library="holes" package="2,8" value="" x="2.54" y="198.12"/>
 <element name="U$16" library="holes" package="2,8" value="" x="210.82" y="157.48"/>
 <element name="U$17" library="holes" package="2,8" value="" x="210.82" y="198.12"/>
-<element name="IC55" library="74xx-jameco" package="DIL14" value="7438N" x="140.97" y="15.24" rot="R270"/>
+<element name="IC55" library="dec-con" package="DIL14" value="7438N" x="140.97" y="15.24" rot="R270"/>
 <element name="U$18" library="pcb" package="SIERRA-PROTO" value="" x="0" y="0"/>
 <element name="SV1" library="con-lstb" package="MA13-2" value="" x="34.29" y="25.4" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="34.29" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>

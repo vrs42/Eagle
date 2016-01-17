@@ -1525,16 +1525,26 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
 <pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
@@ -1549,7 +1559,7 @@ grid 5 mm, outline 2.5 x 7.5 mm</description>
 <pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
@@ -1748,7 +1758,7 @@ design rules under a new name.</description>
 <element name="E11" library="dec-con" package="DIL14" value="SP380N" x="201.93" y="45.72" rot="R270"/>
 <element name="E40" library="dec-con" package="DIL14" value="SP380N" x="54.61" y="45.72" rot="R270"/>
 <element name="E25" library="dec-con" package="DIL14" value="SP384N" x="125.73" y="45.72" rot="R270"/>
-<element name="E27" library="74xx-jameco" package="DIL14" value="7404N" x="125.73" y="111.76" rot="R270"/>
+<element name="E27" library="74xx-us" package="DIL14" value="7404N" x="125.73" y="111.76" rot="R270"/>
 <element name="E46" library="dec-con" package="DIL14" value="SP380N" x="34.29" y="78.74" rot="R270"/>
 <element name="E37" library="dec-con" package="DIL14" value="SP314N" x="82.55" y="111.76" rot="R270"/>
 <element name="E36" library="dec-con" package="DIL14" value="SP380N" x="82.55" y="78.74" rot="R270"/>
@@ -1758,31 +1768,31 @@ design rules under a new name.</description>
 <element name="E32" library="dec-con" package="DIL14" value="SP314N" x="102.87" y="111.76" rot="R270"/>
 <element name="E31" library="dec-con" package="DIL14" value="DS8881N" x="102.87" y="78.74" rot="R270"/>
 <element name="R4" library="rcl" package="0207/10" value="1K" x="135.89" y="88.9" rot="R90"/>
-<element name="E24" library="74xx-jameco" package="DIL14" value="7400N" x="146.05" y="177.8" rot="R270"/>
+<element name="E24" library="74xx-us" package="DIL14" value="7400N" x="146.05" y="177.8" rot="R270"/>
 <element name="E16" library="dec-con" package="DIL14" value="DS8881N" x="168.91" y="45.72" rot="R270"/>
-<element name="E21" library="74xx-jameco" package="DIL14" value="7410N" x="146.05" y="78.74" rot="R270"/>
+<element name="E21" library="74xx-us" package="DIL14" value="7410N" x="146.05" y="78.74" rot="R270"/>
 <element name="E22" library="dec-con" package="DIL16" value="DEC8251" x="146.05" y="110.49" rot="R270"/>
 <element name="R3" library="rcl" package="0207/10" value="1K" x="160.02" y="48.26" rot="R90"/>
-<element name="E28" library="74xx-jameco" package="DIL14" value="7400N" x="125.73" y="144.78" rot="R270"/>
+<element name="E28" library="74xx-us" package="DIL14" value="7400N" x="125.73" y="144.78" rot="R270"/>
 <element name="E33" library="dec-con" package="DIL14" value="SP314N" x="102.87" y="144.78" rot="R270"/>
 <element name="E35" library="dec-con" package="DIL14" value="DS8881N" x="82.55" y="45.72" rot="R270"/>
-<element name="E38" library="74xx-jameco" package="DIL14" value="7420" x="82.55" y="144.78" rot="R270"/>
-<element name="E44" library="74xx-jameco" package="DIL14" value="7400N" x="54.61" y="177.8" rot="R270"/>
-<element name="E43" library="74xx-jameco" package="DIL14" value="7420" x="52.07" y="144.78" rot="R270"/>
-<element name="E13" library="74xx-jameco" package="DIL14" value="74S74N" x="201.93" y="111.76" rot="R270"/>
-<element name="E17" library="74xx-jameco" package="DIL14" value="74S74N" x="168.91" y="78.74" rot="R270"/>
-<element name="E18" library="74xx-jameco" package="DIL14" value="74H00N" x="168.91" y="111.76" rot="R270"/>
-<element name="E29" library="74xx-jameco" package="DIL14" value="7410N" x="125.73" y="177.8" rot="R270"/>
+<element name="E38" library="74xx-us" package="DIL14" value="7420" x="82.55" y="144.78" rot="R270"/>
+<element name="E44" library="74xx-us" package="DIL14" value="7400N" x="54.61" y="177.8" rot="R270"/>
+<element name="E43" library="74xx-us" package="DIL14" value="7420" x="52.07" y="144.78" rot="R270"/>
+<element name="E13" library="74xx-us" package="DIL14" value="74S74N" x="201.93" y="111.76" rot="R270"/>
+<element name="E17" library="74xx-us" package="DIL14" value="74S74N" x="168.91" y="78.74" rot="R270"/>
+<element name="E18" library="74xx-us" package="DIL14" value="74H00N" x="168.91" y="111.76" rot="R270"/>
+<element name="E29" library="74xx-us" package="DIL14" value="7410N" x="125.73" y="177.8" rot="R270"/>
 <element name="E34" library="dec-con" package="DIL14" value="SP314N" x="102.87" y="177.8" rot="R270"/>
-<element name="E48" library="74xx-jameco" package="DIL14" value="7404N" x="34.29" y="177.8" rot="R270"/>
-<element name="E14" library="74xx-jameco" package="DIL14" value="7400N" x="201.93" y="144.78" rot="R270"/>
-<element name="E42" library="74xx-jameco" package="DIL14" value="7410N" x="54.61" y="111.76" rot="R270"/>
-<element name="E12" library="74xx-jameco" package="DIL14" value="7410N" x="201.93" y="78.74" rot="R270"/>
-<element name="E23" library="74xx-jameco" package="DIL14" value="7404N" x="146.05" y="144.78" rot="R270"/>
-<element name="E19" library="74xx-jameco" package="DIL14" value="7400N" x="168.91" y="144.78" rot="R270"/>
+<element name="E48" library="74xx-us" package="DIL14" value="7404N" x="34.29" y="177.8" rot="R270"/>
+<element name="E14" library="74xx-us" package="DIL14" value="7400N" x="201.93" y="144.78" rot="R270"/>
+<element name="E42" library="74xx-us" package="DIL14" value="7410N" x="54.61" y="111.76" rot="R270"/>
+<element name="E12" library="74xx-us" package="DIL14" value="7410N" x="201.93" y="78.74" rot="R270"/>
+<element name="E23" library="74xx-us" package="DIL14" value="7404N" x="146.05" y="144.78" rot="R270"/>
+<element name="E19" library="74xx-us" package="DIL14" value="7400N" x="168.91" y="144.78" rot="R270"/>
 <element name="R7" library="rcl" package="0207/10" value="1K" x="43.18" y="182.88" rot="R90"/>
 <element name="E51" library="dec-con" package="DIL14" value="SP384N" x="13.97" y="78.74" rot="R270"/>
-<element name="E54" library="74xx-jameco" package="DIL14" value="7410N" x="13.97" y="177.8" rot="R270"/>
+<element name="E54" library="74xx-us" package="DIL14" value="7410N" x="13.97" y="177.8" rot="R270"/>
 <element name="R1" library="rcl" package="0207/10" value="1K" x="180.34" y="48.26" rot="R90"/>
 <element name="R2" library="rcl" package="0207/10" value="1K" x="157.48" y="81.28" rot="R90"/>
 <element name="C57" library="rcl" package="E22-6" value="6.8uf" x="115.57" y="25.4" rot="R180"/>
@@ -1852,13 +1862,13 @@ design rules under a new name.</description>
 <element name="E3" library="dec-con" package="DIL16" value="DEC8271" x="255.27" y="110.49" rot="R270"/>
 <element name="E49" library="dec-con" package="DIL16" value="DEC8271" x="34.29" y="110.49" rot="R270"/>
 <element name="E47" library="dec-con" package="DIL16" value="DEC8271" x="34.29" y="143.51" rot="R270"/>
-<element name="E9" library="74xx-jameco" package="DIL14" value="7400N" x="229.87" y="144.78" rot="R270"/>
+<element name="E9" library="74xx-us" package="DIL14" value="7400N" x="229.87" y="144.78" rot="R270"/>
 <element name="E10" library="dec-con" package="DIL16" value="DEC8271" x="229.87" y="176.53" rot="R270"/>
-<element name="E5" library="74xx-jameco" package="DIL14" value="7400N" x="255.27" y="177.8" rot="R270"/>
-<element name="E4" library="74xx-jameco" package="DIL14" value="7400N" x="255.27" y="144.78" rot="R270"/>
+<element name="E5" library="74xx-us" package="DIL14" value="7400N" x="255.27" y="177.8" rot="R270"/>
+<element name="E4" library="74xx-us" package="DIL14" value="7400N" x="255.27" y="144.78" rot="R270"/>
 <element name="E7" library="dec-con" package="DIL14" value="DS8881N" x="229.87" y="78.74" rot="R270"/>
 <element name="E8" library="dec-con" package="DIL14" value="SP384N" x="229.87" y="111.76" rot="R270"/>
-<element name="E52" library="74xx-jameco" package="DIL14" value="7400N" x="13.97" y="111.76" rot="R270"/>
+<element name="E52" library="74xx-us" package="DIL14" value="7400N" x="13.97" y="111.76" rot="R270"/>
 <element name="R8" library="rcl" package="0207/10" value="1K" x="24.13" y="76.2" rot="R90"/>
 </elements>
 <signals>

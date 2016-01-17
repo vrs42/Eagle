@@ -59164,7 +59164,17 @@ Quad flat pack 14mm x 20mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
+<description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
+&lt;li&gt;TTL Data Book, Volume 2 , 1993
+&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
+&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
+&lt;li&gt;http://icmaster.com/ViewCompare.asp
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="DIL16">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -59456,8 +59466,8 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="151.13" y="190.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="959704" x="151.13" y="190.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="E08" library="74xx-jameco" package="DIL16" value="74123N" x="29.21" y="85.09" rot="R270"/>
-<element name="E04" library="74xx-jameco" package="DIL16" value="74123N" x="134.62" y="172.72" rot="R270"/>
+<element name="E08" library="74xx-us" package="DIL16" value="74123N" x="29.21" y="85.09" rot="R270"/>
+<element name="E04" library="74xx-us" package="DIL16" value="74123N" x="134.62" y="172.72" rot="R270"/>
 <element name="ISP" library="con-lstb" package="MA05-2" value="" x="106.68" y="201.93">
 <attribute name="OC_NEWARK" value="unknown" x="106.68" y="201.93" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="106.68" y="201.93" size="1.778" layer="27" display="off"/>

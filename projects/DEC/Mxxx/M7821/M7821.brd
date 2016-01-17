@@ -567,35 +567,6 @@ type 0207, grid 10 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
-<packages>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="jumper">
 <packages>
 <package name="10">
@@ -834,13 +805,13 @@ design rules under a new name.</description>
 <element name="C13" library="rcl" package="C050-025X075" value=".01" x="88.9" y="52.07" rot="R90"/>
 <element name="U$1" library="dec-con" package="SINGLE-LONG" value="OUTLINE-SINGLE-LONG" x="0" y="0"/>
 <element name="U$2" library="dec-con" package="EDGE-CON2" value="" x="0" y="0"/>
-<element name="E7" library="74xx-jameco" package="DIL14" value="7400N" x="53.34" y="31.75" rot="R180"/>
+<element name="E7" library="74xx-us" package="DIL14" value="7400N" x="53.34" y="31.75" rot="R180"/>
 <element name="C14" library="rcl" package="C050-025X075" value=".01" x="114.3" y="52.07" rot="R90"/>
 <element name="C15" library="rcl" package="C050-025X075" value=".01" x="139.7" y="52.07" rot="R90"/>
 <element name="C16" library="rcl" package="C050-025X075" value=".01" x="165.1" y="52.07" rot="R90"/>
 <element name="C17" library="rcl" package="C050-025X075" value=".01" x="190.5" y="52.07" rot="R90"/>
-<element name="E9" library="74xx-jameco" package="DIL14" value="7438N" x="104.14" y="31.75" rot="R180"/>
-<element name="E8" library="74xx-jameco" package="DIL14" value="7438N" x="78.74" y="31.75" rot="R180"/>
+<element name="E9" library="dec-con" package="DIL14" value="7438N" x="104.14" y="31.75" rot="R180"/>
+<element name="E8" library="dec-con" package="DIL14" value="7438N" x="78.74" y="31.75" rot="R180"/>
 <element name="J2" library="jumper" package="10" value="J10MM" x="33.02" y="12.7" rot="R180"/>
 <element name="J3" library="jumper" package="10" value="J10MM" x="33.02" y="22.86" rot="R180"/>
 <element name="J4" library="jumper" package="10" value="J10MM" x="33.02" y="43.18" rot="R180"/>
@@ -849,28 +820,28 @@ design rules under a new name.</description>
 <element name="J7" library="jumper" package="10" value="J10MM" x="33.02" y="20.32" rot="R180"/>
 <element name="J8" library="jumper" package="10" value="J10MM" x="33.02" y="40.64" rot="R180"/>
 <element name="J9" library="jumper" package="10" value="J10MM" x="165.1" y="22.86" rot="R180"/>
-<element name="E6" library="74xx-jameco" package="DIL14" value="7402N" x="33.02" y="31.75" rot="R180"/>
+<element name="E6" library="74xx-us" package="DIL14" value="7402N" x="33.02" y="31.75" rot="R180"/>
 <element name="R1" library="rcl" package="0207/10" value="390" x="33.02" y="7.62" rot="R180"/>
 <element name="R2" library="rcl" package="0207/10" value="390" x="33.02" y="10.16" rot="R180"/>
 <element name="R3" library="rcl" package="0207/10" value="180" x="33.02" y="5.08"/>
 <element name="R4" library="rcl" package="0207/10" value="1K" x="152.4" y="22.86"/>
-<element name="E18" library="74xx-jameco" package="DIL14" value="74S74N" x="180.34" y="52.07" rot="R180"/>
-<element name="E12" library="74xx-jameco" package="DIL14" value="74S74N" x="180.34" y="31.75" rot="R180"/>
-<element name="E5" library="74xx-jameco" package="DIL14" value="74S74N" x="180.34" y="11.43" rot="R180"/>
-<element name="E10" library="74xx-jameco" package="DIL14" value="74S08N" x="129.54" y="31.75" rot="R180"/>
-<element name="E3" library="74xx-jameco" package="DIL14" value="74S04N" x="129.54" y="11.43" rot="R180"/>
+<element name="E18" library="74xx-us" package="DIL14" value="74S74N" x="180.34" y="52.07" rot="R180"/>
+<element name="E12" library="74xx-us" package="DIL14" value="74S74N" x="180.34" y="31.75" rot="R180"/>
+<element name="E5" library="74xx-us" package="DIL14" value="74S74N" x="180.34" y="11.43" rot="R180"/>
+<element name="E10" library="74xx-us" package="DIL14" value="74S08N" x="129.54" y="31.75" rot="R180"/>
+<element name="E3" library="74xx-us" package="DIL14" value="74S04N" x="129.54" y="11.43" rot="R180"/>
 <element name="R6" library="rcl" package="0207/10" value="1K" x="58.42" y="19.05"/>
 <element name="R8" library="rcl" package="0207/10" value="47" x="58.42" y="21.59" rot="R180"/>
 <element name="C19" library="rcl" package="C050-025X075" value="330" x="48.26" y="19.05" rot="R180"/>
 <element name="E1" library="dec-con" package="DIL14" value="DS8640N" x="78.74" y="11.43" rot="R180"/>
 <element name="E13" library="74xx-us" package="DIL14" value="7402N" x="53.34" y="52.07" rot="R180"/>
-<element name="E2" library="74xx-jameco" package="DIL14" value="7438N" x="104.14" y="11.43" rot="R180"/>
+<element name="E2" library="dec-con" package="DIL14" value="7438N" x="104.14" y="11.43" rot="R180"/>
 <element name="E11" library="dec-con" package="DIL14" value="DS8640N" x="154.94" y="31.75" rot="R180"/>
-<element name="E16" library="74xx-jameco" package="DIL14" value="7438N" x="129.54" y="52.07" rot="R180"/>
-<element name="E15" library="74xx-jameco" package="DIL14" value="7438N" x="104.14" y="52.07" rot="R180"/>
-<element name="E4" library="74xx-jameco" package="DIL14" value="7400N" x="154.94" y="11.43" rot="R180"/>
-<element name="E17" library="74xx-jameco" package="DIL14" value="7400N" x="154.94" y="52.07" rot="R180"/>
-<element name="E14" library="74xx-jameco" package="DIL14" value="7402N" x="78.74" y="52.07" rot="R180"/>
+<element name="E16" library="dec-con" package="DIL14" value="7438N" x="129.54" y="52.07" rot="R180"/>
+<element name="E15" library="dec-con" package="DIL14" value="7438N" x="104.14" y="52.07" rot="R180"/>
+<element name="E4" library="74xx-us" package="DIL14" value="7400N" x="154.94" y="11.43" rot="R180"/>
+<element name="E17" library="74xx-us" package="DIL14" value="7400N" x="154.94" y="52.07" rot="R180"/>
+<element name="E14" library="74xx-us" package="DIL14" value="7402N" x="78.74" y="52.07" rot="R180"/>
 <element name="R5" library="rcl" package="0207/10" value="180" x="134.62" y="43.18"/>
 <element name="R7" library="rcl" package="0207/10" value="1K" x="139.7" y="22.86"/>
 <element name="R9" library="rcl" package="0207/10" value="47" x="139.7" y="20.32" rot="R180"/>

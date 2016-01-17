@@ -869,7 +869,12 @@ small</description>
 <element name="R8" library="rcl" package="0204/7" value="470" x="34.29" y="58.42"/>
 <element name="C9" library="rcl" package="C050-025X075" value="470pf" x="43.18" y="58.42"/>
 <element name="IC1" library="ic-package" package="DIL24-6" value="MC14411" x="69.85" y="15.24"/>
-<element name="Q2" library="crystal" package="HC49U-H" value="" x="43.18" y="17.78" rot="R180"/>
+<element name="Q2" library="crystal" package="HC49U-H" value="" x="43.18" y="17.78" rot="R180">
+<attribute name="OC_NEWARK" value="unknown" x="43.18" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="43.18" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="43.18" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1666973" x="43.18" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="R2" library="rcl" package="0204/7" value="7.5M" x="44.45" y="27.94" rot="R180"/>
 <element name="R1" library="rcl" package="0204/7" value="7.5M" x="41.91" y="25.4" rot="R180"/>
 <element name="IC2" library="74ttl-din" package="DIL16" value="74151N" x="82.55" y="36.83"/>

@@ -6056,91 +6056,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
-<packages>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PWRN">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
-</symbol>
-<symbol name="7460">
-<wire x1="-5.08" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<text x="-5.08" y="8.255" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-10.16" y="5.08" length="middle" direction="in"/>
-<pin name="B" x="-10.16" y="2.54" length="middle" direction="in"/>
-<pin name="C" x="-10.16" y="0" length="middle" direction="in"/>
-<pin name="X" x="12.7" y="5.08" length="middle" direction="oc" rot="R180"/>
-<pin name="!X" x="12.7" y="-2.54" length="middle" direction="oc" rot="R180"/>
-<pin name="D" x="-10.16" y="-2.54" length="middle" direction="in"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="74*60" prefix="IC">
-<description>Dual 4-input &lt;b&gt;EXPANDER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="7460" x="20.32" y="8.89" swaplevel="1"/>
-<gate name="B" symbol="7460" x="20.32" y="-10.16" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-7.62" y="-1.27" addlevel="request"/>
-</gates>
-<devices>
-<device name="N" package="DIL14">
-<connects>
-<connect gate="A" pin="!X" pad="12"/>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="B" pad="2"/>
-<connect gate="A" pin="C" pad="3"/>
-<connect gate="A" pin="D" pad="13"/>
-<connect gate="A" pin="X" pad="11"/>
-<connect gate="B" pin="!X" pad="9"/>
-<connect gate="B" pin="A" pad="4"/>
-<connect gate="B" pin="B" pad="5"/>
-<connect gate="B" pin="C" pad="6"/>
-<connect gate="B" pin="D" pad="8"/>
-<connect gate="B" pin="X" pad="10"/>
-<connect gate="P" pin="GND" pad="7"/>
-<connect gate="P" pin="VCC" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="74xx-us">
 <packages>
 <package name="DIL14">
@@ -6318,6 +6233,20 @@ Source: AVX .. aphvc.pdf</description>
 <pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
 </symbol>
+<symbol name="7460">
+<wire x1="-5.08" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-5.08" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-10.16" y="5.08" length="middle" direction="in"/>
+<pin name="B" x="-10.16" y="2.54" length="middle" direction="in"/>
+<pin name="C" x="-10.16" y="0" length="middle" direction="in"/>
+<pin name="X" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="!X" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="D" x="-10.16" y="-2.54" length="middle" direction="in"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="74*74" prefix="IC">
@@ -6483,6 +6412,37 @@ Source: AVX .. aphvc.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="74*60" prefix="IC">
+<description>Dual 4-input &lt;b&gt;EXPANDER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="7460" x="20.32" y="10.16" swaplevel="1"/>
+<gate name="B" symbol="7460" x="20.32" y="-10.16" swaplevel="1"/>
+<gate name="P" symbol="PWRN" x="-7.62" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="N" package="DIL14">
+<connects>
+<connect gate="A" pin="!X" pad="12"/>
+<connect gate="A" pin="A" pad="1"/>
+<connect gate="A" pin="B" pad="2"/>
+<connect gate="A" pin="C" pad="3"/>
+<connect gate="A" pin="D" pad="13"/>
+<connect gate="A" pin="X" pad="11"/>
+<connect gate="B" pin="!X" pad="9"/>
+<connect gate="B" pin="A" pad="4"/>
+<connect gate="B" pin="B" pad="5"/>
+<connect gate="B" pin="C" pad="6"/>
+<connect gate="B" pin="D" pad="8"/>
+<connect gate="B" pin="X" pad="10"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="frames">
@@ -6571,8 +6531,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="V5" library="supply2" deviceset="VCC" device=""/>
 <part name="E1" library="74xxN" deviceset="74*53" device="N"/>
-<part name="E10" library="74xx-jameco" deviceset="74*60" device="N"/>
-<part name="E13" library="74xx-jameco" deviceset="74*60" device="N"/>
+<part name="E10" library="74xx-us" deviceset="74*60" device="N"/>
+<part name="E13" library="74xx-us" deviceset="74*60" device="N"/>
 <part name="E2" library="74xxN" deviceset="74*53" device="N"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="3K"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="3K"/>
