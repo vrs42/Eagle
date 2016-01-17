@@ -4801,96 +4801,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-us">
-<packages>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="7450">
-<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
-<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1A" x="-12.7" y="12.7" length="middle" direction="in"/>
-<pin name="2A" x="-12.7" y="-5.08" length="middle" direction="in"/>
-<pin name="2B" x="-12.7" y="-7.62" length="middle" direction="in"/>
-<pin name="2C" x="-12.7" y="-10.16" length="middle" direction="in"/>
-<pin name="2D" x="-12.7" y="-12.7" length="middle" direction="in"/>
-<pin name="2Y" x="12.7" y="-10.16" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="1Y" x="12.7" y="7.62" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="1C" x="-12.7" y="7.62" length="middle" direction="in"/>
-<pin name="1D" x="-12.7" y="5.08" length="middle" direction="in"/>
-<pin name="1X" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="!1X" x="-12.7" y="0" length="middle" direction="in"/>
-<pin name="1B" x="-12.7" y="10.16" length="middle" direction="in"/>
-</symbol>
-<symbol name="PWRN">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="74*50" prefix="IC">
-<description>Dual 2-wide 2-input &lt;b&gt;AND OR INVERTER&lt;/b&gt; gate (one gate expandable)</description>
-<gates>
-<gate name="A" symbol="7450" x="20.32" y="0"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
-</gates>
-<devices>
-<device name="N" package="DIL14">
-<connects>
-<connect gate="A" pin="!1X" pad="12"/>
-<connect gate="A" pin="1A" pad="1"/>
-<connect gate="A" pin="1B" pad="13"/>
-<connect gate="A" pin="1C" pad="9"/>
-<connect gate="A" pin="1D" pad="10"/>
-<connect gate="A" pin="1X" pad="11"/>
-<connect gate="A" pin="1Y" pad="8"/>
-<connect gate="A" pin="2A" pad="2"/>
-<connect gate="A" pin="2B" pad="3"/>
-<connect gate="A" pin="2C" pad="4"/>
-<connect gate="A" pin="2D" pad="5"/>
-<connect gate="A" pin="2Y" pad="6"/>
-<connect gate="P" pin="GND" pad="7"/>
-<connect gate="P" pin="VCC" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="dec-con">
 <packages>
 <package name="SINGLE">
@@ -5453,6 +5363,31 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <hole x="209.55" y="74.93" drill="3.175"/>
 <hole x="209.55" y="126.365" drill="3.175"/>
 </package>
+<package name="DIL14">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DEVICE">
@@ -5465,6 +5400,33 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <symbol name="EDGE-LEFT">
 <rectangle x1="2.54" y1="-1.27" x2="5.08" y2="1.27" layer="94"/>
 <pin name="1" x="-2.54" y="0" visible="pad" length="middle"/>
+</symbol>
+<symbol name="7450">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1A" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="2A" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="2B" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="2C" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="2D" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="2Y" x="12.7" y="-10.16" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="1Y" x="12.7" y="7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="1C" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="1D" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="1X" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="!1X" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="1B" x="-12.7" y="10.16" length="middle" direction="in"/>
+</symbol>
+<symbol name="PWRN">
+<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
+<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
+<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5602,6 +5564,36 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="74*50" prefix="IC">
+<description>Dual 2-wide 2-input &lt;b&gt;AND OR INVERTER&lt;/b&gt; gate (one gate expandable)</description>
+<gates>
+<gate name="A" symbol="7450" x="20.32" y="0"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="N" package="DIL14">
+<connects>
+<connect gate="A" pin="!1X" pad="12"/>
+<connect gate="A" pin="1A" pad="1"/>
+<connect gate="A" pin="1B" pad="13"/>
+<connect gate="A" pin="1C" pad="9"/>
+<connect gate="A" pin="1D" pad="10"/>
+<connect gate="A" pin="1X" pad="11"/>
+<connect gate="A" pin="1Y" pad="8"/>
+<connect gate="A" pin="2A" pad="2"/>
+<connect gate="A" pin="2B" pad="3"/>
+<connect gate="A" pin="2C" pad="4"/>
+<connect gate="A" pin="2D" pad="5"/>
+<connect gate="A" pin="2Y" pad="6"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -5624,9 +5616,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C5" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="V29" library="supply2" deviceset="GND" device=""/>
 <part name="V30" library="supply2" deviceset="VCC" device=""/>
-<part name="E1" library="74xx-us" deviceset="74*50" device="N"/>
-<part name="E2" library="74xx-us" deviceset="74*50" device="N"/>
-<part name="E3" library="74xx-us" deviceset="74*50" device="N"/>
+<part name="E1" library="dec-con" deviceset="74*50" device="N"/>
+<part name="E2" library="dec-con" deviceset="74*50" device="N"/>
+<part name="E3" library="dec-con" deviceset="74*50" device="N"/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>

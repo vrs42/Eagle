@@ -303,7 +303,7 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL16">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -8197,7 +8197,7 @@ Based on the following sources:
 <part name="B11" library="pal" deviceset="22V10" device="" value="22V10"/>
 <part name="B10" library="pal" deviceset="22V10" device="" value="22V10"/>
 <part name="B9" library="pal" deviceset="22V10" device="" value="22V10"/>
-<part name="B7" library="74xx-jameco" deviceset="74*273" device="N" technology="HCT"/>
+<part name="B7" library="74xx-us" deviceset="74*273" device="N" technology="HCT"/>
 <part name="E5" library="74xx-us" deviceset="74*32" device="N" technology="LS" value="74LS32N"/>
 <part name="B8" library="pal" deviceset="22V10" device="" value="22V10"/>
 <part name="B6" library="pal" deviceset="22V10" device="" value="22V10"/>
@@ -8205,7 +8205,7 @@ Based on the following sources:
 <part name="B4" library="pal" deviceset="22V10" device="" value="22V10"/>
 <part name="A3" library="74xx-us" deviceset="74*109" device="N" technology="LS"/>
 <part name="V4" library="supply2" deviceset="VCC" device=""/>
-<part name="A1" library="74xx-jameco" deviceset="74*194" device="N"/>
+<part name="A1" library="74xx-us" deviceset="74*194" device="N"/>
 <part name="FRAME1" library="frames" deviceset="TABL_L" device=""/>
 <part name="V5" library="supply2" deviceset="VCC" device=""/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>

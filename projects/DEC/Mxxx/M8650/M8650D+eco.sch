@@ -2417,6 +2417,28 @@
 <pin name="3" x="-5.08" y="-5.08" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="5.08" y="-5.08" visible="off" length="point" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="74192">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="B" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="QB" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="QA" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="DN" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="UP" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="QC" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="QD" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="D" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="C" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="LD" x="-12.7" y="-7.62" length="middle" direction="in" function="dot"/>
+<pin name="CO" x="12.7" y="-7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="BO" x="12.7" y="-10.16" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="CLR" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="A" x="-12.7" y="10.16" length="middle" direction="in"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OUTLINE-*">
@@ -3106,6 +3128,39 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74*193" prefix="IC">
+<description>Synchronous 4-bit &lt;b&gt;UP/DOWN COUNTER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="74192" x="20.32" y="0"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="N" package="DIL16">
+<connects>
+<connect gate="A" pin="A" pad="15"/>
+<connect gate="A" pin="B" pad="1"/>
+<connect gate="A" pin="BO" pad="13"/>
+<connect gate="A" pin="C" pad="10"/>
+<connect gate="A" pin="CLR" pad="14"/>
+<connect gate="A" pin="CO" pad="12"/>
+<connect gate="A" pin="D" pad="9"/>
+<connect gate="A" pin="DN" pad="4"/>
+<connect gate="A" pin="LD" pad="11"/>
+<connect gate="A" pin="QA" pad="3"/>
+<connect gate="A" pin="QB" pad="2"/>
+<connect gate="A" pin="QC" pad="6"/>
+<connect gate="A" pin="QD" pad="7"/>
+<connect gate="A" pin="UP" pad="5"/>
+<connect gate="P" pin="GND" pad="8"/>
+<connect gate="P" pin="VCC" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="LS"/>
 </technologies>
 </device>
 </devices>
@@ -14341,103 +14396,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
-<packages>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PWRN">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
-</symbol>
-<symbol name="74192">
-<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
-<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="B" x="-12.7" y="7.62" length="middle" direction="in"/>
-<pin name="QB" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
-<pin name="QA" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
-<pin name="DN" x="-12.7" y="-5.08" length="middle" direction="in"/>
-<pin name="UP" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="QC" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="QD" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
-<pin name="D" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="C" x="-12.7" y="5.08" length="middle" direction="in"/>
-<pin name="LD" x="-12.7" y="-7.62" length="middle" direction="in" function="dot"/>
-<pin name="CO" x="12.7" y="-7.62" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="BO" x="12.7" y="-10.16" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="CLR" x="-12.7" y="-10.16" length="middle" direction="in"/>
-<pin name="A" x="-12.7" y="10.16" length="middle" direction="in"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="74*193" prefix="IC">
-<description>Synchronous 4-bit &lt;b&gt;UP/DOWN COUNTER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="74192" x="20.32" y="0"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
-</gates>
-<devices>
-<device name="N" package="DIL16">
-<connects>
-<connect gate="A" pin="A" pad="15"/>
-<connect gate="A" pin="B" pad="1"/>
-<connect gate="A" pin="BO" pad="13"/>
-<connect gate="A" pin="C" pad="10"/>
-<connect gate="A" pin="CLR" pad="14"/>
-<connect gate="A" pin="CO" pad="12"/>
-<connect gate="A" pin="D" pad="9"/>
-<connect gate="A" pin="DN" pad="4"/>
-<connect gate="A" pin="LD" pad="11"/>
-<connect gate="A" pin="QA" pad="3"/>
-<connect gate="A" pin="QB" pad="2"/>
-<connect gate="A" pin="QC" pad="6"/>
-<connect gate="A" pin="QD" pad="7"/>
-<connect gate="A" pin="UP" pad="5"/>
-<connect gate="P" pin="GND" pad="8"/>
-<connect gate="P" pin="VCC" pad="16"/>
-</connects>
-<technologies>
-<technology name=""/>
-<technology name="LS"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="74xx-us">
 <packages>
 <package name="DIL14">
@@ -21305,7 +21263,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
 <part name="V82" library="supply2" deviceset="VCC" device=""/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
-<part name="E22" library="74xx-jameco" deviceset="74*193" device="N"/>
+<part name="E22" library="dec-con" deviceset="74*193" device="N"/>
 <part name="E5" library="74xx-us" deviceset="74*93" device="N" technology="LS" value="7493N"/>
 <part name="V83" library="supply2" deviceset="GND" device=""/>
 <part name="P+43" library="SparkFun5" deviceset="3.3V" device=""/>

@@ -150,7 +150,7 @@
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL16">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -869,7 +869,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="173.99" y="57.15" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="1571925" x="173.99" y="57.15" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="B7" library="74xx-jameco" package="DIL20" value="74HCT273N" x="138.43" y="54.61" rot="R270"/>
+<element name="B7" library="74xx-us" package="DIL20" value="74HCT273N" x="138.43" y="54.61" rot="R270"/>
 <element name="E5" library="74xx-us" package="DIL14" value="74LS32N" x="102.87" y="185.42" rot="R270"/>
 <element name="B8" library="pal" package="DIL24-3" value="22V10" x="156.21" y="57.15" rot="R270">
 <attribute name="OC_NEWARK" value="97M0480" x="156.21" y="57.15" size="1.778" layer="27" rot="R270" display="off"/>
@@ -896,7 +896,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1571925" x="85.09" y="57.15" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="A3" library="74xx-us" package="DIL16" value="74LS109N" x="67.31" y="16.51" rot="R270"/>
-<element name="A1" library="74xx-jameco" package="DIL16" value="74194N" x="31.75" y="16.51" rot="R270"/>
+<element name="A1" library="74xx-us" package="DIL16" value="74194N" x="31.75" y="16.51" rot="R270"/>
 <element name="E2" library="74xx-us" package="DIL14" value="74LS08N" x="49.53" y="185.42" rot="R270"/>
 <element name="C0" library="maxim" package="DIL08" value="MXD1000" x="13.97" y="110.49" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="13.97" y="110.49" size="1.778" layer="27" rot="R270" display="off"/>

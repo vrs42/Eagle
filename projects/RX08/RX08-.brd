@@ -507,10 +507,6 @@ type 0207, grid 10 mm</description>
 <text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-</packages>
-</library>
-<library name="74xx-jameco">
-<packages>
 <package name="DIL16">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
@@ -902,7 +898,7 @@ design rules under a new name.</description>
 <element name="E13" library="74xx-us" package="DIL16" value="74LS138N" x="168.91" y="34.29" rot="R180"/>
 <element name="E14" library="74xx-us" package="DIL16" value="74LS138N" x="168.91" y="52.07" rot="R180"/>
 <element name="E37" library="dec-con" package="DIL14" value="7438N" x="40.64" y="72.39" rot="R180"/>
-<element name="E4" library="74xx-jameco" package="DIL16" value="74LS161N" x="222.25" y="49.53" rot="R180"/>
+<element name="E4" library="dec-con" package="DIL16" value="74LS161N" x="222.25" y="49.53" rot="R180"/>
 <element name="E28" library="dec-con" package="DIL14" value="7438N" x="88.9" y="36.83" rot="R180"/>
 <element name="E27" library="dec-con" package="DIL14" value="7438N" x="88.9" y="21.59" rot="R180"/>
 <element name="E29" library="dec-con" package="DIL14" value="7438N" x="88.9" y="52.07" rot="R180"/>

@@ -7572,7 +7572,7 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -7895,7 +7895,7 @@ high speed (Philips)</description>
 <part name="V21" library="supply2" deviceset="GND" device=""/>
 <part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="V22" library="supply2" deviceset="GND" device=""/>
-<part name="E2" library="74xx-jameco" deviceset="74*20" device="N" technology="S" value="7440N"/>
+<part name="E2" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7440N"/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>

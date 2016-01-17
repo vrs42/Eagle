@@ -1238,7 +1238,7 @@ DIN A3, landscape with extra doc field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -13273,9 +13273,9 @@ Based on the following sources:
 <part name="E11" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="E20" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="E22" library="74xx-us" deviceset="74*00" device="N"/>
-<part name="E8" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="E10" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="E12" library="74xx-jameco" deviceset="74*01" device="N"/>
+<part name="E8" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="E10" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="E12" library="74xx-us" deviceset="74*01" device="N"/>
 <part name="E13" library="74xx-us" deviceset="74*74" device="N" technology="S" value="7474N"/>
 <part name="E14" library="74xx-us" deviceset="74*74" device="N" technology="S" value="7474N"/>
 <part name="E15" library="74xx-us" deviceset="74*74" device="N" technology="S" value="7474N"/>

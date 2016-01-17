@@ -12438,7 +12438,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -13408,7 +13408,7 @@ Based on the following sources:
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
 <part name="E1" library="dec-con" deviceset="N8202" device=""/>
-<part name="E2" library="74xx-jameco" deviceset="74*01" device="N"/>
+<part name="E2" library="74xx-us" deviceset="74*01" device="N"/>
 <part name="U$2" library="dec-con" deviceset="OUTLINE-*" device="DOUBLE"/>
 <part name="EDGE" library="dec-con" deviceset="DOUBLE" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>

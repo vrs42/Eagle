@@ -885,7 +885,7 @@ grid 30.48 mm, diameter 10 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -1201,7 +1201,7 @@ Based on the following sources:
 <element name="C6" library="rcl" package="C050-025X075" value=".01uf" x="45.72" y="93.98" rot="R90"/>
 <element name="C7" library="rcl" package="C050-025X075" value=".01uf" x="81.28" y="105.41" rot="R90"/>
 <element name="E1" library="dec-con" package="DIL24" value="N8202" x="40.64" y="21.59" rot="R180"/>
-<element name="E2" library="74xx-jameco" package="DIL14" value="7401N" x="71.12" y="21.59" rot="R180"/>
+<element name="E2" library="74xx-us" package="DIL14" value="7401N" x="71.12" y="21.59" rot="R180"/>
 <element name="U$2" library="dec-con" package="DOUBLE" value="OUTLINE-DOUBLE" x="0" y="0"/>
 <element name="EDGE" library="dec-con" package="EDGE-CON4" value="" x="0" y="0"/>
 <element name="R1" library="rcl" package="0207/10" value="220" x="66.04" y="7.62"/>

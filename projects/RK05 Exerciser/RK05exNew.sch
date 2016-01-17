@@ -985,6 +985,52 @@ C&amp;K</description>
 <rectangle x1="1.016" y1="5.588" x2="1.524" y2="11.43" layer="21"/>
 <rectangle x1="-1.524" y1="5.588" x2="-1.016" y2="11.43" layer="21"/>
 </package>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="DIL16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BULB">
@@ -1014,6 +1060,46 @@ C&amp;K</description>
 <text x="-9.398" y="-0.762" size="1.27" layer="94" ratio="7">&gt;Part</text>
 <rectangle x1="-3.81" y1="-0.762" x2="-2.54" y2="0.508" layer="94"/>
 <pin name="P$2" x="2.54" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+<symbol name="PWRN">
+<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
+<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
+<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="7409">
+<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
+<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="oc" rot="R180"/>
+</symbol>
+<symbol name="74192">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="B" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="QB" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="QA" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="DN" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="UP" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="QC" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="QD" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="D" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="C" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="LD" x="-12.7" y="-7.62" length="middle" direction="in" function="dot"/>
+<pin name="CO" x="12.7" y="-7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="BO" x="12.7" y="-10.16" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="CLR" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="A" x="-12.7" y="10.16" length="middle" direction="in"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1171,6 +1257,63 @@ C&amp;K</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS75451" prefix="IC">
+<gates>
+<gate name="PWR" symbol="PWRN" x="22.86" y="0" addlevel="request"/>
+<gate name="A" symbol="7409" x="-2.54" y="10.16" swaplevel="1"/>
+<gate name="B" symbol="7409" x="-2.54" y="-10.16" swaplevel="1"/>
+</gates>
+<devices>
+<device name="N" package="DIL08">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="3"/>
+<connect gate="B" pin="I0" pad="6"/>
+<connect gate="B" pin="I1" pad="7"/>
+<connect gate="B" pin="O" pad="5"/>
+<connect gate="PWR" pin="GND" pad="4"/>
+<connect gate="PWR" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74*193" prefix="IC">
+<description>Synchronous 4-bit &lt;b&gt;UP/DOWN COUNTER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="74192" x="20.32" y="0"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="N" package="DIL16">
+<connects>
+<connect gate="A" pin="A" pad="15"/>
+<connect gate="A" pin="B" pad="1"/>
+<connect gate="A" pin="BO" pad="13"/>
+<connect gate="A" pin="C" pad="10"/>
+<connect gate="A" pin="CLR" pad="14"/>
+<connect gate="A" pin="CO" pad="12"/>
+<connect gate="A" pin="D" pad="9"/>
+<connect gate="A" pin="DN" pad="4"/>
+<connect gate="A" pin="LD" pad="11"/>
+<connect gate="A" pin="QA" pad="3"/>
+<connect gate="A" pin="QB" pad="2"/>
+<connect gate="A" pin="QC" pad="6"/>
+<connect gate="A" pin="QD" pad="7"/>
+<connect gate="A" pin="UP" pad="5"/>
+<connect gate="P" pin="GND" pad="8"/>
+<connect gate="P" pin="VCC" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="LS"/>
 </technologies>
 </device>
 </devices>
@@ -13051,157 +13194,6 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
-<packages>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PWRN">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
-</symbol>
-<symbol name="7409">
-<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
-<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="oc" rot="R180"/>
-</symbol>
-<symbol name="74192">
-<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
-<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="B" x="-12.7" y="7.62" length="middle" direction="in"/>
-<pin name="QB" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
-<pin name="QA" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
-<pin name="DN" x="-12.7" y="-5.08" length="middle" direction="in"/>
-<pin name="UP" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="QC" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="QD" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
-<pin name="D" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="C" x="-12.7" y="5.08" length="middle" direction="in"/>
-<pin name="LD" x="-12.7" y="-7.62" length="middle" direction="in" function="dot"/>
-<pin name="CO" x="12.7" y="-7.62" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="BO" x="12.7" y="-10.16" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="CLR" x="-12.7" y="-10.16" length="middle" direction="in"/>
-<pin name="A" x="-12.7" y="10.16" length="middle" direction="in"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DS75451" prefix="IC">
-<gates>
-<gate name="PWR" symbol="PWRN" x="22.86" y="0" addlevel="request"/>
-<gate name="A" symbol="7409" x="-2.54" y="10.16" swaplevel="1"/>
-<gate name="B" symbol="7409" x="-2.54" y="-10.16" swaplevel="1"/>
-</gates>
-<devices>
-<device name="N" package="DIL08">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="6"/>
-<connect gate="B" pin="I1" pad="7"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="PWR" pin="GND" pad="4"/>
-<connect gate="PWR" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="74*193" prefix="IC">
-<description>Synchronous 4-bit &lt;b&gt;UP/DOWN COUNTER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="74192" x="20.32" y="0"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
-</gates>
-<devices>
-<device name="N" package="DIL16">
-<connects>
-<connect gate="A" pin="A" pad="15"/>
-<connect gate="A" pin="B" pad="1"/>
-<connect gate="A" pin="BO" pad="13"/>
-<connect gate="A" pin="C" pad="10"/>
-<connect gate="A" pin="CLR" pad="14"/>
-<connect gate="A" pin="CO" pad="12"/>
-<connect gate="A" pin="D" pad="9"/>
-<connect gate="A" pin="DN" pad="4"/>
-<connect gate="A" pin="LD" pad="11"/>
-<connect gate="A" pin="QA" pad="3"/>
-<connect gate="A" pin="QB" pad="2"/>
-<connect gate="A" pin="QC" pad="6"/>
-<connect gate="A" pin="QD" pad="7"/>
-<connect gate="A" pin="UP" pad="5"/>
-<connect gate="P" pin="GND" pad="8"/>
-<connect gate="P" pin="VCC" pad="16"/>
-</connects>
-<technologies>
-<technology name=""/>
-<technology name="LS"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="pot">
 <packages>
 <package name="B25P">
@@ -16743,7 +16735,7 @@ Based on the following sources:
 <part name="V16" library="supply2" deviceset="GND" device=""/>
 <part name="V17" library="supply2" deviceset="GND" device=""/>
 <part name="SECTOR" library="switch" deviceset="CK101X12" device=""/>
-<part name="E34" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E34" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="E8" library="74xx-us" deviceset="74*123" device="N"/>
 <part name="CW" library="switch" deviceset="710X" device="" value="7101"/>
 <part name="WRITE" library="switch" deviceset="710X" device="" value="7108"/>
@@ -16778,7 +16770,7 @@ Based on the following sources:
 <part name="V58" library="supply2" deviceset="VCC" device=""/>
 <part name="V59" library="supply2" deviceset="GND" device=""/>
 <part name="E12" library="74xx-us" deviceset="74*04" device="N" technology="LS"/>
-<part name="E13" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E13" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R19" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="Q1" library="transistor-small-signal" deviceset="2N4870" device="" value="2N4894"/>
 <part name="C36" library="rcl" deviceset="C-US" device="075-032X103" value=".033uf"/>
@@ -16790,13 +16782,13 @@ Based on the following sources:
 <part name="R23" library="rcl" deviceset="R-US_" device="0207/10" value="68"/>
 <part name="V62" library="supply2" deviceset="GND" device=""/>
 <part name="C37" library="rcl" deviceset="C-US" device="075-032X103" value=".001uf"/>
-<part name="E22" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E22" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R24" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="V63" library="supply2" deviceset="VCC" device=""/>
 <part name="C34" library="rcl" deviceset="C-US" device="075-032X103" value=".001uf"/>
 <part name="E17" library="74xx-us" deviceset="74*00" device="N" technology="LS"/>
 <part name="R26" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
-<part name="E21" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E21" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R27" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="C35" library="rcl" deviceset="C-US" device="075-032X103" value="470pf"/>
 <part name="C25" library="rcl" deviceset="C-US" device="075-032X103" value="470pf"/>
@@ -16807,8 +16799,8 @@ Based on the following sources:
 <part name="V66" library="supply2" deviceset="GND" device=""/>
 <part name="E15" library="74xx-us" deviceset="74*00" device="N" technology="LS"/>
 <part name="E18" library="74xx-us" deviceset="74*74" device="N" technology="LS"/>
-<part name="E19" library="74xx-jameco" deviceset="74*193" device="N" technology="LS"/>
-<part name="E20" library="74xx-jameco" deviceset="74*193" device="N" technology="LS"/>
+<part name="E19" library="dec-con" deviceset="74*193" device="N" technology="LS"/>
+<part name="E20" library="dec-con" deviceset="74*193" device="N" technology="LS"/>
 <part name="C32" library="rcl" deviceset="C-US" device="075-032X103" value=".01uf"/>
 <part name="C31" library="rcl" deviceset="C-US" device="075-032X103" value=".01uf"/>
 <part name="C29" library="rcl" deviceset="C-US" device="075-032X103" value=".01uf"/>
@@ -16856,10 +16848,10 @@ Based on the following sources:
 <part name="E27" library="74xx-us" deviceset="74*00" device="N" technology="LS"/>
 <part name="E28" library="74xx-us" deviceset="74*00" device="N" technology="LS"/>
 <part name="E29" library="74xx-us" deviceset="74*00" device="N" technology="LS"/>
-<part name="E30" library="74xx-jameco" deviceset="DS75451" device="N"/>
-<part name="E31" library="74xx-jameco" deviceset="DS75451" device="N"/>
-<part name="E32" library="74xx-jameco" deviceset="DS75451" device="N"/>
-<part name="E33" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E30" library="dec-con" deviceset="DS75451" device="N"/>
+<part name="E31" library="dec-con" deviceset="DS75451" device="N"/>
+<part name="E32" library="dec-con" deviceset="DS75451" device="N"/>
+<part name="E33" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R38" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="R39" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="R40" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>

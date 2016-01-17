@@ -10020,7 +10020,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -10717,12 +10717,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C6" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="6.8uf"/>
 <part name="C7" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="6.8uf"/>
 <part name="C8" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="6.8uf"/>
-<part name="IC1" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="IC2" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="IC3" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="IC4" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="IC5" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="IC6" library="74xx-jameco" deviceset="74*01" device="N"/>
+<part name="IC1" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="IC2" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="IC3" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="IC4" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="IC5" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="IC6" library="74xx-us" deviceset="74*01" device="N"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="0207/10" value="3K"/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
 <part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="3K"/>
@@ -10731,10 +10731,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="V16" library="supply2" deviceset="VCC" device=""/>
 <part name="R11" library="rcl" deviceset="R-US_" device="0207/10" value="3K"/>
 <part name="V17" library="supply2" deviceset="VCC" device=""/>
-<part name="IC7" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="IC8" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="IC9" library="74xx-jameco" deviceset="74*01" device="N"/>
-<part name="IC10" library="74xx-jameco" deviceset="74*01" device="N"/>
+<part name="IC7" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="IC8" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="IC9" library="74xx-us" deviceset="74*01" device="N"/>
+<part name="IC10" library="74xx-us" deviceset="74*01" device="N"/>
 <part name="V18" library="supply2" deviceset="VCC" device=""/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0207/10" value="3K"/>
 <part name="V19" library="supply2" deviceset="VCC" device=""/>

@@ -13835,7 +13835,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="LCC20">
 <description>&lt;b&gt;Leadless Chip Carrier&lt;/b&gt;&lt;p&gt; Ceramic Package</description>
@@ -15296,7 +15296,7 @@ Based on the following sources:
 <part name="IC4" library="74xx-us" deviceset="74*06" device="N" technology="LS"/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
-<part name="IC5" library="74xx-jameco" deviceset="74*367" device="N" technology="LS"/>
+<part name="IC5" library="74xx-us" deviceset="74*367" device="N" technology="LS"/>
 <part name="IC6" library="74xx-us" deviceset="74*374" device="N" technology="LS"/>
 <part name="IC7" library="74xx-us" deviceset="74*06" device="N" technology="LS"/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>

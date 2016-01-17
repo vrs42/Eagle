@@ -1997,7 +1997,7 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -13908,10 +13908,10 @@ Based on the following sources:
 <part name="E2" library="dec-con" deviceset="SP380" device="N"/>
 <part name="E3" library="74xx-us" deviceset="74*37" device="N"/>
 <part name="E4" library="74xx-us" deviceset="74*30" device="N"/>
-<part name="E1" library="74xx-jameco" deviceset="74*01" device="N" value="N8881"/>
-<part name="E5" library="74xx-jameco" deviceset="74*01" device="N" value="N8881"/>
-<part name="E7" library="74xx-jameco" deviceset="74*01" device="N" value="N8881"/>
-<part name="E8" library="74xx-jameco" deviceset="74*01" device="N" value="N8881"/>
+<part name="E1" library="74xx-us" deviceset="74*01" device="N" value="N8881"/>
+<part name="E5" library="74xx-us" deviceset="74*01" device="N" value="N8881"/>
+<part name="E7" library="74xx-us" deviceset="74*01" device="N" value="N8881"/>
+<part name="E8" library="74xx-us" deviceset="74*01" device="N" value="N8881"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>

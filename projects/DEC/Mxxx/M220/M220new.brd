@@ -822,7 +822,7 @@ grid 15.24 mm, diameter 5 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -1106,20 +1106,20 @@ design rules under a new name.</description>
 <element name="C6" library="rcl" package="E15-5" value="6.8uf" x="106.68" y="76.2" rot="R270"/>
 <element name="C7" library="rcl" package="E15-5" value="6.8uf" x="106.68" y="48.26" rot="R270"/>
 <element name="C8" library="rcl" package="E15-5" value="6.8uf" x="106.68" y="20.32" rot="R90"/>
-<element name="IC1" library="74xx-jameco" package="DIL14" value="7401N" x="63.5" y="95.25" rot="R180"/>
-<element name="IC2" library="74xx-jameco" package="DIL14" value="7401N" x="38.1" y="95.25" rot="R180"/>
-<element name="IC3" library="74xx-jameco" package="DIL14" value="7401N" x="38.1" y="115.57" rot="R180"/>
-<element name="IC4" library="74xx-jameco" package="DIL14" value="7401N" x="88.9" y="77.47" rot="R180"/>
-<element name="IC5" library="74xx-jameco" package="DIL14" value="7401N" x="88.9" y="95.25" rot="R180"/>
-<element name="IC6" library="74xx-jameco" package="DIL14" value="7401N" x="88.9" y="115.57" rot="R180"/>
+<element name="IC1" library="74xx-us" package="DIL14" value="7401N" x="63.5" y="95.25" rot="R180"/>
+<element name="IC2" library="74xx-us" package="DIL14" value="7401N" x="38.1" y="95.25" rot="R180"/>
+<element name="IC3" library="74xx-us" package="DIL14" value="7401N" x="38.1" y="115.57" rot="R180"/>
+<element name="IC4" library="74xx-us" package="DIL14" value="7401N" x="88.9" y="77.47" rot="R180"/>
+<element name="IC5" library="74xx-us" package="DIL14" value="7401N" x="88.9" y="95.25" rot="R180"/>
+<element name="IC6" library="74xx-us" package="DIL14" value="7401N" x="88.9" y="115.57" rot="R180"/>
 <element name="R8" library="rcl" package="0207/10" value="3K" x="58.42" y="124.46"/>
 <element name="R9" library="rcl" package="0207/10" value="3K" x="66.04" y="86.36"/>
 <element name="R10" library="rcl" package="0207/10" value="3K" x="93.98" y="104.14"/>
 <element name="R11" library="rcl" package="0207/10" value="3K" x="63.5" y="106.68"/>
-<element name="IC7" library="74xx-jameco" package="DIL14" value="7401N" x="38.1" y="16.51" rot="R180"/>
-<element name="IC8" library="74xx-jameco" package="DIL14" value="7401N" x="88.9" y="16.51" rot="R180"/>
-<element name="IC9" library="74xx-jameco" package="DIL14" value="7401N" x="63.5" y="16.51" rot="R180"/>
-<element name="IC10" library="74xx-jameco" package="DIL14" value="7401N" x="63.5" y="36.83" rot="R180"/>
+<element name="IC7" library="74xx-us" package="DIL14" value="7401N" x="38.1" y="16.51" rot="R180"/>
+<element name="IC8" library="74xx-us" package="DIL14" value="7401N" x="88.9" y="16.51" rot="R180"/>
+<element name="IC9" library="74xx-us" package="DIL14" value="7401N" x="63.5" y="16.51" rot="R180"/>
+<element name="IC10" library="74xx-us" package="DIL14" value="7401N" x="63.5" y="36.83" rot="R180"/>
 <element name="R12" library="rcl" package="0207/10" value="3K" x="50.8" y="25.4"/>
 <element name="R13" library="rcl" package="0207/10" value="3K" x="66.04" y="25.4"/>
 <element name="R5" library="rcl" package="0207/10" value="3K" x="93.98" y="86.36"/>

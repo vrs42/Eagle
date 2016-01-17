@@ -15121,7 +15121,7 @@ grid 15 mm, outline 5.4 x 18.3 mm</description>
 </package>
 </packages>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -16146,17 +16146,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.081" y="174.625" size="1.27" layer="25" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="12.954" y="174.625" size="1.27" layer="27" ratio="15" rot="R270"/>
 </element>
-<element name="IC1" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="189.865" rot="R180"/>
-<element name="IC2" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="177.165" rot="R180"/>
+<element name="IC1" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="189.865" rot="R180"/>
+<element name="IC2" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="177.165" rot="R180"/>
 <element name="OUT5-6" library="con-lstb" package="MA08-2" value="" x="123.825" y="132.715" rot="R270"/>
-<element name="IC5" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="139.065" rot="R180"/>
-<element name="IC6" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="126.365" rot="R180"/>
+<element name="IC5" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="139.065" rot="R180"/>
+<element name="IC6" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="126.365" rot="R180"/>
 <element name="OUT3-4" library="con-lstb" package="MA08-2" value="" x="123.825" y="158.115" rot="R270"/>
-<element name="IC3" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="164.465" rot="R180"/>
-<element name="IC4" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="151.765" rot="R180"/>
+<element name="IC3" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="164.465" rot="R180"/>
+<element name="IC4" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="151.765" rot="R180"/>
 <element name="OUT7-8" library="con-lstb" package="MA08-2" value="" x="83.185" y="130.175" rot="R270"/>
-<element name="IC7" library="74xx-jameco" package="DIL14" value="74LS125N" x="66.675" y="136.525" rot="R180"/>
-<element name="IC8" library="74xx-jameco" package="DIL14" value="74LS125N" x="66.675" y="123.825" rot="R180"/>
+<element name="IC7" library="74xx-us" package="DIL14" value="74LS125N" x="66.675" y="136.525" rot="R180"/>
+<element name="IC8" library="74xx-us" package="DIL14" value="74LS125N" x="66.675" y="123.825" rot="R180"/>
 <element name="SIDE2" library="con-lstb" package="MA17-2" value="" x="15.875" y="141.605" rot="R270"/>
 <element name="SIDE1" library="con-lstb" package="MA17-2" value="" x="52.705" y="178.435" rot="R270"/>
 <element name="JP3" library="pinhead" package="1X18" value="" x="62.865" y="174.625" rot="R270"/>
@@ -16182,7 +16182,7 @@ design rules under a new name.</description>
 <element name="RN2" library="resistor-sil" package="SIL11" value="" x="53.975" y="131.445" rot="R90"/>
 <element name="RN3" library="resistor-sil" package="SIL11" value="" x="95.885" y="186.055" rot="R90"/>
 <element name="RN4" library="resistor-sil" package="SIL11" value="" x="95.885" y="135.255" rot="R90"/>
-<element name="IC9" library="74xx-jameco" package="DIL14" value="74LS10N" x="31.115" y="180.975" rot="R90"/>
+<element name="IC9" library="74xx-us" package="DIL14" value="74LS10N" x="31.115" y="180.975" rot="R90"/>
 <element name="!IO9" library="pinhead" package="1X01" value="!IO9" x="38.735" y="196.215" smashed="yes">
 <attribute name="NAME" x="38.0238" y="201.3712" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="38.1" y="201.295" size="1.27" layer="27" rot="R270"/>
@@ -16259,17 +16259,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.081" y="81.915" size="1.27" layer="25" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="12.954" y="81.915" size="1.27" layer="27" ratio="15" rot="R270"/>
 </element>
-<element name="IC10" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="97.155" rot="R180"/>
-<element name="IC11" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="84.455" rot="R180"/>
+<element name="IC10" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="97.155" rot="R180"/>
+<element name="IC11" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="84.455" rot="R180"/>
 <element name="OUT5-1" library="con-lstb" package="MA08-2" value="" x="123.825" y="40.005" rot="R270"/>
-<element name="IC12" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="46.355" rot="R180"/>
-<element name="IC13" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="33.655" rot="R180"/>
+<element name="IC12" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="46.355" rot="R180"/>
+<element name="IC13" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="33.655" rot="R180"/>
 <element name="OUT3-1" library="con-lstb" package="MA08-2" value="" x="123.825" y="65.405" rot="R270"/>
-<element name="IC14" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="71.755" rot="R180"/>
-<element name="IC15" library="74xx-jameco" package="DIL14" value="74LS125N" x="107.315" y="59.055" rot="R180"/>
+<element name="IC14" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="71.755" rot="R180"/>
+<element name="IC15" library="74xx-us" package="DIL14" value="74LS125N" x="107.315" y="59.055" rot="R180"/>
 <element name="OUT7-1" library="con-lstb" package="MA08-2" value="" x="83.185" y="37.465" rot="R270"/>
-<element name="IC16" library="74xx-jameco" package="DIL14" value="74LS125N" x="66.675" y="43.815" rot="R180"/>
-<element name="IC17" library="74xx-jameco" package="DIL14" value="74LS125N" x="66.675" y="31.115" rot="R180"/>
+<element name="IC16" library="74xx-us" package="DIL14" value="74LS125N" x="66.675" y="43.815" rot="R180"/>
+<element name="IC17" library="74xx-us" package="DIL14" value="74LS125N" x="66.675" y="31.115" rot="R180"/>
 <element name="SIDE3" library="con-lstb" package="MA17-2" value="" x="15.875" y="48.895" rot="R270"/>
 <element name="SIDE4" library="con-lstb" package="MA17-2" value="" x="52.705" y="85.725" rot="R270"/>
 <element name="JP5" library="pinhead" package="1X18" value="" x="62.865" y="81.915" rot="R270"/>
@@ -16295,7 +16295,7 @@ design rules under a new name.</description>
 <element name="RN6" library="resistor-sil" package="SIL11" value="" x="53.975" y="38.735" rot="R90"/>
 <element name="RN7" library="resistor-sil" package="SIL11" value="" x="95.885" y="93.345" rot="R90"/>
 <element name="RN8" library="resistor-sil" package="SIL11" value="" x="95.885" y="42.545" rot="R90"/>
-<element name="IC18" library="74xx-jameco" package="DIL14" value="74LS10N" x="31.115" y="88.265" rot="R90"/>
+<element name="IC18" library="74xx-us" package="DIL14" value="74LS10N" x="31.115" y="88.265" rot="R90"/>
 <element name="!IO91" library="pinhead" package="1X01" value="!IO9" x="38.735" y="103.505" smashed="yes">
 <attribute name="NAME" x="38.0238" y="108.6612" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="38.1" y="108.585" size="1.27" layer="27" rot="R270"/>

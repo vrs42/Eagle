@@ -1056,7 +1056,7 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -10506,15 +10506,15 @@ Based on the following sources:
 <parts>
 <part name="U$1" library="dec-con" deviceset="OUTLINE-*" device="SINGLE"/>
 <part name="U$2" library="dec-con" deviceset="EDGE-2" device="CONNECTOR"/>
-<part name="E1" library="74xx-jameco" deviceset="74*20" device="N" technology="S" value="7420N"/>
-<part name="E2" library="74xx-jameco" deviceset="74*20" device="N" technology="S" value="7420N"/>
-<part name="E4" library="74xx-jameco" deviceset="74*20" device="N" technology="S" value="7420N"/>
-<part name="E5" library="74xx-jameco" deviceset="74*20" device="N" technology="S" value="7420N"/>
+<part name="E1" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420N"/>
+<part name="E2" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420N"/>
+<part name="E4" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420N"/>
+<part name="E5" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420N"/>
 <part name="E6" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420N"/>
-<part name="E7" library="74xx-jameco" deviceset="74*20" device="N" technology="S" value="7420N"/>
-<part name="E8" library="74xx-jameco" deviceset="74*20" device="N" technology="S" value="7420N"/>
-<part name="E10" library="74xx-jameco" deviceset="74*20" device="N" technology="S" value="7420N"/>
-<part name="E11" library="74xx-jameco" deviceset="74*20" device="N" technology="S" value="7420N"/>
+<part name="E7" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420N"/>
+<part name="E8" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420N"/>
+<part name="E10" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420N"/>
+<part name="E11" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420N"/>
 <part name="E3" library="74xx-us" deviceset="74*30" device="N"/>
 <part name="E9" library="74xx-us" deviceset="74*30" device="N"/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>

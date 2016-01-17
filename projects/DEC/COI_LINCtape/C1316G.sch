@@ -11934,6 +11934,81 @@ type 0414, grid 15 mm</description>
 <smd name="B13" x="15.24" y="3.8725" dx="1.27" dy="8.89" layer="16"/>
 <text x="-17.78" y="10.795" size="1.27" layer="21" rot="R180">&gt;Name</text>
 </package>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="D_R-PDSO-G8">
+<description>&lt;b&gt;D (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
+Source: http://focus.ti.com/lit/ds/slos063b/slos063b.pdf</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<smd name="2" x="-0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="7" x="-0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="1" x="-1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="3" x="0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="4" x="1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="8" x="-1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="6" x="0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="5" x="1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.2" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.2" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.2" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.2" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.2" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.2" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.2" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.2" layer="51"/>
+</package>
+<package name="PS_R-PDSO-G8">
+<description>&lt;b&gt;PS (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
+Source: www.ti.com sn75452b.pdf</description>
+<wire x1="3.15" y1="2.675" x2="3.15" y2="-2.675" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-2.675" x2="-3.125" y2="-2.675" width="0.2032" layer="51"/>
+<wire x1="-3.125" y1="-2.675" x2="-3.125" y2="2.675" width="0.2032" layer="21"/>
+<wire x1="-3.125" y1="2.675" x2="3.15" y2="2.675" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
+<smd name="7" x="-0.635" y="3.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="1" x="-1.905" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
+<smd name="3" x="0.635" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
+<smd name="4" x="1.905" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
+<smd name="8" x="-1.905" y="3.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="6" x="0.635" y="3.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="5" x="1.905" y="3.7" dx="0.6" dy="1.5" layer="1"/>
+<text x="-3.55" y="-2.925" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.737" y="-2.93" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-4.1" x2="-1.66" y2="-2.8" layer="51"/>
+<rectangle x1="-0.88" y1="-4.1" x2="-0.39" y2="-2.8" layer="51"/>
+<rectangle x1="0.39" y1="-4.1" x2="0.88" y2="-2.8" layer="51"/>
+<rectangle x1="1.66" y1="-4.1" x2="2.15" y2="-2.8" layer="51"/>
+<rectangle x1="1.66" y1="2.8" x2="2.15" y2="4.1" layer="51"/>
+<rectangle x1="0.39" y1="2.8" x2="0.88" y2="4.1" layer="51"/>
+<rectangle x1="-0.88" y1="2.8" x2="-0.39" y2="4.1" layer="51"/>
+<rectangle x1="-2.15" y1="2.8" x2="-1.66" y2="4.1" layer="51"/>
+<circle x="-2.205" y="-1.595" radius="0.388971875" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="UA733">
@@ -12014,6 +12089,24 @@ type 0414, grid 15 mm</description>
 <pin name="O" x="5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="S" x="-5.08" y="5.08" visible="pad" length="short" direction="pas"/>
 <pin name="P" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="NAND">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
+<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
+</symbol>
+<symbol name="PWRN-1">
+<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="-6.35" size="1.27" layer="95" rot="R90">GND</text>
+<text x="1.905" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -12159,57 +12252,13 @@ type 0414, grid 15 mm</description>
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="74xx-jameco">
-<packages>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="7403">
-<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
-<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="oc" function="dot" rot="R180"/>
-</symbol>
-<symbol name="PWRN">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DS75452" prefix="IC">
-<description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector output</description>
+<deviceset name="DS75452" prefix="E">
+<description>&lt;b&gt;NAND&lt;/b&gt; PERIPHERAL DRIVERS FOR HIGH-CURRENT SWITCHING AT VERY HIGH SPEEDS&lt;p&gt;
+Source: www.ti.com sn75452b.pdf</description>
 <gates>
-<gate name="A" symbol="7403" x="20.32" y="7.62" swaplevel="1"/>
-<gate name="B" symbol="7403" x="20.32" y="-10.16" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="A" symbol="NAND" x="0" y="10.16"/>
+<gate name="B" symbol="NAND" x="0" y="-10.16"/>
+<gate name="P" symbol="PWRN-1" x="17.78" y="0"/>
 </gates>
 <devices>
 <device name="N" package="DIL08">
@@ -12217,8 +12266,53 @@ type 0414, grid 15 mm</description>
 <connect gate="A" pin="I0" pad="1"/>
 <connect gate="A" pin="I1" pad="2"/>
 <connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="6"/>
-<connect gate="B" pin="I1" pad="7"/>
+<connect gate="B" pin="I0" pad="7"/>
+<connect gate="B" pin="I1" pad="6"/>
+<connect gate="B" pin="O" pad="5"/>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="P" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JG" package="DIL08">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="3"/>
+<connect gate="B" pin="I0" pad="7"/>
+<connect gate="B" pin="I1" pad="6"/>
+<connect gate="B" pin="O" pad="5"/>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="P" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="D" package="D_R-PDSO-G8">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="3"/>
+<connect gate="B" pin="I0" pad="7"/>
+<connect gate="B" pin="I1" pad="6"/>
+<connect gate="B" pin="O" pad="5"/>
+<connect gate="P" pin="GND" pad="4"/>
+<connect gate="P" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PS" package="PS_R-PDSO-G8">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="3"/>
+<connect gate="B" pin="I0" pad="7"/>
+<connect gate="B" pin="I1" pad="6"/>
 <connect gate="B" pin="O" pad="5"/>
 <connect gate="P" pin="GND" pad="4"/>
 <connect gate="P" pin="VCC" pad="8"/>
@@ -17349,7 +17443,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="C4" library="rcl" deviceset="C-US" device="102-043X133"/>
 <part name="C5" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="C6" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="U3" library="74xx-jameco" deviceset="DS75452" device="N"/>
+<part name="U3" library="dec-con" deviceset="DS75452" device="N"/>
 <part name="P1" library="dec-con" deviceset="EDGE13X2" device=""/>
 <part name="CR23" library="diode" deviceset="1N4004" device="" value="1N4004"/>
 <part name="CR24" library="diode" deviceset="1N4004" device="" value="1N4004"/>
@@ -17375,7 +17469,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="C10" library="rcl" deviceset="C-US" device="102-043X133"/>
 <part name="C11" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="C12" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="U6" library="74xx-jameco" deviceset="DS75452" device="N"/>
+<part name="U6" library="dec-con" deviceset="DS75452" device="N"/>
 <part name="U18" library="74xx-us" deviceset="74*04" device="N"/>
 <part name="P2" library="con-harting-h" deviceset="26HS" device=""/>
 <part name="U16" library="74xx-us" deviceset="74*06" device="N"/>
@@ -17399,7 +17493,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="C16" library="rcl" deviceset="C-US" device="102-043X133"/>
 <part name="C17" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="C18" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="U9" library="74xx-jameco" deviceset="DS75452" device="N"/>
+<part name="U9" library="dec-con" deviceset="DS75452" device="N"/>
 <part name="R43" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
 <part name="R44" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
 <part name="R45" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
@@ -17420,7 +17514,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="C22" library="rcl" deviceset="C-US" device="102-043X133"/>
 <part name="C23" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="C24" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="U12" library="74xx-jameco" deviceset="DS75452" device="N"/>
+<part name="U12" library="dec-con" deviceset="DS75452" device="N"/>
 <part name="R57" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
 <part name="R58" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
 <part name="R59" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
@@ -17441,7 +17535,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="C28" library="rcl" deviceset="C-US" device="102-043X133"/>
 <part name="C29" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="C30" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="U15" library="74xx-jameco" deviceset="DS75452" device="N"/>
+<part name="U15" library="dec-con" deviceset="DS75452" device="N"/>
 <part name="FRAME2" library="frames" deviceset="TABL_L" device=""/>
 <part name="U21" library="74xx-us" deviceset="74*06" device="N"/>
 <part name="U22" library="74xx-us" deviceset="74*06" device="N"/>

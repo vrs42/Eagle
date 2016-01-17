@@ -1022,6 +1022,25 @@
 <hole x="209.55" y="74.93" drill="3.175"/>
 <hole x="209.55" y="126.365" drill="3.175"/>
 </package>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DEVICE">
@@ -1046,6 +1065,24 @@
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="PWRN">
+<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
+<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
+<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="7409">
+<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
+<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="oc" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1265,6 +1302,30 @@
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS75451" prefix="IC">
+<gates>
+<gate name="PWR" symbol="PWRN" x="22.86" y="0" addlevel="request"/>
+<gate name="A" symbol="7409" x="-2.54" y="10.16" swaplevel="1"/>
+<gate name="B" symbol="7409" x="-2.54" y="-10.16" swaplevel="1"/>
+</gates>
+<devices>
+<device name="N" package="DIL08">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="3"/>
+<connect gate="B" pin="I0" pad="6"/>
+<connect gate="B" pin="I1" pad="7"/>
+<connect gate="B" pin="O" pad="5"/>
+<connect gate="PWR" pin="GND" pad="4"/>
+<connect gate="PWR" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6013,75 +6074,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
-<packages>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PWRN">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
-</symbol>
-<symbol name="7409">
-<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
-<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="oc" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DS75451" prefix="IC">
-<gates>
-<gate name="PWR" symbol="PWRN" x="22.86" y="0" addlevel="request"/>
-<gate name="A" symbol="7409" x="-2.54" y="10.16" swaplevel="1"/>
-<gate name="B" symbol="7409" x="-2.54" y="-10.16" swaplevel="1"/>
-</gates>
-<devices>
-<device name="N" package="DIL08">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="6"/>
-<connect gate="B" pin="I1" pad="7"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="PWR" pin="GND" pad="4"/>
-<connect gate="PWR" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="wirepad">
 <packages>
 <package name="1,6/0,8">
@@ -6151,7 +6143,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V14" library="supply2" deviceset="VCC" device=""/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
 <part name="V70" library="supply2" deviceset="VCC" device=""/>
-<part name="E1" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E1" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
@@ -6159,7 +6151,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V2" library="supply2" deviceset="VCC" device=""/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
-<part name="E2" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E2" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R35" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V6" library="supply2" deviceset="VCC" device=""/>
 <part name="R36" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
@@ -6168,7 +6160,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V8" library="supply2" deviceset="VCC" device=""/>
 <part name="R38" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
-<part name="E3" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E3" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R45" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V10" library="supply2" deviceset="VCC" device=""/>
 <part name="R46" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
@@ -6177,7 +6169,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V12" library="supply2" deviceset="VCC" device=""/>
 <part name="R48" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V13" library="supply2" deviceset="GND" device=""/>
-<part name="E4" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E4" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V15" library="supply2" deviceset="VCC" device=""/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
@@ -6187,7 +6179,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V18" library="supply2" deviceset="GND" device=""/>
 <part name="V19" library="supply2" deviceset="VCC" device=""/>
-<part name="E5" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E5" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R29" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="R30" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V20" library="supply2" deviceset="GND" device=""/>
@@ -6195,7 +6187,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V21" library="supply2" deviceset="VCC" device=""/>
 <part name="R32" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V22" library="supply2" deviceset="GND" device=""/>
-<part name="E6" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E6" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R39" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V23" library="supply2" deviceset="VCC" device=""/>
 <part name="R40" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
@@ -6204,7 +6196,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V25" library="supply2" deviceset="VCC" device=""/>
 <part name="R42" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V26" library="supply2" deviceset="GND" device=""/>
-<part name="E7" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E7" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R49" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V27" library="supply2" deviceset="VCC" device=""/>
 <part name="R50" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
@@ -6213,7 +6205,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V29" library="supply2" deviceset="VCC" device=""/>
 <part name="R26" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V30" library="supply2" deviceset="GND" device=""/>
-<part name="E8" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E8" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V31" library="supply2" deviceset="VCC" device=""/>
 <part name="R11" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
@@ -6223,7 +6215,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R13" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V34" library="supply2" deviceset="GND" device=""/>
 <part name="V35" library="supply2" deviceset="VCC" device=""/>
-<part name="E9" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E9" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R33" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="R34" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V36" library="supply2" deviceset="GND" device=""/>
@@ -6231,12 +6223,12 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V37" library="supply2" deviceset="VCC" device=""/>
 <part name="R17" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V38" library="supply2" deviceset="GND" device=""/>
-<part name="E10" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E10" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R43" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V39" library="supply2" deviceset="VCC" device=""/>
 <part name="R44" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V40" library="supply2" deviceset="GND" device=""/>
-<part name="E11" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E11" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V43" library="supply2" deviceset="VCC" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
@@ -6245,7 +6237,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V45" library="supply2" deviceset="VCC" device=""/>
 <part name="R23" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V46" library="supply2" deviceset="GND" device=""/>
-<part name="E12" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E12" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R16" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V47" library="supply2" deviceset="VCC" device=""/>
 <part name="R15" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
@@ -6254,7 +6246,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V49" library="supply2" deviceset="VCC" device=""/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
 <part name="V50" library="supply2" deviceset="GND" device=""/>
-<part name="E13" library="74xx-jameco" deviceset="DS75451" device="N"/>
+<part name="E13" library="dec-con" deviceset="DS75451" device="N"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0207/10" value="150"/>
 <part name="V51" library="supply2" deviceset="VCC" device=""/>
 <part name="R19" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>

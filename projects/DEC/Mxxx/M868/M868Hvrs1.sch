@@ -7831,7 +7831,7 @@ DIN A3, landscape with extra doc field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -9902,9 +9902,9 @@ Based on the following sources:
 <part name="E34" library="74xx-us" deviceset="74*74" device="N" technology="S" value="7474N"/>
 <part name="E40" library="74xx-us" deviceset="74*30" device="N"/>
 <part name="E42" library="74xx-us" deviceset="74*266" device="N" technology="LS" value="DEC8242"/>
-<part name="E43" library="74xx-jameco" deviceset="74*01" device="N"/>
+<part name="E43" library="74xx-us" deviceset="74*01" device="N"/>
 <part name="E44" library="dec-con" deviceset="SP380" device="N"/>
-<part name="E46" library="74xx-jameco" deviceset="74*01" device="N"/>
+<part name="E46" library="74xx-us" deviceset="74*01" device="N"/>
 <part name="E45" library="dec-con" deviceset="DEC8251" device=""/>
 <part name="V29" library="supply2" deviceset="GND" device=""/>
 <part name="V30" library="supply2" deviceset="GND" device=""/>

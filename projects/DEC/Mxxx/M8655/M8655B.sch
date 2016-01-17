@@ -7915,7 +7915,7 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -16646,7 +16646,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C62" library="dec-con" deviceset="CPOL-USE20-8AXIAL" device="" value="6.8uF"/>
 <part name="V16" library="supply2" deviceset="GND" device=""/>
 <part name="V17" library="supply2" deviceset="GND" device=""/>
-<part name="E34" library="74xx-jameco" deviceset="74*01" device="N" value="97401N"/>
+<part name="E34" library="74xx-us" deviceset="74*01" device="N" value="97401N"/>
 <part name="E36" library="dec-con" deviceset="8266" device=""/>
 <part name="V18" library="supply2" deviceset="GND" device=""/>
 <part name="E35" library="74xx-us" deviceset="74*02" device="N"/>
@@ -16672,7 +16672,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="E57" library="74xx-us" deviceset="74*74" device="N" technology="S" value="7474N"/>
 <part name="R26" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="V22" library="supply2" deviceset="VCC" device=""/>
-<part name="E33" library="74xx-jameco" deviceset="74*01" device="N" value="97401N"/>
+<part name="E33" library="74xx-us" deviceset="74*01" device="N" value="97401N"/>
 <part name="E53" library="dec-con" deviceset="N8815" device=""/>
 <part name="E38" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="FRAME2" library="frames" deviceset="TABL_L" device=""/>

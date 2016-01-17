@@ -6088,7 +6088,7 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -6401,7 +6401,7 @@ high speed (Philips)</description>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
 <part name="V10" library="supply2" deviceset="GND" device=""/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
-<part name="E1" library="74xx-jameco" deviceset="74*20" device="N" technology="S"/>
+<part name="E1" library="74xx-us" deviceset="74*20" device="N" technology="S"/>
 <part name="V13" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>

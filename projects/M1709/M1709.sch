@@ -14677,7 +14677,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-jameco">
+<library name="74xx-us">
 <packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -15780,15 +15780,15 @@ Based on the following sources:
 <part name="#27_IO_PAUSE" library="wirepad" deviceset="2,54/0,8" device="" value="27"/>
 <part name="!#29_BTP3" library="wirepad" deviceset="2,54/0,8" device="" value="29"/>
 <part name="!#30_BINIT" library="wirepad" deviceset="2,54/0,8" device="" value="30"/>
-<part name="E7" library="74xx-jameco" deviceset="74*01" device="N" value="DEC8881"/>
-<part name="E8" library="74xx-jameco" deviceset="74*01" device="N" value="DEC8881"/>
+<part name="E7" library="74xx-us" deviceset="74*01" device="N" value="DEC8881"/>
+<part name="E8" library="74xx-us" deviceset="74*01" device="N" value="DEC8881"/>
 <part name="SV12" library="con-lstb" deviceset="MA09-1" device="" value="31-39"/>
 <part name="E1" library="dec-con" deviceset="SP380" device="N"/>
 <part name="E4" library="dec-con" deviceset="SP380" device="N"/>
 <part name="E10" library="dec-con" deviceset="SP380" device="N"/>
-<part name="E2" library="74xx-jameco" deviceset="74*01" device="N" value="DEC8881"/>
-<part name="E6" library="74xx-jameco" deviceset="74*01" device="N" value="DEC8881"/>
-<part name="E11" library="74xx-jameco" deviceset="74*01" device="N" value="DEC8881"/>
+<part name="E2" library="74xx-us" deviceset="74*01" device="N" value="DEC8881"/>
+<part name="E6" library="74xx-us" deviceset="74*01" device="N" value="DEC8881"/>
+<part name="E11" library="74xx-us" deviceset="74*01" device="N" value="DEC8881"/>
 <part name="SV13" library="con-lstb" deviceset="MA07-1" device="" value="41-47"/>
 <part name="SV14" library="con-lstb" deviceset="MA07-1" device="" value="48-54"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="2.2K"/>
