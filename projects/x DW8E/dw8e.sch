@@ -919,7 +919,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="M1702">
+<deviceset name="M7102" prefix="M7102_">
 <description>Positive I/O Bus Converter</description>
 <gates>
 <gate name="G$1" symbol="M7102A" x="2.54" y="55.88"/>
@@ -933,8 +933,8 @@
 <gate name="G$10" symbol="T1GND" x="152.4" y="81.28" addlevel="request"/>
 <gate name="G$11" symbol="T1GND" x="165.1" y="81.28" addlevel="request"/>
 <gate name="NAND" symbol="NAND2" x="162.56" y="68.58"/>
-<gate name="NOR1" symbol="NOR2" x="162.56" y="55.88"/>
-<gate name="NOR2" symbol="NOR2" x="162.56" y="43.18"/>
+<gate name="NOR1" symbol="NOR2" x="162.56" y="55.88" swaplevel="1"/>
+<gate name="NOR2" symbol="NOR2" x="162.56" y="43.18" swaplevel="1"/>
 <gate name="G$12" symbol="M7102F" x="147.32" y="5.08"/>
 <gate name="G$5" symbol="M7102E" x="109.22" y="38.1"/>
 <gate name="G$13" symbol="M7102G" x="109.22" y="-7.62"/>
@@ -1150,10 +1150,10 @@ DIN A3, landscape with extra doc field</description>
 </classes>
 <parts>
 <part name="FRAME3" library="frames" deviceset="DINA3_L" device=""/>
-<part name="AB17" library="dec-m" deviceset="M1702" device="" value="M7102"/>
-<part name="AB18" library="dec-m" deviceset="M1702" device="" value="M7102"/>
-<part name="AB19" library="dec-m" deviceset="M1702" device="" value="M7102"/>
-<part name="AB20" library="dec-m" deviceset="M1702" device="" value="M7102"/>
+<part name="AB17" library="dec-m" deviceset="M7102" device="" value="M7102"/>
+<part name="AB18" library="dec-m" deviceset="M7102" device="" value="M7102"/>
+<part name="AB19" library="dec-m" deviceset="M7102" device="" value="M7102"/>
+<part name="AB20" library="dec-m" deviceset="M7102" device="" value="M7102"/>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
 <part name="V14" library="supply2" deviceset="VCC" device=""/>

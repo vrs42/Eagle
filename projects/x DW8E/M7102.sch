@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -320,7 +320,7 @@
 </package>
 </packages>
 <symbols>
-<symbol name="M1702A">
+<symbol name="M7102A">
 <wire x1="40.64" y1="68.58" x2="40.64" y2="66.04" width="0.254" layer="94"/>
 <wire x1="40.64" y1="66.04" x2="40.64" y2="63.5" width="0.254" layer="94"/>
 <wire x1="40.64" y1="63.5" x2="43.18" y2="64.77" width="0.254" layer="94"/>
@@ -477,6 +477,18 @@
 <circle x="50.8" y="66.04" radius="0.127" width="0.1778" layer="94"/>
 <circle x="81.28" y="7.62" radius="0.254" width="0.1524" layer="94"/>
 <circle x="81.28" y="7.62" radius="0.127" width="0.1778" layer="94"/>
+<circle x="50.8" y="66.04" radius="0.254" width="0.254" layer="94"/>
+<circle x="50.8" y="48.26" radius="0.254" width="0.254" layer="94"/>
+<circle x="50.8" y="30.48" radius="0.254" width="0.254" layer="94"/>
+<circle x="30.48" y="10.16" radius="0.254" width="0.254" layer="94"/>
+<circle x="15.24" y="25.4" radius="0.254" width="0.254" layer="94"/>
+<circle x="81.28" y="7.62" radius="0.254" width="0.254" layer="94"/>
+<circle x="30.48" y="10.16" radius="0.508" width="0.254" layer="94"/>
+<circle x="15.24" y="25.4" radius="0.508" width="0.254" layer="94"/>
+<circle x="50.8" y="30.48" radius="0.508" width="0.254" layer="94"/>
+<circle x="81.28" y="7.62" radius="0.508" width="0.254" layer="94"/>
+<circle x="50.8" y="48.26" radius="0.508" width="0.254" layer="94"/>
+<circle x="50.8" y="66.04" radius="0.508" width="0.254" layer="94"/>
 <text x="7.62" y="58.42" size="1.27" layer="94">&gt;Part</text>
 <text x="7.62" y="55.88" size="1.27" layer="94">&gt;Value</text>
 <text x="7.62" y="53.34" size="1.27" layer="94">Bus Tranceivers</text>
@@ -496,7 +508,7 @@
 <pin name="AH2" x="91.44" y="20.32" visible="pad" direction="oc" rot="R180"/>
 <pin name="BK2" x="58.42" y="66.04" visible="pad" direction="oc" rot="R180"/>
 </symbol>
-<symbol name="M1702B">
+<symbol name="M7102B">
 <wire x1="15.24" y1="30.48" x2="15.24" y2="27.94" width="0.254" layer="94"/>
 <wire x1="15.24" y1="27.94" x2="15.24" y2="25.4" width="0.254" layer="94"/>
 <wire x1="15.24" y1="25.4" x2="20.32" y2="27.94" width="0.254" layer="94"/>
@@ -529,7 +541,7 @@
 <pin name="BJ2" x="30.48" y="7.62" visible="pad" direction="oc" rot="R180"/>
 <pin name="BF2" x="30.48" y="27.94" visible="pad" direction="oc" rot="R180"/>
 </symbol>
-<symbol name="M1702C">
+<symbol name="M7102C">
 <wire x1="15.24" y1="20.32" x2="15.24" y2="17.78" width="0.254" layer="94"/>
 <wire x1="15.24" y1="17.78" x2="15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="15.24" y1="15.24" x2="20.32" y2="17.78" width="0.254" layer="94"/>
@@ -547,10 +559,10 @@
 <text x="10.16" y="22.86" size="1.27" layer="94">Bus Receivers</text>
 <pin name="AK2" x="7.62" y="17.78" visible="pad" direction="in"/>
 <pin name="AL2" x="7.62" y="7.62" visible="pad" direction="in"/>
-<pin name="AM2" x="27.94" y="7.62" visible="pad" direction="oc" rot="R180"/>
-<pin name="AN2" x="27.94" y="17.78" visible="pad" direction="oc" rot="R180"/>
+<pin name="AM2" x="27.94" y="7.62" visible="pad" direction="out" rot="R180"/>
+<pin name="AN2" x="27.94" y="17.78" visible="pad" direction="out" rot="R180"/>
 </symbol>
-<symbol name="M1702D">
+<symbol name="M7102D">
 <wire x1="12.7" y1="30.48" x2="12.7" y2="27.94" width="0.254" layer="94"/>
 <wire x1="12.7" y1="27.94" x2="12.7" y2="25.4" width="0.254" layer="94"/>
 <wire x1="12.7" y1="25.4" x2="17.78" y2="27.94" width="0.254" layer="94"/>
@@ -587,68 +599,50 @@
 <circle x="20.32" y="17.78" radius="0.254" width="0.1524" layer="94"/>
 <circle x="20.32" y="27.94" radius="0.254" width="0.1524" layer="94"/>
 <circle x="20.32" y="17.78" radius="0.127" width="0.1524" layer="94"/>
+<circle x="20.32" y="27.94" radius="0.3592" width="0.254" layer="94"/>
+<circle x="20.32" y="17.78" radius="0.3592" width="0.254" layer="94"/>
 <text x="12.7" y="38.1" size="1.27" layer="94">&gt;Part</text>
 <text x="12.7" y="35.56" size="1.27" layer="94">&gt;Value</text>
 <text x="12.7" y="33.02" size="1.27" layer="94">Bus Receivers</text>
 <pin name="AP2" x="5.08" y="27.94" visible="pad" direction="in"/>
 <pin name="AR2" x="5.08" y="17.78" visible="pad" direction="in"/>
-<pin name="AS2" x="38.1" y="17.78" visible="pad" direction="oc" rot="R180"/>
+<pin name="AS2" x="38.1" y="17.78" visible="pad" direction="out" rot="R180"/>
 <pin name="BB1" x="38.1" y="22.86" visible="pad" direction="oc" rot="R180"/>
-<pin name="AT2" x="38.1" y="27.94" visible="pad" direction="oc" rot="R180"/>
+<pin name="AT2" x="38.1" y="27.94" visible="pad" direction="out" rot="R180"/>
 <pin name="BA1" x="38.1" y="12.7" visible="pad" direction="oc" rot="R180"/>
 </symbol>
-<symbol name="M1702E">
-<wire x1="15.24" y1="76.2" x2="15.24" y2="73.66" width="0.254" layer="94"/>
-<wire x1="15.24" y1="73.66" x2="15.24" y2="71.12" width="0.254" layer="94"/>
-<wire x1="15.24" y1="71.12" x2="20.32" y2="73.66" width="0.254" layer="94"/>
-<wire x1="20.32" y1="73.66" x2="15.24" y2="76.2" width="0.254" layer="94"/>
-<wire x1="15.24" y1="66.04" x2="15.24" y2="63.5" width="0.254" layer="94"/>
-<wire x1="15.24" y1="63.5" x2="15.24" y2="60.96" width="0.254" layer="94"/>
-<wire x1="15.24" y1="60.96" x2="20.32" y2="63.5" width="0.254" layer="94"/>
-<wire x1="20.32" y1="63.5" x2="15.24" y2="66.04" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="88.9" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0" y1="88.9" x2="35.56" y2="88.9" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="35.56" y1="88.9" x2="35.56" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<symbol name="M7102E">
+<wire x1="15.24" y1="40.64" x2="15.24" y2="38.1" width="0.254" layer="94"/>
+<wire x1="15.24" y1="38.1" x2="15.24" y2="35.56" width="0.254" layer="94"/>
+<wire x1="15.24" y1="35.56" x2="20.32" y2="38.1" width="0.254" layer="94"/>
+<wire x1="20.32" y1="38.1" x2="15.24" y2="40.64" width="0.254" layer="94"/>
+<wire x1="15.24" y1="30.48" x2="15.24" y2="27.94" width="0.254" layer="94"/>
+<wire x1="15.24" y1="27.94" x2="15.24" y2="25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="25.4" x2="20.32" y2="27.94" width="0.254" layer="94"/>
+<wire x1="20.32" y1="27.94" x2="15.24" y2="30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="53.34" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="35.56" y1="53.34" x2="35.56" y2="0" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="35.56" y1="0" x2="0" y2="0" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="15.24" y1="55.88" x2="15.24" y2="53.34" width="0.254" layer="94"/>
-<wire x1="15.24" y1="53.34" x2="15.24" y2="50.8" width="0.254" layer="94"/>
-<wire x1="15.24" y1="50.8" x2="20.32" y2="53.34" width="0.254" layer="94"/>
-<wire x1="20.32" y1="53.34" x2="15.24" y2="55.88" width="0.254" layer="94"/>
-<wire x1="15.24" y1="45.72" x2="15.24" y2="43.18" width="0.254" layer="94"/>
-<wire x1="15.24" y1="43.18" x2="15.24" y2="40.64" width="0.254" layer="94"/>
-<wire x1="15.24" y1="40.64" x2="20.32" y2="43.18" width="0.254" layer="94"/>
-<wire x1="20.32" y1="43.18" x2="15.24" y2="45.72" width="0.254" layer="94"/>
-<wire x1="15.24" y1="25.4" x2="15.24" y2="22.86" width="0.254" layer="94"/>
-<wire x1="15.24" y1="22.86" x2="15.24" y2="20.32" width="0.254" layer="94"/>
-<wire x1="15.24" y1="20.32" x2="20.32" y2="22.86" width="0.254" layer="94"/>
-<wire x1="20.32" y1="22.86" x2="15.24" y2="25.4" width="0.254" layer="94"/>
-<wire x1="15.24" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="17.78" x2="12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="15.24" y2="17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="17.78" x2="12.7" y2="22.86" width="0.1524" layer="94"/>
-<wire x1="15.24" y1="35.56" x2="15.24" y2="33.02" width="0.254" layer="94"/>
-<wire x1="15.24" y1="33.02" x2="15.24" y2="30.48" width="0.254" layer="94"/>
-<wire x1="15.24" y1="30.48" x2="20.32" y2="33.02" width="0.254" layer="94"/>
-<wire x1="20.32" y1="33.02" x2="15.24" y2="35.56" width="0.254" layer="94"/>
-<circle x="12.7" y="22.86" radius="0.127" width="0.1524" layer="94"/>
-<circle x="12.7" y="22.86" radius="0.254" width="0.1524" layer="94"/>
-<text x="10.16" y="83.82" size="1.27" layer="94">&gt;Part</text>
-<text x="10.16" y="81.28" size="1.27" layer="94">&gt;Value</text>
-<text x="10.16" y="78.74" size="1.27" layer="94">Bus Drivers</text>
-<pin name="BN2" x="7.62" y="73.66" visible="pad" direction="in"/>
-<pin name="BP2" x="7.62" y="63.5" visible="pad" direction="in"/>
-<pin name="AE1" x="27.94" y="63.5" visible="pad" direction="oc" rot="R180"/>
-<pin name="AD1" x="27.94" y="73.66" visible="pad" direction="oc" rot="R180"/>
-<pin name="BR2" x="7.62" y="53.34" visible="pad" direction="in"/>
-<pin name="BS2" x="7.62" y="43.18" visible="pad" direction="in"/>
-<pin name="AE2" x="27.94" y="43.18" visible="pad" direction="oc" rot="R180"/>
-<pin name="AD2" x="27.94" y="53.34" visible="pad" direction="oc" rot="R180"/>
-<pin name="BU1" x="7.62" y="22.86" visible="pad" direction="in"/>
-<pin name="BU2" x="12.7" y="5.08" visible="pad" direction="oc" function="dot" rot="R90"/>
-<pin name="AB1" x="27.94" y="22.86" visible="pad" direction="oc" rot="R180"/>
-<pin name="BV1" x="7.62" y="33.02" visible="pad" direction="in"/>
-<pin name="AA1" x="27.94" y="33.02" visible="pad" direction="oc" function="dot" rot="R180"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="20.32" y2="17.78" width="0.254" layer="94"/>
+<wire x1="20.32" y1="17.78" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="7.62" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<text x="10.16" y="48.26" size="1.27" layer="94">&gt;Part</text>
+<text x="10.16" y="45.72" size="1.27" layer="94">&gt;Value</text>
+<text x="10.16" y="43.18" size="1.27" layer="94">Bus Drivers</text>
+<pin name="BN2" x="7.62" y="38.1" visible="pad" direction="in"/>
+<pin name="BP2" x="7.62" y="27.94" visible="pad" direction="in"/>
+<pin name="AE1" x="27.94" y="27.94" visible="pad" direction="oc" rot="R180"/>
+<pin name="AD1" x="27.94" y="38.1" visible="pad" direction="oc" rot="R180"/>
+<pin name="BR2" x="7.62" y="17.78" visible="pad" direction="in"/>
+<pin name="BS2" x="7.62" y="7.62" visible="pad" direction="in"/>
+<pin name="AE2" x="27.94" y="7.62" visible="pad" direction="oc" rot="R180"/>
+<pin name="AD2" x="27.94" y="17.78" visible="pad" direction="oc" rot="R180"/>
 </symbol>
 <symbol name="-15V">
 <text x="1.778" y="0.254" size="1.27" layer="95" ratio="7" rot="R90">-15V</text>
@@ -689,7 +683,12 @@
 <pin name="IN1" x="-10.16" y="2.54" visible="pad" direction="in"/>
 <pin name="IN2" x="-10.16" y="-2.54" visible="pad" direction="in"/>
 </symbol>
-<symbol name="M1702F">
+<symbol name="PIN">
+<text x="-6.858" y="-0.762" size="1.27" layer="94" ratio="7">&gt;Part</text>
+<rectangle x1="-1.27" y1="-0.762" x2="0" y2="0.508" layer="94"/>
+<pin name="P$2" x="5.08" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+<symbol name="M7102F">
 <wire x1="12.7" y1="27.94" x2="12.7" y2="22.86" width="0.254" layer="94"/>
 <wire x1="12.7" y1="22.86" x2="17.78" y2="25.4" width="0.254" layer="94"/>
 <wire x1="17.78" y1="25.4" x2="12.7" y2="27.94" width="0.254" layer="94"/>
@@ -709,6 +708,7 @@
 <circle x="22.86" y="25.4" radius="0.254" width="0.1524" layer="94"/>
 <circle x="22.86" y="25.4" radius="0.127" width="0.1524" layer="94"/>
 <circle x="18.796" y="7.62" radius="1.0472" width="0.1524" layer="94"/>
+<circle x="22.86" y="25.4" radius="0.3592" width="0.254" layer="94"/>
 <text x="12.7" y="21.336" size="1.27" layer="94">&gt;Value</text>
 <text x="12.7" y="28.194" size="1.27" layer="94">&gt;Part</text>
 <text x="25.4" y="13.716" size="1.27" layer="94">&gt;Value</text>
@@ -717,25 +717,51 @@
 <text x="12.7" y="10.414" size="1.27" layer="94">&gt;Part</text>
 <pin name="BD1" x="5.08" y="25.4" visible="pad" direction="in"/>
 <pin name="BC1" x="38.1" y="25.4" visible="pad" direction="out" rot="R180"/>
-<pin name="BV2" x="38.1" y="17.78" visible="pad" direction="out" function="dot" rot="R180"/>
+<pin name="BV2" x="38.1" y="17.78" visible="pad" direction="oc" function="dot" rot="R180"/>
 <pin name="AV1" x="5.08" y="7.62" visible="pad" direction="in"/>
 <pin name="AU1" x="38.1" y="7.62" visible="pad" direction="out" rot="R180"/>
 </symbol>
-<symbol name="PIN">
-<text x="-6.858" y="-0.762" size="1.27" layer="94" ratio="7">&gt;Part</text>
-<rectangle x1="-1.27" y1="-0.762" x2="0" y2="0.508" layer="94"/>
-<pin name="P$2" x="5.08" y="0" visible="pad" length="middle" rot="R180"/>
+<symbol name="M7102G">
+<wire x1="0" y1="0" x2="0" y2="40.64" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="35.56" y1="40.64" x2="35.56" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="35.56" y1="0" x2="0" y2="0" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="15.24" y1="17.78" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="20.32" y2="15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="15.24" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="7.62" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="12.7" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="27.94" x2="15.24" y2="25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="25.4" x2="15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="22.86" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="15.24" y2="27.94" width="0.254" layer="94"/>
+<circle x="12.7" y="15.24" radius="0.127" width="0.1524" layer="94"/>
+<circle x="12.7" y="15.24" radius="0.254" width="0.1524" layer="94"/>
+<circle x="12.7" y="15.24" radius="0.254" width="0.254" layer="94"/>
+<circle x="12.7" y="15.24" radius="0.508" width="0.254" layer="94"/>
+<text x="10.16" y="35.56" size="1.27" layer="94">&gt;Part</text>
+<text x="10.16" y="33.02" size="1.27" layer="94">&gt;Value</text>
+<text x="10.16" y="30.48" size="1.27" layer="94">Bus Drivers</text>
+<pin name="BU1" x="7.62" y="15.24" visible="pad" direction="in"/>
+<pin name="BU2" x="27.94" y="7.62" visible="pad" direction="out" function="dot" rot="R180"/>
+<pin name="AB1" x="27.94" y="15.24" visible="pad" direction="oc" rot="R180"/>
+<pin name="BV1" x="7.62" y="25.4" visible="pad" direction="in"/>
+<pin name="AA1" x="27.94" y="25.4" visible="pad" direction="oc" function="dot" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="M1702">
+<deviceset name="M7102" prefix="M7102_">
 <description>Positive I/O Bus Converter</description>
 <gates>
-<gate name="G$1" symbol="M1702A" x="2.54" y="55.88"/>
-<gate name="G$2" symbol="M1702B" x="2.54" y="2.54"/>
-<gate name="G$3" symbol="M1702C" x="109.22" y="96.52"/>
-<gate name="G$4" symbol="M1702D" x="53.34" y="2.54"/>
-<gate name="G$5" symbol="M1702E" x="109.22" y="2.54"/>
+<gate name="G$1" symbol="M7102A" x="2.54" y="55.88"/>
+<gate name="G$2" symbol="M7102B" x="2.54" y="2.54"/>
+<gate name="G$3" symbol="M7102C" x="109.22" y="96.52"/>
+<gate name="G$4" symbol="M7102D" x="53.34" y="2.54"/>
 <gate name="G$6" symbol="-15V" x="152.4" y="119.38" addlevel="request"/>
 <gate name="G$7" symbol="POWER" x="152.4" y="96.52" addlevel="request"/>
 <gate name="G$8" symbol="POWER" x="165.1" y="96.52" addlevel="request"/>
@@ -743,9 +769,11 @@
 <gate name="G$10" symbol="T1GND" x="152.4" y="81.28" addlevel="request"/>
 <gate name="G$11" symbol="T1GND" x="165.1" y="81.28" addlevel="request"/>
 <gate name="NAND" symbol="NAND2" x="162.56" y="68.58"/>
-<gate name="NOR1" symbol="NOR2" x="162.56" y="55.88"/>
-<gate name="NOR2" symbol="NOR2" x="162.56" y="43.18"/>
-<gate name="G$12" symbol="M1702F" x="147.32" y="5.08"/>
+<gate name="NOR1" symbol="NOR2" x="162.56" y="55.88" swaplevel="1"/>
+<gate name="NOR2" symbol="NOR2" x="162.56" y="43.18" swaplevel="1"/>
+<gate name="G$12" symbol="M7102F" x="147.32" y="5.08"/>
+<gate name="G$5" symbol="M7102E" x="109.22" y="38.1"/>
+<gate name="G$13" symbol="M7102G" x="109.22" y="-7.62"/>
 </gates>
 <devices>
 <device name="" package="H807-2">
@@ -772,6 +800,11 @@
 <connect gate="G$12" pin="BC1" pad="BC1"/>
 <connect gate="G$12" pin="BD1" pad="BD1"/>
 <connect gate="G$12" pin="BV2" pad="BV2"/>
+<connect gate="G$13" pin="AA1" pad="AA1"/>
+<connect gate="G$13" pin="AB1" pad="AB1"/>
+<connect gate="G$13" pin="BU1" pad="BU1"/>
+<connect gate="G$13" pin="BU2" pad="BU2"/>
+<connect gate="G$13" pin="BV1" pad="BV1"/>
 <connect gate="G$2" pin="AN1" pad="AN1"/>
 <connect gate="G$2" pin="AP1" pad="AP1"/>
 <connect gate="G$2" pin="AR1" pad="AR1"/>
@@ -788,8 +821,6 @@
 <connect gate="G$4" pin="AT2" pad="AT2"/>
 <connect gate="G$4" pin="BA1" pad="BA1"/>
 <connect gate="G$4" pin="BB1" pad="BB1"/>
-<connect gate="G$5" pin="AA1" pad="AA1"/>
-<connect gate="G$5" pin="AB1" pad="AB1"/>
 <connect gate="G$5" pin="AD1" pad="AD1"/>
 <connect gate="G$5" pin="AD2" pad="AD2"/>
 <connect gate="G$5" pin="AE1" pad="AE1"/>
@@ -798,9 +829,6 @@
 <connect gate="G$5" pin="BP2" pad="BP2"/>
 <connect gate="G$5" pin="BR2" pad="BR2"/>
 <connect gate="G$5" pin="BS2" pad="BS2"/>
-<connect gate="G$5" pin="BU1" pad="BU1"/>
-<connect gate="G$5" pin="BU2" pad="BU2"/>
-<connect gate="G$5" pin="BV1" pad="BV1"/>
 <connect gate="G$6" pin="-15V" pad="AB2"/>
 <connect gate="G$7" pin="GND" pad="AC2"/>
 <connect gate="G$7" pin="VCC" pad="AA2"/>
@@ -969,10 +997,10 @@ DIN A3, landscape with extra doc field</description>
 </classes>
 <parts>
 <part name="FRAME3" library="frames" deviceset="DINA3_L" device=""/>
-<part name="AB17" library="dec-m" deviceset="M1702" device=""/>
-<part name="AB18" library="dec-m" deviceset="M1702" device=""/>
-<part name="AB19" library="dec-m" deviceset="M1702" device=""/>
-<part name="AB20" library="dec-m" deviceset="M1702" device=""/>
+<part name="AB17" library="dec-m" deviceset="M7102" device=""/>
+<part name="AB18" library="dec-m" deviceset="M7102" device=""/>
+<part name="AB19" library="dec-m" deviceset="M7102" device=""/>
+<part name="AB20" library="dec-m" deviceset="M7102" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
 <part name="FRAME2" library="frames" deviceset="DINA3_L" device=""/>
 <part name="FRAME4" library="frames" deviceset="DINA3_L" device=""/>

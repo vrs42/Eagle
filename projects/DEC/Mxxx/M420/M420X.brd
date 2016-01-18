@@ -15336,10 +15336,6 @@
 <rectangle x1="6.985" y1="-0.254" x2="7.747" y2="0.254" layer="21"/>
 <rectangle x1="-4.445" y1="-0.635" x2="-4.1275" y2="0.635" layer="21"/>
 </package>
-</packages>
-</library>
-<library name="74xxN">
-<packages>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
@@ -15771,7 +15767,7 @@ design rules under a new name.</description>
 <element name="C8" library="rcl" package="C050-025X075" value=".01uF" x="99.06" y="105.41"/>
 <element name="C9" library="rcl" package="C050-025X075" value=".01uF" x="25.4" y="30.48" rot="R180"/>
 <element name="E2" library="74xx-us" package="DIL14" value="74H74N" x="86.36" y="27.94"/>
-<element name="E3" library="74xxN" package="DIL14" value="74H50N" x="86.36" y="8.89"/>
+<element name="E3" library="dec-con" package="DIL14" value="74H50N" x="86.36" y="8.89"/>
 <element name="D6" library="diode" package="DO35-10" value="1N914" x="86.36" y="43.18" rot="R180"/>
 <element name="D5" library="diode" package="DO35-10" value="1N914" x="86.36" y="46.99" rot="R180"/>
 <element name="D4" library="diode" package="DO35-10" value="1N914" x="86.36" y="50.8" rot="R180"/>

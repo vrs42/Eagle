@@ -510,10 +510,10 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="AB17" library="dec-m" package="H807-2" value="M1702" x="209.55" y="68.2625"/>
-<element name="AB18" library="dec-m" package="H807-2" value="M1702" x="222.25" y="68.2625"/>
-<element name="AB19" library="dec-m" package="H807-2" value="M1702" x="234.95" y="68.2625"/>
-<element name="AB20" library="dec-m" package="H807-2" value="M1702" x="247.65" y="68.2625"/>
+<element name="AB17" library="dec-m" package="H807-2" value="M7102" x="209.55" y="68.2625"/>
+<element name="AB18" library="dec-m" package="H807-2" value="M7102" x="222.25" y="68.2625"/>
+<element name="AB19" library="dec-m" package="H807-2" value="M7102" x="234.95" y="68.2625"/>
+<element name="AB20" library="dec-m" package="H807-2" value="M7102" x="247.65" y="68.2625"/>
 <element name="U$1" library="dec-m" package="CBLOCK" value="" x="152.4" y="0"/>
 <element name="U$2" library="dec-m" package="CBLOCK" value="" x="101.6" y="0"/>
 <element name="U$3" library="dec-m" package="CBLOCK" value="" x="50.8" y="0"/>

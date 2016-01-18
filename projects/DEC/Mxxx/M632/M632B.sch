@@ -5427,6 +5427,31 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <hole x="209.55" y="74.93" drill="3.175"/>
 <hole x="209.55" y="126.365" drill="3.175"/>
 </package>
+<package name="DIL14">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DEVICE">
@@ -5451,6 +5476,72 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="PWRN">
+<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
+<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
+<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="7450A">
+<wire x1="16.51" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="16.51" y1="-5.08" x2="10.16" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="16.5354" y1="-5.0678" x2="25.3237" y2="0.0508" width="0.4064" layer="94" curve="60.147612" cap="flat"/>
+<wire x1="16.5354" y1="5.0678" x2="25.3239" y2="-0.0507" width="0.4064" layer="94" curve="-60.147106" cap="flat"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.4064" layer="94" curve="-90"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="2.54" width="0.4064" layer="94" curve="-180"/>
+<wire x1="-7.62" y1="12.7" x2="-17.78" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-17.78" y1="2.54" x2="-7.62" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="-10.16" width="0.4064" layer="94" curve="-180"/>
+<wire x1="-7.62" y1="0" x2="-17.78" y2="0" width="0.4064" layer="94"/>
+<wire x1="-17.78" y1="0" x2="-17.78" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="11.684" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="11.684" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="-5.08" x2="21.59" y2="-3.81" width="0.254" layer="94"/>
+<text x="-17.78" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="I1" x="-22.86" y="10.16" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I2" x="-22.86" y="5.08" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I3" x="-22.86" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="2"/>
+<pin name="I4" x="-22.86" y="-7.62" visible="pad" length="middle" direction="in" swaplevel="2"/>
+<pin name="O" x="30.48" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="I6" x="22.86" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="I5" x="17.78" y="-10.16" visible="pad" length="middle" direction="pas" function="dot" rot="R90"/>
+</symbol>
+<symbol name="7450B">
+<wire x1="16.51" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="16.51" y1="-5.08" x2="10.16" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="16.5354" y1="-5.0678" x2="25.3237" y2="0.0508" width="0.4064" layer="94" curve="60.147612" cap="flat"/>
+<wire x1="16.5354" y1="5.0678" x2="25.3239" y2="-0.0507" width="0.4064" layer="94" curve="-60.147106" cap="flat"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.4064" layer="94" curve="-90"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="2.54" width="0.4064" layer="94" curve="-180"/>
+<wire x1="-7.62" y1="12.7" x2="-17.78" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-17.78" y1="2.54" x2="-7.62" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="-10.16" width="0.4064" layer="94" curve="-180"/>
+<wire x1="-7.62" y1="0" x2="-17.78" y2="0" width="0.4064" layer="94"/>
+<wire x1="-17.78" y1="0" x2="-17.78" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="11.684" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="11.684" y2="-2.54" width="0.1524" layer="94"/>
+<text x="-17.78" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="I1" x="-22.86" y="10.16" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I2" x="-22.86" y="5.08" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I3" x="-22.86" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="2"/>
+<pin name="I4" x="-22.86" y="-7.62" visible="pad" length="middle" direction="in" swaplevel="2"/>
+<pin name="O" x="30.48" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5605,132 +5696,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="supply1">
-<packages>
-</packages>
-<symbols>
-<symbol name="+3V3">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="+3V3" prefix="+3V3">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="+3V3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="74xxN">
-<packages>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PWRN">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
-</symbol>
-<symbol name="7450A">
-<wire x1="16.51" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="16.51" y1="-5.08" x2="10.16" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="16.5354" y1="-5.0678" x2="25.3237" y2="0.0508" width="0.4064" layer="94" curve="60.147612" cap="flat"/>
-<wire x1="16.5354" y1="5.0678" x2="25.3239" y2="-0.0507" width="0.4064" layer="94" curve="-60.147106" cap="flat"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.4064" layer="94" curve="-90"/>
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="2.54" width="0.4064" layer="94" curve="-180"/>
-<wire x1="-7.62" y1="12.7" x2="-17.78" y2="12.7" width="0.4064" layer="94"/>
-<wire x1="-17.78" y1="12.7" x2="-17.78" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-17.78" y1="2.54" x2="-7.62" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-10.16" width="0.4064" layer="94" curve="-180"/>
-<wire x1="-7.62" y1="0" x2="-17.78" y2="0" width="0.4064" layer="94"/>
-<wire x1="-17.78" y1="0" x2="-17.78" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="-17.78" y1="-10.16" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="11.684" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="11.684" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="22.86" y1="-5.08" x2="21.59" y2="-3.81" width="0.254" layer="94"/>
-<text x="-17.78" y="13.335" size="1.778" layer="95">&gt;NAME</text>
-<text x="-17.78" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="I1" x="-22.86" y="10.16" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="I2" x="-22.86" y="5.08" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="I3" x="-22.86" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="2"/>
-<pin name="I4" x="-22.86" y="-7.62" visible="pad" length="middle" direction="in" swaplevel="2"/>
-<pin name="O" x="30.48" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="I6" x="22.86" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
-<pin name="I5" x="17.78" y="-10.16" visible="pad" length="middle" direction="pas" function="dot" rot="R90"/>
-</symbol>
-<symbol name="7450B">
-<wire x1="16.51" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="16.51" y1="-5.08" x2="10.16" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="16.5354" y1="-5.0678" x2="25.3237" y2="0.0508" width="0.4064" layer="94" curve="60.147612" cap="flat"/>
-<wire x1="16.5354" y1="5.0678" x2="25.3239" y2="-0.0507" width="0.4064" layer="94" curve="-60.147106" cap="flat"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.4064" layer="94" curve="-90"/>
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="2.54" width="0.4064" layer="94" curve="-180"/>
-<wire x1="-7.62" y1="12.7" x2="-17.78" y2="12.7" width="0.4064" layer="94"/>
-<wire x1="-17.78" y1="12.7" x2="-17.78" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-17.78" y1="2.54" x2="-7.62" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-10.16" width="0.4064" layer="94" curve="-180"/>
-<wire x1="-7.62" y1="0" x2="-17.78" y2="0" width="0.4064" layer="94"/>
-<wire x1="-17.78" y1="0" x2="-17.78" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="-17.78" y1="-10.16" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="11.684" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="11.684" y2="-2.54" width="0.1524" layer="94"/>
-<text x="-17.78" y="13.335" size="1.778" layer="95">&gt;NAME</text>
-<text x="-17.78" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="I1" x="-22.86" y="10.16" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="I2" x="-22.86" y="5.08" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="I3" x="-22.86" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="2"/>
-<pin name="I4" x="-22.86" y="-7.62" visible="pad" length="middle" direction="in" swaplevel="2"/>
-<pin name="O" x="30.48" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
 <deviceset name="74*50" prefix="IC">
 <description>4-2-3-2 input &lt;b&gt;AND OR INVERTER&lt;/b&gt; gates</description>
 <gates>
@@ -5759,6 +5724,33 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technologies>
 <technology name=""/>
 <technology name="LS"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1">
+<packages>
+</packages>
+<symbols>
+<symbol name="+3V3">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3V3" prefix="+3V3">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6006,10 +5998,10 @@ high speed (Philips)</description>
 <part name="C8" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="C1" library="dec-con" deviceset="CPOL-USE20-8AXIAL" device="" value="6.8uF"/>
 <part name="U$2" library="supply1" deviceset="+3V3" device=""/>
-<part name="E1" library="74xxN" deviceset="74*50" device="N" value="74H50N"/>
-<part name="E2" library="74xxN" deviceset="74*50" device="N" value="74H50N"/>
-<part name="E3" library="74xxN" deviceset="74*50" device="N" value="74H50N"/>
-<part name="E4" library="74xxN" deviceset="74*50" device="N" value="74H50N"/>
+<part name="E1" library="dec-con" deviceset="74*50" device="N" value="74H50N"/>
+<part name="E2" library="dec-con" deviceset="74*50" device="N" value="74H50N"/>
+<part name="E3" library="dec-con" deviceset="74*50" device="N" value="74H50N"/>
+<part name="E4" library="dec-con" deviceset="74*50" device="N" value="74H50N"/>
 <part name="U$3" library="supply1" deviceset="+3V3" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
