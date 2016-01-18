@@ -1854,7 +1854,7 @@
 <symbol name="PIN">
 <text x="-9.398" y="-0.762" size="1.27" layer="94" ratio="7">&gt;Part</text>
 <rectangle x1="-3.81" y1="-0.762" x2="-2.54" y2="0.508" layer="94"/>
-<pin name="P$2" x="2.54" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="P$2" x="2.54" y="0" visible="pad" length="middle" rot="R180"/>
 </symbol>
 <symbol name="TERM">
 <wire x1="0" y1="-2.54" x2="0.508" y2="-2.286" width="0.1778" layer="94"/>
@@ -2334,7 +2334,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="74*30" prefix="E">
+<deviceset name="74*30" prefix="IC">
 <description>8-input &lt;b&gt;NAND&lt;/b&gt; gate</description>
 <gates>
 <gate name="A" symbol="7430" x="12.7" y="0"/>
