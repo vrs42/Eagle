@@ -57,8 +57,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -67,6 +71,33 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="ATT_MISO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="centerline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -76,16 +107,6 @@
 <wire x1="0" y1="22.86" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
-<library name="dpads">
-<packages>
-<package name="0360">
-<description>Drill 0.036" (#64)</description>
-<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.9144" diameter="1.778"/>
-<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-</packages>
-</library>
 <library name="74xx-us">
 <description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
@@ -146,6 +167,17 @@ Based on the following sources:
 <rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
 <rectangle x1="2.921" y1="1.9558" x2="3.429" y2="3.0988" layer="51"/>
 <rectangle x1="4.191" y1="1.9558" x2="4.699" y2="3.0988" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="dec-con">
+<description>DEC Edge Connectors and Parts</description>
+<packages>
+<package name="0360">
+<description>Drill 0.036" (#64)</description>
+<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.9144" diameter="1.778"/>
+<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -329,22 +361,22 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="1" library="dpads" package="0360" value="PAD-0360" x="1.905" y="20.32"/>
-<element name="2" library="dpads" package="0360" value="PAD-0360" x="1.905" y="17.78"/>
-<element name="3" library="dpads" package="0360" value="PAD-0360" x="1.905" y="15.24"/>
-<element name="4" library="dpads" package="0360" value="PAD-0360" x="1.905" y="12.7"/>
-<element name="5" library="dpads" package="0360" value="PAD-0360" x="1.905" y="10.16"/>
-<element name="6" library="dpads" package="0360" value="PAD-0360" x="1.905" y="7.62"/>
-<element name="7" library="dpads" package="0360" value="PAD-0360" x="1.905" y="5.08"/>
-<element name="8" library="dpads" package="0360" value="PAD-0360" x="1.905" y="2.54"/>
-<element name="9" library="dpads" package="0360" value="PAD-0360" x="9.525" y="2.54"/>
-<element name="10" library="dpads" package="0360" value="PAD-0360" x="9.525" y="5.08"/>
-<element name="11" library="dpads" package="0360" value="PAD-0360" x="9.525" y="7.62"/>
-<element name="12" library="dpads" package="0360" value="PAD-0360" x="9.525" y="10.16"/>
-<element name="13" library="dpads" package="0360" value="PAD-0360" x="9.525" y="12.7"/>
-<element name="14" library="dpads" package="0360" value="PAD-0360" x="9.525" y="15.24"/>
-<element name="15" library="dpads" package="0360" value="PAD-0360" x="9.525" y="17.78"/>
-<element name="16" library="dpads" package="0360" value="PAD-0360" x="9.525" y="20.32"/>
+<element name="1" library="dec-con" package="0360" value="PAD-0360" x="1.905" y="20.32"/>
+<element name="2" library="dec-con" package="0360" value="PAD-0360" x="1.905" y="17.78"/>
+<element name="3" library="dec-con" package="0360" value="PAD-0360" x="1.905" y="15.24"/>
+<element name="4" library="dec-con" package="0360" value="PAD-0360" x="1.905" y="12.7"/>
+<element name="5" library="dec-con" package="0360" value="PAD-0360" x="1.905" y="10.16"/>
+<element name="6" library="dec-con" package="0360" value="PAD-0360" x="1.905" y="7.62"/>
+<element name="7" library="dec-con" package="0360" value="PAD-0360" x="1.905" y="5.08"/>
+<element name="8" library="dec-con" package="0360" value="PAD-0360" x="1.905" y="2.54"/>
+<element name="9" library="dec-con" package="0360" value="PAD-0360" x="9.525" y="2.54"/>
+<element name="10" library="dec-con" package="0360" value="PAD-0360" x="9.525" y="5.08"/>
+<element name="11" library="dec-con" package="0360" value="PAD-0360" x="9.525" y="7.62"/>
+<element name="12" library="dec-con" package="0360" value="PAD-0360" x="9.525" y="10.16"/>
+<element name="13" library="dec-con" package="0360" value="PAD-0360" x="9.525" y="12.7"/>
+<element name="14" library="dec-con" package="0360" value="PAD-0360" x="9.525" y="15.24"/>
+<element name="15" library="dec-con" package="0360" value="PAD-0360" x="9.525" y="17.78"/>
+<element name="16" library="dec-con" package="0360" value="PAD-0360" x="9.525" y="20.32"/>
 <element name="IC1" library="74xx-us" package="SO16" value="74S138D" x="9.525" y="11.43" rot="R270"/>
 </elements>
 <signals>

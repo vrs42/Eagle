@@ -57,8 +57,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -67,228 +71,36 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="ATT_MISO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="centerline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="dpads">
-<packages>
-<package name="0240">
-<description>Drill 0.024" (#73)</description>
-<circle x="0" y="0" radius="0.7937" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.6096" diameter="1.27"/>
-<text x="1.1113" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0280">
-<description>Drill 0.028" (#70)</description>
-<circle x="0" y="0" radius="0.898" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.7112" diameter="1.4224"/>
-<text x="1.27" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0320">
-<description>Drill 0.032" (#67)</description>
-<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.8128" diameter="1.6764"/>
-<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0360">
-<description>Drill 0.036" (#64)</description>
-<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.9144" diameter="1.778"/>
-<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0420">
-<description>Drill 0.042" (#58)</description>
-<circle x="0" y="0" radius="1.1226" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.0668" diameter="1.9304"/>
-<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0465">
-<description>Drill 0.0465" (#56)</description>
-<circle x="0" y="0" radius="1.209" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.181" diameter="2.1844"/>
-<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0520">
-<description>Drill 0.052" (#55)</description>
-<circle x="0" y="0" radius="1.4199" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.3208" diameter="2.54"/>
-<text x="1.905" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0550">
-<description>Drill 0.055" (#54)</description>
-<circle x="0" y="0" radius="1.4976" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.397" diameter="2.54"/>
-<text x="1.905" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0595">
-<description>Drill 0.0595" (#53)</description>
-<circle x="0" y="0" radius="1.796" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.5112" diameter="3.175"/>
-<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0635">
-<description>Drill 0.0635" (#52)</description>
-<circle x="0" y="0" radius="1.7749" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.6128" diameter="3.175"/>
-<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0670">
-<description>Drill 0.067" (#51)</description>
-<circle x="0" y="0" radius="2.1592" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.7018" diameter="3.81"/>
-<text x="2.8576" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0730">
-<description>Drill 0.073" (#49)</description>
-<circle x="0" y="0" radius="2.0699" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.8542" diameter="3.81"/>
-<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0760">
-<description>Drill 0.076" (#48)</description>
-<circle x="0" y="0" radius="2.1357" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.9304" diameter="3.81"/>
-<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0820">
-<description>Drill 0.082" (#45)</description>
-<circle x="0" y="0" radius="2.0699" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="2.0828" diameter="3.81"/>
-<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PAD">
-<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
-<text x="1.905" y="-0.9525" size="1.778" layer="95">&gt;NAME</text>
-<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PAD" prefix="PAD">
-<description>&lt;b&gt;WIRE PAD&lt;/b&gt;&lt;br&gt;
-Standard US Drill Sizes</description>
-<gates>
-<gate name="G$1" symbol="PAD" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="-0240" package="0240">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0280" package="0280">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0320" package="0320">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0360" package="0360">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0420" package="0420">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0465" package="0465">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0520" package="0520">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0550" package="0550">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0595" package="0595">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0635" package="0635">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0670" package="0670">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0730" package="0730">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0760" package="0760">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-0820" package="0820">
-<connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="74xx-us">
 <description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
@@ -564,6 +376,226 @@ Based on the following sources:
 </deviceset>
 </devicesets>
 </library>
+<library name="dec-con">
+<description>DEC Edge Connectors and Parts</description>
+<packages>
+<package name="0360">
+<description>Drill 0.036" (#64)</description>
+<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.9144" diameter="1.778"/>
+<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0240">
+<description>Drill 0.024" (#73)</description>
+<circle x="0" y="0" radius="0.7937" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.6096" diameter="1.27"/>
+<text x="1.1113" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0280">
+<description>Drill 0.028" (#70)</description>
+<circle x="0" y="0" radius="0.898" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.7112" diameter="1.4224"/>
+<text x="1.27" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0320">
+<description>Drill 0.032" (#67)</description>
+<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.8128" diameter="1.6764"/>
+<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0420">
+<description>Drill 0.042" (#58)</description>
+<circle x="0" y="0" radius="1.1226" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.0668" diameter="1.9304"/>
+<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0465">
+<description>Drill 0.0465" (#56)</description>
+<circle x="0" y="0" radius="1.209" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.181" diameter="2.1844"/>
+<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0520">
+<description>Drill 0.052" (#55)</description>
+<circle x="0" y="0" radius="1.4199" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.3208" diameter="2.54"/>
+<text x="1.905" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0550">
+<description>Drill 0.055" (#54)</description>
+<circle x="0" y="0" radius="1.4976" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.397" diameter="2.54"/>
+<text x="1.905" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0595">
+<description>Drill 0.0595" (#53)</description>
+<circle x="0" y="0" radius="1.796" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.5112" diameter="3.175"/>
+<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0635">
+<description>Drill 0.0635" (#52)</description>
+<circle x="0" y="0" radius="1.7749" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.6128" diameter="3.175"/>
+<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0670">
+<description>Drill 0.067" (#51)</description>
+<circle x="0" y="0" radius="2.1592" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.7018" diameter="3.81"/>
+<text x="2.8576" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0730">
+<description>Drill 0.073" (#49)</description>
+<circle x="0" y="0" radius="2.0699" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.8542" diameter="3.81"/>
+<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0760">
+<description>Drill 0.076" (#48)</description>
+<circle x="0" y="0" radius="2.1357" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.9304" diameter="3.81"/>
+<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0820">
+<description>Drill 0.082" (#45)</description>
+<circle x="0" y="0" radius="2.0699" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="2.0828" diameter="3.81"/>
+<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PAD">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="1.905" y="-0.9525" size="1.778" layer="95">&gt;NAME</text>
+<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PAD" prefix="PAD">
+<description>&lt;b&gt;WIRE PAD&lt;/b&gt;&lt;br&gt;
+Standard US Drill Sizes</description>
+<gates>
+<gate name="G$1" symbol="PAD" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="-0240" package="0240">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0280" package="0280">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0320" package="0320">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0360" package="0360">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0420" package="0420">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0465" package="0465">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0520" package="0520">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0550" package="0550">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0595" package="0595">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0635" package="0635">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0670" package="0670">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0730" package="0730">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0760" package="0760">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0820" package="0820">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -575,22 +607,22 @@ Based on the following sources:
 </class>
 </classes>
 <parts>
-<part name="1" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="2" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="3" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="4" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="5" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="6" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="7" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="8" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="9" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="10" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="11" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="12" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="13" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="14" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="15" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="16" library="dpads" deviceset="PAD" device="-0360"/>
+<part name="1" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="2" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="3" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="4" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="5" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="6" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="7" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="8" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="9" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="10" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="11" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="12" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="13" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="14" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="15" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="16" library="dec-con" deviceset="PAD" device="-0360"/>
 <part name="IC1" library="74xx-us" deviceset="74*138" device="D" technology="S"/>
 </parts>
 <sheets>

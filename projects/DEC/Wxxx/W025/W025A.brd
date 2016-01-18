@@ -730,10 +730,6 @@
 <vertex x="14.478" y="75.057"/>
 </polygon>
 </package>
-</packages>
-</library>
-<library name="dpads">
-<packages>
 <package name="0465">
 <description>Drill 0.0465" (#56)</description>
 <circle x="0" y="0" radius="1.209" width="0.127" layer="21"/>
@@ -923,40 +919,40 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="BC" library="dpads" package="0465" value="PAD-0465" x="104.14" y="52.07"/>
-<element name="BD" library="dpads" package="0465" value="PAD-0465" x="100.33" y="48.26"/>
-<element name="BE" library="dpads" package="0465" value="PAD-0465" x="104.14" y="45.72"/>
-<element name="BF" library="dpads" package="0465" value="PAD-0465" x="100.33" y="41.91"/>
-<element name="BH" library="dpads" package="0465" value="PAD-0465" x="104.14" y="39.37"/>
-<element name="BJ" library="dpads" package="0465" value="PAD-0465" x="100.33" y="35.56"/>
-<element name="BK" library="dpads" package="0465" value="PAD-0465" x="104.14" y="33.02"/>
-<element name="BL" library="dpads" package="0465" value="PAD-0465" x="100.33" y="29.21"/>
-<element name="BM" library="dpads" package="0465" value="PAD-0465" x="104.14" y="26.67"/>
-<element name="BN" library="dpads" package="0465" value="PAD-0465" x="100.33" y="22.86"/>
-<element name="BP" library="dpads" package="0465" value="PAD-0465" x="104.14" y="20.32"/>
-<element name="BR" library="dpads" package="0465" value="PAD-0465" x="100.33" y="16.51"/>
-<element name="BS" library="dpads" package="0465" value="PAD-0465" x="104.14" y="13.97"/>
-<element name="BT" library="dpads" package="0465" value="PAD-0465" x="100.33" y="10.16"/>
-<element name="BU" library="dpads" package="0465" value="PAD-0465" x="104.14" y="7.62"/>
-<element name="BV" library="dpads" package="0465" value="PAD-0465" x="100.33" y="3.81"/>
+<element name="BC" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="52.07"/>
+<element name="BD" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="48.26"/>
+<element name="BE" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="45.72"/>
+<element name="BF" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="41.91"/>
+<element name="BH" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="39.37"/>
+<element name="BJ" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="35.56"/>
+<element name="BK" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="33.02"/>
+<element name="BL" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="29.21"/>
+<element name="BM" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="26.67"/>
+<element name="BN" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="22.86"/>
+<element name="BP" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="20.32"/>
+<element name="BR" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="16.51"/>
+<element name="BS" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="13.97"/>
+<element name="BT" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="10.16"/>
+<element name="BU" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="7.62"/>
+<element name="BV" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="3.81"/>
 <element name="U$1" library="dec-con" package="DOUBLE" value="OUTLINE-DOUBLE" x="125.73" y="132.08" rot="R180"/>
 <element name="U$3" library="dec-con" package="EDGE-CON4" value="" x="125.73" y="132.08" rot="R180"/>
-<element name="AC" library="dpads" package="0465" value="PAD-0465" x="104.14" y="121.92"/>
-<element name="AD" library="dpads" package="0465" value="PAD-0465" x="100.33" y="118.11"/>
-<element name="AE" library="dpads" package="0465" value="PAD-0465" x="104.14" y="115.57"/>
-<element name="AF" library="dpads" package="0465" value="PAD-0465" x="100.33" y="111.76"/>
-<element name="AH" library="dpads" package="0465" value="PAD-0465" x="104.14" y="109.22"/>
-<element name="AJ" library="dpads" package="0465" value="PAD-0465" x="100.33" y="105.41"/>
-<element name="AK" library="dpads" package="0465" value="PAD-0465" x="104.14" y="102.87"/>
-<element name="AL" library="dpads" package="0465" value="PAD-0465" x="100.33" y="99.06"/>
-<element name="AM" library="dpads" package="0465" value="PAD-0465" x="104.14" y="96.52"/>
-<element name="AN" library="dpads" package="0465" value="PAD-0465" x="100.33" y="92.71"/>
-<element name="AP" library="dpads" package="0465" value="PAD-0465" x="104.14" y="90.17"/>
-<element name="AR" library="dpads" package="0465" value="PAD-0465" x="100.33" y="86.36"/>
-<element name="AS" library="dpads" package="0465" value="PAD-0465" x="104.14" y="83.82"/>
-<element name="AT" library="dpads" package="0465" value="PAD-0465" x="100.33" y="80.01"/>
-<element name="AU" library="dpads" package="0465" value="PAD-0465" x="104.14" y="77.47"/>
-<element name="AV" library="dpads" package="0465" value="PAD-0465" x="100.33" y="73.66"/>
+<element name="AC" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="121.92"/>
+<element name="AD" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="118.11"/>
+<element name="AE" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="115.57"/>
+<element name="AF" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="111.76"/>
+<element name="AH" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="109.22"/>
+<element name="AJ" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="105.41"/>
+<element name="AK" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="102.87"/>
+<element name="AL" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="99.06"/>
+<element name="AM" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="96.52"/>
+<element name="AN" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="92.71"/>
+<element name="AP" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="90.17"/>
+<element name="AR" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="86.36"/>
+<element name="AS" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="83.82"/>
+<element name="AT" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="80.01"/>
+<element name="AU" library="dec-con" package="0465" value="PAD-0465" x="104.14" y="77.47"/>
+<element name="AV" library="dec-con" package="0465" value="PAD-0465" x="100.33" y="73.66"/>
 </elements>
 <signals>
 <signal name="N$1">

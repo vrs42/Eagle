@@ -60,6 +60,9 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -68,8 +71,33 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="ATT_MISO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="centerline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -373,8 +401,43 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dpads">
+<library name="supply2">
 <packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="GND" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="dec-con">
+<description>DEC Edge Connectors and Parts</description>
+<packages>
+<package name="0635">
+<description>Drill 0.0635" (#52)</description>
+<circle x="0" y="0" radius="1.7749" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.6128" diameter="3.175"/>
+<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
 <package name="0240">
 <description>Drill 0.024" (#73)</description>
 <circle x="0" y="0" radius="0.7937" width="0.127" layer="21"/>
@@ -427,12 +490,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <description>Drill 0.0595" (#53)</description>
 <circle x="0" y="0" radius="1.796" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="1.5112" diameter="3.175"/>
-<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0635">
-<description>Drill 0.0635" (#52)</description>
-<circle x="0" y="0" radius="1.7749" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.6128" diameter="3.175"/>
 <text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
 <package name="0670">
@@ -592,34 +649,6 @@ Standard US Drill Sizes</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2">
-<packages>
-</packages>
-<symbols>
-<symbol name="GND">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="GND" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -634,17 +663,17 @@ Standard US Drill Sizes</description>
 <parts>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
 <part name="IC1" library="linear" deviceset="78*" device="T" technology="05"/>
-<part name="RING2" library="dpads" deviceset="PAD" device="-0635"/>
-<part name="RING" library="dpads" deviceset="PAD" device="-0635"/>
-<part name="TIP" library="dpads" deviceset="PAD" device="-0635"/>
-<part name="+15V" library="dpads" deviceset="PAD" device="-0635"/>
-<part name="GND" library="dpads" deviceset="PAD" device="-0635"/>
+<part name="RING2" library="dec-con" deviceset="PAD" device="-0635"/>
+<part name="RING" library="dec-con" deviceset="PAD" device="-0635"/>
+<part name="TIP" library="dec-con" deviceset="PAD" device="-0635"/>
+<part name="+15V" library="dec-con" deviceset="PAD" device="-0635"/>
+<part name="GND" library="dec-con" deviceset="PAD" device="-0635"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
-<part name="TIPSW" library="dpads" deviceset="PAD" device="-0635"/>
-<part name="+15VIN" library="dpads" deviceset="PAD" device="-0635"/>
+<part name="TIPSW" library="dec-con" deviceset="PAD" device="-0635"/>
+<part name="+15VIN" library="dec-con" deviceset="PAD" device="-0635"/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
-<part name="+5V" library="dpads" deviceset="PAD" device="-0635"/>
+<part name="+5V" library="dec-con" deviceset="PAD" device="-0635"/>
 </parts>
 <sheets>
 <sheet>

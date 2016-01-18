@@ -298,6 +298,12 @@
 <vertex x="14.478" y="5.207"/>
 </polygon>
 </package>
+<package name="0465">
+<description>Drill 0.0465" (#56)</description>
+<circle x="0" y="0" radius="1.209" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.181" diameter="2.1844"/>
+<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="rcl">
@@ -506,16 +512,6 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 </package>
 </packages>
 </library>
-<library name="dpads">
-<packages>
-<package name="0465">
-<description>Drill 0.0465" (#56)</description>
-<circle x="0" y="0" radius="1.209" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.181" diameter="2.1844"/>
-<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -705,12 +701,12 @@ design rules under a new name.</description>
 <element name="D1" library="diode" package="DO35-10" value="1N4154" x="99.06" y="33.02"/>
 <element name="R1" library="rcl" package="0207/10" value="1K 1/4W" x="99.06" y="36.83" rot="R180"/>
 <element name="R2" library="rcl" package="0411/12" value="750 1W" x="92.71" y="49.53" rot="R180"/>
-<element name="4" library="dpads" package="0465" value="PAD-0465" x="35.56" y="57.15" rot="R180"/>
-<element name="6" library="dpads" package="0465" value="PAD-0465" x="45.72" y="52.07" rot="R180"/>
-<element name="RELAY-" library="dpads" package="0465" value="PAD-0465" x="55.88" y="46.99" rot="R180"/>
-<element name="3" library="dpads" package="0465" value="PAD-0465" x="66.04" y="41.91" rot="R180"/>
-<element name="7" library="dpads" package="0465" value="PAD-0465" x="76.2" y="36.83" rot="R180"/>
-<element name="RELAY+" library="dpads" package="0465" value="PAD-0465" x="86.36" y="31.75" rot="R180"/>
+<element name="4" library="dec-con" package="0465" value="PAD-0465" x="35.56" y="57.15" rot="R180"/>
+<element name="6" library="dec-con" package="0465" value="PAD-0465" x="45.72" y="52.07" rot="R180"/>
+<element name="RELAY-" library="dec-con" package="0465" value="PAD-0465" x="55.88" y="46.99" rot="R180"/>
+<element name="3" library="dec-con" package="0465" value="PAD-0465" x="66.04" y="41.91" rot="R180"/>
+<element name="7" library="dec-con" package="0465" value="PAD-0465" x="76.2" y="36.83" rot="R180"/>
+<element name="RELAY+" library="dec-con" package="0465" value="PAD-0465" x="86.36" y="31.75" rot="R180"/>
 <element name="C5" library="rcl" package="E25-9" value="1uF 150V" x="83.82" y="41.91"/>
 </elements>
 <signals>

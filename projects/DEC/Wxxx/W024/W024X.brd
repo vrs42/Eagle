@@ -273,10 +273,6 @@
 <vertex x="14.478" y="5.207"/>
 </polygon>
 </package>
-</packages>
-</library>
-<library name="dpads">
-<packages>
 <package name="0465">
 <description>Drill 0.0465" (#56)</description>
 <circle x="0" y="0" radius="1.209" width="0.127" layer="21"/>
@@ -499,42 +495,42 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U$2" library="dec-con" package="EDGE-CON1" value="EDGE-1" x="62.23" y="62.23" rot="R180"/>
-<element name="GNDC" library="dpads" package="0465" value="PAD-0465" x="17.78" y="50.8"/>
-<element name="D" library="dpads" package="0465" value="PAD-0465" x="30.48" y="49.53"/>
-<element name="GNDD" library="dpads" package="0465" value="PAD-0465" x="21.59" y="48.26"/>
-<element name="E" library="dpads" package="0465" value="PAD-0465" x="26.67" y="45.72"/>
-<element name="F" library="dpads" package="0465" value="PAD-0465" x="30.48" y="41.91"/>
-<element name="H" library="dpads" package="0465" value="PAD-0465" x="26.67" y="39.37"/>
-<element name="J" library="dpads" package="0465" value="PAD-0465" x="30.48" y="35.56"/>
-<element name="K" library="dpads" package="0465" value="PAD-0465" x="26.67" y="33.02"/>
-<element name="L" library="dpads" package="0465" value="PAD-0465" x="30.48" y="29.21"/>
-<element name="M" library="dpads" package="0465" value="PAD-0465" x="26.67" y="26.67"/>
-<element name="N" library="dpads" package="0465" value="PAD-0465" x="30.48" y="22.86"/>
-<element name="P" library="dpads" package="0465" value="PAD-0465" x="26.67" y="20.32"/>
-<element name="R" library="dpads" package="0465" value="PAD-0465" x="30.48" y="16.51"/>
-<element name="S" library="dpads" package="0465" value="PAD-0465" x="26.67" y="13.97"/>
-<element name="T" library="dpads" package="0465" value="PAD-0465" x="30.48" y="10.16"/>
-<element name="U" library="dpads" package="0465" value="PAD-0465" x="26.67" y="7.62"/>
-<element name="GNDV" library="dpads" package="0465" value="PAD-0465" x="21.59" y="3.81"/>
+<element name="GNDC" library="dec-con" package="0465" value="PAD-0465" x="17.78" y="50.8"/>
+<element name="D" library="dec-con" package="0465" value="PAD-0465" x="30.48" y="49.53"/>
+<element name="GNDD" library="dec-con" package="0465" value="PAD-0465" x="21.59" y="48.26"/>
+<element name="E" library="dec-con" package="0465" value="PAD-0465" x="26.67" y="45.72"/>
+<element name="F" library="dec-con" package="0465" value="PAD-0465" x="30.48" y="41.91"/>
+<element name="H" library="dec-con" package="0465" value="PAD-0465" x="26.67" y="39.37"/>
+<element name="J" library="dec-con" package="0465" value="PAD-0465" x="30.48" y="35.56"/>
+<element name="K" library="dec-con" package="0465" value="PAD-0465" x="26.67" y="33.02"/>
+<element name="L" library="dec-con" package="0465" value="PAD-0465" x="30.48" y="29.21"/>
+<element name="M" library="dec-con" package="0465" value="PAD-0465" x="26.67" y="26.67"/>
+<element name="N" library="dec-con" package="0465" value="PAD-0465" x="30.48" y="22.86"/>
+<element name="P" library="dec-con" package="0465" value="PAD-0465" x="26.67" y="20.32"/>
+<element name="R" library="dec-con" package="0465" value="PAD-0465" x="30.48" y="16.51"/>
+<element name="S" library="dec-con" package="0465" value="PAD-0465" x="26.67" y="13.97"/>
+<element name="T" library="dec-con" package="0465" value="PAD-0465" x="30.48" y="10.16"/>
+<element name="U" library="dec-con" package="0465" value="PAD-0465" x="26.67" y="7.62"/>
+<element name="GNDV" library="dec-con" package="0465" value="PAD-0465" x="21.59" y="3.81"/>
 <element name="R1" library="rcl" package="0207/10" value="10 1/4W" x="36.83" y="53.34" rot="R90"/>
 <element name="R2" library="rcl" package="0207/10" value="10 1/4W" x="40.64" y="53.34" rot="R90"/>
-<element name="A" library="dpads" package="0465" value="PAD-0465" x="30.48" y="57.15"/>
-<element name="B" library="dpads" package="0465" value="PAD-0465" x="26.67" y="54.61"/>
-<element name="GNDB" library="dpads" package="0465" value="PAD-0465" x="21.59" y="53.34"/>
-<element name="GNDA" library="dpads" package="0465" value="PAD-0465" x="17.78" y="57.15"/>
-<element name="GNDE" library="dpads" package="0465" value="PAD-0465" x="17.78" y="44.45"/>
-<element name="GNDF" library="dpads" package="0465" value="PAD-0465" x="21.59" y="40.64"/>
-<element name="GNDH" library="dpads" package="0465" value="PAD-0465" x="17.78" y="38.1"/>
-<element name="GNDJ" library="dpads" package="0465" value="PAD-0465" x="21.59" y="34.29"/>
-<element name="GNDK" library="dpads" package="0465" value="PAD-0465" x="17.78" y="31.75"/>
-<element name="GNDL" library="dpads" package="0465" value="PAD-0465" x="21.59" y="27.94"/>
-<element name="GNDM" library="dpads" package="0465" value="PAD-0465" x="17.78" y="25.4"/>
-<element name="GNDN" library="dpads" package="0465" value="PAD-0465" x="21.59" y="21.59"/>
-<element name="GNDP" library="dpads" package="0465" value="PAD-0465" x="17.78" y="19.05"/>
-<element name="GNDR" library="dpads" package="0465" value="PAD-0465" x="21.59" y="15.24"/>
-<element name="GNDS" library="dpads" package="0465" value="PAD-0465" x="17.78" y="12.7"/>
-<element name="GNDT" library="dpads" package="0465" value="PAD-0465" x="21.59" y="8.89"/>
-<element name="GNDU" library="dpads" package="0465" value="PAD-0465" x="17.78" y="6.35"/>
+<element name="A" library="dec-con" package="0465" value="PAD-0465" x="30.48" y="57.15"/>
+<element name="B" library="dec-con" package="0465" value="PAD-0465" x="26.67" y="54.61"/>
+<element name="GNDB" library="dec-con" package="0465" value="PAD-0465" x="21.59" y="53.34"/>
+<element name="GNDA" library="dec-con" package="0465" value="PAD-0465" x="17.78" y="57.15"/>
+<element name="GNDE" library="dec-con" package="0465" value="PAD-0465" x="17.78" y="44.45"/>
+<element name="GNDF" library="dec-con" package="0465" value="PAD-0465" x="21.59" y="40.64"/>
+<element name="GNDH" library="dec-con" package="0465" value="PAD-0465" x="17.78" y="38.1"/>
+<element name="GNDJ" library="dec-con" package="0465" value="PAD-0465" x="21.59" y="34.29"/>
+<element name="GNDK" library="dec-con" package="0465" value="PAD-0465" x="17.78" y="31.75"/>
+<element name="GNDL" library="dec-con" package="0465" value="PAD-0465" x="21.59" y="27.94"/>
+<element name="GNDM" library="dec-con" package="0465" value="PAD-0465" x="17.78" y="25.4"/>
+<element name="GNDN" library="dec-con" package="0465" value="PAD-0465" x="21.59" y="21.59"/>
+<element name="GNDP" library="dec-con" package="0465" value="PAD-0465" x="17.78" y="19.05"/>
+<element name="GNDR" library="dec-con" package="0465" value="PAD-0465" x="21.59" y="15.24"/>
+<element name="GNDS" library="dec-con" package="0465" value="PAD-0465" x="17.78" y="12.7"/>
+<element name="GNDT" library="dec-con" package="0465" value="PAD-0465" x="21.59" y="8.89"/>
+<element name="GNDU" library="dec-con" package="0465" value="PAD-0465" x="17.78" y="6.35"/>
 </elements>
 <signals>
 <signal name="N$1" class="1">

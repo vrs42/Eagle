@@ -582,6 +582,90 @@ LETTER landscape</description>
 <hole x="209.55" y="74.93" drill="3.175"/>
 <hole x="209.55" y="126.365" drill="3.175"/>
 </package>
+<package name="0465">
+<description>Drill 0.0465" (#56)</description>
+<circle x="0" y="0" radius="1.209" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.181" diameter="2.1844"/>
+<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0240">
+<description>Drill 0.024" (#73)</description>
+<circle x="0" y="0" radius="0.7937" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.6096" diameter="1.27"/>
+<text x="1.1113" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0280">
+<description>Drill 0.028" (#70)</description>
+<circle x="0" y="0" radius="0.898" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.7112" diameter="1.4224"/>
+<text x="1.27" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0320">
+<description>Drill 0.032" (#67)</description>
+<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.8128" diameter="1.6764"/>
+<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0360">
+<description>Drill 0.036" (#64)</description>
+<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.9144" diameter="1.778"/>
+<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0420">
+<description>Drill 0.042" (#58)</description>
+<circle x="0" y="0" radius="1.1226" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.0668" diameter="1.9304"/>
+<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0520">
+<description>Drill 0.052" (#55)</description>
+<circle x="0" y="0" radius="1.4199" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.3208" diameter="2.54"/>
+<text x="1.905" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0550">
+<description>Drill 0.055" (#54)</description>
+<circle x="0" y="0" radius="1.4976" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.397" diameter="2.54"/>
+<text x="1.905" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0595">
+<description>Drill 0.0595" (#53)</description>
+<circle x="0" y="0" radius="1.796" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.5112" diameter="3.175"/>
+<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0635">
+<description>Drill 0.0635" (#52)</description>
+<circle x="0" y="0" radius="1.7749" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.6128" diameter="3.175"/>
+<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0670">
+<description>Drill 0.067" (#51)</description>
+<circle x="0" y="0" radius="2.1592" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.7018" diameter="3.81"/>
+<text x="2.8576" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0730">
+<description>Drill 0.073" (#49)</description>
+<circle x="0" y="0" radius="2.0699" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.8542" diameter="3.81"/>
+<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0760">
+<description>Drill 0.076" (#48)</description>
+<circle x="0" y="0" radius="2.1357" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.9304" diameter="3.81"/>
+<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="0820">
+<description>Drill 0.082" (#45)</description>
+<circle x="0" y="0" radius="2.0699" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="2.0828" diameter="3.81"/>
+<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DEVICE">
@@ -590,6 +674,12 @@ LETTER landscape</description>
 <symbol name="EDGE-RIGHT">
 <rectangle x1="-5.08" y1="-1.27" x2="-2.54" y2="1.27" layer="94"/>
 <pin name="1" x="2.54" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+<symbol name="PAD">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="1.905" y="-0.9525" size="1.778" layer="95">&gt;NAME</text>
+<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -691,132 +781,6 @@ LETTER landscape</description>
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="supply2">
-<packages>
-</packages>
-<symbols>
-<symbol name="GND">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="GND" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="dpads">
-<packages>
-<package name="0240">
-<description>Drill 0.024" (#73)</description>
-<circle x="0" y="0" radius="0.7937" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.6096" diameter="1.27"/>
-<text x="1.1113" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0280">
-<description>Drill 0.028" (#70)</description>
-<circle x="0" y="0" radius="0.898" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.7112" diameter="1.4224"/>
-<text x="1.27" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0320">
-<description>Drill 0.032" (#67)</description>
-<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.8128" diameter="1.6764"/>
-<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0360">
-<description>Drill 0.036" (#64)</description>
-<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.9144" diameter="1.778"/>
-<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0420">
-<description>Drill 0.042" (#58)</description>
-<circle x="0" y="0" radius="1.1226" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.0668" diameter="1.9304"/>
-<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0465">
-<description>Drill 0.0465" (#56)</description>
-<circle x="0" y="0" radius="1.209" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.181" diameter="2.1844"/>
-<text x="1.5875" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0520">
-<description>Drill 0.052" (#55)</description>
-<circle x="0" y="0" radius="1.4199" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.3208" diameter="2.54"/>
-<text x="1.905" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0550">
-<description>Drill 0.055" (#54)</description>
-<circle x="0" y="0" radius="1.4976" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.397" diameter="2.54"/>
-<text x="1.905" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0595">
-<description>Drill 0.0595" (#53)</description>
-<circle x="0" y="0" radius="1.796" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.5112" diameter="3.175"/>
-<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0635">
-<description>Drill 0.0635" (#52)</description>
-<circle x="0" y="0" radius="1.7749" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.6128" diameter="3.175"/>
-<text x="2.3813" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0670">
-<description>Drill 0.067" (#51)</description>
-<circle x="0" y="0" radius="2.1592" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.7018" diameter="3.81"/>
-<text x="2.8576" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0730">
-<description>Drill 0.073" (#49)</description>
-<circle x="0" y="0" radius="2.0699" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.8542" diameter="3.81"/>
-<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0760">
-<description>Drill 0.076" (#48)</description>
-<circle x="0" y="0" radius="2.1357" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="1.9304" diameter="3.81"/>
-<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0820">
-<description>Drill 0.082" (#45)</description>
-<circle x="0" y="0" radius="2.0699" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="2.0828" diameter="3.81"/>
-<text x="2.6988" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PAD">
-<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
-<text x="1.905" y="-0.9525" size="1.778" layer="95">&gt;NAME</text>
-<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
 <deviceset name="PAD" prefix="PAD">
 <description>&lt;b&gt;WIRE PAD&lt;/b&gt;&lt;br&gt;
 Standard US Drill Sizes</description>
@@ -940,6 +904,34 @@ Standard US Drill Sizes</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2">
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="GND" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -956,25 +948,25 @@ Standard US Drill Sizes</description>
 <part name="U$1" library="dec-con" deviceset="OUTLINE-*" device="SINGLE"/>
 <part name="U$2" library="dec-con" deviceset="EDGE-1" device=""/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
-<part name="WHT1R" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="WHT1" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="GRN1R" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="GRN1" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="BLU1R" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="BLU1" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="RED1R" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="RED1" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="WHT2R" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="WHT2" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="BLU2R" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="BLU2" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="GRN2R" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="GRN2" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="RED2R" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="RED2" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="BLKR" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="BLK" library="dpads" deviceset="PAD" device="-0465"/>
-<part name="NC" library="dpads" deviceset="PAD" device="-0465"/>
+<part name="WHT1R" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="WHT1" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="GRN1R" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="GRN1" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="BLU1R" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="BLU1" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="RED1R" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="RED1" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="WHT2R" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="WHT2" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="BLU2R" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="BLU2" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="GRN2R" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="GRN2" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="RED2R" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="RED2" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="BLKR" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="BLK" library="dec-con" deviceset="PAD" device="-0465"/>
+<part name="NC" library="dec-con" deviceset="PAD" device="-0465"/>
 </parts>
 <sheets>
 <sheet>

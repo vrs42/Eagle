@@ -57,8 +57,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -67,6 +71,33 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="ATT_MISO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="centerline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -193,8 +224,15 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="dpads">
+<library name="dec-con">
+<description>DEC Edge Connectors and Parts</description>
 <packages>
+<package name="0360">
+<description>Drill 0.036" (#64)</description>
+<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.9144" diameter="1.778"/>
+<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
 <package name="0240">
 <description>Drill 0.024" (#73)</description>
 <circle x="0" y="0" radius="0.7937" width="0.127" layer="21"/>
@@ -211,12 +249,6 @@
 <description>Drill 0.032" (#67)</description>
 <circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="0.8128" diameter="1.6764"/>
-<text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="0360">
-<description>Drill 0.036" (#64)</description>
-<circle x="0" y="0" radius="1.0165" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.9144" diameter="1.778"/>
 <text x="1.4288" y="-0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
 <package name="0420">
@@ -424,14 +456,14 @@ Standard US Drill Sizes</description>
 </classes>
 <parts>
 <part name="IC1" library="burr-brown" deviceset="ADS1286" device="U"/>
-<part name="1" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="2" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="3" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="4" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="5" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="6" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="7" library="dpads" deviceset="PAD" device="-0360"/>
-<part name="8" library="dpads" deviceset="PAD" device="-0360"/>
+<part name="1" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="2" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="3" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="4" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="5" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="6" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="7" library="dec-con" deviceset="PAD" device="-0360"/>
+<part name="8" library="dec-con" deviceset="PAD" device="-0360"/>
 </parts>
 <sheets>
 <sheet>
