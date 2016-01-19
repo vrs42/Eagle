@@ -855,14 +855,14 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS8881" prefix="IC">
+<deviceset name="N8881" prefix="E">
 <description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector</description>
 <gates>
 <gate name="A" symbol="NAND2" x="15.24" y="7.62" swaplevel="1"/>
 <gate name="B" symbol="NAND2" x="15.24" y="-5.08" swaplevel="1"/>
 <gate name="C" symbol="NAND2" x="45.72" y="7.62" swaplevel="1"/>
 <gate name="D" symbol="NAND2" x="45.72" y="-5.08" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN" x="-10.16" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -9960,9 +9960,9 @@ Based on the following sources:
 <part name="C5" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="6.8uf"/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-US" device="050-025X075" value=".01"/>
-<part name="E1" library="dec-con" deviceset="DS8881" device="N"/>
-<part name="E2" library="dec-con" deviceset="DS8881" device="N"/>
-<part name="E4" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E1" library="dec-con" deviceset="N8881" device="N"/>
+<part name="E2" library="dec-con" deviceset="N8881" device="N"/>
+<part name="E4" library="dec-con" deviceset="N8881" device="N"/>
 </parts>
 <sheets>
 <sheet>
@@ -10370,6 +10370,9 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,160.909,104.14,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

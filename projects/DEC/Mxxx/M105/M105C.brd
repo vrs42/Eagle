@@ -12352,7 +12352,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
@@ -12551,7 +12551,7 @@ design rules under a new name.</description>
 <element name="E8" library="74xx-us" package="DIL14" value="DEC8242" x="80.01" y="22.86"/>
 <element name="E5" library="74xx-us" package="DIL14" value="74H00N" x="176.53" y="29.21"/>
 <element name="E6" library="74xx-us" package="DIL14" value="7402N" x="128.27" y="30.48"/>
-<element name="E13" library="dec-con" package="DIL14" value="DS8881N" x="68.58" y="43.18"/>
+<element name="E13" library="dec-con" package="DIL14" value="N8881N" x="68.58" y="43.18"/>
 <element name="E10" library="dec-con" package="DIL14" value="N8815" x="152.4" y="8.89"/>
 <element name="E9" library="dec-con" package="DIL14" value="N8815" x="176.53" y="10.16"/>
 <element name="U$3" library="dec-con" package="FLIPCHIP" value="" x="0" y="0"/>

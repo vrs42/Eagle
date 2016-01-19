@@ -14396,6 +14396,24 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,78.74,111.824,E1,B,I0,,,"/>
+<approved hash="114,1,78.74,111.824,E1,B,I1,,,"/>
+<approved hash="114,1,78.74,111.824,E1,C,I0,,,"/>
+<approved hash="114,1,78.74,111.824,E1,C,I1,,,"/>
+<approved hash="114,1,45.72,144.716,E11,A,I0,,,"/>
+<approved hash="114,1,45.72,144.716,E11,A,I1,,,"/>
+<approved hash="114,2,55.9435,111.76,E28,B,I0,,,"/>
+<approved hash="114,2,55.9435,111.76,E28,B,I1,,,"/>
+<approved hash="114,2,55.9435,134.62,E27,D,I,,,"/>
+<approved hash="114,2,116.904,134.62,E23,C,I,,,"/>
+<approved hash="114,2,116.904,134.62,E23,D,I,,,"/>
+<approved hash="114,2,340.36,116.776,E9,F,I,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,1,152.4,13.589,U$2,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME2,,,,,"/>
+<approved hash="113,3,200.508,133.198,FRAME3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

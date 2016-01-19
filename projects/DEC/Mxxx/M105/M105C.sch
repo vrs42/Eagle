@@ -784,14 +784,14 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS8881" prefix="IC">
+<deviceset name="N8881" prefix="E">
 <description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector</description>
 <gates>
 <gate name="A" symbol="NAND2" x="15.24" y="7.62" swaplevel="1"/>
 <gate name="B" symbol="NAND2" x="15.24" y="-5.08" swaplevel="1"/>
 <gate name="C" symbol="NAND2" x="45.72" y="7.62" swaplevel="1"/>
 <gate name="D" symbol="NAND2" x="45.72" y="-5.08" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN" x="-10.16" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -12692,7 +12692,7 @@ DIN A3, landscape with extra doc field</description>
 <part name="V8" library="supply2" deviceset="GND" device=""/>
 <part name="V18" library="supply2" deviceset="GND" device=""/>
 <part name="E6" library="74xx-us" deviceset="74*02" device="N"/>
-<part name="E13" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E13" library="dec-con" deviceset="N8881" device="N"/>
 <part name="E10" library="dec-con" deviceset="N8815" device=""/>
 <part name="E9" library="dec-con" deviceset="N8815" device=""/>
 </parts>
@@ -13913,6 +13913,14 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,259.08,165.037,E13,C,I0,,,"/>
+<approved hash="114,1,259.08,165.037,E13,C,I1,,,"/>
+<approved hash="114,1,259.08,165.037,E13,D,I0,,,"/>
+<approved hash="114,1,259.08,165.037,E13,D,I1,,,"/>
+<approved hash="113,1,255.651,152.4,U$1,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

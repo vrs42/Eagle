@@ -20959,20 +20959,20 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="-8.763" y1="2.794" x2="-8.763" y2="0.635" width="0.127" layer="21"/>
 <wire x1="-8.763" y1="-2.794" x2="8.763" y2="-2.794" width="0.127" layer="21"/>
 <wire x1="8.763" y1="-2.794" x2="8.763" y2="2.794" width="0.127" layer="21"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="9" x="5.08" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="10" x="2.54" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="11" x="0" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="12" x="-2.54" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="13" x="-5.08" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.8" shape="long" rot="R90"/>
 <text x="-5.08" y="0.4064" size="1.778" layer="25" ratio="10">&gt;NAME</text>
 <text x="-7.9248" y="-2.3876" size="1.27" layer="21" ratio="10">1</text>
 <text x="-8.636" y="1.1176" size="1.27" layer="21" ratio="10">14</text>

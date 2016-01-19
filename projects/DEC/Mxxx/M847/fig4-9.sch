@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2180,14 +2180,14 @@ high speed (Philips)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS8881" prefix="IC">
+<deviceset name="N8881" prefix="E">
 <description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector</description>
 <gates>
 <gate name="A" symbol="NAND2" x="15.24" y="7.62" swaplevel="1"/>
 <gate name="B" symbol="NAND2" x="15.24" y="-5.08" swaplevel="1"/>
 <gate name="C" symbol="NAND2" x="45.72" y="7.62" swaplevel="1"/>
 <gate name="D" symbol="NAND2" x="45.72" y="-5.08" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN" x="-10.16" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -3075,9 +3075,9 @@ Based on the following sources:
 <part name="E17" library="dec-con" deviceset="SP384" device="N"/>
 <part name="E43" library="dec-con" deviceset="SP384" device="N"/>
 <part name="U$2" library="dec-con" deviceset="QUAD" device=""/>
-<part name="E4" library="dec-con" deviceset="DS8881" device="N"/>
-<part name="E14" library="dec-con" deviceset="DS8881" device="N"/>
-<part name="IC7" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E4" library="dec-con" deviceset="N8881" device="N"/>
+<part name="E14" library="dec-con" deviceset="N8881" device="N"/>
+<part name="IC7" library="dec-con" deviceset="N8881" device="N"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>

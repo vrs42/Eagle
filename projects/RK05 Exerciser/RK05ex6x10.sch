@@ -1343,14 +1343,14 @@ Marquardt</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS8881" prefix="IC">
+<deviceset name="N8881" prefix="E">
 <description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector</description>
 <gates>
 <gate name="A" symbol="NAND2" x="15.24" y="7.62" swaplevel="1"/>
 <gate name="B" symbol="NAND2" x="15.24" y="-5.08" swaplevel="1"/>
 <gate name="C" symbol="NAND2" x="45.72" y="7.62" swaplevel="1"/>
 <gate name="D" symbol="NAND2" x="45.72" y="-5.08" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN" x="-10.16" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -17014,7 +17014,7 @@ Based on the following sources:
 <part name="V37" library="supply2" deviceset="GND" device=""/>
 <part name="V38" library="supply2" deviceset="GND" device=""/>
 <part name="V39" library="supply2" deviceset="GND" device=""/>
-<part name="E9" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E9" library="dec-con" deviceset="N8881" device="N"/>
 <part name="E4" library="74xx-us" deviceset="74*20" device="N" technology="LS" value="74LS20N"/>
 <part name="E1" library="74xx-us" deviceset="74*10" device="N" technology="LS"/>
 <part name="E3" library="74xx-us" deviceset="74*42" device="N" technology="LS"/>

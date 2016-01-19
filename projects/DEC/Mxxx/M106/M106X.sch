@@ -3196,14 +3196,14 @@ Source: AVX .. aphvc.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS8881" prefix="IC">
+<deviceset name="N8881" prefix="E">
 <description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector</description>
 <gates>
 <gate name="A" symbol="NAND2" x="15.24" y="7.62" swaplevel="1"/>
 <gate name="B" symbol="NAND2" x="15.24" y="-5.08" swaplevel="1"/>
 <gate name="C" symbol="NAND2" x="45.72" y="7.62" swaplevel="1"/>
 <gate name="D" symbol="NAND2" x="45.72" y="-5.08" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN" x="-10.16" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -3417,21 +3417,21 @@ LETTER landscape</description>
 <part name="U$4" library="dec-con" deviceset="OUTLINE-*" device="SINGLE"/>
 <part name="U$1" library="dec-con" deviceset="SINGLE" device=""/>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
-<part name="E1" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E1" library="dec-con" deviceset="N8881" device="N"/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
 <part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="E2" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E2" library="dec-con" deviceset="N8881" device="N"/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
 <part name="D11" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="E3" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E3" library="dec-con" deviceset="N8881" device="N"/>
 <part name="V8" library="supply2" deviceset="GND" device=""/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
 </parts>
@@ -4075,6 +4075,10 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,44.069,55.88,U$1,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

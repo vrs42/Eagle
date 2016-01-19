@@ -14578,14 +14578,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DS8881" prefix="IC">
+<deviceset name="N8881" prefix="E">
 <description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector</description>
 <gates>
 <gate name="A" symbol="NAND2" x="15.24" y="7.62" swaplevel="1"/>
 <gate name="B" symbol="NAND2" x="15.24" y="-5.08" swaplevel="1"/>
 <gate name="C" symbol="NAND2" x="45.72" y="7.62" swaplevel="1"/>
 <gate name="D" symbol="NAND2" x="45.72" y="-5.08" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN" x="-10.16" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -15774,7 +15774,7 @@ Based on the following sources:
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="DC_ERASE" library="switch" deviceset="255SB" device=""/>
 <part name="V13" library="supply2" deviceset="GND" device=""/>
-<part name="E9" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E9" library="dec-con" deviceset="N8881" device="N"/>
 <part name="BIT3" library="switch" deviceset="255SB" device=""/>
 <part name="BIT1" library="switch" deviceset="255SB" device=""/>
 <part name="BIT2" library="switch" deviceset="255SB" device=""/>
@@ -17031,6 +17031,17 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,1,15.2344,204.081,CONSTANT_WRITE,,,,,"/>
+<approved hash="113,1,22.6256,127.881,DC_ERASE,,,,,"/>
+<approved hash="113,1,22.86,107.561,BIT3,,,,,"/>
+<approved hash="113,1,22.86,72.0005,BIT1,,,,,"/>
+<approved hash="113,1,22.86,89.7805,BIT2,,,,,"/>
+<approved hash="113,1,22.86,51.6805,BIT0,,,,,"/>
+<approved hash="113,1,334.831,75.493,SECTOR_SELECT,,,,,"/>
+<approved hash="113,1,143.129,73.66,AB04,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

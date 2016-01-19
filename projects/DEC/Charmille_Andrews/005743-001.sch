@@ -2072,6 +2072,69 @@
 <hole x="126.365" y="110.49" drill="0.8128"/>
 <hole x="126.365" y="111.76" drill="0.8128"/>
 </package>
+<package name="E15-5">
+<description>A 0.5" electrolytic with smaller pads.</description>
+<wire x1="-4.064" y1="0" x2="-3.175" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="0" x2="-3.175" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-0.635" x2="-2.667" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.667" y1="-0.635" x2="-2.667" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.667" y1="0.635" x2="-3.175" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="0.635" x2="-3.175" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="0" x2="7.747" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.8255" x2="-3.81" y2="0.3175" width="0.1524" layer="21"/>
+<wire x1="-4.064" y1="0.5715" x2="-3.556" y2="0.5715" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.9685" x2="-5.715" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="2.2225" x2="5.461" y2="2.2225" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.9685" x2="5.461" y2="2.2225" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.9685" x2="-4.191" y2="2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.461" y1="2.2225" x2="-5.715" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.2225" x2="-4.826" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-5.461" y1="2.0955" x2="-5.08" y2="2.0955" width="0.3048" layer="21"/>
+<wire x1="-5.461" y1="2.2225" x2="-5.08" y2="2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.9685" x2="-4.826" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="1.9685" x2="-4.826" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.9685" x2="-4.445" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="2.0955" x2="5.461" y2="2.0955" width="0.3048" layer="21"/>
+<wire x1="-4.445" y1="1.9685" x2="5.715" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="1.397" x2="-4.445" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="1.9685" x2="-4.445" y2="1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="-2.2225" x2="5.461" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="1.397" x2="-4.826" y2="-1.8415" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.8415" x2="-4.826" y2="-1.9177" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.397" x2="-4.445" y2="-1.8415" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.8415" x2="-4.445" y2="-1.9177" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.9685" x2="-4.445" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.8415" x2="-4.445" y2="-1.8415" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.9685" x2="5.715" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-1.9685" x2="5.588" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.9685" x2="-5.588" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="-2.0955" x2="-5.461" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.2225" x2="-4.953" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="-2.0955" x2="-4.826" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="-5.461" y1="-2.2225" x2="-5.08" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="-2.0955" x2="-4.953" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.9685" x2="-4.318" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="-2.0955" x2="-4.191" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="-2.0955" x2="5.588" y2="-2.0955" width="0.1524" layer="21"/>
+<wire x1="5.588" y1="-2.0955" x2="5.461" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="5.461" y1="-2.1717" x2="-4.191" y2="-2.1717" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="-2.1717" x2="-4.191" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.1717" x2="-5.461" y2="-2.1717" width="0.1524" layer="21"/>
+<wire x1="-5.461" y1="-2.1717" x2="-5.461" y2="-2.2225" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.9177" x2="-4.826" y2="-1.9177" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.9177" x2="-4.445" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.9177" x2="-4.826" y2="-1.9685" width="0.1524" layer="21"/>
+<wire x1="-4.699" y1="1.8415" x2="-4.572" y2="1.8415" width="0.3048" layer="21"/>
+<wire x1="7.62" y1="0" x2="6.477" y2="0" width="0.508" layer="51"/>
+<wire x1="-7.62" y1="0" x2="-6.477" y2="0" width="0.508" layer="51"/>
+<pad name="+" x="-7.62" y="0" drill="0.8128"/>
+<pad name="-" x="7.62" y="0" drill="0.8128" shape="octagon"/>
+<text x="-5.461" y="2.4765" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.461" y="-3.8227" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-6.477" y1="-0.254" x2="-5.715" y2="0.254" layer="21"/>
+<rectangle x1="5.715" y1="-0.254" x2="6.477" y2="0.254" layer="21"/>
+<rectangle x1="-2.2225" y1="-0.635" x2="-1.905" y2="0.635" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DEVICE">
@@ -2120,7 +2183,7 @@
 <symbol name="PIN">
 <text x="-9.398" y="-0.762" size="1.27" layer="94" ratio="7">&gt;Part</text>
 <rectangle x1="-3.81" y1="-0.762" x2="-2.54" y2="0.508" layer="94"/>
-<pin name="P$2" x="2.54" y="0" visible="pad" length="middle" rot="R180"/>
+<pin name="P$2" x="2.54" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="AM26LS31">
 <wire x1="-5.08" y1="17.78" x2="0" y2="15.24" width="0.4064" layer="94"/>
@@ -2193,6 +2256,18 @@
 <pin name="I4" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in"/>
 <pin name="I5" x="-12.7" y="-5.08" visible="pad" length="middle" direction="in"/>
 <pin name="I6" x="-12.7" y="-7.62" visible="pad" length="middle" direction="in"/>
+</symbol>
+<symbol name="CPOL-US">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2804,6 +2879,23 @@
 <connect gate="G$1" pin="O" pad="3"/>
 <connect gate="PWR" pin="GND" pad="1"/>
 <connect gate="PWR" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CPOL-USE15-5AXIAL" uservalue="yes">
+<description>0.5" veresion of an electrolytic</description>
+<gates>
+<gate name="1" symbol="CPOL-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="E15-5">
+<connects>
+<connect gate="1" pin="+" pad="+"/>
+<connect gate="1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17553,14 +17645,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="C9" library="rcl" deviceset="C-US" device="050-025X075" value=".001uF"/>
 <part name="C10" library="rcl" deviceset="C-US" device="050-025X075" value=".001uF"/>
 <part name="C11" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
-<part name="C15" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
+<part name="C15" library="dec-con" deviceset="CPOL-USE15-5AXIAL" device="" value="10uF"/>
 <part name="C16" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
 <part name="C17" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
-<part name="C18" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
+<part name="C18" library="dec-con" deviceset="CPOL-USE15-5AXIAL" device="" value="10uF"/>
 <part name="C19" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
-<part name="C20" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
-<part name="C21" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
-<part name="C22" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
+<part name="C20" library="dec-con" deviceset="CPOL-USE15-5AXIAL" device="" value="10uF"/>
+<part name="C21" library="dec-con" deviceset="CPOL-USE15-5AXIAL" device="" value="10uF"/>
+<part name="C22" library="dec-con" deviceset="CPOL-USE15-5AXIAL" device="" value="10uF"/>
 <part name="C23" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
 <part name="C24" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
 <part name="C25" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="10uF"/>
@@ -17787,14 +17879,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="C9" gate="G$1" x="160.02" y="152.4"/>
 <instance part="C10" gate="G$1" x="170.18" y="152.4"/>
 <instance part="C11" gate="G$1" x="218.44" y="86.36" rot="R270"/>
-<instance part="C15" gate="G$1" x="10.16" y="38.1"/>
+<instance part="C15" gate="1" x="10.16" y="38.1"/>
 <instance part="C16" gate="G$1" x="20.32" y="38.1"/>
 <instance part="C17" gate="G$1" x="30.48" y="38.1"/>
-<instance part="C18" gate="G$1" x="40.64" y="38.1"/>
+<instance part="C18" gate="1" x="40.64" y="38.1"/>
 <instance part="C19" gate="G$1" x="50.8" y="38.1"/>
-<instance part="C20" gate="G$1" x="60.96" y="38.1"/>
-<instance part="C21" gate="G$1" x="71.12" y="38.1"/>
-<instance part="C22" gate="G$1" x="81.28" y="38.1"/>
+<instance part="C20" gate="1" x="60.96" y="38.1"/>
+<instance part="C21" gate="1" x="71.12" y="38.1"/>
+<instance part="C22" gate="1" x="81.28" y="38.1"/>
 <instance part="C23" gate="G$1" x="91.44" y="38.1"/>
 <instance part="C24" gate="G$1" x="101.6" y="38.1"/>
 <instance part="C25" gate="G$1" x="111.76" y="38.1"/>
@@ -17922,18 +18014,18 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <junction x="121.92" y="40.64"/>
 <junction x="142.24" y="40.64"/>
 <junction x="132.08" y="40.64"/>
-<pinref part="C21" gate="G$1" pin="+"/>
-<pinref part="C22" gate="G$1" pin="+"/>
+<pinref part="C21" gate="1" pin="+"/>
+<pinref part="C22" gate="1" pin="+"/>
 <pinref part="C23" gate="G$1" pin="+"/>
 <pinref part="C24" gate="G$1" pin="+"/>
 <pinref part="C25" gate="G$1" pin="+"/>
 <pinref part="C26" gate="G$1" pin="+"/>
-<pinref part="C15" gate="G$1" pin="+"/>
+<pinref part="C15" gate="1" pin="+"/>
 <pinref part="C16" gate="G$1" pin="+"/>
 <pinref part="C17" gate="G$1" pin="+"/>
-<pinref part="C18" gate="G$1" pin="+"/>
+<pinref part="C18" gate="1" pin="+"/>
 <pinref part="C19" gate="G$1" pin="+"/>
-<pinref part="C20" gate="G$1" pin="+"/>
+<pinref part="C20" gate="1" pin="+"/>
 <pinref part="V7" gate="G$1" pin="VCC"/>
 <pinref part="C53" gate="G$1" pin="1"/>
 <pinref part="C52" gate="G$1" pin="1"/>
@@ -18131,18 +18223,18 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <junction x="121.92" y="33.02"/>
 <junction x="142.24" y="33.02"/>
 <junction x="132.08" y="33.02"/>
-<pinref part="C20" gate="G$1" pin="-"/>
+<pinref part="C20" gate="1" pin="-"/>
 <pinref part="C19" gate="G$1" pin="-"/>
-<pinref part="C18" gate="G$1" pin="-"/>
+<pinref part="C18" gate="1" pin="-"/>
 <pinref part="C17" gate="G$1" pin="-"/>
 <pinref part="C16" gate="G$1" pin="-"/>
-<pinref part="C15" gate="G$1" pin="-"/>
+<pinref part="C15" gate="1" pin="-"/>
 <pinref part="C26" gate="G$1" pin="-"/>
 <pinref part="C25" gate="G$1" pin="-"/>
 <pinref part="C24" gate="G$1" pin="-"/>
 <pinref part="C23" gate="G$1" pin="-"/>
-<pinref part="C22" gate="G$1" pin="-"/>
-<pinref part="C21" gate="G$1" pin="-"/>
+<pinref part="C22" gate="1" pin="-"/>
+<pinref part="C21" gate="1" pin="-"/>
 <pinref part="V8" gate="GND" pin="GND"/>
 <pinref part="C53" gate="G$1" pin="2"/>
 <pinref part="C52" gate="G$1" pin="2"/>
@@ -20161,6 +20253,13 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,2,30.48,88.9,EA2C,O,,,,"/>
+<approved hash="114,1,302.26,246.317,ED7,D,I,,,"/>
+<approved hash="113,1,175.26,29.591,U$2,,,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

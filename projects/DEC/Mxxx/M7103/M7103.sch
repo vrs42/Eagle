@@ -1223,14 +1223,14 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS8881" prefix="IC">
+<deviceset name="N8881" prefix="E">
 <description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector</description>
 <gates>
 <gate name="A" symbol="NAND2" x="15.24" y="7.62" swaplevel="1"/>
 <gate name="B" symbol="NAND2" x="15.24" y="-5.08" swaplevel="1"/>
 <gate name="C" symbol="NAND2" x="45.72" y="7.62" swaplevel="1"/>
 <gate name="D" symbol="NAND2" x="45.72" y="-5.08" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN" x="-10.16" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -13207,7 +13207,7 @@ Based on the following sources:
 <part name="Q9" library="transistor-npn" deviceset="2N3019" device="" value="2N3009B"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0207/10" value="4.7K"/>
 <part name="V12" library="supply2" deviceset="VCC" device=""/>
-<part name="E1" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E1" library="dec-con" deviceset="N8881" device="N"/>
 <part name="U$3" library="dec-con" deviceset="OUTLINE-*" device="DOUBLE-LONG"/>
 <part name="E7" library="74xx-us" deviceset="74*16" device="N"/>
 <part name="E9" library="74xx-us" deviceset="74*00" device="N"/>
@@ -15210,39 +15210,6 @@ Based on the following sources:
 <pinref part="D25" gate="G$1" pin="C"/>
 <pinref part="EDGE" gate="AP2" pin="1"/>
 </segment>
-<segment>
-<wire x1="114.3" y1="63.5" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="55.88" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
-<junction x="114.3" y="55.88"/>
-<pinref part="D19" gate="G$1" pin="C"/>
-<pinref part="D20" gate="G$1" pin="A"/>
-<pinref part="D29" gate="G$1" pin="C"/>
-<pinref part="EDGE" gate="AR2" pin="1"/>
-</segment>
-<segment>
-<wire x1="114.3" y1="27.94" x2="114.3" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="20.32" x2="114.3" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="20.32" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="20.32" x2="114.3" y2="20.32" width="0.1524" layer="91"/>
-<junction x="114.3" y="20.32"/>
-<pinref part="D3" gate="G$1" pin="C"/>
-<pinref part="D4" gate="G$1" pin="A"/>
-<pinref part="D33" gate="G$1" pin="C"/>
-<pinref part="EDGE" gate="AK2" pin="1"/>
-</segment>
-<segment>
-<wire x1="208.28" y1="33.02" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="25.4" x2="208.28" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="25.4" x2="215.9" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="25.4" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
-<junction x="208.28" y="25.4"/>
-<pinref part="D5" gate="G$1" pin="C"/>
-<pinref part="D6" gate="G$1" pin="A"/>
-<pinref part="D37" gate="G$1" pin="C"/>
-<pinref part="EDGE" gate="AL2" pin="1"/>
-</segment>
 </net>
 <net name="N$24" class="0">
 <segment>
@@ -15610,9 +15577,58 @@ Based on the following sources:
 <pinref part="D22" gate="G$1" pin="C"/>
 </segment>
 </net>
+<net name="N$106" class="0">
+<segment>
+<wire x1="114.3" y1="27.94" x2="114.3" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="20.32" x2="114.3" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="20.32" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
+<junction x="114.3" y="20.32"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="D33" gate="G$1" pin="C"/>
+<pinref part="EDGE" gate="AK2" pin="1"/>
+<wire x1="106.68" y1="20.32" x2="114.3" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$111" class="0">
+<segment>
+<wire x1="114.3" y1="63.5" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="55.88" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
+<junction x="114.3" y="55.88"/>
+<pinref part="D19" gate="G$1" pin="C"/>
+<pinref part="D20" gate="G$1" pin="A"/>
+<pinref part="D29" gate="G$1" pin="C"/>
+<pinref part="EDGE" gate="AR2" pin="1"/>
+<wire x1="106.68" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$112" class="0">
+<segment>
+<wire x1="208.28" y1="33.02" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="25.4" x2="208.28" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="25.4" x2="215.9" y2="25.4" width="0.1524" layer="91"/>
+<junction x="208.28" y="25.4"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="D6" gate="G$1" pin="A"/>
+<pinref part="D37" gate="G$1" pin="C"/>
+<pinref part="EDGE" gate="AL2" pin="1"/>
+<wire x1="200.66" y1="25.4" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,358.14,86.2965,E7,A,I,,,"/>
+<approved hash="114,1,358.14,86.2965,E7,B,I,,,"/>
+<approved hash="114,1,261.62,22.7965,E10,C,I,,,"/>
+<approved hash="114,1,261.62,22.7965,E10,D,I,,,"/>
+<approved hash="114,1,261.62,22.7965,E10,E,I,,,"/>
+<approved hash="114,1,261.62,22.7965,E10,F,I,,,"/>
+<approved hash="113,1,199.009,25.4,EDGE,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

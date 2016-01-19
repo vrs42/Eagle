@@ -1888,14 +1888,14 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS8881" prefix="IC">
+<deviceset name="N8881" prefix="E">
 <description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector</description>
 <gates>
 <gate name="A" symbol="NAND2" x="15.24" y="7.62" swaplevel="1"/>
 <gate name="B" symbol="NAND2" x="15.24" y="-5.08" swaplevel="1"/>
 <gate name="C" symbol="NAND2" x="45.72" y="7.62" swaplevel="1"/>
 <gate name="D" symbol="NAND2" x="45.72" y="-5.08" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN" x="-10.16" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -14334,7 +14334,7 @@ Based on the following sources:
 <parts>
 <part name="E39" library="dec-con" deviceset="SP380" device="N"/>
 <part name="E30" library="dec-con" deviceset="SP384" device="N"/>
-<part name="E26" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E26" library="dec-con" deviceset="N8881" device="N"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
 <part name="J1" library="jumper" deviceset="J" device="10MM"/>
@@ -14351,7 +14351,7 @@ Based on the following sources:
 <part name="E20" library="dec-con" deviceset="SP380" device="N"/>
 <part name="E45" library="dec-con" deviceset="SP380" device="N"/>
 <part name="E32" library="dec-con" deviceset="SP314" device="N"/>
-<part name="E31" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E31" library="dec-con" deviceset="N8881" device="N"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
 <part name="EDGE" library="dec-con" deviceset="QUAD" device=""/>
@@ -14359,7 +14359,7 @@ Based on the following sources:
 <part name="V5" library="supply2" deviceset="GND" device=""/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="E24" library="74xx-us" deviceset="74*00" device="N"/>
-<part name="E16" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E16" library="dec-con" deviceset="N8881" device="N"/>
 <part name="E21" library="74xx-us" deviceset="74*10" device="N"/>
 <part name="E22" library="dec-con" deviceset="DEC8251" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
@@ -14367,7 +14367,7 @@ Based on the following sources:
 <part name="E28" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="E33" library="dec-con" deviceset="SP314" device="N"/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
-<part name="E35" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E35" library="dec-con" deviceset="N8881" device="N"/>
 <part name="E38" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420"/>
 <part name="E44" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="E43" library="74xx-us" deviceset="74*20" device="N" technology="S" value="7420"/>
@@ -14405,7 +14405,7 @@ Based on the following sources:
 <part name="V46" library="supply2" deviceset="GND" device=""/>
 <part name="E5" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="E4" library="74xx-us" deviceset="74*00" device="N"/>
-<part name="E7" library="dec-con" deviceset="DS8881" device="N"/>
+<part name="E7" library="dec-con" deviceset="N8881" device="N"/>
 <part name="E8" library="dec-con" deviceset="SP384" device="N"/>
 <part name="E52" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="V47" library="supply2" deviceset="GND" device=""/>
@@ -18738,6 +18738,30 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,63.5,457.137,E26,D,I0,,,"/>
+<approved hash="114,1,63.5,457.137,E26,D,I1,,,"/>
+<approved hash="114,1,55.8165,66.04,E41,D,I0,,,"/>
+<approved hash="114,1,55.8165,66.04,E41,D,I1,,,"/>
+<approved hash="114,1,137.16,238.697,E21,A,I0,,,"/>
+<approved hash="114,1,137.16,238.697,E21,A,I1,,,"/>
+<approved hash="114,1,137.16,238.697,E21,A,I2,,,"/>
+<approved hash="114,1,518.096,464.82,E35,A,I0,,,"/>
+<approved hash="114,1,518.096,464.82,E35,A,I1,,,"/>
+<approved hash="114,1,449.517,388.62,E13,B,CLR,,,"/>
+<approved hash="114,1,449.517,388.62,E13,B,D,,,"/>
+<approved hash="114,1,449.517,388.62,E13,B,CLK,,,"/>
+<approved hash="114,1,449.517,388.62,E13,B,PRE,,,"/>
+<approved hash="114,1,297.18,281.877,E48,A,I,,,"/>
+<approved hash="114,1,297.18,281.877,E48,B,I,,,"/>
+<approved hash="114,1,327.66,261.557,E42,B,I0,,,"/>
+<approved hash="114,1,327.66,261.557,E42,B,I1,,,"/>
+<approved hash="114,1,327.66,261.557,E42,B,I2,,,"/>
+<approved hash="114,1,490.157,104.14,E54,C,I0,,,"/>
+<approved hash="114,1,490.157,104.14,E54,C,I1,,,"/>
+<approved hash="114,1,490.157,104.14,E54,C,I2,,,"/>
+<approved hash="113,1,20.32,0.889,EDGE,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
