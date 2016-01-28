@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4473,7 +4473,7 @@ naming: grid - package width</description>
 <label x="233.68" y="35.56" size="1.778" layer="95"/>
 </segment>
 </bus>
-<bus name="IOP[1..4]">
+<bus name="BIOP[1..4]">
 <segment>
 <wire x1="12.7" y1="60.96" x2="12.7" y2="-53.34" width="0.762" layer="92"/>
 <wire x1="12.7" y1="-53.34" x2="165.1" y2="-53.34" width="0.762" layer="92"/>
@@ -7235,6 +7235,11 @@ naming: grid - package width</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,182.88,71.12,IC17,GNDA,GND,,,"/>
+<approved hash="104,1,223.52,71.12,IC17,GNDB,GND,,,"/>
+<approved hash="114,1,185.42,-86.4235,IC10,A,I,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
