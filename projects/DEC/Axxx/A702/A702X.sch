@@ -11682,6 +11682,12 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,53.0606,110.393,PAD1,,,,,"/>
+<approved hash="113,1,64.6726,122.199,PAD2,,,,,"/>
+<approved hash="113,1,53.0606,128.173,PAD3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

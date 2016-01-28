@@ -6427,6 +6427,15 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,123.287,84.0994,R8-1,,,,,"/>
+<approved hash="113,1,126.721,72.2926,R8-2,,,,,"/>
+<approved hash="113,1,140.873,84.0994,R8-3,,,,,"/>
+<approved hash="113,1,139.979,36.9274,R5-1,,,,,"/>
+<approved hash="113,1,126.721,21.6874,R5-2,,,,,"/>
+<approved hash="113,1,139.979,21.6874,R5-3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

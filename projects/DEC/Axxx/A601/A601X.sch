@@ -13959,7 +13959,6 @@ DIN A4, landscape with extra doc field</description>
 <net name="H2" class="0">
 <segment>
 <wire x1="38.1" y1="27.94" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
-<label x="43.18" y="33.02" size="1.778" layer="95" rot="MR0"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="U$3" gate="H2" pin="1"/>
 </segment>
@@ -14078,7 +14077,6 @@ DIN A4, landscape with extra doc field</description>
 <net name="J2" class="0">
 <segment>
 <wire x1="20.32" y1="27.94" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
-<label x="22.86" y="33.02" size="1.778" layer="95"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="U$3" gate="J2" pin="1"/>
 </segment>
@@ -14458,6 +14456,9 @@ DIN A4, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -20044,6 +20044,12 @@ Source: www.vishay.com .. rwm.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+<approved hash="113,1,69.9474,117.119,PAD1,,,,,"/>
+<approved hash="113,1,65.7606,123.093,PAD2,,,,,"/>
+<approved hash="113,1,65.7606,128.173,PAD3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

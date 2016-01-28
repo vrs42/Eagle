@@ -14826,7 +14826,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="C21" gate="G$1" x="149.86" y="81.28" rot="R180"/>
 </instances>
 <busses>
-<bus name="KEY[0..7],DISP,LSR,LA,LXA,INIT,RUN,BOOT,!HLT,ETHIS,ENEXT,DTHIS,DNEXT">
+<bus name="KEY[0..7],DISP,LSR,LA,LXA,INIT,RUN,BOOT,!SHLT,ETHIS,ENEXT,DTHIS,DNEXT">
 <segment>
 <wire x1="38.1" y1="53.34" x2="38.1" y2="78.74" width="0.762" layer="92"/>
 <wire x1="38.1" y1="78.74" x2="-10.16" y2="78.74" width="0.762" layer="92"/>
@@ -17194,7 +17194,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND14" gate="1" x="17.78" y="-20.32"/>
 </instances>
 <busses>
-<bus name="KEY[0..7],DISP,LSR,LA,LXA,INIT,RUN,BOOT,!HLT,ETHIS,ENEXT,DTHIS,DNEXT">
+<bus name="KEY[0..7],DISP,LSR,LA,LXA,INIT,RUN,BOOT,!SHLT,ETHIS,ENEXT,DTHIS,DNEXT">
 <segment>
 <wire x1="25.4" y1="35.56" x2="116.84" y2="35.56" width="0.762" layer="92"/>
 <wire x1="116.84" y1="35.56" x2="116.84" y2="45.72" width="0.762" layer="92"/>
@@ -17546,6 +17546,34 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,170.18,22.7965,E20,C,I,,,"/>
+<approved hash="114,1,170.18,22.7965,E20,D,I,,,"/>
+<approved hash="113,2,176.433,134.899,VCC,,,,,"/>
+<approved hash="113,2,174.087,126.721,GND,,,,,"/>
+<approved hash="113,3,106.68,88.828,J1,,,,,"/>
+<approved hash="113,3,101.6,35.488,J2,,,,,"/>
+<approved hash="113,4,23.2495,73.66,DTHIS,,,,,"/>
+<approved hash="113,4,41.0295,73.66,BOOT,,,,,"/>
+<approved hash="113,4,58.8095,73.66,DISP,,,,,"/>
+<approved hash="113,4,76.5895,73.66,LSR,,,,,"/>
+<approved hash="113,4,94.3695,73.66,LA,,,,,"/>
+<approved hash="113,4,23.2495,48.26,DNEXT,,,,,"/>
+<approved hash="113,4,41.0295,48.26,KEY5,,,,,"/>
+<approved hash="113,4,58.8095,48.26,KEY6,,,,,"/>
+<approved hash="113,4,76.5895,48.26,KEY7,,,,,"/>
+<approved hash="113,4,94.3695,48.26,LXA,,,,,"/>
+<approved hash="113,4,23.2495,17.78,ETHIS,,,,,"/>
+<approved hash="113,4,41.0295,17.78,KEY2,,,,,"/>
+<approved hash="113,4,58.8095,17.78,KEY3,,,,,"/>
+<approved hash="113,4,76.5895,17.78,KEY4,,,,,"/>
+<approved hash="113,4,94.3695,17.78,INIT,,,,,"/>
+<approved hash="113,4,23.2495,-10.16,ENEXT,,,,,"/>
+<approved hash="113,4,41.0295,-10.16,KEY0,,,,,"/>
+<approved hash="113,4,58.8095,-10.16,KEY1,,,,,"/>
+<approved hash="113,4,76.5895,-10.16,!SHLT,,,,,"/>
+<approved hash="113,4,94.3695,-10.16,RUN,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15600,6 +15600,22 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,3,167.64,-62.2935,E4,A,A,,,"/>
+<approved hash="114,3,167.64,-62.2935,E4,A,B,,,"/>
+<approved hash="114,3,167.64,-62.2935,E4,A,CLR,,,"/>
+<approved hash="114,3,167.64,-62.2935,E4,A,C,,,"/>
+<approved hash="114,3,167.64,-62.2935,E4,A,R/C,,,"/>
+<approved hash="114,4,320.04,76.1365,E23,B,I,,,"/>
+<approved hash="114,4,320.04,76.1365,E23,C,I,,,"/>
+<approved hash="106,1,200.66,12.7,!EXTPUL,,,,,"/>
+<approved hash="113,1,137.16,22.788,J3,,,,,"/>
+<approved hash="113,1,193.04,22.788,J4,,,,,"/>
+<approved hash="113,1,50.8,91.1183,J1,,,,,"/>
+<approved hash="113,1,50.8,30.1583,J2,,,,,"/>
+<approved hash="113,1,102.773,122.199,VCC,,,,,"/>
+<approved hash="113,1,102.773,106.959,GND,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
