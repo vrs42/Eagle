@@ -1426,6 +1426,12 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,64.389,78.74,U$1,,,,,"/>
+<approved hash="113,1,73.66,78.9347,SV1,,,,,"/>
+<approved hash="113,1,109.22,91.5712,P2,,,,,"/>
+<approved hash="113,1,109.22,73.7912,P1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
