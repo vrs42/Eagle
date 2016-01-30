@@ -7720,6 +7720,7 @@ LETTER landscape</description>
 <wire x1="109.22" y1="114.3" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="E2A" gate="A" pin="I0"/>
 <pinref part="U$1" gate="D1" pin="1"/>
+<label x="109.22" y="109.22" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -7746,6 +7747,7 @@ LETTER landscape</description>
 <wire x1="134.62" y1="160.02" x2="137.16" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="E2A" gate="D" pin="O"/>
 <pinref part="U$1" gate="C1" pin="1"/>
+<label x="137.16" y="160.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="134.62" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
@@ -7907,6 +7909,7 @@ LETTER landscape</description>
 <wire x1="134.62" y1="116.84" x2="137.16" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="E2A" gate="A" pin="O"/>
 <pinref part="U$1" gate="S1" pin="1"/>
+<label x="137.16" y="116.84" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="134.62" y1="30.48" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
@@ -7961,6 +7964,7 @@ LETTER landscape</description>
 <wire x1="109.22" y1="27.94" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="E2A" gate="B" pin="I1"/>
 <pinref part="U$1" gate="R1" pin="1"/>
+<label x="109.22" y="22.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -8342,6 +8346,18 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,139.7,149.86,E2P,V+,VCC,,,"/>
+<approved hash="104,1,139.7,134.62,E2P,V-,-6.2VA,,,"/>
+<approved hash="104,1,142.24,60.96,E4BP,V+,VCC,,,"/>
+<approved hash="104,1,142.24,45.72,E4BP,V-,-6.2VB,,,"/>
+<approved hash="104,1,142.24,149.86,E1P,V+,VCC,,,"/>
+<approved hash="104,1,142.24,134.62,E1P,V-,-6.2VA,,,"/>
+<approved hash="104,1,139.7,60.96,E5BP,V+,VCC,,,"/>
+<approved hash="104,1,139.7,45.72,E5BP,V-,-6.2VB,,,"/>
+<approved hash="113,1,194.691,134.62,U$1,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

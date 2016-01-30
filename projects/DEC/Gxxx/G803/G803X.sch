@@ -6106,6 +6106,7 @@ high speed (Philips)</description>
 <pinref part="R26" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="L2" pin="1"/>
 <pinref part="D7" gate="G$1" pin="A"/>
+<label x="20.32" y="142.24" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
@@ -6131,6 +6132,7 @@ high speed (Philips)</description>
 <pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="S2" pin="1"/>
 <pinref part="D12" gate="G$1" pin="A"/>
+<label x="20.32" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="60.96" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
@@ -6333,6 +6335,9 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

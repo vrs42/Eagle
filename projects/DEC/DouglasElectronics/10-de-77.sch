@@ -1202,43 +1202,43 @@ LETTER landscape</description>
 <instance part="U$1" gate="C1" x="10.16" y="15.24"/>
 <instance part="U$1" gate="B1" x="10.16" y="10.16"/>
 <instance part="U$1" gate="A1" x="10.16" y="5.08"/>
-<instance part="U$4" gate="G$1" x="68.58" y="15.24"/>
-<instance part="U$6" gate="L2" x="53.34" y="50.8"/>
-<instance part="U$6" gate="M2" x="53.34" y="55.88"/>
-<instance part="U$6" gate="N2" x="53.34" y="60.96"/>
-<instance part="U$6" gate="P2" x="53.34" y="66.04"/>
-<instance part="U$6" gate="R2" x="53.34" y="71.12"/>
-<instance part="U$6" gate="S2" x="53.34" y="76.2"/>
-<instance part="U$6" gate="T2" x="53.34" y="81.28"/>
-<instance part="U$6" gate="K2" x="53.34" y="45.72"/>
-<instance part="U$6" gate="J2" x="53.34" y="40.64"/>
-<instance part="U$6" gate="H2" x="53.34" y="35.56"/>
-<instance part="U$6" gate="F2" x="53.34" y="30.48"/>
-<instance part="U$6" gate="E2" x="53.34" y="25.4"/>
-<instance part="U$6" gate="D2" x="53.34" y="20.32"/>
-<instance part="U$6" gate="C2" x="53.34" y="15.24"/>
-<instance part="U$6" gate="U2" x="53.34" y="86.36"/>
-<instance part="U$6" gate="V2" x="53.34" y="91.44"/>
-<instance part="U$6" gate="B2" x="53.34" y="10.16"/>
-<instance part="U$6" gate="A2" x="53.34" y="5.08"/>
-<instance part="U$6" gate="K1" x="38.1" y="45.72"/>
-<instance part="U$6" gate="L1" x="38.1" y="50.8"/>
-<instance part="U$6" gate="M1" x="38.1" y="55.88"/>
-<instance part="U$6" gate="N1" x="38.1" y="60.96"/>
-<instance part="U$6" gate="P1" x="38.1" y="66.04"/>
-<instance part="U$6" gate="R1" x="38.1" y="71.12"/>
-<instance part="U$6" gate="S1" x="38.1" y="76.2"/>
-<instance part="U$6" gate="T1" x="38.1" y="81.28"/>
-<instance part="U$6" gate="U1" x="38.1" y="86.36"/>
-<instance part="U$6" gate="V1" x="38.1" y="91.44"/>
-<instance part="U$6" gate="J1" x="38.1" y="40.64"/>
-<instance part="U$6" gate="H1" x="38.1" y="35.56"/>
-<instance part="U$6" gate="F1" x="38.1" y="30.48"/>
-<instance part="U$6" gate="E1" x="38.1" y="25.4"/>
-<instance part="U$6" gate="D1" x="38.1" y="20.32"/>
-<instance part="U$6" gate="C1" x="38.1" y="15.24"/>
-<instance part="U$6" gate="B1" x="38.1" y="10.16"/>
-<instance part="U$6" gate="A1" x="38.1" y="5.08"/>
+<instance part="U$4" gate="G$1" x="73.66" y="15.24"/>
+<instance part="U$6" gate="L2" x="58.42" y="50.8"/>
+<instance part="U$6" gate="M2" x="58.42" y="55.88"/>
+<instance part="U$6" gate="N2" x="58.42" y="60.96"/>
+<instance part="U$6" gate="P2" x="58.42" y="66.04"/>
+<instance part="U$6" gate="R2" x="58.42" y="71.12"/>
+<instance part="U$6" gate="S2" x="58.42" y="76.2"/>
+<instance part="U$6" gate="T2" x="58.42" y="81.28"/>
+<instance part="U$6" gate="K2" x="58.42" y="45.72"/>
+<instance part="U$6" gate="J2" x="58.42" y="40.64"/>
+<instance part="U$6" gate="H2" x="58.42" y="35.56"/>
+<instance part="U$6" gate="F2" x="58.42" y="30.48"/>
+<instance part="U$6" gate="E2" x="58.42" y="25.4"/>
+<instance part="U$6" gate="D2" x="58.42" y="20.32"/>
+<instance part="U$6" gate="C2" x="58.42" y="15.24"/>
+<instance part="U$6" gate="U2" x="58.42" y="86.36"/>
+<instance part="U$6" gate="V2" x="58.42" y="91.44"/>
+<instance part="U$6" gate="B2" x="58.42" y="10.16"/>
+<instance part="U$6" gate="A2" x="58.42" y="5.08"/>
+<instance part="U$6" gate="K1" x="43.18" y="45.72"/>
+<instance part="U$6" gate="L1" x="43.18" y="50.8"/>
+<instance part="U$6" gate="M1" x="43.18" y="55.88"/>
+<instance part="U$6" gate="N1" x="43.18" y="60.96"/>
+<instance part="U$6" gate="P1" x="43.18" y="66.04"/>
+<instance part="U$6" gate="R1" x="43.18" y="71.12"/>
+<instance part="U$6" gate="S1" x="43.18" y="76.2"/>
+<instance part="U$6" gate="T1" x="43.18" y="81.28"/>
+<instance part="U$6" gate="U1" x="43.18" y="86.36"/>
+<instance part="U$6" gate="V1" x="43.18" y="91.44"/>
+<instance part="U$6" gate="J1" x="43.18" y="40.64"/>
+<instance part="U$6" gate="H1" x="43.18" y="35.56"/>
+<instance part="U$6" gate="F1" x="43.18" y="30.48"/>
+<instance part="U$6" gate="E1" x="43.18" y="25.4"/>
+<instance part="U$6" gate="D1" x="43.18" y="20.32"/>
+<instance part="U$6" gate="C1" x="43.18" y="15.24"/>
+<instance part="U$6" gate="B1" x="43.18" y="10.16"/>
+<instance part="U$6" gate="A1" x="43.18" y="5.08"/>
 <instance part="U$5" gate="G$1" x="22.86" y="167.64"/>
 <instance part="U$7" gate="G$1" x="22.86" y="139.7"/>
 <instance part="U$8" gate="G$1" x="22.86" y="111.76"/>
@@ -1259,7 +1259,7 @@ LETTER landscape</description>
 <instance part="U$23" gate="G$1" x="215.9" y="111.76"/>
 <instance part="U$24" gate="V" x="7.62" y="91.44"/>
 <instance part="U$24" gate="U" x="7.62" y="86.36"/>
-<instance part="U$24" gate="T" x="5.08" y="81.28"/>
+<instance part="U$24" gate="T" x="2.54" y="81.28"/>
 <instance part="U$24" gate="S" x="7.62" y="76.2"/>
 <instance part="U$24" gate="R" x="7.62" y="71.12"/>
 <instance part="U$24" gate="P" x="7.62" y="66.04"/>
@@ -1290,45 +1290,45 @@ LETTER landscape</description>
 <instance part="U$25" gate="F" x="27.94" y="30.48"/>
 <instance part="U$25" gate="E" x="27.94" y="25.4"/>
 <instance part="U$25" gate="D" x="27.94" y="20.32"/>
-<instance part="U$25" gate="C" x="30.48" y="15.24"/>
+<instance part="U$25" gate="C" x="33.02" y="15.24"/>
 <instance part="U$25" gate="B" x="27.94" y="10.16"/>
-<instance part="U$25" gate="A" x="30.48" y="5.08"/>
-<instance part="U$26" gate="V" x="35.56" y="91.44"/>
-<instance part="U$26" gate="U" x="35.56" y="86.36"/>
-<instance part="U$26" gate="T" x="33.02" y="81.28"/>
-<instance part="U$26" gate="S" x="35.56" y="76.2"/>
-<instance part="U$26" gate="R" x="35.56" y="71.12"/>
-<instance part="U$26" gate="P" x="35.56" y="66.04"/>
-<instance part="U$26" gate="N" x="35.56" y="60.96"/>
-<instance part="U$26" gate="M" x="35.56" y="55.88"/>
-<instance part="U$26" gate="L" x="35.56" y="50.8"/>
-<instance part="U$26" gate="K" x="35.56" y="45.72"/>
-<instance part="U$26" gate="J" x="35.56" y="40.64"/>
-<instance part="U$26" gate="H" x="35.56" y="35.56"/>
-<instance part="U$26" gate="F" x="35.56" y="30.48"/>
-<instance part="U$26" gate="E" x="35.56" y="25.4"/>
-<instance part="U$26" gate="D" x="35.56" y="20.32"/>
-<instance part="U$26" gate="C" x="35.56" y="15.24"/>
-<instance part="U$26" gate="B" x="35.56" y="10.16"/>
-<instance part="U$26" gate="A" x="35.56" y="5.08"/>
-<instance part="U$27" gate="V" x="55.88" y="91.44"/>
-<instance part="U$27" gate="U" x="55.88" y="86.36"/>
-<instance part="U$27" gate="T" x="55.88" y="81.28"/>
-<instance part="U$27" gate="S" x="55.88" y="76.2"/>
-<instance part="U$27" gate="R" x="55.88" y="71.12"/>
-<instance part="U$27" gate="P" x="55.88" y="66.04"/>
-<instance part="U$27" gate="N" x="55.88" y="60.96"/>
-<instance part="U$27" gate="M" x="55.88" y="55.88"/>
-<instance part="U$27" gate="L" x="55.88" y="50.8"/>
-<instance part="U$27" gate="K" x="55.88" y="45.72"/>
-<instance part="U$27" gate="J" x="55.88" y="40.64"/>
-<instance part="U$27" gate="H" x="55.88" y="35.56"/>
-<instance part="U$27" gate="F" x="55.88" y="30.48"/>
-<instance part="U$27" gate="E" x="55.88" y="25.4"/>
-<instance part="U$27" gate="D" x="55.88" y="20.32"/>
-<instance part="U$27" gate="C" x="58.42" y="15.24"/>
-<instance part="U$27" gate="B" x="55.88" y="10.16"/>
-<instance part="U$27" gate="A" x="58.42" y="5.08"/>
+<instance part="U$25" gate="A" x="33.02" y="5.08"/>
+<instance part="U$26" gate="V" x="40.64" y="91.44"/>
+<instance part="U$26" gate="U" x="40.64" y="86.36"/>
+<instance part="U$26" gate="T" x="35.56" y="81.28"/>
+<instance part="U$26" gate="S" x="40.64" y="76.2"/>
+<instance part="U$26" gate="R" x="40.64" y="71.12"/>
+<instance part="U$26" gate="P" x="40.64" y="66.04"/>
+<instance part="U$26" gate="N" x="40.64" y="60.96"/>
+<instance part="U$26" gate="M" x="40.64" y="55.88"/>
+<instance part="U$26" gate="L" x="40.64" y="50.8"/>
+<instance part="U$26" gate="K" x="40.64" y="45.72"/>
+<instance part="U$26" gate="J" x="40.64" y="40.64"/>
+<instance part="U$26" gate="H" x="40.64" y="35.56"/>
+<instance part="U$26" gate="F" x="40.64" y="30.48"/>
+<instance part="U$26" gate="E" x="40.64" y="25.4"/>
+<instance part="U$26" gate="D" x="40.64" y="20.32"/>
+<instance part="U$26" gate="C" x="40.64" y="15.24"/>
+<instance part="U$26" gate="B" x="40.64" y="10.16"/>
+<instance part="U$26" gate="A" x="40.64" y="5.08"/>
+<instance part="U$27" gate="V" x="60.96" y="91.44"/>
+<instance part="U$27" gate="U" x="60.96" y="86.36"/>
+<instance part="U$27" gate="T" x="60.96" y="81.28"/>
+<instance part="U$27" gate="S" x="60.96" y="76.2"/>
+<instance part="U$27" gate="R" x="60.96" y="71.12"/>
+<instance part="U$27" gate="P" x="60.96" y="66.04"/>
+<instance part="U$27" gate="N" x="60.96" y="60.96"/>
+<instance part="U$27" gate="M" x="60.96" y="55.88"/>
+<instance part="U$27" gate="L" x="60.96" y="50.8"/>
+<instance part="U$27" gate="K" x="60.96" y="45.72"/>
+<instance part="U$27" gate="J" x="60.96" y="40.64"/>
+<instance part="U$27" gate="H" x="60.96" y="35.56"/>
+<instance part="U$27" gate="F" x="60.96" y="30.48"/>
+<instance part="U$27" gate="E" x="60.96" y="25.4"/>
+<instance part="U$27" gate="D" x="60.96" y="20.32"/>
+<instance part="U$27" gate="C" x="66.04" y="15.24"/>
+<instance part="U$27" gate="B" x="60.96" y="10.16"/>
+<instance part="U$27" gate="A" x="66.04" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -1449,24 +1449,28 @@ LETTER landscape</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="5.08" y1="81.28" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="81.28" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="T1" pin="1"/>
 <pinref part="U$24" gate="T" pin="P$1"/>
+<label x="2.54" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="C2" pin="1"/>
 <pinref part="U$25" gate="C" pin="P$1"/>
+<label x="27.94" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="15.24" x2="55.88" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="15.24" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="C2" pin="1"/>
 <pinref part="U$27" gate="C" pin="P$1"/>
+<label x="60.96" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="33.02" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="81.28" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="T1" pin="1"/>
 <pinref part="U$26" gate="T" pin="P$1"/>
+<label x="35.56" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -4633,19 +4637,314 @@ LETTER landscape</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="30.48" y1="5.08" x2="27.94" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="5.08" x2="27.94" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="A2" pin="1"/>
 <pinref part="U$25" gate="A" pin="P$1"/>
+<label x="27.94" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="5.08" x2="55.88" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="5.08" x2="60.96" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="A2" pin="1"/>
 <pinref part="U$27" gate="A" pin="P$1"/>
+<label x="60.96" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="111,1,8.89,175.26,N$73,,,,,"/>
+<approved hash="111,1,8.89,172.72,N$75,,,,,"/>
+<approved hash="111,1,8.89,170.18,N$76,,,,,"/>
+<approved hash="111,1,8.89,167.64,N$74,,,,,"/>
+<approved hash="111,1,8.89,165.1,N$77,,,,,"/>
+<approved hash="111,1,8.89,162.56,N$78,,,,,"/>
+<approved hash="111,1,8.89,160.02,N$79,,,,,"/>
+<approved hash="111,1,8.89,157.48,N$80,,,,,"/>
+<approved hash="111,1,36.83,157.48,N$88,,,,,"/>
+<approved hash="111,1,36.83,160.02,N$87,,,,,"/>
+<approved hash="111,1,36.83,162.56,N$86,,,,,"/>
+<approved hash="111,1,36.83,165.1,N$85,,,,,"/>
+<approved hash="111,1,36.83,167.64,N$84,,,,,"/>
+<approved hash="111,1,36.83,170.18,N$83,,,,,"/>
+<approved hash="111,1,36.83,172.72,N$82,,,,,"/>
+<approved hash="111,1,36.83,175.26,N$81,,,,,"/>
+<approved hash="111,1,8.89,147.32,N$89,,,,,"/>
+<approved hash="111,1,8.89,144.78,N$90,,,,,"/>
+<approved hash="111,1,8.89,142.24,N$91,,,,,"/>
+<approved hash="111,1,8.89,139.7,N$92,,,,,"/>
+<approved hash="111,1,8.89,137.16,N$93,,,,,"/>
+<approved hash="111,1,8.89,134.62,N$94,,,,,"/>
+<approved hash="111,1,8.89,132.08,N$95,,,,,"/>
+<approved hash="111,1,8.89,129.54,N$96,,,,,"/>
+<approved hash="111,1,36.83,129.54,N$104,,,,,"/>
+<approved hash="111,1,36.83,132.08,N$103,,,,,"/>
+<approved hash="111,1,36.83,134.62,N$102,,,,,"/>
+<approved hash="111,1,36.83,137.16,N$101,,,,,"/>
+<approved hash="111,1,36.83,139.7,N$100,,,,,"/>
+<approved hash="111,1,36.83,142.24,N$99,,,,,"/>
+<approved hash="111,1,36.83,144.78,N$98,,,,,"/>
+<approved hash="111,1,36.83,147.32,N$97,,,,,"/>
+<approved hash="111,1,8.89,119.38,N$105,,,,,"/>
+<approved hash="111,1,8.89,116.84,N$106,,,,,"/>
+<approved hash="111,1,8.89,114.3,N$107,,,,,"/>
+<approved hash="111,1,8.89,111.76,N$108,,,,,"/>
+<approved hash="111,1,8.89,109.22,N$109,,,,,"/>
+<approved hash="111,1,8.89,106.68,N$110,,,,,"/>
+<approved hash="111,1,8.89,104.14,N$111,,,,,"/>
+<approved hash="111,1,8.89,101.6,N$112,,,,,"/>
+<approved hash="111,1,36.83,101.6,N$120,,,,,"/>
+<approved hash="111,1,36.83,104.14,N$119,,,,,"/>
+<approved hash="111,1,36.83,106.68,N$118,,,,,"/>
+<approved hash="111,1,36.83,109.22,N$117,,,,,"/>
+<approved hash="111,1,36.83,111.76,N$116,,,,,"/>
+<approved hash="111,1,36.83,114.3,N$115,,,,,"/>
+<approved hash="111,1,36.83,116.84,N$114,,,,,"/>
+<approved hash="111,1,36.83,119.38,N$113,,,,,"/>
+<approved hash="111,1,46.99,175.26,N$121,,,,,"/>
+<approved hash="111,1,46.99,172.72,N$122,,,,,"/>
+<approved hash="111,1,46.99,170.18,N$123,,,,,"/>
+<approved hash="111,1,46.99,167.64,N$124,,,,,"/>
+<approved hash="111,1,46.99,165.1,N$125,,,,,"/>
+<approved hash="111,1,46.99,162.56,N$126,,,,,"/>
+<approved hash="111,1,46.99,160.02,N$127,,,,,"/>
+<approved hash="111,1,46.99,157.48,N$128,,,,,"/>
+<approved hash="111,1,74.93,157.48,N$136,,,,,"/>
+<approved hash="111,1,74.93,160.02,N$135,,,,,"/>
+<approved hash="111,1,74.93,162.56,N$134,,,,,"/>
+<approved hash="111,1,74.93,165.1,N$133,,,,,"/>
+<approved hash="111,1,74.93,167.64,N$132,,,,,"/>
+<approved hash="111,1,74.93,170.18,N$131,,,,,"/>
+<approved hash="111,1,74.93,172.72,N$130,,,,,"/>
+<approved hash="111,1,74.93,175.26,N$129,,,,,"/>
+<approved hash="111,1,46.99,147.32,N$137,,,,,"/>
+<approved hash="111,1,46.99,144.78,N$138,,,,,"/>
+<approved hash="111,1,46.99,142.24,N$139,,,,,"/>
+<approved hash="111,1,46.99,139.7,N$140,,,,,"/>
+<approved hash="111,1,46.99,137.16,N$141,,,,,"/>
+<approved hash="111,1,46.99,134.62,N$142,,,,,"/>
+<approved hash="111,1,46.99,132.08,N$143,,,,,"/>
+<approved hash="111,1,46.99,129.54,N$144,,,,,"/>
+<approved hash="111,1,74.93,129.54,N$152,,,,,"/>
+<approved hash="111,1,74.93,132.08,N$151,,,,,"/>
+<approved hash="111,1,74.93,134.62,N$150,,,,,"/>
+<approved hash="111,1,74.93,137.16,N$149,,,,,"/>
+<approved hash="111,1,74.93,139.7,N$148,,,,,"/>
+<approved hash="111,1,74.93,142.24,N$147,,,,,"/>
+<approved hash="111,1,74.93,144.78,N$146,,,,,"/>
+<approved hash="111,1,74.93,147.32,N$145,,,,,"/>
+<approved hash="111,1,46.99,119.38,N$153,,,,,"/>
+<approved hash="111,1,46.99,116.84,N$154,,,,,"/>
+<approved hash="111,1,46.99,114.3,N$155,,,,,"/>
+<approved hash="111,1,46.99,111.76,N$156,,,,,"/>
+<approved hash="111,1,46.99,109.22,N$157,,,,,"/>
+<approved hash="111,1,46.99,106.68,N$158,,,,,"/>
+<approved hash="111,1,46.99,104.14,N$159,,,,,"/>
+<approved hash="111,1,46.99,101.6,N$160,,,,,"/>
+<approved hash="111,1,74.93,101.6,N$168,,,,,"/>
+<approved hash="111,1,74.93,104.14,N$167,,,,,"/>
+<approved hash="111,1,74.93,106.68,N$166,,,,,"/>
+<approved hash="111,1,74.93,109.22,N$165,,,,,"/>
+<approved hash="111,1,74.93,111.76,N$164,,,,,"/>
+<approved hash="111,1,74.93,114.3,N$163,,,,,"/>
+<approved hash="111,1,74.93,116.84,N$162,,,,,"/>
+<approved hash="111,1,74.93,119.38,N$161,,,,,"/>
+<approved hash="111,1,85.09,175.26,N$169,,,,,"/>
+<approved hash="111,1,85.09,172.72,N$170,,,,,"/>
+<approved hash="111,1,85.09,170.18,N$171,,,,,"/>
+<approved hash="111,1,85.09,167.64,N$172,,,,,"/>
+<approved hash="111,1,85.09,165.1,N$173,,,,,"/>
+<approved hash="111,1,85.09,162.56,N$174,,,,,"/>
+<approved hash="111,1,85.09,160.02,N$175,,,,,"/>
+<approved hash="111,1,85.09,157.48,N$176,,,,,"/>
+<approved hash="111,1,113.03,157.48,N$184,,,,,"/>
+<approved hash="111,1,113.03,160.02,N$183,,,,,"/>
+<approved hash="111,1,113.03,162.56,N$182,,,,,"/>
+<approved hash="111,1,113.03,165.1,N$181,,,,,"/>
+<approved hash="111,1,113.03,167.64,N$180,,,,,"/>
+<approved hash="111,1,113.03,170.18,N$179,,,,,"/>
+<approved hash="111,1,113.03,172.72,N$178,,,,,"/>
+<approved hash="111,1,113.03,175.26,N$177,,,,,"/>
+<approved hash="111,1,85.09,147.32,N$185,,,,,"/>
+<approved hash="111,1,85.09,144.78,N$186,,,,,"/>
+<approved hash="111,1,85.09,142.24,N$187,,,,,"/>
+<approved hash="111,1,85.09,139.7,N$188,,,,,"/>
+<approved hash="111,1,85.09,137.16,N$189,,,,,"/>
+<approved hash="111,1,85.09,134.62,N$190,,,,,"/>
+<approved hash="111,1,85.09,132.08,N$191,,,,,"/>
+<approved hash="111,1,85.09,129.54,N$192,,,,,"/>
+<approved hash="111,1,113.03,129.54,N$200,,,,,"/>
+<approved hash="111,1,113.03,132.08,N$199,,,,,"/>
+<approved hash="111,1,113.03,134.62,N$198,,,,,"/>
+<approved hash="111,1,113.03,137.16,N$197,,,,,"/>
+<approved hash="111,1,113.03,139.7,N$196,,,,,"/>
+<approved hash="111,1,113.03,142.24,N$195,,,,,"/>
+<approved hash="111,1,113.03,144.78,N$194,,,,,"/>
+<approved hash="111,1,113.03,147.32,N$193,,,,,"/>
+<approved hash="111,1,85.09,119.38,N$201,,,,,"/>
+<approved hash="111,1,85.09,116.84,N$202,,,,,"/>
+<approved hash="111,1,85.09,114.3,N$203,,,,,"/>
+<approved hash="111,1,85.09,111.76,N$204,,,,,"/>
+<approved hash="111,1,85.09,109.22,N$205,,,,,"/>
+<approved hash="111,1,85.09,106.68,N$206,,,,,"/>
+<approved hash="111,1,85.09,104.14,N$207,,,,,"/>
+<approved hash="111,1,85.09,101.6,N$208,,,,,"/>
+<approved hash="111,1,113.03,101.6,N$216,,,,,"/>
+<approved hash="111,1,113.03,104.14,N$215,,,,,"/>
+<approved hash="111,1,113.03,106.68,N$214,,,,,"/>
+<approved hash="111,1,113.03,109.22,N$213,,,,,"/>
+<approved hash="111,1,113.03,111.76,N$212,,,,,"/>
+<approved hash="111,1,113.03,114.3,N$211,,,,,"/>
+<approved hash="111,1,113.03,116.84,N$210,,,,,"/>
+<approved hash="111,1,113.03,119.38,N$209,,,,,"/>
+<approved hash="111,1,125.73,175.26,N$217,,,,,"/>
+<approved hash="111,1,125.73,172.72,N$218,,,,,"/>
+<approved hash="111,1,125.73,170.18,N$219,,,,,"/>
+<approved hash="111,1,125.73,167.64,N$220,,,,,"/>
+<approved hash="111,1,125.73,165.1,N$221,,,,,"/>
+<approved hash="111,1,125.73,162.56,N$222,,,,,"/>
+<approved hash="111,1,125.73,160.02,N$223,,,,,"/>
+<approved hash="111,1,125.73,157.48,N$224,,,,,"/>
+<approved hash="111,1,153.67,157.48,N$232,,,,,"/>
+<approved hash="111,1,153.67,160.02,N$231,,,,,"/>
+<approved hash="111,1,153.67,162.56,N$230,,,,,"/>
+<approved hash="111,1,153.67,165.1,N$229,,,,,"/>
+<approved hash="111,1,153.67,167.64,N$228,,,,,"/>
+<approved hash="111,1,153.67,170.18,N$227,,,,,"/>
+<approved hash="111,1,153.67,172.72,N$226,,,,,"/>
+<approved hash="111,1,153.67,175.26,N$225,,,,,"/>
+<approved hash="111,1,125.73,147.32,N$233,,,,,"/>
+<approved hash="111,1,125.73,144.78,N$234,,,,,"/>
+<approved hash="111,1,125.73,142.24,N$235,,,,,"/>
+<approved hash="111,1,125.73,139.7,N$236,,,,,"/>
+<approved hash="111,1,125.73,137.16,N$237,,,,,"/>
+<approved hash="111,1,125.73,134.62,N$238,,,,,"/>
+<approved hash="111,1,125.73,132.08,N$239,,,,,"/>
+<approved hash="111,1,125.73,129.54,N$240,,,,,"/>
+<approved hash="111,1,153.67,129.54,N$248,,,,,"/>
+<approved hash="111,1,153.67,132.08,N$247,,,,,"/>
+<approved hash="111,1,153.67,134.62,N$246,,,,,"/>
+<approved hash="111,1,153.67,137.16,N$245,,,,,"/>
+<approved hash="111,1,153.67,139.7,N$244,,,,,"/>
+<approved hash="111,1,153.67,142.24,N$243,,,,,"/>
+<approved hash="111,1,153.67,144.78,N$242,,,,,"/>
+<approved hash="111,1,153.67,147.32,N$241,,,,,"/>
+<approved hash="111,1,125.73,119.38,N$249,,,,,"/>
+<approved hash="111,1,125.73,116.84,N$250,,,,,"/>
+<approved hash="111,1,125.73,114.3,N$251,,,,,"/>
+<approved hash="111,1,125.73,111.76,N$252,,,,,"/>
+<approved hash="111,1,125.73,109.22,N$253,,,,,"/>
+<approved hash="111,1,125.73,106.68,N$254,,,,,"/>
+<approved hash="111,1,125.73,104.14,N$255,,,,,"/>
+<approved hash="111,1,125.73,101.6,N$256,,,,,"/>
+<approved hash="111,1,153.67,101.6,N$264,,,,,"/>
+<approved hash="111,1,153.67,104.14,N$263,,,,,"/>
+<approved hash="111,1,153.67,106.68,N$262,,,,,"/>
+<approved hash="111,1,153.67,109.22,N$261,,,,,"/>
+<approved hash="111,1,153.67,111.76,N$260,,,,,"/>
+<approved hash="111,1,153.67,114.3,N$259,,,,,"/>
+<approved hash="111,1,153.67,116.84,N$258,,,,,"/>
+<approved hash="111,1,153.67,119.38,N$257,,,,,"/>
+<approved hash="111,1,163.83,175.26,N$265,,,,,"/>
+<approved hash="111,1,163.83,172.72,N$266,,,,,"/>
+<approved hash="111,1,163.83,170.18,N$267,,,,,"/>
+<approved hash="111,1,163.83,167.64,N$268,,,,,"/>
+<approved hash="111,1,163.83,165.1,N$269,,,,,"/>
+<approved hash="111,1,163.83,162.56,N$270,,,,,"/>
+<approved hash="111,1,163.83,160.02,N$271,,,,,"/>
+<approved hash="111,1,163.83,157.48,N$272,,,,,"/>
+<approved hash="111,1,191.77,157.48,N$280,,,,,"/>
+<approved hash="111,1,191.77,160.02,N$279,,,,,"/>
+<approved hash="111,1,191.77,162.56,N$278,,,,,"/>
+<approved hash="111,1,191.77,165.1,N$277,,,,,"/>
+<approved hash="111,1,191.77,167.64,N$276,,,,,"/>
+<approved hash="111,1,191.77,170.18,N$275,,,,,"/>
+<approved hash="111,1,191.77,172.72,N$274,,,,,"/>
+<approved hash="111,1,191.77,175.26,N$273,,,,,"/>
+<approved hash="111,1,163.83,147.32,N$281,,,,,"/>
+<approved hash="111,1,163.83,144.78,N$282,,,,,"/>
+<approved hash="111,1,163.83,142.24,N$283,,,,,"/>
+<approved hash="111,1,163.83,139.7,N$284,,,,,"/>
+<approved hash="111,1,163.83,137.16,N$285,,,,,"/>
+<approved hash="111,1,163.83,134.62,N$286,,,,,"/>
+<approved hash="111,1,163.83,132.08,N$287,,,,,"/>
+<approved hash="111,1,163.83,129.54,N$288,,,,,"/>
+<approved hash="111,1,191.77,129.54,N$296,,,,,"/>
+<approved hash="111,1,191.77,132.08,N$295,,,,,"/>
+<approved hash="111,1,191.77,134.62,N$294,,,,,"/>
+<approved hash="111,1,191.77,137.16,N$293,,,,,"/>
+<approved hash="111,1,191.77,139.7,N$292,,,,,"/>
+<approved hash="111,1,191.77,142.24,N$291,,,,,"/>
+<approved hash="111,1,191.77,144.78,N$290,,,,,"/>
+<approved hash="111,1,191.77,147.32,N$289,,,,,"/>
+<approved hash="111,1,163.83,119.38,N$297,,,,,"/>
+<approved hash="111,1,163.83,116.84,N$298,,,,,"/>
+<approved hash="111,1,163.83,114.3,N$299,,,,,"/>
+<approved hash="111,1,163.83,111.76,N$300,,,,,"/>
+<approved hash="111,1,163.83,109.22,N$301,,,,,"/>
+<approved hash="111,1,163.83,106.68,N$302,,,,,"/>
+<approved hash="111,1,163.83,104.14,N$303,,,,,"/>
+<approved hash="111,1,163.83,101.6,N$304,,,,,"/>
+<approved hash="111,1,191.77,101.6,N$312,,,,,"/>
+<approved hash="111,1,191.77,104.14,N$311,,,,,"/>
+<approved hash="111,1,191.77,106.68,N$310,,,,,"/>
+<approved hash="111,1,191.77,109.22,N$309,,,,,"/>
+<approved hash="111,1,191.77,111.76,N$308,,,,,"/>
+<approved hash="111,1,191.77,114.3,N$307,,,,,"/>
+<approved hash="111,1,191.77,116.84,N$306,,,,,"/>
+<approved hash="111,1,191.77,119.38,N$305,,,,,"/>
+<approved hash="111,1,201.93,175.26,N$313,,,,,"/>
+<approved hash="111,1,201.93,172.72,N$314,,,,,"/>
+<approved hash="111,1,201.93,170.18,N$315,,,,,"/>
+<approved hash="111,1,201.93,167.64,N$316,,,,,"/>
+<approved hash="111,1,201.93,165.1,N$317,,,,,"/>
+<approved hash="111,1,201.93,162.56,N$318,,,,,"/>
+<approved hash="111,1,201.93,160.02,N$319,,,,,"/>
+<approved hash="111,1,201.93,157.48,N$320,,,,,"/>
+<approved hash="111,1,229.87,157.48,N$328,,,,,"/>
+<approved hash="111,1,229.87,160.02,N$327,,,,,"/>
+<approved hash="111,1,229.87,162.56,N$326,,,,,"/>
+<approved hash="111,1,229.87,165.1,N$325,,,,,"/>
+<approved hash="111,1,229.87,167.64,N$324,,,,,"/>
+<approved hash="111,1,229.87,170.18,N$323,,,,,"/>
+<approved hash="111,1,229.87,172.72,N$322,,,,,"/>
+<approved hash="111,1,229.87,175.26,N$321,,,,,"/>
+<approved hash="111,1,201.93,147.32,N$329,,,,,"/>
+<approved hash="111,1,201.93,144.78,N$330,,,,,"/>
+<approved hash="111,1,201.93,142.24,N$331,,,,,"/>
+<approved hash="111,1,201.93,139.7,N$332,,,,,"/>
+<approved hash="111,1,201.93,137.16,N$333,,,,,"/>
+<approved hash="111,1,201.93,134.62,N$334,,,,,"/>
+<approved hash="111,1,201.93,132.08,N$335,,,,,"/>
+<approved hash="111,1,201.93,129.54,N$336,,,,,"/>
+<approved hash="111,1,229.87,129.54,N$344,,,,,"/>
+<approved hash="111,1,229.87,132.08,N$343,,,,,"/>
+<approved hash="111,1,229.87,134.62,N$342,,,,,"/>
+<approved hash="111,1,229.87,137.16,N$341,,,,,"/>
+<approved hash="111,1,229.87,139.7,N$340,,,,,"/>
+<approved hash="111,1,229.87,142.24,N$339,,,,,"/>
+<approved hash="111,1,229.87,144.78,N$338,,,,,"/>
+<approved hash="111,1,229.87,147.32,N$337,,,,,"/>
+<approved hash="111,1,201.93,119.38,N$345,,,,,"/>
+<approved hash="111,1,201.93,116.84,N$346,,,,,"/>
+<approved hash="111,1,201.93,114.3,N$347,,,,,"/>
+<approved hash="111,1,201.93,111.76,N$348,,,,,"/>
+<approved hash="111,1,201.93,109.22,N$349,,,,,"/>
+<approved hash="111,1,201.93,106.68,N$350,,,,,"/>
+<approved hash="111,1,201.93,104.14,N$351,,,,,"/>
+<approved hash="111,1,201.93,101.6,N$352,,,,,"/>
+<approved hash="111,1,229.87,101.6,N$360,,,,,"/>
+<approved hash="111,1,229.87,104.14,N$359,,,,,"/>
+<approved hash="111,1,229.87,106.68,N$358,,,,,"/>
+<approved hash="111,1,229.87,109.22,N$357,,,,,"/>
+<approved hash="111,1,229.87,111.76,N$356,,,,,"/>
+<approved hash="111,1,229.87,114.3,N$355,,,,,"/>
+<approved hash="111,1,229.87,116.84,N$354,,,,,"/>
+<approved hash="111,1,229.87,119.38,N$353,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,26.289,50.8,U$1,,,,,"/>
+<approved hash="113,1,59.309,50.8,U$6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

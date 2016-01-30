@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.03125" unitdist="inch" unit="inch" style="dots" multiple="13" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="2" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -768,9 +768,10 @@ design rules under a new name.</description>
 <contactref element="PAD22" pad="1"/>
 <contactref element="PAD109" pad="1"/>
 <contactref element="PAD110" pad="1"/>
-<wire x1="13.97" y1="50.8" x2="15.875" y2="50.8" width="0.762" layer="16"/>
+<wire x1="15.24" y1="50.8" x2="15.875" y2="50.8" width="0.762" layer="16"/>
 <wire x1="15.875" y1="50.8" x2="16.6688" y2="51.5938" width="0.762" layer="16"/>
-<wire x1="7.9375" y1="51.7525" x2="13.97" y2="50.8" width="0.762" layer="16"/>
+<wire x1="7.9375" y1="51.7525" x2="13.97" y2="52.07" width="0.762" layer="16"/>
+<wire x1="13.97" y1="52.07" x2="15.24" y2="50.8" width="0.762" layer="16"/>
 <wire x1="27.94" y1="52.07" x2="28.575" y2="52.705" width="0.762" layer="16"/>
 <wire x1="17.78" y1="52.07" x2="27.94" y2="52.07" width="0.762" layer="16"/>
 <wire x1="28.575" y1="52.705" x2="29.3688" y2="53.1812" width="0.762" layer="16"/>
@@ -826,9 +827,11 @@ design rules under a new name.</description>
 <contactref element="PAD23" pad="1"/>
 <contactref element="PAD107" pad="1"/>
 <contactref element="PAD108" pad="1"/>
-<wire x1="13.97" y1="46.355" x2="15.875" y2="46.355" width="0.762" layer="16"/>
+<wire x1="15.24" y1="46.355" x2="15.875" y2="46.355" width="0.762" layer="16"/>
 <wire x1="15.875" y1="46.355" x2="16.6688" y2="46.8312" width="0.762" layer="16"/>
-<wire x1="7.9375" y1="45.4025" x2="13.97" y2="46.355" width="0.762" layer="16"/>
+<wire x1="7.9375" y1="45.4025" x2="13.97" y2="45.72" width="0.762" layer="16"/>
+<wire x1="13.97" y1="45.72" x2="14.605" y2="45.72" width="0.762" layer="16"/>
+<wire x1="14.605" y1="45.72" x2="15.24" y2="46.355" width="0.762" layer="16"/>
 <wire x1="17.78" y1="46.355" x2="29.21" y2="46.355" width="0.762" layer="16"/>
 <wire x1="29.21" y1="46.355" x2="30.1625" y2="46.8312" width="0.762" layer="16"/>
 <wire x1="16.6688" y1="46.8312" x2="17.78" y2="46.355" width="0.762" layer="16"/>
@@ -881,9 +884,11 @@ design rules under a new name.</description>
 <contactref element="PAD34" pad="1"/>
 <contactref element="PAD105" pad="1"/>
 <contactref element="PAD106" pad="1"/>
-<wire x1="13.97" y1="40.005" x2="15.875" y2="40.005" width="0.762" layer="16"/>
+<wire x1="15.24" y1="40.005" x2="15.875" y2="40.005" width="0.762" layer="16"/>
 <wire x1="15.875" y1="40.005" x2="16.6688" y2="40.4812" width="0.762" layer="16"/>
-<wire x1="7.9375" y1="39.0525" x2="13.97" y2="40.005" width="0.762" layer="16"/>
+<wire x1="7.9375" y1="39.0525" x2="13.97" y2="39.37" width="0.762" layer="16"/>
+<wire x1="13.97" y1="39.37" x2="14.605" y2="39.37" width="0.762" layer="16"/>
+<wire x1="14.605" y1="39.37" x2="15.24" y2="40.005" width="0.762" layer="16"/>
 <wire x1="17.78" y1="40.005" x2="29.21" y2="40.005" width="0.762" layer="16"/>
 <wire x1="29.21" y1="40.005" x2="30.1625" y2="40.4812" width="0.762" layer="16"/>
 <wire x1="16.6688" y1="40.4812" x2="17.78" y2="40.005" width="0.762" layer="16"/>
@@ -937,9 +942,11 @@ design rules under a new name.</description>
 <contactref element="PAD54" pad="1"/>
 <contactref element="PAD103" pad="1"/>
 <contactref element="PAD104" pad="1"/>
-<wire x1="13.97" y1="33.655" x2="15.875" y2="33.655" width="0.762" layer="16"/>
+<wire x1="15.24" y1="33.655" x2="15.875" y2="33.655" width="0.762" layer="16"/>
 <wire x1="15.875" y1="33.655" x2="16.6688" y2="34.1312" width="0.762" layer="16"/>
-<wire x1="7.9375" y1="32.7025" x2="13.97" y2="33.655" width="0.762" layer="16"/>
+<wire x1="7.9375" y1="32.7025" x2="12.7" y2="33.02" width="0.762" layer="16"/>
+<wire x1="12.7" y1="33.02" x2="14.605" y2="33.02" width="0.762" layer="16"/>
+<wire x1="14.605" y1="33.02" x2="15.24" y2="33.655" width="0.762" layer="16"/>
 <wire x1="17.78" y1="33.655" x2="29.21" y2="33.655" width="0.762" layer="16"/>
 <wire x1="29.21" y1="33.655" x2="30.1625" y2="34.1312" width="0.762" layer="16"/>
 <wire x1="16.6688" y1="34.1312" x2="17.78" y2="33.655" width="0.762" layer="16"/>
@@ -994,9 +1001,11 @@ design rules under a new name.</description>
 <contactref element="PAD56" pad="1"/>
 <contactref element="PAD101" pad="1"/>
 <contactref element="PAD102" pad="1"/>
-<wire x1="13.97" y1="27.305" x2="15.875" y2="27.305" width="0.762" layer="16"/>
+<wire x1="15.24" y1="27.305" x2="15.875" y2="27.305" width="0.762" layer="16"/>
 <wire x1="15.875" y1="27.305" x2="16.6688" y2="27.7812" width="0.762" layer="16"/>
-<wire x1="7.9375" y1="26.3525" x2="13.97" y2="27.305" width="0.762" layer="16"/>
+<wire x1="7.9375" y1="26.3525" x2="13.97" y2="26.67" width="0.762" layer="16"/>
+<wire x1="13.97" y1="26.67" x2="14.605" y2="26.67" width="0.762" layer="16"/>
+<wire x1="14.605" y1="26.67" x2="15.24" y2="27.305" width="0.762" layer="16"/>
 <wire x1="17.78" y1="27.305" x2="29.21" y2="27.305" width="0.762" layer="16"/>
 <wire x1="29.21" y1="27.305" x2="30.1625" y2="27.7812" width="0.762" layer="16"/>
 <wire x1="16.6688" y1="27.7812" x2="17.78" y2="27.305" width="0.762" layer="16"/>
@@ -1051,9 +1060,11 @@ design rules under a new name.</description>
 <contactref element="PAD67" pad="1"/>
 <contactref element="PAD99" pad="1"/>
 <contactref element="PAD100" pad="1"/>
-<wire x1="13.97" y1="20.955" x2="15.875" y2="20.955" width="0.762" layer="16"/>
+<wire x1="15.24" y1="20.955" x2="15.875" y2="20.955" width="0.762" layer="16"/>
 <wire x1="15.875" y1="20.955" x2="16.6687" y2="21.4311" width="0.762" layer="16"/>
-<wire x1="7.9375" y1="20.0025" x2="13.97" y2="20.955" width="0.762" layer="16"/>
+<wire x1="7.9375" y1="20.0025" x2="13.97" y2="20.32" width="0.762" layer="16"/>
+<wire x1="13.97" y1="20.32" x2="14.605" y2="20.32" width="0.762" layer="16"/>
+<wire x1="14.605" y1="20.32" x2="15.24" y2="20.955" width="0.762" layer="16"/>
 <wire x1="17.78" y1="20.955" x2="29.21" y2="20.955" width="0.762" layer="16"/>
 <wire x1="29.21" y1="20.955" x2="30.1625" y2="21.4312" width="0.762" layer="16"/>
 <wire x1="16.6687" y1="21.4311" x2="17.78" y2="20.955" width="0.762" layer="16"/>
@@ -1106,9 +1117,11 @@ design rules under a new name.</description>
 <contactref element="PAD78" pad="1"/>
 <contactref element="PAD97" pad="1"/>
 <contactref element="PAD98" pad="1"/>
-<wire x1="13.97" y1="14.605" x2="15.875" y2="14.605" width="0.762" layer="16"/>
+<wire x1="15.24" y1="14.605" x2="15.875" y2="14.605" width="0.762" layer="16"/>
 <wire x1="15.875" y1="14.605" x2="16.6688" y2="15.0811" width="0.762" layer="16"/>
-<wire x1="7.9375" y1="13.6525" x2="13.97" y2="14.605" width="0.762" layer="16"/>
+<wire x1="7.9375" y1="13.6525" x2="13.97" y2="13.97" width="0.762" layer="16"/>
+<wire x1="13.97" y1="13.97" x2="14.605" y2="13.97" width="0.762" layer="16"/>
+<wire x1="14.605" y1="13.97" x2="15.24" y2="14.605" width="0.762" layer="16"/>
 <wire x1="40.005" y1="47.625" x2="40.005" y2="52.07" width="0.762" layer="1"/>
 <wire x1="40.4812" y1="46.8312" x2="40.005" y2="47.625" width="0.762" layer="1"/>
 <wire x1="40.005" y1="52.07" x2="40.4811" y2="53.1811" width="0.762" layer="1"/>
@@ -1157,9 +1170,11 @@ design rules under a new name.</description>
 <contactref element="PAD95" pad="1"/>
 <contactref element="PAD96" pad="1"/>
 <wire x1="20.32" y1="53.975" x2="21.59" y2="55.245" width="1.016" layer="16"/>
-<wire x1="13.97" y1="53.975" x2="20.32" y2="53.975" width="1.016" layer="16"/>
+<wire x1="15.24" y1="53.975" x2="20.32" y2="53.975" width="1.016" layer="16"/>
 <wire x1="21.59" y1="55.245" x2="22.225" y2="56.3562" width="1.016" layer="16"/>
-<wire x1="7.9375" y1="54.9275" x2="13.97" y2="53.975" width="1.016" layer="16"/>
+<wire x1="7.9375" y1="54.9275" x2="13.97" y2="54.61" width="1.016" layer="16"/>
+<wire x1="13.97" y1="54.61" x2="14.605" y2="54.61" width="1.016" layer="16"/>
+<wire x1="14.605" y1="54.61" x2="15.24" y2="53.975" width="1.016" layer="16"/>
 <wire x1="74.93" y1="56.515" x2="83.185" y2="56.515" width="1.016" layer="16"/>
 <wire x1="73.8187" y1="57.1499" x2="74.93" y2="56.515" width="1.016" layer="16"/>
 <wire x1="83.185" y1="56.515" x2="84.1375" y2="57.1499" width="1.016" layer="16"/>
@@ -1228,9 +1243,10 @@ design rules under a new name.</description>
 <contactref element="PAD127" pad="1"/>
 <contactref element="PAD128" pad="1"/>
 <wire x1="20.955" y1="43.18" x2="21.59" y2="43.815" width="1.016" layer="16"/>
-<wire x1="13.97" y1="43.18" x2="20.955" y2="43.18" width="1.016" layer="16"/>
+<wire x1="15.24" y1="43.18" x2="20.955" y2="43.18" width="1.016" layer="16"/>
 <wire x1="21.59" y1="43.815" x2="22.225" y2="44.4501" width="1.016" layer="16"/>
-<wire x1="7.9375" y1="42.2275" x2="13.97" y2="43.18" width="1.016" layer="16"/>
+<wire x1="7.9375" y1="42.2275" x2="13.97" y2="41.91" width="1.016" layer="16"/>
+<wire x1="13.97" y1="41.91" x2="15.24" y2="43.18" width="1.016" layer="16"/>
 <wire x1="22.86" y1="43.815" x2="31.75" y2="43.815" width="1.016" layer="16"/>
 <wire x1="31.75" y1="43.815" x2="32.5437" y2="44.4501" width="1.016" layer="16"/>
 <wire x1="22.225" y1="44.4501" x2="22.86" y2="43.815" width="1.016" layer="16"/>
@@ -1264,9 +1280,10 @@ design rules under a new name.</description>
 <contactref element="PAD135" pad="1"/>
 <contactref element="PAD136" pad="1"/>
 <wire x1="20.955" y1="36.83" x2="21.59" y2="37.465" width="1.016" layer="16"/>
-<wire x1="13.97" y1="36.83" x2="20.955" y2="36.83" width="1.016" layer="16"/>
+<wire x1="15.24" y1="36.83" x2="20.955" y2="36.83" width="1.016" layer="16"/>
 <wire x1="21.59" y1="37.465" x2="22.225" y2="38.1001" width="1.016" layer="16"/>
-<wire x1="7.9375" y1="35.8775" x2="13.97" y2="36.83" width="1.016" layer="16"/>
+<wire x1="7.9375" y1="35.8775" x2="13.97" y2="35.56" width="1.016" layer="16"/>
+<wire x1="13.97" y1="35.56" x2="15.24" y2="36.83" width="1.016" layer="16"/>
 <wire x1="22.86" y1="37.465" x2="31.75" y2="37.465" width="1.016" layer="16"/>
 <wire x1="31.75" y1="37.465" x2="32.5437" y2="38.1001" width="1.016" layer="16"/>
 <wire x1="22.225" y1="38.1001" x2="22.86" y2="37.465" width="1.016" layer="16"/>
@@ -1300,9 +1317,10 @@ design rules under a new name.</description>
 <contactref element="PAD143" pad="1"/>
 <contactref element="PAD144" pad="1"/>
 <wire x1="20.955" y1="30.48" x2="21.59" y2="31.115" width="1.016" layer="16"/>
-<wire x1="13.97" y1="30.48" x2="20.955" y2="30.48" width="1.016" layer="16"/>
+<wire x1="15.24" y1="30.48" x2="20.955" y2="30.48" width="1.016" layer="16"/>
 <wire x1="21.59" y1="31.115" x2="22.225" y2="31.7501" width="1.016" layer="16"/>
-<wire x1="7.9375" y1="29.5275" x2="13.97" y2="30.48" width="1.016" layer="16"/>
+<wire x1="7.9375" y1="29.5275" x2="13.97" y2="29.21" width="1.016" layer="16"/>
+<wire x1="13.97" y1="29.21" x2="15.24" y2="30.48" width="1.016" layer="16"/>
 <wire x1="22.86" y1="31.115" x2="31.75" y2="31.115" width="1.016" layer="16"/>
 <wire x1="31.75" y1="31.115" x2="32.5437" y2="31.7501" width="1.016" layer="16"/>
 <wire x1="22.225" y1="31.7501" x2="22.86" y2="31.115" width="1.016" layer="16"/>
@@ -1336,9 +1354,10 @@ design rules under a new name.</description>
 <contactref element="PAD151" pad="1"/>
 <contactref element="PAD152" pad="1"/>
 <wire x1="20.955" y1="24.13" x2="21.59" y2="24.765" width="1.016" layer="16"/>
-<wire x1="13.97" y1="24.13" x2="20.955" y2="24.13" width="1.016" layer="16"/>
+<wire x1="15.24" y1="24.13" x2="20.955" y2="24.13" width="1.016" layer="16"/>
 <wire x1="21.59" y1="24.765" x2="22.225" y2="25.4001" width="1.016" layer="16"/>
-<wire x1="7.9375" y1="23.1775" x2="13.97" y2="24.13" width="1.016" layer="16"/>
+<wire x1="7.9375" y1="23.1775" x2="13.97" y2="22.86" width="1.016" layer="16"/>
+<wire x1="13.97" y1="22.86" x2="15.24" y2="24.13" width="1.016" layer="16"/>
 <wire x1="22.86" y1="24.765" x2="31.75" y2="24.765" width="1.016" layer="16"/>
 <wire x1="31.75" y1="24.765" x2="32.5437" y2="25.4001" width="1.016" layer="16"/>
 <wire x1="22.225" y1="25.4001" x2="22.86" y2="24.765" width="1.016" layer="16"/>
@@ -1372,9 +1391,11 @@ design rules under a new name.</description>
 <contactref element="PAD159" pad="1"/>
 <contactref element="PAD160" pad="1"/>
 <wire x1="20.955" y1="17.78" x2="21.59" y2="18.415" width="1.016" layer="16"/>
-<wire x1="13.97" y1="17.78" x2="20.955" y2="17.78" width="1.016" layer="16"/>
+<wire x1="15.24" y1="17.78" x2="20.955" y2="17.78" width="1.016" layer="16"/>
 <wire x1="21.59" y1="18.415" x2="22.225" y2="19.0501" width="1.016" layer="16"/>
-<wire x1="7.9375" y1="16.8275" x2="13.97" y2="17.78" width="1.016" layer="16"/>
+<wire x1="7.9375" y1="16.8275" x2="12.7" y2="16.51" width="1.016" layer="16"/>
+<wire x1="12.7" y1="16.51" x2="13.97" y2="16.51" width="1.016" layer="16"/>
+<wire x1="13.97" y1="16.51" x2="15.24" y2="17.78" width="1.016" layer="16"/>
 <wire x1="22.86" y1="18.415" x2="31.75" y2="18.415" width="1.016" layer="16"/>
 <wire x1="31.75" y1="18.415" x2="32.5437" y2="19.0501" width="1.016" layer="16"/>
 <wire x1="22.225" y1="19.0501" x2="22.86" y2="18.415" width="1.016" layer="16"/>
@@ -1408,9 +1429,10 @@ design rules under a new name.</description>
 <contactref element="PAD167" pad="1"/>
 <contactref element="PAD168" pad="1"/>
 <wire x1="20.955" y1="11.43" x2="21.59" y2="12.065" width="1.016" layer="16"/>
-<wire x1="13.97" y1="11.43" x2="20.955" y2="11.43" width="1.016" layer="16"/>
+<wire x1="15.24" y1="11.43" x2="20.955" y2="11.43" width="1.016" layer="16"/>
 <wire x1="21.59" y1="12.065" x2="22.225" y2="12.7001" width="1.016" layer="16"/>
-<wire x1="7.9375" y1="10.4775" x2="13.97" y2="11.43" width="1.016" layer="16"/>
+<wire x1="7.9375" y1="10.4775" x2="13.97" y2="10.16" width="1.016" layer="16"/>
+<wire x1="13.97" y1="10.16" x2="15.24" y2="11.43" width="1.016" layer="16"/>
 <wire x1="74.93" y1="12.065" x2="83.185" y2="12.065" width="1.016" layer="16"/>
 <wire x1="73.8186" y1="12.7001" x2="74.93" y2="12.065" width="1.016" layer="16"/>
 <wire x1="83.185" y1="12.065" x2="84.1373" y2="12.7001" width="1.016" layer="16"/>
@@ -1443,9 +1465,10 @@ design rules under a new name.</description>
 <contactref element="PAD174" pad="1"/>
 <contactref element="PAD175" pad="1"/>
 <contactref element="PAD176" pad="1"/>
-<wire x1="13.97" y1="6.35" x2="21.59" y2="6.35" width="1.016" layer="16"/>
+<wire x1="15.24" y1="6.35" x2="21.59" y2="6.35" width="1.016" layer="16"/>
 <wire x1="21.59" y1="6.35" x2="22.225" y2="7.1439" width="1.016" layer="16"/>
-<wire x1="7.9375" y1="7.3025" x2="13.97" y2="6.35" width="1.016" layer="16"/>
+<wire x1="7.9375" y1="7.3025" x2="13.97" y2="7.62" width="1.016" layer="16"/>
+<wire x1="13.97" y1="7.62" x2="15.24" y2="6.35" width="1.016" layer="16"/>
 <wire x1="74.93" y1="6.985" x2="83.185" y2="6.985" width="1.016" layer="16"/>
 <wire x1="73.8188" y1="7.1439" x2="74.93" y2="6.985" width="1.016" layer="16"/>
 <wire x1="83.185" y1="6.985" x2="84.1375" y2="7.1439" width="1.016" layer="16"/>

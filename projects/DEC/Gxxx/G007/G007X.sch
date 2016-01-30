@@ -6010,7 +6010,7 @@ Flachstecker / Faston</description>
 <part name="R27" library="rcl" deviceset="R-US_" device="0207/12" value="121 MF"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/12" value="147 MF"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/12" value="147 MF"/>
-<part name="R4" library="dec-con" deviceset="275P" device=""/>
+<part name="R4" library="dec-con" deviceset="275P" device="" value="10"/>
 <part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/12" value="121 MF"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="0207/12" value="121 MF"/>
@@ -6877,6 +6877,14 @@ Flachstecker / Faston</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,11.9746,119.38,ST1,,,,,"/>
+<approved hash="113,1,59.1454,119.38,ST2,,,,,"/>
+<approved hash="113,1,48.5394,95.3474,1,,,,,"/>
+<approved hash="113,1,40.9194,90.2674,2,,,,,"/>
+<approved hash="113,1,22.5806,97.6926,3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

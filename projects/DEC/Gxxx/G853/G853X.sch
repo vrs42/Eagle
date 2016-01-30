@@ -9904,6 +9904,11 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,119.38,50.8,+10V,,,,,"/>
+<approved hash="106,1,116.84,50.8,+10V,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -4619,6 +4619,9 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,111.76,246.38,B14,G$6,IN,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

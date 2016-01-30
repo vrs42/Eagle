@@ -3015,6 +3015,62 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="LETTER_L">
+<frame x1="0" y1="0" x2="248.92" y2="185.42" columns="12" rows="17" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LETTER_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+LETTER landscape</description>
+<gates>
+<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3037,70 +3093,73 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
+<part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="7.62" y="7.62"/>
-<instance part="V1" gate="GND" x="60.96" y="15.24"/>
-<instance part="U$3" gate="V2" x="48.26" y="93.98"/>
-<instance part="U$3" gate="U2" x="48.26" y="88.9"/>
-<instance part="U$3" gate="T2" x="48.26" y="83.82"/>
-<instance part="U$3" gate="S2" x="48.26" y="78.74"/>
-<instance part="U$3" gate="R2" x="48.26" y="73.66"/>
-<instance part="U$3" gate="P2" x="48.26" y="68.58"/>
-<instance part="U$3" gate="N2" x="48.26" y="63.5"/>
-<instance part="U$3" gate="M2" x="48.26" y="58.42"/>
-<instance part="U$3" gate="L2" x="48.26" y="53.34"/>
-<instance part="U$3" gate="K2" x="48.26" y="48.26"/>
-<instance part="U$3" gate="J2" x="48.26" y="43.18"/>
-<instance part="U$3" gate="F2" x="48.26" y="33.02"/>
-<instance part="U$3" gate="C2" x="48.26" y="17.78"/>
-<instance part="R1" gate="G$1" x="55.88" y="93.98"/>
-<instance part="R2" gate="G$1" x="55.88" y="83.82"/>
-<instance part="R3" gate="G$1" x="55.88" y="78.74"/>
-<instance part="R4" gate="G$1" x="55.88" y="68.58"/>
-<instance part="R5" gate="G$1" x="55.88" y="58.42"/>
-<instance part="R6" gate="G$1" x="55.88" y="48.26"/>
+<instance part="U$1" gate="G$1" x="48.26" y="73.66"/>
+<instance part="V1" gate="GND" x="88.9" y="71.12"/>
+<instance part="U$3" gate="V2" x="76.2" y="149.86"/>
+<instance part="U$3" gate="U2" x="76.2" y="144.78"/>
+<instance part="U$3" gate="T2" x="76.2" y="139.7"/>
+<instance part="U$3" gate="S2" x="76.2" y="134.62"/>
+<instance part="U$3" gate="R2" x="76.2" y="129.54"/>
+<instance part="U$3" gate="P2" x="76.2" y="124.46"/>
+<instance part="U$3" gate="N2" x="76.2" y="119.38"/>
+<instance part="U$3" gate="M2" x="76.2" y="114.3"/>
+<instance part="U$3" gate="L2" x="76.2" y="109.22"/>
+<instance part="U$3" gate="K2" x="76.2" y="104.14"/>
+<instance part="U$3" gate="J2" x="76.2" y="99.06"/>
+<instance part="U$3" gate="F2" x="76.2" y="88.9"/>
+<instance part="U$3" gate="C2" x="76.2" y="73.66"/>
+<instance part="R1" gate="G$1" x="83.82" y="149.86"/>
+<instance part="R2" gate="G$1" x="83.82" y="139.7"/>
+<instance part="R3" gate="G$1" x="83.82" y="134.62"/>
+<instance part="R4" gate="G$1" x="83.82" y="124.46"/>
+<instance part="R5" gate="G$1" x="83.82" y="114.3"/>
+<instance part="R6" gate="G$1" x="83.82" y="104.14"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="1">
 <segment>
-<wire x1="60.96" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="88.9" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="88.9" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="83.82" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="78.74" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="73.66" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="68.58" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="63.5" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="58.42" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="53.34" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="48.26" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="43.18" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="33.02" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="88.9" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="73.66" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
-<junction x="60.96" y="17.78"/>
-<junction x="60.96" y="88.9"/>
-<junction x="60.96" y="83.82"/>
-<junction x="60.96" y="78.74"/>
-<junction x="60.96" y="68.58"/>
-<junction x="60.96" y="58.42"/>
-<junction x="60.96" y="48.26"/>
-<junction x="60.96" y="53.34"/>
-<junction x="60.96" y="63.5"/>
-<junction x="60.96" y="73.66"/>
-<junction x="60.96" y="33.02"/>
-<junction x="60.96" y="43.18"/>
+<wire x1="88.9" y1="73.66" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="144.78" x2="88.9" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="144.78" x2="88.9" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="139.7" x2="88.9" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="134.62" x2="88.9" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="129.54" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="124.46" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="119.38" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="114.3" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="109.22" x2="88.9" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="104.14" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="99.06" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="88.9" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="144.78" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="109.22" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="119.38" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="129.54" x2="88.9" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="88.9" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
+<junction x="88.9" y="73.66"/>
+<junction x="88.9" y="144.78"/>
+<junction x="88.9" y="139.7"/>
+<junction x="88.9" y="134.62"/>
+<junction x="88.9" y="124.46"/>
+<junction x="88.9" y="114.3"/>
+<junction x="88.9" y="104.14"/>
+<junction x="88.9" y="109.22"/>
+<junction x="88.9" y="119.38"/>
+<junction x="88.9" y="129.54"/>
+<junction x="88.9" y="88.9"/>
+<junction x="88.9" y="99.06"/>
 <pinref part="V1" gate="GND" pin="GND"/>
 <pinref part="U$3" gate="C2" pin="1"/>
 <pinref part="U$3" gate="U2" pin="1"/>
@@ -3156,6 +3215,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

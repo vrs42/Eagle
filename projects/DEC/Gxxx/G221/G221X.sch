@@ -8244,6 +8244,11 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,38.1,137.097,E2,B,I0,,,"/>
+<approved hash="114,1,38.1,137.097,E2,B,I1,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

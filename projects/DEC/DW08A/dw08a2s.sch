@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4870,6 +4870,22 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,114.3,89.4503,B15,G$3,IN1,,,"/>
+<approved hash="114,1,114.3,89.4503,B15,G$3,IN2,,,"/>
+<approved hash="114,1,114.3,89.4503,B15,G$3,IN3,,,"/>
+<approved hash="114,2,161.29,219.21,B06,G$7,IN,,,"/>
+<approved hash="114,2,161.29,219.21,B06,G$8,IN,,,"/>
+<approved hash="114,2,161.29,219.21,B06,G$9,IN,,,"/>
+<approved hash="114,2,161.29,219.21,B06,G$10,IN,,,"/>
+<approved hash="114,2,161.29,219.21,B06,G$11,IN,,,"/>
+<approved hash="114,2,161.29,219.21,B06,G$12,IN,,,"/>
+<approved hash="114,2,161.29,219.21,B06,G$13,IN,,,"/>
+<approved hash="114,2,161.29,219.21,B06,G$14,IN,,,"/>
+<approved hash="114,2,161.29,219.21,B06,G$15,IN,,,"/>
+<approved hash="104,4,101.6,76.2,B22V2,GND,I_BREAK,,,"/>
+<approved hash="104,4,170.18,76.2,B23V2,GND,I_BREAK,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

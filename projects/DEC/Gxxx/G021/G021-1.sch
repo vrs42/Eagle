@@ -13866,7 +13866,7 @@ source  http://products.analog.com/products/info.asp?product=OP400</description>
 <pinref part="C16" gate="G$1" pin="-"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U$1" gate="C2" pin="1"/>
 <pinref part="V5" gate="GND" pin="GND"/>
@@ -14589,6 +14589,13 @@ source  http://products.analog.com/products/info.asp?product=OP400</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,264.16,124.46,IC3P,V+,VCC,,,"/>
+<approved hash="104,1,264.16,109.22,IC3P,V-,-6.2VA,,,"/>
+<approved hash="104,1,276.86,124.46,IC1P,V+,VCC,,,"/>
+<approved hash="104,1,276.86,109.22,IC1P,V-,-6.2VB,,,"/>
+<approved hash="113,1,82.169,180.34,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

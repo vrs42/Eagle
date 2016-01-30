@@ -8215,11 +8215,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </segment>
 <segment>
 <wire x1="99.06" y1="167.64" x2="91.44" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="127" y1="170.18" x2="132.08" y2="170.18" width="0.1524" layer="91"/>
 <label x="93.98" y="167.64" size="1.778" layer="95"/>
-<label x="127" y="170.18" size="1.778" layer="95"/>
 <pinref part="D6" gate="G$1" pin="A"/>
-<pinref part="D7" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="106.68" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
@@ -8247,6 +8244,11 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="45.72" y1="50.8" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
 <label x="40.64" y="50.8" size="1.778" layer="95"/>
 <pinref part="R6" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="127" y1="170.18" x2="132.08" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<label x="127" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -8610,6 +8612,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -4799,6 +4799,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,69.9474,9.8806,PAD1,,,,,"/>
+<approved hash="113,1,92.8074,9.8806,PAD5,,,,,"/>
+<approved hash="113,1,97.8874,9.8806,PAD6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

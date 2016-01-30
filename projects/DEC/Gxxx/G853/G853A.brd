@@ -9102,7 +9102,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
@@ -9312,8 +9312,8 @@ design rules under a new name.</description>
 <contactref element="R6" pad="1"/>
 <wire x1="117.1702" y1="23.1902" x2="117.7925" y2="23.1775" width="0.8128" layer="16"/>
 <wire x1="116.84" y1="22.86" x2="117.1702" y2="23.1902" width="0.8128" layer="16"/>
-<wire x1="111.76" y1="22.86" x2="116.84" y2="22.86" width="0.8128" layer="16"/>
-<wire x1="104.14" y1="15.24" x2="111.76" y2="22.86" width="0.8128" layer="16"/>
+<wire x1="111.125" y1="22.86" x2="116.84" y2="22.86" width="0.8128" layer="16"/>
+<wire x1="104.14" y1="15.24" x2="111.125" y2="22.86" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$5" class="1">
 <contactref element="U$2" pad="M2"/>
@@ -9428,8 +9428,8 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="K2"/>
 <wire x1="117.1448" y1="32.7152" x2="117.7925" y2="32.7025" width="0.8128" layer="16"/>
 <wire x1="116.84" y1="33.02" x2="117.1448" y2="32.7152" width="0.8128" layer="16"/>
-<wire x1="111.76" y1="33.02" x2="116.84" y2="33.02" width="0.8128" layer="16"/>
-<wire x1="93.98" y1="50.8" x2="111.76" y2="33.02" width="0.8128" layer="16"/>
+<wire x1="111.125" y1="33.02" x2="116.84" y2="33.02" width="0.8128" layer="16"/>
+<wire x1="93.98" y1="50.8" x2="111.125" y2="33.02" width="0.8128" layer="16"/>
 <wire x1="81.28" y1="53.34" x2="93.98" y2="50.8" width="0.8128" layer="16"/>
 <wire x1="81.28" y1="45.72" x2="81.28" y2="53.34" width="0.8128" layer="16"/>
 </signal>

@@ -9549,11 +9549,13 @@ LETTER landscape</description>
 </segment>
 <segment>
 <wire x1="142.24" y1="-22.86" x2="142.24" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="-22.86" x2="307.34" y2="-10.16" width="0.1524" layer="91"/>
 <label x="142.24" y="-25.4" size="1.778" layer="95"/>
-<label x="307.34" y="-25.4" size="1.778" layer="95"/>
 <pinref part="E3" gate="D" pin="I1"/>
+</segment>
+<segment>
+<wire x1="307.34" y1="-22.86" x2="307.34" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="E3" gate="C" pin="I1"/>
+<label x="307.34" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V" class="0">
@@ -10064,6 +10066,10 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,215.9,-35.56,E3P,VCC,V+,,,"/>
+<approved hash="113,1,223.416,26.566,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

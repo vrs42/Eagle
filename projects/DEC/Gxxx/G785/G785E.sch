@@ -13578,6 +13578,20 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,50.8,89.789,U$1,,,,,"/>
+<approved hash="113,1,18.3117,174.087,PANEL_POWER,,,,,"/>
+<approved hash="113,1,16.9729,143.607,PANEL_LOCK,,,,,"/>
+<approved hash="113,1,12.4206,120.747,+8V,,,,,"/>
+<approved hash="113,1,12.4206,92.8074,+5V,,,,,"/>
+<approved hash="113,1,14.6521,74.8326,COMMON,,,,,"/>
+<approved hash="113,1,12.4206,31.8474,-15V,,,,,"/>
+<approved hash="113,1,111.481,174.087,-6V,,,,,"/>
+<approved hash="113,1,111.481,143.607,-30V,,,,,"/>
+<approved hash="113,1,19.249,44.5474,MEM_REG_BASE,,,,,"/>
+<approved hash="113,1,78.5053,62.3274,AC_IN,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

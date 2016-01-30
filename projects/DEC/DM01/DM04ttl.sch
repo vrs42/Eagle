@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12707,6 +12707,7 @@ Based on the following sources:
 <sheet>
 <plain>
 <text x="12.7" y="53.34" size="1.778" layer="91">CPU provides pull-ups for it's inputa and outputs.</text>
+<text x="218.44" y="55.88" size="1.778" layer="94">These want to be 50 ohms, but at 1/2W, not 1/8W.</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -17813,6 +17814,23 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,38.1,218.377,IC34,C,I0,,,"/>
+<approved hash="114,1,38.1,218.377,IC34,C,I1,,,"/>
+<approved hash="114,1,38.1,218.377,IC34,D,I0,,,"/>
+<approved hash="114,1,38.1,218.377,IC34,D,I1,,,"/>
+<approved hash="114,5,331.224,197.443,IC19,D,D,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME2,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME3,,,,,"/>
+<approved hash="113,2,45.72,126.928,E1,,,,,"/>
+<approved hash="113,2,66.04,126.928,E2,,,,,"/>
+<approved hash="113,2,86.36,126.928,E3,,,,,"/>
+<approved hash="113,3,200.508,133.198,FRAME4,,,,,"/>
+<approved hash="113,3,170.18,27.7453,SV1,,,,,"/>
+<approved hash="113,4,200.508,133.198,FRAME5,,,,,"/>
+<approved hash="113,5,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,6,200.508,133.198,FRAME6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

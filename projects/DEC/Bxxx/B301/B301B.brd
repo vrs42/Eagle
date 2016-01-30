@@ -87,8 +87,8 @@
 <layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -562,7 +562,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
@@ -884,7 +884,6 @@ design rules under a new name.</description>
 <contactref element="R20" pad="2"/>
 <contactref element="D10" pad="C"/>
 <contactref element="D6" pad="A"/>
-<contactref element="D7" pad="A"/>
 <contactref element="R14" pad="1"/>
 <contactref element="U$2" pad="S2"/>
 <contactref element="R14" pad="2"/>
@@ -925,8 +924,6 @@ design rules under a new name.</description>
 <wire x1="53.34" y1="27.94" x2="55.88" y2="30.48" width="0.8128" layer="16"/>
 <wire x1="55.88" y1="30.48" x2="63.5" y2="30.48" width="0.8128" layer="16"/>
 <wire x1="63.5" y1="30.48" x2="71.12" y2="30.48" width="0.8128" layer="16"/>
-<wire x1="71.12" y1="30.48" x2="76.2" y2="30.48" width="0.8128" layer="16"/>
-<wire x1="76.2" y1="30.48" x2="76.2" y2="27.94" width="0.8128" layer="16"/>
 <wire x1="76.2" y1="27.94" x2="78.74" y2="25.4" width="0.8128" layer="16"/>
 <via x="50.8" y="10.16" extent="1-16" drill="0.8128"/>
 <via x="53.34" y="7.62" extent="1-16" drill="0.8128"/>
@@ -934,6 +931,9 @@ design rules under a new name.</description>
 <via x="55.88" y="15.24" extent="1-16" drill="0.8128"/>
 <via x="53.34" y="17.78" extent="1-16" drill="0.8128"/>
 <via x="53.34" y="27.94" extent="1-16" drill="0.8128"/>
+<contactref element="D7" pad="A"/>
+<wire x1="76.2" y1="27.94" x2="76.2" y2="30.48" width="0.8128" layer="16"/>
+<wire x1="71.12" y1="30.48" x2="76.2" y2="30.48" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$26">
 <contactref element="D13" pad="C"/>

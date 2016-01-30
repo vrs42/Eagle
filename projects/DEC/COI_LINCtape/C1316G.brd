@@ -64279,8 +64279,8 @@ design rules under a new name.</description>
 <element name="R10" library="rcl" package="0207/10" value="470" x="16.51" y="81.28"/>
 <element name="R11" library="rcl" package="0207/10" value="12K" x="12.7" y="72.39" rot="R90"/>
 <element name="R12" library="rcl" package="0207/10" value="12K" x="20.32" y="72.39" rot="R90"/>
-<element name="CR1" library="diode" package="DO35-10" value="1N4148DO35-10" x="16.51" y="101.6" rot="R180"/>
-<element name="CR2" library="diode" package="DO35-10" value="1N4148DO35-10" x="16.51" y="97.79"/>
+<element name="CR1" library="diode" package="DO35-10" value="1N4148" x="16.51" y="101.6" rot="R180"/>
+<element name="CR2" library="diode" package="DO35-10" value="1N4148" x="16.51" y="97.79"/>
 <element name="C1" library="rcl" package="C102-043X133" value="" x="16.51" y="153.67" rot="R180"/>
 <element name="C2" library="rcl" package="C050-025X075" value="" x="8.89" y="132.08" rot="R90"/>
 <element name="C3" library="rcl" package="C050-025X075" value="" x="24.13" y="133.35" rot="R90"/>
@@ -64305,8 +64305,8 @@ design rules under a new name.</description>
 <element name="R24" library="rcl" package="0207/10" value="470" x="35.56" y="81.28"/>
 <element name="R25" library="rcl" package="0207/10" value="12K" x="31.75" y="72.39" rot="R90"/>
 <element name="R26" library="rcl" package="0207/10" value="12K" x="39.37" y="72.39" rot="R90"/>
-<element name="CR3" library="diode" package="DO35-10" value="1N4148DO35-10" x="35.56" y="101.6" rot="R180"/>
-<element name="CR4" library="diode" package="DO35-10" value="1N4148DO35-10" x="35.56" y="97.79"/>
+<element name="CR3" library="diode" package="DO35-10" value="1N4148" x="35.56" y="101.6" rot="R180"/>
+<element name="CR4" library="diode" package="DO35-10" value="1N4148" x="35.56" y="97.79"/>
 <element name="C7" library="rcl" package="C102-043X133" value="" x="35.56" y="153.67" rot="R180"/>
 <element name="C8" library="rcl" package="C050-025X075" value="" x="27.94" y="133.35" rot="R90"/>
 <element name="C9" library="rcl" package="C050-025X075" value="" x="43.18" y="133.35" rot="R90"/>
@@ -64334,8 +64334,8 @@ design rules under a new name.</description>
 <element name="R38" library="rcl" package="0207/10" value="470" x="54.61" y="81.28"/>
 <element name="R39" library="rcl" package="0207/10" value="12K" x="50.8" y="72.39" rot="R90"/>
 <element name="R40" library="rcl" package="0207/10" value="12K" x="58.42" y="72.39" rot="R90"/>
-<element name="CR5" library="diode" package="DO35-10" value="1N4148DO35-10" x="54.61" y="101.6" rot="R180"/>
-<element name="CR6" library="diode" package="DO35-10" value="1N4148DO35-10" x="54.61" y="97.79"/>
+<element name="CR5" library="diode" package="DO35-10" value="1N4148" x="54.61" y="101.6" rot="R180"/>
+<element name="CR6" library="diode" package="DO35-10" value="1N4148" x="54.61" y="97.79"/>
 <element name="C13" library="rcl" package="C102-043X133" value="" x="54.61" y="153.67" rot="R180"/>
 <element name="C14" library="rcl" package="C050-025X075" value="" x="46.99" y="133.35" rot="R90"/>
 <element name="C15" library="rcl" package="C050-025X075" value="" x="62.23" y="133.35" rot="R90"/>
@@ -64355,8 +64355,8 @@ design rules under a new name.</description>
 <element name="R52" library="rcl" package="0207/10" value="470" x="72.39" y="81.28"/>
 <element name="R53" library="rcl" package="0207/10" value="12K" x="68.58" y="72.39" rot="R90"/>
 <element name="R54" library="rcl" package="0207/10" value="12K" x="76.2" y="72.39" rot="R90"/>
-<element name="CR7" library="diode" package="DO35-10" value="1N4148DO35-10" x="72.39" y="101.6" rot="R180"/>
-<element name="CR8" library="diode" package="DO35-10" value="1N4148DO35-10" x="72.39" y="97.79"/>
+<element name="CR7" library="diode" package="DO35-10" value="1N4148" x="72.39" y="101.6" rot="R180"/>
+<element name="CR8" library="diode" package="DO35-10" value="1N4148" x="72.39" y="97.79"/>
 <element name="C19" library="rcl" package="C102-043X133" value="" x="72.39" y="153.67" rot="R180"/>
 <element name="C20" library="rcl" package="C050-025X075" value="" x="64.77" y="133.35" rot="R90"/>
 <element name="C21" library="rcl" package="C050-025X075" value="" x="80.01" y="133.35" rot="R90"/>
@@ -64376,8 +64376,8 @@ design rules under a new name.</description>
 <element name="R66" library="rcl" package="0207/10" value="470" x="91.44" y="81.28"/>
 <element name="R67" library="rcl" package="0207/10" value="12K" x="87.63" y="72.39" rot="R90"/>
 <element name="R68" library="rcl" package="0207/10" value="12K" x="95.25" y="72.39" rot="R90"/>
-<element name="CR9" library="diode" package="DO35-10" value="1N4148DO35-10" x="91.44" y="101.6" rot="R180"/>
-<element name="CR10" library="diode" package="DO35-10" value="1N4148DO35-10" x="91.44" y="97.79"/>
+<element name="CR9" library="diode" package="DO35-10" value="1N4148" x="91.44" y="101.6" rot="R180"/>
+<element name="CR10" library="diode" package="DO35-10" value="1N4148" x="91.44" y="97.79"/>
 <element name="C25" library="rcl" package="C102-043X133" value="" x="91.44" y="153.67" rot="R180"/>
 <element name="C26" library="rcl" package="C050-025X075" value="" x="83.82" y="133.35" rot="R90"/>
 <element name="C27" library="rcl" package="C050-025X075" value="" x="99.06" y="133.35" rot="R90"/>
@@ -64412,17 +64412,17 @@ design rules under a new name.</description>
 <element name="11" library="wirepad" package="1,6/0,8" value="" x="132.08" y="149.86"/>
 <element name="12" library="wirepad" package="1,6/0,8" value="" x="128.27" y="119.38"/>
 <element name="13" library="wirepad" package="1,6/0,8" value="" x="128.27" y="114.3"/>
-<element name="CR12" library="diode" package="DO35-10" value="1N4148DO35-10" x="147.32" y="27.94" rot="R270"/>
-<element name="CR13" library="diode" package="DO35-10" value="1N4148DO35-10" x="149.86" y="30.48" rot="R270"/>
-<element name="CR14" library="diode" package="DO35-10" value="1N4148DO35-10" x="152.4" y="27.94" rot="R270"/>
-<element name="CR15" library="diode" package="DO35-10" value="1N4148DO35-10" x="154.94" y="30.48" rot="R270"/>
-<element name="CR16" library="diode" package="DO35-10" value="1N4148DO35-10" x="157.48" y="27.94" rot="R270"/>
-<element name="CR17" library="diode" package="DO35-10" value="1N4148DO35-10" x="165.1" y="27.94" rot="R270"/>
-<element name="CR18" library="diode" package="DO35-10" value="1N4148DO35-10" x="167.64" y="30.48" rot="R270"/>
-<element name="CR19" library="diode" package="DO35-10" value="1N4148DO35-10" x="170.18" y="27.94" rot="R270"/>
-<element name="CR20" library="diode" package="DO35-10" value="1N4148DO35-10" x="172.72" y="30.48" rot="R270"/>
-<element name="CR21" library="diode" package="DO35-10" value="1N4148DO35-10" x="175.26" y="27.94" rot="R270"/>
-<element name="CR11" library="diode" package="DO35-10" value="1N4148DO35-10" x="128.27" y="99.06" rot="R90"/>
+<element name="CR12" library="diode" package="DO35-10" value="1N4148" x="147.32" y="27.94" rot="R270"/>
+<element name="CR13" library="diode" package="DO35-10" value="1N4148" x="149.86" y="30.48" rot="R270"/>
+<element name="CR14" library="diode" package="DO35-10" value="1N4148" x="152.4" y="27.94" rot="R270"/>
+<element name="CR15" library="diode" package="DO35-10" value="1N4148" x="154.94" y="30.48" rot="R270"/>
+<element name="CR16" library="diode" package="DO35-10" value="1N4148" x="157.48" y="27.94" rot="R270"/>
+<element name="CR17" library="diode" package="DO35-10" value="1N4148" x="165.1" y="27.94" rot="R270"/>
+<element name="CR18" library="diode" package="DO35-10" value="1N4148" x="167.64" y="30.48" rot="R270"/>
+<element name="CR19" library="diode" package="DO35-10" value="1N4148" x="170.18" y="27.94" rot="R270"/>
+<element name="CR20" library="diode" package="DO35-10" value="1N4148" x="172.72" y="30.48" rot="R270"/>
+<element name="CR21" library="diode" package="DO35-10" value="1N4148" x="175.26" y="27.94" rot="R270"/>
+<element name="CR11" library="diode" package="DO35-10" value="1N4148" x="128.27" y="99.06" rot="R90"/>
 <element name="R71" library="rcl" package="0207/10" value="1000" x="111.76" y="135.89"/>
 <element name="R73" library="rcl" package="0207/10" value="12K" x="123.19" y="99.06" rot="R90"/>
 <element name="C51" library="rcl" package="E35-12" value="250uF 50V" x="198.12" y="27.94"/>
@@ -64449,7 +64449,7 @@ design rules under a new name.</description>
 <element name="7" library="wirepad" package="1,6/0,8" value="" x="173.99" y="96.52"/>
 <element name="8" library="wirepad" package="1,6/0,8" value="" x="170.18" y="93.98"/>
 <element name="9" library="wirepad" package="1,6/0,8" value="" x="173.99" y="91.44"/>
-<element name="CR31" library="diode" package="DO35-10" value="1N4148DO35-10" x="219.71" y="63.5" rot="R270"/>
+<element name="CR31" library="diode" package="DO35-10" value="1N4148" x="219.71" y="63.5" rot="R270"/>
 <element name="C47" library="rcl" package="C050-025X075" value="" x="176.53" y="62.23"/>
 <element name="C41" library="rcl" package="E22-6" value="" x="134.62" y="115.57" rot="R270"/>
 <element name="C42" library="rcl" package="C050-025X075" value="" x="140.97" y="121.92" rot="R270"/>
@@ -64465,7 +64465,7 @@ design rules under a new name.</description>
 <element name="U26" library="linear" package="TO220H" value="7815T" x="243.84" y="150.495" rot="R45"/>
 <element name="U27" library="linear" package="TO220H" value="7905T" x="259.08" y="153.67" rot="R225"/>
 <element name="C52" library="rcl" package="C050-025X075" value="" x="237.49" y="181.61"/>
-<element name="CR34" library="diode" package="DO35-10" value="1N4148DO35-10" x="208.28" y="168.91" rot="R180"/>
+<element name="CR34" library="diode" package="DO35-10" value="1N4148" x="208.28" y="168.91" rot="R180"/>
 <element name="CT7" library="rcl" package="E55-25" value="100uF" x="261.62" y="87.63" rot="R270"/>
 <element name="PAD1" library="wirepad" package="3,81/1,1" value="" x="261.62" y="119.38"/>
 <element name="CT1" library="rcl" package="E55-25" value="225uF" x="327.66" y="91.44" rot="R270"/>
@@ -64486,7 +64486,7 @@ design rules under a new name.</description>
 <element name="CR26" library="diode" package="DO41-10" value="1N4004" x="279.4" y="100.33" rot="R270"/>
 <element name="CR27" library="diode" package="DO41-10" value="1N4004" x="312.42" y="107.95" rot="R270"/>
 <element name="CR28" library="diode" package="DO41-10" value="1N4004" x="312.42" y="88.9" rot="R270"/>
-<element name="CR22" library="diode" package="DO35-10" value="1N4148DO35-10" x="228.6" y="62.23"/>
+<element name="CR22" library="diode" package="DO35-10" value="1N4148" x="228.6" y="62.23"/>
 <element name="C31" library="rcl" package="C050-025X075" value="" x="128.27" y="173.99" rot="R90"/>
 <element name="C32" library="rcl" package="C050-025X075" value="" x="133.35" y="168.91" rot="R90"/>
 <element name="U1" library="dec-con" package="DIL14" value="UA733N" x="16.51" y="167.64" rot="R90"/>
@@ -65398,23 +65398,23 @@ design rules under a new name.</description>
 <wire x1="31.75" y1="128.27" x2="27.94" y2="130.81" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$51">
-<contactref element="U6" pad="7"/>
+<contactref element="U6" pad="6"/>
 <contactref element="U6" pad="2"/>
-<contactref element="U3" pad="7"/>
+<contactref element="U3" pad="6"/>
 <contactref element="U3" pad="2"/>
 <contactref element="U18" pad="2"/>
-<contactref element="U9" pad="7"/>
+<contactref element="U9" pad="6"/>
 <contactref element="U9" pad="2"/>
-<wire x1="12.7" y1="31.75" x2="20.32" y2="31.75" width="0.8128" layer="16"/>
-<wire x1="20.32" y1="31.75" x2="31.75" y2="31.75" width="0.8128" layer="16"/>
-<wire x1="31.75" y1="31.75" x2="39.37" y2="31.75" width="0.8128" layer="16"/>
+<wire x1="12.7" y1="34.29" x2="20.32" y2="31.75" width="0.8128" layer="16"/>
+<wire x1="20.32" y1="31.75" x2="31.75" y2="34.29" width="0.8128" layer="16"/>
+<wire x1="31.75" y1="34.29" x2="39.37" y2="31.75" width="0.8128" layer="16"/>
 <wire x1="118.11" y1="12.7" x2="125.73" y2="17.78" width="0.8128" layer="16"/>
 <wire x1="26.67" y1="12.7" x2="118.11" y2="12.7" width="0.8128" layer="16"/>
 <wire x1="10.16" y1="26.67" x2="26.67" y2="12.7" width="0.8128" layer="16"/>
 <wire x1="10.16" y1="26.67" x2="10.16" y2="31.75" width="0.8128" layer="16"/>
-<wire x1="10.16" y1="31.75" x2="12.7" y2="31.75" width="0.8128" layer="16"/>
-<wire x1="39.37" y1="31.75" x2="52.07" y2="31.75" width="0.8128" layer="16"/>
-<wire x1="52.07" y1="31.75" x2="59.69" y2="31.75" width="0.8128" layer="16"/>
+<wire x1="10.16" y1="31.75" x2="12.7" y2="34.29" width="0.8128" layer="16"/>
+<wire x1="39.37" y1="31.75" x2="52.07" y2="34.29" width="0.8128" layer="16"/>
+<wire x1="52.07" y1="34.29" x2="59.69" y2="31.75" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$52">
 <contactref element="U6" pad="1"/>
@@ -66017,10 +66017,10 @@ design rules under a new name.</description>
 <signal name="ID3">
 <contactref element="P2" pad="23"/>
 <contactref element="U18" pad="9"/>
-<contactref element="U9" pad="6"/>
+<contactref element="U9" pad="7"/>
 <contactref element="U17" pad="15"/>
 <wire x1="115.57" y1="30.48" x2="118.11" y2="27.94" width="0.8128" layer="1"/>
-<wire x1="64.77" y1="21.59" x2="52.07" y2="34.29" width="0.8128" layer="16"/>
+<wire x1="64.77" y1="21.59" x2="52.07" y2="31.75" width="0.8128" layer="16"/>
 <wire x1="104.14" y1="21.59" x2="64.77" y2="21.59" width="0.8128" layer="16"/>
 <wire x1="118.11" y1="27.94" x2="104.14" y2="21.59" width="0.8128" layer="16"/>
 <wire x1="118.11" y1="44.45" x2="115.57" y2="41.91" width="0.8128" layer="1"/>
@@ -66077,12 +66077,12 @@ design rules under a new name.</description>
 <signal name="ITIMING">
 <contactref element="P2" pad="15"/>
 <contactref element="U18" pad="3"/>
-<contactref element="U12" pad="6"/>
+<contactref element="U12" pad="7"/>
 <contactref element="U17" pad="2"/>
 <wire x1="125.73" y1="20.32" x2="120.015" y2="25.4" width="0.8128" layer="16"/>
 <wire x1="120.015" y1="25.4" x2="120.015" y2="31.75" width="0.8128" layer="16"/>
 <wire x1="120.015" y1="31.75" x2="118.11" y2="33.02" width="0.8128" layer="16"/>
-<wire x1="81.28" y1="24.13" x2="72.39" y2="34.29" width="0.8128" layer="16"/>
+<wire x1="81.28" y1="24.13" x2="72.39" y2="31.75" width="0.8128" layer="16"/>
 <wire x1="101.6" y1="24.13" x2="81.28" y2="24.13" width="0.8128" layer="16"/>
 <wire x1="118.11" y1="33.02" x2="101.6" y2="24.13" width="0.8128" layer="16"/>
 <wire x1="129.54" y1="24.13" x2="125.73" y2="20.32" width="0.8128" layer="1"/>
@@ -66098,12 +66098,12 @@ design rules under a new name.</description>
 <signal name="IMARK">
 <contactref element="P2" pad="17"/>
 <contactref element="U18" pad="5"/>
-<contactref element="U15" pad="6"/>
+<contactref element="U15" pad="7"/>
 <contactref element="U17" pad="1"/>
 <wire x1="125.73" y1="25.4" x2="122.555" y2="27.94" width="0.8128" layer="16"/>
 <wire x1="122.555" y1="27.94" x2="122.555" y2="34.29" width="0.8128" layer="16"/>
 <wire x1="122.555" y1="34.29" x2="120.65" y2="35.56" width="0.8128" layer="16"/>
-<wire x1="99.06" y1="26.67" x2="92.71" y2="34.29" width="0.8128" layer="16"/>
+<wire x1="99.06" y1="26.67" x2="92.71" y2="31.75" width="0.8128" layer="16"/>
 <wire x1="114.3" y1="35.56" x2="99.06" y2="26.67" width="0.8128" layer="16"/>
 <wire x1="120.65" y1="35.56" x2="114.3" y2="35.56" width="0.8128" layer="16"/>
 <wire x1="128.27" y1="27.94" x2="125.73" y2="25.4" width="0.8128" layer="1"/>
@@ -66119,9 +66119,9 @@ design rules under a new name.</description>
 <signal name="ID1">
 <contactref element="P2" pad="19"/>
 <contactref element="U18" pad="13"/>
-<contactref element="U3" pad="6"/>
+<contactref element="U3" pad="7"/>
 <contactref element="U17" pad="13"/>
-<wire x1="30.48" y1="16.51" x2="12.7" y2="34.29" width="0.8128" layer="16"/>
+<wire x1="30.48" y1="16.51" x2="12.7" y2="31.75" width="0.8128" layer="16"/>
 <wire x1="109.22" y1="16.51" x2="30.48" y2="16.51" width="0.8128" layer="16"/>
 <wire x1="118.11" y1="17.78" x2="109.22" y2="16.51" width="0.8128" layer="16"/>
 <wire x1="113.03" y1="22.86" x2="118.11" y2="17.78" width="0.8128" layer="1"/>
@@ -66141,10 +66141,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="ID2">
 <contactref element="P2" pad="21"/>
-<contactref element="U6" pad="6"/>
+<contactref element="U6" pad="7"/>
 <contactref element="U18" pad="11"/>
 <contactref element="U17" pad="14"/>
-<wire x1="49.53" y1="19.05" x2="31.75" y2="34.29" width="0.8128" layer="16"/>
+<wire x1="49.53" y1="19.05" x2="31.75" y2="31.75" width="0.8128" layer="16"/>
 <wire x1="106.68" y1="19.05" x2="49.53" y2="19.05" width="0.8128" layer="16"/>
 <wire x1="114.3" y1="26.67" x2="118.11" y2="22.86" width="0.8128" layer="1"/>
 <wire x1="118.11" y1="22.86" x2="106.68" y2="19.05" width="0.8128" layer="16"/>
@@ -66562,14 +66562,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$107">
 <contactref element="U22" pad="6"/>
-<contactref element="U12" pad="7"/>
+<contactref element="U12" pad="6"/>
 <contactref element="U12" pad="2"/>
-<contactref element="U15" pad="7"/>
+<contactref element="U15" pad="6"/>
 <contactref element="U15" pad="2"/>
 <contactref element="R71" pad="2"/>
-<wire x1="80.01" y1="31.75" x2="72.39" y2="31.75" width="0.8128" layer="16"/>
-<wire x1="92.71" y1="31.75" x2="80.01" y2="31.75" width="0.8128" layer="16"/>
-<wire x1="100.33" y1="31.75" x2="92.71" y2="31.75" width="0.8128" layer="16"/>
+<wire x1="80.01" y1="31.75" x2="72.39" y2="34.29" width="0.8128" layer="16"/>
+<wire x1="92.71" y1="34.29" x2="80.01" y2="31.75" width="0.8128" layer="16"/>
+<wire x1="100.33" y1="31.75" x2="92.71" y2="34.29" width="0.8128" layer="16"/>
 <wire x1="110.49" y1="40.64" x2="100.33" y2="31.75" width="0.8128" layer="16"/>
 <wire x1="110.49" y1="53.34" x2="110.49" y2="40.64" width="0.8128" layer="16"/>
 <wire x1="107.95" y1="57.15" x2="110.49" y2="53.34" width="0.8128" layer="16"/>

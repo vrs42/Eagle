@@ -14069,6 +14069,17 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,132.08,132.08,E4,V+,VCC,,,"/>
+<approved hash="104,1,134.62,116.84,E4,V-,-6.2VA,,,"/>
+<approved hash="104,1,132.08,175.26,E1,V+,VCC,,,"/>
+<approved hash="104,1,134.62,160.02,E1,V-,-6.2VA,,,"/>
+<approved hash="104,1,129.54,40.64,E3,V+,VCC,,,"/>
+<approved hash="104,1,132.08,25.4,E3,V-,-6.2VB,,,"/>
+<approved hash="104,1,129.54,83.82,E2,V+,VCC,,,"/>
+<approved hash="104,1,132.08,68.58,E2,V-,-6.2VB,,,"/>
+<approved hash="113,1,82.169,170.18,EDGE,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

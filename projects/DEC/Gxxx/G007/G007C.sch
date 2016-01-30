@@ -6866,6 +6866,14 @@ Flachstecker / Faston</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,11.9746,119.38,ST1,,,,,"/>
+<approved hash="113,1,59.1454,119.38,ST2,,,,,"/>
+<approved hash="113,1,48.5394,95.3474,1,,,,,"/>
+<approved hash="113,1,40.9194,90.2674,2,,,,,"/>
+<approved hash="113,1,22.5806,97.6926,3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

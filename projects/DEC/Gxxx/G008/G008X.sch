@@ -13343,6 +13343,15 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,79.9126,152.679,1,,,,,"/>
+<approved hash="113,1,69.9474,139.421,2,,,,,"/>
+<approved hash="113,1,77.5674,126.721,3,,,,,"/>
+<approved hash="113,1,171.547,141.961,R,,,,,"/>
+<approved hash="113,1,180.061,158.653,Y,,,,,"/>
+<approved hash="113,1,180.061,133.253,G,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -7907,6 +7907,18 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,99.06,33.02,E4,V+,VCC,,,"/>
+<approved hash="104,1,101.6,17.78,E4,V-,-6.2VA,,,"/>
+<approved hash="104,1,99.06,76.2,E1,V+,VCC,,,"/>
+<approved hash="104,1,101.6,60.96,E1,V-,-6.2VA,,,"/>
+<approved hash="104,1,99.06,119.38,E5B,V+,VCC,,,"/>
+<approved hash="104,1,101.6,104.14,E5B,V-,-6.2VB,,,"/>
+<approved hash="104,1,99.06,162.56,E2B,V+,VCC,,,"/>
+<approved hash="104,1,101.6,147.32,E2B,V-,-6.2VB,,,"/>
+<approved hash="113,1,49.149,58.42,U$1,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

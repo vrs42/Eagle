@@ -7634,6 +7634,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="165.1" y="27.94" size="2.54" layer="94">PDP-8/I Power Cable Connector</text>
+<text x="165.1" y="7.62" size="2.54" layer="94">B-CS-G792-0-1</text>
+<text x="241.3" y="7.62" size="2.54" layer="94">A</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -8187,6 +8190,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,94.869,119.38,U$2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

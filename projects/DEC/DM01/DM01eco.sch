@@ -10874,6 +10874,35 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,78.74,227.33,A19,T,PU1,,,"/>
+<approved hash="114,1,78.74,227.33,A19,T,EN1,,,"/>
+<approved hash="114,1,78.74,227.33,A19,T,PU0,,,"/>
+<approved hash="114,1,78.74,227.33,A19,T,EN0,,,"/>
+<approved hash="114,1,78.74,227.33,A19,T,RESET,,,"/>
+<approved hash="202,1,20.32,193.04,B03F,PU0,,,,"/>
+<approved hash="202,1,353.06,162.56,B22N,E,,,,"/>
+<approved hash="114,1,359.41,198.366,B22,S,D,,,"/>
+<approved hash="114,1,359.41,198.366,B22,S,E,,,"/>
+<approved hash="114,1,359.41,198.366,B22,V,D,,,"/>
+<approved hash="114,1,359.41,198.366,B22,V,E,,,"/>
+<approved hash="202,1,25.4,91.44,A18N,I$2,,,,"/>
+<approved hash="114,1,36.83,91.6855,A18,U,I$1,,,"/>
+<approved hash="114,1,36.83,91.6855,A18,U,I$2,,,"/>
+<approved hash="202,1,106.68,124.46,B12G$1,H,,,,"/>
+<approved hash="114,1,120.929,106.68,B12,G$4,I$1,,,"/>
+<approved hash="114,1,73.66,132.525,C32,V,E,,,"/>
+<approved hash="114,1,73.66,132.525,C32,V,F,,,"/>
+<approved hash="114,4,157.48,104.585,A15,G$3,J,,,"/>
+<approved hash="114,4,157.48,104.585,A15,G$3,D,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,1,363.22,82.6812,PDP-12/8I/8,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME2,,,,,"/>
+<approved hash="113,3,200.508,133.198,FRAME3,,,,,"/>
+<approved hash="113,4,200.508,133.198,FRAME4,,,,,"/>
+<approved hash="113,5,200.508,133.198,FRAME5,,,,,"/>
+<approved hash="113,6,200.508,133.198,FRAME6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
