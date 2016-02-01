@@ -6322,6 +6322,10 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,175.26,163.449,U$4,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

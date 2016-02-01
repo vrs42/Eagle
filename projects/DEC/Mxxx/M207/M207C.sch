@@ -4060,6 +4060,16 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,111.76,65.1087,J1,,,,,"/>
+<approved hash="113,1,111.76,72.7287,J2,,,,,"/>
+<approved hash="113,1,135.138,72.6906,PAD1,,,,,"/>
+<approved hash="113,1,135.138,65.0706,PAD2,,,,,"/>
+<approved hash="113,1,122.199,72.4874,PAD3,,,,,"/>
+<approved hash="113,1,122.199,64.8674,PAD4,,,,,"/>
+<approved hash="113,1,66.929,106.68,U$1,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

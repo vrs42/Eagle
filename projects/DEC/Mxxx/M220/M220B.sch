@@ -12228,6 +12228,18 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <approved hash="206,1,73.66,139.7,N$5,,,,,"/>
 <approved hash="206,1,314.96,139.7,N$8,,,,,"/>
 <approved hash="206,1,256.54,139.7,N$8,,,,,"/>
+<approved hash="206,1,355.6,304.8,N$9,,,,,"/>
+<approved hash="206,1,266.7,304.8,N$9,,,,,"/>
+<approved hash="206,1,337.82,304.8,N$9,,,,,"/>
+<approved hash="206,1,180.34,304.8,N$10,,,,,"/>
+<approved hash="206,1,198.12,304.8,N$10,,,,,"/>
+<approved hash="206,1,109.22,304.8,N$10,,,,,"/>
+<approved hash="206,1,259.08,304.8,N$11,,,,,"/>
+<approved hash="206,1,347.98,304.8,N$11,,,,,"/>
+<approved hash="206,1,330.2,304.8,N$11,,,,,"/>
+<approved hash="206,1,172.72,304.8,N$13,,,,,"/>
+<approved hash="206,1,190.5,304.8,N$13,,,,,"/>
+<approved hash="206,1,101.6,304.8,N$13,,,,,"/>
 <approved hash="113,1,261.62,408.051,U$1,,,,,"/>
 <approved hash="113,1,507.771,17.5514,FRAME1,,,,,"/>
 </errors>

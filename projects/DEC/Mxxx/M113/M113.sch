@@ -6292,6 +6292,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,20.32,-7.6835,E3,A,I0,,,"/>
+<approved hash="114,1,20.32,-7.6835,E3,A,I1,,,"/>
+<approved hash="114,1,20.32,-7.6835,E3,D,I0,,,"/>
+<approved hash="114,1,20.32,-7.6835,E3,D,I1,,,"/>
+<approved hash="113,1,-72.771,2.54,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

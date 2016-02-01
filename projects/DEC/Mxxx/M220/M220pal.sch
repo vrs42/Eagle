@@ -14040,6 +14040,10 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,48.26,197.231,U$1,,,,,"/>
+<approved hash="113,1,133.198,200.508,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

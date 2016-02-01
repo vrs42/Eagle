@@ -8304,6 +8304,14 @@ Source: AVX .. aphvc.pdf</description>
 <approved hash="202,1,345.44,269.24,E11A,PRE,,,,"/>
 <approved hash="202,1,345.44,360.68,E11B,CLR,,,,"/>
 <approved hash="202,1,345.44,370.84,E11B,PRE,,,,"/>
+<approved hash="206,1,276.86,88.9,N$1,,,,,"/>
+<approved hash="206,1,256.54,88.9,N$1,,,,,"/>
+<approved hash="206,1,264.16,88.9,N$2,,,,,"/>
+<approved hash="206,1,284.48,88.9,N$2,,,,,"/>
+<approved hash="206,1,71.12,88.9,N$5,,,,,"/>
+<approved hash="206,1,50.8,88.9,N$5,,,,,"/>
+<approved hash="206,1,43.18,88.9,N$6,,,,,"/>
+<approved hash="206,1,63.5,88.9,N$6,,,,,"/>
 <approved hash="206,1,165.1,119.38,PS_2,,,,,"/>
 <approved hash="206,1,223.52,119.38,PS_2,,,,,"/>
 <approved hash="206,1,378.46,119.38,PS_3,,,,,"/>

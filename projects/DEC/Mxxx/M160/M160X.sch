@@ -6302,6 +6302,18 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="206,1,48.26,170.18,N$1,,,,,"/>
+<approved hash="206,1,48.26,152.4,N$1,,,,,"/>
+<approved hash="206,1,48.26,162.56,N$8,,,,,"/>
+<approved hash="206,1,48.26,144.78,N$8,,,,,"/>
+<approved hash="206,1,129.54,147.32,N$21,,,,,"/>
+<approved hash="206,1,129.54,129.54,N$21,,,,,"/>
+<approved hash="206,1,129.54,154.94,N$22,,,,,"/>
+<approved hash="206,1,129.54,137.16,N$22,,,,,"/>
+<approved hash="113,1,105.029,99.06,U$4,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

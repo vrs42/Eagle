@@ -13113,6 +13113,16 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,200.66,91.5035,E6,C,I0,,,"/>
+<approved hash="114,1,200.66,91.5035,E6,C,I1,,,"/>
+<approved hash="114,1,200.66,91.5035,E6,D,I0,,,"/>
+<approved hash="114,1,200.66,91.5035,E6,D,I1,,,"/>
+<approved hash="114,1,111.76,40.5765,E3,C,I0,,,"/>
+<approved hash="114,1,111.76,40.5765,E3,C,I1,,,"/>
+<approved hash="113,1,41.529,53.34,U$1,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

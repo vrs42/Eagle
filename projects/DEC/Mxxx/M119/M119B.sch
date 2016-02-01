@@ -6282,13 +6282,15 @@ LETTER landscape</description>
 <net name="U1" class="0">
 <segment>
 <wire x1="25.4" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
-<junction x="142.24" y="83.82"/>
 <label x="25.4" y="66.04" size="1.778" layer="95"/>
+<pinref part="U$4" gate="U1" pin="1"/>
+</segment>
+<segment>
+<wire x1="149.86" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
 <label x="147.32" y="83.82" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="U1" pin="1"/>
+<junction x="142.24" y="83.82"/>
 </segment>
 </net>
 <net name="V1" class="0">
@@ -6308,6 +6310,10 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,51.689,101.6,U$4,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

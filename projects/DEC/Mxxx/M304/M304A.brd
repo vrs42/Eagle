@@ -8546,7 +8546,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
@@ -8789,8 +8789,8 @@ design rules under a new name.</description>
 <wire x1="25.4" y1="10.16" x2="25.4" y2="20.32" width="0.8128" layer="16"/>
 <wire x1="25.4" y1="20.32" x2="25.4" y2="33.02" width="0.8128" layer="16"/>
 <wire x1="116.84" y1="10.16" x2="117.7925" y2="10.4775" width="0.8128" layer="1"/>
-<wire x1="111.76" y1="10.16" x2="116.84" y2="10.16" width="0.8128" layer="1"/>
-<wire x1="107.95" y1="7.62" x2="111.76" y2="10.16" width="0.8128" layer="1"/>
+<wire x1="110.49" y1="10.16" x2="116.84" y2="10.16" width="0.8128" layer="1"/>
+<wire x1="107.95" y1="7.62" x2="110.49" y2="10.16" width="0.8128" layer="1"/>
 <wire x1="116.84" y1="52.07" x2="117.7925" y2="51.7525" width="0.8128" layer="16"/>
 <wire x1="107.95" y1="52.07" x2="116.84" y2="52.07" width="0.8128" layer="16"/>
 <wire x1="107.95" y1="55.88" x2="107.95" y2="52.07" width="0.8128" layer="16"/>

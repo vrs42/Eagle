@@ -6356,6 +6356,14 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,152.4,91.3765,E3,A,I0,,,"/>
+<approved hash="114,1,152.4,91.3765,E3,A,I1,,,"/>
+<approved hash="114,1,152.4,91.3765,E3,D,I0,,,"/>
+<approved hash="114,1,152.4,91.3765,E3,D,I1,,,"/>
+<approved hash="113,1,59.309,101.6,U$1,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

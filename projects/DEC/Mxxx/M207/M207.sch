@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -117,12 +117,6 @@
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="-15V">
-<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
-<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="SUPPLY">
@@ -142,19 +136,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="-15V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="-15V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3442,7 +3423,6 @@ Source: AVX .. aphvc.pdf</description>
 <parts>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
-<part name="V27" library="supply2" deviceset="-15V" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="C3" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
@@ -3469,7 +3449,6 @@ Source: AVX .. aphvc.pdf</description>
 <instances>
 <instance part="V2" gate="GND" x="-63.5" y="35.56"/>
 <instance part="V1" gate="G$1" x="-63.5" y="50.8"/>
-<instance part="V27" gate="G$1" x="-58.42" y="40.64"/>
 <instance part="C1" gate="G$1" x="10.16" y="-35.56"/>
 <instance part="C2" gate="G$1" x="20.32" y="-35.56"/>
 <instance part="C3" gate="G$1" x="30.48" y="-35.56"/>
@@ -3511,7 +3490,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="U$1" gate="C2" x="-73.66" y="38.1" rot="MR180"/>
 <instance part="U$1" gate="U2" x="-73.66" y="-33.02" rot="MR180"/>
 <instance part="U$1" gate="V2" x="-73.66" y="-38.1" rot="MR180"/>
-<instance part="U$1" gate="B2" x="-73.66" y="43.18" rot="MR180"/>
 <instance part="U$1" gate="A2" x="-73.66" y="48.26" rot="MR180"/>
 <instance part="U$1" gate="K1" x="-88.9" y="7.62" rot="MR180"/>
 <instance part="U$1" gate="L1" x="-88.9" y="2.54" rot="MR180"/>
@@ -3559,13 +3537,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-104.14" y1="-27.94" x2="-91.44" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="V4" gate="GND" pin="GND"/>
 <pinref part="U$1" gate="T1" pin="1"/>
-</segment>
-</net>
-<net name="-15V" class="0">
-<segment>
-<wire x1="-71.12" y1="43.18" x2="-58.42" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="V27" gate="G$1" pin="-15V"/>
-<pinref part="U$1" gate="B2" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4027,6 +3998,15 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-27.94,-39.0313,J1,,,,,"/>
+<approved hash="113,1,-27.94,-31.4113,J2,,,,,"/>
+<approved hash="113,1,-4.5624,-31.4494,PAD1,,,,,"/>
+<approved hash="113,1,-4.5624,-39.0694,PAD2,,,,,"/>
+<approved hash="113,1,-17.5006,-31.6526,PAD3,,,,,"/>
+<approved hash="113,1,-17.5006,-39.2726,PAD4,,,,,"/>
+<approved hash="113,1,-72.771,2.54,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

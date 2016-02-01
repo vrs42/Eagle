@@ -14369,6 +14369,10 @@ general purpose rectifier, 1 A</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,105.791,43.18,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

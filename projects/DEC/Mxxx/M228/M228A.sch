@@ -14715,6 +14715,22 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,88.9,236.157,E11,B,CLR,,,"/>
+<approved hash="114,1,88.9,236.157,E11,B,D,,,"/>
+<approved hash="114,1,88.9,236.157,E11,B,CLK,,,"/>
+<approved hash="114,1,88.9,236.157,E11,B,PRE,,,"/>
+<approved hash="114,1,52.7262,62.23,E7,B,I1,,,"/>
+<approved hash="114,1,52.7262,62.23,E7,B,I2,,,"/>
+<approved hash="114,1,52.7262,62.23,E7,B,I3,,,"/>
+<approved hash="114,1,52.7262,62.23,E7,B,I4,,,"/>
+<approved hash="114,1,370.904,91.44,E4,D,I0,,,"/>
+<approved hash="114,1,370.904,91.44,E4,D,I1,,,"/>
+<approved hash="206,1,96.52,88.9,N$3,,,,,"/>
+<approved hash="206,1,53.34,88.9,N$3,,,,,"/>
+<approved hash="113,1,176.911,254,U$5,,,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

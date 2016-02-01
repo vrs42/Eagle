@@ -14961,6 +14961,18 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,281.94,208.28,E4P,VCC,+5V,,,"/>
+<approved hash="104,1,289.56,208.28,E5P,VCC,+5V,,,"/>
+<approved hash="104,1,259.08,208.28,E6P,VCC,+5V,,,"/>
+<approved hash="104,1,266.7,208.28,E7P,VCC,+5V,,,"/>
+<approved hash="104,1,274.32,208.28,E8P,VCC,+5V,,,"/>
+<approved hash="113,1,126.111,193.04,U$1,,,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME2,,,,,"/>
+<approved hash="113,1,325.078,58.6147,SV1,,,,,"/>
+<approved hash="113,1,215.858,58.6147,SV2,,,,,"/>
+<approved hash="113,1,96.4777,58.6147,SV3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

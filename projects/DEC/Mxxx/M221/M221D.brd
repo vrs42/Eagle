@@ -102,7 +102,6 @@
 <board>
 <plain>
 <text x="45.72" y="129.54" size="1.778" layer="16" font="vector" ratio="24" rot="MR0">MAIN REGISTER M221D</text>
-<text x="1.27" y="135.89" size="1.778" layer="21" font="vector" ratio="24">Do not manufacture NC layer.</text>
 <text x="15.24" y="128.27" size="2.54" layer="1" font="vector" ratio="24">FLIP CHIP</text>
 <rectangle x1="0.508" y1="1.27" x2="1.016" y2="1.524" layer="200"/>
 <rectangle x1="2.286" y1="1.27" x2="3.302" y2="1.524" layer="200"/>

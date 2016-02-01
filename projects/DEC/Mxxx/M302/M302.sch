@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14683,27 +14683,19 @@ high speed (Philips)</description>
 <instance part="U$1" gate="E2" x="33.02" y="111.76" rot="MR180"/>
 <instance part="U$1" gate="D2" x="33.02" y="116.84" rot="MR180"/>
 <instance part="U$1" gate="C2" x="33.02" y="121.92" rot="MR180"/>
-<instance part="U$1" gate="U2" x="33.02" y="50.8" rot="MR180"/>
 <instance part="U$1" gate="V2" x="33.02" y="45.72" rot="MR180"/>
 <instance part="U$1" gate="A2" x="33.02" y="132.08" rot="MR180"/>
-<instance part="U$1" gate="K1" x="17.78" y="91.44" rot="MR180"/>
-<instance part="U$1" gate="L1" x="17.78" y="86.36" rot="MR180"/>
-<instance part="U$1" gate="M1" x="17.78" y="81.28" rot="MR180"/>
 <instance part="U$1" gate="N1" x="17.78" y="76.2" rot="MR180"/>
 <instance part="U$1" gate="P1" x="17.78" y="71.12" rot="MR180"/>
 <instance part="U$1" gate="R1" x="17.78" y="66.04" rot="MR180"/>
 <instance part="U$1" gate="S1" x="17.78" y="60.96" rot="MR180"/>
 <instance part="U$1" gate="T1" x="17.78" y="55.88" rot="MR180"/>
 <instance part="U$1" gate="U1" x="17.78" y="50.8" rot="MR180"/>
-<instance part="U$1" gate="V1" x="17.78" y="45.72" rot="MR180"/>
 <instance part="U$1" gate="J1" x="17.78" y="96.52" rot="MR180"/>
 <instance part="U$1" gate="H1" x="17.78" y="101.6" rot="MR180"/>
 <instance part="U$1" gate="F1" x="17.78" y="106.68" rot="MR180"/>
 <instance part="U$1" gate="E1" x="17.78" y="111.76" rot="MR180"/>
 <instance part="U$1" gate="D1" x="17.78" y="116.84" rot="MR180"/>
-<instance part="U$1" gate="C1" x="17.78" y="121.92" rot="MR180"/>
-<instance part="U$1" gate="B1" x="17.78" y="127" rot="MR180"/>
-<instance part="U$1" gate="A1" x="17.78" y="132.08" rot="MR180"/>
 <instance part="U$2" gate="G$1" x="17.78" y="38.1"/>
 </instances>
 <busses>
@@ -14846,27 +14838,6 @@ high speed (Philips)</description>
 <pinref part="V18" gate="G$1" pin="VCC"/>
 </segment>
 </net>
-<net name="A1" class="0">
-<segment>
-<wire x1="15.24" y1="132.08" x2="7.62" y2="132.08" width="0.1524" layer="91"/>
-<label x="7.62" y="132.08" size="1.778" layer="95"/>
-<pinref part="U$1" gate="A1" pin="1"/>
-</segment>
-</net>
-<net name="B1" class="0">
-<segment>
-<wire x1="7.62" y1="127" x2="15.24" y2="127" width="0.1524" layer="91"/>
-<label x="7.62" y="127" size="1.778" layer="95"/>
-<pinref part="U$1" gate="B1" pin="1"/>
-</segment>
-</net>
-<net name="C1" class="0">
-<segment>
-<wire x1="7.62" y1="121.92" x2="15.24" y2="121.92" width="0.1524" layer="91"/>
-<label x="7.62" y="121.92" size="1.778" layer="95"/>
-<pinref part="U$1" gate="C1" pin="1"/>
-</segment>
-</net>
 <net name="D1" class="0">
 <segment>
 <wire x1="7.62" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
@@ -14925,13 +14896,6 @@ high speed (Philips)</description>
 <wire x1="190.5" y1="55.88" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
 <label x="190.5" y="55.88" size="1.778" layer="95"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="U2" class="0">
-<segment>
-<wire x1="35.56" y1="50.8" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
-<label x="38.1" y="50.8" size="1.778" layer="95"/>
-<pinref part="U$1" gate="U2" pin="1"/>
 </segment>
 </net>
 <net name="S2" class="0">
@@ -15050,27 +15014,6 @@ high speed (Philips)</description>
 <wire x1="205.74" y1="71.12" x2="190.5" y2="71.12" width="0.1524" layer="91"/>
 <label x="190.5" y="71.12" size="1.778" layer="95"/>
 <pinref part="C9" gate="G$1" pin="+"/>
-</segment>
-</net>
-<net name="K1" class="0">
-<segment>
-<wire x1="15.24" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
-<label x="7.62" y="91.44" size="1.778" layer="95"/>
-<pinref part="U$1" gate="K1" pin="1"/>
-</segment>
-</net>
-<net name="L1" class="0">
-<segment>
-<wire x1="15.24" y1="86.36" x2="7.62" y2="86.36" width="0.1524" layer="91"/>
-<label x="7.62" y="86.36" size="1.778" layer="95"/>
-<pinref part="U$1" gate="L1" pin="1"/>
-</segment>
-</net>
-<net name="M1" class="0">
-<segment>
-<wire x1="15.24" y1="81.28" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
-<label x="7.62" y="81.28" size="1.778" layer="95"/>
-<pinref part="U$1" gate="M1" pin="1"/>
 </segment>
 </net>
 <net name="N1" class="0">
@@ -15242,13 +15185,6 @@ high speed (Philips)</description>
 <wire x1="205.74" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
 <label x="190.5" y="81.28" size="1.778" layer="95"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="V1" class="0">
-<segment>
-<wire x1="7.62" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<label x="7.62" y="45.72" size="1.778" layer="95"/>
-<pinref part="U$1" gate="V1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -15491,6 +15427,9 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,33.909,86.36,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

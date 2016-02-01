@@ -548,7 +548,7 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<param name="layerSetup" value="(1*16)"/>
+<param name="layerSetup" value="(1+16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="15mil"/>
@@ -562,7 +562,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
@@ -737,7 +737,8 @@ design rules under a new name.</description>
 <contactref element="E3" pad="7"/>
 <contactref element="U$4" pad="C2"/>
 <contactref element="U$4" pad="T1"/>
-<wire x1="101.6" y1="52.07" x2="117.7925" y2="51.7525" width="0.8128" layer="16"/>
+<wire x1="101.6" y1="52.07" x2="111.76" y2="52.07" width="0.8128" layer="16"/>
+<wire x1="111.76" y1="52.07" x2="117.7925" y2="51.7525" width="0.8128" layer="16"/>
 <wire x1="88.9" y1="33.02" x2="105.41" y2="49.53" width="0.8128" layer="1"/>
 <wire x1="105.41" y1="49.53" x2="105.41" y2="52.07" width="0.8128" layer="1"/>
 <wire x1="85.09" y1="33.02" x2="88.9" y2="33.02" width="0.8128" layer="1"/>
@@ -1029,9 +1030,10 @@ design rules under a new name.</description>
 <contactref element="E1" pad="2"/>
 <contactref element="U$4" pad="C1"/>
 <wire x1="74.93" y1="46.99" x2="81.28" y2="48.26" width="0.8128" layer="16"/>
+<wire x1="110.49" y1="52.07" x2="111.76" y2="52.07" width="0.8128" layer="1"/>
 <wire x1="111.76" y1="52.07" x2="117.7925" y2="51.7525" width="0.8128" layer="1"/>
-<wire x1="106.68" y1="55.88" x2="111.76" y2="52.07" width="0.8128" layer="1"/>
-<wire x1="81.28" y1="55.88" x2="106.68" y2="55.88" width="0.8128" layer="1"/>
+<wire x1="105.41" y1="55.88" x2="110.49" y2="52.07" width="0.8128" layer="1"/>
+<wire x1="81.28" y1="55.88" x2="105.41" y2="55.88" width="0.8128" layer="1"/>
 <wire x1="74.93" y1="46.99" x2="77.47" y2="52.07" width="0.8128" layer="1"/>
 <wire x1="77.47" y1="52.07" x2="81.28" y2="55.88" width="0.8128" layer="1"/>
 <via x="74.93" y="46.99" extent="1-16" drill="1.27"/>

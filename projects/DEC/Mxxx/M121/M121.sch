@@ -6134,13 +6134,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="U1" class="0">
 <segment>
 <wire x1="-99.06" y1="-33.02" x2="-91.44" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="-48.26" x2="-35.56" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-43.18" y="-48.26"/>
 <label x="-99.06" y="-33.02" size="1.778" layer="95"/>
+<pinref part="U$4" gate="U1" pin="1"/>
+</segment>
+<segment>
+<wire x1="-35.56" y1="-48.26" x2="-43.18" y2="-48.26" width="0.1524" layer="91"/>
 <label x="-38.1" y="-48.26" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="U1" pin="1"/>
+<junction x="-43.18" y="-48.26"/>
 </segment>
 </net>
 <net name="V1" class="0">
@@ -6160,6 +6162,17 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,-35.56,20.32,E1,1X,,,,"/>
+<approved hash="202,1,-35.56,17.78,E1,!1X,,,,"/>
+<approved hash="202,1,7.62,20.32,E2,1X,,,,"/>
+<approved hash="202,1,7.62,17.78,E2,!1X,,,,"/>
+<approved hash="202,1,50.8,20.32,E3,1X,,,,"/>
+<approved hash="202,1,50.8,17.78,E3,!1X,,,,"/>
+<approved hash="106,1,-58.42,43.18,-15V,,,,,"/>
+<approved hash="106,1,-71.12,43.18,-15V,,,,,"/>
+<approved hash="113,1,-72.771,2.54,U$4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

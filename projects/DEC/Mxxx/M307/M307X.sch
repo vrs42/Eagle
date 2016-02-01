@@ -7205,250 +7205,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <hole x="209.55" y="74.93" drill="3.175"/>
 <hole x="209.55" y="126.365" drill="3.175"/>
 </package>
-</packages>
-<symbols>
-<symbol name="DEVICE">
-<text x="0" y="0" size="1.27" layer="94">&gt;Value</text>
-</symbol>
-<symbol name="EDGE-RIGHT">
-<rectangle x1="-5.08" y1="-1.27" x2="-2.54" y2="1.27" layer="94"/>
-<pin name="1" x="2.54" y="0" visible="pad" length="middle" rot="R180"/>
-</symbol>
-<symbol name="EDGE-LEFT">
-<rectangle x1="2.54" y1="-1.27" x2="5.08" y2="1.27" layer="94"/>
-<pin name="1" x="-2.54" y="0" visible="pad" length="middle"/>
-</symbol>
-<symbol name="9601">
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="10.16" x2="-17.78" y2="5.08" width="0.254" layer="94" curve="-90"/>
-<wire x1="-17.78" y1="10.16" x2="-12.7" y2="7.62" width="0.254" layer="94" curve="-53.130102"/>
-<wire x1="-17.78" y1="5.08" x2="-12.7" y2="7.62" width="0.254" layer="94" curve="53.130102"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94" curve="-180"/>
-<text x="-2.54" y="-2.54" size="1.27" layer="94">&gt;VALUE</text>
-<text x="-2.54" y="0" size="1.27" layer="94">&gt;NAME</text>
-<pin name="P$1" x="-20.32" y="10.16" visible="pad" length="short" direction="in" function="dot"/>
-<pin name="P$2" x="-20.32" y="5.08" visible="pad" length="short" direction="in" function="dot"/>
-<pin name="P$3" x="-20.32" y="0" visible="pad" direction="in"/>
-<pin name="P$4" x="-20.32" y="-7.62" visible="pad" direction="in"/>
-<pin name="P$5" x="-2.54" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="P$6" x="2.54" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="Q" x="7.62" y="5.08" length="short" direction="out" rot="R180"/>
-<pin name="!Q" x="7.62" y="-5.08" length="short" direction="out" rot="R180"/>
-</symbol>
-<symbol name="PWRN">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
-</symbol>
-<symbol name="TRIMPOT">
-<wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.286" y1="1.27" x2="-1.651" y2="2.413" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
-<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="E" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="OUTLINE-*">
-<description>Board outlines for DEC boards.</description>
-<gates>
-<gate name="G$1" symbol="DEVICE" x="0" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="SINGLE" package="SINGLE">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SINGLE-R" package="SINGLE-R">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PROTO" package="DECPROTO111">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="OMNIBUS" package="OMNIBUS">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DOUBLE" package="DOUBLE">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DOUBLE-R" package="DOUBLE-R">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SINGLE-LONG" package="SINGLE-LONG">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DOUBLE-LONG" package="DOUBLE-LONG">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SINGLE" uservalue="yes">
-<description>Single-Height DEC board</description>
-<gates>
-<gate name="L2" symbol="EDGE-RIGHT" x="7.62" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="M2" symbol="EDGE-RIGHT" x="7.62" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="N2" symbol="EDGE-RIGHT" x="7.62" y="12.7" addlevel="always" swaplevel="1"/>
-<gate name="P2" symbol="EDGE-RIGHT" x="7.62" y="17.78" addlevel="always" swaplevel="1"/>
-<gate name="R2" symbol="EDGE-RIGHT" x="7.62" y="22.86" addlevel="always" swaplevel="1"/>
-<gate name="S2" symbol="EDGE-RIGHT" x="7.62" y="27.94" addlevel="always" swaplevel="1"/>
-<gate name="T2" symbol="EDGE-RIGHT" x="7.62" y="33.02" addlevel="always" swaplevel="1"/>
-<gate name="K2" symbol="EDGE-RIGHT" x="7.62" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="J2" symbol="EDGE-RIGHT" x="7.62" y="-7.62" addlevel="always" swaplevel="1"/>
-<gate name="H2" symbol="EDGE-RIGHT" x="7.62" y="-12.7" addlevel="always" swaplevel="1"/>
-<gate name="F2" symbol="EDGE-RIGHT" x="7.62" y="-17.78" addlevel="always" swaplevel="1"/>
-<gate name="E2" symbol="EDGE-RIGHT" x="7.62" y="-22.86" addlevel="always" swaplevel="1"/>
-<gate name="D2" symbol="EDGE-RIGHT" x="7.62" y="-27.94" addlevel="always" swaplevel="1"/>
-<gate name="C2" symbol="EDGE-RIGHT" x="7.62" y="-33.02" addlevel="always" swaplevel="1"/>
-<gate name="U2" symbol="EDGE-RIGHT" x="7.62" y="38.1" addlevel="always" swaplevel="1"/>
-<gate name="V2" symbol="EDGE-RIGHT" x="7.62" y="43.18" addlevel="always" swaplevel="1"/>
-<gate name="B2" symbol="EDGE-RIGHT" x="7.62" y="-38.1" addlevel="always" swaplevel="1"/>
-<gate name="A2" symbol="EDGE-RIGHT" x="7.62" y="-43.18" addlevel="always" swaplevel="1"/>
-<gate name="K1" symbol="EDGE-LEFT" x="-7.62" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="L1" symbol="EDGE-LEFT" x="-7.62" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="M1" symbol="EDGE-LEFT" x="-7.62" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="N1" symbol="EDGE-LEFT" x="-7.62" y="12.7" addlevel="always" swaplevel="1"/>
-<gate name="P1" symbol="EDGE-LEFT" x="-7.62" y="17.78" addlevel="always" swaplevel="1"/>
-<gate name="R1" symbol="EDGE-LEFT" x="-7.62" y="22.86" addlevel="always" swaplevel="1"/>
-<gate name="S1" symbol="EDGE-LEFT" x="-7.62" y="27.94" addlevel="always" swaplevel="1"/>
-<gate name="T1" symbol="EDGE-LEFT" x="-7.62" y="33.02" addlevel="always" swaplevel="1"/>
-<gate name="U1" symbol="EDGE-LEFT" x="-7.62" y="38.1" addlevel="always" swaplevel="1"/>
-<gate name="V1" symbol="EDGE-LEFT" x="-7.62" y="43.18" addlevel="always" swaplevel="1"/>
-<gate name="J1" symbol="EDGE-LEFT" x="-7.62" y="-7.62" addlevel="always" swaplevel="1"/>
-<gate name="H1" symbol="EDGE-LEFT" x="-7.62" y="-12.7" addlevel="always" swaplevel="1"/>
-<gate name="F1" symbol="EDGE-LEFT" x="-7.62" y="-17.78" addlevel="always" swaplevel="1"/>
-<gate name="E1" symbol="EDGE-LEFT" x="-7.62" y="-22.86" addlevel="always" swaplevel="1"/>
-<gate name="D1" symbol="EDGE-LEFT" x="-7.62" y="-27.94" addlevel="always" swaplevel="1"/>
-<gate name="C1" symbol="EDGE-LEFT" x="-7.62" y="-33.02" addlevel="always" swaplevel="1"/>
-<gate name="B1" symbol="EDGE-LEFT" x="-7.62" y="-38.1" addlevel="always" swaplevel="1"/>
-<gate name="A1" symbol="EDGE-LEFT" x="-7.62" y="-43.18" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="EDGE-CON2">
-<connects>
-<connect gate="A1" pin="1" pad="A1"/>
-<connect gate="A2" pin="1" pad="A2"/>
-<connect gate="B1" pin="1" pad="B1"/>
-<connect gate="B2" pin="1" pad="B2"/>
-<connect gate="C1" pin="1" pad="C1"/>
-<connect gate="C2" pin="1" pad="C2"/>
-<connect gate="D1" pin="1" pad="D1"/>
-<connect gate="D2" pin="1" pad="D2"/>
-<connect gate="E1" pin="1" pad="E1"/>
-<connect gate="E2" pin="1" pad="E2"/>
-<connect gate="F1" pin="1" pad="F1"/>
-<connect gate="F2" pin="1" pad="F2"/>
-<connect gate="H1" pin="1" pad="H1"/>
-<connect gate="H2" pin="1" pad="H2"/>
-<connect gate="J1" pin="1" pad="J1"/>
-<connect gate="J2" pin="1" pad="J2"/>
-<connect gate="K1" pin="1" pad="K1"/>
-<connect gate="K2" pin="1" pad="K2"/>
-<connect gate="L1" pin="1" pad="L1"/>
-<connect gate="L2" pin="1" pad="L2"/>
-<connect gate="M1" pin="1" pad="M1"/>
-<connect gate="M2" pin="1" pad="M2"/>
-<connect gate="N1" pin="1" pad="N1"/>
-<connect gate="N2" pin="1" pad="N2"/>
-<connect gate="P1" pin="1" pad="P1"/>
-<connect gate="P2" pin="1" pad="P2"/>
-<connect gate="R1" pin="1" pad="R1"/>
-<connect gate="R2" pin="1" pad="R2"/>
-<connect gate="S1" pin="1" pad="S1"/>
-<connect gate="S2" pin="1" pad="S2"/>
-<connect gate="T1" pin="1" pad="T1"/>
-<connect gate="T2" pin="1" pad="T2"/>
-<connect gate="U1" pin="1" pad="U1"/>
-<connect gate="U2" pin="1" pad="U2"/>
-<connect gate="V1" pin="1" pad="V1"/>
-<connect gate="V2" pin="1" pad="V2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="9601" prefix="E">
-<description>DEC9601 monstable</description>
-<gates>
-<gate name="G$1" symbol="9601" x="0" y="5.08" addlevel="must"/>
-<gate name="G$2" symbol="PWRN" x="25.4" y="5.08" addlevel="request"/>
-</gates>
-<devices>
-<device name="" package="DIL14">
-<connects>
-<connect gate="G$1" pin="!Q" pad="6"/>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="11"/>
-<connect gate="G$1" pin="P$6" pad="13"/>
-<connect gate="G$1" pin="Q" pad="8"/>
-<connect gate="G$2" pin="GND" pad="7"/>
-<connect gate="G$2" pin="VCC" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="275P" prefix="R" uservalue="yes">
-<description>Trimpot with 275P (3006Y) footprint.</description>
-<gates>
-<gate name="G$1" symbol="TRIMPOT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="3006Y">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="E" pad="3"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="switches5">
-<packages>
 <package name="75AF36-2">
 <description>&lt;b&gt;Single Deck Rotary Switches&lt;/b&gt;&lt;p&gt;
 Source: www.grayhill.com .. J-13-14.pdf</description>
@@ -7464,18 +7220,18 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 <wire x1="1.575" y1="-3.425" x2="0.75" y2="-3.7" width="0.2032" layer="21" curve="-13.209671"/>
 <circle x="0" y="0" radius="3.775" width="0.2032" layer="51"/>
 <circle x="1.225" y="-0.375" radius="0.3535" width="0" layer="21"/>
-<pad name="1" x="3.6235" y="-1.1773" drill="0.6" diameter="1" rot="R342"/>
-<pad name="2" x="2.2394" y="-3.0824" drill="0.6" diameter="1" rot="R306"/>
-<pad name="3" x="0" y="-3.8099" drill="0.6" diameter="1" rot="R270"/>
-<pad name="4" x="-2.2394" y="-3.0823" drill="0.6" diameter="1" rot="R234"/>
-<pad name="5" x="-3.6235" y="-1.1773" drill="0.6" diameter="1" rot="R198"/>
-<pad name="6" x="-3.6235" y="1.1773" drill="0.6" diameter="1" rot="R162"/>
-<pad name="7" x="-2.2394" y="3.0824" drill="0.6" diameter="1" rot="R126"/>
-<pad name="8" x="0" y="3.8099" drill="0.6" diameter="1" rot="R90"/>
-<pad name="9" x="2.2394" y="3.0823" drill="0.6" diameter="1" rot="R54"/>
-<pad name="10" x="3.6235" y="1.1773" drill="0.6" diameter="1" rot="R18"/>
-<pad name="C1" x="0" y="-1.63" drill="0.6" diameter="1"/>
-<pad name="C2" x="0" y="1.63" drill="0.6" diameter="1"/>
+<pad name="1" x="3.6235" y="-1.1773" drill="0.8128" rot="R342"/>
+<pad name="2" x="2.2394" y="-3.0824" drill="0.8128" rot="R306"/>
+<pad name="3" x="0" y="-3.8099" drill="0.8128" rot="R270"/>
+<pad name="4" x="-2.2394" y="-3.0823" drill="0.8128" rot="R234"/>
+<pad name="5" x="-3.6235" y="-1.1773" drill="0.8128" rot="R198"/>
+<pad name="6" x="-3.6235" y="1.1773" drill="0.8128" rot="R162"/>
+<pad name="7" x="-2.2394" y="3.0824" drill="0.8128" rot="R126"/>
+<pad name="8" x="0" y="3.8099" drill="0.8128" rot="R90"/>
+<pad name="9" x="2.2394" y="3.0823" drill="0.8128" rot="R54"/>
+<pad name="10" x="3.6235" y="1.1773" drill="0.8128" rot="R18"/>
+<pad name="C1" x="0" y="-1.63" drill="0.8128"/>
+<pad name="C2" x="0" y="1.63" drill="0.8128"/>
 <text x="-2.7" y="4.315" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.075" y="-6.415" size="1.27" layer="27">&gt;VALUE</text>
 <text x="2.45" y="1.175" size="0.8128" layer="51" rot="SR288">0</text>
@@ -7677,6 +7433,64 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 </package>
 </packages>
 <symbols>
+<symbol name="DEVICE">
+<text x="0" y="0" size="1.27" layer="94">&gt;Value</text>
+</symbol>
+<symbol name="EDGE-RIGHT">
+<rectangle x1="-5.08" y1="-1.27" x2="-2.54" y2="1.27" layer="94"/>
+<pin name="1" x="2.54" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+<symbol name="EDGE-LEFT">
+<rectangle x1="2.54" y1="-1.27" x2="5.08" y2="1.27" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="middle"/>
+</symbol>
+<symbol name="9601">
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="10.16" x2="-17.78" y2="5.08" width="0.254" layer="94" curve="-90"/>
+<wire x1="-17.78" y1="10.16" x2="-12.7" y2="7.62" width="0.254" layer="94" curve="-53.130102"/>
+<wire x1="-17.78" y1="5.08" x2="-12.7" y2="7.62" width="0.254" layer="94" curve="53.130102"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="94">&gt;VALUE</text>
+<text x="-2.54" y="0" size="1.27" layer="94">&gt;NAME</text>
+<pin name="P$1" x="-20.32" y="10.16" visible="pad" length="short" direction="in" function="dot"/>
+<pin name="P$2" x="-20.32" y="5.08" visible="pad" length="short" direction="in" function="dot"/>
+<pin name="P$3" x="-20.32" y="0" visible="pad" direction="in"/>
+<pin name="P$4" x="-20.32" y="-7.62" visible="pad" direction="in"/>
+<pin name="P$5" x="-2.54" y="10.16" visible="pad" length="short" rot="R270"/>
+<pin name="P$6" x="2.54" y="10.16" visible="pad" length="short" rot="R270"/>
+<pin name="Q" x="7.62" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="!Q" x="7.62" y="-5.08" length="short" direction="out" rot="R180"/>
+</symbol>
+<symbol name="PWRN">
+<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
+<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
+<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="TRIMPOT">
+<wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.286" y1="1.27" x2="-1.651" y2="2.413" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="E" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
 <symbol name="DS-205">
 <wire x1="-19.05" y1="1.905" x2="-17.78" y2="1.905" width="0.254" layer="94"/>
 <wire x1="-19.05" y1="1.905" x2="-19.05" y2="0" width="0.254" layer="94"/>
@@ -7778,6 +7592,184 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="OUTLINE-*">
+<description>Board outlines for DEC boards.</description>
+<gates>
+<gate name="G$1" symbol="DEVICE" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="SINGLE" package="SINGLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SINGLE-R" package="SINGLE-R">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PROTO" package="DECPROTO111">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OMNIBUS" package="OMNIBUS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DOUBLE" package="DOUBLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DOUBLE-R" package="DOUBLE-R">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SINGLE-LONG" package="SINGLE-LONG">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DOUBLE-LONG" package="DOUBLE-LONG">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SINGLE" uservalue="yes">
+<description>Single-Height DEC board</description>
+<gates>
+<gate name="L2" symbol="EDGE-RIGHT" x="7.62" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="M2" symbol="EDGE-RIGHT" x="7.62" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="N2" symbol="EDGE-RIGHT" x="7.62" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="P2" symbol="EDGE-RIGHT" x="7.62" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="R2" symbol="EDGE-RIGHT" x="7.62" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="S2" symbol="EDGE-RIGHT" x="7.62" y="27.94" addlevel="always" swaplevel="1"/>
+<gate name="T2" symbol="EDGE-RIGHT" x="7.62" y="33.02" addlevel="always" swaplevel="1"/>
+<gate name="K2" symbol="EDGE-RIGHT" x="7.62" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="J2" symbol="EDGE-RIGHT" x="7.62" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="H2" symbol="EDGE-RIGHT" x="7.62" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="F2" symbol="EDGE-RIGHT" x="7.62" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="E2" symbol="EDGE-RIGHT" x="7.62" y="-22.86" addlevel="always" swaplevel="1"/>
+<gate name="D2" symbol="EDGE-RIGHT" x="7.62" y="-27.94" addlevel="always" swaplevel="1"/>
+<gate name="C2" symbol="EDGE-RIGHT" x="7.62" y="-33.02" addlevel="always" swaplevel="1"/>
+<gate name="U2" symbol="EDGE-RIGHT" x="7.62" y="38.1" addlevel="always" swaplevel="1"/>
+<gate name="V2" symbol="EDGE-RIGHT" x="7.62" y="43.18" addlevel="always" swaplevel="1"/>
+<gate name="B2" symbol="EDGE-RIGHT" x="7.62" y="-38.1" addlevel="always" swaplevel="1"/>
+<gate name="A2" symbol="EDGE-RIGHT" x="7.62" y="-43.18" addlevel="always" swaplevel="1"/>
+<gate name="K1" symbol="EDGE-LEFT" x="-7.62" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="L1" symbol="EDGE-LEFT" x="-7.62" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="M1" symbol="EDGE-LEFT" x="-7.62" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="N1" symbol="EDGE-LEFT" x="-7.62" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="P1" symbol="EDGE-LEFT" x="-7.62" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="R1" symbol="EDGE-LEFT" x="-7.62" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="S1" symbol="EDGE-LEFT" x="-7.62" y="27.94" addlevel="always" swaplevel="1"/>
+<gate name="T1" symbol="EDGE-LEFT" x="-7.62" y="33.02" addlevel="always" swaplevel="1"/>
+<gate name="U1" symbol="EDGE-LEFT" x="-7.62" y="38.1" addlevel="always" swaplevel="1"/>
+<gate name="V1" symbol="EDGE-LEFT" x="-7.62" y="43.18" addlevel="always" swaplevel="1"/>
+<gate name="J1" symbol="EDGE-LEFT" x="-7.62" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="H1" symbol="EDGE-LEFT" x="-7.62" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="F1" symbol="EDGE-LEFT" x="-7.62" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="E1" symbol="EDGE-LEFT" x="-7.62" y="-22.86" addlevel="always" swaplevel="1"/>
+<gate name="D1" symbol="EDGE-LEFT" x="-7.62" y="-27.94" addlevel="always" swaplevel="1"/>
+<gate name="C1" symbol="EDGE-LEFT" x="-7.62" y="-33.02" addlevel="always" swaplevel="1"/>
+<gate name="B1" symbol="EDGE-LEFT" x="-7.62" y="-38.1" addlevel="always" swaplevel="1"/>
+<gate name="A1" symbol="EDGE-LEFT" x="-7.62" y="-43.18" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="EDGE-CON2">
+<connects>
+<connect gate="A1" pin="1" pad="A1"/>
+<connect gate="A2" pin="1" pad="A2"/>
+<connect gate="B1" pin="1" pad="B1"/>
+<connect gate="B2" pin="1" pad="B2"/>
+<connect gate="C1" pin="1" pad="C1"/>
+<connect gate="C2" pin="1" pad="C2"/>
+<connect gate="D1" pin="1" pad="D1"/>
+<connect gate="D2" pin="1" pad="D2"/>
+<connect gate="E1" pin="1" pad="E1"/>
+<connect gate="E2" pin="1" pad="E2"/>
+<connect gate="F1" pin="1" pad="F1"/>
+<connect gate="F2" pin="1" pad="F2"/>
+<connect gate="H1" pin="1" pad="H1"/>
+<connect gate="H2" pin="1" pad="H2"/>
+<connect gate="J1" pin="1" pad="J1"/>
+<connect gate="J2" pin="1" pad="J2"/>
+<connect gate="K1" pin="1" pad="K1"/>
+<connect gate="K2" pin="1" pad="K2"/>
+<connect gate="L1" pin="1" pad="L1"/>
+<connect gate="L2" pin="1" pad="L2"/>
+<connect gate="M1" pin="1" pad="M1"/>
+<connect gate="M2" pin="1" pad="M2"/>
+<connect gate="N1" pin="1" pad="N1"/>
+<connect gate="N2" pin="1" pad="N2"/>
+<connect gate="P1" pin="1" pad="P1"/>
+<connect gate="P2" pin="1" pad="P2"/>
+<connect gate="R1" pin="1" pad="R1"/>
+<connect gate="R2" pin="1" pad="R2"/>
+<connect gate="S1" pin="1" pad="S1"/>
+<connect gate="S2" pin="1" pad="S2"/>
+<connect gate="T1" pin="1" pad="T1"/>
+<connect gate="T2" pin="1" pad="T2"/>
+<connect gate="U1" pin="1" pad="U1"/>
+<connect gate="U2" pin="1" pad="U2"/>
+<connect gate="V1" pin="1" pad="V1"/>
+<connect gate="V2" pin="1" pad="V2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="9601" prefix="E">
+<description>DEC9601 monstable</description>
+<gates>
+<gate name="G$1" symbol="9601" x="0" y="5.08" addlevel="must"/>
+<gate name="G$2" symbol="PWRN" x="25.4" y="5.08" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL14">
+<connects>
+<connect gate="G$1" pin="!Q" pad="6"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="11"/>
+<connect gate="G$1" pin="P$6" pad="13"/>
+<connect gate="G$1" pin="Q" pad="8"/>
+<connect gate="G$2" pin="GND" pad="7"/>
+<connect gate="G$2" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="275P" prefix="R" uservalue="yes">
+<description>Trimpot with 275P (3006Y) footprint.</description>
+<gates>
+<gate name="G$1" symbol="TRIMPOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3006Y">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="75?36-2" prefix="S">
 <description>&lt;b&gt;Single Deck Rotary Switches&lt;/b&gt;&lt;p&gt;
 Source: www.grayhill.com .. J-13-14.pdf</description>
@@ -8010,8 +8002,8 @@ DIN A3, landscape with extra doc field</description>
 <part name="E3" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="R4" library="dec-con" deviceset="275P" device="" value="200K"/>
 <part name="R8" library="dec-con" deviceset="275P" device="" value="200K"/>
-<part name="S2" library="switches5" deviceset="75?36-2" device="AF"/>
-<part name="S1" library="switches5" deviceset="75?36-2" device="AF"/>
+<part name="S2" library="dec-con" deviceset="75?36-2" device="AF"/>
+<part name="S1" library="dec-con" deviceset="75?36-2" device="AF"/>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
 <part name="Q2" library="transistor" deviceset="*-NPN-" device="TO39-EBC" technology="2N3019" value="PN3569"/>
 <part name="Q4" library="transistor" deviceset="*-NPN-" device="TO39-EBC" technology="2N3019" value="PN3569"/>
@@ -8885,6 +8877,24 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,175.26,190.5,E2G$2,VCC,+5V/1,,,"/>
+<approved hash="104,1,175.26,68.58,E4G$2,VCC,+5V/2,,,"/>
+<approved hash="104,1,190.5,48.26,E3P,GND,GND1,,,"/>
+<approved hash="206,1,45.72,172.72,+3V3,,,,,"/>
+<approved hash="206,1,45.72,134.62,+3V3,,,,,"/>
+<approved hash="208,1,45.72,172.72,+3V3,out,,,,"/>
+<approved hash="208,1,53.34,175.26,+3V3,sup,,,,"/>
+<approved hash="208,1,53.34,154.94,+3V3,sup,,,,"/>
+<approved hash="208,1,15.24,86.36,+3V3,sup,,,,"/>
+<approved hash="208,1,15.24,208.28,+3V3,sup,,,,"/>
+<approved hash="208,1,73.66,172.72,+3V3,sup,,,,"/>
+<approved hash="208,1,45.72,134.62,+3V3,out,,,,"/>
+<approved hash="208,1,53.34,137.16,+3V3,sup,,,,"/>
+<approved hash="208,1,73.66,50.8,+3V3,sup,,,,"/>
+<approved hash="113,1,74.549,190.5,U$4,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

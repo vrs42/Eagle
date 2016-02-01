@@ -8360,6 +8360,21 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,228.6,-28.0035,E11,B,CLR,,,"/>
+<approved hash="114,1,228.6,-28.0035,E11,B,D,,,"/>
+<approved hash="114,1,228.6,-28.0035,E11,B,CLK,,,"/>
+<approved hash="114,1,228.6,-28.0035,E11,B,PRE,,,"/>
+<approved hash="114,1,499.766,-95.25,E7,B,I1,,,"/>
+<approved hash="114,1,499.766,-95.25,E7,B,I2,,,"/>
+<approved hash="114,1,499.766,-95.25,E7,B,I3,,,"/>
+<approved hash="114,1,499.766,-95.25,E7,B,I4,,,"/>
+<approved hash="114,1,551.244,-22.86,E4,D,I0,,,"/>
+<approved hash="114,1,551.244,-22.86,E4,D,I1,,,"/>
+<approved hash="206,1,543.56,-68.58,N$3,,,,,"/>
+<approved hash="206,1,500.38,-68.58,N$3,,,,,"/>
+<approved hash="113,1,193.929,-109.22,U$5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

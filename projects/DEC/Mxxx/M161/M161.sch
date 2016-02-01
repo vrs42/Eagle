@@ -117,12 +117,6 @@
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="-15V">
-<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
-<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="SUPPLY">
@@ -142,19 +136,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="-15V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="-15V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5926,7 +5907,6 @@ DIN A4, landscape with extra doc field</description>
 <parts>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
-<part name="V27" library="supply2" deviceset="-15V" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="C3" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
@@ -5971,7 +5951,6 @@ DIN A4, landscape with extra doc field</description>
 <instances>
 <instance part="V2" gate="GND" x="241.3" y="147.32"/>
 <instance part="V1" gate="G$1" x="241.3" y="162.56"/>
-<instance part="V27" gate="G$1" x="246.38" y="152.4"/>
 <instance part="C1" gate="G$1" x="38.1" y="15.24"/>
 <instance part="C2" gate="G$1" x="48.26" y="15.24"/>
 <instance part="C3" gate="G$1" x="58.42" y="15.24"/>
@@ -6039,7 +6018,6 @@ DIN A4, landscape with extra doc field</description>
 <instance part="U$4" gate="C2" x="231.14" y="149.86" rot="MR180"/>
 <instance part="U$4" gate="U2" x="231.14" y="78.74" rot="MR180"/>
 <instance part="U$4" gate="V2" x="231.14" y="73.66" rot="MR180"/>
-<instance part="U$4" gate="B2" x="231.14" y="154.94" rot="MR180"/>
 <instance part="U$4" gate="A2" x="231.14" y="160.02" rot="MR180"/>
 <instance part="U$4" gate="L1" x="215.9" y="114.3" rot="MR180"/>
 <instance part="U$4" gate="M1" x="215.9" y="109.22" rot="MR180"/>
@@ -6112,13 +6090,6 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="-15V" class="0">
-<segment>
-<wire x1="233.68" y1="154.94" x2="246.38" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="V27" gate="G$1" pin="-15V"/>
-<pinref part="U$4" gate="B2" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -6891,6 +6862,10 @@ DIN A4, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,232.029,114.3,U$4,,,,,"/>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

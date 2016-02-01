@@ -117,12 +117,6 @@
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="-15V">
-<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
-<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="SUPPLY">
@@ -142,19 +136,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="-15V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="-15V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5871,7 +5852,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <parts>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
-<part name="V27" library="supply2" deviceset="-15V" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="C3" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
@@ -5912,7 +5892,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instances>
 <instance part="V2" gate="GND" x="-109.22" y="48.26"/>
 <instance part="V1" gate="G$1" x="-109.22" y="63.5"/>
-<instance part="V27" gate="G$1" x="-104.14" y="53.34"/>
 <instance part="C1" gate="G$1" x="-165.1" y="-38.1" rot="R90"/>
 <instance part="C2" gate="G$1" x="-165.1" y="-27.94" rot="R90"/>
 <instance part="C3" gate="G$1" x="-165.1" y="-17.78" rot="R90"/>
@@ -5980,7 +5959,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="U$4" gate="C2" x="-119.38" y="50.8" rot="MR180"/>
 <instance part="U$4" gate="U2" x="-119.38" y="-20.32" rot="MR180"/>
 <instance part="U$4" gate="V2" x="-119.38" y="-25.4" rot="MR180"/>
-<instance part="U$4" gate="B2" x="-119.38" y="55.88" rot="MR180"/>
 <instance part="U$4" gate="A2" x="-119.38" y="60.96" rot="MR180"/>
 <instance part="U$4" gate="L1" x="-134.62" y="15.24" rot="MR180"/>
 <instance part="U$4" gate="M1" x="-134.62" y="10.16" rot="MR180"/>
@@ -6051,13 +6029,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="-15V" class="0">
-<segment>
-<wire x1="-116.84" y1="55.88" x2="-104.14" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="V27" gate="G$1" pin="-15V"/>
-<pinref part="U$4" gate="B2" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -6830,6 +6801,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-118.491,15.24,U$4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

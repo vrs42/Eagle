@@ -1,24 +1,24 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Program Files/EAGLE-4.11/projects/DEC/Mxxx/M117/M117.brd
+Job           : C:/Users/Vince/Documents/eagle/projects/DEC/Mxxx/M117/M117.brd
 
-Start at      :   08:44:58a ( 1/11/2008)
-End at        :   08:44:58a ( 1/11/2008)
-Elapsed time  :   00:00:00
+Start at      : 23:08:45 (1/30/2016)
+End at        : 23:08:47 (1/30/2016)
+Elapsed time  : 00:00:02
 
 Signals       :    34   RoutingGrid: 25 mil  Layers: 2
-Connections   :    49   predefined:  14 ( 0 Vias )
+Connections   :    49   predefined:  0 ( 0 Vias )
 
-Router memory :   101504
+Router memory :   89856
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0
-max. Level        :         0         0         0         0         0
-max. Total        :         0         0         0         0         0
+Time per pass     :  00:00:01  00:00:01  00:00:00  00:00:00  00:00:00
+Number of Ripups  :        64         0         0         0         0
+max. Level        :         6         0         0         0         0
+max. Total        :        11         0         0         0         0
 
-Routed            :        35        35        35        35        35
+Routed            :        49        49        49        49        49
 Vias              :         0         0         0         0         0
 Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 

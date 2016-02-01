@@ -5745,6 +5745,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <approved hash="202,1,330.2,368.3,E15B,PRE,,,,"/>
 <approved hash="114,1,30.48,129.477,E5,B,I0,,,"/>
 <approved hash="114,1,30.48,129.477,E5,B,I1,,,"/>
+<approved hash="206,1,266.7,304.8,N$9,,,,,"/>
+<approved hash="206,1,337.82,304.8,N$9,,,,,"/>
+<approved hash="206,1,180.34,304.8,N$10,,,,,"/>
+<approved hash="206,1,109.22,304.8,N$10,,,,,"/>
+<approved hash="206,1,259.08,304.8,N$11,,,,,"/>
+<approved hash="206,1,330.2,304.8,N$11,,,,,"/>
+<approved hash="206,1,172.72,304.8,N$13,,,,,"/>
+<approved hash="206,1,101.6,304.8,N$13,,,,,"/>
 <approved hash="113,1,261.62,408.051,U$1,,,,,"/>
 </errors>
 </schematic>
