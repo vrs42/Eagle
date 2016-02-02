@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16504,7 +16504,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="E22" library="dec-con" deviceset="N8881" device="N"/>
 <part name="E20" library="dec-con" deviceset="SP380" device="N"/>
 <part name="E15" library="74xx-us" deviceset="74*02" device="N"/>
-<part name="T1" library="transistor" deviceset="*-NPN-" device="TO92"/>
+<part name="Q1" library="transistor" deviceset="*-NPN-" device="TO92" value="DEC3009"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
 <part name="R29" library="rcl" deviceset="R-US_" device="0207/10" value="27"/>
 <part name="R30" library="rcl" deviceset="R-US_" device="0207/10" value="12"/>
@@ -16539,7 +16539,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="V23" library="supply2" deviceset="GND" device=""/>
 <part name="E16" library="74xx-us" deviceset="74*02" device="N"/>
 <part name="E13" library="74xx-us" deviceset="74*00" device="N"/>
-<part name="T2" library="transistor" deviceset="*-NPN-" device="TO92"/>
+<part name="Q2" library="transistor" deviceset="*-NPN-" device="TO92" value="DEC3009"/>
 <part name="R39" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
 <part name="V30" library="supply2" deviceset="VCC" device=""/>
 <part name="V31" library="supply2" deviceset="GND" device=""/>
@@ -20821,7 +20821,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="E22" gate="B" x="248.92" y="45.72"/>
 <instance part="E20" gate="C" x="111.76" y="91.44"/>
 <instance part="E15" gate="D" x="139.7" y="93.98" rot="MR180"/>
-<instance part="T1" gate="G$1" x="210.82" y="12.7"/>
+<instance part="Q1" gate="G$1" x="210.82" y="12.7"/>
 <instance part="R28" gate="G$1" x="195.58" y="22.86" rot="R90"/>
 <instance part="R29" gate="G$1" x="203.2" y="12.7"/>
 <instance part="R30" gate="G$1" x="213.36" y="22.86" rot="R90"/>
@@ -22286,13 +22286,13 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="T1" gate="G$1" pin="C"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$57" class="0">
 <segment>
-<pinref part="T1" gate="G$1" pin="B"/>
+<pinref part="Q1" gate="G$1" pin="B"/>
 <pinref part="R29" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -22301,7 +22301,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="228.6" y1="5.08" x2="213.36" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="5.08" x2="213.36" y2="7.62" width="0.1524" layer="91"/>
 <label x="215.9" y="5.08" size="1.778" layer="95"/>
-<pinref part="T1" gate="G$1" pin="E"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="LOAD_PULSE" class="0">
@@ -22434,9 +22434,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="E16" gate="D" x="172.72" y="243.84" rot="MR180"/>
 <instance part="E13" gate="A" x="172.72" y="226.06" rot="MR180"/>
 <instance part="E13" gate="D" x="177.8" y="124.46"/>
-<instance part="T2" gate="G$1" x="233.68" y="215.9" smashed="yes">
+<instance part="Q2" gate="G$1" x="233.68" y="215.9" smashed="yes">
 <attribute name="NAME" x="228.6" y="218.44" size="1.778" layer="95"/>
-<attribute name="VALUE" x="223.52" y="220.98" size="1.778" layer="96"/>
+<attribute name="VALUE" x="236.22" y="215.9" size="1.778" layer="96"/>
 </instance>
 <instance part="R39" gate="G$1" x="226.06" y="226.06" rot="R90"/>
 <instance part="V30" gate="G$1" x="226.06" y="233.68"/>
@@ -22726,7 +22726,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="V23" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="T2" gate="G$1" pin="E"/>
+<pinref part="Q2" gate="G$1" pin="E"/>
 <pinref part="V31" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -23183,7 +23183,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="220.98" y1="223.52" x2="218.44" y2="223.52" width="0.1524" layer="91"/>
 <junction x="226.06" y="215.9"/>
 <pinref part="R39" gate="G$1" pin="1"/>
-<pinref part="T2" gate="G$1" pin="B"/>
+<pinref part="Q2" gate="G$1" pin="B"/>
 <pinref part="E16" gate="B" pin="O"/>
 </segment>
 </net>
@@ -23195,7 +23195,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="236.22" y1="236.22" x2="241.3" y2="236.22" width="0.1524" layer="91"/>
 <junction x="236.22" y="223.52"/>
 <label x="238.76" y="223.52" size="1.778" layer="95"/>
-<pinref part="T2" gate="G$1" pin="C"/>
+<pinref part="Q2" gate="G$1" pin="C"/>
 <pinref part="E2" gate="D" pin="I0"/>
 </segment>
 <segment>

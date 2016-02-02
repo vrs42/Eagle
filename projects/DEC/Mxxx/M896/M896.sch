@@ -4671,6 +4671,15 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,101.6,12.7635,E1,A,I0,,,"/>
+<approved hash="114,1,101.6,12.7635,E1,A,I1,,,"/>
+<approved hash="114,1,101.6,12.7635,E1,B,I0,,,"/>
+<approved hash="114,1,101.6,12.7635,E1,B,I1,,,"/>
+<approved hash="114,1,101.6,12.7635,E1,C,I0,,,"/>
+<approved hash="114,1,101.6,12.7635,E1,C,I1,,,"/>
+<approved hash="113,1,46.609,93.98,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

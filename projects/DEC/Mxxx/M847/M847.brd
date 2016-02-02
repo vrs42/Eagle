@@ -2357,7 +2357,7 @@ design rules under a new name.</description>
 <element name="E22" library="dec-con" package="DIL14" value="N8881N" x="107.95" y="71.12" rot="R270"/>
 <element name="E20" library="dec-con" package="DIL14" value="SP380N" x="123.19" y="71.12" rot="R270"/>
 <element name="E15" library="74xx-us" package="DIL14" value="7402N" x="153.67" y="71.12" rot="R270"/>
-<element name="T1" library="transistor" package="TO92" value="" x="110.49" y="195.58" rot="R180"/>
+<element name="Q1" library="transistor" package="TO92" value="DEC3009" x="110.49" y="195.58" rot="R180"/>
 <element name="R28" library="rcl" package="0207/10" value="470" x="111.76" y="182.88" rot="R90"/>
 <element name="R29" library="rcl" package="0207/10" value="27" x="109.22" y="182.88" rot="R90"/>
 <element name="R30" library="rcl" package="0207/10" value="12" x="114.3" y="182.88" rot="R270"/>
@@ -2380,7 +2380,7 @@ design rules under a new name.</description>
 <element name="R38" library="rcl" package="0207/10" value="100" x="124.46" y="129.54" rot="R90"/>
 <element name="E16" library="74xx-us" package="DIL14" value="7402N" x="153.67" y="104.14" rot="R270"/>
 <element name="E13" library="74xx-us" package="DIL14" value="7400N" x="168.91" y="99.06" rot="R270"/>
-<element name="T2" library="transistor" package="TO92" value="" x="146.05" y="124.46"/>
+<element name="Q2" library="transistor" package="TO92" value="DEC3009" x="146.05" y="124.46"/>
 <element name="R39" library="rcl" package="0207/10" value="470" x="238.76" y="76.2" rot="R270"/>
 <element name="E2" library="dec-con" package="DIL14" value="SP380N" x="247.65" y="71.12" rot="R270"/>
 <element name="E5" library="74xx-us" package="DIL14" value="7400N" x="229.87" y="71.12" rot="R270"/>
@@ -4585,7 +4585,7 @@ design rules under a new name.</description>
 <contactref element="C7" pad="2"/>
 <contactref element="E16" pad="7"/>
 <contactref element="E13" pad="7"/>
-<contactref element="T2" pad="1"/>
+<contactref element="Q2" pad="1"/>
 <contactref element="E5" pad="7"/>
 <contactref element="E12" pad="7"/>
 <contactref element="E23" pad="7"/>
@@ -7753,7 +7753,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="PULSE_LA">
 <contactref element="U$2" pad="DR2"/>
-<contactref element="T1" pad="1"/>
+<contactref element="Q1" pad="1"/>
 <wire x1="103.505" y1="190.5" x2="108.585" y2="195.58" width="0.4064" layer="16"/>
 <wire x1="6.985" y1="190.5" x2="103.505" y2="190.5" width="0.4064" layer="16"/>
 <wire x1="1.27" y1="184.785" x2="6.985" y2="190.5" width="0.4064" layer="16"/>
@@ -8775,14 +8775,14 @@ design rules under a new name.</description>
 <via x="23.495" y="81.28" extent="1-16" drill="0.8128"/>
 </signal>
 <signal name="N$31">
-<contactref element="T1" pad="3"/>
+<contactref element="Q1" pad="3"/>
 <contactref element="R30" pad="1"/>
 <wire x1="114.3" y1="188.595" x2="111.76" y2="191.135" width="0.4064" layer="1"/>
 <wire x1="114.3" y1="187.96" x2="114.3" y2="188.595" width="0.4064" layer="1"/>
 <wire x1="111.76" y1="191.135" x2="111.76" y2="195.58" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$57">
-<contactref element="T1" pad="2"/>
+<contactref element="Q1" pad="2"/>
 <contactref element="R29" pad="2"/>
 <wire x1="109.22" y1="188.595" x2="110.49" y2="189.865" width="0.4064" layer="1"/>
 <wire x1="109.22" y1="187.96" x2="109.22" y2="188.595" width="0.4064" layer="1"/>
@@ -9062,7 +9062,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$133">
 <contactref element="R39" pad="1"/>
-<contactref element="T2" pad="2"/>
+<contactref element="Q2" pad="2"/>
 <contactref element="E16" pad="4"/>
 <wire x1="149.86" y1="104.775" x2="148.59" y2="106.045" width="0.4064" layer="1"/>
 <wire x1="148.59" y1="109.855" x2="148.59" y2="120.65" width="0.4064" layer="1"/>
@@ -9083,7 +9083,7 @@ design rules under a new name.</description>
 <via x="146.685" y="82.55" extent="1-16" drill="0.8128"/>
 </signal>
 <signal name="!POWER_OK">
-<contactref element="T2" pad="3"/>
+<contactref element="Q2" pad="3"/>
 <contactref element="U$2" pad="BV2"/>
 <contactref element="E2" pad="11"/>
 <contactref element="E27" pad="10"/>

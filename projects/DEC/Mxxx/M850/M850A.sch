@@ -8855,6 +8855,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+<approved hash="113,1,47.6504,93.98,SV2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

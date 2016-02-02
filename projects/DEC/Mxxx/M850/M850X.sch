@@ -9729,6 +9729,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+<approved hash="113,1,177.052,109.22,PL1,,,,,"/>
+<approved hash="113,1,233.638,74.7353,CTSRTS,,,,,"/>
+<approved hash="113,1,210.778,74.7353,TXRX,,,,,"/>
+<approved hash="113,1,233.638,54.4153,DTRDCR,,,,,"/>
+<approved hash="113,1,182.88,59.4953,PL2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
