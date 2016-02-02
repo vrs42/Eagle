@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -117,12 +117,6 @@
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="-15V">
-<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
-<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="SUPPLY">
@@ -142,19 +136,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="-15V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="-15V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5826,7 +5807,6 @@ DIN A3, landscape with extra doc field</description>
 <parts>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
-<part name="V27" library="supply2" deviceset="-15V" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="C3" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
@@ -5858,7 +5838,6 @@ DIN A3, landscape with extra doc field</description>
 <instances>
 <instance part="V2" gate="GND" x="116.84" y="167.64"/>
 <instance part="V1" gate="G$1" x="116.84" y="182.88"/>
-<instance part="V27" gate="G$1" x="121.92" y="172.72"/>
 <instance part="C1" gate="G$1" x="139.7" y="124.46"/>
 <instance part="C2" gate="G$1" x="149.86" y="124.46"/>
 <instance part="C3" gate="G$1" x="160.02" y="124.46"/>
@@ -5896,7 +5875,6 @@ DIN A3, landscape with extra doc field</description>
 <instance part="U$2" gate="C2" x="106.68" y="170.18" rot="MR180"/>
 <instance part="U$2" gate="U2" x="106.68" y="99.06" rot="MR180"/>
 <instance part="U$2" gate="V2" x="106.68" y="93.98" rot="MR180"/>
-<instance part="U$2" gate="B2" x="106.68" y="175.26" rot="MR180"/>
 <instance part="U$2" gate="A2" x="106.68" y="180.34" rot="MR180"/>
 <instance part="U$2" gate="K1" x="91.44" y="139.7" rot="MR180"/>
 <instance part="U$2" gate="L1" x="91.44" y="134.62" rot="MR180"/>
@@ -5951,13 +5929,6 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="V5" gate="GND" pin="GND"/>
-</segment>
-</net>
-<net name="-15V" class="0">
-<segment>
-<wire x1="109.22" y1="175.26" x2="121.92" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="V27" gate="G$1" pin="-15V"/>
-<pinref part="U$2" gate="B2" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -6349,13 +6320,15 @@ DIN A3, landscape with extra doc field</description>
 <net name="U1" class="0">
 <segment>
 <wire x1="81.28" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="116.84" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
-<junction x="195.58" y="116.84"/>
 <label x="81.28" y="99.06" size="1.778" layer="95"/>
+<pinref part="U$2" gate="U1" pin="1"/>
+</segment>
+<segment>
+<wire x1="195.58" y1="116.84" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
 <label x="200.66" y="116.84" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U$2" gate="U1" pin="1"/>
+<junction x="195.58" y="116.84"/>
 </segment>
 </net>
 <net name="V1" class="0">
@@ -6375,6 +6348,10 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,107.569,134.62,U$2,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

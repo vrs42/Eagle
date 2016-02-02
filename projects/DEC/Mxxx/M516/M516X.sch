@@ -6837,6 +6837,10 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,44.069,91.44,U$2,,,,,"/>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

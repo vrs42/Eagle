@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14882,6 +14882,10 @@ DIN A3, landscape with extra doc field</description>
 </net>
 <net name="N$18" class="0">
 <segment>
+<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="193.04" x2="238.76" y2="200.66" width="0.1524" layer="91"/>
+<junction x="238.76" y="193.04"/>
 <wire x1="208.28" y1="208.28" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="200.66" x2="228.6" y2="200.66" width="0.1524" layer="91"/>
@@ -14889,10 +14893,8 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="Q7" gate="G$1" pin="B"/>
 <pinref part="Q9" gate="G$1" pin="C"/>
-</segment>
-<segment>
-<pinref part="D7" gate="G$1" pin="A"/>
-<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="200.66" x2="228.6" y2="200.66" width="0.1524" layer="91"/>
+<junction x="228.6" y="200.66"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -15128,12 +15130,14 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="D10" gate="G$1" pin="C"/>
 <pinref part="Q8" gate="G$1" pin="C"/>
-</segment>
-<segment>
 <wire x1="205.74" y1="147.32" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="142.24" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="Q6" gate="G$1" pin="B"/>
 <pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="152.4" x2="208.28" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="152.4" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
+<junction x="294.64" y="152.4"/>
+<junction x="208.28" y="147.32"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -15212,6 +15216,9 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

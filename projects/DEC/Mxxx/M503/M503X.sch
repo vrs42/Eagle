@@ -7548,19 +7548,13 @@ high speed (Philips)</description>
 <net name="+2.1V" class="0">
 <segment>
 <wire x1="248.92" y1="45.72" x2="248.92" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="55.88" x2="347.98" y2="71.12" width="0.1524" layer="91"/>
 <label x="248.92" y="45.72" size="1.778" layer="95" rot="R90"/>
-<label x="347.98" y="55.88" size="1.778" layer="95" rot="R90"/>
 <pinref part="D13" gate="G$1" pin="C"/>
-<pinref part="D14" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="48.26" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="58.42" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
 <label x="63.5" y="48.26" size="1.778" layer="95" rot="R90"/>
-<label x="162.56" y="58.42" size="1.778" layer="95" rot="R90"/>
 <pinref part="D11" gate="G$1" pin="C"/>
-<pinref part="D12" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="83.82" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
@@ -7574,6 +7568,16 @@ high speed (Philips)</description>
 <pinref part="R47" gate="G$1" pin="1"/>
 <pinref part="D15" gate="G$1" pin="A"/>
 <pinref part="C13" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="347.98" y1="55.88" x2="347.98" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="D14" gate="G$1" pin="C"/>
+<label x="347.98" y="55.88" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="162.56" y1="58.42" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="D12" gate="G$1" pin="C"/>
+<label x="162.56" y="58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -8361,6 +8365,14 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,266.7,220.98,E3PWR,-15V,V-,,,"/>
+<approved hash="104,1,266.7,241.3,E3PWR,+10V,V+,,,"/>
+<approved hash="104,1,279.4,220.98,E4PWR,-15V,V-,,,"/>
+<approved hash="104,1,279.4,241.3,E4PWR,+10V,V+,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,130.429,172.72,U$2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

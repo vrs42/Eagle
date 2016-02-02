@@ -5841,7 +5841,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <parts>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
-<part name="V27" library="supply2" deviceset="-15V" device=""/>
 <part name="E1" library="74xx-us" deviceset="74*02" device="N"/>
 <part name="E2" library="74xx-us" deviceset="74*02" device="N"/>
 <part name="E3" library="74xx-us" deviceset="74*02" device="N"/>
@@ -5934,6 +5933,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V31" library="supply2" deviceset="-15V" device=""/>
 <part name="U$1" library="dec-con" deviceset="SINGLE" device=""/>
 <part name="U$2" library="dec-con" deviceset="OUTLINE-*" device="SINGLE"/>
+<part name="V27" library="supply2" deviceset="-15V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5942,7 +5942,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instances>
 <instance part="V2" gate="GND" x="111.76" y="35.56"/>
 <instance part="V1" gate="G$1" x="111.76" y="50.8"/>
-<instance part="V27" gate="G$1" x="116.84" y="40.64"/>
 <instance part="E1" gate="A" x="165.1" y="91.44" rot="R270"/>
 <instance part="E1" gate="B" x="218.44" y="91.44" rot="R270"/>
 <instance part="E1" gate="C" x="195.58" y="88.9"/>
@@ -6067,7 +6066,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="U$1" gate="C2" x="101.6" y="38.1" rot="MR180"/>
 <instance part="U$1" gate="U2" x="101.6" y="-33.02" rot="MR180"/>
 <instance part="U$1" gate="V2" x="101.6" y="-38.1" rot="MR180"/>
-<instance part="U$1" gate="B2" x="101.6" y="43.18" rot="MR180"/>
 <instance part="U$1" gate="A2" x="101.6" y="48.26" rot="MR180"/>
 <instance part="U$1" gate="K1" x="86.36" y="7.62" rot="MR180"/>
 <instance part="U$1" gate="L1" x="86.36" y="2.54" rot="MR180"/>
@@ -6088,13 +6086,19 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="U$1" gate="B1" x="86.36" y="43.18" rot="MR180"/>
 <instance part="U$1" gate="A1" x="86.36" y="48.26" rot="MR180"/>
 <instance part="U$2" gate="G$1" x="83.82" y="63.5"/>
+<instance part="U$1" gate="B2" x="101.6" y="43.18"/>
+<instance part="V27" gate="G$1" x="116.84" y="40.64"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
+<pinref part="U$1" gate="C2" pin="1"/>
+<pinref part="V2" gate="GND" pin="GND"/>
 <wire x1="104.14" y1="38.1" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <wire x1="76.2" y1="-33.02" x2="83.82" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-27.94" x2="83.82" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-38.1" x2="83.82" y2="-38.1" width="0.1524" layer="91"/>
@@ -6102,9 +6106,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="76.2" y1="-33.02" x2="76.2" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="76.2" y="-33.02"/>
 <junction x="76.2" y="-38.1"/>
-<pinref part="V2" gate="GND" pin="GND"/>
 <pinref part="V3" gate="GND" pin="GND"/>
-<pinref part="U$1" gate="C2" pin="1"/>
 <pinref part="U$1" gate="T1" pin="1"/>
 <pinref part="U$1" gate="U1" pin="1"/>
 <pinref part="U$1" gate="V1" pin="1"/>
@@ -6183,11 +6185,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="-15V" class="0">
 <segment>
-<wire x1="104.14" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="V27" gate="G$1" pin="-15V"/>
-<pinref part="U$1" gate="B2" pin="1"/>
-</segment>
-<segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="V16" gate="G$1" pin="-15V"/>
 </segment>
@@ -6238,6 +6235,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="C20" gate="G$1" pin="2"/>
 <pinref part="V31" gate="G$1" pin="-15V"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="B2" pin="1"/>
+<pinref part="V27" gate="G$1" pin="-15V"/>
+<wire x1="104.14" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -7071,6 +7073,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,102.489,2.54,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

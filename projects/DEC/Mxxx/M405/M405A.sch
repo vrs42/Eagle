@@ -17748,6 +17748,12 @@ Source: 008-0260-0_E.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,87.4598,130.81,C2,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,93.2943,140.441,CR1,,,,,"/>
+<approved hash="113,1,77.8595,132.08,L1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -18008,6 +18008,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="Q10" gate="G$1" pin="E"/>
 </segment>
 <segment>
+<pinref part="Q3" gate="G$1" pin="E"/>
+<wire x1="63.5" y1="276.86" x2="63.5" y2="284.48" width="0.1524" layer="91"/>
+<label x="63.5" y="276.86" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
 <wire x1="353.06" y1="317.5" x2="368.3" y2="317.5" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="317.5" x2="368.3" y2="322.58" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="353.06" x2="368.3" y2="353.06" width="0.1524" layer="91"/>
@@ -18019,16 +18024,12 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="370.84" y1="335.28" x2="368.3" y2="335.28" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="317.5" x2="370.84" y2="317.5" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="317.5" x2="370.84" y2="335.28" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="350.52" x2="60.96" y2="358.14" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="276.86" x2="63.5" y2="284.48" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="307.34" x2="370.84" y2="317.5" width="0.1524" layer="91"/>
 <junction x="368.3" y="353.06"/>
 <junction x="368.3" y="335.28"/>
 <junction x="368.3" y="317.5"/>
 <junction x="370.84" y="335.28"/>
 <junction x="370.84" y="317.5"/>
-<label x="60.96" y="350.52" size="1.778" layer="95" rot="R90"/>
-<label x="63.5" y="276.86" size="1.778" layer="95" rot="R90"/>
 <label x="370.84" y="307.34" size="1.778" layer="95" rot="R90"/>
 <pinref part="C19" gate="G$1" pin="2"/>
 <pinref part="Q22" gate="G$1" pin="E"/>
@@ -18036,8 +18037,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="Q16" gate="G$1" pin="E"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="Q19" gate="G$1" pin="E"/>
-<pinref part="Q2" gate="G$1" pin="E"/>
-<pinref part="Q3" gate="G$1" pin="E"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="180.34" x2="63.5" y2="187.96" width="0.1524" layer="91"/>
@@ -18048,6 +18047,11 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="254" y1="38.1" x2="254" y2="45.72" width="0.1524" layer="91"/>
 <label x="254" y="38.1" size="1.778" layer="95" rot="R90"/>
 <pinref part="Q28" gate="G$1" pin="E"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="E"/>
+<wire x1="60.96" y1="350.52" x2="60.96" y2="358.14" width="0.1524" layer="91"/>
+<label x="60.96" y="350.52" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="-3.3V" class="1">
@@ -18925,6 +18929,10 @@ Source: www.vishay.com .. rwm.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,161.671,127,U$1,,,,,"/>
+<approved hash="113,1,507.771,17.5514,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -6933,6 +6933,10 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,206.629,137.16,U$4,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

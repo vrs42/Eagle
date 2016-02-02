@@ -118,12 +118,6 @@
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="-15V">
-<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
-<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="SUPPLY">
@@ -143,19 +137,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="-15V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="-15V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7513,7 +7494,6 @@ DIN A3, landscape with extra doc field</description>
 <parts>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
-<part name="V27" library="supply2" deviceset="-15V" device=""/>
 <part name="E1" library="74xx-us" deviceset="74*02" device="N"/>
 <part name="E2" library="74xx-us" deviceset="74*02" device="N"/>
 <part name="E3" library="74xx-us" deviceset="74*02" device="N"/>
@@ -7586,7 +7566,6 @@ DIN A3, landscape with extra doc field</description>
 <instances>
 <instance part="V2" gate="GND" x="68.58" y="205.74"/>
 <instance part="V1" gate="G$1" x="68.58" y="220.98"/>
-<instance part="V27" gate="G$1" x="73.66" y="210.82"/>
 <instance part="E1" gate="A" x="132.08" y="149.86" rot="R270"/>
 <instance part="E1" gate="B" x="88.9" y="149.86" rot="R270"/>
 <instance part="E1" gate="C" x="132.08" y="205.74" rot="R270"/>
@@ -7660,7 +7639,6 @@ DIN A3, landscape with extra doc field</description>
 <instance part="U$4" gate="C2" x="58.42" y="208.28" rot="MR180"/>
 <instance part="U$4" gate="U2" x="58.42" y="137.16" rot="MR180"/>
 <instance part="U$4" gate="V2" x="58.42" y="132.08" rot="MR180"/>
-<instance part="U$4" gate="B2" x="58.42" y="213.36" rot="MR180"/>
 <instance part="U$4" gate="A2" x="58.42" y="218.44" rot="MR180"/>
 <instance part="U$4" gate="K1" x="43.18" y="177.8" rot="MR180"/>
 <instance part="U$4" gate="L1" x="43.18" y="172.72" rot="MR180"/>
@@ -7699,7 +7677,11 @@ DIN A3, landscape with extra doc field</description>
 <nets>
 <net name="GND" class="1">
 <segment>
+<pinref part="U$4" gate="C2" pin="1"/>
+<pinref part="V2" gate="GND" pin="GND"/>
 <wire x1="60.96" y1="208.28" x2="68.58" y2="208.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <wire x1="33.02" y1="137.16" x2="40.64" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="142.24" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="132.08" x2="40.64" y2="132.08" width="0.1524" layer="91"/>
@@ -7707,9 +7689,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="33.02" y1="137.16" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 <junction x="33.02" y="137.16"/>
 <junction x="33.02" y="132.08"/>
-<pinref part="V2" gate="GND" pin="GND"/>
 <pinref part="V3" gate="GND" pin="GND"/>
-<pinref part="U$4" gate="C2" pin="1"/>
 <pinref part="U$4" gate="T1" pin="1"/>
 <pinref part="U$4" gate="U1" pin="1"/>
 <pinref part="U$4" gate="V1" pin="1"/>
@@ -7811,13 +7791,6 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="V5" gate="GND" pin="GND"/>
-</segment>
-</net>
-<net name="-15V" class="0">
-<segment>
-<wire x1="60.96" y1="213.36" x2="73.66" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="V27" gate="G$1" pin="-15V"/>
-<pinref part="U$4" gate="B2" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -8455,6 +8428,10 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,59.309,172.72,U$4,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

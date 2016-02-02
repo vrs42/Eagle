@@ -7535,6 +7535,15 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,264.16,309.817,E13,B,I0,,,"/>
+<approved hash="114,1,264.16,309.817,E13,B,I1,,,"/>
+<approved hash="113,1,323.469,223.52,U$1,,,,,"/>
+<approved hash="113,1,507.771,17.5514,FRAME1,,,,,"/>
+<approved hash="113,1,61.2394,179.167,AK2,,,,,"/>
+<approved hash="113,1,61.2394,171.547,BH2,,,,,"/>
+<approved hash="113,1,61.2394,163.927,AS2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

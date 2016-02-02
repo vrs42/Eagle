@@ -3744,6 +3744,10 @@ DIN A4, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,26.289,147.32,U$2,,,,,"/>
+<approved hash="113,1,131.976,92.606,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
