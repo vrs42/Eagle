@@ -12914,6 +12914,9 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,174.371,81.28,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -28030,7 +28030,7 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <class number="1" name="Supply" width="0.8128" drill="0">
 </class>
 </classes>
-<designrules name="16mils *">
+<designrules name="16mils">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12706,8 +12706,8 @@ Based on the following sources:
 <part name="IC2" library="74xx-us" deviceset="74*02" device="N" value="74HCT02N"/>
 <part name="IC3" library="linear-technology" deviceset="LT1016" device="CN" value="TL3116"/>
 <part name="V6" library="supply2" deviceset="VCC" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="750"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="V8" library="supply2" deviceset="VCC" device=""/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
 <part name="IC4" library="linear-technology" deviceset="LT1016" device="CN" value="TL3116"/>
@@ -13536,6 +13536,25 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,182.88,119.38,IC3,V+,VCC,,,"/>
+<approved hash="104,1,182.88,104.14,IC3,V-,GND,,,"/>
+<approved hash="104,1,182.88,101.6,IC4,V+,VCC,,,"/>
+<approved hash="104,1,182.88,86.36,IC4,V-,GND,,,"/>
+<approved hash="104,1,182.88,83.82,IC5,V+,VCC,,,"/>
+<approved hash="104,1,182.88,68.58,IC5,V-,GND,,,"/>
+<approved hash="104,1,182.88,66.04,IC6,V+,VCC,,,"/>
+<approved hash="104,1,182.88,50.8,IC6,V-,GND,,,"/>
+<approved hash="104,1,182.88,48.26,IC7,V+,VCC,,,"/>
+<approved hash="104,1,182.88,33.02,IC7,V-,GND,,,"/>
+<approved hash="104,1,182.88,30.48,IC8,V+,VCC,,,"/>
+<approved hash="104,1,182.88,15.24,IC8,V-,GND,,,"/>
+<approved hash="104,1,182.88,12.7,IC9,V+,VCC,,,"/>
+<approved hash="104,1,182.88,-2.54,IC9,V-,GND,,,"/>
+<approved hash="104,1,182.88,-5.08,IC10,V+,VCC,,,"/>
+<approved hash="104,1,182.88,-20.32,IC10,V-,GND,,,"/>
+<approved hash="113,1,245.491,58.42,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

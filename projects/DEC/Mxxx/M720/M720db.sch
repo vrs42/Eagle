@@ -12205,7 +12205,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="supply" width="0.762" drill="0">
+<class number="1" name="supply" width="0.8128" drill="0">
 <clearance class="1" value="0.508"/>
 </class>
 </classes>
@@ -12648,6 +12648,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,38.1,126.937,E1,D,I0,,,"/>
+<approved hash="114,1,38.1,126.937,E1,D,I1,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

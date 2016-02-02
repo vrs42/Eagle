@@ -6913,6 +6913,16 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,160.02,137.224,E4,D,I0,,,"/>
+<approved hash="114,1,160.02,137.224,E4,D,I1,,,"/>
+<approved hash="114,1,43.18,172.656,E5,A,I0,,,"/>
+<approved hash="114,1,43.18,172.656,E5,A,I1,,,"/>
+<approved hash="114,1,43.18,172.656,E5,B,I0,,,"/>
+<approved hash="114,1,43.18,172.656,E5,B,I1,,,"/>
+<approved hash="113,1,16.129,175.26,U$1,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

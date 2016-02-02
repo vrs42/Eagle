@@ -13882,6 +13882,15 @@ drill 1.4 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="206,1,307.34,124.46,N$24,,,,,"/>
+<approved hash="206,1,330.2,132.08,N$24,,,,,"/>
+<approved hash="206,1,127,200.66,N$26,,,,,"/>
+<approved hash="206,1,149.86,210.82,N$26,,,,,"/>
+<approved hash="113,1,100.711,63.5,U$2,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,171.154,78.74,S1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

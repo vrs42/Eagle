@@ -8308,6 +8308,23 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,330.2,205.677,E2,B,CLR,,,"/>
+<approved hash="114,1,330.2,205.677,E2,B,D,,,"/>
+<approved hash="114,1,330.2,205.677,E2,B,CLK,,,"/>
+<approved hash="114,1,330.2,205.677,E2,B,PRE,,,"/>
+<approved hash="114,1,330.2,243.776,E6,A,I0,,,"/>
+<approved hash="114,1,330.2,243.776,E6,A,I1,,,"/>
+<approved hash="114,1,330.2,243.776,E6,A,I2,,,"/>
+<approved hash="202,1,378.46,223.52,E10A,CLR,,,,"/>
+<approved hash="202,1,378.46,195.58,E10B,CLR,,,,"/>
+<approved hash="114,1,50.8,218.377,E13,A,I0,,,"/>
+<approved hash="114,1,50.8,218.377,E13,A,I1,,,"/>
+<approved hash="114,1,50.8,218.377,E13,A,I2,,,"/>
+<approved hash="114,1,50.8,218.377,E13,A,I3,,,"/>
+<approved hash="113,1,165.989,299.72,U$1,,,,,"/>
+<approved hash="113,1,507.771,17.5514,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
