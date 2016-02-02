@@ -7303,6 +7303,14 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,132.08,98.9965,IC1,F,I,,,"/>
+<approved hash="113,1,46.609,63.5,U$2,,,,,"/>
+<approved hash="113,1,180.34,73.4653,SV1,,,,,"/>
+<approved hash="113,1,180.34,37.9053,SV3,,,,,"/>
+<approved hash="113,1,81.28,71.3147,SV2,,,,,"/>
+<approved hash="113,1,81.28,18.8553,SV5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

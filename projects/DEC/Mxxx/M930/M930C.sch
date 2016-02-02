@@ -13437,6 +13437,9 @@ Source: www.vishay.com/docs/31508/somc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,91.44,70.231,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

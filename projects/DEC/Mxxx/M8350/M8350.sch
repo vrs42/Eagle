@@ -14535,14 +14535,16 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="U$33" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
+<pinref part="U$34" gate="G$1" pin="+3V3"/>
 <wire x1="497.84" y1="157.48" x2="497.84" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="E3" gate="A" pin="CLR"/>
+</segment>
+<segment>
 <wire x1="546.1" y1="157.48" x2="543.56" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="543.56" y1="157.48" x2="543.56" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="546.1" y1="147.32" x2="543.56" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="543.56" y1="147.32" x2="543.56" y2="157.48" width="0.1524" layer="91"/>
 <junction x="543.56" y="157.48"/>
-<pinref part="E3" gate="A" pin="CLR"/>
-<pinref part="U$34" gate="G$1" pin="+3V3"/>
 <pinref part="U$35" gate="G$1" pin="+3V3"/>
 <pinref part="E4" gate="B" pin="CLR"/>
 <pinref part="E4" gate="B" pin="B"/>
@@ -15951,21 +15953,19 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="D37" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<wire x1="487.68" y1="30.48" x2="500.38" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="487.68" y1="25.4" x2="500.38" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="487.68" y1="5.08" x2="500.38" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="624.84" y1="25.4" x2="637.54" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="624.84" y1="5.08" x2="637.54" y2="5.08" width="0.1524" layer="91"/>
-<label x="495.3" y="30.48" size="1.778" layer="95"/>
-<label x="495.3" y="25.4" size="1.778" layer="95"/>
-<label x="495.3" y="5.08" size="1.778" layer="95"/>
-<label x="632.46" y="5.08" size="1.778" layer="95"/>
-<label x="632.46" y="25.4" size="1.778" layer="95"/>
-<pinref part="D41" gate="G$1" pin="C"/>
-<pinref part="D40" gate="G$1" pin="C"/>
 <pinref part="D42" gate="G$1" pin="C"/>
-<pinref part="D43" gate="G$1" pin="C"/>
-<pinref part="D38" gate="G$1" pin="C"/>
+<label x="632.46" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="487.68" y1="25.4" x2="500.38" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="D41" gate="G$1" pin="C"/>
+<label x="495.3" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="487.68" y1="5.08" x2="500.38" y2="5.08" width="0.1524" layer="91"/>
+<label x="495.3" y="5.08" size="1.778" layer="95"/>
+<pinref part="D40" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="637.54" y1="119.38" x2="650.24" y2="119.38" width="0.1524" layer="91"/>
@@ -15973,21 +15973,19 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="D31" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<wire x1="637.54" y1="99.06" x2="650.24" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="637.54" y1="93.98" x2="650.24" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="637.54" y1="73.66" x2="650.24" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="637.54" y1="68.58" x2="650.24" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="637.54" y1="48.26" x2="650.24" y2="48.26" width="0.1524" layer="91"/>
-<label x="645.16" y="99.06" size="1.778" layer="95"/>
-<label x="645.16" y="93.98" size="1.778" layer="95"/>
-<label x="645.16" y="73.66" size="1.778" layer="95"/>
-<label x="645.16" y="68.58" size="1.778" layer="95"/>
-<label x="645.16" y="48.26" size="1.778" layer="95"/>
-<pinref part="D36" gate="G$1" pin="C"/>
-<pinref part="D35" gate="G$1" pin="C"/>
-<pinref part="D34" gate="G$1" pin="C"/>
 <pinref part="D33" gate="G$1" pin="C"/>
+<label x="645.16" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="637.54" y1="48.26" x2="650.24" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="D32" gate="G$1" pin="C"/>
+<label x="645.16" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="637.54" y1="99.06" x2="650.24" y2="99.06" width="0.1524" layer="91"/>
+<label x="645.16" y="99.06" size="1.778" layer="95"/>
+<pinref part="D36" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="795.02" y1="106.68" x2="795.02" y2="109.22" width="0.1524" layer="91"/>
@@ -15997,6 +15995,26 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="800.1" y="109.22" size="1.778" layer="95"/>
 <pinref part="D53" gate="G$1" pin="A"/>
 <pinref part="R76" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="487.68" y1="30.48" x2="500.38" y2="30.48" width="0.1524" layer="91"/>
+<label x="495.3" y="30.48" size="1.778" layer="95"/>
+<pinref part="D38" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<wire x1="624.84" y1="25.4" x2="637.54" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="D43" gate="G$1" pin="C"/>
+<label x="632.46" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="637.54" y1="93.98" x2="650.24" y2="93.98" width="0.1524" layer="91"/>
+<label x="645.16" y="93.98" size="1.778" layer="95"/>
+<pinref part="D35" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<wire x1="637.54" y1="73.66" x2="650.24" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="D34" gate="G$1" pin="C"/>
+<label x="645.16" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -17191,6 +17209,39 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,12.4773,132.08,E23,E,CLAMP,,,"/>
+<approved hash="114,1,718.82,68.5165,E10,C,I0,,,"/>
+<approved hash="114,1,718.82,68.5165,E10,C,I1,,,"/>
+<approved hash="114,1,566.42,20.3835,E30,A,I0,,,"/>
+<approved hash="114,1,566.42,20.3835,E30,A,I1,,,"/>
+<approved hash="114,1,436.88,246.317,E1,A,I0,,,"/>
+<approved hash="114,1,436.88,246.317,E1,A,I1,,,"/>
+<approved hash="114,1,436.88,246.317,E1,D,I0,,,"/>
+<approved hash="114,1,436.88,246.317,E1,D,I1,,,"/>
+<approved hash="114,1,474.917,203.2,E5,A,I0,,,"/>
+<approved hash="114,1,474.917,203.2,E5,A,I1,,,"/>
+<approved hash="114,1,474.917,203.2,E5,A,I2,,,"/>
+<approved hash="114,1,474.917,203.2,E5,C,I0,,,"/>
+<approved hash="114,1,474.917,203.2,E5,C,I1,,,"/>
+<approved hash="114,1,474.917,203.2,E5,C,I2,,,"/>
+<approved hash="114,1,589.28,129.477,E8,C,I0,,,"/>
+<approved hash="114,1,589.28,129.477,E8,C,I1,,,"/>
+<approved hash="114,1,589.28,129.477,E8,C,I2,,,"/>
+<approved hash="114,1,449.58,132.017,E15,A,I0,,,"/>
+<approved hash="114,1,449.58,132.017,E15,A,I1,,,"/>
+<approved hash="114,1,449.58,132.017,E15,B,I0,,,"/>
+<approved hash="114,1,449.58,132.017,E15,B,I1,,,"/>
+<approved hash="114,1,373.38,104.204,E29,C,I0,,,"/>
+<approved hash="114,1,373.38,104.204,E29,C,I1,,,"/>
+<approved hash="206,1,762,205.74,AC_TO_DATA,,,,,"/>
+<approved hash="206,1,762,226.06,AC_TO_DATA,,,,,"/>
+<approved hash="206,1,734.06,218.44,N$123,,,,,"/>
+<approved hash="206,1,734.06,228.6,N$123,,,,,"/>
+<approved hash="113,1,388.62,85.471,U$2,,,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,1,609.448,133.198,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

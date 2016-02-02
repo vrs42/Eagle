@@ -453,7 +453,7 @@ Sheet=1
 
 [Win_2]
 Type="Board Editor"
-Loc="-6 0 1117 623"
+Loc="0 0 1123 623"
 State=1
 Number=2
 File="M7102.brd"

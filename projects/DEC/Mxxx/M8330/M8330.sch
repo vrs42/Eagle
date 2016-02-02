@@ -17833,6 +17833,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,44.069,66.04,U$2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

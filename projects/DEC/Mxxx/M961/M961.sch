@@ -7884,6 +7884,13 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,177.8,101.537,IC1,F,I,,,"/>
+<approved hash="113,1,46.609,63.5,EDGE$1,,,,,"/>
+<approved hash="113,1,124.46,89.0947,SV1,,,,,"/>
+<approved hash="113,1,124.46,42.9853,SV3,,,,,"/>
+<approved hash="113,1,124.46,16.3153,SV4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

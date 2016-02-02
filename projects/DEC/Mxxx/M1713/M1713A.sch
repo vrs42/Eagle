@@ -10034,7 +10034,7 @@ LETTER landscape</description>
 <part name="C3" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 <part name="E1" library="74xx-us" deviceset="74*150" device="N"/>
-<part name="C1" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
+<part name="C1" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -10266,6 +10266,10 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,51.689,121.92,U$2,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

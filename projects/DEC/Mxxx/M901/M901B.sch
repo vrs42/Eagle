@@ -3360,10 +3360,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="U$2" library="dec-con" deviceset="OUTLINE-*" device="SINGLE"/>
 <part name="BFLEX" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="TFLEX" library="dec-con" deviceset="FLEX19" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="10"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="10"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="10"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="10"/>
 </parts>
 <sheets>
 <sheet>
@@ -3449,10 +3449,22 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="TFLEX" gate="17" x="73.66" y="76.2" rot="MR0"/>
 <instance part="TFLEX" gate="18" x="73.66" y="71.12" rot="MR0"/>
 <instance part="TFLEX" gate="19" x="73.66" y="66.04" rot="MR0"/>
-<instance part="R1" gate="G$1" x="83.82" y="147.32"/>
-<instance part="R2" gate="G$1" x="83.82" y="152.4"/>
-<instance part="R3" gate="G$1" x="119.38" y="66.04"/>
-<instance part="R4" gate="G$1" x="119.38" y="71.12"/>
+<instance part="R1" gate="G$1" x="83.82" y="147.32" smashed="yes">
+<attribute name="NAME" x="80.01" y="148.8186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="85.09" y="149.098" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="83.82" y="152.4" smashed="yes">
+<attribute name="NAME" x="80.01" y="153.8986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="85.09" y="154.178" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="119.38" y="66.04" smashed="yes">
+<attribute name="NAME" x="115.57" y="67.5386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.65" y="67.818" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="119.38" y="71.12" smashed="yes">
+<attribute name="NAME" x="115.57" y="72.6186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.65" y="72.898" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3740,6 +3752,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,110.109,111.76,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

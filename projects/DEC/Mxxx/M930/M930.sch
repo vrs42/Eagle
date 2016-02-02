@@ -13465,6 +13465,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,110.109,60.96,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

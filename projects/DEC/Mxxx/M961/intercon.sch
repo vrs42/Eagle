@@ -1479,6 +1479,11 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,60.96,40.4453,SV3,,,,,"/>
+<approved hash="113,1,60.96,13.7753,SV4,,,,,"/>
+<approved hash="113,1,22.86,30.6747,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
