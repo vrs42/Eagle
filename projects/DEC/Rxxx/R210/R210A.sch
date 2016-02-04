@@ -6196,37 +6196,37 @@ Source: AVX .. aphvc.pdf</description>
 <part name="D100" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="V3" library="supply2" deviceset="-15V" device=""/>
 <part name="R56" library="rcl" deviceset="R-US_" device="0207/10" value="1500"/>
-<part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="C17" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="V32" library="supply2" deviceset="+10V" device=""/>
 <part name="V33" library="supply2" deviceset="GND" device=""/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V31" library="supply2" deviceset="-15V" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="Q2" library="transistor-pnp" deviceset="2N3637*" device="" value="2N3639"/>
 <part name="Q1" library="transistor-pnp" deviceset="2N3637*" device="" value="2N3639"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D11" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D11" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R8" library="rcl" deviceset="R-US_" device="0207/10" value="7.5K"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0207/10" value="12K"/>
 <part name="V5" library="supply2" deviceset="-15V" device=""/>
 <part name="V6" library="supply2" deviceset="-15V" device=""/>
 <part name="V11" library="supply2" deviceset="-15V" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R11" library="rcl" deviceset="R-US_" device="0207/10" value="3K 1/4W"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="100K"/>
-<part name="D55" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D55" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V22" library="supply2" deviceset="GND" device=""/>
 <part name="D34" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="R16" library="rcl" deviceset="R-US_" device="0207/10" value="100K"/>
@@ -6237,13 +6237,13 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V14" library="supply2" deviceset="GND" device=""/>
 <part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="100K"/>
 <part name="V17" library="supply2" deviceset="-15V" device=""/>
-<part name="D48" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D48" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R19" library="rcl" deviceset="R-US_" device="0207/10" value="10K"/>
-<part name="D41" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D43" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D60" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D42" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D40" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D41" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D43" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D60" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D42" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D40" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="U$3" library="dec-con" deviceset="OUTLINE-*" device="DOUBLE"/>
 <part name="FRAME3" library="frames" deviceset="TABL_L" device=""/>
 <part name="U$1" library="dec-con" deviceset="DOUBLE" device=""/>
@@ -6260,157 +6260,157 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V16" library="supply2" deviceset="GND" device=""/>
 <part name="Q8" library="transistor-pnp" deviceset="2N3637*" device="" value="2N3639"/>
 <part name="Q6" library="transistor-pnp" deviceset="2N3637*" device="" value="2N3639"/>
-<part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D14" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D13" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D14" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D13" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D16" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D16" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V18" library="supply2" deviceset="-15V" device=""/>
-<part name="D17" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D17" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V20" library="supply2" deviceset="-15V" device=""/>
 <part name="C3" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D22" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D21" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D20" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D25" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D22" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D21" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D20" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D25" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V23" library="supply2" deviceset="-15V" device=""/>
-<part name="D26" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D26" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V24" library="supply2" deviceset="-15V" device=""/>
 <part name="C4" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D29" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D29" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R34" library="rcl" deviceset="R-US_" device="0207/10" value="3K 1/4W"/>
-<part name="D28" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D28" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R35" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D30" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D30" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V25" library="supply2" deviceset="-15V" device=""/>
-<part name="D31" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D31" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V26" library="supply2" deviceset="-15V" device=""/>
 <part name="C5" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D36" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D35" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D38" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D36" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D35" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D38" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V27" library="supply2" deviceset="-15V" device=""/>
-<part name="D39" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D39" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V28" library="supply2" deviceset="-15V" device=""/>
 <part name="C6" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D45" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D44" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D50" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D45" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D44" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D50" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V29" library="supply2" deviceset="-15V" device=""/>
-<part name="D51" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D51" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V30" library="supply2" deviceset="-15V" device=""/>
 <part name="C7" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="D23" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="D24" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
-<part name="D18" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D19" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D27" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D32" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D18" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D19" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D27" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D32" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R14" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R17" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R18" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
-<part name="D37" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D49" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D52" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D37" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D49" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D52" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V2" library="supply2" deviceset="-15V" device=""/>
 <part name="D56" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="D57" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="C10" library="rcl" deviceset="C-US" device="075-032X103" value="18pF"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="V4" library="supply2" deviceset="-15V" device=""/>
-<part name="D59" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D64" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D59" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D64" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R36" library="rcl" deviceset="R-US_" device="0207/10" value="100K"/>
 <part name="V7" library="supply2" deviceset="+10V" device=""/>
 <part name="D69" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="D68" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
-<part name="D65" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D71" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D65" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D71" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V8" library="supply2" deviceset="-15V" device=""/>
 <part name="C13" library="rcl" deviceset="C-US" device="075-032X103" value="18pF"/>
-<part name="D75" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D78" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D75" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D78" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R41" library="rcl" deviceset="R-US_" device="0207/10" value="33K"/>
 <part name="V9" library="supply2" deviceset="-15V" device=""/>
 <part name="R44" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D72" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D72" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R43" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D83" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D83" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V12" library="supply2" deviceset="-15V" device=""/>
-<part name="D82" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D82" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V19" library="supply2" deviceset="-15V" device=""/>
 <part name="C14" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
 <part name="V21" library="supply2" deviceset="GND" device=""/>
-<part name="D87" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D87" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R49" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R47" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D88" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D88" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V34" library="supply2" deviceset="-15V" device=""/>
-<part name="D89" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D89" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V35" library="supply2" deviceset="-15V" device=""/>
 <part name="C15" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D85" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D86" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D95" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D85" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D86" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D95" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R53" library="rcl" deviceset="R-US_" device="0207/10" value="12K"/>
-<part name="D94" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D93" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D94" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D93" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R52" library="rcl" deviceset="R-US_" device="0207/10" value="12K"/>
-<part name="D96" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D96" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V36" library="supply2" deviceset="-15V" device=""/>
-<part name="D97" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D97" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V37" library="supply2" deviceset="-15V" device=""/>
 <part name="C16" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D99" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D99" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R57" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D98" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D98" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R55" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D104" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D104" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V38" library="supply2" deviceset="-15V" device=""/>
-<part name="D105" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D105" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V39" library="supply2" deviceset="-15V" device=""/>
 <part name="C18" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D107" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D107" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R59" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D106" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D106" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R58" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D108" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D108" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V40" library="supply2" deviceset="-15V" device=""/>
-<part name="D109" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D109" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V41" library="supply2" deviceset="-15V" device=""/>
 <part name="C19" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D112" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D112" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R61" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D110" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D111" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D110" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D111" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R60" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D113" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D113" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V42" library="supply2" deviceset="-15V" device=""/>
-<part name="D114" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D114" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V43" library="supply2" deviceset="-15V" device=""/>
 <part name="C20" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D117" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D117" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R63" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D115" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D116" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D115" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D116" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R62" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D118" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D118" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V44" library="supply2" deviceset="-15V" device=""/>
-<part name="D119" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D119" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V45" library="supply2" deviceset="-15V" device=""/>
 <part name="C22" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
-<part name="D121" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D121" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R65" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D120" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D120" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R64" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D122" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D122" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V46" library="supply2" deviceset="-15V" device=""/>
-<part name="D123" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D123" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V47" library="supply2" deviceset="-15V" device=""/>
 <part name="C23" library="rcl" deviceset="C-US" device="075-032X103" value="82pF 5%"/>
 <part name="C21" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
@@ -6436,15 +6436,15 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R24" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K 1/4W"/>
 <part name="V58" library="supply2" deviceset="-15V" device=""/>
 <part name="C9" library="rcl" deviceset="C-US" device="075-032X103" value="33pF"/>
-<part name="D53" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D58" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D53" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D58" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V59" library="supply2" deviceset="GND" device=""/>
 <part name="R30" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K 1/4W"/>
 <part name="V60" library="supply2" deviceset="-15V" device=""/>
 <part name="R32" library="rcl" deviceset="R-US_" device="0207/10" value="3K 1/4W"/>
 <part name="C11" library="rcl" deviceset="C-US" device="075-032X103" value="33pF"/>
-<part name="D73" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D74" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D73" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D74" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R42" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K 1/4W"/>
 <part name="V61" library="supply2" deviceset="-15V" device=""/>
 <part name="V62" library="supply2" deviceset="GND" device=""/>
@@ -6454,7 +6454,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="D67" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="R38" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="V64" library="supply2" deviceset="-15V" device=""/>
-<part name="D63" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D63" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V65" library="supply2" deviceset="GND" device=""/>
 <part name="V66" library="supply2" deviceset="GND" device=""/>
 <part name="V67" library="supply2" deviceset="+10V" device=""/>
@@ -6465,36 +6465,36 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V69" library="supply2" deviceset="-15V" device=""/>
 <part name="D80" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="D81" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
-<part name="D79" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D79" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R51" library="rcl" deviceset="R-US_" device="0207/10" value="100K"/>
 <part name="V70" library="supply2" deviceset="+10V" device=""/>
 <part name="D92" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="D91" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
-<part name="D90" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D90" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R50" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="V71" library="supply2" deviceset="-15V" device=""/>
 <part name="R54" library="rcl" deviceset="R-US_" device="0207/10" value="3K 1/4W"/>
 <part name="V72" library="supply2" deviceset="-15V" device=""/>
-<part name="D124" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D84" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D124" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D84" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V73" library="supply2" deviceset="+10V" device=""/>
 <part name="R33" library="rcl" deviceset="R-US_" device="0207/10" value="470 1/4W"/>
 <part name="C8" library="rcl" deviceset="C-US" device="075-032X103" value="47pF"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="0207/10" value="10K"/>
 <part name="V74" library="supply2" deviceset="-15V" device=""/>
 <part name="V75" library="supply2" deviceset="-15V" device=""/>
-<part name="D54" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D62" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D61" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D70" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
-<part name="D76" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D54" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D62" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D61" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D70" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
+<part name="D76" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="C12" library="rcl" deviceset="C-US" device="075-032X103" value="47pF"/>
 <part name="R37" library="rcl" deviceset="R-US_" device="0207/10" value="10K"/>
 <part name="R40" library="rcl" deviceset="R-US_" device="0207/10" value="10K"/>
 <part name="V76" library="supply2" deviceset="-15V" device=""/>
 <part name="V77" library="supply2" deviceset="-15V" device=""/>
 <part name="R66" library="rcl" deviceset="R-US_" device="0207/10" value="100 1/4W"/>
-<part name="D77" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D77" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="U$2" library="dec-con" deviceset="FLIPCHIP" device=""/>
 </parts>
 <sheets>
@@ -7054,11 +7054,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <wire x1="81.28" y1="213.36" x2="81.28" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="213.36" x2="271.78" y2="220.98" width="0.1524" layer="91"/>
 <label x="81.28" y="213.36" size="1.778" layer="95" rot="R90"/>
-<label x="271.78" y="213.36" size="1.778" layer="95" rot="R90"/>
 <pinref part="D21" gate="G$1" pin="C"/>
-<pinref part="D86" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="185.42" x2="88.9" y2="172.72" width="0.1524" layer="91"/>
@@ -7135,6 +7132,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="213.36" y1="60.96" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
 <label x="213.36" y="60.96" size="1.778" layer="95" rot="R90"/>
 <pinref part="D61" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<wire x1="271.78" y1="213.36" x2="271.78" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="D86" gate="G$1" pin="C"/>
+<label x="271.78" y="213.36" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -8861,6 +8863,41 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,54.3348,200.66,R4,,,,,"/>
+<approved hash="113,1,19.3252,200.66,R1,,,,,"/>
+<approved hash="113,1,34.0148,200.66,R2,,,,,"/>
+<approved hash="113,1,39.0948,200.66,R3,,,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME3,,,,,"/>
+<approved hash="113,1,21.209,81.28,U$1,,,,,"/>
+<approved hash="113,1,61.9548,200.66,R5,,,,,"/>
+<approved hash="113,1,74.6548,200.66,R6,,,,,"/>
+<approved hash="113,1,224.515,198.12,R35,,,,,"/>
+<approved hash="113,1,82.2748,200.66,R7,,,,,"/>
+<approved hash="113,1,94.9748,200.66,R10,,,,,"/>
+<approved hash="113,1,122.915,200.66,R14,,,,,"/>
+<approved hash="113,1,135.615,200.66,R17,,,,,"/>
+<approved hash="113,1,140.695,200.66,R18,,,,,"/>
+<approved hash="113,1,158.475,200.66,R22,,,,,"/>
+<approved hash="113,1,188.955,198.12,R28,,,,,"/>
+<approved hash="113,1,270.235,200.66,R44,,,,,"/>
+<approved hash="113,1,252.455,200.66,R43,,,,,"/>
+<approved hash="113,1,285.475,200.66,R49,,,,,"/>
+<approved hash="113,1,275.315,200.66,R47,,,,,"/>
+<approved hash="113,1,321.035,200.66,R57,,,,,"/>
+<approved hash="113,1,310.875,200.66,R55,,,,,"/>
+<approved hash="113,1,336.275,200.66,R59,,,,,"/>
+<approved hash="113,1,326.115,200.66,R58,,,,,"/>
+<approved hash="113,1,356.595,200.66,R61,,,,,"/>
+<approved hash="113,1,341.355,200.66,R60,,,,,"/>
+<approved hash="113,1,376.915,200.66,R63,,,,,"/>
+<approved hash="113,1,361.675,200.66,R62,,,,,"/>
+<approved hash="113,1,392.155,200.66,R65,,,,,"/>
+<approved hash="113,1,381.995,200.66,R64,,,,,"/>
+<approved hash="113,1,230.145,71.12,R38,,,,,"/>
+<approved hash="113,1,263.165,71.12,R45,,,,,"/>
+<approved hash="113,1,306.345,71.12,R50,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

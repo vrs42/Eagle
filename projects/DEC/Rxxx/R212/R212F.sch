@@ -6256,11 +6256,8 @@ DIN A3, landscape with extra doc field</description>
 </segment>
 <segment>
 <wire x1="259.08" y1="180.34" x2="259.08" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="180.34" x2="292.1" y2="162.56" width="0.1524" layer="91"/>
 <label x="259.08" y="162.56" size="1.778" layer="95" rot="R90"/>
-<label x="292.1" y="162.56" size="1.778" layer="95" rot="R90"/>
 <pinref part="D72" gate="G$1" pin="C"/>
-<pinref part="D65" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="66.04" y1="76.2" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
@@ -6286,6 +6283,11 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="259.08" y1="76.2" x2="259.08" y2="58.42" width="0.1524" layer="91"/>
 <label x="259.08" y="58.42" size="1.778" layer="95" rot="R90"/>
 <pinref part="D73" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="180.34" x2="292.1" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="D65" gate="G$1" pin="C"/>
+<label x="292.1" y="162.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="MQB=1" class="0">
@@ -6955,6 +6957,9 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

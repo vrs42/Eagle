@@ -798,33 +798,6 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2">
-<packages>
-</packages>
-<symbols>
-<symbol name="-15V">
-<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
-<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="-15V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="-15V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -848,7 +821,6 @@ high speed (Philips)</description>
 <part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
-<part name="V1" library="supply2" deviceset="-15V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -875,7 +847,6 @@ high speed (Philips)</description>
 <instance part="U$2" gate="F2" x="78.74" y="154.94" rot="R180"/>
 <instance part="U$2" gate="E2" x="43.18" y="147.32"/>
 <instance part="U$2" gate="D2" x="43.18" y="154.94"/>
-<instance part="U$2" gate="B2" x="43.18" y="48.26"/>
 <instance part="D10" gate="G$1" x="53.34" y="154.94"/>
 <instance part="D5" gate="G$1" x="53.34" y="147.32"/>
 <instance part="D9" gate="G$1" x="53.34" y="134.62"/>
@@ -886,7 +857,6 @@ high speed (Philips)</description>
 <instance part="D2" gate="G$1" x="53.34" y="86.36"/>
 <instance part="D6" gate="G$1" x="53.34" y="73.66"/>
 <instance part="D1" gate="G$1" x="53.34" y="66.04"/>
-<instance part="V1" gate="G$1" x="50.8" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -1021,17 +991,12 @@ high speed (Philips)</description>
 <pinref part="U$2" gate="V2" pin="1"/>
 </segment>
 </net>
-<net name="-15V" class="0">
-<segment>
-<wire x1="45.72" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="48.26" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="B2" pin="1"/>
-<pinref part="V1" gate="G$1" pin="-15V"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -6333,6 +6333,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="D32" gate="G$1" pin="A"/>
 <pinref part="D33" gate="G$1" pin="C"/>
 <pinref part="U$2" gate="H2" pin="1"/>
+<label x="220.98" y="172.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="175.26" x2="279.4" y2="157.48" width="0.1524" layer="91"/>
@@ -6370,6 +6371,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="D12" gate="G$1" pin="C"/>
 <pinref part="D13" gate="G$1" pin="A"/>
 <pinref part="U$2" gate="N2" pin="1"/>
+<label x="60.96" y="172.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="243.84" y1="175.26" x2="243.84" y2="157.48" width="0.1524" layer="91"/>
@@ -6403,6 +6405,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="R30" gate="G$1" pin="2"/>
 <pinref part="D57" gate="G$1" pin="C"/>
 <pinref part="Q5" gate="G$1" pin="C"/>
+<label x="304.8" y="172.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="-3V" class="1">
@@ -6621,6 +6624,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="D9" gate="G$1" pin="A"/>
 <pinref part="D10" gate="G$1" pin="C"/>
 <pinref part="U$2" gate="U2" pin="1"/>
+<label x="99.06" y="172.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="157.48" y1="175.26" x2="157.48" y2="157.48" width="0.1524" layer="91"/>
@@ -6897,6 +6901,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="D55" gate="G$1" pin="A"/>
 <pinref part="D54" gate="G$1" pin="C"/>
 <pinref part="U$2" gate="D2" pin="1"/>
+<label x="342.9" y="172.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="F2" class="0">
@@ -6917,6 +6922,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="D35" gate="G$1" pin="C"/>
 <pinref part="D36" gate="G$1" pin="A"/>
 <pinref part="U$2" gate="F2" pin="1"/>
+<label x="182.88" y="172.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="27.94" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
@@ -7048,6 +7054,9 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

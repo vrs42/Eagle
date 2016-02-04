@@ -752,7 +752,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
@@ -1374,6 +1374,12 @@ design rules under a new name.</description>
 </polygon>
 </signal>
 </signals>
+<errors>
+<approved hash="2,20,bdac5fae4445a647"/>
+<approved hash="2,20,8bab85a99e459047"/>
+<approved hash="2,20,17f1bfe1bc071417"/>
+<approved hash="2,20,1003b813a0110801"/>
+</errors>
 </board>
 </drawing>
 </eagle>

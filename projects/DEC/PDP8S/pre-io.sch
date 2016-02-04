@@ -13789,6 +13789,21 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME2,,,,,"/>
+<approved hash="113,3,200.508,133.198,FRAME3,,,,,"/>
+<approved hash="113,4,200.508,133.198,FRAME4,,,,,"/>
+<approved hash="113,5,200.508,133.198,FRAME5,,,,,"/>
+<approved hash="113,6,200.508,133.198,FRAME6,,,,,"/>
+<approved hash="113,7,200.508,133.198,FRAME7,,,,,"/>
+<approved hash="113,8,200.508,133.198,FRAME8,,,,,"/>
+<approved hash="113,9,200.508,133.198,FRAME9,,,,,"/>
+<approved hash="113,10,200.508,133.198,FRAME10,,,,,"/>
+<approved hash="113,11,200.508,133.198,FRAME11,,,,,"/>
+<approved hash="113,12,200.508,133.198,FRAME12,,,,,"/>
+<approved hash="113,13,200.508,133.198,FRAME13,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

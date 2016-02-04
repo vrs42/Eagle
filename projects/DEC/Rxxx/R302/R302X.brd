@@ -9,20 +9,20 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="2" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -521,15 +521,18 @@ grid 15.24 mm, diameter 5 mm</description>
 <class number="1" name="Power" width="0.8128" drill="0">
 </class>
 </classes>
-<designrules name="15-30mils">
+<designrules name="16mils">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;10mils.dru - OLIMEX.com check for 10 mils
- (3-5 days) vs. 8 mils (15 days)
-</description>
-<param name="layerSetup" value="(1*16)"/>
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1+16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm 1.5mm"/>
-<param name="mdWireWire" value="10mil"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="15mil"/>
 <param name="mdWirePad" value="10mil"/>
 <param name="mdWireVia" value="10mil"/>
 <param name="mdPadPad" value="10mil"/>
@@ -540,11 +543,11 @@ grid 15.24 mm, diameter 5 mm</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
-<param name="msDrill" value="28mil"/>
+<param name="msDrill" value="32mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -592,7 +595,7 @@ grid 15.24 mm, diameter 5 mm</description>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
-<param name="maxErrors" value="150"/>
+<param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
@@ -829,8 +832,9 @@ grid 15.24 mm, diameter 5 mm</description>
 <wire x1="66.04" y1="26.67" x2="76.2" y2="26.67" width="0.8128" layer="16"/>
 <wire x1="58.42" y1="26.3525" x2="66.04" y2="26.67" width="0.8128" layer="16"/>
 <wire x1="57.15" y1="25.0825" x2="58.42" y2="26.3525" width="0.8128" layer="16"/>
-<wire x1="46.99" y1="25.0825" x2="57.15" y2="25.0825" width="0.8128" layer="16"/>
-<wire x1="45.72" y1="26.67" x2="46.99" y2="25.0825" width="0.8128" layer="16"/>
+<wire x1="49.53" y1="25.0825" x2="57.15" y2="25.0825" width="0.8128" layer="16"/>
+<wire x1="45.72" y1="26.67" x2="48.26" y2="26.67" width="0.8128" layer="16"/>
+<wire x1="48.26" y1="26.67" x2="49.53" y2="25.0825" width="0.8128" layer="16"/>
 <wire x1="35.56" y1="25.4" x2="38.1" y2="25.4" width="0.8128" layer="16"/>
 <wire x1="38.1" y1="25.4" x2="39.37" y2="26.67" width="0.8128" layer="16"/>
 <wire x1="39.37" y1="26.67" x2="45.72" y2="26.67" width="0.8128" layer="16"/>
@@ -859,8 +863,8 @@ grid 15.24 mm, diameter 5 mm</description>
 <wire x1="97.79" y1="54.61" x2="100.33" y2="53.34" width="0.8128" layer="16"/>
 <wire x1="100.33" y1="53.34" x2="102.87" y2="53.34" width="0.8128" layer="16"/>
 <wire x1="102.87" y1="53.34" x2="106.68" y2="55.88" width="0.8128" layer="16"/>
-<wire x1="111.76" y1="52.07" x2="117.7925" y2="51.7525" width="0.8128" layer="16"/>
-<wire x1="106.68" y1="55.88" x2="111.76" y2="52.07" width="0.8128" layer="16"/>
+<wire x1="110.49" y1="52.07" x2="117.7925" y2="51.7525" width="0.8128" layer="16"/>
+<wire x1="106.68" y1="55.88" x2="110.49" y2="52.07" width="0.8128" layer="16"/>
 <wire x1="92.3925" y1="55.88" x2="93.98" y2="56.8325" width="0.8128" layer="16"/>
 <wire x1="93.98" y1="52.07" x2="92.3925" y2="53.34" width="0.8128" layer="16"/>
 <wire x1="92.3925" y1="53.34" x2="92.3925" y2="55.88" width="0.8128" layer="16"/>
@@ -937,8 +941,9 @@ grid 15.24 mm, diameter 5 mm</description>
 <contactref element="U$2" pad="P2"/>
 <contactref element="D8" pad="A"/>
 <wire x1="112.6998" y1="19.9898" x2="117.7925" y2="20.0025" width="0.4064" layer="16"/>
-<wire x1="111.76" y1="19.05" x2="112.6998" y2="19.9898" width="0.4064" layer="16"/>
-<wire x1="106.68" y1="19.05" x2="111.76" y2="19.05" width="0.4064" layer="16"/>
+<wire x1="111.76" y1="20.32" x2="112.6998" y2="19.9898" width="0.4064" layer="16"/>
+<wire x1="106.68" y1="19.05" x2="107.95" y2="20.32" width="0.4064" layer="16"/>
+<wire x1="107.95" y1="20.32" x2="111.76" y2="20.32" width="0.4064" layer="16"/>
 <wire x1="107.95" y1="17.78" x2="106.68" y2="19.05" width="0.4064" layer="16"/>
 <wire x1="107.95" y1="15.24" x2="107.95" y2="17.78" width="0.4064" layer="16"/>
 <wire x1="106.68" y1="13.97" x2="107.95" y2="15.24" width="0.4064" layer="16"/>
@@ -996,8 +1001,8 @@ grid 15.24 mm, diameter 5 mm</description>
 <contactref element="R6" pad="2"/>
 <contactref element="D4" pad="C"/>
 <contactref element="C2" pad="1"/>
-<wire x1="112.7252" y1="13.6652" x2="117.7925" y2="13.6525" width="0.4064" layer="16"/>
-<wire x1="104.14" y1="5.08" x2="112.7252" y2="13.6652" width="0.4064" layer="16"/>
+<wire x1="111.4552" y1="13.6652" x2="117.7925" y2="13.6525" width="0.4064" layer="16"/>
+<wire x1="104.14" y1="5.08" x2="111.4552" y2="13.6652" width="0.4064" layer="16"/>
 <wire x1="92.71" y1="5.08" x2="104.14" y2="5.08" width="0.4064" layer="16"/>
 <wire x1="88.9" y1="8.89" x2="92.71" y2="5.08" width="0.4064" layer="16"/>
 <wire x1="76.2" y1="6.35" x2="78.74" y2="6.35" width="0.4064" layer="16"/>
@@ -1010,8 +1015,8 @@ grid 15.24 mm, diameter 5 mm</description>
 <contactref element="U$2" pad="R2"/>
 <contactref element="D3" pad="C"/>
 <contactref element="R8" pad="2"/>
-<wire x1="111.76" y1="16.51" x2="117.7925" y2="16.8275" width="0.4064" layer="16"/>
-<wire x1="102.87" y1="6.35" x2="111.76" y2="16.51" width="0.4064" layer="16"/>
+<wire x1="110.49" y1="16.51" x2="117.7925" y2="16.8275" width="0.4064" layer="16"/>
+<wire x1="102.87" y1="6.35" x2="110.49" y2="16.51" width="0.4064" layer="16"/>
 <wire x1="93.98" y1="6.35" x2="102.87" y2="6.35" width="0.4064" layer="16"/>
 <wire x1="88.9" y1="11.43" x2="93.98" y2="6.35" width="0.4064" layer="16"/>
 <wire x1="83.82" y1="6.35" x2="88.9" y2="11.43" width="0.4064" layer="16"/>
@@ -1057,8 +1062,9 @@ grid 15.24 mm, diameter 5 mm</description>
 <contactref element="D5" pad="A"/>
 <contactref element="D7" pad="A"/>
 <wire x1="112.6998" y1="23.1902" x2="117.7925" y2="23.1775" width="0.4064" layer="16"/>
-<wire x1="111.76" y1="24.13" x2="112.6998" y2="23.1902" width="0.4064" layer="16"/>
-<wire x1="106.68" y1="27.94" x2="111.76" y2="24.13" width="0.4064" layer="16"/>
+<wire x1="111.76" y1="22.86" x2="112.6998" y2="23.1902" width="0.4064" layer="16"/>
+<wire x1="106.68" y1="27.94" x2="106.68" y2="22.86" width="0.4064" layer="16"/>
+<wire x1="106.68" y1="22.86" x2="111.76" y2="22.86" width="0.4064" layer="16"/>
 <wire x1="106.68" y1="21.59" x2="106.68" y2="27.94" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$14">
@@ -1246,8 +1252,8 @@ grid 15.24 mm, diameter 5 mm</description>
 <wire x1="69.85" y1="36.83" x2="66.04" y2="40.64" width="0.4064" layer="16"/>
 <wire x1="69.85" y1="36.83" x2="83.82" y2="36.83" width="0.4064" layer="16"/>
 <wire x1="83.82" y1="36.83" x2="85.09" y2="35.56" width="0.4064" layer="16"/>
-<wire x1="111.76" y1="38.1" x2="117.7925" y2="39.0525" width="0.4064" layer="16"/>
-<wire x1="106.68" y1="35.56" x2="111.76" y2="38.1" width="0.4064" layer="16"/>
+<wire x1="111.76" y1="39.37" x2="117.7925" y2="39.0525" width="0.4064" layer="16"/>
+<wire x1="106.68" y1="35.56" x2="111.76" y2="39.37" width="0.4064" layer="16"/>
 <wire x1="92.71" y1="35.56" x2="106.68" y2="35.56" width="0.4064" layer="16"/>
 <wire x1="90.17" y1="38.1" x2="92.71" y2="35.56" width="0.4064" layer="16"/>
 <wire x1="87.63" y1="38.1" x2="90.17" y2="38.1" width="0.4064" layer="16"/>

@@ -8250,15 +8250,19 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="D7" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="38.1" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="38.1" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="78.74" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
-<label x="40.64" y="43.18" size="1.778" layer="95" rot="R270"/>
 <label x="81.28" y="43.18" size="1.778" layer="95" rot="R270"/>
-<label x="137.16" y="83.82" size="1.778" layer="95" rot="R90"/>
-<pinref part="D34" gate="G$1" pin="C"/>
 <pinref part="D27" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<wire x1="137.16" y1="78.74" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
+<label x="137.16" y="83.82" size="1.778" layer="95" rot="R90"/>
 <pinref part="D30" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<pinref part="D34" gate="G$1" pin="C"/>
+<wire x1="40.64" y1="38.1" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
+<label x="40.64" y="43.18" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="-3V" class="1">
@@ -8891,6 +8895,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

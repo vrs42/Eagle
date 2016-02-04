@@ -14091,6 +14091,13 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,246.38,167.64,IC1,VSS,GND,,,"/>
+<approved hash="104,1,246.38,99.06,IC2,VSS,GND,,,"/>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,1,21.209,195.58,U$2,,,,,"/>
+<approved hash="113,1,226.018,242.765,EXTBAT,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -6178,35 +6178,43 @@ DIN A3, landscape with extra doc field</description>
 </segment>
 <segment>
 <wire x1="60.96" y1="99.06" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="200.66" x2="60.96" y2="195.58" width="0.1524" layer="91"/>
 <label x="60.96" y="93.98" size="1.778" layer="95" rot="R90"/>
-<label x="60.96" y="195.58" size="1.778" layer="95" rot="R90"/>
 <pinref part="D10" gate="G$1" pin="A"/>
-<pinref part="D11" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="99.06" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="200.66" x2="106.68" y2="195.58" width="0.1524" layer="91"/>
 <label x="106.68" y="93.98" size="1.778" layer="95" rot="R90"/>
-<label x="106.68" y="195.58" size="1.778" layer="95" rot="R90"/>
 <pinref part="D22" gate="G$1" pin="A"/>
-<pinref part="D21" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="152.4" y1="99.06" x2="152.4" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="200.66" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
 <label x="152.4" y="93.98" size="1.778" layer="95" rot="R90"/>
-<label x="152.4" y="195.58" size="1.778" layer="95" rot="R90"/>
 <pinref part="D36" gate="G$1" pin="A"/>
-<pinref part="D26" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="198.12" y1="99.06" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="200.66" x2="198.12" y2="195.58" width="0.1524" layer="91"/>
 <label x="198.12" y="93.98" size="1.778" layer="95" rot="R90"/>
-<label x="198.12" y="195.58" size="1.778" layer="95" rot="R90"/>
 <pinref part="D50" gate="G$1" pin="A"/>
+</segment>
+<segment>
+<wire x1="60.96" y1="200.66" x2="60.96" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="D11" gate="G$1" pin="A"/>
+<label x="60.96" y="195.58" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="106.68" y1="200.66" x2="106.68" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="D21" gate="G$1" pin="A"/>
+<label x="106.68" y="195.58" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="152.4" y1="200.66" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="D26" gate="G$1" pin="A"/>
+<label x="152.4" y="195.58" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="198.12" y1="200.66" x2="198.12" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="D37" gate="G$1" pin="A"/>
+<label x="198.12" y="195.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -6775,6 +6783,9 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

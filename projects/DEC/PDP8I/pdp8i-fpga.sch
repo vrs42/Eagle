@@ -33608,6 +33608,7 @@ DIN A3, landscape with extra doc field</description>
 <approved hash="114,35,236.22,180.34,C06,G$2,E,,,"/>
 <approved hash="114,35,236.22,180.34,C06,G$2,F,,,"/>
 <approved hash="114,35,236.22,180.34,C06,G$2,H,,,"/>
+<approved hash="117,17,193.04,40.64,-6V@BM2,,,,,"/>
 <approved hash="209,37,35.56,203.2,60HZ_IN,,,,,"/>
 <approved hash="106,37,35.56,203.2,60HZ_IN,,,,,"/>
 <approved hash="106,14,312.42,205.74,IO_BUS_IN_AC_CLR_,,,,,"/>

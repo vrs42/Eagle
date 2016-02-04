@@ -16127,6 +16127,12 @@ Source: 008-0260-0_E.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,6.73947,109.22,L1,,,,,"/>
+<approved hash="113,1,16.3398,107.95,C1,,,,,"/>
+<approved hash="113,1,21.0057,117.581,CR1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

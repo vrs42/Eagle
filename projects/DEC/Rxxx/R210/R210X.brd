@@ -13026,7 +13026,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>
@@ -13179,31 +13179,31 @@ design rules under a new name.</description>
 <element name="D101" library="diode" package="DO35-10" value="1N914" x="18.288" y="113.792" rot="R270"/>
 <element name="D100" library="diode" package="DO35-10" value="1N914" x="15.24" y="110.744" rot="R270"/>
 <element name="R56" library="rcl" package="0207/10" value="1500" x="23.368" y="113.792" rot="R90"/>
-<element name="D10" library="diode" package="DO35-10" value="1N4148DO35-10" x="13.208" y="52.832" rot="R270"/>
+<element name="D10" library="diode" package="DO35-10" value="" x="13.208" y="52.832" rot="R270"/>
 <element name="R4" library="rcl" package="0207/10" value="" x="39.624" y="41.656" rot="R270"/>
-<element name="D9" library="diode" package="DO35-10" value="1N4148DO35-10" x="42.672" y="15.24" rot="R270"/>
-<element name="D8" library="diode" package="DO35-10" value="1N4148DO35-10" x="44.704" y="17.272" rot="R270"/>
+<element name="D9" library="diode" package="DO35-10" value="" x="42.672" y="15.24" rot="R270"/>
+<element name="D8" library="diode" package="DO35-10" value="" x="44.704" y="17.272" rot="R270"/>
 <element name="R1" library="rcl" package="0207/10" value="" x="12.192" y="31.496" rot="R270"/>
 <element name="C17" library="rcl" package="C050-025X075" value=".01uF" x="28.448" y="115.824" rot="R90"/>
-<element name="D3" library="diode" package="DO35-10" value="1N4148DO35-10" x="16.256" y="11.176" rot="R270"/>
+<element name="D3" library="diode" package="DO35-10" value="" x="16.256" y="11.176" rot="R270"/>
 <element name="R2" library="rcl" package="0207/10" value="" x="14.224" y="38.608" rot="R270"/>
-<element name="D6" library="diode" package="DO35-10" value="1N4148DO35-10" x="16.256" y="33.528" rot="R270"/>
+<element name="D6" library="diode" package="DO35-10" value="" x="16.256" y="33.528" rot="R270"/>
 <element name="C1" library="rcl" package="C075-032X103" value="82pF 5%" x="16.256" y="22.352" rot="R90"/>
-<element name="D2" library="diode" package="DO35-10" value="1N4148DO35-10" x="12.192" y="11.176" rot="R270"/>
+<element name="D2" library="diode" package="DO35-10" value="" x="12.192" y="11.176" rot="R270"/>
 <element name="R3" library="rcl" package="0207/10" value="" x="41.656" y="39.624" rot="R270"/>
-<element name="D4" library="diode" package="DO35-10" value="1N4148DO35-10" x="10.16" y="13.208" rot="R270"/>
+<element name="D4" library="diode" package="DO35-10" value="" x="10.16" y="13.208" rot="R270"/>
 <element name="Q2" library="transistor-pnp" package="TO39" value="PN3640" x="48.768" y="108.712"/>
 <element name="Q1" library="transistor-pnp" package="TO39" value="PN3640" x="55.88" y="109.728"/>
-<element name="D5" library="diode" package="DO35-10" value="1N4148DO35-10" x="14.224" y="25.4" rot="R270"/>
-<element name="D11" library="diode" package="DO35-10" value="1N4148DO35-10" x="37.592" y="39.624" rot="R270"/>
+<element name="D5" library="diode" package="DO35-10" value="" x="14.224" y="25.4" rot="R270"/>
+<element name="D11" library="diode" package="DO35-10" value="" x="37.592" y="39.624" rot="R270"/>
 <element name="R8" library="rcl" package="0207/10" value="7.5K" x="96.52" y="100.584" rot="R90"/>
 <element name="R12" library="rcl" package="0207/10" value="12K" x="77.216" y="38.608" rot="R270"/>
-<element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="14.224" y="12.192" rot="R270"/>
-<element name="D7" library="diode" package="DO35-10" value="1N4148DO35-10" x="10.16" y="27.432" rot="R270"/>
-<element name="D12" library="diode" package="DO35-10" value="1N4148DO35-10" x="40.64" y="19.304" rot="R270"/>
+<element name="D1" library="diode" package="DO35-10" value="" x="14.224" y="12.192" rot="R270"/>
+<element name="D7" library="diode" package="DO35-10" value="" x="10.16" y="27.432" rot="R270"/>
+<element name="D12" library="diode" package="DO35-10" value="" x="40.64" y="19.304" rot="R270"/>
 <element name="R11" library="rcl" package="0207/10" value="3K 1/4W" x="53.848" y="120.904" rot="R270"/>
 <element name="R9" library="rcl" package="0207/10" value="100K" x="55.88" y="122.936" rot="R90"/>
-<element name="D55" library="diode" package="DO35-10" value="1N4148DO35-10" x="102.616" y="83.312" rot="R270"/>
+<element name="D55" library="diode" package="DO35-10" value="" x="102.616" y="83.312" rot="R270"/>
 <element name="D34" library="diode" package="DO35-10" value="1N914" x="66.04" y="110.744" rot="R270"/>
 <element name="R16" library="rcl" package="0207/10" value="100K" x="50.8" y="122.936" rot="R90"/>
 <element name="D33" library="diode" package="DO35-10" value="1N914" x="68.072" y="114.808" rot="R270"/>
@@ -13211,13 +13211,13 @@ design rules under a new name.</description>
 <element name="R15" library="rcl" package="0207/10" value="15K" x="93.472" y="100.584" rot="R90"/>
 <element name="Q4" library="transistor-pnp" package="TO39" value="PN3640" x="45.72" y="91.44" rot="R180"/>
 <element name="R21" library="rcl" package="0207/10" value="100K" x="39.624" y="93.472" rot="R90"/>
-<element name="D48" library="diode" package="DO35-10" value="1N4148DO35-10" x="58.928" y="57.912" rot="R270"/>
+<element name="D48" library="diode" package="DO35-10" value="" x="58.928" y="57.912" rot="R270"/>
 <element name="R19" library="rcl" package="0207/10" value="10K" x="36.576" y="73.152" rot="R270"/>
-<element name="D41" library="diode" package="DO35-10" value="1N4148DO35-10" x="36.576" y="57.912" rot="R270"/>
-<element name="D43" library="diode" package="DO35-10" value="1N4148DO35-10" x="106.68" y="105.664" rot="R270"/>
-<element name="D60" library="diode" package="DO35-10" value="1N4148DO35-10" x="90.424" y="70.104" rot="R270"/>
-<element name="D42" library="diode" package="DO35-10" value="1N4148DO35-10" x="102.616" y="105.664" rot="R270"/>
-<element name="D40" library="diode" package="DO35-10" value="1N4148DO35-10" x="42.672" y="52.832" rot="R270"/>
+<element name="D41" library="diode" package="DO35-10" value="" x="36.576" y="57.912" rot="R270"/>
+<element name="D43" library="diode" package="DO35-10" value="" x="106.68" y="105.664" rot="R270"/>
+<element name="D60" library="diode" package="DO35-10" value="" x="90.424" y="70.104" rot="R270"/>
+<element name="D42" library="diode" package="DO35-10" value="" x="102.616" y="105.664" rot="R270"/>
+<element name="D40" library="diode" package="DO35-10" value="" x="42.672" y="52.832" rot="R270"/>
 <element name="U$3" library="dec-con" package="DOUBLE" value="OUTLINE-DOUBLE" x="125.984" y="132.08" rot="R180"/>
 <element name="U$1" library="dec-con" package="EDGE-CON4" value="" x="125.984" y="132.08" rot="R180"/>
 <element name="R26" library="rcl" package="0207/10" value="470 1/4W" x="69.088" y="56.896" rot="R90"/>
@@ -13228,122 +13228,122 @@ design rules under a new name.</description>
 <element name="Q7" library="transistor-pnp" package="TO39" value="PN3640" x="93.472" y="47.752" rot="R180"/>
 <element name="Q8" library="transistor-pnp" package="TO39" value="PN3640" x="90.424" y="56.896"/>
 <element name="Q6" library="transistor-pnp" package="TO39" value="PN3640" x="47.752" y="80.264" rot="R180"/>
-<element name="D15" library="diode" package="DO35-10" value="1N4148DO35-10" x="48.768" y="17.272" rot="R270"/>
+<element name="D15" library="diode" package="DO35-10" value="" x="48.768" y="17.272" rot="R270"/>
 <element name="R5" library="rcl" package="0207/10" value="" x="45.72" y="40.64" rot="R270"/>
-<element name="D14" library="diode" package="DO35-10" value="1N4148DO35-10" x="51.816" y="17.272" rot="R270"/>
-<element name="D13" library="diode" package="DO35-10" value="1N4148DO35-10" x="50.8" y="19.304" rot="R270"/>
+<element name="D14" library="diode" package="DO35-10" value="" x="51.816" y="17.272" rot="R270"/>
+<element name="D13" library="diode" package="DO35-10" value="" x="50.8" y="19.304" rot="R270"/>
 <element name="R6" library="rcl" package="0207/10" value="" x="51.816" y="42.672" rot="R270"/>
-<element name="D16" library="diode" package="DO35-10" value="1N4148DO35-10" x="42.672" y="37.592" rot="R270"/>
-<element name="D17" library="diode" package="DO35-10" value="1N4148DO35-10" x="46.736" y="19.304" rot="R270"/>
+<element name="D16" library="diode" package="DO35-10" value="" x="42.672" y="37.592" rot="R270"/>
+<element name="D17" library="diode" package="DO35-10" value="" x="46.736" y="19.304" rot="R270"/>
 <element name="C3" library="rcl" package="C075-032X103" value="82pF 5%" x="44.704" y="30.48" rot="R270"/>
-<element name="D22" library="diode" package="DO35-10" value="1N4148DO35-10" x="67.056" y="18.288" rot="R270"/>
-<element name="D21" library="diode" package="DO35-10" value="1N4148DO35-10" x="71.12" y="18.288" rot="R270"/>
-<element name="D20" library="diode" package="DO35-10" value="1N4148DO35-10" x="69.088" y="21.336" rot="R270"/>
-<element name="D25" library="diode" package="DO35-10" value="1N4148DO35-10" x="64.008" y="36.576" rot="R270"/>
-<element name="D26" library="diode" package="DO35-10" value="1N4148DO35-10" x="65.024" y="21.336" rot="R270"/>
+<element name="D22" library="diode" package="DO35-10" value="" x="67.056" y="18.288" rot="R270"/>
+<element name="D21" library="diode" package="DO35-10" value="" x="71.12" y="18.288" rot="R270"/>
+<element name="D20" library="diode" package="DO35-10" value="" x="69.088" y="21.336" rot="R270"/>
+<element name="D25" library="diode" package="DO35-10" value="" x="64.008" y="36.576" rot="R270"/>
+<element name="D26" library="diode" package="DO35-10" value="" x="65.024" y="21.336" rot="R270"/>
 <element name="C4" library="rcl" package="C075-032X103" value="82pF 5%" x="68.072" y="35.56" rot="R90"/>
-<element name="D29" library="diode" package="DO35-10" value="1N4148DO35-10" x="85.344" y="21.336" rot="R270"/>
+<element name="D29" library="diode" package="DO35-10" value="" x="85.344" y="21.336" rot="R270"/>
 <element name="R34" library="rcl" package="0207/10" value="3K 1/4W" x="22.352" y="50.8" rot="R90"/>
-<element name="D28" library="diode" package="DO35-10" value="1N4148DO35-10" x="79.248" y="23.368" rot="R270"/>
+<element name="D28" library="diode" package="DO35-10" value="" x="79.248" y="23.368" rot="R270"/>
 <element name="R35" library="rcl" package="0207/10" value="" x="99.568" y="82.296" rot="R270"/>
-<element name="D30" library="diode" package="DO35-10" value="1N4148DO35-10" x="83.312" y="35.56" rot="R270"/>
-<element name="D31" library="diode" package="DO35-10" value="1N4148DO35-10" x="83.312" y="23.368" rot="R270"/>
+<element name="D30" library="diode" package="DO35-10" value="" x="83.312" y="35.56" rot="R270"/>
+<element name="D31" library="diode" package="DO35-10" value="" x="83.312" y="23.368" rot="R270"/>
 <element name="C5" library="rcl" package="C075-032X103" value="82pF 5%" x="79.248" y="35.56" rot="R90"/>
-<element name="D36" library="diode" package="DO35-10" value="1N4148DO35-10" x="95.504" y="21.336" rot="R270"/>
-<element name="D35" library="diode" package="DO35-10" value="1N4148DO35-10" x="93.472" y="23.368" rot="R270"/>
-<element name="D38" library="diode" package="DO35-10" value="1N4148DO35-10" x="99.568" y="41.656" rot="R270"/>
-<element name="D39" library="diode" package="DO35-10" value="1N4148DO35-10" x="99.568" y="25.4" rot="R270"/>
+<element name="D36" library="diode" package="DO35-10" value="" x="95.504" y="21.336" rot="R270"/>
+<element name="D35" library="diode" package="DO35-10" value="" x="93.472" y="23.368" rot="R270"/>
+<element name="D38" library="diode" package="DO35-10" value="" x="99.568" y="41.656" rot="R270"/>
+<element name="D39" library="diode" package="DO35-10" value="" x="99.568" y="25.4" rot="R270"/>
 <element name="C6" library="rcl" package="C075-032X103" value="82pF 5%" x="93.472" y="34.544" rot="R90"/>
-<element name="D45" library="diode" package="DO35-10" value="1N4148DO35-10" x="87.376" y="65.024" rot="R270"/>
-<element name="D44" library="diode" package="DO35-10" value="1N4148DO35-10" x="80.264" y="71.12" rot="R270"/>
-<element name="D50" library="diode" package="DO35-10" value="1N4148DO35-10" x="89.408" y="87.376" rot="R270"/>
-<element name="D51" library="diode" package="DO35-10" value="1N4148DO35-10" x="67.056" y="86.36" rot="R270"/>
+<element name="D45" library="diode" package="DO35-10" value="" x="87.376" y="65.024" rot="R270"/>
+<element name="D44" library="diode" package="DO35-10" value="" x="80.264" y="71.12" rot="R270"/>
+<element name="D50" library="diode" package="DO35-10" value="" x="89.408" y="87.376" rot="R270"/>
+<element name="D51" library="diode" package="DO35-10" value="" x="67.056" y="86.36" rot="R270"/>
 <element name="C7" library="rcl" package="C075-032X103" value="82pF 5%" x="77.216" y="82.296" rot="R90"/>
 <element name="R7" library="rcl" package="0207/10" value="" x="66.04" y="38.608" rot="R270"/>
 <element name="R10" library="rcl" package="0207/10" value="" x="61.976" y="38.608" rot="R270"/>
 <element name="D23" library="diode" package="DO35-10" value="1N914" x="64.008" y="114.808" rot="R270"/>
 <element name="D24" library="diode" package="DO35-10" value="1N914" x="60.96" y="110.744" rot="R270"/>
-<element name="D18" library="diode" package="DO35-10" value="1N4148DO35-10" x="100.584" y="101.6" rot="R270"/>
-<element name="D19" library="diode" package="DO35-10" value="1N4148DO35-10" x="98.552" y="104.648" rot="R270"/>
-<element name="D27" library="diode" package="DO35-10" value="1N4148DO35-10" x="43.688" y="111.76" rot="R270"/>
-<element name="D32" library="diode" package="DO35-10" value="1N4148DO35-10" x="104.648" y="103.632" rot="R270"/>
+<element name="D18" library="diode" package="DO35-10" value="" x="100.584" y="101.6" rot="R270"/>
+<element name="D19" library="diode" package="DO35-10" value="" x="98.552" y="104.648" rot="R270"/>
+<element name="D27" library="diode" package="DO35-10" value="" x="43.688" y="111.76" rot="R270"/>
+<element name="D32" library="diode" package="DO35-10" value="" x="104.648" y="103.632" rot="R270"/>
 <element name="R14" library="rcl" package="0207/10" value="" x="95.504" y="37.592" rot="R270"/>
 <element name="R17" library="rcl" package="0207/10" value="" x="97.536" y="38.608" rot="R270"/>
 <element name="R18" library="rcl" package="0207/10" value="" x="74.168" y="86.36" rot="R270"/>
 <element name="R22" library="rcl" package="0207/10" value="" x="79.248" y="88.392" rot="R270"/>
-<element name="D37" library="diode" package="DO35-10" value="1N4148DO35-10" x="44.704" y="56.896" rot="R270"/>
-<element name="D49" library="diode" package="DO35-10" value="1N4148DO35-10" x="29.464" y="54.864" rot="R270"/>
+<element name="D37" library="diode" package="DO35-10" value="" x="44.704" y="56.896" rot="R270"/>
+<element name="D49" library="diode" package="DO35-10" value="" x="29.464" y="54.864" rot="R270"/>
 <element name="D56" library="diode" package="DO35-10" value="1N914" x="85.344" y="71.12" rot="R270"/>
 <element name="D57" library="diode" package="DO35-10" value="1N914" x="77.216" y="68.072" rot="R270"/>
 <element name="C10" library="rcl" package="C075-032X103" value="18pF" x="84.328" y="55.88" rot="R90"/>
 <element name="R28" library="rcl" package="0207/10" value="" x="97.536" y="84.328" rot="R270"/>
-<element name="D59" library="diode" package="DO35-10" value="1N4148DO35-10" x="20.32" y="58.928" rot="R270"/>
-<element name="D64" library="diode" package="DO35-10" value="1N4148DO35-10" x="18.288" y="56.896" rot="R270"/>
+<element name="D59" library="diode" package="DO35-10" value="" x="20.32" y="58.928" rot="R270"/>
+<element name="D64" library="diode" package="DO35-10" value="" x="18.288" y="56.896" rot="R270"/>
 <element name="R36" library="rcl" package="0207/10" value="100K" x="73.152" y="69.088" rot="R270"/>
 <element name="D69" library="diode" package="DO35-10" value="1N914" x="92.456" y="67.056" rot="R270"/>
 <element name="D68" library="diode" package="DO35-10" value="1N914" x="95.504" y="70.104" rot="R270"/>
-<element name="D65" library="diode" package="DO35-10" value="1N4148DO35-10" x="99.568" y="69.088" rot="R270"/>
-<element name="D71" library="diode" package="DO35-10" value="1N4148DO35-10" x="105.664" y="85.344" rot="R270"/>
+<element name="D65" library="diode" package="DO35-10" value="" x="99.568" y="69.088" rot="R270"/>
+<element name="D71" library="diode" package="DO35-10" value="" x="105.664" y="85.344" rot="R270"/>
 <element name="C13" library="rcl" package="C075-032X103" value="18pF" x="87.376" y="52.832" rot="R270"/>
-<element name="D78" library="diode" package="DO35-10" value="1N4148DO35-10" x="82.296" y="70.104" rot="R270"/>
+<element name="D78" library="diode" package="DO35-10" value="" x="82.296" y="70.104" rot="R270"/>
 <element name="R44" library="rcl" package="0207/10" value="" x="87.376" y="89.408" rot="R270"/>
-<element name="D72" library="diode" package="DO35-10" value="1N4148DO35-10" x="97.536" y="66.04" rot="R270"/>
+<element name="D72" library="diode" package="DO35-10" value="" x="97.536" y="66.04" rot="R270"/>
 <element name="R43" library="rcl" package="0207/10" value="" x="82.296" y="86.36" rot="R270"/>
-<element name="D83" library="diode" package="DO35-10" value="1N4148DO35-10" x="91.44" y="84.328" rot="R270"/>
-<element name="D82" library="diode" package="DO35-10" value="1N4148DO35-10" x="71.12" y="86.36" rot="R270"/>
+<element name="D83" library="diode" package="DO35-10" value="" x="91.44" y="84.328" rot="R270"/>
+<element name="D82" library="diode" package="DO35-10" value="" x="71.12" y="86.36" rot="R270"/>
 <element name="C14" library="rcl" package="C075-032X103" value="82pF 5%" x="84.328" y="84.328" rot="R90"/>
-<element name="D87" library="diode" package="DO35-10" value="1N4148DO35-10" x="91.44" y="21.336" rot="R270"/>
+<element name="D87" library="diode" package="DO35-10" value="" x="91.44" y="21.336" rot="R270"/>
 <element name="R49" library="rcl" package="0207/10" value="" x="87.376" y="38.608" rot="R270"/>
 <element name="R47" library="rcl" package="0207/10" value="" x="91.44" y="38.608" rot="R270"/>
-<element name="D88" library="diode" package="DO35-10" value="1N4148DO35-10" x="85.344" y="35.56" rot="R270"/>
-<element name="D89" library="diode" package="DO35-10" value="1N4148DO35-10" x="87.376" y="21.336" rot="R270"/>
+<element name="D88" library="diode" package="DO35-10" value="" x="85.344" y="35.56" rot="R270"/>
+<element name="D89" library="diode" package="DO35-10" value="" x="87.376" y="21.336" rot="R270"/>
 <element name="C15" library="rcl" package="C075-032X103" value="82pF 5%" x="89.408" y="34.544" rot="R90"/>
-<element name="D85" library="diode" package="DO35-10" value="1N4148DO35-10" x="89.408" y="23.368" rot="R270"/>
-<element name="D86" library="diode" package="DO35-10" value="1N4148DO35-10" x="97.536" y="23.368" rot="R270"/>
-<element name="D95" library="diode" package="DO35-10" value="1N4148DO35-10" x="77.216" y="21.336" rot="R270"/>
+<element name="D85" library="diode" package="DO35-10" value="" x="89.408" y="23.368" rot="R270"/>
+<element name="D86" library="diode" package="DO35-10" value="" x="97.536" y="23.368" rot="R270"/>
+<element name="D95" library="diode" package="DO35-10" value="" x="77.216" y="21.336" rot="R270"/>
 <element name="R53" library="rcl" package="0207/10" value="12K" x="70.104" y="38.608" rot="R270"/>
-<element name="D94" library="diode" package="DO35-10" value="1N4148DO35-10" x="81.28" y="21.336" rot="R270"/>
-<element name="D93" library="diode" package="DO35-10" value="1N4148DO35-10" x="75.184" y="23.368" rot="R270"/>
+<element name="D94" library="diode" package="DO35-10" value="" x="81.28" y="21.336" rot="R270"/>
+<element name="D93" library="diode" package="DO35-10" value="" x="75.184" y="23.368" rot="R270"/>
 <element name="R52" library="rcl" package="0207/10" value="12K" x="73.152" y="38.608" rot="R270"/>
-<element name="D96" library="diode" package="DO35-10" value="1N4148DO35-10" x="72.136" y="35.56" rot="R270"/>
-<element name="D97" library="diode" package="DO35-10" value="1N4148DO35-10" x="73.152" y="21.336" rot="R270"/>
+<element name="D96" library="diode" package="DO35-10" value="" x="72.136" y="35.56" rot="R270"/>
+<element name="D97" library="diode" package="DO35-10" value="" x="73.152" y="21.336" rot="R270"/>
 <element name="C16" library="rcl" package="C075-032X103" value="82pF 5%" x="75.184" y="35.56" rot="R90"/>
-<element name="D99" library="diode" package="DO35-10" value="1N4148DO35-10" x="62.992" y="18.288" rot="R270"/>
+<element name="D99" library="diode" package="DO35-10" value="" x="62.992" y="18.288" rot="R270"/>
 <element name="R57" library="rcl" package="0207/10" value="" x="57.912" y="38.608" rot="R270"/>
-<element name="D98" library="diode" package="DO35-10" value="1N4148DO35-10" x="59.944" y="18.288" rot="R270"/>
+<element name="D98" library="diode" package="DO35-10" value="" x="59.944" y="18.288" rot="R270"/>
 <element name="R55" library="rcl" package="0207/10" value="" x="55.88" y="40.64" rot="R270"/>
-<element name="D104" library="diode" package="DO35-10" value="1N4148DO35-10" x="59.944" y="43.688" rot="R270"/>
-<element name="D105" library="diode" package="DO35-10" value="1N4148DO35-10" x="60.96" y="21.336" rot="R270"/>
+<element name="D104" library="diode" package="DO35-10" value="" x="59.944" y="43.688" rot="R270"/>
+<element name="D105" library="diode" package="DO35-10" value="" x="60.96" y="21.336" rot="R270"/>
 <element name="C18" library="rcl" package="C075-032X103" value="82pF 5%" x="59.944" y="32.512" rot="R90"/>
-<element name="D107" library="diode" package="DO35-10" value="1N4148DO35-10" x="55.88" y="17.272" rot="R270"/>
+<element name="D107" library="diode" package="DO35-10" value="" x="55.88" y="17.272" rot="R270"/>
 <element name="R59" library="rcl" package="0207/10" value="" x="49.784" y="39.624" rot="R270"/>
-<element name="D106" library="diode" package="DO35-10" value="1N4148DO35-10" x="53.848" y="19.304" rot="R270"/>
+<element name="D106" library="diode" package="DO35-10" value="" x="53.848" y="19.304" rot="R270"/>
 <element name="R58" library="rcl" package="0207/10" value="" x="47.752" y="36.576" rot="R270"/>
-<element name="D108" library="diode" package="DO35-10" value="1N4148DO35-10" x="53.848" y="35.56" rot="R270"/>
-<element name="D109" library="diode" package="DO35-10" value="1N4148DO35-10" x="57.912" y="21.336" rot="R270"/>
+<element name="D108" library="diode" package="DO35-10" value="" x="53.848" y="35.56" rot="R270"/>
+<element name="D109" library="diode" package="DO35-10" value="" x="57.912" y="21.336" rot="R270"/>
 <element name="C19" library="rcl" package="C075-032X103" value="82pF 5%" x="51.8795" y="31.5595" rot="R90"/>
-<element name="D112" library="diode" package="DO35-10" value="1N4148DO35-10" x="36.576" y="14.224" rot="R270"/>
+<element name="D112" library="diode" package="DO35-10" value="" x="36.576" y="14.224" rot="R270"/>
 <element name="R61" library="rcl" package="0207/10" value="" x="33.528" y="37.592" rot="R270"/>
-<element name="D110" library="diode" package="DO35-10" value="1N4148DO35-10" x="32.512" y="14.224" rot="R270"/>
-<element name="D111" library="diode" package="DO35-10" value="1N4148DO35-10" x="34.544" y="16.256" rot="R270"/>
+<element name="D110" library="diode" package="DO35-10" value="" x="32.512" y="14.224" rot="R270"/>
+<element name="D111" library="diode" package="DO35-10" value="" x="34.544" y="16.256" rot="R270"/>
 <element name="R60" library="rcl" package="0207/10" value="" x="31.496" y="40.64" rot="R270"/>
-<element name="D113" library="diode" package="DO35-10" value="1N4148DO35-10" x="35.56" y="31.496" rot="R270"/>
-<element name="D114" library="diode" package="DO35-10" value="1N4148DO35-10" x="38.608" y="17.272" rot="R270"/>
+<element name="D113" library="diode" package="DO35-10" value="" x="35.56" y="31.496" rot="R270"/>
+<element name="D114" library="diode" package="DO35-10" value="" x="38.608" y="17.272" rot="R270"/>
 <element name="C20" library="rcl" package="C075-032X103" value="82pF 5%" x="31.496" y="28.448" rot="R90"/>
-<element name="D117" library="diode" package="DO35-10" value="1N4148DO35-10" x="30.48" y="11.176" rot="R270"/>
+<element name="D117" library="diode" package="DO35-10" value="" x="30.48" y="11.176" rot="R270"/>
 <element name="R63" library="rcl" package="0207/10" value="" x="27.432" y="38.608" rot="R270"/>
-<element name="D115" library="diode" package="DO35-10" value="1N4148DO35-10" x="26.416" y="11.176" rot="R270"/>
-<element name="D116" library="diode" package="DO35-10" value="1N4148DO35-10" x="24.384" y="14.224" rot="R270"/>
+<element name="D115" library="diode" package="DO35-10" value="" x="26.416" y="11.176" rot="R270"/>
+<element name="D116" library="diode" package="DO35-10" value="" x="24.384" y="14.224" rot="R270"/>
 <element name="R62" library="rcl" package="0207/10" value="" x="25.4" y="35.56" rot="R270"/>
-<element name="D118" library="diode" package="DO35-10" value="1N4148DO35-10" x="29.464" y="33.528" rot="R270"/>
-<element name="D119" library="diode" package="DO35-10" value="1N4148DO35-10" x="28.448" y="15.24" rot="R270"/>
+<element name="D118" library="diode" package="DO35-10" value="" x="29.464" y="33.528" rot="R270"/>
+<element name="D119" library="diode" package="DO35-10" value="" x="28.448" y="15.24" rot="R270"/>
 <element name="C22" library="rcl" package="C075-032X103" value="82pF 5%" x="25.4" y="24.384" rot="R90"/>
-<element name="D121" library="diode" package="DO35-10" value="1N4148DO35-10" x="20.32" y="10.16" rot="R270"/>
+<element name="D121" library="diode" package="DO35-10" value="" x="20.32" y="10.16" rot="R270"/>
 <element name="R65" library="rcl" package="0207/10" value="" x="22.352" y="37.592" rot="R270"/>
-<element name="D120" library="diode" package="DO35-10" value="1N4148DO35-10" x="18.288" y="12.192" rot="R270"/>
+<element name="D120" library="diode" package="DO35-10" value="" x="18.288" y="12.192" rot="R270"/>
 <element name="R64" library="rcl" package="0207/10" value="" x="18.288" y="27.432" rot="R270"/>
-<element name="D122" library="diode" package="DO35-10" value="1N4148DO35-10" x="23.368" y="29.464" rot="R270"/>
-<element name="D123" library="diode" package="DO35-10" value="1N4148DO35-10" x="22.352" y="16.256" rot="R270"/>
+<element name="D122" library="diode" package="DO35-10" value="" x="23.368" y="29.464" rot="R270"/>
+<element name="D123" library="diode" package="DO35-10" value="" x="22.352" y="16.256" rot="R270"/>
 <element name="C23" library="rcl" package="C075-032X103" value="82pF 5%" x="20.32" y="22.352" rot="R90"/>
 <element name="C21" library="rcl" package="C050-025X075" value=".01uF" x="11.176" y="45.72" rot="R90"/>
 <element name="Q10" library="transistor-pnp" package="TO39" value="PN3640" x="26.416" y="86.36" rot="R180"/>
@@ -13357,46 +13357,46 @@ design rules under a new name.</description>
 <element name="R27" library="rcl" package="0207/10" value="3K 1/4W" x="42.672" y="82.296" rot="R270"/>
 <element name="R24" library="rcl" package="0207/10" value="1.5K 1/4W" x="20.32" y="74.168" rot="R90"/>
 <element name="C9" library="rcl" package="C075-032X103" value="33pF" x="40.64" y="81.28" rot="R270"/>
-<element name="D53" library="diode" package="DO35-10" value="1N4148DO35-10" x="15.24" y="74.168" rot="R270"/>
-<element name="D58" library="diode" package="DO35-10" value="1N4148DO35-10" x="18.288" y="71.12" rot="R270"/>
+<element name="D53" library="diode" package="DO35-10" value="" x="15.24" y="74.168" rot="R270"/>
+<element name="D58" library="diode" package="DO35-10" value="" x="18.288" y="71.12" rot="R270"/>
 <element name="R30" library="rcl" package="0207/10" value="1.5K 1/4W" x="23.368" y="71.12" rot="R90"/>
 <element name="R32" library="rcl" package="0207/10" value="3K 1/4W" x="50.8" y="70.104" rot="R270"/>
 <element name="C11" library="rcl" package="C075-032X103" value="33pF" x="47.752" y="69.088" rot="R270"/>
-<element name="D73" library="diode" package="DO35-10" value="1N4148DO35-10" x="91.44" y="113.792" rot="R270"/>
-<element name="D74" library="diode" package="DO35-10" value="1N4148DO35-10" x="106.68" y="120.904" rot="R270"/>
+<element name="D73" library="diode" package="DO35-10" value="" x="91.44" y="113.792" rot="R270"/>
+<element name="D74" library="diode" package="DO35-10" value="" x="106.68" y="120.904" rot="R270"/>
 <element name="R42" library="rcl" package="0207/10" value="1.5K 1/4W" x="102.616" y="120.904" rot="R90"/>
 <element name="R39" library="rcl" package="0207/10" value="100K" x="21.336" y="88.392" rot="R90"/>
 <element name="D66" library="diode" package="DO35-10" value="1N914" x="16.256" y="87.376" rot="R270"/>
 <element name="D67" library="diode" package="DO35-10" value="1N914" x="19.304" y="90.424" rot="R270"/>
 <element name="R38" library="rcl" package="0207/10" value="" x="27.432" y="73.152" rot="R270"/>
-<element name="D63" library="diode" package="DO35-10" value="1N4148DO35-10" x="27.432" y="57.912" rot="R270"/>
+<element name="D63" library="diode" package="DO35-10" value="" x="27.432" y="57.912" rot="R270"/>
 <element name="R46" library="rcl" package="0207/10" value="100K" x="62.992" y="73.152" rot="R270"/>
 <element name="R48" library="rcl" package="0207/10" value="3K 1/4W" x="94.488" y="87.376" rot="R90"/>
 <element name="R45" library="rcl" package="0207/10" value="" x="34.544" y="70.104" rot="R270"/>
 <element name="D80" library="diode" package="DO35-10" value="1N914" x="57.912" y="80.264" rot="R270"/>
 <element name="D81" library="diode" package="DO35-10" value="1N914" x="60.96" y="77.216" rot="R270"/>
-<element name="D79" library="diode" package="DO35-10" value="1N4148DO35-10" x="34.544" y="54.864" rot="R270"/>
+<element name="D79" library="diode" package="DO35-10" value="" x="34.544" y="54.864" rot="R270"/>
 <element name="R51" library="rcl" package="0207/10" value="100K" x="99.568" y="122.936" rot="R90"/>
 <element name="D92" library="diode" package="DO35-10" value="1N914" x="82.296" y="113.792" rot="R270"/>
 <element name="D91" library="diode" package="DO35-10" value="1N914" x="79.248" y="113.792" rot="R270"/>
-<element name="D90" library="diode" package="DO35-10" value="1N4148DO35-10" x="32.512" y="57.912" rot="R270"/>
+<element name="D90" library="diode" package="DO35-10" value="" x="32.512" y="57.912" rot="R270"/>
 <element name="R50" library="rcl" package="0207/10" value="" x="32.512" y="73.152" rot="R270"/>
 <element name="R54" library="rcl" package="0207/10" value="3K 1/4W" x="89.408" y="120.904" rot="R270"/>
-<element name="D124" library="diode" package="DO35-10" value="1N4148DO35-10" x="87.376" y="113.792" rot="R270"/>
-<element name="D84" library="diode" package="DO35-10" value="1N4148DO35-10" x="55.88" y="76.2" rot="R270"/>
+<element name="D124" library="diode" package="DO35-10" value="" x="87.376" y="113.792" rot="R270"/>
+<element name="D84" library="diode" package="DO35-10" value="" x="55.88" y="76.2" rot="R270"/>
 <element name="R33" library="rcl" package="0207/10" value="470 1/4W" x="71.12" y="59.944" rot="R270"/>
 <element name="C8" library="rcl" package="C075-032X103" value="47pF" x="67.056" y="52.832" rot="R90"/>
 <element name="R23" library="rcl" package="0207/10" value="10K" x="56.896" y="52.832" rot="R90"/>
-<element name="D54" library="diode" package="DO35-10" value="1N4148DO35-10" x="48.768" y="54.864" rot="R270"/>
-<element name="D62" library="diode" package="DO35-10" value="1N4148DO35-10" x="52.832" y="54.864" rot="R270"/>
-<element name="D61" library="diode" package="DO35-10" value="1N4148DO35-10" x="45.72" y="70.104" rot="R270"/>
-<element name="D70" library="diode" package="DO35-10" value="1N4148DO35-10" x="60.96" y="60.96" rot="R270"/>
-<element name="D76" library="diode" package="DO35-10" value="1N4148DO35-10" x="46.736" y="52.832" rot="R270"/>
+<element name="D54" library="diode" package="DO35-10" value="" x="48.768" y="54.864" rot="R270"/>
+<element name="D62" library="diode" package="DO35-10" value="" x="52.832" y="54.864" rot="R270"/>
+<element name="D61" library="diode" package="DO35-10" value="" x="45.72" y="70.104" rot="R270"/>
+<element name="D70" library="diode" package="DO35-10" value="" x="60.96" y="60.96" rot="R270"/>
+<element name="D76" library="diode" package="DO35-10" value="" x="46.736" y="52.832" rot="R270"/>
 <element name="C12" library="rcl" package="C075-032X103" value="47pF" x="64.008" y="55.88" rot="R270"/>
 <element name="R37" library="rcl" package="0207/10" value="10K" x="54.864" y="54.864" rot="R90"/>
 <element name="R40" library="rcl" package="0207/10" value="10K" x="39.624" y="70.104" rot="R270"/>
 <element name="R66" library="rcl" package="0207/10" value="100 1/4W" x="50.8" y="57.912" rot="R90"/>
-<element name="D77" library="diode" package="DO35-10" value="1N4148DO35-10" x="39.624" y="54.864" rot="R270"/>
+<element name="D77" library="diode" package="DO35-10" value="" x="39.624" y="54.864" rot="R270"/>
 <element name="R67" library="rcl" package="0207/10" value="0" x="89.408" y="45.72" rot="R90"/>
 <element name="R68" library="rcl" package="0207/10" value="0" x="81.28" y="53.848" rot="R270"/>
 <element name="U$2" library="dec-con" package="FLIPCHIP" value="FLIPCHIP" x="0" y="0"/>
@@ -13555,8 +13555,6 @@ design rules under a new name.</description>
 <contactref element="D29" pad="C"/>
 <contactref element="D36" pad="C"/>
 <contactref element="D87" pad="C"/>
-<contactref element="D86" pad="C"/>
-<contactref element="D94" pad="C"/>
 <contactref element="D95" pad="C"/>
 <contactref element="D99" pad="C"/>
 <contactref element="D107" pad="C"/>
@@ -13567,7 +13565,6 @@ design rules under a new name.</description>
 <contactref element="D121" pad="C"/>
 <contactref element="D37" pad="C"/>
 <contactref element="D61" pad="C"/>
-<wire x1="95.504" y1="26.416" x2="97.536" y2="28.448" width="0.8128" layer="16"/>
 <wire x1="91.44" y1="26.416" x2="95.504" y2="26.416" width="0.8128" layer="16"/>
 <wire x1="89.408" y1="24.384" x2="91.44" y2="26.416" width="0.8128" layer="16"/>
 <wire x1="87.376" y1="24.384" x2="89.408" y2="24.384" width="0.8128" layer="16"/>
@@ -13588,8 +13585,6 @@ design rules under a new name.</description>
 <wire x1="8.128" y1="27.432" x2="8.128" y2="49.784" width="0.8128" layer="16"/>
 <wire x1="71.12" y1="23.368" x2="74.168" y2="23.368" width="0.8128" layer="16"/>
 <wire x1="74.168" y1="23.368" x2="77.216" y2="26.416" width="0.8128" layer="16"/>
-<wire x1="77.216" y1="26.416" x2="81.28" y2="26.416" width="0.8128" layer="16"/>
-<wire x1="81.28" y1="26.416" x2="85.344" y2="26.416" width="0.8128" layer="16"/>
 <wire x1="85.344" y1="26.416" x2="87.376" y2="24.384" width="0.8128" layer="16"/>
 <wire x1="20.32" y1="105.664" x2="20.32" y2="109.728" width="0.8128" layer="16"/>
 <wire x1="20.32" y1="109.728" x2="25.4" y2="115.824" width="0.8128" layer="16"/>
@@ -13622,6 +13617,11 @@ design rules under a new name.</description>
 <via x="13.208" y="102.616" extent="1-16" drill="0.8128"/>
 <via x="13.208" y="54.864" extent="1-16" drill="0.8128"/>
 <via x="42.672" y="62.992" extent="1-16" drill="0.8128"/>
+<contactref element="D94" pad="C"/>
+<contactref element="D86" pad="C"/>
+<wire x1="77.216" y1="26.416" x2="81.28" y2="26.416" width="0.8128" layer="16"/>
+<wire x1="85.344" y1="26.416" x2="81.28" y2="26.416" width="0.8128" layer="16"/>
+<wire x1="95.504" y1="26.416" x2="97.536" y2="28.448" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$13">
 <contactref element="D102" pad="C"/>

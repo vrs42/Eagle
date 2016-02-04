@@ -3388,6 +3388,48 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,66.04,121.725,SV1,,,,,"/>
+<approved hash="113,1,53.34,148.315,R1,,,,,"/>
+<approved hash="113,1,78.74,148.315,R2,,,,,"/>
+<approved hash="113,1,40.64,145.775,R3,,,,,"/>
+<approved hash="113,1,91.44,145.775,R4,,,,,"/>
+<approved hash="113,1,53.34,143.235,R5,,,,,"/>
+<approved hash="113,1,78.74,143.235,R6,,,,,"/>
+<approved hash="113,1,40.64,140.695,R7,,,,,"/>
+<approved hash="113,1,91.44,140.695,R8,,,,,"/>
+<approved hash="113,1,53.34,138.155,R9,,,,,"/>
+<approved hash="113,1,78.74,138.155,R10,,,,,"/>
+<approved hash="113,1,40.64,135.615,R11,,,,,"/>
+<approved hash="113,1,91.44,135.615,R12,,,,,"/>
+<approved hash="113,1,53.34,133.075,R13,,,,,"/>
+<approved hash="113,1,78.74,133.075,R14,,,,,"/>
+<approved hash="113,1,40.64,130.535,R15,,,,,"/>
+<approved hash="113,1,91.44,130.535,R16,,,,,"/>
+<approved hash="113,1,53.34,127.995,R17,,,,,"/>
+<approved hash="113,1,78.74,127.995,R18,,,,,"/>
+<approved hash="113,1,40.64,125.455,R19,,,,,"/>
+<approved hash="113,1,91.44,125.455,R20,,,,,"/>
+<approved hash="113,1,53.34,122.915,R21,,,,,"/>
+<approved hash="113,1,78.74,122.915,R22,,,,,"/>
+<approved hash="113,1,40.64,120.375,R23,,,,,"/>
+<approved hash="113,1,91.44,120.375,R24,,,,,"/>
+<approved hash="113,1,53.34,117.835,R25,,,,,"/>
+<approved hash="113,1,78.74,117.835,R26,,,,,"/>
+<approved hash="113,1,40.64,115.295,R27,,,,,"/>
+<approved hash="113,1,91.44,115.295,R28,,,,,"/>
+<approved hash="113,1,53.34,112.755,R29,,,,,"/>
+<approved hash="113,1,78.74,112.755,R30,,,,,"/>
+<approved hash="113,1,40.64,110.215,R31,,,,,"/>
+<approved hash="113,1,91.44,110.215,R32,,,,,"/>
+<approved hash="113,1,53.34,107.675,R33,,,,,"/>
+<approved hash="113,1,78.74,107.675,R34,,,,,"/>
+<approved hash="113,1,40.64,105.135,R35,,,,,"/>
+<approved hash="113,1,91.44,105.135,R36,,,,,"/>
+<approved hash="113,1,53.34,102.595,R37,,,,,"/>
+<approved hash="113,1,78.74,102.595,R38,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

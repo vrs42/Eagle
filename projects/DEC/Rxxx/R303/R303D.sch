@@ -15756,9 +15756,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="C7" library="rcl" deviceset="C-US" device="325-137X374" value=".39uF"/>
 <part name="C5" library="rcl" deviceset="C-US" device="225-062X268" value=".027uF"/>
-<part name="R9" library="dec-con" deviceset="275P" device=""/>
-<part name="R8" library="rcl" deviceset="R-TRIMM" device="43P" value="3006P"/>
-<part name="R10" library="pot" deviceset="TRIM_US-" device="B25P" value="B25P"/>
+<part name="R9" library="dec-con" deviceset="275P" device="" value="20K"/>
+<part name="R8" library="rcl" deviceset="R-TRIMM" device="43P" value="20K"/>
+<part name="R10" library="pot" deviceset="TRIM_US-" device="B25P" value="20K"/>
 <part name="C9" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="39uF"/>
 <part name="V8" library="supply2" deviceset="-15V" device=""/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
@@ -16694,6 +16694,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
