@@ -13731,7 +13731,7 @@ grid 5.08 mm</description>
 <part name="V18" library="supply2" deviceset="VSS" device=""/>
 <part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4004"/>
 <part name="V13" library="supply2" deviceset="VSS" device=""/>
-<part name="C1" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
+<part name="C1" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="1uF 150V"/>
 <part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4004"/>
 <part name="V6" library="supply2" deviceset="-15V" device=""/>
 <part name="V14" library="supply2" deviceset="VSS" device=""/>
@@ -14163,6 +14163,10 @@ grid 5.08 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+<approved hash="113,1,113.69,60.96,SV2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

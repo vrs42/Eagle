@@ -3199,6 +3199,7 @@ DIN A3, landscape with extra doc field</description>
 <approved hash="114,1,208.28,166.37,A06,H2,D,,,"/>
 <approved hash="114,1,208.28,166.37,A06,H2,C,,,"/>
 <approved hash="114,1,208.28,166.37,A06,H2,S,,,"/>
+<approved hash="106,1,350.52,170.18,ANZ,,,,,"/>
 <approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
 </errors>
 </schematic>

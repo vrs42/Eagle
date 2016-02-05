@@ -4456,6 +4456,14 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,33.909,55.88,U$1,,,,,"/>
+<approved hash="113,1,73.66,78.668,IC3,,,,,"/>
+<approved hash="113,1,114.3,78.668,IC1,,,,,"/>
+<approved hash="113,1,93.98,45.648,IC2,,,,,"/>
+<approved hash="113,1,64.5998,13.97,C1,,,,,"/>
+<approved hash="113,1,74.7598,13.97,C2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

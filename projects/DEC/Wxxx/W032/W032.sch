@@ -1733,6 +1733,10 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,121.92,59.4953,SV1,,,,,"/>
+<approved hash="113,1,110.109,71.12,U$2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

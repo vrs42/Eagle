@@ -8287,6 +8287,30 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,378.46,210.82,E17C,O,,,,"/>
+<approved hash="101,1,378.46,223.52,E2A,O,,,,"/>
+<approved hash="101,1,378.46,233.68,E2B,O,,,,"/>
+<approved hash="101,1,378.46,254,E2C,O,,,,"/>
+<approved hash="101,1,378.46,243.84,E2E,O,,,,"/>
+<approved hash="106,1,375.92,68.58,+10V,,,,,"/>
+<approved hash="106,1,378.46,68.58,+10V,,,,,"/>
+<approved hash="206,1,304.8,180.34,N$64,,,,,"/>
+<approved hash="206,1,190.5,106.68,N$64,,,,,"/>
+<approved hash="113,1,48.26,245.491,U$2,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,157.759,146.147,TP1,,,,,"/>
+<approved hash="113,1,289.839,143.607,TP2,,,,,"/>
+<approved hash="113,1,213.36,146.389,8/5H,,,,,"/>
+<approved hash="113,1,220.98,110.829,8/5L,,,,,"/>
+<approved hash="113,1,238.76,59.3513,1.5|2.0-1.0,,,,,"/>
+<approved hash="113,1,61.2394,102.967,TP3,,,,,"/>
+<approved hash="113,1,79.0194,75.0274,TP4,,,,,"/>
+<approved hash="113,1,132.359,92.8074,TP5,,,,,"/>
+<approved hash="113,1,279.679,24.2274,TP6,,,,,"/>
+<approved hash="113,1,246.38,47.3287,1.0|2.0,,,,,"/>
+<approved hash="113,1,226.06,47.3287,1.5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

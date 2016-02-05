@@ -12015,7 +12015,7 @@ high speed (Philips)</description>
 <part name="C4" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="V10" library="supply2" deviceset="-15V" device=""/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
-<part name="C1" library="rcl" deviceset="CPOL-US" device="E25-9AXIAL"/>
+<part name="C1" library="rcl" deviceset="CPOL-US" device="E25-9AXIAL" value="1uF 150V"/>
 <part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N3653"/>
 <part name="V6" library="supply2" deviceset="-15V" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0817/22" value="750 2W"/>
@@ -12263,6 +12263,7 @@ high speed (Philips)</description>
 <pinref part="EDGE" gate="P2" pin="1"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="3" gate="P" pin="P"/>
+<label x="177.8" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="152.4" y1="25.4" x2="144.78" y2="25.4" width="0.1524" layer="91"/>
@@ -12341,6 +12342,16 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+<approved hash="113,1,172.441,143.413,4,,,,,"/>
+<approved hash="113,1,172.441,100.233,3,,,,,"/>
+<approved hash="113,1,109.499,148.493,7,,,,,"/>
+<approved hash="113,1,109.499,112.933,6,,,,,"/>
+<approved hash="113,1,109.499,90.0726,+RL,,,,,"/>
+<approved hash="113,1,142.519,44.3526,-30V,,,,,"/>
+<approved hash="113,1,109.499,62.1326,-RL,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

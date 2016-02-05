@@ -5346,13 +5346,6 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="+10V">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+10V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="SUPPLY">
@@ -5372,19 +5365,6 @@ Source: AVX .. aphvc.pdf</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="-15V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+10V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="+10V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5523,7 +5503,6 @@ high speed (Philips)</description>
 <part name="D21" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="D20" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="V14" library="supply2" deviceset="GND" device=""/>
-<part name="V2" library="supply2" deviceset="+10V" device=""/>
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="V8" library="supply2" deviceset="-15V" device=""/>
 <part name="D23" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
@@ -5610,7 +5589,6 @@ high speed (Philips)</description>
 <instance part="U$2" gate="D2" x="12.7" y="149.86"/>
 <instance part="U$2" gate="C2" x="15.24" y="30.48"/>
 <instance part="U$2" gate="B2" x="15.24" y="20.32"/>
-<instance part="U$2" gate="A2" x="15.24" y="38.1"/>
 <instance part="V11" gate="GND" x="20.32" y="27.94"/>
 <instance part="V12" gate="G$1" x="20.32" y="17.78"/>
 <instance part="R17" gate="G$1" x="226.06" y="116.84" rot="R90"/>
@@ -5619,7 +5597,6 @@ high speed (Philips)</description>
 <instance part="D21" gate="G$1" x="226.06" y="162.56" rot="MR270"/>
 <instance part="D20" gate="G$1" x="226.06" y="175.26" rot="MR270"/>
 <instance part="V14" gate="GND" x="238.76" y="177.8"/>
-<instance part="V2" gate="G$1" x="20.32" y="40.64"/>
 <instance part="C2" gate="G$1" x="233.68" y="160.02"/>
 <instance part="V8" gate="G$1" x="25.4" y="132.08"/>
 <instance part="D23" gate="G$1" x="226.06" y="137.16" rot="MR270"/>
@@ -5847,13 +5824,6 @@ high speed (Philips)</description>
 <pinref part="D12" gate="G$1" pin="A"/>
 <pinref part="D14" gate="G$1" pin="A"/>
 <pinref part="D15" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="+10V" class="1">
-<segment>
-<wire x1="20.32" y1="38.1" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="V2" gate="G$1" pin="+10V"/>
-<pinref part="U$2" gate="A2" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6109,6 +6079,9 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

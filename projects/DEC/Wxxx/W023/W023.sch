@@ -1361,7 +1361,7 @@
 <pinref part="PAD2" gate="P" pin="P"/>
 </segment>
 <segment>
-<wire x1="12.7" y1="30.48" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="30.48" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
 <label x="7.62" y="30.48" size="1.778" layer="95"/>
 <pinref part="SV2" gate="G$1" pin="2"/>
 </segment>
@@ -1373,7 +1373,7 @@
 <pinref part="PAD4" gate="P" pin="P"/>
 </segment>
 <segment>
-<wire x1="12.7" y1="33.02" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
 <label x="7.62" y="33.02" size="1.778" layer="95"/>
 <pinref part="SV2" gate="G$1" pin="4"/>
 </segment>
@@ -1381,6 +1381,13 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,20.32,52.2647,SV2,,,,,"/>
+<approved hash="113,1,81.9246,89.3106,PAD1,,,,,"/>
+<approved hash="113,1,63.2926,89.1836,PAD2,,,,,"/>
+<approved hash="113,1,81.9246,84.2306,PAD3,,,,,"/>
+<approved hash="113,1,63.2926,84.1036,PAD4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

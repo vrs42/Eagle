@@ -6994,7 +6994,7 @@ Source: AVX .. aphvc.pdf</description>
 <text x="220.98" y="50.8" size="1.778" layer="94">Not installed</text>
 <text x="238.76" y="43.18" size="1.778" layer="94">Installed</text>
 <text x="294.64" y="66.04" size="1.778" layer="94">HC logic chosen for ability to operate at 3.6V.</text>
-<text x="-43.18" y="254" size="1.778" layer="91">FIX polarity reversal on all FF inputs.</text>
+<text x="-60.96" y="254" size="1.778" layer="91">FIX polarity reversal on all FF inputs.</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="355.6" y="66.04"/>
@@ -8757,6 +8757,25 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,378.46,246.38,E12E,O,,,,"/>
+<approved hash="101,1,378.46,233.68,E2E,O,,,,"/>
+<approved hash="106,1,363.22,99.06,+10V,,,,,"/>
+<approved hash="106,1,365.76,99.06,+10V,,,,,"/>
+<approved hash="113,1,48.26,245.491,U$2,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,157.759,146.147,TP1,,,,,"/>
+<approved hash="113,1,289.839,146.147,TP2,,,,,"/>
+<approved hash="113,1,220.98,112.691,8/5H,,,,,"/>
+<approved hash="113,1,218.44,148.251,8/5L,,,,,"/>
+<approved hash="113,1,238.76,59.3513,1.5|2.0-1.0,,,,,"/>
+<approved hash="113,1,61.2394,102.967,TP3,,,,,"/>
+<approved hash="113,1,48.5394,80.1074,TP4,,,,,"/>
+<approved hash="113,1,132.359,92.8074,TP5,,,,,"/>
+<approved hash="113,1,277.139,34.3874,TP6,,,,,"/>
+<approved hash="113,1,246.38,47.3287,1.0|2.0,,,,,"/>
+<approved hash="113,1,226.06,47.3287,1.5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -15054,6 +15054,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,111.76,78.74,H1,MOUNT,,,,"/>
+<approved hash="101,1,111.76,68.58,H2,MOUNT,,,,"/>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+<approved hash="113,1,25.4,120.946,S1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

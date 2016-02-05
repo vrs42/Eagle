@@ -698,11 +698,6 @@ DIN A4, landscape with extra doc field</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="VCC">
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="-15V">
 <wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
 <circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
@@ -718,19 +713,6 @@ DIN A4, landscape with extra doc field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VCC" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="-15V" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -3286,7 +3268,6 @@ high speed (Philips)</description>
 <part name="U$1" library="dec-con" deviceset="OUTLINE-*" device="SINGLE"/>
 <part name="EDGE" library="dec-con" deviceset="EDGE-1" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
-<part name="V1" library="supply2" deviceset="VCC" device=""/>
 <part name="V2" library="supply2" deviceset="-15V" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
@@ -3345,10 +3326,8 @@ high speed (Philips)</description>
 <instance part="EDGE" gate="E2" x="22.86" y="129.54"/>
 <instance part="EDGE" gate="C2" x="15.24" y="25.4" rot="MR180"/>
 <instance part="EDGE" gate="B2" x="15.24" y="33.02" rot="MR180"/>
-<instance part="EDGE" gate="A2" x="15.24" y="40.64" rot="MR180"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="162.56" y="0"/>
-<instance part="V1" gate="G$1" x="20.32" y="43.18"/>
 <instance part="V2" gate="G$1" x="20.32" y="30.48"/>
 <instance part="V3" gate="GND" x="20.32" y="22.86"/>
 <instance part="D1" gate="G$1" x="238.76" y="157.48" rot="MR270"/>
@@ -3385,13 +3364,6 @@ high speed (Philips)</description>
 <busses>
 </busses>
 <nets>
-<net name="VCC" class="1">
-<segment>
-<wire x1="20.32" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="EDGE" gate="A2" pin="1"/>
-<pinref part="V1" gate="G$1" pin="VCC"/>
-</segment>
-</net>
 <net name="-15V" class="1">
 <segment>
 <wire x1="17.78" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
@@ -3651,6 +3623,9 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

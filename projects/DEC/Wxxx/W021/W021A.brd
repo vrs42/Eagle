@@ -112,7 +112,7 @@
 <text x="0" y="-1.27" size="0.508" layer="200" font="vector">C:/Users/Vince/Documents/websvn/trunk/Eagle/projects/DEC/Wxxx/W021/W021Abackfb.bmp</text>
 <text x="6.35" y="48.26" size="2.54" layer="16" font="vector" ratio="22" rot="SMR270">W021</text>
 <text x="12.7" y="58.42" size="2.54" layer="16" font="vector" ratio="22" rot="SMR270">A</text>
-<text x="13.97" y="30.48" size="1.778" layer="16" font="vector" ratio="22" rot="SMR270">6-67</text>
+<text x="13.97" y="30.48" size="1.778" layer="16" font="vector" ratio="24" rot="SMR270">6-67</text>
 <rectangle x1="50.927" y1="-0.127" x2="51.181" y2="0.127" layer="200"/>
 <rectangle x1="56.769" y1="-0.127" x2="57.023" y2="0.127" layer="200"/>
 <rectangle x1="65.151" y1="-0.127" x2="65.405" y2="0.127" layer="200"/>
@@ -3434,7 +3434,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="16mil"/>

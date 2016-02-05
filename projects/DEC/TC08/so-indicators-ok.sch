@@ -6973,6 +6973,84 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,177.864,134.62,IC9,E,I,,,"/>
+<approved hash="114,1,375.857,50.8,IC12,C,I,,,"/>
+<approved hash="114,1,375.857,50.8,IC12,D,I,,,"/>
+<approved hash="114,1,375.857,50.8,IC12,E,I,,,"/>
+<approved hash="114,1,375.857,50.8,IC12,F,I,,,"/>
+<approved hash="113,1,33.3417,158.75,USR0,,,,,"/>
+<approved hash="113,1,43.5017,158.75,USR1,,,,,"/>
+<approved hash="113,1,53.6617,158.75,USR2,,,,,"/>
+<approved hash="113,1,63.8217,158.75,MR0,,,,,"/>
+<approved hash="113,1,73.9817,158.75,MR1,,,,,"/>
+<approved hash="113,1,84.1417,158.75,FR0,,,,,"/>
+<approved hash="113,1,94.3017,158.75,FR1,,,,,"/>
+<approved hash="113,1,104.462,158.75,FR2,,,,,"/>
+<approved hash="113,1,114.622,158.75,FR3,,,,,"/>
+<approved hash="113,1,127.322,158.75,ENI,,,,,"/>
+<approved hash="113,1,137.482,158.75,EF,,,,,"/>
+<approved hash="113,1,147.642,158.75,MK,,,,,"/>
+<approved hash="113,1,157.802,158.75,END,,,,,"/>
+<approved hash="113,1,167.962,158.75,SE,,,,,"/>
+<approved hash="113,1,178.122,158.75,PAR,,,,,"/>
+<approved hash="113,1,188.282,158.75,TIM,,,,,"/>
+<approved hash="113,1,198.442,158.75,MF0,,,,,"/>
+<approved hash="113,1,211.142,158.75,MF1,,,,,"/>
+<approved hash="113,1,221.302,158.75,MF2,,,,,"/>
+<approved hash="113,1,231.462,158.75,DTF,,,,,"/>
+<approved hash="113,1,241.622,158.75,DF,,,,,"/>
+<approved hash="113,1,251.782,158.75,W,,,,,"/>
+<approved hash="113,1,261.942,158.75,WC,,,,,"/>
+<approved hash="113,1,272.102,158.75,UTS,,,,,"/>
+<approved hash="113,1,282.262,158.75,BM,,,,,"/>
+<approved hash="113,1,292.422,158.75,RC,,,,,"/>
+<approved hash="113,1,305.122,158.75,D,,,,,"/>
+<approved hash="113,1,315.282,158.75,F,,,,,"/>
+<approved hash="113,1,325.442,158.75,CK,,,,,"/>
+<approved hash="113,1,335.602,158.75,IDLE,,,,,"/>
+<approved hash="113,1,355.922,158.75,MC1,,,,,"/>
+<approved hash="113,1,345.762,158.75,MC0,,,,,"/>
+<approved hash="113,1,366.082,158.75,MC2,,,,,"/>
+<approved hash="113,1,33.3417,26.67,DTB0,,,,,"/>
+<approved hash="113,1,43.5017,26.67,DTB1,,,,,"/>
+<approved hash="113,1,53.6617,26.67,DTB2,,,,,"/>
+<approved hash="113,1,63.8217,26.67,DTB3,,,,,"/>
+<approved hash="113,1,73.9817,26.67,DTB4,,,,,"/>
+<approved hash="113,1,84.1417,26.67,DTB5,,,,,"/>
+<approved hash="113,1,94.3017,26.67,DTB6,,,,,"/>
+<approved hash="113,1,104.462,26.67,DTB7,,,,,"/>
+<approved hash="113,1,114.622,26.67,DTB8,,,,,"/>
+<approved hash="113,1,127.322,26.67,DTB9,,,,,"/>
+<approved hash="113,1,137.482,26.67,DTB10,,,,,"/>
+<approved hash="113,1,147.642,26.67,DTB11,,,,,"/>
+<approved hash="113,1,157.802,26.67,WB0,,,,,"/>
+<approved hash="113,1,167.962,26.67,WB1,,,,,"/>
+<approved hash="113,1,178.122,26.67,WB2,,,,,"/>
+<approved hash="113,1,188.282,26.67,LPB0,,,,,"/>
+<approved hash="113,1,198.442,26.67,LPB1,,,,,"/>
+<approved hash="113,1,208.602,26.67,LPB2,,,,,"/>
+<approved hash="113,1,218.762,26.67,LPB3,,,,,"/>
+<approved hash="113,1,228.922,26.67,LPB4,,,,,"/>
+<approved hash="113,1,239.082,26.67,LPB5,,,,,"/>
+<approved hash="113,1,249.242,26.67,C0,,,,,"/>
+<approved hash="113,1,259.402,26.67,C1,,,,,"/>
+<approved hash="113,1,269.562,26.67,MKT,,,,,"/>
+<approved hash="113,1,279.722,26.67,W0,,,,,"/>
+<approved hash="113,1,289.882,26.67,W1,,,,,"/>
+<approved hash="113,1,300.042,26.67,W2,,,,,"/>
+<approved hash="113,1,310.202,26.67,W3,,,,,"/>
+<approved hash="113,1,320.362,26.67,W4,,,,,"/>
+<approved hash="113,1,330.522,26.67,W5,,,,,"/>
+<approved hash="113,1,343.222,26.67,W6,,,,,"/>
+<approved hash="113,1,353.382,26.67,W7,,,,,"/>
+<approved hash="113,1,363.542,26.67,W8,,,,,"/>
+<approved hash="113,1,376.242,26.67,WTM,,,,,"/>
+<approved hash="113,1,373.38,94.8605,SWTM,,,,,"/>
+<approved hash="113,1,119.185,93.98,SV1,,,,,"/>
+<approved hash="113,1,294.445,93.98,SV2,,,,,"/>
+<approved hash="113,1,108.143,185.42,X3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

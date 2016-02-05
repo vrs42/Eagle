@@ -12284,116 +12284,116 @@ Source: AVX .. aphvc.pdf</description>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
 <part name="V1" library="supply2" deviceset="-15V" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="0"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="Open"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
-<part name="R5" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C4" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
-<part name="R7" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C5" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
-<part name="R9" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R10" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R10" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C6" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
-<part name="R11" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R12" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R11" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C7" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V8" library="supply2" deviceset="GND" device=""/>
-<part name="R13" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R14" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R13" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R14" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C8" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
-<part name="R15" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R16" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R15" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R16" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C9" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V10" library="supply2" deviceset="GND" device=""/>
-<part name="R17" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R18" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R17" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R18" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C10" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
-<part name="R19" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R20" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C11" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V12" library="supply2" deviceset="GND" device=""/>
-<part name="R21" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R22" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R22" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C12" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="R23" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R24" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R23" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R24" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C13" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V14" library="supply2" deviceset="GND" device=""/>
-<part name="R25" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R26" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R25" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R26" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C14" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V15" library="supply2" deviceset="GND" device=""/>
-<part name="R27" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R28" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R27" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R28" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C15" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V16" library="supply2" deviceset="GND" device=""/>
-<part name="R29" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R30" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R29" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R30" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C16" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V17" library="supply2" deviceset="GND" device=""/>
-<part name="R31" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R32" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R31" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R32" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C17" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V18" library="supply2" deviceset="GND" device=""/>
-<part name="R33" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R34" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R33" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R34" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C18" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V19" library="supply2" deviceset="GND" device=""/>
-<part name="R35" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R36" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R35" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R36" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C19" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V20" library="supply2" deviceset="GND" device=""/>
-<part name="R37" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R38" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R37" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R38" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C20" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V21" library="supply2" deviceset="GND" device=""/>
-<part name="R39" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R40" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R39" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R40" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C21" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V22" library="supply2" deviceset="GND" device=""/>
-<part name="R41" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R42" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R41" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R42" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C22" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V23" library="supply2" deviceset="GND" device=""/>
-<part name="R43" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R44" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="C23" library="rcl" deviceset="C-US" device="050-025X075"/>
+<part name="R43" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R44" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
+<part name="C23" library="rcl" deviceset="C-US" device="050-025X075" value="330"/>
 <part name="V24" library="supply2" deviceset="GND" device=""/>
-<part name="R45" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R46" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R45" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R46" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C24" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V25" library="supply2" deviceset="GND" device=""/>
-<part name="R47" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R48" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R47" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R48" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C25" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V26" library="supply2" deviceset="GND" device=""/>
-<part name="R49" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R50" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R49" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R50" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C26" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V27" library="supply2" deviceset="GND" device=""/>
-<part name="R51" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R52" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R51" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R52" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C27" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V28" library="supply2" deviceset="GND" device=""/>
-<part name="R53" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R54" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R53" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R54" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C28" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="V29" library="supply2" deviceset="GND" device=""/>
-<part name="R55" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R56" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R55" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R56" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C29" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="R57" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="R58" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R57" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
+<part name="R58" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="C30" library="rcl" deviceset="C-US" device="050-025X075"/>
 <part name="PAD2" library="wirepad" deviceset="1,6/0,9" device=""/>
 <part name="PAD1" library="wirepad" deviceset="1,6/0,9" device=""/>
@@ -12609,34 +12609,34 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R57" gate="G$1" x="251.46" y="43.18" rot="R90"/>
 <instance part="R58" gate="G$1" x="251.46" y="27.94" rot="R90"/>
 <instance part="C30" gate="G$1" x="256.54" y="30.48"/>
-<instance part="PAD2" gate="1" x="104.14" y="58.42" rot="R90"/>
-<instance part="PAD1" gate="1" x="91.44" y="58.42" rot="R90"/>
-<instance part="PAD3" gate="1" x="116.84" y="58.42" rot="R90"/>
-<instance part="PAD4" gate="1" x="129.54" y="58.42" rot="R90"/>
-<instance part="PAD5" gate="1" x="142.24" y="58.42" rot="R90"/>
-<instance part="PAD6" gate="1" x="154.94" y="58.42" rot="R90"/>
-<instance part="PAD7" gate="1" x="167.64" y="58.42" rot="R90"/>
-<instance part="PAD8" gate="1" x="180.34" y="58.42" rot="R90"/>
-<instance part="PAD9" gate="1" x="193.04" y="58.42" rot="R90"/>
-<instance part="PAD10" gate="1" x="205.74" y="58.42" rot="R90"/>
-<instance part="PAD11" gate="1" x="218.44" y="58.42" rot="R90"/>
-<instance part="PAD12" gate="1" x="231.14" y="58.42" rot="R90"/>
-<instance part="PAD13" gate="1" x="243.84" y="58.42" rot="R90"/>
-<instance part="PAD14" gate="1" x="256.54" y="58.42" rot="R90"/>
-<instance part="PAD15" gate="1" x="91.44" y="20.32" rot="R90"/>
-<instance part="PAD16" gate="1" x="104.14" y="20.32" rot="R90"/>
-<instance part="PAD17" gate="1" x="116.84" y="20.32" rot="R90"/>
-<instance part="PAD18" gate="1" x="129.54" y="20.32" rot="R90"/>
-<instance part="PAD19" gate="1" x="142.24" y="20.32" rot="R90"/>
-<instance part="PAD20" gate="1" x="154.94" y="20.32" rot="R90"/>
-<instance part="PAD21" gate="1" x="167.64" y="20.32" rot="R90"/>
-<instance part="PAD22" gate="1" x="180.34" y="20.32" rot="R90"/>
-<instance part="PAD23" gate="1" x="193.04" y="20.32" rot="R90"/>
-<instance part="PAD24" gate="1" x="205.74" y="20.32" rot="R90"/>
-<instance part="PAD25" gate="1" x="218.44" y="20.32" rot="R90"/>
-<instance part="PAD26" gate="1" x="231.14" y="20.32" rot="R90"/>
-<instance part="PAD27" gate="1" x="243.84" y="20.32" rot="R90"/>
-<instance part="PAD28" gate="1" x="256.54" y="20.32" rot="R90"/>
+<instance part="PAD2" gate="1" x="104.14" y="58.42" rot="MR90"/>
+<instance part="PAD1" gate="1" x="91.44" y="58.42" rot="MR90"/>
+<instance part="PAD3" gate="1" x="116.84" y="58.42" rot="MR90"/>
+<instance part="PAD4" gate="1" x="129.54" y="58.42" rot="MR90"/>
+<instance part="PAD5" gate="1" x="142.24" y="58.42" rot="MR90"/>
+<instance part="PAD6" gate="1" x="154.94" y="58.42" rot="MR90"/>
+<instance part="PAD7" gate="1" x="167.64" y="58.42" rot="MR90"/>
+<instance part="PAD8" gate="1" x="180.34" y="58.42" rot="MR90"/>
+<instance part="PAD9" gate="1" x="193.04" y="58.42" rot="MR90"/>
+<instance part="PAD10" gate="1" x="205.74" y="58.42" rot="MR90"/>
+<instance part="PAD11" gate="1" x="218.44" y="58.42" rot="MR90"/>
+<instance part="PAD12" gate="1" x="231.14" y="58.42" rot="MR90"/>
+<instance part="PAD13" gate="1" x="243.84" y="58.42" rot="MR90"/>
+<instance part="PAD14" gate="1" x="256.54" y="58.42" rot="MR90"/>
+<instance part="PAD15" gate="1" x="91.44" y="20.32" rot="MR90"/>
+<instance part="PAD16" gate="1" x="104.14" y="20.32" rot="MR90"/>
+<instance part="PAD17" gate="1" x="116.84" y="20.32" rot="MR90"/>
+<instance part="PAD18" gate="1" x="129.54" y="20.32" rot="MR90"/>
+<instance part="PAD19" gate="1" x="142.24" y="20.32" rot="MR90"/>
+<instance part="PAD20" gate="1" x="154.94" y="20.32" rot="MR90"/>
+<instance part="PAD21" gate="1" x="167.64" y="20.32" rot="MR90"/>
+<instance part="PAD22" gate="1" x="180.34" y="20.32" rot="MR90"/>
+<instance part="PAD23" gate="1" x="193.04" y="20.32" rot="MR90"/>
+<instance part="PAD24" gate="1" x="205.74" y="20.32" rot="MR90"/>
+<instance part="PAD25" gate="1" x="218.44" y="20.32" rot="MR90"/>
+<instance part="PAD26" gate="1" x="231.14" y="20.32" rot="MR90"/>
+<instance part="PAD27" gate="1" x="243.84" y="20.32" rot="MR90"/>
+<instance part="PAD28" gate="1" x="256.54" y="20.32" rot="MR90"/>
 <instance part="PAD29" gate="1" x="91.44" y="76.2" rot="MR270"/>
 <instance part="PAD30" gate="1" x="104.14" y="76.2" rot="MR270"/>
 <instance part="PAD31" gate="1" x="116.84" y="76.2" rot="MR270"/>
@@ -13714,6 +13714,65 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,33.909,55.88,U$1,,,,,"/>
+<approved hash="113,1,105.313,60.6806,PAD2,,,,,"/>
+<approved hash="113,1,92.6126,60.6806,PAD1,,,,,"/>
+<approved hash="113,1,118.013,60.6806,PAD3,,,,,"/>
+<approved hash="113,1,130.713,60.6806,PAD4,,,,,"/>
+<approved hash="113,1,143.413,60.6806,PAD5,,,,,"/>
+<approved hash="113,1,156.113,60.6806,PAD6,,,,,"/>
+<approved hash="113,1,168.813,60.6806,PAD7,,,,,"/>
+<approved hash="113,1,181.513,60.6806,PAD8,,,,,"/>
+<approved hash="113,1,194.213,60.6806,PAD9,,,,,"/>
+<approved hash="113,1,206.913,61.0693,PAD10,,,,,"/>
+<approved hash="113,1,219.613,61.0693,PAD11,,,,,"/>
+<approved hash="113,1,232.313,61.0693,PAD12,,,,,"/>
+<approved hash="113,1,245.013,61.0693,PAD13,,,,,"/>
+<approved hash="113,1,257.713,61.0693,PAD14,,,,,"/>
+<approved hash="113,1,92.6126,22.9693,PAD15,,,,,"/>
+<approved hash="113,1,105.313,22.9693,PAD16,,,,,"/>
+<approved hash="113,1,118.013,22.9693,PAD17,,,,,"/>
+<approved hash="113,1,130.713,22.9693,PAD18,,,,,"/>
+<approved hash="113,1,143.413,22.9693,PAD19,,,,,"/>
+<approved hash="113,1,156.113,22.9693,PAD20,,,,,"/>
+<approved hash="113,1,168.813,22.9693,PAD21,,,,,"/>
+<approved hash="113,1,181.513,22.9693,PAD22,,,,,"/>
+<approved hash="113,1,194.213,22.9693,PAD23,,,,,"/>
+<approved hash="113,1,206.913,22.9693,PAD24,,,,,"/>
+<approved hash="113,1,219.613,22.9693,PAD25,,,,,"/>
+<approved hash="113,1,232.313,22.9693,PAD26,,,,,"/>
+<approved hash="113,1,245.013,22.9693,PAD27,,,,,"/>
+<approved hash="113,1,257.713,22.9693,PAD28,,,,,"/>
+<approved hash="113,1,90.2674,73.5507,PAD29,,,,,"/>
+<approved hash="113,1,102.967,73.7028,PAD30,,,,,"/>
+<approved hash="113,1,115.667,73.7028,PAD31,,,,,"/>
+<approved hash="113,1,128.367,73.7028,PAD32,,,,,"/>
+<approved hash="113,1,141.067,73.7028,PAD33,,,,,"/>
+<approved hash="113,1,153.767,73.7028,PAD34,,,,,"/>
+<approved hash="113,1,166.467,73.7028,PAD35,,,,,"/>
+<approved hash="113,1,181.513,73.7028,PAD36,,,,,"/>
+<approved hash="113,1,191.867,73.7028,PAD37,,,,,"/>
+<approved hash="113,1,204.567,73.7028,PAD38,,,,,"/>
+<approved hash="113,1,217.267,73.7028,PAD39,,,,,"/>
+<approved hash="113,1,229.967,73.7028,PAD40,,,,,"/>
+<approved hash="113,1,242.667,73.7028,PAD41,,,,,"/>
+<approved hash="113,1,255.367,73.7028,PAD42,,,,,"/>
+<approved hash="113,1,90.2674,35.6028,PAD43,,,,,"/>
+<approved hash="113,1,102.967,35.6028,PAD44,,,,,"/>
+<approved hash="113,1,115.667,35.6028,PAD45,,,,,"/>
+<approved hash="113,1,128.367,35.6028,PAD46,,,,,"/>
+<approved hash="113,1,141.067,35.6028,PAD47,,,,,"/>
+<approved hash="113,1,153.767,35.6028,PAD48,,,,,"/>
+<approved hash="113,1,166.467,35.6028,PAD49,,,,,"/>
+<approved hash="113,1,179.167,35.6028,PAD50,,,,,"/>
+<approved hash="113,1,191.867,35.6028,PAD51,,,,,"/>
+<approved hash="113,1,204.567,35.6028,PAD52,,,,,"/>
+<approved hash="113,1,217.267,35.6028,PAD53,,,,,"/>
+<approved hash="113,1,229.967,35.6028,PAD54,,,,,"/>
+<approved hash="113,1,242.667,35.6028,PAD55,,,,,"/>
+<approved hash="113,1,255.367,35.6028,PAD56,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

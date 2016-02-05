@@ -13444,6 +13444,10 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,200.508,133.198,FRAME2,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

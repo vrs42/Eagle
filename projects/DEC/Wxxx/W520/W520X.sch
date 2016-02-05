@@ -6390,29 +6390,36 @@ high speed (Philips)</description>
 <pinref part="R22" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="167.64" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="D9" gate="G$1" pin="A"/>
+<label x="114.3" y="167.64" size="1.778" layer="95" rot="R270"/>
+<pinref part="D10" gate="G$1" pin="C"/>
+<wire x1="124.46" y1="157.48" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
+<junction x="114.3" y="157.48"/>
+</segment>
+<segment>
 <wire x1="35.56" y1="157.48" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="167.64" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="167.64" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="167.64" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
 <junction x="35.56" y="157.48"/>
-<junction x="114.3" y="157.48"/>
-<junction x="193.04" y="157.48"/>
 <label x="35.56" y="167.64" size="1.778" layer="95" rot="R270"/>
-<label x="114.3" y="167.64" size="1.778" layer="95" rot="R270"/>
-<label x="193.04" y="167.64" size="1.778" layer="95" rot="R270"/>
-<pinref part="D15" gate="G$1" pin="A"/>
-<pinref part="D16" gate="G$1" pin="C"/>
-<pinref part="D9" gate="G$1" pin="A"/>
-<pinref part="D10" gate="G$1" pin="C"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="D4" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<pinref part="D16" gate="G$1" pin="C"/>
+<wire x1="193.04" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="167.64" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
+<junction x="193.04" y="157.48"/>
+<pinref part="D15" gate="G$1" pin="A"/>
+<label x="193.04" y="167.64" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

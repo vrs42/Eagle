@@ -4037,6 +4037,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

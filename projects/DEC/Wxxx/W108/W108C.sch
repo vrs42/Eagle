@@ -965,6 +965,34 @@
 <hole x="209.55" y="74.93" drill="3.175"/>
 <hole x="209.55" y="126.365" drill="3.175"/>
 </package>
+<package name="0414/20">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+type 0414, grid 15 mm</description>
+<wire x1="10.16" y1="0" x2="6.604" y2="0" width="0.8128" layer="51"/>
+<wire x1="-10.16" y1="0" x2="-6.604" y2="0" width="0.8128" layer="51"/>
+<wire x1="-6.096" y1="1.905" x2="-5.842" y2="2.159" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-6.096" y1="-1.905" x2="-5.842" y2="-2.159" width="0.1524" layer="21" curve="90"/>
+<wire x1="5.842" y1="-2.159" x2="6.096" y2="-1.905" width="0.1524" layer="21" curve="90"/>
+<wire x1="5.842" y1="2.159" x2="6.096" y2="1.905" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-6.096" y1="-1.905" x2="-6.096" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-5.842" y1="2.159" x2="-4.953" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="2.032" x2="-4.953" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-5.842" y1="-2.159" x2="-4.953" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-2.032" x2="-4.953" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="2.032" x2="4.953" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="2.032" x2="-4.826" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="-2.032" x2="4.953" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="-2.032" x2="-4.826" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="5.842" y1="2.159" x2="4.953" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="5.842" y1="-2.159" x2="4.953" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="-1.905" x2="6.096" y2="1.905" width="0.1524" layer="21"/>
+<pad name="1" x="-10.16" y="0" drill="1.016" shape="octagon"/>
+<pad name="2" x="10.16" y="0" drill="1.016" shape="octagon"/>
+<text x="-6.096" y="2.5654" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.318" y="-0.5842" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="6.096" y1="-0.4064" x2="6.5024" y2="0.4064" layer="21"/>
+<rectangle x1="-6.5024" y1="-0.4064" x2="-6.096" y2="0.4064" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DEVICE">
@@ -987,6 +1015,21 @@
 <symbol name="EDGE-LEFT">
 <rectangle x1="2.54" y1="-1.27" x2="5.08" y2="1.27" layer="94"/>
 <pin name="1" x="-2.54" y="0" visible="pad" length="middle"/>
+</symbol>
+<symbol name="R-US_">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1205,6 +1248,23 @@
 <connect gate="BU2" pin="1" pad="BU2"/>
 <connect gate="BV1" pin="1" pad="BV1"/>
 <connect gate="BV2" pin="1" pad="BV2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R-US_0414/20" prefix="R" uservalue="yes">
+<description>0.8" Resistor</description>
+<gates>
+<gate name="G$1" symbol="R-US_" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0414/20">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6259,7 +6319,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V3" library="supply2" deviceset="-10V" device=""/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
 <part name="V11" library="supply2" deviceset="-UB" device=""/>
-<part name="R5" library="rcl" deviceset="R-US_" device="0204/2V" value="46.4 2W 1% WW"/>
+<part name="R5" library="dec-con" deviceset="R-US_0414/20" device="" value="46.4 2W 1% WW"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="7500 5%"/>
 <part name="Q5" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
 <part name="Q7" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
@@ -6278,7 +6338,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V14" library="supply2" deviceset="GND" device=""/>
 <part name="D18" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="V15" library="supply2" deviceset="-15V" device=""/>
-<part name="R10" library="rcl" deviceset="R-US_" device="0204/2V" value="46.4 2W 1% WW"/>
+<part name="R10" library="dec-con" deviceset="R-US_0414/20" device="" value="46.4 2W 1% WW"/>
 <part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="D11" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
@@ -6300,7 +6360,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V18" library="supply2" deviceset="GND" device=""/>
 <part name="D27" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="V19" library="supply2" deviceset="-15V" device=""/>
-<part name="R19" library="rcl" deviceset="R-US_" device="0204/2V" value="46.4 2W 1% WW"/>
+<part name="R19" library="dec-con" deviceset="R-US_0414/20" device="" value="46.4 2W 1% WW"/>
 <part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="7500 5%"/>
 <part name="Q11" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
 <part name="Q13" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
@@ -6319,7 +6379,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V22" library="supply2" deviceset="GND" device=""/>
 <part name="D36" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="V23" library="supply2" deviceset="-15V" device=""/>
-<part name="R25" library="rcl" deviceset="R-US_" device="0204/2V" value="46.4 2W 1% WW"/>
+<part name="R25" library="dec-con" deviceset="R-US_0414/20" device="" value="46.4 2W 1% WW"/>
 <part name="R26" library="rcl" deviceset="R-US_" device="0207/10" value="7500 5%"/>
 <part name="Q14" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
 <part name="Q16" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
@@ -6336,7 +6396,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="D43" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="V26" library="supply2" deviceset="GND" device=""/>
 <part name="D45" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
-<part name="R30" library="rcl" deviceset="R-US_" device="0204/2V" value="46.4 2W 1% WW"/>
+<part name="R30" library="dec-con" deviceset="R-US_0414/20" device="" value="46.4 2W 1% WW"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="0207/10" value="7500 5%"/>
 <part name="Q17" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
 <part name="Q19" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
@@ -6353,7 +6413,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="D52" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="V30" library="supply2" deviceset="GND" device=""/>
 <part name="D54" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
-<part name="R35" library="rcl" deviceset="R-US_" device="0204/2V" value="46.4 2W 1% WW"/>
+<part name="R35" library="dec-con" deviceset="R-US_0414/20" device="" value="46.4 2W 1% WW"/>
 <part name="R36" library="rcl" deviceset="R-US_" device="0207/10" value="7500 5%"/>
 <part name="Q20" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
 <part name="Q22" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
@@ -6370,7 +6430,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="D61" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="V34" library="supply2" deviceset="GND" device=""/>
 <part name="D63" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
-<part name="R40" library="rcl" deviceset="R-US_" device="0204/2V" value="46.4 2W 1% WW"/>
+<part name="R40" library="dec-con" deviceset="R-US_0414/20" device="" value="46.4 2W 1% WW"/>
 <part name="R41" library="rcl" deviceset="R-US_" device="0207/10" value="7500 5%"/>
 <part name="Q23" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
 <part name="Q25" library="transistor-pnp" deviceset="2N2904*" device="" value="MPS6534"/>
@@ -6387,7 +6447,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="D70" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="V38" library="supply2" deviceset="GND" device=""/>
 <part name="D72" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
-<part name="R45" library="rcl" deviceset="R-US_" device="0204/2V" value="46.4 2W 1% WW"/>
+<part name="R45" library="dec-con" deviceset="R-US_0414/20" device="" value="46.4 2W 1% WW"/>
 <part name="D19" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="D28" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="D37" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
@@ -8019,6 +8079,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,87.249,248.92,U$2,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
