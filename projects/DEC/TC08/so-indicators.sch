@@ -6973,6 +6973,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,177.864,134.62,IC9,E,I,,,"/>
+<approved hash="114,1,375.857,50.8,IC12,C,I,,,"/>
+<approved hash="114,1,375.857,50.8,IC12,D,I,,,"/>
+<approved hash="114,1,375.857,50.8,IC12,E,I,,,"/>
+<approved hash="114,1,375.857,50.8,IC12,F,I,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -117,12 +117,6 @@
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="-15V">
-<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
-<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="SUPPLY">
@@ -142,19 +136,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="-15V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="-15V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7601,7 +7582,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="Q4" library="transistor" deviceset="*-NPN-" device="TO39-EBC" technology="2N3019" value="2N3009"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="22K"/>
 <part name="C15" library="rcl" deviceset="C-US" device="050-025X075" value="120pF"/>
-<part name="V19" library="supply2" deviceset="-15V" device=""/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="6.8K"/>
 <part name="C13" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="C12" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
@@ -7696,7 +7676,6 @@ DIN A3, landscape with extra doc field</description>
 <instance part="U$4" gate="C2" x="294.64" y="48.26" rot="MR180"/>
 <instance part="U$4" gate="U2" x="144.78" y="99.06"/>
 <instance part="U$4" gate="V2" x="144.78" y="96.52"/>
-<instance part="U$4" gate="B2" x="294.64" y="60.96"/>
 <instance part="U$4" gate="A2" x="294.64" y="66.04" rot="MR180"/>
 <instance part="U$4" gate="K1" x="154.94" y="172.72" rot="MR180"/>
 <instance part="U$4" gate="L1" x="15.24" y="203.2" rot="R180"/>
@@ -7732,7 +7711,6 @@ DIN A3, landscape with extra doc field</description>
 </instance>
 <instance part="R2" gate="G$1" x="104.14" y="238.76" rot="R90"/>
 <instance part="C15" gate="G$1" x="111.76" y="223.52"/>
-<instance part="V19" gate="G$1" x="309.88" y="58.42"/>
 <instance part="R5" gate="G$1" x="48.26" y="91.44" rot="R90"/>
 <instance part="C13" gate="G$1" x="350.52" y="55.88"/>
 <instance part="C12" gate="G$1" x="340.36" y="55.88"/>
@@ -8182,13 +8160,6 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="Q2" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="-15V" class="0">
-<segment>
-<wire x1="297.18" y1="60.96" x2="309.88" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="B2" pin="1"/>
-<pinref part="V19" gate="G$1" pin="-15V"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <wire x1="104.14" y1="101.6" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
@@ -8332,6 +8303,10 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,74.549,190.5,U$4,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

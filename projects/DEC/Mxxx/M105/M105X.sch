@@ -14708,6 +14708,11 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,291.211,162.56,U$1,,,,,"/>
+<approved hash="113,1,157.349,60.96,SW1,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

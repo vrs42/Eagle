@@ -3541,6 +3541,10 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="113,2,200.508,133.198,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
