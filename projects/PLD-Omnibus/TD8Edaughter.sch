@@ -9516,10 +9516,10 @@ Based on the following sources:
 <part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="R27" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K"/>
 <part name="V10" library="supply2" deviceset="VCC" device=""/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="V15" library="supply2" deviceset="-15V" device=""/>
 <part name="R29" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K"/>
 <part name="C3" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>

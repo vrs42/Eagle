@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16404,30 +16404,30 @@ Source: www.kingbright.com</description>
 <part name="G2" library="battery" deviceset="B2430UNI" device=""/>
 <part name="V56" library="supply2" deviceset="GND" device=""/>
 <part name="V57" library="supply2" deviceset="VCC" device=""/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="RF08A" library="con-lstb" deviceset="MA20-2" device=""/>
 <part name="IC44" library="40xx" deviceset="4011" device="N"/>
 <part name="V58" library="supply2" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="10 Megohm"/>
 <part name="J1" library="jumper" deviceset="J2" device="X2MM"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="IC39" library="memory-hitachi" deviceset="628128P" device="" value="628512"/>
 <part name="IC45" library="memory-hitachi" deviceset="628128P" device="" value="628512"/>
 <part name="G3" library="battery" deviceset="B2430UNI" device=""/>
 <part name="G4" library="battery" deviceset="B2430UNI" device=""/>
 <part name="V59" library="supply2" deviceset="GND" device=""/>
 <part name="V60" library="supply2" deviceset="VCC" device=""/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D7" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="RF08B" library="con-lstb" deviceset="MA20-2" device=""/>
 <part name="IC46" library="40xx" deviceset="4011" device="N"/>
 <part name="V61" library="supply2" deviceset="GND" device=""/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="10 Megohm"/>
 <part name="J15" library="jumper" deviceset="J2" device="X2MM"/>
-<part name="D8" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="FRAME5" library="frames" deviceset="DINA3_L" device=""/>
 <part name="F.3" library="led" deviceset="LED" device="5MM"/>
 <part name="F.2" library="led" deviceset="LED" device="5MM"/>

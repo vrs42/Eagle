@@ -11268,7 +11268,7 @@ high speed (Philips)</description>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
 <part name="P-2" library="supply1" deviceset="-12V" device=""/>
 <part name="Q1" library="transistor-npn" deviceset="2N3904" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="5K1"/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
@@ -11284,7 +11284,7 @@ high speed (Philips)</description>
 <part name="R8" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
 <part name="Q3" library="transistor-npn" deviceset="2N3904" device=""/>
 <part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="5K1"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0817/7V" value="680 1W"/>

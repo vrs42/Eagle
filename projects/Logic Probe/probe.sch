@@ -7133,8 +7133,8 @@ Based on the following sources:
 <part name="V16" library="supply2" deviceset="VCC" device=""/>
 <part name="V17" library="supply2" deviceset="GND" device=""/>
 <part name="V18" library="supply2" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="V19" library="supply2" deviceset="VCC" device=""/>
 <part name="V20" library="supply2" deviceset="GND" device=""/>
 <part name="IC5" library="74xx-us" deviceset="74*123" device="N" technology="LS"/>
@@ -7195,10 +7195,10 @@ Based on the following sources:
 <instance part="V16" gate="G$1" x="55.88" y="50.8"/>
 <instance part="V17" gate="GND" x="48.26" y="38.1"/>
 <instance part="V18" gate="GND" x="55.88" y="38.1"/>
-<instance part="D1" gate="G$1" x="40.64" y="40.64" rot="R90"/>
-<instance part="D2" gate="G$1" x="40.64" y="48.26" rot="R90"/>
-<instance part="V19" gate="G$1" x="40.64" y="53.34"/>
-<instance part="V20" gate="GND" x="40.64" y="35.56"/>
+<instance part="D1" gate="G$1" x="137.16" y="60.96" rot="R90"/>
+<instance part="D2" gate="G$1" x="137.16" y="76.2" rot="R90"/>
+<instance part="V19" gate="G$1" x="137.16" y="88.9"/>
+<instance part="V20" gate="GND" x="137.16" y="53.34"/>
 <instance part="IC5" gate="A" x="40.64" y="17.78" rot="MR180"/>
 <instance part="V27" gate="G$1" x="17.78" y="35.56"/>
 <instance part="R12" gate="G$1" x="17.78" y="27.94" rot="R90"/>
@@ -7223,6 +7223,7 @@ Based on the following sources:
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="V20" gate="GND" pin="GND"/>
+<wire x1="137.16" y1="55.88" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
@@ -7321,6 +7322,7 @@ Based on the following sources:
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="V19" gate="G$1" pin="VCC"/>
+<wire x1="137.16" y1="78.74" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V11" gate="G$1" pin="VCC"/>
@@ -7369,10 +7371,10 @@ Based on the following sources:
 <pinref part="INPUT" gate="1" pin="P"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="45.72" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-<junction x="40.64" y="43.18"/>
-<label x="27.94" y="43.18" size="1.778" layer="95"/>
+<wire x1="137.16" y1="73.66" x2="137.16" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="63.5" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
+<junction x="137.16" y="63.5"/>
+<label x="124.46" y="63.5" size="1.778" layer="95"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 </segment>

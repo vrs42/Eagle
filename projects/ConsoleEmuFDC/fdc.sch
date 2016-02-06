@@ -15135,7 +15135,7 @@ Based on the following sources:
 <part name="IC4" library="74xx-us" deviceset="74*06" device="N" technology="LS"/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
-<part name="IC5" library="74xx-us" deviceset="74*367" device="N" technology="LS"/>
+<part name="IC5" library="74xx-us" deviceset="74*367" device="N" value="74LS367N"/>
 <part name="IC6" library="74xx-us" deviceset="74*374" device="N" technology="LS"/>
 <part name="IC7" library="74xx-us" deviceset="74*06" device="N" technology="LS"/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
@@ -15152,7 +15152,7 @@ Based on the following sources:
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value="100nf"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="V8" library="supply2" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="C3" library="rcl" deviceset="C-TRIMM" device="808" value="60pf"/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
 <part name="V10" library="supply2" deviceset="GND" device=""/>
@@ -15580,11 +15580,13 @@ Based on the following sources:
 </segment>
 <segment>
 <wire x1="81.28" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
 <label x="73.66" y="48.26" size="1.778" layer="95"/>
-<label x="10.16" y="7.62" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="/WE"/>
+</segment>
+<segment>
+<wire x1="17.78" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="I"/>
+<label x="10.16" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D1" class="0">
@@ -15772,11 +15774,13 @@ Based on the following sources:
 <net name="!RE" class="0">
 <segment>
 <wire x1="81.28" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="7.62" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
 <label x="73.66" y="50.8" size="1.778" layer="95"/>
-<label x="43.18" y="7.62" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="/RE"/>
+</segment>
+<segment>
+<wire x1="45.72" y1="7.62" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="O"/>
+<label x="43.18" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENP" class="0">

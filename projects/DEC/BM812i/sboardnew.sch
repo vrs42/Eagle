@@ -14860,25 +14860,25 @@ Based on the following sources:
 <part name="E31" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=".22uf"/>
 <part name="R19" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="V49" library="supply2" deviceset="GND" device=""/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="V50" library="supply2" deviceset="VCC" device=""/>
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value=".22uf"/>
 <part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="V51" library="supply2" deviceset="GND" device=""/>
 <part name="R22" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="V52" library="supply2" deviceset="VCC" device=""/>
 <part name="C3" library="rcl" deviceset="C-US" device="050-025X075" value=".22uf"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="V53" library="supply2" deviceset="GND" device=""/>
 <part name="R26" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="V54" library="supply2" deviceset="VCC" device=""/>
 <part name="C4" library="rcl" deviceset="C-US" device="050-025X075" value=".22uf"/>
 <part name="R27" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="V55" library="supply2" deviceset="GND" device=""/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="V56" library="supply2" deviceset="VCC" device=""/>
@@ -14886,7 +14886,7 @@ Based on the following sources:
 <part name="E29" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="C5" library="rcl" deviceset="C-US" device="050-025X075" value=".22uf"/>
 <part name="R29" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="V57" library="supply2" deviceset="GND" device=""/>
 <part name="R30" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="V58" library="supply2" deviceset="VCC" device=""/>

@@ -1308,7 +1308,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="47.159" y="16.221" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="47.159" y="19.777" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="D2" library="diode" package="DO35-10" value="1N4148DO35-10" x="47.159" y="42.256" smashed="yes" rot="R90">
+<element name="D2" library="diode" package="DO35-10" value="1N4148" x="47.159" y="42.256" smashed="yes" rot="R90">
 <attribute name="NAME" x="45.889" y="40.097" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="49.191" y="33.874" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>

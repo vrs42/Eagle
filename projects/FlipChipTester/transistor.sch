@@ -6302,7 +6302,7 @@ grid 2.54 mm</description>
 <part name="TTL_RX" library="wirepad" deviceset="1,6/0,9" device=""/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="75K"/>
 <part name="D1" library="diode" deviceset="ZENER-DIODE" device="DO35Z10" value="1N5229B"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="3.3K"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="75K"/>

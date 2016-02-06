@@ -15980,391 +15980,391 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D7" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D8" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D9" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D10" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D11" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D12" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D13" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D14" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D15" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D16" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D17" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D18" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D19" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D20" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D21" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D22" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D23" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D24" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D25" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D26" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D27" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D28" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D29" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D30" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D31" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D32" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D33" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D34" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D35" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D36" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D37" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D38" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D39" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D40" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D41" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D42" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D43" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D44" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D45" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D46" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D47" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D48" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D49" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D50" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D51" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D52" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D53" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D54" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D55" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D56" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D57" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D58" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D59" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D60" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D61" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D62" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D63" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D64" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D65" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D66" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D67" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D68" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D69" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D70" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D71" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D72" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D73" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D74" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D75" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D76" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D77" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D78" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D79" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D80" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D81" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D82" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D83" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D84" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D85" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D86" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D87" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D88" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D89" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D90" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D91" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D92" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D93" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D94" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D95" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D96" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D97" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D98" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D99" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D100" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D101" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D102" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D103" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D104" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D105" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D106" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D107" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D108" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D109" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D110" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D111" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D112" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D113" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D114" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D115" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D116" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D117" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D118" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D119" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D120" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D121" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D122" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D123" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D124" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D125" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D126" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D127" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D128" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D129" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D130" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D131" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D132" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D133" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D134" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D135" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D136" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D137" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D138" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D139" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D140" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D141" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D142" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D143" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D144" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D146" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D147" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D148" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D149" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D150" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D151" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D152" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D153" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D154" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D155" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D156" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D157" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D158" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D159" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D160" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D161" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D162" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D163" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D164" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D165" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D166" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D167" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D168" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D169" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D170" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D171" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D172" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D173" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D174" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D175" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D176" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D177" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D178" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D179" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D180" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D181" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D182" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D183" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D184" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D185" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D186" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D187" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D188" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D189" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D190" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D191" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D192" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D193" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D194" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D195" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D196" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D197" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D198" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D199" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D200" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D201" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D202" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D203" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D204" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D205" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D206" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D207" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D208" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D209" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D210" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D211" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D212" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D213" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D214" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D215" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D216" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D217" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D218" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D219" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D220" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D221" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D222" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D223" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D224" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D225" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D226" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D227" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D228" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D229" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D230" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D231" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D232" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D233" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D234" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D235" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D236" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D237" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D238" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D239" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D240" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D241" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D242" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D243" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D244" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D245" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D246" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D247" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D248" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D249" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D250" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D251" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D252" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D253" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D254" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D255" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D256" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D257" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D258" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D259" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D260" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D261" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D262" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D263" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D264" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D265" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D266" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D267" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D268" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D269" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D270" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D271" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D272" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D273" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D274" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D275" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D276" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D277" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D278" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D279" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D280" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D281" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D282" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D283" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D284" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D285" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D286" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D287" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D288" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D289" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D290" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D291" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D292" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D293" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D294" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D295" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D296" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D297" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D298" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D299" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D300" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D301" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D302" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D303" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D304" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D305" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D306" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D307" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D308" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D309" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D310" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D311" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D312" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D313" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D314" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D315" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D316" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D317" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D318" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D319" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D320" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D321" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D322" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D323" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D324" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D325" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D326" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D327" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D328" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D329" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D330" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D331" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D332" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D333" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D334" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D335" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D336" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D337" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D338" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D339" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D340" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D341" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D342" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D343" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D344" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D345" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D346" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D347" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D348" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D349" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D350" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D351" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D352" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D353" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D354" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D355" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D356" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D357" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D358" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D359" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D360" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D361" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D362" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D363" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D364" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D365" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D366" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D367" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D368" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D369" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D370" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D371" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D372" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D373" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D374" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D375" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D376" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D377" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D378" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D379" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D380" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D381" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D382" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D383" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D384" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D11" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D13" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D14" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D16" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D17" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D18" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D19" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D20" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D21" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D22" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D23" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D24" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D25" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D26" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D27" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D28" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D29" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D30" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D31" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D32" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D33" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D34" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D35" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D36" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D37" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D38" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D39" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D40" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D41" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D42" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D43" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D44" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D45" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D46" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D47" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D48" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D49" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D50" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D51" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D52" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D53" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D54" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D55" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D56" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D57" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D58" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D59" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D60" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D61" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D62" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D63" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D64" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D65" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D66" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D67" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D68" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D69" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D70" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D71" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D72" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D73" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D74" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D75" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D76" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D77" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D78" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D79" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D80" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D81" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D82" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D83" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D84" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D85" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D86" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D87" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D88" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D89" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D90" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D91" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D92" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D93" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D94" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D95" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D96" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D97" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D98" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D99" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D100" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D101" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D102" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D103" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D104" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D105" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D106" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D107" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D108" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D109" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D110" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D111" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D112" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D113" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D114" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D115" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D116" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D117" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D118" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D119" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D120" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D121" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D122" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D123" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D124" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D125" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D126" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D127" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D128" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D129" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D130" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D131" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D132" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D133" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D134" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D135" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D136" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D137" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D138" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D139" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D140" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D141" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D142" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D143" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D144" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D146" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D147" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D148" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D149" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D150" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D151" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D152" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D153" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D154" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D155" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D156" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D157" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D158" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D159" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D160" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D161" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D162" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D163" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D164" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D165" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D166" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D167" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D168" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D169" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D170" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D171" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D172" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D173" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D174" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D175" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D176" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D177" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D178" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D179" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D180" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D181" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D182" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D183" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D184" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D185" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D186" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D187" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D188" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D189" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D190" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D191" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D192" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D193" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D194" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D195" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D196" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D197" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D198" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D199" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D200" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D201" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D202" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D203" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D204" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D205" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D206" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D207" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D208" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D209" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D210" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D211" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D212" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D213" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D214" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D215" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D216" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D217" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D218" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D219" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D220" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D221" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D222" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D223" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D224" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D225" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D226" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D227" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D228" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D229" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D230" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D231" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D232" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D233" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D234" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D235" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D236" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D237" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D238" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D239" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D240" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D241" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D242" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D243" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D244" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D245" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D246" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D247" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D248" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D249" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D250" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D251" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D252" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D253" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D254" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D255" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D256" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D257" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D258" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D259" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D260" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D261" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D262" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D263" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D264" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D265" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D266" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D267" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D268" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D269" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D270" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D271" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D272" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D273" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D274" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D275" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D276" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D277" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D278" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D279" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D280" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D281" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D282" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D283" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D284" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D285" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D286" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D287" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D288" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D289" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D290" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D291" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D292" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D293" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D294" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D295" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D296" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D297" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D298" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D299" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D300" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D301" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D302" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D303" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D304" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D305" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D306" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D307" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D308" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D309" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D310" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D311" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D312" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D313" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D314" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D315" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D316" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D317" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D318" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D319" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D320" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D321" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D322" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D323" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D324" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D325" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D326" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D327" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D328" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D329" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D330" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D331" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D332" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D333" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D334" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D335" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D336" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D337" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D338" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D339" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D340" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D341" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D342" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D343" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D344" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D345" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D346" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D347" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D348" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D349" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D350" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D351" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D352" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D353" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D354" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D355" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D356" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D357" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D358" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D359" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D360" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D361" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D362" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D363" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D364" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D365" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D366" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D367" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D368" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D369" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D370" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D371" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D372" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D373" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D374" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D375" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D376" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D377" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D378" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D379" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D380" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D381" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D382" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D383" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D384" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="U$1" library="dec-con" deviceset="OUTLINE-*" device="OMNIBUS"/>
-<part name="D145" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D145" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="E1" library="dec-con" deviceset="SP384" device="N"/>
 <part name="E17" library="dec-con" deviceset="SP384" device="N"/>
 <part name="E35" library="dec-con" deviceset="SP384" device="N"/>
@@ -16404,8 +16404,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R51" library="rcl" deviceset="R-US_" device="0207/10" value="5.6K"/>
 <part name="V46" library="supply2" deviceset="VCC" device=""/>
 <part name="V47" library="supply2" deviceset="VCC" device=""/>
-<part name="D385" library="diode" deviceset="1N4148" device="DO35-10" value="D662"/>
-<part name="D386" library="diode" deviceset="1N4148" device="DO35-10" value="D662"/>
+<part name="D385" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D386" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="R52" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
 <part name="C6" library="rcl" deviceset="C-US" device="050-025X075" value="27pf"/>
 <part name="V48" library="supply2" deviceset="GND" device=""/>

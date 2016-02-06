@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -413,14 +413,14 @@ high speed (Philips)</description>
 <part name="S7" library="switch" deviceset="320-916" device="" value="DISK3L"/>
 <part name="S8" library="switch" deviceset="320-916" device="" value="DISK3H"/>
 <part name="SV1" library="con-lstb" deviceset="MA05-2" device="" value="WRLOCK"/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D7" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D8" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 </parts>
 <sheets>
 <sheet>

@@ -6734,7 +6734,7 @@ high speed (Philips)</description>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
 <part name="C23" library="rcl" deviceset="C-US" device="050-025X075" value="330mmfd"/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>

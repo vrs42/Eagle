@@ -671,7 +671,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="6.731" y="19.431" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="6.731" y="16.129" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="27.305" y="6.35" smashed="yes">
+<element name="D1" library="diode" package="DO35-10" value="1N4148" x="27.305" y="6.35" smashed="yes">
 <attribute name="NAME" x="34.036" y="6.985" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="34.036" y="4.953" size="1.27" layer="27" ratio="10"/>
 </element>

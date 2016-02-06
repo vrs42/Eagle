@@ -3193,15 +3193,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="IC2" library="memory-hitachi" deviceset="628128P" device="" value="628512"/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="IC3" library="memory-hitachi" deviceset="628128P" device="" value="628512"/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="IC4" library="memory-hitachi" deviceset="628128P" device="" value="628512"/>
 <part name="V8" library="supply2" deviceset="GND" device=""/>
 <part name="V9" library="supply2" deviceset="+5V" device=""/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="IC6" library="40xx" deviceset="4011" device="N"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/7" value="10meg"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/7" value="10meg"/>

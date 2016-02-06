@@ -943,6 +943,24 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="209,1,20.32,81.28,1A,,,,,"/>
+<approved hash="209,1,10.16,27.94,1A,,,,,"/>
+<approved hash="209,1,20.32,76.2,1B,,,,,"/>
+<approved hash="209,1,10.16,22.86,1B,,,,,"/>
+<approved hash="209,1,20.32,71.12,1C,,,,,"/>
+<approved hash="209,1,10.16,43.18,1C,,,,,"/>
+<approved hash="209,1,20.32,63.5,1D,,,,,"/>
+<approved hash="209,1,10.16,38.1,1D,,,,,"/>
+<approved hash="209,1,83.82,81.28,2A,,,,,"/>
+<approved hash="209,1,91.44,25.4,2A,,,,,"/>
+<approved hash="209,1,83.82,76.2,2B,,,,,"/>
+<approved hash="209,1,91.44,20.32,2B,,,,,"/>
+<approved hash="209,1,83.82,71.12,2C,,,,,"/>
+<approved hash="209,1,91.44,40.64,2C,,,,,"/>
+<approved hash="209,1,83.82,63.5,2D,,,,,"/>
+<approved hash="209,1,91.44,35.56,2D,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -1070,8 +1070,8 @@ design rules under a new name.</description>
 <element name="U$18" library="holes" package="4,3" value="" x="182.88" y="5.08"/>
 <element name="U$19" library="holes" package="4,3" value="" x="93.98" y="5.08"/>
 <element name="U$20" library="holes" package="4,3" value="" x="5.08" y="5.08"/>
-<element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="193.04" y="27.94"/>
-<element name="D2" library="diode" package="DO35-10" value="1N4148DO35-10" x="193.04" y="25.4"/>
+<element name="D1" library="diode" package="DO35-10" value="D664" x="193.04" y="27.94"/>
+<element name="D2" library="diode" package="DO35-10" value="D664" x="193.04" y="25.4"/>
 <element name="R37" library="rcl" package="0207/10" value="10K" x="205.74" y="25.4"/>
 </elements>
 <signals>

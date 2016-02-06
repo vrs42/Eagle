@@ -1195,10 +1195,10 @@ design rules under a new name.</description>
 <element name="E7" library="74xx-us" package="DIL16" value="74123N" x="67.31" y="105.41" rot="R180"/>
 <element name="R7" library="rcl" package="0207/10" value="10K" x="83.82" y="91.44" rot="R180"/>
 <element name="C11" library="rcl" package="C050-025X075" value=".02uf" x="76.2" y="93.98" rot="R180"/>
-<element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="78.74" y="96.52"/>
+<element name="D1" library="diode" package="DO35-10" value="1N4154" x="78.74" y="96.52"/>
 <element name="R8" library="rcl" package="0207/10" value="8.2k" x="76.2" y="119.38" rot="R180"/>
 <element name="C12" library="rcl" package="C050-025X075" value="1200pf" x="68.58" y="116.84" rot="R180"/>
-<element name="D2" library="diode" package="DO35-10" value="1N4148DO35-10" x="66.04" y="114.3"/>
+<element name="D2" library="diode" package="DO35-10" value="1N4154" x="66.04" y="114.3"/>
 <element name="C13" library="rcl" package="E30-10" value="1uf" x="96.52" y="76.2"/>
 <element name="C14" library="rcl" package="E30-10" value="100uf" x="96.52" y="66.04"/>
 <element name="C15" library="rcl" package="E30-10" value="1uf" x="104.14" y="22.86" rot="R270"/>

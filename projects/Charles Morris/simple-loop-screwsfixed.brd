@@ -857,7 +857,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <elements>
 <element name="R5" library="rcl" package="0207/10" value="5K1" x="71.12" y="53.594"/>
 <element name="Q1" library="transistor-npn" package="TO92" value="2N3904" x="86.09" y="50.784"/>
-<element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="71.2" y="65.484" rot="R180"/>
+<element name="D1" library="diode" package="DO35-10" value="1N4148" x="71.2" y="65.484" rot="R180"/>
 <element name="R1" library="rcl" package="0207/10" value="5K1" x="58.42" y="24.114" rot="R90"/>
 <element name="R2" library="rcl" package="0207/10" value="430" x="87.28" y="58.134"/>
 <element name="B1" library="rectifier" package="RB1A" value="100V 1A" x="40.64" y="25.384"/>

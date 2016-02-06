@@ -20585,7 +20585,7 @@ SMD chip inductor</description>
 <part name="BATTLOW" library="led" deviceset="LED" device="3MM"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R1206" value="1k"/>
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="P+11" library="supply1" deviceset="VCC" device=""/>
 <part name="Q2" library="crystal" deviceset="CRYSTAL" device="HC49UP"/>
 <part name="C11" library="rcl" deviceset="C-US" device="C1206" value="16pF"/>

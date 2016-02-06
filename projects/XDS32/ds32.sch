@@ -7559,14 +7559,14 @@ Source: AVX .. aphvc.pdf</description>
 <part name="IC20" library="linear" deviceset="LM2902" device="N"/>
 <part name="V4" library="supply2" deviceset="+10V" device=""/>
 <part name="V20" library="supply2" deviceset="-15V" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="5K"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="5K"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="IC21" library="linear" deviceset="78*" device="Z" technology="L05"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="7.5K"/>
 <part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
@@ -10122,6 +10122,35 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,246.38,82.4865,IC17,B,G,,,"/>
+<approved hash="114,1,246.38,82.4865,IC17,B,A,,,"/>
+<approved hash="114,1,246.38,82.4865,IC17,B,B,,,"/>
+<approved hash="114,1,53.2765,104.14,IC2,C,I0,,,"/>
+<approved hash="114,1,53.2765,104.14,IC2,C,I1,,,"/>
+<approved hash="114,1,53.2765,104.14,IC2,C,I2,,,"/>
+<approved hash="104,2,58.42,50.8,IC15P,V+,VCC,,,"/>
+<approved hash="104,2,58.42,35.56,IC15P,V-,GND,,,"/>
+<approved hash="104,2,60.96,50.8,IC16P,V+,VCC,,,"/>
+<approved hash="104,2,60.96,35.56,IC16P,V-,GND,,,"/>
+<approved hash="202,2,121.92,71.12,IC18D,-IN,,,,"/>
+<approved hash="104,2,63.5,50.8,IC18P,V+,VCC,,,"/>
+<approved hash="104,2,63.5,35.56,IC18P,V-,GND,,,"/>
+<approved hash="104,2,167.64,114.3,IC19P,V+,GND,,,"/>
+<approved hash="104,2,182.88,114.3,IC19P,V-,-3V,,,"/>
+<approved hash="104,2,66.04,50.8,IC20P,V+,VCC,,,"/>
+<approved hash="104,2,66.04,35.56,IC20P,V-,GND,,,"/>
+<approved hash="104,3,35.56,25.4,IC22A,V+,VCC,,,"/>
+<approved hash="113,1,35.56,8.55133,J1,,,,,"/>
+<approved hash="113,1,149.86,148.251,J2,,,,,"/>
+<approved hash="113,1,96.52,143.171,J3,,,,,"/>
+<approved hash="113,1,96.52,148.251,J5,,,,,"/>
+<approved hash="113,2,20.32,85.2847,SV09,,,,,"/>
+<approved hash="113,2,20.32,31.9447,SV10,,,,,"/>
+<approved hash="113,2,53.34,85.2847,SV11,,,,,"/>
+<approved hash="113,3,27.94,69.5113,J4,,,,,"/>
+<approved hash="113,3,27.94,64.4313,J6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

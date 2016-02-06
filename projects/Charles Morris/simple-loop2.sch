@@ -10557,7 +10557,7 @@ transient-voltage suppressor</description>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
 <part name="P-2" library="supply1" deviceset="-12V" device=""/>
 <part name="Q1" library="transistor-npn" deviceset="2N3904" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="5K1"/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="D2" library="diode" deviceset="P4KEXX" device=""/>

@@ -13284,11 +13284,11 @@ Based on the following sources:
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="10K"/>
 <part name="C11" library="rcl" deviceset="C-US" device="050-025X075" value=".02uf"/>
 <part name="V15" library="supply2" deviceset="VCC" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="0207/10" value="8.2k"/>
 <part name="C12" library="rcl" deviceset="C-US" device="050-025X075" value="1200pf"/>
 <part name="V16" library="supply2" deviceset="VCC" device=""/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="V17" library="supply2" deviceset="VCC" device=""/>
 <part name="V18" library="supply2" deviceset="GND" device=""/>
 <part name="V19" library="supply2" deviceset="GND" device=""/>

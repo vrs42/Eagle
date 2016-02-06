@@ -904,7 +904,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 </element>
 <element name="R5" library="rcl" package="0207/10" value="5K1" x="72.39" y="54.61"/>
 <element name="Q1" library="transistor-npn" package="TO92" value="2N3904" x="86.36" y="50.8"/>
-<element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="77.47" y="63.5" rot="R180"/>
+<element name="D1" library="diode" package="DO35-10" value="1N4148" x="77.47" y="63.5" rot="R180"/>
 <element name="R1" library="rcl" package="0207/10" value="5K1" x="59.69" y="24.13" rot="R90"/>
 <element name="R2" library="rcl" package="0207/10" value="430" x="82.55" y="57.15"/>
 <element name="B3" library="rectifier" package="RB1A" value="100V 1A" x="41.91" y="25.4"/>
@@ -925,7 +925,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <element name="R8" library="rcl" package="0207/10" value="430" x="72.39" y="49.53"/>
 <element name="Q3" library="transistor-npn" package="TO92" value="2N3904" x="87.63" y="43.18"/>
 <element name="R9" library="rcl" package="0207/10" value="5K1" x="76.2" y="38.1" rot="R90"/>
-<element name="D5" library="diode" package="DO35-10" value="1N4148DO35-10" x="81.28" y="38.1" rot="R90"/>
+<element name="D5" library="diode" package="DO35-10" value="1N4148" x="81.28" y="38.1" rot="R90"/>
 <element name="DC2" library="dc-dc-converter" package="NMA" value="48V in" x="13.97" y="50.8" rot="R90">
 <attribute name="OC_NEWARK" value="61K3064" x="13.97" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="NMA0515SC" x="13.97" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
@@ -962,7 +962,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <attribute name="MF" value="" x="25.4" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="25.4" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="D8" library="diode" package="DO35-10" value="1N4148DO35-10" x="49.53" y="49.53" rot="R90"/>
+<element name="D8" library="diode" package="DO35-10" value="1N4148" x="49.53" y="49.53" rot="R90"/>
 <element name="TX" library="jumper" package="JP4" value="" x="43.18" y="63.5" rot="R90"/>
 <element name="RX" library="jumper" package="JP4" value="" x="49.53" y="63.5" rot="R90"/>
 <element name="R10" library="rcl" package="0207/10" value="430" x="53.34" y="34.29" rot="R270"/>

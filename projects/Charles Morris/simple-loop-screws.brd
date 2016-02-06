@@ -863,7 +863,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 </element>
 <element name="R5" library="rcl" package="0207/10" value="5K1" x="71.12" y="53.34"/>
 <element name="Q1" library="transistor-npn" package="TO92" value="2N3904" x="86.09" y="50.53"/>
-<element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="71.2" y="65.23" rot="R180"/>
+<element name="D1" library="diode" package="DO35-10" value="1N4148" x="71.2" y="65.23" rot="R180"/>
 <element name="R1" library="rcl" package="0207/10" value="5K1" x="58.42" y="23.86" rot="R90"/>
 <element name="R2" library="rcl" package="0207/10" value="430" x="87.28" y="57.88"/>
 <element name="B1" library="rectifier" package="RB1A" value="100V 1A" x="40.64" y="25.13"/>
@@ -884,7 +884,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <element name="R8" library="rcl" package="0207/10" value="430" x="71.12" y="48.26"/>
 <element name="Q3" library="transistor-npn" package="TO92" value="2N3904" x="86.36" y="42.91"/>
 <element name="R9" library="rcl" package="0207/10" value="5K1" x="74.93" y="37.83" rot="R90"/>
-<element name="D5" library="diode" package="DO35-10" value="1N4148DO35-10" x="80.01" y="37.83" rot="R90"/>
+<element name="D5" library="diode" package="DO35-10" value="1N4148" x="80.01" y="37.83" rot="R90"/>
 <element name="DC2" library="dc-dc-converter" package="NMA" value="TX LOOP" x="12.7" y="50.53" rot="R90">
 <attribute name="OC_NEWARK" value="61K3064" x="12.7" y="50.53" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="NMA0515SC" x="12.7" y="50.53" size="1.778" layer="27" rot="R90" display="off"/>
@@ -915,7 +915,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <element name="R16" library="rcl" package="P0817V" value="510 1W" x="27.94" y="63.23" rot="R270"/>
 <element name="R17" library="rcl" package="P0817V" value="510 1W" x="35.56" y="63.23" rot="R270"/>
 <element name="CTS/DSR" library="jumper" package="JP2" value="" x="67.31" y="23.86"/>
-<element name="D8" library="diode" package="DO35-10" value="1N4148DO35-10" x="70.74" y="59.26" rot="R180"/>
+<element name="D8" library="diode" package="DO35-10" value="1N4148" x="70.74" y="59.26" rot="R180"/>
 <element name="R10" library="rcl" package="0207/10" value="430" x="53.34" y="37.83" rot="R270"/>
 <element name="RX" library="con-lstb" package="MA06-1" value="" x="48.26" y="60.96" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="48.26" y="60.96" size="1.778" layer="27" rot="R90" display="off"/>

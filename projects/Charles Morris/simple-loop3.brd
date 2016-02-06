@@ -858,7 +858,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <attribute name="OC_FARNELL" value="unknown" x="55.88" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="Q1" library="transistor-npn" package="TO92" value="2N3904" x="71.12" y="52.07"/>
-<element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="49.53" y="44.45" rot="R180"/>
+<element name="D1" library="diode" package="DO35-10" value="1N4148" x="49.53" y="44.45" rot="R180"/>
 <element name="R1" library="rcl" package="0207/10" value="5K1" x="59.69" y="50.8"/>
 <element name="R2" library="rcl" package="0207/10" value="470" x="49.53" y="38.1"/>
 <element name="J1" library="jumper" package="05" value="" x="48.26" y="55.88" rot="R180"/>
@@ -883,7 +883,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <element name="R8" library="rcl" package="0207/10" value="470" x="20.32" y="57.15" rot="R90"/>
 <element name="Q3" library="transistor-npn" package="TO92" value="2N3904" x="15.24" y="68.58"/>
 <element name="R9" library="rcl" package="0207/10" value="5K1" x="10.16" y="57.15" rot="R90"/>
-<element name="D5" library="diode" package="DO35-10" value="1N4148DO35-10" x="15.24" y="57.15" rot="R270"/>
+<element name="D5" library="diode" package="DO35-10" value="1N4148" x="15.24" y="57.15" rot="R270"/>
 <element name="J2" library="jumper" package="05C" value="" x="62.23" y="55.88" rot="R180"/>
 <element name="R6" library="rcl" package="0617/17" value="680 1W" x="13.97" y="45.72" rot="R180"/>
 <element name="C1" library="rcl" package="E7,5-18" value="1000" x="15.24" y="21.59"/>

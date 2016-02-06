@@ -15498,9 +15498,9 @@ Farnell 219-423</description>
 <part name="V27" library="supply2" deviceset="VCC" device=""/>
 <part name="V28" library="supply2" deviceset="VCC" device=""/>
 <part name="V29" library="supply2" deviceset="GND" device=""/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="15K"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="15K"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="15K"/>
@@ -15514,65 +15514,65 @@ Farnell 219-423</description>
 <part name="V30" library="supply2" deviceset="-15V" device=""/>
 <part name="Q1" library="transistor" deviceset="*-PNP-" device="TO92/"/>
 <part name="V31" library="supply2" deviceset="GND" device=""/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="V32" library="supply2" deviceset="-15V" device=""/>
 <part name="Q2" library="transistor" deviceset="*-PNP-" device="TO92/"/>
 <part name="V33" library="supply2" deviceset="GND" device=""/>
-<part name="D7" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D8" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D9" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="V1" library="supply2" deviceset="-15V" device=""/>
 <part name="Q3" library="transistor" deviceset="*-PNP-" device="TO92/"/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
-<part name="D10" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D11" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D12" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D11" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R15" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="R16" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="V6" library="supply2" deviceset="-15V" device=""/>
 <part name="Q4" library="transistor" deviceset="*-PNP-" device="TO92/"/>
 <part name="V34" library="supply2" deviceset="GND" device=""/>
-<part name="D13" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D14" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D15" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D13" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D14" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R17" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="V35" library="supply2" deviceset="-15V" device=""/>
 <part name="Q5" library="transistor" deviceset="*-PNP-" device="TO92/"/>
 <part name="V36" library="supply2" deviceset="GND" device=""/>
-<part name="D16" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D17" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D18" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D16" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D17" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D18" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="V37" library="supply2" deviceset="-15V" device=""/>
 <part name="Q6" library="transistor" deviceset="*-PNP-" device="TO92/"/>
 <part name="V38" library="supply2" deviceset="GND" device=""/>
-<part name="D19" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D20" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D21" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D19" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D20" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D21" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="R24" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="V39" library="supply2" deviceset="-15V" device=""/>
 <part name="Q7" library="transistor" deviceset="*-PNP-" device="TO92/"/>
 <part name="V40" library="supply2" deviceset="GND" device=""/>
-<part name="D22" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D23" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D24" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D22" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D23" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D24" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="V43" library="supply2" deviceset="-15V" device=""/>
 <part name="Q8" library="transistor" deviceset="*-PNP-" device="TO92/"/>
 <part name="V44" library="supply2" deviceset="GND" device=""/>
-<part name="D25" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D26" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D27" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D25" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D26" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D27" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R29" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="R30" library="rcl" deviceset="R-US_" device="0207/10" value="7K"/>
 <part name="V45" library="supply2" deviceset="-15V" device=""/>

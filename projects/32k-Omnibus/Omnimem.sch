@@ -7971,14 +7971,14 @@ Based on the following sources:
 <part name="E3" library="dec-con" deviceset="AM26S10" device=""/>
 <part name="IC9" library="74xx-us" deviceset="74*138" device="N" technology="LS" value="74LS138N"/>
 <part name="IC10" library="memory-hitachi" deviceset="58C256P" device="" value="62256"/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D7" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D8" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="SV2" library="con-lstb" deviceset="MA08-2" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="5K"/>
 <part name="IC4" library="memory-hitachi" deviceset="58C256P" device="" value="62256"/>

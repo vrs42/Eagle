@@ -986,7 +986,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="68.326" y="31.369" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R5" library="rcl" package="0207/10" value="1K" x="76.2" y="15.24" rot="R270"/>
-<element name="D1" library="diode" package="DO35-10" value="1N4148DO35-10" x="73.66" y="15.24" rot="R270"/>
+<element name="D1" library="diode" package="DO35-10" value="1N4148" x="73.66" y="15.24" rot="R270"/>
 <element name="C3" library="rcl" package="CTRIM808-BC" value="60pf" x="69.85" y="38.1"/>
 <element name="JP1" library="pinhead" package="1X03" value="" x="101.6" y="76.2" rot="R90"/>
 <element name="JP5" library="pinhead" package="1X02" value="" x="15.24" y="16.51" rot="R270"/>

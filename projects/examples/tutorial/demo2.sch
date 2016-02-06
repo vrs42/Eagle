@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12389,7 +12389,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="F1" library="frames" deviceset="DINA4_L" device=""/>
 <part name="C4" library="rcl" deviceset="CPOL-EU" device="TAP5-45" value="47u/25V"/>
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="TAP5-45" value="47u"/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="IC1" library="microchip" deviceset="PIC16F8*" device="P" technology="4A"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R1206" value="2,2k"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C1206" value="30p"/>

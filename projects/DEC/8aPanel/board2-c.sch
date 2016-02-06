@@ -11658,8 +11658,8 @@ high speed (Philips)</description>
 <part name="R31" library="discrete" deviceset="RESUS-10" device="" value="1K"/>
 <part name="P+18" library="supply1" deviceset="VCC" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="R37" library="rcl" deviceset="R-US_" device="0207/10" value="10K"/>
 <part name="P+23" library="supply1" deviceset="VCC" device=""/>
 </parts>

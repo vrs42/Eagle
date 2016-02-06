@@ -12377,12 +12377,12 @@ LETTER landscape</description>
 <part name="E1" library="74xx-us" deviceset="74*20" device="N" technology="S" value="74S40N"/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="3K"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="3K"/>
 <part name="V8" library="supply2" deviceset="GND" device=""/>

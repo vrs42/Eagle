@@ -5649,7 +5649,7 @@ high speed (Philips)</description>
 <part name="V10" library="supply2" deviceset="-15V" device=""/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
 <part name="V12" library="supply2" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="3K"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0309/12" value="750 1W"/>
 <part name="V13" library="supply2" deviceset="-15V" device=""/>

@@ -6247,7 +6247,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C7" library="rcl" deviceset="C-US" device="050-025X075" value="47pF 5%"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="0207/10" value="1500 1/4W"/>
 <part name="R35" library="rcl" deviceset="R-US_" device="0207/10"/>
-<part name="D139" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D139" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="V2" library="supply2" deviceset="-15V" device=""/>
 <part name="D46" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
 <part name="D47" library="diode" deviceset="1N4148" device="DO35-10" value="1N645"/>
@@ -6322,7 +6322,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="U$2" library="dec-con" deviceset="FLIPCHIP" device=""/>
 <part name="R19" library="rcl" deviceset="R-US_" device="0207/10" value="1500 1/4W"/>
 <part name="V9" library="supply2" deviceset="+10V" device=""/>
-<part name="D140" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148DO35-10"/>
+<part name="D140" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="D27" library="diode" deviceset="1N4148" device="DO35-10" value=""/>
 <part name="R38" library="rcl" deviceset="R-US_" device="0207/10" value="750 1/4W"/>
 <part name="V1" library="supply2" deviceset="-15V" device=""/>

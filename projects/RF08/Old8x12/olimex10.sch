@@ -16585,28 +16585,28 @@ Source: www.kingbright.com</description>
 <part name="G2" library="battery" deviceset="B2430UNI" device=""/>
 <part name="V56" library="supply2" deviceset="GND" device=""/>
 <part name="V57" library="supply2" deviceset="VCC" device=""/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="RF08A" library="con-lstb" deviceset="MA20-2" device=""/>
 <part name="IC44" library="40xx" deviceset="4011" device="N"/>
 <part name="V58" library="supply2" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="10 Megohm"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="IC39" library="memory-hitachi" deviceset="628128P" device="" value="628512"/>
 <part name="IC45" library="memory-hitachi" deviceset="628128P" device="" value="628512"/>
 <part name="G3" library="battery" deviceset="B2430UNI" device=""/>
 <part name="G4" library="battery" deviceset="B2430UNI" device=""/>
 <part name="V59" library="supply2" deviceset="GND" device=""/>
 <part name="V60" library="supply2" deviceset="VCC" device=""/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10"/>
-<part name="D7" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
+<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="RF08B" library="con-lstb" deviceset="MA20-2" device=""/>
 <part name="IC46" library="40xx" deviceset="4011" device="N"/>
 <part name="V61" library="supply2" deviceset="GND" device=""/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="10 Megohm"/>
-<part name="D8" library="diode" deviceset="1N4148" device="DO35-10"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N4148"/>
 <part name="JP1" library="jumper" deviceset="JP2E" device=""/>
 <part name="JP2" library="jumper" deviceset="JP2E" device=""/>
 <part name="FRAME5" library="frames" deviceset="DINA3_L" device=""/>
