@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14846,12 +14846,12 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <part name="C18" library="rcl" deviceset="C-US" device="050-025X075" value=".1uf"/>
 <part name="C19" library="rcl" deviceset="C-US" device="050-025X075" value=".1uf"/>
 <part name="C20" library="rcl" deviceset="C-US" device="050-025X075" value=".1uf"/>
-<part name="C22" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
+<part name="C22" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uF"/>
 <part name="V14" library="supply2" deviceset="VCC" device=""/>
 <part name="V58" library="supply2" deviceset="GND" device=""/>
-<part name="C23" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
-<part name="C24" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
-<part name="C25" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL"/>
+<part name="C23" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uF"/>
+<part name="C24" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uF"/>
+<part name="C25" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uF"/>
 <part name="C21" library="rcl" deviceset="C-US" device="050-025X075" value=".1uf"/>
 </parts>
 <sheets>
@@ -15003,24 +15003,24 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="VCC" class="1">
 <segment>
-<wire x1="27.94" y1="170.18" x2="20.32" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="170.18" x2="25.4" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="177.8" x2="20.32" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="190.5" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="198.12" x2="20.32" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="210.82" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="218.44" x2="20.32" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="231.14" x2="25.4" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="190.5" x2="20.32" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="210.82" x2="20.32" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="231.14" x2="20.32" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="172.72" x2="25.4" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="172.72" x2="25.4" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="177.8" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="193.04" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="198.12" x2="25.4" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="213.36" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="218.44" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="233.68" x2="25.4" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="193.04" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="213.36" x2="25.4" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="233.68" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
 <junction x="25.4" y="218.44"/>
 <junction x="25.4" y="198.12"/>
 <junction x="25.4" y="177.8"/>
 <junction x="25.4" y="238.76"/>
-<junction x="20.32" y="190.5"/>
-<junction x="20.32" y="210.82"/>
-<junction x="20.32" y="231.14"/>
+<junction x="25.4" y="193.04"/>
+<junction x="25.4" y="213.36"/>
+<junction x="25.4" y="233.68"/>
 <pinref part="E19" gate="A" pin="D"/>
 <pinref part="E19" gate="TXD" pin="TXD"/>
 <pinref part="E19" gate="B" pin="D"/>
@@ -15028,26 +15028,27 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pinref part="E19" gate="D" pin="D"/>
 <pinref part="V49" gate="G$1" pin="VCC"/>
 <wire x1="20.32" y1="238.76" x2="25.4" y2="238.76" width="0.1524" layer="91"/>
+<junction x="20.32" y="238.76"/>
 </segment>
 <segment>
-<wire x1="88.9" y1="238.76" x2="83.82" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="231.14" x2="88.9" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="170.18" x2="83.82" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="170.18" x2="88.9" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="177.8" x2="83.82" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="190.5" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="218.44" x2="83.82" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="210.82" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="210.82" x2="83.82" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="231.14" x2="83.82" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="190.5" x2="83.82" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="238.76" x2="88.9" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="233.68" x2="88.9" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="172.72" x2="88.9" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="172.72" x2="88.9" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="177.8" x2="88.9" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="193.04" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="218.44" x2="88.9" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="213.36" x2="88.9" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="213.36" x2="88.9" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="233.68" x2="88.9" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="193.04" x2="88.9" y2="193.04" width="0.1524" layer="91"/>
 <junction x="88.9" y="238.76"/>
 <junction x="88.9" y="177.8"/>
 <junction x="88.9" y="218.44"/>
 <junction x="88.9" y="198.12"/>
-<junction x="83.82" y="210.82"/>
-<junction x="83.82" y="231.14"/>
-<junction x="83.82" y="190.5"/>
+<junction x="88.9" y="213.36"/>
+<junction x="88.9" y="233.68"/>
+<junction x="88.9" y="193.04"/>
 <pinref part="E9" gate="TXD" pin="TXD"/>
 <pinref part="E9" gate="A" pin="D"/>
 <pinref part="V50" gate="G$1" pin="VCC"/>
@@ -15055,26 +15056,27 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pinref part="E9" gate="D" pin="D"/>
 <pinref part="E9" gate="C" pin="D"/>
 <wire x1="83.82" y1="238.76" x2="88.9" y2="238.76" width="0.1524" layer="91"/>
+<junction x="83.82" y="238.76"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="170.18" x2="144.78" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="170.18" x2="149.86" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="177.8" x2="144.78" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="190.5" x2="149.86" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="198.12" x2="144.78" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="210.82" x2="149.86" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="218.44" x2="144.78" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="231.14" x2="149.86" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="210.82" x2="144.78" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="231.14" x2="144.78" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="190.5" x2="144.78" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="172.72" x2="149.86" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="172.72" x2="149.86" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="177.8" x2="149.86" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="193.04" x2="149.86" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="198.12" x2="149.86" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="213.36" x2="149.86" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="218.44" x2="149.86" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="233.68" x2="149.86" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="213.36" x2="149.86" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="233.68" x2="149.86" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="193.04" x2="149.86" y2="193.04" width="0.1524" layer="91"/>
 <junction x="149.86" y="177.8"/>
 <junction x="149.86" y="198.12"/>
 <junction x="149.86" y="218.44"/>
 <junction x="149.86" y="238.76"/>
-<junction x="144.78" y="210.82"/>
-<junction x="144.78" y="231.14"/>
-<junction x="144.78" y="190.5"/>
+<junction x="149.86" y="213.36"/>
+<junction x="149.86" y="233.68"/>
+<junction x="149.86" y="193.04"/>
 <pinref part="E1" gate="C" pin="D"/>
 <pinref part="E1" gate="A" pin="D"/>
 <pinref part="E3" gate="C" pin="D"/>
@@ -15082,26 +15084,27 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pinref part="E3" gate="B" pin="D"/>
 <pinref part="V53" gate="G$1" pin="VCC"/>
 <wire x1="144.78" y1="238.76" x2="149.86" y2="238.76" width="0.1524" layer="91"/>
+<junction x="144.78" y="238.76"/>
 </segment>
 <segment>
-<wire x1="213.36" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="170.18" x2="210.82" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="238.76" x2="205.74" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="231.14" x2="210.82" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="218.44" x2="205.74" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="210.82" x2="210.82" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="177.8" x2="205.74" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="190.5" x2="210.82" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="190.5" x2="205.74" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="210.82" x2="205.74" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="231.14" x2="205.74" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="172.72" x2="210.82" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="172.72" x2="210.82" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="238.76" x2="210.82" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="233.68" x2="210.82" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="218.44" x2="210.82" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="213.36" x2="210.82" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="177.8" x2="210.82" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="193.04" x2="210.82" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="193.04" x2="210.82" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="213.36" x2="210.82" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="233.68" x2="210.82" y2="233.68" width="0.1524" layer="91"/>
 <junction x="210.82" y="238.76"/>
 <junction x="210.82" y="218.44"/>
 <junction x="210.82" y="177.8"/>
 <junction x="210.82" y="198.12"/>
-<junction x="205.74" y="190.5"/>
-<junction x="205.74" y="210.82"/>
-<junction x="205.74" y="231.14"/>
+<junction x="210.82" y="193.04"/>
+<junction x="210.82" y="213.36"/>
+<junction x="210.82" y="233.68"/>
 <pinref part="E3" gate="A" pin="D"/>
 <pinref part="E3" gate="TXD" pin="TXD"/>
 <pinref part="E1" gate="D" pin="D"/>
@@ -15109,6 +15112,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pinref part="E1" gate="B" pin="D"/>
 <pinref part="E3" gate="D" pin="D"/>
 <wire x1="205.74" y1="238.76" x2="210.82" y2="238.76" width="0.1524" layer="91"/>
+<junction x="205.74" y="238.76"/>
 </segment>
 <segment>
 <wire x1="266.7" y1="142.24" x2="264.16" y2="142.24" width="0.1524" layer="91"/>
@@ -16211,24 +16215,27 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="READM" class="0">
 <segment>
-<wire x1="40.64" y1="167.64" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="172.72" x2="101.6" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="167.64" x2="101.6" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="172.72" x2="162.56" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="238.76" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="238.76" x2="101.6" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="238.76" x2="162.56" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
-<junction x="101.6" y="167.64"/>
-<junction x="162.56" y="172.72"/>
-<junction x="40.64" y="172.72"/>
-<junction x="101.6" y="172.72"/>
-<junction x="40.64" y="167.64"/>
+<wire x1="106.68" y1="167.64" x2="45.72" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="167.64" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="241.3" x2="45.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="172.72" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="167.64" x2="45.72" y2="167.64" width="0.1524" layer="91"/>
+<junction x="45.72" y="167.64"/>
 <label x="22.86" y="167.64" size="1.778" layer="95"/>
 <pinref part="E4" gate="TXD" pin="TXD"/>
 <pinref part="E11" gate="TXD" pin="TXD"/>
 <pinref part="E20" gate="TXD" pin="TXD"/>
+<wire x1="45.72" y1="172.72" x2="45.72" y2="167.64" width="0.1524" layer="91"/>
+<junction x="45.72" y="172.72"/>
+<wire x1="106.68" y1="241.3" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
+<junction x="106.68" y="167.64"/>
+<wire x1="106.68" y1="172.72" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="172.72" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
+<junction x="106.68" y="172.72"/>
+<wire x1="167.64" y1="241.3" x2="167.64" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="172.72" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="172.72" x2="167.64" y2="172.72" width="0.1524" layer="91"/>
+<junction x="167.64" y="172.72"/>
 </segment>
 <segment>
 <wire x1="66.04" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
@@ -17269,6 +17276,31 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,180.34,106.68,E15,VSS,GND,,,"/>
+<approved hash="104,1,180.34,116.84,E15,VCC,VMEM,,,"/>
+<approved hash="104,1,238.76,106.68,E16,VSS,GND,,,"/>
+<approved hash="104,1,238.76,116.84,E16,VCC,VMEM,,,"/>
+<approved hash="114,2,86.36,63.4365,E12,A,I0,,,"/>
+<approved hash="114,2,86.36,63.4365,E12,A,I1,,,"/>
+<approved hash="114,2,86.36,63.4365,E12,C,I0,,,"/>
+<approved hash="114,2,86.36,63.4365,E12,C,I1,,,"/>
+<approved hash="114,2,111.76,36.7665,E18,A,A,,,"/>
+<approved hash="114,2,111.76,36.7665,E18,A,B,,,"/>
+<approved hash="114,2,111.76,36.7665,E18,A,CLR,,,"/>
+<approved hash="114,2,111.76,36.7665,E18,A,C,,,"/>
+<approved hash="114,2,111.76,36.7665,E18,A,R/C,,,"/>
+<approved hash="114,2,53.34,101.537,E7,D,I0,,,"/>
+<approved hash="114,2,53.34,101.537,E7,D,I1,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,1,63.5,117.035,SV2,,,,,"/>
+<approved hash="113,1,106.68,142.168,IC1,,,,,"/>
+<approved hash="113,1,81.0006,143.413,BAT+,,,,,"/>
+<approved hash="113,1,81.0006,138.333,GND,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME3,,,,,"/>
+<approved hash="113,3,44.069,215.9,U$2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6720,6 +6720,12 @@ naming: grid - package width</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-62.8946,83.0326,PAD1,,,,,"/>
+<approved hash="113,1,-64.6726,17.5006,PAD2,,,,,"/>
+<approved hash="113,1,143.921,190.779,PAD3,,,,,"/>
+<approved hash="113,1,141.575,180.061,PAD4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

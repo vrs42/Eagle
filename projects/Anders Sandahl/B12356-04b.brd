@@ -9,20 +9,20 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -40171,30 +40171,6 @@
 <rectangle x1="73.9903" y1="95.25" x2="123.6895" y2="95.3348" layer="200"/>
 </plain>
 <libraries>
-<library name="transistor-pnp">
-<packages>
-<package name="TO92-CBE">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 5.08 mm</description>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583"/>
-<wire x1="1.136" y1="-0.127" x2="-1.136" y2="-0.127" width="0.127" layer="51"/>
-<wire x1="-2.413" y1="1.1359" x2="-2.413" y2="-1.1359" width="0.127" layer="51" curve="50.4167"/>
-<wire x1="-1.404" y1="-0.127" x2="-2.664" y2="-0.127" width="0.127" layer="51"/>
-<wire x1="-2.4135" y1="-1.1359" x2="-2.095" y2="-1.651" width="0.127" layer="21" curve="13.0385"/>
-<wire x1="-1.136" y1="-0.127" x2="-1.404" y2="-0.127" width="0.127" layer="21"/>
-<wire x1="2.413" y1="-1.1359" x2="2.413" y2="1.1359" width="0.127" layer="51" curve="50.4167"/>
-<wire x1="2.664" y1="-0.127" x2="1.404" y2="-0.127" width="0.127" layer="51"/>
-<wire x1="1.404" y1="-0.127" x2="1.136" y2="-0.127" width="0.127" layer="21"/>
-<wire x1="2.095" y1="-1.651" x2="2.4247" y2="-1.1118" width="0.127" layer="21" curve="13.6094"/>
-<pad name="C" x="2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="E" x="-2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="B" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
-<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="rcl">
 <packages>
 <package name="0207/10">
@@ -40573,6 +40549,27 @@ grid 25.4 mm, diameter 9 mm</description>
 <text x="0.635" y="-1.27" size="1.27" layer="51" ratio="10">2</text>
 <text x="0" y="0.635" size="1.27" layer="51" ratio="10">3</text>
 </package>
+<package name="TO92-BCE">
+<description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line B C E from top&lt;p&gt;</description>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583"/>
+<wire x1="1.136" y1="-0.127" x2="-1.136" y2="-0.127" width="0.127" layer="51"/>
+<wire x1="-2.413" y1="1.1359" x2="-2.664" y2="-0.127" width="0.127" layer="51" curve="27.9376"/>
+<wire x1="-2.664" y1="-0.127" x2="-2.413" y2="-1.1359" width="0.127" layer="51" curve="22.4788"/>
+<wire x1="-1.404" y1="-0.127" x2="-2.664" y2="-0.127" width="0.127" layer="51"/>
+<wire x1="-2.4135" y1="-1.1359" x2="-2.095" y2="-1.651" width="0.127" layer="21" curve="13.0385"/>
+<wire x1="-1.136" y1="-0.127" x2="-1.404" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="2.413" y1="-1.1359" x2="2.664" y2="-0.127" width="0.127" layer="51" curve="22.4788"/>
+<wire x1="2.664" y1="-0.127" x2="2.413" y2="1.1359" width="0.127" layer="51" curve="27.9376"/>
+<wire x1="2.664" y1="-0.127" x2="1.404" y2="-0.127" width="0.127" layer="51"/>
+<wire x1="1.404" y1="-0.127" x2="1.136" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="2.095" y1="-1.651" x2="2.4247" y2="-1.1118" width="0.127" layer="21" curve="13.6094"/>
+<pad name="C" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="E" x="2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="B" x="-2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="transistor-npn">
@@ -40758,7 +40755,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="15mils">
+<designrules name="16mils">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -40766,7 +40763,7 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<param name="layerSetup" value="(1*16)"/>
+<param name="layerSetup" value="(1+16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="15mil"/>
@@ -40780,11 +40777,11 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="10mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="25mil"/>
+<param name="mdCopperDimension" value="13mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="50mil"/>
-<param name="msDrill" value="24mil"/>
+<param name="msWidth" value="16mil"/>
+<param name="msDrill" value="32mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -40808,8 +40805,8 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
 <param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
-<param name="psTop" value="-1"/>
-<param name="psBottom" value="-1"/>
+<param name="psTop" value="2"/>
+<param name="psBottom" value="2"/>
 <param name="psFirst" value="-1"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
@@ -40956,8 +40953,8 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="13.1584" y="86.4312" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="VT3" library="transistor-npn" package="TO3" value="2N3055" x="40.005" y="60.325" rot="R90"/>
-<element name="VT1" library="transistor-pnp" package="TO92-CBE" value="MPS6534" x="76.2" y="86.36" rot="R270"/>
-<element name="VT5" library="transistor-pnp" package="TO92-CBE" value="MPS6534" x="52.07" y="24.13" rot="R270"/>
+<element name="VT1" library="transistor" package="TO92-BCE" value="MPS6534" x="76.2" y="86.36" rot="R90"/>
+<element name="VT5" library="transistor" package="TO92-BCE" value="MPS6534" x="52.07" y="24.13" rot="R90"/>
 <element name="U$1" library="holes" package="4,3" value="" x="5.08" y="90.17"/>
 <element name="U$2" library="holes" package="4,3" value="" x="5.08" y="5.08"/>
 <element name="U$3" library="holes" package="4,3" value="" x="62.23" y="82.55"/>
@@ -41141,7 +41138,7 @@ design rules under a new name.</description>
 <contactref element="R8" pad="1"/>
 <contactref element="R9" pad="2"/>
 <contactref element="VT1" pad="B"/>
-<wire x1="76.2" y1="86.36" x2="88.9" y2="83.82" width="1.27" layer="16"/>
+<wire x1="76.2" y1="83.82" x2="88.9" y2="83.82" width="1.27" layer="16"/>
 <wire x1="88.9" y1="83.82" x2="88.9" y2="85.09" width="1.27" layer="16"/>
 <wire x1="88.9" y1="85.09" x2="88.9" y2="90.17" width="1.27" layer="16"/>
 <wire x1="88.9" y1="85.09" x2="88.9" y2="80.01" width="1.27" layer="16"/>
@@ -41171,7 +41168,7 @@ design rules under a new name.</description>
 <wire x1="72.39" y1="10.16" x2="85.09" y2="10.16" width="1.27" layer="16"/>
 <wire x1="85.09" y1="10.16" x2="88.9" y2="6.985" width="1.27" layer="16"/>
 <wire x1="54.61" y1="5.08" x2="54.61" y2="24.13" width="1.27" layer="16"/>
-<wire x1="54.61" y1="24.13" x2="52.07" y2="21.59" width="1.27" layer="16"/>
+<wire x1="54.61" y1="24.13" x2="52.07" y2="24.13" width="1.27" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="VT5" pad="E"/>
@@ -41189,7 +41186,7 @@ design rules under a new name.</description>
 <contactref element="R6" pad="1"/>
 <wire x1="34.925" y1="5.08" x2="36.83" y2="2.54" width="1.27" layer="16"/>
 <wire x1="36.83" y1="2.54" x2="52.07" y2="2.54" width="1.27" layer="16"/>
-<wire x1="52.07" y1="2.54" x2="52.07" y2="24.13" width="1.27" layer="16"/>
+<wire x1="52.07" y1="2.54" x2="52.07" y2="21.59" width="1.27" layer="16"/>
 </signal>
 <signal name="N$14">
 <contactref element="VT3" pad="B"/>
@@ -41267,7 +41264,7 @@ design rules under a new name.</description>
 <wire x1="52.07" y1="85.09" x2="56.515" y2="88.9" width="1.27" layer="16"/>
 <wire x1="56.515" y1="88.9" x2="67.31" y2="88.9" width="1.27" layer="16"/>
 <wire x1="67.31" y1="88.9" x2="71.12" y2="86.36" width="1.27" layer="16"/>
-<wire x1="71.12" y1="86.36" x2="76.2" y2="83.82" width="1.27" layer="16"/>
+<wire x1="71.12" y1="86.36" x2="76.2" y2="86.36" width="1.27" layer="16"/>
 </signal>
 <signal name="5.1VREF">
 <contactref element="R6" pad="2"/>

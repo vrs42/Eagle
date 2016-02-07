@@ -25616,6 +25616,12 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,2,238.76,73.66,IC3,VSS,GND,,,"/>
+<approved hash="104,2,238.76,83.82,IC3,VCC,V+,,,"/>
+<approved hash="104,2,302.26,73.66,IC4,VSS,GND,,,"/>
+<approved hash="104,2,302.26,83.82,IC4,VCC,V+,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

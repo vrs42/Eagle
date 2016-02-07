@@ -10355,6 +10355,10 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,33.909,60.96,U$2,,,,,"/>
+<approved hash="113,2,58.42,38.2947,SV2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -2771,7 +2771,7 @@ high speed (Philips)</description>
 </class>
 </classes>
 <parts>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4151"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4151"/>
 <part name="#2" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="#2L" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="120"/>
@@ -2779,7 +2779,7 @@ high speed (Philips)</description>
 <part name="ORANGE" library="wirepad" deviceset="3,17/1,3" device="" value="Relay+"/>
 <part name="Y-WHITE" library="wirepad" deviceset="3,17/1,3" device="" value="L1"/>
 <part name="WHITE" library="wirepad" deviceset="3,17/1,3" device="" value="L2"/>
-<part name="M1" library="dec-con" deviceset="6RS20SP4B4" device=""/>
+<part name="D1" library="dec-con" deviceset="6RS20SP4B4" device=""/>
 <part name="M2" library="dec-con" deviceset="6RS20SP4B4" device=""/>
 <part name="RDR-RUN" library="dec-con" deviceset="3002-1D1" device="" value="Wheelock 3002-1D1 12V"/>
 </parts>
@@ -2801,7 +2801,7 @@ high speed (Philips)</description>
 <text x="12.7" y="-20.32" size="1.016" layer="91">Teletype for use on 50Hz or voltages other than 115V also require modification per dwg. D-IA-7505039-0-0.</text>
 </plain>
 <instances>
-<instance part="D1" gate="G$1" x="33.02" y="27.94" rot="R90"/>
+<instance part="D2" gate="G$1" x="33.02" y="27.94" rot="R90"/>
 <instance part="#2" gate="1" x="104.14" y="35.56" rot="R180"/>
 <instance part="#2L" gate="1" x="104.14" y="15.24" rot="R180"/>
 <instance part="R1" gate="G$1" x="40.64" y="22.86" rot="R90"/>
@@ -2813,7 +2813,7 @@ high speed (Philips)</description>
 <instance part="WHITE" gate="1" x="76.2" y="15.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="77.597" y="14.5542" size="1.778" layer="95"/>
 </instance>
-<instance part="M1" gate="V" x="66.04" y="25.4" smashed="yes" rot="R90">
+<instance part="D1" gate="V" x="66.04" y="25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="69.7484" y="26.67" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="71.755" y="19.05" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -2836,7 +2836,7 @@ high speed (Philips)</description>
 <junction x="66.04" y="38.1"/>
 <label x="71.374" y="38.354" size="1.778" layer="95"/>
 <pinref part="Y-WHITE" gate="1" pin="P"/>
-<pinref part="M1" gate="V" pin="2"/>
+<pinref part="D1" gate="V" pin="2"/>
 <pinref part="RDR-RUN" gate="G$2" pin="4"/>
 </segment>
 </net>
@@ -2849,7 +2849,7 @@ high speed (Philips)</description>
 <junction x="66.04" y="15.24"/>
 <label x="71.374" y="15.494" size="1.778" layer="95"/>
 <pinref part="WHITE" gate="1" pin="P"/>
-<pinref part="M1" gate="V" pin="1"/>
+<pinref part="D1" gate="V" pin="1"/>
 <pinref part="RDR-RUN" gate="G$2" pin="9"/>
 </segment>
 </net>
@@ -2860,7 +2860,7 @@ high speed (Philips)</description>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
 <junction x="33.02" y="43.18"/>
 <label x="17.78" y="43.434" size="1.778" layer="95"/>
-<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="ORANGE" gate="1" pin="P"/>
 <pinref part="RDR-RUN" gate="G$1" pin="7"/>
 </segment>
@@ -2874,7 +2874,7 @@ high speed (Philips)</description>
 <junction x="33.02" y="15.24"/>
 <label x="17.78" y="15.494" size="1.778" layer="95"/>
 <pinref part="BLUE" gate="1" pin="P"/>
-<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>

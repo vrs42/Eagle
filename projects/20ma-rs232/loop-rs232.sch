@@ -6630,6 +6630,10 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,63.5,82.7081,X1,,,,,"/>
+<approved hash="113,1,61.5696,38.1,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

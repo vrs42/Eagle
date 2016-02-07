@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/PROGRAM FILES/EAGLE-4.11/projects/32K-NVRAM/H03.brd
+Job           : C:/Users/Vince/Documents/eagle/projects/32K NVRAM/H03.brd
 
-Start at      :   10:11:38a (12/20/2003)
-End at        :   10:11:39a (12/20/2003)
-Elapsed time  :   00:00:01
+Start at      : 11:18:11 (2/6/2016)
+End at        : 11:18:11 (2/6/2016)
+Elapsed time  : 00:00:00
 
-Signals       :    49   RoutingGrid: 50 mil  Layers: 2
-Connections   :    12   predefined:  0 ( 0 Vias )
+Signals       :    74   RoutingGrid: 50 mil  Layers: 2
+Connections   :    48   predefined:  0 ( 0 Vias )
 
-Router memory :   25920
+Router memory :   26352
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         3         0         0         0         0
-max. Level        :         0         3         0         0         0         0
-max. Total        :         0         3         0         0         0         0
+Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         1         0         0         0         0
+max. Level        :         0         1         0         0         0         0
+max. Total        :         0         1         0         0         0         0
 
-Routed            :         0        12        12        12        12        12
-Vias              :         0         8         3         3         3         3
-Resolution        :     0.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        18        48        48        48        48        48
+Vias              :         0        15         0         0         0         0
+Resolution        :    37.5 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished
