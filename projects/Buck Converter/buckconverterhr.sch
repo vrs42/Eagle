@@ -14157,6 +14157,11 @@ distributor Schukat</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,45.4829,68.7112,JP1,,,,,"/>
+<approved hash="113,1,200.897,68.7112,JP2,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

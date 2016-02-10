@@ -1132,6 +1132,268 @@
 <hole x="101.6" y="56.515" drill="3.175"/>
 <hole x="101.6" y="5.715" drill="3.175"/>
 </package>
+<package name="SINGLE">
+<description>Single-Height DEC board</description>
+<wire x1="15.875" y1="2.54" x2="15.875" y2="0" width="0" layer="20"/>
+<wire x1="125.73" y1="0" x2="125.73" y2="62.23" width="0" layer="20"/>
+<wire x1="125.73" y1="62.23" x2="18.415" y2="62.23" width="0" layer="20"/>
+<wire x1="18.415" y1="59.563" x2="1.27" y2="59.563" width="0" layer="20"/>
+<wire x1="1.27" y1="59.563" x2="0" y2="58.293" width="0" layer="20"/>
+<wire x1="0" y1="58.293" x2="-0.0001" y2="3.9369" width="0" layer="20"/>
+<wire x1="-0.0001" y1="3.9369" x2="1.27" y2="2.667" width="0" layer="20"/>
+<wire x1="1.27" y1="2.667" x2="15.875" y2="2.667" width="0" layer="20"/>
+<wire x1="15.875" y1="2.667" x2="15.875" y2="0" width="0" layer="20"/>
+<wire x1="15.875" y1="0" x2="125.73" y2="0" width="0" layer="20"/>
+<wire x1="18.415" y1="59.563" x2="18.415" y2="62.23" width="0" layer="20"/>
+<hole x="120.65" y="56.515" drill="3.175"/>
+<hole x="120.65" y="5.715" drill="3.175"/>
+</package>
+<package name="SINGLE-R">
+<description>Single-Height DEC board</description>
+<wire x1="109.855" y1="62.23" x2="0" y2="62.23" width="0" layer="20"/>
+<wire x1="0" y1="62.23" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="106.68" y2="0" width="0" layer="20"/>
+<wire x1="109.855" y1="59.69" x2="109.855" y2="62.23" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="107.315" y2="0" width="0" layer="20"/>
+<wire x1="107.315" y1="2.667" x2="124.46" y2="2.667" width="0" layer="20"/>
+<wire x1="124.46" y1="2.667" x2="125.73" y2="3.937" width="0" layer="20"/>
+<wire x1="125.73" y1="3.937" x2="125.7301" y2="58.2931" width="0" layer="20"/>
+<wire x1="125.7301" y1="58.2931" x2="124.46" y2="59.563" width="0" layer="20"/>
+<wire x1="124.46" y1="59.563" x2="109.855" y2="59.563" width="0" layer="20"/>
+<wire x1="109.855" y1="59.563" x2="109.855" y2="62.23" width="0" layer="20"/>
+<wire x1="109.855" y1="62.23" x2="0" y2="62.23" width="0" layer="20"/>
+<wire x1="107.315" y1="2.667" x2="107.315" y2="0" width="0" layer="20"/>
+<hole x="5.08" y="5.715" drill="3.175"/>
+<hole x="5.08" y="56.515" drill="3.175"/>
+</package>
+<package name="DECPROTO111">
+<description>3 Standard Single-height boards stuck together</description>
+<wire x1="187.8329" y1="1.2699" x2="187.8331" y2="1.2699" width="0" layer="20"/>
+<wire x1="0" y1="125.73" x2="0" y2="18.415" width="0" layer="20"/>
+<wire x1="2.667" y1="18.415" x2="2.667" y2="1.27" width="0" layer="20"/>
+<wire x1="2.667" y1="1.27" x2="3.937" y2="0" width="0" layer="20"/>
+<wire x1="3.937" y1="0" x2="58.2931" y2="-0.0001" width="0" layer="20"/>
+<wire x1="58.2931" y1="-0.0001" x2="59.563" y2="1.27" width="0" layer="20"/>
+<wire x1="59.563" y1="1.27" x2="59.563" y2="15.875" width="0" layer="20"/>
+<wire x1="59.563" y1="15.875" x2="62.23" y2="15.875" width="0" layer="20"/>
+<wire x1="2.667" y1="18.415" x2="0" y2="18.415" width="0" layer="20"/>
+<wire x1="66.167" y1="18.415" x2="66.167" y2="1.27" width="0" layer="20"/>
+<wire x1="66.167" y1="1.27" x2="67.437" y2="0" width="0" layer="20"/>
+<wire x1="67.437" y1="0" x2="121.7931" y2="-0.0001" width="0" layer="20"/>
+<wire x1="121.7931" y1="-0.0001" x2="123.063" y2="1.27" width="0" layer="20"/>
+<wire x1="123.063" y1="1.27" x2="123.063" y2="15.875" width="0" layer="20"/>
+<wire x1="123.063" y1="15.875" x2="125.73" y2="15.875" width="0" layer="20"/>
+<wire x1="129.667" y1="18.415" x2="129.667" y2="1.27" width="0" layer="20"/>
+<wire x1="129.667" y1="1.27" x2="130.937" y2="0" width="0" layer="20"/>
+<wire x1="130.937" y1="0" x2="185.2931" y2="-0.0001" width="0" layer="20"/>
+<wire x1="185.2931" y1="-0.0001" x2="186.563" y2="1.27" width="0" layer="20"/>
+<wire x1="186.563" y1="1.27" x2="186.563" y2="15.875" width="0" layer="20"/>
+<wire x1="186.563" y1="15.875" x2="189.23" y2="15.875" width="0" layer="20"/>
+<wire x1="66.167" y1="18.415" x2="63.5" y2="18.415" width="0" layer="20"/>
+<wire x1="125.73" y1="18.415" x2="125.73" y2="15.875" width="0" layer="20"/>
+<wire x1="62.23" y1="15.875" x2="62.23" y2="17.78" width="0" layer="20"/>
+<wire x1="62.23" y1="17.78" x2="62.23" y2="18.415" width="0" layer="20"/>
+<wire x1="189.23" y1="18.415" x2="189.23" y2="15.875" width="0" layer="20"/>
+<wire x1="62.23" y1="125.73" x2="0" y2="125.73" width="0" layer="20"/>
+<wire x1="62.23" y1="125.73" x2="62.23" y2="114.3" width="0" layer="20"/>
+<wire x1="62.23" y1="109.22" x2="62.23" y2="71.12" width="0" layer="20"/>
+<wire x1="62.23" y1="66.04" x2="62.23" y2="30.48" width="0" layer="20"/>
+<wire x1="62.23" y1="25.4" x2="62.23" y2="17.78" width="0" layer="20"/>
+<wire x1="63.5" y1="125.73" x2="63.5" y2="114.3" width="0" layer="20"/>
+<wire x1="63.5" y1="25.4" x2="63.5" y2="18.415" width="0" layer="20"/>
+<wire x1="63.5" y1="30.48" x2="63.5" y2="66.04" width="0" layer="20"/>
+<wire x1="63.5" y1="109.22" x2="63.5" y2="71.12" width="0" layer="20"/>
+<wire x1="62.23" y1="109.22" x2="63.5" y2="109.22" width="0" layer="20" curve="-180"/>
+<wire x1="63.5" y1="114.3" x2="62.23" y2="114.3" width="0" layer="20" curve="-180"/>
+<wire x1="63.5" y1="71.12" x2="62.23" y2="71.12" width="0" layer="20" curve="-180"/>
+<wire x1="63.5" y1="30.48" x2="62.23" y2="30.48" width="0" layer="20" curve="-180"/>
+<wire x1="62.23" y1="25.4" x2="63.5" y2="25.4" width="0" layer="20" curve="-180"/>
+<wire x1="62.23" y1="66.04" x2="63.5" y2="66.04" width="0" layer="20" curve="-180"/>
+<wire x1="125.73" y1="109.22" x2="125.73" y2="71.12" width="0" layer="20"/>
+<wire x1="125.73" y1="66.04" x2="125.73" y2="30.48" width="0" layer="20"/>
+<wire x1="125.73" y1="25.4" x2="125.73" y2="17.78" width="0" layer="20"/>
+<wire x1="127" y1="125.73" x2="127" y2="114.3" width="0" layer="20"/>
+<wire x1="127" y1="25.4" x2="127" y2="18.415" width="0" layer="20"/>
+<wire x1="127" y1="30.48" x2="127" y2="66.04" width="0" layer="20"/>
+<wire x1="127" y1="109.22" x2="127" y2="71.12" width="0" layer="20"/>
+<wire x1="125.73" y1="109.22" x2="127" y2="109.22" width="0" layer="20" curve="-180"/>
+<wire x1="127" y1="114.3" x2="125.73" y2="114.3" width="0" layer="20" curve="-180"/>
+<wire x1="127" y1="71.12" x2="125.73" y2="71.12" width="0" layer="20" curve="-180"/>
+<wire x1="127" y1="30.48" x2="125.73" y2="30.48" width="0" layer="20" curve="-180"/>
+<wire x1="125.73" y1="25.4" x2="127" y2="25.4" width="0" layer="20" curve="-180"/>
+<wire x1="125.73" y1="66.04" x2="127" y2="66.04" width="0" layer="20" curve="-180"/>
+<wire x1="63.5" y1="125.73" x2="125.73" y2="125.73" width="0" layer="20"/>
+<wire x1="125.73" y1="125.73" x2="125.73" y2="114.3" width="0" layer="20"/>
+<wire x1="127" y1="125.73" x2="189.23" y2="125.73" width="0" layer="20"/>
+<wire x1="129.54" y1="18.415" x2="127" y2="18.415" width="0" layer="20"/>
+<wire x1="189.23" y1="15.875" x2="189.23" y2="125.73" width="0" layer="20"/>
+<hole x="183.515" y="120.65" drill="3.175"/>
+<hole x="132.715" y="120.65" drill="3.175"/>
+<hole x="69.2658" y="120.65" drill="3.175"/>
+<hole x="120.0658" y="120.65" drill="3.175"/>
+<hole x="56.5658" y="120.65" drill="3.175"/>
+<hole x="5.7658" y="120.65" drill="3.175"/>
+<hole x="62.865" y="69.85" drill="0.8128"/>
+<hole x="62.865" y="68.58" drill="0.8128"/>
+<hole x="62.865" y="67.31" drill="0.8128"/>
+<hole x="62.865" y="26.67" drill="0.8128"/>
+<hole x="62.865" y="27.94" drill="0.8128"/>
+<hole x="62.865" y="29.21" drill="0.8128"/>
+<hole x="62.865" y="113.03" drill="0.8128"/>
+<hole x="62.865" y="110.49" drill="0.8128"/>
+<hole x="62.865" y="111.76" drill="0.8128"/>
+<hole x="126.365" y="69.85" drill="0.8128"/>
+<hole x="126.365" y="68.58" drill="0.8128"/>
+<hole x="126.365" y="67.31" drill="0.8128"/>
+<hole x="126.365" y="26.67" drill="0.8128"/>
+<hole x="126.365" y="27.94" drill="0.8128"/>
+<hole x="126.365" y="29.21" drill="0.8128"/>
+<hole x="126.365" y="113.03" drill="0.8128"/>
+<hole x="126.365" y="110.49" drill="0.8128"/>
+<hole x="126.365" y="111.76" drill="0.8128"/>
+</package>
+<package name="OMNIBUS">
+<description>Quad-Height DEC board</description>
+<wire x1="205.867" y1="18.415" x2="205.867" y2="1.27" width="0" layer="20"/>
+<wire x1="205.867" y1="1.27" x2="207.137" y2="0" width="0" layer="20"/>
+<wire x1="207.137" y1="0" x2="261.493" y2="0" width="0" layer="20"/>
+<wire x1="261.493" y1="0" x2="262.7629" y2="1.2699" width="0" layer="20"/>
+<wire x1="262.7629" y1="1.2699" x2="262.7631" y2="1.2699" width="0" layer="20"/>
+<wire x1="262.7631" y1="1.2699" x2="262.763" y2="15.875" width="0" layer="20"/>
+<wire x1="262.763" y1="15.875" x2="265.43" y2="15.875" width="0" layer="20"/>
+<wire x1="265.43" y1="15.875" x2="265.43" y2="214.63" width="0" layer="20"/>
+<wire x1="265.43" y1="214.63" x2="0.127" y2="214.63" width="0" layer="20"/>
+<wire x1="136.017" y1="18.415" x2="136.017" y2="1.27" width="0" layer="20"/>
+<wire x1="136.017" y1="1.27" x2="137.287" y2="0" width="0" layer="20"/>
+<wire x1="137.287" y1="0" x2="191.643" y2="0" width="0" layer="20"/>
+<wire x1="191.643" y1="0" x2="192.9129" y2="1.2699" width="0" layer="20"/>
+<wire x1="192.9129" y1="1.2699" x2="192.9131" y2="1.2699" width="0" layer="20"/>
+<wire x1="192.9131" y1="1.2699" x2="192.913" y2="15.875" width="0" layer="20"/>
+<wire x1="192.913" y1="15.875" x2="202.311" y2="15.875" width="0" layer="20"/>
+<wire x1="202.311" y1="18.415" x2="202.311" y2="15.875" width="0" layer="20"/>
+<wire x1="205.867" y1="18.415" x2="202.311" y2="18.415" width="0" layer="20"/>
+<wire x1="72.517" y1="18.415" x2="72.517" y2="1.27" width="0" layer="20"/>
+<wire x1="72.517" y1="1.27" x2="73.787" y2="0" width="0" layer="20"/>
+<wire x1="73.787" y1="0" x2="128.143" y2="0" width="0" layer="20"/>
+<wire x1="128.143" y1="0" x2="129.4129" y2="1.2699" width="0" layer="20"/>
+<wire x1="0.127" y1="214.63" x2="0.127" y2="18.415" width="0" layer="20"/>
+<wire x1="0.127" y1="18.415" x2="2.667" y2="18.415" width="0" layer="20"/>
+<wire x1="2.667" y1="18.415" x2="2.667" y2="1.27" width="0" layer="20"/>
+<wire x1="2.667" y1="1.27" x2="3.937" y2="0" width="0" layer="20"/>
+<wire x1="3.937" y1="0" x2="58.293" y2="0" width="0" layer="20"/>
+<wire x1="58.293" y1="0" x2="59.5629" y2="1.2699" width="0" layer="20"/>
+<wire x1="59.563" y1="15.875" x2="59.563" y2="1.27" width="0" layer="20"/>
+<wire x1="59.563" y1="15.875" x2="68.961" y2="15.875" width="0" layer="20"/>
+<wire x1="68.961" y1="15.875" x2="68.961" y2="18.415" width="0" layer="20"/>
+<wire x1="72.517" y1="18.415" x2="68.961" y2="18.415" width="0" layer="20"/>
+<wire x1="129.413" y1="1.27" x2="129.413" y2="15.875" width="0" layer="20"/>
+<wire x1="129.413" y1="15.875" x2="132.461" y2="15.875" width="0" layer="20"/>
+<wire x1="136.017" y1="18.415" x2="132.461" y2="18.415" width="0" layer="20"/>
+<wire x1="132.461" y1="18.415" x2="132.461" y2="15.875" width="0" layer="20"/>
+<hole x="208.915" y="209.55" drill="3.175"/>
+<hole x="259.715" y="209.55" drill="3.175"/>
+<hole x="189.865" y="209.55" drill="3.175"/>
+<hole x="139.065" y="209.55" drill="3.175"/>
+<hole x="75.6158" y="209.55" drill="3.175"/>
+<hole x="126.4158" y="209.55" drill="3.175"/>
+<hole x="56.5658" y="209.55" drill="3.175"/>
+<hole x="5.7658" y="209.55" drill="3.175"/>
+</package>
+<package name="DOUBLE">
+<description>Double-Height DEC board</description>
+<wire x1="18.415" y1="59.563" x2="1.27" y2="59.563" width="0" layer="20"/>
+<wire x1="1.27" y1="59.563" x2="0" y2="58.293" width="0" layer="20"/>
+<wire x1="0" y1="58.293" x2="-0.0001" y2="3.9369" width="0" layer="20"/>
+<wire x1="-0.0001" y1="3.9369" x2="1.27" y2="2.667" width="0" layer="20"/>
+<wire x1="1.27" y1="2.667" x2="15.875" y2="2.667" width="0" layer="20"/>
+<wire x1="15.875" y1="2.667" x2="15.875" y2="0" width="0" layer="20"/>
+<wire x1="15.875" y1="0" x2="125.73" y2="0" width="0" layer="20"/>
+<wire x1="125.73" y1="0" x2="125.73" y2="132.08" width="0" layer="20"/>
+<wire x1="125.73" y1="132.08" x2="18.415" y2="132.08" width="0" layer="20"/>
+<wire x1="18.415" y1="132.08" x2="18.415" y2="129.413" width="0" layer="20"/>
+<wire x1="18.415" y1="129.413" x2="1.27" y2="129.413" width="0" layer="20"/>
+<wire x1="1.27" y1="129.413" x2="0" y2="128.143" width="0" layer="20"/>
+<wire x1="0" y1="128.143" x2="-0.0001" y2="73.7869" width="0" layer="20"/>
+<wire x1="-0.0001" y1="73.7869" x2="1.27" y2="72.517" width="0" layer="20"/>
+<wire x1="1.27" y1="72.517" x2="15.875" y2="72.517" width="0" layer="20"/>
+<wire x1="15.875" y1="72.517" x2="15.875" y2="63.119" width="0" layer="20"/>
+<wire x1="18.415" y1="63.119" x2="15.875" y2="63.119" width="0" layer="20"/>
+<wire x1="18.415" y1="59.563" x2="18.415" y2="63.119" width="0" layer="20"/>
+<hole x="120.65" y="56.515" drill="3.175"/>
+<hole x="120.65" y="5.715" drill="3.175"/>
+<hole x="120.65" y="75.565" drill="3.175"/>
+<hole x="120.65" y="126.365" drill="3.175"/>
+</package>
+<package name="DOUBLE-R">
+<description>Double-Height DEC board</description>
+<wire x1="109.855" y1="132.08" x2="0" y2="132.08" width="0" layer="20"/>
+<wire x1="0" y1="132.08" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="106.68" y2="0" width="0" layer="20"/>
+<wire x1="107.315" y1="72.517" x2="124.46" y2="72.517" width="0" layer="20"/>
+<wire x1="124.46" y1="72.517" x2="125.73" y2="73.787" width="0" layer="20"/>
+<wire x1="125.73" y1="73.787" x2="125.7301" y2="128.1431" width="0" layer="20"/>
+<wire x1="125.7301" y1="128.1431" x2="124.46" y2="129.413" width="0" layer="20"/>
+<wire x1="124.46" y1="129.413" x2="109.855" y2="129.413" width="0" layer="20"/>
+<wire x1="109.855" y1="129.413" x2="109.855" y2="132.08" width="0" layer="20"/>
+<wire x1="109.855" y1="132.08" x2="0" y2="132.08" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="107.315" y2="0" width="0" layer="20"/>
+<wire x1="107.315" y1="0" x2="107.315" y2="2.667" width="0" layer="20"/>
+<wire x1="107.315" y1="2.667" x2="124.46" y2="2.667" width="0" layer="20"/>
+<wire x1="124.46" y1="2.667" x2="125.73" y2="3.937" width="0" layer="20"/>
+<wire x1="125.73" y1="3.937" x2="125.7301" y2="58.2931" width="0" layer="20"/>
+<wire x1="125.7301" y1="58.2931" x2="124.46" y2="59.563" width="0" layer="20"/>
+<wire x1="124.46" y1="59.563" x2="109.855" y2="59.563" width="0" layer="20"/>
+<wire x1="109.855" y1="59.563" x2="109.855" y2="68.961" width="0" layer="20"/>
+<wire x1="107.315" y1="68.961" x2="109.855" y2="68.961" width="0" layer="20"/>
+<wire x1="107.315" y1="72.517" x2="107.315" y2="68.961" width="0" layer="20"/>
+<hole x="5.08" y="75.565" drill="3.175"/>
+<hole x="5.08" y="126.365" drill="3.175"/>
+<hole x="5.08" y="57.15" drill="3.175"/>
+<hole x="5.08" y="5.715" drill="3.175"/>
+</package>
+<package name="SINGLE-LONG">
+<wire x1="15.875" y1="0" x2="215.9" y2="0" width="0" layer="20"/>
+<wire x1="215.9" y1="0" x2="215.9" y2="62.23" width="0" layer="20"/>
+<wire x1="215.9" y1="62.23" x2="19.05" y2="62.23" width="0" layer="20"/>
+<wire x1="15.875" y1="2.54" x2="15.875" y2="0" width="0" layer="20"/>
+<wire x1="125.73" y1="62.23" x2="18.415" y2="62.23" width="0" layer="20"/>
+<wire x1="18.415" y1="59.563" x2="1.27" y2="59.563" width="0" layer="20"/>
+<wire x1="1.27" y1="59.563" x2="0" y2="58.293" width="0" layer="20"/>
+<wire x1="0" y1="58.293" x2="-0.0001" y2="3.9369" width="0" layer="20"/>
+<wire x1="-0.0001" y1="3.9369" x2="1.27" y2="2.667" width="0" layer="20"/>
+<wire x1="1.27" y1="2.667" x2="15.875" y2="2.667" width="0" layer="20"/>
+<wire x1="15.875" y1="2.667" x2="15.875" y2="0" width="0" layer="20"/>
+<wire x1="15.875" y1="0" x2="125.73" y2="0" width="0" layer="20"/>
+<wire x1="18.415" y1="59.563" x2="18.415" y2="62.23" width="0" layer="20"/>
+<hole x="210.82" y="56.515" drill="3.175"/>
+<hole x="210.82" y="5.715" drill="3.175"/>
+</package>
+<package name="DOUBLE-LONG">
+<wire x1="15.875" y1="0" x2="214.63" y2="0" width="0" layer="20"/>
+<wire x1="214.63" y1="0" x2="214.63" y2="132.08" width="0" layer="20"/>
+<wire x1="214.63" y1="132.08" x2="19.05" y2="132.08" width="0" layer="20"/>
+<wire x1="18.415" y1="59.563" x2="1.27" y2="59.563" width="0" layer="20"/>
+<wire x1="1.27" y1="59.563" x2="0" y2="58.293" width="0" layer="20"/>
+<wire x1="0" y1="58.293" x2="-0.0001" y2="3.9369" width="0" layer="20"/>
+<wire x1="-0.0001" y1="3.9369" x2="1.27" y2="2.667" width="0" layer="20"/>
+<wire x1="1.27" y1="2.667" x2="15.875" y2="2.667" width="0" layer="20"/>
+<wire x1="15.875" y1="2.667" x2="15.875" y2="0" width="0" layer="20"/>
+<wire x1="15.875" y1="0" x2="125.73" y2="0" width="0" layer="20"/>
+<wire x1="125.73" y1="132.08" x2="18.415" y2="132.08" width="0" layer="20"/>
+<wire x1="18.415" y1="132.08" x2="18.415" y2="129.413" width="0" layer="20"/>
+<wire x1="18.415" y1="129.413" x2="1.27" y2="129.413" width="0" layer="20"/>
+<wire x1="1.27" y1="129.413" x2="0" y2="128.143" width="0" layer="20"/>
+<wire x1="0" y1="128.143" x2="-0.0001" y2="73.7869" width="0" layer="20"/>
+<wire x1="-0.0001" y1="73.7869" x2="1.27" y2="72.517" width="0" layer="20"/>
+<wire x1="1.27" y1="72.517" x2="15.875" y2="72.517" width="0" layer="20"/>
+<wire x1="15.875" y1="72.517" x2="15.875" y2="63.119" width="0" layer="20"/>
+<wire x1="18.415" y1="63.119" x2="15.875" y2="63.119" width="0" layer="20"/>
+<wire x1="18.415" y1="59.563" x2="18.415" y2="63.119" width="0" layer="20"/>
+<hole x="209.55" y="56.515" drill="3.175"/>
+<hole x="209.55" y="5.715" drill="3.175"/>
+<hole x="209.55" y="74.93" drill="3.175"/>
+<hole x="209.55" y="126.365" drill="3.175"/>
+</package>
 </packages>
 <symbols>
 <symbol name="EDGE-RIGHT">
@@ -1141,6 +1403,9 @@
 <symbol name="EDGE-LEFT">
 <rectangle x1="2.54" y1="-1.27" x2="5.08" y2="1.27" layer="94"/>
 <pin name="1" x="-2.54" y="0" visible="pad" length="middle"/>
+</symbol>
+<symbol name="DEVICE">
+<text x="0" y="0" size="1.27" layer="94">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1273,6 +1538,54 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="OUTLINE-*">
+<description>Board outlines for DEC boards.</description>
+<gates>
+<gate name="G$1" symbol="DEVICE" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="SINGLE" package="SINGLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SINGLE-R" package="SINGLE-R">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PROTO" package="DECPROTO111">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OMNIBUS" package="OMNIBUS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DOUBLE" package="DOUBLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DOUBLE-R" package="DOUBLE-R">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SINGLE-LONG" package="SINGLE-LONG">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DOUBLE-LONG" package="DOUBLE-LONG">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1298,6 +1611,7 @@
 <part name="PAD7" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="PAD8" library="wirepad" deviceset="1,6/0,8" device=""/>
 <part name="U$4" library="dec-con" deviceset="EDGE-2" device="CONNECTOR"/>
+<part name="U$1" library="dec-con" deviceset="OUTLINE-*" device="SINGLE"/>
 </parts>
 <sheets>
 <sheet>
@@ -1395,6 +1709,7 @@
 <instance part="U$4" gate="C1" x="88.9" y="12.7"/>
 <instance part="U$4" gate="B1" x="88.9" y="7.62"/>
 <instance part="U$4" gate="A1" x="88.9" y="2.54"/>
+<instance part="U$1" gate="G$1" x="-25.4" y="5.08"/>
 </instances>
 <busses>
 <bus name="A1,B1,C1,D1,E1,F1,H1,J1,K1,L1,M1,N1,P1,R1,S1,T1,U1,V1">
@@ -2084,7 +2399,7 @@
 <pinref part="PAD6" gate="P" pin="P"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
 <label x="45.72" y="33.02" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="4"/>
 </segment>
@@ -2096,7 +2411,7 @@
 <pinref part="PAD8" gate="P" pin="P"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
 <label x="45.72" y="30.48" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="2"/>
 </segment>
@@ -2108,7 +2423,7 @@
 <pinref part="PAD2" gate="P" pin="P"/>
 </segment>
 <segment>
-<wire x1="12.7" y1="30.48" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="30.48" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
 <label x="7.62" y="30.48" size="1.778" layer="95"/>
 <pinref part="SV2" gate="G$1" pin="2"/>
 </segment>
@@ -2120,7 +2435,7 @@
 <pinref part="PAD4" gate="P" pin="P"/>
 </segment>
 <segment>
-<wire x1="12.7" y1="33.02" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
 <label x="7.62" y="33.02" size="1.778" layer="95"/>
 <pinref part="SV2" gate="G$1" pin="4"/>
 </segment>
@@ -2128,6 +2443,21 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,20.32,52.2647,SV2,,,,,"/>
+<approved hash="113,1,58.42,52.2647,SV1,,,,,"/>
+<approved hash="113,1,-27.8977,53.5347,SV4,,,,,"/>
+<approved hash="113,1,-10.2023,53.5347,SV3,,,,,"/>
+<approved hash="113,1,-9.5154,23.2706,PAD1,,,,,"/>
+<approved hash="113,1,-28.1474,23.1436,PAD2,,,,,"/>
+<approved hash="113,1,-9.5154,20.7306,PAD3,,,,,"/>
+<approved hash="113,1,-28.1474,20.6036,PAD4,,,,,"/>
+<approved hash="113,1,-9.5154,28.3506,PAD5,,,,,"/>
+<approved hash="113,1,-28.1474,28.3506,PAD6,,,,,"/>
+<approved hash="113,1,-9.5154,25.6836,PAD7,,,,,"/>
+<approved hash="113,1,-28.1474,25.8106,PAD8,,,,,"/>
+<approved hash="113,1,105.029,48.26,U$4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

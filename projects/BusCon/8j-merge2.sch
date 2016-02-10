@@ -3092,6 +3092,24 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,71.12,49.7247,SV2,,,,,"/>
+<approved hash="113,1,109.22,49.7247,SV3,,,,,"/>
+<approved hash="113,1,214.249,53.34,U$2,,,,,"/>
+<approved hash="113,1,152.4,53.5347,SV1,,,,,"/>
+<approved hash="113,1,37.8206,25.8106,A2,,,,,"/>
+<approved hash="113,1,20.1126,25.6836,PAD1,,,,,"/>
+<approved hash="113,1,37.8206,23.2706,B2,,,,,"/>
+<approved hash="113,1,20.1126,23.1436,PAD2,,,,,"/>
+<approved hash="113,1,37.8206,30.8906,U1,,,,,"/>
+<approved hash="113,1,20.1126,30.8906,PAD3,,,,,"/>
+<approved hash="113,1,37.8206,28.2236,V1,,,,,"/>
+<approved hash="113,1,20.1126,28.3506,PAD4,,,,,"/>
+<approved hash="113,1,27.94,84.0147,SV6,,,,,"/>
+<approved hash="113,1,27.94,56.0747,SV7,,,,,"/>
+<approved hash="113,1,14.8294,63.7794,C1,,,,,"/>
+<approved hash="113,1,14.8294,73.3806,C2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

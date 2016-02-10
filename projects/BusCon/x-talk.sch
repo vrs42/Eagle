@@ -188,6 +188,12 @@
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="-15V">
+<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
+<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="SUPPLY">
@@ -207,6 +213,19 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-15V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="-15V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -754,6 +773,56 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="solpad">
+<description>&lt;b&gt;Solder Pads/Test Points&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SE11">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt;
+drill 1.1 mm</description>
+<wire x1="-1.397" y1="0.508" x2="-1.397" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="-1.397" x2="1.397" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="1.397" x2="1.397" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="1.397" y1="0.508" x2="1.397" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="0.508" x2="-0.508" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="1.397" x2="0.508" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="-1.397" x2="-1.397" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="-1.397" x2="-0.508" y2="-1.397" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="0.381" width="0.254" layer="51"/>
+<pad name="MP" x="0" y="0" drill="1.1176" diameter="2.159" shape="octagon"/>
+<text x="-1.27" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.381" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LSP">
+<wire x1="-1.016" y1="2.032" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0" x2="1.016" y2="2.032" width="0.254" layer="94"/>
+<circle x="0" y="1.016" radius="1.016" width="0.4064" layer="94"/>
+<text x="-1.27" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MP" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SE11" prefix="LSP">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt; RTM, drill 1,1mm, distributor Buerklin, 07F810</description>
+<gates>
+<gate name="1" symbol="LSP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SE11">
+<connects>
+<connect gate="1" pin="MP" pad="MP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -778,6 +847,10 @@
 <part name="V4" library="supply2" deviceset="VCC" device=""/>
 <part name="V8" library="supply2" deviceset="VCC" device=""/>
 <part name="V9" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="-15V" device=""/>
+<part name="VCC" library="solpad" deviceset="SE11" device=""/>
+<part name="GND" library="solpad" deviceset="SE11" device=""/>
+<part name="-15V" library="solpad" deviceset="SE11" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -804,6 +877,10 @@
 <instance part="V4" gate="G$1" x="66.04" y="20.32"/>
 <instance part="V8" gate="G$1" x="66.04" y="2.54"/>
 <instance part="V9" gate="GND" x="53.34" y="60.96"/>
+<instance part="SUPPLY1" gate="G$1" x="12.7" y="22.86"/>
+<instance part="VCC" gate="1" x="-2.54" y="58.42"/>
+<instance part="GND" gate="1" x="-2.54" y="48.26"/>
+<instance part="-15V" gate="1" x="12.7" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -812,6 +889,9 @@
 <segment>
 <pinref part="QG1" gate="G$1" pin="GND"/>
 <pinref part="V1" gate="GND" pin="GND"/>
+<pinref part="GND" gate="1" pin="MP"/>
+<wire x1="5.08" y1="45.72" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
+<junction x="5.08" y="45.72"/>
 </segment>
 <segment>
 <pinref part="V5" gate="GND" pin="GND"/>
@@ -834,6 +914,9 @@
 <segment>
 <pinref part="QG1" gate="G$1" pin="VCC"/>
 <pinref part="V2" gate="G$1" pin="VCC"/>
+<pinref part="VCC" gate="1" pin="MP"/>
+<wire x1="5.08" y1="55.88" x2="-2.54" y2="55.88" width="0.1524" layer="91"/>
+<junction x="5.08" y="55.88"/>
 </segment>
 <segment>
 <wire x1="35.56" y1="45.72" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
@@ -898,9 +981,39 @@
 <pinref part="M516" gate="E1" pin="IN1"/>
 </segment>
 </net>
+<net name="-15V" class="0">
+<segment>
+<pinref part="SUPPLY1" gate="G$1" pin="-15V"/>
+<pinref part="-15V" gate="1" pin="MP"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,48.26,43.3917,M661,K,IN1,,,"/>
+<approved hash="114,1,48.26,43.3917,M661,K,IN2,,,"/>
+<approved hash="114,1,48.26,43.3917,M661,K,IN3,,,"/>
+<approved hash="114,1,48.26,43.3917,M661,S,IN1,,,"/>
+<approved hash="114,1,48.26,43.3917,M661,S,IN2,,,"/>
+<approved hash="114,1,48.26,43.3917,M661,S,IN3,,,"/>
+<approved hash="114,1,50.8,22.86,M516,L1,IN1,,,"/>
+<approved hash="114,1,50.8,22.86,M516,L1,IN2,,,"/>
+<approved hash="114,1,50.8,22.86,M516,L1,IN3,,,"/>
+<approved hash="114,1,50.8,22.86,M516,L1,IN4,,,"/>
+<approved hash="114,1,50.8,22.86,M516,S1,IN1,,,"/>
+<approved hash="114,1,50.8,22.86,M516,S1,IN2,,,"/>
+<approved hash="114,1,50.8,22.86,M516,S1,IN3,,,"/>
+<approved hash="114,1,50.8,22.86,M516,S1,IN4,,,"/>
+<approved hash="114,1,50.8,22.86,M516,P2,IN1,,,"/>
+<approved hash="114,1,50.8,22.86,M516,P2,IN2,,,"/>
+<approved hash="114,1,50.8,22.86,M516,P2,IN3,,,"/>
+<approved hash="114,1,50.8,22.86,M516,P2,IN4,,,"/>
+<approved hash="114,1,50.8,22.86,M516,V2,IN1,,,"/>
+<approved hash="114,1,50.8,22.86,M516,V2,IN2,,,"/>
+<approved hash="114,1,50.8,22.86,M516,V2,IN3,,,"/>
+<approved hash="114,1,50.8,22.86,M516,V2,IN4,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

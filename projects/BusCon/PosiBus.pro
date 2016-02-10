@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/PROGRAM FILES/EAGLE-4.11/projects/BusCon/PosiBus.brd
+Job           : C:/Users/Vince/Documents/eagle/projects/BusCon/PosiBus.brd
 
-Start at      :   03:34:55p ( 3/28/2004)
-End at        :   04:17:18p ( 3/28/2004)
-Elapsed time  :   00:42:23
+Start at      : 00:02:11 (2/9/2016)
+End at        : 00:02:12 (2/9/2016)
+Elapsed time  : 00:00:01
 
-Signals       :    44   RoutingGrid: 3 mil  Layers: 2
-Connections   :   152   predefined:  0 ( 0 Vias )
+Signals       :    44   RoutingGrid: 12.5 mil  Layers: 2
+Connections   :   188   predefined:  184 ( 0 Vias )
 
-Router memory :   5567700
+Router memory :   336996
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:02  00:31:53  00:02:26  00:02:45  00:02:44  00:02:33
-Number of Ripups  :         0        66         0         0         0         0
-max. Level        :         0         4         0         0         0         0
-max. Total        :         0        87         0         0         0         0
+Time per pass     :  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0         0
+max. Level        :         0         0         0         0         0         0
+max. Total        :         0         0         0         0         0         0
 
-Routed            :         0       152       152       152       152       152
+Routed            :         0         4         4         4         4         4
 Vias              :         0         0         0         0         0         0
-Resolution        :     0.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Resolution        :    97.9 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

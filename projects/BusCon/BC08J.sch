@@ -1945,6 +1945,14 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,106.68,7.62,-15V,,,,,"/>
+<approved hash="106,1,106.68,7.62,-15V,,,,,"/>
+<approved hash="106,1,106.68,2.54,VCC,,,,,"/>
+<approved hash="106,1,106.68,2.54,VCC,,,,,"/>
+<approved hash="113,1,105.029,48.26,U$1,,,,,"/>
+<approved hash="113,1,43.18,48.4547,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

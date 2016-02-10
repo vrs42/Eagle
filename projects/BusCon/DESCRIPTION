@@ -6,14 +6,11 @@ Bus Connector paddles for Negibus and Posibus
 <LI><b>BusCon40</b> is an early incompatible version with better ground planes than BusConOld.</LI>
 <LI><b>PosiBus</b> is a wacky idea with a molex connector.</LI>
 <LI><b>BusCon</b>uses two 34-wire cables to carry Posibus, or just one for Negibus.</LI>
-<LI><b>BusCon10</b> is BusCon again.</LI>
-<LI><b>BusCon15</b> is BusCon again.</LI>
 <LI><b>BusConPoly</b> is BusCon with Polygon fill.</LI>
 <LI><b>tester</b> is another attempt at a backplane probe.</LI>
 <LI><b>x-talk</b> is an attempt at a crosstalk measurement jig for Posibus cables.</LI>
 <LI><b>BC08J</b> is essentially a BC08J paddle with a cheaper ribbon connector.</LI>
 <LI><b>merge4</b> is four 8j-merge paddles on a single board.</LI>
-<LI><b>proto</b> is four 8j-merge paddles simply panelized.</LI>
 
 
 
