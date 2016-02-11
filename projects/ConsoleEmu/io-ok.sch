@@ -4811,17 +4811,10 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <wire x1="86.36" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="50.8" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="63.5" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="63.5" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="83.82" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="86.36" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="63.5" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="1Q"/>
 <pinref part="OUT5-6" gate="G$1" pin="2"/>
-<pinref part="IC7" gate="A" pin="1Q"/>
-<pinref part="OUT7-8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$92" class="0">
@@ -5711,6 +5704,16 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="IC10" gate="A" pin="G2B"/>
 </segment>
 </net>
+<net name="N$27" class="0">
+<segment>
+<wire x1="160.02" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="63.5" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="A" pin="1Q"/>
+<wire x1="172.72" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="OUT7-8" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="63.5" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -5861,6 +5864,17 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,170.18,-30.48,IN06,,,,,"/>
+<approved hash="106,1,170.18,-33.02,IN07,,,,,"/>
+<approved hash="113,1,-27.7453,-50.8,IN1-2,,,,,"/>
+<approved hash="113,1,48.4547,-50.8,IN3-4,,,,,"/>
+<approved hash="113,1,-45.5253,78.74,OUT1-2,,,,,"/>
+<approved hash="113,1,30.6747,78.74,OUT3-4,,,,,"/>
+<approved hash="113,1,124.655,-50.8,IN5-6,,,,,"/>
+<approved hash="113,1,106.875,78.74,OUT5-6,,,,,"/>
+<approved hash="113,1,183.075,78.74,OUT7-8,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

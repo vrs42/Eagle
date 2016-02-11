@@ -12524,7 +12524,7 @@ type I, package type TS</description>
 <part name="BYP17" library="rcl" deviceset="C-US" device="102-043X133" value="100uf 25V"/>
 <part name="V59" library="supply2" deviceset="VCC" device=""/>
 <part name="V60" library="supply2" deviceset="GND" device=""/>
-<part name="IC17" library="micro-motorola" deviceset="6802" device=""/>
+<part name="IC17" library="micro-motorola" deviceset="6802" device="" value="6802"/>
 <part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC18U-V" value="4Mhz"/>
 <part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value="27pf"/>
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value="27pf"/>
@@ -12537,8 +12537,8 @@ type I, package type TS</description>
 <part name="V18" library="supply2" deviceset="VCC" device=""/>
 <part name="V19" library="supply2" deviceset="GND" device=""/>
 <part name="V20" library="supply2" deviceset="GND" device=""/>
-<part name="IC21" library="micro-motorola" deviceset="6850" device=""/>
-<part name="IC24" library="micro-motorola" deviceset="6821" device=""/>
+<part name="IC21" library="micro-motorola" deviceset="6850" device="" value="6850"/>
+<part name="IC24" library="micro-motorola" deviceset="6821" device="" value="6821"/>
 <part name="IC27" library="linear" deviceset="*556" device="N" technology="LM"/>
 <part name="V21" library="supply2" deviceset="GND" device=""/>
 <part name="V22" library="supply2" deviceset="GND" device=""/>
@@ -12611,7 +12611,7 @@ type I, package type TS</description>
 <part name="V56" library="supply2" deviceset="GND" device=""/>
 <part name="IC25" library="74xx-us" deviceset="74*245" device="N" technology="LS"/>
 <part name="IC26" library="74xx-us" deviceset="74*245" device="N" technology="LS"/>
-<part name="IC22" library="memory-hitachi" deviceset="6264A" device=""/>
+<part name="IC22" library="memory-hitachi" deviceset="6264A" device="" value="6264"/>
 <part name="V57" library="supply2" deviceset="GND" device=""/>
 <part name="V58" library="supply2" deviceset="VCC" device=""/>
 <part name="IC23" library="microchip" deviceset="27*128" device="P" technology="C"/>
@@ -13700,17 +13700,10 @@ type I, package type TS</description>
 <segment>
 <wire x1="86.36" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="50.8" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="63.5" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="63.5" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="83.82" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="86.36" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="63.5" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="1Q"/>
 <pinref part="OUT5-6" gate="G$1" pin="2"/>
-<pinref part="IC7" gate="A" pin="1Q"/>
-<pinref part="OUT7-8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$92" class="0">
@@ -14591,6 +14584,16 @@ type I, package type TS</description>
 <pinref part="BYP16" gate="G$1" pin="1"/>
 <pinref part="BYP17" gate="G$1" pin="1"/>
 <pinref part="V59" gate="G$1" pin="VCC"/>
+</segment>
+</net>
+<net name="N$139" class="0">
+<segment>
+<wire x1="172.72" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="OUT7-8" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="63.5" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="A" pin="1Q"/>
+<wire x1="160.02" y1="86.36" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -16446,6 +16449,24 @@ type I, package type TS</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,2,-109.22,104.14,IC17P,VSS,GND,,,"/>
+<approved hash="104,2,-111.76,104.14,IC17P,VSS,GND,,,"/>
+<approved hash="104,2,-119.38,104.14,IC21P,VSS,GND,,,"/>
+<approved hash="104,2,-127,104.14,IC24P,VSS,GND,,,"/>
+<approved hash="104,2,-83.82,15.24,IC27A,V+,VCC,,,"/>
+<approved hash="104,2,7.62,-38.1,IC22,VSS,GND,,,"/>
+<approved hash="113,1,-27.7453,-50.8,IN1-2,,,,,"/>
+<approved hash="113,1,48.4547,-50.8,IN3-4,,,,,"/>
+<approved hash="113,1,-45.5253,78.74,OUT1-2,,,,,"/>
+<approved hash="113,1,30.6747,78.74,OUT3-4,,,,,"/>
+<approved hash="113,1,124.655,-50.8,IN5-6,,,,,"/>
+<approved hash="113,1,106.875,78.74,OUT5-6,,,,,"/>
+<approved hash="113,1,183.075,78.74,OUT7-8,,,,,"/>
+<approved hash="113,2,-45.72,-21.9795,X1,,,,,"/>
+<approved hash="113,2,-42.8583,-1.27,LED1,,,,,"/>
+<approved hash="113,3,0,17.5853,SV9,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

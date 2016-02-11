@@ -12573,6 +12573,13 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,55.88,82.7082,RS-232,,,,,"/>
+<approved hash="113,1,71.2095,105.799,CTS/DSR,,,,,"/>
+<approved hash="113,1,76.3947,7.66233,RX,,,,,"/>
+<approved hash="113,1,137.355,55.9223,TX,,,,,"/>
+<approved hash="113,1,157.675,99.1023,RR,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

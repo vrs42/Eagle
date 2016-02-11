@@ -13794,6 +13794,16 @@ type I, package type TS</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-109.22,104.14,IC17P,VSS,GND,,,"/>
+<approved hash="104,1,-111.76,104.14,IC17P,VSS,GND,,,"/>
+<approved hash="104,1,-119.38,104.14,IC21P,VSS,GND,,,"/>
+<approved hash="104,1,-127,104.14,IC24P,VSS,GND,,,"/>
+<approved hash="104,1,-83.82,15.24,IC27A,V+,VCC,,,"/>
+<approved hash="104,1,7.62,-38.1,IC22,VSS,GND,,,"/>
+<approved hash="113,1,-45.72,-21.9795,X1,,,,,"/>
+<approved hash="113,2,0,17.5853,CORE-IO,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

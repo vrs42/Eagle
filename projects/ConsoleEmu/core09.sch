@@ -14181,6 +14181,17 @@ type I, package type TS</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-45.72,-35.56,IC21P,VSS,GND,,,"/>
+<approved hash="104,1,-53.34,-35.56,IC24P,VSS,GND,,,"/>
+<approved hash="104,1,-83.82,15.24,IC27A,V+,VCC,,,"/>
+<approved hash="104,1,-2.54,-38.1,IC22,VSS,GND,,,"/>
+<approved hash="104,1,129.54,45.72,IC17P,VSS,GND,,,"/>
+<approved hash="113,1,-27.94,110.101,COM,,,,,"/>
+<approved hash="113,1,-42.8583,-1.27,LED1,,,,,"/>
+<approved hash="113,1,-53.2977,110.295,RS-232,,,,,"/>
+<approved hash="113,2,0,17.5853,CORE-IO,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

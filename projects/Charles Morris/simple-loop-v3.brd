@@ -656,7 +656,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <clearance class="1" value="0.381"/>
 </class>
 </classes>
-<designrules name="10mils">
+<designrules name="10mils *">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;10mils.dru - OLIMEX.com check for 10 mils
  (3-5 days) vs. 8 mils (15 days)
@@ -703,9 +703,9 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
 <param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
-<param name="psTop" value="-1"/>
-<param name="psBottom" value="-1"/>
-<param name="psFirst" value="-1"/>
+<param name="psTop" value="1"/>
+<param name="psBottom" value="1"/>
+<param name="psFirst" value="0"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="0.1"/>

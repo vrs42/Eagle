@@ -4559,6 +4559,20 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,25.7523,28.6173,IC20,B,OE,,,"/>
+<approved hash="114,1,25.7523,28.6173,IC20,B,I,,,"/>
+<approved hash="114,1,25.7523,28.6173,IC20,C,OE,,,"/>
+<approved hash="114,1,25.7523,28.6173,IC20,C,I,,,"/>
+<approved hash="114,1,25.7523,28.6173,IC20,D,OE,,,"/>
+<approved hash="114,1,25.7523,28.6173,IC20,D,I,,,"/>
+<approved hash="113,1,78.4606,59.5926,VCC,,,,,"/>
+<approved hash="113,1,73.9394,11.5274,GND,,,,,"/>
+<approved hash="113,1,40.3606,29.1126,E2,,,,,"/>
+<approved hash="113,1,7.3406,34.1926,E2D,,,,,"/>
+<approved hash="113,1,7.3406,24.0326,E2E,,,,,"/>
+<approved hash="113,1,81.6017,41.91,LED2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -76,15 +76,6 @@
 <package name="BOHRUNG">
 <pad name="1" x="0" y="0" drill="3.5052" diameter="6.4516"/>
 </package>
-<package name="JUMPER">
-<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="0.4064" diameter="1.778"/>
-<pad name="2" x="1.27" y="0" drill="0.4064" diameter="1.778"/>
-<text x="3.175" y="-0.635" size="1.27" layer="25">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="DIN_A4">
@@ -133,15 +124,6 @@
 <circle x="0" y="0" radius="1.4224" width="0.1016" layer="94"/>
 <text x="1.905" y="-0.635" size="1.27" layer="96">&gt;value</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="point" direction="sup" rot="R90"/>
-</symbol>
-<symbol name="JUMPER">
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0" layer="94"/>
-<wire x1="-3.81" y1="-1.27" x2="2.54" y2="-1.27" width="0" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="-3.81" y2="1.27" width="0" layer="94"/>
-<text x="-3.81" y="2.54" size="1.778" layer="95">&gt;name</text>
-<pin name="1" x="-3.81" y="0" visible="off" length="short" function="dot" swaplevel="1"/>
-<pin name="2" x="2.54" y="0" visible="off" length="short" function="dot" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="BOHRUNG">
 <pin name="1" x="-5.08" y="0" length="middle"/>
@@ -193,22 +175,6 @@
 <device name="" package="BOHRUNG">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER" prefix="J" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="JUMPER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="JUMPER">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1255,6 +1221,70 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="jumper">
+<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="JP1">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-1.016" y1="0" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="0" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.254" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-2.54" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="2.286" x2="1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="2.286" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="2.54" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="2.286" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="2.286" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.254" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-2.54" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="-1.27" drill="0.9144" shape="long"/>
+<pad name="2" x="0" y="1.27" drill="0.9144" shape="long"/>
+<text x="-1.651" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="2.921" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.3048" y1="0.9652" x2="0.3048" y2="1.5748" layer="51"/>
+<rectangle x1="-0.3048" y1="-1.5748" x2="0.3048" y2="-0.9652" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="J1">
+<wire x1="0" y1="2.54" x2="0" y2="3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="3.81" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="5.08" x2="1.905" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.905" y1="5.08" x2="1.905" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.905" y1="-5.08" x2="-1.905" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-1.905" y1="-5.08" x2="-1.905" y2="5.08" width="0.4064" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JP1Q" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="J1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JP1">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1276,7 +1306,7 @@ by exp-lbrs.ulp</description>
 <part name="U$4" library="holgnorm" deviceset="+5V" device="" value="+5V"/>
 <part name="U$5" library="holgnorm" deviceset="+5V" device="" value="+5V"/>
 <part name="U$9" library="holgnorm" deviceset="GND" device=""/>
-<part name="J2" library="holgnorm" deviceset="JUMPER" device="" value="JUMPER"/>
+<part name="J2" library="jumper" deviceset="JP1Q" device="" value="JUMPER"/>
 <part name="U$10" library="holgnorm" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X4" device="" value="PINHD-1X4"/>
 <part name="U$11" library="holgnorm" deviceset="GND" device=""/>
@@ -1310,10 +1340,8 @@ by exp-lbrs.ulp</description>
 <attribute name="VALUE" x="141.605" y="137.795" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="U$9" gate="G$1" x="151.13" y="101.6" rot="R270"/>
-<instance part="J2" gate="G$1" x="127" y="129.54" smashed="yes">
-<attribute name="NAME" x="123.19" y="125.73" size="1.778" layer="95"/>
-</instance>
-<instance part="U$10" gate="G$1" x="120.65" y="129.54" rot="R270"/>
+<instance part="J2" gate="A" x="124.46" y="121.92"/>
+<instance part="U$10" gate="G$1" x="124.46" y="113.03"/>
 <instance part="JP2" gate="A" x="182.88" y="71.12"/>
 <instance part="U$11" gate="G$1" x="171.45" y="73.66" rot="R270"/>
 <instance part="U$12" gate="G$1" x="173.99" y="83.82"/>
@@ -1756,8 +1784,7 @@ by exp-lbrs.ulp</description>
 <pinref part="U$9" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="129.54" x2="123.19" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J2" gate="A" pin="1"/>
 <pinref part="U$10" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -1819,10 +1846,10 @@ by exp-lbrs.ulp</description>
 </net>
 <net name="MAS/SLA" class="0">
 <segment>
-<wire x1="153.67" y1="129.54" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="129.54" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
 <label x="130.81" y="130.175" size="1.524" layer="95"/>
 <pinref part="J1" gate="G$1" pin="/CSEL"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="J2" gate="A" pin="2"/>
 </segment>
 </net>
 </nets>

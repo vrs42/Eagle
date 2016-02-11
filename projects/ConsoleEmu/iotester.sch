@@ -6093,6 +6093,18 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-27.7453,-50.8,IN1-2,,,,,"/>
+<approved hash="113,1,48.4547,-50.8,IN3-4,,,,,"/>
+<approved hash="113,1,-45.5253,78.74,OUT1-2,,,,,"/>
+<approved hash="113,1,30.6747,78.74,OUT3-4,,,,,"/>
+<approved hash="113,1,124.655,-50.8,IN5-6,,,,,"/>
+<approved hash="113,1,106.875,78.74,OUT5-6,,,,,"/>
+<approved hash="113,1,183.075,78.74,OUT7-8,,,,,"/>
+<approved hash="113,1,200.855,-50.8,IN7-8,,,,,"/>
+<approved hash="113,1,119.38,-84.8953,DEVSEL,,,,,"/>
+<approved hash="113,2,0,17.5853,CORE-IO,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

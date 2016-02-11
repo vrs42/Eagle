@@ -1034,7 +1034,6 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <element name="C1" library="rcl" package="E7,5-18" value="470 uF" x="10.16" y="25.4" rot="R180"/>
 <element name="C2" library="rcl" package="B45181A" value="10" x="27.94" y="55.88" rot="R270"/>
 <element name="C3" library="rcl" package="B45181A" value="10" x="34.29" y="55.88" rot="R270"/>
-<element name="C4" library="rcl" package="B45181A" value="10" x="1.27" y="-10.16"/>
 </elements>
 <signals>
 <signal name="GND" class="1">

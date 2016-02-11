@@ -10359,13 +10359,13 @@ transient-voltage suppressor</description>
 <net name="RX-EIA" class="0">
 <segment>
 <wire x1="147.32" y1="0" x2="124.46" y2="0" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="0" x2="129.54" y2="0" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="0" x2="124.46" y2="0" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="0" x2="129.54" y2="0" width="0.1524" layer="91"/>
 <junction x="129.54" y="0"/>
 <label x="139.7" y="0" size="1.778" layer="95"/>
 <pinref part="OK2" gate="D" pin="COL"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+<junction x="124.46" y="0"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="93.98" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
@@ -10656,6 +10656,10 @@ transient-voltage suppressor</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,63.5,82.7081,X1,,,,,"/>
+<approved hash="113,1,111.76,87.7881,X2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

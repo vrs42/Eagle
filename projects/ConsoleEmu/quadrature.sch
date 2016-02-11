@@ -549,6 +549,9 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,128.139,73.66,J1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

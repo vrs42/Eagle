@@ -664,7 +664,7 @@
 <parts>
 <part name="IC1" library="micro-motorola" deviceset="6809E" device="" value="6809E"/>
 <part name="V14" library="supply2" deviceset="GND" device=""/>
-<part name="H1" library="micro-motorola" deviceset="6809" device=""/>
+<part name="H1" library="micro-motorola" deviceset="6809" device="" value="6809"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="V2" library="supply2" deviceset="VCC" device=""/>
 <part name="IC2" library="74xx-us" deviceset="74*73" device="N" technology="LS"/>
@@ -1112,6 +1112,30 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-73.66,25.4,IC1P,VSS,GND,,,"/>
+<approved hash="104,1,-66.04,25.4,H1P,VSS,GND,,,"/>
+<approved hash="206,1,-2.54,22.86,E,,,,,"/>
+<approved hash="206,2,129.54,55.88,E,,,,,"/>
+<approved hash="206,1,-2.54,15.24,N$1,,,,,"/>
+<approved hash="206,1,-15.24,12.7,N$1,,,,,"/>
+<approved hash="206,1,-15.24,15.24,N$4,,,,,"/>
+<approved hash="206,1,-2.54,17.78,N$4,,,,,"/>
+<approved hash="209,1,-45.72,83.82,N$5,,,,,"/>
+<approved hash="209,1,30.48,76.2,N$5,,,,,"/>
+<approved hash="209,1,30.48,73.66,N$6,,,,,"/>
+<approved hash="209,1,-45.72,78.74,N$6,,,,,"/>
+<approved hash="209,1,-45.72,73.66,N$8,,,,,"/>
+<approved hash="209,1,30.48,68.58,N$8,,,,,"/>
+<approved hash="209,1,30.48,66.04,N$9,,,,,"/>
+<approved hash="209,1,-45.72,68.58,N$9,,,,,"/>
+<approved hash="209,1,-45.72,63.5,N$10,,,,,"/>
+<approved hash="209,1,30.48,60.96,N$10,,,,,"/>
+<approved hash="206,1,-2.54,20.32,Q,,,,,"/>
+<approved hash="206,2,86.36,55.88,Q,,,,,"/>
+<approved hash="206,1,-15.24,10.16,R/!W,,,,,"/>
+<approved hash="206,1,-2.54,12.7,R/!W,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

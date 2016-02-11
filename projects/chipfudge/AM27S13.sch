@@ -837,6 +837,14 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,16.8431,56.7605,JP1,,,,,"/>
+<approved hash="113,1,16.8431,46.6005,JP2,,,,,"/>
+<approved hash="113,1,16.8431,36.4405,JP3,,,,,"/>
+<approved hash="113,1,39.7031,56.7605,JP4,,,,,"/>
+<approved hash="113,1,39.7031,46.6005,JP5,,,,,"/>
+<approved hash="113,1,39.7031,36.4405,JP6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

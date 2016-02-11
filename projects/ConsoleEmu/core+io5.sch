@@ -13700,17 +13700,10 @@ type I, package type TS</description>
 <segment>
 <wire x1="86.36" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="50.8" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="63.5" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="63.5" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="83.82" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="86.36" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="63.5" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="1Q"/>
 <pinref part="OUT5-6" gate="G$1" pin="2"/>
-<pinref part="IC7" gate="A" pin="1Q"/>
-<pinref part="OUT7-8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$92" class="0">
@@ -14591,6 +14584,16 @@ type I, package type TS</description>
 <pinref part="BYP16" gate="G$1" pin="1"/>
 <pinref part="BYP17" gate="G$1" pin="1"/>
 <pinref part="V59" gate="G$1" pin="VCC"/>
+</segment>
+</net>
+<net name="N$139" class="0">
+<segment>
+<wire x1="160.02" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="63.5" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="A" pin="1Q"/>
+<wire x1="172.72" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="OUT7-8" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="63.5" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -16446,6 +16449,15 @@ type I, package type TS</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,2,-109.22,104.14,IC17P,VSS,GND,,,"/>
+<approved hash="104,2,-111.76,104.14,IC17P,VSS,GND,,,"/>
+<approved hash="104,2,-119.38,104.14,IC21P,VSS,GND,,,"/>
+<approved hash="104,2,-127,104.14,IC24P,VSS,GND,,,"/>
+<approved hash="104,2,-83.82,15.24,IC27A,V+,VCC,,,"/>
+<approved hash="104,2,7.62,-38.1,IC22,VSS,GND,,,"/>
+<approved hash="113,2,-45.72,-21.9795,X1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

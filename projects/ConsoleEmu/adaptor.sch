@@ -3084,6 +3084,36 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,121.92,63.5,6802PLUGP,VSS,GND,,,"/>
+<approved hash="104,1,119.38,63.5,6802PLUGP,VSS,GND,,,"/>
+<approved hash="104,1,111.76,63.5,6809P,VSS,GND,,,"/>
+<approved hash="206,1,17.78,12.7,N$25,,,,,"/>
+<approved hash="206,1,48.26,-2.54,N$25,,,,,"/>
+<approved hash="206,1,48.26,2.54,N$26,,,,,"/>
+<approved hash="206,1,17.78,20.32,N$26,,,,,"/>
+<approved hash="206,1,17.78,17.78,N$27,,,,,"/>
+<approved hash="206,1,48.26,7.62,N$27,,,,,"/>
+<approved hash="206,1,17.78,15.24,N$27,,,,,"/>
+<approved hash="209,1,17.78,78.74,N$28,,,,,"/>
+<approved hash="209,1,81.28,73.66,N$28,,,,,"/>
+<approved hash="209,1,81.28,68.58,N$29,,,,,"/>
+<approved hash="209,1,17.78,73.66,N$29,,,,,"/>
+<approved hash="209,1,17.78,66.04,N$30,,,,,"/>
+<approved hash="209,1,81.28,60.96,N$30,,,,,"/>
+<approved hash="209,1,81.28,58.42,N$31,,,,,"/>
+<approved hash="209,1,17.78,63.5,N$31,,,,,"/>
+<approved hash="209,1,17.78,60.96,N$32,,,,,"/>
+<approved hash="209,1,81.28,53.34,N$32,,,,,"/>
+<approved hash="209,1,81.28,50.8,N$33,,,,,"/>
+<approved hash="209,1,17.78,55.88,N$33,,,,,"/>
+<approved hash="209,1,17.78,53.34,N$34,,,,,"/>
+<approved hash="209,1,81.28,43.18,N$34,,,,,"/>
+<approved hash="209,1,81.28,40.64,N$35,,,,,"/>
+<approved hash="209,1,17.78,50.8,N$35,,,,,"/>
+<approved hash="113,1,33.02,47.1212,6802PLUG,,,,,"/>
+<approved hash="113,1,64.77,36.9612,6809,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

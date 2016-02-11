@@ -9214,6 +9214,33 @@ LETTER landscape</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,101.879,132.08,PAD1,,,,,"/>
+<approved hash="113,1,101.879,121.92,PAD3,,,,,"/>
+<approved hash="113,1,101.879,127,PAD2,,,,,"/>
+<approved hash="113,1,119.101,121.92,PAD4,,,,,"/>
+<approved hash="113,1,119.101,127,PAD5,,,,,"/>
+<approved hash="113,1,119.101,132.08,PAD6,,,,,"/>
+<approved hash="113,1,101.879,149.86,PAD7,,,,,"/>
+<approved hash="113,1,101.879,144.78,PAD8,,,,,"/>
+<approved hash="113,1,101.879,139.7,PAD9,,,,,"/>
+<approved hash="113,1,119.101,149.86,PAD10,,,,,"/>
+<approved hash="113,1,119.101,144.78,PAD11,,,,,"/>
+<approved hash="113,1,119.101,139.7,PAD12,,,,,"/>
+<approved hash="113,1,36.449,121.92,U$2,,,,,"/>
+<approved hash="113,1,158.107,78.74,S1,,,,,"/>
+<approved hash="113,1,38.3794,162.56,PAD13,,,,,"/>
+<approved hash="113,1,38.3794,152.4,PAD14,,,,,"/>
+<approved hash="113,1,38.3794,132.08,PAD15,,,,,"/>
+<approved hash="113,1,38.3794,127,PAD16,,,,,"/>
+<approved hash="113,1,38.3794,121.92,PAD17,,,,,"/>
+<approved hash="113,1,38.3794,106.68,PAD18,,,,,"/>
+<approved hash="113,1,38.3794,81.28,PAD19,,,,,"/>
+<approved hash="113,1,134.899,86.36,PAD20,,,,,"/>
+<approved hash="113,1,133.797,80.1074,OSC-TP,,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME2,,,,,"/>
+<approved hash="113,1,81.28,96.7994,XTAL,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
