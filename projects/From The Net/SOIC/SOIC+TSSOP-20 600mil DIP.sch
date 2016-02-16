@@ -700,6 +700,10 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,20.3283,12.5688,JP1,,,,,"/>
+<approved hash="113,1,68.5717,15.3712,JP2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

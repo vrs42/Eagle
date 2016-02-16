@@ -3744,8 +3744,8 @@ Based on the following sources:
 <part name="V42" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" deviceset="DINA3_L" device=""/>
 <part name="SV1" library="con-lstb" deviceset="MA20-2" device=""/>
-<part name="IC38" library="memory-hitachi" deviceset="62256P" device=""/>
-<part name="IC39" library="memory-hitachi" deviceset="62256P" device=""/>
+<part name="IC38" library="memory-hitachi" deviceset="62256P" device="" value="62256P"/>
+<part name="IC39" library="memory-hitachi" deviceset="62256P" device="" value="62256P"/>
 <part name="V31" library="supply2" deviceset="VCC" device=""/>
 <part name="V32" library="supply2" deviceset="VCC" device=""/>
 <part name="V33" library="supply2" deviceset="GND" device=""/>
@@ -7967,6 +7967,29 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,3,63.5,25.4,IC38,VSS,GND,,,"/>
+<approved hash="104,3,121.92,25.4,IC39,VSS,GND,,,"/>
+<approved hash="206,1,40.64,88.9,OSCOUT,,,,,"/>
+<approved hash="206,1,33.02,88.9,OSCOUT,,,,,"/>
+<approved hash="206,1,33.02,88.9,OSCOUT,,,,,"/>
+<approved hash="112,1,10.16,83.82,,,,,,"/>
+<approved hash="112,1,10.16,93.98,,,,,,"/>
+<approved hash="112,1,30.48,88.9,,,,,,"/>
+<approved hash="112,1,30.48,93.98,,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME3,,,,,"/>
+<approved hash="113,3,43.18,205.545,SV1,,,,,"/>
+<approved hash="113,3,96.7994,224.887,PAD1,,,,,"/>
+<approved hash="113,3,96.7994,219.807,PAD2,,,,,"/>
+<approved hash="113,3,96.7994,214.727,PAD3,,,,,"/>
+<approved hash="113,3,96.7994,209.647,PAD4,,,,,"/>
+<approved hash="113,3,96.7994,204.567,PAD5,,,,,"/>
+<approved hash="113,3,96.7994,199.487,PAD6,,,,,"/>
+<approved hash="113,3,96.7994,194.407,PAD7,,,,,"/>
+<approved hash="113,3,96.7994,189.327,PAD8,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

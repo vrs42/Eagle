@@ -7636,6 +7636,13 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,5.46947,15.24,RESET,,,,,"/>
+<approved hash="113,1,-1.17263,109.052,INPUT,,,,,"/>
+<approved hash="113,1,0.608794,24.0326,!RESET,,,,,"/>
+<approved hash="113,1,25.6794,31.8474,VCC,,,,,"/>
+<approved hash="113,1,15.5194,8.98737,GND,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

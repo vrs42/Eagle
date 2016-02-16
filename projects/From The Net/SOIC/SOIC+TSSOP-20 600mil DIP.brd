@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
@@ -72,8 +72,8 @@
 <wire x1="19.67" y1="8.42" x2="19.67" y2="35.268" width="0" layer="20"/>
 <wire x1="19.67" y1="35.268" x2="0.64" y2="35.268" width="0" layer="20"/>
 <wire x1="0.64" y1="35.268" x2="0.64" y2="8.42" width="0" layer="20"/>
-<text x="9.398" y="20.828" size="1.778" layer="16" font="vector" rot="MR90">TSSOP-20</text>
-<text x="11.176" y="10.16" size="1.778" layer="1" font="vector" rot="R90">SOIC-20</text>
+<text x="9.398" y="20.828" size="1.778" layer="16" font="vector" ratio="24" rot="MR90">TSSOP-20</text>
+<text x="11.176" y="10.16" size="1.778" layer="1" font="vector" ratio="24" rot="R90">SOIC-20</text>
 <text x="5.842" y="31.496" size="1.27" layer="21">http://www.</text>
 <text x="4.572" y="29.718" size="1.27" layer="21">media.mit.edu/</text>
 <text x="6.35" y="12.954" size="1.27" layer="21">~ladyada/</text>

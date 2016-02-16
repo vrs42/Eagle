@@ -13182,6 +13182,26 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,66.04,7.62,U$2,P$1,,,,"/>
+<approved hash="101,1,66.04,0,U$3,P$1,,,,"/>
+<approved hash="101,1,66.04,-7.62,U$4,P$1,,,,"/>
+<approved hash="101,1,66.04,-15.24,U$5,P$1,,,,"/>
+<approved hash="101,1,66.04,-22.86,U$6,P$1,,,,"/>
+<approved hash="101,1,106.68,-15.24,U$7,P$1,,,,"/>
+<approved hash="101,1,106.68,0,U$8,P$1,,,,"/>
+<approved hash="101,1,106.68,-7.62,U$9,P$1,,,,"/>
+<approved hash="101,1,106.68,7.62,U$10,P$1,,,,"/>
+<approved hash="101,1,66.04,-30.48,U$11,P$1,,,,"/>
+<approved hash="101,1,106.68,-22.86,U$14,P$1,,,,"/>
+<approved hash="101,1,106.68,-30.48,U$15,P$1,,,,"/>
+<approved hash="101,1,106.68,15.24,U$18,P$1,,,,"/>
+<approved hash="101,1,106.68,22.86,U$19,P$1,,,,"/>
+<approved hash="101,1,66.04,15.24,U$23,P$1,,,,"/>
+<approved hash="101,1,66.04,22.86,U$24,P$1,,,,"/>
+<approved hash="113,1,0,69.4605,S1,,,,,"/>
+<approved hash="113,1,25.6371,-2.40877,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

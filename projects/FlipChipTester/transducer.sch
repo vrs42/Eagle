@@ -6261,6 +6261,16 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,88.9,12.7,IC3P,GND,V-,,,"/>
+<approved hash="113,1,28.5533,54.5126,TTL_TX,,,,,"/>
+<approved hash="113,1,106.549,56.1171,JP1,,,,,"/>
+<approved hash="113,1,132.359,49.6274,MUT,,,,,"/>
+<approved hash="113,1,104.009,18.0171,JP2,,,,,"/>
+<approved hash="113,1,31.5702,41.8126,TTL_INVERT,,,,,"/>
+<approved hash="113,1,29.3343,74.8326,TTL_CTL,,,,,"/>
+<approved hash="113,1,28.6961,21.4926,TTL_RX,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -13535,6 +13535,9 @@ SMD chip inductor</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,76.4371,71.2512,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

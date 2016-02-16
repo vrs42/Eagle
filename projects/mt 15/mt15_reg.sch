@@ -4331,6 +4331,30 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="105,1,27.94,149.86,N$16,,,,,"/>
+<approved hash="105,1,63.5,151.13,N$46,,,,,"/>
+<approved hash="105,1,27.94,121.92,N$49,,,,,"/>
+<approved hash="105,1,63.5,123.19,N$50,,,,,"/>
+<approved hash="105,1,127,149.86,N$52,,,,,"/>
+<approved hash="105,1,165.1,152.4,N$54,,,,,"/>
+<approved hash="105,1,127,101.6,N$55,,,,,"/>
+<approved hash="105,1,165.1,104.14,N$56,,,,,"/>
+<approved hash="105,1,165.1,137.16,N$57,,,,,"/>
+<approved hash="105,1,165.1,121.92,N$58,,,,,"/>
+<approved hash="105,1,165.1,88.9,N$59,,,,,"/>
+<approved hash="105,1,165.1,73.66,N$60,,,,,"/>
+<approved hash="105,6,69.85,111.76,N$150,,,,,"/>
+<approved hash="105,6,90.17,114.3,N$151,,,,,"/>
+<approved hash="105,6,39.37,139.7,N$159,,,,,"/>
+<approved hash="105,6,20.32,114.3,N$162,,,,,"/>
+<approved hash="105,6,16.51,142.24,N$163,,,,,"/>
+<approved hash="105,6,44.45,116.84,N$164,,,,,"/>
+<approved hash="105,6,68.58,121.92,N$165,,,,,"/>
+<approved hash="115,6,45.72,153.67,VCC,,,,,"/>
+<approved hash="115,6,40.64,153.67,VCC,,,,,"/>
+<approved hash="115,6,68.58,153.67,VCC,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

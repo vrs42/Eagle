@@ -13603,6 +13603,10 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,15.9879,20.32,PL1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

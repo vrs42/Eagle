@@ -101,9 +101,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="19.05" y1="62.23" x2="25.4" y2="62.23" width="0" layer="20"/>
+<wire x1="18.415" y1="62.23" x2="25.4" y2="62.23" width="0" layer="20"/>
 <wire x1="25.4" y1="62.23" x2="25.4" y2="0" width="0" layer="20"/>
 <wire x1="25.4" y1="0" x2="15.875" y2="0" width="0" layer="20"/>
+<wire x1="18.415" y1="62.23" x2="18.415" y2="59.69" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="dec-con">

@@ -5740,6 +5740,26 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,236.22,101.6,IC3,VSS,GND,,,"/>
+<approved hash="114,1,121.92,17.7165,IC9,D,I0,,,"/>
+<approved hash="114,1,121.92,17.7165,IC9,D,I1,,,"/>
+<approved hash="114,1,33.02,7.5565,IC10,A,I,,,"/>
+<approved hash="114,1,33.02,7.5565,IC10,D,I,,,"/>
+<approved hash="114,1,33.02,7.5565,IC10,F,I,,,"/>
+<approved hash="209,1,106.68,38.1,AIN14,,,,,"/>
+<approved hash="209,1,187.96,50.8,AIN14,,,,,"/>
+<approved hash="209,1,187.96,48.26,AIN14,,,,,"/>
+<approved hash="209,1,106.68,35.56,AIN15,,,,,"/>
+<approved hash="209,1,187.96,38.1,AIN15,,,,,"/>
+<approved hash="209,1,106.68,27.94,N$9,,,,,"/>
+<approved hash="209,1,109.22,15.24,N$9,,,,,"/>
+<approved hash="209,1,106.68,30.48,N$10,,,,,"/>
+<approved hash="209,1,109.22,20.32,N$10,,,,,"/>
+<approved hash="113,1,175.26,141.128,X1,,,,,"/>
+<approved hash="113,1,93.98,52.2012,SKT,,,,,"/>
+<approved hash="113,1,75.2631,28.8205,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -4919,6 +4919,44 @@
 <wire x1="93.472" y1="8.128" x2="93.98" y2="7.62" width="0.3048" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="19,1,0714cae261eecd32"/>
+<approved hash="19,1,0510abdc82e84f2e"/>
+<approved hash="19,1,071714c0bfedcdcc"/>
+<approved hash="19,1,6cfbcf77eae02b1a"/>
+<approved hash="19,1,6b03729050f92f4c"/>
+<approved hash="19,1,52f22e6ab5e4ab46"/>
+<approved hash="19,1,6cf7336116e62b42"/>
+<approved hash="19,1,6af85461f7efaf48"/>
+<approved hash="19,1,90ff0d6ed4ebd740"/>
+<approved hash="19,1,52f0d07f4b91973c"/>
+<approved hash="19,1,6ae6aa0809e6ab06"/>
+<approved hash="19,1,6b07939531f2ab46"/>
+<approved hash="19,1,6e3fc202f84f3708"/>
+<approved hash="19,1,6e070035225a2b0a"/>
+<approved hash="19,1,6c466778c176ab06"/>
+<approved hash="19,1,6c3ae30e4548ab06"/>
+<approved hash="19,1,6e339c0ba6442b02"/>
+<approved hash="19,1,7038bd031b45b70c"/>
+<approved hash="19,16,0414b82611c2cfca"/>
+<approved hash="19,16,3812464bd3b3f3c8"/>
+<approved hash="19,16,0510abdc82e84f2e"/>
+<approved hash="19,16,07ea88e723efcd30"/>
+<approved hash="19,16,07b44e88e5f0cd2a"/>
+<approved hash="19,16,f81865204ecc4dce"/>
+<approved hash="19,16,041aa7238ccb4dc0"/>
+<approved hash="19,16,0196699d44e94b2c"/>
+<approved hash="19,16,04165b4170cd4dec"/>
+<approved hash="19,16,04143c3c95d4cff2"/>
+<approved hash="19,16,0010e2d2c92a4dce"/>
+<approved hash="19,16,c013c1def9279acc"/>
+<approved hash="19,16,1912f5efc0d753c8"/>
+<approved hash="19,16,0016c2256fc1cbcc"/>
+<approved hash="19,16,05b02f8206fa4f2e"/>
+<approved hash="19,16,0714cae261eecd32"/>
+<approved hash="19,16,ed7b18e24e8cda0b"/>
+<approved hash="19,16,ed3200df5698da83"/>
+</errors>
 </board>
 </drawing>
 </eagle>

@@ -15554,6 +15554,68 @@ grid 2.54 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,2,401.32,58.42,IC1P,GND,V-,,,"/>
+<approved hash="104,2,403.86,58.42,IC2P,GND,V-,,,"/>
+<approved hash="104,2,406.4,58.42,IC3P,GND,V-,,,"/>
+<approved hash="104,2,408.94,58.42,IC4P,GND,V-,,,"/>
+<approved hash="104,2,411.48,58.42,IC5P,GND,V-,,,"/>
+<approved hash="104,2,414.02,58.42,IC6P,GND,V-,,,"/>
+<approved hash="104,2,416.56,58.42,IC7P,GND,V-,,,"/>
+<approved hash="104,2,419.1,58.42,IC8P,GND,V-,,,"/>
+<approved hash="113,1,22.86,228.405,SV1,,,,,"/>
+<approved hash="113,1,22.86,162.365,SV2,,,,,"/>
+<approved hash="113,1,22.86,96.3253,SV3,,,,,"/>
+<approved hash="113,1,22.86,30.2853,SV4,,,,,"/>
+<approved hash="113,2,43.3112,15.4771,JP1,,,,,"/>
+<approved hash="113,2,43.3112,43.4171,JP3,,,,,"/>
+<approved hash="113,2,43.3112,71.3571,JP4,,,,,"/>
+<approved hash="113,2,43.3112,99.2971,JP5,,,,,"/>
+<approved hash="113,2,43.3112,127.237,JP6,,,,,"/>
+<approved hash="113,2,43.3112,155.177,JP7,,,,,"/>
+<approved hash="113,2,43.3112,183.117,JP8,,,,,"/>
+<approved hash="113,2,43.3112,211.057,JP9,,,,,"/>
+<approved hash="113,2,142.371,15.4771,JP10,,,,,"/>
+<approved hash="113,2,142.371,43.4171,JP11,,,,,"/>
+<approved hash="113,2,142.371,71.3571,JP12,,,,,"/>
+<approved hash="113,2,142.371,99.2971,JP13,,,,,"/>
+<approved hash="113,2,142.371,127.237,JP14,,,,,"/>
+<approved hash="113,2,142.371,155.177,JP15,,,,,"/>
+<approved hash="113,2,142.371,183.117,JP16,,,,,"/>
+<approved hash="113,2,142.371,211.057,JP17,,,,,"/>
+<approved hash="113,2,241.431,15.4771,JP18,,,,,"/>
+<approved hash="113,2,241.431,43.4171,JP19,,,,,"/>
+<approved hash="113,2,241.431,71.3571,JP20,,,,,"/>
+<approved hash="113,2,241.431,99.2971,JP21,,,,,"/>
+<approved hash="113,2,241.431,127.237,JP22,,,,,"/>
+<approved hash="113,2,241.431,155.177,JP23,,,,,"/>
+<approved hash="113,2,241.431,183.117,JP24,,,,,"/>
+<approved hash="113,2,241.431,211.057,JP25,,,,,"/>
+<approved hash="113,2,340.491,15.4771,JP26,,,,,"/>
+<approved hash="113,2,340.491,43.4171,JP27,,,,,"/>
+<approved hash="113,2,340.491,71.3571,JP28,,,,,"/>
+<approved hash="113,2,340.491,99.2971,JP29,,,,,"/>
+<approved hash="113,2,340.491,127.237,JP30,,,,,"/>
+<approved hash="113,2,340.491,155.177,JP31,,,,,"/>
+<approved hash="113,2,340.491,183.117,JP32,,,,,"/>
+<approved hash="113,2,340.491,211.057,JP33,,,,,"/>
+<approved hash="113,2,414.02,96.3253,SV7,,,,,"/>
+<approved hash="113,2,414.02,129.345,SV8,,,,,"/>
+<approved hash="113,3,-27.94,68.3853,SV5,,,,,"/>
+<approved hash="113,3,-27.94,101.405,SV6,,,,,"/>
+<approved hash="113,4,21.6874,33.9479,THR_TP,,,,,"/>
+<approved hash="113,4,58.42,21.7847,SIDE2,,,,,"/>
+<approved hash="113,4,96.52,21.7847,SIDE1,,,,,"/>
+<approved hash="113,4,55.6429,66.1712,5V,,,,,"/>
+<approved hash="113,4,127.131,66.2771,A2,,,,,"/>
+<approved hash="113,4,127.131,56.1171,B2,,,,,"/>
+<approved hash="113,4,127.131,45.9571,C2,,,,,"/>
+<approved hash="113,4,127.131,35.7971,T1,,,,,"/>
+<approved hash="113,4,15.7692,38.1,THR,,,,,"/>
+<approved hash="113,4,85.1874,55.6006,V-,,,,,"/>
+<approved hash="113,4,64.8674,55.6006,V+,,,,,"/>
+<approved hash="113,4,116.561,44.3526,GND,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

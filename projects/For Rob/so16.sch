@@ -751,6 +751,10 @@ Standard US Drill Sizes</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,116.84,55.88,IC1P,GND,N$2,,,"/>
+<approved hash="104,1,116.84,76.2,IC1P,VCC,N$1,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

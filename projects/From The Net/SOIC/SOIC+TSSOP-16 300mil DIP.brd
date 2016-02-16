@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
@@ -76,8 +76,8 @@
 <wire x1="0.132" y1="33.236" x2="0.132" y2="0.038" width="0" layer="20"/>
 <text x="3.302" y="2.794" size="1.9304" layer="21" font="vector" ratio="10" rot="R90">http://www.media.</text>
 <text x="18.288" y="2.54" size="1.9304" layer="21" font="vector" ratio="10" rot="R90">mit.edu/~ladyada</text>
-<text x="10.414" y="30.988" size="1.6764" layer="16" font="vector" ratio="10" rot="MR270">TSSOP-16</text>
-<text x="10.414" y="19.812" size="1.6764" layer="1" font="vector" ratio="10" rot="R90">SOIC-16</text>
+<text x="10.414" y="30.988" size="1.6764" layer="16" font="vector" ratio="24" rot="MR270">TSSOP-16</text>
+<text x="10.414" y="19.812" size="1.6764" layer="1" font="vector" ratio="24" rot="R90">SOIC-16</text>
 </plain>
 <libraries>
 <library name="pinhead">

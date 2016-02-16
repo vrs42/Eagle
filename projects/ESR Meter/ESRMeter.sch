@@ -7982,6 +7982,12 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,148.865,63.5,R10,,,,,"/>
+<approved hash="113,1,120.951,96.4988,PROBE1,,,,,"/>
+<approved hash="113,1,143.413,96.4988,PROBE2,,,,,"/>
+<approved hash="113,1,-2.54,-11.2988,ON-OFF,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

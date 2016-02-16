@@ -74,9 +74,9 @@
 <wire x1="24.242" y1="0.038" x2="24.242" y2="38.062" width="0" layer="20"/>
 <wire x1="24.242" y1="38.062" x2="-0.122" y2="38.062" width="0" layer="20"/>
 <wire x1="-0.122" y1="38.062" x2="-0.122" y2="0.038" width="0" layer="20"/>
-<text x="21.59" y="5.334" size="1.6764" layer="16" font="vector" ratio="6" rot="MR90">www.media.mit.edu/</text>
-<text x="17.78" y="13.208" size="1.6764" layer="16" font="vector" ratio="6" rot="MR90">~ladyada/</text>
-<text x="14.224" y="9.398" size="1.6764" layer="16" font="vector" ratio="6" rot="MR90">techproj/USB232</text>
+<text x="21.59" y="5.334" size="1.6764" layer="16" font="vector" ratio="24" rot="MR90">www.media.mit.edu/</text>
+<text x="17.78" y="13.208" size="1.6764" layer="16" font="vector" ratio="24" rot="MR90">~ladyada/</text>
+<text x="14.224" y="9.398" size="1.6764" layer="16" font="vector" ratio="24" rot="MR90">techproj/USB232</text>
 <text x="6.604" y="36.322" size="1.27" layer="21">RX TX G +5</text>
 <hole x="20.574" y="34.544" drill="3.81"/>
 </plain>

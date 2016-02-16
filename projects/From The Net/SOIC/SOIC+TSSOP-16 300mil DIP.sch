@@ -680,6 +680,9 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,7.38293,20.4512,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

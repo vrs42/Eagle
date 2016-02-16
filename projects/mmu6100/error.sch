@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -837,6 +837,14 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,81.28,104.077,IC10,A,I0,,,"/>
+<approved hash="114,1,81.28,104.077,IC10,A,I1,,,"/>
+<approved hash="114,1,81.28,104.077,IC10,C,I0,,,"/>
+<approved hash="114,1,81.28,104.077,IC10,C,I1,,,"/>
+<approved hash="114,1,81.28,104.077,IC10,D,I0,,,"/>
+<approved hash="114,1,81.28,104.077,IC10,D,I1,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

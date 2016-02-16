@@ -8545,6 +8545,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pinref part="IC9" gate="D" pin="I1"/>
 <pinref part="IC9" gate="C" pin="O"/>
 <pinref part="OC" gate="G$1" pin="1"/>
+<label x="269.24" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="86.36" y1="27.94" x2="93.98" y2="27.94" width="0.1524" layer="91"/>
@@ -8564,6 +8565,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pinref part="IC9" gate="C" pin="I0"/>
 <pinref part="IC9" gate="D" pin="O"/>
 <pinref part="!MR" gate="G$1" pin="1"/>
+<label x="269.24" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -10714,6 +10716,26 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,22.86,17.5853,IN1-2,,,,,"/>
+<approved hash="113,1,60.96,17.5853,IN3-4,,,,,"/>
+<approved hash="113,1,61.1547,86.36,OUT1-2,,,,,"/>
+<approved hash="113,1,101.6,17.5853,IN5-6,,,,,"/>
+<approved hash="113,1,175.455,86.36,OUT5-6,,,,,"/>
+<approved hash="113,1,61.1547,175.26,OUT3-4,,,,,"/>
+<approved hash="113,1,175.455,175.26,OUT7-8,,,,,"/>
+<approved hash="113,1,256.54,164.905,CORE-IO,,,,,"/>
+<approved hash="113,1,57.15,129.54,RN1,,,,,"/>
+<approved hash="113,1,171.45,129.54,RN2,,,,,"/>
+<approved hash="113,1,57.15,40.64,RN3,,,,,"/>
+<approved hash="113,1,171.45,40.64,RN4,,,,,"/>
+<approved hash="113,3,20.32,26.8647,SIDE2,,,,,"/>
+<approved hash="113,3,58.42,26.8647,SIDE1,,,,,"/>
+<approved hash="113,3,66.2771,83.9512,JP3,,,,,"/>
+<approved hash="113,3,12.4629,83.9512,JP1,,,,,"/>
+<approved hash="113,3,81.0429,83.9512,JP2,,,,,"/>
+<approved hash="113,3,134.857,83.9512,JP4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

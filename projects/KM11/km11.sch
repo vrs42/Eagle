@@ -11666,7 +11666,7 @@ Source: www.kingbright.com</description>
 <part name="V16" library="supply2" deviceset="+8V" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="3MM"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
-<part name="IC3" library="uln-udn" deviceset="ULN2803A" device=""/>
+<part name="IC3" library="uln-udn" deviceset="ULN2803A" device="" value="ULN2803A"/>
 <part name="LED2" library="led" deviceset="LED" device="3MM"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="LED3" library="led" deviceset="LED" device="3MM"/>
@@ -11684,7 +11684,7 @@ Source: www.kingbright.com</description>
 <part name="V19" library="supply2" deviceset="+8V" device=""/>
 <part name="LED8" library="led" deviceset="LED" device="3MM"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
-<part name="IC4" library="uln-udn" deviceset="ULN2803A" device=""/>
+<part name="IC4" library="uln-udn" deviceset="ULN2803A" device="" value="ULN2803A"/>
 <part name="LED9" library="led" deviceset="LED" device="3MM"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="LED10" library="led" deviceset="LED" device="3MM"/>
@@ -11702,7 +11702,7 @@ Source: www.kingbright.com</description>
 <part name="V22" library="supply2" deviceset="+8V" device=""/>
 <part name="LED15" library="led" deviceset="LED" device="3MM"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
-<part name="IC5" library="uln-udn" deviceset="ULN2803A" device=""/>
+<part name="IC5" library="uln-udn" deviceset="ULN2803A" device="" value="ULN2803A"/>
 <part name="LED16" library="led" deviceset="LED" device="3MM"/>
 <part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="LED17" library="led" deviceset="LED" device="3MM"/>
@@ -11720,7 +11720,7 @@ Source: www.kingbright.com</description>
 <part name="V25" library="supply2" deviceset="+8V" device=""/>
 <part name="LED22" library="led" deviceset="LED" device="3MM"/>
 <part name="R27" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
-<part name="IC6" library="uln-udn" deviceset="ULN2803A" device=""/>
+<part name="IC6" library="uln-udn" deviceset="ULN2803A" device="" value="ULN2803A"/>
 <part name="LED23" library="led" deviceset="LED" device="3MM"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="LED24" library="led" deviceset="LED" device="3MM"/>
@@ -12950,6 +12950,14 @@ Source: www.kingbright.com</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,60.96,-12.7635,IC1,B,I,,,"/>
+<approved hash="114,1,60.96,-12.7635,IC1,C,I,,,"/>
+<approved hash="114,1,60.96,-12.7635,IC1,D,I,,,"/>
+<approved hash="114,1,60.96,-12.7635,IC1,E,I,,,"/>
+<approved hash="114,1,60.96,-12.7635,IC1,F,I,,,"/>
+<approved hash="113,1,38.989,58.42,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

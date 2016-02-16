@@ -18372,7 +18372,7 @@ KINGFONT SDCMF-10915W010</description>
 <part name="R37" library="rcl" deviceset="R-US_" device="0207/7" value="220"/>
 <part name="V19" library="supply2" deviceset="VCC" device=""/>
 <part name="V20" library="supply2" deviceset="GND" device=""/>
-<part name="D3-7" library="rectifier" deviceset="RB1A" device=""/>
+<part name="D3-7" library="rectifier" deviceset="RB1A" device="" value="R1BA"/>
 <part name="AC2" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="AC1" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="X1" library="crystal" deviceset="CRYSTAL" device="HC49U70" value="20Mhz"/>
@@ -18423,8 +18423,8 @@ KINGFONT SDCMF-10915W010</description>
 <part name="V38" library="supply2" deviceset="VCC" device=""/>
 <part name="R11" library="rcl" deviceset="R-US_" device="0207/7" value="200"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0207/7" value="330"/>
-<part name="IC1" library="v-reg" deviceset="LM317TS" device=""/>
-<part name="IC5" library="v-reg" deviceset="LM317TS" device=""/>
+<part name="IC1" library="v-reg" deviceset="LM317TS" device="" value="LM317TS"/>
+<part name="IC5" library="v-reg" deviceset="LM317TS" device="" value="LM317TS"/>
 <part name="C6" library="rcl" deviceset="C-US" device="025-024X044" value=".01uf"/>
 <part name="V39" library="supply2" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="CPOL-US" device="E2-5" value="100uf"/>
@@ -19665,6 +19665,28 @@ KINGFONT SDCMF-10915W010</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,190.5,93.98,IC3,VSS,GND,,,"/>
+<approved hash="104,1,187.96,142.24,IC3,VDD,VCC,,,"/>
+<approved hash="104,1,187.96,93.98,IC3,VSS,GND,,,"/>
+<approved hash="104,1,373.38,170.18,J1,VSS,GND,,,"/>
+<approved hash="104,1,370.84,170.18,J1,VSS,GND,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,133.943,213.165,J5,,,,,"/>
+<approved hash="113,1,109.22,134.231,S1,,,,,"/>
+<approved hash="113,1,109.22,121.531,S2,,,,,"/>
+<approved hash="113,1,109.22,108.831,S3,,,,,"/>
+<approved hash="113,1,109.22,96.1305,S4,,,,,"/>
+<approved hash="113,1,109.22,83.4305,S5,,,,,"/>
+<approved hash="113,1,109.22,70.7305,S6,,,,,"/>
+<approved hash="113,1,100.135,185.378,SV2,,,,,"/>
+<approved hash="113,1,73.66,169.985,SV3,,,,,"/>
+<approved hash="113,1,30.2006,242.473,AC2,,,,,"/>
+<approved hash="113,1,30.2006,257.713,AC1,,,,,"/>
+<approved hash="113,1,302.539,113.127,1,,,,,"/>
+<approved hash="113,1,302.539,108.047,2,,,,,"/>
+<approved hash="113,1,302.539,102.967,3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -3467,6 +3467,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,15.24,107.561,S1,,,,,"/>
+<approved hash="113,1,15.24,67.6995,S2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

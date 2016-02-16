@@ -834,7 +834,7 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -860,7 +860,7 @@ design rules under a new name.</description>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
+<param name="msDrill" value="19mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -2577,6 +2577,70 @@ design rules under a new name.</description>
 <via x="88.9" y="55.245" extent="1-16" drill="0.5" diameter="1.143" shape="octagon"/>
 </signal>
 </signals>
+<errors>
+<approved hash="13,18,14e286728b951905"/>
+<approved hash="13,18,3185c995f6160e06"/>
+<approved hash="13,18,309cc88ccffd37ed"/>
+<approved hash="13,18,15be872e81991309"/>
+<approved hash="13,18,ebbf892f8f9ced0c"/>
+<approved hash="13,18,0b992f8928fd0ced"/>
+<approved hash="13,18,0a802e9011163506"/>
+<approved hash="13,18,eae388738590e700"/>
+<approved hash="3,16,89605ea423fff43b"/>
+<approved hash="3,1,8d2be11a04ac689d"/>
+<approved hash="3,16,d7fb3bcaddfc31cd"/>
+<approved hash="3,1,6cb936cd485e122a"/>
+<approved hash="4,1,2e55f5cf113a672e"/>
+<approved hash="19,1,048d492861c05194"/>
+<approved hash="19,1,0a6c9743b1a65278"/>
+<approved hash="19,1,0664b1e5920c5d4c"/>
+<approved hash="19,1,0492a0648c995e78"/>
+<approved hash="19,1,18ae97caafdb5d14"/>
+<approved hash="19,1,3f2d5a5241166638"/>
+<approved hash="19,1,02cc7c99a4d05ad4"/>
+<approved hash="19,1,03ef515b7a4b5a54"/>
+<approved hash="19,1,0e427bd85c0d5148"/>
+<approved hash="19,1,08946277458a5618"/>
+<approved hash="19,1,02f6c2a69ac75adc"/>
+<approved hash="19,1,0484d53fedc25968"/>
+<approved hash="19,1,0727244f035f5e0c"/>
+<approved hash="19,1,7a8346291efd2268"/>
+<approved hash="19,1,07b53586167a5d98"/>
+<approved hash="19,1,03951b4c35845a5c"/>
+<approved hash="19,1,0b92dd40f7a55258"/>
+<approved hash="19,1,00a30b2d23d15d68"/>
+<approved hash="19,1,00ace641caa85614"/>
+<approved hash="19,1,faed002bd8bfa229"/>
+<approved hash="19,1,1e6eeff2d07359b4"/>
+<approved hash="19,1,1fb373b5544941b8"/>
+<approved hash="4,1,bb6537c04edd8d40"/>
+<approved hash="4,1,43d87098587b9754"/>
+<approved hash="4,16,2e55f5cf113a672e"/>
+<approved hash="19,16,00ace641caa85614"/>
+<approved hash="19,16,048d492861c05194"/>
+<approved hash="19,16,07b53586167a5d98"/>
+<approved hash="19,16,7a8346291efd2268"/>
+<approved hash="19,16,03ef515b7a4b5a54"/>
+<approved hash="19,16,0e427bd85c0d5148"/>
+<approved hash="19,16,0484d53fedc25968"/>
+<approved hash="19,16,08946277458a5618"/>
+<approved hash="19,16,0b92dd40f7a55258"/>
+<approved hash="19,16,0727244f035f5e0c"/>
+<approved hash="19,16,03951b4c35845a5c"/>
+<approved hash="19,16,0492a0648c995e78"/>
+<approved hash="19,16,1e6eeff2d07359b4"/>
+<approved hash="19,16,0664b1e5920c5d4c"/>
+<approved hash="19,16,0a6c9743b1a65278"/>
+<approved hash="19,16,18ae97caafdb5d14"/>
+<approved hash="19,16,00a30b2d23d15d68"/>
+<approved hash="19,16,02cc7c99a4d05ad4"/>
+<approved hash="19,16,faed002bd8bfa229"/>
+<approved hash="19,16,02f6c2a69ac75adc"/>
+<approved hash="19,16,3f2d5a5241166638"/>
+<approved hash="19,16,1fb373b5544941b8"/>
+<approved hash="4,16,43d87098587b9754"/>
+<approved hash="4,16,bb6537c04edd8d40"/>
+</errors>
 </board>
 </drawing>
 </eagle>

@@ -8,6 +8,7 @@ Desktop="Desktop"
 [Globals]
 AutoSaveProject=1
 UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/3M.lbr"
+UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/74xx-jameco-.lbr"
 UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/74xxN.lbr"
 UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/ForTim.lbr"
 UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/OverVoltage.lbr"
@@ -401,7 +402,6 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zilog.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/74xx-jameco-.lbr"
 
 [Win_1]
 Type="Board Editor"
@@ -409,7 +409,7 @@ Loc="46 226 1169 849"
 State=1
 Number=2
 File="M452r.brd"
-View="-2.5346 -1.24968 129.525 63.7337"
+View="-3.55092 -2.28092 128.265 63.4949"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.254 0.3048 0.4064 0.6096 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.8128"
@@ -435,7 +435,7 @@ PolygonPour=0
 PolygonRank=1
 PolygonThermals=1
 PolygonOrphans=0
-TextRatio=8
+TextRatio=24
 DimensionUnit=1
 DimensionPrecision=2
 DimensionShowUnit=0
@@ -455,7 +455,7 @@ Loc="211 363 1334 987"
 State=1
 Number=1
 File="M452r.sch"
-View="34.1005 -21.4672 281.698 106.43"
+View="51.4589 -21.4672 281.357 106.43"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.254 0.3048 0.4064 0.6096 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.8128"
@@ -494,12 +494,12 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: 34.1005 -21.4672 281.698 106.43"
+Views=" 1: 51.4589 -21.4672 281.357 106.43"
 Sheet=1
 
 [Win_3]
 Type="Control Panel"
-Loc="656 387 1483 786"
+Loc="235 226 976 850"
 State=1
 Number=0
 

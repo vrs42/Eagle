@@ -22054,6 +22054,49 @@ SMD chip inductor</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-55.88,10.16,IC1B,PVDD,N$6,,,"/>
+<approved hash="104,1,-55.88,0,IC1B,PVSS,N$7,,,"/>
+<approved hash="104,1,-30.48,22.86,IC1B,VDD_1,VCC,,,"/>
+<approved hash="104,1,-30.48,12.7,IC1B,VDD_2,VCC,,,"/>
+<approved hash="104,1,-30.48,2.54,IC1B,VDD_3,VCC,,,"/>
+<approved hash="104,1,-30.48,-7.62,IC1B,VDD_4,VCC,,,"/>
+<approved hash="104,1,-30.48,17.78,IC1B,VSS_1,GND,,,"/>
+<approved hash="104,1,-30.48,7.62,IC1B,VSS_2,GND,,,"/>
+<approved hash="104,1,-30.48,-2.54,IC1B,VSS_3,GND,,,"/>
+<approved hash="104,1,-30.48,-12.7,IC1B,VSS_4,GND,,,"/>
+<approved hash="104,1,-30.48,-15.24,IC1B,VSS_5,GND,,,"/>
+<approved hash="104,1,220.98,45.72,IC4,VSS,GND,,,"/>
+<approved hash="104,1,220.98,109.22,IC4,VDD,VCC,,,"/>
+<approved hash="104,1,218.44,109.22,IC4,VDD,VCC,,,"/>
+<approved hash="104,1,218.44,45.72,IC4,VSS,GND,,,"/>
+<approved hash="104,1,68.58,50.8,U$4,REFGND,GND,,,"/>
+<approved hash="104,1,68.58,53.34,U$4,AGND,GND,,,"/>
+<approved hash="104,1,68.58,55.88,U$4,VA,N$21,,,"/>
+<approved hash="208,1,-60.96,22.86,VCC,sup,,,,"/>
+<approved hash="208,1,-25.4,25.4,VCC,sup,,,,"/>
+<approved hash="208,1,-17.78,-7.62,VCC,sup,,,,"/>
+<approved hash="208,1,-10.16,-7.62,VCC,sup,,,,"/>
+<approved hash="208,1,-2.54,-7.62,VCC,sup,,,,"/>
+<approved hash="208,1,5.08,-7.62,VCC,sup,,,,"/>
+<approved hash="208,1,162.56,99.06,VCC,sup,,,,"/>
+<approved hash="208,1,162.56,129.54,VCC,sup,,,,"/>
+<approved hash="208,1,195.58,127,VCC,sup,,,,"/>
+<approved hash="208,1,220.98,111.76,VCC,sup,,,,"/>
+<approved hash="208,1,91.44,68.58,VCC,sup,,,,"/>
+<approved hash="208,1,17.78,22.86,VCC,sup,,,,"/>
+<approved hash="208,1,180.34,134.62,VCC,sup,,,,"/>
+<approved hash="208,1,-40.64,88.9,VCC,sup,,,,"/>
+<approved hash="208,1,15.24,162.56,VCC,out,,,,"/>
+<approved hash="208,1,53.34,172.72,VCC,sup,,,,"/>
+<approved hash="208,1,-17.78,38.1,VCC,sup,,,,"/>
+<approved hash="208,1,127,119.38,VCC,sup,,,,"/>
+<approved hash="208,1,-50.8,60.96,VCC,sup,,,,"/>
+<approved hash="208,1,144.78,17.78,VCC,sup,,,,"/>
+<approved hash="113,1,4.84293,190.369,JP3,,,,,"/>
+<approved hash="113,1,246.617,-3.67877,ANT,,,,,"/>
+<approved hash="113,1,231.377,146.181,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

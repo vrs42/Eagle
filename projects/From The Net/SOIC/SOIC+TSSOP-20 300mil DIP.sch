@@ -772,6 +772,10 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,20.0829,15.3712,JP1,,,,,"/>
+<approved hash="113,1,68.8171,15.3712,JP2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

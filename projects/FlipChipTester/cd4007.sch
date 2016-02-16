@@ -3770,6 +3770,16 @@ grid 2.54 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,40.8421,82.4526,PULL_GND,,,,,"/>
+<approved hash="113,1,132.359,44.5474,MUT,,,,,"/>
+<approved hash="113,1,42.0426,72.2926,PULL_DOWN,,,,,"/>
+<approved hash="113,1,40.1325,90.0726,!PULL_UP,,,,,"/>
+<approved hash="113,1,38.8561,21.4926,TTL_RX,,,,,"/>
+<approved hash="113,1,27.6606,64.6726,-5V,,,,,"/>
+<approved hash="113,1,27.6606,74.8326,GND,,,,,"/>
+<approved hash="113,1,27.6606,82.4526,5V,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

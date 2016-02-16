@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15578,7 +15578,7 @@ Farnell 219-423</description>
 <part name="V45" library="supply2" deviceset="-15V" device=""/>
 <part name="Q9" library="transistor" deviceset="*-PNP-" device="TO92/"/>
 <part name="V46" library="supply2" deviceset="GND" device=""/>
-<part name="SW1" library="switch-dil" deviceset="DRR3010" device=""/>
+<part name="SW1" library="switch-dil" deviceset="DRR3010" device="" value="DRR3010"/>
 <part name="V47" library="supply2" deviceset="GND" device=""/>
 <part name="R31" library="rcl" deviceset="R-US_" device="0207/10" value="6.8K"/>
 <part name="R32" library="rcl" deviceset="R-US_" device="0207/10" value="6.8K"/>
@@ -17799,6 +17799,20 @@ Farnell 219-423</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="209,1,129.54,205.74,A13,,,,,"/>
+<approved hash="209,1,215.9,93.98,A13,,,,,"/>
+<approved hash="209,1,129.54,213.36,A14,,,,,"/>
+<approved hash="209,1,215.9,96.52,A14,,,,,"/>
+<approved hash="209,1,215.9,104.14,A17,,,,,"/>
+<approved hash="209,1,129.54,210.82,A17,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,19.4915,233.68,P2,,,,,"/>
+<approved hash="113,1,19.4915,119.38,P3,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,2,59.8317,109.22,P5,,,,,"/>
+<approved hash="113,2,280.812,109.22,P6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

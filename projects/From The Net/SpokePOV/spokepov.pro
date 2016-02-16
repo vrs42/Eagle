@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Program Files/EAGLE-4.11/projects/FromTheNet/SpokePOV/spokepov.brd
+Job           : C:/Users/Vince/Documents/eagle/projects/From The Net/SpokePOV/spokepov.brd
 
-Start at      :   07:09:32p ( 9/14/2005)
-End at        :   07:10:50p ( 9/14/2005)
-Elapsed time  :   00:01:18
+Start at      : 09:07:14 (2/12/2016)
+End at        : 09:07:14 (2/12/2016)
+Elapsed time  : 00:00:00
 
 Signals       :   139   RoutingGrid: 50 mil  Layers: 2
-Connections   :   219   predefined:  0 ( 0 Vias )
+Connections   :   219   predefined:  218 ( 458 Vias )
 
-Router memory :   115236
+Router memory :   117564
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:01  00:00:59  00:00:05  00:00:04  00:00:05  00:00:04
-Number of Ripups  :         0       194         0         0         0         0
-max. Level        :         0         3         0         0         0         0
-max. Total        :         0        39         0         0         0         0
+Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         0         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :        45       218       218       218       218       218
-Vias              :         0       732       561       524       473       458
-Resolution        :    20.5 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %
+Routed            :         1         1         1         1         1
+Vias              :         9         7         6         6         6
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 99.5% finished
+Final             : 100.0% finished

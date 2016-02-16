@@ -2525,6 +2525,9 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-2.54,56.3668,ST1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

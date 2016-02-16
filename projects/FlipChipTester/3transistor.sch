@@ -3960,22 +3960,22 @@ grid 2.54 mm</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="132.08" y1="45.72" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="40.64" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="45.72" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="45.72" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="45.72" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="55.88" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
-<junction x="124.46" y="45.72"/>
 <junction x="86.36" y="45.72"/>
-<junction x="91.44" y="45.72"/>
 <pinref part="Q3" gate="1" pin="D"/>
 <pinref part="Q2" gate="1" pin="D"/>
-<pinref part="MUT" gate="1" pin="P"/>
-<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="1" pin="D"/>
+<wire x1="91.44" y1="55.88" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
+<junction x="91.44" y="45.72"/>
+<pinref part="MUT" gate="1" pin="P"/>
+<wire x1="132.08" y1="45.72" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="40.64" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
+<junction x="124.46" y="45.72"/>
+<wire x1="124.46" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -4013,6 +4013,16 @@ grid 2.54 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,88.9,12.7,IC3P,GND,V-,,,"/>
+<approved hash="113,1,40.8421,82.4526,PULL_GND,,,,,"/>
+<approved hash="113,1,132.359,44.5474,MUT,,,,,"/>
+<approved hash="113,1,104.009,18.0171,JP2,,,,,"/>
+<approved hash="113,1,42.0426,77.3726,PULL_DOWN,,,,,"/>
+<approved hash="113,1,40.1325,87.5326,!PULL_UP,,,,,"/>
+<approved hash="113,1,38.8561,21.4926,TTL_RX,,,,,"/>
+<approved hash="113,1,14.9606,34.1926,THR,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

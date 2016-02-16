@@ -15617,6 +15617,25 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,190.5,215.964,3F,B,I0,,,"/>
+<approved hash="114,1,190.5,215.964,3F,B,I1,,,"/>
+<approved hash="114,1,218.44,40.5765,IC6,B,CLR,,,"/>
+<approved hash="114,1,218.44,40.5765,IC6,B,D,,,"/>
+<approved hash="114,1,218.44,40.5765,IC6,B,CLK,,,"/>
+<approved hash="114,1,218.44,40.5765,IC6,B,PRE,,,"/>
+<approved hash="114,1,358.14,248.857,IC3,C,I,,,"/>
+<approved hash="114,1,358.14,248.857,IC3,D,I,,,"/>
+<approved hash="114,1,358.14,248.857,IC3,E,I,,,"/>
+<approved hash="114,1,358.14,248.857,IC3,F,I,,,"/>
+<approved hash="114,1,335.28,248.857,IC4,B,I0,,,"/>
+<approved hash="114,1,335.28,248.857,IC4,B,I1,,,"/>
+<approved hash="114,1,335.28,248.857,IC4,C,I0,,,"/>
+<approved hash="114,1,335.28,248.857,IC4,C,I1,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,15.9879,20.32,PL1,,,,,"/>
+<approved hash="113,1,84.8953,63.4577,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

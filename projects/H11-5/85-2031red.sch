@@ -10429,6 +10429,10 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,13.589,175.26,EDGE$,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

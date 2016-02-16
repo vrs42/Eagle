@@ -471,13 +471,13 @@ Standard US Drill Sizes</description>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="40.64" y="43.18"/>
-<instance part="1" gate="G$1" x="25.4" y="43.18" rot="R180"/>
-<instance part="2" gate="G$1" x="25.4" y="50.8" rot="R180"/>
-<instance part="3" gate="G$1" x="25.4" y="48.26" rot="R180"/>
+<instance part="1" gate="G$1" x="22.86" y="43.18" rot="R180"/>
+<instance part="2" gate="G$1" x="22.86" y="50.8" rot="R180"/>
+<instance part="3" gate="G$1" x="22.86" y="48.26" rot="R180"/>
 <instance part="4" gate="G$1" x="58.42" y="38.1"/>
-<instance part="5" gate="G$1" x="25.4" y="40.64" rot="R180"/>
+<instance part="5" gate="G$1" x="22.86" y="40.64" rot="R180"/>
 <instance part="6" gate="G$1" x="58.42" y="50.8"/>
-<instance part="7" gate="G$1" x="25.4" y="38.1" rot="R180"/>
+<instance part="7" gate="G$1" x="22.86" y="38.1" rot="R180"/>
 <instance part="8" gate="G$1" x="58.42" y="43.18"/>
 </instances>
 <busses>
@@ -493,35 +493,30 @@ Standard US Drill Sizes</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DCLOCK"/>
 <pinref part="7" gate="G$1" pin="P"/>
-<wire x1="27.94" y1="38.1" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!CS!/SHDN"/>
 <pinref part="5" gate="G$1" pin="P"/>
-<wire x1="27.94" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VREF"/>
 <pinref part="1" gate="G$1" pin="P"/>
-<wire x1="27.94" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="+IN"/>
 <pinref part="2" gate="G$1" pin="P"/>
-<wire x1="27.94" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="-IN"/>
 <pinref part="3" gate="G$1" pin="P"/>
-<wire x1="27.94" y1="48.26" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -539,6 +534,10 @@ Standard US Drill Sizes</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,55.88,43.18,IC1,+VCC,N$1,,,"/>
+<approved hash="104,1,55.88,38.1,IC1,GND,N$7,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="3" fill="3" visible="no" active="no"/>
@@ -2541,6 +2541,54 @@ DIN A4, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="105,1,26.67,50.8,N$23,,,,,"/>
+<approved hash="105,1,34.29,55.88,N$27,,,,,"/>
+<approved hash="105,1,26.67,68.58,N$28,,,,,"/>
+<approved hash="105,1,26.67,81.28,N$29,,,,,"/>
+<approved hash="105,1,34.29,83.82,N$30,,,,,"/>
+<approved hash="105,1,33.02,86.36,N$31,,,,,"/>
+<approved hash="105,1,26.67,111.76,N$32,,,,,"/>
+<approved hash="105,1,26.67,99.06,N$33,,,,,"/>
+<approved hash="105,1,26.67,121.92,N$34,,,,,"/>
+<approved hash="105,1,34.29,124.46,N$35,,,,,"/>
+<approved hash="105,1,22.86,129.54,N$36,,,,,"/>
+<approved hash="105,1,31.75,132.08,N$37,,,,,"/>
+<approved hash="105,1,26.67,149.86,N$38,,,,,"/>
+<approved hash="105,1,26.67,175.26,N$39,,,,,"/>
+<approved hash="105,1,26.67,162.56,N$40,,,,,"/>
+<approved hash="105,1,50.8,157.48,N$41,,,,,"/>
+<approved hash="105,1,55.88,165.1,N$42,,,,,"/>
+<approved hash="105,1,50.8,147.32,N$43,,,,,"/>
+<approved hash="105,1,55.88,137.16,N$44,,,,,"/>
+<approved hash="105,1,52.07,53.34,N$45,,,,,"/>
+<approved hash="105,1,54.61,60.96,N$46,,,,,"/>
+<approved hash="105,1,53.34,83.82,N$47,,,,,"/>
+<approved hash="105,1,53.34,96.52,N$48,,,,,"/>
+<approved hash="105,1,55.88,104.14,N$49,,,,,"/>
+<approved hash="105,1,76.2,58.42,N$50,,,,,"/>
+<approved hash="105,1,74.93,96.52,N$51,,,,,"/>
+<approved hash="105,1,74.93,152.4,N$52,,,,,"/>
+<approved hash="105,1,100.33,121.92,N$53,,,,,"/>
+<approved hash="105,1,107.95,124.46,N$54,,,,,"/>
+<approved hash="105,1,96.52,129.54,N$55,,,,,"/>
+<approved hash="105,1,105.41,132.08,N$56,,,,,"/>
+<approved hash="105,1,100.33,149.86,N$57,,,,,"/>
+<approved hash="105,1,100.33,175.26,N$58,,,,,"/>
+<approved hash="105,1,100.33,162.56,N$59,,,,,"/>
+<approved hash="105,1,124.46,157.48,N$60,,,,,"/>
+<approved hash="105,1,129.54,165.1,N$61,,,,,"/>
+<approved hash="105,1,124.46,147.32,N$62,,,,,"/>
+<approved hash="105,1,129.54,137.16,N$63,,,,,"/>
+<approved hash="105,1,148.59,152.4,N$64,,,,,"/>
+<approved hash="105,1,148.59,91.44,N$65,,,,,"/>
+<approved hash="105,1,115.57,93.98,N$66,,,,,"/>
+<approved hash="105,1,115.57,88.9,N$67,,,,,"/>
+<approved hash="105,1,120.65,86.36,N$68,,,,,"/>
+<approved hash="105,1,120.65,96.52,N$69,,,,,"/>
+<approved hash="113,2,131.976,90.066,U$1,,,,,"/>
+<approved hash="113,3,131.976,90.066,U$2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

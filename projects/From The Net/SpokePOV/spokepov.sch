@@ -7122,6 +7122,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="147.32" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="QH*"/>
 <pinref part="IC5" gate="A" pin="SER"/>
+<label x="106.68" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="129.54" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
@@ -7273,6 +7274,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,129.54,49.3353,SV1,,,,,"/>
+<approved hash="113,1,239.725,43.0445,X1,,,,,"/>
+<approved hash="113,1,104.14,18.1695,S1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

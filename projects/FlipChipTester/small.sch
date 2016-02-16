@@ -4252,6 +4252,22 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,15.24,81.28,IC1P,VCC,+5V,,,"/>
+<approved hash="113,1,43.3821,82.4526,PULL_GND,,,,,"/>
+<approved hash="113,1,132.359,44.5474,MUT,,,,,"/>
+<approved hash="113,1,44.5826,79.9126,PULL_DOWN,,,,,"/>
+<approved hash="113,1,42.6725,84.9926,!PULL_UP,,,,,"/>
+<approved hash="113,1,38.8561,21.4926,TTL_RX,,,,,"/>
+<approved hash="113,1,27.6606,64.6726,-5V,,,,,"/>
+<approved hash="113,1,27.6606,74.8326,GND,,,,,"/>
+<approved hash="113,1,27.6606,82.4526,5V,,,,,"/>
+<approved hash="113,1,148.232,79.9126,PULL_GND1,,,,,"/>
+<approved hash="113,1,236.499,42.0074,MUT1,,,,,"/>
+<approved hash="113,1,149.432,77.3726,PULL_DOWN1,,,,,"/>
+<approved hash="113,1,147.522,82.4526,!PULL_UP1,,,,,"/>
+<approved hash="113,1,143.706,18.9526,TTL_RX1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

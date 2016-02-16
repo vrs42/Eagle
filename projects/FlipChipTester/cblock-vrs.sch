@@ -254,6 +254,62 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="LETTER_L">
+<frame x1="0" y1="0" x2="248.92" y2="185.42" columns="12" rows="17" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LETTER_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+LETTER landscape</description>
+<gates>
+<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -275,300 +331,303 @@
 <part name="A10" library="dec-m" deviceset="M916" device="" value=""/>
 <part name="A11" library="dec-m" deviceset="M916" device="" value=""/>
 <part name="A12" library="dec-m" deviceset="M916" device="" value=""/>
+<part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="A5" gate="A1" x="12.7" y="93.98"/>
-<instance part="A5" gate="A2" x="12.7" y="88.9"/>
-<instance part="A5" gate="B1" x="12.7" y="83.82"/>
-<instance part="A5" gate="B2" x="12.7" y="78.74"/>
-<instance part="A5" gate="C1" x="12.7" y="73.66"/>
-<instance part="A5" gate="C2" x="12.7" y="68.58"/>
-<instance part="A5" gate="D1" x="12.7" y="63.5"/>
-<instance part="A5" gate="D2" x="12.7" y="58.42"/>
-<instance part="A5" gate="E1" x="12.7" y="53.34"/>
-<instance part="A5" gate="E2" x="12.7" y="48.26"/>
-<instance part="A5" gate="F1" x="12.7" y="43.18"/>
-<instance part="A5" gate="F2" x="12.7" y="38.1"/>
-<instance part="A5" gate="H1" x="12.7" y="33.02"/>
-<instance part="A5" gate="H2" x="12.7" y="27.94"/>
-<instance part="A5" gate="J1" x="12.7" y="22.86"/>
-<instance part="A5" gate="J2" x="12.7" y="17.78"/>
-<instance part="A5" gate="K1" x="12.7" y="12.7"/>
-<instance part="A5" gate="K2" x="12.7" y="7.62"/>
-<instance part="A5" gate="L1" x="38.1" y="93.98"/>
-<instance part="A5" gate="L2" x="38.1" y="88.9"/>
-<instance part="A5" gate="M1" x="38.1" y="83.82"/>
-<instance part="A5" gate="M2" x="38.1" y="78.74"/>
-<instance part="A5" gate="N1" x="38.1" y="73.66"/>
-<instance part="A5" gate="N2" x="38.1" y="68.58"/>
-<instance part="A5" gate="P1" x="38.1" y="63.5"/>
-<instance part="A5" gate="P2" x="38.1" y="58.42"/>
-<instance part="A5" gate="R1" x="38.1" y="53.34"/>
-<instance part="A5" gate="R2" x="38.1" y="48.26"/>
-<instance part="A5" gate="S1" x="38.1" y="43.18"/>
-<instance part="A5" gate="S2" x="38.1" y="38.1"/>
-<instance part="A5" gate="T1" x="38.1" y="33.02"/>
-<instance part="A5" gate="T2" x="38.1" y="27.94"/>
-<instance part="A5" gate="U1" x="38.1" y="22.86"/>
-<instance part="A5" gate="U2" x="38.1" y="17.78"/>
-<instance part="A5" gate="V1" x="38.1" y="12.7"/>
-<instance part="A5" gate="V2" x="38.1" y="7.62"/>
-<instance part="A9" gate="A1" x="22.86" y="93.98" rot="MR0"/>
-<instance part="A9" gate="A2" x="22.86" y="88.9" rot="MR0"/>
-<instance part="A9" gate="B1" x="22.86" y="83.82" rot="MR0"/>
-<instance part="A9" gate="B2" x="22.86" y="78.74" rot="MR0"/>
-<instance part="A9" gate="C1" x="22.86" y="73.66" rot="MR0"/>
-<instance part="A9" gate="C2" x="22.86" y="68.58" rot="MR0"/>
-<instance part="A9" gate="D1" x="22.86" y="63.5" rot="MR0"/>
-<instance part="A9" gate="D2" x="22.86" y="58.42" rot="MR0"/>
-<instance part="A9" gate="E1" x="22.86" y="53.34" rot="MR0"/>
-<instance part="A9" gate="E2" x="22.86" y="48.26" rot="MR0"/>
-<instance part="A9" gate="F1" x="22.86" y="43.18" rot="MR0"/>
-<instance part="A9" gate="F2" x="22.86" y="38.1" rot="MR0"/>
-<instance part="A9" gate="H1" x="22.86" y="33.02" rot="MR0"/>
-<instance part="A9" gate="H2" x="22.86" y="27.94" rot="MR0"/>
-<instance part="A9" gate="J1" x="22.86" y="22.86" rot="MR0"/>
-<instance part="A9" gate="J2" x="22.86" y="17.78" rot="MR0"/>
-<instance part="A9" gate="K1" x="22.86" y="12.7" rot="MR0"/>
-<instance part="A9" gate="K2" x="22.86" y="7.62" rot="MR0"/>
-<instance part="A9" gate="L1" x="48.26" y="93.98" rot="MR0"/>
-<instance part="A9" gate="L2" x="48.26" y="88.9" rot="MR0"/>
-<instance part="A9" gate="M1" x="48.26" y="83.82" rot="MR0"/>
-<instance part="A9" gate="M2" x="48.26" y="78.74" rot="MR0"/>
-<instance part="A9" gate="N1" x="48.26" y="73.66" rot="MR0"/>
-<instance part="A9" gate="N2" x="48.26" y="68.58" rot="MR0"/>
-<instance part="A9" gate="P1" x="48.26" y="63.5" rot="MR0"/>
-<instance part="A9" gate="P2" x="48.26" y="58.42" rot="MR0"/>
-<instance part="A9" gate="R1" x="48.26" y="53.34" rot="MR0"/>
-<instance part="A9" gate="R2" x="48.26" y="48.26" rot="MR0"/>
-<instance part="A9" gate="S1" x="48.26" y="43.18" rot="MR0"/>
-<instance part="A9" gate="S2" x="48.26" y="38.1" rot="MR0"/>
-<instance part="A9" gate="T1" x="48.26" y="33.02" rot="MR0"/>
-<instance part="A9" gate="T2" x="48.26" y="27.94" rot="MR0"/>
-<instance part="A9" gate="U1" x="48.26" y="22.86" rot="MR0"/>
-<instance part="A9" gate="U2" x="48.26" y="17.78" rot="MR0"/>
-<instance part="A9" gate="V1" x="48.26" y="12.7" rot="MR0"/>
-<instance part="A9" gate="V2" x="48.26" y="7.62" rot="MR0"/>
-<instance part="A6" gate="A1" x="76.2" y="93.98"/>
-<instance part="A6" gate="A2" x="76.2" y="88.9"/>
-<instance part="A6" gate="B1" x="76.2" y="83.82"/>
-<instance part="A6" gate="B2" x="76.2" y="78.74"/>
-<instance part="A6" gate="C1" x="76.2" y="73.66"/>
-<instance part="A6" gate="C2" x="76.2" y="68.58"/>
-<instance part="A6" gate="D1" x="76.2" y="63.5"/>
-<instance part="A6" gate="D2" x="76.2" y="58.42"/>
-<instance part="A6" gate="E1" x="76.2" y="53.34"/>
-<instance part="A6" gate="E2" x="76.2" y="48.26"/>
-<instance part="A6" gate="F1" x="76.2" y="43.18"/>
-<instance part="A6" gate="F2" x="76.2" y="38.1"/>
-<instance part="A6" gate="H1" x="76.2" y="33.02"/>
-<instance part="A6" gate="H2" x="76.2" y="27.94"/>
-<instance part="A6" gate="J1" x="76.2" y="22.86"/>
-<instance part="A6" gate="J2" x="76.2" y="17.78"/>
-<instance part="A6" gate="K1" x="76.2" y="12.7"/>
-<instance part="A6" gate="K2" x="76.2" y="7.62"/>
-<instance part="A6" gate="L1" x="101.6" y="93.98"/>
-<instance part="A6" gate="L2" x="101.6" y="88.9"/>
-<instance part="A6" gate="M1" x="101.6" y="83.82"/>
-<instance part="A6" gate="M2" x="101.6" y="78.74"/>
-<instance part="A6" gate="N1" x="101.6" y="73.66"/>
-<instance part="A6" gate="N2" x="101.6" y="68.58"/>
-<instance part="A6" gate="P1" x="101.6" y="63.5"/>
-<instance part="A6" gate="P2" x="101.6" y="58.42"/>
-<instance part="A6" gate="R1" x="101.6" y="53.34"/>
-<instance part="A6" gate="R2" x="101.6" y="48.26"/>
-<instance part="A6" gate="S1" x="101.6" y="43.18"/>
-<instance part="A6" gate="S2" x="101.6" y="38.1"/>
-<instance part="A6" gate="T1" x="101.6" y="33.02"/>
-<instance part="A6" gate="T2" x="101.6" y="27.94"/>
-<instance part="A6" gate="U1" x="101.6" y="22.86"/>
-<instance part="A6" gate="U2" x="101.6" y="17.78"/>
-<instance part="A6" gate="V1" x="101.6" y="12.7"/>
-<instance part="A6" gate="V2" x="101.6" y="7.62"/>
-<instance part="A7" gate="A1" x="86.36" y="93.98" rot="MR0"/>
-<instance part="A7" gate="A2" x="86.36" y="88.9" rot="MR0"/>
-<instance part="A7" gate="B1" x="86.36" y="83.82" rot="MR0"/>
-<instance part="A7" gate="B2" x="86.36" y="78.74" rot="MR0"/>
-<instance part="A7" gate="C1" x="86.36" y="73.66" rot="MR0"/>
-<instance part="A7" gate="C2" x="86.36" y="68.58" rot="MR0"/>
-<instance part="A7" gate="D1" x="86.36" y="63.5" rot="MR0"/>
-<instance part="A7" gate="D2" x="86.36" y="58.42" rot="MR0"/>
-<instance part="A7" gate="E1" x="86.36" y="53.34" rot="MR0"/>
-<instance part="A7" gate="E2" x="86.36" y="48.26" rot="MR0"/>
-<instance part="A7" gate="F1" x="86.36" y="43.18" rot="MR0"/>
-<instance part="A7" gate="F2" x="86.36" y="38.1" rot="MR0"/>
-<instance part="A7" gate="H1" x="86.36" y="33.02" rot="MR0"/>
-<instance part="A7" gate="H2" x="86.36" y="27.94" rot="MR0"/>
-<instance part="A7" gate="J1" x="86.36" y="22.86" rot="MR0"/>
-<instance part="A7" gate="J2" x="86.36" y="17.78" rot="MR0"/>
-<instance part="A7" gate="K1" x="86.36" y="12.7" rot="MR0"/>
-<instance part="A7" gate="K2" x="86.36" y="7.62" rot="MR0"/>
-<instance part="A7" gate="L1" x="111.76" y="93.98" rot="MR0"/>
-<instance part="A7" gate="L2" x="111.76" y="88.9" rot="MR0"/>
-<instance part="A7" gate="M1" x="111.76" y="83.82" rot="MR0"/>
-<instance part="A7" gate="M2" x="111.76" y="78.74" rot="MR0"/>
-<instance part="A7" gate="N1" x="111.76" y="73.66" rot="MR0"/>
-<instance part="A7" gate="N2" x="111.76" y="68.58" rot="MR0"/>
-<instance part="A7" gate="P1" x="111.76" y="63.5" rot="MR0"/>
-<instance part="A7" gate="P2" x="111.76" y="58.42" rot="MR0"/>
-<instance part="A7" gate="R1" x="111.76" y="53.34" rot="MR0"/>
-<instance part="A7" gate="R2" x="111.76" y="48.26" rot="MR0"/>
-<instance part="A7" gate="S1" x="111.76" y="43.18" rot="MR0"/>
-<instance part="A7" gate="S2" x="111.76" y="38.1" rot="MR0"/>
-<instance part="A7" gate="T1" x="111.76" y="33.02" rot="MR0"/>
-<instance part="A7" gate="T2" x="111.76" y="27.94" rot="MR0"/>
-<instance part="A7" gate="U1" x="111.76" y="22.86" rot="MR0"/>
-<instance part="A7" gate="U2" x="111.76" y="17.78" rot="MR0"/>
-<instance part="A7" gate="V1" x="111.76" y="12.7" rot="MR0"/>
-<instance part="A7" gate="V2" x="111.76" y="7.62" rot="MR0"/>
-<instance part="A8" gate="A1" x="139.7" y="93.98"/>
-<instance part="A8" gate="A2" x="139.7" y="88.9"/>
-<instance part="A8" gate="B1" x="139.7" y="83.82"/>
-<instance part="A8" gate="B2" x="139.7" y="78.74"/>
-<instance part="A8" gate="C1" x="139.7" y="73.66"/>
-<instance part="A8" gate="C2" x="139.7" y="68.58"/>
-<instance part="A8" gate="D1" x="139.7" y="63.5"/>
-<instance part="A8" gate="D2" x="139.7" y="58.42"/>
-<instance part="A8" gate="E1" x="139.7" y="53.34"/>
-<instance part="A8" gate="E2" x="139.7" y="48.26"/>
-<instance part="A8" gate="F1" x="139.7" y="43.18"/>
-<instance part="A8" gate="F2" x="139.7" y="38.1"/>
-<instance part="A8" gate="H1" x="139.7" y="33.02"/>
-<instance part="A8" gate="H2" x="139.7" y="27.94"/>
-<instance part="A8" gate="J1" x="139.7" y="22.86"/>
-<instance part="A8" gate="J2" x="139.7" y="17.78"/>
-<instance part="A8" gate="K1" x="139.7" y="12.7"/>
-<instance part="A8" gate="K2" x="139.7" y="7.62"/>
-<instance part="A8" gate="L1" x="165.1" y="93.98"/>
-<instance part="A8" gate="L2" x="165.1" y="88.9"/>
-<instance part="A8" gate="M1" x="165.1" y="83.82"/>
-<instance part="A8" gate="M2" x="165.1" y="78.74"/>
-<instance part="A8" gate="N1" x="165.1" y="73.66"/>
-<instance part="A8" gate="N2" x="165.1" y="68.58"/>
-<instance part="A8" gate="P1" x="165.1" y="63.5"/>
-<instance part="A8" gate="P2" x="165.1" y="58.42"/>
-<instance part="A8" gate="R1" x="165.1" y="53.34"/>
-<instance part="A8" gate="R2" x="165.1" y="48.26"/>
-<instance part="A8" gate="S1" x="165.1" y="43.18"/>
-<instance part="A8" gate="S2" x="165.1" y="38.1"/>
-<instance part="A8" gate="T1" x="165.1" y="33.02"/>
-<instance part="A8" gate="T2" x="165.1" y="27.94"/>
-<instance part="A8" gate="U1" x="165.1" y="22.86"/>
-<instance part="A8" gate="U2" x="165.1" y="17.78"/>
-<instance part="A8" gate="V1" x="165.1" y="12.7"/>
-<instance part="A8" gate="V2" x="165.1" y="7.62"/>
-<instance part="A10" gate="A1" x="149.86" y="93.98" rot="MR0"/>
-<instance part="A10" gate="A2" x="149.86" y="88.9" rot="MR0"/>
-<instance part="A10" gate="B1" x="149.86" y="83.82" rot="MR0"/>
-<instance part="A10" gate="B2" x="149.86" y="78.74" rot="MR0"/>
-<instance part="A10" gate="C1" x="149.86" y="73.66" rot="MR0"/>
-<instance part="A10" gate="C2" x="149.86" y="68.58" rot="MR0"/>
-<instance part="A10" gate="D1" x="149.86" y="63.5" rot="MR0"/>
-<instance part="A10" gate="D2" x="149.86" y="58.42" rot="MR0"/>
-<instance part="A10" gate="E1" x="149.86" y="53.34" rot="MR0"/>
-<instance part="A10" gate="E2" x="149.86" y="48.26" rot="MR0"/>
-<instance part="A10" gate="F1" x="149.86" y="43.18" rot="MR0"/>
-<instance part="A10" gate="F2" x="149.86" y="38.1" rot="MR0"/>
-<instance part="A10" gate="H1" x="149.86" y="33.02" rot="MR0"/>
-<instance part="A10" gate="H2" x="149.86" y="27.94" rot="MR0"/>
-<instance part="A10" gate="J1" x="149.86" y="22.86" rot="MR0"/>
-<instance part="A10" gate="J2" x="149.86" y="17.78" rot="MR0"/>
-<instance part="A10" gate="K1" x="149.86" y="12.7" rot="MR0"/>
-<instance part="A10" gate="K2" x="149.86" y="7.62" rot="MR0"/>
-<instance part="A10" gate="L1" x="175.26" y="93.98" rot="MR0"/>
-<instance part="A10" gate="L2" x="175.26" y="88.9" rot="MR0"/>
-<instance part="A10" gate="M1" x="175.26" y="83.82" rot="MR0"/>
-<instance part="A10" gate="M2" x="175.26" y="78.74" rot="MR0"/>
-<instance part="A10" gate="N1" x="175.26" y="73.66" rot="MR0"/>
-<instance part="A10" gate="N2" x="175.26" y="68.58" rot="MR0"/>
-<instance part="A10" gate="P1" x="175.26" y="63.5" rot="MR0"/>
-<instance part="A10" gate="P2" x="175.26" y="58.42" rot="MR0"/>
-<instance part="A10" gate="R1" x="175.26" y="53.34" rot="MR0"/>
-<instance part="A10" gate="R2" x="175.26" y="48.26" rot="MR0"/>
-<instance part="A10" gate="S1" x="175.26" y="43.18" rot="MR0"/>
-<instance part="A10" gate="S2" x="175.26" y="38.1" rot="MR0"/>
-<instance part="A10" gate="T1" x="175.26" y="33.02" rot="MR0"/>
-<instance part="A10" gate="T2" x="175.26" y="27.94" rot="MR0"/>
-<instance part="A10" gate="U1" x="175.26" y="22.86" rot="MR0"/>
-<instance part="A10" gate="U2" x="175.26" y="17.78" rot="MR0"/>
-<instance part="A10" gate="V1" x="175.26" y="12.7" rot="MR0"/>
-<instance part="A10" gate="V2" x="175.26" y="7.62" rot="MR0"/>
-<instance part="A11" gate="A1" x="203.2" y="93.98"/>
-<instance part="A11" gate="A2" x="203.2" y="88.9"/>
-<instance part="A11" gate="B1" x="203.2" y="83.82"/>
-<instance part="A11" gate="B2" x="203.2" y="78.74"/>
-<instance part="A11" gate="C1" x="203.2" y="73.66"/>
-<instance part="A11" gate="C2" x="203.2" y="68.58"/>
-<instance part="A11" gate="D1" x="203.2" y="63.5"/>
-<instance part="A11" gate="D2" x="203.2" y="58.42"/>
-<instance part="A11" gate="E1" x="203.2" y="53.34"/>
-<instance part="A11" gate="E2" x="203.2" y="48.26"/>
-<instance part="A11" gate="F1" x="203.2" y="43.18"/>
-<instance part="A11" gate="F2" x="203.2" y="38.1"/>
-<instance part="A11" gate="H1" x="203.2" y="33.02"/>
-<instance part="A11" gate="H2" x="203.2" y="27.94"/>
-<instance part="A11" gate="J1" x="203.2" y="22.86"/>
-<instance part="A11" gate="J2" x="203.2" y="17.78"/>
-<instance part="A11" gate="K1" x="203.2" y="12.7"/>
-<instance part="A11" gate="K2" x="203.2" y="7.62"/>
-<instance part="A11" gate="L1" x="228.6" y="93.98"/>
-<instance part="A11" gate="L2" x="228.6" y="88.9"/>
-<instance part="A11" gate="M1" x="228.6" y="83.82"/>
-<instance part="A11" gate="M2" x="228.6" y="78.74"/>
-<instance part="A11" gate="N1" x="228.6" y="73.66"/>
-<instance part="A11" gate="N2" x="228.6" y="68.58"/>
-<instance part="A11" gate="P1" x="228.6" y="63.5"/>
-<instance part="A11" gate="P2" x="228.6" y="58.42"/>
-<instance part="A11" gate="R1" x="228.6" y="53.34"/>
-<instance part="A11" gate="R2" x="228.6" y="48.26"/>
-<instance part="A11" gate="S1" x="228.6" y="43.18"/>
-<instance part="A11" gate="S2" x="228.6" y="38.1"/>
-<instance part="A11" gate="T1" x="228.6" y="33.02"/>
-<instance part="A11" gate="T2" x="228.6" y="27.94"/>
-<instance part="A11" gate="U1" x="228.6" y="22.86"/>
-<instance part="A11" gate="U2" x="228.6" y="17.78"/>
-<instance part="A11" gate="V1" x="228.6" y="12.7"/>
-<instance part="A11" gate="V2" x="228.6" y="7.62"/>
-<instance part="A12" gate="A1" x="213.36" y="93.98" rot="MR0"/>
-<instance part="A12" gate="A2" x="213.36" y="88.9" rot="MR0"/>
-<instance part="A12" gate="B1" x="213.36" y="83.82" rot="MR0"/>
-<instance part="A12" gate="B2" x="213.36" y="78.74" rot="MR0"/>
-<instance part="A12" gate="C1" x="213.36" y="73.66" rot="MR0"/>
-<instance part="A12" gate="C2" x="213.36" y="68.58" rot="MR0"/>
-<instance part="A12" gate="D1" x="213.36" y="63.5" rot="MR0"/>
-<instance part="A12" gate="D2" x="213.36" y="58.42" rot="MR0"/>
-<instance part="A12" gate="E1" x="213.36" y="53.34" rot="MR0"/>
-<instance part="A12" gate="E2" x="213.36" y="48.26" rot="MR0"/>
-<instance part="A12" gate="F1" x="213.36" y="43.18" rot="MR0"/>
-<instance part="A12" gate="F2" x="213.36" y="38.1" rot="MR0"/>
-<instance part="A12" gate="H1" x="213.36" y="33.02" rot="MR0"/>
-<instance part="A12" gate="H2" x="213.36" y="27.94" rot="MR0"/>
-<instance part="A12" gate="J1" x="213.36" y="22.86" rot="MR0"/>
-<instance part="A12" gate="J2" x="213.36" y="17.78" rot="MR0"/>
-<instance part="A12" gate="K1" x="213.36" y="12.7" rot="MR0"/>
-<instance part="A12" gate="K2" x="213.36" y="7.62" rot="MR0"/>
-<instance part="A12" gate="L1" x="238.76" y="93.98" rot="MR0"/>
-<instance part="A12" gate="L2" x="238.76" y="88.9" rot="MR0"/>
-<instance part="A12" gate="M1" x="238.76" y="83.82" rot="MR0"/>
-<instance part="A12" gate="M2" x="238.76" y="78.74" rot="MR0"/>
-<instance part="A12" gate="N1" x="238.76" y="73.66" rot="MR0"/>
-<instance part="A12" gate="N2" x="238.76" y="68.58" rot="MR0"/>
-<instance part="A12" gate="P1" x="238.76" y="63.5" rot="MR0"/>
-<instance part="A12" gate="P2" x="238.76" y="58.42" rot="MR0"/>
-<instance part="A12" gate="R1" x="238.76" y="53.34" rot="MR0"/>
-<instance part="A12" gate="R2" x="238.76" y="48.26" rot="MR0"/>
-<instance part="A12" gate="S1" x="238.76" y="43.18" rot="MR0"/>
-<instance part="A12" gate="S2" x="238.76" y="38.1" rot="MR0"/>
-<instance part="A12" gate="T1" x="238.76" y="33.02" rot="MR0"/>
-<instance part="A12" gate="T2" x="238.76" y="27.94" rot="MR0"/>
-<instance part="A12" gate="U1" x="238.76" y="22.86" rot="MR0"/>
-<instance part="A12" gate="U2" x="238.76" y="17.78" rot="MR0"/>
-<instance part="A12" gate="V1" x="238.76" y="12.7" rot="MR0"/>
-<instance part="A12" gate="V2" x="238.76" y="7.62" rot="MR0"/>
+<instance part="A5" gate="A1" x="10.16" y="137.16"/>
+<instance part="A5" gate="A2" x="10.16" y="132.08"/>
+<instance part="A5" gate="B1" x="10.16" y="127"/>
+<instance part="A5" gate="B2" x="10.16" y="121.92"/>
+<instance part="A5" gate="C1" x="10.16" y="116.84"/>
+<instance part="A5" gate="C2" x="10.16" y="111.76"/>
+<instance part="A5" gate="D1" x="10.16" y="106.68"/>
+<instance part="A5" gate="D2" x="10.16" y="101.6"/>
+<instance part="A5" gate="E1" x="10.16" y="96.52"/>
+<instance part="A5" gate="E2" x="10.16" y="91.44"/>
+<instance part="A5" gate="F1" x="10.16" y="86.36"/>
+<instance part="A5" gate="F2" x="10.16" y="81.28"/>
+<instance part="A5" gate="H1" x="10.16" y="76.2"/>
+<instance part="A5" gate="H2" x="10.16" y="71.12"/>
+<instance part="A5" gate="J1" x="10.16" y="66.04"/>
+<instance part="A5" gate="J2" x="10.16" y="60.96"/>
+<instance part="A5" gate="K1" x="10.16" y="55.88"/>
+<instance part="A5" gate="K2" x="10.16" y="50.8"/>
+<instance part="A5" gate="L1" x="35.56" y="137.16"/>
+<instance part="A5" gate="L2" x="35.56" y="132.08"/>
+<instance part="A5" gate="M1" x="35.56" y="127"/>
+<instance part="A5" gate="M2" x="35.56" y="121.92"/>
+<instance part="A5" gate="N1" x="35.56" y="116.84"/>
+<instance part="A5" gate="N2" x="35.56" y="111.76"/>
+<instance part="A5" gate="P1" x="35.56" y="106.68"/>
+<instance part="A5" gate="P2" x="35.56" y="101.6"/>
+<instance part="A5" gate="R1" x="35.56" y="96.52"/>
+<instance part="A5" gate="R2" x="35.56" y="91.44"/>
+<instance part="A5" gate="S1" x="35.56" y="86.36"/>
+<instance part="A5" gate="S2" x="35.56" y="81.28"/>
+<instance part="A5" gate="T1" x="35.56" y="76.2"/>
+<instance part="A5" gate="T2" x="35.56" y="71.12"/>
+<instance part="A5" gate="U1" x="35.56" y="66.04"/>
+<instance part="A5" gate="U2" x="35.56" y="60.96"/>
+<instance part="A5" gate="V1" x="35.56" y="55.88"/>
+<instance part="A5" gate="V2" x="35.56" y="50.8"/>
+<instance part="A9" gate="A1" x="20.32" y="137.16" rot="MR0"/>
+<instance part="A9" gate="A2" x="20.32" y="132.08" rot="MR0"/>
+<instance part="A9" gate="B1" x="20.32" y="127" rot="MR0"/>
+<instance part="A9" gate="B2" x="20.32" y="121.92" rot="MR0"/>
+<instance part="A9" gate="C1" x="20.32" y="116.84" rot="MR0"/>
+<instance part="A9" gate="C2" x="20.32" y="111.76" rot="MR0"/>
+<instance part="A9" gate="D1" x="20.32" y="106.68" rot="MR0"/>
+<instance part="A9" gate="D2" x="20.32" y="101.6" rot="MR0"/>
+<instance part="A9" gate="E1" x="20.32" y="96.52" rot="MR0"/>
+<instance part="A9" gate="E2" x="20.32" y="91.44" rot="MR0"/>
+<instance part="A9" gate="F1" x="20.32" y="86.36" rot="MR0"/>
+<instance part="A9" gate="F2" x="20.32" y="81.28" rot="MR0"/>
+<instance part="A9" gate="H1" x="20.32" y="76.2" rot="MR0"/>
+<instance part="A9" gate="H2" x="20.32" y="71.12" rot="MR0"/>
+<instance part="A9" gate="J1" x="20.32" y="66.04" rot="MR0"/>
+<instance part="A9" gate="J2" x="20.32" y="60.96" rot="MR0"/>
+<instance part="A9" gate="K1" x="20.32" y="55.88" rot="MR0"/>
+<instance part="A9" gate="K2" x="20.32" y="50.8" rot="MR0"/>
+<instance part="A9" gate="L1" x="45.72" y="137.16" rot="MR0"/>
+<instance part="A9" gate="L2" x="45.72" y="132.08" rot="MR0"/>
+<instance part="A9" gate="M1" x="45.72" y="127" rot="MR0"/>
+<instance part="A9" gate="M2" x="45.72" y="121.92" rot="MR0"/>
+<instance part="A9" gate="N1" x="45.72" y="116.84" rot="MR0"/>
+<instance part="A9" gate="N2" x="45.72" y="111.76" rot="MR0"/>
+<instance part="A9" gate="P1" x="45.72" y="106.68" rot="MR0"/>
+<instance part="A9" gate="P2" x="45.72" y="101.6" rot="MR0"/>
+<instance part="A9" gate="R1" x="45.72" y="96.52" rot="MR0"/>
+<instance part="A9" gate="R2" x="45.72" y="91.44" rot="MR0"/>
+<instance part="A9" gate="S1" x="45.72" y="86.36" rot="MR0"/>
+<instance part="A9" gate="S2" x="45.72" y="81.28" rot="MR0"/>
+<instance part="A9" gate="T1" x="45.72" y="76.2" rot="MR0"/>
+<instance part="A9" gate="T2" x="45.72" y="71.12" rot="MR0"/>
+<instance part="A9" gate="U1" x="45.72" y="66.04" rot="MR0"/>
+<instance part="A9" gate="U2" x="45.72" y="60.96" rot="MR0"/>
+<instance part="A9" gate="V1" x="45.72" y="55.88" rot="MR0"/>
+<instance part="A9" gate="V2" x="45.72" y="50.8" rot="MR0"/>
+<instance part="A6" gate="A1" x="73.66" y="137.16"/>
+<instance part="A6" gate="A2" x="73.66" y="132.08"/>
+<instance part="A6" gate="B1" x="73.66" y="127"/>
+<instance part="A6" gate="B2" x="73.66" y="121.92"/>
+<instance part="A6" gate="C1" x="73.66" y="116.84"/>
+<instance part="A6" gate="C2" x="73.66" y="111.76"/>
+<instance part="A6" gate="D1" x="73.66" y="106.68"/>
+<instance part="A6" gate="D2" x="73.66" y="101.6"/>
+<instance part="A6" gate="E1" x="73.66" y="96.52"/>
+<instance part="A6" gate="E2" x="73.66" y="91.44"/>
+<instance part="A6" gate="F1" x="73.66" y="86.36"/>
+<instance part="A6" gate="F2" x="73.66" y="81.28"/>
+<instance part="A6" gate="H1" x="73.66" y="76.2"/>
+<instance part="A6" gate="H2" x="73.66" y="71.12"/>
+<instance part="A6" gate="J1" x="73.66" y="66.04"/>
+<instance part="A6" gate="J2" x="73.66" y="60.96"/>
+<instance part="A6" gate="K1" x="73.66" y="55.88"/>
+<instance part="A6" gate="K2" x="73.66" y="50.8"/>
+<instance part="A6" gate="L1" x="99.06" y="137.16"/>
+<instance part="A6" gate="L2" x="99.06" y="132.08"/>
+<instance part="A6" gate="M1" x="99.06" y="127"/>
+<instance part="A6" gate="M2" x="99.06" y="121.92"/>
+<instance part="A6" gate="N1" x="99.06" y="116.84"/>
+<instance part="A6" gate="N2" x="99.06" y="111.76"/>
+<instance part="A6" gate="P1" x="99.06" y="106.68"/>
+<instance part="A6" gate="P2" x="99.06" y="101.6"/>
+<instance part="A6" gate="R1" x="99.06" y="96.52"/>
+<instance part="A6" gate="R2" x="99.06" y="91.44"/>
+<instance part="A6" gate="S1" x="99.06" y="86.36"/>
+<instance part="A6" gate="S2" x="99.06" y="81.28"/>
+<instance part="A6" gate="T1" x="99.06" y="76.2"/>
+<instance part="A6" gate="T2" x="99.06" y="71.12"/>
+<instance part="A6" gate="U1" x="99.06" y="66.04"/>
+<instance part="A6" gate="U2" x="99.06" y="60.96"/>
+<instance part="A6" gate="V1" x="99.06" y="55.88"/>
+<instance part="A6" gate="V2" x="99.06" y="50.8"/>
+<instance part="A7" gate="A1" x="83.82" y="137.16" rot="MR0"/>
+<instance part="A7" gate="A2" x="83.82" y="132.08" rot="MR0"/>
+<instance part="A7" gate="B1" x="83.82" y="127" rot="MR0"/>
+<instance part="A7" gate="B2" x="83.82" y="121.92" rot="MR0"/>
+<instance part="A7" gate="C1" x="83.82" y="116.84" rot="MR0"/>
+<instance part="A7" gate="C2" x="83.82" y="111.76" rot="MR0"/>
+<instance part="A7" gate="D1" x="83.82" y="106.68" rot="MR0"/>
+<instance part="A7" gate="D2" x="83.82" y="101.6" rot="MR0"/>
+<instance part="A7" gate="E1" x="83.82" y="96.52" rot="MR0"/>
+<instance part="A7" gate="E2" x="83.82" y="91.44" rot="MR0"/>
+<instance part="A7" gate="F1" x="83.82" y="86.36" rot="MR0"/>
+<instance part="A7" gate="F2" x="83.82" y="81.28" rot="MR0"/>
+<instance part="A7" gate="H1" x="83.82" y="76.2" rot="MR0"/>
+<instance part="A7" gate="H2" x="83.82" y="71.12" rot="MR0"/>
+<instance part="A7" gate="J1" x="83.82" y="66.04" rot="MR0"/>
+<instance part="A7" gate="J2" x="83.82" y="60.96" rot="MR0"/>
+<instance part="A7" gate="K1" x="83.82" y="55.88" rot="MR0"/>
+<instance part="A7" gate="K2" x="83.82" y="50.8" rot="MR0"/>
+<instance part="A7" gate="L1" x="109.22" y="137.16" rot="MR0"/>
+<instance part="A7" gate="L2" x="109.22" y="132.08" rot="MR0"/>
+<instance part="A7" gate="M1" x="109.22" y="127" rot="MR0"/>
+<instance part="A7" gate="M2" x="109.22" y="121.92" rot="MR0"/>
+<instance part="A7" gate="N1" x="109.22" y="116.84" rot="MR0"/>
+<instance part="A7" gate="N2" x="109.22" y="111.76" rot="MR0"/>
+<instance part="A7" gate="P1" x="109.22" y="106.68" rot="MR0"/>
+<instance part="A7" gate="P2" x="109.22" y="101.6" rot="MR0"/>
+<instance part="A7" gate="R1" x="109.22" y="96.52" rot="MR0"/>
+<instance part="A7" gate="R2" x="109.22" y="91.44" rot="MR0"/>
+<instance part="A7" gate="S1" x="109.22" y="86.36" rot="MR0"/>
+<instance part="A7" gate="S2" x="109.22" y="81.28" rot="MR0"/>
+<instance part="A7" gate="T1" x="109.22" y="76.2" rot="MR0"/>
+<instance part="A7" gate="T2" x="109.22" y="71.12" rot="MR0"/>
+<instance part="A7" gate="U1" x="109.22" y="66.04" rot="MR0"/>
+<instance part="A7" gate="U2" x="109.22" y="60.96" rot="MR0"/>
+<instance part="A7" gate="V1" x="109.22" y="55.88" rot="MR0"/>
+<instance part="A7" gate="V2" x="109.22" y="50.8" rot="MR0"/>
+<instance part="A8" gate="A1" x="137.16" y="137.16"/>
+<instance part="A8" gate="A2" x="137.16" y="132.08"/>
+<instance part="A8" gate="B1" x="137.16" y="127"/>
+<instance part="A8" gate="B2" x="137.16" y="121.92"/>
+<instance part="A8" gate="C1" x="137.16" y="116.84"/>
+<instance part="A8" gate="C2" x="137.16" y="111.76"/>
+<instance part="A8" gate="D1" x="137.16" y="106.68"/>
+<instance part="A8" gate="D2" x="137.16" y="101.6"/>
+<instance part="A8" gate="E1" x="137.16" y="96.52"/>
+<instance part="A8" gate="E2" x="137.16" y="91.44"/>
+<instance part="A8" gate="F1" x="137.16" y="86.36"/>
+<instance part="A8" gate="F2" x="137.16" y="81.28"/>
+<instance part="A8" gate="H1" x="137.16" y="76.2"/>
+<instance part="A8" gate="H2" x="137.16" y="71.12"/>
+<instance part="A8" gate="J1" x="137.16" y="66.04"/>
+<instance part="A8" gate="J2" x="137.16" y="60.96"/>
+<instance part="A8" gate="K1" x="137.16" y="55.88"/>
+<instance part="A8" gate="K2" x="137.16" y="50.8"/>
+<instance part="A8" gate="L1" x="162.56" y="137.16"/>
+<instance part="A8" gate="L2" x="162.56" y="132.08"/>
+<instance part="A8" gate="M1" x="162.56" y="127"/>
+<instance part="A8" gate="M2" x="162.56" y="121.92"/>
+<instance part="A8" gate="N1" x="162.56" y="116.84"/>
+<instance part="A8" gate="N2" x="162.56" y="111.76"/>
+<instance part="A8" gate="P1" x="162.56" y="106.68"/>
+<instance part="A8" gate="P2" x="162.56" y="101.6"/>
+<instance part="A8" gate="R1" x="162.56" y="96.52"/>
+<instance part="A8" gate="R2" x="162.56" y="91.44"/>
+<instance part="A8" gate="S1" x="162.56" y="86.36"/>
+<instance part="A8" gate="S2" x="162.56" y="81.28"/>
+<instance part="A8" gate="T1" x="162.56" y="76.2"/>
+<instance part="A8" gate="T2" x="162.56" y="71.12"/>
+<instance part="A8" gate="U1" x="162.56" y="66.04"/>
+<instance part="A8" gate="U2" x="162.56" y="60.96"/>
+<instance part="A8" gate="V1" x="162.56" y="55.88"/>
+<instance part="A8" gate="V2" x="162.56" y="50.8"/>
+<instance part="A10" gate="A1" x="147.32" y="137.16" rot="MR0"/>
+<instance part="A10" gate="A2" x="147.32" y="132.08" rot="MR0"/>
+<instance part="A10" gate="B1" x="147.32" y="127" rot="MR0"/>
+<instance part="A10" gate="B2" x="147.32" y="121.92" rot="MR0"/>
+<instance part="A10" gate="C1" x="147.32" y="116.84" rot="MR0"/>
+<instance part="A10" gate="C2" x="147.32" y="111.76" rot="MR0"/>
+<instance part="A10" gate="D1" x="147.32" y="106.68" rot="MR0"/>
+<instance part="A10" gate="D2" x="147.32" y="101.6" rot="MR0"/>
+<instance part="A10" gate="E1" x="147.32" y="96.52" rot="MR0"/>
+<instance part="A10" gate="E2" x="147.32" y="91.44" rot="MR0"/>
+<instance part="A10" gate="F1" x="147.32" y="86.36" rot="MR0"/>
+<instance part="A10" gate="F2" x="147.32" y="81.28" rot="MR0"/>
+<instance part="A10" gate="H1" x="147.32" y="76.2" rot="MR0"/>
+<instance part="A10" gate="H2" x="147.32" y="71.12" rot="MR0"/>
+<instance part="A10" gate="J1" x="147.32" y="66.04" rot="MR0"/>
+<instance part="A10" gate="J2" x="147.32" y="60.96" rot="MR0"/>
+<instance part="A10" gate="K1" x="147.32" y="55.88" rot="MR0"/>
+<instance part="A10" gate="K2" x="147.32" y="50.8" rot="MR0"/>
+<instance part="A10" gate="L1" x="172.72" y="137.16" rot="MR0"/>
+<instance part="A10" gate="L2" x="172.72" y="132.08" rot="MR0"/>
+<instance part="A10" gate="M1" x="172.72" y="127" rot="MR0"/>
+<instance part="A10" gate="M2" x="172.72" y="121.92" rot="MR0"/>
+<instance part="A10" gate="N1" x="172.72" y="116.84" rot="MR0"/>
+<instance part="A10" gate="N2" x="172.72" y="111.76" rot="MR0"/>
+<instance part="A10" gate="P1" x="172.72" y="106.68" rot="MR0"/>
+<instance part="A10" gate="P2" x="172.72" y="101.6" rot="MR0"/>
+<instance part="A10" gate="R1" x="172.72" y="96.52" rot="MR0"/>
+<instance part="A10" gate="R2" x="172.72" y="91.44" rot="MR0"/>
+<instance part="A10" gate="S1" x="172.72" y="86.36" rot="MR0"/>
+<instance part="A10" gate="S2" x="172.72" y="81.28" rot="MR0"/>
+<instance part="A10" gate="T1" x="172.72" y="76.2" rot="MR0"/>
+<instance part="A10" gate="T2" x="172.72" y="71.12" rot="MR0"/>
+<instance part="A10" gate="U1" x="172.72" y="66.04" rot="MR0"/>
+<instance part="A10" gate="U2" x="172.72" y="60.96" rot="MR0"/>
+<instance part="A10" gate="V1" x="172.72" y="55.88" rot="MR0"/>
+<instance part="A10" gate="V2" x="172.72" y="50.8" rot="MR0"/>
+<instance part="A11" gate="A1" x="200.66" y="137.16"/>
+<instance part="A11" gate="A2" x="200.66" y="132.08"/>
+<instance part="A11" gate="B1" x="200.66" y="127"/>
+<instance part="A11" gate="B2" x="200.66" y="121.92"/>
+<instance part="A11" gate="C1" x="200.66" y="116.84"/>
+<instance part="A11" gate="C2" x="200.66" y="111.76"/>
+<instance part="A11" gate="D1" x="200.66" y="106.68"/>
+<instance part="A11" gate="D2" x="200.66" y="101.6"/>
+<instance part="A11" gate="E1" x="200.66" y="96.52"/>
+<instance part="A11" gate="E2" x="200.66" y="91.44"/>
+<instance part="A11" gate="F1" x="200.66" y="86.36"/>
+<instance part="A11" gate="F2" x="200.66" y="81.28"/>
+<instance part="A11" gate="H1" x="200.66" y="76.2"/>
+<instance part="A11" gate="H2" x="200.66" y="71.12"/>
+<instance part="A11" gate="J1" x="200.66" y="66.04"/>
+<instance part="A11" gate="J2" x="200.66" y="60.96"/>
+<instance part="A11" gate="K1" x="200.66" y="55.88"/>
+<instance part="A11" gate="K2" x="200.66" y="50.8"/>
+<instance part="A11" gate="L1" x="226.06" y="137.16"/>
+<instance part="A11" gate="L2" x="226.06" y="132.08"/>
+<instance part="A11" gate="M1" x="226.06" y="127"/>
+<instance part="A11" gate="M2" x="226.06" y="121.92"/>
+<instance part="A11" gate="N1" x="226.06" y="116.84"/>
+<instance part="A11" gate="N2" x="226.06" y="111.76"/>
+<instance part="A11" gate="P1" x="226.06" y="106.68"/>
+<instance part="A11" gate="P2" x="226.06" y="101.6"/>
+<instance part="A11" gate="R1" x="226.06" y="96.52"/>
+<instance part="A11" gate="R2" x="226.06" y="91.44"/>
+<instance part="A11" gate="S1" x="226.06" y="86.36"/>
+<instance part="A11" gate="S2" x="226.06" y="81.28"/>
+<instance part="A11" gate="T1" x="226.06" y="76.2"/>
+<instance part="A11" gate="T2" x="226.06" y="71.12"/>
+<instance part="A11" gate="U1" x="226.06" y="66.04"/>
+<instance part="A11" gate="U2" x="226.06" y="60.96"/>
+<instance part="A11" gate="V1" x="226.06" y="55.88"/>
+<instance part="A11" gate="V2" x="226.06" y="50.8"/>
+<instance part="A12" gate="A1" x="210.82" y="137.16" rot="MR0"/>
+<instance part="A12" gate="A2" x="210.82" y="132.08" rot="MR0"/>
+<instance part="A12" gate="B1" x="210.82" y="127" rot="MR0"/>
+<instance part="A12" gate="B2" x="210.82" y="121.92" rot="MR0"/>
+<instance part="A12" gate="C1" x="210.82" y="116.84" rot="MR0"/>
+<instance part="A12" gate="C2" x="210.82" y="111.76" rot="MR0"/>
+<instance part="A12" gate="D1" x="210.82" y="106.68" rot="MR0"/>
+<instance part="A12" gate="D2" x="210.82" y="101.6" rot="MR0"/>
+<instance part="A12" gate="E1" x="210.82" y="96.52" rot="MR0"/>
+<instance part="A12" gate="E2" x="210.82" y="91.44" rot="MR0"/>
+<instance part="A12" gate="F1" x="210.82" y="86.36" rot="MR0"/>
+<instance part="A12" gate="F2" x="210.82" y="81.28" rot="MR0"/>
+<instance part="A12" gate="H1" x="210.82" y="76.2" rot="MR0"/>
+<instance part="A12" gate="H2" x="210.82" y="71.12" rot="MR0"/>
+<instance part="A12" gate="J1" x="210.82" y="66.04" rot="MR0"/>
+<instance part="A12" gate="J2" x="210.82" y="60.96" rot="MR0"/>
+<instance part="A12" gate="K1" x="210.82" y="55.88" rot="MR0"/>
+<instance part="A12" gate="K2" x="210.82" y="50.8" rot="MR0"/>
+<instance part="A12" gate="L1" x="236.22" y="137.16" rot="MR0"/>
+<instance part="A12" gate="L2" x="236.22" y="132.08" rot="MR0"/>
+<instance part="A12" gate="M1" x="236.22" y="127" rot="MR0"/>
+<instance part="A12" gate="M2" x="236.22" y="121.92" rot="MR0"/>
+<instance part="A12" gate="N1" x="236.22" y="116.84" rot="MR0"/>
+<instance part="A12" gate="N2" x="236.22" y="111.76" rot="MR0"/>
+<instance part="A12" gate="P1" x="236.22" y="106.68" rot="MR0"/>
+<instance part="A12" gate="P2" x="236.22" y="101.6" rot="MR0"/>
+<instance part="A12" gate="R1" x="236.22" y="96.52" rot="MR0"/>
+<instance part="A12" gate="R2" x="236.22" y="91.44" rot="MR0"/>
+<instance part="A12" gate="S1" x="236.22" y="86.36" rot="MR0"/>
+<instance part="A12" gate="S2" x="236.22" y="81.28" rot="MR0"/>
+<instance part="A12" gate="T1" x="236.22" y="76.2" rot="MR0"/>
+<instance part="A12" gate="T2" x="236.22" y="71.12" rot="MR0"/>
+<instance part="A12" gate="U1" x="236.22" y="66.04" rot="MR0"/>
+<instance part="A12" gate="U2" x="236.22" y="60.96" rot="MR0"/>
+<instance part="A12" gate="V1" x="236.22" y="55.88" rot="MR0"/>
+<instance part="A12" gate="V2" x="236.22" y="50.8" rot="MR0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 </instances>
 <busses>
 </busses>

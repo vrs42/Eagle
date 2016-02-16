@@ -12710,6 +12710,65 @@ Source: 008-0260-0_E.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,-38.1,12.7,IC4D,O,,,,"/>
+<approved hash="101,1,-38.1,2.54,IC4E,O,,,,"/>
+<approved hash="101,1,-38.1,-7.62,IC4F,O,,,,"/>
+<approved hash="104,1,2.54,30.48,IC1,AVCC,V4.4,,,"/>
+<approved hash="104,1,2.54,22.86,IC1,VCC,V4.4,,,"/>
+<approved hash="104,1,71.12,5.08,IC2,VCAP,N$3,,,"/>
+<approved hash="104,1,99.06,-5.08,IC2,VSS,GND,,,"/>
+<approved hash="104,1,88.9,-5.08,IC2,VSSRX,GND,,,"/>
+<approved hash="104,1,93.98,38.1,IC2,VDDTX,N$6,,,"/>
+<approved hash="104,1,93.98,-5.08,IC2,VSSTX,GND,,,"/>
+<approved hash="104,1,91.44,38.1,IC2,VDDPLL,N$6,,,"/>
+<approved hash="104,1,88.9,38.1,IC2,VDDRX,N$6,,,"/>
+<approved hash="104,1,91.44,-5.08,IC2,VSSPLL,GND,,,"/>
+<approved hash="104,1,96.52,-5.08,IC2,VSSOSC,GND,,,"/>
+<approved hash="104,1,96.52,38.1,IC2,VDDOSC,N$6,,,"/>
+<approved hash="104,1,99.06,38.1,IC2,VDD,N$6,,,"/>
+<approved hash="104,1,-12.7,-5.08,IC4P,VSS,GND,,,"/>
+<approved hash="104,1,-12.7,10.16,IC4P,VDD,V4.4,,,"/>
+<approved hash="209,1,2.54,50.8,RST,,,,,"/>
+<approved hash="209,1,71.12,25.4,RST,,,,,"/>
+<approved hash="111,1,101.6,-35.56,N$47,,,,,"/>
+<approved hash="111,1,101.6,-35.56,N$47,,,,,"/>
+<approved hash="113,1,196.85,46.99,J4,,,,,"/>
+<approved hash="113,1,118.914,-32.5332,X1,,,,,"/>
+<approved hash="113,1,45.7539,-47.3992,J1,,,,,"/>
+<approved hash="113,1,48.2939,-47.3992,J2,,,,,"/>
+<approved hash="113,1,50.8339,-47.3992,J3,,,,,"/>
+<approved hash="113,1,53.3739,-47.3992,J5,,,,,"/>
+<approved hash="113,1,55.9139,-47.3992,J6,,,,,"/>
+<approved hash="113,1,58.4539,-47.3992,J7,,,,,"/>
+<approved hash="113,1,44.8592,17.8139,J8,,,,,"/>
+<approved hash="113,1,44.8592,15.2739,J9,,,,,"/>
+<approved hash="113,1,45.3635,12.7339,J10,,,,,"/>
+<approved hash="113,1,45.2966,10.1939,J11,,,,,"/>
+<approved hash="113,1,45.3635,33.0539,J12,,,,,"/>
+<approved hash="113,1,45.3635,35.5939,J13,,,,,"/>
+<approved hash="113,1,45.3635,38.1339,J14,,,,,"/>
+<approved hash="113,1,45.3635,40.6739,J15,,,,,"/>
+<approved hash="113,1,45.3635,43.2139,J16,,,,,"/>
+<approved hash="113,1,45.3635,45.7539,J17,,,,,"/>
+<approved hash="113,1,45.3635,48.2939,J18,,,,,"/>
+<approved hash="113,1,45.3635,50.8339,J19,,,,,"/>
+<approved hash="113,1,45.3635,-12.6661,J20,,,,,"/>
+<approved hash="113,1,45.3635,-10.1261,J21,,,,,"/>
+<approved hash="113,1,45.3635,-7.58613,J22,,,,,"/>
+<approved hash="113,1,45.3635,-5.04613,J23,,,,,"/>
+<approved hash="113,1,45.3635,-2.50613,J24,,,,,"/>
+<approved hash="113,1,45.3635,0.0338656,J25,,,,,"/>
+<approved hash="113,1,45.3635,2.57387,J26,,,,,"/>
+<approved hash="113,1,45.3635,5.11387,J27,,,,,"/>
+<approved hash="113,1,45.3635,-17.7461,J28,,,,,"/>
+<approved hash="113,1,60.6035,-43.1461,J29,,,,,"/>
+<approved hash="113,1,-4.72351,25.3661,J30,,,,,"/>
+<approved hash="113,1,-4.72351,32.9861,J31,,,,,"/>
+<approved hash="113,1,60.6035,-45.6861,J32,,,,,"/>
+<approved hash="113,1,143.641,-105.368,GAIN,,,,,"/>
+<approved hash="113,1,51.1565,-78.7739,J33,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

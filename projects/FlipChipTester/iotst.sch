@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7088,6 +7088,27 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,22.86,17.5853,IN1-2,,,,,"/>
+<approved hash="113,1,60.96,17.5853,IN3-4,,,,,"/>
+<approved hash="113,1,61.1547,71.12,OUT1-2,,,,,"/>
+<approved hash="113,1,93.98,17.5853,IN5-6,,,,,"/>
+<approved hash="113,1,116.84,17.5853,IN7-8,,,,,"/>
+<approved hash="113,1,175.455,71.12,OUT5-6,,,,,"/>
+<approved hash="113,1,61.1547,149.86,OUT3-4,,,,,"/>
+<approved hash="113,1,175.455,149.86,OUT7-8,,,,,"/>
+<approved hash="113,1,256.54,164.905,CORE-IO,,,,,"/>
+<approved hash="113,1,248.92,129.671,SW1,,,,,"/>
+<approved hash="113,1,271.78,129.671,SW2,,,,,"/>
+<approved hash="113,1,248.92,99.1912,SW3,,,,,"/>
+<approved hash="113,1,271.78,99.1912,SW4,,,,,"/>
+<approved hash="113,1,244.077,50.9312,JP1,,,,,"/>
+<approved hash="113,1,261.857,50.9312,JP3,,,,,"/>
+<approved hash="113,1,274.557,50.9312,JP4,,,,,"/>
+<approved hash="113,1,287.257,50.9312,JP5,,,,,"/>
+<approved hash="113,3,20.32,26.8647,SV2,,,,,"/>
+<approved hash="113,3,58.42,26.8647,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

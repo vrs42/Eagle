@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12334,6 +12334,76 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="105,1,46.99,147.32,N$434,,,,,"/>
+<approved hash="105,1,46.99,144.78,N$439,,,,,"/>
+<approved hash="105,1,46.99,142.24,N$440,,,,,"/>
+<approved hash="105,1,46.99,139.7,N$441,,,,,"/>
+<approved hash="105,1,46.99,137.16,N$442,,,,,"/>
+<approved hash="105,1,46.99,134.62,N$443,,,,,"/>
+<approved hash="105,1,46.99,132.08,N$444,,,,,"/>
+<approved hash="105,1,46.99,129.54,N$445,,,,,"/>
+<approved hash="105,1,46.99,127,N$446,,,,,"/>
+<approved hash="105,1,46.99,124.46,N$447,,,,,"/>
+<approved hash="105,1,46.99,121.92,N$448,,,,,"/>
+<approved hash="105,1,46.99,119.38,N$449,,,,,"/>
+<approved hash="105,1,46.99,116.84,N$450,,,,,"/>
+<approved hash="105,1,46.99,114.3,N$451,,,,,"/>
+<approved hash="105,1,46.99,111.76,N$452,,,,,"/>
+<approved hash="105,1,46.99,109.22,N$457,,,,,"/>
+<approved hash="105,1,52.07,93.98,N$462,,,,,"/>
+<approved hash="105,1,52.07,91.44,N$463,,,,,"/>
+<approved hash="105,1,52.07,88.9,N$464,,,,,"/>
+<approved hash="105,1,52.07,86.36,N$465,,,,,"/>
+<approved hash="105,1,52.07,83.82,N$466,,,,,"/>
+<approved hash="105,1,52.07,81.28,N$467,,,,,"/>
+<approved hash="105,1,52.07,78.74,N$468,,,,,"/>
+<approved hash="105,1,52.07,76.2,N$469,,,,,"/>
+<approved hash="105,1,52.07,73.66,N$470,,,,,"/>
+<approved hash="105,1,52.07,71.12,N$471,,,,,"/>
+<approved hash="105,1,30.48,127,N$472,,,,,"/>
+<approved hash="105,1,68.58,127,N$473,,,,,"/>
+<approved hash="105,1,30.48,82.55,N$474,,,,,"/>
+<approved hash="105,1,33.02,82.55,N$475,,,,,"/>
+<approved hash="105,1,68.58,82.55,N$476,,,,,"/>
+<approved hash="105,1,35.56,82.55,N$477,,,,,"/>
+<approved hash="105,1,38.1,82.55,N$478,,,,,"/>
+<approved hash="105,1,40.64,82.55,N$479,,,,,"/>
+<approved hash="105,1,33.02,127,N$480,,,,,"/>
+<approved hash="105,1,66.04,127,N$481,,,,,"/>
+<approved hash="105,1,38.1,127,N$482,,,,,"/>
+<approved hash="105,1,35.56,127,N$483,,,,,"/>
+<approved hash="105,1,40.64,127,N$484,,,,,"/>
+<approved hash="105,1,43.18,127,N$485,,,,,"/>
+<approved hash="105,1,55.88,127,N$486,,,,,"/>
+<approved hash="105,1,55.88,82.55,N$487,,,,,"/>
+<approved hash="105,1,43.18,82.55,N$488,,,,,"/>
+<approved hash="105,1,45.72,82.55,N$489,,,,,"/>
+<approved hash="105,1,48.26,82.55,N$490,,,,,"/>
+<approved hash="105,1,50.8,82.55,N$491,,,,,"/>
+<approved hash="105,1,53.34,82.55,N$492,,,,,"/>
+<approved hash="105,1,58.42,82.55,N$493,,,,,"/>
+<approved hash="105,1,60.96,82.55,N$494,,,,,"/>
+<approved hash="105,1,63.5,82.55,N$495,,,,,"/>
+<approved hash="105,1,66.04,82.55,N$496,,,,,"/>
+<approved hash="105,1,45.72,127,N$497,,,,,"/>
+<approved hash="105,1,48.26,127,N$498,,,,,"/>
+<approved hash="105,1,50.8,127,N$499,,,,,"/>
+<approved hash="105,1,53.34,127,N$500,,,,,"/>
+<approved hash="105,1,58.42,127,N$501,,,,,"/>
+<approved hash="105,1,60.96,127,N$502,,,,,"/>
+<approved hash="105,1,63.5,127,N$503,,,,,"/>
+<approved hash="105,1,100.33,114.3,N$504,,,,,"/>
+<approved hash="105,1,100.33,137.16,N$505,,,,,"/>
+<approved hash="105,1,109.22,119.38,N$506,,,,,"/>
+<approved hash="105,1,121.92,68.58,N$507,,,,,"/>
+<approved hash="105,1,121.92,88.9,N$508,,,,,"/>
+<approved hash="115,1,120.65,99.06,VCC,,,,,"/>
+<approved hash="115,1,120.65,78.74,VCC,,,,,"/>
+<approved hash="115,1,111.76,156.21,VCC,,,,,"/>
+<approved hash="115,1,105.41,132.08,GND,,,,,"/>
+<approved hash="115,1,105.41,109.22,GND,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

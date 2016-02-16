@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="dots" multiple="1" display="no" altdistance="100" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3655,6 +3655,18 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="105,1,66.04,142.24,N$9,,,,,"/>
+<approved hash="105,1,68.58,137.16,N$10,,,,,"/>
+<approved hash="105,1,71.12,132.08,N$11,,,,,"/>
+<approved hash="105,1,73.66,127,N$12,,,,,"/>
+<approved hash="105,1,78.74,99.06,N$13,,,,,"/>
+<approved hash="105,1,81.28,93.98,N$14,,,,,"/>
+<approved hash="105,1,83.82,88.9,N$15,,,,,"/>
+<approved hash="105,1,86.36,83.82,N$16,,,,,"/>
+<approved hash="105,1,213.36,109.22,N$17,,,,,"/>
+<approved hash="105,1,210.82,124.46,N$18,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

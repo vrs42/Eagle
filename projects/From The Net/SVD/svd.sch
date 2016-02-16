@@ -5829,8 +5829,8 @@ Source: www.kingbright.com</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
-<part name="IC1" library="memory" deviceset="TC551001CP" device=""/>
-<part name="IC2" library="memory" deviceset="TC551001CP" device=""/>
+<part name="IC1" library="memory" deviceset="TC551001CP" device="" value="TC551001CP"/>
+<part name="IC2" library="memory" deviceset="TC551001CP" device="" value="TC551001CP"/>
 <part name="IC3" library="maxim" deviceset="MAX232" device=""/>
 <part name="IC5" library="74xx-us" deviceset="74*393" device="N"/>
 <part name="C1" library="capacitor-wima" deviceset="C" device="2.5/5" value="10uF"/>
@@ -7082,6 +7082,12 @@ Source: www.kingbright.com</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,58.42,27.94,IC3,T2IN,,,,"/>
+<approved hash="202,1,27.94,33.02,IC3,R2IN,,,,"/>
+<approved hash="202,1,86.36,86.36,PIC16C74,OSC2,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

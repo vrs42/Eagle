@@ -3610,7 +3610,7 @@ grid 2.54 mm</description>
 <wire x1="124.46" y1="43.18" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="45.72" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="45.72" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="45.72" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="45.72" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
@@ -3695,6 +3695,13 @@ grid 2.54 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,40.8421,82.4526,PULL_GND,,,,,"/>
+<approved hash="113,1,132.359,44.5474,MUT,,,,,"/>
+<approved hash="113,1,42.0426,77.3726,PULL_DOWN,,,,,"/>
+<approved hash="113,1,40.1325,87.5326,!PULL_UP,,,,,"/>
+<approved hash="113,1,38.8561,21.4926,TTL_RX,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

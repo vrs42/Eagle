@@ -76,8 +76,8 @@
 <text x="3.81" y="17.78" size="1.4224" layer="21">media.mit.edu/</text>
 <text x="6.096" y="3.81" size="1.4224" layer="21">~ladyada/</text>
 <text x="5.842" y="1.778" size="1.4224" layer="21">resources/</text>
-<text x="14.986" y="18.796" size="1.27" layer="16" font="vector" ratio="10" rot="MR0">TSSOP-16</text>
-<text x="6.604" y="4.318" size="1.27" layer="1" font="vector" ratio="10">SOIC-16</text>
+<text x="14.986" y="18.796" size="1.27" layer="16" font="vector" ratio="24" rot="MR0">TSSOP-16</text>
+<text x="6.604" y="4.318" size="1.27" layer="1" font="vector" ratio="24">SOIC-16</text>
 </plain>
 <libraries>
 <library name="boogie">

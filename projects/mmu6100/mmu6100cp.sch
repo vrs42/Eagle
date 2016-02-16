@@ -3502,6 +3502,7 @@ Based on the following sources:
 <part name="IC29" library="74xx-us" deviceset="74*00" device="N" technology="LS" value="74LS00N"/>
 <part name="V20" library="supply2" deviceset="GND" device=""/>
 <part name="V21" library="supply2" deviceset="GND" device=""/>
+<part name="V22" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3513,7 +3514,7 @@ Based on the following sources:
 <text x="274.32" y="142.24" size="1.778" layer="91">JMP &amp; JMS Detection</text>
 <text x="292.1" y="195.58" size="1.778" layer="91">CP Transition</text>
 <text x="187.96" y="12.7" size="1.778" layer="91">MMU State</text>
-<text x="408.94" y="167.64" size="1.778" layer="91">Unused Gates</text>
+<text x="408.94" y="144.78" size="1.778" layer="91">Unused Gates</text>
 <text x="271.78" y="101.6" size="1.778" layer="91">User Mode Halt Recovery</text>
 <text x="279.4" y="78.74" size="1.778" layer="91">UIF Interrupt</text>
 <text x="5.08" y="274.32" size="1.778" layer="91">BIGBUG: DMAGNT should inhibit IF-&gt;EMA xfer</text>
@@ -3602,6 +3603,8 @@ Based on the following sources:
 <instance part="IC25" gate="B" x="134.62" y="139.7"/>
 <instance part="IC25" gate="C" x="416.56" y="210.82"/>
 <instance part="IC25" gate="D" x="284.48" y="241.3"/>
+<instance part="IC23" gate="B" x="416.56" y="162.56"/>
+<instance part="V22" gate="GND" x="401.32" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -3690,6 +3693,27 @@ Based on the following sources:
 <segment>
 <pinref part="RN2" gate="A" pin="1"/>
 <pinref part="V11" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC23" gate="B" pin="A1"/>
+<wire x1="403.86" y1="167.64" x2="401.32" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="167.64" x2="401.32" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="IC23" gate="B" pin="G"/>
+<wire x1="401.32" y1="165.1" x2="401.32" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="162.56" x2="401.32" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="160.02" x2="401.32" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="154.94" x2="403.86" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="IC23" gate="B" pin="A4"/>
+<wire x1="403.86" y1="160.02" x2="401.32" y2="160.02" width="0.1524" layer="91"/>
+<junction x="401.32" y="160.02"/>
+<pinref part="IC23" gate="B" pin="A3"/>
+<wire x1="403.86" y1="162.56" x2="401.32" y2="162.56" width="0.1524" layer="91"/>
+<junction x="401.32" y="162.56"/>
+<pinref part="IC23" gate="B" pin="A2"/>
+<wire x1="403.86" y1="165.1" x2="401.32" y2="165.1" width="0.1524" layer="91"/>
+<junction x="401.32" y="165.1"/>
+<pinref part="V22" gate="GND" pin="GND"/>
+<junction x="401.32" y="154.94"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3798,6 +3822,22 @@ Based on the following sources:
 <pinref part="IC26" gate="B" pin="PRE"/>
 <pinref part="IC19" gate="D" pin="I1"/>
 <pinref part="IC19" gate="D" pin="I0"/>
+<pinref part="IC15" gate="D" pin="I1"/>
+<wire x1="403.86" y1="177.8" x2="401.32" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="177.8" x2="401.32" y2="182.88" width="0.1524" layer="91"/>
+<junction x="401.32" y="208.28"/>
+<pinref part="IC15" gate="C" pin="I0"/>
+<wire x1="401.32" y1="182.88" x2="401.32" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="193.04" x2="401.32" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="198.12" x2="401.32" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="198.12" x2="401.32" y2="198.12" width="0.1524" layer="91"/>
+<junction x="401.32" y="198.12"/>
+<pinref part="IC15" gate="C" pin="I1"/>
+<wire x1="403.86" y1="193.04" x2="401.32" y2="193.04" width="0.1524" layer="91"/>
+<junction x="401.32" y="193.04"/>
+<pinref part="IC15" gate="D" pin="I0"/>
+<wire x1="403.86" y1="182.88" x2="401.32" y2="182.88" width="0.1524" layer="91"/>
+<junction x="401.32" y="182.88"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="33.02" x2="187.96" y2="33.02" width="0.1524" layer="91"/>
@@ -6465,6 +6505,29 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,3,124.46,25.4,IC20,VSS,GND,,,"/>
+<approved hash="104,3,182.88,25.4,IC21,VSS,GND,,,"/>
+<approved hash="206,1,40.64,73.66,OSCOUT,,,,,"/>
+<approved hash="206,1,33.02,73.66,OSCOUT,,,,,"/>
+<approved hash="206,1,33.02,73.66,OSCOUT,,,,,"/>
+<approved hash="112,1,10.16,68.58,,,,,,"/>
+<approved hash="112,1,10.16,78.74,,,,,,"/>
+<approved hash="112,1,30.48,73.66,,,,,,"/>
+<approved hash="112,1,30.48,78.74,,,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME3,,,,,"/>
+<approved hash="113,3,43.18,205.545,SV1,,,,,"/>
+<approved hash="113,3,96.7994,224.887,PAD1,,,,,"/>
+<approved hash="113,3,96.7994,219.807,PAD2,,,,,"/>
+<approved hash="113,3,96.7994,214.727,PAD3,,,,,"/>
+<approved hash="113,3,96.7994,209.647,PAD4,,,,,"/>
+<approved hash="113,3,96.7994,204.567,PAD5,,,,,"/>
+<approved hash="113,3,96.7994,194.407,PAD6,,,,,"/>
+<approved hash="113,3,96.7994,199.487,PAD7,,,,,"/>
+<approved hash="113,3,71.12,137.088,SPARE1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

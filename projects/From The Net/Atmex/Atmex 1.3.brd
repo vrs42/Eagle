@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -73,10 +73,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="-0.122" y1="38.062" x2="0.132" y2="0.292" width="0" layer="20"/>
-<wire x1="0.132" y1="0.292" x2="74.798" y2="0.292" width="0" layer="20"/>
+<wire x1="0" y1="38.062" x2="0" y2="0.292" width="0" layer="20"/>
+<wire x1="0" y1="0.292" x2="74.798" y2="0.292" width="0" layer="20"/>
 <wire x1="74.798" y1="0.292" x2="74.798" y2="38.062" width="0" layer="20"/>
-<wire x1="74.798" y1="38.062" x2="-0.122" y2="38.062" width="0" layer="20"/>
+<wire x1="74.798" y1="38.062" x2="0" y2="38.062" width="0" layer="20"/>
 <text x="37.338" y="5.08" size="1.27" layer="25" font="vector" ratio="12">B1</text>
 <text x="37.338" y="7.62" size="1.27" layer="25" font="vector" ratio="12">B2</text>
 <text x="37.338" y="10.16" size="1.27" layer="25" font="vector" ratio="12">B3</text>
@@ -655,7 +655,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -677,7 +677,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="15mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="10mil"/>
@@ -705,9 +705,9 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
 <param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
-<param name="psTop" value="-1"/>
-<param name="psBottom" value="-1"/>
-<param name="psFirst" value="-1"/>
+<param name="psTop" value="1"/>
+<param name="psBottom" value="1"/>
+<param name="psFirst" value="0"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
@@ -725,7 +725,7 @@ design rules under a new name.</description>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="1"/>
+<param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
@@ -1319,6 +1319,17 @@ design rules under a new name.</description>
 <wire x1="13.308" y1="34.39" x2="14.732" y2="33.02" width="0.8128" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="4,1,dd3a862fc81ed4f9"/>
+<approved hash="4,1,b5e98711c9c08caa"/>
+<approved hash="4,1,4e8706f3c8cae59c"/>
+<approved hash="4,1,26b60629c8309a41"/>
+<approved hash="4,1,6ce0d326c8d7ff67"/>
+<approved hash="4,16,7218d7e4cc558098"/>
+<approved hash="4,16,689fd03ccbb9f5f5"/>
+<approved hash="4,16,0a69d768cb35e8af"/>
+<approved hash="4,16,1b32d010cbc1fb72"/>
+</errors>
 </board>
 </drawing>
 </eagle>

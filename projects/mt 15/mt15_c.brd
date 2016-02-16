@@ -23,14 +23,14 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -613,8 +613,8 @@ design rules under a new name.
 <element name="C2" library="SMD" package="0204" value="100n" x="46.99" y="52.07" smashed="yes" rot="R270">
 <attribute name="VALUE" x="48.006" y="54.356" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C3" library="SMD" package="0204" value="100n" x="25.4" y="38.1" smashed="yes">
-<attribute name="VALUE" x="23.114" y="39.116" size="1.27" layer="27" ratio="10"/>
+<element name="C3" library="SMD" package="0204" value="100n" x="25.4" y="38.735" smashed="yes">
+<attribute name="VALUE" x="23.114" y="39.751" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="C4" library="SMD" package="0204" value="100n" x="41.91" y="34.29" smashed="yes">
 <attribute name="VALUE" x="39.624" y="35.306" size="1.27" layer="27" ratio="10"/>
@@ -806,7 +806,7 @@ design rules under a new name.
 <wire x1="10.16" y1="5.08" x2="12.7" y2="5.08" width="1.27" layer="16"/>
 <wire x1="46.99" y1="54.61" x2="46.99" y2="53.721" width="0.6096" layer="1"/>
 <wire x1="47.625" y1="55.245" x2="46.99" y2="54.61" width="0.6096" layer="1"/>
-<wire x1="23.749" y1="37.846" x2="23.749" y2="38.1" width="0.6096" layer="1"/>
+<wire x1="23.749" y1="37.846" x2="23.749" y2="38.735" width="0.6096" layer="1"/>
 <wire x1="24.765" y1="36.83" x2="23.749" y2="37.846" width="0.6096" layer="1"/>
 <wire x1="24.511" y1="36.576" x2="23.495" y2="36.576" width="0.6096" layer="1"/>
 <wire x1="24.765" y1="36.83" x2="24.511" y2="36.576" width="0.6096" layer="1"/>
@@ -1039,10 +1039,12 @@ design rules under a new name.
 <wire x1="45.72" y1="3.81" x2="45.72" y2="5.08" width="1.27" layer="16"/>
 <wire x1="45.72" y1="3.81" x2="57.15" y2="3.81" width="0.4064" layer="1"/>
 <wire x1="57.15" y1="3.81" x2="59.69" y2="6.35" width="0.4064" layer="1"/>
-<wire x1="58.166" y1="16.764" x2="57.4548" y2="16.764" width="0.4064" layer="1"/>
-<wire x1="58.42" y1="16.51" x2="58.166" y2="16.764" width="0.4064" layer="1"/>
-<wire x1="59.69" y1="15.24" x2="58.42" y2="16.51" width="0.4064" layer="1"/>
+<wire x1="58.801" y1="16.129" x2="58.42" y2="16.51" width="0.4064" layer="1"/>
+<wire x1="58.42" y1="16.51" x2="57.4548" y2="16.764" width="0.4064" layer="1"/>
+<wire x1="59.055" y1="15.875" x2="58.801" y2="16.129" width="0.4064" layer="1"/>
+<wire x1="59.69" y1="15.24" x2="59.055" y2="15.875" width="0.4064" layer="1"/>
 <wire x1="59.69" y1="6.35" x2="59.69" y2="15.24" width="0.4064" layer="1"/>
+<wire x1="59.055" y1="15.875" x2="58.42" y2="16.51" width="0.4064" layer="16"/>
 <wire x1="58.42" y1="16.51" x2="58.42" y2="23.495" width="0.4064" layer="16"/>
 <wire x1="58.42" y1="23.495" x2="59.69" y2="23.495" width="0.4064" layer="1"/>
 <wire x1="59.69" y1="23.495" x2="62.23" y2="26.035" width="0.4064" layer="1"/>
@@ -1055,7 +1057,7 @@ design rules under a new name.
 <wire x1="58.42" y1="39.37" x2="58.42" y2="34.925" width="0.4064" layer="16"/>
 <wire x1="60.96" y1="39.37" x2="60.96" y2="39.624" width="0.4064" layer="1"/>
 <via x="45.72" y="3.81" extent="1-16" drill="0.6096" diameter="1.016"/>
-<via x="58.42" y="16.51" extent="1-16" drill="0.6096" diameter="1.016"/>
+<via x="59.055" y="15.875" extent="1-16" drill="0.6096" diameter="1.016"/>
 <via x="58.42" y="23.495" extent="1-16" drill="0.6096" diameter="1.016"/>
 <via x="59.055" y="34.29" extent="1-16" drill="0.6096" diameter="1.016"/>
 <via x="58.42" y="39.37" extent="1-16" drill="0.6096" diameter="1.016"/>
@@ -2002,7 +2004,7 @@ design rules under a new name.
 <wire x1="17.78" y1="10.795" x2="17.78" y2="5.08" width="0.8128" layer="16"/>
 <wire x1="20.32" y1="48.895" x2="20.32" y2="49.149" width="0.6096" layer="1"/>
 <wire x1="46.99" y1="48.895" x2="46.99" y2="50.419" width="0.6096" layer="1"/>
-<wire x1="27.051" y1="36.576" x2="27.051" y2="38.1" width="0.6096" layer="1"/>
+<wire x1="27.051" y1="36.576" x2="27.051" y2="38.735" width="0.6096" layer="1"/>
 <wire x1="25.4" y1="34.925" x2="27.051" y2="36.576" width="0.6096" layer="1"/>
 <wire x1="24.13" y1="33.655" x2="25.4" y2="34.925" width="0.6096" layer="16"/>
 <wire x1="24.13" y1="31.115" x2="24.13" y2="33.655" width="0.6096" layer="16"/>
@@ -2128,12 +2130,76 @@ design rules under a new name.
 </polygon>
 <polygon width="0.3048" layer="16" isolate="0.3556">
 <vertex x="0.635" y="55.88"/>
-<vertex x="0.635" y="45.72"/>
 <vertex x="0.635" y="46.355"/>
 <vertex x="10.16" y="55.88"/>
 </polygon>
 </signal>
 </signals>
+<errors>
+<approved hash="19,1,3d45116a4b465f5e"/>
+<approved hash="19,1,18b3489413567b46"/>
+<approved hash="19,1,affa9b65e17cbf59"/>
+<approved hash="19,1,c0525de5c1c6b342"/>
+<approved hash="19,1,4dfe95a1c0056227"/>
+<approved hash="19,1,3fca660f24ba2078"/>
+<approved hash="19,1,e4127fcff3e26436"/>
+<approved hash="19,1,3b979f383a8fc4f7"/>
+<approved hash="19,1,00502598efbcdd3f"/>
+<approved hash="19,1,0014265eec02dd21"/>
+<approved hash="19,1,001cc7dc998f96c6"/>
+<approved hash="19,1,c7c44e01dab4ba76"/>
+<approved hash="19,1,f2110e247867e95b"/>
+<approved hash="19,1,f2550de27bd9e945"/>
+<approved hash="19,1,f9c62e02d2b6c274"/>
+<approved hash="19,1,4be7b62751cd1c59"/>
+<approved hash="19,1,a8775290b14001fc"/>
+<approved hash="19,1,2253dde449c71f43"/>
+<approved hash="19,1,2217de224a791f5d"/>
+<approved hash="19,1,6fad7d2e7f36295b"/>
+<approved hash="19,1,ad10c2eff3f2a7fb"/>
+<approved hash="19,1,1b8d61a36ddfd7f4"/>
+<approved hash="19,1,8fa071867f58417b"/>
+<approved hash="19,1,21ce4e0b2aba3e70"/>
+<approved hash="19,1,201a4e2d2a743f5e"/>
+<approved hash="19,1,205e4deb29ca3f40"/>
+<approved hash="19,1,0c1cf51ea845a9c2"/>
+<approved hash="19,1,b0542de1d3c8ad4a"/>
+<approved hash="19,1,b0102e27d076ad54"/>
+<approved hash="19,1,b1c42e01d0b8ac7a"/>
+<approved hash="19,1,8e165620c478b15a"/>
+<approved hash="19,1,8fc25606c4b6b074"/>
+<approved hash="19,1,8e5255e6c7c6b144"/>
+<approved hash="19,1,37468e5c4ab25bda"/>
+<approved hash="19,1,f44a165444737bc1"/>
+<approved hash="19,1,c6516de4a9c51b47"/>
+<approved hash="19,1,c6156e22aa7b1b59"/>
+<approved hash="19,1,33c24e00c8b3c870"/>
+<approved hash="19,1,a7635ffdf5e7035e"/>
+<approved hash="19,1,e8138e27b2051327"/>
+<approved hash="19,1,e8578de1b1bb1339"/>
+<approved hash="19,1,d41b0f58a30354c6"/>
+<approved hash="19,1,e4b7a88fa3cde5d5"/>
+<approved hash="19,1,a3c43e01fab4be76"/>
+<approved hash="19,1,d70dd271db1bd447"/>
+<approved hash="19,1,3e21153e291de0c5"/>
+<approved hash="19,1,28105620c479d55a"/>
+<approved hash="19,1,285455e6c7c7d544"/>
+<approved hash="19,1,81c64e02dab6be74"/>
+<approved hash="19,1,aa15ce23e878b958"/>
+<approved hash="19,1,aa51cde5ebc6b946"/>
+<approved hash="19,1,58a6b550105d0574"/>
+<approved hash="19,1,f65469e0573f0bbd"/>
+<approved hash="19,1,21de5e18c2b3d268"/>
+<approved hash="19,1,8a586de0d9c8b748"/>
+<approved hash="19,1,8a1c6e26da76b756"/>
+<approved hash="19,1,e81f089a92395e3a"/>
+<approved hash="19,1,58e0ee7bf9bb5adb"/>
+<approved hash="19,1,a1c5c601ecb0bc72"/>
+<approved hash="19,1,c8556de649c53745"/>
+<approved hash="19,1,b3ca6e0ed8b6a874"/>
+<approved hash="19,1,8857bde563c72547"/>
+<approved hash="19,1,0379b0421e134b8e"/>
+</errors>
 </board>
 </drawing>
 </eagle>
