@@ -74,8 +74,8 @@
 <wire x1="21.933" y1="0.005" x2="21.933" y2="35.555" width="0" layer="20"/>
 <wire x1="21.933" y1="35.555" x2="0.038" y2="35.555" width="0" layer="20"/>
 <wire x1="0.038" y1="35.555" x2="0.038" y2="0.005" width="0" layer="20"/>
-<text x="8.89" y="9.906" size="1.27" layer="16" font="vector" rot="MR270">nwelte@</text>
-<text x="13.843" y="8.89" size="1.27" layer="16" font="vector" rot="MR270">web.de</text>
+<text x="8.89" y="9.906" size="1.27" layer="16" font="vector" ratio="28" rot="MR270">nwelte@</text>
+<text x="13.843" y="8.89" size="1.27" layer="16" font="vector" ratio="28" rot="MR270">web.de</text>
 <text x="8.001" y="2.921" size="1.016" layer="25" font="vector" rot="R90">people.freenet.de/x1541</text>
 <text x="9.779" y="2.921" size="1.016" layer="25" font="vector" rot="R90">nwelte@web.de</text>
 <text x="11.684" y="2.921" size="1.016" layer="25" font="vector" rot="R90">N. Welte 2002</text>
@@ -216,7 +216,7 @@ MELF 0.10 W</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -238,7 +238,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="10mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="10mil"/>
@@ -266,9 +266,9 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
 <param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
-<param name="psTop" value="-1"/>
-<param name="psBottom" value="-1"/>
-<param name="psFirst" value="-1"/>
+<param name="psTop" value="1"/>
+<param name="psBottom" value="1"/>
+<param name="psFirst" value="0"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>

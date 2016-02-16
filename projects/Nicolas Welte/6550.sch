@@ -838,7 +838,7 @@ Based on the following sources:
 <parts>
 <part name="CN1" library="65XXX" deviceset="MOS6550" device=""/>
 <part name="CN2" library="65XXX" deviceset="MOS6550" device=""/>
-<part name="IC1" library="memory-hitachi" deviceset="62256P" device=""/>
+<part name="IC1" library="memory-hitachi" deviceset="62256P" device="" value="62256P"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="VSS1" library="supply1" deviceset="VSS" device=""/>
 <part name="IC2" library="74xx-us" deviceset="74*00" device="D" technology="LS"/>
@@ -859,7 +859,7 @@ Based on the following sources:
 <instance part="VSS1" gate="G$1" x="55.88" y="71.12" rot="R270"/>
 <instance part="IC2" gate="A" x="180.34" y="119.38"/>
 <instance part="IC2" gate="B" x="180.34" y="104.14"/>
-<instance part="IC2" gate="C" x="81.28" y="48.26"/>
+<instance part="IC2" gate="C" x="88.9" y="48.26"/>
 <instance part="IC2" gate="D" x="60.96" y="45.72"/>
 <instance part="GND1" gate="1" x="66.04" y="63.5"/>
 <instance part="SJ1" gate="G$1" x="50.8" y="86.36" rot="R180"/>
@@ -1152,16 +1152,15 @@ Based on the following sources:
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="73.66" y1="45.72" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="D" pin="O"/>
 <pinref part="IC2" gate="C" pin="I1"/>
+<wire x1="76.2" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<wire x1="38.1" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="58.42" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="58.42" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="CN2" gate="G$1" pin="PHI2"/>
 <pinref part="IC2" gate="C" pin="I0"/>
 </segment>
@@ -1169,8 +1168,8 @@ Based on the following sources:
 <net name="N$4" class="0">
 <segment>
 <wire x1="68.58" y1="73.66" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="48.26" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="48.26" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="60.96" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="81.28" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
@@ -1190,6 +1189,11 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,66.04,66.04,GND,VSS,,,,"/>
+<approved hash="113,1,51.7369,86.36,SJ1,,,,,"/>
+<approved hash="113,1,104.036,74.826,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
