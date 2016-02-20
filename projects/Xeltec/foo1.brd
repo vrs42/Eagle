@@ -1106,8 +1106,8 @@ design rules under a new name.</description>
 <element name="R14" library="rcl" package="0207/10" value="" x="-73.66" y="50.8" rot="R90"/>
 <element name="R15" library="rcl" package="0207/10" value="" x="-71.12" y="50.8" rot="R90"/>
 <element name="R16" library="rcl" package="0207/10" value="100" x="-68.58" y="50.8" rot="R90"/>
-<element name="R17" library="rcl" package="0207/10" value="" x="-86.36" y="66.04"/>
-<element name="R18" library="rcl" package="0207/10" value="" x="-105.41" y="76.2" rot="R270"/>
+<element name="R17" library="rcl" package="0207/10" value="100" x="-86.36" y="66.04"/>
+<element name="R18" library="rcl" package="0207/10" value="100" x="-105.41" y="76.2" rot="R270"/>
 <element name="R19" library="rcl" package="P0613/15" value="2.2" x="-15.24" y="68.58" rot="R90"/>
 <element name="R20" library="rcl" package="0207/10" value="33" x="-17.78" y="86.36" rot="R270"/>
 <element name="C1" library="rcl" package="E5-10,5" value="1uf" x="-7.62" y="88.9" rot="R90"/>

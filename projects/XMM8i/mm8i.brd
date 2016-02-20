@@ -1026,14 +1026,12 @@ design rules under a new name.</description>
 <signal name="!PWR_CLR">
 <contactref element="AB02" pad="AS2"/>
 <contactref element="B08" pad="A1"/>
-<contactref element="B08" pad="K2"/>
 <wire x1="304.8" y1="167.005" x2="309.245" y2="167.005" width="0.381" layer="1"/>
 <wire x1="304.8" y1="196.215" x2="304.8" y2="167.005" width="0.381" layer="1"/>
 <wire x1="309.88" y1="196.215" x2="304.8" y2="196.215" width="0.381" layer="16"/>
 <wire x1="311.15" y1="194.945" x2="309.88" y2="196.215" width="0.381" layer="16"/>
 <wire x1="313.055" y1="194.945" x2="311.15" y2="194.945" width="0.381" layer="16"/>
 <wire x1="313.055" y1="194.945" x2="315.595" y2="192.405" width="0.381" layer="1"/>
-<wire x1="309.245" y1="167.005" x2="309.5625" y2="166.6875" width="0.381" layer="1"/>
 <wire x1="315.595" y1="192.405" x2="315.9125" y2="192.0875" width="0.381" layer="1"/>
 <wire x1="385.445" y1="212.725" x2="385.445" y2="217.17" width="0.381" layer="16"/>
 <wire x1="339.09" y1="212.725" x2="385.445" y2="212.725" width="0.381" layer="16"/>
@@ -1042,6 +1040,8 @@ design rules under a new name.</description>
 <wire x1="385.445" y1="217.17" x2="385.7625" y2="217.4875" width="0.381" layer="16"/>
 <via x="304.8" y="196.215" extent="1-16" drill="0.6096"/>
 <via x="313.055" y="194.945" extent="1-16" drill="0.6096"/>
+<contactref element="B08" pad="K2"/>
+<wire x1="309.245" y1="167.005" x2="309.5625" y2="166.6875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!PWR_OK">
 <contactref element="AB02" pad="AJ2"/>
@@ -1206,7 +1206,6 @@ design rules under a new name.</description>
 <contactref element="B07" pad="U1"/>
 <contactref element="B08" pad="D1"/>
 <contactref element="B07" pad="J2"/>
-<contactref element="B08" pad="F2"/>
 <contactref element="B07" pad="E2"/>
 <contactref element="B07" pad="H1"/>
 <wire x1="330.2" y1="142.875" x2="328.93" y2="141.605" width="0.381" layer="1"/>
@@ -1217,7 +1216,6 @@ design rules under a new name.</description>
 <wire x1="307.975" y1="177.8" x2="306.705" y2="176.53" width="0.381" layer="1"/>
 <wire x1="307.975" y1="182.88" x2="307.975" y2="177.8" width="0.381" layer="1"/>
 <wire x1="312.42" y1="182.88" x2="307.975" y2="182.88" width="0.381" layer="16"/>
-<wire x1="306.705" y1="176.53" x2="306.3875" y2="176.2125" width="0.381" layer="1"/>
 <wire x1="312.7375" y1="182.5625" x2="312.42" y2="182.88" width="0.381" layer="16"/>
 <wire x1="320.675" y1="171.45" x2="319.405" y2="170.18" width="0.381" layer="1"/>
 <wire x1="320.675" y1="177.8" x2="320.675" y2="171.45" width="0.381" layer="1"/>
@@ -1239,6 +1237,8 @@ design rules under a new name.</description>
 <wire x1="323.85" y1="180.975" x2="323.85" y2="173.355" width="0.381" layer="1"/>
 <wire x1="328.295" y1="173.355" x2="328.6125" y2="173.0375" width="0.381" layer="1"/>
 <via x="307.975" y="182.88" extent="1-16" drill="0.6096"/>
+<contactref element="B08" pad="F2"/>
+<wire x1="306.705" y1="176.53" x2="306.3875" y2="176.2125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MEM_ENABLE">
 <contactref element="B08" pad="E1"/>

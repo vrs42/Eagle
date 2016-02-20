@@ -14510,11 +14510,11 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R11" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0922/22" value="2.2 5W"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="33"/>
@@ -15957,6 +15957,66 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,-25.4,7.62,ST1_I/OCHK\\,P,,,,"/>
+<approved hash="101,1,-25.4,35.56,ST1_A19,P,,,,"/>
+<approved hash="101,1,-25.4,38.1,ST1_A18,P,,,,"/>
+<approved hash="101,1,-25.4,40.64,ST1_A17,P,,,,"/>
+<approved hash="101,1,-25.4,43.18,ST1_A16,P,,,,"/>
+<approved hash="101,1,-25.4,45.72,ST1_A15,P,,,,"/>
+<approved hash="101,1,-25.4,48.26,ST1_A14,P,,,,"/>
+<approved hash="101,1,-25.4,50.8,ST1_A13,P,,,,"/>
+<approved hash="101,1,-25.4,53.34,ST1_A12,P,,,,"/>
+<approved hash="101,1,-25.4,55.88,ST1_A11,P,,,,"/>
+<approved hash="101,1,-25.4,58.42,ST1_A10,P,,,,"/>
+<approved hash="101,1,-60.96,12.7,ST1_+5V@2,P,,,,"/>
+<approved hash="101,1,-60.96,15.24,ST1_IRQ9,P,,,,"/>
+<approved hash="101,1,-60.96,17.78,ST1_-5V,P,,,,"/>
+<approved hash="101,1,-60.96,20.32,ST1_DRQ2,P,,,,"/>
+<approved hash="101,1,-60.96,25.4,ST1_CARDS,P,,,,"/>
+<approved hash="101,1,-60.96,33.02,ST1_MEMW\\,P,,,,"/>
+<approved hash="101,1,-60.96,35.56,ST1_MEMR\\,P,,,,"/>
+<approved hash="101,1,-60.96,43.18,ST1_DACK3\\,P,,,,"/>
+<approved hash="101,1,-60.96,45.72,ST1_DRQ3,P,,,,"/>
+<approved hash="101,1,-60.96,48.26,ST1_DACK1\\,P,,,,"/>
+<approved hash="101,1,-60.96,50.8,ST1_DRQ1,P,,,,"/>
+<approved hash="101,1,-60.96,53.34,ST1_REFRS,P,,,,"/>
+<approved hash="101,1,-60.96,58.42,ST1_IRQ7,P,,,,"/>
+<approved hash="101,1,-60.96,60.96,ST1_IRQ6,P,,,,"/>
+<approved hash="101,1,-60.96,63.5,ST1_IRQ5,P,,,,"/>
+<approved hash="101,1,-60.96,66.04,ST1_IRQ4,P,,,,"/>
+<approved hash="101,1,-60.96,68.58,ST1_IRQ3,P,,,,"/>
+<approved hash="101,1,-60.96,71.12,ST1_DACK2\\,P,,,,"/>
+<approved hash="101,1,-60.96,73.66,ST1_T/C,P,,,,"/>
+<approved hash="101,1,-60.96,76.2,ST1_ALE,P,,,,"/>
+<approved hash="101,1,-60.96,81.28,ST1_OSC,P,,,,"/>
+<approved hash="114,1,10.16,57.0865,IC1,B,A,,,"/>
+<approved hash="114,1,10.16,57.0865,IC1,B,CLR,,,"/>
+<approved hash="114,1,83.82,71.0565,IC8,B,I0,,,"/>
+<approved hash="114,1,83.82,71.0565,IC8,B,I1,,,"/>
+<approved hash="114,1,-12.7,-28.0035,IC3,D,I0,,,"/>
+<approved hash="114,1,-12.7,-28.0035,IC3,D,I1,,,"/>
+<approved hash="113,1,165.1,57.3081,X1,,,,,"/>
+<approved hash="113,1,-34.8087,7.62,ST1,,,,,"/>
+<approved hash="113,1,45.72,86.4912,ADDRESS,,,,,"/>
+<approved hash="113,1,127,82.2748,R19,,,,,"/>
+<approved hash="113,1,127,92.4348,R15,,,,,"/>
+<approved hash="113,1,127,89.8948,R16,,,,,"/>
+<approved hash="113,1,127,87.3548,R17,,,,,"/>
+<approved hash="113,1,127,84.8148,R18,,,,,"/>
+<approved hash="113,1,127,79.7348,R20,,,,,"/>
+<approved hash="113,1,127,94.9748,R14,,,,,"/>
+<approved hash="113,1,127,51.7948,R6,,,,,"/>
+<approved hash="113,1,127,49.2548,R7,,,,,"/>
+<approved hash="113,1,127,46.7148,R8,,,,,"/>
+<approved hash="113,1,127,44.1748,R9,,,,,"/>
+<approved hash="113,1,127,41.6348,R10,,,,,"/>
+<approved hash="113,1,127,39.0948,R11,,,,,"/>
+<approved hash="113,1,127,36.5548,R12,,,,,"/>
+<approved hash="113,1,160.062,88.7053,PIN22,,,,,"/>
+<approved hash="113,1,73.7023,110.295,PIN4,,,,,"/>
+<approved hash="113,1,101.642,110.295,PIN9,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14514,10 +14514,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R14" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R15" library="rcl" deviceset="R-US_" device="0207/10"/>
 <part name="R16" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
-<part name="R17" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R17" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
 <part name="V2" library="supply2" deviceset="GND" device=""/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
-<part name="R18" library="rcl" deviceset="R-US_" device="0207/10"/>
+<part name="R18" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="R19" library="rcl" deviceset="R-US_" device="0922/22" value="2.2 5W"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0207/10" value="33"/>
@@ -14648,12 +14648,15 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R14" gate="G$1" x="127" y="38.1"/>
 <instance part="R15" gate="G$1" x="127" y="35.56"/>
 <instance part="R16" gate="G$1" x="127" y="33.02"/>
-<instance part="R17" gate="G$1" x="76.2" y="22.86"/>
+<instance part="R17" gate="G$1" x="76.2" y="22.86" smashed="yes">
+<attribute name="NAME" x="72.39" y="26.8986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.39" y="24.638" size="1.778" layer="96"/>
+</instance>
 <instance part="V2" gate="GND" x="96.52" y="22.86"/>
 <instance part="V3" gate="G$1" x="93.98" y="27.94" rot="R90"/>
 <instance part="R18" gate="G$1" x="147.32" y="7.62" smashed="yes">
 <attribute name="NAME" x="143.51" y="4.0386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="143.51" y="4.318" size="1.778" layer="96"/>
+<attribute name="VALUE" x="143.51" y="1.778" size="1.778" layer="96"/>
 </instance>
 <instance part="V4" gate="GND" x="-2.54" y="50.8"/>
 <instance part="R19" gate="G$1" x="2.54" y="27.94"/>
@@ -15938,6 +15941,74 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,-25.4,7.62,ST2_I/OCHK\\,P,,,,"/>
+<approved hash="101,1,-25.4,35.56,ST2_A19,P,,,,"/>
+<approved hash="101,1,-25.4,38.1,ST2_A18,P,,,,"/>
+<approved hash="101,1,-25.4,40.64,ST2_A17,P,,,,"/>
+<approved hash="101,1,-25.4,43.18,ST2_A16,P,,,,"/>
+<approved hash="101,1,-25.4,45.72,ST2_A15,P,,,,"/>
+<approved hash="101,1,-25.4,48.26,ST2_A14,P,,,,"/>
+<approved hash="101,1,-25.4,50.8,ST2_A13,P,,,,"/>
+<approved hash="101,1,-25.4,53.34,ST2_A12,P,,,,"/>
+<approved hash="101,1,-25.4,55.88,ST2_A11,P,,,,"/>
+<approved hash="101,1,-25.4,58.42,ST2_A10,P,,,,"/>
+<approved hash="101,1,-60.96,12.7,ST2_+5V@2,P,,,,"/>
+<approved hash="101,1,-60.96,15.24,ST2_IRQ9,P,,,,"/>
+<approved hash="101,1,-60.96,17.78,ST2_-5V,P,,,,"/>
+<approved hash="101,1,-60.96,20.32,ST2_DRQ2,P,,,,"/>
+<approved hash="101,1,-60.96,25.4,ST2_CARDS,P,,,,"/>
+<approved hash="101,1,-60.96,33.02,ST2_MEMW\\,P,,,,"/>
+<approved hash="101,1,-60.96,35.56,ST2_MEMR\\,P,,,,"/>
+<approved hash="101,1,-60.96,43.18,ST2_DACK3\\,P,,,,"/>
+<approved hash="101,1,-60.96,45.72,ST2_DRQ3,P,,,,"/>
+<approved hash="101,1,-60.96,48.26,ST2_DACK1\\,P,,,,"/>
+<approved hash="101,1,-60.96,50.8,ST2_DRQ1,P,,,,"/>
+<approved hash="101,1,-60.96,53.34,ST2_REFRS,P,,,,"/>
+<approved hash="101,1,-60.96,58.42,ST2_IRQ7,P,,,,"/>
+<approved hash="101,1,-60.96,60.96,ST2_IRQ6,P,,,,"/>
+<approved hash="101,1,-60.96,63.5,ST2_IRQ5,P,,,,"/>
+<approved hash="101,1,-60.96,66.04,ST2_IRQ4,P,,,,"/>
+<approved hash="101,1,-60.96,68.58,ST2_IRQ3,P,,,,"/>
+<approved hash="101,1,-60.96,71.12,ST2_DACK2\\,P,,,,"/>
+<approved hash="101,1,-60.96,73.66,ST2_T/C,P,,,,"/>
+<approved hash="101,1,-60.96,76.2,ST2_ALE,P,,,,"/>
+<approved hash="101,1,-60.96,81.28,ST2_OSC,P,,,,"/>
+<approved hash="114,1,27.94,-15.3035,IC4,B,CLR,,,"/>
+<approved hash="114,1,27.94,-15.3035,IC4,B,D,,,"/>
+<approved hash="114,1,27.94,-15.3035,IC4,B,CLK,,,"/>
+<approved hash="114,1,27.94,-15.3035,IC4,B,PRE,,,"/>
+<approved hash="114,1,10.16,57.0865,IC5,B,A,,,"/>
+<approved hash="114,1,10.16,57.0865,IC5,B,CLR,,,"/>
+<approved hash="114,1,60.96,55.8165,IC7,A,I0,,,"/>
+<approved hash="114,1,60.96,55.8165,IC7,A,I1,,,"/>
+<approved hash="114,1,60.96,55.8165,IC7,B,I0,,,"/>
+<approved hash="114,1,60.96,55.8165,IC7,B,I1,,,"/>
+<approved hash="114,1,-60.96,-12.7635,IC8,C,I0,,,"/>
+<approved hash="114,1,-60.96,-12.7635,IC8,C,I1,,,"/>
+<approved hash="114,1,-60.96,-12.7635,IC8,D,I0,,,"/>
+<approved hash="114,1,-60.96,-12.7635,IC8,D,I1,,,"/>
+<approved hash="113,1,165.1,57.3081,X1,,,,,"/>
+<approved hash="113,1,-34.8087,7.62,ST2,,,,,"/>
+<approved hash="113,1,45.72,86.4912,JP1,,,,,"/>
+<approved hash="113,1,127,82.2748,R1,,,,,"/>
+<approved hash="113,1,127,92.4348,R2,,,,,"/>
+<approved hash="113,1,127,89.8948,R3,,,,,"/>
+<approved hash="113,1,127,87.3548,R4,,,,,"/>
+<approved hash="113,1,127,84.8148,R5,,,,,"/>
+<approved hash="113,1,127,79.7348,R6,,,,,"/>
+<approved hash="113,1,127,94.9748,R8,,,,,"/>
+<approved hash="113,1,127,51.7948,R9,,,,,"/>
+<approved hash="113,1,127,49.2548,R10,,,,,"/>
+<approved hash="113,1,127,46.7148,R11,,,,,"/>
+<approved hash="113,1,127,44.1748,R12,,,,,"/>
+<approved hash="113,1,127,41.6348,R13,,,,,"/>
+<approved hash="113,1,127,39.0948,R14,,,,,"/>
+<approved hash="113,1,127,36.5548,R15,,,,,"/>
+<approved hash="113,1,160.062,88.7053,PIN22,,,,,"/>
+<approved hash="113,1,101.642,110.295,SV2,,,,,"/>
+<approved hash="113,1,99.06,-15.1088,WAITSTATES,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
