@@ -18478,8 +18478,8 @@ Source: www.kingbright.com</description>
 <instance part="DMA0-3" gate="A" x="322.58" y="172.72"/>
 <instance part="V6" gate="GND" x="307.34" y="91.44"/>
 <instance part="IC18" gate="A" x="289.56" y="165.1"/>
-<instance part="IC18" gate="B" x="289.56" y="228.6"/>
-<instance part="IC18" gate="C" x="289.56" y="129.54"/>
+<instance part="IC18" gate="B" x="287.02" y="228.6"/>
+<instance part="IC18" gate="C" x="287.02" y="129.54"/>
 <instance part="DAR4-7" gate="A" x="322.58" y="106.68"/>
 <instance part="DAR8-11" gate="A" x="322.58" y="139.7"/>
 <instance part="IC24" gate="A" x="358.14" y="243.84"/>
@@ -18739,7 +18739,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$22" class="0">
 <segment>
-<wire x1="302.26" y1="228.6" x2="304.8" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="228.6" x2="304.8" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="228.6" x2="309.88" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="228.6" x2="304.8" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="195.58" x2="304.8" y2="162.56" width="0.1524" layer="91"/>
@@ -19038,11 +19038,11 @@ Source: www.kingbright.com</description>
 </net>
 <net name="!601" class="0">
 <segment>
-<wire x1="271.78" y1="228.6" x2="281.94" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="231.14" x2="281.94" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="228.6" x2="276.86" y2="226.06" width="0.1524" layer="91"/>
-<junction x="281.94" y="228.6"/>
-<label x="271.78" y="228.6" size="1.778" layer="95"/>
+<wire x1="264.16" y1="228.6" x2="274.32" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="231.14" x2="274.32" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="228.6" x2="274.32" y2="226.06" width="0.1524" layer="91"/>
+<junction x="274.32" y="228.6"/>
+<label x="264.16" y="228.6" size="1.778" layer="95"/>
 <pinref part="IC18" gate="B" pin="I0"/>
 <pinref part="IC18" gate="B" pin="I1"/>
 </segment>
@@ -19485,7 +19485,7 @@ Source: www.kingbright.com</description>
 <net name="N$12" class="0">
 <segment>
 <wire x1="309.88" y1="129.54" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="129.54" x2="302.26" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="129.54" x2="299.72" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="96.52" x2="304.8" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="96.52" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
 <junction x="304.8" y="129.54"/>
@@ -19496,11 +19496,11 @@ Source: www.kingbright.com</description>
 </net>
 <net name="!DCXA" class="0">
 <segment>
-<wire x1="276.86" y1="132.08" x2="281.94" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="129.54" x2="276.86" y2="127" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="129.54" x2="281.94" y2="129.54" width="0.1524" layer="91"/>
-<junction x="281.94" y="129.54"/>
-<label x="271.78" y="129.54" size="1.778" layer="95"/>
+<wire x1="274.32" y1="132.08" x2="274.32" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="129.54" x2="274.32" y2="127" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="129.54" x2="274.32" y2="129.54" width="0.1524" layer="91"/>
+<junction x="274.32" y="129.54"/>
+<label x="264.16" y="129.54" size="1.778" layer="95"/>
 <pinref part="IC18" gate="C" pin="I0"/>
 <pinref part="IC18" gate="C" pin="I1"/>
 </segment>
@@ -24688,6 +24688,77 @@ Source: www.kingbright.com</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,340.36,208.216,IC22,D,I,,,"/>
+<approved hash="114,1,243.84,133.287,IC6,B,G,,,"/>
+<approved hash="114,1,243.84,133.287,IC6,B,A,,,"/>
+<approved hash="114,1,243.84,133.287,IC6,B,B,,,"/>
+<approved hash="114,1,193.04,95.1865,IC20,A,G,,,"/>
+<approved hash="114,1,193.04,95.1865,IC20,A,A1,,,"/>
+<approved hash="114,1,193.04,95.1865,IC20,A,A2,,,"/>
+<approved hash="114,1,193.04,95.1865,IC20,A,A3,,,"/>
+<approved hash="114,1,193.04,95.1865,IC20,A,A4,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,G,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,A1,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,A2,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,A3,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,A4,,,"/>
+<approved hash="104,2,45.72,96.52,IC8,V+,VCC,,,"/>
+<approved hash="114,2,106.68,55.8165,IC19,B,I,,,"/>
+<approved hash="114,2,106.68,55.8165,IC19,D,I,,,"/>
+<approved hash="114,2,106.68,55.8165,IC19,F,I,,,"/>
+<approved hash="114,2,35.56,223.457,IC23,B,CLR,,,"/>
+<approved hash="114,2,35.56,223.457,IC23,B,D,,,"/>
+<approved hash="114,2,35.56,223.457,IC23,B,CLK,,,"/>
+<approved hash="114,2,35.56,223.457,IC23,B,PRE,,,"/>
+<approved hash="114,2,167.64,251.397,IC55,D,I0,,,"/>
+<approved hash="114,2,167.64,251.397,IC55,D,I1,,,"/>
+<approved hash="114,3,200.66,115.507,IC34,B,G,,,"/>
+<approved hash="114,3,200.66,115.507,IC34,B,A1,,,"/>
+<approved hash="114,3,200.66,115.507,IC34,B,A2,,,"/>
+<approved hash="114,3,200.66,115.507,IC34,B,A3,,,"/>
+<approved hash="114,3,200.66,115.507,IC34,B,A4,,,"/>
+<approved hash="114,3,332.74,172.656,IC5,B,I0,,,"/>
+<approved hash="114,3,332.74,172.656,IC5,B,I1,,,"/>
+<approved hash="114,3,332.74,172.656,IC5,B,I2,,,"/>
+<approved hash="114,3,332.74,172.656,IC5,B,I3,,,"/>
+<approved hash="103,4,55.88,223.52,IC42,NC,DAR05,,,"/>
+<approved hash="104,4,55.88,195.58,IC42,VSS,GND,,,"/>
+<approved hash="104,4,55.88,205.74,IC42,VCC,MEMSUPPLY,,,"/>
+<approved hash="103,4,111.76,223.52,IC43,NC,DAR05,,,"/>
+<approved hash="104,4,111.76,195.58,IC43,VSS,GND,,,"/>
+<approved hash="104,4,111.76,205.74,IC43,VCC,MEMSUPPLY,,,"/>
+<approved hash="114,4,101.6,149.797,IC44,C,I0,,,"/>
+<approved hash="114,4,101.6,149.797,IC44,C,I1,,,"/>
+<approved hash="114,4,101.6,149.797,IC44,D,I0,,,"/>
+<approved hash="114,4,101.6,149.797,IC44,D,I1,,,"/>
+<approved hash="104,4,63.5,144.78,IC44P,VSS,GND,,,"/>
+<approved hash="104,4,63.5,160.02,IC44P,VDD,MEMSUPPLY,,,"/>
+<approved hash="103,4,233.68,223.52,IC39,NC,DAR05,,,"/>
+<approved hash="104,4,233.68,195.58,IC39,VSS,GND,,,"/>
+<approved hash="104,4,233.68,205.74,IC39,VCC,MEMSUPPLY,,,"/>
+<approved hash="103,4,289.56,223.52,IC45,NC,DAR05,,,"/>
+<approved hash="104,4,289.56,195.58,IC45,VSS,GND,,,"/>
+<approved hash="104,4,289.56,205.74,IC45,VCC,MEMSUPPLY,,,"/>
+<approved hash="114,4,279.4,149.797,IC46,C,I0,,,"/>
+<approved hash="114,4,279.4,149.797,IC46,C,I1,,,"/>
+<approved hash="114,4,279.4,149.797,IC46,D,I0,,,"/>
+<approved hash="114,4,279.4,149.797,IC46,D,I1,,,"/>
+<approved hash="104,4,241.3,144.78,IC46P,VSS,GND,,,"/>
+<approved hash="104,4,241.3,160.02,IC46P,VDD,MEMSUPPLY,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,15.24,230.945,C35L,,,,,"/>
+<approved hash="113,1,48.26,230.945,C36L,,,,,"/>
+<approved hash="113,1,81.28,230.945,D34L,,,,,"/>
+<approved hash="113,1,114.3,230.945,D35L,,,,,"/>
+<approved hash="113,1,147.32,230.945,D36L,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME3,,,,,"/>
+<approved hash="113,4,194.206,131.976,FRAME4,,,,,"/>
+<approved hash="113,4,79.4169,148.979,JP1,,,,,"/>
+<approved hash="113,4,257.217,148.979,JP2,,,,,"/>
+<approved hash="113,5,194.206,131.976,FRAME5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

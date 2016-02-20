@@ -74,8 +74,8 @@
 <wire x1="203.185" y1="0.165" x2="203.185" y2="139.535" width="0" layer="20"/>
 <wire x1="203.185" y1="139.535" x2="0.005" y2="139.535" width="0" layer="20"/>
 <wire x1="0.005" y1="139.535" x2="0.005" y2="0.165" width="0" layer="20"/>
-<text x="17.78" y="3.81" size="1.778" layer="16" rot="MR0">vrs</text>
-<text x="17.78" y="6.35" size="1.778" layer="16" rot="MR0">RF08</text>
+<text x="17.78" y="3.81" size="1.778" layer="16" ratio="24" rot="MR0">vrs</text>
+<text x="17.78" y="6.35" size="1.778" layer="16" ratio="24" rot="MR0">RF08</text>
 </plain>
 <libraries>
 <library name="74xx-us">

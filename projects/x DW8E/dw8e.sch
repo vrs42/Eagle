@@ -4606,6 +4606,18 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME3,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,4,194.206,131.976,FRAME4,,,,,"/>
+<approved hash="113,5,194.206,131.976,FRAME5,,,,,"/>
+<approved hash="113,6,194.206,131.976,FRAME6,,,,,"/>
+<approved hash="113,7,194.206,131.976,FRAME7,,,,,"/>
+<approved hash="113,8,194.206,131.976,FRAME10,,,,,"/>
+<approved hash="113,9,194.206,131.976,FRAME9,,,,,"/>
+<approved hash="113,10,194.206,131.976,FRAME8,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

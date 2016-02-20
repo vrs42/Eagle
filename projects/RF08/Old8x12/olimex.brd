@@ -98,10 +98,10 @@
 <text x="281.94" y="6.35" size="1.778" layer="27">RS08</text>
 <text x="281.94" y="3.81" size="1.778" layer="27">VRS</text>
 <text x="281.94" y="69.85" size="1.778" layer="27">VRS</text>
-<text x="311.15" y="124.46" size="1.778" layer="16" rot="MR0">VRS</text>
-<text x="311.15" y="59.69" size="1.778" layer="16" rot="MR0">VRS</text>
-<text x="317.5" y="33.02" size="1.778" layer="16" rot="MR270">RS08</text>
-<text x="317.5" y="99.06" size="1.778" layer="16" rot="MR270">RS08</text>
+<text x="311.15" y="124.46" size="1.778" layer="16" ratio="24" rot="MR0">VRS</text>
+<text x="311.15" y="59.69" size="1.778" layer="16" ratio="24" rot="MR0">VRS</text>
+<text x="317.5" y="33.02" size="1.778" layer="16" ratio="24" rot="MR270">RS08</text>
+<text x="317.5" y="99.06" size="1.778" layer="16" ratio="24" rot="MR270">RS08</text>
 </plain>
 <libraries>
 <library name="74xx-us">

@@ -4783,6 +4783,16 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,53.34,195.517,IC333,B,I0,,,"/>
+<approved hash="114,1,53.34,195.517,IC333,B,I1,,,"/>
+<approved hash="114,1,53.34,195.517,IC333,C,I0,,,"/>
+<approved hash="114,1,53.34,195.517,IC333,C,I1,,,"/>
+<approved hash="114,1,53.34,195.517,IC333,D,I0,,,"/>
+<approved hash="114,1,53.34,195.517,IC333,D,I1,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,20.2777,238.955,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

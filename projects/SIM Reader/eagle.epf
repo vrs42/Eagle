@@ -8,6 +8,7 @@ Desktop="Desktop"
 [Globals]
 AutoSaveProject=1
 UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/3M.lbr"
+UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/74xx-jameco-.lbr"
 UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/74xxN.lbr"
 UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/ForTim.lbr"
 UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/OverVoltage.lbr"
@@ -401,7 +402,6 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zilog.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/74xx-jameco-.lbr"
 
 [Win_1]
 Type="Schematic Editor"
@@ -499,7 +499,7 @@ Layer=16
 
 [Win_3]
 Type="Control Panel"
-Loc="656 387 1483 786"
+Loc="235 226 976 850"
 State=1
 Number=0
 

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2739,6 +2739,10 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="C20" gate="L1" pin="IN4"/>
 <pinref part="C20" gate="S1" pin="IN2"/>
 <pinref part="C20" gate="S1" pin="IN3"/>
+<wire x1="33.02" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="63.5" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<junction x="22.86" y="66.04"/>
+<label x="25.4" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="48.26" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
@@ -3303,6 +3307,44 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,41.91,183.65,D20,R2,IN,,,"/>
+<approved hash="114,1,41.91,183.65,D20,T2,IN,,,"/>
+<approved hash="114,1,41.91,183.65,D20,V2,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,K1,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,P1,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,S1,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,U1,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,F2,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,J2,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,L2,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,N2,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,R2,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,T2,IN,,,"/>
+<approved hash="114,1,130.81,107.45,D31,V2,IN,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,K2,IN1,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,K2,IN2,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,N1,IN1,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,N1,IN2,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,N2,IN1,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,N2,IN2,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,S1,IN1,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,S1,IN2,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,S2,IN1,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,S2,IN2,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,V2,IN1,,,"/>
+<approved hash="114,1,109.22,38.1339,C21,V2,IN2,,,"/>
+<approved hash="114,1,332.74,228.634,C31,S2,IN1,,,"/>
+<approved hash="114,1,332.74,228.634,C31,S2,IN2,,,"/>
+<approved hash="114,1,332.74,228.634,C31,V2,IN1,,,"/>
+<approved hash="114,1,332.74,228.634,C31,V2,IN2,,,"/>
+<approved hash="114,1,323.024,187.96,C30,J1,IN,,,"/>
+<approved hash="114,1,292.1,160.054,C2,S2,IN1,,,"/>
+<approved hash="114,1,292.1,160.054,C2,S2,IN2,,,"/>
+<approved hash="114,1,292.1,160.054,C2,V2,IN1,,,"/>
+<approved hash="114,1,292.1,160.054,C2,V2,IN2,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

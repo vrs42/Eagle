@@ -2533,6 +2533,23 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,106.68,148.59,B06,S1,S,,,"/>
+<approved hash="114,1,106.68,148.59,B06,S1,D,,,"/>
+<approved hash="114,1,106.68,148.59,B06,S1,C,,,"/>
+<approved hash="114,1,106.68,148.59,B06,V2,S,,,"/>
+<approved hash="114,1,106.68,148.59,B06,V2,D,,,"/>
+<approved hash="114,1,106.68,148.59,B06,V2,C,,,"/>
+<approved hash="114,1,106.68,148.59,B06,L1,D,,,"/>
+<approved hash="114,1,106.68,148.59,B06,L1,C,,,"/>
+<approved hash="114,1,106.68,148.59,B06,L1,S,,,"/>
+<approved hash="114,1,190.5,149.818,A04,N1,IN1,,,"/>
+<approved hash="114,1,190.5,149.818,A04,N1,IN2,,,"/>
+<approved hash="114,1,149.86,91.3977,A05,B1,IN,,,"/>
+<approved hash="114,1,149.86,91.3977,A05,D2,IN,,,"/>
+<approved hash="114,1,149.86,91.3977,A05,U1,IN,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

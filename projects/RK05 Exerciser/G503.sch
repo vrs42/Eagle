@@ -15252,10 +15252,12 @@ Based on the following sources:
 <net name="ADDR_COUNTER_32" class="0">
 <segment>
 <wire x1="337.82" y1="127" x2="365.76" y2="127" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="68.58" x2="320.04" y2="68.58" width="0.1524" layer="91"/>
 <label x="340.36" y="127" size="1.778" layer="95"/>
-<label x="292.1" y="68.58" size="1.778" layer="95"/>
 <pinref part="E9" gate="A" pin="QB"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="68.58" x2="320.04" y2="68.58" width="0.1524" layer="91"/>
+<label x="292.1" y="68.58" size="1.778" layer="95"/>
 <pinref part="E10" gate="B" pin="I0"/>
 </segment>
 </net>
@@ -15290,10 +15292,12 @@ Based on the following sources:
 <net name="ADDR_COUNTER_2" class="0">
 <segment>
 <wire x1="337.82" y1="162.56" x2="365.76" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="91.44" x2="320.04" y2="91.44" width="0.1524" layer="91"/>
 <label x="340.36" y="162.56" size="1.778" layer="95"/>
-<label x="292.1" y="91.44" size="1.778" layer="95"/>
 <pinref part="E13" gate="A" pin="QB"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="91.44" x2="320.04" y2="91.44" width="0.1524" layer="91"/>
+<label x="292.1" y="91.44" size="1.778" layer="95"/>
 <pinref part="E6" gate="A" pin="I0"/>
 </segment>
 </net>
@@ -15307,10 +15311,12 @@ Based on the following sources:
 <net name="ADDR_COUNTER_8" class="0">
 <segment>
 <wire x1="337.82" y1="157.48" x2="365.76" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="88.9" x2="320.04" y2="88.9" width="0.1524" layer="91"/>
 <label x="340.36" y="157.48" size="1.778" layer="95"/>
-<label x="292.1" y="88.9" size="1.778" layer="95"/>
 <pinref part="E13" gate="A" pin="QD"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="88.9" x2="320.04" y2="88.9" width="0.1524" layer="91"/>
+<label x="292.1" y="88.9" size="1.778" layer="95"/>
 <pinref part="E6" gate="A" pin="I1"/>
 </segment>
 </net>
@@ -15324,26 +15330,34 @@ Based on the following sources:
 <net name="ADDR_COUNTER_64" class="0">
 <segment>
 <wire x1="337.82" y1="124.46" x2="365.76" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="66.04" x2="320.04" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="83.82" x2="320.04" y2="83.82" width="0.1524" layer="91"/>
 <label x="340.36" y="124.46" size="1.778" layer="95"/>
-<label x="292.1" y="66.04" size="1.778" layer="95"/>
-<label x="292.1" y="83.82" size="1.778" layer="95"/>
 <pinref part="E9" gate="A" pin="QC"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="66.04" x2="320.04" y2="66.04" width="0.1524" layer="91"/>
+<label x="292.1" y="66.04" size="1.778" layer="95"/>
 <pinref part="E10" gate="B" pin="I1"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="83.82" x2="320.04" y2="83.82" width="0.1524" layer="91"/>
+<label x="292.1" y="83.82" size="1.778" layer="95"/>
 <pinref part="E6" gate="A" pin="I2"/>
 </segment>
 </net>
 <net name="ADDR_COUNTER_128" class="0">
 <segment>
 <wire x1="337.82" y1="121.92" x2="365.76" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="63.5" x2="320.04" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="81.28" x2="320.04" y2="81.28" width="0.1524" layer="91"/>
 <label x="340.36" y="121.92" size="1.778" layer="95"/>
-<label x="292.1" y="63.5" size="1.778" layer="95"/>
-<label x="292.1" y="81.28" size="1.778" layer="95"/>
 <pinref part="E9" gate="A" pin="QD"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="63.5" x2="320.04" y2="63.5" width="0.1524" layer="91"/>
+<label x="292.1" y="63.5" size="1.778" layer="95"/>
 <pinref part="E10" gate="B" pin="I2"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="81.28" x2="320.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="292.1" y="81.28" size="1.778" layer="95"/>
 <pinref part="E6" gate="A" pin="I3"/>
 </segment>
 </net>
@@ -16266,6 +16280,13 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,35.56,137.16,E2,V+,+15V,,,"/>
+<approved hash="104,1,35.56,121.92,E2,V-,-15V,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,1,8.509,86.36,AB03,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

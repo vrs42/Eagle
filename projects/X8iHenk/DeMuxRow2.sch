@@ -9794,6 +9794,23 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,1,73.66,216.975,C40,,,,,"/>
+<approved hash="113,1,218.44,216.975,D40,,,,,"/>
+<approved hash="113,1,121.92,216.975,E40,,,,,"/>
+<approved hash="113,1,170.18,216.975,F40,,,,,"/>
+<approved hash="113,1,358.333,101.6,X1,,,,,"/>
+<approved hash="113,1,272.059,62.3274,2.5V,,,,,"/>
+<approved hash="113,1,287.062,125.925,LIGHTSO,,,,,"/>
+<approved hash="113,1,27.8977,176.725,LIGHTSI,,,,,"/>
+<approved hash="113,1,297.222,59.8847,SWO,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,2,27.94,68.3853,SV4,,,,,"/>
+<approved hash="113,2,27.94,201.735,A40,,,,,"/>
+<approved hash="113,2,27.94,145.855,B40,,,,,"/>
+<approved hash="113,2,60.9177,240.225,SWI,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

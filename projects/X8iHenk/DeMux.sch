@@ -2783,6 +2783,18 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,2,281.94,81.2165,IC17,B,CLR,,,"/>
+<approved hash="114,2,281.94,81.2165,IC17,B,D,,,"/>
+<approved hash="114,2,281.94,81.2165,IC17,B,CLK,,,"/>
+<approved hash="114,2,281.94,81.2165,IC17,B,PRE,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,2,73.66,216.975,C40,,,,,"/>
+<approved hash="113,2,218.44,216.975,D40,,,,,"/>
+<approved hash="113,2,121.92,216.975,E40,,,,,"/>
+<approved hash="113,2,170.18,216.975,F40,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

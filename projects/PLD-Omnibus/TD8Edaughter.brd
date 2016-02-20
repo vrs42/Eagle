@@ -2909,7 +2909,7 @@ Based on the following sources:
 <class number="1" name="supply" width="0" drill="0">
 </class>
 </classes>
-<designrules name="pld">
+<designrules name="pld *">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -2926,9 +2926,9 @@ design rules under a new name.</description>
 <param name="mdPadPad" value="5mil"/>
 <param name="mdPadVia" value="10mil"/>
 <param name="mdViaVia" value="10mil"/>
-<param name="mdSmdPad" value="10mil"/>
-<param name="mdSmdVia" value="10mil"/>
-<param name="mdSmdSmd" value="10mil"/>
+<param name="mdSmdPad" value="5mil"/>
+<param name="mdSmdVia" value="5mil"/>
+<param name="mdSmdSmd" value="5mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="13mil"/>
@@ -5202,10 +5202,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="N-CPLD">
 <contactref element="E1" pad="74"/>
-<contactref element="IC2" pad="6"/>
 <contactref element="IC2" pad="7"/>
+<contactref element="IC2" pad="6"/>
 <contactref element="J4" pad="1"/>
-<wire x1="38.1" y1="82.55" x2="40.64" y2="80.01" width="0.3048" layer="1"/>
+<wire x1="38.1" y1="80.01" x2="40.64" y2="80.01" width="0.3048" layer="1"/>
 <wire x1="87.3125" y1="54.2925" x2="87.3125" y2="50.8" width="0.3048" layer="1"/>
 <wire x1="53.34" y1="54.2925" x2="87.3125" y2="54.2925" width="0.3048" layer="1"/>
 <wire x1="48.5775" y1="59.055" x2="53.34" y2="54.2925" width="0.3048" layer="1"/>
@@ -5214,7 +5214,7 @@ design rules under a new name.</description>
 <wire x1="39.37" y1="70.8025" x2="39.37" y2="78.105" width="0.3048" layer="16"/>
 <wire x1="39.37" y1="78.105" x2="38.1" y2="79.375" width="0.3048" layer="16"/>
 <wire x1="87.3125" y1="50.8" x2="87.185" y2="50.01" width="0.3048" layer="1"/>
-<wire x1="38.1" y1="79.375" x2="38.1" y2="82.55" width="0.3048" layer="16"/>
+<wire x1="38.1" y1="79.375" x2="38.1" y2="80.01" width="0.3048" layer="16"/>
 <via x="48.5775" y="61.595" extent="1-16" drill="0.508"/>
 </signal>
 <signal name="N-DRIVE">
@@ -5317,20 +5317,20 @@ design rules under a new name.</description>
 <via x="79.375" y="46.355" extent="1-16" drill="0.508"/>
 </signal>
 <signal name="D-CPLD">
-<contactref element="IC1" pad="6"/>
 <contactref element="IC1" pad="7"/>
+<contactref element="IC1" pad="6"/>
 <contactref element="J3" pad="1"/>
 <contactref element="E1" pad="70"/>
 <wire x1="39.0525" y1="90.17" x2="40.005" y2="89.2175" width="0.3048" layer="1"/>
 <wire x1="40.005" y1="89.2175" x2="40.64" y2="88.9" width="0.3048" layer="1"/>
-<wire x1="38.1" y1="92.71" x2="39.0525" y2="90.17" width="0.3048" layer="1"/>
+<wire x1="38.1" y1="90.17" x2="39.0525" y2="90.17" width="0.3048" layer="1"/>
 <wire x1="89.8525" y1="59.3725" x2="89.8525" y2="50.8" width="0.3048" layer="1"/>
 <wire x1="49.53" y1="59.3725" x2="89.8525" y2="59.3725" width="0.3048" layer="1"/>
 <wire x1="49.53" y1="59.3725" x2="36.83" y2="72.0725" width="0.3048" layer="16"/>
 <wire x1="36.83" y1="72.0725" x2="36.83" y2="88.265" width="0.3048" layer="16"/>
 <wire x1="36.83" y1="88.265" x2="38.1" y2="89.535" width="0.3048" layer="16"/>
 <wire x1="89.8525" y1="50.8" x2="89.785" y2="50.01" width="0.3048" layer="1"/>
-<wire x1="38.1" y1="89.535" x2="38.1" y2="92.71" width="0.3048" layer="16"/>
+<wire x1="38.1" y1="89.535" x2="38.1" y2="90.17" width="0.3048" layer="16"/>
 <via x="49.53" y="59.3725" extent="1-16" drill="0.508"/>
 </signal>
 <signal name="BB-CPLD">
@@ -5388,6 +5388,14 @@ design rules under a new name.</description>
 <wire x1="101.2825" y1="151.765" x2="101.6" y2="151.13" width="0.3048" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="19,1,1c6e8db51c8ae757"/>
+<approved hash="19,1,026eb85fa8117826"/>
+<approved hash="19,1,102e86024d37c4ed"/>
+<approved hash="19,1,166aaccce78e42de"/>
+<approved hash="19,1,17b1b3f087f1cb43"/>
+<approved hash="19,1,ae672d03999af20d"/>
+</errors>
 </board>
 </drawing>
 </eagle>

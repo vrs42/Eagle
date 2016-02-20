@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13297,62 +13297,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="D_R-PDSO-G8">
-<description>&lt;b&gt;D (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
-Source: http://focus.ti.com/lit/ds/slos063b/slos063b.pdf</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
-<smd name="2" x="-0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="7" x="-0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="1" x="-1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="3" x="0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="4" x="1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="8" x="-1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="6" x="0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="5" x="1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.2" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.2" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.2" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.2" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.2" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.2" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.2" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.2" layer="51"/>
-</package>
-<package name="PS_R-PDSO-G8">
-<description>&lt;b&gt;PS (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
-Source: www.ti.com sn75452b.pdf</description>
-<wire x1="3.15" y1="2.675" x2="3.15" y2="-2.675" width="0.2032" layer="21"/>
-<wire x1="3.15" y1="-2.675" x2="-3.125" y2="-2.675" width="0.2032" layer="51"/>
-<wire x1="-3.125" y1="-2.675" x2="-3.125" y2="2.675" width="0.2032" layer="21"/>
-<wire x1="-3.125" y1="2.675" x2="3.15" y2="2.675" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
-<smd name="7" x="-0.635" y="3.7" dx="0.6" dy="1.5" layer="1"/>
-<smd name="1" x="-1.905" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
-<smd name="3" x="0.635" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
-<smd name="4" x="1.905" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
-<smd name="8" x="-1.905" y="3.7" dx="0.6" dy="1.5" layer="1"/>
-<smd name="6" x="0.635" y="3.7" dx="0.6" dy="1.5" layer="1"/>
-<smd name="5" x="1.905" y="3.7" dx="0.6" dy="1.5" layer="1"/>
-<text x="-3.55" y="-2.925" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.737" y="-2.93" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-4.1" x2="-1.66" y2="-2.8" layer="51"/>
-<rectangle x1="-0.88" y1="-4.1" x2="-0.39" y2="-2.8" layer="51"/>
-<rectangle x1="0.39" y1="-4.1" x2="0.88" y2="-2.8" layer="51"/>
-<rectangle x1="1.66" y1="-4.1" x2="2.15" y2="-2.8" layer="51"/>
-<rectangle x1="1.66" y1="2.8" x2="2.15" y2="4.1" layer="51"/>
-<rectangle x1="0.39" y1="2.8" x2="0.88" y2="4.1" layer="51"/>
-<rectangle x1="-0.88" y1="2.8" x2="-0.39" y2="4.1" layer="51"/>
-<rectangle x1="-2.15" y1="2.8" x2="-1.66" y2="4.1" layer="51"/>
-<circle x="-2.205" y="-1.595" radius="0.388971875" width="0.2032" layer="21"/>
-</package>
 <package name="DIL16">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
@@ -13470,23 +13414,16 @@ Source: www.ti.com sn75452b.pdf</description>
 <pin name="37" x="-7.62" y="-22.86" visible="pad" length="middle" swaplevel="1"/>
 <pin name="39" x="-7.62" y="-25.4" visible="pad" length="middle" swaplevel="1"/>
 </symbol>
-<symbol name="NAND">
+<symbol name="7403">
+<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
 <text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
-</symbol>
-<symbol name="PWRN-1">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-6.35" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="oc" function="dot" rot="R180"/>
 </symbol>
 <symbol name="74160">
 <wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
@@ -13621,13 +13558,12 @@ Source: www.ti.com sn75452b.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS75452" prefix="E">
-<description>&lt;b&gt;NAND&lt;/b&gt; PERIPHERAL DRIVERS FOR HIGH-CURRENT SWITCHING AT VERY HIGH SPEEDS&lt;p&gt;
-Source: www.ti.com sn75452b.pdf</description>
+<deviceset name="DS75452" prefix="IC">
+<description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector output</description>
 <gates>
-<gate name="A" symbol="NAND" x="0" y="10.16"/>
-<gate name="B" symbol="NAND" x="0" y="-10.16"/>
-<gate name="P" symbol="PWRN-1" x="17.78" y="0"/>
+<gate name="A" symbol="7403" x="20.32" y="7.62" swaplevel="1"/>
+<gate name="B" symbol="7403" x="20.32" y="-10.16" swaplevel="1"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL08">
@@ -13635,53 +13571,8 @@ Source: www.ti.com sn75452b.pdf</description>
 <connect gate="A" pin="I0" pad="1"/>
 <connect gate="A" pin="I1" pad="2"/>
 <connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="P" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="JG" package="DIL08">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="P" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="D" package="D_R-PDSO-G8">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="P" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PS" package="PS_R-PDSO-G8">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
+<connect gate="B" pin="I0" pad="6"/>
+<connect gate="B" pin="I1" pad="7"/>
 <connect gate="B" pin="O" pad="5"/>
 <connect gate="P" pin="GND" pad="4"/>
 <connect gate="P" pin="VCC" pad="8"/>
@@ -18318,6 +18209,77 @@ Source: www.ti.com sn75452b.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,57.0526,114.579,IOT,,,,,"/>
+<approved hash="113,1,47.4768,129.54,70,,,,,"/>
+<approved hash="113,1,47.4768,127,71,,,,,"/>
+<approved hash="113,1,47.4768,124.46,72,,,,,"/>
+<approved hash="113,1,47.4768,121.92,73,,,,,"/>
+<approved hash="113,1,47.4768,119.38,74,,,,,"/>
+<approved hash="113,1,47.4768,116.84,75,,,,,"/>
+<approved hash="113,1,47.4768,111.76,77,,,,,"/>
+<approved hash="113,1,47.4768,114.3,76,,,,,"/>
+<approved hash="113,1,22.86,231.335,DRIVE,,,,,"/>
+<approved hash="113,1,261.341,27.94,PAD18,,,,,"/>
+<approved hash="113,1,261.341,25.4,PAD19,,,,,"/>
+<approved hash="113,1,261.341,22.86,PAD28,,,,,"/>
+<approved hash="113,1,261.341,20.32,PAD29,,,,,"/>
+<approved hash="113,1,261.341,17.78,PAD30,,,,,"/>
+<approved hash="113,1,261.341,15.24,PAD31,,,,,"/>
+<approved hash="113,1,261.341,12.7,PAD32,,,,,"/>
+<approved hash="113,1,261.341,10.16,PAD33,,,,,"/>
+<approved hash="113,1,277.139,27.94,PAD34,,,,,"/>
+<approved hash="113,1,277.139,25.4,PAD35,,,,,"/>
+<approved hash="113,1,277.139,22.86,PAD36,,,,,"/>
+<approved hash="113,1,277.139,20.32,PAD37,,,,,"/>
+<approved hash="113,1,277.139,17.78,PAD38,,,,,"/>
+<approved hash="113,1,277.139,15.24,PAD39,,,,,"/>
+<approved hash="113,1,277.139,12.7,PAD40,,,,,"/>
+<approved hash="113,1,277.139,10.16,PAD41,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,2,119.101,33.02,PAD10,,,,,"/>
+<approved hash="113,2,119.101,30.48,PAD11,,,,,"/>
+<approved hash="113,2,119.101,27.94,PAD12,,,,,"/>
+<approved hash="113,2,119.101,25.4,PAD13,,,,,"/>
+<approved hash="113,2,119.101,22.86,PAD14,,,,,"/>
+<approved hash="113,2,119.101,20.32,PAD15,,,,,"/>
+<approved hash="113,2,119.101,17.78,PAD16,,,,,"/>
+<approved hash="113,2,119.101,15.24,PAD17,,,,,"/>
+<approved hash="113,2,134.899,33.02,PAD20,,,,,"/>
+<approved hash="113,2,134.899,30.48,PAD21,,,,,"/>
+<approved hash="113,2,134.899,27.94,PAD22,,,,,"/>
+<approved hash="113,2,134.899,25.4,PAD23,,,,,"/>
+<approved hash="113,2,134.899,22.86,PAD24,,,,,"/>
+<approved hash="113,2,134.899,20.32,PAD25,,,,,"/>
+<approved hash="113,2,134.899,17.78,PAD26,,,,,"/>
+<approved hash="113,2,134.899,15.24,PAD27,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME3,,,,,"/>
+<approved hash="113,3,20.32,233.875,D34L1,,,,,"/>
+<approved hash="113,3,53.34,233.875,D35L1,,,,,"/>
+<approved hash="113,3,86.36,233.875,D36L1,,,,,"/>
+<approved hash="113,3,119.38,233.875,D34L2,,,,,"/>
+<approved hash="113,3,152.4,233.875,D35L2,,,,,"/>
+<approved hash="113,3,185.42,233.875,D36L2,,,,,"/>
+<approved hash="113,3,263.881,25.4,PAD42,,,,,"/>
+<approved hash="113,3,263.881,22.86,PAD43,,,,,"/>
+<approved hash="113,3,263.881,20.32,PAD44,,,,,"/>
+<approved hash="113,3,263.881,17.78,PAD45,,,,,"/>
+<approved hash="113,3,263.881,15.24,PAD46,,,,,"/>
+<approved hash="113,3,263.881,12.7,PAD47,,,,,"/>
+<approved hash="113,3,263.881,10.16,PAD48,,,,,"/>
+<approved hash="113,3,263.881,7.62,PAD49,,,,,"/>
+<approved hash="113,3,279.679,25.4,PAD50,,,,,"/>
+<approved hash="113,3,279.679,22.86,PAD51,,,,,"/>
+<approved hash="113,3,279.679,20.32,PAD52,,,,,"/>
+<approved hash="113,3,279.679,17.78,PAD53,,,,,"/>
+<approved hash="113,3,279.679,15.24,PAD54,,,,,"/>
+<approved hash="113,3,279.679,12.7,PAD55,,,,,"/>
+<approved hash="113,3,279.679,10.16,PAD56,,,,,"/>
+<approved hash="113,3,279.679,7.62,PAD57,,,,,"/>
+<approved hash="113,3,192.761,171.353,GND,,,,,"/>
+<approved hash="113,3,169.901,171.353,VCC,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

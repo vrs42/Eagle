@@ -2062,6 +2062,10 @@ Source: www.ti.com .. cd74hct191.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-15.24,61.032,SO1,,,,,"/>
+<approved hash="113,1,0.0423313,-5.27473,SV2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

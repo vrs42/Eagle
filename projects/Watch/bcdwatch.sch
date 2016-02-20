@@ -3025,12 +3025,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="PAD12" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD11" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD10" library="wirepad" deviceset="SMD2" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R3" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="R0805"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
 <part name="PAD15" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD16" library="wirepad" deviceset="SMD2" device=""/>
 <part name="S1" library="switch-omron" deviceset="D-TS" device=""/>
@@ -3088,15 +3088,27 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </instance>
 <instance part="R1" gate="G$1" x="55.88" y="99.06" smashed="yes">
 <attribute name="NAME" x="52.07" y="100.5586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.07" y="95.758" size="1.778" layer="96"/>
+<attribute name="VALUE" x="57.15" y="100.838" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="55.88" y="93.98"/>
-<instance part="R3" gate="G$1" x="55.88" y="88.9"/>
-<instance part="R4" gate="G$1" x="55.88" y="78.74"/>
-<instance part="R5" gate="G$1" x="55.88" y="73.66"/>
+<instance part="R2" gate="G$1" x="55.88" y="93.98" smashed="yes">
+<attribute name="NAME" x="52.07" y="95.4786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="57.15" y="95.758" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="55.88" y="88.9" smashed="yes">
+<attribute name="NAME" x="52.07" y="90.3986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="57.15" y="90.678" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="55.88" y="78.74" smashed="yes">
+<attribute name="NAME" x="52.07" y="80.2386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="57.15" y="80.518" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="55.88" y="73.66" smashed="yes">
+<attribute name="NAME" x="52.07" y="75.1586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="57.15" y="75.438" size="1.778" layer="96"/>
+</instance>
 <instance part="R6" gate="G$1" x="144.78" y="99.06" smashed="yes" rot="R90">
 <attribute name="NAME" x="143.2814" y="95.25" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="148.082" y="95.25" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="143.002" y="100.33" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="PAD15" gate="1" x="139.7" y="96.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="139.0142" y="105.283" size="1.778" layer="95" rot="R270"/>
@@ -3288,14 +3300,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="RC3" class="0">
 <segment>
 <wire x1="91.44" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="78.74" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<junction x="76.2" y="78.74"/>
+<junction x="78.74" y="78.74"/>
 <junction x="78.74" y="60.96"/>
 <label x="83.82" y="60.96" size="1.778" layer="95"/>
 <pinref part="IC2" gate="A" pin="G1"/>
@@ -3387,6 +3396,25 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,40.64,63.5,IC1,VDD,VCC,,,"/>
+<approved hash="104,1,40.64,50.8,IC1,VSS,GND,,,"/>
+<approved hash="113,1,118.089,63.5,PAD1,,,,,"/>
+<approved hash="113,1,118.089,60.96,PAD2,,,,,"/>
+<approved hash="113,1,118.089,58.42,PAD3,,,,,"/>
+<approved hash="113,1,118.089,50.8,PAD6,,,,,"/>
+<approved hash="113,1,118.089,53.34,PAD5,,,,,"/>
+<approved hash="113,1,118.089,55.88,PAD4,,,,,"/>
+<approved hash="113,1,135.911,50.8,PAD7,,,,,"/>
+<approved hash="113,1,135.911,53.34,PAD8,,,,,"/>
+<approved hash="113,1,135.911,55.88,PAD9,,,,,"/>
+<approved hash="113,1,135.911,63.5,PAD12,,,,,"/>
+<approved hash="113,1,135.911,60.96,PAD11,,,,,"/>
+<approved hash="113,1,135.911,58.42,PAD10,,,,,"/>
+<approved hash="113,1,139.7,97.7688,PAD15,,,,,"/>
+<approved hash="113,1,148.569,83.82,PAD16,,,,,"/>
+<approved hash="113,1,140.674,88.9,S1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

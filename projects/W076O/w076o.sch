@@ -7038,6 +7038,7 @@ general purpose rectifier, 1 A</description>
 <approved hash="113,1,196.753,96.7994,PAD7,,,,,"/>
 <approved hash="113,1,201.833,96.7994,PAD8,,,,,"/>
 <approved hash="113,1,79.9126,2.8194,PAD9,,,,,"/>
+<approved hash="113,1,84.9926,2.58279,PAD10,,,,,"/>
 <approved hash="113,1,61.849,48.26,U$1,,,,,"/>
 </errors>
 </schematic>

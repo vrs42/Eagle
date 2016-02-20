@@ -2814,6 +2814,10 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,20.2777,80.2047,IN,,,,,"/>
+<approved hash="113,1,78.7823,77.2753,OUT,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

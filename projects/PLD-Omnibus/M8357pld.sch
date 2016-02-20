@@ -16531,6 +16531,37 @@ Quad flat pack 14mm x 20mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,180.34,50.8,E1G$3,VCCINT,VCC,,,"/>
+<approved hash="104,1,190.5,50.8,E1G$4,VCCINT,VCC,,,"/>
+<approved hash="104,1,175.26,50.8,E1G$5,VCCIO,VCC,,,"/>
+<approved hash="104,1,177.8,50.8,E1G$6,VCCIO,VCC,,,"/>
+<approved hash="104,1,182.88,50.8,E1G$7,VCCIO,VCC,,,"/>
+<approved hash="104,1,185.42,50.8,E1G$8,VCCIO,VCC,,,"/>
+<approved hash="104,1,187.96,50.8,E1G$9,VCCIO,VCC,,,"/>
+<approved hash="104,1,172.72,50.8,E1G$1,VCCIO,VCC,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,109.22,226.255,DRIVE,,,,,"/>
+<approved hash="113,1,160.02,180.209,E31,,,,,"/>
+<approved hash="113,1,152.4,32.131,U$2,,,,,"/>
+<approved hash="113,1,353.017,211.993,PAD10,,,,,"/>
+<approved hash="113,1,352.923,209.453,PAD11,,,,,"/>
+<approved hash="113,1,353.017,206.913,PAD12,,,,,"/>
+<approved hash="113,1,353.017,204.373,PAD13,,,,,"/>
+<approved hash="113,1,353.017,201.833,PAD14,,,,,"/>
+<approved hash="113,1,353.017,199.293,PAD15,,,,,"/>
+<approved hash="113,1,353.017,196.753,PAD16,,,,,"/>
+<approved hash="113,1,353.017,194.213,PAD17,,,,,"/>
+<approved hash="113,1,368.343,209.647,PAD20,,,,,"/>
+<approved hash="113,1,368.343,207.107,PAD21,,,,,"/>
+<approved hash="113,1,368.343,204.567,PAD22,,,,,"/>
+<approved hash="113,1,368.343,202.027,PAD23,,,,,"/>
+<approved hash="113,1,368.343,199.487,PAD24,,,,,"/>
+<approved hash="113,1,368.343,196.947,PAD25,,,,,"/>
+<approved hash="113,1,368.343,194.407,PAD26,,,,,"/>
+<approved hash="113,1,368.343,191.867,PAD27,,,,,"/>
+<approved hash="113,1,213.36,153.475,ISP,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

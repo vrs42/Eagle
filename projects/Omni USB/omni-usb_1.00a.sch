@@ -20735,6 +20735,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="U$2" gate="DT1" pin="1"/>
 <pinref part="U$2" gate="DT2" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<junction x="68.58" y="19.05"/>
 </segment>
 <segment>
 <wire x1="158.75" y1="17.78" x2="168.91" y2="17.78" width="0.1524" layer="91"/>
@@ -20770,6 +20771,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="C100" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="17.78" x2="158.75" y2="17.78" width="0.1524" layer="91"/>
 <junction x="158.75" y="17.78"/>
+<junction x="204.47" y="17.78"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="207.01" x2="33.02" y2="204.47" width="0.1524" layer="91"/>
@@ -20918,6 +20920,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="C100" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="25.4" x2="158.75" y2="25.4" width="0.1524" layer="91"/>
 <junction x="158.75" y="25.4"/>
+<junction x="204.47" y="25.4"/>
 </segment>
 <segment>
 <wire x1="181.61" y1="161.29" x2="181.61" y2="152.4" width="0.1524" layer="91"/>
@@ -21330,6 +21333,33 @@ In this library the device names are the same as the pin names of the symbols, t
 <approved hash="208,3,34.29,201.93,+3V3,out,,,,"/>
 <approved hash="208,3,316.23,163.83,+3V3,sup,,,,"/>
 <approved hash="208,3,311.15,49.53,+3V3,sup,,,,"/>
+<approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
+<approved hash="113,3,329.167,64.9012,JP1,,,,,"/>
+<approved hash="113,1,313.69,160.151,S1,,,,,"/>
+<approved hash="113,1,313.69,122.051,S2,,,,,"/>
+<approved hash="113,3,167.509,160.257,JP2,,,,,"/>
+<approved hash="113,3,223.389,160.257,JP3,,,,,"/>
+<approved hash="113,3,197.989,160.257,JP4,,,,,"/>
+<approved hash="113,1,327.529,229.177,P_GND,,,,,"/>
+<approved hash="113,1,338.853,251.591,JP8,,,,,"/>
+<approved hash="113,1,338.853,242.701,JP9,,,,,"/>
+<approved hash="113,1,338.853,233.811,JP10,,,,,"/>
+<approved hash="113,2,33.909,240.03,U$2,,,,,"/>
+<approved hash="113,2,193.571,130.071,FRAME1,,,,,"/>
+<approved hash="113,3,193.571,130.071,FRAME3,,,,,"/>
+<approved hash="113,2,309.643,81.1488,JP19,,,,,"/>
+<approved hash="113,2,309.643,98.9288,JP15,,,,,"/>
+<approved hash="113,2,309.643,116.709,JP11,,,,,"/>
+<approved hash="113,2,309.643,133.219,JP13,,,,,"/>
+<approved hash="113,2,309.643,149.729,JP17,,,,,"/>
+<approved hash="113,2,309.643,166.239,JP12,,,,,"/>
+<approved hash="113,2,309.643,185.289,JP16,,,,,"/>
+<approved hash="113,2,309.643,205.609,JP18,,,,,"/>
+<approved hash="113,2,309.643,225.929,JP20,,,,,"/>
+<approved hash="113,2,309.643,65.9088,JP14,,,,,"/>
+<approved hash="113,1,338.853,224.921,JP6,,,,,"/>
+<approved hash="113,1,338.853,216.031,JP5,,,,,"/>
+<approved hash="113,1,338.853,207.141,JP7,,,,,"/>
 </errors>
 </schematic>
 </drawing>

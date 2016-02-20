@@ -4477,46 +4477,54 @@ high speed (Philips)</description>
 </net>
 <net name="SELECT_2L" class="0">
 <segment>
-<wire x1="121.92" y1="116.84" x2="137.16" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="119.38" x2="317.5" y2="119.38" width="0.1524" layer="91"/>
-<label x="121.92" y="116.84" size="1.778" layer="95"/>
 <label x="281.94" y="119.38" size="1.778" layer="95"/>
-<pinref part="DRIVE" gate="G$1" pin="A3"/>
 <pinref part="A01" gate="L2" pin="P$2"/>
 <pinref part="A02" gate="L2" pin="P$2"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="116.84" x2="137.16" y2="116.84" width="0.1524" layer="91"/>
+<label x="121.92" y="116.84" size="1.778" layer="95"/>
+<pinref part="DRIVE" gate="G$1" pin="A3"/>
 </segment>
 </net>
 <net name="SELECT_3L" class="0">
 <segment>
-<wire x1="121.92" y1="114.3" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="114.3" x2="317.5" y2="114.3" width="0.1524" layer="91"/>
-<label x="121.92" y="114.3" size="1.778" layer="95"/>
 <label x="281.94" y="114.3" size="1.778" layer="95"/>
-<pinref part="DRIVE" gate="G$1" pin="A4"/>
 <pinref part="A01" gate="M2" pin="P$2"/>
 <pinref part="A02" gate="M2" pin="P$2"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="114.3" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
+<label x="121.92" y="114.3" size="1.778" layer="95"/>
+<pinref part="DRIVE" gate="G$1" pin="A4"/>
 </segment>
 </net>
 <net name="SELECT_1L" class="0">
 <segment>
-<wire x1="121.92" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="124.46" x2="317.5" y2="124.46" width="0.1524" layer="91"/>
-<label x="121.92" y="119.38" size="1.778" layer="95"/>
 <label x="281.94" y="124.46" size="1.778" layer="95"/>
-<pinref part="DRIVE" gate="G$1" pin="A2"/>
 <pinref part="A01" gate="K2" pin="P$2"/>
 <pinref part="A02" gate="K2" pin="P$2"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
+<label x="121.92" y="119.38" size="1.778" layer="95"/>
+<pinref part="DRIVE" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="SELECT_0L" class="0">
 <segment>
-<wire x1="121.92" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="129.54" x2="317.5" y2="129.54" width="0.1524" layer="91"/>
-<label x="121.92" y="121.92" size="1.778" layer="95"/>
 <label x="281.94" y="129.54" size="1.778" layer="95"/>
-<pinref part="DRIVE" gate="G$1" pin="A1"/>
 <pinref part="A01" gate="J2" pin="P$2"/>
 <pinref part="A02" gate="J2" pin="P$2"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
+<label x="121.92" y="121.92" size="1.778" layer="95"/>
+<pinref part="DRIVE" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="-15V" class="0">
@@ -4979,6 +4987,29 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,1,198.114,239.641,CONSTANT_WRITE,,,,,"/>
+<approved hash="113,1,202.966,216.781,DC_ERASE,,,,,"/>
+<approved hash="113,1,319.159,233.68,BIT3,,,,,"/>
+<approved hash="113,1,283.599,233.68,BIT1,,,,,"/>
+<approved hash="113,1,301.379,233.68,BIT2,,,,,"/>
+<approved hash="113,1,263.279,233.68,BIT0,,,,,"/>
+<approved hash="113,1,82.1605,236.22,CYL16,,,,,"/>
+<approved hash="113,1,46.6005,236.22,CYL64,,,,,"/>
+<approved hash="113,1,64.3805,236.22,CYL32,,,,,"/>
+<approved hash="113,1,26.2805,236.22,CYL128,,,,,"/>
+<approved hash="113,1,158.361,236.22,CYL1,,,,,"/>
+<approved hash="113,1,122.801,236.22,CYL4,,,,,"/>
+<approved hash="113,1,140.581,236.22,CYL2,,,,,"/>
+<approved hash="113,1,102.481,236.22,CYL8,,,,,"/>
+<approved hash="113,1,26.2805,195.58,RUN,,,,,"/>
+<approved hash="113,1,46.6005,195.58,RTZ,,,,,"/>
+<approved hash="113,1,79.6205,195.071,FWD/REV,,,,,"/>
+<approved hash="113,1,188.841,180.34,HEAD,,,,,"/>
+<approved hash="113,1,26.2805,165.1,S1,,,,,"/>
+<approved hash="113,1,44.0605,165.1,S2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

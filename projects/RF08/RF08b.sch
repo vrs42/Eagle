@@ -16352,8 +16352,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="DMA4-7" gate="A" x="322.58" y="205.74"/>
 <instance part="DMA0-3" gate="A" x="322.58" y="172.72"/>
 <instance part="V6" gate="GND" x="307.34" y="91.44"/>
-<instance part="IC18" gate="C" x="289.56" y="129.54"/>
-<instance part="IC18" gate="D" x="289.56" y="228.6"/>
+<instance part="IC18" gate="C" x="287.02" y="129.54"/>
+<instance part="IC18" gate="D" x="287.02" y="228.6"/>
 <instance part="DAR4-7" gate="A" x="322.58" y="106.68"/>
 <instance part="DAR8-11" gate="A" x="322.58" y="139.7"/>
 <instance part="IC24" gate="A" x="358.14" y="243.84"/>
@@ -16611,7 +16611,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </net>
 <net name="N$22" class="0">
 <segment>
-<wire x1="302.26" y1="228.6" x2="304.8" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="228.6" x2="304.8" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="228.6" x2="309.88" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="228.6" x2="304.8" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="195.58" x2="304.8" y2="162.56" width="0.1524" layer="91"/>
@@ -16896,8 +16896,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </net>
 <net name="!601" class="0">
 <segment>
-<wire x1="271.78" y1="231.14" x2="276.86" y2="231.14" width="0.1524" layer="91"/>
-<label x="271.78" y="231.14" size="1.778" layer="95"/>
+<wire x1="269.24" y1="231.14" x2="274.32" y2="231.14" width="0.1524" layer="91"/>
+<label x="269.24" y="231.14" size="1.778" layer="95"/>
 <pinref part="IC18" gate="D" pin="I0"/>
 </segment>
 <segment>
@@ -17339,7 +17339,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <net name="N$12" class="0">
 <segment>
 <wire x1="309.88" y1="129.54" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="129.54" x2="302.26" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="129.54" x2="299.72" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="96.52" x2="304.8" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="96.52" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
 <junction x="304.8" y="129.54"/>
@@ -17350,8 +17350,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </net>
 <net name="!DCXA" class="0">
 <segment>
-<wire x1="271.78" y1="132.08" x2="276.86" y2="132.08" width="0.1524" layer="91"/>
-<label x="271.78" y="132.08" size="1.778" layer="95"/>
+<wire x1="269.24" y1="132.08" x2="274.32" y2="132.08" width="0.1524" layer="91"/>
+<label x="269.24" y="132.08" size="1.778" layer="95"/>
 <pinref part="IC18" gate="C" pin="I0"/>
 </segment>
 </net>
@@ -17940,13 +17940,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="IC9" gate="B" pin="CLR"/>
 </segment>
 <segment>
-<wire x1="271.78" y1="226.06" x2="276.86" y2="226.06" width="0.1524" layer="91"/>
-<label x="271.78" y="226.06" size="1.778" layer="95"/>
+<wire x1="269.24" y1="226.06" x2="274.32" y2="226.06" width="0.1524" layer="91"/>
+<label x="269.24" y="226.06" size="1.778" layer="95"/>
 <pinref part="IC18" gate="D" pin="I1"/>
 </segment>
 <segment>
-<wire x1="271.78" y1="127" x2="276.86" y2="127" width="0.1524" layer="91"/>
-<label x="271.78" y="127" size="1.778" layer="95"/>
+<wire x1="269.24" y1="127" x2="274.32" y2="127" width="0.1524" layer="91"/>
+<label x="269.24" y="127" size="1.778" layer="95"/>
 <pinref part="IC18" gate="C" pin="I1"/>
 </segment>
 </net>
@@ -19616,6 +19616,51 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,307.34,252.667,IC17,B,G,,,"/>
+<approved hash="114,1,307.34,252.667,IC17,B,A,,,"/>
+<approved hash="114,1,307.34,252.667,IC17,B,B,,,"/>
+<approved hash="114,1,340.36,208.216,IC22,D,I,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,G,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,A1,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,A2,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,A3,,,"/>
+<approved hash="114,2,111.76,168.847,IC37,B,A4,,,"/>
+<approved hash="104,2,45.72,96.52,IC8,V+,VCC,,,"/>
+<approved hash="114,2,119.38,55.8165,IC19,B,I,,,"/>
+<approved hash="114,2,119.38,55.8165,IC19,D,I,,,"/>
+<approved hash="114,2,119.38,55.8165,IC19,F,I,,,"/>
+<approved hash="114,2,35.56,223.457,IC23,B,CLR,,,"/>
+<approved hash="114,2,35.56,223.457,IC23,B,D,,,"/>
+<approved hash="114,2,35.56,223.457,IC23,B,CLK,,,"/>
+<approved hash="114,2,35.56,223.457,IC23,B,PRE,,,"/>
+<approved hash="114,2,167.64,251.397,IC55,D,I0,,,"/>
+<approved hash="114,2,167.64,251.397,IC55,D,I1,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,54.5126,165.379,PAD1,,,,,"/>
+<approved hash="113,1,45.9994,179.167,PAD2,,,,,"/>
+<approved hash="113,1,45.9994,176.627,PAD3,,,,,"/>
+<approved hash="113,1,45.9994,174.087,PAD4,,,,,"/>
+<approved hash="113,1,45.9994,171.547,PAD5,,,,,"/>
+<approved hash="113,1,45.9994,169.007,PAD6,,,,,"/>
+<approved hash="113,1,45.9994,166.467,PAD7,,,,,"/>
+<approved hash="113,1,45.9994,161.387,PAD9,,,,,"/>
+<approved hash="113,1,45.9994,163.927,PAD8,,,,,"/>
+<approved hash="113,1,15.24,230.945,C35L,,,,,"/>
+<approved hash="113,1,48.26,230.945,C36L,,,,,"/>
+<approved hash="113,1,81.28,230.945,D34L,,,,,"/>
+<approved hash="113,1,114.3,230.945,D35L,,,,,"/>
+<approved hash="113,1,147.32,230.945,D36L,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME3,,,,,"/>
+<approved hash="113,3,269.24,246.249,SW1,,,,,"/>
+<approved hash="113,3,269.24,205.609,SW2,,,,,"/>
+<approved hash="113,3,269.24,164.969,SW3,,,,,"/>
+<approved hash="113,3,269.24,124.329,SW4,,,,,"/>
+<approved hash="113,3,81.28,230.945,RS08,,,,,"/>
+<approved hash="113,3,45.72,41.7153,SV1,,,,,"/>
+<approved hash="113,3,99.06,41.7153,SV2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

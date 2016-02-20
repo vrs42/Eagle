@@ -15690,6 +15690,19 @@ Source: 008-0260-0_E.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,43.18,53.34,18F2X5X,VSS,GND,,,"/>
+<approved hash="104,1,119.38,48.26,18F2X5X,VSS,GND,,,"/>
+<approved hash="113,1,147.557,44.5812,UART,,,,,"/>
+<approved hash="113,1,-29.1677,44.5812,ANALOG_IN,,,,,"/>
+<approved hash="113,1,43.4171,-18.9188,CCP2,,,,,"/>
+<approved hash="113,1,43.4171,-34.1588,CCP1,,,,,"/>
+<approved hash="113,1,173.27,65.9088,PORTB,,,,,"/>
+<approved hash="113,1,162.323,-20.1888,+/-1,,,,,"/>
+<approved hash="113,1,162.323,-32.8888,+/-2,,,,,"/>
+<approved hash="113,1,15.24,75.8105,RESET,,,,,"/>
+<approved hash="113,1,167.174,36.0468,X1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

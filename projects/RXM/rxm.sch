@@ -14286,7 +14286,7 @@ Distributor: Bürklin 71F970</description>
 <approved hash="114,1,127,110.427,U1,B,A3,,,"/>
 <approved hash="114,1,127,110.427,U1,B,A4,,,"/>
 <approved hash="113,1,22.86,94.3017,PDP-8,,,,,"/>
-<approved hash="113,1,191.277,88.9,PC,,,,,"/>
+<approved hash="113,1,190.903,88.9,PC,,,,,"/>
 <approved hash="113,1,14.9606,48.0145,J1,,,,,"/>
 </errors>
 </schematic>

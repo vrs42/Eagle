@@ -15635,25 +15635,6 @@ NS Package M08A</description>
 <pin name="V+" x="-2.54" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
 <pin name="V-" x="-2.54" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
 </symbol>
-<symbol name="OPAMP">
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="0" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="94"/>
-<text x="2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-IN" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
-<pin name="+IN" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
-<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
-</symbol>
-<symbol name="PWR+-">
-<text x="1.27" y="3.175" size="0.8128" layer="93" rot="R90">V+</text>
-<text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
-<pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="*741" prefix="IC">
@@ -15692,46 +15673,6 @@ NS Package M08A</description>
 <technologies>
 <technology name="LM"/>
 <technology name="UA"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OPA1013" prefix="IC">
-<description>&lt;b&gt;OP AMP&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="OPAMP" x="7.62" y="10.16" swaplevel="1"/>
-<gate name="B" symbol="OPAMP" x="7.62" y="-12.7" swaplevel="1"/>
-<gate name="P" symbol="PWR+-" x="7.62" y="10.16" addlevel="request"/>
-</gates>
-<devices>
-<device name="P" package="DIL08">
-<connects>
-<connect gate="A" pin="+IN" pad="3"/>
-<connect gate="A" pin="-IN" pad="2"/>
-<connect gate="A" pin="OUT" pad="1"/>
-<connect gate="B" pin="+IN" pad="5"/>
-<connect gate="B" pin="-IN" pad="6"/>
-<connect gate="B" pin="OUT" pad="7"/>
-<connect gate="P" pin="V+" pad="8"/>
-<connect gate="P" pin="V-" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="D" package="SO08">
-<connects>
-<connect gate="A" pin="+IN" pad="3"/>
-<connect gate="A" pin="-IN" pad="2"/>
-<connect gate="A" pin="OUT" pad="1"/>
-<connect gate="B" pin="+IN" pad="5"/>
-<connect gate="B" pin="-IN" pad="6"/>
-<connect gate="B" pin="OUT" pad="7"/>
-<connect gate="P" pin="V+" pad="8"/>
-<connect gate="P" pin="V-" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -17116,7 +17057,6 @@ Based on the following sources:
 <part name="V76" library="supply2" deviceset="VCC" device=""/>
 <part name="D5" library="diode" deviceset="ZENER-DIODE" device="DO35Z10" value="1N746"/>
 <part name="V77" library="supply2" deviceset="GND" device=""/>
-<part name="IC1" library="linear" deviceset="OPA1013" device="P"/>
 <part name="FRAME4" library="frames" deviceset="DINA3_L" device=""/>
 <part name="E26" library="74xx-us" deviceset="74*00" device="N" technology="LS"/>
 <part name="E27" library="74xx-us" deviceset="74*00" device="N" technology="LS"/>
@@ -19277,8 +19217,6 @@ Based on the following sources:
 <instance part="V76" gate="G$1" x="15.24" y="53.34"/>
 <instance part="D5" gate="G$1" x="134.62" y="83.82" rot="R90"/>
 <instance part="V77" gate="GND" x="134.62" y="78.74"/>
-<instance part="IC1" gate="A" x="-17.78" y="132.08"/>
-<instance part="IC1" gate="B" x="-17.78" y="119.38"/>
 </instances>
 <busses>
 </busses>
@@ -19870,10 +19808,12 @@ Based on the following sources:
 <net name="ADDR_COUNTER_32" class="0">
 <segment>
 <wire x1="337.82" y1="127" x2="365.76" y2="127" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="68.58" x2="320.04" y2="68.58" width="0.1524" layer="91"/>
 <label x="340.36" y="127" size="1.778" layer="95"/>
-<label x="292.1" y="68.58" size="1.778" layer="95"/>
 <pinref part="E20" gate="A" pin="QB"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="68.58" x2="320.04" y2="68.58" width="0.1524" layer="91"/>
+<label x="292.1" y="68.58" size="1.778" layer="95"/>
 <pinref part="E23" gate="B" pin="I0"/>
 </segment>
 </net>
@@ -19908,10 +19848,12 @@ Based on the following sources:
 <net name="ADDR_COUNTER_2" class="0">
 <segment>
 <wire x1="337.82" y1="162.56" x2="365.76" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="91.44" x2="320.04" y2="91.44" width="0.1524" layer="91"/>
 <label x="340.36" y="162.56" size="1.778" layer="95"/>
-<label x="292.1" y="91.44" size="1.778" layer="95"/>
 <pinref part="E19" gate="A" pin="QB"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="91.44" x2="320.04" y2="91.44" width="0.1524" layer="91"/>
+<label x="292.1" y="91.44" size="1.778" layer="95"/>
 <pinref part="E24" gate="A" pin="I0"/>
 </segment>
 </net>
@@ -19925,10 +19867,12 @@ Based on the following sources:
 <net name="ADDR_COUNTER_8" class="0">
 <segment>
 <wire x1="337.82" y1="157.48" x2="365.76" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="88.9" x2="320.04" y2="88.9" width="0.1524" layer="91"/>
 <label x="340.36" y="157.48" size="1.778" layer="95"/>
-<label x="292.1" y="88.9" size="1.778" layer="95"/>
 <pinref part="E19" gate="A" pin="QD"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="88.9" x2="320.04" y2="88.9" width="0.1524" layer="91"/>
+<label x="292.1" y="88.9" size="1.778" layer="95"/>
 <pinref part="E24" gate="A" pin="I1"/>
 </segment>
 </net>
@@ -19942,26 +19886,34 @@ Based on the following sources:
 <net name="ADDR_COUNTER_64" class="0">
 <segment>
 <wire x1="337.82" y1="124.46" x2="365.76" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="66.04" x2="320.04" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="83.82" x2="320.04" y2="83.82" width="0.1524" layer="91"/>
 <label x="340.36" y="124.46" size="1.778" layer="95"/>
-<label x="292.1" y="66.04" size="1.778" layer="95"/>
-<label x="292.1" y="83.82" size="1.778" layer="95"/>
 <pinref part="E20" gate="A" pin="QC"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="66.04" x2="320.04" y2="66.04" width="0.1524" layer="91"/>
+<label x="292.1" y="66.04" size="1.778" layer="95"/>
 <pinref part="E23" gate="B" pin="I1"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="83.82" x2="320.04" y2="83.82" width="0.1524" layer="91"/>
+<label x="292.1" y="83.82" size="1.778" layer="95"/>
 <pinref part="E24" gate="A" pin="I2"/>
 </segment>
 </net>
 <net name="ADDR_COUNTER_128" class="0">
 <segment>
 <wire x1="337.82" y1="121.92" x2="365.76" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="63.5" x2="320.04" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="81.28" x2="320.04" y2="81.28" width="0.1524" layer="91"/>
 <label x="340.36" y="121.92" size="1.778" layer="95"/>
-<label x="292.1" y="63.5" size="1.778" layer="95"/>
-<label x="292.1" y="81.28" size="1.778" layer="95"/>
 <pinref part="E20" gate="A" pin="QD"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="63.5" x2="320.04" y2="63.5" width="0.1524" layer="91"/>
+<label x="292.1" y="63.5" size="1.778" layer="95"/>
 <pinref part="E23" gate="B" pin="I2"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="81.28" x2="320.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="292.1" y="81.28" size="1.778" layer="95"/>
 <pinref part="E24" gate="A" pin="I3"/>
 </segment>
 </net>
@@ -21533,6 +21485,34 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,3,35.56,137.16,E25,V+,+15V,,,"/>
+<approved hash="104,3,35.56,121.92,E25,V-,-15V,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,1,82.1605,236.22,CYL16,,,,,"/>
+<approved hash="113,1,46.6005,236.22,CYL64,,,,,"/>
+<approved hash="113,1,64.3805,236.22,CYL32,,,,,"/>
+<approved hash="113,1,26.2805,236.22,CYL128,,,,,"/>
+<approved hash="113,1,158.361,236.22,CYL1,,,,,"/>
+<approved hash="113,1,122.801,236.22,CYL4,,,,,"/>
+<approved hash="113,1,140.581,236.22,CYL2,,,,,"/>
+<approved hash="113,1,102.481,236.22,CYL8,,,,,"/>
+<approved hash="113,1,76.2,187.079,RUN,,,,,"/>
+<approved hash="113,1,76.2,166.759,RTZ,,,,,"/>
+<approved hash="113,1,208.789,237.101,FWD/REV,,,,,"/>
+<approved hash="113,1,254,237.101,HEAD,,,,,"/>
+<approved hash="113,1,317.904,145.026,POWER,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,2,15.7579,204.081,CONSTANT_WRITE,,,,,"/>
+<approved hash="113,2,22.86,127.881,DC_ERASE,,,,,"/>
+<approved hash="113,2,25.4,105.021,BIT3,,,,,"/>
+<approved hash="113,2,25.4,69.4605,BIT1,,,,,"/>
+<approved hash="113,2,25.4,87.2405,BIT2,,,,,"/>
+<approved hash="113,2,25.4,49.1405,BIT0,,,,,"/>
+<approved hash="113,3,194.206,131.976,FRAME3,,,,,"/>
+<approved hash="113,4,194.206,131.976,FRAME4,,,,,"/>
+<approved hash="113,5,194.206,131.976,FRAME5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

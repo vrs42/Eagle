@@ -24774,6 +24774,9 @@ Source: www.kingbright.com</description>
 <approved hash="113,1,45.9994,163.927,PAD8,,,,,"/>
 <approved hash="113,1,15.24,230.945,C35L,,,,,"/>
 <approved hash="113,1,48.26,230.945,C36L,,,,,"/>
+<approved hash="113,1,81.28,230.945,D34L,,,,,"/>
+<approved hash="113,1,114.3,230.945,D35L,,,,,"/>
+<approved hash="113,1,147.32,230.945,D36L,,,,,"/>
 <approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
 <approved hash="113,3,194.206,131.976,FRAME3,,,,,"/>
 <approved hash="113,3,269.24,246.249,SW1,,,,,"/>

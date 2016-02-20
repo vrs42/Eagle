@@ -5826,6 +5826,9 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,21.2569,77.8595,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3637,6 +3637,30 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,2,160.02,157.417,IC5,C,I0,,,"/>
+<approved hash="114,2,160.02,157.417,IC5,C,I1,,,"/>
+<approved hash="114,2,160.02,157.417,IC5,D,I0,,,"/>
+<approved hash="114,2,160.02,157.417,IC5,D,I1,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,62.1326,233.959,PAD8,,,,,"/>
+<approved hash="113,1,53.6194,247.747,PAD0,,,,,"/>
+<approved hash="113,1,53.6194,245.207,PAD1,,,,,"/>
+<approved hash="113,1,53.6194,242.667,PAD2,,,,,"/>
+<approved hash="113,1,53.6194,240.127,PAD3,,,,,"/>
+<approved hash="113,1,53.6194,237.587,PAD4,,,,,"/>
+<approved hash="113,1,53.6194,235.047,PAD5,,,,,"/>
+<approved hash="113,1,53.6194,229.967,PAD7,,,,,"/>
+<approved hash="113,1,53.6194,232.507,PAD6,,,,,"/>
+<approved hash="113,1,33.02,190.305,BUS1,,,,,"/>
+<approved hash="113,1,33.02,129.345,BUS2,,,,,"/>
+<approved hash="113,1,91.44,126.805,C35L,,,,,"/>
+<approved hash="113,1,124.46,126.805,C36L,,,,,"/>
+<approved hash="113,1,157.48,126.805,D34L,,,,,"/>
+<approved hash="113,1,190.5,126.805,D35L,,,,,"/>
+<approved hash="113,1,223.52,126.805,D36L,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/PROGRAM FILES/EAGLE-4.11/projects/RF08/busadapt.brd
+Job           : C:/Users/Vince/Documents/eagle/projects/RF08/Old8x12/busadapt.brd
 
-Start at      :   07:24:00a ( 1/30/2004)
-End at        :   07:24:01a ( 1/30/2004)
-Elapsed time  :   00:00:01
+Start at      : 23:45:33 (2/16/2016)
+End at        : 23:45:33 (2/16/2016)
+Elapsed time  : 00:00:00
 
-Signals       :    91   RoutingGrid: 50 mil  Layers: 1
-Connections   :   184   predefined:  175 ( 0 Vias )
+Signals       :    91   RoutingGrid: 25 mil  Layers: 1
+Connections   :   185   predefined:  183 ( 0 Vias )
 
-Router memory :   14544
+Router memory :   48128
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         6         0         0         0         0
-max. Level        :         1         0         0         0         0
-max. Total        :         3         0         0         0         0
+Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         0         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :         9         9         9         9         9
+Routed            :         1         2         2         2         2
 Vias              :         0         0         0         0         0
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Resolution        :    99.5 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 100.0% finished
+Final             : 99.5% finished

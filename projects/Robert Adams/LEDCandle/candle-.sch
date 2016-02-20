@@ -7398,6 +7398,28 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,10.16,35.56,IC1,VDD,VCC,,,"/>
+<approved hash="104,1,10.16,22.86,IC1,VSS,GND,,,"/>
+<approved hash="104,1,76.2,35.56,IC3,VDD,VCC,,,"/>
+<approved hash="104,1,76.2,22.86,IC3,VSS,GND,,,"/>
+<approved hash="104,1,10.16,106.68,IC5,VDD,VCC,,,"/>
+<approved hash="104,1,10.16,93.98,IC5,VSS,GND,,,"/>
+<approved hash="104,1,76.2,106.68,IC7,VDD,VCC,,,"/>
+<approved hash="104,1,76.2,93.98,IC7,VSS,GND,,,"/>
+<approved hash="113,1,8.79263,61.2394,SUP+,,,,,"/>
+<approved hash="113,1,8.79263,53.6194,SUP-,,,,,"/>
+<approved hash="113,1,74.8326,60.8778,SUP+1,,,,,"/>
+<approved hash="113,1,74.8326,53.5747,SUP-1,,,,,"/>
+<approved hash="113,1,8.79263,131.998,SUP+2,,,,,"/>
+<approved hash="113,1,8.79263,124.695,SUP-2,,,,,"/>
+<approved hash="113,1,74.8326,131.998,SUP+3,,,,,"/>
+<approved hash="113,1,74.8326,124.695,SUP-3,,,,,"/>
+<approved hash="113,1,39.2726,35.8394,BTN1,,,,,"/>
+<approved hash="113,1,105.313,35.8394,BTN2,,,,,"/>
+<approved hash="113,1,39.2726,106.959,BTN3,,,,,"/>
+<approved hash="113,1,105.313,106.959,BTN4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

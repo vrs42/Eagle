@@ -5668,6 +5668,45 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,36.449,53.34,U$4,,,,,"/>
+<approved hash="113,1,76.2,88.828,IC1,,,,,"/>
+<approved hash="113,1,114.3,88.828,IC2,,,,,"/>
+<approved hash="113,1,152.4,88.828,IC3,,,,,"/>
+<approved hash="113,1,76.2,63.428,IC5,,,,,"/>
+<approved hash="113,1,114.3,63.428,IC6,,,,,"/>
+<approved hash="113,1,152.4,63.428,IC7,,,,,"/>
+<approved hash="113,1,76.2,38.028,IC9,,,,,"/>
+<approved hash="113,1,114.3,38.028,IC10,,,,,"/>
+<approved hash="113,1,152.4,38.028,IC11,,,,,"/>
+<approved hash="113,1,76.2,12.628,IC13,,,,,"/>
+<approved hash="113,1,114.3,12.628,IC14,,,,,"/>
+<approved hash="113,1,152.4,12.628,IC15,,,,,"/>
+<approved hash="113,1,65.9977,89.0947,SV1,,,,,"/>
+<approved hash="113,1,65.9977,63.6947,SV2,,,,,"/>
+<approved hash="113,1,65.9977,38.2947,SV3,,,,,"/>
+<approved hash="113,1,65.9977,12.8947,SV4,,,,,"/>
+<approved hash="113,1,86.4023,9.96527,SV5,,,,,"/>
+<approved hash="113,1,86.4023,35.3653,SV6,,,,,"/>
+<approved hash="113,1,86.4023,60.7653,SV7,,,,,"/>
+<approved hash="113,1,86.4023,86.1653,SV8,,,,,"/>
+<approved hash="113,1,104.098,89.0947,SV9,,,,,"/>
+<approved hash="113,1,104.098,63.6947,SV10,,,,,"/>
+<approved hash="113,1,104.098,38.2947,SV11,,,,,"/>
+<approved hash="113,1,104.098,12.8947,SV12,,,,,"/>
+<approved hash="113,1,124.502,9.96527,SV13,,,,,"/>
+<approved hash="113,1,124.502,35.3653,SV14,,,,,"/>
+<approved hash="113,1,124.502,60.7653,SV15,,,,,"/>
+<approved hash="113,1,124.502,86.1653,SV16,,,,,"/>
+<approved hash="113,1,142.198,89.0947,SV17,,,,,"/>
+<approved hash="113,1,142.198,63.6947,SV18,,,,,"/>
+<approved hash="113,1,142.198,38.2947,SV19,,,,,"/>
+<approved hash="113,1,142.198,12.8947,SV20,,,,,"/>
+<approved hash="113,1,162.602,9.96527,SV21,,,,,"/>
+<approved hash="113,1,162.602,35.3653,SV22,,,,,"/>
+<approved hash="113,1,162.602,60.7653,SV23,,,,,"/>
+<approved hash="113,1,162.602,86.1653,SV24,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

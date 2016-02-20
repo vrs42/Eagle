@@ -3682,30 +3682,44 @@ Based on the following sources:
 <pinref part="IC1" gate="A" pin="I"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="226.06" x2="71.12" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="195.58" x2="71.12" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="165.1" x2="71.12" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="134.62" x2="71.12" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="12.7" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
-<label x="66.04" y="226.06" size="1.778" layer="95"/>
-<label x="66.04" y="195.58" size="1.778" layer="95"/>
-<label x="66.04" y="165.1" size="1.778" layer="95"/>
-<label x="66.04" y="134.62" size="1.778" layer="95"/>
-<label x="66.04" y="104.14" size="1.778" layer="95"/>
-<label x="66.04" y="73.66" size="1.778" layer="95"/>
-<label x="66.04" y="43.18" size="1.778" layer="95"/>
-<label x="66.04" y="12.7" size="1.778" layer="95"/>
 <pinref part="IC6" gate="B" pin="I3"/>
-<pinref part="IC7" gate="B" pin="I3"/>
-<pinref part="IC8" gate="B" pin="I3"/>
-<pinref part="IC9" gate="B" pin="I3"/>
-<pinref part="IC10" gate="B" pin="I3"/>
+<wire x1="66.04" y1="226.06" x2="71.12" y2="226.06" width="0.1524" layer="91"/>
+<label x="66.04" y="226.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
+<label x="66.04" y="73.66" size="1.778" layer="95"/>
 <pinref part="IC11" gate="B" pin="I3"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
+<label x="66.04" y="43.18" size="1.778" layer="95"/>
 <pinref part="IC12" gate="B" pin="I3"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="12.7" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
+<label x="66.04" y="12.7" size="1.778" layer="95"/>
 <pinref part="IC13" gate="B" pin="I3"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
+<label x="66.04" y="104.14" size="1.778" layer="95"/>
+<pinref part="IC10" gate="B" pin="I3"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="134.62" x2="71.12" y2="134.62" width="0.1524" layer="91"/>
+<label x="66.04" y="134.62" size="1.778" layer="95"/>
+<pinref part="IC9" gate="B" pin="I3"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="165.1" x2="71.12" y2="165.1" width="0.1524" layer="91"/>
+<label x="66.04" y="165.1" size="1.778" layer="95"/>
+<pinref part="IC8" gate="B" pin="I3"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="195.58" x2="71.12" y2="195.58" width="0.1524" layer="91"/>
+<label x="66.04" y="195.58" size="1.778" layer="95"/>
+<pinref part="IC7" gate="B" pin="I3"/>
 </segment>
 </net>
 <net name="I8" class="0">
@@ -4208,30 +4222,44 @@ Based on the following sources:
 <pinref part="IC1" gate="A" pin="O"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="251.46" x2="71.12" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="220.98" x2="71.12" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="190.5" x2="71.12" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="160.02" x2="71.12" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="129.54" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
-<label x="66.04" y="251.46" size="1.778" layer="95"/>
-<label x="66.04" y="220.98" size="1.778" layer="95"/>
-<label x="66.04" y="190.5" size="1.778" layer="95"/>
-<label x="66.04" y="160.02" size="1.778" layer="95"/>
-<label x="66.04" y="129.54" size="1.778" layer="95"/>
-<label x="66.04" y="99.06" size="1.778" layer="95"/>
-<label x="66.04" y="68.58" size="1.778" layer="95"/>
-<label x="66.04" y="38.1" size="1.778" layer="95"/>
-<pinref part="IC6" gate="A" pin="I0"/>
-<pinref part="IC7" gate="A" pin="I0"/>
-<pinref part="IC8" gate="A" pin="I0"/>
-<pinref part="IC9" gate="A" pin="I0"/>
-<pinref part="IC10" gate="A" pin="I0"/>
 <pinref part="IC11" gate="A" pin="I0"/>
+<wire x1="66.04" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
+<label x="66.04" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="IC12" gate="A" pin="I0"/>
+<wire x1="66.04" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+<label x="66.04" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="IC13" gate="A" pin="I0"/>
+<wire x1="66.04" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+<label x="66.04" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC6" gate="A" pin="I0"/>
+<wire x1="66.04" y1="251.46" x2="71.12" y2="251.46" width="0.1524" layer="91"/>
+<label x="66.04" y="251.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC8" gate="A" pin="I0"/>
+<wire x1="66.04" y1="190.5" x2="71.12" y2="190.5" width="0.1524" layer="91"/>
+<label x="66.04" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="160.02" x2="71.12" y2="160.02" width="0.1524" layer="91"/>
+<label x="66.04" y="160.02" size="1.778" layer="95"/>
+<pinref part="IC9" gate="A" pin="I0"/>
+</segment>
+<segment>
+<pinref part="IC10" gate="A" pin="I0"/>
+<wire x1="66.04" y1="129.54" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
+<label x="66.04" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="220.98" x2="71.12" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="IC7" gate="A" pin="I0"/>
+<label x="66.04" y="220.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!I2" class="0">
@@ -4331,6 +4359,12 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,35.56,251.397,IC1,E,I,,,"/>
+<approved hash="114,1,35.56,251.397,IC1,F,I,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,12.6577,249.115,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

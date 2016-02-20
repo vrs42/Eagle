@@ -15921,17 +15921,19 @@ Based on the following sources:
 <pinref part="A3" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="238.76" x2="7.62" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="172.72" x2="7.62" y2="172.72" width="0.1524" layer="91"/>
-<label x="10.16" y="238.76" size="1.778" layer="95"/>
-<label x="10.16" y="172.72" size="1.778" layer="95"/>
-<pinref part="A2" gate="G$1" pin="5"/>
-<pinref part="B2" gate="G$1" pin="5"/>
-</segment>
-<segment>
 <wire x1="83.82" y1="172.72" x2="66.04" y2="172.72" width="0.1524" layer="91"/>
 <label x="68.58" y="172.72" size="1.778" layer="95"/>
 <pinref part="B3" gate="G$1" pin="5"/>
+</segment>
+<segment>
+<label x="10.16" y="172.72" size="1.778" layer="95"/>
+<pinref part="B2" gate="G$1" pin="5"/>
+<wire x1="25.4" y1="172.72" x2="7.62" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="25.4" y1="238.76" x2="7.62" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="A2" gate="G$1" pin="5"/>
+<label x="10.16" y="238.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -17178,6 +17180,24 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,178.213,231.077,IC2,C,-IN,,,"/>
+<approved hash="114,1,178.213,231.077,IC2,C,+IN,,,"/>
+<approved hash="114,1,178.213,231.077,IC2,D,-IN,,,"/>
+<approved hash="114,1,178.213,231.077,IC2,D,+IN,,,"/>
+<approved hash="114,1,178.213,170.117,IC3,D,-IN,,,"/>
+<approved hash="114,1,178.213,170.117,IC3,D,+IN,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,33.02,221.175,A2,,,,,"/>
+<approved hash="113,1,91.44,221.175,A3,,,,,"/>
+<approved hash="113,1,33.02,155.135,B2,,,,,"/>
+<approved hash="113,1,91.44,155.135,B3,,,,,"/>
+<approved hash="113,1,33.02,84.0147,A5,,,,,"/>
+<approved hash="113,1,91.44,84.0147,A6,,,,,"/>
+<approved hash="113,1,266.979,29.3074,+5V,,,,,"/>
+<approved hash="113,1,266.979,21.6874,GND,,,,,"/>
+<approved hash="113,1,266.979,14.0674,-12V,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

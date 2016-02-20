@@ -4538,6 +4538,10 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,27.94,131.005,B40,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

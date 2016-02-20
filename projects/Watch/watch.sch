@@ -3107,12 +3107,12 @@ see also &lt;a href=DEVICE:PIC16F8*&gt;PIC16F8*&lt;/a&gt;</description>
 <part name="PAD12" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD11" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD10" library="wirepad" deviceset="SMD2" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R3" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="R0805"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="R0805"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
 <part name="PAD15" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD16" library="wirepad" deviceset="SMD2" device=""/>
 <part name="S1" library="switch-omron" deviceset="D-TS" device=""/>
@@ -3167,16 +3167,25 @@ see also &lt;a href=DEVICE:PIC16F8*&gt;PIC16F8*&lt;/a&gt;</description>
 </instance>
 <instance part="R1" gate="G$1" x="116.84" y="99.06" smashed="yes">
 <attribute name="NAME" x="113.03" y="100.5586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.03" y="95.758" size="1.778" layer="96"/>
+<attribute name="VALUE" x="118.11" y="100.838" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="116.84" y="93.98"/>
-<instance part="R3" gate="G$1" x="116.84" y="88.9"/>
-<instance part="R4" gate="G$1" x="116.84" y="83.82"/>
-<instance part="R5" gate="G$1" x="116.84" y="78.74"/>
-<instance part="R6" gate="G$1" x="149.86" y="88.9" smashed="yes" rot="MR270">
-<attribute name="NAME" x="148.3614" y="92.71" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="153.162" y="92.71" size="1.778" layer="96" rot="MR270"/>
+<instance part="R2" gate="G$1" x="116.84" y="93.98" smashed="yes">
+<attribute name="NAME" x="113.03" y="95.4786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="95.758" size="1.778" layer="96"/>
 </instance>
+<instance part="R3" gate="G$1" x="116.84" y="88.9" smashed="yes">
+<attribute name="NAME" x="113.03" y="90.3986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="90.678" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="116.84" y="83.82" smashed="yes">
+<attribute name="NAME" x="113.03" y="85.3186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="85.598" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="116.84" y="78.74" smashed="yes">
+<attribute name="NAME" x="113.03" y="80.2386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="80.518" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="G$1" x="149.86" y="88.9" rot="MR270"/>
 <instance part="PAD15" gate="1" x="144.78" y="91.44" smashed="yes" rot="MR90">
 <attribute name="NAME" x="144.0942" y="82.677" size="1.778" layer="95" rot="MR90"/>
 </instance>
@@ -3437,6 +3446,26 @@ see also &lt;a href=DEVICE:PIC16F8*&gt;PIC16F8*&lt;/a&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,48.26,76.2,IC1,OSC1,,,,"/>
+<approved hash="104,1,48.26,53.34,IC1,VSS,GND,,,"/>
+<approved hash="104,1,48.26,83.82,IC1,VDD,VCC,,,"/>
+<approved hash="113,1,118.089,63.5,PAD1,,,,,"/>
+<approved hash="113,1,118.089,60.96,PAD2,,,,,"/>
+<approved hash="113,1,118.089,58.42,PAD3,,,,,"/>
+<approved hash="113,1,118.089,50.8,PAD6,,,,,"/>
+<approved hash="113,1,118.089,53.34,PAD5,,,,,"/>
+<approved hash="113,1,118.089,55.88,PAD4,,,,,"/>
+<approved hash="113,1,135.911,50.8,PAD7,,,,,"/>
+<approved hash="113,1,135.911,53.34,PAD8,,,,,"/>
+<approved hash="113,1,135.911,55.88,PAD9,,,,,"/>
+<approved hash="113,1,135.911,63.5,PAD12,,,,,"/>
+<approved hash="113,1,135.911,60.96,PAD11,,,,,"/>
+<approved hash="113,1,135.911,58.42,PAD10,,,,,"/>
+<approved hash="113,1,144.78,90.1912,PAD15,,,,,"/>
+<approved hash="113,1,153.649,104.14,PAD16,,,,,"/>
+<approved hash="113,1,145.754,99.06,S1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

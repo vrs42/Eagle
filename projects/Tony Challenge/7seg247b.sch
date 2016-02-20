@@ -4024,6 +4024,10 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,35.5177,216.095,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

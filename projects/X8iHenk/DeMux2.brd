@@ -6658,6 +6658,10 @@ design rules under a new name.</description>
 <wire x1="367.665" y1="125.095" x2="370.84" y2="127" width="1.016" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="7,40,88437b9e8083735e"/>
+<approved hash="7,40,03fce0211bc3f81e"/>
+</errors>
 </board>
 </drawing>
 </eagle>

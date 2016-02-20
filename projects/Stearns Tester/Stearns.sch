@@ -17223,6 +17223,32 @@ general purpose rectifier, 1 A</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,213.36,193.04,IC1,VSS,GND,,,"/>
+<approved hash="104,1,213.36,139.7,IC2,VSS,GND,,,"/>
+<approved hash="104,1,213.36,86.36,IC3,VSS,GND,,,"/>
+<approved hash="104,1,284.48,167.64,IC4,VSS,GND,,,"/>
+<approved hash="104,1,284.48,114.3,IC5,VSS,GND,,,"/>
+<approved hash="114,1,147.32,190.436,IC6,F,I,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,290.746,95.3812,PROBE1,,,,,"/>
+<approved hash="113,1,290.746,85.2212,PROBE2,,,,,"/>
+<approved hash="113,1,290.746,75.0612,PROBE3,,,,,"/>
+<approved hash="113,1,290.746,64.9012,PROBE4,,,,,"/>
+<approved hash="113,1,288.626,54.7412,GNDPROBE,,,,,"/>
+<approved hash="113,1,136.083,69.9812,LOADL3,,,,,"/>
+<approved hash="113,1,136.083,57.2812,LOADL1,,,,,"/>
+<approved hash="113,1,135.521,44.5812,LOADHI3,,,,,"/>
+<approved hash="113,1,135.521,31.8812,LOADHI1,,,,,"/>
+<approved hash="113,1,259.519,67.1788,GNDL3,,,,,"/>
+<approved hash="113,1,259.519,46.8588,GNDL1,,,,,"/>
+<approved hash="113,1,259.519,57.0188,GNDL2,,,,,"/>
+<approved hash="113,1,259.519,36.6988,GNDL0,,,,,"/>
+<approved hash="113,1,96.2829,57.2812,GND,,,,,"/>
+<approved hash="113,1,96.2829,42.0412,VPP,,,,,"/>
+<approved hash="113,1,93.98,163.635,PC1,,,,,"/>
+<approved hash="113,1,42.8837,204.239,POWER,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

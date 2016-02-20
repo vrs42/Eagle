@@ -3877,6 +3877,19 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,106.744,157.48,IC5,C,I0,,,"/>
+<approved hash="114,1,106.744,157.48,IC5,C,I1,,,"/>
+<approved hash="114,1,106.744,157.48,IC5,C,I2,,,"/>
+<approved hash="114,1,142.304,187.96,IC10,B,I0,,,"/>
+<approved hash="114,1,142.304,187.96,IC10,B,I1,,,"/>
+<approved hash="114,1,142.304,187.96,IC10,B,I2,,,"/>
+<approved hash="114,1,142.304,187.96,IC10,C,I0,,,"/>
+<approved hash="114,1,142.304,187.96,IC10,C,I1,,,"/>
+<approved hash="114,1,142.304,187.96,IC10,C,I2,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,12.6577,216.095,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

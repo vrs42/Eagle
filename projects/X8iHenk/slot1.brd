@@ -8882,6 +8882,10 @@ design rules under a new name.</description>
 <wire x1="292.1" y1="50.8" x2="293.37" y2="50.8" width="0.381" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="7,40,88437b9e8083735e"/>
+<approved hash="7,40,03fce0211bc3f81e"/>
+</errors>
 </board>
 </drawing>
 </eagle>

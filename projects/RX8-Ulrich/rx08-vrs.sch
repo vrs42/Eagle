@@ -3192,6 +3192,10 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="C20" gate="L1" pin="IN4"/>
 <pinref part="C20" gate="S1" pin="IN2"/>
 <pinref part="C20" gate="S1" pin="IN3"/>
+<label x="25.4" y="63.5" size="1.778" layer="95"/>
+<wire x1="33.02" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="63.5" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
+<junction x="22.86" y="66.04"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="48.26" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
@@ -3761,6 +3765,10 @@ DIN A3, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,41.91,183.65,D20,V2,IN,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -12280,8 +12280,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
-<part name="IC1" library="memory" deviceset="TC551001CP" device=""/>
-<part name="IC2" library="memory" deviceset="TC551001CP" device=""/>
+<part name="IC1" library="memory" deviceset="TC551001CP" device="" value="TC551001CP"/>
+<part name="IC2" library="memory" deviceset="TC551001CP" device="" value="TC551001CP"/>
 <part name="(IC3)" library="maxim" deviceset="MAX232" device=""/>
 <part name="(IC5)" library="74xx-us" deviceset="74*393" device="N"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -12295,7 +12295,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="PIC16C74" library="Erics" deviceset="SVD-PIC16C74" device=""/>
+<part name="PIC16C74" library="Erics" deviceset="SVD-PIC16C74" device="" value="PIC16C74"/>
 <part name="R2" library="discrete" deviceset="RESEU-5" device=""/>
 <part name="R1" library="discrete" deviceset="RESEU-5" device="" value="10k"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
@@ -13523,6 +13523,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,58.42,27.94,(IC3),T2IN,,,,"/>
+<approved hash="202,1,27.94,33.02,(IC3),R2IN,,,,"/>
+<approved hash="202,1,86.36,86.36,PIC16C74,OSC2,,,,"/>
+<approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
+<approved hash="113,1,10.16,39.2119,X1,,,,,"/>
+<approved hash="113,1,10.16,156.015,SV1,,,,,"/>
+<approved hash="113,1,202.963,157.349,+,,,,,"/>
+<approved hash="113,1,109.457,68.7112,JP3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

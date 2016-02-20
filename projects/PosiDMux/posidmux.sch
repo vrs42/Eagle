@@ -844,62 +844,6 @@
 <text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="D_R-PDSO-G8">
-<description>&lt;b&gt;D (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
-Source: http://focus.ti.com/lit/ds/slos063b/slos063b.pdf</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
-<smd name="2" x="-0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="7" x="-0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="1" x="-1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="3" x="0.635" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="4" x="1.905" y="-2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="8" x="-1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="6" x="0.635" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="5" x="1.905" y="2.75" dx="0.6" dy="1.5" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.2" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.2" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.2" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.2" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.2" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.2" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.2" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.2" layer="51"/>
-</package>
-<package name="PS_R-PDSO-G8">
-<description>&lt;b&gt;PS (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
-Source: www.ti.com sn75452b.pdf</description>
-<wire x1="3.15" y1="2.675" x2="3.15" y2="-2.675" width="0.2032" layer="21"/>
-<wire x1="3.15" y1="-2.675" x2="-3.125" y2="-2.675" width="0.2032" layer="51"/>
-<wire x1="-3.125" y1="-2.675" x2="-3.125" y2="2.675" width="0.2032" layer="21"/>
-<wire x1="-3.125" y1="2.675" x2="3.15" y2="2.675" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
-<smd name="7" x="-0.635" y="3.7" dx="0.6" dy="1.5" layer="1"/>
-<smd name="1" x="-1.905" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
-<smd name="3" x="0.635" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
-<smd name="4" x="1.905" y="-3.685" dx="0.6" dy="1.5" layer="1"/>
-<smd name="8" x="-1.905" y="3.7" dx="0.6" dy="1.5" layer="1"/>
-<smd name="6" x="0.635" y="3.7" dx="0.6" dy="1.5" layer="1"/>
-<smd name="5" x="1.905" y="3.7" dx="0.6" dy="1.5" layer="1"/>
-<text x="-3.55" y="-2.925" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.737" y="-2.93" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-4.1" x2="-1.66" y2="-2.8" layer="51"/>
-<rectangle x1="-0.88" y1="-4.1" x2="-0.39" y2="-2.8" layer="51"/>
-<rectangle x1="0.39" y1="-4.1" x2="0.88" y2="-2.8" layer="51"/>
-<rectangle x1="1.66" y1="-4.1" x2="2.15" y2="-2.8" layer="51"/>
-<rectangle x1="1.66" y1="2.8" x2="2.15" y2="4.1" layer="51"/>
-<rectangle x1="0.39" y1="2.8" x2="0.88" y2="4.1" layer="51"/>
-<rectangle x1="-0.88" y1="2.8" x2="-0.39" y2="4.1" layer="51"/>
-<rectangle x1="-2.15" y1="2.8" x2="-1.66" y2="4.1" layer="51"/>
-<circle x="-2.205" y="-1.595" radius="0.388971875" width="0.2032" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="DEC40PIN">
@@ -990,37 +934,37 @@ Source: www.ti.com sn75452b.pdf</description>
 <pin name="37" x="-7.62" y="-22.86" visible="pad" length="middle" swaplevel="1"/>
 <pin name="39" x="-7.62" y="-25.4" visible="pad" length="middle" swaplevel="1"/>
 </symbol>
-<symbol name="PWRN-1">
+<symbol name="PWRN">
 <text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-6.35" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
+<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
+<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
 </symbol>
-<symbol name="OR">
+<symbol name="75453">
 <wire x1="-1.27" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="-5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="-6.35" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-2.54" x2="-6.35" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.2446" y1="-5.0678" x2="7.5439" y2="0.0507" width="0.4064" layer="94" curve="60.147106" cap="flat"/>
+<wire x1="-7.62" y1="2.54" x2="-6.096" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-6.096" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.2446" y1="-5.0678" x2="7.5439" y2="0.0507" width="0.4064" layer="94" curve="60.147761" cap="flat"/>
 <wire x1="-1.2446" y1="5.0678" x2="7.5442" y2="-0.0505" width="0.4064" layer="94" curve="-60.148802" cap="flat"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94" curve="-77.319617"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94" curve="-90"/>
 <text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="oc" rot="R180"/>
 <pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
 </symbol>
-<symbol name="NAND">
+<symbol name="7403">
+<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
 <text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="oc" function="dot" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1126,13 +1070,12 @@ Source: www.ti.com sn75452b.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS75453" prefix="E">
-<description>&lt;b&gt;OR&lt;/b&gt; PERIPHERAL DRIVERS FOR HIGH-CURRENT SWITCHING AT VERY HIGH SPEEDS&lt;p&gt;
-Source: www.ti.com sn75452b.pdf</description>
+<deviceset name="DS75453" prefix="IC">
+<description>Quad 2-input &lt;b&gt;OR&lt;/b&gt; gate, open collector output</description>
 <gates>
-<gate name="A" symbol="OR" x="0" y="12.7"/>
-<gate name="B" symbol="OR" x="0" y="-12.7"/>
-<gate name="P" symbol="PWRN-1" x="17.78" y="0"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
+<gate name="A" symbol="75453" x="20.32" y="7.62" swaplevel="1"/>
+<gate name="B" symbol="75453" x="20.32" y="-10.16" swaplevel="1"/>
 </gates>
 <devices>
 <device name="N" package="DIL08">
@@ -1140,53 +1083,8 @@ Source: www.ti.com sn75452b.pdf</description>
 <connect gate="A" pin="I0" pad="1"/>
 <connect gate="A" pin="I1" pad="2"/>
 <connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="P" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="JG" package="DIL08">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="P" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="D" package="D_R-PDSO-G8">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="P" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PS" package="PS_R-PDSO-G8">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
+<connect gate="B" pin="I0" pad="6"/>
+<connect gate="B" pin="I1" pad="7"/>
 <connect gate="B" pin="O" pad="5"/>
 <connect gate="P" pin="GND" pad="4"/>
 <connect gate="P" pin="VCC" pad="8"/>
@@ -1197,13 +1095,12 @@ Source: www.ti.com sn75452b.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS75452" prefix="E">
-<description>&lt;b&gt;NAND&lt;/b&gt; PERIPHERAL DRIVERS FOR HIGH-CURRENT SWITCHING AT VERY HIGH SPEEDS&lt;p&gt;
-Source: www.ti.com sn75452b.pdf</description>
+<deviceset name="DS75452" prefix="IC">
+<description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt; gate, open collector output</description>
 <gates>
-<gate name="A" symbol="NAND" x="0" y="10.16"/>
-<gate name="B" symbol="NAND" x="0" y="-10.16"/>
-<gate name="P" symbol="PWRN-1" x="17.78" y="0"/>
+<gate name="A" symbol="7403" x="20.32" y="7.62" swaplevel="1"/>
+<gate name="B" symbol="7403" x="20.32" y="-10.16" swaplevel="1"/>
+<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL08">
@@ -1211,53 +1108,8 @@ Source: www.ti.com sn75452b.pdf</description>
 <connect gate="A" pin="I0" pad="1"/>
 <connect gate="A" pin="I1" pad="2"/>
 <connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="P" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="JG" package="DIL08">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="P" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="D" package="D_R-PDSO-G8">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
-<connect gate="B" pin="O" pad="5"/>
-<connect gate="P" pin="GND" pad="4"/>
-<connect gate="P" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PS" package="PS_R-PDSO-G8">
-<connects>
-<connect gate="A" pin="I0" pad="1"/>
-<connect gate="A" pin="I1" pad="2"/>
-<connect gate="A" pin="O" pad="3"/>
-<connect gate="B" pin="I0" pad="7"/>
-<connect gate="B" pin="I1" pad="6"/>
+<connect gate="B" pin="I0" pad="6"/>
+<connect gate="B" pin="I1" pad="7"/>
 <connect gate="B" pin="O" pad="5"/>
 <connect gate="P" pin="GND" pad="4"/>
 <connect gate="P" pin="VCC" pad="8"/>
@@ -1273,10 +1125,24 @@ Source: www.ti.com sn75452b.pdf</description>
 <library name="xess">
 <packages>
 <package name="3S1000">
-<wire x1="-1.27" y1="54.61" x2="45.72" y2="54.61" width="0.127" layer="21"/>
 <wire x1="45.72" y1="54.61" x2="45.72" y2="-52.07" width="0.127" layer="21"/>
-<wire x1="45.72" y1="-52.07" x2="-1.27" y2="-52.07" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-52.07" x2="-1.27" y2="54.61" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-77.47" x2="45.72" y2="-77.47" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="76.2" x2="45.72" y2="76.2" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-71.12" x2="15.24" y2="-71.12" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-71.12" x2="15.24" y2="-77.47" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-52.07" x2="-6.35" y2="-52.07" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-52.07" x2="-6.35" y2="-71.12" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-71.12" x2="-1.27" y2="-71.12" width="0.127" layer="21"/>
+<wire x1="45.72" y1="-77.47" x2="50.8" y2="-77.47" width="0.127" layer="21"/>
+<wire x1="50.8" y1="-77.47" x2="50.8" y2="-52.07" width="0.127" layer="21"/>
+<wire x1="50.8" y1="-52.07" x2="45.72" y2="-52.07" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="76.2" x2="-6.35" y2="76.2" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="76.2" x2="-6.35" y2="54.61" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="54.61" x2="-1.27" y2="54.61" width="0.127" layer="21"/>
+<wire x1="45.72" y1="54.61" x2="50.8" y2="54.61" width="0.127" layer="21"/>
+<wire x1="50.8" y1="54.61" x2="50.8" y2="76.2" width="0.127" layer="21"/>
+<wire x1="50.8" y1="76.2" x2="45.72" y2="76.2" width="0.127" layer="21"/>
 <pad name="1" x="0" y="0" drill="1.016" shape="square"/>
 <pad name="2" x="0" y="-2.54" drill="1.016"/>
 <pad name="3" x="0" y="-5.08" drill="1.016"/>
@@ -1371,6 +1237,12 @@ Source: www.ti.com sn75452b.pdf</description>
 <text x="48.26" y="2.54" size="1.27" layer="21">43</text>
 <text x="15.24" y="2.54" size="2.54" layer="21">&gt;NAME</text>
 <text x="15.24" y="-2.54" size="2.54" layer="21">&gt;VALUE</text>
+<text x="12.7" y="71.12" size="1.27" layer="21">Parallel Connector</text>
+<text x="29.21" y="-73.66" size="1.27" layer="21">VGA Connector</text>
+<text x="0" y="-67.31" size="1.27" layer="21">PS2 Connector</text>
+<rectangle x1="-6.35" y1="76.2" x2="50.8" y2="101.6" layer="39"/>
+<rectangle x1="-6.35" y1="-102.87" x2="50.8" y2="-77.47" layer="39"/>
+<rectangle x1="-6.35" y1="-77.47" x2="15.24" y2="-71.12" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -1468,7 +1340,7 @@ Source: www.ti.com sn75452b.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="3S1000">
+<deviceset name="3S1000" prefix="XESS">
 <gates>
 <gate name="G$1" symbol="3S1000" x="5.08" y="0"/>
 </gates>
@@ -18100,11 +17972,6 @@ Based on the following sources:
 <label x="317.5" y="91.44" size="1.778" layer="95"/>
 <pinref part="E7" gate="A" pin="O"/>
 </segment>
-<segment>
-<wire x1="314.96" y1="76.2" x2="325.12" y2="76.2" width="0.1524" layer="91"/>
-<label x="317.5" y="76.2" size="1.778" layer="95"/>
-<pinref part="E7" gate="B" pin="O"/>
-</segment>
 </net>
 <net name="BAC08" class="0">
 <segment>
@@ -18132,6 +17999,13 @@ Based on the following sources:
 <wire x1="314.96" y1="15.24" x2="325.12" y2="15.24" width="0.1524" layer="91"/>
 <label x="317.5" y="15.24" size="1.778" layer="95"/>
 <pinref part="E8" gate="B" pin="O"/>
+</segment>
+</net>
+<net name="BAC07" class="0">
+<segment>
+<wire x1="314.96" y1="76.2" x2="325.12" y2="76.2" width="0.1524" layer="91"/>
+<label x="317.5" y="76.2" size="1.778" layer="95"/>
+<pinref part="E7" gate="B" pin="O"/>
 </segment>
 </net>
 </nets>
@@ -19259,6 +19133,23 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,2,101.657,88.8365,E29,F,I,,,"/>
+<approved hash="114,3,200.66,45.6565,E26,C,I0,,,"/>
+<approved hash="114,3,200.66,45.6565,E26,C,I1,,,"/>
+<approved hash="114,3,200.66,45.6565,E26,C,I2,,,"/>
+<approved hash="113,1,114.3,148.785,SV7,,,,,"/>
+<approved hash="113,1,152.4,148.785,SV8,,,,,"/>
+<approved hash="113,1,195.58,152.595,SV9,,,,,"/>
+<approved hash="113,1,114.3,31.9447,SV1,,,,,"/>
+<approved hash="113,1,152.4,31.9447,SV2,,,,,"/>
+<approved hash="113,1,195.58,35.7547,SV3,,,,,"/>
+<approved hash="113,1,114.3,90.3647,SV4,,,,,"/>
+<approved hash="113,1,152.4,90.3647,SV5,,,,,"/>
+<approved hash="113,1,195.58,94.1747,SV6,,,,,"/>
+<approved hash="113,3,124.46,158.908,X1,,,,,"/>
+<approved hash="113,3,160.299,48.0145,J2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

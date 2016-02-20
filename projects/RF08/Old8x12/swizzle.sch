@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2809,6 +2809,23 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,38.1,149.665,C35L,,,,,"/>
+<approved hash="113,1,124.46,149.665,C36L,,,,,"/>
+<approved hash="113,1,220.98,149.665,D34L,,,,,"/>
+<approved hash="113,1,38.1,42.9853,D35L,,,,,"/>
+<approved hash="113,1,124.46,42.9853,D36L,,,,,"/>
+<approved hash="113,1,172.72,21.3953,SV3,,,,,"/>
+<approved hash="113,1,172.72,69.6553,SV4,,,,,"/>
+<approved hash="113,1,86.36,21.3953,SV5,,,,,"/>
+<approved hash="113,1,86.36,69.6553,SV6,,,,,"/>
+<approved hash="113,1,269.24,128.075,SV7,,,,,"/>
+<approved hash="113,1,269.24,176.335,SV8,,,,,"/>
+<approved hash="113,1,172.72,128.075,SV9,,,,,"/>
+<approved hash="113,1,172.72,176.335,SV10,,,,,"/>
+<approved hash="113,1,86.36,128.075,SV11,,,,,"/>
+<approved hash="113,1,86.36,176.335,SV12,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

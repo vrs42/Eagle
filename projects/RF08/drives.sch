@@ -4900,6 +4900,33 @@ high speed (Philips)</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,101.6,149.797,IC44,C,I0,,,"/>
+<approved hash="114,1,101.6,149.797,IC44,C,I1,,,"/>
+<approved hash="114,1,101.6,149.797,IC44,D,I0,,,"/>
+<approved hash="114,1,101.6,149.797,IC44,D,I1,,,"/>
+<approved hash="104,1,63.5,144.78,IC44P,VSS,GND,,,"/>
+<approved hash="104,1,63.5,160.02,IC44P,VDD,MEMSUPPLY,,,"/>
+<approved hash="114,1,279.4,149.797,IC46,C,I0,,,"/>
+<approved hash="114,1,279.4,149.797,IC46,C,I1,,,"/>
+<approved hash="114,1,279.4,149.797,IC46,D,I0,,,"/>
+<approved hash="114,1,279.4,149.797,IC46,D,I1,,,"/>
+<approved hash="104,1,241.3,144.78,IC46P,VSS,GND,,,"/>
+<approved hash="104,1,241.3,160.02,IC46P,VDD,MEMSUPPLY,,,"/>
+<approved hash="104,1,55.88,195.58,IC42,VSS,GND,,,"/>
+<approved hash="104,1,55.88,205.74,IC42,VCC,MEMSUPPLY,,,"/>
+<approved hash="104,1,111.76,195.58,IC43,VSS,GND,,,"/>
+<approved hash="104,1,111.76,205.74,IC43,VCC,MEMSUPPLY,,,"/>
+<approved hash="104,1,233.68,195.58,IC39,VSS,GND,,,"/>
+<approved hash="104,1,233.68,205.74,IC39,VCC,MEMSUPPLY,,,"/>
+<approved hash="104,1,289.56,195.58,IC45,VSS,GND,,,"/>
+<approved hash="104,1,289.56,205.74,IC45,VCC,MEMSUPPLY,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME4,,,,,"/>
+<approved hash="113,1,149.86,223.325,RF08A,,,,,"/>
+<approved hash="113,1,327.66,223.325,RF08B,,,,,"/>
+<approved hash="113,1,79.6769,148.979,JP1,,,,,"/>
+<approved hash="113,1,257.477,148.979,JP2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

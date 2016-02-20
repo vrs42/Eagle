@@ -11227,6 +11227,24 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,111.76,43.18,E1G$3,VCCINT,VCC,,,"/>
+<approved hash="104,1,121.92,43.18,E1G$4,VCCINT,VCC,,,"/>
+<approved hash="104,1,104.14,43.18,E1G$5,VCCIO,VCC,,,"/>
+<approved hash="104,1,106.68,43.18,E1G$6,VCCIO,VCC,,,"/>
+<approved hash="104,1,109.22,43.18,E1G$7,VCCIO,VCC,,,"/>
+<approved hash="104,1,114.3,43.18,E1G$8,VCCIO,VCC,,,"/>
+<approved hash="104,1,116.84,43.18,E1G$9,VCCIO,VCC,,,"/>
+<approved hash="104,1,119.38,43.18,E1G$1,VCCIO,VCC,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,348.175,228.6,J1,,,,,"/>
+<approved hash="113,1,147.32,29.138,E25,,,,,"/>
+<approved hash="113,1,18.669,27.94,EDGE$3,,,,,"/>
+<approved hash="113,1,127,72.7287,W2W1,,,,,"/>
+<approved hash="113,1,157.48,79.6713,W4W3,,,,,"/>
+<approved hash="113,1,336.939,66.04,WTM,,,,,"/>
+<approved hash="113,1,302.26,183.955,ISP,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

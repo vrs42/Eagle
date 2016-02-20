@@ -5578,16 +5578,25 @@ see also &lt;a href=DEVICE:PIC16F8*&gt;PIC16F8*&lt;/a&gt;</description>
 <instances>
 <instance part="R1" gate="G$1" x="116.84" y="99.06" smashed="yes">
 <attribute name="NAME" x="113.03" y="100.5586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.03" y="95.758" size="1.778" layer="96"/>
+<attribute name="VALUE" x="118.11" y="100.838" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="116.84" y="93.98"/>
-<instance part="R3" gate="G$1" x="116.84" y="88.9"/>
-<instance part="R4" gate="G$1" x="116.84" y="83.82"/>
-<instance part="R5" gate="G$1" x="116.84" y="78.74"/>
-<instance part="R6" gate="G$1" x="149.86" y="88.9" smashed="yes" rot="MR270">
-<attribute name="NAME" x="148.3614" y="92.71" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="153.162" y="92.71" size="1.778" layer="96" rot="MR270"/>
+<instance part="R2" gate="G$1" x="116.84" y="93.98" smashed="yes">
+<attribute name="NAME" x="113.03" y="95.4786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="95.758" size="1.778" layer="96"/>
 </instance>
+<instance part="R3" gate="G$1" x="116.84" y="88.9" smashed="yes">
+<attribute name="NAME" x="113.03" y="90.3986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="90.678" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="116.84" y="83.82" smashed="yes">
+<attribute name="NAME" x="113.03" y="85.3186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="85.598" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="116.84" y="78.74" smashed="yes">
+<attribute name="NAME" x="113.03" y="80.2386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="80.518" size="1.778" layer="96"/>
+</instance>
+<instance part="R6" gate="G$1" x="149.86" y="88.9" rot="MR270"/>
 <instance part="V5" gate="G$1" x="45.72" y="86.36"/>
 <instance part="V6" gate="GND" x="45.72" y="50.8"/>
 <instance part="IC1" gate="G$1" x="63.5" y="66.04"/>
@@ -5867,6 +5876,12 @@ see also &lt;a href=DEVICE:PIC16F8*&gt;PIC16F8*&lt;/a&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,48.26,76.2,IC1,OSC1,,,,"/>
+<approved hash="104,1,48.26,53.34,IC1,VSS,GND,,,"/>
+<approved hash="104,1,48.26,83.82,IC1,VDD,VCC,,,"/>
+<approved hash="113,1,147.709,99.06,S2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

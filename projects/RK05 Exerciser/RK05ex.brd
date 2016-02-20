@@ -1349,7 +1349,6 @@ design rules under a new name.</description>
 <element name="C41" library="rcl" package="C050-025X075" value=".22uf" x="297.18" y="33.02" rot="R90"/>
 <element name="C42" library="rcl" package="C050-025X075" value=".22uf" x="241.3" y="68.58" rot="R270"/>
 <element name="C43" library="rcl" package="C050-025X075" value=".22uf" x="294.64" y="68.58" rot="R270"/>
-<element name="IC1" library="linear" package="DIL08" value="OPA1013P" x="77.47" y="161.29"/>
 <element name="RN1" library="resistor-sil" package="SIL10" value="180" x="255.27" y="71.12">
 <attribute name="OC_NEWARK" value="unknown" x="255.27" y="71.12" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="255.27" y="71.12" size="1.778" layer="27" display="off"/>
@@ -6384,12 +6383,6 @@ design rules under a new name.</description>
 <wire x1="144.145" y1="15.875" x2="142.875" y2="17.145" width="0.508" layer="16"/>
 <wire x1="294.005" y1="17.145" x2="294.64" y2="17.78" width="0.508" layer="16"/>
 <wire x1="142.875" y1="17.145" x2="142.24" y2="17.78" width="0.508" layer="16"/>
-</signal>
-<signal name="V+">
-<contactref element="IC1" pad="8"/>
-</signal>
-<signal name="V-">
-<contactref element="IC1" pad="4"/>
 </signal>
 </signals>
 </board>

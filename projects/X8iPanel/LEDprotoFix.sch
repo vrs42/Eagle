@@ -8724,6 +8724,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,2,35.56,224.595,C40,,,,,"/>
+<approved hash="113,2,83.82,224.595,D40,,,,,"/>
+<approved hash="113,2,134.62,224.595,E40,,,,,"/>
+<approved hash="113,2,182.88,224.595,F40,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

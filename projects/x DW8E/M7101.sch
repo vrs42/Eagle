@@ -12844,31 +12844,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="dec-m">
-<packages>
-</packages>
-<symbols>
-<symbol name="NC">
-<text x="0" y="-0.254" size="1.27" layer="94" rot="R180">NC</text>
-<pin name="NC" x="0" y="0" visible="pad" length="short" direction="sup" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NC">
-<description>An unconnected pin</description>
-<gates>
-<gate name="NC" symbol="NC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="74xx-us">
 <description>&lt;b&gt;TTL Devices, 74xx Series with US Symbols&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
@@ -13907,7 +13882,6 @@ Based on the following sources:
 <part name="V21" library="supply2" deviceset="VCC" device=""/>
 <part name="V22" library="supply2" deviceset="GND" device=""/>
 <part name="V23" library="supply2" deviceset="GND" device=""/>
-<part name="U$2" library="dec-m" deviceset="NC" device=""/>
 <part name="W2" library="jumper" deviceset="JP1E" device=""/>
 <part name="DL1" library="dec-con" deviceset="RCL-L-00-05" device=""/>
 <part name="DL2" library="dec-con" deviceset="RCL-L-00-05" device=""/>
@@ -14104,7 +14078,6 @@ Based on the following sources:
 <instance part="V21" gate="G$1" x="162.56" y="185.42" rot="R90"/>
 <instance part="V22" gate="GND" x="299.72" y="71.12"/>
 <instance part="V23" gate="GND" x="332.74" y="71.12"/>
-<instance part="U$2" gate="NC" x="68.58" y="144.78" rot="R270"/>
 <instance part="W2" gate="A" x="20.32" y="236.22" rot="R270"/>
 <instance part="DL1" gate="G$1" x="91.44" y="210.82" smashed="yes">
 <attribute name="NAME" x="87.884" y="208.28" size="1.778" layer="96"/>
@@ -15768,12 +15741,6 @@ Based on the following sources:
 <pinref part="E15" gate="D" pin="O"/>
 </segment>
 </net>
-<net name="P$1" class="0">
-<segment>
-<pinref part="E23" gate="B" pin="C"/>
-<pinref part="U$2" gate="NC" pin="NC"/>
-</segment>
-</net>
 <net name="N$43" class="0">
 <segment>
 <wire x1="12.7" y1="236.22" x2="17.78" y2="236.22" width="0.1524" layer="91"/>
@@ -15800,6 +15767,13 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,68.58,144.78,E23B,C,,,,"/>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,308.229,58.42,B,,,,,"/>
+<approved hash="113,1,34.3375,247.261,W1,,,,,"/>
+<approved hash="113,1,19.0975,235.831,W2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

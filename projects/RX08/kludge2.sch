@@ -1914,6 +1914,21 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="114,1,129.54,15.1765,E6,A,CLR,,,"/>
+<approved hash="114,1,129.54,15.1765,E6,A,D,,,"/>
+<approved hash="114,1,129.54,15.1765,E6,A,CLK,,,"/>
+<approved hash="114,1,129.54,15.1765,E6,A,PRE,,,"/>
+<approved hash="114,1,129.54,101.537,E17,A,CLK,,,"/>
+<approved hash="114,1,129.54,101.537,E17,A,PRE,,,"/>
+<approved hash="114,1,129.54,101.537,E17,A,CLR,,,"/>
+<approved hash="114,1,129.54,101.537,E17,A,J,,,"/>
+<approved hash="114,1,129.54,101.537,E17,A,K,,,"/>
+<approved hash="113,1,33.02,41.838,P26,,,,,"/>
+<approved hash="113,1,33.02,17.708,P19,,,,,"/>
+<approved hash="113,1,63.5,101.528,P17,,,,,"/>
+<approved hash="113,1,17.7377,100.525,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

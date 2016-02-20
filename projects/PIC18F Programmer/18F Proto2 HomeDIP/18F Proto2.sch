@@ -15405,9 +15405,9 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="PWR_L" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="-35.56" x2="101.6" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-35.56" x2="101.6" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="-35.56" x2="101.6" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-35.56" x2="101.6" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-35.56" x2="96.52" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="-38.1" x2="96.52" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-33.02" x2="91.44" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-35.56" x2="96.52" y2="-35.56" width="0.1524" layer="91"/>
@@ -15459,11 +15459,10 @@ Source: 008-0260-0_E.pdf</description>
 <segment>
 <wire x1="91.44" y1="-25.4" x2="91.44" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="-25.4" x2="101.6" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-22.86" x2="96.52" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-22.86" x2="96.52" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="-22.86" x2="96.52" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-22.86" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-22.86" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-22.86" x2="96.52" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-22.86" x2="96.52" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="96.52" y="-22.86"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="+"/>
@@ -15758,6 +15757,19 @@ Source: 008-0260-0_E.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,43.18,53.34,18F2X5X,VSS,GND,,,"/>
+<approved hash="104,1,119.38,48.26,18F2X5X,VSS,GND,,,"/>
+<approved hash="113,1,147.557,44.5812,UART,,,,,"/>
+<approved hash="113,1,-29.2523,44.5812,ANALOG_IN,,,,,"/>
+<approved hash="113,1,43.4171,-18.9188,CCP2,,,,,"/>
+<approved hash="113,1,43.4171,-34.1588,CCP1,,,,,"/>
+<approved hash="113,1,173.27,65.9088,PORTB,,,,,"/>
+<approved hash="113,1,162.323,-20.1888,+/-1,,,,,"/>
+<approved hash="113,1,162.323,-32.8888,+/-2,,,,,"/>
+<approved hash="113,1,15.24,75.8105,RESET,,,,,"/>
+<approved hash="113,1,167.174,36.0468,X1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

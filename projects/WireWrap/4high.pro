@@ -1,24 +1,24 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/PROGRAM FILES/EAGLE-4.11/projects/WireWrap/4high.brd
+Job           : C:/Users/Vince/Documents/eagle/projects/WireWrap/4high.brd
 
-Start at      :   11:23:37a ( 9/25/2006)
-End at        :   11:24:16a ( 9/25/2006)
-Elapsed time  :   00:00:23
+Start at      : 15:54:45 (2/18/2016)
+End at        : 15:54:47 (2/18/2016)
+Elapsed time  : 00:00:02
 
-Signals       :  1140   RoutingGrid: 25 mil  Layers: 2
-Connections   :  3068   predefined:  3052 ( 0 Vias )
+Signals       :  1140   RoutingGrid: 12.5 mil  Layers: 2
+Connections   :  3052   predefined:  3052 ( 0 Vias )
 
-Router memory :   615264
+Router memory :   2327556
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:05  00:00:04  00:00:05  00:00:04  00:00:05
+Time per pass     :  00:00:00  00:00:00  00:00:01  00:00:01  00:00:00
 Number of Ripups  :         0         0         0         0         0
 max. Level        :         0         0         0         0         0
 max. Total        :         0         0         0         0         0
 
-Routed            :        16        16        16        16        16
+Routed            :         0         0         0         0         0
 Vias              :         0         0         0         0         0
 Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 

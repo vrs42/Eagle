@@ -6987,6 +6987,7 @@ Based on the following sources:
 <wire x1="208.28" y1="220.98" x2="205.74" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="18" pin="1"/>
+<label x="205.74" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="55.88" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
@@ -6999,6 +7000,7 @@ Based on the following sources:
 <wire x1="208.28" y1="175.26" x2="205.74" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="17" pin="1"/>
+<label x="205.74" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="58.42" x2="220.98" y2="58.42" width="0.1524" layer="91"/>
@@ -7011,6 +7013,7 @@ Based on the following sources:
 <wire x1="276.86" y1="198.12" x2="274.32" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="16" pin="1"/>
+<label x="274.32" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="60.96" x2="220.98" y2="60.96" width="0.1524" layer="91"/>
@@ -7023,6 +7026,7 @@ Based on the following sources:
 <wire x1="71.12" y1="175.26" x2="68.58" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="15" pin="1"/>
+<label x="68.58" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="63.5" x2="220.98" y2="63.5" width="0.1524" layer="91"/>
@@ -7035,6 +7039,7 @@ Based on the following sources:
 <wire x1="208.28" y1="243.84" x2="205.74" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="14" pin="1"/>
+<label x="205.74" y="246.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="66.04" x2="220.98" y2="66.04" width="0.1524" layer="91"/>
@@ -7047,6 +7052,7 @@ Based on the following sources:
 <wire x1="71.12" y1="152.4" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="13" pin="1"/>
+<label x="68.58" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
@@ -7059,6 +7065,7 @@ Based on the following sources:
 <wire x1="276.86" y1="220.98" x2="274.32" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="8" pin="1"/>
+<label x="274.32" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
@@ -7071,6 +7078,7 @@ Based on the following sources:
 <wire x1="345.44" y1="198.12" x2="342.9" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="7" pin="1"/>
+<label x="342.9" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="81.28" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
@@ -7083,6 +7091,7 @@ Based on the following sources:
 <wire x1="208.28" y1="152.4" x2="205.74" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="6" pin="1"/>
+<label x="205.74" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="83.82" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
@@ -7095,6 +7104,7 @@ Based on the following sources:
 <wire x1="139.7" y1="129.54" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="5" pin="1"/>
+<label x="137.16" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="86.36" x2="220.98" y2="86.36" width="0.1524" layer="91"/>
@@ -7107,6 +7117,7 @@ Based on the following sources:
 <wire x1="345.44" y1="129.54" x2="342.9" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="4" pin="1"/>
+<label x="342.9" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="88.9" x2="220.98" y2="88.9" width="0.1524" layer="91"/>
@@ -7119,6 +7130,7 @@ Based on the following sources:
 <wire x1="208.28" y1="198.12" x2="205.74" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="1" pin="1"/>
+<label x="205.74" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="96.52" x2="231.14" y2="96.52" width="0.1524" layer="91"/>
@@ -7131,6 +7143,7 @@ Based on the following sources:
 <wire x1="345.44" y1="220.98" x2="342.9" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="15" pin="1"/>
+<label x="342.9" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="66.04" x2="256.54" y2="66.04" width="0.1524" layer="91"/>
@@ -7143,6 +7156,7 @@ Based on the following sources:
 <wire x1="139.7" y1="198.12" x2="137.16" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="12" pin="1"/>
+<label x="137.16" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="71.12" x2="220.98" y2="71.12" width="0.1524" layer="91"/>
@@ -7155,6 +7169,7 @@ Based on the following sources:
 <wire x1="139.7" y1="152.4" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="3" pin="1"/>
+<label x="137.16" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="91.44" x2="256.54" y2="91.44" width="0.1524" layer="91"/>
@@ -7167,6 +7182,7 @@ Based on the following sources:
 <wire x1="276.86" y1="175.26" x2="274.32" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="1" pin="1"/>
+<label x="274.32" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="256.54" y1="96.52" x2="246.38" y2="96.52" width="0.1524" layer="91"/>
@@ -7179,6 +7195,7 @@ Based on the following sources:
 <wire x1="276.86" y1="129.54" x2="274.32" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="2" pin="1"/>
+<label x="274.32" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="93.98" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
@@ -7191,6 +7208,7 @@ Based on the following sources:
 <wire x1="276.86" y1="152.4" x2="274.32" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <pinref part="TOP" gate="3" pin="1"/>
+<label x="274.32" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="91.44" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
@@ -7203,6 +7221,7 @@ Based on the following sources:
 <wire x1="208.28" y1="129.54" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="2" pin="1"/>
+<label x="205.74" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="93.98" x2="256.54" y2="93.98" width="0.1524" layer="91"/>
@@ -7215,6 +7234,7 @@ Based on the following sources:
 <wire x1="345.44" y1="152.4" x2="342.9" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="4" pin="1"/>
+<label x="342.9" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="88.9" x2="256.54" y2="88.9" width="0.1524" layer="91"/>
@@ -7227,6 +7247,7 @@ Based on the following sources:
 <wire x1="71.12" y1="129.54" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="5" pin="1"/>
+<label x="68.58" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="256.54" y1="86.36" x2="246.38" y2="86.36" width="0.1524" layer="91"/>
@@ -7239,6 +7260,7 @@ Based on the following sources:
 <wire x1="276.86" y1="243.84" x2="274.32" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="19" pin="1"/>
+<label x="274.32" y="246.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="55.88" x2="256.54" y2="55.88" width="0.1524" layer="91"/>
@@ -7251,6 +7273,7 @@ Based on the following sources:
 <wire x1="71.12" y1="220.98" x2="68.58" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="18" pin="1"/>
+<label x="68.58" y="226.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="58.42" x2="256.54" y2="58.42" width="0.1524" layer="91"/>
@@ -7263,6 +7286,7 @@ Based on the following sources:
 <wire x1="71.12" y1="243.84" x2="68.58" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="17" pin="1"/>
+<label x="68.58" y="248.92" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="60.96" x2="256.54" y2="60.96" width="0.1524" layer="91"/>
@@ -7275,6 +7299,7 @@ Based on the following sources:
 <wire x1="139.7" y1="243.84" x2="137.16" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="16" pin="1"/>
+<label x="137.16" y="246.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="63.5" x2="256.54" y2="63.5" width="0.1524" layer="91"/>
@@ -7287,6 +7312,7 @@ Based on the following sources:
 <wire x1="345.44" y1="175.26" x2="342.9" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="14" pin="1"/>
+<label x="342.9" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="68.58" x2="256.54" y2="68.58" width="0.1524" layer="91"/>
@@ -7299,6 +7325,7 @@ Based on the following sources:
 <wire x1="139.7" y1="220.98" x2="137.16" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="12" pin="1"/>
+<label x="137.16" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="71.12" x2="256.54" y2="71.12" width="0.1524" layer="91"/>
@@ -7311,6 +7338,7 @@ Based on the following sources:
 <wire x1="345.44" y1="243.84" x2="342.9" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="11" pin="1"/>
+<label x="342.9" y="246.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="78.74" x2="256.54" y2="78.74" width="0.1524" layer="91"/>
@@ -7323,6 +7351,7 @@ Based on the following sources:
 <wire x1="71.12" y1="198.12" x2="68.58" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="9" pin="1"/>
+<label x="68.58" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="256.54" y1="81.28" x2="246.38" y2="81.28" width="0.1524" layer="91"/>
@@ -7335,6 +7364,7 @@ Based on the following sources:
 <wire x1="139.7" y1="175.26" x2="137.16" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="BOT" gate="6" pin="1"/>
+<label x="137.16" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="83.82" x2="256.54" y2="83.82" width="0.1524" layer="91"/>
@@ -7345,6 +7375,11 @@ Based on the following sources:
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,97.409,175.26,EDGE,,,,,"/>
+<approved hash="113,1,238.76,74.7353,SV1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

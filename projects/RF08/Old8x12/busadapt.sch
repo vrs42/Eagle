@@ -2112,6 +2112,10 @@
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,73.66,111.955,BUS1,,,,,"/>
+<approved hash="113,1,147.32,111.955,BUS2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
