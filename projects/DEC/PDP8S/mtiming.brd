@@ -75,7 +75,10 @@
 <plain>
 </plain>
 <libraries>
-<library name="dec-r">
+<library name="dec-m">
+<description>DEC Flip-Chips
+&lt;BR&gt;Vincent R. Slyngstad
+&lt;BR&gt;vrs@msn.com</description>
 <packages>
 <package name="CBLOCK">
 <description>Connector block outline with mounting holes.</description>
@@ -269,36 +272,36 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="dec-r" package="CBLOCK" value="" x="0" y="133.35"/>
-<element name="U$2" library="dec-r" package="CBLOCK" value="" x="50.8" y="133.35"/>
-<element name="U$3" library="dec-r" package="CBLOCK" value="" x="0" y="266.7"/>
-<element name="U$4" library="dec-r" package="CBLOCK" value="" x="50.8" y="266.7"/>
-<element name="U$5" library="dec-r" package="CBLOCK" value="" x="101.6" y="266.7"/>
-<element name="U$6" library="dec-r" package="CBLOCK" value="" x="101.6" y="133.35"/>
-<element name="U$7" library="dec-r" package="CBLOCK" value="" x="457.2" y="266.7"/>
-<element name="U$8" library="dec-r" package="CBLOCK" value="" x="457.2" y="133.35"/>
-<element name="U$9" library="dec-r" package="CBLOCK" value="" x="457.2" y="0"/>
-<element name="U$10" library="dec-r" package="CBLOCK" value="" x="406.4" y="266.7"/>
-<element name="U$11" library="dec-r" package="CBLOCK" value="" x="406.4" y="133.35"/>
-<element name="U$12" library="dec-r" package="CBLOCK" value="" x="406.4" y="0"/>
-<element name="U$13" library="dec-r" package="CBLOCK" value="" x="355.6" y="266.7"/>
-<element name="U$14" library="dec-r" package="CBLOCK" value="" x="355.6" y="133.35"/>
-<element name="U$15" library="dec-r" package="CBLOCK" value="" x="355.6" y="0"/>
-<element name="U$16" library="dec-r" package="CBLOCK" value="" x="152.4" y="266.7"/>
-<element name="U$17" library="dec-r" package="CBLOCK" value="" x="152.4" y="133.35"/>
-<element name="U$18" library="dec-r" package="CBLOCK" value="" x="0" y="0"/>
-<element name="U$19" library="dec-r" package="CBLOCK" value="" x="50.8" y="0"/>
-<element name="U$20" library="dec-r" package="CBLOCK" value="" x="152.4" y="0"/>
-<element name="U$21" library="dec-r" package="CBLOCK" value="" x="101.6" y="0"/>
-<element name="U$22" library="dec-r" package="CBLOCK" value="" x="203.2" y="266.7"/>
-<element name="U$23" library="dec-r" package="CBLOCK" value="" x="203.2" y="133.35"/>
-<element name="U$24" library="dec-r" package="CBLOCK" value="" x="203.2" y="0"/>
-<element name="U$25" library="dec-r" package="CBLOCK" value="" x="254" y="133.35"/>
-<element name="U$26" library="dec-r" package="CBLOCK" value="" x="304.8" y="133.35"/>
-<element name="U$27" library="dec-r" package="CBLOCK" value="" x="254" y="266.7"/>
-<element name="U$28" library="dec-r" package="CBLOCK" value="" x="304.8" y="266.7"/>
-<element name="U$29" library="dec-r" package="CBLOCK" value="" x="304.8" y="0"/>
-<element name="U$30" library="dec-r" package="CBLOCK" value="" x="254" y="0"/>
+<element name="U$1" library="dec-m" package="CBLOCK" value="" x="0" y="266.7"/>
+<element name="U$3" library="dec-m" package="CBLOCK" value="" x="50.8" y="266.7"/>
+<element name="U$4" library="dec-m" package="CBLOCK" value="" x="101.6" y="266.7"/>
+<element name="U$5" library="dec-m" package="CBLOCK" value="" x="152.4" y="266.7"/>
+<element name="U$7" library="dec-m" package="CBLOCK" value="" x="203.2" y="266.7"/>
+<element name="U$10" library="dec-m" package="CBLOCK" value="" x="254" y="266.7"/>
+<element name="U$13" library="dec-m" package="CBLOCK" value="" x="304.8" y="266.7"/>
+<element name="U$16" library="dec-m" package="CBLOCK" value="" x="355.6" y="266.7"/>
+<element name="U$18" library="dec-m" package="CBLOCK" value="" x="406.4" y="266.7"/>
+<element name="U$22" library="dec-m" package="CBLOCK" value="" x="457.2" y="266.7"/>
+<element name="U$2" library="dec-m" package="CBLOCK" value="" x="0" y="133.35"/>
+<element name="U$6" library="dec-m" package="CBLOCK" value="" x="50.8" y="133.35"/>
+<element name="U$8" library="dec-m" package="CBLOCK" value="" x="101.6" y="133.35"/>
+<element name="U$9" library="dec-m" package="CBLOCK" value="" x="152.4" y="133.35"/>
+<element name="U$11" library="dec-m" package="CBLOCK" value="" x="203.2" y="133.35"/>
+<element name="U$12" library="dec-m" package="CBLOCK" value="" x="254" y="133.35"/>
+<element name="U$14" library="dec-m" package="CBLOCK" value="" x="304.8" y="133.35"/>
+<element name="U$15" library="dec-m" package="CBLOCK" value="" x="355.6" y="133.35"/>
+<element name="U$17" library="dec-m" package="CBLOCK" value="" x="406.4" y="133.35"/>
+<element name="U$19" library="dec-m" package="CBLOCK" value="" x="457.2" y="133.35"/>
+<element name="U$20" library="dec-m" package="CBLOCK" value="" x="0" y="0"/>
+<element name="U$21" library="dec-m" package="CBLOCK" value="" x="50.8" y="0"/>
+<element name="U$23" library="dec-m" package="CBLOCK" value="" x="101.6" y="0"/>
+<element name="U$24" library="dec-m" package="CBLOCK" value="" x="152.4" y="0"/>
+<element name="U$25" library="dec-m" package="CBLOCK" value="" x="203.2" y="0"/>
+<element name="U$26" library="dec-m" package="CBLOCK" value="" x="254" y="0"/>
+<element name="U$27" library="dec-m" package="CBLOCK" value="" x="304.8" y="0"/>
+<element name="U$28" library="dec-m" package="CBLOCK" value="" x="355.6" y="0"/>
+<element name="U$29" library="dec-m" package="CBLOCK" value="" x="406.4" y="0"/>
+<element name="U$30" library="dec-m" package="CBLOCK" value="" x="457.2" y="0"/>
 </elements>
 <signals>
 <signal name="N$48">
