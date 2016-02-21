@@ -11678,7 +11678,6 @@
 <text x="7.62" y="-15.24" size="1.27" layer="94" rot="R270">SHIFT\\</text>
 <text x="-2.54" y="20.32" size="1.27" layer="94">Reader</text>
 <text x="-2.54" y="17.78" size="1.27" layer="94">Clock</text>
-<text x="-7.62" y="-20.32" size="1.27" layer="94" rot="R90">INITIALIZE</text>
 <pin name="AK" x="-15.24" y="7.62" visible="pad" length="middle" direction="in"/>
 <pin name="BS" x="-15.24" y="-5.08" visible="pad" length="middle" direction="in"/>
 <pin name="AM" x="15.24" y="27.94" visible="pad" length="middle" direction="out" rot="R180"/>
@@ -11688,7 +11687,6 @@
 <pin name="AU" x="15.24" y="10.16" visible="pad" length="middle" direction="out" rot="R180"/>
 <pin name="AT" x="15.24" y="-20.32" visible="pad" length="middle" direction="out" rot="R180"/>
 <pin name="BP" x="-15.24" y="25.4" visible="pad" length="middle" direction="in"/>
-<pin name="BT" x="-15.24" y="-17.78" visible="pad" length="middle" direction="in"/>
 </symbol>
 <symbol name="M705">
 <wire x1="-35.56" y1="38.1" x2="-35.56" y2="-30.48" width="0.254" layer="94"/>
@@ -19390,14 +19388,12 @@ Power: 5V@82ma (max.)
 <gates>
 <gate name="AC" symbol="POWER" x="27.94" y="10.16" addlevel="request"/>
 <gate name="BC" symbol="POWER" x="40.64" y="10.16" addlevel="request"/>
-<gate name="AB2" symbol="-15V" x="33.02" y="10.16" addlevel="request"/>
 <gate name="BB2" symbol="-15V" x="45.72" y="10.16" addlevel="request"/>
 <gate name="G$1" symbol="M715" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="H807-2">
 <connects>
-<connect gate="AB2" pin="-15V" pad="AB2"/>
 <connect gate="AC" pin="GND" pad="AC2"/>
 <connect gate="AC" pin="VCC" pad="AA2"/>
 <connect gate="BB2" pin="-15V" pad="BB2"/>
@@ -19412,7 +19408,6 @@ Power: 5V@82ma (max.)
 <connect gate="G$1" pin="BP" pad="BP2"/>
 <connect gate="G$1" pin="BR" pad="BR2"/>
 <connect gate="G$1" pin="BS" pad="BS2"/>
-<connect gate="G$1" pin="BT" pad="BT2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19420,7 +19415,6 @@ Power: 5V@82ma (max.)
 </device>
 <device name="S" package="H807S-2">
 <connects>
-<connect gate="AB2" pin="-15V" pad="AB2"/>
 <connect gate="AC" pin="GND" pad="AC2"/>
 <connect gate="AC" pin="VCC" pad="AA2"/>
 <connect gate="BB2" pin="-15V" pad="BB2"/>
@@ -19435,7 +19429,6 @@ Power: 5V@82ma (max.)
 <connect gate="G$1" pin="BP" pad="BP2"/>
 <connect gate="G$1" pin="BR" pad="BR2"/>
 <connect gate="G$1" pin="BS" pad="BS2"/>
-<connect gate="G$1" pin="BT" pad="BT2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19443,7 +19436,6 @@ Power: 5V@82ma (max.)
 </device>
 <device name="O" package="H800-2">
 <connects>
-<connect gate="AB2" pin="-15V" pad="AB2"/>
 <connect gate="AC" pin="GND" pad="AC2"/>
 <connect gate="AC" pin="VCC" pad="AA2"/>
 <connect gate="BB2" pin="-15V" pad="BB2"/>
@@ -19458,7 +19450,6 @@ Power: 5V@82ma (max.)
 <connect gate="G$1" pin="BP" pad="BP2"/>
 <connect gate="G$1" pin="BR" pad="BR2"/>
 <connect gate="G$1" pin="BS" pad="BS2"/>
-<connect gate="G$1" pin="BT" pad="BT2"/>
 </connects>
 <technologies>
 <technology name=""/>
