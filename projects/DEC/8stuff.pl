@@ -4,15 +4,15 @@
 # List work related to PDP-8 stuff.
 
 @todo = (
-# *linc8,
 # *straight8,
 # *pdp8s,
 # *pt08,
 # *tu55,
 # *tc01,
-# *tc08,
-# *pdp8i,
+  *tc08,
+  *pdp8i,
   *pdp8l,
+# *linc8,
 # *pdp12,
 );
 
