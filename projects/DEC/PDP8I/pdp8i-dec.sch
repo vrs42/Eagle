@@ -1557,7 +1557,7 @@ DIN A3, landscape with extra doc field</description>
 <text x="-63.754" y="-38.1" size="1.27" layer="94" rot="R90">BA1</text>
 <text x="-53.594" y="-38.1" size="1.27" layer="94" rot="R90">BB1</text>
 <text x="7.366" y="81.026" size="1.27" layer="94" rot="R90">AJ1</text>
-<text x="-35.56" y="56.134" size="1.27" layer="94">AV2</text>
+<text x="-35.56" y="56.134" size="1.27" layer="94">AU2</text>
 <pin name="BH2" x="-63.5" y="-45.72" visible="pad" length="middle" direction="in"/>
 <pin name="BJ2" x="-63.5" y="-48.26" visible="pad" length="middle" direction="in"/>
 <pin name="BF1" x="-63.5" y="-50.8" visible="pad" length="middle" direction="in"/>
@@ -2367,36 +2367,6 @@ DIN A3, landscape with extra doc field</description>
 <text x="2.54" y="-1.524" size="1.27" layer="94">&gt;Part</text>
 <rectangle x1="7.62" y1="-0.762" x2="8.89" y2="0.508" layer="94"/>
 <pin name="P$1" x="0" y="0" visible="pad" direction="in"/>
-</symbol>
-<symbol name="M715">
-<wire x1="-10.16" y1="33.02" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-25.4" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-25.4" x2="10.16" y2="33.02" width="0.254" layer="94"/>
-<wire x1="10.16" y1="33.02" x2="-10.16" y2="33.02" width="0.254" layer="94"/>
-<text x="-2.54" y="25.4" size="1.778" layer="94">&gt;Part</text>
-<text x="-2.54" y="22.86" size="1.778" layer="94">&gt;Value</text>
-<text x="-7.62" y="-7.62" size="1.27" layer="94" rot="R90">RUN\\</text>
-<text x="-7.62" y="5.08" size="1.27" layer="94" rot="R90">ENABLE\\</text>
-<text x="-7.62" y="22.86" size="1.27" layer="94" rot="R90">FEED\\</text>
-<text x="7.62" y="33.02" size="1.27" layer="94" rot="R270">S.DELAY</text>
-<text x="7.62" y="22.86" size="1.27" layer="94" rot="R270">S.COMP</text>
-<text x="7.62" y="-7.62" size="1.27" layer="94" rot="R270">SHIFT</text>
-<text x="7.62" y="2.54" size="1.27" layer="94" rot="R270">CLK\\</text>
-<text x="7.62" y="12.7" size="1.27" layer="94" rot="R270">CLOCK1</text>
-<text x="7.62" y="-15.24" size="1.27" layer="94" rot="R270">SHIFT\\</text>
-<text x="-2.54" y="20.32" size="1.27" layer="94">Reader</text>
-<text x="-2.54" y="17.78" size="1.27" layer="94">Clock</text>
-<text x="-7.62" y="-20.32" size="1.27" layer="94" rot="R90">INITIALIZE</text>
-<pin name="AK" x="-15.24" y="7.62" visible="pad" length="middle" direction="in"/>
-<pin name="BS" x="-15.24" y="-5.08" visible="pad" length="middle" direction="in"/>
-<pin name="AM" x="15.24" y="27.94" visible="pad" length="middle" direction="out" rot="R180"/>
-<pin name="BR" x="15.24" y="17.78" visible="pad" length="middle" direction="out" rot="R180"/>
-<pin name="AS" x="15.24" y="-10.16" visible="pad" length="middle" direction="out" rot="R180"/>
-<pin name="AP" x="15.24" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
-<pin name="AU" x="15.24" y="10.16" visible="pad" length="middle" direction="out" rot="R180"/>
-<pin name="AT" x="15.24" y="-20.32" visible="pad" length="middle" direction="out" rot="R180"/>
-<pin name="BP" x="-15.24" y="25.4" visible="pad" length="middle" direction="in"/>
-<pin name="BT" x="-15.24" y="-17.78" visible="pad" length="middle" direction="in"/>
 </symbol>
 <symbol name="M516">
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
@@ -4247,6 +4217,34 @@ DIN A3, landscape with extra doc field</description>
 <pin name="D2" x="35.56" y="12.7" visible="pad" length="middle" direction="out" rot="R180"/>
 <pin name="F2" x="35.56" y="7.62" visible="pad" length="middle" rot="R180"/>
 </symbol>
+<symbol name="M715">
+<wire x1="-10.16" y1="33.02" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-25.4" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="10.16" y2="33.02" width="0.254" layer="94"/>
+<wire x1="10.16" y1="33.02" x2="-10.16" y2="33.02" width="0.254" layer="94"/>
+<text x="-2.54" y="25.4" size="1.778" layer="94">&gt;Part</text>
+<text x="-2.54" y="22.86" size="1.778" layer="94">&gt;Value</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="94" rot="R90">RUN\\</text>
+<text x="-7.62" y="5.08" size="1.27" layer="94" rot="R90">ENABLE\\</text>
+<text x="-7.62" y="22.86" size="1.27" layer="94" rot="R90">FEED\\</text>
+<text x="7.62" y="33.02" size="1.27" layer="94" rot="R270">S.DELAY</text>
+<text x="7.62" y="22.86" size="1.27" layer="94" rot="R270">S.COMP</text>
+<text x="7.62" y="-7.62" size="1.27" layer="94" rot="R270">SHIFT</text>
+<text x="7.62" y="2.54" size="1.27" layer="94" rot="R270">CLK\\</text>
+<text x="7.62" y="12.7" size="1.27" layer="94" rot="R270">CLOCK1</text>
+<text x="7.62" y="-15.24" size="1.27" layer="94" rot="R270">SHIFT\\</text>
+<text x="-2.54" y="20.32" size="1.27" layer="94">Reader</text>
+<text x="-2.54" y="17.78" size="1.27" layer="94">Clock</text>
+<pin name="AK" x="-15.24" y="7.62" visible="pad" length="middle" direction="in"/>
+<pin name="BS" x="-15.24" y="-5.08" visible="pad" length="middle" direction="in"/>
+<pin name="AM" x="15.24" y="27.94" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="BR" x="15.24" y="17.78" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="AS" x="15.24" y="-10.16" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="AP" x="15.24" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="AU" x="15.24" y="10.16" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="AT" x="15.24" y="-20.32" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="BP" x="-15.24" y="25.4" visible="pad" length="middle" direction="in"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="M206X" prefix="M206_">
@@ -4644,7 +4642,7 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M220X" prefix="M220_">
+<deviceset name="M220" prefix="M220_">
 <description>PDP-8 Major Registers</description>
 <gates>
 <gate name="G$1" symbol="M220A" x="-22.86" y="2.54" swaplevel="1"/>
@@ -5583,87 +5581,6 @@ DIN A3, landscape with extra doc field</description>
 <connect gate="G$4" pin="GND" pad="C2"/>
 <connect gate="G$4" pin="VCC" pad="A2"/>
 <connect gate="G$5" pin="-15V" pad="B2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="M715" prefix="M715_">
-<description>Reader Clock</description>
-<gates>
-<gate name="AC" symbol="POWER" x="27.94" y="10.16" addlevel="request"/>
-<gate name="BC" symbol="POWER" x="40.64" y="10.16" addlevel="request"/>
-<gate name="AB2" symbol="-15V" x="33.02" y="10.16" addlevel="request"/>
-<gate name="BB2" symbol="-15V" x="45.72" y="10.16" addlevel="request"/>
-<gate name="G$1" symbol="M715" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="H807-2">
-<connects>
-<connect gate="AB2" pin="-15V" pad="AB2"/>
-<connect gate="AC" pin="GND" pad="AC2"/>
-<connect gate="AC" pin="VCC" pad="AA2"/>
-<connect gate="BB2" pin="-15V" pad="BB2"/>
-<connect gate="BC" pin="GND" pad="BC2"/>
-<connect gate="BC" pin="VCC" pad="BA2"/>
-<connect gate="G$1" pin="AK" pad="AK2"/>
-<connect gate="G$1" pin="AM" pad="AM2"/>
-<connect gate="G$1" pin="AP" pad="AP2"/>
-<connect gate="G$1" pin="AS" pad="AS2"/>
-<connect gate="G$1" pin="AT" pad="AT2"/>
-<connect gate="G$1" pin="AU" pad="AU2"/>
-<connect gate="G$1" pin="BP" pad="BP2"/>
-<connect gate="G$1" pin="BR" pad="BR2"/>
-<connect gate="G$1" pin="BS" pad="BS2"/>
-<connect gate="G$1" pin="BT" pad="BT2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="S" package="H807S-2">
-<connects>
-<connect gate="AB2" pin="-15V" pad="AB2"/>
-<connect gate="AC" pin="GND" pad="AC2"/>
-<connect gate="AC" pin="VCC" pad="AA2"/>
-<connect gate="BB2" pin="-15V" pad="BB2"/>
-<connect gate="BC" pin="GND" pad="BC2"/>
-<connect gate="BC" pin="VCC" pad="BA2"/>
-<connect gate="G$1" pin="AK" pad="AK2"/>
-<connect gate="G$1" pin="AM" pad="AM2"/>
-<connect gate="G$1" pin="AP" pad="AP2"/>
-<connect gate="G$1" pin="AS" pad="AS2"/>
-<connect gate="G$1" pin="AT" pad="AT2"/>
-<connect gate="G$1" pin="AU" pad="AU2"/>
-<connect gate="G$1" pin="BP" pad="BP2"/>
-<connect gate="G$1" pin="BR" pad="BR2"/>
-<connect gate="G$1" pin="BS" pad="BS2"/>
-<connect gate="G$1" pin="BT" pad="BT2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="O" package="H800-2">
-<connects>
-<connect gate="AB2" pin="-15V" pad="AB2"/>
-<connect gate="AC" pin="GND" pad="AC2"/>
-<connect gate="AC" pin="VCC" pad="AA2"/>
-<connect gate="BB2" pin="-15V" pad="BB2"/>
-<connect gate="BC" pin="GND" pad="BC2"/>
-<connect gate="BC" pin="VCC" pad="BA2"/>
-<connect gate="G$1" pin="AK" pad="AK2"/>
-<connect gate="G$1" pin="AM" pad="AM2"/>
-<connect gate="G$1" pin="AP" pad="AP2"/>
-<connect gate="G$1" pin="AS" pad="AS2"/>
-<connect gate="G$1" pin="AT" pad="AT2"/>
-<connect gate="G$1" pin="AU" pad="AU2"/>
-<connect gate="G$1" pin="BP" pad="BP2"/>
-<connect gate="G$1" pin="BR" pad="BR2"/>
-<connect gate="G$1" pin="BS" pad="BS2"/>
-<connect gate="G$1" pin="BT" pad="BT2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7531,6 +7448,80 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="M715" prefix="M715_">
+<description>Reader Clock</description>
+<gates>
+<gate name="AC" symbol="POWER" x="27.94" y="10.16" addlevel="request"/>
+<gate name="BC" symbol="POWER" x="40.64" y="10.16" addlevel="request"/>
+<gate name="BB2" symbol="-15V" x="45.72" y="10.16" addlevel="request"/>
+<gate name="G$1" symbol="M715" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H807-2">
+<connects>
+<connect gate="AC" pin="GND" pad="AC2"/>
+<connect gate="AC" pin="VCC" pad="AA2"/>
+<connect gate="BB2" pin="-15V" pad="BB2"/>
+<connect gate="BC" pin="GND" pad="BC2"/>
+<connect gate="BC" pin="VCC" pad="BA2"/>
+<connect gate="G$1" pin="AK" pad="AK2"/>
+<connect gate="G$1" pin="AM" pad="AM2"/>
+<connect gate="G$1" pin="AP" pad="AP2"/>
+<connect gate="G$1" pin="AS" pad="AS2"/>
+<connect gate="G$1" pin="AT" pad="AT2"/>
+<connect gate="G$1" pin="AU" pad="AU2"/>
+<connect gate="G$1" pin="BP" pad="BP2"/>
+<connect gate="G$1" pin="BR" pad="BR2"/>
+<connect gate="G$1" pin="BS" pad="BS2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="H807S-2">
+<connects>
+<connect gate="AC" pin="GND" pad="AC2"/>
+<connect gate="AC" pin="VCC" pad="AA2"/>
+<connect gate="BB2" pin="-15V" pad="BB2"/>
+<connect gate="BC" pin="GND" pad="BC2"/>
+<connect gate="BC" pin="VCC" pad="BA2"/>
+<connect gate="G$1" pin="AK" pad="AK2"/>
+<connect gate="G$1" pin="AM" pad="AM2"/>
+<connect gate="G$1" pin="AP" pad="AP2"/>
+<connect gate="G$1" pin="AS" pad="AS2"/>
+<connect gate="G$1" pin="AT" pad="AT2"/>
+<connect gate="G$1" pin="AU" pad="AU2"/>
+<connect gate="G$1" pin="BP" pad="BP2"/>
+<connect gate="G$1" pin="BR" pad="BR2"/>
+<connect gate="G$1" pin="BS" pad="BS2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="O" package="H800-2">
+<connects>
+<connect gate="AC" pin="GND" pad="AC2"/>
+<connect gate="AC" pin="VCC" pad="AA2"/>
+<connect gate="BB2" pin="-15V" pad="BB2"/>
+<connect gate="BC" pin="GND" pad="BC2"/>
+<connect gate="BC" pin="VCC" pad="BA2"/>
+<connect gate="G$1" pin="AK" pad="AK2"/>
+<connect gate="G$1" pin="AM" pad="AM2"/>
+<connect gate="G$1" pin="AP" pad="AP2"/>
+<connect gate="G$1" pin="AS" pad="AS2"/>
+<connect gate="G$1" pin="AT" pad="AT2"/>
+<connect gate="G$1" pin="AU" pad="AU2"/>
+<connect gate="G$1" pin="BP" pad="BP2"/>
+<connect gate="G$1" pin="BR" pad="BR2"/>
+<connect gate="G$1" pin="BS" pad="BS2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply2">
@@ -7734,12 +7725,12 @@ DIN A3, landscape with extra doc field</description>
 <part name="V82" library="supply2" deviceset="VCC" device=""/>
 <part name="V83" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME6" library="frames" deviceset="DINA3_L" device=""/>
-<part name="EF34" library="dec-m" deviceset="M220X" device="" value="M220"/>
-<part name="EF35" library="dec-m" deviceset="M220X" device="" value="M220"/>
-<part name="EF36" library="dec-m" deviceset="M220X" device="" value="M220"/>
-<part name="EF37" library="dec-m" deviceset="M220X" device="" value="M220"/>
-<part name="EF38" library="dec-m" deviceset="M220X" device="" value="M220"/>
-<part name="EF39" library="dec-m" deviceset="M220X" device="" value="M220"/>
+<part name="EF34" library="dec-m" deviceset="M220" device="" value="M220"/>
+<part name="EF35" library="dec-m" deviceset="M220" device="" value="M220"/>
+<part name="EF36" library="dec-m" deviceset="M220" device="" value="M220"/>
+<part name="EF37" library="dec-m" deviceset="M220" device="" value="M220"/>
+<part name="EF38" library="dec-m" deviceset="M220" device="" value="M220"/>
+<part name="EF39" library="dec-m" deviceset="M220" device="" value="M220"/>
 <part name="E40" library="dec-m" deviceset="M916" device="" value="M900"/>
 <part name="F40" library="dec-m" deviceset="M916" device="" value="M900"/>
 <part name="F33" library="dec-m" deviceset="M160" device=""/>
@@ -8069,7 +8060,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="HJ26" library="dec-m" deviceset="M705" device=""/>
 <part name="D01" library="dec-m" deviceset="W023" device="" value="W077"/>
 <part name="V147" library="supply2" deviceset="-15V" device=""/>
-<part name="HJ27" library="dec-m" deviceset="M715" device=""/>
 <part name="FRAME37" library="frames" deviceset="DINA3_L" device=""/>
 <part name="V141" library="supply2" deviceset="VCC" device=""/>
 <part name="V142" library="supply2" deviceset="GND" device=""/>
@@ -8088,6 +8078,7 @@ DIN A3, landscape with extra doc field</description>
 <part name="FRAME40" library="frames" deviceset="DINA3_L" device=""/>
 <part name="V152" library="supply2" deviceset="VCC" device=""/>
 <part name="V153" library="supply2" deviceset="GND" device=""/>
+<part name="HJ27" library="dec-m" deviceset="M715" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -38499,7 +38490,6 @@ DIN A3, landscape with extra doc field</description>
 <segment>
 <wire x1="38.1" y1="157.48" x2="66.04" y2="157.48" width="0.1524" layer="91"/>
 <label x="38.1" y="157.48" size="1.778" layer="95"/>
-<pinref part="HJ27" gate="G$1" pin="BT"/>
 </segment>
 </net>
 <net name="RD_HOLE1" class="0">
