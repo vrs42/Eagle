@@ -57,6 +57,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -67,6 +68,8 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -223,7 +226,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="0" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<text x="-2.286" y="0" size="1.27" layer="94">&gt;Part</text>
+<text x="-2.286" y="2.794" size="1.27" layer="94">&gt;Part</text>
+<text x="-2.286" y="-4.064" size="1.27" layer="94">&gt;Value</text>
 <pin name="IN1" x="-10.16" y="2.54" visible="pad" direction="in"/>
 <pin name="OUT" x="10.16" y="0" visible="pad" direction="out" function="dot" rot="R180"/>
 <pin name="IN2" x="-10.16" y="-2.54" visible="pad" direction="in"/>
@@ -233,7 +237,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-5.08" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94" curve="-180"/>
-<text x="-2.54" y="0" size="1.27" layer="94" ratio="7">&gt;Part</text>
+<text x="-2.54" y="0.254" size="1.27" layer="94" ratio="7">&gt;Part</text>
+<text x="-2.54" y="-1.524" size="1.27" layer="94">&gt;Value</text>
 <pin name="IN1" x="-10.16" y="5.08" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="IN2" x="-10.16" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="IN3" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
@@ -257,6 +262,7 @@ DIN A4, landscape with extra doc field</description>
 <text x="-0.508" y="5.842" size="1.27" layer="94" ratio="7">S</text>
 <text x="-0.508" y="-4.064" size="1.27" layer="94" ratio="7">R</text>
 <text x="-2.54" y="2.54" size="1.27" layer="94" ratio="7">&gt;Part</text>
+<text x="-2.54" y="0" size="1.27" layer="94">&gt;Value</text>
 <pin name="D" x="-10.16" y="5.08" visible="pad" length="middle" direction="in"/>
 <pin name="C" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in"/>
 <pin name="1" x="10.16" y="5.08" visible="pad" length="middle" direction="out" rot="R180"/>
@@ -269,9 +275,9 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="-9.652" width="0.254" layer="94"/>
-<circle x="0" y="-8.636" radius="0.8032" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="-10.16" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-9.652" width="0.1524" layer="94"/>
+<circle x="0" y="-8.636" radius="0.9158" width="0.1524" layer="94"/>
 <text x="-4.318" y="2.032" size="1.27" layer="94">D</text>
 <text x="3.302" y="2.032" size="1.27" layer="94">1</text>
 <text x="3.302" y="-5.588" size="1.27" layer="94">0</text>
@@ -280,6 +286,7 @@ DIN A4, landscape with extra doc field</description>
 <text x="-0.508" y="-7.112" size="1.27" layer="94">R</text>
 <text x="-2.54" y="0" size="1.27" layer="94">&gt;Part</text>
 <text x="-3.302" y="-9.652" size="1.27" layer="94">K2</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="94">&gt;Value</text>
 <pin name="S" x="0" y="7.62" visible="pad" length="short" direction="in" function="dot" rot="R270"/>
 <pin name="D" x="-10.16" y="2.54" visible="pad" length="middle" direction="in"/>
 <pin name="C" x="-10.16" y="-5.08" visible="pad" length="middle" direction="in"/>
@@ -291,9 +298,9 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="0" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="0" y1="-7.62" x2="0" y2="-7.112" width="0.254" layer="94"/>
-<circle x="0" y="-6.096" radius="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="-7.112" width="0.1524" layer="94"/>
+<circle x="0" y="-6.096" radius="0.9158" width="0.1524" layer="94"/>
 <text x="-2.54" y="2.54" size="1.27" layer="94">&gt;Part</text>
 <text x="-4.318" y="4.572" size="1.27" layer="94">D</text>
 <text x="3.302" y="4.572" size="1.27" layer="94">1</text>
@@ -302,6 +309,7 @@ DIN A4, landscape with extra doc field</description>
 <text x="-0.508" y="5.842" size="1.27" layer="94">S</text>
 <text x="-0.508" y="-4.572" size="1.27" layer="94">R</text>
 <text x="-3.302" y="-7.366" size="1.27" layer="94">A1</text>
+<text x="-2.54" y="0" size="1.27" layer="94">&gt;Value</text>
 <pin name="D" x="-10.16" y="5.08" visible="pad" length="middle" direction="in"/>
 <pin name="C" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in"/>
 <pin name="1" x="10.16" y="5.08" visible="pad" length="middle" direction="out" rot="R180"/>
@@ -319,45 +327,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-2.54" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
 <wire x1="0" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94" curve="-90"/>
 <wire x1="2.54" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94" curve="-90"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="0" y2="-7.62" width="0.254" layer="94" curve="-90"/>
 <wire x1="0" y1="-2.54" x2="2.54" y2="-5.08" width="0.254" layer="94" curve="-90"/>
-<wire x1="-5.08" y1="-7.62" x2="-4.318" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-4.318" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-4.318" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="-4.318" y2="7.62" width="0.254" layer="94"/>
-<circle x="-5.08" y="2.54" radius="0.3592" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-4.318" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-4.318" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-4.318" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-4.318" y2="7.62" width="0.1524" layer="94"/>
 <circle x="-3.556" y="-7.62" radius="0.8032" width="0.254" layer="94"/>
 <circle x="-3.556" y="-2.54" radius="0.8032" width="0.254" layer="94"/>
 <circle x="-3.556" y="2.54" radius="0.8032" width="0.254" layer="94"/>
 <circle x="-3.556" y="7.62" radius="0.8032" width="0.254" layer="94"/>
-<text x="-2.286" y="3.81" size="1.27" layer="94">M623</text>
+<circle x="-5.08" y="2.54" radius="0.127" width="0.1524" layer="94"/>
+<circle x="-5.08" y="2.54" radius="0.254" width="0.1524" layer="94"/>
+<text x="-2.286" y="3.81" size="1.27" layer="94">&gt;Value</text>
 <text x="-2.286" y="5.334" size="1.27" layer="94">&gt;Part</text>
 <text x="-2.286" y="-4.826" size="1.27" layer="94">&gt;Part</text>
-<text x="-2.286" y="-6.35" size="1.27" layer="94">M623</text>
+<text x="-2.286" y="-6.35" size="1.27" layer="94">&gt;Value</text>
 <pin name="D" x="7.62" y="5.08" visible="pad" length="middle" direction="oc" function="dot" rot="R180"/>
 <pin name="C" x="-10.16" y="2.54" visible="pad" length="middle" direction="in"/>
 <pin name="A" x="-10.16" y="7.62" visible="pad" length="middle" direction="in"/>
 <pin name="E" x="7.62" y="-5.08" visible="pad" length="middle" direction="oc" function="dot" rot="R180"/>
 <pin name="B" x="-10.16" y="-7.62" visible="pad" length="middle" direction="in"/>
 </symbol>
-<symbol name="INVERTER">
-<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="-4.318" size="1.778" layer="94">&gt;Part</text>
-<pin name="IN" x="-5.08" y="0" visible="pad" length="middle" direction="in"/>
-<pin name="OUT" x="10.16" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
-</symbol>
 <symbol name="NAND3">
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94" curve="-180"/>
-<text x="2.54" y="2.54" size="1.27" layer="94" ratio="7">&gt;Part</text>
+<text x="2.54" y="0.254" size="1.27" layer="94" ratio="7">&gt;Part</text>
+<text x="2.54" y="-1.524" size="1.27" layer="94">&gt;Value</text>
 <pin name="IN1" x="-5.08" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="IN2" x="-5.08" y="0" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="IN3" x="-5.08" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
@@ -398,8 +400,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<text x="-2.54" y="3.302" size="1.778" layer="94">&gt;Part</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="94">&gt;Value</text>
+<text x="-2.54" y="2.794" size="1.27" layer="94">&gt;Part</text>
+<text x="-2.54" y="-4.064" size="1.27" layer="94">&gt;Value</text>
 <pin name="IN" x="-7.62" y="0" visible="pad" length="middle" direction="in"/>
 <pin name="OUT" x="7.62" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
 </symbol>
@@ -423,8 +425,8 @@ DIN A4, landscape with extra doc field</description>
 <circle x="-6.35" y="-5.08" radius="1.27" width="0.254" layer="94"/>
 <circle x="3.81" y="2.54" radius="1.27" width="0.254" layer="94"/>
 <circle x="3.81" y="-2.54" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.81" y="5.08" size="1.778" layer="94">&gt;Name</text>
-<text x="-3.81" y="7.62" size="1.778" layer="94">&gt;Value</text>
+<text x="-3.81" y="7.62" size="1.778" layer="94">&gt;Name</text>
+<text x="-3.81" y="5.08" size="1.778" layer="94">&gt;Value</text>
 <pin name="L1" x="-10.16" y="5.08" visible="pad" length="short" swaplevel="1"/>
 <pin name="L2" x="-10.16" y="0" visible="pad" length="short" swaplevel="1"/>
 <pin name="L3" x="-10.16" y="-5.08" visible="pad" length="short" swaplevel="1"/>
@@ -448,9 +450,19 @@ DIN A4, landscape with extra doc field</description>
 <text x="2.54" y="0" size="1.27" layer="94">&gt;Part</text>
 <pin name="P$1" x="10.16" y="-7.62" visible="pad" length="middle" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="INVERTER-P">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="-4.064" size="1.27" layer="94">&gt;Value</text>
+<text x="-2.54" y="2.794" size="1.27" layer="94">&gt;Part</text>
+<pin name="IN" x="-7.62" y="0" visible="pad" length="middle" direction="in"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="M921">
+<deviceset name="M921" prefix="M921_">
+<description>Device Code Select Jumper Board</description>
 <gates>
 <gate name="A" symbol="M921" x="-22.86" y="25.4" swaplevel="1"/>
 <gate name="B" symbol="M921" x="22.86" y="25.4" swaplevel="1"/>
@@ -512,62 +524,62 @@ DIN A4, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M113" prefix="M113_" uservalue="yes">
+<deviceset name="M113" prefix="M113_">
 <description>10 2-input NAND Gates</description>
 <gates>
-<gate name="G$1" symbol="NAND2" x="-15.24" y="20.32" addlevel="always" swaplevel="1"/>
-<gate name="G$2" symbol="NAND2" x="-15.24" y="10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$3" symbol="NAND2" x="-15.24" y="0" addlevel="always" swaplevel="1"/>
-<gate name="G$4" symbol="NAND2" x="-15.24" y="-10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$5" symbol="NAND2" x="-15.24" y="-20.32" addlevel="always" swaplevel="1"/>
-<gate name="G$6" symbol="NAND2" x="15.24" y="20.32" addlevel="always" swaplevel="1"/>
-<gate name="G$7" symbol="NAND2" x="15.24" y="10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$8" symbol="NAND2" x="15.24" y="0" addlevel="always" swaplevel="1"/>
-<gate name="G$9" symbol="NAND2" x="15.24" y="-10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$10" symbol="NAND2" x="15.24" y="-20.32" addlevel="always" swaplevel="1"/>
+<gate name="C1" symbol="NAND2" x="-15.24" y="20.32" swaplevel="1"/>
+<gate name="F1" symbol="NAND2" x="-15.24" y="10.16" swaplevel="1"/>
+<gate name="F2" symbol="NAND2" x="-15.24" y="0" swaplevel="1"/>
+<gate name="K1" symbol="NAND2" x="-15.24" y="-10.16" swaplevel="1"/>
+<gate name="K2" symbol="NAND2" x="-15.24" y="-20.32" swaplevel="1"/>
+<gate name="N1" symbol="NAND2" x="15.24" y="20.32" swaplevel="1"/>
+<gate name="N2" symbol="NAND2" x="15.24" y="10.16" swaplevel="1"/>
+<gate name="S1" symbol="NAND2" x="15.24" y="0" swaplevel="1"/>
+<gate name="S2" symbol="NAND2" x="15.24" y="-10.16" swaplevel="1"/>
+<gate name="V2" symbol="NAND2" x="15.24" y="-20.32" swaplevel="1"/>
 <gate name="G$11" symbol="POWER" x="38.1" y="7.62" addlevel="request"/>
 <gate name="G$12" symbol="T1GND" x="43.18" y="7.62" addlevel="request"/>
-<gate name="G$13" symbol="PULL-UP" x="38.1" y="-7.62" addlevel="request" swaplevel="2"/>
-<gate name="G$14" symbol="PULL-UP" x="38.1" y="-27.94" addlevel="request" swaplevel="2"/>
+<gate name="U1" symbol="PULL-UP" x="38.1" y="-7.62" addlevel="request" swaplevel="2"/>
+<gate name="V1" symbol="PULL-UP" x="38.1" y="-27.94" addlevel="request" swaplevel="2"/>
 </gates>
 <devices>
 <device name="" package="H807">
 <connects>
-<connect gate="G$1" pin="IN1" pad="A1"/>
-<connect gate="G$1" pin="IN2" pad="B1"/>
-<connect gate="G$1" pin="OUT" pad="C1"/>
-<connect gate="G$10" pin="IN1" pad="T2"/>
-<connect gate="G$10" pin="IN2" pad="U2"/>
-<connect gate="G$10" pin="OUT" pad="V2"/>
+<connect gate="C1" pin="IN1" pad="A1"/>
+<connect gate="C1" pin="IN2" pad="B1"/>
+<connect gate="C1" pin="OUT" pad="C1"/>
+<connect gate="F1" pin="IN1" pad="D1"/>
+<connect gate="F1" pin="IN2" pad="E1"/>
+<connect gate="F1" pin="OUT" pad="F1"/>
+<connect gate="F2" pin="IN1" pad="D2"/>
+<connect gate="F2" pin="IN2" pad="E2"/>
+<connect gate="F2" pin="OUT" pad="F2"/>
 <connect gate="G$11" pin="GND" pad="C2"/>
 <connect gate="G$11" pin="VCC" pad="A2"/>
 <connect gate="G$12" pin="GND" pad="T1"/>
-<connect gate="G$13" pin="P$1" pad="U1"/>
-<connect gate="G$14" pin="P$1" pad="V1"/>
-<connect gate="G$2" pin="IN1" pad="D1"/>
-<connect gate="G$2" pin="IN2" pad="E1"/>
-<connect gate="G$2" pin="OUT" pad="F1"/>
-<connect gate="G$3" pin="IN1" pad="D2"/>
-<connect gate="G$3" pin="IN2" pad="E2"/>
-<connect gate="G$3" pin="OUT" pad="F2"/>
-<connect gate="G$4" pin="IN1" pad="H1"/>
-<connect gate="G$4" pin="IN2" pad="J1"/>
-<connect gate="G$4" pin="OUT" pad="K1"/>
-<connect gate="G$5" pin="IN1" pad="H2"/>
-<connect gate="G$5" pin="IN2" pad="J2"/>
-<connect gate="G$5" pin="OUT" pad="K2"/>
-<connect gate="G$6" pin="IN1" pad="L1"/>
-<connect gate="G$6" pin="IN2" pad="M1"/>
-<connect gate="G$6" pin="OUT" pad="N1"/>
-<connect gate="G$7" pin="IN1" pad="L2"/>
-<connect gate="G$7" pin="IN2" pad="M2"/>
-<connect gate="G$7" pin="OUT" pad="N2"/>
-<connect gate="G$8" pin="IN1" pad="P1"/>
-<connect gate="G$8" pin="IN2" pad="R1"/>
-<connect gate="G$8" pin="OUT" pad="S1"/>
-<connect gate="G$9" pin="IN1" pad="P2"/>
-<connect gate="G$9" pin="IN2" pad="R2"/>
-<connect gate="G$9" pin="OUT" pad="S2"/>
+<connect gate="K1" pin="IN1" pad="H1"/>
+<connect gate="K1" pin="IN2" pad="J1"/>
+<connect gate="K1" pin="OUT" pad="K1"/>
+<connect gate="K2" pin="IN1" pad="H2"/>
+<connect gate="K2" pin="IN2" pad="J2"/>
+<connect gate="K2" pin="OUT" pad="K2"/>
+<connect gate="N1" pin="IN1" pad="L1"/>
+<connect gate="N1" pin="IN2" pad="M1"/>
+<connect gate="N1" pin="OUT" pad="N1"/>
+<connect gate="N2" pin="IN1" pad="L2"/>
+<connect gate="N2" pin="IN2" pad="M2"/>
+<connect gate="N2" pin="OUT" pad="N2"/>
+<connect gate="S1" pin="IN1" pad="P1"/>
+<connect gate="S1" pin="IN2" pad="R1"/>
+<connect gate="S1" pin="OUT" pad="S1"/>
+<connect gate="S2" pin="IN1" pad="P2"/>
+<connect gate="S2" pin="IN2" pad="R2"/>
+<connect gate="S2" pin="OUT" pad="S2"/>
+<connect gate="U1" pin="P$1" pad="U1"/>
+<connect gate="V1" pin="P$1" pad="V1"/>
+<connect gate="V2" pin="IN1" pad="T2"/>
+<connect gate="V2" pin="IN2" pad="U2"/>
+<connect gate="V2" pin="OUT" pad="V2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -575,58 +587,58 @@ DIN A4, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M627" prefix="M627_" uservalue="yes">
+<deviceset name="M627" prefix="M627_">
 <description>6 4-input NAND Power Amplifier</description>
 <gates>
-<gate name="G$1" symbol="NAND4" x="-20.32" y="25.4" swaplevel="1"/>
-<gate name="G$2" symbol="NAND4" x="17.78" y="25.4" swaplevel="1"/>
-<gate name="G$3" symbol="NAND4" x="17.78" y="0" swaplevel="1"/>
-<gate name="G$4" symbol="NAND4" x="-20.32" y="0" swaplevel="1"/>
-<gate name="G$5" symbol="NAND4" x="-20.32" y="-25.4" swaplevel="1"/>
-<gate name="G$6" symbol="NAND4" x="17.78" y="-25.4" swaplevel="1"/>
+<gate name="E1" symbol="NAND4" x="-20.32" y="25.4" swaplevel="1"/>
+<gate name="L1" symbol="NAND4" x="17.78" y="25.4" swaplevel="1"/>
+<gate name="S1" symbol="NAND4" x="17.78" y="0" swaplevel="1"/>
+<gate name="J2" symbol="NAND4" x="-20.32" y="0" swaplevel="1"/>
+<gate name="P2" symbol="NAND4" x="-20.32" y="-25.4" swaplevel="1"/>
+<gate name="V2" symbol="NAND4" x="17.78" y="-25.4" swaplevel="1"/>
 <gate name="G$7" symbol="POWER" x="43.18" y="17.78" addlevel="request"/>
 <gate name="G$8" symbol="T1GND" x="48.26" y="17.78" addlevel="request"/>
-<gate name="G$9" symbol="PULL-UP" x="40.64" y="2.54"/>
-<gate name="G$10" symbol="PULL-UP" x="40.64" y="-20.32"/>
+<gate name="U1" symbol="PULL-UP" x="40.64" y="2.54"/>
+<gate name="V1" symbol="PULL-UP" x="40.64" y="-20.32"/>
 </gates>
 <devices>
 <device name="" package="H807">
 <connects>
-<connect gate="G$1" pin="IN1" pad="A1"/>
-<connect gate="G$1" pin="IN2" pad="B1"/>
-<connect gate="G$1" pin="IN3" pad="C1"/>
-<connect gate="G$1" pin="IN4" pad="D1"/>
-<connect gate="G$1" pin="OUT" pad="E1"/>
-<connect gate="G$10" pin="P$1" pad="V1"/>
-<connect gate="G$2" pin="IN1" pad="F1"/>
-<connect gate="G$2" pin="IN2" pad="H1"/>
-<connect gate="G$2" pin="IN3" pad="J1"/>
-<connect gate="G$2" pin="IN4" pad="K1"/>
-<connect gate="G$2" pin="OUT" pad="L1"/>
-<connect gate="G$3" pin="IN1" pad="M1"/>
-<connect gate="G$3" pin="IN2" pad="N1"/>
-<connect gate="G$3" pin="IN3" pad="P1"/>
-<connect gate="G$3" pin="IN4" pad="R1"/>
-<connect gate="G$3" pin="OUT" pad="S1"/>
-<connect gate="G$4" pin="IN1" pad="D2"/>
-<connect gate="G$4" pin="IN2" pad="E2"/>
-<connect gate="G$4" pin="IN3" pad="F2"/>
-<connect gate="G$4" pin="IN4" pad="H2"/>
-<connect gate="G$4" pin="OUT" pad="J2"/>
-<connect gate="G$5" pin="IN1" pad="K2"/>
-<connect gate="G$5" pin="IN2" pad="L2"/>
-<connect gate="G$5" pin="IN3" pad="M2"/>
-<connect gate="G$5" pin="IN4" pad="N2"/>
-<connect gate="G$5" pin="OUT" pad="P2"/>
-<connect gate="G$6" pin="IN1" pad="R2"/>
-<connect gate="G$6" pin="IN2" pad="S2"/>
-<connect gate="G$6" pin="IN3" pad="T2"/>
-<connect gate="G$6" pin="IN4" pad="U2"/>
-<connect gate="G$6" pin="OUT" pad="V2"/>
+<connect gate="E1" pin="IN1" pad="A1"/>
+<connect gate="E1" pin="IN2" pad="B1"/>
+<connect gate="E1" pin="IN3" pad="C1"/>
+<connect gate="E1" pin="IN4" pad="D1"/>
+<connect gate="E1" pin="OUT" pad="E1"/>
 <connect gate="G$7" pin="GND" pad="C2"/>
 <connect gate="G$7" pin="VCC" pad="A2"/>
 <connect gate="G$8" pin="GND" pad="T1"/>
-<connect gate="G$9" pin="P$1" pad="U1"/>
+<connect gate="J2" pin="IN1" pad="D2"/>
+<connect gate="J2" pin="IN2" pad="E2"/>
+<connect gate="J2" pin="IN3" pad="F2"/>
+<connect gate="J2" pin="IN4" pad="H2"/>
+<connect gate="J2" pin="OUT" pad="J2"/>
+<connect gate="L1" pin="IN1" pad="F1"/>
+<connect gate="L1" pin="IN2" pad="H1"/>
+<connect gate="L1" pin="IN3" pad="J1"/>
+<connect gate="L1" pin="IN4" pad="K1"/>
+<connect gate="L1" pin="OUT" pad="L1"/>
+<connect gate="P2" pin="IN1" pad="K2"/>
+<connect gate="P2" pin="IN2" pad="L2"/>
+<connect gate="P2" pin="IN3" pad="M2"/>
+<connect gate="P2" pin="IN4" pad="N2"/>
+<connect gate="P2" pin="OUT" pad="P2"/>
+<connect gate="S1" pin="IN1" pad="M1"/>
+<connect gate="S1" pin="IN2" pad="N1"/>
+<connect gate="S1" pin="IN3" pad="P1"/>
+<connect gate="S1" pin="IN4" pad="R1"/>
+<connect gate="S1" pin="OUT" pad="S1"/>
+<connect gate="U1" pin="P$1" pad="U1"/>
+<connect gate="V1" pin="P$1" pad="V1"/>
+<connect gate="V2" pin="IN1" pad="R2"/>
+<connect gate="V2" pin="IN2" pad="S2"/>
+<connect gate="V2" pin="IN3" pad="T2"/>
+<connect gate="V2" pin="IN4" pad="U2"/>
+<connect gate="V2" pin="OUT" pad="V2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -634,37 +646,37 @@ DIN A4, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M310">
+<deviceset name="M310" prefix="M310_">
 <description>Tapped Delay Line</description>
 <gates>
-<gate name="G$1" symbol="M310" x="0" y="0"/>
+<gate name="H2" symbol="M310" x="0" y="0"/>
 <gate name="G$2" symbol="POWER" x="-35.56" y="-5.08" addlevel="request"/>
 <gate name="G$3" symbol="T1GND" x="-43.18" y="-5.08" addlevel="request"/>
-<gate name="G$4" symbol="BUFFER" x="30.48" y="12.7" addlevel="request" swaplevel="1"/>
-<gate name="G$5" symbol="BUFFER" x="30.48" y="-2.54" addlevel="request" swaplevel="1"/>
+<gate name="F1" symbol="BUFFER" x="30.48" y="12.7" swaplevel="1"/>
+<gate name="J1" symbol="BUFFER" x="30.48" y="-2.54" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="H807">
 <connects>
-<connect gate="G$1" pin="H2" pad="H2"/>
-<connect gate="G$1" pin="J2" pad="J2"/>
-<connect gate="G$1" pin="K2" pad="K2"/>
-<connect gate="G$1" pin="L2" pad="L2"/>
-<connect gate="G$1" pin="M2" pad="M2"/>
-<connect gate="G$1" pin="N2" pad="N2"/>
-<connect gate="G$1" pin="P2" pad="P2"/>
-<connect gate="G$1" pin="R2" pad="R2"/>
-<connect gate="G$1" pin="S2" pad="S2"/>
-<connect gate="G$1" pin="T2" pad="T2"/>
-<connect gate="G$1" pin="U2" pad="U2"/>
-<connect gate="G$1" pin="V2" pad="V2"/>
+<connect gate="F1" pin="IN" pad="E1"/>
+<connect gate="F1" pin="OUT" pad="F1"/>
 <connect gate="G$2" pin="GND" pad="C2"/>
 <connect gate="G$2" pin="VCC" pad="A2"/>
 <connect gate="G$3" pin="GND" pad="T1"/>
-<connect gate="G$4" pin="IN" pad="E1"/>
-<connect gate="G$4" pin="OUT" pad="F1"/>
-<connect gate="G$5" pin="IN" pad="H1"/>
-<connect gate="G$5" pin="OUT" pad="J1"/>
+<connect gate="H2" pin="H2" pad="H2"/>
+<connect gate="H2" pin="J2" pad="J2"/>
+<connect gate="H2" pin="K2" pad="K2"/>
+<connect gate="H2" pin="L2" pad="L2"/>
+<connect gate="H2" pin="M2" pad="M2"/>
+<connect gate="H2" pin="N2" pad="N2"/>
+<connect gate="H2" pin="P2" pad="P2"/>
+<connect gate="H2" pin="R2" pad="R2"/>
+<connect gate="H2" pin="S2" pad="S2"/>
+<connect gate="H2" pin="T2" pad="T2"/>
+<connect gate="H2" pin="U2" pad="U2"/>
+<connect gate="H2" pin="V2" pad="V2"/>
+<connect gate="J1" pin="IN" pad="H1"/>
+<connect gate="J1" pin="OUT" pad="J1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -672,15 +684,15 @@ DIN A4, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M623" prefix="M623_" uservalue="yes">
+<deviceset name="M623" prefix="M623_">
 <description>6 Dual Bus Drivers</description>
 <gates>
-<gate name="G$1" symbol="M623A" x="-20.32" y="22.86" addlevel="always" swaplevel="1"/>
-<gate name="G$2" symbol="M623A" x="-20.32" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$3" symbol="M623A" x="-20.32" y="-27.94" addlevel="always" swaplevel="1"/>
-<gate name="G$4" symbol="M623A" x="25.4" y="22.86" addlevel="always" swaplevel="1"/>
-<gate name="G$5" symbol="M623A" x="25.4" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$6" symbol="M623A" x="25.4" y="-27.94" addlevel="always" swaplevel="1"/>
+<gate name="D1" symbol="M623A" x="-20.32" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="K1" symbol="M623A" x="-20.32" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="R1" symbol="M623A" x="-20.32" y="-27.94" addlevel="always" swaplevel="1"/>
+<gate name="H2" symbol="M623A" x="25.4" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="N2" symbol="M623A" x="25.4" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="U2" symbol="M623A" x="25.4" y="-27.94" addlevel="always" swaplevel="1"/>
 <gate name="G$7" symbol="POWER" x="63.5" y="22.86" addlevel="request"/>
 <gate name="G$8" symbol="T1GND" x="68.58" y="22.86" addlevel="request"/>
 <gate name="G$9" symbol="T1GND" x="78.74" y="22.86" addlevel="request"/>
@@ -689,41 +701,41 @@ DIN A4, landscape with extra doc field</description>
 <devices>
 <device name="" package="H807">
 <connects>
-<connect gate="G$1" pin="A" pad="A1"/>
-<connect gate="G$1" pin="B" pad="B1"/>
-<connect gate="G$1" pin="C" pad="C1"/>
-<connect gate="G$1" pin="D" pad="D1"/>
-<connect gate="G$1" pin="E" pad="E1"/>
+<connect gate="D1" pin="A" pad="A1"/>
+<connect gate="D1" pin="B" pad="B1"/>
+<connect gate="D1" pin="C" pad="C1"/>
+<connect gate="D1" pin="D" pad="D1"/>
+<connect gate="D1" pin="E" pad="E1"/>
 <connect gate="G$10" pin="GND" pad="V1"/>
-<connect gate="G$2" pin="A" pad="F1"/>
-<connect gate="G$2" pin="B" pad="H1"/>
-<connect gate="G$2" pin="C" pad="J1"/>
-<connect gate="G$2" pin="D" pad="K1"/>
-<connect gate="G$2" pin="E" pad="L1"/>
-<connect gate="G$3" pin="A" pad="M1"/>
-<connect gate="G$3" pin="B" pad="N1"/>
-<connect gate="G$3" pin="C" pad="P1"/>
-<connect gate="G$3" pin="D" pad="R1"/>
-<connect gate="G$3" pin="E" pad="S1"/>
-<connect gate="G$4" pin="A" pad="D2"/>
-<connect gate="G$4" pin="B" pad="E2"/>
-<connect gate="G$4" pin="C" pad="F2"/>
-<connect gate="G$4" pin="D" pad="H2"/>
-<connect gate="G$4" pin="E" pad="J2"/>
-<connect gate="G$5" pin="A" pad="K2"/>
-<connect gate="G$5" pin="B" pad="L2"/>
-<connect gate="G$5" pin="C" pad="M2"/>
-<connect gate="G$5" pin="D" pad="N2"/>
-<connect gate="G$5" pin="E" pad="P2"/>
-<connect gate="G$6" pin="A" pad="R2"/>
-<connect gate="G$6" pin="B" pad="S2"/>
-<connect gate="G$6" pin="C" pad="T2"/>
-<connect gate="G$6" pin="D" pad="U2"/>
-<connect gate="G$6" pin="E" pad="V2"/>
 <connect gate="G$7" pin="GND" pad="C2"/>
 <connect gate="G$7" pin="VCC" pad="A2"/>
 <connect gate="G$8" pin="GND" pad="T1"/>
 <connect gate="G$9" pin="GND" pad="U1"/>
+<connect gate="H2" pin="A" pad="D2"/>
+<connect gate="H2" pin="B" pad="E2"/>
+<connect gate="H2" pin="C" pad="F2"/>
+<connect gate="H2" pin="D" pad="H2"/>
+<connect gate="H2" pin="E" pad="J2"/>
+<connect gate="K1" pin="A" pad="F1"/>
+<connect gate="K1" pin="B" pad="H1"/>
+<connect gate="K1" pin="C" pad="J1"/>
+<connect gate="K1" pin="D" pad="K1"/>
+<connect gate="K1" pin="E" pad="L1"/>
+<connect gate="N2" pin="A" pad="K2"/>
+<connect gate="N2" pin="B" pad="L2"/>
+<connect gate="N2" pin="C" pad="M2"/>
+<connect gate="N2" pin="D" pad="N2"/>
+<connect gate="N2" pin="E" pad="P2"/>
+<connect gate="R1" pin="A" pad="M1"/>
+<connect gate="R1" pin="B" pad="N1"/>
+<connect gate="R1" pin="C" pad="P1"/>
+<connect gate="R1" pin="D" pad="R1"/>
+<connect gate="R1" pin="E" pad="S1"/>
+<connect gate="U2" pin="A" pad="R2"/>
+<connect gate="U2" pin="B" pad="S2"/>
+<connect gate="U2" pin="C" pad="T2"/>
+<connect gate="U2" pin="D" pad="U2"/>
+<connect gate="U2" pin="E" pad="V2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -731,125 +743,58 @@ DIN A4, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M115" prefix="M115_" uservalue="yes">
+<deviceset name="M115" prefix="M115_">
 <description>8 3-input NAND Gates</description>
 <gates>
-<gate name="G$1" symbol="NAND3" x="-22.86" y="25.4" addlevel="always" swaplevel="1"/>
-<gate name="G$2" symbol="NAND3" x="-22.86" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$3" symbol="NAND3" x="-22.86" y="-10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$4" symbol="NAND3" x="-22.86" y="-27.94" addlevel="always" swaplevel="1"/>
-<gate name="G$5" symbol="NAND3" x="12.7" y="25.4" addlevel="always" swaplevel="1"/>
-<gate name="G$6" symbol="NAND3" x="12.7" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$7" symbol="NAND3" x="12.7" y="-10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$8" symbol="NAND3" x="12.7" y="-27.94" addlevel="always" swaplevel="1"/>
+<gate name="D1" symbol="NAND3" x="-22.86" y="25.4" swaplevel="1"/>
+<gate name="J1" symbol="NAND3" x="-22.86" y="7.62" swaplevel="1"/>
+<gate name="N1" symbol="NAND3" x="-22.86" y="-10.16" swaplevel="1"/>
+<gate name="U1" symbol="NAND3" x="-22.86" y="-27.94" swaplevel="1"/>
+<gate name="H2" symbol="NAND3" x="12.7" y="25.4" swaplevel="1"/>
+<gate name="M2" symbol="NAND3" x="12.7" y="7.62" swaplevel="1"/>
+<gate name="S2" symbol="NAND3" x="12.7" y="-10.16" swaplevel="1"/>
+<gate name="V1" symbol="NAND3" x="12.7" y="-27.94" swaplevel="1"/>
 <gate name="G$9" symbol="POWER" x="40.64" y="15.24" addlevel="request"/>
 <gate name="G$10" symbol="T1GND" x="48.26" y="15.24" addlevel="request"/>
 </gates>
 <devices>
 <device name="" package="H807">
 <connects>
-<connect gate="G$1" pin="IN1" pad="A1"/>
-<connect gate="G$1" pin="IN2" pad="B1"/>
-<connect gate="G$1" pin="IN3" pad="C1"/>
-<connect gate="G$1" pin="OUT" pad="D1"/>
+<connect gate="D1" pin="IN1" pad="A1"/>
+<connect gate="D1" pin="IN2" pad="B1"/>
+<connect gate="D1" pin="IN3" pad="C1"/>
+<connect gate="D1" pin="OUT" pad="D1"/>
 <connect gate="G$10" pin="GND" pad="T1"/>
-<connect gate="G$2" pin="IN1" pad="E1"/>
-<connect gate="G$2" pin="IN2" pad="F1"/>
-<connect gate="G$2" pin="IN3" pad="H1"/>
-<connect gate="G$2" pin="OUT" pad="J1"/>
-<connect gate="G$3" pin="IN1" pad="K1"/>
-<connect gate="G$3" pin="IN2" pad="L1"/>
-<connect gate="G$3" pin="IN3" pad="M1"/>
-<connect gate="G$3" pin="OUT" pad="N1"/>
-<connect gate="G$4" pin="IN1" pad="P1"/>
-<connect gate="G$4" pin="IN2" pad="R1"/>
-<connect gate="G$4" pin="IN3" pad="S1"/>
-<connect gate="G$4" pin="OUT" pad="U1"/>
-<connect gate="G$5" pin="IN1" pad="D2"/>
-<connect gate="G$5" pin="IN2" pad="E2"/>
-<connect gate="G$5" pin="IN3" pad="F2"/>
-<connect gate="G$5" pin="OUT" pad="H2"/>
-<connect gate="G$6" pin="IN1" pad="J2"/>
-<connect gate="G$6" pin="IN2" pad="K2"/>
-<connect gate="G$6" pin="IN3" pad="L2"/>
-<connect gate="G$6" pin="OUT" pad="M2"/>
-<connect gate="G$7" pin="IN1" pad="N2"/>
-<connect gate="G$7" pin="IN2" pad="P2"/>
-<connect gate="G$7" pin="IN3" pad="R2"/>
-<connect gate="G$7" pin="OUT" pad="S2"/>
-<connect gate="G$8" pin="IN1" pad="T2"/>
-<connect gate="G$8" pin="IN2" pad="U2"/>
-<connect gate="G$8" pin="IN3" pad="V2"/>
-<connect gate="G$8" pin="OUT" pad="V1"/>
 <connect gate="G$9" pin="GND" pad="C2"/>
 <connect gate="G$9" pin="VCC" pad="A2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="M111" prefix="M111_" uservalue="yes">
-<description>Sixteen inverters.</description>
-<gates>
-<gate name="3" symbol="INVERTER" x="-2.54" y="5.08" swaplevel="1"/>
-<gate name="2" symbol="INVERTER" x="-2.54" y="17.78" swaplevel="1"/>
-<gate name="1" symbol="INVERTER" x="-2.54" y="30.48" swaplevel="1"/>
-<gate name="13" symbol="INVERTER" x="22.86" y="-20.32" swaplevel="1"/>
-<gate name="4" symbol="INVERTER" x="-2.54" y="-7.62" swaplevel="1"/>
-<gate name="15" symbol="INVERTER" x="22.86" y="-45.72" swaplevel="1"/>
-<gate name="14" symbol="INVERTER" x="22.86" y="-33.02" swaplevel="1"/>
-<gate name="16" symbol="INVERTER" x="22.86" y="-58.42" swaplevel="1"/>
-<gate name="5" symbol="INVERTER" x="-2.54" y="-20.32" swaplevel="1"/>
-<gate name="6" symbol="INVERTER" x="-2.54" y="-33.02" swaplevel="1"/>
-<gate name="7" symbol="INVERTER" x="-2.54" y="-45.72" swaplevel="1"/>
-<gate name="8" symbol="INVERTER" x="-2.54" y="-58.42" swaplevel="1"/>
-<gate name="9" symbol="INVERTER" x="22.86" y="30.48" swaplevel="1"/>
-<gate name="10" symbol="INVERTER" x="22.86" y="17.78" swaplevel="1"/>
-<gate name="11" symbol="INVERTER" x="22.86" y="5.08" swaplevel="1"/>
-<gate name="12" symbol="INVERTER" x="22.86" y="-7.62" swaplevel="1"/>
-<gate name="G$17" symbol="POWER" x="53.34" y="17.78" addlevel="request"/>
-<gate name="G$1" symbol="T1GND" x="60.96" y="17.78" addlevel="request"/>
-</gates>
-<devices>
-<device name="" package="H807">
-<connects>
-<connect gate="1" pin="IN" pad="A1"/>
-<connect gate="1" pin="OUT" pad="B1"/>
-<connect gate="10" pin="IN" pad="N1"/>
-<connect gate="10" pin="OUT" pad="P1"/>
-<connect gate="11" pin="IN" pad="M2"/>
-<connect gate="11" pin="OUT" pad="N2"/>
-<connect gate="12" pin="IN" pad="R1"/>
-<connect gate="12" pin="OUT" pad="S1"/>
-<connect gate="13" pin="IN" pad="P2"/>
-<connect gate="13" pin="OUT" pad="R2"/>
-<connect gate="14" pin="IN" pad="V1"/>
-<connect gate="14" pin="OUT" pad="U1"/>
-<connect gate="15" pin="IN" pad="S2"/>
-<connect gate="15" pin="OUT" pad="T2"/>
-<connect gate="16" pin="IN" pad="U2"/>
-<connect gate="16" pin="OUT" pad="V2"/>
-<connect gate="2" pin="IN" pad="C1"/>
-<connect gate="2" pin="OUT" pad="D2"/>
-<connect gate="3" pin="IN" pad="D1"/>
-<connect gate="3" pin="OUT" pad="E1"/>
-<connect gate="4" pin="IN" pad="F1"/>
-<connect gate="4" pin="OUT" pad="H1"/>
-<connect gate="5" pin="IN" pad="E2"/>
-<connect gate="5" pin="OUT" pad="F2"/>
-<connect gate="6" pin="IN" pad="J1"/>
-<connect gate="6" pin="OUT" pad="K1"/>
-<connect gate="7" pin="IN" pad="H2"/>
-<connect gate="7" pin="OUT" pad="J2"/>
-<connect gate="8" pin="IN" pad="L1"/>
-<connect gate="8" pin="OUT" pad="M1"/>
-<connect gate="9" pin="IN" pad="K2"/>
-<connect gate="9" pin="OUT" pad="L2"/>
-<connect gate="G$1" pin="GND" pad="T1"/>
-<connect gate="G$17" pin="GND" pad="C2"/>
-<connect gate="G$17" pin="VCC" pad="A2"/>
+<connect gate="H2" pin="IN1" pad="D2"/>
+<connect gate="H2" pin="IN2" pad="E2"/>
+<connect gate="H2" pin="IN3" pad="F2"/>
+<connect gate="H2" pin="OUT" pad="H2"/>
+<connect gate="J1" pin="IN1" pad="E1"/>
+<connect gate="J1" pin="IN2" pad="F1"/>
+<connect gate="J1" pin="IN3" pad="H1"/>
+<connect gate="J1" pin="OUT" pad="J1"/>
+<connect gate="M2" pin="IN1" pad="J2"/>
+<connect gate="M2" pin="IN2" pad="K2"/>
+<connect gate="M2" pin="IN3" pad="L2"/>
+<connect gate="M2" pin="OUT" pad="M2"/>
+<connect gate="N1" pin="IN1" pad="K1"/>
+<connect gate="N1" pin="IN2" pad="L1"/>
+<connect gate="N1" pin="IN3" pad="M1"/>
+<connect gate="N1" pin="OUT" pad="N1"/>
+<connect gate="S2" pin="IN1" pad="N2"/>
+<connect gate="S2" pin="IN2" pad="P2"/>
+<connect gate="S2" pin="IN3" pad="R2"/>
+<connect gate="S2" pin="OUT" pad="S2"/>
+<connect gate="U1" pin="IN1" pad="P1"/>
+<connect gate="U1" pin="IN2" pad="R1"/>
+<connect gate="U1" pin="IN3" pad="S1"/>
+<connect gate="U1" pin="OUT" pad="U1"/>
+<connect gate="V1" pin="IN1" pad="T2"/>
+<connect gate="V1" pin="IN2" pad="U2"/>
+<connect gate="V1" pin="IN3" pad="V2"/>
+<connect gate="V1" pin="OUT" pad="V1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -860,53 +805,53 @@ DIN A4, landscape with extra doc field</description>
 <deviceset name="M206X" prefix="M206_">
 <description>Two sets of 3 D flip-flops</description>
 <gates>
-<gate name="K2" symbol="D-FLOP" x="-20.32" y="25.4" swaplevel="1"/>
-<gate name="A1" symbol="D-FLOP" x="15.24" y="25.4" swaplevel="2"/>
+<gate name="P2" symbol="D-FLOP" x="-20.32" y="25.4" swaplevel="1"/>
+<gate name="E1" symbol="D-FLOP" x="15.24" y="25.4" swaplevel="2"/>
 <gate name="G$7" symbol="POWER" x="40.64" y="20.32" addlevel="request"/>
 <gate name="G$8" symbol="T1GND" x="50.8" y="20.32" addlevel="request"/>
-<gate name="K2B" symbol="D-FLOP-K2" x="-20.32" y="2.54" swaplevel="1"/>
-<gate name="K2C" symbol="D-FLOP-K2" x="-20.32" y="-22.86" swaplevel="1"/>
-<gate name="A1B" symbol="D-FLOP-A1" x="15.24" y="0" swaplevel="2"/>
-<gate name="A1C" symbol="D-FLOP-A1" x="15.24" y="-25.4" swaplevel="2"/>
+<gate name="S1" symbol="D-FLOP-K2" x="-20.32" y="2.54" swaplevel="1"/>
+<gate name="V2" symbol="D-FLOP-K2" x="-20.32" y="-22.86" swaplevel="1"/>
+<gate name="H2" symbol="D-FLOP-A1" x="15.24" y="0" swaplevel="2"/>
+<gate name="L1" symbol="D-FLOP-A1" x="15.24" y="-25.4" swaplevel="2"/>
 </gates>
 <devices>
 <device name="" package="H807">
 <connects>
-<connect gate="A1" pin="0" pad="F1"/>
-<connect gate="A1" pin="1" pad="E1"/>
-<connect gate="A1" pin="C" pad="B1"/>
-<connect gate="A1" pin="D" pad="C1"/>
-<connect gate="A1" pin="R" pad="A1"/>
-<connect gate="A1" pin="S" pad="D1"/>
-<connect gate="A1B" pin="0" pad="J2"/>
-<connect gate="A1B" pin="1" pad="H2"/>
-<connect gate="A1B" pin="C" pad="D2"/>
-<connect gate="A1B" pin="D" pad="E2"/>
-<connect gate="A1B" pin="S" pad="F2"/>
-<connect gate="A1C" pin="0" pad="M1"/>
-<connect gate="A1C" pin="1" pad="L1"/>
-<connect gate="A1C" pin="C" pad="H1"/>
-<connect gate="A1C" pin="D" pad="J1"/>
-<connect gate="A1C" pin="S" pad="K1"/>
+<connect gate="E1" pin="0" pad="F1"/>
+<connect gate="E1" pin="1" pad="E1"/>
+<connect gate="E1" pin="C" pad="B1"/>
+<connect gate="E1" pin="D" pad="C1"/>
+<connect gate="E1" pin="R" pad="A1"/>
+<connect gate="E1" pin="S" pad="D1"/>
 <connect gate="G$7" pin="GND" pad="C2"/>
 <connect gate="G$7" pin="VCC" pad="A2"/>
 <connect gate="G$8" pin="GND" pad="T1"/>
-<connect gate="K2" pin="0" pad="R2"/>
-<connect gate="K2" pin="1" pad="P2"/>
-<connect gate="K2" pin="C" pad="L2"/>
-<connect gate="K2" pin="D" pad="M2"/>
-<connect gate="K2" pin="R" pad="K2"/>
-<connect gate="K2" pin="S" pad="N2"/>
-<connect gate="K2B" pin="0" pad="U1"/>
-<connect gate="K2B" pin="1" pad="S1"/>
-<connect gate="K2B" pin="C" pad="N1"/>
-<connect gate="K2B" pin="D" pad="P1"/>
-<connect gate="K2B" pin="S" pad="R1"/>
-<connect gate="K2C" pin="0" pad="V1"/>
-<connect gate="K2C" pin="1" pad="V2"/>
-<connect gate="K2C" pin="C" pad="S2"/>
-<connect gate="K2C" pin="D" pad="T2"/>
-<connect gate="K2C" pin="S" pad="U2"/>
+<connect gate="H2" pin="0" pad="J2"/>
+<connect gate="H2" pin="1" pad="H2"/>
+<connect gate="H2" pin="C" pad="D2"/>
+<connect gate="H2" pin="D" pad="E2"/>
+<connect gate="H2" pin="S" pad="F2"/>
+<connect gate="L1" pin="0" pad="M1"/>
+<connect gate="L1" pin="1" pad="L1"/>
+<connect gate="L1" pin="C" pad="H1"/>
+<connect gate="L1" pin="D" pad="J1"/>
+<connect gate="L1" pin="S" pad="K1"/>
+<connect gate="P2" pin="0" pad="R2"/>
+<connect gate="P2" pin="1" pad="P2"/>
+<connect gate="P2" pin="C" pad="L2"/>
+<connect gate="P2" pin="D" pad="M2"/>
+<connect gate="P2" pin="R" pad="K2"/>
+<connect gate="P2" pin="S" pad="N2"/>
+<connect gate="S1" pin="0" pad="U1"/>
+<connect gate="S1" pin="1" pad="S1"/>
+<connect gate="S1" pin="C" pad="N1"/>
+<connect gate="S1" pin="D" pad="P1"/>
+<connect gate="S1" pin="S" pad="R1"/>
+<connect gate="V2" pin="0" pad="V1"/>
+<connect gate="V2" pin="1" pad="V2"/>
+<connect gate="V2" pin="C" pad="S2"/>
+<connect gate="V2" pin="D" pad="T2"/>
+<connect gate="V2" pin="S" pad="U2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -917,74 +862,74 @@ DIN A4, landscape with extra doc field</description>
 <deviceset name="M903" prefix="M903_">
 <description>Two-sided Posibus cable/connector.</description>
 <gates>
-<gate name="G$1" symbol="PIN" x="0" y="30.48" addlevel="always" swaplevel="1"/>
-<gate name="G$2" symbol="PIN" x="0" y="27.94" addlevel="always" swaplevel="1"/>
-<gate name="G$3" symbol="PIN" x="0" y="25.4" addlevel="always" swaplevel="1"/>
-<gate name="G$4" symbol="PIN" x="0" y="22.86" addlevel="always" swaplevel="1"/>
-<gate name="G$5" symbol="PIN" x="0" y="20.32" addlevel="always" swaplevel="1"/>
-<gate name="G$6" symbol="PIN" x="0" y="17.78" addlevel="always" swaplevel="1"/>
-<gate name="G$7" symbol="PIN" x="0" y="15.24" addlevel="always" swaplevel="1"/>
-<gate name="G$8" symbol="PIN" x="0" y="12.7" addlevel="always" swaplevel="1"/>
-<gate name="G$9" symbol="PIN" x="0" y="10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$10" symbol="PIN" x="0" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$11" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="G$12" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$13" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="G$14" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$15" symbol="PIN" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
-<gate name="G$16" symbol="PIN" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$17" symbol="PIN" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
-<gate name="G$18" symbol="PIN" x="0" y="-12.7" addlevel="always" swaplevel="1"/>
-<gate name="G$19" symbol="T1GND" x="20.32" y="33.02" addlevel="request"/>
-<gate name="G$20" symbol="T1GND" x="30.48" y="33.02" addlevel="request"/>
-<gate name="G$21" symbol="T1GND" x="40.64" y="33.02" addlevel="request"/>
-<gate name="G$22" symbol="T1GND" x="50.8" y="33.02" addlevel="request"/>
-<gate name="G$23" symbol="T1GND" x="20.32" y="17.78" addlevel="request"/>
-<gate name="G$24" symbol="T1GND" x="30.48" y="17.78" addlevel="request"/>
-<gate name="G$25" symbol="T1GND" x="40.64" y="17.78" addlevel="request"/>
-<gate name="G$26" symbol="T1GND" x="20.32" y="2.54" addlevel="request"/>
-<gate name="G$27" symbol="T1GND" x="30.48" y="2.54" addlevel="request"/>
-<gate name="G$28" symbol="T1GND" x="40.64" y="2.54" addlevel="request"/>
-<gate name="G$29" symbol="T1GND" x="50.8" y="2.54" addlevel="request"/>
-<gate name="G$30" symbol="T1GND" x="20.32" y="-12.7" addlevel="request"/>
-<gate name="G$31" symbol="T1GND" x="30.48" y="-12.7" addlevel="request"/>
-<gate name="G$32" symbol="T1GND" x="40.64" y="-12.7" addlevel="request"/>
+<gate name="B1" symbol="PIN" x="0" y="30.48" addlevel="always" swaplevel="1"/>
+<gate name="D1" symbol="PIN" x="0" y="27.94" addlevel="always" swaplevel="1"/>
+<gate name="E1" symbol="PIN" x="0" y="25.4" addlevel="always" swaplevel="1"/>
+<gate name="H1" symbol="PIN" x="0" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="J1" symbol="PIN" x="0" y="20.32" addlevel="always" swaplevel="1"/>
+<gate name="L1" symbol="PIN" x="0" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="M1" symbol="PIN" x="0" y="15.24" addlevel="always" swaplevel="1"/>
+<gate name="P1" symbol="PIN" x="0" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="S1" symbol="PIN" x="0" y="10.16" addlevel="always" swaplevel="1"/>
+<gate name="D2" symbol="PIN" x="0" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="E2" symbol="PIN" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="H2" symbol="PIN" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="K2" symbol="PIN" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="M2" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="P2" symbol="PIN" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="S2" symbol="PIN" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="T2" symbol="PIN" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="V2" symbol="PIN" x="0" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="A1" symbol="T1GND" x="20.32" y="33.02" addlevel="request"/>
+<gate name="C1" symbol="T1GND" x="30.48" y="33.02" addlevel="request"/>
+<gate name="F1" symbol="T1GND" x="40.64" y="33.02" addlevel="request"/>
+<gate name="K1" symbol="T1GND" x="50.8" y="33.02" addlevel="request"/>
+<gate name="N1" symbol="T1GND" x="20.32" y="17.78" addlevel="request"/>
+<gate name="R1" symbol="T1GND" x="30.48" y="17.78" addlevel="request"/>
+<gate name="T1" symbol="T1GND" x="40.64" y="17.78" addlevel="request"/>
+<gate name="C2" symbol="T1GND" x="20.32" y="2.54" addlevel="request"/>
+<gate name="F2" symbol="T1GND" x="30.48" y="2.54" addlevel="request"/>
+<gate name="J2" symbol="T1GND" x="40.64" y="2.54" addlevel="request"/>
+<gate name="L2" symbol="T1GND" x="50.8" y="2.54" addlevel="request"/>
+<gate name="N2" symbol="T1GND" x="20.32" y="-12.7" addlevel="request"/>
+<gate name="R2" symbol="T1GND" x="30.48" y="-12.7" addlevel="request"/>
+<gate name="U2" symbol="T1GND" x="40.64" y="-12.7" addlevel="request"/>
 </gates>
 <devices>
 <device name="" package="H807">
 <connects>
-<connect gate="G$1" pin="P$2" pad="B1"/>
-<connect gate="G$10" pin="P$2" pad="D2"/>
-<connect gate="G$11" pin="P$2" pad="E2"/>
-<connect gate="G$12" pin="P$2" pad="H2"/>
-<connect gate="G$13" pin="P$2" pad="K2"/>
-<connect gate="G$14" pin="P$2" pad="M2"/>
-<connect gate="G$15" pin="P$2" pad="P2"/>
-<connect gate="G$16" pin="P$2" pad="S2"/>
-<connect gate="G$17" pin="P$2" pad="T2"/>
-<connect gate="G$18" pin="P$2" pad="V2"/>
-<connect gate="G$19" pin="GND" pad="A1"/>
-<connect gate="G$2" pin="P$2" pad="D1"/>
-<connect gate="G$20" pin="GND" pad="C1"/>
-<connect gate="G$21" pin="GND" pad="F1"/>
-<connect gate="G$22" pin="GND" pad="K1"/>
-<connect gate="G$23" pin="GND" pad="N1"/>
-<connect gate="G$24" pin="GND" pad="R1"/>
-<connect gate="G$25" pin="GND" pad="T1"/>
-<connect gate="G$26" pin="GND" pad="C2"/>
-<connect gate="G$27" pin="GND" pad="F2"/>
-<connect gate="G$28" pin="GND" pad="J2"/>
-<connect gate="G$29" pin="GND" pad="L2"/>
-<connect gate="G$3" pin="P$2" pad="E1"/>
-<connect gate="G$30" pin="GND" pad="N2"/>
-<connect gate="G$31" pin="GND" pad="R2"/>
-<connect gate="G$32" pin="GND" pad="U2"/>
-<connect gate="G$4" pin="P$2" pad="H1"/>
-<connect gate="G$5" pin="P$2" pad="J1"/>
-<connect gate="G$6" pin="P$2" pad="L1"/>
-<connect gate="G$7" pin="P$2" pad="M1"/>
-<connect gate="G$8" pin="P$2" pad="P1"/>
-<connect gate="G$9" pin="P$2" pad="S1"/>
+<connect gate="A1" pin="GND" pad="A1"/>
+<connect gate="B1" pin="P$2" pad="B1"/>
+<connect gate="C1" pin="GND" pad="C1"/>
+<connect gate="C2" pin="GND" pad="C2"/>
+<connect gate="D1" pin="P$2" pad="D1"/>
+<connect gate="D2" pin="P$2" pad="D2"/>
+<connect gate="E1" pin="P$2" pad="E1"/>
+<connect gate="E2" pin="P$2" pad="E2"/>
+<connect gate="F1" pin="GND" pad="F1"/>
+<connect gate="F2" pin="GND" pad="F2"/>
+<connect gate="H1" pin="P$2" pad="H1"/>
+<connect gate="H2" pin="P$2" pad="H2"/>
+<connect gate="J1" pin="P$2" pad="J1"/>
+<connect gate="J2" pin="GND" pad="J2"/>
+<connect gate="K1" pin="GND" pad="K1"/>
+<connect gate="K2" pin="P$2" pad="K2"/>
+<connect gate="L1" pin="P$2" pad="L1"/>
+<connect gate="L2" pin="GND" pad="L2"/>
+<connect gate="M1" pin="P$2" pad="M1"/>
+<connect gate="M2" pin="P$2" pad="M2"/>
+<connect gate="N1" pin="GND" pad="N1"/>
+<connect gate="N2" pin="GND" pad="N2"/>
+<connect gate="P1" pin="P$2" pad="P1"/>
+<connect gate="P2" pin="P$2" pad="P2"/>
+<connect gate="R1" pin="GND" pad="R1"/>
+<connect gate="R2" pin="GND" pad="R2"/>
+<connect gate="S1" pin="P$2" pad="S1"/>
+<connect gate="S2" pin="P$2" pad="S2"/>
+<connect gate="T1" pin="GND" pad="T1"/>
+<connect gate="T2" pin="P$2" pad="T2"/>
+<connect gate="U2" pin="GND" pad="U2"/>
+<connect gate="V2" pin="P$2" pad="V2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -992,85 +937,152 @@ DIN A4, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M916" prefix="M916_" uservalue="yes">
+<deviceset name="M916" prefix="M916_">
 <description>Simple 36 pin connector/wire cable</description>
 <gates>
-<gate name="G$1" symbol="PIN" x="-7.62" y="43.18" addlevel="always" swaplevel="1"/>
-<gate name="G$2" symbol="PIN" x="-7.62" y="38.1" addlevel="always" swaplevel="1"/>
-<gate name="G$3" symbol="PIN" x="-7.62" y="33.02" addlevel="always" swaplevel="1"/>
-<gate name="G$4" symbol="PIN" x="-7.62" y="27.94" addlevel="always" swaplevel="1"/>
-<gate name="G$5" symbol="PIN" x="-7.62" y="22.86" addlevel="always" swaplevel="1"/>
-<gate name="G$6" symbol="PIN" x="-7.62" y="17.78" addlevel="always" swaplevel="1"/>
-<gate name="G$7" symbol="PIN" x="-7.62" y="12.7" addlevel="always" swaplevel="1"/>
-<gate name="G$8" symbol="PIN" x="-7.62" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$9" symbol="PIN" x="-7.62" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$10" symbol="PIN" x="-7.62" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$11" symbol="PIN" x="-7.62" y="-7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$12" symbol="PIN" x="-7.62" y="-12.7" addlevel="always" swaplevel="1"/>
-<gate name="G$13" symbol="PIN" x="-7.62" y="-17.78" addlevel="always" swaplevel="1"/>
-<gate name="G$14" symbol="PIN" x="-7.62" y="-22.86" addlevel="always" swaplevel="1"/>
-<gate name="G$15" symbol="PIN" x="-7.62" y="-27.94" addlevel="always" swaplevel="1"/>
-<gate name="G$16" symbol="PIN" x="-7.62" y="-33.02" addlevel="always" swaplevel="1"/>
-<gate name="G$17" symbol="PIN" x="-7.62" y="-38.1" addlevel="always" swaplevel="1"/>
-<gate name="G$18" symbol="PIN" x="-7.62" y="-43.18" addlevel="always" swaplevel="1"/>
-<gate name="G$19" symbol="PIN" x="17.78" y="43.18" addlevel="always" swaplevel="1"/>
-<gate name="G$20" symbol="PIN" x="17.78" y="38.1" addlevel="always" swaplevel="1"/>
-<gate name="G$21" symbol="PIN" x="17.78" y="33.02" addlevel="always" swaplevel="1"/>
-<gate name="G$22" symbol="PIN" x="17.78" y="27.94" addlevel="always" swaplevel="1"/>
-<gate name="G$23" symbol="PIN" x="17.78" y="22.86" addlevel="always" swaplevel="1"/>
-<gate name="G$24" symbol="PIN" x="17.78" y="17.78" addlevel="always" swaplevel="1"/>
-<gate name="G$25" symbol="PIN" x="17.78" y="12.7" addlevel="always" swaplevel="1"/>
-<gate name="G$26" symbol="PIN" x="17.78" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$27" symbol="PIN" x="17.78" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$28" symbol="PIN" x="17.78" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="G$29" symbol="PIN" x="17.78" y="-7.62" addlevel="always" swaplevel="1"/>
-<gate name="G$30" symbol="PIN" x="17.78" y="-12.7" addlevel="always" swaplevel="1"/>
-<gate name="G$31" symbol="PIN" x="17.78" y="-17.78" addlevel="always" swaplevel="1"/>
-<gate name="G$32" symbol="PIN" x="17.78" y="-22.86" addlevel="always" swaplevel="1"/>
-<gate name="G$33" symbol="PIN" x="17.78" y="-27.94" addlevel="always" swaplevel="1"/>
-<gate name="G$34" symbol="PIN" x="17.78" y="-33.02" addlevel="always" swaplevel="1"/>
-<gate name="G$35" symbol="PIN" x="17.78" y="-38.1" addlevel="always" swaplevel="1"/>
-<gate name="G$36" symbol="PIN" x="17.78" y="-43.18" addlevel="always" swaplevel="1"/>
+<gate name="A1" symbol="PIN" x="-7.62" y="43.18" addlevel="always" swaplevel="1"/>
+<gate name="A2" symbol="PIN" x="-7.62" y="38.1" addlevel="always" swaplevel="1"/>
+<gate name="B1" symbol="PIN" x="-7.62" y="33.02" addlevel="always" swaplevel="1"/>
+<gate name="B2" symbol="PIN" x="-7.62" y="27.94" addlevel="always" swaplevel="1"/>
+<gate name="C1" symbol="PIN" x="-7.62" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="C2" symbol="PIN" x="-7.62" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="D1" symbol="PIN" x="-7.62" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="D2" symbol="PIN" x="-7.62" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="E1" symbol="PIN" x="-7.62" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="E2" symbol="PIN" x="-7.62" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="F1" symbol="PIN" x="-7.62" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="F2" symbol="PIN" x="-7.62" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="H1" symbol="PIN" x="-7.62" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="H2" symbol="PIN" x="-7.62" y="-22.86" addlevel="always" swaplevel="1"/>
+<gate name="J1" symbol="PIN" x="-7.62" y="-27.94" addlevel="always" swaplevel="1"/>
+<gate name="J2" symbol="PIN" x="-7.62" y="-33.02" addlevel="always" swaplevel="1"/>
+<gate name="K1" symbol="PIN" x="-7.62" y="-38.1" addlevel="always" swaplevel="1"/>
+<gate name="K2" symbol="PIN" x="-7.62" y="-43.18" addlevel="always" swaplevel="1"/>
+<gate name="L1" symbol="PIN" x="17.78" y="43.18" addlevel="always" swaplevel="1"/>
+<gate name="L2" symbol="PIN" x="17.78" y="38.1" addlevel="always" swaplevel="1"/>
+<gate name="M1" symbol="PIN" x="17.78" y="33.02" addlevel="always" swaplevel="1"/>
+<gate name="M2" symbol="PIN" x="17.78" y="27.94" addlevel="always" swaplevel="1"/>
+<gate name="N1" symbol="PIN" x="17.78" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="N2" symbol="PIN" x="17.78" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="P1" symbol="PIN" x="17.78" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="P2" symbol="PIN" x="17.78" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="R1" symbol="PIN" x="17.78" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="R2" symbol="PIN" x="17.78" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="S1" symbol="PIN" x="17.78" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="S2" symbol="PIN" x="17.78" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="T1" symbol="PIN" x="17.78" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="T2" symbol="PIN" x="17.78" y="-22.86" addlevel="always" swaplevel="1"/>
+<gate name="U1" symbol="PIN" x="17.78" y="-27.94" addlevel="always" swaplevel="1"/>
+<gate name="U2" symbol="PIN" x="17.78" y="-33.02" addlevel="always" swaplevel="1"/>
+<gate name="V1" symbol="PIN" x="17.78" y="-38.1" addlevel="always" swaplevel="1"/>
+<gate name="V2" symbol="PIN" x="17.78" y="-43.18" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="H807">
 <connects>
-<connect gate="G$1" pin="P$2" pad="A1"/>
-<connect gate="G$10" pin="P$2" pad="E2"/>
-<connect gate="G$11" pin="P$2" pad="F1"/>
-<connect gate="G$12" pin="P$2" pad="F2"/>
-<connect gate="G$13" pin="P$2" pad="H1"/>
-<connect gate="G$14" pin="P$2" pad="H2"/>
-<connect gate="G$15" pin="P$2" pad="J1"/>
-<connect gate="G$16" pin="P$2" pad="J2"/>
-<connect gate="G$17" pin="P$2" pad="K1"/>
-<connect gate="G$18" pin="P$2" pad="K2"/>
-<connect gate="G$19" pin="P$2" pad="L1"/>
-<connect gate="G$2" pin="P$2" pad="A2"/>
-<connect gate="G$20" pin="P$2" pad="L2"/>
-<connect gate="G$21" pin="P$2" pad="M1"/>
-<connect gate="G$22" pin="P$2" pad="M2"/>
-<connect gate="G$23" pin="P$2" pad="N1"/>
-<connect gate="G$24" pin="P$2" pad="N2"/>
-<connect gate="G$25" pin="P$2" pad="P1"/>
-<connect gate="G$26" pin="P$2" pad="P2"/>
-<connect gate="G$27" pin="P$2" pad="R1"/>
-<connect gate="G$28" pin="P$2" pad="R2"/>
-<connect gate="G$29" pin="P$2" pad="S1"/>
-<connect gate="G$3" pin="P$2" pad="B1"/>
-<connect gate="G$30" pin="P$2" pad="S2"/>
-<connect gate="G$31" pin="P$2" pad="T1"/>
-<connect gate="G$32" pin="P$2" pad="T2"/>
-<connect gate="G$33" pin="P$2" pad="U1"/>
-<connect gate="G$34" pin="P$2" pad="U2"/>
-<connect gate="G$35" pin="P$2" pad="V1"/>
-<connect gate="G$36" pin="P$2" pad="V2"/>
-<connect gate="G$4" pin="P$2" pad="B2"/>
-<connect gate="G$5" pin="P$2" pad="C1"/>
-<connect gate="G$6" pin="P$2" pad="C2"/>
-<connect gate="G$7" pin="P$2" pad="D1"/>
-<connect gate="G$8" pin="P$2" pad="D2"/>
-<connect gate="G$9" pin="P$2" pad="E1"/>
+<connect gate="A1" pin="P$2" pad="A1"/>
+<connect gate="A2" pin="P$2" pad="A2"/>
+<connect gate="B1" pin="P$2" pad="B1"/>
+<connect gate="B2" pin="P$2" pad="B2"/>
+<connect gate="C1" pin="P$2" pad="C1"/>
+<connect gate="C2" pin="P$2" pad="C2"/>
+<connect gate="D1" pin="P$2" pad="D1"/>
+<connect gate="D2" pin="P$2" pad="D2"/>
+<connect gate="E1" pin="P$2" pad="E1"/>
+<connect gate="E2" pin="P$2" pad="E2"/>
+<connect gate="F1" pin="P$2" pad="F1"/>
+<connect gate="F2" pin="P$2" pad="F2"/>
+<connect gate="H1" pin="P$2" pad="H1"/>
+<connect gate="H2" pin="P$2" pad="H2"/>
+<connect gate="J1" pin="P$2" pad="J1"/>
+<connect gate="J2" pin="P$2" pad="J2"/>
+<connect gate="K1" pin="P$2" pad="K1"/>
+<connect gate="K2" pin="P$2" pad="K2"/>
+<connect gate="L1" pin="P$2" pad="L1"/>
+<connect gate="L2" pin="P$2" pad="L2"/>
+<connect gate="M1" pin="P$2" pad="M1"/>
+<connect gate="M2" pin="P$2" pad="M2"/>
+<connect gate="N1" pin="P$2" pad="N1"/>
+<connect gate="N2" pin="P$2" pad="N2"/>
+<connect gate="P1" pin="P$2" pad="P1"/>
+<connect gate="P2" pin="P$2" pad="P2"/>
+<connect gate="R1" pin="P$2" pad="R1"/>
+<connect gate="R2" pin="P$2" pad="R2"/>
+<connect gate="S1" pin="P$2" pad="S1"/>
+<connect gate="S2" pin="P$2" pad="S2"/>
+<connect gate="T1" pin="P$2" pad="T1"/>
+<connect gate="T2" pin="P$2" pad="T2"/>
+<connect gate="U1" pin="P$2" pad="U1"/>
+<connect gate="U2" pin="P$2" pad="U2"/>
+<connect gate="V1" pin="P$2" pad="V1"/>
+<connect gate="V2" pin="P$2" pad="V2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M111" prefix="M111_">
+<description>Sixteen inverters.</description>
+<gates>
+<gate name="G$17" symbol="POWER" x="53.34" y="17.78" addlevel="request"/>
+<gate name="G$1" symbol="T1GND" x="60.96" y="17.78" addlevel="request"/>
+<gate name="B1" symbol="INVERTER-P" x="0" y="30.48" swaplevel="1"/>
+<gate name="D2" symbol="INVERTER-P" x="0" y="17.78" swaplevel="1"/>
+<gate name="E1" symbol="INVERTER-P" x="0" y="5.08" swaplevel="1"/>
+<gate name="H1" symbol="INVERTER-P" x="0" y="-7.62" swaplevel="1"/>
+<gate name="F2" symbol="INVERTER-P" x="0" y="-20.32" swaplevel="1"/>
+<gate name="K1" symbol="INVERTER-P" x="0" y="-33.02" swaplevel="1"/>
+<gate name="J2" symbol="INVERTER-P" x="0" y="-45.72" swaplevel="1"/>
+<gate name="M1" symbol="INVERTER-P" x="0" y="-58.42" swaplevel="1"/>
+<gate name="L2" symbol="INVERTER-P" x="27.94" y="30.48" swaplevel="1"/>
+<gate name="P1" symbol="INVERTER-P" x="27.94" y="17.78" swaplevel="1"/>
+<gate name="N2" symbol="INVERTER-P" x="27.94" y="5.08" swaplevel="1"/>
+<gate name="S1" symbol="INVERTER-P" x="27.94" y="-7.62" swaplevel="1"/>
+<gate name="R2" symbol="INVERTER-P" x="27.94" y="-20.32" swaplevel="1"/>
+<gate name="U1" symbol="INVERTER-P" x="27.94" y="-33.02" swaplevel="1"/>
+<gate name="T2" symbol="INVERTER-P" x="27.94" y="-45.72" swaplevel="1"/>
+<gate name="V2" symbol="INVERTER-P" x="27.94" y="-58.42" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="H807">
+<connects>
+<connect gate="B1" pin="IN" pad="A1"/>
+<connect gate="B1" pin="OUT" pad="B1"/>
+<connect gate="D2" pin="IN" pad="C1"/>
+<connect gate="D2" pin="OUT" pad="D2"/>
+<connect gate="E1" pin="IN" pad="D1"/>
+<connect gate="E1" pin="OUT" pad="E1"/>
+<connect gate="F2" pin="IN" pad="E2"/>
+<connect gate="F2" pin="OUT" pad="F2"/>
+<connect gate="G$1" pin="GND" pad="T1"/>
+<connect gate="G$17" pin="GND" pad="C2"/>
+<connect gate="G$17" pin="VCC" pad="A2"/>
+<connect gate="H1" pin="IN" pad="F1"/>
+<connect gate="H1" pin="OUT" pad="H1"/>
+<connect gate="J2" pin="IN" pad="H2"/>
+<connect gate="J2" pin="OUT" pad="J2"/>
+<connect gate="K1" pin="IN" pad="J1"/>
+<connect gate="K1" pin="OUT" pad="K1"/>
+<connect gate="L2" pin="IN" pad="K2"/>
+<connect gate="L2" pin="OUT" pad="L2"/>
+<connect gate="M1" pin="IN" pad="L1"/>
+<connect gate="M1" pin="OUT" pad="M1"/>
+<connect gate="N2" pin="IN" pad="M2"/>
+<connect gate="N2" pin="OUT" pad="N2"/>
+<connect gate="P1" pin="IN" pad="N1"/>
+<connect gate="P1" pin="OUT" pad="P1"/>
+<connect gate="R2" pin="IN" pad="P2"/>
+<connect gate="R2" pin="OUT" pad="R2"/>
+<connect gate="S1" pin="IN" pad="R1"/>
+<connect gate="S1" pin="OUT" pad="S1"/>
+<connect gate="T2" pin="IN" pad="S2"/>
+<connect gate="T2" pin="OUT" pad="T2"/>
+<connect gate="U1" pin="IN" pad="V1"/>
+<connect gate="U1" pin="OUT" pad="U1"/>
+<connect gate="V2" pin="IN" pad="U2"/>
+<connect gate="V2" pin="OUT" pad="V2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1104,7 +1116,7 @@ DIN A4, landscape with extra doc field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="V">
+<deviceset name="GND" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="GND" symbol="GND" x="0" y="0"/>
@@ -1117,7 +1129,7 @@ DIN A4, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="VCC" prefix="V">
+<deviceset name="VCC" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
@@ -1130,7 +1142,7 @@ DIN A4, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="-15V" prefix="V">
+<deviceset name="-15V" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="-15V" x="0" y="0"/>
@@ -1207,7 +1219,6 @@ DIN A4, landscape with extra doc field</description>
 <part name="V40" library="supply2" deviceset="VCC" device=""/>
 <part name="B15" library="dec-m" deviceset="M627" device=""/>
 <part name="C15" library="dec-m" deviceset="M627" device=""/>
-<part name="D18" library="dec-m" deviceset="M111" device=""/>
 <part name="C16" library="dec-m" deviceset="M627" device=""/>
 <part name="D17" library="dec-m" deviceset="M206X" device=""/>
 <part name="A20N" library="dec-m" deviceset="M903" device=""/>
@@ -1314,6 +1325,7 @@ DIN A4, landscape with extra doc field</description>
 <part name="+5V" library="wirepad" deviceset="2,54/0,8" device=""/>
 <part name="GND" library="wirepad" deviceset="2,54/0,8" device=""/>
 <part name="-15V" library="wirepad" deviceset="2,54/0,8" device=""/>
+<part name="D18" library="dec-m" deviceset="M111" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1336,77 +1348,77 @@ DIN A4, landscape with extra doc field</description>
 <instance part="FRAME1" gate="G$1" x="-129.54" y="-99.06"/>
 <instance part="FRAME1" gate="G$2" x="33.02" y="-99.06"/>
 <instance part="V40" gate="G$1" x="129.54" y="73.66"/>
-<instance part="B15" gate="G$1" x="-96.52" y="68.58"/>
-<instance part="B15" gate="G$2" x="-96.52" y="53.34"/>
-<instance part="B15" gate="G$3" x="-96.52" y="38.1"/>
-<instance part="B15" gate="G$4" x="-96.52" y="12.7"/>
-<instance part="B15" gate="G$5" x="-96.52" y="-2.54"/>
-<instance part="B15" gate="G$6" x="-96.52" y="-17.78"/>
-<instance part="B15" gate="G$9" x="-116.84" y="-33.02" rot="R90"/>
-<instance part="B15" gate="G$10" x="-116.84" y="22.86" rot="R90"/>
-<instance part="C15" gate="G$1" x="-96.52" y="-43.18"/>
-<instance part="C15" gate="G$2" x="-96.52" y="-58.42"/>
-<instance part="C15" gate="G$3" x="-96.52" y="-73.66"/>
-<instance part="C15" gate="G$4" x="-43.18" y="12.7"/>
-<instance part="C15" gate="G$5" x="-43.18" y="-2.54"/>
-<instance part="C15" gate="G$6" x="-43.18" y="-17.78"/>
-<instance part="C15" gate="G$9" x="-63.5" y="-33.02" rot="R90"/>
-<instance part="C15" gate="G$10" x="-116.84" y="-88.9" rot="R90"/>
-<instance part="D18" gate="5" x="-76.2" y="76.2"/>
-<instance part="D18" gate="6" x="-76.2" y="60.96"/>
-<instance part="D18" gate="9" x="-76.2" y="45.72"/>
-<instance part="C16" gate="G$1" x="-43.18" y="-43.18"/>
-<instance part="C16" gate="G$2" x="-43.18" y="-58.42"/>
-<instance part="C16" gate="G$3" x="-43.18" y="-73.66"/>
-<instance part="C16" gate="G$10" x="-63.5" y="-91.44" rot="R90"/>
-<instance part="D17" gate="K2" x="33.02" y="55.88"/>
-<instance part="D17" gate="K2B" x="-10.16" y="58.42"/>
-<instance part="D17" gate="K2C" x="76.2" y="58.42"/>
-<instance part="A20N" gate="G$10" x="-5.08" y="17.78"/>
-<instance part="A20N" gate="G$11" x="-5.08" y="15.24"/>
-<instance part="A20N" gate="G$12" x="-5.08" y="12.7"/>
-<instance part="A20N" gate="G$13" x="-5.08" y="10.16"/>
-<instance part="A20N" gate="G$14" x="-5.08" y="7.62"/>
-<instance part="A20N" gate="G$15" x="-5.08" y="5.08"/>
-<instance part="A20N" gate="G$16" x="-5.08" y="2.54"/>
-<instance part="A20N" gate="G$17" x="-5.08" y="0"/>
-<instance part="A20N" gate="G$18" x="-5.08" y="-2.54"/>
-<instance part="A19N" gate="G$10" x="-5.08" y="-20.32"/>
-<instance part="A19N" gate="G$11" x="-5.08" y="-22.86"/>
-<instance part="A19N" gate="G$12" x="-5.08" y="-25.4"/>
-<instance part="A19N" gate="G$13" x="-5.08" y="-27.94"/>
-<instance part="A19N" gate="G$14" x="-5.08" y="-30.48"/>
-<instance part="A19N" gate="G$15" x="-5.08" y="-33.02"/>
-<instance part="A19N" gate="G$16" x="-5.08" y="-35.56"/>
-<instance part="A19N" gate="G$17" x="-5.08" y="-38.1"/>
-<instance part="A19N" gate="G$18" x="-5.08" y="-40.64"/>
-<instance part="A18N" gate="G$10" x="30.48" y="17.78"/>
-<instance part="A18N" gate="G$11" x="30.48" y="15.24"/>
-<instance part="A18N" gate="G$12" x="30.48" y="12.7"/>
-<instance part="A18N" gate="G$13" x="30.48" y="10.16"/>
-<instance part="A18N" gate="G$14" x="30.48" y="7.62"/>
-<instance part="A18N" gate="G$15" x="30.48" y="5.08"/>
-<instance part="A18N" gate="G$16" x="30.48" y="2.54"/>
-<instance part="A18N" gate="G$17" x="30.48" y="0"/>
-<instance part="A18N" gate="G$18" x="30.48" y="-2.54"/>
-<instance part="A17N" gate="G$11" x="30.48" y="-22.86"/>
-<instance part="A17N" gate="G$12" x="30.48" y="-25.4"/>
-<instance part="A17N" gate="G$13" x="30.48" y="-27.94"/>
-<instance part="A17N" gate="G$14" x="30.48" y="-30.48"/>
-<instance part="A17N" gate="G$15" x="30.48" y="-33.02"/>
-<instance part="A17N" gate="G$16" x="30.48" y="-35.56"/>
-<instance part="A17N" gate="G$17" x="30.48" y="-38.1"/>
-<instance part="A17N" gate="G$18" x="30.48" y="-40.64"/>
-<instance part="A16" gate="G$10" x="63.5" y="-20.32"/>
-<instance part="A16" gate="G$11" x="63.5" y="-22.86"/>
-<instance part="A16" gate="G$12" x="63.5" y="-25.4"/>
-<instance part="A16" gate="G$13" x="63.5" y="-27.94"/>
-<instance part="A16" gate="G$14" x="63.5" y="-30.48"/>
-<instance part="A16" gate="G$15" x="63.5" y="-33.02"/>
-<instance part="A16" gate="G$16" x="63.5" y="-35.56"/>
-<instance part="A16" gate="G$18" x="63.5" y="-40.64"/>
+<instance part="B15" gate="E1" x="-96.52" y="68.58"/>
+<instance part="B15" gate="L1" x="-96.52" y="53.34"/>
+<instance part="B15" gate="S1" x="-96.52" y="38.1"/>
+<instance part="B15" gate="J2" x="-96.52" y="12.7"/>
+<instance part="B15" gate="P2" x="-96.52" y="-2.54"/>
+<instance part="B15" gate="V2" x="-96.52" y="-17.78"/>
+<instance part="B15" gate="U1" x="-116.84" y="-33.02" rot="R90"/>
+<instance part="B15" gate="V1" x="-116.84" y="22.86" rot="R90"/>
+<instance part="C15" gate="E1" x="-96.52" y="-43.18"/>
+<instance part="C15" gate="L1" x="-96.52" y="-58.42"/>
+<instance part="C15" gate="S1" x="-96.52" y="-73.66"/>
+<instance part="C15" gate="J2" x="-43.18" y="12.7"/>
+<instance part="C15" gate="P2" x="-43.18" y="-2.54"/>
+<instance part="C15" gate="V2" x="-43.18" y="-17.78"/>
+<instance part="C15" gate="U1" x="-63.5" y="-33.02" rot="R90"/>
+<instance part="C15" gate="V1" x="-116.84" y="-88.9" rot="R90"/>
+<instance part="C16" gate="E1" x="-43.18" y="-43.18"/>
+<instance part="C16" gate="L1" x="-43.18" y="-58.42"/>
+<instance part="C16" gate="S1" x="-43.18" y="-73.66"/>
+<instance part="C16" gate="V1" x="-63.5" y="-91.44" rot="R90"/>
+<instance part="D17" gate="P2" x="33.02" y="55.88"/>
+<instance part="D17" gate="S1" x="-10.16" y="58.42"/>
+<instance part="D17" gate="V2" x="76.2" y="58.42"/>
+<instance part="A20N" gate="D2" x="-5.08" y="17.78"/>
+<instance part="A20N" gate="E2" x="-5.08" y="15.24"/>
+<instance part="A20N" gate="H2" x="-5.08" y="12.7"/>
+<instance part="A20N" gate="K2" x="-5.08" y="10.16"/>
+<instance part="A20N" gate="M2" x="-5.08" y="7.62"/>
+<instance part="A20N" gate="P2" x="-5.08" y="5.08"/>
+<instance part="A20N" gate="S2" x="-5.08" y="2.54"/>
+<instance part="A20N" gate="T2" x="-5.08" y="0"/>
+<instance part="A20N" gate="V2" x="-5.08" y="-2.54"/>
+<instance part="A19N" gate="D2" x="-5.08" y="-20.32"/>
+<instance part="A19N" gate="E2" x="-5.08" y="-22.86"/>
+<instance part="A19N" gate="H2" x="-5.08" y="-25.4"/>
+<instance part="A19N" gate="K2" x="-5.08" y="-27.94"/>
+<instance part="A19N" gate="M2" x="-5.08" y="-30.48"/>
+<instance part="A19N" gate="P2" x="-5.08" y="-33.02"/>
+<instance part="A19N" gate="S2" x="-5.08" y="-35.56"/>
+<instance part="A19N" gate="T2" x="-5.08" y="-38.1"/>
+<instance part="A19N" gate="V2" x="-5.08" y="-40.64"/>
+<instance part="A18N" gate="D2" x="30.48" y="17.78"/>
+<instance part="A18N" gate="E2" x="30.48" y="15.24"/>
+<instance part="A18N" gate="H2" x="30.48" y="12.7"/>
+<instance part="A18N" gate="K2" x="30.48" y="10.16"/>
+<instance part="A18N" gate="M2" x="30.48" y="7.62"/>
+<instance part="A18N" gate="P2" x="30.48" y="5.08"/>
+<instance part="A18N" gate="S2" x="30.48" y="2.54"/>
+<instance part="A18N" gate="T2" x="30.48" y="0"/>
+<instance part="A18N" gate="V2" x="30.48" y="-2.54"/>
+<instance part="A17N" gate="E2" x="30.48" y="-22.86"/>
+<instance part="A17N" gate="H2" x="30.48" y="-25.4"/>
+<instance part="A17N" gate="K2" x="30.48" y="-27.94"/>
+<instance part="A17N" gate="M2" x="30.48" y="-30.48"/>
+<instance part="A17N" gate="P2" x="30.48" y="-33.02"/>
+<instance part="A17N" gate="S2" x="30.48" y="-35.56"/>
+<instance part="A17N" gate="T2" x="30.48" y="-38.1"/>
+<instance part="A17N" gate="V2" x="30.48" y="-40.64"/>
+<instance part="A16" gate="D2" x="63.5" y="-20.32"/>
+<instance part="A16" gate="E2" x="63.5" y="-22.86"/>
+<instance part="A16" gate="H2" x="63.5" y="-25.4"/>
+<instance part="A16" gate="K2" x="63.5" y="-27.94"/>
+<instance part="A16" gate="M2" x="63.5" y="-30.48"/>
+<instance part="A16" gate="P2" x="63.5" y="-33.02"/>
+<instance part="A16" gate="S2" x="63.5" y="-35.56"/>
+<instance part="A16" gate="V2" x="63.5" y="-40.64"/>
 <instance part="V1" gate="GND" x="124.46" y="73.66"/>
 <instance part="V17" gate="G$1" x="119.38" y="73.66"/>
+<instance part="D18" gate="F2" x="-73.66" y="76.2"/>
+<instance part="D18" gate="K1" x="-73.66" y="60.96"/>
+<instance part="D18" gate="L2" x="-73.66" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -1438,52 +1450,52 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-109.22" y="63.5"/>
 <junction x="-109.22" y="66.04"/>
 <junction x="-109.22" y="33.02"/>
-<pinref part="B15" gate="G$3" pin="IN4"/>
-<pinref part="B15" gate="G$1" pin="IN2"/>
-<pinref part="B15" gate="G$2" pin="IN2"/>
-<pinref part="B15" gate="G$2" pin="IN3"/>
-<pinref part="B15" gate="G$2" pin="IN4"/>
-<pinref part="B15" gate="G$3" pin="IN2"/>
-<pinref part="B15" gate="G$3" pin="IN3"/>
-<pinref part="B15" gate="G$1" pin="IN4"/>
-<pinref part="B15" gate="G$1" pin="IN3"/>
-<pinref part="B15" gate="G$10" pin="P$1"/>
+<pinref part="B15" gate="S1" pin="IN4"/>
+<pinref part="B15" gate="E1" pin="IN2"/>
+<pinref part="B15" gate="L1" pin="IN2"/>
+<pinref part="B15" gate="L1" pin="IN3"/>
+<pinref part="B15" gate="L1" pin="IN4"/>
+<pinref part="B15" gate="S1" pin="IN2"/>
+<pinref part="B15" gate="S1" pin="IN3"/>
+<pinref part="B15" gate="E1" pin="IN4"/>
+<pinref part="B15" gate="E1" pin="IN3"/>
+<pinref part="B15" gate="V1" pin="P$1"/>
 </segment>
 </net>
 <net name="D03EA2" class="0">
 <segment>
 <wire x1="-106.68" y1="43.18" x2="-121.92" y2="43.18" width="0.1524" layer="91"/>
 <label x="-121.92" y="43.18" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$3" pin="IN1"/>
+<pinref part="B15" gate="S1" pin="IN1"/>
 </segment>
 <segment>
 <wire x1="35.56" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
 <label x="38.1" y="12.7" size="1.778" layer="95"/>
-<pinref part="A18N" gate="G$12" pin="P$2"/>
+<pinref part="A18N" gate="H2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03EA0" class="0">
 <segment>
 <wire x1="-106.68" y1="73.66" x2="-121.92" y2="73.66" width="0.1524" layer="91"/>
 <label x="-121.92" y="73.66" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$1" pin="IN1"/>
+<pinref part="B15" gate="E1" pin="IN1"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="17.78" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
 <label x="38.1" y="17.78" size="1.778" layer="95"/>
-<pinref part="A18N" gate="G$10" pin="P$2"/>
+<pinref part="A18N" gate="D2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03EA1" class="0">
 <segment>
 <wire x1="-121.92" y1="58.42" x2="-106.68" y2="58.42" width="0.1524" layer="91"/>
 <label x="-121.92" y="58.42" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$2" pin="IN1"/>
+<pinref part="B15" gate="L1" pin="IN1"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
 <label x="38.1" y="15.24" size="1.778" layer="95"/>
-<pinref part="A18N" gate="G$11" pin="P$2"/>
+<pinref part="A18N" gate="E2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1513,16 +1525,16 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-109.22" y="0"/>
 <junction x="-109.22" y="7.62"/>
 <junction x="-109.22" y="10.16"/>
-<pinref part="B15" gate="G$6" pin="IN4"/>
-<pinref part="B15" gate="G$9" pin="P$1"/>
-<pinref part="B15" gate="G$4" pin="IN2"/>
-<pinref part="B15" gate="G$6" pin="IN3"/>
-<pinref part="B15" gate="G$6" pin="IN2"/>
-<pinref part="B15" gate="G$5" pin="IN4"/>
-<pinref part="B15" gate="G$5" pin="IN3"/>
-<pinref part="B15" gate="G$5" pin="IN2"/>
-<pinref part="B15" gate="G$4" pin="IN4"/>
-<pinref part="B15" gate="G$4" pin="IN3"/>
+<pinref part="B15" gate="V2" pin="IN4"/>
+<pinref part="B15" gate="U1" pin="P$1"/>
+<pinref part="B15" gate="J2" pin="IN2"/>
+<pinref part="B15" gate="V2" pin="IN3"/>
+<pinref part="B15" gate="V2" pin="IN2"/>
+<pinref part="B15" gate="P2" pin="IN4"/>
+<pinref part="B15" gate="P2" pin="IN3"/>
+<pinref part="B15" gate="P2" pin="IN2"/>
+<pinref part="B15" gate="J2" pin="IN4"/>
+<pinref part="B15" gate="J2" pin="IN3"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1552,16 +1564,16 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-109.22" y="-55.88"/>
 <junction x="-109.22" y="-48.26"/>
 <junction x="-109.22" y="-45.72"/>
-<pinref part="C15" gate="G$1" pin="IN2"/>
-<pinref part="C15" gate="G$10" pin="P$1"/>
-<pinref part="C15" gate="G$3" pin="IN4"/>
-<pinref part="C15" gate="G$3" pin="IN3"/>
-<pinref part="C15" gate="G$3" pin="IN2"/>
-<pinref part="C15" gate="G$2" pin="IN4"/>
-<pinref part="C15" gate="G$2" pin="IN3"/>
-<pinref part="C15" gate="G$2" pin="IN2"/>
-<pinref part="C15" gate="G$1" pin="IN4"/>
-<pinref part="C15" gate="G$1" pin="IN3"/>
+<pinref part="C15" gate="E1" pin="IN2"/>
+<pinref part="C15" gate="V1" pin="P$1"/>
+<pinref part="C15" gate="S1" pin="IN4"/>
+<pinref part="C15" gate="S1" pin="IN3"/>
+<pinref part="C15" gate="S1" pin="IN2"/>
+<pinref part="C15" gate="L1" pin="IN4"/>
+<pinref part="C15" gate="L1" pin="IN3"/>
+<pinref part="C15" gate="L1" pin="IN2"/>
+<pinref part="C15" gate="E1" pin="IN4"/>
+<pinref part="C15" gate="E1" pin="IN3"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -1591,16 +1603,16 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-55.88" y="7.62"/>
 <junction x="-55.88" y="10.16"/>
 <junction x="-55.88" y="0"/>
-<pinref part="C15" gate="G$6" pin="IN4"/>
-<pinref part="C15" gate="G$9" pin="P$1"/>
-<pinref part="C15" gate="G$4" pin="IN2"/>
-<pinref part="C15" gate="G$6" pin="IN3"/>
-<pinref part="C15" gate="G$6" pin="IN2"/>
-<pinref part="C15" gate="G$5" pin="IN4"/>
-<pinref part="C15" gate="G$5" pin="IN3"/>
-<pinref part="C15" gate="G$4" pin="IN4"/>
-<pinref part="C15" gate="G$4" pin="IN3"/>
-<pinref part="C15" gate="G$5" pin="IN2"/>
+<pinref part="C15" gate="V2" pin="IN4"/>
+<pinref part="C15" gate="U1" pin="P$1"/>
+<pinref part="C15" gate="J2" pin="IN2"/>
+<pinref part="C15" gate="V2" pin="IN3"/>
+<pinref part="C15" gate="V2" pin="IN2"/>
+<pinref part="C15" gate="P2" pin="IN4"/>
+<pinref part="C15" gate="P2" pin="IN3"/>
+<pinref part="C15" gate="J2" pin="IN4"/>
+<pinref part="C15" gate="J2" pin="IN3"/>
+<pinref part="C15" gate="P2" pin="IN2"/>
 </segment>
 </net>
 <net name="D03EMA2L" class="0">
@@ -1611,20 +1623,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-50.8" y1="38.1" x2="-83.82" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-83.82" y="38.1"/>
 <label x="-63.5" y="38.1" size="1.778" layer="95"/>
-<pinref part="D18" gate="9" pin="IN"/>
-<pinref part="B15" gate="G$3" pin="OUT"/>
+<pinref part="B15" gate="S1" pin="OUT"/>
+<pinref part="D18" gate="L2" pin="IN"/>
 </segment>
 </net>
 <net name="D03EMA0H" class="0">
 <segment>
 <wire x1="-66.04" y1="76.2" x2="-50.8" y2="76.2" width="0.1524" layer="91"/>
 <label x="-63.5" y="76.2" size="1.778" layer="95"/>
-<pinref part="D18" gate="5" pin="OUT"/>
+<pinref part="D18" gate="F2" pin="OUT"/>
 </segment>
 <segment>
 <wire x1="-43.18" y1="60.96" x2="-20.32" y2="60.96" width="0.1524" layer="91"/>
 <label x="-43.18" y="60.96" size="1.778" layer="95"/>
-<pinref part="D17" gate="K2B" pin="D"/>
+<pinref part="D17" gate="S1" pin="D"/>
 </segment>
 </net>
 <net name="D03EMA0L" class="0">
@@ -1635,20 +1647,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="76.2" x2="-81.28" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-83.82" y="68.58"/>
 <label x="-63.5" y="68.58" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$1" pin="OUT"/>
-<pinref part="D18" gate="5" pin="IN"/>
+<pinref part="B15" gate="E1" pin="OUT"/>
+<pinref part="D18" gate="F2" pin="IN"/>
 </segment>
 </net>
 <net name="D03EMA1H" class="0">
 <segment>
 <wire x1="-66.04" y1="60.96" x2="-50.8" y2="60.96" width="0.1524" layer="91"/>
 <label x="-63.5" y="60.96" size="1.778" layer="95"/>
-<pinref part="D18" gate="6" pin="OUT"/>
+<pinref part="D18" gate="K1" pin="OUT"/>
 </segment>
 <segment>
 <wire x1="7.62" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 <label x="7.62" y="60.96" size="1.778" layer="95"/>
-<pinref part="D17" gate="K2" pin="D"/>
+<pinref part="D17" gate="P2" pin="D"/>
 </segment>
 </net>
 <net name="D03EMA1L" class="0">
@@ -1659,62 +1671,62 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="53.34" x2="-50.8" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-83.82" y="53.34"/>
 <label x="-63.5" y="53.34" size="1.778" layer="95"/>
-<pinref part="D18" gate="6" pin="IN"/>
-<pinref part="B15" gate="G$2" pin="OUT"/>
+<pinref part="B15" gate="L1" pin="OUT"/>
+<pinref part="D18" gate="K1" pin="IN"/>
 </segment>
 </net>
 <net name="D03EMA2H" class="0">
 <segment>
 <wire x1="-66.04" y1="45.72" x2="-50.8" y2="45.72" width="0.1524" layer="91"/>
 <label x="-63.5" y="45.72" size="1.778" layer="95"/>
-<pinref part="D18" gate="9" pin="OUT"/>
+<pinref part="D18" gate="L2" pin="OUT"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="60.96" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
 <label x="50.8" y="60.96" size="1.778" layer="95"/>
-<pinref part="D17" gate="K2C" pin="D"/>
+<pinref part="D17" gate="V2" pin="D"/>
 </segment>
 </net>
 <net name="D03MA1L" class="0">
 <segment>
 <wire x1="-86.36" y1="-2.54" x2="-76.2" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-83.82" y="-2.54" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$5" pin="OUT"/>
+<pinref part="B15" gate="P2" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA5L" class="0">
 <segment>
 <wire x1="-86.36" y1="-73.66" x2="-76.2" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-83.82" y="-73.66" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$3" pin="OUT"/>
+<pinref part="C15" gate="S1" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA4L" class="0">
 <segment>
 <wire x1="-76.2" y1="-58.42" x2="-86.36" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-83.82" y="-58.42" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$2" pin="OUT"/>
+<pinref part="C15" gate="L1" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA3L" class="0">
 <segment>
 <wire x1="-86.36" y1="-43.18" x2="-76.2" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-83.82" y="-43.18" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$1" pin="OUT"/>
+<pinref part="C15" gate="E1" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA2L" class="0">
 <segment>
 <wire x1="-76.2" y1="-17.78" x2="-86.36" y2="-17.78" width="0.1524" layer="91"/>
 <label x="-83.82" y="-17.78" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$6" pin="OUT"/>
+<pinref part="B15" gate="V2" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA0L" class="0">
 <segment>
 <wire x1="-86.36" y1="12.7" x2="-76.2" y2="12.7" width="0.1524" layer="91"/>
 <label x="-83.82" y="12.7" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$4" pin="OUT"/>
+<pinref part="B15" gate="J2" pin="OUT"/>
 </segment>
 </net>
 <net name="N$122" class="0">
@@ -1745,58 +1757,58 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-55.88" y="-48.26"/>
 <junction x="-55.88" y="-45.72"/>
 <junction x="-55.88" y="-71.12"/>
-<pinref part="C16" gate="G$1" pin="IN2"/>
-<pinref part="C16" gate="G$10" pin="P$1"/>
-<pinref part="C16" gate="G$3" pin="IN4"/>
-<pinref part="C16" gate="G$3" pin="IN3"/>
-<pinref part="C16" gate="G$2" pin="IN4"/>
-<pinref part="C16" gate="G$2" pin="IN3"/>
-<pinref part="C16" gate="G$2" pin="IN2"/>
-<pinref part="C16" gate="G$1" pin="IN4"/>
-<pinref part="C16" gate="G$1" pin="IN3"/>
-<pinref part="C16" gate="G$3" pin="IN2"/>
+<pinref part="C16" gate="E1" pin="IN2"/>
+<pinref part="C16" gate="V1" pin="P$1"/>
+<pinref part="C16" gate="S1" pin="IN4"/>
+<pinref part="C16" gate="S1" pin="IN3"/>
+<pinref part="C16" gate="L1" pin="IN4"/>
+<pinref part="C16" gate="L1" pin="IN3"/>
+<pinref part="C16" gate="L1" pin="IN2"/>
+<pinref part="C16" gate="E1" pin="IN4"/>
+<pinref part="C16" gate="E1" pin="IN3"/>
+<pinref part="C16" gate="S1" pin="IN2"/>
 </segment>
 </net>
 <net name="D03MA11L" class="0">
 <segment>
 <wire x1="-33.02" y1="-73.66" x2="-22.86" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-30.48" y="-73.66" size="1.778" layer="95"/>
-<pinref part="C16" gate="G$3" pin="OUT"/>
+<pinref part="C16" gate="S1" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA6L" class="0">
 <segment>
 <wire x1="-22.86" y1="12.7" x2="-33.02" y2="12.7" width="0.1524" layer="91"/>
 <label x="-30.48" y="12.7" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$4" pin="OUT"/>
+<pinref part="C15" gate="J2" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA7L" class="0">
 <segment>
 <wire x1="-33.02" y1="-2.54" x2="-22.86" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-30.48" y="-2.54" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$5" pin="OUT"/>
+<pinref part="C15" gate="P2" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA8L" class="0">
 <segment>
 <wire x1="-33.02" y1="-17.78" x2="-22.86" y2="-17.78" width="0.1524" layer="91"/>
 <label x="-30.48" y="-17.78" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$6" pin="OUT"/>
+<pinref part="C15" gate="V2" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA9L" class="0">
 <segment>
 <wire x1="-33.02" y1="-43.18" x2="-22.86" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-30.48" y="-43.18" size="1.778" layer="95"/>
-<pinref part="C16" gate="G$1" pin="OUT"/>
+<pinref part="C16" gate="E1" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MA10L" class="0">
 <segment>
 <wire x1="-33.02" y1="-58.42" x2="-22.86" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-30.48" y="-58.42" size="1.778" layer="95"/>
-<pinref part="C16" gate="G$2" pin="OUT"/>
+<pinref part="C16" gate="L1" pin="OUT"/>
 </segment>
 </net>
 <net name="B17V1" class="0">
@@ -1810,7 +1822,7 @@ DIN A4, landscape with extra doc field</description>
 <junction x="33.02" y="45.72"/>
 <junction x="-20.32" y="45.72"/>
 <label x="-43.18" y="45.72" size="1.778" layer="95"/>
-<pinref part="D17" gate="K2" pin="R"/>
+<pinref part="D17" gate="P2" pin="R"/>
 </segment>
 </net>
 <net name="D03MEMSTART" class="0">
@@ -1827,35 +1839,35 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-22.86" y="40.64"/>
 <junction x="20.32" y="40.64"/>
 <label x="-43.18" y="40.64" size="1.778" layer="95"/>
-<pinref part="D17" gate="K2B" pin="C"/>
-<pinref part="D17" gate="K2" pin="C"/>
-<pinref part="D17" gate="K2C" pin="C"/>
+<pinref part="D17" gate="S1" pin="C"/>
+<pinref part="D17" gate="P2" pin="C"/>
+<pinref part="D17" gate="V2" pin="C"/>
 </segment>
 <segment>
 <wire x1="68.58" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
 <label x="71.12" y="-30.48" size="1.778" layer="95"/>
-<pinref part="A16" gate="G$14" pin="P$2"/>
+<pinref part="A16" gate="M2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03BEMA0L" class="0">
 <segment>
 <wire x1="15.24" y1="53.34" x2="0" y2="53.34" width="0.1524" layer="91"/>
 <label x="2.54" y="53.34" size="1.778" layer="95"/>
-<pinref part="D17" gate="K2B" pin="0"/>
+<pinref part="D17" gate="S1" pin="0"/>
 </segment>
 </net>
 <net name="D03BEMA1L" class="0">
 <segment>
 <wire x1="58.42" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
 <label x="45.72" y="53.34" size="1.778" layer="95"/>
-<pinref part="D17" gate="K2" pin="0"/>
+<pinref part="D17" gate="P2" pin="0"/>
 </segment>
 </net>
 <net name="D03BEMA2L" class="0">
 <segment>
 <wire x1="101.6" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 <label x="88.9" y="53.34" size="1.778" layer="95"/>
-<pinref part="D17" gate="K2C" pin="0"/>
+<pinref part="D17" gate="V2" pin="0"/>
 </segment>
 </net>
 <net name="B17S1" class="0">
@@ -1869,342 +1881,342 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-10.16" y="71.12"/>
 <junction x="33.02" y="71.12"/>
 <label x="-43.18" y="71.12" size="1.778" layer="95"/>
-<pinref part="D17" gate="K2C" pin="S"/>
-<pinref part="D17" gate="K2B" pin="S"/>
-<pinref part="D17" gate="K2" pin="S"/>
+<pinref part="D17" gate="V2" pin="S"/>
+<pinref part="D17" gate="S1" pin="S"/>
+<pinref part="D17" gate="P2" pin="S"/>
 </segment>
 </net>
 <net name="D03MCBMB2L" class="0">
 <segment>
 <wire x1="0" y1="-40.64" x2="15.24" y2="-40.64" width="0.1524" layer="91"/>
 <label x="2.54" y="-40.64" size="1.778" layer="95"/>
-<pinref part="A19N" gate="G$18" pin="P$2"/>
+<pinref part="A19N" gate="V2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03BMA5" class="0">
 <segment>
 <wire x1="0" y1="-2.54" x2="15.24" y2="-2.54" width="0.1524" layer="91"/>
 <label x="2.54" y="-2.54" size="1.778" layer="95"/>
-<pinref part="A20N" gate="G$18" pin="P$2"/>
+<pinref part="A20N" gate="V2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-106.68" y1="-68.58" x2="-121.92" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-121.92" y="-68.58" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$3" pin="IN1"/>
+<pinref part="C15" gate="S1" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA4" class="0">
 <segment>
 <wire x1="0" y1="0" x2="15.24" y2="0" width="0.1524" layer="91"/>
 <label x="2.54" y="0" size="1.778" layer="95"/>
-<pinref part="A20N" gate="G$17" pin="P$2"/>
+<pinref part="A20N" gate="T2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-106.68" y1="-53.34" x2="-121.92" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-121.92" y="-53.34" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$2" pin="IN1"/>
+<pinref part="C15" gate="L1" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA3" class="0">
 <segment>
 <wire x1="0" y1="2.54" x2="15.24" y2="2.54" width="0.1524" layer="91"/>
 <label x="2.54" y="2.54" size="1.778" layer="95"/>
-<pinref part="A20N" gate="G$16" pin="P$2"/>
+<pinref part="A20N" gate="S2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-106.68" y1="-38.1" x2="-121.92" y2="-38.1" width="0.1524" layer="91"/>
 <label x="-121.92" y="-38.1" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$1" pin="IN1"/>
+<pinref part="C15" gate="E1" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA2" class="0">
 <segment>
 <wire x1="0" y1="5.08" x2="15.24" y2="5.08" width="0.1524" layer="91"/>
 <label x="2.54" y="5.08" size="1.778" layer="95"/>
-<pinref part="A20N" gate="G$15" pin="P$2"/>
+<pinref part="A20N" gate="P2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-121.92" y1="-12.7" x2="-106.68" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-121.92" y="-12.7" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$6" pin="IN1"/>
+<pinref part="B15" gate="V2" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA1" class="0">
 <segment>
 <wire x1="0" y1="7.62" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
 <label x="2.54" y="7.62" size="1.778" layer="95"/>
-<pinref part="A20N" gate="G$14" pin="P$2"/>
+<pinref part="A20N" gate="M2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-106.68" y1="2.54" x2="-121.92" y2="2.54" width="0.1524" layer="91"/>
 <label x="-121.92" y="2.54" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$5" pin="IN1"/>
+<pinref part="B15" gate="P2" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA0" class="0">
 <segment>
 <wire x1="0" y1="10.16" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
 <label x="2.54" y="10.16" size="1.778" layer="95"/>
-<pinref part="A20N" gate="G$13" pin="P$2"/>
+<pinref part="A20N" gate="K2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-121.92" y1="17.78" x2="-106.68" y2="17.78" width="0.1524" layer="91"/>
 <label x="-121.92" y="17.78" size="1.778" layer="95"/>
-<pinref part="B15" gate="G$4" pin="IN1"/>
+<pinref part="B15" gate="J2" pin="IN1"/>
 </segment>
 </net>
 <net name="D03MCBMB5L" class="0">
 <segment>
 <wire x1="0" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <label x="2.54" y="12.7" size="1.778" layer="95"/>
-<pinref part="A20N" gate="G$12" pin="P$2"/>
+<pinref part="A20N" gate="H2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MCBMB4L" class="0">
 <segment>
 <wire x1="0" y1="15.24" x2="15.24" y2="15.24" width="0.1524" layer="91"/>
 <label x="2.54" y="15.24" size="1.778" layer="95"/>
-<pinref part="A20N" gate="G$11" pin="P$2"/>
+<pinref part="A20N" gate="E2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM8" class="0">
 <segment>
 <wire x1="81.28" y1="-20.32" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
 <label x="71.12" y="-20.32" size="1.778" layer="95"/>
-<pinref part="A16" gate="G$10" pin="P$2"/>
+<pinref part="A16" gate="D2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM9" class="0">
 <segment>
 <wire x1="68.58" y1="-22.86" x2="81.28" y2="-22.86" width="0.1524" layer="91"/>
 <label x="71.12" y="-22.86" size="1.778" layer="95"/>
-<pinref part="A16" gate="G$11" pin="P$2"/>
+<pinref part="A16" gate="E2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM10" class="0">
 <segment>
 <wire x1="81.28" y1="-25.4" x2="68.58" y2="-25.4" width="0.1524" layer="91"/>
 <label x="71.12" y="-25.4" size="1.778" layer="95"/>
-<pinref part="A16" gate="G$12" pin="P$2"/>
+<pinref part="A16" gate="H2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM11" class="0">
 <segment>
 <wire x1="68.58" y1="-27.94" x2="81.28" y2="-27.94" width="0.1524" layer="91"/>
 <label x="71.12" y="-27.94" size="1.778" layer="95"/>
-<pinref part="A16" gate="G$13" pin="P$2"/>
+<pinref part="A16" gate="K2" pin="P$2"/>
 </segment>
 </net>
 <net name="D01STROBEL" class="0">
 <segment>
 <wire x1="68.58" y1="-33.02" x2="81.28" y2="-33.02" width="0.1524" layer="91"/>
 <label x="71.12" y="-33.02" size="1.778" layer="95"/>
-<pinref part="A16" gate="G$15" pin="P$2"/>
+<pinref part="A16" gate="P2" pin="P$2"/>
 </segment>
 </net>
 <net name="D01MEMDONEL" class="0">
 <segment>
 <wire x1="68.58" y1="-35.56" x2="81.28" y2="-35.56" width="0.1524" layer="91"/>
 <label x="71.12" y="-35.56" size="1.778" layer="95"/>
-<pinref part="A16" gate="G$16" pin="P$2"/>
+<pinref part="A16" gate="S2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03BTP2" class="0">
 <segment>
 <wire x1="68.58" y1="-40.64" x2="81.28" y2="-40.64" width="0.1524" layer="91"/>
 <label x="71.12" y="-40.64" size="1.778" layer="95"/>
-<pinref part="A16" gate="G$18" pin="P$2"/>
+<pinref part="A16" gate="V2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MCBMB6L" class="0">
 <segment>
 <wire x1="35.56" y1="10.16" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
 <label x="38.1" y="10.16" size="1.778" layer="95"/>
-<pinref part="A18N" gate="G$13" pin="P$2"/>
+<pinref part="A18N" gate="K2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MCBMB7L" class="0">
 <segment>
 <wire x1="48.26" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
 <label x="38.1" y="7.62" size="1.778" layer="95"/>
-<pinref part="A18N" gate="G$14" pin="P$2"/>
+<pinref part="A18N" gate="M2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MCBMB8L" class="0">
 <segment>
 <wire x1="35.56" y1="5.08" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
 <label x="38.1" y="5.08" size="1.778" layer="95"/>
-<pinref part="A18N" gate="G$15" pin="P$2"/>
+<pinref part="A18N" gate="P2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MCBMB9L" class="0">
 <segment>
 <wire x1="35.56" y1="2.54" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
 <label x="38.1" y="2.54" size="1.778" layer="95"/>
-<pinref part="A18N" gate="G$16" pin="P$2"/>
+<pinref part="A18N" gate="S2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MCBMB10L" class="0">
 <segment>
 <wire x1="35.56" y1="0" x2="48.26" y2="0" width="0.1524" layer="91"/>
 <label x="38.1" y="0" size="1.778" layer="95"/>
-<pinref part="A18N" gate="G$17" pin="P$2"/>
+<pinref part="A18N" gate="T2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MCBMB11L" class="0">
 <segment>
 <wire x1="35.56" y1="-2.54" x2="48.26" y2="-2.54" width="0.1524" layer="91"/>
 <label x="38.1" y="-2.54" size="1.778" layer="95"/>
-<pinref part="A18N" gate="G$18" pin="P$2"/>
+<pinref part="A18N" gate="V2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03BMA6" class="0">
 <segment>
 <wire x1="0" y1="-20.32" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
 <label x="2.54" y="-20.32" size="1.778" layer="95"/>
-<pinref part="A19N" gate="G$10" pin="P$2"/>
+<pinref part="A19N" gate="D2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-68.58" y1="17.78" x2="-53.34" y2="17.78" width="0.1524" layer="91"/>
 <label x="-68.58" y="17.78" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$4" pin="IN1"/>
+<pinref part="C15" gate="J2" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA8" class="0">
 <segment>
 <wire x1="0" y1="-25.4" x2="15.24" y2="-25.4" width="0.1524" layer="91"/>
 <label x="2.54" y="-25.4" size="1.778" layer="95"/>
-<pinref part="A19N" gate="G$12" pin="P$2"/>
+<pinref part="A19N" gate="H2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-53.34" y1="-12.7" x2="-68.58" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-68.58" y="-12.7" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$6" pin="IN1"/>
+<pinref part="C15" gate="V2" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA7" class="0">
 <segment>
 <wire x1="0" y1="-22.86" x2="15.24" y2="-22.86" width="0.1524" layer="91"/>
 <label x="2.54" y="-22.86" size="1.778" layer="95"/>
-<pinref part="A19N" gate="G$11" pin="P$2"/>
+<pinref part="A19N" gate="E2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-53.34" y1="2.54" x2="-68.58" y2="2.54" width="0.1524" layer="91"/>
 <label x="-68.58" y="2.54" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$5" pin="IN1"/>
+<pinref part="C15" gate="P2" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA9" class="0">
 <segment>
 <wire x1="0" y1="-27.94" x2="15.24" y2="-27.94" width="0.1524" layer="91"/>
 <label x="2.54" y="-27.94" size="1.778" layer="95"/>
-<pinref part="A19N" gate="G$13" pin="P$2"/>
+<pinref part="A19N" gate="K2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-53.34" y1="-38.1" x2="-68.58" y2="-38.1" width="0.1524" layer="91"/>
 <label x="-68.58" y="-38.1" size="1.778" layer="95"/>
-<pinref part="C16" gate="G$1" pin="IN1"/>
+<pinref part="C16" gate="E1" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA10" class="0">
 <segment>
 <wire x1="0" y1="-30.48" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
 <label x="2.54" y="-30.48" size="1.778" layer="95"/>
-<pinref part="A19N" gate="G$14" pin="P$2"/>
+<pinref part="A19N" gate="M2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-53.34" y1="-53.34" x2="-68.58" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-68.58" y="-53.34" size="1.778" layer="95"/>
-<pinref part="C16" gate="G$2" pin="IN1"/>
+<pinref part="C16" gate="L1" pin="IN1"/>
 </segment>
 </net>
 <net name="D03BMA11" class="0">
 <segment>
 <wire x1="0" y1="-33.02" x2="15.24" y2="-33.02" width="0.1524" layer="91"/>
 <label x="2.54" y="-33.02" size="1.778" layer="95"/>
-<pinref part="A19N" gate="G$15" pin="P$2"/>
+<pinref part="A19N" gate="P2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-53.34" y1="-68.58" x2="-68.58" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-68.58" y="-68.58" size="1.778" layer="95"/>
-<pinref part="C16" gate="G$3" pin="IN1"/>
+<pinref part="C16" gate="S1" pin="IN1"/>
 </segment>
 </net>
 <net name="D03MCBMB0L" class="0">
 <segment>
 <wire x1="0" y1="-35.56" x2="15.24" y2="-35.56" width="0.1524" layer="91"/>
 <label x="2.54" y="-35.56" size="1.778" layer="95"/>
-<pinref part="A19N" gate="G$16" pin="P$2"/>
+<pinref part="A19N" gate="S2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MCBMB1L" class="0">
 <segment>
 <wire x1="0" y1="-38.1" x2="15.24" y2="-38.1" width="0.1524" layer="91"/>
 <label x="2.54" y="-38.1" size="1.778" layer="95"/>
-<pinref part="A19N" gate="G$17" pin="P$2"/>
+<pinref part="A19N" gate="T2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM7" class="0">
 <segment>
 <wire x1="35.56" y1="-40.64" x2="48.26" y2="-40.64" width="0.1524" layer="91"/>
 <label x="38.1" y="-40.64" size="1.778" layer="95"/>
-<pinref part="A17N" gate="G$18" pin="P$2"/>
+<pinref part="A17N" gate="V2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM6" class="0">
 <segment>
 <wire x1="48.26" y1="-38.1" x2="35.56" y2="-38.1" width="0.1524" layer="91"/>
 <label x="38.1" y="-38.1" size="1.778" layer="95"/>
-<pinref part="A17N" gate="G$17" pin="P$2"/>
+<pinref part="A17N" gate="T2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM5" class="0">
 <segment>
 <wire x1="35.56" y1="-35.56" x2="48.26" y2="-35.56" width="0.1524" layer="91"/>
 <label x="38.1" y="-35.56" size="1.778" layer="95"/>
-<pinref part="A17N" gate="G$16" pin="P$2"/>
+<pinref part="A17N" gate="S2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM4" class="0">
 <segment>
 <wire x1="48.26" y1="-33.02" x2="35.56" y2="-33.02" width="0.1524" layer="91"/>
 <label x="38.1" y="-33.02" size="1.778" layer="95"/>
-<pinref part="A17N" gate="G$15" pin="P$2"/>
+<pinref part="A17N" gate="P2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM2" class="0">
 <segment>
 <wire x1="35.56" y1="-27.94" x2="48.26" y2="-27.94" width="0.1524" layer="91"/>
 <label x="38.1" y="-27.94" size="1.778" layer="95"/>
-<pinref part="A17N" gate="G$13" pin="P$2"/>
+<pinref part="A17N" gate="K2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM1" class="0">
 <segment>
 <wire x1="35.56" y1="-25.4" x2="48.26" y2="-25.4" width="0.1524" layer="91"/>
 <label x="38.1" y="-25.4" size="1.778" layer="95"/>
-<pinref part="A17N" gate="G$12" pin="P$2"/>
+<pinref part="A17N" gate="H2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM0" class="0">
 <segment>
 <wire x1="35.56" y1="-22.86" x2="48.26" y2="-22.86" width="0.1524" layer="91"/>
 <label x="38.1" y="-22.86" size="1.778" layer="95"/>
-<pinref part="A17N" gate="G$11" pin="P$2"/>
+<pinref part="A17N" gate="E2" pin="P$2"/>
 </segment>
 </net>
 <net name="D02MEM3" class="0">
 <segment>
 <wire x1="35.56" y1="-30.48" x2="48.26" y2="-30.48" width="0.1524" layer="91"/>
 <label x="38.1" y="-30.48" size="1.778" layer="95"/>
-<pinref part="A17N" gate="G$14" pin="P$2"/>
+<pinref part="A17N" gate="M2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MCBMB3L" class="0">
 <segment>
 <wire x1="15.24" y1="17.78" x2="0" y2="17.78" width="0.1524" layer="91"/>
 <label x="2.54" y="17.78" size="1.778" layer="95"/>
-<pinref part="A20N" gate="G$10" pin="P$2"/>
+<pinref part="A20N" gate="D2" pin="P$2"/>
 </segment>
 </net>
 </nets>
@@ -2724,37 +2736,37 @@ DIN A4, landscape with extra doc field</description>
 <instance part="FRAME3" gate="G$2" x="25.4" y="-88.9"/>
 <instance part="V42" gate="G$1" x="121.92" y="83.82"/>
 <instance part="V44" gate="GND" x="116.84" y="86.36"/>
-<instance part="D15" gate="K2" x="-88.9" y="-15.24"/>
-<instance part="D15" gate="A1" x="-88.9" y="66.04"/>
-<instance part="D15" gate="K2B" x="-5.08" y="68.58"/>
-<instance part="D15" gate="K2C" x="-5.08" y="40.64"/>
-<instance part="D15" gate="A1B" x="-88.9" y="38.1"/>
-<instance part="D15" gate="A1C" x="-88.9" y="12.7"/>
-<instance part="D16" gate="K2" x="78.74" y="38.1"/>
-<instance part="D16" gate="A1" x="-5.08" y="12.7"/>
-<instance part="D16" gate="K2B" x="78.74" y="15.24"/>
-<instance part="D16" gate="K2C" x="78.74" y="-12.7"/>
-<instance part="D16" gate="A1B" x="-5.08" y="-15.24"/>
-<instance part="D16" gate="A1C" x="78.74" y="66.04"/>
-<instance part="B19" gate="G$1" x="-111.76" y="48.26"/>
-<instance part="B19" gate="G$2" x="-111.76" y="-5.08"/>
-<instance part="B19" gate="G$3" x="-27.94" y="48.26"/>
-<instance part="B19" gate="G$4" x="-27.94" y="-5.08"/>
-<instance part="B19" gate="G$5" x="55.88" y="48.26"/>
-<instance part="B19" gate="G$6" x="55.88" y="-5.08"/>
-<instance part="B20" gate="G$1" x="-60.96" y="43.18"/>
-<instance part="B20" gate="G$2" x="-60.96" y="-10.16"/>
-<instance part="B20" gate="G$3" x="22.86" y="43.18"/>
-<instance part="B20" gate="G$4" x="22.86" y="-10.16"/>
-<instance part="B20" gate="G$5" x="106.68" y="43.18"/>
-<instance part="B20" gate="G$6" x="106.68" y="-10.16"/>
-<instance part="C16" gate="G$4" x="-106.68" y="-45.72"/>
-<instance part="C16" gate="G$5" x="-106.68" y="-63.5"/>
-<instance part="C16" gate="G$6" x="-68.58" y="-45.72"/>
-<instance part="C16" gate="G$9" x="-132.08" y="73.66"/>
-<instance part="B17" gate="G$4" x="-109.22" y="-76.2"/>
-<instance part="B17" gate="G$5" x="-60.96" y="-76.2"/>
-<instance part="B17" gate="G$6" x="-5.08" y="-76.2"/>
+<instance part="D15" gate="P2" x="-88.9" y="-15.24"/>
+<instance part="D15" gate="E1" x="-88.9" y="66.04"/>
+<instance part="D15" gate="S1" x="-5.08" y="68.58"/>
+<instance part="D15" gate="V2" x="-5.08" y="40.64"/>
+<instance part="D15" gate="H2" x="-88.9" y="38.1"/>
+<instance part="D15" gate="L1" x="-88.9" y="12.7"/>
+<instance part="D16" gate="P2" x="78.74" y="38.1"/>
+<instance part="D16" gate="E1" x="-5.08" y="12.7"/>
+<instance part="D16" gate="S1" x="78.74" y="15.24"/>
+<instance part="D16" gate="V2" x="78.74" y="-12.7"/>
+<instance part="D16" gate="H2" x="-5.08" y="-15.24"/>
+<instance part="D16" gate="L1" x="78.74" y="66.04"/>
+<instance part="B19" gate="D1" x="-111.76" y="48.26"/>
+<instance part="B19" gate="K1" x="-111.76" y="-5.08"/>
+<instance part="B19" gate="R1" x="-27.94" y="48.26"/>
+<instance part="B19" gate="H2" x="-27.94" y="-5.08"/>
+<instance part="B19" gate="N2" x="55.88" y="48.26"/>
+<instance part="B19" gate="U2" x="55.88" y="-5.08"/>
+<instance part="B20" gate="D1" x="-60.96" y="43.18"/>
+<instance part="B20" gate="K1" x="-60.96" y="-10.16"/>
+<instance part="B20" gate="R1" x="22.86" y="43.18"/>
+<instance part="B20" gate="H2" x="22.86" y="-10.16"/>
+<instance part="B20" gate="N2" x="106.68" y="43.18"/>
+<instance part="B20" gate="U2" x="106.68" y="-10.16"/>
+<instance part="C16" gate="J2" x="-106.68" y="-45.72"/>
+<instance part="C16" gate="P2" x="-106.68" y="-63.5"/>
+<instance part="C16" gate="V2" x="-68.58" y="-45.72"/>
+<instance part="C16" gate="U1" x="-132.08" y="73.66"/>
+<instance part="B17" gate="K1" x="-109.22" y="-76.2"/>
+<instance part="B17" gate="K2" x="-60.96" y="-76.2"/>
+<instance part="B17" gate="N1" x="-5.08" y="-76.2"/>
 <instance part="V15" gate="G$1" x="111.76" y="86.36"/>
 </instances>
 <busses>
@@ -2764,7 +2776,7 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <wire x1="-121.92" y1="40.64" x2="-132.08" y2="40.64" width="0.1524" layer="91"/>
 <label x="-132.08" y="40.64" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$1" pin="B"/>
+<pinref part="B19" gate="D1" pin="B"/>
 </segment>
 </net>
 <net name="D04MD1L" class="0">
@@ -2774,8 +2786,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-104.14" y1="35.56" x2="-104.14" y2="43.18" width="0.1524" layer="91"/>
 <junction x="-104.14" y="43.18"/>
 <label x="-116.84" y="35.56" size="1.778" layer="95"/>
-<pinref part="B19" gate="G$1" pin="E"/>
-<pinref part="D15" gate="A1B" pin="D"/>
+<pinref part="B19" gate="D1" pin="E"/>
+<pinref part="D15" gate="H2" pin="D"/>
 </segment>
 </net>
 <net name="D04MD0L" class="0">
@@ -2786,8 +2798,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-116.84" y1="58.42" x2="-104.14" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-104.14" y="58.42"/>
 <label x="-116.84" y="58.42" size="1.778" layer="95"/>
-<pinref part="B19" gate="G$1" pin="D"/>
-<pinref part="D15" gate="A1" pin="D"/>
+<pinref part="B19" gate="D1" pin="D"/>
+<pinref part="D15" gate="E1" pin="D"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -2806,11 +2818,11 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-101.6" y="35.56"/>
 <junction x="-101.6" y="10.16"/>
 <junction x="-101.6" y="-17.78"/>
-<pinref part="D15" gate="A1B" pin="C"/>
-<pinref part="D15" gate="A1" pin="C"/>
-<pinref part="D15" gate="K2" pin="C"/>
-<pinref part="D15" gate="A1C" pin="C"/>
-<pinref part="B17" gate="G$4" pin="OUT"/>
+<pinref part="D15" gate="H2" pin="C"/>
+<pinref part="D15" gate="E1" pin="C"/>
+<pinref part="D15" gate="P2" pin="C"/>
+<pinref part="D15" gate="L1" pin="C"/>
+<pinref part="B17" gate="K1" pin="OUT"/>
 </segment>
 </net>
 <net name="D04MD3L" class="0">
@@ -2820,8 +2832,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-104.14" y1="-17.78" x2="-104.14" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-104.14" y="-10.16"/>
 <label x="-116.84" y="-17.78" size="1.778" layer="95"/>
-<pinref part="D15" gate="K2" pin="D"/>
-<pinref part="B19" gate="G$2" pin="E"/>
+<pinref part="D15" gate="P2" pin="D"/>
+<pinref part="B19" gate="K1" pin="E"/>
 </segment>
 </net>
 <net name="D04MD2L" class="0">
@@ -2832,59 +2844,59 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-116.84" y1="5.08" x2="-104.14" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-104.14" y="5.08"/>
 <label x="-116.84" y="5.08" size="1.778" layer="95"/>
-<pinref part="B19" gate="G$2" pin="D"/>
-<pinref part="D15" gate="A1C" pin="D"/>
+<pinref part="B19" gate="K1" pin="D"/>
+<pinref part="D15" gate="L1" pin="D"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <wire x1="-71.12" y1="50.8" x2="-71.12" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="63.5" x2="-78.74" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="B20" gate="G$1" pin="A"/>
-<pinref part="D15" gate="A1" pin="0"/>
+<pinref part="B20" gate="D1" pin="A"/>
+<pinref part="D15" gate="E1" pin="0"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <wire x1="-71.12" y1="35.56" x2="-78.74" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="B20" gate="G$1" pin="B"/>
-<pinref part="D15" gate="A1B" pin="0"/>
+<pinref part="B20" gate="D1" pin="B"/>
+<pinref part="D15" gate="H2" pin="0"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <wire x1="-71.12" y1="-2.54" x2="-71.12" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="10.16" x2="-78.74" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="B20" gate="G$2" pin="A"/>
-<pinref part="D15" gate="A1C" pin="0"/>
+<pinref part="B20" gate="K1" pin="A"/>
+<pinref part="D15" gate="L1" pin="0"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <wire x1="-71.12" y1="-17.78" x2="-78.74" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="B20" gate="G$2" pin="B"/>
-<pinref part="D15" gate="K2" pin="0"/>
+<pinref part="B20" gate="K1" pin="B"/>
+<pinref part="D15" gate="P2" pin="0"/>
 </segment>
 </net>
 <net name="D03MCBMB3L" class="0">
 <segment>
 <wire x1="-121.92" y1="-12.7" x2="-132.08" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-132.08" y="-12.7" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$2" pin="B"/>
+<pinref part="B19" gate="K1" pin="B"/>
 </segment>
 </net>
 <net name="D03MCBMB2L" class="0">
 <segment>
 <wire x1="-121.92" y1="2.54" x2="-132.08" y2="2.54" width="0.1524" layer="91"/>
 <label x="-132.08" y="2.54" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$2" pin="A"/>
+<pinref part="B19" gate="K1" pin="A"/>
 </segment>
 </net>
 <net name="D03MCBMB0L" class="0">
 <segment>
 <wire x1="-132.08" y1="55.88" x2="-121.92" y2="55.88" width="0.1524" layer="91"/>
 <label x="-132.08" y="55.88" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$1" pin="A"/>
+<pinref part="B19" gate="D1" pin="A"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -2910,35 +2922,35 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-40.64" y="-2.54"/>
 <junction x="-40.64" y="-35.56"/>
 <junction x="43.18" y="-2.54"/>
-<pinref part="B19" gate="G$1" pin="C"/>
-<pinref part="B19" gate="G$2" pin="C"/>
-<pinref part="C16" gate="G$4" pin="OUT"/>
-<pinref part="B19" gate="G$3" pin="C"/>
-<pinref part="B19" gate="G$4" pin="C"/>
-<pinref part="B19" gate="G$6" pin="C"/>
-<pinref part="B19" gate="G$5" pin="C"/>
+<pinref part="B19" gate="D1" pin="C"/>
+<pinref part="B19" gate="K1" pin="C"/>
+<pinref part="C16" gate="J2" pin="OUT"/>
+<pinref part="B19" gate="R1" pin="C"/>
+<pinref part="B19" gate="H2" pin="C"/>
+<pinref part="B19" gate="U2" pin="C"/>
+<pinref part="B19" gate="N2" pin="C"/>
 </segment>
 </net>
 <net name="B17V1" class="0">
 <segment>
 <wire x1="-88.9" y1="-22.86" x2="-99.06" y2="-22.86" width="0.1524" layer="91"/>
 <label x="-99.06" y="-22.86" size="1.27" layer="95"/>
-<pinref part="D15" gate="K2" pin="R"/>
+<pinref part="D15" gate="P2" pin="R"/>
 </segment>
 <segment>
 <wire x1="-88.9" y1="58.42" x2="-99.06" y2="58.42" width="0.1524" layer="91"/>
 <label x="-99.06" y="58.42" size="1.27" layer="95"/>
-<pinref part="D15" gate="A1" pin="R"/>
+<pinref part="D15" gate="E1" pin="R"/>
 </segment>
 <segment>
 <wire x1="-15.24" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
 <label x="-15.24" y="5.08" size="1.27" layer="95"/>
-<pinref part="D16" gate="A1" pin="R"/>
+<pinref part="D16" gate="E1" pin="R"/>
 </segment>
 <segment>
 <wire x1="68.58" y1="30.48" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
 <label x="68.58" y="30.48" size="1.27" layer="95"/>
-<pinref part="D16" gate="K2" pin="R"/>
+<pinref part="D16" gate="P2" pin="R"/>
 </segment>
 </net>
 <net name="C16U1" class="0">
@@ -2972,34 +2984,34 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-81.28" y="-50.8"/>
 <junction x="-81.28" y="-48.26"/>
 <label x="-132.08" y="-43.18" size="1.27" layer="95"/>
-<pinref part="C16" gate="G$5" pin="IN4"/>
-<pinref part="C16" gate="G$4" pin="IN2"/>
-<pinref part="C16" gate="G$4" pin="IN3"/>
-<pinref part="C16" gate="G$4" pin="IN4"/>
-<pinref part="C16" gate="G$5" pin="IN2"/>
-<pinref part="C16" gate="G$5" pin="IN3"/>
-<pinref part="C16" gate="G$6" pin="IN4"/>
-<pinref part="C16" gate="G$6" pin="IN2"/>
-<pinref part="C16" gate="G$6" pin="IN3"/>
+<pinref part="C16" gate="P2" pin="IN4"/>
+<pinref part="C16" gate="J2" pin="IN2"/>
+<pinref part="C16" gate="J2" pin="IN3"/>
+<pinref part="C16" gate="J2" pin="IN4"/>
+<pinref part="C16" gate="P2" pin="IN2"/>
+<pinref part="C16" gate="P2" pin="IN3"/>
+<pinref part="C16" gate="V2" pin="IN4"/>
+<pinref part="C16" gate="V2" pin="IN2"/>
+<pinref part="C16" gate="V2" pin="IN3"/>
 </segment>
 <segment>
 <wire x1="-111.76" y1="66.04" x2="-121.92" y2="66.04" width="0.1524" layer="91"/>
 <label x="-119.38" y="66.04" size="1.778" layer="95"/>
-<pinref part="C16" gate="G$9" pin="P$1"/>
+<pinref part="C16" gate="U1" pin="P$1"/>
 </segment>
 </net>
 <net name="D01SELECTH" class="0">
 <segment>
 <wire x1="-132.08" y1="-58.42" x2="-116.84" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-132.08" y="-58.42" size="1.27" layer="95"/>
-<pinref part="C16" gate="G$5" pin="IN1"/>
+<pinref part="C16" gate="P2" pin="IN1"/>
 </segment>
 </net>
 <net name="D01WRITEH" class="0">
 <segment>
 <wire x1="-132.08" y1="-40.64" x2="-116.84" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-132.08" y="-40.64" size="1.27" layer="95"/>
-<pinref part="C16" gate="G$4" pin="IN1"/>
+<pinref part="C16" gate="J2" pin="IN1"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -3027,37 +3039,37 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-53.34" y="-48.26"/>
 <junction x="10.16" y="-48.26"/>
 <junction x="93.98" y="-7.62"/>
-<pinref part="C16" gate="G$5" pin="OUT"/>
-<pinref part="B20" gate="G$2" pin="C"/>
-<pinref part="B20" gate="G$1" pin="C"/>
-<pinref part="B20" gate="G$3" pin="C"/>
-<pinref part="B20" gate="G$4" pin="C"/>
-<pinref part="B20" gate="G$5" pin="C"/>
-<pinref part="B20" gate="G$6" pin="C"/>
+<pinref part="C16" gate="P2" pin="OUT"/>
+<pinref part="B20" gate="K1" pin="C"/>
+<pinref part="B20" gate="D1" pin="C"/>
+<pinref part="B20" gate="R1" pin="C"/>
+<pinref part="B20" gate="H2" pin="C"/>
+<pinref part="B20" gate="N2" pin="C"/>
+<pinref part="B20" gate="U2" pin="C"/>
 </segment>
 </net>
 <net name="D01BINIT" class="0">
 <segment>
 <wire x1="-91.44" y1="-40.64" x2="-78.74" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-91.44" y="-40.64" size="1.27" layer="95"/>
-<pinref part="C16" gate="G$6" pin="IN1"/>
+<pinref part="C16" gate="V2" pin="IN1"/>
 </segment>
 </net>
 <net name="B17S1" class="0">
 <segment>
 <wire x1="-132.08" y1="-73.66" x2="-119.38" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-132.08" y="-73.66" size="1.27" layer="95"/>
-<pinref part="B17" gate="G$4" pin="IN1"/>
+<pinref part="B17" gate="K1" pin="IN1"/>
 </segment>
 <segment>
 <wire x1="-83.82" y1="-73.66" x2="-71.12" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-83.82" y="-73.66" size="1.27" layer="95"/>
-<pinref part="B17" gate="G$5" pin="IN1"/>
+<pinref part="B17" gate="K2" pin="IN1"/>
 </segment>
 <segment>
 <wire x1="-27.94" y1="-73.66" x2="-15.24" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-27.94" y="-73.66" size="1.778" layer="95"/>
-<pinref part="B17" gate="G$6" pin="IN1"/>
+<pinref part="B17" gate="N1" pin="IN1"/>
 </segment>
 </net>
 <net name="D01LOADMDL" class="0">
@@ -3071,65 +3083,65 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-119.38" y="-78.74"/>
 <junction x="-71.12" y="-81.28"/>
 <label x="-132.08" y="-78.74" size="1.27" layer="95"/>
-<pinref part="B17" gate="G$4" pin="IN2"/>
-<pinref part="B17" gate="G$5" pin="IN2"/>
-<pinref part="B17" gate="G$6" pin="IN2"/>
+<pinref part="B17" gate="K1" pin="IN2"/>
+<pinref part="B17" gate="K2" pin="IN2"/>
+<pinref part="B17" gate="N1" pin="IN2"/>
 </segment>
 </net>
 <net name="D02MEM2" class="0">
 <segment>
 <wire x1="-43.18" y1="-5.08" x2="-53.34" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-50.8" y="-5.08" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$2" pin="D"/>
+<pinref part="B20" gate="K1" pin="D"/>
 </segment>
 </net>
 <net name="D02MEM3" class="0">
 <segment>
 <wire x1="-43.18" y1="-15.24" x2="-53.34" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-50.8" y="-15.24" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$2" pin="E"/>
+<pinref part="B20" gate="K1" pin="E"/>
 </segment>
 </net>
 <net name="D02MEM1" class="0">
 <segment>
 <wire x1="-43.18" y1="38.1" x2="-53.34" y2="38.1" width="0.1524" layer="91"/>
 <label x="-50.8" y="38.1" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$1" pin="E"/>
+<pinref part="B20" gate="D1" pin="E"/>
 </segment>
 </net>
 <net name="D02MEM0" class="0">
 <segment>
 <wire x1="-43.18" y1="48.26" x2="-53.34" y2="48.26" width="0.1524" layer="91"/>
 <label x="-50.8" y="48.26" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$1" pin="D"/>
+<pinref part="B20" gate="D1" pin="D"/>
 </segment>
 </net>
 <net name="D03MCBMB4L" class="0">
 <segment>
 <wire x1="-53.34" y1="55.88" x2="-38.1" y2="55.88" width="0.1524" layer="91"/>
 <label x="-53.34" y="55.88" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$3" pin="A"/>
+<pinref part="B19" gate="R1" pin="A"/>
 </segment>
 </net>
 <net name="D03MCBMB5L" class="0">
 <segment>
 <wire x1="-53.34" y1="40.64" x2="-38.1" y2="40.64" width="0.1524" layer="91"/>
 <label x="-53.34" y="40.64" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$3" pin="B"/>
+<pinref part="B19" gate="R1" pin="B"/>
 </segment>
 </net>
 <net name="D03MCBMB6L" class="0">
 <segment>
 <wire x1="-53.34" y1="2.54" x2="-38.1" y2="2.54" width="0.1524" layer="91"/>
 <label x="-53.34" y="2.54" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$4" pin="A"/>
+<pinref part="B19" gate="H2" pin="A"/>
 </segment>
 </net>
 <net name="D03MCBMB7L" class="0">
 <segment>
 <wire x1="-53.34" y1="-12.7" x2="-38.1" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-53.34" y="-12.7" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$4" pin="B"/>
+<pinref part="B19" gate="H2" pin="B"/>
 </segment>
 </net>
 <net name="D04MD4L" class="0">
@@ -3140,8 +3152,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-33.02" y1="58.42" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-20.32" y="58.42"/>
 <label x="-33.02" y="58.42" size="1.778" layer="95"/>
-<pinref part="B19" gate="G$3" pin="D"/>
-<pinref part="D15" gate="K2B" pin="D"/>
+<pinref part="B19" gate="R1" pin="D"/>
+<pinref part="D15" gate="S1" pin="D"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -3160,11 +3172,11 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-17.78" y="35.56"/>
 <junction x="-17.78" y="10.16"/>
 <junction x="-17.78" y="-17.78"/>
-<pinref part="D15" gate="K2B" pin="C"/>
-<pinref part="D15" gate="K2C" pin="C"/>
-<pinref part="D16" gate="A1" pin="C"/>
-<pinref part="D16" gate="A1B" pin="C"/>
-<pinref part="B17" gate="G$5" pin="OUT"/>
+<pinref part="D15" gate="S1" pin="C"/>
+<pinref part="D15" gate="V2" pin="C"/>
+<pinref part="D16" gate="E1" pin="C"/>
+<pinref part="D16" gate="H2" pin="C"/>
+<pinref part="B17" gate="K2" pin="OUT"/>
 </segment>
 </net>
 <net name="D04MD5L" class="0">
@@ -3174,8 +3186,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-20.32" y1="35.56" x2="-20.32" y2="43.18" width="0.1524" layer="91"/>
 <junction x="-20.32" y="43.18"/>
 <label x="-33.02" y="35.56" size="1.778" layer="95"/>
-<pinref part="D15" gate="K2C" pin="D"/>
-<pinref part="B19" gate="G$3" pin="E"/>
+<pinref part="D15" gate="V2" pin="D"/>
+<pinref part="B19" gate="R1" pin="E"/>
 </segment>
 </net>
 <net name="D04MD7L" class="0">
@@ -3185,8 +3197,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-20.32" y1="-17.78" x2="-20.32" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-20.32" y="-10.16"/>
 <label x="-33.02" y="-17.78" size="1.778" layer="95"/>
-<pinref part="D16" gate="A1B" pin="D"/>
-<pinref part="B19" gate="G$4" pin="E"/>
+<pinref part="D16" gate="H2" pin="D"/>
+<pinref part="B19" gate="H2" pin="E"/>
 </segment>
 </net>
 <net name="D04MD6L" class="0">
@@ -3197,38 +3209,38 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-33.02" y1="5.08" x2="-20.32" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-20.32" y="5.08"/>
 <label x="-33.02" y="5.08" size="1.778" layer="95"/>
-<pinref part="B19" gate="G$4" pin="D"/>
-<pinref part="D16" gate="A1" pin="D"/>
+<pinref part="B19" gate="H2" pin="D"/>
+<pinref part="D16" gate="E1" pin="D"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <wire x1="12.7" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="B20" gate="G$3" pin="B"/>
-<pinref part="D15" gate="K2C" pin="0"/>
+<pinref part="B20" gate="R1" pin="B"/>
+<pinref part="D15" gate="V2" pin="0"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <wire x1="5.08" y1="-17.78" x2="12.7" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="D16" gate="A1B" pin="0"/>
-<pinref part="B20" gate="G$4" pin="B"/>
+<pinref part="D16" gate="H2" pin="0"/>
+<pinref part="B20" gate="H2" pin="B"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <wire x1="5.08" y1="10.16" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="10.16" x2="12.7" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="D16" gate="A1" pin="0"/>
-<pinref part="B20" gate="G$4" pin="A"/>
+<pinref part="D16" gate="E1" pin="0"/>
+<pinref part="B20" gate="H2" pin="A"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <wire x1="5.08" y1="63.5" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="63.5" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="D15" gate="K2B" pin="0"/>
-<pinref part="B20" gate="G$3" pin="A"/>
+<pinref part="D15" gate="S1" pin="0"/>
+<pinref part="B20" gate="R1" pin="A"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -3247,67 +3259,67 @@ DIN A4, landscape with extra doc field</description>
 <junction x="66.04" y="-17.78"/>
 <junction x="66.04" y="10.16"/>
 <junction x="66.04" y="35.56"/>
-<pinref part="B17" gate="G$6" pin="OUT"/>
-<pinref part="D16" gate="K2C" pin="C"/>
-<pinref part="D16" gate="K2" pin="C"/>
-<pinref part="D16" gate="K2B" pin="C"/>
-<pinref part="D16" gate="A1C" pin="C"/>
+<pinref part="B17" gate="N1" pin="OUT"/>
+<pinref part="D16" gate="V2" pin="C"/>
+<pinref part="D16" gate="P2" pin="C"/>
+<pinref part="D16" gate="S1" pin="C"/>
+<pinref part="D16" gate="L1" pin="C"/>
 </segment>
 </net>
 <net name="D02MEM6" class="0">
 <segment>
 <wire x1="30.48" y1="-5.08" x2="40.64" y2="-5.08" width="0.1524" layer="91"/>
 <label x="33.02" y="-5.08" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$4" pin="D"/>
+<pinref part="B20" gate="H2" pin="D"/>
 </segment>
 </net>
 <net name="D02MEM7" class="0">
 <segment>
 <wire x1="40.64" y1="-15.24" x2="30.48" y2="-15.24" width="0.1524" layer="91"/>
 <label x="33.02" y="-15.24" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$4" pin="E"/>
+<pinref part="B20" gate="H2" pin="E"/>
 </segment>
 </net>
 <net name="D02MEM4" class="0">
 <segment>
 <wire x1="40.64" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
 <label x="33.02" y="48.26" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$3" pin="D"/>
+<pinref part="B20" gate="R1" pin="D"/>
 </segment>
 </net>
 <net name="D02MEM5" class="0">
 <segment>
 <wire x1="30.48" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 <label x="33.02" y="38.1" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$3" pin="E"/>
+<pinref part="B20" gate="R1" pin="E"/>
 </segment>
 </net>
 <net name="D03MCBMB8L" class="0">
 <segment>
 <wire x1="30.48" y1="55.88" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
 <label x="30.48" y="55.88" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$5" pin="A"/>
+<pinref part="B19" gate="N2" pin="A"/>
 </segment>
 </net>
 <net name="D03MCBMB9L" class="0">
 <segment>
 <wire x1="45.72" y1="40.64" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
 <label x="30.48" y="40.64" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$5" pin="B"/>
+<pinref part="B19" gate="N2" pin="B"/>
 </segment>
 </net>
 <net name="D03MCBMB10L" class="0">
 <segment>
 <wire x1="27.94" y1="2.54" x2="45.72" y2="2.54" width="0.1524" layer="91"/>
 <label x="27.94" y="2.54" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$6" pin="A"/>
+<pinref part="B19" gate="U2" pin="A"/>
 </segment>
 </net>
 <net name="D03MCBMB11L" class="0">
 <segment>
 <wire x1="45.72" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
 <label x="27.94" y="-12.7" size="1.27" layer="95"/>
-<pinref part="B19" gate="G$6" pin="B"/>
+<pinref part="B19" gate="U2" pin="B"/>
 </segment>
 </net>
 <net name="D04MD11L" class="0">
@@ -3317,8 +3329,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="63.5" y1="-17.78" x2="63.5" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="63.5" y="-10.16"/>
 <label x="50.8" y="-17.78" size="1.778" layer="95"/>
-<pinref part="D16" gate="K2C" pin="D"/>
-<pinref part="B19" gate="G$6" pin="E"/>
+<pinref part="D16" gate="V2" pin="D"/>
+<pinref part="B19" gate="U2" pin="E"/>
 </segment>
 </net>
 <net name="D04MD10L" class="0">
@@ -3329,8 +3341,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="50.8" y1="5.08" x2="63.5" y2="5.08" width="0.1524" layer="91"/>
 <junction x="63.5" y="5.08"/>
 <label x="50.8" y="5.08" size="1.778" layer="95"/>
-<pinref part="B19" gate="G$6" pin="D"/>
-<pinref part="D16" gate="K2B" pin="D"/>
+<pinref part="B19" gate="U2" pin="D"/>
+<pinref part="D16" gate="S1" pin="D"/>
 </segment>
 </net>
 <net name="D04MD9L" class="0">
@@ -3340,8 +3352,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="63.5" y1="35.56" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
 <junction x="63.5" y="43.18"/>
 <label x="50.8" y="35.56" size="1.778" layer="95"/>
-<pinref part="D16" gate="K2" pin="D"/>
-<pinref part="B19" gate="G$5" pin="E"/>
+<pinref part="D16" gate="P2" pin="D"/>
+<pinref part="B19" gate="N2" pin="E"/>
 </segment>
 </net>
 <net name="D04MD8L" class="0">
@@ -3352,23 +3364,23 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="50.8" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
 <junction x="63.5" y="58.42"/>
 <label x="50.8" y="58.42" size="1.778" layer="95"/>
-<pinref part="D16" gate="A1C" pin="D"/>
-<pinref part="B19" gate="G$5" pin="D"/>
+<pinref part="D16" gate="L1" pin="D"/>
+<pinref part="B19" gate="N2" pin="D"/>
 </segment>
 </net>
 <net name="N$67" class="0">
 <segment>
 <wire x1="96.52" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="B20" gate="G$5" pin="B"/>
-<pinref part="D16" gate="K2" pin="0"/>
+<pinref part="B20" gate="N2" pin="B"/>
+<pinref part="D16" gate="P2" pin="0"/>
 </segment>
 </net>
 <net name="N$68" class="0">
 <segment>
 <wire x1="96.52" y1="50.8" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="B20" gate="G$5" pin="A"/>
-<pinref part="D16" gate="A1C" pin="0"/>
+<pinref part="B20" gate="N2" pin="A"/>
+<pinref part="D16" gate="L1" pin="0"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -3425,62 +3437,62 @@ DIN A4, landscape with extra doc field</description>
 <junction x="91.44" y="53.34"/>
 <junction x="91.44" y="27.94"/>
 <junction x="91.44" y="0"/>
-<pinref part="D16" gate="K2C" pin="S"/>
-<pinref part="D16" gate="K2B" pin="S"/>
-<pinref part="D16" gate="K2" pin="S"/>
-<pinref part="D16" gate="A1C" pin="S"/>
-<pinref part="D15" gate="A1" pin="S"/>
-<pinref part="D15" gate="A1B" pin="S"/>
-<pinref part="D15" gate="K2" pin="S"/>
-<pinref part="D15" gate="A1C" pin="S"/>
-<pinref part="C16" gate="G$6" pin="OUT"/>
-<pinref part="D15" gate="K2C" pin="S"/>
-<pinref part="D16" gate="A1" pin="S"/>
-<pinref part="D16" gate="A1B" pin="S"/>
-<pinref part="D15" gate="K2B" pin="S"/>
+<pinref part="D16" gate="V2" pin="S"/>
+<pinref part="D16" gate="S1" pin="S"/>
+<pinref part="D16" gate="P2" pin="S"/>
+<pinref part="D16" gate="L1" pin="S"/>
+<pinref part="D15" gate="E1" pin="S"/>
+<pinref part="D15" gate="H2" pin="S"/>
+<pinref part="D15" gate="P2" pin="S"/>
+<pinref part="D15" gate="L1" pin="S"/>
+<pinref part="C16" gate="V2" pin="OUT"/>
+<pinref part="D15" gate="V2" pin="S"/>
+<pinref part="D16" gate="E1" pin="S"/>
+<pinref part="D16" gate="H2" pin="S"/>
+<pinref part="D15" gate="S1" pin="S"/>
 </segment>
 </net>
 <net name="D02MEM8" class="0">
 <segment>
 <wire x1="124.46" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
 <label x="116.84" y="48.26" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$5" pin="D"/>
+<pinref part="B20" gate="N2" pin="D"/>
 </segment>
 </net>
 <net name="D02MEM9" class="0">
 <segment>
 <wire x1="124.46" y1="38.1" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
 <label x="116.84" y="38.1" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$5" pin="E"/>
+<pinref part="B20" gate="N2" pin="E"/>
 </segment>
 </net>
 <net name="D02MEM10" class="0">
 <segment>
 <wire x1="124.46" y1="-5.08" x2="114.3" y2="-5.08" width="0.1524" layer="91"/>
 <label x="116.84" y="-5.08" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$6" pin="D"/>
+<pinref part="B20" gate="U2" pin="D"/>
 </segment>
 </net>
 <net name="D02MEM11" class="0">
 <segment>
 <wire x1="124.46" y1="-15.24" x2="114.3" y2="-15.24" width="0.1524" layer="91"/>
 <label x="116.84" y="-15.24" size="1.27" layer="95"/>
-<pinref part="B20" gate="G$6" pin="E"/>
+<pinref part="B20" gate="U2" pin="E"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <wire x1="96.52" y1="-17.78" x2="88.9" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="B20" gate="G$6" pin="B"/>
-<pinref part="D16" gate="K2C" pin="0"/>
+<pinref part="B20" gate="U2" pin="B"/>
+<pinref part="D16" gate="V2" pin="0"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <wire x1="88.9" y1="10.16" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="10.16" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="D16" gate="K2B" pin="0"/>
-<pinref part="B20" gate="G$6" pin="A"/>
+<pinref part="D16" gate="S1" pin="0"/>
+<pinref part="B20" gate="U2" pin="A"/>
 </segment>
 </net>
 </nets>
@@ -3496,44 +3508,37 @@ DIN A4, landscape with extra doc field</description>
 <instance part="FRAME4" gate="G$2" x="30.48" y="-83.82"/>
 <instance part="V45" gate="G$1" x="127" y="88.9"/>
 <instance part="V2" gate="GND" x="121.92" y="88.9"/>
-<instance part="D18" gate="3" x="-53.34" y="86.36"/>
-<instance part="D18" gate="2" x="-104.14" y="-63.5"/>
-<instance part="D18" gate="1" x="-101.6" y="60.96"/>
-<instance part="D18" gate="4" x="-99.06" y="40.64"/>
-<instance part="D18" gate="7" x="-83.82" y="-73.66"/>
-<instance part="D18" gate="11" x="33.02" y="-27.94"/>
-<instance part="D18" gate="12" x="-27.94" y="-66.04"/>
-<instance part="A15" gate="G$1" x="0" y="38.1"/>
-<instance part="A15" gate="G$2" x="27.94" y="38.1"/>
-<instance part="A15" gate="G$3" x="111.76" y="38.1"/>
-<instance part="A15" gate="G$4" x="83.82" y="38.1"/>
-<instance part="A15" gate="G$5" x="55.88" y="38.1"/>
-<instance part="A15" gate="G$6" x="-76.2" y="50.8"/>
-<instance part="A15" gate="G$9" x="-124.46" y="76.2"/>
-<instance part="A15" gate="G$10" x="-116.84" y="81.28"/>
-<instance part="C17" gate="K2" x="30.48" y="60.96"/>
-<instance part="C17" gate="A1" x="-53.34" y="60.96"/>
-<instance part="C17" gate="K2B" x="58.42" y="63.5"/>
-<instance part="C17" gate="K2C" x="86.36" y="63.5"/>
-<instance part="C17" gate="A1B" x="-25.4" y="60.96"/>
-<instance part="C17" gate="A1C" x="2.54" y="60.96"/>
-<instance part="B16" gate="G$1" x="-40.64" y="-17.78"/>
-<instance part="B16" gate="G$2" x="-76.2" y="-33.02"/>
-<instance part="B16" gate="G$3" x="-25.4" y="-38.1"/>
-<instance part="B16" gate="G$4" x="53.34" y="-15.24"/>
-<instance part="B16" gate="G$5" x="5.08" y="83.82"/>
-<instance part="B16" gate="G$6" x="68.58" y="83.82"/>
-<instance part="B16" gate="G$7" x="7.62" y="-27.94"/>
-<instance part="B16" gate="G$8" x="-104.14" y="22.86"/>
-<instance part="C20" gate="G$1" x="-60.96" y="10.16"/>
-<instance part="C20" gate="G$4" x="-60.96" y="-7.62"/>
-<instance part="C20" gate="G$5" x="-30.48" y="10.16"/>
-<instance part="C18" gate="G$1" x="66.04" y="10.16"/>
-<instance part="C18" gate="G$4" x="96.52" y="10.16"/>
-<instance part="C19" gate="G$1" x="2.54" y="10.16" rot="MR180"/>
-<instance part="C19" gate="G$4" x="7.62" y="-7.62"/>
-<instance part="C19" gate="G$5" x="33.02" y="10.16"/>
-<instance part="B18" gate="G$6" x="93.98" y="-27.94"/>
+<instance part="A15" gate="E1" x="0" y="38.1"/>
+<instance part="A15" gate="L1" x="27.94" y="38.1"/>
+<instance part="A15" gate="S1" x="111.76" y="38.1"/>
+<instance part="A15" gate="J2" x="83.82" y="38.1"/>
+<instance part="A15" gate="P2" x="55.88" y="38.1"/>
+<instance part="A15" gate="V2" x="-76.2" y="50.8"/>
+<instance part="A15" gate="U1" x="-124.46" y="76.2"/>
+<instance part="A15" gate="V1" x="-116.84" y="81.28"/>
+<instance part="C17" gate="P2" x="30.48" y="60.96"/>
+<instance part="C17" gate="E1" x="-53.34" y="60.96"/>
+<instance part="C17" gate="S1" x="58.42" y="63.5"/>
+<instance part="C17" gate="V2" x="86.36" y="63.5"/>
+<instance part="C17" gate="H2" x="-25.4" y="60.96"/>
+<instance part="C17" gate="L1" x="2.54" y="60.96"/>
+<instance part="B16" gate="D1" x="-40.64" y="-17.78"/>
+<instance part="B16" gate="J1" x="-76.2" y="-33.02"/>
+<instance part="B16" gate="N1" x="-25.4" y="-38.1"/>
+<instance part="B16" gate="U1" x="53.34" y="-15.24"/>
+<instance part="B16" gate="H2" x="5.08" y="83.82"/>
+<instance part="B16" gate="M2" x="68.58" y="83.82"/>
+<instance part="B16" gate="S2" x="7.62" y="-27.94"/>
+<instance part="B16" gate="V1" x="-104.14" y="22.86"/>
+<instance part="C20" gate="H2" x="-60.96" y="10.16"/>
+<instance part="C20" gate="F1" x="-60.96" y="-7.62"/>
+<instance part="C20" gate="J1" x="-30.48" y="10.16"/>
+<instance part="C18" gate="H2" x="66.04" y="10.16"/>
+<instance part="C18" gate="F1" x="96.52" y="10.16"/>
+<instance part="C19" gate="H2" x="2.54" y="10.16" rot="MR180"/>
+<instance part="C19" gate="F1" x="7.62" y="-7.62"/>
+<instance part="C19" gate="J1" x="33.02" y="10.16"/>
+<instance part="B18" gate="U2" x="93.98" y="-27.94"/>
 <instance part="D19" gate="A" x="-60.96" y="-63.5"/>
 <instance part="D19" gate="B" x="-99.06" y="-17.78"/>
 <instance part="D19" gate="C" x="-99.06" y="2.54"/>
@@ -3544,16 +3549,23 @@ DIN A4, landscape with extra doc field</description>
 <instance part="V8" gate="GND" x="17.78" y="63.5"/>
 <instance part="V9" gate="GND" x="45.72" y="63.5"/>
 <instance part="V10" gate="GND" x="73.66" y="63.5"/>
-<instance part="B17" gate="G$1" x="-99.06" y="-53.34"/>
-<instance part="B17" gate="G$2" x="-99.06" y="-73.66"/>
-<instance part="B17" gate="G$8" x="-73.66" y="33.02"/>
-<instance part="B17" gate="G$10" x="-43.18" y="-58.42" rot="MR180"/>
-<instance part="B17" gate="G$13" x="93.98" y="-10.16"/>
-<instance part="B17" gate="G$14" x="101.6" y="-5.08"/>
+<instance part="B17" gate="C1" x="-99.06" y="-53.34"/>
+<instance part="B17" gate="F1" x="-99.06" y="-73.66"/>
+<instance part="B17" gate="S1" x="-73.66" y="33.02"/>
+<instance part="B17" gate="V2" x="-43.18" y="-58.42" rot="MR180"/>
+<instance part="B17" gate="U1" x="93.98" y="-10.16"/>
+<instance part="B17" gate="V1" x="101.6" y="-5.08"/>
 <instance part="V11" gate="GND" x="-109.22" y="-25.4"/>
-<instance part="D17" gate="A1" x="-2.54" y="-71.12"/>
+<instance part="D17" gate="E1" x="-2.54" y="-71.12"/>
 <instance part="V12" gate="GND" x="-83.82" y="27.94"/>
 <instance part="V14" gate="G$1" x="116.84" y="88.9"/>
+<instance part="D18" gate="B1" x="-99.06" y="60.96"/>
+<instance part="D18" gate="H1" x="-96.52" y="40.64"/>
+<instance part="D18" gate="E1" x="-50.8" y="86.36"/>
+<instance part="D18" gate="J2" x="-81.28" y="-73.66"/>
+<instance part="D18" gate="S1" x="-25.4" y="-66.04"/>
+<instance part="D18" gate="N2" x="35.56" y="-27.94"/>
+<instance part="D18" gate="D2" x="-101.6" y="-63.5"/>
 </instances>
 <busses>
 </busses>
@@ -3563,7 +3575,7 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-66.04" y1="73.66" x2="-53.34" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="73.66" x2="-53.34" y2="71.12" width="0.1524" layer="91"/>
 <label x="-66.04" y="73.66" size="1.778" layer="95"/>
-<pinref part="C17" gate="A1" pin="S"/>
+<pinref part="C17" gate="E1" pin="S"/>
 </segment>
 <segment>
 <wire x1="-66.04" y1="40.64" x2="-88.9" y2="40.64" width="0.1524" layer="91"/>
@@ -3573,8 +3585,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-111.76" y1="33.02" x2="-111.76" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-88.9" y="40.64"/>
 <label x="-86.36" y="40.64" size="1.778" layer="95"/>
-<pinref part="D18" gate="4" pin="OUT"/>
-<pinref part="B16" gate="G$8" pin="IN1"/>
+<pinref part="B16" gate="V1" pin="IN1"/>
+<pinref part="D18" gate="H1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01DEL1L" class="0">
@@ -3585,37 +3597,37 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="2.54" y1="73.66" x2="2.54" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-25.4" y="73.66"/>
 <label x="-38.1" y="73.66" size="1.778" layer="95"/>
-<pinref part="C17" gate="A1B" pin="S"/>
-<pinref part="C17" gate="A1C" pin="S"/>
+<pinref part="C17" gate="H2" pin="S"/>
+<pinref part="C17" gate="L1" pin="S"/>
 </segment>
 <segment>
 <wire x1="-7.62" y1="-17.78" x2="-25.4" y2="-17.78" width="0.1524" layer="91"/>
 <label x="-20.32" y="-17.78" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$1" pin="OUT"/>
+<pinref part="B16" gate="D1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
 <wire x1="20.32" y1="83.82" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="83.82" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="B16" gate="G$5" pin="OUT"/>
-<pinref part="C17" gate="K2" pin="S"/>
+<pinref part="B16" gate="H2" pin="OUT"/>
+<pinref part="C17" gate="P2" pin="S"/>
 </segment>
 </net>
 <net name="N$92" class="0">
 <segment>
 <wire x1="83.82" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="83.82" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="B16" gate="G$6" pin="OUT"/>
-<pinref part="C17" gate="K2C" pin="S"/>
+<pinref part="B16" gate="M2" pin="OUT"/>
+<pinref part="C17" gate="V2" pin="S"/>
 </segment>
 </net>
 <net name="N$96" class="0">
 <segment>
 <wire x1="-10.16" y1="33.02" x2="-15.24" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="33.02" x2="-15.24" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="A15" gate="G$1" pin="IN4"/>
-<pinref part="C17" gate="A1B" pin="0"/>
+<pinref part="A15" gate="E1" pin="IN4"/>
+<pinref part="C17" gate="H2" pin="0"/>
 </segment>
 </net>
 <net name="A15U1" class="0">
@@ -3640,12 +3652,12 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-12.7" y="43.18"/>
 <junction x="-12.7" y="45.72"/>
 <label x="-25.4" y="45.72" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$2" pin="IN3"/>
-<pinref part="A15" gate="G$2" pin="IN1"/>
-<pinref part="A15" gate="G$2" pin="IN2"/>
-<pinref part="A15" gate="G$1" pin="IN3"/>
-<pinref part="A15" gate="G$1" pin="IN1"/>
-<pinref part="A15" gate="G$1" pin="IN2"/>
+<pinref part="A15" gate="L1" pin="IN3"/>
+<pinref part="A15" gate="L1" pin="IN1"/>
+<pinref part="A15" gate="L1" pin="IN2"/>
+<pinref part="A15" gate="E1" pin="IN3"/>
+<pinref part="A15" gate="E1" pin="IN1"/>
+<pinref part="A15" gate="E1" pin="IN2"/>
 </segment>
 <segment>
 <wire x1="-86.36" y1="45.72" x2="-88.9" y2="45.72" width="0.1524" layer="91"/>
@@ -3657,30 +3669,30 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-88.9" y="48.26"/>
 <junction x="-88.9" y="53.34"/>
 <label x="-104.14" y="53.34" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$6" pin="IN4"/>
-<pinref part="A15" gate="G$6" pin="IN2"/>
-<pinref part="A15" gate="G$6" pin="IN3"/>
+<pinref part="A15" gate="V2" pin="IN4"/>
+<pinref part="A15" gate="V2" pin="IN2"/>
+<pinref part="A15" gate="V2" pin="IN3"/>
 </segment>
 <segment>
 <wire x1="-104.14" y1="68.58" x2="-114.3" y2="68.58" width="0.1524" layer="91"/>
 <label x="-111.76" y="68.58" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$9" pin="P$1"/>
+<pinref part="A15" gate="U1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$100" class="0">
 <segment>
 <wire x1="12.7" y1="58.42" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="33.02" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C17" gate="A1C" pin="0"/>
-<pinref part="A15" gate="G$2" pin="IN4"/>
+<pinref part="C17" gate="L1" pin="0"/>
+<pinref part="A15" gate="L1" pin="IN4"/>
 </segment>
 </net>
 <net name="N$101" class="0">
 <segment>
 <wire x1="45.72" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="33.02" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="A15" gate="G$5" pin="IN4"/>
-<pinref part="C17" gate="K2" pin="0"/>
+<pinref part="A15" gate="P2" pin="IN4"/>
+<pinref part="C17" gate="P2" pin="0"/>
 </segment>
 </net>
 <net name="A15V1" class="0">
@@ -3715,36 +3727,36 @@ DIN A4, landscape with extra doc field</description>
 <junction x="99.06" y="43.18"/>
 <junction x="43.18" y="45.72"/>
 <label x="27.94" y="45.72" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$5" pin="IN3"/>
-<pinref part="A15" gate="G$5" pin="IN1"/>
-<pinref part="A15" gate="G$5" pin="IN2"/>
-<pinref part="A15" gate="G$4" pin="IN3"/>
-<pinref part="A15" gate="G$4" pin="IN1"/>
-<pinref part="A15" gate="G$4" pin="IN2"/>
-<pinref part="A15" gate="G$3" pin="IN3"/>
-<pinref part="A15" gate="G$3" pin="IN1"/>
-<pinref part="A15" gate="G$3" pin="IN2"/>
+<pinref part="A15" gate="P2" pin="IN3"/>
+<pinref part="A15" gate="P2" pin="IN1"/>
+<pinref part="A15" gate="P2" pin="IN2"/>
+<pinref part="A15" gate="J2" pin="IN3"/>
+<pinref part="A15" gate="J2" pin="IN1"/>
+<pinref part="A15" gate="J2" pin="IN2"/>
+<pinref part="A15" gate="S1" pin="IN3"/>
+<pinref part="A15" gate="S1" pin="IN1"/>
+<pinref part="A15" gate="S1" pin="IN2"/>
 </segment>
 <segment>
 <wire x1="-96.52" y1="73.66" x2="-106.68" y2="73.66" width="0.1524" layer="91"/>
 <label x="-104.14" y="73.66" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$10" pin="P$1"/>
+<pinref part="A15" gate="V1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$104" class="0">
 <segment>
 <wire x1="68.58" y1="58.42" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C17" gate="K2B" pin="0"/>
-<pinref part="A15" gate="G$4" pin="IN4"/>
+<pinref part="C17" gate="S1" pin="0"/>
+<pinref part="A15" gate="J2" pin="IN4"/>
 </segment>
 </net>
 <net name="N$109" class="0">
 <segment>
 <wire x1="101.6" y1="33.02" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="33.02" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="A15" gate="G$3" pin="IN4"/>
-<pinref part="C17" gate="K2C" pin="0"/>
+<pinref part="A15" gate="S1" pin="IN4"/>
+<pinref part="C17" gate="V2" pin="0"/>
 </segment>
 </net>
 <net name="D01BINIT" class="0">
@@ -3755,46 +3767,46 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-88.9" y1="60.96" x2="-73.66" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-88.9" y="60.96"/>
 <label x="-86.36" y="60.96" size="1.778" layer="95"/>
-<pinref part="D18" gate="1" pin="OUT"/>
-<pinref part="A15" gate="G$6" pin="IN1"/>
+<pinref part="A15" gate="V2" pin="IN1"/>
+<pinref part="D18" gate="B1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01POWEROK" class="0">
 <segment>
 <wire x1="-124.46" y1="60.96" x2="-106.68" y2="60.96" width="0.1524" layer="91"/>
 <label x="-124.46" y="60.96" size="1.778" layer="95"/>
-<pinref part="D18" gate="1" pin="IN"/>
+<pinref part="D18" gate="B1" pin="IN"/>
 </segment>
 </net>
 <net name="GND" class="1">
 <segment>
 <wire x1="-66.04" y1="66.04" x2="-63.5" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C17" gate="A1" pin="D"/>
+<pinref part="C17" gate="E1" pin="D"/>
 <pinref part="V5" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="-38.1" y1="66.04" x2="-35.56" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C17" gate="A1B" pin="D"/>
+<pinref part="C17" gate="H2" pin="D"/>
 <pinref part="V6" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="-10.16" y1="66.04" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C17" gate="A1C" pin="D"/>
+<pinref part="C17" gate="L1" pin="D"/>
 <pinref part="V7" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C17" gate="K2" pin="D"/>
+<pinref part="C17" gate="P2" pin="D"/>
 <pinref part="V8" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="45.72" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C17" gate="K2B" pin="D"/>
+<pinref part="C17" gate="S1" pin="D"/>
 <pinref part="V9" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="73.66" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C17" gate="K2C" pin="D"/>
+<pinref part="C17" gate="V2" pin="D"/>
 <pinref part="V10" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -3804,8 +3816,8 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <wire x1="-83.82" y1="30.48" x2="-83.82" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-83.82" y="30.48"/>
-<pinref part="B17" gate="G$8" pin="IN2"/>
-<pinref part="B17" gate="G$8" pin="IN1"/>
+<pinref part="B17" gate="S1" pin="IN2"/>
+<pinref part="B17" gate="S1" pin="IN1"/>
 <pinref part="V12" gate="GND" pin="GND"/>
 </segment>
 </net>
@@ -3814,7 +3826,7 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-43.18" y1="66.04" x2="-43.18" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="81.28" x2="-30.48" y2="81.28" width="0.1524" layer="91"/>
 <label x="-40.64" y="81.28" size="1.778" layer="95"/>
-<pinref part="C17" gate="A1" pin="1"/>
+<pinref part="C17" gate="E1" pin="1"/>
 </segment>
 <segment>
 <wire x1="0" y1="81.28" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
@@ -3823,8 +3835,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-17.78" y1="81.28" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-2.54" y="81.28"/>
 <label x="-17.78" y="81.28" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$5" pin="IN3"/>
-<pinref part="B16" gate="G$5" pin="IN2"/>
+<pinref part="B16" gate="H2" pin="IN3"/>
+<pinref part="B16" gate="H2" pin="IN2"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="-15.24" x2="45.72" y2="-15.24" width="0.1524" layer="91"/>
@@ -3833,8 +3845,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="30.48" y1="-17.78" x2="45.72" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="45.72" y="-17.78"/>
 <label x="30.48" y="-17.78" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$4" pin="IN2"/>
-<pinref part="B16" gate="G$4" pin="IN3"/>
+<pinref part="B16" gate="U1" pin="IN2"/>
+<pinref part="B16" gate="U1" pin="IN3"/>
 </segment>
 <segment>
 <wire x1="-30.48" y1="-38.1" x2="-33.02" y2="-38.1" width="0.1524" layer="91"/>
@@ -3843,8 +3855,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-33.02" y1="-38.1" x2="-33.02" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="-33.02" y="-40.64"/>
 <label x="-48.26" y="-40.64" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$3" pin="IN2"/>
-<pinref part="B16" gate="G$3" pin="IN3"/>
+<pinref part="B16" gate="N1" pin="IN2"/>
+<pinref part="B16" gate="N1" pin="IN3"/>
 </segment>
 </net>
 <net name="D01DEL4" class="0">
@@ -3853,14 +3865,14 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-40.64" y1="58.42" x2="-40.64" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="76.2" x2="-55.88" y2="76.2" width="0.1524" layer="91"/>
 <label x="-55.88" y="76.2" size="1.778" layer="95"/>
-<pinref part="C17" gate="A1B" pin="C"/>
+<pinref part="C17" gate="H2" pin="C"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="76.2" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="76.2" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
 <label x="58.42" y="76.2" size="1.778" layer="95"/>
-<pinref part="C17" gate="K2C" pin="C"/>
+<pinref part="C17" gate="V2" pin="C"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="10.16" x2="40.64" y2="10.16" width="0.1524" layer="91"/>
@@ -3871,14 +3883,14 @@ DIN A4, landscape with extra doc field</description>
 <junction x="40.64" y="10.16"/>
 <junction x="40.64" y="-5.08"/>
 <label x="43.18" y="-5.08" size="1.778" layer="95"/>
-<pinref part="C18" gate="G$1" pin="H2"/>
-<pinref part="C19" gate="G$5" pin="OUT"/>
-<pinref part="B16" gate="G$4" pin="IN1"/>
+<pinref part="C18" gate="H2" pin="H2"/>
+<pinref part="C19" gate="J1" pin="OUT"/>
+<pinref part="B16" gate="U1" pin="IN1"/>
 </segment>
 <segment>
 <wire x1="-48.26" y1="-35.56" x2="-30.48" y2="-35.56" width="0.1524" layer="91"/>
 <label x="-48.26" y="-35.56" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$3" pin="IN1"/>
+<pinref part="B16" gate="N1" pin="IN1"/>
 </segment>
 </net>
 <net name="D01DEL3" class="0">
@@ -3887,19 +3899,19 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-12.7" y1="58.42" x2="-12.7" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="76.2" x2="-25.4" y2="76.2" width="0.1524" layer="91"/>
 <label x="-25.4" y="76.2" size="1.778" layer="95"/>
-<pinref part="C17" gate="A1C" pin="C"/>
+<pinref part="C17" gate="L1" pin="C"/>
 </segment>
 <segment>
 <wire x1="2.54" y1="76.2" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="76.2" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
 <label x="2.54" y="76.2" size="1.778" layer="95"/>
-<pinref part="C17" gate="K2" pin="C"/>
+<pinref part="C17" gate="P2" pin="C"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="-7.62" x2="15.24" y2="-7.62" width="0.1524" layer="91"/>
 <label x="17.78" y="-7.62" size="1.778" layer="95"/>
-<pinref part="C19" gate="G$4" pin="OUT"/>
+<pinref part="C19" gate="F1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01DEL5" class="0">
@@ -3908,17 +3920,17 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="43.18" y1="76.2" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 <label x="33.02" y="76.2" size="1.778" layer="95"/>
-<pinref part="C17" gate="K2B" pin="C"/>
+<pinref part="C17" gate="S1" pin="C"/>
 </segment>
 <segment>
 <wire x1="116.84" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
 <label x="106.68" y="10.16" size="1.778" layer="95"/>
-<pinref part="C18" gate="G$4" pin="OUT"/>
+<pinref part="C18" gate="F1" pin="OUT"/>
 </segment>
 <segment>
 <wire x1="2.54" y1="-25.4" x2="-15.24" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-15.24" y="-25.4" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$7" pin="IN1"/>
+<pinref part="B16" gate="S2" pin="IN1"/>
 </segment>
 </net>
 <net name="D01RETURN" class="0">
@@ -3926,7 +3938,7 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="25.4" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="27.94" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
 <label x="12.7" y="27.94" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$1" pin="OUT"/>
+<pinref part="A15" gate="E1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01SOURCE" class="0">
@@ -3934,7 +3946,7 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="53.34" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="27.94" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
 <label x="40.64" y="27.94" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$2" pin="OUT"/>
+<pinref part="A15" gate="L1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01INHIBIT" class="0">
@@ -3945,7 +3957,7 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="111.76" y1="45.72" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
 <label x="111.76" y="50.8" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$3" pin="OUT"/>
+<pinref part="A15" gate="S1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01READL" class="0">
@@ -3953,7 +3965,7 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-30.48" y1="45.72" x2="-43.18" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="45.72" x2="-43.18" y2="58.42" width="0.1524" layer="91"/>
 <label x="-40.64" y="45.72" size="1.778" layer="95"/>
-<pinref part="C17" gate="A1" pin="0"/>
+<pinref part="C17" gate="E1" pin="0"/>
 </segment>
 <segment>
 <wire x1="-15.24" y1="-30.48" x2="0" y2="-30.48" width="0.1524" layer="91"/>
@@ -3962,8 +3974,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="0" y1="-27.94" x2="0" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="0" y="-30.48"/>
 <label x="-15.24" y="-30.48" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$7" pin="IN3"/>
-<pinref part="B16" gate="G$7" pin="IN2"/>
+<pinref part="B16" gate="S2" pin="IN3"/>
+<pinref part="B16" gate="S2" pin="IN2"/>
 </segment>
 </net>
 <net name="D01WRITE" class="0">
@@ -3971,19 +3983,19 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="109.22" y1="27.94" x2="93.98" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="27.94" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
 <label x="96.52" y="27.94" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$4" pin="OUT"/>
+<pinref part="A15" gate="J2" pin="OUT"/>
 </segment>
 </net>
 <net name="D03MEMSTART" class="0">
 <segment>
 <wire x1="-124.46" y1="40.64" x2="-104.14" y2="40.64" width="0.1524" layer="91"/>
 <label x="-124.46" y="40.64" size="1.778" layer="95"/>
-<pinref part="D18" gate="4" pin="IN"/>
+<pinref part="D18" gate="H1" pin="IN"/>
 </segment>
 <segment>
 <wire x1="-33.02" y1="-73.66" x2="-12.7" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-33.02" y="-73.66" size="1.778" layer="95"/>
-<pinref part="D17" gate="A1" pin="C"/>
+<pinref part="D17" gate="E1" pin="C"/>
 </segment>
 </net>
 <net name="D01BTP2L" class="0">
@@ -3994,19 +4006,19 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-111.76" y1="22.86" x2="-111.76" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-111.76" y="20.32"/>
 <label x="-124.46" y="20.32" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$8" pin="IN3"/>
-<pinref part="B16" gate="G$8" pin="IN2"/>
+<pinref part="B16" gate="V1" pin="IN3"/>
+<pinref part="B16" gate="V1" pin="IN2"/>
 </segment>
 <segment>
 <wire x1="45.72" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="73.66" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 <label x="45.72" y="73.66" size="1.778" layer="95"/>
-<pinref part="C17" gate="K2B" pin="S"/>
+<pinref part="C17" gate="S1" pin="S"/>
 </segment>
 <segment>
 <wire x1="-27.94" y1="86.36" x2="-43.18" y2="86.36" width="0.1524" layer="91"/>
 <label x="-40.64" y="86.36" size="1.778" layer="95"/>
-<pinref part="D18" gate="3" pin="OUT"/>
+<pinref part="D18" gate="E1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -4014,16 +4026,16 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="10.16" x2="-86.36" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="10.16" x2="-86.36" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="22.86" x2="-88.9" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="C20" gate="G$1" pin="H2"/>
-<pinref part="B16" gate="G$8" pin="OUT"/>
+<pinref part="C20" gate="H2" pin="H2"/>
+<pinref part="B16" gate="V1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$91" class="0">
 <segment>
 <wire x1="-71.12" y1="0" x2="-71.12" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="-7.62" x2="-68.58" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="C20" gate="G$1" pin="K2"/>
-<pinref part="C20" gate="G$4" pin="IN"/>
+<pinref part="C20" gate="H2" pin="K2"/>
+<pinref part="C20" gate="F1" pin="IN"/>
 </segment>
 </net>
 <net name="N$93" class="0">
@@ -4032,8 +4044,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-63.5" y1="22.86" x2="-40.64" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="10.16" x2="-40.64" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="10.16" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="C20" gate="G$1" pin="N2"/>
-<pinref part="C20" gate="G$5" pin="IN"/>
+<pinref part="C20" gate="H2" pin="N2"/>
+<pinref part="C20" gate="J1" pin="IN"/>
 </segment>
 </net>
 <net name="D01DEL2" class="0">
@@ -4043,13 +4055,13 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-22.86" y1="-7.62" x2="-7.62" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-22.86" y="10.16"/>
 <label x="-20.32" y="-7.62" size="1.778" layer="95"/>
-<pinref part="C20" gate="G$5" pin="OUT"/>
-<pinref part="C19" gate="G$1" pin="H2"/>
+<pinref part="C20" gate="J1" pin="OUT"/>
+<pinref part="C19" gate="H2" pin="H2"/>
 </segment>
 <segment>
 <wire x1="-17.78" y1="86.36" x2="0" y2="86.36" width="0.1524" layer="91"/>
 <label x="-17.78" y="86.36" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$5" pin="IN1"/>
+<pinref part="B16" gate="H2" pin="IN1"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -4058,16 +4070,16 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="22.86" y1="22.86" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="22.86" x2="-2.54" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="10.16" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="C19" gate="G$1" pin="M2"/>
-<pinref part="C19" gate="G$5" pin="IN"/>
+<pinref part="C19" gate="H2" pin="M2"/>
+<pinref part="C19" gate="J1" pin="IN"/>
 </segment>
 </net>
 <net name="N$97" class="0">
 <segment>
 <wire x1="-5.08" y1="0" x2="-5.08" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="C19" gate="G$1" pin="L2"/>
-<pinref part="C19" gate="G$4" pin="IN"/>
+<pinref part="C19" gate="H2" pin="L2"/>
+<pinref part="C19" gate="F1" pin="IN"/>
 </segment>
 </net>
 <net name="N$99" class="0">
@@ -4076,8 +4088,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="53.34" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="22.86" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="10.16" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="C18" gate="G$1" pin="J2"/>
-<pinref part="C18" gate="G$4" pin="IN"/>
+<pinref part="C18" gate="H2" pin="J2"/>
+<pinref part="C18" gate="F1" pin="IN"/>
 </segment>
 </net>
 <net name="D01DEL1H" class="0">
@@ -4088,13 +4100,13 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-50.8" y1="-20.32" x2="-50.8" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-50.8" y="-7.62"/>
 <label x="-48.26" y="-7.62" size="1.778" layer="95"/>
-<pinref part="C20" gate="G$4" pin="OUT"/>
-<pinref part="B16" gate="G$1" pin="IN3"/>
+<pinref part="C20" gate="F1" pin="OUT"/>
+<pinref part="B16" gate="D1" pin="IN3"/>
 </segment>
 <segment>
 <wire x1="45.72" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
 <label x="45.72" y="86.36" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$6" pin="IN1"/>
+<pinref part="B16" gate="M2" pin="IN1"/>
 </segment>
 </net>
 <net name="B17V1" class="0">
@@ -4105,13 +4117,13 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-66.04" y1="-15.24" x2="-48.26" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="-48.26" y="-15.24"/>
 <label x="-66.04" y="-15.24" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$1" pin="IN2"/>
-<pinref part="B16" gate="G$1" pin="IN1"/>
+<pinref part="B16" gate="D1" pin="IN2"/>
+<pinref part="B16" gate="D1" pin="IN1"/>
 </segment>
 <segment>
 <wire x1="121.92" y1="-12.7" x2="111.76" y2="-12.7" width="0.1524" layer="91"/>
 <label x="114.3" y="-12.7" size="1.778" layer="95"/>
-<pinref part="B17" gate="G$14" pin="P$1"/>
+<pinref part="B17" gate="V1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$94" class="0">
@@ -4119,8 +4131,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="83.82" y1="-20.32" x2="76.2" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-20.32" x2="76.2" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-15.24" x2="68.58" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="B18" gate="G$6" pin="A"/>
-<pinref part="B16" gate="G$4" pin="OUT"/>
+<pinref part="B18" gate="U2" pin="A"/>
+<pinref part="B16" gate="U1" pin="OUT"/>
 </segment>
 </net>
 <net name="D03EMA0H" class="0">
@@ -4132,7 +4144,7 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <wire x1="-124.46" y1="-71.12" x2="-109.22" y2="-71.12" width="0.1524" layer="91"/>
 <label x="-124.46" y="-71.12" size="1.778" layer="95"/>
-<pinref part="B17" gate="G$2" pin="IN1"/>
+<pinref part="B17" gate="F1" pin="IN1"/>
 </segment>
 </net>
 <net name="D03EMA0L" class="0">
@@ -4148,15 +4160,15 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-111.76" y1="-63.5" x2="-111.76" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="-111.76" y="-50.8"/>
 <label x="-124.46" y="-50.8" size="1.778" layer="95"/>
-<pinref part="B17" gate="G$1" pin="IN1"/>
-<pinref part="D18" gate="2" pin="IN"/>
+<pinref part="B17" gate="C1" pin="IN1"/>
+<pinref part="D18" gate="D2" pin="IN"/>
 </segment>
 </net>
 <net name="D03EMA1L" class="0">
 <segment>
 <wire x1="-109.22" y1="-55.88" x2="-124.46" y2="-55.88" width="0.1524" layer="91"/>
 <label x="-124.46" y="-55.88" size="1.778" layer="95"/>
-<pinref part="B17" gate="G$1" pin="IN2"/>
+<pinref part="B17" gate="C1" pin="IN2"/>
 </segment>
 <segment>
 <wire x1="-124.46" y1="-12.7" x2="-109.22" y2="-12.7" width="0.1524" layer="91"/>
@@ -4170,21 +4182,21 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-73.66" y1="-58.42" x2="-73.66" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="-53.34" x2="-88.9" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="D19" gate="A" pin="L1"/>
-<pinref part="B17" gate="G$1" pin="OUT"/>
+<pinref part="B17" gate="C1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$103" class="0">
 <segment>
 <wire x1="-71.12" y1="-63.5" x2="-93.98" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="D19" gate="A" pin="L2"/>
-<pinref part="D18" gate="2" pin="OUT"/>
+<pinref part="D18" gate="D2" pin="OUT"/>
 </segment>
 </net>
 <net name="D03EMA1H" class="0">
 <segment>
 <wire x1="-124.46" y1="-76.2" x2="-109.22" y2="-76.2" width="0.1524" layer="91"/>
 <label x="-124.46" y="-76.2" size="1.778" layer="95"/>
-<pinref part="B17" gate="G$2" pin="IN2"/>
+<pinref part="B17" gate="F1" pin="IN2"/>
 </segment>
 <segment>
 <wire x1="-124.46" y1="-17.78" x2="-109.22" y2="-17.78" width="0.1524" layer="91"/>
@@ -4194,22 +4206,24 @@ DIN A4, landscape with extra doc field</description>
 </net>
 <net name="N$108" class="0">
 <segment>
-<pinref part="B17" gate="G$2" pin="OUT"/>
-<pinref part="D18" gate="7" pin="IN"/>
+<pinref part="B17" gate="F1" pin="OUT"/>
+<pinref part="D18" gate="J2" pin="IN"/>
+<junction x="-88.9" y="-73.66"/>
+<pinref part="D18" gate="J2" pin="IN"/>
 </segment>
 </net>
 <net name="N$111" class="0">
 <segment>
 <wire x1="-73.66" y1="-73.66" x2="-73.66" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="-68.58" x2="-71.12" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="D18" gate="7" pin="OUT"/>
 <pinref part="D19" gate="A" pin="L3"/>
+<pinref part="D18" gate="J2" pin="OUT"/>
 </segment>
 </net>
 <net name="N$112" class="0">
 <segment>
 <pinref part="D19" gate="A" pin="R1"/>
-<pinref part="B17" gate="G$10" pin="IN1"/>
+<pinref part="B17" gate="V2" pin="IN1"/>
 </segment>
 </net>
 <net name="D03EMA2H" class="0">
@@ -4230,7 +4244,7 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <wire x1="-81.28" y1="-35.56" x2="-91.44" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="D19" gate="D" pin="R1"/>
-<pinref part="B16" gate="G$2" pin="IN3"/>
+<pinref part="B16" gate="J1" pin="IN3"/>
 </segment>
 </net>
 <net name="N$128" class="0">
@@ -4239,7 +4253,7 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-88.9" y1="-33.02" x2="-88.9" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-88.9" y1="-15.24" x2="-91.44" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="D19" gate="B" pin="R1"/>
-<pinref part="B16" gate="G$2" pin="IN2"/>
+<pinref part="B16" gate="J1" pin="IN2"/>
 </segment>
 </net>
 <net name="N$129" class="0">
@@ -4248,15 +4262,15 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-86.36" y1="-30.48" x2="-86.36" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="5.08" x2="-91.44" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="D19" gate="C" pin="R1"/>
-<pinref part="B16" gate="G$2" pin="IN1"/>
+<pinref part="B16" gate="J1" pin="IN1"/>
 </segment>
 </net>
 <net name="N$132" class="0">
 <segment>
 <wire x1="-53.34" y1="-55.88" x2="-53.34" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-33.02" x2="-60.96" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="B17" gate="G$10" pin="IN2"/>
-<pinref part="B16" gate="G$2" pin="OUT"/>
+<pinref part="B17" gate="V2" pin="IN2"/>
+<pinref part="B16" gate="J1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01SELL" class="0">
@@ -4266,8 +4280,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-33.02" y1="-66.04" x2="-33.02" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-33.02" y="-58.42"/>
 <label x="-17.78" y="-50.8" size="1.778" layer="95"/>
-<pinref part="B17" gate="G$10" pin="OUT"/>
-<pinref part="D18" gate="12" pin="IN"/>
+<pinref part="B17" gate="V2" pin="OUT"/>
+<pinref part="D18" gate="S1" pin="IN"/>
 </segment>
 </net>
 <net name="D01SELH" class="0">
@@ -4277,34 +4291,34 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-17.78" y1="-53.34" x2="-17.78" y2="-66.04" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-66.04"/>
 <label x="-17.78" y="-53.34" size="1.778" layer="95"/>
-<pinref part="D18" gate="12" pin="OUT"/>
-<pinref part="D17" gate="A1" pin="D"/>
+<pinref part="D17" gate="E1" pin="D"/>
+<pinref part="D18" gate="S1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01SELECTL" class="0">
 <segment>
 <wire x1="25.4" y1="-73.66" x2="7.62" y2="-73.66" width="0.1524" layer="91"/>
 <label x="10.16" y="-73.66" size="1.778" layer="95"/>
-<pinref part="D17" gate="A1" pin="0"/>
+<pinref part="D17" gate="E1" pin="0"/>
 </segment>
 <segment>
 <wire x1="66.04" y1="-25.4" x2="83.82" y2="-25.4" width="0.1524" layer="91"/>
 <label x="66.04" y="-25.4" size="1.778" layer="95"/>
-<pinref part="B18" gate="G$6" pin="C"/>
+<pinref part="B18" gate="U2" pin="C"/>
 </segment>
 </net>
 <net name="D01SELECTH" class="0">
 <segment>
 <wire x1="25.4" y1="-66.04" x2="7.62" y2="-66.04" width="0.1524" layer="91"/>
 <label x="10.16" y="-66.04" size="1.778" layer="95"/>
-<pinref part="D17" gate="A1" pin="1"/>
+<pinref part="D17" gate="E1" pin="1"/>
 </segment>
 </net>
 <net name="D01INITL" class="0">
 <segment>
 <wire x1="-2.54" y1="-78.74" x2="-33.02" y2="-78.74" width="0.1524" layer="91"/>
 <label x="-33.02" y="-78.74" size="1.778" layer="95"/>
-<pinref part="D17" gate="A1" pin="R"/>
+<pinref part="D17" gate="E1" pin="R"/>
 </segment>
 <segment>
 <wire x1="124.46" y1="55.88" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
@@ -4329,9 +4343,9 @@ DIN A4, landscape with extra doc field</description>
 <junction x="-53.34" y="50.8"/>
 <junction x="76.2" y="50.8"/>
 <label x="111.76" y="55.88" size="1.778" layer="95"/>
-<pinref part="C17" gate="A1" pin="R"/>
-<pinref part="C17" gate="K2" pin="R"/>
-<pinref part="A15" gate="G$6" pin="OUT"/>
+<pinref part="C17" gate="E1" pin="R"/>
+<pinref part="C17" gate="P2" pin="R"/>
+<pinref part="A15" gate="V2" pin="OUT"/>
 </segment>
 </net>
 <net name="B17S1" class="0">
@@ -4339,19 +4353,19 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-2.54" y1="-60.96" x2="-2.54" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="-58.42" x2="-12.7" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-12.7" y="-58.42" size="1.778" layer="95"/>
-<pinref part="D17" gate="A1" pin="S"/>
+<pinref part="D17" gate="E1" pin="S"/>
 </segment>
 <segment>
 <wire x1="-55.88" y1="33.02" x2="-63.5" y2="33.02" width="0.1524" layer="91"/>
 <label x="-63.5" y="33.02" size="1.778" layer="95"/>
-<pinref part="B17" gate="G$8" pin="OUT"/>
+<pinref part="B17" gate="S1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01LOADMDL" class="0">
 <segment>
 <wire x1="7.62" y1="-38.1" x2="-10.16" y2="-38.1" width="0.1524" layer="91"/>
 <label x="-7.62" y="-38.1" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$3" pin="OUT"/>
+<pinref part="B16" gate="N1" pin="OUT"/>
 </segment>
 </net>
 <net name="D01DONEL" class="0">
@@ -4362,20 +4376,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="25.4" y1="-33.02" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="25.4" y="-27.94"/>
 <label x="45.72" y="-33.02" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$7" pin="OUT"/>
-<pinref part="D18" gate="11" pin="IN"/>
+<pinref part="B16" gate="S2" pin="OUT"/>
+<pinref part="D18" gate="N2" pin="IN"/>
 </segment>
 <segment>
 <wire x1="83.82" y1="-35.56" x2="66.04" y2="-35.56" width="0.1524" layer="91"/>
 <label x="66.04" y="-35.56" size="1.778" layer="95"/>
-<pinref part="B18" gate="G$6" pin="B"/>
+<pinref part="B18" gate="U2" pin="B"/>
 </segment>
 </net>
 <net name="D01DONEH" class="0">
 <segment>
 <wire x1="58.42" y1="-27.94" x2="43.18" y2="-27.94" width="0.1524" layer="91"/>
 <label x="45.72" y="-27.94" size="1.778" layer="95"/>
-<pinref part="D18" gate="11" pin="OUT"/>
+<pinref part="D18" gate="N2" pin="OUT"/>
 </segment>
 </net>
 <net name="D01STROBE" class="0">
@@ -4383,14 +4397,14 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="81.28" y1="27.94" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="27.94" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
 <label x="68.58" y="27.94" size="1.778" layer="95"/>
-<pinref part="A15" gate="G$5" pin="OUT"/>
+<pinref part="A15" gate="P2" pin="OUT"/>
 </segment>
 </net>
 <net name="D01MEMDONEL" class="0">
 <segment>
 <wire x1="121.92" y1="-33.02" x2="101.6" y2="-33.02" width="0.1524" layer="91"/>
 <label x="109.22" y="-33.02" size="1.778" layer="95"/>
-<pinref part="B18" gate="G$6" pin="E"/>
+<pinref part="B18" gate="U2" pin="E"/>
 </segment>
 </net>
 <net name="D01STROBEL" class="0">
@@ -4400,8 +4414,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="104.14" y1="-17.78" x2="104.14" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="104.14" y="-22.86"/>
 <label x="109.22" y="-22.86" size="1.778" layer="95"/>
-<pinref part="B18" gate="G$6" pin="D"/>
-<pinref part="B17" gate="G$13" pin="P$1"/>
+<pinref part="B18" gate="U2" pin="D"/>
+<pinref part="B17" gate="U1" pin="P$1"/>
 </segment>
 </net>
 <net name="D03BTP2" class="0">
@@ -4413,8 +4427,8 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-58.42" y1="86.36" x2="-71.12" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-71.12" y="76.2"/>
 <label x="-86.36" y="76.2" size="1.778" layer="95"/>
-<pinref part="D18" gate="3" pin="IN"/>
-<pinref part="C17" gate="A1" pin="C"/>
+<pinref part="C17" gate="E1" pin="C"/>
+<pinref part="D18" gate="E1" pin="IN"/>
 </segment>
 </net>
 <net name="D01WRITEH" class="0">
@@ -4425,14 +4439,14 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="45.72" y1="81.28" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
 <junction x="60.96" y="81.28"/>
 <label x="45.72" y="81.28" size="1.778" layer="95"/>
-<pinref part="B16" gate="G$6" pin="IN2"/>
-<pinref part="B16" gate="G$6" pin="IN3"/>
+<pinref part="B16" gate="M2" pin="IN2"/>
+<pinref part="B16" gate="M2" pin="IN3"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="73.66" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
 <label x="68.58" y="73.66" size="1.778" layer="95"/>
-<pinref part="C17" gate="K2B" pin="1"/>
+<pinref part="C17" gate="S1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -4452,2022 +4466,2022 @@ DIN A4, landscape with extra doc field</description>
 <instance part="FRAME5" gate="G$2" x="40.64" y="-93.98"/>
 <instance part="V3" gate="G$1" x="137.16" y="78.74"/>
 <instance part="V4" gate="GND" x="129.54" y="76.2"/>
-<instance part="A01" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A01" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A01" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A01" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A01" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A01" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A01" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A01" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A01" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A01" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A01" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A01" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A01" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A01" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A01" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A01" gate="G$16" x="-104.14" y="0"/>
-<instance part="A01" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A01" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A01" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A01" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A01" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A01" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A01" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A01" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A01" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A01" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A01" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A01" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A01" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A01" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A01" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A01" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A01" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A01" gate="G$34" x="-73.66" y="0"/>
-<instance part="A01" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A01" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A02" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A02" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A02" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A02" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A02" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A02" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A02" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A02" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A02" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A02" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A02" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A02" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A02" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A02" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A02" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A02" gate="G$16" x="-104.14" y="0"/>
-<instance part="A02" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A02" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A02" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A02" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A02" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A02" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A02" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A02" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A02" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A02" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A02" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A02" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A02" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A02" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A02" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A02" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A02" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A02" gate="G$34" x="-73.66" y="0"/>
-<instance part="A02" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A02" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A03" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A03" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A03" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A03" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A03" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A03" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A03" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A03" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A03" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A03" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A03" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A03" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A03" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A03" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A03" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A03" gate="G$16" x="-104.14" y="0"/>
-<instance part="A03" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A03" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A03" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A03" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A03" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A03" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A03" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A03" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A03" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A03" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A03" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A03" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A03" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A03" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A03" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A03" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A03" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A03" gate="G$34" x="-73.66" y="0"/>
-<instance part="A03" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A03" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A04" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A04" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A04" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A04" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A04" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A04" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A04" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A04" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A04" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A04" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A04" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A04" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A04" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A04" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A04" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A04" gate="G$16" x="-104.14" y="0"/>
-<instance part="A04" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A04" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A04" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A04" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A04" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A04" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A04" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A04" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A04" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A04" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A04" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A04" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A04" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A04" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A04" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A04" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A04" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A04" gate="G$34" x="-73.66" y="0"/>
-<instance part="A04" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A04" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A05" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A05" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A05" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A05" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A05" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A05" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A05" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A05" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A05" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A05" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A05" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A05" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A05" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A05" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A05" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A05" gate="G$16" x="-104.14" y="0"/>
-<instance part="A05" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A05" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A05" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A05" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A05" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A05" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A05" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A05" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A05" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A05" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A05" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A05" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A05" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A05" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A05" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A05" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A05" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A05" gate="G$34" x="-73.66" y="0"/>
-<instance part="A05" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A05" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A06" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A06" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A06" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A06" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A06" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A06" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A06" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A06" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A06" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A06" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A06" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A06" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A06" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A06" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A06" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A06" gate="G$16" x="-104.14" y="0"/>
-<instance part="A06" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A06" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A06" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A06" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A06" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A06" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A06" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A06" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A06" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A06" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A06" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A06" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A06" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A06" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A06" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A06" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A06" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A06" gate="G$34" x="-73.66" y="0"/>
-<instance part="A06" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A06" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A07" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A07" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A07" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A07" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A07" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A07" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A07" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A07" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A07" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A07" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A07" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A07" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A07" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A07" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A07" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A07" gate="G$16" x="-104.14" y="0"/>
-<instance part="A07" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A07" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A07" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A07" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A07" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A07" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A07" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A07" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A07" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A07" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A07" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A07" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A07" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A07" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A07" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A07" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A07" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A07" gate="G$34" x="-73.66" y="0"/>
-<instance part="A07" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A07" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A08" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A08" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A08" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A08" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A08" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A08" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A08" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A08" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A08" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A08" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A08" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A08" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A08" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A08" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A08" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A08" gate="G$16" x="-104.14" y="0"/>
-<instance part="A08" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A08" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A08" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A08" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A08" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A08" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A08" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A08" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A08" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A08" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A08" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A08" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A08" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A08" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A08" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A08" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A08" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A08" gate="G$34" x="-73.66" y="0"/>
-<instance part="A08" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A08" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A09" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A09" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A09" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A09" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A09" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A09" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A09" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A09" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A09" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A09" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A09" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A09" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A09" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A09" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A09" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A09" gate="G$16" x="-104.14" y="0"/>
-<instance part="A09" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A09" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A09" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A09" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A09" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A09" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A09" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A09" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A09" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A09" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A09" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A09" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A09" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A09" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A09" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A09" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A09" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A09" gate="G$34" x="-73.66" y="0"/>
-<instance part="A09" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A09" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A10" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A10" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A10" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A10" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A10" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A10" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A10" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A10" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A10" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A10" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A10" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A10" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A10" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A10" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A10" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A10" gate="G$16" x="-104.14" y="0"/>
-<instance part="A10" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A10" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A10" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A10" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A10" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A10" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A10" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A10" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A10" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A10" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A10" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A10" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A10" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A10" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A10" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A10" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A10" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A10" gate="G$34" x="-73.66" y="0"/>
-<instance part="A10" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A10" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A11" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A11" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A11" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A11" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A11" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A11" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A11" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A11" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A11" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A11" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A11" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A11" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A11" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A11" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A11" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A11" gate="G$16" x="-104.14" y="0"/>
-<instance part="A11" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A11" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A11" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A11" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A11" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A11" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A11" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A11" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A11" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A11" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A11" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A11" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A11" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A11" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A11" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A11" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A11" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A11" gate="G$34" x="-73.66" y="0"/>
-<instance part="A11" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A11" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A12" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A12" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A12" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A12" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A12" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A12" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A12" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A12" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A12" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A12" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A12" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A12" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A12" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A12" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A12" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A12" gate="G$16" x="-104.14" y="0"/>
-<instance part="A12" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A12" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A12" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A12" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A12" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A12" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A12" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A12" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A12" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A12" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A12" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A12" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A12" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A12" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A12" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A12" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A12" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A12" gate="G$34" x="-73.66" y="0"/>
-<instance part="A12" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A12" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="A13" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A13" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A13" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A13" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A13" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A13" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A13" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A13" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A13" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A13" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A13" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A13" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A13" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A13" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A13" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A13" gate="G$16" x="-104.14" y="0"/>
-<instance part="A13" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A13" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A13" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A13" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A13" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A13" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A13" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A13" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A13" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A13" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A13" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A13" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A13" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A13" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A13" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A13" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A13" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A13" gate="G$34" x="-73.66" y="0"/>
-<instance part="A13" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A13" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="B13" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B13" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B13" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B13" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B13" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B13" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B13" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B13" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B13" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B13" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B13" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B13" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B13" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B13" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B13" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B13" gate="G$16" x="-43.18" y="0"/>
-<instance part="B13" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B13" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B13" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B13" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B13" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B13" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B13" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B13" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B13" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B13" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B13" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B13" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B13" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B13" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B13" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B13" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B13" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B13" gate="G$34" x="-15.24" y="0"/>
-<instance part="B13" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B13" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B12" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B12" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B12" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B12" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B12" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B12" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B12" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B12" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B12" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B12" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B12" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B12" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B12" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B12" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B12" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B12" gate="G$16" x="-43.18" y="0"/>
-<instance part="B12" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B12" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B12" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B12" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B12" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B12" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B12" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B12" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B12" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B12" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B12" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B12" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B12" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B12" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B12" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B12" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B12" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B12" gate="G$34" x="-15.24" y="0"/>
-<instance part="B12" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B12" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B11" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B11" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B11" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B11" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B11" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B11" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B11" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B11" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B11" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B11" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B11" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B11" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B11" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B11" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B11" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B11" gate="G$16" x="-43.18" y="0"/>
-<instance part="B11" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B11" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B11" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B11" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B11" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B11" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B11" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B11" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B11" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B11" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B11" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B11" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B11" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B11" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B11" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B11" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B11" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B11" gate="G$34" x="-15.24" y="0"/>
-<instance part="B11" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B11" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B10" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B10" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B10" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B10" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B10" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B10" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B10" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B10" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B10" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B10" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B10" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B10" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B10" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B10" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B10" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B10" gate="G$16" x="-43.18" y="0"/>
-<instance part="B10" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B10" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B10" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B10" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B10" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B10" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B10" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B10" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B10" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B10" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B10" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B10" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B10" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B10" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B10" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B10" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B10" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B10" gate="G$34" x="-15.24" y="0"/>
-<instance part="B10" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B10" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B09" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B09" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B09" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B09" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B09" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B09" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B09" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B09" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B09" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B09" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B09" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B09" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B09" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B09" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B09" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B09" gate="G$16" x="-43.18" y="0"/>
-<instance part="B09" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B09" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B09" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B09" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B09" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B09" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B09" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B09" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B09" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B09" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B09" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B09" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B09" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B09" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B09" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B09" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B09" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B09" gate="G$34" x="-15.24" y="0"/>
-<instance part="B09" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B09" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B08" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B08" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B08" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B08" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B08" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B08" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B08" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B08" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B08" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B08" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B08" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B08" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B08" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B08" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B08" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B08" gate="G$16" x="-43.18" y="0"/>
-<instance part="B08" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B08" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B08" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B08" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B08" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B08" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B08" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B08" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B08" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B08" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B08" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B08" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B08" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B08" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B08" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B08" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B08" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B08" gate="G$34" x="-15.24" y="0"/>
-<instance part="B08" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B08" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B07" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B07" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B07" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B07" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B07" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B07" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B07" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B07" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B07" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B07" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B07" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B07" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B07" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B07" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B07" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B07" gate="G$16" x="-43.18" y="0"/>
-<instance part="B07" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B07" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B07" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B07" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B07" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B07" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B07" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B07" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B07" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B07" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B07" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B07" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B07" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B07" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B07" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B07" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B07" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B07" gate="G$34" x="-15.24" y="0"/>
-<instance part="B07" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B07" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B06" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B06" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B06" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B06" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B06" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B06" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B06" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B06" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B06" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B06" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B06" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B06" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B06" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B06" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B06" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B06" gate="G$16" x="-43.18" y="0"/>
-<instance part="B06" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B06" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B06" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B06" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B06" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B06" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B06" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B06" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B06" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B06" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B06" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B06" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B06" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B06" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B06" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B06" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B06" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B06" gate="G$34" x="-15.24" y="0"/>
-<instance part="B06" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B06" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B05" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B05" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B05" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B05" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B05" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B05" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B05" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B05" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B05" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B05" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B05" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B05" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B05" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B05" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B05" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B05" gate="G$16" x="-43.18" y="0"/>
-<instance part="B05" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B05" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B05" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B05" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B05" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B05" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B05" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B05" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B05" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B05" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B05" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B05" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B05" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B05" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B05" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B05" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B05" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B05" gate="G$34" x="-15.24" y="0"/>
-<instance part="B05" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B05" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B04" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B04" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B04" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B04" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B04" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B04" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B04" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B04" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B04" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B04" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B04" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B04" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B04" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B04" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B04" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B04" gate="G$16" x="-43.18" y="0"/>
-<instance part="B04" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B04" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B04" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B04" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B04" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B04" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B04" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B04" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B04" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B04" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B04" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B04" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B04" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B04" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B04" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B04" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B04" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B04" gate="G$34" x="-15.24" y="0"/>
-<instance part="B04" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B04" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B03" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B03" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B03" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B03" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B03" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B03" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B03" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B03" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B03" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B03" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B03" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B03" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B03" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B03" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B03" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B03" gate="G$16" x="-43.18" y="0"/>
-<instance part="B03" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B03" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B03" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B03" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B03" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B03" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B03" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B03" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B03" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B03" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B03" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B03" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B03" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B03" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B03" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B03" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B03" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B03" gate="G$34" x="-15.24" y="0"/>
-<instance part="B03" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B03" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B02" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B02" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B02" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B02" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B02" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B02" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B02" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B02" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B02" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B02" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B02" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B02" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B02" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B02" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B02" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B02" gate="G$16" x="-43.18" y="0"/>
-<instance part="B02" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B02" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B02" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B02" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B02" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B02" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B02" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B02" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B02" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B02" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B02" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B02" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B02" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B02" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B02" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B02" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B02" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B02" gate="G$34" x="-15.24" y="0"/>
-<instance part="B02" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B02" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="B01" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B01" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B01" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B01" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B01" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B01" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B01" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B01" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B01" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B01" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B01" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B01" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B01" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B01" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B01" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B01" gate="G$16" x="-43.18" y="0"/>
-<instance part="B01" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B01" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B01" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B01" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B01" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B01" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B01" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B01" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B01" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B01" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B01" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B01" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B01" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B01" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B01" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B01" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B01" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B01" gate="G$34" x="-15.24" y="0"/>
-<instance part="B01" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B01" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="A14" gate="G$1" x="-104.14" y="76.2"/>
-<instance part="A14" gate="G$2" x="-104.14" y="71.12"/>
-<instance part="A14" gate="G$3" x="-104.14" y="66.04"/>
-<instance part="A14" gate="G$4" x="-104.14" y="60.96"/>
-<instance part="A14" gate="G$5" x="-104.14" y="55.88"/>
-<instance part="A14" gate="G$6" x="-104.14" y="50.8"/>
-<instance part="A14" gate="G$7" x="-104.14" y="45.72"/>
-<instance part="A14" gate="G$8" x="-104.14" y="40.64"/>
-<instance part="A14" gate="G$9" x="-104.14" y="35.56"/>
-<instance part="A14" gate="G$10" x="-104.14" y="30.48"/>
-<instance part="A14" gate="G$11" x="-104.14" y="25.4"/>
-<instance part="A14" gate="G$12" x="-104.14" y="20.32"/>
-<instance part="A14" gate="G$13" x="-104.14" y="15.24"/>
-<instance part="A14" gate="G$14" x="-104.14" y="10.16"/>
-<instance part="A14" gate="G$15" x="-104.14" y="5.08"/>
-<instance part="A14" gate="G$16" x="-104.14" y="0"/>
-<instance part="A14" gate="G$17" x="-104.14" y="-5.08"/>
-<instance part="A14" gate="G$18" x="-104.14" y="-10.16"/>
-<instance part="A14" gate="G$19" x="-73.66" y="76.2"/>
-<instance part="A14" gate="G$20" x="-73.66" y="71.12"/>
-<instance part="A14" gate="G$21" x="-73.66" y="66.04"/>
-<instance part="A14" gate="G$22" x="-73.66" y="60.96"/>
-<instance part="A14" gate="G$23" x="-73.66" y="55.88"/>
-<instance part="A14" gate="G$24" x="-73.66" y="50.8"/>
-<instance part="A14" gate="G$25" x="-73.66" y="45.72"/>
-<instance part="A14" gate="G$26" x="-73.66" y="40.64"/>
-<instance part="A14" gate="G$27" x="-73.66" y="35.56"/>
-<instance part="A14" gate="G$28" x="-73.66" y="30.48"/>
-<instance part="A14" gate="G$29" x="-73.66" y="25.4"/>
-<instance part="A14" gate="G$30" x="-73.66" y="20.32"/>
-<instance part="A14" gate="G$31" x="-73.66" y="15.24"/>
-<instance part="A14" gate="G$32" x="-73.66" y="10.16"/>
-<instance part="A14" gate="G$33" x="-73.66" y="5.08"/>
-<instance part="A14" gate="G$34" x="-73.66" y="0"/>
-<instance part="A14" gate="G$35" x="-73.66" y="-5.08"/>
-<instance part="A14" gate="G$36" x="-73.66" y="-10.16"/>
-<instance part="B14" gate="G$1" x="-43.18" y="76.2"/>
-<instance part="B14" gate="G$2" x="-43.18" y="71.12"/>
-<instance part="B14" gate="G$3" x="-43.18" y="66.04"/>
-<instance part="B14" gate="G$4" x="-43.18" y="60.96"/>
-<instance part="B14" gate="G$5" x="-43.18" y="55.88"/>
-<instance part="B14" gate="G$6" x="-43.18" y="50.8"/>
-<instance part="B14" gate="G$7" x="-43.18" y="45.72"/>
-<instance part="B14" gate="G$8" x="-43.18" y="40.64"/>
-<instance part="B14" gate="G$9" x="-43.18" y="35.56"/>
-<instance part="B14" gate="G$10" x="-43.18" y="30.48"/>
-<instance part="B14" gate="G$11" x="-43.18" y="25.4"/>
-<instance part="B14" gate="G$12" x="-43.18" y="20.32"/>
-<instance part="B14" gate="G$13" x="-43.18" y="15.24"/>
-<instance part="B14" gate="G$14" x="-43.18" y="10.16"/>
-<instance part="B14" gate="G$15" x="-43.18" y="5.08"/>
-<instance part="B14" gate="G$16" x="-43.18" y="0"/>
-<instance part="B14" gate="G$17" x="-43.18" y="-5.08"/>
-<instance part="B14" gate="G$18" x="-43.18" y="-10.16"/>
-<instance part="B14" gate="G$19" x="-15.24" y="76.2"/>
-<instance part="B14" gate="G$20" x="-15.24" y="71.12"/>
-<instance part="B14" gate="G$21" x="-15.24" y="66.04"/>
-<instance part="B14" gate="G$22" x="-15.24" y="60.96"/>
-<instance part="B14" gate="G$23" x="-15.24" y="55.88"/>
-<instance part="B14" gate="G$24" x="-15.24" y="50.8"/>
-<instance part="B14" gate="G$25" x="-15.24" y="45.72"/>
-<instance part="B14" gate="G$26" x="-15.24" y="40.64"/>
-<instance part="B14" gate="G$27" x="-15.24" y="35.56"/>
-<instance part="B14" gate="G$28" x="-15.24" y="30.48"/>
-<instance part="B14" gate="G$29" x="-15.24" y="25.4"/>
-<instance part="B14" gate="G$30" x="-15.24" y="20.32"/>
-<instance part="B14" gate="G$31" x="-15.24" y="15.24"/>
-<instance part="B14" gate="G$32" x="-15.24" y="10.16"/>
-<instance part="B14" gate="G$33" x="-15.24" y="5.08"/>
-<instance part="B14" gate="G$34" x="-15.24" y="0"/>
-<instance part="B14" gate="G$35" x="-15.24" y="-5.08"/>
-<instance part="B14" gate="G$36" x="-15.24" y="-10.16"/>
-<instance part="C14" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C14" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C14" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C14" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C14" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C14" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C14" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C14" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C14" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C14" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C14" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C14" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C14" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C14" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C14" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C14" gate="G$16" x="17.78" y="0"/>
-<instance part="C14" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C14" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C14" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C14" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C14" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C14" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C14" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C14" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C14" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C14" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C14" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C14" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C14" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C14" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C14" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C14" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C14" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C14" gate="G$34" x="43.18" y="0"/>
-<instance part="C14" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C14" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C13" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C13" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C13" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C13" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C13" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C13" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C13" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C13" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C13" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C13" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C13" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C13" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C13" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C13" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C13" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C13" gate="G$16" x="17.78" y="0"/>
-<instance part="C13" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C13" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C13" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C13" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C13" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C13" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C13" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C13" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C13" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C13" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C13" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C13" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C13" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C13" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C13" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C13" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C13" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C13" gate="G$34" x="43.18" y="0"/>
-<instance part="C13" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C13" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C12" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C12" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C12" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C12" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C12" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C12" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C12" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C12" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C12" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C12" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C12" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C12" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C12" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C12" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C12" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C12" gate="G$16" x="17.78" y="0"/>
-<instance part="C12" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C12" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C12" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C12" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C12" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C12" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C12" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C12" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C12" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C12" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C12" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C12" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C12" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C12" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C12" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C12" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C12" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C12" gate="G$34" x="43.18" y="0"/>
-<instance part="C12" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C12" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C11" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C11" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C11" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C11" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C11" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C11" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C11" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C11" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C11" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C11" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C11" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C11" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C11" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C11" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C11" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C11" gate="G$16" x="17.78" y="0"/>
-<instance part="C11" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C11" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C11" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C11" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C11" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C11" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C11" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C11" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C11" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C11" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C11" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C11" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C11" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C11" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C11" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C11" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C11" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C11" gate="G$34" x="43.18" y="0"/>
-<instance part="C11" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C11" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C10" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C10" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C10" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C10" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C10" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C10" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C10" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C10" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C10" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C10" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C10" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C10" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C10" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C10" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C10" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C10" gate="G$16" x="17.78" y="0"/>
-<instance part="C10" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C10" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C10" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C10" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C10" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C10" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C10" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C10" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C10" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C10" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C10" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C10" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C10" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C10" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C10" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C10" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C10" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C10" gate="G$34" x="43.18" y="0"/>
-<instance part="C10" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C10" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C09" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C09" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C09" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C09" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C09" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C09" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C09" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C09" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C09" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C09" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C09" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C09" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C09" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C09" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C09" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C09" gate="G$16" x="17.78" y="0"/>
-<instance part="C09" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C09" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C09" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C09" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C09" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C09" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C09" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C09" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C09" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C09" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C09" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C09" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C09" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C09" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C09" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C09" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C09" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C09" gate="G$34" x="43.18" y="0"/>
-<instance part="C09" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C09" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C08" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C08" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C08" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C08" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C08" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C08" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C08" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C08" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C08" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C08" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C08" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C08" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C08" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C08" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C08" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C08" gate="G$16" x="17.78" y="0"/>
-<instance part="C08" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C08" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C08" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C08" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C08" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C08" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C08" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C08" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C08" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C08" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C08" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C08" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C08" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C08" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C08" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C08" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C08" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C08" gate="G$34" x="43.18" y="0"/>
-<instance part="C08" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C08" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C07" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C07" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C07" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C07" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C07" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C07" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C07" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C07" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C07" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C07" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C07" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C07" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C07" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C07" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C07" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C07" gate="G$16" x="17.78" y="0"/>
-<instance part="C07" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C07" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C07" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C07" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C07" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C07" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C07" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C07" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C07" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C07" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C07" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C07" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C07" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C07" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C07" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C07" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C07" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C07" gate="G$34" x="43.18" y="0"/>
-<instance part="C07" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C07" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C06" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C06" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C06" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C06" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C06" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C06" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C06" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C06" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C06" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C06" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C06" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C06" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C06" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C06" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C06" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C06" gate="G$16" x="17.78" y="0"/>
-<instance part="C06" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C06" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C06" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C06" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C06" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C06" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C06" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C06" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C06" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C06" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C06" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C06" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C06" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C06" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C06" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C06" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C06" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C06" gate="G$34" x="43.18" y="0"/>
-<instance part="C06" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C06" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C05" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C05" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C05" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C05" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C05" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C05" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C05" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C05" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C05" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C05" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C05" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C05" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C05" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C05" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C05" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C05" gate="G$16" x="17.78" y="0"/>
-<instance part="C05" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C05" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C05" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C05" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C05" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C05" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C05" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C05" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C05" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C05" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C05" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C05" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C05" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C05" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C05" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C05" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C05" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C05" gate="G$34" x="43.18" y="0"/>
-<instance part="C05" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C05" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C04" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C04" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C04" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C04" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C04" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C04" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C04" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C04" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C04" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C04" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C04" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C04" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C04" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C04" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C04" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C04" gate="G$16" x="17.78" y="0"/>
-<instance part="C04" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C04" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C04" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C04" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C04" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C04" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C04" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C04" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C04" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C04" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C04" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C04" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C04" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C04" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C04" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C04" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C04" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C04" gate="G$34" x="43.18" y="0"/>
-<instance part="C04" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C04" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C03" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C03" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C03" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C03" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C03" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C03" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C03" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C03" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C03" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C03" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C03" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C03" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C03" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C03" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C03" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C03" gate="G$16" x="17.78" y="0"/>
-<instance part="C03" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C03" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C03" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C03" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C03" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C03" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C03" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C03" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C03" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C03" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C03" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C03" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C03" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C03" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C03" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C03" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C03" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C03" gate="G$34" x="43.18" y="0"/>
-<instance part="C03" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C03" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="C02" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C02" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C02" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C02" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C02" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C02" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C02" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C02" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C02" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C02" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C02" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C02" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C02" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C02" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C02" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C02" gate="G$16" x="17.78" y="0"/>
-<instance part="C02" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C02" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C02" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C02" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C02" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C02" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C02" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C02" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C02" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C02" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C02" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C02" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C02" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C02" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C02" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C02" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C02" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C02" gate="G$34" x="43.18" y="0"/>
-<instance part="C02" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C02" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="D14" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D14" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D14" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D14" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D14" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D14" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D14" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D14" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D14" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D14" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D14" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D14" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D14" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D14" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D14" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D14" gate="G$16" x="73.66" y="0"/>
-<instance part="D14" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D14" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D14" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D14" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D14" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D14" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D14" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D14" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D14" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D14" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D14" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D14" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D14" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D14" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D14" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D14" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D14" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D14" gate="G$34" x="99.06" y="0"/>
-<instance part="D14" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D14" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D13" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D13" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D13" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D13" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D13" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D13" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D13" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D13" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D13" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D13" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D13" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D13" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D13" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D13" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D13" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D13" gate="G$16" x="73.66" y="0"/>
-<instance part="D13" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D13" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D13" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D13" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D13" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D13" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D13" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D13" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D13" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D13" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D13" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D13" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D13" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D13" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D13" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D13" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D13" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D13" gate="G$34" x="99.06" y="0"/>
-<instance part="D13" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D13" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D12" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D12" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D12" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D12" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D12" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D12" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D12" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D12" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D12" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D12" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D12" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D12" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D12" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D12" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D12" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D12" gate="G$16" x="73.66" y="0"/>
-<instance part="D12" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D12" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D12" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D12" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D12" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D12" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D12" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D12" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D12" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D12" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D12" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D12" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D12" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D12" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D12" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D12" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D12" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D12" gate="G$34" x="99.06" y="0"/>
-<instance part="D12" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D12" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D11" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D11" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D11" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D11" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D11" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D11" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D11" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D11" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D11" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D11" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D11" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D11" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D11" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D11" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D11" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D11" gate="G$16" x="73.66" y="0"/>
-<instance part="D11" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D11" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D11" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D11" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D11" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D11" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D11" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D11" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D11" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D11" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D11" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D11" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D11" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D11" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D11" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D11" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D11" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D11" gate="G$34" x="99.06" y="0"/>
-<instance part="D11" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D11" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D10" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D10" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D10" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D10" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D10" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D10" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D10" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D10" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D10" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D10" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D10" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D10" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D10" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D10" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D10" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D10" gate="G$16" x="73.66" y="0"/>
-<instance part="D10" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D10" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D10" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D10" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D10" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D10" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D10" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D10" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D10" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D10" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D10" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D10" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D10" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D10" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D10" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D10" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D10" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D10" gate="G$34" x="99.06" y="0"/>
-<instance part="D10" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D10" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D09" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D09" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D09" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D09" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D09" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D09" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D09" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D09" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D09" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D09" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D09" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D09" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D09" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D09" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D09" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D09" gate="G$16" x="73.66" y="0"/>
-<instance part="D09" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D09" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D09" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D09" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D09" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D09" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D09" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D09" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D09" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D09" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D09" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D09" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D09" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D09" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D09" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D09" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D09" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D09" gate="G$34" x="99.06" y="0"/>
-<instance part="D09" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D09" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D08" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D08" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D08" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D08" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D08" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D08" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D08" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D08" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D08" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D08" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D08" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D08" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D08" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D08" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D08" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D08" gate="G$16" x="73.66" y="0"/>
-<instance part="D08" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D08" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D08" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D08" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D08" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D08" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D08" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D08" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D08" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D08" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D08" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D08" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D08" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D08" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D08" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D08" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D08" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D08" gate="G$34" x="99.06" y="0"/>
-<instance part="D08" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D08" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D07" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D07" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D07" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D07" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D07" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D07" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D07" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D07" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D07" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D07" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D07" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D07" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D07" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D07" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D07" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D07" gate="G$16" x="73.66" y="0"/>
-<instance part="D07" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D07" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D07" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D07" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D07" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D07" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D07" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D07" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D07" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D07" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D07" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D07" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D07" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D07" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D07" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D07" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D07" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D07" gate="G$34" x="99.06" y="0"/>
-<instance part="D07" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D07" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D06" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D06" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D06" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D06" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D06" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D06" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D06" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D06" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D06" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D06" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D06" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D06" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D06" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D06" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D06" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D06" gate="G$16" x="73.66" y="0"/>
-<instance part="D06" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D06" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D06" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D06" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D06" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D06" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D06" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D06" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D06" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D06" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D06" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D06" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D06" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D06" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D06" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D06" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D06" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D06" gate="G$34" x="99.06" y="0"/>
-<instance part="D06" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D06" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D05" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D05" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D05" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D05" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D05" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D05" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D05" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D05" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D05" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D05" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D05" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D05" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D05" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D05" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D05" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D05" gate="G$16" x="73.66" y="0"/>
-<instance part="D05" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D05" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D05" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D05" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D05" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D05" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D05" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D05" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D05" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D05" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D05" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D05" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D05" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D05" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D05" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D05" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D05" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D05" gate="G$34" x="99.06" y="0"/>
-<instance part="D05" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D05" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D04" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D04" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D04" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D04" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D04" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D04" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D04" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D04" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D04" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D04" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D04" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D04" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D04" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D04" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D04" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D04" gate="G$16" x="73.66" y="0"/>
-<instance part="D04" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D04" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D04" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D04" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D04" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D04" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D04" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D04" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D04" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D04" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D04" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D04" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D04" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D04" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D04" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D04" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D04" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D04" gate="G$34" x="99.06" y="0"/>
-<instance part="D04" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D04" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D03" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D03" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D03" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D03" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D03" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D03" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D03" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D03" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D03" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D03" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D03" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D03" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D03" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D03" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D03" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D03" gate="G$16" x="73.66" y="0"/>
-<instance part="D03" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D03" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D03" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D03" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D03" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D03" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D03" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D03" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D03" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D03" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D03" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D03" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D03" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D03" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D03" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D03" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D03" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D03" gate="G$34" x="99.06" y="0"/>
-<instance part="D03" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D03" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="D02" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D02" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D02" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D02" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D02" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D02" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D02" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D02" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D02" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D02" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D02" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D02" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D02" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D02" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D02" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D02" gate="G$16" x="73.66" y="0"/>
-<instance part="D02" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D02" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D02" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D02" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D02" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D02" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D02" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D02" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D02" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D02" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D02" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D02" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D02" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D02" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D02" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D02" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D02" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D02" gate="G$34" x="99.06" y="0"/>
-<instance part="D02" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D02" gate="G$36" x="99.06" y="-10.16"/>
-<instance part="C01" gate="G$1" x="17.78" y="76.2"/>
-<instance part="C01" gate="G$2" x="17.78" y="71.12"/>
-<instance part="C01" gate="G$3" x="17.78" y="66.04"/>
-<instance part="C01" gate="G$4" x="17.78" y="60.96"/>
-<instance part="C01" gate="G$5" x="17.78" y="55.88"/>
-<instance part="C01" gate="G$6" x="17.78" y="50.8"/>
-<instance part="C01" gate="G$7" x="17.78" y="45.72"/>
-<instance part="C01" gate="G$8" x="17.78" y="40.64"/>
-<instance part="C01" gate="G$9" x="17.78" y="35.56"/>
-<instance part="C01" gate="G$10" x="17.78" y="30.48"/>
-<instance part="C01" gate="G$11" x="17.78" y="25.4"/>
-<instance part="C01" gate="G$12" x="17.78" y="20.32"/>
-<instance part="C01" gate="G$13" x="17.78" y="15.24"/>
-<instance part="C01" gate="G$14" x="17.78" y="10.16"/>
-<instance part="C01" gate="G$15" x="17.78" y="5.08"/>
-<instance part="C01" gate="G$16" x="17.78" y="0"/>
-<instance part="C01" gate="G$17" x="17.78" y="-5.08"/>
-<instance part="C01" gate="G$18" x="17.78" y="-10.16"/>
-<instance part="C01" gate="G$19" x="43.18" y="76.2"/>
-<instance part="C01" gate="G$20" x="43.18" y="71.12"/>
-<instance part="C01" gate="G$21" x="43.18" y="66.04"/>
-<instance part="C01" gate="G$22" x="43.18" y="60.96"/>
-<instance part="C01" gate="G$23" x="43.18" y="55.88"/>
-<instance part="C01" gate="G$24" x="43.18" y="50.8"/>
-<instance part="C01" gate="G$25" x="43.18" y="45.72"/>
-<instance part="C01" gate="G$26" x="43.18" y="40.64"/>
-<instance part="C01" gate="G$27" x="43.18" y="35.56"/>
-<instance part="C01" gate="G$28" x="43.18" y="30.48"/>
-<instance part="C01" gate="G$29" x="43.18" y="25.4"/>
-<instance part="C01" gate="G$30" x="43.18" y="20.32"/>
-<instance part="C01" gate="G$31" x="43.18" y="15.24"/>
-<instance part="C01" gate="G$32" x="43.18" y="10.16"/>
-<instance part="C01" gate="G$33" x="43.18" y="5.08"/>
-<instance part="C01" gate="G$34" x="43.18" y="0"/>
-<instance part="C01" gate="G$35" x="43.18" y="-5.08"/>
-<instance part="C01" gate="G$36" x="43.18" y="-10.16"/>
-<instance part="D01" gate="G$1" x="73.66" y="76.2"/>
-<instance part="D01" gate="G$2" x="73.66" y="71.12"/>
-<instance part="D01" gate="G$3" x="73.66" y="66.04"/>
-<instance part="D01" gate="G$4" x="73.66" y="60.96"/>
-<instance part="D01" gate="G$5" x="73.66" y="55.88"/>
-<instance part="D01" gate="G$6" x="73.66" y="50.8"/>
-<instance part="D01" gate="G$7" x="73.66" y="45.72"/>
-<instance part="D01" gate="G$8" x="73.66" y="40.64"/>
-<instance part="D01" gate="G$9" x="73.66" y="35.56"/>
-<instance part="D01" gate="G$10" x="73.66" y="30.48"/>
-<instance part="D01" gate="G$11" x="73.66" y="25.4"/>
-<instance part="D01" gate="G$12" x="73.66" y="20.32"/>
-<instance part="D01" gate="G$13" x="73.66" y="15.24"/>
-<instance part="D01" gate="G$14" x="73.66" y="10.16"/>
-<instance part="D01" gate="G$15" x="73.66" y="5.08"/>
-<instance part="D01" gate="G$16" x="73.66" y="0"/>
-<instance part="D01" gate="G$17" x="73.66" y="-5.08"/>
-<instance part="D01" gate="G$18" x="73.66" y="-10.16"/>
-<instance part="D01" gate="G$19" x="99.06" y="76.2"/>
-<instance part="D01" gate="G$20" x="99.06" y="71.12"/>
-<instance part="D01" gate="G$21" x="99.06" y="66.04"/>
-<instance part="D01" gate="G$22" x="99.06" y="60.96"/>
-<instance part="D01" gate="G$23" x="99.06" y="55.88"/>
-<instance part="D01" gate="G$24" x="99.06" y="50.8"/>
-<instance part="D01" gate="G$25" x="99.06" y="45.72"/>
-<instance part="D01" gate="G$26" x="99.06" y="40.64"/>
-<instance part="D01" gate="G$27" x="99.06" y="35.56"/>
-<instance part="D01" gate="G$28" x="99.06" y="30.48"/>
-<instance part="D01" gate="G$29" x="99.06" y="25.4"/>
-<instance part="D01" gate="G$30" x="99.06" y="20.32"/>
-<instance part="D01" gate="G$31" x="99.06" y="15.24"/>
-<instance part="D01" gate="G$32" x="99.06" y="10.16"/>
-<instance part="D01" gate="G$33" x="99.06" y="5.08"/>
-<instance part="D01" gate="G$34" x="99.06" y="0"/>
-<instance part="D01" gate="G$35" x="99.06" y="-5.08"/>
-<instance part="D01" gate="G$36" x="99.06" y="-10.16"/>
+<instance part="A01" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A01" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A01" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A01" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A01" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A01" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A01" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A01" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A01" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A01" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A01" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A01" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A01" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A01" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A01" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A01" gate="J2" x="-104.14" y="0"/>
+<instance part="A01" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A01" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A01" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A01" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A01" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A01" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A01" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A01" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A01" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A01" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A01" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A01" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A01" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A01" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A01" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A01" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A01" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A01" gate="U2" x="-73.66" y="0"/>
+<instance part="A01" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A01" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A02" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A02" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A02" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A02" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A02" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A02" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A02" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A02" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A02" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A02" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A02" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A02" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A02" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A02" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A02" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A02" gate="J2" x="-104.14" y="0"/>
+<instance part="A02" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A02" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A02" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A02" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A02" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A02" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A02" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A02" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A02" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A02" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A02" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A02" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A02" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A02" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A02" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A02" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A02" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A02" gate="U2" x="-73.66" y="0"/>
+<instance part="A02" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A02" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A03" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A03" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A03" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A03" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A03" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A03" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A03" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A03" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A03" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A03" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A03" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A03" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A03" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A03" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A03" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A03" gate="J2" x="-104.14" y="0"/>
+<instance part="A03" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A03" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A03" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A03" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A03" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A03" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A03" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A03" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A03" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A03" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A03" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A03" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A03" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A03" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A03" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A03" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A03" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A03" gate="U2" x="-73.66" y="0"/>
+<instance part="A03" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A03" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A04" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A04" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A04" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A04" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A04" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A04" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A04" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A04" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A04" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A04" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A04" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A04" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A04" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A04" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A04" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A04" gate="J2" x="-104.14" y="0"/>
+<instance part="A04" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A04" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A04" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A04" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A04" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A04" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A04" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A04" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A04" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A04" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A04" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A04" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A04" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A04" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A04" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A04" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A04" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A04" gate="U2" x="-73.66" y="0"/>
+<instance part="A04" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A04" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A05" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A05" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A05" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A05" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A05" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A05" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A05" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A05" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A05" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A05" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A05" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A05" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A05" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A05" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A05" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A05" gate="J2" x="-104.14" y="0"/>
+<instance part="A05" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A05" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A05" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A05" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A05" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A05" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A05" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A05" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A05" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A05" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A05" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A05" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A05" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A05" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A05" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A05" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A05" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A05" gate="U2" x="-73.66" y="0"/>
+<instance part="A05" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A05" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A06" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A06" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A06" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A06" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A06" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A06" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A06" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A06" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A06" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A06" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A06" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A06" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A06" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A06" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A06" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A06" gate="J2" x="-104.14" y="0"/>
+<instance part="A06" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A06" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A06" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A06" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A06" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A06" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A06" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A06" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A06" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A06" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A06" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A06" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A06" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A06" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A06" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A06" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A06" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A06" gate="U2" x="-73.66" y="0"/>
+<instance part="A06" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A06" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A07" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A07" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A07" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A07" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A07" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A07" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A07" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A07" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A07" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A07" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A07" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A07" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A07" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A07" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A07" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A07" gate="J2" x="-104.14" y="0"/>
+<instance part="A07" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A07" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A07" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A07" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A07" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A07" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A07" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A07" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A07" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A07" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A07" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A07" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A07" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A07" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A07" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A07" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A07" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A07" gate="U2" x="-73.66" y="0"/>
+<instance part="A07" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A07" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A08" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A08" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A08" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A08" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A08" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A08" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A08" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A08" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A08" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A08" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A08" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A08" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A08" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A08" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A08" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A08" gate="J2" x="-104.14" y="0"/>
+<instance part="A08" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A08" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A08" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A08" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A08" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A08" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A08" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A08" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A08" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A08" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A08" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A08" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A08" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A08" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A08" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A08" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A08" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A08" gate="U2" x="-73.66" y="0"/>
+<instance part="A08" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A08" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A09" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A09" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A09" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A09" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A09" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A09" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A09" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A09" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A09" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A09" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A09" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A09" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A09" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A09" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A09" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A09" gate="J2" x="-104.14" y="0"/>
+<instance part="A09" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A09" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A09" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A09" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A09" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A09" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A09" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A09" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A09" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A09" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A09" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A09" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A09" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A09" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A09" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A09" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A09" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A09" gate="U2" x="-73.66" y="0"/>
+<instance part="A09" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A09" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A10" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A10" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A10" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A10" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A10" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A10" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A10" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A10" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A10" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A10" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A10" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A10" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A10" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A10" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A10" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A10" gate="J2" x="-104.14" y="0"/>
+<instance part="A10" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A10" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A10" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A10" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A10" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A10" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A10" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A10" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A10" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A10" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A10" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A10" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A10" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A10" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A10" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A10" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A10" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A10" gate="U2" x="-73.66" y="0"/>
+<instance part="A10" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A10" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A11" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A11" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A11" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A11" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A11" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A11" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A11" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A11" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A11" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A11" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A11" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A11" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A11" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A11" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A11" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A11" gate="J2" x="-104.14" y="0"/>
+<instance part="A11" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A11" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A11" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A11" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A11" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A11" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A11" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A11" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A11" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A11" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A11" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A11" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A11" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A11" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A11" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A11" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A11" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A11" gate="U2" x="-73.66" y="0"/>
+<instance part="A11" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A11" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A12" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A12" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A12" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A12" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A12" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A12" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A12" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A12" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A12" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A12" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A12" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A12" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A12" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A12" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A12" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A12" gate="J2" x="-104.14" y="0"/>
+<instance part="A12" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A12" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A12" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A12" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A12" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A12" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A12" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A12" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A12" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A12" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A12" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A12" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A12" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A12" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A12" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A12" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A12" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A12" gate="U2" x="-73.66" y="0"/>
+<instance part="A12" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A12" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="A13" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A13" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A13" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A13" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A13" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A13" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A13" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A13" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A13" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A13" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A13" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A13" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A13" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A13" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A13" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A13" gate="J2" x="-104.14" y="0"/>
+<instance part="A13" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A13" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A13" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A13" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A13" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A13" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A13" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A13" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A13" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A13" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A13" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A13" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A13" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A13" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A13" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A13" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A13" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A13" gate="U2" x="-73.66" y="0"/>
+<instance part="A13" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A13" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="B13" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B13" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B13" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B13" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B13" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B13" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B13" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B13" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B13" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B13" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B13" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B13" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B13" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B13" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B13" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B13" gate="J2" x="-43.18" y="0"/>
+<instance part="B13" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B13" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B13" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B13" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B13" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B13" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B13" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B13" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B13" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B13" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B13" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B13" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B13" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B13" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B13" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B13" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B13" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B13" gate="U2" x="-15.24" y="0"/>
+<instance part="B13" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B13" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B12" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B12" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B12" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B12" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B12" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B12" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B12" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B12" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B12" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B12" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B12" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B12" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B12" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B12" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B12" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B12" gate="J2" x="-43.18" y="0"/>
+<instance part="B12" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B12" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B12" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B12" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B12" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B12" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B12" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B12" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B12" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B12" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B12" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B12" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B12" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B12" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B12" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B12" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B12" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B12" gate="U2" x="-15.24" y="0"/>
+<instance part="B12" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B12" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B11" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B11" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B11" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B11" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B11" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B11" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B11" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B11" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B11" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B11" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B11" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B11" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B11" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B11" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B11" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B11" gate="J2" x="-43.18" y="0"/>
+<instance part="B11" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B11" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B11" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B11" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B11" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B11" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B11" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B11" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B11" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B11" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B11" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B11" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B11" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B11" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B11" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B11" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B11" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B11" gate="U2" x="-15.24" y="0"/>
+<instance part="B11" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B11" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B10" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B10" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B10" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B10" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B10" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B10" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B10" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B10" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B10" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B10" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B10" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B10" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B10" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B10" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B10" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B10" gate="J2" x="-43.18" y="0"/>
+<instance part="B10" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B10" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B10" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B10" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B10" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B10" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B10" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B10" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B10" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B10" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B10" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B10" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B10" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B10" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B10" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B10" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B10" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B10" gate="U2" x="-15.24" y="0"/>
+<instance part="B10" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B10" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B09" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B09" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B09" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B09" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B09" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B09" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B09" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B09" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B09" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B09" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B09" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B09" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B09" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B09" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B09" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B09" gate="J2" x="-43.18" y="0"/>
+<instance part="B09" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B09" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B09" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B09" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B09" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B09" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B09" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B09" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B09" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B09" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B09" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B09" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B09" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B09" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B09" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B09" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B09" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B09" gate="U2" x="-15.24" y="0"/>
+<instance part="B09" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B09" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B08" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B08" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B08" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B08" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B08" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B08" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B08" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B08" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B08" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B08" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B08" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B08" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B08" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B08" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B08" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B08" gate="J2" x="-43.18" y="0"/>
+<instance part="B08" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B08" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B08" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B08" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B08" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B08" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B08" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B08" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B08" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B08" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B08" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B08" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B08" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B08" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B08" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B08" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B08" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B08" gate="U2" x="-15.24" y="0"/>
+<instance part="B08" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B08" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B07" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B07" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B07" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B07" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B07" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B07" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B07" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B07" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B07" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B07" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B07" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B07" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B07" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B07" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B07" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B07" gate="J2" x="-43.18" y="0"/>
+<instance part="B07" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B07" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B07" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B07" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B07" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B07" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B07" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B07" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B07" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B07" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B07" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B07" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B07" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B07" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B07" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B07" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B07" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B07" gate="U2" x="-15.24" y="0"/>
+<instance part="B07" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B07" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B06" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B06" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B06" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B06" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B06" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B06" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B06" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B06" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B06" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B06" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B06" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B06" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B06" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B06" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B06" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B06" gate="J2" x="-43.18" y="0"/>
+<instance part="B06" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B06" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B06" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B06" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B06" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B06" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B06" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B06" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B06" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B06" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B06" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B06" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B06" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B06" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B06" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B06" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B06" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B06" gate="U2" x="-15.24" y="0"/>
+<instance part="B06" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B06" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B05" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B05" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B05" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B05" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B05" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B05" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B05" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B05" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B05" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B05" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B05" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B05" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B05" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B05" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B05" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B05" gate="J2" x="-43.18" y="0"/>
+<instance part="B05" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B05" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B05" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B05" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B05" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B05" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B05" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B05" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B05" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B05" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B05" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B05" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B05" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B05" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B05" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B05" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B05" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B05" gate="U2" x="-15.24" y="0"/>
+<instance part="B05" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B05" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B04" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B04" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B04" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B04" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B04" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B04" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B04" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B04" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B04" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B04" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B04" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B04" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B04" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B04" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B04" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B04" gate="J2" x="-43.18" y="0"/>
+<instance part="B04" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B04" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B04" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B04" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B04" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B04" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B04" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B04" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B04" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B04" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B04" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B04" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B04" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B04" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B04" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B04" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B04" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B04" gate="U2" x="-15.24" y="0"/>
+<instance part="B04" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B04" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B03" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B03" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B03" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B03" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B03" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B03" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B03" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B03" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B03" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B03" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B03" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B03" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B03" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B03" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B03" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B03" gate="J2" x="-43.18" y="0"/>
+<instance part="B03" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B03" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B03" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B03" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B03" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B03" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B03" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B03" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B03" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B03" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B03" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B03" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B03" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B03" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B03" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B03" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B03" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B03" gate="U2" x="-15.24" y="0"/>
+<instance part="B03" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B03" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B02" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B02" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B02" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B02" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B02" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B02" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B02" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B02" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B02" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B02" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B02" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B02" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B02" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B02" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B02" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B02" gate="J2" x="-43.18" y="0"/>
+<instance part="B02" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B02" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B02" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B02" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B02" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B02" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B02" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B02" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B02" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B02" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B02" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B02" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B02" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B02" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B02" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B02" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B02" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B02" gate="U2" x="-15.24" y="0"/>
+<instance part="B02" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B02" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="B01" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B01" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B01" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B01" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B01" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B01" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B01" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B01" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B01" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B01" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B01" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B01" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B01" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B01" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B01" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B01" gate="J2" x="-43.18" y="0"/>
+<instance part="B01" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B01" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B01" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B01" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B01" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B01" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B01" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B01" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B01" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B01" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B01" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B01" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B01" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B01" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B01" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B01" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B01" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B01" gate="U2" x="-15.24" y="0"/>
+<instance part="B01" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B01" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="A14" gate="A1" x="-104.14" y="76.2"/>
+<instance part="A14" gate="A2" x="-104.14" y="71.12"/>
+<instance part="A14" gate="B1" x="-104.14" y="66.04"/>
+<instance part="A14" gate="B2" x="-104.14" y="60.96"/>
+<instance part="A14" gate="C1" x="-104.14" y="55.88"/>
+<instance part="A14" gate="C2" x="-104.14" y="50.8"/>
+<instance part="A14" gate="D1" x="-104.14" y="45.72"/>
+<instance part="A14" gate="D2" x="-104.14" y="40.64"/>
+<instance part="A14" gate="E1" x="-104.14" y="35.56"/>
+<instance part="A14" gate="E2" x="-104.14" y="30.48"/>
+<instance part="A14" gate="F1" x="-104.14" y="25.4"/>
+<instance part="A14" gate="F2" x="-104.14" y="20.32"/>
+<instance part="A14" gate="H1" x="-104.14" y="15.24"/>
+<instance part="A14" gate="H2" x="-104.14" y="10.16"/>
+<instance part="A14" gate="J1" x="-104.14" y="5.08"/>
+<instance part="A14" gate="J2" x="-104.14" y="0"/>
+<instance part="A14" gate="K1" x="-104.14" y="-5.08"/>
+<instance part="A14" gate="K2" x="-104.14" y="-10.16"/>
+<instance part="A14" gate="L1" x="-73.66" y="76.2"/>
+<instance part="A14" gate="L2" x="-73.66" y="71.12"/>
+<instance part="A14" gate="M1" x="-73.66" y="66.04"/>
+<instance part="A14" gate="M2" x="-73.66" y="60.96"/>
+<instance part="A14" gate="N1" x="-73.66" y="55.88"/>
+<instance part="A14" gate="N2" x="-73.66" y="50.8"/>
+<instance part="A14" gate="P1" x="-73.66" y="45.72"/>
+<instance part="A14" gate="P2" x="-73.66" y="40.64"/>
+<instance part="A14" gate="R1" x="-73.66" y="35.56"/>
+<instance part="A14" gate="R2" x="-73.66" y="30.48"/>
+<instance part="A14" gate="S1" x="-73.66" y="25.4"/>
+<instance part="A14" gate="S2" x="-73.66" y="20.32"/>
+<instance part="A14" gate="T1" x="-73.66" y="15.24"/>
+<instance part="A14" gate="T2" x="-73.66" y="10.16"/>
+<instance part="A14" gate="U1" x="-73.66" y="5.08"/>
+<instance part="A14" gate="U2" x="-73.66" y="0"/>
+<instance part="A14" gate="V1" x="-73.66" y="-5.08"/>
+<instance part="A14" gate="V2" x="-73.66" y="-10.16"/>
+<instance part="B14" gate="A1" x="-43.18" y="76.2"/>
+<instance part="B14" gate="A2" x="-43.18" y="71.12"/>
+<instance part="B14" gate="B1" x="-43.18" y="66.04"/>
+<instance part="B14" gate="B2" x="-43.18" y="60.96"/>
+<instance part="B14" gate="C1" x="-43.18" y="55.88"/>
+<instance part="B14" gate="C2" x="-43.18" y="50.8"/>
+<instance part="B14" gate="D1" x="-43.18" y="45.72"/>
+<instance part="B14" gate="D2" x="-43.18" y="40.64"/>
+<instance part="B14" gate="E1" x="-43.18" y="35.56"/>
+<instance part="B14" gate="E2" x="-43.18" y="30.48"/>
+<instance part="B14" gate="F1" x="-43.18" y="25.4"/>
+<instance part="B14" gate="F2" x="-43.18" y="20.32"/>
+<instance part="B14" gate="H1" x="-43.18" y="15.24"/>
+<instance part="B14" gate="H2" x="-43.18" y="10.16"/>
+<instance part="B14" gate="J1" x="-43.18" y="5.08"/>
+<instance part="B14" gate="J2" x="-43.18" y="0"/>
+<instance part="B14" gate="K1" x="-43.18" y="-5.08"/>
+<instance part="B14" gate="K2" x="-43.18" y="-10.16"/>
+<instance part="B14" gate="L1" x="-15.24" y="76.2"/>
+<instance part="B14" gate="L2" x="-15.24" y="71.12"/>
+<instance part="B14" gate="M1" x="-15.24" y="66.04"/>
+<instance part="B14" gate="M2" x="-15.24" y="60.96"/>
+<instance part="B14" gate="N1" x="-15.24" y="55.88"/>
+<instance part="B14" gate="N2" x="-15.24" y="50.8"/>
+<instance part="B14" gate="P1" x="-15.24" y="45.72"/>
+<instance part="B14" gate="P2" x="-15.24" y="40.64"/>
+<instance part="B14" gate="R1" x="-15.24" y="35.56"/>
+<instance part="B14" gate="R2" x="-15.24" y="30.48"/>
+<instance part="B14" gate="S1" x="-15.24" y="25.4"/>
+<instance part="B14" gate="S2" x="-15.24" y="20.32"/>
+<instance part="B14" gate="T1" x="-15.24" y="15.24"/>
+<instance part="B14" gate="T2" x="-15.24" y="10.16"/>
+<instance part="B14" gate="U1" x="-15.24" y="5.08"/>
+<instance part="B14" gate="U2" x="-15.24" y="0"/>
+<instance part="B14" gate="V1" x="-15.24" y="-5.08"/>
+<instance part="B14" gate="V2" x="-15.24" y="-10.16"/>
+<instance part="C14" gate="A1" x="17.78" y="76.2"/>
+<instance part="C14" gate="A2" x="17.78" y="71.12"/>
+<instance part="C14" gate="B1" x="17.78" y="66.04"/>
+<instance part="C14" gate="B2" x="17.78" y="60.96"/>
+<instance part="C14" gate="C1" x="17.78" y="55.88"/>
+<instance part="C14" gate="C2" x="17.78" y="50.8"/>
+<instance part="C14" gate="D1" x="17.78" y="45.72"/>
+<instance part="C14" gate="D2" x="17.78" y="40.64"/>
+<instance part="C14" gate="E1" x="17.78" y="35.56"/>
+<instance part="C14" gate="E2" x="17.78" y="30.48"/>
+<instance part="C14" gate="F1" x="17.78" y="25.4"/>
+<instance part="C14" gate="F2" x="17.78" y="20.32"/>
+<instance part="C14" gate="H1" x="17.78" y="15.24"/>
+<instance part="C14" gate="H2" x="17.78" y="10.16"/>
+<instance part="C14" gate="J1" x="17.78" y="5.08"/>
+<instance part="C14" gate="J2" x="17.78" y="0"/>
+<instance part="C14" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C14" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C14" gate="L1" x="43.18" y="76.2"/>
+<instance part="C14" gate="L2" x="43.18" y="71.12"/>
+<instance part="C14" gate="M1" x="43.18" y="66.04"/>
+<instance part="C14" gate="M2" x="43.18" y="60.96"/>
+<instance part="C14" gate="N1" x="43.18" y="55.88"/>
+<instance part="C14" gate="N2" x="43.18" y="50.8"/>
+<instance part="C14" gate="P1" x="43.18" y="45.72"/>
+<instance part="C14" gate="P2" x="43.18" y="40.64"/>
+<instance part="C14" gate="R1" x="43.18" y="35.56"/>
+<instance part="C14" gate="R2" x="43.18" y="30.48"/>
+<instance part="C14" gate="S1" x="43.18" y="25.4"/>
+<instance part="C14" gate="S2" x="43.18" y="20.32"/>
+<instance part="C14" gate="T1" x="43.18" y="15.24"/>
+<instance part="C14" gate="T2" x="43.18" y="10.16"/>
+<instance part="C14" gate="U1" x="43.18" y="5.08"/>
+<instance part="C14" gate="U2" x="43.18" y="0"/>
+<instance part="C14" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C14" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C13" gate="A1" x="17.78" y="76.2"/>
+<instance part="C13" gate="A2" x="17.78" y="71.12"/>
+<instance part="C13" gate="B1" x="17.78" y="66.04"/>
+<instance part="C13" gate="B2" x="17.78" y="60.96"/>
+<instance part="C13" gate="C1" x="17.78" y="55.88"/>
+<instance part="C13" gate="C2" x="17.78" y="50.8"/>
+<instance part="C13" gate="D1" x="17.78" y="45.72"/>
+<instance part="C13" gate="D2" x="17.78" y="40.64"/>
+<instance part="C13" gate="E1" x="17.78" y="35.56"/>
+<instance part="C13" gate="E2" x="17.78" y="30.48"/>
+<instance part="C13" gate="F1" x="17.78" y="25.4"/>
+<instance part="C13" gate="F2" x="17.78" y="20.32"/>
+<instance part="C13" gate="H1" x="17.78" y="15.24"/>
+<instance part="C13" gate="H2" x="17.78" y="10.16"/>
+<instance part="C13" gate="J1" x="17.78" y="5.08"/>
+<instance part="C13" gate="J2" x="17.78" y="0"/>
+<instance part="C13" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C13" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C13" gate="L1" x="43.18" y="76.2"/>
+<instance part="C13" gate="L2" x="43.18" y="71.12"/>
+<instance part="C13" gate="M1" x="43.18" y="66.04"/>
+<instance part="C13" gate="M2" x="43.18" y="60.96"/>
+<instance part="C13" gate="N1" x="43.18" y="55.88"/>
+<instance part="C13" gate="N2" x="43.18" y="50.8"/>
+<instance part="C13" gate="P1" x="43.18" y="45.72"/>
+<instance part="C13" gate="P2" x="43.18" y="40.64"/>
+<instance part="C13" gate="R1" x="43.18" y="35.56"/>
+<instance part="C13" gate="R2" x="43.18" y="30.48"/>
+<instance part="C13" gate="S1" x="43.18" y="25.4"/>
+<instance part="C13" gate="S2" x="43.18" y="20.32"/>
+<instance part="C13" gate="T1" x="43.18" y="15.24"/>
+<instance part="C13" gate="T2" x="43.18" y="10.16"/>
+<instance part="C13" gate="U1" x="43.18" y="5.08"/>
+<instance part="C13" gate="U2" x="43.18" y="0"/>
+<instance part="C13" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C13" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C12" gate="A1" x="17.78" y="76.2"/>
+<instance part="C12" gate="A2" x="17.78" y="71.12"/>
+<instance part="C12" gate="B1" x="17.78" y="66.04"/>
+<instance part="C12" gate="B2" x="17.78" y="60.96"/>
+<instance part="C12" gate="C1" x="17.78" y="55.88"/>
+<instance part="C12" gate="C2" x="17.78" y="50.8"/>
+<instance part="C12" gate="D1" x="17.78" y="45.72"/>
+<instance part="C12" gate="D2" x="17.78" y="40.64"/>
+<instance part="C12" gate="E1" x="17.78" y="35.56"/>
+<instance part="C12" gate="E2" x="17.78" y="30.48"/>
+<instance part="C12" gate="F1" x="17.78" y="25.4"/>
+<instance part="C12" gate="F2" x="17.78" y="20.32"/>
+<instance part="C12" gate="H1" x="17.78" y="15.24"/>
+<instance part="C12" gate="H2" x="17.78" y="10.16"/>
+<instance part="C12" gate="J1" x="17.78" y="5.08"/>
+<instance part="C12" gate="J2" x="17.78" y="0"/>
+<instance part="C12" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C12" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C12" gate="L1" x="43.18" y="76.2"/>
+<instance part="C12" gate="L2" x="43.18" y="71.12"/>
+<instance part="C12" gate="M1" x="43.18" y="66.04"/>
+<instance part="C12" gate="M2" x="43.18" y="60.96"/>
+<instance part="C12" gate="N1" x="43.18" y="55.88"/>
+<instance part="C12" gate="N2" x="43.18" y="50.8"/>
+<instance part="C12" gate="P1" x="43.18" y="45.72"/>
+<instance part="C12" gate="P2" x="43.18" y="40.64"/>
+<instance part="C12" gate="R1" x="43.18" y="35.56"/>
+<instance part="C12" gate="R2" x="43.18" y="30.48"/>
+<instance part="C12" gate="S1" x="43.18" y="25.4"/>
+<instance part="C12" gate="S2" x="43.18" y="20.32"/>
+<instance part="C12" gate="T1" x="43.18" y="15.24"/>
+<instance part="C12" gate="T2" x="43.18" y="10.16"/>
+<instance part="C12" gate="U1" x="43.18" y="5.08"/>
+<instance part="C12" gate="U2" x="43.18" y="0"/>
+<instance part="C12" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C12" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C11" gate="A1" x="17.78" y="76.2"/>
+<instance part="C11" gate="A2" x="17.78" y="71.12"/>
+<instance part="C11" gate="B1" x="17.78" y="66.04"/>
+<instance part="C11" gate="B2" x="17.78" y="60.96"/>
+<instance part="C11" gate="C1" x="17.78" y="55.88"/>
+<instance part="C11" gate="C2" x="17.78" y="50.8"/>
+<instance part="C11" gate="D1" x="17.78" y="45.72"/>
+<instance part="C11" gate="D2" x="17.78" y="40.64"/>
+<instance part="C11" gate="E1" x="17.78" y="35.56"/>
+<instance part="C11" gate="E2" x="17.78" y="30.48"/>
+<instance part="C11" gate="F1" x="17.78" y="25.4"/>
+<instance part="C11" gate="F2" x="17.78" y="20.32"/>
+<instance part="C11" gate="H1" x="17.78" y="15.24"/>
+<instance part="C11" gate="H2" x="17.78" y="10.16"/>
+<instance part="C11" gate="J1" x="17.78" y="5.08"/>
+<instance part="C11" gate="J2" x="17.78" y="0"/>
+<instance part="C11" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C11" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C11" gate="L1" x="43.18" y="76.2"/>
+<instance part="C11" gate="L2" x="43.18" y="71.12"/>
+<instance part="C11" gate="M1" x="43.18" y="66.04"/>
+<instance part="C11" gate="M2" x="43.18" y="60.96"/>
+<instance part="C11" gate="N1" x="43.18" y="55.88"/>
+<instance part="C11" gate="N2" x="43.18" y="50.8"/>
+<instance part="C11" gate="P1" x="43.18" y="45.72"/>
+<instance part="C11" gate="P2" x="43.18" y="40.64"/>
+<instance part="C11" gate="R1" x="43.18" y="35.56"/>
+<instance part="C11" gate="R2" x="43.18" y="30.48"/>
+<instance part="C11" gate="S1" x="43.18" y="25.4"/>
+<instance part="C11" gate="S2" x="43.18" y="20.32"/>
+<instance part="C11" gate="T1" x="43.18" y="15.24"/>
+<instance part="C11" gate="T2" x="43.18" y="10.16"/>
+<instance part="C11" gate="U1" x="43.18" y="5.08"/>
+<instance part="C11" gate="U2" x="43.18" y="0"/>
+<instance part="C11" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C11" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C10" gate="A1" x="17.78" y="76.2"/>
+<instance part="C10" gate="A2" x="17.78" y="71.12"/>
+<instance part="C10" gate="B1" x="17.78" y="66.04"/>
+<instance part="C10" gate="B2" x="17.78" y="60.96"/>
+<instance part="C10" gate="C1" x="17.78" y="55.88"/>
+<instance part="C10" gate="C2" x="17.78" y="50.8"/>
+<instance part="C10" gate="D1" x="17.78" y="45.72"/>
+<instance part="C10" gate="D2" x="17.78" y="40.64"/>
+<instance part="C10" gate="E1" x="17.78" y="35.56"/>
+<instance part="C10" gate="E2" x="17.78" y="30.48"/>
+<instance part="C10" gate="F1" x="17.78" y="25.4"/>
+<instance part="C10" gate="F2" x="17.78" y="20.32"/>
+<instance part="C10" gate="H1" x="17.78" y="15.24"/>
+<instance part="C10" gate="H2" x="17.78" y="10.16"/>
+<instance part="C10" gate="J1" x="17.78" y="5.08"/>
+<instance part="C10" gate="J2" x="17.78" y="0"/>
+<instance part="C10" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C10" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C10" gate="L1" x="43.18" y="76.2"/>
+<instance part="C10" gate="L2" x="43.18" y="71.12"/>
+<instance part="C10" gate="M1" x="43.18" y="66.04"/>
+<instance part="C10" gate="M2" x="43.18" y="60.96"/>
+<instance part="C10" gate="N1" x="43.18" y="55.88"/>
+<instance part="C10" gate="N2" x="43.18" y="50.8"/>
+<instance part="C10" gate="P1" x="43.18" y="45.72"/>
+<instance part="C10" gate="P2" x="43.18" y="40.64"/>
+<instance part="C10" gate="R1" x="43.18" y="35.56"/>
+<instance part="C10" gate="R2" x="43.18" y="30.48"/>
+<instance part="C10" gate="S1" x="43.18" y="25.4"/>
+<instance part="C10" gate="S2" x="43.18" y="20.32"/>
+<instance part="C10" gate="T1" x="43.18" y="15.24"/>
+<instance part="C10" gate="T2" x="43.18" y="10.16"/>
+<instance part="C10" gate="U1" x="43.18" y="5.08"/>
+<instance part="C10" gate="U2" x="43.18" y="0"/>
+<instance part="C10" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C10" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C09" gate="A1" x="17.78" y="76.2"/>
+<instance part="C09" gate="A2" x="17.78" y="71.12"/>
+<instance part="C09" gate="B1" x="17.78" y="66.04"/>
+<instance part="C09" gate="B2" x="17.78" y="60.96"/>
+<instance part="C09" gate="C1" x="17.78" y="55.88"/>
+<instance part="C09" gate="C2" x="17.78" y="50.8"/>
+<instance part="C09" gate="D1" x="17.78" y="45.72"/>
+<instance part="C09" gate="D2" x="17.78" y="40.64"/>
+<instance part="C09" gate="E1" x="17.78" y="35.56"/>
+<instance part="C09" gate="E2" x="17.78" y="30.48"/>
+<instance part="C09" gate="F1" x="17.78" y="25.4"/>
+<instance part="C09" gate="F2" x="17.78" y="20.32"/>
+<instance part="C09" gate="H1" x="17.78" y="15.24"/>
+<instance part="C09" gate="H2" x="17.78" y="10.16"/>
+<instance part="C09" gate="J1" x="17.78" y="5.08"/>
+<instance part="C09" gate="J2" x="17.78" y="0"/>
+<instance part="C09" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C09" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C09" gate="L1" x="43.18" y="76.2"/>
+<instance part="C09" gate="L2" x="43.18" y="71.12"/>
+<instance part="C09" gate="M1" x="43.18" y="66.04"/>
+<instance part="C09" gate="M2" x="43.18" y="60.96"/>
+<instance part="C09" gate="N1" x="43.18" y="55.88"/>
+<instance part="C09" gate="N2" x="43.18" y="50.8"/>
+<instance part="C09" gate="P1" x="43.18" y="45.72"/>
+<instance part="C09" gate="P2" x="43.18" y="40.64"/>
+<instance part="C09" gate="R1" x="43.18" y="35.56"/>
+<instance part="C09" gate="R2" x="43.18" y="30.48"/>
+<instance part="C09" gate="S1" x="43.18" y="25.4"/>
+<instance part="C09" gate="S2" x="43.18" y="20.32"/>
+<instance part="C09" gate="T1" x="43.18" y="15.24"/>
+<instance part="C09" gate="T2" x="43.18" y="10.16"/>
+<instance part="C09" gate="U1" x="43.18" y="5.08"/>
+<instance part="C09" gate="U2" x="43.18" y="0"/>
+<instance part="C09" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C09" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C08" gate="A1" x="17.78" y="76.2"/>
+<instance part="C08" gate="A2" x="17.78" y="71.12"/>
+<instance part="C08" gate="B1" x="17.78" y="66.04"/>
+<instance part="C08" gate="B2" x="17.78" y="60.96"/>
+<instance part="C08" gate="C1" x="17.78" y="55.88"/>
+<instance part="C08" gate="C2" x="17.78" y="50.8"/>
+<instance part="C08" gate="D1" x="17.78" y="45.72"/>
+<instance part="C08" gate="D2" x="17.78" y="40.64"/>
+<instance part="C08" gate="E1" x="17.78" y="35.56"/>
+<instance part="C08" gate="E2" x="17.78" y="30.48"/>
+<instance part="C08" gate="F1" x="17.78" y="25.4"/>
+<instance part="C08" gate="F2" x="17.78" y="20.32"/>
+<instance part="C08" gate="H1" x="17.78" y="15.24"/>
+<instance part="C08" gate="H2" x="17.78" y="10.16"/>
+<instance part="C08" gate="J1" x="17.78" y="5.08"/>
+<instance part="C08" gate="J2" x="17.78" y="0"/>
+<instance part="C08" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C08" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C08" gate="L1" x="43.18" y="76.2"/>
+<instance part="C08" gate="L2" x="43.18" y="71.12"/>
+<instance part="C08" gate="M1" x="43.18" y="66.04"/>
+<instance part="C08" gate="M2" x="43.18" y="60.96"/>
+<instance part="C08" gate="N1" x="43.18" y="55.88"/>
+<instance part="C08" gate="N2" x="43.18" y="50.8"/>
+<instance part="C08" gate="P1" x="43.18" y="45.72"/>
+<instance part="C08" gate="P2" x="43.18" y="40.64"/>
+<instance part="C08" gate="R1" x="43.18" y="35.56"/>
+<instance part="C08" gate="R2" x="43.18" y="30.48"/>
+<instance part="C08" gate="S1" x="43.18" y="25.4"/>
+<instance part="C08" gate="S2" x="43.18" y="20.32"/>
+<instance part="C08" gate="T1" x="43.18" y="15.24"/>
+<instance part="C08" gate="T2" x="43.18" y="10.16"/>
+<instance part="C08" gate="U1" x="43.18" y="5.08"/>
+<instance part="C08" gate="U2" x="43.18" y="0"/>
+<instance part="C08" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C08" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C07" gate="A1" x="17.78" y="76.2"/>
+<instance part="C07" gate="A2" x="17.78" y="71.12"/>
+<instance part="C07" gate="B1" x="17.78" y="66.04"/>
+<instance part="C07" gate="B2" x="17.78" y="60.96"/>
+<instance part="C07" gate="C1" x="17.78" y="55.88"/>
+<instance part="C07" gate="C2" x="17.78" y="50.8"/>
+<instance part="C07" gate="D1" x="17.78" y="45.72"/>
+<instance part="C07" gate="D2" x="17.78" y="40.64"/>
+<instance part="C07" gate="E1" x="17.78" y="35.56"/>
+<instance part="C07" gate="E2" x="17.78" y="30.48"/>
+<instance part="C07" gate="F1" x="17.78" y="25.4"/>
+<instance part="C07" gate="F2" x="17.78" y="20.32"/>
+<instance part="C07" gate="H1" x="17.78" y="15.24"/>
+<instance part="C07" gate="H2" x="17.78" y="10.16"/>
+<instance part="C07" gate="J1" x="17.78" y="5.08"/>
+<instance part="C07" gate="J2" x="17.78" y="0"/>
+<instance part="C07" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C07" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C07" gate="L1" x="43.18" y="76.2"/>
+<instance part="C07" gate="L2" x="43.18" y="71.12"/>
+<instance part="C07" gate="M1" x="43.18" y="66.04"/>
+<instance part="C07" gate="M2" x="43.18" y="60.96"/>
+<instance part="C07" gate="N1" x="43.18" y="55.88"/>
+<instance part="C07" gate="N2" x="43.18" y="50.8"/>
+<instance part="C07" gate="P1" x="43.18" y="45.72"/>
+<instance part="C07" gate="P2" x="43.18" y="40.64"/>
+<instance part="C07" gate="R1" x="43.18" y="35.56"/>
+<instance part="C07" gate="R2" x="43.18" y="30.48"/>
+<instance part="C07" gate="S1" x="43.18" y="25.4"/>
+<instance part="C07" gate="S2" x="43.18" y="20.32"/>
+<instance part="C07" gate="T1" x="43.18" y="15.24"/>
+<instance part="C07" gate="T2" x="43.18" y="10.16"/>
+<instance part="C07" gate="U1" x="43.18" y="5.08"/>
+<instance part="C07" gate="U2" x="43.18" y="0"/>
+<instance part="C07" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C07" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C06" gate="A1" x="17.78" y="76.2"/>
+<instance part="C06" gate="A2" x="17.78" y="71.12"/>
+<instance part="C06" gate="B1" x="17.78" y="66.04"/>
+<instance part="C06" gate="B2" x="17.78" y="60.96"/>
+<instance part="C06" gate="C1" x="17.78" y="55.88"/>
+<instance part="C06" gate="C2" x="17.78" y="50.8"/>
+<instance part="C06" gate="D1" x="17.78" y="45.72"/>
+<instance part="C06" gate="D2" x="17.78" y="40.64"/>
+<instance part="C06" gate="E1" x="17.78" y="35.56"/>
+<instance part="C06" gate="E2" x="17.78" y="30.48"/>
+<instance part="C06" gate="F1" x="17.78" y="25.4"/>
+<instance part="C06" gate="F2" x="17.78" y="20.32"/>
+<instance part="C06" gate="H1" x="17.78" y="15.24"/>
+<instance part="C06" gate="H2" x="17.78" y="10.16"/>
+<instance part="C06" gate="J1" x="17.78" y="5.08"/>
+<instance part="C06" gate="J2" x="17.78" y="0"/>
+<instance part="C06" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C06" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C06" gate="L1" x="43.18" y="76.2"/>
+<instance part="C06" gate="L2" x="43.18" y="71.12"/>
+<instance part="C06" gate="M1" x="43.18" y="66.04"/>
+<instance part="C06" gate="M2" x="43.18" y="60.96"/>
+<instance part="C06" gate="N1" x="43.18" y="55.88"/>
+<instance part="C06" gate="N2" x="43.18" y="50.8"/>
+<instance part="C06" gate="P1" x="43.18" y="45.72"/>
+<instance part="C06" gate="P2" x="43.18" y="40.64"/>
+<instance part="C06" gate="R1" x="43.18" y="35.56"/>
+<instance part="C06" gate="R2" x="43.18" y="30.48"/>
+<instance part="C06" gate="S1" x="43.18" y="25.4"/>
+<instance part="C06" gate="S2" x="43.18" y="20.32"/>
+<instance part="C06" gate="T1" x="43.18" y="15.24"/>
+<instance part="C06" gate="T2" x="43.18" y="10.16"/>
+<instance part="C06" gate="U1" x="43.18" y="5.08"/>
+<instance part="C06" gate="U2" x="43.18" y="0"/>
+<instance part="C06" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C06" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C05" gate="A1" x="17.78" y="76.2"/>
+<instance part="C05" gate="A2" x="17.78" y="71.12"/>
+<instance part="C05" gate="B1" x="17.78" y="66.04"/>
+<instance part="C05" gate="B2" x="17.78" y="60.96"/>
+<instance part="C05" gate="C1" x="17.78" y="55.88"/>
+<instance part="C05" gate="C2" x="17.78" y="50.8"/>
+<instance part="C05" gate="D1" x="17.78" y="45.72"/>
+<instance part="C05" gate="D2" x="17.78" y="40.64"/>
+<instance part="C05" gate="E1" x="17.78" y="35.56"/>
+<instance part="C05" gate="E2" x="17.78" y="30.48"/>
+<instance part="C05" gate="F1" x="17.78" y="25.4"/>
+<instance part="C05" gate="F2" x="17.78" y="20.32"/>
+<instance part="C05" gate="H1" x="17.78" y="15.24"/>
+<instance part="C05" gate="H2" x="17.78" y="10.16"/>
+<instance part="C05" gate="J1" x="17.78" y="5.08"/>
+<instance part="C05" gate="J2" x="17.78" y="0"/>
+<instance part="C05" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C05" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C05" gate="L1" x="43.18" y="76.2"/>
+<instance part="C05" gate="L2" x="43.18" y="71.12"/>
+<instance part="C05" gate="M1" x="43.18" y="66.04"/>
+<instance part="C05" gate="M2" x="43.18" y="60.96"/>
+<instance part="C05" gate="N1" x="43.18" y="55.88"/>
+<instance part="C05" gate="N2" x="43.18" y="50.8"/>
+<instance part="C05" gate="P1" x="43.18" y="45.72"/>
+<instance part="C05" gate="P2" x="43.18" y="40.64"/>
+<instance part="C05" gate="R1" x="43.18" y="35.56"/>
+<instance part="C05" gate="R2" x="43.18" y="30.48"/>
+<instance part="C05" gate="S1" x="43.18" y="25.4"/>
+<instance part="C05" gate="S2" x="43.18" y="20.32"/>
+<instance part="C05" gate="T1" x="43.18" y="15.24"/>
+<instance part="C05" gate="T2" x="43.18" y="10.16"/>
+<instance part="C05" gate="U1" x="43.18" y="5.08"/>
+<instance part="C05" gate="U2" x="43.18" y="0"/>
+<instance part="C05" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C05" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C04" gate="A1" x="17.78" y="76.2"/>
+<instance part="C04" gate="A2" x="17.78" y="71.12"/>
+<instance part="C04" gate="B1" x="17.78" y="66.04"/>
+<instance part="C04" gate="B2" x="17.78" y="60.96"/>
+<instance part="C04" gate="C1" x="17.78" y="55.88"/>
+<instance part="C04" gate="C2" x="17.78" y="50.8"/>
+<instance part="C04" gate="D1" x="17.78" y="45.72"/>
+<instance part="C04" gate="D2" x="17.78" y="40.64"/>
+<instance part="C04" gate="E1" x="17.78" y="35.56"/>
+<instance part="C04" gate="E2" x="17.78" y="30.48"/>
+<instance part="C04" gate="F1" x="17.78" y="25.4"/>
+<instance part="C04" gate="F2" x="17.78" y="20.32"/>
+<instance part="C04" gate="H1" x="17.78" y="15.24"/>
+<instance part="C04" gate="H2" x="17.78" y="10.16"/>
+<instance part="C04" gate="J1" x="17.78" y="5.08"/>
+<instance part="C04" gate="J2" x="17.78" y="0"/>
+<instance part="C04" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C04" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C04" gate="L1" x="43.18" y="76.2"/>
+<instance part="C04" gate="L2" x="43.18" y="71.12"/>
+<instance part="C04" gate="M1" x="43.18" y="66.04"/>
+<instance part="C04" gate="M2" x="43.18" y="60.96"/>
+<instance part="C04" gate="N1" x="43.18" y="55.88"/>
+<instance part="C04" gate="N2" x="43.18" y="50.8"/>
+<instance part="C04" gate="P1" x="43.18" y="45.72"/>
+<instance part="C04" gate="P2" x="43.18" y="40.64"/>
+<instance part="C04" gate="R1" x="43.18" y="35.56"/>
+<instance part="C04" gate="R2" x="43.18" y="30.48"/>
+<instance part="C04" gate="S1" x="43.18" y="25.4"/>
+<instance part="C04" gate="S2" x="43.18" y="20.32"/>
+<instance part="C04" gate="T1" x="43.18" y="15.24"/>
+<instance part="C04" gate="T2" x="43.18" y="10.16"/>
+<instance part="C04" gate="U1" x="43.18" y="5.08"/>
+<instance part="C04" gate="U2" x="43.18" y="0"/>
+<instance part="C04" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C04" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C03" gate="A1" x="17.78" y="76.2"/>
+<instance part="C03" gate="A2" x="17.78" y="71.12"/>
+<instance part="C03" gate="B1" x="17.78" y="66.04"/>
+<instance part="C03" gate="B2" x="17.78" y="60.96"/>
+<instance part="C03" gate="C1" x="17.78" y="55.88"/>
+<instance part="C03" gate="C2" x="17.78" y="50.8"/>
+<instance part="C03" gate="D1" x="17.78" y="45.72"/>
+<instance part="C03" gate="D2" x="17.78" y="40.64"/>
+<instance part="C03" gate="E1" x="17.78" y="35.56"/>
+<instance part="C03" gate="E2" x="17.78" y="30.48"/>
+<instance part="C03" gate="F1" x="17.78" y="25.4"/>
+<instance part="C03" gate="F2" x="17.78" y="20.32"/>
+<instance part="C03" gate="H1" x="17.78" y="15.24"/>
+<instance part="C03" gate="H2" x="17.78" y="10.16"/>
+<instance part="C03" gate="J1" x="17.78" y="5.08"/>
+<instance part="C03" gate="J2" x="17.78" y="0"/>
+<instance part="C03" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C03" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C03" gate="L1" x="43.18" y="76.2"/>
+<instance part="C03" gate="L2" x="43.18" y="71.12"/>
+<instance part="C03" gate="M1" x="43.18" y="66.04"/>
+<instance part="C03" gate="M2" x="43.18" y="60.96"/>
+<instance part="C03" gate="N1" x="43.18" y="55.88"/>
+<instance part="C03" gate="N2" x="43.18" y="50.8"/>
+<instance part="C03" gate="P1" x="43.18" y="45.72"/>
+<instance part="C03" gate="P2" x="43.18" y="40.64"/>
+<instance part="C03" gate="R1" x="43.18" y="35.56"/>
+<instance part="C03" gate="R2" x="43.18" y="30.48"/>
+<instance part="C03" gate="S1" x="43.18" y="25.4"/>
+<instance part="C03" gate="S2" x="43.18" y="20.32"/>
+<instance part="C03" gate="T1" x="43.18" y="15.24"/>
+<instance part="C03" gate="T2" x="43.18" y="10.16"/>
+<instance part="C03" gate="U1" x="43.18" y="5.08"/>
+<instance part="C03" gate="U2" x="43.18" y="0"/>
+<instance part="C03" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C03" gate="V2" x="43.18" y="-10.16"/>
+<instance part="C02" gate="A1" x="17.78" y="76.2"/>
+<instance part="C02" gate="A2" x="17.78" y="71.12"/>
+<instance part="C02" gate="B1" x="17.78" y="66.04"/>
+<instance part="C02" gate="B2" x="17.78" y="60.96"/>
+<instance part="C02" gate="C1" x="17.78" y="55.88"/>
+<instance part="C02" gate="C2" x="17.78" y="50.8"/>
+<instance part="C02" gate="D1" x="17.78" y="45.72"/>
+<instance part="C02" gate="D2" x="17.78" y="40.64"/>
+<instance part="C02" gate="E1" x="17.78" y="35.56"/>
+<instance part="C02" gate="E2" x="17.78" y="30.48"/>
+<instance part="C02" gate="F1" x="17.78" y="25.4"/>
+<instance part="C02" gate="F2" x="17.78" y="20.32"/>
+<instance part="C02" gate="H1" x="17.78" y="15.24"/>
+<instance part="C02" gate="H2" x="17.78" y="10.16"/>
+<instance part="C02" gate="J1" x="17.78" y="5.08"/>
+<instance part="C02" gate="J2" x="17.78" y="0"/>
+<instance part="C02" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C02" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C02" gate="L1" x="43.18" y="76.2"/>
+<instance part="C02" gate="L2" x="43.18" y="71.12"/>
+<instance part="C02" gate="M1" x="43.18" y="66.04"/>
+<instance part="C02" gate="M2" x="43.18" y="60.96"/>
+<instance part="C02" gate="N1" x="43.18" y="55.88"/>
+<instance part="C02" gate="N2" x="43.18" y="50.8"/>
+<instance part="C02" gate="P1" x="43.18" y="45.72"/>
+<instance part="C02" gate="P2" x="43.18" y="40.64"/>
+<instance part="C02" gate="R1" x="43.18" y="35.56"/>
+<instance part="C02" gate="R2" x="43.18" y="30.48"/>
+<instance part="C02" gate="S1" x="43.18" y="25.4"/>
+<instance part="C02" gate="S2" x="43.18" y="20.32"/>
+<instance part="C02" gate="T1" x="43.18" y="15.24"/>
+<instance part="C02" gate="T2" x="43.18" y="10.16"/>
+<instance part="C02" gate="U1" x="43.18" y="5.08"/>
+<instance part="C02" gate="U2" x="43.18" y="0"/>
+<instance part="C02" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C02" gate="V2" x="43.18" y="-10.16"/>
+<instance part="D14" gate="A1" x="73.66" y="76.2"/>
+<instance part="D14" gate="A2" x="73.66" y="71.12"/>
+<instance part="D14" gate="B1" x="73.66" y="66.04"/>
+<instance part="D14" gate="B2" x="73.66" y="60.96"/>
+<instance part="D14" gate="C1" x="73.66" y="55.88"/>
+<instance part="D14" gate="C2" x="73.66" y="50.8"/>
+<instance part="D14" gate="D1" x="73.66" y="45.72"/>
+<instance part="D14" gate="D2" x="73.66" y="40.64"/>
+<instance part="D14" gate="E1" x="73.66" y="35.56"/>
+<instance part="D14" gate="E2" x="73.66" y="30.48"/>
+<instance part="D14" gate="F1" x="73.66" y="25.4"/>
+<instance part="D14" gate="F2" x="73.66" y="20.32"/>
+<instance part="D14" gate="H1" x="73.66" y="15.24"/>
+<instance part="D14" gate="H2" x="73.66" y="10.16"/>
+<instance part="D14" gate="J1" x="73.66" y="5.08"/>
+<instance part="D14" gate="J2" x="73.66" y="0"/>
+<instance part="D14" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D14" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D14" gate="L1" x="99.06" y="76.2"/>
+<instance part="D14" gate="L2" x="99.06" y="71.12"/>
+<instance part="D14" gate="M1" x="99.06" y="66.04"/>
+<instance part="D14" gate="M2" x="99.06" y="60.96"/>
+<instance part="D14" gate="N1" x="99.06" y="55.88"/>
+<instance part="D14" gate="N2" x="99.06" y="50.8"/>
+<instance part="D14" gate="P1" x="99.06" y="45.72"/>
+<instance part="D14" gate="P2" x="99.06" y="40.64"/>
+<instance part="D14" gate="R1" x="99.06" y="35.56"/>
+<instance part="D14" gate="R2" x="99.06" y="30.48"/>
+<instance part="D14" gate="S1" x="99.06" y="25.4"/>
+<instance part="D14" gate="S2" x="99.06" y="20.32"/>
+<instance part="D14" gate="T1" x="99.06" y="15.24"/>
+<instance part="D14" gate="T2" x="99.06" y="10.16"/>
+<instance part="D14" gate="U1" x="99.06" y="5.08"/>
+<instance part="D14" gate="U2" x="99.06" y="0"/>
+<instance part="D14" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D14" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D13" gate="A1" x="73.66" y="76.2"/>
+<instance part="D13" gate="A2" x="73.66" y="71.12"/>
+<instance part="D13" gate="B1" x="73.66" y="66.04"/>
+<instance part="D13" gate="B2" x="73.66" y="60.96"/>
+<instance part="D13" gate="C1" x="73.66" y="55.88"/>
+<instance part="D13" gate="C2" x="73.66" y="50.8"/>
+<instance part="D13" gate="D1" x="73.66" y="45.72"/>
+<instance part="D13" gate="D2" x="73.66" y="40.64"/>
+<instance part="D13" gate="E1" x="73.66" y="35.56"/>
+<instance part="D13" gate="E2" x="73.66" y="30.48"/>
+<instance part="D13" gate="F1" x="73.66" y="25.4"/>
+<instance part="D13" gate="F2" x="73.66" y="20.32"/>
+<instance part="D13" gate="H1" x="73.66" y="15.24"/>
+<instance part="D13" gate="H2" x="73.66" y="10.16"/>
+<instance part="D13" gate="J1" x="73.66" y="5.08"/>
+<instance part="D13" gate="J2" x="73.66" y="0"/>
+<instance part="D13" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D13" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D13" gate="L1" x="99.06" y="76.2"/>
+<instance part="D13" gate="L2" x="99.06" y="71.12"/>
+<instance part="D13" gate="M1" x="99.06" y="66.04"/>
+<instance part="D13" gate="M2" x="99.06" y="60.96"/>
+<instance part="D13" gate="N1" x="99.06" y="55.88"/>
+<instance part="D13" gate="N2" x="99.06" y="50.8"/>
+<instance part="D13" gate="P1" x="99.06" y="45.72"/>
+<instance part="D13" gate="P2" x="99.06" y="40.64"/>
+<instance part="D13" gate="R1" x="99.06" y="35.56"/>
+<instance part="D13" gate="R2" x="99.06" y="30.48"/>
+<instance part="D13" gate="S1" x="99.06" y="25.4"/>
+<instance part="D13" gate="S2" x="99.06" y="20.32"/>
+<instance part="D13" gate="T1" x="99.06" y="15.24"/>
+<instance part="D13" gate="T2" x="99.06" y="10.16"/>
+<instance part="D13" gate="U1" x="99.06" y="5.08"/>
+<instance part="D13" gate="U2" x="99.06" y="0"/>
+<instance part="D13" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D13" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D12" gate="A1" x="73.66" y="76.2"/>
+<instance part="D12" gate="A2" x="73.66" y="71.12"/>
+<instance part="D12" gate="B1" x="73.66" y="66.04"/>
+<instance part="D12" gate="B2" x="73.66" y="60.96"/>
+<instance part="D12" gate="C1" x="73.66" y="55.88"/>
+<instance part="D12" gate="C2" x="73.66" y="50.8"/>
+<instance part="D12" gate="D1" x="73.66" y="45.72"/>
+<instance part="D12" gate="D2" x="73.66" y="40.64"/>
+<instance part="D12" gate="E1" x="73.66" y="35.56"/>
+<instance part="D12" gate="E2" x="73.66" y="30.48"/>
+<instance part="D12" gate="F1" x="73.66" y="25.4"/>
+<instance part="D12" gate="F2" x="73.66" y="20.32"/>
+<instance part="D12" gate="H1" x="73.66" y="15.24"/>
+<instance part="D12" gate="H2" x="73.66" y="10.16"/>
+<instance part="D12" gate="J1" x="73.66" y="5.08"/>
+<instance part="D12" gate="J2" x="73.66" y="0"/>
+<instance part="D12" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D12" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D12" gate="L1" x="99.06" y="76.2"/>
+<instance part="D12" gate="L2" x="99.06" y="71.12"/>
+<instance part="D12" gate="M1" x="99.06" y="66.04"/>
+<instance part="D12" gate="M2" x="99.06" y="60.96"/>
+<instance part="D12" gate="N1" x="99.06" y="55.88"/>
+<instance part="D12" gate="N2" x="99.06" y="50.8"/>
+<instance part="D12" gate="P1" x="99.06" y="45.72"/>
+<instance part="D12" gate="P2" x="99.06" y="40.64"/>
+<instance part="D12" gate="R1" x="99.06" y="35.56"/>
+<instance part="D12" gate="R2" x="99.06" y="30.48"/>
+<instance part="D12" gate="S1" x="99.06" y="25.4"/>
+<instance part="D12" gate="S2" x="99.06" y="20.32"/>
+<instance part="D12" gate="T1" x="99.06" y="15.24"/>
+<instance part="D12" gate="T2" x="99.06" y="10.16"/>
+<instance part="D12" gate="U1" x="99.06" y="5.08"/>
+<instance part="D12" gate="U2" x="99.06" y="0"/>
+<instance part="D12" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D12" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D11" gate="A1" x="73.66" y="76.2"/>
+<instance part="D11" gate="A2" x="73.66" y="71.12"/>
+<instance part="D11" gate="B1" x="73.66" y="66.04"/>
+<instance part="D11" gate="B2" x="73.66" y="60.96"/>
+<instance part="D11" gate="C1" x="73.66" y="55.88"/>
+<instance part="D11" gate="C2" x="73.66" y="50.8"/>
+<instance part="D11" gate="D1" x="73.66" y="45.72"/>
+<instance part="D11" gate="D2" x="73.66" y="40.64"/>
+<instance part="D11" gate="E1" x="73.66" y="35.56"/>
+<instance part="D11" gate="E2" x="73.66" y="30.48"/>
+<instance part="D11" gate="F1" x="73.66" y="25.4"/>
+<instance part="D11" gate="F2" x="73.66" y="20.32"/>
+<instance part="D11" gate="H1" x="73.66" y="15.24"/>
+<instance part="D11" gate="H2" x="73.66" y="10.16"/>
+<instance part="D11" gate="J1" x="73.66" y="5.08"/>
+<instance part="D11" gate="J2" x="73.66" y="0"/>
+<instance part="D11" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D11" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D11" gate="L1" x="99.06" y="76.2"/>
+<instance part="D11" gate="L2" x="99.06" y="71.12"/>
+<instance part="D11" gate="M1" x="99.06" y="66.04"/>
+<instance part="D11" gate="M2" x="99.06" y="60.96"/>
+<instance part="D11" gate="N1" x="99.06" y="55.88"/>
+<instance part="D11" gate="N2" x="99.06" y="50.8"/>
+<instance part="D11" gate="P1" x="99.06" y="45.72"/>
+<instance part="D11" gate="P2" x="99.06" y="40.64"/>
+<instance part="D11" gate="R1" x="99.06" y="35.56"/>
+<instance part="D11" gate="R2" x="99.06" y="30.48"/>
+<instance part="D11" gate="S1" x="99.06" y="25.4"/>
+<instance part="D11" gate="S2" x="99.06" y="20.32"/>
+<instance part="D11" gate="T1" x="99.06" y="15.24"/>
+<instance part="D11" gate="T2" x="99.06" y="10.16"/>
+<instance part="D11" gate="U1" x="99.06" y="5.08"/>
+<instance part="D11" gate="U2" x="99.06" y="0"/>
+<instance part="D11" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D11" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D10" gate="A1" x="73.66" y="76.2"/>
+<instance part="D10" gate="A2" x="73.66" y="71.12"/>
+<instance part="D10" gate="B1" x="73.66" y="66.04"/>
+<instance part="D10" gate="B2" x="73.66" y="60.96"/>
+<instance part="D10" gate="C1" x="73.66" y="55.88"/>
+<instance part="D10" gate="C2" x="73.66" y="50.8"/>
+<instance part="D10" gate="D1" x="73.66" y="45.72"/>
+<instance part="D10" gate="D2" x="73.66" y="40.64"/>
+<instance part="D10" gate="E1" x="73.66" y="35.56"/>
+<instance part="D10" gate="E2" x="73.66" y="30.48"/>
+<instance part="D10" gate="F1" x="73.66" y="25.4"/>
+<instance part="D10" gate="F2" x="73.66" y="20.32"/>
+<instance part="D10" gate="H1" x="73.66" y="15.24"/>
+<instance part="D10" gate="H2" x="73.66" y="10.16"/>
+<instance part="D10" gate="J1" x="73.66" y="5.08"/>
+<instance part="D10" gate="J2" x="73.66" y="0"/>
+<instance part="D10" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D10" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D10" gate="L1" x="99.06" y="76.2"/>
+<instance part="D10" gate="L2" x="99.06" y="71.12"/>
+<instance part="D10" gate="M1" x="99.06" y="66.04"/>
+<instance part="D10" gate="M2" x="99.06" y="60.96"/>
+<instance part="D10" gate="N1" x="99.06" y="55.88"/>
+<instance part="D10" gate="N2" x="99.06" y="50.8"/>
+<instance part="D10" gate="P1" x="99.06" y="45.72"/>
+<instance part="D10" gate="P2" x="99.06" y="40.64"/>
+<instance part="D10" gate="R1" x="99.06" y="35.56"/>
+<instance part="D10" gate="R2" x="99.06" y="30.48"/>
+<instance part="D10" gate="S1" x="99.06" y="25.4"/>
+<instance part="D10" gate="S2" x="99.06" y="20.32"/>
+<instance part="D10" gate="T1" x="99.06" y="15.24"/>
+<instance part="D10" gate="T2" x="99.06" y="10.16"/>
+<instance part="D10" gate="U1" x="99.06" y="5.08"/>
+<instance part="D10" gate="U2" x="99.06" y="0"/>
+<instance part="D10" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D10" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D09" gate="A1" x="73.66" y="76.2"/>
+<instance part="D09" gate="A2" x="73.66" y="71.12"/>
+<instance part="D09" gate="B1" x="73.66" y="66.04"/>
+<instance part="D09" gate="B2" x="73.66" y="60.96"/>
+<instance part="D09" gate="C1" x="73.66" y="55.88"/>
+<instance part="D09" gate="C2" x="73.66" y="50.8"/>
+<instance part="D09" gate="D1" x="73.66" y="45.72"/>
+<instance part="D09" gate="D2" x="73.66" y="40.64"/>
+<instance part="D09" gate="E1" x="73.66" y="35.56"/>
+<instance part="D09" gate="E2" x="73.66" y="30.48"/>
+<instance part="D09" gate="F1" x="73.66" y="25.4"/>
+<instance part="D09" gate="F2" x="73.66" y="20.32"/>
+<instance part="D09" gate="H1" x="73.66" y="15.24"/>
+<instance part="D09" gate="H2" x="73.66" y="10.16"/>
+<instance part="D09" gate="J1" x="73.66" y="5.08"/>
+<instance part="D09" gate="J2" x="73.66" y="0"/>
+<instance part="D09" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D09" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D09" gate="L1" x="99.06" y="76.2"/>
+<instance part="D09" gate="L2" x="99.06" y="71.12"/>
+<instance part="D09" gate="M1" x="99.06" y="66.04"/>
+<instance part="D09" gate="M2" x="99.06" y="60.96"/>
+<instance part="D09" gate="N1" x="99.06" y="55.88"/>
+<instance part="D09" gate="N2" x="99.06" y="50.8"/>
+<instance part="D09" gate="P1" x="99.06" y="45.72"/>
+<instance part="D09" gate="P2" x="99.06" y="40.64"/>
+<instance part="D09" gate="R1" x="99.06" y="35.56"/>
+<instance part="D09" gate="R2" x="99.06" y="30.48"/>
+<instance part="D09" gate="S1" x="99.06" y="25.4"/>
+<instance part="D09" gate="S2" x="99.06" y="20.32"/>
+<instance part="D09" gate="T1" x="99.06" y="15.24"/>
+<instance part="D09" gate="T2" x="99.06" y="10.16"/>
+<instance part="D09" gate="U1" x="99.06" y="5.08"/>
+<instance part="D09" gate="U2" x="99.06" y="0"/>
+<instance part="D09" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D09" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D08" gate="A1" x="73.66" y="76.2"/>
+<instance part="D08" gate="A2" x="73.66" y="71.12"/>
+<instance part="D08" gate="B1" x="73.66" y="66.04"/>
+<instance part="D08" gate="B2" x="73.66" y="60.96"/>
+<instance part="D08" gate="C1" x="73.66" y="55.88"/>
+<instance part="D08" gate="C2" x="73.66" y="50.8"/>
+<instance part="D08" gate="D1" x="73.66" y="45.72"/>
+<instance part="D08" gate="D2" x="73.66" y="40.64"/>
+<instance part="D08" gate="E1" x="73.66" y="35.56"/>
+<instance part="D08" gate="E2" x="73.66" y="30.48"/>
+<instance part="D08" gate="F1" x="73.66" y="25.4"/>
+<instance part="D08" gate="F2" x="73.66" y="20.32"/>
+<instance part="D08" gate="H1" x="73.66" y="15.24"/>
+<instance part="D08" gate="H2" x="73.66" y="10.16"/>
+<instance part="D08" gate="J1" x="73.66" y="5.08"/>
+<instance part="D08" gate="J2" x="73.66" y="0"/>
+<instance part="D08" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D08" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D08" gate="L1" x="99.06" y="76.2"/>
+<instance part="D08" gate="L2" x="99.06" y="71.12"/>
+<instance part="D08" gate="M1" x="99.06" y="66.04"/>
+<instance part="D08" gate="M2" x="99.06" y="60.96"/>
+<instance part="D08" gate="N1" x="99.06" y="55.88"/>
+<instance part="D08" gate="N2" x="99.06" y="50.8"/>
+<instance part="D08" gate="P1" x="99.06" y="45.72"/>
+<instance part="D08" gate="P2" x="99.06" y="40.64"/>
+<instance part="D08" gate="R1" x="99.06" y="35.56"/>
+<instance part="D08" gate="R2" x="99.06" y="30.48"/>
+<instance part="D08" gate="S1" x="99.06" y="25.4"/>
+<instance part="D08" gate="S2" x="99.06" y="20.32"/>
+<instance part="D08" gate="T1" x="99.06" y="15.24"/>
+<instance part="D08" gate="T2" x="99.06" y="10.16"/>
+<instance part="D08" gate="U1" x="99.06" y="5.08"/>
+<instance part="D08" gate="U2" x="99.06" y="0"/>
+<instance part="D08" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D08" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D07" gate="A1" x="73.66" y="76.2"/>
+<instance part="D07" gate="A2" x="73.66" y="71.12"/>
+<instance part="D07" gate="B1" x="73.66" y="66.04"/>
+<instance part="D07" gate="B2" x="73.66" y="60.96"/>
+<instance part="D07" gate="C1" x="73.66" y="55.88"/>
+<instance part="D07" gate="C2" x="73.66" y="50.8"/>
+<instance part="D07" gate="D1" x="73.66" y="45.72"/>
+<instance part="D07" gate="D2" x="73.66" y="40.64"/>
+<instance part="D07" gate="E1" x="73.66" y="35.56"/>
+<instance part="D07" gate="E2" x="73.66" y="30.48"/>
+<instance part="D07" gate="F1" x="73.66" y="25.4"/>
+<instance part="D07" gate="F2" x="73.66" y="20.32"/>
+<instance part="D07" gate="H1" x="73.66" y="15.24"/>
+<instance part="D07" gate="H2" x="73.66" y="10.16"/>
+<instance part="D07" gate="J1" x="73.66" y="5.08"/>
+<instance part="D07" gate="J2" x="73.66" y="0"/>
+<instance part="D07" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D07" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D07" gate="L1" x="99.06" y="76.2"/>
+<instance part="D07" gate="L2" x="99.06" y="71.12"/>
+<instance part="D07" gate="M1" x="99.06" y="66.04"/>
+<instance part="D07" gate="M2" x="99.06" y="60.96"/>
+<instance part="D07" gate="N1" x="99.06" y="55.88"/>
+<instance part="D07" gate="N2" x="99.06" y="50.8"/>
+<instance part="D07" gate="P1" x="99.06" y="45.72"/>
+<instance part="D07" gate="P2" x="99.06" y="40.64"/>
+<instance part="D07" gate="R1" x="99.06" y="35.56"/>
+<instance part="D07" gate="R2" x="99.06" y="30.48"/>
+<instance part="D07" gate="S1" x="99.06" y="25.4"/>
+<instance part="D07" gate="S2" x="99.06" y="20.32"/>
+<instance part="D07" gate="T1" x="99.06" y="15.24"/>
+<instance part="D07" gate="T2" x="99.06" y="10.16"/>
+<instance part="D07" gate="U1" x="99.06" y="5.08"/>
+<instance part="D07" gate="U2" x="99.06" y="0"/>
+<instance part="D07" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D07" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D06" gate="A1" x="73.66" y="76.2"/>
+<instance part="D06" gate="A2" x="73.66" y="71.12"/>
+<instance part="D06" gate="B1" x="73.66" y="66.04"/>
+<instance part="D06" gate="B2" x="73.66" y="60.96"/>
+<instance part="D06" gate="C1" x="73.66" y="55.88"/>
+<instance part="D06" gate="C2" x="73.66" y="50.8"/>
+<instance part="D06" gate="D1" x="73.66" y="45.72"/>
+<instance part="D06" gate="D2" x="73.66" y="40.64"/>
+<instance part="D06" gate="E1" x="73.66" y="35.56"/>
+<instance part="D06" gate="E2" x="73.66" y="30.48"/>
+<instance part="D06" gate="F1" x="73.66" y="25.4"/>
+<instance part="D06" gate="F2" x="73.66" y="20.32"/>
+<instance part="D06" gate="H1" x="73.66" y="15.24"/>
+<instance part="D06" gate="H2" x="73.66" y="10.16"/>
+<instance part="D06" gate="J1" x="73.66" y="5.08"/>
+<instance part="D06" gate="J2" x="73.66" y="0"/>
+<instance part="D06" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D06" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D06" gate="L1" x="99.06" y="76.2"/>
+<instance part="D06" gate="L2" x="99.06" y="71.12"/>
+<instance part="D06" gate="M1" x="99.06" y="66.04"/>
+<instance part="D06" gate="M2" x="99.06" y="60.96"/>
+<instance part="D06" gate="N1" x="99.06" y="55.88"/>
+<instance part="D06" gate="N2" x="99.06" y="50.8"/>
+<instance part="D06" gate="P1" x="99.06" y="45.72"/>
+<instance part="D06" gate="P2" x="99.06" y="40.64"/>
+<instance part="D06" gate="R1" x="99.06" y="35.56"/>
+<instance part="D06" gate="R2" x="99.06" y="30.48"/>
+<instance part="D06" gate="S1" x="99.06" y="25.4"/>
+<instance part="D06" gate="S2" x="99.06" y="20.32"/>
+<instance part="D06" gate="T1" x="99.06" y="15.24"/>
+<instance part="D06" gate="T2" x="99.06" y="10.16"/>
+<instance part="D06" gate="U1" x="99.06" y="5.08"/>
+<instance part="D06" gate="U2" x="99.06" y="0"/>
+<instance part="D06" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D06" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D05" gate="A1" x="73.66" y="76.2"/>
+<instance part="D05" gate="A2" x="73.66" y="71.12"/>
+<instance part="D05" gate="B1" x="73.66" y="66.04"/>
+<instance part="D05" gate="B2" x="73.66" y="60.96"/>
+<instance part="D05" gate="C1" x="73.66" y="55.88"/>
+<instance part="D05" gate="C2" x="73.66" y="50.8"/>
+<instance part="D05" gate="D1" x="73.66" y="45.72"/>
+<instance part="D05" gate="D2" x="73.66" y="40.64"/>
+<instance part="D05" gate="E1" x="73.66" y="35.56"/>
+<instance part="D05" gate="E2" x="73.66" y="30.48"/>
+<instance part="D05" gate="F1" x="73.66" y="25.4"/>
+<instance part="D05" gate="F2" x="73.66" y="20.32"/>
+<instance part="D05" gate="H1" x="73.66" y="15.24"/>
+<instance part="D05" gate="H2" x="73.66" y="10.16"/>
+<instance part="D05" gate="J1" x="73.66" y="5.08"/>
+<instance part="D05" gate="J2" x="73.66" y="0"/>
+<instance part="D05" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D05" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D05" gate="L1" x="99.06" y="76.2"/>
+<instance part="D05" gate="L2" x="99.06" y="71.12"/>
+<instance part="D05" gate="M1" x="99.06" y="66.04"/>
+<instance part="D05" gate="M2" x="99.06" y="60.96"/>
+<instance part="D05" gate="N1" x="99.06" y="55.88"/>
+<instance part="D05" gate="N2" x="99.06" y="50.8"/>
+<instance part="D05" gate="P1" x="99.06" y="45.72"/>
+<instance part="D05" gate="P2" x="99.06" y="40.64"/>
+<instance part="D05" gate="R1" x="99.06" y="35.56"/>
+<instance part="D05" gate="R2" x="99.06" y="30.48"/>
+<instance part="D05" gate="S1" x="99.06" y="25.4"/>
+<instance part="D05" gate="S2" x="99.06" y="20.32"/>
+<instance part="D05" gate="T1" x="99.06" y="15.24"/>
+<instance part="D05" gate="T2" x="99.06" y="10.16"/>
+<instance part="D05" gate="U1" x="99.06" y="5.08"/>
+<instance part="D05" gate="U2" x="99.06" y="0"/>
+<instance part="D05" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D05" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D04" gate="A1" x="73.66" y="76.2"/>
+<instance part="D04" gate="A2" x="73.66" y="71.12"/>
+<instance part="D04" gate="B1" x="73.66" y="66.04"/>
+<instance part="D04" gate="B2" x="73.66" y="60.96"/>
+<instance part="D04" gate="C1" x="73.66" y="55.88"/>
+<instance part="D04" gate="C2" x="73.66" y="50.8"/>
+<instance part="D04" gate="D1" x="73.66" y="45.72"/>
+<instance part="D04" gate="D2" x="73.66" y="40.64"/>
+<instance part="D04" gate="E1" x="73.66" y="35.56"/>
+<instance part="D04" gate="E2" x="73.66" y="30.48"/>
+<instance part="D04" gate="F1" x="73.66" y="25.4"/>
+<instance part="D04" gate="F2" x="73.66" y="20.32"/>
+<instance part="D04" gate="H1" x="73.66" y="15.24"/>
+<instance part="D04" gate="H2" x="73.66" y="10.16"/>
+<instance part="D04" gate="J1" x="73.66" y="5.08"/>
+<instance part="D04" gate="J2" x="73.66" y="0"/>
+<instance part="D04" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D04" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D04" gate="L1" x="99.06" y="76.2"/>
+<instance part="D04" gate="L2" x="99.06" y="71.12"/>
+<instance part="D04" gate="M1" x="99.06" y="66.04"/>
+<instance part="D04" gate="M2" x="99.06" y="60.96"/>
+<instance part="D04" gate="N1" x="99.06" y="55.88"/>
+<instance part="D04" gate="N2" x="99.06" y="50.8"/>
+<instance part="D04" gate="P1" x="99.06" y="45.72"/>
+<instance part="D04" gate="P2" x="99.06" y="40.64"/>
+<instance part="D04" gate="R1" x="99.06" y="35.56"/>
+<instance part="D04" gate="R2" x="99.06" y="30.48"/>
+<instance part="D04" gate="S1" x="99.06" y="25.4"/>
+<instance part="D04" gate="S2" x="99.06" y="20.32"/>
+<instance part="D04" gate="T1" x="99.06" y="15.24"/>
+<instance part="D04" gate="T2" x="99.06" y="10.16"/>
+<instance part="D04" gate="U1" x="99.06" y="5.08"/>
+<instance part="D04" gate="U2" x="99.06" y="0"/>
+<instance part="D04" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D04" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D03" gate="A1" x="73.66" y="76.2"/>
+<instance part="D03" gate="A2" x="73.66" y="71.12"/>
+<instance part="D03" gate="B1" x="73.66" y="66.04"/>
+<instance part="D03" gate="B2" x="73.66" y="60.96"/>
+<instance part="D03" gate="C1" x="73.66" y="55.88"/>
+<instance part="D03" gate="C2" x="73.66" y="50.8"/>
+<instance part="D03" gate="D1" x="73.66" y="45.72"/>
+<instance part="D03" gate="D2" x="73.66" y="40.64"/>
+<instance part="D03" gate="E1" x="73.66" y="35.56"/>
+<instance part="D03" gate="E2" x="73.66" y="30.48"/>
+<instance part="D03" gate="F1" x="73.66" y="25.4"/>
+<instance part="D03" gate="F2" x="73.66" y="20.32"/>
+<instance part="D03" gate="H1" x="73.66" y="15.24"/>
+<instance part="D03" gate="H2" x="73.66" y="10.16"/>
+<instance part="D03" gate="J1" x="73.66" y="5.08"/>
+<instance part="D03" gate="J2" x="73.66" y="0"/>
+<instance part="D03" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D03" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D03" gate="L1" x="99.06" y="76.2"/>
+<instance part="D03" gate="L2" x="99.06" y="71.12"/>
+<instance part="D03" gate="M1" x="99.06" y="66.04"/>
+<instance part="D03" gate="M2" x="99.06" y="60.96"/>
+<instance part="D03" gate="N1" x="99.06" y="55.88"/>
+<instance part="D03" gate="N2" x="99.06" y="50.8"/>
+<instance part="D03" gate="P1" x="99.06" y="45.72"/>
+<instance part="D03" gate="P2" x="99.06" y="40.64"/>
+<instance part="D03" gate="R1" x="99.06" y="35.56"/>
+<instance part="D03" gate="R2" x="99.06" y="30.48"/>
+<instance part="D03" gate="S1" x="99.06" y="25.4"/>
+<instance part="D03" gate="S2" x="99.06" y="20.32"/>
+<instance part="D03" gate="T1" x="99.06" y="15.24"/>
+<instance part="D03" gate="T2" x="99.06" y="10.16"/>
+<instance part="D03" gate="U1" x="99.06" y="5.08"/>
+<instance part="D03" gate="U2" x="99.06" y="0"/>
+<instance part="D03" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D03" gate="V2" x="99.06" y="-10.16"/>
+<instance part="D02" gate="A1" x="73.66" y="76.2"/>
+<instance part="D02" gate="A2" x="73.66" y="71.12"/>
+<instance part="D02" gate="B1" x="73.66" y="66.04"/>
+<instance part="D02" gate="B2" x="73.66" y="60.96"/>
+<instance part="D02" gate="C1" x="73.66" y="55.88"/>
+<instance part="D02" gate="C2" x="73.66" y="50.8"/>
+<instance part="D02" gate="D1" x="73.66" y="45.72"/>
+<instance part="D02" gate="D2" x="73.66" y="40.64"/>
+<instance part="D02" gate="E1" x="73.66" y="35.56"/>
+<instance part="D02" gate="E2" x="73.66" y="30.48"/>
+<instance part="D02" gate="F1" x="73.66" y="25.4"/>
+<instance part="D02" gate="F2" x="73.66" y="20.32"/>
+<instance part="D02" gate="H1" x="73.66" y="15.24"/>
+<instance part="D02" gate="H2" x="73.66" y="10.16"/>
+<instance part="D02" gate="J1" x="73.66" y="5.08"/>
+<instance part="D02" gate="J2" x="73.66" y="0"/>
+<instance part="D02" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D02" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D02" gate="L1" x="99.06" y="76.2"/>
+<instance part="D02" gate="L2" x="99.06" y="71.12"/>
+<instance part="D02" gate="M1" x="99.06" y="66.04"/>
+<instance part="D02" gate="M2" x="99.06" y="60.96"/>
+<instance part="D02" gate="N1" x="99.06" y="55.88"/>
+<instance part="D02" gate="N2" x="99.06" y="50.8"/>
+<instance part="D02" gate="P1" x="99.06" y="45.72"/>
+<instance part="D02" gate="P2" x="99.06" y="40.64"/>
+<instance part="D02" gate="R1" x="99.06" y="35.56"/>
+<instance part="D02" gate="R2" x="99.06" y="30.48"/>
+<instance part="D02" gate="S1" x="99.06" y="25.4"/>
+<instance part="D02" gate="S2" x="99.06" y="20.32"/>
+<instance part="D02" gate="T1" x="99.06" y="15.24"/>
+<instance part="D02" gate="T2" x="99.06" y="10.16"/>
+<instance part="D02" gate="U1" x="99.06" y="5.08"/>
+<instance part="D02" gate="U2" x="99.06" y="0"/>
+<instance part="D02" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D02" gate="V2" x="99.06" y="-10.16"/>
+<instance part="C01" gate="A1" x="17.78" y="76.2"/>
+<instance part="C01" gate="A2" x="17.78" y="71.12"/>
+<instance part="C01" gate="B1" x="17.78" y="66.04"/>
+<instance part="C01" gate="B2" x="17.78" y="60.96"/>
+<instance part="C01" gate="C1" x="17.78" y="55.88"/>
+<instance part="C01" gate="C2" x="17.78" y="50.8"/>
+<instance part="C01" gate="D1" x="17.78" y="45.72"/>
+<instance part="C01" gate="D2" x="17.78" y="40.64"/>
+<instance part="C01" gate="E1" x="17.78" y="35.56"/>
+<instance part="C01" gate="E2" x="17.78" y="30.48"/>
+<instance part="C01" gate="F1" x="17.78" y="25.4"/>
+<instance part="C01" gate="F2" x="17.78" y="20.32"/>
+<instance part="C01" gate="H1" x="17.78" y="15.24"/>
+<instance part="C01" gate="H2" x="17.78" y="10.16"/>
+<instance part="C01" gate="J1" x="17.78" y="5.08"/>
+<instance part="C01" gate="J2" x="17.78" y="0"/>
+<instance part="C01" gate="K1" x="17.78" y="-5.08"/>
+<instance part="C01" gate="K2" x="17.78" y="-10.16"/>
+<instance part="C01" gate="L1" x="43.18" y="76.2"/>
+<instance part="C01" gate="L2" x="43.18" y="71.12"/>
+<instance part="C01" gate="M1" x="43.18" y="66.04"/>
+<instance part="C01" gate="M2" x="43.18" y="60.96"/>
+<instance part="C01" gate="N1" x="43.18" y="55.88"/>
+<instance part="C01" gate="N2" x="43.18" y="50.8"/>
+<instance part="C01" gate="P1" x="43.18" y="45.72"/>
+<instance part="C01" gate="P2" x="43.18" y="40.64"/>
+<instance part="C01" gate="R1" x="43.18" y="35.56"/>
+<instance part="C01" gate="R2" x="43.18" y="30.48"/>
+<instance part="C01" gate="S1" x="43.18" y="25.4"/>
+<instance part="C01" gate="S2" x="43.18" y="20.32"/>
+<instance part="C01" gate="T1" x="43.18" y="15.24"/>
+<instance part="C01" gate="T2" x="43.18" y="10.16"/>
+<instance part="C01" gate="U1" x="43.18" y="5.08"/>
+<instance part="C01" gate="U2" x="43.18" y="0"/>
+<instance part="C01" gate="V1" x="43.18" y="-5.08"/>
+<instance part="C01" gate="V2" x="43.18" y="-10.16"/>
+<instance part="D01" gate="A1" x="73.66" y="76.2"/>
+<instance part="D01" gate="A2" x="73.66" y="71.12"/>
+<instance part="D01" gate="B1" x="73.66" y="66.04"/>
+<instance part="D01" gate="B2" x="73.66" y="60.96"/>
+<instance part="D01" gate="C1" x="73.66" y="55.88"/>
+<instance part="D01" gate="C2" x="73.66" y="50.8"/>
+<instance part="D01" gate="D1" x="73.66" y="45.72"/>
+<instance part="D01" gate="D2" x="73.66" y="40.64"/>
+<instance part="D01" gate="E1" x="73.66" y="35.56"/>
+<instance part="D01" gate="E2" x="73.66" y="30.48"/>
+<instance part="D01" gate="F1" x="73.66" y="25.4"/>
+<instance part="D01" gate="F2" x="73.66" y="20.32"/>
+<instance part="D01" gate="H1" x="73.66" y="15.24"/>
+<instance part="D01" gate="H2" x="73.66" y="10.16"/>
+<instance part="D01" gate="J1" x="73.66" y="5.08"/>
+<instance part="D01" gate="J2" x="73.66" y="0"/>
+<instance part="D01" gate="K1" x="73.66" y="-5.08"/>
+<instance part="D01" gate="K2" x="73.66" y="-10.16"/>
+<instance part="D01" gate="L1" x="99.06" y="76.2"/>
+<instance part="D01" gate="L2" x="99.06" y="71.12"/>
+<instance part="D01" gate="M1" x="99.06" y="66.04"/>
+<instance part="D01" gate="M2" x="99.06" y="60.96"/>
+<instance part="D01" gate="N1" x="99.06" y="55.88"/>
+<instance part="D01" gate="N2" x="99.06" y="50.8"/>
+<instance part="D01" gate="P1" x="99.06" y="45.72"/>
+<instance part="D01" gate="P2" x="99.06" y="40.64"/>
+<instance part="D01" gate="R1" x="99.06" y="35.56"/>
+<instance part="D01" gate="R2" x="99.06" y="30.48"/>
+<instance part="D01" gate="S1" x="99.06" y="25.4"/>
+<instance part="D01" gate="S2" x="99.06" y="20.32"/>
+<instance part="D01" gate="T1" x="99.06" y="15.24"/>
+<instance part="D01" gate="T2" x="99.06" y="10.16"/>
+<instance part="D01" gate="U1" x="99.06" y="5.08"/>
+<instance part="D01" gate="U2" x="99.06" y="0"/>
+<instance part="D01" gate="V1" x="99.06" y="-5.08"/>
+<instance part="D01" gate="V2" x="99.06" y="-10.16"/>
 <instance part="D20" gate="G$1" x="-86.36" y="-22.86"/>
 <instance part="V13" gate="G$1" x="124.46" y="76.2"/>
 <instance part="+5V" gate="P" x="137.16" y="73.66" rot="R90"/>
@@ -6480,20 +6494,20 @@ DIN A4, landscape with extra doc field</description>
 <net name="N$10" class="0">
 <segment>
 <junction x="-99.06" y="76.2"/>
-<pinref part="A01" gate="G$1" pin="P$2"/>
-<pinref part="A02" gate="G$1" pin="P$2"/>
-<pinref part="A03" gate="G$1" pin="P$2"/>
-<pinref part="A04" gate="G$1" pin="P$2"/>
-<pinref part="A05" gate="G$1" pin="P$2"/>
-<pinref part="A06" gate="G$1" pin="P$2"/>
-<pinref part="A07" gate="G$1" pin="P$2"/>
-<pinref part="A08" gate="G$1" pin="P$2"/>
-<pinref part="A09" gate="G$1" pin="P$2"/>
-<pinref part="A10" gate="G$1" pin="P$2"/>
-<pinref part="A11" gate="G$1" pin="P$2"/>
-<pinref part="A12" gate="G$1" pin="P$2"/>
-<pinref part="A13" gate="G$1" pin="P$2"/>
-<pinref part="A14" gate="G$1" pin="P$2"/>
+<pinref part="A01" gate="A1" pin="P$2"/>
+<pinref part="A02" gate="A1" pin="P$2"/>
+<pinref part="A03" gate="A1" pin="P$2"/>
+<pinref part="A04" gate="A1" pin="P$2"/>
+<pinref part="A05" gate="A1" pin="P$2"/>
+<pinref part="A06" gate="A1" pin="P$2"/>
+<pinref part="A07" gate="A1" pin="P$2"/>
+<pinref part="A08" gate="A1" pin="P$2"/>
+<pinref part="A09" gate="A1" pin="P$2"/>
+<pinref part="A10" gate="A1" pin="P$2"/>
+<pinref part="A11" gate="A1" pin="P$2"/>
+<pinref part="A12" gate="A1" pin="P$2"/>
+<pinref part="A13" gate="A1" pin="P$2"/>
+<pinref part="A14" gate="A1" pin="P$2"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -6501,77 +6515,77 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="71.12" x2="-99.06" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-99.06" y="71.12"/>
 <label x="-96.52" y="71.12" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$2" pin="P$2"/>
-<pinref part="A02" gate="G$2" pin="P$2"/>
-<pinref part="A03" gate="G$2" pin="P$2"/>
-<pinref part="A04" gate="G$2" pin="P$2"/>
-<pinref part="A05" gate="G$2" pin="P$2"/>
-<pinref part="A06" gate="G$2" pin="P$2"/>
-<pinref part="A07" gate="G$2" pin="P$2"/>
-<pinref part="A08" gate="G$2" pin="P$2"/>
-<pinref part="A09" gate="G$2" pin="P$2"/>
-<pinref part="A10" gate="G$2" pin="P$2"/>
-<pinref part="A11" gate="G$2" pin="P$2"/>
-<pinref part="A12" gate="G$2" pin="P$2"/>
-<pinref part="A13" gate="G$2" pin="P$2"/>
-<pinref part="A14" gate="G$2" pin="P$2"/>
+<pinref part="A01" gate="A2" pin="P$2"/>
+<pinref part="A02" gate="A2" pin="P$2"/>
+<pinref part="A03" gate="A2" pin="P$2"/>
+<pinref part="A04" gate="A2" pin="P$2"/>
+<pinref part="A05" gate="A2" pin="P$2"/>
+<pinref part="A06" gate="A2" pin="P$2"/>
+<pinref part="A07" gate="A2" pin="P$2"/>
+<pinref part="A08" gate="A2" pin="P$2"/>
+<pinref part="A09" gate="A2" pin="P$2"/>
+<pinref part="A10" gate="A2" pin="P$2"/>
+<pinref part="A11" gate="A2" pin="P$2"/>
+<pinref part="A12" gate="A2" pin="P$2"/>
+<pinref part="A13" gate="A2" pin="P$2"/>
+<pinref part="A14" gate="A2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-27.94" y1="71.12" x2="-38.1" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-38.1" y="71.12"/>
 <label x="-35.56" y="71.12" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$2" pin="P$2"/>
-<pinref part="B12" gate="G$2" pin="P$2"/>
-<pinref part="B11" gate="G$2" pin="P$2"/>
-<pinref part="B10" gate="G$2" pin="P$2"/>
-<pinref part="B09" gate="G$2" pin="P$2"/>
-<pinref part="B08" gate="G$2" pin="P$2"/>
-<pinref part="B07" gate="G$2" pin="P$2"/>
-<pinref part="B06" gate="G$2" pin="P$2"/>
-<pinref part="B05" gate="G$2" pin="P$2"/>
-<pinref part="B04" gate="G$2" pin="P$2"/>
-<pinref part="B03" gate="G$2" pin="P$2"/>
-<pinref part="B02" gate="G$2" pin="P$2"/>
-<pinref part="B01" gate="G$2" pin="P$2"/>
-<pinref part="B14" gate="G$2" pin="P$2"/>
+<pinref part="B13" gate="A2" pin="P$2"/>
+<pinref part="B12" gate="A2" pin="P$2"/>
+<pinref part="B11" gate="A2" pin="P$2"/>
+<pinref part="B10" gate="A2" pin="P$2"/>
+<pinref part="B09" gate="A2" pin="P$2"/>
+<pinref part="B08" gate="A2" pin="P$2"/>
+<pinref part="B07" gate="A2" pin="P$2"/>
+<pinref part="B06" gate="A2" pin="P$2"/>
+<pinref part="B05" gate="A2" pin="P$2"/>
+<pinref part="B04" gate="A2" pin="P$2"/>
+<pinref part="B03" gate="A2" pin="P$2"/>
+<pinref part="B02" gate="A2" pin="P$2"/>
+<pinref part="B01" gate="A2" pin="P$2"/>
+<pinref part="B14" gate="A2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="71.12" x2="22.86" y2="71.12" width="0.1524" layer="91"/>
 <junction x="22.86" y="71.12"/>
 <label x="25.4" y="71.12" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$2" pin="P$2"/>
-<pinref part="C13" gate="G$2" pin="P$2"/>
-<pinref part="C12" gate="G$2" pin="P$2"/>
-<pinref part="C11" gate="G$2" pin="P$2"/>
-<pinref part="C10" gate="G$2" pin="P$2"/>
-<pinref part="C09" gate="G$2" pin="P$2"/>
-<pinref part="C08" gate="G$2" pin="P$2"/>
-<pinref part="C07" gate="G$2" pin="P$2"/>
-<pinref part="C06" gate="G$2" pin="P$2"/>
-<pinref part="C05" gate="G$2" pin="P$2"/>
-<pinref part="C04" gate="G$2" pin="P$2"/>
-<pinref part="C03" gate="G$2" pin="P$2"/>
-<pinref part="C02" gate="G$2" pin="P$2"/>
-<pinref part="C01" gate="G$2" pin="P$2"/>
+<pinref part="C14" gate="A2" pin="P$2"/>
+<pinref part="C13" gate="A2" pin="P$2"/>
+<pinref part="C12" gate="A2" pin="P$2"/>
+<pinref part="C11" gate="A2" pin="P$2"/>
+<pinref part="C10" gate="A2" pin="P$2"/>
+<pinref part="C09" gate="A2" pin="P$2"/>
+<pinref part="C08" gate="A2" pin="P$2"/>
+<pinref part="C07" gate="A2" pin="P$2"/>
+<pinref part="C06" gate="A2" pin="P$2"/>
+<pinref part="C05" gate="A2" pin="P$2"/>
+<pinref part="C04" gate="A2" pin="P$2"/>
+<pinref part="C03" gate="A2" pin="P$2"/>
+<pinref part="C02" gate="A2" pin="P$2"/>
+<pinref part="C01" gate="A2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
 <junction x="78.74" y="71.12"/>
 <label x="81.28" y="71.12" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$2" pin="P$2"/>
-<pinref part="D13" gate="G$2" pin="P$2"/>
-<pinref part="D12" gate="G$2" pin="P$2"/>
-<pinref part="D11" gate="G$2" pin="P$2"/>
-<pinref part="D10" gate="G$2" pin="P$2"/>
-<pinref part="D09" gate="G$2" pin="P$2"/>
-<pinref part="D08" gate="G$2" pin="P$2"/>
-<pinref part="D07" gate="G$2" pin="P$2"/>
-<pinref part="D06" gate="G$2" pin="P$2"/>
-<pinref part="D05" gate="G$2" pin="P$2"/>
-<pinref part="D04" gate="G$2" pin="P$2"/>
-<pinref part="D03" gate="G$2" pin="P$2"/>
-<pinref part="D02" gate="G$2" pin="P$2"/>
-<pinref part="D01" gate="G$2" pin="P$2"/>
+<pinref part="D14" gate="A2" pin="P$2"/>
+<pinref part="D13" gate="A2" pin="P$2"/>
+<pinref part="D12" gate="A2" pin="P$2"/>
+<pinref part="D11" gate="A2" pin="P$2"/>
+<pinref part="D10" gate="A2" pin="P$2"/>
+<pinref part="D09" gate="A2" pin="P$2"/>
+<pinref part="D08" gate="A2" pin="P$2"/>
+<pinref part="D07" gate="A2" pin="P$2"/>
+<pinref part="D06" gate="A2" pin="P$2"/>
+<pinref part="D05" gate="A2" pin="P$2"/>
+<pinref part="D04" gate="A2" pin="P$2"/>
+<pinref part="D03" gate="A2" pin="P$2"/>
+<pinref part="D02" gate="A2" pin="P$2"/>
+<pinref part="D01" gate="A2" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="V3" gate="G$1" pin="VCC"/>
@@ -6581,20 +6595,20 @@ DIN A4, landscape with extra doc field</description>
 <net name="N$28" class="0">
 <segment>
 <junction x="-99.06" y="66.04"/>
-<pinref part="A01" gate="G$3" pin="P$2"/>
-<pinref part="A02" gate="G$3" pin="P$2"/>
-<pinref part="A03" gate="G$3" pin="P$2"/>
-<pinref part="A04" gate="G$3" pin="P$2"/>
-<pinref part="A05" gate="G$3" pin="P$2"/>
-<pinref part="A06" gate="G$3" pin="P$2"/>
-<pinref part="A07" gate="G$3" pin="P$2"/>
-<pinref part="A08" gate="G$3" pin="P$2"/>
-<pinref part="A09" gate="G$3" pin="P$2"/>
-<pinref part="A10" gate="G$3" pin="P$2"/>
-<pinref part="A11" gate="G$3" pin="P$2"/>
-<pinref part="A12" gate="G$3" pin="P$2"/>
-<pinref part="A13" gate="G$3" pin="P$2"/>
-<pinref part="A14" gate="G$3" pin="P$2"/>
+<pinref part="A01" gate="B1" pin="P$2"/>
+<pinref part="A02" gate="B1" pin="P$2"/>
+<pinref part="A03" gate="B1" pin="P$2"/>
+<pinref part="A04" gate="B1" pin="P$2"/>
+<pinref part="A05" gate="B1" pin="P$2"/>
+<pinref part="A06" gate="B1" pin="P$2"/>
+<pinref part="A07" gate="B1" pin="P$2"/>
+<pinref part="A08" gate="B1" pin="P$2"/>
+<pinref part="A09" gate="B1" pin="P$2"/>
+<pinref part="A10" gate="B1" pin="P$2"/>
+<pinref part="A11" gate="B1" pin="P$2"/>
+<pinref part="A12" gate="B1" pin="P$2"/>
+<pinref part="A13" gate="B1" pin="P$2"/>
+<pinref part="A14" gate="B1" pin="P$2"/>
 </segment>
 </net>
 <net name="-15V" class="1">
@@ -6602,77 +6616,77 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="60.96" x2="-99.06" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-99.06" y="60.96"/>
 <label x="-96.52" y="60.96" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$4" pin="P$2"/>
-<pinref part="A02" gate="G$4" pin="P$2"/>
-<pinref part="A03" gate="G$4" pin="P$2"/>
-<pinref part="A04" gate="G$4" pin="P$2"/>
-<pinref part="A05" gate="G$4" pin="P$2"/>
-<pinref part="A06" gate="G$4" pin="P$2"/>
-<pinref part="A07" gate="G$4" pin="P$2"/>
-<pinref part="A08" gate="G$4" pin="P$2"/>
-<pinref part="A09" gate="G$4" pin="P$2"/>
-<pinref part="A10" gate="G$4" pin="P$2"/>
-<pinref part="A11" gate="G$4" pin="P$2"/>
-<pinref part="A12" gate="G$4" pin="P$2"/>
-<pinref part="A13" gate="G$4" pin="P$2"/>
-<pinref part="A14" gate="G$4" pin="P$2"/>
+<pinref part="A01" gate="B2" pin="P$2"/>
+<pinref part="A02" gate="B2" pin="P$2"/>
+<pinref part="A03" gate="B2" pin="P$2"/>
+<pinref part="A04" gate="B2" pin="P$2"/>
+<pinref part="A05" gate="B2" pin="P$2"/>
+<pinref part="A06" gate="B2" pin="P$2"/>
+<pinref part="A07" gate="B2" pin="P$2"/>
+<pinref part="A08" gate="B2" pin="P$2"/>
+<pinref part="A09" gate="B2" pin="P$2"/>
+<pinref part="A10" gate="B2" pin="P$2"/>
+<pinref part="A11" gate="B2" pin="P$2"/>
+<pinref part="A12" gate="B2" pin="P$2"/>
+<pinref part="A13" gate="B2" pin="P$2"/>
+<pinref part="A14" gate="B2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-27.94" y1="60.96" x2="-38.1" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-38.1" y="60.96"/>
 <label x="-35.56" y="60.96" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$4" pin="P$2"/>
-<pinref part="B12" gate="G$4" pin="P$2"/>
-<pinref part="B11" gate="G$4" pin="P$2"/>
-<pinref part="B10" gate="G$4" pin="P$2"/>
-<pinref part="B09" gate="G$4" pin="P$2"/>
-<pinref part="B08" gate="G$4" pin="P$2"/>
-<pinref part="B07" gate="G$4" pin="P$2"/>
-<pinref part="B06" gate="G$4" pin="P$2"/>
-<pinref part="B05" gate="G$4" pin="P$2"/>
-<pinref part="B04" gate="G$4" pin="P$2"/>
-<pinref part="B03" gate="G$4" pin="P$2"/>
-<pinref part="B02" gate="G$4" pin="P$2"/>
-<pinref part="B01" gate="G$4" pin="P$2"/>
-<pinref part="B14" gate="G$4" pin="P$2"/>
+<pinref part="B13" gate="B2" pin="P$2"/>
+<pinref part="B12" gate="B2" pin="P$2"/>
+<pinref part="B11" gate="B2" pin="P$2"/>
+<pinref part="B10" gate="B2" pin="P$2"/>
+<pinref part="B09" gate="B2" pin="P$2"/>
+<pinref part="B08" gate="B2" pin="P$2"/>
+<pinref part="B07" gate="B2" pin="P$2"/>
+<pinref part="B06" gate="B2" pin="P$2"/>
+<pinref part="B05" gate="B2" pin="P$2"/>
+<pinref part="B04" gate="B2" pin="P$2"/>
+<pinref part="B03" gate="B2" pin="P$2"/>
+<pinref part="B02" gate="B2" pin="P$2"/>
+<pinref part="B01" gate="B2" pin="P$2"/>
+<pinref part="B14" gate="B2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
 <junction x="78.74" y="60.96"/>
 <label x="81.28" y="60.96" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$4" pin="P$2"/>
-<pinref part="D13" gate="G$4" pin="P$2"/>
-<pinref part="D12" gate="G$4" pin="P$2"/>
-<pinref part="D11" gate="G$4" pin="P$2"/>
-<pinref part="D10" gate="G$4" pin="P$2"/>
-<pinref part="D09" gate="G$4" pin="P$2"/>
-<pinref part="D08" gate="G$4" pin="P$2"/>
-<pinref part="D07" gate="G$4" pin="P$2"/>
-<pinref part="D06" gate="G$4" pin="P$2"/>
-<pinref part="D05" gate="G$4" pin="P$2"/>
-<pinref part="D04" gate="G$4" pin="P$2"/>
-<pinref part="D03" gate="G$4" pin="P$2"/>
-<pinref part="D02" gate="G$4" pin="P$2"/>
-<pinref part="D01" gate="G$4" pin="P$2"/>
+<pinref part="D14" gate="B2" pin="P$2"/>
+<pinref part="D13" gate="B2" pin="P$2"/>
+<pinref part="D12" gate="B2" pin="P$2"/>
+<pinref part="D11" gate="B2" pin="P$2"/>
+<pinref part="D10" gate="B2" pin="P$2"/>
+<pinref part="D09" gate="B2" pin="P$2"/>
+<pinref part="D08" gate="B2" pin="P$2"/>
+<pinref part="D07" gate="B2" pin="P$2"/>
+<pinref part="D06" gate="B2" pin="P$2"/>
+<pinref part="D05" gate="B2" pin="P$2"/>
+<pinref part="D04" gate="B2" pin="P$2"/>
+<pinref part="D03" gate="B2" pin="P$2"/>
+<pinref part="D02" gate="B2" pin="P$2"/>
+<pinref part="D01" gate="B2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 <junction x="22.86" y="60.96"/>
 <label x="25.4" y="60.96" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$4" pin="P$2"/>
-<pinref part="C13" gate="G$4" pin="P$2"/>
-<pinref part="C12" gate="G$4" pin="P$2"/>
-<pinref part="C11" gate="G$4" pin="P$2"/>
-<pinref part="C10" gate="G$4" pin="P$2"/>
-<pinref part="C09" gate="G$4" pin="P$2"/>
-<pinref part="C08" gate="G$4" pin="P$2"/>
-<pinref part="C07" gate="G$4" pin="P$2"/>
-<pinref part="C06" gate="G$4" pin="P$2"/>
-<pinref part="C05" gate="G$4" pin="P$2"/>
-<pinref part="C04" gate="G$4" pin="P$2"/>
-<pinref part="C03" gate="G$4" pin="P$2"/>
-<pinref part="C02" gate="G$4" pin="P$2"/>
-<pinref part="C01" gate="G$4" pin="P$2"/>
+<pinref part="C14" gate="B2" pin="P$2"/>
+<pinref part="C13" gate="B2" pin="P$2"/>
+<pinref part="C12" gate="B2" pin="P$2"/>
+<pinref part="C11" gate="B2" pin="P$2"/>
+<pinref part="C10" gate="B2" pin="P$2"/>
+<pinref part="C09" gate="B2" pin="P$2"/>
+<pinref part="C08" gate="B2" pin="P$2"/>
+<pinref part="C07" gate="B2" pin="P$2"/>
+<pinref part="C06" gate="B2" pin="P$2"/>
+<pinref part="C05" gate="B2" pin="P$2"/>
+<pinref part="C04" gate="B2" pin="P$2"/>
+<pinref part="C03" gate="B2" pin="P$2"/>
+<pinref part="C02" gate="B2" pin="P$2"/>
+<pinref part="C01" gate="B2" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="V13" gate="G$1" pin="-15V"/>
@@ -6684,609 +6698,609 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="50.8" x2="-99.06" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-99.06" y="50.8"/>
 <label x="-96.52" y="50.8" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$6" pin="P$2"/>
-<pinref part="A02" gate="G$6" pin="P$2"/>
-<pinref part="A03" gate="G$6" pin="P$2"/>
-<pinref part="A04" gate="G$6" pin="P$2"/>
-<pinref part="A05" gate="G$6" pin="P$2"/>
-<pinref part="A06" gate="G$6" pin="P$2"/>
-<pinref part="A07" gate="G$6" pin="P$2"/>
-<pinref part="A08" gate="G$6" pin="P$2"/>
-<pinref part="A09" gate="G$6" pin="P$2"/>
-<pinref part="A10" gate="G$6" pin="P$2"/>
-<pinref part="A11" gate="G$6" pin="P$2"/>
-<pinref part="A12" gate="G$6" pin="P$2"/>
-<pinref part="A13" gate="G$6" pin="P$2"/>
-<pinref part="A14" gate="G$6" pin="P$2"/>
+<pinref part="A01" gate="C2" pin="P$2"/>
+<pinref part="A02" gate="C2" pin="P$2"/>
+<pinref part="A03" gate="C2" pin="P$2"/>
+<pinref part="A04" gate="C2" pin="P$2"/>
+<pinref part="A05" gate="C2" pin="P$2"/>
+<pinref part="A06" gate="C2" pin="P$2"/>
+<pinref part="A07" gate="C2" pin="P$2"/>
+<pinref part="A08" gate="C2" pin="P$2"/>
+<pinref part="A09" gate="C2" pin="P$2"/>
+<pinref part="A10" gate="C2" pin="P$2"/>
+<pinref part="A11" gate="C2" pin="P$2"/>
+<pinref part="A12" gate="C2" pin="P$2"/>
+<pinref part="A13" gate="C2" pin="P$2"/>
+<pinref part="A14" gate="C2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-83.82" y1="25.4" x2="-99.06" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-99.06" y="25.4"/>
 <label x="-96.52" y="25.4" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$11" pin="P$2"/>
-<pinref part="A02" gate="G$11" pin="P$2"/>
-<pinref part="A03" gate="G$11" pin="P$2"/>
-<pinref part="A04" gate="G$11" pin="P$2"/>
-<pinref part="A05" gate="G$11" pin="P$2"/>
-<pinref part="A06" gate="G$11" pin="P$2"/>
-<pinref part="A07" gate="G$11" pin="P$2"/>
-<pinref part="A08" gate="G$11" pin="P$2"/>
-<pinref part="A09" gate="G$11" pin="P$2"/>
-<pinref part="A10" gate="G$11" pin="P$2"/>
-<pinref part="A11" gate="G$11" pin="P$2"/>
-<pinref part="A12" gate="G$11" pin="P$2"/>
-<pinref part="A13" gate="G$11" pin="P$2"/>
-<pinref part="A14" gate="G$11" pin="P$2"/>
+<pinref part="A01" gate="F1" pin="P$2"/>
+<pinref part="A02" gate="F1" pin="P$2"/>
+<pinref part="A03" gate="F1" pin="P$2"/>
+<pinref part="A04" gate="F1" pin="P$2"/>
+<pinref part="A05" gate="F1" pin="P$2"/>
+<pinref part="A06" gate="F1" pin="P$2"/>
+<pinref part="A07" gate="F1" pin="P$2"/>
+<pinref part="A08" gate="F1" pin="P$2"/>
+<pinref part="A09" gate="F1" pin="P$2"/>
+<pinref part="A10" gate="F1" pin="P$2"/>
+<pinref part="A11" gate="F1" pin="P$2"/>
+<pinref part="A12" gate="F1" pin="P$2"/>
+<pinref part="A13" gate="F1" pin="P$2"/>
+<pinref part="A14" gate="F1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-83.82" y1="55.88" x2="-99.06" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-99.06" y="55.88"/>
 <label x="-96.52" y="55.88" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$5" pin="P$2"/>
-<pinref part="A02" gate="G$5" pin="P$2"/>
-<pinref part="A03" gate="G$5" pin="P$2"/>
-<pinref part="A04" gate="G$5" pin="P$2"/>
-<pinref part="A05" gate="G$5" pin="P$2"/>
-<pinref part="A06" gate="G$5" pin="P$2"/>
-<pinref part="A07" gate="G$5" pin="P$2"/>
-<pinref part="A08" gate="G$5" pin="P$2"/>
-<pinref part="A09" gate="G$5" pin="P$2"/>
-<pinref part="A10" gate="G$5" pin="P$2"/>
-<pinref part="A11" gate="G$5" pin="P$2"/>
-<pinref part="A12" gate="G$5" pin="P$2"/>
-<pinref part="A13" gate="G$5" pin="P$2"/>
-<pinref part="A14" gate="G$5" pin="P$2"/>
+<pinref part="A01" gate="C1" pin="P$2"/>
+<pinref part="A02" gate="C1" pin="P$2"/>
+<pinref part="A03" gate="C1" pin="P$2"/>
+<pinref part="A04" gate="C1" pin="P$2"/>
+<pinref part="A05" gate="C1" pin="P$2"/>
+<pinref part="A06" gate="C1" pin="P$2"/>
+<pinref part="A07" gate="C1" pin="P$2"/>
+<pinref part="A08" gate="C1" pin="P$2"/>
+<pinref part="A09" gate="C1" pin="P$2"/>
+<pinref part="A10" gate="C1" pin="P$2"/>
+<pinref part="A11" gate="C1" pin="P$2"/>
+<pinref part="A12" gate="C1" pin="P$2"/>
+<pinref part="A13" gate="C1" pin="P$2"/>
+<pinref part="A14" gate="C1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-55.88" y1="55.88" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-68.58" y="55.88"/>
 <label x="-66.04" y="55.88" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$23" pin="P$2"/>
-<pinref part="A02" gate="G$23" pin="P$2"/>
-<pinref part="A03" gate="G$23" pin="P$2"/>
-<pinref part="A04" gate="G$23" pin="P$2"/>
-<pinref part="A05" gate="G$23" pin="P$2"/>
-<pinref part="A06" gate="G$23" pin="P$2"/>
-<pinref part="A07" gate="G$23" pin="P$2"/>
-<pinref part="A08" gate="G$23" pin="P$2"/>
-<pinref part="A09" gate="G$23" pin="P$2"/>
-<pinref part="A10" gate="G$23" pin="P$2"/>
-<pinref part="A11" gate="G$23" pin="P$2"/>
-<pinref part="A12" gate="G$23" pin="P$2"/>
-<pinref part="A13" gate="G$23" pin="P$2"/>
-<pinref part="A14" gate="G$23" pin="P$2"/>
+<pinref part="A01" gate="N1" pin="P$2"/>
+<pinref part="A02" gate="N1" pin="P$2"/>
+<pinref part="A03" gate="N1" pin="P$2"/>
+<pinref part="A04" gate="N1" pin="P$2"/>
+<pinref part="A05" gate="N1" pin="P$2"/>
+<pinref part="A06" gate="N1" pin="P$2"/>
+<pinref part="A07" gate="N1" pin="P$2"/>
+<pinref part="A08" gate="N1" pin="P$2"/>
+<pinref part="A09" gate="N1" pin="P$2"/>
+<pinref part="A10" gate="N1" pin="P$2"/>
+<pinref part="A11" gate="N1" pin="P$2"/>
+<pinref part="A12" gate="N1" pin="P$2"/>
+<pinref part="A13" gate="N1" pin="P$2"/>
+<pinref part="A14" gate="N1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-55.88" y1="15.24" x2="-68.58" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-68.58" y="15.24"/>
 <label x="-66.04" y="15.24" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$31" pin="P$2"/>
-<pinref part="A02" gate="G$31" pin="P$2"/>
-<pinref part="A03" gate="G$31" pin="P$2"/>
-<pinref part="A04" gate="G$31" pin="P$2"/>
-<pinref part="A05" gate="G$31" pin="P$2"/>
-<pinref part="A06" gate="G$31" pin="P$2"/>
-<pinref part="A07" gate="G$31" pin="P$2"/>
-<pinref part="A08" gate="G$31" pin="P$2"/>
-<pinref part="A09" gate="G$31" pin="P$2"/>
-<pinref part="A10" gate="G$31" pin="P$2"/>
-<pinref part="A11" gate="G$31" pin="P$2"/>
-<pinref part="A12" gate="G$31" pin="P$2"/>
-<pinref part="A13" gate="G$31" pin="P$2"/>
-<pinref part="A14" gate="G$31" pin="P$2"/>
+<pinref part="A01" gate="T1" pin="P$2"/>
+<pinref part="A02" gate="T1" pin="P$2"/>
+<pinref part="A03" gate="T1" pin="P$2"/>
+<pinref part="A04" gate="T1" pin="P$2"/>
+<pinref part="A05" gate="T1" pin="P$2"/>
+<pinref part="A06" gate="T1" pin="P$2"/>
+<pinref part="A07" gate="T1" pin="P$2"/>
+<pinref part="A08" gate="T1" pin="P$2"/>
+<pinref part="A09" gate="T1" pin="P$2"/>
+<pinref part="A10" gate="T1" pin="P$2"/>
+<pinref part="A11" gate="T1" pin="P$2"/>
+<pinref part="A12" gate="T1" pin="P$2"/>
+<pinref part="A13" gate="T1" pin="P$2"/>
+<pinref part="A14" gate="T1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-83.82" y1="20.32" x2="-99.06" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-99.06" y="20.32"/>
 <label x="-96.52" y="20.32" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$12" pin="P$2"/>
-<pinref part="A02" gate="G$12" pin="P$2"/>
-<pinref part="A03" gate="G$12" pin="P$2"/>
-<pinref part="A04" gate="G$12" pin="P$2"/>
-<pinref part="A05" gate="G$12" pin="P$2"/>
-<pinref part="A06" gate="G$12" pin="P$2"/>
-<pinref part="A07" gate="G$12" pin="P$2"/>
-<pinref part="A08" gate="G$12" pin="P$2"/>
-<pinref part="A09" gate="G$12" pin="P$2"/>
-<pinref part="A10" gate="G$12" pin="P$2"/>
-<pinref part="A11" gate="G$12" pin="P$2"/>
-<pinref part="A12" gate="G$12" pin="P$2"/>
-<pinref part="A13" gate="G$12" pin="P$2"/>
-<pinref part="A14" gate="G$12" pin="P$2"/>
+<pinref part="A01" gate="F2" pin="P$2"/>
+<pinref part="A02" gate="F2" pin="P$2"/>
+<pinref part="A03" gate="F2" pin="P$2"/>
+<pinref part="A04" gate="F2" pin="P$2"/>
+<pinref part="A05" gate="F2" pin="P$2"/>
+<pinref part="A06" gate="F2" pin="P$2"/>
+<pinref part="A07" gate="F2" pin="P$2"/>
+<pinref part="A08" gate="F2" pin="P$2"/>
+<pinref part="A09" gate="F2" pin="P$2"/>
+<pinref part="A10" gate="F2" pin="P$2"/>
+<pinref part="A11" gate="F2" pin="P$2"/>
+<pinref part="A12" gate="F2" pin="P$2"/>
+<pinref part="A13" gate="F2" pin="P$2"/>
+<pinref part="A14" gate="F2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-55.88" y1="50.8" x2="-68.58" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-68.58" y="50.8"/>
 <label x="-66.04" y="50.8" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$24" pin="P$2"/>
-<pinref part="A02" gate="G$24" pin="P$2"/>
-<pinref part="A03" gate="G$24" pin="P$2"/>
-<pinref part="A04" gate="G$24" pin="P$2"/>
-<pinref part="A05" gate="G$24" pin="P$2"/>
-<pinref part="A06" gate="G$24" pin="P$2"/>
-<pinref part="A07" gate="G$24" pin="P$2"/>
-<pinref part="A08" gate="G$24" pin="P$2"/>
-<pinref part="A09" gate="G$24" pin="P$2"/>
-<pinref part="A10" gate="G$24" pin="P$2"/>
-<pinref part="A11" gate="G$24" pin="P$2"/>
-<pinref part="A12" gate="G$24" pin="P$2"/>
-<pinref part="A13" gate="G$24" pin="P$2"/>
-<pinref part="A14" gate="G$24" pin="P$2"/>
+<pinref part="A01" gate="N2" pin="P$2"/>
+<pinref part="A02" gate="N2" pin="P$2"/>
+<pinref part="A03" gate="N2" pin="P$2"/>
+<pinref part="A04" gate="N2" pin="P$2"/>
+<pinref part="A05" gate="N2" pin="P$2"/>
+<pinref part="A06" gate="N2" pin="P$2"/>
+<pinref part="A07" gate="N2" pin="P$2"/>
+<pinref part="A08" gate="N2" pin="P$2"/>
+<pinref part="A09" gate="N2" pin="P$2"/>
+<pinref part="A10" gate="N2" pin="P$2"/>
+<pinref part="A11" gate="N2" pin="P$2"/>
+<pinref part="A12" gate="N2" pin="P$2"/>
+<pinref part="A13" gate="N2" pin="P$2"/>
+<pinref part="A14" gate="N2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-55.88" y1="10.16" x2="-68.58" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-68.58" y="10.16"/>
 <label x="-66.04" y="10.16" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$32" pin="P$2"/>
-<pinref part="A02" gate="G$32" pin="P$2"/>
-<pinref part="A03" gate="G$32" pin="P$2"/>
-<pinref part="A04" gate="G$32" pin="P$2"/>
-<pinref part="A05" gate="G$32" pin="P$2"/>
-<pinref part="A06" gate="G$32" pin="P$2"/>
-<pinref part="A07" gate="G$32" pin="P$2"/>
-<pinref part="A08" gate="G$32" pin="P$2"/>
-<pinref part="A09" gate="G$32" pin="P$2"/>
-<pinref part="A10" gate="G$32" pin="P$2"/>
-<pinref part="A11" gate="G$32" pin="P$2"/>
-<pinref part="A12" gate="G$32" pin="P$2"/>
-<pinref part="A13" gate="G$32" pin="P$2"/>
-<pinref part="A14" gate="G$32" pin="P$2"/>
+<pinref part="A01" gate="T2" pin="P$2"/>
+<pinref part="A02" gate="T2" pin="P$2"/>
+<pinref part="A03" gate="T2" pin="P$2"/>
+<pinref part="A04" gate="T2" pin="P$2"/>
+<pinref part="A05" gate="T2" pin="P$2"/>
+<pinref part="A06" gate="T2" pin="P$2"/>
+<pinref part="A07" gate="T2" pin="P$2"/>
+<pinref part="A08" gate="T2" pin="P$2"/>
+<pinref part="A09" gate="T2" pin="P$2"/>
+<pinref part="A10" gate="T2" pin="P$2"/>
+<pinref part="A11" gate="T2" pin="P$2"/>
+<pinref part="A12" gate="T2" pin="P$2"/>
+<pinref part="A13" gate="T2" pin="P$2"/>
+<pinref part="A14" gate="T2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-27.94" y1="55.88" x2="-38.1" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-38.1" y="55.88"/>
 <label x="-35.56" y="55.88" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$5" pin="P$2"/>
-<pinref part="B12" gate="G$5" pin="P$2"/>
-<pinref part="B11" gate="G$5" pin="P$2"/>
-<pinref part="B10" gate="G$5" pin="P$2"/>
-<pinref part="B09" gate="G$5" pin="P$2"/>
-<pinref part="B08" gate="G$5" pin="P$2"/>
-<pinref part="B07" gate="G$5" pin="P$2"/>
-<pinref part="B06" gate="G$5" pin="P$2"/>
-<pinref part="B05" gate="G$5" pin="P$2"/>
-<pinref part="B04" gate="G$5" pin="P$2"/>
-<pinref part="B03" gate="G$5" pin="P$2"/>
-<pinref part="B02" gate="G$5" pin="P$2"/>
-<pinref part="B01" gate="G$5" pin="P$2"/>
-<pinref part="B14" gate="G$5" pin="P$2"/>
+<pinref part="B13" gate="C1" pin="P$2"/>
+<pinref part="B12" gate="C1" pin="P$2"/>
+<pinref part="B11" gate="C1" pin="P$2"/>
+<pinref part="B10" gate="C1" pin="P$2"/>
+<pinref part="B09" gate="C1" pin="P$2"/>
+<pinref part="B08" gate="C1" pin="P$2"/>
+<pinref part="B07" gate="C1" pin="P$2"/>
+<pinref part="B06" gate="C1" pin="P$2"/>
+<pinref part="B05" gate="C1" pin="P$2"/>
+<pinref part="B04" gate="C1" pin="P$2"/>
+<pinref part="B03" gate="C1" pin="P$2"/>
+<pinref part="B02" gate="C1" pin="P$2"/>
+<pinref part="B01" gate="C1" pin="P$2"/>
+<pinref part="B14" gate="C1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-27.94" y1="50.8" x2="-38.1" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-38.1" y="50.8"/>
 <label x="-35.56" y="50.8" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$6" pin="P$2"/>
-<pinref part="B12" gate="G$6" pin="P$2"/>
-<pinref part="B11" gate="G$6" pin="P$2"/>
-<pinref part="B10" gate="G$6" pin="P$2"/>
-<pinref part="B09" gate="G$6" pin="P$2"/>
-<pinref part="B08" gate="G$6" pin="P$2"/>
-<pinref part="B07" gate="G$6" pin="P$2"/>
-<pinref part="B06" gate="G$6" pin="P$2"/>
-<pinref part="B05" gate="G$6" pin="P$2"/>
-<pinref part="B04" gate="G$6" pin="P$2"/>
-<pinref part="B03" gate="G$6" pin="P$2"/>
-<pinref part="B02" gate="G$6" pin="P$2"/>
-<pinref part="B01" gate="G$6" pin="P$2"/>
-<pinref part="B14" gate="G$6" pin="P$2"/>
+<pinref part="B13" gate="C2" pin="P$2"/>
+<pinref part="B12" gate="C2" pin="P$2"/>
+<pinref part="B11" gate="C2" pin="P$2"/>
+<pinref part="B10" gate="C2" pin="P$2"/>
+<pinref part="B09" gate="C2" pin="P$2"/>
+<pinref part="B08" gate="C2" pin="P$2"/>
+<pinref part="B07" gate="C2" pin="P$2"/>
+<pinref part="B06" gate="C2" pin="P$2"/>
+<pinref part="B05" gate="C2" pin="P$2"/>
+<pinref part="B04" gate="C2" pin="P$2"/>
+<pinref part="B03" gate="C2" pin="P$2"/>
+<pinref part="B02" gate="C2" pin="P$2"/>
+<pinref part="B01" gate="C2" pin="P$2"/>
+<pinref part="B14" gate="C2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-27.94" y1="25.4" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-38.1" y="25.4"/>
 <label x="-35.56" y="25.4" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$11" pin="P$2"/>
-<pinref part="B12" gate="G$11" pin="P$2"/>
-<pinref part="B11" gate="G$11" pin="P$2"/>
-<pinref part="B10" gate="G$11" pin="P$2"/>
-<pinref part="B09" gate="G$11" pin="P$2"/>
-<pinref part="B08" gate="G$11" pin="P$2"/>
-<pinref part="B07" gate="G$11" pin="P$2"/>
-<pinref part="B06" gate="G$11" pin="P$2"/>
-<pinref part="B05" gate="G$11" pin="P$2"/>
-<pinref part="B04" gate="G$11" pin="P$2"/>
-<pinref part="B03" gate="G$11" pin="P$2"/>
-<pinref part="B02" gate="G$11" pin="P$2"/>
-<pinref part="B01" gate="G$11" pin="P$2"/>
-<pinref part="B14" gate="G$11" pin="P$2"/>
+<pinref part="B13" gate="F1" pin="P$2"/>
+<pinref part="B12" gate="F1" pin="P$2"/>
+<pinref part="B11" gate="F1" pin="P$2"/>
+<pinref part="B10" gate="F1" pin="P$2"/>
+<pinref part="B09" gate="F1" pin="P$2"/>
+<pinref part="B08" gate="F1" pin="P$2"/>
+<pinref part="B07" gate="F1" pin="P$2"/>
+<pinref part="B06" gate="F1" pin="P$2"/>
+<pinref part="B05" gate="F1" pin="P$2"/>
+<pinref part="B04" gate="F1" pin="P$2"/>
+<pinref part="B03" gate="F1" pin="P$2"/>
+<pinref part="B02" gate="F1" pin="P$2"/>
+<pinref part="B01" gate="F1" pin="P$2"/>
+<pinref part="B14" gate="F1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="-27.94" y1="20.32" x2="-38.1" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-38.1" y="20.32"/>
 <label x="-35.56" y="20.32" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$12" pin="P$2"/>
-<pinref part="B12" gate="G$12" pin="P$2"/>
-<pinref part="B11" gate="G$12" pin="P$2"/>
-<pinref part="B10" gate="G$12" pin="P$2"/>
-<pinref part="B09" gate="G$12" pin="P$2"/>
-<pinref part="B08" gate="G$12" pin="P$2"/>
-<pinref part="B07" gate="G$12" pin="P$2"/>
-<pinref part="B06" gate="G$12" pin="P$2"/>
-<pinref part="B05" gate="G$12" pin="P$2"/>
-<pinref part="B04" gate="G$12" pin="P$2"/>
-<pinref part="B03" gate="G$12" pin="P$2"/>
-<pinref part="B02" gate="G$12" pin="P$2"/>
-<pinref part="B01" gate="G$12" pin="P$2"/>
-<pinref part="B14" gate="G$12" pin="P$2"/>
+<pinref part="B13" gate="F2" pin="P$2"/>
+<pinref part="B12" gate="F2" pin="P$2"/>
+<pinref part="B11" gate="F2" pin="P$2"/>
+<pinref part="B10" gate="F2" pin="P$2"/>
+<pinref part="B09" gate="F2" pin="P$2"/>
+<pinref part="B08" gate="F2" pin="P$2"/>
+<pinref part="B07" gate="F2" pin="P$2"/>
+<pinref part="B06" gate="F2" pin="P$2"/>
+<pinref part="B05" gate="F2" pin="P$2"/>
+<pinref part="B04" gate="F2" pin="P$2"/>
+<pinref part="B03" gate="F2" pin="P$2"/>
+<pinref part="B02" gate="F2" pin="P$2"/>
+<pinref part="B01" gate="F2" pin="P$2"/>
+<pinref part="B14" gate="F2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="0" y1="55.88" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-10.16" y="55.88"/>
 <label x="-7.62" y="55.88" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$23" pin="P$2"/>
-<pinref part="B12" gate="G$23" pin="P$2"/>
-<pinref part="B11" gate="G$23" pin="P$2"/>
-<pinref part="B10" gate="G$23" pin="P$2"/>
-<pinref part="B09" gate="G$23" pin="P$2"/>
-<pinref part="B08" gate="G$23" pin="P$2"/>
-<pinref part="B07" gate="G$23" pin="P$2"/>
-<pinref part="B06" gate="G$23" pin="P$2"/>
-<pinref part="B05" gate="G$23" pin="P$2"/>
-<pinref part="B04" gate="G$23" pin="P$2"/>
-<pinref part="B03" gate="G$23" pin="P$2"/>
-<pinref part="B02" gate="G$23" pin="P$2"/>
-<pinref part="B01" gate="G$23" pin="P$2"/>
-<pinref part="B14" gate="G$23" pin="P$2"/>
+<pinref part="B13" gate="N1" pin="P$2"/>
+<pinref part="B12" gate="N1" pin="P$2"/>
+<pinref part="B11" gate="N1" pin="P$2"/>
+<pinref part="B10" gate="N1" pin="P$2"/>
+<pinref part="B09" gate="N1" pin="P$2"/>
+<pinref part="B08" gate="N1" pin="P$2"/>
+<pinref part="B07" gate="N1" pin="P$2"/>
+<pinref part="B06" gate="N1" pin="P$2"/>
+<pinref part="B05" gate="N1" pin="P$2"/>
+<pinref part="B04" gate="N1" pin="P$2"/>
+<pinref part="B03" gate="N1" pin="P$2"/>
+<pinref part="B02" gate="N1" pin="P$2"/>
+<pinref part="B01" gate="N1" pin="P$2"/>
+<pinref part="B14" gate="N1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="0" y1="50.8" x2="-10.16" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-10.16" y="50.8"/>
 <label x="-7.62" y="50.8" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$24" pin="P$2"/>
-<pinref part="B12" gate="G$24" pin="P$2"/>
-<pinref part="B11" gate="G$24" pin="P$2"/>
-<pinref part="B10" gate="G$24" pin="P$2"/>
-<pinref part="B09" gate="G$24" pin="P$2"/>
-<pinref part="B08" gate="G$24" pin="P$2"/>
-<pinref part="B07" gate="G$24" pin="P$2"/>
-<pinref part="B06" gate="G$24" pin="P$2"/>
-<pinref part="B05" gate="G$24" pin="P$2"/>
-<pinref part="B04" gate="G$24" pin="P$2"/>
-<pinref part="B03" gate="G$24" pin="P$2"/>
-<pinref part="B02" gate="G$24" pin="P$2"/>
-<pinref part="B01" gate="G$24" pin="P$2"/>
-<pinref part="B14" gate="G$24" pin="P$2"/>
+<pinref part="B13" gate="N2" pin="P$2"/>
+<pinref part="B12" gate="N2" pin="P$2"/>
+<pinref part="B11" gate="N2" pin="P$2"/>
+<pinref part="B10" gate="N2" pin="P$2"/>
+<pinref part="B09" gate="N2" pin="P$2"/>
+<pinref part="B08" gate="N2" pin="P$2"/>
+<pinref part="B07" gate="N2" pin="P$2"/>
+<pinref part="B06" gate="N2" pin="P$2"/>
+<pinref part="B05" gate="N2" pin="P$2"/>
+<pinref part="B04" gate="N2" pin="P$2"/>
+<pinref part="B03" gate="N2" pin="P$2"/>
+<pinref part="B02" gate="N2" pin="P$2"/>
+<pinref part="B01" gate="N2" pin="P$2"/>
+<pinref part="B14" gate="N2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="0" y1="15.24" x2="-10.16" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-10.16" y="15.24"/>
 <label x="-7.62" y="15.24" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$31" pin="P$2"/>
-<pinref part="B12" gate="G$31" pin="P$2"/>
-<pinref part="B11" gate="G$31" pin="P$2"/>
-<pinref part="B10" gate="G$31" pin="P$2"/>
-<pinref part="B09" gate="G$31" pin="P$2"/>
-<pinref part="B08" gate="G$31" pin="P$2"/>
-<pinref part="B07" gate="G$31" pin="P$2"/>
-<pinref part="B06" gate="G$31" pin="P$2"/>
-<pinref part="B05" gate="G$31" pin="P$2"/>
-<pinref part="B04" gate="G$31" pin="P$2"/>
-<pinref part="B03" gate="G$31" pin="P$2"/>
-<pinref part="B02" gate="G$31" pin="P$2"/>
-<pinref part="B01" gate="G$31" pin="P$2"/>
-<pinref part="B14" gate="G$31" pin="P$2"/>
+<pinref part="B13" gate="T1" pin="P$2"/>
+<pinref part="B12" gate="T1" pin="P$2"/>
+<pinref part="B11" gate="T1" pin="P$2"/>
+<pinref part="B10" gate="T1" pin="P$2"/>
+<pinref part="B09" gate="T1" pin="P$2"/>
+<pinref part="B08" gate="T1" pin="P$2"/>
+<pinref part="B07" gate="T1" pin="P$2"/>
+<pinref part="B06" gate="T1" pin="P$2"/>
+<pinref part="B05" gate="T1" pin="P$2"/>
+<pinref part="B04" gate="T1" pin="P$2"/>
+<pinref part="B03" gate="T1" pin="P$2"/>
+<pinref part="B02" gate="T1" pin="P$2"/>
+<pinref part="B01" gate="T1" pin="P$2"/>
+<pinref part="B14" gate="T1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="0" y1="10.16" x2="-10.16" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-10.16" y="10.16"/>
 <label x="-7.62" y="10.16" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$32" pin="P$2"/>
-<pinref part="B12" gate="G$32" pin="P$2"/>
-<pinref part="B11" gate="G$32" pin="P$2"/>
-<pinref part="B10" gate="G$32" pin="P$2"/>
-<pinref part="B09" gate="G$32" pin="P$2"/>
-<pinref part="B08" gate="G$32" pin="P$2"/>
-<pinref part="B07" gate="G$32" pin="P$2"/>
-<pinref part="B06" gate="G$32" pin="P$2"/>
-<pinref part="B05" gate="G$32" pin="P$2"/>
-<pinref part="B04" gate="G$32" pin="P$2"/>
-<pinref part="B03" gate="G$32" pin="P$2"/>
-<pinref part="B02" gate="G$32" pin="P$2"/>
-<pinref part="B01" gate="G$32" pin="P$2"/>
-<pinref part="B14" gate="G$32" pin="P$2"/>
+<pinref part="B13" gate="T2" pin="P$2"/>
+<pinref part="B12" gate="T2" pin="P$2"/>
+<pinref part="B11" gate="T2" pin="P$2"/>
+<pinref part="B10" gate="T2" pin="P$2"/>
+<pinref part="B09" gate="T2" pin="P$2"/>
+<pinref part="B08" gate="T2" pin="P$2"/>
+<pinref part="B07" gate="T2" pin="P$2"/>
+<pinref part="B06" gate="T2" pin="P$2"/>
+<pinref part="B05" gate="T2" pin="P$2"/>
+<pinref part="B04" gate="T2" pin="P$2"/>
+<pinref part="B03" gate="T2" pin="P$2"/>
+<pinref part="B02" gate="T2" pin="P$2"/>
+<pinref part="B01" gate="T2" pin="P$2"/>
+<pinref part="B14" gate="T2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
 <junction x="22.86" y="55.88"/>
 <label x="25.4" y="55.88" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$5" pin="P$2"/>
-<pinref part="C13" gate="G$5" pin="P$2"/>
-<pinref part="C12" gate="G$5" pin="P$2"/>
-<pinref part="C11" gate="G$5" pin="P$2"/>
-<pinref part="C10" gate="G$5" pin="P$2"/>
-<pinref part="C09" gate="G$5" pin="P$2"/>
-<pinref part="C08" gate="G$5" pin="P$2"/>
-<pinref part="C07" gate="G$5" pin="P$2"/>
-<pinref part="C06" gate="G$5" pin="P$2"/>
-<pinref part="C05" gate="G$5" pin="P$2"/>
-<pinref part="C04" gate="G$5" pin="P$2"/>
-<pinref part="C03" gate="G$5" pin="P$2"/>
-<pinref part="C02" gate="G$5" pin="P$2"/>
-<pinref part="C01" gate="G$5" pin="P$2"/>
+<pinref part="C14" gate="C1" pin="P$2"/>
+<pinref part="C13" gate="C1" pin="P$2"/>
+<pinref part="C12" gate="C1" pin="P$2"/>
+<pinref part="C11" gate="C1" pin="P$2"/>
+<pinref part="C10" gate="C1" pin="P$2"/>
+<pinref part="C09" gate="C1" pin="P$2"/>
+<pinref part="C08" gate="C1" pin="P$2"/>
+<pinref part="C07" gate="C1" pin="P$2"/>
+<pinref part="C06" gate="C1" pin="P$2"/>
+<pinref part="C05" gate="C1" pin="P$2"/>
+<pinref part="C04" gate="C1" pin="P$2"/>
+<pinref part="C03" gate="C1" pin="P$2"/>
+<pinref part="C02" gate="C1" pin="P$2"/>
+<pinref part="C01" gate="C1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
 <junction x="22.86" y="50.8"/>
 <label x="25.4" y="50.8" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$6" pin="P$2"/>
-<pinref part="C13" gate="G$6" pin="P$2"/>
-<pinref part="C12" gate="G$6" pin="P$2"/>
-<pinref part="C11" gate="G$6" pin="P$2"/>
-<pinref part="C10" gate="G$6" pin="P$2"/>
-<pinref part="C09" gate="G$6" pin="P$2"/>
-<pinref part="C08" gate="G$6" pin="P$2"/>
-<pinref part="C07" gate="G$6" pin="P$2"/>
-<pinref part="C06" gate="G$6" pin="P$2"/>
-<pinref part="C05" gate="G$6" pin="P$2"/>
-<pinref part="C04" gate="G$6" pin="P$2"/>
-<pinref part="C03" gate="G$6" pin="P$2"/>
-<pinref part="C02" gate="G$6" pin="P$2"/>
-<pinref part="C01" gate="G$6" pin="P$2"/>
+<pinref part="C14" gate="C2" pin="P$2"/>
+<pinref part="C13" gate="C2" pin="P$2"/>
+<pinref part="C12" gate="C2" pin="P$2"/>
+<pinref part="C11" gate="C2" pin="P$2"/>
+<pinref part="C10" gate="C2" pin="P$2"/>
+<pinref part="C09" gate="C2" pin="P$2"/>
+<pinref part="C08" gate="C2" pin="P$2"/>
+<pinref part="C07" gate="C2" pin="P$2"/>
+<pinref part="C06" gate="C2" pin="P$2"/>
+<pinref part="C05" gate="C2" pin="P$2"/>
+<pinref part="C04" gate="C2" pin="P$2"/>
+<pinref part="C03" gate="C2" pin="P$2"/>
+<pinref part="C02" gate="C2" pin="P$2"/>
+<pinref part="C01" gate="C2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 <junction x="48.26" y="50.8"/>
 <label x="50.8" y="50.8" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$24" pin="P$2"/>
-<pinref part="C13" gate="G$24" pin="P$2"/>
-<pinref part="C12" gate="G$24" pin="P$2"/>
-<pinref part="C11" gate="G$24" pin="P$2"/>
-<pinref part="C10" gate="G$24" pin="P$2"/>
-<pinref part="C09" gate="G$24" pin="P$2"/>
-<pinref part="C08" gate="G$24" pin="P$2"/>
-<pinref part="C07" gate="G$24" pin="P$2"/>
-<pinref part="C06" gate="G$24" pin="P$2"/>
-<pinref part="C05" gate="G$24" pin="P$2"/>
-<pinref part="C04" gate="G$24" pin="P$2"/>
-<pinref part="C03" gate="G$24" pin="P$2"/>
-<pinref part="C02" gate="G$24" pin="P$2"/>
-<pinref part="C01" gate="G$24" pin="P$2"/>
+<pinref part="C14" gate="N2" pin="P$2"/>
+<pinref part="C13" gate="N2" pin="P$2"/>
+<pinref part="C12" gate="N2" pin="P$2"/>
+<pinref part="C11" gate="N2" pin="P$2"/>
+<pinref part="C10" gate="N2" pin="P$2"/>
+<pinref part="C09" gate="N2" pin="P$2"/>
+<pinref part="C08" gate="N2" pin="P$2"/>
+<pinref part="C07" gate="N2" pin="P$2"/>
+<pinref part="C06" gate="N2" pin="P$2"/>
+<pinref part="C05" gate="N2" pin="P$2"/>
+<pinref part="C04" gate="N2" pin="P$2"/>
+<pinref part="C03" gate="N2" pin="P$2"/>
+<pinref part="C02" gate="N2" pin="P$2"/>
+<pinref part="C01" gate="N2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <junction x="48.26" y="55.88"/>
 <label x="50.8" y="55.88" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$23" pin="P$2"/>
-<pinref part="C13" gate="G$23" pin="P$2"/>
-<pinref part="C12" gate="G$23" pin="P$2"/>
-<pinref part="C11" gate="G$23" pin="P$2"/>
-<pinref part="C10" gate="G$23" pin="P$2"/>
-<pinref part="C09" gate="G$23" pin="P$2"/>
-<pinref part="C08" gate="G$23" pin="P$2"/>
-<pinref part="C07" gate="G$23" pin="P$2"/>
-<pinref part="C06" gate="G$23" pin="P$2"/>
-<pinref part="C05" gate="G$23" pin="P$2"/>
-<pinref part="C04" gate="G$23" pin="P$2"/>
-<pinref part="C03" gate="G$23" pin="P$2"/>
-<pinref part="C02" gate="G$23" pin="P$2"/>
-<pinref part="C01" gate="G$23" pin="P$2"/>
+<pinref part="C14" gate="N1" pin="P$2"/>
+<pinref part="C13" gate="N1" pin="P$2"/>
+<pinref part="C12" gate="N1" pin="P$2"/>
+<pinref part="C11" gate="N1" pin="P$2"/>
+<pinref part="C10" gate="N1" pin="P$2"/>
+<pinref part="C09" gate="N1" pin="P$2"/>
+<pinref part="C08" gate="N1" pin="P$2"/>
+<pinref part="C07" gate="N1" pin="P$2"/>
+<pinref part="C06" gate="N1" pin="P$2"/>
+<pinref part="C05" gate="N1" pin="P$2"/>
+<pinref part="C04" gate="N1" pin="P$2"/>
+<pinref part="C03" gate="N1" pin="P$2"/>
+<pinref part="C02" gate="N1" pin="P$2"/>
+<pinref part="C01" gate="N1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 <junction x="78.74" y="55.88"/>
 <label x="81.28" y="55.88" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$5" pin="P$2"/>
-<pinref part="D13" gate="G$5" pin="P$2"/>
-<pinref part="D12" gate="G$5" pin="P$2"/>
-<pinref part="D11" gate="G$5" pin="P$2"/>
-<pinref part="D10" gate="G$5" pin="P$2"/>
-<pinref part="D09" gate="G$5" pin="P$2"/>
-<pinref part="D08" gate="G$5" pin="P$2"/>
-<pinref part="D07" gate="G$5" pin="P$2"/>
-<pinref part="D06" gate="G$5" pin="P$2"/>
-<pinref part="D05" gate="G$5" pin="P$2"/>
-<pinref part="D04" gate="G$5" pin="P$2"/>
-<pinref part="D03" gate="G$5" pin="P$2"/>
-<pinref part="D02" gate="G$5" pin="P$2"/>
-<pinref part="D01" gate="G$5" pin="P$2"/>
+<pinref part="D14" gate="C1" pin="P$2"/>
+<pinref part="D13" gate="C1" pin="P$2"/>
+<pinref part="D12" gate="C1" pin="P$2"/>
+<pinref part="D11" gate="C1" pin="P$2"/>
+<pinref part="D10" gate="C1" pin="P$2"/>
+<pinref part="D09" gate="C1" pin="P$2"/>
+<pinref part="D08" gate="C1" pin="P$2"/>
+<pinref part="D07" gate="C1" pin="P$2"/>
+<pinref part="D06" gate="C1" pin="P$2"/>
+<pinref part="D05" gate="C1" pin="P$2"/>
+<pinref part="D04" gate="C1" pin="P$2"/>
+<pinref part="D03" gate="C1" pin="P$2"/>
+<pinref part="D02" gate="C1" pin="P$2"/>
+<pinref part="D01" gate="C1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="50.8" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
 <junction x="78.74" y="50.8"/>
 <label x="81.28" y="50.8" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$6" pin="P$2"/>
-<pinref part="D13" gate="G$6" pin="P$2"/>
-<pinref part="D12" gate="G$6" pin="P$2"/>
-<pinref part="D11" gate="G$6" pin="P$2"/>
-<pinref part="D10" gate="G$6" pin="P$2"/>
-<pinref part="D09" gate="G$6" pin="P$2"/>
-<pinref part="D08" gate="G$6" pin="P$2"/>
-<pinref part="D07" gate="G$6" pin="P$2"/>
-<pinref part="D06" gate="G$6" pin="P$2"/>
-<pinref part="D05" gate="G$6" pin="P$2"/>
-<pinref part="D04" gate="G$6" pin="P$2"/>
-<pinref part="D03" gate="G$6" pin="P$2"/>
-<pinref part="D02" gate="G$6" pin="P$2"/>
-<pinref part="D01" gate="G$6" pin="P$2"/>
+<pinref part="D14" gate="C2" pin="P$2"/>
+<pinref part="D13" gate="C2" pin="P$2"/>
+<pinref part="D12" gate="C2" pin="P$2"/>
+<pinref part="D11" gate="C2" pin="P$2"/>
+<pinref part="D10" gate="C2" pin="P$2"/>
+<pinref part="D09" gate="C2" pin="P$2"/>
+<pinref part="D08" gate="C2" pin="P$2"/>
+<pinref part="D07" gate="C2" pin="P$2"/>
+<pinref part="D06" gate="C2" pin="P$2"/>
+<pinref part="D05" gate="C2" pin="P$2"/>
+<pinref part="D04" gate="C2" pin="P$2"/>
+<pinref part="D03" gate="C2" pin="P$2"/>
+<pinref part="D02" gate="C2" pin="P$2"/>
+<pinref part="D01" gate="C2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
 <junction x="104.14" y="55.88"/>
 <label x="106.68" y="55.88" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$23" pin="P$2"/>
-<pinref part="D13" gate="G$23" pin="P$2"/>
-<pinref part="D12" gate="G$23" pin="P$2"/>
-<pinref part="D11" gate="G$23" pin="P$2"/>
-<pinref part="D10" gate="G$23" pin="P$2"/>
-<pinref part="D09" gate="G$23" pin="P$2"/>
-<pinref part="D08" gate="G$23" pin="P$2"/>
-<pinref part="D07" gate="G$23" pin="P$2"/>
-<pinref part="D06" gate="G$23" pin="P$2"/>
-<pinref part="D05" gate="G$23" pin="P$2"/>
-<pinref part="D04" gate="G$23" pin="P$2"/>
-<pinref part="D03" gate="G$23" pin="P$2"/>
-<pinref part="D02" gate="G$23" pin="P$2"/>
-<pinref part="D01" gate="G$23" pin="P$2"/>
+<pinref part="D14" gate="N1" pin="P$2"/>
+<pinref part="D13" gate="N1" pin="P$2"/>
+<pinref part="D12" gate="N1" pin="P$2"/>
+<pinref part="D11" gate="N1" pin="P$2"/>
+<pinref part="D10" gate="N1" pin="P$2"/>
+<pinref part="D09" gate="N1" pin="P$2"/>
+<pinref part="D08" gate="N1" pin="P$2"/>
+<pinref part="D07" gate="N1" pin="P$2"/>
+<pinref part="D06" gate="N1" pin="P$2"/>
+<pinref part="D05" gate="N1" pin="P$2"/>
+<pinref part="D04" gate="N1" pin="P$2"/>
+<pinref part="D03" gate="N1" pin="P$2"/>
+<pinref part="D02" gate="N1" pin="P$2"/>
+<pinref part="D01" gate="N1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="50.8" x2="104.14" y2="50.8" width="0.1524" layer="91"/>
 <junction x="104.14" y="50.8"/>
 <label x="106.68" y="50.8" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$24" pin="P$2"/>
-<pinref part="D13" gate="G$24" pin="P$2"/>
-<pinref part="D12" gate="G$24" pin="P$2"/>
-<pinref part="D11" gate="G$24" pin="P$2"/>
-<pinref part="D10" gate="G$24" pin="P$2"/>
-<pinref part="D09" gate="G$24" pin="P$2"/>
-<pinref part="D08" gate="G$24" pin="P$2"/>
-<pinref part="D07" gate="G$24" pin="P$2"/>
-<pinref part="D06" gate="G$24" pin="P$2"/>
-<pinref part="D05" gate="G$24" pin="P$2"/>
-<pinref part="D04" gate="G$24" pin="P$2"/>
-<pinref part="D03" gate="G$24" pin="P$2"/>
-<pinref part="D02" gate="G$24" pin="P$2"/>
-<pinref part="D01" gate="G$24" pin="P$2"/>
+<pinref part="D14" gate="N2" pin="P$2"/>
+<pinref part="D13" gate="N2" pin="P$2"/>
+<pinref part="D12" gate="N2" pin="P$2"/>
+<pinref part="D11" gate="N2" pin="P$2"/>
+<pinref part="D10" gate="N2" pin="P$2"/>
+<pinref part="D09" gate="N2" pin="P$2"/>
+<pinref part="D08" gate="N2" pin="P$2"/>
+<pinref part="D07" gate="N2" pin="P$2"/>
+<pinref part="D06" gate="N2" pin="P$2"/>
+<pinref part="D05" gate="N2" pin="P$2"/>
+<pinref part="D04" gate="N2" pin="P$2"/>
+<pinref part="D03" gate="N2" pin="P$2"/>
+<pinref part="D02" gate="N2" pin="P$2"/>
+<pinref part="D01" gate="N2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="15.24" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
 <junction x="104.14" y="15.24"/>
 <label x="106.68" y="15.24" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$31" pin="P$2"/>
-<pinref part="D13" gate="G$31" pin="P$2"/>
-<pinref part="D12" gate="G$31" pin="P$2"/>
-<pinref part="D11" gate="G$31" pin="P$2"/>
-<pinref part="D10" gate="G$31" pin="P$2"/>
-<pinref part="D09" gate="G$31" pin="P$2"/>
-<pinref part="D08" gate="G$31" pin="P$2"/>
-<pinref part="D07" gate="G$31" pin="P$2"/>
-<pinref part="D06" gate="G$31" pin="P$2"/>
-<pinref part="D05" gate="G$31" pin="P$2"/>
-<pinref part="D04" gate="G$31" pin="P$2"/>
-<pinref part="D03" gate="G$31" pin="P$2"/>
-<pinref part="D02" gate="G$31" pin="P$2"/>
-<pinref part="D01" gate="G$31" pin="P$2"/>
+<pinref part="D14" gate="T1" pin="P$2"/>
+<pinref part="D13" gate="T1" pin="P$2"/>
+<pinref part="D12" gate="T1" pin="P$2"/>
+<pinref part="D11" gate="T1" pin="P$2"/>
+<pinref part="D10" gate="T1" pin="P$2"/>
+<pinref part="D09" gate="T1" pin="P$2"/>
+<pinref part="D08" gate="T1" pin="P$2"/>
+<pinref part="D07" gate="T1" pin="P$2"/>
+<pinref part="D06" gate="T1" pin="P$2"/>
+<pinref part="D05" gate="T1" pin="P$2"/>
+<pinref part="D04" gate="T1" pin="P$2"/>
+<pinref part="D03" gate="T1" pin="P$2"/>
+<pinref part="D02" gate="T1" pin="P$2"/>
+<pinref part="D01" gate="T1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
 <junction x="104.14" y="10.16"/>
 <label x="106.68" y="10.16" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$32" pin="P$2"/>
-<pinref part="D13" gate="G$32" pin="P$2"/>
-<pinref part="D12" gate="G$32" pin="P$2"/>
-<pinref part="D11" gate="G$32" pin="P$2"/>
-<pinref part="D10" gate="G$32" pin="P$2"/>
-<pinref part="D09" gate="G$32" pin="P$2"/>
-<pinref part="D08" gate="G$32" pin="P$2"/>
-<pinref part="D07" gate="G$32" pin="P$2"/>
-<pinref part="D06" gate="G$32" pin="P$2"/>
-<pinref part="D05" gate="G$32" pin="P$2"/>
-<pinref part="D04" gate="G$32" pin="P$2"/>
-<pinref part="D03" gate="G$32" pin="P$2"/>
-<pinref part="D02" gate="G$32" pin="P$2"/>
-<pinref part="D01" gate="G$32" pin="P$2"/>
+<pinref part="D14" gate="T2" pin="P$2"/>
+<pinref part="D13" gate="T2" pin="P$2"/>
+<pinref part="D12" gate="T2" pin="P$2"/>
+<pinref part="D11" gate="T2" pin="P$2"/>
+<pinref part="D10" gate="T2" pin="P$2"/>
+<pinref part="D09" gate="T2" pin="P$2"/>
+<pinref part="D08" gate="T2" pin="P$2"/>
+<pinref part="D07" gate="T2" pin="P$2"/>
+<pinref part="D06" gate="T2" pin="P$2"/>
+<pinref part="D05" gate="T2" pin="P$2"/>
+<pinref part="D04" gate="T2" pin="P$2"/>
+<pinref part="D03" gate="T2" pin="P$2"/>
+<pinref part="D02" gate="T2" pin="P$2"/>
+<pinref part="D01" gate="T2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="20.32" x2="78.74" y2="20.32" width="0.1524" layer="91"/>
 <junction x="78.74" y="20.32"/>
 <label x="81.28" y="20.32" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$12" pin="P$2"/>
-<pinref part="D13" gate="G$12" pin="P$2"/>
-<pinref part="D12" gate="G$12" pin="P$2"/>
-<pinref part="D11" gate="G$12" pin="P$2"/>
-<pinref part="D10" gate="G$12" pin="P$2"/>
-<pinref part="D09" gate="G$12" pin="P$2"/>
-<pinref part="D08" gate="G$12" pin="P$2"/>
-<pinref part="D07" gate="G$12" pin="P$2"/>
-<pinref part="D06" gate="G$12" pin="P$2"/>
-<pinref part="D05" gate="G$12" pin="P$2"/>
-<pinref part="D04" gate="G$12" pin="P$2"/>
-<pinref part="D03" gate="G$12" pin="P$2"/>
-<pinref part="D02" gate="G$12" pin="P$2"/>
-<pinref part="D01" gate="G$12" pin="P$2"/>
+<pinref part="D14" gate="F2" pin="P$2"/>
+<pinref part="D13" gate="F2" pin="P$2"/>
+<pinref part="D12" gate="F2" pin="P$2"/>
+<pinref part="D11" gate="F2" pin="P$2"/>
+<pinref part="D10" gate="F2" pin="P$2"/>
+<pinref part="D09" gate="F2" pin="P$2"/>
+<pinref part="D08" gate="F2" pin="P$2"/>
+<pinref part="D07" gate="F2" pin="P$2"/>
+<pinref part="D06" gate="F2" pin="P$2"/>
+<pinref part="D05" gate="F2" pin="P$2"/>
+<pinref part="D04" gate="F2" pin="P$2"/>
+<pinref part="D03" gate="F2" pin="P$2"/>
+<pinref part="D02" gate="F2" pin="P$2"/>
+<pinref part="D01" gate="F2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="25.4" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
 <junction x="78.74" y="25.4"/>
 <label x="81.28" y="25.4" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$11" pin="P$2"/>
-<pinref part="D13" gate="G$11" pin="P$2"/>
-<pinref part="D12" gate="G$11" pin="P$2"/>
-<pinref part="D11" gate="G$11" pin="P$2"/>
-<pinref part="D10" gate="G$11" pin="P$2"/>
-<pinref part="D09" gate="G$11" pin="P$2"/>
-<pinref part="D08" gate="G$11" pin="P$2"/>
-<pinref part="D07" gate="G$11" pin="P$2"/>
-<pinref part="D06" gate="G$11" pin="P$2"/>
-<pinref part="D05" gate="G$11" pin="P$2"/>
-<pinref part="D04" gate="G$11" pin="P$2"/>
-<pinref part="D03" gate="G$11" pin="P$2"/>
-<pinref part="D02" gate="G$11" pin="P$2"/>
-<pinref part="D01" gate="G$11" pin="P$2"/>
+<pinref part="D14" gate="F1" pin="P$2"/>
+<pinref part="D13" gate="F1" pin="P$2"/>
+<pinref part="D12" gate="F1" pin="P$2"/>
+<pinref part="D11" gate="F1" pin="P$2"/>
+<pinref part="D10" gate="F1" pin="P$2"/>
+<pinref part="D09" gate="F1" pin="P$2"/>
+<pinref part="D08" gate="F1" pin="P$2"/>
+<pinref part="D07" gate="F1" pin="P$2"/>
+<pinref part="D06" gate="F1" pin="P$2"/>
+<pinref part="D05" gate="F1" pin="P$2"/>
+<pinref part="D04" gate="F1" pin="P$2"/>
+<pinref part="D03" gate="F1" pin="P$2"/>
+<pinref part="D02" gate="F1" pin="P$2"/>
+<pinref part="D01" gate="F1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="15.24" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
 <junction x="48.26" y="15.24"/>
 <label x="50.8" y="15.24" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$31" pin="P$2"/>
-<pinref part="C13" gate="G$31" pin="P$2"/>
-<pinref part="C12" gate="G$31" pin="P$2"/>
-<pinref part="C11" gate="G$31" pin="P$2"/>
-<pinref part="C10" gate="G$31" pin="P$2"/>
-<pinref part="C09" gate="G$31" pin="P$2"/>
-<pinref part="C08" gate="G$31" pin="P$2"/>
-<pinref part="C07" gate="G$31" pin="P$2"/>
-<pinref part="C06" gate="G$31" pin="P$2"/>
-<pinref part="C05" gate="G$31" pin="P$2"/>
-<pinref part="C04" gate="G$31" pin="P$2"/>
-<pinref part="C03" gate="G$31" pin="P$2"/>
-<pinref part="C02" gate="G$31" pin="P$2"/>
-<pinref part="C01" gate="G$31" pin="P$2"/>
+<pinref part="C14" gate="T1" pin="P$2"/>
+<pinref part="C13" gate="T1" pin="P$2"/>
+<pinref part="C12" gate="T1" pin="P$2"/>
+<pinref part="C11" gate="T1" pin="P$2"/>
+<pinref part="C10" gate="T1" pin="P$2"/>
+<pinref part="C09" gate="T1" pin="P$2"/>
+<pinref part="C08" gate="T1" pin="P$2"/>
+<pinref part="C07" gate="T1" pin="P$2"/>
+<pinref part="C06" gate="T1" pin="P$2"/>
+<pinref part="C05" gate="T1" pin="P$2"/>
+<pinref part="C04" gate="T1" pin="P$2"/>
+<pinref part="C03" gate="T1" pin="P$2"/>
+<pinref part="C02" gate="T1" pin="P$2"/>
+<pinref part="C01" gate="T1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="10.16" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
 <junction x="48.26" y="10.16"/>
 <label x="50.8" y="10.16" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$32" pin="P$2"/>
-<pinref part="C13" gate="G$32" pin="P$2"/>
-<pinref part="C12" gate="G$32" pin="P$2"/>
-<pinref part="C11" gate="G$32" pin="P$2"/>
-<pinref part="C10" gate="G$32" pin="P$2"/>
-<pinref part="C09" gate="G$32" pin="P$2"/>
-<pinref part="C08" gate="G$32" pin="P$2"/>
-<pinref part="C07" gate="G$32" pin="P$2"/>
-<pinref part="C06" gate="G$32" pin="P$2"/>
-<pinref part="C05" gate="G$32" pin="P$2"/>
-<pinref part="C04" gate="G$32" pin="P$2"/>
-<pinref part="C03" gate="G$32" pin="P$2"/>
-<pinref part="C02" gate="G$32" pin="P$2"/>
-<pinref part="C01" gate="G$32" pin="P$2"/>
+<pinref part="C14" gate="T2" pin="P$2"/>
+<pinref part="C13" gate="T2" pin="P$2"/>
+<pinref part="C12" gate="T2" pin="P$2"/>
+<pinref part="C11" gate="T2" pin="P$2"/>
+<pinref part="C10" gate="T2" pin="P$2"/>
+<pinref part="C09" gate="T2" pin="P$2"/>
+<pinref part="C08" gate="T2" pin="P$2"/>
+<pinref part="C07" gate="T2" pin="P$2"/>
+<pinref part="C06" gate="T2" pin="P$2"/>
+<pinref part="C05" gate="T2" pin="P$2"/>
+<pinref part="C04" gate="T2" pin="P$2"/>
+<pinref part="C03" gate="T2" pin="P$2"/>
+<pinref part="C02" gate="T2" pin="P$2"/>
+<pinref part="C01" gate="T2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
 <junction x="22.86" y="20.32"/>
 <label x="25.4" y="20.32" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$12" pin="P$2"/>
-<pinref part="C13" gate="G$12" pin="P$2"/>
-<pinref part="C12" gate="G$12" pin="P$2"/>
-<pinref part="C11" gate="G$12" pin="P$2"/>
-<pinref part="C10" gate="G$12" pin="P$2"/>
-<pinref part="C09" gate="G$12" pin="P$2"/>
-<pinref part="C08" gate="G$12" pin="P$2"/>
-<pinref part="C07" gate="G$12" pin="P$2"/>
-<pinref part="C06" gate="G$12" pin="P$2"/>
-<pinref part="C05" gate="G$12" pin="P$2"/>
-<pinref part="C04" gate="G$12" pin="P$2"/>
-<pinref part="C03" gate="G$12" pin="P$2"/>
-<pinref part="C02" gate="G$12" pin="P$2"/>
-<pinref part="C01" gate="G$12" pin="P$2"/>
+<pinref part="C14" gate="F2" pin="P$2"/>
+<pinref part="C13" gate="F2" pin="P$2"/>
+<pinref part="C12" gate="F2" pin="P$2"/>
+<pinref part="C11" gate="F2" pin="P$2"/>
+<pinref part="C10" gate="F2" pin="P$2"/>
+<pinref part="C09" gate="F2" pin="P$2"/>
+<pinref part="C08" gate="F2" pin="P$2"/>
+<pinref part="C07" gate="F2" pin="P$2"/>
+<pinref part="C06" gate="F2" pin="P$2"/>
+<pinref part="C05" gate="F2" pin="P$2"/>
+<pinref part="C04" gate="F2" pin="P$2"/>
+<pinref part="C03" gate="F2" pin="P$2"/>
+<pinref part="C02" gate="F2" pin="P$2"/>
+<pinref part="C01" gate="F2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="25.4" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
 <junction x="22.86" y="25.4"/>
 <label x="25.4" y="25.4" size="1.778" layer="95"/>
-<pinref part="C14" gate="G$11" pin="P$2"/>
-<pinref part="C13" gate="G$11" pin="P$2"/>
-<pinref part="C12" gate="G$11" pin="P$2"/>
-<pinref part="C11" gate="G$11" pin="P$2"/>
-<pinref part="C10" gate="G$11" pin="P$2"/>
-<pinref part="C09" gate="G$11" pin="P$2"/>
-<pinref part="C08" gate="G$11" pin="P$2"/>
-<pinref part="C07" gate="G$11" pin="P$2"/>
-<pinref part="C06" gate="G$11" pin="P$2"/>
-<pinref part="C05" gate="G$11" pin="P$2"/>
-<pinref part="C04" gate="G$11" pin="P$2"/>
-<pinref part="C03" gate="G$11" pin="P$2"/>
-<pinref part="C02" gate="G$11" pin="P$2"/>
-<pinref part="C01" gate="G$11" pin="P$2"/>
+<pinref part="C14" gate="F1" pin="P$2"/>
+<pinref part="C13" gate="F1" pin="P$2"/>
+<pinref part="C12" gate="F1" pin="P$2"/>
+<pinref part="C11" gate="F1" pin="P$2"/>
+<pinref part="C10" gate="F1" pin="P$2"/>
+<pinref part="C09" gate="F1" pin="P$2"/>
+<pinref part="C08" gate="F1" pin="P$2"/>
+<pinref part="C07" gate="F1" pin="P$2"/>
+<pinref part="C06" gate="F1" pin="P$2"/>
+<pinref part="C05" gate="F1" pin="P$2"/>
+<pinref part="C04" gate="F1" pin="P$2"/>
+<pinref part="C03" gate="F1" pin="P$2"/>
+<pinref part="C02" gate="F1" pin="P$2"/>
+<pinref part="C01" gate="F1" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="GND" gate="P" pin="P"/>
@@ -7298,20 +7312,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="45.72" x2="-99.06" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-99.06" y="45.72"/>
 <label x="-96.52" y="45.72" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$7" pin="P$2"/>
-<pinref part="A02" gate="G$7" pin="P$2"/>
-<pinref part="A03" gate="G$7" pin="P$2"/>
-<pinref part="A04" gate="G$7" pin="P$2"/>
-<pinref part="A05" gate="G$7" pin="P$2"/>
-<pinref part="A06" gate="G$7" pin="P$2"/>
-<pinref part="A07" gate="G$7" pin="P$2"/>
-<pinref part="A08" gate="G$7" pin="P$2"/>
-<pinref part="A09" gate="G$7" pin="P$2"/>
-<pinref part="A10" gate="G$7" pin="P$2"/>
-<pinref part="A11" gate="G$7" pin="P$2"/>
-<pinref part="A12" gate="G$7" pin="P$2"/>
-<pinref part="A13" gate="G$7" pin="P$2"/>
-<pinref part="A14" gate="G$7" pin="P$2"/>
+<pinref part="A01" gate="D1" pin="P$2"/>
+<pinref part="A02" gate="D1" pin="P$2"/>
+<pinref part="A03" gate="D1" pin="P$2"/>
+<pinref part="A04" gate="D1" pin="P$2"/>
+<pinref part="A05" gate="D1" pin="P$2"/>
+<pinref part="A06" gate="D1" pin="P$2"/>
+<pinref part="A07" gate="D1" pin="P$2"/>
+<pinref part="A08" gate="D1" pin="P$2"/>
+<pinref part="A09" gate="D1" pin="P$2"/>
+<pinref part="A10" gate="D1" pin="P$2"/>
+<pinref part="A11" gate="D1" pin="P$2"/>
+<pinref part="A12" gate="D1" pin="P$2"/>
+<pinref part="A13" gate="D1" pin="P$2"/>
+<pinref part="A14" gate="D1" pin="P$2"/>
 </segment>
 </net>
 <net name="D03BEMA0L" class="0">
@@ -7319,20 +7333,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="40.64" x2="-99.06" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-99.06" y="40.64"/>
 <label x="-96.52" y="40.64" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$8" pin="P$2"/>
-<pinref part="A02" gate="G$8" pin="P$2"/>
-<pinref part="A03" gate="G$8" pin="P$2"/>
-<pinref part="A04" gate="G$8" pin="P$2"/>
-<pinref part="A05" gate="G$8" pin="P$2"/>
-<pinref part="A06" gate="G$8" pin="P$2"/>
-<pinref part="A07" gate="G$8" pin="P$2"/>
-<pinref part="A08" gate="G$8" pin="P$2"/>
-<pinref part="A09" gate="G$8" pin="P$2"/>
-<pinref part="A10" gate="G$8" pin="P$2"/>
-<pinref part="A11" gate="G$8" pin="P$2"/>
-<pinref part="A12" gate="G$8" pin="P$2"/>
-<pinref part="A13" gate="G$8" pin="P$2"/>
-<pinref part="A14" gate="G$8" pin="P$2"/>
+<pinref part="A01" gate="D2" pin="P$2"/>
+<pinref part="A02" gate="D2" pin="P$2"/>
+<pinref part="A03" gate="D2" pin="P$2"/>
+<pinref part="A04" gate="D2" pin="P$2"/>
+<pinref part="A05" gate="D2" pin="P$2"/>
+<pinref part="A06" gate="D2" pin="P$2"/>
+<pinref part="A07" gate="D2" pin="P$2"/>
+<pinref part="A08" gate="D2" pin="P$2"/>
+<pinref part="A09" gate="D2" pin="P$2"/>
+<pinref part="A10" gate="D2" pin="P$2"/>
+<pinref part="A11" gate="D2" pin="P$2"/>
+<pinref part="A12" gate="D2" pin="P$2"/>
+<pinref part="A13" gate="D2" pin="P$2"/>
+<pinref part="A14" gate="D2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA1L" class="0">
@@ -7340,20 +7354,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="35.56" x2="-99.06" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-99.06" y="35.56"/>
 <label x="-96.52" y="35.56" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$9" pin="P$2"/>
-<pinref part="A02" gate="G$9" pin="P$2"/>
-<pinref part="A03" gate="G$9" pin="P$2"/>
-<pinref part="A04" gate="G$9" pin="P$2"/>
-<pinref part="A05" gate="G$9" pin="P$2"/>
-<pinref part="A06" gate="G$9" pin="P$2"/>
-<pinref part="A07" gate="G$9" pin="P$2"/>
-<pinref part="A08" gate="G$9" pin="P$2"/>
-<pinref part="A09" gate="G$9" pin="P$2"/>
-<pinref part="A10" gate="G$9" pin="P$2"/>
-<pinref part="A11" gate="G$9" pin="P$2"/>
-<pinref part="A12" gate="G$9" pin="P$2"/>
-<pinref part="A13" gate="G$9" pin="P$2"/>
-<pinref part="A14" gate="G$9" pin="P$2"/>
+<pinref part="A01" gate="E1" pin="P$2"/>
+<pinref part="A02" gate="E1" pin="P$2"/>
+<pinref part="A03" gate="E1" pin="P$2"/>
+<pinref part="A04" gate="E1" pin="P$2"/>
+<pinref part="A05" gate="E1" pin="P$2"/>
+<pinref part="A06" gate="E1" pin="P$2"/>
+<pinref part="A07" gate="E1" pin="P$2"/>
+<pinref part="A08" gate="E1" pin="P$2"/>
+<pinref part="A09" gate="E1" pin="P$2"/>
+<pinref part="A10" gate="E1" pin="P$2"/>
+<pinref part="A11" gate="E1" pin="P$2"/>
+<pinref part="A12" gate="E1" pin="P$2"/>
+<pinref part="A13" gate="E1" pin="P$2"/>
+<pinref part="A14" gate="E1" pin="P$2"/>
 </segment>
 </net>
 <net name="D03BEMA1L" class="0">
@@ -7361,20 +7375,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="30.48" x2="-99.06" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-99.06" y="30.48"/>
 <label x="-96.52" y="30.48" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$10" pin="P$2"/>
-<pinref part="A02" gate="G$10" pin="P$2"/>
-<pinref part="A03" gate="G$10" pin="P$2"/>
-<pinref part="A04" gate="G$10" pin="P$2"/>
-<pinref part="A05" gate="G$10" pin="P$2"/>
-<pinref part="A06" gate="G$10" pin="P$2"/>
-<pinref part="A07" gate="G$10" pin="P$2"/>
-<pinref part="A08" gate="G$10" pin="P$2"/>
-<pinref part="A09" gate="G$10" pin="P$2"/>
-<pinref part="A10" gate="G$10" pin="P$2"/>
-<pinref part="A11" gate="G$10" pin="P$2"/>
-<pinref part="A12" gate="G$10" pin="P$2"/>
-<pinref part="A13" gate="G$10" pin="P$2"/>
-<pinref part="A14" gate="G$10" pin="P$2"/>
+<pinref part="A01" gate="E2" pin="P$2"/>
+<pinref part="A02" gate="E2" pin="P$2"/>
+<pinref part="A03" gate="E2" pin="P$2"/>
+<pinref part="A04" gate="E2" pin="P$2"/>
+<pinref part="A05" gate="E2" pin="P$2"/>
+<pinref part="A06" gate="E2" pin="P$2"/>
+<pinref part="A07" gate="E2" pin="P$2"/>
+<pinref part="A08" gate="E2" pin="P$2"/>
+<pinref part="A09" gate="E2" pin="P$2"/>
+<pinref part="A10" gate="E2" pin="P$2"/>
+<pinref part="A11" gate="E2" pin="P$2"/>
+<pinref part="A12" gate="E2" pin="P$2"/>
+<pinref part="A13" gate="E2" pin="P$2"/>
+<pinref part="A14" gate="E2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA3L" class="0">
@@ -7382,39 +7396,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="5.08" x2="-99.06" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-99.06" y="5.08"/>
 <label x="-96.52" y="5.08" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$15" pin="P$2"/>
-<pinref part="A02" gate="G$15" pin="P$2"/>
-<pinref part="A03" gate="G$15" pin="P$2"/>
-<pinref part="A04" gate="G$15" pin="P$2"/>
-<pinref part="A05" gate="G$15" pin="P$2"/>
-<pinref part="A06" gate="G$15" pin="P$2"/>
-<pinref part="A07" gate="G$15" pin="P$2"/>
-<pinref part="A08" gate="G$15" pin="P$2"/>
-<pinref part="A09" gate="G$15" pin="P$2"/>
-<pinref part="A10" gate="G$15" pin="P$2"/>
-<pinref part="A11" gate="G$15" pin="P$2"/>
-<pinref part="A12" gate="G$15" pin="P$2"/>
-<pinref part="A13" gate="G$15" pin="P$2"/>
-<pinref part="A14" gate="G$15" pin="P$2"/>
+<pinref part="A01" gate="J1" pin="P$2"/>
+<pinref part="A02" gate="J1" pin="P$2"/>
+<pinref part="A03" gate="J1" pin="P$2"/>
+<pinref part="A04" gate="J1" pin="P$2"/>
+<pinref part="A05" gate="J1" pin="P$2"/>
+<pinref part="A06" gate="J1" pin="P$2"/>
+<pinref part="A07" gate="J1" pin="P$2"/>
+<pinref part="A08" gate="J1" pin="P$2"/>
+<pinref part="A09" gate="J1" pin="P$2"/>
+<pinref part="A10" gate="J1" pin="P$2"/>
+<pinref part="A11" gate="J1" pin="P$2"/>
+<pinref part="A12" gate="J1" pin="P$2"/>
+<pinref part="A13" gate="J1" pin="P$2"/>
+<pinref part="A14" gate="J1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
 <junction x="-99.06" y="0"/>
-<pinref part="A01" gate="G$16" pin="P$2"/>
-<pinref part="A02" gate="G$16" pin="P$2"/>
-<pinref part="A03" gate="G$16" pin="P$2"/>
-<pinref part="A04" gate="G$16" pin="P$2"/>
-<pinref part="A05" gate="G$16" pin="P$2"/>
-<pinref part="A06" gate="G$16" pin="P$2"/>
-<pinref part="A07" gate="G$16" pin="P$2"/>
-<pinref part="A08" gate="G$16" pin="P$2"/>
-<pinref part="A09" gate="G$16" pin="P$2"/>
-<pinref part="A10" gate="G$16" pin="P$2"/>
-<pinref part="A11" gate="G$16" pin="P$2"/>
-<pinref part="A12" gate="G$16" pin="P$2"/>
-<pinref part="A13" gate="G$16" pin="P$2"/>
-<pinref part="A14" gate="G$16" pin="P$2"/>
+<pinref part="A01" gate="J2" pin="P$2"/>
+<pinref part="A02" gate="J2" pin="P$2"/>
+<pinref part="A03" gate="J2" pin="P$2"/>
+<pinref part="A04" gate="J2" pin="P$2"/>
+<pinref part="A05" gate="J2" pin="P$2"/>
+<pinref part="A06" gate="J2" pin="P$2"/>
+<pinref part="A07" gate="J2" pin="P$2"/>
+<pinref part="A08" gate="J2" pin="P$2"/>
+<pinref part="A09" gate="J2" pin="P$2"/>
+<pinref part="A10" gate="J2" pin="P$2"/>
+<pinref part="A11" gate="J2" pin="P$2"/>
+<pinref part="A12" gate="J2" pin="P$2"/>
+<pinref part="A13" gate="J2" pin="P$2"/>
+<pinref part="A14" gate="J2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD0L" class="0">
@@ -7422,20 +7436,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="-5.08" x2="-99.06" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-99.06" y="-5.08"/>
 <label x="-96.52" y="-5.08" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$17" pin="P$2"/>
-<pinref part="A02" gate="G$17" pin="P$2"/>
-<pinref part="A03" gate="G$17" pin="P$2"/>
-<pinref part="A04" gate="G$17" pin="P$2"/>
-<pinref part="A05" gate="G$17" pin="P$2"/>
-<pinref part="A06" gate="G$17" pin="P$2"/>
-<pinref part="A07" gate="G$17" pin="P$2"/>
-<pinref part="A08" gate="G$17" pin="P$2"/>
-<pinref part="A09" gate="G$17" pin="P$2"/>
-<pinref part="A10" gate="G$17" pin="P$2"/>
-<pinref part="A11" gate="G$17" pin="P$2"/>
-<pinref part="A12" gate="G$17" pin="P$2"/>
-<pinref part="A13" gate="G$17" pin="P$2"/>
-<pinref part="A14" gate="G$17" pin="P$2"/>
+<pinref part="A01" gate="K1" pin="P$2"/>
+<pinref part="A02" gate="K1" pin="P$2"/>
+<pinref part="A03" gate="K1" pin="P$2"/>
+<pinref part="A04" gate="K1" pin="P$2"/>
+<pinref part="A05" gate="K1" pin="P$2"/>
+<pinref part="A06" gate="K1" pin="P$2"/>
+<pinref part="A07" gate="K1" pin="P$2"/>
+<pinref part="A08" gate="K1" pin="P$2"/>
+<pinref part="A09" gate="K1" pin="P$2"/>
+<pinref part="A10" gate="K1" pin="P$2"/>
+<pinref part="A11" gate="K1" pin="P$2"/>
+<pinref part="A12" gate="K1" pin="P$2"/>
+<pinref part="A13" gate="K1" pin="P$2"/>
+<pinref part="A14" gate="K1" pin="P$2"/>
 </segment>
 </net>
 <net name="D01READL" class="0">
@@ -7443,20 +7457,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="-10.16" x2="-99.06" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-99.06" y="-10.16"/>
 <label x="-96.52" y="-10.16" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$18" pin="P$2"/>
-<pinref part="A02" gate="G$18" pin="P$2"/>
-<pinref part="A03" gate="G$18" pin="P$2"/>
-<pinref part="A04" gate="G$18" pin="P$2"/>
-<pinref part="A05" gate="G$18" pin="P$2"/>
-<pinref part="A06" gate="G$18" pin="P$2"/>
-<pinref part="A07" gate="G$18" pin="P$2"/>
-<pinref part="A08" gate="G$18" pin="P$2"/>
-<pinref part="A09" gate="G$18" pin="P$2"/>
-<pinref part="A10" gate="G$18" pin="P$2"/>
-<pinref part="A11" gate="G$18" pin="P$2"/>
-<pinref part="A12" gate="G$18" pin="P$2"/>
-<pinref part="A13" gate="G$18" pin="P$2"/>
-<pinref part="A14" gate="G$18" pin="P$2"/>
+<pinref part="A01" gate="K2" pin="P$2"/>
+<pinref part="A02" gate="K2" pin="P$2"/>
+<pinref part="A03" gate="K2" pin="P$2"/>
+<pinref part="A04" gate="K2" pin="P$2"/>
+<pinref part="A05" gate="K2" pin="P$2"/>
+<pinref part="A06" gate="K2" pin="P$2"/>
+<pinref part="A07" gate="K2" pin="P$2"/>
+<pinref part="A08" gate="K2" pin="P$2"/>
+<pinref part="A09" gate="K2" pin="P$2"/>
+<pinref part="A10" gate="K2" pin="P$2"/>
+<pinref part="A11" gate="K2" pin="P$2"/>
+<pinref part="A12" gate="K2" pin="P$2"/>
+<pinref part="A13" gate="K2" pin="P$2"/>
+<pinref part="A14" gate="K2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD1L" class="0">
@@ -7464,20 +7478,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-55.88" y1="76.2" x2="-68.58" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-68.58" y="76.2"/>
 <label x="-66.04" y="76.2" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$19" pin="P$2"/>
-<pinref part="A02" gate="G$19" pin="P$2"/>
-<pinref part="A03" gate="G$19" pin="P$2"/>
-<pinref part="A04" gate="G$19" pin="P$2"/>
-<pinref part="A05" gate="G$19" pin="P$2"/>
-<pinref part="A06" gate="G$19" pin="P$2"/>
-<pinref part="A07" gate="G$19" pin="P$2"/>
-<pinref part="A08" gate="G$19" pin="P$2"/>
-<pinref part="A09" gate="G$19" pin="P$2"/>
-<pinref part="A10" gate="G$19" pin="P$2"/>
-<pinref part="A11" gate="G$19" pin="P$2"/>
-<pinref part="A12" gate="G$19" pin="P$2"/>
-<pinref part="A13" gate="G$19" pin="P$2"/>
-<pinref part="A14" gate="G$19" pin="P$2"/>
+<pinref part="A01" gate="L1" pin="P$2"/>
+<pinref part="A02" gate="L1" pin="P$2"/>
+<pinref part="A03" gate="L1" pin="P$2"/>
+<pinref part="A04" gate="L1" pin="P$2"/>
+<pinref part="A05" gate="L1" pin="P$2"/>
+<pinref part="A06" gate="L1" pin="P$2"/>
+<pinref part="A07" gate="L1" pin="P$2"/>
+<pinref part="A08" gate="L1" pin="P$2"/>
+<pinref part="A09" gate="L1" pin="P$2"/>
+<pinref part="A10" gate="L1" pin="P$2"/>
+<pinref part="A11" gate="L1" pin="P$2"/>
+<pinref part="A12" gate="L1" pin="P$2"/>
+<pinref part="A13" gate="L1" pin="P$2"/>
+<pinref part="A14" gate="L1" pin="P$2"/>
 </segment>
 </net>
 <net name="D01STROBE" class="0">
@@ -7485,20 +7499,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-55.88" y1="60.96" x2="-68.58" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-68.58" y="60.96"/>
 <label x="-66.04" y="60.96" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$22" pin="P$2"/>
-<pinref part="A02" gate="G$22" pin="P$2"/>
-<pinref part="A03" gate="G$22" pin="P$2"/>
-<pinref part="A04" gate="G$22" pin="P$2"/>
-<pinref part="A05" gate="G$22" pin="P$2"/>
-<pinref part="A06" gate="G$22" pin="P$2"/>
-<pinref part="A07" gate="G$22" pin="P$2"/>
-<pinref part="A08" gate="G$22" pin="P$2"/>
-<pinref part="A09" gate="G$22" pin="P$2"/>
-<pinref part="A10" gate="G$22" pin="P$2"/>
-<pinref part="A11" gate="G$22" pin="P$2"/>
-<pinref part="A12" gate="G$22" pin="P$2"/>
-<pinref part="A13" gate="G$22" pin="P$2"/>
-<pinref part="A14" gate="G$22" pin="P$2"/>
+<pinref part="A01" gate="M2" pin="P$2"/>
+<pinref part="A02" gate="M2" pin="P$2"/>
+<pinref part="A03" gate="M2" pin="P$2"/>
+<pinref part="A04" gate="M2" pin="P$2"/>
+<pinref part="A05" gate="M2" pin="P$2"/>
+<pinref part="A06" gate="M2" pin="P$2"/>
+<pinref part="A07" gate="M2" pin="P$2"/>
+<pinref part="A08" gate="M2" pin="P$2"/>
+<pinref part="A09" gate="M2" pin="P$2"/>
+<pinref part="A10" gate="M2" pin="P$2"/>
+<pinref part="A11" gate="M2" pin="P$2"/>
+<pinref part="A12" gate="M2" pin="P$2"/>
+<pinref part="A13" gate="M2" pin="P$2"/>
+<pinref part="A14" gate="M2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD3L" class="0">
@@ -7506,20 +7520,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-58.42" y1="45.72" x2="-68.58" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-68.58" y="45.72"/>
 <label x="-66.04" y="45.72" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$25" pin="P$2"/>
-<pinref part="A02" gate="G$25" pin="P$2"/>
-<pinref part="A03" gate="G$25" pin="P$2"/>
-<pinref part="A04" gate="G$25" pin="P$2"/>
-<pinref part="A05" gate="G$25" pin="P$2"/>
-<pinref part="A06" gate="G$25" pin="P$2"/>
-<pinref part="A07" gate="G$25" pin="P$2"/>
-<pinref part="A08" gate="G$25" pin="P$2"/>
-<pinref part="A09" gate="G$25" pin="P$2"/>
-<pinref part="A10" gate="G$25" pin="P$2"/>
-<pinref part="A11" gate="G$25" pin="P$2"/>
-<pinref part="A12" gate="G$25" pin="P$2"/>
-<pinref part="A13" gate="G$25" pin="P$2"/>
-<pinref part="A14" gate="G$25" pin="P$2"/>
+<pinref part="A01" gate="P1" pin="P$2"/>
+<pinref part="A02" gate="P1" pin="P$2"/>
+<pinref part="A03" gate="P1" pin="P$2"/>
+<pinref part="A04" gate="P1" pin="P$2"/>
+<pinref part="A05" gate="P1" pin="P$2"/>
+<pinref part="A06" gate="P1" pin="P$2"/>
+<pinref part="A07" gate="P1" pin="P$2"/>
+<pinref part="A08" gate="P1" pin="P$2"/>
+<pinref part="A09" gate="P1" pin="P$2"/>
+<pinref part="A10" gate="P1" pin="P$2"/>
+<pinref part="A11" gate="P1" pin="P$2"/>
+<pinref part="A12" gate="P1" pin="P$2"/>
+<pinref part="A13" gate="P1" pin="P$2"/>
+<pinref part="A14" gate="P1" pin="P$2"/>
 </segment>
 </net>
 <net name="D01INHIBIT" class="0">
@@ -7527,39 +7541,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-55.88" y1="40.64" x2="-68.58" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-68.58" y="40.64"/>
 <label x="-66.04" y="40.64" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$26" pin="P$2"/>
-<pinref part="A02" gate="G$26" pin="P$2"/>
-<pinref part="A03" gate="G$26" pin="P$2"/>
-<pinref part="A04" gate="G$26" pin="P$2"/>
-<pinref part="A05" gate="G$26" pin="P$2"/>
-<pinref part="A06" gate="G$26" pin="P$2"/>
-<pinref part="A07" gate="G$26" pin="P$2"/>
-<pinref part="A08" gate="G$26" pin="P$2"/>
-<pinref part="A09" gate="G$26" pin="P$2"/>
-<pinref part="A10" gate="G$26" pin="P$2"/>
-<pinref part="A11" gate="G$26" pin="P$2"/>
-<pinref part="A12" gate="G$26" pin="P$2"/>
-<pinref part="A13" gate="G$26" pin="P$2"/>
-<pinref part="A14" gate="G$26" pin="P$2"/>
+<pinref part="A01" gate="P2" pin="P$2"/>
+<pinref part="A02" gate="P2" pin="P$2"/>
+<pinref part="A03" gate="P2" pin="P$2"/>
+<pinref part="A04" gate="P2" pin="P$2"/>
+<pinref part="A05" gate="P2" pin="P$2"/>
+<pinref part="A06" gate="P2" pin="P$2"/>
+<pinref part="A07" gate="P2" pin="P$2"/>
+<pinref part="A08" gate="P2" pin="P$2"/>
+<pinref part="A09" gate="P2" pin="P$2"/>
+<pinref part="A10" gate="P2" pin="P$2"/>
+<pinref part="A11" gate="P2" pin="P$2"/>
+<pinref part="A12" gate="P2" pin="P$2"/>
+<pinref part="A13" gate="P2" pin="P$2"/>
+<pinref part="A14" gate="P2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$62" class="0">
 <segment>
 <junction x="-68.58" y="35.56"/>
-<pinref part="A01" gate="G$27" pin="P$2"/>
-<pinref part="A02" gate="G$27" pin="P$2"/>
-<pinref part="A03" gate="G$27" pin="P$2"/>
-<pinref part="A04" gate="G$27" pin="P$2"/>
-<pinref part="A05" gate="G$27" pin="P$2"/>
-<pinref part="A06" gate="G$27" pin="P$2"/>
-<pinref part="A07" gate="G$27" pin="P$2"/>
-<pinref part="A08" gate="G$27" pin="P$2"/>
-<pinref part="A09" gate="G$27" pin="P$2"/>
-<pinref part="A10" gate="G$27" pin="P$2"/>
-<pinref part="A11" gate="G$27" pin="P$2"/>
-<pinref part="A12" gate="G$27" pin="P$2"/>
-<pinref part="A13" gate="G$27" pin="P$2"/>
-<pinref part="A14" gate="G$27" pin="P$2"/>
+<pinref part="A01" gate="R1" pin="P$2"/>
+<pinref part="A02" gate="R1" pin="P$2"/>
+<pinref part="A03" gate="R1" pin="P$2"/>
+<pinref part="A04" gate="R1" pin="P$2"/>
+<pinref part="A05" gate="R1" pin="P$2"/>
+<pinref part="A06" gate="R1" pin="P$2"/>
+<pinref part="A07" gate="R1" pin="P$2"/>
+<pinref part="A08" gate="R1" pin="P$2"/>
+<pinref part="A09" gate="R1" pin="P$2"/>
+<pinref part="A10" gate="R1" pin="P$2"/>
+<pinref part="A11" gate="R1" pin="P$2"/>
+<pinref part="A12" gate="R1" pin="P$2"/>
+<pinref part="A13" gate="R1" pin="P$2"/>
+<pinref part="A14" gate="R1" pin="P$2"/>
 </segment>
 </net>
 <net name="D01RETURN" class="0">
@@ -7567,39 +7581,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-55.88" y1="30.48" x2="-68.58" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-68.58" y="30.48"/>
 <label x="-66.04" y="30.48" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$28" pin="P$2"/>
-<pinref part="A02" gate="G$28" pin="P$2"/>
-<pinref part="A03" gate="G$28" pin="P$2"/>
-<pinref part="A04" gate="G$28" pin="P$2"/>
-<pinref part="A05" gate="G$28" pin="P$2"/>
-<pinref part="A06" gate="G$28" pin="P$2"/>
-<pinref part="A07" gate="G$28" pin="P$2"/>
-<pinref part="A08" gate="G$28" pin="P$2"/>
-<pinref part="A09" gate="G$28" pin="P$2"/>
-<pinref part="A10" gate="G$28" pin="P$2"/>
-<pinref part="A11" gate="G$28" pin="P$2"/>
-<pinref part="A12" gate="G$28" pin="P$2"/>
-<pinref part="A13" gate="G$28" pin="P$2"/>
-<pinref part="A14" gate="G$28" pin="P$2"/>
+<pinref part="A01" gate="R2" pin="P$2"/>
+<pinref part="A02" gate="R2" pin="P$2"/>
+<pinref part="A03" gate="R2" pin="P$2"/>
+<pinref part="A04" gate="R2" pin="P$2"/>
+<pinref part="A05" gate="R2" pin="P$2"/>
+<pinref part="A06" gate="R2" pin="P$2"/>
+<pinref part="A07" gate="R2" pin="P$2"/>
+<pinref part="A08" gate="R2" pin="P$2"/>
+<pinref part="A09" gate="R2" pin="P$2"/>
+<pinref part="A10" gate="R2" pin="P$2"/>
+<pinref part="A11" gate="R2" pin="P$2"/>
+<pinref part="A12" gate="R2" pin="P$2"/>
+<pinref part="A13" gate="R2" pin="P$2"/>
+<pinref part="A14" gate="R2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$64" class="0">
 <segment>
 <junction x="-68.58" y="25.4"/>
-<pinref part="A01" gate="G$29" pin="P$2"/>
-<pinref part="A02" gate="G$29" pin="P$2"/>
-<pinref part="A03" gate="G$29" pin="P$2"/>
-<pinref part="A04" gate="G$29" pin="P$2"/>
-<pinref part="A05" gate="G$29" pin="P$2"/>
-<pinref part="A06" gate="G$29" pin="P$2"/>
-<pinref part="A07" gate="G$29" pin="P$2"/>
-<pinref part="A08" gate="G$29" pin="P$2"/>
-<pinref part="A09" gate="G$29" pin="P$2"/>
-<pinref part="A10" gate="G$29" pin="P$2"/>
-<pinref part="A11" gate="G$29" pin="P$2"/>
-<pinref part="A12" gate="G$29" pin="P$2"/>
-<pinref part="A13" gate="G$29" pin="P$2"/>
-<pinref part="A14" gate="G$29" pin="P$2"/>
+<pinref part="A01" gate="S1" pin="P$2"/>
+<pinref part="A02" gate="S1" pin="P$2"/>
+<pinref part="A03" gate="S1" pin="P$2"/>
+<pinref part="A04" gate="S1" pin="P$2"/>
+<pinref part="A05" gate="S1" pin="P$2"/>
+<pinref part="A06" gate="S1" pin="P$2"/>
+<pinref part="A07" gate="S1" pin="P$2"/>
+<pinref part="A08" gate="S1" pin="P$2"/>
+<pinref part="A09" gate="S1" pin="P$2"/>
+<pinref part="A10" gate="S1" pin="P$2"/>
+<pinref part="A11" gate="S1" pin="P$2"/>
+<pinref part="A12" gate="S1" pin="P$2"/>
+<pinref part="A13" gate="S1" pin="P$2"/>
+<pinref part="A14" gate="S1" pin="P$2"/>
 </segment>
 </net>
 <net name="D01WRITE" class="0">
@@ -7607,39 +7621,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-55.88" y1="20.32" x2="-68.58" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-68.58" y="20.32"/>
 <label x="-66.04" y="20.32" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$30" pin="P$2"/>
-<pinref part="A02" gate="G$30" pin="P$2"/>
-<pinref part="A03" gate="G$30" pin="P$2"/>
-<pinref part="A04" gate="G$30" pin="P$2"/>
-<pinref part="A05" gate="G$30" pin="P$2"/>
-<pinref part="A06" gate="G$30" pin="P$2"/>
-<pinref part="A07" gate="G$30" pin="P$2"/>
-<pinref part="A08" gate="G$30" pin="P$2"/>
-<pinref part="A09" gate="G$30" pin="P$2"/>
-<pinref part="A10" gate="G$30" pin="P$2"/>
-<pinref part="A11" gate="G$30" pin="P$2"/>
-<pinref part="A12" gate="G$30" pin="P$2"/>
-<pinref part="A13" gate="G$30" pin="P$2"/>
-<pinref part="A14" gate="G$30" pin="P$2"/>
+<pinref part="A01" gate="S2" pin="P$2"/>
+<pinref part="A02" gate="S2" pin="P$2"/>
+<pinref part="A03" gate="S2" pin="P$2"/>
+<pinref part="A04" gate="S2" pin="P$2"/>
+<pinref part="A05" gate="S2" pin="P$2"/>
+<pinref part="A06" gate="S2" pin="P$2"/>
+<pinref part="A07" gate="S2" pin="P$2"/>
+<pinref part="A08" gate="S2" pin="P$2"/>
+<pinref part="A09" gate="S2" pin="P$2"/>
+<pinref part="A10" gate="S2" pin="P$2"/>
+<pinref part="A11" gate="S2" pin="P$2"/>
+<pinref part="A12" gate="S2" pin="P$2"/>
+<pinref part="A13" gate="S2" pin="P$2"/>
+<pinref part="A14" gate="S2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$70" class="0">
 <segment>
 <junction x="-68.58" y="5.08"/>
-<pinref part="A01" gate="G$33" pin="P$2"/>
-<pinref part="A02" gate="G$33" pin="P$2"/>
-<pinref part="A03" gate="G$33" pin="P$2"/>
-<pinref part="A04" gate="G$33" pin="P$2"/>
-<pinref part="A05" gate="G$33" pin="P$2"/>
-<pinref part="A06" gate="G$33" pin="P$2"/>
-<pinref part="A07" gate="G$33" pin="P$2"/>
-<pinref part="A08" gate="G$33" pin="P$2"/>
-<pinref part="A09" gate="G$33" pin="P$2"/>
-<pinref part="A10" gate="G$33" pin="P$2"/>
-<pinref part="A11" gate="G$33" pin="P$2"/>
-<pinref part="A12" gate="G$33" pin="P$2"/>
-<pinref part="A13" gate="G$33" pin="P$2"/>
-<pinref part="A14" gate="G$33" pin="P$2"/>
+<pinref part="A01" gate="U1" pin="P$2"/>
+<pinref part="A02" gate="U1" pin="P$2"/>
+<pinref part="A03" gate="U1" pin="P$2"/>
+<pinref part="A04" gate="U1" pin="P$2"/>
+<pinref part="A05" gate="U1" pin="P$2"/>
+<pinref part="A06" gate="U1" pin="P$2"/>
+<pinref part="A07" gate="U1" pin="P$2"/>
+<pinref part="A08" gate="U1" pin="P$2"/>
+<pinref part="A09" gate="U1" pin="P$2"/>
+<pinref part="A10" gate="U1" pin="P$2"/>
+<pinref part="A11" gate="U1" pin="P$2"/>
+<pinref part="A12" gate="U1" pin="P$2"/>
+<pinref part="A13" gate="U1" pin="P$2"/>
+<pinref part="A14" gate="U1" pin="P$2"/>
 </segment>
 </net>
 <net name="A15U1" class="0">
@@ -7647,96 +7661,96 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-55.88" y1="0" x2="-68.58" y2="0" width="0.1524" layer="91"/>
 <junction x="-68.58" y="0"/>
 <label x="-66.04" y="0" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$34" pin="P$2"/>
-<pinref part="A02" gate="G$34" pin="P$2"/>
-<pinref part="A03" gate="G$34" pin="P$2"/>
-<pinref part="A04" gate="G$34" pin="P$2"/>
-<pinref part="A05" gate="G$34" pin="P$2"/>
-<pinref part="A06" gate="G$34" pin="P$2"/>
-<pinref part="A07" gate="G$34" pin="P$2"/>
-<pinref part="A08" gate="G$34" pin="P$2"/>
-<pinref part="A09" gate="G$34" pin="P$2"/>
-<pinref part="A10" gate="G$34" pin="P$2"/>
-<pinref part="A11" gate="G$34" pin="P$2"/>
-<pinref part="A12" gate="G$34" pin="P$2"/>
-<pinref part="A13" gate="G$34" pin="P$2"/>
-<pinref part="A14" gate="G$34" pin="P$2"/>
+<pinref part="A01" gate="U2" pin="P$2"/>
+<pinref part="A02" gate="U2" pin="P$2"/>
+<pinref part="A03" gate="U2" pin="P$2"/>
+<pinref part="A04" gate="U2" pin="P$2"/>
+<pinref part="A05" gate="U2" pin="P$2"/>
+<pinref part="A06" gate="U2" pin="P$2"/>
+<pinref part="A07" gate="U2" pin="P$2"/>
+<pinref part="A08" gate="U2" pin="P$2"/>
+<pinref part="A09" gate="U2" pin="P$2"/>
+<pinref part="A10" gate="U2" pin="P$2"/>
+<pinref part="A11" gate="U2" pin="P$2"/>
+<pinref part="A12" gate="U2" pin="P$2"/>
+<pinref part="A13" gate="U2" pin="P$2"/>
+<pinref part="A14" gate="U2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$72" class="0">
 <segment>
 <junction x="-68.58" y="-5.08"/>
-<pinref part="A01" gate="G$35" pin="P$2"/>
-<pinref part="A02" gate="G$35" pin="P$2"/>
-<pinref part="A03" gate="G$35" pin="P$2"/>
-<pinref part="A04" gate="G$35" pin="P$2"/>
-<pinref part="A05" gate="G$35" pin="P$2"/>
-<pinref part="A06" gate="G$35" pin="P$2"/>
-<pinref part="A07" gate="G$35" pin="P$2"/>
-<pinref part="A08" gate="G$35" pin="P$2"/>
-<pinref part="A09" gate="G$35" pin="P$2"/>
-<pinref part="A10" gate="G$35" pin="P$2"/>
-<pinref part="A11" gate="G$35" pin="P$2"/>
-<pinref part="A12" gate="G$35" pin="P$2"/>
-<pinref part="A13" gate="G$35" pin="P$2"/>
-<pinref part="A14" gate="G$35" pin="P$2"/>
+<pinref part="A01" gate="V1" pin="P$2"/>
+<pinref part="A02" gate="V1" pin="P$2"/>
+<pinref part="A03" gate="V1" pin="P$2"/>
+<pinref part="A04" gate="V1" pin="P$2"/>
+<pinref part="A05" gate="V1" pin="P$2"/>
+<pinref part="A06" gate="V1" pin="P$2"/>
+<pinref part="A07" gate="V1" pin="P$2"/>
+<pinref part="A08" gate="V1" pin="P$2"/>
+<pinref part="A09" gate="V1" pin="P$2"/>
+<pinref part="A10" gate="V1" pin="P$2"/>
+<pinref part="A11" gate="V1" pin="P$2"/>
+<pinref part="A12" gate="V1" pin="P$2"/>
+<pinref part="A13" gate="V1" pin="P$2"/>
+<pinref part="A14" gate="V1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$74" class="0">
 <segment>
 <junction x="-68.58" y="-10.16"/>
-<pinref part="A01" gate="G$36" pin="P$2"/>
-<pinref part="A02" gate="G$36" pin="P$2"/>
-<pinref part="A03" gate="G$36" pin="P$2"/>
-<pinref part="A04" gate="G$36" pin="P$2"/>
-<pinref part="A05" gate="G$36" pin="P$2"/>
-<pinref part="A06" gate="G$36" pin="P$2"/>
-<pinref part="A07" gate="G$36" pin="P$2"/>
-<pinref part="A08" gate="G$36" pin="P$2"/>
-<pinref part="A09" gate="G$36" pin="P$2"/>
-<pinref part="A10" gate="G$36" pin="P$2"/>
-<pinref part="A11" gate="G$36" pin="P$2"/>
-<pinref part="A12" gate="G$36" pin="P$2"/>
-<pinref part="A13" gate="G$36" pin="P$2"/>
-<pinref part="A14" gate="G$36" pin="P$2"/>
+<pinref part="A01" gate="V2" pin="P$2"/>
+<pinref part="A02" gate="V2" pin="P$2"/>
+<pinref part="A03" gate="V2" pin="P$2"/>
+<pinref part="A04" gate="V2" pin="P$2"/>
+<pinref part="A05" gate="V2" pin="P$2"/>
+<pinref part="A06" gate="V2" pin="P$2"/>
+<pinref part="A07" gate="V2" pin="P$2"/>
+<pinref part="A08" gate="V2" pin="P$2"/>
+<pinref part="A09" gate="V2" pin="P$2"/>
+<pinref part="A10" gate="V2" pin="P$2"/>
+<pinref part="A11" gate="V2" pin="P$2"/>
+<pinref part="A12" gate="V2" pin="P$2"/>
+<pinref part="A13" gate="V2" pin="P$2"/>
+<pinref part="A14" gate="V2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$75" class="0">
 <segment>
 <junction x="-38.1" y="76.2"/>
-<pinref part="B13" gate="G$1" pin="P$2"/>
-<pinref part="B12" gate="G$1" pin="P$2"/>
-<pinref part="B11" gate="G$1" pin="P$2"/>
-<pinref part="B10" gate="G$1" pin="P$2"/>
-<pinref part="B09" gate="G$1" pin="P$2"/>
-<pinref part="B08" gate="G$1" pin="P$2"/>
-<pinref part="B07" gate="G$1" pin="P$2"/>
-<pinref part="B06" gate="G$1" pin="P$2"/>
-<pinref part="B05" gate="G$1" pin="P$2"/>
-<pinref part="B04" gate="G$1" pin="P$2"/>
-<pinref part="B03" gate="G$1" pin="P$2"/>
-<pinref part="B02" gate="G$1" pin="P$2"/>
-<pinref part="B01" gate="G$1" pin="P$2"/>
-<pinref part="B14" gate="G$1" pin="P$2"/>
+<pinref part="B13" gate="A1" pin="P$2"/>
+<pinref part="B12" gate="A1" pin="P$2"/>
+<pinref part="B11" gate="A1" pin="P$2"/>
+<pinref part="B10" gate="A1" pin="P$2"/>
+<pinref part="B09" gate="A1" pin="P$2"/>
+<pinref part="B08" gate="A1" pin="P$2"/>
+<pinref part="B07" gate="A1" pin="P$2"/>
+<pinref part="B06" gate="A1" pin="P$2"/>
+<pinref part="B05" gate="A1" pin="P$2"/>
+<pinref part="B04" gate="A1" pin="P$2"/>
+<pinref part="B03" gate="A1" pin="P$2"/>
+<pinref part="B02" gate="A1" pin="P$2"/>
+<pinref part="B01" gate="A1" pin="P$2"/>
+<pinref part="B14" gate="A1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$77" class="0">
 <segment>
 <junction x="-38.1" y="66.04"/>
-<pinref part="B13" gate="G$3" pin="P$2"/>
-<pinref part="B12" gate="G$3" pin="P$2"/>
-<pinref part="B11" gate="G$3" pin="P$2"/>
-<pinref part="B10" gate="G$3" pin="P$2"/>
-<pinref part="B09" gate="G$3" pin="P$2"/>
-<pinref part="B08" gate="G$3" pin="P$2"/>
-<pinref part="B07" gate="G$3" pin="P$2"/>
-<pinref part="B06" gate="G$3" pin="P$2"/>
-<pinref part="B05" gate="G$3" pin="P$2"/>
-<pinref part="B04" gate="G$3" pin="P$2"/>
-<pinref part="B03" gate="G$3" pin="P$2"/>
-<pinref part="B02" gate="G$3" pin="P$2"/>
-<pinref part="B01" gate="G$3" pin="P$2"/>
-<pinref part="B14" gate="G$3" pin="P$2"/>
+<pinref part="B13" gate="B1" pin="P$2"/>
+<pinref part="B12" gate="B1" pin="P$2"/>
+<pinref part="B11" gate="B1" pin="P$2"/>
+<pinref part="B10" gate="B1" pin="P$2"/>
+<pinref part="B09" gate="B1" pin="P$2"/>
+<pinref part="B08" gate="B1" pin="P$2"/>
+<pinref part="B07" gate="B1" pin="P$2"/>
+<pinref part="B06" gate="B1" pin="P$2"/>
+<pinref part="B05" gate="B1" pin="P$2"/>
+<pinref part="B04" gate="B1" pin="P$2"/>
+<pinref part="B03" gate="B1" pin="P$2"/>
+<pinref part="B02" gate="B1" pin="P$2"/>
+<pinref part="B01" gate="B1" pin="P$2"/>
+<pinref part="B14" gate="B1" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA4L" class="0">
@@ -7744,39 +7758,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-27.94" y1="45.72" x2="-38.1" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-38.1" y="45.72"/>
 <label x="-35.56" y="45.72" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$7" pin="P$2"/>
-<pinref part="B12" gate="G$7" pin="P$2"/>
-<pinref part="B11" gate="G$7" pin="P$2"/>
-<pinref part="B10" gate="G$7" pin="P$2"/>
-<pinref part="B09" gate="G$7" pin="P$2"/>
-<pinref part="B08" gate="G$7" pin="P$2"/>
-<pinref part="B07" gate="G$7" pin="P$2"/>
-<pinref part="B06" gate="G$7" pin="P$2"/>
-<pinref part="B05" gate="G$7" pin="P$2"/>
-<pinref part="B04" gate="G$7" pin="P$2"/>
-<pinref part="B03" gate="G$7" pin="P$2"/>
-<pinref part="B02" gate="G$7" pin="P$2"/>
-<pinref part="B01" gate="G$7" pin="P$2"/>
-<pinref part="B14" gate="G$7" pin="P$2"/>
+<pinref part="B13" gate="D1" pin="P$2"/>
+<pinref part="B12" gate="D1" pin="P$2"/>
+<pinref part="B11" gate="D1" pin="P$2"/>
+<pinref part="B10" gate="D1" pin="P$2"/>
+<pinref part="B09" gate="D1" pin="P$2"/>
+<pinref part="B08" gate="D1" pin="P$2"/>
+<pinref part="B07" gate="D1" pin="P$2"/>
+<pinref part="B06" gate="D1" pin="P$2"/>
+<pinref part="B05" gate="D1" pin="P$2"/>
+<pinref part="B04" gate="D1" pin="P$2"/>
+<pinref part="B03" gate="D1" pin="P$2"/>
+<pinref part="B02" gate="D1" pin="P$2"/>
+<pinref part="B01" gate="D1" pin="P$2"/>
+<pinref part="B14" gate="D1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$82" class="0">
 <segment>
 <junction x="-38.1" y="40.64"/>
-<pinref part="B13" gate="G$8" pin="P$2"/>
-<pinref part="B12" gate="G$8" pin="P$2"/>
-<pinref part="B11" gate="G$8" pin="P$2"/>
-<pinref part="B10" gate="G$8" pin="P$2"/>
-<pinref part="B09" gate="G$8" pin="P$2"/>
-<pinref part="B08" gate="G$8" pin="P$2"/>
-<pinref part="B07" gate="G$8" pin="P$2"/>
-<pinref part="B06" gate="G$8" pin="P$2"/>
-<pinref part="B05" gate="G$8" pin="P$2"/>
-<pinref part="B04" gate="G$8" pin="P$2"/>
-<pinref part="B03" gate="G$8" pin="P$2"/>
-<pinref part="B02" gate="G$8" pin="P$2"/>
-<pinref part="B01" gate="G$8" pin="P$2"/>
-<pinref part="B14" gate="G$8" pin="P$2"/>
+<pinref part="B13" gate="D2" pin="P$2"/>
+<pinref part="B12" gate="D2" pin="P$2"/>
+<pinref part="B11" gate="D2" pin="P$2"/>
+<pinref part="B10" gate="D2" pin="P$2"/>
+<pinref part="B09" gate="D2" pin="P$2"/>
+<pinref part="B08" gate="D2" pin="P$2"/>
+<pinref part="B07" gate="D2" pin="P$2"/>
+<pinref part="B06" gate="D2" pin="P$2"/>
+<pinref part="B05" gate="D2" pin="P$2"/>
+<pinref part="B04" gate="D2" pin="P$2"/>
+<pinref part="B03" gate="D2" pin="P$2"/>
+<pinref part="B02" gate="D2" pin="P$2"/>
+<pinref part="B01" gate="D2" pin="P$2"/>
+<pinref part="B14" gate="D2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA5L" class="0">
@@ -7784,39 +7798,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-27.94" y1="35.56" x2="-38.1" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-38.1" y="35.56"/>
 <label x="-35.56" y="35.56" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$9" pin="P$2"/>
-<pinref part="B12" gate="G$9" pin="P$2"/>
-<pinref part="B11" gate="G$9" pin="P$2"/>
-<pinref part="B10" gate="G$9" pin="P$2"/>
-<pinref part="B09" gate="G$9" pin="P$2"/>
-<pinref part="B08" gate="G$9" pin="P$2"/>
-<pinref part="B07" gate="G$9" pin="P$2"/>
-<pinref part="B06" gate="G$9" pin="P$2"/>
-<pinref part="B05" gate="G$9" pin="P$2"/>
-<pinref part="B04" gate="G$9" pin="P$2"/>
-<pinref part="B03" gate="G$9" pin="P$2"/>
-<pinref part="B02" gate="G$9" pin="P$2"/>
-<pinref part="B01" gate="G$9" pin="P$2"/>
-<pinref part="B14" gate="G$9" pin="P$2"/>
+<pinref part="B13" gate="E1" pin="P$2"/>
+<pinref part="B12" gate="E1" pin="P$2"/>
+<pinref part="B11" gate="E1" pin="P$2"/>
+<pinref part="B10" gate="E1" pin="P$2"/>
+<pinref part="B09" gate="E1" pin="P$2"/>
+<pinref part="B08" gate="E1" pin="P$2"/>
+<pinref part="B07" gate="E1" pin="P$2"/>
+<pinref part="B06" gate="E1" pin="P$2"/>
+<pinref part="B05" gate="E1" pin="P$2"/>
+<pinref part="B04" gate="E1" pin="P$2"/>
+<pinref part="B03" gate="E1" pin="P$2"/>
+<pinref part="B02" gate="E1" pin="P$2"/>
+<pinref part="B01" gate="E1" pin="P$2"/>
+<pinref part="B14" gate="E1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$85" class="0">
 <segment>
 <junction x="-38.1" y="30.48"/>
-<pinref part="B13" gate="G$10" pin="P$2"/>
-<pinref part="B12" gate="G$10" pin="P$2"/>
-<pinref part="B11" gate="G$10" pin="P$2"/>
-<pinref part="B10" gate="G$10" pin="P$2"/>
-<pinref part="B09" gate="G$10" pin="P$2"/>
-<pinref part="B08" gate="G$10" pin="P$2"/>
-<pinref part="B07" gate="G$10" pin="P$2"/>
-<pinref part="B06" gate="G$10" pin="P$2"/>
-<pinref part="B05" gate="G$10" pin="P$2"/>
-<pinref part="B04" gate="G$10" pin="P$2"/>
-<pinref part="B03" gate="G$10" pin="P$2"/>
-<pinref part="B02" gate="G$10" pin="P$2"/>
-<pinref part="B01" gate="G$10" pin="P$2"/>
-<pinref part="B14" gate="G$10" pin="P$2"/>
+<pinref part="B13" gate="E2" pin="P$2"/>
+<pinref part="B12" gate="E2" pin="P$2"/>
+<pinref part="B11" gate="E2" pin="P$2"/>
+<pinref part="B10" gate="E2" pin="P$2"/>
+<pinref part="B09" gate="E2" pin="P$2"/>
+<pinref part="B08" gate="E2" pin="P$2"/>
+<pinref part="B07" gate="E2" pin="P$2"/>
+<pinref part="B06" gate="E2" pin="P$2"/>
+<pinref part="B05" gate="E2" pin="P$2"/>
+<pinref part="B04" gate="E2" pin="P$2"/>
+<pinref part="B03" gate="E2" pin="P$2"/>
+<pinref part="B02" gate="E2" pin="P$2"/>
+<pinref part="B01" gate="E2" pin="P$2"/>
+<pinref part="B14" gate="E2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA6L" class="0">
@@ -7824,39 +7838,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-27.94" y1="15.24" x2="-38.1" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-38.1" y="15.24"/>
 <label x="-35.56" y="15.24" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$13" pin="P$2"/>
-<pinref part="B12" gate="G$13" pin="P$2"/>
-<pinref part="B11" gate="G$13" pin="P$2"/>
-<pinref part="B10" gate="G$13" pin="P$2"/>
-<pinref part="B09" gate="G$13" pin="P$2"/>
-<pinref part="B08" gate="G$13" pin="P$2"/>
-<pinref part="B07" gate="G$13" pin="P$2"/>
-<pinref part="B06" gate="G$13" pin="P$2"/>
-<pinref part="B05" gate="G$13" pin="P$2"/>
-<pinref part="B04" gate="G$13" pin="P$2"/>
-<pinref part="B03" gate="G$13" pin="P$2"/>
-<pinref part="B02" gate="G$13" pin="P$2"/>
-<pinref part="B01" gate="G$13" pin="P$2"/>
-<pinref part="B14" gate="G$13" pin="P$2"/>
+<pinref part="B13" gate="H1" pin="P$2"/>
+<pinref part="B12" gate="H1" pin="P$2"/>
+<pinref part="B11" gate="H1" pin="P$2"/>
+<pinref part="B10" gate="H1" pin="P$2"/>
+<pinref part="B09" gate="H1" pin="P$2"/>
+<pinref part="B08" gate="H1" pin="P$2"/>
+<pinref part="B07" gate="H1" pin="P$2"/>
+<pinref part="B06" gate="H1" pin="P$2"/>
+<pinref part="B05" gate="H1" pin="P$2"/>
+<pinref part="B04" gate="H1" pin="P$2"/>
+<pinref part="B03" gate="H1" pin="P$2"/>
+<pinref part="B02" gate="H1" pin="P$2"/>
+<pinref part="B01" gate="H1" pin="P$2"/>
+<pinref part="B14" gate="H1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$89" class="0">
 <segment>
 <junction x="-38.1" y="10.16"/>
-<pinref part="B13" gate="G$14" pin="P$2"/>
-<pinref part="B12" gate="G$14" pin="P$2"/>
-<pinref part="B11" gate="G$14" pin="P$2"/>
-<pinref part="B10" gate="G$14" pin="P$2"/>
-<pinref part="B09" gate="G$14" pin="P$2"/>
-<pinref part="B08" gate="G$14" pin="P$2"/>
-<pinref part="B07" gate="G$14" pin="P$2"/>
-<pinref part="B06" gate="G$14" pin="P$2"/>
-<pinref part="B05" gate="G$14" pin="P$2"/>
-<pinref part="B04" gate="G$14" pin="P$2"/>
-<pinref part="B03" gate="G$14" pin="P$2"/>
-<pinref part="B02" gate="G$14" pin="P$2"/>
-<pinref part="B01" gate="G$14" pin="P$2"/>
-<pinref part="B14" gate="G$14" pin="P$2"/>
+<pinref part="B13" gate="H2" pin="P$2"/>
+<pinref part="B12" gate="H2" pin="P$2"/>
+<pinref part="B11" gate="H2" pin="P$2"/>
+<pinref part="B10" gate="H2" pin="P$2"/>
+<pinref part="B09" gate="H2" pin="P$2"/>
+<pinref part="B08" gate="H2" pin="P$2"/>
+<pinref part="B07" gate="H2" pin="P$2"/>
+<pinref part="B06" gate="H2" pin="P$2"/>
+<pinref part="B05" gate="H2" pin="P$2"/>
+<pinref part="B04" gate="H2" pin="P$2"/>
+<pinref part="B03" gate="H2" pin="P$2"/>
+<pinref part="B02" gate="H2" pin="P$2"/>
+<pinref part="B01" gate="H2" pin="P$2"/>
+<pinref part="B14" gate="H2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA7L" class="0">
@@ -7864,39 +7878,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-27.94" y1="5.08" x2="-38.1" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-38.1" y="5.08"/>
 <label x="-35.56" y="5.08" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$15" pin="P$2"/>
-<pinref part="B12" gate="G$15" pin="P$2"/>
-<pinref part="B11" gate="G$15" pin="P$2"/>
-<pinref part="B10" gate="G$15" pin="P$2"/>
-<pinref part="B09" gate="G$15" pin="P$2"/>
-<pinref part="B08" gate="G$15" pin="P$2"/>
-<pinref part="B07" gate="G$15" pin="P$2"/>
-<pinref part="B06" gate="G$15" pin="P$2"/>
-<pinref part="B05" gate="G$15" pin="P$2"/>
-<pinref part="B04" gate="G$15" pin="P$2"/>
-<pinref part="B03" gate="G$15" pin="P$2"/>
-<pinref part="B02" gate="G$15" pin="P$2"/>
-<pinref part="B01" gate="G$15" pin="P$2"/>
-<pinref part="B14" gate="G$15" pin="P$2"/>
+<pinref part="B13" gate="J1" pin="P$2"/>
+<pinref part="B12" gate="J1" pin="P$2"/>
+<pinref part="B11" gate="J1" pin="P$2"/>
+<pinref part="B10" gate="J1" pin="P$2"/>
+<pinref part="B09" gate="J1" pin="P$2"/>
+<pinref part="B08" gate="J1" pin="P$2"/>
+<pinref part="B07" gate="J1" pin="P$2"/>
+<pinref part="B06" gate="J1" pin="P$2"/>
+<pinref part="B05" gate="J1" pin="P$2"/>
+<pinref part="B04" gate="J1" pin="P$2"/>
+<pinref part="B03" gate="J1" pin="P$2"/>
+<pinref part="B02" gate="J1" pin="P$2"/>
+<pinref part="B01" gate="J1" pin="P$2"/>
+<pinref part="B14" gate="J1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$98" class="0">
 <segment>
 <junction x="-38.1" y="0"/>
-<pinref part="B13" gate="G$16" pin="P$2"/>
-<pinref part="B12" gate="G$16" pin="P$2"/>
-<pinref part="B11" gate="G$16" pin="P$2"/>
-<pinref part="B10" gate="G$16" pin="P$2"/>
-<pinref part="B09" gate="G$16" pin="P$2"/>
-<pinref part="B08" gate="G$16" pin="P$2"/>
-<pinref part="B07" gate="G$16" pin="P$2"/>
-<pinref part="B06" gate="G$16" pin="P$2"/>
-<pinref part="B05" gate="G$16" pin="P$2"/>
-<pinref part="B04" gate="G$16" pin="P$2"/>
-<pinref part="B03" gate="G$16" pin="P$2"/>
-<pinref part="B02" gate="G$16" pin="P$2"/>
-<pinref part="B01" gate="G$16" pin="P$2"/>
-<pinref part="B14" gate="G$16" pin="P$2"/>
+<pinref part="B13" gate="J2" pin="P$2"/>
+<pinref part="B12" gate="J2" pin="P$2"/>
+<pinref part="B11" gate="J2" pin="P$2"/>
+<pinref part="B10" gate="J2" pin="P$2"/>
+<pinref part="B09" gate="J2" pin="P$2"/>
+<pinref part="B08" gate="J2" pin="P$2"/>
+<pinref part="B07" gate="J2" pin="P$2"/>
+<pinref part="B06" gate="J2" pin="P$2"/>
+<pinref part="B05" gate="J2" pin="P$2"/>
+<pinref part="B04" gate="J2" pin="P$2"/>
+<pinref part="B03" gate="J2" pin="P$2"/>
+<pinref part="B02" gate="J2" pin="P$2"/>
+<pinref part="B01" gate="J2" pin="P$2"/>
+<pinref part="B14" gate="J2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD4L" class="0">
@@ -7904,39 +7918,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-27.94" y1="-5.08" x2="-38.1" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-38.1" y="-5.08"/>
 <label x="-35.56" y="-5.08" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$17" pin="P$2"/>
-<pinref part="B12" gate="G$17" pin="P$2"/>
-<pinref part="B11" gate="G$17" pin="P$2"/>
-<pinref part="B10" gate="G$17" pin="P$2"/>
-<pinref part="B09" gate="G$17" pin="P$2"/>
-<pinref part="B08" gate="G$17" pin="P$2"/>
-<pinref part="B07" gate="G$17" pin="P$2"/>
-<pinref part="B06" gate="G$17" pin="P$2"/>
-<pinref part="B05" gate="G$17" pin="P$2"/>
-<pinref part="B04" gate="G$17" pin="P$2"/>
-<pinref part="B03" gate="G$17" pin="P$2"/>
-<pinref part="B02" gate="G$17" pin="P$2"/>
-<pinref part="B01" gate="G$17" pin="P$2"/>
-<pinref part="B14" gate="G$17" pin="P$2"/>
+<pinref part="B13" gate="K1" pin="P$2"/>
+<pinref part="B12" gate="K1" pin="P$2"/>
+<pinref part="B11" gate="K1" pin="P$2"/>
+<pinref part="B10" gate="K1" pin="P$2"/>
+<pinref part="B09" gate="K1" pin="P$2"/>
+<pinref part="B08" gate="K1" pin="P$2"/>
+<pinref part="B07" gate="K1" pin="P$2"/>
+<pinref part="B06" gate="K1" pin="P$2"/>
+<pinref part="B05" gate="K1" pin="P$2"/>
+<pinref part="B04" gate="K1" pin="P$2"/>
+<pinref part="B03" gate="K1" pin="P$2"/>
+<pinref part="B02" gate="K1" pin="P$2"/>
+<pinref part="B01" gate="K1" pin="P$2"/>
+<pinref part="B14" gate="K1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$105" class="0">
 <segment>
 <junction x="-38.1" y="-10.16"/>
-<pinref part="B13" gate="G$18" pin="P$2"/>
-<pinref part="B12" gate="G$18" pin="P$2"/>
-<pinref part="B11" gate="G$18" pin="P$2"/>
-<pinref part="B10" gate="G$18" pin="P$2"/>
-<pinref part="B09" gate="G$18" pin="P$2"/>
-<pinref part="B08" gate="G$18" pin="P$2"/>
-<pinref part="B07" gate="G$18" pin="P$2"/>
-<pinref part="B06" gate="G$18" pin="P$2"/>
-<pinref part="B05" gate="G$18" pin="P$2"/>
-<pinref part="B04" gate="G$18" pin="P$2"/>
-<pinref part="B03" gate="G$18" pin="P$2"/>
-<pinref part="B02" gate="G$18" pin="P$2"/>
-<pinref part="B01" gate="G$18" pin="P$2"/>
-<pinref part="B14" gate="G$18" pin="P$2"/>
+<pinref part="B13" gate="K2" pin="P$2"/>
+<pinref part="B12" gate="K2" pin="P$2"/>
+<pinref part="B11" gate="K2" pin="P$2"/>
+<pinref part="B10" gate="K2" pin="P$2"/>
+<pinref part="B09" gate="K2" pin="P$2"/>
+<pinref part="B08" gate="K2" pin="P$2"/>
+<pinref part="B07" gate="K2" pin="P$2"/>
+<pinref part="B06" gate="K2" pin="P$2"/>
+<pinref part="B05" gate="K2" pin="P$2"/>
+<pinref part="B04" gate="K2" pin="P$2"/>
+<pinref part="B03" gate="K2" pin="P$2"/>
+<pinref part="B02" gate="K2" pin="P$2"/>
+<pinref part="B01" gate="K2" pin="P$2"/>
+<pinref part="B14" gate="K2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD5L" class="0">
@@ -7944,39 +7958,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="0" y1="76.2" x2="-10.16" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-10.16" y="76.2"/>
 <label x="-7.62" y="76.2" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$19" pin="P$2"/>
-<pinref part="B12" gate="G$19" pin="P$2"/>
-<pinref part="B11" gate="G$19" pin="P$2"/>
-<pinref part="B10" gate="G$19" pin="P$2"/>
-<pinref part="B09" gate="G$19" pin="P$2"/>
-<pinref part="B08" gate="G$19" pin="P$2"/>
-<pinref part="B07" gate="G$19" pin="P$2"/>
-<pinref part="B06" gate="G$19" pin="P$2"/>
-<pinref part="B05" gate="G$19" pin="P$2"/>
-<pinref part="B04" gate="G$19" pin="P$2"/>
-<pinref part="B03" gate="G$19" pin="P$2"/>
-<pinref part="B02" gate="G$19" pin="P$2"/>
-<pinref part="B01" gate="G$19" pin="P$2"/>
-<pinref part="B14" gate="G$19" pin="P$2"/>
+<pinref part="B13" gate="L1" pin="P$2"/>
+<pinref part="B12" gate="L1" pin="P$2"/>
+<pinref part="B11" gate="L1" pin="P$2"/>
+<pinref part="B10" gate="L1" pin="P$2"/>
+<pinref part="B09" gate="L1" pin="P$2"/>
+<pinref part="B08" gate="L1" pin="P$2"/>
+<pinref part="B07" gate="L1" pin="P$2"/>
+<pinref part="B06" gate="L1" pin="P$2"/>
+<pinref part="B05" gate="L1" pin="P$2"/>
+<pinref part="B04" gate="L1" pin="P$2"/>
+<pinref part="B03" gate="L1" pin="P$2"/>
+<pinref part="B02" gate="L1" pin="P$2"/>
+<pinref part="B01" gate="L1" pin="P$2"/>
+<pinref part="B14" gate="L1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$107" class="0">
 <segment>
 <junction x="-10.16" y="71.12"/>
-<pinref part="B13" gate="G$20" pin="P$2"/>
-<pinref part="B12" gate="G$20" pin="P$2"/>
-<pinref part="B11" gate="G$20" pin="P$2"/>
-<pinref part="B10" gate="G$20" pin="P$2"/>
-<pinref part="B09" gate="G$20" pin="P$2"/>
-<pinref part="B08" gate="G$20" pin="P$2"/>
-<pinref part="B07" gate="G$20" pin="P$2"/>
-<pinref part="B06" gate="G$20" pin="P$2"/>
-<pinref part="B05" gate="G$20" pin="P$2"/>
-<pinref part="B04" gate="G$20" pin="P$2"/>
-<pinref part="B03" gate="G$20" pin="P$2"/>
-<pinref part="B02" gate="G$20" pin="P$2"/>
-<pinref part="B01" gate="G$20" pin="P$2"/>
-<pinref part="B14" gate="G$20" pin="P$2"/>
+<pinref part="B13" gate="L2" pin="P$2"/>
+<pinref part="B12" gate="L2" pin="P$2"/>
+<pinref part="B11" gate="L2" pin="P$2"/>
+<pinref part="B10" gate="L2" pin="P$2"/>
+<pinref part="B09" gate="L2" pin="P$2"/>
+<pinref part="B08" gate="L2" pin="P$2"/>
+<pinref part="B07" gate="L2" pin="P$2"/>
+<pinref part="B06" gate="L2" pin="P$2"/>
+<pinref part="B05" gate="L2" pin="P$2"/>
+<pinref part="B04" gate="L2" pin="P$2"/>
+<pinref part="B03" gate="L2" pin="P$2"/>
+<pinref part="B02" gate="L2" pin="P$2"/>
+<pinref part="B01" gate="L2" pin="P$2"/>
+<pinref part="B14" gate="L2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD6L" class="0">
@@ -7984,39 +7998,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="0" y1="66.04" x2="-10.16" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-10.16" y="66.04"/>
 <label x="-7.62" y="66.04" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$21" pin="P$2"/>
-<pinref part="B12" gate="G$21" pin="P$2"/>
-<pinref part="B11" gate="G$21" pin="P$2"/>
-<pinref part="B10" gate="G$21" pin="P$2"/>
-<pinref part="B09" gate="G$21" pin="P$2"/>
-<pinref part="B08" gate="G$21" pin="P$2"/>
-<pinref part="B07" gate="G$21" pin="P$2"/>
-<pinref part="B06" gate="G$21" pin="P$2"/>
-<pinref part="B05" gate="G$21" pin="P$2"/>
-<pinref part="B04" gate="G$21" pin="P$2"/>
-<pinref part="B03" gate="G$21" pin="P$2"/>
-<pinref part="B02" gate="G$21" pin="P$2"/>
-<pinref part="B01" gate="G$21" pin="P$2"/>
-<pinref part="B14" gate="G$21" pin="P$2"/>
+<pinref part="B13" gate="M1" pin="P$2"/>
+<pinref part="B12" gate="M1" pin="P$2"/>
+<pinref part="B11" gate="M1" pin="P$2"/>
+<pinref part="B10" gate="M1" pin="P$2"/>
+<pinref part="B09" gate="M1" pin="P$2"/>
+<pinref part="B08" gate="M1" pin="P$2"/>
+<pinref part="B07" gate="M1" pin="P$2"/>
+<pinref part="B06" gate="M1" pin="P$2"/>
+<pinref part="B05" gate="M1" pin="P$2"/>
+<pinref part="B04" gate="M1" pin="P$2"/>
+<pinref part="B03" gate="M1" pin="P$2"/>
+<pinref part="B02" gate="M1" pin="P$2"/>
+<pinref part="B01" gate="M1" pin="P$2"/>
+<pinref part="B14" gate="M1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$115" class="0">
 <segment>
 <junction x="-10.16" y="60.96"/>
-<pinref part="B13" gate="G$22" pin="P$2"/>
-<pinref part="B12" gate="G$22" pin="P$2"/>
-<pinref part="B11" gate="G$22" pin="P$2"/>
-<pinref part="B10" gate="G$22" pin="P$2"/>
-<pinref part="B09" gate="G$22" pin="P$2"/>
-<pinref part="B08" gate="G$22" pin="P$2"/>
-<pinref part="B07" gate="G$22" pin="P$2"/>
-<pinref part="B06" gate="G$22" pin="P$2"/>
-<pinref part="B05" gate="G$22" pin="P$2"/>
-<pinref part="B04" gate="G$22" pin="P$2"/>
-<pinref part="B03" gate="G$22" pin="P$2"/>
-<pinref part="B02" gate="G$22" pin="P$2"/>
-<pinref part="B01" gate="G$22" pin="P$2"/>
-<pinref part="B14" gate="G$22" pin="P$2"/>
+<pinref part="B13" gate="M2" pin="P$2"/>
+<pinref part="B12" gate="M2" pin="P$2"/>
+<pinref part="B11" gate="M2" pin="P$2"/>
+<pinref part="B10" gate="M2" pin="P$2"/>
+<pinref part="B09" gate="M2" pin="P$2"/>
+<pinref part="B08" gate="M2" pin="P$2"/>
+<pinref part="B07" gate="M2" pin="P$2"/>
+<pinref part="B06" gate="M2" pin="P$2"/>
+<pinref part="B05" gate="M2" pin="P$2"/>
+<pinref part="B04" gate="M2" pin="P$2"/>
+<pinref part="B03" gate="M2" pin="P$2"/>
+<pinref part="B02" gate="M2" pin="P$2"/>
+<pinref part="B01" gate="M2" pin="P$2"/>
+<pinref part="B14" gate="M2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD7L" class="0">
@@ -8024,172 +8038,172 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="0" y1="45.72" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-10.16" y="45.72"/>
 <label x="-7.62" y="45.72" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$25" pin="P$2"/>
-<pinref part="B12" gate="G$25" pin="P$2"/>
-<pinref part="B11" gate="G$25" pin="P$2"/>
-<pinref part="B10" gate="G$25" pin="P$2"/>
-<pinref part="B09" gate="G$25" pin="P$2"/>
-<pinref part="B08" gate="G$25" pin="P$2"/>
-<pinref part="B07" gate="G$25" pin="P$2"/>
-<pinref part="B06" gate="G$25" pin="P$2"/>
-<pinref part="B05" gate="G$25" pin="P$2"/>
-<pinref part="B04" gate="G$25" pin="P$2"/>
-<pinref part="B03" gate="G$25" pin="P$2"/>
-<pinref part="B02" gate="G$25" pin="P$2"/>
-<pinref part="B01" gate="G$25" pin="P$2"/>
-<pinref part="B14" gate="G$25" pin="P$2"/>
+<pinref part="B13" gate="P1" pin="P$2"/>
+<pinref part="B12" gate="P1" pin="P$2"/>
+<pinref part="B11" gate="P1" pin="P$2"/>
+<pinref part="B10" gate="P1" pin="P$2"/>
+<pinref part="B09" gate="P1" pin="P$2"/>
+<pinref part="B08" gate="P1" pin="P$2"/>
+<pinref part="B07" gate="P1" pin="P$2"/>
+<pinref part="B06" gate="P1" pin="P$2"/>
+<pinref part="B05" gate="P1" pin="P$2"/>
+<pinref part="B04" gate="P1" pin="P$2"/>
+<pinref part="B03" gate="P1" pin="P$2"/>
+<pinref part="B02" gate="P1" pin="P$2"/>
+<pinref part="B01" gate="P1" pin="P$2"/>
+<pinref part="B14" gate="P1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$121" class="0">
 <segment>
 <junction x="-10.16" y="40.64"/>
-<pinref part="B13" gate="G$26" pin="P$2"/>
-<pinref part="B12" gate="G$26" pin="P$2"/>
-<pinref part="B11" gate="G$26" pin="P$2"/>
-<pinref part="B10" gate="G$26" pin="P$2"/>
-<pinref part="B09" gate="G$26" pin="P$2"/>
-<pinref part="B08" gate="G$26" pin="P$2"/>
-<pinref part="B07" gate="G$26" pin="P$2"/>
-<pinref part="B06" gate="G$26" pin="P$2"/>
-<pinref part="B05" gate="G$26" pin="P$2"/>
-<pinref part="B04" gate="G$26" pin="P$2"/>
-<pinref part="B03" gate="G$26" pin="P$2"/>
-<pinref part="B02" gate="G$26" pin="P$2"/>
-<pinref part="B01" gate="G$26" pin="P$2"/>
-<pinref part="B14" gate="G$26" pin="P$2"/>
+<pinref part="B13" gate="P2" pin="P$2"/>
+<pinref part="B12" gate="P2" pin="P$2"/>
+<pinref part="B11" gate="P2" pin="P$2"/>
+<pinref part="B10" gate="P2" pin="P$2"/>
+<pinref part="B09" gate="P2" pin="P$2"/>
+<pinref part="B08" gate="P2" pin="P$2"/>
+<pinref part="B07" gate="P2" pin="P$2"/>
+<pinref part="B06" gate="P2" pin="P$2"/>
+<pinref part="B05" gate="P2" pin="P$2"/>
+<pinref part="B04" gate="P2" pin="P$2"/>
+<pinref part="B03" gate="P2" pin="P$2"/>
+<pinref part="B02" gate="P2" pin="P$2"/>
+<pinref part="B01" gate="P2" pin="P$2"/>
+<pinref part="B14" gate="P2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$123" class="0">
 <segment>
 <junction x="-10.16" y="35.56"/>
-<pinref part="B13" gate="G$27" pin="P$2"/>
-<pinref part="B12" gate="G$27" pin="P$2"/>
-<pinref part="B11" gate="G$27" pin="P$2"/>
-<pinref part="B10" gate="G$27" pin="P$2"/>
-<pinref part="B09" gate="G$27" pin="P$2"/>
-<pinref part="B08" gate="G$27" pin="P$2"/>
-<pinref part="B07" gate="G$27" pin="P$2"/>
-<pinref part="B06" gate="G$27" pin="P$2"/>
-<pinref part="B05" gate="G$27" pin="P$2"/>
-<pinref part="B04" gate="G$27" pin="P$2"/>
-<pinref part="B03" gate="G$27" pin="P$2"/>
-<pinref part="B02" gate="G$27" pin="P$2"/>
-<pinref part="B01" gate="G$27" pin="P$2"/>
-<pinref part="B14" gate="G$27" pin="P$2"/>
+<pinref part="B13" gate="R1" pin="P$2"/>
+<pinref part="B12" gate="R1" pin="P$2"/>
+<pinref part="B11" gate="R1" pin="P$2"/>
+<pinref part="B10" gate="R1" pin="P$2"/>
+<pinref part="B09" gate="R1" pin="P$2"/>
+<pinref part="B08" gate="R1" pin="P$2"/>
+<pinref part="B07" gate="R1" pin="P$2"/>
+<pinref part="B06" gate="R1" pin="P$2"/>
+<pinref part="B05" gate="R1" pin="P$2"/>
+<pinref part="B04" gate="R1" pin="P$2"/>
+<pinref part="B03" gate="R1" pin="P$2"/>
+<pinref part="B02" gate="R1" pin="P$2"/>
+<pinref part="B01" gate="R1" pin="P$2"/>
+<pinref part="B14" gate="R1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$126" class="0">
 <segment>
 <junction x="-10.16" y="30.48"/>
-<pinref part="B13" gate="G$28" pin="P$2"/>
-<pinref part="B12" gate="G$28" pin="P$2"/>
-<pinref part="B11" gate="G$28" pin="P$2"/>
-<pinref part="B10" gate="G$28" pin="P$2"/>
-<pinref part="B09" gate="G$28" pin="P$2"/>
-<pinref part="B08" gate="G$28" pin="P$2"/>
-<pinref part="B07" gate="G$28" pin="P$2"/>
-<pinref part="B06" gate="G$28" pin="P$2"/>
-<pinref part="B05" gate="G$28" pin="P$2"/>
-<pinref part="B04" gate="G$28" pin="P$2"/>
-<pinref part="B03" gate="G$28" pin="P$2"/>
-<pinref part="B02" gate="G$28" pin="P$2"/>
-<pinref part="B01" gate="G$28" pin="P$2"/>
-<pinref part="B14" gate="G$28" pin="P$2"/>
+<pinref part="B13" gate="R2" pin="P$2"/>
+<pinref part="B12" gate="R2" pin="P$2"/>
+<pinref part="B11" gate="R2" pin="P$2"/>
+<pinref part="B10" gate="R2" pin="P$2"/>
+<pinref part="B09" gate="R2" pin="P$2"/>
+<pinref part="B08" gate="R2" pin="P$2"/>
+<pinref part="B07" gate="R2" pin="P$2"/>
+<pinref part="B06" gate="R2" pin="P$2"/>
+<pinref part="B05" gate="R2" pin="P$2"/>
+<pinref part="B04" gate="R2" pin="P$2"/>
+<pinref part="B03" gate="R2" pin="P$2"/>
+<pinref part="B02" gate="R2" pin="P$2"/>
+<pinref part="B01" gate="R2" pin="P$2"/>
+<pinref part="B14" gate="R2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$127" class="0">
 <segment>
 <junction x="-10.16" y="25.4"/>
-<pinref part="B13" gate="G$29" pin="P$2"/>
-<pinref part="B12" gate="G$29" pin="P$2"/>
-<pinref part="B11" gate="G$29" pin="P$2"/>
-<pinref part="B10" gate="G$29" pin="P$2"/>
-<pinref part="B09" gate="G$29" pin="P$2"/>
-<pinref part="B08" gate="G$29" pin="P$2"/>
-<pinref part="B07" gate="G$29" pin="P$2"/>
-<pinref part="B06" gate="G$29" pin="P$2"/>
-<pinref part="B05" gate="G$29" pin="P$2"/>
-<pinref part="B04" gate="G$29" pin="P$2"/>
-<pinref part="B03" gate="G$29" pin="P$2"/>
-<pinref part="B02" gate="G$29" pin="P$2"/>
-<pinref part="B01" gate="G$29" pin="P$2"/>
-<pinref part="B14" gate="G$29" pin="P$2"/>
+<pinref part="B13" gate="S1" pin="P$2"/>
+<pinref part="B12" gate="S1" pin="P$2"/>
+<pinref part="B11" gate="S1" pin="P$2"/>
+<pinref part="B10" gate="S1" pin="P$2"/>
+<pinref part="B09" gate="S1" pin="P$2"/>
+<pinref part="B08" gate="S1" pin="P$2"/>
+<pinref part="B07" gate="S1" pin="P$2"/>
+<pinref part="B06" gate="S1" pin="P$2"/>
+<pinref part="B05" gate="S1" pin="P$2"/>
+<pinref part="B04" gate="S1" pin="P$2"/>
+<pinref part="B03" gate="S1" pin="P$2"/>
+<pinref part="B02" gate="S1" pin="P$2"/>
+<pinref part="B01" gate="S1" pin="P$2"/>
+<pinref part="B14" gate="S1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$130" class="0">
 <segment>
 <junction x="-10.16" y="20.32"/>
-<pinref part="B13" gate="G$30" pin="P$2"/>
-<pinref part="B12" gate="G$30" pin="P$2"/>
-<pinref part="B11" gate="G$30" pin="P$2"/>
-<pinref part="B10" gate="G$30" pin="P$2"/>
-<pinref part="B09" gate="G$30" pin="P$2"/>
-<pinref part="B08" gate="G$30" pin="P$2"/>
-<pinref part="B07" gate="G$30" pin="P$2"/>
-<pinref part="B06" gate="G$30" pin="P$2"/>
-<pinref part="B05" gate="G$30" pin="P$2"/>
-<pinref part="B04" gate="G$30" pin="P$2"/>
-<pinref part="B03" gate="G$30" pin="P$2"/>
-<pinref part="B02" gate="G$30" pin="P$2"/>
-<pinref part="B01" gate="G$30" pin="P$2"/>
-<pinref part="B14" gate="G$30" pin="P$2"/>
+<pinref part="B13" gate="S2" pin="P$2"/>
+<pinref part="B12" gate="S2" pin="P$2"/>
+<pinref part="B11" gate="S2" pin="P$2"/>
+<pinref part="B10" gate="S2" pin="P$2"/>
+<pinref part="B09" gate="S2" pin="P$2"/>
+<pinref part="B08" gate="S2" pin="P$2"/>
+<pinref part="B07" gate="S2" pin="P$2"/>
+<pinref part="B06" gate="S2" pin="P$2"/>
+<pinref part="B05" gate="S2" pin="P$2"/>
+<pinref part="B04" gate="S2" pin="P$2"/>
+<pinref part="B03" gate="S2" pin="P$2"/>
+<pinref part="B02" gate="S2" pin="P$2"/>
+<pinref part="B01" gate="S2" pin="P$2"/>
+<pinref part="B14" gate="S2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$134" class="0">
 <segment>
 <junction x="-10.16" y="5.08"/>
-<pinref part="B13" gate="G$33" pin="P$2"/>
-<pinref part="B12" gate="G$33" pin="P$2"/>
-<pinref part="B11" gate="G$33" pin="P$2"/>
-<pinref part="B10" gate="G$33" pin="P$2"/>
-<pinref part="B09" gate="G$33" pin="P$2"/>
-<pinref part="B08" gate="G$33" pin="P$2"/>
-<pinref part="B07" gate="G$33" pin="P$2"/>
-<pinref part="B06" gate="G$33" pin="P$2"/>
-<pinref part="B05" gate="G$33" pin="P$2"/>
-<pinref part="B04" gate="G$33" pin="P$2"/>
-<pinref part="B03" gate="G$33" pin="P$2"/>
-<pinref part="B02" gate="G$33" pin="P$2"/>
-<pinref part="B01" gate="G$33" pin="P$2"/>
-<pinref part="B14" gate="G$33" pin="P$2"/>
+<pinref part="B13" gate="U1" pin="P$2"/>
+<pinref part="B12" gate="U1" pin="P$2"/>
+<pinref part="B11" gate="U1" pin="P$2"/>
+<pinref part="B10" gate="U1" pin="P$2"/>
+<pinref part="B09" gate="U1" pin="P$2"/>
+<pinref part="B08" gate="U1" pin="P$2"/>
+<pinref part="B07" gate="U1" pin="P$2"/>
+<pinref part="B06" gate="U1" pin="P$2"/>
+<pinref part="B05" gate="U1" pin="P$2"/>
+<pinref part="B04" gate="U1" pin="P$2"/>
+<pinref part="B03" gate="U1" pin="P$2"/>
+<pinref part="B02" gate="U1" pin="P$2"/>
+<pinref part="B01" gate="U1" pin="P$2"/>
+<pinref part="B14" gate="U1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$135" class="0">
 <segment>
 <junction x="-10.16" y="0"/>
-<pinref part="B13" gate="G$34" pin="P$2"/>
-<pinref part="B12" gate="G$34" pin="P$2"/>
-<pinref part="B11" gate="G$34" pin="P$2"/>
-<pinref part="B10" gate="G$34" pin="P$2"/>
-<pinref part="B09" gate="G$34" pin="P$2"/>
-<pinref part="B08" gate="G$34" pin="P$2"/>
-<pinref part="B07" gate="G$34" pin="P$2"/>
-<pinref part="B06" gate="G$34" pin="P$2"/>
-<pinref part="B05" gate="G$34" pin="P$2"/>
-<pinref part="B04" gate="G$34" pin="P$2"/>
-<pinref part="B03" gate="G$34" pin="P$2"/>
-<pinref part="B02" gate="G$34" pin="P$2"/>
-<pinref part="B01" gate="G$34" pin="P$2"/>
-<pinref part="B14" gate="G$34" pin="P$2"/>
+<pinref part="B13" gate="U2" pin="P$2"/>
+<pinref part="B12" gate="U2" pin="P$2"/>
+<pinref part="B11" gate="U2" pin="P$2"/>
+<pinref part="B10" gate="U2" pin="P$2"/>
+<pinref part="B09" gate="U2" pin="P$2"/>
+<pinref part="B08" gate="U2" pin="P$2"/>
+<pinref part="B07" gate="U2" pin="P$2"/>
+<pinref part="B06" gate="U2" pin="P$2"/>
+<pinref part="B05" gate="U2" pin="P$2"/>
+<pinref part="B04" gate="U2" pin="P$2"/>
+<pinref part="B03" gate="U2" pin="P$2"/>
+<pinref part="B02" gate="U2" pin="P$2"/>
+<pinref part="B01" gate="U2" pin="P$2"/>
+<pinref part="B14" gate="U2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$136" class="0">
 <segment>
 <junction x="-10.16" y="-5.08"/>
-<pinref part="B13" gate="G$35" pin="P$2"/>
-<pinref part="B12" gate="G$35" pin="P$2"/>
-<pinref part="B11" gate="G$35" pin="P$2"/>
-<pinref part="B10" gate="G$35" pin="P$2"/>
-<pinref part="B09" gate="G$35" pin="P$2"/>
-<pinref part="B08" gate="G$35" pin="P$2"/>
-<pinref part="B07" gate="G$35" pin="P$2"/>
-<pinref part="B06" gate="G$35" pin="P$2"/>
-<pinref part="B05" gate="G$35" pin="P$2"/>
-<pinref part="B04" gate="G$35" pin="P$2"/>
-<pinref part="B03" gate="G$35" pin="P$2"/>
-<pinref part="B02" gate="G$35" pin="P$2"/>
-<pinref part="B01" gate="G$35" pin="P$2"/>
-<pinref part="B14" gate="G$35" pin="P$2"/>
+<pinref part="B13" gate="V1" pin="P$2"/>
+<pinref part="B12" gate="V1" pin="P$2"/>
+<pinref part="B11" gate="V1" pin="P$2"/>
+<pinref part="B10" gate="V1" pin="P$2"/>
+<pinref part="B09" gate="V1" pin="P$2"/>
+<pinref part="B08" gate="V1" pin="P$2"/>
+<pinref part="B07" gate="V1" pin="P$2"/>
+<pinref part="B06" gate="V1" pin="P$2"/>
+<pinref part="B05" gate="V1" pin="P$2"/>
+<pinref part="B04" gate="V1" pin="P$2"/>
+<pinref part="B03" gate="V1" pin="P$2"/>
+<pinref part="B02" gate="V1" pin="P$2"/>
+<pinref part="B01" gate="V1" pin="P$2"/>
+<pinref part="B14" gate="V1" pin="P$2"/>
 </segment>
 </net>
 <net name="D01POWEROK" class="0">
@@ -8197,552 +8211,552 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="2.54" y1="-10.16" x2="-10.16" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-10.16" y="-10.16"/>
 <label x="-7.62" y="-10.16" size="1.778" layer="95"/>
-<pinref part="B13" gate="G$36" pin="P$2"/>
-<pinref part="B12" gate="G$36" pin="P$2"/>
-<pinref part="B11" gate="G$36" pin="P$2"/>
-<pinref part="B10" gate="G$36" pin="P$2"/>
-<pinref part="B09" gate="G$36" pin="P$2"/>
-<pinref part="B08" gate="G$36" pin="P$2"/>
-<pinref part="B07" gate="G$36" pin="P$2"/>
-<pinref part="B06" gate="G$36" pin="P$2"/>
-<pinref part="B05" gate="G$36" pin="P$2"/>
-<pinref part="B04" gate="G$36" pin="P$2"/>
-<pinref part="B03" gate="G$36" pin="P$2"/>
-<pinref part="B02" gate="G$36" pin="P$2"/>
-<pinref part="B01" gate="G$36" pin="P$2"/>
-<pinref part="B14" gate="G$36" pin="P$2"/>
+<pinref part="B13" gate="V2" pin="P$2"/>
+<pinref part="B12" gate="V2" pin="P$2"/>
+<pinref part="B11" gate="V2" pin="P$2"/>
+<pinref part="B10" gate="V2" pin="P$2"/>
+<pinref part="B09" gate="V2" pin="P$2"/>
+<pinref part="B08" gate="V2" pin="P$2"/>
+<pinref part="B07" gate="V2" pin="P$2"/>
+<pinref part="B06" gate="V2" pin="P$2"/>
+<pinref part="B05" gate="V2" pin="P$2"/>
+<pinref part="B04" gate="V2" pin="P$2"/>
+<pinref part="B03" gate="V2" pin="P$2"/>
+<pinref part="B02" gate="V2" pin="P$2"/>
+<pinref part="B01" gate="V2" pin="P$2"/>
+<pinref part="B14" gate="V2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$141" class="0">
 <segment>
 <junction x="22.86" y="76.2"/>
-<pinref part="C14" gate="G$1" pin="P$2"/>
-<pinref part="C13" gate="G$1" pin="P$2"/>
-<pinref part="C12" gate="G$1" pin="P$2"/>
-<pinref part="C11" gate="G$1" pin="P$2"/>
-<pinref part="C10" gate="G$1" pin="P$2"/>
-<pinref part="C09" gate="G$1" pin="P$2"/>
-<pinref part="C08" gate="G$1" pin="P$2"/>
-<pinref part="C07" gate="G$1" pin="P$2"/>
-<pinref part="C06" gate="G$1" pin="P$2"/>
-<pinref part="C05" gate="G$1" pin="P$2"/>
-<pinref part="C04" gate="G$1" pin="P$2"/>
-<pinref part="C03" gate="G$1" pin="P$2"/>
-<pinref part="C02" gate="G$1" pin="P$2"/>
-<pinref part="C01" gate="G$1" pin="P$2"/>
+<pinref part="C14" gate="A1" pin="P$2"/>
+<pinref part="C13" gate="A1" pin="P$2"/>
+<pinref part="C12" gate="A1" pin="P$2"/>
+<pinref part="C11" gate="A1" pin="P$2"/>
+<pinref part="C10" gate="A1" pin="P$2"/>
+<pinref part="C09" gate="A1" pin="P$2"/>
+<pinref part="C08" gate="A1" pin="P$2"/>
+<pinref part="C07" gate="A1" pin="P$2"/>
+<pinref part="C06" gate="A1" pin="P$2"/>
+<pinref part="C05" gate="A1" pin="P$2"/>
+<pinref part="C04" gate="A1" pin="P$2"/>
+<pinref part="C03" gate="A1" pin="P$2"/>
+<pinref part="C02" gate="A1" pin="P$2"/>
+<pinref part="C01" gate="A1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$144" class="0">
 <segment>
 <junction x="22.86" y="66.04"/>
-<pinref part="C14" gate="G$3" pin="P$2"/>
-<pinref part="C13" gate="G$3" pin="P$2"/>
-<pinref part="C12" gate="G$3" pin="P$2"/>
-<pinref part="C11" gate="G$3" pin="P$2"/>
-<pinref part="C10" gate="G$3" pin="P$2"/>
-<pinref part="C09" gate="G$3" pin="P$2"/>
-<pinref part="C08" gate="G$3" pin="P$2"/>
-<pinref part="C07" gate="G$3" pin="P$2"/>
-<pinref part="C06" gate="G$3" pin="P$2"/>
-<pinref part="C05" gate="G$3" pin="P$2"/>
-<pinref part="C04" gate="G$3" pin="P$2"/>
-<pinref part="C03" gate="G$3" pin="P$2"/>
-<pinref part="C02" gate="G$3" pin="P$2"/>
-<pinref part="C01" gate="G$3" pin="P$2"/>
+<pinref part="C14" gate="B1" pin="P$2"/>
+<pinref part="C13" gate="B1" pin="P$2"/>
+<pinref part="C12" gate="B1" pin="P$2"/>
+<pinref part="C11" gate="B1" pin="P$2"/>
+<pinref part="C10" gate="B1" pin="P$2"/>
+<pinref part="C09" gate="B1" pin="P$2"/>
+<pinref part="C08" gate="B1" pin="P$2"/>
+<pinref part="C07" gate="B1" pin="P$2"/>
+<pinref part="C06" gate="B1" pin="P$2"/>
+<pinref part="C05" gate="B1" pin="P$2"/>
+<pinref part="C04" gate="B1" pin="P$2"/>
+<pinref part="C03" gate="B1" pin="P$2"/>
+<pinref part="C02" gate="B1" pin="P$2"/>
+<pinref part="C01" gate="B1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$154" class="0">
 <segment>
 <junction x="22.86" y="45.72"/>
-<pinref part="C14" gate="G$7" pin="P$2"/>
-<pinref part="C13" gate="G$7" pin="P$2"/>
-<pinref part="C12" gate="G$7" pin="P$2"/>
-<pinref part="C11" gate="G$7" pin="P$2"/>
-<pinref part="C10" gate="G$7" pin="P$2"/>
-<pinref part="C09" gate="G$7" pin="P$2"/>
-<pinref part="C08" gate="G$7" pin="P$2"/>
-<pinref part="C07" gate="G$7" pin="P$2"/>
-<pinref part="C06" gate="G$7" pin="P$2"/>
-<pinref part="C05" gate="G$7" pin="P$2"/>
-<pinref part="C04" gate="G$7" pin="P$2"/>
-<pinref part="C03" gate="G$7" pin="P$2"/>
-<pinref part="C02" gate="G$7" pin="P$2"/>
-<pinref part="C01" gate="G$7" pin="P$2"/>
+<pinref part="C14" gate="D1" pin="P$2"/>
+<pinref part="C13" gate="D1" pin="P$2"/>
+<pinref part="C12" gate="D1" pin="P$2"/>
+<pinref part="C11" gate="D1" pin="P$2"/>
+<pinref part="C10" gate="D1" pin="P$2"/>
+<pinref part="C09" gate="D1" pin="P$2"/>
+<pinref part="C08" gate="D1" pin="P$2"/>
+<pinref part="C07" gate="D1" pin="P$2"/>
+<pinref part="C06" gate="D1" pin="P$2"/>
+<pinref part="C05" gate="D1" pin="P$2"/>
+<pinref part="C04" gate="D1" pin="P$2"/>
+<pinref part="C03" gate="D1" pin="P$2"/>
+<pinref part="C02" gate="D1" pin="P$2"/>
+<pinref part="C01" gate="D1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$156" class="0">
 <segment>
 <junction x="22.86" y="40.64"/>
-<pinref part="C14" gate="G$8" pin="P$2"/>
-<pinref part="C13" gate="G$8" pin="P$2"/>
-<pinref part="C12" gate="G$8" pin="P$2"/>
-<pinref part="C11" gate="G$8" pin="P$2"/>
-<pinref part="C10" gate="G$8" pin="P$2"/>
-<pinref part="C09" gate="G$8" pin="P$2"/>
-<pinref part="C08" gate="G$8" pin="P$2"/>
-<pinref part="C07" gate="G$8" pin="P$2"/>
-<pinref part="C06" gate="G$8" pin="P$2"/>
-<pinref part="C05" gate="G$8" pin="P$2"/>
-<pinref part="C04" gate="G$8" pin="P$2"/>
-<pinref part="C03" gate="G$8" pin="P$2"/>
-<pinref part="C02" gate="G$8" pin="P$2"/>
-<pinref part="C01" gate="G$8" pin="P$2"/>
+<pinref part="C14" gate="D2" pin="P$2"/>
+<pinref part="C13" gate="D2" pin="P$2"/>
+<pinref part="C12" gate="D2" pin="P$2"/>
+<pinref part="C11" gate="D2" pin="P$2"/>
+<pinref part="C10" gate="D2" pin="P$2"/>
+<pinref part="C09" gate="D2" pin="P$2"/>
+<pinref part="C08" gate="D2" pin="P$2"/>
+<pinref part="C07" gate="D2" pin="P$2"/>
+<pinref part="C06" gate="D2" pin="P$2"/>
+<pinref part="C05" gate="D2" pin="P$2"/>
+<pinref part="C04" gate="D2" pin="P$2"/>
+<pinref part="C03" gate="D2" pin="P$2"/>
+<pinref part="C02" gate="D2" pin="P$2"/>
+<pinref part="C01" gate="D2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$157" class="0">
 <segment>
 <junction x="22.86" y="35.56"/>
-<pinref part="C14" gate="G$9" pin="P$2"/>
-<pinref part="C13" gate="G$9" pin="P$2"/>
-<pinref part="C12" gate="G$9" pin="P$2"/>
-<pinref part="C11" gate="G$9" pin="P$2"/>
-<pinref part="C10" gate="G$9" pin="P$2"/>
-<pinref part="C09" gate="G$9" pin="P$2"/>
-<pinref part="C08" gate="G$9" pin="P$2"/>
-<pinref part="C07" gate="G$9" pin="P$2"/>
-<pinref part="C06" gate="G$9" pin="P$2"/>
-<pinref part="C05" gate="G$9" pin="P$2"/>
-<pinref part="C04" gate="G$9" pin="P$2"/>
-<pinref part="C03" gate="G$9" pin="P$2"/>
-<pinref part="C02" gate="G$9" pin="P$2"/>
-<pinref part="C01" gate="G$9" pin="P$2"/>
+<pinref part="C14" gate="E1" pin="P$2"/>
+<pinref part="C13" gate="E1" pin="P$2"/>
+<pinref part="C12" gate="E1" pin="P$2"/>
+<pinref part="C11" gate="E1" pin="P$2"/>
+<pinref part="C10" gate="E1" pin="P$2"/>
+<pinref part="C09" gate="E1" pin="P$2"/>
+<pinref part="C08" gate="E1" pin="P$2"/>
+<pinref part="C07" gate="E1" pin="P$2"/>
+<pinref part="C06" gate="E1" pin="P$2"/>
+<pinref part="C05" gate="E1" pin="P$2"/>
+<pinref part="C04" gate="E1" pin="P$2"/>
+<pinref part="C03" gate="E1" pin="P$2"/>
+<pinref part="C02" gate="E1" pin="P$2"/>
+<pinref part="C01" gate="E1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$158" class="0">
 <segment>
 <junction x="22.86" y="30.48"/>
-<pinref part="C14" gate="G$10" pin="P$2"/>
-<pinref part="C13" gate="G$10" pin="P$2"/>
-<pinref part="C12" gate="G$10" pin="P$2"/>
-<pinref part="C11" gate="G$10" pin="P$2"/>
-<pinref part="C10" gate="G$10" pin="P$2"/>
-<pinref part="C09" gate="G$10" pin="P$2"/>
-<pinref part="C08" gate="G$10" pin="P$2"/>
-<pinref part="C07" gate="G$10" pin="P$2"/>
-<pinref part="C06" gate="G$10" pin="P$2"/>
-<pinref part="C05" gate="G$10" pin="P$2"/>
-<pinref part="C04" gate="G$10" pin="P$2"/>
-<pinref part="C03" gate="G$10" pin="P$2"/>
-<pinref part="C02" gate="G$10" pin="P$2"/>
-<pinref part="C01" gate="G$10" pin="P$2"/>
+<pinref part="C14" gate="E2" pin="P$2"/>
+<pinref part="C13" gate="E2" pin="P$2"/>
+<pinref part="C12" gate="E2" pin="P$2"/>
+<pinref part="C11" gate="E2" pin="P$2"/>
+<pinref part="C10" gate="E2" pin="P$2"/>
+<pinref part="C09" gate="E2" pin="P$2"/>
+<pinref part="C08" gate="E2" pin="P$2"/>
+<pinref part="C07" gate="E2" pin="P$2"/>
+<pinref part="C06" gate="E2" pin="P$2"/>
+<pinref part="C05" gate="E2" pin="P$2"/>
+<pinref part="C04" gate="E2" pin="P$2"/>
+<pinref part="C03" gate="E2" pin="P$2"/>
+<pinref part="C02" gate="E2" pin="P$2"/>
+<pinref part="C01" gate="E2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$163" class="0">
 <segment>
 <junction x="22.86" y="15.24"/>
-<pinref part="C14" gate="G$13" pin="P$2"/>
-<pinref part="C13" gate="G$13" pin="P$2"/>
-<pinref part="C12" gate="G$13" pin="P$2"/>
-<pinref part="C11" gate="G$13" pin="P$2"/>
-<pinref part="C10" gate="G$13" pin="P$2"/>
-<pinref part="C09" gate="G$13" pin="P$2"/>
-<pinref part="C08" gate="G$13" pin="P$2"/>
-<pinref part="C07" gate="G$13" pin="P$2"/>
-<pinref part="C06" gate="G$13" pin="P$2"/>
-<pinref part="C05" gate="G$13" pin="P$2"/>
-<pinref part="C04" gate="G$13" pin="P$2"/>
-<pinref part="C03" gate="G$13" pin="P$2"/>
-<pinref part="C02" gate="G$13" pin="P$2"/>
-<pinref part="C01" gate="G$13" pin="P$2"/>
+<pinref part="C14" gate="H1" pin="P$2"/>
+<pinref part="C13" gate="H1" pin="P$2"/>
+<pinref part="C12" gate="H1" pin="P$2"/>
+<pinref part="C11" gate="H1" pin="P$2"/>
+<pinref part="C10" gate="H1" pin="P$2"/>
+<pinref part="C09" gate="H1" pin="P$2"/>
+<pinref part="C08" gate="H1" pin="P$2"/>
+<pinref part="C07" gate="H1" pin="P$2"/>
+<pinref part="C06" gate="H1" pin="P$2"/>
+<pinref part="C05" gate="H1" pin="P$2"/>
+<pinref part="C04" gate="H1" pin="P$2"/>
+<pinref part="C03" gate="H1" pin="P$2"/>
+<pinref part="C02" gate="H1" pin="P$2"/>
+<pinref part="C01" gate="H1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$164" class="0">
 <segment>
 <junction x="22.86" y="10.16"/>
-<pinref part="C14" gate="G$14" pin="P$2"/>
-<pinref part="C13" gate="G$14" pin="P$2"/>
-<pinref part="C12" gate="G$14" pin="P$2"/>
-<pinref part="C11" gate="G$14" pin="P$2"/>
-<pinref part="C10" gate="G$14" pin="P$2"/>
-<pinref part="C09" gate="G$14" pin="P$2"/>
-<pinref part="C08" gate="G$14" pin="P$2"/>
-<pinref part="C07" gate="G$14" pin="P$2"/>
-<pinref part="C06" gate="G$14" pin="P$2"/>
-<pinref part="C05" gate="G$14" pin="P$2"/>
-<pinref part="C04" gate="G$14" pin="P$2"/>
-<pinref part="C03" gate="G$14" pin="P$2"/>
-<pinref part="C02" gate="G$14" pin="P$2"/>
-<pinref part="C01" gate="G$14" pin="P$2"/>
+<pinref part="C14" gate="H2" pin="P$2"/>
+<pinref part="C13" gate="H2" pin="P$2"/>
+<pinref part="C12" gate="H2" pin="P$2"/>
+<pinref part="C11" gate="H2" pin="P$2"/>
+<pinref part="C10" gate="H2" pin="P$2"/>
+<pinref part="C09" gate="H2" pin="P$2"/>
+<pinref part="C08" gate="H2" pin="P$2"/>
+<pinref part="C07" gate="H2" pin="P$2"/>
+<pinref part="C06" gate="H2" pin="P$2"/>
+<pinref part="C05" gate="H2" pin="P$2"/>
+<pinref part="C04" gate="H2" pin="P$2"/>
+<pinref part="C03" gate="H2" pin="P$2"/>
+<pinref part="C02" gate="H2" pin="P$2"/>
+<pinref part="C01" gate="H2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$165" class="0">
 <segment>
 <junction x="22.86" y="5.08"/>
-<pinref part="C14" gate="G$15" pin="P$2"/>
-<pinref part="C13" gate="G$15" pin="P$2"/>
-<pinref part="C12" gate="G$15" pin="P$2"/>
-<pinref part="C11" gate="G$15" pin="P$2"/>
-<pinref part="C10" gate="G$15" pin="P$2"/>
-<pinref part="C09" gate="G$15" pin="P$2"/>
-<pinref part="C08" gate="G$15" pin="P$2"/>
-<pinref part="C07" gate="G$15" pin="P$2"/>
-<pinref part="C06" gate="G$15" pin="P$2"/>
-<pinref part="C05" gate="G$15" pin="P$2"/>
-<pinref part="C04" gate="G$15" pin="P$2"/>
-<pinref part="C03" gate="G$15" pin="P$2"/>
-<pinref part="C02" gate="G$15" pin="P$2"/>
-<pinref part="C01" gate="G$15" pin="P$2"/>
+<pinref part="C14" gate="J1" pin="P$2"/>
+<pinref part="C13" gate="J1" pin="P$2"/>
+<pinref part="C12" gate="J1" pin="P$2"/>
+<pinref part="C11" gate="J1" pin="P$2"/>
+<pinref part="C10" gate="J1" pin="P$2"/>
+<pinref part="C09" gate="J1" pin="P$2"/>
+<pinref part="C08" gate="J1" pin="P$2"/>
+<pinref part="C07" gate="J1" pin="P$2"/>
+<pinref part="C06" gate="J1" pin="P$2"/>
+<pinref part="C05" gate="J1" pin="P$2"/>
+<pinref part="C04" gate="J1" pin="P$2"/>
+<pinref part="C03" gate="J1" pin="P$2"/>
+<pinref part="C02" gate="J1" pin="P$2"/>
+<pinref part="C01" gate="J1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$166" class="0">
 <segment>
 <junction x="22.86" y="0"/>
-<pinref part="C14" gate="G$16" pin="P$2"/>
-<pinref part="C13" gate="G$16" pin="P$2"/>
-<pinref part="C12" gate="G$16" pin="P$2"/>
-<pinref part="C11" gate="G$16" pin="P$2"/>
-<pinref part="C10" gate="G$16" pin="P$2"/>
-<pinref part="C09" gate="G$16" pin="P$2"/>
-<pinref part="C08" gate="G$16" pin="P$2"/>
-<pinref part="C07" gate="G$16" pin="P$2"/>
-<pinref part="C06" gate="G$16" pin="P$2"/>
-<pinref part="C05" gate="G$16" pin="P$2"/>
-<pinref part="C04" gate="G$16" pin="P$2"/>
-<pinref part="C03" gate="G$16" pin="P$2"/>
-<pinref part="C02" gate="G$16" pin="P$2"/>
-<pinref part="C01" gate="G$16" pin="P$2"/>
+<pinref part="C14" gate="J2" pin="P$2"/>
+<pinref part="C13" gate="J2" pin="P$2"/>
+<pinref part="C12" gate="J2" pin="P$2"/>
+<pinref part="C11" gate="J2" pin="P$2"/>
+<pinref part="C10" gate="J2" pin="P$2"/>
+<pinref part="C09" gate="J2" pin="P$2"/>
+<pinref part="C08" gate="J2" pin="P$2"/>
+<pinref part="C07" gate="J2" pin="P$2"/>
+<pinref part="C06" gate="J2" pin="P$2"/>
+<pinref part="C05" gate="J2" pin="P$2"/>
+<pinref part="C04" gate="J2" pin="P$2"/>
+<pinref part="C03" gate="J2" pin="P$2"/>
+<pinref part="C02" gate="J2" pin="P$2"/>
+<pinref part="C01" gate="J2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$167" class="0">
 <segment>
 <junction x="22.86" y="-5.08"/>
-<pinref part="C14" gate="G$17" pin="P$2"/>
-<pinref part="C13" gate="G$17" pin="P$2"/>
-<pinref part="C12" gate="G$17" pin="P$2"/>
-<pinref part="C11" gate="G$17" pin="P$2"/>
-<pinref part="C10" gate="G$17" pin="P$2"/>
-<pinref part="C09" gate="G$17" pin="P$2"/>
-<pinref part="C08" gate="G$17" pin="P$2"/>
-<pinref part="C07" gate="G$17" pin="P$2"/>
-<pinref part="C06" gate="G$17" pin="P$2"/>
-<pinref part="C05" gate="G$17" pin="P$2"/>
-<pinref part="C04" gate="G$17" pin="P$2"/>
-<pinref part="C03" gate="G$17" pin="P$2"/>
-<pinref part="C02" gate="G$17" pin="P$2"/>
-<pinref part="C01" gate="G$17" pin="P$2"/>
+<pinref part="C14" gate="K1" pin="P$2"/>
+<pinref part="C13" gate="K1" pin="P$2"/>
+<pinref part="C12" gate="K1" pin="P$2"/>
+<pinref part="C11" gate="K1" pin="P$2"/>
+<pinref part="C10" gate="K1" pin="P$2"/>
+<pinref part="C09" gate="K1" pin="P$2"/>
+<pinref part="C08" gate="K1" pin="P$2"/>
+<pinref part="C07" gate="K1" pin="P$2"/>
+<pinref part="C06" gate="K1" pin="P$2"/>
+<pinref part="C05" gate="K1" pin="P$2"/>
+<pinref part="C04" gate="K1" pin="P$2"/>
+<pinref part="C03" gate="K1" pin="P$2"/>
+<pinref part="C02" gate="K1" pin="P$2"/>
+<pinref part="C01" gate="K1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$168" class="0">
 <segment>
 <junction x="22.86" y="-10.16"/>
-<pinref part="C14" gate="G$18" pin="P$2"/>
-<pinref part="C13" gate="G$18" pin="P$2"/>
-<pinref part="C12" gate="G$18" pin="P$2"/>
-<pinref part="C11" gate="G$18" pin="P$2"/>
-<pinref part="C10" gate="G$18" pin="P$2"/>
-<pinref part="C09" gate="G$18" pin="P$2"/>
-<pinref part="C08" gate="G$18" pin="P$2"/>
-<pinref part="C07" gate="G$18" pin="P$2"/>
-<pinref part="C06" gate="G$18" pin="P$2"/>
-<pinref part="C05" gate="G$18" pin="P$2"/>
-<pinref part="C04" gate="G$18" pin="P$2"/>
-<pinref part="C03" gate="G$18" pin="P$2"/>
-<pinref part="C02" gate="G$18" pin="P$2"/>
-<pinref part="C01" gate="G$18" pin="P$2"/>
+<pinref part="C14" gate="K2" pin="P$2"/>
+<pinref part="C13" gate="K2" pin="P$2"/>
+<pinref part="C12" gate="K2" pin="P$2"/>
+<pinref part="C11" gate="K2" pin="P$2"/>
+<pinref part="C10" gate="K2" pin="P$2"/>
+<pinref part="C09" gate="K2" pin="P$2"/>
+<pinref part="C08" gate="K2" pin="P$2"/>
+<pinref part="C07" gate="K2" pin="P$2"/>
+<pinref part="C06" gate="K2" pin="P$2"/>
+<pinref part="C05" gate="K2" pin="P$2"/>
+<pinref part="C04" gate="K2" pin="P$2"/>
+<pinref part="C03" gate="K2" pin="P$2"/>
+<pinref part="C02" gate="K2" pin="P$2"/>
+<pinref part="C01" gate="K2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$169" class="0">
 <segment>
 <junction x="48.26" y="76.2"/>
-<pinref part="C14" gate="G$19" pin="P$2"/>
-<pinref part="C13" gate="G$19" pin="P$2"/>
-<pinref part="C12" gate="G$19" pin="P$2"/>
-<pinref part="C11" gate="G$19" pin="P$2"/>
-<pinref part="C10" gate="G$19" pin="P$2"/>
-<pinref part="C09" gate="G$19" pin="P$2"/>
-<pinref part="C08" gate="G$19" pin="P$2"/>
-<pinref part="C07" gate="G$19" pin="P$2"/>
-<pinref part="C06" gate="G$19" pin="P$2"/>
-<pinref part="C05" gate="G$19" pin="P$2"/>
-<pinref part="C04" gate="G$19" pin="P$2"/>
-<pinref part="C03" gate="G$19" pin="P$2"/>
-<pinref part="C02" gate="G$19" pin="P$2"/>
-<pinref part="C01" gate="G$19" pin="P$2"/>
+<pinref part="C14" gate="L1" pin="P$2"/>
+<pinref part="C13" gate="L1" pin="P$2"/>
+<pinref part="C12" gate="L1" pin="P$2"/>
+<pinref part="C11" gate="L1" pin="P$2"/>
+<pinref part="C10" gate="L1" pin="P$2"/>
+<pinref part="C09" gate="L1" pin="P$2"/>
+<pinref part="C08" gate="L1" pin="P$2"/>
+<pinref part="C07" gate="L1" pin="P$2"/>
+<pinref part="C06" gate="L1" pin="P$2"/>
+<pinref part="C05" gate="L1" pin="P$2"/>
+<pinref part="C04" gate="L1" pin="P$2"/>
+<pinref part="C03" gate="L1" pin="P$2"/>
+<pinref part="C02" gate="L1" pin="P$2"/>
+<pinref part="C01" gate="L1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$170" class="0">
 <segment>
 <junction x="48.26" y="71.12"/>
-<pinref part="C14" gate="G$20" pin="P$2"/>
-<pinref part="C13" gate="G$20" pin="P$2"/>
-<pinref part="C12" gate="G$20" pin="P$2"/>
-<pinref part="C11" gate="G$20" pin="P$2"/>
-<pinref part="C10" gate="G$20" pin="P$2"/>
-<pinref part="C09" gate="G$20" pin="P$2"/>
-<pinref part="C08" gate="G$20" pin="P$2"/>
-<pinref part="C07" gate="G$20" pin="P$2"/>
-<pinref part="C06" gate="G$20" pin="P$2"/>
-<pinref part="C05" gate="G$20" pin="P$2"/>
-<pinref part="C04" gate="G$20" pin="P$2"/>
-<pinref part="C03" gate="G$20" pin="P$2"/>
-<pinref part="C02" gate="G$20" pin="P$2"/>
-<pinref part="C01" gate="G$20" pin="P$2"/>
+<pinref part="C14" gate="L2" pin="P$2"/>
+<pinref part="C13" gate="L2" pin="P$2"/>
+<pinref part="C12" gate="L2" pin="P$2"/>
+<pinref part="C11" gate="L2" pin="P$2"/>
+<pinref part="C10" gate="L2" pin="P$2"/>
+<pinref part="C09" gate="L2" pin="P$2"/>
+<pinref part="C08" gate="L2" pin="P$2"/>
+<pinref part="C07" gate="L2" pin="P$2"/>
+<pinref part="C06" gate="L2" pin="P$2"/>
+<pinref part="C05" gate="L2" pin="P$2"/>
+<pinref part="C04" gate="L2" pin="P$2"/>
+<pinref part="C03" gate="L2" pin="P$2"/>
+<pinref part="C02" gate="L2" pin="P$2"/>
+<pinref part="C01" gate="L2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$171" class="0">
 <segment>
 <junction x="48.26" y="66.04"/>
-<pinref part="C14" gate="G$21" pin="P$2"/>
-<pinref part="C13" gate="G$21" pin="P$2"/>
-<pinref part="C12" gate="G$21" pin="P$2"/>
-<pinref part="C11" gate="G$21" pin="P$2"/>
-<pinref part="C10" gate="G$21" pin="P$2"/>
-<pinref part="C09" gate="G$21" pin="P$2"/>
-<pinref part="C08" gate="G$21" pin="P$2"/>
-<pinref part="C07" gate="G$21" pin="P$2"/>
-<pinref part="C06" gate="G$21" pin="P$2"/>
-<pinref part="C05" gate="G$21" pin="P$2"/>
-<pinref part="C04" gate="G$21" pin="P$2"/>
-<pinref part="C03" gate="G$21" pin="P$2"/>
-<pinref part="C02" gate="G$21" pin="P$2"/>
-<pinref part="C01" gate="G$21" pin="P$2"/>
+<pinref part="C14" gate="M1" pin="P$2"/>
+<pinref part="C13" gate="M1" pin="P$2"/>
+<pinref part="C12" gate="M1" pin="P$2"/>
+<pinref part="C11" gate="M1" pin="P$2"/>
+<pinref part="C10" gate="M1" pin="P$2"/>
+<pinref part="C09" gate="M1" pin="P$2"/>
+<pinref part="C08" gate="M1" pin="P$2"/>
+<pinref part="C07" gate="M1" pin="P$2"/>
+<pinref part="C06" gate="M1" pin="P$2"/>
+<pinref part="C05" gate="M1" pin="P$2"/>
+<pinref part="C04" gate="M1" pin="P$2"/>
+<pinref part="C03" gate="M1" pin="P$2"/>
+<pinref part="C02" gate="M1" pin="P$2"/>
+<pinref part="C01" gate="M1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$172" class="0">
 <segment>
 <junction x="48.26" y="60.96"/>
-<pinref part="C14" gate="G$22" pin="P$2"/>
-<pinref part="C13" gate="G$22" pin="P$2"/>
-<pinref part="C12" gate="G$22" pin="P$2"/>
-<pinref part="C11" gate="G$22" pin="P$2"/>
-<pinref part="C10" gate="G$22" pin="P$2"/>
-<pinref part="C09" gate="G$22" pin="P$2"/>
-<pinref part="C08" gate="G$22" pin="P$2"/>
-<pinref part="C07" gate="G$22" pin="P$2"/>
-<pinref part="C06" gate="G$22" pin="P$2"/>
-<pinref part="C05" gate="G$22" pin="P$2"/>
-<pinref part="C04" gate="G$22" pin="P$2"/>
-<pinref part="C03" gate="G$22" pin="P$2"/>
-<pinref part="C02" gate="G$22" pin="P$2"/>
-<pinref part="C01" gate="G$22" pin="P$2"/>
+<pinref part="C14" gate="M2" pin="P$2"/>
+<pinref part="C13" gate="M2" pin="P$2"/>
+<pinref part="C12" gate="M2" pin="P$2"/>
+<pinref part="C11" gate="M2" pin="P$2"/>
+<pinref part="C10" gate="M2" pin="P$2"/>
+<pinref part="C09" gate="M2" pin="P$2"/>
+<pinref part="C08" gate="M2" pin="P$2"/>
+<pinref part="C07" gate="M2" pin="P$2"/>
+<pinref part="C06" gate="M2" pin="P$2"/>
+<pinref part="C05" gate="M2" pin="P$2"/>
+<pinref part="C04" gate="M2" pin="P$2"/>
+<pinref part="C03" gate="M2" pin="P$2"/>
+<pinref part="C02" gate="M2" pin="P$2"/>
+<pinref part="C01" gate="M2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$175" class="0">
 <segment>
 <junction x="48.26" y="45.72"/>
-<pinref part="C14" gate="G$25" pin="P$2"/>
-<pinref part="C13" gate="G$25" pin="P$2"/>
-<pinref part="C12" gate="G$25" pin="P$2"/>
-<pinref part="C11" gate="G$25" pin="P$2"/>
-<pinref part="C10" gate="G$25" pin="P$2"/>
-<pinref part="C09" gate="G$25" pin="P$2"/>
-<pinref part="C08" gate="G$25" pin="P$2"/>
-<pinref part="C07" gate="G$25" pin="P$2"/>
-<pinref part="C06" gate="G$25" pin="P$2"/>
-<pinref part="C05" gate="G$25" pin="P$2"/>
-<pinref part="C04" gate="G$25" pin="P$2"/>
-<pinref part="C03" gate="G$25" pin="P$2"/>
-<pinref part="C02" gate="G$25" pin="P$2"/>
-<pinref part="C01" gate="G$25" pin="P$2"/>
+<pinref part="C14" gate="P1" pin="P$2"/>
+<pinref part="C13" gate="P1" pin="P$2"/>
+<pinref part="C12" gate="P1" pin="P$2"/>
+<pinref part="C11" gate="P1" pin="P$2"/>
+<pinref part="C10" gate="P1" pin="P$2"/>
+<pinref part="C09" gate="P1" pin="P$2"/>
+<pinref part="C08" gate="P1" pin="P$2"/>
+<pinref part="C07" gate="P1" pin="P$2"/>
+<pinref part="C06" gate="P1" pin="P$2"/>
+<pinref part="C05" gate="P1" pin="P$2"/>
+<pinref part="C04" gate="P1" pin="P$2"/>
+<pinref part="C03" gate="P1" pin="P$2"/>
+<pinref part="C02" gate="P1" pin="P$2"/>
+<pinref part="C01" gate="P1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$176" class="0">
 <segment>
 <junction x="48.26" y="40.64"/>
-<pinref part="C14" gate="G$26" pin="P$2"/>
-<pinref part="C13" gate="G$26" pin="P$2"/>
-<pinref part="C12" gate="G$26" pin="P$2"/>
-<pinref part="C11" gate="G$26" pin="P$2"/>
-<pinref part="C10" gate="G$26" pin="P$2"/>
-<pinref part="C09" gate="G$26" pin="P$2"/>
-<pinref part="C08" gate="G$26" pin="P$2"/>
-<pinref part="C07" gate="G$26" pin="P$2"/>
-<pinref part="C06" gate="G$26" pin="P$2"/>
-<pinref part="C05" gate="G$26" pin="P$2"/>
-<pinref part="C04" gate="G$26" pin="P$2"/>
-<pinref part="C03" gate="G$26" pin="P$2"/>
-<pinref part="C02" gate="G$26" pin="P$2"/>
-<pinref part="C01" gate="G$26" pin="P$2"/>
+<pinref part="C14" gate="P2" pin="P$2"/>
+<pinref part="C13" gate="P2" pin="P$2"/>
+<pinref part="C12" gate="P2" pin="P$2"/>
+<pinref part="C11" gate="P2" pin="P$2"/>
+<pinref part="C10" gate="P2" pin="P$2"/>
+<pinref part="C09" gate="P2" pin="P$2"/>
+<pinref part="C08" gate="P2" pin="P$2"/>
+<pinref part="C07" gate="P2" pin="P$2"/>
+<pinref part="C06" gate="P2" pin="P$2"/>
+<pinref part="C05" gate="P2" pin="P$2"/>
+<pinref part="C04" gate="P2" pin="P$2"/>
+<pinref part="C03" gate="P2" pin="P$2"/>
+<pinref part="C02" gate="P2" pin="P$2"/>
+<pinref part="C01" gate="P2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$177" class="0">
 <segment>
 <junction x="48.26" y="35.56"/>
-<pinref part="C14" gate="G$27" pin="P$2"/>
-<pinref part="C13" gate="G$27" pin="P$2"/>
-<pinref part="C12" gate="G$27" pin="P$2"/>
-<pinref part="C11" gate="G$27" pin="P$2"/>
-<pinref part="C10" gate="G$27" pin="P$2"/>
-<pinref part="C09" gate="G$27" pin="P$2"/>
-<pinref part="C08" gate="G$27" pin="P$2"/>
-<pinref part="C07" gate="G$27" pin="P$2"/>
-<pinref part="C06" gate="G$27" pin="P$2"/>
-<pinref part="C05" gate="G$27" pin="P$2"/>
-<pinref part="C04" gate="G$27" pin="P$2"/>
-<pinref part="C03" gate="G$27" pin="P$2"/>
-<pinref part="C02" gate="G$27" pin="P$2"/>
-<pinref part="C01" gate="G$27" pin="P$2"/>
+<pinref part="C14" gate="R1" pin="P$2"/>
+<pinref part="C13" gate="R1" pin="P$2"/>
+<pinref part="C12" gate="R1" pin="P$2"/>
+<pinref part="C11" gate="R1" pin="P$2"/>
+<pinref part="C10" gate="R1" pin="P$2"/>
+<pinref part="C09" gate="R1" pin="P$2"/>
+<pinref part="C08" gate="R1" pin="P$2"/>
+<pinref part="C07" gate="R1" pin="P$2"/>
+<pinref part="C06" gate="R1" pin="P$2"/>
+<pinref part="C05" gate="R1" pin="P$2"/>
+<pinref part="C04" gate="R1" pin="P$2"/>
+<pinref part="C03" gate="R1" pin="P$2"/>
+<pinref part="C02" gate="R1" pin="P$2"/>
+<pinref part="C01" gate="R1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$178" class="0">
 <segment>
 <junction x="48.26" y="30.48"/>
-<pinref part="C14" gate="G$28" pin="P$2"/>
-<pinref part="C13" gate="G$28" pin="P$2"/>
-<pinref part="C12" gate="G$28" pin="P$2"/>
-<pinref part="C11" gate="G$28" pin="P$2"/>
-<pinref part="C10" gate="G$28" pin="P$2"/>
-<pinref part="C09" gate="G$28" pin="P$2"/>
-<pinref part="C08" gate="G$28" pin="P$2"/>
-<pinref part="C07" gate="G$28" pin="P$2"/>
-<pinref part="C06" gate="G$28" pin="P$2"/>
-<pinref part="C05" gate="G$28" pin="P$2"/>
-<pinref part="C04" gate="G$28" pin="P$2"/>
-<pinref part="C03" gate="G$28" pin="P$2"/>
-<pinref part="C02" gate="G$28" pin="P$2"/>
-<pinref part="C01" gate="G$28" pin="P$2"/>
+<pinref part="C14" gate="R2" pin="P$2"/>
+<pinref part="C13" gate="R2" pin="P$2"/>
+<pinref part="C12" gate="R2" pin="P$2"/>
+<pinref part="C11" gate="R2" pin="P$2"/>
+<pinref part="C10" gate="R2" pin="P$2"/>
+<pinref part="C09" gate="R2" pin="P$2"/>
+<pinref part="C08" gate="R2" pin="P$2"/>
+<pinref part="C07" gate="R2" pin="P$2"/>
+<pinref part="C06" gate="R2" pin="P$2"/>
+<pinref part="C05" gate="R2" pin="P$2"/>
+<pinref part="C04" gate="R2" pin="P$2"/>
+<pinref part="C03" gate="R2" pin="P$2"/>
+<pinref part="C02" gate="R2" pin="P$2"/>
+<pinref part="C01" gate="R2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$179" class="0">
 <segment>
 <junction x="48.26" y="25.4"/>
-<pinref part="C14" gate="G$29" pin="P$2"/>
-<pinref part="C13" gate="G$29" pin="P$2"/>
-<pinref part="C12" gate="G$29" pin="P$2"/>
-<pinref part="C11" gate="G$29" pin="P$2"/>
-<pinref part="C10" gate="G$29" pin="P$2"/>
-<pinref part="C09" gate="G$29" pin="P$2"/>
-<pinref part="C08" gate="G$29" pin="P$2"/>
-<pinref part="C07" gate="G$29" pin="P$2"/>
-<pinref part="C06" gate="G$29" pin="P$2"/>
-<pinref part="C05" gate="G$29" pin="P$2"/>
-<pinref part="C04" gate="G$29" pin="P$2"/>
-<pinref part="C03" gate="G$29" pin="P$2"/>
-<pinref part="C02" gate="G$29" pin="P$2"/>
-<pinref part="C01" gate="G$29" pin="P$2"/>
+<pinref part="C14" gate="S1" pin="P$2"/>
+<pinref part="C13" gate="S1" pin="P$2"/>
+<pinref part="C12" gate="S1" pin="P$2"/>
+<pinref part="C11" gate="S1" pin="P$2"/>
+<pinref part="C10" gate="S1" pin="P$2"/>
+<pinref part="C09" gate="S1" pin="P$2"/>
+<pinref part="C08" gate="S1" pin="P$2"/>
+<pinref part="C07" gate="S1" pin="P$2"/>
+<pinref part="C06" gate="S1" pin="P$2"/>
+<pinref part="C05" gate="S1" pin="P$2"/>
+<pinref part="C04" gate="S1" pin="P$2"/>
+<pinref part="C03" gate="S1" pin="P$2"/>
+<pinref part="C02" gate="S1" pin="P$2"/>
+<pinref part="C01" gate="S1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$180" class="0">
 <segment>
 <junction x="48.26" y="20.32"/>
-<pinref part="C14" gate="G$30" pin="P$2"/>
-<pinref part="C13" gate="G$30" pin="P$2"/>
-<pinref part="C12" gate="G$30" pin="P$2"/>
-<pinref part="C11" gate="G$30" pin="P$2"/>
-<pinref part="C10" gate="G$30" pin="P$2"/>
-<pinref part="C09" gate="G$30" pin="P$2"/>
-<pinref part="C08" gate="G$30" pin="P$2"/>
-<pinref part="C07" gate="G$30" pin="P$2"/>
-<pinref part="C06" gate="G$30" pin="P$2"/>
-<pinref part="C05" gate="G$30" pin="P$2"/>
-<pinref part="C04" gate="G$30" pin="P$2"/>
-<pinref part="C03" gate="G$30" pin="P$2"/>
-<pinref part="C02" gate="G$30" pin="P$2"/>
-<pinref part="C01" gate="G$30" pin="P$2"/>
+<pinref part="C14" gate="S2" pin="P$2"/>
+<pinref part="C13" gate="S2" pin="P$2"/>
+<pinref part="C12" gate="S2" pin="P$2"/>
+<pinref part="C11" gate="S2" pin="P$2"/>
+<pinref part="C10" gate="S2" pin="P$2"/>
+<pinref part="C09" gate="S2" pin="P$2"/>
+<pinref part="C08" gate="S2" pin="P$2"/>
+<pinref part="C07" gate="S2" pin="P$2"/>
+<pinref part="C06" gate="S2" pin="P$2"/>
+<pinref part="C05" gate="S2" pin="P$2"/>
+<pinref part="C04" gate="S2" pin="P$2"/>
+<pinref part="C03" gate="S2" pin="P$2"/>
+<pinref part="C02" gate="S2" pin="P$2"/>
+<pinref part="C01" gate="S2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$183" class="0">
 <segment>
 <junction x="48.26" y="5.08"/>
-<pinref part="C14" gate="G$33" pin="P$2"/>
-<pinref part="C13" gate="G$33" pin="P$2"/>
-<pinref part="C12" gate="G$33" pin="P$2"/>
-<pinref part="C11" gate="G$33" pin="P$2"/>
-<pinref part="C10" gate="G$33" pin="P$2"/>
-<pinref part="C09" gate="G$33" pin="P$2"/>
-<pinref part="C08" gate="G$33" pin="P$2"/>
-<pinref part="C07" gate="G$33" pin="P$2"/>
-<pinref part="C06" gate="G$33" pin="P$2"/>
-<pinref part="C05" gate="G$33" pin="P$2"/>
-<pinref part="C04" gate="G$33" pin="P$2"/>
-<pinref part="C03" gate="G$33" pin="P$2"/>
-<pinref part="C02" gate="G$33" pin="P$2"/>
-<pinref part="C01" gate="G$33" pin="P$2"/>
+<pinref part="C14" gate="U1" pin="P$2"/>
+<pinref part="C13" gate="U1" pin="P$2"/>
+<pinref part="C12" gate="U1" pin="P$2"/>
+<pinref part="C11" gate="U1" pin="P$2"/>
+<pinref part="C10" gate="U1" pin="P$2"/>
+<pinref part="C09" gate="U1" pin="P$2"/>
+<pinref part="C08" gate="U1" pin="P$2"/>
+<pinref part="C07" gate="U1" pin="P$2"/>
+<pinref part="C06" gate="U1" pin="P$2"/>
+<pinref part="C05" gate="U1" pin="P$2"/>
+<pinref part="C04" gate="U1" pin="P$2"/>
+<pinref part="C03" gate="U1" pin="P$2"/>
+<pinref part="C02" gate="U1" pin="P$2"/>
+<pinref part="C01" gate="U1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$184" class="0">
 <segment>
 <junction x="48.26" y="0"/>
-<pinref part="C14" gate="G$34" pin="P$2"/>
-<pinref part="C13" gate="G$34" pin="P$2"/>
-<pinref part="C12" gate="G$34" pin="P$2"/>
-<pinref part="C11" gate="G$34" pin="P$2"/>
-<pinref part="C10" gate="G$34" pin="P$2"/>
-<pinref part="C09" gate="G$34" pin="P$2"/>
-<pinref part="C08" gate="G$34" pin="P$2"/>
-<pinref part="C07" gate="G$34" pin="P$2"/>
-<pinref part="C06" gate="G$34" pin="P$2"/>
-<pinref part="C05" gate="G$34" pin="P$2"/>
-<pinref part="C04" gate="G$34" pin="P$2"/>
-<pinref part="C03" gate="G$34" pin="P$2"/>
-<pinref part="C02" gate="G$34" pin="P$2"/>
-<pinref part="C01" gate="G$34" pin="P$2"/>
+<pinref part="C14" gate="U2" pin="P$2"/>
+<pinref part="C13" gate="U2" pin="P$2"/>
+<pinref part="C12" gate="U2" pin="P$2"/>
+<pinref part="C11" gate="U2" pin="P$2"/>
+<pinref part="C10" gate="U2" pin="P$2"/>
+<pinref part="C09" gate="U2" pin="P$2"/>
+<pinref part="C08" gate="U2" pin="P$2"/>
+<pinref part="C07" gate="U2" pin="P$2"/>
+<pinref part="C06" gate="U2" pin="P$2"/>
+<pinref part="C05" gate="U2" pin="P$2"/>
+<pinref part="C04" gate="U2" pin="P$2"/>
+<pinref part="C03" gate="U2" pin="P$2"/>
+<pinref part="C02" gate="U2" pin="P$2"/>
+<pinref part="C01" gate="U2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$186" class="0">
 <segment>
 <junction x="48.26" y="-5.08"/>
-<pinref part="C14" gate="G$35" pin="P$2"/>
-<pinref part="C13" gate="G$35" pin="P$2"/>
-<pinref part="C12" gate="G$35" pin="P$2"/>
-<pinref part="C11" gate="G$35" pin="P$2"/>
-<pinref part="C10" gate="G$35" pin="P$2"/>
-<pinref part="C09" gate="G$35" pin="P$2"/>
-<pinref part="C08" gate="G$35" pin="P$2"/>
-<pinref part="C07" gate="G$35" pin="P$2"/>
-<pinref part="C06" gate="G$35" pin="P$2"/>
-<pinref part="C05" gate="G$35" pin="P$2"/>
-<pinref part="C04" gate="G$35" pin="P$2"/>
-<pinref part="C03" gate="G$35" pin="P$2"/>
-<pinref part="C02" gate="G$35" pin="P$2"/>
-<pinref part="C01" gate="G$35" pin="P$2"/>
+<pinref part="C14" gate="V1" pin="P$2"/>
+<pinref part="C13" gate="V1" pin="P$2"/>
+<pinref part="C12" gate="V1" pin="P$2"/>
+<pinref part="C11" gate="V1" pin="P$2"/>
+<pinref part="C10" gate="V1" pin="P$2"/>
+<pinref part="C09" gate="V1" pin="P$2"/>
+<pinref part="C08" gate="V1" pin="P$2"/>
+<pinref part="C07" gate="V1" pin="P$2"/>
+<pinref part="C06" gate="V1" pin="P$2"/>
+<pinref part="C05" gate="V1" pin="P$2"/>
+<pinref part="C04" gate="V1" pin="P$2"/>
+<pinref part="C03" gate="V1" pin="P$2"/>
+<pinref part="C02" gate="V1" pin="P$2"/>
+<pinref part="C01" gate="V1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$187" class="0">
 <segment>
 <junction x="48.26" y="-10.16"/>
-<pinref part="C14" gate="G$36" pin="P$2"/>
-<pinref part="C13" gate="G$36" pin="P$2"/>
-<pinref part="C12" gate="G$36" pin="P$2"/>
-<pinref part="C11" gate="G$36" pin="P$2"/>
-<pinref part="C10" gate="G$36" pin="P$2"/>
-<pinref part="C09" gate="G$36" pin="P$2"/>
-<pinref part="C08" gate="G$36" pin="P$2"/>
-<pinref part="C07" gate="G$36" pin="P$2"/>
-<pinref part="C06" gate="G$36" pin="P$2"/>
-<pinref part="C05" gate="G$36" pin="P$2"/>
-<pinref part="C04" gate="G$36" pin="P$2"/>
-<pinref part="C03" gate="G$36" pin="P$2"/>
-<pinref part="C02" gate="G$36" pin="P$2"/>
-<pinref part="C01" gate="G$36" pin="P$2"/>
+<pinref part="C14" gate="V2" pin="P$2"/>
+<pinref part="C13" gate="V2" pin="P$2"/>
+<pinref part="C12" gate="V2" pin="P$2"/>
+<pinref part="C11" gate="V2" pin="P$2"/>
+<pinref part="C10" gate="V2" pin="P$2"/>
+<pinref part="C09" gate="V2" pin="P$2"/>
+<pinref part="C08" gate="V2" pin="P$2"/>
+<pinref part="C07" gate="V2" pin="P$2"/>
+<pinref part="C06" gate="V2" pin="P$2"/>
+<pinref part="C05" gate="V2" pin="P$2"/>
+<pinref part="C04" gate="V2" pin="P$2"/>
+<pinref part="C03" gate="V2" pin="P$2"/>
+<pinref part="C02" gate="V2" pin="P$2"/>
+<pinref part="C01" gate="V2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$188" class="0">
 <segment>
 <junction x="78.74" y="76.2"/>
-<pinref part="D14" gate="G$1" pin="P$2"/>
-<pinref part="D13" gate="G$1" pin="P$2"/>
-<pinref part="D12" gate="G$1" pin="P$2"/>
-<pinref part="D11" gate="G$1" pin="P$2"/>
-<pinref part="D10" gate="G$1" pin="P$2"/>
-<pinref part="D09" gate="G$1" pin="P$2"/>
-<pinref part="D08" gate="G$1" pin="P$2"/>
-<pinref part="D07" gate="G$1" pin="P$2"/>
-<pinref part="D06" gate="G$1" pin="P$2"/>
-<pinref part="D05" gate="G$1" pin="P$2"/>
-<pinref part="D04" gate="G$1" pin="P$2"/>
-<pinref part="D03" gate="G$1" pin="P$2"/>
-<pinref part="D02" gate="G$1" pin="P$2"/>
-<pinref part="D01" gate="G$1" pin="P$2"/>
+<pinref part="D14" gate="A1" pin="P$2"/>
+<pinref part="D13" gate="A1" pin="P$2"/>
+<pinref part="D12" gate="A1" pin="P$2"/>
+<pinref part="D11" gate="A1" pin="P$2"/>
+<pinref part="D10" gate="A1" pin="P$2"/>
+<pinref part="D09" gate="A1" pin="P$2"/>
+<pinref part="D08" gate="A1" pin="P$2"/>
+<pinref part="D07" gate="A1" pin="P$2"/>
+<pinref part="D06" gate="A1" pin="P$2"/>
+<pinref part="D05" gate="A1" pin="P$2"/>
+<pinref part="D04" gate="A1" pin="P$2"/>
+<pinref part="D03" gate="A1" pin="P$2"/>
+<pinref part="D02" gate="A1" pin="P$2"/>
+<pinref part="D01" gate="A1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$190" class="0">
 <segment>
 <junction x="78.74" y="66.04"/>
-<pinref part="D14" gate="G$3" pin="P$2"/>
-<pinref part="D13" gate="G$3" pin="P$2"/>
-<pinref part="D12" gate="G$3" pin="P$2"/>
-<pinref part="D11" gate="G$3" pin="P$2"/>
-<pinref part="D10" gate="G$3" pin="P$2"/>
-<pinref part="D09" gate="G$3" pin="P$2"/>
-<pinref part="D08" gate="G$3" pin="P$2"/>
-<pinref part="D07" gate="G$3" pin="P$2"/>
-<pinref part="D06" gate="G$3" pin="P$2"/>
-<pinref part="D05" gate="G$3" pin="P$2"/>
-<pinref part="D04" gate="G$3" pin="P$2"/>
-<pinref part="D03" gate="G$3" pin="P$2"/>
-<pinref part="D02" gate="G$3" pin="P$2"/>
-<pinref part="D01" gate="G$3" pin="P$2"/>
+<pinref part="D14" gate="B1" pin="P$2"/>
+<pinref part="D13" gate="B1" pin="P$2"/>
+<pinref part="D12" gate="B1" pin="P$2"/>
+<pinref part="D11" gate="B1" pin="P$2"/>
+<pinref part="D10" gate="B1" pin="P$2"/>
+<pinref part="D09" gate="B1" pin="P$2"/>
+<pinref part="D08" gate="B1" pin="P$2"/>
+<pinref part="D07" gate="B1" pin="P$2"/>
+<pinref part="D06" gate="B1" pin="P$2"/>
+<pinref part="D05" gate="B1" pin="P$2"/>
+<pinref part="D04" gate="B1" pin="P$2"/>
+<pinref part="D03" gate="B1" pin="P$2"/>
+<pinref part="D02" gate="B1" pin="P$2"/>
+<pinref part="D01" gate="B1" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA8L" class="0">
@@ -8750,39 +8764,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="88.9" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
 <junction x="78.74" y="45.72"/>
 <label x="81.28" y="45.72" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$7" pin="P$2"/>
-<pinref part="D13" gate="G$7" pin="P$2"/>
-<pinref part="D12" gate="G$7" pin="P$2"/>
-<pinref part="D11" gate="G$7" pin="P$2"/>
-<pinref part="D10" gate="G$7" pin="P$2"/>
-<pinref part="D09" gate="G$7" pin="P$2"/>
-<pinref part="D08" gate="G$7" pin="P$2"/>
-<pinref part="D07" gate="G$7" pin="P$2"/>
-<pinref part="D06" gate="G$7" pin="P$2"/>
-<pinref part="D05" gate="G$7" pin="P$2"/>
-<pinref part="D04" gate="G$7" pin="P$2"/>
-<pinref part="D03" gate="G$7" pin="P$2"/>
-<pinref part="D02" gate="G$7" pin="P$2"/>
-<pinref part="D01" gate="G$7" pin="P$2"/>
+<pinref part="D14" gate="D1" pin="P$2"/>
+<pinref part="D13" gate="D1" pin="P$2"/>
+<pinref part="D12" gate="D1" pin="P$2"/>
+<pinref part="D11" gate="D1" pin="P$2"/>
+<pinref part="D10" gate="D1" pin="P$2"/>
+<pinref part="D09" gate="D1" pin="P$2"/>
+<pinref part="D08" gate="D1" pin="P$2"/>
+<pinref part="D07" gate="D1" pin="P$2"/>
+<pinref part="D06" gate="D1" pin="P$2"/>
+<pinref part="D05" gate="D1" pin="P$2"/>
+<pinref part="D04" gate="D1" pin="P$2"/>
+<pinref part="D03" gate="D1" pin="P$2"/>
+<pinref part="D02" gate="D1" pin="P$2"/>
+<pinref part="D01" gate="D1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$196" class="0">
 <segment>
 <junction x="78.74" y="40.64"/>
-<pinref part="D14" gate="G$8" pin="P$2"/>
-<pinref part="D13" gate="G$8" pin="P$2"/>
-<pinref part="D12" gate="G$8" pin="P$2"/>
-<pinref part="D11" gate="G$8" pin="P$2"/>
-<pinref part="D10" gate="G$8" pin="P$2"/>
-<pinref part="D09" gate="G$8" pin="P$2"/>
-<pinref part="D08" gate="G$8" pin="P$2"/>
-<pinref part="D07" gate="G$8" pin="P$2"/>
-<pinref part="D06" gate="G$8" pin="P$2"/>
-<pinref part="D05" gate="G$8" pin="P$2"/>
-<pinref part="D04" gate="G$8" pin="P$2"/>
-<pinref part="D03" gate="G$8" pin="P$2"/>
-<pinref part="D02" gate="G$8" pin="P$2"/>
-<pinref part="D01" gate="G$8" pin="P$2"/>
+<pinref part="D14" gate="D2" pin="P$2"/>
+<pinref part="D13" gate="D2" pin="P$2"/>
+<pinref part="D12" gate="D2" pin="P$2"/>
+<pinref part="D11" gate="D2" pin="P$2"/>
+<pinref part="D10" gate="D2" pin="P$2"/>
+<pinref part="D09" gate="D2" pin="P$2"/>
+<pinref part="D08" gate="D2" pin="P$2"/>
+<pinref part="D07" gate="D2" pin="P$2"/>
+<pinref part="D06" gate="D2" pin="P$2"/>
+<pinref part="D05" gate="D2" pin="P$2"/>
+<pinref part="D04" gate="D2" pin="P$2"/>
+<pinref part="D03" gate="D2" pin="P$2"/>
+<pinref part="D02" gate="D2" pin="P$2"/>
+<pinref part="D01" gate="D2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA9L" class="0">
@@ -8790,39 +8804,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="88.9" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
 <junction x="78.74" y="35.56"/>
 <label x="81.28" y="35.56" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$9" pin="P$2"/>
-<pinref part="D13" gate="G$9" pin="P$2"/>
-<pinref part="D12" gate="G$9" pin="P$2"/>
-<pinref part="D11" gate="G$9" pin="P$2"/>
-<pinref part="D10" gate="G$9" pin="P$2"/>
-<pinref part="D09" gate="G$9" pin="P$2"/>
-<pinref part="D08" gate="G$9" pin="P$2"/>
-<pinref part="D07" gate="G$9" pin="P$2"/>
-<pinref part="D06" gate="G$9" pin="P$2"/>
-<pinref part="D05" gate="G$9" pin="P$2"/>
-<pinref part="D04" gate="G$9" pin="P$2"/>
-<pinref part="D03" gate="G$9" pin="P$2"/>
-<pinref part="D02" gate="G$9" pin="P$2"/>
-<pinref part="D01" gate="G$9" pin="P$2"/>
+<pinref part="D14" gate="E1" pin="P$2"/>
+<pinref part="D13" gate="E1" pin="P$2"/>
+<pinref part="D12" gate="E1" pin="P$2"/>
+<pinref part="D11" gate="E1" pin="P$2"/>
+<pinref part="D10" gate="E1" pin="P$2"/>
+<pinref part="D09" gate="E1" pin="P$2"/>
+<pinref part="D08" gate="E1" pin="P$2"/>
+<pinref part="D07" gate="E1" pin="P$2"/>
+<pinref part="D06" gate="E1" pin="P$2"/>
+<pinref part="D05" gate="E1" pin="P$2"/>
+<pinref part="D04" gate="E1" pin="P$2"/>
+<pinref part="D03" gate="E1" pin="P$2"/>
+<pinref part="D02" gate="E1" pin="P$2"/>
+<pinref part="D01" gate="E1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$198" class="0">
 <segment>
 <junction x="78.74" y="30.48"/>
-<pinref part="D14" gate="G$10" pin="P$2"/>
-<pinref part="D13" gate="G$10" pin="P$2"/>
-<pinref part="D12" gate="G$10" pin="P$2"/>
-<pinref part="D11" gate="G$10" pin="P$2"/>
-<pinref part="D10" gate="G$10" pin="P$2"/>
-<pinref part="D09" gate="G$10" pin="P$2"/>
-<pinref part="D08" gate="G$10" pin="P$2"/>
-<pinref part="D07" gate="G$10" pin="P$2"/>
-<pinref part="D06" gate="G$10" pin="P$2"/>
-<pinref part="D05" gate="G$10" pin="P$2"/>
-<pinref part="D04" gate="G$10" pin="P$2"/>
-<pinref part="D03" gate="G$10" pin="P$2"/>
-<pinref part="D02" gate="G$10" pin="P$2"/>
-<pinref part="D01" gate="G$10" pin="P$2"/>
+<pinref part="D14" gate="E2" pin="P$2"/>
+<pinref part="D13" gate="E2" pin="P$2"/>
+<pinref part="D12" gate="E2" pin="P$2"/>
+<pinref part="D11" gate="E2" pin="P$2"/>
+<pinref part="D10" gate="E2" pin="P$2"/>
+<pinref part="D09" gate="E2" pin="P$2"/>
+<pinref part="D08" gate="E2" pin="P$2"/>
+<pinref part="D07" gate="E2" pin="P$2"/>
+<pinref part="D06" gate="E2" pin="P$2"/>
+<pinref part="D05" gate="E2" pin="P$2"/>
+<pinref part="D04" gate="E2" pin="P$2"/>
+<pinref part="D03" gate="E2" pin="P$2"/>
+<pinref part="D02" gate="E2" pin="P$2"/>
+<pinref part="D01" gate="E2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA10L" class="0">
@@ -8830,39 +8844,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="88.9" y1="15.24" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
 <junction x="78.74" y="15.24"/>
 <label x="81.28" y="15.24" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$13" pin="P$2"/>
-<pinref part="D13" gate="G$13" pin="P$2"/>
-<pinref part="D12" gate="G$13" pin="P$2"/>
-<pinref part="D11" gate="G$13" pin="P$2"/>
-<pinref part="D10" gate="G$13" pin="P$2"/>
-<pinref part="D09" gate="G$13" pin="P$2"/>
-<pinref part="D08" gate="G$13" pin="P$2"/>
-<pinref part="D07" gate="G$13" pin="P$2"/>
-<pinref part="D06" gate="G$13" pin="P$2"/>
-<pinref part="D05" gate="G$13" pin="P$2"/>
-<pinref part="D04" gate="G$13" pin="P$2"/>
-<pinref part="D03" gate="G$13" pin="P$2"/>
-<pinref part="D02" gate="G$13" pin="P$2"/>
-<pinref part="D01" gate="G$13" pin="P$2"/>
+<pinref part="D14" gate="H1" pin="P$2"/>
+<pinref part="D13" gate="H1" pin="P$2"/>
+<pinref part="D12" gate="H1" pin="P$2"/>
+<pinref part="D11" gate="H1" pin="P$2"/>
+<pinref part="D10" gate="H1" pin="P$2"/>
+<pinref part="D09" gate="H1" pin="P$2"/>
+<pinref part="D08" gate="H1" pin="P$2"/>
+<pinref part="D07" gate="H1" pin="P$2"/>
+<pinref part="D06" gate="H1" pin="P$2"/>
+<pinref part="D05" gate="H1" pin="P$2"/>
+<pinref part="D04" gate="H1" pin="P$2"/>
+<pinref part="D03" gate="H1" pin="P$2"/>
+<pinref part="D02" gate="H1" pin="P$2"/>
+<pinref part="D01" gate="H1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$202" class="0">
 <segment>
 <junction x="78.74" y="10.16"/>
-<pinref part="D14" gate="G$14" pin="P$2"/>
-<pinref part="D13" gate="G$14" pin="P$2"/>
-<pinref part="D12" gate="G$14" pin="P$2"/>
-<pinref part="D11" gate="G$14" pin="P$2"/>
-<pinref part="D10" gate="G$14" pin="P$2"/>
-<pinref part="D09" gate="G$14" pin="P$2"/>
-<pinref part="D08" gate="G$14" pin="P$2"/>
-<pinref part="D07" gate="G$14" pin="P$2"/>
-<pinref part="D06" gate="G$14" pin="P$2"/>
-<pinref part="D05" gate="G$14" pin="P$2"/>
-<pinref part="D04" gate="G$14" pin="P$2"/>
-<pinref part="D03" gate="G$14" pin="P$2"/>
-<pinref part="D02" gate="G$14" pin="P$2"/>
-<pinref part="D01" gate="G$14" pin="P$2"/>
+<pinref part="D14" gate="H2" pin="P$2"/>
+<pinref part="D13" gate="H2" pin="P$2"/>
+<pinref part="D12" gate="H2" pin="P$2"/>
+<pinref part="D11" gate="H2" pin="P$2"/>
+<pinref part="D10" gate="H2" pin="P$2"/>
+<pinref part="D09" gate="H2" pin="P$2"/>
+<pinref part="D08" gate="H2" pin="P$2"/>
+<pinref part="D07" gate="H2" pin="P$2"/>
+<pinref part="D06" gate="H2" pin="P$2"/>
+<pinref part="D05" gate="H2" pin="P$2"/>
+<pinref part="D04" gate="H2" pin="P$2"/>
+<pinref part="D03" gate="H2" pin="P$2"/>
+<pinref part="D02" gate="H2" pin="P$2"/>
+<pinref part="D01" gate="H2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA11L" class="0">
@@ -8870,39 +8884,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="88.9" y1="5.08" x2="78.74" y2="5.08" width="0.1524" layer="91"/>
 <junction x="78.74" y="5.08"/>
 <label x="81.28" y="5.08" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$15" pin="P$2"/>
-<pinref part="D13" gate="G$15" pin="P$2"/>
-<pinref part="D12" gate="G$15" pin="P$2"/>
-<pinref part="D11" gate="G$15" pin="P$2"/>
-<pinref part="D10" gate="G$15" pin="P$2"/>
-<pinref part="D09" gate="G$15" pin="P$2"/>
-<pinref part="D08" gate="G$15" pin="P$2"/>
-<pinref part="D07" gate="G$15" pin="P$2"/>
-<pinref part="D06" gate="G$15" pin="P$2"/>
-<pinref part="D05" gate="G$15" pin="P$2"/>
-<pinref part="D04" gate="G$15" pin="P$2"/>
-<pinref part="D03" gate="G$15" pin="P$2"/>
-<pinref part="D02" gate="G$15" pin="P$2"/>
-<pinref part="D01" gate="G$15" pin="P$2"/>
+<pinref part="D14" gate="J1" pin="P$2"/>
+<pinref part="D13" gate="J1" pin="P$2"/>
+<pinref part="D12" gate="J1" pin="P$2"/>
+<pinref part="D11" gate="J1" pin="P$2"/>
+<pinref part="D10" gate="J1" pin="P$2"/>
+<pinref part="D09" gate="J1" pin="P$2"/>
+<pinref part="D08" gate="J1" pin="P$2"/>
+<pinref part="D07" gate="J1" pin="P$2"/>
+<pinref part="D06" gate="J1" pin="P$2"/>
+<pinref part="D05" gate="J1" pin="P$2"/>
+<pinref part="D04" gate="J1" pin="P$2"/>
+<pinref part="D03" gate="J1" pin="P$2"/>
+<pinref part="D02" gate="J1" pin="P$2"/>
+<pinref part="D01" gate="J1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$204" class="0">
 <segment>
 <junction x="78.74" y="0"/>
-<pinref part="D14" gate="G$16" pin="P$2"/>
-<pinref part="D13" gate="G$16" pin="P$2"/>
-<pinref part="D12" gate="G$16" pin="P$2"/>
-<pinref part="D11" gate="G$16" pin="P$2"/>
-<pinref part="D10" gate="G$16" pin="P$2"/>
-<pinref part="D09" gate="G$16" pin="P$2"/>
-<pinref part="D08" gate="G$16" pin="P$2"/>
-<pinref part="D07" gate="G$16" pin="P$2"/>
-<pinref part="D06" gate="G$16" pin="P$2"/>
-<pinref part="D05" gate="G$16" pin="P$2"/>
-<pinref part="D04" gate="G$16" pin="P$2"/>
-<pinref part="D03" gate="G$16" pin="P$2"/>
-<pinref part="D02" gate="G$16" pin="P$2"/>
-<pinref part="D01" gate="G$16" pin="P$2"/>
+<pinref part="D14" gate="J2" pin="P$2"/>
+<pinref part="D13" gate="J2" pin="P$2"/>
+<pinref part="D12" gate="J2" pin="P$2"/>
+<pinref part="D11" gate="J2" pin="P$2"/>
+<pinref part="D10" gate="J2" pin="P$2"/>
+<pinref part="D09" gate="J2" pin="P$2"/>
+<pinref part="D08" gate="J2" pin="P$2"/>
+<pinref part="D07" gate="J2" pin="P$2"/>
+<pinref part="D06" gate="J2" pin="P$2"/>
+<pinref part="D05" gate="J2" pin="P$2"/>
+<pinref part="D04" gate="J2" pin="P$2"/>
+<pinref part="D03" gate="J2" pin="P$2"/>
+<pinref part="D02" gate="J2" pin="P$2"/>
+<pinref part="D01" gate="J2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD8L" class="0">
@@ -8910,39 +8924,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="88.9" y1="-5.08" x2="78.74" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="78.74" y="-5.08"/>
 <label x="81.28" y="-5.08" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$17" pin="P$2"/>
-<pinref part="D13" gate="G$17" pin="P$2"/>
-<pinref part="D12" gate="G$17" pin="P$2"/>
-<pinref part="D11" gate="G$17" pin="P$2"/>
-<pinref part="D10" gate="G$17" pin="P$2"/>
-<pinref part="D09" gate="G$17" pin="P$2"/>
-<pinref part="D08" gate="G$17" pin="P$2"/>
-<pinref part="D07" gate="G$17" pin="P$2"/>
-<pinref part="D06" gate="G$17" pin="P$2"/>
-<pinref part="D05" gate="G$17" pin="P$2"/>
-<pinref part="D04" gate="G$17" pin="P$2"/>
-<pinref part="D03" gate="G$17" pin="P$2"/>
-<pinref part="D02" gate="G$17" pin="P$2"/>
-<pinref part="D01" gate="G$17" pin="P$2"/>
+<pinref part="D14" gate="K1" pin="P$2"/>
+<pinref part="D13" gate="K1" pin="P$2"/>
+<pinref part="D12" gate="K1" pin="P$2"/>
+<pinref part="D11" gate="K1" pin="P$2"/>
+<pinref part="D10" gate="K1" pin="P$2"/>
+<pinref part="D09" gate="K1" pin="P$2"/>
+<pinref part="D08" gate="K1" pin="P$2"/>
+<pinref part="D07" gate="K1" pin="P$2"/>
+<pinref part="D06" gate="K1" pin="P$2"/>
+<pinref part="D05" gate="K1" pin="P$2"/>
+<pinref part="D04" gate="K1" pin="P$2"/>
+<pinref part="D03" gate="K1" pin="P$2"/>
+<pinref part="D02" gate="K1" pin="P$2"/>
+<pinref part="D01" gate="K1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$206" class="0">
 <segment>
 <junction x="78.74" y="-10.16"/>
-<pinref part="D14" gate="G$18" pin="P$2"/>
-<pinref part="D13" gate="G$18" pin="P$2"/>
-<pinref part="D12" gate="G$18" pin="P$2"/>
-<pinref part="D11" gate="G$18" pin="P$2"/>
-<pinref part="D10" gate="G$18" pin="P$2"/>
-<pinref part="D09" gate="G$18" pin="P$2"/>
-<pinref part="D08" gate="G$18" pin="P$2"/>
-<pinref part="D07" gate="G$18" pin="P$2"/>
-<pinref part="D06" gate="G$18" pin="P$2"/>
-<pinref part="D05" gate="G$18" pin="P$2"/>
-<pinref part="D04" gate="G$18" pin="P$2"/>
-<pinref part="D03" gate="G$18" pin="P$2"/>
-<pinref part="D02" gate="G$18" pin="P$2"/>
-<pinref part="D01" gate="G$18" pin="P$2"/>
+<pinref part="D14" gate="K2" pin="P$2"/>
+<pinref part="D13" gate="K2" pin="P$2"/>
+<pinref part="D12" gate="K2" pin="P$2"/>
+<pinref part="D11" gate="K2" pin="P$2"/>
+<pinref part="D10" gate="K2" pin="P$2"/>
+<pinref part="D09" gate="K2" pin="P$2"/>
+<pinref part="D08" gate="K2" pin="P$2"/>
+<pinref part="D07" gate="K2" pin="P$2"/>
+<pinref part="D06" gate="K2" pin="P$2"/>
+<pinref part="D05" gate="K2" pin="P$2"/>
+<pinref part="D04" gate="K2" pin="P$2"/>
+<pinref part="D03" gate="K2" pin="P$2"/>
+<pinref part="D02" gate="K2" pin="P$2"/>
+<pinref part="D01" gate="K2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD9L" class="0">
@@ -8950,39 +8964,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="114.3" y1="76.2" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
 <junction x="104.14" y="76.2"/>
 <label x="106.68" y="76.2" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$19" pin="P$2"/>
-<pinref part="D13" gate="G$19" pin="P$2"/>
-<pinref part="D12" gate="G$19" pin="P$2"/>
-<pinref part="D11" gate="G$19" pin="P$2"/>
-<pinref part="D10" gate="G$19" pin="P$2"/>
-<pinref part="D09" gate="G$19" pin="P$2"/>
-<pinref part="D08" gate="G$19" pin="P$2"/>
-<pinref part="D07" gate="G$19" pin="P$2"/>
-<pinref part="D06" gate="G$19" pin="P$2"/>
-<pinref part="D05" gate="G$19" pin="P$2"/>
-<pinref part="D04" gate="G$19" pin="P$2"/>
-<pinref part="D03" gate="G$19" pin="P$2"/>
-<pinref part="D02" gate="G$19" pin="P$2"/>
-<pinref part="D01" gate="G$19" pin="P$2"/>
+<pinref part="D14" gate="L1" pin="P$2"/>
+<pinref part="D13" gate="L1" pin="P$2"/>
+<pinref part="D12" gate="L1" pin="P$2"/>
+<pinref part="D11" gate="L1" pin="P$2"/>
+<pinref part="D10" gate="L1" pin="P$2"/>
+<pinref part="D09" gate="L1" pin="P$2"/>
+<pinref part="D08" gate="L1" pin="P$2"/>
+<pinref part="D07" gate="L1" pin="P$2"/>
+<pinref part="D06" gate="L1" pin="P$2"/>
+<pinref part="D05" gate="L1" pin="P$2"/>
+<pinref part="D04" gate="L1" pin="P$2"/>
+<pinref part="D03" gate="L1" pin="P$2"/>
+<pinref part="D02" gate="L1" pin="P$2"/>
+<pinref part="D01" gate="L1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$208" class="0">
 <segment>
 <junction x="104.14" y="71.12"/>
-<pinref part="D14" gate="G$20" pin="P$2"/>
-<pinref part="D13" gate="G$20" pin="P$2"/>
-<pinref part="D12" gate="G$20" pin="P$2"/>
-<pinref part="D11" gate="G$20" pin="P$2"/>
-<pinref part="D10" gate="G$20" pin="P$2"/>
-<pinref part="D09" gate="G$20" pin="P$2"/>
-<pinref part="D08" gate="G$20" pin="P$2"/>
-<pinref part="D07" gate="G$20" pin="P$2"/>
-<pinref part="D06" gate="G$20" pin="P$2"/>
-<pinref part="D05" gate="G$20" pin="P$2"/>
-<pinref part="D04" gate="G$20" pin="P$2"/>
-<pinref part="D03" gate="G$20" pin="P$2"/>
-<pinref part="D02" gate="G$20" pin="P$2"/>
-<pinref part="D01" gate="G$20" pin="P$2"/>
+<pinref part="D14" gate="L2" pin="P$2"/>
+<pinref part="D13" gate="L2" pin="P$2"/>
+<pinref part="D12" gate="L2" pin="P$2"/>
+<pinref part="D11" gate="L2" pin="P$2"/>
+<pinref part="D10" gate="L2" pin="P$2"/>
+<pinref part="D09" gate="L2" pin="P$2"/>
+<pinref part="D08" gate="L2" pin="P$2"/>
+<pinref part="D07" gate="L2" pin="P$2"/>
+<pinref part="D06" gate="L2" pin="P$2"/>
+<pinref part="D05" gate="L2" pin="P$2"/>
+<pinref part="D04" gate="L2" pin="P$2"/>
+<pinref part="D03" gate="L2" pin="P$2"/>
+<pinref part="D02" gate="L2" pin="P$2"/>
+<pinref part="D01" gate="L2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD10L" class="0">
@@ -8990,39 +9004,39 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="114.3" y1="66.04" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
 <junction x="104.14" y="66.04"/>
 <label x="106.68" y="66.04" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$21" pin="P$2"/>
-<pinref part="D13" gate="G$21" pin="P$2"/>
-<pinref part="D12" gate="G$21" pin="P$2"/>
-<pinref part="D11" gate="G$21" pin="P$2"/>
-<pinref part="D10" gate="G$21" pin="P$2"/>
-<pinref part="D09" gate="G$21" pin="P$2"/>
-<pinref part="D08" gate="G$21" pin="P$2"/>
-<pinref part="D07" gate="G$21" pin="P$2"/>
-<pinref part="D06" gate="G$21" pin="P$2"/>
-<pinref part="D05" gate="G$21" pin="P$2"/>
-<pinref part="D04" gate="G$21" pin="P$2"/>
-<pinref part="D03" gate="G$21" pin="P$2"/>
-<pinref part="D02" gate="G$21" pin="P$2"/>
-<pinref part="D01" gate="G$21" pin="P$2"/>
+<pinref part="D14" gate="M1" pin="P$2"/>
+<pinref part="D13" gate="M1" pin="P$2"/>
+<pinref part="D12" gate="M1" pin="P$2"/>
+<pinref part="D11" gate="M1" pin="P$2"/>
+<pinref part="D10" gate="M1" pin="P$2"/>
+<pinref part="D09" gate="M1" pin="P$2"/>
+<pinref part="D08" gate="M1" pin="P$2"/>
+<pinref part="D07" gate="M1" pin="P$2"/>
+<pinref part="D06" gate="M1" pin="P$2"/>
+<pinref part="D05" gate="M1" pin="P$2"/>
+<pinref part="D04" gate="M1" pin="P$2"/>
+<pinref part="D03" gate="M1" pin="P$2"/>
+<pinref part="D02" gate="M1" pin="P$2"/>
+<pinref part="D01" gate="M1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$210" class="0">
 <segment>
 <junction x="104.14" y="60.96"/>
-<pinref part="D14" gate="G$22" pin="P$2"/>
-<pinref part="D13" gate="G$22" pin="P$2"/>
-<pinref part="D12" gate="G$22" pin="P$2"/>
-<pinref part="D11" gate="G$22" pin="P$2"/>
-<pinref part="D10" gate="G$22" pin="P$2"/>
-<pinref part="D09" gate="G$22" pin="P$2"/>
-<pinref part="D08" gate="G$22" pin="P$2"/>
-<pinref part="D07" gate="G$22" pin="P$2"/>
-<pinref part="D06" gate="G$22" pin="P$2"/>
-<pinref part="D05" gate="G$22" pin="P$2"/>
-<pinref part="D04" gate="G$22" pin="P$2"/>
-<pinref part="D03" gate="G$22" pin="P$2"/>
-<pinref part="D02" gate="G$22" pin="P$2"/>
-<pinref part="D01" gate="G$22" pin="P$2"/>
+<pinref part="D14" gate="M2" pin="P$2"/>
+<pinref part="D13" gate="M2" pin="P$2"/>
+<pinref part="D12" gate="M2" pin="P$2"/>
+<pinref part="D11" gate="M2" pin="P$2"/>
+<pinref part="D10" gate="M2" pin="P$2"/>
+<pinref part="D09" gate="M2" pin="P$2"/>
+<pinref part="D08" gate="M2" pin="P$2"/>
+<pinref part="D07" gate="M2" pin="P$2"/>
+<pinref part="D06" gate="M2" pin="P$2"/>
+<pinref part="D05" gate="M2" pin="P$2"/>
+<pinref part="D04" gate="M2" pin="P$2"/>
+<pinref part="D03" gate="M2" pin="P$2"/>
+<pinref part="D02" gate="M2" pin="P$2"/>
+<pinref part="D01" gate="M2" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD11L" class="0">
@@ -9030,77 +9044,77 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="114.3" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
 <junction x="104.14" y="45.72"/>
 <label x="106.68" y="45.72" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$25" pin="P$2"/>
-<pinref part="D13" gate="G$25" pin="P$2"/>
-<pinref part="D12" gate="G$25" pin="P$2"/>
-<pinref part="D11" gate="G$25" pin="P$2"/>
-<pinref part="D10" gate="G$25" pin="P$2"/>
-<pinref part="D09" gate="G$25" pin="P$2"/>
-<pinref part="D08" gate="G$25" pin="P$2"/>
-<pinref part="D07" gate="G$25" pin="P$2"/>
-<pinref part="D06" gate="G$25" pin="P$2"/>
-<pinref part="D05" gate="G$25" pin="P$2"/>
-<pinref part="D04" gate="G$25" pin="P$2"/>
-<pinref part="D03" gate="G$25" pin="P$2"/>
-<pinref part="D02" gate="G$25" pin="P$2"/>
-<pinref part="D01" gate="G$25" pin="P$2"/>
+<pinref part="D14" gate="P1" pin="P$2"/>
+<pinref part="D13" gate="P1" pin="P$2"/>
+<pinref part="D12" gate="P1" pin="P$2"/>
+<pinref part="D11" gate="P1" pin="P$2"/>
+<pinref part="D10" gate="P1" pin="P$2"/>
+<pinref part="D09" gate="P1" pin="P$2"/>
+<pinref part="D08" gate="P1" pin="P$2"/>
+<pinref part="D07" gate="P1" pin="P$2"/>
+<pinref part="D06" gate="P1" pin="P$2"/>
+<pinref part="D05" gate="P1" pin="P$2"/>
+<pinref part="D04" gate="P1" pin="P$2"/>
+<pinref part="D03" gate="P1" pin="P$2"/>
+<pinref part="D02" gate="P1" pin="P$2"/>
+<pinref part="D01" gate="P1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$214" class="0">
 <segment>
 <junction x="104.14" y="40.64"/>
-<pinref part="D14" gate="G$26" pin="P$2"/>
-<pinref part="D13" gate="G$26" pin="P$2"/>
-<pinref part="D12" gate="G$26" pin="P$2"/>
-<pinref part="D11" gate="G$26" pin="P$2"/>
-<pinref part="D10" gate="G$26" pin="P$2"/>
-<pinref part="D09" gate="G$26" pin="P$2"/>
-<pinref part="D08" gate="G$26" pin="P$2"/>
-<pinref part="D07" gate="G$26" pin="P$2"/>
-<pinref part="D06" gate="G$26" pin="P$2"/>
-<pinref part="D05" gate="G$26" pin="P$2"/>
-<pinref part="D04" gate="G$26" pin="P$2"/>
-<pinref part="D03" gate="G$26" pin="P$2"/>
-<pinref part="D02" gate="G$26" pin="P$2"/>
-<pinref part="D01" gate="G$26" pin="P$2"/>
+<pinref part="D14" gate="P2" pin="P$2"/>
+<pinref part="D13" gate="P2" pin="P$2"/>
+<pinref part="D12" gate="P2" pin="P$2"/>
+<pinref part="D11" gate="P2" pin="P$2"/>
+<pinref part="D10" gate="P2" pin="P$2"/>
+<pinref part="D09" gate="P2" pin="P$2"/>
+<pinref part="D08" gate="P2" pin="P$2"/>
+<pinref part="D07" gate="P2" pin="P$2"/>
+<pinref part="D06" gate="P2" pin="P$2"/>
+<pinref part="D05" gate="P2" pin="P$2"/>
+<pinref part="D04" gate="P2" pin="P$2"/>
+<pinref part="D03" gate="P2" pin="P$2"/>
+<pinref part="D02" gate="P2" pin="P$2"/>
+<pinref part="D01" gate="P2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$215" class="0">
 <segment>
 <junction x="104.14" y="35.56"/>
-<pinref part="D14" gate="G$27" pin="P$2"/>
-<pinref part="D13" gate="G$27" pin="P$2"/>
-<pinref part="D12" gate="G$27" pin="P$2"/>
-<pinref part="D11" gate="G$27" pin="P$2"/>
-<pinref part="D10" gate="G$27" pin="P$2"/>
-<pinref part="D09" gate="G$27" pin="P$2"/>
-<pinref part="D08" gate="G$27" pin="P$2"/>
-<pinref part="D07" gate="G$27" pin="P$2"/>
-<pinref part="D06" gate="G$27" pin="P$2"/>
-<pinref part="D05" gate="G$27" pin="P$2"/>
-<pinref part="D04" gate="G$27" pin="P$2"/>
-<pinref part="D03" gate="G$27" pin="P$2"/>
-<pinref part="D02" gate="G$27" pin="P$2"/>
-<pinref part="D01" gate="G$27" pin="P$2"/>
+<pinref part="D14" gate="R1" pin="P$2"/>
+<pinref part="D13" gate="R1" pin="P$2"/>
+<pinref part="D12" gate="R1" pin="P$2"/>
+<pinref part="D11" gate="R1" pin="P$2"/>
+<pinref part="D10" gate="R1" pin="P$2"/>
+<pinref part="D09" gate="R1" pin="P$2"/>
+<pinref part="D08" gate="R1" pin="P$2"/>
+<pinref part="D07" gate="R1" pin="P$2"/>
+<pinref part="D06" gate="R1" pin="P$2"/>
+<pinref part="D05" gate="R1" pin="P$2"/>
+<pinref part="D04" gate="R1" pin="P$2"/>
+<pinref part="D03" gate="R1" pin="P$2"/>
+<pinref part="D02" gate="R1" pin="P$2"/>
+<pinref part="D01" gate="R1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$216" class="0">
 <segment>
 <junction x="104.14" y="30.48"/>
-<pinref part="D14" gate="G$28" pin="P$2"/>
-<pinref part="D13" gate="G$28" pin="P$2"/>
-<pinref part="D12" gate="G$28" pin="P$2"/>
-<pinref part="D11" gate="G$28" pin="P$2"/>
-<pinref part="D10" gate="G$28" pin="P$2"/>
-<pinref part="D09" gate="G$28" pin="P$2"/>
-<pinref part="D08" gate="G$28" pin="P$2"/>
-<pinref part="D07" gate="G$28" pin="P$2"/>
-<pinref part="D06" gate="G$28" pin="P$2"/>
-<pinref part="D05" gate="G$28" pin="P$2"/>
-<pinref part="D04" gate="G$28" pin="P$2"/>
-<pinref part="D03" gate="G$28" pin="P$2"/>
-<pinref part="D02" gate="G$28" pin="P$2"/>
-<pinref part="D01" gate="G$28" pin="P$2"/>
+<pinref part="D14" gate="R2" pin="P$2"/>
+<pinref part="D13" gate="R2" pin="P$2"/>
+<pinref part="D12" gate="R2" pin="P$2"/>
+<pinref part="D11" gate="R2" pin="P$2"/>
+<pinref part="D10" gate="R2" pin="P$2"/>
+<pinref part="D09" gate="R2" pin="P$2"/>
+<pinref part="D08" gate="R2" pin="P$2"/>
+<pinref part="D07" gate="R2" pin="P$2"/>
+<pinref part="D06" gate="R2" pin="P$2"/>
+<pinref part="D05" gate="R2" pin="P$2"/>
+<pinref part="D04" gate="R2" pin="P$2"/>
+<pinref part="D03" gate="R2" pin="P$2"/>
+<pinref part="D02" gate="R2" pin="P$2"/>
+<pinref part="D01" gate="R2" pin="P$2"/>
 </segment>
 </net>
 <net name="D01DONEH" class="0">
@@ -9108,115 +9122,115 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="114.3" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 <junction x="104.14" y="25.4"/>
 <label x="106.68" y="25.4" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$29" pin="P$2"/>
-<pinref part="D13" gate="G$29" pin="P$2"/>
-<pinref part="D12" gate="G$29" pin="P$2"/>
-<pinref part="D11" gate="G$29" pin="P$2"/>
-<pinref part="D10" gate="G$29" pin="P$2"/>
-<pinref part="D09" gate="G$29" pin="P$2"/>
-<pinref part="D08" gate="G$29" pin="P$2"/>
-<pinref part="D07" gate="G$29" pin="P$2"/>
-<pinref part="D06" gate="G$29" pin="P$2"/>
-<pinref part="D05" gate="G$29" pin="P$2"/>
-<pinref part="D04" gate="G$29" pin="P$2"/>
-<pinref part="D03" gate="G$29" pin="P$2"/>
-<pinref part="D02" gate="G$29" pin="P$2"/>
-<pinref part="D01" gate="G$29" pin="P$2"/>
+<pinref part="D14" gate="S1" pin="P$2"/>
+<pinref part="D13" gate="S1" pin="P$2"/>
+<pinref part="D12" gate="S1" pin="P$2"/>
+<pinref part="D11" gate="S1" pin="P$2"/>
+<pinref part="D10" gate="S1" pin="P$2"/>
+<pinref part="D09" gate="S1" pin="P$2"/>
+<pinref part="D08" gate="S1" pin="P$2"/>
+<pinref part="D07" gate="S1" pin="P$2"/>
+<pinref part="D06" gate="S1" pin="P$2"/>
+<pinref part="D05" gate="S1" pin="P$2"/>
+<pinref part="D04" gate="S1" pin="P$2"/>
+<pinref part="D03" gate="S1" pin="P$2"/>
+<pinref part="D02" gate="S1" pin="P$2"/>
+<pinref part="D01" gate="S1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$218" class="0">
 <segment>
 <junction x="104.14" y="20.32"/>
-<pinref part="D14" gate="G$30" pin="P$2"/>
-<pinref part="D13" gate="G$30" pin="P$2"/>
-<pinref part="D12" gate="G$30" pin="P$2"/>
-<pinref part="D11" gate="G$30" pin="P$2"/>
-<pinref part="D10" gate="G$30" pin="P$2"/>
-<pinref part="D09" gate="G$30" pin="P$2"/>
-<pinref part="D08" gate="G$30" pin="P$2"/>
-<pinref part="D07" gate="G$30" pin="P$2"/>
-<pinref part="D06" gate="G$30" pin="P$2"/>
-<pinref part="D05" gate="G$30" pin="P$2"/>
-<pinref part="D04" gate="G$30" pin="P$2"/>
-<pinref part="D03" gate="G$30" pin="P$2"/>
-<pinref part="D02" gate="G$30" pin="P$2"/>
-<pinref part="D01" gate="G$30" pin="P$2"/>
+<pinref part="D14" gate="S2" pin="P$2"/>
+<pinref part="D13" gate="S2" pin="P$2"/>
+<pinref part="D12" gate="S2" pin="P$2"/>
+<pinref part="D11" gate="S2" pin="P$2"/>
+<pinref part="D10" gate="S2" pin="P$2"/>
+<pinref part="D09" gate="S2" pin="P$2"/>
+<pinref part="D08" gate="S2" pin="P$2"/>
+<pinref part="D07" gate="S2" pin="P$2"/>
+<pinref part="D06" gate="S2" pin="P$2"/>
+<pinref part="D05" gate="S2" pin="P$2"/>
+<pinref part="D04" gate="S2" pin="P$2"/>
+<pinref part="D03" gate="S2" pin="P$2"/>
+<pinref part="D02" gate="S2" pin="P$2"/>
+<pinref part="D01" gate="S2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$221" class="0">
 <segment>
 <junction x="104.14" y="5.08"/>
-<pinref part="D14" gate="G$33" pin="P$2"/>
-<pinref part="D13" gate="G$33" pin="P$2"/>
-<pinref part="D12" gate="G$33" pin="P$2"/>
-<pinref part="D11" gate="G$33" pin="P$2"/>
-<pinref part="D10" gate="G$33" pin="P$2"/>
-<pinref part="D09" gate="G$33" pin="P$2"/>
-<pinref part="D08" gate="G$33" pin="P$2"/>
-<pinref part="D07" gate="G$33" pin="P$2"/>
-<pinref part="D06" gate="G$33" pin="P$2"/>
-<pinref part="D05" gate="G$33" pin="P$2"/>
-<pinref part="D04" gate="G$33" pin="P$2"/>
-<pinref part="D03" gate="G$33" pin="P$2"/>
-<pinref part="D02" gate="G$33" pin="P$2"/>
-<pinref part="D01" gate="G$33" pin="P$2"/>
+<pinref part="D14" gate="U1" pin="P$2"/>
+<pinref part="D13" gate="U1" pin="P$2"/>
+<pinref part="D12" gate="U1" pin="P$2"/>
+<pinref part="D11" gate="U1" pin="P$2"/>
+<pinref part="D10" gate="U1" pin="P$2"/>
+<pinref part="D09" gate="U1" pin="P$2"/>
+<pinref part="D08" gate="U1" pin="P$2"/>
+<pinref part="D07" gate="U1" pin="P$2"/>
+<pinref part="D06" gate="U1" pin="P$2"/>
+<pinref part="D05" gate="U1" pin="P$2"/>
+<pinref part="D04" gate="U1" pin="P$2"/>
+<pinref part="D03" gate="U1" pin="P$2"/>
+<pinref part="D02" gate="U1" pin="P$2"/>
+<pinref part="D01" gate="U1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$222" class="0">
 <segment>
 <junction x="104.14" y="0"/>
-<pinref part="D14" gate="G$34" pin="P$2"/>
-<pinref part="D13" gate="G$34" pin="P$2"/>
-<pinref part="D12" gate="G$34" pin="P$2"/>
-<pinref part="D11" gate="G$34" pin="P$2"/>
-<pinref part="D10" gate="G$34" pin="P$2"/>
-<pinref part="D09" gate="G$34" pin="P$2"/>
-<pinref part="D08" gate="G$34" pin="P$2"/>
-<pinref part="D07" gate="G$34" pin="P$2"/>
-<pinref part="D06" gate="G$34" pin="P$2"/>
-<pinref part="D05" gate="G$34" pin="P$2"/>
-<pinref part="D04" gate="G$34" pin="P$2"/>
-<pinref part="D03" gate="G$34" pin="P$2"/>
-<pinref part="D02" gate="G$34" pin="P$2"/>
-<pinref part="D01" gate="G$34" pin="P$2"/>
+<pinref part="D14" gate="U2" pin="P$2"/>
+<pinref part="D13" gate="U2" pin="P$2"/>
+<pinref part="D12" gate="U2" pin="P$2"/>
+<pinref part="D11" gate="U2" pin="P$2"/>
+<pinref part="D10" gate="U2" pin="P$2"/>
+<pinref part="D09" gate="U2" pin="P$2"/>
+<pinref part="D08" gate="U2" pin="P$2"/>
+<pinref part="D07" gate="U2" pin="P$2"/>
+<pinref part="D06" gate="U2" pin="P$2"/>
+<pinref part="D05" gate="U2" pin="P$2"/>
+<pinref part="D04" gate="U2" pin="P$2"/>
+<pinref part="D03" gate="U2" pin="P$2"/>
+<pinref part="D02" gate="U2" pin="P$2"/>
+<pinref part="D01" gate="U2" pin="P$2"/>
 </segment>
 </net>
 <net name="N$223" class="0">
 <segment>
 <junction x="104.14" y="-5.08"/>
-<pinref part="D14" gate="G$35" pin="P$2"/>
-<pinref part="D13" gate="G$35" pin="P$2"/>
-<pinref part="D12" gate="G$35" pin="P$2"/>
-<pinref part="D11" gate="G$35" pin="P$2"/>
-<pinref part="D10" gate="G$35" pin="P$2"/>
-<pinref part="D09" gate="G$35" pin="P$2"/>
-<pinref part="D08" gate="G$35" pin="P$2"/>
-<pinref part="D07" gate="G$35" pin="P$2"/>
-<pinref part="D06" gate="G$35" pin="P$2"/>
-<pinref part="D05" gate="G$35" pin="P$2"/>
-<pinref part="D04" gate="G$35" pin="P$2"/>
-<pinref part="D03" gate="G$35" pin="P$2"/>
-<pinref part="D02" gate="G$35" pin="P$2"/>
-<pinref part="D01" gate="G$35" pin="P$2"/>
+<pinref part="D14" gate="V1" pin="P$2"/>
+<pinref part="D13" gate="V1" pin="P$2"/>
+<pinref part="D12" gate="V1" pin="P$2"/>
+<pinref part="D11" gate="V1" pin="P$2"/>
+<pinref part="D10" gate="V1" pin="P$2"/>
+<pinref part="D09" gate="V1" pin="P$2"/>
+<pinref part="D08" gate="V1" pin="P$2"/>
+<pinref part="D07" gate="V1" pin="P$2"/>
+<pinref part="D06" gate="V1" pin="P$2"/>
+<pinref part="D05" gate="V1" pin="P$2"/>
+<pinref part="D04" gate="V1" pin="P$2"/>
+<pinref part="D03" gate="V1" pin="P$2"/>
+<pinref part="D02" gate="V1" pin="P$2"/>
+<pinref part="D01" gate="V1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$224" class="0">
 <segment>
 <junction x="104.14" y="-10.16"/>
-<pinref part="D14" gate="G$36" pin="P$2"/>
-<pinref part="D13" gate="G$36" pin="P$2"/>
-<pinref part="D12" gate="G$36" pin="P$2"/>
-<pinref part="D11" gate="G$36" pin="P$2"/>
-<pinref part="D10" gate="G$36" pin="P$2"/>
-<pinref part="D09" gate="G$36" pin="P$2"/>
-<pinref part="D08" gate="G$36" pin="P$2"/>
-<pinref part="D07" gate="G$36" pin="P$2"/>
-<pinref part="D06" gate="G$36" pin="P$2"/>
-<pinref part="D05" gate="G$36" pin="P$2"/>
-<pinref part="D04" gate="G$36" pin="P$2"/>
-<pinref part="D03" gate="G$36" pin="P$2"/>
-<pinref part="D02" gate="G$36" pin="P$2"/>
-<pinref part="D01" gate="G$36" pin="P$2"/>
+<pinref part="D14" gate="V2" pin="P$2"/>
+<pinref part="D13" gate="V2" pin="P$2"/>
+<pinref part="D12" gate="V2" pin="P$2"/>
+<pinref part="D11" gate="V2" pin="P$2"/>
+<pinref part="D10" gate="V2" pin="P$2"/>
+<pinref part="D09" gate="V2" pin="P$2"/>
+<pinref part="D08" gate="V2" pin="P$2"/>
+<pinref part="D07" gate="V2" pin="P$2"/>
+<pinref part="D06" gate="V2" pin="P$2"/>
+<pinref part="D05" gate="V2" pin="P$2"/>
+<pinref part="D04" gate="V2" pin="P$2"/>
+<pinref part="D03" gate="V2" pin="P$2"/>
+<pinref part="D02" gate="V2" pin="P$2"/>
+<pinref part="D01" gate="V2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03MA2L" class="0">
@@ -9224,20 +9238,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="15.24" x2="-99.06" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-99.06" y="15.24"/>
 <label x="-96.52" y="15.24" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$13" pin="P$2"/>
-<pinref part="A02" gate="G$13" pin="P$2"/>
-<pinref part="A03" gate="G$13" pin="P$2"/>
-<pinref part="A04" gate="G$13" pin="P$2"/>
-<pinref part="A05" gate="G$13" pin="P$2"/>
-<pinref part="A06" gate="G$13" pin="P$2"/>
-<pinref part="A07" gate="G$13" pin="P$2"/>
-<pinref part="A08" gate="G$13" pin="P$2"/>
-<pinref part="A09" gate="G$13" pin="P$2"/>
-<pinref part="A10" gate="G$13" pin="P$2"/>
-<pinref part="A11" gate="G$13" pin="P$2"/>
-<pinref part="A12" gate="G$13" pin="P$2"/>
-<pinref part="A13" gate="G$13" pin="P$2"/>
-<pinref part="A14" gate="G$13" pin="P$2"/>
+<pinref part="A01" gate="H1" pin="P$2"/>
+<pinref part="A02" gate="H1" pin="P$2"/>
+<pinref part="A03" gate="H1" pin="P$2"/>
+<pinref part="A04" gate="H1" pin="P$2"/>
+<pinref part="A05" gate="H1" pin="P$2"/>
+<pinref part="A06" gate="H1" pin="P$2"/>
+<pinref part="A07" gate="H1" pin="P$2"/>
+<pinref part="A08" gate="H1" pin="P$2"/>
+<pinref part="A09" gate="H1" pin="P$2"/>
+<pinref part="A10" gate="H1" pin="P$2"/>
+<pinref part="A11" gate="H1" pin="P$2"/>
+<pinref part="A12" gate="H1" pin="P$2"/>
+<pinref part="A13" gate="H1" pin="P$2"/>
+<pinref part="A14" gate="H1" pin="P$2"/>
 </segment>
 </net>
 <net name="D04MD2L" class="0">
@@ -9245,20 +9259,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-68.58" y1="66.04" x2="-58.42" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-68.58" y="66.04"/>
 <label x="-66.04" y="66.04" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$21" pin="P$2"/>
-<pinref part="A02" gate="G$21" pin="P$2"/>
-<pinref part="A03" gate="G$21" pin="P$2"/>
-<pinref part="A04" gate="G$21" pin="P$2"/>
-<pinref part="A05" gate="G$21" pin="P$2"/>
-<pinref part="A06" gate="G$21" pin="P$2"/>
-<pinref part="A07" gate="G$21" pin="P$2"/>
-<pinref part="A08" gate="G$21" pin="P$2"/>
-<pinref part="A09" gate="G$21" pin="P$2"/>
-<pinref part="A10" gate="G$21" pin="P$2"/>
-<pinref part="A11" gate="G$21" pin="P$2"/>
-<pinref part="A12" gate="G$21" pin="P$2"/>
-<pinref part="A13" gate="G$21" pin="P$2"/>
-<pinref part="A14" gate="G$21" pin="P$2"/>
+<pinref part="A01" gate="M1" pin="P$2"/>
+<pinref part="A02" gate="M1" pin="P$2"/>
+<pinref part="A03" gate="M1" pin="P$2"/>
+<pinref part="A04" gate="M1" pin="P$2"/>
+<pinref part="A05" gate="M1" pin="P$2"/>
+<pinref part="A06" gate="M1" pin="P$2"/>
+<pinref part="A07" gate="M1" pin="P$2"/>
+<pinref part="A08" gate="M1" pin="P$2"/>
+<pinref part="A09" gate="M1" pin="P$2"/>
+<pinref part="A10" gate="M1" pin="P$2"/>
+<pinref part="A11" gate="M1" pin="P$2"/>
+<pinref part="A12" gate="M1" pin="P$2"/>
+<pinref part="A13" gate="M1" pin="P$2"/>
+<pinref part="A14" gate="M1" pin="P$2"/>
 </segment>
 </net>
 <net name="D01SOURCE" class="0">
@@ -9266,20 +9280,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-55.88" y1="71.12" x2="-68.58" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-68.58" y="71.12"/>
 <label x="-66.04" y="71.12" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$20" pin="P$2"/>
-<pinref part="A02" gate="G$20" pin="P$2"/>
-<pinref part="A03" gate="G$20" pin="P$2"/>
-<pinref part="A04" gate="G$20" pin="P$2"/>
-<pinref part="A05" gate="G$20" pin="P$2"/>
-<pinref part="A06" gate="G$20" pin="P$2"/>
-<pinref part="A07" gate="G$20" pin="P$2"/>
-<pinref part="A08" gate="G$20" pin="P$2"/>
-<pinref part="A09" gate="G$20" pin="P$2"/>
-<pinref part="A10" gate="G$20" pin="P$2"/>
-<pinref part="A11" gate="G$20" pin="P$2"/>
-<pinref part="A12" gate="G$20" pin="P$2"/>
-<pinref part="A13" gate="G$20" pin="P$2"/>
-<pinref part="A14" gate="G$20" pin="P$2"/>
+<pinref part="A01" gate="L2" pin="P$2"/>
+<pinref part="A02" gate="L2" pin="P$2"/>
+<pinref part="A03" gate="L2" pin="P$2"/>
+<pinref part="A04" gate="L2" pin="P$2"/>
+<pinref part="A05" gate="L2" pin="P$2"/>
+<pinref part="A06" gate="L2" pin="P$2"/>
+<pinref part="A07" gate="L2" pin="P$2"/>
+<pinref part="A08" gate="L2" pin="P$2"/>
+<pinref part="A09" gate="L2" pin="P$2"/>
+<pinref part="A10" gate="L2" pin="P$2"/>
+<pinref part="A11" gate="L2" pin="P$2"/>
+<pinref part="A12" gate="L2" pin="P$2"/>
+<pinref part="A13" gate="L2" pin="P$2"/>
+<pinref part="A14" gate="L2" pin="P$2"/>
 </segment>
 </net>
 <net name="D03BEMA2L" class="0">
@@ -9287,60 +9301,60 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="-83.82" y1="10.16" x2="-99.06" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-99.06" y="10.16"/>
 <label x="-96.52" y="10.16" size="1.778" layer="95"/>
-<pinref part="A01" gate="G$14" pin="P$2"/>
-<pinref part="A02" gate="G$14" pin="P$2"/>
-<pinref part="A03" gate="G$14" pin="P$2"/>
-<pinref part="A04" gate="G$14" pin="P$2"/>
-<pinref part="A05" gate="G$14" pin="P$2"/>
-<pinref part="A06" gate="G$14" pin="P$2"/>
-<pinref part="A07" gate="G$14" pin="P$2"/>
-<pinref part="A08" gate="G$14" pin="P$2"/>
-<pinref part="A09" gate="G$14" pin="P$2"/>
-<pinref part="A10" gate="G$14" pin="P$2"/>
-<pinref part="A11" gate="G$14" pin="P$2"/>
-<pinref part="A12" gate="G$14" pin="P$2"/>
-<pinref part="A13" gate="G$14" pin="P$2"/>
-<pinref part="A14" gate="G$14" pin="P$2"/>
+<pinref part="A01" gate="H2" pin="P$2"/>
+<pinref part="A02" gate="H2" pin="P$2"/>
+<pinref part="A03" gate="H2" pin="P$2"/>
+<pinref part="A04" gate="H2" pin="P$2"/>
+<pinref part="A05" gate="H2" pin="P$2"/>
+<pinref part="A06" gate="H2" pin="P$2"/>
+<pinref part="A07" gate="H2" pin="P$2"/>
+<pinref part="A08" gate="H2" pin="P$2"/>
+<pinref part="A09" gate="H2" pin="P$2"/>
+<pinref part="A10" gate="H2" pin="P$2"/>
+<pinref part="A11" gate="H2" pin="P$2"/>
+<pinref part="A12" gate="H2" pin="P$2"/>
+<pinref part="A13" gate="H2" pin="P$2"/>
+<pinref part="A14" gate="H2" pin="P$2"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="114,1,-73.66,75.0782,D18,13,IN,,,"/>
-<approved hash="114,1,-73.66,75.0782,D18,15,IN,,,"/>
-<approved hash="114,1,-73.66,75.0782,D18,14,IN,,,"/>
-<approved hash="114,1,-73.66,75.0782,D18,16,IN,,,"/>
-<approved hash="114,1,-73.66,75.0782,D18,8,IN,,,"/>
-<approved hash="114,1,-73.66,75.0782,D18,10,IN,,,"/>
-<approved hash="114,1,33.02,57.15,D17,A1B,D,,,"/>
-<approved hash="114,1,33.02,57.15,D17,A1B,C,,,"/>
-<approved hash="114,1,33.02,57.15,D17,A1B,S,,,"/>
-<approved hash="114,1,33.02,57.15,D17,A1C,D,,,"/>
-<approved hash="114,1,33.02,57.15,D17,A1C,C,,,"/>
-<approved hash="114,1,33.02,57.15,D17,A1C,S,,,"/>
-<approved hash="114,3,-109.22,-76.2,B17,G$3,IN1,,,"/>
-<approved hash="114,3,-109.22,-76.2,B17,G$3,IN2,,,"/>
-<approved hash="114,3,-109.22,-76.2,B17,G$7,IN1,,,"/>
-<approved hash="114,3,-109.22,-76.2,B17,G$7,IN2,,,"/>
-<approved hash="114,3,-109.22,-76.2,B17,G$9,IN1,,,"/>
-<approved hash="114,3,-109.22,-76.2,B17,G$9,IN2,,,"/>
-<approved hash="114,4,61.4045,10.16,C18,G$5,IN,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$1,C,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$1,A,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$1,B,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$2,C,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$2,A,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$2,B,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$3,C,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$3,A,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$3,B,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$4,C,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$4,A,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$4,B,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$5,C,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$5,A,,,"/>
-<approved hash="114,4,92.71,-27.94,B18,G$5,B,,,"/>
+<approved hash="114,1,33.02,57.15,D17,H2,D,,,"/>
+<approved hash="114,1,33.02,57.15,D17,H2,C,,,"/>
+<approved hash="114,1,33.02,57.15,D17,H2,S,,,"/>
+<approved hash="114,1,33.02,57.15,D17,L1,D,,,"/>
+<approved hash="114,1,33.02,57.15,D17,L1,C,,,"/>
+<approved hash="114,1,33.02,57.15,D17,L1,S,,,"/>
+<approved hash="114,3,-109.22,-76.2423,B17,F2,IN1,,,"/>
+<approved hash="114,3,-109.22,-76.2423,B17,F2,IN2,,,"/>
+<approved hash="114,3,-109.22,-76.2423,B17,N2,IN1,,,"/>
+<approved hash="114,3,-109.22,-76.2423,B17,N2,IN2,,,"/>
+<approved hash="114,3,-109.22,-76.2423,B17,S2,IN1,,,"/>
+<approved hash="114,3,-109.22,-76.2423,B17,S2,IN2,,,"/>
+<approved hash="114,4,61.4045,10.16,C18,J1,IN,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,D1,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,D1,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,D1,B,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,K1,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,K1,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,K1,B,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,R1,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,R1,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,R1,B,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,H2,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,H2,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,H2,B,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,N2,C,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,N2,A,,,"/>
+<approved hash="114,4,92.71,-27.94,B18,N2,B,,,"/>
+<approved hash="114,1,-73.66,76.1577,D18,M1,IN,,,"/>
+<approved hash="114,1,-73.66,76.1577,D18,P1,IN,,,"/>
+<approved hash="114,1,-73.66,76.1577,D18,R2,IN,,,"/>
+<approved hash="114,1,-73.66,76.1577,D18,U1,IN,,,"/>
+<approved hash="114,1,-73.66,76.1577,D18,T2,IN,,,"/>
+<approved hash="114,1,-73.66,76.1577,D18,V2,IN,,,"/>
 <approved hash="113,1,2.436,-8.994,FRAME1,,,,,"/>
 <approved hash="113,2,-5.184,-3.914,FRAME2,,,,,"/>
 <approved hash="113,3,-5.184,1.166,FRAME3,,,,,"/>
