@@ -101,7 +101,6 @@
 </layers>
 <board>
 <plain>
-<text x="1.27" y="135.89" size="1.778" layer="21" font="vector" ratio="24">Do not manufacture NC layer.</text>
 <text x="45.72" y="64.77" size="2.54" layer="1" font="vector" ratio="24">DEC</text>
 <text x="38.1" y="129.54" size="1.778" layer="16" font="vector" ratio="24" rot="MR0">MAJOR REGS M220A</text>
 <rectangle x1="0.508" y1="0" x2="26.162" y2="0.254" layer="200"/>
@@ -13683,35 +13682,6 @@
 </package>
 <package name="DIL14">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="2.921" x2="-8.89" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-2.921" x2="-8.89" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="1.016" x2="-8.89" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="74xxN">
-<packages>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
 <wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
 <wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
@@ -13982,18 +13952,18 @@ design rules under a new name.</description>
 <elements>
 <element name="U$1" library="dec-con" package="EDGE-CON4" value="" x="125.73" y="132.08" rot="R180"/>
 <element name="U$2" library="dec-con" package="DOUBLE" value="OUTLINE-DOUBLE" x="125.73" y="132.08" rot="R180"/>
-<element name="E14" library="74xxN" package="DIL14" value="7453N" x="39.37" y="44.45" rot="R270"/>
-<element name="E18" library="74xxN" package="DIL14" value="7453N" x="24.13" y="16.51" rot="R270"/>
-<element name="E12" library="74xxN" package="DIL14" value="7453N" x="69.85" y="44.45" rot="R270"/>
-<element name="E13" library="74xxN" package="DIL14" value="7453N" x="54.61" y="44.45" rot="R270"/>
-<element name="E17" library="74xxN" package="DIL14" value="7453N" x="69.85" y="16.51" rot="R270"/>
-<element name="E16" library="74xxN" package="DIL14" value="7453N" x="85.09" y="16.51" rot="R270"/>
+<element name="E14" library="dec-con" package="DIL14" value="7453N" x="39.37" y="44.45" rot="R270"/>
+<element name="E18" library="dec-con" package="DIL14" value="7453N" x="24.13" y="16.51" rot="R270"/>
+<element name="E12" library="dec-con" package="DIL14" value="7453N" x="69.85" y="44.45" rot="R270"/>
+<element name="E13" library="dec-con" package="DIL14" value="7453N" x="54.61" y="44.45" rot="R270"/>
+<element name="E17" library="dec-con" package="DIL14" value="7453N" x="69.85" y="16.51" rot="R270"/>
+<element name="E16" library="dec-con" package="DIL14" value="7453N" x="85.09" y="16.51" rot="R270"/>
 <element name="R1" library="rcl" package="0207/10" value="180" x="58.42" y="21.59" rot="R90"/>
 <element name="R2" library="rcl" package="0207/10" value="180" x="50.8" y="21.59" rot="R90"/>
 <element name="E11" library="dec-con" package="DIL14" value="7482N" x="85.09" y="44.45" rot="R270"/>
-<element name="E1" library="74xxN" package="DIL14" value="7453N" x="85.09" y="114.3" rot="R270"/>
+<element name="E1" library="dec-con" package="DIL14" value="7453N" x="85.09" y="114.3" rot="R270"/>
 <element name="E3" library="74xx-us" package="DIL14" value="7460N" x="54.61" y="114.3" rot="R270"/>
-<element name="E2" library="74xxN" package="DIL14" value="7453N" x="69.85" y="114.3" rot="R270"/>
+<element name="E2" library="dec-con" package="DIL14" value="7453N" x="69.85" y="114.3" rot="R270"/>
 <element name="E4" library="74xx-us" package="DIL14" value="7460N" x="39.37" y="114.3" rot="R270"/>
 <element name="E6" library="74xx-us" package="DIL14" value="7474N" x="85.09" y="86.36" rot="R270"/>
 <element name="E7" library="74xx-us" package="DIL14" value="7474N" x="69.85" y="86.36" rot="R270"/>
