@@ -7,6 +7,10 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/atmel-cpld.lbr"
+UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-con.lbr"
+UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-m.lbr"
+UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/rack.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/41xx.lbr"
@@ -343,10 +347,6 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zilog.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/atmel-cpld.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-con.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-m.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/rack.lbr"
 
 [Win_1]
 Type="Schematic Editor"
