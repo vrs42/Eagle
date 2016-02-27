@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12834,31 +12834,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL14@1">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-8.636" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="DEC40PINV">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-24.765" y1="2.54" x2="-23.495" y2="2.54" width="0.1524" layer="21"/>
@@ -14738,7 +14713,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <symbol name="DEVICE">
 <text x="0" y="0" size="1.27" layer="94">&gt;Value</text>
 </symbol>
-<symbol name="NOR@1">
+<symbol name="NOR2">
 <wire x1="-1.27" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="-5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="-7.62" y1="2.54" x2="-6.35" y2="2.54" width="0.1524" layer="94"/>
@@ -14748,8 +14723,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94" curve="-77.319617" cap="flat"/>
 <text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in"/>
-<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in"/>
+<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
 </symbol>
 <symbol name="NOR7">
@@ -14941,17 +14916,17 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="8640" prefix="E">
+<deviceset name="DS8640" prefix="E">
 <description>Quad &lt;b&gt;NOR&lt;/b&gt; gate</description>
 <gates>
-<gate name="A" symbol="NOR@1" x="15.24" y="7.62" swaplevel="1"/>
-<gate name="B" symbol="NOR@1" x="15.24" y="-5.08" swaplevel="1"/>
-<gate name="C" symbol="NOR@1" x="38.1" y="7.62" swaplevel="1"/>
-<gate name="D" symbol="NOR@1" x="38.1" y="-5.08" swaplevel="1"/>
+<gate name="A" symbol="NOR2" x="15.24" y="7.62" swaplevel="1"/>
+<gate name="B" symbol="NOR2" x="15.24" y="-5.08" swaplevel="1"/>
+<gate name="C" symbol="NOR2" x="38.1" y="7.62" swaplevel="1"/>
+<gate name="D" symbol="NOR2" x="38.1" y="-5.08" swaplevel="1"/>
 <gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="N" package="DIL14@1">
+<device name="N" package="DIL14">
 <connects>
 <connect gate="A" pin="I0" pad="4"/>
 <connect gate="A" pin="I1" pad="5"/>
@@ -15821,7 +15796,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="E22" library="74xx-us" deviceset="74*74" device="N" technology="LS" value="7474N"/>
 <part name="E15" library="74xx-us" deviceset="74*74" device="N" technology="LS" value="7474N"/>
 <part name="E28" library="74xx-us" deviceset="74*20" device="N" technology="LS" value="7420N"/>
-<part name="E11" library="dec-con" deviceset="8640" device="N" value="DS8640N"/>
+<part name="E11" library="dec-con" deviceset="DS8640" device="N" value="DS8640N"/>
 <part name="E19" library="74xx-us" deviceset="74*02" device="N" technology="LS" value="7402N"/>
 <part name="E6" library="74xx-us" deviceset="74*02" device="N" technology="LS" value="7402N"/>
 <part name="E18" library="74xx-us" deviceset="74*01" device="N" technology="LS" value="DS8881N"/>

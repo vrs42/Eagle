@@ -3787,64 +3787,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="frames-b">
-<packages>
-</packages>
-<symbols>
-<symbol name="DINB3_L">
-<wire x1="0" y1="0" x2="469.9" y2="0" width="0.4064" layer="94"/>
-<wire x1="0" y1="317.5" x2="0" y2="0" width="0.4064" layer="94"/>
-<wire x1="469.9" y1="317.5" x2="0" y2="317.5" width="0.4064" layer="94"/>
-<wire x1="469.9" y1="317.5" x2="469.9" y2="0" width="0.4064" layer="94"/>
-</symbol>
-<symbol name="DOCFIELD">
-<wire x1="0" y1="0" x2="71.12" y2="0" width="0.254" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.254" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.254" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.254" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.254" layer="94"/>
-<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.254" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.254" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
-<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.254" layer="94"/>
-<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.254" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.254" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.254" layer="94"/>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.254" layer="94"/>
-<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
-<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
-<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
-<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
-<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
-<text x="1.27" y="19.05" size="2.54" layer="94" font="vector">TITLE:</text>
-<text x="1.27" y="11.43" size="2.54" layer="94" font="vector">Document Number:</text>
-<text x="17.78" y="19.05" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DINB3_L" prefix="FRAME">
-<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
-DIN B3, landscape with extra doc field</description>
-<gates>
-<gate name="G$1" symbol="DINB3_L" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="368.3" y="0" addlevel="must"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply1">
 <packages>
 </packages>
@@ -16576,6 +16518,57 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DOCFIELD" prefix="FRAME" uservalue="yes">
+<description>&lt;B&gt;DOCUMENT FIELD&lt;/B&gt;</description>
+<gates>
+<gate name="G$1" symbol="DOCFIELD" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16640,7 +16633,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="E46" library="74xx-us" deviceset="74*20" device="N" technology="LS" value="7420N"/>
 <part name="E48" library="74xx-us" deviceset="74*10" device="N" technology="S"/>
 <part name="E50" library="dec-con" deviceset="DEC8251" device=""/>
-<part name="FRAME2" library="frames-b" deviceset="DINB3_L" device=""/>
 <part name="U$4" library="supply1" deviceset="+3V3" device=""/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="R39" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
@@ -16745,10 +16737,12 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R40" library="rcl" deviceset="R-US_" device="0207/10" value="3.3K"/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
+<part name="FRAME1" library="frames" deviceset="DOCFIELD" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<frame x1="0" y1="0" x2="469.9" y2="317.5" columns="8" rows="5" layer="94"/>
 </plain>
 <instances>
 <instance part="E1" gate="A" x="-20.32" y="251.46"/>
@@ -17021,8 +17015,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="E48" gate="B" x="-20.32" y="96.52"/>
 <instance part="E48" gate="C" x="-20.32" y="78.74"/>
 <instance part="E50" gate="E$1" x="-50.8" y="99.06"/>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="FRAME2" gate="G$2" x="368.3" y="0"/>
 <instance part="U$4" gate="G$1" x="104.14" y="279.4"/>
 <instance part="V1" gate="GND" x="157.48" y="264.16"/>
 <instance part="R39" gate="G$1" x="88.9" y="261.62" rot="R90"/>
@@ -17165,6 +17157,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="R40" gate="G$1" x="-96.52" y="289.56"/>
 <instance part="V3" gate="G$1" x="114.3" y="35.56"/>
 <instance part="V4" gate="GND" x="114.3" y="10.16"/>
+<instance part="FRAME1" gate="G$1" x="363.22" y="5.08"/>
 </instances>
 <busses>
 </busses>
