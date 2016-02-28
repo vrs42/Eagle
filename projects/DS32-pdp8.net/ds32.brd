@@ -1380,7 +1380,12 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="85.09" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="85.09" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="IC2" library="memory-hitachi" package="DIL32" value="M48T512Y" x="62.23" y="50.8"/>
+<element name="IC2" library="memory-hitachi" package="DIL32" value="M48T512Y" x="62.23" y="50.8">
+<attribute name="OC_NEWARK" value="unknown" x="62.23" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="62.23" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="62.23" y="50.8" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="62.23" y="50.8" size="1.778" layer="27" display="off"/>
+</element>
 <element name="QG1" library="crystal" package="DIL08S" value="" x="31.75" y="54.61">
 <attribute name="OC_NEWARK" value="unknown" x="31.75" y="54.61" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="31.75" y="54.61" size="1.778" layer="27" display="off"/>
@@ -1991,7 +1996,6 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="VCC" class="1">
-<contactref element="IC2" pad="32"/>
 <contactref element="IC1" pad="38"/>
 <contactref element="IC1" pad="73"/>
 <contactref element="IC1" pad="78"/>
@@ -2023,6 +2027,7 @@ design rules under a new name.</description>
 <wire x1="73.025" y1="12.7" x2="51.435" y2="34.29" width="0.508" layer="16"/>
 <wire x1="73.66" y1="12.7" x2="73.025" y2="12.7" width="0.508" layer="16"/>
 <contactref element="QG1" pad="8"/>
+<contactref element="IC2" pad="32"/>
 </signal>
 <signal name="VSS">
 <contactref element="IC2" pad="16"/>

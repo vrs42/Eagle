@@ -10410,57 +10410,57 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 </package>
 </packages>
 <symbols>
-<symbol name="628512">
-<wire x1="-7.62" y1="-30.48" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
-<wire x1="10.16" y1="27.94" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
-<wire x1="10.16" y1="27.94" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="-30.48" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
-<text x="-7.62" y="28.575" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A0" x="-12.7" y="25.4" length="middle" direction="in"/>
-<pin name="A1" x="-12.7" y="22.86" length="middle" direction="in"/>
-<pin name="A2" x="-12.7" y="20.32" length="middle" direction="in"/>
-<pin name="A3" x="-12.7" y="17.78" length="middle" direction="in"/>
-<pin name="A4" x="-12.7" y="15.24" length="middle" direction="in"/>
-<pin name="A5" x="-12.7" y="12.7" length="middle" direction="in"/>
-<pin name="A6" x="-12.7" y="10.16" length="middle" direction="in"/>
-<pin name="A7" x="-12.7" y="7.62" length="middle" direction="in"/>
-<pin name="A8" x="-12.7" y="5.08" length="middle" direction="in"/>
-<pin name="A9" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="A10" x="-12.7" y="0" length="middle" direction="in"/>
-<pin name="A11" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="A12" x="-12.7" y="-5.08" length="middle" direction="in"/>
-<pin name="A13" x="-12.7" y="-7.62" length="middle" direction="in"/>
-<pin name="A14" x="-12.7" y="-10.16" length="middle" direction="in"/>
-<pin name="A15" x="-12.7" y="-12.7" length="middle" direction="in"/>
-<pin name="A16" x="-12.7" y="-15.24" length="middle" direction="in"/>
-<pin name="!WE" x="-12.7" y="-20.32" length="middle" direction="in"/>
-<pin name="!OE" x="-12.7" y="-22.86" length="middle" direction="in"/>
-<pin name="!CS" x="-12.7" y="-25.4" length="middle" direction="in"/>
-<pin name="I/O0" x="15.24" y="25.4" length="middle" rot="R180"/>
-<pin name="I/O1" x="15.24" y="22.86" length="middle" rot="R180"/>
-<pin name="I/O2" x="15.24" y="20.32" length="middle" rot="R180"/>
-<pin name="I/O3" x="15.24" y="17.78" length="middle" rot="R180"/>
-<pin name="I/O4" x="15.24" y="15.24" length="middle" rot="R180"/>
-<pin name="I/O5" x="15.24" y="12.7" length="middle" rot="R180"/>
-<pin name="I/O6" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="I/O7" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="A18" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
-<pin name="VSS" x="15.24" y="-27.94" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC" x="15.24" y="-17.78" length="middle" direction="pwr" rot="R180"/>
-<pin name="A17" x="-12.7" y="-27.94" length="middle" direction="in"/>
+<symbol name="628128">
+<wire x1="-10.16" y1="-27.94" x2="7.62" y2="-27.94" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="30.48" x2="7.62" y2="-27.94" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="30.48" x2="-10.16" y2="30.48" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-27.94" x2="-10.16" y2="30.48" width="0.4064" layer="94"/>
+<text x="-10.16" y="31.115" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A0" x="-15.24" y="27.94" length="middle" direction="in"/>
+<pin name="A1" x="-15.24" y="25.4" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="22.86" length="middle" direction="in"/>
+<pin name="A3" x="-15.24" y="20.32" length="middle" direction="in"/>
+<pin name="A4" x="-15.24" y="17.78" length="middle" direction="in"/>
+<pin name="A5" x="-15.24" y="15.24" length="middle" direction="in"/>
+<pin name="A6" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="A7" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="A8" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="A9" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="A10" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="A11" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="A12" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="A13" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="A14" x="-15.24" y="-7.62" length="middle" direction="in"/>
+<pin name="A15" x="-15.24" y="-10.16" length="middle" direction="in"/>
+<pin name="A16" x="-15.24" y="-12.7" length="middle" direction="in"/>
+<pin name="!WE" x="-15.24" y="-17.78" length="middle" direction="in"/>
+<pin name="!OE" x="-15.24" y="-20.32" length="middle" direction="in"/>
+<pin name="!CS1" x="-15.24" y="-22.86" length="middle" direction="in"/>
+<pin name="I/O0" x="12.7" y="27.94" length="middle" rot="R180"/>
+<pin name="I/O1" x="12.7" y="25.4" length="middle" rot="R180"/>
+<pin name="I/O2" x="12.7" y="22.86" length="middle" rot="R180"/>
+<pin name="I/O3" x="12.7" y="20.32" length="middle" rot="R180"/>
+<pin name="I/O4" x="12.7" y="17.78" length="middle" rot="R180"/>
+<pin name="I/O5" x="12.7" y="15.24" length="middle" rot="R180"/>
+<pin name="I/O6" x="12.7" y="12.7" length="middle" rot="R180"/>
+<pin name="I/O7" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="NC" x="12.7" y="2.54" length="middle" direction="nc" rot="R180"/>
+<pin name="VSS" x="12.7" y="-25.4" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC" x="12.7" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="CS2" x="-15.24" y="-25.4" length="middle" direction="in"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="628512P">
-<description>512Kx8 Static RAM</description>
+<deviceset name="628128P" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;MEMORY&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="628512" x="0" y="0"/>
+<gate name="G$1" symbol="628128" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DIL32">
 <connects>
-<connect gate="G$1" pin="!CS" pad="22"/>
+<connect gate="G$1" pin="!CS1" pad="22"/>
 <connect gate="G$1" pin="!OE" pad="24"/>
 <connect gate="G$1" pin="!WE" pad="29"/>
 <connect gate="G$1" pin="A0" pad="12"/>
@@ -10472,8 +10472,6 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <connect gate="G$1" pin="A14" pad="3"/>
 <connect gate="G$1" pin="A15" pad="31"/>
 <connect gate="G$1" pin="A16" pad="2"/>
-<connect gate="G$1" pin="A17" pad="30"/>
-<connect gate="G$1" pin="A18" pad="1"/>
 <connect gate="G$1" pin="A2" pad="10"/>
 <connect gate="G$1" pin="A3" pad="9"/>
 <connect gate="G$1" pin="A4" pad="8"/>
@@ -10482,6 +10480,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <connect gate="G$1" pin="A7" pad="5"/>
 <connect gate="G$1" pin="A8" pad="27"/>
 <connect gate="G$1" pin="A9" pad="26"/>
+<connect gate="G$1" pin="CS2" pad="30"/>
 <connect gate="G$1" pin="I/O0" pad="13"/>
 <connect gate="G$1" pin="I/O1" pad="14"/>
 <connect gate="G$1" pin="I/O2" pad="15"/>
@@ -10490,11 +10489,17 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <connect gate="G$1" pin="I/O5" pad="19"/>
 <connect gate="G$1" pin="I/O6" pad="20"/>
 <connect gate="G$1" pin="I/O7" pad="21"/>
+<connect gate="G$1" pin="NC" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="32"/>
 <connect gate="G$1" pin="VSS" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11398,7 +11403,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <part name="RN4" library="resistor-sil" deviceset="G09R" device=""/>
 <part name="RN5" library="resistor-sil" deviceset="G09R" device=""/>
 <part name="RN6" library="resistor-sil" deviceset="G09R" device=""/>
-<part name="IC2" library="memory-hitachi" deviceset="628512P" device="" value="M48T512Y"/>
+<part name="IC2" library="memory-hitachi" deviceset="628128P" device="" value="M48T512Y"/>
 <part name="QG1" library="crystal" deviceset="QG5460" device=""/>
 <part name="D3" library="zetex" deviceset="D" device="SOD323"/>
 <part name="D4" library="zetex" deviceset="D" device="SOD323"/>
