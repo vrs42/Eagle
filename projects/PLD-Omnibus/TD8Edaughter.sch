@@ -8239,13 +8239,13 @@ Quad flat pack 14mm x 20mm</description>
 <wire x1="30.48" y1="33.02" x2="-33.02" y2="33.02" width="0.254" layer="94"/>
 <text x="-20.32" y="15.24" size="1.27" layer="94">&gt;VALUE</text>
 <text x="-20.32" y="17.78" size="1.27" layer="94">&gt;NAME</text>
-<pin name="IO/PD1" x="-38.1" y="25.4" length="middle"/>
-<pin name="IO/PD2" x="2.54" y="-35.56" length="middle" rot="R90"/>
+<pin name="IO/PD1" x="-38.1" y="25.4" length="middle" swaplevel="1"/>
+<pin name="IO/PD2" x="2.54" y="-35.56" length="middle" swaplevel="1" rot="R90"/>
 <pin name="IO/GCLK3" x="5.08" y="38.1" length="middle" rot="R270"/>
-<pin name="IN/GCLK1" x="2.54" y="38.1" length="middle" direction="in" rot="R270"/>
-<pin name="IN/OE1" x="0" y="38.1" length="middle" direction="in" rot="R270"/>
-<pin name="IN/GCLR" x="-2.54" y="38.1" length="middle" direction="in" rot="R270"/>
-<pin name="IN/GCLK2/OE2" x="-5.08" y="38.1" length="middle" direction="in" rot="R270"/>
+<pin name="IN/GCLK1" x="2.54" y="38.1" length="middle" direction="in" swaplevel="2" rot="R270"/>
+<pin name="IN/OE1" x="0" y="38.1" length="middle" direction="in" swaplevel="2" rot="R270"/>
+<pin name="IN/GCLR" x="-2.54" y="38.1" length="middle" direction="in" swaplevel="2" rot="R270"/>
+<pin name="IN/GCLK2/OE2" x="-5.08" y="38.1" length="middle" direction="in" swaplevel="2" rot="R270"/>
 <pin name="IO2" x="-38.1" y="22.86" length="middle" swaplevel="1"/>
 <pin name="IO3" x="-38.1" y="20.32" length="middle" swaplevel="1"/>
 <pin name="IO4" x="-38.1" y="17.78" length="middle" swaplevel="1"/>
@@ -8322,8 +8322,8 @@ Quad flat pack 14mm x 20mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ATF1508" prefix="E">
-<description>ATD1508 CPLD</description>
+<deviceset name="ATF150X100" prefix="E">
+<description>ATF150x in 100 pin package.</description>
 <gates>
 <gate name="JEDEC" symbol="JTAG" x="55.88" y="27.94"/>
 <gate name="G$3" symbol="PVCCINT" x="48.26" y="10.16" addlevel="request"/>
@@ -8340,9 +8340,9 @@ Quad flat pack 14mm x 20mm</description>
 <gate name="G$14" symbol="PGND" x="66.04" y="-22.86" addlevel="request"/>
 <gate name="G$1" symbol="PVCCIO" x="68.58" y="10.16" addlevel="request"/>
 <gate name="IO" symbol="AT1508-100" x="0" y="0"/>
-<gate name="G$15" symbol="PGND" x="68.58" y="-22.86"/>
-<gate name="G$16" symbol="PGND" x="71.12" y="-22.86"/>
-<gate name="G$17" symbol="PGND" x="73.66" y="-22.86"/>
+<gate name="G$15" symbol="PGND" x="68.58" y="-22.86" addlevel="request"/>
+<gate name="G$16" symbol="PGND" x="71.12" y="-22.86" addlevel="request"/>
+<gate name="G$17" symbol="PGND" x="73.66" y="-22.86" addlevel="request"/>
 </gates>
 <devices>
 <device name="TQFP" package="TQFP-100">
@@ -9602,7 +9602,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="180"/>
 <part name="V56" library="supply2" deviceset="VCC" device=""/>
 <part name="V66" library="supply2" deviceset="GND" device=""/>
-<part name="E1" library="atmel-cpld" deviceset="ATF1508" device="PQFP"/>
+<part name="E1" library="atmel-cpld" deviceset="ATF150X100" device="PQFP"/>
 <part name="V67" library="supply2" deviceset="GND" device=""/>
 <part name="V68" library="supply2" deviceset="VCC" device=""/>
 <part name="V69" library="supply2" deviceset="GND" device=""/>

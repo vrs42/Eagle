@@ -180,55 +180,6 @@ C&amp;K</description>
 <text x="4.445" y="-9.525" size="1.27" layer="21" ratio="10">11</text>
 <text x="-0.635" y="-12.7" size="1.27" layer="21" ratio="10">12</text>
 </package>
-<package name="7109MD9V3">
-<description>7101 footprint for V2, V3 mounting brackets.</description>
-<wire x1="4.318" y1="2.286" x2="4.318" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-4.318" y1="2.286" x2="-4.318" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="4.318" y1="2.286" x2="3.9878" y2="2.5146" width="0.1524" layer="21"/>
-<wire x1="0" y1="5.08" x2="-3.9878" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-4.318" y1="-2.286" x2="-4.0132" y2="-2.4892" width="0.1524" layer="21"/>
-<wire x1="0" y1="-5.08" x2="4.0132" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="1.905" y1="-1.27" x2="2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="-2.54" width="0.1524" layer="51"/>
-<wire x1="1.905" y1="-3.175" x2="2.54" y2="-2.54" width="0.1524" layer="51"/>
-<wire x1="1.905" y1="-3.175" x2="-1.905" y2="-3.175" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-2.54" x2="-1.905" y2="-3.175" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="-1.905" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="1.6002" y1="1.27" x2="2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="-1.6002" y1="1.27" x2="-2.54" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="51" curve="-270"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.1524" layer="51" curve="-233.130102" cap="flat"/>
-<wire x1="-1.6002" y1="1.27" x2="1.6002" y2="1.27" width="0.1524" layer="51"/>
-<wire x1="3.9878" y1="2.5146" x2="0" y2="5.08" width="0.1524" layer="51"/>
-<wire x1="4.0132" y1="-2.4892" x2="4.318" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-4.0132" y1="-2.4892" x2="0" y2="-5.08" width="0.1524" layer="51"/>
-<wire x1="-3.9878" y1="2.4892" x2="-4.318" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="-4.7625" y1="-9.525" x2="-4.7625" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="-4.7625" y1="-6.985" x2="-4.7625" y2="6.985" width="0.127" layer="21"/>
-<wire x1="-4.7625" y1="6.985" x2="-4.7625" y2="9.525" width="0.127" layer="21"/>
-<wire x1="-4.7625" y1="9.525" x2="4.7625" y2="9.525" width="0.127" layer="21"/>
-<wire x1="4.7625" y1="-9.525" x2="4.7625" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="4.7625" y1="-6.985" x2="4.7625" y2="6.985" width="0.127" layer="21"/>
-<wire x1="4.7625" y1="6.985" x2="4.7625" y2="9.525" width="0.127" layer="21"/>
-<wire x1="-4.7625" y1="-9.525" x2="4.7625" y2="-9.525" width="0.127" layer="21"/>
-<wire x1="-4.7625" y1="-6.985" x2="4.7625" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="-4.7625" y1="6.985" x2="4.7625" y2="6.985" width="0.127" layer="21"/>
-<pad name="3" x="0" y="-4.699" drill="1.8034"/>
-<pad name="2" x="0" y="0" drill="1.8034"/>
-<pad name="1" x="0" y="4.699" drill="1.8034"/>
-<pad name="NC@2" x="-1.5875" y="7.9375" drill="1.8034"/>
-<pad name="NC@4" x="1.5875" y="7.9375" drill="1.8034"/>
-<pad name="NC@7" x="1.5875" y="-7.9375" drill="1.8034"/>
-<pad name="NC@6" x="-1.5875" y="-7.9375" drill="1.8034"/>
-<pad name="NC@1" x="-3.175" y="9.525" drill="1.8034"/>
-<pad name="NC@3" x="3.175" y="9.525" drill="1.8034"/>
-<pad name="NC@8" x="3.175" y="-9.525" drill="1.8034"/>
-<pad name="NC@5" x="-3.175" y="-9.525" drill="1.8034"/>
-<text x="-3.81" y="11.43" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-12.7" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 </packages>
 </library>
 <library name="dec-con">
@@ -503,6 +454,55 @@ C&amp;K</description>
 <pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="7109MD9V3">
+<description>7101 footprint for V2, V3 mounting brackets.</description>
+<wire x1="4.318" y1="2.286" x2="4.318" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="2.286" x2="-4.318" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="4.318" y1="2.286" x2="3.9878" y2="2.5146" width="0.1524" layer="21"/>
+<wire x1="0" y1="5.08" x2="-3.9878" y2="2.4892" width="0.1524" layer="51"/>
+<wire x1="-4.318" y1="-2.286" x2="-4.0132" y2="-2.4892" width="0.1524" layer="21"/>
+<wire x1="0" y1="-5.08" x2="4.0132" y2="-2.4892" width="0.1524" layer="51"/>
+<wire x1="1.905" y1="-1.27" x2="2.54" y2="-1.905" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="1.905" y1="-3.175" x2="2.54" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="1.905" y1="-3.175" x2="-1.905" y2="-3.175" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.905" y2="-3.175" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.905" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-1.905" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="1.6002" y1="1.27" x2="2.54" y2="-1.905" width="0.1524" layer="51"/>
+<wire x1="-1.6002" y1="1.27" x2="-2.54" y2="-1.905" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="51" curve="-270"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.1524" layer="51" curve="-233.130102" cap="flat"/>
+<wire x1="-1.6002" y1="1.27" x2="1.6002" y2="1.27" width="0.1524" layer="51"/>
+<wire x1="3.9878" y1="2.5146" x2="0" y2="5.08" width="0.1524" layer="51"/>
+<wire x1="4.0132" y1="-2.4892" x2="4.318" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-4.0132" y1="-2.4892" x2="0" y2="-5.08" width="0.1524" layer="51"/>
+<wire x1="-3.9878" y1="2.4892" x2="-4.318" y2="2.286" width="0.1524" layer="21"/>
+<wire x1="-4.7625" y1="-9.525" x2="-4.7625" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-6.985" x2="-4.7625" y2="6.985" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="6.985" x2="-4.7625" y2="9.525" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="9.525" x2="4.7625" y2="9.525" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-9.525" x2="4.7625" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-6.985" x2="4.7625" y2="6.985" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="6.985" x2="4.7625" y2="9.525" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-9.525" x2="4.7625" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-6.985" x2="4.7625" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="6.985" x2="4.7625" y2="6.985" width="0.127" layer="21"/>
+<pad name="1" x="0" y="4.699" drill="1.8034"/>
+<pad name="2" x="0" y="0" drill="1.8034"/>
+<pad name="3" x="0" y="-4.699" drill="1.8034"/>
+<pad name="NC@1" x="-3.175" y="9.525" drill="1.8034"/>
+<pad name="NC@2" x="-1.5875" y="7.9375" drill="1.8034"/>
+<pad name="NC@3" x="3.175" y="9.525" drill="1.8034"/>
+<pad name="NC@4" x="1.5875" y="7.9375" drill="1.8034"/>
+<pad name="NC@5" x="-3.175" y="-9.525" drill="1.8034"/>
+<pad name="NC@6" x="-1.5875" y="-7.9375" drill="1.8034"/>
+<pad name="NC@7" x="1.5875" y="-7.9375" drill="1.8034"/>
+<pad name="NC@8" x="3.175" y="-9.525" drill="1.8034"/>
+<text x="-3.81" y="11.43" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-12.7" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -1335,25 +1335,25 @@ design rules under a new name.</description>
 <element name="E23" library="74xx-us" package="DIL14" value="74LS10N" x="33.02" y="39.37"/>
 <element name="E8" library="74xx-us" package="DIL16" value="74123N" x="135.89" y="135.89"/>
 <element name="E14" library="74xx-us" package="DIL16" value="74123N" x="219.71" y="13.97"/>
-<element name="CYL128" library="switch" package="7109MD9V3" value="7101" x="12.7" y="114.3"/>
-<element name="CYL64" library="switch" package="7109MD9V3" value="7101" x="27.94" y="114.3"/>
-<element name="CYL32" library="switch" package="7109MD9V3" value="7101" x="43.18" y="114.3"/>
-<element name="CYL16" library="switch" package="7109MD9V3" value="7101" x="58.42" y="114.3"/>
-<element name="CYL8" library="switch" package="7109MD9V3" value="7101" x="73.66" y="114.3"/>
-<element name="CYL4" library="switch" package="7109MD9V3" value="7101" x="88.9" y="114.3"/>
-<element name="CYL2" library="switch" package="7109MD9V3" value="7101" x="104.14" y="114.3"/>
-<element name="CYL1" library="switch" package="7109MD9V3" value="7101" x="119.38" y="114.3"/>
-<element name="FWD/REV" library="switch" package="7109MD9V3" value="7101" x="58.42" y="83.82"/>
-<element name="HEAD" library="switch" package="7109MD9V3" value="7101" x="149.86" y="83.82"/>
-<element name="RUN" library="switch" package="7109MD9V3" value="7101" x="27.94" y="83.82"/>
-<element name="RTZ" library="switch" package="7109MD9V3" value="7101" x="43.18" y="83.82"/>
-<element name="CW" library="switch" package="7109MD9V3" value="7101" x="149.86" y="114.3"/>
-<element name="WRITE" library="switch" package="7109MD9V3" value="7108" x="165.1" y="83.82"/>
-<element name="DC_ERASE" library="switch" package="7109MD9V3" value="7101" x="165.1" y="114.3"/>
-<element name="BIT0" library="switch" package="7109MD9V3" value="7101" x="195.58" y="114.3"/>
-<element name="BIT1" library="switch" package="7109MD9V3" value="7101" x="210.82" y="114.3"/>
-<element name="BIT2" library="switch" package="7109MD9V3" value="7101" x="226.06" y="114.3"/>
-<element name="BIT3" library="switch" package="7109MD9V3" value="7101" x="241.3" y="114.3"/>
+<element name="CYL128" library="dec-con" package="7109MD9V3" value="7101" x="12.7" y="114.3"/>
+<element name="CYL64" library="dec-con" package="7109MD9V3" value="7101" x="27.94" y="114.3"/>
+<element name="CYL32" library="dec-con" package="7109MD9V3" value="7101" x="43.18" y="114.3"/>
+<element name="CYL16" library="dec-con" package="7109MD9V3" value="7101" x="58.42" y="114.3"/>
+<element name="CYL8" library="dec-con" package="7109MD9V3" value="7101" x="73.66" y="114.3"/>
+<element name="CYL4" library="dec-con" package="7109MD9V3" value="7101" x="88.9" y="114.3"/>
+<element name="CYL2" library="dec-con" package="7109MD9V3" value="7101" x="104.14" y="114.3"/>
+<element name="CYL1" library="dec-con" package="7109MD9V3" value="7101" x="119.38" y="114.3"/>
+<element name="FWD/REV" library="dec-con" package="7109MD9V3" value="7101" x="58.42" y="83.82"/>
+<element name="HEAD" library="dec-con" package="7109MD9V3" value="7101" x="149.86" y="83.82"/>
+<element name="RUN" library="dec-con" package="7109MD9V3" value="7101" x="27.94" y="83.82"/>
+<element name="RTZ" library="dec-con" package="7109MD9V3" value="7101" x="43.18" y="83.82"/>
+<element name="CW" library="dec-con" package="7109MD9V3" value="7101" x="149.86" y="114.3"/>
+<element name="WRITE" library="dec-con" package="7109MD9V3" value="7108" x="165.1" y="83.82"/>
+<element name="DC_ERASE" library="dec-con" package="7109MD9V3" value="7101" x="165.1" y="114.3"/>
+<element name="BIT0" library="dec-con" package="7109MD9V3" value="7101" x="195.58" y="114.3"/>
+<element name="BIT1" library="dec-con" package="7109MD9V3" value="7101" x="210.82" y="114.3"/>
+<element name="BIT2" library="dec-con" package="7109MD9V3" value="7101" x="226.06" y="114.3"/>
+<element name="BIT3" library="dec-con" package="7109MD9V3" value="7101" x="241.3" y="114.3"/>
 <element name="FUNCTION" library="switch" package="CK101X12" value="" x="63.5" y="38.1" smashed="yes" rot="R240">
 <attribute name="NAME" x="57.3784" y="51.3487" size="1.778" layer="25" ratio="10"/>
 <attribute name="VALUE" x="52.8417" y="50.1194" size="1.778" layer="27" ratio="10" rot="R240"/>

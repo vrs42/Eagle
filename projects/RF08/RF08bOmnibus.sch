@@ -15880,6 +15880,49 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="-3.4971" y="5.811" size="1.778" layer="25">&gt;NAME</text>
 <text x="-3.9751" y="-7.6871" size="1.778" layer="27">&gt;VALUE</text>
 </package>
+<package name="DIL32">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="20.32" y1="6.731" x2="-20.32" y2="6.731" width="0.1524" layer="21"/>
+<wire x1="-20.32" y1="-6.731" x2="20.32" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="20.32" y1="6.731" x2="20.32" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="-20.32" y1="6.731" x2="-20.32" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-20.32" y1="-6.731" x2="-20.32" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-20.32" y1="1.016" x2="-20.32" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-19.05" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="19.05" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="19.05" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="25" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="26" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="27" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="28" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="29" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="30" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="31" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="32" x="-19.05" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-20.701" y="-6.604" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="-16.891" y="-0.889" size="1.778" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="EDGE-RIGHT">
@@ -15954,6 +15997,46 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
 <pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
 <pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="628512">
+<wire x1="-7.62" y1="-30.48" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="27.94" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="27.94" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-30.48" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
+<pin name="!CS" x="-12.7" y="-25.4" length="middle" direction="in"/>
+<pin name="!OE" x="-12.7" y="-22.86" length="middle" direction="in"/>
+<pin name="!WE" x="-12.7" y="-20.32" length="middle" direction="in"/>
+<pin name="A0" x="-12.7" y="25.4" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="22.86" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="20.32" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="17.78" length="middle" direction="in"/>
+<pin name="A4" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="A5" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A6" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A7" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A8" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A9" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A10" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="A11" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="A12" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="A13" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="A14" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="A15" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="A16" x="-12.7" y="-15.24" length="middle" direction="in"/>
+<pin name="A17" x="-12.7" y="-27.94" length="middle" direction="in"/>
+<pin name="A18" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="I/O0" x="15.24" y="25.4" length="middle" rot="R180"/>
+<pin name="I/O1" x="15.24" y="22.86" length="middle" rot="R180"/>
+<pin name="I/O2" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="I/O3" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="I/O4" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="I/O5" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="I/O6" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="I/O7" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="VCC" x="15.24" y="-17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS" x="15.24" y="-27.94" length="middle" direction="pwr" rot="R180"/>
+<text x="-7.62" y="28.575" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -16421,97 +16504,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="memory-hitachi">
-<packages>
-<package name="DIL32">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="20.32" y1="6.731" x2="-20.32" y2="6.731" width="0.1524" layer="21"/>
-<wire x1="-20.32" y1="-6.731" x2="20.32" y2="-6.731" width="0.1524" layer="21"/>
-<wire x1="20.32" y1="6.731" x2="20.32" y2="-6.731" width="0.1524" layer="21"/>
-<wire x1="-20.32" y1="6.731" x2="-20.32" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-20.32" y1="-6.731" x2="-20.32" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-20.32" y1="1.016" x2="-20.32" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-19.05" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="19.05" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="19.05" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="19" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="20" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="21" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="22" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="23" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="24" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="25" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="26" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="27" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="28" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="29" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="30" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="31" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="32" x="-19.05" y="7.62" drill="0.8128" shape="long" rot="R90"/>
-<text x="-20.701" y="-6.604" size="1.778" layer="25" rot="R90">&gt;NAME</text>
-<text x="-16.891" y="-0.889" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="628512">
-<wire x1="-7.62" y1="-30.48" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
-<wire x1="10.16" y1="27.94" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
-<wire x1="10.16" y1="27.94" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="-30.48" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
-<text x="-7.62" y="28.575" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A0" x="-12.7" y="25.4" length="middle" direction="in"/>
-<pin name="A1" x="-12.7" y="22.86" length="middle" direction="in"/>
-<pin name="A2" x="-12.7" y="20.32" length="middle" direction="in"/>
-<pin name="A3" x="-12.7" y="17.78" length="middle" direction="in"/>
-<pin name="A4" x="-12.7" y="15.24" length="middle" direction="in"/>
-<pin name="A5" x="-12.7" y="12.7" length="middle" direction="in"/>
-<pin name="A6" x="-12.7" y="10.16" length="middle" direction="in"/>
-<pin name="A7" x="-12.7" y="7.62" length="middle" direction="in"/>
-<pin name="A8" x="-12.7" y="5.08" length="middle" direction="in"/>
-<pin name="A9" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="A10" x="-12.7" y="0" length="middle" direction="in"/>
-<pin name="A11" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="A12" x="-12.7" y="-5.08" length="middle" direction="in"/>
-<pin name="A13" x="-12.7" y="-7.62" length="middle" direction="in"/>
-<pin name="A14" x="-12.7" y="-10.16" length="middle" direction="in"/>
-<pin name="A15" x="-12.7" y="-12.7" length="middle" direction="in"/>
-<pin name="A16" x="-12.7" y="-15.24" length="middle" direction="in"/>
-<pin name="!WE" x="-12.7" y="-20.32" length="middle" direction="in"/>
-<pin name="!OE" x="-12.7" y="-22.86" length="middle" direction="in"/>
-<pin name="!CS" x="-12.7" y="-25.4" length="middle" direction="in"/>
-<pin name="I/O0" x="15.24" y="25.4" length="middle" rot="R180"/>
-<pin name="I/O1" x="15.24" y="22.86" length="middle" rot="R180"/>
-<pin name="I/O2" x="15.24" y="20.32" length="middle" rot="R180"/>
-<pin name="I/O3" x="15.24" y="17.78" length="middle" rot="R180"/>
-<pin name="I/O4" x="15.24" y="15.24" length="middle" rot="R180"/>
-<pin name="I/O5" x="15.24" y="12.7" length="middle" rot="R180"/>
-<pin name="I/O6" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="I/O7" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="A18" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
-<pin name="VSS" x="15.24" y="-27.94" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC" x="15.24" y="-17.78" length="middle" direction="pwr" rot="R180"/>
-<pin name="A17" x="-12.7" y="-27.94" length="middle" direction="in"/>
-</symbol>
-</symbols>
-<devicesets>
 <deviceset name="628512P">
 <description>512Kx8 Static RAM</description>
 <gates>
@@ -16825,17 +16817,17 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="IC39" library="74xx-us" deviceset="74*245" device="N" technology="LS" value="74ABT245N"/>
 <part name="IC44" library="74xx-us" deviceset="74*574" device="N" technology="AS" value="74AS574N"/>
 <part name="IC45" library="74xx-us" deviceset="74*574" device="N" technology="AS" value="74AS574N"/>
-<part name="IC27" library="memory-hitachi" deviceset="628512P" device=""/>
+<part name="IC27" library="dec-con" deviceset="628512P" device=""/>
 <part name="V29" library="supply2" deviceset="VCC" device=""/>
 <part name="V30" library="supply2" deviceset="GND" device=""/>
 <part name="V42" library="supply2" deviceset="GND" device=""/>
-<part name="IC47" library="memory-hitachi" deviceset="628512P" device=""/>
+<part name="IC47" library="dec-con" deviceset="628512P" device=""/>
 <part name="V44" library="supply2" deviceset="VCC" device=""/>
 <part name="V93" library="supply2" deviceset="GND" device=""/>
-<part name="IC33" library="memory-hitachi" deviceset="628512P" device=""/>
+<part name="IC33" library="dec-con" deviceset="628512P" device=""/>
 <part name="V94" library="supply2" deviceset="VCC" device=""/>
 <part name="V95" library="supply2" deviceset="GND" device=""/>
-<part name="IC48" library="memory-hitachi" deviceset="628512P" device=""/>
+<part name="IC48" library="dec-con" deviceset="628512P" device=""/>
 <part name="V96" library="supply2" deviceset="VCC" device=""/>
 <part name="V97" library="supply2" deviceset="GND" device=""/>
 <part name="IC49" library="74xx-us" deviceset="74*245" device="N" technology="LS" value="74ABT245N"/>

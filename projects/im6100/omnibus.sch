@@ -1684,6 +1684,49 @@ DIN A3, landscape with extra doc field</description>
 <hole x="209.55" y="74.93" drill="3.175"/>
 <hole x="209.55" y="126.365" drill="3.175"/>
 </package>
+<package name="DIL32">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="20.32" y1="6.731" x2="-20.32" y2="6.731" width="0.1524" layer="21"/>
+<wire x1="-20.32" y1="-6.731" x2="20.32" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="20.32" y1="6.731" x2="20.32" y2="-6.731" width="0.1524" layer="21"/>
+<wire x1="-20.32" y1="6.731" x2="-20.32" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-20.32" y1="-6.731" x2="-20.32" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-20.32" y1="1.016" x2="-20.32" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-19.05" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="19.05" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="19.05" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="25" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="26" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="27" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="28" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="29" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="30" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="31" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="32" x="-19.05" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-20.701" y="-6.604" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="-16.891" y="-0.889" size="1.778" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DEVICE">
@@ -1823,6 +1866,46 @@ DIN A3, landscape with extra doc field</description>
 <pin name="POUT" x="20.32" y="-22.86" length="middle" direction="out" rot="R180"/>
 <pin name="OSCIN" x="-20.32" y="30.48" length="middle" direction="in"/>
 <pin name="OSCOUT" x="-20.32" y="27.94" length="middle" direction="out"/>
+</symbol>
+<symbol name="628512">
+<wire x1="-7.62" y1="-30.48" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="27.94" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="27.94" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-30.48" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
+<pin name="!CS" x="-12.7" y="-25.4" length="middle" direction="in"/>
+<pin name="!OE" x="-12.7" y="-22.86" length="middle" direction="in"/>
+<pin name="!WE" x="-12.7" y="-20.32" length="middle" direction="in"/>
+<pin name="A0" x="-12.7" y="25.4" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="22.86" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="20.32" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="17.78" length="middle" direction="in"/>
+<pin name="A4" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="A5" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A6" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A7" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A8" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A9" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A10" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="A11" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="A12" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="A13" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="A14" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="A15" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="A16" x="-12.7" y="-15.24" length="middle" direction="in"/>
+<pin name="A17" x="-12.7" y="-27.94" length="middle" direction="in"/>
+<pin name="A18" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="I/O0" x="15.24" y="25.4" length="middle" rot="R180"/>
+<pin name="I/O1" x="15.24" y="22.86" length="middle" rot="R180"/>
+<pin name="I/O2" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="I/O3" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="I/O4" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="I/O5" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="I/O6" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="I/O7" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="VCC" x="15.24" y="-17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS" x="15.24" y="-27.94" length="middle" direction="pwr" rot="R180"/>
+<text x="-7.62" y="28.575" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2325,6 +2408,53 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="628512P">
+<description>512Kx8 Static RAM</description>
+<gates>
+<gate name="G$1" symbol="628512" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL32">
+<connects>
+<connect gate="G$1" pin="!CS" pad="22"/>
+<connect gate="G$1" pin="!OE" pad="24"/>
+<connect gate="G$1" pin="!WE" pad="29"/>
+<connect gate="G$1" pin="A0" pad="12"/>
+<connect gate="G$1" pin="A1" pad="11"/>
+<connect gate="G$1" pin="A10" pad="23"/>
+<connect gate="G$1" pin="A11" pad="25"/>
+<connect gate="G$1" pin="A12" pad="4"/>
+<connect gate="G$1" pin="A13" pad="28"/>
+<connect gate="G$1" pin="A14" pad="3"/>
+<connect gate="G$1" pin="A15" pad="31"/>
+<connect gate="G$1" pin="A16" pad="2"/>
+<connect gate="G$1" pin="A17" pad="30"/>
+<connect gate="G$1" pin="A18" pad="1"/>
+<connect gate="G$1" pin="A2" pad="10"/>
+<connect gate="G$1" pin="A3" pad="9"/>
+<connect gate="G$1" pin="A4" pad="8"/>
+<connect gate="G$1" pin="A5" pad="7"/>
+<connect gate="G$1" pin="A6" pad="6"/>
+<connect gate="G$1" pin="A7" pad="5"/>
+<connect gate="G$1" pin="A8" pad="27"/>
+<connect gate="G$1" pin="A9" pad="26"/>
+<connect gate="G$1" pin="I/O0" pad="13"/>
+<connect gate="G$1" pin="I/O1" pad="14"/>
+<connect gate="G$1" pin="I/O2" pad="15"/>
+<connect gate="G$1" pin="I/O3" pad="17"/>
+<connect gate="G$1" pin="I/O4" pad="18"/>
+<connect gate="G$1" pin="I/O5" pad="19"/>
+<connect gate="G$1" pin="I/O6" pad="20"/>
+<connect gate="G$1" pin="I/O7" pad="21"/>
+<connect gate="G$1" pin="VCC" pad="32"/>
+<connect gate="G$1" pin="VSS" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply2">
@@ -2495,46 +2625,6 @@ DIN A3, landscape with extra doc field</description>
 <pin name="VSS" x="12.7" y="-25.4" length="middle" direction="pwr" rot="R180"/>
 <pin name="VCC" x="12.7" y="-15.24" length="middle" direction="pwr" rot="R180"/>
 </symbol>
-<symbol name="628512">
-<wire x1="-7.62" y1="-30.48" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
-<wire x1="10.16" y1="27.94" x2="10.16" y2="-30.48" width="0.4064" layer="94"/>
-<wire x1="10.16" y1="27.94" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="-30.48" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
-<text x="-7.62" y="28.575" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A0" x="-12.7" y="25.4" length="middle" direction="in"/>
-<pin name="A1" x="-12.7" y="22.86" length="middle" direction="in"/>
-<pin name="A2" x="-12.7" y="20.32" length="middle" direction="in"/>
-<pin name="A3" x="-12.7" y="17.78" length="middle" direction="in"/>
-<pin name="A4" x="-12.7" y="15.24" length="middle" direction="in"/>
-<pin name="A5" x="-12.7" y="12.7" length="middle" direction="in"/>
-<pin name="A6" x="-12.7" y="10.16" length="middle" direction="in"/>
-<pin name="A7" x="-12.7" y="7.62" length="middle" direction="in"/>
-<pin name="A8" x="-12.7" y="5.08" length="middle" direction="in"/>
-<pin name="A9" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="A10" x="-12.7" y="0" length="middle" direction="in"/>
-<pin name="A11" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="A12" x="-12.7" y="-5.08" length="middle" direction="in"/>
-<pin name="A13" x="-12.7" y="-7.62" length="middle" direction="in"/>
-<pin name="A14" x="-12.7" y="-10.16" length="middle" direction="in"/>
-<pin name="A15" x="-12.7" y="-12.7" length="middle" direction="in"/>
-<pin name="A16" x="-12.7" y="-15.24" length="middle" direction="in"/>
-<pin name="!WE" x="-12.7" y="-20.32" length="middle" direction="in"/>
-<pin name="!OE" x="-12.7" y="-22.86" length="middle" direction="in"/>
-<pin name="!CS" x="-12.7" y="-25.4" length="middle" direction="in"/>
-<pin name="I/O0" x="15.24" y="25.4" length="middle" rot="R180"/>
-<pin name="I/O1" x="15.24" y="22.86" length="middle" rot="R180"/>
-<pin name="I/O2" x="15.24" y="20.32" length="middle" rot="R180"/>
-<pin name="I/O3" x="15.24" y="17.78" length="middle" rot="R180"/>
-<pin name="I/O4" x="15.24" y="15.24" length="middle" rot="R180"/>
-<pin name="I/O5" x="15.24" y="12.7" length="middle" rot="R180"/>
-<pin name="I/O6" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="I/O7" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="A18" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
-<pin name="VSS" x="15.24" y="-27.94" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC" x="15.24" y="-17.78" length="middle" direction="pwr" rot="R180"/>
-<pin name="A17" x="-12.7" y="-27.94" length="middle" direction="in"/>
-</symbol>
 <symbol name="628128">
 <wire x1="-10.16" y1="-27.94" x2="7.62" y2="-27.94" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="30.48" x2="7.62" y2="-27.94" width="0.4064" layer="94"/>
@@ -2621,53 +2711,6 @@ DIN A3, landscape with extra doc field</description>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="628512P">
-<description>512Kx8 Static RAM</description>
-<gates>
-<gate name="G$1" symbol="628512" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIL32">
-<connects>
-<connect gate="G$1" pin="!CS" pad="22"/>
-<connect gate="G$1" pin="!OE" pad="24"/>
-<connect gate="G$1" pin="!WE" pad="29"/>
-<connect gate="G$1" pin="A0" pad="12"/>
-<connect gate="G$1" pin="A1" pad="11"/>
-<connect gate="G$1" pin="A10" pad="23"/>
-<connect gate="G$1" pin="A11" pad="25"/>
-<connect gate="G$1" pin="A12" pad="4"/>
-<connect gate="G$1" pin="A13" pad="28"/>
-<connect gate="G$1" pin="A14" pad="3"/>
-<connect gate="G$1" pin="A15" pad="31"/>
-<connect gate="G$1" pin="A16" pad="2"/>
-<connect gate="G$1" pin="A17" pad="30"/>
-<connect gate="G$1" pin="A18" pad="1"/>
-<connect gate="G$1" pin="A2" pad="10"/>
-<connect gate="G$1" pin="A3" pad="9"/>
-<connect gate="G$1" pin="A4" pad="8"/>
-<connect gate="G$1" pin="A5" pad="7"/>
-<connect gate="G$1" pin="A6" pad="6"/>
-<connect gate="G$1" pin="A7" pad="5"/>
-<connect gate="G$1" pin="A8" pad="27"/>
-<connect gate="G$1" pin="A9" pad="26"/>
-<connect gate="G$1" pin="I/O0" pad="13"/>
-<connect gate="G$1" pin="I/O1" pad="14"/>
-<connect gate="G$1" pin="I/O2" pad="15"/>
-<connect gate="G$1" pin="I/O3" pad="17"/>
-<connect gate="G$1" pin="I/O4" pad="18"/>
-<connect gate="G$1" pin="I/O5" pad="19"/>
-<connect gate="G$1" pin="I/O6" pad="20"/>
-<connect gate="G$1" pin="I/O7" pad="21"/>
-<connect gate="G$1" pin="VCC" pad="32"/>
-<connect gate="G$1" pin="VSS" pad="16"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4494,8 +4537,8 @@ Based on the following sources:
 <part name="V11" library="supply2" deviceset="GND" device=""/>
 <part name="IC16" library="memory" deviceset="27256" device=""/>
 <part name="IC17" library="memory" deviceset="27256" device=""/>
-<part name="U$3" library="memory-hitachi" deviceset="628512P" device=""/>
-<part name="U$4" library="memory-hitachi" deviceset="628512P" device=""/>
+<part name="U$3" library="dec-con" deviceset="628512P" device=""/>
+<part name="U$4" library="dec-con" deviceset="628512P" device=""/>
 <part name="IC20" library="memory-hitachi" deviceset="628128P" device="" value="628128P"/>
 <part name="IC14" library="memory-hitachi" deviceset="62832P" device="" value="CY7C199"/>
 <part name="IC15" library="memory-hitachi" deviceset="62832P" device="" value="CY7C199"/>

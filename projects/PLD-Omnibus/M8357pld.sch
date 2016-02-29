@@ -14760,8 +14760,8 @@ Quad flat pack 14mm x 20mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ATF1508" prefix="E">
-<description>ATD1508 CPLD</description>
+<deviceset name="ATF150X100" prefix="E">
+<description>ATF150x in 100 pin package.</description>
 <gates>
 <gate name="JEDEC" symbol="JTAG" x="55.88" y="27.94"/>
 <gate name="G$3" symbol="PVCCINT" x="48.26" y="10.16" addlevel="request"/>
@@ -15200,7 +15200,7 @@ Quad flat pack 14mm x 20mm</description>
 <part name="C43" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uf"/>
 <part name="C44" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uf"/>
 <part name="C45" library="rcl" deviceset="CPOL-US" device="E22-6AXIAL" value="6.8uf"/>
-<part name="E1" library="atmel-cpld" deviceset="ATF1508" device="PQFP"/>
+<part name="E1" library="atmel-cpld" deviceset="ATF150X100" device="PQFP"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
 <part name="V2" library="supply2" deviceset="VCC" device=""/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>

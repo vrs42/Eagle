@@ -2353,7 +2353,7 @@ design rules under a new name.</description>
 <element name="C43" library="rcl" package="E22-6" value="6.8uf" x="100.33" y="35.56" rot="R180"/>
 <element name="C44" library="rcl" package="E22-6" value="6.8uf" x="186.69" y="35.56" rot="R180"/>
 <element name="C45" library="rcl" package="E22-6" value="6.8uf" x="237.49" y="35.56" rot="R180"/>
-<element name="E1" library="atmel-cpld" package="PQFP-100" value="ATF1508PQFP" x="73.66" y="88.9"/>
+<element name="E1" library="atmel-cpld" package="PQFP-100" value="ATF150X100PQFP" x="73.66" y="88.9"/>
 <element name="ISP" library="con-lstb" package="MA05-2" value="" x="92.71" y="114.3" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="92.71" y="114.3" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="92.71" y="114.3" size="1.778" layer="27" rot="R90" display="off"/>
