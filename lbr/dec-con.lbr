@@ -48228,9 +48228,11 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 </symbol>
 <symbol name="JUMPER-NC">
 <wire x1="5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<text x="0" y="0.254" size="1.27" layer="94">&gt;Name</text>
+<text x="0" y="-2.286" size="1.27" layer="94">&gt;Name</text>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" swaplevel="1"/>
 <pin name="2" x="7.62" y="0" visible="pad" length="short" swaplevel="1" rot="R180"/>
+<circle x="-0.508" y="0" radius="0.254" width="0.6096" layer="94"/>
+<circle x="0.508" y="0" radius="0.254" width="0.6096" layer="94"/>
 </symbol>
 <symbol name="BUSBAR">
 <wire x1="-10.16" y1="0" x2="-9.652" y2="0.508" width="0.254" layer="94"/>
@@ -54966,7 +54968,7 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CPOL-USE15-5AXIAL" uservalue="yes">
+<deviceset name="CPOL-USE15-5AXIAL" prefix="C" uservalue="yes">
 <description>0.5" veresion of an electrolytic</description>
 <gates>
 <gate name="1" symbol="CPOL-US" x="0" y="0"/>
