@@ -1,7 +1,7 @@
 #$ TOOL CUPL
 # Berkeley PLA format generated using CUPL(WM) 5.0a
 # Serial#  60008009
-# Created  Wed Sep 16 12:22:31 2015
+# Created  Thu Mar 10 23:02:14 2016
 #
 #    Name        rx8e
 #    Partno      cpld
@@ -16,7 +16,7 @@
 #$ MODULE  rx8e
 #$ JEDECFILE  rx8e
 #$ DEVICE  f1508ispqfp100
-#$ PINS  56 c0_low+:23 c1_low+:22 data0_low+:42 data10_low+:2 data11_low+:1 data1_low+:39 data2_low+:38 data3_low+:37 data4_low+:31 data5_low+:30 data6_low+:29 data7_low+:26 data8_low+:4 data9_low+:3 dd+:82 done_skip_low+:59 f+:71 initialize+:12 int_rqst_low+:14 internal_io_low+:18 io_pause_low+:24 jj+:95 l+:73 md03_low+:44 md04_low+:35 md05_low+:34 md06_low+:33 md07_low+:32 md08_low+:10 md09_low+:9 md10_low+:8 md11_low+:7 n_t_1x+:92 n_t_5x+:91 n_t_6x+:89 n_t_7x+:85 n_t_8x+:86 n_t_9x+:94 nn+:98 parity+:58 rx_12_bit_low+:83 rx_data_low+:81 rx_done_low+:79 rx_error_low+:72 rx_init_low+:74 rx_out_low+:99 rx_run_low+:70 rx_shift_low+:96 rx_tr_req_low+:77 skip_low+:11 tp3+:21 tp4+:19 tr_skip_low+:60 tt+:100 v+:78 z+:80 
+#$ PINS  56 c0_low+:25 c1_low+:24 data0_low+:46 data10_low+:7 data11_low+:4 data1_low+:44 data2_low+:42 data3_low+:39 data4_low+:33 data5_low+:32 data6_low+:31 data7_low+:29 data8_low+:8 data9_low+:3 dd+:85 done_skip_low+:62 f+:73 initialize+:15 int_rqst_low+:16 internal_io_low+:21 io_pause_low+:26 jj+:98 l+:77 md03_low+:47 md04_low+:38 md05_low+:37 md06_low+:35 md07_low+:34 md08_low+:12 md09_low+:11 md10_low+:10 md11_low+:9 n_t_1x+:92 n_t_5x+:91 n_t_6x+:89 n_t_7x+:94 n_t_8x+:95 n_t_9x+:96 nn+:100 parity+:60 rx_12_bit_low+:86 rx_data_low+:83 rx_done_low+:81 rx_error_low+:74 rx_init_low+:78 rx_out_low+:1 rx_run_low+:72 rx_shift_low+:99 rx_tr_req_low+:79 skip_low+:14 tp3+:23 tp4+:22 tr_skip_low+:63 tt+:2 v+:80 z+:82 
 #$ NODES 28 gdollar_0+ gdollar_1+ gdollar_2+ gdollar_3+ maint+ msb8+ msb12+ n8_12+ n_t_2x+ n_t_31x+ n_t_33x+ n_t_45x+ n_t_59x+ n_t_60x+ n_t_61x+ n_t_62x+ n_t_63x+ n_t_64x+ n_t_65x+ n_t_66x+ n_t_67x+ n_t_68x+ n_t_69x+ n_t_70x+ n_t_72x+ n_t_76x+ parity_low+ run+ 
 .i 73
 .o 157

@@ -1,0 +1,26 @@
+Thinking about Eagle routing grids vs various component spacing.
+
+For through-hole components, placing components on a .1" or .05" 
+grid and then routing on a .025" or .0125" grid is adequate.
+
+For PLD devices, the PQFP package has lead spacing of .65 mm
+(25.6 mils) and an SMD width of approximately 15 mils.  The TQFP
+pacakge has a lead spacing of .5 mm (19.7 mils), and an SMD width
+of approximately 13.8 mils.
+
+The clearance specification for dis-similar signals cannot be more 
+than the lead spacing less the lead width, or the package leads 
+themselves will trigger a design rule violation, even with perfect 
+trace placement.  25.6-15 = 10.6 mils, and 19.7-13.8 = 5.9 mils.
+
+Since traces always appear centered on the routing grid, half 
+their width plus the inter-signal clearance plus the distance to 
+the center of the lead must clear the edge of the next lead, which 
+is to say, the lead spacing less one half the lead width.
+
+The distance between the routing grid and the center of a lead 
+is bounded by half the smaller.  There are cases where the skew 
+is always smaller.  (For instance, if the routing grid divides 
+the lead spacing, the skew will always be zero.)  I haven't been 
+able to fully characterize a lower limit, though.
+

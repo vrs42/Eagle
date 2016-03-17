@@ -9,8 +9,8 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="14" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="2" name="Route2" color="4" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="1" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -9515,7 +9515,7 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <part name="Q2" library="transistor-npn" deviceset="2N2219" device="" value="MPS6534"/>
 <part name="Q3" library="transistor-npn" deviceset="2N2219" device="" value="MPS6534"/>
 <part name="Q1" library="transistor-npn" deviceset="2N2219" device="" value="MPS6534"/>
-<part name="E1" library="atmel-cpld" deviceset="ATF150X100" device="PQFP"/>
+<part name="E1" library="atmel-cpld" deviceset="ATF150X100" device="TQFP" value="ATF150X100TQFP"/>
 <part name="J1" library="dec-con" deviceset="DEC40PIN" device="H"/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
 <part name="V21" library="supply2" deviceset="VCC" device=""/>
@@ -9573,7 +9573,6 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <part name="ISP" library="con-harting-ml" deviceset="ML10" device=""/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="V9" library="supply2" deviceset="VCC" device=""/>
-<part name="V10" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9605,14 +9604,14 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <instance part="D5" gate="G$1" x="213.36" y="177.8"/>
 <instance part="R27" gate="G$1" x="223.52" y="203.2" rot="R90"/>
 <instance part="V14" gate="G$1" x="223.52" y="210.82"/>
-<instance part="D2" gate="G$1" x="251.46" y="218.44" rot="R270"/>
-<instance part="D3" gate="G$1" x="251.46" y="205.74" rot="R270"/>
-<instance part="D4" gate="G$1" x="251.46" y="193.04" rot="R270"/>
-<instance part="D6" gate="G$1" x="251.46" y="180.34" rot="R270"/>
-<instance part="V15" gate="G$1" x="251.46" y="157.48"/>
-<instance part="R29" gate="G$1" x="251.46" y="165.1" rot="MR270"/>
-<instance part="C42" gate="G$1" x="256.54" y="205.74"/>
-<instance part="C41" gate="G$1" x="241.3" y="205.74"/>
+<instance part="D2" gate="G$1" x="185.42" y="175.26" rot="R270"/>
+<instance part="D3" gate="G$1" x="185.42" y="162.56" rot="R270"/>
+<instance part="D4" gate="G$1" x="185.42" y="149.86" rot="R270"/>
+<instance part="D6" gate="G$1" x="185.42" y="137.16" rot="R270"/>
+<instance part="V15" gate="G$1" x="200.66" y="124.46"/>
+<instance part="R29" gate="G$1" x="195.58" y="129.54"/>
+<instance part="C42" gate="G$1" x="193.04" y="162.56"/>
+<instance part="C41" gate="G$1" x="203.2" y="162.56"/>
 <instance part="R30" gate="G$1" x="187.96" y="83.82" rot="R90"/>
 <instance part="R31" gate="G$1" x="195.58" y="83.82" rot="R90"/>
 <instance part="R32" gate="G$1" x="203.2" y="83.82" rot="R90"/>
@@ -9782,7 +9781,6 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <instance part="ISP" gate="G$1" x="302.26" y="185.42" rot="R180"/>
 <instance part="V6" gate="GND" x="312.42" y="175.26"/>
 <instance part="V9" gate="G$1" x="314.96" y="195.58"/>
-<instance part="V10" gate="GND" x="246.38" y="220.98"/>
 </instances>
 <busses>
 </busses>
@@ -10224,16 +10222,16 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<wire x1="241.3" y1="200.66" x2="241.3" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="170.18" x2="251.46" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="172.72" x2="251.46" y2="177.8" width="0.1524" layer="91"/>
-<label x="261.62" y="172.72" size="1.778" layer="95"/>
+<wire x1="203.2" y1="157.48" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="129.54" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="129.54" x2="185.42" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="134.62" x2="190.5" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="134.62" x2="190.5" y2="134.62" width="0.1524" layer="91"/>
+<junction x="190.5" y="129.54"/>
+<label x="190.5" y="134.62" size="1.778" layer="95"/>
 <pinref part="C41" gate="G$1" pin="2"/>
 <pinref part="R29" gate="G$1" pin="1"/>
 <pinref part="D6" gate="G$1" pin="C"/>
-<wire x1="251.46" y1="172.72" x2="241.3" y2="172.72" width="0.1524" layer="91"/>
-<junction x="251.46" y="172.72"/>
-<wire x1="251.46" y1="172.72" x2="264.16" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$52" class="0">
@@ -10253,6 +10251,7 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <pinref part="V13" gate="G$1" pin="-15V"/>
 </segment>
 <segment>
+<wire x1="200.66" y1="129.54" x2="200.66" y2="127" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="2"/>
 <pinref part="V15" gate="G$1" pin="-15V"/>
 </segment>
@@ -10309,14 +10308,14 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<wire x1="256.54" y1="200.66" x2="256.54" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="203.2" x2="251.46" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="198.12" x2="251.46" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="198.12" x2="251.46" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="198.12" x2="256.54" y2="198.12" width="0.1524" layer="91"/>
-<junction x="251.46" y="198.12"/>
-<junction x="256.54" y="198.12"/>
-<label x="259.08" y="198.12" size="1.778" layer="95"/>
+<wire x1="193.04" y1="157.48" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="160.02" x2="185.42" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="154.94" x2="185.42" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="154.94" x2="185.42" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="154.94" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
+<junction x="185.42" y="154.94"/>
+<junction x="193.04" y="154.94"/>
+<label x="195.58" y="154.94" size="1.778" layer="95"/>
 <pinref part="C42" gate="G$1" pin="2"/>
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="D4" gate="G$1" pin="A"/>
@@ -10336,40 +10335,37 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 </net>
 <net name="N$54" class="0">
 <segment>
-<wire x1="251.46" y1="215.9" x2="251.46" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="172.72" x2="185.42" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$56" class="0">
 <segment>
-<wire x1="251.46" y1="182.88" x2="251.46" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="139.7" x2="185.42" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="D6" gate="G$1" pin="A"/>
 <pinref part="D4" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="C47" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="177.8" x2="195.58" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="167.64" x2="193.04" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="167.64" x2="190.5" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="175.26" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="177.8" x2="195.58" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="177.8" x2="190.5" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="177.8" x2="185.42" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="167.64" x2="190.5" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="165.1" x2="193.04" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="165.1" x2="203.2" y2="167.64" width="0.1524" layer="91"/>
+<junction x="195.58" y="177.8"/>
+<junction x="190.5" y="177.8"/>
+<junction x="193.04" y="167.64"/>
+<pinref part="C47" gate="G$1" pin="2"/>
 <pinref part="V1" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<wire x1="256.54" y1="208.28" x2="256.54" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="220.98" x2="256.54" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="223.52" x2="251.46" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="223.52" x2="251.46" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="210.82" x2="256.54" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="C42" gate="G$1" pin="1"/>
 <pinref part="C41" gate="G$1" pin="1"/>
-<pinref part="V10" gate="GND" pin="GND"/>
-<wire x1="251.46" y1="223.52" x2="246.38" y2="223.52" width="0.1524" layer="91"/>
-<junction x="251.46" y="223.52"/>
-<wire x1="246.38" y1="223.52" x2="241.3" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="223.52" x2="241.3" y2="208.28" width="0.1524" layer="91"/>
-<junction x="246.38" y="223.52"/>
 </segment>
 <segment>
 <wire x1="238.76" y1="137.16" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
@@ -11246,7 +11242,7 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <junction x="157.48" y="78.74"/>
 <pinref part="E1" gate="IO" pin="IO38"/>
 <pinref part="W4W3" gate="1" pin="2"/>
-<label x="134.62" y="91.44" size="1.778" layer="95"/>
+<label x="139.7" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CC_DTP" class="0">

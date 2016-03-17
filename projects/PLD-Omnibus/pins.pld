@@ -1,0 +1,116 @@
+$macro mkpins base;
+$REPEAT i = [base..base]
+$DEFINE io1  {i}
+$DEFINE pd1  {i}
+$DEFINE io2  {i+1}
+/* vccio */
+$DEFINE tdi  {i+3}
+$DEFINE io3  {i+4}
+$DEFINE io4  {i+5}
+$DEFINE io5  {i+6}
+$DEFINE io6  {i+7}
+$DEFINE io7  {i+8}
+$DEFINE io8  {i+9}
+/* gnd */
+$DEFINE io9  {i+11}
+$DEFINE io10 {i+12}
+$DEFINE io11 {i+13}
+$DEFINE tms  {i+14}
+$DEFINE io12 {i+15}
+$DEFINE io13 {i+16}
+/* vccio */
+$DEFINE io14 {i+18}
+$DEFINE io15 {i+19}
+$DEFINE io16 {i+20}
+$DEFINE io17 {i+21}
+$DEFINE io18 {i+22}
+$DEFINE io19 {i+23}
+$DEFINE io20 {i+24}
+/* gnd */
+$DEFINE io21 {i+26}
+$DEFINE io22 {i+27}
+$DEFINE io23 {i+28}
+$DEFINE io24 {i+29}
+$DEFINE io25 {i+30}
+$DEFINE io26 {i+31}
+$DEFINE io27 {i+32}
+/* vccio */
+$DEFINE io28 {i+34}
+$DEFINE io29 {i+35}
+$DEFINE io30 {i+36}
+/* gnd */
+/* vccint */
+$DEFINE io31 {i+39}
+$DEFINE io32 {i+40}
+$DEFINE pd2  {i+40}
+$DEFINE io33 {i+41}
+/* gnd */
+$DEFINE io34 {i+43}
+$DEFINE io35 {i+44}
+$DEFINE io36 {i+45}
+$DEFINE io37 {i+46}
+$DEFINE io38 {i+47}
+$DEFINE io39 {i+48}
+$DEFINE io40 {i+49}
+/* vccio */
+$DEFINE io41 {i+51}
+$DEFINE io42 {i+52}
+$DEFINE io43 {i+53}
+$DEFINE io44 {i+54}
+$DEFINE io45 {i+55}
+$DEFINE io46 {i+56}
+$DEFINE io47 {i+57}
+/* gnd */
+$DEFINE io48 {i+59}
+$DEFINE io49 {i+60}
+$DEFINE tck  {i+61}
+$DEFINE io50 {i+62}
+$DEFINE io51 {i+63}
+$DEFINE io52 {i+64}
+/* vccio */
+$DEFINE io53 {i+66}
+$DEFINE io54 {i+67}
+$DEFINE io55 {i+68}
+$DEFINE io56 {i+69}
+$DEFINE io57 {i+70}
+$DEFINE io58 {i+71}
+$DEFINE tdo  {i+72}
+/* gnd */
+$DEFINE io59 {i+74}
+$DEFINE io60 {i+75}
+$DEFINE io61 {i+76}
+$DEFINE io62 {i+77}
+$DEFINE io63 {i+78}
+$DEFINE io64 {i+79}
+$DEFINE io65 {i+80}
+/* vccio */
+$DEFINE io66 {i+82}
+$DEFINE io67 {i+83}
+$DEFINE io68 {i+84}
+$DEFINE gclk3 {i+84}
+/* gnd */
+$DEFINE gclk1 {i+86}
+$DEFINE oe1   {i+87}
+$DEFINE gclr  {i+88}
+$DEFINE gclk2 {i+89}
+$DEFINE oe2  {i+89}
+/* vccint */
+$DEFINE io69 {i+91}
+$DEFINE io70 {i+92}
+$DEFINE io71 {i+93}
+/* gnd */
+$DEFINE io72 {i+95}
+$DEFINE io73 {i+96}
+$DEFINE io74 {i+97}
+$DEFINE io75 {(i+97)%100+1}
+$DEFINE io76 {(i+98)%100+1}
+$REPEND
+$mend
+
+$IFDEF tqfp
+/* tqfp pin assignments */
+mkpins(1);
+$ELSE
+/* pqfp pin assignments */
+mkpins(3);
+$ENDIF

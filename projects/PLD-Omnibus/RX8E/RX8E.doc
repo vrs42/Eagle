@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          f1508ispqfp100  Library DLIB-h-40-2
-Created         Wed Sep 16 12:22:31 2015
+Created         Thu Mar 10 23:02:14 2016
 Name            rx8e 
 Partno          cpld 
 Revision        01 
@@ -2065,56 +2065,56 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     binit_low                   0        I        1       -       -     
     btp3                        0        I        1       -       -     
     btp4                        0        I        1       -       -     
-    c0_low                      23       V        12      0       4     
-    c0_low              oe      23       X        1       0       1     
-    c1_low                      22       V        2       0       4     
-    c1_low              oe      22       X        1       0       1     
+    c0_low                      25       V        12      0       4     
+    c0_low              oe      25       X        1       0       1     
+    c1_low                      24       V        2       0       4     
+    c1_low              oe      24       X        1       0       1     
     clk_buf_low                 0        I        24      -       -     
     clk_parity_low              0        I        24      -       -     
     data0                       0        I        1       -       -     
-    data0_low                   42       V        13      0       4     
-    data0_low           oe      42       X        1       0       1     
+    data0_low                   46       V        13      0       4     
+    data0_low           oe      46       X        1       0       1     
     data1                       0        I        1       -       -     
-    data10_low                  2        V        12      0       4     
-    data10_low          oe      2        X        1       0       1     
-    data11_low                  1        V        12      0       4     
-    data11_low          oe      1        X        1       0       1     
-    data1_low                   39       V        13      0       4     
-    data1_low           oe      39       X        1       0       1     
+    data10_low                  7        V        12      0       4     
+    data10_low          oe      7        X        1       0       1     
+    data11_low                  4        V        12      0       4     
+    data11_low          oe      4        X        1       0       1     
+    data1_low                   44       V        13      0       4     
+    data1_low           oe      44       X        1       0       1     
     data2                       0        I        1       -       -     
-    data2_low                   38       V        13      0       4     
-    data2_low           oe      38       X        1       0       1     
+    data2_low                   42       V        13      0       4     
+    data2_low           oe      42       X        1       0       1     
     data3                       0        I        1       -       -     
-    data3_low                   37       V        13      0       4     
-    data3_low           oe      37       X        1       0       1     
+    data3_low                   39       V        13      0       4     
+    data3_low           oe      39       X        1       0       1     
     data4                       0        I        1       -       -     
-    data4_low                   31       V        12      0       4     
-    data4_low           oe      31       X        1       0       1     
+    data4_low                   33       V        12      0       4     
+    data4_low           oe      33       X        1       0       1     
     data5                       0        I        1       -       -     
-    data5_low                   30       V        12      0       4     
-    data5_low           oe      30       X        1       0       1     
+    data5_low                   32       V        12      0       4     
+    data5_low           oe      32       X        1       0       1     
     data6                       0        I        1       -       -     
     data7                       0        I        1       -       -     
     data8                       0        I        1       -       -     
     data10                      0        I        1       -       -     
     data11                      0        I        1       -       -     
-    data6_low                   29       V        12      0       4     
-    data6_low           oe      29       X        1       0       1     
-    data7_low                   26       V        12      0       4     
-    data7_low           oe      26       X        1       0       1     
-    data8_low                   4        V        12      0       4     
-    data8_low           oe      4        X        1       0       1     
+    data6_low                   31       V        12      0       4     
+    data6_low           oe      31       X        1       0       1     
+    data7_low                   29       V        12      0       4     
+    data7_low           oe      29       X        1       0       1     
+    data8_low                   8        V        12      0       4     
+    data8_low           oe      8        X        1       0       1     
     data9                       0        I        1       -       -     
     data9_low                   3        V        12      0       4     
     data9_low           oe      3        X        1       0       1     
-    dd                          82       V        1       0       4     
+    dd                          85       V        1       0       4     
     done                        0        I        1       -       -     
     done_low                    0        I        2       -       -     
-    done_skip_low               59       V        1       0       4     
+    done_skip_low               62       V        1       0       4     
     enb_buf_ld_low              0        I        2       -       -     
     err_skip_low                0        I        11      -       -     
     error                       0        I        1       -       -     
-    f                           71       V        1       0       4     
+    f                           73       V        1       0       4     
     gdollar_0                   0        N        -       -       -     
     gdollar_0           j       0        M        1       0       4     
     gdollar_0           k       0        M        3       0       4     
@@ -2138,15 +2138,15 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     init                        0        I        2       -       -     
     init_iot_low                0        I        10      -       -     
     init_low                    0        I        1       -       -     
-    initialize                  12       V        -       -       -     
-    int_rqst_low                14       V        2       0       4     
-    int_rqst_low        oe      14       X        1       0       1     
-    internal_io_low             18       V        7       0       4     
-    internal_io_low     oe      18       X        1       0       1     
+    initialize                  15       V        -       -       -     
+    int_rqst_low                16       V        2       0       4     
+    int_rqst_low        oe      16       X        1       0       1     
+    internal_io_low             21       V        7       0       4     
+    internal_io_low     oe      21       X        1       0       1     
     intr_iot_low                0        I        10      -       -     
-    io_pause_low                24       V        -       -       -     
-    jj                          95       V        1       0       4     
-    l                           73       V        1       0       4     
+    io_pause_low                26       V        -       -       -     
+    jj                          98       V        1       0       4     
+    l                           77       V        1       0       4     
     lcd_iot                     0        I        1       -       -     
     lcd_iot_low                 0        I        10      -       -     
     maint                       0        N        -       -       -     
@@ -2155,15 +2155,15 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     maint               ar      0        M        2       0       1     
     maint               ck      0        M        1       0       1     
     maint_low                   0        I        1       -       -     
-    md03_low                    44       V        -       -       -     
-    md04_low                    35       V        -       -       -     
-    md05_low                    34       V        -       -       -     
-    md06_low                    33       V        -       -       -     
-    md07_low                    32       V        -       -       -     
-    md08_low                    10       V        -       -       -     
-    md09_low                    9        V        -       -       -     
-    md10_low                    8        V        -       -       -     
-    md11_low                    7        V        -       -       -     
+    md03_low                    47       V        -       -       -     
+    md04_low                    38       V        -       -       -     
+    md05_low                    37       V        -       -       -     
+    md06_low                    35       V        -       -       -     
+    md07_low                    34       V        -       -       -     
+    md08_low                    12       V        -       -       -     
+    md09_low                    11       V        -       -       -     
+    md10_low                    10       V        -       -       -     
+    md11_low                    9        V        -       -       -     
     msb8                        0        N        -       -       -     
     msb8                d       0        M        26      0       4     
     msb8                ar      0        M        2       0       1     
@@ -2299,17 +2299,17 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_77x                     0        I        3       -       -     
     n_t_78x                     0        I        13      -       -     
     n_t_79x                     0        I        10      -       -     
-    n_t_7x                      85       V        2       0       4     
+    n_t_7x                      94       V        2       0       4     
     n_t_80x                     0        I        13      -       -     
     n_t_81x                     0        I        2       -       -     
     n_t_82x                     0        I        3       -       -     
     n_t_83x                     0        I        2       -       -     
     n_t_84x                     0        I        6       -       -     
     n_t_85x                     0        I        2       -       -     
-    n_t_8x                      86       V        2       0       4     
-    n_t_9x                      94       V        2       0       4     
-    nn                          98       V        1       0       4     
-    parity                      58       V        4       0       4     
+    n_t_8x                      95       V        2       0       4     
+    n_t_9x                      96       V        2       0       4     
+    nn                          100      V        1       0       4     
+    parity                      60       V        4       0       4     
     parity_low                  0        N        -       -       -     
     parity_low          k       0        M        3       0       4     
     parity_low          j       0        M        3       0       4     
@@ -2323,37 +2323,37 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     run                 ar      0        M        4       0       1     
     run                 ck      0        M        2       0       1     
     rx8_sel_low                 0        I        7       -       -     
-    rx_12_bit_low               83       V        1       0       4     
-    rx_12_bit_low       oe      83       X        1       0       1     
+    rx_12_bit_low               86       V        1       0       4     
+    rx_12_bit_low       oe      86       X        1       0       1     
     rx_data                     0        I        1       -       -     
-    rx_data_low                 81       V        4       0       4     
-    rx_data_low         oe      81       X        1       0       1     
-    rx_done_low                 79       V        -       -       -     
-    rx_error_low                72       V        -       -       -     
-    rx_init_low                 74       V        1       0       4     
-    rx_init_low         oe      74       X        1       0       1     
-    rx_out_low                  99       V        -       -       -     
-    rx_run_low                  70       V        1       0       4     
-    rx_run_low          oe      70       X        1       0       1     
-    rx_shift_low                96       V        -       -       -     
-    rx_tr_req_low               77       V        -       -       -     
+    rx_data_low                 83       V        4       0       4     
+    rx_data_low         oe      83       X        1       0       1     
+    rx_done_low                 81       V        -       -       -     
+    rx_error_low                74       V        -       -       -     
+    rx_init_low                 78       V        1       0       4     
+    rx_init_low         oe      78       X        1       0       1     
+    rx_out_low                  1        V        -       -       -     
+    rx_run_low                  72       V        1       0       4     
+    rx_run_low          oe      72       X        1       0       1     
+    rx_shift_low                99       V        -       -       -     
+    rx_tr_req_low               79       V        -       -       -     
     sdn_iot_low                 0        I        10      -       -     
     ser_iot_low                 0        I        10      -       -     
     shift                       0        I        1       -       -     
-    skip_low                    11       V        11      0       4     
-    skip_low            oe      11       X        1       0       1     
+    skip_low                    14       V        11      0       4     
+    skip_low            oe      14       X        1       0       1     
     str_iot_low                 0        I        10      -       -     
-    tp3                         21       V        -       -       -     
+    tp3                         23       V        -       -       -     
     tp3_low                     0        I        1       -       -     
-    tp4                         19       V        -       -       -     
-    tr_skip_low                 60       V        1       0       4     
-    tt                          100      V        1       0       4     
-    v                           78       V        1       0       4     
+    tp4                         22       V        -       -       -     
+    tr_skip_low                 63       V        1       0       4     
+    tt                          2        V        1       0       4     
+    v                           80       V        1       0       4     
     wrt                         0        I        2       -       -     
     xfer_iot                    0        I        1       -       -     
     xfer_iot_low                0        I        10      -       -     
     xfer_req                    0        I        1       -       -     
-    z                           80       V        1       0       4     
+    z                           82       V        1       0       4     
 
 
 LEGEND    D : default variable         F : field      G : group

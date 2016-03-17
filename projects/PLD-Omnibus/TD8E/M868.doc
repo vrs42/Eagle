@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          f1508ispqfp100  Library DLIB-h-40-2
-Created         Sun Sep 06 22:18:53 2015
+Created         Tue Mar 15 18:49:30 2016
 Name            m868 
 Partno          cpld 
 Revision        01 
@@ -19,61 +19,70 @@ Location        E1
                             Expanded Product Terms
 ===============================================================================
 
-c0 =>
-    md10 & !md11
-  # n_t_62x
-  # n_t_61x
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+bb =>
+    tpg0
 
-c0.oe  =>
-    !c0
+bb.oe  =>
+    !bb
 
-c1 =>
-    n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+c0_low =>
+    md10_low & !md11_low
+  # w4w3
+  # w2w1
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-c1.oe  =>
-    !c1
+c0_low.oe  =>
+    !c0_low
+
+c1_low =>
+    w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+
+c1_low.oe  =>
+    !c1_low
 
 !cc_67x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
+      !w4w3
 
 cc_67x_low =>
-    md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
+    md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
 
 cc_btp3 =>
     tp3
 
 cc_clk_te_low =>
     !tp3
-  # md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
-  # md09
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & !n_t_61x & !n_t_62x
+  # md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
+  # md09_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md11_low & 
+      !w2w1 & !w4w3
 
 cc_dtp0 =>
     cc_dtp & n_t_101x & sync
@@ -98,14 +107,14 @@ cc_dtp1_low =>
   # sync & !tpg0
 
 !cc_f_r.d  =>
-    n_t_62x
-  # n_t_61x
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
-  # data01
+    w4w3
+  # w2w1
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+  # data01_low
 
 cc_f_r.ap  =>
     0 
@@ -114,11 +123,8 @@ cc_f_r.ar  =>
     initialize
 
 cc_f_r.ck  =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & md11 & !n_t_61x & 
-      !n_t_62x & tp3
-
-cc_f_r_low =>
-    !cc_f_r
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & md11_low & tp3 & !w2w1 & !w4w3
 
 cc_init =>
     initialize
@@ -126,99 +132,102 @@ cc_init =>
 cc_init_low =>
     !initialize
 
-cc_pwr_ok =>
+cc_jj =>
+    !cc_s_g
+
+cc_pwr_ok_low =>
     power_ok_low
 
 !cc_r_w.d  =>
-    n_t_62x
-  # n_t_61x
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
-  # data03
+    w4w3
+  # w2w1
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+  # data03_low
 
 cc_r_w.ap  =>
     0 
 
 cc_r_w.ar  =>
-    df_time_er & !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & !n_t_61x & 
-      !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & n_t_53x & !n_t_61x & 
-      !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & !n_t_61x & !n_t_62x & 
-      run
-  # !df_sel_er_low & !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & 
-      !n_t_61x & !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & !n_t_61x & !n_t_62x & 
-      !power_ok_low
-  # initialize & !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & !n_t_61x & 
-      !n_t_62x
-  # df_time_er & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & n_t_53x & !n_t_61x & 
-      !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      run
-  # !df_sel_er_low & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & 
-      !n_t_61x & !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      !power_ok_low
-  # initialize & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # df_time_er & md09
-  # md09 & n_t_53x
-  # md09 & run
-  # !df_sel_er_low & md09
-  # md09 & !power_ok_low
-  # initialize & md09
-  # df_time_er & md04
-  # md04 & n_t_53x
-  # md04 & run
-  # !df_sel_er_low & md04
-  # md04 & !power_ok_low
-  # initialize & md04
-  # df_time_er & md05
-  # md05 & n_t_53x
-  # md05 & run
-  # !df_sel_er_low & md05
-  # md05 & !power_ok_low
-  # initialize & md05
-  # df_time_er & md06
-  # md06 & n_t_53x
-  # md06 & run
-  # !df_sel_er_low & md06
-  # md06 & !power_ok_low
-  # initialize & md06
-  # df_time_er & md03
-  # md03 & n_t_53x
-  # md03 & run
-  # !df_sel_er_low & md03
-  # md03 & !power_ok_low
-  # initialize & md03
-  # df_time_er & io_pause
-  # io_pause & n_t_53x
-  # io_pause & run
-  # !df_sel_er_low & io_pause
-  # io_pause & !power_ok_low
-  # initialize & io_pause
-  # df_time_er & n_t_61x
-  # n_t_53x & n_t_61x
-  # n_t_61x & run
-  # !df_sel_er_low & n_t_61x
-  # n_t_61x & !power_ok_low
-  # initialize & n_t_61x
-  # df_time_er & n_t_62x
-  # n_t_53x & n_t_62x
-  # n_t_62x & run
-  # !df_sel_er_low & n_t_62x
-  # n_t_62x & !power_ok_low
-  # initialize & n_t_62x
+    df_time_er & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md11_low & 
+      t_cpld & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md11_low & 
+      run & !w2w1 & !w4w3
+  # !df_sel_er_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md11_low & 
+      !power_ok_low & !w2w1 & !w4w3
+  # initialize & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md11_low & !w2w1 & !w4w3
+  # df_time_er & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      t_cpld & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      run & !w2w1 & !w4w3
+  # !df_sel_er_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !md10_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !power_ok_low & !w2w1 & !w4w3
+  # initialize & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # df_time_er & md09_low
+  # md09_low & t_cpld
+  # md09_low & run
+  # !df_sel_er_low & md09_low
+  # md09_low & !power_ok_low
+  # initialize & md09_low
+  # df_time_er & md04_low
+  # md04_low & t_cpld
+  # md04_low & run
+  # !df_sel_er_low & md04_low
+  # md04_low & !power_ok_low
+  # initialize & md04_low
+  # df_time_er & md05_low
+  # md05_low & t_cpld
+  # md05_low & run
+  # !df_sel_er_low & md05_low
+  # md05_low & !power_ok_low
+  # initialize & md05_low
+  # df_time_er & md06_low
+  # md06_low & t_cpld
+  # md06_low & run
+  # !df_sel_er_low & md06_low
+  # md06_low & !power_ok_low
+  # initialize & md06_low
+  # df_time_er & md03_low
+  # md03_low & t_cpld
+  # md03_low & run
+  # !df_sel_er_low & md03_low
+  # md03_low & !power_ok_low
+  # initialize & md03_low
+  # df_time_er & io_pause_low
+  # io_pause_low & t_cpld
+  # io_pause_low & run
+  # !df_sel_er_low & io_pause_low
+  # io_pause_low & !power_ok_low
+  # initialize & io_pause_low
+  # df_time_er & w2w1
+  # t_cpld & w2w1
+  # run & w2w1
+  # !df_sel_er_low & w2w1
+  # !power_ok_low & w2w1
+  # initialize & w2w1
+  # df_time_er & w4w3
+  # t_cpld & w4w3
+  # run & w4w3
+  # !df_sel_er_low & w4w3
+  # !power_ok_low & w4w3
+  # initialize & w4w3
 
 cc_r_w.ck  =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & md11 & !n_t_61x & 
-      !n_t_62x & tp3
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & md11_low & tp3 & !w2w1 & !w4w3
 
 cc_r_w_low =>
     !cc_r_w
@@ -230,14 +239,14 @@ cc_run =>
     !run
 
 !cc_s_g.d  =>
-    n_t_62x
-  # n_t_61x
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
-  # data02
+    w4w3
+  # w2w1
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+  # data02_low
 
 cc_s_g.ap  =>
     0 
@@ -247,141 +256,147 @@ cc_s_g.ar  =>
   # run
 
 cc_s_g.ck  =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & md11 & !n_t_61x & 
-      !n_t_62x & tp3
-
-cc_s_g_low =>
-    !cc_s_g
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & md11_low & tp3 & !w2w1 & !w4w3
 
 !cc_sdlc_low =>
-    md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
-  # md09
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & !n_t_61x & !n_t_62x
+    md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
+  # md09_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md11_low & 
+      !w2w1 & !w4w3
 
 !cc_sdld_low =>
-    md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
-  # md09
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x
-  # md11
+    md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
+  # md09_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !w2w1 & !w4w3
+  # md11_low
 
 !cc_sdrc_low =>
-    md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
-  # md09
-  # md10
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & !n_t_61x & !n_t_62x
+    md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
+  # md09_low
+  # md10_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md11_low & 
+      !w2w1 & !w4w3
 
 !cc_sdrd_low =>
-    md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
-  # md09
-  # md10
-  # md11
+    md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
+  # md09_low
+  # md10_low
+  # md11_low
 
 !cc_sdsq_low =>
-    md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & !n_t_61x & !n_t_62x
-  # md10
-  # md11
+    md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !w2w1 & !w4w3
+  # md10_low
+  # md11_low
 
 !cc_sdss_low =>
-    md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & !n_t_61x & !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x
-  # md11
+    md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !w2w1 & !w4w3
+  # md11_low
 
 !cc_sdst_low =>
-    md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & !n_t_61x & !n_t_62x
-  # md10
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & !n_t_61x & !n_t_62x
+    md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !w2w1 & !w4w3
+  # md10_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md11_low & 
+      !w2w1 & !w4w3
 
 !cc_setdly =>
     cc_setdly_low
 
 !cc_setdly_low.d  =>
-    cc_s_g & !data02 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & 
-      !n_t_62x
-  # cc_f_r & !data01 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & 
-      !n_t_62x
-  # cc_unit & !data00 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & 
-      !n_t_62x
-  # !cc_s_g & data02
-  # !cc_f_r & data01
-  # !cc_unit & data00
-  # !cc_unit & n_t_62x
-  # !cc_s_g & n_t_62x
-  # !cc_f_r & n_t_62x
-  # !cc_unit & n_t_61x
-  # !cc_s_g & n_t_61x
-  # !cc_f_r & n_t_61x
-  # !cc_unit & md06
-  # !cc_s_g & md06
-  # !cc_f_r & md06
-  # !cc_unit & md05
-  # !cc_s_g & md05
-  # !cc_f_r & md05
-  # !cc_unit & md04
-  # !cc_s_g & md04
-  # !cc_f_r & md04
-  # !cc_unit & md03
-  # !cc_s_g & md03
-  # !cc_f_r & md03
-  # !cc_unit & io_pause
-  # !cc_s_g & io_pause
-  # !cc_f_r & io_pause
+    cc_s_g & !data02_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
+  # cc_f_r & !data01_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
+  # cc_unit & !data00_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
+  # !cc_s_g & data02_low
+  # !cc_f_r & data01_low
+  # !cc_unit & data00_low
+  # !cc_unit & w4w3
+  # !cc_s_g & w4w3
+  # !cc_f_r & w4w3
+  # !cc_unit & w2w1
+  # !cc_s_g & w2w1
+  # !cc_f_r & w2w1
+  # !cc_unit & md06_low
+  # !cc_s_g & md06_low
+  # !cc_f_r & md06_low
+  # !cc_unit & md05_low
+  # !cc_s_g & md05_low
+  # !cc_f_r & md05_low
+  # !cc_unit & md04_low
+  # !cc_s_g & md04_low
+  # !cc_f_r & md04_low
+  # !cc_unit & md03_low
+  # !cc_s_g & md03_low
+  # !cc_f_r & md03_low
+  # !cc_unit & io_pause_low
+  # !cc_s_g & io_pause_low
+  # !cc_f_r & io_pause_low
 
 cc_setdly_low.ap  =>
     initialize
   # tp4
 
 cc_setdly_low.ar  =>
-    !n_t_92x
+    !clrdly_low
 
 cc_setdly_low.ck  =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & md11 & !n_t_61x & 
-      !n_t_62x & tp3
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & md11_low & tp3 & !w2w1 & !w4w3
 
 cc_t_m_en_low =>
     !cc_t_m_en
@@ -393,10 +408,10 @@ cc_t_m_en_low =>
     tpg0
 
 cc_tpg1.ap  =>
-    !n_t_17x
+    !in1
 
 cc_tpg1.ar  =>
-    !n_t_17x
+    !in1
 
 cc_tpg1.ck  =>
     cc_tpg_clk
@@ -404,21 +419,24 @@ cc_tpg1.ck  =>
 cc_tpg1_low =>
     !cc_tpg1
 
+cc_tt =>
+    !cc_f_r
+
 !cc_tt_en =>
-    !cc_t_m_en & n_t_80x & !rtt_low & !sync
-  # cc_t_m_en & cc_tpg1 & n_t_80x & !sync
-  # !cc_t_m_en & n_t_80x & rtt_low & sync
-  # cc_t_m_en & !cc_tpg1 & n_t_80x & sync
+    !cc_t_m_en & in2 & !j & !sync
+  # cc_t_m_en & cc_tpg1 & in2 & !sync
+  # !cc_t_m_en & in2 & j & sync
+  # cc_t_m_en & !cc_tpg1 & in2 & sync
 
 !cc_unit.d  =>
-    n_t_62x
-  # n_t_61x
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
-  # data00
+    w4w3
+  # w2w1
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
+  # data00_low
 
 cc_unit.ap  =>
     0 
@@ -427,8 +445,8 @@ cc_unit.ar  =>
     initialize
 
 cc_unit.ck  =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & md11 & !n_t_61x & 
-      !n_t_62x & tp3
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & md11_low & tp3 & !w2w1 & !w4w3
 
 cc_unit_low =>
     !cc_unit
@@ -443,211 +461,212 @@ cc_uts.ar  =>
     cc_setdly
 
 cc_uts.ck  =>
-    n_t_96x
+    in3
 
 cc_uts_low =>
     !cc_uts
 
 cc_wrt_ok =>
-    df_sel_er_low & !df_time_er & !initialize & !n_t_53x & power_ok_low & !run
+    df_sel_er_low & !df_time_er & !initialize & power_ok_low & !run & !t_cpld
 
-con_all_halt =>
-    !run
+data00_low =>
+    !md11_low & !sr00
+  # !cc_unit & md11_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-con_all_halt.oe  =>
-    !con_all_halt
+data00_low.oe  =>
+    !data00_low
 
-data00 =>
-    !md11 & !sr00
-  # !cc_unit & md11
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data01_low =>
+    !md11_low & !sr01
+  # !cc_f_r & md11_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data00.oe  =>
-    !data00
+data01_low.oe  =>
+    !data01_low
 
-data01 =>
-    !md11 & !sr01
-  # !cc_f_r & md11
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data02_low =>
+    !md11_low & !sr02
+  # !cc_s_g & md11_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data01.oe  =>
-    !data01
+data02_low.oe  =>
+    !data02_low
 
-data02 =>
-    !md11 & !sr02
-  # !cc_s_g & md11
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data03_low =>
+    !md11_low & !sr03
+  # !cc_r_w & md11_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data02.oe  =>
-    !data02
+data03_low.oe  =>
+    !data03_low
 
-data03 =>
-    !md11 & !sr03
-  # !cc_r_w & md11
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data04_low =>
+    !md11_low & !sr04
+  # md11_low & !t_cpld
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data03.oe  =>
-    !data03
+data04_low.oe  =>
+    !data04_low
 
-data04 =>
-    !md11 & !sr04
-  # md11 & !n_t_53x
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data05_low =>
+    !md11_low & !sr05
+  # !df_time_er & md11_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data04.oe  =>
-    !data04
+data05_low.oe  =>
+    !data05_low
 
-data05 =>
-    !md11 & !sr05
-  # !df_time_er & md11
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data06_low =>
+    !md11_low & !sr06
+  # md11_low & mtr0_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data05.oe  =>
-    !data05
+data06_low.oe  =>
+    !data06_low
 
-data06 =>
-    !md11 & !sr06
-  # md11 & mtr0_low
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data07_low =>
+    !md11_low & !sr07
+  # md11_low & mtr1_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data06.oe  =>
-    !data06
+data07_low.oe  =>
+    !data07_low
 
-data07 =>
-    !md11 & !sr07
-  # md11 & mtr1_low
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data08_low =>
+    !md11_low & !sr08
+  # md11_low & mtr2_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data07.oe  =>
-    !data07
+data08_low.oe  =>
+    !data08_low
 
-data08 =>
-    !md11 & !sr08
-  # md11 & mtr2_low
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data09_low =>
+    !md11_low & !sr09
+  # md11_low & mtr3_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data08.oe  =>
-    !data08
+data09_low.oe  =>
+    !data09_low
 
-data09 =>
-    !md11 & !sr09
-  # md11 & mtr3_low
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data10_low =>
+    !md11_low & !sr10
+  # md11_low & mtr4_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data09.oe  =>
-    !data09
+data10_low.oe  =>
+    !data10_low
 
-data10 =>
-    !md11 & !sr10
-  # md11 & mtr4_low
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+data11_low =>
+    !md11_low & !sr11
+  # md11_low & mtr5_low
+  # w4w3
+  # w2w1
+  # md10_low
+  # md09_low
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-data10.oe  =>
-    !data10
+data11_low.oe  =>
+    !data11_low
 
-data11 =>
-    !md11 & !sr11
-  # md11 & mtr5_low
-  # n_t_62x
-  # n_t_61x
-  # md10
-  # md09
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+dd =>
+    df_comp_wd & !gdollar_3
+  # !df_comp_wd & gdollar_3
 
-data11.oe  =>
-    !data11
+dd.oe  =>
+    !dd
 
 !df_comp_wd.d  =>
     1 
@@ -664,19 +683,23 @@ df_comp_wd.ck  =>
     0 
 
 !df_db00 =>
-    !data00 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data00_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 !df_db01 =>
-    !data01 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data01_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 !df_db02 =>
-    !data02 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data02_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 !df_db03 =>
-    !data03 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data03_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 df_hld_low =>
-    !n_t_53x
+    !t_cpld
 
 df_sel_er =>
     !df_sel_er_low
@@ -687,28 +710,32 @@ df_sel_er =>
 df_time_er.ap  =>
     cc_dtp & cc_r_w & cc_t_m_en & n_t_36x & !tpg0
   # cc_dtp & cc_r_w & n_t_101x & n_t_36x & sync
-  # cc_dtp & cc_r_w & cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & 
-      !md09 & !md10 & !n_t_61x & !n_t_62x & !tpg0
-  # cc_dtp & cc_r_w & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & 
-      !md10 & n_t_101x & !n_t_61x & !n_t_62x & sync
-  # cc_dtp & cc_r_w & cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & 
-      !md09 & md10 & !md11 & !n_t_61x & !n_t_62x & !tpg0
-  # cc_dtp & cc_r_w & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & 
-      md10 & !md11 & n_t_101x & !n_t_61x & !n_t_62x & sync
+  # cc_dtp & cc_r_w & cc_t_m_en & !io_pause_low & !md03_low & !md04_low & 
+      !md05_low & !md06_low & !md09_low & !md10_low & !tpg0 & !w2w1 & !w4w3
+  # cc_dtp & cc_r_w & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !md09_low & !md10_low & n_t_101x & sync & !w2w1 & !w4w3
+  # cc_dtp & cc_r_w & cc_t_m_en & !io_pause_low & !md03_low & !md04_low & 
+      !md05_low & !md06_low & !md09_low & md10_low & !md11_low & !tpg0 & !w2w1 & 
+      !w4w3
+  # cc_dtp & cc_r_w & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !md09_low & md10_low & !md11_low & n_t_101x & sync & !w2w1 & 
+      !w4w3
   # cc_dtp & !cc_r_w & cc_t_m_en & n_t_36x & tpg0
   # cc_dtp & !cc_r_w & n_t_101x & n_t_36x & !sync
-  # cc_dtp & !cc_r_w & cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & 
-      !md09 & !md10 & !n_t_61x & !n_t_62x & tpg0
-  # cc_dtp & !cc_r_w & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & 
-      !md10 & n_t_101x & !n_t_61x & !n_t_62x & !sync
-  # cc_dtp & !cc_r_w & cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & 
-      !md09 & md10 & !md11 & !n_t_61x & !n_t_62x & tpg0
-  # cc_dtp & !cc_r_w & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & 
-      md10 & !md11 & n_t_101x & !n_t_61x & !n_t_62x & !sync
+  # cc_dtp & !cc_r_w & cc_t_m_en & !io_pause_low & !md03_low & !md04_low & 
+      !md05_low & !md06_low & !md09_low & !md10_low & tpg0 & !w2w1 & !w4w3
+  # cc_dtp & !cc_r_w & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !md09_low & !md10_low & n_t_101x & !sync & !w2w1 & !w4w3
+  # cc_dtp & !cc_r_w & cc_t_m_en & !io_pause_low & !md03_low & !md04_low & 
+      !md05_low & !md06_low & !md09_low & md10_low & !md11_low & tpg0 & !w2w1 & 
+      !w4w3
+  # cc_dtp & !cc_r_w & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !md09_low & md10_low & !md11_low & n_t_101x & !sync & !w2w1 & 
+      !w4w3
 
 df_time_er.ar  =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & md11 & !n_t_61x & 
-      !n_t_62x & tp3
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & md11_low & tp3 & !w2w1 & !w4w3
   # initialize
 
 df_time_er.ck  =>
@@ -717,11 +744,12 @@ df_time_er.ck  =>
 df_time_er_low =>
     !df_time_er
 
-f_r_low =>
-    cc_f_r
+ff =>
+    df_comp_wd & !gdollar_2
+  # !df_comp_wd & gdollar_2
 
-f_r_low.oe  =>
-    !f_r_low
+ff.oe  =>
+    !ff
 
 !gdollar_0.d  =>
     1 
@@ -805,15 +833,15 @@ gdollar_5.ck  =>
 
 gdollar_6.ar  =>
     cc_uts & !tp3
-  # cc_uts & md10 & md11
-  # cc_uts & md09
-  # cc_uts & md04
-  # cc_uts & md05
-  # cc_uts & md06
-  # cc_uts & md03
-  # cc_uts & io_pause
-  # cc_uts & n_t_61x
-  # cc_uts & n_t_62x
+  # cc_uts & md10_low & md11_low
+  # cc_uts & md09_low
+  # cc_uts & md04_low
+  # cc_uts & md05_low
+  # cc_uts & md06_low
+  # cc_uts & md03_low
+  # cc_uts & io_pause_low
+  # cc_uts & w2w1
+  # cc_uts & w4w3
 
 gdollar_6.ck  =>
     cc_dtp & n_t_101x & !sync
@@ -824,15 +852,15 @@ gdollar_6.ck  =>
 
 gdollar_7.ar  =>
     cc_uts & !tp3
-  # cc_uts & md10 & md11
-  # cc_uts & md09
-  # cc_uts & md04
-  # cc_uts & md05
-  # cc_uts & md06
-  # cc_uts & md03
-  # cc_uts & io_pause
-  # cc_uts & n_t_61x
-  # cc_uts & n_t_62x
+  # cc_uts & md10_low & md11_low
+  # cc_uts & md09_low
+  # cc_uts & md04_low
+  # cc_uts & md05_low
+  # cc_uts & md06_low
+  # cc_uts & md03_low
+  # cc_uts & io_pause_low
+  # cc_uts & w2w1
+  # cc_uts & w4w3
 
 gdollar_7.ck  =>
     gdollar_6
@@ -843,20 +871,30 @@ gdollar_7.ck  =>
 int_rqst_low.oe  =>
     !int_rqst_low
 
-internal_io =>
-    n_t_62x
-  # n_t_61x
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+internal_io_low =>
+    w4w3
+  # w2w1
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
-internal_io.oe  =>
-    !internal_io
+internal_io_low.oe  =>
+    !internal_io_low
 
-io_pause_low =>
-    io_pause
+jj =>
+    !power_ok_low
+  # n_t_20x
+
+jj.oe  =>
+    !jj
+
+ll =>
+    !cc_unit
+
+ll.oe  =>
+    !ll
 
 !mtr0_low.d  =>
     cc_uts & !mtr1_low
@@ -914,7 +952,7 @@ mtr4_low.ck  =>
   # cc_dtp & cc_t_m_en & tpg0
 
 !mtr5_low.d  =>
-    cc_uts & !rmt
+    cc_uts & !f
 
 mtr5_low.ar  =>
     0 
@@ -934,13 +972,13 @@ n_t_100x =>
   # cc_t_m_en
 
 n_t_101x.ap  =>
-    !n_t_17x
+    !in1
 
 n_t_101x.ar  =>
     !cc_uts
 
 n_t_101x.ck  =>
-    n_t_80x
+    in2
 
 n_t_102x =>
     !sync
@@ -970,16 +1008,20 @@ n_t_112x =>
     !cc_tpg_clk
 
 !n_t_11x =>
-    !data04 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data04_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 !n_t_13x =>
-    !data08 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data08_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 !n_t_14x =>
-    !data11 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data11_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 !n_t_16x =>
-    !data05 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data05_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 n_t_18x =>
     !initialize & !run
@@ -1001,25 +1043,25 @@ n_t_20x.ck  =>
     0 
 
 n_t_22x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & !md11_low & !w2w1 & !w4w3
 
 !n_t_25x.t  =>
     0 
 
 n_t_25x.ar  =>
     cc_uts & !tp3
-  # cc_uts & md10 & md11
-  # cc_uts & md09
-  # cc_uts & md04
-  # cc_uts & md05
-  # cc_uts & md06
-  # cc_uts & md03
-  # cc_uts & io_pause
-  # cc_uts & n_t_61x
-  # cc_uts & n_t_62x
+  # cc_uts & md10_low & md11_low
+  # cc_uts & md09_low
+  # cc_uts & md04_low
+  # cc_uts & md05_low
+  # cc_uts & md06_low
+  # cc_uts & md03_low
+  # cc_uts & io_pause_low
+  # cc_uts & w2w1
+  # cc_uts & w4w3
 
 n_t_25x.ck  =>
     cc_dtp & n_t_101x & !sync
@@ -1028,25 +1070,26 @@ n_t_25x.ck  =>
 n_t_29x =>
     cc_dtp & n_t_101x & !sync
   # cc_dtp & cc_t_m_en & tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & tp3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & !md11_low & tp3 & !w2w1 & !w4w3
 
 n_t_2x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & tp3
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & !md11_low & tp3 & !w2w1 & !w4w3
 
 n_t_30x =>
     !tp3
-  # md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
-  # md09
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x
-  # md11
+  # md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
+  # md09_low
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !w2w1 & !w4w3
+  # md11_low
 
 n_t_31x =>
     !cc_setdly_low
@@ -1076,15 +1119,15 @@ n_t_35x =>
 
 n_t_36x.ar  =>
     cc_uts & !tp3
-  # cc_uts & md10 & md11
-  # cc_uts & md09
-  # cc_uts & md04
-  # cc_uts & md05
-  # cc_uts & md06
-  # cc_uts & md03
-  # cc_uts & io_pause
-  # cc_uts & n_t_61x
-  # cc_uts & n_t_62x
+  # cc_uts & md10_low & md11_low
+  # cc_uts & md09_low
+  # cc_uts & md04_low
+  # cc_uts & md05_low
+  # cc_uts & md06_low
+  # cc_uts & md03_low
+  # cc_uts & io_pause_low
+  # cc_uts & w2w1
+  # cc_uts & w4w3
 
 n_t_36x.ck  =>
     gdollar_7
@@ -1106,58 +1149,59 @@ n_t_39x =>
   # df_comp_wd & !gdollar_2
 
 !n_t_3x =>
-    !data06 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data06_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 n_t_41x =>
     !df_time_er
 
 n_t_42x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & !md10 & !n_t_61x & 
-      !n_t_62x & tp3
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & tp3
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & tp3 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & !md11_low & tp3 & !w2w1 & !w4w3
   # !cc_uts
 
 n_t_43x =>
-    md10 & md11
-  # md09
-  # md04
-  # md05
-  # md06
-  # md03
-  # io_pause
-  # n_t_61x
-  # n_t_62x
+    md10_low & md11_low
+  # md09_low
+  # md04_low
+  # md05_low
+  # md06_low
+  # md03_low
+  # io_pause_low
+  # w2w1
+  # w4w3
   # !tp3
 
 n_t_44x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & md09 & !md10 & md11 & !n_t_61x & 
-      !n_t_62x
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & md09_low & 
+      !md10_low & md11_low & !w2w1 & !w4w3
 
 n_t_45x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & md09 & !md10 & !md11 & 
-      !n_t_61x & !n_t_62x
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & md09_low & 
+      !md10_low & !md11_low & !w2w1 & !w4w3
 
 n_t_46x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & md09 & md10 & !md11 & !n_t_61x & 
-      !n_t_62x
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & md09_low & 
+      md10_low & !md11_low & !w2w1 & !w4w3
 
 n_t_47x =>
-    md10 & md11 & !n_t_36x
-  # md09 & !n_t_36x
-  # md04 & !n_t_36x
-  # md05 & !n_t_36x
-  # md06 & !n_t_36x
-  # md03 & !n_t_36x
-  # io_pause & !n_t_36x
-  # !n_t_36x & n_t_61x
-  # !n_t_36x & n_t_62x
+    md10_low & md11_low & !n_t_36x
+  # md09_low & !n_t_36x
+  # md04_low & !n_t_36x
+  # md05_low & !n_t_36x
+  # md06_low & !n_t_36x
+  # md03_low & !n_t_36x
+  # io_pause_low & !n_t_36x
+  # !n_t_36x & w2w1
+  # !n_t_36x & w4w3
 
 n_t_48x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & !md11_low & !w2w1 & !w4w3
   # n_t_36x
 
 n_t_49x =>
@@ -1167,18 +1211,19 @@ n_t_49x =>
   # !cc_t_m_en & sync
   # !n_t_101x & !tpg0
   # sync & !tpg0
-  # md10 & md11 & !n_t_36x
-  # md09 & !n_t_36x
-  # md04 & !n_t_36x
-  # md05 & !n_t_36x
-  # md06 & !n_t_36x
-  # md03 & !n_t_36x
-  # io_pause & !n_t_36x
-  # !n_t_36x & n_t_61x
-  # !n_t_36x & n_t_62x
+  # md10_low & md11_low & !n_t_36x
+  # md09_low & !n_t_36x
+  # md04_low & !n_t_36x
+  # md05_low & !n_t_36x
+  # md06_low & !n_t_36x
+  # md03_low & !n_t_36x
+  # io_pause_low & !n_t_36x
+  # !n_t_36x & w2w1
+  # !n_t_36x & w4w3
 
 !n_t_4x =>
-    !data09 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data09_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 n_t_50x =>
     !n_t_101x & tpg0
@@ -1187,66 +1232,63 @@ n_t_50x =>
   # !cc_t_m_en & !sync
   # !cc_dtp
   # !cc_r_w
-  # md10 & md11 & !n_t_36x
-  # md09 & !n_t_36x
-  # md04 & !n_t_36x
-  # md05 & !n_t_36x
-  # md06 & !n_t_36x
-  # md03 & !n_t_36x
-  # io_pause & !n_t_36x
-  # !n_t_36x & n_t_61x
-  # !n_t_36x & n_t_62x
+  # md10_low & md11_low & !n_t_36x
+  # md09_low & !n_t_36x
+  # md04_low & !n_t_36x
+  # md05_low & !n_t_36x
+  # md06_low & !n_t_36x
+  # md03_low & !n_t_36x
+  # io_pause_low & !n_t_36x
+  # !n_t_36x & w2w1
+  # !n_t_36x & w4w3
 
 n_t_5x =>
     1 
 
-n_t_65x =>
-    !io_pause & !md07
-
 n_t_66x =>
     df_time_er
-  # n_t_53x
+  # t_cpld
   # run
   # !df_sel_er_low
   # !power_ok_low
   # initialize
 
-n_t_67x =>
-    !io_pause & !md08
-
 n_t_68x =>
-    df_sel_er_low & !df_time_er & !initialize & !n_t_53x & power_ok_low & !run
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & md11 & !n_t_61x & 
-      !n_t_62x
+    df_sel_er_low & !df_time_er & !initialize & power_ok_low & !run & !t_cpld
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & md11_low & !w2w1 & !w4w3
 
 !n_t_69x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & !n_t_61x & !n_t_62x
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !w2w1 & !w4w3
 
 !n_t_70x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !w2w1 & !w4w3
 
 !n_t_71x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md11 & !n_t_61x & !n_t_62x
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md11_low & 
+      !w2w1 & !w4w3
 
 !n_t_72x =>
-    rtt_low & !sync
-  # !rtt_low & sync
+    j & !sync
+  # !j & sync
 
 n_t_72x =>
-    !rtt_low & !sync
-  # rtt_low & sync
+    !j & !sync
+  # j & sync
 
 !n_t_73x =>
-    !cc_t_m_en & rtt_low & sync
-  # !cc_t_m_en & !rtt_low & !sync
+    !cc_t_m_en & j & sync
+  # !cc_t_m_en & !j & !sync
   # cc_t_m_en & !cc_tpg1 & sync
-  # !cc_tpg1 & rtt_low & sync
+  # !cc_tpg1 & j & sync
   # cc_t_m_en & cc_tpg1 & !sync
-  # cc_tpg1 & !rtt_low & !sync
+  # cc_tpg1 & !j & !sync
 
 n_t_73x =>
-    !cc_t_m_en & !rtt_low & sync
-  # !cc_t_m_en & rtt_low & !sync
+    !cc_t_m_en & !j & sync
+  # !cc_t_m_en & j & !sync
   # cc_t_m_en & !cc_tpg1 & !sync
   # cc_t_m_en & cc_tpg1 & sync
 
@@ -1264,65 +1306,65 @@ n_t_7x =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 n_t_83x =>
-    !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & md11 & !n_t_61x & 
-      !n_t_62x & tp3
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md10_low & md11_low & tp3 & !w2w1 & !w4w3
 
 n_t_84x =>
     1 
@@ -1350,63 +1392,71 @@ n_t_89x =>
     !cc_t_m_en & !n_t_86x
 
 !n_t_8x =>
-    !data07 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data07_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 !n_t_90x =>
-    !cc_f_r & !cc_s_g & !cc_unit & !data00 & !data01 & !data02 & !io_pause & 
-      !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
-  # cc_f_r & !cc_s_g & !cc_unit & !data00 & data01 & !data02 & !io_pause & 
-      !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
-  # !cc_f_r & !cc_s_g & cc_unit & data00 & !data01 & !data02 & !io_pause & 
-      !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
-  # cc_f_r & !cc_s_g & cc_unit & data00 & data01 & !data02 & !io_pause & !md03 & 
-      !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
-  # !cc_f_r & cc_s_g & !cc_unit & !data00 & !data01 & data02 & !io_pause & 
-      !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
-  # cc_f_r & cc_s_g & !cc_unit & !data00 & data01 & data02 & !io_pause & !md03 & 
-      !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
-  # !cc_f_r & cc_s_g & cc_unit & data00 & !data01 & data02 & !io_pause & !md03 & 
-      !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
-  # cc_f_r & cc_s_g & cc_unit & data00 & data01 & data02
-  # cc_f_r & cc_s_g & cc_unit & md04
-  # cc_f_r & cc_s_g & cc_unit & md05
-  # cc_f_r & cc_s_g & cc_unit & md06
-  # cc_f_r & cc_s_g & cc_unit & md03
-  # cc_f_r & cc_s_g & cc_unit & io_pause
-  # cc_f_r & cc_s_g & cc_unit & n_t_61x
-  # cc_f_r & cc_s_g & cc_unit & n_t_62x
+    !cc_f_r & !cc_s_g & !cc_unit & !data00_low & !data01_low & !data02_low & 
+      !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
+      !w4w3
+  # cc_f_r & !cc_s_g & !cc_unit & !data00_low & data01_low & !data02_low & 
+      !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
+      !w4w3
+  # !cc_f_r & !cc_s_g & cc_unit & data00_low & !data01_low & !data02_low & 
+      !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
+      !w4w3
+  # cc_f_r & !cc_s_g & cc_unit & data00_low & data01_low & !data02_low & 
+      !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
+      !w4w3
+  # !cc_f_r & cc_s_g & !cc_unit & !data00_low & !data01_low & data02_low & 
+      !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
+      !w4w3
+  # cc_f_r & cc_s_g & !cc_unit & !data00_low & data01_low & data02_low & 
+      !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
+      !w4w3
+  # !cc_f_r & cc_s_g & cc_unit & data00_low & !data01_low & data02_low & 
+      !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
+      !w4w3
+  # cc_f_r & cc_s_g & cc_unit & data00_low & data01_low & data02_low
+  # cc_f_r & cc_s_g & cc_unit & md04_low
+  # cc_f_r & cc_s_g & cc_unit & md05_low
+  # cc_f_r & cc_s_g & cc_unit & md06_low
+  # cc_f_r & cc_s_g & cc_unit & md03_low
+  # cc_f_r & cc_s_g & cc_unit & io_pause_low
+  # cc_f_r & cc_s_g & cc_unit & w2w1
+  # cc_f_r & cc_s_g & cc_unit & w4w3
 
 n_t_90x =>
-    !cc_f_r & data01
-  # !cc_f_r & md04
-  # !cc_f_r & md05
-  # !cc_f_r & md06
-  # !cc_f_r & md03
-  # !cc_f_r & io_pause
-  # !cc_f_r & n_t_61x
-  # !cc_f_r & n_t_62x
-  # cc_f_r & !data01 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & 
-      !n_t_62x
-  # !cc_unit & data00
-  # !cc_unit & md04
-  # !cc_unit & md05
-  # !cc_unit & md06
-  # !cc_unit & md03
-  # !cc_unit & io_pause
-  # !cc_unit & n_t_61x
-  # !cc_unit & n_t_62x
-  # cc_unit & !data00 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & 
-      !n_t_62x
-  # !cc_s_g & data02
-  # !cc_s_g & md04
-  # !cc_s_g & md05
-  # !cc_s_g & md06
-  # !cc_s_g & md03
-  # !cc_s_g & io_pause
-  # !cc_s_g & n_t_61x
-  # !cc_s_g & n_t_62x
-  # cc_s_g & !data02 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & 
-      !n_t_62x
+    !cc_f_r & data01_low
+  # !cc_f_r & md04_low
+  # !cc_f_r & md05_low
+  # !cc_f_r & md06_low
+  # !cc_f_r & md03_low
+  # !cc_f_r & io_pause_low
+  # !cc_f_r & w2w1
+  # !cc_f_r & w4w3
+  # cc_f_r & !data01_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
+  # !cc_unit & data00_low
+  # !cc_unit & md04_low
+  # !cc_unit & md05_low
+  # !cc_unit & md06_low
+  # !cc_unit & md03_low
+  # !cc_unit & io_pause_low
+  # !cc_unit & w2w1
+  # !cc_unit & w4w3
+  # cc_unit & !data00_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
+  # !cc_s_g & data02_low
+  # !cc_s_g & md04_low
+  # !cc_s_g & md05_low
+  # !cc_s_g & md06_low
+  # !cc_s_g & md03_low
+  # !cc_s_g & io_pause_low
+  # !cc_s_g & w2w1
+  # !cc_s_g & w4w3
+  # cc_s_g & !data02_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
 n_t_97x =>
     !cc_setdly
@@ -1415,66 +1465,57 @@ n_t_98x =>
     !cc_t_m_en & cc_uts
 
 !n_t_9x =>
-    !data10 & !io_pause & !md03 & !md04 & !md05 & !md06 & !n_t_61x & !n_t_62x
+    !data10_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
+      !md06_low & !w2w1 & !w4w3
 
-nd0 =>
-    df_comp_wd & !gdollar_2
-  # !df_comp_wd & gdollar_2
+nn =>
+    t_cpld
+  # run
+  # !power_ok_low
+  # initialize
+  # df_time_er
+  # !df_sel_er_low
+  # !cc_t_m_en
 
-nd0.oe  =>
-    !nd0
+nn.oe  =>
+    !nn
 
-nd1 =>
-    df_comp_wd & !gdollar_3
-  # !df_comp_wd & gdollar_3
+rr =>
+    !run
 
-nd1.oe  =>
-    !nd1
-
-nd2 =>
-    df_comp_wd & !gdollar_0
-  # !df_comp_wd & gdollar_0
-
-nd2.oe  =>
-    !nd2
-
-s_g_low =>
-    !power_ok_low
-  # n_t_20x
-
-s_g_low.oe  =>
-    !s_g_low
+rr.oe  =>
+    !rr
 
 skip_low =>
-    !md10 & !md11 & !n_t_36x
-  # !md09
-  # md10 & md11
-  # md10 & !n_t_25x
-  # !df_time_er & md11
-  # n_t_62x
-  # n_t_61x
-  # md06
-  # md05
-  # md04
-  # md03
-  # io_pause
+    !md10_low & !md11_low & !n_t_36x
+  # !md09_low
+  # md10_low & md11_low
+  # md10_low & !n_t_25x
+  # !df_time_er & md11_low
+  # w4w3
+  # w2w1
+  # md06_low
+  # md05_low
+  # md04_low
+  # md03_low
+  # io_pause_low
 
 skip_low.oe  =>
     !skip_low
 
 !sr00.d  =>
-    data00 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr00
-  # !md10 & !sr03
-  # n_t_62x & !sr03
-  # n_t_61x & !sr03
-  # md11 & !sr03
-  # md09 & !sr03
-  # md06 & !sr03
-  # md05 & !sr03
-  # md04 & !sr03
-  # md03 & !sr03
-  # io_pause & !sr03
+    data00_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr00 & !w2w1 & !w4w3
+  # !md10_low & !sr03
+  # !sr03 & w4w3
+  # !sr03 & w2w1
+  # md11_low & !sr03
+  # md09_low & !sr03
+  # md06_low & !sr03
+  # md05_low & !sr03
+  # md04_low & !sr03
+  # md03_low & !sr03
+  # io_pause_low & !sr03
 
 sr00.ar  =>
     0 
@@ -1485,75 +1526,75 @@ sr00.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr01.d  =>
-    data01 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr01
-  # !md10 & !sr04
-  # n_t_62x & !sr04
-  # n_t_61x & !sr04
-  # md11 & !sr04
-  # md09 & !sr04
-  # md06 & !sr04
-  # md05 & !sr04
-  # md04 & !sr04
-  # md03 & !sr04
-  # io_pause & !sr04
+    data01_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr01 & !w2w1 & !w4w3
+  # !md10_low & !sr04
+  # !sr04 & w4w3
+  # !sr04 & w2w1
+  # md11_low & !sr04
+  # md09_low & !sr04
+  # md06_low & !sr04
+  # md05_low & !sr04
+  # md04_low & !sr04
+  # md03_low & !sr04
+  # io_pause_low & !sr04
 
 sr01.ar  =>
     0 
@@ -1564,75 +1605,75 @@ sr01.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr02.d  =>
-    data02 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr02
-  # !md10 & !sr05
-  # n_t_62x & !sr05
-  # n_t_61x & !sr05
-  # md11 & !sr05
-  # md09 & !sr05
-  # md06 & !sr05
-  # md05 & !sr05
-  # md04 & !sr05
-  # md03 & !sr05
-  # io_pause & !sr05
+    data02_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr02 & !w2w1 & !w4w3
+  # !md10_low & !sr05
+  # !sr05 & w4w3
+  # !sr05 & w2w1
+  # md11_low & !sr05
+  # md09_low & !sr05
+  # md06_low & !sr05
+  # md05_low & !sr05
+  # md04_low & !sr05
+  # md03_low & !sr05
+  # io_pause_low & !sr05
 
 sr02.ar  =>
     0 
@@ -1643,75 +1684,75 @@ sr02.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr03.d  =>
-    data03 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr03
-  # !md10 & !sr06
-  # n_t_62x & !sr06
-  # n_t_61x & !sr06
-  # md11 & !sr06
-  # md09 & !sr06
-  # md06 & !sr06
-  # md05 & !sr06
-  # md04 & !sr06
-  # md03 & !sr06
-  # io_pause & !sr06
+    data03_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr03 & !w2w1 & !w4w3
+  # !md10_low & !sr06
+  # !sr06 & w4w3
+  # !sr06 & w2w1
+  # md11_low & !sr06
+  # md09_low & !sr06
+  # md06_low & !sr06
+  # md05_low & !sr06
+  # md04_low & !sr06
+  # md03_low & !sr06
+  # io_pause_low & !sr06
 
 sr03.ar  =>
     0 
@@ -1722,75 +1763,75 @@ sr03.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr04.d  =>
-    data04 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr04
-  # !md10 & !sr07
-  # n_t_62x & !sr07
-  # n_t_61x & !sr07
-  # md11 & !sr07
-  # md09 & !sr07
-  # md06 & !sr07
-  # md05 & !sr07
-  # md04 & !sr07
-  # md03 & !sr07
-  # io_pause & !sr07
+    data04_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr04 & !w2w1 & !w4w3
+  # !md10_low & !sr07
+  # !sr07 & w4w3
+  # !sr07 & w2w1
+  # md11_low & !sr07
+  # md09_low & !sr07
+  # md06_low & !sr07
+  # md05_low & !sr07
+  # md04_low & !sr07
+  # md03_low & !sr07
+  # io_pause_low & !sr07
 
 sr04.ar  =>
     0 
@@ -1801,75 +1842,75 @@ sr04.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr05.d  =>
-    data05 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr05
-  # !md10 & !sr08
-  # n_t_62x & !sr08
-  # n_t_61x & !sr08
-  # md11 & !sr08
-  # md09 & !sr08
-  # md06 & !sr08
-  # md05 & !sr08
-  # md04 & !sr08
-  # md03 & !sr08
-  # io_pause & !sr08
+    data05_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr05 & !w2w1 & !w4w3
+  # !md10_low & !sr08
+  # !sr08 & w4w3
+  # !sr08 & w2w1
+  # md11_low & !sr08
+  # md09_low & !sr08
+  # md06_low & !sr08
+  # md05_low & !sr08
+  # md04_low & !sr08
+  # md03_low & !sr08
+  # io_pause_low & !sr08
 
 sr05.ar  =>
     0 
@@ -1880,75 +1921,75 @@ sr05.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr06.d  =>
-    data06 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr06
-  # !md10 & !sr09
-  # n_t_62x & !sr09
-  # n_t_61x & !sr09
-  # md11 & !sr09
-  # md09 & !sr09
-  # md06 & !sr09
-  # md05 & !sr09
-  # md04 & !sr09
-  # md03 & !sr09
-  # io_pause & !sr09
+    data06_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr06 & !w2w1 & !w4w3
+  # !md10_low & !sr09
+  # !sr09 & w4w3
+  # !sr09 & w2w1
+  # md11_low & !sr09
+  # md09_low & !sr09
+  # md06_low & !sr09
+  # md05_low & !sr09
+  # md04_low & !sr09
+  # md03_low & !sr09
+  # io_pause_low & !sr09
 
 sr06.ar  =>
     0 
@@ -1959,75 +2000,75 @@ sr06.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr07.d  =>
-    data07 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr07
-  # !md10 & !sr10
-  # n_t_62x & !sr10
-  # n_t_61x & !sr10
-  # md11 & !sr10
-  # md09 & !sr10
-  # md06 & !sr10
-  # md05 & !sr10
-  # md04 & !sr10
-  # md03 & !sr10
-  # io_pause & !sr10
+    data07_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr07 & !w2w1 & !w4w3
+  # !md10_low & !sr10
+  # !sr10 & w4w3
+  # !sr10 & w2w1
+  # md11_low & !sr10
+  # md09_low & !sr10
+  # md06_low & !sr10
+  # md05_low & !sr10
+  # md04_low & !sr10
+  # md03_low & !sr10
+  # io_pause_low & !sr10
 
 sr07.ar  =>
     0 
@@ -2038,75 +2079,75 @@ sr07.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr08.d  =>
-    data08 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr08
-  # !md10 & !sr11
-  # n_t_62x & !sr11
-  # n_t_61x & !sr11
-  # md11 & !sr11
-  # md09 & !sr11
-  # md06 & !sr11
-  # md05 & !sr11
-  # md04 & !sr11
-  # md03 & !sr11
-  # io_pause & !sr11
+    data08_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr08 & !w2w1 & !w4w3
+  # !md10_low & !sr11
+  # !sr11 & w4w3
+  # !sr11 & w2w1
+  # md11_low & !sr11
+  # md09_low & !sr11
+  # md06_low & !sr11
+  # md05_low & !sr11
+  # md04_low & !sr11
+  # md03_low & !sr11
+  # io_pause_low & !sr11
 
 sr08.ar  =>
     0 
@@ -2117,75 +2158,75 @@ sr08.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr09.d  =>
-    data09 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr09
-  # !md10 & !rd00
-  # n_t_62x & !rd00
-  # n_t_61x & !rd00
-  # md11 & !rd00
-  # md09 & !rd00
-  # md06 & !rd00
-  # md05 & !rd00
-  # md04 & !rd00
-  # md03 & !rd00
-  # io_pause & !rd00
+    data09_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr09 & !w2w1 & !w4w3
+  # !d & !md10_low
+  # !d & w4w3
+  # !d & w2w1
+  # !d & md11_low
+  # !d & md09_low
+  # !d & md06_low
+  # !d & md05_low
+  # !d & md04_low
+  # !d & md03_low
+  # !d & io_pause_low
 
 sr09.ar  =>
     0 
@@ -2196,75 +2237,75 @@ sr09.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr10.d  =>
-    data10 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr10
-  # !md10 & !rd01
-  # n_t_62x & !rd01
-  # n_t_61x & !rd01
-  # md11 & !rd01
-  # md09 & !rd01
-  # md06 & !rd01
-  # md05 & !rd01
-  # md04 & !rd01
-  # md03 & !rd01
-  # io_pause & !rd01
+    data10_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr10 & !w2w1 & !w4w3
+  # !l & !md10_low
+  # !l & w4w3
+  # !l & w2w1
+  # !l & md11_low
+  # !l & md09_low
+  # !l & md06_low
+  # !l & md05_low
+  # !l & md04_low
+  # !l & md03_low
+  # io_pause_low & !l
 
 sr10.ar  =>
     0 
@@ -2275,75 +2316,75 @@ sr10.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sr11.d  =>
-    data11 & !io_pause & !md03 & !md04 & !md05 & !md06 & !md09 & md10 & !md11 & 
-      !n_t_61x & !n_t_62x & !sr11
-  # !md10 & !rd02
-  # n_t_62x & !rd02
-  # n_t_61x & !rd02
-  # md11 & !rd02
-  # md09 & !rd02
-  # md06 & !rd02
-  # md05 & !rd02
-  # md04 & !rd02
-  # md03 & !rd02
-  # io_pause & !rd02
+    data11_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & md10_low & !md11_low & !sr11 & !w2w1 & !w4w3
+  # !md10_low & !v
+  # !v & w4w3
+  # !v & w2w1
+  # md11_low & !v
+  # md09_low & !v
+  # md06_low & !v
+  # md05_low & !v
+  # md04_low & !v
+  # md03_low & !v
+  # io_pause_low & !v
 
 sr11.ar  =>
     0 
@@ -2354,117 +2395,112 @@ sr11.ck  =>
   # !cc_t_m_en & sync & !tp3
   # sync & !tp3 & !tpg0
   # !n_t_101x & !tp3 & !tpg0
-  # !cc_dtp & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & 
-      !n_t_61x & !n_t_62x
-  # !cc_t_m_en & !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & 
-      !n_t_62x & sync
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_61x & !n_t_62x & 
-      sync & !tpg0
-  # !io_pause & !md03 & !md04 & !md05 & !md06 & !md10 & !n_t_101x & !n_t_61x & 
-      !n_t_62x & !tpg0
-  # !cc_dtp & md11
-  # !cc_t_m_en & md11 & !n_t_101x
-  # !cc_t_m_en & md11 & sync
-  # md11 & sync & !tpg0
-  # md11 & !n_t_101x & !tpg0
-  # !cc_dtp & md09
-  # !cc_t_m_en & md09 & !n_t_101x
-  # !cc_t_m_en & md09 & sync
-  # md09 & sync & !tpg0
-  # md09 & !n_t_101x & !tpg0
-  # !cc_dtp & md04
-  # !cc_t_m_en & md04 & !n_t_101x
-  # !cc_t_m_en & md04 & sync
-  # md04 & sync & !tpg0
-  # md04 & !n_t_101x & !tpg0
-  # !cc_dtp & md05
-  # !cc_t_m_en & md05 & !n_t_101x
-  # !cc_t_m_en & md05 & sync
-  # md05 & sync & !tpg0
-  # md05 & !n_t_101x & !tpg0
-  # !cc_dtp & md06
-  # !cc_t_m_en & md06 & !n_t_101x
-  # !cc_t_m_en & md06 & sync
-  # md06 & sync & !tpg0
-  # md06 & !n_t_101x & !tpg0
-  # !cc_dtp & md03
-  # !cc_t_m_en & md03 & !n_t_101x
-  # !cc_t_m_en & md03 & sync
-  # md03 & sync & !tpg0
-  # md03 & !n_t_101x & !tpg0
-  # !cc_dtp & io_pause
-  # !cc_t_m_en & io_pause & !n_t_101x
-  # !cc_t_m_en & io_pause & sync
-  # io_pause & sync & !tpg0
-  # io_pause & !n_t_101x & !tpg0
-  # !cc_dtp & n_t_61x
-  # !cc_t_m_en & !n_t_101x & n_t_61x
-  # !cc_t_m_en & n_t_61x & sync
-  # n_t_61x & sync & !tpg0
-  # !n_t_101x & n_t_61x & !tpg0
-  # !cc_dtp & n_t_62x
-  # !cc_t_m_en & !n_t_101x & n_t_62x
-  # !cc_t_m_en & n_t_62x & sync
-  # n_t_62x & sync & !tpg0
-  # !n_t_101x & n_t_62x & !tpg0
+  # !cc_dtp & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & !n_t_101x & !w2w1 & !w4w3
+  # !cc_t_m_en & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md10_low & sync & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      sync & !tpg0 & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md10_low & 
+      !n_t_101x & !tpg0 & !w2w1 & !w4w3
+  # !cc_dtp & md11_low
+  # !cc_t_m_en & md11_low & !n_t_101x
+  # !cc_t_m_en & md11_low & sync
+  # md11_low & sync & !tpg0
+  # md11_low & !n_t_101x & !tpg0
+  # !cc_dtp & md09_low
+  # !cc_t_m_en & md09_low & !n_t_101x
+  # !cc_t_m_en & md09_low & sync
+  # md09_low & sync & !tpg0
+  # md09_low & !n_t_101x & !tpg0
+  # !cc_dtp & md04_low
+  # !cc_t_m_en & md04_low & !n_t_101x
+  # !cc_t_m_en & md04_low & sync
+  # md04_low & sync & !tpg0
+  # md04_low & !n_t_101x & !tpg0
+  # !cc_dtp & md05_low
+  # !cc_t_m_en & md05_low & !n_t_101x
+  # !cc_t_m_en & md05_low & sync
+  # md05_low & sync & !tpg0
+  # md05_low & !n_t_101x & !tpg0
+  # !cc_dtp & md06_low
+  # !cc_t_m_en & md06_low & !n_t_101x
+  # !cc_t_m_en & md06_low & sync
+  # md06_low & sync & !tpg0
+  # md06_low & !n_t_101x & !tpg0
+  # !cc_dtp & md03_low
+  # !cc_t_m_en & md03_low & !n_t_101x
+  # !cc_t_m_en & md03_low & sync
+  # md03_low & sync & !tpg0
+  # md03_low & !n_t_101x & !tpg0
+  # !cc_dtp & io_pause_low
+  # !cc_t_m_en & io_pause_low & !n_t_101x
+  # !cc_t_m_en & io_pause_low & sync
+  # io_pause_low & sync & !tpg0
+  # io_pause_low & !n_t_101x & !tpg0
+  # !cc_dtp & w2w1
+  # !cc_t_m_en & !n_t_101x & w2w1
+  # !cc_t_m_en & sync & w2w1
+  # sync & !tpg0 & w2w1
+  # !n_t_101x & !tpg0 & w2w1
+  # !cc_dtp & w4w3
+  # !cc_t_m_en & !n_t_101x & w4w3
+  # !cc_t_m_en & sync & w4w3
+  # sync & !tpg0 & w4w3
+  # !n_t_101x & !tpg0 & w4w3
 
 !sync.d  =>
     sync
 
 sync.ap  =>
-    !n_t_17x
+    !in1
 
 sync.ar  =>
-    !n_t_17x
+    !in1
 
 sync.ck  =>
-    n_t_80x
-
-t_m_enable =>
-    run
-  # !power_ok_low
-  # n_t_53x
-  # initialize
-  # df_time_er
-  # !df_sel_er_low
-  # !cc_t_m_en
-
-t_m_enable.oe  =>
-    !t_m_enable
+    in2
 
 !tpg0.d  =>
     !cc_tpg1
 
 tpg0.ap  =>
-    !n_t_17x
+    !in1
 
 tpg0.ar  =>
-    !n_t_17x
+    !in1
 
 tpg0.ck  =>
     cc_tpg_clk
 
-unith =>
-    !cc_unit
+tt =>
+    cc_f_r
 
-unith.oe  =>
-    !unith
+tt.oe  =>
+    !tt
 
-wd_enab =>
+w2 =>
+    !io_pause_low & !md07_low
+
+w3 =>
+    !io_pause_low & !md08_low
+
+x =>
+    df_comp_wd & !gdollar_0
+  # !df_comp_wd & gdollar_0
+
+x.oe  =>
+    !x
+
+z =>
     !power_ok_low
   # n_t_86x
   # cc_t_m_en
 
-wd_enab.oe  =>
-    !wd_enab
-
-wpt =>
-    tpg0
-
-wpt.oe  =>
-    !wpt
+z.oe  =>
+    !z
 
 
 ===============================================================================
@@ -2475,15 +2511,18 @@ Pin Variable                                    Pterms   Max     Min
 Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
 --- --------            ---     ---     ----    ------  ------  -----   
 
-    c0                          23       V        9       0       4     
-    c0                  oe      23       X        1       0       1     
-    c1                          22       V        9       0       4     
-    c1                  oe      22       X        1       0       1     
+    bb                          83       V        1       0       4     
+    bb                  oe      83       X        1       0       1     
+    bb_cpld                     83       V        -       -       -     
+    c0_low                      25       V        9       0       4     
+    c0_low              oe      25       X        1       0       1     
+    c1_low                      24       V        9       0       4     
+    c1_low              oe      24       X        1       0       1     
     cc_67x                      0        I        1       -       -     
     cc_67x_low                  0        I        7       -       -     
     cc_btp3                     0        I        1       -       -     
     cc_clk_te_low               0        I        11      -       -     
-    cc_dtp                      47       V        -       -       -     
+    cc_dtp                      49       V        -       -       -     
     cc_dtp0                     0        I        2       -       -     
     cc_dtp0_low                 0        I        5       -       -     
     cc_dtp1                     0        I        2       -       -     
@@ -2493,10 +2532,10 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     cc_f_r              ap      0        M        1       0       1     
     cc_f_r              ar      0        M        1       0       1     
     cc_f_r              ck      0        M        1       0       1     
-    cc_f_r_low                  0        I        1       -       -     
     cc_init                     0        I        1       -       -     
     cc_init_low                 0        I        1       -       -     
-    cc_pwr_ok                   0        I        1       -       -     
+    cc_jj                       0        I        1       -       -     
+    cc_pwr_ok_low               0        I        1       -       -     
     cc_r_w                      0        N        -       -       -     
     cc_r_w              d       0        M        8       0       4     
     cc_r_w              ap      0        M        1       0       1     
@@ -2510,7 +2549,6 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     cc_s_g              ap      0        M        1       0       1     
     cc_s_g              ar      0        M        2       0       1     
     cc_s_g              ck      0        M        1       0       1     
-    cc_s_g_low                  0        I        1       -       -     
     cc_sdlc_low                 0        I        10      -       -     
     cc_sdld_low                 0        I        10      -       -     
     cc_sdrc_low                 0        I        10      -       -     
@@ -2518,13 +2556,13 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     cc_sdsq_low                 0        I        10      -       -     
     cc_sdss_low                 0        I        10      -       -     
     cc_sdst_low                 0        I        10      -       -     
-    cc_setdly                   15       V        1       0       4     
+    cc_setdly                   18       V        1       0       4     
     cc_setdly_low               0        N        -       -       -     
     cc_setdly_low       d       0        M        27      0       4     
     cc_setdly_low       ap      0        M        2       0       1     
     cc_setdly_low       ar      0        M        1       0       1     
     cc_setdly_low       ck      0        M        1       0       1     
-    cc_t_m_en                   57       V        -       -       -     
+    cc_t_m_en                   59       V        -       -       -     
     cc_t_m_en_low               0        I        1       -       -     
     cc_tp3_low                  0        I        1       -       -     
     cc_tpg1                     0        N        -       -       -     
@@ -2534,7 +2572,8 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     cc_tpg1             ck      0        M        1       0       1     
     cc_tpg1_low                 0        I        1       -       -     
     cc_tpg_clk                  89       V        -       -       -     
-    cc_tt_en                    52       V        4       0       4     
+    cc_tt                       0        I        1       -       -     
+    cc_tt_en                    55       V        4       0       4     
     cc_unit                     0        N        -       -       -     
     cc_unit             d       0        M        8       0       4     
     cc_unit             ap      0        M        1       0       1     
@@ -2548,32 +2587,35 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     cc_uts              ck      0        M        1       0       1     
     cc_uts_low                  0        I        1       -       -     
     cc_wrt_ok                   0        I        1       -       -     
-    con_all_halt                99       V        1       0       4     
-    con_all_halt        oe      99       X        1       0       1     
-    data00                      42       V        11      0       4     
-    data00              oe      42       X        1       0       1     
-    data01                      39       V        11      0       4     
-    data01              oe      39       X        1       0       1     
-    data02                      38       V        11      0       4     
-    data02              oe      38       X        1       0       1     
-    data03                      37       V        11      0       4     
-    data03              oe      37       X        1       0       1     
-    data04                      31       V        11      0       4     
-    data04              oe      31       X        1       0       1     
-    data05                      30       V        11      0       4     
-    data05              oe      30       X        1       0       1     
-    data06                      29       V        11      0       4     
-    data06              oe      29       X        1       0       1     
-    data07                      26       V        11      0       4     
-    data07              oe      26       X        1       0       1     
-    data08                      4        V        11      0       4     
-    data08              oe      4        X        1       0       1     
-    data09                      3        V        11      0       4     
-    data09              oe      3        X        1       0       1     
-    data10                      2        V        11      0       4     
-    data10              oe      2        X        1       0       1     
-    data11                      1        V        11      0       4     
-    data11              oe      1        X        1       0       1     
+    clrdly_low                  94       V        -       -       -     
+    d                           72       V        -       -       -     
+    d_cpld                      72       V        -       -       -     
+    data00_low                  46       V        11      0       4     
+    data00_low          oe      46       X        1       0       1     
+    data01_low                  44       V        11      0       4     
+    data01_low          oe      44       X        1       0       1     
+    data02_low                  42       V        11      0       4     
+    data02_low          oe      42       X        1       0       1     
+    data03_low                  39       V        11      0       4     
+    data03_low          oe      39       X        1       0       1     
+    data04_low                  33       V        11      0       4     
+    data04_low          oe      33       X        1       0       1     
+    data05_low                  32       V        11      0       4     
+    data05_low          oe      32       X        1       0       1     
+    data06_low                  31       V        11      0       4     
+    data06_low          oe      31       X        1       0       1     
+    data07_low                  29       V        11      0       4     
+    data07_low          oe      29       X        1       0       1     
+    data08_low                  8        V        11      0       4     
+    data08_low          oe      8        X        1       0       1     
+    data09_low                  3        V        11      0       4     
+    data09_low          oe      3        X        1       0       1     
+    data10_low                  7        V        11      0       4     
+    data10_low          oe      7        X        1       0       1     
+    data11_low                  4        V        11      0       4     
+    data11_low          oe      4        X        1       0       1     
+    dd                          85       V        2       0       4     
+    dd                  oe      85       X        1       0       1     
     df_comp_wd                  0        N        -       -       -     
     df_comp_wd          d       0        M        1       0       4     
     df_comp_wd          ap      0        M        2       0       1     
@@ -2585,15 +2627,18 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     df_db03                     0        I        1       -       -     
     df_hld_low                  0        I        1       -       -     
     df_sel_er                   0        I        1       -       -     
-    df_sel_er_low               74       V        -       -       -     
+    df_sel_er_low               78       V        -       -       -     
     df_time_er                  0        N        -       -       -     
     df_time_er          d       0        M        1       0       4     
     df_time_er          ap      0        M        12      0       1     
     df_time_er          ar      0        M        2       0       1     
     df_time_er          ck      0        M        1       0       1     
     df_time_er_low              0        I        1       -       -     
-    f_r_low                     100      V        1       0       4     
-    f_r_low             oe      100      X        1       0       1     
+    done_skip_low               62       V        -       -       -     
+    f                           73       V        -       -       -     
+    ff                          86       V        2       0       4     
+    ff                  oe      86       X        1       0       1     
+    ff_cpld                     86       V        -       -       -     
     gdollar_0                   0        N        -       -       -     
     gdollar_0           d       0        M        1       0       4     
     gdollar_0           ap      0        M        2       0       1     
@@ -2630,22 +2675,30 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     gdollar_7           t       0        M        1       0       4     
     gdollar_7           ar      0        M        10      0       1     
     gdollar_7           ck      0        M        1       0       1     
-    initialize                  12       V        -       -       -     
-    int_rqst_low                14       V        1       0       4     
-    int_rqst_low        oe      14       X        1       0       1     
-    internal_io                 18       V        7       0       4     
-    internal_io         oe      18       X        1       0       1     
-    io_pause                    24       V        -       -       -     
-    io_pause_low                0        I        1       -       -     
-    md03                        44       V        -       -       -     
-    md04                        35       V        -       -       -     
-    md05                        34       V        -       -       -     
-    md06                        33       V        -       -       -     
-    md07                        32       V        -       -       -     
-    md08                        10       V        -       -       -     
-    md09                        9        V        -       -       -     
-    md10                        8        V        -       -       -     
-    md11                        7        V        -       -       -     
+    in1                         92       V        -       -       -     
+    in2                         91       V        -       -       -     
+    in3                         87       V        -       -       -     
+    initialize                  15       V        -       -       -     
+    int_rqst_low                16       V        1       0       4     
+    int_rqst_low        oe      16       X        1       0       1     
+    internal_io_low             21       V        7       0       4     
+    internal_io_low     oe      21       X        1       0       1     
+    io_pause_low                26       V        -       -       -     
+    j                           74       V        -       -       -     
+    jj                          96       V        2       0       4     
+    jj                  oe      96       X        1       0       1     
+    l                           77       V        -       -       -     
+    ll                          99       V        1       0       4     
+    ll                  oe      99       X        1       0       1     
+    md03_low                    47       V        -       -       -     
+    md04_low                    38       V        -       -       -     
+    md05_low                    37       V        -       -       -     
+    md06_low                    35       V        -       -       -     
+    md07_low                    34       V        -       -       -     
+    md08_low                    12       V        -       -       -     
+    md09_low                    11       V        -       -       -     
+    md10_low                    10       V        -       -       -     
+    md11_low                    9        V        -       -       -     
     mtr0_low                    0        N        -       -       -     
     mtr0_low            d       0        M        1       0       4     
     mtr0_low            ar      0        M        1       0       1     
@@ -2670,6 +2723,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     mtr5_low            d       0        M        1       0       4     
     mtr5_low            ar      0        M        1       0       1     
     mtr5_low            ck      0        M        3       0       1     
+    n_cpld                      78       V        -       -       -     
     n_t_100x                    0        I        3       -       -     
     n_t_101x                    0        N        -       -       -     
     n_t_101x            d       0        M        2       0       4     
@@ -2687,7 +2741,6 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_13x                     0        I        1       -       -     
     n_t_14x                     0        I        1       -       -     
     n_t_16x                     0        I        1       -       -     
-    n_t_17x                     92       V        -       -       -     
     n_t_18x                     0        I        1       -       -     
     n_t_1x                      0        I        1       -       -     
     n_t_20x                     0        N        -       -       -     
@@ -2729,13 +2782,8 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_49x                     0        I        15      -       -     
     n_t_4x                      0        I        1       -       -     
     n_t_50x                     0        I        15      -       -     
-    n_t_53x                     77       V        -       -       -     
     n_t_5x                      0        I        1       -       -     
-    n_t_61x                     46       V        -       -       -     
-    n_t_62x                     48       V        -       -       -     
-    n_t_65x                     16       V        1       0       4     
     n_t_66x                     0        I        6       -       -     
-    n_t_67x                     51       V        1       0       4     
     n_t_68x                     0        I        2       -       -     
     n_t_69x                     0        I        1       -       -     
     n_t_70x                     0        I        1       -       -     
@@ -2747,7 +2795,6 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_74x                     0        I        2       -       -     
     n_t_74x             oe      0        I        2       -       -     
     n_t_7x                      0        I        55      -       -     
-    n_t_80x                     91       V        -       -       -     
     n_t_83x                     0        I        1       -       -     
     n_t_84x                     0        I        1       -       -     
     n_t_86x                     0        N        -       -       -     
@@ -2761,28 +2808,18 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_8x                      0        I        1       -       -     
     n_t_90x                     0        I        15      -       -     
     n_t_90x             oe      0        I        27      -       -     
-    n_t_92x                     85       V        -       -       -     
-    n_t_96x                     87       V        -       -       -     
     n_t_97x                     0        I        1       -       -     
     n_t_98x                     0        I        1       -       -     
     n_t_9x                      0        I        1       -       -     
-    nd0                         83       V        2       0       4     
-    nd0                 oe      83       X        1       0       1     
-    nd1                         82       V        2       0       4     
-    nd1                 oe      82       X        1       0       1     
-    nd2                         79       V        2       0       4     
-    nd2                 oe      79       X        1       0       1     
-    power_ok_low                25       V        -       -       -     
-    rd00                        70       V        -       -       -     
-    rd01                        73       V        -       -       -     
-    rd02                        78       V        -       -       -     
-    rmt                         71       V        -       -       -     
-    rtt_low                     72       V        -       -       -     
-    run                         27       V        -       -       -     
-    s_g_low                     95       V        2       0       4     
-    s_g_low             oe      95       X        1       0       1     
-    skip_low                    11       V        12      0       4     
-    skip_low            oe      11       X        1       0       1     
+    nn                          100      V        7       0       4     
+    nn                  oe      100      X        1       0       1     
+    parity                      60       V        -       -       -     
+    power_ok_low                27       V        -       -       -     
+    rr                          1        V        1       0       4     
+    rr                  oe      1        X        1       0       1     
+    run                         30       V        -       -       -     
+    skip_low                    14       V        12      0       4     
+    skip_low            oe      14       X        1       0       1     
     sr00                        0        N        -       -       -     
     sr00                d       0        M        11      0       4     
     sr00                ar      0        M        1       0       1     
@@ -2836,21 +2873,26 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     sync                ap      0        M        1       0       1     
     sync                ar      0        M        1       0       1     
     sync                ck      0        M        1       0       1     
-    t_m_enable                  98       V        7       0       4     
-    t_m_enable          oe      98       X        1       0       1     
-    tp3                         21       V        -       -       -     
-    tp4                         19       V        -       -       -     
+    t_cpld                      79       V        -       -       -     
+    tp3                         23       V        -       -       -     
+    tp4                         22       V        -       -       -     
     tpg0                        0        N        -       -       -     
     tpg0                d       0        M        1       0       4     
     tpg0                ap      0        M        1       0       1     
     tpg0                ar      0        M        1       0       1     
     tpg0                ck      0        M        1       0       1     
-    unith                       96       V        1       0       4     
-    unith               oe      96       X        1       0       1     
-    wd_enab                     80       V        3       0       4     
-    wd_enab             oe      80       X        1       0       1     
-    wpt                         81       V        1       0       4     
-    wpt                 oe      81       X        1       0       1     
+    tr_skip_low                 63       V        -       -       -     
+    tt                          2        V        1       0       4     
+    tt                  oe      2        X        1       0       1     
+    v                           80       V        -       -       -     
+    w2                          19       V        1       0       4     
+    w3                          54       V        1       0       4     
+    w2w1                        48       V        -       -       -     
+    w4w3                        50       V        -       -       -     
+    x                           81       V        2       0       4     
+    x                   oe      81       X        1       0       1     
+    z                           82       V        3       0       4     
+    z                   oe      82       X        1       0       1     
 
 
 LEGEND    D : default variable         F : field      G : group

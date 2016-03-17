@@ -1,11 +1,11 @@
-{COMPONENT C:\USERS\VINCE\DOCUMENTS\WEBSVN\TRUNK\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E.SYM
+{COMPONENT C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E.SYM
 
  {ENVIRONMENT
   {PDIFvrev 3.00}
   {Program "CUPL(WM) Version 5.0a"}
   {DBtype "Schematic"}
   {DBvrev 1.01}
-  {DBtime "Wed Sep 16 12:22:31 2015 "}
+  {DBtime "Thu Mar 10 23:02:14 2016 "}
   {DBunit "MIL"}
   {DBgrid 10}
   {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
@@ -34,61 +34,61 @@
   {PIN_DEF
    [Ly "PINCON"]
    {P N_T_6X {Pt "INPUT"}{Lq 0}{Ploc 100 440}}
-   {P MD11_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 400}}
-   {P MD10_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 380}}
-   {P MD09_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 360}}
-   {P MD08_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 340}}
-   {P INITIALI {Pt "INPUT"}{Lq 0}{Ploc 100 320}}
-   {P TP4 {Pt "INPUT"}{Lq 0}{Ploc 100 300}}
-   {P TP3 {Pt "INPUT"}{Lq 0}{Ploc 100 280}}
-   {P IO_PAUSE {Pt "INPUT"}{Lq 0}{Ploc 100 260}}
-   {P MD07_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 240}}
-   {P MD06_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
-   {P MD05_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
-   {P MD04_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
-   {P MD03_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
-   {P RX_ERROR {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
-   {P RX_TR_RE {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
-   {P RX_DONE_ {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
-   {P N_T_5X {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
-   {P N_T_1X {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
-   {P RX_SHIFT {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
-   {P RX_OUT_L {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
-   {P DATA11_L {Pt "I/O"}{Lq 0}{Ploc 360 20}}
-   {P DATA10_L {Pt "I/O"}{Lq 0}{Ploc 360 40}}
-   {P DATA9_LO {Pt "I/O"}{Lq 0}{Ploc 360 60}}
-   {P DATA8_LO {Pt "I/O"}{Lq 0}{Ploc 360 80}}
-   {P SKIP_LOW {Pt "I/O"}{Lq 0}{Ploc 360 100}}
-   {P INT_RQST {Pt "I/O"}{Lq 0}{Ploc 360 120}}
-   {P INTERNAL {Pt "I/O"}{Lq 0}{Ploc 360 140}}
-   {P C1_LOW {Pt "I/O"}{Lq 0}{Ploc 360 160}}
-   {P C0_LOW {Pt "I/O"}{Lq 0}{Ploc 360 180}}
-   {P DATA7_LO {Pt "I/O"}{Lq 0}{Ploc 360 200}}
-   {P DATA6_LO {Pt "I/O"}{Lq 0}{Ploc 360 220}}
-   {P DATA5_LO {Pt "I/O"}{Lq 0}{Ploc 360 240}}
-   {P DATA4_LO {Pt "I/O"}{Lq 0}{Ploc 360 260}}
-   {P DATA3_LO {Pt "I/O"}{Lq 0}{Ploc 360 280}}
-   {P DATA2_LO {Pt "I/O"}{Lq 0}{Ploc 360 300}}
-   {P DATA1_LO {Pt "I/O"}{Lq 0}{Ploc 360 320}}
-   {P DATA0_LO {Pt "I/O"}{Lq 0}{Ploc 360 340}}
-   {P PARITY {Pt "I/O"}{Lq 0}{Ploc 360 360}}
-   {P DONE_SKI {Pt "I/O"}{Lq 0}{Ploc 360 380}}
-   {P TR_SKIP_ {Pt "I/O"}{Lq 0}{Ploc 360 400}}
-   {P RX_RUN_L {Pt "I/O"}{Lq 0}{Ploc 360 420}}
-   {P F {Pt "I/O"}{Lq 0}{Ploc 360 440}}
-   {P L {Pt "I/O"}{Lq 0}{Ploc 360 460}}
-   {P RX_INIT_ {Pt "I/O"}{Lq 0}{Ploc 360 480}}
-   {P V {Pt "I/O"}{Lq 0}{Ploc 360 500}}
-   {P Z {Pt "I/O"}{Lq 0}{Ploc 360 520}}
-   {P RX_DATA_ {Pt "I/O"}{Lq 0}{Ploc 360 540}}
-   {P DD {Pt "I/O"}{Lq 0}{Ploc 360 560}}
-   {P RX_12_BI {Pt "I/O"}{Lq 0}{Ploc 360 580}}
-   {P N_T_7X {Pt "I/O"}{Lq 0}{Ploc 360 600}}
-   {P N_T_8X {Pt "I/O"}{Lq 0}{Ploc 360 620}}
-   {P N_T_9X {Pt "I/O"}{Lq 0}{Ploc 360 640}}
-   {P JJ {Pt "I/O"}{Lq 0}{Ploc 360 660}}
-   {P NN {Pt "I/O"}{Lq 0}{Ploc 360 680}}
-   {P TT {Pt "I/O"}{Lq 0}{Ploc 360 700}}
+   {P RX_OUT_L {Pt "INPUT"}{Lq 0}{Ploc 100 400}}
+   {P MD11_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 380}}
+   {P MD10_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 360}}
+   {P MD09_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 340}}
+   {P MD08_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 320}}
+   {P INITIALI {Pt "INPUT"}{Lq 0}{Ploc 100 300}}
+   {P TP4 {Pt "INPUT"}{Lq 0}{Ploc 100 280}}
+   {P TP3 {Pt "INPUT"}{Lq 0}{Ploc 100 260}}
+   {P IO_PAUSE {Pt "INPUT"}{Lq 0}{Ploc 100 240}}
+   {P MD07_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
+   {P MD06_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P MD05_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P MD04_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P MD03_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P RX_ERROR {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P RX_TR_RE {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P RX_DONE_ {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P N_T_5X {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P N_T_1X {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P RX_SHIFT {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P TT {Pt "I/O"}{Lq 0}{Ploc 360 20}}
+   {P DATA9_LO {Pt "I/O"}{Lq 0}{Ploc 360 40}}
+   {P DATA11_L {Pt "I/O"}{Lq 0}{Ploc 360 60}}
+   {P DATA10_L {Pt "I/O"}{Lq 0}{Ploc 360 80}}
+   {P DATA8_LO {Pt "I/O"}{Lq 0}{Ploc 360 100}}
+   {P SKIP_LOW {Pt "I/O"}{Lq 0}{Ploc 360 120}}
+   {P INT_RQST {Pt "I/O"}{Lq 0}{Ploc 360 140}}
+   {P INTERNAL {Pt "I/O"}{Lq 0}{Ploc 360 160}}
+   {P C1_LOW {Pt "I/O"}{Lq 0}{Ploc 360 180}}
+   {P C0_LOW {Pt "I/O"}{Lq 0}{Ploc 360 200}}
+   {P DATA7_LO {Pt "I/O"}{Lq 0}{Ploc 360 220}}
+   {P DATA6_LO {Pt "I/O"}{Lq 0}{Ploc 360 240}}
+   {P DATA5_LO {Pt "I/O"}{Lq 0}{Ploc 360 260}}
+   {P DATA4_LO {Pt "I/O"}{Lq 0}{Ploc 360 280}}
+   {P DATA3_LO {Pt "I/O"}{Lq 0}{Ploc 360 300}}
+   {P DATA2_LO {Pt "I/O"}{Lq 0}{Ploc 360 320}}
+   {P DATA1_LO {Pt "I/O"}{Lq 0}{Ploc 360 340}}
+   {P DATA0_LO {Pt "I/O"}{Lq 0}{Ploc 360 360}}
+   {P PARITY {Pt "I/O"}{Lq 0}{Ploc 360 380}}
+   {P DONE_SKI {Pt "I/O"}{Lq 0}{Ploc 360 400}}
+   {P TR_SKIP_ {Pt "I/O"}{Lq 0}{Ploc 360 420}}
+   {P RX_RUN_L {Pt "I/O"}{Lq 0}{Ploc 360 440}}
+   {P F {Pt "I/O"}{Lq 0}{Ploc 360 460}}
+   {P L {Pt "I/O"}{Lq 0}{Ploc 360 480}}
+   {P RX_INIT_ {Pt "I/O"}{Lq 0}{Ploc 360 500}}
+   {P V {Pt "I/O"}{Lq 0}{Ploc 360 520}}
+   {P Z {Pt "I/O"}{Lq 0}{Ploc 360 540}}
+   {P RX_DATA_ {Pt "I/O"}{Lq 0}{Ploc 360 560}}
+   {P DD {Pt "I/O"}{Lq 0}{Ploc 360 580}}
+   {P RX_12_BI {Pt "I/O"}{Lq 0}{Ploc 360 600}}
+   {P N_T_7X {Pt "I/O"}{Lq 0}{Ploc 360 620}}
+   {P N_T_8X {Pt "I/O"}{Lq 0}{Ploc 360 640}}
+   {P N_T_9X {Pt "I/O"}{Lq 0}{Ploc 360 660}}
+   {P JJ {Pt "I/O"}{Lq 0}{Ploc 360 680}}
+   {P NN {Pt "I/O"}{Lq 0}{Ploc 360 700}}
   }
 
   {PKG
@@ -157,7 +157,7 @@
    {Pnl 340 690}
    {Pnl 340 710}
 
-   {Sd A 89 7 8 9 10 12 19 21 24 32 33 34 35 44 72 77 79 91 92 96 99 1 2 3 4 11 14 18 22 23 26 29 30 31 37 38 39 42 58 59 60 70 71 73 74 78 80 81 82 83 85 86 94 95 98 100}
+   {Sd A 89 1 9 10 11 12 15 22 23 26 34 35 37 38 47 74 79 81 91 92 99 2 3 4 7 8 14 16 21 24 25 29 31 32 33 39 42 44 46 60 62 63 72 73 77 78 80 82 83 85 86 94 95 96 98 100}
   }
 
   {PIC
@@ -224,62 +224,62 @@
    [Ly "PINNAM"]
    [Tj "LC"]
    {T "N_T_6X" 140 440}
-   {T "MD11_LOW" 140 400}
-   {T "MD10_LOW" 140 380}
-   {T "MD09_LOW" 140 360}
-   {T "MD08_LOW" 140 340}
-   {T "INITIALI" 140 320}
-   {T "TP4" 140 300}
-   {T "TP3" 140 280}
-   {T "IO_PAUSE" 140 260}
-   {T "MD07_LOW" 140 240}
-   {T "MD06_LOW" 140 220}
-   {T "MD05_LOW" 140 200}
-   {T "MD04_LOW" 140 180}
-   {T "MD03_LOW" 140 160}
-   {T "RX_ERROR" 140 140}
-   {T "RX_TR_RE" 140 120}
-   {T "RX_DONE_" 140 100}
-   {T "N_T_5X" 140 80}
-   {T "N_T_1X" 140 60}
-   {T "RX_SHIFT" 140 40}
-   {T "RX_OUT_L" 140 20}
+   {T "RX_OUT_L" 140 400}
+   {T "MD11_LOW" 140 380}
+   {T "MD10_LOW" 140 360}
+   {T "MD09_LOW" 140 340}
+   {T "MD08_LOW" 140 320}
+   {T "INITIALI" 140 300}
+   {T "TP4" 140 280}
+   {T "TP3" 140 260}
+   {T "IO_PAUSE" 140 240}
+   {T "MD07_LOW" 140 220}
+   {T "MD06_LOW" 140 200}
+   {T "MD05_LOW" 140 180}
+   {T "MD04_LOW" 140 160}
+   {T "MD03_LOW" 140 140}
+   {T "RX_ERROR" 140 120}
+   {T "RX_TR_RE" 140 100}
+   {T "RX_DONE_" 140 80}
+   {T "N_T_5X" 140 60}
+   {T "N_T_1X" 140 40}
+   {T "RX_SHIFT" 140 20}
    [Tj "RC"]
-   {T "DATA11_L" 320 20}
-   {T "DATA10_L" 320 40}
-   {T "DATA9_LO" 320 60}
-   {T "DATA8_LO" 320 80}
-   {T "SKIP_LOW" 320 100}
-   {T "INT_RQST" 320 120}
-   {T "INTERNAL" 320 140}
-   {T "C1_LOW" 320 160}
-   {T "C0_LOW" 320 180}
-   {T "DATA7_LO" 320 200}
-   {T "DATA6_LO" 320 220}
-   {T "DATA5_LO" 320 240}
-   {T "DATA4_LO" 320 260}
-   {T "DATA3_LO" 320 280}
-   {T "DATA2_LO" 320 300}
-   {T "DATA1_LO" 320 320}
-   {T "DATA0_LO" 320 340}
-   {T "PARITY" 320 360}
-   {T "DONE_SKI" 320 380}
-   {T "TR_SKIP_" 320 400}
-   {T "RX_RUN_L" 320 420}
-   {T "F" 320 440}
-   {T "L" 320 460}
-   {T "RX_INIT_" 320 480}
-   {T "V" 320 500}
-   {T "Z" 320 520}
-   {T "RX_DATA_" 320 540}
-   {T "DD" 320 560}
-   {T "RX_12_BI" 320 580}
-   {T "N_T_7X" 320 600}
-   {T "N_T_8X" 320 620}
-   {T "N_T_9X" 320 640}
-   {T "JJ" 320 660}
-   {T "NN" 320 680}
-   {T "TT" 320 700}
+   {T "TT" 320 20}
+   {T "DATA9_LO" 320 40}
+   {T "DATA11_L" 320 60}
+   {T "DATA10_L" 320 80}
+   {T "DATA8_LO" 320 100}
+   {T "SKIP_LOW" 320 120}
+   {T "INT_RQST" 320 140}
+   {T "INTERNAL" 320 160}
+   {T "C1_LOW" 320 180}
+   {T "C0_LOW" 320 200}
+   {T "DATA7_LO" 320 220}
+   {T "DATA6_LO" 320 240}
+   {T "DATA5_LO" 320 260}
+   {T "DATA4_LO" 320 280}
+   {T "DATA3_LO" 320 300}
+   {T "DATA2_LO" 320 320}
+   {T "DATA1_LO" 320 340}
+   {T "DATA0_LO" 320 360}
+   {T "PARITY" 320 380}
+   {T "DONE_SKI" 320 400}
+   {T "TR_SKIP_" 320 420}
+   {T "RX_RUN_L" 320 440}
+   {T "F" 320 460}
+   {T "L" 320 480}
+   {T "RX_INIT_" 320 500}
+   {T "V" 320 520}
+   {T "Z" 320 540}
+   {T "RX_DATA_" 320 560}
+   {T "DD" 320 580}
+   {T "RX_12_BI" 320 600}
+   {T "N_T_7X" 320 620}
+   {T "N_T_8X" 320 640}
+   {T "N_T_9X" 320 660}
+   {T "JJ" 320 680}
+   {T "NN" 320 700}
    [Ly "DEVICE"]
    [Tj "CT"]
    {T "F1508ISPQFP100" 230 -10}
@@ -293,7 +293,7 @@
    {EX
     [Ly "ATTR2"]
     [Ts 12][Tj "CT"][Tr 0][Tm "N"]
-    {At PLD C:\USERS\VINCE\DOCUMENTS\WEBSVN\TRUNK\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E 230 720}
+    {At PLD C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E 230 720}
    }
   }
  }
@@ -304,6 +304,8 @@
 
   {NET_DEF
    {N N_T_6X
+   }
+   {N RX_OUT_L
    }
    {N MD11_LOW
    }
@@ -343,13 +345,13 @@
    }
    {N RX_SHIFT
    }
-   {N RX_OUT_L
+   {N TT
+   }
+   {N DATA9_LO
    }
    {N DATA11_L
    }
    {N DATA10_L
-   }
-   {N DATA9_LO
    }
    {N DATA8_LO
    }
@@ -412,8 +414,6 @@
    {N JJ
    }
    {N NN
-   }
-   {N TT
    }
   }
 
