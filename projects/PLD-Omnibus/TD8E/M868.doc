@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          f1508ispqfp100  Library DLIB-h-40-2
-Created         Tue Mar 15 18:49:30 2016
+Created         Fri Mar 18 14:03:51 2016
 Name            m868 
 Partno          cpld 
 Revision        01 
@@ -19,39 +19,27 @@ Location        E1
                             Expanded Product Terms
 ===============================================================================
 
-bb =>
-    tpg0
+!bb =>
+    1 
 
 bb.oe  =>
-    !bb
+    !tpg0
 
-c0_low =>
-    md10_low & !md11_low
-  # w4w3
-  # w2w1
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!c0_low =>
+    1 
 
 c0_low.oe  =>
-    !c0_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      md11_low & !w2w1 & !w4w3
 
-c1_low =>
-    w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!c1_low =>
+    1 
 
 c1_low.oe  =>
-    !c1_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !w2w1 & !w4w3
 
 !cc_67x =>
     !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
@@ -469,204 +457,120 @@ cc_uts_low =>
 cc_wrt_ok =>
     df_sel_er_low & !df_time_er & !initialize & power_ok_low & !run & !t_cpld
 
-data00_low =>
-    !md11_low & !sr00
-  # !cc_unit & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data00_low =>
+    1 
 
 data00_low.oe  =>
-    !data00_low
+    cc_unit & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr00 & !w2w1 & !w4w3
 
-data01_low =>
-    !md11_low & !sr01
-  # !cc_f_r & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data01_low =>
+    1 
 
 data01_low.oe  =>
-    !data01_low
+    cc_f_r & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr01 & !w2w1 & !w4w3
 
-data02_low =>
-    !md11_low & !sr02
-  # !cc_s_g & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data02_low =>
+    1 
 
 data02_low.oe  =>
-    !data02_low
+    cc_s_g & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr02 & !w2w1 & !w4w3
 
-data03_low =>
-    !md11_low & !sr03
-  # !cc_r_w & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data03_low =>
+    1 
 
 data03_low.oe  =>
-    !data03_low
+    cc_r_w & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr03 & !w2w1 & !w4w3
 
-data04_low =>
-    !md11_low & !sr04
-  # md11_low & !t_cpld
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data04_low =>
+    1 
 
 data04_low.oe  =>
-    !data04_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & md11_low & t_cpld & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr04 & !w2w1 & !w4w3
 
-data05_low =>
-    !md11_low & !sr05
-  # !df_time_er & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data05_low =>
+    1 
 
 data05_low.oe  =>
-    !data05_low
+    df_time_er & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr05 & !w2w1 & !w4w3
 
-data06_low =>
-    !md11_low & !sr06
-  # md11_low & mtr0_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data06_low =>
+    1 
 
 data06_low.oe  =>
-    !data06_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & md11_low & !mtr0_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr06 & !w2w1 & !w4w3
 
-data07_low =>
-    !md11_low & !sr07
-  # md11_low & mtr1_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data07_low =>
+    1 
 
 data07_low.oe  =>
-    !data07_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & md11_low & !mtr1_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr07 & !w2w1 & !w4w3
 
-data08_low =>
-    !md11_low & !sr08
-  # md11_low & mtr2_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data08_low =>
+    1 
 
 data08_low.oe  =>
-    !data08_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & md11_low & !mtr2_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr08 & !w2w1 & !w4w3
 
-data09_low =>
-    !md11_low & !sr09
-  # md11_low & mtr3_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data09_low =>
+    1 
 
 data09_low.oe  =>
-    !data09_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & md11_low & !mtr3_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr09 & !w2w1 & !w4w3
 
-data10_low =>
-    !md11_low & !sr10
-  # md11_low & mtr4_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data10_low =>
+    1 
 
 data10_low.oe  =>
-    !data10_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & md11_low & !mtr4_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr10 & !w2w1 & !w4w3
 
-data11_low =>
-    !md11_low & !sr11
-  # md11_low & mtr5_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data11_low =>
+    1 
 
 data11_low.oe  =>
-    !data11_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & md11_low & !mtr5_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & 
+      !md10_low & !md11_low & sr11 & !w2w1 & !w4w3
 
-dd =>
-    df_comp_wd & !gdollar_3
-  # !df_comp_wd & gdollar_3
+!dd =>
+    1 
 
 dd.oe  =>
-    !dd
+    df_comp_wd & gdollar_3
+  # !df_comp_wd & !gdollar_3
 
 !df_comp_wd.d  =>
     1 
@@ -744,12 +648,12 @@ df_time_er.ck  =>
 df_time_er_low =>
     !df_time_er
 
-ff =>
-    df_comp_wd & !gdollar_2
-  # !df_comp_wd & gdollar_2
+!ff =>
+    1 
 
 ff.oe  =>
-    !ff
+    !df_comp_wd & !gdollar_2
+  # df_comp_wd & gdollar_2
 
 !gdollar_0.d  =>
     1 
@@ -866,35 +770,29 @@ gdollar_7.ck  =>
     gdollar_6
 
 !int_rqst_low =>
-    0 
+    1 
 
 int_rqst_low.oe  =>
-    !int_rqst_low
+    0 
 
-internal_io_low =>
-    w4w3
-  # w2w1
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!internal_io_low =>
+    1 
 
 internal_io_low.oe  =>
-    !internal_io_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & 
+      !w4w3
 
-jj =>
-    !power_ok_low
-  # n_t_20x
+!jj =>
+    1 
 
 jj.oe  =>
-    !jj
+    !n_t_20x & power_ok_low
 
-ll =>
-    !cc_unit
+!ll =>
+    1 
 
 ll.oe  =>
-    !ll
+    cc_unit
 
 !mtr0_low.d  =>
     cc_uts & !mtr1_low
@@ -1103,10 +1001,6 @@ n_t_32x =>
     !df_comp_wd & !gdollar_0
   # df_comp_wd & gdollar_0
 
-n_t_33x =>
-    !df_comp_wd & gdollar_0
-  # df_comp_wd & !gdollar_0
-
 n_t_34x =>
     !gdollar_3
 
@@ -1136,17 +1030,9 @@ n_t_36x.ck  =>
     df_comp_wd & gdollar_3
   # !df_comp_wd & !gdollar_3
 
-n_t_38x =>
-    !df_comp_wd & gdollar_3
-  # df_comp_wd & !gdollar_3
-
 !n_t_39x =>
     !df_comp_wd & !gdollar_2
   # df_comp_wd & gdollar_2
-
-n_t_39x =>
-    !df_comp_wd & gdollar_2
-  # df_comp_wd & !gdollar_2
 
 !n_t_3x =>
     !data06_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
@@ -1274,10 +1160,6 @@ n_t_68x =>
     j & !sync
   # !j & sync
 
-n_t_72x =>
-    !j & !sync
-  # j & sync
-
 !n_t_73x =>
     !cc_t_m_en & j & sync
   # !cc_t_m_en & !j & !sync
@@ -1286,19 +1168,9 @@ n_t_72x =>
   # cc_t_m_en & cc_tpg1 & !sync
   # cc_tpg1 & !j & !sync
 
-n_t_73x =>
-    !cc_t_m_en & !j & sync
-  # !cc_t_m_en & j & !sync
-  # cc_t_m_en & !cc_tpg1 & !sync
-  # cc_t_m_en & cc_tpg1 & sync
-
 !n_t_74x =>
     cc_tpg1 & sync
   # !cc_tpg1 & !sync
-
-n_t_74x =>
-    cc_tpg1 & !sync
-  # !cc_tpg1 & sync
 
 n_t_7x =>
     !cc_dtp & !tp3
@@ -1426,38 +1298,6 @@ n_t_89x =>
   # cc_f_r & cc_s_g & cc_unit & w2w1
   # cc_f_r & cc_s_g & cc_unit & w4w3
 
-n_t_90x =>
-    !cc_f_r & data01_low
-  # !cc_f_r & md04_low
-  # !cc_f_r & md05_low
-  # !cc_f_r & md06_low
-  # !cc_f_r & md03_low
-  # !cc_f_r & io_pause_low
-  # !cc_f_r & w2w1
-  # !cc_f_r & w4w3
-  # cc_f_r & !data01_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
-      !md06_low & !w2w1 & !w4w3
-  # !cc_unit & data00_low
-  # !cc_unit & md04_low
-  # !cc_unit & md05_low
-  # !cc_unit & md06_low
-  # !cc_unit & md03_low
-  # !cc_unit & io_pause_low
-  # !cc_unit & w2w1
-  # !cc_unit & w4w3
-  # cc_unit & !data00_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
-      !md06_low & !w2w1 & !w4w3
-  # !cc_s_g & data02_low
-  # !cc_s_g & md04_low
-  # !cc_s_g & md05_low
-  # !cc_s_g & md06_low
-  # !cc_s_g & md03_low
-  # !cc_s_g & io_pause_low
-  # !cc_s_g & w2w1
-  # !cc_s_g & w4w3
-  # cc_s_g & !data02_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
-      !md06_low & !w2w1 & !w4w3
-
 n_t_97x =>
     !cc_setdly
 
@@ -1468,40 +1308,29 @@ n_t_98x =>
     !data10_low & !io_pause_low & !md03_low & !md04_low & !md05_low & 
       !md06_low & !w2w1 & !w4w3
 
-nn =>
-    t_cpld
-  # run
-  # !power_ok_low
-  # initialize
-  # df_time_er
-  # !df_sel_er_low
-  # !cc_t_m_en
+!nn =>
+    1 
 
 nn.oe  =>
-    !nn
+    cc_t_m_en & df_sel_er_low & !df_time_er & !initialize & power_ok_low & 
+      !run & !t_cpld
 
-rr =>
-    !run
+!rr =>
+    1 
 
 rr.oe  =>
-    !rr
+    run
 
-skip_low =>
-    !md10_low & !md11_low & !n_t_36x
-  # !md09_low
-  # md10_low & md11_low
-  # md10_low & !n_t_25x
-  # !df_time_er & md11_low
-  # w4w3
-  # w2w1
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!skip_low =>
+    1 
 
 skip_low.oe  =>
-    !skip_low
+    df_time_er & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
+      md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & md09_low & 
+      md10_low & !md11_low & n_t_25x & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & md09_low & 
+      !md10_low & !md11_low & n_t_36x & !w2w1 & !w4w3
 
 !sr00.d  =>
     data00_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & 
@@ -2475,11 +2304,11 @@ tpg0.ar  =>
 tpg0.ck  =>
     cc_tpg_clk
 
-tt =>
-    cc_f_r
+!tt =>
+    1 
 
 tt.oe  =>
-    !tt
+    !cc_f_r
 
 w2 =>
     !io_pause_low & !md07_low
@@ -2487,20 +2316,18 @@ w2 =>
 w3 =>
     !io_pause_low & !md08_low
 
-x =>
-    df_comp_wd & !gdollar_0
-  # !df_comp_wd & gdollar_0
+!x =>
+    1 
 
 x.oe  =>
-    !x
+    !df_comp_wd & !gdollar_0
+  # df_comp_wd & gdollar_0
 
-z =>
-    !power_ok_low
-  # n_t_86x
-  # cc_t_m_en
+!z =>
+    1 
 
 z.oe  =>
-    !z
+    !cc_t_m_en & !n_t_86x & power_ok_low
 
 
 ===============================================================================
@@ -2514,9 +2341,9 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     bb                          83       V        1       0       4     
     bb                  oe      83       X        1       0       1     
     bb_cpld                     83       V        -       -       -     
-    c0_low                      25       V        9       0       4     
-    c0_low              oe      25       X        1       0       1     
-    c1_low                      24       V        9       0       4     
+    c0_low                      25       V        1       0       4     
+    c0_low              oe      25       X        2       0       1     
+    c1_low                      24       V        1       0       4     
     c1_low              oe      24       X        1       0       1     
     cc_67x                      0        I        1       -       -     
     cc_67x_low                  0        I        7       -       -     
@@ -2590,32 +2417,32 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     clrdly_low                  94       V        -       -       -     
     d                           72       V        -       -       -     
     d_cpld                      72       V        -       -       -     
-    data00_low                  46       V        11      0       4     
-    data00_low          oe      46       X        1       0       1     
-    data01_low                  44       V        11      0       4     
-    data01_low          oe      44       X        1       0       1     
-    data02_low                  42       V        11      0       4     
-    data02_low          oe      42       X        1       0       1     
-    data03_low                  39       V        11      0       4     
-    data03_low          oe      39       X        1       0       1     
-    data04_low                  33       V        11      0       4     
-    data04_low          oe      33       X        1       0       1     
-    data05_low                  32       V        11      0       4     
-    data05_low          oe      32       X        1       0       1     
-    data06_low                  31       V        11      0       4     
-    data06_low          oe      31       X        1       0       1     
-    data07_low                  29       V        11      0       4     
-    data07_low          oe      29       X        1       0       1     
-    data08_low                  8        V        11      0       4     
-    data08_low          oe      8        X        1       0       1     
-    data09_low                  3        V        11      0       4     
-    data09_low          oe      3        X        1       0       1     
-    data10_low                  7        V        11      0       4     
-    data10_low          oe      7        X        1       0       1     
-    data11_low                  4        V        11      0       4     
-    data11_low          oe      4        X        1       0       1     
-    dd                          85       V        2       0       4     
-    dd                  oe      85       X        1       0       1     
+    data00_low                  46       V        1       0       4     
+    data00_low          oe      46       X        2       0       1     
+    data01_low                  44       V        1       0       4     
+    data01_low          oe      44       X        2       0       1     
+    data02_low                  42       V        1       0       4     
+    data02_low          oe      42       X        2       0       1     
+    data03_low                  39       V        1       0       4     
+    data03_low          oe      39       X        2       0       1     
+    data04_low                  33       V        1       0       4     
+    data04_low          oe      33       X        2       0       1     
+    data05_low                  32       V        1       0       4     
+    data05_low          oe      32       X        2       0       1     
+    data06_low                  31       V        1       0       4     
+    data06_low          oe      31       X        2       0       1     
+    data07_low                  29       V        1       0       4     
+    data07_low          oe      29       X        2       0       1     
+    data08_low                  8        V        1       0       4     
+    data08_low          oe      8        X        2       0       1     
+    data09_low                  3        V        1       0       4     
+    data09_low          oe      3        X        2       0       1     
+    data10_low                  7        V        1       0       4     
+    data10_low          oe      7        X        2       0       1     
+    data11_low                  4        V        1       0       4     
+    data11_low          oe      4        X        2       0       1     
+    dd                          85       V        1       0       4     
+    dd                  oe      85       X        2       0       1     
     df_comp_wd                  0        N        -       -       -     
     df_comp_wd          d       0        M        1       0       4     
     df_comp_wd          ap      0        M        2       0       1     
@@ -2636,8 +2463,8 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     df_time_er_low              0        I        1       -       -     
     done_skip_low               62       V        -       -       -     
     f                           73       V        -       -       -     
-    ff                          86       V        2       0       4     
-    ff                  oe      86       X        1       0       1     
+    ff                          86       V        1       0       4     
+    ff                  oe      86       X        2       0       1     
     ff_cpld                     86       V        -       -       -     
     gdollar_0                   0        N        -       -       -     
     gdollar_0           d       0        M        1       0       4     
@@ -2681,11 +2508,11 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     initialize                  15       V        -       -       -     
     int_rqst_low                16       V        1       0       4     
     int_rqst_low        oe      16       X        1       0       1     
-    internal_io_low             21       V        7       0       4     
+    internal_io_low             21       V        1       0       4     
     internal_io_low     oe      21       X        1       0       1     
     io_pause_low                26       V        -       -       -     
     j                           74       V        -       -       -     
-    jj                          96       V        2       0       4     
+    jj                          96       V        1       0       4     
     jj                  oe      96       X        1       0       1     
     l                           77       V        -       -       -     
     ll                          99       V        1       0       4     
@@ -2759,7 +2586,6 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_31x                     0        I        3       -       -     
     n_t_32x                     0        I        1       -       -     
     n_t_33x                     0        I        2       -       -     
-    n_t_33x             oe      0        I        2       -       -     
     n_t_34x                     0        I        1       -       -     
     n_t_35x                     0        I        2       -       -     
     n_t_36x                     0        N        -       -       -     
@@ -2767,9 +2593,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_36x             ar      0        M        10      0       1     
     n_t_36x             ck      0        M        1       0       1     
     n_t_38x                     0        I        2       -       -     
-    n_t_38x             oe      0        I        2       -       -     
     n_t_39x                     0        I        2       -       -     
-    n_t_39x             oe      0        I        2       -       -     
     n_t_3x                      0        I        1       -       -     
     n_t_41x                     0        I        1       -       -     
     n_t_42x                     0        I        3       -       -     
@@ -2789,11 +2613,8 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_70x                     0        I        1       -       -     
     n_t_71x                     0        I        1       -       -     
     n_t_72x                     0        I        2       -       -     
-    n_t_72x             oe      0        I        2       -       -     
     n_t_73x                     0        I        6       -       -     
-    n_t_73x             oe      0        I        4       -       -     
     n_t_74x                     0        I        2       -       -     
-    n_t_74x             oe      0        I        2       -       -     
     n_t_7x                      0        I        55      -       -     
     n_t_83x                     0        I        1       -       -     
     n_t_84x                     0        I        1       -       -     
@@ -2807,19 +2628,18 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_89x                     0        I        1       -       -     
     n_t_8x                      0        I        1       -       -     
     n_t_90x                     0        I        15      -       -     
-    n_t_90x             oe      0        I        27      -       -     
     n_t_97x                     0        I        1       -       -     
     n_t_98x                     0        I        1       -       -     
     n_t_9x                      0        I        1       -       -     
-    nn                          100      V        7       0       4     
+    nn                          100      V        1       0       4     
     nn                  oe      100      X        1       0       1     
     parity                      60       V        -       -       -     
     power_ok_low                27       V        -       -       -     
     rr                          1        V        1       0       4     
     rr                  oe      1        X        1       0       1     
     run                         30       V        -       -       -     
-    skip_low                    14       V        12      0       4     
-    skip_low            oe      14       X        1       0       1     
+    skip_low                    14       V        1       0       4     
+    skip_low            oe      14       X        3       0       1     
     sr00                        0        N        -       -       -     
     sr00                d       0        M        11      0       4     
     sr00                ar      0        M        1       0       1     
@@ -2889,9 +2709,9 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     w3                          54       V        1       0       4     
     w2w1                        48       V        -       -       -     
     w4w3                        50       V        -       -       -     
-    x                           81       V        2       0       4     
-    x                   oe      81       X        1       0       1     
-    z                           82       V        3       0       4     
+    x                           81       V        1       0       4     
+    x                   oe      81       X        2       0       1     
+    z                           82       V        1       0       4     
     z                   oe      82       X        1       0       1     
 
 

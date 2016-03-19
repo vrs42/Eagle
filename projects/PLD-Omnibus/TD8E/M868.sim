@@ -116,39 +116,24 @@ PIN  82 =  z
 %END
 
 %EQUATION
-bb =>
-    tpg0
+!bb =>
+    1 
 
 bb.oe  =>
-    !bb
+    !tpg0
 
-c0_low =>
-    md10_low & !md11_low
-  # w4w3
-  # w2w1
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!c0_low =>
+    1 
 
 c0_low.oe  =>
-    !c0_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & md11_low & !w2w1 & !w4w3
 
-c1_low =>
-    w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!c1_low =>
+    1 
 
 c1_low.oe  =>
-    !c1_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !w2w1 & !w4w3
 
 !cc_67x =>
     !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & !w4w3
@@ -534,204 +519,96 @@ cc_uts_low =>
 cc_wrt_ok =>
     df_sel_er_low & !df_time_er & !initialize & power_ok_low & !run & !t_cpld
 
-data00_low =>
-    !md11_low & !sr00
-  # !cc_unit & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data00_low =>
+    1 
 
 data00_low.oe  =>
-    !data00_low
+    cc_unit & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr00 & !w2w1 & !w4w3
 
-data01_low =>
-    !md11_low & !sr01
-  # !cc_f_r & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data01_low =>
+    1 
 
 data01_low.oe  =>
-    !data01_low
+    cc_f_r & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr01 & !w2w1 & !w4w3
 
-data02_low =>
-    !md11_low & !sr02
-  # !cc_s_g & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data02_low =>
+    1 
 
 data02_low.oe  =>
-    !data02_low
+    cc_s_g & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr02 & !w2w1 & !w4w3
 
-data03_low =>
-    !md11_low & !sr03
-  # !cc_r_w & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data03_low =>
+    1 
 
 data03_low.oe  =>
-    !data03_low
+    cc_r_w & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr03 & !w2w1 & !w4w3
 
-data04_low =>
-    !md11_low & !sr04
-  # md11_low & !t_cpld
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data04_low =>
+    1 
 
 data04_low.oe  =>
-    !data04_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & t_cpld & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr04 & !w2w1 & !w4w3
 
-data05_low =>
-    !md11_low & !sr05
-  # !df_time_er & md11_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data05_low =>
+    1 
 
 data05_low.oe  =>
-    !data05_low
+    df_time_er & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr05 & !w2w1 & !w4w3
 
-data06_low =>
-    !md11_low & !sr06
-  # md11_low & mtr0_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data06_low =>
+    1 
 
 data06_low.oe  =>
-    !data06_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !mtr0_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr06 & !w2w1 & !w4w3
 
-data07_low =>
-    !md11_low & !sr07
-  # md11_low & mtr1_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data07_low =>
+    1 
 
 data07_low.oe  =>
-    !data07_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !mtr1_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr07 & !w2w1 & !w4w3
 
-data08_low =>
-    !md11_low & !sr08
-  # md11_low & mtr2_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data08_low =>
+    1 
 
 data08_low.oe  =>
-    !data08_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !mtr2_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr08 & !w2w1 & !w4w3
 
-data09_low =>
-    !md11_low & !sr09
-  # md11_low & mtr3_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data09_low =>
+    1 
 
 data09_low.oe  =>
-    !data09_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !mtr3_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr09 & !w2w1 & !w4w3
 
-data10_low =>
-    !md11_low & !sr10
-  # md11_low & mtr4_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data10_low =>
+    1 
 
 data10_low.oe  =>
-    !data10_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !mtr4_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr10 & !w2w1 & !w4w3
 
-data11_low =>
-    !md11_low & !sr11
-  # md11_low & mtr5_low
-  # w4w3
-  # w2w1
-  # md10_low
-  # md09_low
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!data11_low =>
+    1 
 
 data11_low.oe  =>
-    !data11_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & md11_low & !mtr5_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & !md10_low & !md11_low & sr11 & !w2w1 & !w4w3
 
-dd =>
-    df_comp_wd & !gdollar_3
-  # !df_comp_wd & gdollar_3
+!dd =>
+    1 
 
 dd.oe  =>
-    !dd
+    df_comp_wd & gdollar_3
+  # !df_comp_wd & !gdollar_3
 
 !df_comp_wd.d  =>
     1 
@@ -792,12 +669,12 @@ df_time_er.ck  =>
 df_time_er_low =>
     !df_time_er
 
-ff =>
-    df_comp_wd & !gdollar_2
-  # !df_comp_wd & gdollar_2
+!ff =>
+    1 
 
 ff.oe  =>
-    !ff
+    !df_comp_wd & !gdollar_2
+  # df_comp_wd & gdollar_2
 
 !gdollar_0.d  =>
     1 
@@ -914,35 +791,28 @@ gdollar_7.ck  =>
     gdollar_6
 
 !int_rqst_low =>
-    0 
+    1 
 
 int_rqst_low.oe  =>
-    !int_rqst_low
+    0 
 
-internal_io_low =>
-    w4w3
-  # w2w1
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!internal_io_low =>
+    1 
 
 internal_io_low.oe  =>
-    !internal_io_low
+    !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & !w4w3
 
-jj =>
-    !power_ok_low
-  # n_t_20x
+!jj =>
+    1 
 
 jj.oe  =>
-    !jj
+    !n_t_20x & power_ok_low
 
-ll =>
-    !cc_unit
+!ll =>
+    1 
 
 ll.oe  =>
-    !ll
+    cc_unit
 
 !mtr0_low.d  =>
     cc_uts & !mtr1_low
@@ -1142,10 +1012,6 @@ n_t_32x =>
     !df_comp_wd & !gdollar_0
   # df_comp_wd & gdollar_0
 
-n_t_33x =>
-    !df_comp_wd & gdollar_0
-  # df_comp_wd & !gdollar_0
-
 n_t_34x =>
     !gdollar_3
 
@@ -1175,17 +1041,9 @@ n_t_36x.ck  =>
     df_comp_wd & gdollar_3
   # !df_comp_wd & !gdollar_3
 
-n_t_38x =>
-    !df_comp_wd & gdollar_3
-  # df_comp_wd & !gdollar_3
-
 !n_t_39x =>
     !df_comp_wd & !gdollar_2
   # df_comp_wd & gdollar_2
-
-n_t_39x =>
-    !df_comp_wd & gdollar_2
-  # df_comp_wd & !gdollar_2
 
 !n_t_3x =>
     !data06_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & !w4w3
@@ -1300,10 +1158,6 @@ n_t_68x =>
     j & !sync
   # !j & sync
 
-n_t_72x =>
-    !j & !sync
-  # j & sync
-
 !n_t_73x =>
     !cc_t_m_en & j & sync
   # !cc_t_m_en & !j & !sync
@@ -1312,19 +1166,9 @@ n_t_72x =>
   # cc_t_m_en & cc_tpg1 & !sync
   # cc_tpg1 & !j & !sync
 
-n_t_73x =>
-    !cc_t_m_en & !j & sync
-  # !cc_t_m_en & j & !sync
-  # cc_t_m_en & !cc_tpg1 & !sync
-  # cc_t_m_en & cc_tpg1 & sync
-
 !n_t_74x =>
     cc_tpg1 & sync
   # !cc_tpg1 & !sync
-
-n_t_74x =>
-    cc_tpg1 & !sync
-  # !cc_tpg1 & sync
 
 n_t_7x =>
     !cc_dtp & !tp3
@@ -1431,35 +1275,6 @@ n_t_89x =>
   # cc_f_r & cc_s_g & cc_unit & w2w1
   # cc_f_r & cc_s_g & cc_unit & w4w3
 
-n_t_90x =>
-    !cc_f_r & data01_low
-  # !cc_f_r & md04_low
-  # !cc_f_r & md05_low
-  # !cc_f_r & md06_low
-  # !cc_f_r & md03_low
-  # !cc_f_r & io_pause_low
-  # !cc_f_r & w2w1
-  # !cc_f_r & w4w3
-  # cc_f_r & !data01_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & !w4w3
-  # !cc_unit & data00_low
-  # !cc_unit & md04_low
-  # !cc_unit & md05_low
-  # !cc_unit & md06_low
-  # !cc_unit & md03_low
-  # !cc_unit & io_pause_low
-  # !cc_unit & w2w1
-  # !cc_unit & w4w3
-  # cc_unit & !data00_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & !w4w3
-  # !cc_s_g & data02_low
-  # !cc_s_g & md04_low
-  # !cc_s_g & md05_low
-  # !cc_s_g & md06_low
-  # !cc_s_g & md03_low
-  # !cc_s_g & io_pause_low
-  # !cc_s_g & w2w1
-  # !cc_s_g & w4w3
-  # cc_s_g & !data02_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & !w4w3
-
 n_t_97x =>
     !cc_setdly
 
@@ -1469,40 +1284,25 @@ n_t_98x =>
 !n_t_9x =>
     !data10_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !w2w1 & !w4w3
 
-nn =>
-    t_cpld
-  # run
-  # !power_ok_low
-  # initialize
-  # df_time_er
-  # !df_sel_er_low
-  # !cc_t_m_en
+!nn =>
+    1 
 
 nn.oe  =>
-    !nn
+    cc_t_m_en & df_sel_er_low & !df_time_er & !initialize & power_ok_low & !run & !t_cpld
 
-rr =>
-    !run
+!rr =>
+    1 
 
 rr.oe  =>
-    !rr
+    run
 
-skip_low =>
-    !md10_low & !md11_low & !n_t_36x
-  # !md09_low
-  # md10_low & md11_low
-  # md10_low & !n_t_25x
-  # !df_time_er & md11_low
-  # w4w3
-  # w2w1
-  # md06_low
-  # md05_low
-  # md04_low
-  # md03_low
-  # io_pause_low
+!skip_low =>
+    1 
 
 skip_low.oe  =>
-    !skip_low
+    df_time_er & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & md09_low & !md10_low & md11_low & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & md09_low & md10_low & !md11_low & n_t_25x & !w2w1 & !w4w3
+  # !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & md09_low & !md10_low & !md11_low & n_t_36x & !w2w1 & !w4w3
 
 !sr00.d  =>
     data00_low & !io_pause_low & !md03_low & !md04_low & !md05_low & !md06_low & !md09_low & md10_low & !md11_low & !sr00 & !w2w1 & !w4w3
@@ -2404,11 +2204,11 @@ tpg0.ar  =>
 tpg0.ck  =>
     cc_tpg_clk
 
-tt =>
-    cc_f_r
+!tt =>
+    1 
 
 tt.oe  =>
-    !tt
+    !cc_f_r
 
 w2 =>
     !io_pause_low & !md07_low
@@ -2416,19 +2216,17 @@ w2 =>
 w3 =>
     !io_pause_low & !md08_low
 
-x =>
-    df_comp_wd & !gdollar_0
-  # !df_comp_wd & gdollar_0
+!x =>
+    1 
 
 x.oe  =>
-    !x
+    !df_comp_wd & !gdollar_0
+  # df_comp_wd & gdollar_0
 
-z =>
-    !power_ok_low
-  # n_t_86x
-  # cc_t_m_en
+!z =>
+    1 
 
 z.oe  =>
-    !z
+    !cc_t_m_en & !n_t_86x & power_ok_low
 
 %END
