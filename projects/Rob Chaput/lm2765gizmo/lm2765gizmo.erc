@@ -1,0 +1,12 @@
+EAGLE Version 4.11 Copyright (c) 1988-2003 CadSoft
+
+Electrical Rule Check for C:/Program Files (x86)/Eagle-4.11/projects/Rob Chaput/lm2765gizmo/lm2765gizmo.sch at  7/20/2010 11:23:03p
+
+WARNING: Sheet 1/1: POWER Pin IC2P V+ connected to +5V
+WARNING: Sheet 1/1: POWER Pin IC2P V- connected to GND
+WARNING: Only 1 Pin on net VSENSE
+
+Board and schematic are consistent
+
+    0 errors
+    3 warnings
