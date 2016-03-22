@@ -2507,6 +2507,7 @@ DIN A4, landscape with extra doc field</description>
 <pin name="E2" x="12.7" y="10.16" visible="pad" length="middle" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="INVERTER-N">
+<description>A Negative Logic Inverter.</description>
 <wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.27" x2="1.778" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.778" y1="-1.27" x2="2.032" y2="-1.27" width="0.254" layer="94"/>
@@ -2546,9 +2547,10 @@ DIN A4, landscape with extra doc field</description>
 <circle x="2.54" y="16.256" radius="0.3592" width="0.254" layer="94"/>
 <circle x="2.54" y="16.256" radius="0.254" width="0.254" layer="94"/>
 <circle x="2.54" y="2.54" radius="0.254" width="0.254" layer="94"/>
-<text x="5.08" y="-1.778" size="1.778" layer="94">&gt;Part</text>
+<text x="5.08" y="8.382" size="1.778" layer="94">&gt;Part</text>
 <pin name="IN" x="-5.08" y="0" visible="pad" length="middle" direction="in"/>
 <pin name="OUT" x="7.62" y="2.54" visible="pad" length="middle" direction="out" rot="R180"/>
+<text x="5.08" y="5.842" size="1.778" layer="94">&gt;Value</text>
 </symbol>
 <symbol name="AND-NOR">
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="2.54" width="0.254" layer="94"/>
@@ -2575,6 +2577,7 @@ DIN A4, landscape with extra doc field</description>
 <pin name="OUT" x="12.7" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
 </symbol>
 <symbol name="PULL-UP">
+<description>A pull-up.</description>
 <wire x1="-1.27" y1="3.556" x2="1.27" y2="2.286" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-0.254" x2="-1.27" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="1.27" y1="2.286" x2="-1.27" y2="1.016" width="0.254" layer="94"/>
@@ -2590,6 +2593,7 @@ DIN A4, landscape with extra doc field</description>
 <text x="1.778" y="4.064" size="1.27" layer="94" rot="R90">+5V</text>
 <text x="2.54" y="0" size="1.27" layer="94">&gt;Part</text>
 <pin name="P$1" x="10.16" y="-7.62" visible="pad" length="middle" direction="pas" rot="R180"/>
+<text x="2.54" y="-2.54" size="1.27" layer="94">&gt;Value</text>
 </symbol>
 <symbol name="NAND3">
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
@@ -4832,23 +4836,7 @@ Power: 5V@82ma (max.)
 <sheets>
 <sheet>
 <plain>
-<text x="40.64" y="-15.24" size="1.778" layer="91">+3V@C08U1</text>
-<text x="-30.48" y="-30.48" size="1.778" layer="91">M627</text>
-<text x="10.16" y="-30.48" size="1.778" layer="91">M627</text>
-<text x="25.4" y="-5.08" size="1.778" layer="91">M627</text>
-<text x="38.1" y="17.78" size="1.778" layer="91">M627</text>
-<text x="88.9" y="-15.24" size="1.778" layer="91">M627</text>
-<text x="88.9" y="-33.02" size="1.778" layer="91">M627</text>
-<text x="60.96" y="-17.78" size="1.778" layer="91">M101</text>
-<text x="5.08" y="-83.82" size="1.778" layer="91">M113</text>
-<text x="5.08" y="-93.98" size="1.778" layer="91">M113</text>
-<text x="-15.24" y="-86.36" size="1.778" layer="91">M113</text>
-<text x="-101.6" y="-81.28" size="1.778" layer="91">M101</text>
-<text x="-101.6" y="-91.44" size="1.778" layer="91">M103</text>
-<text x="-48.26" y="60.96" size="1.778" layer="91" rot="R90">M206</text>
-<text x="-20.32" y="60.96" size="1.778" layer="91" rot="R90">M206</text>
-<text x="5.08" y="60.96" size="1.778" layer="91" rot="R90">M206</text>
-<text x="55.88" y="60.96" size="1.778" layer="91" rot="R90">M206</text>
+<text x="40.64" y="-15.24" size="1.778" layer="94">+3V@C08U1</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-129.54" y="-99.06"/>
@@ -5710,13 +5698,6 @@ Power: 5V@82ma (max.)
 </sheet>
 <sheet>
 <plain>
-<text x="-83.82" y="76.2" size="1.778" layer="91">M113</text>
-<text x="-83.82" y="73.66" size="1.778" layer="91">M113</text>
-<text x="-71.12" y="-86.36" size="1.778" layer="91">M115</text>
-<text x="-53.34" y="-86.36" size="1.778" layer="91">M111</text>
-<text x="40.64" y="-48.26" size="1.778" layer="91">M113</text>
-<text x="0" y="53.34" size="1.778" layer="91">M206</text>
-<text x="0" y="25.4" size="1.778" layer="91">M206</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-137.16" y="-93.98"/>
@@ -6807,25 +6788,15 @@ Power: 5V@82ma (max.)
 </sheet>
 <sheet>
 <plain>
-<text x="-116.84" y="66.04" size="1.778" layer="91">M113</text>
-<text x="35.56" y="-38.1" size="1.778" layer="91">M206</text>
-<text x="81.28" y="66.04" size="1.778" layer="91">+3V@B12U1</text>
-<text x="81.28" y="43.18" size="1.778" layer="91">+3V@B12U1</text>
-<text x="48.26" y="43.18" size="1.778" layer="91">8.33us</text>
-<text x="-114.3" y="-2.54" size="1.778" layer="91">M627</text>
-<text x="-116.84" y="20.32" size="1.778" layer="91">M113</text>
-<text x="-38.1" y="-2.54" size="1.778" layer="91">M627</text>
-<text x="-15.24" y="5.08" size="1.778" layer="91">M627</text>
-<text x="-114.3" y="-17.78" size="1.778" layer="91">M115</text>
-<text x="-91.44" y="-25.4" size="1.778" layer="91">M113</text>
-<text x="-63.5" y="-50.8" size="1.778" layer="91">120ms</text>
-<text x="-66.04" y="-45.72" size="1.778" layer="91">Top Pot.</text>
-<text x="33.02" y="-7.62" size="1.778" layer="91">Bottom Pot.</text>
-<text x="15.24" y="-35.56" size="1.778" layer="91">M113</text>
-<text x="45.72" y="5.08" size="1.778" layer="91">M627</text>
-<text x="38.1" y="-12.7" size="1.778" layer="91">70usec</text>
-<text x="-58.42" y="76.2" size="1.778" layer="91">10us</text>
-<text x="-55.88" y="25.4" size="1.778" layer="91">10us</text>
+<text x="81.28" y="66.04" size="1.778" layer="94">+3V@B12U1</text>
+<text x="81.28" y="43.18" size="1.778" layer="94">+3V@B12U1</text>
+<text x="48.26" y="43.18" size="1.778" layer="94">8.33us</text>
+<text x="-63.5" y="-50.8" size="1.778" layer="94">120ms</text>
+<text x="-66.04" y="-45.72" size="1.778" layer="94">Top Pot.</text>
+<text x="33.02" y="-7.62" size="1.778" layer="94">Bottom Pot.</text>
+<text x="38.1" y="-12.7" size="1.778" layer="94">70usec</text>
+<text x="-58.42" y="76.2" size="1.778" layer="94">10us</text>
+<text x="-55.88" y="25.4" size="1.778" layer="94">10us</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="-137.16" y="-88.9"/>
@@ -7701,20 +7672,7 @@ Power: 5V@82ma (max.)
 </sheet>
 <sheet>
 <plain>
-<text x="-104.14" y="76.2" size="1.778" layer="91">M206</text>
-<text x="-58.42" y="76.2" size="1.778" layer="91">M206</text>
-<text x="-15.24" y="83.82" size="1.778" layer="91">M627</text>
-<text x="7.62" y="73.66" size="1.778" layer="91">M206</text>
-<text x="104.14" y="88.9" size="1.778" layer="91">M117</text>
-<text x="58.42" y="88.9" size="1.778" layer="91">M119</text>
-<text x="45.72" y="63.5" size="1.778" layer="91">M206</text>
-<text x="73.66" y="63.5" size="1.778" layer="91">M206</text>
-<text x="101.6" y="63.5" size="1.778" layer="91">M206</text>
-<text x="99.06" y="33.02" size="1.778" layer="91">M206</text>
-<text x="71.12" y="33.02" size="1.778" layer="91">M206</text>
-<text x="33.02" y="33.02" size="1.778" layer="91">M206</text>
-<text x="-7.62" y="66.04" size="1.778" layer="91">+3V@A09U1</text>
-<text x="-15.24" y="12.7" size="1.778" layer="91">M113</text>
+<text x="-7.62" y="66.04" size="1.778" layer="94">+3V@A09U1</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="-132.08" y="-83.82"/>
@@ -9320,12 +9278,11 @@ Power: 5V@82ma (max.)
 </sheet>
 <sheet>
 <plain>
-<text x="50.8" y="45.72" size="1.778" layer="91">G879</text>
-<text x="58.42" y="73.66" size="1.778" layer="91">M121</text>
-<text x="66.04" y="-35.56" size="1.778" layer="91">5usec</text>
-<text x="-58.42" y="17.78" size="1.778" layer="91">+3V@A09U1</text>
-<text x="87.63" y="-20.32" size="1.778" layer="91">0_TO_EF\\</text>
-<text x="88.9" y="48.768" size="1.778" layer="91">0_TO_EF\\</text>
+<text x="58.42" y="73.66" size="1.778" layer="94">M121</text>
+<text x="66.04" y="-35.56" size="1.778" layer="94">5usec</text>
+<text x="-58.42" y="17.78" size="1.778" layer="94">+3V@A09U1</text>
+<text x="87.63" y="-20.32" size="1.778" layer="94">0_TO_EF\\</text>
+<text x="88.9" y="48.768" size="1.778" layer="94">0_TO_EF\\</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="-132.08" y="-86.36"/>
@@ -9350,7 +9307,7 @@ Power: 5V@82ma (max.)
 <instance part="A12" gate="C1" x="-45.72" y="-55.88"/>
 <instance part="A12" gate="F1" x="-45.72" y="-66.04"/>
 <instance part="D16" gate="T2" x="48.26" y="-35.56"/>
-<instance part="B21" gate="G$1" x="50.8" y="43.18"/>
+<instance part="B21" gate="G$1" x="50.8" y="35.56"/>
 <instance part="C10" gate="P2" x="60.96" y="76.2"/>
 <instance part="V46" gate="G$1" x="127" y="86.36"/>
 <instance part="V47" gate="GND" x="121.92" y="86.36"/>
@@ -9398,9 +9355,9 @@ Power: 5V@82ma (max.)
 </net>
 <net name="SINGLE_UNIT" class="0">
 <segment>
-<wire x1="58.42" y1="45.72" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="43.18" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
-<label x="60.96" y="40.64" size="1.778" layer="95"/>
+<wire x1="58.42" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="38.1" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
+<label x="60.96" y="38.1" size="1.778" layer="95"/>
 <pinref part="B21" gate="G$1" pin="OUT"/>
 <pinref part="A09" gate="L1" pin="IN4"/>
 </segment>
@@ -9468,8 +9425,8 @@ Power: 5V@82ma (max.)
 </net>
 <net name="!T_SINGLE_UNIT" class="0">
 <segment>
-<wire x1="22.86" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<label x="22.86" y="43.18" size="1.778" layer="95"/>
+<wire x1="22.86" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<label x="22.86" y="35.56" size="1.778" layer="95"/>
 <pinref part="B21" gate="G$1" pin="IN"/>
 </segment>
 </net>
@@ -10296,36 +10253,6 @@ Power: 5V@82ma (max.)
 </sheet>
 <sheet>
 <plain>
-<text x="-104.14" y="55.88" size="1.778" layer="91">M206</text>
-<text x="-104.14" y="12.7" size="1.778" layer="91">M206</text>
-<text x="-104.14" y="-30.48" size="1.778" layer="91">M206</text>
-<text x="-58.42" y="-30.48" size="1.778" layer="91">M206</text>
-<text x="-58.42" y="12.7" size="1.778" layer="91">M206</text>
-<text x="-58.42" y="55.88" size="1.778" layer="91">M206</text>
-<text x="-5.08" y="55.88" size="1.778" layer="91">M206</text>
-<text x="-5.08" y="12.7" size="1.778" layer="91">M206</text>
-<text x="-5.08" y="-30.48" size="1.778" layer="91">M206</text>
-<text x="48.26" y="-30.48" size="1.778" layer="91">M206</text>
-<text x="48.26" y="12.7" size="1.778" layer="91">M206</text>
-<text x="48.26" y="55.88" size="1.778" layer="91">M206</text>
-<text x="101.6" y="38.1" size="1.778" layer="91">M206</text>
-<text x="99.06" y="-5.08" size="1.778" layer="91">M206</text>
-<text x="99.06" y="-48.26" size="1.778" layer="91">M206</text>
-<text x="35.56" y="68.58" size="1.778" layer="91">M121</text>
-<text x="-17.78" y="68.58" size="1.778" layer="91">M121</text>
-<text x="-17.78" y="25.4" size="1.778" layer="91">M121</text>
-<text x="-17.78" y="-17.78" size="1.778" layer="91">M121</text>
-<text x="35.56" y="-17.78" size="1.778" layer="91">M121</text>
-<text x="35.56" y="25.4" size="1.778" layer="91">M121</text>
-<text x="86.36" y="12.7" size="1.778" layer="91">M121</text>
-<text x="88.9" y="55.88" size="1.778" layer="91">M121</text>
-<text x="86.36" y="-30.48" size="1.778" layer="91">M121</text>
-<text x="-68.58" y="-15.24" size="1.778" layer="91">M113</text>
-<text x="-114.3" y="-15.24" size="1.778" layer="91">M113</text>
-<text x="-114.3" y="27.94" size="1.778" layer="91">M113</text>
-<text x="-68.58" y="27.94" size="1.778" layer="91">M113</text>
-<text x="-68.58" y="71.12" size="1.778" layer="91">M113</text>
-<text x="-114.3" y="71.12" size="1.778" layer="91">M113</text>
 </plain>
 <instances>
 <instance part="FRAME8" gate="G$1" x="-134.62" y="-93.98"/>
@@ -13700,7 +13627,7 @@ Power: 5V@82ma (max.)
 </sheet>
 <sheet>
 <plain>
-<text x="-129.54" y="-22.86" size="1.778" layer="91">Empty Slots:</text>
+<text x="-129.54" y="-22.86" size="1.778" layer="94">Empty Slots:</text>
 </plain>
 <instances>
 <instance part="FRAME12" gate="G$1" x="-132.08" y="-91.44"/>
