@@ -439,8 +439,8 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=94
-Views=" 8: -140.427 -98.111 135.139 90.283"
+Layer=91
+Views=" 1: -135.434 -103.191 140.221 85.203 8: -140.427 -98.111 135.139 90.283"
 Sheet=1
 
 [Win_3]
