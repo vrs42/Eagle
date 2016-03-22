@@ -4,35 +4,36 @@ Various ideas for a flip-chip tester.
 placement.</LI>
 <LI><b>TestJig</b> is an incomplete notion involving a PCI slot.</LI>
 <LI><b>io2</b> is another copy of the I/O board.</LI>
-<LI><b>iotst</b> is an early version of the tester, which connects the 
+<LI><b>iotst</b> is an early version of the tester, which connects the
 I/O board from the ConsoleEmu project to a DEC connector block.</LI>
-<LI><b>cblockyeesh</b> is a messy connector block mounting board that 
+<LI><b>cblockyeesh</b> is a messy connector block mounting board that
 attempts to give each socket it's own connection.</LI>
-<LI><b>cblockyeeshok</b> is a version of connectorblockyeesh which is 
+<LI><b>cblockyeeshok</b> is a version of connectorblockyeesh which is
 fully routed.</LI>
-<LI><b>cblock-vrs</b> is a simple connector block board that uses paddle 
+<LI><b>cblock-vrs</b> is a simple connector block board that uses paddle
 cards to connect up to four sockets.</LI>
-<LI><b>tester-7410</b> is a version of the tester board that builds a 
+<LI><b>tester-7410</b> is a version of the tester board that builds a
 latch for the OC line using a 7410.</LI>
 <LI><b>pcbproto-.brd</b> is a panelization of two copies of the tester,
 connector block boards, and an experimental G888 board. </LI>
-<LI><b>pcbproto.brd</b> is a newer version of the panelization, with 
+<LI><b>pcbproto.brd</b> is a newer version of the panelization, with
 silkscreen scripts run.</LI>
 <LI><b>FlipChip.brd</b> is still a newer version of the panelization.</LI>
-<LI><b>cblock</b> is a version of the connector block board, modified 
+<LI><b>cblock</b> is a version of the connector block board, modified
 to implement four pairs of socket connections.</LI>
 <LI><b>tester-2</b> is revision 2 of the tester board.</LI>
-<LI><b>transducer</b> is a messy design for a transducer for negative logic, 
+<LI><b>transducer</b> is a messy design for a transducer for negative logic,
 etc.</LI>
 <LI><b>transistor</b> is another messy design for a transducer.</LI>
 <LI><b>smb</b> is a surface mount transducer using FET's and whatnot.</LI>
 <LI><b>small</b> is a simpler transducer using through-hole parts.</LI>
 <LI><b>cd4007</b> is yet another transducer, this time using the 4007.</LI>
-<LI><b>5transistor</b> is a transducer for positive or negative logic, 
+<LI><b>5transistor</b> is a transducer for positive or negative logic,
 implemented with five FETs.</LI>
-<LI><b>3transistor</b> is a transducer for positive or negative logic, 
+<LI><b>3transistor</b> is a transducer for positive or negative logic,
 implemented with three FETs and a section of an LM139 comparator.</LI>
 <LI><b>32pins</b> is a set of 32 transducers of the 3transistor variety.</LI>
 <LI><b>tester</b> is the flipchip tester, revision 1 (similar to iotst).</LI>
 <LI><b>tester-rp</b> is another copy of the flipchip tester, revision 1.</LI>
 <LI><b>diodes</b> is an attempt to lay out diode level converters for the flipchip tester.</LI>
+<LI><b>Rxxx</b> is an exploration of ideas about conversion of negative logic levels.</LI>

@@ -1,5 +1,7 @@
 PDP-8/i Front Panel PCB
 <UL>
+<LI><b>1switch</b> is an exploration of ideas about using reed switches to 
+construct switch substitutes that fit in the original footprints.</LI>
 <LI><b>M900dec</b> is a drawing of DEC's M900 paddle card, which contains
 the indicator drivers, as well as connecting to the front panel cabling.</LI>
 <LI><b>M900</b> is my version of the M900 indicator driver card, which
@@ -23,4 +25,5 @@ could be ordered from a protoype shop.</LI>
 for ordering from a prototype house.</LI>
 <LI><b>8iSwitches</b> is a drawing of a replacement for the switches PCB.</LI>
 <LI><b>8iSwitchesOK</b> is a checkpoint of the replacement for the switches PCB.</LI>
+<LI><b>PiPanel</b> is an exploration of interfacing a Raspberry Pi to the switches and lights.</LI>
 <LI><b>G793</b> is a pull-up and clamping module for the switch register of the PDP-8/i.</LI>
