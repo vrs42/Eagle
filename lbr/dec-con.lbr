@@ -55414,7 +55414,7 @@ Standard US Drill Sizes</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="74*20" prefix="IC" uservalue="yes">
+<deviceset name="74*40" prefix="E">
 <description>Dual 4-input &lt;b&gt;NAND&lt;/b&gt; gate</description>
 <gates>
 <gate name="A" symbol="7420" x="15.24" y="0" swaplevel="1"/>
@@ -55442,8 +55442,7 @@ Standard US Drill Sizes</description>
 <connect gate="P" pin="VCC" pad="14"/>
 </connects>
 <technologies>
-<technology name="ALS"/>
-<technology name="AS"/>
+<technology name=""/>
 <technology name="LS"/>
 <technology name="S"/>
 </technologies>
@@ -55983,6 +55982,85 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74*20" prefix="E">
+<description>Dual 4-input &lt;b&gt;NAND&lt;/b&gt; gate</description>
+<gates>
+<gate name="A" symbol="7420" x="15.24" y="0" swaplevel="1"/>
+<gate name="B" symbol="7420" x="48.26" y="0" swaplevel="1"/>
+<gate name="P" symbol="PWRN" x="-7.62" y="0" addlevel="request"/>
+<gate name="3" symbol="NC" x="10.16" y="-17.78" addlevel="request" swaplevel="2"/>
+<gate name="11" symbol="NC" x="27.94" y="-17.78" addlevel="request" swaplevel="2"/>
+</gates>
+<devices>
+<device name="N" package="DIL14">
+<connects>
+<connect gate="11" pin="NC" pad="11"/>
+<connect gate="3" pin="NC" pad="3"/>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="I2" pad="4"/>
+<connect gate="A" pin="I3" pad="5"/>
+<connect gate="A" pin="O" pad="6"/>
+<connect gate="B" pin="I0" pad="9"/>
+<connect gate="B" pin="I1" pad="10"/>
+<connect gate="B" pin="I2" pad="12"/>
+<connect gate="B" pin="I3" pad="13"/>
+<connect gate="B" pin="O" pad="8"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="LS"/>
+<technology name="S"/>
+</technologies>
+</device>
+<device name="D" package="SO14">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="I2" pad="4"/>
+<connect gate="A" pin="I3" pad="5"/>
+<connect gate="A" pin="O" pad="6"/>
+<connect gate="B" pin="I0" pad="9"/>
+<connect gate="B" pin="I1" pad="10"/>
+<connect gate="B" pin="I2" pad="12"/>
+<connect gate="B" pin="I3" pad="13"/>
+<connect gate="B" pin="O" pad="8"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="LS"/>
+<technology name="S"/>
+</technologies>
+</device>
+<device name="FK" package="LCC20">
+<connects>
+<connect gate="A" pin="I0" pad="2"/>
+<connect gate="A" pin="I1" pad="3"/>
+<connect gate="A" pin="I2" pad="6"/>
+<connect gate="A" pin="I3" pad="8"/>
+<connect gate="A" pin="O" pad="9"/>
+<connect gate="B" pin="I0" pad="13"/>
+<connect gate="B" pin="I1" pad="14"/>
+<connect gate="B" pin="I2" pad="18"/>
+<connect gate="B" pin="I3" pad="19"/>
+<connect gate="B" pin="O" pad="12"/>
+<connect gate="P" pin="GND" pad="10"/>
+<connect gate="P" pin="VCC" pad="20"/>
+</connects>
+<technologies>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="LS"/>
+<technology name="S"/>
 </technologies>
 </device>
 </devices>
