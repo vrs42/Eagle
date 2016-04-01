@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -43900,7 +43900,7 @@ National Semiconductor</description>
 <text x="-0.635" y="-6.35" size="1.27" layer="21" rot="SR270">4</text>
 </package>
 <package name="E15-5">
-<description>A 0.5" electrolytic with smaller pads.</description>
+<description>A 0.6" electrolytic with smaller pads.</description>
 <wire x1="-4.064" y1="0" x2="-3.175" y2="0" width="0.1524" layer="21"/>
 <wire x1="-3.175" y1="0" x2="-3.175" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="-3.175" y1="-0.635" x2="-2.667" y2="-0.635" width="0.1524" layer="21"/>
@@ -54969,7 +54969,7 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 </devices>
 </deviceset>
 <deviceset name="CPOL-USE15-5AXIAL" prefix="C" uservalue="yes">
-<description>0.5" veresion of an electrolytic</description>
+<description>0.6" veresion of an electrolytic</description>
 <gates>
 <gate name="1" symbol="CPOL-US" x="0" y="0"/>
 </gates>
