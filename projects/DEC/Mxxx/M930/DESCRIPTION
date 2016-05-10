@@ -1,4 +1,4 @@
-RK05/Unibus Terminator
+Bus Terminator (double, short)
 <UL>
 <LI><b>M930</b> is a version of DEC's M930 RK05/Unibus Terminator card using discrete resistors.</LI>
 <LI><b>M930C</b> is a version of DEC's M930C RK05/Unibus Terminator card, which uses
