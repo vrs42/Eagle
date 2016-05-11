@@ -22582,6 +22582,9 @@ Source: 3M</description>
 <approved hash="104,6,63.5,134.62,KBD,PE1,GND,,,"/>
 <approved hash="104,6,38.1,134.62,KBD,PE3,GND,,,"/>
 <approved hash="104,6,50.8,129.54,KBD,PE2,GND,,,"/>
+<approved hash="103,2,233.68,96.52,IC1NC3,NC,5V,,,"/>
+<approved hash="103,2,236.22,96.52,IC1NC4,NC,5V,,,"/>
+<approved hash="104,2,88.9,43.18,IC1P,VCC,5V,,,"/>
 <approved hash="106,1,187.96,157.48,DA7,,,,,"/>
 <approved hash="206,6,134.62,114.3,SPEAKER,,,,,"/>
 <approved hash="206,6,134.62,96.52,SPEAKER,,,,,"/>
