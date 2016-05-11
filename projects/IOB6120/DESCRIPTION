@@ -6,5 +6,5 @@ IOB 6120 by Jim Kearney
 <LI><b>iob9avrs</b>is my first attempt at fixing the battery issue (single CE#, lots of read/write enables).</LI>
 <LI><b>iob9bvrs</b>is my second attempt at fixing the battery issue (DS1321D, CE# per ramdisk, series batteries).</LI>
 <LI><b>iob9cvrs</b>is the fixed "9C" version manufactured in 2009 (DS1321D with parallel batteries).</LI>
-<LI><b>iob9xvrs</b>is iob9c re-routed with slightly beefed up power rails.</LI>
-<LI><b>iob10avrs</b>is a copy of iob9c with the bottom side silkscreen glitch (RN2) fixed.</LI>
+<LI><b>iob10avrs</b>is a copy of "9C" with the bottom side silkscreen glitch (RN2) fixed.</LI>
+<LI><b>iob16avrs</b>is a copy of "10a" with Eagle library updates and new routing.</LI>
