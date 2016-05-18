@@ -1298,6 +1298,7 @@
 <hole x="137.16" y="104.14" drill="3.175"/>
 <text x="71.66666875" y="67.500003125" size="1.27" layer="21" rot="R90">1</text>
 <text x="74.16666875" y="67.500003125" size="1.27" layer="21" rot="R90">2</text>
+<text x="25.4254" y="3.2004" size="1.27" layer="16" ratio="24" rot="MR0">&gt;DRAWING_NAME</text>
 </plain>
 <libraries>
 <library name="con-harting-ml">
