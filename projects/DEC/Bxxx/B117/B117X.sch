@@ -10009,7 +10009,7 @@ grid 5.08 mm</description>
 <text x="165.1" y="27.94" size="2.54" layer="94">Diode Gate</text>
 <text x="165.1" y="7.62" size="2.54" layer="94">B-CS-B137-0-1</text>
 <text x="241.3" y="7.62" size="2.54" layer="94">B</text>
-<text x="149.86" y="38.1" size="2.54" layer="94">Use B117 etch.</text>
+<text x="149.86" y="38.1" size="2.54" layer="94">Used B137 photo (same etch).</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
