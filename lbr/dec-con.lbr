@@ -44957,6 +44957,19 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 <text x="-2.6162" y="5.5626" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="TRANSFORMER-SIL4">
+<description>Simple transformer, 4 pins in a row</description>
+<pad name="2" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
+<pad name="4" x="3.81" y="0" drill="0.8128" shape="octagon"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
+<text x="-5.08" y="1.27" size="1.27" layer="21">&gt;Name</text>
+<text x="5.08" y="-1.27" size="1.27" layer="21" rot="R180">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="EDGE-RIGHT">
@@ -56121,6 +56134,25 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 <connect gate="G$1" pin="D" pad="2"/>
 <connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="16-09479" prefix="T">
+<description>Simple Transformer</description>
+<gates>
+<gate name="T" symbol="TRANSFORMER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TRANSFORMER-SIL4">
+<connects>
+<connect gate="T" pin="P$2" pad="1"/>
+<connect gate="T" pin="P$4" pad="2"/>
+<connect gate="T" pin="P$5" pad="3"/>
+<connect gate="T" pin="P$7" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
