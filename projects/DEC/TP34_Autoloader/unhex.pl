@@ -19,6 +19,8 @@
 # :00000001FF
 
 open(INPUT, "autoloader.hex") || die "autoloader.hex: $!";
+open(INPUT, "autoloader_2716.hex") || die "autoloader.hex: $!";
+open(INPUT, "2") || die "autoloader.hex: $!";
 
 while (<INPUT>) {
   next unless /^:(..)(....)(..)(.*)(..)$/;
