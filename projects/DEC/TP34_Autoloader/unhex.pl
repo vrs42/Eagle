@@ -1,5 +1,13 @@
 #!/usr/bin/perl
  
+#
+# Read an Intel HEX format file, presumed to 
+# be a dump of a TP-34 Autoloader ROM.  Emit
+# a pair of .bin files, one only for the stuff 
+# that loads unconditionally, the other for 
+# the result if the conditional stuff is loaded.
+#
+
 # :10000000000CF8082D64CD64CD24F284A824F114EA
 # :10001000CD24CD14EE04CD74FC14E444F184A95431
 # :10002000E044F184A984E044F984A9C4A8042D74AF
@@ -18,19 +26,76 @@
 # :1000F000AF75C1C5FFD9AEE50004AC14F808000225
 # :00000001FF
 
-open(INPUT, "autoloader.hex") || die "autoloader.hex: $!";
-open(INPUT, "autoloader_2716.hex") || die "autoloader.hex: $!";
-open(INPUT, "2") || die "autoloader.hex: $!";
+open(INPUT, $ARGV[0]) || die "$ARGV[0]: $!";
 
+open(BIN1, ">al1.bin") || die "al1.bin: $!";
+binmode(BIN1);
+open(BIN2, ">al2.bin") || die "al2.bin: $!";
+binmode(BIN2);
+$f2 = 1;
+
+# BUGBUG: We assume DF == IF, though the
+#   Autoloader does not.
+
+$csum1 = $csum2 = 0;
+$field1 = $field2 = -1;
+$loc1 = $loc2 = -1;
 while (<INPUT>) {
   next unless /^:(..)(....)(..)(.*)(..)$/;
   ($count, $address, $type, $data, $sum) = ($1, $2, $3, $4, $5);
+  last if $type == "01";
   next unless $type == "00";
-  die unless $count == "10";
-print "$data\n";
+#print "$data\n";
   while ($data =~ s/(....)//) {
     $word = hex($1);
     $func = $word & 0xF;
-    printf "$1 %x %04o\n", $func, $word >> 4;
+    $word >>= 4;
+printf "$1 %x %04o\n", $func, $word;
+#   printf STDERR "%x %04o\n", $func, $word;
+    # Update the unconditional image.
+    if ($func == 0xC) {
+      $field1 = $field2 = $word & 07;
+      print BIN1 pack("C", 0300+($word & 07));
+      print BIN2 pack("C", 0300+($word & 07));
+    } elsif ($func == 8) {
+      $loc1 = $loc2 = $word;
+      print BIN1 pack("CC", 0100+($word>>6), $word & 077);
+      $sum1 += 0100+($word>>6) + ($word & 077);
+      print BIN2 pack("CC", 0100+($word>>6), $word & 077);
+      $sum2 += 0100+($word>>6) + ($word & 077);
+    } elsif ($func == 4) {
+      print BIN1 pack("CC", ($word>>6), $word & 077);
+      $sum1 += ($word>>6) + ($word & 077);
+      print BIN2 pack("CC", ($word>>6), $word & 077);
+      $sum2 += ($word>>6) + ($word & 077);
+    } elsif ($func == 2) {
+      last;
+    } elsif ($func == 0xD) {
+      next unless $f2;
+      $field2 = $word & 07;
+      print BIN2 pack("C", 0300+$word & 07);
+    } elsif ($func == 9) {
+      next unless $f2;
+      $loc2 = $word;
+      print BIN2 pack("CC", 0100+($word>>6), $word & 077);
+      $sum2 += 0100+($word>>6) + ($word & 077);
+    } elsif ($func == 5) {
+      next unless $f2;
+      print BIN2 pack("CC", ($word>>6), $word & 077);
+      $sum2 += ($word>>6) + ($word & 077);
+    } elsif ($func == 3) {
+      $f2 = 0;
+    }
   }
 }
+#
+# Output checksums for each file.
+#
+$sum1 = $sum1; $sum1 &= 07777;
+$sum2 = $sum2; $sum2 &= 07777;
+print BIN1 pack("CC", ($sum1>>6), $sum1 & 077);
+print BIN2 pack("CC", ($sum2>>6), $sum2 & 077);
+close(BIN1);
+close(BIN2);
+
+exit 0;
