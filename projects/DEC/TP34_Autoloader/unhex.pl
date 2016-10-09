@@ -93,8 +93,8 @@ printf "$1 %x %04o\n", $func, $word;
 #
 $sum1 = $sum1; $sum1 &= 07777;
 $sum2 = $sum2; $sum2 &= 07777;
-print BIN1 pack("CC", ($sum1>>6), $sum1 & 077);
-print BIN2 pack("CC", ($sum2>>6), $sum2 & 077);
+print BIN1 pack("CCC", ($sum1>>6), $sum1 & 077, 0200);
+print BIN2 pack("CCC", ($sum2>>6), $sum2 & 077, 0200);
 close(BIN1);
 close(BIN2);
 
