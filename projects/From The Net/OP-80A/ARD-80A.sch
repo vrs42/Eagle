@@ -9443,6 +9443,11 @@ http://www.ladyada.net/library/pcb/eaglelibrary.html</description>
 <wire x1="83.82" y1="175.26" x2="63.5" y2="175.26" width="0.1524" layer="91"/>
 <label x="78.74" y="175.26" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="D6"/>
+<wire x1="226.06" y1="137.16" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
+<label x="226.06" y="137.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -9631,11 +9636,6 @@ http://www.ladyada.net/library/pcb/eaglelibrary.html</description>
 <pinref part="IC8" gate="G$1" pin="OUT"/>
 <wire x1="177.8" y1="104.14" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
 <label x="172.72" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="D6"/>
-<wire x1="226.06" y1="137.16" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
-<label x="226.06" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="D1"/>
