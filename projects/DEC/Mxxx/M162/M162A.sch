@@ -4087,7 +4087,6 @@ Based on the following sources:
 <plain>
 <text x="165.1" y="7.62" size="2.54" layer="94">B-CS-M162-0-1</text>
 <text x="165.1" y="27.94" size="2.54" layer="94">PARITY CIRCUIT M162</text>
-<text x="241.3" y="7.62" size="2.54" layer="94">A</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="5.08" y="33.02"/>
