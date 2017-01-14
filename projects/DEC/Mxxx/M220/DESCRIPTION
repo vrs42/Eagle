@@ -2,6 +2,7 @@ Major Registers, double
 <UL>
 <LI><b>M220A</b> is a drawing of DEC's M220A.</LI>
 <LI><b>M220B</b> is a drawing of DEC's M220B.</LI>
+<LI><b>M220C</b> is a drawing of DEC's M220C.</LI>
 <LI><b>M220new</b> is an implementation that doesn't use the hard to find
 7453 and 7482 chips.</LI>
 <LI><b>M220pal</b> is a PAL implementation, using 22V10 programed with
