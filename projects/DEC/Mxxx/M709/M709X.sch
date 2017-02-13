@@ -8919,7 +8919,7 @@ Based on the following sources:
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/15" value="220"/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/15" value="100"/>
-<part name="D1" library="diode" deviceset="DIODE-" device="SOD61B" value="D664"/>
+<part name="D1" library="diode" deviceset="DIODE-" device="SOD61B" value="1N4154"/>
 <part name="V6" library="supply2" deviceset="VCC" device=""/>
 </parts>
 <sheets>
