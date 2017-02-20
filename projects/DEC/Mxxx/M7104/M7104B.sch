@@ -8219,7 +8219,7 @@ Based on the following sources:
 <instance part="H" gate="V1" x="208.28" y="236.22" rot="R180"/>
 <instance part="H" gate="M2" x="17.78" y="20.32"/>
 <instance part="H" gate="T2" x="17.78" y="73.66"/>
-<instance part="H" gate="E2" x="160.02" y="63.5" rot="R180"/>
+<instance part="H" gate="E2" x="160.02" y="73.66" rot="R180"/>
 <instance part="E34" gate="C" x="297.18" y="53.34" rot="MR180"/>
 </instances>
 <busses>
@@ -9105,6 +9105,7 @@ Based on the following sources:
 <wire x1="137.16" y1="73.66" x2="157.48" y2="73.66" width="0.1524" layer="91"/>
 <junction x="137.16" y="73.66"/>
 <label x="139.7" y="73.66" size="1.778" layer="95"/>
+<pinref part="H" gate="E2" pin="P"/>
 </segment>
 <segment>
 <pinref part="E52" gate="B" pin="PRE"/>
@@ -9168,9 +9169,8 @@ Based on the following sources:
 <net name="!DB_CONT4" class="0">
 <segment>
 <pinref part="E14" gate="B" pin="!Q"/>
-<wire x1="137.16" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="63.5" x2="154.94" y2="63.5" width="0.1524" layer="91"/>
 <label x="139.7" y="63.5" size="1.778" layer="95"/>
-<pinref part="H" gate="E2" pin="P"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -9268,9 +9268,9 @@ Based on the following sources:
 <instance part="E23" gate="E" x="307.34" y="195.58"/>
 <instance part="E23" gate="D" x="307.34" y="165.1"/>
 <instance part="E16" gate="D" x="307.34" y="154.94"/>
-<instance part="E16" gate="C" x="307.34" y="144.78"/>
+<instance part="E16" gate="E" x="307.34" y="144.78"/>
 <instance part="E16" gate="B" x="307.34" y="134.62"/>
-<instance part="E16" gate="E" x="307.34" y="124.46"/>
+<instance part="E16" gate="C" x="307.34" y="124.46"/>
 <instance part="E20" gate="B" x="53.34" y="91.44"/>
 <instance part="E19" gate="D" x="83.82" y="81.28"/>
 <instance part="E27" gate="E" x="50.8" y="63.5"/>
@@ -9748,7 +9748,7 @@ Based on the following sources:
 <segment>
 <wire x1="281.94" y1="124.46" x2="297.18" y2="124.46" width="0.1524" layer="91"/>
 <label x="281.94" y="124.46" size="1.778" layer="95"/>
-<pinref part="E16" gate="E" pin="I"/>
+<pinref part="E16" gate="C" pin="I"/>
 </segment>
 </net>
 <net name="RK_DATA1" class="0">
@@ -9772,7 +9772,7 @@ Based on the following sources:
 <segment>
 <wire x1="281.94" y1="144.78" x2="297.18" y2="144.78" width="0.1524" layer="91"/>
 <label x="281.94" y="144.78" size="1.778" layer="95"/>
-<pinref part="E16" gate="C" pin="I"/>
+<pinref part="E16" gate="E" pin="I"/>
 </segment>
 </net>
 <net name="RK_DATA3" class="0">
@@ -9882,7 +9882,7 @@ Based on the following sources:
 <segment>
 <wire x1="317.5" y1="124.46" x2="332.74" y2="124.46" width="0.1524" layer="91"/>
 <label x="320.04" y="124.46" size="1.778" layer="95"/>
-<pinref part="E16" gate="E" pin="O"/>
+<pinref part="E16" gate="C" pin="O"/>
 </segment>
 </net>
 <net name="!RK_DATA1" class="0">
@@ -9896,7 +9896,7 @@ Based on the following sources:
 <segment>
 <wire x1="317.5" y1="144.78" x2="332.74" y2="144.78" width="0.1524" layer="91"/>
 <label x="320.04" y="144.78" size="1.778" layer="95"/>
-<pinref part="E16" gate="C" pin="O"/>
+<pinref part="E16" gate="E" pin="O"/>
 </segment>
 </net>
 <net name="!RK_DATA3" class="0">
@@ -10647,7 +10647,7 @@ Based on the following sources:
 <label x="119.38" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$69" class="0">
+<net name="N$3" class="0">
 <segment>
 <pinref part="E29" gate="E$1" pin="A1"/>
 <wire x1="91.44" y1="208.28" x2="68.58" y2="208.28" width="0.1524" layer="91"/>
@@ -12627,7 +12627,7 @@ Based on the following sources:
 <pinref part="R10" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$94" class="0">
+<net name="N$10" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="C51" gate="G$1" pin="1"/>
@@ -12676,13 +12676,6 @@ Based on the following sources:
 </segment>
 </net>
 <net name="DONE_FLAG" class="0">
-<segment>
-<pinref part="E39" gate="B" pin="Q"/>
-<wire x1="358.14" y1="132.08" x2="342.9" y2="132.08" width="0.1524" layer="91"/>
-<label x="345.44" y="132.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="!DONE_FLAG" class="0">
 <segment>
 <pinref part="E39" gate="B" pin="!Q"/>
 <wire x1="342.9" y1="121.92" x2="358.14" y2="121.92" width="0.1524" layer="91"/>
@@ -12836,6 +12829,13 @@ Based on the following sources:
 <pinref part="E40" gate="A" pin="I0"/>
 <wire x1="205.74" y1="22.86" x2="170.18" y2="22.86" width="0.1524" layer="91"/>
 <label x="170.18" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!DONE_FLAG" class="0">
+<segment>
+<pinref part="E39" gate="B" pin="Q"/>
+<wire x1="358.14" y1="132.08" x2="342.9" y2="132.08" width="0.1524" layer="91"/>
+<label x="345.44" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
