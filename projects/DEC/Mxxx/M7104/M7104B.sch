@@ -8019,7 +8019,6 @@ Based on the following sources:
 <part name="C47" library="dec-con" deviceset="C-US" device="" value="39pF"/>
 <part name="C48" library="dec-con" deviceset="C-US" device="" value="10pF"/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" deviceset="DINA3_L" device=""/>
@@ -8071,6 +8070,7 @@ Based on the following sources:
 <part name="J" library="dec-con" deviceset="EDGE-TOP" device=""/>
 <part name="H" library="dec-con" deviceset="EDGE-TOP" device=""/>
 <part name="SUPPLY43" library="supply2" deviceset="VCC" device=""/>
+<part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8079,6 +8079,8 @@ Based on the following sources:
 <text x="304.8" y="7.62" size="2.54" layer="94">D-CS-M7104-0-1</text>
 <text x="381" y="7.62" size="2.54" layer="94">K</text>
 <text x="304.8" y="25.4" size="2.54" layer="94">(Data Buffer Control)</text>
+<text x="157.48" y="50.8" size="1.27" layer="94">This isn't right in the DEC schematic.</text>
+<text x="157.48" y="48.26" size="1.27" layer="94">All users of !DB_CONT4! use the delayed signal.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -8204,7 +8206,6 @@ Based on the following sources:
 <instance part="C47" gate="G$1" x="292.1" y="78.74" rot="MR270"/>
 <instance part="C48" gate="G$1" x="238.76" y="58.42"/>
 <instance part="SUPPLY15" gate="GND" x="299.72" y="88.9"/>
-<instance part="SUPPLY16" gate="GND" x="106.68" y="58.42"/>
 <instance part="E20" gate="C" x="76.2" y="76.2"/>
 <instance part="SUPPLY17" gate="GND" x="35.56" y="33.02"/>
 <instance part="E54" gate="C" x="160.02" y="22.86" rot="MR180"/>
@@ -8221,6 +8222,9 @@ Based on the following sources:
 <instance part="H" gate="T2" x="17.78" y="73.66"/>
 <instance part="H" gate="E2" x="160.02" y="73.66" rot="R180"/>
 <instance part="E34" gate="C" x="297.18" y="53.34" rot="MR180"/>
+<instance part="R15" gate="G$1" x="144.78" y="63.5"/>
+<instance part="C56" gate="G$1" x="152.4" y="58.42"/>
+<instance part="SUPPLY19" gate="GND" x="152.4" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -8495,12 +8499,6 @@ Based on the following sources:
 <wire x1="307.34" y1="91.44" x2="307.34" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="E14" gate="B" pin="K"/>
-<pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<wire x1="111.76" y1="63.5" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="63.5" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="E26" gate="G$1" pin="I4"/>
 <wire x1="43.18" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="35.56" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
@@ -8515,6 +8513,10 @@ Based on the following sources:
 <wire x1="200.66" y1="27.94" x2="198.12" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
 <wire x1="198.12" y1="17.78" x2="198.12" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C56" gate="G$1" pin="2"/>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -9049,6 +9051,11 @@ Based on the following sources:
 <wire x1="309.88" y1="53.34" x2="322.58" y2="53.34" width="0.1524" layer="91"/>
 <label x="312.42" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="E14" gate="B" pin="K"/>
+<wire x1="111.76" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
+<label x="91.44" y="63.5" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="1_DB3" class="0">
 <segment>
@@ -9166,13 +9173,6 @@ Based on the following sources:
 <pinref part="H" gate="T2" pin="P"/>
 </segment>
 </net>
-<net name="!DB_CONT4" class="0">
-<segment>
-<pinref part="E14" gate="B" pin="!Q"/>
-<wire x1="137.16" y1="63.5" x2="154.94" y2="63.5" width="0.1524" layer="91"/>
-<label x="139.7" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="E54" gate="C" pin="O"/>
@@ -9182,14 +9182,14 @@ Based on the following sources:
 </net>
 <net name="!CLR_SYN" class="0">
 <segment>
-<pinref part="E52" gate="B" pin="!Q"/>
-<wire x1="226.06" y1="20.32" x2="241.3" y2="20.32" width="0.1524" layer="91"/>
-<label x="228.6" y="20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="E34" gate="C" pin="I1"/>
 <wire x1="259.08" y1="55.88" x2="284.48" y2="55.88" width="0.1524" layer="91"/>
 <label x="259.08" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="E52" gate="B" pin="Q"/>
+<wire x1="226.06" y1="30.48" x2="241.3" y2="30.48" width="0.1524" layer="91"/>
+<label x="228.6" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WRT_BUF_DATA" class="0">
@@ -9237,6 +9237,24 @@ Based on the following sources:
 <junction x="104.14" y="160.02"/>
 </segment>
 </net>
+<net name="!DB_CONT4" class="0">
+<segment>
+<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="C56" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="63.5" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
+<junction x="152.4" y="63.5"/>
+<wire x1="162.56" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
+<label x="154.94" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="E14" gate="B" pin="!Q"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="63.5" x2="139.7" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -9277,9 +9295,6 @@ Based on the following sources:
 <instance part="E11" gate="D" x="83.82" y="53.34"/>
 <instance part="E11" gate="C" x="170.18" y="88.9"/>
 <instance part="E31" gate="D" x="198.12" y="60.96"/>
-<instance part="R15" gate="G$1" x="195.58" y="116.84"/>
-<instance part="C56" gate="G$1" x="203.2" y="111.76"/>
-<instance part="SUPPLY19" gate="GND" x="203.2" y="104.14"/>
 <instance part="SUPPLY36" gate="G$1" x="279.4" y="7.62"/>
 <instance part="FRAME2" gate="G$2" x="287.02" y="0"/>
 <instance part="J" gate="M1" x="12.7" y="63.5"/>
@@ -9290,6 +9305,7 @@ Based on the following sources:
 <instance part="H" gate="R2" x="129.54" y="68.58"/>
 <instance part="H" gate="V2" x="129.54" y="99.06"/>
 <instance part="H" gate="F1" x="271.78" y="210.82" rot="R180"/>
+<instance part="SUPPLY16" gate="GND" x="274.32" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -10166,18 +10182,8 @@ Based on the following sources:
 <label x="187.96" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND" class="1">
+<net name="!DB_CONT4" class="0">
 <segment>
-<pinref part="C56" gate="G$1" pin="2"/>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="R15" gate="G$1" pin="2"/>
-<pinref part="C56" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="116.84" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="116.84" x2="203.2" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="E24" gate="A" pin="MOD"/>
 <pinref part="E9" gate="A" pin="MOD"/>
 <wire x1="220.98" y1="223.52" x2="226.06" y2="223.52" width="0.1524" layer="91"/>
@@ -10187,17 +10193,10 @@ Based on the following sources:
 <wire x1="220.98" y1="187.96" x2="220.98" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="187.96" x2="220.98" y2="187.96" width="0.1524" layer="91"/>
 <junction x="220.98" y="187.96"/>
-<wire x1="203.2" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="116.84" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
-<junction x="203.2" y="116.84"/>
 <junction x="220.98" y="152.4"/>
-</segment>
-</net>
-<net name="!DB_CONT4" class="0">
-<segment>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="116.84" x2="137.16" y2="116.84" width="0.1524" layer="91"/>
-<label x="137.16" y="116.84" size="1.778" layer="95"/>
+<label x="200.66" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -12009,6 +12008,8 @@ Based on the following sources:
 <instance part="H" gate="C1" x="162.56" y="71.12"/>
 <instance part="H" gate="A2" x="231.14" y="142.24"/>
 <instance part="SUPPLY43" gate="G$1" x="187.96" y="254"/>
+<instance part="DL1" gate="G$2" x="195.58" y="137.16"/>
+<instance part="DL1" gate="G$3" x="208.28" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -12053,10 +12054,18 @@ Based on the following sources:
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
 <pinref part="SUPPLY34" gate="G$1" pin="VCC"/>
+<wire x1="195.58" y1="132.08" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="129.54" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
+<junction x="185.42" y="129.54"/>
+<pinref part="DL1" gate="G$2" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="SUPPLY35" gate="G$1" pin="VCC"/>
+<wire x1="208.28" y1="132.08" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="129.54" x2="220.98" y2="129.54" width="0.1524" layer="91"/>
+<junction x="220.98" y="129.54"/>
+<pinref part="DL1" gate="G$3" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -12853,6 +12862,8 @@ Based on the following sources:
 <approved hash="202,5,40.64,149.86,E43,C,,,,"/>
 <approved hash="202,5,40.64,154.94,E43,A,,,,"/>
 <approved hash="202,5,152.4,226.06,E50,SER,,,,"/>
+<approved hash="104,5,195.58,132.08,DL1G$2,GND,VCC,,,"/>
+<approved hash="104,5,208.28,132.08,DL1G$3,GND,VCC,,,"/>
 <approved hash="106,5,119.38,162.56,!WRT_LOCK_ER,,,,,"/>
 <approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
 <approved hash="113,4,119.38,120.311,W2W5,,,,,"/>
