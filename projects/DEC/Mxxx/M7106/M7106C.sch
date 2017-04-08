@@ -16729,7 +16729,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="OMNIBUS" gate="AJ1" pin="1"/>
 </segment>
 </net>
-<net name="N$87" class="0">
+<net name="!MA1" class="0">
 <segment>
 <pinref part="SV13" gate="G$1" pin="1"/>
 <wire x1="350.52" y1="182.88" x2="368.3" y2="182.88" width="0.1524" layer="91"/>
@@ -16737,7 +16737,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="OMNIBUS" gate="AE1" pin="1"/>
 </segment>
 </net>
-<net name="N$103" class="0">
+<net name="!MA0" class="0">
 <segment>
 <pinref part="SV14" gate="G$1" pin="1"/>
 <wire x1="368.3" y1="177.8" x2="350.52" y2="177.8" width="0.1524" layer="91"/>
