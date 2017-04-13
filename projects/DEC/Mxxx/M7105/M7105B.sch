@@ -10587,7 +10587,7 @@ Based on the following sources:
 <label x="55.88" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SHFT_5U" class="0">
+<net name="SHFT_SURF" class="0">
 <segment>
 <pinref part="E25" gate="D" pin="O"/>
 <pinref part="F" gate="U1" pin="P"/>
