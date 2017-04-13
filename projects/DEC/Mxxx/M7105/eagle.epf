@@ -445,7 +445,7 @@ Sheet=1
 [Win_3]
 Type="Control Panel"
 Loc="656 387 1255 786"
-State=1
+State=2
 Number=0
 
 [Desktop]
