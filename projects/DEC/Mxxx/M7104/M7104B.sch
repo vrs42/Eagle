@@ -9165,7 +9165,7 @@ Based on the following sources:
 <pinref part="H" gate="T1" pin="P"/>
 </segment>
 </net>
-<net name="B_DATA01" class="0">
+<net name="BDATA1" class="0">
 <segment>
 <pinref part="E20" gate="C" pin="I1"/>
 <wire x1="63.5" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
@@ -11891,7 +11891,7 @@ Based on the following sources:
 <pinref part="H" gate="N2" pin="P"/>
 </segment>
 </net>
-<net name="DATA10" class="0">
+<net name="BDATA10" class="0">
 <segment>
 <pinref part="E44" gate="A" pin="I0"/>
 <wire x1="259.08" y1="134.62" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
@@ -12028,7 +12028,7 @@ Based on the following sources:
 <pinref part="J" gate="K1" pin="P"/>
 </segment>
 </net>
-<net name="DSK_WRT_STATUS" class="0">
+<net name="!DSK_WRT_STATUS" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -12150,8 +12150,8 @@ Based on the following sources:
 </segment>
 <segment>
 <pinref part="E47" gate="B" pin="I2"/>
-<wire x1="256.54" y1="129.54" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
-<label x="236.22" y="129.54" size="1.778" layer="95"/>
+<wire x1="256.54" y1="129.54" x2="233.68" y2="129.54" width="0.1524" layer="91"/>
+<label x="233.68" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$81" class="0">
@@ -12161,7 +12161,7 @@ Based on the following sources:
 <wire x1="254" y1="111.76" x2="254" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="!NOT_EQ" class="0">
+<net name="!NOT_EQUAL" class="0">
 <segment>
 <pinref part="E51" gate="C" pin="I0"/>
 <wire x1="17.78" y1="236.22" x2="40.64" y2="236.22" width="0.1524" layer="91"/>
@@ -12762,7 +12762,7 @@ Based on the following sources:
 <segment>
 <pinref part="E47" gate="B" pin="I1"/>
 <wire x1="256.54" y1="127" x2="231.14" y2="127" width="0.1524" layer="91"/>
-<label x="236.22" y="127" size="1.778" layer="95"/>
+<label x="233.68" y="127" size="1.778" layer="95"/>
 <pinref part="J" gate="S1" pin="P"/>
 </segment>
 </net>
@@ -12782,11 +12782,11 @@ Based on the following sources:
 <pinref part="H" gate="A2" pin="P"/>
 </segment>
 </net>
-<net name="RDY_S/R/W" class="0">
+<net name="RDY_S/R/W_SLO" class="0">
 <segment>
 <pinref part="E47" gate="B" pin="I0"/>
 <wire x1="256.54" y1="124.46" x2="231.14" y2="124.46" width="0.1524" layer="91"/>
-<label x="236.22" y="124.46" size="1.778" layer="95"/>
+<label x="233.68" y="124.46" size="1.778" layer="95"/>
 <pinref part="J" gate="L1" pin="P"/>
 </segment>
 </net>
