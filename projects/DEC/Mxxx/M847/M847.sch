@@ -22235,7 +22235,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="U$7" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="FIELD_EN" class="0">
 <segment>
 <wire x1="231.14" y1="78.74" x2="236.22" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
@@ -22254,7 +22254,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E33" gate="A" pin="I0"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="!FIELD_EN" class="0">
 <segment>
 <wire x1="154.94" y1="43.18" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="43.18" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
@@ -22363,7 +22363,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E15" gate="D" pin="I1"/>
 </segment>
 </net>
-<net name="N$62" class="0">
+<net name="!DATA_EN" class="0">
 <segment>
 <wire x1="198.12" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="81.28" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
@@ -23015,7 +23015,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E10" gate="B" pin="O"/>
 </segment>
 </net>
-<net name="N$120" class="0">
+<net name="!GO" class="0">
 <segment>
 <wire x1="58.42" y1="185.42" x2="55.88" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="210.82" x2="55.88" y2="210.82" width="0.1524" layer="91"/>
@@ -23113,7 +23113,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E13" gate="A" pin="I0"/>
 </segment>
 </net>
-<net name="N$127" class="0">
+<net name="D1_DELAYED" class="0">
 <segment>
 <wire x1="142.24" y1="238.76" x2="144.78" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="238.76" x2="144.78" y2="236.22" width="0.1524" layer="91"/>
@@ -23154,7 +23154,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E16" gate="A" pin="I0"/>
 </segment>
 </net>
-<net name="N$129" class="0">
+<net name="RUN" class="0">
 <segment>
 <wire x1="193.04" y1="220.98" x2="190.5" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="220.98" x2="190.5" y2="238.76" width="0.1524" layer="91"/>
@@ -23271,7 +23271,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E33" gate="D" pin="I1"/>
 </segment>
 </net>
-<net name="N$138" class="0">
+<net name="!CLR_D3" class="0">
 <segment>
 <wire x1="116.84" y1="167.64" x2="119.38" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="167.64" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
@@ -23419,7 +23419,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E15" gate="A" pin="I1"/>
 </segment>
 </net>
-<net name="N$64" class="0">
+<net name="!LAST" class="0">
 <segment>
 <wire x1="274.32" y1="101.6" x2="271.78" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="101.6" x2="271.78" y2="73.66" width="0.1524" layer="91"/>
@@ -23438,7 +23438,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E15" gate="A" pin="O"/>
 </segment>
 </net>
-<net name="N$135" class="0">
+<net name="ACTIVE" class="0">
 <segment>
 <wire x1="190.5" y1="139.7" x2="195.58" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="139.7" x2="195.58" y2="154.94" width="0.1524" layer="91"/>
@@ -23534,7 +23534,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E22" gate="D" pin="O"/>
 </segment>
 </net>
-<net name="N$144" class="0">
+<net name="!DEP" class="0">
 <segment>
 <wire x1="165.1" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="101.6" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
