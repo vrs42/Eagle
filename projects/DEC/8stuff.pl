@@ -4,7 +4,7 @@
 # List work related to PDP-8 stuff.
 
 @todo = (
-# *straight8,
+  *straight8,
 # *pdp8s,
 # *pt08,
 # *tu55,
@@ -12,37 +12,38 @@
   *tc08,
   *pdp8i,
   *pdp8l,
-# *linc8,
-# *pdp12,
+  *linc8,
+  *pdp12,
 );
 
 
 #
 # Straight-8 list cleaned up from one by Rob Krten.
 @linc8 = (
-  "A130", "A401", "A502", "A601", "A604", "A704", "A706", "B104", # linc8
-  "B115", "B117", "B130", "B171", "B204", "B360", "B602", "B684", # linc8
-# The 5 G882 appear to be misidentified as G885 in module locator.
-  "G007", "G008", "G208", "G209", "G882", "G906", "R001", "R002", # linc8
-  "R107", "R111", "R113", "R121", "R122", "R123", "R141", "R151", # linc8
-  "R181", "R201", "R202", "R203", "R204", "R210", "R211", "R212", # linc8
-  "R220", "R302", "R303", "R401", "R405", "R410", "R601", "R602", # linc8
-  "R603", "R613", "R650", "S107", "S111", "S151", "S181", "S202", # linc8
-# S623 is most likely a typo for S603.
-  "S203", "S205", "S284", "S602", "S603", "W002", "W005", "W011", # linc8
-  "W021", "W023", "W024", "W025", "W026", "W031", "W033", "W034", # linc8
-  "W035", "W050", "W070", "W072", "W073", "W300", "W500", "W501", # linc8
-# MC31 is W640, not W650; calculates IOPn.
-  "W607", "W640" # linc8
+  "A130", "A202", "A218", "A401", "A502", "A601", "A604", "A704", # linc8
+  "A706", "B104", "B115", "B117", "B130", "B171", "B204", "B360", # linc8
+# "B602", # linc8
+  "B684", "G007", "G008", "G208", "G209", "G882", "G906", "R001", # linc8
+  "R002", "R107", "R111", "R113", "R121", "R122", "R123", "R141", # linc8
+  "R151", "R181", "R201", "R202", "R203", "R204", "R210", "R211", # linc8
+# "R410", # linc8
+  "R212", "R220", "R302", "R303", "R401", "R405", "R450", "R601", # linc8
+  "R602", "R603", "R613", "R623", "R650", "S107", "S111", "S123", # linc8
+  "S151", "S181", "S202", "S203", "S205", "S284", "S602", "S603", # linc8
+  "W002", "W005", "W011", "W021", "W023", "W024", "W025", "W026", # linc8
+# "W035", # linc8
+  "W031", "W033", "W034", "W050", "W070", "W072", "W073", "W300", # linc8
+# "W500", # linc8
+  "W501", "W607", "W612", "W640" # linc8
 );
 
 @straight8 = (
   "A502", "A601", "A604", "A704", "B104", "B130", "B204", "B360", # straight8
-  "B684", "G007", "G008", "G208", "G209", "R002", "R107", "R111", # straight8
-  "R113", "R121", "R123", "R151", "R201", "R202", "R203", "R205", # straight8
+  "B684", "G007", "G008", "G208", "G209", "G603", "R002", "R107", # straight8
+  "R111", "R113", "R121", "R123", "R151", "R201", "R202", "R203", # straight8
 # Most straight-8 actually use a 1.3Mhz R405 instead of the R408.
-# "R211", "R212", "R220", "R302", "R401", "R405", "R408", "R603", # straight8
-  "R211", "R212", "R220", "R302", "R401", "R405",         "R603", # straight8
+# "R205", "R211", "R212", "R220", "R302", "R401", "R408", "R603", # straight8
+  "R205", "R211", "R212", "R220", "R302", "R401", "R405", "R603", # straight8
   "R650", "S107", "S111", "S151", "S181", "S202", "S203", "S205", # straight8
   "S284", "S602", "S603", "W005", "W011", "W024", "W025", "W026", # straight8
   "W050", "W070", "W300", "W501", "W512", "W607", "W640" # straight8
@@ -121,13 +122,13 @@ foreach $d (@todo) {
     $dir = "$1" . "xxx";
     unless (-f "$dir/$m/${m}X.brd" || -f "$dir/$m/$m.nox") {
       # warn "$dir/$m/${m}X.brd is missing\n";
-      $missing{"$dir/$m/${m}X.brd"} = 1;
+      $missing{"$dir/$m/${m}X.brd"} = $d;
       $missing++;
     }
     @images = <$dir/$m/${m}?back.jpg>;
     unless (-f $images[0]) {
       # warn "$dir/$m/${m}*.jpg is missing\n";
-      $missing{"$dir/$m/${m}*.jpg"} = 1;
+      $missing{"$dir/$m/${m}*.jpg"} = $d;
       # $missing++;
     }
   }
@@ -139,5 +140,5 @@ foreach $d (@todo) {
 }
 
 foreach $m (sort keys %missing) {
-  print "$m is missing\n";
+  print "$m is missing ($missing{$m})\n";
 }
