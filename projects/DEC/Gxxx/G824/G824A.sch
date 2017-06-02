@@ -948,10 +948,31 @@ type 0414, grid 15 mm</description>
 <text x="-3.81" y="-6.223" size="1.27" layer="51" ratio="10" rot="R90">1</text>
 <text x="-13.97" y="-4.953" size="1.27" layer="51" ratio="10" rot="R90">4</text>
 </package>
-<package name="SPADELUG">
-<description>Spade Lug Mounting Hole</description>
-<pad name="1" x="0" y="0" drill="3.175" diameter="7.62"/>
-<text x="-2.54" y="4.445" size="1.27" layer="21">&gt;NAME</text>
+<package name="UPL1-50">
+<description>UPL1 series Circuit Breaker</description>
+<pad name="1" x="25.4" y="0" drill="3.9624" diameter="7.62"/>
+<pad name="2" x="-26.67" y="0" drill="3.9624" diameter="7.62" rot="R180"/>
+<wire x1="19.05" y1="-11.43" x2="19.05" y2="11.43" width="0.127" layer="21"/>
+<wire x1="-19.685" y1="-11.43" x2="-19.685" y2="11.43" width="0.127" layer="21"/>
+<wire x1="-19.685" y1="11.43" x2="19.05" y2="11.43" width="0.127" layer="21"/>
+<wire x1="-19.685" y1="-11.43" x2="19.05" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-19.685" y1="11.43" x2="-33.02" y2="11.43" width="0.127" layer="21"/>
+<wire x1="-33.02" y1="11.43" x2="-33.02" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-33.02" y1="-11.43" x2="-19.685" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-11.43" x2="33.02" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="33.02" y1="-11.43" x2="33.02" y2="11.43" width="0.127" layer="21"/>
+<wire x1="33.02" y1="11.43" x2="19.05" y2="11.43" width="0.127" layer="21"/>
+<wire x1="-15.24" y1="5.08" x2="-10.16" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="5.08" x2="-3.81" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="5.08" x2="15.875" y2="5.08" width="0.127" layer="21"/>
+<wire x1="15.875" y1="5.08" x2="15.875" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="15.875" y1="-5.08" x2="-3.81" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-5.08" x2="-10.16" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-5.08" x2="-15.24" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-15.24" y1="-5.08" x2="-15.24" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-5.08" x2="-3.81" y2="5.08" width="0.127" layer="21"/>
+<text x="3.81" y="-2.54" size="2.54" layer="21" rot="R90">ON</text>
 </package>
 </packages>
 <symbols>
@@ -1016,15 +1037,19 @@ type 0414, grid 15 mm</description>
 <pin name="G" x="-2.54" y="-2.54" visible="off" length="point" direction="pas"/>
 <wire x1="-1.27" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="MA01-1">
-<wire x1="1.27" y1="2.54" x2="-3.81" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-3.81" y="5.08" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="95" rot="MR180">&gt;NAME</text>
-<pin name="1" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<symbol name="BREAKER">
+<description>Fuse/Circuit Breaker</description>
+<wire x1="-5.08" y1="0" x2="-3.556" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.524" x2="-2.54" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.889" y1="-1.4986" x2="2.4892" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.5992" y1="1.4912" x2="-3.048" y2="1.7272" width="0.254" layer="94" curve="-46.337037" cap="flat"/>
+<wire x1="-3.048" y1="1.7272" x2="-2.496" y2="1.491" width="0.254" layer="94" curve="-46.403624" cap="flat"/>
+<wire x1="0.4572" y1="-1.778" x2="0.8965" y2="-1.4765" width="0.254" layer="94" curve="63.169357" cap="flat"/>
+<wire x1="-0.0178" y1="-1.508" x2="0.4572" y2="-1.7778" width="0.254" layer="94" curve="64.986119" cap="flat"/>
+<text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas" function="dot" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" function="dot" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1257,15 +1282,16 @@ type 0414, grid 15 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LUG" prefix="LUG">
-<description>Spade Lug</description>
+<deviceset name="UPL1-50" prefix="CB" uservalue="yes">
+<description>UPL Single Pole Circuit Breaker</description>
 <gates>
-<gate name="G$1" symbol="MA01-1" x="0" y="0"/>
+<gate name="G$1" symbol="BREAKER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SPADELUG">
+<device name="" package="UPL1-50">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12462,46 +12488,6 @@ Source: www.vishay.com .. rwm.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="switch-omron">
-<description>&lt;b&gt;Omron Switches&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="D-TS">
-<wire x1="0" y1="-3.175" x2="0" y2="-2.54" width="0.254" layer="95"/>
-<wire x1="0" y1="2.54" x2="0" y2="3.175" width="0.254" layer="95"/>
-<wire x1="0" y1="-2.54" x2="-0.635" y2="0" width="0.254" layer="95"/>
-<wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="95"/>
-<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.254" layer="95"/>
-<wire x1="-4.445" y1="-1.905" x2="-3.175" y2="-1.905" width="0.254" layer="95"/>
-<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.1524" layer="95"/>
-<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.905" width="0.254" layer="95"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="95"/>
-<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="95"/>
-<wire x1="-0.635" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="95"/>
-<wire x1="0" y1="-3.175" x2="0" y2="-5.08" width="0.1524" layer="95"/>
-<wire x1="0" y1="3.175" x2="0" y2="5.08" width="0.1524" layer="95"/>
-<text x="-6.35" y="-1.905" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="D-TS" prefix="S" uservalue="yes">
-<description>&lt;b&gt;SWITCH&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="D-TS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12561,9 +12547,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="D3" library="diode" deviceset="DIODE-" device="DO35-10" value="D664"/>
 <part name="SC1" library="dec-con" deviceset="MCR649" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
-<part name="CB1" library="switch-omron" deviceset="D-TS" device="" value="UPL1-50-0203"/>
-<part name="CB1A" library="dec-con" deviceset="LUG" device="" value=""/>
-<part name="CB1B" library="dec-con" deviceset="LUG" device="" value=""/>
+<part name="CB2" library="dec-con" deviceset="UPL1-50" device="" value="UPL1-50-0203"/>
 </parts>
 <sheets>
 <sheet>
@@ -12624,9 +12608,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="D3" gate="G$1" x="129.54" y="121.92" rot="R180"/>
 <instance part="SC1" gate="G$1" x="185.42" y="73.66"/>
 <instance part="SUPPLY17" gate="GND" x="185.42" y="66.04"/>
-<instance part="CB1" gate="G$1" x="177.8" y="111.76" rot="R270"/>
-<instance part="CB1A" gate="G$1" x="170.18" y="129.54" rot="R270"/>
-<instance part="CB1B" gate="G$1" x="177.8" y="106.68"/>
+<instance part="CB2" gate="G$1" x="177.8" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -12771,19 +12753,17 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="198.12" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="147.32" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
 <junction x="198.12" y="147.32"/>
-<wire x1="205.74" y1="147.32" x2="228.6" y2="147.32" width="0.1524" layer="91"/>
-<junction x="205.74" y="147.32"/>
-<label x="215.9" y="147.32" size="2.54" layer="95"/>
+<label x="160.02" y="147.32" size="2.54" layer="95"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="132.08" y1="121.92" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="121.92" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="121.92" x2="175.26" y2="147.32" width="0.1524" layer="91"/>
 <junction x="175.26" y="147.32"/>
-<wire x1="172.72" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="111.76" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
 <junction x="170.18" y="121.92"/>
-<pinref part="CB1A" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="124.46" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="CB2" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="147.32" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
+<label x="142.24" y="121.92" size="2.54" layer="95"/>
 </segment>
 </net>
 <net name="+5V_OUT" class="0">
@@ -12829,17 +12809,14 @@ Source: www.vishay.com .. rwm.pdf</description>
 <junction x="190.5" y="142.24"/>
 <wire x1="210.82" y1="139.7" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="91.44" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="91.44" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="106.68" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="111.76" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="142.24" x2="177.8" y2="142.24" width="0.1524" layer="91"/>
 <junction x="177.8" y="142.24"/>
 <wire x1="182.88" y1="111.76" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
 <junction x="185.42" y="111.76"/>
-<pinref part="CB1B" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
-<junction x="185.42" y="106.68"/>
+<pinref part="CB2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+8V" class="0">
@@ -12877,7 +12854,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="35.56" y1="129.54" x2="35.56" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="PASST" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="154.94" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
@@ -12900,6 +12877,9 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="104.14" y1="139.7" x2="104.14" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="142.24" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
 <junction x="101.6" y="142.24"/>
+<wire x1="114.3" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
+<junction x="101.6" y="154.94"/>
+<label x="104.14" y="154.94" size="2.54" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -12985,7 +12965,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="144.78" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="+5V_REF" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="86.36" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
@@ -13005,6 +12985,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="35.56" y1="116.84" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
 <junction x="35.56" y="114.3"/>
 <junction x="35.56" y="86.36"/>
+<label x="40.64" y="86.36" size="2.54" layer="95"/>
 </segment>
 </net>
 </nets>
