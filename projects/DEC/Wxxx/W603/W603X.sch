@@ -3308,7 +3308,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V5" library="supply2" deviceset="+10V" device=""/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="D23" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D24A" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D24" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="Q3" library="transistor" deviceset="2N2102" device="" value="PN3569"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="0207/10" value="15K"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="0207/10" value="2200"/>
@@ -3357,7 +3357,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="D20" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="D19" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D28A" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D28" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
 <part name="Q7" library="transistor" deviceset="2N2102" device="" value="PN3569"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="0207/10" value="15K"/>
 <part name="R26" library="rcl" deviceset="R-US_" device="0207/10" value="2200"/>
@@ -3423,7 +3423,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="V5" gate="G$1" x="78.74" y="228.6"/>
 <instance part="V6" gate="GND" x="96.52" y="203.2"/>
 <instance part="D23" gate="G$1" x="78.74" y="195.58" rot="MR270"/>
-<instance part="D24A" gate="G$1" x="127" y="195.58" rot="MR270"/>
+<instance part="D24" gate="G$1" x="127" y="195.58" rot="MR270"/>
 <instance part="Q3" gate="G$1" x="142.24" y="210.82"/>
 <instance part="R9" gate="G$1" x="127" y="147.32" rot="R90"/>
 <instance part="R10" gate="G$1" x="127" y="203.2" rot="R90"/>
@@ -3472,7 +3472,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="D15" gate="G$1" x="246.38" y="223.52" rot="R90"/>
 <instance part="D20" gate="G$1" x="317.5" y="180.34" rot="MR270"/>
 <instance part="D19" gate="G$1" x="317.5" y="167.64" rot="MR270"/>
-<instance part="D28A" gate="G$1" x="317.5" y="195.58" rot="MR270"/>
+<instance part="D28" gate="G$1" x="317.5" y="195.58" rot="MR270"/>
 <instance part="Q7" gate="G$1" x="332.74" y="210.82"/>
 <instance part="R25" gate="G$1" x="317.5" y="147.32" rot="R90"/>
 <instance part="R26" gate="G$1" x="317.5" y="203.2" rot="R90"/>
@@ -3740,7 +3740,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="D24A" gate="G$1" pin="A"/>
+<pinref part="D24" gate="G$1" pin="A"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -3754,7 +3754,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="N$16" class="0">
 <segment>
 <wire x1="127" y1="182.88" x2="127" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="D24A" gate="G$1" pin="C"/>
+<pinref part="D24" gate="G$1" pin="C"/>
 <pinref part="D8" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -3992,7 +3992,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="D28A" gate="G$1" pin="A"/>
+<pinref part="D28" gate="G$1" pin="A"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -4007,7 +4007,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <wire x1="317.5" y1="182.88" x2="317.5" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="D20" gate="G$1" pin="A"/>
-<pinref part="D28A" gate="G$1" pin="C"/>
+<pinref part="D28" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$42" class="0">
