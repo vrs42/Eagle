@@ -13310,7 +13310,7 @@ Based on the following sources:
 <part name="D20" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="V41" library="supply2" deviceset="GND" device=""/>
 <part name="D29" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
-<part name="D30A" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D30" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="D31" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="R47" library="rcl" deviceset="R-US_" device="0207/10" value="4.7K"/>
 <part name="R19" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
@@ -13388,9 +13388,9 @@ Based on the following sources:
 <part name="V66" library="supply2" deviceset="GND" device=""/>
 <part name="C28" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
 <part name="V67" library="supply2" deviceset="GND" device=""/>
-<part name="D30" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
-<part name="D51" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="D52" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D53" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D51" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 </parts>
 <sheets>
 <sheet>
@@ -13643,7 +13643,7 @@ Based on the following sources:
 <instance part="D20" gate="G$1" x="114.3" y="50.8" rot="R270"/>
 <instance part="V41" gate="GND" x="114.3" y="40.64"/>
 <instance part="D29" gate="G$1" x="124.46" y="55.88" rot="R180"/>
-<instance part="D30A" gate="G$1" x="134.62" y="55.88" rot="R180"/>
+<instance part="D30" gate="G$1" x="134.62" y="55.88" rot="R180"/>
 <instance part="D31" gate="G$1" x="144.78" y="55.88" rot="R180"/>
 <instance part="R47" gate="G$1" x="147.32" y="68.58" rot="R90"/>
 <instance part="R19" gate="G$1" x="154.94" y="68.58" rot="R90"/>
@@ -13721,9 +13721,9 @@ Based on the following sources:
 <instance part="V66" gate="GND" x="294.64" y="66.04"/>
 <instance part="C28" gate="G$1" x="294.64" y="48.26"/>
 <instance part="V67" gate="GND" x="294.64" y="40.64"/>
-<instance part="D30" gate="G$1" x="236.22" y="236.22" rot="R270"/>
-<instance part="D51" gate="G$1" x="236.22" y="195.58" rot="R270"/>
-<instance part="D52" gate="G$1" x="236.22" y="154.94" rot="R270"/>
+<instance part="D52" gate="G$1" x="236.22" y="236.22" rot="R270"/>
+<instance part="D53" gate="G$1" x="236.22" y="195.58" rot="R270"/>
+<instance part="D51" gate="G$1" x="236.22" y="154.94" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -13847,17 +13847,17 @@ Based on the following sources:
 <segment>
 <wire x1="228.6" y1="238.76" x2="236.22" y2="238.76" width="0.1524" layer="91"/>
 <label x="228.6" y="238.76" size="1.778" layer="95"/>
-<pinref part="D30" gate="G$1" pin="A"/>
+<pinref part="D52" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="228.6" y1="198.12" x2="236.22" y2="198.12" width="0.1524" layer="91"/>
 <label x="228.6" y="198.12" size="1.778" layer="95"/>
-<pinref part="D51" gate="G$1" pin="A"/>
+<pinref part="D53" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="228.6" y1="157.48" x2="236.22" y2="157.48" width="0.1524" layer="91"/>
 <label x="228.6" y="157.48" size="1.778" layer="95"/>
-<pinref part="D52" gate="G$1" pin="A"/>
+<pinref part="D51" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -14728,7 +14728,7 @@ Based on the following sources:
 <junction x="236.22" y="228.6"/>
 <pinref part="Q19" gate="G$1" pin="C"/>
 <pinref part="EDGE" gate="AF2" pin="1"/>
-<pinref part="D30" gate="G$1" pin="C"/>
+<pinref part="D52" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -14912,7 +14912,7 @@ Based on the following sources:
 <junction x="236.22" y="187.96"/>
 <pinref part="Q18" gate="G$1" pin="C"/>
 <pinref part="EDGE" gate="AJ2" pin="1"/>
-<pinref part="D51" gate="G$1" pin="C"/>
+<pinref part="D53" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$48" class="0">
@@ -14981,7 +14981,7 @@ Based on the following sources:
 <junction x="236.22" y="147.32"/>
 <pinref part="Q22" gate="G$1" pin="C"/>
 <pinref part="EDGE" gate="AH2" pin="1"/>
-<pinref part="D52" gate="G$1" pin="C"/>
+<pinref part="D51" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$54" class="0">
@@ -15302,13 +15302,13 @@ Based on the following sources:
 <segment>
 <wire x1="127" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="D29" gate="G$1" pin="A"/>
-<pinref part="D30A" gate="G$1" pin="C"/>
+<pinref part="D30" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$77" class="0">
 <segment>
 <wire x1="137.16" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="D30A" gate="G$1" pin="A"/>
+<pinref part="D30" gate="G$1" pin="A"/>
 <pinref part="D31" gate="G$1" pin="C"/>
 </segment>
 </net>
