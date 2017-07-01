@@ -9706,7 +9706,7 @@ Based on the following sources:
 <part name="R34" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
-<part name="D9A" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="V16" library="supply2" deviceset="-15V" device=""/>
 <part name="R40" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
@@ -9975,7 +9975,7 @@ Based on the following sources:
 <instance part="R34" gate="G$1" x="259.08" y="38.1" rot="R90"/>
 <instance part="D10" gate="G$1" x="266.7" y="55.88" rot="R270"/>
 <instance part="D9" gate="G$1" x="271.78" y="55.88" rot="R270"/>
-<instance part="D9A" gate="G$1" x="302.26" y="55.88" rot="R270"/>
+<instance part="D8" gate="G$1" x="302.26" y="55.88" rot="R270"/>
 <instance part="D7" gate="G$1" x="307.34" y="55.88" rot="R270"/>
 <instance part="V16" gate="G$1" x="228.6" y="27.94"/>
 <instance part="R40" gate="G$1" x="266.7" y="38.1" rot="R90"/>
@@ -11656,7 +11656,7 @@ Based on the following sources:
 </net>
 <net name="N$59" class="0">
 <segment>
-<pinref part="D9A" gate="G$1" pin="A"/>
+<pinref part="D8" gate="G$1" pin="A"/>
 <pinref part="Q2" gate="G$1" pin="E"/>
 </segment>
 </net>
@@ -11702,7 +11702,7 @@ Based on the following sources:
 <junction x="302.26" y="45.72"/>
 <pinref part="D7" gate="G$1" pin="C"/>
 <pinref part="R39" gate="G$1" pin="2"/>
-<pinref part="D9A" gate="G$1" pin="C"/>
+<pinref part="D8" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="-4.7V" class="0">
