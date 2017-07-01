@@ -15224,7 +15224,7 @@ Based on the following sources:
 <part name="Q2" library="transistor" deviceset="*-NPN-" device="TO92-CBE" technology="2N4124" value="2N3009B"/>
 <part name="Q3" library="transistor" deviceset="*-PNP-" device="TO92-CBE" technology="2N4126" value="6534B"/>
 <part name="D3" library="diode" deviceset="BY609" device="" value="D662"/>
-<part name="D2A" library="diode" deviceset="BY609" device="" value="D662"/>
+<part name="D2" library="diode" deviceset="BY609" device="" value="D662"/>
 <part name="D1" library="diode" deviceset="BY609" device="" value="D662"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/15" value="330"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/15" value="750"/>
@@ -15389,7 +15389,7 @@ Based on the following sources:
 </instance>
 <instance part="Q3" gate="G$1" x="40.64" y="248.92" rot="R90"/>
 <instance part="D3" gate="1" x="22.86" y="228.6" rot="R270"/>
-<instance part="D2A" gate="1" x="22.86" y="218.44" rot="R270"/>
+<instance part="D2" gate="1" x="22.86" y="218.44" rot="R270"/>
 <instance part="D1" gate="1" x="22.86" y="208.28" rot="R270"/>
 <instance part="R2" gate="G$1" x="261.62" y="25.4" rot="R90"/>
 <instance part="R1" gate="G$1" x="261.62" y="15.24" rot="R90"/>
@@ -15686,13 +15686,13 @@ Based on the following sources:
 <segment>
 <wire x1="22.86" y1="226.06" x2="22.86" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="D3" gate="1" pin="C"/>
-<pinref part="D2A" gate="1" pin="A"/>
+<pinref part="D2" gate="1" pin="A"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <wire x1="22.86" y1="215.9" x2="22.86" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="D2A" gate="1" pin="C"/>
+<pinref part="D2" gate="1" pin="C"/>
 <pinref part="D1" gate="1" pin="A"/>
 </segment>
 </net>
