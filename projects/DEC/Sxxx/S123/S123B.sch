@@ -5614,7 +5614,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R10" library="rcl" deviceset="R-US_" device="0207/10" value="7.5K"/>
 <part name="V22" library="supply2" deviceset="-15V" device=""/>
 <part name="V23" library="supply2" deviceset="+10V" device=""/>
-<part name="R14A" library="rcl" deviceset="R-US_" device="0207/10" value="100K"/>
+<part name="R14" library="rcl" deviceset="R-US_" device="0207/10" value="100K"/>
 <part name="Q5" library="transistor-pnp" deviceset="2N3637*" device="" value="2N3639"/>
 <part name="V24" library="supply2" deviceset="GND" device=""/>
 <part name="R15" library="rcl" deviceset="R-US_" device="0207/10" value="0"/>
@@ -5719,7 +5719,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R10" gate="G$1" x="30.48" y="27.94" rot="R90"/>
 <instance part="V22" gate="G$1" x="30.48" y="20.32"/>
 <instance part="V23" gate="G$1" x="162.56" y="175.26"/>
-<instance part="R14A" gate="G$1" x="162.56" y="167.64" rot="R90"/>
+<instance part="R14" gate="G$1" x="162.56" y="167.64" rot="R90"/>
 <instance part="Q5" gate="G$1" x="177.8" y="160.02"/>
 <instance part="V24" gate="GND" x="185.42" y="167.64"/>
 <instance part="R15" gate="G$1" x="185.42" y="154.94" rot="MR0"/>
@@ -5775,7 +5775,7 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="V23" gate="G$1" pin="+10V"/>
-<pinref part="R14A" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="V27" gate="G$1" pin="+10V"/>
@@ -6078,7 +6078,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="162.56" y1="160.02" x2="160.02" y2="160.02" width="0.1524" layer="91"/>
 <junction x="162.56" y="160.02"/>
 <pinref part="Q5" gate="G$1" pin="B"/>
-<pinref part="R14A" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="D20" gate="G$1" pin="A"/>
 </segment>
 </net>
