@@ -17063,7 +17063,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <part name="R36" library="rcl" deviceset="R-US_" device="0207/10" value="2700"/>
 <part name="R37" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="R38" library="rcl" deviceset="R-US_" device="0207/10" value="2700"/>
-<part name="D8A" library="diode" deviceset="1N4148" device="DO35-10" value="1N994"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N994"/>
 <part name="V37" library="supply2" deviceset="GND" device=""/>
 <part name="Q11" library="transistor-npn" deviceset="2N3439" device="" value="2N3009"/>
 <part name="V38" library="supply2" deviceset="VCC" device=""/>
@@ -17345,7 +17345,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <instance part="R36" gate="G$1" x="53.34" y="129.54"/>
 <instance part="R37" gate="G$1" x="63.5" y="139.7" rot="R90"/>
 <instance part="R38" gate="G$1" x="63.5" y="149.86" rot="R90"/>
-<instance part="D8A" gate="G$1" x="71.12" y="132.08" rot="R90"/>
+<instance part="D8" gate="G$1" x="71.12" y="132.08" rot="R90"/>
 <instance part="V37" gate="GND" x="71.12" y="127" rot="MR0"/>
 <instance part="Q11" gate="G$1" x="60.96" y="78.74"/>
 <instance part="V38" gate="G$1" x="63.5" y="106.68"/>
@@ -17555,7 +17555,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="V35" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D8A" gate="G$1" pin="A"/>
+<pinref part="D8" gate="G$1" pin="A"/>
 <pinref part="V37" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -18354,7 +18354,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <junction x="76.2" y="144.78"/>
 <pinref part="R37" gate="G$1" pin="2"/>
 <pinref part="R38" gate="G$1" pin="1"/>
-<pinref part="D8A" gate="G$1" pin="C"/>
+<pinref part="D8" gate="G$1" pin="C"/>
 <pinref part="E2" gate="A" pin="I0"/>
 <pinref part="E2" gate="A" pin="I1"/>
 </segment>
