@@ -102,8 +102,7 @@
 </layers>
 <board>
 <plain>
-<text x="48.26" y="59.69" size="1.778" layer="16" font="vector" ratio="24" rot="MR0">2 MC FLIP FLOP R201C</text>
-<text x="21.59" y="2.54" size="1.778" layer="16" font="vector" ratio="24" rot="MR0">7-67</text>
+<text x="48.26" y="59.69" size="1.778" layer="16" font="vector" ratio="24" rot="MR0">2 MC FLIP FLOP R201D</text>
 </plain>
 <libraries>
 <library name="dec-con">
