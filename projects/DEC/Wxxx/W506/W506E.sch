@@ -13972,28 +13972,28 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="EDGE" library="dec-con" deviceset="EDGE-1" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
-<part name="Q1" library="transistor-npn" deviceset="2N2102" device="" value="2N2219"/>
-<part name="Q2" library="transistor-npn" deviceset="2N2102" device="" value="2N2219"/>
-<part name="Q4" library="transistor-npn" deviceset="2N2102" device="" value="2N2219"/>
-<part name="Q3" library="transistor-npn" deviceset="2N2102" device="" value="2N2219"/>
-<part name="Q5" library="transistor-npn" deviceset="2N2102" device="" value="2N2219"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D11" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D13" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D16" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D17" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D18" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D19" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D20" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="Q1" library="transistor-npn" deviceset="2N2102" device="" value="DEC2219"/>
+<part name="Q2" library="transistor-npn" deviceset="2N2102" device="" value="DEC2219"/>
+<part name="Q4" library="transistor-npn" deviceset="2N2102" device="" value="DEC2219"/>
+<part name="Q3" library="transistor-npn" deviceset="2N2102" device="" value="DEC2219"/>
+<part name="Q5" library="transistor-npn" deviceset="2N2102" device="" value="DEC2219"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D11" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D13" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D16" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D17" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D18" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D19" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D20" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="D1" library="diode" deviceset="ZENER-DIODE" device="DO35Z10" value="1N758"/>
 <part name="D2" library="diode" deviceset="ZENER-DIODE" device="DO35Z10" value="1N758"/>
 <part name="C2" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="6.8uF"/>
@@ -14029,7 +14029,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R26" library="pot" deviceset="TRIM_US-" device="B25P" value="20K"/>
 <part name="C6" library="rcl" deviceset="CPOL-US" device="E15-5AXIAL" value="6.8uF"/>
 <part name="V8" library="supply2" deviceset="GND" device=""/>
-<part name="Q6" library="transistor-npn" deviceset="2N2102" device="" value="2N2219"/>
+<part name="Q6" library="transistor-npn" deviceset="2N2102" device="" value="DEC2219"/>
 <part name="R17" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 </parts>
 <sheets>
@@ -14561,7 +14561,10 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </sheet>
 </sheets>
 <errors>
+<approved hash="101,1,111.76,78.74,H1,MOUNT,,,,"/>
+<approved hash="101,1,111.76,68.58,H2,MOUNT,,,,"/>
 <approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+<approved hash="113,1,25.4,120.946,S1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
