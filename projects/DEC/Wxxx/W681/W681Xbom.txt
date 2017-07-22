@@ -1,0 +1,17 @@
+Partlist exported from C:/Users/Vince/Documents/eagle/projects/DEC/Wxxx/W681/W681X.sch at 7/22/2017 2:01:49 PM
+
+Qty Value          Device         Package      Parts                                         Description                                 
+8   1500           R-US_0207/10   0207/10      R6, R9, R12, R14, R15, R20, R21, R22          RESISTOR, American symbol                   
+3   15K            R-US_0207/10   0207/10      R1, R2, R3                                    RESISTOR, American symbol                   
+11  1N4150         DIODE-DO35-10  DO35-10      D1, D2, D3, D4, D5, D6, D8, D9, D10, D11, D17 DIODE                                       
+6   1N914          DIODE-DO35-10  DO35-10      D7, D15, D20, D21, D22, D23                   DIODE                                       
+6   1N914V         DIODE-DO35-10  DO35-10      D12, D13, D14, D16, D18, D19                  DIODE                                       
+1   2200           R-US_0207/10   0207/10      R18                                           RESISTOR, American symbol                   
+2   2N3906         -PNP-TO5       TO5          Q4, Q6                                        PNP Transistror                             
+7   3K             R-US_0207/10   0207/10      R5, R7, R10, R11, R16, R17, R19               RESISTOR, American symbol                   
+2   56pF           C-US           C063-025X075 C1, C2                                        Capacitors with funky DEC lead spacing.     
+1   68K            R-US_0207/10   0207/10      R4                                            RESISTOR, American symbol                   
+2   7500           R-US_0207/10   0207/10      R8, R13                                       RESISTOR, American symbol                   
+1   OUTLINE-SINGLE OUTLINE-SINGLE SINGLE       U$1                                           W681 Board.              
+2   PN3646         -NPN-TO5       TO5          Q3, Q5                                        NPN Transistror                             
+3   PN4917         -PNP-TO5       TO5          Q1, Q2, Q7                                    PNP Transistror                             
