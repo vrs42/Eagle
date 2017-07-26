@@ -58,7 +58,13 @@ $WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
 # $d2 is the basename of the module (M111).
 sub NextAction {
   #
-  # A .pdf should imply a .wtb or .xpl.
+  # Warn if there's a photo, but no schematic or exemplar.
+  ($pdf) = <$d/${d2}[A-z]*.pdf>;
+  warn "$d/$b: photos without .pdf!\n"
+    if (! -f "$d/${d2}.xpl") && (! -f $pdf)
+    && (-f "$d/${b}front.jpg" && -f "$d/${b}back.jpg");
+  #
+  # A .pdf should imply a photograph, .wtb or .xpl.
 # return print STDERR "$d/$b: Missing .wtb and .xpl!\n"
 #   if ! (-f "$d/$b.wtb" || -f "$d/$b.xpl");
   #
