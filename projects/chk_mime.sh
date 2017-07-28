@@ -11,12 +11,14 @@
 # DEC/Mxxx/M7075/M7075Cfront.jpg - image/jpeg
 # RK05 Exerciser/rk05ex6x10.zip - application/octet-stream
 
-svn propget svn:mime-type -R . |
+svn propget svn:mime-type -R . | (
+status=0
 while read i; do
   case "$i" in 
     *.bmp" - image/bmp")  ;;
     *.gif" - image/gif")  ;;
     *.jpg" - image/jpeg") ;;
+    *.JPG" - image/jpeg") ;;
     *.png" - image/png")  ;;
     *.pdf" - application/pdf") ;;
     *.brd" - application/octet-stream") ;;
@@ -32,7 +34,8 @@ while read i; do
     *.doc" - application/octet-stream") ;;
     *.fpd" - application/octet-stream") ;;
     *.mcw" - application/octet-stream") ;;
-    *) echo $i; exit 1 ;;
+    *) echo $i; status=1 ;;
   esac
 done
-exit 0
+exit $status
+)
