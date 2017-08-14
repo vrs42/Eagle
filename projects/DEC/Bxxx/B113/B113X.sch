@@ -7830,6 +7830,7 @@ grid 5.08 mm</description>
 <plain>
 <text x="165.1" y="7.62" size="2.54" layer="94">B-CS-B113-0-1</text>
 <text x="165.1" y="27.94" size="2.54" layer="94">Diode Gate B113</text>
+<text x="241.3" y="7.62" size="2.54" layer="94">D</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
