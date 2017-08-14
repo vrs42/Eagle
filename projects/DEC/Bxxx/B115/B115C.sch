@@ -3368,19 +3368,19 @@ high speed (Philips)</description>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 <part name="U$1" library="dec-con" deviceset="OUTLINE-*" device="SINGLE"/>
 <part name="U$2" library="dec-con" deviceset="EDGE-1" device=""/>
-<part name="Q1" library="transistor-pnp" deviceset="2N2904*" device="" value="PN4355"/>
+<part name="Q1" library="transistor-pnp" deviceset="2N2904*" device="" value="DEC2894"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D1" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="12K 5%"/>
 <part name="V2" library="supply2" deviceset="-15V" device=""/>
-<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D3" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="1500 5%"/>
 <part name="V6" library="supply2" deviceset="-15V" device=""/>
-<part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="1500 5%"/>
 <part name="V8" library="supply2" deviceset="-15V" device=""/>
-<part name="D13" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D13" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="1500 5%"/>
 <part name="V10" library="supply2" deviceset="-15V" device=""/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
@@ -3397,23 +3397,23 @@ high speed (Philips)</description>
 <part name="V15" library="supply2" deviceset="GND" device=""/>
 <part name="D4" library="diode" deviceset="1N4148" device="DO35-10" value="1N914"/>
 <part name="D5" library="diode" deviceset="1N4148" device="DO35-10" value="1N914"/>
-<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="Q2" library="transistor-pnp" deviceset="2N2904*" device="" value="PN4355"/>
+<part name="D6" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="Q2" library="transistor-pnp" deviceset="2N2904*" device="" value="DEC2894"/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
-<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D7" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="12K 5%"/>
 <part name="V4" library="supply2" deviceset="-15V" device=""/>
-<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D8" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D9" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="D10" library="diode" deviceset="1N4148" device="DO35-10" value="1N914"/>
 <part name="D11" library="diode" deviceset="1N4148" device="DO35-10" value="1N914"/>
-<part name="Q3" library="transistor-pnp" deviceset="2N2904*" device="" value="PN4355"/>
+<part name="Q3" library="transistor-pnp" deviceset="2N2904*" device="" value="DEC2894"/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
-<part name="D14" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D14" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="0207/10" value="12K 5%"/>
 <part name="V7" library="supply2" deviceset="-15V" device=""/>
-<part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
-<part name="D16" library="diode" deviceset="1N4148" device="DO35-10" value="1N4154"/>
+<part name="D15" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
+<part name="D16" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
 <part name="D17" library="diode" deviceset="1N4148" device="DO35-10" value="1N914"/>
 <part name="D18" library="diode" deviceset="1N4148" device="DO35-10" value="1N914"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="68K 5%"/>
