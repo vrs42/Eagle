@@ -6780,7 +6780,6 @@ grid 5.08 mm</description>
 <text x="165.1" y="27.94" size="2.54" layer="94">Diode Gate B133</text>
 <text x="165.1" y="7.62" size="2.54" layer="94">B-CS-B133-0-1</text>
 <text x="241.3" y="7.62" size="2.54" layer="94">B</text>
-<text x="15.24" y="81.28" size="1.778" layer="91">Renumber the parts</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
