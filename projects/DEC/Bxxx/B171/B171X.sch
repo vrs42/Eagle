@@ -10106,6 +10106,7 @@ grid 5.08 mm</description>
 <plain>
 <text x="165.1" y="27.94" size="2.54" layer="94">Diode Gate</text>
 <text x="165.1" y="7.62" size="2.54" layer="94">B-CS-B171-0-1</text>
+<text x="149.86" y="38.1" size="2.54" layer="94">Used B172 photo (same etch).</text>
 <text x="190.5" y="58.42" size="1.778" layer="94">Install either discretes or DGL-3V.</text>
 <text x="241.3" y="7.62" size="2.54" layer="94">C</text>
 </plain>
