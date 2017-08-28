@@ -87,7 +87,7 @@
 <layer number="131" name="prix" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="test" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="6" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="203" name="203bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -47249,6 +47249,7 @@
 <rectangle x1="115.35918125" y1="62.18758125" x2="115.52681875" y2="62.27241875" layer="200"/>
 <rectangle x1="115.86718125" y1="62.18758125" x2="116.03481875" y2="62.27241875" layer="200"/>
 <rectangle x1="116.713" y1="62.18758125" x2="125.68681875" y2="62.27241875" layer="200"/>
+<text x="106.045" y="61.595" size="1.778" layer="16" ratio="24" rot="SMR180">B212C</text>
 </plain>
 <libraries>
 <library name="dec-con">
