@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mic" unit="mic" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -386,22 +386,22 @@ package type SS</description>
 <pin name="A0" x="-12.7" y="-10.16" length="short" direction="in"/>
 <pin name="A1" x="-12.7" y="-12.7" length="short" direction="in"/>
 <pin name="A2" x="-12.7" y="-15.24" length="short" direction="in"/>
-<pin name="GPA0" x="12.7" y="20.32" length="short" rot="R180"/>
-<pin name="GPA1" x="12.7" y="17.78" length="short" rot="R180"/>
-<pin name="GPA2" x="12.7" y="15.24" length="short" rot="R180"/>
-<pin name="GPA3" x="12.7" y="12.7" length="short" rot="R180"/>
-<pin name="GPA4" x="12.7" y="10.16" length="short" rot="R180"/>
-<pin name="GPA5" x="12.7" y="7.62" length="short" rot="R180"/>
-<pin name="GPA6" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="GPA7" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="GPB0" x="12.7" y="-2.54" length="short" rot="R180"/>
-<pin name="GPB1" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="GPB2" x="12.7" y="-7.62" length="short" rot="R180"/>
-<pin name="GPB3" x="12.7" y="-10.16" length="short" rot="R180"/>
-<pin name="GPB4" x="12.7" y="-12.7" length="short" rot="R180"/>
-<pin name="GPB5" x="12.7" y="-15.24" length="short" rot="R180"/>
-<pin name="GPB6" x="12.7" y="-17.78" length="short" rot="R180"/>
-<pin name="GPB7" x="12.7" y="-20.32" length="short" rot="R180"/>
+<pin name="GPA0" x="12.7" y="20.32" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPA1" x="12.7" y="17.78" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPA2" x="12.7" y="15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPA3" x="12.7" y="12.7" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPA4" x="12.7" y="10.16" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPA5" x="12.7" y="7.62" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPA6" x="12.7" y="5.08" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPA7" x="12.7" y="2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPB0" x="12.7" y="-2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPB1" x="12.7" y="-5.08" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPB2" x="12.7" y="-7.62" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPB3" x="12.7" y="-10.16" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPB4" x="12.7" y="-12.7" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPB5" x="12.7" y="-15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPB6" x="12.7" y="-17.78" length="short" swaplevel="1" rot="R180"/>
+<pin name="GPB7" x="12.7" y="-20.32" length="short" swaplevel="1" rot="R180"/>
 <pin name="INTA" x="-12.7" y="10.16" length="short" direction="out"/>
 <pin name="INTB" x="-12.7" y="7.62" length="short" direction="out"/>
 <pin name="SCK" x="-12.7" y="0" length="short" direction="in"/>
