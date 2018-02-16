@@ -5618,7 +5618,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="15K"/>
 <part name="V18" library="supply2" deviceset="-15V" device=""/>
 <part name="D12" library="diode" deviceset="1N4148" device="DO35-10" value="1N3606"/>
-<part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=".01uf"/>
+<part name="C1" library="rcl" deviceset="C-US" device="150-054X183" value=".01uf"/>
 <part name="V31" library="supply2" deviceset="-15V" device=""/>
 <part name="V32" library="supply2" deviceset="+10V" device=""/>
 <part name="V33" library="supply2" deviceset="GND" device=""/>
@@ -5630,6 +5630,7 @@ Source: AVX .. aphvc.pdf</description>
 <text x="165.1" y="27.94" size="2.54" layer="94">Diode Gate R111</text>
 <text x="165.1" y="7.62" size="2.54" layer="94">B-CS-R111-0-1</text>
 <text x="220.98" y="88.9" size="1.778" layer="94">-3V Reference</text>
+<text x="241.3" y="7.62" size="2.54" layer="94">F</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
