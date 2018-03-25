@@ -14161,13 +14161,13 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="E12" library="dec-con" deviceset="DS8641" device="N"/>
 <part name="E13" library="dec-con" deviceset="DS8641" device="N"/>
 <part name="E45" library="dec-con" deviceset="DS8641" device="N"/>
-<part name="E14" library="dec-con" deviceset="82S100" device=""/>
+<part name="E14" library="dec-con" deviceset="82S100" device="" value="23007C6"/>
 <part name="E15" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
 <part name="E17" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
 <part name="E85" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
 <part name="E88" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
 <part name="E103" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
-<part name="E16" library="dec-con" deviceset="82S100" device=""/>
+<part name="E16" library="dec-con" deviceset="82S100" device="" value="23008C6"/>
 <part name="E20" library="74xx-us" deviceset="74*01" device="N" technology="LS"/>
 <part name="E21" library="74xx-us" deviceset="74*10" device="N" technology="LS"/>
 <part name="E24" library="74xx-us" deviceset="74*10" device="N" technology="LS"/>
@@ -14176,7 +14176,7 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="E92" library="74xx-us" deviceset="74*10" device="N" technology="LS"/>
 <part name="E23" library="74xx-us" deviceset="74*258" device="N" technology="LS"/>
 <part name="E27" library="74xx-us" deviceset="74*11" device="N" technology="S"/>
-<part name="E28" library="dec-con" deviceset="74S287" device=""/>
+<part name="E28" library="dec-con" deviceset="74S287" device="" value="23440A2"/>
 <part name="E29" library="74xx-us" deviceset="74*02" device="N" technology="LS"/>
 <part name="E47" library="74xx-us" deviceset="74*02" device="N" technology="LS"/>
 <part name="E48" library="74xx-us" deviceset="74*02" device="N" technology="LS"/>
@@ -14217,10 +14217,10 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="E78" library="74xx-us" deviceset="74*85" device="N" technology="LS"/>
 <part name="E69" library="dec-con" deviceset="8266" device=""/>
 <part name="E79" library="dec-con" deviceset="8266" device=""/>
-<part name="E74" library="dec-con" deviceset="74S287" device=""/>
+<part name="E74" library="dec-con" deviceset="74S287" device="" value="23441A2"/>
 <part name="E77" library="74xx-eu" deviceset="74*221" device="N" technology="LS"/>
-<part name="E80" library="dec-con" deviceset="74S288" device=""/>
-<part name="E81" library="dec-con" deviceset="82S100" device=""/>
+<part name="E80" library="dec-con" deviceset="74S288" device="" value="23211A1"/>
+<part name="E81" library="dec-con" deviceset="82S100" device="" value="23009C6"/>
 <part name="E82" library="dec-con" deviceset="74*89" device="" value="74S189"/>
 <part name="E86" library="74xx-us" deviceset="74*368" device="N"/>
 <part name="E95" library="74xx-us" deviceset="74*368" device="N"/>
@@ -14229,8 +14229,8 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="E87" library="dec-con" deviceset="74S287" device="" value="23442A2"/>
 <part name="E113" library="dec-con" deviceset="74S287" device="" value="23442A2"/>
 <part name="E89" library="74xx-us" deviceset="74*148" device="N"/>
-<part name="E109" library="dec-con" deviceset="82S100" device=""/>
-<part name="E111" library="dec-con" deviceset="74S571" device=""/>
+<part name="E109" library="dec-con" deviceset="82S100" device="" value="23010C6"/>
+<part name="E111" library="dec-con" deviceset="74S571" device="" value="23621A9"/>
 <part name="E112" library="dec-con" deviceset="74S571" device="" value="23621A9"/>
 <part name="E114" library="dec-con" deviceset="74S571" device="" value="23621A9"/>
 <part name="E120" library="74xx-us" deviceset="74*139" device="N" technology="S"/>
@@ -20538,6 +20538,7 @@ or will meet your specific requirements.&lt;p&gt;
 <text x="231.14" y="200.66" size="1.778" layer="94">Data Bank Reg.</text>
 <text x="231.14" y="241.3" size="1.778" layer="94">Inst. Bank Reg.</text>
 <text x="279.4" y="180.34" size="1.778" layer="94">Save Bank Reg.</text>
+<text x="276.86" y="137.16" size="1.778" layer="94">Read Virt. Field ROM</text>
 </plain>
 <instances>
 <instance part="E90" gate="A" x="96.52" y="121.92"/>
@@ -20551,7 +20552,7 @@ or will meet your specific requirements.&lt;p&gt;
 <instance part="E82" gate="A" x="96.52" y="160.02"/>
 <instance part="E89" gate="A" x="147.32" y="236.22" rot="MR180"/>
 <instance part="E109" gate="A" x="185.42" y="215.9" rot="MR180"/>
-<instance part="E111" gate="A" x="287.02" y="124.46"/>
+<instance part="E111" gate="A" x="287.02" y="119.38"/>
 <instance part="E120" gate="A" x="332.74" y="236.22" rot="MR180"/>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
 <instance part="FRAME6" gate="G$2" x="287.02" y="0"/>
@@ -20974,8 +20975,8 @@ or will meet your specific requirements.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="E111" gate="A" pin="O0"/>
-<wire x1="299.72" y1="137.16" x2="307.34" y2="137.16" width="0.1524" layer="91"/>
-<label x="302.26" y="137.16" size="1.778" layer="95"/>
+<wire x1="299.72" y1="132.08" x2="307.34" y2="132.08" width="0.1524" layer="91"/>
+<label x="302.26" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!RD8" class="0">
@@ -21303,8 +21304,8 @@ or will meet your specific requirements.&lt;p&gt;
 <pinref part="E117" gate="A" pin="D3"/>
 <wire x1="274.32" y1="165.1" x2="264.16" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="E111" gate="A" pin="A1"/>
-<wire x1="274.32" y1="134.62" x2="264.16" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="134.62" x2="264.16" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="129.54" x2="264.16" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="129.54" x2="264.16" y2="165.1" width="0.1524" layer="91"/>
 <junction x="264.16" y="165.1"/>
 </segment>
 </net>
@@ -21329,8 +21330,8 @@ or will meet your specific requirements.&lt;p&gt;
 <pinref part="E117" gate="A" pin="D4"/>
 <wire x1="274.32" y1="160.02" x2="266.7" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="E111" gate="A" pin="A4"/>
-<wire x1="274.32" y1="127" x2="266.7" y2="127" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="127" x2="266.7" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="121.92" x2="266.7" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="121.92" x2="266.7" y2="160.02" width="0.1524" layer="91"/>
 <junction x="266.7" y="160.02"/>
 </segment>
 </net>
@@ -21389,16 +21390,16 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="274.32" y1="175.26" x2="271.78" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="E111" gate="A" pin="A0"/>
 <wire x1="271.78" y1="175.26" x2="259.08" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="137.16" x2="271.78" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="137.16" x2="271.78" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="132.08" x2="271.78" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="132.08" x2="271.78" y2="175.26" width="0.1524" layer="91"/>
 <junction x="271.78" y="175.26"/>
 </segment>
 </net>
 <net name="N$163" class="0">
 <segment>
 <pinref part="E111" gate="A" pin="A3"/>
-<wire x1="274.32" y1="129.54" x2="269.24" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="129.54" x2="269.24" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="124.46" x2="269.24" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="124.46" x2="269.24" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="E117" gate="A" pin="D2"/>
 <wire x1="269.24" y1="170.18" x2="274.32" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="E108" gate="A" pin="Q4"/>
@@ -21411,43 +21412,43 @@ or will meet your specific requirements.&lt;p&gt;
 <net name="P1_RR1" class="0">
 <segment>
 <pinref part="E111" gate="A" pin="A2"/>
-<wire x1="274.32" y1="132.08" x2="254" y2="132.08" width="0.1524" layer="91"/>
-<label x="254" y="132.08" size="1.778" layer="95"/>
+<wire x1="274.32" y1="127" x2="254" y2="127" width="0.1524" layer="91"/>
+<label x="254" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P1_RR0" class="0">
 <segment>
 <pinref part="E111" gate="A" pin="A5"/>
-<wire x1="254" y1="124.46" x2="274.32" y2="124.46" width="0.1524" layer="91"/>
-<label x="254" y="124.46" size="1.778" layer="95"/>
+<wire x1="254" y1="119.38" x2="274.32" y2="119.38" width="0.1524" layer="91"/>
+<label x="254" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P6_USM" class="0">
 <segment>
 <pinref part="E111" gate="A" pin="A8"/>
-<wire x1="274.32" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
-<label x="254" y="116.84" size="1.778" layer="95"/>
+<wire x1="274.32" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
+<label x="254" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!P4_RDF" class="0">
 <segment>
 <pinref part="E111" gate="A" pin="A7"/>
-<wire x1="274.32" y1="119.38" x2="254" y2="119.38" width="0.1524" layer="91"/>
-<label x="254" y="119.38" size="1.778" layer="95"/>
+<wire x1="274.32" y1="114.3" x2="254" y2="114.3" width="0.1524" layer="91"/>
+<label x="254" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P1_CRF" class="0">
 <segment>
 <pinref part="E111" gate="A" pin="A6"/>
-<wire x1="274.32" y1="121.92" x2="254" y2="121.92" width="0.1524" layer="91"/>
-<label x="254" y="121.92" size="1.778" layer="95"/>
+<wire x1="274.32" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
+<label x="254" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!P1_ENRF" class="0">
 <segment>
 <pinref part="E111" gate="A" pin="!G"/>
-<wire x1="274.32" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
-<label x="254" y="111.76" size="1.778" layer="95"/>
+<wire x1="274.32" y1="106.68" x2="254" y2="106.68" width="0.1524" layer="91"/>
+<label x="254" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!P5_IBS1" class="0">
@@ -21510,8 +21511,8 @@ or will meet your specific requirements.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="E111" gate="A" pin="O1"/>
-<wire x1="299.72" y1="134.62" x2="307.34" y2="134.62" width="0.1524" layer="91"/>
-<label x="302.26" y="134.62" size="1.778" layer="95"/>
+<wire x1="299.72" y1="129.54" x2="307.34" y2="129.54" width="0.1524" layer="91"/>
+<label x="302.26" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!RD4" class="0">
@@ -21562,7 +21563,7 @@ or will meet your specific requirements.&lt;p&gt;
 <pinref part="R23" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="177.8" x2="121.92" y2="175.26" width="0.1524" layer="91"/>
 <junction x="121.92" y="175.26"/>
-<wire x1="121.92" y1="175.26" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="175.26" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="E91" gate="A" pin="2Y1"/>
 <wire x1="299.72" y1="208.28" x2="309.88" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="E120" gate="A" pin="B"/>
@@ -21574,8 +21575,8 @@ or will meet your specific requirements.&lt;p&gt;
 <junction x="309.88" y="238.76"/>
 <wire x1="309.88" y1="208.28" x2="309.88" y2="160.02" width="0.1524" layer="91"/>
 <junction x="309.88" y="208.28"/>
-<wire x1="309.88" y1="160.02" x2="309.88" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="104.14" x2="309.88" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="160.02" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="160.02" x2="309.88" y2="160.02" width="0.1524" layer="91"/>
 <junction x="309.88" y="160.02"/>
 </segment>
@@ -21594,9 +21595,9 @@ or will meet your specific requirements.&lt;p&gt;
 <junction x="312.42" y="233.68"/>
 <wire x1="312.42" y1="205.74" x2="312.42" y2="157.48" width="0.1524" layer="91"/>
 <junction x="312.42" y="205.74"/>
-<wire x1="312.42" y1="157.48" x2="312.42" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="101.6" x2="119.38" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="157.48" x2="312.42" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="93.98" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="93.98" x2="119.38" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="E82" gate="A" pin="Q1"/>
 <wire x1="111.76" y1="172.72" x2="114.3" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="1"/>
