@@ -15308,17 +15308,17 @@ or will meet your specific requirements.&lt;p&gt;
 <pinref part="E95" gate="A" pin="1A4"/>
 <label x="66.04" y="226.06" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="66.04" y1="218.44" x2="78.74" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="E95" gate="A" pin="2A2"/>
-<label x="66.04" y="218.44" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="P1_BFL2" class="0">
 <segment>
 <pinref part="E95" gate="A" pin="1A3"/>
 <wire x1="78.74" y1="228.6" x2="66.04" y2="228.6" width="0.1524" layer="91"/>
 <label x="66.04" y="228.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="218.44" x2="78.74" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="E95" gate="A" pin="2A2"/>
+<label x="66.04" y="218.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!P4_LET_IO" class="0">
@@ -17991,7 +17991,7 @@ or will meet your specific requirements.&lt;p&gt;
 <label x="109.22" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="!P3_CI7EN" class="0">
+<net name="!P3_C17EN" class="0">
 <segment>
 <pinref part="E14" gate="A" pin="O4"/>
 <wire x1="106.68" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
@@ -20357,7 +20357,7 @@ or will meet your specific requirements.&lt;p&gt;
 <label x="350.52" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="!P3_CI7EN" class="0">
+<net name="!P3_C17EN" class="0">
 <segment>
 <pinref part="E34" gate="A" pin="D"/>
 <wire x1="170.18" y1="233.68" x2="185.42" y2="233.68" width="0.1524" layer="91"/>
