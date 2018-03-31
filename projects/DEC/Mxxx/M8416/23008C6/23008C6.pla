@@ -1,0 +1,52 @@
+#$ TOOL CUPL
+# Berkeley PLA format generated using CUPL(WM) 5.0a
+# Serial#  60008009
+# Created  Fri Mar 30 23:22:54 2018
+#
+#    Name        23008C6
+#    Partno      E16 82S100
+#    Revision    1.0
+#    Date        March 2018
+#    Designer    Digital Equipment Corporation
+#    Company     None
+#    Assembly    0001
+#    Location    None
+#
+#$ TITLE  23008C6
+#$ PROPERTY ATMEL jtag = on
+#$ PROPERTY ATMEL preassign keep
+#$ PROPERTY ATMEL TMS_pullup = on
+#$ PROPERTY ATMEL TDI_pullup = on
+#$ MODULE  23008C6
+#$ JEDECFILE  23008C6
+#$ DEVICE  virtual
+#$ PINS  25 AC0+:20 AC1+:21 AC2+:22 AC3+:23 AC4+:24 AC5+:25 AC6+:26 AC7+:27 AC8+:2 AC9+:3 AC10+:4 AC11+:5 CE+:19 MBCT4+:6 RACA+:7 RACB+:8 RACC+:9 rd0+:10 rd1+:11 rd2+:12 rd5+:13 rd6+:15 rd7+:16 rd8+:17 rd9+:18 
+.i 14
+.o 16
+.type f
+.ilb  AC1 AC3 AC4 AC6 AC7 AC8 AC9 AC10 AC11 CE MBCT4 RACA RACB 
+      RACC 
+.ob   rd0 rd0.OE rd1 rd1.OE rd2 rd2.OE rd5 rd5.OE rd6 rd6.OE 
+      rd7 rd7.OE rd8 rd8.OE rd9 rd9.OE 
+.phase 1111111111111111
+.p 19
+-------------- 1000000000000000
+---------00--- 0101010101010101
+-0------------ 0010000000000000
+------------1- 0010100000000000
+--0----------- 0000100000000000
+0------------- 0000001000000000
+-------------1 0000001000000000
+---0--0------- 0000000010000000
+------0------1 0000000010000000
+---0--------1- 0000000010000000
+------------11 0000000010101000
+----0--0------ 0000000000100000
+-------0-----1 0000000000100000
+----0-------1- 0000000000100000
+-----0--0----- 0000000000001000
+--------0----1 0000000000001000
+-----0------1- 0000000000001000
+-----------1-- 0000000000000010
+---0---------- 0000000000000010
+.e

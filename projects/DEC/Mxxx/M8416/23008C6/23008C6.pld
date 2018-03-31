@@ -1,0 +1,136 @@
+Name      23008C6;
+
+Assembly  0001;
+Revision  1.0;
+PartNo    E16 82S100;
+Device    f1508ispplcc84;
+
+Company   None;
+Designer  Digital Equipment Corporation;
+Location  None;
+Date      March 2018;
+
+property ATMEL { jtag=on };
+PROPERTY ATMEL { preassign keep };
+PROPERTY ATMEL { TMS_pullup=on };
+PROPERTY ATMEL { TDI_pullup=on };
+/* PROPERTY ATMEL { pin_keep OFF }; */
+/* PROPERTY ATMEL { open_collector = INT_RQST }; */
+
+/*
+ * 23008C6 is an 82S100, programmed to re-arrange bits representing field information
+ * during RACA, RACB, and RACC IOT instructions (!MBCT4?).
+ * An 82S100 has 16 dedicated inputs, and 8 dedicated outputs.  In this case, the inputs
+ * are a copy of the AC at the start of the instruction, and the control signals for RACA,
+ * RACB, RACC.  The outputs are bits 0-2 and 5-9 of the new value for the AC.
+ *
+ * Forms:
+ * Bit:  0  1  2  3  4  5  6  7  8  9 10 11
+ *   A:                 a  c  d  e  b
+ *   B:           a  b              c  d  e
+ *   C:     a  b           c  d  e
+ * Unused bits are always cleared.
+*/
+
+/*
+ * The 82S100 is a tri-state device, if CE is inactive, the 
+ * outputs are undriven.
+*/
+Pin 19 = !CE;
+/*
+ * These are just bits of the AC before the instruction.
+*/
+Pin [20..27,2..5] = [AC0..11];
+/*
+ * MBCT4 enables virtual fields in user mode.  That is, RIF and RDF
+ * will not trap.
+*/
+Pin  6 = !MBCT4;
+/*
+ * EEM is set when the full KT8-A instruction set is enabled.
+*/
+Pin  7 = !RACA;
+/*
+ * USM is set if we are currently in user mode.
+*/
+Pin  8 = !RACB;
+/*
+ * DIOI disables trapping on I/O instructions in user mode, 
+ * except CIF and CDF to fields outside the user limit.
+*/
+Pin  9 = !RACC;
+
+/* Outputs */
+Pin 10 = !rd0;
+Pin 11 = !rd1;
+Pin 12 = !rd2;
+Pin 13 = !rd5;
+Pin 15 = !rd6;
+Pin 16 = !rd7;
+Pin 17 = !rd8;
+Pin 18 = !rd9;
+
+/*
+ * N.B. This does crazy things if more than one of RACA, RACB, or RACC are asserted!
+*/
+
+/*
+ * RD0 is always cleared.
+*/
+rd0 = 'b'0;
+/*
+ * RD1 is set to "a" if this is RACB, otherwise cleared.
+*/
+rd1 = RACB & AC3;
+/*
+ * RD2 is set to "b" if this is RACB, otherwise cleared.
+*/
+rd2 = RACB & AC4;
+/*
+ * RD3 is set to "a" if this is RACA, otherwise cleared.
+ * This isn't done here, but rather in E23.
+*/
+/*rd3 = RACA & AC5;*/
+/*
+ * RD4 is set to "b" if this is RACA, otherwise cleared.
+ * This isn't done here, but rather in E23.
+*/
+/*rd4 = RACA & AC9;*/
+/*
+ * RD5 is set to "a" if this is RACC, otherwise cleared.
+*/
+rd5 = RACC & AC1;
+/*
+ * RD6 is set to "c" for RACC and RACB, otherwise cleared.
+*/
+rd6 = RACC & AC6
+    # RACB & AC9;
+/*
+ * RD7 is set to "d" for RACC and RACB, otherwise cleared.
+*/
+rd7 = RACC & AC7
+    # RACB & AC10;
+/*
+ * RD8 is set to "e" for RACC and RACB, otherwise cleared.
+*/
+rd8 = RACC & AC8
+    # RACB & AC11;
+/*
+ * RD9 is set to "c" for RACA, otherwise cleared.
+*/
+rd9 = RACA & AC6;
+/*
+ * RD10 is set to "d" for RACA, otherwise cleared.
+*/
+/*rd10 = RACA & AC7;*/
+/*
+ * RD11 is set to "e" for RACA, otherwise cleared.
+ * This isn't done here, but rather in E23.
+*/
+/*rd11 = RACA & AC8;*/
+
+/*
+ * Here is where CE and MBCT4 are implemented.
+ * This isn't done here, but rather in E23.
+*/
+[rd0..2,rd5..9].oe = CE & MBCT4;

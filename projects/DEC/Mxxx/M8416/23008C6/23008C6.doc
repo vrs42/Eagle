@@ -1,0 +1,131 @@
+
+*******************************************************************************
+                                    23008C6
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Fri Mar 30 23:22:54 2018
+Name            23008C6
+Partno          E16 82S100
+Revision        1.0
+Date            March 2018
+Designer        Digital Equipment Corporation
+Company         None
+Assembly        0001
+Location        None
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+!rd0 =>
+    1 
+
+rd0.oe  =>
+    CE & MBCT4
+
+!rd1 =>
+    !AC3
+  # !RACB
+
+rd1.oe  =>
+    CE & MBCT4
+
+!rd2 =>
+    !AC4
+  # !RACB
+
+rd2.oe  =>
+    CE & MBCT4
+
+!rd5 =>
+    !AC1
+  # !RACC
+
+rd5.oe  =>
+    CE & MBCT4
+
+!rd6 =>
+    !AC6 & !AC9
+  # !AC9 & !RACC
+  # !AC6 & !RACB
+  # !RACB & !RACC
+
+rd6.oe  =>
+    CE & MBCT4
+
+!rd7 =>
+    !AC7 & !AC10
+  # !AC10 & !RACC
+  # !AC7 & !RACB
+  # !RACB & !RACC
+
+rd7.oe  =>
+    CE & MBCT4
+
+!rd8 =>
+    !AC8 & !AC11
+  # !AC11 & !RACC
+  # !AC8 & !RACB
+  # !RACB & !RACC
+
+rd8.oe  =>
+    CE & MBCT4
+
+!rd9 =>
+    !RACA
+  # !AC6
+
+rd9.oe  =>
+    CE & MBCT4
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    AC0                         20       V        -       -       -     
+    AC1                         21       V        -       -       -     
+    AC2                         22       V        -       -       -     
+    AC3                         23       V        -       -       -     
+    AC4                         24       V        -       -       -     
+    AC5                         25       V        -       -       -     
+    AC6                         26       V        -       -       -     
+    AC7                         27       V        -       -       -     
+    AC8                         2        V        -       -       -     
+    AC9                         3        V        -       -       -     
+    AC10                        4        V        -       -       -     
+    AC11                        5        V        -       -       -     
+ !  CE                          19       V        -       -       -     
+ !  MBCT4                       6        V        -       -       -     
+ !  RACA                        7        V        -       -       -     
+ !  RACB                        8        V        -       -       -     
+ !  RACC                        9        V        -       -       -     
+ !  rd0                         10       V        1       0       4     
+    rd0                 oe      10       X        1       0       1     
+ !  rd1                         11       V        2       0       4     
+    rd1                 oe      11       X        1       0       1     
+ !  rd2                         12       V        2       0       4     
+    rd2                 oe      12       X        1       0       1     
+ !  rd5                         13       V        2       0       4     
+    rd5                 oe      13       X        1       0       1     
+ !  rd6                         15       V        4       0       4     
+    rd6                 oe      15       X        1       0       1     
+ !  rd7                         16       V        4       0       4     
+    rd7                 oe      16       X        1       0       1     
+ !  rd8                         17       V        4       0       4     
+    rd8                 oe      17       X        1       0       1     
+ !  rd9                         18       V        2       0       4     
+    rd9                 oe      18       X        1       0       1     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
