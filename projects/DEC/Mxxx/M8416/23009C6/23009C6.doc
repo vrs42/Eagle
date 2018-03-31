@@ -1,0 +1,108 @@
+
+*******************************************************************************
+                                    23009C6
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Sat Mar 31 13:12:13 2018
+Name            23009C6
+Partno          E81 82S100
+Revision        1.0
+Date            March 2018
+Designer        Digital Equipment Corporation
+Company         None
+Assembly        0001
+Location        None
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+!A0 =>
+    !AC6
+
+A0.oe  =>
+    CE
+
+!A1 =>
+    !AC7
+
+A1.oe  =>
+    CE
+
+!A2 =>
+    !AC8
+
+A2.oe  =>
+    CE
+
+!A3 =>
+    !AC9
+
+A3.oe  =>
+    CE
+
+D0 =>
+    AC10
+
+D0 =>
+    CE
+
+D1 =>
+    AC11
+
+D1 =>
+    CE
+
+!lbm_or_rbm =>
+    !LBM & !RBM
+  # !BTS4
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    A0                          10       V        1       0       4     
+    A0                  oe      10       X        1       0       1     
+    A1                          11       V        1       0       4     
+    A1                  oe      11       X        1       0       1     
+    A2                          12       V        1       0       4     
+    A2                  oe      12       X        1       0       1     
+    A3                          13       V        1       0       4     
+    A3                  oe      13       X        1       0       1     
+    AC0                         24       V        -       -       -     
+    AC1                         25       V        -       -       -     
+    AC2                         26       V        -       -       -     
+    AC3                         27       V        -       -       -     
+    AC4                         2        V        -       -       -     
+    AC5                         3        V        -       -       -     
+    AC6                         4        V        -       -       -     
+    AC7                         5        V        -       -       -     
+    AC8                         6        V        -       -       -     
+    AC9                         7        V        -       -       -     
+    AC10                        8        V        -       -       -     
+    AC11                        9        V        -       -       -     
+    BTS4                        21       V        -       -       -     
+ !  CE                          19       V        -       -       -     
+    D0                          0        I        1       -       -     
+    D0                  oe      0        I        1       -       -     
+    D1                          0        I        1       -       -     
+    D1                  oe      0        I        1       -       -     
+ !  LBM                         23       V        -       -       -     
+ !  RBM                         22       V        -       -       -     
+    d0                          15       V        -       -       -     
+    d1                          16       V        -       -       -     
+ !  lbm_or_rbm                  17       V        2       0       4     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

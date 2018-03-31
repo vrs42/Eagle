@@ -1,0 +1,72 @@
+Name      23009C6;
+
+Assembly  0001;
+Revision  1.0;
+PartNo    E81 82S100;
+Device    f1508ispplcc84;
+
+Company   None;
+Designer  Digital Equipment Corporation;
+Location  None;
+Date      March 2018;
+
+property ATMEL { jtag=on };
+PROPERTY ATMEL { preassign keep };
+PROPERTY ATMEL { TMS_pullup=on };
+PROPERTY ATMEL { TDI_pullup=on };
+/* PROPERTY ATMEL { pin_keep OFF }; */
+/* PROPERTY ATMEL { open_collector = INT_RQST }; */
+
+/*
+ * 23009C6 is an 82S100, programmed to decode RBM and LBM IOTs to get an address for
+ * the Break Map, as stored in E82.
+ * An 82S100 has 16 dedicated inputs, and 8 dedicated outputs.  In this case, the inputs
+ * are a copy of the AC at the start of the instruction, and the control signals for LBM
+ * and RBM.  The outputs are the 4 bit break map address, a signam that indicates an LBM
+ * or RBM instruction is in progress, and 2 bits of data for the break map, in the case 
+ * of an LBM.
+*/
+
+/*
+ * The 82S100 is a tri-state device, if CE is inactive, the 
+ * outputs are undriven.
+*/
+Pin 19 = !CE;
+/*
+ * These are just bits of the AC before the instruction.
+*/
+Pin [24..27,2..9] = [AC0..11];
+/*
+ * BTS4 indicates the data is stable and it is time to do our thing.
+*/
+Pin  21 = BTS4;
+/*
+ * LBM or RBM is asserted when our IOTs are in progress.
+*/
+Pin 22 = !RBM;
+Pin 23 = !LBM;
+
+/* Outputs */
+Pin [10,11,12,13] = [A0..3]; /* E82 */
+Pin [15,16] = [d0..1]; /* E82 */
+Pin 17 = !lbm_or_rbm;
+
+/*
+ * Drive the address to E82.
+*/
+[A0..3] = [AC6..9];
+/*
+ * Drive the data to E82.
+*/
+[D0..1] = [AC10..11];
+/*
+ * RD2 is set to "b" if this is RACB, otherwise cleared.
+*/
+lbm_or_rbm = BTS4 & (LBM # RBM);
+
+/*
+ * Here is where CE is implemented, though it is tied to 
+ * ground in practice.
+ * BUBBUG: This didn't need a PLA -- what am I missing?
+*/
+[A0..3,D0..1].oe = CE;
