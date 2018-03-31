@@ -1,0 +1,216 @@
+
+*******************************************************************************
+                                    23007C6
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Thu Mar 29 17:08:08 2018
+Name            23007C6
+Partno          E14 82S100
+Revision        1.0
+Date            March 2018
+Designer        Digital Equipment Corporation
+Company         None
+Assembly        0001
+Location        None
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+IOT =>
+    PAUSE
+  # BM1 & BM2 & !BM3 & DIOI & USM
+  # !BM1 & !BM2 & !BM3 & !BM8 & !BM9 & !BM10 & !BM11 & USM
+  # !BM1 & !BM2 & !BM3 & EEM & USM
+  # BM4 & !BM5 & !BM6 & !BM7 & !BM8 & !BM9 & !BM10 & !BM11 & USM
+  # BM4 & !BM5 & !BM6 & !BM7 & EEM & USM
+  # !BM1 & !BM2 & !BM3 & !BM4 & !BM5 & !BM6 & !BM7 & BM8 & !BM9 & !BM10 & 
+      !BM11 & RVFEN & USM
+  # BM8 & !BM9 & !BM10 & !BM11 & EEM & USM
+
+!c0 =>
+    !BM1 & !BM2 & !BM3 & BM11 & !EEM & !PAUSE & USM
+  # BM3
+  # !BM1 & BM2 & !BM3 & !BM4 & BM5 & BM7 & BM8 & BM11 & DIOI & EEM & !PAUSE & 
+      USM
+  # BM1 & !BM2 & !BM3 & !BM4 & BM5 & BM7 & BM8 & BM11 & EEM & !PAUSE & USM
+  # BM10 & !BM11
+  # !BM3 & !BM4 & !BM5 & BM6 & !BM7 & !BM8 & !BM10
+  # !BM3 & !BM5 & !BM7 & !BM8 & BM10
+  # BM5 & !BM7 & EEM
+  # BM5 & !BM8 & !EEM
+  # !BM3 & !BM4 & BM8 & !EEM
+  # BM4 & BM11
+  # BM1 & BM2 & !BM3 & !BM4 & !BM5 & !BM6 & !BM7 & !BM8 & !BM9 & !BM10 & !DIOI & 
+      !PAUSE & USM
+  # BM1 & BM2 & !BM3 & BM4 & !BM5 & BM6 & !BM7 & !BM8 & !BM9 & !BM10 & !BM11 & 
+      !DIOI & EEM & !PAUSE & USM
+  # BM1 & BM2 & !BM3 & BM4 & !BM5 & BM7 & !BM8 & !BM9 & !BM10 & !BM11 & !DIOI & 
+      !PAUSE & USM
+  # BM2 & !BM3 & !BM4 & BM5 & BM7 & BM8 & BM10 & !DIOI & EEM & !PAUSE & USM
+  # !BM3 & !BM4 & !BM5 & BM8 & EEM
+  # !BM3 & !BM4 & BM7 & !BM8
+  # BM5 & !BM9
+  # BM9 & !BM10
+  # BM4 & !EEM
+  # BM1 & !BM2 & !BM4 & !BM8 & !PAUSE
+  # !BM1 & BM2 & !BM4 & !BM8 & !PAUSE
+  # BM1 & !BM2 & BM6 & !BM8 & !PAUSE
+  # !BM1 & BM2 & BM6 & !BM8 & !PAUSE
+  # BM1 & !BM2 & BM7 & !BM8 & !PAUSE
+  # !BM1 & BM2 & BM7 & !BM8 & !PAUSE
+  # !PAUSE & !USM
+
+!c1 =>
+    BM3 & !BM4 & !BM5 & !BM6 & !BM7 & !BM9 & !BM10 & !BM11
+  # BM5 & !BM7 & EEM
+  # !BM3 & !BM4 & BM8 & !EEM
+  # BM1 & BM2 & !BM3 & !BM4 & !BM5 & !BM6 & !BM7 & !BM8 & !BM9 & !BM10 & !DIOI & 
+      !PAUSE & USM
+  # !BM4 & !BM5 & !BM6 & !BM7 & !BM9 & BM10 & !BM11
+  # BM6
+  # !BM4 & BM11
+  # BM5 & !BM9
+  # !BM6 & BM7
+  # !BM4 & !BM6 & !BM7 & BM9 & !BM11
+  # BM4 & !EEM
+  # BM1 & !BM2 & !BM4 & !BM8 & !PAUSE
+  # !BM1 & BM2 & !BM4 & !BM8 & !PAUSE
+  # !PAUSE & !USM
+
+!c17en =>
+    BM3
+  # !BM1 & BM2 & !BM3 & !BM4 & BM5 & BM6 & BM7 & BM8 & BM9 & !BM10 & !BM11 & 
+      DIOI & EEM & !PAUSE & USM
+  # BM1 & !BM2 & !BM3 & !BM4 & BM5 & BM6 & BM7 & BM8 & BM9 & !BM10 & !BM11 & 
+      EEM & !PAUSE & USM
+  # !BM1 & BM2 & !BM3 & !BM4 & BM5 & BM6 & BM7 & BM8 & BM10 & !BM11 & DIOI & 
+      EEM & !PAUSE & USM
+  # BM1 & !BM2 & !BM3 & !BM4 & BM5 & BM6 & BM7 & BM8 & BM10 & !BM11 & EEM & 
+      !PAUSE & USM
+  # !BM1 & BM2 & !BM3 & !BM4 & BM5 & BM7 & BM8 & BM11 & DIOI & EEM & !PAUSE & 
+      USM
+  # BM1 & !BM2 & !BM3 & !BM4 & BM5 & BM7 & BM8 & BM11 & EEM & !PAUSE & USM
+  # BM2 & !BM3 & !BM4 & BM5 & BM6 & BM7 & BM8 & !BM9 & !BM10 & BM11 & !DIOI & 
+      EEM & !PAUSE & USM
+  # !BM3 & !BM4 & !BM5 & BM6 & !BM7 & !BM8 & !BM10
+  # !BM3 & !BM5 & !BM7 & !BM8 & BM10
+  # BM5 & !BM7 & EEM
+  # BM5 & !BM8 & !EEM
+  # !BM3 & !BM4 & BM8 & !EEM
+  # BM2 & !BM3 & !BM4 & BM5 & BM6 & BM7 & BM8 & BM9 & !BM10 & !DIOI & EEM & 
+      !PAUSE & USM
+  # BM2 & !BM3 & !BM4 & BM5 & BM7 & BM8 & BM10 & !DIOI & EEM & !PAUSE & USM
+  # !BM3 & !BM4 & !BM5 & BM8 & EEM
+  # !BM3 & !BM4 & BM7 & !BM8
+  # !BM3 & BM4 & BM6
+  # !BM3 & !BM6
+  # !PAUSE & !USM
+
+!cfrom =>
+    !BM1 & !BM2 & !BM3 & BM11 & !EEM & !PAUSE & USM
+  # BM3
+  # BM10 & !BM11
+  # BM9 & !BM10
+  # !BM9 & !BM10
+  # BM1 & !BM2 & !BM3 & BM10 & BM11
+  # BM2 & !BM3 & BM10 & BM11
+  # !PAUSE & !USM
+
+!decen =>
+    BM3
+  # BM10 & !BM11
+  # BM4 & BM11
+  # !BM3 & !BM10 & USM
+  # !BM3 & !BM4 & !BM7
+  # !BM3 & !BM4 & BM7
+  # !PAUSE & !USM
+
+!drive =>
+    BM3 & !BM4 & !BM5 & !BM6 & !BM7 & !BM8 & !BM9 & !BM10 & !BM11 & PAUSE
+  # BM3 & !BM6 & !BM8 & !BM9 & !BM10 & !BM11 & !PAUSE & USM
+  # BM10 & !BM11
+  # BM5 & !BM7 & EEM
+  # BM5 & !BM8 & !EEM
+  # BM4 & BM11
+  # BM1 & BM2 & !BM3 & !BM4 & !BM5 & !BM6 & !BM7 & !BM8 & !BM9 & !BM10 & !DIOI & 
+      !PAUSE & USM
+  # BM1 & BM2 & !BM3 & BM4 & !BM5 & BM7 & !BM8 & !BM9 & !BM10 & !BM11 & !DIOI & 
+      !PAUSE & USM
+  # BM6
+  # !BM4 & BM11
+  # !BM6 & BM8
+  # BM9 & !BM10
+  # BM4 & !BM5 & !BM6 & !BM7 & !BM8 & !BM9 & !BM10 & !BM11
+  # !BM3 & !BM4 & BM7
+  # !BM3 & BM5 & !BM6 & !BM8
+  # BM1 & !BM2 & !BM4 & !BM8 & !PAUSE
+  # !BM1 & BM2 & !BM4 & !BM8 & !PAUSE
+  # BM1 & !BM2 & BM7 & !BM8 & !PAUSE
+  # !BM1 & BM2 & BM7 & !BM8 & !PAUSE
+  # !PAUSE & !USM
+
+!hos =>
+    BM4 & BM11
+  # !BM4 & BM11
+  # !BM9 & !BM10
+  # !BM1 & BM2 & BM3 & !BM11 & USM
+  # !BM2 & BM3 & !BM11 & USM
+  # BM3 & !BM11 & PAUSE & !USM
+  # !BM3 & !BM11
+  # !PAUSE & !USM
+
+!inioen =>
+    BM3
+  # !BM3 & !BM5 & !BM7 & !BM8 & BM10
+  # BM6
+  # !BM6 & BM8
+  # !BM3 & !BM10 & USM
+  # !BM6 & BM7
+  # !BM3 & BM5 & !BM6 & !BM8
+  # !PAUSE & !USM
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    BM1                         20       V        -       -       -     
+    BM2                         21       V        -       -       -     
+    BM3                         22       V        -       -       -     
+    BM4                         23       V        -       -       -     
+    BM5                         24       V        -       -       -     
+    BM6                         25       V        -       -       -     
+    BM7                         26       V        -       -       -     
+    BM8                         27       V        -       -       -     
+    BM9                         2        V        -       -       -     
+    BM10                        3        V        -       -       -     
+    BM11                        4        V        -       -       -     
+ !  CE                          19       V        -       -       -     
+    DIOI                        9        V        -       -       -     
+    EEM                         7        V        -       -       -     
+    IOT                         0        I        8       -       -     
+    PAUSE                       5        V        -       -       -     
+    RVFEN                       6        V        -       -       -     
+    USM                         8        V        -       -       -     
+    c0                          16       V        27      0       4     
+    c1                          17       V        14      0       4     
+ !  c17en                       13       V        20      0       4     
+ !  cfrom                       12       V        8       0       4     
+ !  decen                       11       V        7       0       4     
+    drive                       18       V        20      0       4     
+ !  hos                         15       V        8       0       4     
+    inioen                      10       V        8       0       4     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
