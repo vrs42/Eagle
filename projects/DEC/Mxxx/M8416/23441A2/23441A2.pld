@@ -1,0 +1,77 @@
+Name      23441A2;
+
+Assembly  0001;
+Revision  1.0;
+PartNo    E74 74S287;
+Device    f1508ispplcc84;
+
+Company   None;
+Designer  Digital Equipment Corporation;
+Location  None;
+Date      March 2018;
+
+property ATMEL { jtag=on };
+PROPERTY ATMEL { preassign keep };
+PROPERTY ATMEL { TMS_pullup=on };
+PROPERTY ATMEL { TDI_pullup=on };
+/* PROPERTY ATMEL { pin_keep OFF }; */
+/* PROPERTY ATMEL { open_collector = INT_RQST }; */
+
+/*
+ * 23441A2 is a 74S287, programmed to decode CDF and CIF instructions, as well 
+ * as to generate LET_IO, which BUGBUG.
+ * An 74S287 has 8 address inputs, 2 enables, and 4 data outputs.  In this 
+ * case, the inputs indicate which conditions are happening that might affect
+ * the current bank in use.
+*/
+
+/*
+ * The 74S287 is a tri-state device, if either enable is inactive, the 
+ * outputs are undriven.
+*/
+Pin 14 = !G2;
+Pin 13 = !G1;
+/*
+ * These are the bits we need to decide which bank to use.
+*/
+Pin 15 = !INT_IN_PROG; /* Interrupts force bank 0 */
+Pin  1 = DFEN; /* DF should be used for the MB access */
+Pin  2 = !INIT_EN; /* Reset forces bank 0 */
+Pin  3 = !BCPMAD; /* Non CPU Cycle */
+Pin  4 = TS4; /* Time State 4 */
+Pin  7 = PAUSE; /* IOT in progress */
+Pin  6 = EBM; /* The Break Map is enabled. */
+Pin  5 = !LBM_OR_RBM; /* Break Map IOT */
+/*
+ * The outputs.
+*/
+Pin  9 = !force0; /* Force 0 into the bank value. */
+Pin 10 = !bmen; /* The Break Map supplies the bank value. */
+Pin 11 = !dbs; /* The currend DB is needed. */
+Pin 12 = !ibs; /* The current IB is needed. */
+
+/*
+ * Resets and interrupts force bank zero.
+*/
+force0 = INT_IN_PROG # INIT_EN;
+/*
+ * Use the Break Map if it is enabled and this didn't come from the CPU.
+ * BUGBUG: How are PAUSE, TS4 and LBM_OR_RBM used?
+*/
+bmen = EBM & BCPMAD;
+/*
+ * Use DB when we are using DF.
+*/
+dbs = DFEN;
+/*
+ * Default to use IB.
+*/
+ibs = !dbs & !bmen & !force0;
+
+/*
+ * Here is where G1 and G2 are implemented.
+*/
+force0.oe = G1 & G2;
+bmen.oe = G1 & G2;
+dbs.oe = G1 & G2;
+ibs.oe = G1 & G2;

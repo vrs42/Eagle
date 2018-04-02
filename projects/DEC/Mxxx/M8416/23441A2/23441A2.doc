@@ -1,0 +1,82 @@
+
+*******************************************************************************
+                                    23441A2
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Mon Apr 02 15:14:13 2018
+Name            23441A2
+Partno          E74 74S287
+Revision        1.0
+Date            March 2018
+Designer        Digital Equipment Corporation
+Company         None
+Assembly        0001
+Location        None
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+!bmen =>
+    !EBM
+  # !BCPMAD
+
+bmen.oe  =>
+    G1 & G2
+
+!dbs =>
+    !DFEN
+
+dbs.oe  =>
+    G1 & G2
+
+!force0 =>
+    !INIT_EN & !INT_IN_PROG
+
+force0.oe  =>
+    G1 & G2
+
+!ibs =>
+    force0
+  # dbs
+  # bmen
+
+ibs.oe  =>
+    G1 & G2
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+ !  BCPMAD                      3        V        -       -       -     
+    DFEN                        1        V        -       -       -     
+    EBM                         6        V        -       -       -     
+ !  G1                          13       V        -       -       -     
+ !  G2                          14       V        -       -       -     
+ !  INIT_EN                     2        V        -       -       -     
+ !  INT_IN_PROG                 15       V        -       -       -     
+ !  LBM_OR_RBM                  5        V        -       -       -     
+    PAUSE                       7        V        -       -       -     
+    TS4                         4        V        -       -       -     
+ !  bmen                        10       V        2       0       4     
+    bmen                oe      10       X        1       0       1     
+ !  dbs                         11       V        1       0       4     
+    dbs                 oe      11       X        1       0       1     
+ !  force0                      9        V        1       0       4     
+    force0              oe      9        X        1       0       1     
+ !  ibs                         12       V        3       0       4     
+    ibs                 oe      12       X        1       0       1     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

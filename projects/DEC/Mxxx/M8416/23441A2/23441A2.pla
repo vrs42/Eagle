@@ -1,0 +1,39 @@
+#$ TOOL CUPL
+# Berkeley PLA format generated using CUPL(WM) 5.0a
+# Serial#  60008009
+# Created  Mon Apr 02 15:14:13 2018
+#
+#    Name        23441A2
+#    Partno      E74 74S287
+#    Revision    1.0
+#    Date        March 2018
+#    Designer    Digital Equipment Corporation
+#    Company     None
+#    Assembly    0001
+#    Location    None
+#
+#$ TITLE  23441A2
+#$ PROPERTY ATMEL jtag = on
+#$ PROPERTY ATMEL preassign keep
+#$ PROPERTY ATMEL TMS_pullup = on
+#$ PROPERTY ATMEL TDI_pullup = on
+#$ MODULE  23441A2
+#$ JEDECFILE  23441A2
+#$ DEVICE  virtual
+#$ PINS  14 BCPMAD+:3 DFEN+:1 EBM+:6 G1+:13 G2+:14 INIT_EN+:2 INT_IN_PROG+:15 LBM_OR_RBM+:5 PAUSE+:7 TS4+:4 bmen+:10 dbs+:11 force0+:9 ibs+:12 
+.i 10
+.o 8
+.type f
+.ilb  BCPMAD DFEN EBM G1 G2 INIT_EN INT_IN_PROG bmen dbs force0 
+.ob   bmen bmen.OE dbs dbs.OE force0 force0.OE ibs ibs.OE 
+.phase 11111111
+.p 8
+--0------- 10000000
+1--------- 10000000
+---00----- 01010101
+-0-------- 00100000
+-----11--- 00001000
+---------0 00000010
+--------0- 00000010
+-------0-- 00000010
+.e
