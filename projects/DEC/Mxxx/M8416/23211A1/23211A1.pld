@@ -1,0 +1,97 @@
+Name      23211A1;
+
+Assembly  0001;
+Revision  1.0;
+PartNo    E80 74S288;
+Device    f1508ispplcc84;
+
+Company   None;
+Designer  Digital Equipment Corporation;
+Location  None;
+Date      March 2018;
+
+property ATMEL { jtag=on };
+PROPERTY ATMEL { preassign keep };
+PROPERTY ATMEL { TMS_pullup=on };
+PROPERTY ATMEL { TDI_pullup=on };
+/* PROPERTY ATMEL { pin_keep OFF }; */
+/* PROPERTY ATMEL { open_collector = INT_RQST }; */
+
+/*
+ * 23211A1 is a 74S288, programmed to drive latch enables during verious IOTs.
+ * These enables are used by E69 and E79 to gate clocks to the right latches.
+ * An 74S288 has 5 address inputs, an enable, and 8 data outputs.  In this 
+ * case, the inputs indicate which IOT is executing.
+ * The outputs are the various clock enables for various internal registers.
+*/
+
+/*
+ * The 74S288 is a tri-state device, if G is inactive, the 
+ * outputs are undriven.
+*/
+Pin 15 = !G;
+/*
+ * The IOTs/events which generate clock gating here:
+*/
+Pin 14 = !RTF;
+Pin 13 = RTS_OR_RMF;
+Pin 12 = !CDF;
+Pin 11 = !CIF;
+Pin 10 = !NEW_FIELD;
+/*
+ * The outputs get the clock to set the corresponding register:
+*/
+Pin 1 = set_int_inh;
+Pin 2 = set_uf;
+Pin 3 = set_ufb;
+Pin 4 = set_db;
+Pin 5 = set_df;
+Pin 6 = set_if;
+Pin 7 = set_ibb;
+Pin 9 = set_ifb;
+
+/*
+ * Interrupt inhibit ia aet be RTF, RTS, RMF, or CIF.
+*/
+set_int_inh = RTF # RTS_OR_RMF # CIF;
+/*
+ * UF is set by NEW_FIELD.
+*/
+set_uf = NEW_FIELD;
+/*
+ * UFB is set by RTF, RTS, or RMF.
+*/
+set_ufb = RTF # RTS_OR_RMF;
+/*
+ * DB is set by RTS, RMF, or CDF.
+*/
+set_db = RTS_OR_RMF # CDF;
+/*
+ * DF is set by RTF, RTS, RMF, or CDF.
+*/
+set_df = RTF # RTS_OR_RMF # CDF;
+/*
+ * IF is set by NEW_FIELD.
+*/
+set_if = NEW_FIELD;
+/*
+ * IBB is set by RTS, RMF, or CIF.
+*/
+set_ibb = RTS_OR_RMF # CIF;
+/*
+ * IFB is set by RTF, RTS, RMF, or CIF.
+*/
+set_ifb = RTF # RTS_OR_RMF # CIF;
+
+/*
+ * Here is where G is implemented, though it is tied to 
+ * ground in practice.
+*/
+set_int_inh.oe = G;
+set_uf.oe = G;
+set_ufb.oe = G;
+set_db.oe = G;
+set_df.oe = G;
+set_if.oe = G;
+set_ibb.oe = G;
+set_ifb.oe = G;

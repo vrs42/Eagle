@@ -1,0 +1,40 @@
+#$ TOOL CUPL
+# Berkeley PLA format generated using CUPL(WM) 5.0a
+# Serial#  60008009
+# Created  Sun Apr 01 21:42:15 2018
+#
+#    Name        23211A1
+#    Partno      E80 74S288
+#    Revision    1.0
+#    Date        March 2018
+#    Designer    Digital Equipment Corporation
+#    Company     None
+#    Assembly    0001
+#    Location    None
+#
+#$ TITLE  23211A1
+#$ PROPERTY ATMEL jtag = on
+#$ PROPERTY ATMEL preassign keep
+#$ PROPERTY ATMEL TMS_pullup = on
+#$ PROPERTY ATMEL TDI_pullup = on
+#$ MODULE  23211A1
+#$ JEDECFILE  23211A1
+#$ DEVICE  virtual
+#$ PINS  14 CDF+:12 CIF+:11 G+:15 NEW_FIELD+:10 RTF+:14 RTS_OR_RMF+:13 set_db+:4 set_df+:5 set_ibb+:7 set_if+:6 set_ifb+:9 set_int_inh+:1 set_uf+:2 set_ufb+:3 
+.i 6
+.o 16
+.type f
+.ilb  CDF CIF G NEW_FIELD RTF RTS_OR_RMF 
+.ob   set_db- set_db.OE set_df- set_df.OE set_ibb- set_ibb.OE set_if- 
+      set_if.OE set_ifb- set_ifb.OE set_int_inh- set_int_inh.OE 
+      set_uf- set_uf.OE set_ufb- set_ufb.OE 
+.phase 1111111111111111
+.p 7
+1----0 1000000000000000
+--0--- 0101010101010101
+1---10 0010000000000000
+-1---0 0000100000000000
+---1-- 0000001000001000
+-1--10 0000000010100000
+----10 0000000000000010
+.e

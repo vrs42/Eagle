@@ -1,0 +1,107 @@
+
+*******************************************************************************
+                                    23211A1
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Sun Apr 01 21:42:15 2018
+Name            23211A1
+Partno          E80 74S288
+Revision        1.0
+Date            March 2018
+Designer        Digital Equipment Corporation
+Company         None
+Assembly        0001
+Location        None
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+!set_db =>
+    !CDF & !RTS_OR_RMF
+
+set_db.oe  =>
+    G
+
+!set_df =>
+    !CDF & !RTF & !RTS_OR_RMF
+
+set_df.oe  =>
+    G
+
+!set_ibb =>
+    !CIF & !RTS_OR_RMF
+
+set_ibb.oe  =>
+    G
+
+!set_if =>
+    !NEW_FIELD
+
+set_if.oe  =>
+    G
+
+!set_ifb =>
+    !CIF & !RTF & !RTS_OR_RMF
+
+set_ifb.oe  =>
+    G
+
+!set_int_inh =>
+    !CIF & !RTF & !RTS_OR_RMF
+
+set_int_inh.oe  =>
+    G
+
+!set_uf =>
+    !NEW_FIELD
+
+set_uf.oe  =>
+    G
+
+!set_ufb =>
+    !RTF & !RTS_OR_RMF
+
+set_ufb.oe  =>
+    G
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+ !  CDF                         12       V        -       -       -     
+ !  CIF                         11       V        -       -       -     
+ !  G                           15       V        -       -       -     
+ !  NEW_FIELD                   10       V        -       -       -     
+ !  RTF                         14       V        -       -       -     
+    RTS_OR_RMF                  13       V        -       -       -     
+    set_db                      4        V        1       0       4     
+    set_db              oe      4        X        1       0       1     
+    set_df                      5        V        1       0       4     
+    set_df              oe      5        X        1       0       1     
+    set_ibb                     7        V        1       0       4     
+    set_ibb             oe      7        X        1       0       1     
+    set_if                      6        V        1       0       4     
+    set_if              oe      6        X        1       0       1     
+    set_ifb                     9        V        1       0       4     
+    set_ifb             oe      9        X        1       0       1     
+    set_int_inh                 1        V        1       0       4     
+    set_int_inh         oe      1        X        1       0       1     
+    set_uf                      2        V        1       0       4     
+    set_uf              oe      2        X        1       0       1     
+    set_ufb                     3        V        1       0       4     
+    set_ufb             oe      3        X        1       0       1     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
