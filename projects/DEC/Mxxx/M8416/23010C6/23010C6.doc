@@ -1,0 +1,129 @@
+
+*******************************************************************************
+                                    23010C6
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Sun Apr 01 18:52:25 2018
+Name            23010C6
+Partno          E109 82S100
+Revision        1.0
+Date            March 2018
+Designer        Digital Equipment Corporation
+Company         None
+Assembly        0001
+Location        None
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+A0 =>
+    CE
+
+A1 =>
+    CE
+
+A2 =>
+    CE
+
+A3 =>
+    CE
+
+D0 =>
+    CE
+
+D1 =>
+    CE
+
+!dbo0 =>
+    !BD3 & !mux_ctl0 & mux_ctl1 & !mux_ctl2
+  # !BB0 & !mux_ctl1 & mux_ctl2
+  # !BD4 & mux_ctl0 & mux_ctl1
+  # !SB2 & !mux_ctl1 & !mux_ctl2
+  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
+  # mux_ctl1 & mux_ctl2
+
+!dbo1 =>
+    !BD4 & !mux_ctl0 & mux_ctl1 & !mux_ctl2
+  # !BB1 & !mux_ctl1 & mux_ctl2
+  # !BD5 & mux_ctl0 & mux_ctl1
+  # !SB3 & !mux_ctl1 & !mux_ctl2
+  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
+  # mux_ctl1 & mux_ctl2
+
+!ibbo0 =>
+    !BB0 & !mux_ctl1 & mux_ctl2
+  # !BD1 & mux_ctl1 & !mux_ctl2
+  # !SB0 & !mux_ctl1 & !mux_ctl2
+  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
+  # mux_ctl1 & mux_ctl2
+
+!ibbo1 =>
+    !BB1 & !mux_ctl1 & mux_ctl2
+  # !BD2 & mux_ctl1 & !mux_ctl2
+  # !SB1 & !mux_ctl1 & !mux_ctl2
+  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
+  # mux_ctl1 & mux_ctl2
+
+!ibo0 =>
+    mux_ctl0 & mux_ctl1 & mux_ctl2
+  # !BD1 & mux_ctl0 & mux_ctl1 & !mux_ctl2
+  # !IBB0 & !mux_ctl0 & mux_ctl1 & mux_ctl2
+  # !mux_ctl0 & !mux_ctl2
+  # !mux_ctl1
+
+!ibo1 =>
+    mux_ctl0 & mux_ctl1 & mux_ctl2
+  # !BD2 & mux_ctl0 & mux_ctl1 & !mux_ctl2
+  # !IBB1 & !mux_ctl0 & mux_ctl1 & mux_ctl2
+  # !mux_ctl0 & !mux_ctl2
+  # !mux_ctl1
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    A0                  oe      0        I        1       -       -     
+    A1                  oe      0        I        1       -       -     
+    A2                  oe      0        I        1       -       -     
+    A3                  oe      0        I        1       -       -     
+    BB0                         3        V        -       -       -     
+    BB1                         4        V        -       -       -     
+    BD0                         5        V        -       -       -     
+    BD1                         6        V        -       -       -     
+    BD2                         7        V        -       -       -     
+    BD3                         8        V        -       -       -     
+    BD4                         9        V        -       -       -     
+    BD5                         0        V        -       -       -     
+ !  CE                          19       V        -       -       -     
+    D0                  oe      0        I        1       -       -     
+    D1                  oe      0        I        1       -       -     
+    IBB0                        27       V        -       -       -     
+    IBB1                        2        V        -       -       -     
+    SB0                         23       V        -       -       -     
+    SB1                         24       V        -       -       -     
+    SB2                         25       V        -       -       -     
+    SB3                         26       V        -       -       -     
+    dbo0                        12       V        6       0       4     
+    dbo1                        13       V        6       0       4     
+    ibbo0                       14       V        5       0       4     
+    ibbo1                       15       V        5       0       4     
+    ibo0                        10       V        5       0       4     
+    ibo1                        11       V        5       0       4     
+    mux_ctl0                    20       V        -       -       -     
+    mux_ctl1                    21       V        -       -       -     
+    mux_ctl2                    22       V        -       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
