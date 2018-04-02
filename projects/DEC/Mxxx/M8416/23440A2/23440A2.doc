@@ -1,0 +1,89 @@
+
+*******************************************************************************
+                                    23440A2
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Mon Apr 02 09:34:29 2018
+Name            23440A2
+Partno          E28 74S287
+Revision        1.0
+Date            March 2018
+Designer        Digital Equipment Corporation
+Company         None
+Assembly        0001
+Location        None
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+!cdf =>
+    !BM11
+  # unused
+  # !BM4
+
+cdf.oe  =>
+    G1 & G2
+
+!cif =>
+    !BM10
+  # unused
+  # !BM4
+
+cif.oe  =>
+    G1 & G2
+
+!let_io =>
+    !BM4 & !BM5 & BM9 & BM678 & !cdf & !cif
+  # !BM4 & !BM9 & BM678 & !cdf & !cif
+  # !BM4 & !BM678 & !cdf & !cif
+  # BM4 & !cdf & !cif
+
+let_io.oe  =>
+    G1 & G2
+
+!unused =>
+    EN5 & EN9
+  # !BM5 & EN9
+  # !BM9 & EN5
+  # !BM5 & !BM9
+
+unused.oe  =>
+    G1 & G2
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    BM4                         3        V        -       -       -     
+    BM5                         4        V        -       -       -     
+    BM9                         7        V        -       -       -     
+    BM10                        6        V        -       -       -     
+    BM11                        5        V        -       -       -     
+ !  BM678                       15       V        -       -       -     
+    EN5                         1        V        -       -       -     
+    EN9                         2        V        -       -       -     
+ !  G1                          13       V        -       -       -     
+ !  G2                          14       V        -       -       -     
+ !  cdf                         9        V        3       0       4     
+    cdf                 oe      9        X        1       0       1     
+ !  cif                         10       V        3       0       4     
+    cif                 oe      10       X        1       0       1     
+ !  let_io                      12       V        4       0       4     
+    let_io              oe      12       X        1       0       1     
+    unused                      11       V        4       0       4     
+    unused              oe      11       X        1       0       1     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

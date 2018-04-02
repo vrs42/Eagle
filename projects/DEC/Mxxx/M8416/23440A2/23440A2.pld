@@ -1,0 +1,76 @@
+Name      23440A2;
+
+Assembly  0001;
+Revision  1.0;
+PartNo    E28 74S287;
+Device    f1508ispplcc84;
+
+Company   None;
+Designer  Digital Equipment Corporation;
+Location  None;
+Date      March 2018;
+
+property ATMEL { jtag=on };
+PROPERTY ATMEL { preassign keep };
+PROPERTY ATMEL { TMS_pullup=on };
+PROPERTY ATMEL { TDI_pullup=on };
+/* PROPERTY ATMEL { pin_keep OFF }; */
+/* PROPERTY ATMEL { open_collector = INT_RQST }; */
+
+/*
+ * 23440A2 is a 74S287, programmed to decode CDF and CIF instructions, as well 
+ * as to generate LET_IO, which BUGBUG.
+ * An 74S287 has 8 address inputs, 2 enables, and 4 data outputs.  In this 
+ * case, the inputs indicate which IOT is executing and whether EN5 or EN9 
+ * are set.
+*/
+
+/*
+ * The 74S287 is a tri-state device, if either enable is inactive, the 
+ * outputs are undriven.
+*/
+Pin 14 = !G2;
+Pin 13 = !G1;
+/*
+ * These are the bits we need to decode CDF and CIF instructions.
+*/
+Pin 15 = !BM678;
+Pin  1 = EN5;
+Pin  2 = EN9;
+Pin  3 = BM4;
+Pin  4 = BM5;
+Pin  7 = BM9;
+Pin  6 = BM10;
+Pin  5 = BM11;
+/*
+ * The outputs.
+*/
+Pin  9 = !cdf;
+Pin 10 = !cif;
+Pin 11 = unused;
+Pin 12 = !let_io;
+
+/*
+ * IOTs with bits that aren't emabled aren't mine.
+*/
+unused = BM5 & !EN5
+       # BM9 & !EN9;
+/*
+ * Detect valid CIF and CDF instructions.
+ * N.B.: Both cif and cdf can be (and often are) asserted.
+*/
+cif = BM4 & !unused & BM10;
+cdf = BM4 & !unused & BM11;
+/*
+ * Calculate which IOTs should be allowed in user mode.
+ * This is basically CDF, CIF, and 6174-6177.
+*/
+let_io = cdf # cif # (!BM4 & BM5 & BM678 & BM9);
+
+/*
+ * Here is where G1 and G2 are implemented.
+*/
+cdf.oe = G1 & G2;
+cif.oe = G1 & G2;
+unused.oe = G1 & G2;
+let_io.oe = G1 & G2;
