@@ -1,0 +1,66 @@
+Name      23442A2;
+
+Assembly  0001;
+Revision  1.0;
+PartNo    E87,E113 74S287;
+Device    f1508ispplcc84;
+
+Company   None;
+Designer  Digital Equipment Corporation;
+Location  None;
+Date      March 2018;
+
+property ATMEL { jtag=on };
+PROPERTY ATMEL { preassign keep };
+PROPERTY ATMEL { TMS_pullup=on };
+PROPERTY ATMEL { TDI_pullup=on };
+/* PROPERTY ATMEL { pin_keep OFF }; */
+/* PROPERTY ATMEL { open_collector = INT_RQST }; */
+
+/*
+ * 23442A2 is a 74S287, programmed to add three bit numbers.
+ * An 74S287 has 8 address inputs, 2 enables, and 4 data outputs.  In this 
+ * case, the inputs indicate 3 bits of both operands, a carry input, and an 
+ * enable.  If this enable is inactive, the operand on [7,6,5] appears unchanged 
+ * at the output.
+ * The output bits are the 3 bit sum, and a carry out.
+*/
+
+/*
+ * The 74S287 is a tri-state device, if either enable is inactive, the 
+ * outputs are undriven.
+*/
+Pin 14 = !G2;
+Pin 13 = !G1;
+/*
+ * These are the bits we need to decide which bank to use.
+*/
+Pin 15 = add; /* Enable the addition */
+Pin  1 = CI; /* Carry in */
+Pin  [2,3,4] = [R0..2];
+Pin  [7,6,5] = [A0..2];
+/*
+ * The outputs.
+*/
+Pin  9 = co; /* Carry out */
+Pin [10,11,12] = [c0..2];
+
+/*
+ * Perform the addition.
+*/
+[B0..2] = add & [R0..2];
+S2 = CI $ A2 $ B2;
+C2 = CI & (A2 # B2)
+   # A2 & B2;
+S1 = C2 $ A1 $ B1;
+C1 = C2 & (A1 # B1)
+   # A1 & B1;
+S0 = C1 $ A0 $ B0;
+co = C1 & (A0 # B0)
+   # A0 & B0;
+
+/*
+ * Here is where G1 and G2 are implemented.
+*/
+co.oe = G1 & G2;
+[S0..2].oe = G1 & G2;
