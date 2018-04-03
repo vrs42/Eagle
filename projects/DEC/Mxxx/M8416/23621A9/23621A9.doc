@@ -1,0 +1,148 @@
+
+*******************************************************************************
+                                    23621A9
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Tue Apr 03 05:54:56 2018
+Name            23621A9
+Partno          E112,E114 74S571
+Revision        1.0
+Date            March 2018
+Designer        Digital Equipment Corporation
+Company         None
+Assembly        0001
+Location        None
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+AA =>
+    D0 & use_d
+  # I0 & !use_d
+
+AB =>
+    D1 & use_d
+  # I1 & !use_d
+
+BA =>
+    !R0 & sub
+
+BB =>
+    !R1 & sub
+
+!bo =>
+    I0 & R0 & sub & !use_d
+  # BI & I0 & !I1 & !sub & !use_d
+  # I1 & !sub & !use_d
+  # !BI & I0 & I1 & !R0 & !R1 & sub & !use_d
+  # !BI & !I0 & I1 & R0 & !R1 & sub & !use_d
+  # !BI & I0 & !I1 & !R0 & R1 & sub & !use_d
+  # I0 & I1 & !R0 & R1 & sub & !use_d
+  # BI & !I0 & I1 & R0 & R1 & sub & !use_d
+  # !BI & !I0 & R0 & R1 & sub & !use_d
+  # D0 & R0 & sub & use_d
+  # BI & D0 & !D1 & !sub & use_d
+  # D1 & !sub & use_d
+  # !BI & !D0 & R0 & R1 & sub & use_d
+  # !BI & D0 & D1 & !R0 & !R1 & sub & use_d
+  # !BI & !D0 & D1 & R0 & !R1 & sub & use_d
+  # !BI & D0 & !D1 & !R0 & R1 & sub & use_d
+  # D0 & D1 & !R0 & R1 & sub & use_d
+  # BI & !D0 & D1 & R0 & R1 & sub & use_d
+  # !BI & !I1 & !sub & !use_d
+  # !BI & !D1 & !sub & use_d
+
+bo.oe  =>
+    G
+
+!da =>
+    !BI & !D0 & !D1 & !sub & use_d
+  # !D0 & D1 & !sub & use_d
+  # !BI & !D0 & D1 & R0 & !R1 & sub & use_d
+  # BI & D0 & !D1 & R0 & R1 & sub & use_d
+  # BI & !D0 & D1 & R0 & R1 & sub & use_d
+  # BI & D0 & !D1 & !sub & use_d
+  # !BI & D0 & D1 & !R0 & !R1 & sub & use_d
+  # !BI & D0 & !D1 & !R0 & R1 & sub & use_d
+  # D0 & D1 & !R0 & R1 & sub & use_d
+  # BI & D0 & D1 & R0 & !R1 & sub & use_d
+  # D0 & !D1 & R0 & !R1 & sub & use_d
+  # !BI & !I0 & R0 & R1 & sub & !use_d
+  # BI & I0 & !I1 & R0 & R1 & sub & !use_d
+  # BI & I0 & !I1 & !sub & !use_d
+  # !BI & !I0 & !I1 & !sub & !use_d
+  # !I0 & I1 & !sub & !use_d
+  # !BI & !I0 & I1 & R0 & !R1 & sub & !use_d
+  # BI & !I0 & I1 & R0 & R1 & sub & !use_d
+  # !BI & !D0 & R0 & R1 & sub & use_d
+  # !BI & I0 & I1 & !R0 & !R1 & sub & !use_d
+  # !BI & I0 & !I1 & !R0 & R1 & sub & !use_d
+  # I0 & I1 & !R0 & R1 & sub & !use_d
+  # BI & I0 & I1 & R0 & !R1 & sub & !use_d
+  # I0 & !I1 & R0 & !R1 & sub & !use_d
+  # !I0 & !I1 & !R0 & !R1 & sub & !use_d
+  # !D0 & !D1 & !R0 & !R1 & sub & use_d
+  # BI & !I0 & !I1 & !R0 & sub & !use_d
+  # BI & !D0 & !D1 & !R0 & sub & use_d
+  # BI & !I0 & !R0 & !R1 & sub & !use_d
+  # BI & !D0 & !R0 & !R1 & sub & use_d
+
+da.oe  =>
+    G
+
+!db =>
+    BI & D1 & !R1 & !sub & use_d
+  # BI & I1 & !R1 & !sub & !use_d
+  # BI & !I1 & !R1 & sub & !use_d
+  # BI & !D1 & !R1 & sub & use_d
+  # !BI & I1 & !R1 & sub & !use_d
+  # !BI & D1 & !R1 & sub & use_d
+  # BI & I1 & R1 & !use_d
+  # BI & D1 & R1 & use_d
+  # !BI & !I1 & !sub & !use_d
+  # !BI & !D1 & !sub & use_d
+  # !BI & !I1 & R1 & !use_d
+  # !BI & !D1 & R1 & use_d
+
+db.oe  =>
+    G
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    AA                          0        I        2       -       -     
+    AB                          0        I        2       -       -     
+    BA                          0        I        1       -       -     
+    BB                          0        I        1       -       -     
+    BI                          1        V        -       -       -     
+    D0                          4        V        -       -       -     
+    D1                          5        V        -       -       -     
+ !  G                           13       V        -       -       -     
+    I0                          3        V        -       -       -     
+    I1                          6        V        -       -       -     
+    R0                          2        V        -       -       -     
+    R1                          7        V        -       -       -     
+    bo                          10       V        20      0       4     
+    bo                  oe      10       X        1       0       1     
+    da                          11       V        30      0       4     
+    da                  oe      11       X        1       0       1     
+    db                          12       V        12      0       4     
+    db                  oe      12       X        1       0       1     
+    sub                         14       V        -       -       -     
+    use_d                       15       V        -       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
