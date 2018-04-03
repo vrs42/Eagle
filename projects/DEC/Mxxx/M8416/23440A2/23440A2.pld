@@ -19,7 +19,7 @@ PROPERTY ATMEL { TDI_pullup=on };
 
 /*
  * 23440A2 is a 74S287, programmed to decode CDF and CIF instructions, as well 
- * as to generate LET_IO, which BUGBUG.
+ * as to generate LET_IO, which indicates the IOT should be allowed in user mode.
  * An 74S287 has 8 address inputs, 2 enables, and 4 data outputs.  In this 
  * case, the inputs indicate which IOT is executing and whether EN5 or EN9 
  * are set.

@@ -18,8 +18,8 @@ PROPERTY ATMEL { TDI_pullup=on };
 /* PROPERTY ATMEL { open_collector = INT_RQST }; */
 
 /*
- * 23441A2 is a 74S287, programmed to decode CDF and CIF instructions, as well 
- * as to generate LET_IO, which BUGBUG.
+ * 23441A2 is a 74S287, programmed to decode current conditions and decide
+ * whether to use IB, DB, Bank 0, or the Bank Map.
  * An 74S287 has 8 address inputs, 2 enables, and 4 data outputs.  In this 
  * case, the inputs indicate which conditions are happening that might affect
  * the current bank in use.
