@@ -18,91 +18,91 @@ PROPERTY ATMEL { TDI_pullup=on };
 /* PROPERTY ATMEL { open_collector = INT_RQST }; */
 
 /*
-// 23007C6 is an 82S100, programmed to partially decode IOT instructions for the KT8-A.
-// An 82S100 has 16 dedicated inputs, and 8 dedicated outputs.  In this case, the inputs
-// are a copy of the instruction on BM[1..11], and the control signals DIOI, USM, EEM, 
-// and RVFEN.  BPAUSE acts an enable, preventing decoding for non-IOT instructions.  The
-// outputs are a control signal indicating to drive the bus during TS3: C0, C1, !HOS, 
-// !C17EN, !CFROM, !DECEN, and !INIOEN.
-//
-// Instructions with EEM clear:
-// 110 000 000 100 GTF c0 c1 drive
-// 110 000 000 101 RTF c0
-// 110 010 000 000 LXM c0 (KT8-A only)
-// 110 010 000 100 CINT
-// 110 010 001 100 RDF drive
-// 110 010 010 100 RIF drive
-// 110 010 011 100 RIB drive
-// 110 010 100 100 RMF
-// 110 010 101 100 SINT
-// 110 010 110 100 CUF
-// 110 010 111 100 SUF
-// 110 010 xxx 001 CDF
-// 110 010 xxx 010 CIF
-// 110 010 xxx 011 CIF CDF
-//
-// Instructions for memory boards:
-// 110 001 000 001 SBE*
-// 110 001 000 010 SPL*
-// 110 001 000 011 CAL*
-//
-// Additional instructions with EEM set:
-// 110 001 111 000 LBM c0
-// 110 001 111 001 RBM drive
-// 110 001 111 010 RLB c0 c1 drive
-// 110 001 111 011 RMR c0 c1 drive
-// 110 001 111 100 MBC c0
-// 110 001 111 101 RACA c0 c1 drive
-// 110 001 111 110 RACB c0 c1 drive
-// 110 001 111 111 RACC c0 c1 drive
-// 110 01x nnn y01 CDF
-// 110 01x nnn y10 CIF
-// 110 01x nnn y11 CIF CDF
-// 110 010 001 000 GTS c0 c1 drive
-// 110 010 010 000 RTS c0
-// 110 010 011 000 RXM c0 c1 drive
-// 110 010 100 000 LRR c0
-// 110 010 101 000 RRR c0 c1 drive
-// 110 010 110 000 LUSR c0
-// 110 010 111 000 RUSR c0 drive
-// 110 001 000 001 SBE*
-// 110 001 000 010 SPL*
-// 110 001 000 011 CAL*
-//
-// N.B.  The extensions are incompatible with Posibus/Negibus machines, 
-// which do not support 6xx0 IOTs, including LXM.  (On such a machine, 
-// this will always emulate the standard MMU.)
+ * 23007C6 is an 82S100, programmed to partially decode IOT instructions for the KT8-A.
+ * An 82S100 has 16 dedicated inputs, and 8 dedicated outputs.  In this case, the inputs
+ * are a copy of the instruction on BM[1..11], and the control signals DIOI, USM, EEM, 
+ * and RVFEN.  BPAUSE acts an enable, preventing decoding for non-IOT instructions.  The
+ * outputs are a control signal indicating to drive the bus during TS3: C0, C1, !HOS, 
+ * !C17EN, !CFROM, !DECEN, and !INIOEN.
+ *
+ * Instructions with EEM clear:
+ * 110 000 000 100 GTF c0 c1 drive
+ * 110 000 000 101 RTF c0
+ * 110 010 000 000 LXM c0 (KT8-A only)
+ * 110 010 000 100 CINT
+ * 110 010 001 100 RDF drive
+ * 110 010 010 100 RIF drive
+ * 110 010 011 100 RIB drive
+ * 110 010 100 100 RMF
+ * 110 010 101 100 SINT
+ * 110 010 110 100 CUF
+ * 110 010 111 100 SUF
+ * 110 010 xxx 001 CDF
+ * 110 010 xxx 010 CIF
+ * 110 010 xxx 011 CIF CDF
+ *
+ * Instructions for memory boards:
+ * 110 001 000 001 SBE*
+ * 110 001 000 010 SPL*
+ * 110 001 000 011 CAL*
+ *
+ * Additional instructions with EEM set:
+ * 110 001 111 000 LBM c0
+ * 110 001 111 001 RBM drive
+ * 110 001 111 010 RLB c0 c1 drive
+ * 110 001 111 011 RMR c0 c1 drive
+ * 110 001 111 100 MBC c0
+ * 110 001 111 101 RACA c0 c1 drive
+ * 110 001 111 110 RACB c0 c1 drive
+ * 110 001 111 111 RACC c0 c1 drive
+ * 110 01x nnn y01 CDF
+ * 110 01x nnn y10 CIF
+ * 110 01x nnn y11 CIF CDF
+ * 110 010 001 000 GTS c0 c1 drive
+ * 110 010 010 000 RTS c0
+ * 110 010 011 000 RXM c0 c1 drive
+ * 110 010 100 000 LRR c0
+ * 110 010 101 000 RRR c0 c1 drive
+ * 110 010 110 000 LUSR c0
+ * 110 010 111 000 RUSR c0 drive
+ * 110 001 000 001 SBE*
+ * 110 001 000 010 SPL*
+ * 110 001 000 011 CAL*
+ *
+ * N.B.  The extensions are incompatible with Posibus/Negibus machines, 
+ * which do not support 6xx0 IOTs, including LXM.  (On such a machine, 
+ * this will always emulate the standard MMU.)
 */
 
-Pin 19 = !CE;	/* Tied to GND, we ignore it here. */
+Pin 19 = !CE;
 /*
-// What we are calling BM1 here actually is the product of FETCH, BM0, and BM1 from the CPU.
+ * What we are calling BM1 here actually is the product of FETCH, BM0, and BM1 from the CPU.
 */
 Pin 20 = BM1;
 /*
-// These are just bits of the instruction, as presented on the memory bus.
+ * These are just bits of the instruction, as presented on the memory bus.
 */
 Pin [21..27,2..4] = [BM2..11];
 /*
-// PAUSE is asserted during the execution of IOT instructions.
+ * PAUSE is asserted during the execution of IOT instructions.
 */
 Pin  5 = PAUSE;
 /*
-// RVFEN enables virtual fields in user mode.  That is, RIF and RDF
-// will not trap.
+ * RVFEN enables virtual fields in user mode.  That is, RIF and RDF
+ * will not trap.
 */
 Pin  6 = RVFEN;
 /*
-// EEM is set when the full KT8-A instruction set is enabled.
+ * EEM is set when the full KT8-A instruction set is enabled.
 */
 Pin  7 = EEM;
 /*
-// USM is set if we are currently in user mode.
+ * USM is set if we are currently in user mode.
 */
 Pin  8 = USM;
 /*
-// DIOI disables trapping on I/O instructions in user mode, 
-// except CIF and CDF to fields outside the user limit.
+ * DIOI disables trapping on I/O instructions in user mode, 
+ * except CIF and CDF to fields outside the user limit.
 */
 Pin  9 = DIOI;
 
@@ -117,116 +117,130 @@ Pin 17 = c1;
 Pin 18 = drive;
 
 /*
-// Normally PAUSE would indicate an IOT in progress, but PAUSE 
-// is suppressed by USM.  We check for the special IOTs that we
-// allow in user mode here.
+ * Normally PAUSE would indicate an IOT in progress, but PAUSE 
+ * is suppressed by USM (except for LET_IO cases).  We check for 
+ * the case that user mode IOTs are generally enabled (DIOI) here.
 */
 IOT = PAUSE
-    # USM & DIOI & BM1 & BM2 & !BM3
-    # USM &       [BM1..11]:10010xxx0x1	/* CDF */
-    # USM & EEM & [BM1..11]:1001xxxxxx1	/* CDF */
-    # USM &       [BM1..11]:10010xxx01x	/* CIF */
-    # USM & EEM & [BM1..11]:1001xxxxx1x	/* CIF */
-    # USM & RVFEN & [BM1..11]:100100x1100 /* RDF, RIB */
-    # USM & RVFEN & [BM1..11]:1001001x100 /* RIF, RIB */
-    # USM & EEM & [BM1..11]:100011111xx;	/* MBC, RACA, RACB, RACC */
+    # USM & DIOI & BM1 & !BM2;
 
 /*
-// INIOEN is used to gate LXM, GTF, and RTF IOTs.
+ * INIOEN is used to gate LXM, GTF, and RTF IOTs.
 */
 inioen = IOT & !USM & !BM3 & !BM5 & !BM6 & !BM7 & !BM8 & !BM10;
 
 /*
-// DECEN is used to gate IOTs that don't change field.
+ * DECEN is used to gate IOTs that don't change field.
 */
 decen = IOT & !USM & !BM3 & BM4 & !BM10 & !BM11; /* 110 01x xxx x00 */
 
 /*
-// CFROM is used to gate the change field decode ROM, E28.
+ * CFROM is used to gate the change field decode ROM, E28.
 */
-cfrom = IOT &       [BM1..9]:10010xxx0 & ![BM10..11]:00  /* CIF, CDF */
-      # IOT & EEM & [BM1..9]:1001xxxxx & ![BM10..11]:00; /* CIF, CDF */
+cfrom = IOT &       !BM3 & BM4 & !BM5 & !BM9 & (BM10 # BM11)  /* CIF, CDF */
+      # IOT & EEM & !BM3 & BM4 &               (BM10 # BM11); /* CIF, CDF */
 
 /*
-// C17EN is used to gate the C17 ROM.
+ * C17EN is used to gate the C17 ROM.
 */
 c17en = IOT & EEM & !BM3 & !BM4 & BM5 & BM6 & BM7 & BM8;
 
 /*
-// HOS is asserted during the fetch of HLT or OSR in user mode.
+ * HOS is asserted during the fetch of HLT or OSR in user mode.
 */
 hos = USM & BM1 & BM2 & BM3 & (BM9 # BM10) & !BM11;
 
 /*
-// C0 is used to indicate that the processor should transfer the 
-// contents of the DATA bus to or from the AC, rather than OR it.
-//
-// Instructions with c0 asserted:
-// 110 000 000 100 GTF c0 c1 drive
-// 110 000 000 101 RTF c0
-// 110 001 111 000 LBM c0
-// 110 001 111 010 RLB c0 c1 drive
-// 110 001 111 011 RMR c0 c1 drive
-// 110 001 111 100 MBC c0
-// 110 001 111 101 RACA c0 c1 drive
-// 110 001 111 110 RACB c0 c1 drive
-// 110 001 111 111 RACC c0 c1 drive
-// 110 010 000 000 LXM c0 (KT8-A only)
-// 110 010 001 000 GTS c0 c1 drive
-// 110 010 010 000 RTS c0
-// 110 010 011 000 RXM c0 c1 drive
-// 110 010 100 000 LRR c0
-// 110 010 101 000 RRR c0 c1 drive
-// 110 010 110 000 LUSR c0
-// 110 010 111 000 RUSR c0 drive
+ * C0 is used to indicate that the processor should transfer the 
+ * contents of the DATA bus to or from the AC, rather than OR it.
+ *
+ * Instructions with c0 asserted:
+ * 110 000 000 100 GTF c0 c1 drive
+ * 110 000 000 101 RTF c0
+ * 110 001 111 000 LBM c0
+ * 110 001 111 010 RLB c0 c1 drive
+ * 110 001 111 011 RMR c0 c1 drive
+ * 110 001 111 100 MBC c0
+ * 110 001 111 101 RACA c0 c1 drive
+ * 110 001 111 110 RACB c0 c1 drive
+ * 110 001 111 111 RACC c0 c1 drive
+ * 110 010 000 000 LXM c0 (KT8-A only)
+ * 110 010 001 000 GTS c0 c1 drive
+ * 110 010 010 000 RTS c0
+ * 110 010 011 000 RXM c0 c1 drive
+ * 110 010 100 000 LRR c0
+ * 110 010 101 000 RRR c0 c1 drive
+ * 110 010 110 000 LUSR c0
+ * 110 010 111 000 RUSR c0 drive
 */
-c0 = IOT & ([BM3..10]:'b'00000010)
-   # IOT & EEM & !BM3 & !BM4 &  BM5 & BM7 & BM8 & BM9 & ![BM9..11]:'b'010
-   # IOT & EEM & !BM3 &  BM4 & !BM5 & [BM9..11]:'b'000;
+BM3_10_00000010 = !BM3 & !BM4 & !BM5 & !BM6 & !BM7 & !BM8 &  BM9 & !BM10;
+c0 = IOT &        BM3_10_00000010
+   # IOT & EEM & !BM3 & !BM4 &  BM5 & BM6 & BM7 & BM8 & !(!BM9 & !BM10 & BM11)
+   # IOT & EEM & !BM3 &  BM4 & !BM5 &                     !BM9 & !BM10 & !BM11;
 
 /*
-// C1 is used with C0 active to indicate the I/O direction and 
-// whether the AC should should be cleared.  (Active loads AC, 
-// inactive writes device, then clears AC.)  Ignored unless C0 
-// is active.
-//
-// Instructions with C1 asserted:
-// 110 000 000 100 GTF c0 c1 drive
-// 110 001 111 010 RLB c0 c1 drive
-// 110 001 111 011 RMR c0 c1 drive
-// 110 001 111 101 RACA c0 c1 drive
-// 110 001 111 110 RACB c0 c1 drive
-// 110 001 111 111 RACC c0 c1 drive
-// 110 010 001 000 GTS c0 c1 drive
-// 110 010 011 000 RXM c0 c1 drive
-// 110 010 101 000 RRR c0 c1 drive
+ * C1 is used with C0 active to indicate the I/O direction and 
+ * whether the AC should should be cleared.  (Active loads AC, 
+ * inactive writes device, then clears AC.)  Ignored unless C0 
+ * is active.
+ *
+ * Instructions with C1 asserted:
+ * 110 000 000 100 GTF c0 c1 drive
+ * 110 001 111 010 RLB c0 c1 drive
+ * 110 001 111 011 RMR c0 c1 drive
+ * 110 001 111 101 RACA c0 c1 drive
+ * 110 001 111 110 RACB c0 c1 drive
+ * 110 001 111 111 RACC c0 c1 drive
+ * 110 010 001 000 GTS c0 c1 drive
+ * 110 010 011 000 RXM c0 c1 drive
+ * 110 010 101 000 RRR c0 c1 drive
 */
-c1 = IOT & [BM3..11]:'b'000000100
-   # IOT & EEM & [BM3..11]:001111x1x
-   # IOT & EEM & [BM3..11]:001111101
-   # IOT & EEM & [BM3..11]:0100x1000
-   # IOT & EEM & [BM3..11]:010101000;
+BM3_11_000000100 = !BM3 & !BM4 & !BM5 & !BM6 & !BM7 & !BM8 &  BM9 & !BM10 & !BM11;
+BM3_11_001111x1x = !BM3 & !BM4 &  BM5 &  BM6 &  BM7 &  BM8 &         BM10;
+BM3_11_001111101 = !BM3 & !BM4 &  BM5 &  BM6 &  BM7 &  BM8 &  BM9 & !BM10 &  BM11;
+BM3_11_0100x1000 = !BM3 &  BM4 & !BM5 & !BM6 &         BM8 & !BM9 & !BM10 & !BM11;
+BM3_11_010101000 = !BM3 &  BM4 & !BM5 &  BM6 & !BM7 &  BM8 & !BM9 & !BM10 & !BM11;
+c1 = IOT &       BM3_11_000000100
+   # IOT & EEM & BM3_11_001111x1x
+   # IOT & EEM & BM3_11_001111101
+   # IOT & EEM & BM3_11_0100x1000
+   # IOT & EEM & BM3_11_010101000;
 
 /*
-// DRIVE is used to indicate that the data bus should be driven.
-//
-// Instructions with DRIVE asserted:
-// 110 000 000 100 GTF c0 c1 drive
-// 110 001 111 001 RBM drive
-// 110 001 111 010 RLB c0 c1 drive
-// 110 001 111 011 RMR c0 c1 drive
-// 110 001 111 101 RACA c0 c1 drive
-// 110 001 111 110 RACB c0 c1 drive
-// 110 001 111 111 RACC c0 c1 drive
-// 110 010 001 000 GTS c0 c1 drive
-// 110 010 001 100 RDF drive
-// 110 010 010 100 RIF drive
-// 110 010 011 000 RXM c0 c1 drive
-// 110 010 011 100 RIB drive
-// 110 010 101 000 RRR c0 c1 drive
-// 110 010 111 000 RUSR c0 drive
+ * DRIVE is used to indicate that the data bus should be driven.
+ *
+ * Instructions with DRIVE asserted:
+ * 110 000 000 100 GTF c0 c1 drive
+ * 110 001 111 001 RBM drive
+ * 110 001 111 010 RLB c0 c1 drive
+ * 110 001 111 011 RMR c0 c1 drive
+ * 110 001 111 101 RACA c0 c1 drive
+ * 110 001 111 110 RACB c0 c1 drive
+ * 110 001 111 111 RACC c0 c1 drive
+ * 110 010 001 000 GTS c0 c1 drive
+ * 110 010 001 100 RDF drive
+ * 110 010 010 100 RIF drive
+ * 110 010 011 000 RXM c0 c1 drive
+ * 110 010 011 100 RIB drive
+ * 110 010 101 000 RRR c0 c1 drive
+ * 110 010 111 000 RUSR c0 drive
 */
-drive = IOT & [BM3..11]:'b'000000100
-      # IOT & [BM3..11]:'b'010001100
-      # IOT & [BM3..11]:'b'01001x100
-      # IOT & EEM & [BM3..11]:'b'010xx1000;
+BM3_11_010001100 = !BM3 & BM4 & !BM5 & !BM6 & !BM7 &  BM8 &  BM9 & !BM10 & !BM11;
+BM3_11_01001x100 = !BM3 & BM4 & !BM5 & !BM6 &  BM7 &         BM9 & !BM10 & !BM11;
+BM3_11_010xx1000 = !BM3 & BM4 & !BM5 &                BM8 & !BM9 & !BM10 & !BM11;
+drive = IOT &       BM3_11_000000100
+      # IOT &       BM3_11_010001100
+      # IOT &       BM3_11_01001x100
+      # IOT & EEM & BM3_11_010xx1000;
+
+/*
+ * CE is implemented here.
+*/
+inioen.oe = CE;
+decen.oe = CE;
+cfrom.oe = CE;
+c17en.oe = CE;
+hos.oe = CE;
+c0.oe = CE;
+c1.oe = CE;
+drive.oe = CE;
