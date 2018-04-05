@@ -65,44 +65,48 @@ Pin [10,11] = [ibo0..1]; /* E110 */
 Pin [12,13] = [dbo0..1]; /* E108 */
 Pin [14,15] = [ibbo0..1]; /* E116 */
 
+field mux_ctl = [mux_ctl0..2];
+
 /*
  * Drive the new IB to E110.
  * The use of 'xx' here prevents over-specification
  * and helps with logic minimization.
 */
-[ibo0..1] = [mux_ctl0..2]:'b'000 & 'b'xx /* Notused */
-          # [mux_ctl0..2]:'b'001 & 'b'xx /* RMF */
-          # [mux_ctl0..2]:'b'010 & 'b'xx /* RTS */
-          # [mux_ctl0..2]:'b'011 & [BD1..2] /* LXA */
-          # [mux_ctl0..2]:'b'100 & 'b'xx /* CDF */
-          # [mux_ctl0..2]:'b'101 & 'b'xx /* CIF */
-          # [mux_ctl0..2]:'b'110 & [IBB0..1] /* New Field */
-          # [mux_ctl0..2]:'b'111 & 'b'00; /* Force0 */
+[ibo0..1] = mux_ctl:'b'000 & 'b'xx /* Notused */
+          # mux_ctl:'b'001 & 'b'xx /* RMF */
+          # mux_ctl:'b'010 & 'b'xx /* RTS */
+          # mux_ctl:'b'011 & [BD1..2] /* LXA */
+          # mux_ctl:'b'100 & 'b'xx /* CDF */
+          # mux_ctl:'b'101 & 'b'xx /* CIF */
+          # mux_ctl:'b'110 & [IBB0..1] /* New Field */
+          # mux_ctl:'b'111 & 'b'00; /* Force0 */
 /*
  * Drive the new DB to E108.
 */
-[dbo0..1] = [mux_ctl0..2]:'b'000 & 'b'xx
-          # [mux_ctl0..2]:'b'001 & [SB2..3]
-          # [mux_ctl0..2]:'b'010 & [BD3..4]
-          # [mux_ctl0..2]:'b'011 & [BD4..5]
-          # [mux_ctl0..2]:'b'100 & [BB0..1]
-          # [mux_ctl0..2]:'b'101 & [BB0..1]
-          # [mux_ctl0..2]:'b'110 & 'b'xx
-          # [mux_ctl0..2]:'b'111 & 'b'00;
+[dbo0..1] = mux_ctl:'b'000 & 'b'xx
+          # mux_ctl:'b'001 & [SB2..3]
+          # mux_ctl:'b'010 & [BD3..4]
+          # mux_ctl:'b'011 & [BD4..5]
+          # mux_ctl:'b'100 & [BB0..1]
+          # mux_ctl:'b'101 & [BB0..1]
+          # mux_ctl:'b'110 & 'b'xx
+          # mux_ctl:'b'111 & 'b'00;
 /*
  * Drive the new IBB to E116.
 */
-[ibbo0..1] = [mux_ctl0..2]:'b'000 & 'b'xx
-          # [mux_ctl0..2]:'b'001 & [SB0..1]
-          # [mux_ctl0..2]:'b'010 & [BD1..2]
-          # [mux_ctl0..2]:'b'011 & [BD1..2]
-          # [mux_ctl0..2]:'b'100 & [BB0..1]
-          # [mux_ctl0..2]:'b'101 & [BB0..1]
-          # [mux_ctl0..2]:'b'110 & 'b'xx
-          # [mux_ctl0..2]:'b'111 & 'b'00;
+[ibbo0..1] = mux_ctl:'b'000 & 'b'xx
+           # mux_ctl:'b'001 & [SB0..1]
+           # mux_ctl:'b'010 & [BD1..2]
+           # mux_ctl:'b'011 & [BD1..2]
+           # mux_ctl:'b'100 & [BB0..1]
+           # mux_ctl:'b'101 & [BB0..1]
+           # mux_ctl:'b'110 & 'b'xx
+           # mux_ctl:'b'111 & 'b'00;
 
 /*
  * Here is where CE is implemented, though it is tied to 
  * ground in practice.
 */
-[A0..3,D0..1].oe = CE;
+[ibo0..1].oe = CE;
+[dbo0..1].oe = CE;
+[ibbo0..1].oe = CE;
