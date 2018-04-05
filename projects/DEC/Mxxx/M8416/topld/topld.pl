@@ -413,13 +413,13 @@ sub sn7474 {
   if (defined $pad{6} && !defined $pad{5}) {
     &pinnode($pad{6});
     &qcode("$pad{6}.ap = !$pad{1};\n") if defined $pad{1};
-    &qcode("$pad{6}.d = !$pad{2};\n");
+    &qcode("$pad{6}.d = !$pad{2};\n") if defined $pad{2};
     &qcode("$pad{6}.ck = $pad{3};\n");
     &qcode("$pad{6}.ar = !$pad{4};\n") if defined $pad{4};
   } elsif (defined $pad{5}) {
     &pinnode($pad{5});
     &qcode("$pad{5}.ar = !$pad{1};\n") if defined $pad{1};
-    &qcode("$pad{5}.d = $pad{2};\n");
+    &qcode("$pad{5}.d = $pad{2};\n") if defined $pad{2};
     &qcode("$pad{5}.ck = $pad{3};\n");
     &qcode("$pad{5}.ap = !$pad{4};\n") if defined $pad{4};
     &qcode("$pad{6} = !$pad{5};\n") if defined $pad{6};
@@ -427,13 +427,13 @@ sub sn7474 {
   if (defined $pad{8} && !defined $pad{9}) {
     &pinnode($pad{8});
     &qcode("$pad{8}.ap = !$pad{13};\n") if defined $pad{13};
-    &qcode("$pad{8}.d = !$pad{12};\n");
+    &qcode("$pad{8}.d = !$pad{12};\n") if defined $pad{12};
     &qcode("$pad{8}.ck = $pad{11};\n");
     &qcode("$pad{8}.ar = !$pad{10};\n") if defined $pad{10};
   } elsif (defined $pad{9}) {
     &pinnode($pad{9});
     &qcode("$pad{9}.ar = !$pad{13};\n") if defined $pad{13};
-    &qcode("$pad{9}.d = $pad{12};\n");
+    &qcode("$pad{9}.d = $pad{12};\n") if defined $pad{12};
     &qcode("$pad{9}.ck = $pad{11};\n");
     &qcode("$pad{9}.ap = !$pad{10};\n") if defined $pad{10};
     &qcode("$pad{8} = !$pad{9};\n") if defined $pad{8};
@@ -458,20 +458,20 @@ sub sn7475 {
   &pinnode($pad{10});
   &pinnode($pad{9});
   # Now the hair
-  &qcode("$pad{16}.ap = $pad{13} &  $pad{2};\n");
-  &qcode("$pad{16}.ar = $pad{13} & !$pad{2};\n");
+  &qcode("$pad{16}.ap = $pad{13} &  $pad{2};\n") if defined $pad{2};
+  &qcode("$pad{16}.ar = $pad{13} & !$pad{2};\n") if defined $pad{2};
   &qcode("$pad{16}.ck = 'b'0;\n");
   &qcode("$pad{16}.d = 'b'0;\n");
-  &qcode("$pad{15}.ap = $pad{13} &  $pad{3};\n");
-  &qcode("$pad{15}.ar = $pad{13} & !$pad{3};\n");
+  &qcode("$pad{15}.ap = $pad{13} &  $pad{3};\n") if defined $pad{3};
+  &qcode("$pad{15}.ar = $pad{13} & !$pad{3};\n") if defined $pad{3};
   &qcode("$pad{15}.ck = 'b'0;\n");
   &qcode("$pad{15}.d = 'b'0;\n");
-  &qcode("$pad{10}.ap = $pad{4} &  $pad{6};\n");
-  &qcode("$pad{10}.ar = $pad{4} & !$pad{6};\n");
+  &qcode("$pad{10}.ap = $pad{4} &  $pad{6};\n") if defined $pad{6};
+  &qcode("$pad{10}.ar = $pad{4} & !$pad{6};\n") if defined $pad{6};
   &qcode("$pad{10}.ck = 'b'0;\n");
   &qcode("$pad{10}.d = 'b'0;\n");
-  &qcode("$pad{9}.ap = $pad{4} &  $pad{7};\n");
-  &qcode("$pad{9}.ar = $pad{4} & !$pad{7};\n");
+  &qcode("$pad{9}.ap = $pad{4} &  $pad{7};\n") if defined $pad{7};
+  &qcode("$pad{9}.ar = $pad{4} & !$pad{7};\n") if defined $pad{7};
   &qcode("$pad{9}.ck = 'b'0;\n");
   &qcode("$pad{9}.d = 'b'0;\n");
   &qcode("$pad{1} = !$pad{16};\n") if defined $pad{1};
@@ -719,40 +719,95 @@ sub sn74161 {
 }
 $hidden{'sn74161'} = 0;
 
+sub sn74173 {
+  if (defined $pad{3}) {
+    $tmp = &gnext;
+    &pinnode($tmp);
+    &qcode("$tmp.ar = $pad{15};\n") if defined $pad{15};
+    &qcode("$tmp.ck = $pad{7};\n");
+    &qcode("$tmp.ce = !$pad{9} & !$pad{10};\n") if defined $pad{9};
+    &qcode("$tmp.d = $pad{14};\n");
+    &qcode("$tmp.oe = !$pad{1} & !$pad{2};\n");
+    # This should be a tri-state assign, but use ocassign for now.
+    $oc{$pad{3}} = 1;
+    &ocassign($pad{3}, "$tmp & !$pad{1} & !$pad{2}");
+  }
+  if (defined $pad{4}) {
+    $tmp = &gnext;
+    &pinnode($tmp);
+    &qcode("$tmp.ar = $pad{15};\n") if defined $pad{15};
+    &qcode("$tmp.ck = $pad{7};\n");
+    &qcode("$tmp.ce = !$pad{9} & !$pad{10};\n") if defined $pad{9};
+    &qcode("$tmp.d = $pad{13};\n");
+    &qcode("$tmp.oe = !$pad{1} & !$pad{2};\n");
+    # This should be a tri-state assign, but use ocassign for now.
+    $oc{$pad{4}} = 1;
+    &ocassign($pad{4}, "$tmp & !$pad{1} & !$pad{2}");
+  }
+  if (defined $pad{5}) {
+    $tmp = &gnext;
+    &pinnode($tmp);
+    &qcode("$tmp.ar = $pad{15};\n") if defined $pad{15};
+    &qcode("$tmp.ck = $pad{7};\n");
+    &qcode("$tmp.ce = !$pad{9} & !$pad{10};\n") if defined $pad{9};
+    &qcode("$tmp.d = $pad{12};\n");
+    &qcode("$tmp.oe = !$pad{1} & !$pad{2};\n");
+    # This should be a tri-state assign, but use ocassign for now.
+    $oc{$pad{5}} = 1;
+    &ocassign($pad{5}, "$tmp & !$pad{1} & !$pad{2}");
+  }
+  if (defined $pad{6}) {
+    $tmp = &gnext;
+    &pinnode($tmp);
+    &qcode("$tmp.ar = $pad{15};\n") if defined $pad{15};
+    &qcode("$tmp.ck = $pad{7};\n");
+    &qcode("$tmp.ce = !$pad{9} & !$pad{10};\n") if defined $pad{9};
+    &qcode("$tmp.d = $pad{11};\n");
+    &qcode("$tmp.oe = !$pad{1} & !$pad{2};\n");
+    # This should be a tri-state assign, but use ocassign for now.
+    $oc{$pad{6}} = 1;
+    &ocassign($pad{6}, "$tmp & !$pad{1} & !$pad{2}");
+  }
+}
+$hidden{'sn74173'} = 0;
+
 sub sn74174 {
-  # We need Qa..Qf even if their pads are NC.
-  $pad{2} = &gnext unless defined $pad{5};
-  $pad{5} = &gnext unless defined $pad{7};
-  $pad{7} = &gnext unless defined $pad{9};
-  $pad{10} = &gnext unless defined $pad{9};
-  $pad{12} = &gnext unless defined $pad{9};
-  $pad{15} = &gnext unless defined $pad{11};
-  # These are registers.
-  &pinnode($pad{2});
-  &pinnode($pad{5});
-  &pinnode($pad{7});
-  &pinnode($pad{10});
-  &pinnode($pad{12});
-  &pinnode($pad{15});
-  # Now the hair
-  &qcode("$pad{2}.ar = !$pad{1};\n");
-  &qcode("$pad{2}.ck = $pad{9};\n");
-  &qcode("$pad{2}.d = $pad{3};\n");
-  &qcode("$pad{5}.ar = !$pad{1};\n");
-  &qcode("$pad{5}.ck = $pad{9};\n");
-  &qcode("$pad{5}.d = $pad{4};\n");
-  &qcode("$pad{7}.ar = !$pad{1};\n");
-  &qcode("$pad{7}.ck = $pad{9};\n");
-  &qcode("$pad{7}.d = $pad{6};\n");
-  &qcode("$pad{10}.ar = !$pad{1};\n");
-  &qcode("$pad{10}.ck = $pad{9};\n");
-  &qcode("$pad{10}.d = $pad{11};\n");
-  &qcode("$pad{12}.ar = !$pad{1};\n");
-  &qcode("$pad{12}.ck = $pad{9};\n");
-  &qcode("$pad{12}.d = $pad{13};\n");
-  &qcode("$pad{15}.ar = !$pad{1};\n");
-  &qcode("$pad{15}.ck = $pad{9};\n");
-  &qcode("$pad{15}.d = $pad{14};\n");
+  if (defined $pad{2}) {
+    &pinnode($pad{2});
+    &qcode("$pad{2}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{2}.ck = $pad{9};\n");
+    &qcode("$pad{2}.d = $pad{3};\n");
+  }
+  if (defined $pad{5}) {
+    &pinnode($pad{5});
+    &qcode("$pad{5}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{5}.ck = $pad{9};\n");
+    &qcode("$pad{5}.d = $pad{4};\n");
+  }
+  if (defined $pad{7}) {
+    &pinnode($pad{7});
+    &qcode("$pad{7}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{7}.ck = $pad{9};\n");
+    &qcode("$pad{7}.d = $pad{6};\n");
+  }
+  if (defined $pad{10}) {
+    &pinnode($pad{10});
+    &qcode("$pad{10}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{10}.ck = $pad{9};\n");
+    &qcode("$pad{10}.d = $pad{11};\n");
+  }
+  if (defined $pad{12}) {
+    &pinnode($pad{12});
+    &qcode("$pad{12}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{12}.ck = $pad{9};\n");
+    &qcode("$pad{12}.d = $pad{13};\n");
+  }
+  if (defined $pad{15}) {
+    &pinnode($pad{15});
+    &qcode("$pad{15}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{15}.ck = $pad{9};\n");
+    &qcode("$pad{15}.d = $pad{14};\n");
+  }
 }
 $hidden{'sn74174'} = 0;
 

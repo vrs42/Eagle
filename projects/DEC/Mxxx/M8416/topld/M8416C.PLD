@@ -68,6 +68,9 @@ pin = skip_low;
 pin = user_mode_low;
 
 /* Internal nodes */
+pinnode = gdollar_0;
+pinnode = gdollar_1;
+pinnode = gdollar_2;
 pinnode = n_t_58x;
 pinnode = n_t_59x;
 pinnode = n_t_60x;
@@ -82,20 +85,25 @@ pinnode = n_t_55x;
 pinnode = n_t_57x;
 pinnode = p3_bpause;
 pinnode = p3_e2cfrom_low;
-pinnode = gdollar_0;
-pinnode = gdollar_1;
+pinnode = gdollar_3;
+pinnode = gdollar_4;
 pinnode = p4_fatal_lp_0_rp;
 pinnode = p4_usint_low;
 pinnode = n_t_168x;
 pinnode = p6_usm_low;
 pinnode = n_t_176x;
+pinnode = gdollar_5;
+pinnode = gdollar_6;
+pinnode = gdollar_7;
 pinnode = p2_elar_low;
 pinnode = p2_emaen;
 pinnode = p6_prup_low;
+pinnode = gdollar_8;
+pinnode = gdollar_9;
+pinnode = gdollar_10;
 pinnode = p4_init_en_low;
 pinnode = p4_dfen_low;
-pinnode = gdollar_2;
-pinnode = ;
+pinnode = p1_rr1;
 pinnode = p1_rr3;
 pinnode = p1_rr4;
 pinnode = p1_rr2;
@@ -106,12 +114,43 @@ pinnode = p1_us4;
 pinnode = p1_us5;
 pinnode = p1_us3;
 pinnode = p1_us0;
+pinnode = gdollar_11;
+pinnode = gdollar_12;
+pinnode = gdollar_13;
+pinnode = gdollar_14;
+pinnode = gdollar_15;
+pinnode = gdollar_16;
+pinnode = gdollar_17;
+pinnode = gdollar_18;
+pinnode = gdollar_19;
+pinnode = gdollar_20;
+pinnode = gdollar_21;
+pinnode = gdollar_22;
+pinnode = gdollar_23;
+pinnode = gdollar_24;
+pinnode = gdollar_25;
 pinnode = p2_sf0;
 pinnode = p2_sf1;
 pinnode = p2_sf2;
 pinnode = p2_sf3;
 pinnode = p2_sf4;
 pinnode = p2_sf5;
+pinnode = gdollar_26;
+pinnode = gdollar_27;
+pinnode = gdollar_28;
+pinnode = gdollar_29;
+pinnode = gdollar_30;
+pinnode = gdollar_31;
+pinnode = gdollar_32;
+pinnode = gdollar_33;
+pinnode = gdollar_34;
+pinnode = gdollar_35;
+pinnode = gdollar_36;
+pinnode = gdollar_37;
+pinnode = gdollar_38;
+pinnode = gdollar_39;
+pinnode = gdollar_40;
+pinnode = gdollar_41;
 
 /* Equations */
 
@@ -186,6 +225,21 @@ pinnode = p2_sf5;
 /* c36: c_us */
 
 /* e1: sn74173 */
+gdollar_0.ar = p4_pclr;
+gdollar_0.ck = p4_plxa;
+gdollar_0.ce = 'b'1;
+gdollar_0.d = n_t_45x;
+gdollar_0.oe = !p2_elar_low;
+gdollar_1.ar = p4_pclr;
+gdollar_1.ck = p4_plxa;
+gdollar_1.ce = 'b'1;
+gdollar_1.d = n_t_44x;
+gdollar_1.oe = !p2_elar_low;
+gdollar_2.ar = p4_pclr;
+gdollar_2.ck = p4_plxa;
+gdollar_2.ce = 'b'1;
+gdollar_2.d = n_t_43x;
+gdollar_2.oe = !p2_elar_low;
 
 /* e2: sn7404 */
 n_t_43x = !p3_bd6;
@@ -241,44 +295,44 @@ p3_bm2 = !md02_low;
 /* e14: 23007c6 */
 
 /* e15: sn74174 */
-n_t_58x.ar = !p3_binit_low;
+n_t_58x.ar = p3_binit_low;
 n_t_58x.ck = p3_btp2;
 n_t_58x.d = p3_bd6;
-n_t_59x.ar = !p3_binit_low;
+n_t_59x.ar = p3_binit_low;
 n_t_59x.ck = p3_btp2;
 n_t_59x.d = p3_bd7;
-n_t_60x.ar = !p3_binit_low;
+n_t_60x.ar = p3_binit_low;
 n_t_60x.ck = p3_btp2;
 n_t_60x.d = p3_bd8;
-n_t_61x.ar = !p3_binit_low;
+n_t_61x.ar = p3_binit_low;
 n_t_61x.ck = p3_btp2;
 n_t_61x.d = p3_bd9;
-n_t_62x.ar = !p3_binit_low;
+n_t_62x.ar = p3_binit_low;
 n_t_62x.ck = p3_btp2;
 n_t_62x.d = p3_bd10;
-n_t_63x.ar = !p3_binit_low;
+n_t_63x.ar = p3_binit_low;
 n_t_63x.ck = p3_btp2;
 n_t_63x.d = p3_bd11;
 
 /* e16: 23008c6 */
 
 /* e17: sn74174 */
-n_t_51x.ar = !p3_binit_low;
+n_t_51x.ar = p3_binit_low;
 n_t_51x.ck = p3_btp2;
 n_t_51x.d = p3_bd0;
-n_t_52x.ar = !p3_binit_low;
+n_t_52x.ar = p3_binit_low;
 n_t_52x.ck = p3_btp2;
 n_t_52x.d = p3_bd1;
-n_t_53x.ar = !p3_binit_low;
+n_t_53x.ar = p3_binit_low;
 n_t_53x.ck = p3_btp2;
 n_t_53x.d = p3_bd2;
-n_t_54x.ar = !p3_binit_low;
+n_t_54x.ar = p3_binit_low;
 n_t_54x.ck = p3_btp2;
 n_t_54x.d = p3_bd3;
-n_t_55x.ar = !p3_binit_low;
+n_t_55x.ar = p3_binit_low;
 n_t_55x.ck = p3_btp2;
 n_t_55x.d = p3_bd4;
-n_t_57x.ar = !p3_binit_low;
+n_t_57x.ar = p3_binit_low;
 n_t_57x.ck = p3_btp2;
 n_t_57x.d = p3_bd5;
 
@@ -327,15 +381,13 @@ p3_e2cfrom_low.ap = p3_btp3_low&p3_bts4;
 p3_e2cfrom_low.ar = p3_btp3_low&!p3_bts4;
 p3_e2cfrom_low.ck = 'b'0;
 p3_e2cfrom_low.d = 'b'0;
-gdollar_0.ap = p3_bts3&;
-gdollar_0.ar = p3_bts3&!;
-gdollar_0.ck = 'b'0;
-gdollar_0.d = 'b'0;
-gdollar_1.ap = p3_bts3&n_t_130x;
-gdollar_1.ar = p3_bts3&!n_t_130x;
-gdollar_1.ck = 'b'0;
-gdollar_1.d = 'b'0;
-p4_blbm_low = !gdollar_1;
+gdollar_3.ck = 'b'0;
+gdollar_3.d = 'b'0;
+gdollar_4.ap = p3_bts3&n_t_130x;
+gdollar_4.ar = p3_bts3&!n_t_130x;
+gdollar_4.ck = 'b'0;
+gdollar_4.d = 'b'0;
+p4_blbm_low = !gdollar_4;
 
 /* e27: sn7411 */
 
@@ -354,7 +406,6 @@ n_t_32x = !(p3_bm0&p3_bm1&p3_bm2_low&p6_dioi_low&p4_let_io_low&p4_let_io_low&p3_
 
 /* e32: sn7474 */
 p4_fatal_lp_0_rp.ar = !p4_fatal_low;
-p4_fatal_lp_0_rp.d = p4_fatal_lp_0_rp.d =;
 p4_fatal_lp_0_rp.ck = 'b'0;
 p4_fatal_lp_0_rp.ap = !p4_usint;
 n_t_132x = !p4_fatal_lp_0_rp;
@@ -515,6 +566,21 @@ p3_bd = !(d_low # p4_lxa);
 p3_bf = !(p4_lxa # f_low);
 
 /* e62: sn74173 */
+gdollar_5.ar = p3_binit;
+gdollar_5.ck = p6_ckmr_low;
+gdollar_5.ce = 'b'1;
+gdollar_5.d = n_t_48x;
+gdollar_5.oe = !p4_rmr_low;
+gdollar_6.ar = p3_binit;
+gdollar_6.ck = p6_ckmr_low;
+gdollar_6.ce = 'b'1;
+gdollar_6.d = n_t_47x;
+gdollar_6.oe = !p4_rmr_low;
+gdollar_7.ar = p3_binit;
+gdollar_7.ck = p6_ckmr_low;
+gdollar_7.ce = 'b'1;
+gdollar_7.d = n_t_46x;
+gdollar_7.oe = !p4_rmr_low;
 
 /* e63: sn7474 */
 p2_elar_low.ar = !p4_plxa_low;
@@ -573,6 +639,21 @@ n_t_165x = ind1_low;
 p6_bind2 = ind2_low;
 
 /* e73: sn74173 */
+gdollar_8.ar = p4_pclr;
+gdollar_8.ck = p3_btp4;
+gdollar_8.ce = 'b'1;
+gdollar_8.d = n_t_38x;
+gdollar_8.oe = !p2_emaen_low;
+gdollar_9.ar = p4_pclr;
+gdollar_9.ck = p3_btp4;
+gdollar_9.ce = 'b'1;
+gdollar_9.d = n_t_39x;
+gdollar_9.oe = !p2_emaen_low;
+gdollar_10.ar = p4_pclr;
+gdollar_10.ck = p3_btp4;
+gdollar_10.ce = 'b'1;
+gdollar_10.d = n_t_40x;
+gdollar_10.oe = !p2_emaen_low;
 
 /* e74: 23441a2 */
 
@@ -611,22 +692,19 @@ n_t_9x = (p3_bm9&!p1_us2) # !(p3_bm9 $ p1_us2)&(p1_us3&!p3_bm6) # !((p3_bm9 $ p1
 /* e84: sn74367 */
 
 /* e85: sn74174 */
-gdollar_2.ar = !p2_rst_low;
-gdollar_2.ck = n_t_15x;
-gdollar_2.d = p3_bd8;
-.ar = !p2_rst_low;
-.ck = n_t_15x;
-.d = .d =;
-p1_rr3.ar = !p2_rst_low;
+p1_rr1.ar = p2_rst_low;
+p1_rr1.ck = n_t_15x;
+p1_rr1.d = p3_bd8;
+p1_rr3.ar = p2_rst_low;
 p1_rr3.ck = n_t_15x;
 p1_rr3.d = p3_bd10;
-p1_rr4.ar = !p2_rst_low;
+p1_rr4.ar = p2_rst_low;
 p1_rr4.ck = n_t_15x;
 p1_rr4.d = p3_bd11;
-p1_rr2.ar = !p2_rst_low;
+p1_rr2.ar = p2_rst_low;
 p1_rr2.ck = n_t_15x;
 p1_rr2.d = p3_bd9;
-p1_rr0.ar = !p2_rst_low;
+p1_rr0.ar = p2_rst_low;
 p1_rr0.ck = n_t_15x;
 p1_rr0.d = p3_bd7;
 
@@ -635,28 +713,48 @@ p1_rr0.d = p3_bd7;
 /* e87: 23442a2 */
 
 /* e88: sn74174 */
-p1_us1.ar = !p2_rst_low;
+p1_us1.ar = p2_rst_low;
 p1_us1.ck = n_t_1x;
 p1_us1.d = p3_bd7;
-p1_us2.ar = !p2_rst_low;
+p1_us2.ar = p2_rst_low;
 p1_us2.ck = n_t_1x;
 p1_us2.d = p3_bd8;
-p1_us4.ar = !p2_rst_low;
+p1_us4.ar = p2_rst_low;
 p1_us4.ck = n_t_1x;
 p1_us4.d = p3_bd10;
-p1_us5.ar = !p2_rst_low;
+p1_us5.ar = p2_rst_low;
 p1_us5.ck = n_t_1x;
 p1_us5.d = p3_bd11;
-p1_us3.ar = !p2_rst_low;
+p1_us3.ar = p2_rst_low;
 p1_us3.ck = n_t_1x;
 p1_us3.d = p3_bd9;
-p1_us0.ar = !p2_rst_low;
+p1_us0.ar = p2_rst_low;
 p1_us0.ck = n_t_1x;
 p1_us0.d = p3_bd6;
 
 /* e89: sn74148 */
 
 /* e90: sn74173 */
+gdollar_11.ar = p3_binit;
+gdollar_11.ck = p3_btp4;
+gdollar_11.ce = !p5_bmen_low;
+gdollar_11.d = n_t_139x;
+gdollar_11.oe = !p4_rlb_low;
+gdollar_12.ar = p3_binit;
+gdollar_12.ck = p3_btp4;
+gdollar_12.ce = !p5_bmen_low;
+gdollar_12.d = n_t_140x;
+gdollar_12.oe = !p4_rlb_low;
+gdollar_13.ar = p3_binit;
+gdollar_13.ck = p3_btp4;
+gdollar_13.ce = !p5_bmen_low;
+gdollar_13.d = n_t_141x;
+gdollar_13.oe = !p4_rlb_low;
+gdollar_14.ar = p3_binit;
+gdollar_14.ck = p3_btp4;
+gdollar_14.ce = !p5_bmen_low;
+gdollar_14.d = n_t_142x;
+gdollar_14.oe = !p4_rlb_low;
 
 /* e91: sn74367 */
 
@@ -676,10 +774,59 @@ n_t_49x = !(p4_dfen&p4_init_en);
 /* e96: sn74368 */
 
 /* e97: sn74173 */
+gdollar_15.ck = p4_ckifb;
+gdollar_15.d = n_t_20x;
+gdollar_15.oe = !p4_int&!n_t_41x;
+gdollar_16.ck = p4_ckifb;
+gdollar_16.d = n_t_19x;
+gdollar_16.oe = !p4_int&!n_t_41x;
+gdollar_17.ck = p4_ckifb;
+gdollar_17.d = n_t_18x;
+gdollar_17.oe = !p4_int&!n_t_41x;
 
 /* e98: sn74173 */
+gdollar_18.ar = p3_binit;
+gdollar_18.ck = p6_ckmr_low;
+gdollar_18.ce = 'b'1;
+gdollar_18.d = p6_bs3_low;
+gdollar_18.oe = !p4_rmr_low;
+gdollar_19.ar = p3_binit;
+gdollar_19.ck = p6_ckmr_low;
+gdollar_19.ce = 'b'1;
+gdollar_19.d = p6_bs2_low;
+gdollar_19.oe = !p4_rmr_low;
+gdollar_20.ar = p3_binit;
+gdollar_20.ck = p6_ckmr_low;
+gdollar_20.ce = 'b'1;
+gdollar_20.d = p6_bs1_low;
+gdollar_20.oe = !p4_rmr_low;
+gdollar_21.ar = p3_binit;
+gdollar_21.ck = p6_ckmr_low;
+gdollar_21.ce = 'b'1;
+gdollar_21.d = p6_bs0_low;
+gdollar_21.oe = !p4_rmr_low;
 
 /* e99: sn74173 */
+gdollar_22.ar = p3_binit;
+gdollar_22.ck = p6_ckmr_low;
+gdollar_22.ce = 'b'1;
+gdollar_22.d = rbs0_low;
+gdollar_22.oe = !p4_rmr_low;
+gdollar_23.ar = p3_binit;
+gdollar_23.ck = p6_ckmr_low;
+gdollar_23.ce = 'b'1;
+gdollar_23.d = rbs1_low;
+gdollar_23.oe = !p4_rmr_low;
+gdollar_24.ar = p3_binit;
+gdollar_24.ck = p6_ckmr_low;
+gdollar_24.ce = 'b'1;
+gdollar_24.d = rbs2_low;
+gdollar_24.oe = !p4_rmr_low;
+gdollar_25.ar = p3_binit;
+gdollar_25.ck = p6_ckmr_low;
+gdollar_25.ce = 'b'1;
+gdollar_25.d = rbs3_low;
+gdollar_25.oe = !p4_rmr_low;
 
 /* e100: sn74368 */
 
@@ -688,22 +835,22 @@ n_t_49x = !(p4_dfen&p4_init_en);
 /* e102: sn74175 */
 
 /* e103: sn74174 */
-p2_sf0.ar = !p2_3v;
+p2_sf0.ar = p2_3v;
 p2_sf0.ck = p4_cksv;
 p2_sf0.d = p2_ifc_low;
-p2_sf1.ar = !p2_3v;
+p2_sf1.ar = p2_3v;
 p2_sf1.ck = p4_cksv;
 p2_sf1.d = p2_ifb_low;
-p2_sf2.ar = !p2_3v;
+p2_sf2.ar = p2_3v;
 p2_sf2.ck = p4_cksv;
 p2_sf2.d = p2_ifa_low;
-p2_sf3.ar = !p2_3v;
+p2_sf3.ar = p2_3v;
 p2_sf3.ck = p4_cksv;
 p2_sf3.d = p2_dfc_low;
-p2_sf4.ar = !p2_3v;
+p2_sf4.ar = p2_3v;
 p2_sf4.ck = p4_cksv;
 p2_sf4.d = p2_dfb_low;
-p2_sf5.ar = !p2_3v;
+p2_sf5.ar = p2_3v;
 p2_sf5.ck = p4_cksv;
 p2_sf5.d = p2_dfa_low;
 
@@ -741,8 +888,48 @@ n_t_147x = !p4_new_fld;
 /* e117: sn74175 */
 
 /* e118: sn74173 */
+gdollar_26.ar = 'b'0;
+gdollar_26.ck = p3_btp4;
+gdollar_26.ce = 'b'1;
+gdollar_26.d = p5_ibs3_low;
+gdollar_26.oe = !p6_prup_low&!p2_enbs_low;
+gdollar_27.ar = 'b'0;
+gdollar_27.ck = p3_btp4;
+gdollar_27.ce = 'b'1;
+gdollar_27.d = p5_ibs2_low;
+gdollar_27.oe = !p6_prup_low&!p2_enbs_low;
+gdollar_28.ar = 'b'0;
+gdollar_28.ck = p3_btp4;
+gdollar_28.ce = 'b'1;
+gdollar_28.d = p5_ibs1_low;
+gdollar_28.oe = !p6_prup_low&!p2_enbs_low;
+gdollar_29.ar = 'b'0;
+gdollar_29.ck = p3_btp4;
+gdollar_29.ce = 'b'1;
+gdollar_29.d = p5_ibs0_low;
+gdollar_29.oe = !p6_prup_low&!p2_enbs_low;
 
 /* e119: sn74173 */
+gdollar_30.ar = 'b'0;
+gdollar_30.ck = p3_btp4;
+gdollar_30.ce = 'b'1;
+gdollar_30.d = p5_ibs3_low;
+gdollar_30.oe = !p6_prup_low&!p2_enbs_low;
+gdollar_31.ar = 'b'0;
+gdollar_31.ck = p3_btp4;
+gdollar_31.ce = 'b'1;
+gdollar_31.d = p5_ibs2_low;
+gdollar_31.oe = !p6_prup_low&!p2_enbs_low;
+gdollar_32.ar = 'b'0;
+gdollar_32.ck = p3_btp4;
+gdollar_32.ce = 'b'1;
+gdollar_32.d = p5_ibs1_low;
+gdollar_32.oe = !p6_prup_low&!p2_enbs_low;
+gdollar_33.ar = 'b'0;
+gdollar_33.ck = p3_btp4;
+gdollar_33.ce = 'b'1;
+gdollar_33.d = p5_ibs0_low;
+gdollar_33.oe = !p6_prup_low&!p2_enbs_low;
 
 /* e120: sn74139 */
 !p5_ibs3_low = ('b'0, n_t_145x, n_t_146x) = 'b'000;
@@ -755,8 +942,48 @@ n_t_147x = !p4_new_fld;
 !n_t_25x = ('b'0, p3_bd1, p3_bd2) = 'b'011;
 
 /* e121: sn74173 */
+gdollar_34.ar = p4_pclr;
+gdollar_34.ck = p4_plxa;
+gdollar_34.ce = 'b'1;
+gdollar_34.d = n_t_25x;
+gdollar_34.oe = !p2_elar_low;
+gdollar_35.ar = p4_pclr;
+gdollar_35.ck = p4_plxa;
+gdollar_35.ce = 'b'1;
+gdollar_35.d = n_t_24x;
+gdollar_35.oe = !p2_elar_low;
+gdollar_36.ar = p4_pclr;
+gdollar_36.ck = p4_plxa;
+gdollar_36.ce = 'b'1;
+gdollar_36.d = n_t_23x;
+gdollar_36.oe = !p2_elar_low;
+gdollar_37.ar = p4_pclr;
+gdollar_37.ck = p4_plxa;
+gdollar_37.ce = 'b'1;
+gdollar_37.d = n_t_21x;
+gdollar_37.oe = !p2_elar_low;
 
 /* e122: sn74173 */
+gdollar_38.ar = 'b'0;
+gdollar_38.ck = p4_plxa;
+gdollar_38.ce = 'b'1;
+gdollar_38.d = n_t_25x;
+gdollar_38.oe = !p2_elar_low;
+gdollar_39.ar = 'b'0;
+gdollar_39.ck = p4_plxa;
+gdollar_39.ce = 'b'1;
+gdollar_39.d = n_t_24x;
+gdollar_39.oe = !p2_elar_low;
+gdollar_40.ar = 'b'0;
+gdollar_40.ck = p4_plxa;
+gdollar_40.ce = 'b'1;
+gdollar_40.d = n_t_23x;
+gdollar_40.oe = !p2_elar_low;
+gdollar_41.ar = 'b'0;
+gdollar_41.ck = p4_plxa;
+gdollar_41.ce = 'b'1;
+gdollar_41.d = n_t_21x;
+gdollar_41.oe = !p2_elar_low;
 
 /* j1: header */
 
@@ -860,6 +1087,15 @@ c1_low.oe = n_t_73x;
 property atmel {open_collector= cpma_disable_low};
 cpma_disable_low = 'b'0;
 cpma_disable_low.oe = p3_mbk;
+property atmel {open_collector= ema0_low};
+ema0_low = 'b'0;
+ema0_low.oe = (gdollar_2&!p2_elar_low&!p2_elar_low) # (gdollar_10&!p2_emaen_low&!p2_emaen_low);
+property atmel {open_collector= ema1_low};
+ema1_low = 'b'0;
+ema1_low.oe = (gdollar_1&!p2_elar_low&!p2_elar_low) # (gdollar_9&!p2_emaen_low&!p2_emaen_low);
+property atmel {open_collector= ema2_low};
+ema2_low = 'b'0;
+ema2_low.oe = (gdollar_0&!p2_elar_low&!p2_elar_low) # (gdollar_8&!p2_emaen_low&!p2_emaen_low);
 property atmel {open_collector= int_rqst_low};
 int_rqst_low = 'b'0;
 int_rqst_low.oe = n_t_103x # p4_usint;
@@ -869,21 +1105,81 @@ internal_io.oe = n_t_128x;
 property atmel {open_collector= msirdis_low};
 msirdis_low = 'b'0;
 msirdis_low.oe = p3_mbk;
+property atmel {open_collector= n_t_18x};
+n_t_18x = 'b'0;
+n_t_18x.oe = (gdollar_17&!p4_int&!n_t_41x);
+property atmel {open_collector= n_t_19x};
+n_t_19x = 'b'0;
+n_t_19x.oe = (gdollar_16&!p4_int&!n_t_41x);
+property atmel {open_collector= n_t_20x};
+n_t_20x = 'b'0;
+n_t_20x.oe = (gdollar_15&!p4_int&!n_t_41x);
 property atmel {open_collector= n_t_77x};
 n_t_77x = 'b'0;
 n_t_77x.oe = (p3_bts4&p3_mbk) # (p4_bts1&p6_bind2) # (n_t_72x&p3_bts3);
 property atmel {open_collector= p4_int_in_prog_low};
 p4_int_in_prog_low = 'b'0;
 p4_int_in_prog_low.oe = (p4_int_in&p4_fatal_low);
+property atmel {open_collector= p6_bs0_low};
+p6_bs0_low = 'b'0;
+p6_bs0_low.oe = (gdollar_29&!p6_prup_low&!p2_enbs_low) # (gdollar_37&!p2_elar_low&!p2_elar_low);
+property atmel {open_collector= p6_bs1_low};
+p6_bs1_low = 'b'0;
+p6_bs1_low.oe = (gdollar_28&!p6_prup_low&!p2_enbs_low) # (gdollar_36&!p2_elar_low&!p2_elar_low);
+property atmel {open_collector= p6_bs2_low};
+p6_bs2_low = 'b'0;
+p6_bs2_low.oe = (gdollar_27&!p6_prup_low&!p2_enbs_low) # (gdollar_35&!p2_elar_low&!p2_elar_low);
+property atmel {open_collector= p6_bs3_low};
+p6_bs3_low = 'b'0;
+p6_bs3_low.oe = (gdollar_26&!p6_prup_low&!p2_enbs_low) # (gdollar_34&!p2_elar_low&!p2_elar_low);
+property atmel {open_collector= rbs0_low};
+rbs0_low = 'b'0;
+rbs0_low.oe = (gdollar_33&!p6_prup_low&!p2_enbs_low) # (gdollar_41&!p2_elar_low&!p2_elar_low);
+property atmel {open_collector= rbs1_low};
+rbs1_low = 'b'0;
+rbs1_low.oe = (gdollar_32&!p6_prup_low&!p2_enbs_low) # (gdollar_40&!p2_elar_low&!p2_elar_low);
+property atmel {open_collector= rbs2_low};
+rbs2_low = 'b'0;
+rbs2_low.oe = (gdollar_31&!p6_prup_low&!p2_enbs_low) # (gdollar_39&!p2_elar_low&!p2_elar_low);
+property atmel {open_collector= rbs3_low};
+rbs3_low = 'b'0;
+rbs3_low.oe = (gdollar_30&!p6_prup_low&!p2_enbs_low) # (gdollar_38&!p2_elar_low&!p2_elar_low);
 property atmel {open_collector= rd0_low};
 rd0_low = 'b'0;
 rd0_low.oe = (n_t_26x&n_t_27x);
+property atmel {open_collector= rd10_low};
+rd10_low = 'b'0;
+rd10_low.oe = (gdollar_6&!p4_rmr_low&!p4_rmr_low);
+property atmel {open_collector= rd11_low};
+rd11_low = 'b'0;
+rd11_low.oe = (gdollar_7&!p4_rmr_low&!p4_rmr_low);
+property atmel {open_collector= rd1_low};
+rd1_low = 'b'0;
+rd1_low.oe = (gdollar_22&!p4_rmr_low&!p4_rmr_low);
+property atmel {open_collector= rd2_low};
+rd2_low = 'b'0;
+rd2_low.oe = (gdollar_23&!p4_rmr_low&!p4_rmr_low);
 property atmel {open_collector= rd3_low};
 rd3_low = 'b'0;
-rd3_low.oe = (n_t_132x&n_t_131x);
+rd3_low.oe = (n_t_132x&n_t_131x) # (gdollar_24&!p4_rmr_low&!p4_rmr_low);
+property atmel {open_collector= rd4_low};
+rd4_low = 'b'0;
+rd4_low.oe = (gdollar_25&!p4_rmr_low&!p4_rmr_low);
 property atmel {open_collector= rd5_low};
 rd5_low = 'b'0;
-rd5_low.oe = (n_t_168x&p2_suf_out);
+rd5_low.oe = (n_t_168x&p2_suf_out) # (gdollar_21&!p4_rmr_low&!p4_rmr_low);
+property atmel {open_collector= rd6_low};
+rd6_low = 'b'0;
+rd6_low.oe = (gdollar_11&!p4_rlb_low&!p4_rlb_low) # (gdollar_20&!p4_rmr_low&!p4_rmr_low);
+property atmel {open_collector= rd7_low};
+rd7_low = 'b'0;
+rd7_low.oe = (gdollar_12&!p4_rlb_low&!p4_rlb_low) # (gdollar_19&!p4_rmr_low&!p4_rmr_low);
+property atmel {open_collector= rd8_low};
+rd8_low = 'b'0;
+rd8_low.oe = (gdollar_13&!p4_rlb_low&!p4_rlb_low) # (gdollar_18&!p4_rmr_low&!p4_rmr_low);
+property atmel {open_collector= rd9_low};
+rd9_low = 'b'0;
+rd9_low.oe = (gdollar_5&!p4_rmr_low&!p4_rmr_low) # (gdollar_14&!p4_rlb_low&!p4_rlb_low);
 property atmel {open_collector= skip_low};
 skip_low = 'b'0;
 skip_low.oe = (p4_usint&n_t_94x);
