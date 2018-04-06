@@ -757,7 +757,7 @@ sub sn74173 {
     &qcode("$tmp.oe = !$pad{1} & !$pad{2};\n");
     # This should be a tri-state assign, but use ocassign for now.
     $oc{$pad{3}} = 1;
-    &ocassign($pad{3}, "$tmp & !$pad{1} & !$pad{2}");
+    &ocassign($pad{3}, "!$tmp & !$pad{1} & !$pad{2}");
   }
   if (defined $pad{4}) {
     $tmp = &gnext;
@@ -769,7 +769,7 @@ sub sn74173 {
     &qcode("$tmp.oe = !$pad{1} & !$pad{2};\n");
     # This should be a tri-state assign, but use ocassign for now.
     $oc{$pad{4}} = 1;
-    &ocassign($pad{4}, "$tmp & !$pad{1} & !$pad{2}");
+    &ocassign($pad{4}, "!$tmp & !$pad{1} & !$pad{2}");
   }
   if (defined $pad{5}) {
     $tmp = &gnext;
@@ -781,7 +781,7 @@ sub sn74173 {
     &qcode("$tmp.oe = !$pad{1} & !$pad{2};\n");
     # This should be a tri-state assign, but use ocassign for now.
     $oc{$pad{5}} = 1;
-    &ocassign($pad{5}, "$tmp & !$pad{1} & !$pad{2}");
+    &ocassign($pad{5}, "!$tmp & !$pad{1} & !$pad{2}");
   }
   if (defined $pad{6}) {
     $tmp = &gnext;
@@ -793,7 +793,7 @@ sub sn74173 {
     &qcode("$tmp.oe = !$pad{1} & !$pad{2};\n");
     # This should be a tri-state assign, but use ocassign for now.
     $oc{$pad{6}} = 1;
-    &ocassign($pad{6}, "$tmp & !$pad{1} & !$pad{2}");
+    &ocassign($pad{6}, "!$tmp & !$pad{1} & !$pad{2}");
   }
 }
 $hidden{'sn74173'} = 0;
@@ -1010,12 +1010,28 @@ sub sn74258 {
   $oc{$pad{7}} = 1 if defined $pad{7};
   $oc{$pad{9}} = 1 if defined $pad{9};
   $oc{$pad{12}} = 1 if defined $pad{12};
-  &ocassign($pad{4}, "!$pad{15}&($pad{1}&$pad{3}#!$pad{1}&$pad{2})") if defined $pad{4};
-  &ocassign($pad{7}, "!$pad{15}&($pad{1}&$pad{6}#!$pad{1}&$pad{5})") if defined $pad{4};
-  &ocassign($pad{9}, "!$pad{15}&($pad{1}&$pad{10}#!$pad{1}&$pad{11})") if defined $pad{4};
-  &ocassign($pad{12}, "!$pad{15}&($pad{1}&$pad{13}#!$pad{1}&$pad{14})") if defined $pad{4};
+  &ocassign($pad{4}, "!$pad{15}&($pad{1}&!$pad{3}#!$pad{1}&!$pad{2})") if defined $pad{4};
+  &ocassign($pad{7}, "!$pad{15}&($pad{1}&!$pad{6}#!$pad{1}&!$pad{5})") if defined $pad{7};
+  &ocassign($pad{9}, "!$pad{15}&($pad{1}&!$pad{10}#!$pad{1}&!$pad{11})") if defined $pad{9};
+  &ocassign($pad{12}, "!$pad{15}&($pad{1}&!$pad{13}#!$pad{1}&!$pad{14})") if defined $pad{12};
 }
 $hidden{'sn74258'} = 0;
+
+sub sn74367 {
+  $oc{$pad{3}} = 1 if defined $pad{3};
+  $oc{$pad{5}} = 1 if defined $pad{5};
+  $oc{$pad{7}} = 1 if defined $pad{7};
+  $oc{$pad{9}} = 1 if defined $pad{9};
+  $oc{$pad{11}} = 1 if defined $pad{11};
+  $oc{$pad{13}} = 1 if defined $pad{13};
+  &ocassign($pad{3}, "!$pad{1}&!$pad{2}") if defined $pad{3};
+  &ocassign($pad{5}, "!$pad{1}&!$pad{4}") if defined $pad{5};
+  &ocassign($pad{7}, "!$pad{1}&!$pad{6}") if defined $pad{7};
+  &ocassign($pad{9}, "!$pad{1}&!$pad{10}") if defined $pad{9};
+  &ocassign($pad{11}, "!$pad{15}&!$pad{12}") if defined $pad{11};
+  &ocassign($pad{13}, "!$pad{15}&!$pad{14}") if defined $pad{13};
+}
+$hidden{'sn74367'} = 0;
 
 sub dec8235 {
   &ocassign($pad{3}, "!$pad{2}&!$pad{9} # $pad{1}&!$pad{7}") if defined $pad{3};
@@ -1110,22 +1126,22 @@ sub ds8641n {
   if (defined $pad{1}) {
     $oc{$pad{1}} = 1;
     &qcode("$pad{3} = !$pad{1};\n") if defined $pad{3};
-    &ocassign($pad{1}, "!($pad{2}&!$pad{7}&!$pad{9}");
+    &ocassign($pad{1}, "$pad{2}&$pad{7}&$pad{9}");
   }
   if (defined $pad{4}) {
     $oc{$pad{4}} = 1;
     &qcode("$pad{6} = !$pad{4};\n") if defined $pad{6};
-    &ocassign($pad{4}, "!($pad{5}&!$pad{7}&!$pad{9}");
+    &ocassign($pad{4}, "$pad{5}&$pad{7}&$pad{9}");
   }
   if (defined $pad{12}) {
     $oc{$pad{12}} = 1;
     &qcode("$pad{10} = !$pad{12};\n") if defined $pad{10};
-    &ocassign($pad{12}, "!($pad{11}&!$pad{7}&!$pad{9}");
+    &ocassign($pad{12}, "$pad{11}&$pad{7}&$pad{9}");
   }
   if (defined $pad{15}) {
     $oc{$pad{15}} = 1;
     &qcode("$pad{13} = !$pad{15};\n") if defined $pad{13};
-    &ocassign($pad{15}, "!($pad{14}&!$pad{7}&!$pad{9}");
+    &ocassign($pad{15}, "$pad{14}&$pad{7}&$pad{9}");
   }
 }
 $hidden{'ds8641n'} = 0;
@@ -1232,7 +1248,7 @@ $hidden{'r_us_'} = 0;
 # Since it is illegal in CUPL to assign a symbol more than 
 # once, we pool these here, and ultimately generate:
 # $lh = 'b'0;
-# $lh.oe = ($rh1) & ... & ($rhn);
+# $lh.oe = ($rh1) # ... # ($rhn);
 # to get open collector behavior.
 #
 %ocassign = ();
@@ -1240,6 +1256,7 @@ sub ocassign {
   local($lh, $rh) = @_;
 
   warn "unexpected OC output: $lh" unless $oc{$lh};
+  &qcode("/* $lh = !($rh);"); chop $qcode; chop $qcode; &qcode(" */\n");
   if (defined $ocassign{$lh}) {
     $ocassign{$lh} .= " # ($rh)";
   } else {
