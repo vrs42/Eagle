@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from M8416C.sch at 4/5/2018 8:06:53 AM
+Exported from M8416C.sch at 4/5/2018 11:24:05 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -2022,7 +2022,7 @@ E116     1        CLR        in       N$155
          15       Q4         out      IBB_0
          16       VCC        pwr      VCC
 
-E117     1        CLR        in                *** unconnected ***
+E117     1        CLR        in       N$155
          2        Q1         out               *** unconnected ***
          3        !Q1        out      !SB3
          4        D1         in       N$162
@@ -2030,7 +2030,7 @@ E117     1        CLR        in                *** unconnected ***
          6        !Q2        out      !SB2
          7        Q2         out               *** unconnected ***
          8        GND        pwr      GND
-         9        CLK        in                *** unconnected ***
+         9        CLK        in       P4_CKSV
          10       Q3         out               *** unconnected ***
          11       !Q3        out      !SB1
          12       D3         in       N$157

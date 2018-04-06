@@ -1,6 +1,6 @@
 Partlist
 
-Exported from M8416C.sch at 4/5/2018 8:06:37 AM
+Exported from M8416C.sch at 4/5/2018 11:23:50 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 

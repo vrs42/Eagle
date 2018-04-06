@@ -241,6 +241,11 @@ sub sn74h10 {
 }
 $hidden{'sn74h10'} = 0;
 
+sub sn7411 {
+  &sn7410;
+}
+$hidden{'sn7411'} = 0;
+
 sub sn74h11 {
   &sn7410;
 }
@@ -669,6 +674,26 @@ sub sn74151 {
 }
 $hidden{'sn74151'} = 0;
 
+sub sn74154 {
+  &qcode("$pad{1} = $pad{18}#$pad{19}#!(!$pad{20} & !$pad{21} & !$pad{22} & !$pad{23});\n") if defined $pad{1};
+  &qcode("$pad{2} = $pad{18}#$pad{19}#!(!$pad{20} & !$pad{21} & !$pad{22} &  $pad{23});\n") if defined $pad{2};
+  &qcode("$pad{3} = $pad{18}#$pad{19}#!(!$pad{20} & !$pad{21} &  $pad{22} & !$pad{23});\n") if defined $pad{3};
+  &qcode("$pad{4} = $pad{18}#$pad{19}#!(!$pad{20} & !$pad{21} &  $pad{22} &  $pad{23});\n") if defined $pad{4};
+  &qcode("$pad{5} = $pad{18}#$pad{19}#!(!$pad{20} &  $pad{21} & !$pad{22} & !$pad{23});\n") if defined $pad{5};
+  &qcode("$pad{6} = $pad{18}#$pad{19}#!(!$pad{20} &  $pad{21} & !$pad{22} &  $pad{23});\n") if defined $pad{6};
+  &qcode("$pad{7} = $pad{18}#$pad{19}#!(!$pad{20} &  $pad{21} &  $pad{22} & !$pad{23});\n") if defined $pad{7};
+  &qcode("$pad{8} = $pad{18}#$pad{19}#!(!$pad{20} &  $pad{21} &  $pad{22} &  $pad{23});\n") if defined $pad{8};
+  &qcode("$pad{9} = $pad{18}#$pad{19}#!( $pad{20} & !$pad{21} & !$pad{22} & !$pad{23});\n") if defined $pad{9};
+  &qcode("$pad{10} = $pad{18}#$pad{19}#!( $pad{20} & !$pad{21} & !$pad{22} &  $pad{23});\n") if defined $pad{10};
+  &qcode("$pad{11} = $pad{18}#$pad{19}#!( $pad{20} & !$pad{21} &  $pad{22} & !$pad{23});\n") if defined $pad{11};
+  &qcode("$pad{13} = $pad{18}#$pad{19}#!( $pad{20} & !$pad{21} &  $pad{22} &  $pad{23});\n") if defined $pad{13};
+  &qcode("$pad{14} = $pad{18}#$pad{19}#!( $pad{20} &  $pad{21} & !$pad{22} & !$pad{23});\n") if defined $pad{14};
+  &qcode("$pad{15} = $pad{18}#$pad{19}#!( $pad{20} &  $pad{21} & !$pad{22} &  $pad{23});\n") if defined $pad{15};
+  &qcode("$pad{16} = $pad{18}#$pad{19}#!( $pad{20} &  $pad{21} &  $pad{22} & !$pad{23});\n") if defined $pad{16};
+  &qcode("$pad{17} = $pad{18}#$pad{19}#!( $pad{20} &  $pad{21} &  $pad{22} &  $pad{23});\n") if defined $pad{17};
+}
+$hidden{'sn74154'} = 0;
+
 sub sn74155 {
   &qcode("$pad{7} = !(!$pad{3} & !$pad{13} & !$pad{2} & $pad{1});\n") if defined $pad{7};
   &qcode("$pad{6} = !(!$pad{3} &  $pad{13} & !$pad{2} & $pad{1});\n") if defined $pad{7};
@@ -813,6 +838,42 @@ sub sn74174 {
 }
 $hidden{'sn74174'} = 0;
 
+sub sn74175 {
+  if (defined($pad{2}) || defined($pad{3})) {
+    $pad{2} = &gnext unless defined $pad{2};
+    &pinnode($pad{2});
+    &qcode("$pad{2}.d = $pad{4};\n");
+    &qcode("$pad{2}.ck = $pad{9};\n");
+    &qcode("$pad{2}.ar = $pad{1};\n") if defined $pad{9};
+    &qcode("$pad{3} = !$pad{2};\n") if defined $pad{3};
+  }
+  if (defined($pad{7}) || defined($pad{6})) {
+    $pad{7} = &gnext unless defined $pad{7};
+    &pinnode($pad{7});
+    &qcode("$pad{7}.d = $pad{5};\n");
+    &qcode("$pad{7}.ck = $pad{9};\n");
+    &qcode("$pad{7}.ar = $pad{1};\n") if defined $pad{9};
+    &qcode("$pad{6} = !$pad{7};\n") if defined $pad{6};
+  }
+  if (defined($pad{10}) || defined($pad{11})) {
+    $pad{10} = &gnext unless defined $pad{10};
+    &pinnode($pad{10});
+    &qcode("$pad{10}.d = $pad{12};\n");
+    &qcode("$pad{10}.ck = $pad{9};\n");
+    &qcode("$pad{10}.ar = $pad{1};\n") if defined $pad{9};
+    &qcode("$pad{11} = !$pad{10};\n") if defined $pad{11};
+  }
+  if (defined($pad{15}) || defined($pad{14})) {
+    $pad{15} = &gnext unless defined $pad{15};
+    &pinnode($pad{15});
+    &qcode("$pad{15}.d = $pad{13};\n");
+    &qcode("$pad{15}.ck = $pad{9};\n");
+    &qcode("$pad{15}.ar = $pad{1};\n") if defined $pad{9};
+    &qcode("$pad{14} = !$pad{15};\n") if defined $pad{14};
+  }
+}
+$hidden{'sn74175'} = 0;
+
 sub sn74179 {
   # We need Qa..Qd even if their pads are NC.
   $pad{5} = &gnext unless defined $pad{5};
@@ -943,6 +1004,18 @@ sub sn74244 {
   &qcode("$pad{3}.oe = !$pad{19};\n") if defined $pad{3};
 }
 $hidden{'sn74244'} = 0;
+
+sub sn74258 {
+  $oc{$pad{4}} = 1 if defined $pad{4};
+  $oc{$pad{7}} = 1 if defined $pad{7};
+  $oc{$pad{9}} = 1 if defined $pad{9};
+  $oc{$pad{12}} = 1 if defined $pad{12};
+  &ocassign($pad{4}, "!$pad{15}&($pad{1}&$pad{3}#!$pad{1}&$pad{2})") if defined $pad{4};
+  &ocassign($pad{7}, "!$pad{15}&($pad{1}&$pad{6}#!$pad{1}&$pad{5})") if defined $pad{4};
+  &ocassign($pad{9}, "!$pad{15}&($pad{1}&$pad{10}#!$pad{1}&$pad{11})") if defined $pad{4};
+  &ocassign($pad{12}, "!$pad{15}&($pad{1}&$pad{13}#!$pad{1}&$pad{14})") if defined $pad{4};
+}
+$hidden{'sn74258'} = 0;
 
 sub dec8235 {
   &ocassign($pad{3}, "!$pad{2}&!$pad{9} # $pad{1}&!$pad{7}") if defined $pad{3};
