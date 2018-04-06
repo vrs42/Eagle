@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from M8416C.sch at 4/5/2018 11:24:05 PM
+Exported from M8416C.sch at 4/6/2018 7:39:25 AM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 

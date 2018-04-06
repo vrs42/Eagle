@@ -1,6 +1,6 @@
 Partlist
 
-Exported from M8416C.sch at 4/5/2018 11:23:50 PM
+Exported from M8416C.sch at 4/6/2018 7:39:11 AM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -112,7 +112,7 @@ E65      74S74N         74S74N            DIL14        74xx-us       6
 E66      74LS00N        74LS00N           DIL14        74xx-us       4
 E67      74LS08N        74LS08N           DIL14        74xx-us       2
 E68      74LS85N        74LS85N           DIL16        74xx-us       1
-E69      8266           8266              DIL16        dec-con       4
+E69      MC8266         MC8266            DIL16        dec-con       4
 E70      74LS00N        74LS00N           DIL14        74xx-us       4
 E71      DS8640N        DS8640N           DIL14        dec-con       3
 E72      SP384N         SP384N            DIL14        dec-con       6
@@ -122,7 +122,7 @@ E75      SP384N         SP384N            DIL14        dec-con       4
 E76      74LS74N        74LS74N           DIL14        74xx-us       4
 E77      74LS221N       74LS221N          DIL16        74xx-eu       4
 E78      74LS85N        74LS85N           DIL16        74xx-us       1
-E79      8266           8266              DIL16        dec-con       4
+E79      MC8266         MC8266            DIL16        dec-con       4
 E80      23211A1        74S288            DIL16        dec-con       4
 E81      23009C6        82S100            DIL28        dec-con       5
 E82      74S189         7489              DIL16        dec-con       5

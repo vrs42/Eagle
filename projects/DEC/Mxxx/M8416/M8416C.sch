@@ -3627,7 +3627,7 @@ grid 20.3 mm, outline 5.4 x 22.9 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="8266" prefix="E">
+<deviceset name="MC8266" prefix="E">
 <description>Quad 2-1 selector</description>
 <gates>
 <gate name="G$1" symbol="8266" x="0" y="0"/>
@@ -16501,8 +16501,8 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="E64" library="74xx-us" deviceset="74*02" device="N" technology="S"/>
 <part name="E68" library="74xx-us" deviceset="74*85" device="N" technology="LS"/>
 <part name="E78" library="74xx-us" deviceset="74*85" device="N" technology="LS"/>
-<part name="E79" library="dec-con" deviceset="8266" device=""/>
-<part name="E69" library="dec-con" deviceset="8266" device=""/>
+<part name="E79" library="dec-con" deviceset="MC8266" device=""/>
+<part name="E69" library="dec-con" deviceset="MC8266" device=""/>
 <part name="E74" library="dec-con" deviceset="74S287" device="" value="23441A2"/>
 <part name="E77" library="74xx-eu" deviceset="74*221" device="N" technology="LS"/>
 <part name="E80" library="dec-con" deviceset="74S288" device="" value="23211A1"/>

@@ -761,7 +761,11 @@ n_t_8x = ('b'0&!'b'0)
   # ('b'0 $ p1_us0)
   # (p3_bm5 $ p1_us1)) & n_t_11x;
 
-/* e69: 8266 */
+/* e69: mc8266 */
+n_t_133x = n_t_122x&n_t_111x;
+p4_ckuf = n_t_120x&n_t_111x;
+p4_ckufb = n_t_119x&n_t_111x;
+p4_ckdb = n_t_112x&!n_t_111x # n_t_118x&n_t_111x;
 
 /* e70: sn7400 */
 n_t_123x = !(p4_jmp_or_jms&p3_bd);
@@ -843,7 +847,11 @@ n_t_9x = (p3_bm9&!p1_us2)
   # (p3_bm7 $ p1_us4)
   # (p3_bm8 $ p1_us5)) & 'b'0;
 
-/* e79: 8266 */
+/* e79: mc8266 */
+p4_ckdf = n_t_112x&!n_t_111x # n_t_117x&n_t_111x;
+p4_ckif = n_t_112x&!n_t_111x # n_t_116x&n_t_111x;
+p4_ckibb = n_t_112x&!n_t_111x # n_t_115x&n_t_111x;
+p4_ckifb = n_t_112x&!n_t_111x # n_t_114x&n_t_111x;
 
 /* e80: 23211a1 */
 
