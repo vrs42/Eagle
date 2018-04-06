@@ -126,8 +126,8 @@ sub qcode {
     $rh = &expression;
     $code = "$lh $rh;\n";
   }
-  $code =~ s/\r$//;
-  $code =~ s/\n/\r\n/;
+  $code =~ s/\r$//g;
+  $code =~ s/\n/\r\n/g;
   $qcode .= $code;
 # $code =~ s/!!//g;
 # $code =~ s/!'b'0\b/'b'1/g;
@@ -530,8 +530,8 @@ $hidden{'sn7482'} = 0;
 
 sub sn7485 {
   &qcode("!$pad{6} = (($pad{15} \$ $pad{1}) # ($pad{13} \$ $pad{14}) # ($pad{12} \$ $pad{11}) # ($pad{10} \$ $pad{9})) & $pad{3};\n") if defined $pad{6};
-  &qcode("$pad{5} = ($pad{15}&!$pad{1}) # !($pad{15} \$ $pad{1}) & ($pad{13}&!$pad{14}) # !(($pad{15} \$ $pad{1}) # ($pad{13} \$ $pad{14})) & ($pad{12}&!$pad{11}) # !(($pad{15} \$ $pad{1}) # ($pad{13} \$ $pad{14}) # ($pad{12} \$ $pad{11})) & ($pad{10}&!$pad{9}) # !(($pad{15} \$ $pad{1}) # ($pad{13} \$ $pad{14}) # ($pad{12} \$ $pad{11})) # ($pad{10} \$ $pad{9})) & $pad{4};\n") if defined $pad{5};
-  &qcode("$pad{7} = ($pad{15}&!$pad{1}) # !($pad{15} \$ $pad{1}) & ($pad{14}&!$pad{13}) # !(($pad{15} \$ $pad{1}) # ($pad{13} \$ $pad{14})) & ($pad{11}&!$pad{12}) # !(($pad{15} \$ $pad{1}) # ($pad{13} \$ $pad{14}) # ($pad{12} \$ $pad{11})) & ($pad{9}&!$pad{10}) # !(($pad{15} \$ $pad{1}) # ($pad{13} \$ $pad{14}) # ($pad{12} \$ $pad{11})) # ($pad{10} \$ $pad{9})) & $pad{2};\n") if defined $pad{7};
+  &qcode("$pad{5} = ($pad{15}&!$pad{1})\n  # !($pad{15} \$ $pad{1}) & ($pad{13}&!$pad{14})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})) & ($pad{12}&!$pad{11})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})\n  # ($pad{12} \$ $pad{11})) & ($pad{10}&!$pad{9})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})\n  # ($pad{12} \$ $pad{11})\n  # ($pad{10} \$ $pad{9})) & $pad{4};\n") if defined $pad{5};
+  &qcode("$pad{7} = ($pad{15}&!$pad{1})\n  # !($pad{15} \$ $pad{1}) & ($pad{14}&!$pad{13})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})) & ($pad{11}&!$pad{12})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})\n  # ($pad{12} \$ $pad{11})) & ($pad{9}&!$pad{10})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})\n  # ($pad{12} \$ $pad{11})\n  # ($pad{10} \$ $pad{9})) & $pad{2};\n") if defined $pad{7};
 }
 $hidden{'sn7485'} = 0;
 
@@ -643,14 +643,14 @@ sub sn74138 {
 $hidden{'sn74138'} = 0;
 
 sub sn74139 {
-  &qcode("!$pad{4} = ($pad{1}, $pad{2}, $pad{3}) = 'b'000;\n") if defined $pad{4};
-  &qcode("!$pad{5} = ($pad{1}, $pad{2}, $pad{3}) = 'b'001;\n") if defined $pad{5};
-  &qcode("!$pad{6} = ($pad{1}, $pad{2}, $pad{3}) = 'b'010;\n") if defined $pad{6};
-  &qcode("!$pad{7} = ($pad{1}, $pad{2}, $pad{3}) = 'b'011;\n") if defined $pad{7};
-  &qcode("!$pad{12} = ($pad{15}, $pad{14}, $pad{13}) = 'b'000;\n") if defined $pad{12};
-  &qcode("!$pad{11} = ($pad{15}, $pad{14}, $pad{13}) = 'b'001;\n") if defined $pad{11};
-  &qcode("!$pad{10} = ($pad{15}, $pad{14}, $pad{13}) = 'b'010;\n") if defined $pad{10};
-  &qcode("!$pad{9} = ($pad{15}, $pad{14}, $pad{13}) = 'b'011;\n") if defined $pad{9};
+  &qcode("!$pad{4} = !$pad{1}&[$pad{2},$pad{3}]:'b'00;\n") if defined $pad{4};
+  &qcode("!$pad{5} = !$pad{1}&[$pad{2},$pad{3}]:'b'01;\n") if defined $pad{5};
+  &qcode("!$pad{6} = !$pad{1}&[$pad{2},$pad{3}]:'b'10;\n") if defined $pad{6};
+  &qcode("!$pad{7} = !$pad{1}&[$pad{2},$pad{3}]:'b'11;\n") if defined $pad{7};
+  &qcode("!$pad{12} = !$pad{15}&[$pad{14},$pad{13}]:'b'00;\n") if defined $pad{12};
+  &qcode("!$pad{11} = !$pad{15}&[$pad{14},$pad{13}]:'b'01;\n") if defined $pad{11};
+  &qcode("!$pad{10} = !$pad{15}&[$pad{14},$pad{13}]:'b'10;\n") if defined $pad{10};
+  &qcode("!$pad{9} = !$pad{15}&[$pad{14},$pad{13}]:'b'11;\n") if defined $pad{9};
 }
 $hidden{'sn74139'} = 0;
 
@@ -1032,6 +1032,30 @@ sub ds8640n {
   &qcode("$pad{13} = !($pad{11} # $pad{12});\n") if defined $pad{13};
 }
 $hidden{'ds8640n'} = 0;
+
+sub ds8641n {
+  if (defined $pad{1}) {
+    $oc{$pad{1}} = 1;
+    &qcode("$pad{3} = !$pad{1};\n") if defined $pad{3};
+    &ocassign($pad{1}, "!($pad{2}&!$pad{7}&!$pad{9}");
+  }
+  if (defined $pad{4}) {
+    $oc{$pad{4}} = 1;
+    &qcode("$pad{6} = !$pad{4};\n") if defined $pad{6};
+    &ocassign($pad{4}, "!($pad{5}&!$pad{7}&!$pad{9}");
+  }
+  if (defined $pad{12}) {
+    $oc{$pad{12}} = 1;
+    &qcode("$pad{10} = !$pad{12};\n") if defined $pad{10};
+    &ocassign($pad{12}, "!($pad{11}&!$pad{7}&!$pad{9}");
+  }
+  if (defined $pad{15}) {
+    $oc{$pad{15}} = 1;
+    &qcode("$pad{13} = !$pad{15};\n") if defined $pad{13};
+    &ocassign($pad{15}, "!($pad{14}&!$pad{7}&!$pad{9}");
+  }
+}
+$hidden{'ds8641n'} = 0;
 
 sub n8815 {
   &qcode("!$pad{6} = $pad{1} # $pad{2} # $pad{4} # $pad{5};\n") if defined $pad{6};
