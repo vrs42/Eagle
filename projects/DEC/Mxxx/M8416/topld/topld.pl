@@ -659,6 +659,23 @@ sub sn74139 {
 }
 $hidden{'sn74139'} = 0;
 
+#sub sn74148 {
+#  &qcode("$pad{9} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   # !$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}\n   # !$pad{5}&!$pad{2}&$pad{3}\n   # !$pad{5}&!$pad{4});\n");
+#  &qcode("$pad{7} = !(!$pad{5}&$pad{12}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   # !$pad{5}&!$pad{12}&$pad{1}&$pad{2}\n   # !$pad{5}&!$pad{3}\n   # !$pad{5}&!$pad{4});\n");
+#  &qcode("$pad{6} = !(!$pad{5}&!$pad{2}&$pad{3}\n   # !$pad{5}&!$pad{1}\n   # !$pad{5}&!$pad{3}\n   # !$pad{5}&!$pad{4});\n");
+#  &qcode("$pad{15} = !(!$pad{5}&$pad{10}&$pad{11}&$pad{12}&$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4});\n") if defined $pad{15};
+#  &qcode("$pad{14} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   # !$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}\n   # !$pad{5}&!$pad{12}&$pad{1}&$pad{2}\n   # !$pad{5}&!$pad{2}&$pad{3}\n   # !$pad{5}&!$pad{1}\n   # !$pad{5}&!$pad{3}\n   # !$pad{5}&!$pad{4}\n   # !$pad{5}&!$pad{10});\n") if defined $pad{15};
+#}
+#$hidden{"sn74148"} = 0;
+sub sn74148 {
+  &qcode("$pad{9} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   #!$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}\n   #!$pad{5}&!$pad{2}&$pad{3}\n   #!$pad{5}&!$pad{4}\n);\n") if defined $pad{9};
+  &qcode("$pad{7} = !(!$pad{5}&$pad{12}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   #!$pad{5}&!$pad{12}&$pad{1}&$pad{2}\n   #!$pad{5}&!$pad{3}\n   #!$pad{5}&!$pad{4}\n);\n") if defined $pad{7};
+  &qcode("$pad{6} = !(!$pad{5}&!$pad{2}&$pad{3}\n   #!$pad{5}&!$pad{1}\n   #!$pad{5}&!$pad{3}\n   #!$pad{5}&!$pad{4}\n);\n") if defined $pad{6};
+  &qcode("$pad{15} = !(!$pad{5}&$pad{10}&$pad{11}&$pad{12}&$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n);\n") if defined $pad{15};
+  &qcode("$pad{14} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   #!$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}\n   #!$pad{5}&!$pad{12}&$pad{1}&$pad{2}\n   #!$pad{5}&!$pad{2}&$pad{3}\n   #!$pad{5}&!$pad{1}\n   #!$pad{5}&!$pad{3}\n   #!$pad{5}&!$pad{4}\n   #!$pad{5}&!$pad{10}\n);\n") if defined $pad{14};
+}
+$hidden{"sn74148"} = 0;
+
 sub sn74151 {
   $result = $pad{5} if defined $pad{5};
   $result = "!$pad{6}" if !defined $pad{5};
@@ -908,6 +925,11 @@ sub sn74180 {
 }
 $hidden{'sn74180'} = 0;
 
+sub sn74189 {
+
+}
+$hidden{'sn74189x'} = 0;
+
 sub sn74193 {
   # BUGBUG: This code is incorrect!!
   # We need Qa..Qd even if their pads are NC.
@@ -1032,6 +1054,22 @@ sub sn74367 {
   &ocassign($pad{13}, "!$pad{15}&!$pad{14}") if defined $pad{13};
 }
 $hidden{'sn74367'} = 0;
+
+sub sn74368 {
+  $oc{$pad{3}} = 1 if defined $pad{3};
+  $oc{$pad{5}} = 1 if defined $pad{5};
+  $oc{$pad{7}} = 1 if defined $pad{7};
+  $oc{$pad{9}} = 1 if defined $pad{9};
+  $oc{$pad{11}} = 1 if defined $pad{11};
+  $oc{$pad{13}} = 1 if defined $pad{13};
+  &ocassign($pad{3}, "!$pad{1}&$pad{2}") if defined $pad{3};
+  &ocassign($pad{5}, "!$pad{1}&$pad{4}") if defined $pad{5};
+  &ocassign($pad{7}, "!$pad{1}&$pad{6}") if defined $pad{7};
+  &ocassign($pad{9}, "!$pad{1}&$pad{10}") if defined $pad{9};
+  &ocassign($pad{11}, "!$pad{15}&$pad{12}") if defined $pad{11};
+  &ocassign($pad{13}, "!$pad{15}&$pad{14}") if defined $pad{13};
+}
+$hidden{'sn74368'} = 0;
 
 sub dec8235 {
   &ocassign($pad{3}, "!$pad{2}&!$pad{9} # $pad{1}&!$pad{7}") if defined $pad{3};
