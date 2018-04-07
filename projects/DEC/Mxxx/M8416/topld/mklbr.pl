@@ -5,6 +5,33 @@
 # outputting equivalent Perl code generators.
 #
 
+#
+# The Perl code generators have to deal with the
+# complicated case where there are multiple drivers 
+# for the same signal (OC and tri-state drivers).
+#
+# Suppose:
+#   f = e1;
+#   f.oe = e2;
+#
+# What is done is that these are converted to an
+# open collector model:
+#   f = 'b'0;
+#   f.oe = !e1#!e2;
+# and all the relevant "oe" formulae are saved up
+# to be output at the end.
+#
+# The interface is a call to &ocassign, with the
+# lhs and rhs of:
+#   !f = !e1#!e2;
+# That is
+#   &ocassign("f", "!(e1)#!(e2)");
+#
+# For this to work, the signal must also be on the
+# list of known OC signals:
+#   $oc{"f"} = 1;
+#
+
 foreach $f (@ARGV) {
   open(INPUT, $f) || die "$f: $!";
   %pad = ();
@@ -21,6 +48,7 @@ foreach $f (@ARGV) {
   $name = "dec$name" if $name =~ /^23/;
   $name = "sn$name" if $name =~ /^74/;
   $name =~ y/A-Z/a-z/;
+  %code = ();
   print "sub $name {\n";
   while (<INPUT>) {
     last if /^====/;
@@ -34,8 +62,8 @@ foreach $f (@ARGV) {
     if (/^(\S+)\s*=>/) {
       $lh = $1;
       $negate = ($lh =~ s/^!//);
-$suffix = "";
-$suffix = $1 if $lh =~ s/(\..*)//;
+      $suffix = "";
+      $suffix = $1 if $lh =~ s/(\..*)//;
       if (!defined $pad{$lh}) {
 #       warn "No symbol $lh\n";
         $first = 1;
@@ -43,14 +71,15 @@ $suffix = $1 if $lh =~ s/(\..*)//;
         next;
       }
       $lh = "\$pad\{$pad{$lh}\}";
-      $code = "$lh$suffix = ";
+      #$code = "$lh$suffix = ";
+      $code = "";
       $code .= "!(" if $negate;
       $first = 1;
     } elsif (/^\r*$/) {
       # Wrap up the assignment.
       chop $code; chop $code; # Remove last "\n"
       $code .= ")" if $negate;
-      print "  &qcode(\"$code;\\n\") if defined $lh;\n" if defined $lh;
+      $code{"$lh$suffix"} = $code if defined $lh;
       $code = "";
       undef $lh;
     } else {
@@ -65,6 +94,15 @@ $suffix = $1 if $lh =~ s/(\..*)//;
       $code .= "   " unless $first;
       $code .= "$_\\n";
       $first = 0;
+    }
+  }
+  foreach $lh (sort keys %code) {
+    next if $lh =~ /[.]oe$/;
+    if (defined $code{"${lh}.oe"}) {
+      print "  \$oc{$lh} = 1 if defined $lh;\n";
+      print "  &ocassign($lh, \"!($code{$lh})#!($code{\"$lh.oe\"})\") if defined $lh;\n";
+    } else {
+      print "  &qcode(\"$lh = $code{$lh};\\n\") if defined $lh;\n";
     }
   }
   print "}\n\$hidden{\"$name\"} = 0;\n\n"

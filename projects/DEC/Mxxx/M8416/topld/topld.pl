@@ -156,6 +156,7 @@ sub pinnode {
 # The %pad is initialized with the signals associated with each
 # pad of the device instantiation.
 #
+require "lbr.pl" if -f "lbr.pl";
 
 sub sn7400 {
   &qcode("$pad{3} = !($pad{1} & $pad{2});\n") if defined $pad{3};
