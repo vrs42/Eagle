@@ -1805,13 +1805,16 @@ data11_low = 'b'0;
 data11_low.oe = (n_t_70x&n_t_77x&n_t_77x);
 property atmel {open_collector= ema0_low};
 ema0_low = 'b'0;
-ema0_low.oe = (!gdollar_2&!p2_elar_low&!p2_elar_low) # (!gdollar_11&!p2_emaen_low&!p2_emaen_low);
+ema0_low.oe = (!gdollar_2 & !p2_elar_low & !p2_elar_low)
+ # (!gdollar_11 & !p2_emaen_low & !p2_emaen_low);
 property atmel {open_collector= ema1_low};
 ema1_low = 'b'0;
-ema1_low.oe = (!gdollar_1&!p2_elar_low&!p2_elar_low) # (!gdollar_10&!p2_emaen_low&!p2_emaen_low);
+ema1_low.oe = (!gdollar_1 & !p2_elar_low & !p2_elar_low)
+ # (!gdollar_10 & !p2_emaen_low & !p2_emaen_low);
 property atmel {open_collector= ema2_low};
 ema2_low = 'b'0;
-ema2_low.oe = (!gdollar_0&!p2_elar_low&!p2_elar_low) # (!gdollar_9&!p2_emaen_low&!p2_emaen_low);
+ema2_low.oe = (!gdollar_0 & !p2_elar_low & !p2_elar_low)
+ # (!gdollar_9 & !p2_emaen_low & !p2_emaen_low);
 property atmel {open_collector= force_0_low};
 force_0_low = 'b'0;
 force_0_low.oe = 'b'1;
@@ -1822,7 +1825,8 @@ ibs_low.oe = (!(!(force_0_low
    #p5_bmen_low))#!('b'0&'b'0));
 property atmel {open_collector= int_rqst_low};
 int_rqst_low = 'b'0;
-int_rqst_low.oe = n_t_103x # p4_usint;
+int_rqst_low.oe = (n_t_103x & n_t_103x)
+ # (p4_usint & p4_usint);
 property atmel {open_collector= internal_io};
 internal_io = 'b'0;
 internal_io.oe = n_t_128x;
@@ -1867,10 +1871,12 @@ n_t_142x = 'b'0;
 n_t_142x.oe = 'b'1;
 property atmel {open_collector= n_t_145x};
 n_t_145x = 'b'0;
-n_t_145x.oe = (!p5_dbs_low&!n_t_161x) # (!ibs_low&!n_t_158x);
+n_t_145x.oe = (!p5_dbs_low&!n_t_161x)
+ # (!ibs_low&!n_t_158x);
 property atmel {open_collector= n_t_146x};
 n_t_146x = 'b'0;
-n_t_146x.oe = (!p5_dbs_low&!n_t_160x) # (!ibs_low&!n_t_156x);
+n_t_146x.oe = (!p5_dbs_low&!n_t_160x)
+ # (!ibs_low&!n_t_156x);
 property atmel {open_collector= n_t_149x};
 n_t_149x = 'b'0;
 n_t_149x.oe = (!(!(mux_c0&mux_c1&mux_c2
@@ -1910,13 +1916,22 @@ n_t_153x.oe = (!(!(!p1_bb1&!mux_c1&mux_c2
    #mux_c1&mux_c2))#!('b'0));
 property atmel {open_collector= n_t_18x};
 n_t_18x = 'b'0;
-n_t_18x.oe = (!p4_let_io_low&p1_bfl0) # (!n_t_2x&p3_bd6) # (!gdollar_18&!p4_int&!n_t_41x) # (!p4_rmf_low&!p2_sf0);
+n_t_18x.oe = (!p4_let_io_low&p1_bfl0)
+ # (!n_t_2x&p3_bd6)
+ # (!gdollar_18 & !p4_int & !n_t_41x)
+ # (!p4_rmf_low&!p2_sf0);
 property atmel {open_collector= n_t_19x};
 n_t_19x = 'b'0;
-n_t_19x.oe = (!p4_let_io_low&p1_bfl1) # (!n_t_2x&p3_bd7) # (!gdollar_17&!p4_int&!n_t_41x) # (!p4_rmf_low&!p2_sf1);
+n_t_19x.oe = (!p4_let_io_low&p1_bfl1)
+ # (!n_t_2x&p3_bd7)
+ # (!gdollar_17 & !p4_int & !n_t_41x)
+ # (!p4_rmf_low&!p2_sf1);
 property atmel {open_collector= n_t_20x};
 n_t_20x = 'b'0;
-n_t_20x.oe = (!p4_let_io_low&p1_bfl2) # (!n_t_2x&p3_bd8) # (!gdollar_16&!p4_int&!n_t_41x) # (!p4_rmf_low&!p2_sf2);
+n_t_20x.oe = (!p4_let_io_low&p1_bfl2)
+ # (!n_t_2x&p3_bd8)
+ # (!gdollar_16 & !p4_int & !n_t_41x)
+ # (!p4_rmf_low&!p2_sf2);
 property atmel {open_collector= n_t_22x};
 n_t_22x = 'b'0;
 n_t_22x.oe = (!(!(!'b'0&!p1_rr2&!p1_rr3&!p1_rr4
@@ -1946,13 +1961,25 @@ n_t_29x.oe = (!(!(p6_en5&p6_en9
    #!p3_bm5&!p3_bm9))#!(p3_cfrom_low&p3_e2cfrom_low));
 property atmel {open_collector= n_t_38x};
 n_t_38x = 'b'0;
-n_t_38x.oe = (!n_t_42x&!p2_ifa_low) # (!p4_let_io_low&p1_bfl0) # (!n_t_2x&p3_bd9) # (!n_t_49x&!p2_dfc_low) # (!p4_rmf_low&!p2_sf3);
+n_t_38x.oe = (!n_t_42x&!p2_ifa_low)
+ # (!p4_let_io_low&p1_bfl0)
+ # (!n_t_2x&p3_bd9)
+ # (!n_t_49x&!p2_dfc_low)
+ # (!p4_rmf_low&!p2_sf3);
 property atmel {open_collector= n_t_39x};
 n_t_39x = 'b'0;
-n_t_39x.oe = (!n_t_42x&!p2_ifb_low) # (!p4_let_io_low&p1_bfl1) # (!n_t_2x&p3_bd10) # (!n_t_49x&!p2_dfb_low) # (!p4_rmf_low&!p2_sf4);
+n_t_39x.oe = (!n_t_42x&!p2_ifb_low)
+ # (!p4_let_io_low&p1_bfl1)
+ # (!n_t_2x&p3_bd10)
+ # (!n_t_49x&!p2_dfb_low)
+ # (!p4_rmf_low&!p2_sf4);
 property atmel {open_collector= n_t_40x};
 n_t_40x = 'b'0;
-n_t_40x.oe = (!n_t_42x&!p2_ifc_low) # (!p4_let_io_low&p1_bfl2) # (!n_t_2x&p3_bd11) # (!n_t_49x&!p2_dfa_low) # (!p4_rmf_low&!p2_sf5);
+n_t_40x.oe = (!n_t_42x&!p2_ifc_low)
+ # (!p4_let_io_low&p1_bfl2)
+ # (!n_t_2x&p3_bd11)
+ # (!n_t_49x&!p2_dfa_low)
+ # (!p4_rmf_low&!p2_sf5);
 property atmel {open_collector= n_t_6x};
 n_t_6x = 'b'0;
 n_t_6x.oe = (!(!(p2_ifb&p1_rr3&p6_usm&!p4_rdf_low
@@ -2036,7 +2063,9 @@ n_t_74x.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #p3_bm3))#!('b'0));
 property atmel {open_collector= n_t_77x};
 n_t_77x = 'b'0;
-n_t_77x.oe = (p3_bts4&p3_mbk) # (p4_bts1&p6_bind2) # (n_t_72x&p3_bts3);
+n_t_77x.oe = (p3_bts4 & p3_mbk)
+ # (p4_bts1 & p6_bind2)
+ # (n_t_72x & p3_bts3);
 property atmel {open_collector= p1_crf};
 p1_crf = 'b'0;
 p1_crf.oe = (!(!(p1_3v&p1_3v&p6_usm&!p4_rdf_low
@@ -2143,55 +2172,104 @@ p5_dbs_low = 'b'0;
 p5_dbs_low.oe = 'b'1;
 property atmel {open_collector= p6_bs0_low};
 p6_bs0_low = 'b'0;
-p6_bs0_low.oe = (!p6_prup) # (!gdollar_34&!p6_prup_low&!p2_enbs_low) # (!gdollar_42&!p2_elar_low&!p2_elar_low);
+p6_bs0_low.oe = (!p6_prup&!'b'0)
+ # (!p6_prup&!'b'0)
+ # (!gdollar_34 & !p6_prup_low & !p2_enbs_low)
+ # (!gdollar_42 & !p2_elar_low & !p2_elar_low);
 property atmel {open_collector= p6_bs1_low};
 p6_bs1_low = 'b'0;
-p6_bs1_low.oe = (!gdollar_33&!p6_prup_low&!p2_enbs_low) # (!gdollar_41&!p2_elar_low&!p2_elar_low);
+p6_bs1_low.oe = (!gdollar_33 & !p6_prup_low & !p2_enbs_low)
+ # (!gdollar_41 & !p2_elar_low & !p2_elar_low);
 property atmel {open_collector= p6_bs2_low};
 p6_bs2_low = 'b'0;
-p6_bs2_low.oe = (!gdollar_32&!p6_prup_low&!p2_enbs_low) # (!gdollar_40&!p2_elar_low&!p2_elar_low);
+p6_bs2_low.oe = (!gdollar_32 & !p6_prup_low & !p2_enbs_low)
+ # (!gdollar_40 & !p2_elar_low & !p2_elar_low);
 property atmel {open_collector= p6_bs3_low};
 p6_bs3_low = 'b'0;
-p6_bs3_low.oe = (!gdollar_31&!p6_prup_low&!p2_enbs_low) # (!gdollar_39&!p2_elar_low&!p2_elar_low);
+p6_bs3_low.oe = (!gdollar_31 & !p6_prup_low & !p2_enbs_low)
+ # (!gdollar_39 & !p2_elar_low & !p2_elar_low);
 property atmel {open_collector= rbs0_low};
 rbs0_low = 'b'0;
-rbs0_low.oe = (!p6_prup) # (!gdollar_38&!p6_prup_low&!p2_enbs_low) # (!gdollar_46&!p2_elar_low&!p2_elar_low);
+rbs0_low.oe = (!p6_prup&!'b'0)
+ # (!p6_prup&!'b'0)
+ # (!gdollar_38 & !p6_prup_low & !p2_enbs_low)
+ # (!gdollar_46 & !p2_elar_low & !p2_elar_low);
 property atmel {open_collector= rbs1_low};
 rbs1_low = 'b'0;
-rbs1_low.oe = (!gdollar_37&!p6_prup_low&!p2_enbs_low) # (!gdollar_45&!p2_elar_low&!p2_elar_low);
+rbs1_low.oe = (!gdollar_37 & !p6_prup_low & !p2_enbs_low)
+ # (!gdollar_45 & !p2_elar_low & !p2_elar_low);
 property atmel {open_collector= rbs2_low};
 rbs2_low = 'b'0;
-rbs2_low.oe = (!gdollar_36&!p6_prup_low&!p2_enbs_low) # (!gdollar_44&!p2_elar_low&!p2_elar_low);
+rbs2_low.oe = (!gdollar_36 & !p6_prup_low & !p2_enbs_low)
+ # (!gdollar_44 & !p2_elar_low & !p2_elar_low);
 property atmel {open_collector= rbs3_low};
 rbs3_low = 'b'0;
-rbs3_low.oe = (!gdollar_35&!p6_prup_low&!p2_enbs_low) # (!gdollar_43&!p2_elar_low&!p2_elar_low);
+rbs3_low.oe = (!gdollar_35 & !p6_prup_low & !p2_enbs_low)
+ # (!gdollar_43 & !p2_elar_low & !p2_elar_low);
 property atmel {open_collector= rd0_low};
 rd0_low = 'b'0;
-rd0_low.oe = 'b'1;
+rd0_low.oe = (n_t_26x & n_t_27x)
+ # (!(!('b'1))#!(n_t_64x&mbct4_low))
+ # (!p4_rxm_low&!p6_eem_low);
 property atmel {open_collector= rd10_low};
 rd10_low = 'b'0;
-rd10_low.oe = (!n_t_66x&(p4_raca_low&!n_t_62x # !p4_raca_low&!n_t_59x)) # (!gdollar_7&!p4_rmr_low&!p4_rmr_low) # (!p4_rrr_low&p1_rr3) # (!p4_rbm_low&n_t_146x) # (!p6_disf_low&!p2_dfb_low) # (!n_t_56x&!p2_sf4) # (!p4_rusr_low&p1_us4);
+rd10_low.oe = (!n_t_66x&(p4_raca_low&!n_t_62x#!p4_raca_low&!n_t_59x))
+ # (!gdollar_7 & !p4_rmr_low & !p4_rmr_low)
+ # (!p4_rrr_low&p1_rr3)
+ # (!p4_rbm_low&n_t_146x)
+ # (!p6_disf_low&!p2_dfb_low)
+ # (!n_t_56x&!p2_sf4)
+ # (!p4_rusr_low&p1_us4);
 property atmel {open_collector= rd11_low};
 rd11_low = 'b'0;
-rd11_low.oe = (!n_t_66x&(p4_raca_low&!n_t_63x # !p4_raca_low&!n_t_60x)) # (!gdollar_8&!p4_rmr_low&!p4_rmr_low) # (!p4_rrr_low&p1_rr4) # (!p4_rbm_low&n_t_145x) # (!p6_disf_low&!p2_dfa_low) # (!n_t_56x&!p2_sf5) # (!p4_rusr_low&p1_us5);
+rd11_low.oe = (!n_t_66x&(p4_raca_low&!n_t_63x#!p4_raca_low&!n_t_60x))
+ # (!gdollar_8 & !p4_rmr_low & !p4_rmr_low)
+ # (!p4_rrr_low&p1_rr4)
+ # (!p4_rbm_low&n_t_145x)
+ # (!p6_disf_low&!p2_dfa_low)
+ # (!n_t_56x&!p2_sf5)
+ # (!p4_rusr_low&p1_us5);
 property atmel {open_collector= rd1_low};
 rd1_low = 'b'0;
 rd1_low.oe = (!(!(!n_t_54x
-   #!p4_racb_low))#!(n_t_64x&mbct4_low)) # (!p4_rxm_low&!p6_en5_low) # (!p6_dispb_low&!n_t_156x) # (!gdollar_23 & !p4_rmr_low & !p4_rmr_low) # (!p2_rsb_low&sb0_low);
+   #!p4_racb_low))#!(n_t_64x&mbct4_low))
+ # (!p4_rxm_low&!p6_en5_low)
+ # (!p6_dispb_low&!n_t_156x)
+ # (!gdollar_23 & !p4_rmr_low & !p4_rmr_low)
+ # (!p2_rsb_low&sb0_low);
 property atmel {open_collector= rd2_low};
 rd2_low = 'b'0;
 rd2_low.oe = (!(!(!n_t_55x
-   #!p4_racb_low))#!(n_t_64x&mbct4_low)) # (!p4_rxm_low&!p6_en9_low) # (!p6_dispb_low&!n_t_158x) # (!gdollar_24 & !p4_rmr_low & !p4_rmr_low) # (!p2_rsb_low&sb1_low);
+   #!p4_racb_low))#!(n_t_64x&mbct4_low))
+ # (!p4_rxm_low&!p6_en9_low)
+ # (!p6_dispb_low&!n_t_158x)
+ # (!gdollar_24 & !p4_rmr_low & !p4_rmr_low)
+ # (!p2_rsb_low&sb1_low);
 property atmel {open_collector= rd3_low};
 rd3_low = 'b'0;
-rd3_low.oe = (n_t_132x&n_t_131x) # (!n_t_66x&(p4_raca_low&!n_t_54x # !p4_raca_low&!n_t_57x)) # (!p4_rxm_low&!p6_rvfen_low) # (!n_t_169x&!p4_fatal_lp_0_rp) # (!gdollar_25&!p4_rmr_low&!p4_rmr_low) # (!p2_rsb_low&sb2_low);
+rd3_low.oe = (n_t_132x & n_t_131x)
+ # (!n_t_66x&(p4_raca_low&!n_t_54x#!p4_raca_low&!n_t_57x))
+ # (!p4_rxm_low&!p6_rvfen_low)
+ # (!n_t_169x&!p4_fatal_lp_0_rp)
+ # (!gdollar_25 & !p4_rmr_low & !p4_rmr_low)
+ # (!p2_rsb_low&sb2_low);
 property atmel {open_collector= rd4_low};
 rd4_low = 'b'0;
-rd4_low.oe = (!n_t_66x&(p4_raca_low&!n_t_55x # !p4_raca_low&!n_t_61x)) # (!p4_rxm_low&!p6_dioi_low) # (!p6_dispb_low&!n_t_160x) # (!gdollar_26&!p4_rmr_low&!p4_rmr_low) # (!p2_rsb_low&sb3_low);
+rd4_low.oe = (!n_t_66x&(p4_raca_low&!n_t_55x#!p4_raca_low&!n_t_61x))
+ # (!p4_rxm_low&!p6_dioi_low)
+ # (!p6_dispb_low&!n_t_160x)
+ # (!gdollar_26 & !p4_rmr_low & !p4_rmr_low)
+ # (!p2_rsb_low&sb3_low);
 property atmel {open_collector= rd5_low};
 rd5_low = 'b'0;
-rd5_low.oe = (n_t_168x & p2_suf_out) # (!(!(!n_t_52x
-   #!p4_racc_low))#!(n_t_64x&mbct4_low)) # (!p4_rxm_low&!p6_ebm_low) # (!n_t_169x&!p6_usm_low) # (!p6_dispb_low&!n_t_161x) # (!gdollar_22 & !p4_rmr_low & !p4_rmr_low) # (!(!(!p1_crf&!n_t_163x&!n_t_162x&!p6_usm&p4_rdf_low
+rd5_low.oe = (n_t_168x & p2_suf_out)
+ # (!(!(!n_t_52x
+   #!p4_racc_low))#!(n_t_64x&mbct4_low))
+ # (!p4_rxm_low&!p6_ebm_low)
+ # (!n_t_169x&!p6_usm_low)
+ # (!p6_dispb_low&!n_t_161x)
+ # (!gdollar_22 & !p4_rmr_low & !p4_rmr_low)
+ # (!(!(!p1_crf&!n_t_163x&!n_t_162x&!p6_usm&p4_rdf_low
    #!n_t_163x&n_t_162x&!p6_usm&p4_rdf_low
    #!p1_crf&!n_t_163x&n_t_162x&p1_rr0&!p1_rr1&p6_usm&p4_rdf_low
    #p1_crf&n_t_163x&!n_t_162x&p1_rr0&p1_rr1&p6_usm&p4_rdf_low
@@ -2226,7 +2304,14 @@ rd6_low = 'b'0;
 rd6_low.oe = (!(!(!n_t_58x&!n_t_61x
    #!n_t_61x&!p4_racc_low
    #!n_t_58x&!p4_racb_low
-   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low)) # (!p4_rxm_low&!p6_maint_low) # (!p6_disf_low&!p2_ifc_low) # (!gdollar_12 & !p4_rlb_low & !p4_rlb_low) # (!gdollar_21 & !p4_rmr_low & !p4_rmr_low) # (!n_t_56x&!p2_sf0) # (!p4_rusr_low&p1_us0) # (!(!(n_t_6x&p2_dfc&!p1_rr2&!p6_usm&p4_rdf_low
+   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low))
+ # (!p4_rxm_low&!p6_maint_low)
+ # (!p6_disf_low&!p2_ifc_low)
+ # (!gdollar_12 & !p4_rlb_low & !p4_rlb_low)
+ # (!gdollar_21 & !p4_rmr_low & !p4_rmr_low)
+ # (!n_t_56x&!p2_sf0)
+ # (!p4_rusr_low&p1_us0)
+ # (!(!(n_t_6x&p2_dfc&!p1_rr2&!p6_usm&p4_rdf_low
    #n_t_6x&p2_ifc&!p1_rr2&!p6_usm&!p4_rdf_low
    #n_t_6x&!p2_ifc&!p1_rr2&p6_usm&!p4_rdf_low
    #n_t_6x&!p2_dfc&!p1_rr2&p6_usm&p4_rdf_low
@@ -2243,7 +2328,14 @@ rd7_low = 'b'0;
 rd7_low.oe = (!(!(!n_t_59x&!n_t_62x
    #!n_t_62x&!p4_racc_low
    #!n_t_59x&!p4_racb_low
-   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low)) # (!p6_disf_low&!p2_ifb_low) # (!p4_rrr_low&p1_rr0) # (!gdollar_13 & !p4_rlb_low & !p4_rlb_low) # (!gdollar_20 & !p4_rmr_low & !p4_rmr_low) # (!n_t_56x&!p2_sf1) # (!p4_rusr_low&p1_us1) # (!(!(!p6_usm&!p2_dfb&!p2_dfa&!p6_usm&p4_rdf_low
+   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low))
+ # (!p6_disf_low&!p2_ifb_low)
+ # (!p4_rrr_low&p1_rr0)
+ # (!gdollar_13 & !p4_rlb_low & !p4_rlb_low)
+ # (!gdollar_20 & !p4_rmr_low & !p4_rmr_low)
+ # (!n_t_56x&!p2_sf1)
+ # (!p4_rusr_low&p1_us1)
+ # (!(!(!p6_usm&!p2_dfb&!p2_dfa&!p6_usm&p4_rdf_low
    #!p2_dfb&p2_dfa&!p6_usm&p4_rdf_low
    #!p6_usm&!p2_dfb&p2_dfa&p1_rr3&!p1_rr4&p6_usm&p4_rdf_low
    #p6_usm&p2_dfb&!p2_dfa&p1_rr3&p1_rr4&p6_usm&p4_rdf_low
@@ -2278,7 +2370,14 @@ rd8_low = 'b'0;
 rd8_low.oe = (!(!(!n_t_60x&!n_t_63x
    #!n_t_63x&!p4_racc_low
    #!n_t_60x&!p4_racb_low
-   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low)) # (!p6_disf_low&!p2_ifa_low) # (!p4_rrr_low&p1_rr1) # (!gdollar_14 & !p4_rlb_low & !p4_rlb_low) # (!gdollar_19 & !p4_rmr_low & !p4_rmr_low) # (!n_t_56x&!p2_sf2) # (!p4_rusr_low&p1_us2) # (!(!(p6_usm&p2_dfa&!p1_rr4&!p6_usm&p4_rdf_low
+   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low))
+ # (!p6_disf_low&!p2_ifa_low)
+ # (!p4_rrr_low&p1_rr1)
+ # (!gdollar_14 & !p4_rlb_low & !p4_rlb_low)
+ # (!gdollar_19 & !p4_rmr_low & !p4_rmr_low)
+ # (!n_t_56x&!p2_sf2)
+ # (!p4_rusr_low&p1_us2)
+ # (!(!(p6_usm&p2_dfa&!p1_rr4&!p6_usm&p4_rdf_low
    #p6_usm&p2_ifa&!p1_rr4&!p6_usm&!p4_rdf_low
    #p6_usm&!p2_ifa&!p1_rr4&p6_usm&!p4_rdf_low
    #p6_usm&!p2_dfa&!p1_rr4&p6_usm&p4_rdf_low
@@ -2293,7 +2392,14 @@ rd8_low.oe = (!(!(!n_t_60x&!n_t_63x
 property atmel {open_collector= rd9_low};
 rd9_low = 'b'0;
 rd9_low.oe = (!(!(!p4_raca_low
-   #!n_t_58x))#!(n_t_64x&mbct4_low)) # (!gdollar_6 & !p4_rmr_low & !p4_rmr_low) # (!p4_rrr_low&p1_rr2) # (!gdollar_15 & !p4_rlb_low & !p4_rlb_low) # (!p6_disf_low&!p2_dfc_low) # (!n_t_56x&!p2_sf3) # (!p4_rusr_low&p1_us3) # (!(!(p1_crf&n_t_162x&!p1_rr1&!p6_usm&p4_rdf_low
+   #!n_t_58x))#!(n_t_64x&mbct4_low))
+ # (!gdollar_6 & !p4_rmr_low & !p4_rmr_low)
+ # (!p4_rrr_low&p1_rr2)
+ # (!gdollar_15 & !p4_rlb_low & !p4_rlb_low)
+ # (!p6_disf_low&!p2_dfc_low)
+ # (!n_t_56x&!p2_sf3)
+ # (!p4_rusr_low&p1_us3)
+ # (!(!(p1_crf&n_t_162x&!p1_rr1&!p6_usm&p4_rdf_low
    #p1_crf&n_t_157x&!p1_rr1&!p6_usm&!p4_rdf_low
    #p1_crf&!n_t_157x&!p1_rr1&p6_usm&!p4_rdf_low
    #p1_crf&!n_t_162x&!p1_rr1&p6_usm&p4_rdf_low
@@ -2310,4 +2416,5 @@ skip_low = 'b'0;
 skip_low.oe = (p4_usint&n_t_94x);
 property atmel {open_collector= user_mode_low};
 user_mode_low = 'b'0;
-user_mode_low.oe = (p3_bm2&p6_usm) # (n_t_179x&p6_usm);
+user_mode_low.oe = (p3_bm2 & p6_usm)
+ # (n_t_179x & p6_usm);

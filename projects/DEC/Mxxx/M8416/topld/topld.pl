@@ -1297,9 +1297,9 @@ sub ocassign {
   warn "unexpected OC output: $lh" unless $oc{$lh};
   &qcode("/* $lh = !($rh);"); chop $qcode; chop $qcode; &qcode(" */\n");
   if (defined $ocassign{$lh}) {
-    $ocassign{$lh} .= " # ($rh)";
+    $ocassign{$lh} .= " # ($rh)\n";
   } else {
-    $ocassign{$lh} = "($rh)";
+    $ocassign{$lh} = "($rh)\n";
   }
 }
 
@@ -1595,6 +1595,7 @@ foreach $lh (sort keys %ocassign) {
   &qcode("property atmel {open_collector=$lh};\n");
   # Use qcode to get peep-hole optimization.
   &qcode("$lh = 'b'0;\n");
+  chop $ocassign{$lh};
   &qcode("$lh.oe = $ocassign{$lh};\n");
 }
 
