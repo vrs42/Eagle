@@ -16447,13 +16447,13 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="E12" library="dec-con" deviceset="DS8641" device="N"/>
 <part name="E13" library="dec-con" deviceset="DS8641" device="N"/>
 <part name="E45" library="dec-con" deviceset="DS8641" device="N"/>
-<part name="E14" library="dec-con" deviceset="82S100" device="" value="23007C6"/>
+<part name="E14" library="dec-con" deviceset="82S100" device="" value="DEC23007C6"/>
 <part name="E15" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
 <part name="E17" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
 <part name="E85" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
 <part name="E88" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
 <part name="E103" library="74xx-us" deviceset="74*174" device="N" technology="LS"/>
-<part name="E16" library="dec-con" deviceset="82S100" device="" value="23008C6"/>
+<part name="E16" library="dec-con" deviceset="82S100" device="" value="DEC23008C6"/>
 <part name="E20" library="74xx-us" deviceset="74*01" device="N" technology="LS"/>
 <part name="E21" library="74xx-us" deviceset="74*10" device="N" technology="LS"/>
 <part name="E24" library="74xx-us" deviceset="74*10" device="N" technology="LS"/>
@@ -16462,7 +16462,7 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="E92" library="74xx-us" deviceset="74*10" device="N" technology="LS"/>
 <part name="E23" library="74xx-us" deviceset="74*258" device="N" technology="LS"/>
 <part name="E27" library="74xx-us" deviceset="74*11" device="N" technology="S"/>
-<part name="E28" library="dec-con" deviceset="74S287" device="" value="23440A2"/>
+<part name="E28" library="dec-con" deviceset="74S287" device="" value="DEC23440A2"/>
 <part name="E29" library="74xx-us" deviceset="74*02" device="N" technology="LS"/>
 <part name="E47" library="74xx-us" deviceset="74*02" device="N" technology="LS"/>
 <part name="E48" library="74xx-us" deviceset="74*02" device="N" technology="LS"/>
@@ -16503,22 +16503,22 @@ or will meet your specific requirements.&lt;p&gt;
 <part name="E78" library="74xx-us" deviceset="74*85" device="N" technology="LS"/>
 <part name="E79" library="dec-con" deviceset="MC8266" device=""/>
 <part name="E69" library="dec-con" deviceset="MC8266" device=""/>
-<part name="E74" library="dec-con" deviceset="74S287" device="" value="23441A2"/>
+<part name="E74" library="dec-con" deviceset="74S287" device="" value="DEC23441A2"/>
 <part name="E77" library="74xx-eu" deviceset="74*221" device="N" technology="LS"/>
-<part name="E80" library="dec-con" deviceset="74S288" device="" value="23211A1"/>
-<part name="E81" library="dec-con" deviceset="82S100" device="" value="23009C6"/>
+<part name="E80" library="dec-con" deviceset="74S288" device="" value="DEC23211A1"/>
+<part name="E81" library="dec-con" deviceset="82S100" device="" value="DEC23009C6"/>
 <part name="E82" library="dec-con" deviceset="74*89" device="" value="74S189"/>
 <part name="E86" library="74xx-us" deviceset="74*368" device="N"/>
 <part name="E95" library="74xx-us" deviceset="74*368" device="N"/>
 <part name="E96" library="74xx-us" deviceset="74*368" device="N"/>
 <part name="E106" library="74xx-us" deviceset="74*368" device="N"/>
-<part name="E87" library="dec-con" deviceset="74S287" device="" value="23442A2"/>
-<part name="E113" library="dec-con" deviceset="74S287" device="" value="23442A2"/>
+<part name="E87" library="dec-con" deviceset="74S287" device="" value="DEC23442A2"/>
+<part name="E113" library="dec-con" deviceset="74S287" device="" value="DEC23442A2"/>
 <part name="E89" library="74xx-us" deviceset="74*148" device="N"/>
-<part name="E109" library="dec-con" deviceset="82S100" device="" value="23010C6"/>
-<part name="E111" library="dec-con" deviceset="74S571" device="" value="23621A9"/>
-<part name="E112" library="dec-con" deviceset="74S571" device="" value="23621A9"/>
-<part name="E114" library="dec-con" deviceset="74S571" device="" value="23621A9"/>
+<part name="E109" library="dec-con" deviceset="82S100" device="" value="DEC23010C6"/>
+<part name="E111" library="dec-con" deviceset="74S571" device="" value="DEC23621A9"/>
+<part name="E112" library="dec-con" deviceset="74S571" device="" value="DEC23621A9"/>
+<part name="E114" library="dec-con" deviceset="74S571" device="" value="DEC23621A9"/>
 <part name="E120" library="74xx-us" deviceset="74*139" device="N" technology="S"/>
 <part name="C12" library="dec-con" deviceset="C-US" device="" value="100pF"/>
 <part name="C19" library="dec-con" deviceset="C-US" device="" value="100pF"/>

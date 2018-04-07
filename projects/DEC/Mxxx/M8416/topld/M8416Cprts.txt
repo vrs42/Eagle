@@ -1,6 +1,6 @@
 Partlist
 
-Exported from M8416C.sch at 4/6/2018 7:39:11 AM
+Exported from M8416C.sch at 4/6/2018 10:39:27 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -57,9 +57,9 @@ E10      Spare          DIL16S            SOCKET-16    ic-package    7
 E11      DS8640N        DS8640N           DIL14        dec-con       3
 E12      DS8641N        DS8641N           DIL16        dec-con       3
 E13      DS8641N        DS8641N           DIL16        dec-con       3
-E14      23007C6        82S100            DIL28        dec-con       3
+E14      DEC23007C6     82S100            DIL28        dec-con       3
 E15      74LS174N       74LS174N          DIL16        74xx-us       3
-E16      23008C6        82S100            DIL28        dec-con       3
+E16      DEC23008C6     82S100            DIL28        dec-con       3
 E17      74LS174N       74LS174N          DIL16        74xx-us       3
 E18      74LS00N        74LS00N           DIL14        74xx-us       4
 E19      N8881N         N8881N            DIL14        dec-con       3
@@ -71,7 +71,7 @@ E24      74LS10N        74LS10N           DIL14        74xx-us       4
 E25      DS8640N        DS8640N           DIL14        dec-con       3
 E26      74LS75N        7475N             DIL16        74ttl-din     3
 E27      74S11N         74S11N            DIL14        74xx-us       3
-E28      23440A2        74S287            DIL16        dec-con       4
+E28      DEC23440A2     74S287            DIL16        dec-con       4
 E29      74LS02N        74LS02N           DIL14        74xx-us       1
 E30      74LS30N        74LS30N           DIL14        dec-con       4
 E31      74154N         74154N            DIL24-6      74xx-us       4
@@ -117,20 +117,20 @@ E70      74LS00N        74LS00N           DIL14        74xx-us       4
 E71      DS8640N        DS8640N           DIL14        dec-con       3
 E72      SP384N         SP384N            DIL14        dec-con       6
 E73      74173N         74LS173N          DIL16        74xx-us       2
-E74      23441A2        74S287            DIL16        dec-con       5
+E74      DEC23441A2     74S287            DIL16        dec-con       5
 E75      SP384N         SP384N            DIL14        dec-con       4
 E76      74LS74N        74LS74N           DIL14        74xx-us       4
 E77      74LS221N       74LS221N          DIL16        74xx-eu       4
 E78      74LS85N        74LS85N           DIL16        74xx-us       1
 E79      MC8266         MC8266            DIL16        dec-con       4
-E80      23211A1        74S288            DIL16        dec-con       4
-E81      23009C6        82S100            DIL28        dec-con       5
+E80      DEC23211A1     74S288            DIL16        dec-con       4
+E81      DEC23009C6     82S100            DIL28        dec-con       5
 E82      74S189         7489              DIL16        dec-con       5
 E83      74367N         74367N            DIL16        74ttl-din     2
 E84      74367N         74367N            DIL16        74xx-us       2
 E85      74LS174N       74LS174N          DIL16        74xx-us       1
 E86      74368N         74368N            DIL16        74xx-us       1
-E87      23442A2        74S287            DIL16        dec-con       1
+E87      DEC23442A2     74S287            DIL16        dec-con       1
 E88      74LS174N       74LS174N          DIL16        74xx-us       1
 E89      74148N         74148N            DIL16        74xx-us       5
 E90      74173N         74LS173N          DIL16        74xx-us       5
@@ -152,12 +152,12 @@ E105     74367N         74367N            DIL16        74xx-us       2
 E106     74368N         74368N            DIL16        74xx-us       1
 E107     74367N         74367N            DIL16        74xx-us       2
 E108     74LS175N       74LS175N          DIL16        74xx-us       5
-E109     23010C6        82S100            DIL28        dec-con       5
+E109     DEC23010C6     82S100            DIL28        dec-con       5
 E110     74LS175N       74LS175N          DIL16        74xx-us       5
-E111     23621A9        74S571            DIL16        dec-con       5
-E112     23621A9        74S571            DIL16        dec-con       1
-E113     23442A2        74S287            DIL16        dec-con       1
-E114     23621A9        74S571            DIL16        dec-con       1
+E111     DEC23621A9     74S571            DIL16        dec-con       5
+E112     DEC23621A9     74S571            DIL16        dec-con       1
+E113     DEC23442A2     74S287            DIL16        dec-con       1
+E114     DEC23621A9     74S571            DIL16        dec-con       1
 E115     74LS04N        74LS04N           DIL14        74xx-us       2
 E116     74LS175N       74LS175N          DIL16        74xx-us       5
 E117     74LS175N       74LS175N          DIL16        74xx-us       5

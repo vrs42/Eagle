@@ -12,11 +12,12 @@ foreach $f (@ARGV) {
     last if /^--- --/;
   }
   while (<INPUT>) {
-    next unless /^\s+(\S+)\s+(\S+)\s+V/;
-    $pad{$1} = $2;
+    next unless /^\s+([!]*)\s+(\S+)\s+(\S+)\s+V/;
+    $pad{$2} = $3;
   }
   open(INPUT, $f) || die "$f: $!";
   $name = $f; $name =~ s/.doc$//;
+  $name =~ s/.*[\\\/]//;
   $name = "dec$name" if $name =~ /^23/;
   $name = "sn$name" if $name =~ /^74/;
   $name =~ y/A-Z/a-z/;
@@ -33,6 +34,8 @@ foreach $f (@ARGV) {
     if (/^(\S+)\s*=>/) {
       $lh = $1;
       $negate = ($lh =~ s/^!//);
+$suffix = "";
+$suffix = $1 if $lh =~ s/(\..*)//;
       if (!defined $pad{$lh}) {
 #       warn "No symbol $lh\n";
         $first = 1;
@@ -40,11 +43,12 @@ foreach $f (@ARGV) {
         next;
       }
       $lh = "\$pad\{$pad{$lh}\}";
-      $code = "$lh = ";
+      $code = "$lh$suffix = ";
       $code .= "!(" if $negate;
       $first = 1;
     } elsif (/^\r*$/) {
       # Wrap up the assignment.
+      chop $code; chop $code; # Remove last "\n"
       $code .= ")" if $negate;
       print "  &qcode(\"$code;\\n\") if defined $lh;\n" if defined $lh;
       $code = "";
@@ -54,6 +58,7 @@ foreach $f (@ARGV) {
       s/\s+//g;
       # Replace identifiers with '$pad{n}' where 'n' is the 
       # corresponding pad number.
+      s/\b(\d+)\b/'b'$1/;
       foreach $id (keys %pad) {
         s/\b$id\b/\$pad\{$pad{$id}\}/g;
       }
@@ -64,3 +69,4 @@ foreach $f (@ARGV) {
   }
   print "}\n\$hidden{\"$name\"} = 0;\n\n"
 }
+print "1;\n";

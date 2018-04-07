@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          virtual  Library DLIB-h-40-1
-Created         Wed Apr 04 21:35:53 2018
+Created         Fri Apr 06 23:01:51 2018
 Name            23010C6
 Partno          E109 82S100
 Revision        1.0
@@ -22,9 +22,9 @@ Location        None
 !dbo0 =>
     !BD3 & !mux_ctl0 & mux_ctl1 & !mux_ctl2
   # !BB0 & !mux_ctl1 & mux_ctl2
-  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
   # !BD4 & mux_ctl0 & mux_ctl1
   # !SB2 & !mux_ctl1 & !mux_ctl2
+  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
   # mux_ctl1 & mux_ctl2
 
 dbo0.oe  =>
@@ -33,29 +33,29 @@ dbo0.oe  =>
 !dbo1 =>
     !BD4 & !mux_ctl0 & mux_ctl1 & !mux_ctl2
   # !BB1 & !mux_ctl1 & mux_ctl2
-  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
   # !BD5 & mux_ctl0 & mux_ctl1
   # !SB3 & !mux_ctl1 & !mux_ctl2
+  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
   # mux_ctl1 & mux_ctl2
 
 dbo1.oe  =>
     CE
 
 !ibbo0 =>
-    !BD1 & mux_ctl1 & !mux_ctl2
-  # !BB0 & !mux_ctl1 & mux_ctl2
-  # SB0 & !mux_ctl0 & !mux_ctl1 & !mux_ctl2
+    !BB0 & !mux_ctl1 & mux_ctl2
+  # !BD1 & mux_ctl1 & !mux_ctl2
   # !SB0 & !mux_ctl1 & !mux_ctl2
+  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
   # mux_ctl1 & mux_ctl2
 
 ibbo0.oe  =>
     CE
 
 !ibbo1 =>
-    !BD2 & mux_ctl1 & !mux_ctl2
-  # !BB1 & !mux_ctl1 & mux_ctl2
-  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
+    !BB1 & !mux_ctl1 & mux_ctl2
+  # !BD2 & mux_ctl1 & !mux_ctl2
   # !SB1 & !mux_ctl1 & !mux_ctl2
+  # !mux_ctl0 & !mux_ctl1 & !mux_ctl2
   # mux_ctl1 & mux_ctl2
 
 ibbo1.oe  =>
@@ -63,8 +63,8 @@ ibbo1.oe  =>
 
 !ibo0 =>
     mux_ctl0 & mux_ctl1 & mux_ctl2
-  # !IBB0 & !mux_ctl0 & mux_ctl1 & mux_ctl2
   # !BD1 & mux_ctl0 & mux_ctl1 & !mux_ctl2
+  # !IBB0 & !mux_ctl0 & mux_ctl1 & mux_ctl2
   # !mux_ctl0 & !mux_ctl2
   # !mux_ctl1
 
@@ -73,8 +73,8 @@ ibo0.oe  =>
 
 !ibo1 =>
     mux_ctl0 & mux_ctl1 & mux_ctl2
-  # !IBB1 & !mux_ctl0 & mux_ctl1 & mux_ctl2
   # !BD2 & mux_ctl0 & mux_ctl1 & !mux_ctl2
+  # !IBB1 & !mux_ctl0 & mux_ctl1 & mux_ctl2
   # !mux_ctl0 & !mux_ctl2
   # !mux_ctl1
 
@@ -95,12 +95,11 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
 
     BB0                         3        V        -       -       -     
     BB1                         4        V        -       -       -     
-    BD0                         5        V        -       -       -     
-    BD1                         6        V        -       -       -     
-    BD2                         7        V        -       -       -     
-    BD3                         8        V        -       -       -     
-    BD4                         9        V        -       -       -     
-    BD5                         0        V        -       -       -     
+    BD1                         5        V        -       -       -     
+    BD2                         6        V        -       -       -     
+    BD3                         7        V        -       -       -     
+    BD4                         8        V        -       -       -     
+    BD5                         9        V        -       -       -     
  !  CE                          19       V        -       -       -     
     IBB0                        27       V        -       -       -     
     IBB1                        2        V        -       -       -     

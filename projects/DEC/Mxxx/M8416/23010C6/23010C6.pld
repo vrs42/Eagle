@@ -56,9 +56,9 @@ Pin [27,2] = [IBB0..1];
 */
 Pin [3,4] = [BB0..1];
 /*
- * BDB presents the current contents of the BD register.
+ * BD presents the current contents of the BD register.
 */
-Pin [5..9] = [BD0..5];
+Pin [5..9] = [BD1..5];
 
 /* Outputs */
 Pin [10,11] = [ibo0..1]; /* E110 */
