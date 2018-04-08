@@ -1,0 +1,90 @@
+
+*******************************************************************************
+                                    sn74148
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Fri Apr 06 19:46:26 2018
+Name            sn74148 
+Partno          cpld 
+Revision        01 
+Date            4/6/2018 
+Designer        
+Company         
+Assembly        None 
+Location        E1 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+I =>
+    EI , P0x , P1x , P2x , P3x , P4x , P5x , P6x , P7x
+
+O =>
+    a2x , a1x , a0x , gs , eo
+
+!a0x =>
+    !EI & !P3x & P4x & P5x & P6x & P7x
+  # !EI & !P1x & P2x & P4x & P6x
+  # !EI & !P5x & P6x
+  # !EI & !P7x
+
+!a1x =>
+    !EI & P2x & !P3x & P4x & P5x & P6x & P7x
+  # !EI & !P2x & P4x & P5x
+  # !EI & !P6x
+  # !EI & !P7x
+
+!a2x =>
+    !EI & !P5x & P6x
+  # !EI & !P4x
+  # !EI & !P6x
+  # !EI & !P7x
+
+!eo =>
+    !EI & P0x & P1x & P2x & P3x & P4x & P5x & P6x & P7x
+
+!gs =>
+    !EI & !P3x & P4x & P5x & P6x & P7x
+  # !EI & !P1x & P2x & P4x & P6x
+  # !EI & !P2x & P4x & P5x
+  # !EI & !P5x & P6x
+  # !EI & !P4x
+  # !EI & !P6x
+  # !EI & !P7x
+  # !EI & !P0x
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    EI                          5        V        -       -       -     
+    I                           0        F        -       -       -     
+    O                           0        F        -       -       -     
+    P0x                         10       V        -       -       -     
+    P1x                         11       V        -       -       -     
+    P2x                         12       V        -       -       -     
+    P3x                         13       V        -       -       -     
+    P4x                         1        V        -       -       -     
+    P5x                         2        V        -       -       -     
+    P6x                         3        V        -       -       -     
+    P7x                         4        V        -       -       -     
+    a0x                         9        V        4       0       4     
+    a1x                         7        V        4       0       4     
+    a2x                         6        V        4       0       4     
+    eo                          15       V        1       0       4     
+    gs                          14       V        8       0       4     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
