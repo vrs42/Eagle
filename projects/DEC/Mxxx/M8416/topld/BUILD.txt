@@ -1,0 +1,65 @@
+This code starts from the M8416C schematic in the parent directory.
+
+First, the files M8416Cprts.txt and M8416Cpins.txt are exported 
+from Eagle, using the Export->Partlist and Export->Pinlist commands.
+They then contain the BOM and the netlist (in part-pin order), which 
+are used to generate the CUPL equivalent of the logic of the M8416C.
+
+The M8416C uses a fair number of DEC23xxxxx programmed parts in the 
+design.  Each of these has a directory, ../23xxxxx, containing CUPL 
+code for a (hopefully equivalent) programmed device.  Each of these 
+is assembled using CUPL (in device independent mode), creating an 
+output ../23xxxxx/23xxxxx.doc file.
+
+To extract the optimized logic and convert it into a Perl code 
+generation module, the routine "mklbr.pl" takes these .doc files 
+as input, and outputs a suitable (though ugly) code generator on 
+standard output.  The command to do this is:
+  ./mklbr.pl ../23*/23*.doc >lbr.pl
+
+The file "lbr.pl" will then contain project-specific code generators 
+for the DEC23xxxxx parts.
+
+The file "topld.pl" contains code generators for 74xxx logic parts
+and various other industry standard logic parts commonly used in 
+DEC designs.  It also has the code to parse the parts and pin lists, 
+invoking the code generators appropriately to generate CUPL code 
+equivalent to the input schematic.  (Various warnings are emitted 
+for parts, such as the sn74221, which aren't logic, and therefore 
+aren't translated.  The invocation to do this is:
+  ./topld M8416C
+which reaquires the matching prts.txt and pins.txt files to do it's 
+thing.
+
+The result is "M8416C.PLD", which is then compiled with the CUPL 
+compiler.  The compiler will actually fail to generate code, as 
+there are a couple of places in the design where cross-coupled 
+gates are used to build flip-flops, which generates a "signal 
+depends on itself" error.
+
+So, going back to the schematic, M8416P (TODO) is a version of 
+the M8416 with these logic loops replaced with proper flip-flops, 
+then the logic extraction is done again, leading to M416P.PLD.
+
+Many of these processes are error prone.  It is likely that minor 
+errors exist in the transcription of the schematic.  At some point, 
+the board layout needs to get traced, and when that is done, it 
+provides a valuable check on the veracity of the schematic.
+
+The logic in the ../23xxxxx directories may not correctly reflect
+the actual programming found in the original DEC parts.  The translation 
+of these into code generators will propogate those errors, and has
+the potential to introduce new ones.
+
+There are dozens of code generators involved in the translation of 
+industry standard parts, almost all of which are hand-written and 
+potential sources of error.
+
+The general strategy for dealing with errors is to automate as much 
+of the translation as possible.  Then, if there's an error in the 
+schematic, just fix that and rebuild.  If there's a problem with a 
+code generator, fix it and rebuild, etc.
+
+Hope this helps!
+
+    Vince

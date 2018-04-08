@@ -3,7 +3,7 @@
 
 Name     M8416C ;
 PartNo   cpld ;
-Date     4/7/2018 ;
+Date     4/8/2018 ;
 Revision 01 ;
 Designer  ;
 Company   ;
@@ -1013,6 +1013,102 @@ lbm_or_rbmn = !(!p4_lbm_low&!p4_rbm_low
    #!p3_bts4);
 
 /* e82: sn74189 */
+/* n_t_146x = !(n_t_142x&n_t_139x&n_t_140x&n_t_141x&!rp1
+   #!n_t_142x&n_t_139x&n_t_140x&n_t_141x&!ro1
+   #n_t_142x&!n_t_139x&n_t_140x&n_t_141x&!rn1
+   #!n_t_142x&!n_t_139x&n_t_140x&n_t_141x&!rm1
+   #n_t_142x&n_t_139x&!n_t_140x&n_t_141x&!rl1
+   #!n_t_142x&n_t_139x&!n_t_140x&n_t_141x&!rk1
+   #n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&!rj1
+   #!n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&!ri1
+   #n_t_142x&n_t_139x&n_t_140x&!n_t_141x&!rh1
+   #!n_t_142x&n_t_139x&n_t_140x&!n_t_141x&!rg1
+   #n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&!rf1
+   #!n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&!re1
+   #n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!rd1
+   #!n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!rc1
+   #n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!rb1
+   #!n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!ra1 */
+/* n_t_145x = !(n_t_142x&n_t_139x&n_t_140x&n_t_141x&!rp2
+   #!n_t_142x&n_t_139x&n_t_140x&n_t_141x&!ro2
+   #n_t_142x&!n_t_139x&n_t_140x&n_t_141x&!rn2
+   #!n_t_142x&!n_t_139x&n_t_140x&n_t_141x&!rm2
+   #n_t_142x&n_t_139x&!n_t_140x&n_t_141x&!rl2
+   #!n_t_142x&n_t_139x&!n_t_140x&n_t_141x&!rk2
+   #n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&!rj2
+   #!n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&!ri2
+   #n_t_142x&n_t_139x&n_t_140x&!n_t_141x&!rh2
+   #!n_t_142x&n_t_139x&n_t_140x&!n_t_141x&!rg2
+   #n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&!rf2
+   #!n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&!re2
+   #n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!rd2
+   #!n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!rc2
+   #n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!rb2
+   #!n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!ra2 */
+ra1.l = n_t_143x;
+ra1.le = !n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+ra2.l = n_t_144x;
+ra2.le = !n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rb1.l = n_t_143x;
+rb1.le = n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rb2.l = n_t_144x;
+rb2.le = n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rc1.l = n_t_143x;
+rc1.le = !n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rc2.l = n_t_144x;
+rc2.le = !n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rd1.l = n_t_143x;
+rd1.le = n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rd2.l = n_t_144x;
+rd2.le = n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+re1.l = n_t_143x;
+re1.le = !n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+re2.l = n_t_144x;
+re2.le = !n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rf1.l = n_t_143x;
+rf1.le = n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rf2.l = n_t_144x;
+rf2.le = n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rg1.l = n_t_143x;
+rg1.le = !n_t_142x&n_t_139x&n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rg2.l = n_t_144x;
+rg2.le = !n_t_142x&n_t_139x&n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rh1.l = n_t_143x;
+rh1.le = n_t_142x&n_t_139x&n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+rh2.l = n_t_144x;
+rh2.le = n_t_142x&n_t_139x&n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
+ri1.l = n_t_143x;
+ri1.le = !n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+ri2.l = n_t_144x;
+ri2.le = !n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rj1.l = n_t_143x;
+rj1.le = n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rj2.l = n_t_144x;
+rj2.le = n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rk1.l = n_t_143x;
+rk1.le = !n_t_142x&n_t_139x&!n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rk2.l = n_t_144x;
+rk2.le = !n_t_142x&n_t_139x&!n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rl1.l = n_t_143x;
+rl1.le = n_t_142x&n_t_139x&!n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rl2.l = n_t_144x;
+rl2.le = n_t_142x&n_t_139x&!n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rm1.l = n_t_143x;
+rm1.le = !n_t_142x&!n_t_139x&n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rm2.l = n_t_144x;
+rm2.le = !n_t_142x&!n_t_139x&n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rn1.l = n_t_143x;
+rn1.le = n_t_142x&!n_t_139x&n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rn2.l = n_t_144x;
+rn2.le = n_t_142x&!n_t_139x&n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+ro1.l = n_t_143x;
+ro1.le = !n_t_142x&n_t_139x&n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+ro2.l = n_t_144x;
+ro2.le = !n_t_142x&n_t_139x&n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rp1.l = n_t_143x;
+rp1.le = n_t_142x&n_t_139x&n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
+rp2.l = n_t_144x;
+rp2.le = n_t_142x&n_t_139x&n_t_140x&n_t_141x&p5_bmen_low&p4_blbm_low;
 
 /* e83: sn74367 */
 /* rd8_low = !(!p6_disf_low&!p2_ifa_low); */
@@ -1871,11 +1967,43 @@ n_t_142x = 'b'0;
 n_t_142x.oe = 'b'1;
 property atmel {open_collector= n_t_145x};
 n_t_145x = 'b'0;
-n_t_145x.oe = (!p5_dbs_low&!n_t_161x)
+n_t_145x.oe = (n_t_142x&n_t_139x&n_t_140x&n_t_141x&!rp2
+   #!n_t_142x&n_t_139x&n_t_140x&n_t_141x&!ro2
+   #n_t_142x&!n_t_139x&n_t_140x&n_t_141x&!rn2
+   #!n_t_142x&!n_t_139x&n_t_140x&n_t_141x&!rm2
+   #n_t_142x&n_t_139x&!n_t_140x&n_t_141x&!rl2
+   #!n_t_142x&n_t_139x&!n_t_140x&n_t_141x&!rk2
+   #n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&!rj2
+   #!n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&!ri2
+   #n_t_142x&n_t_139x&n_t_140x&!n_t_141x&!rh2
+   #!n_t_142x&n_t_139x&n_t_140x&!n_t_141x&!rg2
+   #n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&!rf2
+   #!n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&!re2
+   #n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!rd2
+   #!n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!rc2
+   #n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!rb2
+   #!n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!ra2)
+ # (!p5_dbs_low&!n_t_161x)
  # (!ibs_low&!n_t_158x);
 property atmel {open_collector= n_t_146x};
 n_t_146x = 'b'0;
-n_t_146x.oe = (!p5_dbs_low&!n_t_160x)
+n_t_146x.oe = (n_t_142x&n_t_139x&n_t_140x&n_t_141x&!rp1
+   #!n_t_142x&n_t_139x&n_t_140x&n_t_141x&!ro1
+   #n_t_142x&!n_t_139x&n_t_140x&n_t_141x&!rn1
+   #!n_t_142x&!n_t_139x&n_t_140x&n_t_141x&!rm1
+   #n_t_142x&n_t_139x&!n_t_140x&n_t_141x&!rl1
+   #!n_t_142x&n_t_139x&!n_t_140x&n_t_141x&!rk1
+   #n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&!rj1
+   #!n_t_142x&!n_t_139x&!n_t_140x&n_t_141x&!ri1
+   #n_t_142x&n_t_139x&n_t_140x&!n_t_141x&!rh1
+   #!n_t_142x&n_t_139x&n_t_140x&!n_t_141x&!rg1
+   #n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&!rf1
+   #!n_t_142x&!n_t_139x&n_t_140x&!n_t_141x&!re1
+   #n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!rd1
+   #!n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!rc1
+   #n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!rb1
+   #!n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!ra1)
+ # (!p5_dbs_low&!n_t_160x)
  # (!ibs_low&!n_t_156x);
 property atmel {open_collector= n_t_149x};
 n_t_149x = 'b'0;

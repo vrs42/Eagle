@@ -39,7 +39,7 @@ foreach $f (@ARGV) {
     last if /^--- --/;
   }
   while (<INPUT>) {
-    next unless /^\s+([!]*)\s+(\S+)\s+(\S+)\s+V/;
+    next unless /^\s+([!]*)\s+(\S+)\s+(\S+)\s+[NV]/;
     $pad{$2} = $3;
   }
   open(INPUT, $f) || die "$f: $!";
@@ -70,7 +70,7 @@ foreach $f (@ARGV) {
         undef $lh;
         next;
       }
-      $lh = "\$pad\{$pad{$lh}\}";
+      $lh = "\$pad\{$pad{$lh}\}" unless $pad{$lh} >= 200;
       #$code = "$lh$suffix = ";
       $code = "";
       $code .= "!(" if $negate;
@@ -89,6 +89,7 @@ foreach $f (@ARGV) {
       # corresponding pad number.
       s/\b(\d+)\b/'b'$1/;
       foreach $id (keys %pad) {
+        next if $pad{$id} >= 200;
         s/\b$id\b/\$pad\{$pad{$id}\}/g;
       }
       $code .= "   " unless $first;
@@ -102,7 +103,9 @@ foreach $f (@ARGV) {
       print "  \$oc{$lh} = 1 if defined $lh;\n";
       print "  &ocassign($lh, \"!($code{$lh})#!($code{\"$lh.oe\"})\") if defined $lh;\n";
     } else {
-      print "  &qcode(\"$lh = $code{$lh};\\n\") if defined $lh;\n";
+      $code = "";
+      $code = " if defined $lh" if $lh =~ /pad/;
+      print "  &qcode(\"$lh = $code{$lh};\\n\")$code;\n";
     }
   }
   print "}\n\$hidden{\"$name\"} = 0;\n\n"
