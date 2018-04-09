@@ -1,7 +1,7 @@
 #$ TOOL CUPL
 # Berkeley PLA format generated using CUPL(WM) 5.0a
 # Serial#  60008009
-# Created  Fri Apr 06 23:01:51 2018
+# Created  Sun Apr 08 18:26:43 2018
 #
 #    Name        23010C6
 #    Partno      E109 82S100
@@ -20,7 +20,7 @@
 #$ MODULE  23010C6
 #$ JEDECFILE  23010C6
 #$ DEVICE  virtual
-#$ PINS  23 BB0+:3 BB1+:4 BD1+:5 BD2+:6 BD3+:7 BD4+:8 BD5+:9 CE+:19 IBB0+:27 IBB1+:2 SB0+:23 SB1+:24 SB2+:25 SB3+:26 dbo0+:12 dbo1+:13 ibbo0+:14 ibbo1+:15 ibo0+:10 ibo1+:11 mux_ctl0+:20 mux_ctl1+:21 mux_ctl2+:22 
+#$ PINS  23 BB0+:3 BB1+:4 BD1+:5 BD2+:6 BD3+:7 BD4+:8 BD5+:9 CE+:19 IBB0+:27 IBB1+:2 SB0+:23 SB1+:24 SB2+:25 SB3+:26 dbo0+:12 dbo1+:13 ibbo0+:15 ibbo1+:16 ibo0+:10 ibo1+:11 mux_ctl0+:20 mux_ctl1+:21 mux_ctl2+:22 
 .i 17
 .o 12
 .type f

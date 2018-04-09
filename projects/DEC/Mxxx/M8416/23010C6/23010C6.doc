@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          virtual  Library DLIB-h-40-1
-Created         Fri Apr 06 23:01:51 2018
+Created         Sun Apr 08 18:26:43 2018
 Name            23010C6
 Partno          E109 82S100
 Revision        1.0
@@ -111,10 +111,10 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     dbo0                oe      12       X        1       0       1     
     dbo1                        13       V        6       0       4     
     dbo1                oe      13       X        1       0       1     
-    ibbo0                       14       V        5       0       4     
-    ibbo0               oe      14       X        1       0       1     
-    ibbo1                       15       V        5       0       4     
-    ibbo1               oe      15       X        1       0       1     
+    ibbo0                       15       V        5       0       4     
+    ibbo0               oe      15       X        1       0       1     
+    ibbo1                       16       V        5       0       4     
+    ibbo1               oe      16       X        1       0       1     
     ibo0                        10       V        5       0       4     
     ibo0                oe      10       X        1       0       1     
     ibo1                        11       V        5       0       4     

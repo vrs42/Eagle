@@ -63,7 +63,7 @@ Pin [5..9] = [BD1..5];
 /* Outputs */
 Pin [10,11] = [ibo0..1]; /* E110 */
 Pin [12,13] = [dbo0..1]; /* E108 */
-Pin [14,15] = [ibbo0..1]; /* E116 */
+Pin [15,16] = [ibbo0..1]; /* E116 */
 
 field mux_ctl = [mux_ctl0..2];
 
