@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          virtual  Library DLIB-h-40-1
-Created         Mon Apr 02 15:45:59 2018
+Created         Sun Apr 08 17:53:24 2018
 Name            23442A2
 Partno          E87,E113 74S287
 Revision        1.0
@@ -42,96 +42,99 @@ C2 =>
   # A2 & CI
   # A2 & R2 & add
 
-S0 =>
-    A0 & A1 & R0 & R1 & add
-  # A0 & A2 & R0 & R1 & R2 & add
-  # A0 & A2 & CI & R0 & R1 & add
-  # A0 & CI & R0 & R1 & R2 & add
-  # A0 & A1 & A2 & R0 & R2 & add
-  # A0 & A1 & CI & R0 & R2 & add
-  # A0 & A1 & A2 & CI & R0 & add
-  # !A0 & A1 & !R0 & R1 & add
-  # !A0 & A2 & !R0 & R1 & R2 & add
-  # !A0 & A2 & CI & !R0 & R1 & add
-  # !A0 & CI & !R0 & R1 & R2 & add
-  # !A0 & A1 & A2 & !R0 & R2 & add
-  # !A0 & A1 & CI & !R0 & R2 & add
-  # !A0 & A1 & A2 & CI & !R0
-  # !A0 & A1 & A2 & CI & !add
-  # !A0 & !A1 & !A2 & !CI & R0 & add
-  # !A0 & !A1 & !A2 & R0 & !R2 & add
-  # !A0 & !A1 & !CI & R0 & !R2 & add
-  # !A0 & !A1 & R0 & !R1 & add
-  # !A0 & !A2 & !CI & R0 & !R1 & add
-  # !A0 & !CI & R0 & !R1 & !R2 & add
-  # !A0 & !A2 & R0 & !R1 & !R2 & add
-  # A0 & !A1 & !A2 & !CI & !R0
-  # A0 & !A1 & !A2 & !R0 & !R2
-  # A0 & !A1 & !CI & !R0 & !R2
-  # A0 & !A1 & !R0 & !R1
-  # A0 & !A2 & !CI & !R0 & !R1
-  # A0 & !CI & !R0 & !R1 & !R2
-  # A0 & !A2 & !R0 & !R1 & !R2
-  # A0 & !A1 & !add
-  # A0 & !CI & !add
-  # A0 & !A2 & !add
-
-S0 =>
-    G1 & G2
-
-S1 =>
-    A1 & A2 & R1 & R2 & add
-  # A1 & A2 & CI & R1 & add
-  # A1 & CI & R1 & R2 & add
-  # !A1 & A2 & !R1 & R2 & add
-  # !A1 & A2 & CI & !R1
-  # !A1 & CI & !R1 & R2 & add
-  # !A1 & A2 & CI & !add
-  # !A1 & !A2 & !CI & R1 & add
-  # !A1 & !A2 & R1 & !R2 & add
-  # !A1 & !CI & R1 & !R2 & add
-  # A1 & !A2 & !CI & !R1
-  # A1 & !A2 & !R1 & !R2
-  # A1 & !CI & !R1 & !R2
-  # A1 & !CI & !add
-  # A1 & !A2 & !add
-
-S1 =>
-    G1 & G2
-
-S2 =>
-    A2 & CI & R2 & add
-  # !A2 & CI & !R2
-  # !A2 & CI & !add
-  # !A2 & !CI & R2 & add
-  # A2 & !CI & !R2
-  # A2 & !CI & !add
-
-S2 =>
-    G1 & G2
-
 !co =>
-    !CI & !R0 & !R1 & !R2
+    !A0 & !add
+  # !A1 & !add
+  # !CI & !R0 & !R1 & !R2
   # !A2 & !R0 & !R1 & !R2
-  # !A0 & !CI & !R1 & !R2
-  # !A0 & !A2 & !R1 & !R2
-  # !A1 & !CI & !R0 & !R2
-  # !A1 & !A2 & !R0 & !R2
   # !A2 & !CI & !R0 & !R1
-  # !A0 & !A1 & !CI & !R2
-  # !A0 & !A1 & !A2 & !R2
+  # !A0 & !CI & !R1 & !R2
+  # !A1 & !CI & !R0 & !R2
+  # !A0 & !A2 & !R1 & !R2
+  # !A1 & !A2 & !R0 & !R2
   # !A0 & !A2 & !CI & !R1
   # !A1 & !A2 & !CI & !R0
+  # !A0 & !A1 & !CI & !R2
+  # !A0 & !A1 & !A2 & !R2
   # !A0 & !A1 & !A2 & !CI
   # !A1 & !R0 & !R1
   # !A0 & !A1 & !R1
   # !CI & !add
   # !A2 & !add
-  # !A1 & !add
-  # !A0 & !add
   # !A0 & !R0
 
 co.oe  =>
+    G1 & G2
+
+!s0 =>
+    A0 & A1 & A2 & !R0 & !R1 & R2 & add
+  # A0 & A1 & CI & !R0 & !R1 & R2 & add
+  # A0 & CI & !R0 & R1 & R2 & add
+  # A0 & !A1 & A2 & CI & !R0 & R1 & !R2 & add
+  # !A0 & A1 & !A2 & CI & R0 & !R1 & R2
+  # !A0 & !A1 & A2 & R0 & R1 & R2
+  # !A0 & A1 & A2 & CI & R0 & !R2 & add
+  # !A0 & !A1 & A2 & CI & R0 & R1 & !R2
+  # A0 & !A1 & A2 & !R0 & R1 & R2 & add
+  # !A0 & A1 & A2 & R0 & !R1 & R2 & add
+  # A0 & A1 & A2 & CI & !R0 & !R1
+  # !A0 & !A1 & CI & R0 & R1 & R2
+  # A0 & !CI & R0 & !R1 & !R2 & add
+  # A0 & !A2 & R0 & !R1 & !R2 & add
+  # A0 & !A2 & !CI & R0 & !R1 & add
+  # A0 & !A1 & !CI & R0 & !R2 & add
+  # A0 & !A1 & !A2 & R0 & !R2 & add
+  # A0 & !A1 & !A2 & !CI & R0 & add
+  # A0 & A1 & !R0 & R1 & add
+  # !A0 & A1 & R0 & R1 & add
+  # A0 & A1 & A2 & CI & !add
+  # !A0 & !A1 & A2 & !add
+  # A0 & !A1 & R0 & !R1 & add
+  # !A0 & !CI & !R0 & !R1 & !R2
+  # !A0 & !A2 & !R0 & !R1 & !R2
+  # !A0 & !A2 & !CI & !R0 & !R1
+  # !A0 & !A1 & !CI & !R0 & !R2
+  # !A0 & !A1 & !A2 & !R0 & !R2
+  # !A0 & !A1 & !A2 & !CI & !R0
+  # !A0 & !A1 & !R0 & !R1
+  # !A0 & !CI & !add
+  # !A0 & !A2 & !add
+
+s0.oe  =>
+    G1 & G2
+
+!s1 =>
+    A1 & CI & !R1 & R2 & add
+  # !A1 & A2 & !CI & R1 & R2
+  # A1 & A2 & CI & !R1 & !R2
+  # !A1 & A2 & CI & R1 & !R2 & add
+  # !A1 & !A2 & !CI & !R1 & R2
+  # !A1 & !A2 & !R1 & !R2
+  # !A0 & A1 & A2 & CI & !add
+  # A1 & A2 & !R1 & R2 & add
+  # !A1 & CI & R1 & R2 & add
+  # A1 & !CI & R1 & !R2 & add
+  # A1 & !A2 & R1 & !R2 & add
+  # A1 & !A2 & !CI & R1 & add
+  # A0 & A1 & A2 & CI & !add
+  # !A1 & !CI & !R1 & !R2
+  # !A1 & !CI & !add
+  # !A1 & !A2 & !add
+
+s1.oe  =>
+    G1 & G2
+
+!s2 =>
+    !A1 & A2 & CI & !add
+  # !A0 & A1 & A2 & CI & !add
+  # A0 & A1 & A2 & CI & !add
+  # A2 & !CI & R2 & add
+  # !A2 & CI & R2 & add
+  # !A2 & !CI & !R2
+  # A2 & CI & !R2
+  # !A2 & !CI & !add
+
+s2.oe  =>
     G1 & G2
 
 
@@ -157,18 +160,15 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     R0                          2        V        -       -       -     
     R1                          3        V        -       -       -     
     R2                          4        V        -       -       -     
-    S0                          0        I        32      -       -     
-    S0                  oe      0        I        1       -       -     
-    S1                          0        I        15      -       -     
-    S1                  oe      0        I        1       -       -     
-    S2                          0        I        6       -       -     
-    S2                  oe      0        I        1       -       -     
     add                         15       V        -       -       -     
-    c0                          10       V        -       -       -     
-    c1                          11       V        -       -       -     
-    c2                          12       V        -       -       -     
     co                          9        V        19      0       4     
     co                  oe      9        X        1       0       1     
+    s0                          10       V        32      0       4     
+    s0                  oe      10       X        1       0       1     
+    s1                          11       V        16      0       4     
+    s1                  oe      11       X        1       0       1     
+    s2                          12       V        8       0       4     
+    s2                  oe      12       X        1       0       1     
 
 
 LEGEND    D : default variable         F : field      G : group
