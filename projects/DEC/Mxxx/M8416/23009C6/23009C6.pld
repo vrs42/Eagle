@@ -47,18 +47,18 @@ Pin 22 = !RBM;
 Pin 23 = !LBM;
 
 /* Outputs */
-Pin [10,11,12,13] = [A0..3]; /* E82 */
+Pin [10,11,12,13] = [a0..3]; /* E82 */
 Pin [15,16] = [d0..1]; /* E82 */
 Pin 17 = !lbm_or_rbm;
 
 /*
  * Drive the address to E82.
 */
-[A0..3] = [AC6..9];
+[a0..3] = [AC6..9];
 /*
  * Drive the data to E82.
 */
-[D0..1] = [AC10..11];
+[d0..1] = [AC10..11];
 /*
  * RD2 is set to "b" if this is RACB, otherwise cleared.
 */
@@ -69,4 +69,4 @@ lbm_or_rbm = BTS4 & (LBM # RBM);
  * ground in practice.
  * BUBBUG: This didn't need a PLA -- what am I missing?
 */
-[A0..3,D0..1].oe = CE;
+[a0..3,d0..1].oe = CE;

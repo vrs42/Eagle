@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          virtual  Library DLIB-h-40-1
-Created         Sat Mar 31 13:12:13 2018
+Created         Sun Apr 08 18:32:03 2018
 Name            23009C6
 Partno          E81 82S100
 Revision        1.0
@@ -19,40 +19,40 @@ Location        None
                             Expanded Product Terms
 ===============================================================================
 
-!A0 =>
+!a0 =>
     !AC6
 
-A0.oe  =>
+a0.oe  =>
     CE
 
-!A1 =>
+!a1 =>
     !AC7
 
-A1.oe  =>
+a1.oe  =>
     CE
 
-!A2 =>
+!a2 =>
     !AC8
 
-A2.oe  =>
+a2.oe  =>
     CE
 
-!A3 =>
+!a3 =>
     !AC9
 
-A3.oe  =>
+a3.oe  =>
     CE
 
-D0 =>
-    AC10
+!d0 =>
+    !AC10
 
-D0 =>
+d0.oe  =>
     CE
 
-D1 =>
-    AC11
+!d1 =>
+    !AC11
 
-D1 =>
+d1.oe  =>
     CE
 
 !lbm_or_rbm =>
@@ -68,14 +68,6 @@ Pin Variable                                    Pterms   Max     Min
 Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
 --- --------            ---     ---     ----    ------  ------  -----   
 
-    A0                          10       V        1       0       4     
-    A0                  oe      10       X        1       0       1     
-    A1                          11       V        1       0       4     
-    A1                  oe      11       X        1       0       1     
-    A2                          12       V        1       0       4     
-    A2                  oe      12       X        1       0       1     
-    A3                          13       V        1       0       4     
-    A3                  oe      13       X        1       0       1     
     AC0                         24       V        -       -       -     
     AC1                         25       V        -       -       -     
     AC2                         26       V        -       -       -     
@@ -90,14 +82,20 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     AC11                        9        V        -       -       -     
     BTS4                        21       V        -       -       -     
  !  CE                          19       V        -       -       -     
-    D0                          0        I        1       -       -     
-    D0                  oe      0        I        1       -       -     
-    D1                          0        I        1       -       -     
-    D1                  oe      0        I        1       -       -     
  !  LBM                         23       V        -       -       -     
  !  RBM                         22       V        -       -       -     
-    d0                          15       V        -       -       -     
-    d1                          16       V        -       -       -     
+    a0                          10       V        1       0       4     
+    a0                  oe      10       X        1       0       1     
+    a1                          11       V        1       0       4     
+    a1                  oe      11       X        1       0       1     
+    a2                          12       V        1       0       4     
+    a2                  oe      12       X        1       0       1     
+    a3                          13       V        1       0       4     
+    a3                  oe      13       X        1       0       1     
+    d0                          15       V        1       0       4     
+    d0                  oe      15       X        1       0       1     
+    d1                          16       V        1       0       4     
+    d1                  oe      16       X        1       0       1     
  !  lbm_or_rbm                  17       V        2       0       4     
 
 

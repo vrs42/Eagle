@@ -1,7 +1,7 @@
 #$ TOOL CUPL
 # Berkeley PLA format generated using CUPL(WM) 5.0a
 # Serial#  60008009
-# Created  Sat Mar 31 13:12:13 2018
+# Created  Sun Apr 08 18:32:03 2018
 #
 #    Name        23009C6
 #    Partno      E81 82S100
@@ -20,19 +20,21 @@
 #$ MODULE  23009C6
 #$ JEDECFILE  23009C6
 #$ DEVICE  virtual
-#$ PINS  23 A0+:10 A1+:11 A2+:12 A3+:13 AC0+:24 AC1+:25 AC2+:26 AC3+:27 AC4+:2 AC5+:3 AC6+:4 AC7+:5 AC8+:6 AC9+:7 AC10+:8 AC11+:9 BTS4+:21 CE+:19 LBM+:23 RBM+:22 d0+:15 d1+:16 lbm_or_rbm+:17 
-.i 8
-.o 9
+#$ PINS  23 AC0+:24 AC1+:25 AC2+:26 AC3+:27 AC4+:2 AC5+:3 AC6+:4 AC7+:5 AC8+:6 AC9+:7 AC10+:8 AC11+:9 BTS4+:21 CE+:19 LBM+:23 RBM+:22 a0+:10 a1+:11 a2+:12 a3+:13 d0+:15 d1+:16 lbm_or_rbm+:17 
+.i 10
+.o 13
 .type f
-.ilb  AC6 AC7 AC8 AC9 BTS4 CE LBM RBM 
-.ob   A0- A0.OE A1- A1.OE A2- A2.OE A3- A3.OE lbm_or_rbm 
-.phase 111111111
-.p 7
-0------- 100000000
------0-- 010101010
--0------ 001000000
---0----- 000010000
----0---- 000000100
-------11 000000001
-----0--- 000000001
+.ilb  AC6 AC7 AC8 AC9 AC10 AC11 BTS4 CE LBM RBM 
+.ob   a0- a0.OE a1- a1.OE a2- a2.OE a3- a3.OE d0- d0.OE d1- d1.OE lbm_or_rbm 
+.phase 1111111111111
+.p 9
+0--------- 1000000000000
+-------0-- 0101010101010
+-0-------- 0010000000000
+--0------- 0000100000000
+---0------ 0000001000000
+----0----- 0000000010000
+-----0---- 0000000000100
+--------11 0000000000001
+------0--- 0000000000001
 .e
