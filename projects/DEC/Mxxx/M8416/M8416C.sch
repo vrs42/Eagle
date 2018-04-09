@@ -2767,10 +2767,10 @@ grid 20.3 mm, outline 5.4 x 22.9 mm</description>
 <pin name="A1" x="-12.7" y="0" length="middle" direction="in"/>
 <pin name="A2" x="-12.7" y="-2.54" length="middle" direction="in"/>
 <pin name="A3" x="-12.7" y="-5.08" length="middle" direction="in"/>
-<pin name="D0" x="-12.7" y="15.24" length="middle" direction="in" function="dot"/>
-<pin name="D1" x="-12.7" y="12.7" length="middle" direction="in" function="dot"/>
-<pin name="D2" x="-12.7" y="10.16" length="middle" direction="in" function="dot"/>
-<pin name="D3" x="-12.7" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="D0" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="D3" x="-12.7" y="7.62" length="middle" direction="in"/>
 <pin name="WE" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
 <wire x1="-7.62" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-15.24" x2="10.16" y2="17.78" width="0.254" layer="94"/>
