@@ -1,0 +1,2473 @@
+Pinlist
+
+Exported from M8416P.sch at 4/8/2018 6:18:05 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C1       +        +          pas      VCC
+         -        -          pas      GND
+
+C2       1        1          pas      VCC
+         2        2          pas      GND
+
+C3       1        1          pas      VCC
+         2        2          pas      GND
+
+C4       1        1          pas      VCC
+         2        2          pas      GND
+
+C5       1        1          pas      VCC
+         2        2          pas      GND
+
+C6       1        1          pas      VCC
+         2        2          pas      GND
+
+C7       1        1          pas      VCC
+         2        2          pas      GND
+
+C8       +        +          pas      VCC
+         -        -          pas      GND
+
+C9       1        1          pas      VCC
+         2        2          pas      GND
+
+C10      1        1          pas      VCC
+         2        2          pas      GND
+
+C11      1        1          pas      VCC
+         2        2          pas      GND
+
+C12      1        1          pas      N$33
+         2        2          pas      N$34
+
+C13      1        1          pas      VCC
+         2        2          pas      GND
+
+C14      +        +          pas      VCC
+         -        -          pas      GND
+
+C15      1        1          pas      VCC
+         2        2          pas      GND
+
+C16      +        +          pas      VCC
+         -        -          pas      GND
+
+C17      1        1          pas      VCC
+         2        2          pas      GND
+
+C18      1        1          pas      VCC
+         2        2          pas      GND
+
+C20      1        1          pas      VCC
+         2        2          pas      GND
+
+C21      1        1          pas      VCC
+         2        2          pas      GND
+
+C22      1        1          pas      VCC
+         2        2          pas      GND
+
+C23      1        1          pas      VCC
+         2        2          pas      GND
+
+C24      +        +          pas      VCC
+         -        -          pas      GND
+
+C25      1        1          pas      VCC
+         2        2          pas      GND
+
+C26      1        1          pas      VCC
+         2        2          pas      GND
+
+C27      1        1          pas      VCC
+         2        2          pas      GND
+
+C28      1        1          pas      VCC
+         2        2          pas      GND
+
+C29      1        1          pas      VCC
+         2        2          pas      GND
+
+C31      1        1          pas      VCC
+         2        2          pas      GND
+
+C32      1        1          pas      VCC
+         2        2          pas      GND
+
+C33      1        1          pas      VCC
+         2        2          pas      GND
+
+C34      1        1          pas      VCC
+         2        2          pas      GND
+
+C35      1        1          pas      VCC
+         2        2          pas      GND
+
+C36      1        1          pas      VCC
+         2        2          pas      GND
+
+D1       A        A          pas      N$34
+         C        C          pas      !PAUSE
+
+E1       1        M          in       !P2_ELAR
+         2        N          in       !P2_ELAR
+         3        Q1         hiz               *** unconnected ***
+         4        Q2         hiz      !EMA2
+         5        Q3         hiz      !EMA1
+         6        Q4         hiz      !EMA0
+         7        CLK        in       P4_PLXA
+         8        GND        pwr      GND
+         9        G1         in       GND
+         10       G2         in       GND
+         11       D4         in       N$43
+         12       D3         in       N$44
+         13       D2         in       N$45
+         14       D1         in                *** unconnected ***
+         15       CLR        in       P4_PCLR
+         16       VCC        pwr      VCC
+
+E2       1        I          in       P3_BD6
+         2        O          out      N$43
+         3        I          in       P3_BD7
+         4        O          out      N$44
+         5        I          in       P3_BD8
+         6        O          out      N$45
+         7        GND        pwr      GND
+         8        O          out      N$95
+         9        I          in       N$96
+         10       O          out               *** unconnected ***
+         11       I          in                *** unconnected ***
+         12       O          out               *** unconnected ***
+         13       I          in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E3       1        GND        pwr      GND
+         2        O          out      P4_INT_IN_PROG
+         3        O          out      N$108
+         4        I0         in       MAMS_LD_CTL
+         5        I1         in       GND
+         6        I0         in       GND
+         7        I1         in       !INT_IN_PROG
+         8        VCC        pwr      VCC
+         9        I0         in                *** unconnected ***
+         10       I1         in                *** unconnected ***
+         11       I0         in       GND
+         12       I1         in       !LINK
+         13       O          out      N$26
+         14       O          out               *** unconnected ***
+
+E4       1        O          oc                *** unconnected ***
+         2        I0         in                *** unconnected ***
+         3        I1         in                *** unconnected ***
+         4        O          oc       !P4_INT_IN_PROG
+         5        I0         in       P4_INT_IN
+         6        I1         in       !P4_FATAL
+         7        GND        pwr      GND
+         8        I0         in       N$26
+         9        I1         in       N$27
+         10       O          oc       !RD0
+         11       I0         in       P3_MBK
+         12       I1         in       P3_MBK
+         13       O          oc       !BREAK_IN_PROG
+         14       VCC        pwr      VCC
+
+E5       1        I          in       !RD0
+         2        O          out      N$85
+         3        I          in       !RD1
+         4        O          out      N$84
+         5        I          in       !RD2
+         6        O          out      N$83
+         7        GND        pwr      GND
+         8        O          out      N$82
+         9        I          in       !RD3
+         10       O          out      !P3_BM0
+         11       I          in       P3_BM0
+         12       O          out      !P3_BM2
+         13       I          in       P3_BM2
+         14       VCC        pwr      VCC
+
+E6       1        I0         in       P3_BTP3
+         2        I1         in       N$86
+         3        O          out      N$68
+         4        I0         in                *** unconnected ***
+         5        I1         in                *** unconnected ***
+         6        O          out               *** unconnected ***
+         7        GND        pwr      GND
+         8        O          out      !MBCT4
+         9        I0         in       P3_MBK
+         10       I1         in       P3_BTS4
+         11       O          out      N$27
+         12       I0         in       !P4_GTF
+         13       I1         in       !P4_GTS
+         14       VCC        pwr      VCC
+
+E7       1        I          in       !RD4
+         2        O          out      N$81
+         3        I          in       !RD5
+         4        O          out      N$80
+         5        I          in       !RD6
+         6        O          out      N$78
+         7        GND        pwr      GND
+         8        O          out      N$79
+         9        I          in       !RD7
+         10       O          out      !P3_BM3
+         11       I          in       P3_BM3
+         12       O          out      !P3_BM4
+         13       I          in       P3_BM4
+         14       VCC        pwr      VCC
+
+E8       1        O          oc       !USER_MODE
+         2        I0         in       P3_BM2
+         3        I1         in       P6_USM
+         4        O          oc       !USER_MODE
+         5        I0         in       N$179
+         6        I1         in       P6_USM
+         7        GND        pwr      GND
+         8        I0         in       N$168
+         9        I1         in       P2_SUF_OUT
+         10       O          oc       !RD5
+         11       I0         in       N$132
+         12       I1         in       N$131
+         13       O          oc       !RD3
+         14       VCC        pwr      VCC
+
+E9       1        I0         in       !P4_RACA
+         2        I1         in       !P4_RACB
+         4        I2         in       !P4_RACC
+         5        I3         in       !MBCT4
+         6        O          out      N$65
+         7        GND        pwr      GND
+         8        O          out               *** unconnected ***
+         9        I0         in                *** unconnected ***
+         10       I1         in                *** unconnected ***
+         12       I2         in                *** unconnected ***
+         13       I3         in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E10      1        1          pas               *** unconnected ***
+         2        2          pas               *** unconnected ***
+         3        3          pas               *** unconnected ***
+         4        4          pas               *** unconnected ***
+         5        5          pas               *** unconnected ***
+         6        6          pas               *** unconnected ***
+         7        7          pas               *** unconnected ***
+         8        8          pas               *** unconnected ***
+         9        9          pas               *** unconnected ***
+         10       10         pas               *** unconnected ***
+         11       11         pas               *** unconnected ***
+         12       12         pas               *** unconnected ***
+         13       13         pas               *** unconnected ***
+         14       14         pas               *** unconnected ***
+         15       15         pas               *** unconnected ***
+         16       16         pas               *** unconnected ***
+
+E11      1        GND        pwr      GND
+         2        O          out      P3_BM0
+         3        O          out      P3_BM1
+         4        I0         in       !MD01
+         5        I1         in       GND
+         6        I0         in       GND
+         7        I1         in       !MD00
+         8        VCC        pwr      VCC
+         9        I0         in       GND
+         10       I1         in       !MD03
+         11       I0         in       !MD02
+         12       I1         in       GND
+         13       O          out      P3_BM2
+         14       O          out      P3_BM3
+
+E12      1        B2         io       !DATA01
+         2        O2         in       N$84
+         3        I2         out      P3_BD1
+         4        B3         io       !DATA00
+         5        O3         in       N$85
+         6        I3         out      P3_BD0
+         7        D0         in       N$77
+         8        GND        pwr      GND
+         9        D1         in       N$77
+         10       I1         out      P3_BD2
+         11       O1         in       N$83
+         12       B1         io       !DATA02
+         13       I0         out      P3_BD3
+         14       O0         in       N$82
+         15       B0         io       !DATA03
+         16       VCC        pwr      VCC
+
+E13      1        B2         io       !DATA05
+         2        O2         in       N$80
+         3        I2         out      P3_BD5
+         4        B3         io       !DATA04
+         5        O3         in       N$81
+         6        I3         out      P3_BD4
+         7        D0         in       N$77
+         8        GND        pwr      GND
+         9        D1         in       N$77
+         10       I1         out      P3_BD6
+         11       O1         in       N$78
+         12       B1         io       !DATA06
+         13       I0         out      P3_BD7
+         14       O0         in       N$79
+         15       B0         io       !DATA07
+         16       VCC        pwr      VCC
+
+E14      2        I7         in       P3_BM9
+         3        I6         in       P3_BM10
+         4        I5         in       P3_BM11
+         5        I4         in       P3_BPAUSE
+         6        I3         in       P6_RVFEN
+         7        I2         in       P6_EEM
+         8        I1         in       P6_USM
+         9        I0         in       P6_DIOI
+         10       O7         hiz      P3_INIOEN
+         11       O6         hiz      !P3_DECEN
+         12       O5         hiz      !P3_CFROM
+         13       O4         hiz      !P3_C17EN
+         14       GND        pwr      GND
+         15       O3         hiz      !P3_HOS
+         16       O2         hiz      N$74
+         17       O1         hiz      N$73
+         18       O0         hiz      N$72
+         19       !CE        in       GND
+         20       I15        in       N$69
+         21       I14        in       P3_BM2
+         22       I13        in       P3_BM3
+         23       I12        in       P3_BM4
+         24       I11        in       P3_BM5
+         25       I10        in       P3_BM6
+         26       I9         in       P3_BM7
+         27       I8         in       P3_BM8
+         28       VCC        pwr      VCC
+
+E15      1        CLR        in       !P3_BINIT
+         2        Q1         out      N$58
+         3        D1         in       P3_BD6
+         4        D2         in       P3_BD7
+         5        Q2         out      N$59
+         6        D3         in       P3_BD8
+         7        Q3         out      N$60
+         8        GND        pwr      GND
+         9        CLK        in       P3_BTP2
+         10       Q4         out      N$61
+         11       D4         in       P3_BD9
+         12       Q5         out      N$62
+         13       D5         in       P3_BD10
+         14       D6         in       P3_BD11
+         15       Q6         out      N$63
+         16       VCC        pwr      VCC
+
+E16      2        I7         in       N$60
+         3        I6         in       N$61
+         4        I5         in       N$62
+         5        I4         in       N$63
+         6        I3         in       !MBCT4
+         7        I2         in       !P4_RACA
+         8        I1         in       !P4_RACB
+         9        I0         in       !P4_RACC
+         10       O7         hiz      !RD0
+         11       O6         hiz      !RD1
+         12       O5         hiz      !RD2
+         13       O4         hiz      !RD5
+         14       GND        pwr      GND
+         15       O3         hiz      !RD6
+         16       O2         hiz      !RD7
+         17       O1         hiz      !RD8
+         18       O0         hiz      !RD9
+         19       !CE        in       N$64
+         20       I15        in       N$51
+         21       I14        in       N$52
+         22       I13        in       N$53
+         23       I12        in       N$54
+         24       I11        in       N$55
+         25       I10        in       N$57
+         26       I9         in       N$58
+         27       I8         in       N$59
+         28       VCC        pwr      VCC
+
+E17      1        CLR        in       !P3_BINIT
+         2        Q1         out      N$51
+         3        D1         in       P3_BD0
+         4        D2         in       P3_BD1
+         5        Q2         out      N$52
+         6        D3         in       P3_BD2
+         7        Q3         out      N$53
+         8        GND        pwr      GND
+         9        CLK        in       P3_BTP2
+         10       Q4         out      N$54
+         11       D4         in       P3_BD3
+         12       Q5         out      N$55
+         13       D5         in       P3_BD4
+         14       D6         in       P3_BD5
+         15       Q6         out      N$57
+         16       VCC        pwr      VCC
+
+E18      1        I0         in       P3_BTP3
+         2        I1         in       P4_NEW_FLD
+         3        O          out      N$135
+         4        I0         in       P3_BTP3
+         5        I1         in       N$138
+         6        O          out      N$136
+         7        GND        pwr      GND
+         8        O          out      N$98
+         9        I0         in       P6_MAINT
+         10       I1         in       P4_NEW_FLD
+         11       O          out      N$131
+         12       I0         in       !P4_GTF
+         13       I1         in       !P4_GTF
+         14       VCC        pwr      VCC
+
+E19      1        O          oc       !MSIRDIS
+         2        I0         in       P3_MBK
+         3        I1         in       P3_MBK
+         4        O          oc       !CPMA_DISABLE
+         5        I0         in       P3_MBK
+         6        I1         in       P3_MBK
+         7        GND        pwr      GND
+         8        I0         in       N$73
+         9        I1         in       N$73
+         10       O          oc       !C1
+         11       I0         in       N$74
+         12       I1         in       N$74
+         13       O          oc       !C0
+         14       VCC        pwr      VCC
+
+E20      1        O          oc       N$77
+         2        I0         in       P3_BTS4
+         3        I1         in       P3_MBK
+         4        O          oc       N$77
+         5        I0         in       P4_BTS1
+         6        I1         in       P6_BIND2
+         7        GND        pwr      GND
+         8        I0         in                *** unconnected ***
+         9        I1         in                *** unconnected ***
+         10       O          oc                *** unconnected ***
+         11       I0         in       N$72
+         12       I1         in       P3_BTS3
+         13       O          oc       N$77
+         14       VCC        pwr      VCC
+
+E21      1        I0         in       P3_BM1
+         2        I1         in       P3_BF
+         3        I0         in                *** unconnected ***
+         4        I1         in                *** unconnected ***
+         5        I2         in                *** unconnected ***
+         6        O          out               *** unconnected ***
+         7        GND        pwr      GND
+         8        O          out      N$89
+         9        I0         in       P3_BM6
+         10       I1         in       P3_BM7
+         11       I2         in       P3_BM8
+         12       O          out      N$69
+         13       I2         in       P3_BM0
+         14       VCC        pwr      VCC
+
+E22      1        I          in       P3_BTP2
+         2        O          out      !P3_BTP2
+         3        I          in       P3_BINIT
+         4        O          out      !P3_BINIT
+         5        I          in       !P4_MBC
+         6        O          out      N$86
+         7        GND        pwr      GND
+         8        O          out      N$64
+         9        I          in       N$65
+         10       O          out      N$138
+         11       I          in       !P4_CUF
+         12       O          out      N$94
+         13       I          in       !P4_SINT
+         14       VCC        pwr      VCC
+
+E23      1        !A!/B      in       !P4_RACA
+         2        1A         in       N$57
+         3        1B         in       N$54
+         4        1Y         hiz      !RD3
+         5        2A         in       N$61
+         6        2B         in       N$55
+         7        2Y         hiz      !RD4
+         8        GND        pwr      GND
+         9        3Y         hiz      !RD10
+         10       3B         in       N$62
+         11       3A         in       N$59
+         12       4Y         hiz      !RD11
+         13       4B         in       N$63
+         14       4A         in       N$60
+         15       G          in       N$66
+         16       VCC        pwr      VCC
+
+E24      1        I0         in       N$32
+         2        I1         in       !P3_HOS
+         3        I0         in       N$102
+         4        I1         in       !P4_USINT
+         5        I2         in       N$98
+         6        O          out      N$97
+         7        GND        pwr      GND
+         8        O          out      N$128
+         9        I0         in       !P4_LXM
+         10       I1         in       N$126
+         11       I2         in       !P4_LET_IO
+         12       O          out      N$103
+         13       I2         in       N$92
+         14       VCC        pwr      VCC
+
+E25      1        GND        pwr      GND
+         2        O          out      P3_BM4
+         3        O          out      P3_BM5
+         4        I0         in       !MD05
+         5        I1         in       GND
+         6        I0         in       GND
+         7        I1         in       !MD04
+         8        VCC        pwr      VCC
+         9        I0         in       GND
+         10       I1         in       !MD07
+         11       I0         in       !MD06
+         12       I1         in       GND
+         13       O          out      P3_BM6
+         14       O          out      P3_BM7
+
+E26      1        !1Q        out               *** unconnected ***
+         2        1D         in       N$88
+         3        2D         in       P3_BTS4
+         4        1C,2C      in       P3_BTS3
+         5        +UB        pwr      VCC
+         6        1D         in                *** unconnected ***
+         7        2D         in       N$130
+         8        !2Q        out      !P4_BLBM
+         9        2Q         out               *** unconnected ***
+         10       1Q         out               *** unconnected ***
+         11       !1Q        out               *** unconnected ***
+         12       -UB        pwr      GND
+         13       1C,2C      in       !P3_BTP3
+         14       !2Q        out               *** unconnected ***
+         15       2Q         out      !P3_E2CFROM
+         16       1Q         out      P3_BPAUSE
+
+E27      1        I0         in       TP4
+         2        I1         in       TP4
+         3        I0         in       !P6_DIOI
+         4        I1         in       !P6_DIOI
+         5        I2         in       !P1_ENRF
+         6        O          out      N$179
+         7        GND        pwr      GND
+         8        O          out      N$5
+         9        I0         in       P3_BTP2
+         10       I1         in       !P3_BINIT
+         11       I2         in       !P3_BINIT
+         12       O          out      P3_BTP4
+         13       I2         in       TP4
+         14       VCC        pwr      VCC
+
+E28      1        A6         in       P6_EN5
+         2        A5         in       P6_EN9
+         3        A4         in       P3_BM4
+         4        A3         in       P3_BM5
+         5        A0         in       P3_BM11
+         6        A1         in       P3_BM10
+         7        A2         in       P3_BM9
+         8        GND        pwr      GND
+         9        O3         hiz      !P4_CDF
+         10       O2         hiz      !P4_CIF
+         11       O1         hiz      N$29
+         12       O0         hiz      !P4_LET_IO
+         13       !G1        in       !P3_CFROM
+         14       !G2        in       !P3_E2CFROM
+         15       A7         in       N$89
+         16       VCC        pwr      VCC
+
+E29      1        O          out      N$124
+         2        I0         in       !P3_BM0
+         3        I1         in       P3_BM1
+         4        O          out      P4_INT
+         5        I0         in       P4_INT_IN_PROG
+         6        I1         in       N$108
+         7        GND        pwr      GND
+         8        I0         in       P3_BTP3
+         9        I1         in       !P4_LBM
+         10       O          out      N$130
+         11       I0         in       !P3_BTP3
+         12       I1         in       !P4_LUSR
+         13       O          out      N$1
+         14       VCC        pwr      VCC
+
+E30      1        I0         in       P3_BM0
+         2        I1         in       P3_BM1
+         3        I2         in       !P3_BM2
+         4        I3         in       !P6_DIOI
+         5        I4         in       !P4_LET_IO
+         6        I5         in       !P4_LET_IO
+         7        GND        pwr      GND
+         8        O          out      N$32
+         9        P          pas               ***   unused    ***
+         10       P          pas               ***   unused    ***
+         11       I6         in       P3_BF
+         12       I7         in       P6_USM
+         13       P          pas               ***   unused    ***
+         14       VCC        pwr      VCC
+
+E31      1        0          out               *** unconnected ***
+         2        1          out      !P4_GTS
+         3        2          out      !P4_RTS
+         4        3          out      !P4_RXM
+         5        4          out      !P4_LRR
+         6        5          out      !P4_RRR
+         7        6          out      !P4_LUSR
+         8        7          out      !P4_RUSR
+         9        8          out      !P4_CINT
+         10       9          out      !P4_RDF
+         11       10         out      !P4_RIF
+         12       GND        pwr      GND
+         13       11         out      !P4_RIB
+         14       12         out      !P4_RMF
+         15       13         out      !P4_SINT
+         16       14         out      !P4_CUF
+         17       15         out      !P4_SUF
+         18       G1         in       !P3_DECEN
+         19       G2         in       N$100
+         20       D          in       P3_BM9
+         21       C          in       P3_BM6
+         22       B          in       P3_BM7
+         23       A          in       P3_BM8
+         24       VCC        pwr      VCC
+
+E32      1        CLR        in       !P4_FATAL
+         2        D          in                *** unconnected ***
+         3        CLK        in       GND
+         4        PRE        in       P4_USINT
+         5        Q          out      P4_FATAL(0)
+         6        !Q         out      N$132
+         7        GND        pwr      GND
+         8        !Q         out      P4_USINT
+         9        Q          out      !P4_USINT
+         10       PRE        in       !P3_BINIT
+         11       CLK        in       P3_BTP3
+         12       D          in       N$95
+         13       CLR        in       N$90
+         14       VCC        pwr      VCC
+
+E33      1        I0         in       !P4_RACA
+         2        I1         in       !MBCT4
+         3        O          out      N$66
+         4        I0         in       N$97
+         5        I1         in       !P4_CINT
+         6        O          out      N$96
+         7        GND        pwr      GND
+         8        O          out      !P4_CUMB
+         9        I0         in       N$134
+         10       I1         in       N$136
+         11       O          out      !P1_ENRF
+         12       I0         in       !P4_RIF
+         13       I1         in       !P4_RDF
+         14       VCC        pwr      VCC
+
+E34      1        O0         out      !P4_LBM
+         2        O1         out      !P4_RBM
+         3        O2         out      !P4_RLB
+         4        O3         out      !P4_RMR
+         5        O4         out      !P4_MBC
+         6        O5         out      !P4_RACA
+         7        O6         out      !P4_RACB
+         8        GND        pwr      GND
+         9        O7         out      !P4_RACC
+         10       O8         out               *** unconnected ***
+         11       O9         out               *** unconnected ***
+         12       D          in       !P3_C17EN
+         13       C          in       P3_BM9
+         14       B          in       P3_BM10
+         15       A          in       P3_BM11
+         16       VCC        pwr      VCC
+
+E35      1        CLR        in       !P2_RST
+         2        Q1         out      P6_RVFEN
+         3        !Q1        out      !P6_RVFEN
+         4        D1         in       P3_BD3
+         5        D2         in       P3_BD2
+         6        !Q2        out      !P6_EN9
+         7        Q2         out      P6_EN9
+         8        GND        pwr      GND
+         9        CLK        in       N$164
+         10       Q3         out      P6_EN5
+         11       !Q3        out      !P6_EN5
+         12       D3         in       P3_BD1
+         13       D4         in       P3_BD0
+         14       !Q4        out      !P6_EEM
+         15       Q4         out      P6_EEM
+         16       VCC        pwr      VCC
+
+E36      1        I0         in       P3_BM4
+         2        I1         in       !P3_BM9
+         4        I2         in       !P3_BM11
+         5        I3         in       P3_INIOEN
+         6        O          out      !P4_LXM
+         7        GND        pwr      GND
+         8        O          out      !P4_RTF
+         9        I0         in       !P3_BM4
+         10       I1         in       P3_BM9
+         12       I2         in       P3_BM11
+         13       I3         in       P3_INIOEN
+         14       VCC        pwr      VCC
+
+E37      1        1G         in       !P4_RXM
+         2        1A1        in       !P6_MAINT
+         3        1Y1        hiz      !RD6
+         4        1A2        in       !P6_EBM
+         5        1Y2        hiz      !RD5
+         6        1A3        in       !P6_DIOI
+         7        1Y3        hiz      !RD4
+         8        GND        pwr      GND
+         9        1Y4        hiz      !RD3
+         10       1A4        in       !P6_RVFEN
+         11       2Y1        hiz      !RD2
+         12       2A1        in       !P6_EN9
+         13       2Y2        hiz      !RD1
+         14       2A2        in       !P6_EN5
+         15       2G         in       !P4_RXM
+         16       VCC        pwr      VCC
+
+E38      1        I0         in       !P3_BTP3
+         2        I1         in       !P3_BTP3
+         3        O          out      P3_BTP3
+         4        I0         in       P4_USINT
+         5        I1         in       P4_INT_IN
+         6        O          out      !P4_FATAL
+         7        GND        pwr      GND
+         8        O          out      N$3
+         9        I0         in       !P4_RTF
+         10       I1         in       !P4_RTS
+         11       O          out      !P2_RSB
+         12       I0         in       !P4_GTF
+         13       I1         in       P2_SUF_OUT
+         14       VCC        pwr      VCC
+
+E39      1        I          in       !P4_RMF
+         2        O          out      N$170
+         3        I          in       !P4_SUF
+         4        O          out      N$171
+         5        I          in       N$103
+         6        O          out      N$102
+         7        GND        pwr      GND
+         8        O          out      N$126
+         9        I          in       N$101
+         10       O          out      N$148
+         11       I          in       P4_LXA
+         12       O          out      P1_OVER
+         13       I          in       N$13
+         14       VCC        pwr      VCC
+
+E40      1        1          pas               *** unconnected ***
+         2        2          pas               *** unconnected ***
+         3        3          pas               *** unconnected ***
+         4        4          pas               *** unconnected ***
+         5        5          pas               *** unconnected ***
+         6        6          pas               *** unconnected ***
+         7        7          pas               *** unconnected ***
+         8        8          pas               *** unconnected ***
+         9        9          pas               *** unconnected ***
+         10       10         pas               *** unconnected ***
+         11       11         pas               *** unconnected ***
+         12       12         pas               *** unconnected ***
+         13       13         pas               *** unconnected ***
+         14       14         pas               *** unconnected ***
+         15       15         pas               *** unconnected ***
+         16       16         pas               *** unconnected ***
+
+E41      1        GND        pwr      GND
+         2        O          out      N$28
+         3        O          out      N$88
+         4        I0         in       !PAUSE
+         5        I1         in       GND
+         6        I0         in       GND
+         7        I1         in       !LA_EN
+         8        VCC        pwr      VCC
+         9        I0         in       !POWER_OK
+         10       I1         in       !TS1
+         11       I0         in       !TS1
+         12       I1         in       N$28
+         13       O          out      P4_BTS1
+         14       O          out      N$31
+
+E42      1        O          oc       !INT_RQST
+         2        I0         in       N$103
+         3        I1         in       N$103
+         4        O          oc       !SKIP
+         5        I0         in       P4_USINT
+         6        I1         in       N$94
+         7        GND        pwr      GND
+         8        I0         in       N$128
+         9        I1         in       N$128
+         10       O          oc       INTERNAL_IO
+         11       I0         in       P4_USINT
+         12       I1         in       P4_USINT
+         13       O          oc       !INT_RQST
+         14       VCC        pwr      VCC
+
+E43      1        I0         in       !P3_BM11
+         2        I1         in       !P3_BM4
+         4        I2         in       P3_BM9
+         5        I3         in       P3_INIOEN
+         6        O          out      !P4_GTF
+         7        GND        pwr      GND
+         8        O          out               *** unconnected ***
+         9        I0         in                *** unconnected ***
+         10       I1         in                *** unconnected ***
+         12       I2         in                *** unconnected ***
+         13       I3         in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E44      1        I          in       !RD8
+         2        O          out      N$71
+         3        I          in       !RD9
+         4        O          out      N$75
+         5        I          in       !RD10
+         6        O          out      N$76
+         7        GND        pwr      GND
+         8        O          out      N$70
+         9        I          in       !RD11
+         10       O          out      !P3_BM9
+         11       I          in       P3_BM9
+         12       O          out      !P3_BM11
+         13       I          in       P3_BM11
+         14       VCC        pwr      VCC
+
+E45      1        B2         io       !DATA09
+         2        O2         in       N$75
+         3        I2         out      P3_BD9
+         4        B3         io       !DATA08
+         5        O3         in       N$71
+         6        I3         out      P3_BD8
+         7        D0         in       N$77
+         8        GND        pwr      GND
+         9        D1         in       N$77
+         10       I1         out      P3_BD10
+         11       O1         in       N$76
+         12       B1         io       !DATA10
+         13       I0         out      P3_BD11
+         14       O0         in       N$70
+         15       B0         io       !DATA11
+         16       VCC        pwr      VCC
+
+E46      1        CLR        in       !P2_RST
+         2        Q1         out               *** unconnected ***
+         3        !Q1        out               *** unconnected ***
+         4        D1         in                *** unconnected ***
+         5        D2         in       P3_BD6
+         6        !Q2        out      !P6_MAINT
+         7        Q2         out               *** unconnected ***
+         8        GND        pwr      GND
+         9        CLK        in       N$164
+         10       Q3         out      P6_EBM
+         11       !Q3        out      !P6_EBM
+         12       D3         in       P3_BD5
+         13       D4         in       P3_BD4
+         14       !Q4        out      !P6_DIOI
+         15       Q4         out      P6_DIOI
+         16       VCC        pwr      VCC
+
+E47      1        O          out      N$101
+         2        I0         in       !P3_DECEN
+         3        I1         in       N$100
+         4        O          out      N$100
+         5        I0         in       P3_BM9
+         6        I1         in       N$99
+         7        GND        pwr      GND
+         8        I0         in       P6_EEM
+         9        I1         in       P3_BM9
+         10       O          out      N$99
+         11       I0         in       !P3_BTP3
+         12       I1         in       !P4_LRR
+         13       O          out      N$15
+         14       VCC        pwr      VCC
+
+E48      1        O          out      P6_MAINT
+         2        I0         in       !P6_MAINT
+         3        I1         in       !P4_INT_INH
+         4        O          out      N$164
+         5        I0         in       !P4_LXM
+         6        I1         in       !P3_BTP3
+         7        GND        pwr      GND
+         8        I0         in       N$12
+         9        I1         in       N$8
+         10       O          out      N$13
+         11       I0         in       P4_LXA
+         12       I1         in       N$3
+         13       O          out      N$2
+         14       VCC        pwr      VCC
+
+E49      1        I0         in       N$110
+         2        I1         in       !P4_PCLR
+         3        I0         in       N$124
+         4        I1         in       P3_BF
+         5        I2         in       !P3_BM3
+         6        O          out      N$113
+         7        GND        pwr      GND
+         8        O          out      N$92
+         9        I0         in       P6_USM
+         10       I1         in       N$93
+         11       I2         in       P1_OVER
+         12       O          out      N$112
+         13       I2         in       !P4_PLXA
+         14       VCC        pwr      VCC
+
+E50      1        I0         in       N$168
+         2        I1         in       N$170
+         3        O          out      N$172
+         4        I0         in       N$172
+         5        I1         in       N$173
+         6        O          out      N$174
+         7        GND        pwr      GND
+         8        O          out      N$173
+         9        I0         in       !P4_RMF
+         10       I1         in       P3_BD5
+         11       O          out      N$175
+         12       I0         in       P3_BTP3
+         13       I1         in       N$171
+         14       VCC        pwr      VCC
+
+E51      1        GND        pwr      GND
+         2        O          out      !P3_BTP3
+         3        O          out      P3_BTS4
+         4        I0         in       !TS4
+         5        I1         in       GND
+         6        I0         in       GND
+         7        I1         in       TP3
+         8        VCC        pwr      VCC
+         9        I0         in       !KEY_CONTROL
+         10       I1         in       !LA_EN
+         11       I0         in       GND
+         12       I1         in       !TS3
+         13       O          out      P3_BTS3
+         14       O          out      P4_LXA
+
+E52      1        GND        pwr      GND
+         2        O          out      N$47
+         3        O          out      N$46
+         4        I0         in       !EMA2
+         5        I1         in       GND
+         6        I0         in       !EMA1
+         7        I1         in       GND
+         8        VCC        pwr      VCC
+         9        I0         in       !EMA0
+         10       I1         in       GND
+         11       I0         in       GND
+         12       I1         in       !CPMA_DISABLE
+         13       O          out      !P2_BCPMAD
+         14       O          out      N$48
+
+E53      1        GND        pwr      GND
+         2        O          out      P3_BTP1
+         3        O          out      P3_BPLA
+         4        I0         in       GND
+         5        I1         in       PULSE_LA
+         6        I0         in       GND
+         7        I1         in       TP1
+         8        VCC        pwr      VCC
+         9        I0         in       GND
+         10       I1         in       TP2
+         11       I0         in       INITIALIZE
+         12       I1         in       GND
+         13       O          out      P3_BINIT
+         14       O          out      P3_BTP2
+
+E54      1        I0         in       !P5_DBS
+         2        I1         in       !P5_BMEN
+         3        O          out      N$178
+         4        I0         in       N$178
+         5        I1         in       P3_BTP4
+         6        O          out      N$180
+         7        GND        pwr      GND
+         8        O          out      !P6_CKMR
+         9        I0         in       P3_BTP1
+         10       I1         in       N$183
+         11       O          out      N$4
+         12       I0         in       N$181
+         13       I1         in       N$180
+         14       VCC        pwr      VCC
+
+E55      1        1G         in       P6_PRUP
+         2        1A1        in       GND
+         3        1Y1        hiz      !RBS0
+         4        1A2        in       GND
+         5        1Y2        hiz      !RBS0
+         6        1A3        in       GND
+         7        1Y3        hiz      !P6_BS0
+         8        GND        pwr      GND
+         9        1Y4        hiz      !P6_BS0
+         10       1A4        in       GND
+         11       2Y1        hiz      !RD0
+         12       2A1        in       !P6_EEM
+         13       2Y2        hiz               *** unconnected ***
+         14       2A2        in                *** unconnected ***
+         15       2G         in       !P4_RXM
+         16       VCC        pwr      VCC
+
+E56      1        I0         in       P6_MAINT
+         2        I1         in       P4_NEW_FLD
+         3        I0         in       !P4_GTF
+         4        I1         in       !P4_RIB
+         5        I2         in       !P4_GTS
+         6        O          out      P2_SUF_OUT
+         7        GND        pwr      GND
+         8        O          out      N$17
+         9        I0         in       N$135
+         10       I1         in       N$136
+         11       I2         in       N$134
+         12       O          out      N$181
+         13       I2         in       P3_BTP3
+         14       VCC        pwr      VCC
+
+E57      1        I0         in       N$133
+         2        I1         in       N$92
+         3        O          out      N$129
+         4        I0         in       P4_LXA
+         5        I1         in       P3_BPLA
+         6        O          out      !P4_PLXA
+         7        GND        pwr      GND
+         8        O          out      N$110
+         9        I0         in       P3_BTP4
+         10       I1         in       P4_INT
+         11       O          out               *** unconnected ***
+         12       I0         in                *** unconnected ***
+         13       I1         in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E58      1        I          in       !P4_PLXA
+         2        O          out      P4_PLXA
+         3        I          in       N$110
+         4        O          out      P4_CKSV
+         5        I          in       N$17
+         6        O          out      N$16
+         7        GND        pwr      GND
+         8        O          out      N$107
+         9        I          in       P4_JMP+JMS
+         10       O          out      N$7
+         11       I          in       N$4
+         12       O          out      N$134
+         13       I          in       N$112
+         14       VCC        pwr      VCC
+
+E59      1        CLR        in       N$177
+         2        D          in       !P6_USM
+         3        CLK        in       P4_CKSV
+         4        PRE        in       N$177
+         5        Q          out               *** unconnected ***
+         6        !Q         out      N$168
+         7        GND        pwr      GND
+         8        !Q         out      P6_USM
+         9        Q          out      !P6_USM
+         10       PRE        in       !P4_CUMB
+         11       CLK        in       P4_CKUF
+         12       D          in       N$176
+         13       CLR        in       N$177
+         14       VCC        pwr      VCC
+
+E60      1        CLR        in       !P4_CUMB
+         2        D          in       N$174
+         3        CLK        in       P4_CKUFB
+         4        PRE        in       N$175
+         5        Q          out               *** unconnected ***
+         6        !Q         out      N$176
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      P3_MBK
+         10       PRE        in       N$68
+         11       CLK        in       GND
+         12       D          in       GND
+         13       CLR        in       N$5
+         14       VCC        pwr      VCC
+
+E61      1        GND        pwr      GND
+         2        O          out      P4_JMP+JMS
+         3        O          out      N$127
+         4        I0         in       GND
+         5        I1         in       !IR1
+         6        I0         in       N$127
+         7        I1         in       !IR0
+         8        VCC        pwr      VCC
+         9        I0         in       !D
+         10       I1         in       P4_LXA
+         11       I0         in       P4_LXA
+         12       I1         in       !F
+         13       O          out      P3_BF
+         14       O          out      P3_BD
+
+E62      1        M          in       !P4_RMR
+         2        N          in       !P4_RMR
+         3        Q1         hiz               *** unconnected ***
+         4        Q2         hiz      !RD9
+         5        Q3         hiz      !RD10
+         6        Q4         hiz      !RD11
+         7        CLK        in       !P6_CKMR
+         8        GND        pwr      GND
+         9        G1         in       GND
+         10       G2         in       GND
+         11       D4         in       N$46
+         12       D3         in       N$47
+         13       D2         in       N$48
+         14       D1         in                *** unconnected ***
+         15       CLR        in       P3_BINIT
+         16       VCC        pwr      VCC
+
+E63      1        CLR        in       !P4_PLXA
+         2        D          in       N$50
+         3        CLK        in       P3_BTP4
+         4        PRE        in       !P4_PCLR
+         5        Q          out      !P2_ELAR
+         6        !Q         out      !P2_ENBS
+         7        GND        pwr      GND
+         8        !Q         out      !P2_EMAEN
+         9        Q          out      P2_EMAEN
+         10       PRE        in       N$50
+         11       CLK        in       P3_BTP4
+         12       D          in       !P2_BCPMAD
+         13       CLR        in       !P2_RST
+         14       VCC        pwr      VCC
+
+E64      1        O          out      N$30
+         2        I0         in       P3_BTS3
+         3        I1         in       P3_BTS3
+         4        O          out      N$33
+         5        I0         in       !P4_LET_IO
+         6        I1         in       N$30
+         7        GND        pwr      GND
+         8        I0         in       P6_PRUP
+         9        I1         in       P2_EMAEN
+         10       O          out               *** unconnected ***
+         11       I0         in                *** unconnected ***
+         12       I1         in                *** unconnected ***
+         13       O          out               *** unconnected ***
+         14       VCC        pwr      VCC
+
+E65      1        CLR        in       P4_PLXA
+         2        D          in       GND
+         3        CLK        in       P3_BTP4
+         4        PRE        in       !P4_PCLR
+         5        Q          out      !P6_PRUP
+         6        !Q         out      P6_PRUP
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      N$183
+         10       PRE        in       N$7
+         11       CLK        in       GND
+         12       D          in       GND
+         13       CLR        in       !P3_BTP2
+         14       VCC        pwr      VCC
+
+E66      1        I0         in       P3_BD
+         2        I1         in       N$107
+         3        O          out      N$106
+         4        I0         in       !RUN
+         5        I1         in       N$31
+         6        O          out      N$37
+         7        GND        pwr      GND
+         8        O          out               *** unconnected ***
+         9        I0         in                *** unconnected ***
+         10       I1         in                *** unconnected ***
+         11       O          out      N$105
+         12       I0         in       P4_DFEN
+         13       I1         in       N$109
+         14       VCC        pwr      VCC
+
+E67      1        I0         in       N$121
+         2        I1         in       !P4_SUF
+         3        O          out      N$122
+         4        I0         in       !P4_PLXA
+         5        I1         in       !P4_PCLR
+         6        O          out      !P2_RST
+         7        GND        pwr      GND
+         8        O          out      N$111
+         9        I0         in       N$92
+         10       I1         in       P3_BTP3
+         11       O          out      N$104
+         12       I0         in       N$106
+         13       I1         in       N$105
+         14       VCC        pwr      VCC
+
+E68      1        B3         in       GND
+         2        A<B_I      in       N$9
+         3        A=B_I      in       N$10
+         4        A>B_I      in       N$11
+         5        A>B_O      out      N$8
+         6        A=B_O      out      N$12
+         7        A<B_O      out               *** unconnected ***
+         8        GND        pwr      GND
+         9        B0         in       P1_US1
+         10       A0         in       P3_BM5
+         11       B1         in       P1_US0
+         12       A1         in       GND
+         13       A2         in       GND
+         14       B2         in       GND
+         15       A3         in       GND
+         16       VCC        pwr      VCC
+
+E69      1        A0         in       N$122
+         2        B0         in       GND
+         3        F0         out      N$133
+         4        F1         out      P4_CKUF
+         5        B1         in       GND
+         6        A1         in       N$120
+         7        S1         in       GND
+         8        GND        pwr      GND
+         9        S0         in       N$111
+         10       A2         in       N$119
+         11       B2         in       GND
+         12       F2         out      P4_CKUFB
+         13       F3         out      P4_CKDB
+         14       B3         in       N$112
+         15       A3         in       N$118
+         16       VCC        pwr      VCC
+
+E70      1        I0         in       P4_JMP+JMS
+         2        I1         in       P3_BD
+         3        O          out      N$123
+         4        I0         in       N$123
+         5        I1         in       N$113
+         6        O          out      P4_NEW_FLD
+         7        GND        pwr      GND
+         8        O          out      N$93
+         9        I0         in       !P4_CIF
+         10       I1         in       !P4_CDF
+         11       O          out      N$125
+         12       I0         in       !P4_RTS
+         13       I1         in       !P4_RMF
+         14       VCC        pwr      VCC
+
+E71      1        GND        pwr      GND
+         2        O          out      P3_BM8
+         3        O          out      P3_BM9
+         4        I0         in       !MD09
+         5        I1         in       GND
+         6        I0         in       GND
+         7        I1         in       !MD08
+         8        VCC        pwr      VCC
+         9        I0         in       GND
+         10       I1         in       !MD11
+         11       I0         in       !MD10
+         12       I1         in       GND
+         13       O          out      P3_BM10
+         14       O          out      P3_BM11
+
+E72      1        GND        pwr      GND
+         2        O          out      P6_BIND2
+         3        O          out      N$165
+         4        I0         in       GND
+         5        I1         in       !IND1
+         6        I0         in       GND
+         7        I1         in       !IND2
+         8        VCC        pwr      VCC
+         9        I0         in                *** unconnected ***
+         10       I1         in                *** unconnected ***
+         11       I0         in                *** unconnected ***
+         12       I1         in                *** unconnected ***
+         13       O          out               *** unconnected ***
+         14       O          out               *** unconnected ***
+
+E73      1        M          in       !P2_EMAEN
+         2        N          in       !P2_EMAEN
+         3        Q1         hiz               *** unconnected ***
+         4        Q2         hiz      !EMA2
+         5        Q3         hiz      !EMA1
+         6        Q4         hiz      !EMA0
+         7        CLK        in       P3_BTP4
+         8        GND        pwr      GND
+         9        G1         in       GND
+         10       G2         in       GND
+         11       D4         in       N$40
+         12       D3         in       N$39
+         13       D2         in       N$38
+         14       D1         in                *** unconnected ***
+         15       CLR        in       P4_PCLR
+         16       VCC        pwr      VCC
+
+E74      1        A6         in       P4_DFEN
+         2        A5         in       !P4_INIT_EN
+         3        A4         in       !P2_BCPMAD
+         4        A3         in       P3_BTS4
+         5        A0         in       LBM+RBMN
+         6        A1         in       P6_EBM
+         7        A2         in       P3_BPAUSE
+         8        GND        pwr      GND
+         9        O3         hiz      !FORCE_0
+         10       O2         hiz      !P5_BMEN
+         11       O1         hiz      !P5_DBS
+         12       O0         hiz      !IBS
+         13       !G1        in       GND
+         14       !G2        in       GND
+         15       A7         in       !P4_INT_IN_PROG
+         16       VCC        pwr      VCC
+
+E75      1        GND        pwr      GND
+         2        O          out      N$109
+         3        O          out               *** unconnected ***
+         4        I0         in                *** unconnected ***
+         5        I1         in                *** unconnected ***
+         6        I0         in       N$108
+         7        I1         in       !F_SET
+         8        VCC        pwr      VCC
+         9        I0         in                *** unconnected ***
+         10       I1         in                *** unconnected ***
+         11       I0         in                *** unconnected ***
+         12       I1         in                *** unconnected ***
+         13       O          out               *** unconnected ***
+         14       O          out               *** unconnected ***
+
+E76      1        CLR        in       P4_3V
+         2        D          in       GND
+         3        CLK        in       !P4_PCLR
+         4        PRE        in       N$37
+         5        Q          out      !P4_INIT_EN
+         6        !Q         out      P4_INIT_EN
+         7        GND        pwr      GND
+         8        !Q         out      P4_DFEN
+         9        Q          out      !P4_DFEN
+         10       PRE        in       N$134
+         11       CLK        in       P3_BTP3
+         12       D          in       N$104
+         13       CLR        in       N$91
+         14       VCC        pwr      VCC
+
+E77      1        CLR        in       N$16
+         2        D          in       GND
+         3        CLK        in       GND
+         4        PRE        in       N$129
+         5        Q          out      P4_INT_IN
+         6        !Q         out      !P4_INT_INH
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out               *** unconnected ***
+         10       PRE        in                *** unconnected ***
+         11       CLK        in                *** unconnected ***
+         12       D          in                *** unconnected ***
+         13       CLR        in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E78      1        B3         in       P1_US2
+         2        A<B_I      in       GND
+         3        A=B_I      in       P1_3V
+         4        A>B_I      in       GND
+         5        A>B_O      out      N$11
+         6        A=B_O      out      N$10
+         7        A<B_O      out      N$9
+         8        GND        pwr      GND
+         9        B0         in       P1_US5
+         10       A0         in       P3_BM8
+         11       B1         in       P1_US4
+         12       A1         in       P3_BM7
+         13       A2         in       P3_BM6
+         14       B2         in       P1_US3
+         15       A3         in       P3_BM9
+         16       VCC        pwr      VCC
+
+E79      1        A0         in       N$117
+         2        B0         in       N$112
+         3        F0         out      P4_CKDF
+         4        F1         out      P4_CKIF
+         5        B1         in       N$112
+         6        A1         in       N$116
+         7        S1         in       GND
+         8        GND        pwr      GND
+         9        S0         in       N$111
+         10       A2         in       N$115
+         11       B2         in       N$112
+         12       F2         out      P4_CKIBB
+         13       F3         out      P4_CKIFB
+         14       B3         in       N$112
+         15       A3         in       N$114
+         16       VCC        pwr      VCC
+
+E80      1        O0         hiz      N$121
+         2        O1         hiz      N$120
+         3        O2         hiz      N$119
+         4        O3         hiz      N$118
+         5        O4         hiz      N$117
+         6        O5         hiz      N$116
+         7        O6         hiz      N$115
+         8        GND        pwr      GND
+         9        O7         hiz      N$114
+         10       A0         in       P4_NEW_FLD
+         11       A1         in       !P4_CIF
+         12       A2         in       !P4_CDF
+         13       A3         in       N$125
+         14       A4         in       !P4_RTF
+         15       !G         in       GND
+         16       VCC        pwr      VCC
+
+E81      2        I7         in       P3_BD4
+         3        I6         in       P3_BD5
+         4        I5         in       P3_BD6
+         5        I4         in       P3_BD7
+         6        I3         in       P3_BD8
+         7        I2         in       P3_BD9
+         8        I1         in       P3_BD10
+         9        I0         in       P3_BD11
+         10       O7         hiz      N$139
+         11       O6         hiz      N$140
+         12       O5         hiz      N$141
+         13       O4         hiz      N$142
+         14       GND        pwr      GND
+         15       O3         hiz      N$143
+         16       O2         hiz      N$144
+         17       O1         hiz      LBM+RBMN
+         18       O0         hiz               *** unconnected ***
+         19       !CE        in       GND
+         20       I15        in       GND
+         21       I14        in       P3_BTS4
+         22       I13        in       !P4_RBM
+         23       I12        in       !P4_LBM
+         24       I11        in       P3_BD0
+         25       I10        in       P3_BD1
+         26       I9         in       P3_BD2
+         27       I8         in       P3_BD3
+         28       VCC        pwr      VCC
+
+E82      1        A0         in       N$142
+         2        CS         in       !P5_BMEN
+         3        WE         in       !P4_BLBM
+         4        D0         in       N$143
+         5        Q0         out      N$146
+         6        D1         in       N$144
+         7        Q1         out      N$145
+         8        GND        pwr      GND
+         9        Q2         out               *** unconnected ***
+         10       D2         in                *** unconnected ***
+         11       Q3         out               *** unconnected ***
+         12       D3         in                *** unconnected ***
+         13       A3         in       N$141
+         14       A2         in       N$140
+         15       A1         in       N$139
+         16       VCC        pwr      VCC
+
+E83      1        !G         in       !P6_DISF
+         2        A1         in       !P2_IFA
+         3        Y1         hiz      !RD8
+         4        A2         in       !P2_IFB
+         5        Y2         hiz      !RD7
+         6        A3         in       !P2_IFC
+         7        Y3         hiz      !RD6
+         8        -UB        pwr      GND
+         9        Y4         hiz               *** unconnected ***
+         10       A4         in                *** unconnected ***
+         11       Y1         hiz      !RD3
+         12       A1         in       P4_FATAL(0)
+         13       Y2         hiz      !RD5
+         14       A2         in       !P6_USM
+         15       !G         in       N$169
+         16       +UB        pwr      VCC
+
+E84      1        1G         in       N$42
+         2        1A1        in       !P2_IFC
+         3        1Y1        hiz      N$40
+         4        1A2        in       !P2_IFB
+         5        1Y2        hiz      N$39
+         6        1A3        in       !P2_IFA
+         7        1Y3        hiz      N$38
+         8        GND        pwr      GND
+         9        1Y4        hiz               *** unconnected ***
+         10       1A4        in                *** unconnected ***
+         11       2Y1        hiz               *** unconnected ***
+         12       2A1        in                *** unconnected ***
+         13       2Y2        hiz               *** unconnected ***
+         14       2A2        in                *** unconnected ***
+         15       2G         in                *** unconnected ***
+         16       VCC        pwr      VCC
+
+E85      1        CLR        in       !P2_RST
+         2        Q1         out      P1_RR1
+         3        D1         in       P3_BD8
+         4        D2         in                *** unconnected ***
+         5        Q2         out               *** unconnected ***
+         6        D3         in       P3_BD10
+         7        Q3         out      P1_RR3
+         8        GND        pwr      GND
+         9        CLK        in       N$15
+         10       Q4         out      P1_RR4
+         11       D4         in       P3_BD11
+         12       Q5         out      P1_RR2
+         13       D5         in       P3_BD9
+         14       D6         in       P3_BD7
+         15       Q6         out      P1_RR0
+         16       VCC        pwr      VCC
+
+E86      1        1G         in       !P4_RRR
+         2        1A1        in       P1_RR0
+         3        1Y1        hiz      !RD7
+         4        1A2        in       P1_RR1
+         5        1Y2        hiz      !RD8
+         6        1A3        in       P1_RR2
+         7        1Y3        hiz      !RD9
+         8        GND        pwr      GND
+         9        1Y4        hiz      !RD10
+         10       1A4        in       P1_RR3
+         11       2Y1        hiz      !RD11
+         12       2A1        in       P1_RR4
+         13       2Y2        hiz               *** unconnected ***
+         14       2A2        in                *** unconnected ***
+         15       2G         in       !P4_RRR
+         16       VCC        pwr      VCC
+
+E87      1        A6         in       GND
+         2        A5         in       P1_RR2
+         3        A4         in       P1_RR3
+         4        A3         in       P1_RR4
+         5        A0         in       P3_BM8
+         6        A1         in       P3_BM7
+         7        A2         in       P3_BM6
+         8        GND        pwr      GND
+         9        O3         hiz      N$22
+         10       O2         hiz      P1_BFL0
+         11       O1         hiz      P1_BFL1
+         12       O0         hiz      P1_BFL2
+         13       !G1        in       GND
+         14       !G2        in       GND
+         15       A7         in       P6_USM
+         16       VCC        pwr      VCC
+
+E88      1        CLR        in       !P2_RST
+         2        Q1         out      P1_US1
+         3        D1         in       P3_BD7
+         4        D2         in       P3_BD8
+         5        Q2         out      P1_US2
+         6        D3         in       P3_BD10
+         7        Q3         out      P1_US4
+         8        GND        pwr      GND
+         9        CLK        in       N$1
+         10       Q4         out      P1_US5
+         11       D4         in       P3_BD11
+         12       Q5         out      P1_US3
+         13       D5         in       P3_BD9
+         14       D6         in       P3_BD6
+         15       Q6         out      P1_US0
+         16       VCC        pwr      VCC
+
+E89      1        4          in       !P4_CDF
+         2        5          in       !P4_CIF
+         3        6          in       N$147
+         4        7          in       !FORCE_0
+         5        EI         in       GND
+         6        A2         out      MUX_C0
+         7        A1         out      MUX_C1
+         8        GND        pwr      GND
+         9        A0         out      MUX_C2
+         10       0          in       GND
+         11       1          in       !P4_RMF
+         12       2          in       !P4_RTS
+         13       3          in       N$148
+         14       GS         out               *** unconnected ***
+         15       EO         out               *** unconnected ***
+         16       VCC        pwr      VCC
+
+E90      1        M          in       !P4_RLB
+         2        N          in       !P4_RLB
+         3        Q1         hiz      !RD6
+         4        Q2         hiz      !RD7
+         5        Q3         hiz      !RD8
+         6        Q4         hiz      !RD9
+         7        CLK        in       P3_BTP4
+         8        GND        pwr      GND
+         9        G1         in       !P5_BMEN
+         10       G2         in       !P5_BMEN
+         11       D4         in       N$142
+         12       D3         in       N$141
+         13       D2         in       N$140
+         14       D1         in       N$139
+         15       CLR        in       P3_BINIT
+         16       VCC        pwr      VCC
+
+E91      1        1G         in       !P6_DISPB
+         2        1A1        in       N$156
+         3        1Y1        hiz      !RD1
+         4        1A2        in       N$158
+         5        1Y2        hiz      !RD2
+         6        1A3        in       N$160
+         7        1Y3        hiz      !RD4
+         8        GND        pwr      GND
+         9        1Y4        hiz      !RD5
+         10       1A4        in       N$161
+         11       2Y1        hiz      N$146
+         12       2A1        in       N$160
+         13       2Y2        hiz      N$145
+         14       2A2        in       N$161
+         15       2G         in       !P5_DBS
+         16       VCC        pwr      VCC
+
+E92      1        I0         in       P3_BTS4
+         2        I1         in       !P2_INT
+         3        I0         in       N$166
+         4        I1         in       P6_BIND2
+         5        I2         in       P4_BTS1
+         6        O          out      !P6_DISPB
+         7        GND        pwr      GND
+         8        O          out      N$169
+         9        I0         in       N$165
+         10       I1         in       P4_BTS1
+         11       I2         in       P6_BIND2
+         12       O          out      N$42
+         13       I2         in       !P4_DFEN
+         14       VCC        pwr      VCC
+
+E93      1        CLR        in       P2_3V
+         2        Q1         out               *** unconnected ***
+         3        !Q1        out               *** unconnected ***
+         4        D1         in                *** unconnected ***
+         5        D2         in       N$20
+         6        !Q2        out      P2_IFA
+         7        Q2         out      !P2_IFA
+         8        GND        pwr      GND
+         9        CLK        in       P4_CKIF
+         10       Q3         out      !P2_IFB
+         11       !Q3        out      P2_IFB
+         12       D3         in       N$19
+         13       D4         in       N$18
+         14       !Q4        out      P2_IFC
+         15       Q4         out      !P2_IFC
+         16       VCC        pwr      VCC
+
+E94      1        I0         in       P6_BIND2
+         2        I1         in       P4_BTS1
+         3        O          out      !P6_DISF
+         4        I0         in       P4_DFEN
+         5        I1         in       P4_INIT_EN
+         6        O          out      N$49
+         7        GND        pwr      GND
+         8        O          out               *** unconnected ***
+         9        I0         in                *** unconnected ***
+         10       I1         in                *** unconnected ***
+         11       O          out               *** unconnected ***
+         12       I0         in                *** unconnected ***
+         13       I1         in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E95      1        1G         in       !P4_LET_IO
+         2        1A1        in       P1_BFL0
+         3        1Y1        hiz      N$18
+         4        1A2        in       P1_BFL1
+         5        1Y2        hiz      N$19
+         6        1A3        in       P1_BFL2
+         7        1Y3        hiz      N$20
+         8        GND        pwr      GND
+         9        1Y4        hiz      N$38
+         10       1A4        in       P1_BFL0
+         11       2Y1        hiz      N$39
+         12       2A1        in       P1_BFL1
+         13       2Y2        hiz      N$40
+         14       2A2        in       P1_BFL2
+         15       2G         in       !P4_LET_IO
+         16       VCC        pwr      VCC
+
+E96      1        1G         in       N$2
+         2        1A1        in       P3_BD6
+         3        1Y1        hiz      N$18
+         4        1A2        in       P3_BD7
+         5        1Y2        hiz      N$19
+         6        1A3        in       P3_BD8
+         7        1Y3        hiz      N$20
+         8        GND        pwr      GND
+         9        1Y4        hiz      N$38
+         10       1A4        in       P3_BD9
+         11       2Y1        hiz      N$39
+         12       2A1        in       P3_BD10
+         13       2Y2        hiz      N$40
+         14       2A2        in       P3_BD11
+         15       2G         in       N$2
+         16       VCC        pwr      VCC
+
+E97      1        M          in       P4_INT
+         2        N          in       N$41
+         3        Q1         hiz               *** unconnected ***
+         4        Q2         hiz      N$20
+         5        Q3         hiz      N$19
+         6        Q4         hiz      N$18
+         7        CLK        in       P4_CKIFB
+         8        GND        pwr      GND
+         9        G1         in                *** unconnected ***
+         10       G2         in                *** unconnected ***
+         11       D4         in       N$18
+         12       D3         in       N$19
+         13       D2         in       N$20
+         14       D1         in                *** unconnected ***
+         15       CLR        in                *** unconnected ***
+         16       VCC        pwr      VCC
+
+E98      1        M          in       !P4_RMR
+         2        N          in       !P4_RMR
+         3        Q1         hiz      !RD8
+         4        Q2         hiz      !RD7
+         5        Q3         hiz      !RD6
+         6        Q4         hiz      !RD5
+         7        CLK        in       !P6_CKMR
+         8        GND        pwr      GND
+         9        G1         in       GND
+         10       G2         in       GND
+         11       D4         in       !P6_BS0
+         12       D3         in       !P6_BS1
+         13       D2         in       !P6_BS2
+         14       D1         in       !P6_BS3
+         15       CLR        in       P3_BINIT
+         16       VCC        pwr      VCC
+
+E99      1        M          in       !P4_RMR
+         2        N          in       !P4_RMR
+         3        Q1         hiz      !RD1
+         4        Q2         hiz      !RD2
+         5        Q3         hiz      !RD3
+         6        Q4         hiz      !RD4
+         7        CLK        in       !P6_CKMR
+         8        GND        pwr      GND
+         9        G1         in       GND
+         10       G2         in       GND
+         11       D4         in       !RBS3
+         12       D3         in       !RBS2
+         13       D2         in       !RBS1
+         14       D1         in       !RBS0
+         15       CLR        in       P3_BINIT
+         16       VCC        pwr      VCC
+
+E100     1        1G         in       !P2_RSB
+         2        1A1        in       !SB0
+         3        1Y1        hiz      !RD1
+         4        1A2        in       !SB1
+         5        1Y2        hiz      !RD2
+         6        1A3        in       !SB2
+         7        1Y3        hiz      !RD3
+         8        GND        pwr      GND
+         9        1Y4        hiz      !RD4
+         10       1A4        in       !SB3
+         11       2Y1        hiz      !RD10
+         12       2A1        in       N$146
+         13       2Y2        hiz      !RD11
+         14       2A2        in       N$145
+         15       2G         in       !P4_RBM
+         16       VCC        pwr      VCC
+
+E101     1        !G         in       !P6_DISF
+         2        A1         in       !P2_DFC
+         3        Y1         hiz      !RD9
+         4        A2         in       !P2_DFB
+         5        Y2         hiz      !RD10
+         6        A3         in       !P2_DFA
+         7        Y3         hiz      !RD11
+         8        -UB        pwr      GND
+         9        Y4         hiz               *** unconnected ***
+         10       A4         in                *** unconnected ***
+         11       Y1         hiz      N$146
+         12       A1         in       N$156
+         13       Y2         hiz      N$145
+         14       A2         in       N$158
+         15       !G         in       !IBS
+         16       +UB        pwr      VCC
+
+E102     1        CLR        in       P2_3V
+         2        Q1         out               *** unconnected ***
+         3        !Q1        out               *** unconnected ***
+         4        D1         in                *** unconnected ***
+         5        D2         in       N$40
+         6        !Q2        out      P2_DFA
+         7        Q2         out      !P2_DFA
+         8        GND        pwr      GND
+         9        CLK        in       P4_CKDF
+         10       Q3         out      !P2_DFB
+         11       !Q3        out      P2_DFB
+         12       D3         in       N$39
+         13       D4         in       N$38
+         14       !Q4        out      P2_DFC
+         15       Q4         out      !P2_DFC
+         16       VCC        pwr      VCC
+
+E103     1        CLR        in       P2_3V
+         2        Q1         out      P2_SF0
+         3        D1         in       !P2_IFC
+         4        D2         in       !P2_IFB
+         5        Q2         out      P2_SF1
+         6        D3         in       !P2_IFA
+         7        Q3         out      P2_SF2
+         8        GND        pwr      GND
+         9        CLK        in       P4_CKSV
+         10       Q4         out      P2_SF3
+         11       D4         in       !P2_DFC
+         12       Q5         out      P2_SF4
+         13       D5         in       !P2_DFB
+         14       D6         in       !P2_DFA
+         15       Q6         out      P2_SF5
+         16       VCC        pwr      VCC
+
+E104     1        1G         in       N$49
+         2        1A1        in       !P2_DFC
+         3        1Y1        hiz      N$38
+         4        1A2        in       !P2_DFB
+         5        1Y2        hiz      N$39
+         6        1A3        in       !P2_DFA
+         7        1Y3        hiz      N$40
+         8        GND        pwr      GND
+         9        1Y4        hiz               *** unconnected ***
+         10       1A4        in                *** unconnected ***
+         11       2Y1        hiz               *** unconnected ***
+         12       2A1        in                *** unconnected ***
+         13       2Y2        hiz               *** unconnected ***
+         14       2A2        in                *** unconnected ***
+         15       2G         in                *** unconnected ***
+         16       VCC        pwr      VCC
+
+E105     1        1G         in       N$56
+         2        1A1        in       P2_SF5
+         3        1Y1        hiz      !RD11
+         4        1A2        in       P2_SF4
+         5        1Y2        hiz      !RD10
+         6        1A3        in       P2_SF3
+         7        1Y3        hiz      !RD9
+         8        GND        pwr      GND
+         9        1Y4        hiz      !RD8
+         10       1A4        in       P2_SF2
+         11       2Y1        hiz      !RD7
+         12       2A1        in       P2_SF1
+         13       2Y2        hiz      !RD6
+         14       2A2        in       P2_SF0
+         15       2G         in       N$56
+         16       VCC        pwr      VCC
+
+E106     1        1G         in       !P4_RUSR
+         2        1A1        in       P1_US0
+         3        1Y1        hiz      !RD6
+         4        1A2        in       P1_US1
+         5        1Y2        hiz      !RD7
+         6        1A3        in       P1_US2
+         7        1Y3        hiz      !RD8
+         8        GND        pwr      GND
+         9        1Y4        hiz      !RD9
+         10       1A4        in       P1_US3
+         11       2Y1        hiz      !RD10
+         12       2A1        in       P1_US4
+         13       2Y2        hiz      !RD11
+         14       2A2        in       P1_US5
+         15       2G         in       !P4_RUSR
+         16       VCC        pwr      VCC
+
+E107     1        1G         in       !P4_RMF
+         2        1A1        in       P2_SF0
+         3        1Y1        hiz      N$18
+         4        1A2        in       P2_SF1
+         5        1Y2        hiz      N$19
+         6        1A3        in       P2_SF2
+         7        1Y3        hiz      N$20
+         8        GND        pwr      GND
+         9        1Y4        hiz      N$38
+         10       1A4        in       P2_SF3
+         11       2Y1        hiz      N$39
+         12       2A1        in       P2_SF4
+         13       2Y2        hiz      N$40
+         14       2A2        in       P2_SF5
+         15       2G         in       !P4_RMF
+         16       VCC        pwr      VCC
+
+E108     1        CLR        in       N$155
+         2        Q1         out               *** unconnected ***
+         3        !Q1        out               *** unconnected ***
+         4        D1         in                *** unconnected ***
+         5        D2         in                *** unconnected ***
+         6        !Q2        out               *** unconnected ***
+         7        Q2         out               *** unconnected ***
+         8        GND        pwr      GND
+         9        CLK        in       P4_CKDB
+         10       Q3         out      N$162
+         11       !Q3        out      N$161
+         12       D3         in       N$152
+         13       D4         in       N$151
+         14       !Q4        out      N$160
+         15       Q4         out      N$163
+         16       VCC        pwr      VCC
+
+E109     2        I7         in       IBB_1
+         3        I6         in       P1_BB0
+         4        I5         in       P1_BB1
+         5        I4         in       P3_BD1
+         6        I3         in       P3_BD2
+         7        I2         in       P3_BD3
+         8        I1         in       P3_BD4
+         9        I0         in       P3_BD5
+         10       O7         hiz      N$149
+         11       O6         hiz      N$150
+         12       O5         hiz      N$151
+         13       O4         hiz      N$152
+         14       GND        pwr      GND
+         15       O3         hiz      N$153
+         16       O2         hiz      N$154
+         17       O1         hiz               *** unconnected ***
+         18       O0         hiz               *** unconnected ***
+         19       !CE        in       GND
+         20       I15        in       MUX_C0
+         21       I14        in       MUX_C1
+         22       I13        in       MUX_C2
+         23       I12        in       !SB0
+         24       I11        in       !SB1
+         25       I10        in       !SB2
+         26       I9         in       !SB3
+         27       I8         in       IBB_0
+         28       VCC        pwr      VCC
+
+E110     1        CLR        in       N$155
+         2        Q1         out               *** unconnected ***
+         3        !Q1        out               *** unconnected ***
+         4        D1         in                *** unconnected ***
+         5        D2         in                *** unconnected ***
+         6        !Q2        out               *** unconnected ***
+         7        Q2         out               *** unconnected ***
+         8        GND        pwr      GND
+         9        CLK        in       P4_CKIF
+         10       Q3         out      N$157
+         11       !Q3        out      N$158
+         12       D3         in       N$150
+         13       D4         in       N$149
+         14       !Q4        out      N$156
+         15       Q4         out      N$159
+         16       VCC        pwr      VCC
+
+E111     1        A6         in       P1_CRF
+         2        A5         in       P1_RR0
+         3        A4         in       N$159
+         4        A3         in       N$163
+         5        A0         in       N$162
+         6        A1         in       N$157
+         7        A2         in       P1_RR1
+         8        GND        pwr      GND
+         9        O3         hiz               *** unconnected ***
+         10       O2         hiz               *** unconnected ***
+         11       O1         hiz      !RD5
+         12       O0         hiz      !RD9
+         13       !G         in       !P1_ENRF
+         14       A8         in       P6_USM
+         15       A7         in       !P4_RDF
+         16       VCC        pwr      VCC
+
+E112     1        A6         in       P6_USM
+         2        A5         in       P1_RR3
+         3        A4         in       P2_IFB
+         4        A3         in       P2_DFB
+         5        A0         in       P2_DFA
+         6        A1         in       P2_IFA
+         7        A2         in       P1_RR4
+         8        GND        pwr      GND
+         9        O3         hiz               *** unconnected ***
+         10       O2         hiz      N$6
+         11       O1         hiz      !RD7
+         12       O0         hiz      !RD8
+         13       !G         in       !P1_ENRF
+         14       A8         in       P6_USM
+         15       A7         in       !P4_RDF
+         16       VCC        pwr      VCC
+
+E113     1        A6         in       N$22
+         2        A5         in       GND
+         3        A4         in       P1_RR0
+         4        A3         in       P1_RR1
+         5        A0         in       P3_BM9
+         6        A1         in       P3_BM5
+         7        A2         in       GND
+         8        GND        pwr      GND
+         9        O3         hiz               *** unconnected ***
+         10       O2         hiz               *** unconnected ***
+         11       O1         hiz      P1_BB0
+         12       O0         hiz      P1_BB1
+         13       !G1        in       GND
+         14       !G2        in       GND
+         15       A7         in       P6_USM
+         16       VCC        pwr      VCC
+
+E114     1        A6         in       N$6
+         2        A5         in       P1_3V
+         3        A4         in       P1_3V
+         4        A3         in       P1_3V
+         5        A0         in       P2_DFC
+         6        A1         in       P2_IFC
+         7        A2         in       P1_RR2
+         8        GND        pwr      GND
+         9        O3         hiz               *** unconnected ***
+         10       O2         hiz      P1_CRF
+         11       O1         hiz               *** unconnected ***
+         12       O0         hiz      !RD6
+         13       !G         in       !P1_ENRF
+         14       A8         in       P6_USM
+         15       A7         in       !P4_RDF
+         16       VCC        pwr      VCC
+
+E115     1        I          in       P4_NEW_FLD
+         2        O          out      N$41
+         3        I          in       P4_INT
+         4        O          out      !P2_INT
+         5        I          in       N$165
+         6        O          out      N$166
+         7        GND        pwr      GND
+         8        O          out      N$56
+         9        I          in       P2_SUF_OUT
+         10       O          out      N$147
+         11       I          in       P4_NEW_FLD
+         12       O          out               *** unconnected ***
+         13       I          in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E116     1        CLR        in       N$155
+         2        Q1         out               *** unconnected ***
+         3        !Q1        out               *** unconnected ***
+         4        D1         in                *** unconnected ***
+         5        D2         in                *** unconnected ***
+         6        !Q2        out               *** unconnected ***
+         7        Q2         out               *** unconnected ***
+         8        GND        pwr      GND
+         9        CLK        in       P4_CKIBB
+         10       Q3         out      IBB_1
+         11       !Q3        out               *** unconnected ***
+         12       D3         in       N$154
+         13       D4         in       N$153
+         14       !Q4        out               *** unconnected ***
+         15       Q4         out      IBB_0
+         16       VCC        pwr      VCC
+
+E117     1        CLR        in       N$155
+         2        Q1         out               *** unconnected ***
+         3        !Q1        out      !SB3
+         4        D1         in       N$162
+         5        D2         in       N$163
+         6        !Q2        out      !SB2
+         7        Q2         out               *** unconnected ***
+         8        GND        pwr      GND
+         9        CLK        in       P4_CKSV
+         10       Q3         out               *** unconnected ***
+         11       !Q3        out      !SB1
+         12       D3         in       N$157
+         13       D4         in       N$159
+         14       !Q4        out      !SB0
+         15       Q4         out               *** unconnected ***
+         16       VCC        pwr      VCC
+
+E118     1        M          in       !P6_PRUP
+         2        N          in       !P2_ENBS
+         3        Q1         hiz      !P6_BS3
+         4        Q2         hiz      !P6_BS2
+         5        Q3         hiz      !P6_BS1
+         6        Q4         hiz      !P6_BS0
+         7        CLK        in       P3_BTP4
+         8        GND        pwr      GND
+         9        G1         in       GND
+         10       G2         in       GND
+         11       D4         in       !P5_IBS0
+         12       D3         in       !P5_IBS1
+         13       D2         in       !P5_IBS2
+         14       D1         in       !P5_IBS3
+         15       CLR        in       GND
+         16       VCC        pwr      VCC
+
+E119     1        M          in       !P6_PRUP
+         2        N          in       !P2_ENBS
+         3        Q1         hiz      !RBS3
+         4        Q2         hiz      !RBS2
+         5        Q3         hiz      !RBS1
+         6        Q4         hiz      !RBS0
+         7        CLK        in       P3_BTP4
+         8        GND        pwr      GND
+         9        G1         in       GND
+         10       G2         in       GND
+         11       D4         in       !P5_IBS0
+         12       D3         in       !P5_IBS1
+         13       D2         in       !P5_IBS2
+         14       D1         in       !P5_IBS3
+         15       CLR        in       GND
+         16       VCC        pwr      VCC
+
+E120     1        G          in       GND
+         2        A          in       N$145
+         3        B          in       N$146
+         4        Y0         out      !P5_IBS3
+         5        Y1         out      !P5_IBS2
+         6        Y2         out      !P5_IBS1
+         7        Y3         out      !P5_IBS0
+         8        GND        pwr      GND
+         9        Y3         out      N$25
+         10       Y2         out      N$24
+         11       Y1         out      N$23
+         12       Y0         out      N$21
+         13       B          in       P3_BD2
+         14       A          in       P3_BD1
+         15       G          in       GND
+         16       VCC        pwr      VCC
+
+E121     1        M          in       !P2_ELAR
+         2        N          in       !P2_ELAR
+         3        Q1         hiz      !P6_BS3
+         4        Q2         hiz      !P6_BS2
+         5        Q3         hiz      !P6_BS1
+         6        Q4         hiz      !P6_BS0
+         7        CLK        in       P4_PLXA
+         8        GND        pwr      GND
+         9        G1         in       GND
+         10       G2         in       GND
+         11       D4         in       N$21
+         12       D3         in       N$23
+         13       D2         in       N$24
+         14       D1         in       N$25
+         15       CLR        in       P4_PCLR
+         16       VCC        pwr      VCC
+
+E122     1        M          in       !P2_ELAR
+         2        N          in       !P2_ELAR
+         3        Q1         hiz      !RBS3
+         4        Q2         hiz      !RBS2
+         5        Q3         hiz      !RBS1
+         6        Q4         hiz      !RBS0
+         7        CLK        in       P4_PLXA
+         8        GND        pwr      GND
+         9        G1         in       GND
+         10       G2         in       GND
+         11       D4         in       N$21
+         12       D3         in       N$23
+         13       D2         in       N$24
+         14       D1         in       N$25
+         15       CLR        in       GND
+         16       VCC        pwr      VCC
+
+J1       1        1          pas      !RBS0
+         2        2          pas      GND
+         3        3          pas      !RBS1
+         4        4          pas      GND
+         5        5          pas      !RBS2
+         6        6          pas      GND
+         7        7          pas      !RBS3
+         8        8          pas      GND
+         9        9          pas      GND
+         10       10         pas      GND
+
+PAD1     1        P          pas      P4_PCLR
+
+PAD2     1        P          pas      !P4_PCLR
+
+PAD3     1        P          pas      N$37
+
+Q1       1        E          pas      GND
+         2        B          pas      N$34
+         3        C          pas      !PAUSE
+
+R1       1        1          pas      VCC
+         2        2          pas      !RD4
+
+R2       1        1          pas      VCC
+         2        2          pas      !RD3
+
+R3       1        1          pas      N$29
+         2        2          pas      VCC
+
+R4       1        1          pas      N$90
+         2        2          pas      VCC
+
+R5       1        1          pas      N$33
+         2        2          pas      N$34
+
+R6       1        1          pas      VCC
+         2        2          pas      !RD5
+
+R7       1        1          pas      VCC
+         2        2          pas      !RD6
+
+R8       1        1          pas      VCC
+         2        2          pas      !RD2
+
+R9       1        1          pas      VCC
+         2        2          pas      !RD1
+
+R10      1        1          pas      N$77
+         2        2          pas      VCC
+
+R11      1        1          pas      !RBS0
+         2        2          pas      VCC
+
+R12      1        1          pas      VCC
+         2        2          pas      !RD0
+
+R13      1        1          pas      N$177
+         2        2          pas      VCC
+
+R14      1        1          pas      !P4_LET_IO
+         2        2          pas      VCC
+
+R15      1        1          pas      N$50
+         2        2          pas      VCC
+
+R16      1        1          pas      !P4_CIF
+         2        2          pas      VCC
+
+R17      1        1          pas      !P4_CDF
+         2        2          pas      VCC
+
+R18      1        1          pas      P4_3V
+         2        2          pas      VCC
+
+R19      1        1          pas      N$91
+         2        2          pas      VCC
+
+R21      1        1          pas      P1_3V
+         2        2          pas      VCC
+
+R22      1        1          pas      N$145
+         2        2          pas      VCC
+
+R23      1        1          pas      N$146
+         2        2          pas      VCC
+
+R24      1        1          pas      VCC
+         2        2          pas      !RD9
+
+R25      1        1          pas      VCC
+         2        2          pas      !RD8
+
+R26      1        1          pas      VCC
+         2        2          pas      !RD10
+
+R27      1        1          pas      VCC
+         2        2          pas      !RD11
+
+R28      1        1          pas      N$40
+         2        2          pas      VCC
+
+R29      1        1          pas      N$20
+         2        2          pas      VCC
+
+R30      1        1          pas      P2_3V
+         2        2          pas      VCC
+
+R31      1        1          pas      VCC
+         2        2          pas      !RD7
+
+R32      1        1          pas      N$39
+         2        2          pas      VCC
+
+R33      1        1          pas      N$38
+         2        2          pas      VCC
+
+R34      1        1          pas      N$19
+         2        2          pas      VCC
+
+R35      1        1          pas      N$18
+         2        2          pas      VCC
+
+R36      1        1          pas      N$155
+         2        2          pas      VCC
+
+R37      1        1          pas      !RBS3
+         2        2          pas      VCC
+
+R38      1        1          pas      !RBS2
+         2        2          pas      VCC
+
+R39      1        1          pas      !RBS1
+         2        2          pas      VCC
+
+U$1      AA1      1          io                ***   unused    ***
+         AA2      1          io       VCC
+         AB1      1          io                ***   unused    ***
+         AB2      1          io                ***   unused    ***
+         AC1      1          io       GND
+         AC2      1          io       GND
+         AD1      1          io                ***   unused    ***
+         AD2      1          io       !EMA2
+         AE1      1          io                ***   unused    ***
+         AE2      1          io       !EMA1
+         AF1      1          io       GND
+         AF2      1          io       GND
+         AH1      1          io                ***   unused    ***
+         AH2      1          io       !EMA0
+         AJ1      1          io                ***   unused    ***
+         AJ2      1          io                ***   unused    ***
+         AK1      1          io       !MD00
+         AK2      1          io                ***   unused    ***
+         AL1      1          io       !MD01
+         AL2      1          io                ***   unused    ***
+         AM1      1          io       !MD02
+         AM2      1          io                ***   unused    ***
+         AN1      1          io       GND
+         AN2      1          io       GND
+         AP1      1          io       !MD03
+         AP2      1          io                ***   unused    ***
+         AR1      1          io       !DATA00
+         AR2      1          io                ***   unused    ***
+         AS1      1          io       !DATA01
+         AS2      1          io                ***   unused    ***
+         AT1      1          io       GND
+         AT2      1          io       GND
+         AU1      1          io       !DATA02
+         AU2      1          io                ***   unused    ***
+         AV1      1          io       !DATA03
+         AV2      1          io       !LINK
+         BA1      1          io                ***   unused    ***
+         BA2      1          io       VCC
+         BB1      1          io                ***   unused    ***
+         BB2      1          io                ***   unused    ***
+         BC1      1          io       GND
+         BC2      1          io       GND
+         BD1      1          io                ***   unused    ***
+         BD2      1          io                ***   unused    ***
+         BE1      1          io                ***   unused    ***
+         BE2      1          io       !BREAK_IN_PROG
+         BF1      1          io       GND
+         BF2      1          io       GND
+         BH1      1          io                ***   unused    ***
+         BH2      1          io       MAMS_LD_CTL
+         BJ1      1          io                ***   unused    ***
+         BJ2      1          io                ***   unused    ***
+         BK1      1          io       !MD04
+         BK2      1          io                ***   unused    ***
+         BL1      1          io       !MD05
+         BL2      1          io                ***   unused    ***
+         BM1      1          io       !MD06
+         BM2      1          io       !LA_EN
+         BN1      1          io       GND
+         BN2      1          io       GND
+         BP1      1          io       !MD07
+         BP2      1          io       !INT_IN_PROG
+         BR1      1          io       !DATA04
+         BR2      1          io                ***   unused    ***
+         BS1      1          io       !DATA05
+         BS2      1          io                ***   unused    ***
+         BT1      1          io       GND
+         BT2      1          io       GND
+         BU1      1          io       !DATA06
+         BU2      1          io       !RUN
+         BV1      1          io       !DATA07
+         BV2      1          io       !POWER_OK
+         CA1      1          io                ***   unused    ***
+         CA2      1          io       VCC
+         CB1      1          io                ***   unused    ***
+         CB2      1          io                ***   unused    ***
+         CC1      1          io       GND
+         CC2      1          io       GND
+         CD1      1          io       !PAUSE
+         CD2      1          io       TP1
+         CE1      1          io       !C0
+         CE2      1          io       TP2
+         CF1      1          io       GND
+         CF2      1          io       GND
+         CH1      1          io       !C1
+         CH2      1          io       TP3
+         CJ1      1          io                ***   unused    ***
+         CJ2      1          io       TP4
+         CK1      1          io                ***   unused    ***
+         CK2      1          io       !TS1
+         CL1      1          io       INTERNAL_IO
+         CL2      1          io                ***   unused    ***
+         CM1      1          io                ***   unused    ***
+         CM2      1          io       !TS3
+         CN1      1          io       GND
+         CN2      1          io       GND
+         CP1      1          io       !INT_RQST
+         CP2      1          io       !TS4
+         CR1      1          io       INITIALIZE
+         CR2      1          io                ***   unused    ***
+         CS1      1          io       !SKIP
+         CS2      1          io                ***   unused    ***
+         CT1      1          io       GND
+         CT2      1          io       GND
+         CU1      1          io       !CPMA_DISABLE
+         CU2      1          io       !IND1
+         CV1      1          io       !MSIRDIS
+         CV2      1          io       !IND2
+         DA1      1          io                ***   unused    ***
+         DA2      1          io       +15V
+         DB1      1          io                ***   unused    ***
+         DB2      1          io                ***   unused    ***
+         DC1      1          io       GND
+         DC2      1          io       GND
+         DD1      1          io                ***   unused    ***
+         DD2      1          io       !IR0
+         DE1      1          io                ***   unused    ***
+         DE2      1          io       !IR1
+         DF1      1          io       GND
+         DF2      1          io       GND
+         DH1      1          io                ***   unused    ***
+         DH2      1          io                ***   unused    ***
+         DJ1      1          io                ***   unused    ***
+         DJ2      1          io       !F
+         DK1      1          io       !MD08
+         DK2      1          io       !D
+         DL1      1          io       !MD09
+         DL2      1          io                ***   unused    ***
+         DM1      1          io       !MD10
+         DM2      1          io       !USER_MODE
+         DN1      1          io       GND
+         DN2      1          io       GND
+         DP1      1          io       !MD11
+         DP2      1          io       !F_SET
+         DR1      1          io       !DATA08
+         DR2      1          io       PULSE_LA
+         DS1      1          io       !DATA09
+         DS2      1          io                ***   unused    ***
+         DT1      1          io       GND
+         DT2      1          io       GND
+         DU1      1          io       !DATA10
+         DU2      1          io       !KEY_CONTROL
+         DV1      1          io       !DATA11
+         DV2      1          io                ***   unused    ***
+         EA1      1          io                ***   unused    ***
+         EA2      1          io                ***   unused    ***
+         EB1      1          io                ***   unused    ***
+         EB2      1          io       !P6_BS0
+         EC1      1          io                ***   unused    ***
+         EC2      1          io                ***   unused    ***
+         ED1      1          io                ***   unused    ***
+         ED2      1          io       !P6_BS1
+         EE1      1          io                ***   unused    ***
+         EE2      1          io                ***   unused    ***
+         EF1      1          io                ***   unused    ***
+         EF2      1          io                ***   unused    ***
+         EH1      1          io                ***   unused    ***
+         EH2      1          io                ***   unused    ***
+         EJ1      1          io                ***   unused    ***
+         EJ2      1          io                ***   unused    ***
+         EK1      1          io                ***   unused    ***
+         EK2      1          io                ***   unused    ***
+         EL1      1          io                ***   unused    ***
+         EL2      1          io       !P6_BS2
+         EM1      1          io                ***   unused    ***
+         EM2      1          io                ***   unused    ***
+         EN1      1          io                ***   unused    ***
+         EN2      1          io                ***   unused    ***
+         EP1      1          io                ***   unused    ***
+         EP2      1          io       !P6_BS3
+         ER1      1          io                ***   unused    ***
+         ER2      1          io                ***   unused    ***
+         ES1      1          io                ***   unused    ***
+         ES2      1          io                ***   unused    ***
+         ET1      1          io                ***   unused    ***
+         ET2      1          io                ***   unused    ***
+         EU1      1          io                ***   unused    ***
+         EU2      1          io                ***   unused    ***
+         EV1      1          io                ***   unused    ***
+         EV2      1          io                ***   unused    ***
+         FA1      1          io                ***   unused    ***
+         FA2      1          io                ***   unused    ***
+         FB1      1          io                ***   unused    ***
+         FB2      1          io                ***   unused    ***
+         FC1      1          io                ***   unused    ***
+         FC2      1          io                ***   unused    ***
+         FD1      1          io                ***   unused    ***
+         FD2      1          io                ***   unused    ***
+         FE1      1          io                ***   unused    ***
+         FE2      1          io                ***   unused    ***
+         FF1      1          io                ***   unused    ***
+         FF2      1          io                ***   unused    ***
+         FH1      1          io                ***   unused    ***
+         FH2      1          io                ***   unused    ***
+         FJ1      1          io                ***   unused    ***
+         FJ2      1          io                ***   unused    ***
+         FK1      1          io                ***   unused    ***
+         FK2      1          io                ***   unused    ***
+         FL1      1          io                ***   unused    ***
+         FL2      1          io                ***   unused    ***
+         FM1      1          io                ***   unused    ***
+         FM2      1          io                ***   unused    ***
+         FN1      1          io                ***   unused    ***
+         FN2      1          io                ***   unused    ***
+         FP1      1          io                ***   unused    ***
+         FP2      1          io                ***   unused    ***
+         FR1      1          io                ***   unused    ***
+         FR2      1          io                ***   unused    ***
+         FS1      1          io                ***   unused    ***
+         FS2      1          io                ***   unused    ***
+         FT1      1          io                ***   unused    ***
+         FT2      1          io                ***   unused    ***
+         FU1      1          io                ***   unused    ***
+         FU2      1          io                ***   unused    ***
+         FV1      1          io                ***   unused    ***
+         FV2      1          io                ***   unused    ***
+

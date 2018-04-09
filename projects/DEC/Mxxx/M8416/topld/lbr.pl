@@ -47,6 +47,10 @@ sub dec23009c6 {
   &ocassign($pad{12}, "!(!(!$pad{6}))#!($pad{19})") if defined $pad{12};
   $oc{$pad{13}} = 1 if defined $pad{13};
   &ocassign($pad{13}, "!(!(!$pad{7}))#!($pad{19})") if defined $pad{13};
+  $oc{$pad{15}} = 1 if defined $pad{15};
+  &ocassign($pad{15}, "!(!(!$pad{8}))#!($pad{19})") if defined $pad{15};
+  $oc{$pad{16}} = 1 if defined $pad{16};
+  &ocassign($pad{16}, "!(!(!$pad{9}))#!($pad{19})") if defined $pad{16};
   &qcode("$pad{17} = !(!$pad{23}&!$pad{22}\n   #!$pad{21});\n") if defined $pad{17};
 }
 $hidden{"dec23009c6"} = 0;
@@ -60,10 +64,10 @@ sub dec23010c6 {
   &ocassign($pad{12}, "!(!(!$pad{7}&!$pad{20}&$pad{21}&!$pad{22}\n   #!$pad{3}&!$pad{21}&$pad{22}\n   #!$pad{8}&$pad{20}&$pad{21}\n   #!$pad{25}&!$pad{21}&!$pad{22}\n   #!$pad{20}&!$pad{21}&!$pad{22}\n   #$pad{21}&$pad{22}))#!($pad{19})") if defined $pad{12};
   $oc{$pad{13}} = 1 if defined $pad{13};
   &ocassign($pad{13}, "!(!(!$pad{8}&!$pad{20}&$pad{21}&!$pad{22}\n   #!$pad{4}&!$pad{21}&$pad{22}\n   #!$pad{9}&$pad{20}&$pad{21}\n   #!$pad{26}&!$pad{21}&!$pad{22}\n   #!$pad{20}&!$pad{21}&!$pad{22}\n   #$pad{21}&$pad{22}))#!($pad{19})") if defined $pad{13};
-  $oc{$pad{14}} = 1 if defined $pad{14};
-  &ocassign($pad{14}, "!(!(!$pad{3}&!$pad{21}&$pad{22}\n   #!$pad{5}&$pad{21}&!$pad{22}\n   #!$pad{23}&!$pad{21}&!$pad{22}\n   #!$pad{20}&!$pad{21}&!$pad{22}\n   #$pad{21}&$pad{22}))#!($pad{19})") if defined $pad{14};
   $oc{$pad{15}} = 1 if defined $pad{15};
-  &ocassign($pad{15}, "!(!(!$pad{4}&!$pad{21}&$pad{22}\n   #!$pad{6}&$pad{21}&!$pad{22}\n   #!$pad{24}&!$pad{21}&!$pad{22}\n   #!$pad{20}&!$pad{21}&!$pad{22}\n   #$pad{21}&$pad{22}))#!($pad{19})") if defined $pad{15};
+  &ocassign($pad{15}, "!(!(!$pad{3}&!$pad{21}&$pad{22}\n   #!$pad{5}&$pad{21}&!$pad{22}\n   #!$pad{23}&!$pad{21}&!$pad{22}\n   #!$pad{20}&!$pad{21}&!$pad{22}\n   #$pad{21}&$pad{22}))#!($pad{19})") if defined $pad{15};
+  $oc{$pad{16}} = 1 if defined $pad{16};
+  &ocassign($pad{16}, "!(!(!$pad{4}&!$pad{21}&$pad{22}\n   #!$pad{6}&$pad{21}&!$pad{22}\n   #!$pad{24}&!$pad{21}&!$pad{22}\n   #!$pad{20}&!$pad{21}&!$pad{22}\n   #$pad{21}&$pad{22}))#!($pad{19})") if defined $pad{16};
 }
 $hidden{"dec23010c6"} = 0;
 
@@ -112,8 +116,14 @@ sub dec23441a2 {
 $hidden{"dec23441a2"} = 0;
 
 sub dec23442a2 {
+  $oc{$pad{10}} = 1 if defined $pad{10};
+  &ocassign($pad{10}, "!(!($pad{7}&$pad{6}&$pad{5}&!$pad{2}&!$pad{3}&$pad{4}&$pad{15}\n   #$pad{7}&$pad{6}&$pad{1}&!$pad{2}&!$pad{3}&$pad{4}&$pad{15}\n   #$pad{7}&$pad{1}&!$pad{2}&$pad{3}&$pad{4}&$pad{15}\n   #$pad{7}&!$pad{6}&$pad{5}&$pad{1}&!$pad{2}&$pad{3}&!$pad{4}&$pad{15}\n   #!$pad{7}&$pad{6}&!$pad{5}&$pad{1}&$pad{2}&!$pad{3}&$pad{4}\n   #!$pad{7}&!$pad{6}&$pad{5}&$pad{2}&$pad{3}&$pad{4}\n   #!$pad{7}&$pad{6}&$pad{5}&$pad{1}&$pad{2}&!$pad{4}&$pad{15}\n   #!$pad{7}&!$pad{6}&$pad{5}&$pad{1}&$pad{2}&$pad{3}&!$pad{4}\n   #$pad{7}&!$pad{6}&$pad{5}&!$pad{2}&$pad{3}&$pad{4}&$pad{15}\n   #!$pad{7}&$pad{6}&$pad{5}&$pad{2}&!$pad{3}&$pad{4}&$pad{15}\n   #$pad{7}&$pad{6}&$pad{5}&$pad{1}&!$pad{2}&!$pad{3}\n   #!$pad{7}&!$pad{6}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   #$pad{7}&!$pad{1}&$pad{2}&!$pad{3}&!$pad{4}&$pad{15}\n   #$pad{7}&!$pad{5}&$pad{2}&!$pad{3}&!$pad{4}&$pad{15}\n   #$pad{7}&!$pad{5}&!$pad{1}&$pad{2}&!$pad{3}&$pad{15}\n   #$pad{7}&!$pad{6}&!$pad{1}&$pad{2}&!$pad{4}&$pad{15}\n   #$pad{7}&!$pad{6}&!$pad{5}&$pad{2}&!$pad{4}&$pad{15}\n   #$pad{7}&!$pad{6}&!$pad{5}&!$pad{1}&$pad{2}&$pad{15}\n   #$pad{7}&$pad{6}&!$pad{2}&$pad{3}&$pad{15}\n   #!$pad{7}&$pad{6}&$pad{2}&$pad{3}&$pad{15}\n   #$pad{7}&$pad{6}&$pad{5}&$pad{1}&!$pad{15}\n   #!$pad{7}&!$pad{6}&$pad{5}&!$pad{15}\n   #$pad{7}&!$pad{6}&$pad{2}&!$pad{3}&$pad{15}\n   #!$pad{7}&!$pad{1}&!$pad{2}&!$pad{3}&!$pad{4}\n   #!$pad{7}&!$pad{5}&!$pad{2}&!$pad{3}&!$pad{4}\n   #!$pad{7}&!$pad{5}&!$pad{1}&!$pad{2}&!$pad{3}\n   #!$pad{7}&!$pad{6}&!$pad{1}&!$pad{2}&!$pad{4}\n   #!$pad{7}&!$pad{6}&!$pad{5}&!$pad{2}&!$pad{4}\n   #!$pad{7}&!$pad{6}&!$pad{5}&!$pad{1}&!$pad{2}\n   #!$pad{7}&!$pad{6}&!$pad{2}&!$pad{3}\n   #!$pad{7}&!$pad{1}&!$pad{15}\n   #!$pad{7}&!$pad{5}&!$pad{15}))#!($pad{13}&$pad{14})") if defined $pad{10};
+  $oc{$pad{11}} = 1 if defined $pad{11};
+  &ocassign($pad{11}, "!(!($pad{6}&$pad{1}&!$pad{3}&$pad{4}&$pad{15}\n   #!$pad{6}&$pad{5}&!$pad{1}&$pad{3}&$pad{4}\n   #$pad{6}&$pad{5}&$pad{1}&!$pad{3}&!$pad{4}\n   #!$pad{6}&$pad{5}&$pad{1}&$pad{3}&!$pad{4}&$pad{15}\n   #!$pad{6}&!$pad{5}&!$pad{1}&!$pad{3}&$pad{4}\n   #!$pad{6}&!$pad{5}&!$pad{3}&!$pad{4}\n   #!$pad{7}&$pad{6}&$pad{5}&$pad{1}&!$pad{15}\n   #$pad{6}&$pad{5}&!$pad{3}&$pad{4}&$pad{15}\n   #!$pad{6}&$pad{1}&$pad{3}&$pad{4}&$pad{15}\n   #$pad{6}&!$pad{1}&$pad{3}&!$pad{4}&$pad{15}\n   #$pad{6}&!$pad{5}&$pad{3}&!$pad{4}&$pad{15}\n   #$pad{6}&!$pad{5}&!$pad{1}&$pad{3}&$pad{15}\n   #$pad{7}&$pad{6}&$pad{5}&$pad{1}&!$pad{15}\n   #!$pad{6}&!$pad{1}&!$pad{3}&!$pad{4}\n   #!$pad{6}&!$pad{1}&!$pad{15}\n   #!$pad{6}&!$pad{5}&!$pad{15}))#!($pad{13}&$pad{14})") if defined $pad{11};
+  $oc{$pad{12}} = 1 if defined $pad{12};
+  &ocassign($pad{12}, "!(!(!$pad{6}&$pad{5}&$pad{1}&!$pad{15}\n   #!$pad{7}&$pad{6}&$pad{5}&$pad{1}&!$pad{15}\n   #$pad{7}&$pad{6}&$pad{5}&$pad{1}&!$pad{15}\n   #$pad{5}&!$pad{1}&$pad{4}&$pad{15}\n   #!$pad{5}&$pad{1}&$pad{4}&$pad{15}\n   #!$pad{5}&!$pad{1}&!$pad{4}\n   #$pad{5}&$pad{1}&!$pad{4}\n   #!$pad{5}&!$pad{1}&!$pad{15}))#!($pad{13}&$pad{14})") if defined $pad{12};
   $oc{$pad{9}} = 1 if defined $pad{9};
-  &ocassign($pad{9}, "!(!(!$pad{1}&!$pad{2}&!$pad{3}&!$pad{4}\n   #!$pad{5}&!$pad{2}&!$pad{3}&!$pad{4}\n   #!$pad{7}&!$pad{1}&!$pad{3}&!$pad{4}\n   #!$pad{7}&!$pad{5}&!$pad{3}&!$pad{4}\n   #!$pad{6}&!$pad{1}&!$pad{2}&!$pad{4}\n   #!$pad{6}&!$pad{5}&!$pad{2}&!$pad{4}\n   #!$pad{5}&!$pad{1}&!$pad{2}&!$pad{3}\n   #!$pad{7}&!$pad{6}&!$pad{1}&!$pad{4}\n   #!$pad{7}&!$pad{6}&!$pad{5}&!$pad{4}\n   #!$pad{7}&!$pad{5}&!$pad{1}&!$pad{3}\n   #!$pad{6}&!$pad{5}&!$pad{1}&!$pad{2}\n   #!$pad{7}&!$pad{6}&!$pad{5}&!$pad{1}\n   #!$pad{6}&!$pad{2}&!$pad{3}\n   #!$pad{7}&!$pad{6}&!$pad{3}\n   #!$pad{1}&!$pad{15}\n   #!$pad{5}&!$pad{15}\n   #!$pad{6}&!$pad{15}\n   #!$pad{7}&!$pad{15}\n   #!$pad{7}&!$pad{2}))#!($pad{13}&$pad{14})") if defined $pad{9};
+  &ocassign($pad{9}, "!(!(!$pad{7}&!$pad{15}\n   #!$pad{6}&!$pad{15}\n   #!$pad{1}&!$pad{2}&!$pad{3}&!$pad{4}\n   #!$pad{5}&!$pad{2}&!$pad{3}&!$pad{4}\n   #!$pad{5}&!$pad{1}&!$pad{2}&!$pad{3}\n   #!$pad{7}&!$pad{1}&!$pad{3}&!$pad{4}\n   #!$pad{6}&!$pad{1}&!$pad{2}&!$pad{4}\n   #!$pad{7}&!$pad{5}&!$pad{3}&!$pad{4}\n   #!$pad{6}&!$pad{5}&!$pad{2}&!$pad{4}\n   #!$pad{7}&!$pad{5}&!$pad{1}&!$pad{3}\n   #!$pad{6}&!$pad{5}&!$pad{1}&!$pad{2}\n   #!$pad{7}&!$pad{6}&!$pad{1}&!$pad{4}\n   #!$pad{7}&!$pad{6}&!$pad{5}&!$pad{4}\n   #!$pad{7}&!$pad{6}&!$pad{5}&!$pad{1}\n   #!$pad{6}&!$pad{2}&!$pad{3}\n   #!$pad{7}&!$pad{6}&!$pad{3}\n   #!$pad{1}&!$pad{15}\n   #!$pad{5}&!$pad{15}\n   #!$pad{7}&!$pad{2}))#!($pad{13}&$pad{14})") if defined $pad{9};
 }
 $hidden{"dec23442a2"} = 0;
 
