@@ -37,8 +37,8 @@ there are a couple of places in the design where cross-coupled
 gates are used to build flip-flops, which generates a "signal 
 depends on itself" error.
 
-So, going back to the schematic, M8416P (TODO) is a version of 
-the M8416 with these logic loops replaced with proper flip-flops, 
+So, going back to the schematic, M8416P is a version of the 
+M8416 with these logic loops replaced with proper flip-flops, 
 then the logic extraction is done again, leading to M416P.PLD.
 
 Many of these processes are error prone.  It is likely that minor 

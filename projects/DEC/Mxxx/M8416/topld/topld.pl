@@ -243,12 +243,14 @@ sub sn74h10 {
 $hidden{'sn74h10'} = 0;
 
 sub sn7411 {
-  &sn7410;
+  &qcode("$pad{12} = $pad{1} & $pad{2} & $pad{13};\n") if defined $pad{12};
+  &qcode("$pad{ 6} = $pad{3} & $pad{4} & $pad{5};\n") if defined $pad{6};
+  &qcode("$pad{ 8} = $pad{9} & $pad{10} & $pad{11);\n") if defined $pad{8};
 }
 $hidden{'sn7411'} = 0;
 
 sub sn74h11 {
-  &sn7410;
+  &sn7411;
 }
 $hidden{'sn74h11'} = 0;
 
@@ -928,20 +930,20 @@ $hidden{'sn74180'} = 0;
 
 sub sn74189 {
   $oc{$pad{11}} = 1 if defined $pad{11};
-  print "node ra4, rb4, rc4, rd4, re4, rf4, rg4, rh4;\n" if defined $pad{11};
-  print "node ri4, rj4, rk4, rl4, rm4, rn4, ro4, rp4;\n" if defined $pad{11};
+  print "node ra4, rb4, rc4, rd4, re4, rf4, rg4, rh4\r;\n" if defined $pad{11};
+  print "node ri4, rj4, rk4, rl4, rm4, rn4, ro4, rp4\r;\n" if defined $pad{11};
   &ocassign($pad{11}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!rp4\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!ro4\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rn4\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rm4\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rl4\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rk4\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!rj4\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!ri4\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rh4\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rg4\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!rf4\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!re4\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rd4\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rc4\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!rb4\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!ra4") if defined $pad{11};
   $oc{$pad{5}} = 1 if defined $pad{5};
-  print "node ra1, rb1, rc1, rd1, re1, rf1, rg1, rh1;\n" if defined $pad{5};
-  print "node ri1, rj1, rk1, rl1, rm1, rn1, ro1, rp1;\n" if defined $pad{5};
+  print "node ra1, rb1, rc1, rd1, re1, rf1, rg1, rh1;\r\n" if defined $pad{5};
+  print "node ri1, rj1, rk1, rl1, rm1, rn1, ro1, rp1;\r\n" if defined $pad{5};
   &ocassign($pad{5}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!rp1\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!ro1\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rn1\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rm1\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rl1\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rk1\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!rj1\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!ri1\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rh1\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rg1\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!rf1\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!re1\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rd1\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rc1\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!rb1\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!ra1") if defined $pad{5};
   $oc{$pad{7}} = 1 if defined $pad{7};
-  print "node ra2, rb2, rc2, rd2, re2, rf2, rg2, rh2;\n" if defined $pad{7};
-  print "node ri2, rj2, rk2, rl2, rm2, rn2, ro2, rp2;\n" if defined $pad{7};
+  print "node ra2, rb2, rc2, rd2, re2, rf2, rg2, rh2\r;\n" if defined $pad{7};
+  print "node ri2, rj2, rk2, rl2, rm2, rn2, ro2, rp2\r;\n" if defined $pad{7};
   &ocassign($pad{7}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!rp2\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!ro2\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rn2\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rm2\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rl2\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rk2\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!rj2\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!ri2\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rh2\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rg2\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!rf2\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!re2\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rd2\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rc2\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!rb2\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!ra2") if defined $pad{7};
   $oc{$pad{9}} = 1 if defined $pad{9};
-  print "node ra3, rb3, rc3, rd3, re3, rf3, rg3, rh3;\n" if defined $pad{9};
-  print "node ri3, rj3, rk3, rl3, rm3, rn3, ro3, rp3;\n" if defined $pad{9};
+  print "node ra3, rb3, rc3, rd3, re3, rf3, rg3, rh3\r;\n" if defined $pad{9};
+  print "node ri3, rj3, rk3, rl3, rm3, rn3, ro3, rp3\r;\n" if defined $pad{9};
   &ocassign($pad{9}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!rp3\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!ro3\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rn3\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rm3\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rl3\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rk3\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!rj3\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!ri3\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rh3\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rg3\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!rf3\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!re3\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rd3\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rc3\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!rb3\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!ra3") if defined $pad{9};
   &qcode("ra1.l = $pad{4};\n") if defined $pad{4};
   &qcode("ra1.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
