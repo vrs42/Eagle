@@ -3,7 +3,7 @@
 
 Name     M8416P ;
 PartNo   cpld ;
-Date     4/8/2018 ;
+Date     4/16/2018 ;
 Revision 01 ;
 Designer  ;
 Company   ;
@@ -56,6 +56,18 @@ pin = break_in_prog_low;
 pin = c0_low;
 pin = c1_low;
 pin = cpma_disable_low;
+pin = data00_low;
+pin = data01_low;
+pin = data02_low;
+pin = data03_low;
+pin = data04_low;
+pin = data05_low;
+pin = data06_low;
+pin = data07_low;
+pin = data08_low;
+pin = data09_low;
+pin = data10_low;
+pin = data11_low;
 pin = ema0_low;
 pin = ema1_low;
 pin = ema2_low;
@@ -575,9 +587,9 @@ gdollar_4.d = 'b'0;
 p4_blbm_low = !gdollar_4;
 
 /* e27: sn7411 */
-p3_btp4 = !tp4;
-n_t_179x = !(p6_dioi_low&p1_enrf_low);
-n_t_5x = !(p3_btp2&p3_binit_low&p3_binit_low);
+p3_btp4 = tp4;
+n_t_179x = p6_dioi_low&p1_enrf_low;
+n_t_5x = p3_btp2&p3_binit_low&p3_binit_low;
 
 /* e28: dec23440a2 */
 /* p4_cif_low = !(!(!(!p3_bm10
