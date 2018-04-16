@@ -148,7 +148,9 @@ sub qcode {
 sub pinnode {
   local($signal) = @_;
   return if defined $con{$signal};
-  print "pinnode = $signal;\r\n";
+return unless $signal =~ /^gdollar/;
+  print "node $signal;\r\n";
+# print "pinnode = $signal;\r\n";
 }
 
 #
@@ -1684,14 +1686,12 @@ foreach (sort keys %signals) {
 }
 print "\r\n";
 print "/* Internal nodes */\r\n";
-foreach (sort keys %signal) {
-  next if /^n_t_\d+x$/;
-  next if defined $in{$_};
-  next if defined $out{$_};
+foreach (sort keys %signals) {
   next if defined $con{$_};
-  print "node $_\r\n";
+# next if /^n_t_\d+x$/;
+  print "node $_;\r\n";
 }
-#print "/* Code nodes */\r\n";
+print "\r\n/* Code nodes */\r\n";
 
 #
 # Scan the pin file again, instantiating various devices.

@@ -1,0 +1,4413 @@
+
+*******************************************************************************
+                                    M8416P
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Mon Apr 16 14:30:10 2018
+Name            M8416P 
+Partno          cpld 
+Revision        01 
+Date            4/16/2018 
+Designer        
+Company         
+Assembly        None 
+Location        E1 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+!break_in_prog_low =>
+    1 
+
+break_in_prog_low.oe  =>
+    p3_mbk
+
+!c0_low =>
+    1 
+
+c0_low.oe  =>
+    n_t_74x
+
+!c1_low =>
+    1 
+
+c1_low.oe  =>
+    n_t_73x
+
+!cpma_disable_low =>
+    1 
+
+cpma_disable_low.oe  =>
+    p3_mbk
+
+!data00_low =>
+    1 
+
+data00_low.oe  =>
+    n_t_77x & n_t_85x
+
+!data01_low =>
+    1 
+
+data01_low.oe  =>
+    n_t_77x & n_t_84x
+
+!data02_low =>
+    1 
+
+data02_low.oe  =>
+    n_t_77x & n_t_83x
+
+!data03_low =>
+    1 
+
+data03_low.oe  =>
+    n_t_77x & n_t_82x
+
+!data04_low =>
+    1 
+
+data04_low.oe  =>
+    n_t_77x & n_t_81x
+
+!data05_low =>
+    1 
+
+data05_low.oe  =>
+    n_t_77x & n_t_80x
+
+!data06_low =>
+    1 
+
+data06_low.oe  =>
+    n_t_77x & n_t_78x
+
+!data07_low =>
+    1 
+
+data07_low.oe  =>
+    n_t_77x & n_t_79x
+
+!data08_low =>
+    1 
+
+data08_low.oe  =>
+    n_t_71x & n_t_77x
+
+!data09_low =>
+    1 
+
+data09_low.oe  =>
+    n_t_75x & n_t_77x
+
+!data10_low =>
+    1 
+
+data10_low.oe  =>
+    n_t_76x & n_t_77x
+
+!data11_low =>
+    1 
+
+data11_low.oe  =>
+    n_t_70x & n_t_77x
+
+!ema0_low =>
+    1 
+
+ema0_low.oe  =>
+    !gdollar_2 & !p2_elar_low
+  # !gdollar_11 & !p2_emaen_low
+
+!ema1_low =>
+    1 
+
+ema1_low.oe  =>
+    !gdollar_1 & !p2_elar_low
+  # !gdollar_10 & !p2_emaen_low
+
+!ema2_low =>
+    1 
+
+ema2_low.oe  =>
+    !gdollar_0 & !p2_elar_low
+  # !gdollar_9 & !p2_emaen_low
+
+!force_0_low =>
+    1 
+
+force_0_low.oe  =>
+    1 
+
+!gdollar_0.d  =>
+    !n_t_45x
+
+gdollar_0.ar  =>
+    p4_pclr
+
+gdollar_0.ce  =>
+    1 
+
+gdollar_0.ck  =>
+    p4_plxa
+
+gdollar_0.oe  =>
+    !p2_elar_low
+
+!gdollar_1.d  =>
+    !n_t_44x
+
+gdollar_1.ar  =>
+    p4_pclr
+
+gdollar_1.ce  =>
+    1 
+
+gdollar_1.ck  =>
+    p4_plxa
+
+gdollar_1.oe  =>
+    !p2_elar_low
+
+!gdollar_2.d  =>
+    !n_t_43x
+
+gdollar_2.ar  =>
+    p4_pclr
+
+gdollar_2.ce  =>
+    1 
+
+gdollar_2.ck  =>
+    p4_plxa
+
+gdollar_2.oe  =>
+    !p2_elar_low
+
+!gdollar_3.d  =>
+    1 
+
+gdollar_3.ck  =>
+    0 
+
+!gdollar_4.d  =>
+    1 
+
+gdollar_4.ap  =>
+    n_t_130x & p3_bts3
+
+gdollar_4.ar  =>
+    !n_t_130x & p3_bts3
+
+gdollar_4.ck  =>
+    0 
+
+!gdollar_5.d  =>
+    !p3_bd6
+
+gdollar_5.ar  =>
+    p2_rst_low
+
+gdollar_5.ck  =>
+    n_t_164x
+
+!gdollar_6.d  =>
+    !n_t_48x
+
+gdollar_6.ar  =>
+    p3_binit
+
+gdollar_6.ce  =>
+    1 
+
+gdollar_6.ck  =>
+    p6_ckmr_low
+
+gdollar_6.oe  =>
+    !p4_rmr_low
+
+!gdollar_7.d  =>
+    !n_t_47x
+
+gdollar_7.ar  =>
+    p3_binit
+
+gdollar_7.ce  =>
+    1 
+
+gdollar_7.ck  =>
+    p6_ckmr_low
+
+gdollar_7.oe  =>
+    !p4_rmr_low
+
+!gdollar_8.d  =>
+    !n_t_46x
+
+gdollar_8.ar  =>
+    p3_binit
+
+gdollar_8.ce  =>
+    1 
+
+gdollar_8.ck  =>
+    p6_ckmr_low
+
+gdollar_8.oe  =>
+    !p4_rmr_low
+
+!gdollar_9.d  =>
+    !n_t_38x
+
+gdollar_9.ar  =>
+    p4_pclr
+
+gdollar_9.ce  =>
+    1 
+
+gdollar_9.ck  =>
+    p3_btp4
+
+gdollar_9.oe  =>
+    !p2_emaen_low
+
+!gdollar_10.d  =>
+    !n_t_39x
+
+gdollar_10.ar  =>
+    p4_pclr
+
+gdollar_10.ce  =>
+    1 
+
+gdollar_10.ck  =>
+    p3_btp4
+
+gdollar_10.oe  =>
+    !p2_emaen_low
+
+!gdollar_11.d  =>
+    !n_t_40x
+
+gdollar_11.ar  =>
+    p4_pclr
+
+gdollar_11.ce  =>
+    1 
+
+gdollar_11.ck  =>
+    p3_btp4
+
+gdollar_11.oe  =>
+    !p2_emaen_low
+
+!gdollar_12.d  =>
+    !n_t_139x
+
+gdollar_12.ar  =>
+    p3_binit
+
+gdollar_12.ce  =>
+    !p5_bmen_low
+
+gdollar_12.ck  =>
+    p3_btp4
+
+gdollar_12.oe  =>
+    !p4_rlb_low
+
+!gdollar_13.d  =>
+    !n_t_140x
+
+gdollar_13.ar  =>
+    p3_binit
+
+gdollar_13.ce  =>
+    !p5_bmen_low
+
+gdollar_13.ck  =>
+    p3_btp4
+
+gdollar_13.oe  =>
+    !p4_rlb_low
+
+!gdollar_14.d  =>
+    !n_t_141x
+
+gdollar_14.ar  =>
+    p3_binit
+
+gdollar_14.ce  =>
+    !p5_bmen_low
+
+gdollar_14.ck  =>
+    p3_btp4
+
+gdollar_14.oe  =>
+    !p4_rlb_low
+
+!gdollar_15.d  =>
+    !n_t_142x
+
+gdollar_15.ar  =>
+    p3_binit
+
+gdollar_15.ce  =>
+    !p5_bmen_low
+
+gdollar_15.ck  =>
+    p3_btp4
+
+gdollar_15.oe  =>
+    !p4_rlb_low
+
+!gdollar_16.d  =>
+    !n_t_20x
+
+gdollar_16.ck  =>
+    p4_ckifb
+
+gdollar_16.oe  =>
+    !n_t_41x & !p4_int
+
+!gdollar_17.d  =>
+    !n_t_19x
+
+gdollar_17.ck  =>
+    p4_ckifb
+
+gdollar_17.oe  =>
+    !n_t_41x & !p4_int
+
+!gdollar_18.d  =>
+    !n_t_18x
+
+gdollar_18.ck  =>
+    p4_ckifb
+
+gdollar_18.oe  =>
+    !n_t_41x & !p4_int
+
+!gdollar_19.d  =>
+    !p6_bs3_low
+
+gdollar_19.ar  =>
+    p3_binit
+
+gdollar_19.ce  =>
+    1 
+
+gdollar_19.ck  =>
+    p6_ckmr_low
+
+gdollar_19.oe  =>
+    !p4_rmr_low
+
+!gdollar_20.d  =>
+    !p6_bs2_low
+
+gdollar_20.ar  =>
+    p3_binit
+
+gdollar_20.ce  =>
+    1 
+
+gdollar_20.ck  =>
+    p6_ckmr_low
+
+gdollar_20.oe  =>
+    !p4_rmr_low
+
+!gdollar_21.d  =>
+    !p6_bs1_low
+
+gdollar_21.ar  =>
+    p3_binit
+
+gdollar_21.ce  =>
+    1 
+
+gdollar_21.ck  =>
+    p6_ckmr_low
+
+gdollar_21.oe  =>
+    !p4_rmr_low
+
+!gdollar_22.d  =>
+    !p6_bs0_low
+
+gdollar_22.ar  =>
+    p3_binit
+
+gdollar_22.ce  =>
+    1 
+
+gdollar_22.ck  =>
+    p6_ckmr_low
+
+gdollar_22.oe  =>
+    !p4_rmr_low
+
+!gdollar_23.d  =>
+    !rbs0_low
+
+gdollar_23.ar  =>
+    p3_binit
+
+gdollar_23.ce  =>
+    1 
+
+gdollar_23.ck  =>
+    p6_ckmr_low
+
+gdollar_23.oe  =>
+    !p4_rmr_low
+
+!gdollar_24.d  =>
+    !rbs1_low
+
+gdollar_24.ar  =>
+    p3_binit
+
+gdollar_24.ce  =>
+    1 
+
+gdollar_24.ck  =>
+    p6_ckmr_low
+
+gdollar_24.oe  =>
+    !p4_rmr_low
+
+!gdollar_25.d  =>
+    !rbs2_low
+
+gdollar_25.ar  =>
+    p3_binit
+
+gdollar_25.ce  =>
+    1 
+
+gdollar_25.ck  =>
+    p6_ckmr_low
+
+gdollar_25.oe  =>
+    !p4_rmr_low
+
+!gdollar_26.d  =>
+    !rbs3_low
+
+gdollar_26.ar  =>
+    p3_binit
+
+gdollar_26.ce  =>
+    1 
+
+gdollar_26.ck  =>
+    p6_ckmr_low
+
+gdollar_26.oe  =>
+    !p4_rmr_low
+
+!gdollar_27.d  =>
+    !n_t_162x
+
+gdollar_27.ar  =>
+    n_t_155x
+
+gdollar_27.ck  =>
+    p4_cksv
+
+!gdollar_28.d  =>
+    !n_t_163x
+
+gdollar_28.ar  =>
+    n_t_155x
+
+gdollar_28.ck  =>
+    p4_cksv
+
+!gdollar_29.d  =>
+    !n_t_157x
+
+gdollar_29.ar  =>
+    n_t_155x
+
+gdollar_29.ck  =>
+    p4_cksv
+
+!gdollar_30.d  =>
+    !n_t_159x
+
+gdollar_30.ar  =>
+    n_t_155x
+
+gdollar_30.ck  =>
+    p4_cksv
+
+!gdollar_31.d  =>
+    !p5_ibs3_low
+
+gdollar_31.ar  =>
+    0 
+
+gdollar_31.ce  =>
+    1 
+
+gdollar_31.ck  =>
+    p3_btp4
+
+gdollar_31.oe  =>
+    !p2_enbs_low & !p6_prup_low
+
+!gdollar_32.d  =>
+    !p5_ibs2_low
+
+gdollar_32.ar  =>
+    0 
+
+gdollar_32.ce  =>
+    1 
+
+gdollar_32.ck  =>
+    p3_btp4
+
+gdollar_32.oe  =>
+    !p2_enbs_low & !p6_prup_low
+
+!gdollar_33.d  =>
+    !p5_ibs1_low
+
+gdollar_33.ar  =>
+    0 
+
+gdollar_33.ce  =>
+    1 
+
+gdollar_33.ck  =>
+    p3_btp4
+
+gdollar_33.oe  =>
+    !p2_enbs_low & !p6_prup_low
+
+!gdollar_34.d  =>
+    !p5_ibs0_low
+
+gdollar_34.ar  =>
+    0 
+
+gdollar_34.ce  =>
+    1 
+
+gdollar_34.ck  =>
+    p3_btp4
+
+gdollar_34.oe  =>
+    !p2_enbs_low & !p6_prup_low
+
+!gdollar_35.d  =>
+    !p5_ibs3_low
+
+gdollar_35.ar  =>
+    0 
+
+gdollar_35.ce  =>
+    1 
+
+gdollar_35.ck  =>
+    p3_btp4
+
+gdollar_35.oe  =>
+    !p2_enbs_low & !p6_prup_low
+
+!gdollar_36.d  =>
+    !p5_ibs2_low
+
+gdollar_36.ar  =>
+    0 
+
+gdollar_36.ce  =>
+    1 
+
+gdollar_36.ck  =>
+    p3_btp4
+
+gdollar_36.oe  =>
+    !p2_enbs_low & !p6_prup_low
+
+!gdollar_37.d  =>
+    !p5_ibs1_low
+
+gdollar_37.ar  =>
+    0 
+
+gdollar_37.ce  =>
+    1 
+
+gdollar_37.ck  =>
+    p3_btp4
+
+gdollar_37.oe  =>
+    !p2_enbs_low & !p6_prup_low
+
+!gdollar_38.d  =>
+    !p5_ibs0_low
+
+gdollar_38.ar  =>
+    0 
+
+gdollar_38.ce  =>
+    1 
+
+gdollar_38.ck  =>
+    p3_btp4
+
+gdollar_38.oe  =>
+    !p2_enbs_low & !p6_prup_low
+
+!gdollar_39.d  =>
+    !n_t_25x
+
+gdollar_39.ar  =>
+    p4_pclr
+
+gdollar_39.ce  =>
+    1 
+
+gdollar_39.ck  =>
+    p4_plxa
+
+gdollar_39.oe  =>
+    !p2_elar_low
+
+!gdollar_40.d  =>
+    !n_t_24x
+
+gdollar_40.ar  =>
+    p4_pclr
+
+gdollar_40.ce  =>
+    1 
+
+gdollar_40.ck  =>
+    p4_plxa
+
+gdollar_40.oe  =>
+    !p2_elar_low
+
+!gdollar_41.d  =>
+    !n_t_23x
+
+gdollar_41.ar  =>
+    p4_pclr
+
+gdollar_41.ce  =>
+    1 
+
+gdollar_41.ck  =>
+    p4_plxa
+
+gdollar_41.oe  =>
+    !p2_elar_low
+
+!gdollar_42.d  =>
+    !n_t_21x
+
+gdollar_42.ar  =>
+    p4_pclr
+
+gdollar_42.ce  =>
+    1 
+
+gdollar_42.ck  =>
+    p4_plxa
+
+gdollar_42.oe  =>
+    !p2_elar_low
+
+!gdollar_43.d  =>
+    !n_t_25x
+
+gdollar_43.ar  =>
+    0 
+
+gdollar_43.ce  =>
+    1 
+
+gdollar_43.ck  =>
+    p4_plxa
+
+gdollar_43.oe  =>
+    !p2_elar_low
+
+!gdollar_44.d  =>
+    !n_t_24x
+
+gdollar_44.ar  =>
+    0 
+
+gdollar_44.ce  =>
+    1 
+
+gdollar_44.ck  =>
+    p4_plxa
+
+gdollar_44.oe  =>
+    !p2_elar_low
+
+!gdollar_45.d  =>
+    !n_t_23x
+
+gdollar_45.ar  =>
+    0 
+
+gdollar_45.ce  =>
+    1 
+
+gdollar_45.ck  =>
+    p4_plxa
+
+gdollar_45.oe  =>
+    !p2_elar_low
+
+!gdollar_46.d  =>
+    !n_t_21x
+
+gdollar_46.ar  =>
+    0 
+
+gdollar_46.ce  =>
+    1 
+
+gdollar_46.ck  =>
+    p4_plxa
+
+gdollar_46.oe  =>
+    !p2_elar_low
+
+!ibb_0.d  =>
+    !n_t_153x
+
+ibb_0.ar  =>
+    n_t_155x
+
+ibb_0.ck  =>
+    p4_ckibb
+
+!ibb_1.d  =>
+    !n_t_154x
+
+ibb_1.ar  =>
+    n_t_155x
+
+ibb_1.ck  =>
+    p4_ckibb
+
+!ibs_low =>
+    1 
+
+ibs_low.oe  =>
+    1 
+
+!int_rqst_low =>
+    1 
+
+int_rqst_low.oe  =>
+    n_t_103x
+  # p4_usint
+
+!internal_io =>
+    1 
+
+internal_io.oe  =>
+    n_t_128x
+
+!lbm_or_rbmn =>
+    !p3_bts4
+  # p3_bts4 & !p4_lbm_low & !p4_rbm_low
+
+!mbct4_low =>
+    p3_bts4 & p3_mbk
+
+!msirdis_low =>
+    1 
+
+msirdis_low.oe  =>
+    p3_mbk
+
+!mux_c0 =>
+    0 
+
+!mux_c1 =>
+    0 
+
+!mux_c2 =>
+    0 
+
+!n_t_100x =>
+    p3_bm9
+  # n_t_99x & !p3_bm9
+
+!n_t_101x =>
+    n_t_100x & !p3_decen_low
+  # p3_decen_low
+
+!n_t_102x =>
+    n_t_103x
+
+!n_t_103x =>
+    n_t_32x & n_t_92x & p3_hos_low
+
+!n_t_104x =>
+    !n_t_105x & n_t_106x
+  # !n_t_106x
+
+!n_t_105x =>
+    n_t_109x & p4_dfen
+
+!n_t_106x =>
+    n_t_107x & p3_bd
+
+!n_t_107x =>
+    p4_jmp_or_jms
+
+!n_t_108x =>
+    mams_ld_ctl
+
+!n_t_109x =>
+    !f_set_low & !n_t_108x
+
+n_t_10x =>
+    p1_us2 & p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & p3_bm8 & p3_bm9
+  # p1_us2 & !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & p3_bm8 & p3_bm9
+  # p1_us2 & p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & !p3_bm7 & p3_bm8 & p3_bm9
+  # p1_us2 & !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & !p3_bm7 & p3_bm8 & p3_bm9
+  # p1_us2 & p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & p3_bm7 & !p3_bm8 & p3_bm9
+  # p1_us2 & !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm8 & p3_bm9
+  # p1_us2 & p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm8 & p3_bm9
+  # p1_us2 & !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm8 & 
+      p3_bm9
+  # !p1_us2 & p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & p3_bm8 & !p3_bm9
+  # !p1_3v
+  # !p1_us2 & !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & p3_bm8 & !p3_bm9
+  # !p1_us2 & p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & !p3_bm7 & p3_bm8 & !p3_bm9
+  # !p1_us2 & !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & !p3_bm7 & p3_bm8 & 
+      !p3_bm9
+  # !p1_us2 & p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & p3_bm7 & !p3_bm8 & !p3_bm9
+  # !p1_us2 & !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm8 & 
+      !p3_bm9
+  # !p1_us2 & p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm8 & 
+      !p3_bm9
+  # !p1_us2 & !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm8 & 
+      !p3_bm9
+
+!n_t_110x =>
+    p3_btp4 & p4_int
+
+!n_t_111x =>
+    !n_t_92x & p3_btp3
+  # !p3_btp3
+
+!n_t_112x =>
+    n_t_110x & p4_pclr_low & p4_plxa_low
+
+!n_t_113x =>
+    n_t_124x & p3_bf & p3_bm3_low
+
+!n_t_114x =>
+    1 
+
+n_t_114x.oe  =>
+    1 
+
+!n_t_115x =>
+    1 
+
+n_t_115x.oe  =>
+    1 
+
+!n_t_116x =>
+    1 
+
+n_t_116x.oe  =>
+    1 
+
+!n_t_117x =>
+    1 
+
+n_t_117x.oe  =>
+    1 
+
+!n_t_118x =>
+    1 
+
+n_t_118x.oe  =>
+    1 
+
+!n_t_119x =>
+    1 
+
+n_t_119x.oe  =>
+    1 
+
+!n_t_11x =>
+    p1_us2 & !p3_bm9
+  # p1_us2 & p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & p3_bm7 & !p3_bm8 & p3_bm9
+  # p1_us2 & !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm8 & p3_bm9
+  # p1_us2 & p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm8 & p3_bm9
+  # p1_us2 & !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm8 & 
+      p3_bm9
+  # p1_us3 & !p3_bm6 & !p3_bm9
+  # p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us2 & p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & p3_bm7 & !p3_bm8 & !p3_bm9
+  # !p1_us2 & !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm8 & 
+      !p3_bm9
+  # !p1_us2 & p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm8 & 
+      !p3_bm9
+  # !p1_us2 & !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm8 & 
+      !p3_bm9
+  # p1_us2 & p1_us3 & !p3_bm6 & p3_bm9
+  # p1_us2 & p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & p3_bm9
+  # p1_us2 & !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & p3_bm9
+  # p1_us2 & p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & p3_bm9
+  # p1_us2 & p1_us3 & p1_us5 & p3_bm6 & !p3_bm7 & p3_bm9
+  # p1_us2 & !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & p3_bm9
+  # p1_us2 & !p1_us3 & p1_us5 & !p3_bm6 & !p3_bm7 & p3_bm9
+
+!n_t_120x =>
+    1 
+
+n_t_120x.oe  =>
+    1 
+
+!n_t_121x =>
+    1 
+
+n_t_121x.oe  =>
+    1 
+
+!n_t_122x =>
+    !n_t_121x & p4_suf_low
+  # !p4_suf_low
+
+!n_t_123x =>
+    p3_bd & p4_jmp_or_jms
+
+!n_t_124x =>
+    p3_bm0_low & !p3_bm1
+  # p3_bm1
+
+!n_t_125x =>
+    p4_rmf_low & p4_rts_low
+
+!n_t_126x =>
+    n_t_101x
+
+!n_t_127x =>
+    ir1_low
+
+!n_t_128x =>
+    n_t_126x & p4_let_io_low & p4_lxm_low
+
+!n_t_129x =>
+    n_t_133x & n_t_92x
+
+n_t_12x =>
+    !n_t_10x
+  # n_t_10x & !p1_us0 & p1_us1 & p3_bm5
+  # n_t_10x & !p1_us0 & !p1_us1 & !p3_bm5
+
+!n_t_130x =>
+    p3_btp3 & !p4_lbm_low
+  # p4_lbm_low
+
+!n_t_131x =>
+    p4_gtf_low
+
+!n_t_132x =>
+    p4_fatal_lp_0_rp
+
+!n_t_133x =>
+    !n_t_111x
+  # n_t_111x & !n_t_122x
+
+!n_t_134x =>
+    n_t_112x
+
+!n_t_135x =>
+    p3_btp3 & p4_new_fld
+
+!n_t_136x =>
+    n_t_138x & p3_btp3
+
+!n_t_138x =>
+    p4_cuf_low
+
+!n_t_139x =>
+    1 
+
+n_t_139x.oe  =>
+    1 
+
+!n_t_13x =>
+    n_t_12x & !n_t_8x
+  # n_t_8x
+
+!n_t_140x =>
+    1 
+
+n_t_140x.oe  =>
+    1 
+
+!n_t_141x =>
+    1 
+
+n_t_141x.oe  =>
+    1 
+
+!n_t_142x =>
+    1 
+
+n_t_142x.oe  =>
+    1 
+
+!n_t_143x =>
+    1 
+
+n_t_143x.oe  =>
+    1 
+
+!n_t_144x =>
+    1 
+
+n_t_144x.oe  =>
+    1 
+
+!n_t_145x =>
+    1 
+
+n_t_145x.oe  =>
+    n_t_139x & n_t_140x & n_t_141x & n_t_142x & !rp2
+  # n_t_139x & n_t_140x & n_t_141x & !n_t_142x & !ro2
+  # !n_t_139x & n_t_140x & n_t_141x & n_t_142x & !rn2
+  # !n_t_139x & n_t_140x & n_t_141x & !n_t_142x & !rm2
+  # n_t_139x & !n_t_140x & n_t_141x & n_t_142x & !rl2
+  # n_t_139x & !n_t_140x & n_t_141x & !n_t_142x & !rk2
+  # !n_t_139x & !n_t_140x & n_t_141x & n_t_142x & !rj2
+  # !n_t_139x & !n_t_140x & n_t_141x & !n_t_142x & !ri2
+  # n_t_139x & n_t_140x & !n_t_141x & n_t_142x & !rh2
+  # n_t_139x & n_t_140x & !n_t_141x & !n_t_142x & !rg2
+  # !n_t_139x & n_t_140x & !n_t_141x & n_t_142x & !rf2
+  # !n_t_139x & n_t_140x & !n_t_141x & !n_t_142x & !re2
+  # n_t_139x & !n_t_140x & !n_t_141x & n_t_142x & !rd2
+  # n_t_139x & !n_t_140x & !n_t_141x & !n_t_142x & !rc2
+  # !n_t_139x & !n_t_140x & !n_t_141x & n_t_142x & !rb2
+  # !n_t_139x & !n_t_140x & !n_t_141x & !n_t_142x & !ra2
+  # !n_t_161x & !p5_dbs_low
+  # !ibs_low & !n_t_158x
+
+!n_t_146x =>
+    1 
+
+n_t_146x.oe  =>
+    n_t_139x & n_t_140x & n_t_141x & n_t_142x & !rp1
+  # n_t_139x & n_t_140x & n_t_141x & !n_t_142x & !ro1
+  # !n_t_139x & n_t_140x & n_t_141x & n_t_142x & !rn1
+  # !n_t_139x & n_t_140x & n_t_141x & !n_t_142x & !rm1
+  # n_t_139x & !n_t_140x & n_t_141x & n_t_142x & !rl1
+  # n_t_139x & !n_t_140x & n_t_141x & !n_t_142x & !rk1
+  # !n_t_139x & !n_t_140x & n_t_141x & n_t_142x & !rj1
+  # !n_t_139x & !n_t_140x & n_t_141x & !n_t_142x & !ri1
+  # n_t_139x & n_t_140x & !n_t_141x & n_t_142x & !rh1
+  # n_t_139x & n_t_140x & !n_t_141x & !n_t_142x & !rg1
+  # !n_t_139x & n_t_140x & !n_t_141x & n_t_142x & !rf1
+  # !n_t_139x & n_t_140x & !n_t_141x & !n_t_142x & !re1
+  # n_t_139x & !n_t_140x & !n_t_141x & n_t_142x & !rd1
+  # n_t_139x & !n_t_140x & !n_t_141x & !n_t_142x & !rc1
+  # !n_t_139x & !n_t_140x & !n_t_141x & n_t_142x & !rb1
+  # !n_t_139x & !n_t_140x & !n_t_141x & !n_t_142x & !ra1
+  # !n_t_160x & !p5_dbs_low
+  # !ibs_low & !n_t_156x
+
+!n_t_147x =>
+    p4_new_fld
+
+!n_t_148x =>
+    p4_lxa
+
+!n_t_149x =>
+    1 
+
+n_t_149x.oe  =>
+    1 
+
+!n_t_150x =>
+    1 
+
+n_t_150x.oe  =>
+    1 
+
+!n_t_151x =>
+    1 
+
+n_t_151x.oe  =>
+    1 
+
+!n_t_152x =>
+    1 
+
+n_t_152x.oe  =>
+    1 
+
+!n_t_153x =>
+    1 
+
+n_t_153x.oe  =>
+    1 
+
+!n_t_154x =>
+    1 
+
+n_t_154x.oe  =>
+    1 
+
+!n_t_155x =>
+    0 
+
+!n_t_156x =>
+    n_t_159x
+
+!n_t_157x.d  =>
+    !n_t_150x
+
+n_t_157x.ar  =>
+    n_t_155x
+
+n_t_157x.ck  =>
+    p4_ckif
+
+!n_t_158x =>
+    n_t_157x
+
+!n_t_159x.d  =>
+    !n_t_149x
+
+n_t_159x.ar  =>
+    n_t_155x
+
+n_t_159x.ck  =>
+    p4_ckif
+
+!n_t_15x =>
+    p3_btp3_low
+  # !p3_btp3_low & p4_lrr_low
+
+!n_t_160x =>
+    n_t_163x
+
+!n_t_161x =>
+    n_t_162x
+
+!n_t_162x.d  =>
+    !n_t_152x
+
+n_t_162x.ar  =>
+    n_t_155x
+
+n_t_162x.ck  =>
+    p4_ckdb
+
+!n_t_163x.d  =>
+    !n_t_151x
+
+n_t_163x.ar  =>
+    n_t_155x
+
+n_t_163x.ck  =>
+    p4_ckdb
+
+!n_t_164x =>
+    p3_btp3_low
+  # !p3_btp3_low & p4_lxm_low
+
+!n_t_165x =>
+    !ind1_low
+
+!n_t_166x =>
+    n_t_165x
+
+!n_t_168x.d  =>
+    p6_usm_low
+
+n_t_168x.ap  =>
+    !n_t_177x
+
+n_t_168x.ar  =>
+    !n_t_177x
+
+n_t_168x.ck  =>
+    p4_cksv
+
+!n_t_169x =>
+    n_t_165x & p4_bts1 & p6_bind2
+
+!n_t_16x =>
+    n_t_17x
+
+!n_t_170x =>
+    p4_rmf_low
+
+!n_t_171x =>
+    p4_suf_low
+
+!n_t_172x =>
+    n_t_168x & n_t_170x
+
+!n_t_173x =>
+    p3_bd5 & p4_rmf_low
+
+!n_t_174x =>
+    n_t_172x & n_t_173x
+
+!n_t_175x =>
+    n_t_171x & p3_btp3
+
+!n_t_176x.d  =>
+    n_t_174x
+
+n_t_176x.ap  =>
+    !p4_cumb_low
+
+n_t_176x.ar  =>
+    !n_t_175x
+
+n_t_176x.ck  =>
+    p4_ckufb
+
+!n_t_177x =>
+    0 
+
+!n_t_178x =>
+    p5_bmen_low & p5_dbs_low
+
+!n_t_179x =>
+    !p1_enrf_low & p6_dioi_low
+  # !p6_dioi_low
+
+!n_t_17x =>
+    n_t_134x & n_t_135x & n_t_136x
+
+!n_t_180x =>
+    n_t_178x & p3_btp4
+
+!n_t_181x =>
+    p3_btp3 & p4_new_fld & p6_maint
+
+!n_t_183x.d  =>
+    1 
+
+n_t_183x.ap  =>
+    !n_t_7x
+
+n_t_183x.ar  =>
+    !p3_btp2_low
+
+n_t_183x.ck  =>
+    0 
+
+!n_t_18x =>
+    1 
+
+n_t_18x.oe  =>
+    p1_bfl0 & !p4_let_io_low
+  # !n_t_2x & p3_bd6
+  # !gdollar_18 & !n_t_41x & !p4_int
+  # !p2_sf0 & !p4_rmf_low
+
+!n_t_19x =>
+    1 
+
+n_t_19x.oe  =>
+    p1_bfl1 & !p4_let_io_low
+  # !n_t_2x & p3_bd7
+  # !gdollar_17 & !n_t_41x & !p4_int
+  # !p2_sf1 & !p4_rmf_low
+
+!n_t_1x =>
+    p3_btp3_low
+  # !p3_btp3_low & p4_lusr_low
+
+!n_t_20x =>
+    1 
+
+n_t_20x.oe  =>
+    p1_bfl2 & !p4_let_io_low
+  # !n_t_2x & p3_bd8
+  # !gdollar_16 & !n_t_41x & !p4_int
+  # !p2_sf2 & !p4_rmf_low
+
+n_t_21x =>
+    p3_bd2
+  # p3_bd1 & !p3_bd2
+
+!n_t_22x =>
+    1 
+
+n_t_22x.oe  =>
+    1 
+
+n_t_23x =>
+    p3_bd2
+  # p3_bd1 & !p3_bd2
+
+n_t_24x =>
+    !p3_bd1
+  # p3_bd2
+
+n_t_25x =>
+    !p3_bd1
+  # p3_bd2
+
+!n_t_26x =>
+    link_low
+
+!n_t_27x =>
+    p4_gtf_low & p4_gts_low
+
+!n_t_28x =>
+    la_en_low
+
+!n_t_29x =>
+    1 
+
+n_t_29x.oe  =>
+    p6_en5 & p6_en9
+  # !p3_bm5 & p6_en9
+  # !p3_bm9 & p6_en5
+  # !p3_bm5 & !p3_bm9
+  # !p3_cfrom_low
+  # !p3_e2cfrom_low
+
+!n_t_2x =>
+    p4_lxa
+  # n_t_3x & !p4_lxa
+
+!n_t_30x =>
+    p3_bts3
+
+!n_t_31x =>
+    ts1_low
+  # power_ok_low & !ts1_low
+
+!n_t_32x =>
+    p3_bf & p3_bm0 & p3_bm1 & p3_bm2_low & p4_let_io_low & p6_dioi_low & 
+      p6_usm
+
+!n_t_33x =>
+    n_t_30x & !p4_let_io_low
+  # p4_let_io_low
+
+!n_t_37x =>
+    n_t_31x & run_low
+
+!n_t_38x =>
+    1 
+
+n_t_38x.oe  =>
+    !n_t_42x & !p2_ifa_low
+  # p1_bfl0 & !p4_let_io_low
+  # !n_t_2x & p3_bd9
+  # !n_t_49x & !p2_dfc_low
+  # !p2_sf3 & !p4_rmf_low
+
+!n_t_39x =>
+    1 
+
+n_t_39x.oe  =>
+    !n_t_42x & !p2_ifb_low
+  # p1_bfl1 & !p4_let_io_low
+  # !n_t_2x & p3_bd10
+  # !n_t_49x & !p2_dfb_low
+  # !p2_sf4 & !p4_rmf_low
+
+!n_t_3x =>
+    p4_rtf_low & p4_rts_low
+
+!n_t_40x =>
+    1 
+
+n_t_40x.oe  =>
+    !n_t_42x & !p2_ifc_low
+  # p1_bfl2 & !p4_let_io_low
+  # !n_t_2x & p3_bd11
+  # !n_t_49x & !p2_dfa_low
+  # !p2_sf5 & !p4_rmf_low
+
+!n_t_41x =>
+    p4_new_fld
+
+!n_t_42x =>
+    p2_int_low & p3_bts4 & p4_dfen_low
+
+!n_t_43x =>
+    p3_bd6
+
+!n_t_44x =>
+    p3_bd7
+
+!n_t_45x =>
+    p3_bd8
+
+!n_t_46x =>
+    !ema2_low
+
+!n_t_47x =>
+    !ema1_low
+
+!n_t_48x =>
+    !ema0_low
+
+!n_t_49x =>
+    p4_dfen & p4_init_en
+
+!n_t_4x =>
+    n_t_180x & n_t_181x
+
+!n_t_50x =>
+    0 
+
+!n_t_51x.d  =>
+    !p3_bd0
+
+n_t_51x.ar  =>
+    p3_binit_low
+
+n_t_51x.ck  =>
+    p3_btp2
+
+!n_t_52x.d  =>
+    !p3_bd1
+
+n_t_52x.ar  =>
+    p3_binit_low
+
+n_t_52x.ck  =>
+    p3_btp2
+
+!n_t_53x.d  =>
+    !p3_bd2
+
+n_t_53x.ar  =>
+    p3_binit_low
+
+n_t_53x.ck  =>
+    p3_btp2
+
+!n_t_54x.d  =>
+    !p3_bd3
+
+n_t_54x.ar  =>
+    p3_binit_low
+
+n_t_54x.ck  =>
+    p3_btp2
+
+!n_t_55x.d  =>
+    !p3_bd4
+
+n_t_55x.ar  =>
+    p3_binit_low
+
+n_t_55x.ck  =>
+    p3_btp2
+
+!n_t_56x =>
+    p2_suf_out
+
+!n_t_57x.d  =>
+    !p3_bd5
+
+n_t_57x.ar  =>
+    p3_binit_low
+
+n_t_57x.ck  =>
+    p3_btp2
+
+!n_t_58x.d  =>
+    !p3_bd6
+
+n_t_58x.ar  =>
+    p3_binit_low
+
+n_t_58x.ck  =>
+    p3_btp2
+
+!n_t_59x.d  =>
+    !p3_bd7
+
+n_t_59x.ar  =>
+    p3_binit_low
+
+n_t_59x.ck  =>
+    p3_btp2
+
+!n_t_5x =>
+    !p3_binit_low & p3_btp2
+  # !p3_btp2
+
+!n_t_60x.d  =>
+    !p3_bd8
+
+n_t_60x.ar  =>
+    p3_binit_low
+
+n_t_60x.ck  =>
+    p3_btp2
+
+!n_t_61x.d  =>
+    !p3_bd9
+
+n_t_61x.ar  =>
+    p3_binit_low
+
+n_t_61x.ck  =>
+    p3_btp2
+
+!n_t_62x.d  =>
+    !p3_bd10
+
+n_t_62x.ar  =>
+    p3_binit_low
+
+n_t_62x.ck  =>
+    p3_btp2
+
+!n_t_63x.d  =>
+    !p3_bd11
+
+n_t_63x.ar  =>
+    p3_binit_low
+
+n_t_63x.ck  =>
+    p3_btp2
+
+!n_t_64x =>
+    n_t_65x
+
+!n_t_65x =>
+    mbct4_low & p4_raca_low & p4_racb_low & p4_racc_low
+
+!n_t_66x =>
+    !mbct4_low & p4_raca_low
+  # !p4_raca_low
+
+!n_t_68x =>
+    n_t_86x & p3_btp3
+
+!n_t_69x =>
+    p3_bf & p3_bm0 & p3_bm1
+
+!n_t_6x =>
+    1 
+
+n_t_6x.oe  =>
+    p1_rr3 & p2_ifb & !p4_rdf_low & p6_usm
+  # !p1_enrf_low
+  # p1_rr3 & p1_rr4 & p2_dfa & !p2_dfb & p4_rdf_low & p6_usm
+  # !p1_rr3 & p1_rr4 & p2_ifa & p2_ifb & !p4_rdf_low & p6_usm
+  # p1_rr3 & p1_rr4 & p2_ifa & !p2_ifb & !p4_rdf_low & p6_usm
+  # p1_rr3 & p2_dfb & p4_rdf_low & p6_usm
+  # !p6_usm
+  # !p1_rr3 & p1_rr4 & p2_dfa & p2_dfb & p4_rdf_low & p6_usm
+
+!n_t_70x =>
+    rd11_low
+
+!n_t_71x =>
+    rd8_low
+
+!n_t_72x =>
+    1 
+
+n_t_72x.oe  =>
+    1 
+
+!n_t_73x =>
+    1 
+
+n_t_73x.oe  =>
+    1 
+
+!n_t_74x =>
+    1 
+
+n_t_74x.oe  =>
+    1 
+
+!n_t_75x =>
+    rd9_low
+
+!n_t_76x =>
+    rd10_low
+
+!n_t_77x =>
+    1 
+
+n_t_77x.oe  =>
+    p3_bts4 & p3_mbk
+  # p4_bts1 & p6_bind2
+  # n_t_72x & p3_bts3
+
+!n_t_78x =>
+    rd6_low
+
+!n_t_79x =>
+    rd7_low
+
+!n_t_7x =>
+    n_t_4x
+
+!n_t_80x =>
+    rd5_low
+
+!n_t_81x =>
+    rd4_low
+
+!n_t_82x =>
+    rd3_low
+
+!n_t_83x =>
+    rd2_low
+
+!n_t_84x =>
+    rd1_low
+
+!n_t_85x =>
+    rd0_low
+
+!n_t_86x =>
+    p4_mbc_low
+
+!n_t_88x =>
+    pause_low
+
+!n_t_89x =>
+    p3_bm6 & p3_bm7 & p3_bm8
+
+!n_t_8x =>
+    p1_us0
+  # !n_t_11x & !p1_us0 & p1_us1 & p3_bm5
+  # !n_t_11x & !p1_us0 & !p1_us1 & !p3_bm5
+  # !p1_us0 & p1_us1 & !p3_bm5
+
+!n_t_90x =>
+    0 
+
+!n_t_91x =>
+    0 
+
+!n_t_92x =>
+    n_t_93x & p1_over & p6_usm
+
+!n_t_93x =>
+    p4_cdf_low & p4_cif_low
+
+!n_t_94x =>
+    p4_sint_low
+
+!n_t_95x =>
+    n_t_96x
+
+!n_t_96x =>
+    !n_t_97x & p4_cint_low
+  # !p4_cint_low
+
+!n_t_97x =>
+    n_t_102x & n_t_98x & p4_usint_low
+
+!n_t_98x =>
+    p4_new_fld & p6_maint
+
+!n_t_99x =>
+    p3_bm9
+  # p6_eem
+
+!n_t_9x =>
+    p1_us2 & !p3_bm9
+  # p1_us2 & p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & p3_bm8 & p3_bm9
+  # p1_us2 & !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & p3_bm8 & p3_bm9
+  # p1_us2 & p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & !p3_bm7 & p3_bm8 & p3_bm9
+  # p1_us2 & !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & !p3_bm7 & p3_bm8 & p3_bm9
+  # !p1_us3 & p3_bm6 & !p3_bm9
+  # !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us2 & p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & p3_bm8 & !p3_bm9
+  # !p1_us2 & !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & p3_bm8 & !p3_bm9
+  # !p1_us2 & p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & !p3_bm7 & p3_bm8 & !p3_bm9
+  # !p1_us2 & !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & !p3_bm7 & p3_bm8 & 
+      !p3_bm9
+  # p1_us2 & !p1_us3 & p3_bm6 & p3_bm9
+  # p1_us2 & !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & p3_bm9
+  # p1_us2 & p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & p3_bm9
+  # p1_us2 & !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & p3_bm9
+  # p1_us2 & !p1_us3 & !p1_us5 & !p3_bm6 & p3_bm7 & p3_bm9
+  # p1_us2 & p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & p3_bm9
+  # p1_us2 & p1_us3 & !p1_us5 & p3_bm6 & p3_bm7 & p3_bm9
+
+!p1_3v =>
+    0 
+
+!p1_bb0 =>
+    1 
+
+p1_bb0.oe  =>
+    1 
+
+!p1_bb1 =>
+    1 
+
+p1_bb1.oe  =>
+    1 
+
+!p1_bfl0 =>
+    1 
+
+p1_bfl0.oe  =>
+    1 
+
+!p1_bfl1 =>
+    1 
+
+p1_bfl1.oe  =>
+    1 
+
+!p1_bfl2 =>
+    1 
+
+p1_bfl2.oe  =>
+    1 
+
+!p1_crf =>
+    1 
+
+p1_crf.oe  =>
+    p1_3v & p6_usm
+  # n_t_6x & p1_3v & !p2_ifc & !p4_rdf_low & !p6_usm
+  # p2_ifc & !p4_rdf_low & !p6_usm
+  # !p1_enrf_low
+  # n_t_6x & p1_3v & !p2_dfc & p4_rdf_low & !p6_usm
+  # p2_dfc & p4_rdf_low & !p6_usm
+  # !n_t_6x & !p2_ifc & !p4_rdf_low & !p6_usm
+  # !n_t_6x & !p2_dfc & p4_rdf_low & !p6_usm
+
+!p1_enrf_low =>
+    !p4_rdf_low & p4_rif_low
+  # !p4_rif_low
+
+!p1_over =>
+    n_t_13x
+
+!p1_rr0.d  =>
+    !p3_bd7
+
+p1_rr0.ar  =>
+    p2_rst_low
+
+p1_rr0.ck  =>
+    n_t_15x
+
+!p1_rr1.d  =>
+    !p3_bd8
+
+p1_rr1.ar  =>
+    p2_rst_low
+
+p1_rr1.ck  =>
+    n_t_15x
+
+!p1_rr2.d  =>
+    !p3_bd9
+
+p1_rr2.ar  =>
+    p2_rst_low
+
+p1_rr2.ck  =>
+    n_t_15x
+
+!p1_rr3.d  =>
+    !p3_bd10
+
+p1_rr3.ar  =>
+    p2_rst_low
+
+p1_rr3.ck  =>
+    n_t_15x
+
+!p1_rr4.d  =>
+    !p3_bd11
+
+p1_rr4.ar  =>
+    p2_rst_low
+
+p1_rr4.ck  =>
+    n_t_15x
+
+!p1_us0.d  =>
+    !p3_bd6
+
+p1_us0.ar  =>
+    p2_rst_low
+
+p1_us0.ck  =>
+    n_t_1x
+
+!p1_us1.d  =>
+    !p3_bd7
+
+p1_us1.ar  =>
+    p2_rst_low
+
+p1_us1.ck  =>
+    n_t_1x
+
+!p1_us2.d  =>
+    !p3_bd8
+
+p1_us2.ar  =>
+    p2_rst_low
+
+p1_us2.ck  =>
+    n_t_1x
+
+!p1_us3.d  =>
+    !p3_bd9
+
+p1_us3.ar  =>
+    p2_rst_low
+
+p1_us3.ck  =>
+    n_t_1x
+
+!p1_us4.d  =>
+    !p3_bd10
+
+p1_us4.ar  =>
+    p2_rst_low
+
+p1_us4.ck  =>
+    n_t_1x
+
+!p1_us5.d  =>
+    !p3_bd11
+
+p1_us5.ar  =>
+    p2_rst_low
+
+p1_us5.ck  =>
+    n_t_1x
+
+!p2_3v =>
+    0 
+
+!p2_bcpmad_low =>
+    !cpma_disable_low
+
+!p2_dfa =>
+    p2_dfa_low
+
+!p2_dfa_low.d  =>
+    !n_t_40x
+
+p2_dfa_low.ar  =>
+    p2_3v
+
+p2_dfa_low.ck  =>
+    p4_ckdf
+
+!p2_dfb =>
+    p2_dfb_low
+
+!p2_dfb_low.d  =>
+    !n_t_39x
+
+p2_dfb_low.ar  =>
+    p2_3v
+
+p2_dfb_low.ck  =>
+    p4_ckdf
+
+!p2_dfc =>
+    p2_dfc_low
+
+!p2_dfc_low.d  =>
+    !n_t_38x
+
+p2_dfc_low.ar  =>
+    p2_3v
+
+p2_dfc_low.ck  =>
+    p4_ckdf
+
+!p2_elar_low.d  =>
+    !n_t_50x
+
+p2_elar_low.ap  =>
+    !p4_pclr_low
+
+p2_elar_low.ar  =>
+    !p4_plxa_low
+
+p2_elar_low.ck  =>
+    p3_btp4
+
+!p2_emaen.d  =>
+    !p2_bcpmad_low
+
+p2_emaen.ap  =>
+    !n_t_50x
+
+p2_emaen.ar  =>
+    !p2_rst_low
+
+p2_emaen.ck  =>
+    p3_btp4
+
+!p2_emaen_low =>
+    p2_emaen
+
+!p2_enbs_low =>
+    p2_elar_low
+
+!p2_ifa =>
+    p2_ifa_low
+
+!p2_ifa_low.d  =>
+    !n_t_20x
+
+p2_ifa_low.ar  =>
+    p2_3v
+
+p2_ifa_low.ck  =>
+    p4_ckif
+
+!p2_ifb =>
+    p2_ifb_low
+
+!p2_ifb_low.d  =>
+    !n_t_19x
+
+p2_ifb_low.ar  =>
+    p2_3v
+
+p2_ifb_low.ck  =>
+    p4_ckif
+
+!p2_ifc =>
+    p2_ifc_low
+
+!p2_ifc_low.d  =>
+    !n_t_18x
+
+p2_ifc_low.ar  =>
+    p2_3v
+
+p2_ifc_low.ck  =>
+    p4_ckif
+
+!p2_int_low =>
+    p4_int
+
+!p2_rsb_low =>
+    p2_suf_out & p4_gtf_low
+
+!p2_rst_low =>
+    !p4_pclr_low & p4_plxa_low
+  # !p4_plxa_low
+
+!p2_sf0.d  =>
+    !p2_ifc_low
+
+p2_sf0.ar  =>
+    p2_3v
+
+p2_sf0.ck  =>
+    p4_cksv
+
+!p2_sf1.d  =>
+    !p2_ifb_low
+
+p2_sf1.ar  =>
+    p2_3v
+
+p2_sf1.ck  =>
+    p4_cksv
+
+!p2_sf2.d  =>
+    !p2_ifa_low
+
+p2_sf2.ar  =>
+    p2_3v
+
+p2_sf2.ck  =>
+    p4_cksv
+
+!p2_sf3.d  =>
+    !p2_dfc_low
+
+p2_sf3.ar  =>
+    p2_3v
+
+p2_sf3.ck  =>
+    p4_cksv
+
+!p2_sf4.d  =>
+    !p2_dfb_low
+
+p2_sf4.ar  =>
+    p2_3v
+
+p2_sf4.ck  =>
+    p4_cksv
+
+!p2_sf5.d  =>
+    !p2_dfa_low
+
+p2_sf5.ar  =>
+    p2_3v
+
+p2_sf5.ck  =>
+    p4_cksv
+
+!p2_suf_out =>
+    p4_gtf_low & p4_gts_low & p4_rib_low
+
+!p3_bd =>
+    p4_lxa
+  # d_low & !p4_lxa
+
+!p3_bd0 =>
+    data00_low
+
+!p3_bd1 =>
+    data01_low
+
+!p3_bd2 =>
+    data02_low
+
+!p3_bd3 =>
+    data03_low
+
+!p3_bd4 =>
+    data04_low
+
+!p3_bd5 =>
+    data05_low
+
+!p3_bd6 =>
+    data06_low
+
+!p3_bd7 =>
+    data07_low
+
+!p3_bd8 =>
+    data08_low
+
+!p3_bd9 =>
+    data09_low
+
+!p3_bd10 =>
+    data10_low
+
+!p3_bd11 =>
+    data11_low
+
+!p3_bf =>
+    p4_lxa
+  # f_low & !p4_lxa
+
+!p3_binit =>
+    !initialize
+
+!p3_binit_low =>
+    p3_binit
+
+!p3_bm0 =>
+    md00_low
+
+!p3_bm0_low =>
+    p3_bm0
+
+!p3_bm1 =>
+    md01_low
+
+!p3_bm2 =>
+    md02_low
+
+!p3_bm3 =>
+    md03_low
+
+!p3_bm4 =>
+    md04_low
+
+!p3_bm10 =>
+    md10_low
+
+!p3_bm11 =>
+    md11_low
+
+!p3_bm11_low =>
+    p3_bm11
+
+!p3_bm2_low =>
+    p3_bm2
+
+!p3_bm3_low =>
+    p3_bm3
+
+!p3_bm4_low =>
+    p3_bm4
+
+!p3_bm5 =>
+    md05_low
+
+!p3_bm6 =>
+    md06_low
+
+!p3_bm7 =>
+    md07_low
+
+!p3_bm8 =>
+    md08_low
+
+!p3_bm9 =>
+    md09_low
+
+!p3_bm9_low =>
+    p3_bm9
+
+!p3_bpause.d  =>
+    1 
+
+p3_bpause.ap  =>
+    n_t_88x & p3_btp3_low
+
+p3_bpause.ar  =>
+    !n_t_88x & p3_btp3_low
+
+p3_bpause.ck  =>
+    0 
+
+!p3_bpla =>
+    !pulse_la
+
+!p3_btp1 =>
+    !tp1
+
+!p3_btp2 =>
+    !tp2
+
+!p3_btp2_low =>
+    p3_btp2
+
+!p3_btp3 =>
+    p3_btp3_low
+
+!p3_btp3_low =>
+    tp3
+
+!p3_btp4 =>
+    !tp4
+
+!p3_bts3 =>
+    ts3_low
+
+!p3_bts4 =>
+    ts4_low
+
+!p3_c17en_low =>
+    1 
+
+p3_c17en_low.oe  =>
+    1 
+
+!p3_cfrom_low =>
+    1 
+
+p3_cfrom_low.oe  =>
+    1 
+
+!p3_decen_low =>
+    1 
+
+p3_decen_low.oe  =>
+    1 
+
+!p3_e2cfrom_low.d  =>
+    1 
+
+p3_e2cfrom_low.ap  =>
+    p3_btp3_low & p3_bts4
+
+p3_e2cfrom_low.ar  =>
+    p3_btp3_low & !p3_bts4
+
+p3_e2cfrom_low.ck  =>
+    0 
+
+!p3_hos_low =>
+    1 
+
+p3_hos_low.oe  =>
+    1 
+
+!p3_inioen =>
+    1 
+
+p3_inioen.oe  =>
+    1 
+
+!p3_mbk.d  =>
+    1 
+
+p3_mbk.ap  =>
+    !n_t_68x
+
+p3_mbk.ar  =>
+    !n_t_5x
+
+p3_mbk.ck  =>
+    0 
+
+!p4_3v =>
+    0 
+
+!p4_blbm_low =>
+    gdollar_4
+
+!p4_bts1 =>
+    ts1_low
+  # n_t_28x & !ts1_low
+
+!p4_cdf_low =>
+    1 
+
+p4_cdf_low.oe  =>
+    !p3_bm11
+  # n_t_29x
+  # !p3_bm4
+  # !p3_cfrom_low
+  # !p3_e2cfrom_low
+
+!p4_cif_low =>
+    1 
+
+p4_cif_low.oe  =>
+    !p3_bm10
+  # n_t_29x
+  # !p3_bm4
+  # !p3_cfrom_low
+  # !p3_e2cfrom_low
+
+!p4_cint_low =>
+    !n_t_100x & !p3_bm6 & !p3_bm7 & !p3_bm8 & p3_bm9 & !p3_decen_low
+
+!p4_ckdb =>
+    !n_t_111x & !n_t_112x
+  # n_t_111x & !n_t_118x
+
+!p4_ckdf =>
+    !n_t_111x & !n_t_112x
+  # n_t_111x & !n_t_117x
+
+!p4_ckibb =>
+    !n_t_111x & !n_t_112x
+  # n_t_111x & !n_t_115x
+
+!p4_ckif =>
+    !n_t_111x & !n_t_112x
+  # n_t_111x & !n_t_116x
+
+!p4_ckifb =>
+    !n_t_111x & !n_t_112x
+  # n_t_111x & !n_t_114x
+
+!p4_cksv =>
+    n_t_110x
+
+!p4_ckuf =>
+    !n_t_111x
+  # n_t_111x & !n_t_120x
+
+!p4_ckufb =>
+    !n_t_111x
+  # n_t_111x & !n_t_119x
+
+!p4_cuf_low =>
+    !n_t_100x & p3_bm6 & p3_bm7 & !p3_bm8 & p3_bm9 & !p3_decen_low
+
+!p4_cumb_low =>
+    !n_t_134x & n_t_136x
+  # !n_t_136x
+
+!p4_dfen =>
+    p4_dfen_low
+
+!p4_dfen_low.d  =>
+    !n_t_104x
+
+p4_dfen_low.ap  =>
+    !n_t_134x
+
+p4_dfen_low.ar  =>
+    !n_t_91x
+
+p4_dfen_low.ck  =>
+    p3_btp3
+
+!p4_fatal_low =>
+    p4_int_in & p4_usint
+
+p4_fatal_lp_0_rp.ap  =>
+    !p4_usint
+
+p4_fatal_lp_0_rp.ar  =>
+    !p4_fatal_low
+
+p4_fatal_lp_0_rp.ck  =>
+    0 
+
+!p4_gtf_low =>
+    p3_bm11_low & p3_bm4_low & p3_bm9 & p3_inioen
+
+!p4_gts_low =>
+    !n_t_100x & !p3_bm6 & !p3_bm7 & p3_bm8 & !p3_bm9 & !p3_decen_low
+
+!p4_init_en =>
+    p4_init_en_low
+
+!p4_init_en_low.d  =>
+    1 
+
+p4_init_en_low.ap  =>
+    !n_t_37x
+
+p4_init_en_low.ar  =>
+    !p4_3v
+
+p4_init_en_low.ck  =>
+    p4_pclr_low
+
+!p4_int =>
+    n_t_108x & !p4_int_in_prog
+  # p4_int_in_prog
+
+!p4_int_in.d  =>
+    1 
+
+p4_int_in.ap  =>
+    !n_t_129x
+
+p4_int_in.ar  =>
+    !n_t_16x
+
+p4_int_in.ck  =>
+    0 
+
+!p4_int_in_prog =>
+    int_in_prog_low
+
+!p4_int_in_prog_low =>
+    1 
+
+p4_int_in_prog_low.oe  =>
+    p4_fatal_low & p4_int_in
+
+!p4_int_inh_low =>
+    p4_int_in
+
+!p4_jmp_or_jms =>
+    ir0_low & !n_t_127x
+  # n_t_127x
+
+p4_lbm_low =>
+    p3_c17en_low
+  # p3_bm9
+  # p3_bm11
+  # p3_bm10 & !p3_c17en_low
+
+!p4_let_io_low =>
+    1 
+
+p4_let_io_low.oe  =>
+    n_t_89x & !p3_bm4 & !p3_bm5 & p3_bm9 & !p4_cdf_low & !p4_cif_low
+  # n_t_89x & !p3_bm4 & !p3_bm9 & !p4_cdf_low & !p4_cif_low
+  # !n_t_89x & !p3_bm4 & !p4_cdf_low & !p4_cif_low
+  # p3_bm4 & !p4_cdf_low & !p4_cif_low
+  # !p3_cfrom_low
+  # !p3_e2cfrom_low
+
+!p4_lrr_low =>
+    !n_t_100x & p3_bm6 & !p3_bm7 & !p3_bm8 & !p3_bm9 & !p3_decen_low
+
+!p4_lusr_low =>
+    !n_t_100x & p3_bm6 & p3_bm7 & !p3_bm8 & !p3_bm9 & !p3_decen_low
+
+!p4_lxa =>
+    la_en_low
+  # key_control_low & !la_en_low
+
+!p4_lxm_low =>
+    p3_bm4 & p3_bm11_low & p3_bm9_low & p3_inioen
+
+p4_mbc_low =>
+    p3_c17en_low
+  # p3_bm11
+  # p3_bm10 & !p3_c17en_low
+  # !p1_us3 & p3_bm6 & !p3_bm9
+  # p1_us3 & !p3_bm6 & !p3_bm9
+  # !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+
+!p4_new_fld =>
+    n_t_113x & n_t_123x
+
+!p4_plxa =>
+    p4_plxa_low
+
+!p4_plxa_low =>
+    p3_bpla & p4_lxa
+
+p4_raca_low =>
+    p3_c17en_low
+  # !p3_bm11 & !p3_c17en_low
+  # p3_bm10 & !p3_c17en_low
+  # !p1_us3 & p3_bm6 & !p3_bm9
+  # p1_us3 & !p3_bm6 & !p3_bm9
+  # !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+
+p4_racb_low =>
+    p3_c17en_low
+  # p3_bm11
+  # !p3_bm10 & !p3_c17en_low
+  # !p1_us3 & p3_bm6 & !p3_bm9
+  # p1_us3 & !p3_bm6 & !p3_bm9
+  # !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+
+p4_racc_low =>
+    p3_c17en_low
+  # !p3_bm10 & !p3_c17en_low
+  # !p3_bm11 & !p3_c17en_low
+  # !p1_us3 & p3_bm6 & !p3_bm9
+  # p1_us3 & !p3_bm6 & !p3_bm9
+  # !p1_us3 & !p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & !p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & !p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us4 & p1_us5 & p3_bm6 & p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & p1_us5 & !p3_bm6 & p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us4 & !p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # p1_us3 & p1_us5 & p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us4 & !p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+  # !p1_us3 & p1_us5 & !p3_bm6 & !p3_bm7 & !p3_bm9
+
+p4_rbm_low =>
+    p3_c17en_low
+  # p3_bm9
+  # !p3_bm11 & !p3_c17en_low
+  # p3_bm10 & !p3_c17en_low
+
+!p4_rdf_low =>
+    !n_t_100x & !p3_bm6 & !p3_bm7 & p3_bm8 & p3_bm9 & !p3_decen_low
+
+!p4_rib_low =>
+    !n_t_100x & !p3_bm6 & p3_bm7 & p3_bm8 & p3_bm9 & !p3_decen_low
+
+!p4_rif_low =>
+    !n_t_100x & !p3_bm6 & p3_bm7 & !p3_bm8 & p3_bm9 & !p3_decen_low
+
+p4_rlb_low =>
+    p3_c17en_low
+  # p3_bm9
+  # p3_bm11
+  # !p3_bm10 & !p3_c17en_low
+
+!p4_rmf_low =>
+    !n_t_100x & p3_bm6 & !p3_bm7 & !p3_bm8 & p3_bm9 & !p3_decen_low
+
+p4_rmr_low =>
+    p3_c17en_low
+  # p3_bm9
+  # !p3_bm10 & !p3_c17en_low
+  # !p3_bm11 & !p3_c17en_low
+
+!p4_rrr_low =>
+    !n_t_100x & p3_bm6 & !p3_bm7 & p3_bm8 & !p3_bm9 & !p3_decen_low
+
+!p4_rtf_low =>
+    p3_bm11 & p3_bm4_low & p3_bm9 & p3_inioen
+
+!p4_rts_low =>
+    !n_t_100x & !p3_bm6 & p3_bm7 & !p3_bm8 & !p3_bm9 & !p3_decen_low
+
+!p4_rusr_low =>
+    !n_t_100x & p3_bm6 & p3_bm7 & p3_bm8 & !p3_bm9 & !p3_decen_low
+
+!p4_rxm_low =>
+    !n_t_100x & !p3_bm6 & p3_bm7 & p3_bm8 & !p3_bm9 & !p3_decen_low
+
+!p4_sint_low =>
+    !n_t_100x & p3_bm6 & !p3_bm7 & p3_bm8 & p3_bm9 & !p3_decen_low
+
+!p4_suf_low =>
+    !n_t_100x & p3_bm6 & p3_bm7 & p3_bm8 & p3_bm9 & !p3_decen_low
+
+!p4_usint =>
+    p4_usint_low
+
+!p4_usint_low.d  =>
+    !n_t_95x
+
+p4_usint_low.ap  =>
+    !p3_binit_low
+
+p4_usint_low.ar  =>
+    !n_t_90x
+
+p4_usint_low.ck  =>
+    p3_btp3
+
+!p5_bmen_low =>
+    1 
+
+p5_bmen_low.oe  =>
+    1 
+
+!p5_dbs_low =>
+    1 
+
+p5_dbs_low.oe  =>
+    1 
+
+p5_ibs0_low =>
+    !n_t_146x
+  # !n_t_145x
+
+p5_ibs1_low =>
+    n_t_146x
+  # !n_t_145x
+
+p5_ibs2_low =>
+    n_t_145x
+  # !n_t_146x
+
+p5_ibs3_low =>
+    n_t_145x
+  # n_t_146x
+
+!p6_bind2 =>
+    !ind2_low
+
+!p6_bs0_low =>
+    1 
+
+p6_bs0_low.oe  =>
+    1 
+
+!p6_bs1_low =>
+    1 
+
+p6_bs1_low.oe  =>
+    !gdollar_33 & !p2_enbs_low & !p6_prup_low
+  # !gdollar_41 & !p2_elar_low
+
+!p6_bs2_low =>
+    1 
+
+p6_bs2_low.oe  =>
+    !gdollar_32 & !p2_enbs_low & !p6_prup_low
+  # !gdollar_40 & !p2_elar_low
+
+!p6_bs3_low =>
+    1 
+
+p6_bs3_low.oe  =>
+    !gdollar_31 & !p2_enbs_low & !p6_prup_low
+  # !gdollar_39 & !p2_elar_low
+
+!p6_ckmr_low =>
+    n_t_183x & p3_btp1
+
+!p6_dioi.d  =>
+    !p3_bd4
+
+p6_dioi.ar  =>
+    p2_rst_low
+
+p6_dioi.ck  =>
+    n_t_164x
+
+!p6_dioi_low =>
+    p6_dioi
+
+!p6_disf_low =>
+    p4_bts1 & p6_bind2
+
+!p6_dispb_low =>
+    n_t_166x & p4_bts1 & p6_bind2
+
+!p6_ebm.d  =>
+    !p3_bd5
+
+p6_ebm.ar  =>
+    p2_rst_low
+
+p6_ebm.ck  =>
+    n_t_164x
+
+!p6_ebm_low =>
+    p6_ebm
+
+!p6_eem.d  =>
+    !p3_bd0
+
+p6_eem.ar  =>
+    p2_rst_low
+
+p6_eem.ck  =>
+    n_t_164x
+
+!p6_eem_low =>
+    p6_eem
+
+!p6_en5.d  =>
+    !p3_bd1
+
+p6_en5.ar  =>
+    p2_rst_low
+
+p6_en5.ck  =>
+    n_t_164x
+
+!p6_en5_low =>
+    p6_en5
+
+!p6_en9.d  =>
+    !p3_bd2
+
+p6_en9.ar  =>
+    p2_rst_low
+
+p6_en9.ck  =>
+    n_t_164x
+
+!p6_en9_low =>
+    p6_en9
+
+!p6_maint =>
+    p4_int_inh_low & !p6_maint_low
+  # p6_maint_low
+
+!p6_maint_low =>
+    gdollar_5
+
+!p6_prup =>
+    p6_prup_low
+
+!p6_prup_low.d  =>
+    1 
+
+p6_prup_low.ap  =>
+    !p4_pclr_low
+
+p6_prup_low.ar  =>
+    !p4_plxa
+
+p6_prup_low.ck  =>
+    p3_btp4
+
+!p6_rvfen.d  =>
+    !p3_bd3
+
+p6_rvfen.ar  =>
+    p2_rst_low
+
+p6_rvfen.ck  =>
+    n_t_164x
+
+!p6_rvfen_low =>
+    p6_rvfen
+
+!p6_usm =>
+    p6_usm_low
+
+!p6_usm_low.d  =>
+    !n_t_176x
+
+p6_usm_low.ap  =>
+    !p4_cumb_low
+
+p6_usm_low.ar  =>
+    !n_t_177x
+
+p6_usm_low.ck  =>
+    p4_ckuf
+
+!ra1.l  =>
+    !n_t_143x
+
+ra1.le  =>
+    !n_t_139x & !n_t_140x & !n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!ra2.l  =>
+    !n_t_144x
+
+ra2.le  =>
+    !n_t_139x & !n_t_140x & !n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rb1.l  =>
+    !n_t_143x
+
+rb1.le  =>
+    !n_t_139x & !n_t_140x & !n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rb2.l  =>
+    !n_t_144x
+
+rb2.le  =>
+    !n_t_139x & !n_t_140x & !n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rbs0_low =>
+    1 
+
+rbs0_low.oe  =>
+    1 
+
+!rbs1_low =>
+    1 
+
+rbs1_low.oe  =>
+    !gdollar_37 & !p2_enbs_low & !p6_prup_low
+  # !gdollar_45 & !p2_elar_low
+
+!rbs2_low =>
+    1 
+
+rbs2_low.oe  =>
+    !gdollar_36 & !p2_enbs_low & !p6_prup_low
+  # !gdollar_44 & !p2_elar_low
+
+!rbs3_low =>
+    1 
+
+rbs3_low.oe  =>
+    !gdollar_35 & !p2_enbs_low & !p6_prup_low
+  # !gdollar_43 & !p2_elar_low
+
+!rc1.l  =>
+    !n_t_143x
+
+rc1.le  =>
+    n_t_139x & !n_t_140x & !n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rc2.l  =>
+    !n_t_144x
+
+rc2.le  =>
+    n_t_139x & !n_t_140x & !n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rd0_low =>
+    1 
+
+rd0_low.oe  =>
+    n_t_26x & n_t_27x
+  # !p4_rxm_low & !p6_eem_low
+  # !n_t_64x
+  # !mbct4_low
+
+!rd1.l  =>
+    !n_t_143x
+
+rd1.le  =>
+    n_t_139x & !n_t_140x & !n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rd10_low =>
+    1 
+
+rd10_low.oe  =>
+    !n_t_59x & !n_t_66x & !p4_raca_low
+  # !n_t_62x & !n_t_66x & p4_raca_low
+  # !gdollar_7 & !p4_rmr_low
+  # p1_rr3 & !p4_rrr_low
+  # n_t_146x & !p4_rbm_low
+  # !p2_dfb_low & !p6_disf_low
+  # !n_t_56x & !p2_sf4
+  # p1_us4 & !p4_rusr_low
+
+!rd11_low =>
+    1 
+
+rd11_low.oe  =>
+    !n_t_60x & !n_t_66x & !p4_raca_low
+  # !n_t_63x & !n_t_66x & p4_raca_low
+  # !gdollar_8 & !p4_rmr_low
+  # p1_rr4 & !p4_rrr_low
+  # n_t_145x & !p4_rbm_low
+  # !p2_dfa_low & !p6_disf_low
+  # !n_t_56x & !p2_sf5
+  # p1_us5 & !p4_rusr_low
+
+!rd1_low =>
+    1 
+
+rd1_low.oe  =>
+    !n_t_54x
+  # !p4_racb_low
+  # !n_t_64x
+  # !mbct4_low
+  # !p4_rxm_low & !p6_en5_low
+  # !n_t_156x & !p6_dispb_low
+  # !gdollar_23 & !p4_rmr_low
+  # !p2_rsb_low & sb0_low
+
+!rd2.l  =>
+    !n_t_144x
+
+rd2.le  =>
+    n_t_139x & !n_t_140x & !n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rd2_low =>
+    1 
+
+rd2_low.oe  =>
+    !n_t_55x
+  # !p4_racb_low
+  # !n_t_64x
+  # !mbct4_low
+  # !p4_rxm_low & !p6_en9_low
+  # !n_t_158x & !p6_dispb_low
+  # !gdollar_24 & !p4_rmr_low
+  # !p2_rsb_low & sb1_low
+
+!rd3_low =>
+    1 
+
+rd3_low.oe  =>
+    n_t_131x & n_t_132x
+  # !n_t_57x & !n_t_66x & !p4_raca_low
+  # !n_t_54x & !n_t_66x & p4_raca_low
+  # !p4_rxm_low & !p6_rvfen_low
+  # !n_t_169x & !p4_fatal_lp_0_rp
+  # !gdollar_25 & !p4_rmr_low
+  # !p2_rsb_low & sb2_low
+
+!rd4_low =>
+    1 
+
+rd4_low.oe  =>
+    !n_t_61x & !n_t_66x & !p4_raca_low
+  # !n_t_55x & !n_t_66x & p4_raca_low
+  # !p4_rxm_low & !p6_dioi_low
+  # !n_t_160x & !p6_dispb_low
+  # !gdollar_26 & !p4_rmr_low
+  # !p2_rsb_low & sb3_low
+
+!rd5_low =>
+    1 
+
+rd5_low.oe  =>
+    n_t_168x & p2_suf_out
+  # !n_t_52x
+  # !p4_racc_low
+  # !n_t_64x
+  # !mbct4_low
+  # !p4_rxm_low & !p6_ebm_low
+  # !n_t_169x & !p6_usm_low
+  # !n_t_161x & !p6_dispb_low
+  # !gdollar_22 & !p4_rmr_low
+  # !n_t_162x & !n_t_163x & !p1_crf & p4_rdf_low & !p6_usm
+  # n_t_162x & !n_t_163x & p4_rdf_low & !p6_usm
+  # n_t_162x & !n_t_163x & !p1_crf & p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
+  # !n_t_162x & n_t_163x & p1_crf & p1_rr0 & p1_rr1 & p4_rdf_low & p6_usm
+  # n_t_162x & !n_t_163x & p1_crf & p1_rr0 & p1_rr1 & p4_rdf_low & p6_usm
+  # !n_t_162x & n_t_163x & p1_crf & p4_rdf_low & !p6_usm
+  # n_t_162x & n_t_163x & !p1_crf & !p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
+  # !n_t_162x & n_t_163x & !p1_crf & !p1_rr0 & p1_rr1 & p4_rdf_low & p6_usm
+  # n_t_162x & n_t_163x & !p1_rr0 & p1_rr1 & p4_rdf_low & p6_usm
+  # n_t_162x & n_t_163x & p1_crf & p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
+  # !n_t_162x & n_t_163x & p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
+  # !n_t_159x & !p1_crf & p1_rr0 & p1_rr1 & !p4_rdf_low & p6_usm
+  # !n_t_157x & n_t_159x & p1_crf & p1_rr0 & p1_rr1 & !p4_rdf_low & p6_usm
+  # !n_t_157x & n_t_159x & p1_crf & !p4_rdf_low & !p6_usm
+  # !n_t_157x & !n_t_159x & !p1_crf & !p4_rdf_low & !p6_usm
+  # n_t_157x & !n_t_159x & !p4_rdf_low & !p6_usm
+  # n_t_157x & !n_t_159x & !p1_crf & p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
+  # n_t_157x & !n_t_159x & p1_crf & p1_rr0 & p1_rr1 & !p4_rdf_low & p6_usm
+  # !n_t_163x & !p1_crf & p1_rr0 & p1_rr1 & p4_rdf_low & p6_usm
+  # n_t_157x & n_t_159x & !p1_crf & !p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
+  # !n_t_157x & n_t_159x & !p1_crf & !p1_rr0 & p1_rr1 & !p4_rdf_low & p6_usm
+  # n_t_157x & n_t_159x & !p1_rr0 & p1_rr1 & !p4_rdf_low & p6_usm
+  # n_t_157x & n_t_159x & p1_crf & p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
+  # !n_t_157x & n_t_159x & p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
+  # !n_t_157x & !n_t_159x & !p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
+  # !n_t_162x & !n_t_163x & !p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
+  # !n_t_157x & !n_t_159x & p1_crf & !p1_rr0 & !p4_rdf_low & p6_usm
+  # !n_t_162x & !n_t_163x & p1_crf & !p1_rr0 & p4_rdf_low & p6_usm
+  # !n_t_159x & p1_crf & !p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
+  # !n_t_163x & p1_crf & !p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
+  # !p1_enrf_low
+
+!rd6_low =>
+    1 
+
+rd6_low.oe  =>
+    !n_t_58x & !n_t_61x
+  # !n_t_61x & !p4_racc_low
+  # !n_t_58x & !p4_racb_low
+  # !p4_racb_low & !p4_racc_low
+  # !n_t_64x
+  # !mbct4_low
+  # !p4_rxm_low & !p6_maint_low
+  # !p2_ifc_low & !p6_disf_low
+  # !gdollar_12 & !p4_rlb_low
+  # !gdollar_21 & !p4_rmr_low
+  # !n_t_56x & !p2_sf0
+  # p1_us0 & !p4_rusr_low
+  # n_t_6x & !p1_rr2 & p2_dfc & p4_rdf_low & !p6_usm
+  # n_t_6x & !p1_rr2 & p2_ifc & !p4_rdf_low & !p6_usm
+  # n_t_6x & !p1_rr2 & !p2_ifc & !p4_rdf_low & p6_usm
+  # n_t_6x & !p1_rr2 & !p2_dfc & p4_rdf_low & p6_usm
+  # !n_t_6x & !p1_rr2 & p2_ifc & !p4_rdf_low & p6_usm
+  # !n_t_6x & !p1_rr2 & p2_dfc & p4_rdf_low & p6_usm
+  # n_t_6x & p1_rr2 & p2_ifc & !p4_rdf_low
+  # n_t_6x & p1_rr2 & p2_dfc & p4_rdf_low
+  # !n_t_6x & !p2_ifc & !p4_rdf_low & !p6_usm
+  # !n_t_6x & !p2_dfc & p4_rdf_low & !p6_usm
+  # !n_t_6x & p1_rr2 & !p2_ifc & !p4_rdf_low
+  # !n_t_6x & p1_rr2 & !p2_dfc & p4_rdf_low
+  # !p1_enrf_low
+
+!rd7_low =>
+    1 
+
+rd7_low.oe  =>
+    !n_t_59x & !n_t_62x
+  # !n_t_62x & !p4_racc_low
+  # !n_t_59x & !p4_racb_low
+  # !p4_racb_low & !p4_racc_low
+  # !n_t_64x
+  # !mbct4_low
+  # !p2_ifb_low & !p6_disf_low
+  # p1_rr0 & !p4_rrr_low
+  # !gdollar_13 & !p4_rlb_low
+  # !gdollar_20 & !p4_rmr_low
+  # !n_t_56x & !p2_sf1
+  # p1_us1 & !p4_rusr_low
+  # !p2_dfb & p4_rdf_low & !p6_usm
+  # !p1_enrf_low
+  # p1_rr3 & !p2_dfa & p2_dfb & p4_rdf_low & p6_usm
+  # p1_rr3 & p1_rr4 & p2_dfa & !p2_dfb & p4_rdf_low & p6_usm
+  # !p1_rr3 & p1_rr4 & p2_dfa & p2_dfb & p4_rdf_low & p6_usm
+  # p1_rr3 & !p1_rr4 & p2_dfa & p2_dfb & p4_rdf_low & p6_usm
+  # p1_rr3 & !p2_ifa & p2_ifb & !p4_rdf_low & p6_usm
+  # !p2_ifb & !p4_rdf_low & !p6_usm
+  # p1_rr3 & p1_rr4 & p2_ifa & !p2_ifb & !p4_rdf_low & p6_usm
+  # !p1_rr3 & p1_rr4 & p2_ifa & p2_ifb & !p4_rdf_low & p6_usm
+  # p1_rr3 & !p1_rr4 & p2_ifa & p2_ifb & !p4_rdf_low & p6_usm
+  # !p1_rr3 & !p2_ifa & !p2_ifb & !p4_rdf_low & p6_usm
+  # !p1_rr3 & !p2_dfa & !p2_dfb & p4_rdf_low & p6_usm
+  # !p1_rr3 & !p1_rr4 & !p2_ifb & !p4_rdf_low & p6_usm
+  # !p1_rr3 & !p1_rr4 & !p2_dfb & p4_rdf_low & p6_usm
+
+!rd8_low =>
+    1 
+
+rd8_low.oe  =>
+    !n_t_60x & !n_t_63x
+  # !n_t_63x & !p4_racc_low
+  # !n_t_60x & !p4_racb_low
+  # !p4_racb_low & !p4_racc_low
+  # !n_t_64x
+  # !mbct4_low
+  # !p2_ifa_low & !p6_disf_low
+  # p1_rr1 & !p4_rrr_low
+  # !gdollar_14 & !p4_rlb_low
+  # !gdollar_19 & !p4_rmr_low
+  # !n_t_56x & !p2_sf2
+  # p1_us2 & !p4_rusr_low
+  # !p1_enrf_low
+  # !p1_rr4 & !p2_ifa & !p4_rdf_low & p6_usm
+  # !p1_rr4 & !p2_dfa & p4_rdf_low & p6_usm
+  # p1_rr4 & p2_ifa & !p4_rdf_low & p6_usm
+  # p1_rr4 & p2_dfa & p4_rdf_low & p6_usm
+  # !p2_ifa & !p4_rdf_low & !p6_usm
+  # !p2_dfa & p4_rdf_low & !p6_usm
+
+!rd9_low =>
+    1 
+
+rd9_low.oe  =>
+    !p4_raca_low
+  # !n_t_58x
+  # !n_t_64x
+  # !mbct4_low
+  # !gdollar_6 & !p4_rmr_low
+  # p1_rr2 & !p4_rrr_low
+  # !gdollar_15 & !p4_rlb_low
+  # !p2_dfc_low & !p6_disf_low
+  # !n_t_56x & !p2_sf3
+  # p1_us3 & !p4_rusr_low
+  # n_t_162x & p1_crf & !p1_rr1 & p4_rdf_low & !p6_usm
+  # n_t_157x & p1_crf & !p1_rr1 & !p4_rdf_low & !p6_usm
+  # !n_t_157x & p1_crf & !p1_rr1 & !p4_rdf_low & p6_usm
+  # !n_t_162x & p1_crf & !p1_rr1 & p4_rdf_low & p6_usm
+  # n_t_157x & !p1_crf & !p1_rr1 & !p4_rdf_low & p6_usm
+  # n_t_162x & !p1_crf & !p1_rr1 & p4_rdf_low & p6_usm
+  # n_t_157x & p1_crf & p1_rr1 & !p4_rdf_low
+  # n_t_162x & p1_crf & p1_rr1 & p4_rdf_low
+  # !n_t_157x & !p1_crf & !p4_rdf_low & !p6_usm
+  # !n_t_162x & !p1_crf & p4_rdf_low & !p6_usm
+  # !n_t_157x & !p1_crf & p1_rr1 & !p4_rdf_low
+  # !n_t_162x & !p1_crf & p1_rr1 & p4_rdf_low
+  # !p1_enrf_low
+
+!re1.l  =>
+    !n_t_143x
+
+re1.le  =>
+    !n_t_139x & n_t_140x & !n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!re2.l  =>
+    !n_t_144x
+
+re2.le  =>
+    !n_t_139x & n_t_140x & !n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rf1.l  =>
+    !n_t_143x
+
+rf1.le  =>
+    !n_t_139x & n_t_140x & !n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rf2.l  =>
+    !n_t_144x
+
+rf2.le  =>
+    !n_t_139x & n_t_140x & !n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rg1.l  =>
+    !n_t_143x
+
+rg1.le  =>
+    n_t_139x & n_t_140x & !n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rg2.l  =>
+    !n_t_144x
+
+rg2.le  =>
+    n_t_139x & n_t_140x & !n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rh1.l  =>
+    !n_t_143x
+
+rh1.le  =>
+    n_t_139x & n_t_140x & !n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rh2.l  =>
+    !n_t_144x
+
+rh2.le  =>
+    n_t_139x & n_t_140x & !n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!ri1.l  =>
+    !n_t_143x
+
+ri1.le  =>
+    !n_t_139x & !n_t_140x & n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!ri2.l  =>
+    !n_t_144x
+
+ri2.le  =>
+    !n_t_139x & !n_t_140x & n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rj1.l  =>
+    !n_t_143x
+
+rj1.le  =>
+    !n_t_139x & !n_t_140x & n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rj2.l  =>
+    !n_t_144x
+
+rj2.le  =>
+    !n_t_139x & !n_t_140x & n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rk1.l  =>
+    !n_t_143x
+
+rk1.le  =>
+    n_t_139x & !n_t_140x & n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rk2.l  =>
+    !n_t_144x
+
+rk2.le  =>
+    n_t_139x & !n_t_140x & n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rl1.l  =>
+    !n_t_143x
+
+rl1.le  =>
+    n_t_139x & !n_t_140x & n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rl2.l  =>
+    !n_t_144x
+
+rl2.le  =>
+    n_t_139x & !n_t_140x & n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rm1.l  =>
+    !n_t_143x
+
+rm1.le  =>
+    !n_t_139x & n_t_140x & n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rm2.l  =>
+    !n_t_144x
+
+rm2.le  =>
+    !n_t_139x & n_t_140x & n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rn1.l  =>
+    !n_t_143x
+
+rn1.le  =>
+    !n_t_139x & n_t_140x & n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rn2.l  =>
+    !n_t_144x
+
+rn2.le  =>
+    !n_t_139x & n_t_140x & n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!ro1.l  =>
+    !n_t_143x
+
+ro1.le  =>
+    n_t_139x & n_t_140x & n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!ro2.l  =>
+    !n_t_144x
+
+ro2.le  =>
+    n_t_139x & n_t_140x & n_t_141x & !n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rp1.l  =>
+    !n_t_143x
+
+rp1.le  =>
+    n_t_139x & n_t_140x & n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!rp2.l  =>
+    !n_t_144x
+
+rp2.le  =>
+    n_t_139x & n_t_140x & n_t_141x & n_t_142x & p4_blbm_low & p5_bmen_low
+
+!sb0_low =>
+    gdollar_30
+
+!sb1_low =>
+    gdollar_29
+
+!sb2_low =>
+    gdollar_28
+
+!sb3_low =>
+    gdollar_27
+
+!skip_low =>
+    1 
+
+skip_low.oe  =>
+    n_t_94x & p4_usint
+
+!user_mode_low =>
+    1 
+
+user_mode_low.oe  =>
+    p3_bm2 & p6_usm
+  # n_t_179x & p6_usm
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    break_in_prog_low           0        V        1       0       4     
+    break_in_prog_low   oe      0        X        1       0       1     
+    c0_low                      0        V        1       0       4     
+    c0_low              oe      0        X        1       0       1     
+    c1_low                      0        V        1       0       4     
+    c1_low              oe      0        X        1       0       1     
+    cpma_disable_low            0        V        1       0       4     
+    cpma_disable_low    oe      0        X        1       0       1     
+    d_low                       0        V        -       -       -     
+    data00_low                  0        V        1       0       4     
+    data00_low          oe      0        X        1       0       1     
+    data01_low                  0        V        1       0       4     
+    data01_low          oe      0        X        1       0       1     
+    data02_low                  0        V        1       0       4     
+    data02_low          oe      0        X        1       0       1     
+    data03_low                  0        V        1       0       4     
+    data03_low          oe      0        X        1       0       1     
+    data04_low                  0        V        1       0       4     
+    data04_low          oe      0        X        1       0       1     
+    data05_low                  0        V        1       0       4     
+    data05_low          oe      0        X        1       0       1     
+    data06_low                  0        V        1       0       4     
+    data06_low          oe      0        X        1       0       1     
+    data07_low                  0        V        1       0       4     
+    data07_low          oe      0        X        1       0       1     
+    data08_low                  0        V        1       0       4     
+    data08_low          oe      0        X        1       0       1     
+    data09_low                  0        V        1       0       4     
+    data09_low          oe      0        X        1       0       1     
+    data10_low                  0        V        1       0       4     
+    data10_low          oe      0        X        1       0       1     
+    data11_low                  0        V        1       0       4     
+    data11_low          oe      0        X        1       0       1     
+    ema0_low                    0        V        1       0       4     
+    ema0_low            oe      0        X        2       0       1     
+    ema1_low                    0        V        1       0       4     
+    ema1_low            oe      0        X        2       0       1     
+    ema2_low                    0        V        1       0       4     
+    ema2_low            oe      0        X        2       0       1     
+    f_low                       0        V        -       -       -     
+    f_set_low                   0        V        -       -       -     
+    force_0_low                 201      N        1       0       4     
+    force_0_low         oe      201      M        1       0       1     
+    gdollar_0                   589      N        -       -       -     
+    gdollar_0           d       589      M        1       0       4     
+    gdollar_0           ar      589      M        1       0       1     
+    gdollar_0           ce      589      M        1       0       4     
+    gdollar_0           ck      589      M        1       0       1     
+    gdollar_0           oe      589      M        1       0       1     
+    gdollar_1                   590      N        -       -       -     
+    gdollar_1           d       590      M        1       0       4     
+    gdollar_1           ar      590      M        1       0       1     
+    gdollar_1           ce      590      M        1       0       4     
+    gdollar_1           ck      590      M        1       0       1     
+    gdollar_1           oe      590      M        1       0       1     
+    gdollar_2                   591      N        -       -       -     
+    gdollar_2           d       591      M        1       0       4     
+    gdollar_2           ar      591      M        1       0       1     
+    gdollar_2           ce      591      M        1       0       4     
+    gdollar_2           ck      591      M        1       0       1     
+    gdollar_2           oe      591      M        1       0       1     
+    gdollar_3                   592      N        -       -       -     
+    gdollar_3           d       592      M        1       0       4     
+    gdollar_3           ck      592      M        1       0       1     
+    gdollar_4                   593      N        -       -       -     
+    gdollar_4           d       593      M        1       0       4     
+    gdollar_4           ap      593      M        1       0       1     
+    gdollar_4           ar      593      M        1       0       1     
+    gdollar_4           ck      593      M        1       0       1     
+    gdollar_5                   594      N        -       -       -     
+    gdollar_5           d       594      M        1       0       4     
+    gdollar_5           ar      594      M        1       0       1     
+    gdollar_5           ck      594      M        1       0       1     
+    gdollar_6                   595      N        -       -       -     
+    gdollar_6           d       595      M        1       0       4     
+    gdollar_6           ar      595      M        1       0       1     
+    gdollar_6           ce      595      M        1       0       4     
+    gdollar_6           ck      595      M        1       0       1     
+    gdollar_6           oe      595      M        1       0       1     
+    gdollar_7                   596      N        -       -       -     
+    gdollar_7           d       596      M        1       0       4     
+    gdollar_7           ar      596      M        1       0       1     
+    gdollar_7           ce      596      M        1       0       4     
+    gdollar_7           ck      596      M        1       0       1     
+    gdollar_7           oe      596      M        1       0       1     
+    gdollar_8                   597      N        -       -       -     
+    gdollar_8           d       597      M        1       0       4     
+    gdollar_8           ar      597      M        1       0       1     
+    gdollar_8           ce      597      M        1       0       4     
+    gdollar_8           ck      597      M        1       0       1     
+    gdollar_8           oe      597      M        1       0       1     
+    gdollar_9                   598      N        -       -       -     
+    gdollar_9           d       598      M        1       0       4     
+    gdollar_9           ar      598      M        1       0       1     
+    gdollar_9           ce      598      M        1       0       4     
+    gdollar_9           ck      598      M        1       0       1     
+    gdollar_9           oe      598      M        1       0       1     
+    gdollar_10                  599      N        -       -       -     
+    gdollar_10          d       599      M        1       0       4     
+    gdollar_10          ar      599      M        1       0       1     
+    gdollar_10          ce      599      M        1       0       4     
+    gdollar_10          ck      599      M        1       0       1     
+    gdollar_10          oe      599      M        1       0       1     
+    gdollar_11                  600      N        -       -       -     
+    gdollar_11          d       600      M        1       0       4     
+    gdollar_11          ar      600      M        1       0       1     
+    gdollar_11          ce      600      M        1       0       4     
+    gdollar_11          ck      600      M        1       0       1     
+    gdollar_11          oe      600      M        1       0       1     
+    gdollar_12                  633      N        -       -       -     
+    gdollar_12          d       633      M        1       0       4     
+    gdollar_12          ar      633      M        1       0       1     
+    gdollar_12          ce      633      M        1       0       4     
+    gdollar_12          ck      633      M        1       0       1     
+    gdollar_12          oe      633      M        1       0       1     
+    gdollar_13                  634      N        -       -       -     
+    gdollar_13          d       634      M        1       0       4     
+    gdollar_13          ar      634      M        1       0       1     
+    gdollar_13          ce      634      M        1       0       4     
+    gdollar_13          ck      634      M        1       0       1     
+    gdollar_13          oe      634      M        1       0       1     
+    gdollar_14                  635      N        -       -       -     
+    gdollar_14          d       635      M        1       0       4     
+    gdollar_14          ar      635      M        1       0       1     
+    gdollar_14          ce      635      M        1       0       4     
+    gdollar_14          ck      635      M        1       0       1     
+    gdollar_14          oe      635      M        1       0       1     
+    gdollar_15                  636      N        -       -       -     
+    gdollar_15          d       636      M        1       0       4     
+    gdollar_15          ar      636      M        1       0       1     
+    gdollar_15          ce      636      M        1       0       4     
+    gdollar_15          ck      636      M        1       0       1     
+    gdollar_15          oe      636      M        1       0       1     
+    gdollar_16                  637      N        -       -       -     
+    gdollar_16          d       637      M        1       0       4     
+    gdollar_16          ck      637      M        1       0       1     
+    gdollar_16          oe      637      M        1       0       1     
+    gdollar_17                  638      N        -       -       -     
+    gdollar_17          d       638      M        1       0       4     
+    gdollar_17          ck      638      M        1       0       1     
+    gdollar_17          oe      638      M        1       0       1     
+    gdollar_18                  639      N        -       -       -     
+    gdollar_18          d       639      M        1       0       4     
+    gdollar_18          ck      639      M        1       0       1     
+    gdollar_18          oe      639      M        1       0       1     
+    gdollar_19                  640      N        -       -       -     
+    gdollar_19          d       640      M        1       0       4     
+    gdollar_19          ar      640      M        1       0       1     
+    gdollar_19          ce      640      M        1       0       4     
+    gdollar_19          ck      640      M        1       0       1     
+    gdollar_19          oe      640      M        1       0       1     
+    gdollar_20                  641      N        -       -       -     
+    gdollar_20          d       641      M        1       0       4     
+    gdollar_20          ar      641      M        1       0       1     
+    gdollar_20          ce      641      M        1       0       4     
+    gdollar_20          ck      641      M        1       0       1     
+    gdollar_20          oe      641      M        1       0       1     
+    gdollar_21                  642      N        -       -       -     
+    gdollar_21          d       642      M        1       0       4     
+    gdollar_21          ar      642      M        1       0       1     
+    gdollar_21          ce      642      M        1       0       4     
+    gdollar_21          ck      642      M        1       0       1     
+    gdollar_21          oe      642      M        1       0       1     
+    gdollar_22                  643      N        -       -       -     
+    gdollar_22          d       643      M        1       0       4     
+    gdollar_22          ar      643      M        1       0       1     
+    gdollar_22          ce      643      M        1       0       4     
+    gdollar_22          ck      643      M        1       0       1     
+    gdollar_22          oe      643      M        1       0       1     
+    gdollar_23                  644      N        -       -       -     
+    gdollar_23          d       644      M        1       0       4     
+    gdollar_23          ar      644      M        1       0       1     
+    gdollar_23          ce      644      M        1       0       4     
+    gdollar_23          ck      644      M        1       0       1     
+    gdollar_23          oe      644      M        1       0       1     
+    gdollar_24                  645      N        -       -       -     
+    gdollar_24          d       645      M        1       0       4     
+    gdollar_24          ar      645      M        1       0       1     
+    gdollar_24          ce      645      M        1       0       4     
+    gdollar_24          ck      645      M        1       0       1     
+    gdollar_24          oe      645      M        1       0       1     
+    gdollar_25                  646      N        -       -       -     
+    gdollar_25          d       646      M        1       0       4     
+    gdollar_25          ar      646      M        1       0       1     
+    gdollar_25          ce      646      M        1       0       4     
+    gdollar_25          ck      646      M        1       0       1     
+    gdollar_25          oe      646      M        1       0       1     
+    gdollar_26                  647      N        -       -       -     
+    gdollar_26          d       647      M        1       0       4     
+    gdollar_26          ar      647      M        1       0       1     
+    gdollar_26          ce      647      M        1       0       4     
+    gdollar_26          ck      647      M        1       0       1     
+    gdollar_26          oe      647      M        1       0       1     
+    gdollar_27                  648      N        -       -       -     
+    gdollar_27          d       648      M        1       0       4     
+    gdollar_27          ar      648      M        1       0       1     
+    gdollar_27          ck      648      M        1       0       1     
+    gdollar_28                  649      N        -       -       -     
+    gdollar_28          d       649      M        1       0       4     
+    gdollar_28          ar      649      M        1       0       1     
+    gdollar_28          ck      649      M        1       0       1     
+    gdollar_29                  650      N        -       -       -     
+    gdollar_29          d       650      M        1       0       4     
+    gdollar_29          ar      650      M        1       0       1     
+    gdollar_29          ck      650      M        1       0       1     
+    gdollar_30                  651      N        -       -       -     
+    gdollar_30          d       651      M        1       0       4     
+    gdollar_30          ar      651      M        1       0       1     
+    gdollar_30          ck      651      M        1       0       1     
+    gdollar_31                  652      N        -       -       -     
+    gdollar_31          d       652      M        1       0       4     
+    gdollar_31          ar      652      M        1       0       1     
+    gdollar_31          ce      652      M        1       0       4     
+    gdollar_31          ck      652      M        1       0       1     
+    gdollar_31          oe      652      M        1       0       1     
+    gdollar_32                  653      N        -       -       -     
+    gdollar_32          d       653      M        1       0       4     
+    gdollar_32          ar      653      M        1       0       1     
+    gdollar_32          ce      653      M        1       0       4     
+    gdollar_32          ck      653      M        1       0       1     
+    gdollar_32          oe      653      M        1       0       1     
+    gdollar_33                  654      N        -       -       -     
+    gdollar_33          d       654      M        1       0       4     
+    gdollar_33          ar      654      M        1       0       1     
+    gdollar_33          ce      654      M        1       0       4     
+    gdollar_33          ck      654      M        1       0       1     
+    gdollar_33          oe      654      M        1       0       1     
+    gdollar_34                  655      N        -       -       -     
+    gdollar_34          d       655      M        1       0       4     
+    gdollar_34          ar      655      M        1       0       1     
+    gdollar_34          ce      655      M        1       0       4     
+    gdollar_34          ck      655      M        1       0       1     
+    gdollar_34          oe      655      M        1       0       1     
+    gdollar_35                  656      N        -       -       -     
+    gdollar_35          d       656      M        1       0       4     
+    gdollar_35          ar      656      M        1       0       1     
+    gdollar_35          ce      656      M        1       0       4     
+    gdollar_35          ck      656      M        1       0       1     
+    gdollar_35          oe      656      M        1       0       1     
+    gdollar_36                  657      N        -       -       -     
+    gdollar_36          d       657      M        1       0       4     
+    gdollar_36          ar      657      M        1       0       1     
+    gdollar_36          ce      657      M        1       0       4     
+    gdollar_36          ck      657      M        1       0       1     
+    gdollar_36          oe      657      M        1       0       1     
+    gdollar_37                  658      N        -       -       -     
+    gdollar_37          d       658      M        1       0       4     
+    gdollar_37          ar      658      M        1       0       1     
+    gdollar_37          ce      658      M        1       0       4     
+    gdollar_37          ck      658      M        1       0       1     
+    gdollar_37          oe      658      M        1       0       1     
+    gdollar_38                  659      N        -       -       -     
+    gdollar_38          d       659      M        1       0       4     
+    gdollar_38          ar      659      M        1       0       1     
+    gdollar_38          ce      659      M        1       0       4     
+    gdollar_38          ck      659      M        1       0       1     
+    gdollar_38          oe      659      M        1       0       1     
+    gdollar_39                  660      N        -       -       -     
+    gdollar_39          d       660      M        1       0       4     
+    gdollar_39          ar      660      M        1       0       1     
+    gdollar_39          ce      660      M        1       0       4     
+    gdollar_39          ck      660      M        1       0       1     
+    gdollar_39          oe      660      M        1       0       1     
+    gdollar_40                  661      N        -       -       -     
+    gdollar_40          d       661      M        1       0       4     
+    gdollar_40          ar      661      M        1       0       1     
+    gdollar_40          ce      661      M        1       0       4     
+    gdollar_40          ck      661      M        1       0       1     
+    gdollar_40          oe      661      M        1       0       1     
+    gdollar_41                  662      N        -       -       -     
+    gdollar_41          d       662      M        1       0       4     
+    gdollar_41          ar      662      M        1       0       1     
+    gdollar_41          ce      662      M        1       0       4     
+    gdollar_41          ck      662      M        1       0       1     
+    gdollar_41          oe      662      M        1       0       1     
+    gdollar_42                  663      N        -       -       -     
+    gdollar_42          d       663      M        1       0       4     
+    gdollar_42          ar      663      M        1       0       1     
+    gdollar_42          ce      663      M        1       0       4     
+    gdollar_42          ck      663      M        1       0       1     
+    gdollar_42          oe      663      M        1       0       1     
+    gdollar_43                  664      N        -       -       -     
+    gdollar_43          d       664      M        1       0       4     
+    gdollar_43          ar      664      M        1       0       1     
+    gdollar_43          ce      664      M        1       0       4     
+    gdollar_43          ck      664      M        1       0       1     
+    gdollar_43          oe      664      M        1       0       1     
+    gdollar_44                  665      N        -       -       -     
+    gdollar_44          d       665      M        1       0       4     
+    gdollar_44          ar      665      M        1       0       1     
+    gdollar_44          ce      665      M        1       0       4     
+    gdollar_44          ck      665      M        1       0       1     
+    gdollar_44          oe      665      M        1       0       1     
+    gdollar_45                  666      N        -       -       -     
+    gdollar_45          d       666      M        1       0       4     
+    gdollar_45          ar      666      M        1       0       1     
+    gdollar_45          ce      666      M        1       0       4     
+    gdollar_45          ck      666      M        1       0       1     
+    gdollar_45          oe      666      M        1       0       1     
+    gdollar_46                  667      N        -       -       -     
+    gdollar_46          d       667      M        1       0       4     
+    gdollar_46          ar      667      M        1       0       1     
+    gdollar_46          ce      667      M        1       0       4     
+    gdollar_46          ck      667      M        1       0       1     
+    gdollar_46          oe      667      M        1       0       1     
+    ibb_0                       202      N        -       -       -     
+    ibb_0               d       202      M        1       0       4     
+    ibb_0               ar      202      M        1       0       1     
+    ibb_0               ck      202      M        1       0       1     
+    ibb_1                       203      N        -       -       -     
+    ibb_1               d       203      M        1       0       4     
+    ibb_1               ar      203      M        1       0       1     
+    ibb_1               ck      203      M        1       0       1     
+    ibs_low                     204      N        1       0       4     
+    ibs_low             oe      204      M        1       0       1     
+    ind1_low                    0        V        -       -       -     
+    ind2_low                    0        V        -       -       -     
+    initialize                  0        V        -       -       -     
+    int_in_prog_low             0        V        -       -       -     
+    int_rqst_low                0        V        1       0       4     
+    int_rqst_low        oe      0        X        2       0       1     
+    internal_io                 0        V        1       0       4     
+    internal_io         oe      0        X        1       0       1     
+    ir0_low                     0        V        -       -       -     
+    ir1_low                     0        V        -       -       -     
+    key_control_low             0        V        -       -       -     
+    la_en_low                   0        V        -       -       -     
+    lbm_or_rbmn                 205      N        2       0       4     
+    link_low                    0        V        -       -       -     
+    mams_ld_ctl                 0        V        -       -       -     
+    mbct4_low                   206      N        1       0       4     
+    md00_low                    0        V        -       -       -     
+    md01_low                    0        V        -       -       -     
+    md02_low                    0        V        -       -       -     
+    md03_low                    0        V        -       -       -     
+    md04_low                    0        V        -       -       -     
+    md05_low                    0        V        -       -       -     
+    md06_low                    0        V        -       -       -     
+    md07_low                    0        V        -       -       -     
+    md08_low                    0        V        -       -       -     
+    md09_low                    0        V        -       -       -     
+    md10_low                    0        V        -       -       -     
+    md11_low                    0        V        -       -       -     
+    msirdis_low                 0        V        1       0       4     
+    msirdis_low         oe      0        X        1       0       1     
+    mux_c0                      207      N        1       0       4     
+    mux_c1                      208      N        1       0       4     
+    mux_c2                      209      N        1       0       4     
+    n_t_100x                    210      N        2       0       4     
+    n_t_101x                    211      N        2       0       4     
+    n_t_102x                    212      N        1       0       4     
+    n_t_103x                    213      N        1       0       4     
+    n_t_104x                    214      N        2       0       4     
+    n_t_105x                    215      N        1       0       4     
+    n_t_106x                    216      N        1       0       4     
+    n_t_107x                    217      N        1       0       4     
+    n_t_108x                    218      N        1       0       4     
+    n_t_109x                    219      N        1       0       4     
+    n_t_10x                     220      N        17      0       4     
+    n_t_110x                    221      N        1       0       4     
+    n_t_111x                    222      N        2       0       4     
+    n_t_112x                    223      N        1       0       4     
+    n_t_113x                    224      N        1       0       4     
+    n_t_114x                    225      N        1       0       4     
+    n_t_114x            oe      225      M        1       0       1     
+    n_t_115x                    226      N        1       0       4     
+    n_t_115x            oe      226      M        1       0       1     
+    n_t_116x                    227      N        1       0       4     
+    n_t_116x            oe      227      M        1       0       1     
+    n_t_117x                    228      N        1       0       4     
+    n_t_117x            oe      228      M        1       0       1     
+    n_t_118x                    229      N        1       0       4     
+    n_t_118x            oe      229      M        1       0       1     
+    n_t_119x                    230      N        1       0       4     
+    n_t_119x            oe      230      M        1       0       1     
+    n_t_11x                     231      N        23      0       4     
+    n_t_120x                    232      N        1       0       4     
+    n_t_120x            oe      232      M        1       0       1     
+    n_t_121x                    233      N        1       0       4     
+    n_t_121x            oe      233      M        1       0       1     
+    n_t_122x                    234      N        2       0       4     
+    n_t_123x                    235      N        1       0       4     
+    n_t_124x                    236      N        2       0       4     
+    n_t_125x                    237      N        1       0       4     
+    n_t_126x                    238      N        1       0       4     
+    n_t_127x                    239      N        1       0       4     
+    n_t_128x                    240      N        1       0       4     
+    n_t_129x                    241      N        1       0       4     
+    n_t_12x                     242      N        3       0       4     
+    n_t_130x                    243      N        2       0       4     
+    n_t_131x                    244      N        1       0       4     
+    n_t_132x                    245      N        1       0       4     
+    n_t_133x                    246      N        2       0       4     
+    n_t_134x                    247      N        1       0       4     
+    n_t_135x                    248      N        1       0       4     
+    n_t_136x                    249      N        1       0       4     
+    n_t_138x                    250      N        1       0       4     
+    n_t_139x                    251      N        1       0       4     
+    n_t_139x            oe      251      M        1       0       1     
+    n_t_13x                     252      N        2       0       4     
+    n_t_140x                    253      N        1       0       4     
+    n_t_140x            oe      253      M        1       0       1     
+    n_t_141x                    254      N        1       0       4     
+    n_t_141x            oe      254      M        1       0       1     
+    n_t_142x                    255      N        1       0       4     
+    n_t_142x            oe      255      M        1       0       1     
+    n_t_143x                    256      N        1       0       4     
+    n_t_143x            oe      256      M        1       0       1     
+    n_t_144x                    257      N        1       0       4     
+    n_t_144x            oe      257      M        1       0       1     
+    n_t_145x                    258      N        1       0       4     
+    n_t_145x            oe      258      M        18      0       1     
+    n_t_146x                    259      N        1       0       4     
+    n_t_146x            oe      259      M        18      0       1     
+    n_t_147x                    260      N        1       0       4     
+    n_t_148x                    261      N        1       0       4     
+    n_t_149x                    262      N        1       0       4     
+    n_t_149x            oe      262      M        1       0       1     
+    n_t_150x                    263      N        1       0       4     
+    n_t_150x            oe      263      M        1       0       1     
+    n_t_151x                    264      N        1       0       4     
+    n_t_151x            oe      264      M        1       0       1     
+    n_t_152x                    265      N        1       0       4     
+    n_t_152x            oe      265      M        1       0       1     
+    n_t_153x                    266      N        1       0       4     
+    n_t_153x            oe      266      M        1       0       1     
+    n_t_154x                    267      N        1       0       4     
+    n_t_154x            oe      267      M        1       0       1     
+    n_t_155x                    268      N        1       0       4     
+    n_t_156x                    269      N        1       0       4     
+    n_t_157x                    270      N        -       -       -     
+    n_t_157x            d       270      M        1       0       4     
+    n_t_157x            ar      270      M        1       0       1     
+    n_t_157x            ck      270      M        1       0       1     
+    n_t_158x                    271      N        1       0       4     
+    n_t_159x                    272      N        -       -       -     
+    n_t_159x            d       272      M        1       0       4     
+    n_t_159x            ar      272      M        1       0       1     
+    n_t_159x            ck      272      M        1       0       1     
+    n_t_15x                     273      N        2       0       4     
+    n_t_160x                    274      N        1       0       4     
+    n_t_161x                    275      N        1       0       4     
+    n_t_162x                    276      N        -       -       -     
+    n_t_162x            d       276      M        1       0       4     
+    n_t_162x            ar      276      M        1       0       1     
+    n_t_162x            ck      276      M        1       0       1     
+    n_t_163x                    277      N        -       -       -     
+    n_t_163x            d       277      M        1       0       4     
+    n_t_163x            ar      277      M        1       0       1     
+    n_t_163x            ck      277      M        1       0       1     
+    n_t_164x                    278      N        2       0       4     
+    n_t_165x                    279      N        1       0       4     
+    n_t_166x                    280      N        1       0       4     
+    n_t_168x                    281      N        -       -       -     
+    n_t_168x            d       281      M        1       0       4     
+    n_t_168x            ap      281      M        1       0       1     
+    n_t_168x            ar      281      M        1       0       1     
+    n_t_168x            ck      281      M        1       0       1     
+    n_t_169x                    282      N        1       0       4     
+    n_t_16x                     283      N        1       0       4     
+    n_t_170x                    284      N        1       0       4     
+    n_t_171x                    285      N        1       0       4     
+    n_t_172x                    286      N        1       0       4     
+    n_t_173x                    287      N        1       0       4     
+    n_t_174x                    288      N        1       0       4     
+    n_t_175x                    289      N        1       0       4     
+    n_t_176x                    290      N        -       -       -     
+    n_t_176x            d       290      M        1       0       4     
+    n_t_176x            ap      290      M        1       0       1     
+    n_t_176x            ar      290      M        1       0       1     
+    n_t_176x            ck      290      M        1       0       1     
+    n_t_177x                    291      N        1       0       4     
+    n_t_178x                    292      N        1       0       4     
+    n_t_179x                    293      N        2       0       4     
+    n_t_17x                     294      N        1       0       4     
+    n_t_180x                    295      N        1       0       4     
+    n_t_181x                    296      N        1       0       4     
+    n_t_183x                    297      N        -       -       -     
+    n_t_183x            d       297      M        1       0       4     
+    n_t_183x            ap      297      M        1       0       1     
+    n_t_183x            ar      297      M        1       0       1     
+    n_t_183x            ck      297      M        1       0       1     
+    n_t_18x                     298      N        1       0       4     
+    n_t_18x             oe      298      M        4       0       1     
+    n_t_19x                     299      N        1       0       4     
+    n_t_19x             oe      299      M        4       0       1     
+    n_t_1x                      300      N        2       0       4     
+    n_t_20x                     301      N        1       0       4     
+    n_t_20x             oe      301      M        4       0       1     
+    n_t_21x                     302      N        2       0       4     
+    n_t_22x                     303      N        1       0       4     
+    n_t_22x             oe      303      M        1       0       1     
+    n_t_23x                     304      N        2       0       4     
+    n_t_24x                     305      N        2       0       4     
+    n_t_25x                     306      N        2       0       4     
+    n_t_26x                     307      N        1       0       4     
+    n_t_27x                     308      N        1       0       4     
+    n_t_28x                     309      N        1       0       4     
+    n_t_29x                     310      N        1       0       4     
+    n_t_29x             oe      310      M        6       0       1     
+    n_t_2x                      311      N        2       0       4     
+    n_t_30x                     312      N        1       0       4     
+    n_t_31x                     313      N        2       0       4     
+    n_t_32x                     314      N        1       0       4     
+    n_t_33x                     315      N        2       0       4     
+    n_t_37x                     0        V        1       0       4     
+    n_t_38x                     316      N        1       0       4     
+    n_t_38x             oe      316      M        5       0       1     
+    n_t_39x                     317      N        1       0       4     
+    n_t_39x             oe      317      M        5       0       1     
+    n_t_3x                      318      N        1       0       4     
+    n_t_40x                     319      N        1       0       4     
+    n_t_40x             oe      319      M        5       0       1     
+    n_t_41x                     320      N        1       0       4     
+    n_t_42x                     321      N        1       0       4     
+    n_t_43x                     322      N        1       0       4     
+    n_t_44x                     323      N        1       0       4     
+    n_t_45x                     324      N        1       0       4     
+    n_t_46x                     325      N        1       0       4     
+    n_t_47x                     326      N        1       0       4     
+    n_t_48x                     327      N        1       0       4     
+    n_t_49x                     328      N        1       0       4     
+    n_t_4x                      329      N        1       0       4     
+    n_t_50x                     330      N        1       0       4     
+    n_t_51x                     331      N        -       -       -     
+    n_t_51x             d       331      M        1       0       4     
+    n_t_51x             ar      331      M        1       0       1     
+    n_t_51x             ck      331      M        1       0       1     
+    n_t_52x                     332      N        -       -       -     
+    n_t_52x             d       332      M        1       0       4     
+    n_t_52x             ar      332      M        1       0       1     
+    n_t_52x             ck      332      M        1       0       1     
+    n_t_53x                     333      N        -       -       -     
+    n_t_53x             d       333      M        1       0       4     
+    n_t_53x             ar      333      M        1       0       1     
+    n_t_53x             ck      333      M        1       0       1     
+    n_t_54x                     334      N        -       -       -     
+    n_t_54x             d       334      M        1       0       4     
+    n_t_54x             ar      334      M        1       0       1     
+    n_t_54x             ck      334      M        1       0       1     
+    n_t_55x                     335      N        -       -       -     
+    n_t_55x             d       335      M        1       0       4     
+    n_t_55x             ar      335      M        1       0       1     
+    n_t_55x             ck      335      M        1       0       1     
+    n_t_56x                     336      N        1       0       4     
+    n_t_57x                     337      N        -       -       -     
+    n_t_57x             d       337      M        1       0       4     
+    n_t_57x             ar      337      M        1       0       1     
+    n_t_57x             ck      337      M        1       0       1     
+    n_t_58x                     338      N        -       -       -     
+    n_t_58x             d       338      M        1       0       4     
+    n_t_58x             ar      338      M        1       0       1     
+    n_t_58x             ck      338      M        1       0       1     
+    n_t_59x                     339      N        -       -       -     
+    n_t_59x             d       339      M        1       0       4     
+    n_t_59x             ar      339      M        1       0       1     
+    n_t_59x             ck      339      M        1       0       1     
+    n_t_5x                      340      N        2       0       4     
+    n_t_60x                     341      N        -       -       -     
+    n_t_60x             d       341      M        1       0       4     
+    n_t_60x             ar      341      M        1       0       1     
+    n_t_60x             ck      341      M        1       0       1     
+    n_t_61x                     342      N        -       -       -     
+    n_t_61x             d       342      M        1       0       4     
+    n_t_61x             ar      342      M        1       0       1     
+    n_t_61x             ck      342      M        1       0       1     
+    n_t_62x                     343      N        -       -       -     
+    n_t_62x             d       343      M        1       0       4     
+    n_t_62x             ar      343      M        1       0       1     
+    n_t_62x             ck      343      M        1       0       1     
+    n_t_63x                     344      N        -       -       -     
+    n_t_63x             d       344      M        1       0       4     
+    n_t_63x             ar      344      M        1       0       1     
+    n_t_63x             ck      344      M        1       0       1     
+    n_t_64x                     345      N        1       0       4     
+    n_t_65x                     346      N        1       0       4     
+    n_t_66x                     347      N        2       0       4     
+    n_t_68x                     348      N        1       0       4     
+    n_t_69x                     349      N        1       0       4     
+    n_t_6x                      350      N        1       0       4     
+    n_t_6x              oe      350      M        8       0       1     
+    n_t_70x                     351      N        1       0       4     
+    n_t_71x                     352      N        1       0       4     
+    n_t_72x                     353      N        1       0       4     
+    n_t_72x             oe      353      M        1       0       1     
+    n_t_73x                     354      N        1       0       4     
+    n_t_73x             oe      354      M        1       0       1     
+    n_t_74x                     355      N        1       0       4     
+    n_t_74x             oe      355      M        1       0       1     
+    n_t_75x                     356      N        1       0       4     
+    n_t_76x                     357      N        1       0       4     
+    n_t_77x                     358      N        1       0       4     
+    n_t_77x             oe      358      M        3       0       1     
+    n_t_78x                     359      N        1       0       4     
+    n_t_79x                     360      N        1       0       4     
+    n_t_7x                      361      N        1       0       4     
+    n_t_80x                     362      N        1       0       4     
+    n_t_81x                     363      N        1       0       4     
+    n_t_82x                     364      N        1       0       4     
+    n_t_83x                     365      N        1       0       4     
+    n_t_84x                     366      N        1       0       4     
+    n_t_85x                     367      N        1       0       4     
+    n_t_86x                     368      N        1       0       4     
+    n_t_88x                     369      N        1       0       4     
+    n_t_89x                     370      N        1       0       4     
+    n_t_8x                      371      N        4       0       4     
+    n_t_90x                     372      N        1       0       4     
+    n_t_91x                     373      N        1       0       4     
+    n_t_92x                     374      N        1       0       4     
+    n_t_93x                     375      N        1       0       4     
+    n_t_94x                     376      N        1       0       4     
+    n_t_95x                     377      N        1       0       4     
+    n_t_96x                     378      N        2       0       4     
+    n_t_97x                     379      N        1       0       4     
+    n_t_98x                     380      N        1       0       4     
+    n_t_99x                     381      N        2       0       4     
+    n_t_9x                      382      N        23      0       4     
+    p1_3v                       383      N        1       0       4     
+    p1_bb0                      384      N        1       0       4     
+    p1_bb0              oe      384      M        1       0       1     
+    p1_bb1                      385      N        1       0       4     
+    p1_bb1              oe      385      M        1       0       1     
+    p1_bfl0                     386      N        1       0       4     
+    p1_bfl0             oe      386      M        1       0       1     
+    p1_bfl1                     387      N        1       0       4     
+    p1_bfl1             oe      387      M        1       0       1     
+    p1_bfl2                     388      N        1       0       4     
+    p1_bfl2             oe      388      M        1       0       1     
+    p1_crf                      389      N        1       0       4     
+    p1_crf              oe      389      M        8       0       1     
+    p1_enrf_low                 390      N        2       0       4     
+    p1_over                     391      N        1       0       4     
+    p1_rr0                      392      N        -       -       -     
+    p1_rr0              d       392      M        1       0       4     
+    p1_rr0              ar      392      M        1       0       1     
+    p1_rr0              ck      392      M        1       0       1     
+    p1_rr1                      393      N        -       -       -     
+    p1_rr1              d       393      M        1       0       4     
+    p1_rr1              ar      393      M        1       0       1     
+    p1_rr1              ck      393      M        1       0       1     
+    p1_rr2                      394      N        -       -       -     
+    p1_rr2              d       394      M        1       0       4     
+    p1_rr2              ar      394      M        1       0       1     
+    p1_rr2              ck      394      M        1       0       1     
+    p1_rr3                      395      N        -       -       -     
+    p1_rr3              d       395      M        1       0       4     
+    p1_rr3              ar      395      M        1       0       1     
+    p1_rr3              ck      395      M        1       0       1     
+    p1_rr4                      396      N        -       -       -     
+    p1_rr4              d       396      M        1       0       4     
+    p1_rr4              ar      396      M        1       0       1     
+    p1_rr4              ck      396      M        1       0       1     
+    p1_us0                      397      N        -       -       -     
+    p1_us0              d       397      M        1       0       4     
+    p1_us0              ar      397      M        1       0       1     
+    p1_us0              ck      397      M        1       0       1     
+    p1_us1                      398      N        -       -       -     
+    p1_us1              d       398      M        1       0       4     
+    p1_us1              ar      398      M        1       0       1     
+    p1_us1              ck      398      M        1       0       1     
+    p1_us2                      399      N        -       -       -     
+    p1_us2              d       399      M        1       0       4     
+    p1_us2              ar      399      M        1       0       1     
+    p1_us2              ck      399      M        1       0       1     
+    p1_us3                      400      N        -       -       -     
+    p1_us3              d       400      M        1       0       4     
+    p1_us3              ar      400      M        1       0       1     
+    p1_us3              ck      400      M        1       0       1     
+    p1_us4                      401      N        -       -       -     
+    p1_us4              d       401      M        1       0       4     
+    p1_us4              ar      401      M        1       0       1     
+    p1_us4              ck      401      M        1       0       1     
+    p1_us5                      402      N        -       -       -     
+    p1_us5              d       402      M        1       0       4     
+    p1_us5              ar      402      M        1       0       1     
+    p1_us5              ck      402      M        1       0       1     
+    p2_3v                       403      N        1       0       4     
+    p2_bcpmad_low               404      N        1       0       4     
+    p2_dfa                      405      N        1       0       4     
+    p2_dfa_low                  406      N        -       -       -     
+    p2_dfa_low          d       406      M        1       0       4     
+    p2_dfa_low          ar      406      M        1       0       1     
+    p2_dfa_low          ck      406      M        1       0       1     
+    p2_dfb                      407      N        1       0       4     
+    p2_dfb_low                  408      N        -       -       -     
+    p2_dfb_low          d       408      M        1       0       4     
+    p2_dfb_low          ar      408      M        1       0       1     
+    p2_dfb_low          ck      408      M        1       0       1     
+    p2_dfc                      409      N        1       0       4     
+    p2_dfc_low                  410      N        -       -       -     
+    p2_dfc_low          d       410      M        1       0       4     
+    p2_dfc_low          ar      410      M        1       0       1     
+    p2_dfc_low          ck      410      M        1       0       1     
+    p2_elar_low                 411      N        -       -       -     
+    p2_elar_low         d       411      M        1       0       4     
+    p2_elar_low         ap      411      M        1       0       1     
+    p2_elar_low         ar      411      M        1       0       1     
+    p2_elar_low         ck      411      M        1       0       1     
+    p2_emaen                    412      N        -       -       -     
+    p2_emaen            d       412      M        1       0       4     
+    p2_emaen            ap      412      M        1       0       1     
+    p2_emaen            ar      412      M        1       0       1     
+    p2_emaen            ck      412      M        1       0       1     
+    p2_emaen_low                413      N        1       0       4     
+    p2_enbs_low                 414      N        1       0       4     
+    p2_ifa                      415      N        1       0       4     
+    p2_ifa_low                  416      N        -       -       -     
+    p2_ifa_low          d       416      M        1       0       4     
+    p2_ifa_low          ar      416      M        1       0       1     
+    p2_ifa_low          ck      416      M        1       0       1     
+    p2_ifb                      417      N        1       0       4     
+    p2_ifb_low                  418      N        -       -       -     
+    p2_ifb_low          d       418      M        1       0       4     
+    p2_ifb_low          ar      418      M        1       0       1     
+    p2_ifb_low          ck      418      M        1       0       1     
+    p2_ifc                      419      N        1       0       4     
+    p2_ifc_low                  420      N        -       -       -     
+    p2_ifc_low          d       420      M        1       0       4     
+    p2_ifc_low          ar      420      M        1       0       1     
+    p2_ifc_low          ck      420      M        1       0       1     
+    p2_int_low                  421      N        1       0       4     
+    p2_rsb_low                  422      N        1       0       4     
+    p2_rst_low                  423      N        2       0       4     
+    p2_sf0                      424      N        -       -       -     
+    p2_sf0              d       424      M        1       0       4     
+    p2_sf0              ar      424      M        1       0       1     
+    p2_sf0              ck      424      M        1       0       1     
+    p2_sf1                      425      N        -       -       -     
+    p2_sf1              d       425      M        1       0       4     
+    p2_sf1              ar      425      M        1       0       1     
+    p2_sf1              ck      425      M        1       0       1     
+    p2_sf2                      426      N        -       -       -     
+    p2_sf2              d       426      M        1       0       4     
+    p2_sf2              ar      426      M        1       0       1     
+    p2_sf2              ck      426      M        1       0       1     
+    p2_sf3                      427      N        -       -       -     
+    p2_sf3              d       427      M        1       0       4     
+    p2_sf3              ar      427      M        1       0       1     
+    p2_sf3              ck      427      M        1       0       1     
+    p2_sf4                      428      N        -       -       -     
+    p2_sf4              d       428      M        1       0       4     
+    p2_sf4              ar      428      M        1       0       1     
+    p2_sf4              ck      428      M        1       0       1     
+    p2_sf5                      429      N        -       -       -     
+    p2_sf5              d       429      M        1       0       4     
+    p2_sf5              ar      429      M        1       0       1     
+    p2_sf5              ck      429      M        1       0       1     
+    p2_suf_out                  430      N        1       0       4     
+    p3_bd                       431      N        2       0       4     
+    p3_bd0                      432      N        1       0       4     
+    p3_bd1                      433      N        1       0       4     
+    p3_bd2                      436      N        1       0       4     
+    p3_bd3                      437      N        1       0       4     
+    p3_bd4                      438      N        1       0       4     
+    p3_bd5                      439      N        1       0       4     
+    p3_bd6                      440      N        1       0       4     
+    p3_bd7                      441      N        1       0       4     
+    p3_bd8                      442      N        1       0       4     
+    p3_bd9                      443      N        1       0       4     
+    p3_bd10                     434      N        1       0       4     
+    p3_bd11                     435      N        1       0       4     
+    p3_bf                       444      N        2       0       4     
+    p3_binit                    445      N        1       0       4     
+    p3_binit_low                446      N        1       0       4     
+    p3_bm0                      447      N        1       0       4     
+    p3_bm0_low                  448      N        1       0       4     
+    p3_bm1                      449      N        1       0       4     
+    p3_bm2                      453      N        1       0       4     
+    p3_bm3                      455      N        1       0       4     
+    p3_bm4                      457      N        1       0       4     
+    p3_bm10                     450      N        1       0       4     
+    p3_bm11                     451      N        1       0       4     
+    p3_bm11_low                 452      N        1       0       4     
+    p3_bm2_low                  454      N        1       0       4     
+    p3_bm3_low                  456      N        1       0       4     
+    p3_bm4_low                  458      N        1       0       4     
+    p3_bm5                      459      N        1       0       4     
+    p3_bm6                      460      N        1       0       4     
+    p3_bm7                      461      N        1       0       4     
+    p3_bm8                      462      N        1       0       4     
+    p3_bm9                      463      N        1       0       4     
+    p3_bm9_low                  464      N        1       0       4     
+    p3_bpause                   465      N        -       -       -     
+    p3_bpause           d       465      M        1       0       4     
+    p3_bpause           ap      465      M        1       0       1     
+    p3_bpause           ar      465      M        1       0       1     
+    p3_bpause           ck      465      M        1       0       1     
+    p3_bpla                     466      N        1       0       4     
+    p3_btp1                     467      N        1       0       4     
+    p3_btp2                     468      N        1       0       4     
+    p3_btp2_low                 469      N        1       0       4     
+    p3_btp3                     470      N        1       0       4     
+    p3_btp3_low                 471      N        1       0       4     
+    p3_btp4                     472      N        1       0       4     
+    p3_bts3                     473      N        1       0       4     
+    p3_bts4                     474      N        1       0       4     
+    p3_c17en_low                475      N        1       0       4     
+    p3_c17en_low        oe      475      M        1       0       1     
+    p3_cfrom_low                476      N        1       0       4     
+    p3_cfrom_low        oe      476      M        1       0       1     
+    p3_decen_low                477      N        1       0       4     
+    p3_decen_low        oe      477      M        1       0       1     
+    p3_e2cfrom_low              478      N        -       -       -     
+    p3_e2cfrom_low      d       478      M        1       0       4     
+    p3_e2cfrom_low      ap      478      M        1       0       1     
+    p3_e2cfrom_low      ar      478      M        1       0       1     
+    p3_e2cfrom_low      ck      478      M        1       0       1     
+    p3_hos_low                  479      N        1       0       4     
+    p3_hos_low          oe      479      M        1       0       1     
+    p3_inioen                   480      N        1       0       4     
+    p3_inioen           oe      480      M        1       0       1     
+    p3_mbk                      481      N        -       -       -     
+    p3_mbk              d       481      M        1       0       4     
+    p3_mbk              ap      481      M        1       0       1     
+    p3_mbk              ar      481      M        1       0       1     
+    p3_mbk              ck      481      M        1       0       1     
+    p4_3v                       482      N        1       0       4     
+    p4_blbm_low                 483      N        1       0       4     
+    p4_bts1                     484      N        2       0       4     
+    p4_cdf_low                  485      N        1       0       4     
+    p4_cdf_low          oe      485      M        5       0       1     
+    p4_cif_low                  486      N        1       0       4     
+    p4_cif_low          oe      486      M        5       0       1     
+    p4_cint_low                 487      N        1       0       4     
+    p4_ckdb                     488      N        2       0       4     
+    p4_ckdf                     489      N        2       0       4     
+    p4_ckibb                    490      N        2       0       4     
+    p4_ckif                     491      N        2       0       4     
+    p4_ckifb                    492      N        2       0       4     
+    p4_cksv                     493      N        1       0       4     
+    p4_ckuf                     494      N        2       0       4     
+    p4_ckufb                    495      N        2       0       4     
+    p4_cuf_low                  496      N        1       0       4     
+    p4_cumb_low                 497      N        2       0       4     
+    p4_dfen                     498      N        1       0       4     
+    p4_dfen_low                 499      N        -       -       -     
+    p4_dfen_low         d       499      M        1       0       4     
+    p4_dfen_low         ap      499      M        1       0       1     
+    p4_dfen_low         ar      499      M        1       0       1     
+    p4_dfen_low         ck      499      M        1       0       1     
+    p4_fatal_low                500      N        1       0       4     
+    p4_fatal_lp_0_rp            501      N        -       -       -     
+    p4_fatal_lp_0_rp    ap      501      M        1       0       1     
+    p4_fatal_lp_0_rp    ar      501      M        1       0       1     
+    p4_fatal_lp_0_rp    ck      501      M        1       0       1     
+    p4_gtf_low                  502      N        1       0       4     
+    p4_gts_low                  503      N        1       0       4     
+    p4_init_en                  504      N        1       0       4     
+    p4_init_en_low              505      N        -       -       -     
+    p4_init_en_low      d       505      M        1       0       4     
+    p4_init_en_low      ap      505      M        1       0       1     
+    p4_init_en_low      ar      505      M        1       0       1     
+    p4_init_en_low      ck      505      M        1       0       1     
+    p4_int                      506      N        2       0       4     
+    p4_int_in                   507      N        -       -       -     
+    p4_int_in           d       507      M        1       0       4     
+    p4_int_in           ap      507      M        1       0       1     
+    p4_int_in           ar      507      M        1       0       1     
+    p4_int_in           ck      507      M        1       0       1     
+    p4_int_in_prog              508      N        1       0       4     
+    p4_int_in_prog_low          509      N        1       0       4     
+    p4_int_in_prog_low  oe      509      M        1       0       1     
+    p4_int_inh_low              510      N        1       0       4     
+    p4_jmp_or_jms               511      N        2       0       4     
+    p4_lbm_low                  512      N        4       0       4     
+    p4_let_io_low               513      N        1       0       4     
+    p4_let_io_low       oe      513      M        6       0       1     
+    p4_lrr_low                  514      N        1       0       4     
+    p4_lusr_low                 515      N        1       0       4     
+    p4_lxa                      516      N        2       0       4     
+    p4_lxm_low                  517      N        1       0       4     
+    p4_mbc_low                  518      N        17      0       4     
+    p4_new_fld                  519      N        1       0       4     
+    p4_pclr                     0        V        -       -       -     
+    p4_pclr_low                 0        V        -       -       -     
+    p4_plxa                     520      N        1       0       4     
+    p4_plxa_low                 521      N        1       0       4     
+    p4_raca_low                 522      N        17      0       4     
+    p4_racb_low                 523      N        17      0       4     
+    p4_racc_low                 524      N        17      0       4     
+    p4_rbm_low                  525      N        4       0       4     
+    p4_rdf_low                  526      N        1       0       4     
+    p4_rib_low                  527      N        1       0       4     
+    p4_rif_low                  528      N        1       0       4     
+    p4_rlb_low                  529      N        4       0       4     
+    p4_rmf_low                  530      N        1       0       4     
+    p4_rmr_low                  531      N        4       0       4     
+    p4_rrr_low                  532      N        1       0       4     
+    p4_rtf_low                  533      N        1       0       4     
+    p4_rts_low                  534      N        1       0       4     
+    p4_rusr_low                 535      N        1       0       4     
+    p4_rxm_low                  536      N        1       0       4     
+    p4_sint_low                 537      N        1       0       4     
+    p4_suf_low                  538      N        1       0       4     
+    p4_usint                    539      N        1       0       4     
+    p4_usint_low                540      N        -       -       -     
+    p4_usint_low        d       540      M        1       0       4     
+    p4_usint_low        ap      540      M        1       0       1     
+    p4_usint_low        ar      540      M        1       0       1     
+    p4_usint_low        ck      540      M        1       0       1     
+    p5_bmen_low                 541      N        1       0       4     
+    p5_bmen_low         oe      541      M        1       0       1     
+    p5_dbs_low                  542      N        1       0       4     
+    p5_dbs_low          oe      542      M        1       0       1     
+    p5_ibs0_low                 543      N        2       0       4     
+    p5_ibs1_low                 544      N        2       0       4     
+    p5_ibs2_low                 545      N        2       0       4     
+    p5_ibs3_low                 546      N        2       0       4     
+    p6_bind2                    547      N        1       0       4     
+    p6_bs0_low                  0        V        1       0       4     
+    p6_bs0_low          oe      0        X        1       0       1     
+    p6_bs1_low                  0        V        1       0       4     
+    p6_bs1_low          oe      0        X        2       0       1     
+    p6_bs2_low                  0        V        1       0       4     
+    p6_bs2_low          oe      0        X        2       0       1     
+    p6_bs3_low                  0        V        1       0       4     
+    p6_bs3_low          oe      0        X        2       0       1     
+    p6_ckmr_low                 548      N        1       0       4     
+    p6_dioi                     549      N        -       -       -     
+    p6_dioi             d       549      M        1       0       4     
+    p6_dioi             ar      549      M        1       0       1     
+    p6_dioi             ck      549      M        1       0       1     
+    p6_dioi_low                 550      N        1       0       4     
+    p6_disf_low                 551      N        1       0       4     
+    p6_dispb_low                552      N        1       0       4     
+    p6_ebm                      553      N        -       -       -     
+    p6_ebm              d       553      M        1       0       4     
+    p6_ebm              ar      553      M        1       0       1     
+    p6_ebm              ck      553      M        1       0       1     
+    p6_ebm_low                  554      N        1       0       4     
+    p6_eem                      555      N        -       -       -     
+    p6_eem              d       555      M        1       0       4     
+    p6_eem              ar      555      M        1       0       1     
+    p6_eem              ck      555      M        1       0       1     
+    p6_eem_low                  556      N        1       0       4     
+    p6_en5                      557      N        -       -       -     
+    p6_en5              d       557      M        1       0       4     
+    p6_en5              ar      557      M        1       0       1     
+    p6_en5              ck      557      M        1       0       1     
+    p6_en5_low                  558      N        1       0       4     
+    p6_en9                      559      N        -       -       -     
+    p6_en9              d       559      M        1       0       4     
+    p6_en9              ar      559      M        1       0       1     
+    p6_en9              ck      559      M        1       0       1     
+    p6_en9_low                  560      N        1       0       4     
+    p6_maint                    561      N        2       0       4     
+    p6_maint_low                562      N        1       0       4     
+    p6_prup                     563      N        1       0       4     
+    p6_prup_low                 564      N        -       -       -     
+    p6_prup_low         d       564      M        1       0       4     
+    p6_prup_low         ap      564      M        1       0       1     
+    p6_prup_low         ar      564      M        1       0       1     
+    p6_prup_low         ck      564      M        1       0       1     
+    p6_rvfen                    565      N        -       -       -     
+    p6_rvfen            d       565      M        1       0       4     
+    p6_rvfen            ar      565      M        1       0       1     
+    p6_rvfen            ck      565      M        1       0       1     
+    p6_rvfen_low                566      N        1       0       4     
+    p6_usm                      567      N        1       0       4     
+    p6_usm_low                  568      N        -       -       -     
+    p6_usm_low          d       568      M        1       0       4     
+    p6_usm_low          ap      568      M        1       0       1     
+    p6_usm_low          ar      568      M        1       0       1     
+    p6_usm_low          ck      568      M        1       0       1     
+    pause_low                   0        V        -       -       -     
+    power_ok_low                0        V        -       -       -     
+    pulse_la                    0        V        -       -       -     
+    ra1                         601      N        -       -       -     
+    ra1                 l       601      M        1       0       4     
+    ra1                 le      601      M        1       0       4     
+    ra2                         617      N        -       -       -     
+    ra2                 l       617      M        1       0       4     
+    ra2                 le      617      M        1       0       4     
+    rb1                         602      N        -       -       -     
+    rb1                 l       602      M        1       0       4     
+    rb1                 le      602      M        1       0       4     
+    rb2                         618      N        -       -       -     
+    rb2                 l       618      M        1       0       4     
+    rb2                 le      618      M        1       0       4     
+    rbs0_low                    569      N        1       0       4     
+    rbs0_low            oe      569      M        1       0       1     
+    rbs1_low                    570      N        1       0       4     
+    rbs1_low            oe      570      M        2       0       1     
+    rbs2_low                    571      N        1       0       4     
+    rbs2_low            oe      571      M        2       0       1     
+    rbs3_low                    572      N        1       0       4     
+    rbs3_low            oe      572      M        2       0       1     
+    rc1                         603      N        -       -       -     
+    rc1                 l       603      M        1       0       4     
+    rc1                 le      603      M        1       0       4     
+    rc2                         619      N        -       -       -     
+    rc2                 l       619      M        1       0       4     
+    rc2                 le      619      M        1       0       4     
+    rd0_low                     573      N        1       0       4     
+    rd0_low             oe      573      M        4       0       1     
+    rd1                         604      N        -       -       -     
+    rd1                 l       604      M        1       0       4     
+    rd1                 le      604      M        1       0       4     
+    rd10_low                    574      N        1       0       4     
+    rd10_low            oe      574      M        8       0       1     
+    rd11_low                    575      N        1       0       4     
+    rd11_low            oe      575      M        8       0       1     
+    rd1_low                     576      N        1       0       4     
+    rd1_low             oe      576      M        8       0       1     
+    rd2                         620      N        -       -       -     
+    rd2                 l       620      M        1       0       4     
+    rd2                 le      620      M        1       0       4     
+    rd2_low                     577      N        1       0       4     
+    rd2_low             oe      577      M        8       0       1     
+    rd3_low                     578      N        1       0       4     
+    rd3_low             oe      578      M        7       0       1     
+    rd4_low                     579      N        1       0       4     
+    rd4_low             oe      579      M        6       0       1     
+    rd5_low                     580      N        1       0       4     
+    rd5_low             oe      580      M        40      0       1     
+    rd6_low                     581      N        1       0       4     
+    rd6_low             oe      581      M        25      0       1     
+    rd7_low                     582      N        1       0       4     
+    rd7_low             oe      582      M        27      0       1     
+    rd8_low                     583      N        1       0       4     
+    rd8_low             oe      583      M        19      0       1     
+    rd9_low                     584      N        1       0       4     
+    rd9_low             oe      584      M        23      0       1     
+    re1                         605      N        -       -       -     
+    re1                 l       605      M        1       0       4     
+    re1                 le      605      M        1       0       4     
+    re2                         621      N        -       -       -     
+    re2                 l       621      M        1       0       4     
+    re2                 le      621      M        1       0       4     
+    rf1                         606      N        -       -       -     
+    rf1                 l       606      M        1       0       4     
+    rf1                 le      606      M        1       0       4     
+    rf2                         622      N        -       -       -     
+    rf2                 l       622      M        1       0       4     
+    rf2                 le      622      M        1       0       4     
+    rg1                         607      N        -       -       -     
+    rg1                 l       607      M        1       0       4     
+    rg1                 le      607      M        1       0       4     
+    rg2                         623      N        -       -       -     
+    rg2                 l       623      M        1       0       4     
+    rg2                 le      623      M        1       0       4     
+    rh1                         608      N        -       -       -     
+    rh1                 l       608      M        1       0       4     
+    rh1                 le      608      M        1       0       4     
+    rh2                         624      N        -       -       -     
+    rh2                 l       624      M        1       0       4     
+    rh2                 le      624      M        1       0       4     
+    ri1                         609      N        -       -       -     
+    ri1                 l       609      M        1       0       4     
+    ri1                 le      609      M        1       0       4     
+    ri2                         625      N        -       -       -     
+    ri2                 l       625      M        1       0       4     
+    ri2                 le      625      M        1       0       4     
+    rj1                         610      N        -       -       -     
+    rj1                 l       610      M        1       0       4     
+    rj1                 le      610      M        1       0       4     
+    rj2                         626      N        -       -       -     
+    rj2                 l       626      M        1       0       4     
+    rj2                 le      626      M        1       0       4     
+    rk1                         611      N        -       -       -     
+    rk1                 l       611      M        1       0       4     
+    rk1                 le      611      M        1       0       4     
+    rk2                         627      N        -       -       -     
+    rk2                 l       627      M        1       0       4     
+    rk2                 le      627      M        1       0       4     
+    rl1                         612      N        -       -       -     
+    rl1                 l       612      M        1       0       4     
+    rl1                 le      612      M        1       0       4     
+    rl2                         628      N        -       -       -     
+    rl2                 l       628      M        1       0       4     
+    rl2                 le      628      M        1       0       4     
+    rm1                         613      N        -       -       -     
+    rm1                 l       613      M        1       0       4     
+    rm1                 le      613      M        1       0       4     
+    rm2                         629      N        -       -       -     
+    rm2                 l       629      M        1       0       4     
+    rm2                 le      629      M        1       0       4     
+    rn1                         614      N        -       -       -     
+    rn1                 l       614      M        1       0       4     
+    rn1                 le      614      M        1       0       4     
+    rn2                         630      N        -       -       -     
+    rn2                 l       630      M        1       0       4     
+    rn2                 le      630      M        1       0       4     
+    ro1                         615      N        -       -       -     
+    ro1                 l       615      M        1       0       4     
+    ro1                 le      615      M        1       0       4     
+    ro2                         631      N        -       -       -     
+    ro2                 l       631      M        1       0       4     
+    ro2                 le      631      M        1       0       4     
+    rp1                         616      N        -       -       -     
+    rp1                 l       616      M        1       0       4     
+    rp1                 le      616      M        1       0       4     
+    rp2                         632      N        -       -       -     
+    rp2                 l       632      M        1       0       4     
+    rp2                 le      632      M        1       0       4     
+    run_low                     0        V        -       -       -     
+    sb0_low                     585      N        1       0       4     
+    sb1_low                     586      N        1       0       4     
+    sb2_low                     587      N        1       0       4     
+    sb3_low                     588      N        1       0       4     
+    skip_low                    0        V        1       0       4     
+    skip_low            oe      0        X        1       0       1     
+    tp1                         0        V        -       -       -     
+    tp2                         0        V        -       -       -     
+    tp3                         0        V        -       -       -     
+    tp4                         0        V        -       -       -     
+    ts1_low                     0        V        -       -       -     
+    ts3_low                     0        V        -       -       -     
+    ts4_low                     0        V        -       -       -     
+    user_mode_low               0        V        1       0       4     
+    user_mode_low       oe      0        X        2       0       1     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
