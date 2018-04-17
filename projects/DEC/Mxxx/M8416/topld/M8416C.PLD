@@ -3,7 +3,7 @@
 
 Name     M8416C ;
 PartNo   cpld ;
-Date     4/8/2018 ;
+Date     4/16/2018 ;
 Revision 01 ;
 Designer  ;
 Company   ;
@@ -54,6 +54,18 @@ pin = break_in_prog_low;
 pin = c0_low;
 pin = c1_low;
 pin = cpma_disable_low;
+pin = data00_low;
+pin = data01_low;
+pin = data02_low;
+pin = data03_low;
+pin = data04_low;
+pin = data05_low;
+pin = data06_low;
+pin = data07_low;
+pin = data08_low;
+pin = data09_low;
+pin = data10_low;
+pin = data11_low;
 pin = ema0_low;
 pin = ema1_low;
 pin = ema2_low;
@@ -68,112 +80,449 @@ pin = skip_low;
 pin = user_mode_low;
 
 /* Internal nodes */
-pinnode = gdollar_0;
-pinnode = gdollar_1;
-pinnode = gdollar_2;
-pinnode = n_t_58x;
-pinnode = n_t_59x;
-pinnode = n_t_60x;
-pinnode = n_t_61x;
-pinnode = n_t_62x;
-pinnode = n_t_63x;
-pinnode = n_t_51x;
-pinnode = n_t_52x;
-pinnode = n_t_53x;
-pinnode = n_t_54x;
-pinnode = n_t_55x;
-pinnode = n_t_57x;
-pinnode = p3_bpause;
-pinnode = p3_e2cfrom_low;
-pinnode = gdollar_3;
-pinnode = gdollar_4;
-pinnode = p4_fatal_lp_0_rp;
-pinnode = p4_usint_low;
-pinnode = p6_rvfen;
-pinnode = p6_en9;
-pinnode = p6_en5;
-pinnode = p6_eem;
-pinnode = gdollar_5;
-pinnode = p6_ebm;
-pinnode = p6_dioi;
-pinnode = n_t_168x;
-pinnode = p6_usm_low;
-pinnode = n_t_176x;
-pinnode = gdollar_6;
-pinnode = gdollar_7;
-pinnode = gdollar_8;
-pinnode = p2_elar_low;
-pinnode = p2_emaen;
-pinnode = p6_prup_low;
-pinnode = gdollar_9;
-pinnode = gdollar_10;
-pinnode = gdollar_11;
-pinnode = p4_init_en_low;
-pinnode = p4_dfen_low;
-pinnode = p1_rr1;
-pinnode = p1_rr3;
-pinnode = p1_rr4;
-pinnode = p1_rr2;
-pinnode = p1_rr0;
-pinnode = p1_us1;
-pinnode = p1_us2;
-pinnode = p1_us4;
-pinnode = p1_us5;
-pinnode = p1_us3;
-pinnode = p1_us0;
-pinnode = gdollar_12;
-pinnode = gdollar_13;
-pinnode = gdollar_14;
-pinnode = gdollar_15;
-pinnode = p2_ifa_low;
-pinnode = p2_ifb_low;
-pinnode = p2_ifc_low;
-pinnode = gdollar_16;
-pinnode = gdollar_17;
-pinnode = gdollar_18;
-pinnode = gdollar_19;
-pinnode = gdollar_20;
-pinnode = gdollar_21;
-pinnode = gdollar_22;
-pinnode = gdollar_23;
-pinnode = gdollar_24;
-pinnode = gdollar_25;
-pinnode = gdollar_26;
-pinnode = p2_dfa_low;
-pinnode = p2_dfb_low;
-pinnode = p2_dfc_low;
-pinnode = p2_sf0;
-pinnode = p2_sf1;
-pinnode = p2_sf2;
-pinnode = p2_sf3;
-pinnode = p2_sf4;
-pinnode = p2_sf5;
-pinnode = n_t_162x;
-pinnode = n_t_163x;
-pinnode = n_t_157x;
-pinnode = n_t_159x;
-pinnode = ibb_1;
-pinnode = ibb_0;
-pinnode = gdollar_27;
-pinnode = gdollar_28;
-pinnode = gdollar_29;
-pinnode = gdollar_30;
-pinnode = gdollar_31;
-pinnode = gdollar_32;
-pinnode = gdollar_33;
-pinnode = gdollar_34;
-pinnode = gdollar_35;
-pinnode = gdollar_36;
-pinnode = gdollar_37;
-pinnode = gdollar_38;
-pinnode = gdollar_39;
-pinnode = gdollar_40;
-pinnode = gdollar_41;
-pinnode = gdollar_42;
-pinnode = gdollar_43;
-pinnode = gdollar_44;
-pinnode = gdollar_45;
-pinnode = gdollar_46;
+node force_0_low;
+node ibb_0;
+node ibb_1;
+node ibs_low;
+node lbm_or_rbmn;
+node mbct4_low;
+node mux_c0;
+node mux_c1;
+node mux_c2;
+node n_t_100x;
+node n_t_101x;
+node n_t_102x;
+node n_t_103x;
+node n_t_104x;
+node n_t_105x;
+node n_t_106x;
+node n_t_107x;
+node n_t_108x;
+node n_t_109x;
+node n_t_10x;
+node n_t_110x;
+node n_t_111x;
+node n_t_112x;
+node n_t_113x;
+node n_t_114x;
+node n_t_115x;
+node n_t_116x;
+node n_t_117x;
+node n_t_118x;
+node n_t_119x;
+node n_t_11x;
+node n_t_120x;
+node n_t_121x;
+node n_t_122x;
+node n_t_123x;
+node n_t_124x;
+node n_t_125x;
+node n_t_126x;
+node n_t_127x;
+node n_t_128x;
+node n_t_129x;
+node n_t_12x;
+node n_t_130x;
+node n_t_131x;
+node n_t_132x;
+node n_t_133x;
+node n_t_134x;
+node n_t_135x;
+node n_t_136x;
+node n_t_138x;
+node n_t_139x;
+node n_t_13x;
+node n_t_140x;
+node n_t_141x;
+node n_t_142x;
+node n_t_143x;
+node n_t_144x;
+node n_t_145x;
+node n_t_146x;
+node n_t_147x;
+node n_t_148x;
+node n_t_149x;
+node n_t_150x;
+node n_t_151x;
+node n_t_152x;
+node n_t_153x;
+node n_t_154x;
+node n_t_155x;
+node n_t_156x;
+node n_t_157x;
+node n_t_158x;
+node n_t_159x;
+node n_t_15x;
+node n_t_160x;
+node n_t_161x;
+node n_t_162x;
+node n_t_163x;
+node n_t_164x;
+node n_t_165x;
+node n_t_166x;
+node n_t_168x;
+node n_t_169x;
+node n_t_170x;
+node n_t_171x;
+node n_t_172x;
+node n_t_173x;
+node n_t_174x;
+node n_t_175x;
+node n_t_176x;
+node n_t_177x;
+node n_t_178x;
+node n_t_179x;
+node n_t_180x;
+node n_t_181x;
+node n_t_182x;
+node n_t_183x;
+node n_t_18x;
+node n_t_19x;
+node n_t_1x;
+node n_t_20x;
+node n_t_21x;
+node n_t_22x;
+node n_t_23x;
+node n_t_24x;
+node n_t_25x;
+node n_t_26x;
+node n_t_27x;
+node n_t_28x;
+node n_t_29x;
+node n_t_2x;
+node n_t_30x;
+node n_t_31x;
+node n_t_32x;
+node n_t_33x;
+node n_t_35x;
+node n_t_36x;
+node n_t_37x;
+node n_t_38x;
+node n_t_39x;
+node n_t_3x;
+node n_t_40x;
+node n_t_41x;
+node n_t_42x;
+node n_t_43x;
+node n_t_44x;
+node n_t_45x;
+node n_t_46x;
+node n_t_47x;
+node n_t_48x;
+node n_t_49x;
+node n_t_50x;
+node n_t_51x;
+node n_t_52x;
+node n_t_53x;
+node n_t_54x;
+node n_t_55x;
+node n_t_56x;
+node n_t_57x;
+node n_t_58x;
+node n_t_59x;
+node n_t_60x;
+node n_t_61x;
+node n_t_62x;
+node n_t_63x;
+node n_t_64x;
+node n_t_65x;
+node n_t_66x;
+node n_t_68x;
+node n_t_69x;
+node n_t_6x;
+node n_t_70x;
+node n_t_71x;
+node n_t_72x;
+node n_t_73x;
+node n_t_74x;
+node n_t_75x;
+node n_t_76x;
+node n_t_77x;
+node n_t_78x;
+node n_t_79x;
+node n_t_80x;
+node n_t_81x;
+node n_t_82x;
+node n_t_83x;
+node n_t_84x;
+node n_t_85x;
+node n_t_86x;
+node n_t_87x;
+node n_t_88x;
+node n_t_89x;
+node n_t_8x;
+node n_t_90x;
+node n_t_91x;
+node n_t_92x;
+node n_t_93x;
+node n_t_94x;
+node n_t_95x;
+node n_t_96x;
+node n_t_97x;
+node n_t_98x;
+node n_t_99x;
+node n_t_9x;
+node p1_3v;
+node p1_bb0;
+node p1_bb1;
+node p1_bfl0;
+node p1_bfl1;
+node p1_bfl2;
+node p1_crf;
+node p1_enrf_low;
+node p1_over;
+node p1_rr0;
+node p1_rr1;
+node p1_rr2;
+node p1_rr3;
+node p1_rr4;
+node p1_us0;
+node p1_us1;
+node p1_us2;
+node p1_us3;
+node p1_us4;
+node p1_us5;
+node p2_3v;
+node p2_bcpmad_low;
+node p2_dfa;
+node p2_dfa_low;
+node p2_dfb;
+node p2_dfb_low;
+node p2_dfc;
+node p2_dfc_low;
+node p2_elar_low;
+node p2_emaen;
+node p2_emaen_low;
+node p2_enbs_low;
+node p2_ifa;
+node p2_ifa_low;
+node p2_ifb;
+node p2_ifb_low;
+node p2_ifc;
+node p2_ifc_low;
+node p2_int_low;
+node p2_rsb_low;
+node p2_rst_low;
+node p2_sf0;
+node p2_sf1;
+node p2_sf2;
+node p2_sf3;
+node p2_sf4;
+node p2_sf5;
+node p2_suf_out;
+node p3_bd;
+node p3_bd0;
+node p3_bd1;
+node p3_bd10;
+node p3_bd11;
+node p3_bd2;
+node p3_bd3;
+node p3_bd4;
+node p3_bd5;
+node p3_bd6;
+node p3_bd7;
+node p3_bd8;
+node p3_bd9;
+node p3_bf;
+node p3_binit;
+node p3_binit_low;
+node p3_bm0;
+node p3_bm0_low;
+node p3_bm1;
+node p3_bm10;
+node p3_bm11;
+node p3_bm11_low;
+node p3_bm2;
+node p3_bm2_low;
+node p3_bm3;
+node p3_bm3_low;
+node p3_bm4;
+node p3_bm4_low;
+node p3_bm5;
+node p3_bm6;
+node p3_bm7;
+node p3_bm8;
+node p3_bm9;
+node p3_bm9_low;
+node p3_bpause;
+node p3_bpla;
+node p3_btp1;
+node p3_btp2;
+node p3_btp2_low;
+node p3_btp3;
+node p3_btp3_low;
+node p3_btp4;
+node p3_bts3;
+node p3_bts4;
+node p3_c17en_low;
+node p3_cfrom_low;
+node p3_decen_low;
+node p3_e2cfrom_low;
+node p3_hos_low;
+node p3_inioen;
+node p3_mbk;
+node p4_3v;
+node p4_blbm_low;
+node p4_bts1;
+node p4_cdf_low;
+node p4_cif_low;
+node p4_cint_low;
+node p4_ckdb;
+node p4_ckdf;
+node p4_ckibb;
+node p4_ckif;
+node p4_ckifb;
+node p4_cksv;
+node p4_ckuf;
+node p4_ckufb;
+node p4_cuf_low;
+node p4_cumb_low;
+node p4_dfen;
+node p4_dfen_low;
+node p4_fatal_low;
+node p4_fatal_lp_0_rp;
+node p4_gtf_low;
+node p4_gts_low;
+node p4_init_en;
+node p4_init_en_low;
+node p4_int;
+node p4_int_in;
+node p4_int_in_prog;
+node p4_int_in_prog_low;
+node p4_int_inh_low;
+node p4_jmp_or_jms;
+node p4_lbm_low;
+node p4_let_io_low;
+node p4_lrr_low;
+node p4_lusr_low;
+node p4_lxa;
+node p4_lxm_low;
+node p4_mbc_low;
+node p4_new_fld;
+node p4_pclr;
+node p4_pclr_low;
+node p4_plxa;
+node p4_plxa_low;
+node p4_raca_low;
+node p4_racb_low;
+node p4_racc_low;
+node p4_rbm_low;
+node p4_rdf_low;
+node p4_rib_low;
+node p4_rif_low;
+node p4_rlb_low;
+node p4_rmf_low;
+node p4_rmr_low;
+node p4_rrr_low;
+node p4_rtf_low;
+node p4_rts_low;
+node p4_rusr_low;
+node p4_rxm_low;
+node p4_sint_low;
+node p4_suf_low;
+node p4_usint;
+node p4_usint_low;
+node p5_bmen_low;
+node p5_dbs_low;
+node p5_ibs0_low;
+node p5_ibs1_low;
+node p5_ibs2_low;
+node p5_ibs3_low;
+node p6_bind2;
+node p6_ckmr_low;
+node p6_dioi;
+node p6_dioi_low;
+node p6_disf_low;
+node p6_dispb_low;
+node p6_ebm;
+node p6_ebm_low;
+node p6_eem;
+node p6_eem_low;
+node p6_en5;
+node p6_en5_low;
+node p6_en9;
+node p6_en9_low;
+node p6_maint;
+node p6_maint_low;
+node p6_prup;
+node p6_prup_low;
+node p6_rvfen;
+node p6_rvfen_low;
+node p6_usm;
+node p6_usm_low;
+node rbs0_low;
+node rbs1_low;
+node rbs2_low;
+node rbs3_low;
+node rd0_low;
+node rd10_low;
+node rd11_low;
+node rd1_low;
+node rd2_low;
+node rd3_low;
+node rd4_low;
+node rd5_low;
+node rd6_low;
+node rd7_low;
+node rd8_low;
+node rd9_low;
+node sb0_low;
+node sb1_low;
+node sb2_low;
+node sb3_low;
+
+/* Code nodes */
+node gdollar_0;
+node gdollar_1;
+node gdollar_2;
+node gdollar_3;
+node gdollar_4;
+node gdollar_5;
+node gdollar_6;
+node gdollar_7;
+node gdollar_8;
+node gdollar_9;
+node gdollar_10;
+node gdollar_11;
+node ra1, rb1, rc1, rd1, re1, rf1, rg1, rh1;
+node ri1, rj1, rk1, rl1, rm1, rn1, ro1, rp1;
+node ra2, rb2, rc2, rd2, re2, rf2, rg2, rh2;
+node ri2, rj2, rk2, rl2, rm2, rn2, ro2, rp2;
+node gdollar_12;
+node gdollar_13;
+node gdollar_14;
+node gdollar_15;
+node gdollar_16;
+node gdollar_17;
+node gdollar_18;
+node gdollar_19;
+node gdollar_20;
+node gdollar_21;
+node gdollar_22;
+node gdollar_23;
+node gdollar_24;
+node gdollar_25;
+node gdollar_26;
+node gdollar_27;
+node gdollar_28;
+node gdollar_29;
+node gdollar_30;
+node gdollar_31;
+node gdollar_32;
+node gdollar_33;
+node gdollar_34;
+node gdollar_35;
+node gdollar_36;
+node gdollar_37;
+node gdollar_38;
+node gdollar_39;
+node gdollar_40;
+node gdollar_41;
+node gdollar_42;
+node gdollar_43;
+node gdollar_44;
+node gdollar_45;
+node gdollar_46;
 
 /* Equations */
 
@@ -570,8 +919,8 @@ gdollar_4.d = 'b'0;
 p4_blbm_low = !gdollar_4;
 
 /* e27: sn7411 */
-p3_btp4 = !tp4;
-n_t_179x = !(p6_dioi_low&p1_enrf_low);
+p3_btp4 = tp4;
+n_t_179x = p6_dioi_low&p1_enrf_low;
 
 /* e28: dec23440a2 */
 /* p4_cif_low = !(!(!(!p3_bm10
@@ -1009,6 +1358,8 @@ p4_ckifb = n_t_112x&!n_t_111x # n_t_114x&n_t_111x;
 /* n_t_140x = 'b'0; */
 /* n_t_141x = 'b'0; */
 /* n_t_142x = 'b'0; */
+/* n_t_143x = 'b'0; */
+/* n_t_144x = 'b'0; */
 lbm_or_rbmn = !(!p4_lbm_low&!p4_rbm_low
    #!p3_bts4);
 
@@ -1147,24 +1498,80 @@ p1_rr0.d = p3_bd7;
 /* rd11_low = !(!p4_rrr_low&p1_rr4); */
 
 /* e87: dec23442a2 */
-/* n_t_22x = !(!(!(!'b'0&!p1_rr2&!p1_rr3&!p1_rr4
+/* p1_bfl0 = !(!(!(p3_bm6&p3_bm7&p3_bm8&!p1_rr2&!p1_rr3&p1_rr4&p6_usm
+   #p3_bm6&p3_bm7&'b'0&!p1_rr2&!p1_rr3&p1_rr4&p6_usm
+   #p3_bm6&'b'0&!p1_rr2&p1_rr3&p1_rr4&p6_usm
+   #p3_bm6&!p3_bm7&p3_bm8&'b'0&!p1_rr2&p1_rr3&!p1_rr4&p6_usm
+   #!p3_bm6&p3_bm7&!p3_bm8&'b'0&p1_rr2&!p1_rr3&p1_rr4
+   #!p3_bm6&!p3_bm7&p3_bm8&p1_rr2&p1_rr3&p1_rr4
+   #!p3_bm6&p3_bm7&p3_bm8&'b'0&p1_rr2&!p1_rr4&p6_usm
+   #!p3_bm6&!p3_bm7&p3_bm8&'b'0&p1_rr2&p1_rr3&!p1_rr4
+   #p3_bm6&!p3_bm7&p3_bm8&!p1_rr2&p1_rr3&p1_rr4&p6_usm
+   #!p3_bm6&p3_bm7&p3_bm8&p1_rr2&!p1_rr3&p1_rr4&p6_usm
+   #p3_bm6&p3_bm7&p3_bm8&'b'0&!p1_rr2&!p1_rr3
+   #!p3_bm6&!p3_bm7&'b'0&p1_rr2&p1_rr3&p1_rr4
+   #p3_bm6&!'b'0&p1_rr2&!p1_rr3&!p1_rr4&p6_usm
+   #p3_bm6&!p3_bm8&p1_rr2&!p1_rr3&!p1_rr4&p6_usm
+   #p3_bm6&!p3_bm8&!'b'0&p1_rr2&!p1_rr3&p6_usm
+   #p3_bm6&!p3_bm7&!'b'0&p1_rr2&!p1_rr4&p6_usm
+   #p3_bm6&!p3_bm7&!p3_bm8&p1_rr2&!p1_rr4&p6_usm
+   #p3_bm6&!p3_bm7&!p3_bm8&!'b'0&p1_rr2&p6_usm
+   #p3_bm6&p3_bm7&!p1_rr2&p1_rr3&p6_usm
+   #!p3_bm6&p3_bm7&p1_rr2&p1_rr3&p6_usm
+   #p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #!p3_bm6&!p3_bm7&p3_bm8&!p6_usm
+   #p3_bm6&!p3_bm7&p1_rr2&!p1_rr3&p6_usm
+   #!p3_bm6&!'b'0&!p1_rr2&!p1_rr3&!p1_rr4
+   #!p3_bm6&!p3_bm8&!p1_rr2&!p1_rr3&!p1_rr4
+   #!p3_bm6&!p3_bm8&!'b'0&!p1_rr2&!p1_rr3
+   #!p3_bm6&!p3_bm7&!'b'0&!p1_rr2&!p1_rr4
+   #!p3_bm6&!p3_bm7&!p3_bm8&!p1_rr2&!p1_rr4
+   #!p3_bm6&!p3_bm7&!p3_bm8&!'b'0&!p1_rr2
+   #!p3_bm6&!p3_bm7&!p1_rr2&!p1_rr3
+   #!p3_bm6&!'b'0&!p6_usm
+   #!p3_bm6&!p3_bm8&!p6_usm))#!('b'0&'b'0) */
+/* p1_bfl1 = !(!(!(p3_bm7&'b'0&!p1_rr3&p1_rr4&p6_usm
+   #!p3_bm7&p3_bm8&!'b'0&p1_rr3&p1_rr4
+   #p3_bm7&p3_bm8&'b'0&!p1_rr3&!p1_rr4
+   #!p3_bm7&p3_bm8&'b'0&p1_rr3&!p1_rr4&p6_usm
+   #!p3_bm7&!p3_bm8&!'b'0&!p1_rr3&p1_rr4
+   #!p3_bm7&!p3_bm8&!p1_rr3&!p1_rr4
+   #!p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #p3_bm7&p3_bm8&!p1_rr3&p1_rr4&p6_usm
+   #!p3_bm7&'b'0&p1_rr3&p1_rr4&p6_usm
+   #p3_bm7&!'b'0&p1_rr3&!p1_rr4&p6_usm
+   #p3_bm7&!p3_bm8&p1_rr3&!p1_rr4&p6_usm
+   #p3_bm7&!p3_bm8&!'b'0&p1_rr3&p6_usm
+   #p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #!p3_bm7&!'b'0&!p1_rr3&!p1_rr4
+   #!p3_bm7&!'b'0&!p6_usm
+   #!p3_bm7&!p3_bm8&!p6_usm))#!('b'0&'b'0) */
+/* p1_bfl2 = !(!(!(!p3_bm7&p3_bm8&'b'0&!p6_usm
+   #!p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #p3_bm8&!'b'0&p1_rr4&p6_usm
+   #!p3_bm8&'b'0&p1_rr4&p6_usm
+   #!p3_bm8&!'b'0&!p1_rr4
+   #p3_bm8&'b'0&!p1_rr4
+   #!p3_bm8&!'b'0&!p6_usm))#!('b'0&'b'0) */
+/* n_t_22x = !(!(!(!p3_bm6&!p6_usm
+   #!p3_bm7&!p6_usm
+   #!'b'0&!p1_rr2&!p1_rr3&!p1_rr4
    #!p3_bm8&!p1_rr2&!p1_rr3&!p1_rr4
-   #!p3_bm6&!'b'0&!p1_rr3&!p1_rr4
-   #!p3_bm6&!p3_bm8&!p1_rr3&!p1_rr4
-   #!p3_bm7&!'b'0&!p1_rr2&!p1_rr4
-   #!p3_bm7&!p3_bm8&!p1_rr2&!p1_rr4
    #!p3_bm8&!'b'0&!p1_rr2&!p1_rr3
-   #!p3_bm6&!p3_bm7&!'b'0&!p1_rr4
-   #!p3_bm6&!p3_bm7&!p3_bm8&!p1_rr4
+   #!p3_bm6&!'b'0&!p1_rr3&!p1_rr4
+   #!p3_bm7&!'b'0&!p1_rr2&!p1_rr4
+   #!p3_bm6&!p3_bm8&!p1_rr3&!p1_rr4
+   #!p3_bm7&!p3_bm8&!p1_rr2&!p1_rr4
    #!p3_bm6&!p3_bm8&!'b'0&!p1_rr3
    #!p3_bm7&!p3_bm8&!'b'0&!p1_rr2
+   #!p3_bm6&!p3_bm7&!'b'0&!p1_rr4
+   #!p3_bm6&!p3_bm7&!p3_bm8&!p1_rr4
    #!p3_bm6&!p3_bm7&!p3_bm8&!'b'0
    #!p3_bm7&!p1_rr2&!p1_rr3
    #!p3_bm6&!p3_bm7&!p1_rr3
    #!'b'0&!p6_usm
    #!p3_bm8&!p6_usm
-   #!p3_bm7&!p6_usm
-   #!p3_bm6&!p6_usm
    #!p3_bm6&!p1_rr2))#!('b'0&'b'0) */
 
 /* e88: sn74174 */
@@ -1454,7 +1861,12 @@ n_t_160x = !n_t_163x;
    #!sb3_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
    #mux_c1&mux_c2))#!('b'0) */
-/* n_t_153x = !(!(!(!p1_bb1&!mux_c1&mux_c2
+/* n_t_153x = !(!(!(!p1_bb0&!mux_c1&mux_c2
+   #!p3_bd1&mux_c1&!mux_c2
+   #!sb0_low&!mux_c1&!mux_c2
+   #!mux_c0&!mux_c1&!mux_c2
+   #mux_c1&mux_c2))#!('b'0) */
+/* n_t_154x = !(!(!(!p1_bb1&!mux_c1&mux_c2
    #!p3_bd2&mux_c1&!mux_c2
    #!sb1_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
@@ -1579,6 +1991,30 @@ n_t_156x = !n_t_159x;
    #!p6_usm&!p2_dfa&p1_rr4&p4_rdf_low))#!(p1_enrf_low) */
 
 /* e113: dec23442a2 */
+/* p1_bb0 = !(!(!(p3_bm5&n_t_22x&!p1_rr0&p1_rr1&p6_usm
+   #!p3_bm5&p3_bm9&!n_t_22x&p1_rr0&p1_rr1
+   #p3_bm5&p3_bm9&n_t_22x&!p1_rr0&!p1_rr1
+   #!p3_bm5&p3_bm9&n_t_22x&p1_rr0&!p1_rr1&p6_usm
+   #!p3_bm5&!p3_bm9&!n_t_22x&!p1_rr0&p1_rr1
+   #!p3_bm5&!p3_bm9&!p1_rr0&!p1_rr1
+   #!'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #p3_bm5&p3_bm9&!p1_rr0&p1_rr1&p6_usm
+   #!p3_bm5&n_t_22x&p1_rr0&p1_rr1&p6_usm
+   #p3_bm5&!n_t_22x&p1_rr0&!p1_rr1&p6_usm
+   #p3_bm5&!p3_bm9&p1_rr0&!p1_rr1&p6_usm
+   #p3_bm5&!p3_bm9&!n_t_22x&p1_rr0&p6_usm
+   #'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #!p3_bm5&!n_t_22x&!p1_rr0&!p1_rr1
+   #!p3_bm5&!n_t_22x&!p6_usm
+   #!p3_bm5&!p3_bm9&!p6_usm))#!('b'0&'b'0) */
+/* p1_bb1 = !(!(!(!p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #!'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #p3_bm9&!n_t_22x&p1_rr1&p6_usm
+   #!p3_bm9&n_t_22x&p1_rr1&p6_usm
+   #!p3_bm9&!n_t_22x&!p1_rr1
+   #p3_bm9&n_t_22x&!p1_rr1
+   #!p3_bm9&!n_t_22x&!p6_usm))#!('b'0&'b'0) */
 
 /* e114: dec23621a9 */
 /* p1_crf = !(!(!(p1_3v&p1_3v&p6_usm&!p4_rdf_low
@@ -1965,6 +2401,12 @@ n_t_141x.oe = 'b'1;
 property atmel {open_collector= n_t_142x};
 n_t_142x = 'b'0;
 n_t_142x.oe = 'b'1;
+property atmel {open_collector= n_t_143x};
+n_t_143x = 'b'0;
+n_t_143x.oe = 'b'1;
+property atmel {open_collector= n_t_144x};
+n_t_144x = 'b'0;
+n_t_144x.oe = 'b'1;
 property atmel {open_collector= n_t_145x};
 n_t_145x = 'b'0;
 n_t_145x.oe = (n_t_142x&n_t_139x&n_t_140x&n_t_141x&!rp2
@@ -2037,7 +2479,14 @@ n_t_152x.oe = (!(!(!p3_bd4&!mux_c0&mux_c1&!mux_c2
    #mux_c1&mux_c2))#!('b'0));
 property atmel {open_collector= n_t_153x};
 n_t_153x = 'b'0;
-n_t_153x.oe = (!(!(!p1_bb1&!mux_c1&mux_c2
+n_t_153x.oe = (!(!(!p1_bb0&!mux_c1&mux_c2
+   #!p3_bd1&mux_c1&!mux_c2
+   #!sb0_low&!mux_c1&!mux_c2
+   #!mux_c0&!mux_c1&!mux_c2
+   #mux_c1&mux_c2))#!('b'0));
+property atmel {open_collector= n_t_154x};
+n_t_154x = 'b'0;
+n_t_154x.oe = (!(!(!p1_bb1&!mux_c1&mux_c2
    #!p3_bd2&mux_c1&!mux_c2
    #!sb1_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
@@ -2062,24 +2511,24 @@ n_t_20x.oe = (!p4_let_io_low&p1_bfl2)
  # (!p4_rmf_low&!p2_sf2);
 property atmel {open_collector= n_t_22x};
 n_t_22x = 'b'0;
-n_t_22x.oe = (!(!(!'b'0&!p1_rr2&!p1_rr3&!p1_rr4
+n_t_22x.oe = (!(!(!p3_bm6&!p6_usm
+   #!p3_bm7&!p6_usm
+   #!'b'0&!p1_rr2&!p1_rr3&!p1_rr4
    #!p3_bm8&!p1_rr2&!p1_rr3&!p1_rr4
-   #!p3_bm6&!'b'0&!p1_rr3&!p1_rr4
-   #!p3_bm6&!p3_bm8&!p1_rr3&!p1_rr4
-   #!p3_bm7&!'b'0&!p1_rr2&!p1_rr4
-   #!p3_bm7&!p3_bm8&!p1_rr2&!p1_rr4
    #!p3_bm8&!'b'0&!p1_rr2&!p1_rr3
-   #!p3_bm6&!p3_bm7&!'b'0&!p1_rr4
-   #!p3_bm6&!p3_bm7&!p3_bm8&!p1_rr4
+   #!p3_bm6&!'b'0&!p1_rr3&!p1_rr4
+   #!p3_bm7&!'b'0&!p1_rr2&!p1_rr4
+   #!p3_bm6&!p3_bm8&!p1_rr3&!p1_rr4
+   #!p3_bm7&!p3_bm8&!p1_rr2&!p1_rr4
    #!p3_bm6&!p3_bm8&!'b'0&!p1_rr3
    #!p3_bm7&!p3_bm8&!'b'0&!p1_rr2
+   #!p3_bm6&!p3_bm7&!'b'0&!p1_rr4
+   #!p3_bm6&!p3_bm7&!p3_bm8&!p1_rr4
    #!p3_bm6&!p3_bm7&!p3_bm8&!'b'0
    #!p3_bm7&!p1_rr2&!p1_rr3
    #!p3_bm6&!p3_bm7&!p1_rr3
    #!'b'0&!p6_usm
    #!p3_bm8&!p6_usm
-   #!p3_bm7&!p6_usm
-   #!p3_bm6&!p6_usm
    #!p3_bm6&!p1_rr2))#!('b'0&'b'0));
 property atmel {open_collector= n_t_29x};
 n_t_29x = 'b'0;
@@ -2194,6 +2643,96 @@ n_t_77x = 'b'0;
 n_t_77x.oe = (p3_bts4 & p3_mbk)
  # (p4_bts1 & p6_bind2)
  # (n_t_72x & p3_bts3);
+property atmel {open_collector= p1_bb0};
+p1_bb0 = 'b'0;
+p1_bb0.oe = (!(!(p3_bm5&n_t_22x&!p1_rr0&p1_rr1&p6_usm
+   #!p3_bm5&p3_bm9&!n_t_22x&p1_rr0&p1_rr1
+   #p3_bm5&p3_bm9&n_t_22x&!p1_rr0&!p1_rr1
+   #!p3_bm5&p3_bm9&n_t_22x&p1_rr0&!p1_rr1&p6_usm
+   #!p3_bm5&!p3_bm9&!n_t_22x&!p1_rr0&p1_rr1
+   #!p3_bm5&!p3_bm9&!p1_rr0&!p1_rr1
+   #!'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #p3_bm5&p3_bm9&!p1_rr0&p1_rr1&p6_usm
+   #!p3_bm5&n_t_22x&p1_rr0&p1_rr1&p6_usm
+   #p3_bm5&!n_t_22x&p1_rr0&!p1_rr1&p6_usm
+   #p3_bm5&!p3_bm9&p1_rr0&!p1_rr1&p6_usm
+   #p3_bm5&!p3_bm9&!n_t_22x&p1_rr0&p6_usm
+   #'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #!p3_bm5&!n_t_22x&!p1_rr0&!p1_rr1
+   #!p3_bm5&!n_t_22x&!p6_usm
+   #!p3_bm5&!p3_bm9&!p6_usm))#!('b'0&'b'0));
+property atmel {open_collector= p1_bb1};
+p1_bb1 = 'b'0;
+p1_bb1.oe = (!(!(!p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #!'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
+   #p3_bm9&!n_t_22x&p1_rr1&p6_usm
+   #!p3_bm9&n_t_22x&p1_rr1&p6_usm
+   #!p3_bm9&!n_t_22x&!p1_rr1
+   #p3_bm9&n_t_22x&!p1_rr1
+   #!p3_bm9&!n_t_22x&!p6_usm))#!('b'0&'b'0));
+property atmel {open_collector= p1_bfl0};
+p1_bfl0 = 'b'0;
+p1_bfl0.oe = (!(!(p3_bm6&p3_bm7&p3_bm8&!p1_rr2&!p1_rr3&p1_rr4&p6_usm
+   #p3_bm6&p3_bm7&'b'0&!p1_rr2&!p1_rr3&p1_rr4&p6_usm
+   #p3_bm6&'b'0&!p1_rr2&p1_rr3&p1_rr4&p6_usm
+   #p3_bm6&!p3_bm7&p3_bm8&'b'0&!p1_rr2&p1_rr3&!p1_rr4&p6_usm
+   #!p3_bm6&p3_bm7&!p3_bm8&'b'0&p1_rr2&!p1_rr3&p1_rr4
+   #!p3_bm6&!p3_bm7&p3_bm8&p1_rr2&p1_rr3&p1_rr4
+   #!p3_bm6&p3_bm7&p3_bm8&'b'0&p1_rr2&!p1_rr4&p6_usm
+   #!p3_bm6&!p3_bm7&p3_bm8&'b'0&p1_rr2&p1_rr3&!p1_rr4
+   #p3_bm6&!p3_bm7&p3_bm8&!p1_rr2&p1_rr3&p1_rr4&p6_usm
+   #!p3_bm6&p3_bm7&p3_bm8&p1_rr2&!p1_rr3&p1_rr4&p6_usm
+   #p3_bm6&p3_bm7&p3_bm8&'b'0&!p1_rr2&!p1_rr3
+   #!p3_bm6&!p3_bm7&'b'0&p1_rr2&p1_rr3&p1_rr4
+   #p3_bm6&!'b'0&p1_rr2&!p1_rr3&!p1_rr4&p6_usm
+   #p3_bm6&!p3_bm8&p1_rr2&!p1_rr3&!p1_rr4&p6_usm
+   #p3_bm6&!p3_bm8&!'b'0&p1_rr2&!p1_rr3&p6_usm
+   #p3_bm6&!p3_bm7&!'b'0&p1_rr2&!p1_rr4&p6_usm
+   #p3_bm6&!p3_bm7&!p3_bm8&p1_rr2&!p1_rr4&p6_usm
+   #p3_bm6&!p3_bm7&!p3_bm8&!'b'0&p1_rr2&p6_usm
+   #p3_bm6&p3_bm7&!p1_rr2&p1_rr3&p6_usm
+   #!p3_bm6&p3_bm7&p1_rr2&p1_rr3&p6_usm
+   #p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #!p3_bm6&!p3_bm7&p3_bm8&!p6_usm
+   #p3_bm6&!p3_bm7&p1_rr2&!p1_rr3&p6_usm
+   #!p3_bm6&!'b'0&!p1_rr2&!p1_rr3&!p1_rr4
+   #!p3_bm6&!p3_bm8&!p1_rr2&!p1_rr3&!p1_rr4
+   #!p3_bm6&!p3_bm8&!'b'0&!p1_rr2&!p1_rr3
+   #!p3_bm6&!p3_bm7&!'b'0&!p1_rr2&!p1_rr4
+   #!p3_bm6&!p3_bm7&!p3_bm8&!p1_rr2&!p1_rr4
+   #!p3_bm6&!p3_bm7&!p3_bm8&!'b'0&!p1_rr2
+   #!p3_bm6&!p3_bm7&!p1_rr2&!p1_rr3
+   #!p3_bm6&!'b'0&!p6_usm
+   #!p3_bm6&!p3_bm8&!p6_usm))#!('b'0&'b'0));
+property atmel {open_collector= p1_bfl1};
+p1_bfl1 = 'b'0;
+p1_bfl1.oe = (!(!(p3_bm7&'b'0&!p1_rr3&p1_rr4&p6_usm
+   #!p3_bm7&p3_bm8&!'b'0&p1_rr3&p1_rr4
+   #p3_bm7&p3_bm8&'b'0&!p1_rr3&!p1_rr4
+   #!p3_bm7&p3_bm8&'b'0&p1_rr3&!p1_rr4&p6_usm
+   #!p3_bm7&!p3_bm8&!'b'0&!p1_rr3&p1_rr4
+   #!p3_bm7&!p3_bm8&!p1_rr3&!p1_rr4
+   #!p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #p3_bm7&p3_bm8&!p1_rr3&p1_rr4&p6_usm
+   #!p3_bm7&'b'0&p1_rr3&p1_rr4&p6_usm
+   #p3_bm7&!'b'0&p1_rr3&!p1_rr4&p6_usm
+   #p3_bm7&!p3_bm8&p1_rr3&!p1_rr4&p6_usm
+   #p3_bm7&!p3_bm8&!'b'0&p1_rr3&p6_usm
+   #p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #!p3_bm7&!'b'0&!p1_rr3&!p1_rr4
+   #!p3_bm7&!'b'0&!p6_usm
+   #!p3_bm7&!p3_bm8&!p6_usm))#!('b'0&'b'0));
+property atmel {open_collector= p1_bfl2};
+p1_bfl2 = 'b'0;
+p1_bfl2.oe = (!(!(!p3_bm7&p3_bm8&'b'0&!p6_usm
+   #!p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
+   #p3_bm8&!'b'0&p1_rr4&p6_usm
+   #!p3_bm8&'b'0&p1_rr4&p6_usm
+   #!p3_bm8&!'b'0&!p1_rr4
+   #p3_bm8&'b'0&!p1_rr4
+   #!p3_bm8&!'b'0&!p6_usm))#!('b'0&'b'0));
 property atmel {open_collector= p1_crf};
 p1_crf = 'b'0;
 p1_crf.oe = (!(!(p1_3v&p1_3v&p6_usm&!p4_rdf_low
