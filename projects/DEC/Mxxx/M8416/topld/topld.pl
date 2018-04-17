@@ -539,9 +539,16 @@ sub sn7482 {
 $hidden{'sn7482'} = 0;
 
 sub sn7485 {
-  &qcode("!$pad{6} = (($pad{15} \$ $pad{1}) # ($pad{13} \$ $pad{14}) # ($pad{12} \$ $pad{11}) # ($pad{10} \$ $pad{9})) & $pad{3};\n") if defined $pad{6};
-  &qcode("$pad{5} = ($pad{15}&!$pad{1})\n  # !($pad{15} \$ $pad{1}) & ($pad{13}&!$pad{14})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})) & ($pad{12}&!$pad{11})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})\n  # ($pad{12} \$ $pad{11})) & ($pad{10}&!$pad{9})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})\n  # ($pad{12} \$ $pad{11})\n  # ($pad{10} \$ $pad{9})) & $pad{4};\n") if defined $pad{5};
-  &qcode("$pad{7} = ($pad{15}&!$pad{1})\n  # !($pad{15} \$ $pad{1}) & ($pad{14}&!$pad{13})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})) & ($pad{11}&!$pad{12})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})\n  # ($pad{12} \$ $pad{11})) & ($pad{9}&!$pad{10})\n  # !(($pad{15} \$ $pad{1})\n  # ($pad{13} \$ $pad{14})\n  # ($pad{12} \$ $pad{11})\n  # ($pad{10} \$ $pad{9})) & $pad{2};\n") if defined $pad{7};
+  ($n3e, $n2e, $n1e, $n0e) = (&gnext, &gnext, &gnext, &gnext);
+  print "node $n3e, $n2e, $n1e, $n0e;\r\n";
+  &qcode("$n3e = $pad{1}&!$pad{15} # !$pad{1}&$pad{15};\n");
+  &qcode("$n2e = $pad{14}&!$pad{13} # !$pad{14}&$pad{13};\n");
+  &qcode("$n1e = $pad{11}&!$pad{12} # !$pad{11}&$pad{12};\n");
+  &qcode("$n0e = $pad{9}&!$pad{10} # !$pad{9}&$pad{10};\n");
+  &qcode("$pad{6} = $pad{3} & !$n3e & !$n2e & !$n1e & !$n0e;\n")
+    if defined $pad{6};
+  &qcode("$pad{5} = !$pad{3} & !$pad{2} & !$n3e & !$n2e & !$n1e & !$n0e\n  # !$pad{9} & !$n3e & !$n2e & !$n1e & $n0e\n  # !$pad{11} & !$n3e & !$n2e & $n1e\n  # !$pad{14} & !$n3e & $n2e\n  # !$pad{1} & $n3e;\n") if defined $pad{5};
+  &qcode("$pad{7} = !$pad{3} & !$pad{4} & !$n3e & !$n2e & !$n1e & !$n0e\n  # $pad{9} & !$n3e & !$n2e & !$n1e & $n0e\n  # $pad{11} & !$n3e & !$n2e & $n1e\n  # $pad{14} & !$n3e & $n2e\n  # $pad{1} & $n3e;\n") if defined $pad{7};
 }
 $hidden{'sn7485'} = 0;
 
@@ -931,150 +938,182 @@ sub sn74180 {
 $hidden{'sn74180'} = 0;
 
 sub sn74189 {
-  $oc{$pad{11}} = 1 if defined $pad{11};
-  print "node ra4, rb4, rc4, rd4, re4, rf4, rg4, rh4;\r\n" if defined $pad{11};
-  print "node ri4, rj4, rk4, rl4, rm4, rn4, ro4, rp4;\r\n" if defined $pad{11};
-  &ocassign($pad{11}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!rp4\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!ro4\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rn4\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rm4\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rl4\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rk4\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!rj4\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!ri4\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rh4\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rg4\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!rf4\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!re4\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rd4\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rc4\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!rb4\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!ra4") if defined $pad{11};
   $oc{$pad{5}} = 1 if defined $pad{5};
-  print "node ra1, rb1, rc1, rd1, re1, rf1, rg1, rh1;\r\n" if defined $pad{5};
-  print "node ri1, rj1, rk1, rl1, rm1, rn1, ro1, rp1;\r\n" if defined $pad{5};
-  &ocassign($pad{5}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!rp1\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!ro1\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rn1\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rm1\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rl1\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rk1\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!rj1\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!ri1\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rh1\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rg1\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!rf1\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!re1\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rd1\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rc1\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!rb1\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!ra1") if defined $pad{5};
+  ($ra1, $rb1, $rc1, $rd1, $re1, $rf1, $rg1, $rh1)
+    = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
+      if defined $pad{5};
+  ($ri1, $rj1, $rk1, $rl1, $rm1, $rn1, $ro1, $rp1)
+    = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
+      if defined $pad{5};
+  print "node $ra1, $rb1, $rc1, $rd1, $re1, $rf1, $rg1, $rh1;\r\n"
+    if defined $pad{5};
+  print "node $ri1, $rj1, $rk1, $rl1, $rm1, $rn1, $ro1, $rp1;\r\n"
+    if defined $pad{5};
+  &ocassign($pad{5}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp1\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro1\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn1\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm1\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl1\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk1\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj1\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri1\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh1\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg1\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf1\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re1\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd1\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc1\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb1\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra1") if defined $pad{5};
   $oc{$pad{7}} = 1 if defined $pad{7};
-  print "node ra2, rb2, rc2, rd2, re2, rf2, rg2, rh2;\r\n" if defined $pad{7};
-  print "node ri2, rj2, rk2, rl2, rm2, rn2, ro2, rp2;\r\n" if defined $pad{7};
-  &ocassign($pad{7}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!rp2\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!ro2\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rn2\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rm2\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rl2\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rk2\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!rj2\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!ri2\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rh2\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rg2\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!rf2\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!re2\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rd2\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rc2\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!rb2\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!ra2") if defined $pad{7};
+  ($ra2, $rb2, $rc2, $rd2, $re2, $rf2, $rg2, $rh2)
+    = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
+      if defined $pad{7};
+  ($ri2, $rj2, $rk2, $rl2, $rm2, $rn2, $ro2, $rp2)
+    = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
+      if defined $pad{7};
+  print "node $ra2, $rb2, $rc2, $rd2, $re2, $rf2, $rg2, $rh2;\r\n"
+    if defined $pad{7};
+  print "node $ri2, $rj2, $rk2, $rl2, $rm2, $rn2, $ro2, $rp2;\r\n"
+    if defined $pad{7};
+  &ocassign($pad{7}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp2\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro2\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn2\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm2\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl2\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk2\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj2\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri2\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh2\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg2\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf2\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re2\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd2\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc2\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb2\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra2") if defined $pad{7};
   $oc{$pad{9}} = 1 if defined $pad{9};
-  print "node ra3, rb3, rc3, rd3, re3, rf3, rg3, rh3;\r\n" if defined $pad{9};
-  print "node ri3, rj3, rk3, rl3, rm3, rn3, ro3, rp3;\r\n" if defined $pad{9};
-  &ocassign($pad{9}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!rp3\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!ro3\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rn3\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!rm3\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rl3\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!rk3\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!rj3\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!ri3\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rh3\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!rg3\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!rf3\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!re3\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rd3\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!rc3\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!rb3\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!ra3") if defined $pad{9};
-  &qcode("ra1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("ra1.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("ra2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("ra2.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("ra3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("ra3.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("ra4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("ra4.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rb1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rb1.le = $pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rb2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rb2.le = $pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rb3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rb3.le = $pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rb4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rb4.le = $pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rc1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rc1.le = !$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rc2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rc2.le = !$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rc3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rc3.le = !$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rc4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rc4.le = !$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rd1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rd1.le = $pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rd2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rd2.le = $pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rd3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rd3.le = $pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rd4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rd4.le = $pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("re1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("re1.le = !$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("re2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("re2.le = !$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("re3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("re3.le = !$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("re4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("re4.le = !$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rf1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rf1.le = $pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rf2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rf2.le = $pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rf3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rf3.le = $pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rf4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rf4.le = $pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rg1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rg1.le = !$pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rg2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rg2.le = !$pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rg3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rg3.le = !$pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rg4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rg4.le = !$pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rh1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rh1.le = $pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rh2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rh2.le = $pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rh3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rh3.le = $pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rh4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rh4.le = $pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("ri1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("ri1.le = !$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("ri2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("ri2.le = !$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("ri3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("ri3.le = !$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("ri4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("ri4.le = !$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rj1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rj1.le = $pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rj2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rj2.le = $pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rj3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rj3.le = $pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rj4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rj4.le = $pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rk1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rk1.le = !$pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rk2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rk2.le = !$pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rk3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rk3.le = !$pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rk4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rk4.le = !$pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rl1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rl1.le = $pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rl2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rl2.le = $pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rl3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rl3.le = $pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rl4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rl4.le = $pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rm1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rm1.le = !$pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rm2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rm2.le = !$pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rm3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rm3.le = !$pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rm4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rm4.le = !$pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rn1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rn1.le = $pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rn2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rn2.le = $pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rn3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rn3.le = $pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rn4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rn4.le = $pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("ro1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("ro1.le = !$pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("ro2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("ro2.le = !$pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("ro3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("ro3.le = !$pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("ro4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("ro4.le = !$pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
-  &qcode("rp1.l = $pad{4};\n") if defined $pad{4};
-  &qcode("rp1.le = $pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
-  &qcode("rp2.l = $pad{6};\n") if defined $pad{6};
-  &qcode("rp2.le = $pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
-  &qcode("rp3.l = $pad{10};\n") if defined $pad{10};
-  &qcode("rp3.le = $pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
-  &qcode("rp4.l = $pad{12};\n") if defined $pad{12};
-  &qcode("rp4.le = $pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  ($ra3, $rb3, $rc3, $rd3, $re3, $rf3, $rg3, $rh3)
+    = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
+      if defined $pad{9};
+  ($ri3, $rj3, $rk3, $rl3, $rm3, $rn3, $ro3, $rp3)
+    = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
+      if defined $pad{9};
+  print "node $ra3, $rb3, $rc3, $rd3, $re3, $rf3, $rg3, $rh3;\r\n"
+    if defined $pad{9};
+  print "node $ri3, $rj3, $rk3, $rl3, $rm3, $rn3, $ro3, $rp3;\r\n"
+    if defined $pad{9};
+  &ocassign($pad{9}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp3\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro3\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn3\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm3\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl3\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk3\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj3\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri3\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh3\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg3\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf3\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re3\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd3\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc3\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb3\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra3") if defined $pad{9};
+  $oc{$pad{11}} = 1 if defined $pad{11};
+  ($ra4, $rb4, $rc4, $rd4, $re4, $rf4, $rg4, $rh4)
+    = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
+      if defined $pad{11};
+  ($ri4, $rj4, $rk4, $rl4, $rm4, $rn4, $ro4, $rp4)
+    = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
+      if defined $pad{11};
+  print "node $ra4, $rb4, $rc4, $rd4, $re4, $rf4, $rg4, $rh4;\r\n"
+    if defined $pad{11};
+  print "node $ri4, $rj4, $rk4, $rl4, $rm4, $rn4, $ro4, $rp4;\r\n"
+    if defined $pad{11};
+  &ocassign($pad{11}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp4\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro4\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn4\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm4\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl4\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk4\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj4\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri4\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh4\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg4\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf4\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re4\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd4\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc4\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb4\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra4") if defined $pad{11};
+  &qcode("$ra1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$ra1.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$ra2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$ra2.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$ra3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$ra3.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$ra4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$ra4.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rb1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rb1.le = $pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rb2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rb2.le = $pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rb3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rb3.le = $pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rb4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rb4.le = $pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rc1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rc1.le = !$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rc2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rc2.le = !$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rc3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rc3.le = !$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rc4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rc4.le = !$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rd1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rd1.le = $pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rd2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rd2.le = $pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rd3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rd3.le = $pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rd4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rd4.le = $pad{1}&$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$re1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$re1.le = !$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$re2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$re2.le = !$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$re3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$re3.le = !$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$re4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$re4.le = !$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rf1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rf1.le = $pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rf2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rf2.le = $pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rf3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rf3.le = $pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rf4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rf4.le = $pad{1}&!$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rg1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rg1.le = !$pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rg2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rg2.le = !$pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rg3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rg3.le = !$pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rg4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rg4.le = !$pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rh1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rh1.le = $pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rh2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rh2.le = $pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rh3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rh3.le = $pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rh4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rh4.le = $pad{1}&$pad{15}&$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$ri1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$ri1.le = !$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$ri2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$ri2.le = !$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$ri3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$ri3.le = !$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$ri4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$ri4.le = !$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rj1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rj1.le = $pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rj2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rj2.le = $pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rj3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rj3.le = $pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rj4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rj4.le = $pad{1}&!$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rk1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rk1.le = !$pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rk2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rk2.le = !$pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rk3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rk3.le = !$pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rk4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rk4.le = !$pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rl1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rl1.le = $pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rl2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rl2.le = $pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rl3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rl3.le = $pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rl4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rl4.le = $pad{1}&$pad{15}&!$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rm1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rm1.le = !$pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rm2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rm2.le = !$pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rm3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rm3.le = !$pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rm4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rm4.le = !$pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rn1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rn1.le = $pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rn2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rn2.le = $pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rn3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rn3.le = $pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rn4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rn4.le = $pad{1}&!$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$ro1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$ro1.le = !$pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$ro2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$ro2.le = !$pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$ro3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$ro3.le = !$pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$ro4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$ro4.le = !$pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
+  &qcode("$rp1.l = $pad{4};\n") if defined $pad{4};
+  &qcode("$rp1.le = $pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
+  &qcode("$rp2.l = $pad{6};\n") if defined $pad{6};
+  &qcode("$rp2.le = $pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{6};
+  &qcode("$rp3.l = $pad{10};\n") if defined $pad{10};
+  &qcode("$rp3.le = $pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{10};
+  &qcode("$rp4.l = $pad{12};\n") if defined $pad{12};
+  &qcode("$rp4.le = $pad{1}&$pad{15}&$pad{14}&$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{12};
 }
 $hidden{"sn74189"} = 0;
 
