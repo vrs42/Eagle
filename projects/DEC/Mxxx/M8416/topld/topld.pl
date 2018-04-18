@@ -1294,10 +1294,10 @@ sub dec8271 {
 $hidden{'dec8271'} = 0;
 
 sub mc8266 {
-  &qcode("$pad{3} = $pad{2}&!$pad{9} # $pad{1}&$pad{9}&!$pad{7};\n") if defined $pad{3};
-  &qcode("$pad{4} = $pad{5}&!$pad{9} # $pad{6}&$pad{9}&!$pad{7};\n") if defined $pad{4};
-  &qcode("$pad{12} = $pad{11}&!$pad{9} # $pad{10}&$pad{9}&!$pad{7};\n") if defined $pad{12};
-  &qcode("$pad{13} = $pad{14}&!$pad{9} # $pad{15}&$pad{9}&!$pad{7};\n") if defined $pad{13};
+  &qcode("$pad{3} = !(!$pad{2}&!$pad{9} # $pad{1}&$pad{9}&!$pad{7});\n") if defined $pad{3};
+  &qcode("$pad{4} = !(!$pad{5}&!$pad{9} # $pad{6}&$pad{9}&!$pad{7});\n") if defined $pad{4};
+  &qcode("$pad{12} = !(!$pad{11}&!$pad{9} # $pad{10}&$pad{9}&!$pad{7});\n") if defined $pad{12};
+  &qcode("$pad{13} = !(!$pad{14}&!$pad{9} # $pad{15}&$pad{9}&!$pad{7});\n") if defined $pad{13};
 }
 $hidden{'mc8266'} = 0;
 

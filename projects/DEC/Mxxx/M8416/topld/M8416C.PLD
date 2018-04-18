@@ -3,7 +3,7 @@
 
 Name     M8416C ;
 PartNo   cpld ;
-Date     4/16/2018 ;
+Date     4/17/2018 ;
 Revision 01 ;
 Designer  ;
 Company   ;
@@ -1245,10 +1245,10 @@ n_t_8x = !n_t_10x & !n_t_9x & !gdollar_9 & !gdollar_10 & !gdollar_11 & !gdollar_
   # !'b'0 & gdollar_9;
 
 /* e69: mc8266 */
-n_t_133x = n_t_122x&n_t_111x;
-p4_ckuf = n_t_120x&n_t_111x;
-p4_ckufb = n_t_119x&n_t_111x;
-p4_ckdb = n_t_112x&!n_t_111x # n_t_118x&n_t_111x;
+n_t_133x = !(!n_t_111x # n_t_122x&n_t_111x);
+p4_ckuf = !(!n_t_111x # n_t_120x&n_t_111x);
+p4_ckufb = !(!n_t_111x # n_t_119x&n_t_111x);
+p4_ckdb = !(!n_t_112x&!n_t_111x # n_t_118x&n_t_111x);
 
 /* e70: sn7400 */
 n_t_123x = !(p4_jmp_or_jms&p3_bd);
@@ -1330,10 +1330,10 @@ n_t_9x = !p1_3v & !'b'0 & !gdollar_16 & !gdollar_17 & !gdollar_18 & !gdollar_19
   # p1_us2 & gdollar_16;
 
 /* e79: mc8266 */
-p4_ckdf = n_t_112x&!n_t_111x # n_t_117x&n_t_111x;
-p4_ckif = n_t_112x&!n_t_111x # n_t_116x&n_t_111x;
-p4_ckibb = n_t_112x&!n_t_111x # n_t_115x&n_t_111x;
-p4_ckifb = n_t_112x&!n_t_111x # n_t_114x&n_t_111x;
+p4_ckdf = !(!n_t_112x&!n_t_111x # n_t_117x&n_t_111x);
+p4_ckif = !(!n_t_112x&!n_t_111x # n_t_116x&n_t_111x);
+p4_ckibb = !(!n_t_112x&!n_t_111x # n_t_115x&n_t_111x);
+p4_ckifb = !(!n_t_112x&!n_t_111x # n_t_114x&n_t_111x);
 
 /* e80: dec23211a1 */
 /* n_t_121x = 'b'0; */

@@ -5,11 +5,11 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          virtual  Library DLIB-h-40-1
-Created         Mon Apr 16 23:38:27 2018
+Created         Tue Apr 17 17:29:36 2018
 Name            M8416C 
 Partno          cpld 
 Revision        01 
-Date            4/16/2018 
+Date            4/17/2018 
 Designer        
 Company         
 Assembly        None 
@@ -1219,7 +1219,7 @@ n_t_132x =>
     !p4_fatal_lp_0_rp
 
 n_t_133x =>
-    n_t_111x & n_t_122x
+    n_t_111x & !n_t_122x
 
 n_t_134x =>
     !n_t_112x
@@ -2491,33 +2491,33 @@ p4_cint_low =>
   # n_t_100x
 
 p4_ckdb =>
-    n_t_111x & n_t_118x
+    n_t_111x & !n_t_118x
   # !n_t_111x & n_t_112x
 
 p4_ckdf =>
-    n_t_111x & n_t_117x
+    n_t_111x & !n_t_117x
   # !n_t_111x & n_t_112x
 
 p4_ckibb =>
-    n_t_111x & n_t_115x
+    n_t_111x & !n_t_115x
   # !n_t_111x & n_t_112x
 
 p4_ckif =>
-    n_t_111x & n_t_116x
+    n_t_111x & !n_t_116x
   # !n_t_111x & n_t_112x
 
 p4_ckifb =>
-    n_t_111x & n_t_114x
+    n_t_111x & !n_t_114x
   # !n_t_111x & n_t_112x
 
 p4_cksv =>
     !n_t_110x
 
 p4_ckuf =>
-    n_t_111x & n_t_120x
+    n_t_111x & !n_t_120x
 
 p4_ckufb =>
-    n_t_111x & n_t_119x
+    n_t_111x & !n_t_119x
 
 p4_cuf_low =>
     p3_decen_low
