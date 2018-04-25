@@ -28,9 +28,9 @@ sub term {
 }
 
 sub nterm {
-  # The nterm is a term or a negated term.
+  # The nterm is a term or a negated nterm.
   if ($rh =~ s/^\s*[!]\s*//) {
-    local($nterm) = "!" . &term;
+    local($nterm) = "!" . &nterm;
     $nterm =~ s/^!!//;
     $nterm =~ s/^!'b'0\b/'b'1/;
     $nterm =~ s/^!'b'1\b/'b'0/;
@@ -1481,7 +1481,9 @@ sub ocassign {
   local($lh, $rh) = @_;
 
   warn "unexpected OC output: $lh" unless $oc{$lh};
-  &qcode("/* $lh = !($rh);"); chop $qcode; chop $qcode; &qcode(" */\n");
+  &qcode("/* $lh = !($rh);");
+  $qcode =~ s/\r*\n$//;
+  &qcode(" */\n");
   if (defined $ocassign{$lh}) {
     $ocassign{$lh} .= " # ($rh)\n";
   } else {

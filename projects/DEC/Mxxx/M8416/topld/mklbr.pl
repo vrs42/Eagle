@@ -40,6 +40,7 @@ foreach $f (@ARGV) {
   }
   while (<INPUT>) {
     next unless /^\s+([!]*)\s+(\S+)\s+(\S+)\s+[NV]/;
+    $neg{$2} = $1;
     $pad{$2} = $3;
   }
   open(INPUT, $f) || die "$f: $!";
@@ -90,7 +91,7 @@ foreach $f (@ARGV) {
       s/\b(\d+)\b/'b'$1/;
       foreach $id (keys %pad) {
         next if $pad{$id} >= 200;
-        s/\b$id\b/\$pad\{$pad{$id}\}/g;
+        s/\b$id\b/$neg{$id}\$pad\{$pad{$id}\}/g;
       }
       $code .= "   " unless $first;
       $code .= "$_\\n";

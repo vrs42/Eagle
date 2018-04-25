@@ -5,11 +5,11 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          virtual  Library DLIB-h-40-1
-Created         Tue Apr 17 17:31:02 2018
+Created         Tue Apr 24 23:05:08 2018
 Name            M8416P 
 Partno          cpld 
 Revision        01 
-Date            4/17/2018 
+Date            4/24/2018 
 Designer        
 Company         
 Assembly        None 
@@ -140,7 +140,7 @@ force_0_low =>
     0 
 
 force_0_low.oe  =>
-    1 
+    p4_init_en_low & p4_int_in_prog_low
 
 gdollar_0.d  =>
     n_t_45x
@@ -1032,7 +1032,7 @@ ibs_low =>
 ibs_low.oe  =>
     1 
 
-int_rqst_low =>
+!int_rqst_low =>
     0 
 
 int_rqst_low.oe  =>
@@ -1127,37 +1127,37 @@ n_t_114x =>
     0 
 
 n_t_114x.oe  =>
-    1 
+    !n_t_125x & p4_cif_low & p4_rtf_low
 
 n_t_115x =>
     0 
 
 n_t_115x.oe  =>
-    1 
+    !n_t_125x & p4_cif_low
 
 n_t_116x =>
     0 
 
 n_t_116x.oe  =>
-    1 
+    p4_new_fld
 
 n_t_117x =>
     0 
 
 n_t_117x.oe  =>
-    1 
+    !n_t_125x & p4_cdf_low & p4_rtf_low
 
 n_t_118x =>
     0 
 
 n_t_118x.oe  =>
-    1 
+    !n_t_125x & p4_cdf_low
 
 n_t_119x =>
     0 
 
 n_t_119x.oe  =>
-    1 
+    !n_t_125x & p4_rtf_low
 
 n_t_11x =>
     !gdollar_16 & !gdollar_17 & !gdollar_18 & gdollar_19 & !p1_us5
@@ -1169,13 +1169,13 @@ n_t_120x =>
     0 
 
 n_t_120x.oe  =>
-    1 
+    p4_new_fld
 
 n_t_121x =>
     0 
 
 n_t_121x.oe  =>
-    1 
+    !n_t_125x & p4_cif_low & p4_rtf_low
 
 n_t_122x =>
     n_t_121x & p4_suf_low
@@ -1239,7 +1239,7 @@ n_t_139x =>
     0 
 
 n_t_139x.oe  =>
-    1 
+    !p3_bd6
 
 n_t_13x =>
     !n_t_12x & !n_t_8x
@@ -1248,31 +1248,31 @@ n_t_140x =>
     0 
 
 n_t_140x.oe  =>
-    1 
+    !p3_bd7
 
 n_t_141x =>
     0 
 
 n_t_141x.oe  =>
-    1 
+    !p3_bd8
 
 n_t_142x =>
     0 
 
 n_t_142x.oe  =>
-    1 
+    !p3_bd9
 
 n_t_143x =>
     0 
 
 n_t_143x.oe  =>
-    1 
+    !p3_bd10
 
 n_t_144x =>
     0 
 
 n_t_144x.oe  =>
-    1 
+    !p3_bd11
 
 n_t_145x =>
     0 
@@ -1332,31 +1332,31 @@ n_t_149x =>
 n_t_149x.oe  =>
     1 
 
-n_t_150x =>
+!n_t_150x =>
     0 
 
 n_t_150x.oe  =>
     1 
 
-n_t_151x =>
+!n_t_151x =>
     0 
 
 n_t_151x.oe  =>
     1 
 
-n_t_152x =>
+!n_t_152x =>
     0 
 
 n_t_152x.oe  =>
     1 
 
-n_t_153x =>
+!n_t_153x =>
     0 
 
 n_t_153x.oe  =>
     1 
 
-n_t_154x =>
+!n_t_154x =>
     0 
 
 n_t_154x.oe  =>
@@ -1515,7 +1515,7 @@ n_t_183x.ar  =>
 n_t_183x.ck  =>
     0 
 
-n_t_18x =>
+!n_t_18x =>
     0 
 
 n_t_18x.oe  =>
@@ -1573,7 +1573,7 @@ n_t_27x =>
 n_t_28x =>
     !la_en_low
 
-n_t_29x =>
+!n_t_29x =>
     0 
 
 n_t_29x.oe  =>
@@ -1581,8 +1581,8 @@ n_t_29x.oe  =>
   # !p3_bm5 & p6_en9
   # !p3_bm9 & p6_en5
   # !p3_bm5 & !p3_bm9
-  # !p3_cfrom_low
-  # !p3_e2cfrom_low
+  # p3_cfrom_low
+  # p3_e2cfrom_low
 
 n_t_2x =>
     !n_t_3x & !p4_lxa
@@ -1820,7 +1820,7 @@ n_t_6x =>
 
 n_t_6x.oe  =>
     p1_rr3 & p2_ifb & !p4_rdf_low & p6_usm
-  # !p1_enrf_low
+  # p1_enrf_low
   # p1_rr3 & p1_rr4 & p2_dfa & !p2_dfb & p4_rdf_low & p6_usm
   # !p1_rr3 & p1_rr4 & p2_ifa & p2_ifb & !p4_rdf_low & p6_usm
   # p1_rr3 & p1_rr4 & p2_ifa & !p2_ifb & !p4_rdf_low & p6_usm
@@ -1840,13 +1840,13 @@ n_t_72x =>
 n_t_72x.oe  =>
     1 
 
-n_t_73x =>
+!n_t_73x =>
     0 
 
 n_t_73x.oe  =>
     1 
 
-n_t_74x =>
+!n_t_74x =>
     0 
 
 n_t_74x.oe  =>
@@ -1858,7 +1858,7 @@ n_t_75x =>
 n_t_76x =>
     !rd10_low
 
-n_t_77x =>
+!n_t_77x =>
     0 
 
 n_t_77x.oe  =>
@@ -1960,38 +1960,38 @@ p1_bb0 =>
 p1_bb0.oe  =>
     1 
 
-p1_bb1 =>
+!p1_bb1 =>
     0 
 
 p1_bb1.oe  =>
     1 
 
-p1_bfl0 =>
+!p1_bfl0 =>
     0 
 
 p1_bfl0.oe  =>
     1 
 
-p1_bfl1 =>
+!p1_bfl1 =>
     0 
 
 p1_bfl1.oe  =>
     1 
 
-p1_bfl2 =>
+!p1_bfl2 =>
     0 
 
 p1_bfl2.oe  =>
     1 
 
-p1_crf =>
+!p1_crf =>
     0 
 
 p1_crf.oe  =>
     p1_3v & p6_usm
   # n_t_6x & p1_3v & !p2_ifc & !p4_rdf_low & !p6_usm
   # p2_ifc & !p4_rdf_low & !p6_usm
-  # !p1_enrf_low
+  # p1_enrf_low
   # n_t_6x & p1_3v & !p2_dfc & p4_rdf_low & !p6_usm
   # p2_dfc & p4_rdf_low & !p6_usm
   # !n_t_6x & !p2_ifc & !p4_rdf_low & !p6_usm
@@ -2426,13 +2426,13 @@ p3_c17en_low =>
 p3_c17en_low.oe  =>
     1 
 
-p3_cfrom_low =>
+!p3_cfrom_low =>
     0 
 
 p3_cfrom_low.oe  =>
     1 
 
-p3_decen_low =>
+!p3_decen_low =>
     0 
 
 p3_decen_low.oe  =>
@@ -2450,13 +2450,13 @@ p3_e2cfrom_low.ar  =>
 p3_e2cfrom_low.ck  =>
     0 
 
-p3_hos_low =>
+!p3_hos_low =>
     0 
 
 p3_hos_low.oe  =>
     1 
 
-p3_inioen =>
+!p3_inioen =>
     0 
 
 p3_inioen.oe  =>
@@ -2483,15 +2483,15 @@ p4_blbm_low =>
 p4_bts1 =>
     !n_t_28x & !ts1_low
 
-p4_cdf_low =>
+!p4_cdf_low =>
     0 
 
 p4_cdf_low.oe  =>
     !p3_bm11
   # n_t_29x
   # !p3_bm4
-  # !p3_cfrom_low
-  # !p3_e2cfrom_low
+  # p3_cfrom_low
+  # p3_e2cfrom_low
 
 p4_cif_low =>
     0 
@@ -2500,8 +2500,8 @@ p4_cif_low.oe  =>
     !p3_bm10
   # n_t_29x
   # !p3_bm4
-  # !p3_cfrom_low
-  # !p3_e2cfrom_low
+  # p3_cfrom_low
+  # p3_e2cfrom_low
 
 p4_cint_low =>
     p3_decen_low
@@ -2645,12 +2645,10 @@ p4_let_io_low =>
     0 
 
 p4_let_io_low.oe  =>
-    n_t_89x & !p3_bm4 & !p3_bm5 & p3_bm9 & !p4_cdf_low & !p4_cif_low
-  # n_t_89x & !p3_bm4 & !p3_bm9 & !p4_cdf_low & !p4_cif_low
+    p3_e2cfrom_low
   # !n_t_89x & !p3_bm4 & !p4_cdf_low & !p4_cif_low
   # p3_bm4 & !p4_cdf_low & !p4_cif_low
-  # !p3_cfrom_low
-  # !p3_e2cfrom_low
+  # p3_cfrom_low
 
 p4_lrr_low =>
     p3_decen_low
@@ -2816,11 +2814,11 @@ p5_bmen_low =>
 p5_bmen_low.oe  =>
     1 
 
-p5_dbs_low =>
+!p5_dbs_low =>
     0 
 
 p5_dbs_low.oe  =>
-    1 
+    !p4_dfen
 
 !p5_ibs0_low =>
     n_t_145x & n_t_146x
@@ -3018,8 +3016,8 @@ rd0_low =>
 rd0_low.oe  =>
     n_t_26x & n_t_27x
   # !p4_rxm_low & !p6_eem_low
-  # !n_t_64x
-  # !mbct4_low
+  # n_t_64x
+  # mbct4_low
 
 rd10_low =>
     0 
@@ -3053,8 +3051,8 @@ rd1_low =>
 rd1_low.oe  =>
     !n_t_54x
   # !p4_racb_low
-  # !n_t_64x
-  # !mbct4_low
+  # n_t_64x
+  # mbct4_low
   # !p4_rxm_low & !p6_en5_low
   # !n_t_156x & !p6_dispb_low
   # !gdollar_63 & !p4_rmr_low
@@ -3066,8 +3064,8 @@ rd2_low =>
 rd2_low.oe  =>
     !n_t_55x
   # !p4_racb_low
-  # !n_t_64x
-  # !mbct4_low
+  # n_t_64x
+  # mbct4_low
   # !p4_rxm_low & !p6_en9_low
   # !n_t_158x & !p6_dispb_low
   # !gdollar_64 & !p4_rmr_low
@@ -3103,8 +3101,8 @@ rd5_low.oe  =>
     n_t_168x & p2_suf_out
   # !n_t_52x
   # !p4_racc_low
-  # !n_t_64x
-  # !mbct4_low
+  # n_t_64x
+  # mbct4_low
   # !p4_rxm_low & !p6_ebm_low
   # !n_t_169x & !p6_usm_low
   # !n_t_161x & !p6_dispb_low
@@ -3139,7 +3137,7 @@ rd5_low.oe  =>
   # !n_t_162x & !n_t_163x & p1_crf & !p1_rr0 & p4_rdf_low & p6_usm
   # !n_t_159x & p1_crf & !p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
   # !n_t_163x & p1_crf & !p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
-  # !p1_enrf_low
+  # p1_enrf_low
 
 rd6_low =>
     0 
@@ -3149,8 +3147,8 @@ rd6_low.oe  =>
   # !n_t_61x & !p4_racc_low
   # !n_t_58x & !p4_racb_low
   # !p4_racb_low & !p4_racc_low
-  # !n_t_64x
-  # !mbct4_low
+  # n_t_64x
+  # mbct4_low
   # !p4_rxm_low & !p6_maint_low
   # !p2_ifc_low & !p6_disf_low
   # !gdollar_52 & !p4_rlb_low
@@ -3169,7 +3167,7 @@ rd6_low.oe  =>
   # !n_t_6x & !p2_dfc & p4_rdf_low & !p6_usm
   # !n_t_6x & p1_rr2 & !p2_ifc & !p4_rdf_low
   # !n_t_6x & p1_rr2 & !p2_dfc & p4_rdf_low
-  # !p1_enrf_low
+  # p1_enrf_low
 
 rd7_low =>
     0 
@@ -3179,8 +3177,8 @@ rd7_low.oe  =>
   # !n_t_62x & !p4_racc_low
   # !n_t_59x & !p4_racb_low
   # !p4_racb_low & !p4_racc_low
-  # !n_t_64x
-  # !mbct4_low
+  # n_t_64x
+  # mbct4_low
   # !p2_ifb_low & !p6_disf_low
   # p1_rr0 & !p4_rrr_low
   # !gdollar_53 & !p4_rlb_low
@@ -3188,7 +3186,7 @@ rd7_low.oe  =>
   # !n_t_56x & !p2_sf1
   # p1_us1 & !p4_rusr_low
   # !p2_dfb & p4_rdf_low & !p6_usm
-  # !p1_enrf_low
+  # p1_enrf_low
   # p1_rr3 & !p2_dfa & p2_dfb & p4_rdf_low & p6_usm
   # p1_rr3 & p1_rr4 & p2_dfa & !p2_dfb & p4_rdf_low & p6_usm
   # !p1_rr3 & p1_rr4 & p2_dfa & p2_dfb & p4_rdf_low & p6_usm
@@ -3211,15 +3209,15 @@ rd8_low.oe  =>
   # !n_t_63x & !p4_racc_low
   # !n_t_60x & !p4_racb_low
   # !p4_racb_low & !p4_racc_low
-  # !n_t_64x
-  # !mbct4_low
+  # n_t_64x
+  # mbct4_low
   # !p2_ifa_low & !p6_disf_low
   # p1_rr1 & !p4_rrr_low
   # !gdollar_54 & !p4_rlb_low
   # !gdollar_59 & !p4_rmr_low
   # !n_t_56x & !p2_sf2
   # p1_us2 & !p4_rusr_low
-  # !p1_enrf_low
+  # p1_enrf_low
   # !p1_rr4 & !p2_ifa & !p4_rdf_low & p6_usm
   # !p1_rr4 & !p2_dfa & p4_rdf_low & p6_usm
   # p1_rr4 & p2_ifa & !p4_rdf_low & p6_usm
@@ -3233,8 +3231,8 @@ rd9_low =>
 rd9_low.oe  =>
     !p4_raca_low
   # !n_t_58x
-  # !n_t_64x
-  # !mbct4_low
+  # n_t_64x
+  # mbct4_low
   # !gdollar_6 & !p4_rmr_low
   # p1_rr2 & !p4_rrr_low
   # !gdollar_55 & !p4_rlb_low
@@ -3253,7 +3251,7 @@ rd9_low.oe  =>
   # !n_t_162x & !p1_crf & p4_rdf_low & !p6_usm
   # !n_t_157x & !p1_crf & p1_rr1 & !p4_rdf_low
   # !n_t_162x & !p1_crf & p1_rr1 & p4_rdf_low
-  # !p1_enrf_low
+  # p1_enrf_low
 
 sb0_low =>
     !gdollar_70
@@ -4259,7 +4257,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     p4_jmp_or_jms               511      N        1       0       4     
     p4_lbm_low                  512      N        1       0       4     
     p4_let_io_low               513      N        1       0       4     
-    p4_let_io_low       oe      513      M        6       0       1     
+    p4_let_io_low       oe      513      M        4       0       1     
     p4_lrr_low                  514      N        6       0       4     
     p4_lusr_low                 515      N        6       0       4     
     p4_lxa                      516      N        1       0       4     

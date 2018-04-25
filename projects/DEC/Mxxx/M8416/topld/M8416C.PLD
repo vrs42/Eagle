@@ -3,7 +3,7 @@
 
 Name     M8416C ;
 PartNo   cpld ;
-Date     4/17/2018 ;
+Date     4/24/2018 ;
 Revision 01 ;
 Designer  ;
 Company   ;
@@ -701,14 +701,14 @@ p3_bd7 = !data07_low;
    #!p3_bm3&p3_bm6&p3_bm9
    #!p3_bm3&p3_bm8&p3_bpause&!p6_usm
    #!p3_bpause&!p6_usm
-   #p3_bm3))#!('b'0) */
+   #p3_bm3))#!(!'b'0)); */
 /* p3_decen_low = !(!(!(!p3_bm3&p3_bm4&p3_bm6&p3_bm10
    #!p3_bm3&!p3_bm6&p3_bm10
    #p3_bm11
    #!p3_bm3&p6_usm
    #!p3_bm3&!p3_bm4
    #!p3_bpause&!p6_usm
-   #p3_bm3))#!('b'0) */
+   #p3_bm3))#!(!'b'0)); */
 /* p3_cfrom_low = !(!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #n_t_69x&!p3_bm3&!p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&p3_bm5&!p6_eem
@@ -717,7 +717,7 @@ p3_bd7 = !data07_low;
    #!p3_bm3&p3_bm4&!p3_bm10&!p3_bm11
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0) */
+   #p3_bm3))#!(!'b'0)); */
 /* p3_c17en_low = !(!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #n_t_69x&!p3_bm3&!p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&!p3_bm4&p3_bm6&!p3_bm7
@@ -730,7 +730,7 @@ p3_bd7 = !data07_low;
    #!p3_bm3&!p3_bm5&p6_eem
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0) */
+   #p3_bm3))#!(!'b'0)); */
 /* p3_hos_low = !(!(!(p3_bm11
    #!n_t_69x&p3_bm2&p3_bm3&!p3_bm11&p3_bpause&p6_usm
    #!p3_bm2&p3_bm3&!p3_bm11&p6_usm
@@ -738,7 +738,7 @@ p3_bd7 = !data07_low;
    #!p3_bm11&p3_bpause&!p6_usm
    #n_t_69x&p3_bm2&p3_bm3&!p3_bm9&!p3_bm10&!p3_bm11&p6_usm
    #!p3_bpause&!p6_usm
-   #!n_t_69x&!p3_bpause))#!('b'0) */
+   #!n_t_69x&!p3_bpause))#!(!'b'0)); */
 /* n_t_74x = !(!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #n_t_69x&!p3_bm3&!p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&!p3_bm4&p3_bm6&!p3_bm7
@@ -755,7 +755,7 @@ p3_bd7 = !data07_low;
    #!p3_bm3&p3_bm4&p3_bm9
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0) */
+   #p3_bm3))#!(!'b'0)); */
 /* n_t_73x = !(!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #n_t_69x&!p3_bm3&!p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&!p3_bm4&p3_bm6&!p3_bm7
@@ -775,7 +775,7 @@ p3_bd7 = !data07_low;
    #!p3_bm3&p3_bm6&p3_bm7&p3_bm8&!p3_bm10&!p3_bm11&p6_eem
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0) */
+   #p3_bm3))#!(!'b'0)); */
 /* n_t_72x = !(!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #n_t_69x&!p3_bm3&!p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&!p3_bm4&p3_bm7&!p3_bm8
@@ -791,7 +791,7 @@ p3_bd7 = !data07_low;
    #!p3_bm3&p3_bm4&!p3_bm5&!p3_bm7&!p3_bm8&!p3_bm10&!p3_bm11
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0) */
+   #p3_bm3))#!(!'b'0)); */
 
 /* e15: sn74174 */
 n_t_58x.ar = p3_binit_low;
@@ -816,25 +816,25 @@ n_t_63x.d = p3_bd11;
 /* e16: dec23008c6 */
 /* rd0_low = 'b'0; */
 /* rd1_low = !(!(!(!n_t_54x
-   #!p4_racb_low))#!(n_t_64x&mbct4_low) */
+   #!!p4_racb_low))#!(!n_t_64x&!mbct4_low)); */
 /* rd2_low = !(!(!(!n_t_55x
-   #!p4_racb_low))#!(n_t_64x&mbct4_low) */
+   #!!p4_racb_low))#!(!n_t_64x&!mbct4_low)); */
 /* rd5_low = !(!(!(!n_t_52x
-   #!p4_racc_low))#!(n_t_64x&mbct4_low) */
+   #!!p4_racc_low))#!(!n_t_64x&!mbct4_low)); */
 /* rd6_low = !(!(!(!n_t_58x&!n_t_61x
-   #!n_t_61x&!p4_racc_low
-   #!n_t_58x&!p4_racb_low
-   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low) */
+   #!n_t_61x&!!p4_racc_low
+   #!n_t_58x&!!p4_racb_low
+   #!!p4_racb_low&!!p4_racc_low))#!(!n_t_64x&!mbct4_low)); */
 /* rd7_low = !(!(!(!n_t_59x&!n_t_62x
-   #!n_t_62x&!p4_racc_low
-   #!n_t_59x&!p4_racb_low
-   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low) */
+   #!n_t_62x&!!p4_racc_low
+   #!n_t_59x&!!p4_racb_low
+   #!!p4_racb_low&!!p4_racc_low))#!(!n_t_64x&!mbct4_low)); */
 /* rd8_low = !(!(!(!n_t_60x&!n_t_63x
-   #!n_t_63x&!p4_racc_low
-   #!n_t_60x&!p4_racb_low
-   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low) */
-/* rd9_low = !(!(!(!p4_raca_low
-   #!n_t_58x))#!(n_t_64x&mbct4_low) */
+   #!n_t_63x&!!p4_racc_low
+   #!n_t_60x&!!p4_racb_low
+   #!!p4_racb_low&!!p4_racc_low))#!(!n_t_64x&!mbct4_low)); */
+/* rd9_low = !(!(!(!!p4_raca_low
+   #!n_t_58x))#!(!n_t_64x&!mbct4_low)); */
 
 /* e17: sn74174 */
 n_t_51x.ar = p3_binit_low;
@@ -927,18 +927,18 @@ n_t_179x = p6_dioi_low&p1_enrf_low;
 /* e28: dec23440a2 */
 /* p4_cif_low = !(!(!(!p3_bm10
    #n_t_29x
-   #!p3_bm4))#!(p3_cfrom_low&p3_e2cfrom_low) */
+   #!p3_bm4))#!(!p3_cfrom_low&!p3_e2cfrom_low)); */
 /* n_t_29x = !(!(!(p6_en5&p6_en9
    #!p3_bm5&p6_en9
    #!p3_bm9&p6_en5
-   #!p3_bm5&!p3_bm9))#!(p3_cfrom_low&p3_e2cfrom_low) */
-/* p4_let_io_low = !(!(!(!p3_bm4&!p3_bm5&p3_bm9&n_t_89x&!p4_cdf_low&!p4_cif_low
-   #!p3_bm4&!p3_bm9&n_t_89x&!p4_cdf_low&!p4_cif_low
-   #!p3_bm4&!n_t_89x&!p4_cdf_low&!p4_cif_low
-   #p3_bm4&!p4_cdf_low&!p4_cif_low))#!(p3_cfrom_low&p3_e2cfrom_low) */
+   #!p3_bm5&!p3_bm9))#!(!p3_cfrom_low&!p3_e2cfrom_low)); */
+/* p4_let_io_low = !(!(!(!p3_bm4&!p3_bm5&p3_bm9&!n_t_89x&!!p4_cdf_low&!!p4_cif_low
+   #!p3_bm4&!p3_bm9&!n_t_89x&!!p4_cdf_low&!!p4_cif_low
+   #!p3_bm4&!!n_t_89x&!!p4_cdf_low&!!p4_cif_low
+   #p3_bm4&!!p4_cdf_low&!!p4_cif_low))#!(!p3_cfrom_low&!p3_e2cfrom_low)); */
 /* p4_cdf_low = !(!(!(!p3_bm11
    #n_t_29x
-   #!p3_bm4))#!(p3_cfrom_low&p3_e2cfrom_low) */
+   #!p3_bm4))#!(!p3_cfrom_low&!p3_e2cfrom_low)); */
 
 /* e29: sn7402 */
 n_t_124x = !(p3_bm0_low # p3_bm1);
@@ -1288,12 +1288,12 @@ gdollar_15.oe = !p2_emaen_low;
 
 /* e74: dec23441a2 */
 /* p5_bmen_low = !(!(!(!p6_ebm
-   #!p2_bcpmad_low))#!('b'0&'b'0) */
-/* p5_dbs_low = 'b'0; */
-/* ibs_low = !(!(!(force_0_low
-   #p5_dbs_low
-   #p5_bmen_low))#!('b'0&'b'0) */
-/* force_0_low = 'b'0; */
+   #!!p2_bcpmad_low))#!(!'b'0&!'b'0)); */
+/* p5_dbs_low = !(!(!(!p4_dfen))); */
+/* ibs_low = !(!(!(!force_0_low
+   #!p5_dbs_low
+   #!p5_bmen_low))#!(!'b'0&!'b'0)); */
+/* force_0_low = !(!(!(p4_init_en_low&p4_int_in_prog_low))); */
 
 /* e75: sp384n */
 n_t_109x = n_t_108x # f_set_low;
@@ -1336,23 +1336,23 @@ p4_ckibb = !(!n_t_112x&!n_t_111x # n_t_115x&n_t_111x);
 p4_ckifb = !(!n_t_112x&!n_t_111x # n_t_114x&n_t_111x);
 
 /* e80: dec23211a1 */
-/* n_t_121x = 'b'0; */
-/* n_t_120x = 'b'0; */
-/* n_t_119x = 'b'0; */
-/* n_t_118x = 'b'0; */
-/* n_t_117x = 'b'0; */
-/* n_t_116x = 'b'0; */
-/* n_t_115x = 'b'0; */
-/* n_t_114x = 'b'0; */
+/* n_t_121x = !(!(!(p4_cif_low&p4_rtf_low&!n_t_125x))); */
+/* n_t_120x = !(!(!p4_new_fld)); */
+/* n_t_119x = !(!(!(p4_rtf_low&!n_t_125x))); */
+/* n_t_118x = !(!(!(p4_cdf_low&!n_t_125x))); */
+/* n_t_117x = !(!(!(p4_cdf_low&p4_rtf_low&!n_t_125x))); */
+/* n_t_116x = !(!(!p4_new_fld)); */
+/* n_t_115x = !(!(!(p4_cif_low&!n_t_125x))); */
+/* n_t_114x = !(!(!(p4_cif_low&p4_rtf_low&!n_t_125x))); */
 
 /* e81: dec23009c6 */
-/* n_t_139x = 'b'0; */
-/* n_t_140x = 'b'0; */
-/* n_t_141x = 'b'0; */
-/* n_t_142x = 'b'0; */
-/* n_t_143x = 'b'0; */
-/* n_t_144x = 'b'0; */
-lbm_or_rbmn = !(!p4_lbm_low&!p4_rbm_low
+/* n_t_139x = !(!(!(!p3_bd6))); */
+/* n_t_140x = !(!(!(!p3_bd7))); */
+/* n_t_141x = !(!(!(!p3_bd8))); */
+/* n_t_142x = !(!(!(!p3_bd9))); */
+/* n_t_143x = !(!(!(!p3_bd10))); */
+/* n_t_144x = !(!(!(!p3_bd11))); */
+lbm_or_rbmn = !(!!p4_lbm_low&!!p4_rbm_low
    #!p3_bts4);
 
 /* e82: sn74189 */
@@ -1371,7 +1371,7 @@ lbm_or_rbmn = !(!p4_lbm_low&!p4_rbm_low
    #n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!gdollar_23
    #!n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!gdollar_22
    #n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!gdollar_21
-   #!n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!gdollar_20 */
+   #!n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!gdollar_20); */
 /* n_t_145x = !(n_t_142x&n_t_139x&n_t_140x&n_t_141x&!gdollar_51
    #!n_t_142x&n_t_139x&n_t_140x&n_t_141x&!gdollar_50
    #n_t_142x&!n_t_139x&n_t_140x&n_t_141x&!gdollar_49
@@ -1387,7 +1387,7 @@ lbm_or_rbmn = !(!p4_lbm_low&!p4_rbm_low
    #n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!gdollar_39
    #!n_t_142x&n_t_139x&!n_t_140x&!n_t_141x&!gdollar_38
    #n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!gdollar_37
-   #!n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!gdollar_36 */
+   #!n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&!gdollar_36); */
 gdollar_20.l = n_t_143x;
 gdollar_20.le = !n_t_142x&!n_t_139x&!n_t_140x&!n_t_141x&p5_bmen_low&p4_blbm_low;
 gdollar_36.l = n_t_144x;
@@ -1521,7 +1521,7 @@ p1_rr0.d = p3_bd7;
    #!p3_bm6&!p3_bm7&!p3_bm8&!'b'0&!p1_rr2
    #!p3_bm6&!p3_bm7&!p1_rr2&!p1_rr3
    #!p3_bm6&!'b'0&!p6_usm
-   #!p3_bm6&!p3_bm8&!p6_usm))#!('b'0&'b'0) */
+   #!p3_bm6&!p3_bm8&!p6_usm))#!(!'b'0&!'b'0)); */
 /* p1_bfl1 = !(!(!(p3_bm7&'b'0&!p1_rr3&p1_rr4&p6_usm
    #!p3_bm7&p3_bm8&!'b'0&p1_rr3&p1_rr4
    #p3_bm7&p3_bm8&'b'0&!p1_rr3&!p1_rr4
@@ -1537,7 +1537,7 @@ p1_rr0.d = p3_bd7;
    #p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
    #!p3_bm7&!'b'0&!p1_rr3&!p1_rr4
    #!p3_bm7&!'b'0&!p6_usm
-   #!p3_bm7&!p3_bm8&!p6_usm))#!('b'0&'b'0) */
+   #!p3_bm7&!p3_bm8&!p6_usm))#!(!'b'0&!'b'0)); */
 /* p1_bfl2 = !(!(!(!p3_bm7&p3_bm8&'b'0&!p6_usm
    #!p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
    #p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
@@ -1545,7 +1545,7 @@ p1_rr0.d = p3_bd7;
    #!p3_bm8&'b'0&p1_rr4&p6_usm
    #!p3_bm8&!'b'0&!p1_rr4
    #p3_bm8&'b'0&!p1_rr4
-   #!p3_bm8&!'b'0&!p6_usm))#!('b'0&'b'0) */
+   #!p3_bm8&!'b'0&!p6_usm))#!(!'b'0&!'b'0)); */
 /* n_t_22x = !(!(!(!p3_bm6&!p6_usm
    #!p3_bm7&!p6_usm
    #!'b'0&!p1_rr2&!p1_rr3&!p1_rr4
@@ -1564,7 +1564,7 @@ p1_rr0.d = p3_bd7;
    #!p3_bm6&!p3_bm7&!p1_rr3
    #!'b'0&!p6_usm
    #!p3_bm8&!p6_usm
-   #!p3_bm6&!p1_rr2))#!('b'0&'b'0) */
+   #!p3_bm6&!p1_rr2))#!(!'b'0&!'b'0)); */
 
 /* e88: sn74174 */
 p1_us1.ar = p2_rst_low;
@@ -1835,34 +1835,34 @@ n_t_160x = !n_t_163x;
    #!p3_bd1&mux_c0&mux_c1&!mux_c2
    #!ibb_0&!mux_c0&mux_c1&mux_c2
    #!mux_c0&!mux_c2
-   #!mux_c1))#!('b'0) */
+   #!mux_c1))#!(!'b'0)); */
 /* n_t_150x = !(!(!(mux_c0&mux_c1&mux_c2
    #!p3_bd2&mux_c0&mux_c1&!mux_c2
    #!ibb_1&!mux_c0&mux_c1&mux_c2
    #!mux_c0&!mux_c2
-   #!mux_c1))#!('b'0) */
+   #!mux_c1))#!(!'b'0)); */
 /* n_t_151x = !(!(!(!p3_bd3&!mux_c0&mux_c1&!mux_c2
    #!p1_bb0&!mux_c1&mux_c2
    #!p3_bd4&mux_c0&mux_c1
    #!sb2_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
-   #mux_c1&mux_c2))#!('b'0) */
+   #mux_c1&mux_c2))#!(!'b'0)); */
 /* n_t_152x = !(!(!(!p3_bd4&!mux_c0&mux_c1&!mux_c2
    #!p1_bb1&!mux_c1&mux_c2
    #!p3_bd5&mux_c0&mux_c1
    #!sb3_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
-   #mux_c1&mux_c2))#!('b'0) */
+   #mux_c1&mux_c2))#!(!'b'0)); */
 /* n_t_153x = !(!(!(!p1_bb0&!mux_c1&mux_c2
    #!p3_bd1&mux_c1&!mux_c2
    #!sb0_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
-   #mux_c1&mux_c2))#!('b'0) */
+   #mux_c1&mux_c2))#!(!'b'0)); */
 /* n_t_154x = !(!(!(!p1_bb1&!mux_c1&mux_c2
    #!p3_bd2&mux_c1&!mux_c2
    #!sb1_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
-   #mux_c1&mux_c2))#!('b'0) */
+   #mux_c1&mux_c2))#!(!'b'0)); */
 
 /* e110: sn74175 */
 n_t_157x.d = n_t_150x;
@@ -1904,7 +1904,7 @@ n_t_156x = !n_t_159x;
    #p1_crf&!n_t_159x&!n_t_157x&!p1_rr0&p6_usm&!p4_rdf_low
    #p1_crf&!n_t_163x&!n_t_162x&!p1_rr0&p6_usm&p4_rdf_low
    #p1_crf&!n_t_159x&!p1_rr0&!p1_rr1&p6_usm&!p4_rdf_low
-   #p1_crf&!n_t_163x&!p1_rr0&!p1_rr1&p6_usm&p4_rdf_low))#!(p1_enrf_low) */
+   #p1_crf&!n_t_163x&!p1_rr0&!p1_rr1&p6_usm&p4_rdf_low))#!(!p1_enrf_low)); */
 /* rd9_low = !(!(!(p1_crf&n_t_162x&!p1_rr1&!p6_usm&p4_rdf_low
    #p1_crf&n_t_157x&!p1_rr1&!p6_usm&!p4_rdf_low
    #p1_crf&!n_t_157x&!p1_rr1&p6_usm&!p4_rdf_low
@@ -1916,7 +1916,7 @@ n_t_156x = !n_t_159x;
    #!p1_crf&!n_t_157x&!p6_usm&!p4_rdf_low
    #!p1_crf&!n_t_162x&!p6_usm&p4_rdf_low
    #!p1_crf&!n_t_157x&p1_rr1&!p4_rdf_low
-   #!p1_crf&!n_t_162x&p1_rr1&p4_rdf_low))#!(p1_enrf_low) */
+   #!p1_crf&!n_t_162x&p1_rr1&p4_rdf_low))#!(!p1_enrf_low)); */
 
 /* e112: dec23621a9 */
 /* n_t_6x = !(!(!(p2_ifb&p1_rr3&p6_usm&!p4_rdf_low
@@ -1938,7 +1938,7 @@ n_t_156x = !n_t_159x;
    #p2_dfb&p2_dfa&!p1_rr3&p1_rr4&p6_usm&p4_rdf_low
    #p6_usm&!p2_dfb&p2_dfa&p1_rr3&p1_rr4&p6_usm&p4_rdf_low
    #!p6_usm&!p2_ifa&!p6_usm&!p4_rdf_low
-   #!p6_usm&!p2_dfa&!p6_usm&p4_rdf_low))#!(p1_enrf_low) */
+   #!p6_usm&!p2_dfa&!p6_usm&p4_rdf_low))#!(!p1_enrf_low)); */
 /* rd7_low = !(!(!(!p6_usm&!p2_dfb&!p2_dfa&!p6_usm&p4_rdf_low
    #!p2_dfb&p2_dfa&!p6_usm&p4_rdf_low
    #!p6_usm&!p2_dfb&p2_dfa&p1_rr3&!p1_rr4&p6_usm&p4_rdf_low
@@ -1968,7 +1968,7 @@ n_t_156x = !n_t_159x;
    #p6_usm&!p2_ifb&!p2_ifa&!p1_rr3&p6_usm&!p4_rdf_low
    #p6_usm&!p2_dfb&!p2_dfa&!p1_rr3&p6_usm&p4_rdf_low
    #p6_usm&!p2_ifb&!p1_rr3&!p1_rr4&p6_usm&!p4_rdf_low
-   #p6_usm&!p2_dfb&!p1_rr3&!p1_rr4&p6_usm&p4_rdf_low))#!(p1_enrf_low) */
+   #p6_usm&!p2_dfb&!p1_rr3&!p1_rr4&p6_usm&p4_rdf_low))#!(!p1_enrf_low)); */
 /* rd8_low = !(!(!(p6_usm&p2_dfa&!p1_rr4&!p6_usm&p4_rdf_low
    #p6_usm&p2_ifa&!p1_rr4&!p6_usm&!p4_rdf_low
    #p6_usm&!p2_ifa&!p1_rr4&p6_usm&!p4_rdf_low
@@ -1980,7 +1980,7 @@ n_t_156x = !n_t_159x;
    #!p6_usm&!p2_ifa&!p6_usm&!p4_rdf_low
    #!p6_usm&!p2_dfa&!p6_usm&p4_rdf_low
    #!p6_usm&!p2_ifa&p1_rr4&!p4_rdf_low
-   #!p6_usm&!p2_dfa&p1_rr4&p4_rdf_low))#!(p1_enrf_low) */
+   #!p6_usm&!p2_dfa&p1_rr4&p4_rdf_low))#!(!p1_enrf_low)); */
 
 /* e113: dec23442a2 */
 /* p1_bb0 = !(!(!(p3_bm5&n_t_22x&!p1_rr0&p1_rr1&p6_usm
@@ -1998,7 +1998,7 @@ n_t_156x = !n_t_159x;
    #'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
    #!p3_bm5&!n_t_22x&!p1_rr0&!p1_rr1
    #!p3_bm5&!n_t_22x&!p6_usm
-   #!p3_bm5&!p3_bm9&!p6_usm))#!('b'0&'b'0) */
+   #!p3_bm5&!p3_bm9&!p6_usm))#!(!'b'0&!'b'0)); */
 /* p1_bb1 = !(!(!(!p3_bm5&p3_bm9&n_t_22x&!p6_usm
    #!'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
    #'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
@@ -2006,7 +2006,7 @@ n_t_156x = !n_t_159x;
    #!p3_bm9&n_t_22x&p1_rr1&p6_usm
    #!p3_bm9&!n_t_22x&!p1_rr1
    #p3_bm9&n_t_22x&!p1_rr1
-   #!p3_bm9&!n_t_22x&!p6_usm))#!('b'0&'b'0) */
+   #!p3_bm9&!n_t_22x&!p6_usm))#!(!'b'0&!'b'0)); */
 
 /* e114: dec23621a9 */
 /* p1_crf = !(!(!(p1_3v&p1_3v&p6_usm&!p4_rdf_low
@@ -2028,7 +2028,7 @@ n_t_156x = !n_t_159x;
    #p1_3v&p2_dfc&!p1_3v&p1_rr2&p6_usm&p4_rdf_low
    #n_t_6x&!p1_3v&p2_dfc&p1_3v&p1_rr2&p6_usm&p4_rdf_low
    #!n_t_6x&!p2_ifc&!p6_usm&!p4_rdf_low
-   #!n_t_6x&!p2_dfc&!p6_usm&p4_rdf_low))#!(p1_enrf_low) */
+   #!n_t_6x&!p2_dfc&!p6_usm&p4_rdf_low))#!(!p1_enrf_low)); */
 /* rd6_low = !(!(!(n_t_6x&p2_dfc&!p1_rr2&!p6_usm&p4_rdf_low
    #n_t_6x&p2_ifc&!p1_rr2&!p6_usm&!p4_rdf_low
    #n_t_6x&!p2_ifc&!p1_rr2&p6_usm&!p4_rdf_low
@@ -2040,7 +2040,7 @@ n_t_156x = !n_t_159x;
    #!n_t_6x&!p2_ifc&!p6_usm&!p4_rdf_low
    #!n_t_6x&!p2_dfc&!p6_usm&p4_rdf_low
    #!n_t_6x&!p2_ifc&p1_rr2&!p4_rdf_low
-   #!n_t_6x&!p2_dfc&p1_rr2&p4_rdf_low))#!(p1_enrf_low) */
+   #!n_t_6x&!p2_dfc&p1_rr2&p4_rdf_low))#!(!p1_enrf_low)); */
 
 /* e115: sn7404 */
 n_t_41x = !p4_new_fld;
@@ -2341,12 +2341,12 @@ ema2_low.oe = (!gdollar_0 & !p2_elar_low & !p2_elar_low)
  # (!gdollar_13 & !p2_emaen_low & !p2_emaen_low);
 property atmel {open_collector= force_0_low};
 force_0_low = 'b'0;
-force_0_low.oe = 'b'1;
+force_0_low.oe = (!(!(p4_init_en_low&p4_int_in_prog_low)));
 property atmel {open_collector= ibs_low};
 ibs_low = 'b'0;
-ibs_low.oe = (!(!(force_0_low
-   #p5_dbs_low
-   #p5_bmen_low))#!('b'0&'b'0));
+ibs_low.oe = (!(!(!force_0_low
+   #!p5_dbs_low
+   #!p5_bmen_low))#!(!'b'0&!'b'0));
 property atmel {open_collector= int_rqst_low};
 int_rqst_low = 'b'0;
 int_rqst_low.oe = (n_t_103x & n_t_103x)
@@ -2359,46 +2359,46 @@ msirdis_low = 'b'0;
 msirdis_low.oe = p3_mbk;
 property atmel {open_collector= n_t_114x};
 n_t_114x = 'b'0;
-n_t_114x.oe = 'b'1;
+n_t_114x.oe = (!(!(p4_cif_low&p4_rtf_low&!n_t_125x)));
 property atmel {open_collector= n_t_115x};
 n_t_115x = 'b'0;
-n_t_115x.oe = 'b'1;
+n_t_115x.oe = (!(!(p4_cif_low&!n_t_125x)));
 property atmel {open_collector= n_t_116x};
 n_t_116x = 'b'0;
-n_t_116x.oe = 'b'1;
+n_t_116x.oe = (!(!p4_new_fld));
 property atmel {open_collector= n_t_117x};
 n_t_117x = 'b'0;
-n_t_117x.oe = 'b'1;
+n_t_117x.oe = (!(!(p4_cdf_low&p4_rtf_low&!n_t_125x)));
 property atmel {open_collector= n_t_118x};
 n_t_118x = 'b'0;
-n_t_118x.oe = 'b'1;
+n_t_118x.oe = (!(!(p4_cdf_low&!n_t_125x)));
 property atmel {open_collector= n_t_119x};
 n_t_119x = 'b'0;
-n_t_119x.oe = 'b'1;
+n_t_119x.oe = (!(!(p4_rtf_low&!n_t_125x)));
 property atmel {open_collector= n_t_120x};
 n_t_120x = 'b'0;
-n_t_120x.oe = 'b'1;
+n_t_120x.oe = (!(!p4_new_fld));
 property atmel {open_collector= n_t_121x};
 n_t_121x = 'b'0;
-n_t_121x.oe = 'b'1;
+n_t_121x.oe = (!(!(p4_cif_low&p4_rtf_low&!n_t_125x)));
 property atmel {open_collector= n_t_139x};
 n_t_139x = 'b'0;
-n_t_139x.oe = 'b'1;
+n_t_139x.oe = (!(!(!p3_bd6)));
 property atmel {open_collector= n_t_140x};
 n_t_140x = 'b'0;
-n_t_140x.oe = 'b'1;
+n_t_140x.oe = (!(!(!p3_bd7)));
 property atmel {open_collector= n_t_141x};
 n_t_141x = 'b'0;
-n_t_141x.oe = 'b'1;
+n_t_141x.oe = (!(!(!p3_bd8)));
 property atmel {open_collector= n_t_142x};
 n_t_142x = 'b'0;
-n_t_142x.oe = 'b'1;
+n_t_142x.oe = (!(!(!p3_bd9)));
 property atmel {open_collector= n_t_143x};
 n_t_143x = 'b'0;
-n_t_143x.oe = 'b'1;
+n_t_143x.oe = (!(!(!p3_bd10)));
 property atmel {open_collector= n_t_144x};
 n_t_144x = 'b'0;
-n_t_144x.oe = 'b'1;
+n_t_144x.oe = (!(!(!p3_bd11)));
 property atmel {open_collector= n_t_145x};
 n_t_145x = 'b'0;
 n_t_145x.oe = (n_t_142x&n_t_139x&n_t_140x&n_t_141x&!gdollar_51
@@ -2445,14 +2445,14 @@ n_t_149x.oe = (!(!(mux_c0&mux_c1&mux_c2
    #!p3_bd1&mux_c0&mux_c1&!mux_c2
    #!ibb_0&!mux_c0&mux_c1&mux_c2
    #!mux_c0&!mux_c2
-   #!mux_c1))#!('b'0));
+   #!mux_c1))#!(!'b'0));
 property atmel {open_collector= n_t_150x};
 n_t_150x = 'b'0;
 n_t_150x.oe = (!(!(mux_c0&mux_c1&mux_c2
    #!p3_bd2&mux_c0&mux_c1&!mux_c2
    #!ibb_1&!mux_c0&mux_c1&mux_c2
    #!mux_c0&!mux_c2
-   #!mux_c1))#!('b'0));
+   #!mux_c1))#!(!'b'0));
 property atmel {open_collector= n_t_151x};
 n_t_151x = 'b'0;
 n_t_151x.oe = (!(!(!p3_bd3&!mux_c0&mux_c1&!mux_c2
@@ -2460,7 +2460,7 @@ n_t_151x.oe = (!(!(!p3_bd3&!mux_c0&mux_c1&!mux_c2
    #!p3_bd4&mux_c0&mux_c1
    #!sb2_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
-   #mux_c1&mux_c2))#!('b'0));
+   #mux_c1&mux_c2))#!(!'b'0));
 property atmel {open_collector= n_t_152x};
 n_t_152x = 'b'0;
 n_t_152x.oe = (!(!(!p3_bd4&!mux_c0&mux_c1&!mux_c2
@@ -2468,21 +2468,21 @@ n_t_152x.oe = (!(!(!p3_bd4&!mux_c0&mux_c1&!mux_c2
    #!p3_bd5&mux_c0&mux_c1
    #!sb3_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
-   #mux_c1&mux_c2))#!('b'0));
+   #mux_c1&mux_c2))#!(!'b'0));
 property atmel {open_collector= n_t_153x};
 n_t_153x = 'b'0;
 n_t_153x.oe = (!(!(!p1_bb0&!mux_c1&mux_c2
    #!p3_bd1&mux_c1&!mux_c2
    #!sb0_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
-   #mux_c1&mux_c2))#!('b'0));
+   #mux_c1&mux_c2))#!(!'b'0));
 property atmel {open_collector= n_t_154x};
 n_t_154x = 'b'0;
 n_t_154x.oe = (!(!(!p1_bb1&!mux_c1&mux_c2
    #!p3_bd2&mux_c1&!mux_c2
    #!sb1_low&!mux_c1&!mux_c2
    #!mux_c0&!mux_c1&!mux_c2
-   #mux_c1&mux_c2))#!('b'0));
+   #mux_c1&mux_c2))#!(!'b'0));
 property atmel {open_collector= n_t_18x};
 n_t_18x = 'b'0;
 n_t_18x.oe = (!p4_let_io_low&p1_bfl0)
@@ -2521,13 +2521,13 @@ n_t_22x.oe = (!(!(!p3_bm6&!p6_usm
    #!p3_bm6&!p3_bm7&!p1_rr3
    #!'b'0&!p6_usm
    #!p3_bm8&!p6_usm
-   #!p3_bm6&!p1_rr2))#!('b'0&'b'0));
+   #!p3_bm6&!p1_rr2))#!(!'b'0&!'b'0));
 property atmel {open_collector= n_t_29x};
 n_t_29x = 'b'0;
 n_t_29x.oe = (!(!(p6_en5&p6_en9
    #!p3_bm5&p6_en9
    #!p3_bm9&p6_en5
-   #!p3_bm5&!p3_bm9))#!(p3_cfrom_low&p3_e2cfrom_low));
+   #!p3_bm5&!p3_bm9))#!(!p3_cfrom_low&!p3_e2cfrom_low));
 property atmel {open_collector= n_t_38x};
 n_t_38x = 'b'0;
 n_t_38x.oe = (!n_t_42x&!p2_ifa_low)
@@ -2570,7 +2570,7 @@ n_t_6x.oe = (!(!(p2_ifb&p1_rr3&p6_usm&!p4_rdf_low
    #p2_dfb&p2_dfa&!p1_rr3&p1_rr4&p6_usm&p4_rdf_low
    #p6_usm&!p2_dfb&p2_dfa&p1_rr3&p1_rr4&p6_usm&p4_rdf_low
    #!p6_usm&!p2_ifa&!p6_usm&!p4_rdf_low
-   #!p6_usm&!p2_dfa&!p6_usm&p4_rdf_low))#!(p1_enrf_low));
+   #!p6_usm&!p2_dfa&!p6_usm&p4_rdf_low))#!(!p1_enrf_low));
 property atmel {open_collector= n_t_72x};
 n_t_72x = 'b'0;
 n_t_72x.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
@@ -2588,7 +2588,7 @@ n_t_72x.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&p3_bm4&!p3_bm5&!p3_bm7&!p3_bm8&!p3_bm10&!p3_bm11
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0));
+   #p3_bm3))#!(!'b'0));
 property atmel {open_collector= n_t_73x};
 n_t_73x = 'b'0;
 n_t_73x.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
@@ -2610,7 +2610,7 @@ n_t_73x.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&p3_bm6&p3_bm7&p3_bm8&!p3_bm10&!p3_bm11&p6_eem
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0));
+   #p3_bm3))#!(!'b'0));
 property atmel {open_collector= n_t_74x};
 n_t_74x = 'b'0;
 n_t_74x.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
@@ -2629,7 +2629,7 @@ n_t_74x.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&p3_bm4&p3_bm9
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0));
+   #p3_bm3))#!(!'b'0));
 property atmel {open_collector= n_t_77x};
 n_t_77x = 'b'0;
 n_t_77x.oe = (p3_bts4 & p3_mbk)
@@ -2652,7 +2652,7 @@ p1_bb0.oe = (!(!(p3_bm5&n_t_22x&!p1_rr0&p1_rr1&p6_usm
    #'b'0&p3_bm5&p3_bm9&n_t_22x&!p6_usm
    #!p3_bm5&!n_t_22x&!p1_rr0&!p1_rr1
    #!p3_bm5&!n_t_22x&!p6_usm
-   #!p3_bm5&!p3_bm9&!p6_usm))#!('b'0&'b'0));
+   #!p3_bm5&!p3_bm9&!p6_usm))#!(!'b'0&!'b'0));
 property atmel {open_collector= p1_bb1};
 p1_bb1 = 'b'0;
 p1_bb1.oe = (!(!(!p3_bm5&p3_bm9&n_t_22x&!p6_usm
@@ -2662,7 +2662,7 @@ p1_bb1.oe = (!(!(!p3_bm5&p3_bm9&n_t_22x&!p6_usm
    #!p3_bm9&n_t_22x&p1_rr1&p6_usm
    #!p3_bm9&!n_t_22x&!p1_rr1
    #p3_bm9&n_t_22x&!p1_rr1
-   #!p3_bm9&!n_t_22x&!p6_usm))#!('b'0&'b'0));
+   #!p3_bm9&!n_t_22x&!p6_usm))#!(!'b'0&!'b'0));
 property atmel {open_collector= p1_bfl0};
 p1_bfl0 = 'b'0;
 p1_bfl0.oe = (!(!(p3_bm6&p3_bm7&p3_bm8&!p1_rr2&!p1_rr3&p1_rr4&p6_usm
@@ -2696,7 +2696,7 @@ p1_bfl0.oe = (!(!(p3_bm6&p3_bm7&p3_bm8&!p1_rr2&!p1_rr3&p1_rr4&p6_usm
    #!p3_bm6&!p3_bm7&!p3_bm8&!'b'0&!p1_rr2
    #!p3_bm6&!p3_bm7&!p1_rr2&!p1_rr3
    #!p3_bm6&!'b'0&!p6_usm
-   #!p3_bm6&!p3_bm8&!p6_usm))#!('b'0&'b'0));
+   #!p3_bm6&!p3_bm8&!p6_usm))#!(!'b'0&!'b'0));
 property atmel {open_collector= p1_bfl1};
 p1_bfl1 = 'b'0;
 p1_bfl1.oe = (!(!(p3_bm7&'b'0&!p1_rr3&p1_rr4&p6_usm
@@ -2714,7 +2714,7 @@ p1_bfl1.oe = (!(!(p3_bm7&'b'0&!p1_rr3&p1_rr4&p6_usm
    #p3_bm6&p3_bm7&p3_bm8&'b'0&!p6_usm
    #!p3_bm7&!'b'0&!p1_rr3&!p1_rr4
    #!p3_bm7&!'b'0&!p6_usm
-   #!p3_bm7&!p3_bm8&!p6_usm))#!('b'0&'b'0));
+   #!p3_bm7&!p3_bm8&!p6_usm))#!(!'b'0&!'b'0));
 property atmel {open_collector= p1_bfl2};
 p1_bfl2 = 'b'0;
 p1_bfl2.oe = (!(!(!p3_bm7&p3_bm8&'b'0&!p6_usm
@@ -2724,7 +2724,7 @@ p1_bfl2.oe = (!(!(!p3_bm7&p3_bm8&'b'0&!p6_usm
    #!p3_bm8&'b'0&p1_rr4&p6_usm
    #!p3_bm8&!'b'0&!p1_rr4
    #p3_bm8&'b'0&!p1_rr4
-   #!p3_bm8&!'b'0&!p6_usm))#!('b'0&'b'0));
+   #!p3_bm8&!'b'0&!p6_usm))#!(!'b'0&!'b'0));
 property atmel {open_collector= p1_crf};
 p1_crf = 'b'0;
 p1_crf.oe = (!(!(p1_3v&p1_3v&p6_usm&!p4_rdf_low
@@ -2746,7 +2746,7 @@ p1_crf.oe = (!(!(p1_3v&p1_3v&p6_usm&!p4_rdf_low
    #p1_3v&p2_dfc&!p1_3v&p1_rr2&p6_usm&p4_rdf_low
    #n_t_6x&!p1_3v&p2_dfc&p1_3v&p1_rr2&p6_usm&p4_rdf_low
    #!n_t_6x&!p2_ifc&!p6_usm&!p4_rdf_low
-   #!n_t_6x&!p2_dfc&!p6_usm&p4_rdf_low))#!(p1_enrf_low));
+   #!n_t_6x&!p2_dfc&!p6_usm&p4_rdf_low))#!(!p1_enrf_low));
 property atmel {open_collector= p3_c17en_low};
 p3_c17en_low = 'b'0;
 p3_c17en_low.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
@@ -2761,7 +2761,7 @@ p3_c17en_low.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&!p3_bm5&p6_eem
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0));
+   #p3_bm3))#!(!'b'0));
 property atmel {open_collector= p3_cfrom_low};
 p3_cfrom_low = 'b'0;
 p3_cfrom_low.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
@@ -2772,7 +2772,7 @@ p3_cfrom_low.oe = (!(!(n_t_69x&p3_bm2&!p3_bm3&p6_dioi&!p3_bpause&p6_usm
    #!p3_bm3&p3_bm4&!p3_bm10&!p3_bm11
    #!p3_bpause&!p6_usm
    #!n_t_69x&!p3_bpause
-   #p3_bm3))#!('b'0));
+   #p3_bm3))#!(!'b'0));
 property atmel {open_collector= p3_decen_low};
 p3_decen_low = 'b'0;
 p3_decen_low.oe = (!(!(!p3_bm3&p3_bm4&p3_bm6&p3_bm10
@@ -2781,7 +2781,7 @@ p3_decen_low.oe = (!(!(!p3_bm3&p3_bm4&p3_bm6&p3_bm10
    #!p3_bm3&p6_usm
    #!p3_bm3&!p3_bm4
    #!p3_bpause&!p6_usm
-   #p3_bm3))#!('b'0));
+   #p3_bm3))#!(!'b'0));
 property atmel {open_collector= p3_hos_low};
 p3_hos_low = 'b'0;
 p3_hos_low.oe = (!(!(p3_bm11
@@ -2791,7 +2791,7 @@ p3_hos_low.oe = (!(!(p3_bm11
    #!p3_bm11&p3_bpause&!p6_usm
    #n_t_69x&p3_bm2&p3_bm3&!p3_bm9&!p3_bm10&!p3_bm11&p6_usm
    #!p3_bpause&!p6_usm
-   #!n_t_69x&!p3_bpause))#!('b'0));
+   #!n_t_69x&!p3_bpause))#!(!'b'0));
 property atmel {open_collector= p3_inioen};
 p3_inioen = 'b'0;
 p3_inioen.oe = (!(!(!p3_bm3&!p3_bm6&p3_bm10
@@ -2802,33 +2802,33 @@ p3_inioen.oe = (!(!(!p3_bm3&!p3_bm6&p3_bm10
    #!p3_bm3&p3_bm6&p3_bm9
    #!p3_bm3&p3_bm8&p3_bpause&!p6_usm
    #!p3_bpause&!p6_usm
-   #p3_bm3))#!('b'0));
+   #p3_bm3))#!(!'b'0));
 property atmel {open_collector= p4_cdf_low};
 p4_cdf_low = 'b'0;
 p4_cdf_low.oe = (!(!(!p3_bm11
    #n_t_29x
-   #!p3_bm4))#!(p3_cfrom_low&p3_e2cfrom_low));
+   #!p3_bm4))#!(!p3_cfrom_low&!p3_e2cfrom_low));
 property atmel {open_collector= p4_cif_low};
 p4_cif_low = 'b'0;
 p4_cif_low.oe = (!(!(!p3_bm10
    #n_t_29x
-   #!p3_bm4))#!(p3_cfrom_low&p3_e2cfrom_low));
+   #!p3_bm4))#!(!p3_cfrom_low&!p3_e2cfrom_low));
 property atmel {open_collector= p4_int_in_prog_low};
 p4_int_in_prog_low = 'b'0;
 p4_int_in_prog_low.oe = (p4_int_in&p4_fatal_low);
 property atmel {open_collector= p4_let_io_low};
 p4_let_io_low = 'b'0;
-p4_let_io_low.oe = (!(!(!p3_bm4&!p3_bm5&p3_bm9&n_t_89x&!p4_cdf_low&!p4_cif_low
-   #!p3_bm4&!p3_bm9&n_t_89x&!p4_cdf_low&!p4_cif_low
-   #!p3_bm4&!n_t_89x&!p4_cdf_low&!p4_cif_low
-   #p3_bm4&!p4_cdf_low&!p4_cif_low))#!(p3_cfrom_low&p3_e2cfrom_low));
+p4_let_io_low.oe = (!(!(!p3_bm4&!p3_bm5&p3_bm9&!n_t_89x&!!p4_cdf_low&!!p4_cif_low
+   #!p3_bm4&!p3_bm9&!n_t_89x&!!p4_cdf_low&!!p4_cif_low
+   #!p3_bm4&!!n_t_89x&!!p4_cdf_low&!!p4_cif_low
+   #p3_bm4&!!p4_cdf_low&!!p4_cif_low))#!(!p3_cfrom_low&!p3_e2cfrom_low));
 property atmel {open_collector= p5_bmen_low};
 p5_bmen_low = 'b'0;
 p5_bmen_low.oe = (!(!(!p6_ebm
-   #!p2_bcpmad_low))#!('b'0&'b'0));
+   #!!p2_bcpmad_low))#!(!'b'0&!'b'0));
 property atmel {open_collector= p5_dbs_low};
 p5_dbs_low = 'b'0;
-p5_dbs_low.oe = 'b'1;
+p5_dbs_low.oe = (!(!(!p4_dfen)));
 property atmel {open_collector= p6_bs0_low};
 p6_bs0_low = 'b'0;
 p6_bs0_low.oe = (!p6_prup&!'b'0)
@@ -2868,7 +2868,7 @@ rbs3_low.oe = (!gdollar_75 & !p6_prup_low & !p2_enbs_low)
 property atmel {open_collector= rd0_low};
 rd0_low = 'b'0;
 rd0_low.oe = (n_t_26x & n_t_27x)
- # (!(!('b'1))#!(n_t_64x&mbct4_low))
+ # (!(!('b'1))#!(!n_t_64x&!mbct4_low))
  # (!p4_rxm_low&!p6_eem_low);
 property atmel {open_collector= rd10_low};
 rd10_low = 'b'0;
@@ -2891,7 +2891,7 @@ rd11_low.oe = (!n_t_66x&(p4_raca_low&!n_t_63x#!p4_raca_low&!n_t_60x))
 property atmel {open_collector= rd1_low};
 rd1_low = 'b'0;
 rd1_low.oe = (!(!(!n_t_54x
-   #!p4_racb_low))#!(n_t_64x&mbct4_low))
+   #!!p4_racb_low))#!(!n_t_64x&!mbct4_low))
  # (!p4_rxm_low&!p6_en5_low)
  # (!p6_dispb_low&!n_t_156x)
  # (!gdollar_63 & !p4_rmr_low & !p4_rmr_low)
@@ -2899,7 +2899,7 @@ rd1_low.oe = (!(!(!n_t_54x
 property atmel {open_collector= rd2_low};
 rd2_low = 'b'0;
 rd2_low.oe = (!(!(!n_t_55x
-   #!p4_racb_low))#!(n_t_64x&mbct4_low))
+   #!!p4_racb_low))#!(!n_t_64x&!mbct4_low))
  # (!p4_rxm_low&!p6_en9_low)
  # (!p6_dispb_low&!n_t_158x)
  # (!gdollar_64 & !p4_rmr_low & !p4_rmr_low)
@@ -2923,7 +2923,7 @@ property atmel {open_collector= rd5_low};
 rd5_low = 'b'0;
 rd5_low.oe = (n_t_168x & p2_suf_out)
  # (!(!(!n_t_52x
-   #!p4_racc_low))#!(n_t_64x&mbct4_low))
+   #!!p4_racc_low))#!(!n_t_64x&!mbct4_low))
  # (!p4_rxm_low&!p6_ebm_low)
  # (!n_t_169x&!p6_usm_low)
  # (!p6_dispb_low&!n_t_161x)
@@ -2957,13 +2957,13 @@ rd5_low.oe = (n_t_168x & p2_suf_out)
    #p1_crf&!n_t_159x&!n_t_157x&!p1_rr0&p6_usm&!p4_rdf_low
    #p1_crf&!n_t_163x&!n_t_162x&!p1_rr0&p6_usm&p4_rdf_low
    #p1_crf&!n_t_159x&!p1_rr0&!p1_rr1&p6_usm&!p4_rdf_low
-   #p1_crf&!n_t_163x&!p1_rr0&!p1_rr1&p6_usm&p4_rdf_low))#!(p1_enrf_low));
+   #p1_crf&!n_t_163x&!p1_rr0&!p1_rr1&p6_usm&p4_rdf_low))#!(!p1_enrf_low));
 property atmel {open_collector= rd6_low};
 rd6_low = 'b'0;
 rd6_low.oe = (!(!(!n_t_58x&!n_t_61x
-   #!n_t_61x&!p4_racc_low
-   #!n_t_58x&!p4_racb_low
-   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low))
+   #!n_t_61x&!!p4_racc_low
+   #!n_t_58x&!!p4_racb_low
+   #!!p4_racb_low&!!p4_racc_low))#!(!n_t_64x&!mbct4_low))
  # (!p4_rxm_low&!p6_maint_low)
  # (!p6_disf_low&!p2_ifc_low)
  # (!gdollar_52 & !p4_rlb_low & !p4_rlb_low)
@@ -2981,13 +2981,13 @@ rd6_low.oe = (!(!(!n_t_58x&!n_t_61x
    #!n_t_6x&!p2_ifc&!p6_usm&!p4_rdf_low
    #!n_t_6x&!p2_dfc&!p6_usm&p4_rdf_low
    #!n_t_6x&!p2_ifc&p1_rr2&!p4_rdf_low
-   #!n_t_6x&!p2_dfc&p1_rr2&p4_rdf_low))#!(p1_enrf_low));
+   #!n_t_6x&!p2_dfc&p1_rr2&p4_rdf_low))#!(!p1_enrf_low));
 property atmel {open_collector= rd7_low};
 rd7_low = 'b'0;
 rd7_low.oe = (!(!(!n_t_59x&!n_t_62x
-   #!n_t_62x&!p4_racc_low
-   #!n_t_59x&!p4_racb_low
-   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low))
+   #!n_t_62x&!!p4_racc_low
+   #!n_t_59x&!!p4_racb_low
+   #!!p4_racb_low&!!p4_racc_low))#!(!n_t_64x&!mbct4_low))
  # (!p6_disf_low&!p2_ifb_low)
  # (!p4_rrr_low&p1_rr0)
  # (!gdollar_53 & !p4_rlb_low & !p4_rlb_low)
@@ -3023,13 +3023,13 @@ rd7_low.oe = (!(!(!n_t_59x&!n_t_62x
    #p6_usm&!p2_ifb&!p2_ifa&!p1_rr3&p6_usm&!p4_rdf_low
    #p6_usm&!p2_dfb&!p2_dfa&!p1_rr3&p6_usm&p4_rdf_low
    #p6_usm&!p2_ifb&!p1_rr3&!p1_rr4&p6_usm&!p4_rdf_low
-   #p6_usm&!p2_dfb&!p1_rr3&!p1_rr4&p6_usm&p4_rdf_low))#!(p1_enrf_low));
+   #p6_usm&!p2_dfb&!p1_rr3&!p1_rr4&p6_usm&p4_rdf_low))#!(!p1_enrf_low));
 property atmel {open_collector= rd8_low};
 rd8_low = 'b'0;
 rd8_low.oe = (!(!(!n_t_60x&!n_t_63x
-   #!n_t_63x&!p4_racc_low
-   #!n_t_60x&!p4_racb_low
-   #!p4_racb_low&!p4_racc_low))#!(n_t_64x&mbct4_low))
+   #!n_t_63x&!!p4_racc_low
+   #!n_t_60x&!!p4_racb_low
+   #!!p4_racb_low&!!p4_racc_low))#!(!n_t_64x&!mbct4_low))
  # (!p6_disf_low&!p2_ifa_low)
  # (!p4_rrr_low&p1_rr1)
  # (!gdollar_54 & !p4_rlb_low & !p4_rlb_low)
@@ -3047,11 +3047,11 @@ rd8_low.oe = (!(!(!n_t_60x&!n_t_63x
    #!p6_usm&!p2_ifa&!p6_usm&!p4_rdf_low
    #!p6_usm&!p2_dfa&!p6_usm&p4_rdf_low
    #!p6_usm&!p2_ifa&p1_rr4&!p4_rdf_low
-   #!p6_usm&!p2_dfa&p1_rr4&p4_rdf_low))#!(p1_enrf_low));
+   #!p6_usm&!p2_dfa&p1_rr4&p4_rdf_low))#!(!p1_enrf_low));
 property atmel {open_collector= rd9_low};
 rd9_low = 'b'0;
-rd9_low.oe = (!(!(!p4_raca_low
-   #!n_t_58x))#!(n_t_64x&mbct4_low))
+rd9_low.oe = (!(!(!!p4_raca_low
+   #!n_t_58x))#!(!n_t_64x&!mbct4_low))
  # (!gdollar_6 & !p4_rmr_low & !p4_rmr_low)
  # (!p4_rrr_low&p1_rr2)
  # (!gdollar_55 & !p4_rlb_low & !p4_rlb_low)
@@ -3069,7 +3069,7 @@ rd9_low.oe = (!(!(!p4_raca_low
    #!p1_crf&!n_t_157x&!p6_usm&!p4_rdf_low
    #!p1_crf&!n_t_162x&!p6_usm&p4_rdf_low
    #!p1_crf&!n_t_157x&p1_rr1&!p4_rdf_low
-   #!p1_crf&!n_t_162x&p1_rr1&p4_rdf_low))#!(p1_enrf_low));
+   #!p1_crf&!n_t_162x&p1_rr1&p4_rdf_low))#!(!p1_enrf_low));
 property atmel {open_collector= skip_low};
 skip_low = 'b'0;
 skip_low.oe = (p4_usint&n_t_94x);
