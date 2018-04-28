@@ -129,15 +129,6 @@ sub qcode {
   $code =~ s/\r$//g;
   $code =~ s/\n/\r\n/g;
   $qcode .= $code;
-# $code =~ s/!!//g;
-# $code =~ s/!'b'0\b/'b'1/g;
-# $code =~ s/!'b'1\b/'b'0/g;
-# $code =~ s/\s*&\s*'b'1\b//g;
-# $code =~ s/'b'1\s*&\s*//g;
-# $code =~ s/\s*#\s*'b'0\b//g;
-# $code =~ s/\b(\w+)\s*&\1\b/\1/g;
-# $code =~ s/\(\s*(\w+)\s*\)/\1/g;
-# $qcode .= $code;
 }
 
 #Tests for expression optimizer.
@@ -830,37 +821,37 @@ $hidden{'sn74173'} = 0;
 sub sn74174 {
   if (defined $pad{2}) {
     &pinnode($pad{2});
-    &qcode("$pad{2}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{2}.ar = !$pad{1};\n") if defined $pad{1};
     &qcode("$pad{2}.ck = $pad{9};\n");
     &qcode("$pad{2}.d = $pad{3};\n");
   }
   if (defined $pad{5}) {
     &pinnode($pad{5});
-    &qcode("$pad{5}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{5}.ar = !$pad{1};\n") if defined $pad{1};
     &qcode("$pad{5}.ck = $pad{9};\n");
     &qcode("$pad{5}.d = $pad{4};\n");
   }
   if (defined $pad{7}) {
     &pinnode($pad{7});
-    &qcode("$pad{7}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{7}.ar = !$pad{1};\n") if defined $pad{1};
     &qcode("$pad{7}.ck = $pad{9};\n");
     &qcode("$pad{7}.d = $pad{6};\n");
   }
   if (defined $pad{10}) {
     &pinnode($pad{10});
-    &qcode("$pad{10}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{10}.ar = !$pad{1};\n") if defined $pad{1};
     &qcode("$pad{10}.ck = $pad{9};\n");
     &qcode("$pad{10}.d = $pad{11};\n");
   }
   if (defined $pad{12}) {
     &pinnode($pad{12});
-    &qcode("$pad{12}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{12}.ar = !$pad{1};\n") if defined $pad{1};
     &qcode("$pad{12}.ck = $pad{9};\n");
     &qcode("$pad{12}.d = $pad{13};\n");
   }
   if (defined $pad{15}) {
     &pinnode($pad{15});
-    &qcode("$pad{15}.ar = $pad{1};\n") if defined $pad{1};
+    &qcode("$pad{15}.ar = !$pad{1};\n") if defined $pad{1};
     &qcode("$pad{15}.ck = $pad{9};\n");
     &qcode("$pad{15}.d = $pad{14};\n");
   }
@@ -873,7 +864,7 @@ sub sn74175 {
     &pinnode($pad{2});
     &qcode("$pad{2}.d = $pad{4};\n");
     &qcode("$pad{2}.ck = $pad{9};\n");
-    &qcode("$pad{2}.ar = $pad{1};\n") if defined $pad{9};
+    &qcode("$pad{2}.ar = !$pad{1};\n") if defined $pad{9};
     &qcode("$pad{3} = !$pad{2};\n") if defined $pad{3};
   }
   if (defined($pad{7}) || defined($pad{6})) {
@@ -881,7 +872,7 @@ sub sn74175 {
     &pinnode($pad{7});
     &qcode("$pad{7}.d = $pad{5};\n");
     &qcode("$pad{7}.ck = $pad{9};\n");
-    &qcode("$pad{7}.ar = $pad{1};\n") if defined $pad{9};
+    &qcode("$pad{7}.ar = !$pad{1};\n") if defined $pad{9};
     &qcode("$pad{6} = !$pad{7};\n") if defined $pad{6};
   }
   if (defined($pad{10}) || defined($pad{11})) {
@@ -889,7 +880,7 @@ sub sn74175 {
     &pinnode($pad{10});
     &qcode("$pad{10}.d = $pad{12};\n");
     &qcode("$pad{10}.ck = $pad{9};\n");
-    &qcode("$pad{10}.ar = $pad{1};\n") if defined $pad{9};
+    &qcode("$pad{10}.ar = !$pad{1};\n") if defined $pad{9};
     &qcode("$pad{11} = !$pad{10};\n") if defined $pad{11};
   }
   if (defined($pad{15}) || defined($pad{14})) {
@@ -897,7 +888,7 @@ sub sn74175 {
     &pinnode($pad{15});
     &qcode("$pad{15}.d = $pad{13};\n");
     &qcode("$pad{15}.ck = $pad{9};\n");
-    &qcode("$pad{15}.ar = $pad{1};\n") if defined $pad{9};
+    &qcode("$pad{15}.ar = !$pad{1};\n") if defined $pad{9};
     &qcode("$pad{14} = !$pad{15};\n") if defined $pad{14};
   }
 }
@@ -1788,11 +1779,12 @@ $signal = "'b'1" if $signal eq 'nc'; # vrs
 &qcode("\n/* Open collector 'wire-or's */\n");
 foreach $lh (sort keys %ocassign) {
   # WinCUPL needs this.
-  &qcode("property atmel {open_collector=$lh};\n");
+  &qcode("property atmel {open_collector=$lh};\n") if $con{$lh};
   # Use qcode to get peep-hole optimization.
-  &qcode("$lh = 'b'0;\n");
+# &qcode("$lh = gnd;\n");
   chop $ocassign{$lh};
-  &qcode("$lh.oe = $ocassign{$lh};\n");
+  &qcode("!$lh = $ocassign{$lh};\n");
+  &qcode("$lh.oe = $ocassign{$lh};\n") if $con{$lh};
 }
 
 # Dump all the saved up code.

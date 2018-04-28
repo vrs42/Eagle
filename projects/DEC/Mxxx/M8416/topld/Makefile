@@ -1,6 +1,7 @@
 #
 # Create PLD files for M8416 schematics.
 #
+CUPL	= c:/Wincupl/WinCupl/Wincupl
 ALL	= M8416C.doc M8416P.doc
 PINS	= $(ALL:.doc=pins.txt)
 PRTS	= $(ALL:.doc=prts.txt)
@@ -14,6 +15,7 @@ all:	$(ALL)
 	./topld.pl $*
 
 %.doc:	%.pld
+#	echo $(CUPL) -elxbm4 $<
 	@echo "You must (re)compile $?!"
 	@exit 1
 
