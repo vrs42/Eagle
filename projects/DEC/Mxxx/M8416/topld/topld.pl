@@ -11,41 +11,46 @@
 #  32 of these.
 #
 sub term {
+  local($indent) = @_;
   local($term);
   # The term is an identifier or a parenthesised expression.
   if ($rh =~ s/^\s*[(]//) {
-    $term = &expression($rh);
+    $term = &expression("$indent ");
     # If there are no operators, skip the parentheses.
     if ($term =~ /[!&\$#]/) {
       $term = "($term)";
     }
     $rh =~ s/^[)]//;
   } else {
-    $rh =~ s/^\s*([^!&#\$) ;]+)\s*//;
+    $rh =~ s/^\s*([^!&#\$)\s;]+)\s*//;
     $term = $1;
   }
   return $term;
 }
 
 sub nterm {
+  local($indent) = @_;
   # The nterm is a term or a negated nterm.
   if ($rh =~ s/^\s*[!]\s*//) {
-    local($nterm) = "!" . &nterm;
+    local($nterm) = "!" . &nterm("$indent ");
     $nterm =~ s/^!!//;
     $nterm =~ s/^!'b'0\b/'b'1/;
     $nterm =~ s/^!'b'1\b/'b'0/;
     return $nterm;
   } else {
-    return &term;
+    return &term($indent);
  }
 }
 
 sub pterm {
-  local($lo) = &nterm;
+  local($indent) = @_;
+  local($lo) = &nterm($indent);
   local($ro);
   # A pterm is an nterm possibly followed by "&" and more nterms.
   while ($rh =~ s/^\s*[&]\s*//) {
-    $ro = &nterm($rh);
+    # Since we don't newline, must adjust indentation.
+    $tindent = $lo; $tindent =~ s/./ /g;
+    $ro = &nterm("$indent   $tindent");
     if ($lo eq "'b'0") {
       # $ro does not affect the result.
     } elsif ($lo eq "'b'1") {
@@ -60,18 +65,19 @@ sub pterm {
       # $ro does not affect the result.
     } else {
       # Both $lo and $ro affect the result.
-      $lo .= "&$ro";
+      $lo .= " & $ro";
     }
   }
   return $lo;
 }
 
 sub orterm {
-  local($lo) = &pterm;
+  local($indent) = @_;
+  local($lo) = &pterm($indent);
   local($ro);
   # A pterm is an pterm possibly followed by "#" and more pterms.
   while ($rh =~ s/^\s*[#]\s*//) {
-    $ro = &pterm($rh);
+    $ro = &pterm("$indent  ");
     if ($lo eq "'b'0") {
       # $ro is the result.
       $lo = $ro;
@@ -86,18 +92,19 @@ sub orterm {
       # $ro does not affect the result.
     } else {
       # Both $lo and $ro affect the result.
-      $lo .= " # $ro";
+      $lo .= "\n$indent # $ro";
     }
   }
   return $lo;
 }
 
 sub expression {
-  local($lo) = &orterm;
+  local($indent) = @_;
+  local($lo) = &orterm($indent);
   local($ro);
   # An expression is an orterm possibly followed by "$" and more orterms.
   while ($rh =~ s/^\s*\$\s*//) {
-    $ro = &orterm($rh);
+    $ro = &orterm("$indent  ");
     if ($lo eq "'b'0") {
       # $ro is the result.
       $lo = $ro;
@@ -111,7 +118,7 @@ sub expression {
       $lo = "!$lo";
     } else {
       # Both $lo and $ro affect the result.
-      $lo .= " \$ $ro";
+      $lo .= "\n$indent \$ $ro";
     }
   }
   return $lo;
@@ -123,7 +130,8 @@ sub qcode {
   local($lh, $rh);
   # Simple peep-hole optimizations.
   if (($lh, $rh) = $code =~ /^(.*=)\s*(.*)\r*$/) {
-    $rh = &expression;
+    $indent = $lh; $indent =~ s/./ /g; $indent =~ s/  $//;
+    $rh = &expression($indent);
     $code = "$lh $rh;\n";
   }
   $code =~ s/\r$//g;
@@ -538,8 +546,8 @@ sub sn7485 {
   &qcode("$n0e = $pad{9}&!$pad{10} # !$pad{9}&$pad{10};\n");
   &qcode("$pad{6} = $pad{3} & !$n3e & !$n2e & !$n1e & !$n0e;\n")
     if defined $pad{6};
-  &qcode("$pad{5} = !$pad{3} & !$pad{2} & !$n3e & !$n2e & !$n1e & !$n0e\n  # !$pad{9} & !$n3e & !$n2e & !$n1e & $n0e\n  # !$pad{11} & !$n3e & !$n2e & $n1e\n  # !$pad{14} & !$n3e & $n2e\n  # !$pad{1} & $n3e;\n") if defined $pad{5};
-  &qcode("$pad{7} = !$pad{3} & !$pad{4} & !$n3e & !$n2e & !$n1e & !$n0e\n  # $pad{9} & !$n3e & !$n2e & !$n1e & $n0e\n  # $pad{11} & !$n3e & !$n2e & $n1e\n  # $pad{14} & !$n3e & $n2e\n  # $pad{1} & $n3e;\n") if defined $pad{7};
+  &qcode("$pad{5} = !$pad{3} & !$pad{2} & !$n3e & !$n2e & !$n1e & !$n0e  # !$pad{9} & !$n3e & !$n2e & !$n1e & $n0e  # !$pad{11} & !$n3e & !$n2e & $n1e  # !$pad{14} & !$n3e & $n2e  # !$pad{1} & $n3e;\n") if defined $pad{5};
+  &qcode("$pad{7} = !$pad{3} & !$pad{4} & !$n3e & !$n2e & !$n1e & !$n0e  # $pad{9} & !$n3e & !$n2e & !$n1e & $n0e  # $pad{11} & !$n3e & !$n2e & $n1e  # $pad{14} & !$n3e & $n2e  # $pad{1} & $n3e;\n") if defined $pad{7};
 }
 $hidden{'sn7485'} = 0;
 
@@ -662,20 +670,12 @@ sub sn74139 {
 }
 $hidden{'sn74139'} = 0;
 
-#sub sn74148 {
-#  &qcode("$pad{9} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   # !$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}\n   # !$pad{5}&!$pad{2}&$pad{3}\n   # !$pad{5}&!$pad{4});\n");
-#  &qcode("$pad{7} = !(!$pad{5}&$pad{12}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   # !$pad{5}&!$pad{12}&$pad{1}&$pad{2}\n   # !$pad{5}&!$pad{3}\n   # !$pad{5}&!$pad{4});\n");
-#  &qcode("$pad{6} = !(!$pad{5}&!$pad{2}&$pad{3}\n   # !$pad{5}&!$pad{1}\n   # !$pad{5}&!$pad{3}\n   # !$pad{5}&!$pad{4});\n");
-#  &qcode("$pad{15} = !(!$pad{5}&$pad{10}&$pad{11}&$pad{12}&$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4});\n") if defined $pad{15};
-#  &qcode("$pad{14} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   # !$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}\n   # !$pad{5}&!$pad{12}&$pad{1}&$pad{2}\n   # !$pad{5}&!$pad{2}&$pad{3}\n   # !$pad{5}&!$pad{1}\n   # !$pad{5}&!$pad{3}\n   # !$pad{5}&!$pad{4}\n   # !$pad{5}&!$pad{10});\n") if defined $pad{15};
-#}
-#$hidden{"sn74148"} = 0;
 sub sn74148 {
-  &qcode("$pad{9} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   #!$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}\n   #!$pad{5}&!$pad{2}&$pad{3}\n   #!$pad{5}&!$pad{4}\n);\n") if defined $pad{9};
-  &qcode("$pad{7} = !(!$pad{5}&$pad{12}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   #!$pad{5}&!$pad{12}&$pad{1}&$pad{2}\n   #!$pad{5}&!$pad{3}\n   #!$pad{5}&!$pad{4}\n);\n") if defined $pad{7};
-  &qcode("$pad{6} = !(!$pad{5}&!$pad{2}&$pad{3}\n   #!$pad{5}&!$pad{1}\n   #!$pad{5}&!$pad{3}\n   #!$pad{5}&!$pad{4}\n);\n") if defined $pad{6};
-  &qcode("$pad{15} = !(!$pad{5}&$pad{10}&$pad{11}&$pad{12}&$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n);\n") if defined $pad{15};
-  &qcode("$pad{14} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}\n   #!$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}\n   #!$pad{5}&!$pad{12}&$pad{1}&$pad{2}\n   #!$pad{5}&!$pad{2}&$pad{3}\n   #!$pad{5}&!$pad{1}\n   #!$pad{5}&!$pad{3}\n   #!$pad{5}&!$pad{4}\n   #!$pad{5}&!$pad{10}\n);\n") if defined $pad{14};
+  &qcode("$pad{9} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}   #!$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}   #!$pad{5}&!$pad{2}&$pad{3}   #!$pad{5}&!$pad{4});\n") if defined $pad{9};
+  &qcode("$pad{7} = !(!$pad{5}&$pad{12}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}   #!$pad{5}&!$pad{12}&$pad{1}&$pad{2}   #!$pad{5}&!$pad{3}   #!$pad{5}&!$pad{4});\n") if defined $pad{7};
+  &qcode("$pad{6} = !(!$pad{5}&!$pad{2}&$pad{3}   #!$pad{5}&!$pad{1}   #!$pad{5}&!$pad{3}   #!$pad{5}&!$pad{4});\n") if defined $pad{6};
+  &qcode("$pad{15} = !(!$pad{5}&$pad{10}&$pad{11}&$pad{12}&$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4});\n") if defined $pad{15};
+  &qcode("$pad{14} = !(!$pad{5}&!$pad{13}&$pad{1}&$pad{2}&$pad{3}&$pad{4}   #!$pad{5}&!$pad{11}&$pad{12}&$pad{1}&$pad{3}   #!$pad{5}&!$pad{12}&$pad{1}&$pad{2}   #!$pad{5}&!$pad{2}&$pad{3}   #!$pad{5}&!$pad{1}   #!$pad{5}&!$pad{3}   #!$pad{5}&!$pad{4}   #!$pad{5}&!$pad{10});\n") if defined $pad{14};
 }
 $hidden{"sn74148"} = 0;
 
@@ -940,7 +940,7 @@ sub sn74189 {
     if defined $pad{5};
   print "node $ri1, $rj1, $rk1, $rl1, $rm1, $rn1, $ro1, $rp1;\r\n"
     if defined $pad{5};
-  &ocassign($pad{5}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp1\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro1\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn1\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm1\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl1\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk1\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj1\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri1\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh1\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg1\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf1\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re1\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd1\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc1\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb1\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra1") if defined $pad{5};
+  &ocassign($pad{5}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp1   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro1   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn1   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm1   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl1   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk1   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj1   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri1   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh1   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg1   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf1   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re1   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd1   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc1   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb1   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra1") if defined $pad{5};
   $oc{$pad{7}} = 1 if defined $pad{7};
   ($ra2, $rb2, $rc2, $rd2, $re2, $rf2, $rg2, $rh2)
     = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
@@ -952,7 +952,7 @@ sub sn74189 {
     if defined $pad{7};
   print "node $ri2, $rj2, $rk2, $rl2, $rm2, $rn2, $ro2, $rp2;\r\n"
     if defined $pad{7};
-  &ocassign($pad{7}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp2\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro2\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn2\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm2\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl2\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk2\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj2\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri2\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh2\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg2\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf2\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re2\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd2\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc2\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb2\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra2") if defined $pad{7};
+  &ocassign($pad{7}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp2   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro2   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn2   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm2   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl2   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk2   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj2   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri2   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh2   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg2   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf2   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re2   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd2   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc2   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb2   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra2") if defined $pad{7};
   $oc{$pad{9}} = 1 if defined $pad{9};
   ($ra3, $rb3, $rc3, $rd3, $re3, $rf3, $rg3, $rh3)
     = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
@@ -964,7 +964,7 @@ sub sn74189 {
     if defined $pad{9};
   print "node $ri3, $rj3, $rk3, $rl3, $rm3, $rn3, $ro3, $rp3;\r\n"
     if defined $pad{9};
-  &ocassign($pad{9}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp3\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro3\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn3\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm3\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl3\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk3\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj3\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri3\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh3\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg3\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf3\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re3\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd3\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc3\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb3\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra3") if defined $pad{9};
+  &ocassign($pad{9}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp3   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro3   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn3   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm3   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl3   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk3   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj3   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri3   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh3   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg3   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf3   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re3   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd3   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc3   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb3   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra3") if defined $pad{9};
   $oc{$pad{11}} = 1 if defined $pad{11};
   ($ra4, $rb4, $rc4, $rd4, $re4, $rf4, $rg4, $rh4)
     = (&gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext, &gnext)
@@ -976,7 +976,7 @@ sub sn74189 {
     if defined $pad{11};
   print "node $ri4, $rj4, $rk4, $rl4, $rm4, $rn4, $ro4, $rp4;\r\n"
     if defined $pad{11};
-  &ocassign($pad{11}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp4\n   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro4\n   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn4\n   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm4\n   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl4\n   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk4\n   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj4\n   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri4\n   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh4\n   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg4\n   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf4\n   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re4\n   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd4\n   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc4\n   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb4\n   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra4") if defined $pad{11};
+  &ocassign($pad{11}, "$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$rp4   #!$pad{1}&$pad{15}&$pad{14}&$pad{13}&!$ro4   #$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rn4   #!$pad{1}&!$pad{15}&$pad{14}&$pad{13}&!$rm4   #$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rl4   #!$pad{1}&$pad{15}&!$pad{14}&$pad{13}&!$rk4   #$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$rj4   #!$pad{1}&!$pad{15}&!$pad{14}&$pad{13}&!$ri4   #$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rh4   #!$pad{1}&$pad{15}&$pad{14}&!$pad{13}&!$rg4   #$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$rf4   #!$pad{1}&!$pad{15}&$pad{14}&!$pad{13}&!$re4   #$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rd4   #!$pad{1}&$pad{15}&!$pad{14}&!$pad{13}&!$rc4   #$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$rb4   #!$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&!$ra4") if defined $pad{11};
   &qcode("$ra1.l = $pad{4};\n") if defined $pad{4};
   &qcode("$ra1.le = !$pad{1}&!$pad{15}&!$pad{14}&!$pad{13}&$pad{2}&$pad{3};\n") if defined $pad{4};
   &qcode("$ra2.l = $pad{6};\n") if defined $pad{6};
@@ -1471,14 +1471,17 @@ $hidden{'r_us_'} = 0;
 sub ocassign {
   local($lh, $rh) = @_;
 
+  local($_) = $rh; s/\r*\n//g;
+  local($indent) = $lh; $indent =~ s/./ /g;
+  $rh = &expression($indent);
   warn "unexpected OC output: $lh" unless $oc{$lh};
   &qcode("/* $lh = !($rh);");
   $qcode =~ s/\r*\n$//;
   &qcode(" */\n");
   if (defined $ocassign{$lh}) {
-    $ocassign{$lh} .= " # ($rh)\n";
+    $ocassign{$lh} .= "\n$indent # ($rh)";
   } else {
-    $ocassign{$lh} = "($rh)\n";
+    $ocassign{$lh} = "($rh)";
   }
 }
 
@@ -1781,8 +1784,6 @@ foreach $lh (sort keys %ocassign) {
   # WinCUPL needs this.
   &qcode("property atmel {open_collector=$lh};\n") if $con{$lh};
   # Use qcode to get peep-hole optimization.
-# &qcode("$lh = gnd;\n");
-  chop $ocassign{$lh};
   &qcode("!$lh = $ocassign{$lh};\n");
   &qcode("$lh.oe = $ocassign{$lh};\n") if $con{$lh};
 }
