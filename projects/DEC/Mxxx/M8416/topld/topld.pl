@@ -147,9 +147,8 @@ sub qcode {
 sub pinnode {
   local($signal) = @_;
   return if defined $con{$signal};
-return unless $signal =~ /^gdollar/;
   print "node $signal;\r\n";
-# print "pinnode = $signal;\r\n";
+  $pinnode{$signal} = 1;
 }
 
 #
@@ -1701,6 +1700,8 @@ Assembly None ;\r
 Location E1 ;\r
 Device   f1508isptqfp100;\r
 HERE
+print "\n\$DEFINE OPTIMIZE\r\n";
+print "\n\$UNDEF  OPTIMIZE\r\n";
 print "\r\n";
 print "/* Input Pins */\r\n";
 foreach (sort keys %signals) {
@@ -1719,14 +1720,6 @@ foreach (sort keys %signals) {
     print "pin = $_;\r\n" if defined $out{$_};
   }
 }
-print "\r\n";
-print "/* Internal nodes */\r\n";
-foreach (sort keys %signals) {
-  next if defined $con{$_};
-# next if /^n_t_\d+x$/;
-  print "node $_;\r\n";
-}
-print "\r\n/* Code nodes */\r\n";
 
 #
 # Scan the pin file again, instantiating various devices.
@@ -1774,10 +1767,21 @@ while (<INPUT>) {
   next if $dir eq 'pwr';
   # Ignore unconnected pins.
   next if $signal =~ /^[\*]/;
-$signal = "'b'1" if $signal eq 'nc'; # vrs
+  $signal = "'b'1" if $signal eq 'nc'; # vrs
   next if $signal =~ /^nc$/;
   $pad{$pad} = $signal;
 }
+
+print "\r\n";
+print "/* Internal nodes */\r\n";
+print "\$IFNDEF OPTIMIZE\r\n";
+foreach (sort keys %signals) {
+  next if defined $con{$_};
+  next if $pinnode{$_};
+  print "node $_;\r\n";
+}
+print "\$ENDIF\r\n";
+print "\r\n/* Code nodes */\r\n";
 
 &qcode("\n/* Open collector 'wire-or's */\n");
 foreach $lh (sort keys %ocassign) {

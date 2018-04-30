@@ -27,8 +27,8 @@
 # That is
 #   &ocassign("f", "!(e1)&(e2)");
 #
-# For this to work, the signal must also be on the
-# list of known OC signals:
+# For ocassign to work, the signal must also be on
+# the list of known OC signals:
 #   $oc{"f"} = 1;
 #
 
@@ -62,7 +62,7 @@ foreach $f (@ARGV) {
     last if /^====/;
     if (/^(\S+)\s*=>/) {
       $lh = $1;
-      $negate = ($lh =~ s/^!//);
+      $negate = ""; $negate = "!" if $lh =~ s/^!//;
       $suffix = "";
       $suffix = $1 if $lh =~ s/(\..*)//;
       if (!defined $pad{$lh}) {
@@ -71,15 +71,15 @@ foreach $f (@ARGV) {
         undef $lh;
         next;
       }
-      $lh = "\$pad\{$pad{$lh}\}" unless $pad{$lh} >= 200;
-      #$code = "$lh$suffix = ";
+      # Determine if the pad needs negation.
       $code = "";
-      $code .= "!(" if $negate;
       $first = 1;
     } elsif (/^\r*$/) {
-      # Wrap up the assignment.
+      # Remember the assembled expression for the pad.
+      next unless defined $lh;
       chop $code; chop $code; # Remove last "\n"
-      $code .= ")" if $negate;
+      $code = "!($code)" if $negate ne $neg{$lh};
+      $lh = "\$pad\{$pad{$lh}\}" unless $pad{$lh} >= 200;
       $code{"$lh$suffix"} = $code if defined $lh;
       $code = "";
       undef $lh;
