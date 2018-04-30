@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          virtual  Library DLIB-h-40-1
-Created         Sun Apr 29 15:22:26 2018
+Created         Sun Apr 29 16:57:31 2018
 Name            M8416P 
 Partno          cpld 
 Revision        01 
@@ -1539,12 +1539,10 @@ n_t_28x =>
     !la_en_low
 
 !n_t_29x =>
-    p3_cfrom_low
-  # p3_e2cfrom_low
-  # !p3_bm5 & !p3_bm9
-  # !p3_bm9 & p6_en5
-  # !p3_bm5 & p6_en9
-  # p6_en5 & p6_en9
+    !p3_bm5 & !p3_bm9 & !p3_cfrom_low & !p3_e2cfrom_low
+  # !p3_bm9 & !p3_cfrom_low & !p3_e2cfrom_low & p6_en5
+  # !p3_bm5 & !p3_cfrom_low & !p3_e2cfrom_low & p6_en9
+  # !p3_cfrom_low & !p3_e2cfrom_low & p6_en5 & p6_en9
 
 n_t_2x =>
     !n_t_3x & !p4_lxa
@@ -1769,14 +1767,13 @@ n_t_69x =>
   # !p3_bm1
 
 !n_t_6x =>
-    p1_enrf_low
-  # !p6_usm
-  # p1_rr3 & p2_dfb & p4_rdf_low
-  # p1_rr3 & p2_ifb & !p4_rdf_low
-  # p1_rr3 & p1_rr4 & p2_dfa & p4_rdf_low
-  # p1_rr4 & p2_dfa & p2_dfb & p4_rdf_low
-  # p1_rr3 & p1_rr4 & p2_ifa & !p4_rdf_low
-  # p1_rr4 & p2_ifa & p2_ifb & !p4_rdf_low
+    !p1_enrf_low & !p6_usm
+  # !p1_enrf_low & p1_rr3 & p2_dfb & p4_rdf_low
+  # !p1_enrf_low & p1_rr3 & p2_ifb & !p4_rdf_low
+  # !p1_enrf_low & p1_rr3 & p1_rr4 & p2_dfa & p4_rdf_low
+  # !p1_enrf_low & p1_rr4 & p2_dfa & p2_dfb & p4_rdf_low
+  # !p1_enrf_low & p1_rr3 & p1_rr4 & p2_ifa & !p4_rdf_low
+  # !p1_enrf_low & p1_rr4 & p2_ifa & p2_ifb & !p4_rdf_low
 
 n_t_70x =>
     !rd11_low
@@ -2001,11 +1998,10 @@ p1_3v =>
   # p1_rr4 & p3_bm8 & p6_usm
 
 !p1_crf =>
-    p1_3v
-  # p1_enrf_low
-  # !n_t_6x & !p6_usm
-  # p2_dfc & p4_rdf_low & !p6_usm
-  # p2_ifc & !p4_rdf_low & !p6_usm
+    p1_3v & !p1_enrf_low
+  # !n_t_6x & !p1_enrf_low & !p6_usm
+  # !p1_enrf_low & p2_dfc & p4_rdf_low & !p6_usm
+  # !p1_enrf_low & p2_ifc & !p4_rdf_low & !p6_usm
 
 p1_enrf_low =>
     p4_rdf_low & p4_rif_low
@@ -2514,18 +2510,14 @@ p4_bts1 =>
     !n_t_28x & !ts1_low
 
 !p4_cdf_low =>
-    n_t_29x
-  # !p3_bm4
-  # !p3_bm11
-  # p3_cfrom_low
-  # p3_e2cfrom_low
+    n_t_29x & !p3_cfrom_low & !p3_e2cfrom_low
+  # !p3_bm4 & !p3_cfrom_low & !p3_e2cfrom_low
+  # !p3_bm11 & !p3_cfrom_low & !p3_e2cfrom_low
 
 !p4_cif_low =>
-    n_t_29x
-  # !p3_bm4
-  # !p3_bm10
-  # p3_cfrom_low
-  # p3_e2cfrom_low
+    n_t_29x & !p3_cfrom_low & !p3_e2cfrom_low
+  # !p3_bm4 & !p3_cfrom_low & !p3_e2cfrom_low
+  # !p3_bm10 & !p3_cfrom_low & !p3_e2cfrom_low
 
 p4_cint_low =>
     n_t_100x
@@ -2663,12 +2655,10 @@ p4_jmp_or_jms =>
     !p3_bm9 & !p3_bm10 & !p3_bm11 & !p3_c17en_low
 
 !p4_let_io_low =>
-    p3_cfrom_low
-  # p3_e2cfrom_low
-  # n_t_89x & p4_cdf_low & p4_cif_low
-  # p3_bm4 & p4_cdf_low & p4_cif_low
-  # !p3_bm5 & p4_cdf_low & p4_cif_low
-  # !p3_bm9 & p4_cdf_low & p4_cif_low
+    n_t_89x & !p3_cfrom_low & !p3_e2cfrom_low & p4_cdf_low & p4_cif_low
+  # p3_bm4 & !p3_cfrom_low & !p3_e2cfrom_low & p4_cdf_low & p4_cif_low
+  # !p3_bm5 & !p3_cfrom_low & !p3_e2cfrom_low & p4_cdf_low & p4_cif_low
+  # !p3_bm9 & !p3_cfrom_low & !p3_e2cfrom_low & p4_cdf_low & p4_cif_low
 
 p4_lrr_low =>
     n_t_100x
@@ -3023,7 +3013,9 @@ p6_usm_low.ck  =>
   # !gdollar_75 & !p2_enbs_low & !p6_prup_low
 
 !rd0_low =>
-    1 
+    n_t_26x & n_t_27x
+  # !mbct4_low & !n_t_64x
+  # !p4_rxm_low & !p6_eem_low
 
 !rd10_low =>
     !n_t_56x & !p2_sf4
@@ -3046,24 +3038,20 @@ p6_usm_low.ck  =>
   # !n_t_60x & !n_t_66x & !p4_raca_low
 
 !rd1_low =>
-    mbct4_low
-  # !n_t_54x
-  # n_t_64x
-  # p4_racb_low
-  # !gdollar_63 & !p4_rmr_low
+    !gdollar_63 & !p4_rmr_low
   # !n_t_156x & !p6_dispb_low
   # !p4_rxm_low & !p6_en5_low
   # !p2_rsb_low & sb0_low
+  # !mbct4_low & !n_t_54x & !n_t_64x
+  # !mbct4_low & !n_t_64x & p4_racb_low
 
 !rd2_low =>
-    mbct4_low
-  # !n_t_55x
-  # n_t_64x
-  # p4_racb_low
-  # !gdollar_64 & !p4_rmr_low
+    !gdollar_64 & !p4_rmr_low
   # !n_t_158x & !p6_dispb_low
   # !p4_rxm_low & !p6_en9_low
   # !p2_rsb_low & sb1_low
+  # !mbct4_low & !n_t_55x & !n_t_64x
+  # !mbct4_low & !n_t_64x & p4_racb_low
 
 !rd3_low =>
     n_t_131x & n_t_132x
@@ -3083,148 +3071,148 @@ p6_usm_low.ck  =>
   # !n_t_61x & !n_t_66x & !p4_raca_low
 
 !rd5_low =>
-    mbct4_low
-  # !n_t_52x
-  # n_t_64x
-  # p1_enrf_low
-  # p4_racc_low
-  # n_t_168x & p2_suf_out
+    n_t_168x & p2_suf_out
   # !gdollar_62 & !p4_rmr_low
   # !n_t_161x & !p6_dispb_low
   # !p4_rxm_low & !p6_ebm_low
   # !n_t_169x & !p6_usm_low
-  # n_t_162x & !n_t_163x & p4_rdf_low & !p6_usm
-  # !n_t_163x & !p1_crf & p4_rdf_low & !p6_usm
-  # n_t_157x & !n_t_159x & !p4_rdf_low & !p6_usm
-  # !n_t_159x & !p1_crf & !p4_rdf_low & !p6_usm
-  # !n_t_162x & n_t_163x & p1_crf & p1_rr0 & p4_rdf_low
-  # n_t_162x & !n_t_163x & !p1_crf & p1_rr0 & p4_rdf_low
-  # n_t_162x & !n_t_163x & p1_rr0 & p1_rr1 & p4_rdf_low
-  # !n_t_163x & !p1_crf & p1_rr0 & p1_rr1 & p4_rdf_low
-  # !n_t_157x & n_t_159x & p1_crf & p1_rr0 & !p4_rdf_low
-  # n_t_157x & !n_t_159x & !p1_crf & p1_rr0 & !p4_rdf_low
-  # n_t_157x & !n_t_159x & p1_rr0 & p1_rr1 & !p4_rdf_low
-  # !n_t_159x & !p1_crf & p1_rr0 & p1_rr1 & !p4_rdf_low
-  # !n_t_162x & n_t_163x & p1_crf & p4_rdf_low & !p6_usm
-  # !n_t_157x & n_t_159x & p1_crf & !p4_rdf_low & !p6_usm
-  # !n_t_162x & !n_t_163x & p1_crf & !p1_rr0 & p4_rdf_low & p6_usm
-  # n_t_162x & n_t_163x & !p1_crf & !p1_rr0 & p4_rdf_low & p6_usm
-  # n_t_162x & n_t_163x & !p1_rr0 & p1_rr1 & p4_rdf_low & p6_usm
-  # n_t_163x & !p1_crf & !p1_rr0 & p1_rr1 & p4_rdf_low & p6_usm
-  # !n_t_162x & n_t_163x & p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
-  # n_t_163x & p1_crf & p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
-  # !n_t_162x & !n_t_163x & !p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
-  # !n_t_163x & p1_crf & !p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
-  # !n_t_157x & !n_t_159x & p1_crf & !p1_rr0 & !p4_rdf_low & p6_usm
-  # n_t_157x & n_t_159x & !p1_crf & !p1_rr0 & !p4_rdf_low & p6_usm
-  # n_t_157x & n_t_159x & !p1_rr0 & p1_rr1 & !p4_rdf_low & p6_usm
-  # n_t_159x & !p1_crf & !p1_rr0 & p1_rr1 & !p4_rdf_low & p6_usm
-  # !n_t_157x & n_t_159x & p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
-  # n_t_159x & p1_crf & p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
-  # !n_t_157x & !n_t_159x & !p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
-  # !n_t_159x & p1_crf & !p1_rr0 & !p1_rr1 & !p4_rdf_low & p6_usm
+  # !mbct4_low & !n_t_52x & !n_t_64x
+  # !mbct4_low & !n_t_64x & p4_racc_low
+  # n_t_162x & !n_t_163x & !p1_enrf_low & p4_rdf_low & !p6_usm
+  # !n_t_163x & !p1_crf & !p1_enrf_low & p4_rdf_low & !p6_usm
+  # n_t_157x & !n_t_159x & !p1_enrf_low & !p4_rdf_low & !p6_usm
+  # !n_t_159x & !p1_crf & !p1_enrf_low & !p4_rdf_low & !p6_usm
+  # !n_t_162x & n_t_163x & p1_crf & !p1_enrf_low & p1_rr0 & p4_rdf_low
+  # n_t_162x & !n_t_163x & !p1_crf & !p1_enrf_low & p1_rr0 & p4_rdf_low
+  # n_t_162x & !n_t_163x & !p1_enrf_low & p1_rr0 & p1_rr1 & p4_rdf_low
+  # !n_t_163x & !p1_crf & !p1_enrf_low & p1_rr0 & p1_rr1 & p4_rdf_low
+  # !n_t_157x & n_t_159x & p1_crf & !p1_enrf_low & p1_rr0 & !p4_rdf_low
+  # n_t_157x & !n_t_159x & !p1_crf & !p1_enrf_low & p1_rr0 & !p4_rdf_low
+  # n_t_157x & !n_t_159x & !p1_enrf_low & p1_rr0 & p1_rr1 & !p4_rdf_low
+  # !n_t_159x & !p1_crf & !p1_enrf_low & p1_rr0 & p1_rr1 & !p4_rdf_low
+  # !n_t_162x & n_t_163x & p1_crf & !p1_enrf_low & p4_rdf_low & !p6_usm
+  # !n_t_157x & n_t_159x & p1_crf & !p1_enrf_low & !p4_rdf_low & !p6_usm
+  # !n_t_162x & !n_t_163x & p1_crf & !p1_enrf_low & !p1_rr0 & p4_rdf_low & 
+      p6_usm
+  # n_t_162x & n_t_163x & !p1_crf & !p1_enrf_low & !p1_rr0 & p4_rdf_low & 
+      p6_usm
+  # n_t_162x & n_t_163x & !p1_enrf_low & !p1_rr0 & p1_rr1 & p4_rdf_low & 
+      p6_usm
+  # n_t_163x & !p1_crf & !p1_enrf_low & !p1_rr0 & p1_rr1 & p4_rdf_low & 
+      p6_usm
+  # !n_t_162x & n_t_163x & !p1_enrf_low & p1_rr0 & !p1_rr1 & p4_rdf_low & 
+      p6_usm
+  # n_t_163x & p1_crf & !p1_enrf_low & p1_rr0 & !p1_rr1 & p4_rdf_low & p6_usm
+  # !n_t_162x & !n_t_163x & !p1_enrf_low & !p1_rr0 & !p1_rr1 & p4_rdf_low & 
+      p6_usm
+  # !n_t_163x & p1_crf & !p1_enrf_low & !p1_rr0 & !p1_rr1 & p4_rdf_low & 
+      p6_usm
+  # !n_t_157x & !n_t_159x & p1_crf & !p1_enrf_low & !p1_rr0 & !p4_rdf_low & 
+      p6_usm
+  # n_t_157x & n_t_159x & !p1_crf & !p1_enrf_low & !p1_rr0 & !p4_rdf_low & 
+      p6_usm
+  # n_t_157x & n_t_159x & !p1_enrf_low & !p1_rr0 & p1_rr1 & !p4_rdf_low & 
+      p6_usm
+  # n_t_159x & !p1_crf & !p1_enrf_low & !p1_rr0 & p1_rr1 & !p4_rdf_low & 
+      p6_usm
+  # !n_t_157x & n_t_159x & !p1_enrf_low & p1_rr0 & !p1_rr1 & !p4_rdf_low & 
+      p6_usm
+  # n_t_159x & p1_crf & !p1_enrf_low & p1_rr0 & !p1_rr1 & !p4_rdf_low & 
+      p6_usm
+  # !n_t_157x & !n_t_159x & !p1_enrf_low & !p1_rr0 & !p1_rr1 & !p4_rdf_low & 
+      p6_usm
+  # !n_t_159x & p1_crf & !p1_enrf_low & !p1_rr0 & !p1_rr1 & !p4_rdf_low & 
+      p6_usm
 
 !rd6_low =>
-    mbct4_low
-  # n_t_64x
-  # p1_enrf_low
-  # !n_t_58x & !n_t_61x
-  # !n_t_56x & !p2_sf0
-  # !n_t_58x & p4_racb_low
-  # !n_t_61x & p4_racc_low
-  # p4_racb_low & p4_racc_low
+    !n_t_56x & !p2_sf0
   # !gdollar_52 & !p4_rlb_low
   # !gdollar_61 & !p4_rmr_low
   # p1_us0 & !p4_rusr_low
   # !p2_ifc_low & !p6_disf_low
   # !p4_rxm_low & !p6_maint_low
-  # n_t_6x & p1_rr2 & p2_dfc & p4_rdf_low
-  # !n_t_6x & p1_rr2 & !p2_dfc & p4_rdf_low
-  # n_t_6x & p1_rr2 & p2_ifc & !p4_rdf_low
-  # !n_t_6x & p1_rr2 & !p2_ifc & !p4_rdf_low
-  # n_t_6x & p2_dfc & p4_rdf_low & !p6_usm
-  # !n_t_6x & !p2_dfc & p4_rdf_low & !p6_usm
-  # n_t_6x & p2_ifc & !p4_rdf_low & !p6_usm
-  # !n_t_6x & !p2_ifc & !p4_rdf_low & !p6_usm
-  # !n_t_6x & !p1_rr2 & p2_dfc & p4_rdf_low & p6_usm
-  # n_t_6x & !p1_rr2 & !p2_dfc & p4_rdf_low & p6_usm
-  # !n_t_6x & !p1_rr2 & p2_ifc & !p4_rdf_low & p6_usm
-  # n_t_6x & !p1_rr2 & !p2_ifc & !p4_rdf_low & p6_usm
+  # !mbct4_low & !n_t_58x & !n_t_61x & !n_t_64x
+  # !mbct4_low & !n_t_58x & !n_t_64x & p4_racb_low
+  # !mbct4_low & !n_t_61x & !n_t_64x & p4_racc_low
+  # !mbct4_low & !n_t_64x & p4_racb_low & p4_racc_low
+  # n_t_6x & !p1_enrf_low & p1_rr2 & p2_dfc & p4_rdf_low
+  # !n_t_6x & !p1_enrf_low & p1_rr2 & !p2_dfc & p4_rdf_low
+  # n_t_6x & !p1_enrf_low & p1_rr2 & p2_ifc & !p4_rdf_low
+  # !n_t_6x & !p1_enrf_low & p1_rr2 & !p2_ifc & !p4_rdf_low
+  # n_t_6x & !p1_enrf_low & p2_dfc & p4_rdf_low & !p6_usm
+  # !n_t_6x & !p1_enrf_low & !p2_dfc & p4_rdf_low & !p6_usm
+  # n_t_6x & !p1_enrf_low & p2_ifc & !p4_rdf_low & !p6_usm
+  # !n_t_6x & !p1_enrf_low & !p2_ifc & !p4_rdf_low & !p6_usm
+  # !n_t_6x & !p1_enrf_low & !p1_rr2 & p2_dfc & p4_rdf_low & p6_usm
+  # n_t_6x & !p1_enrf_low & !p1_rr2 & !p2_dfc & p4_rdf_low & p6_usm
+  # !n_t_6x & !p1_enrf_low & !p1_rr2 & p2_ifc & !p4_rdf_low & p6_usm
+  # n_t_6x & !p1_enrf_low & !p1_rr2 & !p2_ifc & !p4_rdf_low & p6_usm
 
 !rd7_low =>
-    mbct4_low
-  # n_t_64x
-  # p1_enrf_low
-  # !n_t_59x & !n_t_62x
-  # !n_t_56x & !p2_sf1
-  # !n_t_59x & p4_racb_low
-  # !n_t_62x & p4_racc_low
-  # p4_racb_low & p4_racc_low
+    !n_t_56x & !p2_sf1
   # !gdollar_53 & !p4_rlb_low
   # !gdollar_60 & !p4_rmr_low
   # p1_rr0 & !p4_rrr_low
   # p1_us1 & !p4_rusr_low
   # !p2_ifb_low & !p6_disf_low
-  # !p2_dfb & p4_rdf_low & !p6_usm
-  # !p2_ifb & !p4_rdf_low & !p6_usm
-  # !p1_rr3 & !p1_rr4 & !p2_dfb & p4_rdf_low
-  # !p1_rr3 & !p2_dfa & !p2_dfb & p4_rdf_low
-  # !p1_rr3 & !p1_rr4 & !p2_ifb & !p4_rdf_low
-  # !p1_rr3 & !p2_ifa & !p2_ifb & !p4_rdf_low
-  # p1_rr3 & p1_rr4 & p2_dfa & !p2_dfb & p4_rdf_low
-  # p1_rr3 & p1_rr4 & p2_ifa & !p2_ifb & !p4_rdf_low
-  # p1_rr3 & !p1_rr4 & p2_dfb & p4_rdf_low & p6_usm
-  # p1_rr3 & !p2_dfa & p2_dfb & p4_rdf_low & p6_usm
-  # p1_rr3 & !p1_rr4 & p2_ifb & !p4_rdf_low & p6_usm
-  # p1_rr3 & !p2_ifa & p2_ifb & !p4_rdf_low & p6_usm
-  # !p1_rr3 & p1_rr4 & p2_dfa & p2_dfb & p4_rdf_low & p6_usm
-  # !p1_rr3 & p1_rr4 & p2_ifa & p2_ifb & !p4_rdf_low & p6_usm
+  # !mbct4_low & !n_t_59x & !n_t_62x & !n_t_64x
+  # !mbct4_low & !n_t_59x & !n_t_64x & p4_racb_low
+  # !mbct4_low & !n_t_62x & !n_t_64x & p4_racc_low
+  # !mbct4_low & !n_t_64x & p4_racb_low & p4_racc_low
+  # !p1_enrf_low & !p2_dfb & p4_rdf_low & !p6_usm
+  # !p1_enrf_low & !p2_ifb & !p4_rdf_low & !p6_usm
+  # !p1_enrf_low & !p1_rr3 & !p1_rr4 & !p2_dfb & p4_rdf_low
+  # !p1_enrf_low & !p1_rr3 & !p2_dfa & !p2_dfb & p4_rdf_low
+  # !p1_enrf_low & !p1_rr3 & !p1_rr4 & !p2_ifb & !p4_rdf_low
+  # !p1_enrf_low & !p1_rr3 & !p2_ifa & !p2_ifb & !p4_rdf_low
+  # !p1_enrf_low & p1_rr3 & p1_rr4 & p2_dfa & !p2_dfb & p4_rdf_low
+  # !p1_enrf_low & p1_rr3 & p1_rr4 & p2_ifa & !p2_ifb & !p4_rdf_low
+  # !p1_enrf_low & p1_rr3 & !p1_rr4 & p2_dfb & p4_rdf_low & p6_usm
+  # !p1_enrf_low & p1_rr3 & !p2_dfa & p2_dfb & p4_rdf_low & p6_usm
+  # !p1_enrf_low & p1_rr3 & !p1_rr4 & p2_ifb & !p4_rdf_low & p6_usm
+  # !p1_enrf_low & p1_rr3 & !p2_ifa & p2_ifb & !p4_rdf_low & p6_usm
+  # !p1_enrf_low & !p1_rr3 & p1_rr4 & p2_dfa & p2_dfb & p4_rdf_low & p6_usm
+  # !p1_enrf_low & !p1_rr3 & p1_rr4 & p2_ifa & p2_ifb & !p4_rdf_low & p6_usm
 
 !rd8_low =>
-    mbct4_low
-  # n_t_64x
-  # p1_enrf_low
-  # !n_t_60x & !n_t_63x
-  # !n_t_56x & !p2_sf2
-  # !n_t_60x & p4_racb_low
-  # !n_t_63x & p4_racc_low
-  # p4_racb_low & p4_racc_low
+    !n_t_56x & !p2_sf2
   # !gdollar_54 & !p4_rlb_low
   # !gdollar_59 & !p4_rmr_low
   # p1_rr1 & !p4_rrr_low
   # p1_us2 & !p4_rusr_low
   # !p2_ifa_low & !p6_disf_low
-  # !p1_rr4 & !p2_dfa & p4_rdf_low
-  # !p1_rr4 & !p2_ifa & !p4_rdf_low
-  # !p2_dfa & p4_rdf_low & !p6_usm
-  # !p2_ifa & !p4_rdf_low & !p6_usm
-  # p1_rr4 & p2_dfa & p4_rdf_low & p6_usm
-  # p1_rr4 & p2_ifa & !p4_rdf_low & p6_usm
+  # !mbct4_low & !n_t_60x & !n_t_63x & !n_t_64x
+  # !mbct4_low & !n_t_60x & !n_t_64x & p4_racb_low
+  # !mbct4_low & !n_t_63x & !n_t_64x & p4_racc_low
+  # !mbct4_low & !n_t_64x & p4_racb_low & p4_racc_low
+  # !p1_enrf_low & !p1_rr4 & !p2_dfa & p4_rdf_low
+  # !p1_enrf_low & !p1_rr4 & !p2_ifa & !p4_rdf_low
+  # !p1_enrf_low & !p2_dfa & p4_rdf_low & !p6_usm
+  # !p1_enrf_low & !p2_ifa & !p4_rdf_low & !p6_usm
+  # !p1_enrf_low & p1_rr4 & p2_dfa & p4_rdf_low & p6_usm
+  # !p1_enrf_low & p1_rr4 & p2_ifa & !p4_rdf_low & p6_usm
 
 !rd9_low =>
-    mbct4_low
-  # !n_t_58x
-  # n_t_64x
-  # p1_enrf_low
-  # p4_raca_low
-  # !n_t_56x & !p2_sf3
+    !n_t_56x & !p2_sf3
   # !gdollar_55 & !p4_rlb_low
   # !gdollar_6 & !p4_rmr_low
   # p1_rr2 & !p4_rrr_low
   # p1_us3 & !p4_rusr_low
   # !p2_dfc_low & !p6_disf_low
-  # n_t_162x & p1_crf & p1_rr1 & p4_rdf_low
-  # !n_t_162x & !p1_crf & p1_rr1 & p4_rdf_low
-  # n_t_157x & p1_crf & p1_rr1 & !p4_rdf_low
-  # !n_t_157x & !p1_crf & p1_rr1 & !p4_rdf_low
-  # n_t_162x & p1_crf & p4_rdf_low & !p6_usm
-  # !n_t_162x & !p1_crf & p4_rdf_low & !p6_usm
-  # n_t_157x & p1_crf & !p4_rdf_low & !p6_usm
-  # !n_t_157x & !p1_crf & !p4_rdf_low & !p6_usm
-  # !n_t_162x & p1_crf & !p1_rr1 & p4_rdf_low & p6_usm
-  # n_t_162x & !p1_crf & !p1_rr1 & p4_rdf_low & p6_usm
-  # !n_t_157x & p1_crf & !p1_rr1 & !p4_rdf_low & p6_usm
-  # n_t_157x & !p1_crf & !p1_rr1 & !p4_rdf_low & p6_usm
+  # !mbct4_low & !n_t_58x & !n_t_64x
+  # !mbct4_low & !n_t_64x & p4_raca_low
+  # n_t_162x & p1_crf & !p1_enrf_low & p1_rr1 & p4_rdf_low
+  # !n_t_162x & !p1_crf & !p1_enrf_low & p1_rr1 & p4_rdf_low
+  # n_t_157x & p1_crf & !p1_enrf_low & p1_rr1 & !p4_rdf_low
+  # !n_t_157x & !p1_crf & !p1_enrf_low & p1_rr1 & !p4_rdf_low
+  # n_t_162x & p1_crf & !p1_enrf_low & p4_rdf_low & !p6_usm
+  # !n_t_162x & !p1_crf & !p1_enrf_low & p4_rdf_low & !p6_usm
+  # n_t_157x & p1_crf & !p1_enrf_low & !p4_rdf_low & !p6_usm
+  # !n_t_157x & !p1_crf & !p1_enrf_low & !p4_rdf_low & !p6_usm
+  # !n_t_162x & p1_crf & !p1_enrf_low & !p1_rr1 & p4_rdf_low & p6_usm
+  # n_t_162x & !p1_crf & !p1_enrf_low & !p1_rr1 & p4_rdf_low & p6_usm
+  # !n_t_157x & p1_crf & !p1_enrf_low & !p1_rr1 & !p4_rdf_low & p6_usm
+  # n_t_157x & !p1_crf & !p1_enrf_low & !p1_rr1 & !p4_rdf_low & p6_usm
 
 sb0_low =>
     !gdollar_70
@@ -3835,7 +3823,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_26x                     307      N        1       0       3     
     n_t_27x                     308      N        2       0       3     
     n_t_28x                     309      N        1       0       3     
-    n_t_29x                     310      N        6       0       3     
+    n_t_29x                     310      N        4       0       3     
     n_t_2x                      311      N        1       0       3     
     n_t_30x                     312      N        1       0       3     
     n_t_31x                     313      N        1       0       3     
@@ -3912,7 +3900,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     n_t_66x                     347      N        1       0       3     
     n_t_68x                     348      N        2       0       3     
     n_t_69x                     349      N        3       0       3     
-    n_t_6x                      350      N        8       0       3     
+    n_t_6x                      350      N        7       0       3     
     n_t_70x                     351      N        1       0       3     
     n_t_71x                     352      N        1       0       3     
     n_t_72x                     353      N        14      0       3     
@@ -3951,7 +3939,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     p1_bfl0                     386      N        17      0       3     
     p1_bfl1                     387      N        7       0       3     
     p1_bfl2                     388      N        3       0       3     
-    p1_crf                      389      N        5       0       3     
+    p1_crf                      389      N        4       0       3     
     p1_enrf_low                 390      N        1       0       3     
     p1_over                     391      N        1       0       3     
     p1_rr0                      392      N        -       -       -     
@@ -4136,8 +4124,8 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     p4_3v                       482      N        1       0       3     
     p4_blbm_low                 483      N        1       0       3     
     p4_bts1                     484      N        1       0       3     
-    p4_cdf_low                  485      N        5       0       3     
-    p4_cif_low                  486      N        5       0       3     
+    p4_cdf_low                  485      N        3       0       3     
+    p4_cif_low                  486      N        3       0       3     
     p4_cint_low                 487      N        6       0       3     
     p4_ckdb                     488      N        2       0       3     
     p4_ckdf                     489      N        2       0       3     
@@ -4179,7 +4167,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     p4_int_inh_low              510      N        1       0       3     
     p4_jmp_or_jms               511      N        1       0       3     
     p4_lbm_low                  512      N        1       0       3     
-    p4_let_io_low               513      N        6       0       3     
+    p4_let_io_low               513      N        4       0       3     
     p4_lrr_low                  514      N        6       0       3     
     p4_lusr_low                 515      N        6       0       3     
     p4_lxa                      516      N        1       0       3     
@@ -4282,18 +4270,18 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     rbs1_low                    570      N        2       0       3     
     rbs2_low                    571      N        2       0       3     
     rbs3_low                    572      N        2       0       3     
-    rd0_low                     573      N        1       0       3     
+    rd0_low                     573      N        3       0       3     
     rd10_low                    574      N        8       0       3     
     rd11_low                    575      N        8       0       3     
-    rd1_low                     576      N        8       0       3     
-    rd2_low                     577      N        8       0       3     
+    rd1_low                     576      N        6       0       3     
+    rd2_low                     577      N        6       0       3     
     rd3_low                     578      N        7       0       3     
     rd4_low                     579      N        6       0       3     
-    rd5_low                     580      N        40      0       3     
-    rd6_low                     581      N        25      0       3     
-    rd7_low                     582      N        27      0       3     
-    rd8_low                     583      N        19      0       3     
-    rd9_low                     584      N        23      0       3     
+    rd5_low                     580      N        37      0       3     
+    rd6_low                     581      N        22      0       3     
+    rd7_low                     582      N        24      0       3     
+    rd8_low                     583      N        16      0       3     
+    rd9_low                     584      N        20      0       3     
     run_low                     0        V        -       -       -     
     sb0_low                     585      N        1       0       3     
     sb1_low                     586      N        1       0       3     

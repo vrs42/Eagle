@@ -17,15 +17,15 @@
 # What is done is that these are converted to an
 # open collector model:
 #   f = 'b'0;
-#   f.oe = !e1#!e2;
+#   f.oe = !e1&e2;
 # and all the relevant "oe" formulae are saved up
 # to be output at the end.
 #
 # The interface is a call to &ocassign, with the
 # lhs and rhs of:
-#   !f = !e1#!e2;
+#   !f = !e1&e2;
 # That is
-#   &ocassign("f", "!(e1)#!(e2)");
+#   &ocassign("f", "!(e1)&(e2)");
 #
 # For this to work, the signal must also be on the
 # list of known OC signals:
@@ -102,7 +102,7 @@ foreach $f (@ARGV) {
     next if $lh =~ /[.]oe$/;
     if (defined $code{"${lh}.oe"}) {
       print "  \$oc{$lh} = 1 if defined $lh;\n";
-      print "  &ocassign($lh, \"!($code{$lh})#!($code{\"$lh.oe\"})\") if defined $lh;\n";
+      print "  &ocassign($lh, \"!($code{$lh})&($code{\"$lh.oe\"})\") if defined $lh;\n";
     } else {
       $code = "";
       $code = " if defined $lh" if $lh =~ /pad/;
