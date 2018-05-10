@@ -1,0 +1,96 @@
+
+*******************************************************************************
+                                    sn7485
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          virtual  Library DLIB-h-40-1
+Created         Mon Apr 16 21:20:22 2018
+Name            sn7485 
+Partno          cpld 
+Revision        01 
+Date            4/15/2018 
+Designer        
+Company         
+Assembly        None 
+Location        E1 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+I =>
+    n3e , B3I , n2e , B2I , n1e , B1I , n0e , B0I , GTI , LTI , EQI
+
+O =>
+    gto , lto , eqo
+
+eqo =>
+    EQI & !n0e & !n1e & !n2e & !n3e
+
+gto =>
+    !EQI & !LTI & !n0e & !n1e & !n2e & !n3e
+  # !B0I & n0e & !n1e & !n2e & !n3e
+  # !B1I & n1e & !n2e & !n3e
+  # !B2I & n2e & !n3e
+  # !B3I & n3e
+
+lto =>
+    !EQI & !GTI & !n0e & !n1e & !n2e & !n3e
+  # B0I & n0e & !n1e & !n2e & !n3e
+  # B1I & n1e & !n2e & !n3e
+  # B2I & n2e & !n3e
+  # B3I & n3e
+
+n0e =>
+    A0I & !B0I
+  # !A0I & B0I
+
+n1e =>
+    A1I & !B1I
+  # !A1I & B1I
+
+n2e =>
+    A2I & !B2I
+  # !A2I & B2I
+
+n3e =>
+    A3I & !B3I
+  # !A3I & B3I
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    A0I                         10       V        -       -       -     
+    A1I                         12       V        -       -       -     
+    A2I                         13       V        -       -       -     
+    A3I                         15       V        -       -       -     
+    B0I                         9        V        -       -       -     
+    B1I                         11       V        -       -       -     
+    B2I                         14       V        -       -       -     
+    B3I                         1        V        -       -       -     
+    EQI                         3        V        -       -       -     
+    GTI                         4        V        -       -       -     
+    I                           0        F        -       -       -     
+    LTI                         2        V        -       -       -     
+    O                           0        F        -       -       -     
+    eqo                         6        V        1       0       4     
+    gto                         5        V        5       0       4     
+    lto                         7        V        5       0       4     
+    n0e                         201      N        2       0       4     
+    n1e                         202      N        2       0       4     
+    n2e                         203      N        2       0       4     
+    n3e                         204      N        2       0       4     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
