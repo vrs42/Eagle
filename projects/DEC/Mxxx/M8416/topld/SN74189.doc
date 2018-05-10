@@ -4,8 +4,8 @@
 *******************************************************************************
 
 CUPL(WM)        5.0a Serial# 60008009
-Device          virtual  Library DLIB-h-40-1
-Created         Sat Apr 07 23:53:05 2018
+Device          f1508isptqfp100  Library DLIB-h-40-2
+Created         Thu May 03 23:11:21 2018
 Name            sn7418p 
 Partno          cpld 
 Revision        01 
@@ -31,458 +31,458 @@ I =>
 d =>
     d1 , d2 , d3 , d4
 
-!d1 =>
-    A0 & A1 & A2 & A3 & !rp1
-  # !A0 & A1 & A2 & A3 & !ro1
-  # A0 & !A1 & A2 & A3 & !rn1
-  # !A0 & !A1 & A2 & A3 & !rm1
-  # A0 & A1 & !A2 & A3 & !rl1
-  # !A0 & A1 & !A2 & A3 & !rk1
-  # A0 & !A1 & !A2 & A3 & !rj1
-  # !A0 & !A1 & !A2 & A3 & !ri1
-  # A0 & A1 & A2 & !A3 & !rh1
-  # !A0 & A1 & A2 & !A3 & !rg1
-  # A0 & !A1 & A2 & !A3 & !rf1
-  # !A0 & !A1 & A2 & !A3 & !re1
-  # A0 & A1 & !A2 & !A3 & !rd1
-  # !A0 & A1 & !A2 & !A3 & !rc1
-  # A0 & !A1 & !A2 & !A3 & !rb1
-  # !A0 & !A1 & !A2 & !A3 & !ra1
+d1 =>
+    A0 & A1 & A2 & A3 & rp1
+  # !A0 & A1 & A2 & A3 & ro1
+  # A0 & !A1 & A2 & A3 & rn1
+  # !A0 & !A1 & A2 & A3 & rm1
+  # A0 & A1 & !A2 & A3 & rl1
+  # !A0 & A1 & !A2 & A3 & rk1
+  # A0 & !A1 & !A2 & A3 & rj1
+  # !A0 & !A1 & !A2 & A3 & ri1
+  # A0 & A1 & A2 & !A3 & rh1
+  # !A0 & A1 & A2 & !A3 & rg1
+  # A0 & !A1 & A2 & !A3 & rf1
+  # !A0 & !A1 & A2 & !A3 & re1
+  # A0 & A1 & !A2 & !A3 & rd1
+  # !A0 & A1 & !A2 & !A3 & rc1
+  # A0 & !A1 & !A2 & !A3 & rb1
+  # !A0 & !A1 & !A2 & !A3 & ra1
 
-!d2 =>
-    A0 & A1 & A2 & A3 & !rp2
-  # !A0 & A1 & A2 & A3 & !ro2
-  # A0 & !A1 & A2 & A3 & !rn2
-  # !A0 & !A1 & A2 & A3 & !rm2
-  # A0 & A1 & !A2 & A3 & !rl2
-  # !A0 & A1 & !A2 & A3 & !rk2
-  # A0 & !A1 & !A2 & A3 & !rj2
-  # !A0 & !A1 & !A2 & A3 & !ri2
-  # A0 & A1 & A2 & !A3 & !rh2
-  # !A0 & A1 & A2 & !A3 & !rg2
-  # A0 & !A1 & A2 & !A3 & !rf2
-  # !A0 & !A1 & A2 & !A3 & !re2
-  # A0 & A1 & !A2 & !A3 & !rd2
-  # !A0 & A1 & !A2 & !A3 & !rc2
-  # A0 & !A1 & !A2 & !A3 & !rb2
-  # !A0 & !A1 & !A2 & !A3 & !ra2
+d2 =>
+    A0 & A1 & A2 & A3 & rp2
+  # !A0 & A1 & A2 & A3 & ro2
+  # A0 & !A1 & A2 & A3 & rn2
+  # !A0 & !A1 & A2 & A3 & rm2
+  # A0 & A1 & !A2 & A3 & rl2
+  # !A0 & A1 & !A2 & A3 & rk2
+  # A0 & !A1 & !A2 & A3 & rj2
+  # !A0 & !A1 & !A2 & A3 & ri2
+  # A0 & A1 & A2 & !A3 & rh2
+  # !A0 & A1 & A2 & !A3 & rg2
+  # A0 & !A1 & A2 & !A3 & rf2
+  # !A0 & !A1 & A2 & !A3 & re2
+  # A0 & A1 & !A2 & !A3 & rd2
+  # !A0 & A1 & !A2 & !A3 & rc2
+  # A0 & !A1 & !A2 & !A3 & rb2
+  # !A0 & !A1 & !A2 & !A3 & ra2
 
-!d3 =>
-    A0 & A1 & A2 & A3 & !rp3
-  # !A0 & A1 & A2 & A3 & !ro3
-  # A0 & !A1 & A2 & A3 & !rn3
-  # !A0 & !A1 & A2 & A3 & !rm3
-  # A0 & A1 & !A2 & A3 & !rl3
-  # !A0 & A1 & !A2 & A3 & !rk3
-  # A0 & !A1 & !A2 & A3 & !rj3
-  # !A0 & !A1 & !A2 & A3 & !ri3
-  # A0 & A1 & A2 & !A3 & !rh3
-  # !A0 & A1 & A2 & !A3 & !rg3
-  # A0 & !A1 & A2 & !A3 & !rf3
-  # !A0 & !A1 & A2 & !A3 & !re3
-  # A0 & A1 & !A2 & !A3 & !rd3
-  # !A0 & A1 & !A2 & !A3 & !rc3
-  # A0 & !A1 & !A2 & !A3 & !rb3
-  # !A0 & !A1 & !A2 & !A3 & !ra3
+d3 =>
+    A0 & A1 & A2 & A3 & rp3
+  # !A0 & A1 & A2 & A3 & ro3
+  # A0 & !A1 & A2 & A3 & rn3
+  # !A0 & !A1 & A2 & A3 & rm3
+  # A0 & A1 & !A2 & A3 & rl3
+  # !A0 & A1 & !A2 & A3 & rk3
+  # A0 & !A1 & !A2 & A3 & rj3
+  # !A0 & !A1 & !A2 & A3 & ri3
+  # A0 & A1 & A2 & !A3 & rh3
+  # !A0 & A1 & A2 & !A3 & rg3
+  # A0 & !A1 & A2 & !A3 & rf3
+  # !A0 & !A1 & A2 & !A3 & re3
+  # A0 & A1 & !A2 & !A3 & rd3
+  # !A0 & A1 & !A2 & !A3 & rc3
+  # A0 & !A1 & !A2 & !A3 & rb3
+  # !A0 & !A1 & !A2 & !A3 & ra3
 
-!d4 =>
-    A0 & A1 & A2 & A3 & !rp4
-  # !A0 & A1 & A2 & A3 & !ro4
-  # A0 & !A1 & A2 & A3 & !rn4
-  # !A0 & !A1 & A2 & A3 & !rm4
-  # A0 & A1 & !A2 & A3 & !rl4
-  # !A0 & A1 & !A2 & A3 & !rk4
-  # A0 & !A1 & !A2 & A3 & !rj4
-  # !A0 & !A1 & !A2 & A3 & !ri4
-  # A0 & A1 & A2 & !A3 & !rh4
-  # !A0 & A1 & A2 & !A3 & !rg4
-  # A0 & !A1 & A2 & !A3 & !rf4
-  # !A0 & !A1 & A2 & !A3 & !re4
-  # A0 & A1 & !A2 & !A3 & !rd4
-  # !A0 & A1 & !A2 & !A3 & !rc4
-  # A0 & !A1 & !A2 & !A3 & !rb4
-  # !A0 & !A1 & !A2 & !A3 & !ra4
+d4 =>
+    A0 & A1 & A2 & A3 & rp4
+  # !A0 & A1 & A2 & A3 & ro4
+  # A0 & !A1 & A2 & A3 & rn4
+  # !A0 & !A1 & A2 & A3 & rm4
+  # A0 & A1 & !A2 & A3 & rl4
+  # !A0 & A1 & !A2 & A3 & rk4
+  # A0 & !A1 & !A2 & A3 & rj4
+  # !A0 & !A1 & !A2 & A3 & ri4
+  # A0 & A1 & A2 & !A3 & rh4
+  # !A0 & A1 & A2 & !A3 & rg4
+  # A0 & !A1 & A2 & !A3 & rf4
+  # !A0 & !A1 & A2 & !A3 & re4
+  # A0 & A1 & !A2 & !A3 & rd4
+  # !A0 & A1 & !A2 & !A3 & rc4
+  # A0 & !A1 & !A2 & !A3 & rb4
+  # !A0 & !A1 & !A2 & !A3 & ra4
 
-!ra1.l  =>
-    !I1
+ra1.l  =>
+    I1
 
 ra1.le  =>
     !A0 & !A1 & !A2 & !A3 & CE & WE
 
-!ra2.l  =>
-    !I2
+ra2.l  =>
+    I2
 
 ra2.le  =>
     !A0 & !A1 & !A2 & !A3 & CE & WE
 
-!ra3.l  =>
-    !I3
+ra3.l  =>
+    I3
 
 ra3.le  =>
     !A0 & !A1 & !A2 & !A3 & CE & WE
 
-!ra4.l  =>
-    !I4
+ra4.l  =>
+    I4
 
 ra4.le  =>
     !A0 & !A1 & !A2 & !A3 & CE & WE
 
-!rb1.l  =>
-    !I1
+rb1.l  =>
+    I1
 
 rb1.le  =>
     A0 & !A1 & !A2 & !A3 & CE & WE
 
-!rb2.l  =>
-    !I2
+rb2.l  =>
+    I2
 
 rb2.le  =>
     A0 & !A1 & !A2 & !A3 & CE & WE
 
-!rb3.l  =>
-    !I3
+rb3.l  =>
+    I3
 
 rb3.le  =>
     A0 & !A1 & !A2 & !A3 & CE & WE
 
-!rb4.l  =>
-    !I4
+rb4.l  =>
+    I4
 
 rb4.le  =>
     A0 & !A1 & !A2 & !A3 & CE & WE
 
-!rc1.l  =>
-    !I1
+rc1.l  =>
+    I1
 
 rc1.le  =>
     !A0 & A1 & !A2 & !A3 & CE & WE
 
-!rc2.l  =>
-    !I2
+rc2.l  =>
+    I2
 
 rc2.le  =>
     !A0 & A1 & !A2 & !A3 & CE & WE
 
-!rc3.l  =>
-    !I3
+rc3.l  =>
+    I3
 
 rc3.le  =>
     !A0 & A1 & !A2 & !A3 & CE & WE
 
-!rc4.l  =>
-    !I4
+rc4.l  =>
+    I4
 
 rc4.le  =>
     !A0 & A1 & !A2 & !A3 & CE & WE
 
-!rd1.l  =>
-    !I1
+rd1.l  =>
+    I1
 
 rd1.le  =>
     A0 & A1 & !A2 & !A3 & CE & WE
 
-!rd2.l  =>
-    !I2
+rd2.l  =>
+    I2
 
 rd2.le  =>
     A0 & A1 & !A2 & !A3 & CE & WE
 
-!rd3.l  =>
-    !I3
+rd3.l  =>
+    I3
 
 rd3.le  =>
     A0 & A1 & !A2 & !A3 & CE & WE
 
-!rd4.l  =>
-    !I4
+rd4.l  =>
+    I4
 
 rd4.le  =>
     A0 & A1 & !A2 & !A3 & CE & WE
 
-!re1.l  =>
-    !I1
+re1.l  =>
+    I1
 
 re1.le  =>
     !A0 & !A1 & A2 & !A3 & CE & WE
 
-!re2.l  =>
-    !I2
+re2.l  =>
+    I2
 
 re2.le  =>
     !A0 & !A1 & A2 & !A3 & CE & WE
 
-!re3.l  =>
-    !I3
+re3.l  =>
+    I3
 
 re3.le  =>
     !A0 & !A1 & A2 & !A3 & CE & WE
 
-!re4.l  =>
-    !I4
+re4.l  =>
+    I4
 
 re4.le  =>
     !A0 & !A1 & A2 & !A3 & CE & WE
 
-!rf1.l  =>
-    !I1
+rf1.l  =>
+    I1
 
 rf1.le  =>
     A0 & !A1 & A2 & !A3 & CE & WE
 
-!rf2.l  =>
-    !I2
+rf2.l  =>
+    I2
 
 rf2.le  =>
     A0 & !A1 & A2 & !A3 & CE & WE
 
-!rf3.l  =>
-    !I3
+rf3.l  =>
+    I3
 
 rf3.le  =>
     A0 & !A1 & A2 & !A3 & CE & WE
 
-!rf4.l  =>
-    !I4
+rf4.l  =>
+    I4
 
 rf4.le  =>
     A0 & !A1 & A2 & !A3 & CE & WE
 
-!rg1.l  =>
-    !I1
+rg1.l  =>
+    I1
 
 rg1.le  =>
     !A0 & A1 & A2 & !A3 & CE & WE
 
-!rg2.l  =>
-    !I2
+rg2.l  =>
+    I2
 
 rg2.le  =>
     !A0 & A1 & A2 & !A3 & CE & WE
 
-!rg3.l  =>
-    !I3
+rg3.l  =>
+    I3
 
 rg3.le  =>
     !A0 & A1 & A2 & !A3 & CE & WE
 
-!rg4.l  =>
-    !I4
+rg4.l  =>
+    I4
 
 rg4.le  =>
     !A0 & A1 & A2 & !A3 & CE & WE
 
-!rh1.l  =>
-    !I1
+rh1.l  =>
+    I1
 
 rh1.le  =>
     A0 & A1 & A2 & !A3 & CE & WE
 
-!rh2.l  =>
-    !I2
+rh2.l  =>
+    I2
 
 rh2.le  =>
     A0 & A1 & A2 & !A3 & CE & WE
 
-!rh3.l  =>
-    !I3
+rh3.l  =>
+    I3
 
 rh3.le  =>
     A0 & A1 & A2 & !A3 & CE & WE
 
-!rh4.l  =>
-    !I4
+rh4.l  =>
+    I4
 
 rh4.le  =>
     A0 & A1 & A2 & !A3 & CE & WE
 
-!ri1.l  =>
-    !I1
+ri1.l  =>
+    I1
 
 ri1.le  =>
     !A0 & !A1 & !A2 & A3 & CE & WE
 
-!ri2.l  =>
-    !I2
+ri2.l  =>
+    I2
 
 ri2.le  =>
     !A0 & !A1 & !A2 & A3 & CE & WE
 
-!ri3.l  =>
-    !I3
+ri3.l  =>
+    I3
 
 ri3.le  =>
     !A0 & !A1 & !A2 & A3 & CE & WE
 
-!ri4.l  =>
-    !I4
+ri4.l  =>
+    I4
 
 ri4.le  =>
     !A0 & !A1 & !A2 & A3 & CE & WE
 
-!rj1.l  =>
-    !I1
+rj1.l  =>
+    I1
 
 rj1.le  =>
     A0 & !A1 & !A2 & A3 & CE & WE
 
-!rj2.l  =>
-    !I2
+rj2.l  =>
+    I2
 
 rj2.le  =>
     A0 & !A1 & !A2 & A3 & CE & WE
 
-!rj3.l  =>
-    !I3
+rj3.l  =>
+    I3
 
 rj3.le  =>
     A0 & !A1 & !A2 & A3 & CE & WE
 
-!rj4.l  =>
-    !I4
+rj4.l  =>
+    I4
 
 rj4.le  =>
     A0 & !A1 & !A2 & A3 & CE & WE
 
-!rk1.l  =>
-    !I1
+rk1.l  =>
+    I1
 
 rk1.le  =>
     !A0 & A1 & !A2 & A3 & CE & WE
 
-!rk2.l  =>
-    !I2
+rk2.l  =>
+    I2
 
 rk2.le  =>
     !A0 & A1 & !A2 & A3 & CE & WE
 
-!rk3.l  =>
-    !I3
+rk3.l  =>
+    I3
 
 rk3.le  =>
     !A0 & A1 & !A2 & A3 & CE & WE
 
-!rk4.l  =>
-    !I4
+rk4.l  =>
+    I4
 
 rk4.le  =>
     !A0 & A1 & !A2 & A3 & CE & WE
 
-!rl1.l  =>
-    !I1
+rl1.l  =>
+    I1
 
 rl1.le  =>
     A0 & A1 & !A2 & A3 & CE & WE
 
-!rl2.l  =>
-    !I2
+rl2.l  =>
+    I2
 
 rl2.le  =>
     A0 & A1 & !A2 & A3 & CE & WE
 
-!rl3.l  =>
-    !I3
+rl3.l  =>
+    I3
 
 rl3.le  =>
     A0 & A1 & !A2 & A3 & CE & WE
 
-!rl4.l  =>
-    !I4
+rl4.l  =>
+    I4
 
 rl4.le  =>
     A0 & A1 & !A2 & A3 & CE & WE
 
-!rm1.l  =>
-    !I1
+rm1.l  =>
+    I1
 
 rm1.le  =>
     !A0 & !A1 & A2 & A3 & CE & WE
 
-!rm2.l  =>
-    !I2
+rm2.l  =>
+    I2
 
 rm2.le  =>
     !A0 & !A1 & A2 & A3 & CE & WE
 
-!rm3.l  =>
-    !I3
+rm3.l  =>
+    I3
 
 rm3.le  =>
     !A0 & !A1 & A2 & A3 & CE & WE
 
-!rm4.l  =>
-    !I4
+rm4.l  =>
+    I4
 
 rm4.le  =>
     !A0 & !A1 & A2 & A3 & CE & WE
 
-!rn1.l  =>
-    !I1
+rn1.l  =>
+    I1
 
 rn1.le  =>
     A0 & !A1 & A2 & A3 & CE & WE
 
-!rn2.l  =>
-    !I2
+rn2.l  =>
+    I2
 
 rn2.le  =>
     A0 & !A1 & A2 & A3 & CE & WE
 
-!rn3.l  =>
-    !I3
+rn3.l  =>
+    I3
 
 rn3.le  =>
     A0 & !A1 & A2 & A3 & CE & WE
 
-!rn4.l  =>
-    !I4
+rn4.l  =>
+    I4
 
 rn4.le  =>
     A0 & !A1 & A2 & A3 & CE & WE
 
-!ro1.l  =>
-    !I1
+ro1.l  =>
+    I1
 
 ro1.le  =>
     !A0 & A1 & A2 & A3 & CE & WE
 
-!ro2.l  =>
-    !I2
+ro2.l  =>
+    I2
 
 ro2.le  =>
     !A0 & A1 & A2 & A3 & CE & WE
 
-!ro3.l  =>
-    !I3
+ro3.l  =>
+    I3
 
 ro3.le  =>
     !A0 & A1 & A2 & A3 & CE & WE
 
-!ro4.l  =>
-    !I4
+ro4.l  =>
+    I4
 
 ro4.le  =>
     !A0 & A1 & A2 & A3 & CE & WE
 
-!rp1.l  =>
-    !I1
+rp1.l  =>
+    I1
 
 rp1.le  =>
     A0 & A1 & A2 & A3 & CE & WE
 
-!rp2.l  =>
-    !I2
+rp2.l  =>
+    I2
 
 rp2.le  =>
     A0 & A1 & A2 & A3 & CE & WE
 
-!rp3.l  =>
-    !I3
+rp3.l  =>
+    I3
 
 rp3.le  =>
     A0 & A1 & A2 & A3 & CE & WE
 
-!rp4.l  =>
-    !I4
+rp4.l  =>
+    I4
 
 rp4.le  =>
     A0 & A1 & A2 & A3 & CE & WE
@@ -497,215 +497,215 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
 --- --------            ---     ---     ----    ------  ------  -----   
 
     A                           0        F        -       -       -     
-    A0                          1        V        -       -       -     
-    A1                          15       V        -       -       -     
-    A2                          14       V        -       -       -     
-    A3                          13       V        -       -       -     
- !  CE                          2        V        -       -       -     
+    A0                          0        V        -       -       -     
+    A1                          0        V        -       -       -     
+    A2                          0        V        -       -       -     
+    A3                          0        V        -       -       -     
+ !  CE                          0        V        -       -       -     
     D                   oe      0        I        1       -       -     
     I                           0        F        -       -       -     
-    I1                          4        V        -       -       -     
-    I2                          6        V        -       -       -     
-    I3                          10       V        -       -       -     
-    I4                          12       V        -       -       -     
- !  WE                          3        V        -       -       -     
+    I1                          0        V        -       -       -     
+    I2                          0        V        -       -       -     
+    I3                          0        V        -       -       -     
+    I4                          0        V        -       -       -     
+ !  WE                          0        V        -       -       -     
     d                           0        F        -       -       -     
- !  d1                          5        V        16      0       4     
- !  d2                          7        V        16      0       4     
- !  d3                          9        V        16      0       4     
- !  d4                          11       V        16      0       4     
-    ra1                         201      N        -       -       -     
-    ra1                 l       201      M        1       0       4     
-    ra1                 le      201      M        1       0       4     
-    ra2                         202      N        -       -       -     
-    ra2                 l       202      M        1       0       4     
-    ra2                 le      202      M        1       0       4     
-    ra3                         203      N        -       -       -     
-    ra3                 l       203      M        1       0       4     
-    ra3                 le      203      M        1       0       4     
-    ra4                         204      N        -       -       -     
-    ra4                 l       204      M        1       0       4     
-    ra4                 le      204      M        1       0       4     
-    rb1                         205      N        -       -       -     
-    rb1                 l       205      M        1       0       4     
-    rb1                 le      205      M        1       0       4     
-    rb2                         206      N        -       -       -     
-    rb2                 l       206      M        1       0       4     
-    rb2                 le      206      M        1       0       4     
-    rb3                         207      N        -       -       -     
-    rb3                 l       207      M        1       0       4     
-    rb3                 le      207      M        1       0       4     
-    rb4                         208      N        -       -       -     
-    rb4                 l       208      M        1       0       4     
-    rb4                 le      208      M        1       0       4     
-    rc1                         209      N        -       -       -     
-    rc1                 l       209      M        1       0       4     
-    rc1                 le      209      M        1       0       4     
-    rc2                         210      N        -       -       -     
-    rc2                 l       210      M        1       0       4     
-    rc2                 le      210      M        1       0       4     
-    rc3                         211      N        -       -       -     
-    rc3                 l       211      M        1       0       4     
-    rc3                 le      211      M        1       0       4     
-    rc4                         212      N        -       -       -     
-    rc4                 l       212      M        1       0       4     
-    rc4                 le      212      M        1       0       4     
-    rd1                         213      N        -       -       -     
-    rd1                 l       213      M        1       0       4     
-    rd1                 le      213      M        1       0       4     
-    rd2                         214      N        -       -       -     
-    rd2                 l       214      M        1       0       4     
-    rd2                 le      214      M        1       0       4     
-    rd3                         215      N        -       -       -     
-    rd3                 l       215      M        1       0       4     
-    rd3                 le      215      M        1       0       4     
-    rd4                         216      N        -       -       -     
-    rd4                 l       216      M        1       0       4     
-    rd4                 le      216      M        1       0       4     
-    re1                         217      N        -       -       -     
-    re1                 l       217      M        1       0       4     
-    re1                 le      217      M        1       0       4     
-    re2                         218      N        -       -       -     
-    re2                 l       218      M        1       0       4     
-    re2                 le      218      M        1       0       4     
-    re3                         219      N        -       -       -     
-    re3                 l       219      M        1       0       4     
-    re3                 le      219      M        1       0       4     
-    re4                         220      N        -       -       -     
-    re4                 l       220      M        1       0       4     
-    re4                 le      220      M        1       0       4     
-    rf1                         221      N        -       -       -     
-    rf1                 l       221      M        1       0       4     
-    rf1                 le      221      M        1       0       4     
-    rf2                         222      N        -       -       -     
-    rf2                 l       222      M        1       0       4     
-    rf2                 le      222      M        1       0       4     
-    rf3                         223      N        -       -       -     
-    rf3                 l       223      M        1       0       4     
-    rf3                 le      223      M        1       0       4     
-    rf4                         224      N        -       -       -     
-    rf4                 l       224      M        1       0       4     
-    rf4                 le      224      M        1       0       4     
-    rg1                         225      N        -       -       -     
-    rg1                 l       225      M        1       0       4     
-    rg1                 le      225      M        1       0       4     
-    rg2                         226      N        -       -       -     
-    rg2                 l       226      M        1       0       4     
-    rg2                 le      226      M        1       0       4     
-    rg3                         227      N        -       -       -     
-    rg3                 l       227      M        1       0       4     
-    rg3                 le      227      M        1       0       4     
-    rg4                         228      N        -       -       -     
-    rg4                 l       228      M        1       0       4     
-    rg4                 le      228      M        1       0       4     
-    rh1                         229      N        -       -       -     
-    rh1                 l       229      M        1       0       4     
-    rh1                 le      229      M        1       0       4     
-    rh2                         230      N        -       -       -     
-    rh2                 l       230      M        1       0       4     
-    rh2                 le      230      M        1       0       4     
-    rh3                         231      N        -       -       -     
-    rh3                 l       231      M        1       0       4     
-    rh3                 le      231      M        1       0       4     
-    rh4                         232      N        -       -       -     
-    rh4                 l       232      M        1       0       4     
-    rh4                 le      232      M        1       0       4     
-    ri1                         233      N        -       -       -     
-    ri1                 l       233      M        1       0       4     
-    ri1                 le      233      M        1       0       4     
-    ri2                         234      N        -       -       -     
-    ri2                 l       234      M        1       0       4     
-    ri2                 le      234      M        1       0       4     
-    ri3                         235      N        -       -       -     
-    ri3                 l       235      M        1       0       4     
-    ri3                 le      235      M        1       0       4     
-    ri4                         236      N        -       -       -     
-    ri4                 l       236      M        1       0       4     
-    ri4                 le      236      M        1       0       4     
-    rj1                         237      N        -       -       -     
-    rj1                 l       237      M        1       0       4     
-    rj1                 le      237      M        1       0       4     
-    rj2                         238      N        -       -       -     
-    rj2                 l       238      M        1       0       4     
-    rj2                 le      238      M        1       0       4     
-    rj3                         239      N        -       -       -     
-    rj3                 l       239      M        1       0       4     
-    rj3                 le      239      M        1       0       4     
-    rj4                         240      N        -       -       -     
-    rj4                 l       240      M        1       0       4     
-    rj4                 le      240      M        1       0       4     
-    rk1                         241      N        -       -       -     
-    rk1                 l       241      M        1       0       4     
-    rk1                 le      241      M        1       0       4     
-    rk2                         242      N        -       -       -     
-    rk2                 l       242      M        1       0       4     
-    rk2                 le      242      M        1       0       4     
-    rk3                         243      N        -       -       -     
-    rk3                 l       243      M        1       0       4     
-    rk3                 le      243      M        1       0       4     
-    rk4                         244      N        -       -       -     
-    rk4                 l       244      M        1       0       4     
-    rk4                 le      244      M        1       0       4     
-    rl1                         245      N        -       -       -     
-    rl1                 l       245      M        1       0       4     
-    rl1                 le      245      M        1       0       4     
-    rl2                         246      N        -       -       -     
-    rl2                 l       246      M        1       0       4     
-    rl2                 le      246      M        1       0       4     
-    rl3                         247      N        -       -       -     
-    rl3                 l       247      M        1       0       4     
-    rl3                 le      247      M        1       0       4     
-    rl4                         248      N        -       -       -     
-    rl4                 l       248      M        1       0       4     
-    rl4                 le      248      M        1       0       4     
-    rm1                         249      N        -       -       -     
-    rm1                 l       249      M        1       0       4     
-    rm1                 le      249      M        1       0       4     
-    rm2                         250      N        -       -       -     
-    rm2                 l       250      M        1       0       4     
-    rm2                 le      250      M        1       0       4     
-    rm3                         251      N        -       -       -     
-    rm3                 l       251      M        1       0       4     
-    rm3                 le      251      M        1       0       4     
-    rm4                         252      N        -       -       -     
-    rm4                 l       252      M        1       0       4     
-    rm4                 le      252      M        1       0       4     
-    rn1                         253      N        -       -       -     
-    rn1                 l       253      M        1       0       4     
-    rn1                 le      253      M        1       0       4     
-    rn2                         254      N        -       -       -     
-    rn2                 l       254      M        1       0       4     
-    rn2                 le      254      M        1       0       4     
-    rn3                         255      N        -       -       -     
-    rn3                 l       255      M        1       0       4     
-    rn3                 le      255      M        1       0       4     
-    rn4                         256      N        -       -       -     
-    rn4                 l       256      M        1       0       4     
-    rn4                 le      256      M        1       0       4     
-    ro1                         257      N        -       -       -     
-    ro1                 l       257      M        1       0       4     
-    ro1                 le      257      M        1       0       4     
-    ro2                         258      N        -       -       -     
-    ro2                 l       258      M        1       0       4     
-    ro2                 le      258      M        1       0       4     
-    ro3                         259      N        -       -       -     
-    ro3                 l       259      M        1       0       4     
-    ro3                 le      259      M        1       0       4     
-    ro4                         260      N        -       -       -     
-    ro4                 l       260      M        1       0       4     
-    ro4                 le      260      M        1       0       4     
-    rp1                         261      N        -       -       -     
-    rp1                 l       261      M        1       0       4     
-    rp1                 le      261      M        1       0       4     
-    rp2                         262      N        -       -       -     
-    rp2                 l       262      M        1       0       4     
-    rp2                 le      262      M        1       0       4     
-    rp3                         263      N        -       -       -     
-    rp3                 l       263      M        1       0       4     
-    rp3                 le      263      M        1       0       4     
-    rp4                         264      N        -       -       -     
-    rp4                 l       264      M        1       0       4     
-    rp4                 le      264      M        1       0       4     
+ !  d1                          0        V        16      0       4     
+ !  d2                          0        V        16      0       4     
+ !  d3                          0        V        16      0       4     
+ !  d4                          0        V        16      0       4     
+    ra1                         101      N        -       -       -     
+    ra1                 l       101      M        1       0       4     
+    ra1                 le      101      M        1       0       4     
+    ra2                         102      N        -       -       -     
+    ra2                 l       102      M        1       0       4     
+    ra2                 le      102      M        1       0       4     
+    ra3                         103      N        -       -       -     
+    ra3                 l       103      M        1       0       4     
+    ra3                 le      103      M        1       0       4     
+    ra4                         104      N        -       -       -     
+    ra4                 l       104      M        1       0       4     
+    ra4                 le      104      M        1       0       4     
+    rb1                         105      N        -       -       -     
+    rb1                 l       105      M        1       0       4     
+    rb1                 le      105      M        1       0       4     
+    rb2                         106      N        -       -       -     
+    rb2                 l       106      M        1       0       4     
+    rb2                 le      106      M        1       0       4     
+    rb3                         107      N        -       -       -     
+    rb3                 l       107      M        1       0       4     
+    rb3                 le      107      M        1       0       4     
+    rb4                         108      N        -       -       -     
+    rb4                 l       108      M        1       0       4     
+    rb4                 le      108      M        1       0       4     
+    rc1                         109      N        -       -       -     
+    rc1                 l       109      M        1       0       4     
+    rc1                 le      109      M        1       0       4     
+    rc2                         110      N        -       -       -     
+    rc2                 l       110      M        1       0       4     
+    rc2                 le      110      M        1       0       4     
+    rc3                         111      N        -       -       -     
+    rc3                 l       111      M        1       0       4     
+    rc3                 le      111      M        1       0       4     
+    rc4                         112      N        -       -       -     
+    rc4                 l       112      M        1       0       4     
+    rc4                 le      112      M        1       0       4     
+    rd1                         113      N        -       -       -     
+    rd1                 l       113      M        1       0       4     
+    rd1                 le      113      M        1       0       4     
+    rd2                         114      N        -       -       -     
+    rd2                 l       114      M        1       0       4     
+    rd2                 le      114      M        1       0       4     
+    rd3                         115      N        -       -       -     
+    rd3                 l       115      M        1       0       4     
+    rd3                 le      115      M        1       0       4     
+    rd4                         116      N        -       -       -     
+    rd4                 l       116      M        1       0       4     
+    rd4                 le      116      M        1       0       4     
+    re1                         117      N        -       -       -     
+    re1                 l       117      M        1       0       4     
+    re1                 le      117      M        1       0       4     
+    re2                         118      N        -       -       -     
+    re2                 l       118      M        1       0       4     
+    re2                 le      118      M        1       0       4     
+    re3                         119      N        -       -       -     
+    re3                 l       119      M        1       0       4     
+    re3                 le      119      M        1       0       4     
+    re4                         120      N        -       -       -     
+    re4                 l       120      M        1       0       4     
+    re4                 le      120      M        1       0       4     
+    rf1                         121      N        -       -       -     
+    rf1                 l       121      M        1       0       4     
+    rf1                 le      121      M        1       0       4     
+    rf2                         122      N        -       -       -     
+    rf2                 l       122      M        1       0       4     
+    rf2                 le      122      M        1       0       4     
+    rf3                         123      N        -       -       -     
+    rf3                 l       123      M        1       0       4     
+    rf3                 le      123      M        1       0       4     
+    rf4                         124      N        -       -       -     
+    rf4                 l       124      M        1       0       4     
+    rf4                 le      124      M        1       0       4     
+    rg1                         125      N        -       -       -     
+    rg1                 l       125      M        1       0       4     
+    rg1                 le      125      M        1       0       4     
+    rg2                         126      N        -       -       -     
+    rg2                 l       126      M        1       0       4     
+    rg2                 le      126      M        1       0       4     
+    rg3                         127      N        -       -       -     
+    rg3                 l       127      M        1       0       4     
+    rg3                 le      127      M        1       0       4     
+    rg4                         128      N        -       -       -     
+    rg4                 l       128      M        1       0       4     
+    rg4                 le      128      M        1       0       4     
+    rh1                         129      N        -       -       -     
+    rh1                 l       129      M        1       0       4     
+    rh1                 le      129      M        1       0       4     
+    rh2                         130      N        -       -       -     
+    rh2                 l       130      M        1       0       4     
+    rh2                 le      130      M        1       0       4     
+    rh3                         131      N        -       -       -     
+    rh3                 l       131      M        1       0       4     
+    rh3                 le      131      M        1       0       4     
+    rh4                         132      N        -       -       -     
+    rh4                 l       132      M        1       0       4     
+    rh4                 le      132      M        1       0       4     
+    ri1                         133      N        -       -       -     
+    ri1                 l       133      M        1       0       4     
+    ri1                 le      133      M        1       0       4     
+    ri2                         134      N        -       -       -     
+    ri2                 l       134      M        1       0       4     
+    ri2                 le      134      M        1       0       4     
+    ri3                         135      N        -       -       -     
+    ri3                 l       135      M        1       0       4     
+    ri3                 le      135      M        1       0       4     
+    ri4                         136      N        -       -       -     
+    ri4                 l       136      M        1       0       4     
+    ri4                 le      136      M        1       0       4     
+    rj1                         137      N        -       -       -     
+    rj1                 l       137      M        1       0       4     
+    rj1                 le      137      M        1       0       4     
+    rj2                         138      N        -       -       -     
+    rj2                 l       138      M        1       0       4     
+    rj2                 le      138      M        1       0       4     
+    rj3                         139      N        -       -       -     
+    rj3                 l       139      M        1       0       4     
+    rj3                 le      139      M        1       0       4     
+    rj4                         140      N        -       -       -     
+    rj4                 l       140      M        1       0       4     
+    rj4                 le      140      M        1       0       4     
+    rk1                         141      N        -       -       -     
+    rk1                 l       141      M        1       0       4     
+    rk1                 le      141      M        1       0       4     
+    rk2                         142      N        -       -       -     
+    rk2                 l       142      M        1       0       4     
+    rk2                 le      142      M        1       0       4     
+    rk3                         143      N        -       -       -     
+    rk3                 l       143      M        1       0       4     
+    rk3                 le      143      M        1       0       4     
+    rk4                         144      N        -       -       -     
+    rk4                 l       144      M        1       0       4     
+    rk4                 le      144      M        1       0       4     
+    rl1                         145      N        -       -       -     
+    rl1                 l       145      M        1       0       4     
+    rl1                 le      145      M        1       0       4     
+    rl2                         146      N        -       -       -     
+    rl2                 l       146      M        1       0       4     
+    rl2                 le      146      M        1       0       4     
+    rl3                         147      N        -       -       -     
+    rl3                 l       147      M        1       0       4     
+    rl3                 le      147      M        1       0       4     
+    rl4                         148      N        -       -       -     
+    rl4                 l       148      M        1       0       4     
+    rl4                 le      148      M        1       0       4     
+    rm1                         149      N        -       -       -     
+    rm1                 l       149      M        1       0       4     
+    rm1                 le      149      M        1       0       4     
+    rm2                         150      N        -       -       -     
+    rm2                 l       150      M        1       0       4     
+    rm2                 le      150      M        1       0       4     
+    rm3                         151      N        -       -       -     
+    rm3                 l       151      M        1       0       4     
+    rm3                 le      151      M        1       0       4     
+    rm4                         152      N        -       -       -     
+    rm4                 l       152      M        1       0       4     
+    rm4                 le      152      M        1       0       4     
+    rn1                         153      N        -       -       -     
+    rn1                 l       153      M        1       0       4     
+    rn1                 le      153      M        1       0       4     
+    rn2                         154      N        -       -       -     
+    rn2                 l       154      M        1       0       4     
+    rn2                 le      154      M        1       0       4     
+    rn3                         155      N        -       -       -     
+    rn3                 l       155      M        1       0       4     
+    rn3                 le      155      M        1       0       4     
+    rn4                         156      N        -       -       -     
+    rn4                 l       156      M        1       0       4     
+    rn4                 le      156      M        1       0       4     
+    ro1                         157      N        -       -       -     
+    ro1                 l       157      M        1       0       4     
+    ro1                 le      157      M        1       0       4     
+    ro2                         158      N        -       -       -     
+    ro2                 l       158      M        1       0       4     
+    ro2                 le      158      M        1       0       4     
+    ro3                         159      N        -       -       -     
+    ro3                 l       159      M        1       0       4     
+    ro3                 le      159      M        1       0       4     
+    ro4                         160      N        -       -       -     
+    ro4                 l       160      M        1       0       4     
+    ro4                 le      160      M        1       0       4     
+    rp1                         161      N        -       -       -     
+    rp1                 l       161      M        1       0       4     
+    rp1                 le      161      M        1       0       4     
+    rp2                         162      N        -       -       -     
+    rp2                 l       162      M        1       0       4     
+    rp2                 le      162      M        1       0       4     
+    rp3                         163      N        -       -       -     
+    rp3                 l       163      M        1       0       4     
+    rp3                 le      163      M        1       0       4     
+    rp4                         164      N        -       -       -     
+    rp4                 l       164      M        1       0       4     
+    rp4                 le      164      M        1       0       4     
 
 
 LEGEND    D : default variable         F : field      G : group

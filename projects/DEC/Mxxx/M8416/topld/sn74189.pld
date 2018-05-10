@@ -9,22 +9,22 @@ Location E1 ;
 Device   f1508isptqfp100;
 
 /* Input Pins */
-pin  1 = A0;
-pin 15 = A1;
-pin 14 = A2;
-pin 13 = A3;
-pin  2 = !CE;
-pin  3 = !WE;
-pin  4 = I1;
-pin  6 = I2;
-pin 10 = I3;
-pin 12 = I4;
+pin  = A0;
+pin  = A1;
+pin  = A2;
+pin  = A3;
+pin  = !CE;
+pin  = !WE;
+pin  = I1;
+pin  = I2;
+pin  = I3;
+pin  = I4;
 
 /* Output Pins */
-pin  5 = !d1;
-pin  7 = !d2;
-pin  9 = !d3;
-pin 11 = !d4;
+pin  = !d1;
+pin  = !d2;
+pin  = !d3;
+pin  = !d4;
 
 
 node [ra1..4];
