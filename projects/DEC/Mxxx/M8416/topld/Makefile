@@ -1,8 +1,8 @@
 #
 # Create PLD files for M8416 schematics.
 #
-CUPL	= c:/Wincupl/WinCupl/Wincupl
-ALL	= M8416C.doc M8416P.doc
+CUPL	= c:/Wincupl/Shared/cupl.exe -jelxbm3qu c:/wincupl/Shared/cupl.dl
+ALL	= M8416C.doc M8416P.doc M8416S.doc M8416V1.doc
 PINS	= $(ALL:.doc=pins.txt)
 PRTS	= $(ALL:.doc=prts.txt)
 LBRPL	= lbr.pl
@@ -14,10 +14,17 @@ all:	$(ALL)
 %.pld:	%prts.txt %pins.txt topld.pl lbr.pl
 	./topld.pl $*
 
+M8416V1.pld:	M8416V1prts.txt M8416V1pins.txt topld.pl lbr.pl
+	./topld.pl M8416V1
+	./smaller.pl $@ >v1
+	./smaller.pl >$@ v1
+
+M8416S.pld:
+
 %.doc:	%.pld
-#	echo $(CUPL) -elxbm4 $<
-	@echo "You must (re)compile $?!"
-	@exit 1
+	$(CUPL) virtual $<
+#	@echo "You must (re)compile $?!"
+#	@exit 1
 
 %pins.txt: ../%.sch
 	@echo "You must (re)export $<!"

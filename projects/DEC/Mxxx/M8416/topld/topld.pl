@@ -1700,8 +1700,8 @@ Assembly None ;\r
 Location E1 ;\r
 Device   f1508isptqfp100;\r
 HERE
-print "\n\$DEFINE OPTIMIZE\r\n";
-print "\n\$UNDEF  OPTIMIZE\r\n";
+print "\r\n\$DEFINE OPTIMIZE\r\n";
+print "\r\n\$UNDEF  OPTIMIZE\r\n";
 print "\r\n";
 print "/* Input Pins */\r\n";
 foreach (sort keys %signals) {

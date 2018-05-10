@@ -1,3 +1,5 @@
 KT8A 128K Memory Management Board
 <UL>
 <LI><b>M8416C</b> needs a drawing.</LI>
+<LI><b>M8416P</b> is M8416C with logic loops replaced with latches.</LI>
+<LI><b>M8416V1</b> is M8416P trimmed to fit within a single ATF1508 CPLD.</LI>
