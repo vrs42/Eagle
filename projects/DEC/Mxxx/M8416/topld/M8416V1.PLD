@@ -222,6 +222,8 @@ node n_t_93x;
 node n_t_95x;
 node n_t_97x;
 node n_t_9x;
+$ENDIF
+$IFNDEF NOPTIMIZE
 node p1_3v;
 node p1_bfl0;
 node p1_bfl1;
