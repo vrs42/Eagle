@@ -3,19 +3,20 @@
 
 Name     M8416V1 ;
 PartNo   cpld ;
-Date     5/9/2018 ;
+Date     5/17/2018 ;
 Revision 01 ;
 Designer  ;
 Company   ;
 Assembly None ;
 Location E1 ;
-Device   f1508isptqfp100;
+Device   f1508ispplcc84;
 
 $DEFINE OPTIMIZE
 
 $UNDEF  NOPTIMIZE
 
 /* Input Pins */
+pin = cpma_disable_low;
 pin = d_low;
 pin = f_low;
 pin = f_set_low;
@@ -47,7 +48,6 @@ pin = pause_low;
 pin = power_ok_low;
 pin = pulse_la;
 pin = run_low;
-pin = tp2;
 pin = tp3;
 pin = tp4;
 pin = ts1_low;
@@ -55,10 +55,8 @@ pin = ts3_low;
 pin = ts4_low;
 
 /* Output Pins */
-pin = break_in_prog_low;
 pin = c0_low;
 pin = c1_low;
-pin = cpma_disable_low;
 pin = data00_low;
 pin = data01_low;
 pin = data02_low;
@@ -76,14 +74,10 @@ pin = ema1_low;
 pin = ema2_low;
 pin = int_rqst_low;
 pin = internal_io;
-pin = msirdis_low;
 pin = n_t_37x;
-pin = p6_bs0_low;
-pin = p6_bs1_low;
-pin = p6_bs2_low;
-pin = p6_bs3_low;
 pin = skip_low;
 pin = user_mode_low;
+
 node gdollar_0;
 node gdollar_1;
 node gdollar_2;
@@ -96,10 +90,8 @@ node p4_usint_low;
 node n_t_168x;
 node p6_usm_low;
 node n_t_176x;
-node p3_mbk;
 node p2_elar_low;
 node p2_emaen_low;
-node p6_prup;
 node gdollar_5;
 node gdollar_6;
 node gdollar_8;
@@ -139,14 +131,6 @@ node p2_sf2;
 node p2_sf3;
 node p2_sf4;
 node p2_sf5;
-node gdollar_19;
-node gdollar_20;
-node gdollar_21;
-node gdollar_22;
-node gdollar_23;
-node gdollar_24;
-node gdollar_25;
-node gdollar_26;
 
 /* Internal nodes */
 $IFNDEF OPTIMIZE
@@ -191,10 +175,6 @@ node n_t_18x;
 node n_t_19x;
 node n_t_1x;
 node n_t_20x;
-node n_t_21x;
-node n_t_23x;
-node n_t_24x;
-node n_t_25x;
 node n_t_27x;
 node n_t_29x;
 node n_t_2x;
@@ -208,7 +188,6 @@ node n_t_40x;
 node n_t_42x;
 node n_t_49x;
 node n_t_50x;
-node n_t_5x;
 node n_t_69x;
 node n_t_6x;
 node n_t_72x;
@@ -274,10 +253,6 @@ node p4_rusr_low;
 node p4_sint_low;
 node p4_suf_low;
 node p6_disf_low;
-node rbs0_low;
-node rbs1_low;
-node rbs2_low;
-node rbs3_low;
 node rd0_low;
 node rd10_low;
 node rd11_low;
@@ -390,7 +365,6 @@ gdollar_2.oe = !p2_elar_low;
 
 /* e4: n8881n */
 /* rd0_low = !(!link_low & n_t_27x); */
-/* break_in_prog_low = !p3_mbk; */
 
 /* e5: sn7404 */
 
@@ -481,13 +455,10 @@ n_t_135x = !(tp3 & p4_new_fld);
 n_t_136x = !(tp3 & !p4_cuf_low);
 
 /* e19: n8881n */
-/* msirdis_low = !p3_mbk; */
-/* cpma_disable_low = !p3_mbk; */
 /* c1_low = c1_low; */
 /* c0_low = c0_low; */
 
 /* e20: sn7401 */
-/* n_t_77x = !(!ts4_low & p3_mbk); */
 /* n_t_77x = !(p4_bts1 & ind2_low); */
 /* n_t_77x = !(n_t_72x & !ts3_low); */
 
@@ -519,7 +490,6 @@ gdollar_4.ck = 'b'0;
 gdollar_4.d = 'b'0;
 
 /* e27: sn7411 */
-n_t_5x = tp2 & !initialize & !initialize;
 
 /* e28: dec23440a2 */
 /* p4_cif_low = !(!(md10_low
@@ -669,12 +639,6 @@ p4_lxa = !(key_control_low
 
 /* e53: sp384n */
 
-/* e55: sn74367 */
-/* rbs0_low = !(!p6_prup); */
-/* rbs0_low = !(!p6_prup); */
-/* p6_bs0_low = !(!p6_prup); */
-/* p6_bs0_low = !(!p6_prup); */
-
 /* e56: sn7410 */
 p2_suf_out = !(p4_gtf_low & p4_rib_low & p4_gts_low);
 !n_t_16x = !(n_t_135x & n_t_136x & n_t_134x);
@@ -701,10 +665,6 @@ n_t_176x.ap = !p4_cumb_low;
 n_t_176x.d = !n_t_174x;
 n_t_176x.ck = p4_ckufb;
 n_t_176x.ar = !n_t_175x;
-p3_mbk.ar = !n_t_5x;
-p3_mbk.d = 'b'0;
-p3_mbk.ck = 'b'0;
-p3_mbk.ap = 'b'0;
 
 /* e61: ds8640n */
 p4_jmp_or_jms = !(!ir1_low
@@ -727,12 +687,6 @@ p2_emaen_low.ar = !n_t_50x;
 /* e64: sn7402 */
 n_t_33x = !(p4_let_io_low
           # ts3_low);
-
-/* e65: sn7474 */
-p6_prup.ap = p4_plxa_low;
-p6_prup.d = 'b'1;
-p6_prup.ck = tp4;
-p6_prup.ar = !p4_pclr_low;
 
 /* e66: sn7400 */
 n_t_106x = !(p3_bd & !p4_jmp_or_jms);
@@ -1142,66 +1096,6 @@ p2_sf5.d = p2_dfa_low;
 
 /* e115: sn7404 */
 
-/* e120: sn74139 */
-!n_t_21x = [!data01_low,!data02_low]:'b'00;
-!n_t_23x = [!data01_low,!data02_low]:'b'01;
-!n_t_24x = [!data01_low,!data02_low]:'b'10;
-!n_t_25x = [!data01_low,!data02_low]:'b'11;
-
-/* e121: sn74173 */
-gdollar_19.ar = p4_pclr;
-gdollar_19.ck = !p4_plxa_low;
-gdollar_19.ce = 'b'1;
-gdollar_19.d = n_t_25x;
-gdollar_19.oe = !p2_elar_low;
-/* p6_bs3_low = !(!gdollar_19 & !p2_elar_low & !p2_elar_low); */
-gdollar_20.ar = p4_pclr;
-gdollar_20.ck = !p4_plxa_low;
-gdollar_20.ce = 'b'1;
-gdollar_20.d = n_t_24x;
-gdollar_20.oe = !p2_elar_low;
-/* p6_bs2_low = !(!gdollar_20 & !p2_elar_low & !p2_elar_low); */
-gdollar_21.ar = p4_pclr;
-gdollar_21.ck = !p4_plxa_low;
-gdollar_21.ce = 'b'1;
-gdollar_21.d = n_t_23x;
-gdollar_21.oe = !p2_elar_low;
-/* p6_bs1_low = !(!gdollar_21 & !p2_elar_low & !p2_elar_low); */
-gdollar_22.ar = p4_pclr;
-gdollar_22.ck = !p4_plxa_low;
-gdollar_22.ce = 'b'1;
-gdollar_22.d = n_t_21x;
-gdollar_22.oe = !p2_elar_low;
-/* p6_bs0_low = !(!gdollar_22 & !p2_elar_low & !p2_elar_low); */
-
-/* e122: sn74173 */
-gdollar_23.ar = 'b'0;
-gdollar_23.ck = !p4_plxa_low;
-gdollar_23.ce = 'b'1;
-gdollar_23.d = n_t_25x;
-gdollar_23.oe = !p2_elar_low;
-/* rbs3_low = !(!gdollar_23 & !p2_elar_low & !p2_elar_low); */
-gdollar_24.ar = 'b'0;
-gdollar_24.ck = !p4_plxa_low;
-gdollar_24.ce = 'b'1;
-gdollar_24.d = n_t_24x;
-gdollar_24.oe = !p2_elar_low;
-/* rbs2_low = !(!gdollar_24 & !p2_elar_low & !p2_elar_low); */
-gdollar_25.ar = 'b'0;
-gdollar_25.ck = !p4_plxa_low;
-gdollar_25.ce = 'b'1;
-gdollar_25.d = n_t_23x;
-gdollar_25.oe = !p2_elar_low;
-/* rbs1_low = !(!gdollar_25 & !p2_elar_low & !p2_elar_low); */
-gdollar_26.ar = 'b'0;
-gdollar_26.ck = !p4_plxa_low;
-gdollar_26.ce = 'b'1;
-gdollar_26.d = n_t_21x;
-gdollar_26.oe = !p2_elar_low;
-/* rbs0_low = !(!gdollar_26 & !p2_elar_low & !p2_elar_low); */
-
-/* j1: header */
-
 /* r1: r_us_ */
 rd4_low = 'b'1;
 
@@ -1225,8 +1119,6 @@ rd2_low = 'b'1;
 rd1_low = 'b'1;
 
 /* r10: r_us_ */
-
-/* r11: r_us_ */
 
 /* r12: r_us_ */
 
@@ -1276,23 +1168,11 @@ p2_3v = 'b'1;
 
 /* r35: r_us_ */
 
-/* r37: r_us_ */
-
-/* r38: r_us_ */
-
-/* r39: r_us_ */
-
 /* Open collector 'wire-or's */
-property atmel {open_collector= break_in_prog_low};
-!break_in_prog_low = p3_mbk;
-break_in_prog_low.oe = p3_mbk;
 property atmel {open_collector= c0_low};
 c0_low.oe = !c0_low;
 property atmel {open_collector= c1_low};
 c1_low.oe = !c1_low;
-property atmel {open_collector= cpma_disable_low};
-!cpma_disable_low = p3_mbk;
-cpma_disable_low.oe = p3_mbk;
 property atmel {open_collector= data00_low};
 !data00_low = (!rd0_low & n_t_77x & n_t_77x);
 data00_low.oe = (!rd0_low & n_t_77x & n_t_77x);
@@ -1351,9 +1231,6 @@ int_rqst_low.oe = (!n_t_102x)
                 # (!p4_usint_low);
 property atmel {open_collector= internal_io};
 internal_io.oe = !internal_io;
-property atmel {open_collector= msirdis_low};
-!msirdis_low = p3_mbk;
-msirdis_low.oe = p3_mbk;
 !n_t_114x = (!(!(p4_cif_low & p4_rtf_low & !n_t_125x)));
 !n_t_115x = (!(!(p4_cif_low & !n_t_125x)));
 !n_t_116x = (!(!p4_new_fld));
@@ -1451,8 +1328,7 @@ c0_low = (!(!(n_t_69x & md03_low & !p3_bpause & !p6_usm_low
             # !p3_bpause & p6_usm_low
             # !n_t_69x & !p3_bpause
             # !md03_low)));
-!n_t_77x = (!ts4_low & p3_mbk)
-           # (p4_bts1 & ind2_low)
+!n_t_77x = (p4_bts1 & ind2_low)
            # (n_t_72x & !ts3_low);
 !p1_bfl0 = (!(!(!md06_low & !md07_low & !md08_low & !p1_rr2 & !p1_rr3 & p1_rr4 & !p6_usm_low
             # md06_low & md07_low & !md08_low & p1_rr2 & p1_rr3 & p1_rr4
@@ -1512,28 +1388,6 @@ c0_low = (!(!(n_t_69x & md03_low & !p3_bpause & !p6_usm_low
                 # md04_low & md09_low & !n_t_89x & p4_cdf_low & p4_cif_low
                 # md04_low & n_t_89x & p4_cdf_low & p4_cif_low
                 # !md04_low & p4_cdf_low & p4_cif_low) & (!(!p3_cfrom_low & !p3_e2cfrom_low)));
-property atmel {open_collector= p6_bs0_low};
-!p6_bs0_low = (!p6_prup)
-              # (!p6_prup)
-              # (!gdollar_22 & !p2_elar_low & !p2_elar_low);
-p6_bs0_low.oe = (!p6_prup)
-              # (!p6_prup)
-              # (!gdollar_22 & !p2_elar_low & !p2_elar_low);
-property atmel {open_collector= p6_bs1_low};
-!p6_bs1_low = (!gdollar_21 & !p2_elar_low & !p2_elar_low);
-p6_bs1_low.oe = (!gdollar_21 & !p2_elar_low & !p2_elar_low);
-property atmel {open_collector= p6_bs2_low};
-!p6_bs2_low = (!gdollar_20 & !p2_elar_low & !p2_elar_low);
-p6_bs2_low.oe = (!gdollar_20 & !p2_elar_low & !p2_elar_low);
-property atmel {open_collector= p6_bs3_low};
-!p6_bs3_low = (!gdollar_19 & !p2_elar_low & !p2_elar_low);
-p6_bs3_low.oe = (!gdollar_19 & !p2_elar_low & !p2_elar_low);
-!rbs0_low = (!p6_prup)
-            # (!p6_prup)
-            # (!gdollar_26 & !p2_elar_low & !p2_elar_low);
-!rbs1_low = (!gdollar_25 & !p2_elar_low & !p2_elar_low);
-!rbs2_low = (!gdollar_24 & !p2_elar_low & !p2_elar_low);
-!rbs3_low = (!gdollar_23 & !p2_elar_low & !p2_elar_low);
 !rd0_low = (!link_low & n_t_27x);
 !rd10_low = (!p4_rrr_low & p1_rr3)
             # (!p6_disf_low & !p2_dfb_low)

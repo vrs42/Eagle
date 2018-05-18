@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from M8416V1.sch at 5/9/2018 5:40:43 PM
+Exported from M8416V1.sch at 5/17/2018 10:25:11 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -168,9 +168,9 @@ E4       1        O          oc                *** unconnected ***
          8        I0         in       N$26
          9        I1         in       N$27
          10       O          oc       !RD0
-         11       I0         in       P3_MBK
-         12       I1         in       P3_MBK
-         13       O          oc       !BREAK_IN_PROG
+         11       I0         in                ***   unused    ***
+         12       I1         in                ***   unused    ***
+         13       O          oc                ***   unused    ***
          14       VCC        pwr      VCC
 
 E5       1        I          in       !RD0
@@ -355,12 +355,12 @@ E18      1        I0         in       P3_BTP3
          13       I1         in       !P4_GTF
          14       VCC        pwr      VCC
 
-E19      1        O          oc       !MSIRDIS
-         2        I0         in       P3_MBK
-         3        I1         in       P3_MBK
-         4        O          oc       !CPMA_DISABLE
-         5        I0         in       P3_MBK
-         6        I1         in       P3_MBK
+E19      1        O          oc                ***   unused    ***
+         2        I0         in                ***   unused    ***
+         3        I1         in                ***   unused    ***
+         4        O          oc                ***   unused    ***
+         5        I0         in                ***   unused    ***
+         6        I1         in                ***   unused    ***
          7        GND        pwr      GND
          8        I0         in       N$73
          9        I1         in       N$73
@@ -370,9 +370,9 @@ E19      1        O          oc       !MSIRDIS
          13       O          oc       !C0
          14       VCC        pwr      VCC
 
-E20      1        O          oc       N$77
-         2        I0         in       P3_BTS4
-         3        I1         in       P3_MBK
+E20      1        O          oc                ***   unused    ***
+         2        I0         in                ***   unused    ***
+         3        I1         in                ***   unused    ***
          4        O          oc       N$77
          5        I0         in       P4_BTS1
          6        I1         in       P6_BIND2
@@ -469,10 +469,10 @@ E27      1        I0         in       TP4
          5        I2         in                ***   unused    ***
          6        O          out               ***   unused    ***
          7        GND        pwr      GND
-         8        O          out      N$5
-         9        I0         in       P3_BTP2
-         10       I1         in       !P3_BINIT
-         11       I2         in       !P3_BINIT
+         8        O          out               ***   unused    ***
+         9        I0         in                ***   unused    ***
+         10       I1         in                ***   unused    ***
+         11       I2         in                ***   unused    ***
          12       O          out      P3_BTP4
          13       I2         in       TP4
          14       VCC        pwr      VCC
@@ -812,29 +812,12 @@ E53      1        GND        pwr      GND
          6        I0         in                ***   unused    ***
          7        I1         in                ***   unused    ***
          8        VCC        pwr      VCC
-         9        I0         in       GND
-         10       I1         in       TP2
+         9        I0         in                ***   unused    ***
+         10       I1         in                ***   unused    ***
          11       I0         in       INITIALIZE
          12       I1         in       GND
          13       O          out      P3_BINIT
-         14       O          out      P3_BTP2
-
-E55      1        1G         in       P6_PRUP
-         2        1A1        in       GND
-         3        1Y1        hiz      !RBS0
-         4        1A2        in       GND
-         5        1Y2        hiz      !RBS0
-         6        1A3        in       GND
-         7        1Y3        hiz      !P6_BS0
-         8        GND        pwr      GND
-         9        1Y4        hiz      !P6_BS0
-         10       1A4        in       GND
-         11       2Y1        hiz               *** unconnected ***
-         12       2A1        in       GND
-         13       2Y2        hiz               *** unconnected ***
-         14       2A2        in       GND
-         15       2G         in       GND
-         16       VCC        pwr      VCC
+         14       O          out               ***   unused    ***
 
 E56      1        I0         in                ***   unused    ***
          2        I1         in                ***   unused    ***
@@ -903,12 +886,12 @@ E60      1        CLR        in       !P4_CUMB
          5        Q          out               *** unconnected ***
          6        !Q         out      N$176
          7        GND        pwr      GND
-         8        !Q         out               *** unconnected ***
-         9        Q          out      P3_MBK
-         10       PRE        in       VCC
-         11       CLK        in       GND
-         12       D          in       GND
-         13       CLR        in       N$5
+         8        !Q         out               ***   unused    ***
+         9        Q          out               ***   unused    ***
+         10       PRE        in                ***   unused    ***
+         11       CLK        in                ***   unused    ***
+         12       D          in                ***   unused    ***
+         13       CLR        in                ***   unused    ***
          14       VCC        pwr      VCC
 
 E61      1        GND        pwr      GND
@@ -954,21 +937,6 @@ E64      1        O          out      N$30
          11       I0         in                *** unconnected ***
          12       I1         in                *** unconnected ***
          13       O          out               *** unconnected ***
-         14       VCC        pwr      VCC
-
-E65      1        CLR        in       P4_PLXA
-         2        D          in       GND
-         3        CLK        in       P3_BTP4
-         4        PRE        in       !P4_PCLR
-         5        Q          out               *** unconnected ***
-         6        !Q         out      P6_PRUP
-         7        GND        pwr      GND
-         8        !Q         out               ***   unused    ***
-         9        Q          out               ***   unused    ***
-         10       PRE        in                ***   unused    ***
-         11       CLK        in                ***   unused    ***
-         12       D          in                ***   unused    ***
-         13       CLR        in                ***   unused    ***
          14       VCC        pwr      VCC
 
 E66      1        I0         in       P3_BD
@@ -1561,68 +1529,6 @@ E115     1        I          in       P4_NEW_FLD
          13       I          in                *** unconnected ***
          14       VCC        pwr      VCC
 
-E120     1        G          in                ***   unused    ***
-         2        A          in                ***   unused    ***
-         3        B          in                ***   unused    ***
-         4        Y0         out               ***   unused    ***
-         5        Y1         out               ***   unused    ***
-         6        Y2         out               ***   unused    ***
-         7        Y3         out               ***   unused    ***
-         8        GND        pwr      GND
-         9        Y3         out      N$25
-         10       Y2         out      N$24
-         11       Y1         out      N$23
-         12       Y0         out      N$21
-         13       B          in       P3_BD2
-         14       A          in       P3_BD1
-         15       G          in       GND
-         16       VCC        pwr      VCC
-
-E121     1        M          in       !P2_ELAR
-         2        N          in       !P2_ELAR
-         3        Q1         hiz      !P6_BS3
-         4        Q2         hiz      !P6_BS2
-         5        Q3         hiz      !P6_BS1
-         6        Q4         hiz      !P6_BS0
-         7        CLK        in       P4_PLXA
-         8        GND        pwr      GND
-         9        G1         in       GND
-         10       G2         in       GND
-         11       D4         in       N$21
-         12       D3         in       N$23
-         13       D2         in       N$24
-         14       D1         in       N$25
-         15       CLR        in       P4_PCLR
-         16       VCC        pwr      VCC
-
-E122     1        M          in       !P2_ELAR
-         2        N          in       !P2_ELAR
-         3        Q1         hiz      !RBS3
-         4        Q2         hiz      !RBS2
-         5        Q3         hiz      !RBS1
-         6        Q4         hiz      !RBS0
-         7        CLK        in       P4_PLXA
-         8        GND        pwr      GND
-         9        G1         in       GND
-         10       G2         in       GND
-         11       D4         in       N$21
-         12       D3         in       N$23
-         13       D2         in       N$24
-         14       D1         in       N$25
-         15       CLR        in       GND
-         16       VCC        pwr      VCC
-
-J1       1        1          pas      !RBS0
-         2        2          pas      GND
-         3        3          pas      !RBS1
-         4        4          pas      GND
-         5        5          pas      !RBS2
-         6        6          pas      GND
-         7        7          pas      !RBS3
-         8        8          pas      GND
-         9        9          pas      GND
-         10       10         pas      GND
-
 PAD1     1        P          pas      P4_PCLR
 
 PAD2     1        P          pas      !P4_PCLR
@@ -1661,9 +1567,6 @@ R9       1        1          pas      VCC
          2        2          pas      !RD1
 
 R10      1        1          pas      N$77
-         2        2          pas      VCC
-
-R11      1        1          pas      !RBS0
          2        2          pas      VCC
 
 R12      1        1          pas      VCC
@@ -1729,15 +1632,6 @@ R34      1        1          pas      N$19
 R35      1        1          pas      N$18
          2        2          pas      VCC
 
-R37      1        1          pas      !RBS3
-         2        2          pas      VCC
-
-R38      1        1          pas      !RBS2
-         2        2          pas      VCC
-
-R39      1        1          pas      !RBS1
-         2        2          pas      VCC
-
 U$1      AA1      1          io                ***   unused    ***
          AA2      1          io       VCC
          AB1      1          io                ***   unused    ***
@@ -1783,7 +1677,7 @@ U$1      AA1      1          io                ***   unused    ***
          BD1      1          io                ***   unused    ***
          BD2      1          io                ***   unused    ***
          BE1      1          io                ***   unused    ***
-         BE2      1          io       !BREAK_IN_PROG
+         BE2      1          io                ***   unused    ***
          BF1      1          io       GND
          BF2      1          io       GND
          BH1      1          io                ***   unused    ***
@@ -1819,7 +1713,7 @@ U$1      AA1      1          io                ***   unused    ***
          CD1      1          io       !PAUSE
          CD2      1          io       TP1
          CE1      1          io       !C0
-         CE2      1          io       TP2
+         CE2      1          io                ***   unused    ***
          CF1      1          io       GND
          CF2      1          io       GND
          CH1      1          io       !C1
@@ -1844,7 +1738,7 @@ U$1      AA1      1          io                ***   unused    ***
          CT2      1          io       GND
          CU1      1          io       !CPMA_DISABLE
          CU2      1          io       !IND1
-         CV1      1          io       !MSIRDIS
+         CV1      1          io                ***   unused    ***
          CV2      1          io       !IND2
          DA1      1          io                ***   unused    ***
          DA2      1          io       +15V
@@ -1885,11 +1779,11 @@ U$1      AA1      1          io                ***   unused    ***
          EA1      1          io                ***   unused    ***
          EA2      1          io                ***   unused    ***
          EB1      1          io                ***   unused    ***
-         EB2      1          io       !P6_BS0
+         EB2      1          io                ***   unused    ***
          EC1      1          io                ***   unused    ***
          EC2      1          io                ***   unused    ***
          ED1      1          io                ***   unused    ***
-         ED2      1          io       !P6_BS1
+         ED2      1          io                ***   unused    ***
          EE1      1          io                ***   unused    ***
          EE2      1          io                ***   unused    ***
          EF1      1          io                ***   unused    ***
@@ -1901,13 +1795,13 @@ U$1      AA1      1          io                ***   unused    ***
          EK1      1          io                ***   unused    ***
          EK2      1          io                ***   unused    ***
          EL1      1          io                ***   unused    ***
-         EL2      1          io       !P6_BS2
+         EL2      1          io                ***   unused    ***
          EM1      1          io                ***   unused    ***
          EM2      1          io                ***   unused    ***
          EN1      1          io                ***   unused    ***
          EN2      1          io                ***   unused    ***
          EP1      1          io                ***   unused    ***
-         EP2      1          io       !P6_BS3
+         EP2      1          io                ***   unused    ***
          ER1      1          io                ***   unused    ***
          ER2      1          io                ***   unused    ***
          ES1      1          io                ***   unused    ***
