@@ -1,0 +1,721 @@
+Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Sat May 26 19:58:08 2018
+
+
+fit1508 C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M885\TOPLD\M869D.tt2 -CUPL -dev P1508T100 -JTAG ON
+
+
+****** Initial fitting strategy and property ******
+ Pla_in_file = M869D.tt2
+ Pla_out_file = M869D.tt3
+ Jedec_file = M869D.jed
+ Vector_file = M869D.tmv
+ verilog_file = M869D.vt
+ Time_file = 
+ Log_file = M869D.fit
+ err_file = 
+ Device_name = TQFP100
+ Module_name = 
+ Package_type = TQFP
+ Preassign_file = 
+ Property_file = 
+ Sleep_mode = 
+ Preassignment = 
+ Security_mode = OFF
+ Pin_keep_mode = ON
+ Dedicated_input_clock = 
+ Dedicated_input_reset = 
+ Dedicated_input_oe = 
+ supporter = CUPL
+ optimize = ON
+ Soft_buffer = 
+ Xor_synthesis = OFF
+ Foldback_logic =  on
+ Expander = 
+ Cascade_logic = OFF
+ Dedicated_input = 
+ Output_fast = OFF
+ *******************************
+ Power down pin 1 = OFF
+ Power down pin 2 = OFF
+ power_reset = OFF
+ JTAG = ON
+ TDI pullup = OFF
+ TMS pullup = OFF
+ MC_power = OFF
+ Open_collector =  c0_low,  c1_low,  chan_low,  clear,  col_red_low,  data00_low,  data06_low,  data07_low,  data09_low,  data10_low,  data11_low,  erase_low,  internal_io_low,  interrupt_low,  n_t_27x,  n_t_43x,  non_store_low,  skip_low,  write_thru_low, 
+ ITD0 = ON
+ ITD1 = ON
+ ITD2 = ON
+ Fast_inlatch = off
+ *******************************
+---------------------------------------------------------
+ Fitter_Pass 1, Preassign = KEEP, LOGIC_DOUBLING : OFF 
+ ... 
+## ERROR : Bad user pin assignement : 104
+ ## ERROR : Bad user pin assignement 
+---------------------------------------------------------
+ Fitter_Pass 2, Preassign = KEEP, NODE ASSIGN : OFF 
+ ... 
+ ## Warning : Placement fail 
+---------------------------------------------------------
+ Fitter_Pass 3, Preassign = KEEP, CASCADE_LOGIC : (TRY) 
+ ... 
+
+Performing global Output Enable pin assignments ...
+
+Performing global pin assignments ...
+--------------------------------------
+
+
+
+Final global control pins assignment (if applicable)...
+-------------------------------------------------------
+
+
+
+Performing input pin pre-assignments ...
+------------------------------------
+n_t_1x.AR equation needs patching.
+1 control eqution need patching
+
+Attempt to place floating signals ...
+------------------------------------
+dile_low is placed at pin 2 (MC 1)
+dire_low is placed at pin 1 (MC 3)
+load_y is placed at pin 100 (MC 5)
+load_x is placed at pin 99 (MC 6)
+n_t_1x.AR is placed at feedback node 607 (MC 7)
+b_dixy_low is placed at pin 98 (MC 8)
+internal_io_low is placed at pin 97 (MC 9)
+int_en is placed at feedback node 610 (MC 10)
+load_en_low is placed at pin 96 (MC 11)
+store is placed at feedback node 612 (MC 12)
+skip_low is placed at pin 94 (MC 13)
+clear is placed at pin 93 (MC 14)
+FB_160 is placed at foldback expander node 314 (MC 14)
+XXL_161 is placed at feedback node 615 (MC 15)
+erase_low is placed at pin 92 (MC 16)
+n_t_34x is placed at pin 14 (MC 17)
+interrupt_low is placed at pin 13 (MC 19)
+c0_low is placed at pin 12 (MC 21)
+n_t_27x is placed at pin 10 (MC 22)
+bit11 is placed at pin 9 (MC 24)
+bit10 is placed at pin 8 (MC 25)
+chan_low is placed at pin 7 (MC 27)
+col_red_low is placed at pin 6 (MC 29)
+write_thru_low is placed at pin 5 (MC 30)
+TDI is placed at pin 4 (MC 32)
+n_t_1x is placed at feedback node 632 (MC 32)
+color_low is placed at pin 25 (MC 33)
+btp3 is placed at pin 24 (MC 35)
+non_store_low is placed at pin 23 (MC 37)
+data00_low is placed at pin 22 (MC 38)
+data06_low is placed at pin 21 (MC 40)
+data09_low is placed at pin 20 (MC 41)
+data07_low is placed at pin 19 (MC 43)
+data11_low is placed at pin 17 (MC 45)
+data10_low is placed at pin 16 (MC 46)
+TMS is placed at pin 15 (MC 48)
+tp3 is placed at pin 37 (MC 49)
+data08_low is placed at pin 36 (MC 51)
+set_done is placed at pin 35 (MC 53)
+initialize is placed at pin 33 (MC 54)
+md10_low is placed at pin 32 (MC 56)
+md11_low is placed at pin 31 (MC 57)
+n3v is placed at pin 30 (MC 59)
+color is placed at pin 29 (MC 61)
+c1_low is placed at pin 28 (MC 62)
+n_t_43x is placed at pin 27 (MC 64)
+md3_low is placed at pin 40 (MC 65)
+md4_low is placed at pin 41 (MC 67)
+md6_low is placed at pin 42 (MC 69)
+md7_low is placed at pin 44 (MC 70)
+md8_low is placed at pin 45 (MC 72)
+md9_low is placed at pin 46 (MC 73)
+n_t_15x is placed at pin 47 (MC 75)
+pause_low is placed at pin 48 (MC 77)
+n_t_35x is placed at pin 49 (MC 78)
+grn_delay is placed at pin 50 (MC 80)
+red_delay is placed at pin 52 (MC 81)
+del_1_low is placed at pin 53 (MC 83)
+ld_del_low is placed at pin 54 (MC 85)
+set_done_low is placed at pin 55 (MC 86)
+TCK is placed at pin 62 (MC 96)
+TDO is placed at pin 73 (MC 112)
+
+                                                                                             
+                                                                                             
+                            l                                                                
+                        b   o                                                                
+                        _   a       e                                                        
+                        d   d   s   r                                                        
+                        i   _   k   a                                                        
+                    l l x   e   i   s                                                        
+                    o o y   n   p c e                                                        
+                    a a _   _   _ l _                                                        
+                    d d l   l G l e l V         G       V                                    
+                    _ _ o   o N o a o C         N       C                                    
+                    y x w   w D w r w C         D       C                                    
+                  ------------------------------------------------------                     
+                 / 100  98  96  94  92  90  88  86  84  82  80  78  76  \                   
+                /     99  97  95  93  91  89  87  85  83  81  79  77     \                  
+      dire_low | 1                                                     75 |                  
+      dile_low | 2                                                     74 | GND              
+           VCC | 3                                                     73 | TDO              
+           TDI | 4                                                     72 |                  
+write_thru_low | 5                                                     71 |                  
+   col_red_low | 6                                                     70 |                  
+      chan_low | 7                                                     69 |                  
+         bit10 | 8                                                     68 |                  
+         bit11 | 9                                                     67 |                  
+       n_t_27x | 10                                                    66 | VCC              
+           GND | 11                                                    65 |                  
+        c0_low | 12                     ATF1508                        64 |                  
+ interrupt_low | 13                  100-Lead TQFP                     63 |                  
+       n_t_34x | 14                                                    62 | TCK              
+           TMS | 15                                                    61 |                  
+    data10_low | 16                                                    60 |                  
+    data11_low | 17                                                    59 | GND              
+           VCC | 18                                                    58 |                  
+    data07_low | 19                                                    57 |                  
+    data09_low | 20                                                    56 |                  
+    data06_low | 21                                                    55 | set_done_low     
+    data00_low | 22                                                    54 | ld_del_low       
+ non_store_low | 23                                                    53 | del_1_low        
+          btp3 | 24                                                    52 | red_delay        
+     color_low | 25                                                    51 | VCC              
+                \     27  29  31  33  35  37  39  41  43  45   47  49    /                  
+                 \  26  28  30  32  34  36  38  40  42  44  46  48   50 /                   
+                  ------------------------------------------------------                     
+g                   G n c c n m m i V s d t G V m m m G m m m n p n                          
+r                   N _ 1 o 3 d d n C e a p N C d d d N d d d _ a _                          
+n                   D t _ l v 1 1 i C t t 3 D C 3 4 6 D 7 8 9 t u t                          
+_                     _ l o   1 0 t   _ a       _ _ _   _ _ _ _ s _                          
+d                     4 o r   _ _ i   d 0       l l l   l l l 1 e 3                          
+e                     3 w     l l a   o 8       o o o   o o o 5 _ 5                          
+l                     x       o o l   n _       w w w   w w w x l x                          
+a                             w w i   e l                       o                            
+y                                 z     o                       w                            
+                                  e     w                                                    
+
+
+
+VCC = Supply Voltage pin which must be connected to (5.0V or 3.0V)
+
+GND = GND pin which must be connected to ground
+
+TMS,TDI,TDO,TDI = JTAG pins which must reserved for the JTAG interface
+
+NC = Unused I/O pins which must be unconnected on the board
+
+Universal-Interconnect-Multiplexer assignments
+------------------------------------------------
+FanIn assignment for block A [24]
+{
+XXL_161,
+b_dixy_low,bit11,
+clear,
+dile_low,data07_low,data08_low,
+erase_low,
+initialize,
+load_en_low,
+md9_low,md11_low,md4_low,md8_low,md6_low,md7_low,md10_low,md3_low,
+n_t_15x,n_t_35x,n_t_1x,
+pause_low,
+set_done,
+tp3,
+}
+Multiplexer assignment for block A
+md9_low			(MC21	P)   : MUX 0		Ref (E73p)
+dile_low		(MC1	P)   : MUX 1		Ref (A1p)
+b_dixy_low		(MC2	P)   : MUX 3		Ref (A8p)
+md11_low		(MC15	P)   : MUX 4		Ref (D57p)
+tp3			(MC10	P)   : MUX 5		Ref (D49p)
+n_t_15x			(MC22	P)   : MUX 6		Ref (E75p)
+initialize		(MC13	P)   : MUX 7		Ref (D54p)
+n_t_35x			(MC24	P)   : MUX 8		Ref (E78p)
+bit11			(MC7	P)   : MUX 9		Ref (B24p)
+data07_low		(MC9	P)   : MUX 10		Ref (C43p)
+md4_low			(MC17	P)   : MUX 11		Ref (E67p)
+data08_low		(MC11	P)   : MUX 13		Ref (D51p)
+pause_low		(MC23	P)   : MUX 18		Ref (E77p)
+md8_low			(MC20	P)   : MUX 19		Ref (E72p)
+erase_low		(MC6	FB)  : MUX 21		Ref (A16fb)
+clear			(MC4	P)   : MUX 22		Ref (A14p)
+md6_low			(MC18	P)   : MUX 23		Ref (E69p)
+load_en_low		(MC3	P)   : MUX 24		Ref (A11p)
+XXL_161			(MC5	FB)  : MUX 25		Ref (A15fb)
+md7_low			(MC19	P)   : MUX 27		Ref (E70p)
+set_done		(MC12	P)   : MUX 31		Ref (D53p)
+md10_low		(MC14	P)   : MUX 35		Ref (D56p)
+n_t_1x			(MC8	FB)  : MUX 37		Ref (B32fb)
+md3_low			(MC16	P)   : MUX 39		Ref (E65p)
+
+FanIn assignment for block B [24]
+{
+bit10,
+clear,col_red_low,c0_low,chan_low,
+data10_low,dile_low,data06_low,del_1_low,data11_low,dire_low,data09_low,
+grn_delay,
+int_en,
+load_en_low,ld_del_low,
+n_t_27x,n_t_1x.AR,n_t_1x,
+red_delay,
+set_done_low,store,
+tp3,
+write_thru_low,
+}
+Multiplexer assignment for block B
+data10_low		(MC18	P)   : MUX 0		Ref (C46p)
+dile_low		(MC1	P)   : MUX 1		Ref (A1p)
+data06_low		(MC15	P)   : MUX 3		Ref (C40p)
+write_thru_low		(MC13	FB)  : MUX 5		Ref (B30fb)
+load_en_low		(MC5	P)   : MUX 6		Ref (A11p)
+n_t_27x			(MC9	P)   : MUX 7		Ref (B22p)
+clear			(MC7	P)   : MUX 8		Ref (A14p)
+col_red_low		(MC12	FB)  : MUX 9		Ref (B29fb)
+set_done_low		(MC24	P)   : MUX 11		Ref (F86p)
+del_1_low		(MC22	P)   : MUX 13		Ref (F83p)
+data11_low		(MC17	P)   : MUX 14		Ref (C45p)
+tp3			(MC19	P)   : MUX 15		Ref (D49p)
+bit10			(MC10	P)   : MUX 16		Ref (B25p)
+dire_low		(MC2	P)   : MUX 17		Ref (A3p)
+data09_low		(MC16	P)   : MUX 20		Ref (C41p)
+store			(MC6	FB)  : MUX 21		Ref (A12fb)
+grn_delay		(MC20	P)   : MUX 22		Ref (E80p)
+ld_del_low		(MC23	P)   : MUX 23		Ref (F85p)
+n_t_1x.AR		(MC3	FB)  : MUX 24		Ref (A7fb)
+red_delay		(MC21	P)   : MUX 25		Ref (F81p)
+int_en			(MC4	FB)  : MUX 27		Ref (A10fb)
+c0_low			(MC8	P)   : MUX 31		Ref (B21p)
+n_t_1x			(MC14	FB)  : MUX 33		Ref (B32fb)
+chan_low		(MC11	FB)  : MUX 39		Ref (B27fb)
+
+FanIn assignment for block C [8]
+{
+col_red_low,chan_low,
+dire_low,
+int_en,
+n_t_1x,
+store,
+tp3,
+write_thru_low,
+}
+Multiplexer assignment for block C
+store			(MC3	FB)  : MUX 1		Ref (A12fb)
+tp3			(MC8	P)   : MUX 5		Ref (D49p)
+n_t_1x			(MC7	FB)  : MUX 7		Ref (B32fb)
+col_red_low		(MC5	FB)  : MUX 9		Ref (B29fb)
+int_en			(MC2	FB)  : MUX 13		Ref (A10fb)
+dire_low		(MC1	P)   : MUX 17		Ref (A3p)
+write_thru_low		(MC6	FB)  : MUX 19		Ref (B30fb)
+chan_low		(MC4	FB)  : MUX 39		Ref (B27fb)
+
+FanIn assignment for block D [2]
+{
+col_red_low,
+dire_low,
+}
+Multiplexer assignment for block D
+dire_low		(MC1	P)   : MUX 7		Ref (A3p)
+col_red_low		(MC2	FB)  : MUX 9		Ref (B29fb)
+
+Creating JEDEC file C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M885\TOPLD\M869D.jed ...
+
+TQFP100 programmed logic:
+-----------------------------------
+btp3 = tp3;
+
+clear = (initialize
+	# (md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & !pause_low & tp3));
+
+color_low = !col_red_low.PIN;
+
+!dire_low = (!md10_low & !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low);
+
+!dile_low = (!md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low);
+
+!internal_io_low = (md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low);
+
+!load_en_low = ((md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low)
+	# (!md10_low & !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & !pause_low));
+
+!interrupt_low = (int_en.Q & n_t_1x.Q);
+
+n_t_34x = (!grn_delay & !red_delay);
+
+n3v = 1;
+
+!non_store_low = !store.Q;
+
+!skip_low = (!md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & n_t_1x.Q & !pause_low);
+
+color = col_red_low.PIN;
+
+!b_dixy_low = (md10_low & !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low & tp3);
+
+!load_x = (!md10_low & !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & !pause_low & tp3);
+
+!load_y = (md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low & tp3);
+
+n_t_1x.D = 1;
+
+n_t_27x = (!col_red_low.PIN & !store.Q);
+
+!n_t_43x = !col_red_low.PIN;
+
+bit10 = ((data10_low.PIN & !load_en_low)
+	# (data10_low.PIN & !dile_low));
+
+!c1_low = !dire_low;
+
+bit11 = ((data11_low.PIN & !load_en_low)
+	# (data11_low.PIN & !dile_low));
+
+c0_low = (dile_low & dire_low);
+
+col_red_low.D = ((data09_low.PIN & !dile_low)
+	# (data09_low.PIN & !load_en_low));
+
+!data06_low = (!dire_low & write_thru_low.PIN);
+
+!data00_low = (!dire_low & n_t_1x.Q);
+
+!data07_low = (!dire_low & store.Q);
+
+!data09_low = (col_red_low.PIN & !dire_low);
+
+!data10_low = (chan_low.PIN & !dire_low);
+
+!data11_low = (!dire_low & int_en.Q);
+
+erase_low.D = ((!data08_low & !dile_low)
+	# (!data08_low & !load_en_low));
+
+store.D = ((data07_low.PIN & !dile_low)
+	# (data07_low.PIN & !load_en_low));
+
+write_thru_low.D = ((data06_low.PIN & !dile_low)
+	# (data06_low.PIN & !load_en_low));
+
+chan_low.D = bit10;
+
+int_en.D = bit11;
+
+!FB_160 = (!clear.PIN & !set_done);
+
+XXL_161 = ((tp3 & erase_low.PIN)
+	# !b_dixy_low
+	# (tp3 & md10_low & !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & !pause_low)
+	# clear.PIN
+	# (tp3 & n_t_35x));
+
+clear.OE = !clear.PIN;
+
+internal_io_low.OE = (md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low);
+
+interrupt_low.OE = (int_en.Q & n_t_1x.Q);
+
+non_store_low.OE = !store.Q;
+
+skip_low.OE = (!md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & n_t_1x.Q & !pause_low);
+
+n_t_1x.C = (del_1_low & !grn_delay & ld_del_low & !red_delay & set_done_low);
+
+n_t_1x.AR = (XXL_161
+	# (tp3 & !load_en_low));
+
+n_t_27x.OE = !n_t_27x.PIN;
+
+n_t_43x.OE = !col_red_low.PIN;
+
+c1_low.OE = !dire_low;
+
+c0_low.OE = c0_low.PIN;
+
+col_red_low.C = (!dile_low & tp3);
+
+col_red_low.AR = clear.PIN;
+
+col_red_low.OE = col_red_low.PIN;
+
+data06_low.OE = (!dire_low & write_thru_low.PIN);
+
+data00_low.OE = (!dire_low & n_t_1x.Q);
+
+data07_low.OE = (!dire_low & store.Q);
+
+data09_low.OE = (col_red_low.PIN & !dire_low);
+
+data10_low.OE = (chan_low.PIN & !dire_low);
+
+data11_low.OE = (!dire_low & int_en.Q);
+
+erase_low.C = (!dile_low & tp3);
+
+erase_low.AR = FB_160;
+
+erase_low.OE = erase_low.PIN;
+
+store.C = (!dile_low & tp3);
+
+store.AR = clear.PIN;
+
+write_thru_low.C = (!dile_low & tp3);
+
+write_thru_low.AR = clear.PIN;
+
+write_thru_low.OE = write_thru_low.PIN;
+
+chan_low.C = (!dile_low & tp3);
+
+chan_low.AR = clear.PIN;
+
+chan_low.OE = chan_low.PIN;
+
+int_en.C = (!dile_low & tp3);
+
+int_en.AR = clear.PIN;
+
+
+TQFP100 Pin/Node Placement:
+------------------------------------
+Pin 1  = dire_low; /* MC 3 */
+Pin 2  = dile_low; /* MC 1 */
+Pin 4  = TDI; /* MC 32 */
+Pin 5  = write_thru_low; /* MC 30 */
+Pin 6  = col_red_low; /* MC 29 */
+Pin 7  = chan_low; /* MC 27 */
+Pin 8  = bit10; /* MC 25 */
+Pin 9  = bit11; /* MC 24 */
+Pin 10 = n_t_27x; /* MC 22 */ 
+Pin 12 = c0_low; /* MC 21 */ 
+Pin 13 = interrupt_low; /* MC 19 */ 
+Pin 14 = n_t_34x; /* MC 17 */ 
+Pin 15 = TMS; /* MC 48 */ 
+Pin 16 = data10_low; /* MC 46 */ 
+Pin 17 = data11_low; /* MC 45 */ 
+Pin 19 = data07_low; /* MC 43 */ 
+Pin 20 = data09_low; /* MC 41 */ 
+Pin 21 = data06_low; /* MC 40 */ 
+Pin 22 = data00_low; /* MC 38 */ 
+Pin 23 = non_store_low; /* MC 37 */ 
+Pin 24 = btp3; /* MC 35 */ 
+Pin 25 = color_low; /* MC 33 */ 
+Pin 27 = n_t_43x; /* MC 64 */ 
+Pin 28 = c1_low; /* MC 62 */ 
+Pin 29 = color; /* MC 61 */ 
+Pin 30 = n3v; /* MC 59 */ 
+Pin 31 = md11_low; /* MC 57 */ 
+Pin 32 = md10_low; /* MC 56 */ 
+Pin 33 = initialize; /* MC 54 */ 
+Pin 35 = set_done; /* MC 53 */ 
+Pin 36 = data08_low; /* MC 51 */ 
+Pin 37 = tp3; /* MC 49 */ 
+Pin 40 = md3_low; /* MC 65 */ 
+Pin 41 = md4_low; /* MC 67 */ 
+Pin 42 = md6_low; /* MC 69 */ 
+Pin 44 = md7_low; /* MC 70 */ 
+Pin 45 = md8_low; /* MC 72 */ 
+Pin 46 = md9_low; /* MC 73 */ 
+Pin 47 = n_t_15x; /* MC 75 */ 
+Pin 48 = pause_low; /* MC 77 */ 
+Pin 49 = n_t_35x; /* MC 78 */ 
+Pin 50 = grn_delay; /* MC 80 */ 
+Pin 52 = red_delay; /* MC 81 */ 
+Pin 53 = del_1_low; /* MC 83 */ 
+Pin 54 = ld_del_low; /* MC 85 */ 
+Pin 55 = set_done_low; /* MC 86 */ 
+Pin 62 = TCK; /* MC 96 */ 
+Pin 73 = TDO; /* MC 112 */ 
+Pin 92 = erase_low; /* MC 16 */ 
+Pin 93 = clear; /* MC 14 */ 
+Pin 94 = skip_low; /* MC 13 */ 
+Pin 96 = load_en_low; /* MC 11 */ 
+Pin 97 = internal_io_low; /* MC  9 */
+Pin 98 = b_dixy_low; /* MC  8 */
+Pin 99 = load_x; /* MC  6 */
+Pin 100 = load_y; /* MC  5 */
+PINNODE 314 = FB_160; /* MC 14 Foldback */
+PINNODE 607 = n_t_1x.AR; /* MC 7 Feedback */
+PINNODE 610 = int_en; /* MC 10 Feedback */
+PINNODE 612 = store; /* MC 12 Feedback */
+PINNODE 615 = XXL_161; /* MC 15 Feedback */
+PINNODE 632 = n_t_1x; /* MC 32 Feedback */
+
+** Resource Usage **
+
+
+DCERP Field = Summary of Allocations.
+|||||
+|||||_Preset [p,-]       ==  p = PT preset, - No Preset.
+||||
+||||__Reset [g,r,-]      ==  g= Global AR, r = PT reset, - No reset.
+|||
+|||___Clock Enable [e,-] ==  e = Product Term, - always enabled, - none.
+||
+||____Clock [c,g,-],     ==  c = Product term, g = Global term, - No Clock.
+|
+|_____Type [C,D,L,T],    ==  Register type C= combin, D=dff, L=latch, T=tff.
+
+For input only = INPUT.
+
+MCell Pin# Oe   PinDrive        DCERP  FBDrive   DCERP  Foldback  CascadeOut     TotPT output_slew
+MC1   2    on   dile_low        C----  --               --        --             1     slow
+MC2   0         --                     --               --        --             0     slow
+MC3   1    on   dire_low        C----  --               --        --             1     slow
+MC4   0         --                     --               --        --             0     slow
+MC5   100  on   load_y          C----  --               --        --             1     slow
+MC6   99   on   load_x          C----  --               --        --             1     slow
+MC7   0         --                     n_t_1x.AR C----  --        --             2     slow
+MC8   98   on   b_dixy_low      C----  --               --        --             1     slow
+MC9   97   PT   internal_io_low C----  --               --        --             2     slow
+MC10  0         --                     int_en    Dc-r-  --        --             3     slow
+MC11  96   on   load_en_low     C----  --               --        --             2     slow
+MC12  0         --                     store     Dc-r-  --        --             4     slow
+MC13  94   PT   skip_low        C----  --               --        --             2     slow
+MC14  93   PT   clear           C----  --               FB_160    --             4     slow
+MC15  0         --                     XXL_161   C----  NA        --             5     slow
+MC16  92   PT   erase_low       Dc-r-  --               NA        --             5     slow
+MC17  14   on   n_t_34x         C----  --               --        --             1     slow
+MC18  0         --                     --               --        --             0     slow
+MC19  13   PT   interrupt_low   C----  --               --        --             2     slow
+MC20  0         --                     --               --        --             0     slow
+MC21  12   PT   c0_low          C----  --               --        --             2     slow
+MC22  10   PT   n_t_27x         C----  --               --        --             2     slow
+MC23  0         --                     --               --        --             0     slow
+MC24  9    on   bit11           C----  --               --        --             2     slow
+MC25  8    on   bit10           C----  --               --        --             2     slow
+MC26  0         --                     --               --        --             0     slow
+MC27  7    PT   chan_low        Dc-r-  --               --        --             4     slow
+MC28  0         --                     --               --        --             0     slow
+MC29  6    PT   col_red_low     Dc-r-  --               NA        --             5     slow
+MC30  5    PT   write_thru_low  Dc-r-  --               NA        --             5     slow
+MC31  0         --                     --               --        --             0     slow
+MC32  4    --   TDI             INPUT  n_t_1x    Dc-r-  --        --             2     slow
+MC33  25   on   color_low       C----  --               --        --             1     slow
+MC34  0         --                     --               --        --             0     slow
+MC35  24   on   btp3            C----  --               --        --             1     slow
+MC36  0         --                     --               --        --             0     slow
+MC37  23   PT   non_store_low   C----  --               --        --             2     slow
+MC38  22   PT   data00_low      C----  --               --        --             2     slow
+MC39  0         --                     --               --        --             0     slow
+MC40  21   PT   data06_low      C----  --               --        --             2     slow
+MC41  20   PT   data09_low      C----  --               --        --             2     slow
+MC42  0         --                     --               --        --             0     slow
+MC43  19   PT   data07_low      C----  --               --        --             2     slow
+MC44  0         --                     --               --        --             0     slow
+MC45  17   PT   data11_low      C----  --               --        --             2     slow
+MC46  16   PT   data10_low      C----  --               --        --             2     slow
+MC47  0         --                     --               --        --             0     slow
+MC48  15   --   TMS             INPUT  --               --        --             0     slow
+MC49  37   --   tp3             INPUT  --               --        --             0     slow
+MC50  0         --                     --               --        --             0     slow
+MC51  36   --   data08_low      INPUT  --               --        --             0     slow
+MC52  0         --                     --               --        --             0     slow
+MC53  35   --   set_done        INPUT  --               --        --             0     slow
+MC54  33   --   initialize      INPUT  --               --        --             0     slow
+MC55  0         --                     --               --        --             0     slow
+MC56  32   --   md10_low        INPUT  --               --        --             0     slow
+MC57  31   --   md11_low        INPUT  --               --        --             0     slow
+MC58  0         --                     --               --        --             0     slow
+MC59  30   on   n3v             C----  --               --        --             0     slow
+MC60  0         --                     --               --        --             0     slow
+MC61  29   on   color           C----  --               --        --             1     slow
+MC62  28   PT   c1_low          C----  --               --        --             2     slow
+MC63  0         --                     --               --        --             0     slow
+MC64  27   PT   n_t_43x         C----  --               --        --             2     slow
+MC65  40   --   md3_low         INPUT  --               --        --             0     slow
+MC66  0         --                     --               --        --             0     slow
+MC67  41   --   md4_low         INPUT  --               --        --             0     slow
+MC68  0         --                     --               --        --             0     slow
+MC69  42   --   md6_low         INPUT  --               --        --             0     slow
+MC70  44   --   md7_low         INPUT  --               --        --             0     slow
+MC71  0         --                     --               --        --             0     slow
+MC72  45   --   md8_low         INPUT  --               --        --             0     slow
+MC73  46   --   md9_low         INPUT  --               --        --             0     slow
+MC74  0         --                     --               --        --             0     slow
+MC75  47   --   n_t_15x         INPUT  --               --        --             0     slow
+MC76  0         --                     --               --        --             0     slow
+MC77  48   --   pause_low       INPUT  --               --        --             0     slow
+MC78  49   --   n_t_35x         INPUT  --               --        --             0     slow
+MC79  0         --                     --               --        --             0     slow
+MC80  50   --   grn_delay       INPUT  --               --        --             0     slow
+MC81  52   --   red_delay       INPUT  --               --        --             0     slow
+MC82  0         --                     --               --        --             0     slow
+MC83  53   --   del_1_low       INPUT  --               --        --             0     slow
+MC84  0         --                     --               --        --             0     slow
+MC85  54   --   ld_del_low      INPUT  --               --        --             0     slow
+MC86  55   --   set_done_low    INPUT  --               --        --             0     slow
+MC87  0         --                     --               --        --             0     slow
+MC88  56        --                     --               --        --             0     slow
+MC89  57        --                     --               --        --             0     slow
+MC90  0         --                     --               --        --             0     slow
+MC91  58        --                     --               --        --             0     slow
+MC92  0         --                     --               --        --             0     slow
+MC93  60        --                     --               --        --             0     slow
+MC94  61        --                     --               --        --             0     slow
+MC95  0         --                     --               --        --             0     slow
+MC96  62   --   TCK             INPUT  --               --        --             0     slow
+MC97  63        --                     --               --        --             0     slow
+MC98  0         --                     --               --        --             0     slow
+MC99  64        --                     --               --        --             0     slow
+MC100 0         --                     --               --        --             0     slow
+MC101 65        --                     --               --        --             0     slow
+MC102 67        --                     --               --        --             0     slow
+MC103 0         --                     --               --        --             0     slow
+MC104 68        --                     --               --        --             0     slow
+MC105 69        --                     --               --        --             0     slow
+MC106 0         --                     --               --        --             0     slow
+MC107 70        --                     --               --        --             0     slow
+MC108 0         --                     --               --        --             0     slow
+MC109 71        --                     --               --        --             0     slow
+MC110 72        --                     --               --        --             0     slow
+MC111 0         --                     --               --        --             0     slow
+MC112 73   --   TDO             INPUT  --               --        --             0     slow
+MC113 75        --                     --               --        --             0     slow
+MC114 0         --                     --               --        --             0     slow
+MC115 76        --                     --               --        --             0     slow
+MC116 0         --                     --               --        --             0     slow
+MC117 77        --                     --               --        --             0     slow
+MC118 78        --                     --               --        --             0     slow
+MC119 0         --                     --               --        --             0     slow
+MC120 79        --                     --               --        --             0     slow
+MC121 80        --                     --               --        --             0     slow
+MC122 0         --                     --               --        --             0     slow
+MC123 81        --                     --               --        --             0     slow
+MC124 0         --                     --               --        --             0     slow
+MC125 83        --                     --               --        --             0     slow
+MC126 84        --                     --               --        --             0     slow
+MC127 0         --                     --               --        --             0     slow
+MC128 85        --                     --               --        --             0     slow
+MC0   90        --                     --               --        --             0     slow
+MC0   89        --                     --               --        --             0     slow
+MC0   88        --                     --               --        --             0     slow
+MC0   87        --                     --               --        --             0     slow
+
+Logic Array Block	Logic Cells	I/O Pins	Foldbacks	TotalPT		FanIN	Cascades
+A: LC1	- LC16		14/16(87%)	10/16(62%)	1/16(6%)	34/80(42%)	(24)	0
+B: LC17	- LC32		10/16(62%)	10/16(62%)	0/16(0%)	27/80(33%)	(24)	0
+C: LC33	- LC48		9/16(56%)	10/16(62%)	0/16(0%)	16/80(20%)	(8)	0
+D: LC49	- LC64		4/16(25%)	10/16(62%)	0/16(0%)	5/80(6%)	(2)	0
+E: LC65	- LC80		0/16(0%)	10/16(62%)	0/16(0%)	0/80(0%)	(0)	0
+F: LC81	- LC96		0/16(0%)	5/16(31%)	0/16(0%)	0/80(0%)	(0)	0
+G: LC97	- LC112		0/16(0%)	1/16(6%)	0/16(0%)	0/80(0%)	(0)	0
+H: LC113- LC128		0/16(0%)	0/16(0%)	0/16(0%)	0/80(0%)	(0)	0
+
+Total dedicated input used:	0/4 	(0%)
+Total I/O pins used		56/80 	(70%)
+Total Logic cells used 		37/128 	(28%)
+Total Flip-Flop used 		7/128 	(5%)
+Total Foldback logic used 	1/128 	(0%)
+Total Nodes+FB/MCells 		38/128 	(29%)
+Total cascade used 		0
+Total input pins 		24
+Total output pins 		32
+Total Pts 			82
+Creating pla file C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M885\TOPLD\M869D.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+
+----------------  End fitter, Design FITS
+$Device TQFP100 fits 
+FIT1508 completed in 0.00 seconds
