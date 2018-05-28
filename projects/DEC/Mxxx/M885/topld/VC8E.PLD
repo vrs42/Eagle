@@ -8,16 +8,20 @@ Revision 01 ;
 Designer  ;
 Company   ;
 Assembly None ;
-Location E1 ;
+Location E3 ;
 Device   f1508ispplcc84;
+
+$DEFINE iot05xx 'b'1
+/* $DEFINE debug mysignal */
+$IFDEF DEBUG
+$DEFINE m869sw1 'b'0
+$ENDIF
 
 /* Input Pins */
 pin = del_1_low;
 pin = grn_delay;
 pin = initialize;
 pin = ld_del_low;
-pin = md10_low;
-pin = md11_low;
 pin = md3_low;
 pin = md4_low;
 pin = md5_low;
@@ -25,14 +29,14 @@ pin = md6_low;
 pin = md7_low;
 pin = md8_low;
 pin = md9_low;
-pin = n_t_113x;
-pin = n_t_180x;
+pin = md10_low;
+pin = md11_low;
 pin = n_t_35x;
 pin = pause_low;
 pin = red_delay;
 pin = set_done;
-pin = set_done_low;
 pin = tp3;
+$IFDEF HCONNECTOR
 pin = x_ac_low;
 pin = x_dec;
 pin = x_inc;
@@ -40,20 +44,21 @@ pin = y_ac_low;
 pin = y_dec;
 pin = y_inc;
 pin = z_pulse;
-pin = n_t_15x;
+$ENDIF
+$IFNDEF iot05xx
+pin = iot05xx; /* W1/W2 */
+$ENDIF
+$IFNDEF m869sw1
+pin = m869sw1; /* INTENS polarity */
+$ENDIF
 
 /* Output Pins */
 pin = b_dixy_low;
-pin = bit10;
-pin = bit11;
 pin = btp3;
 pin = c0_low;
 pin = c1_low;
 pin = chan_low;
-pin = clear;
 pin = col_red_low;
-pin = color;
-pin = color_low;
 pin = data00_low;
 pin = data02_low;
 pin = data03_low;
@@ -65,24 +70,37 @@ pin = data08_low;
 pin = data09_low;
 pin = data10_low;
 pin = data11_low;
-pin = dile_low;
-pin = dire_low;
 pin = erase_low;
-pin = intens;
 pin = internal_io_low;
 pin = interrupt_low;
-pin = load_en_low;
-pin = load_x;
-pin = load_y;
-pin = n5v_x;
-pin = n5v_y;
 pin = n_t_27x;
-pin = n_t_34x;
 pin = n_t_43x;
-pin = n_t_45x;
 pin = non_store_low;
 pin = skip_low;
 pin = write_thru_low;
+pin = x02;
+pin = x03;
+pin = x04;
+pin = x05;
+pin = x06;
+pin = x07;
+pin = x08;
+pin = x09;
+pin = x10;
+pin = x11;
+pin = y02;
+pin = y03;
+pin = y04;
+pin = y05;
+pin = y06;
+pin = y07;
+pin = y08;
+pin = y09;
+pin = y10;
+pin = y11;
+$IFDEF DEBUG
+pin = debugpin;
+$ENDIF debug
 
 /* Internal nodes */
 
@@ -90,34 +108,32 @@ node write_thru;
 node store;
 node erase;
 node chan;
+node color;
 node int_en;
 node n_t_1x;
-node y03;
-node y02;
 node gdollar_0;
 node gdollar_1;
-node x03;
-node x02;
 node gdollar_2;
 node gdollar_3;
-node y07;
-node y06;
-node y05;
-node y04;
-node x07;
-node x06;
-node x05;
-node x04;
-node y11;
-node y10;
-node y09;
-node y08;
-node x11;
-node x10;
-node x09;
-node x08;
 
 /* Equations */
+
+spare1 = 'b'0;
+n_t_15x = iot05xx & !md5_low
+        # !iot05xx & md5_low;
+intens = m869sw1 $ n_t_9x;
+$IFDEF debug
+debugpin = debug;
+$ENDIF
+$IFNDEF HCONNECTOR
+x_ac_low = 'b'1;
+x_inc = 'b'1;
+x_dec = 'b'1;
+y_ac_low = 'b'1;
+y_inc = 'b'1;
+y_dec = 'b'1;
+z_pulse = 'b'1;
+$ENDIF
 
 /* e3: sn7402 */
 dly_done_low = !(red_delay
@@ -243,7 +259,7 @@ load_y = !(btp3 & !dily_low);
 
 /* e23: sn74h21 */
 cl_done_low = !clear & b_load_en_low & b_dixy_low & b_dicd_low;
-n_t_3x = del_1_low & set_done_low & dly_done_low & ld_del_low;
+n_t_3x = del_1_low & !set_done & dly_done_low & ld_del_low;
 
 /* e24: sp380n */
 !n_t_19x = md11_low
