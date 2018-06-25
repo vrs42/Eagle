@@ -5827,8 +5827,8 @@ LETTER landscape</description>
 <part name="V8" library="supply2" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="330"/>
 <part name="E1" library="74xx-us" deviceset="74*00" device="N"/>
-<part name="E2" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="E3" library="74xx-us" deviceset="74*00" device="N"/>
+<part name="E2" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="750"/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
@@ -5859,12 +5859,12 @@ LETTER landscape</description>
 <instance part="E1" gate="B" x="152.4" y="121.92"/>
 <instance part="E1" gate="C" x="152.4" y="76.2" rot="MR180"/>
 <instance part="E1" gate="D" x="152.4" y="106.68" rot="MR180"/>
-<instance part="E2" gate="A" x="106.68" y="137.16"/>
-<instance part="E2" gate="B" x="106.68" y="106.68"/>
-<instance part="E2" gate="C" x="106.68" y="76.2" rot="MR180"/>
-<instance part="E2" gate="D" x="106.68" y="91.44" rot="MR180"/>
-<instance part="E3" gate="B" x="152.4" y="91.44"/>
-<instance part="E3" gate="C" x="106.68" y="121.92" rot="MR180"/>
+<instance part="E3" gate="A" x="106.68" y="137.16"/>
+<instance part="E3" gate="B" x="106.68" y="106.68"/>
+<instance part="E3" gate="C" x="106.68" y="76.2" rot="MR180"/>
+<instance part="E3" gate="D" x="106.68" y="91.44" rot="MR180"/>
+<instance part="E2" gate="B" x="152.4" y="91.44"/>
+<instance part="E2" gate="C" x="106.68" y="121.92" rot="MR180"/>
 <instance part="R4" gate="G$1" x="210.82" y="132.08" rot="R90"/>
 <instance part="V3" gate="G$1" x="190.5" y="111.76"/>
 <instance part="V5" gate="GND" x="190.5" y="99.06"/>
@@ -6030,7 +6030,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="119.38" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
 <label x="119.38" y="76.2" size="1.778" layer="95"/>
-<pinref part="E2" gate="C" pin="O"/>
+<pinref part="E3" gate="C" pin="O"/>
 </segment>
 </net>
 <net name="U2" class="0">
@@ -6042,7 +6042,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="93.98" y1="73.66" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
 <label x="86.36" y="73.66" size="1.778" layer="95"/>
-<pinref part="E2" gate="C" pin="I0"/>
+<pinref part="E3" gate="C" pin="I0"/>
 </segment>
 </net>
 <net name="S2" class="0">
@@ -6054,7 +6054,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="119.38" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
 <label x="119.38" y="91.44" size="1.778" layer="95"/>
-<pinref part="E2" gate="D" pin="O"/>
+<pinref part="E3" gate="D" pin="O"/>
 </segment>
 </net>
 <net name="R2" class="0">
@@ -6066,7 +6066,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="93.98" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
 <label x="86.36" y="88.9" size="1.778" layer="95"/>
-<pinref part="E2" gate="D" pin="I0"/>
+<pinref part="E3" gate="D" pin="I0"/>
 </segment>
 </net>
 <net name="P2" class="0">
@@ -6078,7 +6078,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="93.98" y1="93.98" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
 <label x="86.36" y="93.98" size="1.778" layer="95"/>
-<pinref part="E2" gate="D" pin="I1"/>
+<pinref part="E3" gate="D" pin="I1"/>
 </segment>
 </net>
 <net name="N2" class="0">
@@ -6090,7 +6090,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="119.38" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
 <label x="119.38" y="121.92" size="1.778" layer="95"/>
-<pinref part="E3" gate="C" pin="O"/>
+<pinref part="E2" gate="C" pin="O"/>
 </segment>
 </net>
 <net name="L2" class="0">
@@ -6102,7 +6102,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="93.98" y1="124.46" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
 <label x="86.36" y="124.46" size="1.778" layer="95"/>
-<pinref part="E3" gate="C" pin="I1"/>
+<pinref part="E2" gate="C" pin="I1"/>
 </segment>
 </net>
 <net name="K2" class="0">
@@ -6126,7 +6126,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="165.1" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
 <label x="165.1" y="91.44" size="1.778" layer="95"/>
-<pinref part="E3" gate="B" pin="O"/>
+<pinref part="E2" gate="B" pin="O"/>
 </segment>
 </net>
 <net name="M1" class="0">
@@ -6138,7 +6138,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="93.98" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
 <label x="86.36" y="134.62" size="1.778" layer="95"/>
-<pinref part="E2" gate="A" pin="I1"/>
+<pinref part="E3" gate="A" pin="I1"/>
 </segment>
 </net>
 <net name="N1" class="0">
@@ -6150,7 +6150,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="119.38" y1="137.16" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
 <label x="119.38" y="137.16" size="1.778" layer="95"/>
-<pinref part="E2" gate="A" pin="O"/>
+<pinref part="E3" gate="A" pin="O"/>
 </segment>
 </net>
 <net name="E2" class="0">
@@ -6198,7 +6198,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="139.7" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
 <label x="132.08" y="88.9" size="1.778" layer="95"/>
-<pinref part="E3" gate="B" pin="I1"/>
+<pinref part="E2" gate="B" pin="I1"/>
 </segment>
 </net>
 <net name="H1" class="0">
@@ -6210,7 +6210,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="139.7" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 <label x="132.08" y="93.98" size="1.778" layer="95"/>
-<pinref part="E3" gate="B" pin="I0"/>
+<pinref part="E2" gate="B" pin="I0"/>
 </segment>
 </net>
 <net name="F1" class="0">
@@ -6234,7 +6234,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="86.36" y1="139.7" x2="93.98" y2="139.7" width="0.1524" layer="91"/>
 <label x="86.36" y="139.7" size="1.778" layer="95"/>
-<pinref part="E2" gate="A" pin="I0"/>
+<pinref part="E3" gate="A" pin="I0"/>
 </segment>
 </net>
 <net name="E1" class="0">
@@ -6302,7 +6302,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="93.98" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
 <label x="86.36" y="78.74" size="1.778" layer="95"/>
-<pinref part="E2" gate="C" pin="I1"/>
+<pinref part="E3" gate="C" pin="I1"/>
 </segment>
 </net>
 <net name="M2" class="0">
@@ -6314,7 +6314,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="93.98" y1="119.38" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
 <label x="86.36" y="119.38" size="1.778" layer="95"/>
-<pinref part="E3" gate="C" pin="I0"/>
+<pinref part="E2" gate="C" pin="I0"/>
 </segment>
 </net>
 <net name="P1" class="0">
@@ -6326,7 +6326,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="93.98" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
 <label x="86.36" y="109.22" size="1.778" layer="95"/>
-<pinref part="E2" gate="B" pin="I0"/>
+<pinref part="E3" gate="B" pin="I0"/>
 </segment>
 </net>
 <net name="R1" class="0">
@@ -6338,7 +6338,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="93.98" y1="104.14" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
 <label x="86.36" y="104.14" size="1.778" layer="95"/>
-<pinref part="E2" gate="B" pin="I1"/>
+<pinref part="E3" gate="B" pin="I1"/>
 </segment>
 </net>
 <net name="S1" class="0">
@@ -6350,7 +6350,7 @@ LETTER landscape</description>
 <segment>
 <wire x1="119.38" y1="106.68" x2="124.46" y2="106.68" width="0.1524" layer="91"/>
 <label x="119.38" y="106.68" size="1.778" layer="95"/>
-<pinref part="E2" gate="B" pin="O"/>
+<pinref part="E3" gate="B" pin="O"/>
 </segment>
 </net>
 </nets>
