@@ -1,0 +1,670 @@
+
+*******************************************************************************
+                                     M869D
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          f1508isptqfp100  Library DLIB-h-40-2
+Created         Sat May 26 19:58:07 2018
+Name            M869D 
+Partno          cpld 
+Revision        01 
+Date            5/26/2018 
+Designer        
+Company         
+Assembly        None 
+Location        E1 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+b_dicd_low =>
+    !btp3
+  # n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & 
+      !pause_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+  # md11_low
+
+b_dixy_low =>
+    pause_low
+  # n_t_15x
+  # md9_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+  # md11_low
+  # !md10_low
+  # !btp3
+
+b_load_en_low =>
+    !erase & load_en_low & !n_t_35x
+  # !btp3
+
+!bit10 =>
+    dile_low & load_en_low
+  # data10_low
+
+!bit11 =>
+    dile_low & load_en_low
+  # data11_low
+
+btp3 =>
+    tp3
+
+!c0_low =>
+    !dire_low
+  # !dile_low
+
+c0_low.oe  =>
+    !c0_low
+
+!c1_low =>
+    !dire_low
+
+c1_low.oe  =>
+    !dire_low
+
+chan.d  =>
+    bit10
+
+chan.ap  =>
+    !n3v
+
+chan.ar  =>
+    clear
+
+chan.ck  =>
+    !dile_low & tp3
+
+!chan_low =>
+    chan
+
+chan_low.oe  =>
+    chan
+
+cl_done_low =>
+    b_dixy_low & !btp3 & !clear
+  # b_dixy_low & !clear & !erase & load_en_low & md3_low & md4_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !n_t_15x & !n_t_35x & !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & !md10_low & md3_low & 
+      md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & md11_low & !n_t_35x
+  # b_dixy_low & !clear & !erase & load_en_low & n_t_15x & !n_t_35x
+  # b_dixy_low & !clear & !erase & load_en_low & !n_t_35x & pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & !md7_low & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & !md4_low & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & !md3_low & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & md6_low & !n_t_35x
+  # b_dixy_low & !clear & !erase & load_en_low & md8_low & !n_t_35x
+
+clear =>
+    md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & 
+      md9_low & !n_t_15x & !pause_low & tp3
+  # initialize
+
+clear.oe  =>
+    !clear
+
+clear_done_low =>
+    !erase & !n_t_35x
+
+!col_red_low =>
+    color
+
+col_red_low.oe  =>
+    color
+
+color.d  =>
+    !data09_low & !load_en_low
+  # !data09_low & !dile_low
+
+color.ap  =>
+    !n3v
+
+color.ar  =>
+    clear
+
+color.ck  =>
+    !dile_low & tp3
+
+color_low =>
+    !color
+
+!data00_low =>
+    !dire_low & n_t_1x
+
+data00_low.oe  =>
+    !dire_low & n_t_1x
+
+!data06_low =>
+    !dire_low & write_thru
+
+data06_low.oe  =>
+    !dire_low & write_thru
+
+!data07_low =>
+    !dire_low & store
+
+data07_low.oe  =>
+    !dire_low & store
+
+!data09_low =>
+    color & !dire_low
+
+data09_low.oe  =>
+    color & !dire_low
+
+!data10_low =>
+    chan & !dire_low
+
+data10_low.oe  =>
+    chan & !dire_low
+
+!data11_low =>
+    !dire_low & int_en
+
+data11_low.oe  =>
+    !dire_low & int_en
+
+!dicd_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & 
+      !pause_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+  # md11_low
+
+!dicl_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & 
+      !pause_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+  # !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+
+!dile_low =>
+    !md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !n_t_15x & !pause_low
+
+!dilx_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & 
+      !pause_low
+  # md10_low
+  # md11_low
+
+!dily_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md9_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+  # !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+
+!dire_low =>
+    !md10_low & !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !n_t_15x & !pause_low
+
+!disd_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & 
+      !pause_low
+  # md10_low
+  # !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+
+!dixy_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md9_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+  # md11_low
+
+dly_done_low =>
+    !grn_delay & !red_delay
+
+erase.d  =>
+    !data08_low & !load_en_low
+  # !data08_low & !dile_low
+
+erase.ap  =>
+    !n3v
+
+erase.ar  =>
+    clear
+  # set_done
+
+erase.ck  =>
+    !dile_low & tp3
+
+!erase_low =>
+    erase
+
+erase_low.oe  =>
+    erase
+
+int_en.d  =>
+    bit11
+
+int_en.ap  =>
+    !n3v
+
+int_en.ar  =>
+    clear
+
+int_en.ck  =>
+    !dile_low & tp3
+
+!internal_io_low =>
+    md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+internal_io_low.oe  =>
+    md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+!interrupt_low =>
+    int_en & n_t_1x
+
+interrupt_low.oe  =>
+    int_en & n_t_1x
+
+!iot =>
+    md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+ld_en_reg =>
+    !dile_low & tp3
+
+!load_data_low =>
+    dile_low & load_en_low
+
+load_en_low =>
+    !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & 
+      !n_t_15x & !pause_low
+  # md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & 
+      !n_t_15x & !pause_low
+  # !md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & 
+      !n_t_15x & !pause_low
+  # !md7_low
+  # !md4_low
+  # !md3_low
+  # pause_low
+  # n_t_15x
+  # md8_low
+  # md6_low
+
+load_x =>
+    pause_low
+  # n_t_15x
+  # !md9_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+  # md11_low
+  # md10_low
+  # !btp3
+
+load_y =>
+    pause_low
+  # n_t_15x
+  # md9_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+  # !md11_low
+  # !md10_low
+  # !btp3
+
+n3v =>
+    1 
+
+!n_t_10x =>
+    !md3_low & !pause_low
+
+!n_t_11x =>
+    !data09_low & !dile_low
+  # !data09_low & !load_en_low
+
+!n_t_12x =>
+    !md4_low & !pause_low
+
+!n_t_13x =>
+    !data06_low & !dile_low
+  # !data06_low & !load_en_low
+
+!n_t_14x =>
+    !md5_low & !pause_low
+
+!n_t_17x =>
+    !md7_low & !pause_low
+
+!n_t_19x =>
+    !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+
+n_t_1x.d  =>
+    n3v
+
+n_t_1x.ap  =>
+    !n3v
+
+n_t_1x.ar  =>
+    clear
+  # btp3 & !load_en_low
+  # btp3 & n_t_35x
+  # btp3 & erase
+  # !b_dixy_low
+  # btp3 & md10_low & !md11_low & md3_low & md4_low & !md6_low & md7_low & 
+      !md8_low & md9_low & !n_t_15x & !pause_low
+
+n_t_1x.ck  =>
+    del_1_low & !grn_delay & ld_del_low & !red_delay & set_done_low
+
+!n_t_20x =>
+    !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & 
+      !pause_low
+
+!n_t_21x =>
+    md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & 
+      !pause_low
+
+!n_t_22x =>
+    !data07_low & !dile_low
+  # !data07_low & !load_en_low
+
+n_t_23x =>
+    md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & 
+      md9_low & !n_t_15x & !pause_low & tp3
+
+!n_t_24x =>
+    !data08_low & !dile_low
+  # !data08_low & !load_en_low
+
+n_t_26x =>
+    !clear & !set_done
+
+n_t_27x =>
+    color_low & !store
+
+n_t_27x.oe  =>
+    !n_t_27x
+
+n_t_2x =>
+    !load_en_low
+  # n_t_35x
+  # erase
+
+n_t_34x =>
+    !grn_delay & !red_delay
+
+n_t_3x =>
+    del_1_low & !grn_delay & ld_del_low & !red_delay & set_done_low
+
+!n_t_43x =>
+    color_low
+
+n_t_43x.oe  =>
+    color_low
+
+n_t_46x =>
+    1 
+
+!n_t_9x =>
+    del_1_low & z_pulse
+
+!non_store_low =>
+    !store
+
+non_store_low.oe  =>
+    !store
+
+!skip_low =>
+    !md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & 
+      md9_low & !n_t_15x & n_t_1x & !pause_low
+
+skip_low.oe  =>
+    !md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & 
+      md9_low & !n_t_15x & n_t_1x & !pause_low
+
+store.d  =>
+    !data07_low & !load_en_low
+  # !data07_low & !dile_low
+
+store.ap  =>
+    !n3v
+
+store.ar  =>
+    clear
+
+store.ck  =>
+    !dile_low & tp3
+
+write_thru.d  =>
+    !data06_low & !load_en_low
+  # !data06_low & !dile_low
+
+write_thru.ap  =>
+    !n3v
+
+write_thru.ar  =>
+    clear
+
+write_thru.ck  =>
+    !dile_low & tp3
+
+!write_thru_low =>
+    write_thru
+
+write_thru_low.oe  =>
+    write_thru
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    b_dicd_low                  0        I        11      -       -     
+    b_dixy_low                  0        V        11      0       4     
+    b_load_en_low               0        I        2       -       -     
+    bit10                       0        V        2       0       4     
+    bit11                       0        V        2       0       4     
+    btp3                        0        V        1       0       4     
+    c0_low                      0        V        2       0       4     
+    c0_low              oe      0        X        1       0       1     
+    c1_low                      0        V        1       0       4     
+    c1_low              oe      0        X        1       0       1     
+    chan                        104      N        -       -       -     
+    chan                d       104      M        1       0       4     
+    chan                ap      104      M        1       0       1     
+    chan                ar      104      M        1       0       1     
+    chan                ck      104      M        1       0       1     
+    chan_low                    0        V        1       0       4     
+    chan_low            oe      0        X        1       0       1     
+    cl_done_low                 0        I        11      -       -     
+    clear                       0        V        2       0       4     
+    clear               oe      0        X        1       0       1     
+    clear_done_low              0        I        1       -       -     
+    col_red_low                 0        V        1       0       4     
+    col_red_low         oe      0        X        1       0       1     
+    color                       0        V        -       -       -     
+    color               d       0        X        2       0       4     
+    color               ap      0        X        1       0       1     
+    color               ar      0        X        1       0       1     
+    color               ck      0        X        1       0       1     
+    color_low                   0        V        1       0       4     
+    data00_low                  0        V        1       0       4     
+    data00_low          oe      0        X        1       0       1     
+    data06_low                  0        V        1       0       4     
+    data06_low          oe      0        X        1       0       1     
+    data07_low                  0        V        1       0       4     
+    data07_low          oe      0        X        1       0       1     
+    data08_low                  0        V        -       -       -     
+    data09_low                  0        V        1       0       4     
+    data09_low          oe      0        X        1       0       1     
+    data10_low                  0        V        1       0       4     
+    data10_low          oe      0        X        1       0       1     
+    data11_low                  0        V        1       0       4     
+    data11_low          oe      0        X        1       0       1     
+    del_1_low                   0        V        -       -       -     
+    dicd_low                    0        I        10      -       -     
+    dicl_low                    0        I        10      -       -     
+    dile_low                    0        V        1       0       4     
+    dilx_low                    0        I        10      -       -     
+    dily_low                    0        I        10      -       -     
+    dire_low                    0        V        1       0       4     
+    disd_low                    0        I        10      -       -     
+    dixy_low                    0        I        10      -       -     
+    dly_done_low                0        I        1       -       -     
+    erase                       103      N        -       -       -     
+    erase               d       103      M        2       0       4     
+    erase               ap      103      M        1       0       1     
+    erase               ar      103      M        2       0       1     
+    erase               ck      103      M        1       0       1     
+    erase_low                   0        V        1       0       4     
+    erase_low           oe      0        X        1       0       1     
+    grn_delay                   0        V        -       -       -     
+    initialize                  0        V        -       -       -     
+    int_en                      105      N        -       -       -     
+    int_en              d       105      M        1       0       4     
+    int_en              ap      105      M        1       0       1     
+    int_en              ar      105      M        1       0       1     
+    int_en              ck      105      M        1       0       1     
+    intens                      0        V        -       -       -     
+    internal_io_low             0        V        1       0       4     
+    internal_io_low     oe      0        X        1       0       1     
+    interrupt_low               0        V        1       0       4     
+    interrupt_low       oe      0        X        1       0       1     
+    iot                         0        I        1       -       -     
+    ld_del_low                  0        V        -       -       -     
+    ld_en_reg                   0        I        1       -       -     
+    load_data_low               0        I        1       -       -     
+    load_en_low                 0        V        10      0       4     
+    load_x                      0        V        11      0       4     
+    load_y                      0        V        11      0       4     
+    md10_low                    0        V        -       -       -     
+    md11_low                    0        V        -       -       -     
+    md3_low                     0        V        -       -       -     
+    md4_low                     0        V        -       -       -     
+    md5_low                     0        V        -       -       -     
+    md6_low                     0        V        -       -       -     
+    md7_low                     0        V        -       -       -     
+    md8_low                     0        V        -       -       -     
+    md9_low                     0        V        -       -       -     
+    n3v                         0        V        1       0       4     
+    n_t_10x                     0        I        1       -       -     
+    n_t_11x                     0        I        2       -       -     
+    n_t_12x                     0        I        1       -       -     
+    n_t_13x                     0        I        2       -       -     
+    n_t_14x                     0        I        1       -       -     
+    n_t_15x                     0        V        -       -       -     
+    n_t_17x                     0        I        1       -       -     
+    n_t_19x                     0        I        1       -       -     
+    n_t_1x                      106      N        -       -       -     
+    n_t_1x              d       106      M        1       0       4     
+    n_t_1x              ap      106      M        1       0       1     
+    n_t_1x              ar      106      M        6       0       1     
+    n_t_1x              ck      106      M        1       0       1     
+    n_t_20x                     0        I        1       -       -     
+    n_t_21x                     0        I        1       -       -     
+    n_t_22x                     0        I        2       -       -     
+    n_t_23x                     0        I        1       -       -     
+    n_t_24x                     0        I        2       -       -     
+    n_t_26x                     0        I        1       -       -     
+    n_t_27x                     0        V        1       0       4     
+    n_t_27x             oe      0        X        1       0       1     
+    n_t_2x                      0        I        3       -       -     
+    n_t_34x                     0        V        1       0       4     
+    n_t_35x                     0        V        -       -       -     
+    n_t_3x                      0        I        1       -       -     
+    n_t_43x                     0        V        1       0       4     
+    n_t_43x             oe      0        X        1       0       1     
+    n_t_45x                     0        V        -       -       -     
+    n_t_46x                     0        I        1       -       -     
+    n_t_9x                      0        I        1       -       -     
+    non_store_low               0        V        1       0       4     
+    non_store_low       oe      0        X        1       0       1     
+    pause_low                   0        V        -       -       -     
+    red_delay                   0        V        -       -       -     
+    set_done                    0        V        -       -       -     
+    set_done_low                0        V        -       -       -     
+    skip_low                    0        V        1       0       4     
+    skip_low            oe      0        X        1       0       1     
+    store                       102      N        -       -       -     
+    store               d       102      M        2       0       4     
+    store               ap      102      M        1       0       1     
+    store               ar      102      M        1       0       1     
+    store               ck      102      M        1       0       1     
+    tp3                         0        V        -       -       -     
+    write_thru                  101      N        -       -       -     
+    write_thru          d       101      M        2       0       4     
+    write_thru          ap      101      M        1       0       1     
+    write_thru          ar      101      M        1       0       1     
+    write_thru          ck      101      M        1       0       1     
+    write_thru_low              0        V        1       0       4     
+    write_thru_low      oe      0        X        1       0       1     
+    z_pulse                     0        V        -       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

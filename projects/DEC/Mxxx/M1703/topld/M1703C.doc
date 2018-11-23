@@ -1,0 +1,379 @@
+
+*******************************************************************************
+                                    M1703C
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          f1508isptqfp100  Library DLIB-h-40-2
+Created         Thu Nov 22 17:48:22 2018
+Name            M1703C 
+Partno          cpld 
+Revision        01 
+Date            11/22/2018 
+Designer        
+Company         
+Assembly        None 
+Location        E1 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+c0_low =>
+    !n_t_337x
+
+c0_low.oe  =>
+    n_t_337x
+
+c1_low =>
+    !n_t_337x
+
+c1_low.oe  =>
+    n_t_337x
+
+data0_low =>
+    !n_t_1x
+  # !d00
+
+data0_low.oe  =>
+    d00 & n_t_1x
+
+data10_low =>
+    !n_t_3x
+  # !d10
+
+data10_low.oe  =>
+    d10 & n_t_3x
+
+data11_low =>
+    !n_t_3x
+  # !d11
+
+data11_low.oe  =>
+    d11 & n_t_3x
+
+data1_low =>
+    !n_t_1x
+  # !d01
+
+data1_low.oe  =>
+    d01 & n_t_1x
+
+data2_low =>
+    !n_t_1x
+  # !d02
+
+data2_low.oe  =>
+    d02 & n_t_1x
+
+data3_low =>
+    !n_t_1x
+  # !d03
+
+data3_low.oe  =>
+    d03 & n_t_1x
+
+data4_low =>
+    !n_t_1x
+  # !d04
+
+data4_low.oe  =>
+    d04 & n_t_1x
+
+data5_low =>
+    !n_t_1x
+  # !d05
+
+data5_low.oe  =>
+    d05 & n_t_1x
+
+data6_low =>
+    !n_t_3x
+  # !d06
+
+data6_low.oe  =>
+    d06 & n_t_3x
+
+data7_low =>
+    !n_t_3x
+  # !d07
+
+data7_low.oe  =>
+    d07 & n_t_3x
+
+data8_low =>
+    !n_t_3x
+  # !d08
+
+data8_low.oe  =>
+    d08 & n_t_3x
+
+data9_low =>
+    !n_t_3x
+  # !d09
+
+data9_low.oe  =>
+    d09 & n_t_3x
+
+!device_flag =>
+    n_t_24x & n_t_27x
+
+!initialize_low =>
+    initialize
+
+!int_enable =>
+    iot1l & n_t_120x
+
+int_rqst_low =>
+    !n_t_27x
+  # !int_enable
+
+int_rqst_low.oe  =>
+    int_enable & n_t_27x
+
+internal_io_low =>
+    !n_t_196x
+
+internal_io_low.oe  =>
+    n_t_196x
+
+!io_pauseh =>
+    io_pause_low
+
+iot0l =>
+    md11h
+  # md10h
+  # md09h
+  # iotl
+
+iot1l =>
+    !md11h
+  # md10h
+  # md09h
+  # iotl
+
+iot2l =>
+    md11h
+  # !md10h
+  # md09h
+  # iotl
+
+iot3l =>
+    !md11h
+  # !md10h
+  # md09h
+  # iotl
+
+iot4l =>
+    md11h
+  # md10h
+  # !md09h
+  # iotl
+
+!iotl =>
+    io_pauseh & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x
+
+!md03h =>
+    md03_low
+
+!md03l =>
+    md03h
+
+!md04h =>
+    md04_low
+
+!md04l =>
+    md04h
+
+!md05h =>
+    md05_low
+
+!md05l =>
+    md05h
+
+!md06h =>
+    md06_low
+
+!md06l =>
+    md06h
+
+!md07h =>
+    md07_low
+
+!md07l =>
+    md07h
+
+!md08h =>
+    md08_low
+
+!md08l =>
+    md08h
+
+!md09h =>
+    md09_low
+
+!md10h =>
+    md10_low
+
+!md11h =>
+    md11_low
+
+!n_t_10x =>
+    iot3l
+
+!n_t_120x =>
+    int_enable & n_t_8x
+
+!n_t_13x =>
+    initialize_low & iot0l & iot2l
+
+!n_t_196x =>
+    iotl
+
+!n_t_1x =>
+    iot4l
+
+!n_t_24x =>
+    n_t_26x
+
+!n_t_26x =>
+    initialize_low & iot2l & iot4l
+
+!n_t_27x =>
+    device_flag & rd_rqst
+
+!n_t_337x =>
+    iot4l
+
+!n_t_3x =>
+    iot4l
+
+!n_t_8x =>
+    n_t_13x
+
+!rd_done_low =>
+    device_flag & iot4l
+
+skip_low =>
+    !n_t_10x
+
+skip_low.oe  =>
+    n_t_10x
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    c0_low                      0        V        1       0       4     
+    c0_low              oe      0        X        1       0       1     
+    c1_low                      0        V        1       0       4     
+    c1_low              oe      0        X        1       0       1     
+    d00                         0        V        -       -       -     
+    d01                         0        V        -       -       -     
+    d02                         0        V        -       -       -     
+    d03                         0        V        -       -       -     
+    d04                         0        V        -       -       -     
+    d05                         0        V        -       -       -     
+    d06                         0        V        -       -       -     
+    d07                         0        V        -       -       -     
+    d08                         0        V        -       -       -     
+    d09                         0        V        -       -       -     
+    d10                         0        V        -       -       -     
+    d11                         0        V        -       -       -     
+    data0_low                   0        V        2       0       4     
+    data0_low           oe      0        X        1       0       1     
+    data10_low                  0        V        2       0       4     
+    data10_low          oe      0        X        1       0       1     
+    data11_low                  0        V        2       0       4     
+    data11_low          oe      0        X        1       0       1     
+    data1_low                   0        V        2       0       4     
+    data1_low           oe      0        X        1       0       1     
+    data2_low                   0        V        2       0       4     
+    data2_low           oe      0        X        1       0       1     
+    data3_low                   0        V        2       0       4     
+    data3_low           oe      0        X        1       0       1     
+    data4_low                   0        V        2       0       4     
+    data4_low           oe      0        X        1       0       1     
+    data5_low                   0        V        2       0       4     
+    data5_low           oe      0        X        1       0       1     
+    data6_low                   0        V        2       0       4     
+    data6_low           oe      0        X        1       0       1     
+    data7_low                   0        V        2       0       4     
+    data7_low           oe      0        X        1       0       1     
+    data8_low                   0        V        2       0       4     
+    data8_low           oe      0        X        1       0       1     
+    data9_low                   0        V        2       0       4     
+    data9_low           oe      0        X        1       0       1     
+    device_flag                 101      N        1       0       4     
+    initialize                  0        V        -       -       -     
+    initialize_low              102      N        1       0       4     
+    int_enable                  103      N        1       0       4     
+    int_rqst_low                0        V        2       0       4     
+    int_rqst_low        oe      0        X        1       0       1     
+    internal_io_low             0        V        1       0       4     
+    internal_io_low     oe      0        X        1       0       1     
+    io_pause_low                0        V        -       -       -     
+    io_pauseh                   104      N        1       0       4     
+    iot0l                       105      N        4       0       4     
+    iot1l                       106      N        4       0       4     
+    iot2l                       107      N        4       0       4     
+    iot3l                       108      N        4       0       4     
+    iot4l                       109      N        4       0       4     
+    iotl                        110      N        1       0       4     
+    md03_low                    0        V        -       -       -     
+    md03h                       0        V        1       0       4     
+    md03l                       0        V        1       0       4     
+    md04_low                    0        V        -       -       -     
+    md04h                       0        V        1       0       4     
+    md04l                       0        V        1       0       4     
+    md05_low                    0        V        -       -       -     
+    md05h                       0        V        1       0       4     
+    md05l                       0        V        1       0       4     
+    md06_low                    0        V        -       -       -     
+    md06h                       0        V        1       0       4     
+    md06l                       0        V        1       0       4     
+    md07_low                    0        V        -       -       -     
+    md07h                       0        V        1       0       4     
+    md07l                       0        V        1       0       4     
+    md08_low                    0        V        -       -       -     
+    md08h                       0        V        1       0       4     
+    md08l                       0        V        1       0       4     
+    md09_low                    0        V        -       -       -     
+    md09h                       111      N        1       0       4     
+    md10_low                    0        V        -       -       -     
+    md10h                       112      N        1       0       4     
+    md11_low                    0        V        -       -       -     
+    md11h                       113      N        1       0       4     
+    n_t_10x                     114      N        1       0       4     
+    n_t_120x                    115      N        1       0       4     
+    n_t_13x                     116      N        1       0       4     
+    n_t_196x                    117      N        1       0       4     
+    n_t_1x                      118      N        1       0       4     
+    n_t_24x                     119      N        1       0       4     
+    n_t_26x                     120      N        1       0       4     
+    n_t_27x                     121      N        1       0       4     
+    n_t_31x                     0        V        -       -       -     
+    n_t_337x                    122      N        1       0       4     
+    n_t_39x                     0        V        -       -       -     
+    n_t_3x                      123      N        1       0       4     
+    n_t_40x                     0        V        -       -       -     
+    n_t_41x                     0        V        -       -       -     
+    n_t_42x                     0        V        -       -       -     
+    n_t_45x                     0        V        -       -       -     
+    n_t_8x                      124      N        1       0       4     
+    rd_done_low                 0        V        1       0       4     
+    rd_rqst                     0        V        -       -       -     
+    skip_low                    0        V        1       0       4     
+    skip_low            oe      0        X        1       0       1     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

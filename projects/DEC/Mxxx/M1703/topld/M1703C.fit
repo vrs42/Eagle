@@ -1,0 +1,662 @@
+Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Thu Nov 22 17:48:22 2018
+
+
+fit1508 C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M1703\TOPLD\M1703C.tt2 -CUPL -dev P1508T100 -JTAG ON
+
+
+****** Initial fitting strategy and property ******
+ Pla_in_file = M1703C.tt2
+ Pla_out_file = M1703C.tt3
+ Jedec_file = M1703C.jed
+ Vector_file = M1703C.tmv
+ verilog_file = M1703C.vt
+ Time_file = 
+ Log_file = M1703C.fit
+ err_file = 
+ Device_name = TQFP100
+ Module_name = 
+ Package_type = TQFP
+ Preassign_file = 
+ Property_file = 
+ Sleep_mode = 
+ Preassignment = 
+ Security_mode = OFF
+ Pin_keep_mode = ON
+ Dedicated_input_clock = 
+ Dedicated_input_reset = 
+ Dedicated_input_oe = 
+ supporter = CUPL
+ optimize = ON
+ Soft_buffer = 
+ Xor_synthesis = OFF
+ Foldback_logic =  on
+ Expander = 
+ Cascade_logic = OFF
+ Dedicated_input = 
+ Output_fast = OFF
+ *******************************
+ Power down pin 1 = OFF
+ Power down pin 2 = OFF
+ power_reset = OFF
+ JTAG = ON
+ TDI pullup = OFF
+ TMS pullup = OFF
+ MC_power = OFF
+ Open_collector =  c0_low,  c1_low,  data0_low,  data10_low,  data11_low,  data1_low,  data2_low,  data3_low,  data4_low,  data5_low,  data6_low,  data7_low,  data8_low,  data9_low,  int_rqst_low,  internal_io_low,  skip_low, 
+ ITD0 = ON
+ ITD1 = ON
+ ITD2 = ON
+ Fast_inlatch = off
+ *******************************
+---------------------------------------------------------
+ Fitter_Pass 1, Preassign = KEEP, LOGIC_DOUBLING : OFF 
+ ... 
+## ERROR : Bad user pin assignement : 101
+ ## ERROR : Bad user pin assignement 
+---------------------------------------------------------
+ Fitter_Pass 2, Preassign = KEEP, NODE ASSIGN : OFF 
+ ... 
+
+Performing global Output Enable pin assignments ...
+
+Performing global pin assignments ...
+--------------------------------------
+
+
+
+Final global control pins assignment (if applicable)...
+-------------------------------------------------------
+
+
+
+Performing input pin pre-assignments ...
+------------------------------------
+
+Attempt to place floating signals ...
+------------------------------------
+data2_low is placed at pin 2 (MC 1)
+data3_low is placed at pin 1 (MC 3)
+data4_low is placed at pin 100 (MC 5)
+data6_low is placed at pin 99 (MC 6)
+data5_low is placed at pin 98 (MC 8)
+data7_low is placed at pin 97 (MC 9)
+n_t_27x is placed at foldback expander node 310 (MC 10)
+data8_low is placed at pin 96 (MC 11)
+n_t_120x is placed at foldback expander node 311 (MC 11)
+device_flag is placed at foldback expander node 312 (MC 12)
+data9_low is placed at pin 94 (MC 13)
+int_enable is placed at foldback expander node 313 (MC 13)
+int_rqst_low is placed at pin 93 (MC 14)
+iot0l is placed at foldback expander node 314 (MC 14)
+n_t_24x is placed at feedback node 615 (MC 15)
+iot2l is placed at foldback expander node 315 (MC 15)
+rd_done_low is placed at pin 92 (MC 16)
+iot1l is placed at foldback expander node 316 (MC 16)
+md03h is placed at pin 14 (MC 17)
+internal_io_low is placed at pin 13 (MC 19)
+c1_low is placed at pin 12 (MC 21)
+skip_low is placed at pin 10 (MC 22)
+c0_low is placed at pin 9 (MC 24)
+data10_low is placed at pin 8 (MC 25)
+data0_low is placed at pin 7 (MC 27)
+data1_low is placed at pin 6 (MC 29)
+data11_low is placed at pin 5 (MC 30)
+TDI is placed at pin 4 (MC 32)
+md08h is placed at pin 25 (MC 33)
+md07h is placed at pin 24 (MC 35)
+md06l is placed at pin 23 (MC 37)
+md06h is placed at pin 22 (MC 38)
+md05l is placed at pin 21 (MC 40)
+md05h is placed at pin 20 (MC 41)
+md04l is placed at pin 19 (MC 43)
+md03l is placed at pin 17 (MC 45)
+md04h is placed at pin 16 (MC 46)
+TMS is placed at pin 15 (MC 48)
+md11_low is placed at pin 37 (MC 49)
+md10_low is placed at pin 36 (MC 51)
+md09_low is placed at pin 35 (MC 53)
+io_pause_low is placed at pin 33 (MC 54)
+n_t_31x is placed at pin 32 (MC 56)
+n_t_39x is placed at pin 31 (MC 57)
+n_t_40x is placed at pin 30 (MC 59)
+n_t_41x is placed at pin 29 (MC 61)
+md08l is placed at pin 28 (MC 62)
+md07l is placed at pin 27 (MC 64)
+n_t_42x is placed at pin 40 (MC 65)
+n_t_45x is placed at pin 41 (MC 67)
+md03_low is placed at pin 42 (MC 69)
+md07_low is placed at pin 44 (MC 70)
+md08_low is placed at pin 45 (MC 72)
+rd_rqst is placed at pin 46 (MC 73)
+initialize is placed at pin 47 (MC 75)
+d09 is placed at pin 48 (MC 77)
+d08 is placed at pin 49 (MC 78)
+d07 is placed at pin 50 (MC 80)
+d05 is placed at pin 52 (MC 81)
+d06 is placed at pin 53 (MC 83)
+d04 is placed at pin 54 (MC 85)
+d03 is placed at pin 55 (MC 86)
+d02 is placed at pin 56 (MC 88)
+d11 is placed at pin 57 (MC 89)
+d01 is placed at pin 58 (MC 91)
+d00 is placed at pin 60 (MC 93)
+d10 is placed at pin 61 (MC 94)
+TCK is placed at pin 62 (MC 96)
+md04_low is placed at pin 63 (MC 97)
+md05_low is placed at pin 64 (MC 99)
+md06_low is placed at pin 65 (MC 101)
+TDO is placed at pin 73 (MC 112)
+
+                                                                                             
+                                  i                                                          
+                                  n r                                                        
+                                  t d                                                        
+                    d d d d d   d _ _                                                        
+                    a a a a a   a r d                                                        
+                    t t t t t   t q o                                                        
+                    a a a a a   a s n                                                        
+                    4 6 5 7 8   9 t e                                                        
+                    _ _ _ _ _   _ _ _                                                        
+                    l l l l l G l l l V         G       V                                    
+                    o o o o o N o o o C         N       C                                    
+                    w w w w w D w w w C         D       C                                    
+                  ------------------------------------------------------                     
+                 / 100  98  96  94  92  90  88  86  84  82  80  78  76  \                   
+                /     99  97  95  93  91  89  87  85  83  81  79  77     \                  
+     data3_low | 1                                                     75 |                  
+     data2_low | 2                                                     74 | GND              
+           VCC | 3                                                     73 | TDO              
+           TDI | 4                                                     72 |                  
+    data11_low | 5                                                     71 |                  
+     data1_low | 6                                                     70 |                  
+     data0_low | 7                                                     69 |                  
+    data10_low | 8                                                     68 |                  
+        c0_low | 9                                                     67 |                  
+      skip_low | 10                                                    66 | VCC              
+           GND | 11                                                    65 | md06_low         
+        c1_low | 12                     ATF1508                        64 | md05_low         
+nternal_io_low | 13                  100-Lead TQFP                     63 | md04_low         
+         md03h | 14                                                    62 | TCK              
+           TMS | 15                                                    61 | d10              
+         md04h | 16                                                    60 | d00              
+         md03l | 17                                                    59 | GND              
+           VCC | 18                                                    58 | d01              
+         md04l | 19                                                    57 | d11              
+         md05h | 20                                                    56 | d02              
+         md05l | 21                                                    55 | d03              
+         md06h | 22                                                    54 | d04              
+         md06l | 23                                                    53 | d06              
+         md07h | 24                                                    52 | d05              
+         md08h | 25                                                    51 | VCC              
+                \     27  29  31  33  35  37  39  41  43  45   47  49    /                  
+                 \  26  28  30  32  34  36  38  40  42  44  46  48   50 /                   
+                  ------------------------------------------------------                     
+d                   G m m n n n n i V m m m G V n n m G m m r i d d                          
+0                   N d d _ _ _ _ o C d d d N C _ _ d N d d d n 0 0                          
+7                   D 0 0 t t t t _ C 0 1 1 D C t t 0 D 0 0 _ i 9 8                          
+                      7 8 _ _ _ _ p   9 0 1     _ _ 3   7 8 r t                              
+                      l l 4 4 3 3 a   _ _ _     4 4 _   _ _ q i                              
+                          1 0 9 1 u   l l l     2 5 l   l l s a                              
+                          x x x x s   o o o     x x o   o o t l                              
+                                  e   w w w         w   w w   i                              
+                                  _                           z                              
+                                  l                           e                              
+                                  o                                                          
+                                  w                                                          
+
+
+
+VCC = Supply Voltage pin which must be connected to (5.0V or 3.0V)
+
+GND = GND pin which must be connected to ground
+
+TMS,TDI,TDO,TDI = JTAG pins which must reserved for the JTAG interface
+
+NC = Unused I/O pins which must be unconnected on the board
+
+Universal-Interconnect-Multiplexer assignments
+------------------------------------------------
+FanIn assignment for block A [21]
+{
+d02,d07,d08,d03,d04,d09,d05,d06,
+initialize,io_pause_low,
+md11_low,md10_low,md09_low,
+n_t_40x,n_t_31x,n_t_39x,n_t_45x,n_t_41x,n_t_24x,n_t_42x,
+rd_rqst,
+}
+Multiplexer assignment for block A
+d02			(MC21	P)   : MUX 3		Ref (F88p)
+d07			(MC16	P)   : MUX 4		Ref (E80p)
+md11_low		(MC2	P)   : MUX 5		Ref (D49p)
+initialize		(MC13	P)   : MUX 6		Ref (E75p)
+io_pause_low		(MC5	P)   : MUX 7		Ref (D54p)
+d08			(MC15	P)   : MUX 8		Ref (E78p)
+md10_low		(MC3	P)   : MUX 9		Ref (D51p)
+d03			(MC20	P)   : MUX 11		Ref (F86p)
+n_t_40x			(MC8	P)   : MUX 12		Ref (D59p)
+d04			(MC19	P)   : MUX 13		Ref (F85p)
+n_t_31x			(MC6	P)   : MUX 15		Ref (D56p)
+d09			(MC14	P)   : MUX 16		Ref (E77p)
+n_t_39x			(MC7	P)   : MUX 18		Ref (D57p)
+rd_rqst			(MC12	P)   : MUX 20		Ref (E73p)
+d05			(MC17	P)   : MUX 25		Ref (F81p)
+d06			(MC18	P)   : MUX 27		Ref (F83p)
+md09_low		(MC4	P)   : MUX 31		Ref (D53p)
+n_t_45x			(MC11	P)   : MUX 33		Ref (E67p)
+n_t_41x			(MC9	P)   : MUX 36		Ref (D61p)
+n_t_24x			(MC1	FB)  : MUX 37		Ref (A15fb)
+n_t_42x			(MC10	P)   : MUX 39		Ref (E65p)
+
+FanIn assignment for block B [15]
+{
+d01,d10,d00,d11,
+io_pause_low,
+md11_low,md10_low,md03_low,md09_low,
+n_t_39x,n_t_42x,n_t_31x,n_t_41x,n_t_40x,n_t_45x,
+}
+Multiplexer assignment for block B
+n_t_39x			(MC6	P)   : MUX 4		Ref (D57p)
+md11_low		(MC1	P)   : MUX 5		Ref (D49p)
+d01			(MC13	P)   : MUX 6		Ref (F91p)
+io_pause_low		(MC4	P)   : MUX 7		Ref (D54p)
+d10			(MC15	P)   : MUX 8		Ref (F94p)
+md10_low		(MC2	P)   : MUX 9		Ref (D51p)
+d00			(MC14	P)   : MUX 12		Ref (F93p)
+n_t_42x			(MC9	P)   : MUX 13		Ref (E65p)
+n_t_31x			(MC5	P)   : MUX 15		Ref (D56p)
+md03_low		(MC11	P)   : MUX 23		Ref (E69p)
+n_t_41x			(MC8	P)   : MUX 26		Ref (D61p)
+d11			(MC12	P)   : MUX 28		Ref (F89p)
+n_t_40x			(MC7	P)   : MUX 30		Ref (D59p)
+md09_low		(MC3	P)   : MUX 31		Ref (D53p)
+n_t_45x			(MC10	P)   : MUX 33		Ref (E67p)
+
+FanIn assignment for block C [6]
+{
+md08_low,md06_low,md03_low,md07_low,md05_low,md04_low,
+}
+Multiplexer assignment for block C
+md08_low		(MC3	P)   : MUX 5		Ref (E72p)
+md06_low		(MC6	P)   : MUX 9		Ref (G101p)
+md03_low		(MC1	P)   : MUX 11		Ref (E69p)
+md07_low		(MC2	P)   : MUX 13		Ref (E70p)
+md05_low		(MC5	P)   : MUX 23		Ref (G99p)
+md04_low		(MC4	P)   : MUX 27		Ref (G97p)
+
+FanIn assignment for block D [2]
+{
+md08_low,md07_low,
+}
+Multiplexer assignment for block D
+md08_low		(MC2	P)   : MUX 5		Ref (E72p)
+md07_low		(MC1	P)   : MUX 13		Ref (E70p)
+
+Creating JEDEC file C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M1703\TOPLD\M1703C.jed ...
+
+TQFP100 programmed logic:
+-----------------------------------
+md04h = !md04_low;
+
+md03h = !md03_low;
+
+md05h = !md05_low;
+
+md06h = !md06_low;
+
+md08h = !md08_low;
+
+md07h = !md07_low;
+
+md03l = md03_low;
+
+md06l = md06_low;
+
+md04l = md04_low;
+
+md05l = md05_low;
+
+md07l = md07_low;
+
+md08l = md08_low;
+
+!internal_io_low = (!io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!iot1l = (!io_pause_low & md09_low & md10_low & !md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!iot2l = (!io_pause_low & md09_low & !md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!iot0l = (!io_pause_low & md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!skip_low = (!io_pause_low & md09_low & !md10_low & !md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!int_enable = (n_t_120x & iot1l);
+
+!c1_low = (!io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data0_low = (d00 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data1_low = (d01 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data2_low = (d02 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data4_low = (d04 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data3_low = (d03 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data5_low = (d05 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+n_t_24x = ((!io_pause_low & md09_low & !md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x)
+	# (!io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x)
+	# initialize);
+
+!c0_low = (!io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data11_low = (d11 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data10_low = (d10 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data8_low = (d08 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data6_low = (d06 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data7_low = (d07 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!data9_low = (d09 & !io_pause_low & !md09_low & md10_low & md11_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+!int_rqst_low = (n_t_27x & int_enable);
+
+!device_flag = (n_t_27x & !n_t_24x);
+
+!n_t_120x = (int_enable & !initialize & iot0l & iot2l);
+
+!n_t_27x = (rd_rqst & device_flag);
+
+rd_done_low = ((n_t_27x & !n_t_24x)
+	# (md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x));
+
+internal_io_low.OE = (!io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+skip_low.OE = (md09_low & !md11_low & !md10_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+c1_low.OE = (md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data0_low.OE = (d00 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data1_low.OE = (d01 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data2_low.OE = (d02 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data4_low.OE = (d04 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data3_low.OE = (d03 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data5_low.OE = (d05 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+c0_low.OE = (md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data11_low.OE = (d11 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data10_low.OE = (d10 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data8_low.OE = (d08 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data6_low.OE = (d06 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data7_low.OE = (d07 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+data9_low.OE = (d09 & md11_low & md10_low & !md09_low & !io_pause_low & n_t_31x & n_t_39x & n_t_40x & n_t_41x & n_t_42x & n_t_45x);
+
+int_rqst_low.OE = (int_enable & n_t_27x);
+
+
+TQFP100 Pin/Node Placement:
+------------------------------------
+Pin 1  = data3_low; /* MC 3 */
+Pin 2  = data2_low; /* MC 1 */
+Pin 4  = TDI; /* MC 32 */
+Pin 5  = data11_low; /* MC 30 */
+Pin 6  = data1_low; /* MC 29 */
+Pin 7  = data0_low; /* MC 27 */
+Pin 8  = data10_low; /* MC 25 */
+Pin 9  = c0_low; /* MC 24 */
+Pin 10 = skip_low; /* MC 22 */ 
+Pin 12 = c1_low; /* MC 21 */ 
+Pin 13 = internal_io_low; /* MC 19 */ 
+Pin 14 = md03h; /* MC 17 */ 
+Pin 15 = TMS; /* MC 48 */ 
+Pin 16 = md04h; /* MC 46 */ 
+Pin 17 = md03l; /* MC 45 */ 
+Pin 19 = md04l; /* MC 43 */ 
+Pin 20 = md05h; /* MC 41 */ 
+Pin 21 = md05l; /* MC 40 */ 
+Pin 22 = md06h; /* MC 38 */ 
+Pin 23 = md06l; /* MC 37 */ 
+Pin 24 = md07h; /* MC 35 */ 
+Pin 25 = md08h; /* MC 33 */ 
+Pin 27 = md07l; /* MC 64 */ 
+Pin 28 = md08l; /* MC 62 */ 
+Pin 29 = n_t_41x; /* MC 61 */ 
+Pin 30 = n_t_40x; /* MC 59 */ 
+Pin 31 = n_t_39x; /* MC 57 */ 
+Pin 32 = n_t_31x; /* MC 56 */ 
+Pin 33 = io_pause_low; /* MC 54 */ 
+Pin 35 = md09_low; /* MC 53 */ 
+Pin 36 = md10_low; /* MC 51 */ 
+Pin 37 = md11_low; /* MC 49 */ 
+Pin 40 = n_t_42x; /* MC 65 */ 
+Pin 41 = n_t_45x; /* MC 67 */ 
+Pin 42 = md03_low; /* MC 69 */ 
+Pin 44 = md07_low; /* MC 70 */ 
+Pin 45 = md08_low; /* MC 72 */ 
+Pin 46 = rd_rqst; /* MC 73 */ 
+Pin 47 = initialize; /* MC 75 */ 
+Pin 48 = d09; /* MC 77 */ 
+Pin 49 = d08; /* MC 78 */ 
+Pin 50 = d07; /* MC 80 */ 
+Pin 52 = d05; /* MC 81 */ 
+Pin 53 = d06; /* MC 83 */ 
+Pin 54 = d04; /* MC 85 */ 
+Pin 55 = d03; /* MC 86 */ 
+Pin 56 = d02; /* MC 88 */ 
+Pin 57 = d11; /* MC 89 */ 
+Pin 58 = d01; /* MC 91 */ 
+Pin 60 = d00; /* MC 93 */ 
+Pin 61 = d10; /* MC 94 */ 
+Pin 62 = TCK; /* MC 96 */ 
+Pin 63 = md04_low; /* MC 97 */ 
+Pin 64 = md05_low; /* MC 99 */ 
+Pin 65 = md06_low; /* MC 101 */ 
+Pin 73 = TDO; /* MC 112 */ 
+Pin 92 = rd_done_low; /* MC 16 */ 
+Pin 93 = int_rqst_low; /* MC 14 */ 
+Pin 94 = data9_low; /* MC 13 */ 
+Pin 96 = data8_low; /* MC 11 */ 
+Pin 97 = data7_low; /* MC  9 */
+Pin 98 = data5_low; /* MC  8 */
+Pin 99 = data6_low; /* MC  6 */
+Pin 100 = data4_low; /* MC  5 */
+PINNODE 310 = n_t_27x; /* MC 10 Foldback */
+PINNODE 311 = n_t_120x; /* MC 11 Foldback */
+PINNODE 312 = device_flag; /* MC 12 Foldback */
+PINNODE 313 = int_enable; /* MC 13 Foldback */
+PINNODE 314 = iot0l; /* MC 14 Foldback */
+PINNODE 315 = iot2l; /* MC 15 Foldback */
+PINNODE 316 = iot1l; /* MC 16 Foldback */
+PINNODE 615 = n_t_24x; /* MC 15 Feedback */
+
+** Resource Usage **
+
+
+DCERP Field = Summary of Allocations.
+|||||
+|||||_Preset [p,-]       ==  p = PT preset, - No Preset.
+||||
+||||__Reset [g,r,-]      ==  g= Global AR, r = PT reset, - No reset.
+|||
+|||___Clock Enable [e,-] ==  e = Product Term, - always enabled, - none.
+||
+||____Clock [c,g,-],     ==  c = Product term, g = Global term, - No Clock.
+|
+|_____Type [C,D,L,T],    ==  Register type C= combin, D=dff, L=latch, T=tff.
+
+For input only = INPUT.
+
+MCell Pin# Oe   PinDrive        DCERP  FBDrive  DCERP  Foldback    CascadeOut     TotPT output_slew
+MC1   2    PT   data2_low       C----  --              --          --             2     slow
+MC2   0         --                     --              --          --             0     slow
+MC3   1    PT   data3_low       C----  --              --          --             2     slow
+MC4   0         --                     --              --          --             0     slow
+MC5   100  PT   data4_low       C----  --              --          --             2     slow
+MC6   99   PT   data6_low       C----  --              --          --             2     slow
+MC7   0         --                     --              --          --             0     slow
+MC8   98   PT   data5_low       C----  --              --          --             2     slow
+MC9   97   PT   data7_low       C----  --              --          --             2     slow
+MC10  0         --                     --              n_t_27x     --             1     slow
+MC11  96   PT   data8_low       C----  --              n_t_120x    --             3     slow
+MC12  0         --                     --              device_flag --             1     slow
+MC13  94   PT   data9_low       C----  --              int_enable  --             3     slow
+MC14  93   PT   int_rqst_low    C----  --              iot0l       --             3     slow
+MC15  0         --                     n_t_24x  C----  iot2l       --             4     slow
+MC16  92   on   rd_done_low     C----  --              iot1l       --             3     slow
+MC17  14   on   md03h           C----  --              --          --             1     slow
+MC18  0         --                     --              --          --             0     slow
+MC19  13   PT   internal_io_low C----  --              --          --             2     slow
+MC20  0         --                     --              --          --             0     slow
+MC21  12   PT   c1_low          C----  --              --          --             2     slow
+MC22  10   PT   skip_low        C----  --              --          --             2     slow
+MC23  0         --                     --              --          --             0     slow
+MC24  9    PT   c0_low          C----  --              --          --             2     slow
+MC25  8    PT   data10_low      C----  --              --          --             2     slow
+MC26  0         --                     --              --          --             0     slow
+MC27  7    PT   data0_low       C----  --              --          --             2     slow
+MC28  0         --                     --              --          --             0     slow
+MC29  6    PT   data1_low       C----  --              --          --             2     slow
+MC30  5    PT   data11_low      C----  --              --          --             2     slow
+MC31  0         --                     --              --          --             0     slow
+MC32  4    --   TDI             INPUT  --              --          --             0     slow
+MC33  25   on   md08h           C----  --              --          --             1     slow
+MC34  0         --                     --              --          --             0     slow
+MC35  24   on   md07h           C----  --              --          --             1     slow
+MC36  0         --                     --              --          --             0     slow
+MC37  23   on   md06l           C----  --              --          --             1     slow
+MC38  22   on   md06h           C----  --              --          --             1     slow
+MC39  0         --                     --              --          --             0     slow
+MC40  21   on   md05l           C----  --              --          --             1     slow
+MC41  20   on   md05h           C----  --              --          --             1     slow
+MC42  0         --                     --              --          --             0     slow
+MC43  19   on   md04l           C----  --              --          --             1     slow
+MC44  0         --                     --              --          --             0     slow
+MC45  17   on   md03l           C----  --              --          --             1     slow
+MC46  16   on   md04h           C----  --              --          --             1     slow
+MC47  0         --                     --              --          --             0     slow
+MC48  15   --   TMS             INPUT  --              --          --             0     slow
+MC49  37   --   md11_low        INPUT  --              --          --             0     slow
+MC50  0         --                     --              --          --             0     slow
+MC51  36   --   md10_low        INPUT  --              --          --             0     slow
+MC52  0         --                     --              --          --             0     slow
+MC53  35   --   md09_low        INPUT  --              --          --             0     slow
+MC54  33   --   io_pause_low    INPUT  --              --          --             0     slow
+MC55  0         --                     --              --          --             0     slow
+MC56  32   --   n_t_31x         INPUT  --              --          --             0     slow
+MC57  31   --   n_t_39x         INPUT  --              --          --             0     slow
+MC58  0         --                     --              --          --             0     slow
+MC59  30   --   n_t_40x         INPUT  --              --          --             0     slow
+MC60  0         --                     --              --          --             0     slow
+MC61  29   --   n_t_41x         INPUT  --              --          --             0     slow
+MC62  28   on   md08l           C----  --              --          --             1     slow
+MC63  0         --                     --              --          --             0     slow
+MC64  27   on   md07l           C----  --              --          --             1     slow
+MC65  40   --   n_t_42x         INPUT  --              --          --             0     slow
+MC66  0         --                     --              --          --             0     slow
+MC67  41   --   n_t_45x         INPUT  --              --          --             0     slow
+MC68  0         --                     --              --          --             0     slow
+MC69  42   --   md03_low        INPUT  --              --          --             0     slow
+MC70  44   --   md07_low        INPUT  --              --          --             0     slow
+MC71  0         --                     --              --          --             0     slow
+MC72  45   --   md08_low        INPUT  --              --          --             0     slow
+MC73  46   --   rd_rqst         INPUT  --              --          --             0     slow
+MC74  0         --                     --              --          --             0     slow
+MC75  47   --   initialize      INPUT  --              --          --             0     slow
+MC76  0         --                     --              --          --             0     slow
+MC77  48   --   d09             INPUT  --              --          --             0     slow
+MC78  49   --   d08             INPUT  --              --          --             0     slow
+MC79  0         --                     --              --          --             0     slow
+MC80  50   --   d07             INPUT  --              --          --             0     slow
+MC81  52   --   d05             INPUT  --              --          --             0     slow
+MC82  0         --                     --              --          --             0     slow
+MC83  53   --   d06             INPUT  --              --          --             0     slow
+MC84  0         --                     --              --          --             0     slow
+MC85  54   --   d04             INPUT  --              --          --             0     slow
+MC86  55   --   d03             INPUT  --              --          --             0     slow
+MC87  0         --                     --              --          --             0     slow
+MC88  56   --   d02             INPUT  --              --          --             0     slow
+MC89  57   --   d11             INPUT  --              --          --             0     slow
+MC90  0         --                     --              --          --             0     slow
+MC91  58   --   d01             INPUT  --              --          --             0     slow
+MC92  0         --                     --              --          --             0     slow
+MC93  60   --   d00             INPUT  --              --          --             0     slow
+MC94  61   --   d10             INPUT  --              --          --             0     slow
+MC95  0         --                     --              --          --             0     slow
+MC96  62   --   TCK             INPUT  --              --          --             0     slow
+MC97  63   --   md04_low        INPUT  --              --          --             0     slow
+MC98  0         --                     --              --          --             0     slow
+MC99  64   --   md05_low        INPUT  --              --          --             0     slow
+MC100 0         --                     --              --          --             0     slow
+MC101 65   --   md06_low        INPUT  --              --          --             0     slow
+MC102 67        --                     --              --          --             0     slow
+MC103 0         --                     --              --          --             0     slow
+MC104 68        --                     --              --          --             0     slow
+MC105 69        --                     --              --          --             0     slow
+MC106 0         --                     --              --          --             0     slow
+MC107 70        --                     --              --          --             0     slow
+MC108 0         --                     --              --          --             0     slow
+MC109 71        --                     --              --          --             0     slow
+MC110 72        --                     --              --          --             0     slow
+MC111 0         --                     --              --          --             0     slow
+MC112 73   --   TDO             INPUT  --              --          --             0     slow
+MC113 75        --                     --              --          --             0     slow
+MC114 0         --                     --              --          --             0     slow
+MC115 76        --                     --              --          --             0     slow
+MC116 0         --                     --              --          --             0     slow
+MC117 77        --                     --              --          --             0     slow
+MC118 78        --                     --              --          --             0     slow
+MC119 0         --                     --              --          --             0     slow
+MC120 79        --                     --              --          --             0     slow
+MC121 80        --                     --              --          --             0     slow
+MC122 0         --                     --              --          --             0     slow
+MC123 81        --                     --              --          --             0     slow
+MC124 0         --                     --              --          --             0     slow
+MC125 83        --                     --              --          --             0     slow
+MC126 84        --                     --              --          --             0     slow
+MC127 0         --                     --              --          --             0     slow
+MC128 85        --                     --              --          --             0     slow
+MC0   90        --                     --              --          --             0     slow
+MC0   89        --                     --              --          --             0     slow
+MC0   88        --                     --              --          --             0     slow
+MC0   87        --                     --              --          --             0     slow
+
+Logic Array Block	Logic Cells	I/O Pins	Foldbacks	TotalPT		FanIN	Cascades
+A: LC1	- LC16		11/16(68%)	10/16(62%)	7/16(43%)	30/80(37%)	(21)	0
+B: LC17	- LC32		9/16(56%)	10/16(62%)	0/16(0%)	17/80(21%)	(15)	0
+C: LC33	- LC48		9/16(56%)	10/16(62%)	0/16(0%)	9/80(11%)	(6)	0
+D: LC49	- LC64		2/16(12%)	10/16(62%)	0/16(0%)	2/80(2%)	(2)	0
+E: LC65	- LC80		0/16(0%)	10/16(62%)	0/16(0%)	0/80(0%)	(0)	0
+F: LC81	- LC96		0/16(0%)	10/16(62%)	0/16(0%)	0/80(0%)	(0)	0
+G: LC97	- LC112		0/16(0%)	4/16(25%)	0/16(0%)	0/80(0%)	(0)	0
+H: LC113- LC128		0/16(0%)	0/16(0%)	0/16(0%)	0/80(0%)	(0)	0
+
+Total dedicated input used:	0/4 	(0%)
+Total I/O pins used		64/80 	(80%)
+Total Logic cells used 		31/128 	(24%)
+Total Flip-Flop used 		0/128 	(0%)
+Total Foldback logic used 	7/128 	(5%)
+Total Nodes+FB/MCells 		38/128 	(29%)
+Total cascade used 		0
+Total input pins 		34
+Total output pins 		30
+Total Pts 			58
+Creating pla file C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M1703\TOPLD\M1703C.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+
+----------------  End fitter, Design FITS
+$Device TQFP100 fits 
+FIT1508 completed in 0.00 seconds

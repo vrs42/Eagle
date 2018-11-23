@@ -9442,7 +9442,7 @@ DIN A3, landscape with extra doc field</description>
 <junction x="149.86" y="119.38"/>
 </segment>
 </net>
-<net name="N$120" class="0">
+<net name="!INT_ENABLE" class="0">
 <segment>
 <pinref part="E11" gate="B" pin="O"/>
 <pinref part="E11" gate="C" pin="I0"/>
@@ -10066,7 +10066,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="292.1" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="DEVICE_FLAG" class="0">
 <segment>
 <wire x1="289.56" y1="210.82" x2="292.1" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="E9" gate="B" pin="I0"/>
@@ -10084,7 +10084,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="E12" gate="C" pin="O"/>
 </segment>
 </net>
-<net name="DEVICE_FLAG" class="0">
+<net name="!DEVICE_FLAG" class="0">
 <segment>
 <pinref part="E11" gate="D" pin="I0"/>
 <wire x1="264.16" y1="208.28" x2="264.16" y2="203.2" width="0.1524" layer="91"/>

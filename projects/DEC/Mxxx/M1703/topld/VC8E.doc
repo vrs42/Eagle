@@ -1,0 +1,1698 @@
+
+*******************************************************************************
+                                     VC8E
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          f1508ispplcc84  Library DLIB-h-40-2
+Created         Thu May 31 14:57:04 2018
+Name            VC8E 
+Partno          cpld 
+Revision        01 
+Date            5/26/2018 
+Designer        
+Company         
+Assembly        None 
+Location        E3 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+b_dicd_low =>
+    !btp3
+  # iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # !iot05xx & md3_low & md4_low & !md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md10_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # md11_low
+
+!b_dixy_low =>
+    btp3 & !iot05xx & md10_low & !md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # btp3 & iot05xx & md10_low & !md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+
+b_load_en_low =>
+    !erase & !iot05xx & md10_low & !md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !n_t_35x & !pause_low
+  # !erase & !iot05xx & !md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !n_t_35x & !pause_low
+  # !erase & iot05xx & md10_low & !md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !n_t_35x & !pause_low
+  # !erase & iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !n_t_35x & !pause_low
+  # !erase & !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !n_t_35x & !pause_low
+  # !erase & !iot05xx & !md10_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !n_t_35x & !pause_low
+  # !erase & iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !n_t_35x & !pause_low
+  # !erase & iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !n_t_35x & !pause_low
+  # !erase & md11_low & md9_low & !n_t_35x
+  # !erase & md10_low & md9_low & !n_t_35x
+  # !erase & !n_t_35x & pause_low
+  # !erase & !md7_low & !n_t_35x & !pause_low
+  # !erase & !md4_low & !n_t_35x & !pause_low
+  # !erase & !md3_low & !n_t_35x & !pause_low
+  # !erase & md6_low & !n_t_35x
+  # !erase & md8_low & !n_t_35x
+  # !erase & iot05xx & !md5_low & !n_t_35x
+  # !erase & !iot05xx & md5_low & !n_t_35x
+  # !btp3
+
+!btp3 =>
+    !tp3
+
+c0_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # md9_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+  # md10_low
+
+c0_low.oe  =>
+    !c0_low
+
+c1_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # md9_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+  # md11_low
+  # md10_low
+
+c1_low.oe  =>
+    !iot05xx & !md10_low & !md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+  # iot05xx & !md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+
+!chan.d  =>
+    !di10
+
+chan.ar  =>
+    initialize
+  # !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+
+chan.ck  =>
+    iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+  # !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+
+chan_low =>
+    !chan
+
+chan_low.oe  =>
+    chan
+
+cl_done_low =>
+    b_dixy_low & !btp3 & !initialize & !tp3
+  # b_dixy_low & !btp3 & !initialize & !iot05xx & !md11_low & md3_low & 
+      md4_low & !md5_low & !md6_low & md7_low & !md8_low & !pause_low
+  # b_dixy_low & !btp3 & !initialize & iot05xx & !md11_low & md3_low & 
+      md4_low & md5_low & !md6_low & md7_low & !md8_low & !pause_low
+  # b_dixy_low & !btp3 & !initialize & !iot05xx & !md10_low & md3_low & 
+      md4_low & !md5_low & !md6_low & md7_low & !md8_low & !pause_low
+  # b_dixy_low & !btp3 & !initialize & iot05xx & !md10_low & md3_low & 
+      md4_low & md5_low & !md6_low & md7_low & !md8_low & !pause_low
+  # b_dixy_low & !btp3 & !initialize & !iot05xx & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # b_dixy_low & !btp3 & !initialize & iot05xx & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # b_dixy_low & !btp3 & !initialize & pause_low
+  # b_dixy_low & !btp3 & !initialize & !md7_low & !pause_low
+  # b_dixy_low & !btp3 & !initialize & !md4_low & !pause_low
+  # b_dixy_low & !btp3 & !initialize & !md3_low & !pause_low
+  # b_dixy_low & !btp3 & !initialize & md6_low
+  # b_dixy_low & !btp3 & !initialize & md8_low
+  # b_dixy_low & !btp3 & !initialize & iot05xx & !md5_low
+  # b_dixy_low & !btp3 & !initialize & !iot05xx & md5_low
+  # b_dixy_low & !erase & !initialize & md11_low & md9_low & !n_t_35x & !tp3
+  # b_dixy_low & !erase & !initialize & !iot05xx & !md10_low & md11_low & 
+      md3_low & md4_low & !md5_low & !md6_low & md7_low & !md8_low & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !erase & !initialize & iot05xx & !md10_low & md11_low & 
+      md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !erase & !initialize & !iot05xx & !md11_low & md3_low & 
+      md4_low & !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !erase & !initialize & !iot05xx & !md10_low & md3_low & 
+      md4_low & !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !erase & !initialize & iot05xx & !md11_low & md3_low & 
+      md4_low & md5_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !erase & !initialize & iot05xx & !md10_low & md3_low & 
+      md4_low & md5_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_35x & 
+      !pause_low
+  # b_dixy_low & !erase & !initialize & !n_t_35x & pause_low
+  # b_dixy_low & !erase & !initialize & !md7_low & !n_t_35x & !pause_low
+  # b_dixy_low & !erase & !initialize & !md4_low & !n_t_35x & !pause_low
+  # b_dixy_low & !erase & !initialize & !md3_low & !n_t_35x & !pause_low
+  # b_dixy_low & !erase & !initialize & md6_low & !n_t_35x
+  # b_dixy_low & !erase & !initialize & md8_low & !n_t_35x
+  # b_dixy_low & !erase & !initialize & !iot05xx & md5_low & !n_t_35x
+  # b_dixy_low & !erase & !initialize & iot05xx & !md5_low & !n_t_35x
+
+clear =>
+    initialize
+  # !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+
+clear =>
+    !initialize & !tp3
+  # !initialize & !iot05xx & !md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !pause_low
+  # !initialize & iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low
+  # !initialize & !iot05xx & !md10_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !pause_low
+  # !initialize & iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low
+  # !initialize & !iot05xx & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+  # !initialize & iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !md9_low & !pause_low
+  # !initialize & pause_low
+  # !initialize & !md7_low & !pause_low
+  # !initialize & !md4_low & !pause_low
+  # !initialize & !md3_low & !pause_low
+  # !initialize & md6_low
+  # !initialize & md8_low
+  # !initialize & !iot05xx & md5_low
+  # !initialize & iot05xx & !md5_low
+
+clear_done_low =>
+    !erase & !n_t_35x
+
+col_red_low =>
+    !color
+
+col_red_low.oe  =>
+    color
+
+!color.d  =>
+    !data09_low & md10_low & !md11_low & md3_low & md4_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low
+  # !md11_low & !md9_low
+  # md11_low & md9_low
+  # iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # !md7_low
+  # !md4_low
+  # !md3_low
+  # pause_low
+  # md8_low
+  # md6_low
+  # data09_low
+
+color.ar  =>
+    initialize
+  # !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+
+color.ck  =>
+    iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+  # !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+
+color_low =>
+    !color
+
+data00_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !n_t_1x
+  # md9_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+  # md11_low
+  # md10_low
+
+data00_low.oe  =>
+    iot05xx & !md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & n_t_1x & !pause_low
+  # !iot05xx & !md10_low & !md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & n_t_1x & !pause_low
+
+data02_low =>
+    !x02 & !y02
+
+data02_low.oe  =>
+    0 
+
+data03_low =>
+    !x03 & !y03
+
+data03_low.oe  =>
+    0 
+
+data04_low =>
+    !x04 & !y04
+
+data04_low.oe  =>
+    0 
+
+data05_low =>
+    !x05 & !y05
+
+data05_low.oe  =>
+    0 
+
+data06_low =>
+    iot05xx & !md5_low & !x06 & !y06
+  # !iot05xx & md5_low & !x06 & !y06
+  # !write_thru & !x06 & !y06
+  # pause_low & !x06 & !y06
+  # md9_low & !x06 & !y06
+  # md8_low & !x06 & !y06
+  # !md7_low & !x06 & !y06
+  # md6_low & !x06 & !y06
+  # !md4_low & !x06 & !y06
+  # !md3_low & !x06 & !y06
+  # md11_low & !x06 & !y06
+  # md10_low & !x06 & !y06
+
+data06_low.oe  =>
+    iot05xx & !md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & write_thru
+  # !iot05xx & !md10_low & !md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & write_thru
+
+data07_low =>
+    iot05xx & !md5_low & !x07 & !y07
+  # !iot05xx & md5_low & !x07 & !y07
+  # !store & !x07 & !y07
+  # pause_low & !x07 & !y07
+  # md9_low & !x07 & !y07
+  # md8_low & !x07 & !y07
+  # !md7_low & !x07 & !y07
+  # md6_low & !x07 & !y07
+  # !md4_low & !x07 & !y07
+  # !md3_low & !x07 & !y07
+  # md11_low & !x07 & !y07
+  # md10_low & !x07 & !y07
+
+data07_low.oe  =>
+    iot05xx & !md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & store
+  # !iot05xx & !md10_low & !md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & store
+
+data08_low =>
+    !x08 & !y08
+
+data08_low.oe  =>
+    0 
+
+data09_low =>
+    iot05xx & !md5_low & !x09 & !y09
+  # !iot05xx & md5_low & !x09 & !y09
+  # pause_low & !x09 & !y09
+  # md9_low & !x09 & !y09
+  # md8_low & !x09 & !y09
+  # !md7_low & !x09 & !y09
+  # md6_low & !x09 & !y09
+  # !md4_low & !x09 & !y09
+  # !md3_low & !x09 & !y09
+  # md11_low & !x09 & !y09
+  # md10_low & !x09 & !y09
+  # !color & !x09 & !y09
+
+data09_low.oe  =>
+    color & iot05xx & !md10_low & !md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # color & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+
+data10_low =>
+    iot05xx & !md5_low & !x11 & !y11
+  # !iot05xx & md5_low & !x11 & !y11
+  # pause_low & !x11 & !y11
+  # md9_low & !x11 & !y11
+  # md8_low & !x11 & !y11
+  # !md7_low & !x11 & !y11
+  # md6_low & !x11 & !y11
+  # !md4_low & !x11 & !y11
+  # !md3_low & !x11 & !y11
+  # md11_low & !x11 & !y11
+  # md10_low & !x11 & !y11
+  # !chan & !x11 & !y11
+
+data10_low.oe  =>
+    chan & iot05xx & !md10_low & !md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # chan & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+
+data11_low =>
+    iot05xx & !md5_low & !x10 & !y10
+  # !iot05xx & md5_low & !x10 & !y10
+  # pause_low & !x10 & !y10
+  # md9_low & !x10 & !y10
+  # md8_low & !x10 & !y10
+  # !md7_low & !x10 & !y10
+  # md6_low & !x10 & !y10
+  # !md4_low & !x10 & !y10
+  # !md3_low & !x10 & !y10
+  # md11_low & !x10 & !y10
+  # md10_low & !x10 & !y10
+  # !int_en & !x10 & !y10
+
+data11_low.oe  =>
+    int_en & iot05xx & !md10_low & !md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # int_en & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+
+di02 =>
+    !data02_low & !iot05xx & md10_low & md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data02_low & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data02_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data02_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+di03 =>
+    !data03_low & !iot05xx & md10_low & md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data03_low & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data03_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data03_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+di04 =>
+    !data04_low & !iot05xx & md10_low & md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data04_low & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data04_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data04_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+di05 =>
+    !data05_low & !iot05xx & md10_low & md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data05_low & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data05_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data05_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+di06 =>
+    !data06_low & !iot05xx & md10_low & md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data06_low & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data06_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data06_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+di07 =>
+    !data07_low & !iot05xx & md10_low & md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data07_low & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data07_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data07_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+di08 =>
+    !data08_low & !iot05xx & md10_low & md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data08_low & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data08_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data08_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+di09 =>
+    !data09_low & !iot05xx & md10_low & md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data09_low & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data09_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data09_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+di10 =>
+    !data10_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data10_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data10_low & !iot05xx & md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data10_low & iot05xx & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+
+di11 =>
+    !data11_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data11_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data11_low & !iot05xx & md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data11_low & iot05xx & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+
+!dicd_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # !iot05xx & md3_low & md4_low & !md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md10_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # md11_low
+
+!dicl_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # !iot05xx & md3_low & md4_low & !md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md10_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md11_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+
+!dile_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md9_low
+  # md10_low
+  # iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md11_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+
+!dilx_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # !iot05xx & md3_low & md4_low & !md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # md10_low
+  # md11_low
+
+!dily_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md9_low
+  # iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md10_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md11_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+
+!dire_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md9_low
+  # md10_low
+  # md11_low
+
+!disd_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # !iot05xx & md3_low & md4_low & !md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # md10_low
+  # iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md11_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+
+!dixy_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md9_low
+  # iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md10_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # md11_low
+
+!dly_done_low =>
+    red_delay
+  # grn_delay
+
+!erase.d  =>
+    !data08_low & md10_low & !md11_low & md3_low & md4_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low
+  # !md11_low & !md9_low
+  # md11_low & md9_low
+  # iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # !md7_low
+  # !md4_low
+  # !md3_low
+  # pause_low
+  # md8_low
+  # md6_low
+  # data08_low
+
+erase.ar  =>
+    initialize
+  # !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # set_done
+
+erase.ck  =>
+    iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+  # !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+
+erase_low =>
+    !erase
+
+erase_low.oe  =>
+    erase
+
+!gdollar_0.t  =>
+    0 
+
+gdollar_0.ap  =>
+    0 
+
+gdollar_0.ar  =>
+    !load_y
+
+gdollar_0.ck  =>
+    !y02 & !y03 & !y04 & !y05 & !y06 & !y07
+  # y02 & y03 & y04 & y05 & y06 & y07
+
+!gdollar_1.t  =>
+    0 
+
+gdollar_1.ap  =>
+    0 
+
+gdollar_1.ar  =>
+    !load_y
+
+gdollar_1.ck  =>
+    !gdollar_0 & !y02 & !y03 & !y04 & !y05 & !y06 & !y07
+  # gdollar_0 & y02 & y03 & y04 & y05 & y06 & y07
+
+!gdollar_2.t  =>
+    0 
+
+gdollar_2.ap  =>
+    0 
+
+gdollar_2.ar  =>
+    !load_x
+
+gdollar_2.ck  =>
+    !x02 & !x03 & !x04 & !x05 & !x06 & !x07
+  # x02 & x03 & x04 & x05 & x06 & x07
+
+!gdollar_3.t  =>
+    0 
+
+gdollar_3.ap  =>
+    0 
+
+gdollar_3.ar  =>
+    !load_x
+
+gdollar_3.ck  =>
+    !gdollar_2 & !x02 & !x03 & !x04 & !x05 & !x06 & !x07
+  # gdollar_2 & x02 & x03 & x04 & x05 & x06 & x07
+
+!int_en.d  =>
+    !di11
+
+int_en.ar  =>
+    initialize
+  # !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+
+int_en.ck  =>
+    iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+  # !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+
+internal_io_low =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # pause_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+
+internal_io_low.oe  =>
+    !iot05xx & md3_low & md4_low & !md5_low & !md6_low & md7_low & !md8_low & 
+      !pause_low
+  # iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & 
+      !pause_low
+
+interrupt_low =>
+    !n_t_1x
+  # !int_en
+
+interrupt_low.oe  =>
+    int_en & n_t_1x
+
+!iot =>
+    !iot05xx & md3_low & md4_low & !md5_low & !md6_low & md7_low & !md8_low & 
+      !pause_low
+  # iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & 
+      !pause_low
+
+ld_en_reg =>
+    iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+  # !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+
+!load_data_low =>
+    !iot05xx & md10_low & !md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low
+  # !iot05xx & !md11_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !md9_low & !pause_low
+  # iot05xx & md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low
+  # iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !md9_low & !pause_low
+  # md11_low & md9_low
+  # md10_low & md9_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # iot05xx & !md5_low
+  # !iot05xx & md5_low
+
+load_en_low =>
+    !iot05xx & md10_low & !md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low
+  # !iot05xx & !md11_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !md9_low & !pause_low
+  # iot05xx & md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low
+  # iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !md9_low & !pause_low
+  # !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low
+  # !iot05xx & !md10_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !md9_low & !pause_low
+  # iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low
+  # iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !md9_low & !pause_low
+  # md11_low & md9_low
+  # md10_low & md9_low
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # !iot05xx & md5_low
+  # iot05xx & !md5_low
+
+!load_x =>
+    btp3 & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # btp3 & iot05xx & !md10_low & !md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+!load_y =>
+    btp3 & !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # btp3 & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+
+!n_t_10x =>
+    !md3_low & !pause_low
+
+!n_t_11x =>
+    !data09_low & !iot05xx & md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data09_low & iot05xx & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+  # !data09_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data09_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+!n_t_12x =>
+    !md4_low & !pause_low
+
+!n_t_13x =>
+    !data06_low & !iot05xx & md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data06_low & iot05xx & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+  # !data06_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data06_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+!n_t_14x =>
+    !md5_low & !pause_low
+
+n_t_15x =>
+    iot05xx & !md5_low
+  # !iot05xx & md5_low
+
+!n_t_17x =>
+    !md7_low & !pause_low
+
+!n_t_19x =>
+    iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md11_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+
+!n_t_1x.d  =>
+    0 
+
+n_t_1x.ar  =>
+    initialize
+  # !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # btp3 & n_t_35x
+  # btp3 & erase
+  # btp3 & !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # btp3 & iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # btp3 & iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low
+  # btp3 & !iot05xx & !md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low
+  # !b_dixy_low
+
+n_t_1x.ck  =>
+    del_1_low & dly_done_low & ld_del_low & !set_done
+
+!n_t_20x =>
+    iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+  # !iot05xx & !md10_low & md3_low & md4_low & !md5_low & !md6_low & md7_low & 
+      !md8_low & !pause_low
+
+!n_t_21x =>
+    iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+  # !iot05xx & md3_low & md4_low & !md5_low & !md6_low & md7_low & !md8_low & 
+      !md9_low & !pause_low
+
+!n_t_22x =>
+    !data07_low & !iot05xx & md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data07_low & iot05xx & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+  # !data07_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data07_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+n_t_23x =>
+    !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+
+!n_t_24x =>
+    !data08_low & !iot05xx & md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !md9_low & !pause_low
+  # !data08_low & iot05xx & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+  # !data08_low & iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+  # !data08_low & !iot05xx & !md10_low & !md11_low & md3_low & md4_low & 
+      !md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low
+
+n_t_26x =>
+    !initialize & !set_done & !tp3
+  # !initialize & !iot05xx & !md11_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !pause_low & !set_done
+  # !initialize & iot05xx & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low & !set_done
+  # !initialize & !iot05xx & !md10_low & md3_low & md4_low & !md5_low & 
+      !md6_low & md7_low & !md8_low & !pause_low & !set_done
+  # !initialize & iot05xx & !md10_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !pause_low & !set_done
+  # !initialize & !iot05xx & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & !set_done
+  # !initialize & iot05xx & md3_low & md4_low & md5_low & !md6_low & md7_low & 
+      !md8_low & !md9_low & !pause_low & !set_done
+  # !initialize & pause_low & !set_done
+  # !initialize & !md7_low & !pause_low & !set_done
+  # !initialize & !md4_low & !pause_low & !set_done
+  # !initialize & !md3_low & !pause_low & !set_done
+  # !initialize & md6_low & !set_done
+  # !initialize & md8_low & !set_done
+  # !initialize & iot05xx & !md5_low & !set_done
+  # !initialize & !iot05xx & md5_low & !set_done
+
+!n_t_27x =>
+    store
+  # color
+
+n_t_27x.oe  =>
+    !n_t_27x
+
+n_t_2x =>
+    !iot05xx & !md10_low & !md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low
+  # iot05xx & !md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+  # !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low
+  # n_t_35x
+  # erase
+
+n_t_34x =>
+    !grn_delay & !red_delay
+
+n_t_3x =>
+    del_1_low & dly_done_low & ld_del_low & !set_done
+
+!n_t_43x =>
+    color
+
+n_t_43x =>
+    !color
+
+n_t_60x =>
+    !x04 & !x05 & !x06 & !x07
+
+n_t_61x =>
+    x04 & x05 & x06 & x07
+
+n_t_62x =>
+    !x08 & !x09 & !x10 & !x11
+
+n_t_63x =>
+    x08 & x09 & x10 & x11
+
+n_t_64x =>
+    !y04 & !y05 & !y06 & !y07
+
+n_t_65x =>
+    y04 & y05 & y06 & y07
+
+n_t_66x =>
+    !y08 & !y09 & !y10 & !y11
+
+n_t_67x =>
+    y08 & y09 & y10 & y11
+
+!n_t_9x =>
+    del_1_low
+
+non_store_low =>
+    store
+
+non_store_low.oe  =>
+    !store
+
+skip_low =>
+    !md9_low
+  # !md11_low
+  # iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # !md7_low
+  # !md4_low
+  # !md3_low
+  # pause_low
+  # !n_t_1x
+  # md8_low
+  # md6_low
+  # md10_low
+
+skip_low.oe  =>
+    iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & n_t_1x & !pause_low
+  # !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & n_t_1x & !pause_low
+
+spare1 =>
+    0 
+
+!store.d  =>
+    !data07_low & md10_low & !md11_low & md3_low & md4_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low
+  # !md11_low & !md9_low
+  # md11_low & md9_low
+  # iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # !md7_low
+  # !md4_low
+  # !md3_low
+  # pause_low
+  # md8_low
+  # md6_low
+  # data07_low
+
+store.ar  =>
+    initialize
+  # !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+
+store.ck  =>
+    iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+  # !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+
+!write_thru.d  =>
+    !data06_low & md10_low & !md11_low & md3_low & md4_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low
+  # !md11_low & !md9_low
+  # md11_low & md9_low
+  # iot05xx & !md5_low
+  # !iot05xx & md5_low
+  # !md7_low
+  # !md4_low
+  # !md3_low
+  # pause_low
+  # md8_low
+  # md6_low
+  # data06_low
+
+write_thru.ar  =>
+    initialize
+  # !iot05xx & md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+  # iot05xx & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & md9_low & !pause_low & tp3
+
+write_thru.ck  =>
+    iot05xx & !md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+  # !iot05xx & !md10_low & md11_low & md3_low & md4_low & !md5_low & !md6_low & 
+      md7_low & !md8_low & !md9_low & !pause_low & tp3
+
+write_thru_low =>
+    !write_thru
+
+write_thru_low.oe  =>
+    write_thru
+
+!x02.t  =>
+    0 
+
+x02.ap  =>
+    di02 & !load_x
+
+x02.ar  =>
+    !di02 & !load_x
+
+x02.ck  =>
+    !x03 & !x04 & !x05 & !x06 & !x07
+  # x03 & x04 & x05 & x06 & x07
+
+!x03.t  =>
+    0 
+
+x03.ap  =>
+    di03 & !load_x
+
+x03.ar  =>
+    !di03 & !load_x
+
+x03.ck  =>
+    !x04 & !x05 & !x06 & !x07
+  # x04 & x05 & x06 & x07
+
+!x04.t  =>
+    0 
+
+x04.ap  =>
+    di04 & !load_x
+
+x04.ar  =>
+    !di04 & !load_x
+
+x04.ck  =>
+    !x05 & !x06 & !x07 & !x08 & !x09 & !x10 & !x11
+  # x05 & x06 & x07 & x08 & x09 & x10 & x11
+
+!x05.t  =>
+    0 
+
+x05.ap  =>
+    di05 & !load_x
+
+x05.ar  =>
+    !di05 & !load_x
+
+x05.ck  =>
+    !x06 & !x07 & !x08 & !x09 & !x10 & !x11
+  # x06 & x07 & x08 & x09 & x10 & x11
+
+!x06.t  =>
+    0 
+
+x06.ap  =>
+    di06 & !load_x
+
+x06.ar  =>
+    !di06 & !load_x
+
+x06.ck  =>
+    !x07 & !x08 & !x09 & !x10 & !x11
+  # x07 & x08 & x09 & x10 & x11
+
+!x07.t  =>
+    0 
+
+x07.ap  =>
+    di07 & !load_x
+
+x07.ar  =>
+    !di07 & !load_x
+
+x07.ck  =>
+    !x08 & !x09 & !x10 & !x11
+  # x08 & x09 & x10 & x11
+
+!x08.t  =>
+    0 
+
+x08.ap  =>
+    di08 & !load_x
+
+x08.ar  =>
+    !di08 & !load_x
+
+x08.ck  =>
+    !x09 & !x10 & !x11
+  # x09 & x10 & x11
+
+!x09.t  =>
+    0 
+
+x09.ap  =>
+    di09 & !load_x
+
+x09.ar  =>
+    !di09 & !load_x
+
+x09.ck  =>
+    !x10 & !x11
+  # x10 & x11
+
+!x10.t  =>
+    0 
+
+x10.ap  =>
+    di10 & !load_x
+
+x10.ar  =>
+    !di10 & !load_x
+
+x10.ck  =>
+    1 
+
+!x11.t  =>
+    0 
+
+x11.ap  =>
+    di11 & !load_x
+
+x11.ar  =>
+    !di11 & !load_x
+
+x11.ck  =>
+    1 
+
+x_ac_low =>
+    1 
+
+x_dec =>
+    1 
+
+x_inc =>
+    1 
+
+!y02.t  =>
+    0 
+
+y02.ap  =>
+    di02 & !load_y
+
+y02.ar  =>
+    !di02 & !load_y
+
+y02.ck  =>
+    !y03 & !y04 & !y05 & !y06 & !y07
+  # y03 & y04 & y05 & y06 & y07
+
+!y03.t  =>
+    0 
+
+y03.ap  =>
+    di03 & !load_y
+
+y03.ar  =>
+    !di03 & !load_y
+
+y03.ck  =>
+    !y04 & !y05 & !y06 & !y07
+  # y04 & y05 & y06 & y07
+
+!y04.t  =>
+    0 
+
+y04.ap  =>
+    di04 & !load_y
+
+y04.ar  =>
+    !di04 & !load_y
+
+y04.ck  =>
+    !y05 & !y06 & !y07 & !y08 & !y09 & !y10 & !y11
+  # y05 & y06 & y07 & y08 & y09 & y10 & y11
+
+!y05.t  =>
+    0 
+
+y05.ap  =>
+    di05 & !load_y
+
+y05.ar  =>
+    !di05 & !load_y
+
+y05.ck  =>
+    !y06 & !y07 & !y08 & !y09 & !y10 & !y11
+  # y06 & y07 & y08 & y09 & y10 & y11
+
+!y06.t  =>
+    0 
+
+y06.ap  =>
+    di06 & !load_y
+
+y06.ar  =>
+    !di06 & !load_y
+
+y06.ck  =>
+    !y07 & !y08 & !y09 & !y10 & !y11
+  # y07 & y08 & y09 & y10 & y11
+
+!y07.t  =>
+    0 
+
+y07.ap  =>
+    di07 & !load_y
+
+y07.ar  =>
+    !di07 & !load_y
+
+y07.ck  =>
+    !y08 & !y09 & !y10 & !y11
+  # y08 & y09 & y10 & y11
+
+!y08.t  =>
+    0 
+
+y08.ap  =>
+    di08 & !load_y
+
+y08.ar  =>
+    !di08 & !load_y
+
+y08.ck  =>
+    !y09 & !y10 & !y11
+  # y09 & y10 & y11
+
+!y09.t  =>
+    0 
+
+y09.ap  =>
+    di09 & !load_y
+
+y09.ar  =>
+    !di09 & !load_y
+
+y09.ck  =>
+    !y10 & !y11
+  # y10 & y11
+
+!y10.t  =>
+    0 
+
+y10.ap  =>
+    di10 & !load_y
+
+y10.ar  =>
+    !di10 & !load_y
+
+y10.ck  =>
+    1 
+
+!y11.t  =>
+    0 
+
+y11.ap  =>
+    di11 & !load_y
+
+y11.ar  =>
+    !di11 & !load_y
+
+y11.ck  =>
+    1 
+
+y_ac_low =>
+    1 
+
+y_dec =>
+    1 
+
+y_inc =>
+    1 
+
+z_pulse =>
+    1 
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    b_dicd_low                  0        I        14      -       -     
+    b_dixy_low                  55       V        2       0       4     
+    b_load_en_low               0        I        19      -       -     
+    btp3                        50       V        1       0       4     
+    c0_low                      31       V        10      0       4     
+    c0_low              oe      31       X        1       0       1     
+    c1_low                      30       V        11      0       4     
+    c1_low              oe      30       X        2       0       1     
+    chan                        88       N        -       -       -     
+    chan                d       88       M        1       0       4     
+    chan                ar      88       M        3       0       1     
+    chan                ck      88       M        2       0       1     
+    chan_low                    0        V        1       0       4     
+    chan_low            oe      0        X        1       0       1     
+    cl_done_low                 0        I        30      -       -     
+    clear                       0        I        3       -       -     
+    clear               oe      0        I        15      -       -     
+    clear_done_low              0        I        1       -       -     
+    col_red_low                 56       V        1       0       4     
+    col_red_low         oe      56       X        1       0       1     
+    color                       89       N        -       -       -     
+    color               d       89       M        12      0       4     
+    color               ar      89       M        3       0       1     
+    color               ck      89       M        2       0       1     
+    color_low                   0        I        1       -       -     
+    data00_low                  48       V        12      0       4     
+    data00_low          oe      48       X        2       0       1     
+    data02_low                  46       V        1       0       4     
+    data02_low          oe      46       X        1       0       1     
+    data03_low                  45       V        1       0       4     
+    data03_low          oe      45       X        1       0       1     
+    data04_low                  37       V        1       0       4     
+    data04_low          oe      37       X        1       0       1     
+    data05_low                  36       V        1       0       4     
+    data05_low          oe      36       X        1       0       1     
+    data06_low                  35       V        12      0       4     
+    data06_low          oe      35       X        2       0       1     
+    data07_low                  34       V        12      0       4     
+    data07_low          oe      34       X        2       0       1     
+    data08_low                  17       V        1       0       4     
+    data08_low          oe      17       X        1       0       1     
+    data09_low                  16       V        12      0       4     
+    data09_low          oe      16       X        2       0       1     
+    data10_low                  15       V        12      0       4     
+    data10_low          oe      15       X        2       0       1     
+    data11_low                  12       V        12      0       4     
+    data11_low          oe      12       X        2       0       1     
+    del_1_low                   84       V        -       -       -     
+ !  di02                        64       V        4       0       4     
+    di03                        65       V        4       0       4     
+    di04                        67       V        4       0       4     
+    di05                        68       V        4       0       4     
+    di06                        69       V        4       0       4     
+    di07                        70       V        4       0       4     
+    di08                        73       V        4       0       4     
+    di09                        74       V        4       0       4     
+    di10                        75       V        4       0       4     
+    di11                        76       V        4       0       4     
+    dicd_low                    0        I        13      -       -     
+    dicl_low                    0        I        14      -       -     
+    dile_low                    0        I        12      -       -     
+    dilx_low                    0        I        12      -       -     
+    dily_low                    0        I        13      -       -     
+    dire_low                    0        I        11      -       -     
+    disd_low                    0        I        13      -       -     
+    dixy_low                    0        I        12      -       -     
+    dly_done_low                63       V        2       0       4     
+    erase                       87       N        -       -       -     
+    erase               d       87       M        12      0       4     
+    erase               ar      87       M        4       0       1     
+    erase               ck      87       M        2       0       1     
+    erase_low                   58       V        1       0       4     
+    erase_low           oe      58       X        1       0       1     
+    gdollar_0                   92       N        -       -       -     
+    gdollar_0           t       92       M        1       0       4     
+    gdollar_0           ap      92       M        1       0       1     
+    gdollar_0           ar      92       M        1       0       1     
+    gdollar_0           ck      92       M        2       0       1     
+    gdollar_1                   93       N        -       -       -     
+    gdollar_1           t       93       M        1       0       4     
+    gdollar_1           ap      93       M        1       0       1     
+    gdollar_1           ar      93       M        1       0       1     
+    gdollar_1           ck      93       M        2       0       1     
+    gdollar_2                   94       N        -       -       -     
+    gdollar_2           t       94       M        1       0       4     
+    gdollar_2           ap      94       M        1       0       1     
+    gdollar_2           ar      94       M        1       0       1     
+    gdollar_2           ck      94       M        2       0       1     
+    gdollar_3                   95       N        -       -       -     
+    gdollar_3           t       95       M        1       0       4     
+    gdollar_3           ap      95       M        1       0       1     
+    gdollar_3           ar      95       M        1       0       1     
+    gdollar_3           ck      95       M        2       0       1     
+    grn_delay                   1        V        -       -       -     
+    initialize                  25       V        -       -       -     
+    int_en                      90       N        -       -       -     
+    int_en              d       90       M        1       0       4     
+    int_en              ar      90       M        3       0       1     
+    int_en              ck      90       M        2       0       1     
+    internal_io_low             28       V        8       0       4     
+    internal_io_low     oe      28       X        2       0       1     
+    interrupt_low               27       V        2       0       4     
+    interrupt_low       oe      27       X        1       0       1     
+    iot                         0        I        2       -       -     
+    iot05xx                     4        V        -       -       -     
+    ld_del_low                  2        V        -       -       -     
+    ld_en_reg                   0        I        2       -       -     
+    load_data_low               0        I        14      -       -     
+    load_en_low                 0        I        18      -       -     
+ !  load_x                      77       V        2       0       4     
+ !  load_y                      79       V        2       0       4     
+    md10_low                    20       V        -       -       -     
+    md11_low                    18       V        -       -       -     
+    md3_low                     49       V        -       -       -     
+    md4_low                     44       V        -       -       -     
+    md5_low                     41       V        -       -       -     
+    md6_low                     40       V        -       -       -     
+    md7_low                     39       V        -       -       -     
+    md8_low                     22       V        -       -       -     
+    md9_low                     21       V        -       -       -     
+    n_t_10x                     0        I        1       -       -     
+    n_t_11x                     0        I        4       -       -     
+    n_t_12x                     0        I        1       -       -     
+    n_t_13x                     0        I        4       -       -     
+    n_t_14x                     0        I        1       -       -     
+    n_t_15x                     0        I        2       -       -     
+    n_t_17x                     0        I        1       -       -     
+    n_t_19x                     0        I        2       -       -     
+    n_t_1x                      91       N        -       -       -     
+    n_t_1x              d       91       M        1       0       4     
+    n_t_1x              ar      91       M        10      0       1     
+    n_t_1x              ck      91       M        1       0       1     
+    n_t_20x                     0        I        2       -       -     
+    n_t_21x                     0        I        2       -       -     
+    n_t_22x                     0        I        4       -       -     
+    n_t_23x                     0        I        2       -       -     
+    n_t_24x                     0        I        4       -       -     
+    n_t_26x                     0        I        15      -       -     
+    n_t_27x                     61       V        2       0       4     
+    n_t_27x             oe      61       X        1       0       1     
+    n_t_2x                      0        I        6       -       -     
+    n_t_34x                     0        I        1       -       -     
+    n_t_35x                     52       V        -       -       -     
+    n_t_3x                      0        I        1       -       -     
+    n_t_43x                     0        I        1       -       -     
+    n_t_43x             oe      0        I        1       -       -     
+    n_t_60x                     0        I        1       -       -     
+    n_t_61x                     0        I        1       -       -     
+    n_t_62x                     0        I        1       -       -     
+    n_t_63x                     0        I        1       -       -     
+    n_t_64x                     0        I        1       -       -     
+    n_t_65x                     0        I        1       -       -     
+    n_t_66x                     0        I        1       -       -     
+    n_t_67x                     0        I        1       -       -     
+    n_t_9x                      0        I        1       -       -     
+    non_store_low               80       V        1       0       4     
+    non_store_low       oe      80       X        1       0       1     
+    pause_low                   33       V        -       -       -     
+    red_delay                   83       V        -       -       -     
+    set_done                    51       V        -       -       -     
+    skip_low                    24       V        12      0       4     
+    skip_low            oe      24       X        2       0       1     
+    spare                       54       V        -       -       -     
+    spare1                      0        I        1       -       -     
+    store                       86       N        -       -       -     
+    store               d       86       M        12      0       4     
+    store               ar      86       M        3       0       1     
+    store               ck      86       M        2       0       1     
+    tp3                         29       V        -       -       -     
+    write_thru                  85       N        -       -       -     
+    write_thru          d       85       M        12      0       4     
+    write_thru          ar      85       M        3       0       1     
+    write_thru          ck      85       M        2       0       1     
+    write_thru_low              60       V        1       0       4     
+    write_thru_low      oe      60       X        1       0       1     
+    x02                         96       N        -       -       -     
+    x02                 t       96       M        1       0       4     
+    x02                 ap      96       M        1       0       1     
+    x02                 ar      96       M        1       0       1     
+    x02                 ck      96       M        2       0       1     
+    x03                         97       N        -       -       -     
+    x03                 t       97       M        1       0       4     
+    x03                 ap      97       M        1       0       1     
+    x03                 ar      97       M        1       0       1     
+    x03                 ck      97       M        2       0       1     
+    x04                         98       N        -       -       -     
+    x04                 t       98       M        1       0       4     
+    x04                 ap      98       M        1       0       1     
+    x04                 ar      98       M        1       0       1     
+    x04                 ck      98       M        2       0       1     
+    x05                         99       N        -       -       -     
+    x05                 t       99       M        1       0       4     
+    x05                 ap      99       M        1       0       1     
+    x05                 ar      99       M        1       0       1     
+    x05                 ck      99       M        2       0       1     
+    x06                         100      N        -       -       -     
+    x06                 t       100      M        1       0       4     
+    x06                 ap      100      M        1       0       1     
+    x06                 ar      100      M        1       0       1     
+    x06                 ck      100      M        2       0       1     
+    x07                         101      N        -       -       -     
+    x07                 t       101      M        1       0       4     
+    x07                 ap      101      M        1       0       1     
+    x07                 ar      101      M        1       0       1     
+    x07                 ck      101      M        2       0       1     
+    x08                         102      N        -       -       -     
+    x08                 t       102      M        1       0       4     
+    x08                 ap      102      M        1       0       1     
+    x08                 ar      102      M        1       0       1     
+    x08                 ck      102      M        2       0       1     
+    x09                         103      N        -       -       -     
+    x09                 t       103      M        1       0       4     
+    x09                 ap      103      M        1       0       1     
+    x09                 ar      103      M        1       0       1     
+    x09                 ck      103      M        2       0       1     
+    x10                         104      N        -       -       -     
+    x10                 t       104      M        1       0       4     
+    x10                 ap      104      M        1       0       1     
+    x10                 ar      104      M        1       0       1     
+    x10                 ck      104      M        1       0       1     
+    x11                         105      N        -       -       -     
+    x11                 t       105      M        1       0       4     
+    x11                 ap      105      M        1       0       1     
+    x11                 ar      105      M        1       0       1     
+    x11                 ck      105      M        1       0       1     
+    x_ac_low                    0        I        1       -       -     
+    x_dec                       0        I        1       -       -     
+    x_inc                       0        I        1       -       -     
+    y02                         106      N        -       -       -     
+    y02                 t       106      M        1       0       4     
+    y02                 ap      106      M        1       0       1     
+    y02                 ar      106      M        1       0       1     
+    y02                 ck      106      M        2       0       1     
+    y03                         107      N        -       -       -     
+    y03                 t       107      M        1       0       4     
+    y03                 ap      107      M        1       0       1     
+    y03                 ar      107      M        1       0       1     
+    y03                 ck      107      M        2       0       1     
+    y04                         108      N        -       -       -     
+    y04                 t       108      M        1       0       4     
+    y04                 ap      108      M        1       0       1     
+    y04                 ar      108      M        1       0       1     
+    y04                 ck      108      M        2       0       1     
+    y05                         109      N        -       -       -     
+    y05                 t       109      M        1       0       4     
+    y05                 ap      109      M        1       0       1     
+    y05                 ar      109      M        1       0       1     
+    y05                 ck      109      M        2       0       1     
+    y06                         110      N        -       -       -     
+    y06                 t       110      M        1       0       4     
+    y06                 ap      110      M        1       0       1     
+    y06                 ar      110      M        1       0       1     
+    y06                 ck      110      M        2       0       1     
+    y07                         111      N        -       -       -     
+    y07                 t       111      M        1       0       4     
+    y07                 ap      111      M        1       0       1     
+    y07                 ar      111      M        1       0       1     
+    y07                 ck      111      M        2       0       1     
+    y08                         112      N        -       -       -     
+    y08                 t       112      M        1       0       4     
+    y08                 ap      112      M        1       0       1     
+    y08                 ar      112      M        1       0       1     
+    y08                 ck      112      M        2       0       1     
+    y09                         113      N        -       -       -     
+    y09                 t       113      M        1       0       4     
+    y09                 ap      113      M        1       0       1     
+    y09                 ar      113      M        1       0       1     
+    y09                 ck      113      M        2       0       1     
+    y10                         114      N        -       -       -     
+    y10                 t       114      M        1       0       4     
+    y10                 ap      114      M        1       0       1     
+    y10                 ar      114      M        1       0       1     
+    y10                 ck      114      M        1       0       1     
+    y11                         115      N        -       -       -     
+    y11                 t       115      M        1       0       4     
+    y11                 ap      115      M        1       0       1     
+    y11                 ar      115      M        1       0       1     
+    y11                 ck      115      M        1       0       1     
+    y_ac_low                    0        I        1       -       -     
+    y_dec                       0        I        1       -       -     
+    y_inc                       0        I        1       -       -     
+    z_pulse                     0        I        1       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
