@@ -6,7 +6,7 @@ Designer  ;
 Company   ;
 Assembly None ;
 Location E1 ;
-Device   f1508ispplcc84;
+Device   f1504ispplcc84;
 
 /* Input Pins */
 pin 33 = ac_enabl; /* BH2 */

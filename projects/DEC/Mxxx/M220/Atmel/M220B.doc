@@ -4,8 +4,8 @@
 *******************************************************************************
 
 CUPL(WM)        5.0a Serial# 60008009
-Device          f1508plcc84  Library DLIB-h-40-2
-Created         Thu Nov 12 17:18:59 2015
+Device          f1504plcc84  Library DLIB-h-40-2
+Created         Sun Dec 09 17:09:48 2018
 Name            M220B 
 Partno          cpld 
 Revision        01 

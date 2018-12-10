@@ -1,7 +1,7 @@
 #$ TOOL CUPL
 # Berkeley PLA format generated using CUPL(WM) 5.0a
 # Serial#  60008009
-# Created  Thu Nov 12 17:19:43 2015
+# Created  Sun Dec 09 17:09:19 2018
 #
 #    Name        M220A
 #    Partno      cpld
@@ -15,7 +15,7 @@
 #$ TITLE  M220A
 #$ MODULE  M220A
 #$ JEDECFILE  M220A
-#$ DEVICE  f1508ispplcc84
+#$ DEVICE  f1504ispplcc84
 #$ PINS  64 ac2_h+:45 ac2_l+:44 ac3_h+:46 ac3_l+:48 ac_enabl+:33 ac_low_enabl+:30 adder0+:1 adder1+:84 adder2+:80 adder3+:76 adder4+:75 adder5+:73 aj1+:70 ak1+:68 ak2+:69 an2+:61 and_h+:2 ar1+:55 as1+:52 as2+:54 at2+:51 au1+:49 au2+:50 be2+:37 br2+:15 bu1+:6 bv1+:4 bv2+:5 c0+:29 c2+:28 da2+:10 da_enabl+:9 data2+:22 data3+:17 data_enabl+:24 io2+:27 io3+:21 io_enabl+:25 ma2_h+:64 ma2_l+:63 ma3_h+:67 ma3_l+:65 ma_enabl+:16 mem2+:12 mem_enabl+:8 mq2_h+:31 mq3_h+:20 mq_enabl+:34 no_shift+:79 pc2_h+:57 pc2_l+:56 pc3_h+:60 pc3_l+:58 pc_enabl+:11 sc2+:39 sc3+:18 sc_enabl+:35 shift_l1+:77 shift_l2+:74 shift_r1+:83 shift_r2+:81 sr2+:36 sr3+:40 sr_enabl+:41 
 #$ NODES  6 mb2_h+ mb3_h+ n_t_12x+ n_t_14x+ n_t_5x+ n_t_8x+ 
 .i 61
