@@ -120,13 +120,11 @@ node y11;
 node int_enable;
 node device_flag;
 
-node iot;
-
 /* Equations */
 
 spare1 = 'b'0;
 /* BUGBUG: The !! in the next line should not be needed! */
-n_t_15x = !!n_t_14x; /* W1 */
+n_t_15x = n_t_14x; /* W1 */
 /*n_t_15x = md5_low; /* W2 */
 
 $IFNDEF HCONNECTOR
@@ -203,13 +201,20 @@ color_low = !color;
          # md3_low;
 
 /* e12: sp314n */
-!iot = n_t_15x
+/*!iot = n_t_15x
      # pause_low
      # n_t_17x
      # n_t_12x
      # n_t_10x
      # md6_low
-     # md8_low;
+     # md8_low;*/
+iot = !(n_t_15x
+     # pause_low
+     # n_t_17x
+     # n_t_12x
+     # n_t_10x
+     # md6_low
+     # md8_low);
 
 /* e13: sp380n */
 !di10 = data10_low
