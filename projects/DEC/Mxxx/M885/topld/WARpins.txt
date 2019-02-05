@@ -1,0 +1,2683 @@
+Pinlist
+
+Exported from war.sch at 12/5/2018 7:50:57 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C1       1        1          pas      VCC
+         2        2          pas      GND
+
+C2       1        1          pas      VCC
+         2        2          pas      GND
+
+C3       1        1          pas      VCC
+         2        2          pas      GND
+
+C4       1        1          pas      VCC
+         2        2          pas      GND
+
+C5       1        1          pas      VCC
+         2        2          pas      GND
+
+C6       1        1          pas      VCC
+         2        2          pas      GND
+
+C7       1        1          pas      VCC
+         2        2          pas      GND
+
+C8       1        1          pas      VCC
+         2        2          pas      GND
+
+C9       1        1          pas      VCC
+         2        2          pas      GND
+
+C10      1        1          pas      VCC
+         2        2          pas      GND
+
+C11      1        1          pas      VCC
+         2        2          pas      GND
+
+C12      1        1          pas      VCC
+         2        2          pas      GND
+
+C13      1        1          pas      VCC
+         2        2          pas      GND
+
+C14      1        1          pas      VCC
+         2        2          pas      GND
+
+C15      1        1          pas      VCC
+         2        2          pas      GND
+
+C16      1        1          pas      VCC
+         2        2          pas      GND
+
+C17      1        1          pas      VCC
+         2        2          pas      GND
+
+C18      1        1          pas      VCC
+         2        2          pas      GND
+
+C19      1        1          pas      VCC
+         2        2          pas      GND
+
+C20      1        1          pas      VCC
+         2        2          pas      GND
+
+C21      1        1          pas      VCC
+         2        2          pas      GND
+
+C22      1        1          pas      VCC
+         2        2          pas      GND
+
+C23      1        1          pas      VCC
+         2        2          pas      GND
+
+C24      1        1          pas      VCC
+         2        2          pas      GND
+
+C25      1        1          pas      VCC
+         2        2          pas      GND
+
+C26      1        1          pas      VCC
+         2        2          pas      GND
+
+C27      1        1          pas      VCC
+         2        2          pas      GND
+
+C28      1        1          pas      VCC
+         2        2          pas      GND
+
+C29      +        +          pas      VCC
+         -        -          pas      GND
+
+C30      +        +          pas      VCC
+         -        -          pas      GND
+
+C31      +        +          pas      VCC
+         -        -          pas      GND
+
+C32      +        +          pas      VCC
+         -        -          pas      GND
+
+C33      1        1          pas      N$32
+         2        2          pas      N$31
+
+C34      1        1          pas      N$33
+         2        2          pas      N$30
+
+C35      1        1          pas      N$33
+         2        2          pas      N$30
+
+C36      1        1          pas      N$37
+         2        2          pas      N$36
+
+C37      1        1          pas      N$42
+         2        2          pas      N$41
+
+C38      1        1          pas      N$48
+         2        2          pas      N$49
+
+C39      1        1          pas      N$47
+         2        2          pas      N$49
+
+C40      1        1          pas      N$28
+         2        2          pas      N$29
+
+C41      1        1          pas      VCC
+         2        2          pas      GND
+
+C42      1        1          pas      N$194
+         2        2          pas      GND
+
+C43      1        1          pas      VCC
+         2        2          pas      GND
+
+C44      1        1          pas      VCC
+         2        2          pas      GND
+
+C45      1        1          pas      VCC
+         2        2          pas      GND
+
+C46      1        1          pas      VCC
+         2        2          pas      GND
+
+C47      1        1          pas      VCC
+         2        2          pas      GND
+
+C48      1        1          pas      VCC
+         2        2          pas      GND
+
+C49      1        1          pas      VCC
+         2        2          pas      GND
+
+C50      1        1          pas      VCC
+         2        2          pas      GND
+
+C51      1        1          pas      VCC
+         2        2          pas      GND
+
+C52      1        1          pas      VCC
+         2        2          pas      GND
+
+C53      1        1          pas      VCC
+         2        2          pas      GND
+
+C54      1        1          pas      VCC
+         2        2          pas      GND
+
+C55      +        +          pas      VCC
+         -        -          pas      GND
+
+C56      +        +          pas      VCC
+         -        -          pas      GND
+
+C57      +        +          pas      VCC
+         -        -          pas      GND
+
+C58      +        +          pas      GND
+         -        -          pas      -15V
+
+C59      +        +          pas      GND
+         -        -          pas      -15V
+
+C60      +        +          pas      GND
+         -        -          pas      -15V
+
+C61      +        +          pas      GND
+         -        -          pas      -15V
+
+C62      +        +          pas      N$150
+         -        -          pas      GND
+
+C63      1        1          pas      INTENS
+         2        2          pas      N$154
+
+C64      1        1          pas      N$162
+         2        2          pas      GND
+
+C65      1        1          pas      N$156
+         2        2          pas      GND
+
+C66      1        1          pas      N$164
+         2        2          pas      N$165
+
+C67      1        1          pas      N$170
+         2        2          pas      GND
+
+C68      1        1          pas      GND
+         2        2          pas      N$172
+
+C69      1        1          pas      N$181
+         2        2          pas      GND
+
+C70      1        1          pas      N$175
+         2        2          pas      N$180
+
+C71      1        1          pas      N$204
+         2        2          pas      GND
+
+C72      1        1          pas      N$206
+         2        2          pas      N$190
+
+C73      1        1          pas      GND
+         2        2          pas      N$196
+
+C74      1        1          pas      N$199
+         2        2          pas      N$113
+
+C75      +        +          pas      N$163
+         -        -          pas      GND
+
+C76      +        +          pas      GND
+         -        -          pas      N$173
+
+C77      +        +          pas      N$189
+         -        -          pas      GND
+
+C78      +        +          pas      GND
+         -        -          pas      N$197
+
+C79      1        1          pas      VCC
+         2        2          pas      GND
+
+C80      1        1          pas      VCC
+         2        2          pas      GND
+
+C81      1        1          pas      VCC
+         2        2          pas      GND
+
+C82      1        1          pas      VCC
+         2        2          pas      GND
+
+C83      1        1          pas      VCC
+         2        2          pas      GND
+
+C84      1        1          pas      VCC
+         2        2          pas      GND
+
+C85      1        1          pas      VCC
+         2        2          pas      GND
+
+C86      1        1          pas      VCC
+         2        2          pas      GND
+
+C87      1        1          pas      VCC
+         2        2          pas      GND
+
+C88      1        1          pas      VCC
+         2        2          pas      GND
+
+C89      1        1          pas      VCC
+         2        2          pas      GND
+
+C90      1        1          pas      VCC
+         2        2          pas      GND
+
+C91      1        1          pas      VCC
+         2        2          pas      GND
+
+C92      1        1          pas      VCC
+         2        2          pas      GND
+
+C100     +        +          pas      VCC
+         -        -          pas      GND
+
+C101     +        +          pas      VCC
+         -        -          pas      GND
+
+C102     +        +          pas      VCC
+         -        -          pas      GND
+
+D1       A        A          pas      N$27
+         C        C          pas      N$28
+
+D2       A        A          pas      N$43
+         C        C          pas      N$44
+
+D3       A        A          pas      N$69
+         C        C          pas      N$71
+
+D4       A        A          pas      N$69
+         C        C          pas      N$180
+
+D5       A        A          pas      N$68
+         C        C          pas      +5V_X
+
+D6       A        A          pas      N$73
+         C        C          pas      N$75
+
+D7       A        A          pas      N$73
+         C        C          pas      N$180
+
+D8       A        A          pas      N$72
+         C        C          pas      +5V_X
+
+D9       A        A          pas      N$77
+         C        C          pas      N$180
+
+D10      A        A          pas      N$76
+         C        C          pas      +5V_X
+
+D11      A        A          pas      N$80
+         C        C          pas      N$180
+
+D12      A        A          pas      N$79
+         C        C          pas      +5V_X
+
+D13      A        A          pas      N$83
+         C        C          pas      N$180
+
+D14      A        A          pas      N$82
+         C        C          pas      +5V_X
+
+D15      A        A          pas      N$85
+         C        C          pas      N$180
+
+D16      A        A          pas      N$100
+         C        C          pas      +5V_X
+
+D17      A        A          pas      N$88
+         C        C          pas      N$180
+
+D18      A        A          pas      N$87
+         C        C          pas      +5V_X
+
+D19      A        A          pas      N$91
+         C        C          pas      N$180
+
+D20      A        A          pas      N$104
+         C        C          pas      +5V_X
+
+D21      A        A          pas      N$94
+         C        C          pas      N$180
+
+D22      A        A          pas      N$93
+         C        C          pas      +5V_X
+
+D23      A        A          pas      N$97
+         C        C          pas      N$180
+
+D24      A        A          pas      N$96
+         C        C          pas      +5V_X
+
+D25      A        A          pas      N$147
+         C        C          pas      +15V
+
+D26      A        A          pas      GND
+         C        C          pas      N$149
+
+D27      A        A          pas      N$169
+         C        C          pas      N$167
+
+D28      A        A          pas      N$171
+         C        C          pas      N$167
+
+D29      A        A          pas      -15V
+         C        C          pas      N$183
+
+D30      A        A          pas      N$108
+         C        C          pas      N$110
+
+D31      A        A          pas      N$108
+         C        C          pas      N$113
+
+D32      A        A          pas      N$107
+         C        C          pas      +5V_Y
+
+D33      A        A          pas      N$112
+         C        C          pas      N$115
+
+D34      A        A          pas      N$112
+         C        C          pas      N$113
+
+D35      A        A          pas      N$111
+         C        C          pas      +5V_Y
+
+D36      A        A          pas      N$116
+         C        C          pas      +5V_Y
+
+D37      A        A          pas      N$117
+         C        C          pas      N$113
+
+D38      A        A          pas      N$119
+         C        C          pas      +5V_Y
+
+D39      A        A          pas      N$120
+         C        C          pas      N$113
+
+D40      A        A          pas      N$122
+         C        C          pas      +5V_Y
+
+D41      A        A          pas      N$123
+         C        C          pas      N$113
+
+D42      A        A          pas      N$140
+         C        C          pas      +5V_Y
+
+D43      A        A          pas      N$125
+         C        C          pas      N$113
+
+D44      A        A          pas      N$127
+         C        C          pas      +5V_Y
+
+D45      A        A          pas      N$128
+         C        C          pas      N$113
+
+D46      A        A          pas      N$144
+         C        C          pas      +5V_Y
+
+D47      A        A          pas      N$131
+         C        C          pas      N$113
+
+D48      A        A          pas      N$133
+         C        C          pas      +5V_Y
+
+D49      A        A          pas      N$134
+         C        C          pas      N$113
+
+D50      A        A          pas      N$136
+         C        C          pas      +5V_Y
+
+D51      A        A          pas      N$137
+         C        C          pas      N$113
+
+D52      A        A          pas      N$193
+         C        C          pas      N$192
+
+D53      A        A          pas      N$195
+         C        C          pas      N$192
+
+D54      A        A          pas      N$205
+         C        C          pas      N$192
+
+D55      A        A          pas      N$205
+         C        C          pas      GND
+
+D56      A        A          pas      N$168
+         C        C          pas      N$167
+
+D57      A        A          pas      N$168
+         C        C          pas      GND
+
+D58      A        A          pas      N$187
+         C        C          pas      GND
+
+D59      A        A          pas      N$186
+         C        C          pas      GND
+
+E1       1        A          in       N$34
+         2        B          in       +3V
+         3        CLR        in       +3V
+         4        !Q         out               *** unconnected ***
+         5        Q          out      SET_DONE
+         6        C          in       N$42
+         7        R/C        in       N$41
+         8        GND        pwr      GND
+         9        A          in       N$39
+         10       B          in       N$40
+         11       CLR        in       N$40
+         12       !Q         out      !SET_DONE
+         13       Q          out      N$35
+         14       C          in       N$37
+         15       R/C        in       N$36
+         16       VCC        pwr      VCC
+
+E2       1        A          in       GND
+         2        B          in       !COLOR
+         3        CLR        in       +3V
+         4        !Q         out               *** unconnected ***
+         5        Q          out      RED_DELAY
+         6        C          in       N$32
+         7        R/C        in       N$31
+         8        GND        pwr      GND
+         9        A          in       GND
+         10       B          in       COLOR
+         11       CLR        in       +3V
+         12       !Q         out               *** unconnected ***
+         13       Q          out      GRN_DELAY
+         14       C          in       N$33
+         15       R/C        in       N$30
+         16       VCC        pwr      VCC
+
+E3       1        O          out      !DLY_DONE
+         2        I0         in       RED_DELAY
+         3        I1         in       GRN_DELAY
+         4        O          out      N$26
+         5        I0         in       CLEAR
+         6        I1         in       SET_DONE
+         7        GND        pwr      GND
+         8        I0         in       GRN_DELAY
+         9        I1         in       RED_DELAY
+         10       O          out      N$34
+         11       I0         in       N$35
+         12       I1         in       ERASE
+         13       O          out      !CLEAR_DONE
+         14       VCC        pwr      VCC
+
+E4       1        P$1        in       !LOAD_EN
+         2        P$2        in       !LOAD_EN
+         3        P$3        in       BTP3
+         4        P$4        in       +3V
+         6        !Q         out      !LD_DEL
+         7        GND        pwr      GND
+         8        Q          out               *** unconnected ***
+         11       P$5        io       N$49
+         13       P$6        io       N$45
+         14       VCC        pwr      VCC
+
+E5       1        CLR        in       !CLEAR
+         2        D          in       N$13
+         3        CLK        in       LD_EN_REG
+         4        PRE        in       +3V
+         5        Q          out      WRITE_THRU
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out      !STORE
+         9        Q          out      STORE
+         10       PRE        in       +3V
+         11       CLK        in       LD_EN_REG
+         12       D          in       N$22
+         13       CLR        in       !CLEAR
+         14       VCC        pwr      VCC
+
+E6       1        CLR        in       N$26
+         2        D          in       N$24
+         3        CLK        in       LD_EN_REG
+         4        PRE        in       +3V
+         5        Q          out      ERASE
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out      !COLOR
+         9        Q          out      COLOR
+         10       PRE        in       +3V
+         11       CLK        in       LD_EN_REG
+         12       D          in       N$11
+         13       CLR        in       !CLEAR
+         14       VCC        pwr      VCC
+
+E7       1        O          oc       !COL_RED
+         2        I0         in       COLOR
+         3        I1         in       COLOR
+         4        O          oc       N$25
+         5        I0         in       !STORE
+         6        I1         in       !COLOR
+         7        GND        pwr      GND
+         8        I0         in                ***   unused    ***
+         9        I1         in                ***   unused    ***
+         10       O          oc                ***   unused    ***
+         11       I0         in                ***   unused    ***
+         12       I1         in                ***   unused    ***
+         13       O          oc                ***   unused    ***
+         14       VCC        pwr      VCC
+
+E8       1        O          oc       !DATA07
+         2        I0         in       DIRE
+         3        I1         in       STORE
+         4        O          oc                ***   unused    ***
+         5        I0         in                ***   unused    ***
+         6        I1         in                ***   unused    ***
+         7        GND        pwr      GND
+         8        I0         in       COLOR
+         9        I1         in       DIRE
+         10       O          oc       !DATA09
+         11       I0         in       DIRE
+         12       I1         in       WRITE_THRU
+         13       O          oc       !DATA06
+         14       VCC        pwr      VCC
+
+E9       1        GND        pwr      GND
+         2        O          out      N$22
+         3        O          out      N$24
+         4        I0         in       !DATA08
+         5        I1         in       !LOAD_DATA
+         6        I0         in       !LOAD_DATA
+         7        I1         in       !DATA07
+         8        VCC        pwr      VCC
+         9        I0         in       !DATA06
+         10       I1         in       !LOAD_DATA
+         11       I0         in       !LOAD_DATA
+         12       I1         in       !DATA09
+         13       O          out      N$11
+         14       O          out      N$13
+
+E10      1        I          in                ***   unused    ***
+         2        O          oc                ***   unused    ***
+         3        I          in       ERASE
+         4        O          oc       !ERASE
+         5        I          in       N$25
+         6        O          oc       N$27
+         7        GND        pwr      GND
+         8        O          oc       !WRITE_THRU
+         9        I          in       WRITE_THRU
+         10       O          oc       N$43
+         11       I          in       !COLOR
+         12       O          oc       !NON_STORE
+         13       I          in       !STORE
+         14       VCC        pwr      VCC
+
+E11      1        GND        pwr      GND
+         2        O          out      N$17
+         3        O          out      N$14
+         4        I0         in       !MD5
+         5        I1         in       N$6
+         6        I0         in       N$6
+         7        I1         in       !MD7
+         8        VCC        pwr      VCC
+         9        I0         in       !MD4
+         10       I1         in       N$6
+         11       I0         in       N$6
+         12       I1         in       !MD3
+         13       O          out      N$10
+         14       O          out      N$12
+
+E12      1        GND        pwr      GND
+         3        O          out      IOT
+         4        I0         in       N$15
+         5        I1         in       N$6
+         6        I2         in       N$17
+         8        VCC        pwr      VCC
+         9        I3         in       N$12
+         10       I4         in       N$10
+         11       I5         in       !MD6
+         12       I6         in       !MD8
+
+E13      1        GND        pwr      GND
+         2        O          out      BIT11
+         3        O          out      BIT10
+         4        I0         in       !DATA10
+         5        I1         in       !LOAD_DATA
+         6        I0         in       !DATA11
+         7        I1         in       !LOAD_DATA
+         8        VCC        pwr      VCC
+         9        I0         in       TP3
+         10       I1         in       GND
+         11       I0         in       GND
+         12       I1         in       !PAUSE
+         13       O          out      N$16
+         14       O          out      !BTP3
+
+E13B     1        O          oc       !DATA11
+         2        I0         in       D11
+         3        I1         in       N$215
+         4        O          oc       !DATA10
+         5        I0         in       D10
+         6        I1         in       N$215
+         7        GND        pwr      GND
+         8        I0         in       D09
+         9        I1         in       N$215
+         10       O          oc       !DATA09
+         11       I0         in       D08
+         12       I1         in       N$215
+         13       O          oc       !DATA08
+         14       VCC        pwr      VCC
+
+E14      1        I          in       GND
+         2        O          out      +3V
+         3        I          in                ***   unused    ***
+         4        O          out               ***   unused    ***
+         5        I          in                ***   unused    ***
+         6        O          out               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      BTP3
+         9        I          in       !BTP3
+         10       O          out      N$6
+         11       I          in       N$16
+         12       O          out      +3V
+         13       I          in       GND
+         14       VCC        pwr      VCC
+
+E15      1        P$1        in       !B_DIXY
+         2        P$2        in       !B_DIXY
+         3        P$3        in       BTP3
+         4        P$4        in       +3V
+         6        !Q         out      !DEL_1
+         7        GND        pwr      GND
+         8        Q          out               *** unconnected ***
+         11       P$5        io       N$29
+         13       P$6        io       N$28
+         14       VCC        pwr      VCC
+
+E16      1        O          oc       !DATA10
+         2        I0         in       CHAN
+         3        I1         in       DIRE
+         4        O          oc       !DATA11
+         5        I0         in       DIRE
+         6        I1         in       INT_EN
+         7        GND        pwr      GND
+         8        I0         in       N$4
+         9        I1         in       N$4
+         10       O          oc       !C0
+         11       I0         in       DIRE
+         12       I1         in       DIRE
+         13       O          oc       !C1
+         14       VCC        pwr      VCC
+
+E17      1        O          oc       !SKIP
+         2        I0         in       DISD
+         3        I1         in       N$1
+         4        O          oc       !INTERRUPT
+         5        I0         in       N$1
+         6        I1         in       INT_EN
+         7        GND        pwr      GND
+         8        I0         in       IOT
+         9        I1         in       IOT
+         10       O          oc       !INTERNAL_IO
+         11       I0         in       N$1
+         12       I1         in       DIRE
+         13       O          oc       !DATA00
+         14       VCC        pwr      VCC
+
+E18      1        CLR        in       !CLEAR
+         2        D          in       BIT10
+         3        CLK        in       LD_EN_REG
+         4        PRE        in       +3V
+         5        Q          out      CHAN
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      INT_EN
+         10       PRE        in       +3V
+         11       CLK        in       LD_EN_REG
+         12       D          in       BIT11
+         13       CLR        in       !CLEAR
+         14       VCC        pwr      VCC
+
+E19      1        CLR        in       !CL_DONE
+         2        D          in       +3V
+         3        CLK        in       N$3
+         4        PRE        in       +3V
+         5        Q          out      N$1
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out               ***   unused    ***
+         9        Q          out               ***   unused    ***
+         10       PRE        in                ***   unused    ***
+         11       CLK        in                ***   unused    ***
+         12       D          in                ***   unused    ***
+         13       CLR        in                ***   unused    ***
+         14       VCC        pwr      VCC
+
+E20      1        O          out      LD_EN_REG
+         2        I0         in       !DILE
+         3        I1         in       !BTP3
+         4        O          out               ***   unused    ***
+         5        I0         in                ***   unused    ***
+         6        I1         in                ***   unused    ***
+         7        GND        pwr      GND
+         8        I0         in       DILX
+         9        I1         in       DILY
+         10       O          out      !LOAD_EN
+         11       I0         in       !DICL
+         12       I1         in       !BTP3
+         13       O          out      N$23
+         14       VCC        pwr      VCC
+
+E21      1        I          in       !DIXY
+         2        O          out      N$7
+         3        I          in       !DICD
+         4        O          out      DICD
+         5        I          in       !DISD
+         6        O          out      DISD
+         7        GND        pwr      GND
+         8        O          out      DILY
+         9        I          in       !DILY
+         10       O          out      DILX
+         11       I          in       !DILX
+         12       O          out      DIRE
+         13       I          in       !DIRE
+         14       VCC        pwr      VCC
+
+E22      1        I0         in       BTP3
+         2        I1         in       DICD
+         3        O          out      !B_DICD
+         4        I0         in       BTP3
+         5        I1         in       N$7
+         6        O          out      !B_DIXY
+         7        GND        pwr      GND
+         8        O          out      LOAD_X
+         9        I0         in       DILX
+         10       I1         in       BTP3
+         11       O          out      LOAD_Y
+         12       I0         in       BTP3
+         13       I1         in       DILY
+         14       VCC        pwr      VCC
+
+E23      1        I0         in       !CLEAR
+         2        I1         in       !B_LOAD_EN
+         4        I2         in       !B_DIXY
+         5        I3         in       !B_DICD
+         6        O          out      !CL_DONE
+         7        GND        pwr      GND
+         8        O          out      N$3
+         9        I0         in       !DEL_1
+         10       I1         in       !SET_DONE
+         12       I2         in       !DLY_DONE
+         13       I3         in       !LD_DEL
+         14       VCC        pwr      VCC
+
+E24      1        GND        pwr      GND
+         2        O          out      N$20
+         3        O          out      N$19
+         4        I0         in       !MD11
+         5        I1         in       !IOT
+         6        I0         in       !IOT
+         7        I1         in       !MD10
+         8        VCC        pwr      VCC
+         9        I0         in       INITIALIZE
+         10       I1         in       N$23
+         11       I0         in       !MD9
+         12       I1         in       !IOT
+         13       O          out      N$21
+         14       O          out      N$18
+
+E25      1        C          in       N$21
+         2        D          in       !IOT
+         3        5          out      !DIXY
+         4        6          out      !DILE
+         5        7          out      !DIRE
+         6        8          out               *** unconnected ***
+         7        9          out               *** unconnected ***
+         8        GND        pwr      GND
+         9        4          out      !DILY
+         10       3          out      !DILX
+         11       2          out      !DISD
+         12       1          out      !DICD
+         13       0          out      !DICL
+         14       B          in       N$20
+         15       A          in       N$19
+         16       VCC        pwr      VCC
+
+E26      1        I0         in       !DILE
+         2        I1         in       !DIRE
+         3        O          out      N$4
+         4        I0         in       !DILE
+         5        I1         in       !LOAD_EN
+         6        O          out      N$5
+         7        GND        pwr      GND
+         8        O          out      N$2
+         9        I0         in       !LOAD_EN
+         10       I1         in       !CLEAR_DONE
+         11       O          out      !B_LOAD_EN
+         12       I0         in       N$2
+         13       I1         in       BTP3
+         14       VCC        pwr      VCC
+
+E27      1        I0         in                ***   unused    ***
+         2        I1         in                ***   unused    ***
+         3        O          out               ***   unused    ***
+         4        I0         in                ***   unused    ***
+         5        I1         in                ***   unused    ***
+         6        O          out               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out               ***   unused    ***
+         9        I0         in                ***   unused    ***
+         10       I1         in                ***   unused    ***
+         11       O          out      N$8
+         12       I0         in       Z_PULSE
+         13       I1         in       !DEL_1
+         14       VCC        pwr      VCC
+
+E28      1        I          in       CHAN
+         2        O          oc       !CHAN
+         3        I          in       N$8
+         4        O          oc       N$9
+         5        I          in       CLEAR
+         6        O          oc       !CLEAR
+         7        GND        pwr      GND
+         8        O          oc       CLEAR
+         9        I          in       N$18
+         10       O          oc       !IOT
+         11       I          in       IOT
+         12       O          oc       !LOAD_DATA
+         13       I          in       N$5
+         14       VCC        pwr      VCC
+
+E29      1        I          in       X02
+         2        O          out      N$99
+         3        I          in       Y02
+         4        O          out      N$59
+         5        I          in       Y03
+         6        O          out      N$58
+         7        GND        pwr      GND
+         8        O          out      N$51
+         9        I          in       Y10
+         10       O          out      N$50
+         11       I          in       Y11
+         12       O          out      N$139
+         13       I          in       Y02
+         14       VCC        pwr      VCC
+
+E30      1        I          in       Y08
+         2        O          out      N$53
+         3        I          in       Y06
+         4        O          out      N$55
+         5        I          in       Y07
+         6        O          out      N$54
+         7        GND        pwr      GND
+         8        O          out      N$57
+         9        I          in       Y04
+         10       O          out      N$56
+         11       I          in       Y05
+         12       O          out      N$52
+         13       I          in       Y09
+         14       VCC        pwr      VCC
+
+E31      1        GND        pwr      GND
+         2        O          out      DI02
+         3        O          out      DI03
+         4        I0         in       !DATA03
+         5        I1         in       !LOAD_EN
+         6        I0         in       !LOAD_EN
+         7        I1         in       !DATA02
+         8        VCC        pwr      VCC
+         9        I0         in       !DATA09
+         10       I1         in       !LOAD_EN
+         11       I0         in       !LOAD_EN
+         12       I1         in       !DATA08
+         13       O          out      DI08
+         14       O          out      DI09
+
+E32      1        GND        pwr      GND
+         2        O          out      DI05
+         3        O          out      DI04
+         4        I0         in       !DATA04
+         5        I1         in       !LOAD_EN
+         6        I0         in       !LOAD_EN
+         7        I1         in       !DATA05
+         8        VCC        pwr      VCC
+         9        I0         in       !LOAD_EN
+         10       I1         in       !DATA06
+         11       I0         in       !LOAD_EN
+         12       I1         in       !DATA07
+         13       O          out      DI07
+         14       O          out      DI06
+
+E33      1        B          in       DI02
+         2        QB         out      Y02
+         3        QA         out      Y03
+         4        DN         in       N$64
+         5        UP         in       N$65
+         6        QC         out               *** unconnected ***
+         7        QD         out               *** unconnected ***
+         8        GND        pwr      GND
+         9        D          in       GND
+         10       C          in       GND
+         11       LD         in       LOAD_Y
+         12       CO         out               *** unconnected ***
+         13       BO         out               *** unconnected ***
+         14       CLR        in       GND
+         15       A          in       DI03
+         16       VCC        pwr      VCC
+
+E34      1        B          in       DI02
+         2        QB         out      X02
+         3        QA         out      X03
+         4        DN         in       N$60
+         5        UP         in       N$61
+         6        QC         out               *** unconnected ***
+         7        QD         out               *** unconnected ***
+         8        GND        pwr      GND
+         9        D          in       GND
+         10       C          in       GND
+         11       LD         in       LOAD_X
+         12       CO         out               *** unconnected ***
+         13       BO         out               *** unconnected ***
+         14       CLR        in       GND
+         15       A          in       DI03
+         16       VCC        pwr      VCC
+
+E35      1        B          in       DI06
+         2        QB         out      Y06
+         3        QA         out      Y07
+         4        DN         in       N$66
+         5        UP         in       N$67
+         6        QC         out      Y05
+         7        QD         out      Y04
+         8        GND        pwr      GND
+         9        D          in       DI04
+         10       C          in       DI05
+         11       LD         in       LOAD_Y
+         12       CO         out      N$65
+         13       BO         out      N$64
+         14       CLR        in       GND
+         15       A          in       DI07
+         16       VCC        pwr      VCC
+
+E36      1        B          in       DI06
+         2        QB         out      X06
+         3        QA         out      X07
+         4        DN         in       N$62
+         5        UP         in       N$63
+         6        QC         out      X05
+         7        QD         out      X04
+         8        GND        pwr      GND
+         9        D          in       DI04
+         10       C          in       DI05
+         11       LD         in       LOAD_X
+         12       CO         out      N$61
+         13       BO         out      N$60
+         14       CLR        in       GND
+         15       A          in       DI07
+         16       VCC        pwr      VCC
+
+E37      1        B          in       BIT10
+         2        QB         out      Y10
+         3        QA         out      Y11
+         4        DN         in       Y_DEC
+         5        UP         in       Y_INC
+         6        QC         out      Y09
+         7        QD         out      Y08
+         8        GND        pwr      GND
+         9        D          in       DI08
+         10       C          in       DI09
+         11       LD         in       LOAD_Y
+         12       CO         out      N$67
+         13       BO         out      N$66
+         14       CLR        in       GND
+         15       A          in       BIT11
+         16       VCC        pwr      VCC
+
+E38      1        B          in       BIT10
+         2        QB         out      X10
+         3        QA         out      X11
+         4        DN         in       X_DEC
+         5        UP         in       X_INC
+         6        QC         out      X09
+         7        QD         out      X08
+         8        GND        pwr      GND
+         9        D          in       DI08
+         10       C          in       DI09
+         11       LD         in       LOAD_X
+         12       CO         out      N$63
+         13       BO         out      N$62
+         14       CLR        in       GND
+         15       A          in       BIT11
+         16       VCC        pwr      VCC
+
+E39      1        A0         in       X11
+         2        B0         in       N$50
+         3        F0         oc       !DATA10
+         4        F1         oc       !DATA11
+         5        B1         in       N$51
+         6        A1         in       X10
+         7        S1         in       !X_AC
+         8        GND        pwr      GND
+         9        S0         in       !Y_AC
+         10       A2         in       X09
+         11       B2         in       N$52
+         12       F2         oc       !DATA09
+         13       F3         oc       !DATA08
+         14       B3         in       N$53
+         15       A3         in       X08
+         16       VCC        pwr      VCC
+
+E40      1        A0         in       X07
+         2        B0         in       N$54
+         3        F0         oc       !DATA07
+         4        F1         oc       !DATA06
+         5        B1         in       N$55
+         6        A1         in       X06
+         7        S1         in       !X_AC
+         8        GND        pwr      GND
+         9        S0         in       !Y_AC
+         10       A2         in       X05
+         11       B2         in       N$56
+         12       F2         oc       !DATA05
+         13       F3         oc       !DATA04
+         14       B3         in       N$57
+         15       A3         in       X04
+         16       VCC        pwr      VCC
+
+E41      1        A0         in       X03
+         2        B0         in       N$58
+         3        F0         oc       !DATA03
+         4        F1         oc       !DATA02
+         5        B1         in       N$59
+         6        A1         in       X02
+         7        S1         in       !X_AC
+         8        GND        pwr      GND
+         9        S0         in       !Y_AC
+         10       A2         in                *** unconnected ***
+         11       B2         in                *** unconnected ***
+         12       F2         oc                *** unconnected ***
+         13       F3         oc                *** unconnected ***
+         14       B3         in                *** unconnected ***
+         15       A3         in                *** unconnected ***
+         16       VCC        pwr      VCC
+
+E42      1        ON1        pas               *** unconnected ***
+         2        -IN        in                *** unconnected ***
+         3        +IN        in       N$152
+         4        V-         pwr      GND
+         5        OPT        pas               *** unconnected ***
+         6        OUT        out      +5V_X
+         7        V+         pwr      +15V
+         8        ON2        pas               *** unconnected ***
+
+E43      1        ON1        pas               *** unconnected ***
+         2        -IN        in                *** unconnected ***
+         3        +IN        in       N$151
+         4        V-         pwr      GND
+         5        OPT        pas               *** unconnected ***
+         6        OUT        out      +5V_Y
+         7        V+         pwr      +15V
+         8        ON2        pas               *** unconnected ***
+
+E44      1        ON1        pas      N$166
+         2        -IN        in       N$180
+         3        +IN        in       N$178
+         4        V-         pwr      N$173
+         5        OPT        pas      N$174
+         6        OUT        out      N$167
+         7        V+         pwr      N$163
+         8        ON2        pas      N$165
+
+E45      1        ON1        pas      N$191
+         2        -IN        in       N$113
+         3        +IN        in       N$202
+         4        V-         pwr      N$197
+         5        OPT        pas      N$198
+         6        OUT        out      N$192
+         7        V+         pwr      N$189
+         8        ON2        pas      N$190
+
+E46      1        I0         in       MD08L
+         2        I1         in       MD08L
+         3        I2         in       MD03L
+         4        I3         in       MD04L
+         5        I4         in       MD05H
+         6        I5         in       IO_PAUSEH
+         7        GND        pwr      GND
+         8        O          out      IOTL
+         11       I6         in       MD07L
+         12       I7         in       MD06H
+         14       VCC        pwr      VCC
+
+E47      1        CLR        in       IOT1L
+         2        D          in       GND
+         3        CLK        in       GND
+         4        PRE        in       N$208
+         5        Q          out               *** unconnected ***
+         6        !Q         out      INT_ENABLE
+         7        GND        pwr      GND
+         8        !Q         out      !DEVICE_FLAG
+         9        Q          out      DEVICE_FLAG
+         10       PRE        in       RD_RQST
+         11       CLK        in       GND
+         12       D          in       GND
+         13       CLR        in       N$219
+         14       VCC        pwr      VCC
+
+E48      1        I          in       MD08H
+         2        O          out      MD08L
+         3        I          in                ***   unused    ***
+         4        O          out               ***   unused    ***
+         5        I          in       MD07H
+         6        O          out      MD07L
+         7        GND        pwr      GND
+         8        O          out               ***   unused    ***
+         9        I          in                ***   unused    ***
+         10       O          out      MD04L
+         11       I          in       MD04H
+         12       O          out      MD03L
+         13       I          in       MD03H
+         14       VCC        pwr      VCC
+
+E49      1        O          oc       !SKIP
+         2        I0         in       N$220
+         3        I1         in       N$220
+         4        O          oc       !INT_RQST
+         5        I0         in       DEVICE_FLAG
+         6        I1         in       INT_ENABLE
+         7        GND        pwr      GND
+         8        I0         in                ***   unused    ***
+         9        I1         in                ***   unused    ***
+         10       O          oc                ***   unused    ***
+         11       I0         in                ***   unused    ***
+         12       I1         in                ***   unused    ***
+         13       O          oc                ***   unused    ***
+         14       VCC        pwr      VCC
+
+E50      1        O          oc       !DATA03
+         2        I0         in       D03
+         3        I1         in       N$214
+         4        O          oc       !DATA02
+         5        I0         in       D02
+         6        I1         in       N$214
+         7        GND        pwr      GND
+         8        I0         in       D01
+         9        I1         in       N$214
+         10       O          oc       !DATA01
+         11       I0         in       D00
+         12       I1         in       N$214
+         13       O          oc       !DATA00
+         14       VCC        pwr      VCC
+
+E51      1        O0         out      IOT0L
+         2        O1         out      IOT1L
+         3        O2         out      IOT2L
+         4        O3         out      IOT3L
+         5        O4         out      IOT4L
+         6        O5         out               *** unconnected ***
+         7        O6         out               *** unconnected ***
+         8        GND        pwr      GND
+         9        O7         out               *** unconnected ***
+         10       O8         out               *** unconnected ***
+         11       O9         out               *** unconnected ***
+         12       D          in       IOTL
+         13       C          in       MD09H
+         14       B          in       MD10H
+         15       A          in       MD11H
+         16       VCC        pwr      VCC
+
+E52      1        I0         in       IOT4L
+         2        I1         in       IOT4L
+         3        I0         in       !INITIALIZE
+         4        I1         in       IOT0L
+         5        I2         in       IOT2L
+         6        O          out      N$218
+         7        GND        pwr      GND
+         8        O          out      N$221
+         9        I0         in       IOT2L
+         10       I1         in       !INITIALIZE
+         11       I2         in       IOT4L
+         12       O          out               *** unconnected ***
+         13       I2         in       !DEVICE_FLAG
+         14       VCC        pwr      VCC
+
+E53      1        GND        pwr      GND
+         2        O          out      IO_PAUSEH
+         3        O          out      !INITIALIZE
+         4        I0         in       INITIALIZE
+         5        I1         in       INITIALIZE
+         6        I0         in       !IO_PAUSE
+         7        I1         in       !IO_PAUSE
+         8        VCC        pwr      VCC
+         9        I0         in       !MD03
+         10       I1         in       !MD03
+         11       I0         in       IOT3L
+         12       I1         in       IOT3L
+         13       O          out      N$220
+         14       O          out      MD03H
+
+E54      1        GND        pwr      GND
+         2        O          out      MD06H
+         3        O          out      MD07H
+         4        I0         in       !MD07
+         5        I1         in       !MD07
+         6        I0         in       !MD06
+         7        I1         in       !MD06
+         8        VCC        pwr      VCC
+         9        I0         in       !MD04
+         10       I1         in       !MD04
+         11       I0         in       !MD05
+         12       I1         in       !MD05
+         13       O          out      MD05H
+         14       O          out      MD04H
+
+E55      1        O          oc       !INTERNAL_IO
+         2        I0         in       N$213
+         3        I1         in       N$213
+         4        O          oc       !C1
+         5        I0         in       N$337
+         6        I1         in       N$337
+         7        GND        pwr      GND
+         8        I0         in       N$337
+         9        I1         in       N$337
+         10       O          oc       !C0
+         11       I0         in                ***   unused    ***
+         12       I1         in                ***   unused    ***
+         13       O          oc                ***   unused    ***
+         14       VCC        pwr      VCC
+
+E56      1        I          in       IOTL
+         2        O          out      N$213
+         3        I          in       N$218
+         4        O          out      N$208
+         5        I          in       N$221
+         6        O          out      N$219
+         7        GND        pwr      GND
+         8        O          out      N$215
+         9        I          in       IOT4L
+         10       O          out      N$214
+         11       I          in       IOT4L
+         12       O          out      N$337
+         13       I          in       IOT4L
+         14       VCC        pwr      VCC
+
+E57      1        GND        pwr      GND
+         2        O          out      MD11H
+         3        O          out      MD10H
+         4        I0         in       !MD10
+         5        I1         in       !MD10
+         6        I0         in       !MD11
+         7        I1         in       !MD11
+         8        VCC        pwr      VCC
+         9        I0         in       !MD09
+         10       I1         in       !MD09
+         11       I0         in       !MD08
+         12       I1         in       !MD08
+         13       O          out      MD08H
+         14       O          out      MD09H
+
+F        A1       P          pas      GND
+         A2       P          pas      Z_PULSE
+         B1       P          pas      GND
+         B2       P          pas      !DIRE
+         C1       P          pas      GND
+         C2       P          pas      !NON_STORE
+         D1       P          pas      +15V
+         D2       P          pas      !ERASE_INTERVAL
+         E1       P          pas      +15V
+         E2       P          pas               ***   unused    ***
+         F1       P          pas      -15V
+         F2       P          pas               ***   unused    ***
+         H1       P          pas      -15V
+         H2       P          pas               ***   unused    ***
+         J1       P          pas               ***   unused    ***
+         J2       P          pas               ***   unused    ***
+         K1       P          pas      !ERASE
+         K2       P          pas               ***   unused    ***
+         L1       P          pas      !COL_RED
+         L2       P          pas               ***   unused    ***
+         M1       P          pas      !WRITE_THRU
+         M2       P          pas               ***   unused    ***
+         N1       P          pas      CLEAR
+         N2       P          pas               ***   unused    ***
+         P1       P          pas      !DILE
+         P2       P          pas               ***   unused    ***
+         R1       P          pas      !CHAN
+         R2       P          pas               ***   unused    ***
+         S1       P          pas      INTENS
+         S2       P          pas               ***   unused    ***
+         T1       P          pas      BIT11
+         T2       P          pas               ***   unused    ***
+         U1       P          pas      BIT10
+         U2       P          pas      LOAD_Y
+         V1       P          pas      !LOAD_EN
+         V2       P          pas      LOAD_X
+
+F1       A1       P          pas      GND
+         A2       P          pas      Z_PULSE
+         B1       P          pas      GND
+         B2       P          pas      !DIRE
+         C1       P          pas      GND
+         C2       P          pas      !NON_STORE
+         D1       P          pas      +15V
+         D2       P          pas      !ERASE_INTERVAL
+         E1       P          pas      +15V
+         E2       P          pas               ***   unused    ***
+         F1       P          pas      -15V
+         F2       P          pas               ***   unused    ***
+         H1       P          pas      -15V
+         H2       P          pas               ***   unused    ***
+         J1       P          pas               ***   unused    ***
+         J2       P          pas               ***   unused    ***
+         K1       P          pas      !ERASE
+         K2       P          pas               ***   unused    ***
+         L1       P          pas      !COL_RED
+         L2       P          pas               ***   unused    ***
+         M1       P          pas      !WRITE_THRU
+         M2       P          pas               ***   unused    ***
+         N1       P          pas      CLEAR
+         N2       P          pas               ***   unused    ***
+         P1       P          pas      !DILE
+         P2       P          pas               ***   unused    ***
+         R1       P          pas      !CHAN
+         R2       P          pas               ***   unused    ***
+         S1       P          pas      INTENS
+         S2       P          pas               ***   unused    ***
+         T1       P          pas      BIT11
+         T2       P          pas               ***   unused    ***
+         U1       P          pas      BIT10
+         U2       P          pas      LOAD_Y
+         V1       P          pas      !LOAD_EN
+         V2       P          pas      LOAD_X
+
+H        A1       P          pas               ***   unused    ***
+         A2       P          pas               ***   unused    ***
+         B1       P          pas               ***   unused    ***
+         B2       P          pas               ***   unused    ***
+         C1       P          pas               ***   unused    ***
+         C2       P          pas               ***   unused    ***
+         D1       P          pas               ***   unused    ***
+         D2       P          pas               ***   unused    ***
+         E1       P          pas               ***   unused    ***
+         E2       P          pas               ***   unused    ***
+         F1       P          pas               ***   unused    ***
+         F2       P          pas               ***   unused    ***
+         H1       P          pas               ***   unused    ***
+         H2       P          pas               ***   unused    ***
+         J1       P          pas               ***   unused    ***
+         J2       P          pas               ***   unused    ***
+         K1       P          pas               ***   unused    ***
+         K2       P          pas               ***   unused    ***
+         L1       P          pas               ***   unused    ***
+         L2       P          pas               ***   unused    ***
+         M1       P          pas               ***   unused    ***
+         M2       P          pas               ***   unused    ***
+         N1       P          pas      -15V
+         N2       P          pas               ***   unused    ***
+         P1       P          pas      -15V
+         P2       P          pas               ***   unused    ***
+         R1       P          pas      +15V
+         R2       P          pas               ***   unused    ***
+         S1       P          pas      +15V
+         S2       P          pas               ***   unused    ***
+         T1       P          pas      GND
+         T2       P          pas               ***   unused    ***
+         U1       P          pas      GND
+         U2       P          pas               ***   unused    ***
+         V1       P          pas      GND
+         V2       P          pas               ***   unused    ***
+
+H1       A1       P          pas      Y_ANALOG
+         A2       P          pas               ***   unused    ***
+         B1       P          pas               ***   unused    ***
+         B2       P          pas      EX_ANALOG_X
+         C1       P          pas      X_ANALOG
+         C2       P          pas      EX_ANALOG_Y
+         D1       P          pas      INTENS
+         D2       P          pas               ***   unused    ***
+         E1       P          pas      !CHAN
+         E2       P          pas      X_INC
+         F1       P          pas      !DILE
+         F2       P          pas      Y_INC
+         H1       P          pas      CLEAR
+         H2       P          pas      X_DEC
+         J1       P          pas               ***   unused    ***
+         J2       P          pas      Y_DEC
+         K1       P          pas               ***   unused    ***
+         K2       P          pas      !X_AC
+         L1       P          pas               ***   unused    ***
+         L2       P          pas      !Y_AC
+         M1       P          pas               ***   unused    ***
+         M2       P          pas               ***   unused    ***
+         N1       P          pas      -15V
+         N2       P          pas               ***   unused    ***
+         P1       P          pas      -15V
+         P2       P          pas               ***   unused    ***
+         R1       P          pas      +15V
+         R2       P          pas               ***   unused    ***
+         S1       P          pas      +15V
+         S2       P          pas               ***   unused    ***
+         T1       P          pas      GND
+         T2       P          pas               ***   unused    ***
+         U1       P          pas      GND
+         U2       P          pas      !DIRE
+         V1       P          pas      GND
+         V2       P          pas      Z_PULSE
+
+J1       1        1          pas      +15V
+         2        2          pas      +15V
+         3        3          pas      -15V
+         4        4          pas      -15V
+         5        5          pas      GND
+         6        6          pas      GND
+         7        7          pas      GND
+         8        8          pas      GND
+
+J2       A        1          io       GND
+         B        2          io                *** unconnected ***
+         C        3          io       GND
+         D        4          io       X_ANALOG
+         E        5          io       GND
+         F        6          io       GND
+         H        7          io       GND
+         J        8          io       GND
+         K        9          io       GND
+         L        10         io       Y_ANALOG
+         M        11         io       GND
+         N        12         io       GND
+         P        13         io       GND
+         R        14         io                *** unconnected ***
+         S        15         io       GND
+         T        16         io                *** unconnected ***
+         U        17         io       GND
+         V        18         io       GND
+         W        19         io       GND
+         X        20         io       Z_AXIS
+         Y        21         io       GND
+         Z        22         io       !CHAN
+         AA       23         io       GND
+         BB       24         io       GND
+         CC       25         io       GND
+         DD       26         io       !COL_RED
+         EE       27         io       GND
+         FF       28         io       !ERASE
+         HH       29         io       GND
+         JJ       30         io       !WRITE_THRU
+         KK       31         io       GND
+         LL       32         io       !NON_STORE
+         MM       33         io       GND
+         NN       34         io       !ERASE_INTERVAL
+         PP       35         io       GND
+         RR       36         io                *** unconnected ***
+         SS       37         io       +5V_Y
+         TT       38         io                *** unconnected ***
+         UU       39         io       +5V_X
+         VV       40         io                *** unconnected ***
+
+J3       A        1          io       GND
+         B        2          io       D00
+         C        3          io       GND
+         D        4          io       D01
+         E        5          io       GND
+         F        6          io       D02
+         H        7          io       GND
+         J        8          io       D03
+         K        9          io       GND
+         L        10         io                *** unconnected ***
+         M        11         io       GND
+         N        12         io                *** unconnected ***
+         P        13         io       GND
+         R        14         io                *** unconnected ***
+         S        15         io       GND
+         T        16         io                *** unconnected ***
+         U        17         io       GND
+         V        18         io       D08
+         W        19         io       GND
+         X        20         io       D09
+         Y        21         io       GND
+         Z        22         io       D10
+         AA       23         io       GND
+         BB       24         io       D11
+         CC       25         io       GND
+         DD       26         io                *** unconnected ***
+         EE       27         io       GND
+         FF       28         io                *** unconnected ***
+         HH       29         io       GND
+         JJ       30         io                *** unconnected ***
+         KK       31         io       GND
+         LL       32         io                *** unconnected ***
+         MM       33         io       GND
+         NN       34         io                *** unconnected ***
+         PP       35         io       GND
+         RR       36         io                *** unconnected ***
+         SS       37         io       GND
+         TT       38         io                *** unconnected ***
+         UU       39         io       GND
+         VV       40         io                *** unconnected ***
+
+OMNIBUS  AA1      1          io                ***   unused    ***
+         AA2      1          io       VCC
+         AB1      1          io                ***   unused    ***
+         AB2      1          io       -15V
+         AC1      1          io                ***   unused    ***
+         AC2      1          io       GND
+         AD1      1          io                ***   unused    ***
+         AD2      1          io                ***   unused    ***
+         AE1      1          io                ***   unused    ***
+         AE2      1          io                ***   unused    ***
+         AF1      1          io       GND
+         AF2      1          io       GND
+         AH1      1          io                ***   unused    ***
+         AH2      1          io                ***   unused    ***
+         AJ1      1          io                ***   unused    ***
+         AJ2      1          io                ***   unused    ***
+         AK1      1          io                ***   unused    ***
+         AK2      1          io                ***   unused    ***
+         AL1      1          io                ***   unused    ***
+         AL2      1          io                ***   unused    ***
+         AM1      1          io                ***   unused    ***
+         AM2      1          io                ***   unused    ***
+         AN1      1          io       GND
+         AN2      1          io       GND
+         AP1      1          io       !MD3
+         AP2      1          io                ***   unused    ***
+         AR1      1          io       !DATA00
+         AR2      1          io                ***   unused    ***
+         AS1      1          io                ***   unused    ***
+         AS2      1          io                ***   unused    ***
+         AT1      1          io       GND
+         AT2      1          io       GND
+         AU1      1          io                ***   unused    ***
+         AU2      1          io                ***   unused    ***
+         AV1      1          io                ***   unused    ***
+         AV2      1          io                ***   unused    ***
+         BA1      1          io                ***   unused    ***
+         BA2      1          io       VCC
+         BB1      1          io                ***   unused    ***
+         BB2      1          io       -15V
+         BC1      1          io       GND
+         BC2      1          io       GND
+         BD1      1          io                ***   unused    ***
+         BD2      1          io                ***   unused    ***
+         BE1      1          io                ***   unused    ***
+         BE2      1          io                ***   unused    ***
+         BF1      1          io       GND
+         BF2      1          io       GND
+         BH1      1          io                ***   unused    ***
+         BH2      1          io                ***   unused    ***
+         BJ1      1          io                ***   unused    ***
+         BJ2      1          io                ***   unused    ***
+         BK1      1          io       !MD4
+         BK2      1          io                ***   unused    ***
+         BL1      1          io       !MD5
+         BL2      1          io                ***   unused    ***
+         BM1      1          io       !MD6
+         BM2      1          io                ***   unused    ***
+         BN1      1          io       GND
+         BN2      1          io       GND
+         BP1      1          io       !MD7
+         BP2      1          io                ***   unused    ***
+         BR1      1          io                ***   unused    ***
+         BR2      1          io                ***   unused    ***
+         BS1      1          io                ***   unused    ***
+         BS2      1          io                ***   unused    ***
+         BT1      1          io       GND
+         BT2      1          io       GND
+         BU1      1          io       !DATA06
+         BU2      1          io                ***   unused    ***
+         BV1      1          io       !DATA07
+         BV2      1          io                ***   unused    ***
+         CA1      1          io                ***   unused    ***
+         CA2      1          io       VCC
+         CB1      1          io                ***   unused    ***
+         CB2      1          io       -15V
+         CC1      1          io       GND
+         CC2      1          io       GND
+         CD1      1          io       !PAUSE
+         CD2      1          io                ***   unused    ***
+         CE1      1          io       !C0
+         CE2      1          io                ***   unused    ***
+         CF1      1          io       GND
+         CF2      1          io       GND
+         CH1      1          io       !C1
+         CH2      1          io       TP3
+         CJ1      1          io                ***   unused    ***
+         CJ2      1          io                ***   unused    ***
+         CK1      1          io                ***   unused    ***
+         CK2      1          io                ***   unused    ***
+         CL1      1          io       !INTERNAL_IO
+         CL2      1          io                ***   unused    ***
+         CM1      1          io                ***   unused    ***
+         CM2      1          io                ***   unused    ***
+         CN1      1          io       GND
+         CN2      1          io       GND
+         CP1      1          io       !INTERRUPT
+         CP2      1          io                ***   unused    ***
+         CR1      1          io       INITIALIZE
+         CR2      1          io                ***   unused    ***
+         CS1      1          io       !SKIP
+         CS2      1          io                ***   unused    ***
+         CT1      1          io       GND
+         CT2      1          io       GND
+         CU1      1          io                ***   unused    ***
+         CU2      1          io                ***   unused    ***
+         CV1      1          io                ***   unused    ***
+         CV2      1          io                ***   unused    ***
+         DA1      1          io                ***   unused    ***
+         DA2      1          io                ***   unused    ***
+         DB1      1          io                ***   unused    ***
+         DB2      1          io                ***   unused    ***
+         DC1      1          io       GND
+         DC2      1          io       GND
+         DD1      1          io                ***   unused    ***
+         DD2      1          io                ***   unused    ***
+         DE1      1          io                ***   unused    ***
+         DE2      1          io                ***   unused    ***
+         DF1      1          io       GND
+         DF2      1          io       GND
+         DH1      1          io                ***   unused    ***
+         DH2      1          io                ***   unused    ***
+         DJ1      1          io                ***   unused    ***
+         DJ2      1          io                ***   unused    ***
+         DK1      1          io       !MD8
+         DK2      1          io                ***   unused    ***
+         DL1      1          io       !MD9
+         DL2      1          io                ***   unused    ***
+         DM1      1          io       !MD10
+         DM2      1          io                ***   unused    ***
+         DN1      1          io       GND
+         DN2      1          io       GND
+         DP1      1          io       !MD11
+         DP2      1          io                ***   unused    ***
+         DR1      1          io       !DATA08
+         DR2      1          io                ***   unused    ***
+         DS1      1          io       !DATA09
+         DS2      1          io                ***   unused    ***
+         DT1      1          io       GND
+         DT2      1          io       GND
+         DU1      1          io       !DATA10
+         DU2      1          io                ***   unused    ***
+         DV1      1          io       !DATA11
+         DV2      1          io                ***   unused    ***
+
+OMNIBUS1 AA1      1          io                ***   unused    ***
+         AA2      1          io       VCC
+         AB1      1          io                ***   unused    ***
+         AB2      1          io       -15V
+         AC1      1          io                ***   unused    ***
+         AC2      1          io       GND
+         AD1      1          io                ***   unused    ***
+         AD2      1          io                ***   unused    ***
+         AE1      1          io                ***   unused    ***
+         AE2      1          io                ***   unused    ***
+         AF1      1          io       GND
+         AF2      1          io       GND
+         AH1      1          io                ***   unused    ***
+         AH2      1          io                ***   unused    ***
+         AJ1      1          io                ***   unused    ***
+         AJ2      1          io                ***   unused    ***
+         AK1      1          io                ***   unused    ***
+         AK2      1          io                ***   unused    ***
+         AL1      1          io                ***   unused    ***
+         AL2      1          io                ***   unused    ***
+         AM1      1          io                ***   unused    ***
+         AM2      1          io                ***   unused    ***
+         AN1      1          io       GND
+         AN2      1          io       GND
+         AP1      1          io                ***   unused    ***
+         AP2      1          io                ***   unused    ***
+         AR1      1          io                ***   unused    ***
+         AR2      1          io                ***   unused    ***
+         AS1      1          io                ***   unused    ***
+         AS2      1          io                ***   unused    ***
+         AT1      1          io       GND
+         AT2      1          io       GND
+         AU1      1          io       !DATA02
+         AU2      1          io                ***   unused    ***
+         AV1      1          io       !DATA03
+         AV2      1          io                ***   unused    ***
+         BA1      1          io                ***   unused    ***
+         BA2      1          io       VCC
+         BB1      1          io                ***   unused    ***
+         BB2      1          io       -15V
+         BC1      1          io       GND
+         BC2      1          io       GND
+         BD1      1          io                ***   unused    ***
+         BD2      1          io                ***   unused    ***
+         BE1      1          io                ***   unused    ***
+         BE2      1          io                ***   unused    ***
+         BF1      1          io       GND
+         BF2      1          io       GND
+         BH1      1          io                ***   unused    ***
+         BH2      1          io                ***   unused    ***
+         BJ1      1          io                ***   unused    ***
+         BJ2      1          io                ***   unused    ***
+         BK1      1          io                ***   unused    ***
+         BK2      1          io                ***   unused    ***
+         BL1      1          io                ***   unused    ***
+         BL2      1          io                ***   unused    ***
+         BM1      1          io                ***   unused    ***
+         BM2      1          io                ***   unused    ***
+         BN1      1          io       GND
+         BN2      1          io       GND
+         BP1      1          io                ***   unused    ***
+         BP2      1          io                ***   unused    ***
+         BR1      1          io       !DATA04
+         BR2      1          io                ***   unused    ***
+         BS1      1          io       !DATA05
+         BS2      1          io                ***   unused    ***
+         BT1      1          io       GND
+         BT2      1          io       GND
+         BU1      1          io       !DATA06
+         BU2      1          io                ***   unused    ***
+         BV1      1          io       !DATA07
+         BV2      1          io                ***   unused    ***
+         CA1      1          io                ***   unused    ***
+         CA2      1          io       VCC
+         CB1      1          io                ***   unused    ***
+         CB2      1          io       -15V
+         CC1      1          io       GND
+         CC2      1          io       GND
+         CD1      1          io                ***   unused    ***
+         CD2      1          io                ***   unused    ***
+         CE1      1          io                ***   unused    ***
+         CE2      1          io                ***   unused    ***
+         CF1      1          io       GND
+         CF2      1          io       GND
+         CH1      1          io                ***   unused    ***
+         CH2      1          io                ***   unused    ***
+         CJ1      1          io                ***   unused    ***
+         CJ2      1          io                ***   unused    ***
+         CK1      1          io                ***   unused    ***
+         CK2      1          io                ***   unused    ***
+         CL1      1          io                ***   unused    ***
+         CL2      1          io                ***   unused    ***
+         CM1      1          io                ***   unused    ***
+         CM2      1          io                ***   unused    ***
+         CN1      1          io       GND
+         CN2      1          io       GND
+         CP1      1          io                ***   unused    ***
+         CP2      1          io                ***   unused    ***
+         CR1      1          io                ***   unused    ***
+         CR2      1          io                ***   unused    ***
+         CS1      1          io                ***   unused    ***
+         CS2      1          io                ***   unused    ***
+         CT1      1          io       GND
+         CT2      1          io       GND
+         CU1      1          io                ***   unused    ***
+         CU2      1          io                ***   unused    ***
+         CV1      1          io                ***   unused    ***
+         CV2      1          io                ***   unused    ***
+         DA1      1          io                ***   unused    ***
+         DA2      1          io                ***   unused    ***
+         DB1      1          io                ***   unused    ***
+         DB2      1          io       N$155
+         DC1      1          io       GND
+         DC2      1          io       GND
+         DD1      1          io                ***   unused    ***
+         DD2      1          io                ***   unused    ***
+         DE1      1          io                ***   unused    ***
+         DE2      1          io                ***   unused    ***
+         DF1      1          io       GND
+         DF2      1          io       GND
+         DH1      1          io                ***   unused    ***
+         DH2      1          io                ***   unused    ***
+         DJ1      1          io                ***   unused    ***
+         DJ2      1          io                ***   unused    ***
+         DK1      1          io                ***   unused    ***
+         DK2      1          io                ***   unused    ***
+         DL1      1          io                ***   unused    ***
+         DL2      1          io                ***   unused    ***
+         DM1      1          io                ***   unused    ***
+         DM2      1          io                ***   unused    ***
+         DN1      1          io       GND
+         DN2      1          io       GND
+         DP1      1          io                ***   unused    ***
+         DP2      1          io                ***   unused    ***
+         DR1      1          io       !DATA08
+         DR2      1          io                ***   unused    ***
+         DS1      1          io       !DATA09
+         DS2      1          io                ***   unused    ***
+         DT1      1          io       GND
+         DT2      1          io       GND
+         DU1      1          io       !DATA10
+         DU2      1          io                ***   unused    ***
+         DV1      1          io       !DATA11
+         DV2      1          io                ***   unused    ***
+
+Q1       1        E          pas      GND
+         2        B          pas      N$38
+         3        C          pas      N$39
+
+Q2       1        E          pas      GND
+         2        B          pas      N$70
+         3        C          pas      N$71
+
+Q3       1        E          pas      GND
+         2        B          pas      N$74
+         3        C          pas      N$75
+
+Q4       1        E          pas      GND
+         2        B          pas      N$78
+         3        C          pas      N$77
+
+Q5       1        E          pas      GND
+         2        B          pas      N$81
+         3        C          pas      N$80
+
+Q6       1        E          pas      GND
+         2        B          pas      N$84
+         3        C          pas      N$83
+
+Q7       1        E          pas      GND
+         2        B          pas      N$86
+         3        C          pas      N$85
+
+Q8       1        E          pas      GND
+         2        B          pas      N$89
+         3        C          pas      N$88
+
+Q9       1        E          pas      GND
+         2        B          pas      N$92
+         3        C          pas      N$91
+
+Q10      1        E          pas      GND
+         2        B          pas      N$95
+         3        C          pas      N$94
+
+Q11      1        E          pas      GND
+         2        B          pas      N$98
+         3        C          pas      N$97
+
+Q12      1        E          pas      N$148
+         2        B          pas      N$147
+         3        C          pas      N$149
+
+Q13      1        E          pas      N$157
+         2        B          pas      N$160
+         3        C          pas      N$162
+
+Q14      1        E          pas      N$157
+         2        B          pas      N$154
+         3        C          pas      N$156
+
+Q15      1        E          pas      N$177
+         2        B          pas      N$169
+         3        C          pas      N$170
+
+Q16      1        E          pas      N$176
+         2        B          pas      N$171
+         3        C          pas      N$172
+
+Q17      1        E          pas      N$185
+         2        B          pas      N$183
+         3        C          pas      N$187
+
+Q18      1        E          pas      N$184
+         2        B          pas      N$183
+         3        C          pas      N$186
+
+Q19      1        E          pas      GND
+         2        B          pas      N$109
+         3        C          pas      N$110
+
+Q20      1        E          pas      GND
+         2        B          pas      N$114
+         3        C          pas      N$115
+
+Q21      1        E          pas      GND
+         2        B          pas      N$118
+         3        C          pas      N$117
+
+Q22      1        E          pas      GND
+         2        B          pas      N$121
+         3        C          pas      N$120
+
+Q23      1        E          pas      GND
+         2        B          pas      N$124
+         3        C          pas      N$123
+
+Q24      1        E          pas      GND
+         2        B          pas      N$126
+         3        C          pas      N$125
+
+Q25      1        E          pas      GND
+         2        B          pas      N$129
+         3        C          pas      N$128
+
+Q26      1        E          pas      GND
+         2        B          pas      N$132
+         3        C          pas      N$131
+
+Q27      1        E          pas      GND
+         2        B          pas      N$135
+         3        C          pas      N$134
+
+Q28      1        E          pas      GND
+         2        B          pas      N$138
+         3        C          pas      N$137
+
+Q29      1        E          pas      N$201
+         2        B          pas      N$193
+         3        C          pas      N$194
+
+Q30      1        E          pas      N$200
+         2        B          pas      N$195
+         3        C          pas      N$196
+
+Q31      1        E          pas      VCC
+         2        B          pas      N$153
+         3        C          pas      N$154
+
+R1       1        1          pas      N$6
+         2        2          pas      VCC
+
+R2       1        1          pas      !IOT
+         2        2          pas      VCC
+
+R3       1        1          pas      CLEAR
+         2        2          pas      VCC
+
+R4       1        1          pas      N$36
+         2        2          pas      VCC
+
+R5       1        1          pas      !CLEAR
+         2        2          pas      VCC
+
+R6       1        1          pas      !LOAD_DATA
+         2        2          pas      VCC
+
+R7       1        1          pas      N$41
+         2        2          pas      VCC
+
+R8       1        1          pas      N$43
+         2        2          pas      VCC
+
+R9       1        1          pas      N$44
+         2        2          pas      VCC
+
+R10      1        1          pas      N$46
+         2        2          pas      VCC
+
+R11      1        1          pas      Z_PULSE
+         2        2          pas      VCC
+
+R12      1        1          pas      !CHAN
+         2        2          pas      VCC
+
+R13      1        1          pas      N$9
+         2        2          pas      VCC
+
+R14      1        1          pas      !ERASE_INTERVAL
+         2        2          pas      N$38
+
+R15      1        1          pas      N$39
+         2        2          pas      VCC
+
+R16      1        1          pas      N$25
+         2        2          pas      VCC
+
+R17      1        1          pas      N$27
+         2        2          pas      VCC
+
+R18      1        1          pas      N$28
+         2        2          pas      VCC
+
+R19      1        1          pas      N$30
+         2        2          pas      VCC
+
+R20      1        1          pas      N$31
+         2        2          pas      VCC
+
+R21      1        1          pas      !COL_RED
+         2        2          pas      VCC
+
+R22      1        1          pas      N$40
+         2        2          pas      VCC
+
+R23      1        1          pas      !LOAD_EN
+         2        2          pas      VCC
+
+R24      1        1          pas      !X_AC
+         2        2          pas      VCC
+
+R25      1        1          pas      !Y_AC
+         2        2          pas      VCC
+
+R26      1        1          pas      X_INC
+         2        2          pas      VCC
+
+R27      1        1          pas      X_DEC
+         2        2          pas      VCC
+
+R28      1        1          pas      Y_INC
+         2        2          pas      VCC
+
+R29      1        1          pas      Y_DEC
+         2        2          pas      VCC
+
+R30      1        1          pas      X11
+         2        2          pas      N$70
+
+R31      1        1          pas      N$71
+         2        2          pas      VCC
+
+R32      1        1          pas      GND
+         2        2          pas      N$71
+
+R33      1        1          pas      N$68
+         2        2          pas      +15V
+
+R34      1        1          pas      N$69
+         2        2          pas      N$68
+
+R35      1        1          pas      X10
+         2        2          pas      N$74
+
+R36      1        1          pas      N$75
+         2        2          pas      VCC
+
+R37      1        1          pas      GND
+         2        2          pas      N$75
+
+R38      1        1          pas      N$72
+         2        2          pas      +15V
+
+R39      1        1          pas      N$73
+         2        2          pas      N$72
+
+R40      1        1          pas      X09
+         2        2          pas      N$78
+
+R41      1        1          pas      N$76
+         2        2          pas      +15V
+
+R42      1        1          pas      N$77
+         2        2          pas      N$76
+
+R43      1        1          pas      X08
+         2        2          pas      N$81
+
+R44      1        1          pas      N$79
+         2        2          pas      +15V
+
+R45      1        1          pas      N$80
+         2        2          pas      N$79
+
+R46      1        1          pas      X07
+         2        2          pas      N$84
+
+R47      1        1          pas      N$82
+         2        2          pas      +15V
+
+R48      1        1          pas      N$83
+         2        2          pas      N$82
+
+R49      1        1          pas      X06
+         2        2          pas      N$86
+
+R50      1        1          pas      N$100
+         2        2          pas      +15V
+
+R51      1        1          pas      N$85
+         2        2          pas      N$101
+
+R52      1        1          pas      X05
+         2        2          pas      N$89
+
+R53      1        1          pas      N$87
+         2        2          pas      +15V
+
+R54      1        1          pas      N$88
+         2        2          pas      N$103
+
+R55      1        1          pas      X04
+         2        2          pas      N$92
+
+R56      1        1          pas      N$104
+         2        2          pas      +15V
+
+R57      1        1          pas      N$91
+         2        2          pas      N$90
+
+R58      1        1          pas      X03
+         2        2          pas      N$95
+
+R59      1        1          pas      N$93
+         2        2          pas      +15V
+
+R60      1        1          pas      N$94
+         2        2          pas      N$105
+
+R61      1        1          pas      N$99
+         2        2          pas      N$98
+
+R62      1        1          pas      N$96
+         2        2          pas      +15V
+
+R63      1        1          pas      N$97
+         2        2          pas      N$106
+
+R64      1        1          pas      N$101
+         2        2          pas      N$102
+
+R65      A        A          pas      N$102
+         E        E          pas      N$100
+         S        S          pas      N$102
+
+R66      A        A          pas      N$103
+         E        E          pas      N$87
+         S        S          pas      N$103
+
+R67      A        A          pas      N$90
+         E        E          pas      N$104
+         S        S          pas      N$90
+
+R68      A        A          pas      N$105
+         E        E          pas      N$93
+         S        S          pas      N$105
+
+R69      A        A          pas      N$106
+         E        E          pas      N$96
+         S        S          pas      N$106
+
+R70      1        1          pas      N$97
+         2        2          pas      N$106
+
+R71      1        1          pas      GND
+         2        2          pas      N$147
+
+R72      1        1          pas      N$148
+         2        2          pas      +15V
+
+R73      A        A          pas      N$149
+         E        E          pas      N$150
+         S        S          pas      N$151
+
+R74      A        A          pas      N$149
+         E        E          pas      N$150
+         S        S          pas      N$152
+
+R75      1        1          pas      GND
+         2        2          pas      N$150
+
+R76      1        1          pas      GND
+         2        2          pas      +5V_X
+
+R77      1        1          pas      GND
+         2        2          pas      +5V_Y
+
+R78      1        1          pas      INTENS
+         2        2          pas      VCC
+
+R79      1        1          pas      INTENS
+         2        2          pas      N$153
+
+R80      1        1          pas      VCC
+         2        2          pas      N$158
+
+R81      1        1          pas      VCC
+         2        2          pas      N$159
+
+R82      1        1          pas      N$162
+         2        2          pas      VCC
+
+R83      1        1          pas      N$161
+         2        2          pas      N$160
+
+R84      1        1          pas      N$155
+         2        2          pas      N$154
+
+R85      1        1          pas      N$155
+         2        2          pas      N$156
+
+R86      1        1          pas      GND
+         2        2          pas      N$157
+
+R87      1        1          pas      N$157
+         2        2          pas      Z_AXIS
+
+R88      1        1          pas      N$163
+         2        2          pas      N$169
+
+R89      1        1          pas      N$163
+         2        2          pas      N$170
+
+R90      1        1          pas      N$163
+         2        2          pas      +15V
+
+R91      1        1          pas      N$166
+         2        2          pas      N$164
+
+R92      1        1          pas      N$177
+         2        2          pas      N$175
+
+R93      1        1          pas      GND
+         2        2          pas      N$178
+
+R94      1        1          pas      N$175
+         2        2          pas      N$174
+
+R95      1        1          pas      Y11
+         2        2          pas      N$109
+
+R96      1        1          pas      N$110
+         2        2          pas      VCC
+
+R97      1        1          pas      GND
+         2        2          pas      N$110
+
+R98      1        1          pas      N$107
+         2        2          pas      +15V
+
+R99      1        1          pas      N$108
+         2        2          pas      N$107
+
+R100     1        1          pas      Y10
+         2        2          pas      N$114
+
+R101     1        1          pas      N$115
+         2        2          pas      VCC
+
+R102     1        1          pas      GND
+         2        2          pas      N$115
+
+R103     1        1          pas      N$111
+         2        2          pas      +15V
+
+R104     1        1          pas      N$112
+         2        2          pas      N$111
+
+R105     1        1          pas      Y09
+         2        2          pas      N$118
+
+R106     1        1          pas      N$116
+         2        2          pas      +15V
+
+R107     1        1          pas      N$117
+         2        2          pas      N$116
+
+R108     1        1          pas      Y08
+         2        2          pas      N$121
+
+R109     1        1          pas      N$119
+         2        2          pas      +15V
+
+R110     1        1          pas      N$120
+         2        2          pas      N$119
+
+R111     1        1          pas      Y07
+         2        2          pas      N$124
+
+R112     1        1          pas      N$122
+         2        2          pas      +15V
+
+R113     1        1          pas      N$123
+         2        2          pas      N$122
+
+R114     1        1          pas      Y06
+         2        2          pas      N$126
+
+R115     1        1          pas      N$140
+         2        2          pas      +15V
+
+R116     A        A          pas      N$142
+         E        E          pas      N$140
+         S        S          pas      N$142
+
+R117     1        1          pas      N$141
+         2        2          pas      N$142
+
+R118     1        1          pas      N$125
+         2        2          pas      N$141
+
+R119     1        1          pas      Y05
+         2        2          pas      N$129
+
+R120     1        1          pas      N$127
+         2        2          pas      +15V
+
+R121     A        A          pas      N$143
+         E        E          pas      N$127
+         S        S          pas      N$143
+
+R122     1        1          pas      N$128
+         2        2          pas      N$143
+
+R123     1        1          pas      Y04
+         2        2          pas      N$132
+
+R124     1        1          pas      N$144
+         2        2          pas      +15V
+
+R125     A        A          pas      N$130
+         E        E          pas      N$144
+         S        S          pas      N$130
+
+R126     1        1          pas      N$131
+         2        2          pas      N$130
+
+R127     1        1          pas      Y03
+         2        2          pas      N$135
+
+R128     1        1          pas      N$133
+         2        2          pas      +15V
+
+R129     A        A          pas      N$145
+         E        E          pas      N$133
+         S        S          pas      N$145
+
+R130     1        1          pas      N$134
+         2        2          pas      N$145
+
+R131     1        1          pas      N$139
+         2        2          pas      N$138
+
+R132     1        1          pas      N$136
+         2        2          pas      +15V
+
+R133     A        A          pas      N$146
+         E        E          pas      N$136
+         S        S          pas      N$146
+
+R134     1        1          pas      N$137
+         2        2          pas      N$146
+
+R135     1        1          pas      N$137
+         2        2          pas      N$146
+
+R136     1        1          pas      N$175
+         2        2          pas      X_ANALOG
+
+R137     1        1          pas      N$176
+         2        2          pas      N$175
+
+R138     1        1          pas      N$173
+         2        2          pas      N$171
+
+R139     1        1          pas      N$173
+         2        2          pas      N$172
+
+R140     1        1          pas      -15V
+         2        2          pas      N$173
+
+R141     1        1          pas      N$181
+         2        2          pas      EX_ANALOG_X
+
+R142     1        1          pas      N$180
+         2        2          pas      N$181
+
+R143     1        1          pas      N$180
+         2        2          pas      N$179
+
+R144     1        1          pas      N$179
+         2        2          pas      N$175
+
+R145     1        1          pas      N$182
+         2        2          pas      N$180
+
+R146     1        1          pas      N$183
+         2        2          pas      GND
+
+R147     1        1          pas      -15V
+         2        2          pas      N$185
+
+R148     1        1          pas      -15V
+         2        2          pas      N$184
+
+R149     1        1          pas      N$188
+         2        2          pas      N$113
+
+R150     1        1          pas      N$204
+         2        2          pas      EX_ANALOG_Y
+
+R151     1        1          pas      N$113
+         2        2          pas      N$204
+
+R152     A        A          pas      N$182
+         E        E          pas      N$186
+         S        S          pas      N$186
+
+R153     A        A          pas      N$187
+         E        E          pas      N$188
+         S        S          pas      N$187
+
+R154     1        1          pas      N$203
+         2        2          pas      N$199
+
+R155     1        1          pas      N$113
+         2        2          pas      N$203
+
+R156     1        1          pas      N$201
+         2        2          pas      N$199
+
+R157     1        1          pas      N$200
+         2        2          pas      N$199
+
+R158     1        1          pas      -15V
+         2        2          pas      N$197
+
+R159     1        1          pas      N$197
+         2        2          pas      N$195
+
+R160     1        1          pas      N$197
+         2        2          pas      N$196
+
+R161     1        1          pas      N$193
+         2        2          pas      N$189
+
+R162     1        1          pas      N$194
+         2        2          pas      N$189
+
+R163     1        1          pas      N$189
+         2        2          pas      +15V
+
+R164     1        1          pas      N$191
+         2        2          pas      N$206
+
+R165     1        1          pas      GND
+         2        2          pas      N$202
+
+R166     1        1          pas      N$199
+         2        2          pas      N$198
+
+R167     1        1          pas      N$199
+         2        2          pas      Y_ANALOG
+
+R168     1        1          pas      RD_RQST
+         2        2          pas      VCC
+
+S1       1        A1         io       N$8
+         2        A2         io       INTENS
+         3        A3         io       N$9
+
+S2       1        A1         io       N$47
+         2        A2         io       N$45
+         3        A3         io       N$48
+
+TP1      TP       TP         in       RED_DELAY
+
+TP2      TP       TP         in       GRN_DELAY
+
+U$2      AA1      1          io                ***   unused    ***
+         AA2      1          io       VCC
+         AB1      1          io                ***   unused    ***
+         AB2      1          io                ***   unused    ***
+         AC1      1          io                ***   unused    ***
+         AC2      1          io       GND
+         AD1      1          io                ***   unused    ***
+         AD2      1          io                ***   unused    ***
+         AE1      1          io                ***   unused    ***
+         AE2      1          io                ***   unused    ***
+         AF1      1          io       GND
+         AF2      1          io       GND
+         AH1      1          io                ***   unused    ***
+         AH2      1          io                ***   unused    ***
+         AJ1      1          io                ***   unused    ***
+         AJ2      1          io                ***   unused    ***
+         AK1      1          io                ***   unused    ***
+         AK2      1          io                ***   unused    ***
+         AL1      1          io                ***   unused    ***
+         AL2      1          io                ***   unused    ***
+         AM1      1          io                ***   unused    ***
+         AM2      1          io                ***   unused    ***
+         AN1      1          io       GND
+         AN2      1          io       GND
+         AP1      1          io       !MD03
+         AP2      1          io                ***   unused    ***
+         AR1      1          io       !DATA00
+         AR2      1          io                ***   unused    ***
+         AS1      1          io       !DATA01
+         AS2      1          io                ***   unused    ***
+         AT1      1          io       GND
+         AT2      1          io       GND
+         AU1      1          io       !DATA02
+         AU2      1          io                ***   unused    ***
+         AV1      1          io       !DATA03
+         AV2      1          io                ***   unused    ***
+         BA1      1          io                ***   unused    ***
+         BA2      1          io       VCC
+         BB1      1          io                ***   unused    ***
+         BB2      1          io                ***   unused    ***
+         BC1      1          io       GND
+         BC2      1          io       GND
+         BD1      1          io                ***   unused    ***
+         BD2      1          io                ***   unused    ***
+         BE1      1          io                ***   unused    ***
+         BE2      1          io                ***   unused    ***
+         BF1      1          io       GND
+         BF2      1          io       GND
+         BH1      1          io                ***   unused    ***
+         BH2      1          io                ***   unused    ***
+         BJ1      1          io                ***   unused    ***
+         BJ2      1          io                ***   unused    ***
+         BK1      1          io       !MD04
+         BK2      1          io                ***   unused    ***
+         BL1      1          io       !MD05
+         BL2      1          io                ***   unused    ***
+         BM1      1          io       !MD06
+         BM2      1          io                ***   unused    ***
+         BN1      1          io       GND
+         BN2      1          io       GND
+         BP1      1          io       !MD07
+         BP2      1          io                ***   unused    ***
+         BR1      1          io       !DATA04
+         BR2      1          io                ***   unused    ***
+         BS1      1          io       !DATA05
+         BS2      1          io                ***   unused    ***
+         BT1      1          io       GND
+         BT2      1          io       GND
+         BU1      1          io       !DATA06
+         BU2      1          io                ***   unused    ***
+         BV1      1          io       !DATA07
+         BV2      1          io                ***   unused    ***
+         CA1      1          io                ***   unused    ***
+         CA2      1          io       VCC
+         CB1      1          io                ***   unused    ***
+         CB2      1          io                ***   unused    ***
+         CC1      1          io       GND
+         CC2      1          io       GND
+         CD1      1          io       !IO_PAUSE
+         CD2      1          io                ***   unused    ***
+         CE1      1          io       !C0
+         CE2      1          io                ***   unused    ***
+         CF1      1          io       GND
+         CF2      1          io       GND
+         CH1      1          io       !C1
+         CH2      1          io                ***   unused    ***
+         CJ1      1          io                ***   unused    ***
+         CJ2      1          io                ***   unused    ***
+         CK1      1          io                ***   unused    ***
+         CK2      1          io                ***   unused    ***
+         CL1      1          io       !INTERNAL_IO
+         CL2      1          io                ***   unused    ***
+         CM1      1          io                ***   unused    ***
+         CM2      1          io                ***   unused    ***
+         CN1      1          io       GND
+         CN2      1          io       GND
+         CP1      1          io       !INT_RQST
+         CP2      1          io                ***   unused    ***
+         CR1      1          io       INITIALIZE
+         CR2      1          io                ***   unused    ***
+         CS1      1          io       !SKIP
+         CS2      1          io                ***   unused    ***
+         CT1      1          io       GND
+         CT2      1          io       GND
+         CU1      1          io                ***   unused    ***
+         CU2      1          io                ***   unused    ***
+         CV1      1          io                ***   unused    ***
+         CV2      1          io                ***   unused    ***
+         DA1      1          io                ***   unused    ***
+         DA2      1          io                ***   unused    ***
+         DB1      1          io                ***   unused    ***
+         DB2      1          io                ***   unused    ***
+         DC1      1          io       GND
+         DC2      1          io       GND
+         DD1      1          io                ***   unused    ***
+         DD2      1          io                ***   unused    ***
+         DE1      1          io                ***   unused    ***
+         DE2      1          io                ***   unused    ***
+         DF1      1          io       GND
+         DF2      1          io       GND
+         DH1      1          io                ***   unused    ***
+         DH2      1          io                ***   unused    ***
+         DJ1      1          io                ***   unused    ***
+         DJ2      1          io                ***   unused    ***
+         DK1      1          io       !MD08
+         DK2      1          io                ***   unused    ***
+         DL1      1          io       !MD09
+         DL2      1          io                ***   unused    ***
+         DM1      1          io       !MD10
+         DM2      1          io                ***   unused    ***
+         DN1      1          io       GND
+         DN2      1          io       GND
+         DP1      1          io       !MD11
+         DP2      1          io                ***   unused    ***
+         DR1      1          io       !DATA08
+         DR2      1          io                ***   unused    ***
+         DS1      1          io       !DATA09
+         DS2      1          io                ***   unused    ***
+         DT1      1          io       GND
+         DT2      1          io       GND
+         DU1      1          io       !DATA10
+         DU2      1          io                ***   unused    ***
+         DV1      1          io       !DATA11
+         DV2      1          io                ***   unused    ***
+
+W1       1        1          pas      N$14
+         2        2          pas      N$15
+
+W2       1        1          pas      !MD5
+         2        2          pas      N$15
+
+W3       1        1          pas      N$44
+         2        2          pas      N$45
+
+W4       1        1          pas      N$45
+         2        2          pas      N$46
+
+W5       1        1          pas      N$158
+         2        2          pas      N$161
+
+W6       1        1          pas      N$140
+         2        2          pas      N$142
+
+W7       1        1          pas      N$100
+         2        2          pas      N$102
+
+W8       1        1          pas      N$159
+         2        2          pas      N$161
+
+W9       1        1          pas      N$179
+         2        2          pas      N$175
+
+W10      1        1          pas      N$203
+         2        2          pas      N$199
+

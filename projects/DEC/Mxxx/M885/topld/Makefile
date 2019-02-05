@@ -2,7 +2,7 @@
 # Create PLD files for M8416 schematics.
 #
 CUPL	= c:/Wincupl/Shared/cupl.exe -jelxbm3qu c:/wincupl/Shared/cupl.dl
-ALL	= M869D.doc M885E.doc
+ALL	= M869D.doc M885E.doc war.doc
 PINS	= $(ALL:.doc=pins.txt)
 PRTS	= $(ALL:.doc=prts.txt)
 LBRPL	= lbr.pl

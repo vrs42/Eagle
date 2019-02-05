@@ -3,13 +3,13 @@
                                      M885E
 *******************************************************************************
 
-CUPL(WM)        5.0a Serial# 60008009
-Device          f1508isptqfp100  Library DLIB-h-40-2
-Created         Sat May 26 19:58:34 2018
+CUPL(WM)        5.0a Serial# MW-10400000
+Device          virtual  Library DLIB-h-40-1
+Created         Tue Feb 05 09:17:07 2019
 Name            M885E 
 Partno          cpld 
 Revision        01 
-Date            5/26/2018 
+Date            2/5/2019 
 Designer        
 Company         
 Assembly        None 
@@ -20,108 +20,116 @@ Location        E1
 ===============================================================================
 
 !data02_low =>
-    y02 & !y_ac_low
-  # x02 & !x_ac_low
+    x02 & !x_ac_low
+  # y02 & !y_ac_low
 
 data02_low.oe  =>
     y02 & !y_ac_low
   # x02 & !x_ac_low
 
 !data03_low =>
-    y03 & !y_ac_low
-  # x03 & !x_ac_low
+    x03 & !x_ac_low
+  # y03 & !y_ac_low
 
 data03_low.oe  =>
     y03 & !y_ac_low
   # x03 & !x_ac_low
 
 !data04_low =>
-    y04 & !y_ac_low
-  # x04 & !x_ac_low
+    x04 & !x_ac_low
+  # y04 & !y_ac_low
 
 data04_low.oe  =>
     y04 & !y_ac_low
   # x04 & !x_ac_low
 
 !data05_low =>
-    y05 & !y_ac_low
-  # x05 & !x_ac_low
+    x05 & !x_ac_low
+  # y05 & !y_ac_low
 
 data05_low.oe  =>
     y05 & !y_ac_low
   # x05 & !x_ac_low
 
 !data06_low =>
-    y06 & !y_ac_low
-  # x06 & !x_ac_low
+    x06 & !x_ac_low
+  # y06 & !y_ac_low
 
 data06_low.oe  =>
     y06 & !y_ac_low
   # x06 & !x_ac_low
 
 !data07_low =>
-    y07 & !y_ac_low
-  # x07 & !x_ac_low
+    x07 & !x_ac_low
+  # y07 & !y_ac_low
 
 data07_low.oe  =>
     y07 & !y_ac_low
   # x07 & !x_ac_low
 
 !data08_low =>
-    y08 & !y_ac_low
-  # x08 & !x_ac_low
+    x08 & !x_ac_low
+  # y08 & !y_ac_low
 
 data08_low.oe  =>
     y08 & !y_ac_low
   # x08 & !x_ac_low
 
 !data09_low =>
-    y09 & !y_ac_low
-  # x09 & !x_ac_low
+    x09 & !x_ac_low
+  # y09 & !y_ac_low
 
 data09_low.oe  =>
     y09 & !y_ac_low
   # x09 & !x_ac_low
 
 !data10_low =>
-    y11 & !y_ac_low
-  # x11 & !x_ac_low
+    x11 & !x_ac_low
+  # y11 & !y_ac_low
 
 data10_low.oe  =>
     y11 & !y_ac_low
   # x11 & !x_ac_low
 
 !data11_low =>
-    y10 & !y_ac_low
-  # x10 & !x_ac_low
+    x10 & !x_ac_low
+  # y10 & !y_ac_low
 
 data11_low.oe  =>
     y10 & !y_ac_low
   # x10 & !x_ac_low
 
 !di02 =>
-    !data02_low & !load_en_low
+    data02_low
+  # load_en_low
 
 !di03 =>
-    !data03_low & !load_en_low
+    data03_low
+  # load_en_low
 
 !di04 =>
-    !data04_low & !load_en_low
+    data04_low
+  # load_en_low
 
 !di05 =>
-    !data05_low & !load_en_low
+    data05_low
+  # load_en_low
 
 !di06 =>
-    !data06_low & !load_en_low
+    data06_low
+  # load_en_low
 
 !di07 =>
-    !data07_low & !load_en_low
+    data07_low
+  # load_en_low
 
 !di08 =>
-    !data08_low & !load_en_low
+    data08_low
+  # load_en_low
 
 !di09 =>
-    !data09_low & !load_en_low
+    data09_low
+  # load_en_low
 
 gdollar_0.t  =>
     1 
@@ -133,8 +141,8 @@ gdollar_0.ar  =>
     !load_y
 
 gdollar_0.ck  =>
-    !y02 & !y03 & !y04 & !y05 & !y06 & !y07
-  # y02 & y03 & y04 & y05 & y06 & y07
+    n_t_6x & !y02 & !y03
+  # n_t_10x & y02 & y03
 
 gdollar_1.t  =>
     1 
@@ -146,8 +154,8 @@ gdollar_1.ar  =>
     !load_y
 
 gdollar_1.ck  =>
-    !gdollar_0 & !y02 & !y03 & !y04 & !y05 & !y06 & !y07
-  # gdollar_0 & y02 & y03 & y04 & y05 & y06 & y07
+    !gdollar_0 & n_t_6x & !y02 & !y03
+  # gdollar_0 & n_t_10x & y02 & y03
 
 gdollar_2.t  =>
     1 
@@ -159,8 +167,8 @@ gdollar_2.ar  =>
     !load_x
 
 gdollar_2.ck  =>
-    !x02 & !x03 & !x04 & !x05 & !x06 & !x07
-  # x02 & x03 & x04 & x05 & x06 & x07
+    n_t_21x & !x02 & !x03
+  # n_t_22x & x02 & x03
 
 gdollar_3.t  =>
     1 
@@ -172,8 +180,8 @@ gdollar_3.ar  =>
     !load_x
 
 gdollar_3.ck  =>
-    !gdollar_2 & !x02 & !x03 & !x04 & !x05 & !x06 & !x07
-  # gdollar_2 & x02 & x03 & x04 & x05 & x06 & x07
+    !gdollar_2 & n_t_21x & !x02 & !x03
+  # gdollar_2 & n_t_22x & x02 & x03
 
 n_t_102x =>
     1 
@@ -218,95 +226,88 @@ x02.t  =>
     1 
 
 x02.ap  =>
-    !data02_low & !load_en_low & !load_x
+    di02 & !load_x
 
 x02.ar  =>
-    load_en_low & !load_x
-  # data02_low & !load_x
+    !di02 & !load_x
 
 x02.ck  =>
-    !x03 & !x04 & !x05 & !x06 & !x07
-  # x03 & x04 & x05 & x06 & x07
+    n_t_21x & !x03
+  # n_t_22x & x03
 
 x03.t  =>
     1 
 
 x03.ap  =>
-    !data03_low & !load_en_low & !load_x
+    di03 & !load_x
 
 x03.ar  =>
-    data03_low & !load_x
-  # load_en_low & !load_x
+    !di03 & !load_x
 
 x03.ck  =>
-    !x04 & !x05 & !x06 & !x07
-  # x04 & x05 & x06 & x07
+    n_t_21x
+  # n_t_22x
 
 x04.t  =>
     1 
 
 x04.ap  =>
-    !data04_low & !load_en_low & !load_x
+    di04 & !load_x
 
 x04.ar  =>
-    data04_low & !load_x
-  # load_en_low & !load_x
+    !di04 & !load_x
 
 x04.ck  =>
-    !x05 & !x06 & !x07 & !x08 & !x09 & !x10 & !x11
-  # x05 & x06 & x07 & x08 & x09 & x10 & x11
+    n_t_23x & !x05 & !x06 & !x07
+  # n_t_24x & x05 & x06 & x07
 
 x05.t  =>
     1 
 
 x05.ap  =>
-    !data05_low & !load_en_low & !load_x
+    di05 & !load_x
 
 x05.ar  =>
-    load_en_low & !load_x
-  # data05_low & !load_x
+    !di05 & !load_x
 
 x05.ck  =>
-    !x06 & !x07 & !x08 & !x09 & !x10 & !x11
-  # x06 & x07 & x08 & x09 & x10 & x11
+    n_t_23x & !x06 & !x07
+  # n_t_24x & x06 & x07
 
 x06.t  =>
     1 
 
 x06.ap  =>
-    !data06_low & !load_en_low & !load_x
+    di06 & !load_x
 
 x06.ar  =>
-    load_en_low & !load_x
-  # data06_low & !load_x
+    !di06 & !load_x
 
 x06.ck  =>
-    !x07 & !x08 & !x09 & !x10 & !x11
-  # x07 & x08 & x09 & x10 & x11
+    n_t_23x & !x07
+  # n_t_24x & x07
 
 x07.t  =>
     1 
 
 x07.ap  =>
-    !data07_low & !load_en_low & !load_x
+    di07 & !load_x
 
 x07.ar  =>
-    load_en_low & !load_x
-  # data07_low & !load_x
+    !di07 & !load_x
 
 x07.ck  =>
-    !x08 & !x09 & !x10 & !x11
-  # x08 & x09 & x10 & x11
+    n_t_23x
+  # n_t_24x
 
 x08.t  =>
     1 
 
 x08.ap  =>
-    !data08_low & !load_en_low & !load_x
+    di08 & !load_x
 
 x08.ar  =>
-    load_en_low & !load_x
-  # data08_low & !load_x
+    !di08 & !load_x
 
 x08.ck  =>
     !x09 & !x10 & !x11 & x_dec
@@ -316,11 +317,10 @@ x09.t  =>
     1 
 
 x09.ap  =>
-    !data09_low & !load_en_low & !load_x
+    di09 & !load_x
 
 x09.ar  =>
-    data09_low & !load_x
-  # load_en_low & !load_x
+    !di09 & !load_x
 
 x09.ck  =>
     !x10 & !x11 & x_dec
@@ -356,95 +356,88 @@ y02.t  =>
     1 
 
 y02.ap  =>
-    !data02_low & !load_en_low & !load_y
+    di02 & !load_y
 
 y02.ar  =>
-    load_en_low & !load_y
-  # data02_low & !load_y
+    !di02 & !load_y
 
 y02.ck  =>
-    !y03 & !y04 & !y05 & !y06 & !y07
-  # y03 & y04 & y05 & y06 & y07
+    n_t_6x & !y03
+  # n_t_10x & y03
 
 y03.t  =>
     1 
 
 y03.ap  =>
-    !data03_low & !load_en_low & !load_y
+    di03 & !load_y
 
 y03.ar  =>
-    data03_low & !load_y
-  # load_en_low & !load_y
+    !di03 & !load_y
 
 y03.ck  =>
-    !y04 & !y05 & !y06 & !y07
-  # y04 & y05 & y06 & y07
+    n_t_6x
+  # n_t_10x
 
 y04.t  =>
     1 
 
 y04.ap  =>
-    !data04_low & !load_en_low & !load_y
+    di04 & !load_y
 
 y04.ar  =>
-    data04_low & !load_y
-  # load_en_low & !load_y
+    !di04 & !load_y
 
 y04.ck  =>
-    !y05 & !y06 & !y07 & !y08 & !y09 & !y10 & !y11
-  # y05 & y06 & y07 & y08 & y09 & y10 & y11
+    n_t_12x & !y05 & !y06 & !y07
+  # n_t_14x & y05 & y06 & y07
 
 y05.t  =>
     1 
 
 y05.ap  =>
-    !data05_low & !load_en_low & !load_y
+    di05 & !load_y
 
 y05.ar  =>
-    load_en_low & !load_y
-  # data05_low & !load_y
+    !di05 & !load_y
 
 y05.ck  =>
-    !y06 & !y07 & !y08 & !y09 & !y10 & !y11
-  # y06 & y07 & y08 & y09 & y10 & y11
+    n_t_12x & !y06 & !y07
+  # n_t_14x & y06 & y07
 
 y06.t  =>
     1 
 
 y06.ap  =>
-    !data06_low & !load_en_low & !load_y
+    di06 & !load_y
 
 y06.ar  =>
-    load_en_low & !load_y
-  # data06_low & !load_y
+    !di06 & !load_y
 
 y06.ck  =>
-    !y07 & !y08 & !y09 & !y10 & !y11
-  # y07 & y08 & y09 & y10 & y11
+    n_t_12x & !y07
+  # n_t_14x & y07
 
 y07.t  =>
     1 
 
 y07.ap  =>
-    !data07_low & !load_en_low & !load_y
+    di07 & !load_y
 
 y07.ar  =>
-    load_en_low & !load_y
-  # data07_low & !load_y
+    !di07 & !load_y
 
 y07.ck  =>
-    !y08 & !y09 & !y10 & !y11
-  # y08 & y09 & y10 & y11
+    n_t_12x
+  # n_t_14x
 
 y08.t  =>
     1 
 
 y08.ap  =>
-    !data08_low & !load_en_low & !load_y
+    di08 & !load_y
 
 y08.ar  =>
-    load_en_low & !load_y
-  # data08_low & !load_y
+    !di08 & !load_y
 
 y08.ck  =>
     !y09 & !y10 & !y11 & y_dec
@@ -454,11 +447,10 @@ y09.t  =>
     1 
 
 y09.ap  =>
-    !data09_low & !load_en_low & !load_y
+    di09 & !load_y
 
 y09.ar  =>
-    data09_low & !load_y
-  # load_en_low & !load_y
+    !di09 & !load_y
 
 y09.ck  =>
     !y10 & !y11 & y_dec
@@ -501,179 +493,181 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
 
     bit10                       0        V        -       -       -     
     bit11                       0        V        -       -       -     
-    data02_low                  0        V        2       0       4     
+    data02_low                  0        V        2       0       3     
     data02_low          oe      0        X        2       0       1     
-    data03_low                  0        V        2       0       4     
+    data03_low                  0        V        2       0       3     
     data03_low          oe      0        X        2       0       1     
-    data04_low                  0        V        2       0       4     
+    data04_low                  0        V        2       0       3     
     data04_low          oe      0        X        2       0       1     
-    data05_low                  0        V        2       0       4     
+    data05_low                  0        V        2       0       3     
     data05_low          oe      0        X        2       0       1     
-    data06_low                  0        V        2       0       4     
+    data06_low                  0        V        2       0       3     
     data06_low          oe      0        X        2       0       1     
-    data07_low                  0        V        2       0       4     
+    data07_low                  0        V        2       0       3     
     data07_low          oe      0        X        2       0       1     
-    data08_low                  0        V        2       0       4     
+    data08_low                  0        V        2       0       3     
     data08_low          oe      0        X        2       0       1     
-    data09_low                  0        V        2       0       4     
+    data09_low                  0        V        2       0       3     
     data09_low          oe      0        X        2       0       1     
-    data10_low                  0        V        2       0       4     
+    data10_low                  0        V        2       0       3     
     data10_low          oe      0        X        2       0       1     
-    data11_low                  0        V        2       0       4     
+    data11_low                  0        V        2       0       3     
     data11_low          oe      0        X        2       0       1     
-    di02                        0        I        1       -       -     
-    di03                        0        I        1       -       -     
-    di04                        0        I        1       -       -     
-    di05                        0        I        1       -       -     
-    di06                        0        I        1       -       -     
-    di07                        0        I        1       -       -     
-    di08                        0        I        1       -       -     
-    di09                        0        I        1       -       -     
-    gdollar_0                   103      N        -       -       -     
-    gdollar_0           t       103      M        1       0       4     
-    gdollar_0           ap      103      M        1       0       1     
-    gdollar_0           ar      103      M        1       0       1     
-    gdollar_0           ck      103      M        2       0       1     
-    gdollar_1                   104      N        -       -       -     
-    gdollar_1           t       104      M        1       0       4     
-    gdollar_1           ap      104      M        1       0       1     
-    gdollar_1           ar      104      M        1       0       1     
-    gdollar_1           ck      104      M        2       0       1     
-    gdollar_2                   107      N        -       -       -     
-    gdollar_2           t       107      M        1       0       4     
-    gdollar_2           ap      107      M        1       0       1     
-    gdollar_2           ar      107      M        1       0       1     
-    gdollar_2           ck      107      M        2       0       1     
-    gdollar_3                   108      N        -       -       -     
-    gdollar_3           t       108      M        1       0       4     
-    gdollar_3           ap      108      M        1       0       1     
-    gdollar_3           ar      108      M        1       0       1     
-    gdollar_3           ck      108      M        2       0       1     
+    di02                        225      N        2       0       3     
+    di03                        226      N        2       0       3     
+    di04                        227      N        2       0       3     
+    di05                        228      N        2       0       3     
+    di06                        229      N        2       0       3     
+    di07                        230      N        2       0       3     
+    di08                        231      N        2       0       3     
+    di09                        232      N        2       0       3     
+    gdollar_0                   203      N        -       -       -     
+    gdollar_0           t       203      M        1       0       3     
+    gdollar_0           ap      203      M        1       0       1     
+    gdollar_0           ar      203      M        1       0       1     
+    gdollar_0           ck      203      M        2       0       1     
+    gdollar_1                   204      N        -       -       -     
+    gdollar_1           t       204      M        1       0       3     
+    gdollar_1           ap      204      M        1       0       1     
+    gdollar_1           ar      204      M        1       0       1     
+    gdollar_1           ck      204      M        2       0       1     
+    gdollar_2                   207      N        -       -       -     
+    gdollar_2           t       207      M        1       0       3     
+    gdollar_2           ap      207      M        1       0       1     
+    gdollar_2           ar      207      M        1       0       1     
+    gdollar_2           ck      207      M        2       0       1     
+    gdollar_3                   208      N        -       -       -     
+    gdollar_3           t       208      M        1       0       3     
+    gdollar_3           ap      208      M        1       0       1     
+    gdollar_3           ar      208      M        1       0       1     
+    gdollar_3           ck      208      M        2       0       1     
     load_en_low                 0        V        -       -       -     
     load_x                      0        V        -       -       -     
     load_y                      0        V        -       -       -     
     n5v_x                       0        V        -       -       -     
     n5v_y                       0        V        -       -       -     
     n_t_102x                    0        I        1       -       -     
-    n_t_10x                     0        I        1       -       -     
+    n_t_103x                    233      N        -       -       -     
+    n_t_105x                    234      N        -       -       -     
+    n_t_10x                     235      N        1       0       3     
     n_t_110x                    0        I        1       -       -     
     n_t_111x                    0        I        1       -       -     
     n_t_121x                    0        V        -       -       -     
-    n_t_12x                     0        I        1       -       -     
-    n_t_132x                    0        I        1       -       -     
+    n_t_12x                     236      N        1       0       3     
+    n_t_132x                    237      N        1       0       3     
     n_t_145x                    0        V        -       -       -     
-    n_t_14x                     0        I        1       -       -     
-    n_t_156x                    0        I        1       -       -     
-    n_t_21x                     0        I        1       -       -     
-    n_t_22x                     0        I        1       -       -     
-    n_t_23x                     0        I        1       -       -     
-    n_t_24x                     0        I        1       -       -     
+    n_t_14x                     238      N        1       0       3     
+    n_t_156x                    239      N        1       0       3     
+    n_t_21x                     240      N        1       0       3     
+    n_t_22x                     241      N        1       0       3     
+    n_t_23x                     242      N        1       0       3     
+    n_t_24x                     243      N        1       0       3     
     n_t_27x                     0        V        -       -       -     
     n_t_52x                     0        V        -       -       -     
-    n_t_6x                      0        I        1       -       -     
-    x02                         106      N        -       -       -     
-    x02                 t       106      M        1       0       4     
-    x02                 ap      106      M        1       0       1     
-    x02                 ar      106      M        2       0       1     
-    x02                 ck      106      M        2       0       1     
-    x03                         105      N        -       -       -     
-    x03                 t       105      M        1       0       4     
-    x03                 ap      105      M        1       0       1     
-    x03                 ar      105      M        2       0       1     
-    x03                 ck      105      M        2       0       1     
-    x04                         116      N        -       -       -     
-    x04                 t       116      M        1       0       4     
-    x04                 ap      116      M        1       0       1     
-    x04                 ar      116      M        2       0       1     
-    x04                 ck      116      M        2       0       1     
-    x05                         115      N        -       -       -     
-    x05                 t       115      M        1       0       4     
-    x05                 ap      115      M        1       0       1     
-    x05                 ar      115      M        2       0       1     
-    x05                 ck      115      M        2       0       1     
-    x06                         114      N        -       -       -     
-    x06                 t       114      M        1       0       4     
-    x06                 ap      114      M        1       0       1     
-    x06                 ar      114      M        2       0       1     
-    x06                 ck      114      M        2       0       1     
-    x07                         113      N        -       -       -     
-    x07                 t       113      M        1       0       4     
-    x07                 ap      113      M        1       0       1     
-    x07                 ar      113      M        2       0       1     
-    x07                 ck      113      M        2       0       1     
-    x08                         124      N        -       -       -     
-    x08                 t       124      M        1       0       4     
-    x08                 ap      124      M        1       0       1     
-    x08                 ar      124      M        2       0       1     
-    x08                 ck      124      M        2       0       1     
-    x09                         123      N        -       -       -     
-    x09                 t       123      M        1       0       4     
-    x09                 ap      123      M        1       0       1     
-    x09                 ar      123      M        2       0       1     
-    x09                 ck      123      M        2       0       1     
-    x10                         122      N        -       -       -     
-    x10                 t       122      M        1       0       4     
-    x10                 ap      122      M        1       0       1     
-    x10                 ar      122      M        1       0       1     
-    x10                 ck      122      M        2       0       1     
-    x11                         121      N        -       -       -     
-    x11                 t       121      M        1       0       4     
-    x11                 ap      121      M        1       0       1     
-    x11                 ar      121      M        1       0       1     
-    x11                 ck      121      M        2       0       1     
+    n_t_6x                      244      N        1       0       3     
+    x02                         206      N        -       -       -     
+    x02                 t       206      M        1       0       3     
+    x02                 ap      206      M        1       0       1     
+    x02                 ar      206      M        1       0       1     
+    x02                 ck      206      M        2       0       1     
+    x03                         205      N        -       -       -     
+    x03                 t       205      M        1       0       3     
+    x03                 ap      205      M        1       0       1     
+    x03                 ar      205      M        1       0       1     
+    x03                 ck      205      M        2       0       1     
+    x04                         216      N        -       -       -     
+    x04                 t       216      M        1       0       3     
+    x04                 ap      216      M        1       0       1     
+    x04                 ar      216      M        1       0       1     
+    x04                 ck      216      M        2       0       1     
+    x05                         215      N        -       -       -     
+    x05                 t       215      M        1       0       3     
+    x05                 ap      215      M        1       0       1     
+    x05                 ar      215      M        1       0       1     
+    x05                 ck      215      M        2       0       1     
+    x06                         214      N        -       -       -     
+    x06                 t       214      M        1       0       3     
+    x06                 ap      214      M        1       0       1     
+    x06                 ar      214      M        1       0       1     
+    x06                 ck      214      M        2       0       1     
+    x07                         213      N        -       -       -     
+    x07                 t       213      M        1       0       3     
+    x07                 ap      213      M        1       0       1     
+    x07                 ar      213      M        1       0       1     
+    x07                 ck      213      M        2       0       1     
+    x08                         224      N        -       -       -     
+    x08                 t       224      M        1       0       3     
+    x08                 ap      224      M        1       0       1     
+    x08                 ar      224      M        1       0       1     
+    x08                 ck      224      M        2       0       1     
+    x09                         223      N        -       -       -     
+    x09                 t       223      M        1       0       3     
+    x09                 ap      223      M        1       0       1     
+    x09                 ar      223      M        1       0       1     
+    x09                 ck      223      M        2       0       1     
+    x10                         222      N        -       -       -     
+    x10                 t       222      M        1       0       3     
+    x10                 ap      222      M        1       0       1     
+    x10                 ar      222      M        1       0       1     
+    x10                 ck      222      M        2       0       1     
+    x11                         221      N        -       -       -     
+    x11                 t       221      M        1       0       3     
+    x11                 ap      221      M        1       0       1     
+    x11                 ar      221      M        1       0       1     
+    x11                 ck      221      M        2       0       1     
     x_ac_low                    0        V        -       -       -     
     x_dec                       0        V        -       -       -     
     x_inc                       0        V        -       -       -     
-    y02                         102      N        -       -       -     
-    y02                 t       102      M        1       0       4     
-    y02                 ap      102      M        1       0       1     
-    y02                 ar      102      M        2       0       1     
-    y02                 ck      102      M        2       0       1     
-    y03                         101      N        -       -       -     
-    y03                 t       101      M        1       0       4     
-    y03                 ap      101      M        1       0       1     
-    y03                 ar      101      M        2       0       1     
-    y03                 ck      101      M        2       0       1     
-    y04                         112      N        -       -       -     
-    y04                 t       112      M        1       0       4     
-    y04                 ap      112      M        1       0       1     
-    y04                 ar      112      M        2       0       1     
-    y04                 ck      112      M        2       0       1     
-    y05                         111      N        -       -       -     
-    y05                 t       111      M        1       0       4     
-    y05                 ap      111      M        1       0       1     
-    y05                 ar      111      M        2       0       1     
-    y05                 ck      111      M        2       0       1     
-    y06                         110      N        -       -       -     
-    y06                 t       110      M        1       0       4     
-    y06                 ap      110      M        1       0       1     
-    y06                 ar      110      M        2       0       1     
-    y06                 ck      110      M        2       0       1     
-    y07                         109      N        -       -       -     
-    y07                 t       109      M        1       0       4     
-    y07                 ap      109      M        1       0       1     
-    y07                 ar      109      M        2       0       1     
-    y07                 ck      109      M        2       0       1     
-    y08                         120      N        -       -       -     
-    y08                 t       120      M        1       0       4     
-    y08                 ap      120      M        1       0       1     
-    y08                 ar      120      M        2       0       1     
-    y08                 ck      120      M        2       0       1     
-    y09                         119      N        -       -       -     
-    y09                 t       119      M        1       0       4     
-    y09                 ap      119      M        1       0       1     
-    y09                 ar      119      M        2       0       1     
-    y09                 ck      119      M        2       0       1     
-    y10                         118      N        -       -       -     
-    y10                 t       118      M        1       0       4     
-    y10                 ap      118      M        1       0       1     
-    y10                 ar      118      M        1       0       1     
-    y10                 ck      118      M        2       0       1     
-    y11                         117      N        -       -       -     
-    y11                 t       117      M        1       0       4     
-    y11                 ap      117      M        1       0       1     
-    y11                 ar      117      M        1       0       1     
-    y11                 ck      117      M        2       0       1     
+    y02                         202      N        -       -       -     
+    y02                 t       202      M        1       0       3     
+    y02                 ap      202      M        1       0       1     
+    y02                 ar      202      M        1       0       1     
+    y02                 ck      202      M        2       0       1     
+    y03                         201      N        -       -       -     
+    y03                 t       201      M        1       0       3     
+    y03                 ap      201      M        1       0       1     
+    y03                 ar      201      M        1       0       1     
+    y03                 ck      201      M        2       0       1     
+    y04                         212      N        -       -       -     
+    y04                 t       212      M        1       0       3     
+    y04                 ap      212      M        1       0       1     
+    y04                 ar      212      M        1       0       1     
+    y04                 ck      212      M        2       0       1     
+    y05                         211      N        -       -       -     
+    y05                 t       211      M        1       0       3     
+    y05                 ap      211      M        1       0       1     
+    y05                 ar      211      M        1       0       1     
+    y05                 ck      211      M        2       0       1     
+    y06                         210      N        -       -       -     
+    y06                 t       210      M        1       0       3     
+    y06                 ap      210      M        1       0       1     
+    y06                 ar      210      M        1       0       1     
+    y06                 ck      210      M        2       0       1     
+    y07                         209      N        -       -       -     
+    y07                 t       209      M        1       0       3     
+    y07                 ap      209      M        1       0       1     
+    y07                 ar      209      M        1       0       1     
+    y07                 ck      209      M        2       0       1     
+    y08                         220      N        -       -       -     
+    y08                 t       220      M        1       0       3     
+    y08                 ap      220      M        1       0       1     
+    y08                 ar      220      M        1       0       1     
+    y08                 ck      220      M        2       0       1     
+    y09                         219      N        -       -       -     
+    y09                 t       219      M        1       0       3     
+    y09                 ap      219      M        1       0       1     
+    y09                 ar      219      M        1       0       1     
+    y09                 ck      219      M        2       0       1     
+    y10                         218      N        -       -       -     
+    y10                 t       218      M        1       0       3     
+    y10                 ap      218      M        1       0       1     
+    y10                 ar      218      M        1       0       1     
+    y10                 ck      218      M        2       0       1     
+    y11                         217      N        -       -       -     
+    y11                 t       217      M        1       0       3     
+    y11                 ap      217      M        1       0       1     
+    y11                 ar      217      M        1       0       1     
+    y11                 ck      217      M        2       0       1     
     y_ac_low                    0        V        -       -       -     
     y_dec                       0        V        -       -       -     
     y_inc                       0        V        -       -       -     
