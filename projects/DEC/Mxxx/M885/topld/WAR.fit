@@ -1,4 +1,4 @@
-Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Tue Feb 05 12:24:49 2019
+Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Thu Feb 14 17:14:28 2019
 
 
 fit1508 C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M885\TOPLD\WAR.tt2 -CUPL -dev P1508C84 -JTAG ON
@@ -789,9 +789,9 @@ n_t_27x = !n_t_27x_PIN.PIN;
 
 !b_dixy_low = (md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low & tp3);
 
-load_x = (tp3 & !md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low);
+!load_x = (!md10_low & !md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & md9_low & !pause_low & tp3);
 
-load_y = (tp3 & md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low);
+!load_y = (md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low & tp3);
 
 chan.D = di10;
 
@@ -903,138 +903,138 @@ write_thru_low.OE = write_thru.Q;
 x02.C = ((!x03.Q & !x04.Q & !x05.Q & !x06.Q & !x07.Q)
 	# (x03.Q & x04.Q & x05.Q & x06.Q & x07.Q));
 
-x02.AR = (di02 & load_x);
+x02.AR = (di02 & !load_x);
 
-x02.AP = (!di02 & load_x);
+x02.AP = (!di02 & !load_x);
 
 x03.C = ((!x04.Q & !x05.Q & !x06.Q & !x07.Q)
 	# (x04.Q & x05.Q & x06.Q & x07.Q));
 
-x03.AR = (!di03 & load_x);
+x03.AR = (!di03 & !load_x);
 
-x03.AP = (di03 & load_x);
+x03.AP = (di03 & !load_x);
 
 x04.C = ((!x05.Q & !x06.Q & !x07.Q & !x08.Q & !x09.Q & !x10.Q & !x11.Q)
 	# (x05.Q & x06.Q & x07.Q & x08.Q & x09.Q & x10.Q & x11.Q));
 
-x04.AR = (!di04 & load_x);
+x04.AR = (!di04 & !load_x);
 
-x04.AP = (di04 & load_x);
+x04.AP = (di04 & !load_x);
 
 x06.C = ((!x07.Q & !x08.Q & !x09.Q & !x10.Q & !x11.Q)
 	# (x07.Q & x08.Q & x09.Q & x10.Q & x11.Q));
 
-x06.AR = (!di06 & load_x);
+x06.AR = (!di06 & !load_x);
 
-x06.AP = (di06 & load_x);
+x06.AP = (di06 & !load_x);
 
 x05.C = ((!x06.Q & !x07.Q & !x08.Q & !x09.Q & !x10.Q & !x11.Q)
 	# (x06.Q & x07.Q & x08.Q & x09.Q & x10.Q & x11.Q));
 
-x05.AR = (!di05 & load_x);
+x05.AR = (!di05 & !load_x);
 
-x05.AP = (di05 & load_x);
+x05.AP = (di05 & !load_x);
 
 x07.C = ((!x08.Q & !x09.Q & !x10.Q & !x11.Q)
 	# (x08.Q & x09.Q & x10.Q & x11.Q));
 
-x07.AR = (!di07 & load_x);
+x07.AR = (!di07 & !load_x);
 
-x07.AP = (di07 & load_x);
+x07.AP = (di07 & !load_x);
 
 x09.C = ((!x10.Q & !x11.Q)
 	# (x10.Q & x11.Q));
 
-x09.AR = (!di09 & load_x);
+x09.AR = (!di09 & !load_x);
 
-x09.AP = (di09 & load_x);
+x09.AP = (di09 & !load_x);
 
 x08.C = ((!x09.Q & !x10.Q & !x11.Q)
 	# (x09.Q & x10.Q & x11.Q));
 
-x08.AR = (!di08 & load_x);
+x08.AR = (!di08 & !load_x);
 
-x08.AP = (di08 & load_x);
+x08.AP = (di08 & !load_x);
 
 x10.C = 1;
 
-x10.AR = (!di10 & load_x);
+x10.AR = (!di10 & !load_x);
 
-x10.AP = (di10 & load_x);
+x10.AP = (di10 & !load_x);
 
 x11.C = 1;
 
-x11.AR = (!di11 & load_x);
+x11.AR = (!di11 & !load_x);
 
-x11.AP = (di11 & load_x);
+x11.AP = (di11 & !load_x);
 
 y02.C = ((!y03.Q & !y04.Q & !y05.Q & !y06.Q & !y07.Q)
 	# (y03.Q & y04.Q & y05.Q & y06.Q & y07.Q));
 
-y02.AR = (di02 & load_y);
+y02.AR = (di02 & !load_y);
 
-y02.AP = (!di02 & load_y);
+y02.AP = (!di02 & !load_y);
 
 y03.C = ((!y04.Q & !y05.Q & !y06.Q & !y07.Q)
 	# (y04.Q & y05.Q & y06.Q & y07.Q));
 
-y03.AR = (!di03 & load_y);
+y03.AR = (!di03 & !load_y);
 
-y03.AP = (di03 & load_y);
+y03.AP = (di03 & !load_y);
 
 y04.C = ((!y05.Q & !y06.Q & !y07.Q & !y08.Q & !y09.Q & !y10.Q & !y11.Q)
 	# (y05.Q & y06.Q & y07.Q & y08.Q & y09.Q & y10.Q & y11.Q));
 
-y04.AR = (!di04 & load_y);
+y04.AR = (!di04 & !load_y);
 
-y04.AP = (di04 & load_y);
+y04.AP = (di04 & !load_y);
 
 y05.C = ((!y06.Q & !y07.Q & !y08.Q & !y09.Q & !y10.Q & !y11.Q)
 	# (y06.Q & y07.Q & y08.Q & y09.Q & y10.Q & y11.Q));
 
-y05.AR = (!di05 & load_y);
+y05.AR = (!di05 & !load_y);
 
-y05.AP = (di05 & load_y);
+y05.AP = (di05 & !load_y);
 
 y07.C = ((!y08.Q & !y09.Q & !y10.Q & !y11.Q)
 	# (y08.Q & y09.Q & y10.Q & y11.Q));
 
-y07.AR = (!di07 & load_y);
+y07.AR = (!di07 & !load_y);
 
-y07.AP = (di07 & load_y);
+y07.AP = (di07 & !load_y);
 
 y06.C = ((!y07.Q & !y08.Q & !y09.Q & !y10.Q & !y11.Q)
 	# (y07.Q & y08.Q & y09.Q & y10.Q & y11.Q));
 
-y06.AR = (!di06 & load_y);
+y06.AR = (!di06 & !load_y);
 
-y06.AP = (di06 & load_y);
+y06.AP = (di06 & !load_y);
 
 y08.C = ((!y09.Q & !y10.Q & !y11.Q)
 	# (y09.Q & y10.Q & y11.Q));
 
-y08.AR = (!di08 & load_y);
+y08.AR = (!di08 & !load_y);
 
-y08.AP = (di08 & load_y);
+y08.AP = (di08 & !load_y);
 
 y10.C = 1;
 
-y10.AR = (!di10 & load_y);
+y10.AR = (!di10 & !load_y);
 
-y10.AP = (di10 & load_y);
+y10.AP = (di10 & !load_y);
 
 y09.C = ((!y10.Q & !y11.Q)
 	# (y10.Q & y11.Q));
 
-y09.AR = (!di09 & load_y);
+y09.AR = (!di09 & !load_y);
 
-y09.AP = (di09 & load_y);
+y09.AP = (di09 & !load_y);
 
 y11.C = 1;
 
-y11.AR = (!di11 & load_y);
+y11.AR = (!di11 & !load_y);
 
-y11.AP = (di11 & load_y);
+y11.AP = (di11 & !load_y);
 
 chan.C = (!md10_low & md11_low & md3_low & md4_low & md5_low & !md6_low & md7_low & !md8_low & !md9_low & !pause_low & tp3);
 
