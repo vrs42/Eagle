@@ -9101,85 +9101,85 @@ Based on the following sources:
 <nets>
 <net name="!MD00" class="0">
 <segment>
-<wire x1="63.5" y1="172.72" x2="50.8" y2="170.18" width="0.1524" layer="91"/>
-<label x="53.34" y="172.72" size="1.778" layer="95"/>
+<wire x1="63.5" y1="170.18" x2="50.8" y2="170.18" width="0.1524" layer="91"/>
+<label x="53.34" y="170.18" size="1.778" layer="95"/>
 <pinref part="E1" gate="A" pin="B"/>
 </segment>
 </net>
 <net name="!MD01" class="0">
 <segment>
-<wire x1="63.5" y1="152.4" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
-<label x="53.34" y="152.4" size="1.778" layer="95"/>
+<wire x1="63.5" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
+<label x="53.34" y="149.86" size="1.778" layer="95"/>
 <pinref part="E1" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="!MD02" class="0">
 <segment>
-<wire x1="63.5" y1="132.08" x2="50.8" y2="129.54" width="0.1524" layer="91"/>
-<label x="53.34" y="132.08" size="1.778" layer="95"/>
+<wire x1="63.5" y1="129.54" x2="50.8" y2="129.54" width="0.1524" layer="91"/>
+<label x="53.34" y="129.54" size="1.778" layer="95"/>
 <pinref part="E1" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="!MD03" class="0">
 <segment>
-<wire x1="63.5" y1="111.76" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
-<label x="53.34" y="111.76" size="1.778" layer="95"/>
+<wire x1="63.5" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
+<label x="53.34" y="109.22" size="1.778" layer="95"/>
 <pinref part="E1" gate="C" pin="B"/>
 </segment>
 </net>
 <net name="!MD04" class="0">
 <segment>
-<wire x1="124.46" y1="172.72" x2="111.76" y2="170.18" width="0.1524" layer="91"/>
-<label x="114.3" y="172.72" size="1.778" layer="95"/>
+<wire x1="124.46" y1="170.18" x2="111.76" y2="170.18" width="0.1524" layer="91"/>
+<label x="114.3" y="170.18" size="1.778" layer="95"/>
 <pinref part="E2" gate="A" pin="B"/>
 </segment>
 </net>
 <net name="!MD05" class="0">
 <segment>
-<wire x1="124.46" y1="152.4" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
-<label x="114.3" y="152.4" size="1.778" layer="95"/>
+<wire x1="124.46" y1="149.86" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
+<label x="114.3" y="149.86" size="1.778" layer="95"/>
 <pinref part="E2" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="!MD06" class="0">
 <segment>
-<wire x1="111.76" y1="129.54" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
-<label x="114.3" y="132.08" size="1.778" layer="95"/>
+<wire x1="111.76" y1="129.54" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
+<label x="114.3" y="129.54" size="1.778" layer="95"/>
 <pinref part="E2" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="!MD07" class="0">
 <segment>
-<wire x1="124.46" y1="111.76" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
-<label x="114.3" y="111.76" size="1.778" layer="95"/>
+<wire x1="124.46" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
+<label x="114.3" y="109.22" size="1.778" layer="95"/>
 <pinref part="E2" gate="C" pin="B"/>
 </segment>
 </net>
 <net name="!MD08" class="0">
 <segment>
-<wire x1="185.42" y1="172.72" x2="172.72" y2="170.18" width="0.1524" layer="91"/>
-<label x="175.26" y="172.72" size="1.778" layer="95"/>
+<wire x1="185.42" y1="170.18" x2="172.72" y2="170.18" width="0.1524" layer="91"/>
+<label x="175.26" y="170.18" size="1.778" layer="95"/>
 <pinref part="E3" gate="A" pin="B"/>
 </segment>
 </net>
 <net name="!MD09" class="0">
 <segment>
-<wire x1="185.42" y1="152.4" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
-<label x="175.26" y="152.4" size="1.778" layer="95"/>
+<wire x1="185.42" y1="149.86" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
+<label x="175.26" y="149.86" size="1.778" layer="95"/>
 <pinref part="E3" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="!MD10" class="0">
 <segment>
-<wire x1="185.42" y1="132.08" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
-<label x="175.26" y="132.08" size="1.778" layer="95"/>
+<wire x1="185.42" y1="129.54" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
+<label x="175.26" y="129.54" size="1.778" layer="95"/>
 <pinref part="E3" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="!MD11" class="0">
 <segment>
-<wire x1="185.42" y1="111.76" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
-<label x="175.26" y="111.76" size="1.778" layer="95"/>
+<wire x1="185.42" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
+<label x="175.26" y="109.22" size="1.778" layer="95"/>
 <pinref part="E3" gate="C" pin="B"/>
 </segment>
 </net>

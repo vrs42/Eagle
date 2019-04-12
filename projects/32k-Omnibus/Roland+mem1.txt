@@ -1,0 +1,7 @@
+Silkscreen is only required for the component side. 
+
+Please include the tValue layer in addition to the tName and tPlace layers in the silkscreen. 
+
+Solder mask is not needed between the gold fingers. If it is helpful for plating purposes to tent some vias, that is acceptable. 
+
+A chamfer of 30 degrees on the edge connectors is desired.

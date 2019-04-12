@@ -14912,91 +14912,104 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <nets>
 <net name="MA00L" class="0">
 <segment>
-<wire x1="137.16" y1="187.96" x2="162.56" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="187.96" x2="162.56" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="187.96" x2="162.56" y2="185.42" width="0.1524" layer="91"/>
 <label x="137.16" y="187.96" size="1.778" layer="95"/>
 <pinref part="E1" gate="C" pin="B"/>
 </segment>
 </net>
 <net name="MA11L" class="0">
 <segment>
-<wire x1="38.1" y1="246.38" x2="12.7" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="246.38" x2="38.1" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="248.92" x2="12.7" y2="248.92" width="0.1524" layer="91"/>
 <label x="12.7" y="248.92" size="1.778" layer="95"/>
 <pinref part="E19" gate="A" pin="B"/>
 </segment>
 </net>
 <net name="MA10L" class="0">
 <segment>
-<wire x1="38.1" y1="226.06" x2="12.7" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="226.06" x2="38.1" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="228.6" x2="12.7" y2="228.6" width="0.1524" layer="91"/>
 <label x="12.7" y="228.6" size="1.778" layer="95"/>
 <pinref part="E19" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="MA09L" class="0">
 <segment>
-<wire x1="12.7" y1="208.28" x2="38.1" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="208.28" x2="38.1" y2="205.74" width="0.1524" layer="91"/>
 <label x="12.7" y="208.28" size="1.778" layer="95"/>
 <pinref part="E19" gate="C" pin="B"/>
 </segment>
 </net>
 <net name="MA08L" class="0">
 <segment>
-<wire x1="38.1" y1="185.42" x2="12.7" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="185.42" x2="38.1" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="187.96" x2="12.7" y2="187.96" width="0.1524" layer="91"/>
 <label x="12.7" y="187.96" size="1.778" layer="95"/>
 <pinref part="E19" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="MA07L" class="0">
 <segment>
-<wire x1="101.6" y1="246.38" x2="76.2" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="246.38" x2="101.6" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="248.92" x2="76.2" y2="248.92" width="0.1524" layer="91"/>
 <label x="76.2" y="248.92" size="1.778" layer="95"/>
 <pinref part="E9" gate="A" pin="B"/>
 </segment>
 </net>
 <net name="MA06L" class="0">
 <segment>
-<wire x1="101.6" y1="226.06" x2="76.2" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="226.06" x2="101.6" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="228.6" x2="76.2" y2="228.6" width="0.1524" layer="91"/>
 <label x="76.2" y="228.6" size="1.778" layer="95"/>
 <pinref part="E9" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="MA05L" class="0">
 <segment>
-<wire x1="76.2" y1="208.28" x2="101.6" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="208.28" x2="101.6" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="208.28" x2="101.6" y2="205.74" width="0.1524" layer="91"/>
 <label x="76.2" y="208.28" size="1.778" layer="95"/>
 <pinref part="E9" gate="C" pin="B"/>
 </segment>
 </net>
 <net name="MA04L" class="0">
 <segment>
-<wire x1="101.6" y1="185.42" x2="76.2" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="185.42" x2="101.6" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="187.96" x2="76.2" y2="187.96" width="0.1524" layer="91"/>
 <label x="76.2" y="187.96" size="1.778" layer="95"/>
 <pinref part="E9" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="MA03L" class="0">
 <segment>
-<wire x1="137.16" y1="248.92" x2="162.56" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="248.92" x2="162.56" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="248.92" x2="162.56" y2="246.38" width="0.1524" layer="91"/>
 <label x="137.16" y="248.92" size="1.778" layer="95"/>
 <pinref part="E3" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="MA02L" class="0">
 <segment>
-<wire x1="162.56" y1="226.06" x2="137.16" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="226.06" x2="162.56" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="228.6" x2="137.16" y2="228.6" width="0.1524" layer="91"/>
 <label x="137.16" y="228.6" size="1.778" layer="95"/>
 <pinref part="E3" gate="C" pin="B"/>
 </segment>
 </net>
 <net name="MA01L" class="0">
 <segment>
-<wire x1="162.56" y1="205.74" x2="137.16" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="205.74" x2="162.56" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="208.28" x2="137.16" y2="208.28" width="0.1524" layer="91"/>
 <label x="137.16" y="208.28" size="1.778" layer="95"/>
 <pinref part="E1" gate="A" pin="B"/>
 </segment>
 </net>
 <net name="ROM_ADDR_L" class="0">
 <segment>
-<wire x1="223.52" y1="185.42" x2="198.12" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="185.42" x2="223.52" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="187.96" x2="198.12" y2="187.96" width="0.1524" layer="91"/>
 <label x="198.12" y="187.96" size="1.778" layer="95"/>
 <pinref part="E3" gate="A" pin="B"/>
 </segment>
@@ -15347,21 +15360,24 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="EMA2L" class="0">
 <segment>
-<wire x1="223.52" y1="205.74" x2="198.12" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="205.74" x2="223.52" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="208.28" x2="198.12" y2="208.28" width="0.1524" layer="91"/>
 <label x="198.12" y="208.28" size="1.778" layer="95"/>
 <pinref part="E3" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="EMA0L" class="0">
 <segment>
-<wire x1="198.12" y1="248.92" x2="223.52" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="248.92" x2="223.52" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="248.92" x2="223.52" y2="246.38" width="0.1524" layer="91"/>
 <label x="198.12" y="248.92" size="1.778" layer="95"/>
 <pinref part="E1" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="EMA1L" class="0">
 <segment>
-<wire x1="223.52" y1="226.06" x2="198.12" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="226.06" x2="223.52" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="228.6" x2="198.12" y2="228.6" width="0.1524" layer="91"/>
 <label x="198.12" y="228.6" size="1.778" layer="95"/>
 <pinref part="E1" gate="B" pin="B"/>
 </segment>
@@ -15826,85 +15842,85 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <nets>
 <net name="MD00L" class="0">
 <segment>
-<wire x1="63.5" y1="256.54" x2="50.8" y2="254" width="0.1524" layer="91"/>
-<label x="53.34" y="256.54" size="1.778" layer="95"/>
+<wire x1="60.96" y1="254" x2="50.8" y2="254" width="0.1524" layer="91"/>
+<label x="50.8" y="254" size="1.778" layer="95"/>
 <pinref part="E4" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="MD01L" class="0">
 <segment>
-<wire x1="63.5" y1="236.22" x2="50.8" y2="233.68" width="0.1524" layer="91"/>
-<label x="53.34" y="236.22" size="1.778" layer="95"/>
+<wire x1="60.96" y1="233.68" x2="50.8" y2="233.68" width="0.1524" layer="91"/>
+<label x="50.8" y="233.68" size="1.778" layer="95"/>
 <pinref part="E4" gate="C" pin="B"/>
 </segment>
 </net>
 <net name="MD02L" class="0">
 <segment>
-<wire x1="63.5" y1="215.9" x2="50.8" y2="213.36" width="0.1524" layer="91"/>
-<label x="53.34" y="215.9" size="1.778" layer="95"/>
+<wire x1="60.96" y1="213.36" x2="50.8" y2="213.36" width="0.1524" layer="91"/>
+<label x="50.8" y="213.36" size="1.778" layer="95"/>
 <pinref part="E4" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="MD03L" class="0">
 <segment>
-<wire x1="63.5" y1="195.58" x2="50.8" y2="193.04" width="0.1524" layer="91"/>
-<label x="53.34" y="195.58" size="1.778" layer="95"/>
+<wire x1="60.96" y1="193.04" x2="50.8" y2="193.04" width="0.1524" layer="91"/>
+<label x="50.8" y="193.04" size="1.778" layer="95"/>
 <pinref part="E4" gate="A" pin="B"/>
 </segment>
 </net>
 <net name="MD04L" class="0">
 <segment>
-<wire x1="124.46" y1="256.54" x2="111.76" y2="254" width="0.1524" layer="91"/>
-<label x="114.3" y="256.54" size="1.778" layer="95"/>
+<wire x1="124.46" y1="254" x2="111.76" y2="254" width="0.1524" layer="91"/>
+<label x="114.3" y="254" size="1.778" layer="95"/>
 <pinref part="E11" gate="C" pin="B"/>
 </segment>
 </net>
 <net name="MD05L" class="0">
 <segment>
-<wire x1="124.46" y1="236.22" x2="111.76" y2="233.68" width="0.1524" layer="91"/>
-<label x="114.3" y="236.22" size="1.778" layer="95"/>
+<wire x1="124.46" y1="233.68" x2="111.76" y2="233.68" width="0.1524" layer="91"/>
+<label x="114.3" y="233.68" size="1.778" layer="95"/>
 <pinref part="E11" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="MD06L" class="0">
 <segment>
-<wire x1="111.76" y1="213.36" x2="124.46" y2="215.9" width="0.1524" layer="91"/>
-<label x="114.3" y="215.9" size="1.778" layer="95"/>
+<wire x1="111.76" y1="213.36" x2="124.46" y2="213.36" width="0.1524" layer="91"/>
+<label x="114.3" y="213.36" size="1.778" layer="95"/>
 <pinref part="E11" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="MD07L" class="0">
 <segment>
-<wire x1="124.46" y1="195.58" x2="111.76" y2="193.04" width="0.1524" layer="91"/>
-<label x="114.3" y="195.58" size="1.778" layer="95"/>
+<wire x1="124.46" y1="193.04" x2="111.76" y2="193.04" width="0.1524" layer="91"/>
+<label x="114.3" y="193.04" size="1.778" layer="95"/>
 <pinref part="E11" gate="A" pin="B"/>
 </segment>
 </net>
 <net name="MD08L" class="0">
 <segment>
-<wire x1="185.42" y1="256.54" x2="172.72" y2="254" width="0.1524" layer="91"/>
-<label x="175.26" y="256.54" size="1.778" layer="95"/>
+<wire x1="185.42" y1="254" x2="172.72" y2="254" width="0.1524" layer="91"/>
+<label x="175.26" y="254" size="1.778" layer="95"/>
 <pinref part="E20" gate="C" pin="B"/>
 </segment>
 </net>
 <net name="MD09L" class="0">
 <segment>
-<wire x1="185.42" y1="236.22" x2="172.72" y2="233.68" width="0.1524" layer="91"/>
-<label x="175.26" y="236.22" size="1.778" layer="95"/>
+<wire x1="185.42" y1="233.68" x2="172.72" y2="233.68" width="0.1524" layer="91"/>
+<label x="175.26" y="233.68" size="1.778" layer="95"/>
 <pinref part="E20" gate="D" pin="B"/>
 </segment>
 </net>
 <net name="MD10L" class="0">
 <segment>
-<wire x1="185.42" y1="215.9" x2="172.72" y2="213.36" width="0.1524" layer="91"/>
-<label x="175.26" y="215.9" size="1.778" layer="95"/>
+<wire x1="185.42" y1="213.36" x2="172.72" y2="213.36" width="0.1524" layer="91"/>
+<label x="175.26" y="213.36" size="1.778" layer="95"/>
 <pinref part="E20" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="MD11L" class="0">
 <segment>
-<wire x1="185.42" y1="195.58" x2="172.72" y2="193.04" width="0.1524" layer="91"/>
-<label x="175.26" y="195.58" size="1.778" layer="95"/>
+<wire x1="185.42" y1="193.04" x2="172.72" y2="193.04" width="0.1524" layer="91"/>
+<label x="175.26" y="193.04" size="1.778" layer="95"/>
 <pinref part="E20" gate="A" pin="B"/>
 </segment>
 </net>
