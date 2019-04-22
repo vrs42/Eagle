@@ -15455,7 +15455,7 @@ small</description>
 <text x="304.8" y="7.62" size="1.778" layer="94">M847 Extended Version</text>
 <text x="304.8" y="27.94" size="1.778" layer="94">Roland Huisman</text>
 <text x="378.46" y="7.62" size="1.778" layer="94">1.0</text>
-<text x="304.8" y="25.4" size="1.778" layer="94">www.technishmuseum.nl</text>
+<text x="304.8" y="25.4" size="1.778" layer="94">www.technischmuseum.nl</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>

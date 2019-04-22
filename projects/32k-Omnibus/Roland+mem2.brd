@@ -31228,7 +31228,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="1666973" x="111.76" y="190.5" size="0.17018125" layer="27" font="vector" display="off"/>
 </element>
 <element name="J4" library="dec-con" package="DEC40PINH" value="Serial" x="16.51" y="166.37" rot="R90"/>
-<element name="R18" library="rcl" package="0207/10" value="1M" x="114.3" y="181.61" rot="R180"/>
+<element name="R18" library="rcl" package="0207/10" value="1M" x="114.3" y="180.34" rot="R180"/>
 <element name="C7" library="rcl" package="C050-025X075" value="22pF" x="109.22" y="175.26" rot="R270"/>
 <element name="C9" library="rcl" package="C050-025X075" value="22pF" x="114.3" y="175.26" rot="R270"/>
 <element name="J3" library="con-lstb" package="MA03-2" value="ICSP" x="87.63" y="185.42" smashed="yes" rot="R270">
@@ -31371,13 +31371,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="82.3595" y="190.4365" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="78.4606" y="191.135" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="SW1" library="switch-dil" package="DIP04S" value="DIP-4" x="64.77" y="186.69" smashed="yes" rot="R90">
-<attribute name="OC_NEWARK" value="unknown" x="64.77" y="186.69" size="0.17018125" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="64.77" y="186.69" size="0.17018125" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="MF" value="" x="64.77" y="186.69" size="0.17018125" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="64.77" y="186.69" size="0.17018125" layer="27" font="vector" rot="R90" display="off"/>
-<attribute name="NAME" x="60.96" y="180.086" size="1.27" layer="25" ratio="10"/>
-</element>
 <element name="U11" library="microchip" package="DIL8" value="24LC1025P" x="214.63" y="62.23" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="92C7098" x="214.63" y="62.23" size="0.17018125" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="MPN" value="24LC025-I/P" x="214.63" y="62.23" size="0.17018125" layer="27" font="vector" rot="R90" display="off"/>
@@ -31484,6 +31477,13 @@ design rules under a new name.</description>
 <attribute name="NAME" x="240.03" y="41.91" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="240.03" y="50.8" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
+<element name="SW3" library="switch-dil" package="DIP04S" value="DIP-4" x="64.77" y="186.69" smashed="yes" rot="R270">
+<attribute name="OC_NEWARK" value="unknown" x="64.77" y="186.69" size="1.778" layer="27" ratio="24" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="64.77" y="186.69" size="1.778" layer="27" ratio="24" rot="R270" display="off"/>
+<attribute name="MF" value="" x="64.77" y="186.69" size="1.778" layer="27" ratio="24" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="64.77" y="186.69" size="1.778" layer="27" ratio="24" rot="R270" display="off"/>
+<attribute name="NAME" x="60.96" y="180.086" size="1.27" layer="25" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -31547,10 +31547,6 @@ design rules under a new name.</description>
 <contactref element="C10" pad="2"/>
 <contactref element="SW2" pad="3"/>
 <contactref element="SW2" pad="4"/>
-<contactref element="SW1" pad="8"/>
-<contactref element="SW1" pad="5"/>
-<contactref element="SW1" pad="6"/>
-<contactref element="SW1" pad="7"/>
 <contactref element="U11" pad="4"/>
 <contactref element="U11" pad="7"/>
 <contactref element="U11" pad="1"/>
@@ -31850,6 +31846,10 @@ design rules under a new name.</description>
 <wire x1="165.1" y1="55.88" x2="167.64" y2="53.34" width="1.27" layer="1"/>
 <wire x1="167.64" y1="53.34" x2="167.64" y2="20.32" width="1.27" layer="1"/>
 <via x="167.64" y="20.32" extent="1-16" drill="0.8128" diameter="0.254"/>
+<contactref element="SW3" pad="1"/>
+<contactref element="SW3" pad="2"/>
+<contactref element="SW3" pad="3"/>
+<contactref element="SW3" pad="4"/>
 </signal>
 <signal name="VCC" class="1">
 <contactref element="J1" pad="AA2"/>
@@ -32908,10 +32908,10 @@ design rules under a new name.</description>
 <contactref element="Y1" pad="2"/>
 <wire x1="104.14" y1="175.26" x2="111.76" y2="175.26" width="0.508" layer="16"/>
 <wire x1="111.76" y1="175.26" x2="114.3" y2="177.8" width="0.508" layer="16"/>
-<wire x1="119.38" y1="181.61" x2="114.3" y2="181.61" width="0.508" layer="16"/>
-<wire x1="114.3" y1="181.61" x2="114.3" y2="177.8" width="0.508" layer="16"/>
+<wire x1="119.38" y1="180.34" x2="114.3" y2="180.34" width="0.508" layer="16"/>
+<wire x1="114.3" y1="180.34" x2="114.3" y2="177.8" width="0.508" layer="16"/>
 <wire x1="114.173" y1="185.42" x2="114.3" y2="185.293" width="0.508" layer="16"/>
-<wire x1="114.3" y1="185.293" x2="114.3" y2="181.61" width="0.508" layer="16"/>
+<wire x1="114.3" y1="185.293" x2="114.3" y2="180.34" width="0.508" layer="16"/>
 </signal>
 <signal name="DIP_3">
 <contactref element="U1" pad="18"/>
@@ -33649,23 +33649,27 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$919">
 <contactref element="R3" pad="2"/>
-<contactref element="SW1" pad="1"/>
 <wire x1="68.58" y1="182.88" x2="71.12" y2="182.88" width="0.508" layer="16"/>
+<contactref element="SW3" pad="5"/>
+<contactref element="SW3" pad="5"/>
 </signal>
 <signal name="N$920">
 <contactref element="R4" pad="2"/>
-<contactref element="SW1" pad="2"/>
 <wire x1="68.58" y1="185.42" x2="71.12" y2="185.42" width="0.508" layer="16"/>
+<contactref element="SW3" pad="6"/>
+<contactref element="SW3" pad="6"/>
 </signal>
 <signal name="N$921">
 <contactref element="R8" pad="2"/>
-<contactref element="SW1" pad="3"/>
 <wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.508" layer="16"/>
+<contactref element="SW3" pad="7"/>
+<contactref element="SW3" pad="7"/>
 </signal>
 <signal name="N$922">
 <contactref element="R9" pad="2"/>
-<contactref element="SW1" pad="4"/>
 <wire x1="68.58" y1="190.5" x2="71.12" y2="190.5" width="0.508" layer="16"/>
+<contactref element="SW3" pad="8"/>
+<contactref element="SW3" pad="8"/>
 </signal>
 <signal name="N$1">
 <contactref element="Y1" pad="1"/>
@@ -33673,8 +33677,8 @@ design rules under a new name.</description>
 <contactref element="R18" pad="2"/>
 <contactref element="U1" pad="10"/>
 <wire x1="109.347" y1="185.42" x2="109.22" y2="185.293" width="0.508" layer="16"/>
-<wire x1="109.22" y1="185.293" x2="109.22" y2="181.61" width="0.508" layer="16"/>
-<wire x1="109.22" y1="181.61" x2="109.22" y2="177.8" width="0.508" layer="16"/>
+<wire x1="109.22" y1="185.293" x2="109.22" y2="180.34" width="0.508" layer="16"/>
+<wire x1="109.22" y1="180.34" x2="109.22" y2="177.8" width="0.508" layer="16"/>
 <wire x1="104.14" y1="177.8" x2="109.22" y2="177.8" width="0.508" layer="16"/>
 </signal>
 <signal name="N$10">
