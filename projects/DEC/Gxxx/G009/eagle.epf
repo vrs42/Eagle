@@ -7,10 +7,6 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/atmel-cpld.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-con.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-m.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/rack.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/41xx.lbr"
@@ -347,21 +343,25 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zilog.lbr"
+UsedLibrary="C:/Users/vrs/Documents/trunk/Eagle/lbr/dec-con.lbr"
+UsedLibrary="C:/Users/vrs/Documents/trunk/Eagle/lbr/atmel-cpld.lbr"
+UsedLibrary="C:/Users/vrs/Documents/trunk/Eagle/lbr/dec-m.lbr"
+UsedLibrary="C:/Users/vrs/Documents/trunk/Eagle/lbr/rack.lbr"
 
 [Win_1]
 Type="Schematic Editor"
 Loc="163 313 1286 936"
 State=1
 Number=1
-File="G008X.sch"
-View="-5.3294 -4.0523 254.041 189.264"
+File="G009B.sch"
+View="-5.50256 -4.23256 254.215 189.445"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.254 0.3048 0.4064 0.6096 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.8128"
 ViaDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 ViaDrills=" 0.254 0.3048 0.4064 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.6096"
 HoleDrills=" 0.254 0.3048 0.4064 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.6096"
-TextSizes=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.778"
+TextSizes=" 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.9304 2.1844 3.81 5.08 6.4516 0.254 2.54 1.778"
 PolygonSpacings=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.27"
 PolygonIsolates=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 MiterRadiuss=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
@@ -392,24 +392,24 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=91
-Views=" 1: -5.3294 -4.0523 254.041 189.264"
+Layer=94
+Views=" 1: -5.50256 -4.23256 254.215 189.445"
 Sheet=1
 
 [Win_2]
 Type="Board Editor"
-Loc="369 485 1492 1108"
+Loc="369 416 1492 1039"
 State=1
 Number=2
-File="G008X.brd"
-View="-2.66446 -1.39446 129.283 64.5135"
-WireWidths=" 0 0.254 0.3048 0.6096 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.8128"
+File="G009B.brd"
+View="-3.55092 -2.28092 128.265 63.4949"
+WireWidths=" 0 0.254 0.3048 0.6096 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.8128 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.254 0.3048 0.4064 0.6096 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.8128"
 ViaDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 ViaDrills=" 0.254 0.3048 0.4064 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.6096 0.8128"
 HoleDrills=" 0.254 0.3048 0.4064 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.6096"
-TextSizes=" 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.778 0.508"
+TextSizes=" 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 3.81 5.08 6.4516 0.508 0.170181 1.778 2.54 2.1844 1.9304"
 PolygonSpacings=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.27"
 PolygonIsolates=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 MiterRadiuss=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
@@ -428,7 +428,7 @@ PolygonPour=0
 PolygonRank=1
 PolygonThermals=1
 PolygonOrphans=0
-TextRatio=8
+TextRatio=24
 DimensionUnit=1
 DimensionPrecision=2
 DimensionShowUnit=0
@@ -444,12 +444,12 @@ Layer=16
 
 [Win_3]
 Type="Control Panel"
-Loc="235 226 976 850"
+Loc="-11 0 788 1007"
 State=1
 Number=0
 
 [Desktop]
-Screen="1920 1200"
+Screen="1920 1080"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"
