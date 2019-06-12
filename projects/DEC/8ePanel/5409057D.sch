@@ -7943,7 +7943,6 @@ high speed (Philips)</description>
 <part name="D94" library="diode" deviceset="1N4148" device="DO35-10" value="D664"/>
 <part name="V44" library="supply2" deviceset="GND" device=""/>
 <part name="V45" library="supply2" deviceset="VCC" device=""/>
-<part name="S2" library="dec-con" deviceset="DPDT8I" device=""/>
 <part name="S9" library="dec-con" deviceset="DPDT8I" device=""/>
 <part name="S10" library="dec-con" deviceset="DPDT8I" device=""/>
 <part name="S3" library="dec-con" deviceset="SPDT8I" device=""/>
@@ -8471,6 +8470,7 @@ high speed (Philips)</description>
 <part name="R83" library="rcl" deviceset="R-US_" device="0207/10" value="33K"/>
 <part name="R84" library="rcl" deviceset="R-US_" device="0207/10" value="33K"/>
 <part name="R61" library="rcl" deviceset="R-US_" device="0207/10" value="33K"/>
+<part name="S2\" library="dec-con" deviceset="DPDT8I" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8660,7 +8660,6 @@ high speed (Philips)</description>
 <instance part="D94" gate="G$1" x="386.08" y="170.18" rot="R90"/>
 <instance part="V44" gate="GND" x="386.08" y="165.1"/>
 <instance part="V45" gate="G$1" x="373.38" y="177.8"/>
-<instance part="S2" gate="G$1" x="177.8" y="60.96"/>
 <instance part="S9" gate="G$1" x="340.36" y="60.96"/>
 <instance part="S10" gate="G$1" x="365.76" y="60.96"/>
 <instance part="S3" gate="G$1" x="203.2" y="50.8"/>
@@ -8749,6 +8748,7 @@ high speed (Philips)</description>
 <instance part="C18" gate="G$1" x="124.46" y="22.86"/>
 <instance part="C19" gate="G$1" x="132.08" y="22.86"/>
 <instance part="C20" gate="G$1" x="139.7" y="22.86"/>
+<instance part="S2\" gate="G$1" x="177.8" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -9934,8 +9934,6 @@ high speed (Philips)</description>
 <pinref part="S10" gate="G$1" pin="A2"/>
 <pinref part="S9" gate="G$1" pin="B2"/>
 <pinref part="S9" gate="G$1" pin="A2"/>
-<pinref part="S2" gate="G$1" pin="B2"/>
-<pinref part="S2" gate="G$1" pin="A2"/>
 <pinref part="S3" gate="G$1" pin="A2"/>
 <pinref part="S4" gate="G$1" pin="A2"/>
 <pinref part="S5" gate="G$1" pin="A2"/>
@@ -9943,6 +9941,8 @@ high speed (Philips)</description>
 <pinref part="S8" gate="G$1" pin="A2"/>
 <pinref part="BLUE" gate="G$1" pin="1"/>
 <pinref part="S7" gate="G$1" pin="A1"/>
+<pinref part="S2\" gate="G$1" pin="A2"/>
+<pinref part="S2\" gate="G$1" pin="B2"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -9956,8 +9956,8 @@ high speed (Philips)</description>
 <junction x="187.96" y="78.74"/>
 <pinref part="R85" gate="G$1" pin="1"/>
 <pinref part="R86" gate="G$1" pin="1"/>
-<pinref part="S2" gate="G$1" pin="B1"/>
-<pinref part="S2" gate="G$1" pin="A1"/>
+<pinref part="S2\" gate="G$1" pin="A1"/>
+<pinref part="S2\" gate="G$1" pin="B1"/>
 </segment>
 </net>
 <net name="SWITCH" class="0">
