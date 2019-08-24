@@ -1,0 +1,18 @@
+EDUC-8 Printed Circuit Board Patterns
+=====================================
+
+Welcome to the wonderful world of 1970's hobby computing! If you are reading this, then you have downloaded the printed circuit patterns to Australia's first hobby computer, the EDUC-8. The original patterns were done by Jamieson Rowe. He published a series of articles in Electronics Australia from August 1974 to August 1975 on how to build an EDUC-8 and lots of peripheral devices. Up until recently, you could buy the EDUC-8 printed circuit boards from RCS-Radio. RCS-Radio was still in business when I tried to buy the boards in late 2006, but after three months of enquiries, I gave up in frustation. Unfortunately, Silicon Chip, the current owners of the Electronics Australia do not have the patterns.
+
+All I had to go on were the component layout diagrams from my original Electronics Australia articles, which had the printed circuit patterns showing in gray under the components. These drawings were scanned at 600 DPI and imported into my Quicksilver/Interleaf software, a word processor/drawing program. The diagrams were not full size, so I first resized the diagram to the correct size. Then one by one, I recreated each track on the PCB using the create poly command. Each board took me one to three days to do, depending on its complexity. There are 12 boards in total, most of them complex, so it was a lot of work to get done. I also took the opportunity to increase the pin spacing for the edge connectors from 0.150" (3.81 mm) to 0.156" (3.96 mm). This allowed me to use off the shelf 0.156" connectors, as I could not find suitable connectors with 0.150" spacing.
+
+I am making these patterns available for free on the condition that they are for personal use only and that you include this file in any distribution of the patterns. Hopefully the patterns in the Electronics Australia articles do not have any errors and that I myself did not make any errors in copying them. The patterns are in postscript format. You will need GSview http://pages.cs.wisc.edu/~ghost/gsview/ to view and print the files. Please don't ask me to provide the patterns in another format, as I won't be doing this. All the patterns are mirror imaged. Thus, you can print directly to Toner Transfer System http://www.pulsarprofx.com/ or Press-N-Peel http://www.techniks.com/ paper. You can also print to clear film, with the ink side against the PCB.
+
+Steven S. Pietrobon, Ph.D.
+steven@sworld.com.au
+http://www.sworld.com.au/steven/educ-8/
+Adelaide, Australia
+
+24 Feb 2009 Deleted off page mounting holes for E8/F and E8/C.
+11 Oct 2007 Increased pad size from 2.5 to 3.1 mm for E8/KP keypad pins.
+12 Sep 2007 Corrected E8/KI so that ¯CLOCK¯ goes directly to 7496 CP input.
+ 3 Jul 2007 First release

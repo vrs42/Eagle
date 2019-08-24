@@ -1,0 +1,444 @@
+Netlist
+
+Exported from E8-C.brd at 8/23/2019 11:05:51 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Net      Part     Pad
+
+!CAND    !CAND    1
+         E8/A-2   1
+         E8/D-2   1
+
+!CCNCL_DEP_EX !CCNCL_DEP_EX 1
+         E8/T     17
+
+!CDCA    !CDCA    1
+         E8/A-2   3
+         E8/D-2   4
+
+!CDEFER  !CDEFER  1
+         E8/D     20
+         E8/M     21
+         E8/T     22
+         E8/T     29
+
+!CDEP    !CDEP    1
+         E8/M     19
+
+!CDEP_EX !CDEP_EX 1
+         E8/T     6
+
+!CEXEC   !CEXEC   1
+         E8/T     30
+
+!CFETCH  !CFETCH  1
+         E8/T     28
+
+!CHLT    !CHLT    1
+         E8/D     24
+
+!CIOT    !CIOT    1
+         E8/D-2   7
+
+!CISZ    !CISZ    1
+         E8/D-2   3
+         E8/M-2   3
+         E8/P-2   3
+
+!CJMP    !CJMP    1
+         E8/D-2   6
+
+!CJMS    !CJMS    1
+         E8/D-2   5
+         E8/P-2   4
+
+!CLA1    !CLA1    1
+         E8/P     17
+
+!CLOCK-ID0 !CLOCK-ID0 1
+         E8/10T-2 16
+
+!CLOCK-ID1 !CLOCK-ID1 1
+         E8/10T-2 12
+
+!CLOCK-OD0 !CLOCK-OD0 1
+         E8/10T-2 8
+
+!CLOCK-OD1 !CLOCK-OD1 1
+         E8/10T-2 4
+
+!COPR    !COPR    1
+         E8/D-2   8
+
+!CRUN    !CRUN    1
+         E8/T     27
+
+!CRUN_CMD !CRUN_CMD 1
+         E8/T     4
+
+!CTAD    !CTAD    1
+         E8/A-2   2
+         E8/D-2   2
+         E8/M-2   2
+         E8/P-2   2
+
+!FLAG-ID0 !FLAG-ID0 1
+         E8/10T-2 14
+
+!FLAG-ID1 !FLAG-ID1 1
+         E8/10T-2 10
+
+!FLAG-OD0 !FLAG-OD0 1
+         E8/10T-2 6
+
+!FLAG-OD1 !FLAG-OD1 1
+         E8/10T-2 2
+
+!RESET-ID0 !RESET-ID0 1
+         E8/10T-2 15
+
+!RESET-ID1 !RESET-ID1 1
+         E8/10T-2 11
+
+!RESET-OD0 !RESET-OD0 1
+         E8/10T-2 7
+
+!RESET-OD1 !RESET-OD1 1
+         E8/10T-2 3
+
++5V      +5V      1
+         C10      1
+         C8       1
+         C9       1
+         E8/10T   2
+         E8/10T   3
+         E8/A     2
+         E8/A     3
+         E8/D     2
+         E8/M     2
+         E8/M     3
+         E8/P     2
+         E8/P     3
+         E8/T     2
+         R63      2
+         R64      2
+         R65      2
+         R66      2
+
+CAC0     CAC0     1
+         E8/A-2   9
+
+CAC1     CAC1     1
+         E8/A-2   10
+
+CAC2     CAC2     1
+         E8/A-2   11
+
+CAC3     CAC3     1
+         E8/A-2   12
+
+CAC4     CAC4     1
+         E8/A-2   13
+
+CAC5     CAC5     1
+         E8/A-2   14
+
+CAC6     CAC6     1
+         E8/A-2   15
+
+CAC7     CAC7     1
+         E8/A-2   16
+         E8/P-2   8
+
+CCLOCK_RATE CCLOCK_RATE 1
+         E8/T     7
+
+CHLT_COMM CHLT_COMM 1
+         E8/T     5
+
+CLA2     CLA2     1
+         E8/P     18
+
+CMA0     CMA0     1
+         E8/M-2   4
+
+CMA1     CMA1     1
+         E8/M-2   5
+
+CMA2     CMA2     1
+         E8/M-2   6
+
+CMA3     CMA3     1
+         E8/M-2   7
+
+CMA4     CMA4     1
+         E8/M-2   8
+
+CMB0     CMB0     1
+         E8/D-2   9
+         E8/M-2   9
+
+CMB1     CMB1     1
+         E8/D-2   10
+         E8/M-2   10
+
+CMB2     CMB2     1
+         E8/D-2   11
+         E8/M-2   11
+
+CMB3     CMB3     1
+         E8/D-2   12
+         E8/M-2   12
+
+CMB4     CMB4     1
+         E8/D-2   13
+         E8/M-2   13
+         E8/T     31
+
+CMB5     CMB5     1
+         E8/D-2   14
+         E8/M-2   14
+
+CMB6     CMB6     1
+         E8/D-2   15
+         E8/M-2   15
+
+CMB7     CMB7     1
+         E8/D-2   16
+         E8/M-2   16
+
+CPC0     CPC0     1
+         E8/P-2   9
+
+CPC1     CPC1     1
+         E8/P-2   10
+
+CPC2     CPC2     1
+         E8/P-2   11
+
+CPC3     CPC3     1
+         E8/P-2   12
+
+CPC4     CPC4     1
+         E8/P-2   13
+
+CSR0     CSR0     1
+         E8/M     24
+         E8/P     24
+
+CSR1     CSR1     1
+         E8/M     25
+         E8/P     25
+
+CSR2     CSR2     1
+         E8/M     26
+         E8/P     26
+
+CSR3     CSR3     1
+         E8/M     27
+         E8/P     27
+
+CSR4     CSR4     1
+         E8/M     28
+         E8/P     28
+
+CSR5     CSR5     1
+         E8/M     29
+
+CSR6     CSR6     1
+         E8/M     30
+
+CSR7     CSR7     1
+         E8/M     31
+
+DATA-ID0 DATA-ID0 1
+         E8/10T-2 13
+
+DATA-ID1 DATA-ID1 1
+         E8/10T-2 9
+
+DATA-OD0 DATA-OD0 1
+         E8/10T-2 5
+
+DATA-OD1 DATA-OD1 1
+         E8/10T-2 1
+
+GND2     C10      2
+         C8       2
+         C9       2
+         CGND     1
+         E8/10T   1
+         E8/10T   16
+         E8/A     1
+         E8/A     16
+         E8/D     1
+         E8/D     32
+         E8/M     1
+         E8/M     32
+         E8/P     1
+         E8/P     32
+         E8/T     1
+         E8/T     32
+
+N$1      E8/10T   9
+         E8/P     10
+
+N$2      E8/D     21
+         E8/T     23
+
+N$70     E8/10T   5
+         E8/D     4
+
+N$71     E8/A-2   8
+         E8/D     31
+
+N$72     E8/A-2   7
+         E8/D     30
+
+N$73     E8/A-2   6
+         E8/D     29
+
+N$74     E8/A-2   5
+         E8/D     28
+         E8/P-2   6
+
+N$80     E8/D     27
+         E8/P     31
+
+N$81     E8/D     26
+         E8/P     30
+
+N$83     E8/D     23
+         E8/M     23
+
+N$84     E8/D     22
+         E8/M     22
+         E8/P     23
+         E8/T     24
+
+N$85     E8/10T   15
+         E8/A     13
+         E8/M     12
+         E8/P     14
+         E8/T     16
+
+N$89     E8/D     3
+         E8/T     3
+
+N$91     E8/D     19
+         E8/T     21
+
+N$92     E8/D     18
+         E8/P     22
+
+N$94     E8/D     17
+         E8/M     17
+         E8/M     20
+         E8/P     21
+
+N$106    E8/D     8
+         E8/M     7
+         E8/T     8
+
+N$107    E8/P     8
+         E8/T     9
+
+N$108    E8/D     9
+         E8/M     8
+         E8/T     10
+
+N$114    E8/10T   10
+         E8/A     9
+         E8/P     11
+         E8/T     11
+
+N$121    E8/D     10
+         E8/T     12
+
+N$122    E8/M     9
+         E8/T     13
+
+N$124    E8/10T   14
+         E8/A     12
+         E8/D     12
+         E8/M     11
+         E8/P     13
+         E8/T     15
+
+N$142    E8/M     14
+         E8/T     18
+
+N$145    E8/D     16
+         E8/M     16
+         E8/T     20
+
+N$146    E8/M     15
+         E8/P     20
+         E8/T     19
+
+N$150    E8/D     15
+         E8/M     18
+
+N$151    E8/D     14
+         E8/M     13
+         E8/P     19
+
+N$154    E8/10T   11
+         E8/A     10
+         E8/D     11
+
+N$158    E8/10T   8
+         E8/D     7
+
+N$159    E8/10T   7
+         E8/D     6
+
+N$160    E8/10T   6
+         E8/D     5
+
+N$161    E8/A     7
+         E8/M     6
+         E8/P     7
+         R66      1
+
+N$162    E8/A     14
+         E8/D     13
+         E8/P     15
+
+N$187    E8/A     5
+         E8/M     4
+         E8/P     5
+         R64      1
+
+N$188    E8/A     6
+         E8/M     5
+         E8/P     6
+         R65      1
+
+N$202    E8/A     15
+         E8/P     16
+
+N$209    E8/A     8
+         E8/P     9
+
+N$214    E8/10T   4
+         E8/A     4
+         E8/P     4
+         R63      1
+
+N$227    E8/10T   12
+         E8/A     11
+
+N$241    E8/10T   13
+         E8/M     10
+         E8/P     12
+         E8/T     14
+
+N$269    E8/M-2   1
+         E8/P-2   1
+
+N$297    E8/A-2   4
+         E8/D     25
+         E8/P-2   5
+
