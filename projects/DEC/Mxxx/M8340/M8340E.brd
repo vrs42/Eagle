@@ -3115,8 +3115,8 @@ design rules under a new name.</description>
 <element name="J" library="dec-con" package="EDGE-CON2" value="EDGE-TOP" x="0" y="210.82" rot="R270"/>
 <element name="H" library="dec-con" package="EDGE-CON2" value="EDGE-TOP" x="69.85" y="210.82" rot="R270"/>
 <element name="U$2" library="dec-con" package="EDGE-CON8" value="QUAD" x="0" y="0"/>
-<element name="E11" library="memory" package="DIL16" value="23-001A1" x="196.85" y="123.19" rot="R270"/>
-<element name="E19" library="memory" package="DIL16" value="23-002A1" x="146.05" y="123.19" rot="R270"/>
+<element name="E11" library="memory" package="DIL16" value="DEC23001A1" x="196.85" y="123.19" rot="R270"/>
+<element name="E19" library="memory" package="DIL16" value="DEC23002A1" x="146.05" y="123.19" rot="R270"/>
 <element name="E6" library="74xx-us" package="DIL14" value="7474N" x="222.25" y="86.36" rot="R270"/>
 <element name="E10" library="74xx-us" package="DIL14" value="7474N" x="196.85" y="86.36" rot="R270"/>
 <element name="E14" library="74xx-us" package="DIL14" value="7474N" x="171.45" y="86.36" rot="R270"/>
@@ -3129,9 +3129,9 @@ design rules under a new name.</description>
 <element name="R1" library="rcl" package="0207/10" value="750" x="233.68" y="44.45" rot="R270"/>
 <element name="E4" library="74xx-us" package="DIL16" value="74H106N" x="247.65" y="161.29" rot="R270"/>
 <element name="E3" library="dec-con" package="DIL14" value="74H20N" x="247.65" y="124.46" rot="R270"/>
-<element name="E1" library="74xx-us" package="DIL14" value="97401N" x="247.65" y="46.99" rot="R270"/>
-<element name="E9" library="74xx-us" package="DIL14" value="97401N" x="196.85" y="46.99" rot="R270"/>
-<element name="E35" library="74xx-us" package="DIL14" value="97401N" x="19.05" y="46.99" rot="R270"/>
+<element name="E1" library="74xx-us" package="DIL14" value="SN97401" x="247.65" y="46.99" rot="R270"/>
+<element name="E9" library="74xx-us" package="DIL14" value="SN97401" x="196.85" y="46.99" rot="R270"/>
+<element name="E35" library="74xx-us" package="DIL14" value="SN97401" x="19.05" y="46.99" rot="R270"/>
 <element name="R2" library="rcl" package="0207/10" value="470" x="85.725" y="127" rot="R90"/>
 <element name="R3" library="rcl" package="0207/10" value="470" x="161.29" y="165.1" rot="R90"/>
 <element name="R4" library="rcl" package="0207/10" value="470" x="234.95" y="184.15" rot="R270"/>
@@ -4175,7 +4175,7 @@ design rules under a new name.</description>
 <wire x1="121.6025" y1="202.8825" x2="121.285" y2="201.93" width="0.8128" layer="1"/>
 <wire x1="121.285" y1="201.93" x2="121.285" y2="195.58" width="0.8128" layer="1"/>
 </signal>
-<signal name="SGT">
+<signal name="!SGT">
 <contactref element="H" pad="F1"/>
 <contactref element="J" pad="F1"/>
 <wire x1="20.0025" y1="202.8825" x2="19.685" y2="202.565" width="0.8128" layer="1"/>
@@ -5512,7 +5512,7 @@ design rules under a new name.</description>
 <wire x1="152.4" y1="188.595" x2="151.765" y2="187.96" width="0.8128" layer="16"/>
 <wire x1="151.765" y1="187.96" x2="150.495" y2="186.055" width="0.8128" layer="16"/>
 </signal>
-<signal name="ROM_16_L">
+<signal name="!ADLK_DIS">
 <contactref element="E11" pad="6"/>
 <contactref element="H" pad="V2"/>
 <wire x1="193.04" y1="119.38" x2="191.135" y2="119.38" width="0.8128" layer="1"/>
@@ -6448,7 +6448,7 @@ design rules under a new name.</description>
 <wire x1="62.865" y1="115.57" x2="60.325" y2="113.03" width="0.8128" layer="1"/>
 <wire x1="60.325" y1="113.03" x2="60.325" y2="83.82" width="0.8128" layer="1"/>
 </signal>
-<signal name="!SC=0">
+<signal name="!SC_0">
 <contactref element="E24" pad="6"/>
 <contactref element="H" pad="U1"/>
 <wire x1="116.84" y1="157.48" x2="118.745" y2="157.48" width="0.8128" layer="16"/>
@@ -6463,7 +6463,7 @@ design rules under a new name.</description>
 <wire x1="126.365" y1="188.595" x2="132.715" y2="180.34" width="0.8128" layer="1"/>
 <wire x1="132.715" y1="180.34" x2="132.715" y2="161.29" width="0.8128" layer="1"/>
 </signal>
-<signal name="N$13">
+<signal name="EIR3">
 <contactref element="E19" pad="10"/>
 <contactref element="E11" pad="10"/>
 <contactref element="E26" pad="6"/>
@@ -6510,7 +6510,7 @@ design rules under a new name.</description>
 <wire x1="173.355" y1="114.935" x2="173.355" y2="122.555" width="0.8128" layer="1"/>
 <wire x1="173.355" y1="122.555" x2="175.26" y2="124.46" width="0.8128" layer="1"/>
 </signal>
-<signal name="N$12">
+<signal name="EIR2">
 <contactref element="E19" pad="11"/>
 <contactref element="E11" pad="11"/>
 <contactref element="E22" pad="8"/>
