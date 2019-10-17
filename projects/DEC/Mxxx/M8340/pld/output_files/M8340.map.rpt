@@ -1,0 +1,400 @@
+Analysis & Synthesis report for M8340
+Wed Oct 16 17:14:18 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Oct 16 17:14:17 2019           ;
+; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name               ; M8340                                           ;
+; Top-level Entity Name       ; M8340                                           ;
+; Family                      ; MAX7000S                                        ;
+; Total macrocells            ; 89                                              ;
+; Total pins                  ; 51                                              ;
++-----------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                 ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM7128SQC100-15 ;               ;
+; Top-level entity name                                                      ; M8340            ; M8340         ;
+; Family name                                                                ; MAX7000S         ; Cyclone IV GX ;
+; Optimization Technique                                                     ; Area             ; Speed         ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Create Debugging Nodes for IP Cores                                        ; Off              ; Off           ;
+; Preserve fewer node names                                                  ; On               ; On            ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off              ; Off           ;
+; Verilog Version                                                            ; Verilog_2001     ; Verilog_2001  ;
+; VHDL Version                                                               ; VHDL_1993        ; VHDL_1993     ;
+; State Machine Processing                                                   ; Auto             ; Auto          ;
+; Safe State Machine                                                         ; Off              ; Off           ;
+; Extract Verilog State Machines                                             ; On               ; On            ;
+; Extract VHDL State Machines                                                ; On               ; On            ;
+; Ignore Verilog initial constructs                                          ; Off              ; Off           ;
+; Iteration limit for constant Verilog loops                                 ; 5000             ; 5000          ;
+; Iteration limit for non-constant Verilog loops                             ; 250              ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On               ; On            ;
+; Infer RAMs from Raw Logic                                                  ; On               ; On            ;
+; Parallel Synthesis                                                         ; On               ; On            ;
+; NOT Gate Push-Back                                                         ; On               ; On            ;
+; Power-Up Don't Care                                                        ; On               ; On            ;
+; Remove Duplicate Registers                                                 ; On               ; On            ;
+; Ignore CARRY Buffers                                                       ; Off              ; Off           ;
+; Ignore CASCADE Buffers                                                     ; Off              ; Off           ;
+; Ignore GLOBAL Buffers                                                      ; Off              ; Off           ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off              ; Off           ;
+; Ignore LCELL Buffers                                                       ; Auto             ; Auto          ;
+; Ignore SOFT Buffers                                                        ; Off              ; Off           ;
+; Limit AHDL Integers to 32 Bits                                             ; Off              ; Off           ;
+; Allow XOR Gate Usage                                                       ; On               ; On            ;
+; Auto Logic Cell Insertion                                                  ; On               ; On            ;
+; Parallel Expander Chain Length                                             ; 4                ; 4             ;
+; Auto Parallel Expanders                                                    ; On               ; On            ;
+; Auto Open-Drain Pins                                                       ; On               ; On            ;
+; Auto Resource Sharing                                                      ; Off              ; Off           ;
+; Maximum Fan-in Per Macrocell                                               ; 100              ; 100           ;
+; Use LogicLock Constraints during Resource Balancing                        ; On               ; On            ;
+; Ignore translate_off and synthesis_off directives                          ; Off              ; Off           ;
+; Report Parameter Settings                                                  ; On               ; On            ;
+; Report Source Assignments                                                  ; On               ; On            ;
+; Report Connectivity Checks                                                 ; On               ; On            ;
+; HDL message level                                                          ; Level2           ; Level2        ;
+; Suppress Register Optimization Related Messages                            ; Off              ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000             ; 5000          ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000             ; 5000          ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100              ; 100           ;
+; Block Design Naming                                                        ; Auto             ; Auto          ;
+; Synthesis Effort                                                           ; Auto             ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On               ; On            ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off              ; Off           ;
+; Analysis & Synthesis Message Level                                         ; Medium           ; Medium        ;
+; Disable Register Merging Across Hierarchies                                ; Auto             ; Auto          ;
+; Synthesis Seed                                                             ; 1                ; 1             ;
++----------------------------------------------------------------------------+------------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; M8340.v                          ; yes             ; User Verilog HDL File  ; C:/Users/vrs/Documents/Eagle/projects/DEC/Mxxx/M8340/pld/M8340.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; Logic cells          ; 89                   ;
+; Total registers      ; 0                    ;
+; I/O pins             ; 51                   ;
+; Shareable expanders  ; 37                   ;
+; Parallel expanders   ; 2                    ;
+; Maximum fan-out node ; n_t_18x~9            ;
+; Maximum fan-out      ; 41                   ;
+; Total fan-out        ; 782                  ;
+; Average fan-out      ; 4.42                 ;
++----------------------+----------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                 ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |M8340                     ; 89         ; 51   ; |M8340              ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; n_t_14x                                             ; ld_eir              ; yes                    ;
+; n_t_11x                                             ; ld_eir              ; yes                    ;
+; modea                                               ; n_t_27x             ; yes                    ;
+; ex1                                                 ; n_t_51x             ; yes                    ;
+; n_t_7x                                              ; ld_eir              ; yes                    ;
+; n_t_5x                                              ; ld_eir              ; yes                    ;
+; n_t_4x                                              ; ld_eir              ; yes                    ;
+; n_t_2x                                              ; ld_eir              ; yes                    ;
+; n_t_1x                                              ; ld_eir              ; yes                    ;
+; n_t_3x                                              ; ld_eir              ; yes                    ;
+; n_t_8x                                              ; ld_eir              ; yes                    ;
+; n_t_10x                                             ; ld_eir              ; yes                    ;
+; n_t_17x                                             ; ld_eir              ; yes                    ;
+; n_t_18x                                             ; ld_eir              ; yes                    ;
+; n_t_19x                                             ; always43            ; yes                    ;
+; n_t_38x                                             ; n_t_46x             ; yes                    ;
+; n_t_42x                                             ; always45            ; yes                    ;
+; n_t_40x                                             ; always43            ; yes                    ;
+; n_t_39x                                             ; incr_sc             ; yes                    ;
+; n_t_26x                                             ; tp2_d               ; yes                    ;
+; n_t_14x_m                                           ; ld_eir              ; yes                    ;
+; n_t_11x_m                                           ; ld_eir              ; yes                    ;
+; modea_m                                             ; n_t_27x             ; yes                    ;
+; ex1_m                                               ; n_t_51x             ; yes                    ;
+; n_t_7x_m                                            ; ld_eir              ; yes                    ;
+; n_t_5x_m                                            ; ld_eir              ; yes                    ;
+; n_t_4x_m                                            ; ld_eir              ; yes                    ;
+; n_t_2x_m                                            ; ld_eir              ; yes                    ;
+; n_t_1x_m                                            ; ld_eir              ; yes                    ;
+; n_t_3x_m                                            ; ld_eir              ; yes                    ;
+; n_t_8x_m                                            ; ld_eir              ; yes                    ;
+; n_t_10x_m                                           ; ld_eir              ; yes                    ;
+; n_t_17x_m                                           ; ld_eir              ; yes                    ;
+; n_t_18x_m                                           ; ld_eir              ; yes                    ;
+; n_t_19x_m                                           ; always43            ; yes                    ;
+; n_t_38x_m                                           ; n_t_46x             ; yes                    ;
+; n_t_42x_m                                           ; always45            ; yes                    ;
+; n_t_40x_m                                           ; always43            ; yes                    ;
+; n_t_39x_m                                           ; incr_sc             ; yes                    ;
+; n_t_26x_m                                           ; tp2_d               ; yes                    ;
+; Number of user-specified and inferred latches = 40  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 16 17:14:15 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M8340X -c M8340
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file m8340.v
+    Info (12023): Found entity 1: M8340
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(271): created implicit net for "e11_10x01"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(272): created implicit net for "e11_1011x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(275): created implicit net for "e11_00x10"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(276): created implicit net for "e11_x1001"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(277): created implicit net for "e11_0x111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(278): created implicit net for "e11_01101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(279): created implicit net for "e11_01110"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(280): created implicit net for "e11_10011"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(288): created implicit net for "e11_00010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(289): created implicit net for "e11_00100"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(290): created implicit net for "e11_100x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(295): created implicit net for "e11_0111x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(296): created implicit net for "e11_10010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(301): created implicit net for "e11_01x01"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(302): created implicit net for "e11_00111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(307): created implicit net for "e11_x0010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(308): created implicit net for "e11_011x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(315): created implicit net for "e11_x0111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(316): created implicit net for "e11_10x10"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(317): created implicit net for "e11_10101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(392): created implicit net for "e19_001x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(393): created implicit net for "e19_x0110"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(394): created implicit net for "e19_1111x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(395): created implicit net for "e19_100x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(396): created implicit net for "e19_1x010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(397): created implicit net for "e19_110x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(398): created implicit net for "e19_1x101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(399): created implicit net for "e19_10111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(408): created implicit net for "e19_0001x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(409): created implicit net for "e19_00101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(410): created implicit net for "e19_x1001"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(411): created implicit net for "e19_01010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(412): created implicit net for "e19_10001"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(419): created implicit net for "e19_1x011"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(420): created implicit net for "e19_x1010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(421): created implicit net for "e19_10010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(428): created implicit net for "e19_x0101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(429): created implicit net for "e19_010x0"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(430): created implicit net for "e19_11x00"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(431): created implicit net for "e19_1101x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(438): created implicit net for "e19_11x11"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(439): created implicit net for "e19_00110"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(440): created implicit net for "e19_11x10"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(441): created implicit net for "e19_0100x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(442): created implicit net for "e19_01100"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(450): created implicit net for "e19_1110x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(451): created implicit net for "e19_0x100"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(452): created implicit net for "e19_10100"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(460): created implicit net for "e19_011x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(461): created implicit net for "e19_01110"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(468): created implicit net for "e19_000x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(469): created implicit net for "e19_00x10"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(470): created implicit net for "e19_0010x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(471): created implicit net for "e19_0x111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(472): created implicit net for "e19_0110x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(473): created implicit net for "e19_1011x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(474): created implicit net for "e19_10x01"
+Info (12127): Elaborating entity "M8340" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(185): inferring latch(es) for variable "modea_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(192): inferring latch(es) for variable "modea", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(200): inferring latch(es) for variable "n_t_1x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(207): inferring latch(es) for variable "n_t_1x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(214): inferring latch(es) for variable "n_t_2x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(221): inferring latch(es) for variable "n_t_2x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(242): inferring latch(es) for variable "n_t_4x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(249): inferring latch(es) for variable "n_t_4x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(256): inferring latch(es) for variable "n_t_5x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(263): inferring latch(es) for variable "n_t_5x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(329): inferring latch(es) for variable "n_t_3x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(336): inferring latch(es) for variable "n_t_3x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(343): inferring latch(es) for variable "n_t_8x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(350): inferring latch(es) for variable "n_t_8x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(363): inferring latch(es) for variable "n_t_14x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(370): inferring latch(es) for variable "n_t_14x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(377): inferring latch(es) for variable "n_t_10x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(384): inferring latch(es) for variable "n_t_10x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(493): inferring latch(es) for variable "n_t_11x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(500): inferring latch(es) for variable "n_t_11x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(507): inferring latch(es) for variable "n_t_17x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(514): inferring latch(es) for variable "n_t_17x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(532): inferring latch(es) for variable "n_t_18x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(539): inferring latch(es) for variable "n_t_18x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(547): inferring latch(es) for variable "n_t_7x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(554): inferring latch(es) for variable "n_t_7x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(571): inferring latch(es) for variable "n_t_26x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(578): inferring latch(es) for variable "n_t_26x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(585): inferring latch(es) for variable "ex1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(592): inferring latch(es) for variable "ex1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(614): inferring latch(es) for variable "n_t_38x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(625): inferring latch(es) for variable "n_t_38x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(636): inferring latch(es) for variable "gdollar_0_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(644): inferring latch(es) for variable "gdollar_0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(652): inferring latch(es) for variable "gdollar_1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(660): inferring latch(es) for variable "gdollar_1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(668): inferring latch(es) for variable "gdollar_2_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(676): inferring latch(es) for variable "gdollar_2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(699): inferring latch(es) for variable "n_t_39x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(710): inferring latch(es) for variable "n_t_39x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(721): inferring latch(es) for variable "n_t_40x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(732): inferring latch(es) for variable "n_t_40x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(743): inferring latch(es) for variable "n_t_19x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(754): inferring latch(es) for variable "n_t_19x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(765): inferring latch(es) for variable "n_t_42x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8340.v(776): inferring latch(es) for variable "n_t_42x", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "n_t_42x" at M8340.v(776)
+Info (10041): Inferred latch for "n_t_42x_m" at M8340.v(765)
+Info (10041): Inferred latch for "n_t_19x" at M8340.v(754)
+Info (10041): Inferred latch for "n_t_19x_m" at M8340.v(743)
+Info (10041): Inferred latch for "n_t_40x" at M8340.v(732)
+Info (10041): Inferred latch for "n_t_40x_m" at M8340.v(721)
+Info (10041): Inferred latch for "n_t_39x" at M8340.v(710)
+Info (10041): Inferred latch for "n_t_39x_m" at M8340.v(699)
+Info (10041): Inferred latch for "n_t_38x" at M8340.v(625)
+Info (10041): Inferred latch for "n_t_38x_m" at M8340.v(614)
+Info (10041): Inferred latch for "ex1" at M8340.v(592)
+Info (10041): Inferred latch for "ex1_m" at M8340.v(585)
+Info (10041): Inferred latch for "n_t_26x" at M8340.v(578)
+Info (10041): Inferred latch for "n_t_26x_m" at M8340.v(571)
+Info (10041): Inferred latch for "n_t_7x" at M8340.v(554)
+Info (10041): Inferred latch for "n_t_7x_m" at M8340.v(547)
+Info (10041): Inferred latch for "n_t_18x" at M8340.v(539)
+Info (10041): Inferred latch for "n_t_18x_m" at M8340.v(532)
+Info (10041): Inferred latch for "n_t_17x" at M8340.v(514)
+Info (10041): Inferred latch for "n_t_17x_m" at M8340.v(507)
+Info (10041): Inferred latch for "n_t_11x" at M8340.v(500)
+Info (10041): Inferred latch for "n_t_11x_m" at M8340.v(493)
+Info (10041): Inferred latch for "n_t_10x" at M8340.v(384)
+Info (10041): Inferred latch for "n_t_10x_m" at M8340.v(377)
+Info (10041): Inferred latch for "n_t_14x" at M8340.v(370)
+Info (10041): Inferred latch for "n_t_14x_m" at M8340.v(363)
+Info (10041): Inferred latch for "n_t_8x" at M8340.v(350)
+Info (10041): Inferred latch for "n_t_8x_m" at M8340.v(343)
+Info (10041): Inferred latch for "n_t_3x" at M8340.v(336)
+Info (10041): Inferred latch for "n_t_3x_m" at M8340.v(329)
+Info (10041): Inferred latch for "n_t_5x" at M8340.v(263)
+Info (10041): Inferred latch for "n_t_5x_m" at M8340.v(256)
+Info (10041): Inferred latch for "n_t_4x" at M8340.v(249)
+Info (10041): Inferred latch for "n_t_4x_m" at M8340.v(242)
+Info (10041): Inferred latch for "n_t_2x" at M8340.v(221)
+Info (10041): Inferred latch for "n_t_2x_m" at M8340.v(214)
+Info (10041): Inferred latch for "n_t_1x" at M8340.v(207)
+Info (10041): Inferred latch for "n_t_1x_m" at M8340.v(200)
+Info (10041): Inferred latch for "modea" at M8340.v(192)
+Info (10041): Inferred latch for "modea_m" at M8340.v(185)
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "dad_or_dst" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "div_12_l" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "eir2" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "eir3" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "modeb" and its non-tri-state driver.
+Info (13060): One or more bidirs are fed by always enabled tri-state buffers
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "dad_or_dst" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "dad_or_dst_low" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "div_12_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "eir2" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "eir3" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "modeb" is moved to its source
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "dad_or_dst~synth"
+    Warning (13010): Node "dad_or_dst~synth"
+    Warning (13010): Node "div_12_l~synth"
+    Warning (13010): Node "eir2~synth"
+    Warning (13010): Node "eir3~synth"
+    Warning (13010): Node "modeb~synth"
+Info (21057): Implemented 177 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 25 input pins
+    Info (21059): Implemented 13 output pins
+    Info (21060): Implemented 13 bidirectional pins
+    Info (21063): Implemented 89 macrocells
+    Info (21073): Implemented 37 shareable expanders
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 117 warnings
+    Info: Peak virtual memory: 4583 megabytes
+    Info: Processing ended: Wed Oct 16 17:14:18 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

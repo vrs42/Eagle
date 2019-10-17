@@ -1,7 +1,7 @@
 #$ TOOL CUPL
 # Berkeley PLA format generated using CUPL(WM) 5.0a
 # Serial#  60008009
-# Created  Sun Sep 29 18:11:31 2019
+# Created  Wed Oct 09 15:36:33 2019
 #
 #    Name        M8340
 #    Partno      cpld
@@ -33,8 +33,8 @@
 #$ PROPERTY atmel open_collector = rom_24_l
 #$ MODULE  M8340
 #$ JEDECFILE  M8340
-#$ DEVICE  f1508isptqfp100
-#$ PINS  51 adlk_dis_low+ c0+ dad_or_dst+ dad_or_dst_low+ data7+ data8+ data9+ data10+ data11+ defer+ div_12_l+ e+ eir2+ eir3+ fd_set+ fe_set+ fetch+ incr_sc+ init+ int_in_prog+ last_step_l+ ma_ms_lc+ md0+ md1+ md2+ md3+ md4+ md5+ md6+ md7+ md8+ md9+ md10+ md11+ modeb+ next_loc+ rom_11_l+ rom_12_l+ rom_13_l+ rom_14_l+ rom_15_l+ rom_17_l+ rom_22_l+ rom_24_l+ sc_0_low+ tp1+ tp2+ tp2_d+ tp3+ tp4+ ts3+ 
+#$ DEVICE  f1508ispqfp100
+#$ PINS  51 adlk_dis_low+:39 c0+:22 dad_or_dst+:63 dad_or_dst_low+:69 data7+:24 data8+:2 data9+:1 data10+:100 data11+:99 defer+:9 div_12_l+:55 e+:7 eir2+:48 eir3+:50 fd_set+:44 fe_set+:43 fetch+:11 incr_sc+:58 init+:14 int_in_prog+:25 last_step_l+:73 ma_ms_lc+:32 md0+:38 md1+:35 md2+:34 md3+:33 md4+:31 md5+:30 md6+:27 md7+:26 md8+:10 md9+:8 md10+:4 md11+:3 modeb+:78 next_loc+:52 rom_11_l+:70 rom_12_l+:74 rom_13_l+:57 rom_14_l+:77 rom_15_l+:67 rom_17_l+:72 rom_22_l+:59 rom_24_l+:56 sc_0_low+:46 tp1+:23 tp2+:19 tp2_d+:65 tp3+:18 tp4+:16 ts3+:15 
 #$ NODES 87 be+:124 bfetch+:125 bmd8+:128 bmd9+:129 bmd10+:126 bmd11+:127 data_to_sc+:130 e_low+:131 eae_inst+:132 ex1+:115 ex1_low+:133 exec_divide+:134 exec_multiply+:135 fetch_low+:136 gdollar_0+:117 gdollar_1+:118 gdollar_2+:119 init_low+:137 ld_eir+:138 modea+:101 n0_to_eir+:139 n0_to_sc+:140 n3v+:141 n3v0+:142 n_t_10x+:109 n_t_11x+:110 n_t_14x+:108 n_t_15x+:143 n_t_16x+:144 n_t_17x+:111 n_t_18x+:112 n_t_19x+:122 n_t_1x+:102 n_t_20x+:145 n_t_21x+:146 n_t_22x+:147 n_t_23x+:148 n_t_24x+:149 n_t_25x+:150 n_t_26x+:114 n_t_27x+:151 n_t_28x+:152 n_t_29x+:153 n_t_2x+:103 n_t_30x+:154 n_t_31x+:155 n_t_32x+:156 n_t_33x+:157 n_t_34x+:158 n_t_35x+:159 n_t_36x+:160 n_t_37x+:161 n_t_38x+:116 n_t_39x+:120 n_t_3x+:106 n_t_40x+:121 n_t_41x+:162 n_t_42x+:123 n_t_43x+:163 n_t_44x+:164 n_t_45x+:165 n_t_46x+:166 n_t_47x+:167 n_t_48x+:168 n_t_49x+:169 n_t_4x+:104 n_t_50x+:170 n_t_51x+:171 n_t_52x+:172 n_t_53x+:173 n_t_54x+:174 n_t_55x+:175 n_t_5x+:105 n_t_6x+:176 n_t_7x+:113 n_t_8x+:107 n_t_9x+:177 rom_19_l+:178 rom_21_l+:179 rom_23_l+:180 rom_25_l+:181 rom_26_l+:182 sc_load_low+:183 sc_to_data+:184 swab+:185 swba+:186 tp3_low+:187 
 .i 123
 .o 201

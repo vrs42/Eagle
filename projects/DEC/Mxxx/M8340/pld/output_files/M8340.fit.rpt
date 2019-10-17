@@ -1,0 +1,734 @@
+Fitter report for M8340
+Wed Oct 16 17:14:21 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. Bidir Pins
+ 10. All Package Pins
+ 11. Output Pin Default Load For Reported TCO
+ 12. Fitter Resource Utilization by Entity
+ 13. Non-Global High Fan-Out Signals
+ 14. Other Routing Usage Summary
+ 15. LAB External Interconnect
+ 16. LAB Macrocells
+ 17. Parallel Expander
+ 18. Shareable Expander
+ 19. Logic Cell Interconnection
+ 20. Fitter Device Options
+ 21. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Fitter Summary                                                              ;
++---------------------------+-------------------------------------------------+
+; Fitter Status             ; Successful - Wed Oct 16 17:14:21 2019           ;
+; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name             ; M8340                                           ;
+; Top-level Entity Name     ; M8340                                           ;
+; Family                    ; MAX7000S                                        ;
+; Device                    ; EPM7128SQC100-15                                ;
+; Timing Models             ; Final                                           ;
+; Total macrocells          ; 90 / 128 ( 70 % )                               ;
+; Total pins                ; 55 / 84 ( 65 % )                                ;
++---------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                               ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM7128SQC100-15 ;               ;
+; Slow Slew Rate                                                             ; On               ; Off           ;
+; Fitter Effort                                                              ; Standard Fit     ; Auto Fit      ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Optimize Multi-Corner Timing                                               ; Off              ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off              ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off              ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; Normal           ; Normal        ;
+; Fitter Initial Placement Seed                                              ; 1                ; 1             ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off              ; Off           ;
++----------------------------------------------------------------------------+------------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/vrs/Documents/Eagle/projects/DEC/Mxxx/M8340/pld/output_files/M8340.pin.
+
+
++--------------------------------------------------+
+; Fitter Resource Usage Summary                    ;
++------------------------------+-------------------+
+; Resource                     ; Usage             ;
++------------------------------+-------------------+
+; Logic cells                  ; 90 / 128 ( 70 % ) ;
+; Registers                    ; 0 / 128 ( 0 % )   ;
+; Number of pterms used        ; 360               ;
+; I/O pins                     ; 55 / 84 ( 65 % )  ;
+;     -- Clock pins            ; 0 / 2 ( 0 % )     ;
+;     -- Dedicated input pins  ; 0 / 2 ( 0 % )     ;
+;                              ;                   ;
+; Global signals               ; 0                 ;
+; Shareable expanders          ; 59 / 128 ( 46 % ) ;
+; Parallel expanders           ; 2 / 120 ( 2 % )   ;
+; Cells using turbo bit        ; 90 / 128 ( 70 % ) ;
+; Maximum fan-out              ; 53                ;
+; Highest non-global fan-out   ; 53                ;
+; Total fan-out                ; 863               ;
+; Average fan-out              ; 4.23              ;
++------------------------------+-------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                        ;
++-------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; Name        ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; I/O Standard ; Location assigned by ;
++-------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; defer       ; 9     ; --       ; 2   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; e           ; 7     ; --       ; 2   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; fetch       ; 11    ; --       ; 2   ; 41                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; incr_sc     ; 58    ; --       ; 6   ; 11                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; init        ; 14    ; --       ; 2   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; int_in_prog ; 25    ; --       ; 3   ; 16                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; ma_ms_lc    ; 32    ; --       ; 4   ; 3                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md0         ; 38    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md1         ; 35    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md10        ; 4     ; --       ; 1   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md11        ; 3     ; --       ; 1   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md2         ; 34    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md3         ; 33    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md4         ; 31    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md5         ; 30    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md6         ; 27    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md7         ; 26    ; --       ; 3   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md8         ; 10    ; --       ; 2   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md9         ; 8     ; --       ; 2   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; tp1         ; 23    ; --       ; 3   ; 16                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; tp2         ; 19    ; --       ; 3   ; 28                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; tp2_d       ; 65    ; --       ; 7   ; 4                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; tp3         ; 18    ; --       ; 3   ; 3                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; tp4         ; 16    ; --       ; 2   ; 3                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; ts3         ; 15    ; --       ; 2   ; 19                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
++-------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                      ;
++--------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name         ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++--------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; adlk_dis_low ; 39    ; --       ; 4   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; c0           ; 22    ; --       ; 3   ; no              ; yes            ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; fd_set       ; 44    ; --       ; 5   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; fe_set       ; 43    ; --       ; 5   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; last_step_l  ; 73    ; --       ; 7   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; next_loc     ; 52    ; --       ; 5   ; no              ; yes            ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; rom_11_l     ; 70    ; --       ; 7   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; rom_13_l     ; 57    ; --       ; 6   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; rom_15_l     ; 67    ; --       ; 7   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; rom_17_l     ; 72    ; --       ; 7   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; rom_22_l     ; 59    ; --       ; 6   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; rom_24_l     ; 56    ; --       ; 6   ; no              ; yes            ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; sc_0_low     ; 46    ; --       ; 5   ; no              ; yes            ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
++--------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Bidir Pins                                                                                                                                                                                                                                                  ;
++----------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+------------------------+---------------------+
+; Name           ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Slow Slew Rate ; Open Drain ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source   ; Output Enable Group ;
++----------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+------------------------+---------------------+
+; dad_or_dst     ; 63    ; --       ; 6   ; 0                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; -                      ; -                   ;
+; dad_or_dst_low ; 69    ; --       ; 7   ; 0                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; -                      ; -                   ;
+; data10         ; 100   ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; data10~7               ; -                   ;
+; data11         ; 99    ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; data11~7               ; -                   ;
+; data7          ; 24    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; data7~7                ; -                   ;
+; data8          ; 2     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; data8~7                ; -                   ;
+; data9          ; 1     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; data9~7                ; -                   ;
+; div_12_l       ; 55    ; --       ; 6   ; 0                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; -                      ; -                   ;
+; eir2           ; 48    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; -                      ; -                   ;
+; eir3           ; 50    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; -                      ; -                   ;
+; modeb          ; 78    ; --       ; 8   ; 0                     ; 0                  ; no     ; no             ; no              ; yes            ; no         ; TTL          ; User                 ; 10 pF ; -                      ; -                   ;
+; rom_12_l       ; 74    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; rom_12_l~19 (inverted) ; -                   ;
+; rom_14_l       ; 77    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; rom_14_l~11 (inverted) ; -                   ;
++----------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+------------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                      ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; 1        ; 10         ; --       ; data9          ; bidir  ; TTL          ;         ; Y               ;
+; 2        ; 11         ; --       ; data8          ; bidir  ; TTL          ;         ; Y               ;
+; 3        ; 12         ; --       ; md11           ; input  ; TTL          ;         ; Y               ;
+; 4        ; 13         ; --       ; md10           ; input  ; TTL          ;         ; Y               ;
+; 5        ; 14         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 6        ; 15         ; --       ; TDI            ; input  ; TTL          ;         ; N               ;
+; 7        ; 16         ; --       ; e              ; input  ; TTL          ;         ; Y               ;
+; 8        ; 17         ; --       ; md9            ; input  ; TTL          ;         ; Y               ;
+; 9        ; 18         ; --       ; defer          ; input  ; TTL          ;         ; Y               ;
+; 10       ; 19         ; --       ; md8            ; input  ; TTL          ;         ; Y               ;
+; 11       ; 20         ; --       ; fetch          ; input  ; TTL          ;         ; Y               ;
+; 12       ; 21         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 13       ; 22         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 14       ; 23         ; --       ; init           ; input  ; TTL          ;         ; Y               ;
+; 15       ; 24         ; --       ; ts3            ; input  ; TTL          ;         ; Y               ;
+; 16       ; 25         ; --       ; tp4            ; input  ; TTL          ;         ; Y               ;
+; 17       ; 26         ; --       ; TMS            ; input  ; TTL          ;         ; N               ;
+; 18       ; 27         ; --       ; tp3            ; input  ; TTL          ;         ; Y               ;
+; 19       ; 28         ; --       ; tp2            ; input  ; TTL          ;         ; Y               ;
+; 20       ; 29         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 21       ; 30         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 22       ; 31         ; --       ; c0             ; output ; TTL          ;         ; Y               ;
+; 23       ; 32         ; --       ; tp1            ; input  ; TTL          ;         ; Y               ;
+; 24       ; 33         ; --       ; data7          ; bidir  ; TTL          ;         ; Y               ;
+; 25       ; 34         ; --       ; int_in_prog    ; input  ; TTL          ;         ; Y               ;
+; 26       ; 35         ; --       ; md7            ; input  ; TTL          ;         ; Y               ;
+; 27       ; 36         ; --       ; md6            ; input  ; TTL          ;         ; Y               ;
+; 28       ; 37         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 29       ; 38         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 30       ; 39         ; --       ; md5            ; input  ; TTL          ;         ; Y               ;
+; 31       ; 40         ; --       ; md4            ; input  ; TTL          ;         ; Y               ;
+; 32       ; 41         ; --       ; ma_ms_lc       ; input  ; TTL          ;         ; Y               ;
+; 33       ; 42         ; --       ; md3            ; input  ; TTL          ;         ; Y               ;
+; 34       ; 43         ; --       ; md2            ; input  ; TTL          ;         ; Y               ;
+; 35       ; 44         ; --       ; md1            ; input  ; TTL          ;         ; Y               ;
+; 36       ; 45         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 37       ; 46         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 38       ; 47         ; --       ; md0            ; input  ; TTL          ;         ; Y               ;
+; 39       ; 48         ; --       ; adlk_dis_low   ; output ; TTL          ;         ; Y               ;
+; 40       ; 49         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 41       ; 50         ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
+; 42       ; 51         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 43       ; 52         ; --       ; fe_set         ; output ; TTL          ;         ; Y               ;
+; 44       ; 53         ; --       ; fd_set         ; output ; TTL          ;         ; Y               ;
+; 45       ; 54         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 46       ; 55         ; --       ; sc_0_low       ; output ; TTL          ;         ; Y               ;
+; 47       ; 56         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 48       ; 57         ; --       ; eir2           ; bidir  ; TTL          ;         ; Y               ;
+; 49       ; 58         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 50       ; 59         ; --       ; eir3           ; bidir  ; TTL          ;         ; Y               ;
+; 51       ; 60         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 52       ; 61         ; --       ; next_loc       ; output ; TTL          ;         ; Y               ;
+; 53       ; 62         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 54       ; 63         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 55       ; 64         ; --       ; div_12_l       ; bidir  ; TTL          ;         ; Y               ;
+; 56       ; 65         ; --       ; rom_24_l       ; output ; TTL          ;         ; Y               ;
+; 57       ; 66         ; --       ; rom_13_l       ; output ; TTL          ;         ; Y               ;
+; 58       ; 67         ; --       ; incr_sc        ; input  ; TTL          ;         ; Y               ;
+; 59       ; 68         ; --       ; rom_22_l       ; output ; TTL          ;         ; Y               ;
+; 60       ; 69         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 61       ; 70         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 62       ; 71         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 63       ; 72         ; --       ; dad_or_dst     ; bidir  ; TTL          ;         ; Y               ;
+; 64       ; 73         ; --       ; TCK            ; input  ; TTL          ;         ; N               ;
+; 65       ; 74         ; --       ; tp2_d          ; input  ; TTL          ;         ; Y               ;
+; 66       ; 75         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 67       ; 76         ; --       ; rom_15_l       ; output ; TTL          ;         ; Y               ;
+; 68       ; 77         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 69       ; 78         ; --       ; dad_or_dst_low ; bidir  ; TTL          ;         ; Y               ;
+; 70       ; 79         ; --       ; rom_11_l       ; output ; TTL          ;         ; Y               ;
+; 71       ; 80         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 72       ; 81         ; --       ; rom_17_l       ; output ; TTL          ;         ; Y               ;
+; 73       ; 82         ; --       ; last_step_l    ; output ; TTL          ;         ; Y               ;
+; 74       ; 83         ; --       ; rom_12_l       ; bidir  ; TTL          ;         ; Y               ;
+; 75       ; 84         ; --       ; TDO            ; output ; TTL          ;         ; N               ;
+; 76       ; 85         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 77       ; 86         ; --       ; rom_14_l       ; bidir  ; TTL          ;         ; Y               ;
+; 78       ; 87         ; --       ; modeb          ; bidir  ; TTL          ;         ; Y               ;
+; 79       ; 88         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 80       ; 89         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 81       ; 90         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 82       ; 91         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 83       ; 92         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 84       ; 93         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 85       ; 94         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 86       ; 95         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 87       ; 96         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 88       ; 97         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 89       ; 98         ; --       ; GND+           ;        ;              ;         ;                 ;
+; 90       ; 99         ; --       ; GND+           ;        ;              ;         ;                 ;
+; 91       ; 0          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 92       ; 1          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 93       ; 2          ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
+; 94       ; 3          ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 95       ; 4          ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 96       ; 5          ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 97       ; 6          ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 98       ; 7          ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 99       ; 8          ; --       ; data11         ; bidir  ; TTL          ;         ; Y               ;
+; 100      ; 9          ; --       ; data10         ; bidir  ; TTL          ;         ; Y               ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; TTL          ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++-------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                               ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |M8340                     ; 90         ; 55   ; |M8340              ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++--------------------------------------+
+; Non-Global High Fan-Out Signals      ;
++----------------------------+---------+
+; Name                       ; Fan-Out ;
++----------------------------+---------+
+; n_t_18x~9                  ; 53      ;
+; n_t_17x~9                  ; 51      ;
+; n_t_11x~9                  ; 46      ;
+; n_t_14x~9                  ; 46      ;
+; fetch                      ; 41      ;
+; modea~9                    ; 36      ;
+; tp2                        ; 28      ;
+; ts3                        ; 19      ;
+; n_t_39x~10                 ; 19      ;
+; n_t_51x~0sexpand0bal       ; 18      ;
+; tp1                        ; 16      ;
+; int_in_prog                ; 16      ;
+; n_t_40x~10                 ; 16      ;
+; sc_load_low~18             ; 15      ;
+; n_t_1x~9                   ; 14      ;
+; n_t_2x~9                   ; 14      ;
+; n_t_4x~9                   ; 14      ;
+; n_t_5x~9                   ; 14      ;
+; n_t_7x~9                   ; 14      ;
+; n_t_21x~6                  ; 14      ;
+; ld_eir~6                   ; 12      ;
+; n_t_19x~10                 ; 12      ;
+; incr_sc                    ; 11      ;
+; n_t_42x~10                 ; 10      ;
+; n0_to_sc~6                 ; 10      ;
+; dad_or_dst~12              ; 9       ;
+; ld_eir~0sexpand0           ; 8       ;
+; n_t_8x~9                   ; 7       ;
+; n_t_3x~9                   ; 7       ;
+; n_t_10x~9                  ; 7       ;
+; n0_to_eir~10               ; 6       ;
+; n0_to_eir~9                ; 6       ;
+; rom_21_l~10                ; 6       ;
+; n_t_38x~10                 ; 6       ;
+; n_t_26x~9                  ; 5       ;
+; ld_eir~5                   ; 4       ;
+; tp2_d                      ; 4       ;
+; n0_to_eir~3sexpand1        ; 4       ;
+; n0_to_eir~3sexpand0        ; 4       ;
+; rom_22_l~12                ; 4       ;
+; sc_to_data~15              ; 3       ;
+; tp3                        ; 3       ;
+; tp4                        ; 3       ;
+; ma_ms_lc                   ; 3       ;
+; comb~42                    ; 3       ;
+; comb~37                    ; 3       ;
+; comb~32                    ; 3       ;
+; comb~27                    ; 3       ;
+; comb~22                    ; 3       ;
+; ex1~9                      ; 3       ;
+; sc_to_data~0               ; 3       ;
+; adlk_dis_low~6             ; 3       ;
+; sc_to_data~32              ; 2       ;
+; sc_to_data~30              ; 2       ;
+; sc_to_data~29              ; 2       ;
+; sc_to_data~28              ; 2       ;
+; sc_to_data~21              ; 2       ;
+; sc_to_data~20              ; 2       ;
+; sc_to_data~19              ; 2       ;
+; sc_to_data~18              ; 2       ;
+; sc_to_data~17              ; 2       ;
+; sc_to_data~16              ; 2       ;
+; md10                       ; 2       ;
+; md8                        ; 2       ;
+; md7                        ; 2       ;
+; md9                        ; 2       ;
+; md11                       ; 2       ;
+; init                       ; 2       ;
+; always41~2sexp2            ; 2       ;
+; always45~4sexp2            ; 2       ;
+; always31~2sexp2            ; 2       ;
+; always43~5sexp2            ; 2       ;
+; always39~2sexp2            ; 2       ;
+; always43~6sexp             ; 2       ;
+; always45~3sexpand0         ; 2       ;
+; n_t_46x~1sexpand0          ; 2       ;
+; always43~4sexpand0         ; 2       ;
+; sc_to_data~6sexpand3       ; 2       ;
+; sc_to_data~6sexpand2       ; 2       ;
+; sc_to_data~6sexpand1       ; 2       ;
+; sc_to_data~6sexpand0       ; 2       ;
+; n_t_26x_m~9                ; 2       ;
+; n_t_40x_m~10               ; 2       ;
+; n_t_42x_m~10               ; 2       ;
+; n_t_38x_m~10               ; 2       ;
+; n_t_19x_m~10               ; 2       ;
+; n_t_39x_m~10               ; 2       ;
+; n_t_8x_m~9                 ; 2       ;
+; n_t_3x_m~9                 ; 2       ;
+; n_t_10x_m~9                ; 2       ;
+; n_t_1x_m~9                 ; 2       ;
+; n_t_2x_m~9                 ; 2       ;
+; n_t_4x_m~9                 ; 2       ;
+; n_t_5x_m~9                 ; 2       ;
+; n_t_7x_m~9                 ; 2       ;
+; n_t_17x_m~9                ; 2       ;
+; n_t_18x_m~9                ; 2       ;
+; n_t_11x_m~9                ; 2       ;
+; n_t_14x_m~9                ; 2       ;
+; modea_m~17                 ; 2       ;
+; ex1_m~9                    ; 2       ;
+; n_t_27x~0                  ; 2       ;
+; sc_to_data~1               ; 2       ;
+; rom_13_l~11                ; 2       ;
+; sc_to_data~31              ; 1       ;
+; sc_to_data~27              ; 1       ;
+; sc_to_data~26              ; 1       ;
+; sc_to_data~25              ; 1       ;
+; sc_to_data~24              ; 1       ;
+; sc_to_data~23              ; 1       ;
+; sc_to_data~22              ; 1       ;
+; rom_13_l~24                ; 1       ;
+; rom_14_l~0                 ; 1       ;
+; rom_12_l~0                 ; 1       ;
+; data9~0                    ; 1       ;
+; data8~0                    ; 1       ;
+; data7~0                    ; 1       ;
+; data11~0                   ; 1       ;
+; data10~0                   ; 1       ;
+; md5                        ; 1       ;
+; md4                        ; 1       ;
+; md0                        ; 1       ;
+; md1                        ; 1       ;
+; md2                        ; 1       ;
+; md3                        ; 1       ;
+; md6                        ; 1       ;
+; defer                      ; 1       ;
+; e                          ; 1       ;
+; fe_set~17sexp1bal          ; 1       ;
+; adlk_dis_low~14sexpand3bal ; 1       ;
+; adlk_dis_low~9sexpand0bal  ; 1       ;
+; e19_1x011~4sexp            ; 1       ;
+; n_t_53x~0sexpand1          ; 1       ;
+; rom_11_l~9sexpand2         ; 1       ;
+; rom_11_l~9sexpand1         ; 1       ;
+; rom_11_l~9sexpand0         ; 1       ;
+; e11_1011x~8sexpand4        ; 1       ;
+; e11_1011x~8sexpand3        ; 1       ;
+; e11_1011x~8sexpand2        ; 1       ;
+; e11_1011x~8sexpand1        ; 1       ;
+; e11_1011x~8sexpand0        ; 1       ;
+; sc_load_low~19             ; 1       ;
+; rom_13_l~21                ; 1       ;
+; modea_m~6                  ; 1       ;
+; rom_14_l~11                ; 1       ;
+; rom_12_l~19                ; 1       ;
+; rom_12_l~14                ; 1       ;
+; rom_12_l~13                ; 1       ;
+; div_12_l~6                 ; 1       ;
+; data9~7                    ; 1       ;
+; data9~5                    ; 1       ;
+; data8~7                    ; 1       ;
+; data8~5                    ; 1       ;
+; data7~7                    ; 1       ;
+; data7~5                    ; 1       ;
+; data11~7                   ; 1       ;
+; data11~5                   ; 1       ;
+; data10~7                   ; 1       ;
+; data10~5                   ; 1       ;
+; dad_or_dst~19              ; 1       ;
+; dad_or_dst~18              ; 1       ;
+; sc_0_low~8                 ; 1       ;
+; rom_24_l~12                ; 1       ;
+; rom_22_l~19                ; 1       ;
+; rom_17_l~4                 ; 1       ;
+; rom_15_l~19                ; 1       ;
+; rom_15_l~15                ; 1       ;
+; rom_13_l~19                ; 1       ;
+; rom_13_l~13                ; 1       ;
+; rom_13_l~12                ; 1       ;
+; rom_11_l~10                ; 1       ;
+; next_loc~10                ; 1       ;
+; next_loc~6                 ; 1       ;
+; last_step_l~9              ; 1       ;
+; fe_set~23                  ; 1       ;
+; fd_set~7                   ; 1       ;
+; rom_22_l~8                 ; 1       ;
+; rom_22_l~7                 ; 1       ;
+; c0~6                       ; 1       ;
+; c0~4                       ; 1       ;
+; adlk_dis_low~15            ; 1       ;
++----------------------------+---------+
+
+
++--------------------------------------------------+
+; Other Routing Usage Summary                      ;
++-----------------------------+--------------------+
+; Other Routing Resource Type ; Usage              ;
++-----------------------------+--------------------+
+; Output enables              ; 6 / 6 ( 100 % )    ;
+; PIA buffers                 ; 157 / 288 ( 55 % ) ;
+; PIAs                        ; 178 / 288 ( 62 % ) ;
++-----------------------------+--------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB External Interconnect                                                   ;
++-----------------------------------------------+-----------------------------+
+; LAB External Interconnects  (Average = 22.25) ; Number of LABs  (Total = 8) ;
++-----------------------------------------------+-----------------------------+
+; 0 - 2                                         ; 0                           ;
+; 3 - 5                                         ; 1                           ;
+; 6 - 8                                         ; 0                           ;
+; 9 - 11                                        ; 1                           ;
+; 12 - 14                                       ; 0                           ;
+; 15 - 17                                       ; 0                           ;
+; 18 - 20                                       ; 0                           ;
+; 21 - 23                                       ; 1                           ;
+; 24 - 26                                       ; 1                           ;
+; 27 - 29                                       ; 3                           ;
+; 30 - 32                                       ; 1                           ;
++-----------------------------------------------+-----------------------------+
+
+
++-----------------------------------------------------------------------+
+; LAB Macrocells                                                        ;
++-----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 11.25) ; Number of LABs  (Total = 8) ;
++-----------------------------------------+-----------------------------+
+; 0                                       ; 0                           ;
+; 1                                       ; 0                           ;
+; 2                                       ; 1                           ;
+; 3                                       ; 0                           ;
+; 4                                       ; 0                           ;
+; 5                                       ; 1                           ;
+; 6                                       ; 0                           ;
+; 7                                       ; 0                           ;
+; 8                                       ; 0                           ;
+; 9                                       ; 1                           ;
+; 10                                      ; 0                           ;
+; 11                                      ; 0                           ;
+; 12                                      ; 0                           ;
+; 13                                      ; 1                           ;
+; 14                                      ; 0                           ;
+; 15                                      ; 3                           ;
+; 16                                      ; 1                           ;
++-----------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------+
+; Parallel Expander                                       ;
++--------------------------+------------------------------+
+; Parallel Expander Length ; Number of Parallel Expanders ;
++--------------------------+------------------------------+
+; 0                        ; 0                            ;
+; 1                        ; 2                            ;
++--------------------------+------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 7.38) ; Number of LABs  (Total = 7) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 1                           ;
+; 1                                               ; 0                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 1                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 1                           ;
+; 6                                               ; 1                           ;
+; 7                                               ; 1                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 0                           ;
+; 11                                              ; 1                           ;
+; 12                                              ; 0                           ;
+; 13                                              ; 1                           ;
+; 14                                              ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
++-----+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                                                                            ; Output                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++-----+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC9        ; n_t_39x~10, sc_to_data~6sexpand0, sc_to_data~6sexpand1, sc_to_data~6sexpand2, sc_to_data~6sexpand3                                                                               ; data11                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  A  ; LC1        ; n_t_40x~10, n_t_40x_m~10, n_t_39x~10, incr_sc, always43~6sexp, sc_load_low~18, comb~42, always41~2sexp2, n0_to_sc~6                                                              ; n_t_40x~10, n_t_40x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  A  ; LC2        ; n_t_42x~10, n_t_42x_m~10, n_t_19x~10, n_t_40x~10, incr_sc, n_t_39x~10, always45~3sexpand0, sc_load_low~18, comb~37, always45~4sexp2, n0_to_sc~6                                  ; n_t_42x~10, n_t_42x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  A  ; LC12       ; n_t_42x_m~10, n_t_42x~10, always45~3sexpand0, n_t_19x~10, n_t_40x~10, incr_sc, n_t_39x~10, sc_load_low~18, comb~37, always45~4sexp2, n0_to_sc~6                                  ; last_step_l~9, sc_0_low~8, data8~5, data8~7, div_12_l~6, n_t_42x~10, n_t_42x_m~10, n_t_46x~1sexpand0, n_t_38x~10, n_t_38x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  A  ; LC14       ; n_t_19x~10, n_t_19x_m~10, n_t_40x~10, always43~4sexpand0, sc_load_low~18, comb~27, n_t_39x~10, incr_sc, always43~5sexp2, n0_to_sc~6                                              ; n_t_19x~10, n_t_19x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  A  ; LC15       ; n_t_19x_m~10, n_t_19x~10, always43~4sexpand0, n_t_40x~10, sc_load_low~18, comb~27, n_t_39x~10, incr_sc, always43~5sexp2, n0_to_sc~6                                              ; last_step_l~9, sc_0_low~8, data9~5, data9~7, n_t_19x~10, n_t_19x_m~10, n_t_46x~1sexpand0, n_t_38x~10, n_t_38x_m~10, always45~3sexpand0, n_t_42x~10, n_t_42x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC13       ; n_t_39x~10, incr_sc, n_t_39x_m~10, sc_load_low~18, comb~22, always39~2sexp2, n0_to_sc~6                                                                                          ; n_t_39x~10, n_t_39x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  A  ; LC7        ; n_t_39x_m~10, incr_sc, n_t_39x~10, sc_load_low~18, comb~22, always39~2sexp2, n0_to_sc~6                                                                                          ; last_step_l~9, sc_0_low~8, data11~5, data11~7, div_12_l~6, n_t_39x~10, n_t_39x_m~10, n_t_46x~1sexpand0, n_t_38x~10, n_t_38x_m~10, always45~3sexpand0, n_t_42x~10, n_t_42x_m~10, always43~6sexp, n_t_40x~10, n_t_40x_m~10, always43~4sexpand0, n_t_19x~10, n_t_19x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  A  ; LC8        ; n_t_40x~10, sc_to_data~6sexpand0, sc_to_data~6sexpand1, sc_to_data~6sexpand2, sc_to_data~6sexpand3                                                                               ; data10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  A  ; LC5        ; n_t_42x~10, n_t_14x~9, n_t_11x~9, n_t_18x~9, n_t_17x~9, ts3, n_t_21x~6, sc_to_data~0, sc_to_data~15                                                                              ; data8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  A  ; LC6        ; n_t_19x~10, n_t_14x~9, n_t_11x~9, n_t_18x~9, n_t_17x~9, ts3, n_t_21x~6, sc_to_data~0, sc_to_data~15                                                                              ; data9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  A  ; LC4        ; n_t_26x_m~9, tp3, tp2_d, n_t_26x~9                                                                                                                                               ; c0~4, c0~6, sc_load_low~18, n_t_26x~9, sc_load_low~19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  A  ; LC3        ; n_t_40x_m~10, n_t_40x~10, always43~6sexp, n_t_39x~10, incr_sc, sc_load_low~18, comb~42, always41~2sexp2, n0_to_sc~6                                                              ; last_step_l~9, sc_0_low~8, data10~5, data10~7, div_12_l~6, n_t_40x~10, n_t_40x_m~10, always43~4sexpand0, n_t_19x~10, n_t_19x_m~10, n_t_46x~1sexpand0, n_t_38x~10, n_t_38x_m~10, always45~3sexpand0, n_t_42x~10, n_t_42x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  A  ; LC10       ; data10, rom_21_l~10, md10                                                                                                                                                        ; n_t_40x~10, n_t_40x_m~10, always41~2sexp2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  A  ; LC16       ; rom_21_l~10, tp3, tp2_d, n_t_26x_m~9                                                                                                                                             ; n_t_26x~9, n_t_26x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  B  ; LC28       ; data7, rom_21_l~10, md7                                                                                                                                                          ; n_t_38x~10, n_t_38x_m~10, always31~2sexp2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  B  ; LC22       ; data9, rom_21_l~10, md9                                                                                                                                                          ; n_t_19x~10, n_t_19x_m~10, always43~5sexp2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  B  ; LC18       ; n_t_8x_m~9, n_t_8x~9, tp2, fetch, ld_eir~6, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                               ; rom_13_l~13, n_t_21x~6, rom_15_l~15, n_t_8x~9, modea_m~6, rom_13_l~21, fe_set~17sexp1bal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  B  ; LC17       ; n_t_3x_m~9, n_t_3x~9, tp2, fetch, ld_eir~6, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                               ; rom_13_l~13, n_t_21x~6, rom_15_l~15, n_t_3x~9, modea_m~6, rom_13_l~21, fe_set~17sexp1bal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  B  ; LC19       ; n_t_4x_m~9, n_t_4x~9, tp2, fetch, ld_eir~6, n0_to_eir~9, n0_to_eir~10                                                                                                            ; adlk_dis_low~6, rom_22_l~12, rom_13_l~19, n_t_21x~6, dad_or_dst~12, rom_15_l~15, dad_or_dst~18, n_t_27x~0, n_t_4x~9, e11_1011x~8sexpand3, rom_11_l~9sexpand2, adlk_dis_low~9sexpand0bal, adlk_dis_low~14sexpand3bal, fe_set~17sexp1bal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  B  ; LC27       ; data8, rom_21_l~10, md8                                                                                                                                                          ; n_t_42x~10, n_t_42x_m~10, always45~4sexp2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  B  ; LC20       ; n_t_2x_m~9, n_t_2x~9, tp2, fetch, ld_eir~6, n0_to_eir~9, n0_to_eir~10                                                                                                            ; adlk_dis_low~6, rom_22_l~12, rom_13_l~19, n_t_21x~6, dad_or_dst~12, rom_15_l~15, dad_or_dst~18, n_t_27x~0, n_t_2x~9, e11_1011x~8sexpand1, rom_11_l~9sexpand2, adlk_dis_low~9sexpand0bal, adlk_dis_low~14sexpand3bal, fe_set~17sexp1bal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  B  ; LC21       ; n_t_1x_m~9, n_t_1x~9, tp2, fetch, ld_eir~6, n0_to_eir~9, n0_to_eir~10                                                                                                            ; adlk_dis_low~6, rom_22_l~12, rom_13_l~19, n_t_21x~6, dad_or_dst~12, rom_15_l~15, dad_or_dst~18, n_t_27x~0, n_t_1x~9, e11_1011x~8sexpand2, rom_11_l~9sexpand2, adlk_dis_low~9sexpand0bal, adlk_dis_low~14sexpand3bal, fe_set~17sexp1bal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  B  ; LC29       ; md5, n_t_8x_m~9, ld_eir~6, tp2, fetch, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                                    ; n_t_8x~9, n_t_8x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  B  ; LC24       ; md0, n_t_1x_m~9, ld_eir~6, tp2, fetch, n0_to_eir~9, n0_to_eir~10                                                                                                                 ; n_t_1x~9, n_t_1x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  B  ; LC25       ; md1, n_t_2x_m~9, ld_eir~6, tp2, fetch, n0_to_eir~9, n0_to_eir~10                                                                                                                 ; n_t_2x~9, n_t_2x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  B  ; LC26       ; md2, n_t_4x_m~9, ld_eir~6, tp2, fetch, n0_to_eir~9, n0_to_eir~10                                                                                                                 ; n_t_4x~9, n_t_4x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  B  ; LC30       ; md4, n_t_3x_m~9, ld_eir~6, tp2, fetch, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                                    ; n_t_3x~9, n_t_3x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  B  ; LC31       ; md7, n_t_10x_m~9, ld_eir~6, tp2, fetch, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                                   ; n_t_10x~9, n_t_10x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  B  ; LC23       ; n_t_10x_m~9, n_t_10x~9, tp2, fetch, ld_eir~6, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                             ; rom_13_l~13, n_t_21x~6, rom_15_l~15, n_t_10x~9, modea_m~6, rom_13_l~21, fe_set~17sexp1bal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  C  ; LC41       ; n_t_26x~9, modea~9                                                                                                                                                               ; c0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+;  C  ; LC43       ; n_t_26x~9, modea~9                                                                                                                                                               ; c0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+;  C  ; LC35       ; n_t_38x~10, sc_to_data~16, sc_to_data~17, sc_to_data~18, sc_to_data~20                                                                                                           ; data7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  C  ; LC37       ; n_t_40x~10, sc_to_data~16, sc_to_data~17, sc_to_data~18, sc_to_data~20                                                                                                           ; data10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  C  ; LC38       ; n_t_38x~10, n_t_14x~9, n_t_11x~9, n_t_18x~9, n_t_17x~9, ts3, n_t_21x~6, sc_to_data~19, sc_to_data~21                                                                             ; data7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  D  ; LC49       ; adlk_dis_low~9sexpand0bal, adlk_dis_low~14sexpand3bal                                                                                                                            ; adlk_dis_low                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  D  ; LC52       ; data11, rom_21_l~10, md11                                                                                                                                                        ; n_t_39x~10, n_t_39x_m~10, always39~2sexp2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  E  ; LC74       ; n_t_17x~9, n_t_11x~9, modea~9, n_t_14x~9, tp3, n_t_18x~9, rom_22_l~12                                                                                                            ; n_t_39x~10, n_t_39x_m~10, n_t_19x~10, n_t_19x_m~10, n_t_38x~10, n_t_38x_m~10, n_t_42x~10, n_t_42x_m~10, n_t_40x~10, n_t_40x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  E  ; LC69       ; modea~9, n_t_11x~9, n_t_18x~9, n_t_14x~9, n_t_17x~9, rom_22_l~12                                                                                                                 ; fd_set                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  E  ; LC67       ; n_t_18x~9, ex1~9, e, modea~9, n_t_17x~9, n_t_14x~9, n_t_11x~9, fe_set~17sexp1bal, sc_to_data~1                                                                                   ; fe_set                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  E  ; LC73       ; n_t_17x_m~9, n_t_17x~9, tp2, fetch, ld_eir~5, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                             ; fd_set~7, rom_22_l~12, fe_set~23, next_loc~10, rom_13_l~12, rom_13_l~19, n_t_21x~6, rom_15_l~15, rom_17_l~4, rom_22_l~19, rom_24_l~12, eir2, rom_12_l~19, rom_14_l~11, n_t_17x~9, sc_load_low~18, n0_to_sc~6, modea_m~6, rom_21_l~10, rom_13_l~21, sc_load_low~19, e11_1011x~8sexpand0, e11_1011x~8sexpand1, e11_1011x~8sexpand2, e11_1011x~8sexpand3, e11_1011x~8sexpand4, rom_11_l~9sexpand0, rom_11_l~9sexpand1, rom_11_l~9sexpand2, sc_to_data~6sexpand0, sc_to_data~6sexpand1, sc_to_data~6sexpand2, data7~5, data8~5, data9~5, rom_15_l~19, sc_to_data~6sexpand3, adlk_dis_low~9sexpand0bal, adlk_dis_low~14sexpand3bal, sc_to_data~16, sc_to_data~17, sc_to_data~18, sc_to_data~20, sc_to_data~22, sc_to_data~23, sc_to_data~24, sc_to_data~26, sc_to_data~28, sc_to_data~29, sc_to_data~30, sc_to_data~32                                  ;
+;  E  ; LC80       ; n_t_17x~9, n_t_18x~9, n_t_14x~9, n_t_11x~9, modea~9, next_loc~6                                                                                                                  ; next_loc                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  E  ; LC77       ; n_t_18x_m~9, n_t_18x~9, tp2, fetch, ld_eir~5, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                             ; fd_set~7, rom_22_l~12, fe_set~23, next_loc~10, rom_13_l~12, rom_13_l~19, n_t_21x~6, rom_15_l~19, rom_15_l~15, rom_17_l~4, rom_22_l~19, rom_24_l~12, eir3, rom_12_l~14, rom_12_l~19, rom_14_l~11, n_t_18x~9, sc_load_low~18, n0_to_sc~6, modea_m~6, rom_21_l~10, rom_13_l~21, e11_1011x~8sexpand0, e11_1011x~8sexpand1, e11_1011x~8sexpand2, e11_1011x~8sexpand3, e11_1011x~8sexpand4, rom_11_l~9sexpand0, rom_11_l~9sexpand1, rom_11_l~9sexpand2, sc_to_data~6sexpand0, sc_to_data~6sexpand1, sc_to_data~6sexpand2, sc_to_data~6sexpand3, data7~5, data8~5, data9~5, e19_1x011~4sexp, adlk_dis_low~9sexpand0bal, adlk_dis_low~14sexpand3bal, fe_set~17sexp1bal, sc_to_data~16, sc_to_data~17, sc_to_data~18, sc_to_data~20, sc_to_data~22, sc_to_data~23, sc_to_data~24, sc_to_data~26, sc_to_data~28, sc_to_data~29, sc_to_data~30, sc_to_data~32 ;
+;  E  ; LC72       ; n_t_42x~10, sc_to_data~28, sc_to_data~29, sc_to_data~30, sc_to_data~32                                                                                                           ; data8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  E  ; LC75       ; n_t_19x~10, sc_to_data~28, sc_to_data~29, sc_to_data~30, sc_to_data~32                                                                                                           ; data9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  E  ; LC71       ; n_t_38x_m~10, n_t_38x~10, n_t_19x~10, n_t_40x~10, n_t_39x~10, n_t_42x~10, n_t_46x~1sexpand0, sc_load_low~18, comb~32, always31~2sexp2, n0_to_sc~6                                ; last_step_l~9, sc_0_low~8, data7~5, data7~7, n_t_38x~10, n_t_38x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  E  ; LC68       ; md9, n_t_17x_m~9, ld_eir~5, tp2, fetch, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                                   ; n_t_17x~9, n_t_17x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  E  ; LC76       ; md10, n_t_18x_m~9, ld_eir~5, tp2, fetch, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                                  ; n_t_18x~9, n_t_18x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  E  ; LC70       ; n_t_42x~10, n_t_19x~10, n_t_39x~10, n_t_38x~10, n_t_40x~10                                                                                                                       ; sc_0_low                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  E  ; LC79       ; n_t_38x~10, n_t_38x_m~10, n_t_46x~1sexpand0, n_t_19x~10, n_t_40x~10, n_t_39x~10, n_t_42x~10, sc_load_low~18, comb~32, always31~2sexp2, n0_to_sc~6                                ; n_t_38x~10, n_t_38x_m~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  F  ; LC84       ; n_t_18x~9, n_t_5x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9, rom_22_l~7, rom_22_l~8, n_t_11x~9, n_t_17x~9                                                                        ; fd_set~7, next_loc~6, rom_22_l~19, n0_to_sc~6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  F  ; LC91       ; md11, n_t_7x_m~9, ld_eir~0sexpand0, tp2, fetch, n0_to_eir~3sexpand0, n0_to_eir~3sexpand1                                                                                         ; n_t_7x~9, n_t_7x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  F  ; LC83       ; n_t_42x~10, n_t_40x~10, n_t_39x~10                                                                                                                                               ; div_12_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  F  ; LC88       ; n_t_5x_m~9, n_t_5x~9, tp2, fetch, ld_eir~0sexpand0, n0_to_eir~3sexpand0, n0_to_eir~3sexpand1                                                                                     ; adlk_dis_low~6, rom_22_l~12, rom_13_l~19, n_t_21x~6, dad_or_dst~12, rom_15_l~15, dad_or_dst~18, n_t_27x~0, n_t_5x~9, e11_1011x~8sexpand0, rom_11_l~9sexpand2, adlk_dis_low~9sexpand0bal, adlk_dis_low~14sexpand3bal, fe_set~17sexp1bal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  F  ; LC82       ; n_t_5x~9, modea~9, n_t_14x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9                                                                                                             ; rom_15_l~19, rom_17_l~4, dad_or_dst~19, rom_12_l~13, rom_12_l~19, rom_14_l~11, sc_load_low~18, sc_load_low~19, n_t_53x~0sexpand1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  F  ; LC94       ; n_t_5x~9, modea~9, n_t_14x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9                                                                                                             ; dad_or_dst                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  F  ; LC85       ; n_t_21x~6, modea~9, n_t_14x~9, n_t_11x~9, n_t_17x~9, n_t_18x~9                                                                                                                   ; rom_24_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  F  ; LC93       ; n_t_7x_m~9, n_t_7x~9, tp2, fetch, ld_eir~0sexpand0, n0_to_eir~3sexpand0, n0_to_eir~3sexpand1                                                                                     ; adlk_dis_low~6, rom_22_l~12, rom_13_l~19, n_t_21x~6, dad_or_dst~12, rom_15_l~15, dad_or_dst~18, n_t_27x~0, n_t_7x~9, e11_1011x~8sexpand4, rom_11_l~9sexpand2, adlk_dis_low~9sexpand0bal, adlk_dis_low~14sexpand3bal, fe_set~17sexp1bal                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  F  ; LC89       ; n_t_18x~9, n_t_11x~9, n_t_17x~9, modea~9, n_t_14x~9, rom_22_l~12                                                                                                                 ; rom_22_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  F  ; LC81       ; n_t_11x_m~9, n_t_11x~9, tp2, fetch, ld_eir~0sexpand0, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                     ; fd_set~7, rom_22_l~12, fe_set~23, next_loc~10, rom_13_l~19, n_t_21x~6, rom_15_l~15, rom_17_l~4, rom_22_l~19, rom_24_l~12, sc_to_data~0, rom_12_l~13, rom_12_l~14, rom_12_l~19, rom_14_l~11, n_t_11x~9, sc_load_low~18, n0_to_sc~6, modea_m~6, rom_21_l~10, rom_13_l~21, sc_load_low~19, e11_1011x~8sexpand0, e11_1011x~8sexpand1, e11_1011x~8sexpand2, e11_1011x~8sexpand3, e11_1011x~8sexpand4, sc_to_data~6sexpand0, data7~5, data8~5, data9~5, e19_1x011~4sexp, rom_15_l~19, sc_to_data~6sexpand3, adlk_dis_low~9sexpand0bal, adlk_dis_low~14sexpand3bal, fe_set~17sexp1bal, sc_to_data~16, sc_to_data~19, sc_to_data~20, sc_to_data~22, sc_to_data~25, sc_to_data~26, sc_to_data~28, sc_to_data~31, sc_to_data~32                                                                                                                              ;
+;  F  ; LC92       ; n_t_14x_m~9, n_t_14x~9, tp2, fetch, ld_eir~0sexpand0, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                     ; fd_set~7, rom_22_l~7, rom_22_l~8, fe_set~23, next_loc~10, rom_13_l~11, rom_13_l~19, n_t_21x~6, dad_or_dst~12, rom_15_l~15, rom_22_l~19, rom_24_l~12, dad_or_dst~18, sc_to_data~1, n_t_14x~9, n0_to_sc~6, modea_m~6, rom_21_l~10, rom_13_l~21, e11_1011x~8sexpand0, e11_1011x~8sexpand1, e11_1011x~8sexpand2, e11_1011x~8sexpand3, e11_1011x~8sexpand4, rom_11_l~9sexpand1, sc_to_data~6sexpand0, sc_to_data~6sexpand1, sc_to_data~6sexpand2, data7~5, data8~5, data9~5, e19_1x011~4sexp, adlk_dis_low~9sexpand0bal, fe_set~17sexp1bal, sc_to_data~15, sc_to_data~16, sc_to_data~17, sc_to_data~18, sc_to_data~21, sc_to_data~22, sc_to_data~23, sc_to_data~24, sc_to_data~27, sc_to_data~28, sc_to_data~29, sc_to_data~30                                                                                                                          ;
+;  F  ; LC95       ; n_t_5x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9, tp2, fetch                                                                                                                     ; modea~9, modea_m~17                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  F  ; LC90       ; md3, n_t_5x_m~9, ld_eir~0sexpand0, tp2, fetch, n0_to_eir~3sexpand0, n0_to_eir~3sexpand1                                                                                          ; n_t_5x~9, n_t_5x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  F  ; LC86       ; rom_13_l~19                                                                                                                                                                      ; rom_13_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  F  ; LC87       ; md6, n_t_14x_m~9, ld_eir~0sexpand0, tp2, fetch, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                           ; n_t_14x~9, n_t_14x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  F  ; LC96       ; md8, n_t_11x_m~9, ld_eir~0sexpand0, tp2, fetch, int_in_prog, n_t_51x~0sexpand0bal, tp1                                                                                           ; n_t_11x~9, n_t_11x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  G  ; LC109      ; n_t_42x~10, n_t_40x~10, n_t_39x~10, n_t_19x~10, n_t_38x~10, rom_12_l, rom_14_l                                                                                                   ; last_step_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  G  ; LC104      ; e11_1011x~8sexpand0, e11_1011x~8sexpand1, e11_1011x~8sexpand2, e11_1011x~8sexpand3, e11_1011x~8sexpand4, rom_11_l~9sexpand0, rom_11_l~9sexpand1, rom_11_l~9sexpand2              ; rom_11_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  G  ; LC103      ; n_t_14x~9, n_t_18x~9, n_t_3x~9, n_t_8x~9, n_t_11x~9, n_t_10x~9, n_t_17x~9, n_t_5x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9, fetch                                               ; rom_15_l~19, rom_17_l~4, rom_24_l~12, rom_12_l~19, rom_14_l~11, sc_load_low~18, rom_21_l~10, sc_to_data~6sexpand0, data7~5, data8~5, data9~5, sc_to_data~16, sc_to_data~22, sc_to_data~28                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  G  ; LC106      ; n_t_10x~9, n_t_18x~9, n_t_3x~9, n_t_8x~9, n_t_11x~9, n_t_17x~9, modea~9, n_t_14x~9, n_t_5x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9, adlk_dis_low~6, fetch, rom_13_l~11         ; rom_15_l~19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  G  ; LC101      ; n_t_21x~6, dad_or_dst~12, n_t_18x~9, rom_15_l~15, n_t_11x~9, n_t_17x~9                                                                                                           ; rom_15_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  G  ; LC100      ; n_t_17x~9, n_t_10x~9, n_t_14x~9, n_t_18x~9, n_t_3x~9, n_t_8x~9, n_t_11x~9, modea~9                                                                                               ; modea_m~17                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  G  ; LC102      ; dad_or_dst~12                                                                                                                                                                    ; dad_or_dst_low                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  G  ; LC98       ; rom_13_l~21, adlk_dis_low~6, fetch, n_t_17x~9, n_t_11x~9, n_t_18x~9, modea~9, n_t_14x~9, rom_13_l~11, rom_13_l~12, n_t_5x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9, rom_13_l~13 ; rom_13_l~24                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  G  ; LC110      ; n_t_17x~9, n_t_21x~6, dad_or_dst~12, n_t_18x~9, n_t_11x~9, rom_12_l~13, rom_12_l~14                                                                                              ; rom_12_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  G  ; LC99       ; n_t_21x~6, modea~9, n_t_18x~9, n_t_14x~9, n_t_17x~9, n_t_11x~9                                                                                                                   ; comb~22, comb~27, comb~32, comb~37, comb~42, n_t_26x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  G  ; LC107      ; n_t_21x~6, n_t_18x~9, n_t_11x~9, n_t_17x~9, dad_or_dst~12                                                                                                                        ; rom_17_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  G  ; LC111      ; adlk_dis_low~6, n_t_18x~9, modea~9, n_t_14x~9, n_t_17x~9, n_t_11x~9, fetch, n_t_5x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9                                                     ; adlk_dis_low~15                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  G  ; LC105      ; n_t_5x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9, n_t_17x~9, n_t_11x~9, n_t_18x~9                                                                                                ; adlk_dis_low~15                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  G  ; LC112      ; n_t_10x~9, n_t_18x~9, n_t_3x~9, n_t_8x~9, n_t_11x~9, n_t_14x~9, n_t_5x~9, n_t_2x~9, n_t_1x~9, n_t_4x~9, n_t_7x~9, modea~9, fetch                                                 ; fe_set~23                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  G  ; LC97       ; fetch, n_t_17x~9, n_t_11x~9, n_t_18x~9, modea~9, n_t_14x~9, n_t_10x~9, n_t_3x~9, n_t_8x~9                                                                                        ; rom_13_l~19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  H  ; LC117      ; sc_load_low~19, n_t_21x~6, tp2_d, n_t_26x~9, n_t_18x~9, dad_or_dst~12, n_t_11x~9, n_t_17x~9                                                                                      ; n_t_39x~10, n_t_39x_m~10, n_t_19x~10, n_t_19x_m~10, n_t_38x~10, n_t_38x_m~10, n_t_42x~10, n_t_42x_m~10, n_t_40x~10, n_t_40x_m~10, always39~2sexp2, always43~5sexp2, always31~2sexp2, always45~4sexp2, always41~2sexp2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  H  ; LC113      ; n_t_11x~9, dad_or_dst~12, n_t_17x~9, n_t_18x~9, n_t_21x~6                                                                                                                        ; rom_14_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+;  H  ; LC120      ; n_t_39x~10, sc_to_data~22, sc_to_data~23, sc_to_data~24, sc_to_data~26                                                                                                           ; data11                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  H  ; LC121      ; modea_m~6, n_t_27x~0, modea_m~17, init                                                                                                                                           ; modea~9, modea_m~17                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  H  ; LC118      ; ex1_m~9, fetch, ex1~9, n_t_51x~0sexpand0bal, ma_ms_lc, tp4                                                                                                                       ; fe_set~23, next_loc~6, ex1~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  H  ; LC122      ; fetch, ex1_m~9, ma_ms_lc, tp4, n_t_51x~0sexpand0bal, n_t_53x~0sexpand1                                                                                                           ; ex1~9, ex1_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  H  ; LC115      ; modea_m~17, n_t_27x~0, modea~9, init                                                                                                                                             ; c0~4, c0~6, fd_set~7, rom_22_l~8, fe_set~23, next_loc~10, rom_13_l~11, rom_13_l~19, dad_or_dst~12, rom_15_l~15, rom_22_l~19, rom_24_l~12, dad_or_dst~18, sc_to_data~0, sc_to_data~1, modeb, modea~9, n0_to_sc~6, modea_m~6, rom_21_l~10, rom_13_l~21, e11_1011x~8sexpand0, e11_1011x~8sexpand1, e11_1011x~8sexpand2, e11_1011x~8sexpand3, e11_1011x~8sexpand4, rom_11_l~9sexpand0, e19_1x011~4sexp, adlk_dis_low~9sexpand0bal, fe_set~17sexp1bal, sc_to_data~15, sc_to_data~19, sc_to_data~21, sc_to_data~25, sc_to_data~27, sc_to_data~31                                                                                                                                                                                                                                                                                                         ;
+;  H  ; LC116      ; dad_or_dst~12, tp2_d, n_t_26x~9, n_t_17x~9, n_t_11x~9                                                                                                                            ; sc_load_low~18                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  H  ; LC114      ; ma_ms_lc, tp4                                                                                                                                                                    ; ex1~9, ex1_m~9, n0_to_eir~3sexpand0, n_t_14x~9, n_t_11x~9, n_t_18x~9, n_t_17x~9, n_t_10x~9, n_t_3x~9, n_t_8x~9, n_t_14x_m~9, n_t_11x_m~9, n_t_18x_m~9, n_t_17x_m~9, n_t_10x_m~9, n_t_3x_m~9, n_t_8x_m~9, n0_to_eir~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
++-----+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (119006): Selected device EPM7128SQC100-15 for design "M8340"
+Warning (163076): Macrocell buffer inserted after node "rom_13_l~19"
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4697 megabytes
+    Info: Processing ended: Wed Oct 16 17:14:21 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
