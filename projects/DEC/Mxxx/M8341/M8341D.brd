@@ -6647,7 +6647,7 @@ design rules under a new name.</description>
 <wire x1="254" y1="90.17" x2="254" y2="76.2" width="0.8128" layer="16"/>
 <wire x1="254" y1="76.2" x2="257.81" y2="73.025" width="0.8128" layer="16"/>
 </signal>
-<signal name="N$10">
+<signal name="TP">
 <contactref element="E2" pad="3"/>
 <contactref element="E2" pad="10"/>
 <contactref element="E1" pad="8"/>

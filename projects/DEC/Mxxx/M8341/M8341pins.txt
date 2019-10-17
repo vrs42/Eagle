@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from M8341D.sch at 9/29/2019 7:24:59 PM
+Exported from M8341D.sch at 10/16/2019 5:55:28 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -118,7 +118,7 @@ E1       1        CLR        in       +3VC
          5        Q          out      N$23
          6        !Q         out      N$62
          7        GND        pwr      GND
-         8        !Q         out      N$10
+         8        !Q         out      TP
          9        Q          out               *** unconnected ***
          10       PRE        in       +3VC
          11       CLK        in       !CLOCK
@@ -128,14 +128,14 @@ E1       1        CLR        in       +3VC
 
 E2       1        I0         in       N$27
          2        I1         in       N$18
-         3        I0         in       N$10
+         3        I0         in       TP
          4        I1         in       EAE_ON
          5        I2         in       N$8
          6        O          out      N$76
          7        GND        pwr      GND
          8        O          out      N$63
          9        I0         in       EAE_ON
-         10       I1         in       N$10
+         10       I1         in       TP
          11       I2         in       ROM_12
          12       O          out      N$19
          13       I2         in       AC2-MQ11_0
@@ -900,7 +900,7 @@ R19      1        1          pas      N$47
 R20      1        1          pas      N$46
          2        2          pas      VCC
 
-U$2      AA1      1          io       N$10
+U$2      AA1      1          io       TP
          AA2      1          io       VCC
          AB1      1          io                ***   unused    ***
          AB2      1          io                ***   unused    ***

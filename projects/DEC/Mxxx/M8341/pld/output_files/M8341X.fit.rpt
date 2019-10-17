@@ -1,0 +1,700 @@
+Fitter report for M8341X
+Mon Oct 14 00:46:21 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. Bidir Pins
+ 10. All Package Pins
+ 11. I/O Standard
+ 12. Dedicated Inputs I/O
+ 13. Output Pin Default Load For Reported TCO
+ 14. Fitter Resource Utilization by Entity
+ 15. Control Signals
+ 16. Global & Other Fast Signals
+ 17. Non-Global High Fan-Out Signals
+ 18. Other Routing Usage Summary
+ 19. LAB External Interconnect
+ 20. LAB Macrocells
+ 21. Parallel Expander
+ 22. Shareable Expander
+ 23. Logic Cell Interconnection
+ 24. Fitter Device Options
+ 25. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Fitter Summary                                                              ;
++---------------------------+-------------------------------------------------+
+; Fitter Status             ; Successful - Mon Oct 14 00:46:21 2019           ;
+; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name             ; M8341X                                          ;
+; Top-level Entity Name     ; M8341                                           ;
+; Family                    ; MAX7000S                                        ;
+; Device                    ; EPM7128STI100-10                                ;
+; Timing Models             ; Final                                           ;
+; Total macrocells          ; 61 / 128 ( 48 % )                               ;
+; Total pins                ; 75 / 84 ( 89 % )                                ;
++---------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                               ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM7128STI100-10 ;               ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Optimize Multi-Corner Timing                                               ; Off              ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off              ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off              ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; Normal           ; Normal        ;
+; Fitter Initial Placement Seed                                              ; 1                ; 1             ;
+; Slow Slew Rate                                                             ; Off              ; Off           ;
+; Fitter Effort                                                              ; Auto Fit         ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off              ; Off           ;
++----------------------------------------------------------------------------+------------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/vrs/Documents/Eagle/projects/DEC/Mxxx/M8341/pld/output_files/M8341X.pin.
+
+
++--------------------------------------------------+
+; Fitter Resource Usage Summary                    ;
++------------------------------+-------------------+
+; Resource                     ; Usage             ;
++------------------------------+-------------------+
+; Logic cells                  ; 61 / 128 ( 48 % ) ;
+; Registers                    ; 4 / 128 ( 3 % )   ;
+; Number of pterms used        ; 191               ;
+; I/O pins                     ; 75 / 84 ( 89 % )  ;
+;     -- Clock pins            ; 2 / 2 ( 100 % )   ;
+;     -- Dedicated input pins  ; 1 / 2 ( 50 % )    ;
+;                              ;                   ;
+; Global signals               ; 1                 ;
+; Shareable expanders          ; 13 / 128 ( 10 % ) ;
+; Parallel expanders           ; 7 / 120 ( 6 % )   ;
+; Cells using turbo bit        ; 61 / 128 ( 48 % ) ;
+; Maximum fan-out              ; 26                ;
+; Highest non-global fan-out   ; 26                ;
+; Total fan-out                ; 411               ;
+; Average fan-out              ; 2.76              ;
++------------------------------+-------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                           ;
++----------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; Name           ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; I/O Standard ; Location assigned by ;
++----------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; ac0            ; 64    ; --       ; 7   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ac0_ne_ac1     ; 48    ; --       ; 5   ; 5                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ac1            ; 41    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ac2_8_0        ; 72    ; --       ; 7   ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ac4_11_0       ; 24    ; --       ; 3   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ac_0           ; 99    ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ad0_low        ; 46    ; --       ; 5   ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; carry_out_low  ; 16    ; --       ; 3   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; clock          ; 87    ; --       ; --  ; 6                     ; 0                  ; yes    ; no             ; TTL          ; Fitter               ;
+; dad_or_dst     ; 69    ; --       ; 7   ; 5                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; dad_or_dst_low ; 44    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; div_12_l       ; 28    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; e              ; 2     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; eir2           ; 58    ; --       ; 6   ; 9                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; eir3           ; 60    ; --       ; 6   ; 11                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; fetch          ; 68    ; --       ; 7   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; gtf_or_ind     ; 79    ; --       ; 8   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; init           ; 29    ; --       ; 4   ; 4                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; last_step_l    ; 17    ; --       ; 3   ; 8                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; link           ; 80    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; modeb          ; 71    ; --       ; 7   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; mq0_low        ; 88    ; --       ; --  ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; mq10_low       ; 37    ; --       ; 4   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; mq11_low       ; 56    ; --       ; 6   ; 5                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; mq_0           ; 45    ; --       ; 5   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; msir_disable   ; 55    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; next_loc       ; 65    ; --       ; 7   ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rom_11_l       ; 53    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rom_12_l       ; 85    ; --       ; 8   ; 26                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rom_13_l       ; 98    ; --       ; 1   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rom_14_l       ; 83    ; --       ; 8   ; 17                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rom_15_l       ; 50    ; --       ; 5   ; 21                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rom_17_l       ; 47    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rom_22_l       ; 84    ; --       ; 8   ; 9                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rom_24_l       ; 67    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rtf            ; 57    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; sc_0_low       ; 78    ; --       ; 8   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; sgt_low        ; 77    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; tp1            ; 54    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; tp2            ; 42    ; --       ; 5   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; tp3            ; 61    ; --       ; 6   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ts2            ; 76    ; --       ; 8   ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ts3            ; 27    ; --       ; 4   ; 16                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ts4            ; 90    ; --       ; --  ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
++----------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                       ;
++---------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name          ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++---------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; ac_to_bus_low ; 33    ; --       ; 4   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ad_lk_low     ; 9     ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; c0            ; 97    ; --       ; 1   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; carry_in      ; 31    ; --       ; 4   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; data_f        ; 6     ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; data_t        ; 93    ; --       ; 1   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; en0           ; 35    ; --       ; 4   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; en1           ; 96    ; --       ; 1   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; incr_sc       ; 10    ; --       ; 2   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; left_low      ; 5     ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; link_data     ; 12    ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; link_load     ; 8     ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; md_disable    ; 92    ; --       ; 1   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mq_data_low   ; 14    ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mq_load       ; 21    ; --       ; 3   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mq_to_bus_low ; 100   ; --       ; 1   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; not_last_xfer ; 94    ; --       ; 1   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; restart       ; 20    ; --       ; 3   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; right_low     ; 13    ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; shl_ena_low   ; 7     ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; skip          ; 32    ; --       ; 4   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
++---------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Bidir Pins                                                                                                                                                                                                                                                           ;
++------------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-------------------------------+---------------------+
+; Name             ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Slow Slew Rate ; Open Drain ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source          ; Output Enable Group ;
++------------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-------------------------------+---------------------+
+; ac_load_low      ; 1     ; --       ; 1   ; 2                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac_load_low~9 (inverted)      ; -                   ;
+; ac_to_mq_ena_low ; 36    ; --       ; 4   ; 6                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac_to_mq_ena_low~3 (inverted) ; -                   ;
+; data1            ; 23    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; data1~7                       ; -                   ;
+; en2              ; 22    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; sam_low~6 (inverted)          ; -                   ;
+; tp               ; 19    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                             ; -                   ;
+; tp2_d            ; 40    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                             ; -                   ;
++------------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-------------------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                        ;
++----------+------------+----------+------------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage   ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+------------------+--------+--------------+---------+-----------------+
+; 1        ; 12         ; --       ; ac_load_low      ; bidir  ; TTL          ;         ; N               ;
+; 2        ; 13         ; --       ; e                ; input  ; TTL          ;         ; N               ;
+; 3        ; 14         ; --       ; VCCIO            ; power  ;              ; 5.0V    ;                 ;
+; 4        ; 15         ; --       ; TDI              ; input  ; TTL          ;         ; N               ;
+; 5        ; 16         ; --       ; left_low         ; output ; TTL          ;         ; N               ;
+; 6        ; 17         ; --       ; data_f           ; output ; TTL          ;         ; N               ;
+; 7        ; 18         ; --       ; shl_ena_low      ; output ; TTL          ;         ; N               ;
+; 8        ; 19         ; --       ; link_load        ; output ; TTL          ;         ; N               ;
+; 9        ; 20         ; --       ; ad_lk_low        ; output ; TTL          ;         ; N               ;
+; 10       ; 21         ; --       ; incr_sc          ; output ; TTL          ;         ; N               ;
+; 11       ; 22         ; --       ; GND              ; gnd    ;              ;         ;                 ;
+; 12       ; 23         ; --       ; link_data        ; output ; TTL          ;         ; N               ;
+; 13       ; 24         ; --       ; right_low        ; output ; TTL          ;         ; N               ;
+; 14       ; 25         ; --       ; mq_data_low      ; output ; TTL          ;         ; N               ;
+; 15       ; 26         ; --       ; TMS              ; input  ; TTL          ;         ; N               ;
+; 16       ; 27         ; --       ; carry_out_low    ; input  ; TTL          ;         ; N               ;
+; 17       ; 28         ; --       ; last_step_l      ; input  ; TTL          ;         ; N               ;
+; 18       ; 29         ; --       ; VCCIO            ; power  ;              ; 5.0V    ;                 ;
+; 19       ; 30         ; --       ; tp               ; bidir  ; TTL          ;         ; N               ;
+; 20       ; 31         ; --       ; restart          ; output ; TTL          ;         ; N               ;
+; 21       ; 32         ; --       ; mq_load          ; output ; TTL          ;         ; N               ;
+; 22       ; 33         ; --       ; en2              ; bidir  ; TTL          ;         ; N               ;
+; 23       ; 34         ; --       ; data1            ; bidir  ; TTL          ;         ; N               ;
+; 24       ; 35         ; --       ; ac4_11_0         ; input  ; TTL          ;         ; N               ;
+; 25       ; 36         ; --       ; RESERVED         ;        ;              ;         ;                 ;
+; 26       ; 37         ; --       ; GND              ; gnd    ;              ;         ;                 ;
+; 27       ; 38         ; --       ; ts3              ; input  ; TTL          ;         ; N               ;
+; 28       ; 39         ; --       ; div_12_l         ; input  ; TTL          ;         ; N               ;
+; 29       ; 40         ; --       ; init             ; input  ; TTL          ;         ; N               ;
+; 30       ; 41         ; --       ; RESERVED         ;        ;              ;         ;                 ;
+; 31       ; 42         ; --       ; carry_in         ; output ; TTL          ;         ; N               ;
+; 32       ; 43         ; --       ; skip             ; output ; TTL          ;         ; N               ;
+; 33       ; 44         ; --       ; ac_to_bus_low    ; output ; TTL          ;         ; N               ;
+; 34       ; 45         ; --       ; VCCIO            ; power  ;              ; 5.0V    ;                 ;
+; 35       ; 46         ; --       ; en0              ; output ; TTL          ;         ; N               ;
+; 36       ; 47         ; --       ; ac_to_mq_ena_low ; bidir  ; TTL          ;         ; N               ;
+; 37       ; 48         ; --       ; mq10_low         ; input  ; TTL          ;         ; N               ;
+; 38       ; 49         ; --       ; GND              ; gnd    ;              ;         ;                 ;
+; 39       ; 50         ; --       ; VCCINT           ; power  ;              ; 5.0V    ;                 ;
+; 40       ; 51         ; --       ; tp2_d            ; bidir  ; TTL          ;         ; N               ;
+; 41       ; 52         ; --       ; ac1              ; input  ; TTL          ;         ; N               ;
+; 42       ; 53         ; --       ; tp2              ; input  ; TTL          ;         ; N               ;
+; 43       ; 54         ; --       ; GND              ; gnd    ;              ;         ;                 ;
+; 44       ; 55         ; --       ; dad_or_dst_low   ; input  ; TTL          ;         ; N               ;
+; 45       ; 56         ; --       ; mq_0             ; input  ; TTL          ;         ; N               ;
+; 46       ; 57         ; --       ; ad0_low          ; input  ; TTL          ;         ; N               ;
+; 47       ; 58         ; --       ; rom_17_l         ; input  ; TTL          ;         ; N               ;
+; 48       ; 59         ; --       ; ac0_ne_ac1       ; input  ; TTL          ;         ; N               ;
+; 49       ; 60         ; --       ; RESERVED         ;        ;              ;         ;                 ;
+; 50       ; 61         ; --       ; rom_15_l         ; input  ; TTL          ;         ; N               ;
+; 51       ; 62         ; --       ; VCCIO            ; power  ;              ; 5.0V    ;                 ;
+; 52       ; 63         ; --       ; RESERVED         ;        ;              ;         ;                 ;
+; 53       ; 64         ; --       ; rom_11_l         ; input  ; TTL          ;         ; N               ;
+; 54       ; 65         ; --       ; tp1              ; input  ; TTL          ;         ; N               ;
+; 55       ; 66         ; --       ; msir_disable     ; input  ; TTL          ;         ; N               ;
+; 56       ; 67         ; --       ; mq11_low         ; input  ; TTL          ;         ; N               ;
+; 57       ; 68         ; --       ; rtf              ; input  ; TTL          ;         ; N               ;
+; 58       ; 69         ; --       ; eir2             ; input  ; TTL          ;         ; N               ;
+; 59       ; 70         ; --       ; GND              ; gnd    ;              ;         ;                 ;
+; 60       ; 71         ; --       ; eir3             ; input  ; TTL          ;         ; N               ;
+; 61       ; 72         ; --       ; tp3              ; input  ; TTL          ;         ; N               ;
+; 62       ; 73         ; --       ; TCK              ; input  ; TTL          ;         ; N               ;
+; 63       ; 74         ; --       ; RESERVED         ;        ;              ;         ;                 ;
+; 64       ; 75         ; --       ; ac0              ; input  ; TTL          ;         ; N               ;
+; 65       ; 76         ; --       ; next_loc         ; input  ; TTL          ;         ; N               ;
+; 66       ; 77         ; --       ; VCCIO            ; power  ;              ; 5.0V    ;                 ;
+; 67       ; 78         ; --       ; rom_24_l         ; input  ; TTL          ;         ; N               ;
+; 68       ; 79         ; --       ; fetch            ; input  ; TTL          ;         ; N               ;
+; 69       ; 80         ; --       ; dad_or_dst       ; input  ; TTL          ;         ; N               ;
+; 70       ; 81         ; --       ; RESERVED         ;        ;              ;         ;                 ;
+; 71       ; 82         ; --       ; modeb            ; input  ; TTL          ;         ; N               ;
+; 72       ; 83         ; --       ; ac2_8_0          ; input  ; TTL          ;         ; N               ;
+; 73       ; 84         ; --       ; TDO              ; output ; TTL          ;         ; N               ;
+; 74       ; 85         ; --       ; GND              ; gnd    ;              ;         ;                 ;
+; 75       ; 86         ; --       ; RESERVED         ;        ;              ;         ;                 ;
+; 76       ; 87         ; --       ; ts2              ; input  ; TTL          ;         ; N               ;
+; 77       ; 88         ; --       ; sgt_low          ; input  ; TTL          ;         ; N               ;
+; 78       ; 89         ; --       ; sc_0_low         ; input  ; TTL          ;         ; N               ;
+; 79       ; 90         ; --       ; gtf_or_ind       ; input  ; TTL          ;         ; N               ;
+; 80       ; 91         ; --       ; link             ; input  ; TTL          ;         ; N               ;
+; 81       ; 92         ; --       ; RESERVED         ;        ;              ;         ;                 ;
+; 82       ; 93         ; --       ; VCCIO            ; power  ;              ; 5.0V    ;                 ;
+; 83       ; 94         ; --       ; rom_14_l         ; input  ; TTL          ;         ; N               ;
+; 84       ; 95         ; --       ; rom_22_l         ; input  ; TTL          ;         ; N               ;
+; 85       ; 96         ; --       ; rom_12_l         ; input  ; TTL          ;         ; N               ;
+; 86       ; 97         ; --       ; GND              ; gnd    ;              ;         ;                 ;
+; 87       ; 98         ; --       ; clock            ; input  ; TTL          ;         ; N               ;
+; 88       ; 99         ; --       ; mq0_low          ; input  ; TTL          ;         ; N               ;
+; 89       ; 0          ; --       ; GND+             ;        ;              ;         ;                 ;
+; 90       ; 1          ; --       ; ts4              ; input  ; TTL          ;         ; N               ;
+; 91       ; 2          ; --       ; VCCINT           ; power  ;              ; 5.0V    ;                 ;
+; 92       ; 3          ; --       ; md_disable       ; output ; TTL          ;         ; N               ;
+; 93       ; 4          ; --       ; data_t           ; output ; TTL          ;         ; N               ;
+; 94       ; 5          ; --       ; not_last_xfer    ; output ; TTL          ;         ; N               ;
+; 95       ; 6          ; --       ; GND              ; gnd    ;              ;         ;                 ;
+; 96       ; 7          ; --       ; en1              ; output ; TTL          ;         ; N               ;
+; 97       ; 8          ; --       ; c0               ; output ; TTL          ;         ; N               ;
+; 98       ; 9          ; --       ; rom_13_l         ; input  ; TTL          ;         ; N               ;
+; 99       ; 10         ; --       ; ac_0             ; input  ; TTL          ;         ; N               ;
+; 100      ; 11         ; --       ; mq_to_bus_low    ; output ; TTL          ;         ; N               ;
++----------+------------+----------+------------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++--------------------------------------------------------------------------------------------------+
+; I/O Standard                                                                                     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; I/O Standard ; Input Vref ; Dedicated Input Pins ; Pins in I/O Bank1 ; Pins in I/O Bank2 ; Total ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; TTL          ; -          ; 3                    ; 0                 ; 0                 ; 3     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+
+
++-----------------------------------------------------------------------+
+; Dedicated Inputs I/O                                                  ;
++---------+-------+-------+-------+--------------+------------+---------+
+; Name    ; Pin # ; Type  ; VCCIO ; I/O Standard ; Input Vref ; Current ;
++---------+-------+-------+-------+--------------+------------+---------+
+; clock   ; 87    ; Input ; --    ; TTL          ; -          ; 0 mA    ;
+; mq0_low ; 88    ; Input ; --    ; TTL          ; -          ; 0 mA    ;
+; ts4     ; 90    ; Input ; --    ; TTL          ; -          ; 0 mA    ;
++---------+-------+-------+-------+--------------+------------+---------+
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; TTL          ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++-------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                               ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |M8341                     ; 61         ; 75   ; |M8341              ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++---------------------------------------------------------------------------------------+
+; Control Signals                                                                       ;
++-------+----------+---------+-------+--------+----------------------+------------------+
+; Name  ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ;
++-------+----------+---------+-------+--------+----------------------+------------------+
+; clock ; PIN_87   ; 6       ; Clock ; yes    ; On                   ; --               ;
++-------+----------+---------+-------+--------+----------------------+------------------+
+
+
++----------------------------------------------------------------------+
+; Global & Other Fast Signals                                          ;
++-------+----------+---------+----------------------+------------------+
+; Name  ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ;
++-------+----------+---------+----------------------+------------------+
+; clock ; PIN_87   ; 6       ; On                   ; --               ;
++-------+----------+---------+----------------------+------------------+
+
+
++---------------------------------+
+; Non-Global High Fan-Out Signals ;
++--------------------+------------+
+; Name               ; Fan-Out    ;
++--------------------+------------+
+; rom_12_l           ; 26         ;
+; eae_on~9           ; 22         ;
+; rom_15_l           ; 21         ;
+; rom_14_l           ; 17         ;
+; ts3                ; 16         ;
+; n_t_22x            ; 13         ;
+; n_t_23x            ; 12         ;
+; eir3               ; 11         ;
+; rom_22_l           ; 9          ;
+; eir2               ; 9          ;
+; shift_ok~14        ; 9          ;
+; last_step_l        ; 8          ;
+; dvi~0sexp          ; 8          ;
+; ac2_8_0            ; 7          ;
+; n_t_84x~10         ; 7          ;
+; ac_to_mq_ena_low~0 ; 6          ;
+; tp3                ; 6          ;
+; mq_0               ; 6          ;
+; modeb              ; 6          ;
+; fetch              ; 6          ;
+; carry_out_low      ; 6          ;
+; ac4_11_0           ; 6          ;
+; mq11_low           ; 5          ;
+; dad_or_dst         ; 5          ;
+; ac0_ne_ac1         ; 5          ;
+; tp2_d~reg0         ; 5          ;
+; init               ; 4          ;
+; n_t_13x~9          ; 4          ;
+; tp$latch~9         ; 4          ;
+; n_t_4x~7           ; 4          ;
+; n_t_40x~24         ; 3          ;
+; dvi~4              ; 3          ;
+; ts2                ; 3          ;
+; next_loc           ; 3          ;
+; mq0_low            ; 3          ;
+; ad0_low            ; 3          ;
+; n_t_69x~9          ; 3          ;
+; n_t_43x~9          ; 3          ;
+; etp_or_tp3~0       ; 3          ;
+; ac_load_low~0      ; 2          ;
+; ts4                ; 2          ;
+; tp2                ; 2          ;
+; sc_0_low           ; 2          ;
+; rtf                ; 2          ;
+; rom_13_l           ; 2          ;
+; msir_disable       ; 2          ;
+; mq10_low           ; 2          ;
+; gtf_or_ind         ; 2          ;
+; ac0                ; 2          ;
+; etp~1sexp          ; 2          ;
+; n_t_68x~0sexpand1  ; 2          ;
+; eae_on_m~9         ; 2          ;
+; n_t_42x~9          ; 2          ;
+; n_t_13x_m~9        ; 2          ;
+; n_t_42x_m~9        ; 2          ;
+; n_t_84x_m~10       ; 2          ;
+; n_t_69x_m~9        ; 2          ;
+; n_t_60x~9          ; 2          ;
+; n_t_40x~7          ; 2          ;
+; n_t_73x~0          ; 2          ;
+; n_t_60x_m~9        ; 2          ;
+; tp_m~9             ; 2          ;
+; en2~0              ; 1          ;
+; data1~0            ; 1          ;
+; tp1                ; 1          ;
+; sgt_low            ; 1          ;
+; rom_24_l           ; 1          ;
+; rom_17_l           ; 1          ;
+; rom_11_l           ; 1          ;
+; link               ; 1          ;
+; e                  ; 1          ;
+; div_12_l           ; 1          ;
+; dad_or_dst_low     ; 1          ;
+; ac_0               ; 1          ;
+; ac1                ; 1          ;
+; n_t_13x_m~14       ; 1          ;
+; ad_lk_low~6sexp    ; 1          ;
+; n_t_15x~5sexpand0  ; 1          ;
+; n_t_43x~3sexpand0  ; 1          ;
+; shift_ok~8sexpand0 ; 1          ;
+; n_t_15x~3sexpand0  ; 1          ;
+; n_t_52x~8          ; 1          ;
+; n_t_52x~6          ; 1          ;
+; n_t_40x~18         ; 1          ;
+; n_t_74x~9          ; 1          ;
+; n_t_74x~7          ; 1          ;
+; shift_ok~15        ; 1          ;
+; shl_ena_low~4      ; 1          ;
+; link_load~8        ; 1          ;
+; dcm_or_dpic_low~2  ; 1          ;
+; left_low~6         ; 1          ;
+; ad_lk_low~11       ; 1          ;
+; n_t_52x~5          ; 1          ;
+; carry_in~11        ; 1          ;
+; link_data~6        ; 1          ;
+; n_t_3x~0           ; 1          ;
+; skip~6             ; 1          ;
+; mq_data_low~2      ; 1          ;
+; not_last_xfer~6    ; 1          ;
+; not_last_xfer~4    ; 1          ;
+; incr_sc~1          ; 1          ;
+; n_t_65x            ; 1          ;
+; en1~12             ; 1          ;
+; n_t_40x~10         ; 1          ;
+; n_t_40x~9          ; 1          ;
+; n_t_40x~8          ; 1          ;
+; n_t_74x~0          ; 1          ;
+; data_f~12          ; 1          ;
+; data_t~7           ; 1          ;
+; right_low~2        ; 1          ;
+; en0~3              ; 1          ;
+; n_t_67x~0          ; 1          ;
+; mq_to_bus_low~5    ; 1          ;
+; data_t~4           ; 1          ;
+; c0~6               ; 1          ;
+; ac_to_bus_low~2    ; 1          ;
+; sam_low~6          ; 1          ;
+; data1~7            ; 1          ;
+; data1~5            ; 1          ;
+; ac_to_mq_ena_low~3 ; 1          ;
+; ac_load_low~9      ; 1          ;
++--------------------+------------+
+
+
++--------------------------------------------------+
+; Other Routing Usage Summary                      ;
++-----------------------------+--------------------+
+; Other Routing Resource Type ; Usage              ;
++-----------------------------+--------------------+
+; Output enables              ; 3 / 6 ( 50 % )     ;
+; PIA buffers                 ; 126 / 288 ( 44 % ) ;
+; PIAs                        ; 126 / 288 ( 44 % ) ;
++-----------------------------+--------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB External Interconnect                                                   ;
++-----------------------------------------------+-----------------------------+
+; LAB External Interconnects  (Average = 15.75) ; Number of LABs  (Total = 5) ;
++-----------------------------------------------+-----------------------------+
+; 0 - 2                                         ; 3                           ;
+; 3 - 5                                         ; 1                           ;
+; 6 - 8                                         ; 0                           ;
+; 9 - 11                                        ; 0                           ;
+; 12 - 14                                       ; 0                           ;
+; 15 - 17                                       ; 0                           ;
+; 18 - 20                                       ; 0                           ;
+; 21 - 23                                       ; 0                           ;
+; 24 - 26                                       ; 0                           ;
+; 27 - 29                                       ; 2                           ;
+; 30 - 32                                       ; 1                           ;
+; 33 - 35                                       ; 1                           ;
++-----------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------+
+; LAB Macrocells                                                       ;
++----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 7.63) ; Number of LABs  (Total = 5) ;
++----------------------------------------+-----------------------------+
+; 0                                      ; 3                           ;
+; 1                                      ; 0                           ;
+; 2                                      ; 0                           ;
+; 3                                      ; 1                           ;
+; 4                                      ; 0                           ;
+; 5                                      ; 0                           ;
+; 6                                      ; 0                           ;
+; 7                                      ; 0                           ;
+; 8                                      ; 0                           ;
+; 9                                      ; 0                           ;
+; 10                                     ; 0                           ;
+; 11                                     ; 0                           ;
+; 12                                     ; 1                           ;
+; 13                                     ; 0                           ;
+; 14                                     ; 0                           ;
+; 15                                     ; 2                           ;
+; 16                                     ; 1                           ;
++----------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------+
+; Parallel Expander                                       ;
++--------------------------+------------------------------+
+; Parallel Expander Length ; Number of Parallel Expanders ;
++--------------------------+------------------------------+
+; 0                        ; 0                            ;
+; 1                        ; 3                            ;
+; 2                        ; 2                            ;
++--------------------------+------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 1.63) ; Number of LABs  (Total = 4) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 4                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 1                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 1                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                                             ;
++-----+------------+---------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                     ; Output                                                                                                                                                                                                                                                                  ;
++-----+------------+---------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC9        ; ac1, modeb, n_t_15x~3sexpand0, shift_ok~8sexpand0                                                                         ; c0                                                                                                                                                                                                                                                                      ;
+;  A  ; LC3        ; tp3, n_t_4x~7, ts3, ac_to_mq_ena_low, n_t_84x~10, carry_out_low, rom_12_l, rom_14_l, n_t_23x, n_t_22x                     ; ac_load_low                                                                                                                                                                                                                                                             ;
+;  A  ; LC6        ; modeb, rom_12_l, rom_15_l, last_step_l                                                                                    ; n_t_52x~8                                                                                                                                                                                                                                                               ;
+;  A  ; LC16       ; eir3, ts2, ac_to_mq_ena_low                                                                                               ; md_disable                                                                                                                                                                                                                                                              ;
+;  A  ; LC1        ; last_step_l, modeb, rom_12_l, rom_15_l, ac2_8_0, ac4_11_0, mq_0, dad_or_dst, fetch                                        ; shift_ok~14                                                                                                                                                                                                                                                             ;
+;  A  ; LC10       ; n_t_4x~7, tp3, n_t_84x~10, carry_out_low, dvi~4                                                                           ; n_t_84x_m~10, n_t_84x~10                                                                                                                                                                                                                                                ;
+;  A  ; LC8        ; n_t_52x~8, ac0_ne_ac1, fetch, rom_12_l, rom_15_l, eae_on~9, ts3, ac_to_mq_ena_low, last_step_l, rom_14_l, dvi~4           ; mq_load                                                                                                                                                                                                                                                                 ;
+;  A  ; LC13       ; n_t_69x~9, n_t_84x~10, carry_out_low, n_t_4x~7, rom_12_l, rom_14_l                                                        ; not_last_xfer                                                                                                                                                                                                                                                           ;
+;  A  ; LC14       ; eir3, ts2, ac_to_mq_ena_low                                                                                               ; data_t                                                                                                                                                                                                                                                                  ;
+;  A  ; LC5        ; ac_to_mq_ena_low, ts2, ts3                                                                                                ; mq_to_bus_low                                                                                                                                                                                                                                                           ;
+;  A  ; LC4        ; n_t_69x_m~9, tp2_d~reg0, n_t_69x~9, n_t_68x~0sexpand1                                                                     ; n_t_69x~9, not_last_xfer~4, not_last_xfer~6                                                                                                                                                                                                                             ;
+;  A  ; LC11       ; mq11_low, ts3, eir3, ac_to_mq_ena_low, last_step_l, rom_15_l, rom_12_l, rom_14_l, eae_on~9, dvi~4                         ; en1                                                                                                                                                                                                                                                                     ;
+;  A  ; LC2        ; shift_ok~15, ac2_8_0, ac4_11_0, mq_0, dad_or_dst, eae_on~9, rom_12_l, rom_15_l, ac0_ne_ac1, fetch                         ; right_low~2, incr_sc~1, left_low~6, link_load~8, shl_ena_low~4, n_t_43x~3sexpand0, n_t_13x~9, n_t_13x_m~9, n_t_13x_m~14                                                                                                                                                 ;
+;  A  ; LC7        ; n_t_52x~6, ac2_8_0, ac4_11_0, mq_0, dad_or_dst, fetch, eae_on~9, rom_12_l, rom_15_l, ac0_ne_ac1                           ; n_t_52x~5                                                                                                                                                                                                                                                               ;
+;  A  ; LC12       ; n_t_67x~0, tp2_d~reg0, n_t_69x_m~9, n_t_68x~0sexpand1                                                                     ; n_t_69x_m~9, n_t_69x~9                                                                                                                                                                                                                                                  ;
+;  B  ; LC28       ; rtf, tp3, rom_22_l, eir2, eir3, ts3                                                                                       ; n_t_13x_m~9, n_t_13x~9, n_t_13x_m~14                                                                                                                                                                                                                                    ;
+;  B  ; LC17       ; mq10_low, sc_0_low, carry_out_low, n_t_42x~9, ad_lk_low~6sexp, ts3, dvi~0sexp                                             ; mq_data_low                                                                                                                                                                                                                                                             ;
+;  B  ; LC21       ; ac0, rom_11_l, eae_on~9, carry_out_low, rom_13_l, dvi~0sexp                                                               ; link_data                                                                                                                                                                                                                                                               ;
+;  B  ; LC24       ; rom_14_l, rom_12_l, rom_15_l, eae_on~9, mq0_low, mq11_low, ts3, dvi~0sexp                                                 ; ad_lk_low                                                                                                                                                                                                                                                               ;
+;  B  ; LC30       ; div_12_l, last_step_l, ts3, rom_14_l, shift_ok~14, rom_15_l, rom_12_l, eae_on~9, dvi~0sexp                                ; left_low                                                                                                                                                                                                                                                                ;
+;  B  ; LC20       ; eir2, eir3, rom_15_l, rom_22_l                                                                                            ; n_t_69x_m~9                                                                                                                                                                                                                                                             ;
+;  B  ; LC26       ; eir2, eir3, rom_22_l                                                                                                      ; link_load~8                                                                                                                                                                                                                                                             ;
+;  B  ; LC19       ; shift_ok~14, n_t_40x~8                                                                                                    ; right_low                                                                                                                                                                                                                                                               ;
+;  B  ; LC25       ; rom_17_l, tp3, rom_14_l, dcm_or_dpic_low~2, last_step_l, ts3, shift_ok~14, n_t_15x~5sexpand0, dvi~0sexp, n_t_23x, n_t_22x ; link_load                                                                                                                                                                                                                                                               ;
+;  B  ; LC27       ; rom_14_l, shift_ok~14, ts3, rom_15_l, rom_12_l, eae_on~9, dvi~0sexp                                                       ; shl_ena_low                                                                                                                                                                                                                                                             ;
+;  B  ; LC29       ; mq10_low, last_step_l, ts3, mq11_low, sc_0_low, rom_22_l, eir2, dvi~0sexp                                                 ; data_f                                                                                                                                                                                                                                                                  ;
+;  B  ; LC31       ; rtf, data1, rom_14_l, mq11_low, rom_15_l, rom_12_l                                                                        ; n_t_40x~7                                                                                                                                                                                                                                                               ;
+;  B  ; LC32       ; n_t_40x~18, eae_on~9, mq11_low, n_t_40x~10, n_t_40x~9, ac0, eir2, eir3, mq0_low, ad0_low                                  ; n_t_13x_m~9, n_t_13x_m~14                                                                                                                                                                                                                                               ;
+;  B  ; LC18       ; clock, n_t_22x                                                                                                            ; tp_m~9, ac_load_low~9, incr_sc~1, etp_or_tp3~0, etp~1sexp, n_t_84x_m~10, n_t_84x~10, link_load~8, n_t_43x~3sexpand0, n_t_13x_m~9, n_t_13x~9, eae_on_m~9                                                                                                                 ;
+;  B  ; LC22       ; rom_15_l, shift_ok~14, n_t_23x, n_t_22x                                                                                   ; incr_sc                                                                                                                                                                                                                                                                 ;
+;  B  ; LC23       ; eir2, eir3, rom_15_l, rom_22_l                                                                                            ; ac_load_low~9, n_t_73x~0, not_last_xfer~4, not_last_xfer~6                                                                                                                                                                                                              ;
+;  C  ; LC37       ; n_t_13x~9, gtf_or_ind                                                                                                     ; data1                                                                                                                                                                                                                                                                   ;
+;  C  ; LC38       ; rom_22_l, eir2, eir3, ts3                                                                                                 ; en2                                                                                                                                                                                                                                                                     ;
+;  C  ; LC48       ; n_t_23x, clock, tp_m~9, eae_on~9                                                                                          ; tp_m~9, tp$latch~9                                                                                                                                                                                                                                                      ;
+;  C  ; LC35       ; n_t_74x~9, eir2, eir3, fetch, eae_on~9, rom_12_l, rom_15_l, ac0_ne_ac1, dad_or_dst, ac2_8_0, ac4_11_0, mq_0               ; n_t_84x_m~10                                                                                                                                                                                                                                                            ;
+;  C  ; LC46       ; n_t_74x~0, n_t_73x~0, n_t_84x_m~10, init, etp~1sexp, n_t_23x, n_t_22x                                                     ; n_t_84x_m~10, n_t_84x~10                                                                                                                                                                                                                                                ;
+;  C  ; LC45       ; n_t_84x~10, init, etp_or_tp3~0, eae_on_m~9, tp3, n_t_23x, n_t_22x                                                         ; eae_on_m~9, eae_on~9                                                                                                                                                                                                                                                    ;
+;  C  ; LC36       ; eae_on_m~9, init, etp_or_tp3~0, eae_on~9                                                                                  ; shift_ok~14, tp_m~9, n_t_74x~0, n_t_40x~8, tp$latch~9, n_t_22x, eae_on~9, n_t_3x~0, link_data~6, carry_in~11, n_t_52x~5, ad_lk_low~11, n_t_52x~8, n_t_15x~3sexpand0, en1~12, n_t_15x~5sexpand0, left_low~6, shl_ena_low~4, n_t_65x, n_t_40x~7, n_t_13x_m~14, n_t_40x~24 ;
+;  C  ; LC41       ; n_t_84x~10, eae_on~9                                                                                                      ; restart                                                                                                                                                                                                                                                                 ;
+;  C  ; LC42       ; clock, n_t_65x, tp$latch~9, eae_on~9, rom_12_l                                                                            ; n_t_23x, n_t_68x~0sexpand1, ac_load_low~9, incr_sc~1, etp_or_tp3~0, etp~1sexp, n_t_84x_m~10, n_t_84x~10, link_load~8, n_t_43x~3sexpand0, n_t_13x_m~9, n_t_13x~9, eae_on_m~9                                                                                             ;
+;  C  ; LC40       ; tp3, n_t_23x, n_t_22x                                                                                                     ; eae_on_m~9, eae_on~9, mq_load                                                                                                                                                                                                                                           ;
+;  C  ; LC44       ; n_t_84x_m~10, n_t_73x~0, n_t_84x~10, init, n_t_23x, n_t_22x, etp~1sexp                                                    ; n_t_73x~0, n_t_84x~10, eae_on_m~9, n_t_3x~0, ac_load_low~9, not_last_xfer~4, not_last_xfer~6                                                                                                                                                                            ;
+;  C  ; LC47       ; clock, tp$latch~9, eae_on~9, rom_12_l                                                                                     ; n_t_22x                                                                                                                                                                                                                                                                 ;
+;  C  ; LC33       ; eir2, eir3                                                                                                                ; n_t_74x~9                                                                                                                                                                                                                                                               ;
+;  C  ; LC34       ; n_t_74x~7, ac2_8_0, ac4_11_0, mq_0, dad_or_dst, rom_12_l, rom_15_l, ac0_ne_ac1, last_step_l, rom_22_l                     ; n_t_74x~0                                                                                                                                                                                                                                                               ;
+;  C  ; LC43       ; tp_m~9, clock, tp$latch~9, eae_on~9                                                                                       ; tp$latch~9, n_t_65x, tp, n_t_22x                                                                                                                                                                                                                                        ;
+;  D  ; LC51       ; dad_or_dst_low, e                                                                                                         ; ac_to_mq_ena_low                                                                                                                                                                                                                                                        ;
+;  D  ; LC64       ; n_t_13x~9, gtf_or_ind                                                                                                     ; data1                                                                                                                                                                                                                                                                   ;
+;  D  ; LC54       ; rom_15_l, ts3                                                                                                             ; ac_to_bus_low                                                                                                                                                                                                                                                           ;
+;  D  ; LC53       ; msir_disable, next_loc, ts4, en2                                                                                          ; en0                                                                                                                                                                                                                                                                     ;
+;  D  ; LC58       ; n_t_13x_m~9, modeb, n_t_13x~9, shift_ok~14, n_t_40x~24, n_t_43x~9, n_t_43x~3sexpand0, n_t_23x, n_t_22x                    ; data1~5, data1~7, n_t_13x~9, skip~6                                                                                                                                                                                                                                     ;
+;  D  ; LC56       ; ac2_8_0, ac_0, rom_24_l, n_t_13x~9, sgt_low, next_loc                                                                     ; skip                                                                                                                                                                                                                                                                    ;
+;  D  ; LC62       ; ad0_low, ac_load_low, n_t_42x_m~9, rom_12_l, rom_14_l                                                                     ; n_t_42x_m~9, n_t_42x~9                                                                                                                                                                                                                                                  ;
+;  D  ; LC57       ; msir_disable, next_loc, ts4, link, ts3, rom_13_l, rom_22_l, eae_on~9                                                      ; carry_in                                                                                                                                                                                                                                                                ;
+;  D  ; LC50       ; n_t_13x_m~14, n_t_40x~7, modeb, n_t_13x_m~9, shift_ok~14, n_t_40x~24, n_t_43x~9, n_t_23x, n_t_22x                         ; n_t_13x_m~9, n_t_13x~9                                                                                                                                                                                                                                                  ;
+;  D  ; LC59       ; n_t_69x~9, n_t_84x~10, carry_out_low, n_t_4x~7, rom_12_l, rom_14_l                                                        ; not_last_xfer                                                                                                                                                                                                                                                           ;
+;  D  ; LC52       ; n_t_42x_m~9, ac_load_low, n_t_42x~9, rom_12_l, rom_14_l                                                                   ; n_t_42x~9, mq_data_low~2                                                                                                                                                                                                                                                ;
+;  D  ; LC49       ; n_t_40x~7, modeb, n_t_43x~9, rom_14_l, rom_15_l, eae_on~9, rom_12_l, shift_ok~14                                          ; n_t_13x_m~9                                                                                                                                                                                                                                                             ;
+;  E  ; LC66       ; tp2_d~reg0, n_t_60x_m~9, tp2                                                                                              ; n_t_60x_m~9, n_t_60x~9                                                                                                                                                                                                                                                  ;
+;  E  ; LC79       ; n_t_60x_m~9, tp2_d~reg0, tp2, n_t_60x~9                                                                                   ; n_t_60x~9, tp2_d~reg0                                                                                                                                                                                                                                                   ;
+;  E  ; LC65       ; clock, n_t_60x~9                                                                                                          ; n_t_60x_m~9, n_t_60x~9, tp2_d, n_t_69x_m~9, n_t_69x~9                                                                                                                                                                                                                   ;
++-----+------------+---------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (119006): Selected device EPM7128STI100-10 for design "M8341X"
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4697 megabytes
+    Info: Processing ended: Mon Oct 14 00:46:21 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

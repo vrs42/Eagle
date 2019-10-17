@@ -1,0 +1,317 @@
+Analysis & Synthesis report for M8341
+Wed Oct 16 17:57:41 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Analysis & Synthesis Messages
+ 10. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Oct 16 17:57:41 2019           ;
+; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name               ; M8341                                           ;
+; Top-level Entity Name       ; M8341                                           ;
+; Family                      ; MAX7000S                                        ;
+; Total macrocells            ; 61                                              ;
+; Total pins                  ; 71                                              ;
++-----------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                 ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM7128SQC100-15 ;               ;
+; Top-level entity name                                                      ; M8341            ; M8341         ;
+; Family name                                                                ; MAX7000S         ; Cyclone IV GX ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Create Debugging Nodes for IP Cores                                        ; Off              ; Off           ;
+; Preserve fewer node names                                                  ; On               ; On            ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off              ; Off           ;
+; Verilog Version                                                            ; Verilog_2001     ; Verilog_2001  ;
+; VHDL Version                                                               ; VHDL_1993        ; VHDL_1993     ;
+; State Machine Processing                                                   ; Auto             ; Auto          ;
+; Safe State Machine                                                         ; Off              ; Off           ;
+; Extract Verilog State Machines                                             ; On               ; On            ;
+; Extract VHDL State Machines                                                ; On               ; On            ;
+; Ignore Verilog initial constructs                                          ; Off              ; Off           ;
+; Iteration limit for constant Verilog loops                                 ; 5000             ; 5000          ;
+; Iteration limit for non-constant Verilog loops                             ; 250              ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On               ; On            ;
+; Infer RAMs from Raw Logic                                                  ; On               ; On            ;
+; Parallel Synthesis                                                         ; On               ; On            ;
+; NOT Gate Push-Back                                                         ; On               ; On            ;
+; Power-Up Don't Care                                                        ; On               ; On            ;
+; Remove Duplicate Registers                                                 ; On               ; On            ;
+; Ignore CARRY Buffers                                                       ; Off              ; Off           ;
+; Ignore CASCADE Buffers                                                     ; Off              ; Off           ;
+; Ignore GLOBAL Buffers                                                      ; Off              ; Off           ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off              ; Off           ;
+; Ignore LCELL Buffers                                                       ; Auto             ; Auto          ;
+; Ignore SOFT Buffers                                                        ; Off              ; Off           ;
+; Limit AHDL Integers to 32 Bits                                             ; Off              ; Off           ;
+; Optimization Technique                                                     ; Speed            ; Speed         ;
+; Allow XOR Gate Usage                                                       ; On               ; On            ;
+; Auto Logic Cell Insertion                                                  ; On               ; On            ;
+; Parallel Expander Chain Length                                             ; 4                ; 4             ;
+; Auto Parallel Expanders                                                    ; On               ; On            ;
+; Auto Open-Drain Pins                                                       ; On               ; On            ;
+; Auto Resource Sharing                                                      ; Off              ; Off           ;
+; Maximum Fan-in Per Macrocell                                               ; 100              ; 100           ;
+; Use LogicLock Constraints during Resource Balancing                        ; On               ; On            ;
+; Ignore translate_off and synthesis_off directives                          ; Off              ; Off           ;
+; Report Parameter Settings                                                  ; On               ; On            ;
+; Report Source Assignments                                                  ; On               ; On            ;
+; Report Connectivity Checks                                                 ; On               ; On            ;
+; HDL message level                                                          ; Level2           ; Level2        ;
+; Suppress Register Optimization Related Messages                            ; Off              ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000             ; 5000          ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000             ; 5000          ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100              ; 100           ;
+; Block Design Naming                                                        ; Auto             ; Auto          ;
+; Synthesis Effort                                                           ; Auto             ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On               ; On            ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off              ; Off           ;
+; Analysis & Synthesis Message Level                                         ; Medium           ; Medium        ;
+; Disable Register Merging Across Hierarchies                                ; Auto             ; Auto          ;
+; Synthesis Seed                                                             ; 1                ; 1             ;
++----------------------------------------------------------------------------+------------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------+---------+
+; m8341.v                          ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/vrs/Documents/Eagle/projects/DEC/Mxxx/M8341/pld/m8341.v ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; Logic cells          ; 61                   ;
+; Total registers      ; 4                    ;
+; I/O pins             ; 71                   ;
+; Shareable expanders  ; 9                    ;
+; Parallel expanders   ; 5                    ;
+; Maximum fan-out node ; rom_12_l             ;
+; Maximum fan-out      ; 21                   ;
+; Total fan-out        ; 387                  ;
+; Average fan-out      ; 2.74                 ;
++----------------------+----------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                 ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |M8341                     ; 61         ; 71   ; |M8341              ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; eae_on                                              ; etp_or_tp3          ; yes                    ;
+; eae_on_m                                            ; etp_or_tp3          ; yes                    ;
+; n_t_42x                                             ; ac_load_low~direct  ; yes                    ;
+; n_t_84x                                             ; etp                 ; yes                    ;
+; n_t_69x                                             ; tp2_d~direct        ; yes                    ;
+; n_t_13x                                             ; n_t_43x             ; yes                    ;
+; n_t_42x_m                                           ; ac_load_low~direct  ; yes                    ;
+; n_t_84x_m                                           ; etp                 ; yes                    ;
+; n_t_69x_m                                           ; tp2_d~direct        ; yes                    ;
+; n_t_13x_m                                           ; n_t_43x             ; yes                    ;
+; tp$latch                                            ; clock               ; yes                    ;
+; n_t_60x                                             ; tp2                 ; yes                    ;
+; tp_m                                                ; clock               ; yes                    ;
+; n_t_60x_m                                           ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 14  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 16 17:57:40 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M8341 -c M8341
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /users/vrs/documents/eagle/projects/dec/mxxx/m8340/pld/m8340.v
+    Info (12023): Found entity 1: M8340
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(271): created implicit net for "e11_10x01"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(272): created implicit net for "e11_1011x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(275): created implicit net for "e11_00x10"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(276): created implicit net for "e11_x1001"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(277): created implicit net for "e11_0x111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(278): created implicit net for "e11_01101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(279): created implicit net for "e11_01110"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(280): created implicit net for "e11_10011"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(288): created implicit net for "e11_00010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(289): created implicit net for "e11_00100"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(290): created implicit net for "e11_100x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(295): created implicit net for "e11_0111x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(296): created implicit net for "e11_10010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(301): created implicit net for "e11_01x01"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(302): created implicit net for "e11_00111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(307): created implicit net for "e11_x0010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(308): created implicit net for "e11_011x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(315): created implicit net for "e11_x0111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(316): created implicit net for "e11_10x10"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(317): created implicit net for "e11_10101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(392): created implicit net for "e19_001x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(393): created implicit net for "e19_x0110"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(394): created implicit net for "e19_1111x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(395): created implicit net for "e19_100x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(396): created implicit net for "e19_1x010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(397): created implicit net for "e19_110x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(398): created implicit net for "e19_1x101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(399): created implicit net for "e19_10111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(408): created implicit net for "e19_0001x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(409): created implicit net for "e19_00101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(410): created implicit net for "e19_x1001"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(411): created implicit net for "e19_01010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(412): created implicit net for "e19_10001"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(419): created implicit net for "e19_1x011"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(420): created implicit net for "e19_x1010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(421): created implicit net for "e19_10010"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(428): created implicit net for "e19_x0101"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(429): created implicit net for "e19_010x0"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(430): created implicit net for "e19_11x00"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(431): created implicit net for "e19_1101x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(438): created implicit net for "e19_11x11"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(439): created implicit net for "e19_00110"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(440): created implicit net for "e19_11x10"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(441): created implicit net for "e19_0100x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(442): created implicit net for "e19_01100"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(450): created implicit net for "e19_1110x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(451): created implicit net for "e19_0x100"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(452): created implicit net for "e19_10100"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(460): created implicit net for "e19_011x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(461): created implicit net for "e19_01110"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(468): created implicit net for "e19_000x1"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(469): created implicit net for "e19_00x10"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(470): created implicit net for "e19_0010x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(471): created implicit net for "e19_0x111"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(472): created implicit net for "e19_0110x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(473): created implicit net for "e19_1011x"
+Warning (10236): Verilog HDL Implicit Net warning at M8340.v(474): created implicit net for "e19_10x01"
+Warning (12125): Using design file m8341.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: M8341
+Info (12127): Elaborating entity "M8341" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(191): inferring latch(es) for variable "tp_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(198): inferring latch(es) for variable "tp", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(263): inferring latch(es) for variable "n_t_42x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(270): inferring latch(es) for variable "n_t_42x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(277): inferring latch(es) for variable "n_t_84x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(287): inferring latch(es) for variable "n_t_84x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(314): inferring latch(es) for variable "n_t_69x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(321): inferring latch(es) for variable "n_t_69x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(346): inferring latch(es) for variable "eae_on_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(353): inferring latch(es) for variable "eae_on", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(360): inferring latch(es) for variable "n_t_60x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(367): inferring latch(es) for variable "n_t_60x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(478): inferring latch(es) for variable "n_t_13x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at m8341.v(485): inferring latch(es) for variable "n_t_13x", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "n_t_13x" at m8341.v(485)
+Info (10041): Inferred latch for "n_t_13x_m" at m8341.v(478)
+Info (10041): Inferred latch for "n_t_60x" at m8341.v(367)
+Info (10041): Inferred latch for "n_t_60x_m" at m8341.v(360)
+Info (10041): Inferred latch for "eae_on" at m8341.v(353)
+Info (10041): Inferred latch for "eae_on_m" at m8341.v(346)
+Info (10041): Inferred latch for "n_t_69x" at m8341.v(321)
+Info (10041): Inferred latch for "n_t_69x_m" at m8341.v(314)
+Info (10041): Inferred latch for "n_t_84x" at m8341.v(287)
+Info (10041): Inferred latch for "n_t_84x_m" at m8341.v(277)
+Info (10041): Inferred latch for "n_t_42x" at m8341.v(270)
+Info (10041): Inferred latch for "n_t_42x_m" at m8341.v(263)
+Info (10041): Inferred latch for "tp" at m8341.v(198)
+Info (10041): Inferred latch for "tp_m" at m8341.v(191)
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "tp" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "tp2_d" and its non-tri-state driver.
+Info (13060): One or more bidirs are fed by always enabled tri-state buffers
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "tp" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "tp2_d" is moved to its source
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "tp~synth"
+    Warning (13010): Node "tp2_d~synth"
+Info (280013): Promoted pin-driven signal(s) to global signal
+    Info (280014): Promoted clock signal driven by pin "clock" to global clock signal
+Info (21057): Implemented 141 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 44 input pins
+    Info (21059): Implemented 21 output pins
+    Info (21060): Implemented 6 bidirectional pins
+    Info (21063): Implemented 61 macrocells
+    Info (21073): Implemented 9 shareable expanders
+Info (144001): Generated suppressed messages file C:/Users/vrs/Documents/Eagle/projects/DEC/Mxxx/M8341/pld/output_files/M8341.map.smsg
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 79 warnings
+    Info: Peak virtual memory: 4583 megabytes
+    Info: Processing ended: Wed Oct 16 17:57:41 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/vrs/Documents/Eagle/projects/DEC/Mxxx/M8341/pld/output_files/M8341.map.smsg.
+
+

@@ -1,0 +1,100 @@
+E2       1        IO75       io                *** unconnected ***
+         2        IO76       io       E
+         3        IO/PD1     io       FETCH
+         4        IO2        io       MSIR_DISABLE
+         5        VCCIO      pwr      VCCIO
+         6        TDI        io       TDI
+         7        IO3        io       LINK_LOAD
+         8        IO4        io       SKIP
+         9        IO5        io       LINK_DATA
+         10       IO6        io       INIT
+         11       IO7        io       TS4
+         12       IO8        io                *** unconnected ***
+         13       GND        pwr      GND
+         14       IO9        io       TS3
+         15       IO10       io       NOT_LAST_XFER
+         16       IO11       io       TS2
+         17       TMS        io       TMS
+         18       IO12       io       TP3
+         19       IO13       io       TP2
+         20       VCCIO      pwr      VCCIO
+         21       IO14       io       C0
+         22       IO15       io       TP1
+         23       IO16       io       LINK
+         24       IO17       io       DATA1
+         25       IO18       io       TP
+         26       IO19       io                *** unconnected ***
+         27       IO20       io                *** unconnected ***
+         28       GND        pwr      GND
+         29       IO21       io       EN2
+         30       IO22       io       !SHL_ENA
+         31       IO23       io       DATA_T
+         32       IO24       io       !AC_TO_BUS
+         33       IO25       io       EN0
+         34       IO26       io       MD_DISABLE
+         35       IO27       io       !MQ_TO_BUS
+         36       VCCIO      pwr      VCCIO
+         37       IO28       io       CARRY_IN
+         38       IO29       io       MQ_LOAD
+         39       IO30       io       EN1
+         40       GND        pwr      GND
+         41       VCCINT     pwr      VCCINT
+         42       IO31       io       AC4-11_0
+         43       IO/PD2     io                *** unconnected ***
+         44       IO33       io                *** unconnected ***
+         45       GND        pwr      GND
+         46       IO34       io       DATA_F
+         47       IO35       io       AC_0
+         48       IO36       io       !CARRY_OUT
+         49       IO37       io       !AC_TO_MQ_ENA
+         50       IO38       io       !AC_LOAD
+         51       IO39       io       AC1
+         52       IO40       io       !AD_LK
+         53       VCCIO      pwr      VCCIO
+         54       IO41       io       AC0
+         55       IO42       io       !AD0
+         56       IO43       io       MQ_0
+         57       IO44       io       AC0_NE_AC1
+         58       IO45       io                *** unconnected ***
+         59       IO46       io       AC2-8_0
+         60       IO47       io       !LEFT
+         61       GND        pwr      GND
+         62       IO48       io       !RIGHT
+         63       IO49       io       !MQ_DATA
+         64       TCK        io       TCK
+         65       IO50       io       !MQ11
+         66       IO51       io       !MQ0
+         67       IO52       io       !MQ10
+         68       VCCIO      pwr      VCCIO
+         69       IO53       io                *** unconnected ***
+         70       IO54       io       !SC_0
+         71       IO55       io       EIR2
+         72       IO56       io       RTF
+         73       IO57       io       EIR3
+         74       IO58       io       NEXT_LOC
+         75       TDO        io       TDO
+         76       GND        pwr      GND
+         77       IO59       io       DIV_12_L
+         78       IO60       io       ROM_24_L
+         79       IO61       io       ROM_13_L
+         80       IO62       io       INCR_SC
+         81       IO63       io       ROM_22_L
+         82       IO64       io       RESTART
+         83       IO65       io       DAD+DST
+         84       VCCIO      pwr      VCCIO
+         85       IO66       io       TP2_D
+         86       IO67       io       !SGT
+         87       IO/GCLK3   io                *** unconnected ***
+         88       GND        pwr      GND
+         89       IN/GCLK1   in       ROM_15_L
+         90       IN/OE1     in       !DAD+DST
+         91       IN/GCLR    in       ROM_11_L
+         92       IN/GCLK2/OE2 in       CLOCK
+         93       VCCINT     pwr      VCCINT
+         94       IO69       io       ROM_17_L
+         95       IO70       io       LAST_STEP_L
+         96       IO71       io       ROM_12_L
+         97       GND        pwr      GND
+         98       IO72       io       ROM_14_L
+         99       IO73       io       MODEB
+         100      IO74       io       GTF+IND

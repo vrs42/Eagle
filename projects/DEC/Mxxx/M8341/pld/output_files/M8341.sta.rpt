@@ -1,0 +1,1237 @@
+TimeQuest Timing Analyzer report for M8341
+Wed Oct 16 17:57:47 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clock'
+ 12. Hold: 'clock'
+ 13. Minimum Pulse Width: 'clock'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Output Enable Times
+ 21. Minimum Output Enable Times
+ 22. Output Disable Times
+ 23. Minimum Output Disable Times
+ 24. Setup Transfers
+ 25. Hold Transfers
+ 26. Report TCCS
+ 27. Report RSKM
+ 28. Unconstrained Paths
+ 29. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; M8341                                                             ;
+; Device Family      ; MAX7000S                                                          ;
+; Device Name        ; EPM7128SQC100-15                                                  ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Slow Model                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; clock      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+
+
++-------------------------------------------------+
+; Fmax Summary                                    ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 13.33 MHz ; 13.33 MHz       ; clock      ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------+
+; Setup Summary                   ;
++-------+---------+---------------+
+; Clock ; Slack   ; End Point TNS ;
++-------+---------+---------------+
+; clock ; -74.000 ; -190.000      ;
++-------+---------+---------------+
+
+
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clock ; 5.000 ; 0.000         ;
++-------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------+
+; Minimum Pulse Width Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clock ; -4.500 ; -36.000       ;
++-------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Setup: 'clock'                                                                                          ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node  ; To Node    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+; -74.000 ; n_t_23x    ; n_t_65x    ; clock        ; clock       ; 1.000        ; 0.000      ; 71.000     ;
+; -74.000 ; n_t_23x    ; n_t_22x    ; clock        ; clock       ; 1.000        ; 0.000      ; 71.000     ;
+; -74.000 ; n_t_22x    ; n_t_65x    ; clock        ; clock       ; 1.000        ; 0.000      ; 71.000     ;
+; -74.000 ; n_t_22x    ; n_t_22x    ; clock        ; clock       ; 1.000        ; 0.000      ; 71.000     ;
+; -30.000 ; tp2_d~reg0 ; tp2_d~reg0 ; clock        ; clock       ; 1.000        ; 0.000      ; 27.000     ;
+; -28.500 ; clock      ; n_t_65x    ; clock        ; clock       ; 0.500        ; 3.000      ; 28.000     ;
+; -28.500 ; clock      ; n_t_22x    ; clock        ; clock       ; 0.500        ; 3.000      ; 28.000     ;
+; -28.000 ; clock      ; n_t_65x    ; clock        ; clock       ; 1.000        ; 3.000      ; 28.000     ;
+; -28.000 ; clock      ; n_t_22x    ; clock        ; clock       ; 1.000        ; 3.000      ; 28.000     ;
+; -12.000 ; n_t_65x    ; n_t_22x    ; clock        ; clock       ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; n_t_22x    ; n_t_23x    ; clock        ; clock       ; 1.000        ; 0.000      ; 9.000      ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Hold: 'clock'                                                                                          ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+; 5.000  ; n_t_65x    ; n_t_22x    ; clock        ; clock       ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000  ; n_t_22x    ; n_t_23x    ; clock        ; clock       ; 0.000        ; 0.000      ; 9.000      ;
+; 12.000 ; clock      ; n_t_65x    ; clock        ; clock       ; 0.000        ; 3.000      ; 19.000     ;
+; 12.000 ; clock      ; n_t_22x    ; clock        ; clock       ; 0.000        ; 3.000      ; 19.000     ;
+; 12.500 ; clock      ; n_t_65x    ; clock        ; clock       ; -0.500       ; 3.000      ; 19.000     ;
+; 12.500 ; clock      ; n_t_22x    ; clock        ; clock       ; -0.500       ; 3.000      ; 19.000     ;
+; 14.000 ; tp2_d~reg0 ; tp2_d~reg0 ; clock        ; clock       ; 0.000        ; 0.000      ; 18.000     ;
+; 23.000 ; n_t_23x    ; n_t_65x    ; clock        ; clock       ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; n_t_23x    ; n_t_22x    ; clock        ; clock       ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; n_t_22x    ; n_t_65x    ; clock        ; clock       ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; n_t_22x    ; n_t_22x    ; clock        ; clock       ; 0.000        ; 0.000      ; 27.000     ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'clock'                                                                    ;
++--------+--------------+----------------+------------------+-------+------------+----------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target         ;
++--------+--------------+----------------+------------------+-------+------------+----------------+
+; -4.500 ; 0.500        ; 5.000          ; High Pulse Width ; clock ; Fall       ; n_t_22x        ;
+; -4.500 ; 0.500        ; 5.000          ; Low Pulse Width  ; clock ; Fall       ; n_t_22x        ;
+; -4.500 ; 0.500        ; 5.000          ; High Pulse Width ; clock ; Fall       ; n_t_23x        ;
+; -4.500 ; 0.500        ; 5.000          ; Low Pulse Width  ; clock ; Fall       ; n_t_23x        ;
+; -4.500 ; 0.500        ; 5.000          ; High Pulse Width ; clock ; Fall       ; n_t_65x        ;
+; -4.500 ; 0.500        ; 5.000          ; Low Pulse Width  ; clock ; Fall       ; n_t_65x        ;
+; -4.500 ; 0.500        ; 5.000          ; High Pulse Width ; clock ; Fall       ; tp2_d~reg0     ;
+; -4.500 ; 0.500        ; 5.000          ; Low Pulse Width  ; clock ; Fall       ; tp2_d~reg0     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock|dataout  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock|dataout  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; n_t_22x|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; n_t_22x|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; n_t_23x|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; n_t_23x|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; n_t_65x|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; n_t_65x|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; tp2_d~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; tp2_d~reg0|clk ;
++--------+--------------+----------------+------------------+-------+------------+----------------+
+
+
++-----------------------------------------------------------------------------+
+; Setup Times                                                                 ;
++---------------+------------+--------+--------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+--------+------------+-----------------+
+; ac0_ne_ac1    ; clock      ; 75.000 ; 75.000 ; Fall       ; clock           ;
+; ac2_8_0       ; clock      ; 75.000 ; 75.000 ; Fall       ; clock           ;
+; ac4_11_0      ; clock      ; 75.000 ; 75.000 ; Fall       ; clock           ;
+; carry_out_low ; clock      ; 74.000 ; 74.000 ; Fall       ; clock           ;
+; clock         ; clock      ; 29.000 ; 29.000 ; Fall       ; clock           ;
+; dad_or_dst    ; clock      ; 75.000 ; 75.000 ; Fall       ; clock           ;
+; eir2          ; clock      ; 83.000 ; 83.000 ; Fall       ; clock           ;
+; eir3          ; clock      ; 83.000 ; 83.000 ; Fall       ; clock           ;
+; fetch         ; clock      ; 74.000 ; 74.000 ; Fall       ; clock           ;
+; init          ; clock      ; 65.000 ; 65.000 ; Fall       ; clock           ;
+; last_step_l   ; clock      ; 75.000 ; 75.000 ; Fall       ; clock           ;
+; mq_0          ; clock      ; 75.000 ; 75.000 ; Fall       ; clock           ;
+; rom_12_l      ; clock      ; 82.000 ; 82.000 ; Fall       ; clock           ;
+; rom_14_l      ; clock      ; 82.000 ; 82.000 ; Fall       ; clock           ;
+; rom_15_l      ; clock      ; 83.000 ; 83.000 ; Fall       ; clock           ;
+; rom_22_l      ; clock      ; 83.000 ; 83.000 ; Fall       ; clock           ;
+; tp2           ; clock      ; 29.000 ; 29.000 ; Fall       ; clock           ;
+; tp3           ; clock      ; 74.000 ; 74.000 ; Fall       ; clock           ;
++---------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++---------------+------------+---------+---------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise    ; Fall    ; Clock Edge ; Clock Reference ;
++---------------+------------+---------+---------+------------+-----------------+
+; ac0_ne_ac1    ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; ac2_8_0       ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; ac4_11_0      ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; carry_out_low ; clock      ; -39.000 ; -39.000 ; Fall       ; clock           ;
+; clock         ; clock      ; -12.000 ; -12.000 ; Fall       ; clock           ;
+; dad_or_dst    ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; eir2          ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; eir3          ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; fetch         ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; init          ; clock      ; -12.000 ; -12.000 ; Fall       ; clock           ;
+; last_step_l   ; clock      ; -49.000 ; -49.000 ; Fall       ; clock           ;
+; mq_0          ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; rom_12_l      ; clock      ; -3.000  ; -3.000  ; Fall       ; clock           ;
+; rom_14_l      ; clock      ; -47.000 ; -47.000 ; Fall       ; clock           ;
+; rom_15_l      ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; rom_22_l      ; clock      ; -48.000 ; -48.000 ; Fall       ; clock           ;
+; tp2           ; clock      ; -12.000 ; -12.000 ; Fall       ; clock           ;
+; tp3           ; clock      ; -21.000 ; -21.000 ; Fall       ; clock           ;
++---------------+------------+---------+---------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++---------------+------------+--------+--------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+--------+------------+-----------------+
+; tp            ; clock      ; 24.000 ; 24.000 ; Rise       ; clock           ;
+; ac_load_low   ; clock      ; 71.000 ; 71.000 ; Fall       ; clock           ;
+; ad_lk_low     ; clock      ; 61.000 ; 61.000 ; Fall       ; clock           ;
+; c0            ; clock      ; 70.000 ; 70.000 ; Fall       ; clock           ;
+; carry_in      ; clock      ; 61.000 ; 61.000 ; Fall       ; clock           ;
+; data1         ; clock      ; 89.000 ; 89.000 ; Fall       ; clock           ;
+; en1           ; clock      ; 61.000 ; 61.000 ; Fall       ; clock           ;
+; incr_sc       ; clock      ; 70.000 ; 70.000 ; Fall       ; clock           ;
+; left_low      ; clock      ; 70.000 ; 70.000 ; Fall       ; clock           ;
+; link_data     ; clock      ; 61.000 ; 61.000 ; Fall       ; clock           ;
+; link_load     ; clock      ; 70.000 ; 70.000 ; Fall       ; clock           ;
+; mq_load       ; clock      ; 17.000 ; 17.000 ; Fall       ; clock           ;
+; not_last_xfer ; clock      ; 71.000 ; 71.000 ; Fall       ; clock           ;
+; restart       ; clock      ; 71.000 ; 71.000 ; Fall       ; clock           ;
+; right_low     ; clock      ; 70.000 ; 70.000 ; Fall       ; clock           ;
+; shl_ena_low   ; clock      ; 70.000 ; 70.000 ; Fall       ; clock           ;
+; skip          ; clock      ; 89.000 ; 89.000 ; Fall       ; clock           ;
+; tp            ; clock      ; 70.000 ; 70.000 ; Fall       ; clock           ;
+; tp2_d         ; clock      ; 8.000  ; 8.000  ; Fall       ; clock           ;
++---------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++---------------+------------+--------+--------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+--------+------------+-----------------+
+; tp            ; clock      ; 15.000 ; 15.000 ; Rise       ; clock           ;
+; ac_load_low   ; clock      ; 17.000 ; 17.000 ; Fall       ; clock           ;
+; ad_lk_low     ; clock      ; 35.000 ; 35.000 ; Fall       ; clock           ;
+; c0            ; clock      ; 44.000 ; 44.000 ; Fall       ; clock           ;
+; carry_in      ; clock      ; 35.000 ; 35.000 ; Fall       ; clock           ;
+; data1         ; clock      ; 26.000 ; 26.000 ; Fall       ; clock           ;
+; en1           ; clock      ; 35.000 ; 35.000 ; Fall       ; clock           ;
+; incr_sc       ; clock      ; 17.000 ; 17.000 ; Fall       ; clock           ;
+; left_low      ; clock      ; 35.000 ; 35.000 ; Fall       ; clock           ;
+; link_data     ; clock      ; 35.000 ; 35.000 ; Fall       ; clock           ;
+; link_load     ; clock      ; 17.000 ; 17.000 ; Fall       ; clock           ;
+; mq_load       ; clock      ; 17.000 ; 17.000 ; Fall       ; clock           ;
+; not_last_xfer ; clock      ; 26.000 ; 26.000 ; Fall       ; clock           ;
+; restart       ; clock      ; 26.000 ; 26.000 ; Fall       ; clock           ;
+; right_low     ; clock      ; 43.000 ; 43.000 ; Fall       ; clock           ;
+; shl_ena_low   ; clock      ; 35.000 ; 35.000 ; Fall       ; clock           ;
+; skip          ; clock      ; 26.000 ; 26.000 ; Fall       ; clock           ;
+; tp            ; clock      ; 15.000 ; 15.000 ; Fall       ; clock           ;
+; tp2_d         ; clock      ; 8.000  ; 8.000  ; Fall       ; clock           ;
++---------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Propagation Delay                                                           ;
++------------------+------------------+---------+---------+---------+---------+
+; Input Port       ; Output Port      ; RR      ; RF      ; FR      ; FF      ;
++------------------+------------------+---------+---------+---------+---------+
+; ac0              ; data1            ; 50.000  ; 43.000  ; 43.000  ; 50.000  ;
+; ac0              ; link_data        ; 15.000  ;         ;         ; 15.000  ;
+; ac0              ; skip             ; 43.000  ;         ;         ; 43.000  ;
+; ac0_ne_ac1       ; ac_load_low      ;         ; 43.000  ; 43.000  ;         ;
+; ac0_ne_ac1       ; ad_lk_low        ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; ac0_ne_ac1       ; c0               ; 70.000  ;         ;         ; 70.000  ;
+; ac0_ne_ac1       ; carry_in         ;         ; 61.000  ; 61.000  ;         ;
+; ac0_ne_ac1       ; data1            ; 96.000  ; 96.000  ; 96.000  ; 96.000  ;
+; ac0_ne_ac1       ; en1              ; 61.000  ;         ;         ; 61.000  ;
+; ac0_ne_ac1       ; incr_sc          ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac0_ne_ac1       ; left_low         ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac0_ne_ac1       ; link_data        ;         ; 61.000  ; 61.000  ;         ;
+; ac0_ne_ac1       ; link_load        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac0_ne_ac1       ; mq_load          ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; ac0_ne_ac1       ; not_last_xfer    ;         ; 50.000  ; 50.000  ;         ;
+; ac0_ne_ac1       ; restart          ; 61.000  ; 43.000  ; 43.000  ; 61.000  ;
+; ac0_ne_ac1       ; right_low        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac0_ne_ac1       ; shl_ena_low      ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac0_ne_ac1       ; skip             ; 89.000  ; 89.000  ; 89.000  ; 89.000  ;
+; ac0_ne_ac1       ; tp               ;         ; 70.000  ; 70.000  ;         ;
+; ac1              ; c0               ;         ; 15.000  ; 15.000  ;         ;
+; ac2_8_0          ; ac_load_low      ;         ; 43.000  ; 43.000  ;         ;
+; ac2_8_0          ; ad_lk_low        ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; ac2_8_0          ; c0               ; 70.000  ;         ;         ; 70.000  ;
+; ac2_8_0          ; carry_in         ;         ; 61.000  ; 61.000  ;         ;
+; ac2_8_0          ; data1            ; 96.000  ; 96.000  ; 96.000  ; 96.000  ;
+; ac2_8_0          ; en1              ; 61.000  ;         ;         ; 61.000  ;
+; ac2_8_0          ; incr_sc          ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac2_8_0          ; left_low         ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac2_8_0          ; link_data        ;         ; 61.000  ; 61.000  ;         ;
+; ac2_8_0          ; link_load        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac2_8_0          ; mq_load          ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; ac2_8_0          ; not_last_xfer    ;         ; 50.000  ; 50.000  ;         ;
+; ac2_8_0          ; restart          ; 61.000  ; 43.000  ; 43.000  ; 61.000  ;
+; ac2_8_0          ; right_low        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac2_8_0          ; shl_ena_low      ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac2_8_0          ; skip             ; 89.000  ; 89.000  ; 89.000  ; 89.000  ;
+; ac2_8_0          ; tp               ;         ; 70.000  ; 70.000  ;         ;
+; ac4_11_0         ; ac_load_low      ; 43.000  ;         ;         ; 43.000  ;
+; ac4_11_0         ; ad_lk_low        ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; ac4_11_0         ; c0               ;         ; 70.000  ; 70.000  ;         ;
+; ac4_11_0         ; carry_in         ; 61.000  ;         ;         ; 61.000  ;
+; ac4_11_0         ; data1            ; 96.000  ; 96.000  ; 96.000  ; 96.000  ;
+; ac4_11_0         ; en1              ;         ; 61.000  ; 61.000  ;         ;
+; ac4_11_0         ; incr_sc          ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac4_11_0         ; left_low         ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac4_11_0         ; link_data        ; 61.000  ;         ;         ; 61.000  ;
+; ac4_11_0         ; link_load        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac4_11_0         ; mq_load          ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; ac4_11_0         ; not_last_xfer    ; 50.000  ;         ;         ; 50.000  ;
+; ac4_11_0         ; restart          ; 43.000  ; 61.000  ; 61.000  ; 43.000  ;
+; ac4_11_0         ; right_low        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac4_11_0         ; shl_ena_low      ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; ac4_11_0         ; skip             ; 89.000  ; 89.000  ; 89.000  ; 89.000  ;
+; ac4_11_0         ; tp               ; 70.000  ;         ;         ; 70.000  ;
+; ac_0             ; skip             ; 15.000  ;         ;         ; 15.000  ;
+; ac_load_low      ; mq_data_low      ; 33.000  ; 33.000  ; 33.000  ; 33.000  ;
+; ac_to_mq_ena_low ; ac_load_low      ;         ; 15.000  ; 15.000  ;         ;
+; ac_to_mq_ena_low ; data_t           ;         ; 15.000  ; 15.000  ;         ;
+; ac_to_mq_ena_low ; en1              ;         ; 15.000  ; 15.000  ;         ;
+; ac_to_mq_ena_low ; md_disable       ;         ; 15.000  ; 15.000  ;         ;
+; ac_to_mq_ena_low ; mq_load          ;         ; 22.000  ; 22.000  ;         ;
+; ac_to_mq_ena_low ; mq_to_bus_low    ;         ; 15.000  ; 15.000  ;         ;
+; ad0_low          ; data1            ; 58.000  ; 51.000  ; 51.000  ; 58.000  ;
+; ad0_low          ; mq_data_low      ; 33.000  ;         ;         ; 33.000  ;
+; ad0_low          ; skip             ; 51.000  ;         ;         ; 51.000  ;
+; carry_out_low    ; ac_load_low      ; 15.000  ; 42.000  ; 42.000  ; 15.000  ;
+; carry_out_low    ; ad_lk_low        ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; carry_out_low    ; c0               ; 69.000  ;         ;         ; 69.000  ;
+; carry_out_low    ; carry_in         ;         ; 60.000  ; 60.000  ;         ;
+; carry_out_low    ; data1            ; 95.000  ; 95.000  ; 95.000  ; 95.000  ;
+; carry_out_low    ; en1              ; 60.000  ;         ;         ; 60.000  ;
+; carry_out_low    ; incr_sc          ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; carry_out_low    ; left_low         ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; carry_out_low    ; link_data        ; 15.000  ; 60.000  ; 60.000  ; 15.000  ;
+; carry_out_low    ; link_load        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; carry_out_low    ; mq_data_low      ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; carry_out_low    ; mq_load          ; 76.000  ; 76.000  ; 76.000  ; 76.000  ;
+; carry_out_low    ; not_last_xfer    ; 22.000  ; 49.000  ; 49.000  ; 22.000  ;
+; carry_out_low    ; restart          ; 60.000  ; 42.000  ; 42.000  ; 60.000  ;
+; carry_out_low    ; right_low        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; carry_out_low    ; shl_ena_low      ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; carry_out_low    ; skip             ; 88.000  ; 88.000  ; 88.000  ; 88.000  ;
+; carry_out_low    ; tp               ;         ; 69.000  ; 69.000  ;         ;
+; dad_or_dst       ; ac_load_low      ; 43.000  ; 43.000  ; 43.000  ; 43.000  ;
+; dad_or_dst       ; ad_lk_low        ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; dad_or_dst       ; c0               ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; dad_or_dst       ; carry_in         ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; dad_or_dst       ; data1            ; 96.000  ; 96.000  ; 96.000  ; 96.000  ;
+; dad_or_dst       ; en1              ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; dad_or_dst       ; incr_sc          ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; dad_or_dst       ; left_low         ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; dad_or_dst       ; link_data        ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; dad_or_dst       ; link_load        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; dad_or_dst       ; mq_load          ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; dad_or_dst       ; not_last_xfer    ; 50.000  ; 50.000  ; 50.000  ; 50.000  ;
+; dad_or_dst       ; restart          ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; dad_or_dst       ; right_low        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; dad_or_dst       ; shl_ena_low      ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; dad_or_dst       ; skip             ; 89.000  ; 89.000  ; 89.000  ; 89.000  ;
+; dad_or_dst       ; tp               ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; dad_or_dst_low   ; ac_to_mq_ena_low ;         ; 15.000  ; 15.000  ;         ;
+; data1            ; data1            ; 44.000  ; 51.000  ; 51.000  ; 44.000  ;
+; data1            ; skip             ;         ; 44.000  ; 44.000  ;         ;
+; div_12_l         ; left_low         ; 15.000  ;         ;         ; 15.000  ;
+; e                ; ac_to_mq_ena_low ;         ; 15.000  ; 15.000  ;         ;
+; eir2             ; ac_load_low      ; 51.000  ; 51.000  ; 51.000  ; 51.000  ;
+; eir2             ; ad_lk_low        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir2             ; c0               ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir2             ; carry_in         ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir2             ; data1            ; 104.000 ; 104.000 ; 104.000 ; 104.000 ;
+; eir2             ; data_f           ; 15.000  ;         ;         ; 15.000  ;
+; eir2             ; en1              ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir2             ; en2              ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; eir2             ; incr_sc          ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir2             ; left_low         ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir2             ; link_data        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir2             ; link_load        ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir2             ; mq_load          ; 85.000  ; 85.000  ; 85.000  ; 85.000  ;
+; eir2             ; not_last_xfer    ; 58.000  ; 58.000  ; 58.000  ; 58.000  ;
+; eir2             ; restart          ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir2             ; right_low        ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir2             ; shl_ena_low      ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir2             ; skip             ; 97.000  ; 97.000  ; 97.000  ; 97.000  ;
+; eir2             ; tp               ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir3             ; ac_load_low      ; 51.000  ; 51.000  ; 51.000  ; 51.000  ;
+; eir3             ; ad_lk_low        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir3             ; c0               ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir3             ; carry_in         ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir3             ; data1            ; 104.000 ; 104.000 ; 104.000 ; 104.000 ;
+; eir3             ; data_t           ;         ; 15.000  ; 15.000  ;         ;
+; eir3             ; en1              ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir3             ; en2              ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; eir3             ; incr_sc          ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir3             ; left_low         ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir3             ; link_data        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir3             ; link_load        ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir3             ; md_disable       ;         ; 15.000  ; 15.000  ;         ;
+; eir3             ; mq_load          ; 85.000  ; 85.000  ; 85.000  ; 85.000  ;
+; eir3             ; not_last_xfer    ; 58.000  ; 58.000  ; 58.000  ; 58.000  ;
+; eir3             ; restart          ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; eir3             ; right_low        ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir3             ; shl_ena_low      ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; eir3             ; skip             ; 97.000  ; 97.000  ; 97.000  ; 97.000  ;
+; eir3             ; tp               ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; en2              ; en0              ;         ; 15.000  ; 15.000  ;         ;
+; fetch            ; ac_load_low      ; 42.000  ; 42.000  ; 42.000  ; 42.000  ;
+; fetch            ; ad_lk_low        ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; fetch            ; c0               ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; fetch            ; carry_in         ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; fetch            ; data1            ; 95.000  ; 95.000  ; 95.000  ; 95.000  ;
+; fetch            ; en1              ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; fetch            ; incr_sc          ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; fetch            ; left_low         ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; fetch            ; link_data        ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; fetch            ; link_load        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; fetch            ; mq_load          ; 76.000  ; 76.000  ; 76.000  ; 76.000  ;
+; fetch            ; not_last_xfer    ; 49.000  ; 49.000  ; 49.000  ; 49.000  ;
+; fetch            ; restart          ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; fetch            ; right_low        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; fetch            ; shl_ena_low      ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; fetch            ; skip             ; 88.000  ; 88.000  ; 88.000  ; 88.000  ;
+; fetch            ; tp               ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; gtf_or_ind       ; data1            ; 22.000  ;         ;         ; 22.000  ;
+; init             ; ac_load_low      ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; init             ; ad_lk_low        ; 51.000  ; 51.000  ; 51.000  ; 51.000  ;
+; init             ; c0               ;         ; 60.000  ; 60.000  ;         ;
+; init             ; carry_in         ; 51.000  ;         ;         ; 51.000  ;
+; init             ; data1            ; 86.000  ; 86.000  ; 86.000  ; 86.000  ;
+; init             ; en1              ;         ; 51.000  ; 51.000  ;         ;
+; init             ; incr_sc          ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; init             ; left_low         ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; init             ; link_data        ; 51.000  ;         ;         ; 51.000  ;
+; init             ; link_load        ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; init             ; mq_load          ; 67.000  ; 67.000  ; 67.000  ; 67.000  ;
+; init             ; not_last_xfer    ; 67.000  ; 67.000  ; 67.000  ; 67.000  ;
+; init             ; restart          ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; init             ; right_low        ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; init             ; shl_ena_low      ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; init             ; skip             ; 79.000  ; 79.000  ; 79.000  ; 79.000  ;
+; init             ; tp               ; 60.000  ;         ;         ; 60.000  ;
+; last_step_l      ; ac_load_low      ; 43.000  ;         ;         ; 43.000  ;
+; last_step_l      ; ad_lk_low        ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; last_step_l      ; c0               ;         ; 70.000  ; 70.000  ;         ;
+; last_step_l      ; carry_in         ; 61.000  ;         ;         ; 61.000  ;
+; last_step_l      ; data1            ; 96.000  ; 96.000  ; 96.000  ; 96.000  ;
+; last_step_l      ; data_f           ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; last_step_l      ; en1              ; 15.000  ; 61.000  ; 61.000  ; 15.000  ;
+; last_step_l      ; incr_sc          ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; last_step_l      ; left_low         ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; last_step_l      ; link_data        ; 61.000  ;         ;         ; 61.000  ;
+; last_step_l      ; link_load        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; last_step_l      ; mq_load          ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; last_step_l      ; not_last_xfer    ; 50.000  ;         ;         ; 50.000  ;
+; last_step_l      ; restart          ; 43.000  ; 61.000  ; 61.000  ; 43.000  ;
+; last_step_l      ; right_low        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; last_step_l      ; shl_ena_low      ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; last_step_l      ; skip             ; 89.000  ; 89.000  ; 89.000  ; 89.000  ;
+; last_step_l      ; tp               ; 70.000  ;         ;         ; 70.000  ;
+; link             ; carry_in         ;         ; 15.000  ; 15.000  ;         ;
+; modeb            ; c0               ; 15.000  ;         ;         ; 15.000  ;
+; modeb            ; data1            ; 51.000  ; 50.000  ; 50.000  ; 51.000  ;
+; modeb            ; incr_sc          ;         ; 25.000  ; 25.000  ;         ;
+; modeb            ; left_low         ;         ; 25.000  ; 25.000  ;         ;
+; modeb            ; link_load        ;         ; 25.000  ; 25.000  ;         ;
+; modeb            ; mq_load          ;         ; 32.000  ; 32.000  ;         ;
+; modeb            ; right_low        ; 25.000  ;         ;         ; 25.000  ;
+; modeb            ; shl_ena_low      ;         ; 25.000  ; 25.000  ;         ;
+; modeb            ; skip             ; 44.000  ; 43.000  ; 43.000  ; 44.000  ;
+; mq0_low          ; ad_lk_low        ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; mq0_low          ; data1            ; 58.000  ; 51.000  ; 51.000  ; 58.000  ;
+; mq0_low          ; skip             ; 51.000  ;         ;         ; 51.000  ;
+; mq10_low         ; data_f           ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; mq10_low         ; mq_data_low      ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; mq11_low         ; ad_lk_low        ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; mq11_low         ; data1            ; 44.000  ; 51.000  ; 51.000  ; 44.000  ;
+; mq11_low         ; data_f           ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; mq11_low         ; en1              ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; mq11_low         ; skip             ;         ; 44.000  ; 44.000  ;         ;
+; mq_0             ; ac_load_low      ;         ; 43.000  ; 43.000  ;         ;
+; mq_0             ; ad_lk_low        ; 61.000  ; 61.000  ; 61.000  ; 61.000  ;
+; mq_0             ; c0               ; 70.000  ;         ;         ; 70.000  ;
+; mq_0             ; carry_in         ;         ; 61.000  ; 61.000  ;         ;
+; mq_0             ; data1            ; 96.000  ; 96.000  ; 96.000  ; 96.000  ;
+; mq_0             ; en1              ; 61.000  ;         ;         ; 61.000  ;
+; mq_0             ; incr_sc          ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; mq_0             ; left_low         ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; mq_0             ; link_data        ;         ; 61.000  ; 61.000  ;         ;
+; mq_0             ; link_load        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; mq_0             ; mq_load          ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; mq_0             ; not_last_xfer    ;         ; 50.000  ; 50.000  ;         ;
+; mq_0             ; restart          ; 61.000  ; 43.000  ; 43.000  ; 61.000  ;
+; mq_0             ; right_low        ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; mq_0             ; shl_ena_low      ; 70.000  ; 70.000  ; 70.000  ; 70.000  ;
+; mq_0             ; skip             ; 89.000  ; 89.000  ; 89.000  ; 89.000  ;
+; mq_0             ; tp               ;         ; 70.000  ; 70.000  ;         ;
+; msir_disable     ; carry_in         ; 15.000  ;         ;         ; 15.000  ;
+; msir_disable     ; en0              ; 15.000  ;         ;         ; 15.000  ;
+; next_loc         ; carry_in         ; 15.000  ;         ;         ; 15.000  ;
+; next_loc         ; en0              ; 15.000  ;         ;         ; 15.000  ;
+; next_loc         ; skip             ; 15.000  ;         ;         ; 15.000  ;
+; rom_11_l         ; link_data        ;         ; 15.000  ; 15.000  ;         ;
+; rom_12_l         ; ac_load_low      ; 50.000  ; 42.000  ; 42.000  ; 50.000  ;
+; rom_12_l         ; ad_lk_low        ; 68.000  ; 68.000  ; 68.000  ; 68.000  ;
+; rom_12_l         ; c0               ; 69.000  ; 77.000  ; 77.000  ; 69.000  ;
+; rom_12_l         ; carry_in         ; 68.000  ; 60.000  ; 60.000  ; 68.000  ;
+; rom_12_l         ; data1            ; 103.000 ; 103.000 ; 103.000 ; 103.000 ;
+; rom_12_l         ; data_f           ; 23.000  ;         ;         ; 23.000  ;
+; rom_12_l         ; en1              ; 60.000  ; 68.000  ; 68.000  ; 60.000  ;
+; rom_12_l         ; incr_sc          ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_12_l         ; left_low         ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_12_l         ; link_data        ; 68.000  ; 60.000  ; 60.000  ; 68.000  ;
+; rom_12_l         ; link_load        ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_12_l         ; mq_data_low      ; 33.000  ; 31.000  ; 31.000  ; 33.000  ;
+; rom_12_l         ; mq_load          ; 84.000  ; 84.000  ; 84.000  ; 84.000  ;
+; rom_12_l         ; not_last_xfer    ; 57.000  ; 49.000  ; 49.000  ; 57.000  ;
+; rom_12_l         ; restart          ; 60.000  ; 68.000  ; 68.000  ; 60.000  ;
+; rom_12_l         ; right_low        ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_12_l         ; shl_ena_low      ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_12_l         ; skip             ; 96.000  ; 96.000  ; 96.000  ; 96.000  ;
+; rom_12_l         ; tp               ; 77.000  ; 69.000  ; 69.000  ; 77.000  ;
+; rom_13_l         ; carry_in         ; 15.000  ;         ;         ; 15.000  ;
+; rom_13_l         ; link_data        ;         ; 15.000  ; 15.000  ;         ;
+; rom_14_l         ; ac_load_low      ; 15.000  ; 50.000  ; 50.000  ; 15.000  ;
+; rom_14_l         ; ad_lk_low        ; 68.000  ; 68.000  ; 68.000  ; 68.000  ;
+; rom_14_l         ; c0               ; 77.000  ;         ;         ; 77.000  ;
+; rom_14_l         ; carry_in         ;         ; 68.000  ; 68.000  ;         ;
+; rom_14_l         ; data1            ; 103.000 ; 103.000 ; 103.000 ; 103.000 ;
+; rom_14_l         ; data_f           ;         ; 23.000  ; 23.000  ;         ;
+; rom_14_l         ; en1              ; 68.000  ; 23.000  ; 23.000  ; 68.000  ;
+; rom_14_l         ; incr_sc          ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_14_l         ; left_low         ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_14_l         ; link_data        ;         ; 68.000  ; 68.000  ;         ;
+; rom_14_l         ; link_load        ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_14_l         ; mq_data_low      ; 31.000  ; 33.000  ; 33.000  ; 31.000  ;
+; rom_14_l         ; mq_load          ; 84.000  ; 84.000  ; 84.000  ; 84.000  ;
+; rom_14_l         ; not_last_xfer    ; 22.000  ; 57.000  ; 57.000  ; 22.000  ;
+; rom_14_l         ; restart          ; 68.000  ; 50.000  ; 50.000  ; 68.000  ;
+; rom_14_l         ; right_low        ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_14_l         ; shl_ena_low      ; 77.000  ; 77.000  ; 77.000  ; 77.000  ;
+; rom_14_l         ; skip             ; 96.000  ; 96.000  ; 96.000  ; 96.000  ;
+; rom_14_l         ; tp               ;         ; 77.000  ; 77.000  ;         ;
+; rom_15_l         ; ac_load_low      ; 42.000  ; 51.000  ; 51.000  ; 42.000  ;
+; rom_15_l         ; ac_to_bus_low    ;         ; 15.000  ; 15.000  ;         ;
+; rom_15_l         ; ad_lk_low        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; rom_15_l         ; c0               ; 78.000  ; 69.000  ; 69.000  ; 78.000  ;
+; rom_15_l         ; carry_in         ; 60.000  ; 69.000  ; 69.000  ; 60.000  ;
+; rom_15_l         ; data1            ; 104.000 ; 104.000 ; 104.000 ; 104.000 ;
+; rom_15_l         ; en1              ; 69.000  ; 60.000  ; 60.000  ; 69.000  ;
+; rom_15_l         ; incr_sc          ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_15_l         ; left_low         ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_15_l         ; link_data        ; 60.000  ; 69.000  ; 69.000  ; 60.000  ;
+; rom_15_l         ; link_load        ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_15_l         ; mq_load          ; 85.000  ; 85.000  ; 85.000  ; 85.000  ;
+; rom_15_l         ; not_last_xfer    ; 49.000  ; 58.000  ; 58.000  ; 49.000  ;
+; rom_15_l         ; restart          ; 69.000  ; 60.000  ; 60.000  ; 69.000  ;
+; rom_15_l         ; right_low        ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_15_l         ; shl_ena_low      ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_15_l         ; skip             ; 97.000  ; 97.000  ; 97.000  ; 97.000  ;
+; rom_15_l         ; tp               ; 69.000  ; 78.000  ; 78.000  ; 69.000  ;
+; rom_17_l         ; link_load        ;         ; 15.000  ; 15.000  ;         ;
+; rom_22_l         ; ac_load_low      ; 24.000  ; 51.000  ; 51.000  ; 24.000  ;
+; rom_22_l         ; ad_lk_low        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; rom_22_l         ; c0               ; 78.000  ;         ;         ; 78.000  ;
+; rom_22_l         ; carry_in         ;         ; 69.000  ; 69.000  ;         ;
+; rom_22_l         ; data1            ; 104.000 ; 104.000 ; 104.000 ; 104.000 ;
+; rom_22_l         ; data_f           ;         ; 15.000  ; 15.000  ;         ;
+; rom_22_l         ; en1              ; 69.000  ;         ;         ; 69.000  ;
+; rom_22_l         ; en2              ;         ; 15.000  ; 15.000  ;         ;
+; rom_22_l         ; incr_sc          ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_22_l         ; left_low         ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_22_l         ; link_data        ;         ; 69.000  ; 69.000  ;         ;
+; rom_22_l         ; link_load        ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_22_l         ; mq_load          ; 85.000  ; 85.000  ; 85.000  ; 85.000  ;
+; rom_22_l         ; not_last_xfer    ; 49.000  ; 58.000  ; 58.000  ; 49.000  ;
+; rom_22_l         ; restart          ; 69.000  ; 51.000  ; 51.000  ; 69.000  ;
+; rom_22_l         ; right_low        ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_22_l         ; shl_ena_low      ; 78.000  ; 78.000  ; 78.000  ; 78.000  ;
+; rom_22_l         ; skip             ; 97.000  ; 97.000  ; 97.000  ; 97.000  ;
+; rom_22_l         ; tp               ;         ; 78.000  ; 78.000  ;         ;
+; rom_24_l         ; skip             ;         ; 15.000  ; 15.000  ;         ;
+; rtf              ; data1            ; 50.000  ; 51.000  ; 51.000  ; 50.000  ;
+; rtf              ; skip             ; 43.000  ; 44.000  ; 44.000  ; 43.000  ;
+; sc_0_low         ; data_f           ;         ; 15.000  ; 15.000  ;         ;
+; sc_0_low         ; mq_data_low      ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; sgt_low          ; skip             ;         ; 15.000  ; 15.000  ;         ;
+; tp1              ; not_last_xfer    ; 41.000  ; 48.000  ; 48.000  ; 41.000  ;
+; tp3              ; ac_load_low      ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; tp3              ; ad_lk_low        ; 60.000  ; 60.000  ; 60.000  ; 60.000  ;
+; tp3              ; c0               ; 42.000  ; 69.000  ; 69.000  ; 42.000  ;
+; tp3              ; carry_in         ; 60.000  ; 33.000  ; 33.000  ; 60.000  ;
+; tp3              ; data1            ; 95.000  ; 95.000  ; 95.000  ; 95.000  ;
+; tp3              ; en1              ; 33.000  ; 60.000  ; 60.000  ; 33.000  ;
+; tp3              ; incr_sc          ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; tp3              ; left_low         ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; tp3              ; link_data        ; 60.000  ; 33.000  ; 33.000  ; 60.000  ;
+; tp3              ; link_load        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; tp3              ; mq_load          ; 76.000  ; 76.000  ; 76.000  ; 76.000  ;
+; tp3              ; not_last_xfer    ; 76.000  ; 76.000  ; 76.000  ; 76.000  ;
+; tp3              ; restart          ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; tp3              ; right_low        ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; tp3              ; shl_ena_low      ; 69.000  ; 69.000  ; 69.000  ; 69.000  ;
+; tp3              ; skip             ; 88.000  ; 88.000  ; 88.000  ; 88.000  ;
+; tp3              ; tp               ; 69.000  ; 42.000  ; 42.000  ; 69.000  ;
+; ts2              ; data_t           ;         ; 15.000  ; 15.000  ;         ;
+; ts2              ; md_disable       ;         ; 15.000  ; 15.000  ;         ;
+; ts2              ; mq_to_bus_low    ;         ; 15.000  ; 15.000  ;         ;
+; ts3              ; ac_load_low      ;         ; 15.000  ; 15.000  ;         ;
+; ts3              ; ac_to_bus_low    ;         ; 15.000  ; 15.000  ;         ;
+; ts3              ; ad_lk_low        ;         ; 15.000  ; 15.000  ;         ;
+; ts3              ; carry_in         ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; ts3              ; data1            ; 58.000  ; 51.000  ; 51.000  ; 58.000  ;
+; ts3              ; data_f           ; 15.000  ; 15.000  ; 15.000  ; 15.000  ;
+; ts3              ; en1              ;         ; 15.000  ; 15.000  ;         ;
+; ts3              ; en2              ; 15.000  ;         ;         ; 15.000  ;
+; ts3              ; left_low         ;         ; 15.000  ; 15.000  ;         ;
+; ts3              ; link_load        ;         ; 15.000  ; 15.000  ;         ;
+; ts3              ; mq_data_low      ; 23.000  ; 15.000  ; 15.000  ; 23.000  ;
+; ts3              ; mq_load          ; 30.000  ; 22.000  ; 22.000  ; 30.000  ;
+; ts3              ; mq_to_bus_low    ;         ; 15.000  ; 15.000  ;         ;
+; ts3              ; shl_ena_low      ;         ; 15.000  ; 15.000  ;         ;
+; ts3              ; skip             ; 51.000  ; 43.000  ; 43.000  ; 51.000  ;
+; ts4              ; carry_in         ;         ; 15.000  ; 15.000  ;         ;
+; ts4              ; en0              ;         ; 15.000  ; 15.000  ;         ;
++------------------+------------------+---------+---------+---------+---------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Propagation Delay                                               ;
++------------------+------------------+--------+--------+--------+--------+
+; Input Port       ; Output Port      ; RR     ; RF     ; FR     ; FF     ;
++------------------+------------------+--------+--------+--------+--------+
+; ac0              ; data1            ; 49.000 ; 42.000 ; 42.000 ; 49.000 ;
+; ac0              ; link_data        ; 15.000 ;        ;        ; 15.000 ;
+; ac0              ; skip             ; 42.000 ;        ;        ; 42.000 ;
+; ac0_ne_ac1       ; ac_load_low      ;        ; 42.000 ; 42.000 ;        ;
+; ac0_ne_ac1       ; ad_lk_low        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; ac0_ne_ac1       ; c0               ; 69.000 ;        ;        ; 69.000 ;
+; ac0_ne_ac1       ; carry_in         ;        ; 60.000 ; 60.000 ;        ;
+; ac0_ne_ac1       ; data1            ; 33.000 ; 40.000 ; 40.000 ; 33.000 ;
+; ac0_ne_ac1       ; en1              ; 60.000 ;        ;        ; 60.000 ;
+; ac0_ne_ac1       ; incr_sc          ; 69.000 ; 24.000 ; 24.000 ; 69.000 ;
+; ac0_ne_ac1       ; left_low         ; 60.000 ; 24.000 ; 24.000 ; 60.000 ;
+; ac0_ne_ac1       ; link_data        ;        ; 60.000 ; 60.000 ;        ;
+; ac0_ne_ac1       ; link_load        ; 69.000 ; 24.000 ; 24.000 ; 69.000 ;
+; ac0_ne_ac1       ; mq_load          ; 67.000 ; 31.000 ; 31.000 ; 67.000 ;
+; ac0_ne_ac1       ; not_last_xfer    ;        ; 42.000 ; 42.000 ;        ;
+; ac0_ne_ac1       ; restart          ; 60.000 ; 42.000 ; 42.000 ; 60.000 ;
+; ac0_ne_ac1       ; right_low        ; 24.000 ; 68.000 ; 68.000 ; 24.000 ;
+; ac0_ne_ac1       ; shl_ena_low      ; 60.000 ; 24.000 ; 24.000 ; 60.000 ;
+; ac0_ne_ac1       ; skip             ; 41.000 ; 33.000 ; 33.000 ; 41.000 ;
+; ac0_ne_ac1       ; tp               ;        ; 60.000 ; 60.000 ;        ;
+; ac1              ; c0               ;        ; 15.000 ; 15.000 ;        ;
+; ac2_8_0          ; ac_load_low      ;        ; 42.000 ; 42.000 ;        ;
+; ac2_8_0          ; ad_lk_low        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; ac2_8_0          ; c0               ; 24.000 ;        ;        ; 24.000 ;
+; ac2_8_0          ; carry_in         ;        ; 60.000 ; 60.000 ;        ;
+; ac2_8_0          ; data1            ; 33.000 ; 40.000 ; 40.000 ; 33.000 ;
+; ac2_8_0          ; en1              ; 60.000 ;        ;        ; 60.000 ;
+; ac2_8_0          ; incr_sc          ; 69.000 ; 24.000 ; 24.000 ; 69.000 ;
+; ac2_8_0          ; left_low         ; 60.000 ; 24.000 ; 24.000 ; 60.000 ;
+; ac2_8_0          ; link_data        ;        ; 60.000 ; 60.000 ;        ;
+; ac2_8_0          ; link_load        ; 69.000 ; 24.000 ; 24.000 ; 69.000 ;
+; ac2_8_0          ; mq_load          ; 67.000 ; 31.000 ; 31.000 ; 67.000 ;
+; ac2_8_0          ; not_last_xfer    ;        ; 42.000 ; 42.000 ;        ;
+; ac2_8_0          ; restart          ; 60.000 ; 42.000 ; 42.000 ; 60.000 ;
+; ac2_8_0          ; right_low        ; 24.000 ; 68.000 ; 68.000 ; 24.000 ;
+; ac2_8_0          ; shl_ena_low      ; 60.000 ; 24.000 ; 24.000 ; 60.000 ;
+; ac2_8_0          ; skip             ; 15.000 ; 33.000 ; 33.000 ; 15.000 ;
+; ac2_8_0          ; tp               ;        ; 60.000 ; 60.000 ;        ;
+; ac4_11_0         ; ac_load_low      ; 42.000 ;        ;        ; 42.000 ;
+; ac4_11_0         ; ad_lk_low        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; ac4_11_0         ; c0               ;        ; 24.000 ; 24.000 ;        ;
+; ac4_11_0         ; carry_in         ; 60.000 ;        ;        ; 60.000 ;
+; ac4_11_0         ; data1            ; 40.000 ; 33.000 ; 33.000 ; 40.000 ;
+; ac4_11_0         ; en1              ;        ; 60.000 ; 60.000 ;        ;
+; ac4_11_0         ; incr_sc          ; 24.000 ; 69.000 ; 69.000 ; 24.000 ;
+; ac4_11_0         ; left_low         ; 24.000 ; 60.000 ; 60.000 ; 24.000 ;
+; ac4_11_0         ; link_data        ; 60.000 ;        ;        ; 60.000 ;
+; ac4_11_0         ; link_load        ; 24.000 ; 69.000 ; 69.000 ; 24.000 ;
+; ac4_11_0         ; mq_load          ; 31.000 ; 67.000 ; 67.000 ; 31.000 ;
+; ac4_11_0         ; not_last_xfer    ; 42.000 ;        ;        ; 42.000 ;
+; ac4_11_0         ; restart          ; 42.000 ; 60.000 ; 60.000 ; 42.000 ;
+; ac4_11_0         ; right_low        ; 68.000 ; 24.000 ; 24.000 ; 68.000 ;
+; ac4_11_0         ; shl_ena_low      ; 24.000 ; 60.000 ; 60.000 ; 24.000 ;
+; ac4_11_0         ; skip             ; 33.000 ; 41.000 ; 41.000 ; 33.000 ;
+; ac4_11_0         ; tp               ; 60.000 ;        ;        ; 60.000 ;
+; ac_0             ; skip             ; 15.000 ;        ;        ; 15.000 ;
+; ac_load_low      ; mq_data_low      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ac_to_mq_ena_low ; ac_load_low      ;        ; 15.000 ; 15.000 ;        ;
+; ac_to_mq_ena_low ; data_t           ;        ; 15.000 ; 15.000 ;        ;
+; ac_to_mq_ena_low ; en1              ;        ; 15.000 ; 15.000 ;        ;
+; ac_to_mq_ena_low ; md_disable       ;        ; 15.000 ; 15.000 ;        ;
+; ac_to_mq_ena_low ; mq_load          ;        ; 22.000 ; 22.000 ;        ;
+; ac_to_mq_ena_low ; mq_to_bus_low    ;        ; 15.000 ; 15.000 ;        ;
+; ad0_low          ; data1            ; 49.000 ; 42.000 ; 42.000 ; 49.000 ;
+; ad0_low          ; mq_data_low      ; 33.000 ;        ;        ; 33.000 ;
+; ad0_low          ; skip             ; 42.000 ;        ;        ; 42.000 ;
+; carry_out_low    ; ac_load_low      ; 15.000 ; 33.000 ; 33.000 ; 15.000 ;
+; carry_out_low    ; ad_lk_low        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; carry_out_low    ; c0               ; 60.000 ;        ;        ; 60.000 ;
+; carry_out_low    ; carry_in         ;        ; 51.000 ; 51.000 ;        ;
+; carry_out_low    ; data1            ; 68.000 ; 69.000 ; 69.000 ; 68.000 ;
+; carry_out_low    ; en1              ; 51.000 ;        ;        ; 51.000 ;
+; carry_out_low    ; incr_sc          ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; carry_out_low    ; left_low         ; 51.000 ; 60.000 ; 60.000 ; 51.000 ;
+; carry_out_low    ; link_data        ; 15.000 ; 51.000 ; 51.000 ; 15.000 ;
+; carry_out_low    ; link_load        ; 60.000 ; 59.000 ; 59.000 ; 60.000 ;
+; carry_out_low    ; mq_data_low      ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; carry_out_low    ; mq_load          ; 58.000 ; 67.000 ; 67.000 ; 58.000 ;
+; carry_out_low    ; not_last_xfer    ; 15.000 ; 33.000 ; 33.000 ; 15.000 ;
+; carry_out_low    ; restart          ; 51.000 ; 33.000 ; 33.000 ; 51.000 ;
+; carry_out_low    ; right_low        ; 60.000 ; 59.000 ; 59.000 ; 60.000 ;
+; carry_out_low    ; shl_ena_low      ; 51.000 ; 60.000 ; 60.000 ; 51.000 ;
+; carry_out_low    ; skip             ; 69.000 ; 68.000 ; 68.000 ; 69.000 ;
+; carry_out_low    ; tp               ;        ; 51.000 ; 51.000 ;        ;
+; dad_or_dst       ; ac_load_low      ; 42.000 ; 43.000 ; 43.000 ; 42.000 ;
+; dad_or_dst       ; ad_lk_low        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; dad_or_dst       ; c0               ; 70.000 ; 69.000 ; 69.000 ; 70.000 ;
+; dad_or_dst       ; carry_in         ; 60.000 ; 61.000 ; 61.000 ; 60.000 ;
+; dad_or_dst       ; data1            ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; dad_or_dst       ; en1              ; 61.000 ; 60.000 ; 60.000 ; 61.000 ;
+; dad_or_dst       ; incr_sc          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; dad_or_dst       ; left_low         ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; dad_or_dst       ; link_data        ; 60.000 ; 61.000 ; 61.000 ; 60.000 ;
+; dad_or_dst       ; link_load        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; dad_or_dst       ; mq_load          ; 31.000 ; 31.000 ; 31.000 ; 31.000 ;
+; dad_or_dst       ; not_last_xfer    ; 42.000 ; 43.000 ; 43.000 ; 42.000 ;
+; dad_or_dst       ; restart          ; 42.000 ; 43.000 ; 43.000 ; 42.000 ;
+; dad_or_dst       ; right_low        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; dad_or_dst       ; shl_ena_low      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; dad_or_dst       ; skip             ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; dad_or_dst       ; tp               ; 60.000 ; 61.000 ; 61.000 ; 60.000 ;
+; dad_or_dst_low   ; ac_to_mq_ena_low ;        ; 15.000 ; 15.000 ;        ;
+; data1            ; data1            ; 43.000 ; 50.000 ; 50.000 ; 43.000 ;
+; data1            ; skip             ;        ; 43.000 ; 43.000 ;        ;
+; div_12_l         ; left_low         ; 15.000 ;        ;        ; 15.000 ;
+; e                ; ac_to_mq_ena_low ;        ; 15.000 ; 15.000 ;        ;
+; eir2             ; ac_load_low      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; eir2             ; ad_lk_low        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir2             ; c0               ; 69.000 ; 69.000 ; 69.000 ; 69.000 ;
+; eir2             ; carry_in         ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir2             ; data1            ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; eir2             ; data_f           ; 15.000 ;        ;        ; 15.000 ;
+; eir2             ; en1              ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir2             ; en2              ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; eir2             ; incr_sc          ; 69.000 ; 69.000 ; 69.000 ; 69.000 ;
+; eir2             ; left_low         ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir2             ; link_data        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir2             ; link_load        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; eir2             ; mq_load          ; 67.000 ; 67.000 ; 67.000 ; 67.000 ;
+; eir2             ; not_last_xfer    ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; eir2             ; restart          ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; eir2             ; right_low        ; 68.000 ; 68.000 ; 68.000 ; 68.000 ;
+; eir2             ; shl_ena_low      ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir2             ; skip             ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; eir2             ; tp               ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir3             ; ac_load_low      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; eir3             ; ad_lk_low        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir3             ; c0               ; 69.000 ; 69.000 ; 69.000 ; 69.000 ;
+; eir3             ; carry_in         ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir3             ; data1            ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; eir3             ; data_t           ;        ; 15.000 ; 15.000 ;        ;
+; eir3             ; en1              ; 15.000 ; 60.000 ; 60.000 ; 15.000 ;
+; eir3             ; en2              ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; eir3             ; incr_sc          ; 69.000 ; 69.000 ; 69.000 ; 69.000 ;
+; eir3             ; left_low         ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir3             ; link_data        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir3             ; link_load        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; eir3             ; md_disable       ;        ; 15.000 ; 15.000 ;        ;
+; eir3             ; mq_load          ; 67.000 ; 67.000 ; 67.000 ; 67.000 ;
+; eir3             ; not_last_xfer    ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; eir3             ; restart          ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; eir3             ; right_low        ; 68.000 ; 68.000 ; 68.000 ; 68.000 ;
+; eir3             ; shl_ena_low      ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; eir3             ; skip             ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; eir3             ; tp               ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; en2              ; en0              ;        ; 15.000 ; 15.000 ;        ;
+; fetch            ; ac_load_low      ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; fetch            ; ad_lk_low        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; fetch            ; c0               ; 69.000 ; 24.000 ; 24.000 ; 69.000 ;
+; fetch            ; carry_in         ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; fetch            ; data1            ; 34.000 ; 33.000 ; 33.000 ; 34.000 ;
+; fetch            ; en1              ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; fetch            ; incr_sc          ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; fetch            ; left_low         ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; fetch            ; link_data        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; fetch            ; link_load        ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; fetch            ; mq_load          ; 31.000 ; 32.000 ; 32.000 ; 31.000 ;
+; fetch            ; not_last_xfer    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; fetch            ; restart          ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; fetch            ; right_low        ; 25.000 ; 24.000 ; 24.000 ; 25.000 ;
+; fetch            ; shl_ena_low      ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; fetch            ; skip             ; 33.000 ; 34.000 ; 34.000 ; 33.000 ;
+; fetch            ; tp               ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; gtf_or_ind       ; data1            ; 15.000 ;        ;        ; 15.000 ;
+; init             ; ac_load_low      ; 24.000 ; 51.000 ; 51.000 ; 24.000 ;
+; init             ; ad_lk_low        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; init             ; c0               ;        ; 33.000 ; 33.000 ;        ;
+; init             ; carry_in         ; 24.000 ;        ;        ; 24.000 ;
+; init             ; data1            ; 42.000 ; 41.000 ; 41.000 ; 42.000 ;
+; init             ; en1              ;        ; 24.000 ; 24.000 ;        ;
+; init             ; incr_sc          ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; init             ; left_low         ; 33.000 ; 24.000 ; 24.000 ; 33.000 ;
+; init             ; link_data        ; 24.000 ;        ;        ; 24.000 ;
+; init             ; link_load        ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
+; init             ; mq_load          ; 40.000 ; 31.000 ; 31.000 ; 40.000 ;
+; init             ; not_last_xfer    ; 24.000 ; 51.000 ; 51.000 ; 24.000 ;
+; init             ; restart          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; init             ; right_low        ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
+; init             ; shl_ena_low      ; 33.000 ; 24.000 ; 24.000 ; 33.000 ;
+; init             ; skip             ; 41.000 ; 42.000 ; 42.000 ; 41.000 ;
+; init             ; tp               ; 24.000 ;        ;        ; 24.000 ;
+; last_step_l      ; ac_load_low      ; 43.000 ;        ;        ; 43.000 ;
+; last_step_l      ; ad_lk_low        ; 61.000 ; 61.000 ; 61.000 ; 61.000 ;
+; last_step_l      ; c0               ;        ; 70.000 ; 70.000 ;        ;
+; last_step_l      ; carry_in         ; 61.000 ;        ;        ; 61.000 ;
+; last_step_l      ; data1            ; 41.000 ; 34.000 ; 34.000 ; 41.000 ;
+; last_step_l      ; data_f           ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; last_step_l      ; en1              ; 15.000 ; 61.000 ; 61.000 ; 15.000 ;
+; last_step_l      ; incr_sc          ; 25.000 ; 70.000 ; 70.000 ; 25.000 ;
+; last_step_l      ; left_low         ; 15.000 ; 61.000 ; 61.000 ; 15.000 ;
+; last_step_l      ; link_data        ; 61.000 ;        ;        ; 61.000 ;
+; last_step_l      ; link_load        ; 25.000 ; 15.000 ; 15.000 ; 25.000 ;
+; last_step_l      ; mq_load          ; 22.000 ; 68.000 ; 68.000 ; 22.000 ;
+; last_step_l      ; not_last_xfer    ; 43.000 ;        ;        ; 43.000 ;
+; last_step_l      ; restart          ; 43.000 ; 61.000 ; 61.000 ; 43.000 ;
+; last_step_l      ; right_low        ; 69.000 ; 25.000 ; 25.000 ; 69.000 ;
+; last_step_l      ; shl_ena_low      ; 25.000 ; 61.000 ; 61.000 ; 25.000 ;
+; last_step_l      ; skip             ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; last_step_l      ; tp               ; 61.000 ;        ;        ; 61.000 ;
+; link             ; carry_in         ;        ; 15.000 ; 15.000 ;        ;
+; modeb            ; c0               ; 15.000 ;        ;        ; 15.000 ;
+; modeb            ; data1            ; 31.000 ; 24.000 ; 24.000 ; 31.000 ;
+; modeb            ; incr_sc          ;        ; 25.000 ; 25.000 ;        ;
+; modeb            ; left_low         ;        ; 25.000 ; 25.000 ;        ;
+; modeb            ; link_load        ;        ; 25.000 ; 25.000 ;        ;
+; modeb            ; mq_load          ;        ; 32.000 ; 32.000 ;        ;
+; modeb            ; right_low        ; 25.000 ;        ;        ; 25.000 ;
+; modeb            ; shl_ena_low      ;        ; 25.000 ; 25.000 ;        ;
+; modeb            ; skip             ; 24.000 ; 34.000 ; 34.000 ; 24.000 ;
+; mq0_low          ; ad_lk_low        ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; mq0_low          ; data1            ; 49.000 ; 42.000 ; 42.000 ; 49.000 ;
+; mq0_low          ; skip             ; 42.000 ;        ;        ; 42.000 ;
+; mq10_low         ; data_f           ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; mq10_low         ; mq_data_low      ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; mq11_low         ; ad_lk_low        ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; mq11_low         ; data1            ; 42.000 ; 49.000 ; 49.000 ; 42.000 ;
+; mq11_low         ; data_f           ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; mq11_low         ; en1              ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; mq11_low         ; skip             ;        ; 42.000 ; 42.000 ;        ;
+; mq_0             ; ac_load_low      ;        ; 42.000 ; 42.000 ;        ;
+; mq_0             ; ad_lk_low        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; mq_0             ; c0               ; 24.000 ;        ;        ; 24.000 ;
+; mq_0             ; carry_in         ;        ; 60.000 ; 60.000 ;        ;
+; mq_0             ; data1            ; 33.000 ; 40.000 ; 40.000 ; 33.000 ;
+; mq_0             ; en1              ; 60.000 ;        ;        ; 60.000 ;
+; mq_0             ; incr_sc          ; 69.000 ; 24.000 ; 24.000 ; 69.000 ;
+; mq_0             ; left_low         ; 60.000 ; 24.000 ; 24.000 ; 60.000 ;
+; mq_0             ; link_data        ;        ; 60.000 ; 60.000 ;        ;
+; mq_0             ; link_load        ; 69.000 ; 24.000 ; 24.000 ; 69.000 ;
+; mq_0             ; mq_load          ; 67.000 ; 31.000 ; 31.000 ; 67.000 ;
+; mq_0             ; not_last_xfer    ;        ; 42.000 ; 42.000 ;        ;
+; mq_0             ; restart          ; 60.000 ; 42.000 ; 42.000 ; 60.000 ;
+; mq_0             ; right_low        ; 24.000 ; 68.000 ; 68.000 ; 24.000 ;
+; mq_0             ; shl_ena_low      ; 60.000 ; 24.000 ; 24.000 ; 60.000 ;
+; mq_0             ; skip             ; 41.000 ; 33.000 ; 33.000 ; 41.000 ;
+; mq_0             ; tp               ;        ; 60.000 ; 60.000 ;        ;
+; msir_disable     ; carry_in         ; 15.000 ;        ;        ; 15.000 ;
+; msir_disable     ; en0              ; 15.000 ;        ;        ; 15.000 ;
+; next_loc         ; carry_in         ; 15.000 ;        ;        ; 15.000 ;
+; next_loc         ; en0              ; 15.000 ;        ;        ; 15.000 ;
+; next_loc         ; skip             ; 15.000 ;        ;        ; 15.000 ;
+; rom_11_l         ; link_data        ;        ; 15.000 ; 15.000 ;        ;
+; rom_12_l         ; ac_load_low      ; 41.000 ; 15.000 ; 15.000 ; 41.000 ;
+; rom_12_l         ; ad_lk_low        ; 15.000 ; 59.000 ; 59.000 ; 15.000 ;
+; rom_12_l         ; c0               ; 24.000 ; 68.000 ; 68.000 ; 24.000 ;
+; rom_12_l         ; carry_in         ; 59.000 ; 60.000 ; 60.000 ; 59.000 ;
+; rom_12_l         ; data1            ; 33.000 ; 32.000 ; 32.000 ; 33.000 ;
+; rom_12_l         ; data_f           ; 23.000 ;        ;        ; 23.000 ;
+; rom_12_l         ; en1              ; 23.000 ; 15.000 ; 15.000 ; 23.000 ;
+; rom_12_l         ; incr_sc          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; rom_12_l         ; left_low         ; 15.000 ; 24.000 ; 24.000 ; 15.000 ;
+; rom_12_l         ; link_data        ; 23.000 ; 60.000 ; 60.000 ; 23.000 ;
+; rom_12_l         ; link_load        ; 23.000 ; 23.000 ; 23.000 ; 23.000 ;
+; rom_12_l         ; mq_data_low      ; 23.000 ; 31.000 ; 31.000 ; 23.000 ;
+; rom_12_l         ; mq_load          ; 30.000 ; 31.000 ; 31.000 ; 30.000 ;
+; rom_12_l         ; not_last_xfer    ; 41.000 ; 15.000 ; 15.000 ; 41.000 ;
+; rom_12_l         ; restart          ; 41.000 ; 42.000 ; 42.000 ; 41.000 ;
+; rom_12_l         ; right_low        ; 23.000 ; 24.000 ; 24.000 ; 23.000 ;
+; rom_12_l         ; shl_ena_low      ; 15.000 ; 24.000 ; 24.000 ; 15.000 ;
+; rom_12_l         ; skip             ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
+; rom_12_l         ; tp               ; 59.000 ; 60.000 ; 60.000 ; 59.000 ;
+; rom_13_l         ; carry_in         ; 15.000 ;        ;        ; 15.000 ;
+; rom_13_l         ; link_data        ;        ; 15.000 ; 15.000 ;        ;
+; rom_14_l         ; ac_load_low      ; 15.000 ; 41.000 ; 41.000 ; 15.000 ;
+; rom_14_l         ; ad_lk_low        ; 59.000 ; 15.000 ; 15.000 ; 59.000 ;
+; rom_14_l         ; c0               ; 68.000 ;        ;        ; 68.000 ;
+; rom_14_l         ; carry_in         ;        ; 59.000 ; 59.000 ;        ;
+; rom_14_l         ; data1            ; 32.000 ; 34.000 ; 34.000 ; 32.000 ;
+; rom_14_l         ; data_f           ;        ; 23.000 ; 23.000 ;        ;
+; rom_14_l         ; en1              ; 15.000 ; 23.000 ; 23.000 ; 15.000 ;
+; rom_14_l         ; incr_sc          ; 68.000 ; 68.000 ; 68.000 ; 68.000 ;
+; rom_14_l         ; left_low         ; 59.000 ; 15.000 ; 15.000 ; 59.000 ;
+; rom_14_l         ; link_data        ;        ; 23.000 ; 23.000 ;        ;
+; rom_14_l         ; link_load        ; 15.000 ; 23.000 ; 23.000 ; 15.000 ;
+; rom_14_l         ; mq_data_low      ; 31.000 ; 23.000 ; 23.000 ; 31.000 ;
+; rom_14_l         ; mq_load          ; 38.000 ; 30.000 ; 30.000 ; 38.000 ;
+; rom_14_l         ; not_last_xfer    ; 15.000 ; 41.000 ; 41.000 ; 15.000 ;
+; rom_14_l         ; restart          ; 59.000 ; 41.000 ; 41.000 ; 59.000 ;
+; rom_14_l         ; right_low        ; 68.000 ; 23.000 ; 23.000 ; 68.000 ;
+; rom_14_l         ; shl_ena_low      ; 59.000 ; 15.000 ; 15.000 ; 59.000 ;
+; rom_14_l         ; skip             ; 34.000 ; 32.000 ; 32.000 ; 34.000 ;
+; rom_14_l         ; tp               ;        ; 59.000 ; 59.000 ;        ;
+; rom_15_l         ; ac_load_low      ; 24.000 ; 42.000 ; 42.000 ; 24.000 ;
+; rom_15_l         ; ac_to_bus_low    ;        ; 15.000 ; 15.000 ;        ;
+; rom_15_l         ; ad_lk_low        ; 60.000 ; 15.000 ; 15.000 ; 60.000 ;
+; rom_15_l         ; c0               ; 69.000 ; 24.000 ; 24.000 ; 69.000 ;
+; rom_15_l         ; carry_in         ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; rom_15_l         ; data1            ; 33.000 ; 32.000 ; 32.000 ; 33.000 ;
+; rom_15_l         ; en1              ; 60.000 ; 15.000 ; 15.000 ; 60.000 ;
+; rom_15_l         ; incr_sc          ; 24.000 ; 15.000 ; 15.000 ; 24.000 ;
+; rom_15_l         ; left_low         ; 24.000 ; 15.000 ; 15.000 ; 24.000 ;
+; rom_15_l         ; link_data        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; rom_15_l         ; link_load        ; 23.000 ; 24.000 ; 24.000 ; 23.000 ;
+; rom_15_l         ; mq_load          ; 31.000 ; 31.000 ; 31.000 ; 31.000 ;
+; rom_15_l         ; not_last_xfer    ; 24.000 ; 42.000 ; 42.000 ; 24.000 ;
+; rom_15_l         ; restart          ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; rom_15_l         ; right_low        ; 23.000 ; 24.000 ; 24.000 ; 23.000 ;
+; rom_15_l         ; shl_ena_low      ; 24.000 ; 15.000 ; 15.000 ; 24.000 ;
+; rom_15_l         ; skip             ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
+; rom_15_l         ; tp               ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; rom_17_l         ; link_load        ;        ; 15.000 ; 15.000 ;        ;
+; rom_22_l         ; ac_load_low      ; 24.000 ; 42.000 ; 42.000 ; 24.000 ;
+; rom_22_l         ; ad_lk_low        ; 60.000 ; 60.000 ; 60.000 ; 60.000 ;
+; rom_22_l         ; c0               ; 69.000 ;        ;        ; 69.000 ;
+; rom_22_l         ; carry_in         ;        ; 15.000 ; 15.000 ;        ;
+; rom_22_l         ; data1            ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; rom_22_l         ; data_f           ;        ; 15.000 ; 15.000 ;        ;
+; rom_22_l         ; en1              ; 60.000 ;        ;        ; 60.000 ;
+; rom_22_l         ; en2              ;        ; 15.000 ; 15.000 ;        ;
+; rom_22_l         ; incr_sc          ; 69.000 ; 69.000 ; 69.000 ; 69.000 ;
+; rom_22_l         ; left_low         ; 60.000 ; 69.000 ; 69.000 ; 60.000 ;
+; rom_22_l         ; link_data        ;        ; 60.000 ; 60.000 ;        ;
+; rom_22_l         ; link_load        ; 24.000 ; 68.000 ; 68.000 ; 24.000 ;
+; rom_22_l         ; mq_load          ; 67.000 ; 76.000 ; 76.000 ; 67.000 ;
+; rom_22_l         ; not_last_xfer    ; 24.000 ; 42.000 ; 42.000 ; 24.000 ;
+; rom_22_l         ; restart          ; 60.000 ; 42.000 ; 42.000 ; 60.000 ;
+; rom_22_l         ; right_low        ; 69.000 ; 68.000 ; 68.000 ; 69.000 ;
+; rom_22_l         ; shl_ena_low      ; 60.000 ; 69.000 ; 69.000 ; 60.000 ;
+; rom_22_l         ; skip             ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; rom_22_l         ; tp               ;        ; 60.000 ; 60.000 ;        ;
+; rom_24_l         ; skip             ;        ; 15.000 ; 15.000 ;        ;
+; rtf              ; data1            ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; rtf              ; skip             ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; sc_0_low         ; data_f           ;        ; 15.000 ; 15.000 ;        ;
+; sc_0_low         ; mq_data_low      ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; sgt_low          ; skip             ;        ; 15.000 ; 15.000 ;        ;
+; tp1              ; not_last_xfer    ; 32.000 ; 39.000 ; 39.000 ; 32.000 ;
+; tp3              ; ac_load_low      ; 15.000 ; 60.000 ; 60.000 ; 15.000 ;
+; tp3              ; ad_lk_low        ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; tp3              ; c0               ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; tp3              ; carry_in         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; tp3              ; data1            ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; tp3              ; en1              ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; tp3              ; incr_sc          ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; tp3              ; left_low         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; tp3              ; link_data        ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; tp3              ; link_load        ; 15.000 ; 41.000 ; 41.000 ; 15.000 ;
+; tp3              ; mq_load          ; 40.000 ; 15.000 ; 15.000 ; 40.000 ;
+; tp3              ; not_last_xfer    ; 33.000 ; 60.000 ; 60.000 ; 33.000 ;
+; tp3              ; restart          ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; tp3              ; right_low        ; 41.000 ; 41.000 ; 41.000 ; 41.000 ;
+; tp3              ; shl_ena_low      ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; tp3              ; skip             ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; tp3              ; tp               ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; ts2              ; data_t           ;        ; 15.000 ; 15.000 ;        ;
+; ts2              ; md_disable       ;        ; 15.000 ; 15.000 ;        ;
+; ts2              ; mq_to_bus_low    ;        ; 15.000 ; 15.000 ;        ;
+; ts3              ; ac_load_low      ;        ; 15.000 ; 15.000 ;        ;
+; ts3              ; ac_to_bus_low    ;        ; 15.000 ; 15.000 ;        ;
+; ts3              ; ad_lk_low        ;        ; 15.000 ; 15.000 ;        ;
+; ts3              ; carry_in         ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; ts3              ; data1            ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; ts3              ; data_f           ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; ts3              ; en1              ;        ; 15.000 ; 15.000 ;        ;
+; ts3              ; en2              ; 15.000 ;        ;        ; 15.000 ;
+; ts3              ; left_low         ;        ; 15.000 ; 15.000 ;        ;
+; ts3              ; link_load        ;        ; 15.000 ; 15.000 ;        ;
+; ts3              ; mq_data_low      ; 23.000 ; 15.000 ; 15.000 ; 23.000 ;
+; ts3              ; mq_load          ; 30.000 ; 22.000 ; 22.000 ; 30.000 ;
+; ts3              ; mq_to_bus_low    ;        ; 15.000 ; 15.000 ;        ;
+; ts3              ; shl_ena_low      ;        ; 15.000 ; 15.000 ;        ;
+; ts3              ; skip             ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; ts4              ; carry_in         ;        ; 15.000 ; 15.000 ;        ;
+; ts4              ; en0              ;        ; 15.000 ; 15.000 ;        ;
++------------------+------------------+--------+--------+--------+--------+
+
+
++---------------------------------------------------------------------------+
+; Output Enable Times                                                       ;
++---------------+------------+--------+------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+------+------------+-----------------+
+; data1         ; clock      ; 96.000 ;      ; Fall       ; clock           ;
+; mq_load       ; clock      ; 77.000 ;      ; Fall       ; clock           ;
+; not_last_xfer ; clock      ; 78.000 ;      ; Fall       ; clock           ;
++---------------+------------+--------+------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Minimum Output Enable Times                                               ;
++---------------+------------+--------+------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+------+------------+-----------------+
+; data1         ; clock      ; 33.000 ;      ; Fall       ; clock           ;
+; mq_load       ; clock      ; 42.000 ;      ; Fall       ; clock           ;
+; not_last_xfer ; clock      ; 33.000 ;      ; Fall       ; clock           ;
++---------------+------------+--------+------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------+
+; Output Disable Times                                                              ;
++---------------+------------+-----------+-----------+------------+-----------------+
+; Data Port     ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++---------------+------------+-----------+-----------+------------+-----------------+
+; data1         ; clock      ; 96.000    ;           ; Fall       ; clock           ;
+; mq_load       ; clock      ; 77.000    ;           ; Fall       ; clock           ;
+; not_last_xfer ; clock      ; 78.000    ;           ; Fall       ; clock           ;
++---------------+------------+-----------+-----------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                      ;
++---------------+------------+-----------+-----------+------------+-----------------+
+; Data Port     ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++---------------+------------+-----------+-----------+------------+-----------------+
+; data1         ; clock      ; 33.000    ;           ; Fall       ; clock           ;
+; mq_load       ; clock      ; 42.000    ;           ; Fall       ; clock           ;
+; not_last_xfer ; clock      ; 33.000    ;           ; Fall       ; clock           ;
++---------------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 0        ; 0        ; 12       ; 157      ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 0        ; 0        ; 12       ; 157      ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 48    ; 48   ;
+; Unconstrained Input Port Paths  ; 398   ; 398  ;
+; Unconstrained Output Ports      ; 27    ; 27   ;
+; Unconstrained Output Port Paths ; 401   ; 401  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 16 17:57:46 2019
+Info: Command: quartus_sta M8341 -c M8341
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Warning (335095): TimeQuest Timing Analyzer does not support the analysis of latches as synchronous elements for the currently selected device family.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'M8341.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clock clock
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "n_t_42x~9|[2]"
+    Warning (332126): Node "n_t_42x~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "n_t_69x~9|[2]"
+    Warning (332126): Node "n_t_69x~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "n_t_42x_m~9|[2]"
+    Warning (332126): Node "n_t_42x_m~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "n_t_69x_m~9|[2]"
+    Warning (332126): Node "n_t_69x_m~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "n_t_60x~9|dataout"
+    Warning (332126): Node "n_t_60x~9|[3]"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "n_t_60x_m~9|[1]"
+    Warning (332126): Node "n_t_60x_m~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "n_t_13x~9|dataout"
+    Warning (332126): Node "n_t_13x~9|[2]"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "n_t_13x_m~9|dataout"
+    Warning (332126): Node "n_t_13x_m~9|[2]"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "tp$latch~9|dataout"
+    Warning (332126): Node "tp$latch~9|[2]"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "tp_m~9|dataout"
+    Warning (332126): Node "tp_m~9|[2]"
+Warning (332125): Found combinational loop of 18 nodes
+    Warning (332126): Node "n_t_84x~10|dataout"
+    Warning (332126): Node "n_t_84x~10|[2]"
+    Warning (332126): Node "n_t_73x~0|[2]"
+    Warning (332126): Node "n_t_73x~0|dataout"
+    Warning (332126): Node "n_t_84x~10|[1]"
+    Warning (332126): Node "n_t_84x_m~10|[1]"
+    Warning (332126): Node "n_t_84x_m~10|dataout"
+    Warning (332126): Node "n_t_84x_m~10|[2]"
+    Warning (332126): Node "n_t_84x~10|[0]"
+    Warning (332126): Node "eae_on_m~9|[0]"
+    Warning (332126): Node "eae_on_m~9|dataout"
+    Warning (332126): Node "eae_on_m~9|[3]"
+    Warning (332126): Node "eae_on~9|[0]"
+    Warning (332126): Node "eae_on~9|dataout"
+    Warning (332126): Node "eae_on~9|[3]"
+    Warning (332126): Node "n_t_74x~0|[3]"
+    Warning (332126): Node "n_t_74x~0|dataout"
+    Warning (332126): Node "n_t_84x_m~10|[0]"
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -74.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):   -74.000      -190.000 clock 
+Info (332146): Worst-case hold slack is 5.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     5.000         0.000 clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -4.500
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -4.500       -36.000 clock 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 4540 megabytes
+    Info: Processing ended: Wed Oct 16 17:57:47 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -8832,7 +8832,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="66.04" y1="220.98" x2="60.96" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="TP" class="0">
 <segment>
 <pinref part="E2" gate="B" pin="I0"/>
 <wire x1="99.06" y1="172.72" x2="93.98" y2="172.72" width="0.1524" layer="91"/>
