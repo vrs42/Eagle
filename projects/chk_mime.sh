@@ -34,6 +34,7 @@ while read i; do
     *.doc" - application/octet-stream") ;;
     *.fpd" - application/octet-stream") ;;
     *.mcw" - application/octet-stream") ;;
+    *.pof" - application/octet-stream") ;;
     *) echo $i; status=1 ;;
   esac
 done
