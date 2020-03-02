@@ -1,0 +1,285 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'md10_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'md11_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'md3_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'md4_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'md5_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'md6_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'md7_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'md8_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'md9_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'pause_low'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Setup 'tp3'
+Slack : -3.500
+TNS   : -21.000
+
+Type  : Hold 'md10_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'md11_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'md3_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'md4_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'md5_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'md6_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'md7_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'md8_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'md9_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'pause_low'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Hold 'tp3'
+Slack : -4.000
+TNS   : -24.000
+
+Type  : Recovery 'del_1'
+Slack : -32.000
+TNS   : -32.000
+
+Type  : Recovery 'grn_delay'
+Slack : -32.000
+TNS   : -32.000
+
+Type  : Recovery 'ld_del'
+Slack : -32.000
+TNS   : -32.000
+
+Type  : Recovery 'red_delay'
+Slack : -32.000
+TNS   : -32.000
+
+Type  : Recovery 'set_done'
+Slack : -32.000
+TNS   : -32.000
+
+Type  : Recovery 'md10_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'md11_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'md3_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'md4_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'md5_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'md6_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'md7_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'md8_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'md9_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'pause_low'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Recovery 'tp3'
+Slack : -23.500
+TNS   : -141.000
+
+Type  : Removal 'md10_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'md11_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'md3_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'md4_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'md5_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'md6_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'md7_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'md8_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'md9_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'pause_low'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'tp3'
+Slack : 8.000
+TNS   : 0.000
+
+Type  : Removal 'del_1'
+Slack : 16.000
+TNS   : 0.000
+
+Type  : Removal 'grn_delay'
+Slack : 16.000
+TNS   : 0.000
+
+Type  : Removal 'ld_del'
+Slack : 16.000
+TNS   : 0.000
+
+Type  : Removal 'red_delay'
+Slack : 16.000
+TNS   : 0.000
+
+Type  : Removal 'set_done'
+Slack : 16.000
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'md10_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'md11_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'md3_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'md4_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'md5_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'md6_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'md7_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'md8_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'md9_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'pause_low'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'tp3'
+Slack : -5.500
+TNS   : -66.000
+
+Type  : Minimum Pulse Width 'del_1'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'grn_delay'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'ld_del'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'red_delay'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'set_done'
+Slack : -5.500
+TNS   : -11.000
+
+------------------------------------------------------------

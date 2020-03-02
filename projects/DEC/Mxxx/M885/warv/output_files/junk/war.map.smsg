@@ -1,0 +1,23 @@
+Warning (10090): Verilog HDL syntax warning at war.v(226): extra block comment delimiter characters /* within block comment
+Warning (10240): Verilog HDL Always Construct warning at war.v(424): inferring latch(es) for variable "y03", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(424): inferring latch(es) for variable "y02", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(431): inferring latch(es) for variable "x03", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(431): inferring latch(es) for variable "x02", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(438): inferring latch(es) for variable "y07", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(438): inferring latch(es) for variable "y06", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(438): inferring latch(es) for variable "y05", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(438): inferring latch(es) for variable "y04", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(450): inferring latch(es) for variable "x07", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(450): inferring latch(es) for variable "x06", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(450): inferring latch(es) for variable "x05", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(450): inferring latch(es) for variable "x04", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(461): inferring latch(es) for variable "y11", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(461): inferring latch(es) for variable "y10", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(461): inferring latch(es) for variable "y09", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(461): inferring latch(es) for variable "y08", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(472): inferring latch(es) for variable "x11", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(472): inferring latch(es) for variable "x10", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(472): inferring latch(es) for variable "x09", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(472): inferring latch(es) for variable "x08", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(512): inferring latch(es) for variable "int_enable", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at war.v(517): inferring latch(es) for variable "device_flag", which holds its previous value in one or more paths through the always construct

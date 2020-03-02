@@ -1,0 +1,9 @@
+Fitter Status : Successful - Sun Mar 01 16:24:22 2020
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : warv
+Top-level Entity Name : warv
+Family : MAX7000S
+Device : EPM7128SLC84-15
+Timing Models : Final
+Total macrocells : 41 / 128 ( 32 % )
+Total pins : 68 / 68 ( 100 % )

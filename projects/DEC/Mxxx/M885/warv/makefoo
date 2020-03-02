@@ -1,0 +1,42 @@
+QBIN = /mnt/c/altera/13.0sp1/quartus/bin
+JBIN = /mnt/c/pof2jed/bin
+OF   = output_files
+DEV  = ATF1508AS
+
+all:	$(OF)/warv.jed
+
+orule:
+	$(QBIN)/quartus_map.exe --read_settings_files=on  --write_settings_files=off warv -c warv
+	$(QBIN)/quartus_fit.exe --read_settings_files=off --write_settings_files=off warv -c warv
+	$(QBIN)/quartus_asm.exe --read_settings_files=off --write_settings_files=off warv -c warv
+	$(QBIN)/quartus_sta.exe warv -c warv
+	$(JBIN)/pof2jed.exe -device ATF1508AS output_files/warv
+
+#
+# Most of these rules require the Quartus project file (.qpf) to exist.
+
+#
+# Map the logic.
+$(OF)/warv.map.smsg $(OF)/warv.map.summary $(OF)/warv.map.rpt: warv.v warv.qpf
+	$(QBIN)/quartus_map.exe --read_settings_files=on  --write_settings_files=off warv -c warv
+
+#
+# Fit the design to the chip -- run after quartus_map
+$(OF)/warv.pin $(OF)/warv.fit.summary $(OF)/warv.fit.rpt: $(OF)/warv.map.smsg warv.qpf
+	$(QBIN)/quartus_fit.exe --read_settings_files=off --write_settings_files=off warv -c warv
+
+#
+# Assemble the .pof file -- run after quartus_fit
+$(OF)/warv.jdi $(OF)/warv.pof $(OF)/warv.asm.rpt: $(OF)/warv.pin warv.qpf
+	$(QBIN)/quartus_asm.exe --read_settings_files=off --write_settings_files=off warv -c warv
+
+#
+# Static Timing Analysis -- run after quartus_fit
+# (May generate useful warnings.)
+$(OF)/warv.sta.summary $(OF)/warv.sta.smsg $(OF)/warv.sta.rpt: $(OF)/warv.pof warv.qpf
+	$(QBIN)/quartus_sta.exe warv -c warv
+
+#
+# Convert .pof to .jed
+$(OF)/warv.jed $(OF)/warv.txt: $(OF)/warv.pof
+	$(JBIN)/pof2jed.exe -device $(DEV) output_files/warv
