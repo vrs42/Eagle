@@ -113,6 +113,6 @@ set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_location_assignment PIN_81 -to ld_del
 set_location_assignment PIN_84 -to del_1
 set_global_assignment -name VERILOG_FILE warv.v
-set_location_assignment PIN_80 -to donetp
 set_location_assignment PIN_1 -to grn_delay
 set_location_assignment PIN_83 -to red_delay
+set_location_assignment PIN_80 -to non_store_low

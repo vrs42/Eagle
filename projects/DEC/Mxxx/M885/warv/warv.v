@@ -55,7 +55,7 @@ module warv
   internal_io_low,
   interrupt_low,
   n_t_27x,
-  donetp,
+  non_store_low,
   skip_low,
   write_thru_low,
   load_x,
@@ -122,7 +122,7 @@ output erase_low;
 output internal_io_low;
 output interrupt_low;
 output n_t_27x;
-output donetp;
+output non_store_low;
 output skip_low;
 output write_thru_low;
 output load_x;
@@ -214,8 +214,6 @@ reg x02, x03, x04, x05, x06, x07, x08, x09, x10, x11;
 reg y02, y03, y04, y05, y06, y07, y08, y09, y10, y11;
 
 /* Equations */
-
-assign donetp = n_t_3x;
 
 // Dxx_L are Dxx inverted.
 assign d00 = !d00_l;
@@ -591,8 +589,12 @@ assign interrupt_low = !(done && int_en || device_flag && int_enable)? 1'bz : 1'
 assign n_t_27x = (!store && color_low)? 1'bz : 1'b0;
 //assign n_t_43x = !color_low? 1'bz : 1'b0;
 // BUGBUG: Using non_store_low as debug output.
-assign non_store_low = done;
-//assign non_store_low = store? 1'bz : 1'b0;
+//assign non_store_low = cl_done_low;
+//assign non_store_low = del_1_low && (!set_done) && dly_done_low && ld_del_low;
+//assign non_store_low = dly_done_low; // OK
+assign non_store_low = (!set_done) && dly_done_low;
+//assign non_store_low = del_1_low // BUGBUG
+//assign non_store_low = ld_del_low; // BUGBUG
 // BUGBUG: skip isn't skipping, so make it always skip
 // assign skip_low = !((!disd_low) || (!iot3l))? 1'bz : 1'b0;
 assign skip_low = !((!disd_low && done) || (!iot3l))? 1'bz : 1'b0;
