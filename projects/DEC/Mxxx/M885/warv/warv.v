@@ -1,14 +1,10 @@
 module warv
 (
 /* Input s */
-/* del_1_low is polarity reversed on the prototype! */
-//  del_1_low,
-  del_1,
+  del_1_low,
   grn_delay,
   initialize,
-/* ld_del_low is polarity reversed on the prototype! */
-//  ld_del_low,
-  ld_del,
+  ld_del_low,
   md3_low,
   md4_low,
   md5_low,
@@ -72,10 +68,10 @@ module warv
   di11
 );
 
-input del_1;
+input del_1_low;
 input grn_delay;
 input initialize;
-input ld_del;
+input ld_del_low;
 input md3_low;
 input md4_low;
 input md5_low;
@@ -145,7 +141,6 @@ wire clear_done_low;
 wire cl_done_low;
 wire color_low;
 wire d00, d01, d02, d03, d08, d09, d10, d11;
-wire del_1_low;
 wire di02;
 wire dicd_low;
 wire dicl_low;
@@ -158,7 +153,6 @@ wire disd_low;
 wire iot;
 wire iotl;
 wire iot0l, iot1l, iot2l, iot3l, iot4l;
-wire ld_del_low;
 wire ld_en_reg;
 wire load_data_low;
 wire load_en_low;
@@ -226,9 +220,6 @@ assign d10 = !d10_l;
 assign d11 = !d11_l;
 
 assign di02_l = !di02;
-
-assign del_1_low = !del_1;
-assign ld_del_low = !ld_del;
 
 //assign spare1 = 1'b0;
 assign n_t_15x = n_t_14x; /* W1 */
@@ -376,7 +367,6 @@ assign load_y = !(btp3 && !dily_low);
 
 /* e23: sn74h21 */
 assign cl_done_low = !clear && b_load_en_low && b_dixy_low && b_dicd_low;
-// BUGBUG:
 // n_t_3x should generate a rising edge whenever something interesting finishes.
 // del_1_low says says the intensify interval has expired.
 // !set_done implies no erase interval in progress.
@@ -407,7 +397,7 @@ assign n_t_2x = !(load_en_low && clear_done_low);
 assign b_load_en_low = !(n_t_2x && btp3);
 
 /* e27: sn7400 */
-//assign n_t_9x = z_pulse && del_1_low;
+//assign n_t_9x = z_pulse && del_1_low;  //VRS??
 
 /* e28: sn7416 */
 /* chan_low = !chan; */
@@ -590,13 +580,8 @@ assign n_t_27x = (!store && color_low)? 1'bz : 1'b0;
 //assign n_t_43x = !color_low? 1'bz : 1'b0;
 // BUGBUG: Using non_store_low as debug output.
 //assign non_store_low = cl_done_low;
-//assign non_store_low = del_1_low && (!set_done) && dly_done_low && ld_del_low;
-//assign non_store_low = dly_done_low; // OK
-assign non_store_low = (!set_done) && dly_done_low;
-//assign non_store_low = del_1_low // BUGBUG
-//assign non_store_low = ld_del_low; // BUGBUG
-// BUGBUG: skip isn't skipping, so make it always skip
-// assign skip_low = !((!disd_low) || (!iot3l))? 1'bz : 1'b0;
+assign non_store_low = del_1_low && (!set_done) && dly_done_low && ld_del_low;
+//assign non_store_low = (!set_done) && dly_done_low; // OK
 assign skip_low = !((!disd_low && done) || (!iot3l))? 1'bz : 1'b0;
 assign write_thru_low = !write_thru? 1'bz : 1'b0;
 
