@@ -141,7 +141,7 @@ load_x                       : 77        : output : TTL               :         
 VCCIO                        : 78        : power  :                   : 5.0V    :           :                
 load_y                       : 79        : output : TTL               :         :           : Y              
 non_store_low                : 80        : output : TTL               :         :           : Y              
-ld_del                       : 81        : input  : TTL               :         :           : Y              
+ld_del_low                   : 81        : input  : TTL               :         :           : Y              
 GND                          : 82        : gnd    :                   :         :           :                
 red_delay                    : 83        : input  : TTL               :         :           : Y              
-del_1                        : 84        : input  : TTL               :         :           : Y              
+del_1_low                    : 84        : input  : TTL               :         :           : Y              

@@ -1,9 +1,10 @@
 |warv
-del_1 => del_1_low.IN0
+del_1_low => non_store_low.IN1
 grn_delay => dly_done_low.IN0
 initialize => clear.IN0
 initialize => n_t_208x.IN0
-ld_del => ld_del_low.IN0
+ld_del_low => n_t_3x.IN1
+ld_del_low => non_store_low.IN1
 md3_low => n_t_10x.IN0
 md3_low => iotl.IN0
 md4_low => n_t_12x.IN0

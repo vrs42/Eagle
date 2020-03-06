@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for warv
-Thu Mar 05 17:27:45 2020
+Thu Mar 05 17:55:13 2020
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,9 +38,9 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  30. Hold: 'md9_low'
  31. Hold: 'pause_low'
  32. Hold: 'tp3'
- 33. Recovery: 'del_1'
+ 33. Recovery: 'del_1_low'
  34. Recovery: 'grn_delay'
- 35. Recovery: 'ld_del'
+ 35. Recovery: 'ld_del_low'
  36. Recovery: 'red_delay'
  37. Recovery: 'set_done'
  38. Recovery: 'md10_low'
@@ -65,9 +65,9 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  57. Removal: 'md9_low'
  58. Removal: 'pause_low'
  59. Removal: 'tp3'
- 60. Removal: 'del_1'
+ 60. Removal: 'del_1_low'
  61. Removal: 'grn_delay'
- 62. Removal: 'ld_del'
+ 62. Removal: 'ld_del_low'
  63. Removal: 'red_delay'
  64. Removal: 'set_done'
  65. Minimum Pulse Width: 'md10_low'
@@ -81,9 +81,9 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  73. Minimum Pulse Width: 'md9_low'
  74. Minimum Pulse Width: 'pause_low'
  75. Minimum Pulse Width: 'tp3'
- 76. Minimum Pulse Width: 'del_1'
+ 76. Minimum Pulse Width: 'del_1_low'
  77. Minimum Pulse Width: 'grn_delay'
- 78. Minimum Pulse Width: 'ld_del'
+ 78. Minimum Pulse Width: 'ld_del_low'
  79. Minimum Pulse Width: 'red_delay'
  80. Minimum Pulse Width: 'set_done'
  81. Setup Times
@@ -147,28 +147,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
-; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
-; del_1      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { del_1 }     ;
-; grn_delay  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { grn_delay } ;
-; ld_del     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ld_del }    ;
-; md3_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md3_low }   ;
-; md4_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md4_low }   ;
-; md5_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md5_low }   ;
-; md6_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md6_low }   ;
-; md7_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md7_low }   ;
-; md8_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md8_low }   ;
-; md9_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md9_low }   ;
-; md10_low   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md10_low }  ;
-; md11_low   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md11_low }  ;
-; pause_low  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { pause_low } ;
-; red_delay  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { red_delay } ;
-; set_done   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { set_done }  ;
-; tp3        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { tp3 }       ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                 ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets        ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; del_1_low  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { del_1_low }  ;
+; grn_delay  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { grn_delay }  ;
+; ld_del_low ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ld_del_low } ;
+; md3_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md3_low }    ;
+; md4_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md4_low }    ;
+; md5_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md5_low }    ;
+; md6_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md6_low }    ;
+; md7_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md7_low }    ;
+; md8_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md8_low }    ;
+; md9_low    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md9_low }    ;
+; md10_low   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md10_low }   ;
+; md11_low   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { md11_low }   ;
+; pause_low  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { pause_low }  ;
+; red_delay  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { red_delay }  ;
+; set_done   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { set_done }   ;
+; tp3        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { tp3 }        ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -228,76 +228,76 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------+--------+---------------+
 
 
++--------------------------------------+
+; Recovery Summary                     ;
++------------+---------+---------------+
+; Clock      ; Slack   ; End Point TNS ;
++------------+---------+---------------+
+; del_1_low  ; -32.000 ; -32.000       ;
+; grn_delay  ; -32.000 ; -32.000       ;
+; ld_del_low ; -32.000 ; -32.000       ;
+; red_delay  ; -32.000 ; -32.000       ;
+; set_done   ; -32.000 ; -32.000       ;
+; md10_low   ; -23.500 ; -141.000      ;
+; md11_low   ; -23.500 ; -141.000      ;
+; md3_low    ; -23.500 ; -141.000      ;
+; md4_low    ; -23.500 ; -141.000      ;
+; md5_low    ; -23.500 ; -141.000      ;
+; md6_low    ; -23.500 ; -141.000      ;
+; md7_low    ; -23.500 ; -141.000      ;
+; md8_low    ; -23.500 ; -141.000      ;
+; md9_low    ; -23.500 ; -141.000      ;
+; pause_low  ; -23.500 ; -141.000      ;
+; tp3        ; -23.500 ; -141.000      ;
++------------+---------+---------------+
+
+
 +-------------------------------------+
-; Recovery Summary                    ;
-+-----------+---------+---------------+
-; Clock     ; Slack   ; End Point TNS ;
-+-----------+---------+---------------+
-; del_1     ; -32.000 ; -32.000       ;
-; grn_delay ; -32.000 ; -32.000       ;
-; ld_del    ; -32.000 ; -32.000       ;
-; red_delay ; -32.000 ; -32.000       ;
-; set_done  ; -32.000 ; -32.000       ;
-; md10_low  ; -23.500 ; -141.000      ;
-; md11_low  ; -23.500 ; -141.000      ;
-; md3_low   ; -23.500 ; -141.000      ;
-; md4_low   ; -23.500 ; -141.000      ;
-; md5_low   ; -23.500 ; -141.000      ;
-; md6_low   ; -23.500 ; -141.000      ;
-; md7_low   ; -23.500 ; -141.000      ;
-; md8_low   ; -23.500 ; -141.000      ;
-; md9_low   ; -23.500 ; -141.000      ;
-; pause_low ; -23.500 ; -141.000      ;
-; tp3       ; -23.500 ; -141.000      ;
-+-----------+---------+---------------+
+; Removal Summary                     ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; md10_low   ; 8.000  ; 0.000         ;
+; md11_low   ; 8.000  ; 0.000         ;
+; md3_low    ; 8.000  ; 0.000         ;
+; md4_low    ; 8.000  ; 0.000         ;
+; md5_low    ; 8.000  ; 0.000         ;
+; md6_low    ; 8.000  ; 0.000         ;
+; md7_low    ; 8.000  ; 0.000         ;
+; md8_low    ; 8.000  ; 0.000         ;
+; md9_low    ; 8.000  ; 0.000         ;
+; pause_low  ; 8.000  ; 0.000         ;
+; tp3        ; 8.000  ; 0.000         ;
+; del_1_low  ; 16.000 ; 0.000         ;
+; grn_delay  ; 16.000 ; 0.000         ;
+; ld_del_low ; 16.000 ; 0.000         ;
+; red_delay  ; 16.000 ; 0.000         ;
+; set_done   ; 16.000 ; 0.000         ;
++------------+--------+---------------+
 
 
-+------------------------------------+
-; Removal Summary                    ;
-+-----------+--------+---------------+
-; Clock     ; Slack  ; End Point TNS ;
-+-----------+--------+---------------+
-; md10_low  ; 8.000  ; 0.000         ;
-; md11_low  ; 8.000  ; 0.000         ;
-; md3_low   ; 8.000  ; 0.000         ;
-; md4_low   ; 8.000  ; 0.000         ;
-; md5_low   ; 8.000  ; 0.000         ;
-; md6_low   ; 8.000  ; 0.000         ;
-; md7_low   ; 8.000  ; 0.000         ;
-; md8_low   ; 8.000  ; 0.000         ;
-; md9_low   ; 8.000  ; 0.000         ;
-; pause_low ; 8.000  ; 0.000         ;
-; tp3       ; 8.000  ; 0.000         ;
-; del_1     ; 16.000 ; 0.000         ;
-; grn_delay ; 16.000 ; 0.000         ;
-; ld_del    ; 16.000 ; 0.000         ;
-; red_delay ; 16.000 ; 0.000         ;
-; set_done  ; 16.000 ; 0.000         ;
-+-----------+--------+---------------+
-
-
-+------------------------------------+
-; Minimum Pulse Width Summary        ;
-+-----------+--------+---------------+
-; Clock     ; Slack  ; End Point TNS ;
-+-----------+--------+---------------+
-; md10_low  ; -5.500 ; -66.000       ;
-; md11_low  ; -5.500 ; -66.000       ;
-; md3_low   ; -5.500 ; -66.000       ;
-; md4_low   ; -5.500 ; -66.000       ;
-; md5_low   ; -5.500 ; -66.000       ;
-; md6_low   ; -5.500 ; -66.000       ;
-; md7_low   ; -5.500 ; -66.000       ;
-; md8_low   ; -5.500 ; -66.000       ;
-; md9_low   ; -5.500 ; -66.000       ;
-; pause_low ; -5.500 ; -66.000       ;
-; tp3       ; -5.500 ; -66.000       ;
-; del_1     ; -5.500 ; -11.000       ;
-; grn_delay ; -5.500 ; -11.000       ;
-; ld_del    ; -5.500 ; -11.000       ;
-; red_delay ; -5.500 ; -11.000       ;
-; set_done  ; -5.500 ; -11.000       ;
-+-----------+--------+---------------+
++-------------------------------------+
+; Minimum Pulse Width Summary         ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; md10_low   ; -5.500 ; -66.000       ;
+; md11_low   ; -5.500 ; -66.000       ;
+; md3_low    ; -5.500 ; -66.000       ;
+; md4_low    ; -5.500 ; -66.000       ;
+; md5_low    ; -5.500 ; -66.000       ;
+; md6_low    ; -5.500 ; -66.000       ;
+; md7_low    ; -5.500 ; -66.000       ;
+; md8_low    ; -5.500 ; -66.000       ;
+; md9_low    ; -5.500 ; -66.000       ;
+; pause_low  ; -5.500 ; -66.000       ;
+; tp3        ; -5.500 ; -66.000       ;
+; del_1_low  ; -5.500 ; -11.000       ;
+; grn_delay  ; -5.500 ; -11.000       ;
+; ld_del_low ; -5.500 ; -11.000       ;
+; red_delay  ; -5.500 ; -11.000       ;
+; set_done   ; -5.500 ; -11.000       ;
++------------+--------+---------------+
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -2677,43 +2677,43 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Recovery: 'del_1'                                                                                   ;
+; Recovery: 'del_1_low'                                                                               ;
 +---------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack   ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +---------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; -32.000 ; erase     ; done    ; tp3          ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md10_low     ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md9_low      ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; pause_low    ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md7_low      ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md6_low      ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md4_low      ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md3_low      ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md8_low      ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md5_low      ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md11_low     ; del_1       ; 1.000        ; 0.000      ; 29.000     ;
-; -23.500 ; tp3       ; done    ; tp3          ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md10_low  ; done    ; md10_low     ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md9_low   ; done    ; md9_low      ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; pause_low ; done    ; pause_low    ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md7_low   ; done    ; md7_low      ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md6_low   ; done    ; md6_low      ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md4_low   ; done    ; md4_low      ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md3_low   ; done    ; md3_low      ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md8_low   ; done    ; md8_low      ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md5_low   ; done    ; md5_low      ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md11_low  ; done    ; md11_low     ; del_1       ; 0.500        ; 10.000     ; 30.000     ;
-; -23.000 ; tp3       ; done    ; tp3          ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md10_low  ; done    ; md10_low     ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md9_low   ; done    ; md9_low      ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; pause_low ; done    ; pause_low    ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md7_low   ; done    ; md7_low      ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md6_low   ; done    ; md6_low      ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md4_low   ; done    ; md4_low      ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md3_low   ; done    ; md3_low      ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md8_low   ; done    ; md8_low      ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md5_low   ; done    ; md5_low      ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md11_low  ; done    ; md11_low     ; del_1       ; 1.000        ; 10.000     ; 30.000     ;
+; -32.000 ; erase     ; done    ; tp3          ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md10_low     ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md9_low      ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; pause_low    ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md7_low      ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md6_low      ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md4_low      ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md3_low      ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md8_low      ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md5_low      ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md11_low     ; del_1_low   ; 1.000        ; 0.000      ; 29.000     ;
+; -23.500 ; tp3       ; done    ; tp3          ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md10_low  ; done    ; md10_low     ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md9_low   ; done    ; md9_low      ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; pause_low ; done    ; pause_low    ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md7_low   ; done    ; md7_low      ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md6_low   ; done    ; md6_low      ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md4_low   ; done    ; md4_low      ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md3_low   ; done    ; md3_low      ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md8_low   ; done    ; md8_low      ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md5_low   ; done    ; md5_low      ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md11_low  ; done    ; md11_low     ; del_1_low   ; 0.500        ; 10.000     ; 30.000     ;
+; -23.000 ; tp3       ; done    ; tp3          ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md10_low  ; done    ; md10_low     ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md9_low   ; done    ; md9_low      ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; pause_low ; done    ; pause_low    ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md7_low   ; done    ; md7_low      ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md6_low   ; done    ; md6_low      ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md4_low   ; done    ; md4_low      ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md3_low   ; done    ; md3_low      ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md8_low   ; done    ; md8_low      ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md5_low   ; done    ; md5_low      ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md11_low  ; done    ; md11_low     ; del_1_low   ; 1.000        ; 10.000     ; 30.000     ;
 +---------+-----------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -2759,43 +2759,43 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Recovery: 'ld_del'                                                                                  ;
+; Recovery: 'ld_del_low'                                                                              ;
 +---------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack   ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +---------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; -32.000 ; erase     ; done    ; tp3          ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md10_low     ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md9_low      ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; pause_low    ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md7_low      ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md6_low      ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md4_low      ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md3_low      ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md8_low      ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md5_low      ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -32.000 ; erase     ; done    ; md11_low     ; ld_del      ; 1.000        ; 0.000      ; 29.000     ;
-; -23.500 ; tp3       ; done    ; tp3          ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md10_low  ; done    ; md10_low     ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md9_low   ; done    ; md9_low      ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; pause_low ; done    ; pause_low    ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md7_low   ; done    ; md7_low      ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md6_low   ; done    ; md6_low      ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md4_low   ; done    ; md4_low      ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md3_low   ; done    ; md3_low      ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md8_low   ; done    ; md8_low      ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md5_low   ; done    ; md5_low      ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.500 ; md11_low  ; done    ; md11_low     ; ld_del      ; 0.500        ; 10.000     ; 30.000     ;
-; -23.000 ; tp3       ; done    ; tp3          ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md10_low  ; done    ; md10_low     ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md9_low   ; done    ; md9_low      ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; pause_low ; done    ; pause_low    ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md7_low   ; done    ; md7_low      ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md6_low   ; done    ; md6_low      ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md4_low   ; done    ; md4_low      ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md3_low   ; done    ; md3_low      ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md8_low   ; done    ; md8_low      ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md5_low   ; done    ; md5_low      ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
-; -23.000 ; md11_low  ; done    ; md11_low     ; ld_del      ; 1.000        ; 10.000     ; 30.000     ;
+; -32.000 ; erase     ; done    ; tp3          ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md10_low     ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md9_low      ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; pause_low    ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md7_low      ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md6_low      ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md4_low      ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md3_low      ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md8_low      ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md5_low      ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -32.000 ; erase     ; done    ; md11_low     ; ld_del_low  ; 1.000        ; 0.000      ; 29.000     ;
+; -23.500 ; tp3       ; done    ; tp3          ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md10_low  ; done    ; md10_low     ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md9_low   ; done    ; md9_low      ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; pause_low ; done    ; pause_low    ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md7_low   ; done    ; md7_low      ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md6_low   ; done    ; md6_low      ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md4_low   ; done    ; md4_low      ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md3_low   ; done    ; md3_low      ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md8_low   ; done    ; md8_low      ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md5_low   ; done    ; md5_low      ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.500 ; md11_low  ; done    ; md11_low     ; ld_del_low  ; 0.500        ; 10.000     ; 30.000     ;
+; -23.000 ; tp3       ; done    ; tp3          ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md10_low  ; done    ; md10_low     ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md9_low   ; done    ; md9_low      ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; pause_low ; done    ; pause_low    ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md7_low   ; done    ; md7_low      ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md6_low   ; done    ; md6_low      ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md4_low   ; done    ; md4_low      ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md3_low   ; done    ; md3_low      ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md8_low   ; done    ; md8_low      ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md5_low   ; done    ; md5_low      ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
+; -23.000 ; md11_low  ; done    ; md11_low     ; ld_del_low  ; 1.000        ; 10.000     ; 30.000     ;
 +---------+-----------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -5258,43 +5258,43 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 
 
 +----------------------------------------------------------------------------------------------------+
-; Removal: 'del_1'                                                                                   ;
+; Removal: 'del_1_low'                                                                               ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; 16.000 ; tp3       ; done    ; tp3          ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md10_low  ; done    ; md10_low     ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md9_low   ; done    ; md9_low      ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; pause_low ; done    ; pause_low    ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md7_low   ; done    ; md7_low      ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md6_low   ; done    ; md6_low      ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md4_low   ; done    ; md4_low      ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md3_low   ; done    ; md3_low      ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md8_low   ; done    ; md8_low      ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md5_low   ; done    ; md5_low      ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md11_low  ; done    ; md11_low     ; del_1       ; 0.000        ; 10.000     ; 30.000     ;
-; 16.500 ; tp3       ; done    ; tp3          ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md10_low  ; done    ; md10_low     ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md9_low   ; done    ; md9_low      ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; pause_low ; done    ; pause_low    ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md7_low   ; done    ; md7_low      ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md6_low   ; done    ; md6_low      ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md4_low   ; done    ; md4_low      ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md3_low   ; done    ; md3_low      ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md8_low   ; done    ; md8_low      ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md5_low   ; done    ; md5_low      ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md11_low  ; done    ; md11_low     ; del_1       ; -0.500       ; 10.000     ; 30.000     ;
-; 25.000 ; erase     ; done    ; tp3          ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md10_low     ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md9_low      ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; pause_low    ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md7_low      ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md6_low      ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md4_low      ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md3_low      ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md8_low      ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md5_low      ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md11_low     ; del_1       ; 0.000        ; 0.000      ; 29.000     ;
+; 16.000 ; tp3       ; done    ; tp3          ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md10_low  ; done    ; md10_low     ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md9_low   ; done    ; md9_low      ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; pause_low ; done    ; pause_low    ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md7_low   ; done    ; md7_low      ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md6_low   ; done    ; md6_low      ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md4_low   ; done    ; md4_low      ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md3_low   ; done    ; md3_low      ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md8_low   ; done    ; md8_low      ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md5_low   ; done    ; md5_low      ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md11_low  ; done    ; md11_low     ; del_1_low   ; 0.000        ; 10.000     ; 30.000     ;
+; 16.500 ; tp3       ; done    ; tp3          ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md10_low  ; done    ; md10_low     ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md9_low   ; done    ; md9_low      ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; pause_low ; done    ; pause_low    ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md7_low   ; done    ; md7_low      ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md6_low   ; done    ; md6_low      ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md4_low   ; done    ; md4_low      ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md3_low   ; done    ; md3_low      ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md8_low   ; done    ; md8_low      ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md5_low   ; done    ; md5_low      ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md11_low  ; done    ; md11_low     ; del_1_low   ; -0.500       ; 10.000     ; 30.000     ;
+; 25.000 ; erase     ; done    ; tp3          ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md10_low     ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md9_low      ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; pause_low    ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md7_low      ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md6_low      ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md4_low      ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md3_low      ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md8_low      ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md5_low      ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md11_low     ; del_1_low   ; 0.000        ; 0.000      ; 29.000     ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -5340,43 +5340,43 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 
 
 +----------------------------------------------------------------------------------------------------+
-; Removal: 'ld_del'                                                                                  ;
+; Removal: 'ld_del_low'                                                                              ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; 16.000 ; tp3       ; done    ; tp3          ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md10_low  ; done    ; md10_low     ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md9_low   ; done    ; md9_low      ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; pause_low ; done    ; pause_low    ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md7_low   ; done    ; md7_low      ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md6_low   ; done    ; md6_low      ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md4_low   ; done    ; md4_low      ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md3_low   ; done    ; md3_low      ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md8_low   ; done    ; md8_low      ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md5_low   ; done    ; md5_low      ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.000 ; md11_low  ; done    ; md11_low     ; ld_del      ; 0.000        ; 10.000     ; 30.000     ;
-; 16.500 ; tp3       ; done    ; tp3          ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md10_low  ; done    ; md10_low     ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md9_low   ; done    ; md9_low      ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; pause_low ; done    ; pause_low    ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md7_low   ; done    ; md7_low      ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md6_low   ; done    ; md6_low      ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md4_low   ; done    ; md4_low      ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md3_low   ; done    ; md3_low      ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md8_low   ; done    ; md8_low      ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md5_low   ; done    ; md5_low      ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 16.500 ; md11_low  ; done    ; md11_low     ; ld_del      ; -0.500       ; 10.000     ; 30.000     ;
-; 25.000 ; erase     ; done    ; tp3          ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md10_low     ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md9_low      ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; pause_low    ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md7_low      ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md6_low      ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md4_low      ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md3_low      ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md8_low      ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md5_low      ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
-; 25.000 ; erase     ; done    ; md11_low     ; ld_del      ; 0.000        ; 0.000      ; 29.000     ;
+; 16.000 ; tp3       ; done    ; tp3          ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md10_low  ; done    ; md10_low     ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md9_low   ; done    ; md9_low      ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; pause_low ; done    ; pause_low    ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md7_low   ; done    ; md7_low      ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md6_low   ; done    ; md6_low      ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md4_low   ; done    ; md4_low      ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md3_low   ; done    ; md3_low      ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md8_low   ; done    ; md8_low      ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md5_low   ; done    ; md5_low      ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.000 ; md11_low  ; done    ; md11_low     ; ld_del_low  ; 0.000        ; 10.000     ; 30.000     ;
+; 16.500 ; tp3       ; done    ; tp3          ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md10_low  ; done    ; md10_low     ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md9_low   ; done    ; md9_low      ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; pause_low ; done    ; pause_low    ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md7_low   ; done    ; md7_low      ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md6_low   ; done    ; md6_low      ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md4_low   ; done    ; md4_low      ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md3_low   ; done    ; md3_low      ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md8_low   ; done    ; md8_low      ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md5_low   ; done    ; md5_low      ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 16.500 ; md11_low  ; done    ; md11_low     ; ld_del_low  ; -0.500       ; 10.000     ; 30.000     ;
+; 25.000 ; erase     ; done    ; tp3          ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md10_low     ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md9_low      ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; pause_low    ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md7_low      ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md6_low      ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md4_low      ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md3_low      ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md8_low      ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md5_low      ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
+; 25.000 ; erase     ; done    ; md11_low     ; ld_del_low  ; 0.000        ; 0.000      ; 29.000     ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -5836,18 +5836,18 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+--------------+----------------+------------------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Minimum Pulse Width: 'del_1'                                                                   ;
-+--------+--------------+----------------+------------------+-------+------------+---------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target        ;
-+--------+--------------+----------------+------------------+-------+------------+---------------+
-; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; del_1 ; Rise       ; done          ;
-; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; del_1 ; Rise       ; done          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; del_1 ; Rise       ; del_1|dataout ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; del_1 ; Rise       ; del_1|dataout ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; del_1 ; Rise       ; done|[0]      ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; del_1 ; Rise       ; done|[0]      ;
-+--------+--------------+----------------+------------------+-------+------------+---------------+
++--------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'del_1_low'                                                                       ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target            ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; del_1_low ; Rise       ; done              ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; del_1_low ; Rise       ; done              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; del_1_low ; Rise       ; del_1_low|dataout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; del_1_low ; Rise       ; del_1_low|dataout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; del_1_low ; Rise       ; done|[2]          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; del_1_low ; Rise       ; done|[2]          ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -5857,25 +5857,25 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+--------------+----------------+------------------+-----------+------------+-------------------+
 ; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; grn_delay ; Rise       ; done              ;
 ; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; grn_delay ; Rise       ; done              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; grn_delay ; Rise       ; done|[2]          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; grn_delay ; Rise       ; done|[2]          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; grn_delay ; Rise       ; done|[0]          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; grn_delay ; Rise       ; done|[0]          ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; grn_delay ; Rise       ; grn_delay|dataout ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; grn_delay ; Rise       ; grn_delay|dataout ;
 +--------+--------------+----------------+------------------+-----------+------------+-------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Minimum Pulse Width: 'ld_del'                                                                    ;
-+--------+--------------+----------------+------------------+--------+------------+----------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target         ;
-+--------+--------------+----------------+------------------+--------+------------+----------------+
-; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; ld_del ; Rise       ; done           ;
-; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; ld_del ; Rise       ; done           ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ld_del ; Rise       ; done|[1]       ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ld_del ; Rise       ; done|[1]       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ld_del ; Rise       ; ld_del|dataout ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ld_del ; Rise       ; ld_del|dataout ;
-+--------+--------------+----------------+------------------+--------+------------+----------------+
++----------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'ld_del_low'                                                                        ;
++--------+--------------+----------------+------------------+------------+------------+--------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target             ;
++--------+--------------+----------------+------------------+------------+------------+--------------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; ld_del_low ; Rise       ; done               ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; ld_del_low ; Rise       ; done               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ld_del_low ; Rise       ; done|[3]           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ld_del_low ; Rise       ; done|[3]           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ld_del_low ; Rise       ; ld_del_low|dataout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ld_del_low ; Rise       ; ld_del_low|dataout ;
++--------+--------------+----------------+------------------+------------+------------+--------------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -5885,8 +5885,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+--------------+----------------+------------------+-----------+------------+-------------------+
 ; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; red_delay ; Rise       ; done              ;
 ; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; red_delay ; Rise       ; done              ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; red_delay ; Rise       ; done|[3]          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; red_delay ; Rise       ; done|[3]          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; red_delay ; Rise       ; done|[1]          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; red_delay ; Rise       ; done|[1]          ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; red_delay ; Rise       ; red_delay|dataout ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; red_delay ; Rise       ; red_delay|dataout ;
 +--------+--------------+----------------+------------------+-----------+------------+-------------------+
@@ -6279,9 +6279,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------+------------+--------+--------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------------+------------+--------+--------+------------+-----------------+
-; data00_low      ; del_1      ; 24.000 ; 24.000 ; Rise       ; del_1           ;
-; interrupt_low   ; del_1      ; 24.000 ; 24.000 ; Rise       ; del_1           ;
-; skip_low        ; del_1      ; 24.000 ; 24.000 ; Rise       ; del_1           ;
+; data00_low      ; del_1_low  ; 24.000 ; 24.000 ; Rise       ; del_1_low       ;
+; interrupt_low   ; del_1_low  ; 24.000 ; 24.000 ; Rise       ; del_1_low       ;
+; non_store_low   ; del_1_low  ; 15.000 ; 15.000 ; Rise       ; del_1_low       ;
+; skip_low        ; del_1_low  ; 24.000 ; 24.000 ; Rise       ; del_1_low       ;
+; non_store_low   ; del_1_low  ; 15.000 ; 15.000 ; Fall       ; del_1_low       ;
 ; data00_low      ; grn_delay  ; 24.000 ; 24.000 ; Rise       ; grn_delay       ;
 ; dly_done_low    ; grn_delay  ; 15.000 ; 15.000 ; Rise       ; grn_delay       ;
 ; interrupt_low   ; grn_delay  ; 24.000 ; 24.000 ; Rise       ; grn_delay       ;
@@ -6289,9 +6291,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; skip_low        ; grn_delay  ; 24.000 ; 24.000 ; Rise       ; grn_delay       ;
 ; dly_done_low    ; grn_delay  ; 15.000 ; 15.000 ; Fall       ; grn_delay       ;
 ; non_store_low   ; grn_delay  ; 15.000 ; 15.000 ; Fall       ; grn_delay       ;
-; data00_low      ; ld_del     ; 24.000 ; 24.000 ; Rise       ; ld_del          ;
-; interrupt_low   ; ld_del     ; 24.000 ; 24.000 ; Rise       ; ld_del          ;
-; skip_low        ; ld_del     ; 24.000 ; 24.000 ; Rise       ; ld_del          ;
+; data00_low      ; ld_del_low ; 24.000 ; 24.000 ; Rise       ; ld_del_low      ;
+; interrupt_low   ; ld_del_low ; 24.000 ; 24.000 ; Rise       ; ld_del_low      ;
+; non_store_low   ; ld_del_low ; 15.000 ; 15.000 ; Rise       ; ld_del_low      ;
+; skip_low        ; ld_del_low ; 24.000 ; 24.000 ; Rise       ; ld_del_low      ;
+; non_store_low   ; ld_del_low ; 15.000 ; 15.000 ; Fall       ; ld_del_low      ;
 ; b_dixy_low      ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; c0_low          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; c1_low          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
@@ -6925,9 +6929,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------+------------+--------+--------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------------+------------+--------+--------+------------+-----------------+
-; data00_low      ; del_1      ; 24.000 ; 24.000 ; Rise       ; del_1           ;
-; interrupt_low   ; del_1      ; 24.000 ; 24.000 ; Rise       ; del_1           ;
-; skip_low        ; del_1      ; 24.000 ; 24.000 ; Rise       ; del_1           ;
+; data00_low      ; del_1_low  ; 24.000 ; 24.000 ; Rise       ; del_1_low       ;
+; interrupt_low   ; del_1_low  ; 24.000 ; 24.000 ; Rise       ; del_1_low       ;
+; non_store_low   ; del_1_low  ; 15.000 ; 15.000 ; Rise       ; del_1_low       ;
+; skip_low        ; del_1_low  ; 24.000 ; 24.000 ; Rise       ; del_1_low       ;
+; non_store_low   ; del_1_low  ; 15.000 ; 15.000 ; Fall       ; del_1_low       ;
 ; data00_low      ; grn_delay  ; 24.000 ; 24.000 ; Rise       ; grn_delay       ;
 ; dly_done_low    ; grn_delay  ; 15.000 ; 15.000 ; Rise       ; grn_delay       ;
 ; interrupt_low   ; grn_delay  ; 24.000 ; 24.000 ; Rise       ; grn_delay       ;
@@ -6935,9 +6941,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; skip_low        ; grn_delay  ; 24.000 ; 24.000 ; Rise       ; grn_delay       ;
 ; dly_done_low    ; grn_delay  ; 15.000 ; 15.000 ; Fall       ; grn_delay       ;
 ; non_store_low   ; grn_delay  ; 15.000 ; 15.000 ; Fall       ; grn_delay       ;
-; data00_low      ; ld_del     ; 24.000 ; 24.000 ; Rise       ; ld_del          ;
-; interrupt_low   ; ld_del     ; 24.000 ; 24.000 ; Rise       ; ld_del          ;
-; skip_low        ; ld_del     ; 24.000 ; 24.000 ; Rise       ; ld_del          ;
+; data00_low      ; ld_del_low ; 24.000 ; 24.000 ; Rise       ; ld_del_low      ;
+; interrupt_low   ; ld_del_low ; 24.000 ; 24.000 ; Rise       ; ld_del_low      ;
+; non_store_low   ; ld_del_low ; 15.000 ; 15.000 ; Rise       ; ld_del_low      ;
+; skip_low        ; ld_del_low ; 24.000 ; 24.000 ; Rise       ; ld_del_low      ;
+; non_store_low   ; ld_del_low ; 15.000 ; 15.000 ; Fall       ; ld_del_low      ;
 ; b_dixy_low      ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; c0_low          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; c1_low          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
@@ -7856,395 +7864,395 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+--------------------------------------------------------------------+
-; Recovery Transfers                                                 ;
-+------------+-----------+----------+----------+----------+----------+
-; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+-----------+----------+----------+----------+----------+
-; md3_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; del_1     ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; del_1     ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; grn_delay ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; grn_delay ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; ld_del    ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; ld_del    ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md3_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md4_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md5_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md6_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md7_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md8_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md9_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md10_low  ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md11_low  ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; pause_low ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; red_delay ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; red_delay ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; set_done  ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; set_done  ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; tp3       ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-+------------+-----------+----------+----------+----------+----------+
++---------------------------------------------------------------------+
+; Recovery Transfers                                                  ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; md3_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; del_1_low  ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; del_1_low  ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; grn_delay  ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; grn_delay  ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; ld_del_low ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; ld_del_low ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md3_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md4_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md5_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md6_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md7_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md8_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md9_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md10_low   ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md11_low   ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; pause_low  ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; red_delay  ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; red_delay  ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; set_done   ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; set_done   ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; tp3        ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; tp3        ; 6        ; 6        ; 0        ; 0        ;
++------------+------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+--------------------------------------------------------------------+
-; Removal Transfers                                                  ;
-+------------+-----------+----------+----------+----------+----------+
-; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+-----------+----------+----------+----------+----------+
-; md3_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; del_1     ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; del_1     ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; del_1     ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; grn_delay ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; grn_delay ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; grn_delay ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; ld_del    ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; ld_del    ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; ld_del    ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md3_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md3_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md4_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md4_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md5_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md5_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md6_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md6_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md7_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md7_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md8_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md8_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md9_low   ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md9_low   ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md10_low  ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md10_low  ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; md11_low  ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; md11_low  ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; pause_low ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; pause_low ; 6        ; 6        ; 0        ; 0        ;
-; md3_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; red_delay ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; red_delay ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; red_delay ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md4_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md5_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md6_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md7_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md8_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md9_low    ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; md10_low   ; set_done  ; 4        ; 3        ; 0        ; 0        ;
-; md11_low   ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; pause_low  ; set_done  ; 5        ; 4        ; 0        ; 0        ;
-; tp3        ; set_done  ; 7        ; 6        ; 0        ; 0        ;
-; md3_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md4_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md5_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md6_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md7_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md8_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md9_low    ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md10_low   ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; md11_low   ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; pause_low  ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-; set_done   ; tp3       ; 1        ; 1        ; 0        ; 0        ;
-; tp3        ; tp3       ; 6        ; 6        ; 0        ; 0        ;
-+------------+-----------+----------+----------+----------+----------+
++---------------------------------------------------------------------+
+; Removal Transfers                                                   ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; md3_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; del_1_low  ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; del_1_low  ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; del_1_low  ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; grn_delay  ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; grn_delay  ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; grn_delay  ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; ld_del_low ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; ld_del_low ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; ld_del_low ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md3_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md3_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md4_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md4_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md5_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md5_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md6_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md6_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md7_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md7_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md8_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md8_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md9_low    ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md9_low    ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md10_low   ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md10_low   ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; md11_low   ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; md11_low   ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; pause_low  ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; pause_low  ; 6        ; 6        ; 0        ; 0        ;
+; md3_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; red_delay  ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; red_delay  ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; red_delay  ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md4_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md5_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md6_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md7_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md8_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md9_low    ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; md10_low   ; set_done   ; 4        ; 3        ; 0        ; 0        ;
+; md11_low   ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; pause_low  ; set_done   ; 5        ; 4        ; 0        ; 0        ;
+; tp3        ; set_done   ; 7        ; 6        ; 0        ; 0        ;
+; md3_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md4_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md5_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md6_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md7_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md8_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md9_low    ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md10_low   ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; md11_low   ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; pause_low  ; tp3        ; 6        ; 6        ; 0        ; 0        ;
+; set_done   ; tp3        ; 1        ; 1        ; 0        ; 0        ;
+; tp3        ; tp3        ; 6        ; 6        ; 0        ; 0        ;
++------------+------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -8267,10 +8275,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 34    ; 34   ;
-; Unconstrained Input Port Paths  ; 308   ; 308  ;
+; Unconstrained Input Ports       ; 36    ; 36   ;
+; Unconstrained Input Port Paths  ; 310   ; 310  ;
 ; Unconstrained Output Ports      ; 36    ; 36   ;
-; Unconstrained Output Port Paths ; 309   ; 309  ;
+; Unconstrained Output Port Paths ; 311   ; 311  ;
 +---------------------------------+-------+------+
 
 
@@ -8280,7 +8288,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Mar 05 17:27:32 2020
+    Info: Processing started: Thu Mar 05 17:54:52 2020
 Info: Command: quartus_sta warv -c warv
 Info: qsta_default_script.tcl version: #1
 Info (306004): Started post-fitting delay annotation
@@ -8301,10 +8309,10 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name md5_low md5_low
     Info (332105): create_clock -period 1.000 -name md11_low md11_low
     Info (332105): create_clock -period 1.000 -name set_done set_done
+    Info (332105): create_clock -period 1.000 -name ld_del_low ld_del_low
+    Info (332105): create_clock -period 1.000 -name del_1_low del_1_low
     Info (332105): create_clock -period 1.000 -name red_delay red_delay
     Info (332105): create_clock -period 1.000 -name grn_delay grn_delay
-    Info (332105): create_clock -period 1.000 -name ld_del ld_del
-    Info (332105): create_clock -period 1.000 -name del_1 del_1
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case setup slack is -3.500
@@ -8338,9 +8346,9 @@ Info (332146): Worst-case hold slack is -4.000
 Info (332146): Worst-case recovery slack is -32.000
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):   -32.000       -32.000 del_1 
+    Info (332119):   -32.000       -32.000 del_1_low 
     Info (332119):   -32.000       -32.000 grn_delay 
-    Info (332119):   -32.000       -32.000 ld_del 
+    Info (332119):   -32.000       -32.000 ld_del_low 
     Info (332119):   -32.000       -32.000 red_delay 
     Info (332119):   -32.000       -32.000 set_done 
     Info (332119):   -23.500      -141.000 md10_low 
@@ -8368,9 +8376,9 @@ Info (332146): Worst-case removal slack is 8.000
     Info (332119):     8.000         0.000 md9_low 
     Info (332119):     8.000         0.000 pause_low 
     Info (332119):     8.000         0.000 tp3 
-    Info (332119):    16.000         0.000 del_1 
+    Info (332119):    16.000         0.000 del_1_low 
     Info (332119):    16.000         0.000 grn_delay 
-    Info (332119):    16.000         0.000 ld_del 
+    Info (332119):    16.000         0.000 ld_del_low 
     Info (332119):    16.000         0.000 red_delay 
     Info (332119):    16.000         0.000 set_done 
 Info (332146): Worst-case minimum pulse width slack is -5.500
@@ -8387,9 +8395,9 @@ Info (332146): Worst-case minimum pulse width slack is -5.500
     Info (332119):    -5.500       -66.000 md9_low 
     Info (332119):    -5.500       -66.000 pause_low 
     Info (332119):    -5.500       -66.000 tp3 
-    Info (332119):    -5.500       -11.000 del_1 
+    Info (332119):    -5.500       -11.000 del_1_low 
     Info (332119):    -5.500       -11.000 grn_delay 
-    Info (332119):    -5.500       -11.000 ld_del 
+    Info (332119):    -5.500       -11.000 ld_del_low 
     Info (332119):    -5.500       -11.000 red_delay 
     Info (332119):    -5.500       -11.000 set_done 
 Info (332001): The selected device family is not supported by the report_metastability command.
@@ -8397,9 +8405,9 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info (144001): Generated suppressed messages file C:/Users/Vince/Desktop/trunk/Eagle/projects/DEC/Mxxx/M885/warv/output_files/warv.sta.smsg
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 289 megabytes
-    Info: Processing ended: Thu Mar 05 17:27:44 2020
-    Info: Elapsed time: 00:00:12
+    Info: Peak virtual memory: 285 megabytes
+    Info: Processing ended: Thu Mar 05 17:55:13 2020
+    Info: Elapsed time: 00:00:21
     Info: Total CPU time (on all processors): 00:00:04
 
 

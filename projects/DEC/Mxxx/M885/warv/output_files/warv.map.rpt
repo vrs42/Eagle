@@ -1,5 +1,5 @@
 Analysis & Synthesis report for warv
-Thu Mar 05 17:27:20 2020
+Thu Mar 05 17:54:39 2020
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Mar 05 17:27:20 2020           ;
+; Analysis & Synthesis Status ; Successful - Thu Mar 05 17:54:39 2020           ;
 ; Quartus II 32-bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name               ; warv                                            ;
 ; Top-level Entity Name       ; warv                                            ;
@@ -145,8 +145,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Shareable expanders  ; 9                    ;
 ; Maximum fan-out node ; md3_low              ;
 ; Maximum fan-out      ; 37                   ;
-; Total fan-out        ; 486                  ;
-; Average fan-out      ; 4.26                 ;
+; Total fan-out        ; 488                  ;
+; Average fan-out      ; 4.28                 ;
 +----------------------+----------------------+
 
 
@@ -165,55 +165,55 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Mar 05 17:27:13 2020
+    Info: Processing started: Thu Mar 05 17:54:32 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off warv -c warv
 Info (12021): Found 1 design units, including 1 entities, in source file warv.v
     Info (12023): Found entity 1: warv
 Info (12127): Elaborating entity "warv" for the top level hierarchy
-Warning (10240): Verilog HDL Always Construct warning at warv.v(440): inferring latch(es) for variable "y03", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(440): inferring latch(es) for variable "y02", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(447): inferring latch(es) for variable "x03", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(447): inferring latch(es) for variable "x02", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(454): inferring latch(es) for variable "y07", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(454): inferring latch(es) for variable "y06", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(454): inferring latch(es) for variable "y05", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(454): inferring latch(es) for variable "y04", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(466): inferring latch(es) for variable "x07", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(466): inferring latch(es) for variable "x06", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(466): inferring latch(es) for variable "x05", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(466): inferring latch(es) for variable "x04", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(477): inferring latch(es) for variable "y11", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(477): inferring latch(es) for variable "y10", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(477): inferring latch(es) for variable "y09", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(477): inferring latch(es) for variable "y08", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(488): inferring latch(es) for variable "x11", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(488): inferring latch(es) for variable "x10", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(488): inferring latch(es) for variable "x09", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(488): inferring latch(es) for variable "x08", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(528): inferring latch(es) for variable "int_enable", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at warv.v(533): inferring latch(es) for variable "device_flag", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "device_flag" at warv.v(533)
-Info (10041): Inferred latch for "int_enable" at warv.v(528)
-Info (10041): Inferred latch for "x08" at warv.v(488)
-Info (10041): Inferred latch for "x09" at warv.v(488)
-Info (10041): Inferred latch for "x10" at warv.v(488)
-Info (10041): Inferred latch for "x11" at warv.v(488)
-Info (10041): Inferred latch for "y08" at warv.v(477)
-Info (10041): Inferred latch for "y09" at warv.v(477)
-Info (10041): Inferred latch for "y10" at warv.v(477)
-Info (10041): Inferred latch for "y11" at warv.v(477)
-Info (10041): Inferred latch for "x04" at warv.v(466)
-Info (10041): Inferred latch for "x05" at warv.v(466)
-Info (10041): Inferred latch for "x06" at warv.v(466)
-Info (10041): Inferred latch for "x07" at warv.v(466)
-Info (10041): Inferred latch for "y04" at warv.v(454)
-Info (10041): Inferred latch for "y05" at warv.v(454)
-Info (10041): Inferred latch for "y06" at warv.v(454)
-Info (10041): Inferred latch for "y07" at warv.v(454)
-Info (10041): Inferred latch for "x02" at warv.v(447)
-Info (10041): Inferred latch for "x03" at warv.v(447)
-Info (10041): Inferred latch for "y02" at warv.v(440)
-Info (10041): Inferred latch for "y03" at warv.v(440)
+Warning (10240): Verilog HDL Always Construct warning at warv.v(430): inferring latch(es) for variable "y03", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(430): inferring latch(es) for variable "y02", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(437): inferring latch(es) for variable "x03", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(437): inferring latch(es) for variable "x02", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(444): inferring latch(es) for variable "y07", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(444): inferring latch(es) for variable "y06", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(444): inferring latch(es) for variable "y05", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(444): inferring latch(es) for variable "y04", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(456): inferring latch(es) for variable "x07", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(456): inferring latch(es) for variable "x06", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(456): inferring latch(es) for variable "x05", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(456): inferring latch(es) for variable "x04", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(467): inferring latch(es) for variable "y11", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(467): inferring latch(es) for variable "y10", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(467): inferring latch(es) for variable "y09", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(467): inferring latch(es) for variable "y08", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(478): inferring latch(es) for variable "x11", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(478): inferring latch(es) for variable "x10", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(478): inferring latch(es) for variable "x09", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(478): inferring latch(es) for variable "x08", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(518): inferring latch(es) for variable "int_enable", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at warv.v(523): inferring latch(es) for variable "device_flag", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "device_flag" at warv.v(523)
+Info (10041): Inferred latch for "int_enable" at warv.v(518)
+Info (10041): Inferred latch for "x08" at warv.v(478)
+Info (10041): Inferred latch for "x09" at warv.v(478)
+Info (10041): Inferred latch for "x10" at warv.v(478)
+Info (10041): Inferred latch for "x11" at warv.v(478)
+Info (10041): Inferred latch for "y08" at warv.v(467)
+Info (10041): Inferred latch for "y09" at warv.v(467)
+Info (10041): Inferred latch for "y10" at warv.v(467)
+Info (10041): Inferred latch for "y11" at warv.v(467)
+Info (10041): Inferred latch for "x04" at warv.v(456)
+Info (10041): Inferred latch for "x05" at warv.v(456)
+Info (10041): Inferred latch for "x06" at warv.v(456)
+Info (10041): Inferred latch for "x07" at warv.v(456)
+Info (10041): Inferred latch for "y04" at warv.v(444)
+Info (10041): Inferred latch for "y05" at warv.v(444)
+Info (10041): Inferred latch for "y06" at warv.v(444)
+Info (10041): Inferred latch for "y07" at warv.v(444)
+Info (10041): Inferred latch for "x02" at warv.v(437)
+Info (10041): Inferred latch for "x03" at warv.v(437)
+Info (10041): Inferred latch for "y02" at warv.v(430)
+Info (10041): Inferred latch for "y03" at warv.v(430)
 Warning (14025): LATCH primitive "device_flag" is permanently disabled
 Info (21057): Implemented 114 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 26 input pins
@@ -224,8 +224,8 @@ Info (21057): Implemented 114 device resources after synthesis - the final resou
 Info (144001): Generated suppressed messages file C:/Users/Vince/Desktop/trunk/Eagle/projects/DEC/Mxxx/M885/warv/output_files/warv.map.smsg
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 23 warnings
     Info: Peak virtual memory: 313 megabytes
-    Info: Processing ended: Thu Mar 05 17:27:20 2020
-    Info: Elapsed time: 00:00:07
+    Info: Processing ended: Thu Mar 05 17:54:40 2020
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:02
 
 

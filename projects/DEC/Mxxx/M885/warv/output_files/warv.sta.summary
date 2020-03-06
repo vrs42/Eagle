@@ -90,7 +90,7 @@ Type  : Hold 'tp3'
 Slack : -4.000
 TNS   : -24.000
 
-Type  : Recovery 'del_1'
+Type  : Recovery 'del_1_low'
 Slack : -32.000
 TNS   : -32.000
 
@@ -98,7 +98,7 @@ Type  : Recovery 'grn_delay'
 Slack : -32.000
 TNS   : -32.000
 
-Type  : Recovery 'ld_del'
+Type  : Recovery 'ld_del_low'
 Slack : -32.000
 TNS   : -32.000
 
@@ -198,7 +198,7 @@ Type  : Removal 'tp3'
 Slack : 8.000
 TNS   : 0.000
 
-Type  : Removal 'del_1'
+Type  : Removal 'del_1_low'
 Slack : 16.000
 TNS   : 0.000
 
@@ -206,7 +206,7 @@ Type  : Removal 'grn_delay'
 Slack : 16.000
 TNS   : 0.000
 
-Type  : Removal 'ld_del'
+Type  : Removal 'ld_del_low'
 Slack : 16.000
 TNS   : 0.000
 
@@ -262,7 +262,7 @@ Type  : Minimum Pulse Width 'tp3'
 Slack : -5.500
 TNS   : -66.000
 
-Type  : Minimum Pulse Width 'del_1'
+Type  : Minimum Pulse Width 'del_1_low'
 Slack : -5.500
 TNS   : -11.000
 
@@ -270,7 +270,7 @@ Type  : Minimum Pulse Width 'grn_delay'
 Slack : -5.500
 TNS   : -11.000
 
-Type  : Minimum Pulse Width 'ld_del'
+Type  : Minimum Pulse Width 'ld_del_low'
 Slack : -5.500
 TNS   : -11.000
 

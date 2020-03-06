@@ -581,7 +581,6 @@ assign n_t_27x = (!store && color_low)? 1'bz : 1'b0;
 // BUGBUG: Using non_store_low as debug output.
 //assign non_store_low = cl_done_low;
 assign non_store_low = del_1_low && (!set_done) && dly_done_low && ld_del_low;
-//assign non_store_low = (!set_done) && dly_done_low; // OK
 assign skip_low = !((!disd_low && done) || (!iot3l))? 1'bz : 1'b0;
 assign write_thru_low = !write_thru? 1'bz : 1'b0;
 
