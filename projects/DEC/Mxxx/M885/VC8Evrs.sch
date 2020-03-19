@@ -16825,6 +16825,7 @@ Mors, distributor Buerklin, 11G702</description>
 <text x="317.5" y="27.94" size="2.54" layer="94">Space War Board</text>
 <text x="12.7" y="40.64" size="1.778" layer="94">Debounce</text>
 <text x="12.7" y="66.04" size="1.778" layer="94">Pull-up/Pull-down</text>
+<text x="393.7" y="7.62" size="2.54" layer="94">0</text>
 </plain>
 <instances>
 <instance part="OMNIBUS" gate="AC2" x="12.7" y="10.16" rot="R90"/>
@@ -18304,7 +18305,7 @@ Mors, distributor Buerklin, 11G702</description>
 <wire x1="99.06" y1="195.58" x2="101.6" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="121.92" y1="195.58" x2="134.62" y2="195.58" width="0.1524" layer="91"/>
-<label x="127" y="198.12" size="1.778" layer="95"/>
+<label x="127" y="195.58" size="1.778" layer="95"/>
 <junction x="121.92" y="195.58"/>
 </segment>
 </net>

@@ -397,7 +397,7 @@ assign n_t_2x = !(load_en_low && clear_done_low);
 assign b_load_en_low = !(n_t_2x && btp3);
 
 /* e27: sn7400 */
-//assign n_t_9x = z_pulse && del_1_low;  //VRS??
+//assign n_t_9x = z_pulse && del_1_low;
 
 /* e28: sn7416 */
 /* chan_low = !chan; */
