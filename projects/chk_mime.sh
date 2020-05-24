@@ -21,20 +21,31 @@ while read i; do
     *.JPG" - image/jpeg") ;;
     *.png" - image/png")  ;;
     *.pdf" - application/pdf") ;;
-    *.brd" - application/octet-stream") ;;
-    *.sch" - application/octet-stream") ;;
-    *.lbr" - application/octet-stream") ;;
-    *.zip" - application/octet-stream") ;;
-    *.EXE" - application/octet-stream") ;;
-    *.xls" - application/octet-stream") ;;
-    *.bin" - application/octet-stream") ;;
     *.abs" - application/octet-stream") ;;
+    *.bin" - application/octet-stream") ;;
+    *.brd" - application/octet-stream") ;;
+    *.cdb" - application/octet-stream") ;;
     *.cod" - application/octet-stream") ;;
     *.cof" - application/octet-stream") ;;
+    *.ddb" - application/octet-stream") ;;
     *.doc" - application/octet-stream") ;;
+    *.EXE" - application/octet-stream") ;;
     *.fpd" - application/octet-stream") ;;
+    *.hdb" - application/octet-stream") ;;
+    *.hif" - application/octet-stream") ;;
+    *.ipinfo" - application/octet-stream") ;;
+    *.kpt" - application/octet-stream") ;;
+    *.lbr" - application/octet-stream") ;;
     *.mcw" - application/octet-stream") ;;
     *.pof" - application/octet-stream") ;;
+    *.qws" - application/octet-stream") ;;
+    *.rdb" - application/octet-stream") ;;
+    *.rvd" - application/octet-stream") ;;
+    *.sch" - application/octet-stream") ;;
+    *.sci" - application/octet-stream") ;;
+    *.tdb" - application/octet-stream") ;;
+    *.xls" - application/octet-stream") ;;
+    *.zip" - application/octet-stream") ;;
     *) echo $i; status=1 ;;
   esac
 done
