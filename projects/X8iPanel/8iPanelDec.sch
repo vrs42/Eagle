@@ -71,6 +71,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -163,6 +164,11 @@
 <smd name="18" x="0" y="-20.32" dx="2.54" dy="1.524" layer="1"/>
 <smd name="19" x="0" y="-22.86" dx="2.54" dy="1.524" layer="1"/>
 </package>
+<package name="SPADELUG">
+<description>Spade Lug Mounting Hole</description>
+<pad name="1" x="0" y="0" drill="3.175" diameter="7.62"/>
+<text x="-2.54" y="4.445" size="1.27" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BULB">
@@ -192,6 +198,16 @@
 <text x="5.08" y="0" size="1.27" layer="94">&gt;NAME</text>
 <rectangle x1="2.54" y1="-1.27" x2="5.08" y2="1.27" layer="94"/>
 <pin name="1" x="-2.54" y="0" visible="pad" length="middle" direction="pas"/>
+</symbol>
+<symbol name="MA01-1">
+<wire x1="1.27" y1="2.54" x2="-3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-3.81" y="5.08" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="95" rot="MR180">&gt;NAME</text>
+<pin name="1" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -283,6 +299,22 @@
 <connects>
 <connect gate="B$1" pin="A" pad="A"/>
 <connect gate="B$1" pin="B" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LUG" prefix="LUG">
+<description>Spade Lug</description>
+<gates>
+<gate name="G$1" symbol="MA01-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPADELUG">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1871,86 +1903,6 @@ DIN A3, landscape with extra doc field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-ptr500">
-<packages>
-<package name="AK500/2">
-<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
-<wire x1="-5.08" y1="-3.556" x2="-5.08" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="3.937" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="3.937" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-3.556" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="3.048" x2="-5.588" y2="3.175" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="3.048" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
-<wire x1="-5.588" y1="3.175" x2="-5.588" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="-5.588" y1="2.032" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.159" x2="-5.08" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.159" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-2.159" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
-<wire x1="1.4986" y1="-1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="1.1176" y1="-1.016" x2="3.5306" y2="1.397" width="0.1524" layer="51"/>
-<wire x1="-3.9116" y1="-1.016" x2="-1.4986" y2="1.397" width="0.1524" layer="51"/>
-<wire x1="-3.5306" y1="-1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="1.4986" y1="-1.016" x2="3.5306" y2="1.016" width="0.6096" layer="51"/>
-<wire x1="-3.5306" y1="-1.016" x2="-1.4986" y2="1.016" width="0.6096" layer="51"/>
-<wire x1="1.1176" y1="-1.016" x2="1.4986" y2="-1.397" width="0.1524" layer="51"/>
-<wire x1="3.5306" y1="1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-3.9116" y1="-1.016" x2="-3.5306" y2="-1.397" width="0.1524" layer="51"/>
-<wire x1="-1.4986" y1="1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
-<circle x="2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
-<circle x="-2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
-<circle x="2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
-<circle x="-2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
-<pad name="1" x="-2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
-<pad name="2" x="2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
-<text x="-5.08" y="4.445" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-5.715" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.445" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
-<text x="0.635" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
-<rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="KL">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="KLV">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-3.81" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AK500/2" prefix="X" uservalue="yes">
-<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
-<gates>
-<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="KLV" x="0" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="AK500/2">
-<connects>
-<connect gate="-1" pin="KL" pad="1"/>
-<connect gate="-2" pin="KL" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2322,29 +2274,24 @@ DIN A3, landscape with extra doc field</description>
 <part name="V178" library="supply2" deviceset="GND" device=""/>
 <part name="C40TOP" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="C40BOT" library="dec-con" deviceset="FLEX19" device=""/>
-<part name="V179" library="supply2" deviceset="GND" device=""/>
-<part name="D40TOP" library="dec-con" deviceset="FLEX19" device=""/>
-<part name="D40BOT" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="E40TOP" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="E40BOT" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="F40TOP" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="F40BOT" library="dec-con" deviceset="FLEX19" device=""/>
+<part name="D40TOP" library="dec-con" deviceset="FLEX19" device=""/>
+<part name="D40BOT" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="V180" library="supply2" deviceset="GND" device=""/>
 <part name="V181" library="supply2" deviceset="+15V" device=""/>
-<part name="X2" library="con-ptr500" deviceset="AK500/2" device="" value="494864"/>
-<part name="X1" library="con-ptr500" deviceset="AK500/2" device="" value="494864"/>
-<part name="X3" library="con-ptr500" deviceset="AK500/2" device="" value="494864"/>
-<part name="X4" library="con-ptr500" deviceset="AK500/2" device="" value="494864"/>
-<part name="+15V2" library="con-ptr500" deviceset="AK500/2" device="" value="494864"/>
-<part name="+15V1" library="con-ptr500" deviceset="AK500/2" device="" value="494864"/>
-<part name="GND2" library="con-ptr500" deviceset="AK500/2" device="" value="494864"/>
-<part name="GND1" library="con-ptr500" deviceset="AK500/2" device="" value="494864"/>
-<part name="FRAME2" library="frames" deviceset="DINA3_L" device=""/>
+<part name="+15V" library="dec-con" deviceset="LUG" device=""/>
+<part name="NC1" library="dec-con" deviceset="LUG" device=""/>
+<part name="NC2" library="dec-con" deviceset="LUG" device=""/>
+<part name="GND" library="dec-con" deviceset="LUG" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-38.1" y="261.62" size="1.778" layer="91">TODO: Connect up the ribbons!</text>
+<text x="287.02" y="45.72" size="1.778" layer="94">All bulbs are OL-1.</text>
+<text x="-60.96" y="248.92" size="1.778" layer="91">Note: No common between logic GND and 15V GND!</text>
 </plain>
 <instances>
 <instance part="DF0" gate="B$1" x="20.32" y="241.3"/>
@@ -2714,109 +2661,92 @@ DIN A3, landscape with extra doc field</description>
 <instance part="C40BOT" gate="1" x="40.64" y="76.2" rot="MR270"/>
 <instance part="C40BOT" gate="5" x="25.4" y="228.6" rot="MR270"/>
 <instance part="C40BOT" gate="6" x="78.74" y="76.2" rot="MR270"/>
-<instance part="C40BOT" gate="13" x="203.2" y="45.72" rot="MR0"/>
 <instance part="C40BOT" gate="14" x="63.5" y="228.6" rot="MR270"/>
 <instance part="C40BOT" gate="16" x="96.52" y="111.76" rot="MR270"/>
 <instance part="C40BOT" gate="19" x="99.06" y="228.6" rot="MR270"/>
-<instance part="V179" gate="GND" x="208.28" y="25.4"/>
-<instance part="D40TOP" gate="1" x="124.46" y="228.6" rot="R270"/>
-<instance part="D40TOP" gate="2" x="124.46" y="190.5" rot="R270"/>
-<instance part="D40TOP" gate="3" x="124.46" y="152.4" rot="R270"/>
-<instance part="D40TOP" gate="4" x="124.46" y="111.76" rot="R270"/>
-<instance part="D40TOP" gate="5" x="124.46" y="76.2" rot="R270"/>
-<instance part="D40TOP" gate="6" x="160.02" y="228.6" rot="R270"/>
-<instance part="D40TOP" gate="7" x="160.02" y="190.5" rot="R270"/>
-<instance part="D40TOP" gate="8" x="160.02" y="152.4" rot="R270"/>
-<instance part="D40TOP" gate="12" x="160.02" y="111.76" rot="R270"/>
-<instance part="D40TOP" gate="13" x="160.02" y="76.2" rot="R270"/>
-<instance part="D40TOP" gate="14" x="198.12" y="228.6" rot="R270"/>
-<instance part="D40TOP" gate="15" x="198.12" y="190.5" rot="R270"/>
-<instance part="D40TOP" gate="16" x="198.12" y="152.4" rot="R270"/>
-<instance part="D40TOP" gate="17" x="198.12" y="111.76" rot="R270"/>
-<instance part="D40TOP" gate="18" x="198.12" y="76.2" rot="R270"/>
-<instance part="D40BOT" gate="1" x="142.24" y="76.2" rot="MR270"/>
-<instance part="D40BOT" gate="2" x="142.24" y="111.76" rot="MR270"/>
-<instance part="D40BOT" gate="3" x="142.24" y="152.4" rot="MR270"/>
-<instance part="D40BOT" gate="4" x="142.24" y="190.5" rot="MR270"/>
-<instance part="D40BOT" gate="5" x="142.24" y="228.6" rot="MR270"/>
-<instance part="D40BOT" gate="6" x="180.34" y="76.2" rot="MR270"/>
-<instance part="D40BOT" gate="9" x="180.34" y="111.76" rot="MR270"/>
-<instance part="D40BOT" gate="11" x="180.34" y="152.4" rot="MR270"/>
-<instance part="D40BOT" gate="12" x="180.34" y="190.5" rot="MR270"/>
-<instance part="D40BOT" gate="13" x="203.2" y="40.64" rot="MR0"/>
-<instance part="D40BOT" gate="14" x="180.34" y="228.6" rot="MR270"/>
-<instance part="D40BOT" gate="15" x="215.9" y="76.2" rot="MR270"/>
-<instance part="D40BOT" gate="16" x="215.9" y="111.76" rot="MR270"/>
-<instance part="D40BOT" gate="17" x="215.9" y="152.4" rot="MR270"/>
-<instance part="D40BOT" gate="18" x="215.9" y="190.5" rot="MR270"/>
-<instance part="D40BOT" gate="19" x="215.9" y="228.6" rot="MR270"/>
-<instance part="E40TOP" gate="1" x="238.76" y="228.6" rot="R270"/>
-<instance part="E40TOP" gate="2" x="238.76" y="190.5" rot="R270"/>
-<instance part="E40TOP" gate="3" x="238.76" y="152.4" rot="R270"/>
-<instance part="E40TOP" gate="4" x="238.76" y="111.76" rot="R270"/>
-<instance part="E40TOP" gate="5" x="238.76" y="76.2" rot="R270"/>
-<instance part="E40TOP" gate="6" x="274.32" y="228.6" rot="R270"/>
-<instance part="E40TOP" gate="7" x="274.32" y="190.5" rot="R270"/>
-<instance part="E40TOP" gate="8" x="274.32" y="152.4" rot="R270"/>
-<instance part="E40TOP" gate="12" x="274.32" y="111.76" rot="R270"/>
-<instance part="E40TOP" gate="13" x="274.32" y="76.2" rot="R270"/>
-<instance part="E40TOP" gate="14" x="312.42" y="228.6" rot="R270"/>
-<instance part="E40TOP" gate="15" x="312.42" y="190.5" rot="R270"/>
-<instance part="E40TOP" gate="16" x="312.42" y="152.4" rot="R270"/>
-<instance part="E40TOP" gate="17" x="312.42" y="111.76" rot="R270"/>
-<instance part="E40TOP" gate="18" x="312.42" y="76.2" rot="R270"/>
-<instance part="E40BOT" gate="1" x="256.54" y="76.2" rot="MR270"/>
-<instance part="E40BOT" gate="2" x="256.54" y="111.76" rot="MR270"/>
-<instance part="E40BOT" gate="3" x="256.54" y="152.4" rot="MR270"/>
-<instance part="E40BOT" gate="4" x="256.54" y="190.5" rot="MR270"/>
-<instance part="E40BOT" gate="5" x="256.54" y="228.6" rot="MR270"/>
-<instance part="E40BOT" gate="6" x="294.64" y="76.2" rot="MR270"/>
-<instance part="E40BOT" gate="9" x="294.64" y="111.76" rot="MR270"/>
-<instance part="E40BOT" gate="11" x="294.64" y="152.4" rot="MR270"/>
-<instance part="E40BOT" gate="12" x="294.64" y="190.5" rot="MR270"/>
-<instance part="E40BOT" gate="13" x="203.2" y="35.56" rot="MR0"/>
-<instance part="E40BOT" gate="14" x="294.64" y="228.6" rot="MR270"/>
-<instance part="E40BOT" gate="15" x="330.2" y="76.2" rot="MR270"/>
-<instance part="E40BOT" gate="16" x="330.2" y="111.76" rot="MR270"/>
-<instance part="E40BOT" gate="17" x="330.2" y="152.4" rot="MR270"/>
-<instance part="E40BOT" gate="18" x="330.2" y="190.5" rot="MR270"/>
-<instance part="E40BOT" gate="19" x="330.2" y="228.6" rot="MR270"/>
-<instance part="F40TOP" gate="13" x="144.78" y="33.02" rot="R270"/>
-<instance part="F40TOP" gate="17" x="25.4" y="190.5" rot="R270"/>
-<instance part="F40TOP" gate="18" x="43.18" y="190.5" rot="R270"/>
-<instance part="F40BOT" gate="1" x="30.48" y="33.02" rot="MR270"/>
-<instance part="F40BOT" gate="2" x="48.26" y="33.02" rot="MR270"/>
-<instance part="F40BOT" gate="3" x="66.04" y="33.02" rot="MR270"/>
-<instance part="F40BOT" gate="4" x="86.36" y="33.02" rot="MR270"/>
-<instance part="F40BOT" gate="5" x="104.14" y="33.02" rot="MR270"/>
-<instance part="F40BOT" gate="6" x="121.92" y="33.02" rot="MR270"/>
-<instance part="F40BOT" gate="11" x="162.56" y="33.02" rot="MR270"/>
-<instance part="F40BOT" gate="12" x="96.52" y="152.4" rot="MR270"/>
-<instance part="F40BOT" gate="13" x="203.2" y="30.48" rot="MR0"/>
-<instance part="F40BOT" gate="14" x="5.08" y="152.4" rot="MR270"/>
-<instance part="F40BOT" gate="15" x="40.64" y="152.4" rot="MR270"/>
-<instance part="F40BOT" gate="16" x="22.86" y="152.4" rot="MR270"/>
-<instance part="F40BOT" gate="17" x="60.96" y="152.4" rot="MR270"/>
-<instance part="F40BOT" gate="18" x="78.74" y="152.4" rot="MR270"/>
-<instance part="F40BOT" gate="19" x="7.62" y="190.5" rot="MR270"/>
+<instance part="E40TOP" gate="1" x="124.46" y="228.6" rot="R270"/>
+<instance part="E40TOP" gate="2" x="124.46" y="190.5" rot="R270"/>
+<instance part="E40TOP" gate="3" x="124.46" y="152.4" rot="R270"/>
+<instance part="E40TOP" gate="4" x="124.46" y="111.76" rot="R270"/>
+<instance part="E40TOP" gate="5" x="124.46" y="76.2" rot="R270"/>
+<instance part="E40TOP" gate="6" x="160.02" y="228.6" rot="R270"/>
+<instance part="E40TOP" gate="7" x="160.02" y="190.5" rot="R270"/>
+<instance part="E40TOP" gate="8" x="160.02" y="152.4" rot="R270"/>
+<instance part="E40TOP" gate="12" x="160.02" y="111.76" rot="R270"/>
+<instance part="E40TOP" gate="13" x="160.02" y="76.2" rot="R270"/>
+<instance part="E40TOP" gate="14" x="198.12" y="228.6" rot="R270"/>
+<instance part="E40TOP" gate="15" x="198.12" y="190.5" rot="R270"/>
+<instance part="E40TOP" gate="16" x="198.12" y="152.4" rot="R270"/>
+<instance part="E40TOP" gate="17" x="198.12" y="111.76" rot="R270"/>
+<instance part="E40TOP" gate="18" x="198.12" y="76.2" rot="R270"/>
+<instance part="E40BOT" gate="1" x="142.24" y="76.2" rot="MR270"/>
+<instance part="E40BOT" gate="2" x="142.24" y="111.76" rot="MR270"/>
+<instance part="E40BOT" gate="3" x="142.24" y="152.4" rot="MR270"/>
+<instance part="E40BOT" gate="4" x="142.24" y="190.5" rot="MR270"/>
+<instance part="E40BOT" gate="5" x="142.24" y="228.6" rot="MR270"/>
+<instance part="E40BOT" gate="6" x="180.34" y="76.2" rot="MR270"/>
+<instance part="E40BOT" gate="9" x="180.34" y="111.76" rot="MR270"/>
+<instance part="E40BOT" gate="11" x="180.34" y="152.4" rot="MR270"/>
+<instance part="E40BOT" gate="12" x="180.34" y="190.5" rot="MR270"/>
+<instance part="E40BOT" gate="14" x="180.34" y="228.6" rot="MR270"/>
+<instance part="E40BOT" gate="15" x="215.9" y="76.2" rot="MR270"/>
+<instance part="E40BOT" gate="16" x="215.9" y="111.76" rot="MR270"/>
+<instance part="E40BOT" gate="17" x="215.9" y="152.4" rot="MR270"/>
+<instance part="E40BOT" gate="18" x="215.9" y="190.5" rot="MR270"/>
+<instance part="E40BOT" gate="19" x="215.9" y="228.6" rot="MR270"/>
+<instance part="F40TOP" gate="1" x="238.76" y="228.6" rot="R270"/>
+<instance part="F40TOP" gate="2" x="238.76" y="190.5" rot="R270"/>
+<instance part="F40TOP" gate="3" x="238.76" y="152.4" rot="R270"/>
+<instance part="F40TOP" gate="4" x="238.76" y="111.76" rot="R270"/>
+<instance part="F40TOP" gate="5" x="238.76" y="76.2" rot="R270"/>
+<instance part="F40TOP" gate="6" x="274.32" y="228.6" rot="R270"/>
+<instance part="F40TOP" gate="7" x="274.32" y="190.5" rot="R270"/>
+<instance part="F40TOP" gate="8" x="274.32" y="152.4" rot="R270"/>
+<instance part="F40TOP" gate="12" x="274.32" y="111.76" rot="R270"/>
+<instance part="F40TOP" gate="13" x="274.32" y="76.2" rot="R270"/>
+<instance part="F40TOP" gate="14" x="312.42" y="228.6" rot="R270"/>
+<instance part="F40TOP" gate="15" x="312.42" y="190.5" rot="R270"/>
+<instance part="F40TOP" gate="16" x="312.42" y="152.4" rot="R270"/>
+<instance part="F40TOP" gate="17" x="312.42" y="111.76" rot="R270"/>
+<instance part="F40TOP" gate="18" x="312.42" y="76.2" rot="R270"/>
+<instance part="F40BOT" gate="1" x="256.54" y="76.2" rot="MR270"/>
+<instance part="F40BOT" gate="2" x="256.54" y="111.76" rot="MR270"/>
+<instance part="F40BOT" gate="3" x="256.54" y="152.4" rot="MR270"/>
+<instance part="F40BOT" gate="4" x="256.54" y="190.5" rot="MR270"/>
+<instance part="F40BOT" gate="5" x="256.54" y="228.6" rot="MR270"/>
+<instance part="F40BOT" gate="6" x="294.64" y="76.2" rot="MR270"/>
+<instance part="F40BOT" gate="9" x="294.64" y="111.76" rot="MR270"/>
+<instance part="F40BOT" gate="11" x="294.64" y="152.4" rot="MR270"/>
+<instance part="F40BOT" gate="12" x="294.64" y="190.5" rot="MR270"/>
+<instance part="F40BOT" gate="14" x="294.64" y="228.6" rot="MR270"/>
+<instance part="F40BOT" gate="15" x="330.2" y="76.2" rot="MR270"/>
+<instance part="F40BOT" gate="16" x="330.2" y="111.76" rot="MR270"/>
+<instance part="F40BOT" gate="17" x="330.2" y="152.4" rot="MR270"/>
+<instance part="F40BOT" gate="18" x="330.2" y="190.5" rot="MR270"/>
+<instance part="F40BOT" gate="19" x="330.2" y="228.6" rot="MR270"/>
+<instance part="D40TOP" gate="17" x="25.4" y="190.5" rot="R270"/>
+<instance part="D40TOP" gate="18" x="43.18" y="190.5" rot="R270"/>
+<instance part="D40BOT" gate="1" x="30.48" y="33.02" rot="MR270"/>
+<instance part="D40BOT" gate="2" x="48.26" y="33.02" rot="MR270"/>
+<instance part="D40BOT" gate="3" x="66.04" y="33.02" rot="MR270"/>
+<instance part="D40BOT" gate="4" x="86.36" y="33.02" rot="MR270"/>
+<instance part="D40BOT" gate="5" x="104.14" y="33.02" rot="MR270"/>
+<instance part="D40BOT" gate="6" x="121.92" y="33.02" rot="MR270"/>
+<instance part="D40BOT" gate="11" x="162.56" y="33.02" rot="MR270"/>
+<instance part="D40BOT" gate="12" x="96.52" y="152.4" rot="MR270"/>
+<instance part="D40BOT" gate="14" x="5.08" y="152.4" rot="MR270"/>
+<instance part="D40BOT" gate="16" x="40.64" y="152.4" rot="MR270"/>
+<instance part="D40BOT" gate="15" x="22.86" y="152.4" rot="MR270"/>
+<instance part="D40BOT" gate="17" x="60.96" y="152.4" rot="MR270"/>
+<instance part="D40BOT" gate="18" x="78.74" y="152.4" rot="MR270"/>
+<instance part="D40BOT" gate="19" x="7.62" y="190.5" rot="MR270"/>
 <instance part="V180" gate="GND" x="220.98" y="25.4"/>
 <instance part="V181" gate="+15V" x="220.98" y="48.26"/>
-<instance part="X2" gate="-1" x="246.38" y="50.8" rot="R270"/>
-<instance part="X2" gate="-2" x="241.3" y="50.8" rot="R270"/>
-<instance part="X1" gate="-1" x="233.68" y="50.8" rot="R270"/>
-<instance part="X1" gate="-2" x="228.6" y="50.8" rot="R270"/>
-<instance part="X3" gate="-1" x="228.6" y="22.86" rot="R90"/>
-<instance part="X3" gate="-2" x="233.68" y="22.86" rot="R90"/>
-<instance part="X4" gate="-1" x="241.3" y="22.86" rot="R90"/>
-<instance part="X4" gate="-2" x="246.38" y="22.86" rot="R90"/>
-<instance part="+15V2" gate="-1" x="274.32" y="50.8" rot="R270"/>
-<instance part="+15V2" gate="-2" x="269.24" y="50.8" rot="R270"/>
-<instance part="+15V1" gate="-1" x="261.62" y="50.8" rot="R270"/>
-<instance part="+15V1" gate="-2" x="256.54" y="50.8" rot="R270"/>
-<instance part="GND2" gate="-1" x="256.54" y="22.86" rot="R90"/>
-<instance part="GND2" gate="-2" x="261.62" y="22.86" rot="R90"/>
-<instance part="GND1" gate="-1" x="269.24" y="22.86" rot="R90"/>
-<instance part="GND1" gate="-2" x="274.32" y="22.86" rot="R90"/>
+<instance part="+15V" gate="G$1" x="231.14" y="50.8" rot="MR270"/>
+<instance part="NC1" gate="G$1" x="259.08" y="50.8" rot="MR270"/>
+<instance part="NC2" gate="G$1" x="259.08" y="22.86" rot="R90"/>
+<instance part="GND" gate="G$1" x="231.14" y="22.86" rot="R90"/>
+<instance part="D40BOT" gate="9" x="144.78" y="33.02" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -3185,35 +3115,11 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="V177" gate="+15V" pin="+15V"/>
 </segment>
 <segment>
-<wire x1="261.62" y1="45.72" x2="256.54" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="45.72" x2="269.24" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="45.72" x2="269.24" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="43.18" x2="256.54" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="45.72" x2="256.54" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="45.72" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="45.72" x2="241.3" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="45.72" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="43.18" x2="228.6" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="43.18" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="43.18" x2="220.98" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="45.72" x2="228.6" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="43.18" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
-<junction x="269.24" y="45.72"/>
-<junction x="256.54" y="45.72"/>
-<junction x="256.54" y="43.18"/>
-<junction x="241.3" y="45.72"/>
-<junction x="228.6" y="45.72"/>
-<junction x="228.6" y="43.18"/>
-<junction x="241.3" y="43.18"/>
-<pinref part="+15V1" gate="-1" pin="KL"/>
-<pinref part="+15V1" gate="-2" pin="KL"/>
-<pinref part="+15V2" gate="-1" pin="KL"/>
-<pinref part="+15V2" gate="-2" pin="KL"/>
-<pinref part="X1" gate="-1" pin="KL"/>
-<pinref part="X1" gate="-2" pin="KL"/>
-<pinref part="X2" gate="-1" pin="KL"/>
-<pinref part="X2" gate="-2" pin="KL"/>
+<wire x1="231.14" y1="45.72" x2="231.14" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="43.18" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="V181" gate="+15V" pin="+15V"/>
+<pinref part="+15V" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -3574,53 +3480,11 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="V178" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="27.94" x2="208.28" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="30.48" x2="208.28" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="35.56" x2="208.28" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="40.64" x2="208.28" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="45.72" x2="205.74" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="40.64" x2="208.28" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="35.56" x2="208.28" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="30.48" x2="208.28" y2="30.48" width="0.1524" layer="91"/>
-<junction x="208.28" y="40.64"/>
-<junction x="208.28" y="35.56"/>
-<junction x="208.28" y="30.48"/>
-<pinref part="V179" gate="GND" pin="GND"/>
-<pinref part="C40BOT" gate="13" pin="1"/>
-<pinref part="D40BOT" gate="13" pin="1"/>
-<pinref part="E40BOT" gate="13" pin="1"/>
-<pinref part="F40BOT" gate="13" pin="1"/>
-</segment>
-<segment>
-<wire x1="261.62" y1="27.94" x2="256.54" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="27.94" x2="269.24" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="27.94" x2="269.24" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="30.48" x2="256.54" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="27.94" x2="256.54" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="27.94" x2="228.6" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="27.94" x2="241.3" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="27.94" x2="241.3" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="30.48" x2="228.6" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="30.48" x2="220.98" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="27.94" x2="231.14" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="30.48" x2="220.98" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="30.48" x2="220.98" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="27.94" x2="228.6" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="30.48" x2="241.3" y2="30.48" width="0.1524" layer="91"/>
-<junction x="269.24" y="27.94"/>
-<junction x="256.54" y="27.94"/>
-<junction x="256.54" y="30.48"/>
-<junction x="241.3" y="27.94"/>
-<junction x="228.6" y="27.94"/>
-<junction x="228.6" y="30.48"/>
-<junction x="241.3" y="30.48"/>
-<pinref part="GND2" gate="-2" pin="KL"/>
-<pinref part="GND2" gate="-1" pin="KL"/>
-<pinref part="GND1" gate="-2" pin="KL"/>
-<pinref part="GND1" gate="-1" pin="KL"/>
-<pinref part="X3" gate="-2" pin="KL"/>
-<pinref part="X3" gate="-1" pin="KL"/>
-<pinref part="X4" gate="-2" pin="KL"/>
-<pinref part="X4" gate="-1" pin="KL"/>
 <pinref part="V180" gate="GND" pin="GND"/>
+<pinref part="GND" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4188,7 +4052,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="7.62" y1="193.04" x2="15.24" y2="193.04" width="0.1524" layer="91"/>
 <label x="7.62" y="193.04" size="1.778" layer="95"/>
 <pinref part="T73" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="19" pin="1"/>
+<pinref part="D40BOT" gate="19" pin="1"/>
 </segment>
 </net>
 <net name="PAUSE" class="0">
@@ -4196,7 +4060,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="25.4" y1="193.04" x2="33.02" y2="193.04" width="0.1524" layer="91"/>
 <label x="25.4" y="193.04" size="1.778" layer="95"/>
 <pinref part="T74" gate="G$1" pin="B"/>
-<pinref part="F40TOP" gate="17" pin="1"/>
+<pinref part="D40TOP" gate="17" pin="1"/>
 </segment>
 </net>
 <net name="RUN" class="0">
@@ -4204,7 +4068,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="43.18" y1="193.04" x2="50.8" y2="193.04" width="0.1524" layer="91"/>
 <label x="43.18" y="193.04" size="1.778" layer="95"/>
 <pinref part="T75" gate="G$1" pin="B"/>
-<pinref part="F40TOP" gate="18" pin="1"/>
+<pinref part="D40TOP" gate="18" pin="1"/>
 </segment>
 </net>
 <net name="IF1" class="0">
@@ -4228,7 +4092,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="5.08" y1="154.94" x2="12.7" y2="154.94" width="0.1524" layer="91"/>
 <label x="5.08" y="154.94" size="1.778" layer="95"/>
 <pinref part="T76" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="14" pin="1"/>
+<pinref part="D40BOT" gate="14" pin="1"/>
 </segment>
 </net>
 <net name="EXECUTE" class="0">
@@ -4236,7 +4100,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="22.86" y1="154.94" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
 <label x="22.86" y="154.94" size="1.778" layer="95"/>
 <pinref part="T77" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="16" pin="1"/>
+<pinref part="D40BOT" gate="15" pin="1"/>
 </segment>
 </net>
 <net name="DEFER" class="0">
@@ -4244,7 +4108,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="40.64" y1="154.94" x2="48.26" y2="154.94" width="0.1524" layer="91"/>
 <label x="40.64" y="154.94" size="1.778" layer="95"/>
 <pinref part="T78" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="15" pin="1"/>
+<pinref part="D40BOT" gate="16" pin="1"/>
 </segment>
 </net>
 <net name="WC" class="0">
@@ -4252,7 +4116,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="60.96" y1="154.94" x2="68.58" y2="154.94" width="0.1524" layer="91"/>
 <label x="60.96" y="154.94" size="1.778" layer="95"/>
 <pinref part="T79" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="17" pin="1"/>
+<pinref part="D40BOT" gate="17" pin="1"/>
 </segment>
 </net>
 <net name="CA" class="0">
@@ -4260,7 +4124,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="78.74" y1="154.94" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
 <label x="78.74" y="154.94" size="1.778" layer="95"/>
 <pinref part="T80" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="18" pin="1"/>
+<pinref part="D40BOT" gate="18" pin="1"/>
 </segment>
 </net>
 <net name="BREAK" class="0">
@@ -4268,7 +4132,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="96.52" y1="154.94" x2="104.14" y2="154.94" width="0.1524" layer="91"/>
 <label x="96.52" y="154.94" size="1.778" layer="95"/>
 <pinref part="T81" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="12" pin="1"/>
+<pinref part="D40BOT" gate="12" pin="1"/>
 </segment>
 </net>
 <net name="LINK" class="0">
@@ -4324,7 +4188,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="30.48" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
 <label x="30.48" y="35.56" size="1.778" layer="95"/>
 <pinref part="T82" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="1" pin="1"/>
+<pinref part="D40BOT" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="TAD" class="0">
@@ -4332,7 +4196,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="48.26" y1="35.56" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
 <label x="48.26" y="35.56" size="1.778" layer="95"/>
 <pinref part="T83" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="2" pin="1"/>
+<pinref part="D40BOT" gate="2" pin="1"/>
 </segment>
 </net>
 <net name="ISZ" class="0">
@@ -4340,7 +4204,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="66.04" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
 <label x="66.04" y="35.56" size="1.778" layer="95"/>
 <pinref part="T84" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="3" pin="1"/>
+<pinref part="D40BOT" gate="3" pin="1"/>
 </segment>
 </net>
 <net name="DCA" class="0">
@@ -4348,7 +4212,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="86.36" y1="35.56" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <label x="86.36" y="35.56" size="1.778" layer="95"/>
 <pinref part="T85" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="4" pin="1"/>
+<pinref part="D40BOT" gate="4" pin="1"/>
 </segment>
 </net>
 <net name="JMS" class="0">
@@ -4356,7 +4220,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="104.14" y1="35.56" x2="111.76" y2="35.56" width="0.1524" layer="91"/>
 <label x="104.14" y="35.56" size="1.778" layer="95"/>
 <pinref part="T86" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="5" pin="1"/>
+<pinref part="D40BOT" gate="5" pin="1"/>
 </segment>
 </net>
 <net name="JMP" class="0">
@@ -4364,7 +4228,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="121.92" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
 <label x="121.92" y="35.56" size="1.778" layer="95"/>
 <pinref part="T87" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="6" pin="1"/>
+<pinref part="D40BOT" gate="6" pin="1"/>
 </segment>
 </net>
 <net name="IOT" class="0">
@@ -4372,7 +4236,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="144.78" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
 <label x="144.78" y="35.56" size="1.778" layer="95"/>
 <pinref part="T88" gate="G$1" pin="B"/>
-<pinref part="F40TOP" gate="13" pin="1"/>
+<pinref part="D40BOT" gate="9" pin="1"/>
 </segment>
 </net>
 <net name="OPR" class="0">
@@ -4380,7 +4244,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="162.56" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
 <label x="162.56" y="35.56" size="1.778" layer="95"/>
 <pinref part="T89" gate="G$1" pin="B"/>
-<pinref part="F40BOT" gate="11" pin="1"/>
+<pinref part="D40BOT" gate="11" pin="1"/>
 </segment>
 </net>
 <net name="PC0" class="0">
@@ -4388,7 +4252,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="124.46" y1="231.14" x2="132.08" y2="231.14" width="0.1524" layer="91"/>
 <label x="124.46" y="231.14" size="1.778" layer="95"/>
 <pinref part="T7" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="1" pin="1"/>
+<pinref part="E40TOP" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="PC1" class="0">
@@ -4396,7 +4260,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="142.24" y1="231.14" x2="149.86" y2="231.14" width="0.1524" layer="91"/>
 <label x="142.24" y="231.14" size="1.778" layer="95"/>
 <pinref part="T8" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="5" pin="1"/>
+<pinref part="E40BOT" gate="5" pin="1"/>
 </segment>
 </net>
 <net name="PC2" class="0">
@@ -4404,7 +4268,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="160.02" y1="231.14" x2="167.64" y2="231.14" width="0.1524" layer="91"/>
 <label x="160.02" y="231.14" size="1.778" layer="95"/>
 <pinref part="T9" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="6" pin="1"/>
+<pinref part="E40TOP" gate="6" pin="1"/>
 </segment>
 </net>
 <net name="PC3" class="0">
@@ -4412,7 +4276,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="180.34" y1="231.14" x2="187.96" y2="231.14" width="0.1524" layer="91"/>
 <label x="180.34" y="231.14" size="1.778" layer="95"/>
 <pinref part="T10" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="14" pin="1"/>
+<pinref part="E40BOT" gate="14" pin="1"/>
 </segment>
 </net>
 <net name="PC4" class="0">
@@ -4420,7 +4284,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="198.12" y1="231.14" x2="205.74" y2="231.14" width="0.1524" layer="91"/>
 <label x="198.12" y="231.14" size="1.778" layer="95"/>
 <pinref part="T11" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="14" pin="1"/>
+<pinref part="E40TOP" gate="14" pin="1"/>
 </segment>
 </net>
 <net name="PC5" class="0">
@@ -4428,7 +4292,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="215.9" y1="231.14" x2="223.52" y2="231.14" width="0.1524" layer="91"/>
 <label x="215.9" y="231.14" size="1.778" layer="95"/>
 <pinref part="T12" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="19" pin="1"/>
+<pinref part="E40BOT" gate="19" pin="1"/>
 </segment>
 </net>
 <net name="PC6" class="0">
@@ -4436,7 +4300,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="238.76" y1="231.14" x2="246.38" y2="231.14" width="0.1524" layer="91"/>
 <label x="238.76" y="231.14" size="1.778" layer="95"/>
 <pinref part="T13" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="1" pin="1"/>
+<pinref part="F40TOP" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="PC7" class="0">
@@ -4444,7 +4308,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="256.54" y1="231.14" x2="264.16" y2="231.14" width="0.1524" layer="91"/>
 <label x="256.54" y="231.14" size="1.778" layer="95"/>
 <pinref part="T14" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="5" pin="1"/>
+<pinref part="F40BOT" gate="5" pin="1"/>
 </segment>
 </net>
 <net name="PC8" class="0">
@@ -4452,7 +4316,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="274.32" y1="231.14" x2="281.94" y2="231.14" width="0.1524" layer="91"/>
 <label x="274.32" y="231.14" size="1.778" layer="95"/>
 <pinref part="T15" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="6" pin="1"/>
+<pinref part="F40TOP" gate="6" pin="1"/>
 </segment>
 </net>
 <net name="MA0" class="0">
@@ -4460,7 +4324,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="124.46" y1="193.04" x2="132.08" y2="193.04" width="0.1524" layer="91"/>
 <label x="124.46" y="193.04" size="1.778" layer="95"/>
 <pinref part="T19" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="2" pin="1"/>
+<pinref part="E40TOP" gate="2" pin="1"/>
 </segment>
 </net>
 <net name="MA1" class="0">
@@ -4468,7 +4332,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="142.24" y1="193.04" x2="149.86" y2="193.04" width="0.1524" layer="91"/>
 <label x="142.24" y="193.04" size="1.778" layer="95"/>
 <pinref part="T20" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="4" pin="1"/>
+<pinref part="E40BOT" gate="4" pin="1"/>
 </segment>
 </net>
 <net name="MA2" class="0">
@@ -4476,7 +4340,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="160.02" y1="193.04" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
 <label x="160.02" y="193.04" size="1.778" layer="95"/>
 <pinref part="T21" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="7" pin="1"/>
+<pinref part="E40TOP" gate="7" pin="1"/>
 </segment>
 </net>
 <net name="MA3" class="0">
@@ -4484,7 +4348,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="180.34" y1="193.04" x2="187.96" y2="193.04" width="0.1524" layer="91"/>
 <label x="180.34" y="193.04" size="1.778" layer="95"/>
 <pinref part="T22" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="12" pin="1"/>
+<pinref part="E40BOT" gate="12" pin="1"/>
 </segment>
 </net>
 <net name="MA4" class="0">
@@ -4492,7 +4356,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="198.12" y1="193.04" x2="205.74" y2="193.04" width="0.1524" layer="91"/>
 <label x="198.12" y="193.04" size="1.778" layer="95"/>
 <pinref part="T23" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="15" pin="1"/>
+<pinref part="E40TOP" gate="15" pin="1"/>
 </segment>
 </net>
 <net name="MA5" class="0">
@@ -4500,7 +4364,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="215.9" y1="193.04" x2="223.52" y2="193.04" width="0.1524" layer="91"/>
 <label x="215.9" y="193.04" size="1.778" layer="95"/>
 <pinref part="T24" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="18" pin="1"/>
+<pinref part="E40BOT" gate="18" pin="1"/>
 </segment>
 </net>
 <net name="MA6" class="0">
@@ -4508,7 +4372,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="238.76" y1="193.04" x2="246.38" y2="193.04" width="0.1524" layer="91"/>
 <label x="238.76" y="193.04" size="1.778" layer="95"/>
 <pinref part="T25" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="2" pin="1"/>
+<pinref part="F40TOP" gate="2" pin="1"/>
 </segment>
 </net>
 <net name="MA7" class="0">
@@ -4516,7 +4380,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="256.54" y1="193.04" x2="264.16" y2="193.04" width="0.1524" layer="91"/>
 <label x="256.54" y="193.04" size="1.778" layer="95"/>
 <pinref part="T26" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="4" pin="1"/>
+<pinref part="F40BOT" gate="4" pin="1"/>
 </segment>
 </net>
 <net name="MA8" class="0">
@@ -4524,7 +4388,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="274.32" y1="193.04" x2="281.94" y2="193.04" width="0.1524" layer="91"/>
 <label x="274.32" y="193.04" size="1.778" layer="95"/>
 <pinref part="T27" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="7" pin="1"/>
+<pinref part="F40TOP" gate="7" pin="1"/>
 </segment>
 </net>
 <net name="MB0" class="0">
@@ -4532,7 +4396,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="124.46" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
 <label x="124.46" y="154.94" size="1.778" layer="95"/>
 <pinref part="T31" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="3" pin="1"/>
+<pinref part="E40TOP" gate="3" pin="1"/>
 </segment>
 </net>
 <net name="MB1" class="0">
@@ -4540,7 +4404,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="142.24" y1="154.94" x2="149.86" y2="154.94" width="0.1524" layer="91"/>
 <label x="142.24" y="154.94" size="1.778" layer="95"/>
 <pinref part="T32" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="3" pin="1"/>
+<pinref part="E40BOT" gate="3" pin="1"/>
 </segment>
 </net>
 <net name="MB2" class="0">
@@ -4548,7 +4412,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="160.02" y1="154.94" x2="167.64" y2="154.94" width="0.1524" layer="91"/>
 <label x="160.02" y="154.94" size="1.778" layer="95"/>
 <pinref part="T33" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="8" pin="1"/>
+<pinref part="E40TOP" gate="8" pin="1"/>
 </segment>
 </net>
 <net name="MB3" class="0">
@@ -4556,7 +4420,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="180.34" y1="154.94" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
 <label x="180.34" y="154.94" size="1.778" layer="95"/>
 <pinref part="T34" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="11" pin="1"/>
+<pinref part="E40BOT" gate="11" pin="1"/>
 </segment>
 </net>
 <net name="MB4" class="0">
@@ -4564,7 +4428,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="198.12" y1="154.94" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
 <label x="198.12" y="154.94" size="1.778" layer="95"/>
 <pinref part="T35" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="16" pin="1"/>
+<pinref part="E40TOP" gate="16" pin="1"/>
 </segment>
 </net>
 <net name="MB5" class="0">
@@ -4572,7 +4436,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="215.9" y1="154.94" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
 <label x="215.9" y="154.94" size="1.778" layer="95"/>
 <pinref part="T36" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="17" pin="1"/>
+<pinref part="E40BOT" gate="17" pin="1"/>
 </segment>
 </net>
 <net name="MB6" class="0">
@@ -4580,7 +4444,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="238.76" y1="154.94" x2="246.38" y2="154.94" width="0.1524" layer="91"/>
 <label x="238.76" y="154.94" size="1.778" layer="95"/>
 <pinref part="T37" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="3" pin="1"/>
+<pinref part="F40TOP" gate="3" pin="1"/>
 </segment>
 </net>
 <net name="MB7" class="0">
@@ -4588,7 +4452,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="256.54" y1="154.94" x2="264.16" y2="154.94" width="0.1524" layer="91"/>
 <label x="256.54" y="154.94" size="1.778" layer="95"/>
 <pinref part="T38" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="3" pin="1"/>
+<pinref part="F40BOT" gate="3" pin="1"/>
 </segment>
 </net>
 <net name="MB8" class="0">
@@ -4596,7 +4460,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="274.32" y1="154.94" x2="281.94" y2="154.94" width="0.1524" layer="91"/>
 <label x="274.32" y="154.94" size="1.778" layer="95"/>
 <pinref part="T39" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="8" pin="1"/>
+<pinref part="F40TOP" gate="8" pin="1"/>
 </segment>
 </net>
 <net name="PC9" class="0">
@@ -4604,7 +4468,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="294.64" y1="231.14" x2="302.26" y2="231.14" width="0.1524" layer="91"/>
 <label x="294.64" y="231.14" size="1.778" layer="95"/>
 <pinref part="T16" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="14" pin="1"/>
+<pinref part="F40BOT" gate="14" pin="1"/>
 </segment>
 </net>
 <net name="PC10" class="0">
@@ -4612,7 +4476,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="312.42" y1="231.14" x2="320.04" y2="231.14" width="0.1524" layer="91"/>
 <label x="312.42" y="231.14" size="1.778" layer="95"/>
 <pinref part="T17" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="14" pin="1"/>
+<pinref part="F40TOP" gate="14" pin="1"/>
 </segment>
 </net>
 <net name="PC11" class="0">
@@ -4620,7 +4484,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="330.2" y1="231.14" x2="337.82" y2="231.14" width="0.1524" layer="91"/>
 <label x="330.2" y="231.14" size="1.778" layer="95"/>
 <pinref part="T18" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="19" pin="1"/>
+<pinref part="F40BOT" gate="19" pin="1"/>
 </segment>
 </net>
 <net name="MA11" class="0">
@@ -4628,7 +4492,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="330.2" y1="193.04" x2="337.82" y2="193.04" width="0.1524" layer="91"/>
 <label x="330.2" y="193.04" size="1.778" layer="95"/>
 <pinref part="T30" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="18" pin="1"/>
+<pinref part="F40BOT" gate="18" pin="1"/>
 </segment>
 </net>
 <net name="MA10" class="0">
@@ -4636,7 +4500,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="312.42" y1="193.04" x2="320.04" y2="193.04" width="0.1524" layer="91"/>
 <label x="312.42" y="193.04" size="1.778" layer="95"/>
 <pinref part="T29" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="15" pin="1"/>
+<pinref part="F40TOP" gate="15" pin="1"/>
 </segment>
 </net>
 <net name="MA9" class="0">
@@ -4644,7 +4508,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="294.64" y1="193.04" x2="302.26" y2="193.04" width="0.1524" layer="91"/>
 <label x="294.64" y="193.04" size="1.778" layer="95"/>
 <pinref part="T28" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="12" pin="1"/>
+<pinref part="F40BOT" gate="12" pin="1"/>
 </segment>
 </net>
 <net name="MB9" class="0">
@@ -4652,7 +4516,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="294.64" y1="154.94" x2="302.26" y2="154.94" width="0.1524" layer="91"/>
 <label x="294.64" y="154.94" size="1.778" layer="95"/>
 <pinref part="T40" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="11" pin="1"/>
+<pinref part="F40BOT" gate="11" pin="1"/>
 </segment>
 </net>
 <net name="MB10" class="0">
@@ -4660,7 +4524,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="312.42" y1="154.94" x2="320.04" y2="154.94" width="0.1524" layer="91"/>
 <label x="312.42" y="154.94" size="1.778" layer="95"/>
 <pinref part="T41" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="16" pin="1"/>
+<pinref part="F40TOP" gate="16" pin="1"/>
 </segment>
 </net>
 <net name="MB11" class="0">
@@ -4668,7 +4532,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="330.2" y1="154.94" x2="337.82" y2="154.94" width="0.1524" layer="91"/>
 <label x="330.2" y="154.94" size="1.778" layer="95"/>
 <pinref part="T42" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="17" pin="1"/>
+<pinref part="F40BOT" gate="17" pin="1"/>
 </segment>
 </net>
 <net name="AC0" class="0">
@@ -4676,7 +4540,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="124.46" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
 <label x="124.46" y="114.3" size="1.778" layer="95"/>
 <pinref part="T43" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="4" pin="1"/>
+<pinref part="E40TOP" gate="4" pin="1"/>
 </segment>
 </net>
 <net name="AC1" class="0">
@@ -4684,7 +4548,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="142.24" y1="114.3" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
 <label x="142.24" y="114.3" size="1.778" layer="95"/>
 <pinref part="T44" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="2" pin="1"/>
+<pinref part="E40BOT" gate="2" pin="1"/>
 </segment>
 </net>
 <net name="AC2" class="0">
@@ -4692,7 +4556,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="160.02" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
 <label x="160.02" y="114.3" size="1.778" layer="95"/>
 <pinref part="T45" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="12" pin="1"/>
+<pinref part="E40TOP" gate="12" pin="1"/>
 </segment>
 </net>
 <net name="AC3" class="0">
@@ -4700,7 +4564,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="180.34" y1="114.3" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
 <label x="180.34" y="114.3" size="1.778" layer="95"/>
 <pinref part="T46" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="9" pin="1"/>
+<pinref part="E40BOT" gate="9" pin="1"/>
 </segment>
 </net>
 <net name="AC4" class="0">
@@ -4708,7 +4572,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="198.12" y1="114.3" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
 <label x="198.12" y="114.3" size="1.778" layer="95"/>
 <pinref part="T47" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="17" pin="1"/>
+<pinref part="E40TOP" gate="17" pin="1"/>
 </segment>
 </net>
 <net name="AC5" class="0">
@@ -4716,7 +4580,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="215.9" y1="114.3" x2="223.52" y2="114.3" width="0.1524" layer="91"/>
 <label x="215.9" y="114.3" size="1.778" layer="95"/>
 <pinref part="T48" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="16" pin="1"/>
+<pinref part="E40BOT" gate="16" pin="1"/>
 </segment>
 </net>
 <net name="AC6" class="0">
@@ -4724,7 +4588,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="238.76" y1="114.3" x2="246.38" y2="114.3" width="0.1524" layer="91"/>
 <label x="238.76" y="114.3" size="1.778" layer="95"/>
 <pinref part="T49" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="4" pin="1"/>
+<pinref part="F40TOP" gate="4" pin="1"/>
 </segment>
 </net>
 <net name="AC7" class="0">
@@ -4732,7 +4596,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="256.54" y1="114.3" x2="264.16" y2="114.3" width="0.1524" layer="91"/>
 <label x="256.54" y="114.3" size="1.778" layer="95"/>
 <pinref part="T50" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="2" pin="1"/>
+<pinref part="F40BOT" gate="2" pin="1"/>
 </segment>
 </net>
 <net name="AC8" class="0">
@@ -4740,7 +4604,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="274.32" y1="114.3" x2="281.94" y2="114.3" width="0.1524" layer="91"/>
 <label x="274.32" y="114.3" size="1.778" layer="95"/>
 <pinref part="T51" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="12" pin="1"/>
+<pinref part="F40TOP" gate="12" pin="1"/>
 </segment>
 </net>
 <net name="MQ8" class="0">
@@ -4748,7 +4612,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="274.32" y1="78.74" x2="281.94" y2="78.74" width="0.1524" layer="91"/>
 <label x="274.32" y="78.74" size="1.778" layer="95"/>
 <pinref part="T63" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="13" pin="1"/>
+<pinref part="F40TOP" gate="13" pin="1"/>
 </segment>
 </net>
 <net name="MQ7" class="0">
@@ -4756,7 +4620,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="256.54" y1="78.74" x2="264.16" y2="78.74" width="0.1524" layer="91"/>
 <label x="256.54" y="78.74" size="1.778" layer="95"/>
 <pinref part="T62" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="1" pin="1"/>
+<pinref part="F40BOT" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="MQ6" class="0">
@@ -4764,7 +4628,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="238.76" y1="78.74" x2="246.38" y2="78.74" width="0.1524" layer="91"/>
 <label x="238.76" y="78.74" size="1.778" layer="95"/>
 <pinref part="T61" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="5" pin="1"/>
+<pinref part="F40TOP" gate="5" pin="1"/>
 </segment>
 </net>
 <net name="MQ0" class="0">
@@ -4772,7 +4636,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="124.46" y1="78.74" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
 <label x="124.46" y="78.74" size="1.778" layer="95"/>
 <pinref part="T55" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="5" pin="1"/>
+<pinref part="E40TOP" gate="5" pin="1"/>
 </segment>
 </net>
 <net name="MQ1" class="0">
@@ -4780,7 +4644,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="142.24" y1="78.74" x2="149.86" y2="78.74" width="0.1524" layer="91"/>
 <label x="142.24" y="78.74" size="1.778" layer="95"/>
 <pinref part="T56" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="1" pin="1"/>
+<pinref part="E40BOT" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="MQ2" class="0">
@@ -4788,7 +4652,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="160.02" y1="78.74" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
 <label x="160.02" y="78.74" size="1.778" layer="95"/>
 <pinref part="T57" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="13" pin="1"/>
+<pinref part="E40TOP" gate="13" pin="1"/>
 </segment>
 </net>
 <net name="MQ3" class="0">
@@ -4796,7 +4660,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="180.34" y1="78.74" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
 <label x="180.34" y="78.74" size="1.778" layer="95"/>
 <pinref part="T58" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="6" pin="1"/>
+<pinref part="E40BOT" gate="6" pin="1"/>
 </segment>
 </net>
 <net name="MQ4" class="0">
@@ -4804,7 +4668,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="198.12" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
 <label x="198.12" y="78.74" size="1.778" layer="95"/>
 <pinref part="T59" gate="G$1" pin="B"/>
-<pinref part="D40TOP" gate="18" pin="1"/>
+<pinref part="E40TOP" gate="18" pin="1"/>
 </segment>
 </net>
 <net name="MQ5" class="0">
@@ -4812,7 +4676,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="215.9" y1="78.74" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
 <label x="215.9" y="78.74" size="1.778" layer="95"/>
 <pinref part="T60" gate="G$1" pin="B"/>
-<pinref part="D40BOT" gate="15" pin="1"/>
+<pinref part="E40BOT" gate="15" pin="1"/>
 </segment>
 </net>
 <net name="AC9" class="0">
@@ -4820,7 +4684,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="294.64" y1="114.3" x2="302.26" y2="114.3" width="0.1524" layer="91"/>
 <label x="294.64" y="114.3" size="1.778" layer="95"/>
 <pinref part="T52" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="9" pin="1"/>
+<pinref part="F40BOT" gate="9" pin="1"/>
 </segment>
 </net>
 <net name="AC10" class="0">
@@ -4828,7 +4692,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="312.42" y1="114.3" x2="320.04" y2="114.3" width="0.1524" layer="91"/>
 <label x="312.42" y="114.3" size="1.778" layer="95"/>
 <pinref part="T53" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="17" pin="1"/>
+<pinref part="F40TOP" gate="17" pin="1"/>
 </segment>
 </net>
 <net name="AC11" class="0">
@@ -4836,7 +4700,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="330.2" y1="114.3" x2="337.82" y2="114.3" width="0.1524" layer="91"/>
 <label x="330.2" y="114.3" size="1.778" layer="95"/>
 <pinref part="T54" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="16" pin="1"/>
+<pinref part="F40BOT" gate="16" pin="1"/>
 </segment>
 </net>
 <net name="MQ11" class="0">
@@ -4844,7 +4708,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="330.2" y1="78.74" x2="337.82" y2="78.74" width="0.1524" layer="91"/>
 <label x="330.2" y="78.74" size="1.778" layer="95"/>
 <pinref part="T66" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="15" pin="1"/>
+<pinref part="F40BOT" gate="15" pin="1"/>
 </segment>
 </net>
 <net name="MQ10" class="0">
@@ -4852,7 +4716,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="312.42" y1="78.74" x2="320.04" y2="78.74" width="0.1524" layer="91"/>
 <label x="312.42" y="78.74" size="1.778" layer="95"/>
 <pinref part="T65" gate="G$1" pin="B"/>
-<pinref part="E40TOP" gate="18" pin="1"/>
+<pinref part="F40TOP" gate="18" pin="1"/>
 </segment>
 </net>
 <net name="MQ9" class="0">
@@ -4860,27 +4724,105 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="294.64" y1="78.74" x2="302.26" y2="78.74" width="0.1524" layer="91"/>
 <label x="294.64" y="78.74" size="1.778" layer="95"/>
 <pinref part="T64" gate="G$1" pin="B"/>
-<pinref part="E40BOT" gate="6" pin="1"/>
+<pinref part="F40BOT" gate="6" pin="1"/>
 </segment>
 </net>
 </nets>
 </sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="FRAME2" gate="G$2" x="287.02" y="0"/>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
 </sheets>
 <errors>
+<approved hash="101,1,259.08,45.72,NC1,1,,,,"/>
+<approved hash="101,1,259.08,27.94,NC2,1,,,,"/>
+<approved hash="113,1,20.6417,240.03,DF0,,,,,"/>
+<approved hash="113,1,38.4217,240.03,DF1,,,,,"/>
+<approved hash="113,1,56.2017,240.03,DF2,,,,,"/>
 <approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
-<approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
+<approved hash="113,1,76.5217,240.03,IF0,,,,,"/>
+<approved hash="113,1,94.3017,240.03,IF1,,,,,"/>
+<approved hash="113,1,112.082,240.03,IF2,,,,,"/>
+<approved hash="113,1,137.482,240.03,PC0,,,,,"/>
+<approved hash="113,1,155.262,240.03,PC1,,,,,"/>
+<approved hash="113,1,173.042,240.03,PC2,,,,,"/>
+<approved hash="113,1,193.362,240.03,PC3,,,,,"/>
+<approved hash="113,1,211.142,240.03,PC4,,,,,"/>
+<approved hash="113,1,228.922,240.03,PC5,,,,,"/>
+<approved hash="113,1,251.782,240.03,PC6,,,,,"/>
+<approved hash="113,1,269.562,240.03,PC7,,,,,"/>
+<approved hash="113,1,287.342,240.03,PC8,,,,,"/>
+<approved hash="113,1,307.662,240.03,PC9,,,,,"/>
+<approved hash="113,1,325.442,240.03,PC10,,,,,"/>
+<approved hash="113,1,343.222,240.03,PC11,,,,,"/>
+<approved hash="113,1,137.482,201.93,MA0,,,,,"/>
+<approved hash="113,1,155.262,201.93,MA1,,,,,"/>
+<approved hash="113,1,173.042,201.93,MA2,,,,,"/>
+<approved hash="113,1,193.362,201.93,MA3,,,,,"/>
+<approved hash="113,1,211.142,201.93,MA4,,,,,"/>
+<approved hash="113,1,228.922,201.93,MA5,,,,,"/>
+<approved hash="113,1,251.782,201.93,MA6,,,,,"/>
+<approved hash="113,1,269.562,201.93,MA7,,,,,"/>
+<approved hash="113,1,287.342,201.93,MA8,,,,,"/>
+<approved hash="113,1,307.662,201.93,MA9,,,,,"/>
+<approved hash="113,1,325.442,201.93,MA10,,,,,"/>
+<approved hash="113,1,343.222,201.93,MA11,,,,,"/>
+<approved hash="113,1,137.482,163.83,MB0,,,,,"/>
+<approved hash="113,1,155.262,163.83,MB1,,,,,"/>
+<approved hash="113,1,173.042,163.83,MB2,,,,,"/>
+<approved hash="113,1,193.362,163.83,MB3,,,,,"/>
+<approved hash="113,1,211.142,163.83,MB4,,,,,"/>
+<approved hash="113,1,228.922,163.83,MB5,,,,,"/>
+<approved hash="113,1,251.782,163.83,MB6,,,,,"/>
+<approved hash="113,1,269.562,163.83,MB7,,,,,"/>
+<approved hash="113,1,287.342,163.83,MB8,,,,,"/>
+<approved hash="113,1,307.662,163.83,MB9,,,,,"/>
+<approved hash="113,1,325.442,163.83,MB10,,,,,"/>
+<approved hash="113,1,343.222,163.83,MB11,,,,,"/>
+<approved hash="113,1,137.482,123.19,AC0,,,,,"/>
+<approved hash="113,1,155.262,123.19,AC1,,,,,"/>
+<approved hash="113,1,173.042,123.19,AC2,,,,,"/>
+<approved hash="113,1,193.362,123.19,AC3,,,,,"/>
+<approved hash="113,1,211.142,123.19,AC4,,,,,"/>
+<approved hash="113,1,228.922,123.19,AC5,,,,,"/>
+<approved hash="113,1,251.782,123.19,AC6,,,,,"/>
+<approved hash="113,1,269.562,123.19,AC7,,,,,"/>
+<approved hash="113,1,287.342,123.19,AC8,,,,,"/>
+<approved hash="113,1,307.662,123.19,AC9,,,,,"/>
+<approved hash="113,1,325.442,123.19,AC10,,,,,"/>
+<approved hash="113,1,343.222,123.19,AC11,,,,,"/>
+<approved hash="113,1,137.482,87.63,MQ0,,,,,"/>
+<approved hash="113,1,155.262,87.63,MQ1,,,,,"/>
+<approved hash="113,1,173.042,87.63,MQ2,,,,,"/>
+<approved hash="113,1,193.362,87.63,MQ3,,,,,"/>
+<approved hash="113,1,211.142,87.63,MQ4,,,,,"/>
+<approved hash="113,1,228.922,87.63,MQ5,,,,,"/>
+<approved hash="113,1,251.782,87.63,MQ6,,,,,"/>
+<approved hash="113,1,269.562,87.63,MQ7,,,,,"/>
+<approved hash="113,1,287.342,87.63,MQ8,,,,,"/>
+<approved hash="113,1,307.662,87.63,MQ9,,,,,"/>
+<approved hash="113,1,325.442,87.63,MQ10,,,,,"/>
+<approved hash="113,1,343.222,87.63,MQ11,,,,,"/>
+<approved hash="113,1,35.8817,87.63,SC0,,,,,"/>
+<approved hash="113,1,53.6617,87.63,SC1,,,,,"/>
+<approved hash="113,1,71.4417,87.63,SC2,,,,,"/>
+<approved hash="113,1,91.7617,87.63,SC3,,,,,"/>
+<approved hash="113,1,109.542,87.63,SC4,,,,,"/>
+<approved hash="113,1,109.542,123.19,LINK,,,,,"/>
+<approved hash="113,1,20.6417,201.93,ION,,,,,"/>
+<approved hash="113,1,38.4217,201.93,PAUSE,,,,,"/>
+<approved hash="113,1,56.2017,201.93,RUN,,,,,"/>
+<approved hash="113,1,18.1017,163.83,FETCH,,,,,"/>
+<approved hash="113,1,35.8817,164.731,EXECUTE,,,,,"/>
+<approved hash="113,1,53.6617,163.83,DEFER,,,,,"/>
+<approved hash="113,1,73.9817,167.368,WORDCOUNT,,,,,"/>
+<approved hash="113,1,91.7617,171.314,CURRENTADDRESS,,,,,"/>
+<approved hash="113,1,109.542,163.83,BREAK,,,,,"/>
+<approved hash="113,1,43.5017,44.45,AND,,,,,"/>
+<approved hash="113,1,61.2817,44.45,TAD,,,,,"/>
+<approved hash="113,1,79.0617,44.45,ISZ,,,,,"/>
+<approved hash="113,1,99.3817,44.45,DCA,,,,,"/>
+<approved hash="113,1,117.162,44.45,JMS,,,,,"/>
+<approved hash="113,1,134.942,44.45,JMP,,,,,"/>
+<approved hash="113,1,157.802,44.45,IOT,,,,,"/>
+<approved hash="113,1,175.582,44.45,OPR,,,,,"/>
 </errors>
 </schematic>
 </drawing>
