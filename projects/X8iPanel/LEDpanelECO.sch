@@ -5440,8 +5440,7 @@ Low profile connectors, straight&lt;p&gt;
 <text x="116.84" y="254" size="1.778" layer="91">Resistors must be at least 600 ohms.</text>
 <text x="-63.5" y="251.46" size="2.54" layer="94">BUGS:</text>
 <text x="-58.42" y="248.92" size="1.778" layer="94">IOT should be F40TOP13, not F40BOT9.</text>
-<text x="-58.42" y="243.84" size="1.778" layer="94">DEFER should be F40BOT16, not F40BOT15.</text>
-<text x="-58.42" y="246.38" size="1.778" layer="94">EXECUTE should be F40?????, not F40BOT16.</text>
+<text x="-58.42" y="246.38" size="1.778" layer="94">DEFER should be F40BOT16, not F40BOT15.</text>
 </plain>
 <instances>
 <instance part="DF0" gate="B$1" x="20.32" y="241.3"/>
@@ -5706,7 +5705,6 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="E40BOT" gate="17" x="332.74" y="142.24" rot="MR270"/>
 <instance part="E40BOT" gate="18" x="330.2" y="185.42" rot="MR270"/>
 <instance part="E40BOT" gate="19" x="330.2" y="228.6" rot="MR270"/>
-<instance part="F40TOP" gate="13" x="147.32" y="22.86" rot="R270"/>
 <instance part="F40TOP" gate="17" x="25.4" y="185.42" rot="R270"/>
 <instance part="F40TOP" gate="18" x="43.18" y="185.42" rot="R270"/>
 <instance part="F40BOT" gate="1" x="33.02" y="22.86" rot="MR270"/>
@@ -5719,8 +5717,8 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="F40BOT" gate="12" x="99.06" y="142.24" rot="MR270"/>
 <instance part="F40BOT" gate="13" x="205.74" y="20.32" rot="MR0"/>
 <instance part="F40BOT" gate="14" x="7.62" y="142.24" rot="MR270"/>
-<instance part="F40BOT" gate="15" x="43.18" y="142.24" rot="MR270"/>
-<instance part="F40BOT" gate="16" x="25.4" y="142.24" rot="MR270"/>
+<instance part="F40BOT" gate="16" x="43.18" y="142.24" rot="MR270"/>
+<instance part="F40BOT" gate="15" x="25.4" y="142.24" rot="MR270"/>
 <instance part="F40BOT" gate="17" x="63.5" y="142.24" rot="MR270"/>
 <instance part="F40BOT" gate="18" x="81.28" y="142.24" rot="MR270"/>
 <instance part="F40BOT" gate="19" x="7.62" y="185.42" rot="MR270"/>
@@ -5912,6 +5910,7 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="T87" gate="G$1" x="134.62" y="25.4"/>
 <instance part="T88" gate="G$1" x="157.48" y="25.4"/>
 <instance part="T89" gate="G$1" x="175.26" y="25.4"/>
+<instance part="F40BOT" gate="9" x="147.32" y="22.86" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6770,7 +6769,7 @@ Low profile connectors, straight&lt;p&gt;
 <segment>
 <wire x1="25.4" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
 <label x="25.4" y="144.78" size="1.778" layer="95"/>
-<pinref part="F40BOT" gate="16" pin="1"/>
+<pinref part="F40BOT" gate="15" pin="1"/>
 <pinref part="T77" gate="G$1" pin="B"/>
 </segment>
 </net>
@@ -6778,7 +6777,7 @@ Low profile connectors, straight&lt;p&gt;
 <segment>
 <wire x1="43.18" y1="144.78" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
 <label x="43.18" y="144.78" size="1.778" layer="95"/>
-<pinref part="F40BOT" gate="15" pin="1"/>
+<pinref part="F40BOT" gate="16" pin="1"/>
 <pinref part="T78" gate="G$1" pin="B"/>
 </segment>
 </net>
@@ -6904,10 +6903,10 @@ Low profile connectors, straight&lt;p&gt;
 </net>
 <net name="IOT" class="0">
 <segment>
-<wire x1="147.32" y1="25.4" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
 <label x="147.32" y="25.4" size="1.778" layer="95"/>
-<pinref part="F40TOP" gate="13" pin="1"/>
 <pinref part="T88" gate="G$1" pin="B"/>
+<pinref part="F40BOT" gate="9" pin="1"/>
+<wire x1="147.32" y1="25.4" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OPR" class="0">
@@ -8478,6 +8477,7 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="D40" gate="G$1" x="83.82" y="226.06" rot="R180"/>
 <instance part="E40" gate="G$1" x="134.62" y="226.06" rot="R180"/>
 <instance part="F40" gate="G$1" x="182.88" y="226.06" rot="R180"/>
+<instance part="F40TOP" gate="13" x="60.96" y="215.9" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8867,9 +8867,9 @@ Low profile connectors, straight&lt;p&gt;
 </net>
 <net name="IOT" class="0">
 <segment>
-<wire x1="76.2" y1="218.44" x2="66.04" y2="218.44" width="0.1524" layer="91"/>
-<label x="66.04" y="218.44" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="23"/>
+<wire x1="101.6" y1="231.14" x2="91.44" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="D40" gate="G$1" pin="14"/>
+<label x="93.98" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="JMP" class="0">
@@ -8944,16 +8944,16 @@ Low profile connectors, straight&lt;p&gt;
 </net>
 <net name="DEFER" class="0">
 <segment>
-<wire x1="91.44" y1="215.9" x2="101.6" y2="215.9" width="0.1524" layer="91"/>
-<label x="93.98" y="215.9" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="26"/>
+<wire x1="91.44" y1="213.36" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
+<label x="93.98" y="213.36" size="1.778" layer="95"/>
+<pinref part="D40" gate="G$1" pin="28"/>
 </segment>
 </net>
 <net name="EXECUTE" class="0">
 <segment>
-<wire x1="91.44" y1="213.36" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
-<label x="93.98" y="213.36" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="28"/>
+<wire x1="91.44" y1="215.9" x2="101.6" y2="215.9" width="0.1524" layer="91"/>
+<label x="93.98" y="215.9" size="1.778" layer="95"/>
+<pinref part="D40" gate="G$1" pin="26"/>
 </segment>
 </net>
 <net name="ION" class="0">
@@ -9185,6 +9185,14 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="142.24" y1="205.74" x2="152.4" y2="205.74" width="0.1524" layer="91"/>
 <label x="144.78" y="205.74" size="1.778" layer="95"/>
 <pinref part="E40" gate="G$1" pin="34"/>
+</segment>
+</net>
+<net name="S$1" class="0">
+<segment>
+<wire x1="76.2" y1="218.44" x2="60.96" y2="218.44" width="0.1524" layer="91"/>
+<label x="66.04" y="218.44" size="1.778" layer="95"/>
+<pinref part="D40" gate="G$1" pin="23"/>
+<pinref part="F40TOP" gate="13" pin="1"/>
 </segment>
 </net>
 </nets>

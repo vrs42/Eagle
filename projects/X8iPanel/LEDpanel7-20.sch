@@ -5229,7 +5229,6 @@ Low profile connectors, straight&lt;p&gt;
 <part name="V178" library="supply2" deviceset="GND" device=""/>
 <part name="C40TOP" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="C40BOT" library="dec-con" deviceset="FLEX19" device=""/>
-<part name="V179" library="supply2" deviceset="GND" device=""/>
 <part name="D40TOP" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="D40BOT" library="dec-con" deviceset="FLEX19" device=""/>
 <part name="E40TOP" library="dec-con" deviceset="FLEX19" device=""/>
@@ -5239,9 +5238,9 @@ Low profile connectors, straight&lt;p&gt;
 <part name="V180" library="supply2" deviceset="GND" device=""/>
 <part name="V181" library="supply2" deviceset="+15V" device=""/>
 <part name="GND1" library="dec-con" deviceset="LUG" device=""/>
-<part name="GND2" library="dec-con" deviceset="LUG" device=""/>
+<part name="OPEN2" library="dec-con" deviceset="LUG" device=""/>
 <part name="+V1" library="dec-con" deviceset="LUG" device=""/>
-<part name="+V2" library="dec-con" deviceset="LUG" device=""/>
+<part name="OPEN1" library="dec-con" deviceset="LUG" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K"/>
@@ -5331,10 +5330,10 @@ Low profile connectors, straight&lt;p&gt;
 <part name="R87" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K"/>
 <part name="R88" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K"/>
 <part name="R89" library="rcl" deviceset="R-US_" device="0207/10" value="1.5K"/>
+<part name="+V2" library="dec-con" deviceset="LUG" device=""/>
+<part name="GND2" library="dec-con" deviceset="LUG" device=""/>
 <part name="+V3" library="dec-con" deviceset="LUG" device=""/>
 <part name="GND3" library="dec-con" deviceset="LUG" device=""/>
-<part name="+V4" library="dec-con" deviceset="LUG" device=""/>
-<part name="GND4" library="dec-con" deviceset="LUG" device=""/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="TO92-CBE" technology="MPS2222A"/>
 <part name="T2" library="transistor" deviceset="*-NPN-" device="TO92-CBE" technology="MPS2222A"/>
 <part name="T3" library="transistor" deviceset="*-NPN-" device="TO92-CBE" technology="MPS2222A"/>
@@ -5438,10 +5437,7 @@ Low profile connectors, straight&lt;p&gt;
 <text x="116.84" y="259.08" size="1.778" layer="91">Yellow LED is 2.3V, 20ma.</text>
 <text x="116.84" y="256.54" size="1.778" layer="91">Resistor voltage is approximately 12V@20ma.</text>
 <text x="116.84" y="254" size="1.778" layer="91">Resistors must be at least 600 ohms.</text>
-<text x="-63.5" y="251.46" size="2.54" layer="94">BUGS:</text>
-<text x="-58.42" y="248.92" size="1.778" layer="94">IOT should be F40TOP13, not F40BOT9.</text>
-<text x="-58.42" y="243.84" size="1.778" layer="94">DEFER should be F40BOT16, not F40BOT15.</text>
-<text x="-58.42" y="246.38" size="1.778" layer="94">EXECUTE should be F40?????, not F40BOT16.</text>
+<text x="-63.5" y="254" size="1.778" layer="91">Note: No common between logic GND and 15V GND!</text>
 </plain>
 <instances>
 <instance part="DF0" gate="B$1" x="20.32" y="241.3"/>
@@ -5639,11 +5635,9 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="C40BOT" gate="1" x="43.18" y="66.04" rot="MR270"/>
 <instance part="C40BOT" gate="5" x="25.4" y="228.6" rot="MR270"/>
 <instance part="C40BOT" gate="6" x="81.28" y="66.04" rot="MR270"/>
-<instance part="C40BOT" gate="13" x="205.74" y="35.56" rot="MR0"/>
 <instance part="C40BOT" gate="14" x="63.5" y="228.6" rot="MR270"/>
 <instance part="C40BOT" gate="16" x="99.06" y="101.6" rot="MR270"/>
 <instance part="C40BOT" gate="19" x="99.06" y="228.6" rot="MR270"/>
-<instance part="V179" gate="GND" x="210.82" y="15.24"/>
 <instance part="D40TOP" gate="1" x="124.46" y="228.6" rot="R270"/>
 <instance part="D40TOP" gate="2" x="124.46" y="185.42" rot="R270"/>
 <instance part="D40TOP" gate="3" x="127" y="142.24" rot="R270"/>
@@ -5668,7 +5662,6 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="D40BOT" gate="9" x="182.88" y="101.6" rot="MR270"/>
 <instance part="D40BOT" gate="11" x="182.88" y="142.24" rot="MR270"/>
 <instance part="D40BOT" gate="12" x="180.34" y="185.42" rot="MR270"/>
-<instance part="D40BOT" gate="13" x="205.74" y="30.48" rot="MR0"/>
 <instance part="D40BOT" gate="14" x="180.34" y="228.6" rot="MR270"/>
 <instance part="D40BOT" gate="15" x="218.44" y="66.04" rot="MR270"/>
 <instance part="D40BOT" gate="16" x="218.44" y="101.6" rot="MR270"/>
@@ -5699,14 +5692,12 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="E40BOT" gate="9" x="297.18" y="101.6" rot="MR270"/>
 <instance part="E40BOT" gate="11" x="297.18" y="142.24" rot="MR270"/>
 <instance part="E40BOT" gate="12" x="294.64" y="185.42" rot="MR270"/>
-<instance part="E40BOT" gate="13" x="205.74" y="25.4" rot="MR0"/>
 <instance part="E40BOT" gate="14" x="294.64" y="228.6" rot="MR270"/>
 <instance part="E40BOT" gate="15" x="332.74" y="66.04" rot="MR270"/>
 <instance part="E40BOT" gate="16" x="332.74" y="101.6" rot="MR270"/>
 <instance part="E40BOT" gate="17" x="332.74" y="142.24" rot="MR270"/>
 <instance part="E40BOT" gate="18" x="330.2" y="185.42" rot="MR270"/>
 <instance part="E40BOT" gate="19" x="330.2" y="228.6" rot="MR270"/>
-<instance part="F40TOP" gate="13" x="147.32" y="22.86" rot="R270"/>
 <instance part="F40TOP" gate="17" x="25.4" y="185.42" rot="R270"/>
 <instance part="F40TOP" gate="18" x="43.18" y="185.42" rot="R270"/>
 <instance part="F40BOT" gate="1" x="33.02" y="22.86" rot="MR270"/>
@@ -5717,19 +5708,18 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="F40BOT" gate="6" x="124.46" y="22.86" rot="MR270"/>
 <instance part="F40BOT" gate="11" x="165.1" y="22.86" rot="MR270"/>
 <instance part="F40BOT" gate="12" x="99.06" y="142.24" rot="MR270"/>
-<instance part="F40BOT" gate="13" x="205.74" y="20.32" rot="MR0"/>
 <instance part="F40BOT" gate="14" x="7.62" y="142.24" rot="MR270"/>
-<instance part="F40BOT" gate="15" x="43.18" y="142.24" rot="MR270"/>
-<instance part="F40BOT" gate="16" x="25.4" y="142.24" rot="MR270"/>
+<instance part="F40BOT" gate="16" x="43.18" y="142.24" rot="MR270"/>
+<instance part="F40BOT" gate="15" x="25.4" y="142.24" rot="MR270"/>
 <instance part="F40BOT" gate="17" x="63.5" y="142.24" rot="MR270"/>
 <instance part="F40BOT" gate="18" x="81.28" y="142.24" rot="MR270"/>
 <instance part="F40BOT" gate="19" x="7.62" y="185.42" rot="MR270"/>
 <instance part="V180" gate="GND" x="223.52" y="15.24"/>
 <instance part="V181" gate="+15V" x="223.52" y="38.1"/>
 <instance part="GND1" gate="G$1" x="233.68" y="15.24" rot="R90"/>
-<instance part="GND2" gate="G$1" x="246.38" y="15.24" rot="R90"/>
+<instance part="OPEN2" gate="G$1" x="203.2" y="15.24" rot="R90"/>
 <instance part="+V1" gate="G$1" x="233.68" y="38.1" rot="R270"/>
-<instance part="+V2" gate="G$1" x="246.38" y="38.1" rot="R270"/>
+<instance part="OPEN1" gate="G$1" x="203.2" y="38.1" rot="R270"/>
 <instance part="R2" gate="G$1" x="33.02" y="243.84"/>
 <instance part="R1" gate="G$1" x="15.24" y="243.84"/>
 <instance part="R3" gate="G$1" x="50.8" y="243.84"/>
@@ -5819,10 +5809,10 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="R87" gate="G$1" x="132.08" y="38.1"/>
 <instance part="R88" gate="G$1" x="154.94" y="38.1"/>
 <instance part="R89" gate="G$1" x="172.72" y="38.1"/>
-<instance part="+V3" gate="G$1" x="264.16" y="38.1" rot="R270"/>
-<instance part="GND3" gate="G$1" x="264.16" y="15.24" rot="R90"/>
-<instance part="+V4" gate="G$1" x="276.86" y="38.1" rot="R270"/>
-<instance part="GND4" gate="G$1" x="276.86" y="15.24" rot="R90"/>
+<instance part="+V2" gate="G$1" x="246.38" y="38.1" rot="R270"/>
+<instance part="GND2" gate="G$1" x="246.38" y="15.24" rot="R90"/>
+<instance part="+V3" gate="G$1" x="259.08" y="38.1" rot="R270"/>
+<instance part="GND3" gate="G$1" x="259.08" y="15.24" rot="R90"/>
 <instance part="T1" gate="G$1" x="17.78" y="231.14"/>
 <instance part="T2" gate="G$1" x="35.56" y="231.14"/>
 <instance part="T3" gate="G$1" x="53.34" y="231.14"/>
@@ -5912,25 +5902,23 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="T87" gate="G$1" x="134.62" y="25.4"/>
 <instance part="T88" gate="G$1" x="157.48" y="25.4"/>
 <instance part="T89" gate="G$1" x="175.26" y="25.4"/>
+<instance part="F40BOT" gate="9" x="147.32" y="22.86" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="+15V" class="1">
 <segment>
-<wire x1="246.38" y1="33.02" x2="233.68" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="33.02" x2="223.52" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="33.02" x2="223.52" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="33.02" x2="264.16" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="33.02" x2="276.86" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="33.02" x2="259.08" y2="33.02" width="0.1524" layer="91"/>
 <junction x="233.68" y="33.02"/>
 <junction x="246.38" y="33.02"/>
-<junction x="264.16" y="33.02"/>
 <pinref part="V181" gate="+15V" pin="+15V"/>
-<pinref part="+V2" gate="G$1" pin="1"/>
 <pinref part="+V1" gate="G$1" pin="1"/>
+<pinref part="+V2" gate="G$1" pin="1"/>
 <pinref part="+V3" gate="G$1" pin="1"/>
-<pinref part="+V4" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="33.02" x2="246.38" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="248.92" x2="10.16" y2="243.84" width="0.1524" layer="91"/>
@@ -6297,37 +6285,16 @@ Low profile connectors, straight&lt;p&gt;
 </net>
 <net name="GND" class="1">
 <segment>
-<wire x1="210.82" y1="17.78" x2="210.82" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="20.32" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="25.4" x2="210.82" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="30.48" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="35.56" x2="208.28" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="30.48" x2="210.82" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="25.4" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="20.32" x2="210.82" y2="20.32" width="0.1524" layer="91"/>
-<junction x="210.82" y="30.48"/>
-<junction x="210.82" y="25.4"/>
-<junction x="210.82" y="20.32"/>
-<pinref part="V179" gate="GND" pin="GND"/>
-<pinref part="C40BOT" gate="13" pin="1"/>
-<pinref part="D40BOT" gate="13" pin="1"/>
-<pinref part="E40BOT" gate="13" pin="1"/>
-<pinref part="F40BOT" gate="13" pin="1"/>
-</segment>
-<segment>
-<wire x1="246.38" y1="20.32" x2="233.68" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="20.32" x2="223.52" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="20.32" x2="223.52" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="20.32" x2="264.16" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="20.32" x2="276.86" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="20.32" x2="259.08" y2="20.32" width="0.1524" layer="91"/>
 <junction x="233.68" y="20.32"/>
 <junction x="246.38" y="20.32"/>
-<junction x="264.16" y="20.32"/>
 <pinref part="V180" gate="GND" pin="GND"/>
 <pinref part="GND1" gate="G$1" pin="1"/>
 <pinref part="GND2" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="G$1" pin="1"/>
-<pinref part="GND4" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="20.32" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V2" gate="GND" pin="GND"/>
@@ -6770,7 +6737,7 @@ Low profile connectors, straight&lt;p&gt;
 <segment>
 <wire x1="25.4" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
 <label x="25.4" y="144.78" size="1.778" layer="95"/>
-<pinref part="F40BOT" gate="16" pin="1"/>
+<pinref part="F40BOT" gate="15" pin="1"/>
 <pinref part="T77" gate="G$1" pin="B"/>
 </segment>
 </net>
@@ -6778,7 +6745,7 @@ Low profile connectors, straight&lt;p&gt;
 <segment>
 <wire x1="43.18" y1="144.78" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
 <label x="43.18" y="144.78" size="1.778" layer="95"/>
-<pinref part="F40BOT" gate="15" pin="1"/>
+<pinref part="F40BOT" gate="16" pin="1"/>
 <pinref part="T78" gate="G$1" pin="B"/>
 </segment>
 </net>
@@ -6904,10 +6871,10 @@ Low profile connectors, straight&lt;p&gt;
 </net>
 <net name="IOT" class="0">
 <segment>
-<wire x1="147.32" y1="25.4" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
 <label x="147.32" y="25.4" size="1.778" layer="95"/>
-<pinref part="F40TOP" gate="13" pin="1"/>
 <pinref part="T88" gate="G$1" pin="B"/>
+<pinref part="F40BOT" gate="9" pin="1"/>
+<wire x1="147.32" y1="25.4" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OPR" class="0">
@@ -8478,92 +8445,11 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="D40" gate="G$1" x="83.82" y="226.06" rot="R180"/>
 <instance part="E40" gate="G$1" x="134.62" y="226.06" rot="R180"/>
 <instance part="F40" gate="G$1" x="182.88" y="226.06" rot="R180"/>
+<instance part="F40TOP" gate="13" x="60.96" y="215.9" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="1">
-<segment>
-<wire x1="27.94" y1="226.06" x2="17.78" y2="226.06" width="0.1524" layer="91"/>
-<label x="17.78" y="226.06" size="1.778" layer="95"/>
-<pinref part="C40" gate="G$1" pin="17"/>
-</segment>
-<segment>
-<wire x1="27.94" y1="223.52" x2="17.78" y2="223.52" width="0.1524" layer="91"/>
-<label x="17.78" y="223.52" size="1.778" layer="95"/>
-<pinref part="C40" gate="G$1" pin="19"/>
-</segment>
-<segment>
-<wire x1="43.18" y1="223.52" x2="53.34" y2="223.52" width="0.1524" layer="91"/>
-<label x="45.72" y="223.52" size="1.778" layer="95"/>
-<pinref part="C40" gate="G$1" pin="20"/>
-</segment>
-<segment>
-<wire x1="43.18" y1="226.06" x2="53.34" y2="226.06" width="0.1524" layer="91"/>
-<label x="45.72" y="226.06" size="1.778" layer="95"/>
-<pinref part="C40" gate="G$1" pin="18"/>
-</segment>
-<segment>
-<wire x1="76.2" y1="226.06" x2="66.04" y2="226.06" width="0.1524" layer="91"/>
-<label x="66.04" y="226.06" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="17"/>
-</segment>
-<segment>
-<wire x1="76.2" y1="223.52" x2="66.04" y2="223.52" width="0.1524" layer="91"/>
-<label x="66.04" y="223.52" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="19"/>
-</segment>
-<segment>
-<wire x1="91.44" y1="223.52" x2="101.6" y2="223.52" width="0.1524" layer="91"/>
-<label x="93.98" y="223.52" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="20"/>
-</segment>
-<segment>
-<wire x1="91.44" y1="226.06" x2="101.6" y2="226.06" width="0.1524" layer="91"/>
-<label x="93.98" y="226.06" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="18"/>
-</segment>
-<segment>
-<wire x1="127" y1="226.06" x2="116.84" y2="226.06" width="0.1524" layer="91"/>
-<label x="116.84" y="226.06" size="1.778" layer="95"/>
-<pinref part="E40" gate="G$1" pin="17"/>
-</segment>
-<segment>
-<wire x1="127" y1="223.52" x2="116.84" y2="223.52" width="0.1524" layer="91"/>
-<label x="116.84" y="223.52" size="1.778" layer="95"/>
-<pinref part="E40" gate="G$1" pin="19"/>
-</segment>
-<segment>
-<wire x1="142.24" y1="223.52" x2="152.4" y2="223.52" width="0.1524" layer="91"/>
-<label x="144.78" y="223.52" size="1.778" layer="95"/>
-<pinref part="E40" gate="G$1" pin="20"/>
-</segment>
-<segment>
-<wire x1="142.24" y1="226.06" x2="152.4" y2="226.06" width="0.1524" layer="91"/>
-<label x="144.78" y="226.06" size="1.778" layer="95"/>
-<pinref part="E40" gate="G$1" pin="18"/>
-</segment>
-<segment>
-<wire x1="175.26" y1="226.06" x2="165.1" y2="226.06" width="0.1524" layer="91"/>
-<label x="165.1" y="226.06" size="1.778" layer="95"/>
-<pinref part="F40" gate="G$1" pin="17"/>
-</segment>
-<segment>
-<wire x1="175.26" y1="223.52" x2="165.1" y2="223.52" width="0.1524" layer="91"/>
-<label x="165.1" y="223.52" size="1.778" layer="95"/>
-<pinref part="F40" gate="G$1" pin="19"/>
-</segment>
-<segment>
-<wire x1="190.5" y1="223.52" x2="200.66" y2="223.52" width="0.1524" layer="91"/>
-<label x="193.04" y="223.52" size="1.778" layer="95"/>
-<pinref part="F40" gate="G$1" pin="20"/>
-</segment>
-<segment>
-<wire x1="190.5" y1="226.06" x2="200.66" y2="226.06" width="0.1524" layer="91"/>
-<label x="193.04" y="226.06" size="1.778" layer="95"/>
-<pinref part="F40" gate="G$1" pin="18"/>
-</segment>
-</net>
 <net name="SC4" class="0">
 <segment>
 <wire x1="27.94" y1="205.74" x2="17.78" y2="205.74" width="0.1524" layer="91"/>
@@ -8867,9 +8753,9 @@ Low profile connectors, straight&lt;p&gt;
 </net>
 <net name="IOT" class="0">
 <segment>
-<wire x1="76.2" y1="218.44" x2="66.04" y2="218.44" width="0.1524" layer="91"/>
-<label x="66.04" y="218.44" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="23"/>
+<wire x1="101.6" y1="231.14" x2="91.44" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="D40" gate="G$1" pin="14"/>
+<label x="93.98" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="JMP" class="0">
@@ -8944,16 +8830,16 @@ Low profile connectors, straight&lt;p&gt;
 </net>
 <net name="DEFER" class="0">
 <segment>
-<wire x1="91.44" y1="215.9" x2="101.6" y2="215.9" width="0.1524" layer="91"/>
-<label x="93.98" y="215.9" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="26"/>
+<wire x1="91.44" y1="213.36" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
+<label x="93.98" y="213.36" size="1.778" layer="95"/>
+<pinref part="D40" gate="G$1" pin="28"/>
 </segment>
 </net>
 <net name="EXECUTE" class="0">
 <segment>
-<wire x1="91.44" y1="213.36" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
-<label x="93.98" y="213.36" size="1.778" layer="95"/>
-<pinref part="D40" gate="G$1" pin="28"/>
+<wire x1="91.44" y1="215.9" x2="101.6" y2="215.9" width="0.1524" layer="91"/>
+<label x="93.98" y="215.9" size="1.778" layer="95"/>
+<pinref part="D40" gate="G$1" pin="26"/>
 </segment>
 </net>
 <net name="ION" class="0">
@@ -9187,11 +9073,199 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="E40" gate="G$1" pin="34"/>
 </segment>
 </net>
+<net name="S$1" class="0">
+<segment>
+<wire x1="76.2" y1="218.44" x2="60.96" y2="218.44" width="0.1524" layer="91"/>
+<label x="66.04" y="218.44" size="1.778" layer="95"/>
+<pinref part="D40" gate="G$1" pin="23"/>
+<pinref part="F40TOP" gate="13" pin="1"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="101,1,246.38,17.78,OPEN2,1,,,,"/>
+<approved hash="101,1,246.38,35.56,OPEN1,1,,,,"/>
+<approved hash="113,1,20.6417,240.03,DF0,,,,,"/>
+<approved hash="113,1,38.4217,240.03,DF1,,,,,"/>
+<approved hash="113,1,56.2017,240.03,DF2,,,,,"/>
 <approved hash="113,1,194.206,131.976,FRAME1,,,,,"/>
+<approved hash="113,1,76.5217,240.03,IF0,,,,,"/>
+<approved hash="113,1,94.3017,240.03,IF1,,,,,"/>
+<approved hash="113,1,112.082,240.03,IF2,,,,,"/>
+<approved hash="113,1,137.482,240.03,PC0,,,,,"/>
+<approved hash="113,1,155.262,240.03,PC1,,,,,"/>
+<approved hash="113,1,173.042,240.03,PC2,,,,,"/>
+<approved hash="113,1,193.362,240.03,PC3,,,,,"/>
+<approved hash="113,1,211.142,240.03,PC4,,,,,"/>
+<approved hash="113,1,228.922,240.03,PC5,,,,,"/>
+<approved hash="113,1,251.782,240.03,PC6,,,,,"/>
+<approved hash="113,1,269.562,240.03,PC7,,,,,"/>
+<approved hash="113,1,287.342,240.03,PC8,,,,,"/>
+<approved hash="113,1,307.662,240.03,PC9,,,,,"/>
+<approved hash="113,1,325.442,240.03,PC10,,,,,"/>
+<approved hash="113,1,343.222,240.03,PC11,,,,,"/>
+<approved hash="113,1,137.482,196.85,MA0,,,,,"/>
+<approved hash="113,1,155.262,196.85,MA1,,,,,"/>
+<approved hash="113,1,173.042,196.85,MA2,,,,,"/>
+<approved hash="113,1,193.362,196.85,MA3,,,,,"/>
+<approved hash="113,1,211.142,196.85,MA4,,,,,"/>
+<approved hash="113,1,228.922,196.85,MA5,,,,,"/>
+<approved hash="113,1,251.782,196.85,MA6,,,,,"/>
+<approved hash="113,1,269.562,196.85,MA7,,,,,"/>
+<approved hash="113,1,287.342,196.85,MA8,,,,,"/>
+<approved hash="113,1,307.662,196.85,MA9,,,,,"/>
+<approved hash="113,1,325.442,196.85,MA10,,,,,"/>
+<approved hash="113,1,343.222,196.85,MA11,,,,,"/>
+<approved hash="113,1,140.022,153.67,MB0,,,,,"/>
+<approved hash="113,1,157.802,153.67,MB1,,,,,"/>
+<approved hash="113,1,175.582,153.67,MB2,,,,,"/>
+<approved hash="113,1,195.902,153.67,MB3,,,,,"/>
+<approved hash="113,1,213.682,153.67,MB4,,,,,"/>
+<approved hash="113,1,231.462,153.67,MB5,,,,,"/>
+<approved hash="113,1,254.322,153.67,MB6,,,,,"/>
+<approved hash="113,1,272.102,153.67,MB7,,,,,"/>
+<approved hash="113,1,289.882,153.67,MB8,,,,,"/>
+<approved hash="113,1,310.202,153.67,MB9,,,,,"/>
+<approved hash="113,1,327.982,153.67,MB10,,,,,"/>
+<approved hash="113,1,345.762,153.67,MB11,,,,,"/>
+<approved hash="113,1,140.022,113.03,AC0,,,,,"/>
+<approved hash="113,1,157.802,113.03,AC1,,,,,"/>
+<approved hash="113,1,175.582,113.03,AC2,,,,,"/>
+<approved hash="113,1,195.902,113.03,AC3,,,,,"/>
+<approved hash="113,1,213.682,113.03,AC4,,,,,"/>
+<approved hash="113,1,231.462,113.03,AC5,,,,,"/>
+<approved hash="113,1,254.322,113.03,AC6,,,,,"/>
+<approved hash="113,1,272.102,113.03,AC7,,,,,"/>
+<approved hash="113,1,289.882,113.03,AC8,,,,,"/>
+<approved hash="113,1,310.202,113.03,AC9,,,,,"/>
+<approved hash="113,1,327.982,113.03,AC10,,,,,"/>
+<approved hash="113,1,345.762,113.03,AC11,,,,,"/>
+<approved hash="113,1,140.022,77.47,MQ0,,,,,"/>
+<approved hash="113,1,157.802,77.47,MQ1,,,,,"/>
+<approved hash="113,1,175.582,77.47,MQ2,,,,,"/>
+<approved hash="113,1,195.902,77.47,MQ3,,,,,"/>
+<approved hash="113,1,213.682,77.47,MQ4,,,,,"/>
+<approved hash="113,1,231.462,77.47,MQ5,,,,,"/>
+<approved hash="113,1,254.322,77.47,MQ6,,,,,"/>
+<approved hash="113,1,272.102,77.47,MQ7,,,,,"/>
+<approved hash="113,1,289.882,77.47,MQ8,,,,,"/>
+<approved hash="113,1,310.202,77.47,MQ9,,,,,"/>
+<approved hash="113,1,327.982,77.47,MQ10,,,,,"/>
+<approved hash="113,1,345.762,77.47,MQ11,,,,,"/>
+<approved hash="113,1,38.4217,77.47,SC0,,,,,"/>
+<approved hash="113,1,56.2017,77.47,SC1,,,,,"/>
+<approved hash="113,1,73.9817,77.47,SC2,,,,,"/>
+<approved hash="113,1,94.3017,77.47,SC3,,,,,"/>
+<approved hash="113,1,112.082,77.47,SC4,,,,,"/>
+<approved hash="113,1,112.082,113.03,LINK,,,,,"/>
+<approved hash="113,1,20.6417,196.85,ION,,,,,"/>
+<approved hash="113,1,38.4217,196.85,PAUSE,,,,,"/>
+<approved hash="113,1,56.2017,196.85,RUN,,,,,"/>
+<approved hash="113,1,20.6417,153.67,FETCH,,,,,"/>
+<approved hash="113,1,38.4217,154.571,EXECUTE,,,,,"/>
+<approved hash="113,1,56.2017,153.67,DEFER,,,,,"/>
+<approved hash="113,1,76.5217,157.208,WORDCOUNT,,,,,"/>
+<approved hash="113,1,94.3017,161.154,CURRENTADDRESS,,,,,"/>
+<approved hash="113,1,112.082,153.67,BREAK,,,,,"/>
+<approved hash="113,1,46.0417,34.29,AND,,,,,"/>
+<approved hash="113,1,63.8217,34.29,TAD,,,,,"/>
+<approved hash="113,1,81.6017,34.29,ISZ,,,,,"/>
+<approved hash="113,1,101.922,34.29,DCA,,,,,"/>
+<approved hash="113,1,119.702,34.29,JMS,,,,,"/>
+<approved hash="113,1,137.482,34.29,JMP,,,,,"/>
+<approved hash="113,1,160.342,34.29,IOT,,,,,"/>
+<approved hash="113,1,178.122,34.29,OPR,,,,,"/>
+<approved hash="113,1,14.6135,231.436,T1,,,,,"/>
+<approved hash="113,1,32.3935,231.436,T2,,,,,"/>
+<approved hash="113,1,50.1735,231.436,T3,,,,,"/>
+<approved hash="113,1,70.4935,231.436,T4,,,,,"/>
+<approved hash="113,1,88.2735,231.436,T5,,,,,"/>
+<approved hash="113,1,106.053,231.436,T6,,,,,"/>
+<approved hash="113,1,131.453,231.436,T7,,,,,"/>
+<approved hash="113,1,149.233,231.436,T8,,,,,"/>
+<approved hash="113,1,167.013,231.436,T9,,,,,"/>
+<approved hash="113,1,187.333,231.436,T10,,,,,"/>
+<approved hash="113,1,205.113,231.436,T11,,,,,"/>
+<approved hash="113,1,222.893,231.436,T12,,,,,"/>
+<approved hash="113,1,245.753,231.436,T13,,,,,"/>
+<approved hash="113,1,263.533,231.436,T14,,,,,"/>
+<approved hash="113,1,281.313,231.436,T15,,,,,"/>
+<approved hash="113,1,301.633,231.436,T16,,,,,"/>
+<approved hash="113,1,319.413,231.436,T17,,,,,"/>
+<approved hash="113,1,337.193,231.436,T18,,,,,"/>
+<approved hash="113,1,131.453,188.256,T19,,,,,"/>
+<approved hash="113,1,149.233,188.256,T20,,,,,"/>
+<approved hash="113,1,167.013,188.256,T21,,,,,"/>
+<approved hash="113,1,187.333,188.256,T22,,,,,"/>
+<approved hash="113,1,205.113,188.256,T23,,,,,"/>
+<approved hash="113,1,222.893,188.256,T24,,,,,"/>
+<approved hash="113,1,245.753,188.256,T25,,,,,"/>
+<approved hash="113,1,263.533,188.256,T26,,,,,"/>
+<approved hash="113,1,281.313,188.256,T27,,,,,"/>
+<approved hash="113,1,301.633,188.256,T28,,,,,"/>
+<approved hash="113,1,319.413,188.256,T29,,,,,"/>
+<approved hash="113,1,337.193,188.256,T30,,,,,"/>
+<approved hash="113,1,133.993,145.076,T31,,,,,"/>
+<approved hash="113,1,151.773,145.076,T32,,,,,"/>
+<approved hash="113,1,169.553,145.076,T33,,,,,"/>
+<approved hash="113,1,189.873,145.076,T34,,,,,"/>
+<approved hash="113,1,207.653,145.076,T35,,,,,"/>
+<approved hash="113,1,225.433,145.076,T36,,,,,"/>
+<approved hash="113,1,248.293,145.076,T37,,,,,"/>
+<approved hash="113,1,266.073,145.076,T38,,,,,"/>
+<approved hash="113,1,283.853,145.076,T39,,,,,"/>
+<approved hash="113,1,304.173,145.076,T40,,,,,"/>
+<approved hash="113,1,321.953,145.076,T41,,,,,"/>
+<approved hash="113,1,339.733,145.076,T42,,,,,"/>
+<approved hash="113,1,133.993,104.436,T43,,,,,"/>
+<approved hash="113,1,151.773,104.436,T44,,,,,"/>
+<approved hash="113,1,169.553,104.436,T45,,,,,"/>
+<approved hash="113,1,189.873,104.436,T46,,,,,"/>
+<approved hash="113,1,207.653,104.436,T47,,,,,"/>
+<approved hash="113,1,225.433,104.436,T48,,,,,"/>
+<approved hash="113,1,248.293,104.436,T49,,,,,"/>
+<approved hash="113,1,266.073,104.436,T50,,,,,"/>
+<approved hash="113,1,283.853,104.436,T51,,,,,"/>
+<approved hash="113,1,304.173,104.436,T52,,,,,"/>
+<approved hash="113,1,321.953,104.436,T53,,,,,"/>
+<approved hash="113,1,339.733,104.436,T54,,,,,"/>
+<approved hash="113,1,133.993,68.8763,T55,,,,,"/>
+<approved hash="113,1,151.773,68.8763,T56,,,,,"/>
+<approved hash="113,1,169.553,68.8763,T57,,,,,"/>
+<approved hash="113,1,189.873,68.8763,T58,,,,,"/>
+<approved hash="113,1,207.653,68.8763,T59,,,,,"/>
+<approved hash="113,1,225.433,68.8763,T60,,,,,"/>
+<approved hash="113,1,248.293,68.8763,T61,,,,,"/>
+<approved hash="113,1,266.073,68.8763,T62,,,,,"/>
+<approved hash="113,1,283.853,68.8763,T63,,,,,"/>
+<approved hash="113,1,304.173,68.8763,T64,,,,,"/>
+<approved hash="113,1,321.953,68.8763,T65,,,,,"/>
+<approved hash="113,1,339.733,68.8763,T66,,,,,"/>
+<approved hash="113,1,32.3935,68.8763,T67,,,,,"/>
+<approved hash="113,1,50.1735,68.8763,T68,,,,,"/>
+<approved hash="113,1,67.9535,68.8763,T69,,,,,"/>
+<approved hash="113,1,88.2735,68.8763,T70,,,,,"/>
+<approved hash="113,1,106.053,68.8763,T71,,,,,"/>
+<approved hash="113,1,106.053,104.436,T72,,,,,"/>
+<approved hash="113,1,14.6135,188.256,T73,,,,,"/>
+<approved hash="113,1,32.3935,188.256,T74,,,,,"/>
+<approved hash="113,1,50.1735,188.256,T75,,,,,"/>
+<approved hash="113,1,14.6135,145.076,T76,,,,,"/>
+<approved hash="113,1,32.3935,145.076,T77,,,,,"/>
+<approved hash="113,1,50.1735,145.076,T78,,,,,"/>
+<approved hash="113,1,70.4935,145.076,T79,,,,,"/>
+<approved hash="113,1,88.2735,145.076,T80,,,,,"/>
+<approved hash="113,1,106.053,145.076,T81,,,,,"/>
+<approved hash="113,1,40.0135,25.6963,T82,,,,,"/>
+<approved hash="113,1,57.7935,25.6963,T83,,,,,"/>
+<approved hash="113,1,75.5735,25.6963,T84,,,,,"/>
+<approved hash="113,1,95.8935,25.6963,T85,,,,,"/>
+<approved hash="113,1,113.673,25.6963,T86,,,,,"/>
+<approved hash="113,1,131.453,25.6963,T87,,,,,"/>
+<approved hash="113,1,154.313,25.6963,T88,,,,,"/>
+<approved hash="113,1,172.093,25.6963,T89,,,,,"/>
 <approved hash="113,2,194.206,131.976,FRAME2,,,,,"/>
 <approved hash="113,2,35.56,224.595,C40,,,,,"/>
 <approved hash="113,2,83.82,224.595,D40,,,,,"/>
