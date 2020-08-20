@@ -1,6 +1,6 @@
 PDP-8/i Front Panel PCB
 <UL>
-<LI><b>1switch</b> is an exploration of ideas about using reed switches to 
+<LI><b>1switch</b> is an exploration of ideas about using reed switches to
 construct switch substitutes that fit in the original footprints.</LI>
 <LI><b>M900dec</b> is a drawing of DEC's M900 paddle card, which contains
 the indicator drivers, as well as connecting to the front panel cabling.</LI>
@@ -19,6 +19,8 @@ the use of LEDs instead of indicator lamps.</LI>
 the use of LEDs instead of indicator lamps.</LI>
 <LI><b>LEDPanelmpsl</b> is a version of 8iPanel with current limiting resistors suitable for
 the use of LEDs instead of indicator lamps.</LI>
+<LI><b>LEDPanelECOl</b> documents workarounds for issues in LEDpalenmpsl.</LI>
+<LI><b>LEDPanel7-20l</b> fixes the known issues in LEDpalenmpsl (as of July 2020).</LI>
 <LI><b>LEDproto</b> is a version of my indicator panel, broken in two, so it
 could be ordered from a protoype shop.</LI>
 <LI><b>proto2.brd</b> is a panelized set of six M900 boards, suitable
