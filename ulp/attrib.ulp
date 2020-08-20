@@ -1,0 +1,10 @@
+output("bork.scr") {
+  printf("CHANGE DISPLAY OFF;\n");
+  schematic(SCH) {
+    SCH.parts(P) {
+      P.attributes(A) {
+        printf("ATTRIBUTE %s %s '%s';\n", P.name, A.name, A.value);
+      }
+    }
+  }
+}

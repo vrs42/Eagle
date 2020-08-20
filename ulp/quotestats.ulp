@@ -1,0 +1,167 @@
+
+#usage "<b>Count Pads, Vias, Smds and Holes of a board</b>\n"
+       "<p>"
+       "<author>Author: support@cadsoft.de</author>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+// TODO: board name, layer count
+// TODO: board area?
+// TODO: better min space?
+// TODO: Cutouts/slots?
+
+string name, xml, params[];
+int paramcount;
+real mdWireWire;
+
+int i, j, k, h, l, s ;
+i = j = k = h = l = 0;
+int pitch;
+int firstdrill, mindrill;
+int firsttrace, mintrace;
+
+int isgold, goldpads, goldx, goldy;
+goldpads = goldx = goldy = 0;
+
+firstdrill = firsttrace = 1;
+
+if (board) {
+   board(B) {
+      name = B.name;
+      i = fileread(xml, name);
+      paramcount = xmlelements(params, xml, "eagle/drawing/board/designrules/param");
+      for (i = 0; i < paramcount; i++) {
+        if (xmlattribute(params[i], "param", "name") == "mdWireWire")
+          mdWireWire = strtod(xmlattribute(params[i], "param", "value"))/1000;
+      }
+      i = 0;
+
+      B.holes(H) {
+         h++;
+         if (H.drill && firstdrill) {
+            mindrill = H.drill;
+            firstdrill = 0;
+         } else {
+            if (H.drill && (H.drill < mindrill))
+               mindrill = H.drill;
+         }
+      }
+
+      pitch = inch2u(.125);
+      B.elements(E) {
+         isgold = (strstr(E.package.name, "EDGE-CON") >= 0) && (E.package.library == "dec-con");
+         E.package.holes(H) {
+            h++;
+            if (H.drill && firstdrill) {
+               mindrill = H.drill;
+               firstdrill = 0;
+            } else {
+               if (H.drill && (H.drill < mindrill))
+                  mindrill = H.drill;
+            }
+         }
+         E.package.contacts(C) {
+            if (C.pad) {
+               i++;
+               if (C.pad.drill && firstdrill) {
+                  mindrill = C.pad.drill;
+                  firstdrill = 0;
+               } else {
+                  if (C.pad.drill && (C.pad.drill < mindrill))
+                     mindrill = C.pad.drill;
+               }
+            }
+            if (C.smd) {
+               goldpads += isgold;
+               E.package.contacts(C2) {
+                  if (C2.smd) {
+                    if ((C.x != C2.x) && (abs(C.x-C2.x) < pitch))
+                       pitch = abs(C.x-C2.x);
+                    if ((C.y != C2.y) && (abs(C.y-C2.y) < pitch))
+                       pitch = abs(C.y-C2.y);
+                    if (isgold & (C.x != C2.x) && (abs(C.x-C2.x) > goldx))
+                       goldx = abs(C.x-C2.x);
+                    if (isgold & (C.y != C2.y) && (abs(C.y-C2.y) > goldy))
+                       goldy = abs(C.y-C2.y);
+                  }
+               }
+               if (C.smd && (C.smd.layer == 1))
+                  j++;
+               if (C.smd && (C.smd.layer == 16))
+                  l++;
+            }
+// BUGBUG: Should I worry whether these wires are in a signal layer?
+            E.package.wires(W) {
+               W.pieces(P) {
+                  if (firsttrace) {
+                     mintrace = P.width;
+                  } else {
+                     if (mintrace < P.width)
+                        mintrace = P.width;
+                  }
+               }
+            }
+         }
+      }
+
+      B.signals(S) {
+         S.vias(V) {
+            k++;
+            if (V.drill && firstdrill) {
+               mindrill = V.drill;
+               firstdrill = 0;
+            } else {
+               if (V.drill && (V.drill < mindrill))
+                  mindrill = V.drill;
+            }
+         }
+         S.wires(W) {
+            W.pieces(P) {
+               if (firsttrace) {
+                  mintrace = P.width;
+               } else {
+                  if (mintrace < P.width)
+                     mintrace = P.width;
+               }
+            }
+         }
+      }
+
+      string result;
+
+      sprintf(result,
+ " Number of Pads:  %d\n\
+ Number of Vias:  %d\n\
+ Number of Smds:  %d\n\
+    Smds in Top:  %d\n\
+    Smds in Bot:  %d\n\
+    Smd pitch:  %3.3f\n\
+ Gold fingers:  %d\n\
+ Gold inches:  %d\n\
+ Minimum Trace: %3.3f\n\
+ Minimum Space: %3.3f\n\
+ Minimum Drill: %3.3f\n\
+ Number of holes: %d\n\
+ Total number of drills: %d", i, k, j+l, j, l, u2inch(pitch), goldpads,
+max(goldx, goldy), u2inch(mintrace), mdWireWire, u2inch(mindrill), h, i+k+h);
+
+      dlgDialog("Layout Information") {
+       dlgVBoxLayout {
+         dlgHBoxLayout {
+           dlgSpacing(200);
+         }
+         dlgTextView(result);
+         dlgPushButton("+Ok") dlgAccept();
+       }
+      };
+
+      string fileName ;
+
+      fileName = dlgFileSave("Save Statistic File", filesetext(B.name, ".txt"), "*.txt");
+      if (fileName == "") exit(0);
+
+      output(fileName) { printf("%s",result); }
+   }
+} else {
+   dlgMessageBox("\n    Start this ULP in a Board    \n");
+   exit (0);
+}

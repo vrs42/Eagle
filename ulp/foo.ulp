@@ -1,0 +1,88 @@
+//
+// This ULP scans a schematic for nets that have multiple segments,
+// and at least one lacks a name.  This means that there is a 
+// connection that cannot be deduced by eye.
+// Nets may have generated names (N$42, S$42, etc.).
+// Segments in nets may or may not have labels (texts).
+// It is an error for:
+//   A net to have multiple segments, at least one unlabeled.
+//   A segment to have a generated name and a label.
+//
+// Supply pins are treated as labels.
+// 
+// BUGBUG: Each sheet is currently treated as an independent 
+// schematic, which means things only really work perfectly 
+// on schematics with just one sheet.
+//
+// Errors are displayed in a dialog box.  No box means no errors!
+//
+//  Written by vrs, 2/6/2015.
+//
+
+if (!schematic) {
+  dlgMessageBox("<hr><b>ERROR: No schematic!</b><p>\nThis program can only work in the schematic editor.");
+  exit(1);
+}
+
+string outstr = "";
+string tmp;
+int errors = 0;
+int segments, unnamed;
+int hastext;
+string part, parts;
+schematic(SC) {
+  SC.sheets(SH){
+    SH.nets(N) {
+      segments = 0;
+      unnamed = 0;
+      parts = "";
+      N.segments(S) {
+        segments++;
+        hastext = 0;
+        S.texts(T) { hastext = 1; }
+        part = "";
+        S.pinrefs(P) {
+          if (P.pin.direction == PIN_DIRECTION_SUP) {
+            hastext = 1;
+          }
+          part = part + " " + P.instance.name;
+        }
+        if (hastext) {
+          // Error for segments which have a label and a generated name.
+          if (strchr(N.name, '$') >= 0) {
+            sprintf(tmp, "Signal %s has a label (%s) in sheet %d\n",
+                   N.name, part, SH.number);
+            outstr += tmp;
+            errors++;
+          }
+          part = "";
+        } else  { // !hastext
+          parts = parts + part;
+          unnamed++;
+        }
+      }
+      // At this point we've counted the segments, noted 
+      // whether it is labeled, and have a list of the 
+      // instances where the label is missing.
+      //
+      // Error for hidden connections to the net.
+      if ((segments > 1) && unnamed) {
+        sprintf(tmp, "Signal %s has hidden connections (%s) in sheet %d\n",
+               N.name, parts, SH.number);
+        outstr += tmp;
+        errors++;
+      }
+    }
+  }
+}
+
+if (errors) {
+  dlgMessageBox(outstr);
+  if (errors > 50) {
+    output("ulp.txt", "wt") {
+      printf("%s", outstr);
+    }
+  }
+  exit(1);
+}
+exit(0);
