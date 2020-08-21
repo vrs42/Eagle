@@ -2,7 +2,10 @@ RX8E to Posibus Adapter per Ulrich Fierz
 <UL>
 <LI><b>rx08-ulrich</b> is a schematic for Ulrich Fierz's modifications to
 an 8/i and a TC08 to interface the RX8E.</LI>
-<LI><b>pbusRX8E</b> is an attempt to modify Ulrich's design to remove the 
+<LI><b>pbusRX8E</b> is an attempt to modify Ulrich's design to remove the
 8/i dependency.</LI>
-<LI><b>rx08-vrs</b> is another attempt to modify Ulrich's design to remove 
+<LI><b>rx08-vrs</b> is another attempt to modify Ulrich's design to remove
 the 8/i dependency, and makes the Omnibus connections more explicit.</LI>
+<LI><b>rx08+ulrich</b> is an merge of Ulrich's design with the RX8E drawings.</LI>
+<LI><b>rx8i</b> is an attempt to modify rx08+ulrich to be suitable for
+implementation in a CPLD.</LI>

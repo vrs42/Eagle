@@ -1,0 +1,366 @@
+Analysis & Synthesis report for rx8i
+Wed Apr 29 00:51:24 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Analysis & Synthesis Messages
+ 10. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Apr 29 00:51:24 2020           ;
+; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name               ; rx8i                                            ;
+; Top-level Entity Name       ; rx8i                                            ;
+; Family                      ; MAX7000S                                        ;
+; Total macrocells            ; 90                                              ;
+; Total pins                  ; 60                                              ;
++-----------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM7128SLC84-15 ;               ;
+; Top-level entity name                                                      ; rx8i            ; rx8i          ;
+; Family name                                                                ; MAX7000S        ; Cyclone IV GX ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Create Debugging Nodes for IP Cores                                        ; Off             ; Off           ;
+; Preserve fewer node names                                                  ; On              ; On            ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off             ; Off           ;
+; Verilog Version                                                            ; Verilog_2001    ; Verilog_2001  ;
+; VHDL Version                                                               ; VHDL_1993       ; VHDL_1993     ;
+; State Machine Processing                                                   ; Auto            ; Auto          ;
+; Safe State Machine                                                         ; Off             ; Off           ;
+; Extract Verilog State Machines                                             ; On              ; On            ;
+; Extract VHDL State Machines                                                ; On              ; On            ;
+; Ignore Verilog initial constructs                                          ; Off             ; Off           ;
+; Iteration limit for constant Verilog loops                                 ; 5000            ; 5000          ;
+; Iteration limit for non-constant Verilog loops                             ; 250             ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On              ; On            ;
+; Infer RAMs from Raw Logic                                                  ; On              ; On            ;
+; Parallel Synthesis                                                         ; On              ; On            ;
+; NOT Gate Push-Back                                                         ; On              ; On            ;
+; Power-Up Don't Care                                                        ; On              ; On            ;
+; Remove Duplicate Registers                                                 ; On              ; On            ;
+; Ignore CARRY Buffers                                                       ; Off             ; Off           ;
+; Ignore CASCADE Buffers                                                     ; Off             ; Off           ;
+; Ignore GLOBAL Buffers                                                      ; Off             ; Off           ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off             ; Off           ;
+; Ignore LCELL Buffers                                                       ; Auto            ; Auto          ;
+; Ignore SOFT Buffers                                                        ; Off             ; Off           ;
+; Limit AHDL Integers to 32 Bits                                             ; Off             ; Off           ;
+; Optimization Technique                                                     ; Speed           ; Speed         ;
+; Allow XOR Gate Usage                                                       ; On              ; On            ;
+; Auto Logic Cell Insertion                                                  ; On              ; On            ;
+; Parallel Expander Chain Length                                             ; 4               ; 4             ;
+; Auto Parallel Expanders                                                    ; On              ; On            ;
+; Auto Open-Drain Pins                                                       ; On              ; On            ;
+; Auto Resource Sharing                                                      ; Off             ; Off           ;
+; Maximum Fan-in Per Macrocell                                               ; 100             ; 100           ;
+; Use LogicLock Constraints during Resource Balancing                        ; On              ; On            ;
+; Ignore translate_off and synthesis_off directives                          ; Off             ; Off           ;
+; Report Parameter Settings                                                  ; On              ; On            ;
+; Report Source Assignments                                                  ; On              ; On            ;
+; Report Connectivity Checks                                                 ; On              ; On            ;
+; HDL message level                                                          ; Level2          ; Level2        ;
+; Suppress Register Optimization Related Messages                            ; Off             ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000            ; 5000          ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000            ; 5000          ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100             ; 100           ;
+; Block Design Naming                                                        ; Auto            ; Auto          ;
+; Synthesis Effort                                                           ; Auto            ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On              ; On            ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off             ; Off           ;
+; Analysis & Synthesis Message Level                                         ; Medium          ; Medium        ;
+; Disable Register Merging Across Hierarchies                                ; Auto            ; Auto          ;
+; Synthesis Seed                                                             ; 1               ; 1             ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+; rx8i.v                           ; yes             ; User Verilog HDL File  ; C:/Users/vrs/Documents/Eagle/projects/RX8-Ulrich/pld/rx8i.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; Logic cells          ; 90                   ;
+; Total registers      ; 0                    ;
+; I/O pins             ; 60                   ;
+; Shareable expanders  ; 27                   ;
+; Maximum fan-out node ; io_pause_low~9       ;
+; Maximum fan-out      ; 52                   ;
+; Total fan-out        ; 946                  ;
+; Average fan-out      ; 5.34                 ;
++----------------------+----------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                 ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |rx8i                      ; 90         ; 60   ; |rx8i               ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; io_pause_low                                        ; bts3                ; yes                    ;
+; io_pause_low_m                                      ; bts3                ; yes                    ;
+; n_t_69x                                             ; tp4                 ; yes                    ;
+; n_t_76x                                             ; n_t_71x             ; yes                    ;
+; n_t_72x                                             ; tp4                 ; yes                    ;
+; eight                                               ; n_t_48x             ; yes                    ;
+; n_t_45x                                             ; strobe              ; yes                    ;
+; run                                                 ; n_t_85x             ; yes                    ;
+; n_t_69x_m                                           ; tp4                 ; yes                    ;
+; n_t_76x_m                                           ; n_t_71x             ; yes                    ;
+; n_t_72x_m                                           ; tp4                 ; yes                    ;
+; eight_m                                             ; n_t_48x             ; yes                    ;
+; n_t_45x_m                                           ; strobe              ; yes                    ;
+; run_m                                               ; GND                 ; yes                    ;
+; maint                                               ; n_t_48x             ; yes                    ;
+; msb12                                               ; clk_parity_low      ; yes                    ;
+; n_t_33x                                             ; clk_parity_low      ; yes                    ;
+; n_t_2x                                              ; clk_parity_low      ; yes                    ;
+; n_t_60x                                             ; clk_parity_low      ; yes                    ;
+; msb8                                                ; clk_parity_low      ; yes                    ;
+; n_t_62x                                             ; clk_parity_low      ; yes                    ;
+; n_t_63x                                             ; clk_parity_low      ; yes                    ;
+; n_t_64x                                             ; clk_parity_low      ; yes                    ;
+; n_t_31x                                             ; clk_parity_low      ; yes                    ;
+; n_t_66x                                             ; clk_parity_low      ; yes                    ;
+; n_t_67x                                             ; clk_parity_low      ; yes                    ;
+; n_t_65x                                             ; clk_parity_low      ; yes                    ;
+; n_t_68x                                             ; done                ; yes                    ;
+; n_t_59x                                             ; xfer_req            ; yes                    ;
+; maint_m                                             ; n_t_48x             ; yes                    ;
+; msb12_m                                             ; clk_parity_low      ; yes                    ;
+; n_t_33x_m                                           ; clk_parity_low      ; yes                    ;
+; n_t_2x_m                                            ; clk_parity_low      ; yes                    ;
+; n_t_60x_m                                           ; clk_parity_low      ; yes                    ;
+; msb8_m                                              ; clk_parity_low      ; yes                    ;
+; n_t_62x_m                                           ; clk_parity_low      ; yes                    ;
+; n_t_63x_m                                           ; clk_parity_low      ; yes                    ;
+; n_t_64x_m                                           ; clk_parity_low      ; yes                    ;
+; n_t_31x_m                                           ; clk_parity_low      ; yes                    ;
+; n_t_66x_m                                           ; clk_parity_low      ; yes                    ;
+; n_t_67x_m                                           ; clk_parity_low      ; yes                    ;
+; n_t_65x_m                                           ; clk_parity_low      ; yes                    ;
+; n_t_68x_m                                           ; done                ; yes                    ;
+; n_t_59x_m                                           ; xfer_req            ; yes                    ;
+; Number of user-specified and inferred latches = 44  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Apr 29 00:51:22 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rx8i -c rx8i
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file rx8i.v
+    Info (12023): Found entity 1: rx8i
+Info (12127): Elaborating entity "rx8i" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(272): inferring latch(es) for variable "eight_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(279): inferring latch(es) for variable "eight", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(286): inferring latch(es) for variable "maint_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(293): inferring latch(es) for variable "maint", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(305): inferring latch(es) for variable "gdollar_0_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(312): inferring latch(es) for variable "gdollar_0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(319): inferring latch(es) for variable "gdollar_1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(329): inferring latch(es) for variable "gdollar_1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(336): inferring latch(es) for variable "gdollar_2_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(346): inferring latch(es) for variable "gdollar_2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(353): inferring latch(es) for variable "gdollar_3_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(363): inferring latch(es) for variable "gdollar_3", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(384): inferring latch(es) for variable "n_t_45x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(391): inferring latch(es) for variable "n_t_45x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(400): inferring latch(es) for variable "n_t_60x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(409): inferring latch(es) for variable "n_t_60x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(416): inferring latch(es) for variable "n_t_2x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(425): inferring latch(es) for variable "n_t_2x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(432): inferring latch(es) for variable "n_t_33x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(441): inferring latch(es) for variable "n_t_33x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(448): inferring latch(es) for variable "msb12_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(457): inferring latch(es) for variable "msb12", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(480): inferring latch(es) for variable "n_t_76x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(487): inferring latch(es) for variable "n_t_76x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(494): inferring latch(es) for variable "run_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(501): inferring latch(es) for variable "run", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(540): inferring latch(es) for variable "n_t_64x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(549): inferring latch(es) for variable "n_t_64x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(556): inferring latch(es) for variable "n_t_63x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(565): inferring latch(es) for variable "n_t_63x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(572): inferring latch(es) for variable "n_t_62x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(581): inferring latch(es) for variable "n_t_62x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(588): inferring latch(es) for variable "msb8_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(597): inferring latch(es) for variable "msb8", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(605): inferring latch(es) for variable "n_t_68x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(615): inferring latch(es) for variable "n_t_68x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(625): inferring latch(es) for variable "n_t_69x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(635): inferring latch(es) for variable "n_t_69x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(667): inferring latch(es) for variable "n_t_61x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(677): inferring latch(es) for variable "n_t_61x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(687): inferring latch(es) for variable "n_t_70x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(697): inferring latch(es) for variable "n_t_70x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(708): inferring latch(es) for variable "parity_low_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(718): inferring latch(es) for variable "parity_low", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(737): inferring latch(es) for variable "n_t_59x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(747): inferring latch(es) for variable "n_t_59x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(757): inferring latch(es) for variable "n_t_72x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(767): inferring latch(es) for variable "n_t_72x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(779): inferring latch(es) for variable "n_t_65x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(788): inferring latch(es) for variable "n_t_65x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(795): inferring latch(es) for variable "n_t_67x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(804): inferring latch(es) for variable "n_t_67x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(811): inferring latch(es) for variable "n_t_66x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(820): inferring latch(es) for variable "n_t_66x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(827): inferring latch(es) for variable "n_t_31x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(836): inferring latch(es) for variable "n_t_31x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(903): inferring latch(es) for variable "io_pause_low_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at rx8i.v(910): inferring latch(es) for variable "io_pause_low", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "io_pause_low" at rx8i.v(910)
+Info (10041): Inferred latch for "io_pause_low_m" at rx8i.v(903)
+Info (10041): Inferred latch for "n_t_31x" at rx8i.v(836)
+Info (10041): Inferred latch for "n_t_31x_m" at rx8i.v(827)
+Info (10041): Inferred latch for "n_t_66x" at rx8i.v(820)
+Info (10041): Inferred latch for "n_t_66x_m" at rx8i.v(811)
+Info (10041): Inferred latch for "n_t_67x" at rx8i.v(804)
+Info (10041): Inferred latch for "n_t_67x_m" at rx8i.v(795)
+Info (10041): Inferred latch for "n_t_65x" at rx8i.v(788)
+Info (10041): Inferred latch for "n_t_65x_m" at rx8i.v(779)
+Info (10041): Inferred latch for "n_t_72x" at rx8i.v(767)
+Info (10041): Inferred latch for "n_t_72x_m" at rx8i.v(757)
+Info (10041): Inferred latch for "n_t_59x" at rx8i.v(747)
+Info (10041): Inferred latch for "n_t_59x_m" at rx8i.v(737)
+Info (10041): Inferred latch for "parity_low" at rx8i.v(718)
+Info (10041): Inferred latch for "parity_low_m" at rx8i.v(708)
+Info (10041): Inferred latch for "n_t_70x" at rx8i.v(697)
+Info (10041): Inferred latch for "n_t_70x_m" at rx8i.v(687)
+Info (10041): Inferred latch for "n_t_61x" at rx8i.v(677)
+Info (10041): Inferred latch for "n_t_61x_m" at rx8i.v(667)
+Info (10041): Inferred latch for "n_t_69x" at rx8i.v(635)
+Info (10041): Inferred latch for "n_t_69x_m" at rx8i.v(625)
+Info (10041): Inferred latch for "n_t_68x" at rx8i.v(615)
+Info (10041): Inferred latch for "n_t_68x_m" at rx8i.v(605)
+Info (10041): Inferred latch for "msb8" at rx8i.v(597)
+Info (10041): Inferred latch for "msb8_m" at rx8i.v(588)
+Info (10041): Inferred latch for "n_t_62x" at rx8i.v(581)
+Info (10041): Inferred latch for "n_t_62x_m" at rx8i.v(572)
+Info (10041): Inferred latch for "n_t_63x" at rx8i.v(565)
+Info (10041): Inferred latch for "n_t_63x_m" at rx8i.v(556)
+Info (10041): Inferred latch for "n_t_64x" at rx8i.v(549)
+Info (10041): Inferred latch for "n_t_64x_m" at rx8i.v(540)
+Info (10041): Inferred latch for "run" at rx8i.v(501)
+Info (10041): Inferred latch for "run_m" at rx8i.v(494)
+Info (10041): Inferred latch for "n_t_76x" at rx8i.v(487)
+Info (10041): Inferred latch for "n_t_76x_m" at rx8i.v(480)
+Info (10041): Inferred latch for "msb12" at rx8i.v(457)
+Info (10041): Inferred latch for "msb12_m" at rx8i.v(448)
+Info (10041): Inferred latch for "n_t_33x" at rx8i.v(441)
+Info (10041): Inferred latch for "n_t_33x_m" at rx8i.v(432)
+Info (10041): Inferred latch for "n_t_2x" at rx8i.v(425)
+Info (10041): Inferred latch for "n_t_2x_m" at rx8i.v(416)
+Info (10041): Inferred latch for "n_t_60x" at rx8i.v(409)
+Info (10041): Inferred latch for "n_t_60x_m" at rx8i.v(400)
+Info (10041): Inferred latch for "n_t_45x" at rx8i.v(391)
+Info (10041): Inferred latch for "n_t_45x_m" at rx8i.v(384)
+Info (10041): Inferred latch for "gdollar_3" at rx8i.v(363)
+Info (10041): Inferred latch for "gdollar_3_m" at rx8i.v(353)
+Info (10041): Inferred latch for "gdollar_2" at rx8i.v(346)
+Info (10041): Inferred latch for "gdollar_2_m" at rx8i.v(336)
+Info (10041): Inferred latch for "gdollar_1" at rx8i.v(329)
+Info (10041): Inferred latch for "gdollar_1_m" at rx8i.v(319)
+Info (10041): Inferred latch for "gdollar_0" at rx8i.v(312)
+Info (10041): Inferred latch for "gdollar_0_m" at rx8i.v(305)
+Info (10041): Inferred latch for "maint" at rx8i.v(293)
+Info (10041): Inferred latch for "maint_m" at rx8i.v(286)
+Info (10041): Inferred latch for "eight" at rx8i.v(279)
+Info (10041): Inferred latch for "eight_m" at rx8i.v(272)
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rx_error_low"
+Info (21057): Implemented 177 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 38 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21060): Implemented 13 bidirectional pins
+    Info (21063): Implemented 90 macrocells
+    Info (21073): Implemented 27 shareable expanders
+Info (144001): Generated suppressed messages file C:/Users/vrs/Documents/Eagle/projects/RX8-Ulrich/pld/output_files/rx8i.map.smsg
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 61 warnings
+    Info: Peak virtual memory: 4560 megabytes
+    Info: Processing ended: Wed Apr 29 00:51:24 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/vrs/Documents/Eagle/projects/RX8-Ulrich/pld/output_files/rx8i.map.smsg.
+
+

@@ -1,0 +1,717 @@
+Fitter report for rx8i
+Wed Apr 29 00:51:30 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. Bidir Pins
+ 10. All Package Pins
+ 11. I/O Standard
+ 12. Dedicated Inputs I/O
+ 13. Output Pin Default Load For Reported TCO
+ 14. Fitter Resource Utilization by Entity
+ 15. Non-Global High Fan-Out Signals
+ 16. Other Routing Usage Summary
+ 17. LAB External Interconnect
+ 18. LAB Macrocells
+ 19. Shareable Expander
+ 20. Logic Cell Interconnection
+ 21. Fitter Device Options
+ 22. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Fitter Summary                                                              ;
++---------------------------+-------------------------------------------------+
+; Fitter Status             ; Successful - Wed Apr 29 00:51:29 2020           ;
+; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name             ; rx8i                                            ;
+; Top-level Entity Name     ; rx8i                                            ;
+; Family                    ; MAX7000S                                        ;
+; Device                    ; EPM7128SLC84-15                                 ;
+; Timing Models             ; Final                                           ;
+; Total macrocells          ; 90 / 128 ( 70 % )                               ;
+; Total pins                ; 64 / 68 ( 94 % )                                ;
++---------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                              ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM7128SLC84-15 ;               ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Optimize Multi-Corner Timing                                               ; Off             ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off             ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off             ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; Normal          ; Normal        ;
+; Fitter Initial Placement Seed                                              ; 1               ; 1             ;
+; Slow Slew Rate                                                             ; Off             ; Off           ;
+; Fitter Effort                                                              ; Auto Fit        ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off             ; Off           ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/vrs/Documents/Eagle/projects/RX8-Ulrich/pld/output_files/rx8i.pin.
+
+
++--------------------------------------------------+
+; Fitter Resource Usage Summary                    ;
++------------------------------+-------------------+
+; Resource                     ; Usage             ;
++------------------------------+-------------------+
+; Logic cells                  ; 90 / 128 ( 70 % ) ;
+; Registers                    ; 0 / 128 ( 0 % )   ;
+; Number of pterms used        ; 269               ;
+; I/O pins                     ; 64 / 68 ( 94 % )  ;
+;     -- Clock pins            ; 0 / 2 ( 0 % )     ;
+;     -- Dedicated input pins  ; 1 / 2 ( 50 % )    ;
+;                              ;                   ;
+; Global signals               ; 0                 ;
+; Shareable expanders          ; 39 / 128 ( 30 % ) ;
+; Parallel expanders           ; 0 / 120 ( 0 % )   ;
+; Cells using turbo bit        ; 90 / 128 ( 70 % ) ;
+; Maximum fan-out              ; 55                ;
+; Highest non-global fan-out   ; 55                ;
+; Total fan-out                ; 1002              ;
+; Average fan-out              ; 5.19              ;
++------------------------------+-------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                          ;
++---------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; Name          ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; I/O Standard ; Location assigned by ;
++---------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; bac00         ; 8     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac01         ; 75    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac02         ; 64    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac03         ; 58    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac04         ; 74    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac05         ; 69    ; --       ; 7   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac06         ; 55    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac07         ; 65    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac08         ; 50    ; --       ; 5   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac09         ; 54    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac10         ; 84    ; --       ; --  ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bac11         ; 63    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; biop1         ; 18    ; --       ; 2   ; 9                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; biop2         ; 67    ; --       ; 7   ; 9                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; biop4         ; 57    ; --       ; 6   ; 9                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb00         ; 15    ; --       ; 2   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb01         ; 60    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb02         ; 70    ; --       ; 7   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb09         ; 80    ; --       ; 8   ; 39                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb10         ; 5     ; --       ; 1   ; 39                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb11         ; 45    ; --       ; 5   ; 39                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bts3          ; 46    ; --       ; 5   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; initialize    ; 16    ; --       ; 2   ; 39                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md03_low      ; 49    ; --       ; 5   ; 51                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md04_low      ; 76    ; --       ; 8   ; 51                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md05_low      ; 81    ; --       ; 8   ; 51                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md06_low      ; 73    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md07_low      ; 51    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md08_low      ; 52    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; n_t_1x        ; 61    ; --       ; 6   ; 51                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; n_t_5x        ; 6     ; --       ; 1   ; 51                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; n_t_6x        ; 79    ; --       ; 8   ; 51                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rx_done_low   ; 33    ; --       ; 4   ; 10                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rx_error_low  ; 77    ; --       ; 8   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rx_out_low    ; 4     ; --       ; 1   ; 11                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rx_shift_low  ; 68    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; rx_tr_req_low ; 48    ; --       ; 5   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; tp4           ; 56    ; --       ; 6   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
++---------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                       ;
++---------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name          ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++---------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; baclr         ; 31    ; --       ; 3   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; birq          ; 20    ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; bskip         ; 22    ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; n_t_7x        ; 37    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; n_t_8x        ; 39    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; n_t_9x        ; 40    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; rx_12_bit_low ; 12    ; --       ; 1   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; rx_init_low   ; 11    ; --       ; 1   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; rx_run_low    ; 21    ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
++---------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Bidir Pins                                                                                                                                                                                                                                             ;
++-------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name        ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Slow Slew Rate ; Open Drain ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++-------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+----------------------+---------------------+
+; ac00l       ; 34    ; --       ; 4   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac00l~3 (inverted)   ; -                   ;
+; ac01l       ; 30    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac01l~3 (inverted)   ; -                   ;
+; ac02l       ; 29    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac02l~3 (inverted)   ; -                   ;
+; ac03l       ; 28    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac03l~3 (inverted)   ; -                   ;
+; ac04l       ; 24    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac04l~5 (inverted)   ; -                   ;
+; ac05l       ; 10    ; --       ; 1   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac05l~3 (inverted)   ; -                   ;
+; ac06l       ; 9     ; --       ; 1   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac06l~4 (inverted)   ; -                   ;
+; ac07l       ; 27    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac07l~3 (inverted)   ; -                   ;
+; ac08l       ; 44    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac08l~4 (inverted)   ; -                   ;
+; ac09l       ; 25    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac09l~3 (inverted)   ; -                   ;
+; ac10l       ; 35    ; --       ; 4   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac10l~4 (inverted)   ; -                   ;
+; ac11l       ; 36    ; --       ; 4   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ac11l~3 (inverted)   ; -                   ;
+; rx_data_low ; 41    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ~VCC~0 (inverted)    ; -                   ;
++-------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                      ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; 1        ; 0          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 2        ; 1          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 3        ; 2          ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
+; 4        ; 3          ; --       ; rx_out_low     ; input  ; TTL          ;         ; N               ;
+; 5        ; 4          ; --       ; bmb10          ; input  ; TTL          ;         ; N               ;
+; 6        ; 5          ; --       ; n_t_5x         ; input  ; TTL          ;         ; N               ;
+; 7        ; 6          ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 8        ; 7          ; --       ; bac00          ; input  ; TTL          ;         ; N               ;
+; 9        ; 8          ; --       ; ac06l          ; bidir  ; TTL          ;         ; N               ;
+; 10       ; 9          ; --       ; ac05l          ; bidir  ; TTL          ;         ; N               ;
+; 11       ; 10         ; --       ; rx_init_low    ; output ; TTL          ;         ; N               ;
+; 12       ; 11         ; --       ; rx_12_bit_low  ; output ; TTL          ;         ; N               ;
+; 13       ; 12         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 14       ; 13         ; --       ; TDI            ; input  ; TTL          ;         ; N               ;
+; 15       ; 14         ; --       ; bmb00          ; input  ; TTL          ;         ; N               ;
+; 16       ; 15         ; --       ; initialize     ; input  ; TTL          ;         ; N               ;
+; 17       ; 16         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 18       ; 17         ; --       ; biop1          ; input  ; TTL          ;         ; N               ;
+; 19       ; 18         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 20       ; 19         ; --       ; birq           ; output ; TTL          ;         ; N               ;
+; 21       ; 20         ; --       ; rx_run_low     ; output ; TTL          ;         ; N               ;
+; 22       ; 21         ; --       ; bskip          ; output ; TTL          ;         ; N               ;
+; 23       ; 22         ; --       ; TMS            ; input  ; TTL          ;         ; N               ;
+; 24       ; 23         ; --       ; ac04l          ; bidir  ; TTL          ;         ; N               ;
+; 25       ; 24         ; --       ; ac09l          ; bidir  ; TTL          ;         ; N               ;
+; 26       ; 25         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 27       ; 26         ; --       ; ac07l          ; bidir  ; TTL          ;         ; N               ;
+; 28       ; 27         ; --       ; ac03l          ; bidir  ; TTL          ;         ; N               ;
+; 29       ; 28         ; --       ; ac02l          ; bidir  ; TTL          ;         ; N               ;
+; 30       ; 29         ; --       ; ac01l          ; bidir  ; TTL          ;         ; N               ;
+; 31       ; 30         ; --       ; baclr          ; output ; TTL          ;         ; N               ;
+; 32       ; 31         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 33       ; 32         ; --       ; rx_done_low    ; input  ; TTL          ;         ; N               ;
+; 34       ; 33         ; --       ; ac00l          ; bidir  ; TTL          ;         ; N               ;
+; 35       ; 34         ; --       ; ac10l          ; bidir  ; TTL          ;         ; N               ;
+; 36       ; 35         ; --       ; ac11l          ; bidir  ; TTL          ;         ; N               ;
+; 37       ; 36         ; --       ; n_t_7x         ; output ; TTL          ;         ; N               ;
+; 38       ; 37         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 39       ; 38         ; --       ; n_t_8x         ; output ; TTL          ;         ; N               ;
+; 40       ; 39         ; --       ; n_t_9x         ; output ; TTL          ;         ; N               ;
+; 41       ; 40         ; --       ; rx_data_low    ; bidir  ; TTL          ;         ; N               ;
+; 42       ; 41         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 43       ; 42         ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
+; 44       ; 43         ; --       ; ac08l          ; bidir  ; TTL          ;         ; N               ;
+; 45       ; 44         ; --       ; bmb11          ; input  ; TTL          ;         ; N               ;
+; 46       ; 45         ; --       ; bts3           ; input  ; TTL          ;         ; N               ;
+; 47       ; 46         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 48       ; 47         ; --       ; rx_tr_req_low  ; input  ; TTL          ;         ; N               ;
+; 49       ; 48         ; --       ; md03_low       ; input  ; TTL          ;         ; N               ;
+; 50       ; 49         ; --       ; bac08          ; input  ; TTL          ;         ; N               ;
+; 51       ; 50         ; --       ; md07_low       ; input  ; TTL          ;         ; N               ;
+; 52       ; 51         ; --       ; md08_low       ; input  ; TTL          ;         ; N               ;
+; 53       ; 52         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 54       ; 53         ; --       ; bac09          ; input  ; TTL          ;         ; N               ;
+; 55       ; 54         ; --       ; bac06          ; input  ; TTL          ;         ; N               ;
+; 56       ; 55         ; --       ; tp4            ; input  ; TTL          ;         ; N               ;
+; 57       ; 56         ; --       ; biop4          ; input  ; TTL          ;         ; N               ;
+; 58       ; 57         ; --       ; bac03          ; input  ; TTL          ;         ; N               ;
+; 59       ; 58         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 60       ; 59         ; --       ; bmb01          ; input  ; TTL          ;         ; N               ;
+; 61       ; 60         ; --       ; n_t_1x         ; input  ; TTL          ;         ; N               ;
+; 62       ; 61         ; --       ; TCK            ; input  ; TTL          ;         ; N               ;
+; 63       ; 62         ; --       ; bac11          ; input  ; TTL          ;         ; N               ;
+; 64       ; 63         ; --       ; bac02          ; input  ; TTL          ;         ; N               ;
+; 65       ; 64         ; --       ; bac07          ; input  ; TTL          ;         ; N               ;
+; 66       ; 65         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 67       ; 66         ; --       ; biop2          ; input  ; TTL          ;         ; N               ;
+; 68       ; 67         ; --       ; rx_shift_low   ; input  ; TTL          ;         ; N               ;
+; 69       ; 68         ; --       ; bac05          ; input  ; TTL          ;         ; N               ;
+; 70       ; 69         ; --       ; bmb02          ; input  ; TTL          ;         ; N               ;
+; 71       ; 70         ; --       ; TDO            ; output ; TTL          ;         ; N               ;
+; 72       ; 71         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 73       ; 72         ; --       ; md06_low       ; input  ; TTL          ;         ; N               ;
+; 74       ; 73         ; --       ; bac04          ; input  ; TTL          ;         ; N               ;
+; 75       ; 74         ; --       ; bac01          ; input  ; TTL          ;         ; N               ;
+; 76       ; 75         ; --       ; md04_low       ; input  ; TTL          ;         ; N               ;
+; 77       ; 76         ; --       ; rx_error_low   ; input  ; TTL          ;         ; N               ;
+; 78       ; 77         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 79       ; 78         ; --       ; n_t_6x         ; input  ; TTL          ;         ; N               ;
+; 80       ; 79         ; --       ; bmb09          ; input  ; TTL          ;         ; N               ;
+; 81       ; 80         ; --       ; md05_low       ; input  ; TTL          ;         ; N               ;
+; 82       ; 81         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 83       ; 82         ; --       ; GND+           ;        ;              ;         ;                 ;
+; 84       ; 83         ; --       ; bac10          ; input  ; TTL          ;         ; N               ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++--------------------------------------------------------------------------------------------------+
+; I/O Standard                                                                                     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; I/O Standard ; Input Vref ; Dedicated Input Pins ; Pins in I/O Bank1 ; Pins in I/O Bank2 ; Total ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; TTL          ; -          ; 1                    ; 0                 ; 0                 ; 1     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+
+
++---------------------------------------------------------------------+
+; Dedicated Inputs I/O                                                ;
++-------+-------+-------+-------+--------------+------------+---------+
+; Name  ; Pin # ; Type  ; VCCIO ; I/O Standard ; Input Vref ; Current ;
++-------+-------+-------+-------+--------------+------------+---------+
+; bac10 ; 84    ; Input ; --    ; TTL          ; -          ; 0 mA    ;
++-------+-------+-------+-------+--------------+------------+---------+
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; TTL          ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++-------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                               ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |rx8i                      ; 90         ; 64   ; |rx8i               ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++-------------------------------------+
+; Non-Global High Fan-Out Signals     ;
++---------------------------+---------+
+; Name                      ; Fan-Out ;
++---------------------------+---------+
+; io_pause_low~9            ; 55      ;
+; md05_low                  ; 51      ;
+; md04_low                  ; 51      ;
+; md03_low                  ; 51      ;
+; n_t_6x                    ; 51      ;
+; n_t_5x                    ; 51      ;
+; n_t_1x                    ; 51      ;
+; maint~9                   ; 46      ;
+; n_t_45x~9                 ; 40      ;
+; initialize                ; 39      ;
+; bmb11                     ; 39      ;
+; bmb10                     ; 39      ;
+; bmb09                     ; 39      ;
+; eight~9                   ; 26      ;
+; clk_parity_low~0          ; 24      ;
+; enb_buf_ld_low~5          ; 22      ;
+; rx_out_low                ; 11      ;
+; rx_done_low               ; 10      ;
+; c1_low~2sexp              ; 10      ;
+; biop4                     ; 9       ;
+; biop2                     ; 9       ;
+; biop1                     ; 9       ;
+; strobe~4                  ; 7       ;
+; tp4                       ; 6       ;
+; rx_tr_req_low             ; 6       ;
+; c1_low~8                  ; 5       ;
+; strobe~3                  ; 5       ;
+; done~6                    ; 4       ;
+; n_t_3x~2sexp              ; 4       ;
+; n_t_33x~9                 ; 4       ;
+; n_t_2x~9                  ; 4       ;
+; n_t_60x~9                 ; 4       ;
+; msb8~9                    ; 4       ;
+; n_t_62x~9                 ; 4       ;
+; n_t_63x~9                 ; 4       ;
+; n_t_64x~9                 ; 4       ;
+; n_t_31x~9                 ; 4       ;
+; n_t_66x~9                 ; 4       ;
+; n_t_67x~9                 ; 4       ;
+; n_t_65x~9                 ; 4       ;
+; done~5                    ; 3       ;
+; c1_low~6                  ; 3       ;
+; strobe~0sexp              ; 3       ;
+; msb12~9                   ; 3       ;
+; n_t_72x~9                 ; 3       ;
+; n_t_69x~9                 ; 3       ;
+; data4_low~4               ; 3       ;
+; c1_low~7                  ; 2       ;
+; done~3                    ; 2       ;
+; bts3                      ; 2       ;
+; bmb02                     ; 2       ;
+; bac10                     ; 2       ;
+; bac08                     ; 2       ;
+; bac06                     ; 2       ;
+; bac05                     ; 2       ;
+; data4~0sexp2              ; 2       ;
+; data5~0sexp4              ; 2       ;
+; data5~0sexp3              ; 2       ;
+; data5~0sexp2              ; 2       ;
+; done~0sexp                ; 2       ;
+; n_t_58x~0sexp             ; 2       ;
+; n_t_54x~0sexp             ; 2       ;
+; n_t_85x~3sexp             ; 2       ;
+; xfer_req~0sexpand1        ; 2       ;
+; enb_buf_ld_low~7sexpand1  ; 2       ;
+; n_t_48x~0sexpand1         ; 2       ;
+; n_t_71x~1sexpand1         ; 2       ;
+; msb12_m~21                ; 2       ;
+; n_t_33x_m~21              ; 2       ;
+; n_t_72x_m~9               ; 2       ;
+; n_t_69x_m~9               ; 2       ;
+; n_t_59x~10                ; 2       ;
+; n_t_68x~10                ; 2       ;
+; run~9                     ; 2       ;
+; n_t_2x_m~21               ; 2       ;
+; n_t_59x_m~10              ; 2       ;
+; n_t_68x_m~10              ; 2       ;
+; run_m~9                   ; 2       ;
+; maint_m~9                 ; 2       ;
+; n_t_60x_m~21              ; 2       ;
+; msb8_m~20                 ; 2       ;
+; n_t_62x_m~18              ; 2       ;
+; n_t_63x_m~19              ; 2       ;
+; n_t_64x_m~19              ; 2       ;
+; n_t_31x_m~19              ; 2       ;
+; n_t_66x_m~19              ; 2       ;
+; n_t_67x_m~22              ; 2       ;
+; n_t_76x~9                 ; 2       ;
+; n_t_65x_m~19              ; 2       ;
+; n_t_76x_m~9               ; 2       ;
+; data11~0                  ; 2       ;
+; eight_m~9                 ; 2       ;
+; n_t_45x_m~9               ; 2       ;
+; io_pause_low_m~9          ; 2       ;
+; n_t_3x~3                  ; 1       ;
+; n_t_48x~4                 ; 1       ;
+; n_t_48x~3                 ; 1       ;
+; done~4                    ; 1       ;
+; rx_data_low~0             ; 1       ;
+; md08_low                  ; 1       ;
+; md07_low                  ; 1       ;
+; md06_low                  ; 1       ;
+; rx_shift_low              ; 1       ;
+; bmb01                     ; 1       ;
+; bmb00                     ; 1       ;
+; bac11                     ; 1       ;
+; bac09                     ; 1       ;
+; bac07                     ; 1       ;
+; bac04                     ; 1       ;
+; bac03                     ; 1       ;
+; bac02                     ; 1       ;
+; bac01                     ; 1       ;
+; bac00                     ; 1       ;
+; n_t_65x_m~7sexp1          ; 1       ;
+; data10_low~3sexp          ; 1       ;
+; data9_low~3sexp           ; 1       ;
+; data8_low~3sexp           ; 1       ;
+; data7_low~3sexp           ; 1       ;
+; data6_low~3sexp           ; 1       ;
+; n_t_57x~2sexp             ; 1       ;
+; n_t_49x~2sexp             ; 1       ;
+; internal_io_low~0sexpand1 ; 1       ;
+; init_iot_low~2sexpand0    ; 1       ;
+; iot~2sexpand1             ; 1       ;
+; iot~2sexpand0             ; 1       ;
+; ~VCC~0                    ; 1       ;
+; ac00l~3                   ; 1       ;
+; msb12_m~7                 ; 1       ;
+; msb12_m~15                ; 1       ;
+; tr_skip_low~4             ; 1       ;
+; int_rqst_low~1            ; 1       ;
+; n_t_33x_m~7               ; 1       ;
+; n_t_33x_m~15              ; 1       ;
+; n_t_2x_m~7                ; 1       ;
+; n_t_2x_m~15               ; 1       ;
+; n_t_60x_m~7               ; 1       ;
+; n_t_60x_m~15              ; 1       ;
+; ac04l~5                   ; 1       ;
+; msb8_m~7                  ; 1       ;
+; msb8_m~14                 ; 1       ;
+; n_t_62x_m~7               ; 1       ;
+; n_t_63x_m~7               ; 1       ;
+; n_t_63x_m~13              ; 1       ;
+; n_t_64x_m~7               ; 1       ;
+; n_t_64x_m~13              ; 1       ;
+; n_t_31x_m~7               ; 1       ;
+; n_t_31x_m~13              ; 1       ;
+; n_t_66x_m~7               ; 1       ;
+; n_t_66x_m~13              ; 1       ;
+; n_t_67x_m~8               ; 1       ;
+; n_t_67x_m~16              ; 1       ;
+; n_t_65x_m~13              ; 1       ;
+; ac11l~3                   ; 1       ;
+; ac10l~4                   ; 1       ;
+; ac09l~3                   ; 1       ;
+; ac08l~4                   ; 1       ;
+; ac07l~3                   ; 1       ;
+; ac06l~4                   ; 1       ;
+; ac05l~3                   ; 1       ;
+; ac03l~3                   ; 1       ;
+; ac02l~3                   ; 1       ;
+; ac01l~3                   ; 1       ;
+; init~1                    ; 1       ;
+; lcd_iot_low~4             ; 1       ;
+; n_t_7x~1                  ; 1       ;
+; n_t_8x~1                  ; 1       ;
+; n_t_9x~1                  ; 1       ;
++---------------------------+---------+
+
+
++--------------------------------------------------+
+; Other Routing Usage Summary                      ;
++-----------------------------+--------------------+
+; Other Routing Resource Type ; Usage              ;
++-----------------------------+--------------------+
+; Output enables              ; 0 / 6 ( 0 % )      ;
+; PIA buffers                 ; 191 / 288 ( 66 % ) ;
+; PIAs                        ; 234 / 288 ( 81 % ) ;
++-----------------------------+--------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB External Interconnect                                                   ;
++-----------------------------------------------+-----------------------------+
+; LAB External Interconnects  (Average = 29.25) ; Number of LABs  (Total = 8) ;
++-----------------------------------------------+-----------------------------+
+; 0 - 2                                         ; 0                           ;
+; 3 - 5                                         ; 0                           ;
+; 6 - 8                                         ; 0                           ;
+; 9 - 11                                        ; 0                           ;
+; 12 - 14                                       ; 0                           ;
+; 15 - 17                                       ; 0                           ;
+; 18 - 20                                       ; 0                           ;
+; 21 - 23                                       ; 1                           ;
+; 24 - 26                                       ; 1                           ;
+; 27 - 29                                       ; 1                           ;
+; 30 - 32                                       ; 5                           ;
++-----------------------------------------------+-----------------------------+
+
+
++-----------------------------------------------------------------------+
+; LAB Macrocells                                                        ;
++-----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 11.25) ; Number of LABs  (Total = 8) ;
++-----------------------------------------+-----------------------------+
+; 0                                       ; 0                           ;
+; 1                                       ; 0                           ;
+; 2                                       ; 0                           ;
+; 3                                       ; 0                           ;
+; 4                                       ; 1                           ;
+; 5                                       ; 0                           ;
+; 6                                       ; 0                           ;
+; 7                                       ; 1                           ;
+; 8                                       ; 0                           ;
+; 9                                       ; 0                           ;
+; 10                                      ; 0                           ;
+; 11                                      ; 1                           ;
+; 12                                      ; 0                           ;
+; 13                                      ; 3                           ;
+; 14                                      ; 1                           ;
+; 15                                      ; 1                           ;
++-----------------------------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 4.88) ; Number of LABs  (Total = 8) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 0                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 1                           ;
+; 3                                               ; 2                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 2                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 1                           ;
+; 10                                              ; 0                           ;
+; 11                                              ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++-----+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                                                                                                           ; Output                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++-----+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC12       ; eight_m~9, n_t_1x, bmb10, md04_low, n_t_5x, bmb11, md05_low, io_pause_low~9, n_t_6x, bmb09, md03_low, n_t_48x~0sexpand1, strobe~3, n_t_45x~9, initialize, data5~0sexp2, data5~0sexp3, data5~0sexp4              ; eight_m~9, eight~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  A  ; LC13       ; bac06, eight~9, c1_low~6, data6_low~3sexp, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, enb_buf_ld_low~5                                                                               ; n_t_63x_m~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  A  ; LC15       ; n_t_63x_m~7, clk_parity_low~0, n_t_63x_m~19, n_t_45x~9, initialize                                                                                                                                              ; n_t_63x_m~19, n_t_63x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC16       ; n_t_63x_m~19, clk_parity_low~0, n_t_63x~9, n_t_45x~9, initialize                                                                                                                                                ; n_t_63x~9, n_t_62x_m~7, ac06l~4, data6_low~3sexp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  A  ; LC9        ; n_t_62x_m~18, clk_parity_low~0, n_t_62x~9, n_t_45x~9, initialize                                                                                                                                                ; n_t_62x~9, msb8_m~7, ac05l~3, data5~0sexp2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  A  ; LC6        ; eight~9, c1_low~6, n_t_62x~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10                                                                                ; ac05l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  A  ; LC8        ; eight~9, bac06, c1_low~6, n_t_63x~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10                                                                         ; ac06l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  A  ; LC14       ; n_t_63x~9, enb_buf_ld_low~5, data5~0sexp2, data5~0sexp3, data5~0sexp4, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low                                                                     ; n_t_62x_m~18                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  A  ; LC11       ; n_t_45x_m~9, tp4, init_iot_low~2sexpand0, strobe~3, biop1, biop2, biop4                                                                                                                                         ; n_t_45x_m~9, n_t_45x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  A  ; LC1        ; n_t_45x_m~9, n_t_45x~9, tp4, biop1, biop2, biop4, strobe~3                                                                                                                                                      ; n_t_45x~9, init~1, eight_m~9, eight~9, n_t_76x_m~9, n_t_65x_m~19, n_t_76x~9, n_t_65x~9, n_t_67x_m~22, n_t_67x~9, n_t_66x_m~19, n_t_66x~9, n_t_31x_m~19, n_t_31x~9, n_t_64x_m~19, n_t_64x~9, n_t_63x_m~19, n_t_63x~9, n_t_62x_m~18, n_t_62x~9, msb8_m~20, msb8~9, n_t_60x_m~21, maint_m~9, n_t_60x~9, maint~9, n_t_2x_m~21, n_t_2x~9, n_t_69x_m~9, n_t_72x_m~9, n_t_33x_m~21, n_t_69x~9, n_t_72x~9, n_t_33x~9, msb12_m~21, msb12~9, run_m~9, run~9, n_t_54x~0sexp, n_t_58x~0sexp                                                                                                                                                                                                                                                           ;
+;  A  ; LC5        ; n_t_45x~9, initialize                                                                                                                                                                                           ; rx_init_low                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  A  ; LC10       ; n_t_62x_m~7, clk_parity_low~0, n_t_62x_m~18, n_t_45x~9, initialize                                                                                                                                              ; n_t_62x_m~18, n_t_62x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  A  ; LC3        ; eight_m~9, eight~9, n_t_48x~0sexpand1, n_t_1x, bmb10, md04_low, n_t_5x, bmb11, md05_low, io_pause_low~9, n_t_6x, bmb09, md03_low, strobe~3, n_t_45x~9, initialize                                               ; eight~9, rx_12_bit_low, ac05l~3, ac06l~4, ac07l~3, ac08l~4, ac09l~3, ac10l~4, ac11l~3, data11~0, n_t_67x_m~16, n_t_66x_m~13, n_t_31x_m~13, n_t_64x_m~13, n_t_63x_m~13, data4_low~4, ac04l~5, n_t_60x_m~15, n_t_2x_m~15, n_t_33x_m~15, msb12_m~15, ac01l~3, ac02l~3, ac03l~3, ac00l~3, data5~0sexp3                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  B  ; LC29       ; run_m~9, maint~9, enb_buf_ld_low~7sexpand1, n_t_85x~3sexp, n_t_45x~9, initialize                                                                                                                                ; run_m~9, run~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+;  B  ; LC18       ; maint_m~9, maint~9, n_t_48x~4, n_t_1x, bmb10, md04_low, n_t_5x, bmb11, md05_low, io_pause_low~9, n_t_6x, bmb09, md03_low, strobe~4, n_t_45x~9, initialize                                                       ; enb_buf_ld_low~5, n_t_65x_m~13, msb8_m~14, maint~9, run_m~9, run~9, xfer_req~0sexpand1, n_t_59x~10, n_t_85x~3sexp, clk_parity_low~0, n_t_3x~2sexp, ac01l~3, ac02l~3, ac03l~3, ac00l~3, c1_low~2sexp, data11~0, data4_low~4, ac04l~5, ac05l~3, ac06l~4, data6_low~3sexp, ac07l~3, data7_low~3sexp, ac08l~4, data8_low~3sexp, ac09l~3, data9_low~3sexp, ac10l~4, data10_low~3sexp, ac11l~3, done~0sexp, n_t_68x~10, n_t_68x_m~10, n_t_59x_m~10, data5~0sexp2, data5~0sexp4, data4~0sexp2, done~3, c1_low~6, c1_low~7, done~4, c1_low~8, done~5, done~6, n_t_3x~3                                                                                                                                                                            ;
+;  B  ; LC20       ; n_t_68x~10, tp4, n_t_69x_m~9, n_t_45x~9, initialize                                                                                                                                                             ; n_t_69x_m~9, n_t_69x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  B  ; LC24       ; n_t_69x_m~9, tp4, n_t_69x~9, n_t_45x~9, initialize                                                                                                                                                              ; n_t_69x~9, int_rqst_low~1, n_t_49x~2sexp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+;  B  ; LC21       ; n_t_69x~9, n_t_76x~9                                                                                                                                                                                            ; birq                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
+;  B  ; LC26       ; n_t_59x_m~10, n_t_59x~10, rx_tr_req_low, maint~9, xfer_req~0sexpand1, n_t_58x~0sexp                                                                                                                             ; n_t_59x~10, n_t_72x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  B  ; LC32       ; n_t_68x_m~10, n_t_68x~10, n_t_54x~0sexp, maint~9, rx_done_low, done~6                                                                                                                                           ; n_t_68x~10, n_t_69x_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  B  ; LC17       ; n_t_72x~9, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10, bmb11, bmb09                                                                                                            ; bskip                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  B  ; LC19       ; run_m~9, run~9, maint~9, enb_buf_ld_low~7sexpand1, n_t_1x, bmb10, md04_low, n_t_5x, bmb11, md05_low, io_pause_low~9, n_t_6x, bmb09, md03_low, biop1, biop2, biop4, n_t_85x~3sexp, n_t_45x~9, initialize, done~6 ; run~9, rx_run_low                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  B  ; LC31       ; n_t_59x_m~10, xfer_req~0sexpand1, n_t_58x~0sexp, maint~9                                                                                                                                                        ; n_t_59x_m~10, n_t_59x~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+;  B  ; LC23       ; data11~0, n_t_76x_m~9, n_t_1x, bmb10, md04_low, n_t_5x, bmb11, md05_low, io_pause_low~9, n_t_6x, bmb09, md03_low, n_t_71x~1sexpand1, strobe~4, n_t_45x~9, initialize                                            ; n_t_76x_m~9, n_t_76x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  B  ; LC30       ; n_t_68x_m~10, n_t_54x~0sexp, done~6, maint~9                                                                                                                                                                    ; n_t_68x_m~10, n_t_68x~10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+;  B  ; LC28       ; n_t_76x_m~9, n_t_76x~9, n_t_71x~1sexpand1, n_t_1x, bmb10, md04_low, n_t_5x, bmb11, md05_low, io_pause_low~9, n_t_6x, bmb09, md03_low, strobe~4, n_t_45x~9, initialize                                           ; n_t_76x~9, int_rqst_low~1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+;  C  ; LC46       ; msb8~9, data4_low~4, eight~9, n_t_3x~2sexp, rx_out_low, maint~9, done~3                                                                                                                                         ; ac04l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC34       ; msb8_m~20, clk_parity_low~0, msb8~9, n_t_45x~9, initialize                                                                                                                                                      ; msb8~9, ac04l~5, n_t_60x_m~7, data4~0sexp2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  C  ; LC42       ; msb8_m~7, clk_parity_low~0, msb8_m~20, n_t_45x~9, initialize                                                                                                                                                    ; msb8_m~20, msb8~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  C  ; LC35       ; bmb10, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb11, bmb09                                                                                                                       ; baclr                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC47       ; bac01, eight~9, n_t_33x~9, n_t_3x~2sexp, c1_low~2sexp, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, enb_buf_ld_low~5                                                                   ; n_t_33x_m~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  C  ; LC36       ; bac02, eight~9, n_t_2x~9, n_t_3x~2sexp, c1_low~2sexp, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, enb_buf_ld_low~5                                                                    ; n_t_2x_m~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  C  ; LC43       ; eight~9, c1_low~2sexp, n_t_64x~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10                                                                            ; ac07l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC48       ; bac09, eight~9, c1_low~2sexp, data9_low~3sexp, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, enb_buf_ld_low~5                                                                           ; n_t_66x_m~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  C  ; LC37       ; n_t_33x~9, eight~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10, c1_low~2sexp                                                                            ; ac01l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC33       ; bac03, eight~9, n_t_60x~9, n_t_3x~2sexp, c1_low~2sexp, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, enb_buf_ld_low~5                                                                   ; n_t_60x_m~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  C  ; LC41       ; bac07, eight~9, c1_low~2sexp, data7_low~3sexp, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, enb_buf_ld_low~5                                                                           ; n_t_64x_m~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  C  ; LC40       ; eight~9, n_t_60x~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10, c1_low~2sexp                                                                            ; ac03l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC38       ; eight~9, n_t_2x~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10, c1_low~2sexp                                                                             ; ac02l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC45       ; eight~9, c1_low~2sexp, n_t_66x~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10                                                                            ; ac09l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  D  ; LC57       ; eight~9, c1_low~8, n_t_65x~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10                                                                                ; ac11l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  D  ; LC59       ; eight~9, bac10, c1_low~8, n_t_67x~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10                                                                         ; ac10l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  D  ; LC60       ; eight~9, bac11, internal_io_low~0sexpand1, rx_out_low, maint~9, n_t_65x~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10, done~5                                    ; n_t_76x_m~9, n_t_65x_m~7sexp1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  D  ; LC62       ; bac10, eight~9, c1_low~8, data10_low~3sexp, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, enb_buf_ld_low~5                                                                              ; n_t_67x_m~8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  D  ; LC63       ; n_t_65x~9, enb_buf_ld_low~5, n_t_67x_m~16                                                                                                                                                                       ; n_t_67x_m~22                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  D  ; LC58       ; bac04, eight~9, rx_out_low, maint~9, done~5                                                                                                                                                                     ; ac04l~5, msb8_m~14, maint_m~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+;  D  ; LC50       ; io_pause_low_m~9, bts3, io_pause_low~9, biop1, biop2, biop4                                                                                                                                                     ; io_pause_low~9, n_t_9x~1, n_t_8x~1, n_t_7x~1, lcd_iot_low~4, clk_parity_low~0, tr_skip_low~4, n_t_71x~1sexpand1, n_t_76x_m~9, n_t_76x~9, init_iot_low~2sexpand0, n_t_48x~0sexpand1, eight_m~9, eight~9, maint_m~9, maint~9, internal_io_low~0sexpand1, n_t_85x~3sexp, run~9, n_t_49x~2sexp, n_t_57x~2sexp, n_t_3x~2sexp, ac01l~3, ac02l~3, ac03l~3, ac00l~3, ac05l~3, ac06l~4, data6_low~3sexp, ac07l~3, data7_low~3sexp, ac08l~4, data8_low~3sexp, ac09l~3, data9_low~3sexp, ac10l~4, data10_low~3sexp, ac11l~3, data11~0, n_t_67x_m~16, n_t_66x_m~13, n_t_31x_m~13, n_t_64x_m~13, n_t_63x_m~13, n_t_60x_m~15, n_t_2x_m~15, n_t_33x_m~15, msb12_m~15, data5~0sexp2, data4~0sexp2, n_t_62x_m~7, msb8_m~14, n_t_48x~3, n_t_48x~4, n_t_3x~3 ;
+;  D  ; LC49       ;                                                                                                                                                                                                                 ; rx_data_low                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  D  ; LC51       ; io_pause_low~9, md06_low                                                                                                                                                                                        ; n_t_9x                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  D  ; LC53       ; io_pause_low~9, md07_low                                                                                                                                                                                        ; n_t_8x                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  D  ; LC56       ; io_pause_low~9, md08_low                                                                                                                                                                                        ; n_t_7x                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  D  ; LC52       ; bac00, eight~9, msb12~9, n_t_3x~3, c1_low~8, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, enb_buf_ld_low~5                                                                             ; msb12_m~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+;  D  ; LC61       ; eight~9, msb12~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10, c1_low~8                                                                                  ; ac00l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  E  ; LC65       ; eight~9, bac08, c1_low~7, n_t_31x~9, maint~9, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10                                                                         ; ac08l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  E  ; LC77       ; n_t_67x_m~8, clk_parity_low~0, n_t_67x_m~22, n_t_45x~9, initialize                                                                                                                                              ; n_t_67x_m~22, n_t_67x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  E  ; LC67       ; bac08, eight~9, c1_low~7, data8_low~3sexp, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, enb_buf_ld_low~5                                                                               ; n_t_31x_m~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  E  ; LC66       ; n_t_31x_m~7, clk_parity_low~0, n_t_31x_m~19, n_t_45x~9, initialize                                                                                                                                              ; n_t_31x_m~19, n_t_31x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  E  ; LC73       ; n_t_66x_m~19, clk_parity_low~0, n_t_66x~9, n_t_45x~9, initialize                                                                                                                                                ; n_t_66x~9, n_t_31x_m~7, ac09l~3, data9_low~3sexp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  E  ; LC79       ; n_t_66x_m~7, clk_parity_low~0, n_t_66x_m~19, n_t_45x~9, initialize                                                                                                                                              ; n_t_66x_m~19, n_t_66x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  E  ; LC76       ; n_t_31x_m~19, clk_parity_low~0, n_t_31x~9, n_t_45x~9, initialize                                                                                                                                                ; n_t_31x~9, n_t_64x_m~7, ac08l~4, data8_low~3sexp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  E  ; LC72       ; n_t_64x~9, enb_buf_ld_low~5, n_t_63x_m~13                                                                                                                                                                       ; n_t_63x_m~19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  E  ; LC80       ; n_t_64x_m~7, clk_parity_low~0, n_t_64x_m~19, n_t_45x~9, initialize                                                                                                                                              ; n_t_64x_m~19, n_t_64x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  E  ; LC75       ; n_t_64x_m~19, clk_parity_low~0, n_t_64x~9, n_t_45x~9, initialize                                                                                                                                                ; n_t_64x~9, n_t_63x_m~7, ac07l~3, data7_low~3sexp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  E  ; LC74       ; n_t_67x_m~22, clk_parity_low~0, n_t_67x~9, n_t_45x~9, initialize                                                                                                                                                ; n_t_67x~9, n_t_66x_m~7, ac10l~4, data10_low~3sexp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+;  F  ; LC90       ; msb12_m~21, clk_parity_low~0, msb12~9, n_t_45x~9, initialize                                                                                                                                                    ; msb12_m~15, msb12~9, ac00l~3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  F  ; LC82       ; n_t_60x_m~7, clk_parity_low~0, n_t_60x_m~21, n_t_45x~9, initialize                                                                                                                                              ; n_t_60x_m~21, n_t_60x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  F  ; LC94       ; n_t_60x_m~21, clk_parity_low~0, n_t_60x~9, n_t_45x~9, initialize                                                                                                                                                ; n_t_60x_m~15, n_t_60x~9, n_t_2x_m~7, ac03l~3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  F  ; LC87       ; n_t_60x~9, enb_buf_ld_low~5, n_t_2x_m~15                                                                                                                                                                        ; n_t_2x_m~21                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  F  ; LC89       ; n_t_65x_m~19, clk_parity_low~0, n_t_65x~9, n_t_45x~9, initialize                                                                                                                                                ; n_t_65x~9, n_t_67x_m~8, ac11l~3, data11~0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+;  F  ; LC86       ; clk_parity_low~0, n_t_65x_m~19, n_t_45x~9, initialize, n_t_65x_m~7sexp1, n_t_65x_m~13                                                                                                                           ; n_t_65x_m~19, n_t_65x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  F  ; LC88       ; n_t_2x_m~7, clk_parity_low~0, n_t_2x_m~21, n_t_45x~9, initialize                                                                                                                                                ; n_t_2x_m~21, n_t_2x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  F  ; LC81       ; n_t_33x_m~7, clk_parity_low~0, n_t_33x_m~21, n_t_45x~9, initialize                                                                                                                                              ; n_t_33x_m~21, n_t_33x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  F  ; LC92       ; n_t_2x_m~21, clk_parity_low~0, n_t_2x~9, n_t_45x~9, initialize                                                                                                                                                  ; n_t_2x_m~15, n_t_2x~9, n_t_33x_m~7, ac02l~3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  F  ; LC95       ; n_t_2x~9, enb_buf_ld_low~5, n_t_33x_m~15                                                                                                                                                                        ; n_t_33x_m~21                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  F  ; LC96       ; n_t_59x~10, tp4, n_t_72x_m~9, n_t_45x~9, initialize                                                                                                                                                             ; n_t_72x_m~9, n_t_72x~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  F  ; LC93       ; n_t_72x_m~9, tp4, n_t_72x~9, n_t_45x~9, initialize                                                                                                                                                              ; n_t_72x~9, tr_skip_low~4, n_t_57x~2sexp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+;  F  ; LC91       ; n_t_33x_m~21, clk_parity_low~0, n_t_33x~9, n_t_45x~9, initialize                                                                                                                                                ; n_t_33x_m~15, n_t_33x~9, msb12_m~7, ac01l~3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+;  F  ; LC83       ; n_t_33x~9, enb_buf_ld_low~5, msb12_m~15                                                                                                                                                                         ; msb12_m~21                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+;  F  ; LC84       ; msb12_m~7, clk_parity_low~0, msb12_m~21, n_t_45x~9, initialize                                                                                                                                                  ; msb12_m~21, msb12~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  G  ; LC109      ; n_t_66x~9, enb_buf_ld_low~5, n_t_31x_m~13                                                                                                                                                                       ; n_t_31x_m~19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  G  ; LC106      ; n_t_31x~9, enb_buf_ld_low~5, n_t_64x_m~13                                                                                                                                                                       ; n_t_64x_m~19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  G  ; LC98       ; msb8~9, enb_buf_ld_low~5, n_t_60x_m~15                                                                                                                                                                          ; n_t_60x_m~21                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  G  ; LC105      ; bts3, io_pause_low_m~9, iot~2sexpand0, iot~2sexpand1, biop1, biop2, biop4                                                                                                                                       ; io_pause_low_m~9, io_pause_low~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+;  G  ; LC110      ; n_t_67x~9, enb_buf_ld_low~5, n_t_66x_m~13                                                                                                                                                                       ; n_t_66x_m~19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  G  ; LC97       ; rx_done_low, rx_out_low, rx_tr_req_low, maint~9                                                                                                                                                                 ; clk_parity_low~0, n_t_67x_m~8, n_t_66x_m~7, n_t_31x_m~7, n_t_64x_m~7, n_t_63x_m~7, n_t_62x_m~7, msb8_m~7, n_t_60x_m~7, n_t_2x_m~7, n_t_33x_m~7, msb12_m~7, n_t_67x_m~16, n_t_66x_m~13, n_t_31x_m~13, n_t_64x_m~13, n_t_63x_m~13, n_t_60x_m~15, n_t_2x_m~15, n_t_33x_m~15, msb12_m~15, n_t_65x_m~7sexp1                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  G  ; LC107      ; n_t_62x~9, enb_buf_ld_low~5, msb8_m~14                                                                                                                                                                          ; msb8_m~20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+;  H  ; LC113      ; enb_buf_ld_low~5, bmb09, bmb11, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low, bmb10, strobe~0sexp, maint~9, rx_shift_low                                                                ; n_t_65x_m~19, n_t_65x~9, n_t_67x_m~22, n_t_67x~9, n_t_66x_m~19, n_t_66x~9, n_t_31x_m~19, n_t_31x~9, n_t_64x_m~19, n_t_64x~9, n_t_63x_m~19, n_t_63x~9, n_t_62x_m~18, n_t_62x~9, msb8_m~20, msb8~9, n_t_60x_m~21, n_t_60x~9, n_t_2x_m~21, n_t_2x~9, n_t_33x_m~21, n_t_33x~9, msb12_m~21, msb12~9                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+;  H  ; LC124      ; rx_data_low, maint~9, rx_out_low, rx_done_low, rx_tr_req_low                                                                                                                                                    ; n_t_65x_m~19                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+;  H  ; LC123      ; maint_m~9, n_t_1x, bmb10, md04_low, n_t_5x, bmb11, md05_low, io_pause_low~9, n_t_6x, bmb09, md03_low, n_t_48x~3, strobe~0sexp, n_t_45x~9, initialize, data4~0sexp2, data4_low~4                                 ; maint_m~9, maint~9                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+;  H  ; LC118      ; maint~9, rx_done_low, rx_out_low, rx_tr_req_low, data4~0sexp2, data4_low~4, io_pause_low~9, n_t_1x, n_t_5x, n_t_6x, md03_low, md04_low, md05_low                                                                ; msb8_m~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
++-----+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (119006): Selected device EPM7128SLC84-15 for design "rx8i"
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4682 megabytes
+    Info: Processing ended: Wed Apr 29 00:51:30 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
+
+
