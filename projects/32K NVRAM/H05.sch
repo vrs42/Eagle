@@ -7399,7 +7399,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="IC1" library="74xx-us" deviceset="74*74" device="N" technology="LS"/>
 <part name="IC2" library="74xx-us" deviceset="74*74" device="N" technology="LS"/>
-<part name="C2" library="rcl" deviceset="C-US" device="050-025X075"/>
+<part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value="0.1uF"/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
 <part name="V6" library="supply2" deviceset="VCC" device=""/>
 <part name="V7" library="supply2" deviceset="VCC" device=""/>
@@ -7430,14 +7430,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="IC2" gate="A" x="119.38" y="30.48"/>
 <instance part="IC2" gate="B" x="154.94" y="30.48"/>
 <instance part="C2" gate="G$1" x="137.16" y="104.14"/>
-<instance part="V5" gate="GND" x="137.16" y="88.9"/>
-<instance part="V6" gate="G$1" x="137.16" y="114.3"/>
+<instance part="V5" gate="GND" x="137.16" y="96.52"/>
+<instance part="V6" gate="G$1" x="137.16" y="109.22"/>
 <instance part="V7" gate="G$1" x="27.94" y="116.84"/>
 <instance part="V8" gate="G$1" x="71.12" y="38.1"/>
 <instance part="V9" gate="G$1" x="104.14" y="38.1"/>
 <instance part="V10" gate="G$1" x="139.7" y="38.1"/>
 <instance part="IC4" gate="A" x="83.82" y="106.68"/>
-<instance part="IC4" gate="P" x="127" y="101.6"/>
 <instance part="R1" gate="G$1" x="53.34" y="104.14"/>
 <instance part="C4" gate="G$1" x="60.96" y="104.14" rot="R90"/>
 <instance part="V11" gate="G$1" x="48.26" y="106.68"/>
@@ -7548,12 +7547,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="SV2" gate="1" pin="1"/>
 </segment>
 <segment>
-<wire x1="137.16" y1="91.44" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="127" y1="91.44" x2="137.16" y2="91.44" width="0.1524" layer="91"/>
-<junction x="137.16" y="91.44"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="V5" gate="GND" pin="GND"/>
-<pinref part="IC4" gate="P" pin="GND"/>
 </segment>
 </net>
 <net name="EA0(1)" class="0">
@@ -8004,12 +7999,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="137.16" y1="111.76" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="127" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
-<junction x="137.16" y="111.76"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="V6" gate="G$1" pin="VCC"/>
-<pinref part="IC4" gate="P" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="V7" gate="G$1" pin="VCC"/>

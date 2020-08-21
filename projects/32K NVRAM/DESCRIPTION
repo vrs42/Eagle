@@ -2,5 +2,6 @@ Core replacement
 <UL><LI><b>H01</b> thru <b>H05</b> are connectors that would plug into an existing
 8/i computer (in the coresponding sockets) to attempt to substitute a RAM memory for the
 core memory.</LI>
+<UL><LI><b>32KRAM</b> is the whole design on snap-apart paddle cards.</LI>
 </UL>
 
