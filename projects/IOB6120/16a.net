@@ -1,0 +1,980 @@
+Netlist
+
+Exported from iob16avrs.sch at 5/10/2016 7:43:00 AM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Net      Part     Pad      Pin        Sheet
+
+2V5      C1       +        +          4
+         C100     1        1          4
+         C103     1        1          4
+         C105     1        1          4
+         C106     1        1          4
+         IC12     125      2V5        * none *
+         IC12     14       2V5        * none *
+         IC12     24       2V5        * none *
+         IC12     55       2V5        * none *
+         IC12     82       2V5        * none *
+         IC12     9        2V5        * none *
+         IC12     92       2V5        * none *
+         IC12     97       2V5        * none *
+         REG2.5   5        VOUT       4
+         REG2.5   6        VOUT1      4
+
+5V       C10      1        1          5
+         C13      1        1          1
+         C15      1        1          5
+         C17      1        1          3
+         C4       1        1          4
+         C7       1        1          1
+         C8       1        1          2
+         CF1      13       VCC2       3
+         CF1      32       CS1#       3
+         CF1      38       VCC1       3
+         CF1      44       REG#       3
+         IC1      37       VCC        2
+         IC10     14       VCC        1
+         IC11     9        VCC        5
+         IC13     20       VCC        4
+         IC14     16       VCCI       1
+         IC15     14       VCC        4
+         IC16     1        5V         * none *
+         IC17     14       VCC        4
+         IC6      16       VCC        1
+         IC6      6        G1         1
+         IC7      16       VCC        3
+         IC8      20       VCC        1
+         IC9      20       VCC        1
+         IO1      1        1          5
+         IO2      1        1          5
+         KBD      5        5          6
+         R1       2        2          3
+         R10      2        2          4
+         R2       1        1          3
+         R3       1        1          3
+         R5       2        2          3
+         R6       2        2          4
+         R9       2        2          4
+         REG3.3   3        VIN        4
+         REG3.3   4        VIN1       4
+         SBC      1        KL         1
+         SBC      2        KL         1
+         X1       P$1      OE         4
+         X1       P$4      5V         * none *
+
+B0       IC12     120      B0         6
+         RN2      3        1          6
+
+C0_L     IC12     79       C0         4
+         SBC      7        KL         1
+
+C1_L     IC12     80       C1         4
+         SBC      8        KL         1
+
+CF_DETECT_L CF1      26       CD1#       3
+         IC7      12       2A1        3
+         R5       1        1          3
+
+CF_L     CF1      7        CS0#       3
+         IC6      12       Y3         1
+
+CF_READY CF1      37       RDY/BSY#   3
+         IC7      14       2A2        3
+
+CPUDX0   IC12     122      DX0        4
+         IO2      3        3          5
+         SBC      34       KL         1
+
+CPUDX1   IC12     132      DX1        4
+         IO2      5        5          5
+         SBC      36       KL         1
+
+CPUDX2   IC12     129      DX2        4
+         IO2      7        7          5
+         SBC      38       KL         1
+
+CPUDX3   IC12     131      DX3        4
+         IO2      9        9          5
+         SBC      40       KL         1
+
+CPUDX4   IC12     67       D7         3
+         IC8      18       8D         1
+         IC9      9        A8         1
+         IO2      11       11         5
+         SBC      42       KL         1
+
+CPUDX5   IC12     62       D6         3
+         IC8      17       7D         1
+         IC9      8        A7         1
+         IO2      13       13         5
+         SBC      43       KL         1
+
+CPUDX6   IC12     60       D5         3
+         IC8      14       6D         1
+         IC9      7        A6         1
+         IO2      15       15         5
+         SBC      45       KL         1
+
+CPUDX7   IC12     57       D4         3
+         IC8      13       5D         1
+         IC9      6        A5         1
+         IO2      17       17         5
+         SBC      47       KL         1
+
+CPUDX8   IC12     49       D3         3
+         IC8      8        4D         1
+         IC9      5        A4         1
+         IO2      19       19         5
+         SBC      50       KL         1
+
+CPUDX9   IC12     46       D2         3
+         IC8      7        3D         1
+         IC9      4        A3         1
+         IO2      21       21         5
+         SBC      48       KL         1
+
+CPUDX10  IC12     44       D1         3
+         IC8      4        2D         1
+         IC9      3        A2         1
+         IO2      23       23         5
+         SBC      46       KL         1
+
+CPUDX11  IC12     39       D0         3
+         IC8      3        1D         1
+         IC9      2        A1         1
+         IO2      25       25         5
+         SBC      44       KL         1
+
+CTS2     HS2      1        1          5
+         IC11     17       R4OUT      5
+
+DA0      IC1      5        A11        2
+         IC2      4        A12        2
+         IC3      4        A12        2
+         IC4      4        A12        2
+         IC5      4        A12        2
+         IC8      2        1Q         1
+
+DA1      IC1      4        A12        2
+         IC2      28       A13        2
+         IC3      28       A13        2
+         IC4      28       A13        2
+         IC5      28       A13        2
+         IC8      5        2Q         1
+
+DA2      IC1      3        A13        2
+         IC2      3        A14        2
+         IC3      3        A14        2
+         IC4      3        A14        2
+         IC5      3        A14        2
+         IC8      6        3Q         1
+
+DA3      IC1      2        A14        2
+         IC2      31       A15        2
+         IC3      31       A15        2
+         IC4      31       A15        2
+         IC5      31       A15        2
+         IC8      9        4Q         1
+
+DA4      IC1      1        A15        2
+         IC2      2        A16        2
+         IC3      2        A16        2
+         IC4      2        A16        2
+         IC5      2        A16        2
+         IC8      12       5Q         1
+
+DA5      IC1      48       A16        2
+         IC2      30       A17        2
+         IC3      30       A17        2
+         IC4      30       A17        2
+         IC5      30       A17        2
+         IC8      15       6Q         1
+
+DA6      IC1      17       A17        2
+         IC2      1        A18        2
+         IC3      1        A18        2
+         IC4      1        A18        2
+         IC5      1        A18        2
+         IC8      16       7Q         1
+
+DA7      IC8      19       8Q         1
+
+DISK_CE_L IC10     1        I0         1
+         IC6      4        G2A        1
+         IC6      5        G2B        1
+         SBC      16       KL         1
+
+DX4      CF1      6        D7         3
+         IC1      44       D7         2
+         IC2      21       D7         2
+         IC3      21       D7         2
+         IC4      21       D7         2
+         IC5      21       D7         2
+         IC9      11       B8         1
+
+DX5      CF1      5        D6         3
+         IC1      42       D6         2
+         IC2      20       D6         2
+         IC3      20       D6         2
+         IC4      20       D6         2
+         IC5      20       D6         2
+         IC9      12       B7         1
+
+DX6      CF1      4        D5         3
+         IC1      40       D5         2
+         IC2      19       D5         2
+         IC3      19       D5         2
+         IC4      19       D5         2
+         IC5      19       D5         2
+         IC7      13       2Y2        3
+         IC9      13       B6         1
+
+DX7      CF1      3        D4         3
+         IC1      38       D4         2
+         IC2      18       D4         2
+         IC3      18       D4         2
+         IC4      18       D4         2
+         IC5      18       D4         2
+         IC7      11       2Y1        3
+         IC9      14       B5         1
+
+DX8      CF1      2        D3         3
+         IC1      35       D3         2
+         IC2      17       D3         2
+         IC3      17       D3         2
+         IC4      17       D3         2
+         IC5      17       D3         2
+         IC7      9        1Y4        3
+         IC9      15       B4         1
+
+DX9      CF1      23       D2         3
+         IC1      33       D2         2
+         IC2      15       D2         2
+         IC3      15       D2         2
+         IC4      15       D2         2
+         IC5      15       D2         2
+         IC7      7        1Y3        3
+         IC9      16       B3         1
+
+DX10     CF1      22       D1         3
+         IC1      31       D1         2
+         IC2      14       D1         2
+         IC3      14       D1         2
+         IC4      14       D1         2
+         IC5      14       D1         2
+         IC7      5        1Y2        3
+         IC9      17       B2         1
+
+DX11     CF1      21       D0         3
+         IC1      29       D0         2
+         IC2      13       D0         2
+         IC3      13       D0         2
+         IC4      13       D0         2
+         IC5      13       D0         2
+         IC7      3        1Y1        3
+         IC9      18       B1         1
+
+EMA0     IC6      3        C          1
+         SBC      35       KL         1
+
+EMA1     IC6      2        B          1
+         SBC      41       KL         1
+
+EMA2     IC6      1        A          1
+         SBC      21       KL         1
+
+FLASH_L  IC1      26       !CE        2
+         IC6      14       Y1         1
+
+FLASH_RDY IC1      15       !RDBY      2
+         IC7      6        1A3        3
+
+FPGA_DONE_H IC12     72       DONE       3
+         IC7      2        1A1        3
+
+FPGA_INIT_L/RTC_CLK IC12     68       INIT       3
+         IC16     7        CLK        6
+         IC7      4        1A2        3
+         J3       1        1          3
+         R3       2        2          3
+
+FPGA_L   IC12     31       CS         3
+         IC6      10       Y5         1
+
+FPGA_PROGRAM_L IC12     69       PROGRAM    3
+         IC12     85       REPROGRAM  4
+         R2       2        2          3
+
+FPGA_WR_L/RTC_IO IC12     30       WRITE      3
+         IC16     6        I/O        6
+         R7       2        2          3
+
+G0       IC12     126      G0         6
+         RN2      2        1          6
+
+GND      BATA     -        -          1
+         BATB     -        -          1
+         C1       -        -          4
+         C10      2        2          5
+         C100     2        2          4
+         C101     2        2          4
+         C102     2        2          4
+         C103     2        2          4
+         C104     2        2          4
+         C105     2        2          4
+         C106     2        2          4
+         C107     2        2          4
+         C11      2        2          5
+         C13      2        2          1
+         C14      2        2          2
+         C17      2        2          3
+         C2       -        -          4
+         C3       2        2          4
+         C4       2        2          4
+         C5       2        2          2
+         C6       2        2          2
+         C7       2        2          1
+         C8       2        2          2
+         C9       2        2          2
+         CF1      1        GND1       3
+         CF1      10       A9         3
+         CF1      11       A8         3
+         CF1      12       A7         3
+         CF1      14       A6         3
+         CF1      15       A5         3
+         CF1      16       A4         3
+         CF1      17       A3         3
+         CF1      39       CSEL#      3
+         CF1      50       GND2       3
+         CF1      8        A10        3
+         IC1      27       GND        2
+         IC1      46       GND        2
+         IC1      47       !BYTE      2
+         IC10     7        GND        1
+         IC11     8        GND        5
+         IC12     106      M2         3
+         IC12     109      M0         3
+         IC12     110      GND        * none *
+         IC12     119      GND        * none *
+         IC12     128      GND        * none *
+         IC12     135      GND        * none *
+         IC12     143      GND        * none *
+         IC12     17       GND        * none *
+         IC12     25       GND        * none *
+         IC12     33       GND        * none *
+         IC12     45       GND        * none *
+         IC12     52       GND        * none *
+         IC12     61       GND        * none *
+         IC12     73       GND        * none *
+         IC12     8        GND        * none *
+         IC12     81       GND        * none *
+         IC12     89       GND        * none *
+         IC12     98       GND        * none *
+         IC13     10       GND        4
+         IC13     19       G          4
+         IC14     8        GND        1
+         IC15     11       I          7
+         IC15     13       I          7
+         IC15     5        I          7
+         IC15     7        GND        4
+         IC15     9        I          7
+         IC16     4        GND        * none *
+         IC17     13       I          7
+         IC17     7        GND        4
+         IC2      16       GND        2
+         IC3      16       GND        2
+         IC4      16       GND        2
+         IC5      16       GND        2
+         IC6      8        GND        1
+         IC7      8        GND        3
+         IC8      1        OC         1
+         IC8      10       GND        1
+         IC9      10       GND        1
+         IC9      19       G          1
+         IO1      2        2          5
+         IO2      2        2          5
+         J3       2        2          3
+         JTAG     1        1          3
+         KBD      3        3          6
+         KBD      SH1      PE1        6
+         KBD      SH2      PE2        6
+         KBD      SH3      PE3        6
+         LPT      17       F          4
+         LPT      18       F          4
+         LPT      19       F          4
+         LPT      20       F          4
+         LPT      21       F          4
+         LPT      22       F          4
+         LPT      23       F          4
+         LPT      24       F          4
+         LPT      25       F          4
+         R4       2        2          6
+         R7       1        1          3
+         REG2.5   1        GND        4
+         REG2.5   2        EN#        4
+         REG3.3   1        GND        4
+         REG3.3   2        EN#        4
+         SBC      17       KL         1
+         SBC      18       KL         1
+         SBC      49       KL         1
+         SER1     9        9          5
+         SER2     9        9          5
+         SER3     9        9          5
+         VGA      10       10         6
+         VGA      5        5          6
+         VGA      6        6          6
+         VGA      7        7          6
+         VGA      8        8          6
+         X1       P$2      GND        * none *
+
+HS       IC12     117      HSYNC      6
+         VGA      13       13         6
+
+INTGNT_L IC12     141      INTGNT     4
+         SBC      10       KL         1
+
+INTREQ_L IC12     96       INTREQ     4
+         SBC      9        KL         1
+
+IOCLR_L  IC1      12       !RESET     2
+         IC12     87       IOCLR      4
+         SBC      12       KL         1
+
+KB_CLK   IC12     138      KB_CLK     6
+         KBD      6        6          6
+
+KB_DATA  IC12     133      KB_DATA    6
+         KBD      1        1          6
+
+LOAD_DAR_H IC8      11       ENC        1
+         SBC      15       KL         1
+
+LXDAR_L  IC12     18       LXDAR      4
+         SBC      14       KL         1
+
+MA0      IC1      6        A10        2
+         IC2      25       A11        2
+         IC3      25       A11        2
+         IC4      25       A11        2
+         IC5      25       A11        2
+         SBC      30       KL         1
+
+MA1      IC1      7        A9         2
+         IC2      23       A10        2
+         IC3      23       A10        2
+         IC4      23       A10        2
+         IC5      23       A10        2
+         SBC      32       KL         1
+
+MA2      IC1      8        A8         2
+         IC2      26       A9         2
+         IC3      26       A9         2
+         IC4      26       A9         2
+         IC5      26       A9         2
+         SBC      28       KL         1
+
+MA3      IC1      18       A7         2
+         IC2      27       A8         2
+         IC3      27       A8         2
+         IC4      27       A8         2
+         IC5      27       A8         2
+         SBC      26       KL         1
+
+MA4      IC1      19       A6         2
+         IC2      5        A7         2
+         IC3      5        A7         2
+         IC4      5        A7         2
+         IC5      5        A7         2
+         SBC      23       KL         1
+
+MA5      IC1      20       A5         2
+         IC2      6        A6         2
+         IC3      6        A6         2
+         IC4      6        A6         2
+         IC5      6        A6         2
+         SBC      25       KL         1
+
+MA6      IC1      21       A4         2
+         IC2      7        A5         2
+         IC3      7        A5         2
+         IC4      7        A5         2
+         IC5      7        A5         2
+         SBC      27       KL         1
+
+MA7      IC1      22       A3         2
+         IC2      8        A4         2
+         IC3      8        A4         2
+         IC4      8        A4         2
+         IC5      8        A4         2
+         SBC      29       KL         1
+
+MA8      IC1      23       A2         2
+         IC2      9        A3         2
+         IC3      9        A3         2
+         IC4      9        A3         2
+         IC5      9        A3         2
+         SBC      31       KL         1
+
+MA9      CF1      18       A2         3
+         IC1      24       A1         2
+         IC2      10       A2         2
+         IC3      10       A2         2
+         IC4      10       A2         2
+         IC5      10       A2         2
+         SBC      33       KL         1
+
+MA10     CF1      19       A1         3
+         IC1      25       A0         2
+         IC2      11       A1         2
+         IC3      11       A1         2
+         IC4      11       A1         2
+         IC5      11       A1         2
+         SBC      37       KL         1
+
+MA11     CF1      20       A0         3
+         IC1      45       A-1/D15    2
+         IC2      12       A0         2
+         IC3      12       A0         2
+         IC4      12       A0         2
+         IC5      12       A0         2
+         SBC      39       KL         1
+
+N$1      IC12     66       D7         4
+         IC13     2        A1         4
+
+N$2      BATA     +        +          1
+         R8       1        1          1
+
+N$3      IC7      10       1A4        3
+         J3       3        3          3
+         R1       1        1          3
+
+N$4      IC12     63       D6         4
+         IC13     3        A2         4
+
+N$5      IC12     59       D5         4
+         IC13     4        A3         4
+
+N$6      IC12     56       D4         4
+         IC13     5        A4         4
+
+N$7      IC12     88       CLK        4
+         X1       P$3      FO         4
+
+N$8      IC16     3        X2         6
+         X2       1        1          6
+
+N$10     IC12     51       D3         4
+         IC13     6        A5         4
+
+N$11     BATB     +        +          1
+         R11      1        1          1
+
+N$15     IC12     43       D2         4
+         IC13     7        A6         4
+
+N$16     IC12     47       D1         4
+         IC13     8        A7         4
+
+N$17     IC12     38       D0         4
+         IC13     9        A8         4
+
+N$18     IC12     28       DIR        4
+         IC13     1        DIR        4
+
+N$19     IC12     7        INIT       4
+         IC15     3        I          4
+
+N$20     IC12     10       STROBE     4
+         IC15     1        I          4
+
+N$21     IC12     137      ERROR      4
+         IC17     10       O          4
+
+N$22     IC12     91       ACK        4
+         IC17     4        O          4
+
+N$23     IC12     121      BUSY       4
+         IC17     2        O          4
+
+N$24     IC12     136      PAPER_END  4
+         IC17     6        O          4
+
+N$25     IC12     124      SELECT_IN  4
+         IC17     8        O          4
+
+N$26     IC13     18       B1         4
+         LPT      9        F          4
+
+N$27     IC13     17       B2         4
+         LPT      8        F          4
+
+N$28     IC13     16       B3         4
+         LPT      7        F          4
+
+N$29     IC13     15       B4         4
+         LPT      6        F          4
+
+N$30     IC13     14       B5         4
+         LPT      5        F          4
+
+N$31     IC13     13       B6         4
+         LPT      4        F          4
+
+N$32     IC13     12       B7         4
+         LPT      3        F          4
+
+N$33     IC13     11       B8         4
+         LPT      2        F          4
+
+N$34     IC15     2        O          4
+         LPT      1        F          4
+         R9       1        1          4
+
+N$35     IC15     4        O          4
+         LPT      16       F          4
+         R10      1        1          4
+
+N$36     IC17     11       I          4
+         LPT      15       F          4
+
+N$37     IC17     3        I          4
+         LPT      10       F          4
+
+N$38     IC17     1        I          4
+         LPT      11       F          4
+
+N$39     IC17     5        I          4
+         LPT      12       F          4
+
+N$40     IC17     9        I          4
+         LPT      13       F          4
+
+N$41     IC12     130      P$13       5
+         IO1      26       26         5
+
+N$42     IC12     123      P$14       5
+         IO1      24       24         5
+
+N$43     IC12     140      P$15       5
+         IO1      22       22         5
+
+N$44     IC12     118      P$16       5
+         IO1      20       20         5
+
+N$45     IC12     75       P$17       5
+         IO1      18       18         5
+
+N$46     IC12     41       P$18       5
+         IO1      16       16         5
+
+N$47     IC12     58       P$19       5
+         IO1      14       14         5
+
+N$48     IC12     86       P$20       5
+         IO1      12       12         5
+
+N$49     IC12     22       P$21       5
+         IO1      10       10         5
+
+N$50     IC12     29       P$22       5
+         IO1      8        8          5
+
+N$51     IC12     50       P$23       5
+         IO1      6        6          5
+
+N$52     LPT      14       F          4
+         R6       1        1          4
+
+N$53     IC12     54       P$24       5
+         IO1      4        4          5
+
+N$54     IC12     134      P$1        5
+         IO1      25       25         5
+
+N$55     IC12     114      P$2        5
+         IO1      23       23         5
+
+N$56     IC12     139      P$3        5
+         IO1      21       21         5
+
+N$57     IC12     116      P$4        5
+         IO1      19       19         5
+
+N$58     IC12     74       P$5        5
+         IO1      17       17         5
+
+N$59     IC12     64       P$6        5
+         IO1      15       15         5
+
+N$60     IC12     42       P$7        5
+         IO1      13       13         5
+
+N$61     IC12     84       P$8        5
+         IO1      11       11         5
+
+N$62     IC12     83       P$9        5
+         IO1      9        9          5
+
+N$63     IC12     40       P$10       5
+         IO1      7        7          5
+
+N$64     IC12     48       P$11       5
+         IO1      5        5          5
+
+N$65     IC12     65       P$12       5
+         IO1      3        3          5
+
+N$66     IC12     12       P$1        5
+         IO2      26       26         5
+
+N$67     IC12     5        P$2        5
+         IO2      24       24         5
+
+N$68     RN2      8        2          6
+         VGA      1        1          6
+
+N$69     RN2      7        2          6
+         VGA      2        2          6
+
+N$70     RN2      6        2          6
+         VGA      3        3          6
+
+N$71     IC12     3        P$3        5
+         IO2      22       22         5
+
+N$72     IC12     20       P$4        5
+         IO2      20       20         5
+
+N$73     IC12     103      P$5        5
+         IO2      18       18         5
+
+N$74     IC12     93       P$6        5
+         IO2      16       16         5
+
+N$75     IC12     100      P$7        5
+         IO2      14       14         5
+
+N$76     IC11     16       R4IN       5
+         SER1     6        6          5
+
+N$77     IC12     94       P$8        5
+         IO2      12       12         5
+
+N$78     IC12     19       P$9        5
+         IO2      10       10         5
+
+N$79     IC12     13       P$10       5
+         IO2      8        8          5
+
+N$80     IC12     4        P$11       5
+         IO2      6        6          5
+
+N$81     IC12     6        P$12       5
+         IO2      4        4          5
+
+N$82     IC16     2        X1         6
+         X2       2        2          6
+
+N$86     CPREQ    2        2          4
+         IC12     113      CPREQ      4
+
+N$91     IC10     3        O          1
+         IC9      1        DIR        1
+
+N$92     IC11     6        R1OUT      5
+         IC12     23       RX0        5
+
+N$93     IC11     5        T1IN       5
+         IC12     11       TX0        5
+
+N$94     IC11     4        R2OUT      5
+         IC12     26       RX1        5
+
+N$95     IC11     18       T2IN       5
+         IC12     21       TX1        5
+
+N$96     IC11     22       R3OUT      5
+         IC12     27       RX2        5
+
+N$97     IC11     19       T3IN       5
+         IC12     115      TX2        5
+
+N$101    C16      1        1          5
+         IC11     10       C1+        5
+
+N$102    C16      2        2          5
+         IC11     12       C1-        5
+
+N$103    C12      1        1          5
+         IC11     13       C2+        5
+
+N$104    C12      2        2          5
+         IC11     14       C2-        5
+
+N$105    C15      2        2          5
+         IC11     11       V+         5
+
+N$106    R4       1        1          6
+         SPKR     -        2          6
+
+N$107    C11      1        1          5
+         IC11     15       V-         5
+
+N$110    IC11     7        R1IN       5
+         SER2     3        3          5
+
+N$112    IC11     3        R2IN       5
+         SER3     3        3          5
+
+N$113    IC11     24       T3OUT      5
+         SER1     5        5          5
+
+N$114    IC11     23       R3IN       5
+         SER1     3        3          5
+
+R0       IC12     99       R0         6
+         RN2      1        1          6
+
+RAM0_L   IC14     4        CEI1#      1
+         IC6      15       Y0         1
+
+RAM0_L_NV IC14     13       CEO1#      1
+         IC3      22       CS/        2
+
+RAM1_L   IC14     5        CEI2#      1
+         IC6      13       Y2         1
+
+RAM1_L_NV IC14     12       CEO2#      1
+         IC2      22       CS/        2
+
+RAM2_L   IC14     6        CEI3#      1
+         IC6      11       Y4         1
+
+RAM2_L_NV IC14     11       CEO3#      1
+         IC5      22       CS/        2
+
+RAM3_L   IC14     7        CEI4#      1
+         IC6      9        Y6         1
+
+RAM3_L_NV IC14     10       CEO4#      1
+         IC4      22       CS/        2
+
+RD_SR_L  IC12     77       SR_RD      4
+         SBC      3        KL         1
+
+READ_L   CF1      9        OE#        3
+         IC1      28       !OE        2
+         IC10     2        I1         1
+         IC12     78       READ       4
+         IC2      24       OE/        2
+         IC3      24       OE/        2
+         IC4      24       OE/        2
+         IC5      24       OE/        2
+         SBC      11       KL         1
+
+RTC_RST  IC12     112      RST        6
+         IC16     5        RST#       6
+
+RTS2     HS2      2        2          5
+         IC11     21       T4IN       5
+
+SKIP_L   IC12     76       SKIP       4
+         SBC      5        KL         1
+
+SPEAKER  IC10     11       O          6
+         IC10     6        O          6
+         IC10     8        O          6
+         SPKR     +        1          6
+
+SPKR     IC10     10       I1         6
+         IC10     12       I0         6
+         IC10     13       I1         6
+         IC10     4        I0         6
+         IC10     5        I1         6
+         IC10     9        I0         6
+         IC12     95       SPKR       4
+
+STATUS_L IC6      7        Y7         1
+         IC7      1        1G         3
+         IC7      15       2G         3
+
+TCK      IC12     2        TCK        3
+         JTAG     4        4          3
+
+TDI      IC12     32       TDI        3
+         JTAG     6        6          3
+
+TDO      IC12     34       TDO        3
+         JTAG     3        3          3
+
+TMS      IC12     142      TMS        3
+         JTAG     2        2          3
+
+TX0      IC11     2        T1OUT      5
+         SER2     5        5          5
+
+TX1      IC11     1        T2OUT      5
+         SER3     5        5          5
+
+TX2      IC11     20       T4OUT      5
+         SER1     4        4          5
+
+VBAT     IC14     2        VBAT       1
+         IC16     8        VBAT       6
+         R11      2        2          1
+         R8       2        2          1
+
+VCCO     C101     1        1          4
+         C102     1        1          4
+         C104     1        1          4
+         C107     1        1          4
+         C2       +        +          4
+         C3       1        1          4
+         IC12     1        VCCO       * none *
+         IC12     107      VCCO       * none *
+         IC12     108      VCCO       * none *
+         IC12     111      M1         3
+         IC12     127      VCCO       * none *
+         IC12     144      VCCO       * none *
+         IC12     16       VCCO       * none *
+         IC12     35       VCCO       * none *
+         IC12     36       VCCO       * none *
+         IC12     53       VCCO       * none *
+         IC12     70       VCCO       * none *
+         IC12     71       VCCO       * none *
+         IC12     90       VCCO       * none *
+         JTAG     5        5          3
+         REG2.5   3        VIN        4
+         REG2.5   4        VIN1       4
+         REG3.3   5        VOUT       4
+         REG3.3   6        VOUT1      4
+
+VCC_NV   C14      1        1          2
+         C5       1        1          2
+         C6       1        1          2
+         C9       1        1          2
+         IC14     1        VCCO       1
+         IC14     3        TOL        1
+         IC2      32       5V         2
+         IC3      32       5V         2
+         IC4      32       5V         2
+         IC5      32       5V         2
+
+VS       IC12     102      VSYNC      6
+         VGA      14       14         6
+
+WRITE_L  CF1      36       WE#        3
+         IC1      11       !WE        2
+         IC12     15       WRITE      4
+         IC12     37       CCLK       3
+         IC2      29       WE/        2
+         IC3      29       WE/        2
+         IC4      29       WE/        2
+         IC5      29       WE/        2
+         SBC      13       KL         1
+
+WR_SR_L  IC12     101      SR_WR      4
+         SBC      4        KL         1
+

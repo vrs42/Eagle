@@ -7,10 +7,6 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/atmel-cpld.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-con.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-m.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/rack.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/41xx.lbr"
@@ -350,7 +346,7 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zilog.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="0 0 1905 1126"
+Loc="0 0 1905 1039"
 State=1
 Number=2
 File="iob16avrs.sch"
@@ -393,7 +389,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -5.50256 -4.23256 254.215 189.445 2: -5.50256 -4.23256 254.215 189.445 3: -5.50256 -4.23256 254.215 189.445 4: -14.5983 17.072 245.119 210.749 5: 158.242 83.2273 202.438 140.166 6: 68.2614 50.6396 327.979 244.317 7: -84.1386 63.1814 175.579 256.859"
+Views=" 1: -5.50256 -4.23256 254.215 189.445 2: -5.50256 -4.23256 254.215 189.445 3: -5.50256 -4.23256 254.215 189.445 4: -5.50256 -4.23256 254.215 189.445 5: -5.50256 -4.23256 254.215 189.445 6: -5.50256 -4.23256 254.215 189.445 7: -5.50256 -4.23256 254.215 189.445"
 Sheet=2
 
 [Win_2]
@@ -449,7 +445,7 @@ State=1
 Number=0
 
 [Desktop]
-Screen="1920 1200"
+Screen="1920 1080"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"
