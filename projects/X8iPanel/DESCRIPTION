@@ -23,9 +23,11 @@ the use of LEDs instead of indicator lamps.</LI>
 <LI><b>LEDPanel7-20l</b> fixes the known issues in LEDpalenmpsl (as of July 2020).</LI>
 <LI><b>LEDproto</b> is a version of my indicator panel, broken in two, so it
 could be ordered from a protoype shop.</LI>
-<LI><b>proto2.brd</b> is a panelized set of six M900 boards, suitable
 for ordering from a prototype house.</LI>
 <LI><b>8iSwitches</b> is a drawing of a replacement for the switches PCB.</LI>
 <LI><b>8iSwitchesOK</b> is a checkpoint of the replacement for the switches PCB.</LI>
 <LI><b>PiPanel</b> is an exploration of interfacing a Raspberry Pi to the switches and lights.</LI>
 <LI><b>G793</b> is a pull-up and clamping module for the switch register of the PDP-8/i.</LI>
+<LI><b>Perspex</b> is a drawing of the artwork that mounts in the front of the PDP-8/i panel.</LI>
+<LI><b>Guide</b> is a drawing showing placement measurements for the PDP-8/i panel.</LI>
+<LI><b>TactileSw</b> is a drawing of an attempt to use two tactile switches with a slide to replace a slide switch.</LI>
