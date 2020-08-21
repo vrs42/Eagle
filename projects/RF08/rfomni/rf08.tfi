@@ -1,0 +1,35 @@
+
+
+
+// Instantiate the module
+rf08 instance_name (
+    .data_L(data_L), 
+    .md_L(md_L), 
+    .ma_L(ma_L), 
+    .ema_L(ema_L), 
+    .c0_L(c0_L), 
+    .c1_L(c1_L), 
+    .initialize(initialize), 
+    .skip_L(skip_L), 
+    .tp1(tp1), 
+    .tp3(tp3), 
+    .tp4(tp4), 
+    .ts4_L(ts4_L), 
+    .int_rq_L(int_rq_L), 
+    .md_dir_L(md_dir_L), 
+    .break_cycle_L(break_cycle_L), 
+    .brk_data_cont_L(brk_data_cont_L), 
+    .ms_disable_L(ms_disable_L), 
+    .overflow_L(overflow_L), 
+    .load_cont_L(load_cont_L), 
+    .protect(protect), 
+    .word_L(word_L), 
+    .pca_L(pca_L), 
+    .we_L(we_L), 
+    .cs0_L(cs0_L), 
+    .cs1_L(cs1_L), 
+    .dar(dar), 
+    .dma(dma)
+    );
+
+

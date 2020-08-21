@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map H.38 on Fri Apr 18 08:23:40 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "tp3_BUFGP/IBUFG" BEL "tp3_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "tp4_BUFGP/IBUFG" BEL "tp4_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "tp1_BUFGP/IBUFG" BEL "tp1_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;

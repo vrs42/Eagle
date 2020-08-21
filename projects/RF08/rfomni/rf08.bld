@@ -1,0 +1,20 @@
+Release 7.1i ngdbuild H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -i -p xc9500xl rf08.ngc rf08.ngd 
+
+Reading NGO file 'C:/Users/Vince/Documents/websvn/trunk/pdp8/rfomni/rf08.ngc'
+...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 96688 kilobytes
+
+Writing NGD file "rf08.ngd" ...
+
+Writing NGDBUILD log file "rf08.bld"...

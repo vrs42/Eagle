@@ -1,0 +1,40 @@
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+Module <rf08> compiled
+No errors in compilation
+Analysis of file <"rf08.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <rf08>.
+ERROR:Xst:902 - "rfomni.v" line 108: Unexpected S601_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 132: Unexpected start_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 142: Unexpected S601 event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 149: Unexpected S604_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 188: Unexpected setper_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 200: Unexpected setwls_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 235: Unexpected start_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 248: Unexpected S642_L event in always block sensitivity list.
+ 
+Found 8 error(s). Aborting synthesis.
+--> 
+
+Total memory usage is 127096 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+

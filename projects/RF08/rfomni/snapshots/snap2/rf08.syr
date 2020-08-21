@@ -1,0 +1,96 @@
+Release 7.1i - xst H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.11 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.11 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: rf08.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "rf08.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "rf08"
+Output Format                      : NGC
+Target Device                      : xc9500xl
+
+---- Source Options
+Top Module Name                    : rf08
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+
+---- Other Options
+lso                                : rf08.lso
+verilog2001                        : YES
+safe_implementation                : No
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+Module <rf08> compiled
+No errors in compilation
+Analysis of file <"rf08.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <rf08>.
+ERROR:Xst:902 - "rfomni.v" line 108: Unexpected S601_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 132: Unexpected start_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 142: Unexpected S601 event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 149: Unexpected S604_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 188: Unexpected setper_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 200: Unexpected setwls_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 235: Unexpected start_L event in always block sensitivity list.
+ERROR:Xst:902 - "rfomni.v" line 248: Unexpected S642_L event in always block sensitivity list.
+ 
+Found 8 error(s). Aborting synthesis.
+--> 
+
+Total memory usage is 127096 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

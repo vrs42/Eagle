@@ -1,0 +1,113 @@
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+Module <rf08> compiled
+No errors in compilation
+Analysis of file <"rf08.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <rf08>.
+WARNING:Xst:905 - "rfomni.v" line 212: The signals <data_L> are missing in the sensitivity list of always block.
+Module <rf08> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+INFO:Xst:1304 - Contents of register <f_L> in unit <rf08> never changes during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <rf08>.
+    Related source file is "rfomni.v".
+WARNING:Xst:1778 - Inout <ma_L> is assigned but never used.
+WARNING:Xst:1779 - Inout <md_L> is used but is never assigned.
+WARNING:Xst:653 - Signal <busy_L> is used but never assigned. Tied to value 0.
+WARNING:Xst:646 - Signal <S644_L> is assigned but never used.
+WARNING:Xst:1780 - Signal <ca> is never used or assigned.
+WARNING:Xst:646 - Signal <skp> is assigned but never used.
+WARNING:Xst:653 - Signal <dt> is used but never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <per_L> is used but never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <dcxa_L> is used but never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <idle> is used but never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <pca> is used but never assigned. Tied to value 0.
+WARNING:Xst:646 - Signal <per> is assigned but never used.
+WARNING:Xst:653 - Signal <skp_L> is used but never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <wc> is used but never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <dxac_L> is used but never assigned. Tied to value 0.
+WARNING:Xst:646 - Signal <S641_L> is assigned but never used.
+WARNING:Xst:653 - Signal <dt_L> is used but never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <wc_L> is used but never assigned. Tied to value 0.
+WARNING:Xst:646 - Signal <my_db_L> is assigned but never used.
+WARNING:Xst:2110 - Clock of register <dma_L> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2111 - Clock of counter <dma_L> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <dar_L> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2111 - Clock of counter <dar_L> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <done> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <writing> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <my_db> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <load_cont> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <wls> seems to be also used in the data or control logic of that element.
+WARNING:Xst:737 - Found 1-bit latch for signal <eie_L>.
+WARNING:Xst:737 - Found 1-bit latch for signal <pie_L>.
+WARNING:Xst:737 - Found 1-bit latch for signal <cie_L>.
+WARNING:Xst:2110 - Clock of register <dtma_L> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <dtema_L> seems to be also used in the data or control logic of that element.
+    Found 1-bit tristate buffer for signal <ms_disable_L>.
+    Found 12-bit tristate buffer for signal <ma_L>.
+    Found 12-bit tristate buffer for signal <data_L>.
+    Found 1-bit tristate buffer for signal <load_cont_L>.
+    Found 1-bit tristate buffer for signal <break_cycle_L>.
+    Found 1-bit tristate buffer for signal <md_dir_L>.
+    Found 3-bit tristate buffer for signal <ema_L>.
+    Found 1-bit tristate buffer for signal <int_rq_L>.
+    Found 20-bit subtractor for signal <$AUX_1>.
+    Found 12-bit tristate buffer for signal <bmd_L>.
+    Found 8-bit down counter for signal <dar_L>.
+    Found 12-bit down counter for signal <dma_L>.
+    Found 1-bit register for signal <done>.
+    Found 3-bit register for signal <dtema_L>.
+    Found 12-bit register for signal <dtma_L>.
+    Found 1-bit register for signal <load_cont>.
+    Found 1-bit register for signal <my_db>.
+    Found 1-bit register for signal <wls>.
+    Found 1-bit register for signal <writing>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  93 Tristate(s).
+Unit <rf08> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+failed to translate terminal to FCT
+
+ema_L[0] = 
+If $n0010 Then <u>1
+If !($n0010) Then <u>-
+--> 
+
+Total memory usage is 128632 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+

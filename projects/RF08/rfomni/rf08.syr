@@ -1,0 +1,244 @@
+Release 7.1i - xst H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.12 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.12 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: rf08.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "rf08.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "rf08"
+Output Format                      : NGC
+Target Device                      : xc9500xl
+
+---- Source Options
+Top Module Name                    : rf08
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+
+---- Other Options
+lso                                : rf08.lso
+verilog2001                        : YES
+safe_implementation                : No
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+Module <rf08> compiled
+No errors in compilation
+Analysis of file <"rf08.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <rf08>.
+Module <rf08> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <rf08>.
+    Related source file is "rfomni.v".
+WARNING:Xst:2110 - Clock of register <busy> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <done> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <writing> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <my_db> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <wc> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <ca> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <dt> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <idle> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <load_cont> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <per> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <wls> seems to be also used in the data or control logic of that element.
+WARNING:Xst:737 - Found 3-bit latch for signal <f>.
+WARNING:Xst:737 - Found 1-bit latch for signal <eie>.
+WARNING:Xst:737 - Found 1-bit latch for signal <pie>.
+WARNING:Xst:737 - Found 1-bit latch for signal <cie>.
+WARNING:Xst:2110 - Clock of register <dma> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <dar> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <dtma_L> seems to be also used in the data or control logic of that element.
+WARNING:Xst:2110 - Clock of register <dtema_L> seems to be also used in the data or control logic of that element.
+    Found 1-bit tristate buffer for signal <ms_disable_L>.
+    Found 12-bit register for signal <dma>.
+    Found 12-bit tristate buffer for signal <ma_L>.
+    Found 12-bit tristate buffer for signal <data_L>.
+    Found 1-bit tristate buffer for signal <load_cont_L>.
+    Found 1-bit tristate buffer for signal <break_cycle_L>.
+    Found 1-bit tristate buffer for signal <md_dir_L>.
+    Found 3-bit tristate buffer for signal <ema_L>.
+    Found 1-bit tristate buffer for signal <int_rq_L>.
+    Found 8-bit register for signal <dar>.
+    Found 20-bit adder for signal <$AUX_1>.
+    Found 1-bit xor2 for signal <$n0078> created at line 284.
+    Found 12-bit tristate buffer for signal <bmd_L>.
+    Found 1-bit tristate buffer for signal <bmdeven>.
+    Found 1-bit register for signal <busy>.
+    Found 1-bit register for signal <ca>.
+    Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <dt>.
+    Found 3-bit register for signal <dtema_L>.
+    Found 12-bit register for signal <dtma_L>.
+    Found 1-bit register for signal <idle>.
+    Found 1-bit register for signal <load_cont>.
+    Found 1-bit register for signal <my_db>.
+    Found 1-bit xor12 for signal <pbit>.
+    Found 1-bit register for signal <per>.
+    Found 1-bit register for signal <wc>.
+    Found 1-bit register for signal <wls>.
+    Found 1-bit register for signal <writing>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Xor(s).
+	inferred  97 Tristate(s).
+Unit <rf08> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 1
+ 20-bit adder                      : 1
+# Registers                        : 15
+ 1-bit register                    : 11
+ 12-bit register                   : 2
+ 3-bit register                    : 1
+ 8-bit register                    : 1
+# Latches                          : 4
+ 1-bit latch                       : 3
+ 3-bit latch                       : 1
+# Tristates                        : 60
+ 1-bit tristate buffer             : 55
+ 12-bit tristate buffer            : 3
+ 3-bit tristate buffer             : 2
+# Xors                             : 2
+ 1-bit xor12                       : 1
+ 1-bit xor2                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2183 - Unit rf08: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): N11, N13, N15, N17, N19, N21, N23, N25, N27, N29, N3, N31, N33, N35, N37, N39, N41, N43, N45, N47, N49, N5, N51, N53, N55, N7, N9.
+
+Optimizing unit <rf08> ...
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : rf08.ngr
+Top Level Output File Name         : rf08
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+Target Technology                  : xc9500xl
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 80
+
+Macro Statistics :
+# Registers                        : 6
+#      1-bit register              : 6
+# Tristates                        : 60
+#      1-bit tristate buffer       : 55
+#      12-bit tristate buffer      : 3
+#      3-bit tristate buffer       : 2
+# Xors                             : 31
+#      1-bit xor2                  : 31
+
+Cell Usage :
+# BELS                             : 632
+#      AND2                        : 134
+#      AND3                        : 52
+#      AND4                        : 48
+#      AND8                        : 1
+#      GND                         : 1
+#      INV                         : 332
+#      OR2                         : 42
+#      OR3                         : 4
+#      VCC                         : 1
+#      XOR2                        : 17
+# FlipFlops/Latches                : 52
+#      FDCE                        : 46
+#      LDC                         : 6
+# Tri-States                       : 92
+#      BUFE                        : 92
+# IO Buffers                       : 80
+#      IBUF                        : 21
+#      IOBUFE                      : 12
+#      OBUF                        : 27
+#      OBUFE                       : 5
+#      OBUFT                       : 15
+=========================================================================
+CPU : 2.01 / 2.14 s | Elapsed : 2.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 130360 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

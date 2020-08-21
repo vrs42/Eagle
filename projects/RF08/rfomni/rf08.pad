@@ -1,0 +1,173 @@
+Release 7.1i - Fit H.38
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 4-18-2014  7:55PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  rf08.ngd
+output file: rf08.pad
+Part type:   xc95288xl
+Speed grade: -6
+Package:     tq144
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|{blank}|Slew Rate|Termination|{blank}|Voltage|Constraint|
+P1|VCC||VCCIO||||||||||
+P2|dma<3>|O|I/O/GTS3|OUTPUT|||||||||
+P3|md_L<9>|I|I/O/GTS4|INPUT|||||||||
+P4|dma<1>|O|I/O|OUTPUT|||||||||
+P5|md_L<4>|I|I/O/GTS1|INPUT|||||||||
+P6|dma<2>|O|I/O/GTS2|OUTPUT|||||||||
+P7|TIE||I/O||||||||||
+P8|VCC||VCCINT||||||||||
+P9|dar<8>|O|I/O|OUTPUT|||||||||
+P10|TIE||I/O||||||||||
+P11|dar<6>|O|I/O|OUTPUT|||||||||
+P12|TIE||I/O||||||||||
+P13|dar<5>|O|I/O|OUTPUT|||||||||
+P14|TIE||I/O||||||||||
+P15|dma<6>|O|I/O|OUTPUT|||||||||
+P16|md_L<11>|I|I/O|INPUT|||||||||
+P17|dma<5>|O|I/O|OUTPUT|||||||||
+P18|GND||GND||||||||||
+P19|tp3|I|I/O|INPUT|||||||||
+P20|dar<9>|O|I/O|OUTPUT|||||||||
+P21|TIE||I/O||||||||||
+P22|dar<4>|O|I/O|OUTPUT|||||||||
+P23|TIE||I/O||||||||||
+P24|dma<4>|O|I/O|OUTPUT|||||||||
+P25|protect|I|I/O|INPUT|||||||||
+P26|data_L<1>|I/O|I/O|BIDIR|||||||||
+P27|TIE||I/O||||||||||
+P28|ma_L<1>|O|I/O|OUTPUT|||||||||
+P29|GND||GND||||||||||
+P30|tp1|GCK/I|I/O/GCK1||||||||||
+P31|TIE||I/O||||||||||
+P32|tp4|GCK/I|I/O/GCK2||||||||||
+P33|TIE||I/O||||||||||
+P34|dma<10>|O|I/O|OUTPUT|||||||||
+P35|dma<9>|O|I/O|OUTPUT|||||||||
+P36|GND||GND||||||||||
+P37|VCC||VCCIO||||||||||
+P38|TIE||I/O/GCK3||||||||||
+P39|dma<8>|O|I/O|OUTPUT|||||||||
+P40|dma<7>|O|I/O|OUTPUT|||||||||
+P41|TIE||I/O||||||||||
+P42|VCC||VCCINT||||||||||
+P43|skip_L|O|I/O|OUTPUT|||||||||
+P44|TIE||I/O||||||||||
+P45|data_L<2>|I/O|I/O|BIDIR|||||||||
+P46|TIE||I/O||||||||||
+P47|GND||GND||||||||||
+P48|md_L<1>|I|I/O|INPUT|||||||||
+P49|TIE||I/O||||||||||
+P50|ma_L<0>|O|I/O|OUTPUT|||||||||
+P51|break_cycle_L|O|I/O|OUTPUT|||||||||
+P52|TIE||I/O||||||||||
+P53|ma_L<11>|O|I/O|OUTPUT|||||||||
+P54|brk_data_cont_L|O|I/O|OUTPUT|||||||||
+P55|VCC||VCCIO||||||||||
+P56|TIE||I/O||||||||||
+P57|ms_disable_L|O|I/O|OUTPUT|||||||||
+P58|TIE||I/O||||||||||
+P59|md_dir_L|O|I/O|OUTPUT|||||||||
+P60|ma_L<7>|O|I/O|OUTPUT|||||||||
+P61|TIE||I/O||||||||||
+P62|GND||GND||||||||||
+P63|TDI||TDI||||||||||
+P64|TIE||I/O||||||||||
+P65|TMS||TMS||||||||||
+P66|load_cont_L|O|I/O|OUTPUT|||||||||
+P67|TCK||TCK||||||||||
+P68|TIE||I/O||||||||||
+P69|ma_L<9>|O|I/O|OUTPUT|||||||||
+P70|int_rq_L|O|I/O|OUTPUT|||||||||
+P71|dar<10>|O|I/O|OUTPUT|||||||||
+P72|GND||GND||||||||||
+P73|VCC||VCCIO||||||||||
+P74|ts4_L|I|I/O|INPUT|||||||||
+P75|dma<0>|O|I/O|OUTPUT|||||||||
+P76|md_L<10>|I|I/O|INPUT|||||||||
+P77|ma_L<10>|O|I/O|OUTPUT|||||||||
+P78|md_L<7>|I|I/O|INPUT|||||||||
+P79|TIE||I/O||||||||||
+P80|cs1_L|O|I/O|OUTPUT|||||||||
+P81|data_L<10>|I/O|I/O|BIDIR|||||||||
+P82|TIE||I/O||||||||||
+P83|data_L<8>|I/O|I/O|BIDIR|||||||||
+P84|VCC||VCCINT||||||||||
+P85|TIE||I/O||||||||||
+P86|we_L|O|I/O|OUTPUT|||||||||
+P87|TIE||I/O||||||||||
+P88|overflow_L|I|I/O|INPUT|||||||||
+P89|GND||GND||||||||||
+P90|GND||GND||||||||||
+P91|cs0_L|O|I/O|OUTPUT|||||||||
+P92|TIE||I/O||||||||||
+P93|TIE||I/O||||||||||
+P94|dar<7>|O|I/O|OUTPUT|||||||||
+P95|TIE||I/O||||||||||
+P96|TIE||I/O||||||||||
+P97|ma_L<2>|O|I/O|OUTPUT|||||||||
+P98|TIE||I/O||||||||||
+P99|GND||GND||||||||||
+P100|data_L<7>|I/O|I/O|BIDIR|||||||||
+P101|TIE||I/O||||||||||
+P102|data_L<6>|I/O|I/O|BIDIR|||||||||
+P103|md_L<0>|I|I/O|INPUT|||||||||
+P104|data_L<9>|I/O|I/O|BIDIR|||||||||
+P105|TIE||I/O||||||||||
+P106|data_L<0>|I/O|I/O|BIDIR|||||||||
+P107|initialize|I|I/O|INPUT|||||||||
+P108|GND||GND||||||||||
+P109|VCC||VCCIO||||||||||
+P110|dar<11>|O|I/O|OUTPUT|||||||||
+P111|md_L<3>|I|I/O|INPUT|||||||||
+P112|dma<11>|O|I/O|OUTPUT|||||||||
+P113|TIE||I/O||||||||||
+P114|GND||GND||||||||||
+P115|ma_L<3>|O|I/O|OUTPUT|||||||||
+P116|TIE||I/O||||||||||
+P117|TIE||I/O||||||||||
+P118|ma_L<5>|O|I/O|OUTPUT|||||||||
+P119|ma_L<6>|O|I/O|OUTPUT|||||||||
+P120|ma_L<8>|O|I/O|OUTPUT|||||||||
+P121|ema_L<0>|O|I/O|OUTPUT|||||||||
+P122|TDO||TDO||||||||||
+P123|GND||GND||||||||||
+P124|ema_L<1>|O|I/O|OUTPUT|||||||||
+P125|ema_L<2>|O|I/O|OUTPUT|||||||||
+P126|md_L<5>|I|I/O|INPUT|||||||||
+P127|VCC||VCCIO||||||||||
+P128|ma_L<4>|O|I/O|OUTPUT|||||||||
+P129|md_L<8>|I|I/O|INPUT|||||||||
+P130|TIE||I/O||||||||||
+P131|c0_L|O|I/O|OUTPUT|||||||||
+P132|md_L<2>|I|I/O|INPUT|||||||||
+P133|c1_L|O|I/O|OUTPUT|||||||||
+P134|word_L|I|I/O|INPUT|||||||||
+P135|data_L<11>|I/O|I/O|BIDIR|||||||||
+P136|md_L<6>|I|I/O|INPUT|||||||||
+P137|data_L<5>|I/O|I/O|BIDIR|||||||||
+P138|TIE||I/O||||||||||
+P139|data_L<4>|I/O|I/O|BIDIR|||||||||
+P140|pca_L|I|I/O|INPUT|||||||||
+P141|VCC||VCCINT||||||||||
+P142|data_L<3>|I/O|I/O|BIDIR|||||||||
+P143|TIE||I/O/GSR||||||||||
+P144|GND||GND||||||||||
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

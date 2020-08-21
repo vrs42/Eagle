@@ -1,0 +1,2000 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version H.38                              Xilinx Inc.
+                                  Fitter Report
+Design Name: rf08                                Date:  4-18-2014,  7:55PM
+Device Used: XC95288XL-6-TQ144
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+101/288 ( 35%) 666 /1440 ( 46%) 420/864 ( 49%)   48 /288 ( 17%) 61 /117 ( 52%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           4/18       35/54       40/90       4/ 8
+FB2           5/18       33/54       55/90       5/10
+FB3           1/18        3/54        3/90       1/ 5
+FB4           4/18       27/54       27/90       3/ 6
+FB5          16/18       27/54       87/90       5/ 8
+FB6           6/18       25/54       85/90       4/ 8
+FB7           7/18       27/54       58/90       1/ 4
+FB8           6/18       27/54       40/90       2/ 5
+FB9          10/18       27/54       22/90       6/ 9
+FB10         10/18       26/54       30/90       7/10
+FB11          7/18       10/54       15/90       4/ 7
+FB12          3/18       27/54       24/90       3/ 6
+FB13          3/18       29/54       23/90       3/ 6
+FB14         12/18       27/54       66/90       4/ 8
+FB15          4/18       35/54       52/90       4/ 9
+FB16          3/18       35/54       39/90       3/ 8
+             -----       -----       -----      -----    
+            101/288     420/864     666/1440    59/117
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Signal 'tp1' mapped onto global clock net GCK1.
+Signal 'tp4' mapped onto global clock net GCK2.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   19          19    |  I/O              :    74     109
+Output        :   47          47    |  GCK/IO           :     2       3
+Bidirectional :   12          12    |  GTS/IO           :     4       4
+GCK           :    2           2    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     80          80
+
+** Power Data **
+
+There are 101 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+*************************  Summary of Mapped Logic  ************************
+
+** 59 Outputs **
+
+Signal                                                    Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                                                      Pts   Inps          No.  Type    Use     Mode Rate State
+dar<9>                                                    13    27    FB1_5   20   I/O     O       STD  FAST RESET
+dar<4>                                                    13    32    FB1_8   22   I/O     O       STD  FAST RESET
+dma<4>                                                    8     20    FB1_12  24   I/O     O       STD  FAST RESET
+data_L<1>                                                 6     13    FB1_15  26   I/O     I/O     STD  FAST 
+dar<8>                                                    13    28    FB2_2   9    I/O     O       STD  FAST RESET
+dar<6>                                                    13    30    FB2_5   11   I/O     O       STD  FAST RESET
+dar<5>                                                    13    31    FB2_8   13   I/O     O       STD  FAST RESET
+dma<6>                                                    8     18    FB2_12  15   I/O     O       STD  FAST RESET
+dma<5>                                                    8     19    FB2_15  17   I/O     O       STD  FAST RESET
+ma_L<1>                                                   3     3     FB3_2   28   I/O     O       STD  FAST 
+dma<3>                                                    8     21    FB4_2   2    GTS/I/O O       STD  FAST RESET
+dma<1>                                                    8     23    FB4_6   4    I/O     O       STD  FAST RESET
+dma<2>                                                    8     22    FB4_12  6    GTS/I/O O       STD  FAST RESET
+dma<10>                                                   8     14    FB5_2   34   I/O     O       STD  FAST RESET
+dma<9>                                                    8     15    FB5_5   35   I/O     O       STD  FAST RESET
+dma<8>                                                    8     16    FB5_10  39   I/O     O       STD  FAST RESET
+dma<7>                                                    8     17    FB5_12  40   I/O     O       STD  FAST RESET
+skip_L                                                    4     12    FB5_15  43   I/O     O       STD  FAST 
+data_L<11>                                                15    14    FB6_2   135  I/O     I/O     STD  FAST 
+data_L<5>                                                 15    14    FB6_5   137  I/O     I/O     STD  FAST 
+data_L<4>                                                 13    14    FB6_8   139  I/O     I/O     STD  FAST 
+data_L<3>                                                 4     13    FB6_14  142  I/O     I/O     STD  FAST 
+data_L<2>                                                 6     14    FB7_3   45   I/O     I/O     STD  FAST 
+c0_L                                                      8     11    FB8_3   131  I/O     O       STD  FAST 
+c1_L                                                      2     10    FB8_8   133  I/O     O       STD  FAST 
+ma_L<0>                                                   3     3     FB9_2   50   I/O     O       STD  FAST 
+break_cycle_L                                             1     1     FB9_3   51   I/O     O       STD  FAST 
+ma_L<11>                                                  3     4     FB9_6   53   I/O     O       STD  FAST 
+brk_data_cont_L                                           1     2     FB9_8   54   I/O     O       STD  FAST 
+ms_disable_L                                              1     1     FB9_12  57   I/O     O       STD  FAST 
+md_dir_L                                                  1     2     FB9_17  59   I/O     O       STD  FAST 
+ma_L<5>                                                   3     3     FB10_3  118  I/O     O       STD  FAST 
+ma_L<6>                                                   3     3     FB10_5  119  I/O     O       STD  FAST 
+ma_L<8>                                                   3     3     FB10_6  120  I/O     O       STD  FAST 
+ema_L<0>                                                  2     3     FB10_8  121  I/O     O       STD  FAST 
+ema_L<1>                                                  2     3     FB10_10 124  I/O     O       STD  FAST 
+ema_L<2>                                                  2     3     FB10_11 125  I/O     O       STD  FAST 
+ma_L<4>                                                   3     3     FB10_14 128  I/O     O       STD  FAST 
+ma_L<7>                                                   2     3     FB11_3  60   I/O     O       STD  FAST 
+load_cont_L                                               1     1     FB11_11 66   I/O     O       STD  FAST 
+
+Signal                                                    Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                                                      Pts   Inps          No.  Type    Use     Mode Rate State
+ma_L<9>                                                   2     3     FB11_14 69   I/O     O       STD  FAST 
+int_rq_L                                                  1     1     FB11_17 70   I/O     O       STD  FAST 
+dar<11>                                                   13    25    FB12_2  110  I/O     O       STD  FAST RESET
+dma<11>                                                   8     13    FB12_5  112  I/O     O       STD  FAST RESET
+ma_L<3>                                                   3     3     FB12_10 115  I/O     O       STD  FAST 
+dar<10>                                                   13    26    FB13_2  71   I/O     O       STD  FAST RESET
+dma<0>                                                    8     24    FB13_11 75   I/O     O       STD  FAST RESET
+ma_L<10>                                                  2     3     FB13_15 77   I/O     O       STD  FAST 
+data_L<7>                                                 16    19    FB14_3  100  I/O     I/O     STD  FAST 
+data_L<6>                                                 14    14    FB14_6  102  I/O     I/O     STD  FAST 
+data_L<9>                                                 13    13    FB14_10 104  I/O     I/O     STD  FAST 
+data_L<0>                                                 6     14    FB14_14 106  I/O     I/O     STD  FAST 
+cs1_L                                                     23    32    FB15_3  80   I/O     O       STD  FAST SET
+data_L<10>                                                14    13    FB15_8  81   I/O     I/O     STD  FAST 
+data_L<8>                                                 14    14    FB15_11 83   I/O     I/O     STD  FAST 
+we_L                                                      1     2     FB15_14 86   I/O     O       STD  FAST 
+cs0_L                                                     23    32    FB16_2  91   I/O     O       STD  FAST RESET
+dar<7>                                                    13    29    FB16_6  94   I/O     O       STD  FAST RESET
+ma_L<2>                                                   3     3     FB16_11 97   I/O     O       STD  FAST 
+
+** 42 Buried Nodes **
+
+Signal                                                    Total Total Loc     Pwr  Reg Init
+Name                                                      Pts   Inps          Mode State
+dt                                                        3     4     FB4_18  STD  RESET
+idle                                                      3     4     FB5_3   STD  RESET
+dtma_L<6>                                                 3     2     FB5_4   STD  RESET
+dtma_L<5>                                                 3     2     FB5_6   STD  RESET
+dtma_L<4>                                                 3     2     FB5_7   STD  RESET
+dtma_L<3>                                                 3     2     FB5_8   STD  RESET
+dtma_L<2>                                                 3     2     FB5_9   STD  RESET
+dtma_L<1>                                                 3     2     FB5_11  STD  RESET
+dtma_L<0>                                                 3     2     FB5_13  STD  RESET
+dtema_L<0>                                                3     2     FB5_14  STD  RESET
+done                                                      5     12    FB5_16  STD  RESET
+f<0>                                                      19    14    FB5_18  STD  
+eie                                                       19    14    FB6_11  STD  
+cie                                                       19    14    FB6_16  STD  
+dtma_L<9>                                                 3     2     FB7_1   STD  RESET
+dtma_L<8>                                                 3     2     FB7_4   STD  RESET
+dtma_L<7>                                                 3     2     FB7_5   STD  RESET
+wls                                                       5     19    FB7_6   STD  RESET
+f<2>                                                      19    14    FB7_8   STD  
+f<1>                                                      19    14    FB7_12  STD  
+pie                                                       19    14    FB8_1   STD  
+wc                                                        3     5     FB8_15  STD  RESET
+writing                                                   4     18    FB8_16  STD  RESET
+per                                                       4     18    FB8_17  STD  RESET
+load_cont                                                 2     2     FB9_14  STD  RESET
+my_db                                                     3     11    FB9_15  STD  RESET
+dtema_L<1>                                                3     2     FB9_16  STD  RESET
+load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST        4     7     FB9_18  STD  
+busy/busy_CLKF__$INT                                      2     4     FB10_16 STD  
+ca                                                        3     4     FB10_17 STD  RESET
+busy                                                      7     17    FB10_18 STD  RESET
+dtma_L<11>                                                3     2     FB11_15 STD  RESET
+dtma_L<10>                                                3     2     FB11_16 STD  RESET
+dtema_L<2>                                                3     2     FB11_18 STD  RESET
+$OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229    2     3     FB14_9  STD  
+$OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228    2     3     FB14_11 STD  
+$OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227    2     3     FB14_12 STD  
+$OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226    2     3     FB14_13 STD  
+$OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225  2     3     FB14_15 STD  
+$OpTx$bmd_L<10>_$NODETRST/bmd_L<10>_$NODETRST_D2_INV$224  2     3     FB14_16 STD  
+
+Signal                                                    Total Total Loc     Pwr  Reg Init
+Name                                                      Pts   Inps          Mode State
+$OpTx$$OpTx$FX_DC$81_INV$223                              2     3     FB14_17 STD  
+data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT                3     14    FB14_18 STD  
+
+** 21 Inputs **
+
+Signal                                                    Loc     Pin  Pin     Pin     
+Name                                                              No.  Type    Use     
+protect                                                   FB1_14  25   I/O     I
+md_L<11>                                                  FB2_14  16   I/O     I
+tp3                                                       FB2_17  19   I/O     I
+tp1                                                       FB3_10  30~  GCK/I/O GCK/I
+tp4                                                       FB3_14  32~  GCK/I/O GCK/I
+md_L<9>                                                   FB4_5   3    GTS/I/O I
+md_L<4>                                                   FB4_8   5    GTS/I/O I
+md_L<6>                                                   FB6_3   136  I/O     I
+pca_L                                                     FB6_10  140  I/O     I
+md_L<1>                                                   FB7_12  48   I/O     I
+md_L<2>                                                   FB8_5   132  I/O     I
+word_L                                                    FB8_10  134  I/O     I
+md_L<5>                                                   FB10_12 126  I/O     I
+md_L<8>                                                   FB10_17 129  I/O     I
+md_L<3>                                                   FB12_3  111  I/O     I
+ts4_L                                                     FB13_8  74   I/O     I
+md_L<10>                                                  FB13_14 76   I/O     I
+md_L<7>                                                   FB13_17 78   I/O     I
+md_L<0>                                                   FB14_8  103  I/O     I
+initialize                                                FB14_15 107  I/O     I
+overflow_L                                                FB15_17 88   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               35/19
+Number of signals used by logic mapping into function block:  35
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1         (b)     
+(unused)              0       0     0   5     FB1_2         (b)     
+(unused)              0       0     0   5     FB1_3         (b)     
+(unused)              0       0   \/4   1     FB1_4         (b)     (b)
+dar<9>               13       8<-   0   0     FB1_5   20    I/O     O
+(unused)              0       0   /\4   1     FB1_6   21    I/O     (b)
+(unused)              0       0   \/4   1     FB1_7         (b)     (b)
+dar<4>               13       8<-   0   0     FB1_8   22    I/O     O
+(unused)              0       0   /\4   1     FB1_9         (b)     (b)
+(unused)              0       0     0   5     FB1_10  23    I/O     
+(unused)              0       0   \/2   3     FB1_11        (b)     (b)
+dma<4>                8       3<-   0   0     FB1_12  24    I/O     O
+(unused)              0       0   /\1   4     FB1_13        (b)     (b)
+(unused)              0       0   \/1   4     FB1_14  25    I/O     I
+data_L<1>             6       1<-   0   0     FB1_15  26    I/O     I/O
+(unused)              0       0     0   5     FB1_16        (b)     
+(unused)              0       0     0   5     FB1_17  27    I/O     
+(unused)              0       0     0   5     FB1_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: data_L<4>.PIN     13: dma<11>           25: md_L<10> 
+  2: data_L<9>.PIN     14: dma<1>            26: md_L<11> 
+  3: dar<10>           15: dma<2>            27: md_L<1> 
+  4: dar<11>           16: dma<3>            28: md_L<3> 
+  5: dar<4>            17: dma<4>            29: md_L<4> 
+  6: dar<5>            18: dma<5>            30: md_L<5> 
+  7: dar<6>            19: dma<6>            31: md_L<6> 
+  8: dar<7>            20: dma<7>            32: md_L<7> 
+  9: dar<8>            21: dma<8>            33: md_L<8> 
+ 10: dar<9>            22: dma<9>            34: md_L<9> 
+ 11: dma<0>            23: dt                35: writing 
+ 12: dma<10>           24: initialize       
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+dar<9>               .XXX.....XXXXXXXXXXXXXXXXX.XXXXXXX...... 27
+dar<4>               X.XXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXX...... 32
+dma<4>               X..........XX...XXXXXXXXXX.XXXXXXX...... 20
+data_L<1>            .............X........X.XXXXXXXXXXX..... 13
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               33/21
+Number of signals used by logic mapping into function block:  33
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/4   1     FB2_1         (b)     (b)
+dar<8>               13       8<-   0   0     FB2_2   9     I/O     O
+(unused)              0       0   /\4   1     FB2_3   10    I/O     (b)
+(unused)              0       0   \/4   1     FB2_4         (b)     (b)
+dar<6>               13       8<-   0   0     FB2_5   11    I/O     O
+(unused)              0       0   /\4   1     FB2_6   12    I/O     (b)
+(unused)              0       0   \/4   1     FB2_7         (b)     (b)
+dar<5>               13       8<-   0   0     FB2_8   13    I/O     O
+(unused)              0       0   /\4   1     FB2_9         (b)     (b)
+(unused)              0       0     0   5     FB2_10  14    I/O     
+(unused)              0       0   \/2   3     FB2_11        (b)     (b)
+dma<6>                8       3<-   0   0     FB2_12  15    I/O     O
+(unused)              0       0   /\1   4     FB2_13        (b)     (b)
+(unused)              0       0   \/2   3     FB2_14  16    I/O     I
+dma<5>                8       3<-   0   0     FB2_15  17    I/O     O
+(unused)              0       0   /\1   4     FB2_16        (b)     (b)
+(unused)              0       0     0   5     FB2_17  19    I/O     I
+(unused)              0       0     0   5     FB2_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: data_L<5>.PIN     12: dma<10>           23: dt 
+  2: data_L<6>.PIN     13: dma<11>           24: initialize 
+  3: data_L<8>.PIN     14: dma<1>            25: md_L<10> 
+  4: dar<10>           15: dma<2>            26: md_L<11> 
+  5: dar<11>           16: dma<3>            27: md_L<3> 
+  6: dar<5>            17: dma<4>            28: md_L<4> 
+  7: dar<6>            18: dma<5>            29: md_L<5> 
+  8: dar<7>            19: dma<6>            30: md_L<6> 
+  9: dar<8>            20: dma<7>            31: md_L<7> 
+ 10: dar<9>            21: dma<8>            32: md_L<8> 
+ 11: dma<0>            22: dma<9>            33: md_L<9> 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+dar<8>               ..XXX...XXXXXXXXXXXXXXXXXXXXXXXXX....... 28
+dar<6>               .X.XX.XXXXXXXXXXXXXXXXXXXXXXXXXXX....... 30
+dar<5>               X..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX....... 31
+dma<6>               .X.........XX.....XXXXXXXXXXXXXXX....... 18
+dma<5>               X..........XX....XXXXXXXXXXXXXXXX....... 19
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               3/51
+Number of signals used by logic mapping into function block:  3
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1         (b)     
+ma_L<1>               3       0     0   2     FB3_2   28    I/O     O
+(unused)              0       0     0   5     FB3_3         (b)     
+(unused)              0       0     0   5     FB3_4         (b)     
+(unused)              0       0     0   5     FB3_5         (b)     
+(unused)              0       0     0   5     FB3_6         (b)     
+(unused)              0       0     0   5     FB3_7         (b)     
+(unused)              0       0     0   5     FB3_8         (b)     
+(unused)              0       0     0   5     FB3_9         (b)     
+(unused)              0       0     0   5     FB3_10  30    GCK/I/O GCK/I
+(unused)              0       0     0   5     FB3_11        (b)     
+(unused)              0       0     0   5     FB3_12  31    I/O     
+(unused)              0       0     0   5     FB3_13        (b)     
+(unused)              0       0     0   5     FB3_14  32    GCK/I/O GCK/I
+(unused)              0       0     0   5     FB3_15  33    I/O     
+(unused)              0       0     0   5     FB3_16        (b)     
+(unused)              0       0     0   5     FB3_17        (b)     
+(unused)              0       0     0   5     FB3_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: dt                 2: dtma_L<10>         3: my_db 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+ma_L<1>              XXX..................................... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               27/27
+Number of signals used by logic mapping into function block:  27
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/2   3     FB4_1         (b)     (b)
+dma<3>                8       3<-   0   0     FB4_2   2     GTS/I/O O
+(unused)              0       0   /\1   4     FB4_3         (b)     (b)
+(unused)              0       0     0   5     FB4_4         (b)     
+(unused)              0       0   \/2   3     FB4_5   3     GTS/I/O I
+dma<1>                8       3<-   0   0     FB4_6   4     I/O     O
+(unused)              0       0   /\1   4     FB4_7         (b)     (b)
+(unused)              0       0     0   5     FB4_8   5     GTS/I/O I
+(unused)              0       0     0   5     FB4_9         (b)     
+(unused)              0       0     0   5     FB4_10        (b)     
+(unused)              0       0   \/2   3     FB4_11        (b)     (b)
+dma<2>                8       3<-   0   0     FB4_12  6     GTS/I/O O
+(unused)              0       0   /\1   4     FB4_13        (b)     (b)
+(unused)              0       0     0   5     FB4_14  7     I/O     
+(unused)              0       0     0   5     FB4_15        (b)     
+(unused)              0       0     0   5     FB4_16        (b)     
+(unused)              0       0     0   5     FB4_17        (b)     
+dt                    3       0     0   2     FB4_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: data_L<1>.PIN     10: dma<4>            19: md_L<11> 
+  2: data_L<2>.PIN     11: dma<5>            20: md_L<3> 
+  3: data_L<3>.PIN     12: dma<6>            21: md_L<4> 
+  4: ca                13: dma<7>            22: md_L<5> 
+  5: dma<10>           14: dma<8>            23: md_L<6> 
+  6: dma<11>           15: dma<9>            24: md_L<7> 
+  7: dma<1>            16: dt                25: md_L<8> 
+  8: dma<2>            17: initialize        26: md_L<9> 
+  9: dma<3>            18: md_L<10>          27: my_db 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+dma<3>               ..X.XX..XXXXXXXXXXXXXXXXXX.............. 21
+dma<1>               X...XXXXXXXXXXXXXXXXXXXXXX.............. 23
+dma<2>               .X..XX.XXXXXXXXXXXXXXXXXXX.............. 22
+dt                   ...X...........XX.........X............. 4
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB5  ***********************************
+Number of function block inputs used/remaining:               27/27
+Number of signals used by logic mapping into function block:  27
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\5   0     FB5_1         (b)     (b)
+dma<10>               8       4<- /\1   0     FB5_2   34    I/O     O
+idle                  3       2<- /\4   0     FB5_3         (b)     (b)
+dtma_L<6>             3       0   /\2   0     FB5_4         (b)     (b)
+dma<9>                8       3<-   0   0     FB5_5   35    I/O     O
+dtma_L<5>             3       1<- /\3   0     FB5_6         (b)     (b)
+dtma_L<4>             3       0   /\1   1     FB5_7         (b)     (b)
+dtma_L<3>             3       0   \/1   1     FB5_8   38    GCK/I/O (b)
+dtma_L<2>             3       1<- \/3   0     FB5_9         (b)     (b)
+dma<8>                8       3<-   0   0     FB5_10  39    I/O     O
+dtma_L<1>             3       0   \/2   0     FB5_11        (b)     (b)
+dma<7>                8       3<-   0   0     FB5_12  40    I/O     O
+dtma_L<0>             3       0   /\1   1     FB5_13        (b)     (b)
+dtema_L<0>            3       0   \/2   0     FB5_14  41    I/O     (b)
+skip_L                4       2<- \/3   0     FB5_15  43    I/O     O
+done                  5       3<- \/3   0     FB5_16        (b)     (b)
+(unused)              0       0   \/5   0     FB5_17  44    I/O     (b)
+f<0>                 19      14<-   0   0     FB5_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: data_L<7>.PIN     10: dma<9>            19: md_L<4> 
+  2: data_L<8>.PIN     11: done              20: md_L<5> 
+  3: data_L<9>.PIN     12: dt                21: md_L<6> 
+  4: data_L<10>.PIN    13: f<0>              22: md_L<7> 
+  5: busy              14: idle              23: md_L<8> 
+  6: dma<10>           15: initialize        24: md_L<9> 
+  7: dma<11>           16: md_L<10>          25: my_db 
+  8: dma<7>            17: md_L<11>          26: tp3 
+  9: dma<8>            18: md_L<3>           27: writing 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+dma<10>              ...X.XX....X..XXXXXXXXXX................ 14
+idle                 ...........X.XX.........X............... 4
+dtma_L<6>            ...................X.....X.............. 2
+dma<9>               ..X..XX..X.X..XXXXXXXXXX................ 15
+dtma_L<5>            ....................X....X.............. 2
+dtma_L<4>            .....................X...X.............. 2
+dtma_L<3>            ......................X..X.............. 2
+dtma_L<2>            .......................X.X.............. 2
+dma<8>               .X...XX.XX.X..XXXXXXXXXX................ 16
+dtma_L<1>            ...............X.........X.............. 2
+dma<7>               X....XXXXX.X..XXXXXXXXXX................ 17
+dtma_L<0>            ................X........X.............. 2
+dtema_L<0>           ............X............X.............. 2
+skip_L               ....X......X...XXXXXXXXX..X............. 12
+done                 ....X.....XX....XXXXXXX..XX............. 12
+f<0>                 .X.........XX..XXXXXXXXX.XX............. 14
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB6  ***********************************
+Number of function block inputs used/remaining:               25/29
+Number of signals used by logic mapping into function block:  25
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/5   0     FB6_1         (b)     (b)
+data_L<11>           15      10<-   0   0     FB6_2   135   I/O     I/O
+(unused)              0       0   /\5   0     FB6_3   136   I/O     I
+(unused)              0       0   \/5   0     FB6_4         (b)     (b)
+data_L<5>            15      10<-   0   0     FB6_5   137   I/O     I/O
+(unused)              0       0   /\5   0     FB6_6   138   I/O     (b)
+(unused)              0       0   \/5   0     FB6_7         (b)     (b)
+data_L<4>            13       8<-   0   0     FB6_8   139   I/O     I/O
+(unused)              0       0   /\3   2     FB6_9         (b)     (b)
+(unused)              0       0   \/5   0     FB6_10  140   I/O     I
+eie                  19      14<-   0   0     FB6_11        (b)     (b)
+(unused)              0       0   /\5   0     FB6_12        (b)     (b)
+(unused)              0       0   /\4   1     FB6_13        (b)     (b)
+data_L<3>             4       0   \/1   0     FB6_14  142   I/O     I/O
+(unused)              0       0   \/5   0     FB6_15  143   GSR/I/O (b)
+cie                  19      14<-   0   0     FB6_16        (b)     (b)
+(unused)              0       0   /\5   0     FB6_17        (b)     (b)
+(unused)              0       0   /\3   2     FB6_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: data_L<5>.PIN     10: dma<5>            18: md_L<6> 
+  2: data_L<3>.PIN     11: dt                19: md_L<7> 
+  3: cie               12: eie               20: md_L<8> 
+  4: dar<11>           13: md_L<10>          21: md_L<9> 
+  5: dar<4>            14: md_L<11>          22: per 
+  6: dar<5>            15: md_L<3>           23: pie 
+  7: dma<11>           16: md_L<4>           24: tp3 
+  8: dma<3>            17: md_L<5>           25: writing 
+  9: dma<4>           
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+data_L<11>           ...X..X...X.XXXXXXXXXX..X............... 14
+data_L<5>            ..X..X...XX.XXXXXXXXX...X............... 14
+data_L<4>            ....X...X.X.XXXXXXXXX.X.X............... 14
+eie                  .X........XXXXXXXXXXX..XX............... 14
+data_L<3>            .......X..XXXXXXXXXXX...X............... 13
+cie                  X.X.......X.XXXXXXXXX..XX............... 14
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB7  ***********************************
+Number of function block inputs used/remaining:               27/27
+Number of signals used by logic mapping into function block:  27
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+dtma_L<9>             3       0     0   2     FB7_1         (b)     (b)
+(unused)              0       0   \/1   4     FB7_2         (b)     (b)
+data_L<2>             6       1<-   0   0     FB7_3   45    I/O     I/O
+dtma_L<8>             3       0     0   2     FB7_4         (b)     (b)
+dtma_L<7>             3       0     0   2     FB7_5   46    I/O     (b)
+wls                   5       0     0   0     FB7_6         (b)     (b)
+(unused)              0       0   \/5   0     FB7_7         (b)     (b)
+f<2>                 19      14<-   0   0     FB7_8         (b)     (b)
+(unused)              0       0   /\5   0     FB7_9         (b)     (b)
+(unused)              0       0   /\4   1     FB7_10        (b)     (b)
+(unused)              0       0   \/5   0     FB7_11        (b)     (b)
+f<1>                 19      14<-   0   0     FB7_12  48    I/O     I
+(unused)              0       0   /\5   0     FB7_13        (b)     (b)
+(unused)              0       0   /\4   1     FB7_14        (b)     (b)
+(unused)              0       0     0   5     FB7_15  49    I/O     
+(unused)              0       0     0   5     FB7_16        (b)     
+(unused)              0       0     0   5     FB7_17        (b)     
+(unused)              0       0     0   5     FB7_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: $OpTx$$OpTx$FX_DC$81_INV$223                              10: dt                19: md_L<5> 
+  2: $OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225  11: f<1>              20: md_L<6> 
+  3: $OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226    12: f<2>              21: md_L<7> 
+  4: $OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227    13: initialize        22: md_L<8> 
+  5: $OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228    14: md_L<10>          23: md_L<9> 
+  6: $OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229    15: md_L<11>          24: protect 
+  7: data_L<6>.PIN                                             16: md_L<2>           25: tp3 
+  8: data_L<7>.PIN                                             17: md_L<3>           26: wls 
+  9: dma<2>                                                    18: md_L<4>           27: writing 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+dtma_L<9>            ...............X........X............... 2
+data_L<2>            ........XX...XXXXXXXXXX..XX............. 14
+dtma_L<8>            ................X.......X............... 2
+dtma_L<7>            .................X......X............... 2
+wls                  XXXXXX...X..X.X.XXXXXX.XXXX............. 19
+f<2>                 ......X..X.X.XX.XXXXXXX.X.X............. 14
+f<1>                 .......X.XX..XX.XXXXXXX.X.X............. 14
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB8  ***********************************
+Number of function block inputs used/remaining:               27/27
+Number of signals used by logic mapping into function block:  27
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+pie                  19      14<-   0   0     FB8_1         (b)     (b)
+(unused)              0       0   /\5   0     FB8_2   130   I/O     (b)
+c0_L                  8       6<- /\3   0     FB8_3   131   I/O     O
+(unused)              0       0   /\5   0     FB8_4         (b)     (b)
+(unused)              0       0   /\1   4     FB8_5   132   I/O     I
+(unused)              0       0     0   5     FB8_6         (b)     
+(unused)              0       0     0   5     FB8_7         (b)     
+c1_L                  2       0     0   3     FB8_8   133   I/O     O
+(unused)              0       0     0   5     FB8_9         (b)     
+(unused)              0       0     0   5     FB8_10  134   I/O     I
+(unused)              0       0     0   5     FB8_11        (b)     
+(unused)              0       0     0   5     FB8_12        (b)     
+(unused)              0       0     0   5     FB8_13        (b)     
+(unused)              0       0     0   5     FB8_14        (b)     
+wc                    3       0     0   2     FB8_15        (b)     (b)
+writing               4       0     0   1     FB8_16        (b)     (b)
+per                   4       0   \/1   0     FB8_17        (b)     (b)
+(unused)              0       0   \/5   0     FB8_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: $OpTx$$OpTx$FX_DC$81_INV$223                              10: dt                19: md_L<8> 
+  2: $OpTx$bmd_L<10>_$NODETRST/bmd_L<10>_$NODETRST_D2_INV$224  11: initialize        20: md_L<9> 
+  3: $OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225  12: md_L<10>          21: my_db 
+  4: $OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226    13: md_L<11>          22: per 
+  5: $OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227    14: md_L<3>           23: pie 
+  6: $OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228    15: md_L<4>           24: tp3 
+  7: $OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229    16: md_L<5>           25: wc 
+  8: data_L<4>.PIN                                             17: md_L<6>           26: word_L 
+  9: busy                                                      18: md_L<7>           27: writing 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+pie                  .......X.X.XXXXXXXXX..XX..X............. 14
+c0_L                 .........X.XXXXXXXXX......X............. 11
+c1_L                 .........X..XXXXXXXX......X............. 10
+wc                   ........X.X.........X...XX.............. 5
+writing              XX.XXXX..XXX.XXXXXXX...X..X............. 18
+per                  X.XXXXX..XX.XXXXXXX..X.X..X............. 18
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB9  ***********************************
+Number of function block inputs used/remaining:               27/27
+Number of signals used by logic mapping into function block:  27
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB9_1         (b)     
+ma_L<0>               3       0     0   2     FB9_2   50    I/O     O
+break_cycle_L         1       0     0   4     FB9_3   51    I/O     O
+(unused)              0       0     0   5     FB9_4         (b)     
+(unused)              0       0     0   5     FB9_5   52    I/O     
+ma_L<11>              3       0     0   2     FB9_6   53    I/O     O
+(unused)              0       0     0   5     FB9_7         (b)     
+brk_data_cont_L       1       0     0   4     FB9_8   54    I/O     O
+(unused)              0       0     0   5     FB9_9         (b)     
+(unused)              0       0     0   5     FB9_10        (b)     
+(unused)              0       0     0   5     FB9_11  56    I/O     
+ms_disable_L          1       0     0   4     FB9_12  57    I/O     O
+(unused)              0       0     0   5     FB9_13        (b)     
+load_cont             2       0     0   3     FB9_14  58    I/O     (b)
+my_db                 3       0     0   2     FB9_15        (b)     (b)
+dtema_L<1>            3       0     0   2     FB9_16        (b)     (b)
+md_dir_L              1       0     0   4     FB9_17  59    I/O     O
+load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST
+                      4       0     0   1     FB9_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: data_L<0>.PIN     10: done              19: per 
+  2: data_L<4>.PIN     11: dt                20: pie 
+  3: data_L<5>.PIN     12: dtma_L<0>         21: tp1 
+  4: data_L<6>.PIN     13: dtma_L<11>        22: tp3 
+  5: data_L<1>.PIN     14: eie               23: tp4 
+  6: data_L<2>.PIN     15: f<1>              24: wc 
+  7: data_L<3>.PIN     16: idle              25: wls 
+  8: busy              17: my_db             26: word_L 
+  9: cie               18: pca_L             27: writing 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+ma_L<0>              ..........X.X...X....................... 3
+break_cycle_L        ................X....................... 1
+ma_L<11>             ..........XX....X......X................ 4
+brk_data_cont_L      ..........X.....X....................... 2
+ms_disable_L         ................X....................... 1
+load_cont            ................X...X................... 2
+my_db                XXXXXXXX.......X......X..X.............. 11
+dtema_L<1>           ..............X......X.................. 2
+md_dir_L             ..........X...............X............. 2
+load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST 
+                     ........XX...X...XXX....X............... 7
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB10 ***********************************
+Number of function block inputs used/remaining:               26/28
+Number of signals used by logic mapping into function block:  26
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\1   4     FB10_1        (b)     (b)
+(unused)              0       0     0   5     FB10_2  117   I/O     
+ma_L<5>               3       0     0   2     FB10_3  118   I/O     O
+(unused)              0       0     0   5     FB10_4        (b)     
+ma_L<6>               3       0     0   2     FB10_5  119   I/O     O
+ma_L<8>               3       0     0   2     FB10_6  120   I/O     O
+(unused)              0       0     0   5     FB10_7        (b)     
+ema_L<0>              2       0     0   3     FB10_8  121   I/O     O
+(unused)              0       0     0   5     FB10_9        (b)     
+ema_L<1>              2       0     0   3     FB10_10 124   I/O     O
+ema_L<2>              2       0     0   3     FB10_11 125   I/O     O
+(unused)              0       0     0   5     FB10_12 126   I/O     I
+(unused)              0       0     0   5     FB10_13       (b)     
+ma_L<4>               3       0     0   2     FB10_14 128   I/O     O
+(unused)              0       0     0   5     FB10_15       (b)     
+busy/busy_CLKF__$INT
+                      2       0     0   3     FB10_16       (b)     (b)
+ca                    3       0   \/1   1     FB10_17 129   I/O     I
+busy                  7       2<-   0   0     FB10_18       (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: busy                  10: dtma_L<6>         19: md_L<8> 
+  2: busy/busy_CLKF__$INT  11: dtma_L<7>         20: md_L<9> 
+  3: ca                    12: initialize        21: my_db 
+  4: dt                    13: md_L<10>          22: overflow_L 
+  5: dtema_L<0>            14: md_L<3>           23: per 
+  6: dtema_L<1>            15: md_L<4>           24: wc 
+  7: dtema_L<2>            16: md_L<5>           25: wls 
+  8: dtma_L<3>             17: md_L<6>           26: writing 
+  9: dtma_L<5>             18: md_L<7>          
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+ma_L<5>              ...X.....X..........X................... 3
+ma_L<6>              ...X....X...........X................... 3
+ma_L<8>              ...X...X............X................... 3
+ema_L<0>             ...X..X.............X................... 3
+ema_L<1>             ...X.X..............X................... 3
+ema_L<2>             ...XX...............X................... 3
+ma_L<4>              ...X......X.........X................... 3
+busy/busy_CLKF__$INT 
+                     .....................XXXX............... 4
+ca                   ..X........X........X..X................ 4
+busy                 XX.X.......XXXXXXXXX.XXXXX.............. 17
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB11 ***********************************
+Number of function block inputs used/remaining:               10/44
+Number of signals used by logic mapping into function block:  10
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB11_1        (b)     
+(unused)              0       0     0   5     FB11_2        (b)     
+ma_L<7>               2       0     0   3     FB11_3  60    I/O     O
+(unused)              0       0     0   5     FB11_4        (b)     
+(unused)              0       0     0   5     FB11_5  61    I/O     
+(unused)              0       0     0   5     FB11_6        (b)     
+(unused)              0       0     0   5     FB11_7        (b)     
+(unused)              0       0     0   5     FB11_8        (b)     
+(unused)              0       0     0   5     FB11_9        (b)     
+(unused)              0       0     0   5     FB11_10 64    I/O     
+load_cont_L           1       0     0   4     FB11_11 66    I/O     O
+(unused)              0       0     0   5     FB11_12 68    I/O     
+(unused)              0       0     0   5     FB11_13       (b)     
+ma_L<9>               2       0     0   3     FB11_14 69    I/O     O
+dtma_L<11>            3       0     0   2     FB11_15       (b)     (b)
+dtma_L<10>            3       0     0   2     FB11_16       (b)     (b)
+int_rq_L              1       0     0   4     FB11_17 70    I/O     O
+dtema_L<2>            3       0     0   2     FB11_18       (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: dt                 5: load_cont                                            8: md_L<1> 
+  2: dtma_L<2>          6: load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST   9: my_db 
+  3: dtma_L<4>          7: md_L<0>                                             10: tp3 
+  4: f<2>             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+ma_L<7>              X.X.....X............................... 3
+load_cont_L          ....X................................... 1
+ma_L<9>              XX......X............................... 3
+dtma_L<11>           ......X..X.............................. 2
+dtma_L<10>           .......X.X.............................. 2
+int_rq_L             .....X.................................. 1
+dtema_L<2>           ...X.....X.............................. 2
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB12 ***********************************
+Number of function block inputs used/remaining:               27/27
+Number of signals used by logic mapping into function block:  27
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/4   1     FB12_1        (b)     (b)
+dar<11>              13       8<-   0   0     FB12_2  110   I/O     O
+(unused)              0       0   /\4   1     FB12_3  111   I/O     I
+(unused)              0       0   \/2   3     FB12_4        (b)     (b)
+dma<11>               8       3<-   0   0     FB12_5  112   I/O     O
+(unused)              0       0   /\1   4     FB12_6        (b)     (b)
+(unused)              0       0     0   5     FB12_7        (b)     
+(unused)              0       0     0   5     FB12_8  113   I/O     
+(unused)              0       0     0   5     FB12_9        (b)     
+ma_L<3>               3       0     0   2     FB12_10 115   I/O     O
+(unused)              0       0     0   5     FB12_11       (b)     
+(unused)              0       0     0   5     FB12_12 116   I/O     
+(unused)              0       0     0   5     FB12_13       (b)     
+(unused)              0       0     0   5     FB12_14       (b)     
+(unused)              0       0     0   5     FB12_15       (b)     
+(unused)              0       0     0   5     FB12_16       (b)     
+(unused)              0       0     0   5     FB12_17       (b)     
+(unused)              0       0     0   5     FB12_18       (b)     
+
+Signals Used by Logic in Function Block
+  1: data_L<11>.PIN    10: dma<5>            19: md_L<11> 
+  2: dar<11>           11: dma<6>            20: md_L<3> 
+  3: dma<0>            12: dma<7>            21: md_L<4> 
+  4: dma<10>           13: dma<8>            22: md_L<5> 
+  5: dma<11>           14: dma<9>            23: md_L<6> 
+  6: dma<1>            15: dt                24: md_L<7> 
+  7: dma<2>            16: dtma_L<8>         25: md_L<8> 
+  8: dma<3>            17: initialize        26: md_L<9> 
+  9: dma<4>            18: md_L<10>          27: my_db 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+dar<11>              XXXXXXXXXXXXXXX.XXXXXXXXXX.............. 25
+dma<11>              X...X.........X.XXXXXXXXXX.............. 13
+ma_L<3>              ..............XX..........X............. 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB13 ***********************************
+Number of function block inputs used/remaining:               29/25
+Number of signals used by logic mapping into function block:  29
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/4   1     FB13_1        (b)     (b)
+dar<10>              13       8<-   0   0     FB13_2  71    I/O     O
+(unused)              0       0   /\4   1     FB13_3        (b)     (b)
+(unused)              0       0     0   5     FB13_4        (b)     
+(unused)              0       0     0   5     FB13_5        (b)     
+(unused)              0       0     0   5     FB13_6        (b)     
+(unused)              0       0     0   5     FB13_7        (b)     
+(unused)              0       0     0   5     FB13_8  74    I/O     I
+(unused)              0       0     0   5     FB13_9        (b)     
+(unused)              0       0   \/2   3     FB13_10       (b)     (b)
+dma<0>                8       3<-   0   0     FB13_11 75    I/O     O
+(unused)              0       0   /\1   4     FB13_12       (b)     (b)
+(unused)              0       0     0   5     FB13_13       (b)     
+(unused)              0       0     0   5     FB13_14 76    I/O     I
+ma_L<10>              2       0     0   3     FB13_15 77    I/O     O
+(unused)              0       0     0   5     FB13_16       (b)     
+(unused)              0       0     0   5     FB13_17 78    I/O     I
+(unused)              0       0     0   5     FB13_18       (b)     
+
+Signals Used by Logic in Function Block
+  1: data_L<0>.PIN     11: dma<4>            21: md_L<11> 
+  2: data_L<10>.PIN    12: dma<5>            22: md_L<3> 
+  3: dar<10>           13: dma<6>            23: md_L<4> 
+  4: dar<11>           14: dma<7>            24: md_L<5> 
+  5: dma<0>            15: dma<8>            25: md_L<6> 
+  6: dma<10>           16: dma<9>            26: md_L<7> 
+  7: dma<11>           17: dt                27: md_L<8> 
+  8: dma<1>            18: dtma_L<1>         28: md_L<9> 
+  9: dma<2>            19: initialize        29: my_db 
+ 10: dma<3>            20: md_L<10>         
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+dar<10>              .XXXXXXXXXXXXXXXX.XXXXXXXXXX............ 26
+dma<0>               X...XXXXXXXXXXXXX.XXXXXXXXXX............ 24
+ma_L<10>             ................XX..........X........... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB14 ***********************************
+Number of function block inputs used/remaining:               27/27
+Number of signals used by logic mapping into function block:  27
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/1   4     FB14_1        (b)     (b)
+(unused)              0       0   \/5   0     FB14_2        (b)     (b)
+data_L<7>            16      11<-   0   0     FB14_3  100   I/O     I/O
+(unused)              0       0   /\5   0     FB14_4        (b)     (b)
+(unused)              0       0   \/5   0     FB14_5  101   I/O     (b)
+data_L<6>            14       9<-   0   0     FB14_6  102   I/O     I/O
+(unused)              0       0   /\4   1     FB14_7        (b)     (b)
+(unused)              0       0     0   5     FB14_8  103   I/O     I
+$OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229
+                      2       0   \/3   0     FB14_9        (b)     (b)
+data_L<9>            13       8<-   0   0     FB14_10 104   I/O     I/O
+$OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228
+                      2       2<- /\5   0     FB14_11 105   I/O     (b)
+$OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227
+                      2       0   /\2   1     FB14_12       (b)     (b)
+$OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226
+                      2       0   \/1   2     FB14_13       (b)     (b)
+data_L<0>             6       1<-   0   0     FB14_14 106   I/O     I/O
+$OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225
+                      2       0     0   3     FB14_15 107   I/O     I
+$OpTx$bmd_L<10>_$NODETRST/bmd_L<10>_$NODETRST_D2_INV$224
+                      2       0     0   3     FB14_16       (b)     (b)
+$OpTx$$OpTx$FX_DC$81_INV$223
+                      2       0     0   3     FB14_17       (b)     (b)
+data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT
+                      3       0     0   2     FB14_18       (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: busy                                        10: dt                19: md_L<5> 
+  2: dar<6>                                      11: f<1>              20: md_L<6> 
+  3: dar<7>                                      12: f<2>              21: md_L<7> 
+  4: dar<9>                                      13: idle              22: md_L<8> 
+  5: data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT  14: md_L<0>           23: md_L<9> 
+  6: dma<0>                                      15: md_L<10>          24: pca_L 
+  7: dma<6>                                      16: md_L<11>          25: ts4_L 
+  8: dma<7>                                      17: md_L<3>           26: word_L 
+  9: dma<9>                                      18: md_L<4>           27: writing 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+data_L<7>            X.X.X..X.XX.X.XXXXXXXXX.XXX............. 19
+data_L<6>            .X....X..X.X..XXXXXXXXX...X............. 14
+$OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229 
+                     .........X...........X....X............. 3
+data_L<9>            ...X....XX....XXXXXXXXX...X............. 13
+$OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228 
+                     .........X..........X.....X............. 3
+$OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227 
+                     .........X........X.......X............. 3
+$OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226 
+                     .........X.......X........X............. 3
+data_L<0>            .....X...X...XXXXXXXXXXX..X............. 14
+$OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225 
+                     .........X.....X..........X............. 3
+$OpTx$bmd_L<10>_$NODETRST/bmd_L<10>_$NODETRST_D2_INV$224 
+                     .........X....X...........X............. 3
+$OpTx$$OpTx$FX_DC$81_INV$223 
+                     .........X......X.........X............. 3
+data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT 
+                     X........X..X..XXXXXXXX.XXX............. 14
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB15 ***********************************
+Number of function block inputs used/remaining:               35/19
+Number of signals used by logic mapping into function block:  35
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/4   1     FB15_1        (b)     (b)
+(unused)              0       0   \/5   0     FB15_2  79    I/O     (b)
+cs1_L                23      18<-   0   0     FB15_3  80    I/O     O
+(unused)              0       0   /\5   0     FB15_4        (b)     (b)
+(unused)              0       0   /\4   1     FB15_5        (b)     (b)
+(unused)              0       0     0   5     FB15_6        (b)     
+(unused)              0       0   \/5   0     FB15_7        (b)     (b)
+data_L<10>           14       9<-   0   0     FB15_8  81    I/O     I/O
+(unused)              0       0   /\4   1     FB15_9        (b)     (b)
+(unused)              0       0   \/5   0     FB15_10 82    I/O     (b)
+data_L<8>            14       9<-   0   0     FB15_11 83    I/O     I/O
+(unused)              0       0   /\4   1     FB15_12 85    I/O     (b)
+(unused)              0       0     0   5     FB15_13       (b)     
+we_L                  1       0     0   4     FB15_14 86    I/O     O
+(unused)              0       0     0   5     FB15_15 87    I/O     
+(unused)              0       0     0   5     FB15_16       (b)     
+(unused)              0       0     0   5     FB15_17 88    I/O     I
+(unused)              0       0     0   5     FB15_18       (b)     
+
+Signals Used by Logic in Function Block
+  1: data_L<4>.PIN     13: dma<1>            25: md_L<10> 
+  2: dar<10>           14: dma<2>            26: md_L<11> 
+  3: dar<11>           15: dma<3>            27: md_L<3> 
+  4: dar<4>            16: dma<4>            28: md_L<4> 
+  5: dar<5>            17: dma<5>            29: md_L<5> 
+  6: dar<6>            18: dma<6>            30: md_L<6> 
+  7: dar<7>            19: dma<7>            31: md_L<7> 
+  8: dar<8>            20: dma<8>            32: md_L<8> 
+  9: dar<9>            21: dma<9>            33: md_L<9> 
+ 10: dma<0>            22: dt                34: protect 
+ 11: dma<10>           23: f<0>              35: writing 
+ 12: dma<11>           24: initialize       
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+cs1_L                XXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXX....... 32
+data_L<10>           .X........X..........X..XXXXXXXXX.X..... 13
+data_L<8>            .......X...........X.XX.XXXXXXXXX.X..... 14
+we_L                 .................................XX..... 2
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB16 ***********************************
+Number of function block inputs used/remaining:               35/19
+Number of signals used by logic mapping into function block:  35
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/5   0     FB16_1        (b)     (b)
+cs0_L                23      18<-   0   0     FB16_2  91    I/O     O
+(unused)              0       0   /\5   0     FB16_3  92    I/O     (b)
+(unused)              0       0   /\3   2     FB16_4        (b)     (b)
+(unused)              0       0   \/5   0     FB16_5  93    I/O     (b)
+dar<7>               13       8<-   0   0     FB16_6  94    I/O     O
+(unused)              0       0   /\3   2     FB16_7        (b)     (b)
+(unused)              0       0     0   5     FB16_8  95    I/O     
+(unused)              0       0     0   5     FB16_9        (b)     
+(unused)              0       0     0   5     FB16_10 96    I/O     
+ma_L<2>               3       0     0   2     FB16_11 97    I/O     O
+(unused)              0       0     0   5     FB16_12 98    I/O     
+(unused)              0       0     0   5     FB16_13       (b)     
+(unused)              0       0     0   5     FB16_14       (b)     
+(unused)              0       0     0   5     FB16_15       (b)     
+(unused)              0       0     0   5     FB16_16       (b)     
+(unused)              0       0     0   5     FB16_17       (b)     
+(unused)              0       0   \/5   0     FB16_18       (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: data_L<4>.PIN     13: dma<11>           25: initialize 
+  2: data_L<7>.PIN     14: dma<1>            26: md_L<10> 
+  3: dar<10>           15: dma<2>            27: md_L<11> 
+  4: dar<11>           16: dma<3>            28: md_L<3> 
+  5: dar<4>            17: dma<4>            29: md_L<4> 
+  6: dar<5>            18: dma<5>            30: md_L<5> 
+  7: dar<6>            19: dma<6>            31: md_L<6> 
+  8: dar<7>            20: dma<7>            32: md_L<7> 
+  9: dar<8>            21: dma<8>            33: md_L<8> 
+ 10: dar<9>            22: dma<9>            34: md_L<9> 
+ 11: dma<0>            23: dt                35: my_db 
+ 12: dma<10>           24: dtma_L<9>        
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+cs0_L                X.XXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXX...... 32
+dar<7>               .XXX...XXXXXXXXXXXXXXXX.XXXXXXXXXX...... 29
+ma_L<2>              ......................XX..........X..... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+assign $OpTx$$OpTx$FX_DC$81_INV$223 = ((!dt && !md_L[3])
+	|| (!writing && !md_L[3]));
+
+
+assign $OpTx$bmd_L[4]_$NODETRST/bmd_L[4]_$NODETRST_D2_INV$226 = ((!dt && !md_L[4])
+	|| (!writing && !md_L[4]));
+
+
+assign $OpTx$bmd_L[5]_$NODETRST/bmd_L[5]_$NODETRST_D2_INV$227 = ((!dt && !md_L[5])
+	|| (!writing && !md_L[5]));
+
+
+assign $OpTx$bmd_L[7]_$NODETRST/bmd_L[7]_$NODETRST_D2_INV$228 = $OpTx$bmd_L[5]_$NODETRST/bmd_L[5]_$NODETRST_D2_INV$227.EXP;
+
+
+assign $OpTx$bmd_L[8]_$NODETRST/bmd_L[8]_$NODETRST_D2_INV$229 = ((!dt && !md_L[8])
+	|| (!writing && !md_L[8]));
+
+
+assign $OpTx$bmd_L[10]_$NODETRST/bmd_L[10]_$NODETRST_D2_INV$224 = ((!dt && !md_L[10])
+	|| (!writing && !md_L[10]));
+
+
+assign $OpTx$bmd_L[11]_$NODETRST/bmd_L[11]_$NODETRST_D2_INV$225 = ((!dt && !md_L[11])
+	|| (!writing && !md_L[11]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+assign break_cycle_L_I = 1'b0;
+assign break_cycle_L = break_cycle_L_OE ? break_cycle_L_I : 1'bZ;
+assign break_cycle_L_OE = my_db;
+
+
+assign brk_data_cont_L = !((!dt && my_db));
+
+FDCPE FDCPE_busy (busy,busy_D,!busy/busy_CLKF__$INT,1'b0,1'b0);
+assign busy_D = ((EXP66_.EXP)
+	|| (ca.EXP)
+	|| (!initialize && busy && !wc && !per && !wls)
+	|| (!initialize && busy && !per && !wls && overflow_L)
+	|| (!initialize && !dt && !md_L[10] && md_L[8] && md_L[7] && 
+	md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !writing && !md_L[10] && md_L[8] && 
+	md_L[7] && md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign busy/busy_CLKF__$INT = ((!wc && !per && !wls)
+	|| (!per && !wls && overflow_L));
+
+
+assign c0_L = !(((EXP63_.EXP)
+	|| (!dt && md_L[11] && !md_L[10] && !md_L[9])
+	|| (!writing && md_L[11] && !md_L[10] && !md_L[9])));
+
+
+assign c1_L = ((!dt && !md_L[11] && !md_L[9] && md_L[8] && md_L[7] && 
+	!md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (!writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+FDCPE FDCPE_ca (ca,ca_D,my_db,1'b0,1'b0);
+assign ca_D = ((wc && my_db)
+	|| (!initialize && ca && !my_db));
+
+
+assign cie = ((EXP52_.EXP)
+	|| (EXP53_.EXP)
+	|| (cie && md_L[11])
+	|| (cie && md_L[8])
+	|| (cie && md_L[4])
+	|| (cie && md_L[3])
+	|| (!data_L[5].PIN && !tp3 && cie));
+
+FDCPE FDCPE_cs0_L (cs0_L,cs0_L_D,dt,1'b0,1'b0);
+assign cs0_L_D = ((EXP88_.EXP)
+	|| (EXP89_.EXP)
+	|| (!dma[11] && dar[4] && dt)
+	|| (!dma[10] && dar[4] && dt)
+	|| (!dma[8] && dar[4] && dt)
+	|| (dar[4] && !dma[9] && dt));
+
+FDCPE FDCPE_cs1_L (cs1_L,cs1_L_D,dt,1'b0,1'b0);
+assign cs1_L_D = ((EXP81_.EXP)
+	|| (EXP82_.EXP)
+	|| (!dma[11] && dar[4] && dt)
+	|| (!dma[10] && dar[4] && dt)
+	|| (!dma[8] && dar[4] && dt)
+	|| (dar[4] && !dma[9] && dt));
+
+FTCPE FTCPE_dar4 (dar[4],dar_T[4],dt,1'b0,1'b0);
+assign dar_T[4] = ((EXP20_.EXP)
+	|| (EXP21_.EXP)
+	|| (initialize && dar[4] && !dt)
+	|| (dar[4] && !dt && !md_L[9])
+	|| (!initialize && !data_L[4].PIN && !dar[4] && !dt && 
+	!md_L[11] && !md_L[10] && md_L[9] && md_L[8] && md_L[7] && 
+	!md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[11] && dar[10] && dar[8] && dar[6] && dma[10] && 
+	dma[0] && dma[8] && dma[6] && dma[4] && dma[2] && dar[11] && 
+	dar[9] && dar[7] && dar[5] && dma[1] && dma[9] && dma[7] && 
+	dma[5] && dma[3] && dt));
+
+FTCPE FTCPE_dar5 (dar[5],dar_T[5],dt,1'b0,1'b0);
+assign dar_T[5] = ((EXP29_.EXP)
+	|| (EXP30_.EXP)
+	|| (initialize && dar[5] && !dt)
+	|| (dar[5] && !dt && !md_L[9])
+	|| (!initialize && !data_L[5].PIN && !dar[5] && !dt && 
+	!md_L[11] && !md_L[10] && md_L[9] && md_L[8] && md_L[7] && 
+	!md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[11] && dar[10] && dar[8] && dar[6] && dma[10] && 
+	dma[0] && dma[8] && dma[6] && dma[4] && dma[2] && dar[11] && 
+	dar[9] && dar[7] && dma[1] && dma[9] && dma[7] && dma[5] && 
+	dma[3] && dt));
+
+FTCPE FTCPE_dar6 (dar[6],dar_T[6],dt,1'b0,1'b0);
+assign dar_T[6] = ((EXP27_.EXP)
+	|| (EXP28_.EXP)
+	|| (initialize && dar[6] && !dt)
+	|| (dar[6] && !dt && !md_L[9])
+	|| (!initialize && !data_L[6].PIN && !dar[6] && !dt && 
+	!md_L[11] && !md_L[10] && md_L[9] && md_L[8] && md_L[7] && 
+	!md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[11] && dar[10] && dar[8] && dma[10] && dma[0] && 
+	dma[8] && dma[6] && dma[4] && dma[2] && dar[11] && dar[9] && 
+	dar[7] && dma[1] && dma[9] && dma[7] && dma[5] && dma[3] && 
+	dt));
+
+FTCPE FTCPE_dar7 (dar[7],dar_T[7],dt,1'b0,1'b0);
+assign dar_T[7] = ((EXP91_.EXP)
+	|| (EXP92_.EXP)
+	|| (initialize && dar[7] && !dt)
+	|| (dar[7] && !dt && !md_L[9])
+	|| (!initialize && !data_L[7].PIN && !dar[7] && !dt && 
+	!md_L[11] && !md_L[10] && md_L[9] && md_L[8] && md_L[7] && 
+	!md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[11] && dar[10] && dar[8] && dma[10] && dma[0] && 
+	dma[8] && dma[6] && dma[4] && dma[2] && dar[11] && dar[9] && 
+	dma[1] && dma[9] && dma[7] && dma[5] && dma[3] && dt));
+
+FTCPE FTCPE_dar8 (dar[8],dar_T[8],dt,1'b0,1'b0);
+assign dar_T[8] = ((EXP25_.EXP)
+	|| (EXP26_.EXP)
+	|| (initialize && dar[8] && !dt)
+	|| (dar[8] && !dt && !md_L[9])
+	|| (!initialize && !data_L[8].PIN && !dar[8] && !dt && 
+	!md_L[11] && !md_L[10] && md_L[9] && md_L[8] && md_L[7] && 
+	!md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[11] && dar[10] && dma[10] && dma[0] && dma[8] && 
+	dma[6] && dma[4] && dma[2] && dar[11] && dar[9] && dma[1] && 
+	dma[9] && dma[7] && dma[5] && dma[3] && dt));
+
+FTCPE FTCPE_dar9 (dar[9],dar_T[9],dt,1'b0,1'b0);
+assign dar_T[9] = ((EXP18_.EXP)
+	|| (EXP19_.EXP)
+	|| (initialize && dar[9] && !dt)
+	|| (dar[9] && !dt && !md_L[9])
+	|| (!initialize && !data_L[9].PIN && !dar[9] && !dt && 
+	!md_L[11] && !md_L[10] && md_L[9] && md_L[8] && md_L[7] && 
+	!md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[11] && dar[10] && dma[10] && dma[0] && dma[8] && 
+	dma[6] && dma[4] && dma[2] && dar[11] && dma[1] && dma[9] && 
+	dma[7] && dma[5] && dma[3] && dt));
+
+FTCPE FTCPE_dar10 (dar[10],dar_T[10],dt,1'b0,1'b0);
+assign dar_T[10] = ((EXP71_.EXP)
+	|| (EXP72_.EXP)
+	|| (initialize && dar[10] && !dt)
+	|| (dar[10] && !dt && !md_L[9])
+	|| (!initialize && !data_L[10].PIN && !dar[10] && !dt && 
+	!md_L[11] && !md_L[10] && md_L[9] && md_L[8] && md_L[7] && 
+	!md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[11] && dma[10] && dma[0] && dma[8] && dma[6] && 
+	dma[4] && dma[2] && dar[11] && dma[1] && dma[9] && dma[7] && 
+	dma[5] && dma[3] && dt));
+
+FTCPE FTCPE_dar11 (dar[11],dar_T[11],dt,1'b0,1'b0);
+assign dar_T[11] = ((EXP67_.EXP)
+	|| (EXP68_.EXP)
+	|| (initialize && dar[11] && !dt)
+	|| (dar[11] && !dt && !md_L[9])
+	|| (!initialize && !data_L[11].PIN && !dar[11] && !dt && 
+	!md_L[11] && !md_L[10] && md_L[9] && md_L[8] && md_L[7] && 
+	!md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[11] && dma[10] && dma[0] && dma[8] && dma[6] && 
+	dma[4] && dma[2] && dma[1] && dma[9] && dma[7] && dma[5] && 
+	dma[3] && dt));
+
+
+assign data_L_I[0] = !(((
+	$OpTx$bmd_L[4]_$NODETRST/bmd_L[4]_$NODETRST_D2_INV$226.EXP)
+	|| (!dt && !md_L[0])
+	|| (dma[0] && !dt && !md_L[9] && md_L[8] && !md_L[7] && 
+	md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[0] && !writing && !md_L[9] && md_L[8] && !md_L[7] && 
+	md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (!dt && md_L[11] && !md_L[10] && !md_L[9] && !md_L[8] && 
+	md_L[7] && md_L[6] && md_L[5] && !md_L[4] && !md_L[3] && !pca_L)));
+assign data_L[0] = data_L_OE[0] ? data_L_I[0] : 1'bZ;
+assign data_L_OE[0] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[1] = !(((EXP24_.EXP)
+	|| (!dt && !md_L[1])
+	|| (dma[1] && !dt && !md_L[9] && md_L[8] && !md_L[7] && 
+	md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[1] && !writing && !md_L[9] && md_L[8] && !md_L[7] && 
+	md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (!dt && md_L[11] && !md_L[10] && !md_L[9] && !md_L[8] && 
+	md_L[7] && md_L[6] && md_L[5] && !md_L[4] && !md_L[3])));
+assign data_L[1] = data_L_OE[1] ? data_L_I[1] : 1'bZ;
+assign data_L_OE[1] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[2] = !(((EXP55_.EXP)
+	|| (!dt && !md_L[2])
+	|| (dma[2] && !dt && !md_L[9] && md_L[8] && !md_L[7] && 
+	md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[2] && !writing && !md_L[9] && md_L[8] && !md_L[7] && 
+	md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (!dt && wls && md_L[11] && !md_L[10] && !md_L[9] && 
+	!md_L[8] && md_L[7] && md_L[6] && md_L[5] && !md_L[4] && 
+	!md_L[3])));
+assign data_L[2] = data_L_OE[2] ? data_L_I[2] : 1'bZ;
+assign data_L_OE[2] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[3] = !(((!dt && !md_L[3])
+	|| (dma[3] && !writing && !md_L[9] && md_L[8] && !md_L[7] && 
+	md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (!writing && eie && md_L[11] && !md_L[10] && !md_L[9] && 
+	!md_L[8] && md_L[7] && md_L[6] && md_L[5] && !md_L[4] && 
+	!md_L[3])));
+assign data_L[3] = data_L_OE[3] ? data_L_I[3] : 1'bZ;
+assign data_L_OE[3] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[4] = !(((EXP47_.EXP)
+	|| (EXP48_.EXP)
+	|| (dar[4] && writing)
+	|| (dar[4] && md_L[11])
+	|| (dar[4] && md_L[9])
+	|| (dar[4] && !md_L[7])));
+assign data_L[4] = data_L_OE[4] ? data_L_I[4] : 1'bZ;
+assign data_L_OE[4] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[5] = !(((EXP45_.EXP)
+	|| (EXP46_.EXP)
+	|| (dar[5] && md_L[11])
+	|| (dar[5] && md_L[9])
+	|| (dar[5] && !md_L[8])
+	|| (dar[5] && md_L[4])));
+assign data_L[5] = data_L_OE[5] ? data_L_I[5] : 1'bZ;
+assign data_L_OE[5] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[6] = ((EXP78_.EXP)
+	|| (EXP79_.EXP)
+	|| (!dar[6] && dt && !md_L[6])
+	|| (!dar[6] && md_L[9] && md_L[6])
+	|| (!dar[6] && md_L[10] && !md_L[8] && md_L[6])
+	|| (dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+assign data_L[6] = data_L_OE[6] ? data_L_I[6] : 1'bZ;
+assign data_L_OE[6] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[7] = !(((EXP76_.EXP)
+	|| (EXP77_.EXP)
+	|| (dar[7] && !md_L[8])
+	|| (dar[7] && !md_L[7])
+	|| (dar[7] && !md_L[5])
+	|| (!dt && f[1] && md_L[11] && !md_L[10] && !md_L[9] && 
+	!md_L[8] && md_L[6] && md_L[5] && !md_L[4] && !md_L[3])));
+assign data_L[7] = data_L_OE[7] ? data_L_I[7] : 1'bZ;
+assign data_L_OE[7] = !data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT;
+
+
+assign data_L_I[8] = !(((EXP86_.EXP)
+	|| (EXP87_.EXP)
+	|| (dar[8] && !md_L[8])
+	|| (dar[8] && !md_L[7])
+	|| (dar[8] && !md_L[5])
+	|| (dma[8] && !dt && !md_L[9] && !md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])));
+assign data_L[8] = data_L_OE[8] ? data_L_I[8] : 1'bZ;
+assign data_L_OE[8] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[9] = ((
+	$OpTx$bmd_L[8]_$NODETRST/bmd_L[8]_$NODETRST_D2_INV$229.EXP)
+	|| (
+	$OpTx$bmd_L[7]_$NODETRST/bmd_L[7]_$NODETRST_D2_INV$228.EXP)
+	|| (!dar[9] && !dma[9] && dt && !md_L[7])
+	|| (!dar[9] && dt && !md_L[11] && md_L[7])
+	|| (!dar[9] && dt && md_L[10] && md_L[7])
+	|| (!dar[9] && dt && !md_L[8] && !md_L[7]));
+assign data_L[9] = data_L_OE[9] ? data_L_I[9] : 1'bZ;
+assign data_L_OE[9] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[10] = !(((EXP84_.EXP)
+	|| (EXP85_.EXP)
+	|| (dar[10] && !md_L[8])
+	|| (dar[10] && !md_L[7])
+	|| (dar[10] && !md_L[5])
+	|| (!dt && !md_L[10])));
+assign data_L[10] = data_L_OE[10] ? data_L_I[10] : 1'bZ;
+assign data_L_OE[10] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_I[11] = !(((EXP43_.EXP)
+	|| (EXP44_.EXP)
+	|| (dar[11] && !md_L[8])
+	|| (dar[11] && !md_L[7])
+	|| (dar[11] && !md_L[5])
+	|| (!dt && per && !md_L[10] && !md_L[9] && !md_L[8] && 
+	md_L[7] && md_L[6] && md_L[5] && !md_L[4] && !md_L[3])));
+assign data_L[11] = data_L_OE[11] ? data_L_I[11] : 1'bZ;
+assign data_L_OE[11] = !((dt && !writing && !md_L[11] && !md_L[9] && md_L[8] && 
+	md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+
+assign data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT = ((dt && !writing && ts4_L && !md_L[11] && !md_L[9] && 
+	md_L[8] && md_L[7] && !md_L[6] && md_L[5] && !md_L[4] && 
+	!md_L[3])
+	|| (dt && !writing && !busy && idle && !md_L[11] && 
+	!md_L[9] && md_L[8] && md_L[7] && !md_L[6] && md_L[5] && 
+	!md_L[4] && !md_L[3])
+	|| (dt && !writing && idle && word_L && !md_L[11] && 
+	!md_L[9] && md_L[8] && md_L[7] && !md_L[6] && md_L[5] && 
+	!md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma0 (dma[0],dma_T[0],dt,1'b0,1'b0);
+assign dma_T[0] = ((EXP73_.EXP)
+	|| (EXP74_.EXP)
+	|| (initialize && dma[0] && !dt)
+	|| (!initialize && !data_L[0].PIN && !dma[0] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[0].PIN && !dma[0] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (dma[11] && dma[10] && dma[8] && dma[6] && dma[4] && 
+	dma[2] && dma[1] && dma[9] && dma[7] && dma[5] && dma[3] && 
+	dt));
+
+FTCPE FTCPE_dma1 (dma[1],dma_T[1],dt,1'b0,1'b0);
+assign dma_T[1] = ((EXP37_.EXP)
+	|| (EXP38_.EXP)
+	|| (initialize && dma[1] && !dt)
+	|| (dma[11] && dma[10] && dma[8] && dma[6] && dma[4] && 
+	dma[2] && dma[9] && dma[7] && dma[5] && dma[3] && dt)
+	|| (!initialize && !data_L[1].PIN && !dma[1] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[1].PIN && !dma[1] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma2 (dma[2],dma_T[2],dt,1'b0,1'b0);
+assign dma_T[2] = ((EXP39_.EXP)
+	|| (EXP40_.EXP)
+	|| (initialize && dma[2] && !dt)
+	|| (dma[11] && dma[10] && dma[8] && dma[6] && dma[4] && 
+	dma[9] && dma[7] && dma[5] && dma[3] && dt)
+	|| (!initialize && !data_L[2].PIN && !dma[2] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[2].PIN && !dma[2] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma3 (dma[3],dma_T[3],dt,1'b0,1'b0);
+assign dma_T[3] = ((EXP35_.EXP)
+	|| (EXP36_.EXP)
+	|| (initialize && dma[3] && !dt)
+	|| (dma[11] && dma[10] && dma[8] && dma[6] && dma[4] && 
+	dma[9] && dma[7] && dma[5] && dt)
+	|| (!initialize && !data_L[3].PIN && !dma[3] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[3].PIN && !dma[3] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma4 (dma[4],dma_T[4],dt,1'b0,1'b0);
+assign dma_T[4] = ((EXP22_.EXP)
+	|| (EXP23_.EXP)
+	|| (initialize && dma[4] && !dt)
+	|| (dma[11] && dma[10] && dma[8] && dma[6] && dma[9] && 
+	dma[7] && dma[5] && dt)
+	|| (!initialize && !data_L[4].PIN && !dma[4] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[4].PIN && !dma[4] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma5 (dma[5],dma_T[5],dt,1'b0,1'b0);
+assign dma_T[5] = ((EXP33_.EXP)
+	|| (EXP34_.EXP)
+	|| (initialize && dma[5] && !dt)
+	|| (dma[11] && dma[10] && dma[8] && dma[6] && dma[9] && 
+	dma[7] && dt)
+	|| (!initialize && !data_L[5].PIN && !dma[5] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[5].PIN && !dma[5] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma6 (dma[6],dma_T[6],dt,1'b0,1'b0);
+assign dma_T[6] = ((EXP31_.EXP)
+	|| (EXP32_.EXP)
+	|| (initialize && dma[6] && !dt)
+	|| (dma[11] && dma[10] && dma[8] && dma[9] && dma[7] && 
+	dt)
+	|| (!initialize && !data_L[6].PIN && !dma[6] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[6].PIN && !dma[6] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma7 (dma[7],dma_T[7],dt,1'b0,1'b0);
+assign dma_T[7] = ((dtma_L[1].EXP)
+	|| (dtma_L[0].EXP)
+	|| (initialize && dma[7] && !dt)
+	|| (dma[11] && dma[10] && dma[8] && dma[9] && dt)
+	|| (!initialize && !data_L[7].PIN && !dma[7] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[7].PIN && !dma[7] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma8 (dma[8],dma_T[8],dt,1'b0,1'b0);
+assign dma_T[8] = ((dtma_L[2].EXP)
+	|| (initialize && dma[8] && !dt)
+	|| (dma[11] && dma[10] && dma[9] && dt)
+	|| (!initialize && !data_L[8].PIN && !dma[8] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[8].PIN && !dma[8] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma9 (dma[9],dma_T[9],dt,1'b0,1'b0);
+assign dma_T[9] = ((dtma_L[5].EXP)
+	|| (initialize && dma[9] && !dt)
+	|| (dma[11] && dma[10] && dt)
+	|| (!initialize && !data_L[9].PIN && !dma[9] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[9].PIN && !dma[9] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma10 (dma[10],dma_T[10],dt,1'b0,1'b0);
+assign dma_T[10] = ((idle.EXP)
+	|| (dma[11] && dt)
+	|| (!initialize && !data_L[10].PIN && !dma[10] && !dt && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[10].PIN && !dma[10] && !dt && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FTCPE FTCPE_dma11 (dma[11],dma_T[11],dt,1'b0,1'b0);
+assign dma_T[11] = ((dt)
+	|| (EXP69_.EXP)
+	|| (EXP70_.EXP)
+	|| (initialize && dma[11])
+	|| (!initialize && !data_L[11].PIN && !dma[11] && 
+	md_L[11] && !md_L[10] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3])
+	|| (!initialize && !data_L[11].PIN && !dma[11] && 
+	md_L[11] && !md_L[9] && md_L[8] && md_L[7] && md_L[6] && 
+	md_L[5] && !md_L[4] && !md_L[3]));
+
+FDCPE FDCPE_done (done,done_D,!busy,1'b0,1'b0);
+assign done_D = ((skip_L_OBUF.EXP)
+	|| (tp3 && !dt && done && !md_L[11] && md_L[8] && 
+	md_L[7] && md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+
+FDCPE FDCPE_dt (dt,dt_D,my_db,1'b0,1'b0);
+assign dt_D = ((ca && my_db)
+	|| (!initialize && dt && !my_db));
+
+FDCPE FDCPE_dtema_L0 (dtema_L[0],!f[0],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtema_L1 (dtema_L[1],!f[1],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtema_L2 (dtema_L[2],!f[2],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L0 (dtma_L[0],md_L[11],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L1 (dtma_L[1],md_L[10],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L2 (dtma_L[2],dtma_L[3].EXP,tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L3 (dtma_L[3],md_L[8],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L4 (dtma_L[4],md_L[7],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L5 (dtma_L[5],dtma_L[4].EXP,tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L6 (dtma_L[6],md_L[5],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L7 (dtma_L[7],md_L[4],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L8 (dtma_L[8],md_L[3],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L9 (dtma_L[9],md_L[2],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L10 (dtma_L[10],md_L[1],tp3,1'b0,1'b0,tp3);
+
+FDCPE FDCPE_dtma_L11 (dtma_L[11],md_L[0],tp3,1'b0,1'b0,tp3);
+
+
+assign eie = ((EXP49_.EXP)
+	|| (EXP50_.EXP)
+	|| (eie && md_L[11])
+	|| (eie && md_L[8])
+	|| (eie && md_L[4])
+	|| (eie && md_L[3])
+	|| (!data_L[3].PIN && !tp3 && eie));
+
+
+assign ema_L_I[0] = !((dt && !dtema_L[2]));
+assign ema_L[0] = ema_L_OE[0] ? ema_L_I[0] : 1'bZ;
+assign ema_L_OE[0] = !((!dt && !my_db));
+
+
+assign ema_L_I[1] = !((dt && !dtema_L[1]));
+assign ema_L[1] = ema_L_OE[1] ? ema_L_I[1] : 1'bZ;
+assign ema_L_OE[1] = !((!dt && !my_db));
+
+
+assign ema_L_I[2] = !((dt && !dtema_L[0]));
+assign ema_L[2] = ema_L_OE[2] ? ema_L_I[2] : 1'bZ;
+assign ema_L_OE[2] = !((!dt && !my_db));
+
+
+assign f[0] = ((EXP41_.EXP)
+	|| (EXP42_.EXP)
+	|| (f[0] && md_L[11])
+	|| (f[0] && md_L[8])
+	|| (f[0] && md_L[4])
+	|| (f[0] && md_L[3])
+	|| (!data_L[8].PIN && !tp3 && f[0]));
+
+
+assign f[1] = ((EXP59_.EXP)
+	|| (EXP60_.EXP)
+	|| (f[1] && md_L[11])
+	|| (f[1] && md_L[8])
+	|| (f[1] && md_L[4])
+	|| (f[1] && md_L[3])
+	|| (!data_L[7].PIN && !tp3 && f[1]));
+
+
+assign f[2] = ((EXP56_.EXP)
+	|| (EXP57_.EXP)
+	|| (f[2] && md_L[11])
+	|| (f[2] && md_L[8])
+	|| (f[2] && md_L[4])
+	|| (f[2] && md_L[3])
+	|| (!data_L[6].PIN && !tp3 && f[2]));
+
+FDCPE FDCPE_idle (idle,dtma_L[6].EXP,my_db,1'b0,1'b0);
+
+
+assign int_rq_L_I = 1'b0;
+assign int_rq_L = int_rq_L_OE ? int_rq_L_I : 1'bZ;
+assign int_rq_L_OE = load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST;
+
+FDCPE FDCPE_load_cont (load_cont,my_db,tp1,1'b0,1'b0,tp1);
+
+
+assign load_cont_L_I = 1'b0;
+assign load_cont_L = load_cont_L_OE ? load_cont_L_I : 1'bZ;
+assign load_cont_L_OE = load_cont;
+
+
+assign load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST = ((cie && done)
+	|| (eie && per)
+	|| (eie && wls)
+	|| (pie && !pca_L));
+
+
+assign ma_L_I[0] = !(((dt && !dtma_L[11])
+	|| (!dt && my_db)));
+assign ma_L[0] = ma_L_OE[0] ? ma_L_I[0] : 1'bZ;
+assign ma_L_OE[0] = !((!dt && !my_db));
+
+
+assign ma_L_I[1] = !(((dt && !dtma_L[10])
+	|| (!dt && my_db)));
+assign ma_L[1] = ma_L_OE[1] ? ma_L_I[1] : 1'bZ;
+assign ma_L_OE[1] = !((!dt && !my_db));
+
+
+assign ma_L_I[2] = !(((dt && !dtma_L[9])
+	|| (!dt && my_db)));
+assign ma_L[2] = ma_L_OE[2] ? ma_L_I[2] : 1'bZ;
+assign ma_L_OE[2] = !((!dt && !my_db));
+
+
+assign ma_L_I[3] = !(((dt && !dtma_L[8])
+	|| (!dt && my_db)));
+assign ma_L[3] = ma_L_OE[3] ? ma_L_I[3] : 1'bZ;
+assign ma_L_OE[3] = !((!dt && !my_db));
+
+
+assign ma_L_I[4] = !(((dt && !dtma_L[7])
+	|| (!dt && my_db)));
+assign ma_L[4] = ma_L_OE[4] ? ma_L_I[4] : 1'bZ;
+assign ma_L_OE[4] = !((!dt && !my_db));
+
+
+assign ma_L_I[5] = !(((dt && !dtma_L[6])
+	|| (!dt && my_db)));
+assign ma_L[5] = ma_L_OE[5] ? ma_L_I[5] : 1'bZ;
+assign ma_L_OE[5] = !((!dt && !my_db));
+
+
+assign ma_L_I[6] = !(((dt && !dtma_L[5])
+	|| (!dt && my_db)));
+assign ma_L[6] = ma_L_OE[6] ? ma_L_I[6] : 1'bZ;
+assign ma_L_OE[6] = !((!dt && !my_db));
+
+
+assign ma_L_I[7] = !((dt && !dtma_L[4]));
+assign ma_L[7] = ma_L_OE[7] ? ma_L_I[7] : 1'bZ;
+assign ma_L_OE[7] = !((!dt && !my_db));
+
+
+assign ma_L_I[8] = !(((dt && !dtma_L[3])
+	|| (!dt && my_db)));
+assign ma_L[8] = ma_L_OE[8] ? ma_L_I[8] : 1'bZ;
+assign ma_L_OE[8] = !((!dt && !my_db));
+
+
+assign ma_L_I[9] = !((dt && !dtma_L[2]));
+assign ma_L[9] = ma_L_OE[9] ? ma_L_I[9] : 1'bZ;
+assign ma_L_OE[9] = !((!dt && !my_db));
+
+
+assign ma_L_I[10] = !((dt && !dtma_L[1]));
+assign ma_L[10] = ma_L_OE[10] ? ma_L_I[10] : 1'bZ;
+assign ma_L_OE[10] = !((!dt && !my_db));
+
+
+assign ma_L_I[11] = !(((dt && !dtma_L[0])
+	|| (!dt && !wc && my_db)));
+assign ma_L[11] = ma_L_OE[11] ? ma_L_I[11] : 1'bZ;
+assign ma_L_OE[11] = !((!dt && !my_db));
+
+
+assign md_dir_L_I = 1'b0;
+assign md_dir_L = md_dir_L_OE ? md_dir_L_I : 1'bZ;
+assign md_dir_L_OE = !((dt && writing));
+
+
+assign ms_disable_L_I = 1'b0;
+assign ms_disable_L = ms_disable_L_OE ? ms_disable_L_I : 1'bZ;
+assign ms_disable_L_OE = my_db;
+
+FDCPE FDCPE_my_db (my_db,my_db_D,tp4,1'b0,1'b0,tp4);
+assign my_db_D = ((!data_L[1].PIN && !data_L[0].PIN && !data_L[6].PIN && 
+	!data_L[5].PIN && !data_L[4].PIN && !data_L[3].PIN && !data_L[2].PIN && 
+	!idle)
+	|| (!data_L[1].PIN && !data_L[0].PIN && !data_L[6].PIN && 
+	!data_L[5].PIN && !data_L[4].PIN && !data_L[3].PIN && !data_L[2].PIN && 
+	busy && !word_L));
+
+FDCPE FDCPE_per (per,per_D,per_C,1'b0,1'b0);
+assign per_D = ((initialize)
+	|| (dt && !per)
+	|| (tp3 && dt && !writing && !md_L[11] && md_L[8] && 
+	md_L[7] && md_L[6] && md_L[5] && !md_L[4] && !md_L[3]));
+assign per_C = (tp3 && md_L[6] && 
+	$OpTx$bmd_L[4]_$NODETRST/bmd_L[4]_$NODETRST_D2_INV$226 && 
+	!$OpTx$bmd_L[5]_$NODETRST/bmd_L[5]_$NODETRST_D2_INV$227 && 
+	!$OpTx$bmd_L[8]_$NODETRST/bmd_L[8]_$NODETRST_D2_INV$229 && 
+	!$OpTx$bmd_L[7]_$NODETRST/bmd_L[7]_$NODETRST_D2_INV$228 && $OpTx$$OpTx$FX_DC$81_INV$223 && 
+	$OpTx$bmd_L[11]_$NODETRST/bmd_L[11]_$NODETRST_D2_INV$225);
+
+
+assign pie = ((EXP62_.EXP)
+	|| (EXP65_.EXP)
+	|| (pie && md_L[11])
+	|| (pie && md_L[8])
+	|| (pie && md_L[4])
+	|| (pie && md_L[3])
+	|| (!data_L[4].PIN && !tp3 && pie));
+
+
+assign skip_L = !(((dtema_L[0].EXP)
+	|| (!dt && !md_L[9])
+	|| (!writing && !md_L[9])));
+
+FDCPE FDCPE_wc (wc,wc_D,my_db,1'b0,1'b0);
+assign wc_D = ((!initialize && wc && !my_db)
+	|| (busy && my_db && !word_L));
+
+
+assign we_L = !((!writing && protect));
+
+FTCPE FTCPE_wls (wls,wls_T,wls_C,1'b0,1'b0);
+assign wls_T = ((initialize && wls)
+	|| (!initialize && writing && !wls && protect)
+	|| (tp3 && !writing && wls && !md_L[11] && md_L[8] && 
+	md_L[7] && md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (tp3 && !dt && wls && !md_L[11] && md_L[8] && md_L[7] && 
+	md_L[6] && md_L[5] && !md_L[4] && !md_L[3] && !protect));
+assign wls_C = (tp3 && md_L[6] && 
+	$OpTx$bmd_L[4]_$NODETRST/bmd_L[4]_$NODETRST_D2_INV$226 && 
+	!$OpTx$bmd_L[5]_$NODETRST/bmd_L[5]_$NODETRST_D2_INV$227 && 
+	!$OpTx$bmd_L[8]_$NODETRST/bmd_L[8]_$NODETRST_D2_INV$229 && 
+	!$OpTx$bmd_L[7]_$NODETRST/bmd_L[7]_$NODETRST_D2_INV$228 && $OpTx$$OpTx$FX_DC$81_INV$223 && 
+	$OpTx$bmd_L[11]_$NODETRST/bmd_L[11]_$NODETRST_D2_INV$225);
+
+FTCPE FTCPE_writing (writing,writing_T,writing_C,1'b0,1'b0);
+assign writing_T = ((initialize && writing)
+	|| (!initialize && !writing && !md_L[9] && md_L[8] && 
+	md_L[7] && md_L[6] && md_L[5] && !md_L[4] && !md_L[3])
+	|| (tp3 && !dt && writing && !md_L[10] && md_L[9] && 
+	md_L[8] && md_L[7] && md_L[6] && md_L[5] && !md_L[4] && 
+	!md_L[3]));
+assign writing_C = (tp3 && md_L[6] && 
+	$OpTx$bmd_L[4]_$NODETRST/bmd_L[4]_$NODETRST_D2_INV$226 && 
+	!$OpTx$bmd_L[5]_$NODETRST/bmd_L[5]_$NODETRST_D2_INV$227 && 
+	!$OpTx$bmd_L[8]_$NODETRST/bmd_L[8]_$NODETRST_D2_INV$229 && 
+	!$OpTx$bmd_L[7]_$NODETRST/bmd_L[7]_$NODETRST_D2_INV$228 && 
+	$OpTx$bmd_L[10]_$NODETRST/bmd_L[10]_$NODETRST_D2_INV$224 && $OpTx$$OpTx$FX_DC$81_INV$223);
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC95288XL-6-TQ144
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 VCC                              73 VCC                           
+  2 dma<3>                           74 ts4_L                         
+  3 md_L<9>                          75 dma<0>                        
+  4 dma<1>                           76 md_L<10>                      
+  5 md_L<4>                          77 ma_L<10>                      
+  6 dma<2>                           78 md_L<7>                       
+  7 KPR                              79 KPR                           
+  8 VCC                              80 cs1_L                         
+  9 dar<8>                           81 data_L<10>                    
+ 10 KPR                              82 KPR                           
+ 11 dar<6>                           83 data_L<8>                     
+ 12 KPR                              84 VCC                           
+ 13 dar<5>                           85 KPR                           
+ 14 KPR                              86 we_L                          
+ 15 dma<6>                           87 KPR                           
+ 16 md_L<11>                         88 overflow_L                    
+ 17 dma<5>                           89 GND                           
+ 18 GND                              90 GND                           
+ 19 tp3                              91 cs0_L                         
+ 20 dar<9>                           92 KPR                           
+ 21 KPR                              93 KPR                           
+ 22 dar<4>                           94 dar<7>                        
+ 23 KPR                              95 KPR                           
+ 24 dma<4>                           96 KPR                           
+ 25 protect                          97 ma_L<2>                       
+ 26 data_L<1>                        98 KPR                           
+ 27 KPR                              99 GND                           
+ 28 ma_L<1>                         100 data_L<7>                     
+ 29 GND                             101 KPR                           
+ 30 tp1                             102 data_L<6>                     
+ 31 KPR                             103 md_L<0>                       
+ 32 tp4                             104 data_L<9>                     
+ 33 KPR                             105 KPR                           
+ 34 dma<10>                         106 data_L<0>                     
+ 35 dma<9>                          107 initialize                    
+ 36 GND                             108 GND                           
+ 37 VCC                             109 VCC                           
+ 38 KPR                             110 dar<11>                       
+ 39 dma<8>                          111 md_L<3>                       
+ 40 dma<7>                          112 dma<11>                       
+ 41 KPR                             113 KPR                           
+ 42 VCC                             114 GND                           
+ 43 skip_L                          115 ma_L<3>                       
+ 44 KPR                             116 KPR                           
+ 45 data_L<2>                       117 KPR                           
+ 46 KPR                             118 ma_L<5>                       
+ 47 GND                             119 ma_L<6>                       
+ 48 md_L<1>                         120 ma_L<8>                       
+ 49 KPR                             121 ema_L<0>                      
+ 50 ma_L<0>                         122 TDO                           
+ 51 break_cycle_L                   123 GND                           
+ 52 KPR                             124 ema_L<1>                      
+ 53 ma_L<11>                        125 ema_L<2>                      
+ 54 brk_data_cont_L                 126 md_L<5>                       
+ 55 VCC                             127 VCC                           
+ 56 KPR                             128 ma_L<4>                       
+ 57 ms_disable_L                    129 md_L<8>                       
+ 58 KPR                             130 KPR                           
+ 59 md_dir_L                        131 c0_L                          
+ 60 ma_L<7>                         132 md_L<2>                       
+ 61 KPR                             133 c1_L                          
+ 62 GND                             134 word_L                        
+ 63 TDI                             135 data_L<11>                    
+ 64 KPR                             136 md_L<6>                       
+ 65 TMS                             137 data_L<5>                     
+ 66 load_cont_L                     138 KPR                           
+ 67 TCK                             139 data_L<4>                     
+ 68 KPR                             140 pca_L                         
+ 69 ma_L<9>                         141 VCC                           
+ 70 int_rq_L                        142 data_L<3>                     
+ 71 dar<10>                         143 KPR                           
+ 72 GND                             144 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc95288xl-6-TQ144
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

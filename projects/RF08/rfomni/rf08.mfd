@@ -1,0 +1,3200 @@
+MDF Database:  version 1.0
+MDF_INFO | rf08 | XC95288XL-6-TQ144
+MACROCELL | 13 | 2 | data_L_7_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 15 | dt  | f<1>  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dar<7>  | md_L<7>  | EXP76_.EXP  | EXP77_.EXP  | data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT
+INPUTMC | 6 | 3 | 17 | 6 | 11 | 15 | 5 | 13 | 1 | 13 | 3 | 13 | 17
+INPUTP | 9 | 29 | 145 | 6 | 234 | 253 | 227 | 8 | 201 | 148
+IMPORTS | 2 | 13 | 1 | 13 | 3
+EQ | 23 | 
+   !data_L<7> = dar<7> & !md_L<8>
+	# dar<7> & !md_L<7>
+	# dar<7> & !md_L<5>
+	# !dt & f<1> & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB14_2
+	# dar<7> & md_L<11>
+	# dar<7> & md_L<9>
+	# dar<7> & md_L<6>
+	# dar<7> & md_L<4>
+	# !idle & !ts4_L
+;Imported pterms FB14_1
+	# !writing & f<1> & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB14_4
+	# dar<7> & md_L<3>
+	# !dt & !md_L<7>
+	# dar<7> & dt & writing
+	# busy & !ts4_L & !word_L
+	# dma<7> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+   data_L<7>.OE = !data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT;
+
+MACROCELL | 13 | 13 | data_L_0_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 15 | dt  | md_L<0>  | dma<0>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | writing  | md_L<11>  | md_L<10>  | pca_L  | $OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226.EXP
+INPUTMC | 4 | 3 | 17 | 12 | 10 | 7 | 15 | 13 | 12
+INPUTP | 11 | 188 | 6 | 234 | 148 | 253 | 227 | 8 | 201 | 29 | 145 | 258
+IMPORTS | 1 | 13 | 12
+EQ | 13 | 
+   !data_L<0> = !dt & !md_L<0>
+	# dma<0> & !dt & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<0> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !dt & md_L<11> & !md_L<10> & !md_L<9> & !md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3> & !pca_L
+;Imported pterms FB14_13
+	# !writing & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3> & !pca_L;
+   !data_L<0>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 14 | 7 | data_L_10_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | dar<10>  | md_L<8>  | md_L<5>  | md_L<7>  | dt  | md_L<10>  | md_L<9>  | md_L<11>  | md_L<4>  | md_L<6>  | md_L<3>  | writing  | EXP84_.EXP  | EXP85_.EXP
+INPUTMC | 5 | 12 | 1 | 3 | 17 | 7 | 15 | 14 | 6 | 14 | 8
+INPUTP | 9 | 234 | 227 | 148 | 145 | 6 | 29 | 8 | 253 | 201
+IMPORTS | 2 | 14 | 6 | 14 | 8
+EQ | 21 | 
+   !data_L<10> = dar<10> & !md_L<8>
+	# dar<10> & !md_L<7>
+	# dar<10> & !md_L<5>
+	# !dt & !md_L<10>
+;Imported pterms FB15_7
+	# dar<10> & md_L<11>
+	# dar<10> & md_L<9>
+	# dar<10> & md_L<6>
+	# dar<10> & md_L<4>
+	# dar<10> & md_L<3>
+;Imported pterms FB15_9
+	# dar<10> & dt & writing
+	# dma<10> & !dt & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<10> & !writing & !md_L<9> & md_L<8> & 
+	!md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   !data_L<10>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 5 | 1 | data_L_11_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 15 | dt  | per  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dar<11>  | writing  | md_L<11>  | EXP43_.EXP  | EXP44_.EXP
+INPUTMC | 6 | 3 | 17 | 7 | 16 | 11 | 1 | 7 | 15 | 5 | 0 | 5 | 2
+INPUTP | 9 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201 | 29
+IMPORTS | 2 | 5 | 0 | 5 | 2
+EQ | 23 | 
+   !data_L<11> = dar<11> & !md_L<8>
+	# dar<11> & !md_L<7>
+	# dar<11> & !md_L<5>
+	# !dt & per & !md_L<10> & !md_L<9> & !md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB6_1
+	# dar<11> & writing
+	# dar<11> & md_L<11>
+	# dar<11> & md_L<9>
+	# dar<11> & md_L<4>
+	# !dt & !md_L<11>
+;Imported pterms FB6_3
+	# dar<11> & md_L<6>
+	# dar<11> & md_L<3>
+	# dma<11> & !dt & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & !writing & !md_L<9> & md_L<8> & 
+	!md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & per & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   !data_L<11>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 0 | 14 | data_L_1_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | dt  | md_L<1>  | dma<1>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | writing  | md_L<11>  | md_L<10>  | EXP24_.EXP
+INPUTMC | 4 | 3 | 17 | 3 | 5 | 7 | 15 | 0 | 13
+INPUTP | 10 | 89 | 6 | 234 | 148 | 253 | 227 | 8 | 201 | 29 | 145
+IMPORTS | 1 | 0 | 13
+EQ | 13 | 
+   !data_L<1> = !dt & !md_L<1>
+	# dma<1> & !dt & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<1> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !dt & md_L<11> & !md_L<10> & !md_L<9> & !md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB1_14
+	# !writing & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   !data_L<1>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 6 | 2 | data_L_2_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 15 | dt  | md_L<2>  | dma<2>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | writing  | wls  | md_L<11>  | md_L<10>  | EXP55_.EXP
+INPUTMC | 5 | 3 | 17 | 3 | 11 | 7 | 15 | 6 | 5 | 6 | 1
+INPUTP | 10 | 237 | 6 | 234 | 148 | 253 | 227 | 8 | 201 | 29 | 145
+IMPORTS | 1 | 6 | 1
+EQ | 14 | 
+   !data_L<2> = !dt & !md_L<2>
+	# dma<2> & !dt & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<2> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !dt & wls & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB7_2
+	# !writing & wls & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   !data_L<2>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 5 | 13 | data_L_3_IOBUFE
+ATTRIBUTES | 265986 | 0
+OUTPUTMC | 1 | 5 | 14
+INPUTS | 15 | dt  | md_L<3>  | dma<3>  | writing  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | eie  | md_L<11>  | md_L<10>  | data_L<5>.PIN  | cie
+INPUTMC | 5 | 3 | 17 | 3 | 1 | 7 | 15 | 5 | 10 | 5 | 15
+INPUTP | 10 | 201 | 6 | 234 | 148 | 253 | 227 | 8 | 29 | 145 | 254
+EXPORTS | 1 | 5 | 14
+EQ | 9 | 
+   !data_L<3> = !dt & !md_L<3>
+	# dma<3> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & eie & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   !data_L<3>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+    data_L_3_IOBUFE.EXP  =  !data_L<5>.PIN & !dt & cie & !md_L<9>
+
+MACROCELL | 5 | 7 | data_L_4_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | dar<4>  | md_L<7>  | writing  | md_L<9>  | md_L<11>  | md_L<4>  | md_L<8>  | md_L<6>  | md_L<5>  | md_L<3>  | dt  | EXP47_.EXP  | EXP48_.EXP
+INPUTMC | 5 | 0 | 7 | 7 | 15 | 3 | 17 | 5 | 6 | 5 | 8
+INPUTP | 8 | 148 | 6 | 29 | 8 | 234 | 253 | 227 | 201
+IMPORTS | 2 | 5 | 6 | 5 | 8
+EQ | 19 | 
+   !data_L<4> = dar<4> & writing
+	# dar<4> & md_L<11>
+	# dar<4> & md_L<9>
+	# dar<4> & !md_L<7>
+;Imported pterms FB6_7
+	# dar<4> & !md_L<8>
+	# dar<4> & md_L<6>
+	# dar<4> & !md_L<5>
+	# dar<4> & md_L<4>
+	# dar<4> & md_L<3>
+;Imported pterms FB6_9
+	# !dt & !md_L<4>
+	# dma<4> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & pie & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   !data_L<4>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 5 | 4 | data_L_5_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | dar<5>  | md_L<9>  | md_L<11>  | md_L<4>  | md_L<8>  | md_L<6>  | dt  | md_L<5>  | md_L<3>  | md_L<7>  | writing  | EXP45_.EXP  | EXP46_.EXP
+INPUTMC | 5 | 1 | 7 | 3 | 17 | 7 | 15 | 5 | 3 | 5 | 5
+INPUTP | 8 | 6 | 29 | 8 | 234 | 253 | 227 | 201 | 148
+IMPORTS | 2 | 5 | 3 | 5 | 5
+EQ | 23 | 
+   !data_L<5> = dar<5> & md_L<11>
+	# dar<5> & md_L<9>
+	# dar<5> & !md_L<8>
+	# dar<5> & md_L<4>
+;Imported pterms FB6_4
+	# dar<5> & !md_L<7>
+	# dar<5> & md_L<6>
+	# dar<5> & !md_L<5>
+	# dar<5> & md_L<3>
+	# !dt & !md_L<5>
+;Imported pterms FB6_6
+	# dar<5> & dt & writing
+	# dma<5> & !dt & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & !md_L<4> & !md_L<3>
+	# dma<5> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !dt & cie & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & !md_L<4> & !md_L<3>
+	# !writing & cie & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   !data_L<5>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 13 | 5 | data_L_6_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | dar<6>  | dt  | md_L<6>  | writing  | md_L<11>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<10>  | EXP78_.EXP  | EXP79_.EXP
+INPUTMC | 5 | 1 | 4 | 3 | 17 | 7 | 15 | 13 | 4 | 13 | 6
+INPUTP | 9 | 253 | 29 | 6 | 234 | 148 | 227 | 8 | 201 | 145
+IMPORTS | 2 | 13 | 4 | 13 | 6
+EQ | 18 | 
+   data_L<6> = !dar<6> & dt & !md_L<6>
+	# !dar<6> & md_L<9> & md_L<6>
+	# !dar<6> & md_L<10> & !md_L<8> & md_L<6>
+	# dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB14_5
+	# !dar<6> & md_L<6> & !md_L<5>
+	# !dar<6> & md_L<6> & md_L<4>
+	# !dar<6> & md_L<6> & md_L<3>
+	# !dar<6> & !f<2> & !md_L<8> & md_L<6>
+	# !dar<6> & !md_L<11> & !md_L<8> & md_L<6>
+;Imported pterms FB14_7
+	# !dar<6> & dt & writing
+	# !dar<6> & !dma<6> & md_L<8> & md_L<6>
+	# !dar<6> & md_L<8> & md_L<7> & md_L<6>
+	# !dar<6> & !md_L<8> & !md_L<7> & md_L<6>;
+   !data_L<6>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 14 | 10 | data_L_8_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | dma<8>  | dt  | md_L<9>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dar<8>  | md_L<8>  | md_L<11>  | writing  | EXP86_.EXP  | EXP87_.EXP
+INPUTMC | 6 | 4 | 9 | 3 | 17 | 1 | 1 | 7 | 15 | 14 | 9 | 14 | 11
+INPUTP | 8 | 6 | 148 | 253 | 227 | 8 | 201 | 234 | 29
+IMPORTS | 2 | 14 | 9 | 14 | 11
+EQ | 21 | 
+   !data_L<8> = dar<8> & !md_L<8>
+	# dar<8> & !md_L<7>
+	# dar<8> & !md_L<5>
+	# dma<8> & !dt & !md_L<9> & !md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB15_10
+	# dar<8> & md_L<11>
+	# dar<8> & md_L<9>
+	# dar<8> & md_L<6>
+	# dar<8> & md_L<4>
+	# !dt & !md_L<8>
+;Imported pterms FB15_12
+	# dar<8> & md_L<3>
+	# dar<8> & dt & writing
+	# dma<8> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & f<0> & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   !data_L<8>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 13 | 9 | data_L_9_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 15 | dar<9>  | dt  | md_L<11>  | md_L<7>  | dma<9>  | md_L<10>  | md_L<8>  | md_L<6>  | md_L<5>  | md_L<9>  | writing  | md_L<4>  | md_L<3>  | $OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229.EXP  | $OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228.EXP
+INPUTMC | 6 | 0 | 4 | 3 | 17 | 4 | 4 | 7 | 15 | 13 | 8 | 13 | 10
+INPUTP | 9 | 29 | 148 | 145 | 234 | 253 | 227 | 6 | 8 | 201
+IMPORTS | 2 | 13 | 8 | 13 | 10
+EQ | 17 | 
+   data_L<9> = !dar<9> & !dma<9> & dt & !md_L<7>
+	# !dar<9> & dt & !md_L<11> & md_L<7>
+	# !dar<9> & dt & md_L<10> & md_L<7>
+	# !dar<9> & dt & !md_L<8> & !md_L<7>
+;Imported pterms FB14_9
+	# !dar<9> & md_L<9>
+	# !dar<9> & dt & !md_L<6>
+	# !dar<9> & dt & !md_L<5>
+;Imported pterms FB14_11
+	# !dar<9> & dt & writing
+	# !dar<9> & dt & md_L<4>
+	# !dar<9> & dt & md_L<3>
+	# !dar<9> & dt & md_L<8> & md_L<7>
+	# dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+   !data_L<9>.OE = dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 11 | 4 | dma_0
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 27 | 15 | 1 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 14 | 2 | 5 | 2 | 11 | 3 | 11 | 5 | 14 | 4 | 15 | 3
+INPUTS | 15 | initialize  | data_L<11>.PIN  | dma<11>  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dt  | EXP69_.EXP  | EXP70_.EXP
+INPUTMC | 4 | 11 | 4 | 3 | 17 | 11 | 3 | 11 | 5
+INPUTP | 11 | 195 | 251 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 2 | 11 | 3 | 11 | 5
+EQ | 17 | 
+   dma<11>.T = dt
+	# initialize & dma<11>
+	# !initialize & !data_L<11>.PIN & !dma<11> & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<11>.PIN & !dma<11> & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB12_4
+	# dma<11> & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<11>.PIN & dma<11> & !md_L<10> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB12_6
+	# data_L<11>.PIN & dma<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+   dma<11>.CLK = dt;
+
+MACROCELL | 12 | 1 | dar_1
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 16 | 14 | 7 | 12 | 1 | 1 | 1 | 1 | 4 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 12 | 2 | 14 | 8 | 12 | 0 | 14 | 3 | 14 | 4 | 14 | 6 | 15 | 2 | 15 | 3
+INPUTS | 28 | initialize  | data_L<10>.PIN  | dar<10>  | dt  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dma<11>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dar<11>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP71_.EXP  | EXP72_.EXP
+INPUTMC | 17 | 12 | 1 | 3 | 17 | 11 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 12 | 0 | 12 | 2
+INPUTP | 11 | 195 | 155 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+IMPORTS | 2 | 12 | 0 | 12 | 2
+EQ | 19 | 
+   dar<10>.T = initialize & dar<10> & !dt
+	# dar<10> & !dt & !md_L<9>
+	# !initialize & !data_L<10>.PIN & !dar<10> & !dt & 
+	!md_L<11> & !md_L<10> & md_L<9> & md_L<8> & md_L<7> & 
+	!md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & dma<10> & dma<0> & dma<8> & dma<6> & 
+	dma<4> & dma<2> & dar<11> & dma<1> & dma<9> & dma<7> & 
+	dma<5> & dma<3> & dt
+;Imported pterms FB13_1
+	# dar<10> & !dt & md_L<11>
+	# dar<10> & !dt & !md_L<8>
+	# dar<10> & !dt & md_L<6>
+	# dar<10> & !dt & md_L<4>
+;Imported pterms FB13_3
+	# dar<10> & !dt & !md_L<7>
+	# dar<10> & !dt & !md_L<5>
+	# dar<10> & !dt & md_L<3>
+	# data_L<10>.PIN & dar<10> & !dt & !md_L<10>;
+   dar<10>.CLK = dt;
+
+MACROCELL | 1 | 1 | dar_3
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 14 | 14 | 10 | 1 | 1 | 1 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 14 | 0 | 14 | 11 | 1 | 0 | 1 | 2 | 14 | 4 | 14 | 9 | 15 | 3 | 15 | 17
+INPUTS | 30 | initialize  | data_L<8>.PIN  | dar<8>  | dt  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dma<11>  | dar<10>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dar<11>  | dar<9>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP25_.EXP  | EXP26_.EXP
+INPUTMC | 19 | 1 | 1 | 3 | 17 | 11 | 4 | 12 | 1 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 1 | 0 | 1 | 2
+INPUTP | 11 | 195 | 158 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+IMPORTS | 2 | 1 | 0 | 1 | 2
+EQ | 19 | 
+   dar<8>.T = initialize & dar<8> & !dt
+	# dar<8> & !dt & !md_L<9>
+	# !initialize & !data_L<8>.PIN & !dar<8> & !dt & 
+	!md_L<11> & !md_L<10> & md_L<9> & md_L<8> & md_L<7> & 
+	!md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dma<10> & dma<0> & dma<8> & 
+	dma<6> & dma<4> & dma<2> & dar<11> & dar<9> & dma<1> & 
+	dma<9> & dma<7> & dma<5> & dma<3> & dt
+;Imported pterms FB2_1
+	# dar<8> & !dt & md_L<11>
+	# dar<8> & !dt & !md_L<8>
+	# dar<8> & !dt & md_L<6>
+	# dar<8> & !dt & md_L<4>
+;Imported pterms FB2_3
+	# dar<8> & !dt & !md_L<7>
+	# dar<8> & !dt & !md_L<5>
+	# dar<8> & !dt & md_L<3>
+	# data_L<8>.PIN & dar<8> & !dt & !md_L<10>;
+   dar<8>.CLK = dt;
+
+MACROCELL | 1 | 4 | dar_5
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 12 | 13 | 5 | 1 | 4 | 1 | 7 | 0 | 7 | 14 | 0 | 14 | 4 | 1 | 3 | 1 | 5 | 13 | 4 | 13 | 6 | 15 | 3 | 15 | 17
+INPUTS | 32 | initialize  | data_L<6>.PIN  | dar<6>  | dt  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dma<11>  | dar<10>  | dar<8>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dar<11>  | dar<9>  | dar<7>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP27_.EXP  | EXP28_.EXP
+INPUTMC | 21 | 1 | 4 | 3 | 17 | 11 | 4 | 12 | 1 | 1 | 1 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 1 | 3 | 1 | 5
+INPUTP | 11 | 195 | 187 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+IMPORTS | 2 | 1 | 3 | 1 | 5
+EQ | 20 | 
+   dar<6>.T = initialize & dar<6> & !dt
+	# dar<6> & !dt & !md_L<9>
+	# !initialize & !data_L<6>.PIN & !dar<6> & !dt & 
+	!md_L<11> & !md_L<10> & md_L<9> & md_L<8> & md_L<7> & 
+	!md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dma<10> & dma<0> & 
+	dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & dar<9> & 
+	dar<7> & dma<1> & dma<9> & dma<7> & dma<5> & dma<3> & 
+	dt
+;Imported pterms FB2_4
+	# dar<6> & !dt & md_L<11>
+	# dar<6> & !dt & !md_L<8>
+	# dar<6> & !dt & md_L<6>
+	# dar<6> & !dt & md_L<4>
+;Imported pterms FB2_6
+	# dar<6> & !dt & !md_L<7>
+	# dar<6> & !dt & !md_L<5>
+	# dar<6> & !dt & md_L<3>
+	# data_L<6>.PIN & dar<6> & !dt & !md_L<10>;
+   dar<6>.CLK = dt;
+
+MACROCELL | 4 | 1 | dma_1
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 26 | 14 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 14 | 2 | 15 | 1 | 4 | 2 | 14 | 8 | 15 | 3 | 4 | 0
+INPUTS | 17 | initialize  | data_L<10>.PIN  | dma<10>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | data_L<8>.PIN  | writing  | idle.EXP
+INPUTMC | 5 | 4 | 1 | 3 | 17 | 11 | 4 | 7 | 15 | 4 | 2
+INPUTP | 12 | 195 | 155 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6 | 158
+EXPORTS | 1 | 4 | 0
+IMPORTS | 1 | 4 | 2
+EQ | 21 | 
+   dma<10>.T = dma<11> & dt
+	# !initialize & !data_L<10>.PIN & !dma<10> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<10>.PIN & !dma<10> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB5_3
+	# initialize & dma<10> & !dt
+	# dma<10> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<10>.PIN & dma<10> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+	# data_L<10>.PIN & dma<10> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<10>.CLK = dt;
+    dma_1.EXP  =  !data_L<8>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 12 | 10 | dma_11
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 16 | 13 | 13 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 12 | 11 | 14 | 4 | 12 | 9 | 14 | 3 | 15 | 2 | 15 | 3
+INPUTS | 26 | initialize  | data_L<0>.PIN  | dma<0>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP73_.EXP  | EXP74_.EXP
+INPUTMC | 15 | 12 | 10 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 12 | 9 | 12 | 11
+INPUTP | 11 | 195 | 193 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 2 | 12 | 9 | 12 | 11
+EQ | 21 | 
+   dma<0>.T = initialize & dma<0> & !dt
+	# !initialize & !data_L<0>.PIN & !dma<0> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<0>.PIN & !dma<0> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & dma<10> & dma<8> & dma<6> & dma<4> & 
+	dma<2> & dma<1> & dma<9> & dma<7> & dma<5> & dma<3> & 
+	dt
+;Imported pterms FB13_10
+	# dma<0> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<0>.PIN & dma<0> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB13_12
+	# data_L<0>.PIN & dma<0> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<0>.CLK = dt;
+
+MACROCELL | 4 | 9 | dma_3
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 24 | 14 | 10 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 11 | 1 | 14 | 3 | 1 | 14 | 2 | 15 | 1 | 4 | 8 | 14 | 4 | 14 | 11 | 15 | 3
+INPUTS | 17 | initialize  | data_L<8>.PIN  | dma<8>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dma<9>  | dtma_L<2>.EXP
+INPUTMC | 6 | 4 | 9 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 4 | 4 | 8
+INPUTP | 11 | 195 | 158 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 1 | 4 | 8
+EQ | 18 | 
+   dma<8>.T = initialize & dma<8> & !dt
+	# dma<11> & dma<10> & dma<9> & dt
+	# !initialize & !data_L<8>.PIN & !dma<8> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<8>.PIN & !dma<8> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB5_9
+	# dma<8> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<8>.PIN & dma<8> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+	# data_L<8>.PIN & dma<8> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<8>.CLK = dt;
+
+MACROCELL | 1 | 11 | dma_5
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 22 | 1 | 12 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 1 | 14 | 3 | 1 | 14 | 1 | 15 | 0 | 1 | 10 | 13 | 6 | 14 | 4 | 15 | 3
+INPUTS | 20 | initialize  | data_L<6>.PIN  | dma<6>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dma<8>  | dma<9>  | dma<7>  | EXP31_.EXP  | EXP32_.EXP
+INPUTMC | 9 | 1 | 11 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 9 | 4 | 4 | 4 | 11 | 1 | 10 | 1 | 12
+INPUTP | 11 | 195 | 187 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 2 | 1 | 10 | 1 | 12
+EQ | 20 | 
+   dma<6>.T = initialize & dma<6> & !dt
+	# dma<11> & dma<10> & dma<8> & dma<9> & dma<7> & 
+	dt
+	# !initialize & !data_L<6>.PIN & !dma<6> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<6>.PIN & !dma<6> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB2_11
+	# dma<6> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<6>.PIN & dma<6> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB2_13
+	# data_L<6>.PIN & dma<6> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<6>.CLK = dt;
+
+MACROCELL | 0 | 11 | dma_7
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 20 | 0 | 12 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 3 | 1 | 14 | 1 | 15 | 0 | 0 | 10 | 5 | 8 | 14 | 4 | 15 | 3
+INPUTS | 22 | initialize  | data_L<4>.PIN  | dma<4>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dma<8>  | dma<6>  | dma<9>  | dma<7>  | dma<5>  | EXP22_.EXP  | EXP23_.EXP
+INPUTMC | 11 | 0 | 11 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 9 | 1 | 11 | 4 | 4 | 4 | 11 | 1 | 14 | 0 | 10 | 0 | 12
+INPUTP | 11 | 195 | 256 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 2 | 0 | 10 | 0 | 12
+EQ | 20 | 
+   dma<4>.T = initialize & dma<4> & !dt
+	# dma<11> & dma<10> & dma<8> & dma<6> & dma<9> & 
+	dma<7> & dma<5> & dt
+	# !initialize & !data_L<4>.PIN & !dma<4> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<4>.PIN & !dma<4> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB1_11
+	# dma<4> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<4>.PIN & dma<4> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB1_13
+	# data_L<4>.PIN & dma<4> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<4>.CLK = dt;
+
+MACROCELL | 3 | 11 | dma_9
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 18 | 6 | 2 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 3 | 12 | 14 | 4 | 3 | 10 | 14 | 3 | 15 | 2 | 15 | 3
+INPUTS | 24 | initialize  | data_L<2>.PIN  | dma<2>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dma<8>  | dma<6>  | dma<4>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP39_.EXP  | EXP40_.EXP
+INPUTMC | 13 | 3 | 11 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 9 | 1 | 11 | 0 | 11 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 3 | 10 | 3 | 12
+INPUTP | 11 | 195 | 80 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 2 | 3 | 10 | 3 | 12
+EQ | 20 | 
+   dma<2>.T = initialize & dma<2> & !dt
+	# dma<11> & dma<10> & dma<8> & dma<6> & dma<4> & 
+	dma<9> & dma<7> & dma<5> & dma<3> & dt
+	# !initialize & !data_L<2>.PIN & !dma<2> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<2>.PIN & !dma<2> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB4_11
+	# dma<2> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<2>.PIN & dma<2> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB4_13
+	# data_L<2>.PIN & dma<2> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<2>.CLK = dt;
+
+MACROCELL | 11 | 1 | dar_0
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 17 | 5 | 1 | 12 | 1 | 1 | 1 | 1 | 4 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 11 | 2 | 14 | 4 | 5 | 0 | 5 | 2 | 11 | 0 | 14 | 3 | 15 | 2 | 15 | 3
+INPUTS | 27 | initialize  | data_L<11>.PIN  | dar<11>  | dt  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dma<11>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP67_.EXP  | EXP68_.EXP
+INPUTMC | 16 | 11 | 1 | 3 | 17 | 11 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 11 | 0 | 11 | 2
+INPUTP | 11 | 195 | 251 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+IMPORTS | 2 | 11 | 0 | 11 | 2
+EQ | 19 | 
+   dar<11>.T = initialize & dar<11> & !dt
+	# dar<11> & !dt & !md_L<9>
+	# !initialize & !data_L<11>.PIN & !dar<11> & !dt & 
+	!md_L<11> & !md_L<10> & md_L<9> & md_L<8> & md_L<7> & 
+	!md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & dma<10> & dma<0> & dma<8> & dma<6> & 
+	dma<4> & dma<2> & dma<1> & dma<9> & dma<7> & dma<5> & 
+	dma<3> & dt
+;Imported pterms FB12_1
+	# dar<11> & !dt & md_L<11>
+	# dar<11> & !dt & !md_L<8>
+	# dar<11> & !dt & md_L<6>
+	# dar<11> & !dt & md_L<4>
+;Imported pterms FB12_3
+	# dar<11> & !dt & !md_L<7>
+	# dar<11> & !dt & !md_L<5>
+	# dar<11> & !dt & md_L<3>
+	# data_L<11>.PIN & dar<11> & !dt & !md_L<10>;
+   dar<11>.CLK = dt;
+
+MACROCELL | 0 | 4 | dar_2
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 15 | 13 | 9 | 1 | 1 | 1 | 4 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 14 | 0 | 14 | 4 | 0 | 3 | 0 | 5 | 13 | 8 | 13 | 10 | 15 | 3 | 15 | 17
+INPUTS | 29 | initialize  | data_L<9>.PIN  | dar<9>  | dt  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dma<11>  | dar<10>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dar<11>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP18_.EXP  | EXP19_.EXP
+INPUTMC | 18 | 0 | 4 | 3 | 17 | 11 | 4 | 12 | 1 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 0 | 3 | 0 | 5
+INPUTP | 11 | 195 | 190 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+IMPORTS | 2 | 0 | 3 | 0 | 5
+EQ | 19 | 
+   dar<9>.T = initialize & dar<9> & !dt
+	# dar<9> & !dt & !md_L<9>
+	# !initialize & !data_L<9>.PIN & !dar<9> & !dt & 
+	!md_L<11> & !md_L<10> & md_L<9> & md_L<8> & md_L<7> & 
+	!md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dma<10> & dma<0> & dma<8> & 
+	dma<6> & dma<4> & dma<2> & dar<11> & dma<1> & dma<9> & 
+	dma<7> & dma<5> & dma<3> & dt
+;Imported pterms FB1_4
+	# dar<9> & !dt & md_L<11>
+	# dar<9> & !dt & !md_L<8>
+	# dar<9> & !dt & md_L<6>
+	# dar<9> & !dt & md_L<4>
+;Imported pterms FB1_6
+	# dar<9> & !dt & !md_L<7>
+	# dar<9> & !dt & !md_L<5>
+	# dar<9> & !dt & md_L<3>
+	# data_L<9>.PIN & dar<9> & !dt & !md_L<10>;
+   dar<9>.CLK = dt;
+
+MACROCELL | 15 | 5 | dar_4
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 13 | 13 | 2 | 1 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 14 | 0 | 14 | 4 | 13 | 1 | 13 | 3 | 15 | 3 | 15 | 4 | 15 | 6 | 15 | 17
+INPUTS | 31 | initialize  | data_L<7>.PIN  | dar<7>  | dt  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dma<11>  | dar<10>  | dar<8>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dar<11>  | dar<9>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP91_.EXP  | EXP92_.EXP
+INPUTMC | 20 | 15 | 5 | 3 | 17 | 11 | 4 | 12 | 1 | 1 | 1 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 15 | 4 | 15 | 6
+INPUTP | 11 | 195 | 185 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+IMPORTS | 2 | 15 | 4 | 15 | 6
+EQ | 19 | 
+   dar<7>.T = initialize & dar<7> & !dt
+	# dar<7> & !dt & !md_L<9>
+	# !initialize & !data_L<7>.PIN & !dar<7> & !dt & 
+	!md_L<11> & !md_L<10> & md_L<9> & md_L<8> & md_L<7> & 
+	!md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dma<10> & dma<0> & 
+	dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & dar<9> & 
+	dma<1> & dma<9> & dma<7> & dma<5> & dma<3> & dt
+;Imported pterms FB16_5
+	# dar<7> & !dt & md_L<11>
+	# dar<7> & !dt & !md_L<8>
+	# dar<7> & !dt & md_L<6>
+	# dar<7> & !dt & !md_L<5>
+	# dar<7> & !dt & md_L<4>
+;Imported pterms FB16_7
+	# dar<7> & !dt & !md_L<7>
+	# dar<7> & !dt & md_L<3>
+	# data_L<7>.PIN & dar<7> & !dt & !md_L<10>;
+   dar<7>.CLK = dt;
+
+MACROCELL | 1 | 7 | dar_6
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 10 | 5 | 4 | 1 | 7 | 0 | 7 | 5 | 5 | 14 | 4 | 1 | 6 | 1 | 8 | 5 | 3 | 15 | 3 | 15 | 17
+INPUTS | 33 | initialize  | data_L<5>.PIN  | dar<5>  | dt  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dma<11>  | dar<10>  | dar<8>  | dar<6>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dar<11>  | dar<9>  | dar<7>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP29_.EXP  | EXP30_.EXP
+INPUTMC | 22 | 1 | 7 | 3 | 17 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 1 | 6 | 1 | 8
+INPUTP | 11 | 195 | 254 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+IMPORTS | 2 | 1 | 6 | 1 | 8
+EQ | 20 | 
+   dar<5>.T = initialize & dar<5> & !dt
+	# dar<5> & !dt & !md_L<9>
+	# !initialize & !data_L<5>.PIN & !dar<5> & !dt & 
+	!md_L<11> & !md_L<10> & md_L<9> & md_L<8> & md_L<7> & 
+	!md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dar<6> & dma<10> & 
+	dma<0> & dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & 
+	dar<9> & dar<7> & dma<1> & dma<9> & dma<7> & dma<5> & 
+	dma<3> & dt
+;Imported pterms FB2_7
+	# dar<5> & !dt & md_L<11>
+	# dar<5> & !dt & !md_L<8>
+	# dar<5> & !dt & md_L<6>
+	# dar<5> & !dt & md_L<4>
+;Imported pterms FB2_9
+	# dar<5> & !dt & !md_L<7>
+	# dar<5> & !dt & !md_L<5>
+	# dar<5> & !dt & md_L<3>
+	# data_L<5>.PIN & dar<5> & !dt & !md_L<10>;
+   dar<5>.CLK = dt;
+
+MACROCELL | 0 | 7 | dar_7
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 15 | 5 | 7 | 0 | 7 | 14 | 2 | 15 | 1 | 0 | 6 | 0 | 8 | 5 | 6 | 14 | 0 | 14 | 1 | 14 | 3 | 14 | 4 | 15 | 0 | 15 | 2 | 15 | 3 | 15 | 17
+INPUTS | 34 | initialize  | data_L<4>.PIN  | dar<4>  | dt  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dma<11>  | dar<10>  | dar<8>  | dar<6>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dar<11>  | dar<9>  | dar<7>  | dar<5>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP20_.EXP  | EXP21_.EXP
+INPUTMC | 23 | 0 | 7 | 3 | 17 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 0 | 6 | 0 | 8
+INPUTP | 11 | 195 | 256 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+IMPORTS | 2 | 0 | 6 | 0 | 8
+EQ | 20 | 
+   dar<4>.T = initialize & dar<4> & !dt
+	# dar<4> & !dt & !md_L<9>
+	# !initialize & !data_L<4>.PIN & !dar<4> & !dt & 
+	!md_L<11> & !md_L<10> & md_L<9> & md_L<8> & md_L<7> & 
+	!md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dar<6> & dma<10> & 
+	dma<0> & dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & 
+	dar<9> & dar<7> & dar<5> & dma<1> & dma<9> & dma<7> & 
+	dma<5> & dma<3> & dt
+;Imported pterms FB1_7
+	# dar<4> & !dt & md_L<11>
+	# dar<4> & !dt & !md_L<8>
+	# dar<4> & !dt & md_L<6>
+	# dar<4> & !dt & md_L<4>
+;Imported pterms FB1_9
+	# dar<4> & !dt & !md_L<7>
+	# dar<4> & !dt & !md_L<5>
+	# dar<4> & !dt & md_L<3>
+	# data_L<4>.PIN & dar<4> & !dt & !md_L<10>;
+   dar<4>.CLK = dt;
+
+MACROCELL | 3 | 5 | dma_10
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 17 | 0 | 14 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 3 | 6 | 14 | 4 | 3 | 4 | 14 | 3 | 15 | 2 | 15 | 3
+INPUTS | 25 | initialize  | data_L<1>.PIN  | dma<1>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dma<9>  | dma<7>  | dma<5>  | dma<3>  | EXP37_.EXP  | EXP38_.EXP
+INPUTMC | 14 | 3 | 5 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 3 | 4 | 3 | 6
+INPUTP | 11 | 195 | 45 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 2 | 3 | 4 | 3 | 6
+EQ | 20 | 
+   dma<1>.T = initialize & dma<1> & !dt
+	# dma<11> & dma<10> & dma<8> & dma<6> & dma<4> & 
+	dma<2> & dma<9> & dma<7> & dma<5> & dma<3> & dt
+	# !initialize & !data_L<1>.PIN & !dma<1> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<1>.PIN & !dma<1> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB4_5
+	# dma<1> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<1>.PIN & dma<1> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB4_7
+	# data_L<1>.PIN & dma<1> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<1>.CLK = dt;
+
+MACROCELL | 4 | 4 | dma_2
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 24 | 13 | 9 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 14 | 2 | 15 | 1 | 4 | 5 | 14 | 4 | 15 | 3
+INPUTS | 16 | initialize  | data_L<9>.PIN  | dma<9>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dtma_L<5>.EXP
+INPUTMC | 5 | 4 | 4 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 5
+INPUTP | 11 | 195 | 190 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 1 | 4 | 5
+EQ | 18 | 
+   dma<9>.T = initialize & dma<9> & !dt
+	# dma<11> & dma<10> & dt
+	# !initialize & !data_L<9>.PIN & !dma<9> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<9>.PIN & !dma<9> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB5_6
+	# dma<9> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<9>.PIN & dma<9> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+	# data_L<9>.PIN & dma<9> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<9>.CLK = dt;
+
+MACROCELL | 4 | 11 | dma_4
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 23 | 4 | 12 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 11 | 1 | 14 | 3 | 1 | 14 | 1 | 15 | 0 | 4 | 10 | 13 | 3 | 14 | 4 | 15 | 3
+INPUTS | 19 | initialize  | data_L<7>.PIN  | dma<7>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dma<8>  | dma<9>  | dtma_L<1>.EXP  | dtma_L<0>.EXP
+INPUTMC | 8 | 4 | 11 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 9 | 4 | 4 | 4 | 10 | 4 | 12
+INPUTP | 11 | 195 | 185 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 2 | 4 | 10 | 4 | 12
+EQ | 19 | 
+   dma<7>.T = initialize & dma<7> & !dt
+	# dma<11> & dma<10> & dma<8> & dma<9> & dt
+	# !initialize & !data_L<7>.PIN & !dma<7> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<7>.PIN & !dma<7> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB5_11
+	# dma<7> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<7>.PIN & dma<7> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB5_13
+	# data_L<7>.PIN & dma<7> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<7>.CLK = dt;
+
+MACROCELL | 1 | 14 | dma_6
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 21 | 1 | 15 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 1 | 14 | 3 | 1 | 14 | 1 | 15 | 0 | 1 | 13 | 5 | 5 | 14 | 4 | 15 | 3
+INPUTS | 21 | initialize  | data_L<5>.PIN  | dma<5>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dma<8>  | dma<6>  | dma<9>  | dma<7>  | EXP33_.EXP  | EXP34_.EXP
+INPUTMC | 10 | 1 | 14 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 9 | 1 | 11 | 4 | 4 | 4 | 11 | 1 | 13 | 1 | 15
+INPUTP | 11 | 195 | 254 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 2 | 1 | 13 | 1 | 15
+EQ | 20 | 
+   dma<5>.T = initialize & dma<5> & !dt
+	# dma<11> & dma<10> & dma<8> & dma<6> & dma<9> & 
+	dma<7> & dt
+	# !initialize & !data_L<5>.PIN & !dma<5> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<5>.PIN & !dma<5> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB2_14
+	# dma<5> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<5>.PIN & dma<5> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB2_16
+	# data_L<5>.PIN & dma<5> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<5>.CLK = dt;
+
+MACROCELL | 3 | 1 | dma_8
+ATTRIBUTES | 4588322 | 0
+OUTPUTMC | 19 | 5 | 13 | 12 | 1 | 1 | 1 | 1 | 4 | 12 | 10 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 3 | 1 | 14 | 1 | 15 | 0 | 3 | 0 | 3 | 2 | 14 | 4 | 15 | 3
+INPUTS | 23 | initialize  | data_L<3>.PIN  | dma<3>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<9>  | dma<11>  | dma<10>  | dma<8>  | dma<6>  | dma<4>  | dma<9>  | dma<7>  | dma<5>  | EXP35_.EXP  | EXP36_.EXP
+INPUTMC | 12 | 3 | 1 | 3 | 17 | 11 | 4 | 4 | 1 | 4 | 9 | 1 | 11 | 0 | 11 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 0 | 3 | 2
+INPUTP | 11 | 195 | 262 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201 | 6
+IMPORTS | 2 | 3 | 0 | 3 | 2
+EQ | 20 | 
+   dma<3>.T = initialize & dma<3> & !dt
+	# dma<11> & dma<10> & dma<8> & dma<6> & dma<4> & 
+	dma<9> & dma<7> & dma<5> & dt
+	# !initialize & !data_L<3>.PIN & !dma<3> & !dt & 
+	md_L<11> & !md_L<10> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !data_L<3>.PIN & !dma<3> & !dt & 
+	md_L<11> & !md_L<9> & md_L<8> & md_L<7> & md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB4_1
+	# dma<3> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<3>.PIN & dma<3> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+;Imported pterms FB4_3
+	# data_L<3>.PIN & dma<3> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   dma<3>.CLK = dt;
+
+MACROCELL | 9 | 7 | ema_L_0_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | dtema_L<2>  | my_db
+INPUTMC | 3 | 3 | 17 | 10 | 17 | 8 | 14
+EQ | 2 | 
+   !ema_L<0> = dt & !dtema_L<2>;
+   !ema_L<0>.OE = !dt & !my_db;
+
+MACROCELL | 9 | 9 | ema_L_1_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | dtema_L<1>  | my_db
+INPUTMC | 3 | 3 | 17 | 8 | 15 | 8 | 14
+EQ | 2 | 
+   !ema_L<1> = dt & !dtema_L<1>;
+   !ema_L<1>.OE = !dt & !my_db;
+
+MACROCELL | 9 | 10 | ema_L_2_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | dtema_L<0>  | my_db
+INPUTMC | 3 | 3 | 17 | 4 | 13 | 8 | 14
+EQ | 2 | 
+   !ema_L<2> = dt & !dtema_L<0>;
+   !ema_L<2>.OE = !dt & !my_db;
+
+MACROCELL | 8 | 1 | ma_L_0_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | dtma_L<11>  | my_db
+INPUTMC | 3 | 3 | 17 | 10 | 14 | 8 | 14
+EQ | 3 | 
+   !ma_L<0> = dt & !dtma_L<11>
+	# !dt & my_db;
+   !ma_L<0>.OE = !dt & !my_db;
+
+MACROCELL | 12 | 14 | ma_L_10_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | dtma_L<1>  | my_db
+INPUTMC | 3 | 3 | 17 | 4 | 10 | 8 | 14
+EQ | 2 | 
+   !ma_L<10> = dt & !dtma_L<1>;
+   !ma_L<10>.OE = !dt & !my_db;
+
+MACROCELL | 8 | 5 | ma_L_11_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 4 | dt  | dtma_L<0>  | wc  | my_db
+INPUTMC | 4 | 3 | 17 | 4 | 12 | 7 | 14 | 8 | 14
+EQ | 3 | 
+   !ma_L<11> = dt & !dtma_L<0>
+	# !dt & !wc & my_db;
+   !ma_L<11>.OE = !dt & !my_db;
+
+MACROCELL | 2 | 1 | ma_L_1_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | my_db  | dtma_L<10>
+INPUTMC | 3 | 3 | 17 | 8 | 14 | 10 | 15
+EQ | 3 | 
+   !ma_L<1> = dt & !dtma_L<10>
+	# !dt & my_db;
+   !ma_L<1>.OE = !dt & !my_db;
+
+MACROCELL | 15 | 10 | ma_L_2_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | my_db  | dtma_L<9>
+INPUTMC | 3 | 3 | 17 | 8 | 14 | 6 | 0
+EQ | 3 | 
+   !ma_L<2> = dt & !dtma_L<9>
+	# !dt & my_db;
+   !ma_L<2>.OE = !dt & !my_db;
+
+MACROCELL | 11 | 9 | ma_L_3_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | my_db  | dtma_L<8>
+INPUTMC | 3 | 3 | 17 | 8 | 14 | 6 | 3
+EQ | 3 | 
+   !ma_L<3> = dt & !dtma_L<8>
+	# !dt & my_db;
+   !ma_L<3>.OE = !dt & !my_db;
+
+MACROCELL | 9 | 13 | ma_L_4_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | my_db  | dtma_L<7>
+INPUTMC | 3 | 3 | 17 | 8 | 14 | 6 | 4
+EQ | 3 | 
+   !ma_L<4> = dt & !dtma_L<7>
+	# !dt & my_db;
+   !ma_L<4>.OE = !dt & !my_db;
+
+MACROCELL | 9 | 2 | ma_L_5_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | my_db  | dtma_L<6>
+INPUTMC | 3 | 3 | 17 | 8 | 14 | 4 | 3
+EQ | 3 | 
+   !ma_L<5> = dt & !dtma_L<6>
+	# !dt & my_db;
+   !ma_L<5>.OE = !dt & !my_db;
+
+MACROCELL | 9 | 4 | ma_L_6_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | my_db  | dtma_L<5>
+INPUTMC | 3 | 3 | 17 | 8 | 14 | 4 | 5
+EQ | 3 | 
+   !ma_L<6> = dt & !dtma_L<5>
+	# !dt & my_db;
+   !ma_L<6>.OE = !dt & !my_db;
+
+MACROCELL | 10 | 2 | ma_L_7_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | dtma_L<4>  | my_db
+INPUTMC | 3 | 3 | 17 | 4 | 6 | 8 | 14
+EQ | 2 | 
+   !ma_L<7> = dt & !dtma_L<4>;
+   !ma_L<7>.OE = !dt & !my_db;
+
+MACROCELL | 9 | 5 | ma_L_8_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | my_db  | dtma_L<3>
+INPUTMC | 3 | 3 | 17 | 8 | 14 | 4 | 7
+EQ | 3 | 
+   !ma_L<8> = dt & !dtma_L<3>
+	# !dt & my_db;
+   !ma_L<8>.OE = !dt & !my_db;
+
+MACROCELL | 10 | 13 | ma_L_9_OBUFT
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | dt  | dtma_L<2>  | my_db
+INPUTMC | 3 | 3 | 17 | 4 | 8 | 8 | 14
+EQ | 2 | 
+   !ma_L<9> = dt & !dtma_L<2>;
+   !ma_L<9>.OE = !dt & !my_db;
+
+MACROCELL | 3 | 17 | dt
+ATTRIBUTES | 8520480 | 0
+OUTPUTMC | 141 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 9 | 7 | 9 | 9 | 9 | 10 | 8 | 1 | 12 | 14 | 8 | 5 | 2 | 1 | 15 | 10 | 11 | 9 | 9 | 13 | 9 | 2 | 9 | 4 | 10 | 2 | 9 | 5 | 10 | 13 | 3 | 17 | 7 | 15 | 9 | 17 | 5 | 14 | 5 | 9 | 4 | 16 | 6 | 10 | 6 | 6 | 6 | 13 | 7 | 16 | 6 | 5 | 4 | 15 | 4 | 0 | 7 | 2 | 7 | 7 | 4 | 14 | 8 | 16 | 8 | 7 | 14 | 2 | 15 | 1 | 13 | 17 | 13 | 12 | 13 | 11 | 13 | 8 | 13 | 6 | 13 | 15 | 13 | 16 | 13 | 14 | 0 | 3 | 0 | 5 | 0 | 6 | 0 | 8 | 0 | 10 | 0 | 12 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 6 | 1 | 8 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 3 | 0 | 3 | 2 | 3 | 4 | 3 | 6 | 3 | 10 | 3 | 12 | 4 | 2 | 4 | 3 | 4 | 5 | 4 | 8 | 4 | 10 | 4 | 12 | 4 | 13 | 5 | 0 | 5 | 2 | 5 | 3 | 5 | 5 | 5 | 8 | 5 | 11 | 5 | 12 | 5 | 16 | 5 | 17 | 6 | 8 | 6 | 9 | 6 | 12 | 7 | 1 | 7 | 3 | 7 | 17 | 9 | 16 | 11 | 0 | 11 | 2 | 12 | 0 | 12 | 2 | 12 | 9 | 12 | 11 | 13 | 3 | 13 | 10 | 14 | 0 | 14 | 1 | 14 | 3 | 14 | 4 | 14 | 8 | 14 | 9 | 14 | 11 | 15 | 0 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 6 | 15 | 17
+INPUTS | 4 | ca  | my_db  | initialize  | dt
+INPUTMC | 3 | 9 | 16 | 8 | 14 | 3 | 17
+INPUTP | 1 | 195
+EQ | 3 | 
+   dt.D = ca & my_db
+	# !initialize & dt & !my_db;
+   dt.CLK = my_db;
+
+MACROCELL | 7 | 15 | writing
+ATTRIBUTES | 4326176 | 0
+OUTPUTMC | 61 | 13 | 0 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 7 | 15 | 9 | 17 | 5 | 14 | 5 | 9 | 4 | 16 | 6 | 10 | 6 | 6 | 6 | 13 | 7 | 16 | 6 | 5 | 4 | 13 | 7 | 2 | 7 | 7 | 4 | 14 | 8 | 16 | 14 | 13 | 13 | 17 | 13 | 12 | 13 | 11 | 13 | 8 | 13 | 6 | 13 | 15 | 13 | 16 | 13 | 14 | 0 | 13 | 4 | 0 | 4 | 1 | 4 | 15 | 5 | 0 | 5 | 2 | 5 | 5 | 5 | 8 | 5 | 11 | 5 | 12 | 5 | 16 | 5 | 17 | 6 | 1 | 6 | 8 | 6 | 9 | 6 | 12 | 7 | 1 | 7 | 3 | 7 | 4 | 7 | 17 | 9 | 0 | 13 | 3 | 13 | 10 | 14 | 8 | 14 | 11
+INPUTS | 18 | initialize  | writing  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | tp3  | dt  | md_L<10>  | $OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226  | $OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227  | $OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229  | $OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228  | $OpTx$bmd_L<10>_$NODETRST/bmd_L<10>_$NODETRST_D2_INV$224  | $OpTx$$OpTx$FX_DC$81_INV$223
+INPUTMC | 8 | 7 | 15 | 3 | 17 | 13 | 12 | 13 | 11 | 13 | 8 | 13 | 10 | 13 | 15 | 13 | 16
+INPUTP | 10 | 195 | 6 | 234 | 148 | 253 | 227 | 8 | 201 | 32 | 145
+EQ | 12 | 
+   writing.T = initialize & writing
+	# !initialize & !writing & !md_L<9> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# tp3 & !dt & writing & !md_L<10> & md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+   writing.CLK = tp3 & md_L<6> & 
+	$OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226 & 
+	!$OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227 & 
+	!$OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229 & 
+	!$OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228 & 
+	$OpTx$bmd_L<10>_$NODETRST/bmd_L<10>_$NODETRST_D2_INV$224 & $OpTx$$OpTx$FX_DC$81_INV$223;
+
+MACROCELL | 9 | 17 | busy
+ATTRIBUTES | 8520480 | 0
+OUTPUTMC | 8 | 4 | 14 | 9 | 17 | 7 | 14 | 4 | 15 | 8 | 14 | 4 | 13 | 13 | 17 | 13 | 3
+INPUTS | 18 | initialize  | busy  | wc  | per  | wls  | overflow_L  | dt  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | writing  | EXP66_.EXP  | busy/busy_CLKF__$INT  | ca.EXP
+INPUTMC | 9 | 9 | 17 | 7 | 14 | 7 | 16 | 6 | 5 | 3 | 17 | 7 | 15 | 9 | 0 | 9 | 15 | 9 | 16
+INPUTP | 9 | 195 | 163 | 145 | 234 | 148 | 253 | 227 | 8 | 201
+IMPORTS | 2 | 9 | 0 | 9 | 16
+EQ | 13 | 
+   busy.D = !initialize & busy & !wc & !per & !wls
+	# !initialize & busy & !per & !wls & overflow_L
+	# !initialize & !dt & !md_L<10> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & !writing & !md_L<10> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB10_1
+	# !initialize & !writing & !md_L<9> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB10_17
+	# !initialize & !dt & !md_L<9> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+   busy.CLK = !busy/busy_CLKF__$INT;
+
+MACROCELL | 5 | 15 | cie
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 7 | 8 | 17 | 5 | 15 | 5 | 5 | 5 | 13 | 5 | 14 | 5 | 16 | 5 | 17
+INPUTS | 9 | cie  | md_L<11>  | md_L<3>  | md_L<4>  | md_L<8>  | data_L<5>.PIN  | tp3  | EXP52_.EXP  | EXP53_.EXP
+INPUTMC | 3 | 5 | 15 | 5 | 14 | 5 | 16
+INPUTP | 6 | 29 | 201 | 8 | 234 | 254 | 32
+IMPORTS | 2 | 5 | 14 | 5 | 16
+EQ | 27 | 
+   cie = cie & md_L<11>
+	# cie & md_L<8>
+	# cie & md_L<4>
+	# cie & md_L<3>
+	# !data_L<5>.PIN & !tp3 & cie
+;Imported pterms FB6_15
+	# dt & writing & cie
+	# !dt & cie & !md_L<10>
+	# !dt & cie & !md_L<5>
+	# !writing & cie & !md_L<10>
+	# !writing & cie & !md_L<5>
+;Imported pterms FB6_14
+	# !data_L<5>.PIN & !dt & cie & !md_L<9>
+;Imported pterms FB6_17
+	# !tp3 & cie & md_L<9>
+	# !dt & cie & !md_L<7>
+	# !dt & cie & !md_L<6>
+	# !writing & cie & !md_L<7>
+	# !writing & cie & !md_L<6>
+;Imported pterms FB6_18
+	# !data_L<5>.PIN & !writing & cie & !md_L<9>
+	# !data_L<5>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<5>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>;
+
+MACROCELL | 5 | 10 | eie
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 6 | 5 | 13 | 5 | 10 | 8 | 17 | 5 | 9 | 5 | 11 | 5 | 12
+INPUTS | 9 | eie  | md_L<11>  | md_L<3>  | md_L<4>  | md_L<8>  | data_L<3>.PIN  | tp3  | EXP49_.EXP  | EXP50_.EXP
+INPUTMC | 3 | 5 | 10 | 5 | 9 | 5 | 11
+INPUTP | 6 | 29 | 201 | 8 | 234 | 262 | 32
+IMPORTS | 2 | 5 | 9 | 5 | 11
+EQ | 26 | 
+   eie = eie & md_L<11>
+	# eie & md_L<8>
+	# eie & md_L<4>
+	# eie & md_L<3>
+	# !data_L<3>.PIN & !tp3 & eie
+;Imported pterms FB6_10
+	# dt & writing & eie
+	# !dt & eie & !md_L<10>
+	# !dt & eie & !md_L<5>
+	# !writing & eie & !md_L<10>
+	# !writing & eie & !md_L<5>
+;Imported pterms FB6_12
+	# !tp3 & eie & md_L<9>
+	# !dt & eie & !md_L<7>
+	# !dt & eie & !md_L<6>
+	# !writing & eie & !md_L<7>
+	# !writing & eie & !md_L<6>
+;Imported pterms FB6_13
+	# !data_L<3>.PIN & !dt & eie & !md_L<9>
+	# !data_L<3>.PIN & !writing & eie & !md_L<9>
+	# !data_L<3>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<3>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>;
+
+MACROCELL | 4 | 17 | f<0>
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 6 | 4 | 16 | 4 | 17 | 4 | 13 | 4 | 0 | 4 | 15 | 14 | 11
+INPUTS | 9 | f<0>  | md_L<11>  | md_L<3>  | md_L<4>  | md_L<8>  | data_L<8>.PIN  | tp3  | EXP41_.EXP  | EXP42_.EXP
+INPUTMC | 3 | 4 | 17 | 4 | 0 | 4 | 16
+INPUTP | 6 | 29 | 201 | 8 | 234 | 158 | 32
+IMPORTS | 2 | 4 | 0 | 4 | 16
+EQ | 27 | 
+   f<0> = f<0> & md_L<11>
+	# f<0> & md_L<8>
+	# f<0> & md_L<4>
+	# f<0> & md_L<3>
+	# !data_L<8>.PIN & !tp3 & f<0>
+;Imported pterms FB5_1
+	# !tp3 & f<0> & md_L<9>
+	# !dt & f<0> & !md_L<7>
+	# !dt & f<0> & !md_L<6>
+	# !writing & f<0> & !md_L<7>
+	# !writing & f<0> & !md_L<6>
+;Imported pterms FB5_2
+	# !data_L<8>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+;Imported pterms FB5_17
+	# dt & writing & f<0>
+	# !dt & f<0> & !md_L<10>
+	# !dt & f<0> & !md_L<5>
+	# !writing & f<0> & !md_L<10>
+	# !writing & f<0> & !md_L<5>
+;Imported pterms FB5_16
+	# !data_L<8>.PIN & !dt & f<0> & !md_L<9>
+	# !data_L<8>.PIN & !writing & f<0> & !md_L<9>
+	# !data_L<8>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>;
+
+MACROCELL | 6 | 11 | f<1>
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 7 | 13 | 2 | 6 | 11 | 8 | 15 | 6 | 10 | 6 | 12 | 6 | 13 | 13 | 0
+INPUTS | 9 | f<1>  | md_L<11>  | md_L<3>  | md_L<4>  | md_L<8>  | data_L<7>.PIN  | tp3  | EXP59_.EXP  | EXP60_.EXP
+INPUTMC | 3 | 6 | 11 | 6 | 10 | 6 | 12
+INPUTP | 6 | 29 | 201 | 8 | 234 | 185 | 32
+IMPORTS | 2 | 6 | 10 | 6 | 12
+EQ | 26 | 
+   f<1> = f<1> & md_L<11>
+	# f<1> & md_L<8>
+	# f<1> & md_L<4>
+	# f<1> & md_L<3>
+	# !data_L<7>.PIN & !tp3 & f<1>
+;Imported pterms FB7_11
+	# dt & writing & f<1>
+	# !dt & f<1> & !md_L<10>
+	# !dt & f<1> & !md_L<5>
+	# !writing & f<1> & !md_L<10>
+	# !writing & f<1> & !md_L<5>
+;Imported pterms FB7_13
+	# !tp3 & f<1> & md_L<9>
+	# !dt & f<1> & !md_L<7>
+	# !dt & f<1> & !md_L<6>
+	# !writing & f<1> & !md_L<7>
+	# !writing & f<1> & !md_L<6>
+;Imported pterms FB7_14
+	# !data_L<7>.PIN & !dt & f<1> & !md_L<9>
+	# !data_L<7>.PIN & !writing & f<1> & !md_L<9>
+	# !data_L<7>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<7>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>;
+
+MACROCELL | 6 | 7 | f<2>
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 6 | 13 | 4 | 6 | 7 | 10 | 17 | 6 | 6 | 6 | 8 | 6 | 9
+INPUTS | 9 | f<2>  | md_L<11>  | md_L<3>  | md_L<4>  | md_L<8>  | data_L<6>.PIN  | tp3  | EXP56_.EXP  | EXP57_.EXP
+INPUTMC | 3 | 6 | 7 | 6 | 6 | 6 | 8
+INPUTP | 6 | 29 | 201 | 8 | 234 | 187 | 32
+IMPORTS | 2 | 6 | 6 | 6 | 8
+EQ | 26 | 
+   f<2> = f<2> & md_L<11>
+	# f<2> & md_L<8>
+	# f<2> & md_L<4>
+	# f<2> & md_L<3>
+	# !data_L<6>.PIN & !tp3 & f<2>
+;Imported pterms FB7_7
+	# dt & writing & f<2>
+	# !dt & f<2> & !md_L<10>
+	# !dt & f<2> & !md_L<5>
+	# !writing & f<2> & !md_L<10>
+	# !writing & f<2> & !md_L<5>
+;Imported pterms FB7_9
+	# !tp3 & f<2> & md_L<9>
+	# !dt & f<2> & !md_L<7>
+	# !dt & f<2> & !md_L<6>
+	# !writing & f<2> & !md_L<7>
+	# !writing & f<2> & !md_L<6>
+;Imported pterms FB7_10
+	# !data_L<6>.PIN & !dt & f<2> & !md_L<9>
+	# !data_L<6>.PIN & !writing & f<2> & !md_L<9>
+	# !data_L<6>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<6>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>;
+
+MACROCELL | 7 | 0 | pie
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 7 | 8 | 17 | 7 | 0 | 5 | 8 | 7 | 1 | 7 | 2 | 7 | 16 | 7 | 17
+INPUTS | 9 | pie  | md_L<11>  | md_L<3>  | md_L<4>  | md_L<8>  | data_L<4>.PIN  | tp3  | EXP62_.EXP  | EXP65_.EXP
+INPUTMC | 3 | 7 | 0 | 7 | 1 | 7 | 17
+INPUTP | 6 | 29 | 201 | 8 | 234 | 256 | 32
+IMPORTS | 2 | 7 | 1 | 7 | 17
+EQ | 27 | 
+   pie = pie & md_L<11>
+	# pie & md_L<8>
+	# pie & md_L<4>
+	# pie & md_L<3>
+	# !data_L<4>.PIN & !tp3 & pie
+;Imported pterms FB8_2
+	# !tp3 & pie & md_L<9>
+	# !dt & pie & !md_L<7>
+	# !dt & pie & !md_L<6>
+	# !writing & pie & !md_L<7>
+	# !writing & pie & !md_L<6>
+;Imported pterms FB8_3
+	# !data_L<4>.PIN & !writing & pie & !md_L<9>
+	# !data_L<4>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<4>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+;Imported pterms FB8_18
+	# dt & writing & pie
+	# !dt & pie & !md_L<10>
+	# !dt & pie & !md_L<5>
+	# !writing & pie & !md_L<10>
+	# !writing & pie & !md_L<5>
+;Imported pterms FB8_17
+	# !data_L<4>.PIN & !dt & pie & !md_L<9>;
+
+MACROCELL | 7 | 14 | wc
+ATTRIBUTES | 8520480 | 0
+OUTPUTMC | 5 | 8 | 5 | 9 | 17 | 7 | 14 | 9 | 16 | 9 | 15
+INPUTS | 5 | initialize  | wc  | my_db  | busy  | word_L
+INPUTMC | 3 | 7 | 14 | 8 | 14 | 9 | 17
+INPUTP | 2 | 195 | 242
+EQ | 3 | 
+   wc.D = !initialize & wc & !my_db
+	# busy & my_db & !word_L;
+   wc.CLK = my_db;
+
+MACROCELL | 7 | 16 | per
+ATTRIBUTES | 8520480 | 0
+OUTPUTMC | 7 | 5 | 1 | 9 | 17 | 7 | 16 | 9 | 15 | 8 | 17 | 5 | 2 | 7 | 17
+INPUTS | 21 | initialize  | dt  | per  | tp3  | writing  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | $OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226  | $OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227  | $OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229  | $OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228  | $OpTx$$OpTx$FX_DC$81_INV$223  | $OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225  | data_L<4>.PIN  | pie  | md_L<9>
+INPUTMC | 10 | 3 | 17 | 7 | 16 | 7 | 15 | 13 | 12 | 13 | 11 | 13 | 8 | 13 | 10 | 13 | 16 | 13 | 14 | 7 | 0
+INPUTP | 11 | 195 | 32 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 256 | 6
+EXPORTS | 1 | 7 | 17
+EQ | 11 | 
+   !per.D = initialize
+	# dt & !per
+	# tp3 & dt & !writing & !md_L<11> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+   per.CLK = tp3 & md_L<6> & 
+	$OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226 & 
+	!$OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227 & 
+	!$OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229 & 
+	!$OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228 & $OpTx$$OpTx$FX_DC$81_INV$223 & 
+	$OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225;
+    per.EXP  =  !data_L<4>.PIN & !dt & pie & !md_L<9>
+
+MACROCELL | 6 | 5 | wls
+ATTRIBUTES | 4326176 | 0
+OUTPUTMC | 6 | 6 | 2 | 9 | 17 | 6 | 5 | 9 | 15 | 8 | 17 | 6 | 1
+INPUTS | 19 | initialize  | wls  | writing  | protect  | tp3  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dt  | $OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226  | $OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227  | $OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229  | $OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228  | $OpTx$$OpTx$FX_DC$81_INV$223  | $OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225
+INPUTMC | 9 | 6 | 5 | 7 | 15 | 3 | 17 | 13 | 12 | 13 | 11 | 13 | 8 | 13 | 10 | 13 | 16 | 13 | 14
+INPUTP | 10 | 195 | 44 | 32 | 29 | 234 | 148 | 253 | 227 | 8 | 201
+EQ | 12 | 
+   wls.T = initialize & wls
+	# !initialize & writing & !wls & protect
+	# tp3 & !writing & wls & !md_L<11> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# tp3 & !dt & wls & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3> & !protect;
+   wls.CLK = tp3 & md_L<6> & 
+	$OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226 & 
+	!$OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227 & 
+	!$OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229 & 
+	!$OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228 & $OpTx$$OpTx$FX_DC$81_INV$223 & 
+	$OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225;
+
+MACROCELL | 9 | 16 | ca
+ATTRIBUTES | 8520480 | 0
+OUTPUTMC | 3 | 3 | 17 | 9 | 16 | 9 | 17
+INPUTS | 12 | wc  | my_db  | initialize  | ca  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 4 | 7 | 14 | 8 | 14 | 9 | 16 | 3 | 17
+INPUTP | 8 | 195 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 9 | 17
+EQ | 5 | 
+   ca.D = wc & my_db
+	# !initialize & ca & !my_db;
+   ca.CLK = my_db;
+    ca.EXP  =  !initialize & !dt & !md_L<9> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+
+MACROCELL | 4 | 15 | done
+ATTRIBUTES | 8520480 | 0
+OUTPUTMC | 4 | 4 | 15 | 8 | 17 | 4 | 14 | 4 | 16
+INPUTS | 17 | tp3  | dt  | done  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<8>.PIN  | busy  | f<0>  | md_L<9>  | writing  | md_L<10>  | skip_L_OBUF.EXP
+INPUTMC | 6 | 3 | 17 | 4 | 15 | 9 | 17 | 4 | 17 | 7 | 15 | 4 | 14
+INPUTP | 11 | 32 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 158 | 6 | 145
+EXPORTS | 1 | 4 | 16
+IMPORTS | 1 | 4 | 14
+EQ | 15 | 
+   done.D = tp3 & !dt & done & !md_L<11> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB5_15
+	# tp3 & !dt & !busy & !md_L<11> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# tp3 & !writing & !busy & !md_L<11> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# tp3 & !writing & done & !md_L<11> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+   done.CLK = !busy;
+    done.EXP  =  !data_L<8>.PIN & !dt & f<0> & !md_L<9>
+	# !data_L<8>.PIN & !writing & f<0> & !md_L<9>
+	# !data_L<8>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 4 | 2 | idle
+ATTRIBUTES | 8520480 | 0
+OUTPUTMC | 5 | 13 | 1 | 13 | 17 | 8 | 14 | 4 | 3 | 4 | 1
+INPUTS | 15 | initialize  | my_db  | dma<10>  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<10>.PIN  | md_L<10>  | md_L<9>  | dtma_L<6>.EXP
+INPUTMC | 4 | 8 | 14 | 4 | 1 | 3 | 17 | 4 | 3
+INPUTP | 11 | 195 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 155 | 145 | 6
+EXPORTS | 1 | 4 | 1
+IMPORTS | 1 | 4 | 3
+EQ | 13 | 
+   !idle.D = ;Imported pterms FB5_4
+	  !dt & my_db
+	# !initialize & !idle & !my_db;
+   idle.CLK = my_db;
+    idle.EXP  =  initialize & dma<10> & !dt
+	# dma<10> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<10>.PIN & dma<10> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+	# data_L<10>.PIN & dma<10> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 7 | 2 | c0_L_OBUF
+ATTRIBUTES | 264962 | 0
+OUTPUTMC | 1 | 7 | 1
+INPUTS | 14 | dt  | md_L<11>  | md_L<10>  | md_L<9>  | writing  | data_L<4>.PIN  | pie  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | EXP63_.EXP
+INPUTMC | 4 | 3 | 17 | 7 | 15 | 7 | 0 | 7 | 3
+INPUTP | 10 | 29 | 145 | 6 | 256 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 7 | 1
+IMPORTS | 1 | 7 | 3
+EQ | 22 | 
+   !c0_L = !dt & md_L<11> & !md_L<10> & !md_L<9>
+	# !writing & md_L<11> & !md_L<10> & !md_L<9>
+;Imported pterms FB8_4
+	# !dt & !md_L<11> & md_L<10> & !md_L<9>
+	# !writing & !md_L<11> & md_L<10> & !md_L<9>
+	# !dt & md_L<11> & !md_L<10> & !md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & md_L<11> & !md_L<10> & !md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !dt & !md_L<11> & !md_L<10> & md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB8_5
+	# !writing & !md_L<11> & !md_L<10> & md_L<9> & 
+	md_L<8> & md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>;
+    c0_L_OBUF.EXP  =  !data_L<4>.PIN & !writing & pie & !md_L<9>
+	# !data_L<4>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<4>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 7 | 7 | c1_L_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 10 | dt  | md_L<11>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | writing
+INPUTMC | 2 | 3 | 17 | 7 | 15
+INPUTP | 8 | 29 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EQ | 4 | 
+   c1_L = !dt & !md_L<11> & !md_L<9> & md_L<8> & md_L<7> & 
+	!md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+
+MACROCELL | 8 | 14 | my_db
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 24 | 9 | 7 | 9 | 9 | 9 | 10 | 8 | 1 | 12 | 14 | 8 | 5 | 2 | 1 | 15 | 10 | 11 | 9 | 9 | 13 | 9 | 2 | 9 | 4 | 10 | 2 | 9 | 5 | 10 | 13 | 3 | 17 | 7 | 14 | 9 | 16 | 4 | 2 | 8 | 13 | 8 | 11 | 8 | 2 | 8 | 7 | 4 | 3
+INPUTS | 11 | data_L<1>.PIN  | data_L<0>.PIN  | data_L<6>.PIN  | data_L<5>.PIN  | data_L<4>.PIN  | data_L<3>.PIN  | data_L<2>.PIN  | idle  | busy  | word_L  | tp4
+INPUTMC | 2 | 4 | 2 | 9 | 17
+INPUTP | 9 | 45 | 193 | 187 | 254 | 256 | 262 | 80 | 242 | 60
+EQ | 8 | 
+   my_db.D = !data_L<1>.PIN & !data_L<0>.PIN & !data_L<6>.PIN & 
+	!data_L<5>.PIN & !data_L<4>.PIN & !data_L<3>.PIN & !data_L<2>.PIN & 
+	!idle
+	# !data_L<1>.PIN & !data_L<0>.PIN & !data_L<6>.PIN & 
+	!data_L<5>.PIN & !data_L<4>.PIN & !data_L<3>.PIN & !data_L<2>.PIN & 
+	busy & !word_L;
+   my_db.CLK = tp4;	// GCK
+   my_db.CE = tp4;
+GLOBALS | 1 | 2 | tp4
+
+MACROCELL | 4 | 13 | dtema_L<0>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 2 | 9 | 10 | 4 | 14
+INPUTS | 13 | f<0>  | tp3  | dt  | busy  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | writing
+INPUTMC | 4 | 4 | 17 | 3 | 17 | 9 | 17 | 7 | 15
+INPUTP | 9 | 32 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 4 | 14
+EQ | 7 | 
+   dtema_L<0>.D = !f<0>;
+   dtema_L<0>.CLK = tp3;
+   dtema_L<0>.CE = tp3;
+    dtema_L<0>.EXP  =  !dt & busy & md_L<11> & !md_L<10> & !md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & busy & md_L<11> & !md_L<10> & !md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+
+MACROCELL | 8 | 15 | dtema_L<1>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 1 | 9 | 9
+INPUTS | 2 | f<1>  | tp3
+INPUTMC | 1 | 6 | 11
+INPUTP | 1 | 32
+EQ | 3 | 
+   dtema_L<1>.D = !f<1>;
+   dtema_L<1>.CLK = tp3;
+   dtema_L<1>.CE = tp3;
+
+MACROCELL | 10 | 17 | dtema_L<2>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 1 | 9 | 7
+INPUTS | 2 | f<2>  | tp3
+INPUTMC | 1 | 6 | 7
+INPUTP | 1 | 32
+EQ | 3 | 
+   dtema_L<2>.D = !f<2>;
+   dtema_L<2>.CLK = tp3;
+   dtema_L<2>.CE = tp3;
+
+MACROCELL | 4 | 12 | dtma_L<0>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 2 | 8 | 5 | 4 | 11
+INPUTS | 12 | md_L<11>  | tp3  | data_L<7>.PIN  | dma<7>  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 4 | 11 | 3 | 17
+INPUTP | 10 | 29 | 32 | 185 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 4 | 11
+EQ | 6 | 
+   dtma_L<0>.D = md_L<11>;
+   dtma_L<0>.CLK = tp3;
+   dtma_L<0>.CE = tp3;
+    dtma_L<0>.EXP  =  data_L<7>.PIN & dma<7> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 10 | 15 | dtma_L<10>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 2 | md_L<1>  | tp3
+INPUTP | 2 | 89 | 32
+EQ | 3 | 
+   dtma_L<10>.D = md_L<1>;
+   dtma_L<10>.CLK = tp3;
+   dtma_L<10>.CE = tp3;
+
+MACROCELL | 10 | 14 | dtma_L<11>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 2 | md_L<0>  | tp3
+INPUTP | 2 | 188 | 32
+EQ | 3 | 
+   dtma_L<11>.D = md_L<0>;
+   dtma_L<11>.CLK = tp3;
+   dtma_L<11>.CE = tp3;
+
+MACROCELL | 4 | 10 | dtma_L<1>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 2 | 12 | 14 | 4 | 11
+INPUTS | 12 | md_L<10>  | tp3  | dma<7>  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<7>.PIN
+INPUTMC | 2 | 4 | 11 | 3 | 17
+INPUTP | 10 | 145 | 32 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 185
+EXPORTS | 1 | 4 | 11
+EQ | 8 | 
+   dtma_L<1>.D = md_L<10>;
+   dtma_L<1>.CLK = tp3;
+   dtma_L<1>.CE = tp3;
+    dtma_L<1>.EXP  =  dma<7> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<7>.PIN & dma<7> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 4 | 8 | dtma_L<2>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 2 | 10 | 13 | 4 | 9
+INPUTS | 14 | dma<8>  | tp3  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<8>.PIN  | md_L<10>  | md_L<9>  | dtma_L<3>.EXP
+INPUTMC | 3 | 4 | 9 | 3 | 17 | 4 | 7
+INPUTP | 11 | 32 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 158 | 145 | 6
+EXPORTS | 1 | 4 | 9
+IMPORTS | 1 | 4 | 7
+EQ | 12 | 
+   dtma_L<2>.D = ;Imported pterms FB5_8
+	  md_L<9>;
+   dtma_L<2>.CLK = tp3;
+   dtma_L<2>.CE = tp3;
+    dtma_L<2>.EXP  =  dma<8> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<8>.PIN & dma<8> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+	# data_L<8>.PIN & dma<8> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 4 | 7 | dtma_L<3>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 2 | 9 | 5 | 4 | 8
+INPUTS | 3 | md_L<8>  | tp3  | md_L<9>
+INPUTP | 3 | 234 | 32 | 6
+EXPORTS | 1 | 4 | 8
+EQ | 4 | 
+   dtma_L<3>.D = md_L<8>;
+   dtma_L<3>.CLK = tp3;
+   dtma_L<3>.CE = tp3;
+    dtma_L<3>.EXP  =  md_L<9>
+
+MACROCELL | 4 | 6 | dtma_L<4>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 2 | 10 | 2 | 4 | 5
+INPUTS | 3 | md_L<7>  | tp3  | md_L<6>
+INPUTP | 3 | 148 | 32 | 253
+EXPORTS | 1 | 4 | 5
+EQ | 4 | 
+   dtma_L<4>.D = md_L<7>;
+   dtma_L<4>.CLK = tp3;
+   dtma_L<4>.CE = tp3;
+    dtma_L<4>.EXP  =  md_L<6>
+
+MACROCELL | 4 | 5 | dtma_L<5>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 2 | 9 | 4 | 4 | 4
+INPUTS | 14 | dma<9>  | tp3  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<9>.PIN  | md_L<10>  | md_L<9>  | dtma_L<4>.EXP
+INPUTMC | 3 | 4 | 4 | 3 | 17 | 4 | 6
+INPUTP | 11 | 32 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 190 | 145 | 6
+EXPORTS | 1 | 4 | 4
+IMPORTS | 1 | 4 | 6
+EQ | 12 | 
+   dtma_L<5>.D = ;Imported pterms FB5_7
+	  md_L<6>;
+   dtma_L<5>.CLK = tp3;
+   dtma_L<5>.CE = tp3;
+    dtma_L<5>.EXP  =  dma<9> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<9>.PIN & dma<9> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+	# data_L<9>.PIN & dma<9> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 4 | 3 | dtma_L<6>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 2 | 9 | 2 | 4 | 2
+INPUTS | 6 | md_L<5>  | tp3  | dt  | my_db  | initialize  | idle
+INPUTMC | 3 | 3 | 17 | 8 | 14 | 4 | 2
+INPUTP | 3 | 227 | 32 | 195
+EXPORTS | 1 | 4 | 2
+EQ | 5 | 
+   dtma_L<6>.D = md_L<5>;
+   dtma_L<6>.CLK = tp3;
+   dtma_L<6>.CE = tp3;
+    dtma_L<6>.EXP  =  !dt & my_db
+	# !initialize & !idle & !my_db
+
+MACROCELL | 6 | 4 | dtma_L<7>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 1 | 9 | 13
+INPUTS | 2 | md_L<4>  | tp3
+INPUTP | 2 | 8 | 32
+EQ | 3 | 
+   dtma_L<7>.D = md_L<4>;
+   dtma_L<7>.CLK = tp3;
+   dtma_L<7>.CE = tp3;
+
+MACROCELL | 6 | 3 | dtma_L<8>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 1 | 11 | 9
+INPUTS | 2 | md_L<3>  | tp3
+INPUTP | 2 | 201 | 32
+EQ | 3 | 
+   dtma_L<8>.D = md_L<3>;
+   dtma_L<8>.CLK = tp3;
+   dtma_L<8>.CE = tp3;
+
+MACROCELL | 6 | 0 | dtma_L<9>
+ATTRIBUTES | 8520544 | 0
+OUTPUTMC | 1 | 15 | 10
+INPUTS | 2 | md_L<2>  | tp3
+INPUTP | 2 | 237 | 32
+EQ | 3 | 
+   dtma_L<9>.D = md_L<2>;
+   dtma_L<9>.CLK = tp3;
+   dtma_L<9>.CE = tp3;
+
+MACROCELL | 8 | 13 | load_cont
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 1 | 10 | 10
+INPUTS | 2 | my_db  | tp1
+INPUTMC | 1 | 8 | 14
+INPUTP | 1 | 57
+EQ | 3 | 
+   load_cont.D = my_db;
+   load_cont.CLK = tp1;	// GCK
+   load_cont.CE = tp1;
+GLOBALS | 1 | 2 | tp1
+
+MACROCELL | 4 | 14 | skip_L_OBUF
+ATTRIBUTES | 264962 | 0
+OUTPUTMC | 1 | 4 | 15
+INPUTS | 14 | dt  | md_L<9>  | writing  | tp3  | busy  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | done  | dtema_L<0>.EXP
+INPUTMC | 5 | 3 | 17 | 7 | 15 | 9 | 17 | 4 | 15 | 4 | 13
+INPUTP | 9 | 6 | 32 | 29 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 4 | 15
+IMPORTS | 1 | 4 | 13
+EQ | 13 | 
+   !skip_L = !dt & !md_L<9>
+	# !writing & !md_L<9>
+;Imported pterms FB5_14
+	# !dt & busy & md_L<11> & !md_L<10> & !md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & busy & md_L<11> & !md_L<10> & !md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>;
+    skip_L_OBUF.EXP  =  tp3 & !dt & !busy & !md_L<11> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# tp3 & !writing & !busy & !md_L<11> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# tp3 & !writing & done & !md_L<11> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+
+MACROCELL | 8 | 11 | load_cont_L_OBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 1 | my_db
+INPUTMC | 1 | 8 | 14
+EQ | 2 | 
+   ms_disable_L = Gnd;
+   ms_disable_L.OE = my_db;
+
+MACROCELL | 8 | 16 | load_cont_L_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | dt  | writing
+INPUTMC | 2 | 3 | 17 | 7 | 15
+EQ | 2 | 
+   md_dir_L = Gnd;
+   !md_dir_L.OE = dt & writing;
+
+MACROCELL | 10 | 10 | load_cont_L_OBUFE$BUF1
+ATTRIBUTES | 265986 | 0
+INPUTS | 1 | load_cont
+INPUTMC | 1 | 8 | 13
+EQ | 2 | 
+   load_cont_L = Gnd;
+   load_cont_L.OE = load_cont;
+
+MACROCELL | 10 | 16 | load_cont_L_OBUFE$BUF2
+ATTRIBUTES | 265986 | 0
+INPUTS | 1 | load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST
+INPUTMC | 1 | 8 | 17
+EQ | 2 | 
+   int_rq_L = Gnd;
+   int_rq_L.OE = load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST;
+
+MACROCELL | 8 | 2 | load_cont_L_OBUFE$BUF3
+ATTRIBUTES | 265986 | 0
+INPUTS | 1 | my_db
+INPUTMC | 1 | 8 | 14
+EQ | 2 | 
+   break_cycle_L = Gnd;
+   break_cycle_L.OE = my_db;
+
+MACROCELL | 8 | 7 | brk_data_cont_L_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | dt  | my_db
+INPUTMC | 2 | 3 | 17 | 8 | 14
+EQ | 1 | 
+   !brk_data_cont_L = !dt & my_db;
+
+MACROCELL | 14 | 2 | cs1_L_OBUF
+ATTRIBUTES | 8651558 | 0
+INPUTS | 8 | dma<11>  | dar<4>  | dt  | dma<10>  | dma<9>  | dma<8>  | EXP81_.EXP  | EXP82_.EXP
+INPUTMC | 8 | 11 | 4 | 0 | 7 | 3 | 17 | 4 | 1 | 4 | 4 | 4 | 9 | 14 | 1 | 14 | 3
+IMPORTS | 2 | 14 | 1 | 14 | 3
+EQ | 34 | 
+   !cs1_L.D = !dma<11> & dar<4> & dt
+	# !dma<10> & dar<4> & dt
+	# !dma<8> & dar<4> & dt
+	# dar<4> & !dma<9> & dt
+;Imported pterms FB15_2
+	# !dma<6> & dar<4> & dt
+	# !dma<4> & dar<4> & dt
+	# dar<4> & !dma<7> & dt
+	# dar<4> & !dma<5> & dt
+	# dar<4> & !dma<3> & dt
+;Imported pterms FB15_1
+	# !dar<8> & dar<4> & dt
+	# !dar<6> & dar<4> & dt
+	# !dar<9> & dar<4> & dt
+	# !dar<7> & dar<4> & dt
+;Imported pterms FB15_4
+	# !dar<10> & dar<4> & dt
+	# !dma<0> & dar<4> & dt
+	# !dma<2> & dar<4> & dt
+	# !dar<11> & dar<4> & dt
+	# dar<4> & !dma<1> & dt
+;Imported pterms FB15_5
+	# !dar<5> & dar<4> & dt
+	# !initialize & !data_L<4>.PIN & !dt & !md_L<11> & 
+	!md_L<10> & md_L<9> & md_L<8> & md_L<7> & !md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & dar<4> & !dt & !md_L<11> & md_L<10> & 
+	md_L<9> & md_L<8> & md_L<7> & !md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dar<6> & dma<10> & 
+	dma<0> & dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & 
+	dar<9> & dar<7> & dar<5> & !dar<4> & dma<1> & dma<9> & 
+	dma<7> & dma<5> & dma<3> & dt;
+   cs1_L.CLK = dt;
+
+MACROCELL | 15 | 1 | dar_7$BUF0
+ATTRIBUTES | 8651554 | 0
+INPUTS | 8 | dma<11>  | dar<4>  | dt  | dma<10>  | dma<9>  | dma<8>  | EXP88_.EXP  | EXP89_.EXP
+INPUTMC | 8 | 11 | 4 | 0 | 7 | 3 | 17 | 4 | 1 | 4 | 4 | 4 | 9 | 15 | 0 | 15 | 2
+IMPORTS | 2 | 15 | 0 | 15 | 2
+EQ | 34 | 
+   cs0_L.D = !dma<11> & dar<4> & dt
+	# !dma<10> & dar<4> & dt
+	# !dma<8> & dar<4> & dt
+	# dar<4> & !dma<9> & dt
+;Imported pterms FB16_1
+	# !dma<6> & dar<4> & dt
+	# !dma<4> & dar<4> & dt
+	# dar<4> & !dma<7> & dt
+	# dar<4> & !dma<5> & dt
+	# dar<4> & !dma<3> & dt
+;Imported pterms FB16_18
+	# !dar<8> & dar<4> & dt
+	# !dar<6> & dar<4> & dt
+	# !dar<9> & dar<4> & dt
+	# !dar<7> & dar<4> & dt
+	# !dar<5> & dar<4> & dt
+;Imported pterms FB16_3
+	# !dar<10> & dar<4> & dt
+	# !dma<0> & dar<4> & dt
+	# !dma<2> & dar<4> & dt
+	# !dar<11> & dar<4> & dt
+	# dar<4> & !dma<1> & dt
+;Imported pterms FB16_4
+	# !initialize & !data_L<4>.PIN & !dt & !md_L<11> & 
+	!md_L<10> & md_L<9> & md_L<8> & md_L<7> & !md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & dar<4> & !dt & !md_L<11> & md_L<10> & 
+	md_L<9> & md_L<8> & md_L<7> & !md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dar<6> & dma<10> & 
+	dma<0> & dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & 
+	dar<9> & dar<7> & dar<5> & !dar<4> & dma<1> & dma<9> & 
+	dma<7> & dma<5> & dma<3> & dt;
+   cs0_L.CLK = dt;
+
+MACROCELL | 14 | 13 | we_L_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | writing  | protect
+INPUTMC | 1 | 7 | 15
+INPUTP | 1 | 44
+EQ | 1 | 
+   !we_L = !writing & protect;
+
+MACROCELL | 13 | 17 | data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 13 | 2
+INPUTS | 14 | dt  | writing  | ts4_L  | md_L<11>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | busy  | idle  | word_L
+INPUTMC | 4 | 3 | 17 | 7 | 15 | 9 | 17 | 4 | 2
+INPUTP | 10 | 139 | 29 | 6 | 234 | 148 | 253 | 227 | 8 | 201 | 242
+EQ | 9 | 
+   data_L_7_IOBUFE/data_L_7_IOBUFE_TRST__$INT = dt & !writing & ts4_L & !md_L<11> & !md_L<9> & 
+	md_L<8> & md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+	# dt & !writing & !busy & idle & !md_L<11> & 
+	!md_L<9> & md_L<8> & md_L<7> & !md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# dt & !writing & idle & word_L & !md_L<11> & 
+	!md_L<9> & md_L<8> & md_L<7> & !md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>;
+
+MACROCELL | 13 | 12 | $OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 4 | 7 | 15 | 7 | 16 | 6 | 5 | 13 | 13
+INPUTS | 12 | dt  | md_L<4>  | writing  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<3>  | pca_L
+INPUTMC | 2 | 3 | 17 | 7 | 15
+INPUTP | 10 | 8 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 201 | 258
+EXPORTS | 1 | 13 | 13
+EQ | 5 | 
+   $OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226 = !dt & !md_L<4>
+	# !writing & !md_L<4>;
+    $OpTx$bmd_L<4>_$NODETRST/bmd_L<4>_$NODETRST_D2_INV$226.EXP  =  !writing & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3> & !pca_L
+
+MACROCELL | 13 | 11 | $OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 4 | 7 | 15 | 7 | 16 | 6 | 5 | 13 | 10
+INPUTS | 4 | dt  | md_L<5>  | writing  | md_L<7>
+INPUTMC | 2 | 3 | 17 | 7 | 15
+INPUTP | 2 | 227 | 148
+EXPORTS | 1 | 13 | 10
+EQ | 4 | 
+   $OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227 = !dt & !md_L<5>
+	# !writing & !md_L<5>;
+    $OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227.EXP  =  !dt & !md_L<7>
+	# !writing & !md_L<7>
+
+MACROCELL | 13 | 8 | $OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 4 | 7 | 15 | 7 | 16 | 6 | 5 | 13 | 9
+INPUTS | 7 | dt  | md_L<8>  | writing  | dar<9>  | md_L<9>  | md_L<6>  | md_L<5>
+INPUTMC | 3 | 3 | 17 | 7 | 15 | 0 | 4
+INPUTP | 4 | 234 | 6 | 253 | 227
+EXPORTS | 1 | 13 | 9
+EQ | 5 | 
+   $OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229 = !dt & !md_L<8>
+	# !writing & !md_L<8>;
+    $OpTx$bmd_L<8>_$NODETRST/bmd_L<8>_$NODETRST_D2_INV$229.EXP  =  !dar<9> & md_L<9>
+	# !dar<9> & dt & !md_L<6>
+	# !dar<9> & dt & !md_L<5>
+
+MACROCELL | 13 | 10 | $OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 4 | 7 | 15 | 7 | 16 | 6 | 5 | 13 | 9
+INPUTS | 12 | dar<9>  | dt  | writing  | md_L<4>  | md_L<3>  | md_L<8>  | md_L<7>  | md_L<11>  | md_L<9>  | md_L<6>  | md_L<5>  | $OpTx$bmd_L<5>_$NODETRST/bmd_L<5>_$NODETRST_D2_INV$227.EXP
+INPUTMC | 4 | 0 | 4 | 3 | 17 | 7 | 15 | 13 | 11
+INPUTP | 8 | 8 | 201 | 234 | 148 | 29 | 6 | 253 | 227
+EXPORTS | 1 | 13 | 9
+IMPORTS | 1 | 13 | 11
+EQ | 9 | 
+   $OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228 = ;Imported pterms FB14_12
+	  !dt & !md_L<7>
+	# !writing & !md_L<7>;
+    $OpTx$bmd_L<7>_$NODETRST/bmd_L<7>_$NODETRST_D2_INV$228.EXP  =  !dar<9> & dt & writing
+	# !dar<9> & dt & md_L<4>
+	# !dar<9> & dt & md_L<3>
+	# !dar<9> & dt & md_L<8> & md_L<7>
+	# dt & !writing & !md_L<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+
+MACROCELL | 13 | 15 | $OpTx$bmd_L<10>_$NODETRST/bmd_L<10>_$NODETRST_D2_INV$224
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 7 | 15
+INPUTS | 3 | dt  | md_L<10>  | writing
+INPUTMC | 2 | 3 | 17 | 7 | 15
+INPUTP | 1 | 145
+EQ | 2 | 
+   $OpTx$bmd_L<10>_$NODETRST/bmd_L<10>_$NODETRST_D2_INV$224 = !dt & !md_L<10>
+	# !writing & !md_L<10>;
+
+MACROCELL | 13 | 16 | $OpTx$$OpTx$FX_DC$81_INV$223
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 7 | 15 | 7 | 16 | 6 | 5
+INPUTS | 3 | dt  | md_L<3>  | writing
+INPUTMC | 2 | 3 | 17 | 7 | 15
+INPUTP | 1 | 201
+EQ | 2 | 
+   $OpTx$$OpTx$FX_DC$81_INV$223 = !dt & !md_L<3>
+	# !writing & !md_L<3>;
+
+MACROCELL | 9 | 15 | busy/busy_CLKF__$INT
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 9 | 17
+INPUTS | 4 | per  | wls  | overflow_L  | wc
+INPUTMC | 3 | 7 | 16 | 6 | 5 | 7 | 14
+INPUTP | 1 | 163
+EQ | 2 | 
+   busy/busy_CLKF__$INT = !wc & !per & !wls
+	# !per & !wls & overflow_L;
+
+MACROCELL | 13 | 14 | $OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 2 | 7 | 16 | 6 | 5
+INPUTS | 3 | dt  | md_L<11>  | writing
+INPUTMC | 2 | 3 | 17 | 7 | 15
+INPUTP | 1 | 29
+EQ | 2 | 
+   $OpTx$bmd_L<11>_$NODETRST/bmd_L<11>_$NODETRST_D2_INV$225 = !dt & !md_L<11>
+	# !writing & !md_L<11>;
+
+MACROCELL | 8 | 17 | load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 10 | 16
+INPUTS | 7 | pie  | pca_L  | cie  | done  | eie  | per  | wls
+INPUTMC | 6 | 7 | 0 | 5 | 15 | 4 | 15 | 5 | 10 | 7 | 16 | 6 | 5
+INPUTP | 1 | 258
+EQ | 4 | 
+   load_cont_L_OBUFE$BUF2/load_cont_L_OBUFE$BUF2_TRST = cie & done
+	# eie & per
+	# eie & wls
+	# pie & !pca_L;
+
+MACROCELL | 0 | 3 | EXP18_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 6 | dar<9>  | dt  | md_L<11>  | md_L<8>  | md_L<6>  | md_L<4>
+INPUTMC | 2 | 0 | 4 | 3 | 17
+INPUTP | 4 | 29 | 234 | 253 | 8
+EXPORTS | 1 | 0 | 4
+EQ | 4 | 
+       EXP18_.EXP  =  dar<9> & !dt & md_L<11>
+	# dar<9> & !dt & !md_L<8>
+	# dar<9> & !dt & md_L<6>
+	# dar<9> & !dt & md_L<4>
+
+MACROCELL | 0 | 5 | EXP19_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 7 | dar<9>  | dt  | md_L<7>  | md_L<5>  | md_L<3>  | data_L<9>.PIN  | md_L<10>
+INPUTMC | 2 | 0 | 4 | 3 | 17
+INPUTP | 5 | 148 | 227 | 201 | 190 | 145
+EXPORTS | 1 | 0 | 4
+EQ | 4 | 
+       EXP19_.EXP  =  dar<9> & !dt & !md_L<7>
+	# dar<9> & !dt & !md_L<5>
+	# dar<9> & !dt & md_L<3>
+	# data_L<9>.PIN & dar<9> & !dt & !md_L<10>
+
+MACROCELL | 0 | 6 | EXP20_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 6 | dar<4>  | dt  | md_L<11>  | md_L<8>  | md_L<6>  | md_L<4>
+INPUTMC | 2 | 0 | 7 | 3 | 17
+INPUTP | 4 | 29 | 234 | 253 | 8
+EXPORTS | 1 | 0 | 7
+EQ | 4 | 
+       EXP20_.EXP  =  dar<4> & !dt & md_L<11>
+	# dar<4> & !dt & !md_L<8>
+	# dar<4> & !dt & md_L<6>
+	# dar<4> & !dt & md_L<4>
+
+MACROCELL | 0 | 8 | EXP21_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 7 | dar<4>  | dt  | md_L<7>  | md_L<5>  | md_L<3>  | data_L<4>.PIN  | md_L<10>
+INPUTMC | 2 | 0 | 7 | 3 | 17
+INPUTP | 5 | 148 | 227 | 201 | 256 | 145
+EXPORTS | 1 | 0 | 7
+EQ | 4 | 
+       EXP21_.EXP  =  dar<4> & !dt & !md_L<7>
+	# dar<4> & !dt & !md_L<5>
+	# dar<4> & !dt & md_L<3>
+	# data_L<4>.PIN & dar<4> & !dt & !md_L<10>
+
+MACROCELL | 0 | 10 | EXP22_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 11
+INPUTS | 11 | dma<4>  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<4>.PIN  | md_L<10>
+INPUTMC | 2 | 0 | 11 | 3 | 17
+INPUTP | 9 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 256 | 145
+EXPORTS | 1 | 0 | 11
+EQ | 5 | 
+       EXP22_.EXP  =  dma<4> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<4>.PIN & dma<4> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 0 | 12 | EXP23_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 11
+INPUTS | 10 | data_L<4>.PIN  | dma<4>  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 0 | 11 | 3 | 17
+INPUTP | 8 | 256 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 0 | 11
+EQ | 3 | 
+       EXP23_.EXP  =  data_L<4>.PIN & dma<4> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 0 | 13 | EXP24_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 14
+INPUTS | 10 | writing  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 1 | 7 | 15
+INPUTP | 9 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 0 | 14
+EQ | 3 | 
+       EXP24_.EXP  =  !writing & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 1 | 0 | EXP25_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 6 | dar<8>  | dt  | md_L<11>  | md_L<8>  | md_L<6>  | md_L<4>
+INPUTMC | 2 | 1 | 1 | 3 | 17
+INPUTP | 4 | 29 | 234 | 253 | 8
+EXPORTS | 1 | 1 | 1
+EQ | 4 | 
+       EXP25_.EXP  =  dar<8> & !dt & md_L<11>
+	# dar<8> & !dt & !md_L<8>
+	# dar<8> & !dt & md_L<6>
+	# dar<8> & !dt & md_L<4>
+
+MACROCELL | 1 | 2 | EXP26_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 7 | dar<8>  | dt  | md_L<7>  | md_L<5>  | md_L<3>  | data_L<8>.PIN  | md_L<10>
+INPUTMC | 2 | 1 | 1 | 3 | 17
+INPUTP | 5 | 148 | 227 | 201 | 158 | 145
+EXPORTS | 1 | 1 | 1
+EQ | 4 | 
+       EXP26_.EXP  =  dar<8> & !dt & !md_L<7>
+	# dar<8> & !dt & !md_L<5>
+	# dar<8> & !dt & md_L<3>
+	# data_L<8>.PIN & dar<8> & !dt & !md_L<10>
+
+MACROCELL | 1 | 3 | EXP27_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 6 | dar<6>  | dt  | md_L<11>  | md_L<8>  | md_L<6>  | md_L<4>
+INPUTMC | 2 | 1 | 4 | 3 | 17
+INPUTP | 4 | 29 | 234 | 253 | 8
+EXPORTS | 1 | 1 | 4
+EQ | 4 | 
+       EXP27_.EXP  =  dar<6> & !dt & md_L<11>
+	# dar<6> & !dt & !md_L<8>
+	# dar<6> & !dt & md_L<6>
+	# dar<6> & !dt & md_L<4>
+
+MACROCELL | 1 | 5 | EXP28_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 7 | dar<6>  | dt  | md_L<7>  | md_L<5>  | md_L<3>  | data_L<6>.PIN  | md_L<10>
+INPUTMC | 2 | 1 | 4 | 3 | 17
+INPUTP | 5 | 148 | 227 | 201 | 187 | 145
+EXPORTS | 1 | 1 | 4
+EQ | 4 | 
+       EXP28_.EXP  =  dar<6> & !dt & !md_L<7>
+	# dar<6> & !dt & !md_L<5>
+	# dar<6> & !dt & md_L<3>
+	# data_L<6>.PIN & dar<6> & !dt & !md_L<10>
+
+MACROCELL | 1 | 6 | EXP29_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 7
+INPUTS | 6 | dar<5>  | dt  | md_L<11>  | md_L<8>  | md_L<6>  | md_L<4>
+INPUTMC | 2 | 1 | 7 | 3 | 17
+INPUTP | 4 | 29 | 234 | 253 | 8
+EXPORTS | 1 | 1 | 7
+EQ | 4 | 
+       EXP29_.EXP  =  dar<5> & !dt & md_L<11>
+	# dar<5> & !dt & !md_L<8>
+	# dar<5> & !dt & md_L<6>
+	# dar<5> & !dt & md_L<4>
+
+MACROCELL | 1 | 8 | EXP30_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 7
+INPUTS | 7 | dar<5>  | dt  | md_L<7>  | md_L<5>  | md_L<3>  | data_L<5>.PIN  | md_L<10>
+INPUTMC | 2 | 1 | 7 | 3 | 17
+INPUTP | 5 | 148 | 227 | 201 | 254 | 145
+EXPORTS | 1 | 1 | 7
+EQ | 4 | 
+       EXP30_.EXP  =  dar<5> & !dt & !md_L<7>
+	# dar<5> & !dt & !md_L<5>
+	# dar<5> & !dt & md_L<3>
+	# data_L<5>.PIN & dar<5> & !dt & !md_L<10>
+
+MACROCELL | 1 | 10 | EXP31_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 11
+INPUTS | 11 | dma<6>  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<6>.PIN  | md_L<10>
+INPUTMC | 2 | 1 | 11 | 3 | 17
+INPUTP | 9 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 187 | 145
+EXPORTS | 1 | 1 | 11
+EQ | 5 | 
+       EXP31_.EXP  =  dma<6> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<6>.PIN & dma<6> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 1 | 12 | EXP32_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 11
+INPUTS | 10 | data_L<6>.PIN  | dma<6>  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 1 | 11 | 3 | 17
+INPUTP | 8 | 187 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 1 | 11
+EQ | 3 | 
+       EXP32_.EXP  =  data_L<6>.PIN & dma<6> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 1 | 13 | EXP33_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 14
+INPUTS | 11 | dma<5>  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<5>.PIN  | md_L<10>
+INPUTMC | 2 | 1 | 14 | 3 | 17
+INPUTP | 9 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 254 | 145
+EXPORTS | 1 | 1 | 14
+EQ | 5 | 
+       EXP33_.EXP  =  dma<5> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<5>.PIN & dma<5> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 1 | 15 | EXP34_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 14
+INPUTS | 10 | data_L<5>.PIN  | dma<5>  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 1 | 14 | 3 | 17
+INPUTP | 8 | 254 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 1 | 14
+EQ | 3 | 
+       EXP34_.EXP  =  data_L<5>.PIN & dma<5> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 3 | 0 | EXP35_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 1
+INPUTS | 11 | dma<3>  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<3>.PIN  | md_L<10>
+INPUTMC | 2 | 3 | 1 | 3 | 17
+INPUTP | 9 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 262 | 145
+EXPORTS | 1 | 3 | 1
+EQ | 5 | 
+       EXP35_.EXP  =  dma<3> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<3>.PIN & dma<3> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 3 | 2 | EXP36_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 1
+INPUTS | 10 | data_L<3>.PIN  | dma<3>  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 3 | 1 | 3 | 17
+INPUTP | 8 | 262 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 3 | 1
+EQ | 3 | 
+       EXP36_.EXP  =  data_L<3>.PIN & dma<3> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 3 | 4 | EXP37_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 5
+INPUTS | 11 | dma<1>  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<1>.PIN  | md_L<10>
+INPUTMC | 2 | 3 | 5 | 3 | 17
+INPUTP | 9 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 45 | 145
+EXPORTS | 1 | 3 | 5
+EQ | 5 | 
+       EXP37_.EXP  =  dma<1> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<1>.PIN & dma<1> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 3 | 6 | EXP38_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 5
+INPUTS | 10 | data_L<1>.PIN  | dma<1>  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 3 | 5 | 3 | 17
+INPUTP | 8 | 45 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 3 | 5
+EQ | 3 | 
+       EXP38_.EXP  =  data_L<1>.PIN & dma<1> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 3 | 10 | EXP39_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 11
+INPUTS | 11 | dma<2>  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<2>.PIN  | md_L<10>
+INPUTMC | 2 | 3 | 11 | 3 | 17
+INPUTP | 9 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 80 | 145
+EXPORTS | 1 | 3 | 11
+EQ | 5 | 
+       EXP39_.EXP  =  dma<2> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<2>.PIN & dma<2> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 3 | 12 | EXP40_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 3 | 11
+INPUTS | 10 | data_L<2>.PIN  | dma<2>  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 3 | 11 | 3 | 17
+INPUTP | 8 | 80 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 3 | 11
+EQ | 3 | 
+       EXP40_.EXP  =  data_L<2>.PIN & dma<2> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 4 | 0 | EXP41_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 4 | 17
+INPUTS | 8 | tp3  | f<0>  | md_L<9>  | dt  | md_L<7>  | md_L<6>  | writing  | dma_1.EXP
+INPUTMC | 4 | 4 | 17 | 3 | 17 | 7 | 15 | 4 | 1
+INPUTP | 4 | 32 | 6 | 148 | 253
+EXPORTS | 1 | 4 | 17
+IMPORTS | 1 | 4 | 1
+EQ | 9 | 
+       EXP41_.EXP  =  !tp3 & f<0> & md_L<9>
+	# !dt & f<0> & !md_L<7>
+	# !dt & f<0> & !md_L<6>
+	# !writing & f<0> & !md_L<7>
+	# !writing & f<0> & !md_L<6>
+;Imported pterms FB5_2
+	# !data_L<8>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 4 | 16 | EXP42_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 4 | 17
+INPUTS | 6 | dt  | writing  | f<0>  | md_L<10>  | md_L<5>  | done.EXP
+INPUTMC | 4 | 3 | 17 | 7 | 15 | 4 | 17 | 4 | 15
+INPUTP | 2 | 145 | 227
+EXPORTS | 1 | 4 | 17
+IMPORTS | 1 | 4 | 15
+EQ | 11 | 
+       EXP42_.EXP  =  dt & writing & f<0>
+	# !dt & f<0> & !md_L<10>
+	# !dt & f<0> & !md_L<5>
+	# !writing & f<0> & !md_L<10>
+	# !writing & f<0> & !md_L<5>
+;Imported pterms FB5_16
+	# !data_L<8>.PIN & !dt & f<0> & !md_L<9>
+	# !data_L<8>.PIN & !writing & f<0> & !md_L<9>
+	# !data_L<8>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 5 | 0 | EXP43_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 1
+INPUTS | 6 | dar<11>  | writing  | md_L<11>  | md_L<9>  | md_L<4>  | dt
+INPUTMC | 3 | 11 | 1 | 7 | 15 | 3 | 17
+INPUTP | 3 | 29 | 6 | 8
+EXPORTS | 1 | 5 | 1
+EQ | 5 | 
+       EXP43_.EXP  =  dar<11> & writing
+	# dar<11> & md_L<11>
+	# dar<11> & md_L<9>
+	# dar<11> & md_L<4>
+	# !dt & !md_L<11>
+
+MACROCELL | 5 | 2 | EXP44_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 1
+INPUTS | 14 | dar<11>  | md_L<6>  | md_L<3>  | dma<11>  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<5>  | md_L<4>  | writing  | per  | md_L<11>  | md_L<10>
+INPUTMC | 5 | 11 | 1 | 11 | 4 | 3 | 17 | 7 | 15 | 7 | 16
+INPUTP | 9 | 253 | 201 | 6 | 234 | 148 | 227 | 8 | 29 | 145
+EXPORTS | 1 | 5 | 1
+EQ | 9 | 
+       EXP44_.EXP  =  dar<11> & md_L<6>
+	# dar<11> & md_L<3>
+	# dma<11> & !dt & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<11> & !writing & !md_L<9> & md_L<8> & 
+	!md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & per & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 5 | 3 | EXP45_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 4
+INPUTS | 6 | dar<5>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<3>  | dt
+INPUTMC | 2 | 1 | 7 | 3 | 17
+INPUTP | 4 | 148 | 253 | 227 | 201
+EXPORTS | 1 | 5 | 4
+EQ | 5 | 
+       EXP45_.EXP  =  dar<5> & !md_L<7>
+	# dar<5> & md_L<6>
+	# dar<5> & !md_L<5>
+	# dar<5> & md_L<3>
+	# !dt & !md_L<5>
+
+MACROCELL | 5 | 5 | EXP46_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 4
+INPUTS | 14 | dar<5>  | dt  | writing  | dma<5>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<4>  | md_L<3>  | md_L<5>  | cie  | md_L<11>  | md_L<10>
+INPUTMC | 5 | 1 | 7 | 3 | 17 | 7 | 15 | 1 | 14 | 5 | 15
+INPUTP | 9 | 6 | 234 | 148 | 253 | 8 | 201 | 227 | 29 | 145
+EXPORTS | 1 | 5 | 4
+EQ | 10 | 
+       EXP46_.EXP  =  dar<5> & dt & writing
+	# dma<5> & !dt & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & !md_L<4> & !md_L<3>
+	# dma<5> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !dt & cie & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & !md_L<4> & !md_L<3>
+	# !writing & cie & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 5 | 6 | EXP47_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 7
+INPUTS | 6 | dar<4>  | md_L<8>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 1 | 0 | 7
+INPUTP | 5 | 234 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 5 | 7
+EQ | 5 | 
+       EXP47_.EXP  =  dar<4> & !md_L<8>
+	# dar<4> & md_L<6>
+	# dar<4> & !md_L<5>
+	# dar<4> & md_L<4>
+	# dar<4> & md_L<3>
+
+MACROCELL | 5 | 8 | EXP48_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 7
+INPUTS | 13 | dt  | md_L<4>  | dma<4>  | writing  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<3>  | pie  | md_L<11>  | md_L<10>
+INPUTMC | 4 | 3 | 17 | 0 | 11 | 7 | 15 | 7 | 0
+INPUTP | 9 | 8 | 6 | 234 | 148 | 253 | 227 | 201 | 29 | 145
+EXPORTS | 1 | 5 | 7
+EQ | 6 | 
+       EXP48_.EXP  =  !dt & !md_L<4>
+	# dma<4> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & pie & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 5 | 9 | EXP49_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 10
+INPUTS | 5 | dt  | writing  | eie  | md_L<10>  | md_L<5>
+INPUTMC | 3 | 3 | 17 | 7 | 15 | 5 | 10
+INPUTP | 2 | 145 | 227
+EXPORTS | 1 | 5 | 10
+EQ | 5 | 
+       EXP49_.EXP  =  dt & writing & eie
+	# !dt & eie & !md_L<10>
+	# !dt & eie & !md_L<5>
+	# !writing & eie & !md_L<10>
+	# !writing & eie & !md_L<5>
+
+MACROCELL | 5 | 11 | EXP50_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 10
+INPUTS | 8 | tp3  | eie  | md_L<9>  | dt  | md_L<7>  | md_L<6>  | writing  | EXP51_.EXP
+INPUTMC | 4 | 5 | 10 | 3 | 17 | 7 | 15 | 5 | 12
+INPUTP | 4 | 32 | 6 | 148 | 253
+EXPORTS | 1 | 5 | 10
+IMPORTS | 1 | 5 | 12
+EQ | 14 | 
+       EXP50_.EXP  =  !tp3 & eie & md_L<9>
+	# !dt & eie & !md_L<7>
+	# !dt & eie & !md_L<6>
+	# !writing & eie & !md_L<7>
+	# !writing & eie & !md_L<6>
+;Imported pterms FB6_13
+	# !data_L<3>.PIN & !dt & eie & !md_L<9>
+	# !data_L<3>.PIN & !writing & eie & !md_L<9>
+	# !data_L<3>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<3>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 5 | 12 | EXP51_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 11
+INPUTS | 13 | data_L<3>.PIN  | dt  | eie  | md_L<9>  | writing  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 3 | 3 | 17 | 5 | 10 | 7 | 15
+INPUTP | 10 | 262 | 6 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 5 | 11
+EQ | 8 | 
+       EXP51_.EXP  =  !data_L<3>.PIN & !dt & eie & !md_L<9>
+	# !data_L<3>.PIN & !writing & eie & !md_L<9>
+	# !data_L<3>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<3>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 5 | 14 | EXP52_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 15
+INPUTS | 6 | dt  | writing  | cie  | md_L<10>  | md_L<5>  | data_L_3_IOBUFE.EXP
+INPUTMC | 4 | 3 | 17 | 7 | 15 | 5 | 15 | 5 | 13
+INPUTP | 2 | 145 | 227
+EXPORTS | 1 | 5 | 15
+IMPORTS | 1 | 5 | 13
+EQ | 7 | 
+       EXP52_.EXP  =  dt & writing & cie
+	# !dt & cie & !md_L<10>
+	# !dt & cie & !md_L<5>
+	# !writing & cie & !md_L<10>
+	# !writing & cie & !md_L<5>
+;Imported pterms FB6_14
+	# !data_L<5>.PIN & !dt & cie & !md_L<9>
+
+MACROCELL | 5 | 16 | EXP53_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 15
+INPUTS | 8 | tp3  | cie  | md_L<9>  | dt  | md_L<7>  | md_L<6>  | writing  | EXP54_.EXP
+INPUTMC | 4 | 5 | 15 | 3 | 17 | 7 | 15 | 5 | 17
+INPUTP | 4 | 32 | 6 | 148 | 253
+EXPORTS | 1 | 5 | 15
+IMPORTS | 1 | 5 | 17
+EQ | 13 | 
+       EXP53_.EXP  =  !tp3 & cie & md_L<9>
+	# !dt & cie & !md_L<7>
+	# !dt & cie & !md_L<6>
+	# !writing & cie & !md_L<7>
+	# !writing & cie & !md_L<6>
+;Imported pterms FB6_18
+	# !data_L<5>.PIN & !writing & cie & !md_L<9>
+	# !data_L<5>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<5>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 5 | 17 | EXP54_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 5 | 16
+INPUTS | 13 | data_L<5>.PIN  | writing  | cie  | md_L<9>  | dt  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 3 | 7 | 15 | 5 | 15 | 3 | 17
+INPUTP | 10 | 254 | 6 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 5 | 16
+EQ | 7 | 
+       EXP54_.EXP  =  !data_L<5>.PIN & !writing & cie & !md_L<9>
+	# !data_L<5>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<5>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 6 | 1 | EXP55_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 2
+INPUTS | 11 | writing  | wls  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 7 | 15 | 6 | 5
+INPUTP | 9 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 6 | 2
+EQ | 3 | 
+       EXP55_.EXP  =  !writing & wls & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 6 | 6 | EXP56_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 7
+INPUTS | 5 | dt  | writing  | f<2>  | md_L<10>  | md_L<5>
+INPUTMC | 3 | 3 | 17 | 7 | 15 | 6 | 7
+INPUTP | 2 | 145 | 227
+EXPORTS | 1 | 6 | 7
+EQ | 5 | 
+       EXP56_.EXP  =  dt & writing & f<2>
+	# !dt & f<2> & !md_L<10>
+	# !dt & f<2> & !md_L<5>
+	# !writing & f<2> & !md_L<10>
+	# !writing & f<2> & !md_L<5>
+
+MACROCELL | 6 | 8 | EXP57_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 7
+INPUTS | 8 | tp3  | f<2>  | md_L<9>  | dt  | md_L<7>  | md_L<6>  | writing  | EXP58_.EXP
+INPUTMC | 4 | 6 | 7 | 3 | 17 | 7 | 15 | 6 | 9
+INPUTP | 4 | 32 | 6 | 148 | 253
+EXPORTS | 1 | 6 | 7
+IMPORTS | 1 | 6 | 9
+EQ | 14 | 
+       EXP57_.EXP  =  !tp3 & f<2> & md_L<9>
+	# !dt & f<2> & !md_L<7>
+	# !dt & f<2> & !md_L<6>
+	# !writing & f<2> & !md_L<7>
+	# !writing & f<2> & !md_L<6>
+;Imported pterms FB7_10
+	# !data_L<6>.PIN & !dt & f<2> & !md_L<9>
+	# !data_L<6>.PIN & !writing & f<2> & !md_L<9>
+	# !data_L<6>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<6>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 6 | 9 | EXP58_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 8
+INPUTS | 13 | data_L<6>.PIN  | dt  | f<2>  | md_L<9>  | writing  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 3 | 3 | 17 | 6 | 7 | 7 | 15
+INPUTP | 10 | 187 | 6 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 6 | 8
+EQ | 8 | 
+       EXP58_.EXP  =  !data_L<6>.PIN & !dt & f<2> & !md_L<9>
+	# !data_L<6>.PIN & !writing & f<2> & !md_L<9>
+	# !data_L<6>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<6>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 6 | 10 | EXP59_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 11
+INPUTS | 5 | dt  | writing  | f<1>  | md_L<10>  | md_L<5>
+INPUTMC | 3 | 3 | 17 | 7 | 15 | 6 | 11
+INPUTP | 2 | 145 | 227
+EXPORTS | 1 | 6 | 11
+EQ | 5 | 
+       EXP59_.EXP  =  dt & writing & f<1>
+	# !dt & f<1> & !md_L<10>
+	# !dt & f<1> & !md_L<5>
+	# !writing & f<1> & !md_L<10>
+	# !writing & f<1> & !md_L<5>
+
+MACROCELL | 6 | 12 | EXP60_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 11
+INPUTS | 8 | tp3  | f<1>  | md_L<9>  | dt  | md_L<7>  | md_L<6>  | writing  | EXP61_.EXP
+INPUTMC | 4 | 6 | 11 | 3 | 17 | 7 | 15 | 6 | 13
+INPUTP | 4 | 32 | 6 | 148 | 253
+EXPORTS | 1 | 6 | 11
+IMPORTS | 1 | 6 | 13
+EQ | 14 | 
+       EXP60_.EXP  =  !tp3 & f<1> & md_L<9>
+	# !dt & f<1> & !md_L<7>
+	# !dt & f<1> & !md_L<6>
+	# !writing & f<1> & !md_L<7>
+	# !writing & f<1> & !md_L<6>
+;Imported pterms FB7_14
+	# !data_L<7>.PIN & !dt & f<1> & !md_L<9>
+	# !data_L<7>.PIN & !writing & f<1> & !md_L<9>
+	# !data_L<7>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<7>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 6 | 13 | EXP61_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 12
+INPUTS | 13 | data_L<7>.PIN  | dt  | f<1>  | md_L<9>  | writing  | md_L<11>  | md_L<10>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 3 | 3 | 17 | 6 | 11 | 7 | 15
+INPUTP | 10 | 185 | 6 | 29 | 145 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 6 | 12
+EQ | 8 | 
+       EXP61_.EXP  =  !data_L<7>.PIN & !dt & f<1> & !md_L<9>
+	# !data_L<7>.PIN & !writing & f<1> & !md_L<9>
+	# !data_L<7>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<7>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 7 | 1 | EXP62_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 0
+INPUTS | 8 | tp3  | pie  | md_L<9>  | dt  | md_L<7>  | md_L<6>  | writing  | c0_L_OBUF.EXP
+INPUTMC | 4 | 7 | 0 | 3 | 17 | 7 | 15 | 7 | 2
+INPUTP | 4 | 32 | 6 | 148 | 253
+EXPORTS | 1 | 7 | 0
+IMPORTS | 1 | 7 | 2
+EQ | 13 | 
+       EXP62_.EXP  =  !tp3 & pie & md_L<9>
+	# !dt & pie & !md_L<7>
+	# !dt & pie & !md_L<6>
+	# !writing & pie & !md_L<7>
+	# !writing & pie & !md_L<6>
+;Imported pterms FB8_3
+	# !data_L<4>.PIN & !writing & pie & !md_L<9>
+	# !data_L<4>.PIN & !dt & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# !data_L<4>.PIN & !writing & !md_L<11> & md_L<10> & 
+	!md_L<9> & !md_L<8> & md_L<7> & md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+
+MACROCELL | 7 | 3 | EXP63_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 2
+INPUTS | 12 | dt  | md_L<11>  | md_L<10>  | md_L<9>  | writing  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | EXP64_.EXP
+INPUTMC | 3 | 3 | 17 | 7 | 15 | 7 | 4
+INPUTP | 9 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 7 | 2
+IMPORTS | 1 | 7 | 4
+EQ | 12 | 
+       EXP63_.EXP  =  !dt & !md_L<11> & md_L<10> & !md_L<9>
+	# !writing & !md_L<11> & md_L<10> & !md_L<9>
+	# !dt & md_L<11> & !md_L<10> & !md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & md_L<11> & !md_L<10> & !md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !dt & !md_L<11> & !md_L<10> & md_L<9> & md_L<8> & 
+	md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+;Imported pterms FB8_5
+	# !writing & !md_L<11> & !md_L<10> & md_L<9> & 
+	md_L<8> & md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 7 | 4 | EXP64_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 3
+INPUTS | 10 | writing  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 1 | 7 | 15
+INPUTP | 9 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 7 | 3
+EQ | 3 | 
+       EXP64_.EXP  =  !writing & !md_L<11> & !md_L<10> & md_L<9> & 
+	md_L<8> & md_L<7> & !md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 7 | 17 | EXP65_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 0
+INPUTS | 6 | dt  | writing  | pie  | md_L<10>  | md_L<5>  | per.EXP
+INPUTMC | 4 | 3 | 17 | 7 | 15 | 7 | 0 | 7 | 16
+INPUTP | 2 | 145 | 227
+EXPORTS | 1 | 7 | 0
+IMPORTS | 1 | 7 | 16
+EQ | 7 | 
+       EXP65_.EXP  =  dt & writing & pie
+	# !dt & pie & !md_L<10>
+	# !dt & pie & !md_L<5>
+	# !writing & pie & !md_L<10>
+	# !writing & pie & !md_L<5>
+;Imported pterms FB8_17
+	# !data_L<4>.PIN & !dt & pie & !md_L<9>
+
+MACROCELL | 9 | 0 | EXP66_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 9 | 17
+INPUTS | 9 | initialize  | writing  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 1 | 7 | 15
+INPUTP | 8 | 195 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 9 | 17
+EQ | 2 | 
+       EXP66_.EXP  =  !initialize & !writing & !md_L<9> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+
+MACROCELL | 11 | 0 | EXP67_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 11 | 1
+INPUTS | 6 | dar<11>  | dt  | md_L<11>  | md_L<8>  | md_L<6>  | md_L<4>
+INPUTMC | 2 | 11 | 1 | 3 | 17
+INPUTP | 4 | 29 | 234 | 253 | 8
+EXPORTS | 1 | 11 | 1
+EQ | 4 | 
+       EXP67_.EXP  =  dar<11> & !dt & md_L<11>
+	# dar<11> & !dt & !md_L<8>
+	# dar<11> & !dt & md_L<6>
+	# dar<11> & !dt & md_L<4>
+
+MACROCELL | 11 | 2 | EXP68_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 11 | 1
+INPUTS | 7 | dar<11>  | dt  | md_L<7>  | md_L<5>  | md_L<3>  | data_L<11>.PIN  | md_L<10>
+INPUTMC | 2 | 11 | 1 | 3 | 17
+INPUTP | 5 | 148 | 227 | 201 | 251 | 145
+EXPORTS | 1 | 11 | 1
+EQ | 4 | 
+       EXP68_.EXP  =  dar<11> & !dt & !md_L<7>
+	# dar<11> & !dt & !md_L<5>
+	# dar<11> & !dt & md_L<3>
+	# data_L<11>.PIN & dar<11> & !dt & !md_L<10>
+
+MACROCELL | 11 | 3 | EXP69_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 11 | 4
+INPUTS | 10 | dma<11>  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<11>.PIN  | md_L<10>
+INPUTMC | 1 | 11 | 4
+INPUTP | 9 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 251 | 145
+EXPORTS | 1 | 11 | 4
+EQ | 4 | 
+       EXP69_.EXP  =  dma<11> & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<11>.PIN & dma<11> & !md_L<10> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+
+MACROCELL | 11 | 5 | EXP70_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 11 | 4
+INPUTS | 9 | data_L<11>.PIN  | dma<11>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 1 | 11 | 4
+INPUTP | 8 | 251 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 11 | 4
+EQ | 2 | 
+       EXP70_.EXP  =  data_L<11>.PIN & dma<11> & !md_L<9> & md_L<8> & 
+	md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+
+MACROCELL | 12 | 0 | EXP71_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 12 | 1
+INPUTS | 6 | dar<10>  | dt  | md_L<11>  | md_L<8>  | md_L<6>  | md_L<4>
+INPUTMC | 2 | 12 | 1 | 3 | 17
+INPUTP | 4 | 29 | 234 | 253 | 8
+EXPORTS | 1 | 12 | 1
+EQ | 4 | 
+       EXP71_.EXP  =  dar<10> & !dt & md_L<11>
+	# dar<10> & !dt & !md_L<8>
+	# dar<10> & !dt & md_L<6>
+	# dar<10> & !dt & md_L<4>
+
+MACROCELL | 12 | 2 | EXP72_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 12 | 1
+INPUTS | 7 | dar<10>  | dt  | md_L<7>  | md_L<5>  | md_L<3>  | data_L<10>.PIN  | md_L<10>
+INPUTMC | 2 | 12 | 1 | 3 | 17
+INPUTP | 5 | 148 | 227 | 201 | 155 | 145
+EXPORTS | 1 | 12 | 1
+EQ | 4 | 
+       EXP72_.EXP  =  dar<10> & !dt & !md_L<7>
+	# dar<10> & !dt & !md_L<5>
+	# dar<10> & !dt & md_L<3>
+	# data_L<10>.PIN & dar<10> & !dt & !md_L<10>
+
+MACROCELL | 12 | 9 | EXP73_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 12 | 10
+INPUTS | 11 | dma<0>  | dt  | md_L<11>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | data_L<0>.PIN  | md_L<10>
+INPUTMC | 2 | 12 | 10 | 3 | 17
+INPUTP | 9 | 29 | 234 | 148 | 253 | 227 | 8 | 201 | 193 | 145
+EXPORTS | 1 | 12 | 10
+EQ | 5 | 
+       EXP73_.EXP  =  dma<0> & !dt & !md_L<11> & md_L<8> & md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# data_L<0>.PIN & dma<0> & !dt & !md_L<10> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 12 | 11 | EXP74_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 12 | 10
+INPUTS | 10 | data_L<0>.PIN  | dma<0>  | dt  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 12 | 10 | 3 | 17
+INPUTP | 8 | 193 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 12 | 10
+EQ | 3 | 
+       EXP74_.EXP  =  data_L<0>.PIN & dma<0> & !dt & !md_L<9> & 
+	md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 13 | 0 | EXP75_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 13 | 1
+INPUTS | 11 | writing  | f<1>  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>
+INPUTMC | 2 | 7 | 15 | 6 | 11
+INPUTP | 9 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 13 | 1
+EQ | 3 | 
+       EXP75_.EXP  =  !writing & f<1> & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 13 | 1 | EXP76_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 13 | 2
+INPUTS | 8 | dar<7>  | md_L<11>  | md_L<9>  | md_L<6>  | md_L<4>  | idle  | ts4_L  | EXP75_.EXP
+INPUTMC | 3 | 15 | 5 | 4 | 2 | 13 | 0
+INPUTP | 5 | 29 | 6 | 253 | 8 | 139
+EXPORTS | 1 | 13 | 2
+IMPORTS | 1 | 13 | 0
+EQ | 9 | 
+       EXP76_.EXP  =  dar<7> & md_L<11>
+	# dar<7> & md_L<9>
+	# dar<7> & md_L<6>
+	# dar<7> & md_L<4>
+	# !idle & !ts4_L
+;Imported pterms FB14_1
+	# !writing & f<1> & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 13 | 3 | EXP77_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 13 | 2
+INPUTS | 14 | dar<7>  | md_L<3>  | dt  | md_L<7>  | writing  | busy  | ts4_L  | word_L  | dma<7>  | md_L<9>  | md_L<8>  | md_L<6>  | md_L<5>  | md_L<4>
+INPUTMC | 5 | 15 | 5 | 3 | 17 | 7 | 15 | 9 | 17 | 4 | 11
+INPUTP | 9 | 201 | 148 | 139 | 242 | 6 | 234 | 253 | 227 | 8
+EXPORTS | 1 | 13 | 2
+EQ | 6 | 
+       EXP77_.EXP  =  dar<7> & md_L<3>
+	# !dt & !md_L<7>
+	# dar<7> & dt & writing
+	# busy & !ts4_L & !word_L
+	# dma<7> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+
+MACROCELL | 13 | 4 | EXP78_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 13 | 5
+INPUTS | 8 | dar<6>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | f<2>  | md_L<8>  | md_L<11>
+INPUTMC | 2 | 1 | 4 | 6 | 7
+INPUTP | 6 | 253 | 227 | 8 | 201 | 234 | 29
+EXPORTS | 1 | 13 | 5
+EQ | 5 | 
+       EXP78_.EXP  =  !dar<6> & md_L<6> & !md_L<5>
+	# !dar<6> & md_L<6> & md_L<4>
+	# !dar<6> & md_L<6> & md_L<3>
+	# !dar<6> & !f<2> & !md_L<8> & md_L<6>
+	# !dar<6> & !md_L<11> & !md_L<8> & md_L<6>
+
+MACROCELL | 13 | 6 | EXP79_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 13 | 5
+INPUTS | 7 | dar<6>  | dt  | writing  | dma<6>  | md_L<8>  | md_L<6>  | md_L<7>
+INPUTMC | 4 | 1 | 4 | 3 | 17 | 7 | 15 | 1 | 11
+INPUTP | 3 | 234 | 253 | 148
+EXPORTS | 1 | 13 | 5
+EQ | 4 | 
+       EXP79_.EXP  =  !dar<6> & dt & writing
+	# !dar<6> & !dma<6> & md_L<8> & md_L<6>
+	# !dar<6> & md_L<8> & md_L<7> & md_L<6>
+	# !dar<6> & !md_L<8> & !md_L<7> & md_L<6>
+
+MACROCELL | 14 | 0 | EXP80_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 1
+INPUTS | 6 | dar<8>  | dar<4>  | dt  | dar<6>  | dar<9>  | dar<7>
+INPUTMC | 6 | 1 | 1 | 0 | 7 | 3 | 17 | 1 | 4 | 0 | 4 | 15 | 5
+EXPORTS | 1 | 14 | 1
+EQ | 4 | 
+       EXP80_.EXP  =  !dar<8> & dar<4> & dt
+	# !dar<6> & dar<4> & dt
+	# !dar<9> & dar<4> & dt
+	# !dar<7> & dar<4> & dt
+
+MACROCELL | 14 | 1 | EXP81_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 2
+INPUTS | 8 | dma<6>  | dar<4>  | dt  | dma<4>  | dma<7>  | dma<5>  | dma<3>  | EXP80_.EXP
+INPUTMC | 8 | 1 | 11 | 0 | 7 | 3 | 17 | 0 | 11 | 4 | 11 | 1 | 14 | 3 | 1 | 14 | 0
+EXPORTS | 1 | 14 | 2
+IMPORTS | 1 | 14 | 0
+EQ | 10 | 
+       EXP81_.EXP  =  !dma<6> & dar<4> & dt
+	# !dma<4> & dar<4> & dt
+	# dar<4> & !dma<7> & dt
+	# dar<4> & !dma<5> & dt
+	# dar<4> & !dma<3> & dt
+;Imported pterms FB15_1
+	# !dar<8> & dar<4> & dt
+	# !dar<6> & dar<4> & dt
+	# !dar<9> & dar<4> & dt
+	# !dar<7> & dar<4> & dt
+
+MACROCELL | 14 | 3 | EXP82_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 2
+INPUTS | 8 | dar<10>  | dar<4>  | dt  | dma<0>  | dma<2>  | dar<11>  | dma<1>  | EXP83_.EXP
+INPUTMC | 8 | 12 | 1 | 0 | 7 | 3 | 17 | 12 | 10 | 3 | 11 | 11 | 1 | 3 | 5 | 14 | 4
+EXPORTS | 1 | 14 | 2
+IMPORTS | 1 | 14 | 4
+EQ | 17 | 
+       EXP82_.EXP  =  !dar<10> & dar<4> & dt
+	# !dma<0> & dar<4> & dt
+	# !dma<2> & dar<4> & dt
+	# !dar<11> & dar<4> & dt
+	# dar<4> & !dma<1> & dt
+;Imported pterms FB15_5
+	# !dar<5> & dar<4> & dt
+	# !initialize & !data_L<4>.PIN & !dt & !md_L<11> & 
+	!md_L<10> & md_L<9> & md_L<8> & md_L<7> & !md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & dar<4> & !dt & !md_L<11> & md_L<10> & 
+	md_L<9> & md_L<8> & md_L<7> & !md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dar<6> & dma<10> & 
+	dma<0> & dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & 
+	dar<9> & dar<7> & dar<5> & !dar<4> & dma<1> & dma<9> & 
+	dma<7> & dma<5> & dma<3> & dt
+
+MACROCELL | 14 | 4 | EXP83_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 3
+INPUTS | 32 | dar<5>  | dar<4>  | dt  | initialize  | data_L<4>.PIN  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dma<11>  | dar<10>  | dar<8>  | dar<6>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dar<11>  | dar<9>  | dar<7>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>
+INPUTMC | 21 | 1 | 7 | 0 | 7 | 3 | 17 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1
+INPUTP | 11 | 195 | 256 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 14 | 3
+EQ | 11 | 
+       EXP83_.EXP  =  !dar<5> & dar<4> & dt
+	# !initialize & !data_L<4>.PIN & !dt & !md_L<11> & 
+	!md_L<10> & md_L<9> & md_L<8> & md_L<7> & !md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & dar<4> & !dt & !md_L<11> & md_L<10> & 
+	md_L<9> & md_L<8> & md_L<7> & !md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dar<6> & dma<10> & 
+	dma<0> & dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & 
+	dar<9> & dar<7> & dar<5> & !dar<4> & dma<1> & dma<9> & 
+	dma<7> & dma<5> & dma<3> & dt
+
+MACROCELL | 14 | 6 | EXP84_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 7
+INPUTS | 6 | dar<10>  | md_L<11>  | md_L<9>  | md_L<6>  | md_L<4>  | md_L<3>
+INPUTMC | 1 | 12 | 1
+INPUTP | 5 | 29 | 6 | 253 | 8 | 201
+EXPORTS | 1 | 14 | 7
+EQ | 5 | 
+       EXP84_.EXP  =  dar<10> & md_L<11>
+	# dar<10> & md_L<9>
+	# dar<10> & md_L<6>
+	# dar<10> & md_L<4>
+	# dar<10> & md_L<3>
+
+MACROCELL | 14 | 8 | EXP85_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 7
+INPUTS | 13 | dar<10>  | dt  | writing  | dma<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | md_L<11>  | md_L<10>
+INPUTMC | 4 | 12 | 1 | 3 | 17 | 7 | 15 | 4 | 1
+INPUTP | 9 | 6 | 234 | 148 | 253 | 227 | 8 | 201 | 29 | 145
+EXPORTS | 1 | 14 | 7
+EQ | 8 | 
+       EXP85_.EXP  =  dar<10> & dt & writing
+	# dma<10> & !dt & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# dma<10> & !writing & !md_L<9> & md_L<8> & 
+	!md_L<7> & md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 14 | 9 | EXP86_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 10
+INPUTS | 7 | dar<8>  | md_L<11>  | md_L<9>  | md_L<6>  | md_L<4>  | dt  | md_L<8>
+INPUTMC | 2 | 1 | 1 | 3 | 17
+INPUTP | 5 | 29 | 6 | 253 | 8 | 234
+EXPORTS | 1 | 14 | 10
+EQ | 5 | 
+       EXP86_.EXP  =  dar<8> & md_L<11>
+	# dar<8> & md_L<9>
+	# dar<8> & md_L<6>
+	# dar<8> & md_L<4>
+	# !dt & !md_L<8>
+
+MACROCELL | 14 | 11 | EXP87_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 14 | 10
+INPUTS | 14 | dar<8>  | md_L<3>  | dt  | writing  | dma<8>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | f<0>  | md_L<11>  | md_L<10>
+INPUTMC | 5 | 1 | 1 | 3 | 17 | 7 | 15 | 4 | 9 | 4 | 17
+INPUTP | 9 | 201 | 6 | 234 | 148 | 253 | 227 | 8 | 29 | 145
+EXPORTS | 1 | 14 | 10
+EQ | 7 | 
+       EXP87_.EXP  =  dar<8> & md_L<3>
+	# dar<8> & dt & writing
+	# dma<8> & !writing & !md_L<9> & md_L<8> & !md_L<7> & 
+	md_L<6> & md_L<5> & !md_L<4> & !md_L<3>
+	# !writing & f<0> & md_L<11> & !md_L<10> & !md_L<9> & 
+	!md_L<8> & md_L<7> & md_L<6> & md_L<5> & !md_L<4> & 
+	!md_L<3>
+
+MACROCELL | 15 | 0 | EXP88_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 15 | 1
+INPUTS | 8 | dma<6>  | dar<4>  | dt  | dma<4>  | dma<7>  | dma<5>  | dma<3>  | EXP93_.EXP
+INPUTMC | 8 | 1 | 11 | 0 | 7 | 3 | 17 | 0 | 11 | 4 | 11 | 1 | 14 | 3 | 1 | 15 | 17
+EXPORTS | 1 | 15 | 1
+IMPORTS | 1 | 15 | 17
+EQ | 11 | 
+       EXP88_.EXP  =  !dma<6> & dar<4> & dt
+	# !dma<4> & dar<4> & dt
+	# dar<4> & !dma<7> & dt
+	# dar<4> & !dma<5> & dt
+	# dar<4> & !dma<3> & dt
+;Imported pterms FB16_18
+	# !dar<8> & dar<4> & dt
+	# !dar<6> & dar<4> & dt
+	# !dar<9> & dar<4> & dt
+	# !dar<7> & dar<4> & dt
+	# !dar<5> & dar<4> & dt
+
+MACROCELL | 15 | 2 | EXP89_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 15 | 1
+INPUTS | 8 | dar<10>  | dar<4>  | dt  | dma<0>  | dma<2>  | dar<11>  | dma<1>  | EXP90_.EXP
+INPUTMC | 8 | 12 | 1 | 0 | 7 | 3 | 17 | 12 | 10 | 3 | 11 | 11 | 1 | 3 | 5 | 15 | 3
+EXPORTS | 1 | 15 | 1
+IMPORTS | 1 | 15 | 3
+EQ | 16 | 
+       EXP89_.EXP  =  !dar<10> & dar<4> & dt
+	# !dma<0> & dar<4> & dt
+	# !dma<2> & dar<4> & dt
+	# !dar<11> & dar<4> & dt
+	# dar<4> & !dma<1> & dt
+;Imported pterms FB16_4
+	# !initialize & !data_L<4>.PIN & !dt & !md_L<11> & 
+	!md_L<10> & md_L<9> & md_L<8> & md_L<7> & !md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & dar<4> & !dt & !md_L<11> & md_L<10> & 
+	md_L<9> & md_L<8> & md_L<7> & !md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dar<6> & dma<10> & 
+	dma<0> & dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & 
+	dar<9> & dar<7> & dar<5> & !dar<4> & dma<1> & dma<9> & 
+	dma<7> & dma<5> & dma<3> & dt
+
+MACROCELL | 15 | 3 | EXP90_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 15 | 2
+INPUTS | 32 | initialize  | data_L<4>.PIN  | dt  | md_L<11>  | md_L<10>  | md_L<9>  | md_L<8>  | md_L<7>  | md_L<6>  | md_L<5>  | md_L<4>  | md_L<3>  | dar<4>  | dma<11>  | dar<10>  | dar<8>  | dar<6>  | dma<10>  | dma<0>  | dma<8>  | dma<6>  | dma<4>  | dma<2>  | dar<11>  | dar<9>  | dar<7>  | dar<5>  | dma<1>  | dma<9>  | dma<7>  | dma<5>  | dma<3>
+INPUTMC | 21 | 3 | 17 | 0 | 7 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1
+INPUTP | 11 | 195 | 256 | 29 | 145 | 6 | 234 | 148 | 253 | 227 | 8 | 201
+EXPORTS | 1 | 15 | 2
+EQ | 10 | 
+       EXP90_.EXP  =  !initialize & !data_L<4>.PIN & !dt & !md_L<11> & 
+	!md_L<10> & md_L<9> & md_L<8> & md_L<7> & !md_L<6> & 
+	md_L<5> & !md_L<4> & !md_L<3>
+	# !initialize & dar<4> & !dt & !md_L<11> & md_L<10> & 
+	md_L<9> & md_L<8> & md_L<7> & !md_L<6> & md_L<5> & 
+	!md_L<4> & !md_L<3>
+	# dma<11> & dar<10> & dar<8> & dar<6> & dma<10> & 
+	dma<0> & dma<8> & dma<6> & dma<4> & dma<2> & dar<11> & 
+	dar<9> & dar<7> & dar<5> & !dar<4> & dma<1> & dma<9> & 
+	dma<7> & dma<5> & dma<3> & dt
+
+MACROCELL | 15 | 4 | EXP91_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 15 | 5
+INPUTS | 7 | dar<7>  | dt  | md_L<11>  | md_L<8>  | md_L<6>  | md_L<5>  | md_L<4>
+INPUTMC | 2 | 15 | 5 | 3 | 17
+INPUTP | 5 | 29 | 234 | 253 | 227 | 8
+EXPORTS | 1 | 15 | 5
+EQ | 5 | 
+       EXP91_.EXP  =  dar<7> & !dt & md_L<11>
+	# dar<7> & !dt & !md_L<8>
+	# dar<7> & !dt & md_L<6>
+	# dar<7> & !dt & !md_L<5>
+	# dar<7> & !dt & md_L<4>
+
+MACROCELL | 15 | 6 | EXP92_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 15 | 5
+INPUTS | 6 | dar<7>  | dt  | md_L<7>  | md_L<3>  | data_L<7>.PIN  | md_L<10>
+INPUTMC | 2 | 15 | 5 | 3 | 17
+INPUTP | 4 | 148 | 201 | 185 | 145
+EXPORTS | 1 | 15 | 5
+EQ | 3 | 
+       EXP92_.EXP  =  dar<7> & !dt & !md_L<7>
+	# dar<7> & !dt & md_L<3>
+	# data_L<7>.PIN & dar<7> & !dt & !md_L<10>
+
+MACROCELL | 15 | 17 | EXP93_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 15 | 0
+INPUTS | 7 | dar<8>  | dar<4>  | dt  | dar<6>  | dar<9>  | dar<7>  | dar<5>
+INPUTMC | 7 | 1 | 1 | 0 | 7 | 3 | 17 | 1 | 4 | 0 | 4 | 15 | 5 | 1 | 7
+EXPORTS | 1 | 15 | 0
+EQ | 5 | 
+       EXP93_.EXP  =  !dar<8> & dar<4> & dt
+	# !dar<6> & dar<4> & dt
+	# !dar<9> & dar<4> & dt
+	# !dar<7> & dar<4> & dt
+	# !dar<5> & dar<4> & dt
+
+PIN | md_L<10> | 64 | 0 | N/A | 145 | 78 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 5 | 5 | 2 | 13 | 5 | 14 | 8 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 7 | 15 | 9 | 17 | 5 | 14 | 5 | 9 | 4 | 16 | 6 | 10 | 6 | 6 | 6 | 13 | 7 | 2 | 4 | 10 | 4 | 13 | 13 | 12 | 14 | 11 | 13 | 15 | 0 | 5 | 0 | 8 | 0 | 10 | 0 | 13 | 1 | 2 | 1 | 5 | 1 | 8 | 1 | 10 | 1 | 13 | 3 | 0 | 3 | 4 | 3 | 10 | 4 | 2 | 4 | 5 | 4 | 8 | 4 | 15 | 5 | 8 | 5 | 12 | 5 | 17 | 6 | 1 | 6 | 9 | 7 | 3 | 7 | 4 | 7 | 17 | 11 | 2 | 11 | 3 | 12 | 2 | 12 | 9 | 13 | 0 | 14 | 4 | 15 | 3 | 15 | 6
+PIN | md_L<11> | 64 | 0 | N/A | 29 | 91 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 5 | 15 | 5 | 10 | 4 | 17 | 6 | 11 | 6 | 7 | 7 | 0 | 7 | 16 | 6 | 5 | 4 | 15 | 7 | 2 | 7 | 7 | 4 | 12 | 4 | 13 | 13 | 12 | 14 | 11 | 13 | 17 | 13 | 14 | 0 | 3 | 0 | 6 | 0 | 10 | 0 | 13 | 1 | 0 | 1 | 3 | 1 | 6 | 1 | 10 | 1 | 13 | 3 | 0 | 3 | 4 | 3 | 10 | 4 | 2 | 4 | 5 | 4 | 8 | 4 | 10 | 4 | 14 | 5 | 0 | 5 | 2 | 5 | 5 | 5 | 8 | 5 | 12 | 5 | 17 | 6 | 1 | 6 | 9 | 6 | 13 | 7 | 3 | 7 | 4 | 11 | 0 | 11 | 3 | 12 | 0 | 12 | 9 | 13 | 0 | 13 | 1 | 13 | 4 | 13 | 10 | 14 | 4 | 14 | 6 | 14 | 8 | 14 | 9 | 15 | 3 | 15 | 4
+PIN | md_L<3> | 64 | 0 | N/A | 201 | 104 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 7 | 15 | 9 | 17 | 5 | 15 | 5 | 10 | 4 | 17 | 6 | 11 | 6 | 7 | 7 | 0 | 7 | 16 | 6 | 5 | 4 | 15 | 6 | 13 | 7 | 7 | 6 | 3 | 4 | 13 | 13 | 12 | 14 | 11 | 13 | 17 | 13 | 16 | 0 | 5 | 0 | 8 | 0 | 10 | 0 | 12 | 0 | 13 | 1 | 2 | 1 | 5 | 1 | 8 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 3 | 0 | 3 | 2 | 3 | 4 | 3 | 6 | 3 | 10 | 3 | 12 | 4 | 2 | 4 | 5 | 4 | 8 | 4 | 10 | 4 | 12 | 4 | 14 | 5 | 2 | 5 | 3 | 5 | 5 | 5 | 6 | 5 | 8 | 5 | 12 | 5 | 17 | 6 | 1 | 6 | 9 | 7 | 2 | 7 | 3 | 7 | 4 | 9 | 0 | 9 | 16 | 11 | 2 | 11 | 3 | 11 | 5 | 12 | 2 | 12 | 9 | 12 | 11 | 13 | 0 | 13 | 3 | 13 | 4 | 13 | 10 | 14 | 4 | 14 | 6 | 14 | 8 | 15 | 3 | 15 | 6
+PIN | md_L<4> | 64 | 0 | N/A | 8 | 105 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 7 | 15 | 9 | 17 | 5 | 15 | 5 | 10 | 4 | 17 | 6 | 11 | 6 | 7 | 7 | 0 | 7 | 16 | 6 | 5 | 4 | 15 | 6 | 13 | 7 | 7 | 6 | 4 | 4 | 13 | 13 | 10 | 14 | 11 | 13 | 17 | 13 | 12 | 0 | 3 | 0 | 6 | 0 | 10 | 0 | 12 | 0 | 13 | 1 | 0 | 1 | 3 | 1 | 6 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 3 | 0 | 3 | 2 | 3 | 4 | 3 | 6 | 3 | 10 | 3 | 12 | 4 | 2 | 4 | 5 | 4 | 8 | 4 | 10 | 4 | 12 | 4 | 14 | 5 | 0 | 5 | 2 | 5 | 5 | 5 | 6 | 5 | 8 | 5 | 12 | 5 | 17 | 6 | 1 | 6 | 9 | 7 | 2 | 7 | 3 | 7 | 4 | 9 | 0 | 9 | 16 | 11 | 0 | 11 | 3 | 11 | 5 | 12 | 0 | 12 | 9 | 12 | 11 | 13 | 0 | 13 | 1 | 13 | 3 | 13 | 4 | 14 | 4 | 14 | 6 | 14 | 8 | 14 | 9 | 15 | 3 | 15 | 4
+PIN | md_L<5> | 64 | 0 | N/A | 227 | 104 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 7 | 15 | 9 | 17 | 5 | 14 | 5 | 9 | 4 | 16 | 6 | 10 | 6 | 6 | 6 | 13 | 7 | 16 | 6 | 5 | 4 | 15 | 6 | 9 | 7 | 7 | 4 | 3 | 4 | 13 | 13 | 12 | 14 | 11 | 13 | 17 | 13 | 11 | 0 | 5 | 0 | 8 | 0 | 10 | 0 | 12 | 0 | 13 | 1 | 2 | 1 | 5 | 1 | 8 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 3 | 0 | 3 | 2 | 3 | 4 | 3 | 6 | 3 | 10 | 3 | 12 | 4 | 2 | 4 | 5 | 4 | 8 | 4 | 10 | 4 | 12 | 4 | 14 | 5 | 2 | 5 | 3 | 5 | 5 | 5 | 6 | 5 | 8 | 5 | 12 | 5 | 17 | 6 | 1 | 7 | 2 | 7 | 3 | 7 | 4 | 7 | 17 | 9 | 0 | 9 | 16 | 11 | 2 | 11 | 3 | 11 | 5 | 12 | 2 | 12 | 9 | 12 | 11 | 13 | 0 | 13 | 3 | 13 | 4 | 13 | 8 | 13 | 10 | 14 | 4 | 14 | 8 | 15 | 3 | 15 | 4
+PIN | md_L<6> | 64 | 0 | N/A | 253 | 107 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 7 | 15 | 9 | 17 | 5 | 12 | 5 | 8 | 4 | 14 | 6 | 9 | 6 | 1 | 6 | 13 | 7 | 16 | 6 | 5 | 4 | 15 | 7 | 1 | 7 | 7 | 4 | 2 | 4 | 13 | 13 | 12 | 14 | 11 | 13 | 17 | 0 | 3 | 0 | 6 | 0 | 10 | 0 | 12 | 0 | 13 | 1 | 0 | 1 | 3 | 1 | 6 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 3 | 0 | 3 | 2 | 3 | 4 | 3 | 6 | 3 | 10 | 3 | 12 | 4 | 0 | 4 | 5 | 4 | 6 | 4 | 8 | 4 | 10 | 4 | 12 | 5 | 2 | 5 | 3 | 5 | 5 | 5 | 6 | 5 | 11 | 5 | 16 | 5 | 17 | 6 | 8 | 6 | 12 | 7 | 2 | 7 | 3 | 7 | 4 | 9 | 0 | 9 | 16 | 11 | 0 | 11 | 3 | 11 | 5 | 12 | 0 | 12 | 9 | 12 | 11 | 13 | 0 | 13 | 1 | 13 | 3 | 13 | 4 | 13 | 6 | 13 | 8 | 13 | 10 | 14 | 4 | 14 | 6 | 14 | 8 | 14 | 9 | 15 | 3 | 15 | 4
+PIN | md_L<8> | 64 | 0 | N/A | 234 | 104 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 7 | 15 | 9 | 17 | 5 | 15 | 5 | 10 | 4 | 17 | 6 | 11 | 6 | 7 | 7 | 0 | 7 | 16 | 6 | 5 | 4 | 15 | 6 | 13 | 7 | 7 | 4 | 7 | 4 | 13 | 13 | 12 | 14 | 11 | 13 | 17 | 13 | 8 | 0 | 3 | 0 | 6 | 0 | 10 | 0 | 12 | 0 | 13 | 1 | 0 | 1 | 3 | 1 | 6 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 3 | 0 | 3 | 2 | 3 | 4 | 3 | 6 | 3 | 10 | 3 | 12 | 4 | 2 | 4 | 5 | 4 | 8 | 4 | 10 | 4 | 12 | 4 | 14 | 5 | 2 | 5 | 5 | 5 | 6 | 5 | 8 | 5 | 12 | 5 | 17 | 6 | 1 | 6 | 9 | 7 | 2 | 7 | 3 | 7 | 4 | 9 | 0 | 9 | 16 | 11 | 0 | 11 | 3 | 11 | 5 | 12 | 0 | 12 | 9 | 12 | 11 | 13 | 0 | 13 | 3 | 13 | 4 | 13 | 6 | 13 | 10 | 14 | 4 | 14 | 8 | 14 | 9 | 15 | 3 | 15 | 4
+PIN | md_L<9> | 64 | 0 | N/A | 6 | 84 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 7 | 15 | 9 | 16 | 5 | 12 | 5 | 8 | 4 | 15 | 6 | 9 | 6 | 1 | 6 | 13 | 7 | 2 | 7 | 7 | 4 | 7 | 4 | 14 | 13 | 12 | 14 | 11 | 13 | 17 | 0 | 12 | 0 | 13 | 1 | 12 | 1 | 15 | 3 | 2 | 3 | 6 | 3 | 12 | 4 | 0 | 4 | 2 | 4 | 5 | 4 | 8 | 4 | 12 | 5 | 0 | 5 | 2 | 5 | 5 | 5 | 11 | 5 | 16 | 5 | 17 | 6 | 8 | 6 | 12 | 7 | 1 | 7 | 3 | 7 | 4 | 7 | 16 | 9 | 0 | 11 | 5 | 12 | 11 | 13 | 0 | 13 | 1 | 13 | 3 | 13 | 8 | 13 | 10 | 14 | 4 | 14 | 6 | 14 | 8 | 14 | 9 | 15 | 3
+PIN | md_L<7> | 64 | 0 | N/A | 148 | 102 | 13 | 2 | 13 | 13 | 14 | 7 | 5 | 1 | 0 | 14 | 6 | 2 | 5 | 13 | 5 | 7 | 5 | 4 | 13 | 5 | 14 | 10 | 13 | 9 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 7 | 15 | 9 | 17 | 5 | 12 | 5 | 8 | 4 | 14 | 6 | 9 | 6 | 1 | 6 | 13 | 7 | 16 | 6 | 5 | 4 | 15 | 7 | 1 | 7 | 7 | 4 | 6 | 4 | 13 | 13 | 12 | 14 | 11 | 13 | 17 | 13 | 6 | 0 | 5 | 0 | 8 | 0 | 10 | 0 | 12 | 0 | 13 | 1 | 2 | 1 | 5 | 1 | 8 | 1 | 10 | 1 | 12 | 1 | 13 | 1 | 15 | 3 | 0 | 3 | 2 | 3 | 4 | 3 | 6 | 3 | 10 | 3 | 12 | 4 | 0 | 4 | 2 | 4 | 5 | 4 | 8 | 4 | 10 | 4 | 12 | 5 | 2 | 5 | 3 | 5 | 5 | 5 | 11 | 5 | 16 | 5 | 17 | 6 | 8 | 6 | 12 | 7 | 2 | 7 | 3 | 7 | 4 | 9 | 0 | 9 | 16 | 11 | 2 | 11 | 3 | 11 | 5 | 12 | 2 | 12 | 9 | 12 | 11 | 13 | 0 | 13 | 3 | 13 | 10 | 13 | 11 | 14 | 4 | 14 | 8 | 15 | 3 | 15 | 6
+PIN | ts4_L | 64 | 0 | N/A | 139 | 3 | 13 | 1 | 13 | 17 | 13 | 3
+PIN | word_L | 64 | 0 | N/A | 242 | 4 | 13 | 17 | 7 | 14 | 8 | 14 | 13 | 3
+PIN | md_L<0> | 64 | 0 | N/A | 188 | 2 | 13 | 13 | 10 | 14
+PIN | pca_L | 64 | 0 | N/A | 258 | 3 | 13 | 13 | 8 | 17 | 13 | 12
+PIN | md_L<1> | 64 | 0 | N/A | 89 | 2 | 0 | 14 | 10 | 15
+PIN | md_L<2> | 64 | 0 | N/A | 237 | 2 | 6 | 2 | 6 | 0
+PIN | initialize | 64 | 0 | N/A | 195 | 32 | 11 | 4 | 12 | 1 | 1 | 1 | 1 | 4 | 4 | 1 | 12 | 10 | 4 | 9 | 1 | 11 | 0 | 11 | 3 | 11 | 11 | 1 | 0 | 4 | 15 | 5 | 1 | 7 | 0 | 7 | 3 | 5 | 4 | 4 | 4 | 11 | 1 | 14 | 3 | 1 | 3 | 17 | 7 | 15 | 9 | 17 | 7 | 14 | 7 | 16 | 6 | 5 | 9 | 16 | 14 | 4 | 9 | 0 | 4 | 2 | 4 | 3 | 15 | 3
+PIN | tp3 | 64 | 0 | N/A | 32 | 32 | 7 | 15 | 5 | 15 | 5 | 10 | 4 | 17 | 6 | 11 | 6 | 7 | 7 | 0 | 7 | 16 | 6 | 5 | 4 | 15 | 4 | 13 | 8 | 15 | 10 | 17 | 4 | 12 | 10 | 15 | 10 | 14 | 4 | 10 | 4 | 8 | 4 | 7 | 4 | 6 | 4 | 5 | 4 | 3 | 6 | 4 | 6 | 3 | 6 | 0 | 4 | 0 | 4 | 14 | 5 | 11 | 5 | 16 | 6 | 8 | 6 | 12 | 7 | 1
+PIN | overflow_L | 64 | 0 | N/A | 163 | 2 | 9 | 17 | 9 | 15
+PIN | protect | 64 | 0 | N/A | 44 | 2 | 6 | 5 | 14 | 13
+PIN | tp4 | 8256 | 0 | N/A | 60 | 1 | 8 | 14
+PIN | tp1 | 4160 | 0 | N/A | 57 | 1 | 8 | 13
+PIN | dma<11> | 536871040 | 0 | N/A | 202
+PIN | dar<10> | 536871040 | 0 | N/A | 132
+PIN | dar<8> | 536871040 | 0 | N/A | 20
+PIN | dar<6> | 536871040 | 0 | N/A | 22
+PIN | dma<10> | 536871040 | 0 | N/A | 63
+PIN | dma<0> | 536871040 | 0 | N/A | 142
+PIN | dma<8> | 536871040 | 0 | N/A | 71
+PIN | dma<6> | 536871040 | 0 | N/A | 28
+PIN | dma<4> | 536871040 | 0 | N/A | 43
+PIN | dma<2> | 536871040 | 0 | N/A | 12
+PIN | dar<11> | 536871040 | 0 | N/A | 199
+PIN | dar<9> | 536871040 | 0 | N/A | 37
+PIN | dar<7> | 536871040 | 0 | N/A | 171
+PIN | dar<5> | 536871040 | 0 | N/A | 24
+PIN | dar<4> | 536871040 | 0 | N/A | 39
+PIN | dma<1> | 536871040 | 0 | N/A | 7
+PIN | dma<9> | 536871040 | 0 | N/A | 65
+PIN | dma<7> | 536871040 | 0 | N/A | 73
+PIN | dma<5> | 536871040 | 0 | N/A | 30
+PIN | dma<3> | 536871040 | 0 | N/A | 4
+PIN | ema_L<0> | 536871040 | 0 | N/A | 221
+PIN | ema_L<1> | 536871040 | 0 | N/A | 225
+PIN | ema_L<2> | 536871040 | 0 | N/A | 226
+PIN | ma_L<0> | 536871040 | 0 | N/A | 97
+PIN | ma_L<10> | 536871040 | 0 | N/A | 147
+PIN | ma_L<11> | 536871040 | 0 | N/A | 100
+PIN | ma_L<1> | 536871040 | 0 | N/A | 47
+PIN | ma_L<2> | 536871040 | 0 | N/A | 175
+PIN | ma_L<3> | 536871040 | 0 | N/A | 207
+PIN | ma_L<4> | 536871040 | 0 | N/A | 231
+PIN | ma_L<5> | 536871040 | 0 | N/A | 217
+PIN | ma_L<6> | 536871040 | 0 | N/A | 219
+PIN | ma_L<7> | 536871040 | 0 | N/A | 114
+PIN | ma_L<8> | 536871040 | 0 | N/A | 220
+PIN | ma_L<9> | 536871040 | 0 | N/A | 129
+PIN | c0_L | 536871040 | 0 | N/A | 236
+PIN | c1_L | 536871040 | 0 | N/A | 240
+PIN | skip_L | 536871040 | 0 | N/A | 77
+PIN | ms_disable_L | 536871040 | 0 | N/A | 107
+PIN | md_dir_L | 536871040 | 0 | N/A | 112
+PIN | load_cont_L | 536871040 | 0 | N/A | 125
+PIN | int_rq_L | 536871040 | 0 | N/A | 131
+PIN | break_cycle_L | 536871040 | 0 | N/A | 98
+PIN | brk_data_cont_L | 536871040 | 0 | N/A | 101
+PIN | cs1_L | 536871040 | 0 | N/A | 152
+PIN | cs0_L | 536871040 | 0 | N/A | 167
+PIN | we_L | 536871040 | 0 | N/A | 161
+PIN | data_L<7> | 536870976 | 0 | N/A | 185 | 7 | 15 | 5 | 4 | 11 | 6 | 11 | 4 | 10 | 4 | 12 | 6 | 13 | 15 | 6
+PIN | data_L<0> | 536870976 | 0 | N/A | 193 | 4 | 12 | 10 | 8 | 14 | 12 | 9 | 12 | 11
+PIN | data_L<10> | 536870976 | 0 | N/A | 155 | 4 | 12 | 1 | 4 | 1 | 4 | 2 | 12 | 2
+PIN | data_L<11> | 536870976 | 0 | N/A | 251 | 5 | 11 | 4 | 11 | 1 | 11 | 2 | 11 | 3 | 11 | 5
+PIN | data_L<1> | 536870976 | 0 | N/A | 45 | 4 | 3 | 5 | 8 | 14 | 3 | 4 | 3 | 6
+PIN | data_L<2> | 536870976 | 0 | N/A | 80 | 4 | 3 | 11 | 8 | 14 | 3 | 10 | 3 | 12
+PIN | data_L<3> | 536870976 | 0 | N/A | 262 | 6 | 3 | 1 | 5 | 10 | 8 | 14 | 3 | 0 | 3 | 2 | 5 | 12
+PIN | data_L<4> | 536870976 | 0 | N/A | 256 | 11 | 0 | 11 | 0 | 7 | 7 | 0 | 8 | 14 | 7 | 16 | 14 | 4 | 0 | 8 | 0 | 10 | 0 | 12 | 7 | 2 | 15 | 3
+PIN | data_L<5> | 536870976 | 0 | N/A | 254 | 9 | 1 | 7 | 1 | 14 | 5 | 15 | 8 | 14 | 1 | 8 | 1 | 13 | 1 | 15 | 5 | 13 | 5 | 17
+PIN | data_L<6> | 536870976 | 0 | N/A | 187 | 8 | 1 | 4 | 1 | 11 | 6 | 7 | 8 | 14 | 1 | 5 | 1 | 10 | 1 | 12 | 6 | 9
+PIN | data_L<8> | 536870976 | 0 | N/A | 158 | 7 | 1 | 1 | 4 | 9 | 4 | 17 | 1 | 2 | 4 | 1 | 4 | 8 | 4 | 15
+PIN | data_L<9> | 536870976 | 0 | N/A | 190 | 4 | 0 | 4 | 4 | 4 | 0 | 5 | 4 | 5

@@ -1,0 +1,3760 @@
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+ERROR : Please specify a 'TDO Input File' in the 'TDO Converter' process properties window.
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:28 - "rfomni.v" line 11 'mydev_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 11 unexpected token: '3'
+ERROR:HDLCompilers:28 - "rfomni.v" line 11 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 12 'S601_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 12 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 12 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 12 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 12 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 13 'S611_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 13 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 13 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 13 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 13 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 14 'S621_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 14 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 14 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 14 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 14 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 15 'S641_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 15 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 15 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 15 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 15 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 16 'S602_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 16 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 16 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 16 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 16 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 17 'S612_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 17 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 17 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 17 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 17 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 18 'S622_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 18 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 18 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 18 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 18 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 19 'S642_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 19 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 19 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 19 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 19 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 20 'S604_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 20 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 20 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 20 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 20 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 21 'S614_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 21 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 21 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 21 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 21 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 22 'S624_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 22 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 22 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 22 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 22 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 23 'S644_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 23 'mydev_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 23 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 23 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 23 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 24 'dcim_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 24 'S614_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 24 'S612_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 24 'S611_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 25 'dsac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 25 'S614_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 25 'S612_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 25 'S611_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 26 'diml_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 26 'S614_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 26 'S612_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 26 'S611_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 27 'dima_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 27 'S614_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 27 'S612_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 27 'S611_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 28 'S601_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 28 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 28 'S601_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 29 'S601_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 29 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 29 'S601_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 30 'dcim_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 30 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 30 'dcim_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 31 'skip_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 31 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 31 'skp_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'c1_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'dxac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'S624_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'S614_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 42 'c0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 42 unexpected token: '9'
+ERROR:HDLCompilers:28 - "rfomni.v" line 42 'bmd_L' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 42 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 42 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 43 unexpected token: '9'
+ERROR:HDLCompilers:28 - "rfomni.v" line 43 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 44 unexpected token: '9'
+ERROR:HDLCompilers:28 - "rfomni.v" line 44 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 44 'S612_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 45 unexpected token: '9'
+ERROR:HDLCompilers:28 - "rfomni.v" line 45 'bmd_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 45 'S642_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 46 unexpected token: '9'
+ERROR:HDLCompilers:28 - "rfomni.v" line 46 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 47 unexpected token: '9'
+ERROR:HDLCompilers:28 - "rfomni.v" line 47 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 48 unexpected token: '9'
+ERROR:HDLCompilers:28 - "rfomni.v" line 48 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 49 unexpected token: '9'
+ERROR:HDLCompilers:28 - "rfomni.v" line 49 'bmd_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 49 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 55 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 56 expecting ')', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 56 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 56 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 56 expecting ')', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 56 expecting ')', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 57 expecting ':', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 65 expecting ';', found '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 66 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 66 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 66 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 66 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 67 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 67 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126968 kilobytes
+
+Number of errors   :  130 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 10 unexpected token: '0'
+ERROR:HDLCompilers:26 - "rfomni.v" line 10 expecting ':', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 17 unexpected token: '3'
+ERROR:HDLCompilers:26 - "rfomni.v" line 18 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 19 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 20 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 21 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 22 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 23 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 24 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 25 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 26 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 27 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 28 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 29 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 30 'dcim_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 31 'dsac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 32 'diml_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 33 'dima_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 34 'S601_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 34 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 35 'S601_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 35 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'dcim_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'dcim_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 37 'skip_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 37 'skp_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 42 'c1_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 42 'dxac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 48 'c0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 48 unexpected token: '9'
+WARNING:HDLCompilers:299 - "rfomni.v" line 48 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 48 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 49 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 50 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 51 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 52 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 53 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 54 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 55 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 55 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 61 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 63 expecting ':', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 71 expecting ';', found '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 73 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 73 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126968 kilobytes
+
+Number of errors   :   55 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 17 unexpected token: '3'
+ERROR:HDLCompilers:26 - "rfomni.v" line 18 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 19 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 20 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 21 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 22 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 23 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 24 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 25 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 26 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 27 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 28 unexpected token: '6'
+ERROR:HDLCompilers:26 - "rfomni.v" line 29 unexpected token: '6'
+ERROR:HDLCompilers:28 - "rfomni.v" line 30 'dcim_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 31 'dsac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 32 'diml_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 33 'dima_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 34 'S601_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 34 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 35 'S601_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 35 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'dcim_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'dcim_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 37 'skip_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 37 'skp_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 42 'c1_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 42 'dxac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 48 'c0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 48 unexpected token: '9'
+WARNING:HDLCompilers:299 - "rfomni.v" line 48 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 48 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 49 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 50 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 51 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 52 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 53 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 54 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 55 unexpected token: '9'
+ERROR:HDLCompilers:26 - "rfomni.v" line 55 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 61 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 63 expecting ':', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 71 expecting ';', found '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 73 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 73 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126520 kilobytes
+
+Number of errors   :   53 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:28 - "rfomni.v" line 30 'dcim_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 31 'dsac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 32 'diml_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 33 'dima_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 34 'S601_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 34 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 35 'S601_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 35 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'dcim_H' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 36 'dcim_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 37 'skip_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 37 'skp_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 42 'c1_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 42 'dxac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 48 'c0_L' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 48 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 48 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 55 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 61 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found ':'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ')', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 62 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 71 expecting ';', found '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 73 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 73 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126200 kilobytes
+
+Number of errors   :   32 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:28 - "rfomni.v" line 37 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 38 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 39 'tp3' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 40 'skip_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 40 'skp_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 45 'c1_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 45 'dxac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 51 'c0_L' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 51 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 51 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 58 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 64 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 65 expecting ')', found ':'
+ERROR:HDLCompilers:26 - "rfomni.v" line 65 expecting ')', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 65 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 65 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 65 expecting ')', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 65 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 74 expecting ';', found '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 75 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 75 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 75 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 75 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 76 expecting 'end', found '}'
+ERROR:HDLCompilers:208 - "rfomni.v" line 3 Port reference 'tp3' was not declared as input, inout or output
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 76 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126776 kilobytes
+
+Number of errors   :   25 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:28 - "rfomni.v" line 41 'skip_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 41 'skp_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 46 'c1_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 46 'dxac_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 52 'c0_L' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 52 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 52 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 59 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 65 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 66 expecting ')', found ':'
+ERROR:HDLCompilers:26 - "rfomni.v" line 66 expecting ')', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 66 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 66 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 66 expecting ')', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 66 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 75 expecting ';', found '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 76 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 76 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 76 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 76 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 77 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 77 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126584 kilobytes
+
+Number of errors   :   21 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:28 - "rfomni.v" line 48 'dxac_L' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 54 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 54 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 61 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 67 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ':'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 77 expecting ';', found '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 79 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 79 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :   17 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+WARNING:HDLCompilers:299 - "rfomni.v" line 54 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 54 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 61 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 67 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ':'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 77 expecting ';', found '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 79 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 79 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126136 kilobytes
+
+Number of errors   :   16 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+WARNING:HDLCompilers:299 - "rfomni.v" line 54 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 54 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 61 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 67 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ':'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 77 expecting ';', found '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 78 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 79 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 79 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :   16 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+WARNING:HDLCompilers:299 - "rfomni.v" line 54 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 54 unexpected token: '1'
+WARNING:HDLCompilers:299 - "rfomni.v" line 55 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 55 unexpected token: '1'
+WARNING:HDLCompilers:299 - "rfomni.v" line 56 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 56 unexpected token: 'S612_L'
+WARNING:HDLCompilers:299 - "rfomni.v" line 57 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 57 unexpected token: 'S642_L'
+WARNING:HDLCompilers:299 - "rfomni.v" line 58 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 58 unexpected token: '1'
+WARNING:HDLCompilers:299 - "rfomni.v" line 59 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 59 unexpected token: '1'
+WARNING:HDLCompilers:299 - "rfomni.v" line 60 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 60 unexpected token: '1'
+WARNING:HDLCompilers:299 - "rfomni.v" line 61 Too many digits specified in binary constant
+ERROR:HDLCompilers:26 - "rfomni.v" line 61 unexpected token: '1'
+ERROR:HDLCompilers:26 - "rfomni.v" line 61 unexpected token: ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 67 expecting ':', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 68 expecting ':', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 77 expecting ':', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 78 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 78 expecting ':', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 78 expecting ')', found ','
+ERROR:HDLCompilers:26 - "rfomni.v" line 78 expecting ':', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 80 expecting ':', found ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 82 expecting ':', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 85 expecting ';', found ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 85 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 86 'dar_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 87 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 87 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :   24 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 61 expecting ':', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 67 expecting ';', found ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 67 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 68 'wc' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 69 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 70 'brk_data_cont_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 71 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 71 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126904 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:28 - "rfomni.v" line 67 'dt_l' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 67 'my_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 67 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 68 'wc' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 69 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 70 'brk_data_cont_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 71 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 71 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126456 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:28 - "rfomni.v" line 69 'dt_l' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 69 'my_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 69 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 70 'wc' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 71 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 72 'brk_data_cont_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 73 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 73 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126520 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:28 - "rfomni.v" line 71 'dt_l' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 71 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 73 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 74 'brk_data_cont_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 75 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 75 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 127032 kilobytes
+
+Number of errors   :    6 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 71 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 73 'ema_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 74 'brk_data_cont_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 75 expecting 'end', found '}'
+ERROR:HDLCompilers:208 - "rfomni.v" line 2 Port reference 'ema_L' was not declared as input, inout or output
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 75 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126200 kilobytes
+
+Number of errors   :    6 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 72 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 74 'ema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 76 expecting 'end', found '}'
+ERROR:HDLCompilers:208 - "rfomni.v" line 2 Port reference 'ema_L' was not declared as input, inout or output
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 76 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126200 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 9 unexpected token: '0'
+ERROR:HDLCompilers:26 - "rfomni.v" line 9 expecting ':', found ']'
+ERROR:HDLCompilers:26 - "rfomni.v" line 83 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 83 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 84 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 84 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 84 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 84 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 85 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 85 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :   10 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 83 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 83 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 84 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 84 'dma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 84 'dar_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 84 'dma_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 85 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 85 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126904 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 85 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 85 unexpected token: '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 87 expecting 'end', found '}'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 87 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126136 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 85 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 88 'S501_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 88 'initialize_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 88 unexpected token: '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 90 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 90 expecting 'end', found 'else'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 90 expecting 'endmodule', found 'if'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 127032 kilobytes
+
+Number of errors   :    7 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 86 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 89 unexpected token: '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 91 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 91 expecting 'end', found 'else'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 91 expecting 'endmodule', found 'if'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126648 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 86 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 91 'S542_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 92 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 94 'dcxa_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 96 'S542_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 97 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 100 'S524_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 105 'DXAC_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 106 unexpected token: '.'
+ERROR:HDLCompilers:26 - "rfomni.v" line 106 expecting ';', found ':'
+ERROR:HDLCompilers:26 - "rfomni.v" line 106 expecting 'end', found '11'
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 107 expecting 'endmodule', found 'else'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126264 kilobytes
+
+Number of errors   :   12 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 86 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 91 'S542_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 92 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 94 'dcxa_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 96 'S542_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 97 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 100 'S524_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 111 'bwc0_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 111 'overflow_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 111 'wc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 112 'start' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 113 'start_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 113 'start' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 116 'busy' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 117 'start_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 118 'busy' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 119 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 119 'error_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 119 unexpected token: ')'
+ERROR:HDLCompilers:28 - "rfomni.v" line 120 'busy' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 125 'done' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 126 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 127 'done' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 131 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 133 'writing' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 134 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 135 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 138 'we_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 138 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 138 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 139 'setwls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 139 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 139 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 141 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 141 'ts4_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 143 'error_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 143 'error' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 145 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 145 'word_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 145 'busy_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'idle' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'want_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 149 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 150 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 152 'my_db_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 154 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 155 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'load_cont_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 159 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 160 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 166 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 167 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 168 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 168 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 169 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 169 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126392 kilobytes
+
+Number of errors   :   60 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 86 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 91 'start_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 92 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 94 'dcxa_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 97 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 111 'bwc0_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 111 'overflow_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 111 'wc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 112 'start' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 113 'start_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 113 'start' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 116 'busy' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 117 'start_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 118 'busy' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 119 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 119 'error_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 119 unexpected token: ')'
+ERROR:HDLCompilers:28 - "rfomni.v" line 120 'busy' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 125 'done' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 126 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 127 'done' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 131 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 133 'writing' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 134 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 135 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 138 'we_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 138 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 138 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 139 'setwls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 139 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 139 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 141 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 141 'ts4_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 143 'error_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 143 'error' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 145 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 145 'word_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 145 'busy_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'idle' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'want_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 149 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 150 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 152 'my_db_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 154 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 155 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'load_cont_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 159 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 160 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 166 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 167 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 168 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 168 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 169 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 169 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126584 kilobytes
+
+Number of errors   :   58 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 87 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 93 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 95 'dcxa_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 98 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 112 'bwc0_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 112 'overflow_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 112 'wc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 117 'busy' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 119 'busy' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 120 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 120 'error_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 120 unexpected token: ')'
+ERROR:HDLCompilers:28 - "rfomni.v" line 121 'busy' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 126 'done' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 127 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 128 'done' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 132 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 134 'writing' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 135 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 136 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 139 'we_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 139 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 139 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 140 'setwls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 140 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 140 'writing' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 142 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 142 'ts4_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 144 'error_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 144 'error' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'word_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'busy_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 147 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 147 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 147 'idle' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 149 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 149 'want_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 151 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 153 'my_db_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 156 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 158 'load_cont_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 158 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 160 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 161 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 167 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 168 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 169 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 169 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 170 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 170 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :   53 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 89 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 95 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 97 'dcxa_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 100 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 114 'bwc0_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 114 'overflow_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 122 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 122 'error_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 122 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 129 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 137 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 141 'we_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 141 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 142 'setwls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 142 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 144 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 144 'ts4_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'error_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'error' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'word_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'busy_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 149 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 149 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 149 'idle' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 151 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 151 'want_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 152 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 153 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 155 'my_db_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 157 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 158 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 160 'load_cont_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 160 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 162 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 163 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 169 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 170 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 171 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 171 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 172 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 172 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126136 kilobytes
+
+Number of errors   :   42 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 89 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 97 'dcxa_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 114 'bwc0_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 114 'overflow_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 122 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 122 'error_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 122 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 129 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 137 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 141 'we_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 141 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 142 'setwls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 142 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 144 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 144 'ts4_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'error_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 146 'error' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'word_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 148 'busy_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 149 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 149 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 149 'idle' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 151 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 151 'want_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 152 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 153 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 155 'my_db_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 157 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 158 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 160 'load_cont_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 160 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 162 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 163 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 169 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 170 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 171 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 171 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 172 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 172 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126840 kilobytes
+
+Number of errors   :   40 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 92 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 125 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 125 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 132 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 140 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 144 'we_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 144 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 145 'setwls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 145 'protect' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 147 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 147 'ts4_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 151 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 151 'word_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 151 'busy_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 152 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 152 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 152 'idle' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 154 'ts4' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 154 'want_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 156 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 158 'my_db_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 160 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 161 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 163 'load_cont_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 163 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 165 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 166 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 172 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 173 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 174 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 174 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 175 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 175 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 127032 kilobytes
+
+Number of errors   :   34 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 97 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 130 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 130 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 137 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 145 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 152 'ts4_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 156 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 156 'word_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 156 'busy_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'idle' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 159 'want_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 160 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 161 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 163 'my_db_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 165 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 166 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 168 'load_cont_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 168 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 170 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 171 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 177 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 178 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 179 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 179 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 180 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 180 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 127096 kilobytes
+
+Number of errors   :   28 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 98 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 131 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 131 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 138 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 146 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'word_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 157 'busy_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 158 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 158 'go' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 158 'idle' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 160 'want_db' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 161 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 162 'want_db' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 164 'my_db_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 166 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 167 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 169 'load_cont_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 169 'load_cont' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 171 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 172 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 179 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 180 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 180 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 181 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 181 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126328 kilobytes
+
+Number of errors   :   27 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 102 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 135 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 135 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 142 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 161 'word_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 165 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 170 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 175 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 176 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 182 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 183 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 184 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 184 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 185 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 185 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126968 kilobytes
+
+Number of errors   :   16 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:207 - "rfomni.v" line 16 Signal 'word_L' is not referenced in the module port list
+ERROR:HDLCompilers:26 - "rfomni.v" line 102 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 135 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 135 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 142 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 161 'word_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 165 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 170 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 175 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 176 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 182 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 183 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 184 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 184 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 185 unexpected token: '='
+ERROR:HDLCompilers:208 - "rfomni.v" line 4 Port reference 'word' was not declared as input, inout or output
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 185 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126264 kilobytes
+
+Number of errors   :   18 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 102 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 135 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 135 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 142 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 165 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 170 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 175 'break_cycle_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 176 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 182 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 183 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 184 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 184 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 185 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 185 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126200 kilobytes
+
+Number of errors   :   15 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 103 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 136 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 136 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 151 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 166 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 171 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 177 'ms_disable_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 183 unexpected token: '{'
+ERROR:HDLCompilers:28 - "rfomni.v" line 184 'per' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 185 expecting 'end', found '}'
+ERROR:HDLCompilers:26 - "rfomni.v" line 185 expecting ';', found '{'
+ERROR:HDLCompilers:26 - "rfomni.v" line 186 unexpected token: '='
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 186 expecting 'endmodule', found '1'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :   14 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 104 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 137 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 137 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 144 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 152 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 167 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 172 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 186 'setper_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 188 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'int_rq' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'cie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'pie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'pca' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'eie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 193 'int_rw_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 193 'int_rq' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 196 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 198 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 199 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 200 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 202 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 202 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 204 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 204 'pca_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'sr_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 205 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 206 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 206 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126200 kilobytes
+
+Number of errors   :   28 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 104 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 137 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 137 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 144 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 152 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 167 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 172 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 188 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'int_rq' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'cie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'pie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'pca' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 192 'eie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 193 'int_rw_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 193 'int_rq' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 196 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 198 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 199 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 200 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 202 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 202 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 204 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 204 'pca_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'sr_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 205 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 206 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 206 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126776 kilobytes
+
+Number of errors   :   27 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 105 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 138 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 138 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 145 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 153 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 168 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 173 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 189 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 193 'cie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 193 'pie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 193 'pca' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 193 'eie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 197 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 199 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 200 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 201 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 203 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 203 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'pca_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 206 'sr_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 206 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 207 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 207 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126584 kilobytes
+
+Number of errors   :   24 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 49 unexpected token: 'eie'
+ERROR:HDLCompilers:26 - "rfomni.v" line 49 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 49 expecting 'endmodule', found '3'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 49 expecting 'endmodule', found ''d'
+ERROR:HDLCompilers:33 - "rfomni.v" line 49 Illegal digit(s) in decimal constant 'efine'
+ERROR:HDLCompilers:33 - "rfomni.v" line 50 Illegal digit(s) in decimal constant 'efine'
+ERROR:HDLCompilers:33 - "rfomni.v" line 51 Illegal digit(s) in decimal constant 'efine'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126776 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 109 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 142 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 142 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 149 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 157 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 172 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 177 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 193 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 197 'cie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 197 'pie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 197 'pca' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 197 'eie' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 201 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 203 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 204 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 207 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 207 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 209 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 209 'pca_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 210 'sr_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 210 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 211 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 211 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :   24 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 107 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 140 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 140 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 147 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 170 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 175 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 191 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 195 'pca' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 199 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 201 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 202 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 203 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 207 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 207 'pca_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 208 'sr_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 208 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 209 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 209 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126904 kilobytes
+
+Number of errors   :   21 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 107 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 140 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 140 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 147 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 170 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 175 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 191 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 195 'cie_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 196 'pie_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 197 'eie_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 198 'pca' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 202 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 204 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 205 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 206 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 208 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 208 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 210 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 210 'pca_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 211 'sr_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 211 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 212 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 212 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126136 kilobytes
+
+Number of errors   :   24 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 107 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 140 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 140 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 147 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 170 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 175 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 191 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 195 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 196 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 197 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 198 'pca' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 202 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 204 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 205 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 206 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 208 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 208 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 210 'sr_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 210 'pca_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 211 'sr_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 211 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 212 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 212 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :   24 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 108 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 141 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 141 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 156 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 171 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 176 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 192 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 199 'pca' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 203 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 206 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 207 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 209 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 209 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 211 'pca_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 212 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 213 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 213 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126648 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 108 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 141 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 141 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 156 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 171 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 176 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 192 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 199 'pca' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 203 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 206 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 207 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 209 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 209 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 212 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 213 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 213 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126904 kilobytes
+
+Number of errors   :   18 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 108 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 141 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 141 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 156 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 171 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 176 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 192 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 203 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 205 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 206 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 207 'wls' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 209 'wls_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 209 'wls' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 212 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 213 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 213 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126264 kilobytes
+
+Number of errors   :   17 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 110 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 158 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 173 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 194 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 208 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 214 expecting 'end', found ';'
+ERROR:HDLCompilers:26 - "rfomni.v" line 215 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 215 expecting 'endmodule', found '2'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126136 kilobytes
+
+Number of errors   :   12 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 110 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 158 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 173 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 194 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 208 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 218 expecting ';', found 'begin'
+ERROR:HDLCompilers:26 - "rfomni.v" line 221 unexpected token: '['
+Module <rf08> compiled
+ERROR:HDLCompilers:26 - "rfomni.v" line 221 expecting 'endmodule', found '9'
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 127096 kilobytes
+
+Number of errors   :   12 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:26 - "rfomni.v" line 110 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 158 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 173 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 194 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 208 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 222 'per_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 223 'eie_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 223 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 224 'pie_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 224 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 225 'cie_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 225 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 233 'per_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 235 'skp' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 245 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 250 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 252 'data' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 261 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 267 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 269 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 276 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 278 'bmdeven' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 278 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 281 'bmdeven' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 284 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 290 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 290 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 292 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 293 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'md_dir' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 297 'cs0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: '_L'
+ERROR:HDLCompilers:28 - "rfomni.v" line 298 'cs1_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 298 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 300 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 309 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 309 Too many digits specified in binary constant
+ERROR:HDLCompilers:28 - "rfomni.v" line 312 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 313 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 313 'bmd' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 313 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 314 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 314 'bmd' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 314 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 314 'bmdeven' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126200 kilobytes
+
+Number of errors   :   57 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 110 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 158 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 173 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 194 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 208 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 223 'eie_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 223 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 224 'pie_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 224 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 225 'cie_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 225 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 235 'skp' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 245 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 250 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 252 'data' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 261 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 267 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 269 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 276 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 278 'bmdeven' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 278 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 281 'bmdeven' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 284 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 290 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 290 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 292 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 293 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'md_dir' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 297 'cs0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: '_L'
+ERROR:HDLCompilers:28 - "rfomni.v" line 298 'cs1_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 298 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 300 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 309 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 309 Too many digits specified in binary constant
+ERROR:HDLCompilers:28 - "rfomni.v" line 312 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 313 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 313 'bmd' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 313 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 314 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 314 'bmd' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 314 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 314 'bmdeven' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126776 kilobytes
+
+Number of errors   :   56 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 110 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 158 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 173 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 194 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 205 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 232 'skp' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 242 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 247 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 249 'data' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 258 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 264 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 266 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 273 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 275 'bmdeven' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 275 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 278 'bmdeven' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 281 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 287 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 287 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 289 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 290 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 292 'md_dir' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 292 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 294 'cs0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 294 unexpected token: '_L'
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'cs1_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 295 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 298 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 298 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 299 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 299 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 299 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 303 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 303 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 306 Too many digits specified in binary constant
+ERROR:HDLCompilers:28 - "rfomni.v" line 309 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 310 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 310 'bmd' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 310 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'bmd' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'bmdeven' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126520 kilobytes
+
+Number of errors   :   50 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 110 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 143 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 150 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 158 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 173 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 194 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 205 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 242 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 247 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 249 'data' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 258 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 264 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 266 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 273 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 275 'bmdeven' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 275 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 278 'bmdeven' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 281 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 287 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 287 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 289 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 290 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 292 'md_dir' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 292 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 294 'cs0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 294 unexpected token: '_L'
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'cs1_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 295 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 298 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 298 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 299 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 299 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 299 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 303 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 303 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 306 Too many digits specified in binary constant
+ERROR:HDLCompilers:28 - "rfomni.v" line 309 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 310 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 310 'bmd' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 310 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'bmd' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'odd411' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'bmdeven' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126776 kilobytes
+
+Number of errors   :   49 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 111 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 144 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 144 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 151 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 159 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 174 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 179 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 195 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 206 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 243 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 248 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 250 'data' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 259 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 265 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 267 'data' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 274 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 276 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 282 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 288 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 288 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 290 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 291 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 293 'md_dir' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 293 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'cs0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 295 unexpected token: '_L'
+ERROR:HDLCompilers:28 - "rfomni.v" line 296 'cs1_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 296 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 298 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 299 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 299 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 300 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 300 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 300 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 303 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 304 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 304 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 307 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 307 Too many digits specified in binary constant
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 312 'dma_in' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126136 kilobytes
+
+Number of errors   :   41 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 112 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 145 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 145 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 152 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 160 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 175 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 180 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 196 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 207 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 244 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 260 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 275 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 277 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 283 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 289 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 289 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 291 'dma_in_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 292 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 294 'md_dir' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 294 'dma_out_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 296 'cs0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 296 unexpected token: '_L'
+ERROR:HDLCompilers:28 - "rfomni.v" line 297 'cs1_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 299 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 300 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 300 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 301 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 304 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 308 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 308 Too many digits specified in binary constant
+ERROR:HDLCompilers:28 - "rfomni.v" line 312 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 313 'dma_in' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126264 kilobytes
+
+Number of errors   :   37 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 112 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 145 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 145 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 152 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 160 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 175 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 180 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 196 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 207 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 244 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 260 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 277 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 289 'dma_in' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 294 'md_dir' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 296 'cs0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 296 unexpected token: '_L'
+ERROR:HDLCompilers:28 - "rfomni.v" line 297 'cs1_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 299 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 300 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 300 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 301 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 304 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 308 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 308 Too many digits specified in binary constant
+ERROR:HDLCompilers:28 - "rfomni.v" line 312 'pbit' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 313 'dma_in' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 127096 kilobytes
+
+Number of errors   :   31 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 113 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 146 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 146 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 153 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 161 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 176 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 181 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 197 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 208 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 245 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 261 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'md_dir' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 297 'cs0_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: '_L'
+ERROR:HDLCompilers:28 - "rfomni.v" line 298 'cs1_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 298 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 300 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 309 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 309 Too many digits specified in binary constant
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 127096 kilobytes
+
+Number of errors   :   27 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 113 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 146 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 146 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 153 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 161 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 176 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 181 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 197 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 208 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 245 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 261 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'md_dir' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 298 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 300 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 309 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 309 Too many digits specified in binary constant
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 127032 kilobytes
+
+Number of errors   :   25 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 113 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 146 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 146 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 153 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 161 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 176 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 181 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 197 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 208 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 245 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 261 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 295 'md_dir_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 298 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 300 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 309 'ema' has not been declared
+WARNING:HDLCompilers:299 - "rfomni.v" line 309 Too many digits specified in binary constant
+ERROR:HDLCompilers:208 - "rfomni.v" line 3 Port reference 'md_dir_L' was not declared as input, inout or output
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126904 kilobytes
+
+Number of errors   :   26 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 113 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 146 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 146 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 153 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 161 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 176 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 181 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 197 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 208 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 245 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 261 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 297 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 298 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 300 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 301 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 302 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 305 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 306 'dtema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 309 'ema' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126648 kilobytes
+
+Number of errors   :   24 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 115 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 163 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 183 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 199 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 210 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 247 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 263 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 299 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 300 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 303 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 303 'dc_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 304 'dtema_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 304 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 304 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 307 'dtma_L' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 308 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'ema' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126712 kilobytes
+
+Number of errors   :   23 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 115 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 163 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 183 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 199 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 210 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 247 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 263 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 299 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 300 unexpected token: '_L'
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 303 'dc_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 304 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 304 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 308 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'ema' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126392 kilobytes
+
+Number of errors   :   20 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 115 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 163 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 183 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 199 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 210 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 247 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 263 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 303 'dc_L' has not been declared
+ERROR:HDLCompilers:26 - "rfomni.v" line 304 unexpected token: '['
+ERROR:HDLCompilers:28 - "rfomni.v" line 304 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 308 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'ema' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126776 kilobytes
+
+Number of errors   :   18 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 115 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 163 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 183 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 199 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 210 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 247 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 263 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: 'posedge'
+ERROR:HDLCompilers:28 - "rfomni.v" line 304 'sr' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 308 'ema' has not been declared
+ERROR:HDLCompilers:28 - "rfomni.v" line 311 'ema' has not been declared
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126584 kilobytes
+
+Number of errors   :   16 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+

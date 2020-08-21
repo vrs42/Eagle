@@ -1,0 +1,36 @@
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 115 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 163 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 183 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 199 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 210 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 247 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 263 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: 'posedge'
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126392 kilobytes
+
+Number of errors   :   13 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+

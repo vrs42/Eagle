@@ -1,0 +1,92 @@
+Release 7.1i - xst H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.11 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.11 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: rf08.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "rf08.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "rf08"
+Output Format                      : NGC
+Target Device                      : xc9500xl
+
+---- Source Options
+Top Module Name                    : rf08
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+
+---- Other Options
+lso                                : rf08.lso
+verilog2001                        : YES
+safe_implementation                : No
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rfomni.v"
+ERROR:HDLCompilers:27 - "rfomni.v" line 48 Illegal redeclaration of 'per'
+ERROR:HDLCompilers:26 - "rfomni.v" line 115 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 148 unexpected token: ')'
+ERROR:HDLCompilers:26 - "rfomni.v" line 155 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 163 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 178 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 183 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 199 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 210 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 247 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 263 unexpected token: 'posedge'
+ERROR:HDLCompilers:26 - "rfomni.v" line 302 unexpected token: 'posedge'
+Module <rf08> compiled
+Analysis of file <"rf08.prj"> failed.
+--> 
+
+Total memory usage is 126392 kilobytes
+
+Number of errors   :   13 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
