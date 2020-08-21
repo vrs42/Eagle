@@ -1,0 +1,16 @@
+Please build these with hard gold fingers and a 30 degree bevel
+on the edge connector.
+
+The files included in this zip:
+
+File Name Description:
+.cmp Layer 1 (component side) 
+.drd Excellon drill file
+.drl Drill tool description 
+.gpi	Photoplotter info file
+.otl	Board outline
+.plc Component-side silkscreen (nomenclature)
+.sol Layer 2 solder side
+.stc Component-side solder mask
+.sts Solder-side solder mask
+.txt	This file.

@@ -1,0 +1,160 @@
+Pinlist
+
+Exported from W076-3-20.sch at 4/5/2020 12:51:29 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C1       1        1          pas      N$4
+         2        2          pas      N$3
+
+C2       1        1          pas      N$1
+         2        2          pas      N$2
+
+C3       1        1          pas      VCC
+         2        2          pas      N$9
+
+C4       1        1          pas      N$10
+         2        2          pas      GND
+
+C5       1        1          pas      GND
+         2        2          pas      VCC
+
+D1       A        A          pas      -20MA
+         C        C          pas      +20MA
+
+IC1      1        C1+        io       N$3
+         2        V+         io       N$9
+         3        C1-        io       N$4
+         4        C2+        io       N$2
+         5        C2-        io       N$1
+         6        V-         io       N$10
+         7        T2OUT      out      RTS-EIA
+         8        R2IN       in       N$7
+         9        R2OUT      out      N$6
+         10       T2IN       in       N$6
+         11       T1IN       in       TX-DATA
+         12       R1OUT      out      N$8
+         13       R1IN       in       RX-EIA
+         14       T1OUT      out      TX-EIA
+         15       GND        pwr      GND
+         16       VCC        pwr      VCC
+
+J1       A        P          pas      GND
+         B        P          pas      GND
+         C        P          pas               ***   unused    ***
+         D        P          pas               ***   unused    ***
+         E        P          pas      RX-DATA
+         F        P          pas      TX-EIA
+         H        P          pas      20MA-INTERLOCK
+         J        P          pas      RX-EIA
+         K        P          pas      +20MA
+         L        P          pas               ***   unused    ***
+         M        P          pas      EIA-INTERLOCK
+         N        P          pas               ***   unused    ***
+         P        P          pas               ***   unused    ***
+         R        P          pas               ***   unused    ***
+         S        P          pas      -20MA
+         T        P          pas               ***   unused    ***
+         U        P          pas               ***   unused    ***
+         V        P          pas      RTS-EIA
+         W        P          pas               ***   unused    ***
+         X        P          pas               ***   unused    ***
+         Y        P          pas               ***   unused    ***
+         Z        P          pas               ***   unused    ***
+         AA       P          pas      TX+
+         BB       P          pas               ***   unused    ***
+         CC       P          pas               ***   unused    ***
+         DD       P          pas      DTR-EIA
+         EE       P          pas      -15V
+         FF       P          pas               ***   unused    ***
+         HH       P          pas               ***   unused    ***
+         JJ       P          pas               ***   unused    ***
+         KK       P          pas      TX-
+         LL       P          pas               ***   unused    ***
+         MM       P          pas               ***   unused    ***
+         NN       P          pas               ***   unused    ***
+         PP       P          pas      RELAY+
+         RR       P          pas               ***   unused    ***
+         SS       P          pas               ***   unused    ***
+         TT       P          pas      VCC
+         UU       P          pas      GND
+         VV       P          pas      GND
+
+OK1      1        A          pas      RDR-RUN
+         2        C          pas      N$5
+         3        C          pas      GND
+         4        A          pas      N$11
+         5        A          pas      N$15
+         6        C          pas      GND
+         7        C          pas      GND
+         8        A          pas      -20MA
+         9        EMIT       pas      GND
+         10       COL        pas      20MA-INTERLOCK
+         11       COL        pas      TX-
+         12       EMIT       pas      -15V
+         13       EMIT       pas      GND
+         14       COL        pas      EIA-INTERLOCK
+         15       COL        pas      VCC
+         16       EMIT       pas      N$7
+
+P1       1        P          pas      N$6
+
+P2       1        P          pas      N$7
+
+R1       1        1          pas      N$8
+         2        2          pas      N$11
+
+R2       1        1          pas      EIA-INTERLOCK
+         2        2          pas      VCC
+
+R3       1        1          pas      DTR-EIA
+         2        2          pas      GND
+
+R4       1        1          pas      DTR-EIA
+         2        2          pas      -15V
+
+R5       1        1          pas      RELAY+
+         2        2          pas      N$7
+
+R6       1        1          pas      -15V
+         2        2          pas      RELAY+
+
+R7       1        1          pas      -15V
+         2        2          pas      N$5
+
+R8       1        1          pas      +20MA
+         2        2          pas      VCC
+
+R9       1        1          pas      20MA-INTERLOCK
+         2        2          pas      VCC
+
+R10      1        1          pas      N$15
+         2        2          pas      TX-DATA
+
+R11      1        1          pas      VCC
+         2        2          pas      TX+
+
+R12      1        1          pas      RELAY+
+         2        2          pas      N$7
+
+U$2      A2       1          io       VCC
+         B2       1          io       -15V
+         C2       1          io       GND
+         D2       1          io                ***   unused    ***
+         E2       1          io       RX-DATA
+         F2       1          io                ***   unused    ***
+         H2       1          io       TX-DATA
+         J2       1          io                ***   unused    ***
+         K2       1          io                ***   unused    ***
+         L2       1          io                ***   unused    ***
+         M2       1          io       RDR-RUN
+         N2       1          io                ***   unused    ***
+         P2       1          io                ***   unused    ***
+         R2       1          io                ***   unused    ***
+         S2       1          io                ***   unused    ***
+         T2       1          io                ***   unused    ***
+         U2       1          io                ***   unused    ***
+         V2       1          io                ***   unused    ***
+

@@ -1,0 +1,92 @@
+40 A    GND     Orange-White   --:----\
+39 B    GND                   /----:--/
+38 C                          |  :
+37 D                          |    :
+36 E    INPUT                 \--:----\
+35 F    TXD     Orange         ----:   |
+34 H                             :     |
+33 J    RXD     Green          ----:   |
+32 K                             :     |
+31 L                               :   |
+30 M    EIA-IN                   :-----/
+29 N                               :
+28 P                             :
+27 R                               :
+26 S                             :
+25 T    CTS     Green-White    ----:
+24 U                             :
+23 V    RTS     Brown          ----:
+22 W                             :
+21 X                               :
+20 Y                             :
+19 Z    DSR     Brown-White    ----:
+18 AA                            :
+17 BB   RSD     Blue           ----:
+16 CC                            :
+15 DD   DTR     Blue-White     ----:
+14 EE                            :
+13 FF                              :
+12 HH                            :
+11 JJ                              :
+10 KK                            :
+ 9 LL                              :
+ 8 MM                            :
+ 7 NN                              :
+ 6 PP                            :
+ 5 RR                              :
+ 4 SS                            :
+ 3 TT                              :
+ 2 UU   GND                      :
+ 1 VV   GND                        :
+
+Note: Pin 1 arrow is bottom right!  Arrow should be visible
+if cable is inserted correctly.
+
+Strip a couple of inches of the CAT-5 outer sleeve.
+
+Untwist the pairs and press them into the slots indicated.
+
+Install the clamping bar to hold the wires in place.
+
+Clip off both ends of the ground connection between pins 39(A)
+and 36(E) adjacent to the connector body.  Clip loose ends
+off each wire adjacent to the connector body, leaving intact
+the jumper between 36(E) and 30(M).
+
+Add a handle, if available, to the strain relief.  Fold the
+wires around the top of the connector body and install the
+the strain relief (with handle, if available) over them.
+
+The male DB25 solder cup connector installs on the other end
+as follows:
+                        1       o
+                                   o     14
+TXD     Orange          2       o
+                                   o     15
+RXD     Green           3       o
+                                   o     16
+RTS     Brown           4       o
+                                   o     17
+CTS     Green-White     5       o
+                                   o     18
+DSR     Brown-White     6       o
+                                   o     19
+GND     Orange-White    7       o
+DTR     Blue-White                 o     20
+RSD     Blue            8       o
+                                   o     21
+                        9       o
+                                   o     22
+                        10      o
+                                   o     23
+                        11      o
+                                   o     24
+                        12      o
+                                   o     25
+                        13      o
+
+Note: This time pin 1 is on top, and note that physically
+proximate pins are not numbered consecutively!
+
+Be sure to install the connector hood, and ensure that the 
+cable is clamped such that can not move inside the hood.

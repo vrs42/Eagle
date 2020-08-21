@@ -1,0 +1,63 @@
+40 A    GND     Orange-White   --:----\
+39 B    GND                   /----:--/
+38 C                          |  :
+37 D                          |    :
+36 E    INPUT   Orange-White  \--:----\
+35 F                               :   |
+34 H    20MA-IN Orange-White    :-----/
+33 J                               :
+32 K    RX+     Brown          --:
+31 L                               :
+30 M                             :
+29 N                               :
+28 P                             :
+27 R                               :
+26 S    RX-     Orange         --:
+25 T                               :
+24 U                             :
+23 V                               :
+22 W                             :
+21 X                               :
+20 Y                             :
+19 Z                               :
+18 AA   TX+     Blue           --:
+17 BB                              :
+16 CC                            :
+15 DD                              :
+14 EE   Relay-  Blue-White     --:
+13 FF                              :
+12 HH                            :
+11 JJ                              :
+10 KK   TX-     Green          --:
+ 9 LL                              :
+ 8 MM                            :
+ 7 NN                              :
+ 6 PP   Relay+  Brown-White    --:
+ 5 RR                              :
+ 4 SS                            :
+ 3 TT                              :
+ 2 UU   GND     Green-White    --:
+ 1 VV   GND                        :
+
+Note: Pin 1 arrow is bottom right!  Arrow should be visible
+if cable is inserted correctly.
+
+Strip a couple of inches of the CAT-5 outer sleeve.
+
+Untwist the pairs and press them into the slots indicated.
+
+Install the clamping bar to hold the wires in place.
+
+Clip off both ends of the ground connection between pins 39(A)
+and 36(E) adjacent to the connector body.  Clip loose ends
+off each wire adjacent to the connector body, leaving intact
+the jumper between 36(E) and 34(H).
+
+Add a handle, if available, to the strain relief.  Fold the
+wires around the top of the connector body and install the
+the strain relief (with handle, if available) over them.
+
+Install ferrules on the wires at the other end of the cable.
+
+Attach the ferrules to the current loop as indicated in the
+instructions for the current loop device..

@@ -1,0 +1,162 @@
+Some notes on constructing new cables compatible with the BC01V:
+
+The following pins are implemented by the W076 at J1:
+A        GND
+B        GND
+E        RX-DATA
+F        TX-EIA
+H        20MA-INTERLOCK
+J        RX-EIA
+K        +20MA
+M        EIA-INTERLOCK
+S        -20MA
+V        RTS-EIA
+AA       TX+
+DD       DTR-EIA
+EE       -15V
+KK       TX-
+PP       RELAY+
+TT       VCC
+UU       GND
+VV       GND
+
+Other interfaces may also provide:
+T        CTS-EIA
+Z        DSR-EIA
+BB       RSD-EIA
+
+E must be jumpered to M for RS-232 input, or H for current loop
+input.
+
+
+For the construction of the cable end, you'll need:
+Mouser:
+    22-55-2442	44 pin shroud
+    16-02-1111	71851 series pins
+
+If you plan to use your cable with vintage gear, you will need
+to use a flush cutter to remove the keying tab from the housing.
+
+You will also need a crimping tool compatible with the
+71851 series pins.  Mine is an FCI (Framatome Connectors
+International), with the 22-24 AWG head preinstalled (stock
+number SP1552).  As of this writing (2020), they are available
+on eBay for about $27.  It has a clip which roughly positions
+the pin, then you insert the wire until it hits the clip and
+squeeze the handles, making sure everything stays lined up,
+until the ratchet in the handle finally releases.
+
+Be sure you have adjusted to tool to the tightest setting at
+which you can operate the ratchet.  (For mine, that's the "8"
+position of the allen screw.)  A good crimp must make a gas-
+tight connection that will not pull out of the pin.  Both of
+these things require physically deforming the conductor.
+
+For our BC01V RS-232 purposes, we need to connect:
+    At least one ground.
+    TX-EIA and RX-EIA.
+    RTS-EIA and DTR-EIA.
+    EIA-INTERLOCK and RX-DATA.
+We can jumper DTR-EIA to CTS-EIA and DSR-EIA at the far end of
+the cable, which simplifies the crimping.
+
+The wire I'm recommending is CAT-5 stranded (24 AWG), as that
+is easily available.  DO NOT attempt to use the solid conductor
+CAT-5.  It is easier to work with, but WILL FAIL in this
+application, which requires the cable ends to flex.
+
+We'll also need a male DB25 or DE9 connector, for the other end
+of the cable.  I suggest a male DB25:
+    273005	DB25 Male, solder cup
+    273031	DB25 plastic hood
+and the following adaptor:
+    SGC-9M25F	25P Female, 9P Male adapter
+I also recommend this null modem, for connecting DTE endpoints
+together:
+    31D1-28400	DE9 F/F Null Modem
+These are all available on eBay (at the moment) for $5, $7, and
+$3, respectively.  (You may have to search for "DB9" instead of
+"DE9", and look for "null modem", not "gender changer".)  They
+are also available locally (to me) at reasonable prices:
+https://www.pchcables.com/dbmasocupco.html
+https://www.pchcables.com/dbplhoscty.html
+https://www.pchcables.com/slmi9pinma251.html
+https://www.pchcables.com/db9ffnumomig.html
+
+Strip back a couple of inches of the outer plastic on the CAT-5
+cable.
+
+Use a wire stripper to peel off a couple of millimeters (0.1")
+of insulation from each conductor.  The bare part should extend
+through the contact area, but leave insulation for the two
+rearward tabs to crimp onto for strain relief.
+
+Use the crimping tool to attach receptacle pins to each
+conductor.  When you have the conductor crimped to the pin,
+"square up" the part that covers the insulation, as otherwise
+it will likely have ovalized and bind in the shroud.  DO NOT
+use solder to attach the recepticle pins!  Doing so creates
+a spot where the flexible bit meets the inflexible solder,
+and the cable will evenually fail there.
+
+Also, cut off a short length of CAT-5 (an inch or so), and pull
+out a color (I used orange), and similarly strip and attach
+receptacle pins to both ends.
+
+Note: The header is actually 44 pins, not 40.  If we cared to,
+we could block up the four endmost pins with keying pins.
+These spots will be under the clip that holds the shroud in,
+when the cable is fully seated, and they function to center
+the 40 active pin sites, so the connector cannot be inserted
+"off by one".
+
+Use the following table to install the pins into the shroud.
+Each pin should visibly raise the plastic retention clip as
+it enters, and each such clip should "click" back down when
+the pin is inserted sufficiently.  Make sure that each pin
+is held in by the appropriate retention clip.
+Orange-White	GND		A	(aka 40)
+Green-White	GND		B	(39)
+Jumper     	EIA-INTERLOCK	E and M	(36 and 30)
+Orange     	TX-EIA		F	(37)
+Green      	RX-EIA		J	(35)
+Brown      	RTS-EIA		V	(23)
+Brown-White	GND		UU	(2)
+Blue   	    	DTR-EIA		DD	(15)
+Blue-White 	GND		VV	(1)
+
+Moving to the other end of the cable, I'll assume a "solder cup"
+connector.  These are easy, and do not require specialized
+tooling.  What they DO require, however, is a shroud or hood
+which holds the connector inflexibly relative the cable, and
+provide strain relief elsewere, in the flexible part of the
+cable.
+
+Choose another jumper wire (I suggest the blue), strip a couple
+of millimeters off each wire, and a little extra off the blue,
+and one of the striped wires.  Wrap one end the jumper around
+the blue wire, and solder it, leaving enough of the end of the 
+blue wire to go into a cup.  Similarly, wrap three of the ground
+wires around the one you stripped a little extra, preparing the
+assembly to go in a cup.  Then solder the pins as follows:
+Orange-White	GND		7
+Green-White	GND		7
+Jumper     	CTS		5
+Orange     	TX-EIA		2
+Green      	RX-EIA		3
+Brown      	RTS-EIA		4
+Brown-White 	GND		7
+Blue       	DTR-EIA		20
+Blue-White	GND		7
+
+If you desire to also connect a jumper from DTR-EIA to DSR-EIA,
+the additional jumper will go from the blue wires to pin 6.
+
+Don't forget the to install the cover, or you can expect the
+wires to soon break where they meet the solder.  Be sure that
+the cable clamp grabs the cable in such a way that the wires
+inside the hood cannot be pulled on or jiggled.
+
+That's it for the RS-232 cable!
+
+Vince
