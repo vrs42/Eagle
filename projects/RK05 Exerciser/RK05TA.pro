@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Program Files/EAGLE-4.11/projects/RK05 Exerciser/RK05TA.brd
+Job           : C:/Users/Vince/Documents/eagle/projects/RK05 Exerciser/RK05TA.brd
 
-Start at      :   08:30:59a ( 1/21/2010)
-End at        :   08:35:01a ( 1/21/2010)
-Elapsed time  :   00:04:02
+Start at      : 15:25:42 (9/26/2016)
+End at        : 15:37:07 (9/26/2016)
+Elapsed time  : 00:11:25
 
-Signals       :    89   RoutingGrid: 50 mil  Layers: 2
-Connections   :   170   predefined:  114 ( 17 Vias )
+Signals       :    90   RoutingGrid: 25 mil  Layers: 2
+Connections   :   498   predefined:  390 ( 133 Vias )
 
-Router memory :   154056
+Router memory :   611436
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:03:57  00:00:01  00:00:01  00:00:01  00:00:02
+Time per pass     :  00:00:00  00:11:08  00:00:05  00:00:04  00:00:04  00:00:04
 Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         1         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+max. Level        :         0         9         0         0         0         0
+max. Total        :         0         9         0         0         0         0
 
-Routed            :         6         9         9         9         9         9
-Vias              :         0         2         2         2         0         0
-Resolution        :    70.6 %    72.4 %    72.4 %    72.4 %    72.4 %    72.4 %
+Routed            :         6        59        59        59        59        59
+Vias              :         0       181        48        22        20        19
+Resolution        :    79.5 %    90.2 %    90.2 %    90.2 %    90.2 %    90.2 %
 
-Final             : 72.4% finished
+Final             : 89.6% finished. Polygons may have fallen apart.

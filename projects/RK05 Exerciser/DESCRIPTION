@@ -6,3 +6,4 @@ RK05 Exerciser
 <LI><b>RK05ex</b> is a merge of the various tester parts onto a single board.</LI>
 <LI><b>RK05ex6x10</b> is a "shrink" to 6"x10", and with proper switches.</LI>
 <LI><b>RK05exNew</b> is a 6"x10" board with hard-to-find chips replaced.</LI>
+<LI><b>RK05STA</b> is a cleaner layout for the exerciser.</LI>
