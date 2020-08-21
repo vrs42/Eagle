@@ -1,0 +1,706 @@
+
+Name     rx8e ;
+PartNo   cpld ;
+Date     9/1/2015 ;
+Revision 01 ;
+Designer  ;
+Company   ;
+Assembly None ;
+Location E1 ;
+Device   f1508ispqfp100;
+$IFDEF tqfp
+/* tqfp pin assignments */
+$DEFINE io1  1
+$DEFINE pd1  1
+$DEFINE io2  2
+/* vccio */
+$DEFINE tdi  4
+$DEFINE io3  5
+$DEFINE io4  6
+$DEFINE io5  7
+$DEFINE io6  8
+$DEFINE io7  9
+$DEFINE io8  10
+/* gnd */
+$DEFINE io9  12
+$DEFINE io10 13
+$DEFINE io11 14
+$DEFINE tms  15
+$DEFINE io12 16
+$DEFINE io13 17
+/* vccio */
+$DEFINE io14 19
+$DEFINE io15 20
+$DEFINE io16 21
+$DEFINE io17 22
+$DEFINE io18 23
+$DEFINE io19 24
+$DEFINE io20 25
+/* gnd */
+$DEFINE io21 27
+$DEFINE io22 28
+$DEFINE io23 29
+$DEFINE io24 30
+$DEFINE io25 31
+$DEFINE io26 32
+$DEFINE io27 33
+/* vccio */
+$DEFINE io28 35
+$DEFINE io29 36
+$DEFINE io30 37
+/* gnd */
+/* vccint */
+$DEFINE io31 40
+$DEFINE io32 41
+$DEFINE pd2  41
+$DEFINE io33 42
+/* gnd */
+$DEFINE io34 44
+$DEFINE io35 45
+$DEFINE io36 46
+$DEFINE io37 47
+$DEFINE io38 48
+$DEFINE io39 49
+$DEFINE io40 50
+/* vccio */
+$DEFINE io41 52
+$DEFINE io42 53
+$DEFINE io43 54
+$DEFINE io44 55
+$DEFINE io45 56
+$DEFINE io46 57
+$DEFINE io47 58
+/* gnd */
+$DEFINE io48 60
+$DEFINE io49 61
+$DEFINE tck  62
+$DEFINE io50 63
+$DEFINE io51 64
+$DEFINE io52 65
+/* vccio */
+$DEFINE io53 67
+$DEFINE io54 68
+$DEFINE io55 69
+$DEFINE io56 70
+$DEFINE io57 71
+$DEFINE io58 72
+$DEFINE tdo  73
+/* gnd */
+$DEFINE io59 75
+$DEFINE io60 76
+$DEFINE io61 77
+$DEFINE io62 78
+$DEFINE io63 79
+$DEFINE io64 80
+$DEFINE io65 81
+/* vccio */
+$DEFINE io66 83
+$DEFINE io67 84
+$DEFINE io68 85
+$DEFINE gclk3 85
+/* gnd */
+$DEFINE gclk1 87
+$DEFINE oe1   88
+$DEFINE gclr  89
+$DEFINE gclk2 90
+$DEFINE oe2  90
+/* vccint */
+$DEFINE io69 92
+$DEFINE io70 93
+$DEFINE io71 94
+/* gnd */
+$DEFINE io72 96
+$DEFINE io73 97
+$DEFINE io74 98
+$DEFINE io75 99
+$DEFINE io76 100
+
+$ELSE
+/* pqfp pin assignments */
+$DEFINE io1  3
+$DEFINE pd1  3
+$DEFINE io2  4
+/* vccio */
+$DEFINE tdi  6
+$DEFINE io3  7
+$DEFINE io4  8
+$DEFINE io5  9
+$DEFINE io6  10
+$DEFINE io7  11
+$DEFINE io8  12
+/* gnd */
+$DEFINE io9  14
+$DEFINE io10 15
+$DEFINE io11 16
+$DEFINE tms  17
+$DEFINE io12 18
+$DEFINE io13 19
+/* vccio */
+$DEFINE io14 21
+$DEFINE io15 22
+$DEFINE io16 23
+$DEFINE io17 24
+$DEFINE io18 25
+$DEFINE io19 26
+$DEFINE io20 27
+/* gnd */
+$DEFINE io21 29
+$DEFINE io22 30
+$DEFINE io23 31
+$DEFINE io24 32
+$DEFINE io25 33
+$DEFINE io26 34
+$DEFINE io27 35
+/* vccio */
+$DEFINE io28 37
+$DEFINE io29 38
+$DEFINE io30 39
+/* gnd */
+/* vccint */
+$DEFINE io31 42
+$DEFINE io32 43
+$DEFINE pd2  43
+$DEFINE io33 44
+/* gnd */
+$DEFINE io34 46
+$DEFINE io35 47
+$DEFINE io36 48
+$DEFINE io37 49
+$DEFINE io38 50
+$DEFINE io39 51
+$DEFINE io40 52
+/* vccio */
+$DEFINE io41 54
+$DEFINE io42 55
+$DEFINE io43 56
+$DEFINE io44 57
+$DEFINE io45 58
+$DEFINE io46 59
+$DEFINE io47 60
+/* gnd */
+$DEFINE io48 62
+$DEFINE io49 63
+$DEFINE tck  64
+$DEFINE io50 65
+$DEFINE io51 66
+$DEFINE io52 67
+/* vccio */
+$DEFINE io53 69
+$DEFINE io54 70
+$DEFINE io55 71
+$DEFINE io56 72
+$DEFINE io57 73
+$DEFINE io58 74
+$DEFINE tdo  75
+/* gnd */
+$DEFINE io59 77
+$DEFINE io60 78
+$DEFINE io61 79
+$DEFINE io62 80
+$DEFINE io63 81
+$DEFINE io64 82
+$DEFINE io65 83
+/* vccio */
+$DEFINE io66 85
+$DEFINE io67 86
+$DEFINE io68 87
+$DEFINE gclk3 87
+/* gnd */
+$DEFINE gclk1 89
+$DEFINE oe1   90
+$DEFINE gclr  91
+$DEFINE gclk2 92
+$DEFINE oe2  92
+/* vccint */
+$DEFINE io69 94
+$DEFINE io70 95
+$DEFINE io71 96
+/* gnd */
+$DEFINE io72 98
+$DEFINE io73 99
+$DEFINE io74 100
+$DEFINE io75 1
+$DEFINE io76 2
+
+$ENDIF
+
+/* Input Pins */
+pin io10 = initialize;
+pin io19 = io_pause_low;
+pin io35 = md03_low;
+pin io29 = md04_low;
+pin io28 = md05_low;
+pin io27 = md06_low;
+pin io26 = md07_low;
+pin io8  = md08_low;
+pin io7  = md09_low;
+pin io6  = md10_low;
+pin io5  = md11_low;
+pin gclk2 = n_t_1x;
+pin gclr  = n_t_5x;
+pin gclk1 = n_t_6x;
+pin io63 = rx_done_low;
+pin io58 = rx_error_low;
+pin io75 = rx_out_low;
+pin io73 = rx_shift_low;
+pin io61 = rx_tr_req_low;
+pin io16 = tp3;
+pin io15 = tp4;
+
+/* Output Pins */
+pin io18 = c0_low;
+pin io17 = c1_low;
+pin io34 = data0_low;
+pin io33 = data1_low;
+pin io31 = data2_low;
+pin io30 = data3_low;
+pin io25 = data4_low;
+pin io24 = data5_low;
+pin io23 = data6_low;
+pin io21 = data7_low;
+pin io4  = data8_low;
+pin io1  = data9_low;
+pin io3  = data10_low;
+pin io2  = data11_low;
+pin io48 = done_skip_low;
+pin io11 = int_rqst_low;
+pin io14 = internal_io_low;
+pin io69 = n_t_7x;
+pin io70 = n_t_8x;
+pin io71 = n_t_9x;
+pin io47 = parity;
+pin io67 = rx_12_bit_low;
+pin io65 = rx_data_low;
+pin io60 = rx_init_low;
+pin io56 = rx_run_low;
+pin io9  = skip_low;
+pin io49 = tr_skip_low;
+/* These are for the unification with the TD8E. */
+pin io57 = f;
+pin io59 = l;
+pin io62 = v;
+pin io64 = z;
+pin io66 = dd;
+pin io72 = jj;
+pin io74 = nn;
+pin io76 = tt;
+
+
+/* Internal nodes */
+pinnode  0  = n8_12;
+pinnode  0  = maint;
+pinnode  0  = gdollar_0;
+pinnode  0  = gdollar_1;
+pinnode  0  = gdollar_2;
+pinnode  0  = gdollar_3;
+pinnode  0  = n_t_45x;
+pinnode  0  = n_t_60x;
+pinnode  0  = n_t_2x;
+pinnode  0  = n_t_33x;
+pinnode  0  = msb12;
+pinnode  0  = n_t_76x;
+pinnode  0  = run;
+pinnode  0  = n_t_64x;
+pinnode  0  = n_t_63x;
+pinnode  0  = n_t_62x;
+pinnode  0  = msb8;
+pinnode  0  = n_t_68x;
+pinnode  0  = n_t_69x;
+pinnode  0  = n_t_61x;
+pinnode  0  = n_t_70x;
+pinnode  0  = parity_low;
+pinnode  0  = n_t_59x;
+pinnode  0  = n_t_72x;
+pinnode  0  = n_t_65x;
+pinnode  0  = n_t_67x;
+pinnode  0  = n_t_66x;
+pinnode  0  = n_t_31x;
+
+/* Equations */
+
+/* e1: ds8837n */
+data5 = !data5_low&!rx8_sel_low;
+data4 = !data4_low&!rx8_sel_low;
+data3 = !data3_low&!rx8_sel_low;
+data2 = !data2_low&!rx8_sel_low;
+data1 = !data1_low&!rx8_sel_low;
+data0 = !data0_low&!rx8_sel_low;
+
+/* e2: sn7474 */
+n8_12.ar = !init_low;
+n8_12.d = data5;
+n8_12.ck = n_t_48x;
+n8_12.ap = !a;
+n8_12_low = !n8_12;
+maint.ar = !init_low;
+maint.d = data4;
+maint.ck = n_t_48x;
+maint.ap = !a;
+maint_low = !maint;
+
+/* e3: sn7410 */
+n_t_38x = !(n8_12_low&msb12&n_t_37x);
+n_t_39x = !(n_t_37x&n8_12&msb8);
+n_t_42x = !(n_t_39x&n_t_40x&n_t_38x);
+
+/* e4: sn74161 */
+gdollar_0.ar = !init_low;
+gdollar_0.ck = !n_t_44x;
+gdollar_0.j = !(!a&!enb_buf_ld_low)&(a # !enb_buf_ld_low);
+gdollar_0.k = !(a&!enb_buf_ld_low)&(a # !enb_buf_ld_low);
+gdollar_1.ar = !init_low;
+gdollar_1.ck = !n_t_44x;
+gdollar_1.j = !(!a&!enb_buf_ld_low)&((a&gdollar_0) # !enb_buf_ld_low);
+gdollar_1.k = !(a&!enb_buf_ld_low)&((a&gdollar_0) # !enb_buf_ld_low);
+gdollar_2.ar = !init_low;
+gdollar_2.ck = !n_t_44x;
+gdollar_2.j = !(!n_t_21x&!enb_buf_ld_low)&((a&gdollar_0&gdollar_1) # !enb_buf_ld_low);
+gdollar_2.k = !(n_t_21x&!enb_buf_ld_low)&((a&gdollar_0&gdollar_1) # !enb_buf_ld_low);
+gdollar_3.ar = !init_low;
+gdollar_3.ck = !n_t_44x;
+gdollar_3.j = !(!enb_buf_ld_low)&((a&gdollar_0&gdollar_1&gdollar_2) # !enb_buf_ld_low);
+gdollar_3.k = ((a&gdollar_0&gdollar_1&gdollar_2) # !enb_buf_ld_low);
+parity = a&gdollar_3&gdollar_2&gdollar_1&gdollar_0;
+
+/* e5: ds8881n */
+
+/* e6: sn7402 */
+n_t_48x = !(tp3_low # lcd_iot_low);
+n_t_71x = !tp3_low;
+n_t_46x = !(run # init);
+
+/* e7: sn7474 */
+n_t_45x.ar = !a;
+n_t_45x.d = init_iot_low;
+n_t_45x.ck = btp3;
+n_t_45x.ap = !n_t_43x;
+
+/* e8: sn7404 */
+n_t_37x = !parity;
+n_t_44x = !clk_parity_low;
+init_low = !init;
+btp4 = !n_t_43x;
+clk_buf_low = !n_t_44x;
+
+/* e9: sn74179 */
+n_t_60x.ar = !init_low;
+n_t_60x.ck = !clk_buf_low;
+n_t_60x.d = msb8&enb_buf_ld_low # data3&!enb_buf_ld_low&b # n_t_60x&!enb_buf_ld_low&!b;
+n_t_2x.ar = !init_low;
+n_t_2x.ck = !clk_buf_low;
+n_t_2x.d = n_t_60x&enb_buf_ld_low # data2&!enb_buf_ld_low&b # n_t_2x&!enb_buf_ld_low&!b;
+n_t_33x.ar = !init_low;
+n_t_33x.ck = !clk_buf_low;
+n_t_33x.d = n_t_2x&enb_buf_ld_low # data1&!enb_buf_ld_low&b # n_t_33x&!enb_buf_ld_low&!b;
+msb12.ar = !init_low;
+msb12.ck = !clk_buf_low;
+msb12.d = n_t_33x&enb_buf_ld_low # data0&!enb_buf_ld_low&b # msb12&!enb_buf_ld_low&!b;
+
+/* e10: sn7410 */
+n_t_32x = !(xfer_iot&n_t_34x&n8_12_low);
+n_t_34x = !(maint_low&done_low&wrt);
+n_t_77x = !(tr_skip_low&err_skip_low&done_skip_low);
+
+/* e11: ds8640n */
+n_t_43x = !tp4;
+n_t_47x = !initialize;
+tp3_low = !tp3;
+
+/* e12: sn7400 */
+n_t_21x = !(n_t_35x&n_t_36x);
+n_t_22x = !(lcd_iot_low&n_t_32x);
+n_t_36x = !(data5&lcd_iot);
+n_t_35x = !(xfer_iot&n8_12);
+
+/* e14: ds8881n */
+
+/* e15: sn7474 */
+n_t_76x.ar = !binit_low;
+n_t_76x.d = data11;
+n_t_76x.ck = n_t_71x;
+n_t_76x.ap = !a;
+run.ar = !n_t_83x;
+run.d = a;
+run.ck = n_t_85x;
+run.ap = !a;
+
+/* e16: sn7408 */
+n_t_12x = (n8_12_low&n_t_3x);
+n_t_79x = (xfer_iot_low&lcd_iot_low);
+n_t_83x = (n_t_81x&init_low);
+enb_buf_ld_low = (maint_low&n_t_82x);
+
+/* e17: ds8881n */
+
+/* e18: ds8881n */
+
+/* e19: sn7402 */
+clk_parity_low = !(n_t_84x # shift);
+n_t_54x = !n_t_49x;
+n_t_49x = !(tp3_low # done_skip_low);
+n_t_3x = !(n_t_4x # xfer_iot_low);
+
+/* e20: sn7427 */
+n_t_84x = !(tp3_low # n_t_79x # enb_buf_ld_low);
+n_t_4x = !(maint # rd # done);
+
+/* e21: sn74179 */
+n_t_64x.ar = !init_low;
+n_t_64x.ck = !clk_buf_low;
+n_t_64x.d = n_t_31x&enb_buf_ld_low # data7&!enb_buf_ld_low&b # n_t_64x&!enb_buf_ld_low&!b;
+n_t_63x.ar = !init_low;
+n_t_63x.ck = !clk_buf_low;
+n_t_63x.d = n_t_64x&enb_buf_ld_low # data6&!enb_buf_ld_low&b # n_t_63x&!enb_buf_ld_low&!b;
+n_t_62x.ar = !init_low;
+n_t_62x.ck = !clk_buf_low;
+n_t_62x.d = n_t_63x&enb_buf_ld_low # data5&!enb_buf_ld_low&b # n_t_62x&!enb_buf_ld_low&!b;
+msb8.ar = !init_low;
+msb8.ck = !clk_buf_low;
+msb8.d = n_t_62x&enb_buf_ld_low # data4&!enb_buf_ld_low&b # msb8&!enb_buf_ld_low&!b;
+
+/* e22: sn7474 */
+n_t_68x.ar = !n_t_54x;
+n_t_68x.d = b;
+n_t_68x.ck = done;
+n_t_68x.ap = !maint_low;
+n_t_69x.ar = !binit_low;
+n_t_69x.d = n_t_68x;
+n_t_69x.ck = btp4;
+n_t_69x.ap = !b;
+
+/* e23: sn7402 */
+n_t_58x = !(n_t_57x # init);
+n_t_55x = !n_t_56x;
+n_t_56x = !(tp3_low # err_skip_low);
+n_t_57x = !(tp3_low # tr_skip_low);
+
+/* e24: sn7400 */
+init = !(n_t_47x&n_t_45x);
+n_t_85x = !(n_t_80x&n_t_78x);
+n_t_82x = !(n_t_81x&wrt);
+n_t_40x = !(parity_low&parity);
+
+/* e25: ds8837n */
+data11 = !data11_low&!rx8_sel_low;
+data10 = !data10_low&!rx8_sel_low;
+data9 = !data9_low&!rx8_sel_low;
+data8 = !data8_low&!rx8_sel_low;
+data7 = !data7_low&!rx8_sel_low;
+data6 = !data6_low&!rx8_sel_low;
+
+/* e26: sn7474 */
+n_t_61x.ar = !n_t_55x;
+n_t_61x.d = b;
+n_t_61x.ck = error;
+n_t_61x.ap = !maint_low;
+n_t_70x.ar = !binit_low;
+n_t_70x.d = n_t_61x;
+n_t_70x.ck = btp4;
+n_t_70x.ap = !b;
+
+/* e27: sn7476 */
+parity_low.ap = !n_t_46x;
+parity_low.k = n_t_42x;
+parity_low.j = n_t_42x;
+parity_low.ck = clk_parity_low;
+parity_low.ar = !b;
+
+/* e28: sn7420 */
+n_t_78x = !(maint_low&btp3&lcd_iot&done);
+n_t_80x = !(xfer_iot&done_low&maint_low&btp3);
+
+/* e29: ds8881n */
+
+/* e30: sn7474 */
+n_t_59x.ar = !n_t_58x;
+n_t_59x.d = b;
+n_t_59x.ck = xfer_req;
+n_t_59x.ap = !maint_low;
+n_t_72x.ar = !binit_low;
+n_t_72x.d = n_t_59x;
+n_t_72x.ck = btp4;
+n_t_72x.ap = !b;
+
+/* e32: sn7404 */
+wrt = !rd;
+binit_low = !init;
+rx8_sel_low = !n_t_11x;
+done_low = !done;
+b_maint = !maint_low;
+btp3 = !tp3_low;
+
+/* e33: sn74179 */
+n_t_65x.ar = !init_low;
+n_t_65x.ck = !clk_buf_low;
+n_t_65x.d = rx_data&enb_buf_ld_low # data11&!enb_buf_ld_low&b # n_t_65x&!enb_buf_ld_low&!b;
+n_t_67x.ar = !init_low;
+n_t_67x.ck = !clk_buf_low;
+n_t_67x.d = n_t_65x&enb_buf_ld_low # data10&!enb_buf_ld_low&b # n_t_67x&!enb_buf_ld_low&!b;
+n_t_66x.ar = !init_low;
+n_t_66x.ck = !clk_buf_low;
+n_t_66x.d = n_t_67x&enb_buf_ld_low # data9&!enb_buf_ld_low&b # n_t_66x&!enb_buf_ld_low&!b;
+n_t_31x.ar = !init_low;
+n_t_31x.ck = !clk_buf_low;
+n_t_31x.d = n_t_66x&enb_buf_ld_low # data8&!enb_buf_ld_low&b # n_t_31x&!enb_buf_ld_low&!b;
+
+/* e34: sn7400 */
+err_skip_low = !(n_t_70x&n_t_73x);
+tr_skip_low = !(n_t_75x&n_t_72x);
+done_skip_low = !(n_t_74x&n_t_69x);
+
+/* e35: sp314n */
+!n_t_11x = md03_low # md05_low # md04_low # n_t_10x # n_t_1x # n_t_5x # n_t_6x;
+
+/* e36: ds8837n */
+error = !rx_error_low&!b_maint;
+xfer_req = !rx_tr_req_low&!b_maint;
+done = !rx_done_low&!b_maint;
+rx_data = !rx_data_low&!b_maint;
+shift = !rx_shift_low&!b_maint;
+rd = !rx_out_low&!b_maint;
+
+/* e37: ds8881n */
+
+/* e38: sn7404 */
+n_t_50x = !n_t_11x;
+lcd_iot = !lcd_iot_low;
+xfer_iot = !xfer_iot_low;
+n_t_73x = !ser_iot_low;
+n_t_74x = !sdn_iot_low;
+n_t_75x = !str_iot_low;
+
+/* e39: sp384n */
+n_t_10x = io_pause_low;
+n_t_81x = done # xfer_req;
+
+/* e40: ds8837n */
+n_t_9x = !md06_low&!n_t_10x;
+n_t_8x = !md07_low&!n_t_10x;
+n_t_7x = !md08_low&!n_t_10x;
+n_t_53x = !md11_low&!n_t_50x;
+n_t_52x = !md10_low&!n_t_50x;
+n_t_51x = !md09_low&!n_t_50x;
+
+/* e41: sn7442 */
+!lcd_iot_low = !n_t_50x&!n_t_51x&!n_t_52x&n_t_53x;
+!xfer_iot_low = !n_t_50x&!n_t_51x&n_t_52x&!n_t_53x;
+!str_iot_low = !n_t_50x&!n_t_51x&n_t_52x&n_t_53x;
+!ser_iot_low = !n_t_50x&n_t_51x&!n_t_52x&!n_t_53x;
+!sdn_iot_low = !n_t_50x&n_t_51x&!n_t_52x&n_t_53x;
+!intr_iot_low = !n_t_50x&n_t_51x&n_t_52x&!n_t_53x;
+!init_iot_low = !n_t_50x&n_t_51x&n_t_52x&n_t_53x;
+
+/* r1: r_us_ */
+
+/* r2: r_us_ */
+
+/* r3: r_us_ */
+
+/* r4: r_us_ */
+
+/* r5: r_us_ */
+
+/* r6: r_us_ */
+
+/* r7: r_us_ */
+
+/* r8: r_us_ */
+
+/* r9: r_us_ */
+
+/* r10: r_us_ */
+
+/* r11: r_us_ */
+
+/* r12: r_us_ */
+
+/* r13: r_us_ */
+
+/* r14: r_us_ */
+
+/* r15: r_us_ */
+
+/* r16: r_us_ */
+
+/* r17: r_us_ */
+
+/* r19: r_us_ */
+a = 'b'1;
+
+/* r20: r_us_ */
+b = 'b'1;
+
+/* Open collector 'wire-or's */
+property atmel {open_collector= c0_low};
+c0_low = 'b'0;
+c0_low.oe = n_t_22x;
+property atmel {open_collector= c1_low};
+c1_low = 'b'0;
+c1_low.oe = (n8_12_low&n_t_34x);
+property atmel {open_collector= data0_low};
+data0_low = 'b'0;
+data0_low.oe = (n_t_12x&msb12);
+property atmel {open_collector= data10_low};
+data10_low = 'b'0;
+data10_low.oe = (n_t_3x&n_t_67x);
+property atmel {open_collector= data11_low};
+data11_low = 'b'0;
+data11_low.oe = (n_t_3x&n_t_65x);
+property atmel {open_collector= data1_low};
+data1_low = 'b'0;
+data1_low.oe = (n_t_12x&n_t_33x);
+property atmel {open_collector= data2_low};
+data2_low = 'b'0;
+data2_low.oe = (n_t_12x&n_t_2x);
+property atmel {open_collector= data3_low};
+data3_low = 'b'0;
+data3_low.oe = (n_t_12x&n_t_60x);
+property atmel {open_collector= data4_low};
+data4_low = 'b'0;
+data4_low.oe = (n_t_3x&msb8);
+property atmel {open_collector= data5_low};
+data5_low = 'b'0;
+data5_low.oe = (n_t_3x&n_t_62x);
+property atmel {open_collector= data6_low};
+data6_low = 'b'0;
+data6_low.oe = (n_t_3x&n_t_63x);
+property atmel {open_collector= data7_low};
+data7_low = 'b'0;
+data7_low.oe = (n_t_3x&n_t_64x);
+property atmel {open_collector= data8_low};
+data8_low = 'b'0;
+data8_low.oe = (n_t_3x&n_t_31x);
+property atmel {open_collector= data9_low};
+data9_low = 'b'0;
+data9_low.oe = (n_t_3x&n_t_66x);
+property atmel {open_collector= int_rqst_low};
+int_rqst_low = 'b'0;
+int_rqst_low.oe = (n_t_76x&n_t_69x);
+property atmel {open_collector= internal_io_low};
+internal_io_low = 'b'0;
+internal_io_low.oe = n_t_11x;
+property atmel {open_collector= rx_12_bit_low};
+rx_12_bit_low = 'b'0;
+rx_12_bit_low.oe = n8_12_low;
+property atmel {open_collector= rx_data_low};
+rx_data_low = 'b'0;
+rx_data_low.oe = (wrt&n_t_42x);
+property atmel {open_collector= rx_init_low};
+rx_init_low = 'b'0;
+rx_init_low.oe = init;
+property atmel {open_collector= rx_run_low};
+rx_run_low = 'b'0;
+rx_run_low.oe = run;
+property atmel {open_collector= skip_low};
+skip_low = 'b'0;
+skip_low.oe = n_t_77x;
+
+/* These are for the unification with the TD8E. */
+f = 'b'0;
+l = 'b'0;
+v = 'b'0;
+z = 'b'0;
+dd = 'b'0;
+jj = 'b'0;
+nn = 'b'0;
+tt = 'b'0;

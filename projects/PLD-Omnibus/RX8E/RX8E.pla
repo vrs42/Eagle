@@ -1,7 +1,7 @@
 #$ TOOL CUPL
 # Berkeley PLA format generated using CUPL(WM) 5.0a
 # Serial#  60008009
-# Created  Fri Mar 18 17:36:24 2016
+# Created  Wed Jul 27 18:24:20 2016
 #
 #    Name        rx8e
 #    Partno      cpld
@@ -16,6 +16,8 @@
 #$ PROPERTY atmel open_collector = c0_low
 #$ PROPERTY atmel open_collector = c1_low
 #$ PROPERTY atmel open_collector = data0_low
+#$ PROPERTY atmel open_collector = data10_low
+#$ PROPERTY atmel open_collector = data11_low
 #$ PROPERTY atmel open_collector = data1_low
 #$ PROPERTY atmel open_collector = data2_low
 #$ PROPERTY atmel open_collector = data3_low
@@ -25,8 +27,6 @@
 #$ PROPERTY atmel open_collector = data7_low
 #$ PROPERTY atmel open_collector = data8_low
 #$ PROPERTY atmel open_collector = data9_low
-#$ PROPERTY atmel open_collector = data10_low
-#$ PROPERTY atmel open_collector = data11_low
 #$ PROPERTY atmel open_collector = int_rqst_low
 #$ PROPERTY atmel open_collector = internal_io_low
 #$ PROPERTY atmel open_collector = rx_12_bit_low

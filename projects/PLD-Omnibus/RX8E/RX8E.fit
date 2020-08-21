@@ -1,4 +1,4 @@
-Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Fri Mar 18 17:36:24 2016
+Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Wed Jul 27 18:24:20 2016
 
 
 fit1508 C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E.tt2 -CUPL -dev P1508Q100 -JTAG ON
@@ -42,7 +42,7 @@ fit1508 C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\PLD-OMNIBUS\RX8E\RX8E.tt2 -CUPL 
  TDI pullup = OFF
  TMS pullup = OFF
  MC_power = OFF
- Open_collector =  c0_low,  c1_low,  data0_low,  data1_low,  data2_low,  data3_low,  data4_low,  data5_low,  data6_low,  data7_low,  data8_low,  data9_low,  data10_low,  data11_low,  int_rqst_low,  internal_io_low,  rx_12_bit_low,  rx_data_low,  rx_init_low,  rx_run_low,  skip_low, 
+ Open_collector =  c0_low,  c1_low,  data0_low,  data10_low,  data11_low,  data1_low,  data2_low,  data3_low,  data4_low,  data5_low,  data6_low,  data7_low,  data8_low,  data9_low,  int_rqst_low,  internal_io_low,  rx_12_bit_low,  rx_data_low,  rx_init_low,  rx_run_low,  skip_low, 
  ITD0 = ON
  ITD1 = ON
  ITD2 = ON
