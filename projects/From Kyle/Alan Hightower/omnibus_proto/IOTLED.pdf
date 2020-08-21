@@ -1,0 +1,379 @@
+{COMPONENT C:\CYGWIN\HOME\VINCE\TTL2PLD\4KYLE\IOTLED.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Mon Oct 19 11:36:08 2015 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P RX1_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 580}}
+   {P U2 {Pt "INPUT"}{Lq 0}{Ploc 100 560}}
+   {P RX0_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 540}}
+   {P RX2_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 520}}
+   {P RX3_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 500}}
+   {P RX4_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 480}}
+   {P RX5_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 460}}
+   {P SW {Pt "INPUT"}{Lq 0}{Ploc 100 440}}
+   {P MD11_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 420}}
+   {P MD10_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 400}}
+   {P MD09_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 380}}
+   {P MD08_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 360}}
+   {P INITIALI {Pt "INPUT"}{Lq 0}{Ploc 100 340}}
+   {P TS3 {Pt "INPUT"}{Lq 0}{Ploc 100 320}}
+   {P TP3 {Pt "INPUT"}{Lq 0}{Ploc 100 300}}
+   {P IO_PAUSE {Pt "INPUT"}{Lq 0}{Ploc 100 280}}
+   {P MD07_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 260}}
+   {P MD05_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 240}}
+   {P MD06_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
+   {P MD04_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P MD03_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P TX0_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P TX1_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P TX2_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P TX3_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P TX4_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P TX5_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P SYSCLK {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P U3 {Pt "I/O"}{Lq 0}{Ploc 360 20}}
+   {P DATA11_L {Pt "I/O"}{Lq 0}{Ploc 360 40}}
+   {P DATA10_L {Pt "I/O"}{Lq 0}{Ploc 360 60}}
+   {P DATA8_LO {Pt "I/O"}{Lq 0}{Ploc 360 80}}
+   {P DATA9_LO {Pt "I/O"}{Lq 0}{Ploc 360 100}}
+   {P SKIP_LOW {Pt "I/O"}{Lq 0}{Ploc 360 120}}
+   {P INT_RQST {Pt "I/O"}{Lq 0}{Ploc 360 140}}
+   {P INTERNAL {Pt "I/O"}{Lq 0}{Ploc 360 160}}
+   {P C1_LOW {Pt "I/O"}{Lq 0}{Ploc 360 180}}
+   {P C0_LOW {Pt "I/O"}{Lq 0}{Ploc 360 200}}
+   {P DATA6_LO {Pt "I/O"}{Lq 0}{Ploc 360 220}}
+   {P DATA7_LO {Pt "I/O"}{Lq 0}{Ploc 360 240}}
+   {P DATA5_LO {Pt "I/O"}{Lq 0}{Ploc 360 260}}
+   {P DATA4_LO {Pt "I/O"}{Lq 0}{Ploc 360 280}}
+   {P DATA3_LO {Pt "I/O"}{Lq 0}{Ploc 360 300}}
+   {P DATA1_LO {Pt "I/O"}{Lq 0}{Ploc 360 320}}
+   {P DATA2_LO {Pt "I/O"}{Lq 0}{Ploc 360 340}}
+   {P DATA0_LO {Pt "I/O"}{Lq 0}{Ploc 360 360}}
+   {P LED1 {Pt "I/O"}{Lq 0}{Ploc 360 380}}
+   {P LED2 {Pt "I/O"}{Lq 0}{Ploc 360 400}}
+   {P LED0 {Pt "I/O"}{Lq 0}{Ploc 360 420}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 230 610}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 590}
+   {Pnl 120 570}
+   {Pnl 120 550}
+   {Pnl 120 530}
+   {Pnl 120 510}
+   {Pnl 120 490}
+   {Pnl 120 470}
+   {Pnl 120 450}
+   {Pnl 120 430}
+   {Pnl 120 410}
+   {Pnl 120 390}
+   {Pnl 120 370}
+   {Pnl 120 350}
+   {Pnl 120 330}
+   {Pnl 120 310}
+   {Pnl 120 290}
+   {Pnl 120 270}
+   {Pnl 120 250}
+   {Pnl 120 230}
+   {Pnl 120 210}
+   {Pnl 120 190}
+   {Pnl 120 170}
+   {Pnl 120 150}
+   {Pnl 120 130}
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   [Ts 15][Tj "LC"]
+   {Pnl 340 30}
+   {Pnl 340 50}
+   {Pnl 340 70}
+   {Pnl 340 90}
+   {Pnl 340 110}
+   {Pnl 340 130}
+   {Pnl 340 150}
+   {Pnl 340 170}
+   {Pnl 340 190}
+   {Pnl 340 210}
+   {Pnl 340 230}
+   {Pnl 340 250}
+   {Pnl 340 270}
+   {Pnl 340 290}
+   {Pnl 340 310}
+   {Pnl 340 330}
+   {Pnl 340 350}
+   {Pnl 340 370}
+   {Pnl 340 390}
+   {Pnl 340 410}
+   {Pnl 340 430}
+
+   {Sd A 10 11 12 15 16 17 18 20 27 28 29 30 33 35 40 41 49 51 52 55 58 67 68 69 70 73 76 81 9 21 22 24 25 31 34 36 37 39 45 46 48 50 54 56 57 65 75 77 79}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 600 330 0}
+   {L 130 580 100 580}
+   {L 130 560 100 560}
+   {L 130 540 100 540}
+   {L 130 520 100 520}
+   {L 130 500 100 500}
+   {L 130 480 100 480}
+   {L 130 460 100 460}
+   {L 130 440 100 440}
+   {L 130 420 100 420}
+   {L 130 400 100 400}
+   {L 130 380 100 380}
+   {L 130 360 100 360}
+   {L 130 340 100 340}
+   {L 130 320 100 320}
+   {L 130 300 100 300}
+   {L 130 280 100 280}
+   {L 130 260 100 260}
+   {L 130 240 100 240}
+   {L 130 220 100 220}
+   {L 130 200 100 200}
+   {L 130 180 100 180}
+   {L 130 160 100 160}
+   {L 130 140 100 140}
+   {L 130 120 100 120}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 330 20 360 20}
+   {L 330 40 360 40}
+   {L 330 60 360 60}
+   {L 330 80 360 80}
+   {L 330 100 360 100}
+   {L 330 120 360 120}
+   {L 330 140 360 140}
+   {L 330 160 360 160}
+   {L 330 180 360 180}
+   {L 330 200 360 200}
+   {L 330 220 360 220}
+   {L 330 240 360 240}
+   {L 330 260 360 260}
+   {L 330 280 360 280}
+   {L 330 300 360 300}
+   {L 330 320 360 320}
+   {L 330 340 360 340}
+   {L 330 360 360 360}
+   {L 330 380 360 380}
+   {L 330 400 360 400}
+   {L 330 420 360 420}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "RX1_LOW" 140 580}
+   {T "U2" 140 560}
+   {T "RX0_LOW" 140 540}
+   {T "RX2_LOW" 140 520}
+   {T "RX3_LOW" 140 500}
+   {T "RX4_LOW" 140 480}
+   {T "RX5_LOW" 140 460}
+   {T "SW" 140 440}
+   {T "MD11_LOW" 140 420}
+   {T "MD10_LOW" 140 400}
+   {T "MD09_LOW" 140 380}
+   {T "MD08_LOW" 140 360}
+   {T "INITIALI" 140 340}
+   {T "TS3" 140 320}
+   {T "TP3" 140 300}
+   {T "IO_PAUSE" 140 280}
+   {T "MD07_LOW" 140 260}
+   {T "MD05_LOW" 140 240}
+   {T "MD06_LOW" 140 220}
+   {T "MD04_LOW" 140 200}
+   {T "MD03_LOW" 140 180}
+   {T "TX0_LOW" 140 160}
+   {T "TX1_LOW" 140 140}
+   {T "TX2_LOW" 140 120}
+   {T "TX3_LOW" 140 100}
+   {T "TX4_LOW" 140 80}
+   {T "TX5_LOW" 140 60}
+   {T "SYSCLK" 140 40}
+   [Tj "RC"]
+   {T "U3" 320 20}
+   {T "DATA11_L" 320 40}
+   {T "DATA10_L" 320 60}
+   {T "DATA8_LO" 320 80}
+   {T "DATA9_LO" 320 100}
+   {T "SKIP_LOW" 320 120}
+   {T "INT_RQST" 320 140}
+   {T "INTERNAL" 320 160}
+   {T "C1_LOW" 320 180}
+   {T "C0_LOW" 320 200}
+   {T "DATA6_LO" 320 220}
+   {T "DATA7_LO" 320 240}
+   {T "DATA5_LO" 320 260}
+   {T "DATA4_LO" 320 280}
+   {T "DATA3_LO" 320 300}
+   {T "DATA1_LO" 320 320}
+   {T "DATA2_LO" 320 340}
+   {T "DATA0_LO" 320 360}
+   {T "LED1" 320 380}
+   {T "LED2" 320 400}
+   {T "LED0" 320 420}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "F1508ISPPLCC84" 230 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 40}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\CYGWIN\HOME\VINCE\TTL2PLD\4KYLE\IOTLED 230 600}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N RX1_LOW
+   }
+   {N U2
+   }
+   {N RX0_LOW
+   }
+   {N RX2_LOW
+   }
+   {N RX3_LOW
+   }
+   {N RX4_LOW
+   }
+   {N RX5_LOW
+   }
+   {N SW
+   }
+   {N MD11_LOW
+   }
+   {N MD10_LOW
+   }
+   {N MD09_LOW
+   }
+   {N MD08_LOW
+   }
+   {N INITIALI
+   }
+   {N TS3
+   }
+   {N TP3
+   }
+   {N IO_PAUSE
+   }
+   {N MD07_LOW
+   }
+   {N MD05_LOW
+   }
+   {N MD06_LOW
+   }
+   {N MD04_LOW
+   }
+   {N MD03_LOW
+   }
+   {N TX0_LOW
+   }
+   {N TX1_LOW
+   }
+   {N TX2_LOW
+   }
+   {N TX3_LOW
+   }
+   {N TX4_LOW
+   }
+   {N TX5_LOW
+   }
+   {N SYSCLK
+   }
+   {N U3
+   }
+   {N DATA11_L
+   }
+   {N DATA10_L
+   }
+   {N DATA8_LO
+   }
+   {N DATA9_LO
+   }
+   {N SKIP_LOW
+   }
+   {N INT_RQST
+   }
+   {N INTERNAL
+   }
+   {N C1_LOW
+   }
+   {N C0_LOW
+   }
+   {N DATA6_LO
+   }
+   {N DATA7_LO
+   }
+   {N DATA5_LO
+   }
+   {N DATA4_LO
+   }
+   {N DATA3_LO
+   }
+   {N DATA1_LO
+   }
+   {N DATA2_LO
+   }
+   {N DATA0_LO
+   }
+   {N LED1
+   }
+   {N LED2
+   }
+   {N LED0
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}
