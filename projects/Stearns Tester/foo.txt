@@ -1,0 +1,23 @@
+1c1
+< Partlist exported from C:/Users/Vince/Documents/eagle/projects/Stearns Tester/StearnsN.sch at 5/5/2019 12:54:04 PM
+---
+> Partlist exported from C:/Users/Vince/Documents/eagle/projects/Stearns Tester/StearnsN2.sch at 5/4/2019 6:17:33 AM
+                                                          
+36c32,34
+
+< 1   CONFIG           22-23-2101           22-23-2101   X1                                                                                                                                         .100" (2.54mm) Center Header - 10 Pin                      MOLEX 22-23-2101 1756828    94C0765  
+---
+
+> 1   CONFIG           22-23-2061           22-23-2061   J1                                                                                                                                             .100" (2.54mm) Center Header - 6 Pin                       MOLEX 22-23-2061 1462922    27C1933  
+
+Remove MA13-2, Add MA20-2.
+Remove MTA06-156 power connector.
+Add 1 more 1x1 pin header.
+Remove 1 .22uF capacitor.
+Remove 3.3nF capactior.
+Remove 2.2nF capactior
+Replace 710x switch with 720x switch.
+Remove 74HC05.
+Add 1 more MA04-1 and MA08-1.
+Add 1 more 3.6K resistor.
+Change config jumper from 2101 to 2061.

@@ -1,1 +1,17 @@
 Flip Chip Tester based on Warren Stearns' prototype
+<UL>
+<LI><b>loads</b> contains some early thoughts about a load card.</LI>
+<LI><b>M220loads</b> contains some later thoughts about an M220 load board.</LI>
+<LI><b>MTCable1off</b> describes a possible cable adaper from the MT tester to the RasPi.</LI>
+<LI><b>raspi</b> describes a PCB to interface the Stearns tester to RasPi.</LI>
+<LI><b>Stearns</b> is a tester drawing based on Warren's tester.</LI>
+<LI><b>Stearns2</b> is a version of Stearns with 15V connections added.</LI>
+<LI><b>Stearns2pi</b> attempted a version of Stearns2 with room for a Pi on top.</LI>
+<LI><b>StearnsMT</b> is a drawing of Michael's variant of the tester.</LI>
+<LI><b>StearnsMTvrs</b> is a drawing of StearnsMT implemented on the Stearns board.</LI>
+<LI><b>StearnsN</b> attempts to support negative logic flip-chip modules.</LI>
+<LI><b>StearnsN2</b> is StearnsN as it was first prototyped.</LI>
+<LI><b>StearnsN2b</b> is StearnsN as it was later prototyped.</LI>
+<LI><b>StearnsW</b> is Stearns with a routing more similar to Warren's.</LI>
+<LI><b>TTLjig</b> is a jig for testing TTL chips with the tester.</LI>
+</UL>

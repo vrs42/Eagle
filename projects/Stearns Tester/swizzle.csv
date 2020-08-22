@@ -1,0 +1,27 @@
+Pin,Schematic,Source Code,Printer Register
+1,N/C,SPARE_PIN_1,Strobe,Control-0
+2,N/C,RESET_N,Data0,Data-0
+3,SO-AN,CS_N,Data1,Data-1
+4,RESET-NC,SCK,Data2,Data-2
+5,N/CC,Chip A SI,Data3,Data-3
+6,CS-N,Chip B SI,Data4,Data-4
+7,N/C,Chip C SI,Data5,Data-5
+8,CLKC,Chip D SI,Data6,Data-6
+9,GND,Chip E SI,Data7,Data-7
+10,SI-A,Chip D SO,="-Ack",Status-6
+11,GND,Chip E SO,="+Busy",Status-7
+12,SI-B,Chip C SO,="+PaperEnd",Status-5
+13,GND,Chip B SO,="+SelectIn",Status-4
+14,SI-C,SPARE_PIN_14,="-AutoFd",Control-1
+15,GND,Chip A SO,="-Error",Status-3
+16,SI-D,SPARE_PIN_16,="-Init",Control-2
+17,GND,SPARE_PIN_17,="-Select",Control-3
+18,SI-E,,GND
+19,GND,,GND
+20,SO-DN,,GND
+21,GND,,GND
+22,SO-EN,,GND
+23,GND,,GND
+24,SO-CN,,GND
+25,GND,,GND
+26,SO-BN,,GND
