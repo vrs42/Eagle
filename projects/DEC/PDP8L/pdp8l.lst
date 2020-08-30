@@ -1,0 +1,2454 @@
+Signal	Occurances
+(iot+opr)\:
+	d-bs-8l-0-3 C-4 	d-bs-8l-0-3 C-5 
++3v(1):
+	d-bs-8l-0-2 B-6 	d-bs-8l-0-2 C-8 	d-bs-8l-0-2 D-8 
+	d-bs-8l-0-3 A-5 	d-bs-8l-0-3 B-3 
++3v(10):
+	d-bs-8l-0-6 C-7 	d-bs-8l-0-6 C-8 
++3v(11):
+	d-bs-8l-0-7 A-5 	d-bs-8l-0-7 B-5 	d-bs-8l-0-7 C-5 
+	d-bs-8l-0-8 D-8 
++3v(12):
+	d-bs-8l-0-8 A-7 	d-bs-8l-0-8 C-8 
++3v(13):
+	d-bs-8l-0-13 A-2	d-bs-8l-0-13 A-3	d-bs-8l-0-13 A-4
+	d-bs-8l-0-13 B-2	d-bs-8l-0-13 B-3	d-bs-8l-0-13 C-7
+	d-bs-8l-0-13 D-5	d-bs-8l-0-6 C-6 
++3v(15):
+	d-bs-8l-0-12 C-4	d-bs-8l-0-12 C-5	d-bs-8l-0-12 C-6
++3v(16):
+	d-bs-8l-0-11 B-7	d-bs-8l-0-11 C-6
++3v(17):
+	d-bs-8l-0-7 A-8 
++3v(18):
+	d-bs-8l-0-4 A-8 
++3v(2):
+	d-bs-8l-0-2 C-2 	d-bs-8l-0-2 C-3 	d-bs-8l-0-2 D-3 
++3v(3):
+	d-bs-8l-0-2 C-2 	d-bs-8l-0-3 C-4 	d-bs-8l-0-3 C-5 
+	d-bs-8l-0-3 C-6 	d-bs-8l-0-3 C-7 	d-bs-8l-0-3 D-5 
+	d-bs-8l-0-3 D-6 	d-bs-8l-0-3 D-7 	d-bs-8l-0-3 D-8 
++3v(4):
+	d-bs-8l-0-3 C-2 	d-bs-8l-0-3 C-3 	d-bs-8l-0-3 C-4 
+	d-bs-8l-0-3 D-3 	d-bs-8l-0-7 C-5 	d-bs-8l-0-7 D-5 
+	d-bs-8l-0-7 D-6 
++3v(5):
+	d-bs-8l-0-3 B-7 	d-bs-8l-0-3 B-8 
++3v(6):
+	d-bs-8l-0-4 B-8 	d-bs-8l-0-4 C-7 	d-bs-8l-0-4 C-8 
++3v(7):
+	d-bs-8l-0-4 B-7 	d-bs-8l-0-4 C-4 	d-bs-8l-0-4 C-5 
++3v(8):
+	d-bs-8l-0-2 B-3 	d-bs-8l-0-2 C-3 	d-bs-8l-0-4 B-7 
+	d-bs-8l-0-4 C-3 
++3v(9):
+	d-bs-8l-0-5 B-8 
++5v(1):
+	d-bs-8l-0-13 B-6
++5v(2):
+	d-bs-8l-0-13 B-6
++5v(3):
+	d-bs-8l-0-13 B-6
++5v(4):
+	d-bs-8l-0-13 B-6
++5v(5):
+	d-bs-8l-0-13 B-6
++5v(6):
+	d-bs-8l-0-13 B-6
+-15v:
+	d-bs-8l-0-11 D-5
+3cycle:
+	d-bs-8l-0-10 A-6	d-bs-8l-0-3 C-4 
+3cycle\:
+	d-bs-8l-0-10 A-6
+a:
+	22 B-4          
+a01_10v:
+	d-bs-8l-0-13 A-7
+a01b2:
+	d-bs-8l-0-13 A-7
+a10r1:
+	d-bs-8l-0-4 C-7 	d-bs-8l-0-4 C-8 	d-bs-8l-0-4 D-7 
+a10v2:
+	d-bs-8l-0-8 B-8 
+a11n1:
+	d-bs-8l-0-5 B-3 
+a11s2:
+	d-bs-8l-0-5 B-6 
+a11v1:
+	d-bs-8l-0-6 B-3 	d-bs-8l-0-6 B-4 
+a12r1:
+	d-bs-8l-0-5 C-6 
+a13r1:
+	d-bs-8l-0-6 B-7 	d-bs-8l-0-6 C-7 
+a13t2:
+	d-bs-8l-0-6 B-4 
+a13v2:
+	d-bs-8l-0-4 B-4 
+a14d1:
+	d-bs-8l-0-6 B-5 
+a14j1:
+	d-bs-8l-0-6 B-6 
+a14m2:
+	23 B-5          	23 B-6          
+a14u1:
+	23 B-6          
+a14v1:
+	d-bs-8l-0-5 C-8 
+a15k1:
+	23 D-7          	23 D-8          
+a15l1:
+	23 D-7          
+a15u2:
+	23 C-7          	23 C-8          	23 D-7          
+a15v2:
+	23 C-7          	23 D-7          
+a16u2:
+	23 D-7          	23 D-8          
+a16v2:
+	23 C-7          	23 D-7          
+a21c2:
+	d-bs-8l-0-14 A-7
+a21d2:
+	d-bs-8l-0-14 A-7
+a21e2:
+	d-bs-8l-0-14 A-6
+a21f2:
+	d-bs-8l-0-14 A-6
+a21h2:
+	d-bs-8l-0-14 A-6
+a21j2:
+	d-bs-8l-0-14 A-6
+a21k2:
+	d-bs-8l-0-14 A-5
+a21l2:
+	d-bs-8l-0-14 A-5
+a21m2:
+	d-bs-8l-0-14 A-5
+a21n2:
+	d-bs-8l-0-14 A-5
+a21p2:
+	d-bs-8l-0-14 A-4
+a21r2:
+	d-bs-8l-0-14 A-4
+a21s2:
+	d-bs-8l-0-14 A-8
+a21t2:
+	d-bs-8l-0-14 A-8
+a23e1:
+	d-bs-8l-0-14 D-6
+a23f2:
+	d-bs-8l-0-14 D-6
+a23h1:
+	d-bs-8l-0-14 D-5
+a23j1:
+	d-bs-8l-0-14 D-5
+a23j2:
+	d-bs-8l-0-14 D-5
+a23k2:
+	d-bs-8l-0-14 D-5
+a23m1:
+	d-bs-8l-0-14 C-6
+a23p1:
+	d-bs-8l-0-14 C-5
+a23p2:
+	d-bs-8l-0-14 C-6
+a23r1:
+	d-bs-8l-0-14 C-5
+a23s2:
+	d-bs-8l-0-14 D-5
+a23t2:
+	d-bs-8l-0-14 C-5
+a24f2:
+	d-bs-8l-0-14 D-8
+a24j2:
+	d-bs-8l-0-14 D-7
+a24k2:
+	d-bs-8l-0-14 D-7
+a25f2:
+	d-bs-8l-0-13 B-2	d-bs-8l-0-13 B-3
+a26f2:
+	d-bs-8l-0-13 B-2	d-bs-8l-0-13 B-3	d-bs-8l-0-13 B-5
+a33s2:
+	d-bs-8l-0-10 B-5
+a\:
+	22 B-4          
+ac00:
+	d-bs-8l-0-10 D-8	d-bs-8l-0-6 B-7 	d-bs-8l-0-8 D-7 
+ac00\:
+	d-bs-8l-0-6 B-8 	d-bs-8l-0-8 D-7 
+ac01:
+	d-bs-8l-0-10 D-8	d-bs-8l-0-8 D-6 
+ac01\:
+	d-bs-8l-0-6 B-8 	d-bs-8l-0-8 D-6 
+ac02:
+	d-bs-8l-0-10 D-8	d-bs-8l-0-8 D-6 
+ac02\:
+	d-bs-8l-0-6 B-8 	d-bs-8l-0-8 D-6 
+ac03:
+	d-bs-8l-0-10 D-8	d-bs-8l-0-8 D-5 
+ac03\:
+	d-bs-8l-0-6 B-8 	d-bs-8l-0-8 D-5 
+ac04:
+	21 B-6          	d-bs-8l-0-10 C-7	d-bs-8l-0-12 C-6
+	d-bs-8l-0-8 D-5 
+ac04\:
+	d-bs-8l-0-6 B-8 	d-bs-8l-0-8 D-5 
+ac05:
+	21 B-6          	d-bs-8l-0-10 D-7	d-bs-8l-0-12 C-6
+	d-bs-8l-0-8 D-4 
+ac05\:
+	d-bs-8l-0-6 B-8 	d-bs-8l-0-8 D-4 
+ac06:
+	21 B-5          	d-bs-8l-0-10 C-7	d-bs-8l-0-12 B-6
+	d-bs-8l-0-8 D-4 
+ac06\:
+	d-bs-8l-0-6 B-8 	d-bs-8l-0-8 D-4 
+ac07:
+	21 B-5          	d-bs-8l-0-10 D-7	d-bs-8l-0-12 B-6
+	d-bs-8l-0-8 D-3 
+ac07\:
+	d-bs-8l-0-6 B-8 	d-bs-8l-0-8 D-3 
+ac08:
+	21 B-5          	d-bs-8l-0-10 D-7	d-bs-8l-0-12 B-6
+	d-bs-8l-0-8 D-3 
+ac08\:
+	d-bs-8l-0-6 A-8 	d-bs-8l-0-8 D-3 
+ac09:
+	21 B-4          	d-bs-8l-0-10 C-6	d-bs-8l-0-12 B-6
+	d-bs-8l-0-8 D-2 
+ac09\:
+	d-bs-8l-0-6 A-8 	d-bs-8l-0-8 D-2 
+ac10:
+	21 B-4          	d-bs-8l-0-10 C-6	d-bs-8l-0-12 B-6
+	d-bs-8l-0-8 D-2 
+ac10\:
+	d-bs-8l-0-6 A-8 	d-bs-8l-0-8 D-2 
+ac11:
+	21 B-4          	d-bs-8l-0-10 D-6	d-bs-8l-0-12 B-6
+	d-bs-8l-0-8 D-1 
+ac11\:
+	d-bs-8l-0-6 A-8 	d-bs-8l-0-8 D-1 
+ac\_enable:
+	d-bs-8l-0-4 A-3 	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+ac\_enable\:
+	d-bs-8l-0-4 A-3 
+ac_clear:
+	d-bs-8l-0-10 C-3	d-bs-8l-0-4 B-3 
+ac_clear\:
+	d-bs-8l-0-4 C-3 
+ac_enable:
+	d-bs-8l-0-4 D-3 	d-bs-8l-0-9 B-3 	d-bs-8l-0-9 B-6 
+	d-bs-8l-0-9 B-8 
+ac_load:
+	d-bs-8l-0-6 D-6 	d-bs-8l-0-8 D-3 	d-bs-8l-0-8 D-4 
+	d-bs-8l-0-8 D-5 	d-bs-8l-0-8 D-7 	d-bs-8l-0-8 D-8 
+add\:
+	d-bs-8l-0-4 C-2 	d-bs-8l-0-4 C-3 	d-bs-8l-0-4 C-8 
+	d-bs-8l-0-4 D-3 	d-bs-8l-0-4 D-8 
+add_accepted\:
+	d-bs-8l-0-10 A-5	d-bs-8l-0-7 D-5 
+adder00:
+	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 
+	d-bs-8l-0-9 D-3 
+adder01:
+	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-3 	d-bs-8l-0-9 C-8 
+adder02:
+	d-bs-8l-0-9 C-4 	d-bs-8l-0-9 C-8 	d-bs-8l-0-9 D-6 
+adder03:
+	d-bs-8l-0-9 C-4 	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 D-8 
+adder04:
+	d-bs-8l-0-9 C-3 	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 D-8 
+adder05:
+	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 	d-bs-8l-0-9 D-3 
+adder06:
+	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 	d-bs-8l-0-9 D-3 
+adder07:
+	d-bs-8l-0-9 C-3 	d-bs-8l-0-9 C-8 	d-bs-8l-0-9 D-6 
+adder08:
+	d-bs-8l-0-9 C-3 	d-bs-8l-0-9 C-8 	d-bs-8l-0-9 D-6 
+adder09:
+	d-bs-8l-0-9 C-3 	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 
+adder10:
+	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-3 	d-bs-8l-0-9 C-6 
+adder11:
+	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-3 	d-bs-8l-0-9 C-6 
+	d-bs-8l-0-9 D-8 
+adder_l\:
+	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 
+and:
+	d-bs-8l-0-3 C-7 	d-bs-8l-0-5 B-4 
+and\:
+	d-bs-8l-0-3 C-8 	d-bs-8l-0-6 D-8 
+and_enable:
+	d-bs-8l-0-5 B-3 	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 
+	d-bs-8l-0-9 D-8 
+and_enable\:
+	d-bs-8l-0-4 C-3 	d-bs-8l-0-4 D-3 	d-bs-8l-0-5 A-3 
+	d-bs-8l-0-5 B-3 
+b:
+	22 B-4          
+b01_10v:
+	d-bs-8l-0-13 A-7
+b10r1:
+	d-bs-8l-0-8 D-8 
+b12b1:
+	d-bs-8l-0-8 B-8 
+b12f2:
+	d-bs-8l-0-7 B-5 
+b12j2:
+	d-bs-8l-0-7 B-5 
+b12l2:
+	d-bs-8l-0-7 A-6 
+b12m1:
+	d-bs-8l-0-5 C-7 
+b12s1:
+	d-bs-8l-0-6 B-7 
+b12t2:
+	d-bs-8l-0-6 B-5 
+b12u1:
+	d-bs-8l-0-6 A-7 	d-bs-8l-0-6 B-7 
+b13c1:
+	d-bs-8l-0-4 C-6 
+b13f2:
+	d-bs-8l-0-4 A-6 
+b13n1:
+	d-bs-8l-0-6 D-7 
+b13s2:
+	d-bs-8l-0-7 B-6 
+b14j2:
+	d-bs-8l-0-5 C-7 
+b14p2:
+	d-bs-8l-0-6 B-8 
+b14v2:
+	d-bs-8l-0-7 A-8 	d-bs-8l-0-7 B-8 
+b15u1:
+	23 D-5          
+b16k1:
+	23 D-5          	23 D-6          
+b16l1:
+	23 D-5          
+b16u2:
+	23 C-5          	23 C-6          	23 D-5          
+b16v2:
+	23 C-5          	23 D-5          
+b17u2:
+	23 D-5          	23 D-6          
+b17v2:
+	23 C-5          	23 D-5          
+b21c2:
+	d-bs-8l-0-14 A-4
+b21d2:
+	d-bs-8l-0-14 A-4
+b21e2:
+	d-bs-8l-0-14 A-3
+b21f2:
+	d-bs-8l-0-14 A-3
+b21h2:
+	d-bs-8l-0-14 A-3
+b21j2:
+	d-bs-8l-0-14 A-3
+b21k2:
+	d-bs-8l-0-14 A-3
+b21l2:
+	d-bs-8l-0-14 A-2
+b21m2:
+	d-bs-8l-0-14 A-2
+b21n2:
+	d-bs-8l-0-14 A-2
+b21p2:
+	d-bs-8l-0-14 A-2
+b21r2:
+	d-bs-8l-0-14 A-1
+b22s2:
+	d-bs-8l-0-13 A-8
+b22t2:
+	d-bs-8l-0-13 A-8
+b23e1:
+	d-bs-8l-0-14 D-4
+b23f2:
+	d-bs-8l-0-14 D-4
+b23h1:
+	d-bs-8l-0-14 D-3
+b23j1:
+	d-bs-8l-0-14 D-3
+b23j2:
+	d-bs-8l-0-14 D-3
+b23k2:
+	d-bs-8l-0-14 D-3
+b23m1:
+	d-bs-8l-0-14 C-4
+b23p1:
+	d-bs-8l-0-14 C-3
+b23p2:
+	d-bs-8l-0-14 C-4	d-bs-8l-0-14 D-4
+b23r1:
+	d-bs-8l-0-14 C-3
+b23s2:
+	d-bs-8l-0-14 D-3
+b23t2:
+	d-bs-8l-0-14 C-3
+b24e1:
+	d-bs-8l-0-14 D-3
+b24f2:
+	d-bs-8l-0-14 D-2
+b24h1:
+	d-bs-8l-0-14 D-1
+b24j1:
+	d-bs-8l-0-14 D-2
+b24j2:
+	d-bs-8l-0-14 D-1
+b24k2:
+	d-bs-8l-0-14 D-2
+b24m1:
+	d-bs-8l-0-14 C-3
+b24p1:
+	d-bs-8l-0-14 C-1
+b24p2:
+	d-bs-8l-0-14 C-3	d-bs-8l-0-14 D-3
+b24r1:
+	d-bs-8l-0-14 C-1
+b24s2:
+	d-bs-8l-0-14 D-1
+b24t2:
+	d-bs-8l-0-14 C-1
+b25f2:
+	d-bs-8l-0-13 B-2	d-bs-8l-0-13 B-3	d-bs-8l-0-13 B-4
+b26f2:
+	d-bs-8l-0-13 A-2	d-bs-8l-0-13 A-3	d-bs-8l-0-13 A-4
+	d-bs-8l-0-13 B-2
+b27k2:
+	d-bs-8l-0-13 A-7
+b29b2:
+	22 B-8          	d-bs-8l-0-13 A-7
+b31u2:
+	21 C-8          
+b31v1:
+	21 B-5          
+b36b1:
+	d-bs-8l-0-17 D-6
+b36d1:
+	d-bs-8l-0-17 D-6
+b36d2:
+	d-bs-8l-0-17 C-6
+b36e1:
+	d-bs-8l-0-17 D-6
+b36e2:
+	d-bs-8l-0-17 B-6
+b36h2:
+	d-bs-8l-0-17 B-6
+b36j1:
+	d-bs-8l-0-17 C-6
+b36m1:
+	d-bs-8l-0-17 C-6
+b36p1:
+	d-bs-8l-0-17 C-6
+b36s1:
+	d-bs-8l-0-17 C-6
+b36s2:
+	d-bs-8l-0-13 A-8
+b36t2:
+	d-bs-8l-0-13 B-7
+b36v2:
+	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-8
+b\:
+	22 C-4          
+b_bk:
+	d-bs-8l-0-3 D-3 	d-bs-8l-0-4 B-6 	d-bs-8l-0-4 B-7 
+	d-bs-8l-0-5 B-8 
+b_ca:
+	d-bs-8l-0-3 D-3 	d-bs-8l-0-4 C-7 	d-bs-8l-0-5 B-8 
+b_execute:
+	d-bs-8l-0-3 B-5 	d-bs-8l-0-4 A-8 	d-bs-8l-0-4 B-8 
+	d-bs-8l-0-4 C-2 	d-bs-8l-0-4 C-3 	d-bs-8l-0-4 C-5 
+	d-bs-8l-0-5 B-4 	d-bs-8l-0-5 B-8 	d-bs-8l-0-5 C-7 
+	d-bs-8l-0-6 B-4 	d-bs-8l-0-6 B-6 	d-bs-8l-0-6 C-8 
+	d-bs-8l-0-6 D-8 
+b_fetch:
+	d-bs-8l-0-3 B-5 	d-bs-8l-0-3 B-7 	d-bs-8l-0-3 C-4 
+	d-bs-8l-0-3 C-5 	d-bs-8l-0-3 C-7 	d-bs-8l-0-3 C-8 
+	d-bs-8l-0-4 C-4 	d-bs-8l-0-4 C-6 	d-bs-8l-0-6 C-8 
+	d-bs-8l-0-7 B-7 
+b_inhibit:
+	d-bs-8l-0-13 D-5	d-bs-8l-0-14 D-3	d-bs-8l-0-14 D-5
+	d-bs-8l-0-14 D-7	d-bs-8l-0-14 D-8
+b_mem_enable:
+	d-bs-8l-0-13 A-2	d-bs-8l-0-13 A-3	d-bs-8l-0-13 B-2
+	d-bs-8l-0-13 B-3	d-bs-8l-0-13 D-7	d-bs-8l-0-13 D-8
+	d-bs-8l-0-14 A-2	d-bs-8l-0-14 A-3	d-bs-8l-0-14 A-4
+	d-bs-8l-0-14 A-5	d-bs-8l-0-14 A-6	d-bs-8l-0-14 A-7
+	d-bs-8l-0-14 A-8	d-bs-8l-0-14 D-3	d-bs-8l-0-14 D-5
+	d-bs-8l-0-14 D-7	d-bs-8l-0-14 D-8	d-bs-8l-0-15 A-5
+	d-bs-8l-0-15 A-6	d-bs-8l-0-15 C-8	d-bs-8l-0-15 D-8
+	d-bs-8l-0-16 A-5	d-bs-8l-0-16 A-6	d-bs-8l-0-16 C-8
+	d-bs-8l-0-16 D-8
+b_mem_enable\:
+	d-bs-8l-0-13 D-7	d-bs-8l-0-13 D-8
+b_set:
+	d-bs-8l-0-17 D-7	d-bs-8l-0-3 C-2 	d-bs-8l-0-3 D-2 
+b_wc:
+	d-bs-8l-0-3 D-4 	d-bs-8l-0-4 C-4 
+bac00:
+	d-bs-8l-0-10 D-8
+bac01:
+	d-bs-8l-0-10 D-8
+bac02:
+	d-bs-8l-0-10 D-8
+bac03:
+	d-bs-8l-0-10 D-8
+bac04:
+	d-bs-8l-0-10 D-7
+bac05:
+	d-bs-8l-0-10 D-7
+bac06:
+	d-bs-8l-0-10 D-7
+bac07:
+	d-bs-8l-0-10 D-7
+bac08:
+	d-bs-8l-0-10 D-7
+bac09:
+	d-bs-8l-0-10 D-6
+bac10:
+	d-bs-8l-0-10 D-6
+bac11:
+	d-bs-8l-0-10 D-6
+bac_clear\:
+	d-bs-8l-0-10 C-3
+badd_accepted\:
+	d-bs-8l-0-10 B-5
+baddr00\:
+	d-bs-8l-0-10 B-8
+baddr01\:
+	d-bs-8l-0-10 B-8
+baddr02\:
+	d-bs-8l-0-10 B-8
+baddr03\:
+	d-bs-8l-0-10 B-8
+baddr04\:
+	d-bs-8l-0-10 B-7
+baddr05\:
+	d-bs-8l-0-10 B-7
+baddr06\:
+	d-bs-8l-0-10 B-7
+baddr07\:
+	d-bs-8l-0-10 B-7
+baddr08\:
+	d-bs-8l-0-10 B-7
+baddr09\:
+	d-bs-8l-0-10 B-6
+baddr10\:
+	d-bs-8l-0-10 B-6
+baddr11\:
+	d-bs-8l-0-10 B-6
+bbreak\:
+	d-bs-8l-0-10 A-5	d-bs-8l-0-10 B-5
+bdata00\:
+	d-bs-8l-0-10 A-8
+bdata01\:
+	d-bs-8l-0-10 A-8
+bdata02\:
+	d-bs-8l-0-10 A-8
+bdata03\:
+	d-bs-8l-0-10 A-8
+bdata04\:
+	d-bs-8l-0-10 A-7
+bdata05\:
+	d-bs-8l-0-10 A-7
+bdata06\:
+	d-bs-8l-0-10 A-7
+bdata07\:
+	d-bs-8l-0-10 A-7
+bdata08\:
+	d-bs-8l-0-10 A-7
+bdata09\:
+	d-bs-8l-0-10 A-6
+bdata10\:
+	d-bs-8l-0-10 A-6
+bdata11\:
+	d-bs-8l-0-10 A-6
+bema:
+	d-bs-8l-0-3 A-8 
+binitialize:
+	d-bs-8l-0-10 D-5
+binitialize2:
+	d-bs-8l-0-10 B-5
+biop1:
+	d-bs-8l-0-10 D-6
+biop2:
+	d-bs-8l-0-10 D-6
+biop4:
+	d-bs-8l-0-10 D-5
+birq\:
+	d-bs-8l-0-10 C-4
+bmb00:
+	d-bs-8l-0-10 D-4
+bmb01:
+	d-bs-8l-0-10 D-4
+bmb02:
+	d-bs-8l-0-10 D-4
+bmb03:
+	d-bs-8l-0-10 D-4
+bmb03\:
+	d-bs-8l-0-10 D-4
+bmb04:
+	d-bs-8l-0-10 D-3
+bmb04\:
+	d-bs-8l-0-10 D-4
+bmb05:
+	d-bs-8l-0-10 D-3
+bmb05\:
+	d-bs-8l-0-10 D-3
+bmb06:
+	d-bs-8l-0-10 D-3
+bmb06\:
+	d-bs-8l-0-10 D-3
+bmb07:
+	d-bs-8l-0-10 D-2
+bmb07\:
+	d-bs-8l-0-10 D-2
+bmb08:
+	d-bs-8l-0-10 D-2
+bmb08\:
+	d-bs-8l-0-10 D-2
+bmb09:
+	d-bs-8l-0-10 D-2
+bmb10:
+	d-bs-8l-0-10 D-1
+bmb11:
+	d-bs-8l-0-10 D-1
+bmem_incr\:
+	d-bs-8l-0-10 B-5
+break:
+	d-bs-8l-0-3 D-2 	d-bs-8l-0-7 C-7 
+break\:
+	d-bs-8l-0-10 A-5	d-bs-8l-0-3 D-3 
+break_ok:
+	d-bs-8l-0-3 C-3 	d-bs-8l-0-3 C-4 	d-bs-8l-0-4 B-6 
+break_ok\:
+	d-bs-8l-0-3 B-3 	d-bs-8l-0-3 C-5 	d-bs-8l-0-7 D-5 
+brk_rqst\:
+	d-bs-8l-0-10 B-6	d-bs-8l-0-3 B-4 
+brun:
+	d-bs-8l-0-10 C-3
+bskip\:
+	d-bs-8l-0-10 C-4
+btp2:
+	d-bs-8l-0-2 C-5 
+btp3:
+	d-bs-8l-0-2 C-5 
+bts1:
+	d-bs-8l-0-10 D-5
+bts3:
+	d-bs-8l-0-10 D-5
+c01_10v:
+	d-bs-8l-0-13 A-7
+c02n1:
+	d-bs-8l-0-2 C-8 
+c02s2:
+	d-bs-8l-0-2 C-8 
+c05s1:
+	d-bs-8l-0-2 D-5 
+c05s2:
+	d-bs-8l-0-6 C-8 
+c07b1:
+	d-bs-8l-0-2 B-2 	d-bs-8l-0-2 C-2 
+c07d2:
+	d-bs-8l-0-3 C-6 	d-bs-8l-0-3 C-7 	d-bs-8l-0-3 D-7 
+c07l2:
+	d-bs-8l-0-3 B-6 
+c10v2:
+	d-bs-8l-0-3 B-6 
+c11l1:
+	d-bs-8l-0-3 C-4 
+c12h2:
+	d-bs-8l-0-4 A-6 
+c12j1:
+	d-bs-8l-0-4 C-5 	d-bs-8l-0-4 D-5 
+c12m2:
+	d-bs-8l-0-6 D-7 
+c12n1:
+	d-bs-8l-0-4 B-7 
+c12s2:
+	d-bs-8l-0-6 D-8 
+c12u1:
+	d-bs-8l-0-4 A-6 
+c12v1:
+	d-bs-8l-0-6 B-4 
+c13l1:
+	d-bs-8l-0-4 C-6 	d-bs-8l-0-4 D-6 
+c13p2:
+	d-bs-8l-0-7 A-6 
+c13s1:
+	d-bs-8l-0-6 A-8 
+c13v2:
+	d-bs-8l-0-13 C-7
+c14c1:
+	d-bs-8l-0-6 B-5 
+c14f2:
+	d-bs-8l-0-6 B-4 	d-bs-8l-0-6 B-5 
+c14k2:
+	d-bs-8l-0-6 A-4 	d-bs-8l-0-6 A-5 	d-bs-8l-0-6 B-5 
+c14n1:
+	d-bs-8l-0-6 B-6 
+c14n2:
+	d-bs-8l-0-6 A-6 	d-bs-8l-0-6 B-6 
+c14s2:
+	d-bs-8l-0-7 B-6 
+c14v2:
+	d-bs-8l-0-7 A-6 	d-bs-8l-0-7 B-6 
+c15c1:
+	d-bs-8l-0-13 C-6	d-bs-8l-0-13 C-7
+c15f1:
+	d-bs-8l-0-4 A-6 
+c15f2:
+	d-bs-8l-0-13 C-4
+c15k1:
+	d-bs-8l-0-13 C-4
+c15k2:
+	d-bs-8l-0-13 C-7
+c18j2:
+	d-bs-8l-0-16 C-7
+c18k2:
+	d-bs-8l-0-16 C-7
+c18l2:
+	d-bs-8l-0-16 C-7
+c18m2:
+	d-bs-8l-0-16 C-7
+c18n2:
+	d-bs-8l-0-16 D-7
+c18p2:
+	d-bs-8l-0-16 D-7
+c18r2:
+	d-bs-8l-0-16 D-7
+c18s2:
+	d-bs-8l-0-16 D-7
+c19j2:
+	d-bs-8l-0-16 B-7
+c19k2:
+	d-bs-8l-0-16 B-7
+c19l2:
+	d-bs-8l-0-16 C-7
+c19m2:
+	d-bs-8l-0-16 B-7
+c19n2:
+	d-bs-8l-0-16 C-7
+c19p2:
+	d-bs-8l-0-16 C-7
+c19r2:
+	d-bs-8l-0-16 C-7
+c19s2:
+	d-bs-8l-0-16 C-7
+c23j2:
+	d-bs-8l-0-15 C-7
+c23k2:
+	d-bs-8l-0-15 C-7
+c23l2:
+	d-bs-8l-0-15 C-7
+c23m2:
+	d-bs-8l-0-15 C-7
+c23n2:
+	d-bs-8l-0-15 D-7
+c23p2:
+	d-bs-8l-0-15 D-7
+c23r2:
+	d-bs-8l-0-15 D-7
+c23s2:
+	d-bs-8l-0-15 D-7
+c24j2:
+	d-bs-8l-0-15 B-7
+c24k2:
+	d-bs-8l-0-15 B-7
+c24m2:
+	d-bs-8l-0-15 B-7
+c24n2:
+	d-bs-8l-0-15 C-7
+c24p2:
+	d-bs-8l-0-15 C-7
+c24r2:
+	d-bs-8l-0-15 C-7
+c24s2:
+	d-bs-8l-0-15 C-7
+c28h2:
+	d-bs-8l-0-7 C-5 
+c34d1:
+	21 B-5          
+c34e1:
+	21 B-6          
+ca_increment:
+	d-bs-8l-0-10 A-6	d-bs-8l-0-5 B-7 
+carry_insert:
+	d-bs-8l-0-5 B-5 	d-bs-8l-0-9 C-1 	d-bs-8l-0-9 C-2 
+carryout0:
+	d-bs-8l-0-6 B-4 	d-bs-8l-0-7 C-6 	d-bs-8l-0-8 B-8 
+carryout0\:
+	d-bs-8l-0-8 B-8 	d-bs-8l-0-9 C-8 
+carryout10\:
+	d-bs-8l-0-9 C-6 
+carryout2\:
+	d-bs-8l-0-9 C-3 
+carryout4\:
+	d-bs-8l-0-9 C-6 
+carryout6\:
+	d-bs-8l-0-9 C-1 	d-bs-8l-0-9 C-8 
+carryout8\:
+	d-bs-8l-0-9 C-3 
+clock1:
+	22 C-6          	22 C-7          
+clock_scale2:
+	d-bs-8l-0-11 B-7
+clr_parity_error\:
+	23 B-6          	23 B-8          
+control_iot:
+	d-bs-8l-0-7 A-7 
+current_addr\:
+	d-bs-8l-0-3 A-3 	d-bs-8l-0-3 C-2 	d-bs-8l-0-3 D-3 
+	d-bs-8l-0-3 D-4 
+cyc_done:
+	d-bs-8l-0-13 C-4	d-bs-8l-0-13 C-5	d-bs-8l-0-13 C-6
+	d-bs-8l-0-13 C-8	d-bs-8l-0-13 D-3
+cycle:
+	d-bs-8l-0-13 C-4	d-bs-8l-0-13 D-7
+d01_10v:
+	d-bs-8l-0-13 A-7
+d01n1:
+	d-bs-8l-0-2 A-7 
+d04d1:
+	d-bs-8l-0-2 C-8 
+d04u1:
+	d-bs-8l-0-3 A-6 
+d05f1:
+	d-bs-8l-0-2 B-7 	d-bs-8l-0-2 C-7 
+d05r2:
+	d-bs-8l-0-2 B-7 
+d06m2:
+	d-bs-8l-0-2 C-6 
+d06t2:
+	d-bs-8l-0-2 C-5 	d-bs-8l-0-2 C-6 
+d07k2:
+	d-bs-8l-0-2 D-5 
+d07n2:
+	d-bs-8l-0-2 C-4 
+d09t2:
+	d-bs-8l-0-4 C-3 	d-bs-8l-0-4 D-3 
+d09v2:
+	d-bs-8l-0-4 C-3 
+d11c1:
+	d-bs-8l-0-7 D-5 
+d11f1:
+	d-bs-8l-0-7 D-6 
+d11f2:
+	d-bs-8l-0-7 C-5 
+d11k1:
+	d-bs-8l-0-7 C-6 
+d11k2:
+	d-bs-8l-0-7 C-7 
+d11n2:
+	d-bs-8l-0-3 C-4 
+d12f1:
+	d-bs-8l-0-3 C-4 
+d12k2:
+	d-bs-8l-0-3 D-7 
+d12n2:
+	d-bs-8l-0-3 C-3 
+d13s1:
+	d-bs-8l-0-3 C-7 	d-bs-8l-0-3 D-7 
+d14f1:
+	d-bs-8l-0-13 B-6	d-bs-8l-0-13 C-5	d-bs-8l-0-13 C-6
+d14j1:
+	d-bs-8l-0-13 B-6	d-bs-8l-0-13 C-4	d-bs-8l-0-13 C-6
+d14m2:
+	d-bs-8l-0-13 C-6
+d14n2:
+	d-bs-8l-0-13 C-6
+d15j1:
+	d-bs-8l-0-13 C-4	d-bs-8l-0-13 C-5	d-bs-8l-0-13 C-7
+d15l2:
+	d-bs-8l-0-13 C-5
+d15t2:
+	d-bs-8l-0-13 C-5
+d18j2:
+	d-bs-8l-0-15 B-5
+d18k2:
+	d-bs-8l-0-15 B-5
+d18l2:
+	d-bs-8l-0-15 B-6
+d18m2:
+	d-bs-8l-0-15 B-6
+d18n2:
+	d-bs-8l-0-15 B-6
+d18p2:
+	d-bs-8l-0-15 B-6
+d18r2:
+	d-bs-8l-0-15 B-6
+d18s2:
+	d-bs-8l-0-15 B-6
+d19j2:
+	d-bs-8l-0-15 B-4
+d19k2:
+	d-bs-8l-0-15 B-4
+d19l2:
+	d-bs-8l-0-15 B-4
+d19m2:
+	d-bs-8l-0-15 B-4
+d19n2:
+	d-bs-8l-0-15 B-5
+d19p2:
+	d-bs-8l-0-15 B-5
+d19r2:
+	d-bs-8l-0-15 B-5
+d19s2:
+	d-bs-8l-0-15 B-5
+d23j2:
+	d-bs-8l-0-16 B-6
+d23k2:
+	d-bs-8l-0-16 B-6
+d23l2:
+	d-bs-8l-0-16 B-6
+d23m2:
+	d-bs-8l-0-16 B-6
+d23n2:
+	d-bs-8l-0-16 B-6
+d23p2:
+	d-bs-8l-0-16 B-6
+d23r2:
+	d-bs-8l-0-16 B-7
+d23s2:
+	d-bs-8l-0-16 B-6
+d24j2:
+	d-bs-8l-0-16 B-4
+d24k2:
+	d-bs-8l-0-16 B-4
+d24l2:
+	d-bs-8l-0-16 B-5
+d24m2:
+	d-bs-8l-0-16 B-5
+d24n2:
+	d-bs-8l-0-16 B-5
+d24p2:
+	d-bs-8l-0-16 B-5
+d24r2:
+	d-bs-8l-0-16 B-5
+d24s2:
+	d-bs-8l-0-16 B-5
+d_set:
+	d-bs-8l-0-3 C-5 
+d_set\:
+	d-bs-8l-0-3 B-3 	d-bs-8l-0-3 C-5 	d-bs-8l-0-4 B-6 
+data00:
+	d-bs-8l-0-10 A-8	d-bs-8l-0-9 B-7 
+data01:
+	d-bs-8l-0-10 A-8	d-bs-8l-0-9 A-4 
+data02:
+	d-bs-8l-0-10 A-8	d-bs-8l-0-9 B-2 
+data03:
+	d-bs-8l-0-10 A-8	d-bs-8l-0-9 A-7 
+data04:
+	d-bs-8l-0-10 A-7	d-bs-8l-0-9 A-5 
+data05:
+	d-bs-8l-0-10 A-7	d-bs-8l-0-9 A-2 
+data06:
+	d-bs-8l-0-10 A-7	d-bs-8l-0-9 B-7 
+data07:
+	d-bs-8l-0-10 A-7	d-bs-8l-0-9 A-5 
+data08:
+	d-bs-8l-0-10 A-7	d-bs-8l-0-9 A-2 
+data09:
+	d-bs-8l-0-10 A-6	d-bs-8l-0-9 A-7 
+data10:
+	d-bs-8l-0-10 A-6	d-bs-8l-0-9 A-5 
+data11:
+	d-bs-8l-0-10 A-6	d-bs-8l-0-9 A-2 
+data_add00:
+	d-bs-8l-0-10 B-8	d-bs-8l-0-9 A-6 
+data_add01:
+	d-bs-8l-0-10 B-8	d-bs-8l-0-9 B-4 
+data_add02:
+	d-bs-8l-0-10 B-8	d-bs-8l-0-9 B-1 
+data_add03:
+	d-bs-8l-0-10 B-8	d-bs-8l-0-9 B-6 
+data_add04:
+	d-bs-8l-0-10 B-7	d-bs-8l-0-9 A-4 
+data_add05:
+	d-bs-8l-0-10 B-7	d-bs-8l-0-9 B-1 
+data_add06:
+	d-bs-8l-0-10 B-7	d-bs-8l-0-9 A-6 
+data_add07:
+	d-bs-8l-0-10 B-7	d-bs-8l-0-9 B-4 
+data_add08:
+	d-bs-8l-0-10 B-7	d-bs-8l-0-9 B-1 
+data_add09:
+	d-bs-8l-0-10 B-6	d-bs-8l-0-9 B-6 
+data_add10:
+	d-bs-8l-0-10 B-6	d-bs-8l-0-9 A-4 
+data_add11:
+	d-bs-8l-0-10 B-6	d-bs-8l-0-9 B-1 
+data_add_en:
+	d-bs-8l-0-4 B-5 	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+data_add_en\:
+	d-bs-8l-0-4 B-6 
+data_enable:
+	d-bs-8l-0-4 B-5 	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+data_enable\:
+	d-bs-8l-0-4 B-6 
+data_in:
+	d-bs-8l-0-10 B-6	d-bs-8l-0-4 B-6 	d-bs-8l-0-4 B-7 
+dca:
+	d-bs-8l-0-3 B-7 	d-bs-8l-0-4 B-8 	d-bs-8l-0-4 C-2 
+dca\:
+	d-bs-8l-0-3 B-8 	d-bs-8l-0-6 D-8 
+defer:
+	d-bs-8l-0-17 D-7	d-bs-8l-0-3 D-5 	d-bs-8l-0-4 C-7 
+	d-bs-8l-0-4 C-8 	d-bs-8l-0-5 C-8 	d-bs-8l-0-6 B-8 
+defer\:
+	d-bs-8l-0-3 C-5 	d-bs-8l-0-3 D-5 
+double_left_rotate:
+	d-bs-8l-0-5 C-2 	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-3 
+	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 
+double_left_rotate\:
+	d-bs-8l-0-5 C-3 
+double_right_rotate:
+	d-bs-8l-0-5 D-3 	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-3 
+	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 
+double_right_rotate\:
+	d-bs-8l-0-5 D-3 
+e_set:
+	d-bs-8l-0-3 C-4 
+e_set\:
+	d-bs-8l-0-17 C-7	d-bs-8l-0-3 B-3 	d-bs-8l-0-3 C-4 
+	d-bs-8l-0-3 C-5 	d-bs-8l-0-4 B-6 
+ea\:
+	d-bs-8l-0-13 C-8
+ema\:
+	d-bs-8l-0-3 B-8 
+enable\:
+	22 C-4          	22 C-8          
+execute:
+	d-bs-8l-0-3 B-6 	d-bs-8l-0-3 D-4 
+execute\:
+	d-bs-8l-0-3 D-5 
+ext_add2\:
+	d-bs-8l-0-10 A-5
+f_set:
+	d-bs-8l-0-2 C-3 	d-bs-8l-0-3 C-5 	d-bs-8l-0-4 A-8 
+	d-bs-8l-0-7 C-6 
+f_set\:
+	d-bs-8l-0-17 C-7	d-bs-8l-0-3 C-5 
+feed_hole:
+	22 C-6          
+fetch:
+	d-bs-8l-0-3 B-6 	d-bs-8l-0-3 D-5 	d-bs-8l-0-5 C-7 
+fetch\:
+	d-bs-8l-0-3 D-6 
+gnd:
+	21 C-7          	23 D-5          	d-bs-8l-0-11 A-6
+	d-bs-8l-0-11 C-7	d-bs-8l-0-11 D-4	d-bs-8l-0-12 B-5
+	d-bs-8l-0-13 A-4	d-bs-8l-0-13 A-6	d-bs-8l-0-13 C-3
+	d-bs-8l-0-13 C-4	d-bs-8l-0-13 C-5	d-bs-8l-0-13 C-6
+	d-bs-8l-0-13 C-7	d-bs-8l-0-14 C-8	d-bs-8l-0-14 D-8
+	d-bs-8l-0-17 A-8	d-bs-8l-0-2 C-8 	d-bs-8l-0-2 D-6 
+	d-bs-8l-0-2 D-7 	d-bs-8l-0-9 B-3 	d-bs-8l-0-9 B-6 
+	d-bs-8l-0-9 B-8 	d-bs-8l-0-9 C-3 	d-bs-8l-0-9 C-6 
+	d-bs-8l-0-9 C-8 	d-bs-8l-0-9 D-3 	d-bs-8l-0-9 D-6 
+	d-bs-8l-0-9 D-8 	d-bs-kp8l-0-1 B-7
+go\:
+	d-bs-8l-0-3 C-5 	d-bs-8l-0-3 D-5 	d-bs-8l-0-6 D-7 
+	d-bs-8l-0-7 B-6 
+hsr_run\:
+	22 C-5          	22 C-8          
+hz880:
+	d-bs-8l-0-12 C-8	d-bs-8l-0-12 D-7
+ib00\:
+	d-bs-8l-0-10 C-8
+ib01\:
+	d-bs-8l-0-10 C-8
+ib02\:
+	d-bs-8l-0-10 C-8
+ib03\:
+	d-bs-8l-0-10 C-8
+ib04\:
+	d-bs-8l-0-10 C-7
+ib05\:
+	d-bs-8l-0-10 C-7
+ib06\:
+	d-bs-8l-0-10 C-7
+ib07\:
+	d-bs-8l-0-10 C-6
+ib08\:
+	d-bs-8l-0-10 C-6
+ib09\:
+	d-bs-8l-0-10 C-5
+ib10\:
+	d-bs-8l-0-10 C-5
+ib11\:
+	d-bs-8l-0-10 C-4
+illegal_ref\:
+	d-bs-8l-0-2 B-6 	d-bs-8l-0-3 B-5 	d-bs-8l-0-6 C-8 
+in_stop2\:
+	d-bs-8l-0-11 B-7
+inhibit:
+	d-bs-8l-0-13 C-4	d-bs-8l-0-13 D-5
+inhibit\:
+	d-bs-8l-0-13 C-6	d-bs-8l-0-13 D-5
+initialize:
+	d-bs-8l-0-10 A-5	d-bs-8l-0-11 C-7	d-bs-8l-0-12 D-6
+	d-bs-8l-0-2 B-3 
+initialize\:
+	21 B-7          	22 C-6          	d-bs-8l-0-10 D-5
+	d-bs-8l-0-2 B-2 	d-bs-8l-0-2 D-2 	d-bs-8l-0-2 D-3 
+	d-bs-8l-0-2 D-4 
+input_bus00:
+	d-bs-8l-0-10 C-8	d-bs-8l-0-9 A-7 
+input_bus01:
+	d-bs-8l-0-10 C-8	d-bs-8l-0-9 B-4 
+input_bus02:
+	d-bs-8l-0-10 C-8	d-bs-8l-0-9 A-2 
+input_bus03:
+	d-bs-8l-0-10 C-8	d-bs-8l-0-9 A-7 
+input_bus04:
+	d-bs-8l-0-10 C-7	d-bs-8l-0-9 B-4 
+input_bus05:
+	d-bs-8l-0-10 C-7	d-bs-8l-0-9 A-2 
+input_bus06:
+	d-bs-8l-0-10 C-7	d-bs-8l-0-9 A-7 
+input_bus07:
+	d-bs-8l-0-10 C-6	d-bs-8l-0-9 B-4 
+input_bus08:
+	d-bs-8l-0-10 C-6	d-bs-8l-0-9 B-2 
+input_bus09:
+	d-bs-8l-0-10 C-5	d-bs-8l-0-9 A-7 
+input_bus10:
+	d-bs-8l-0-10 C-5	d-bs-8l-0-9 B-4 
+input_bus11:
+	d-bs-8l-0-10 C-4	d-bs-8l-0-9 A-2 
+int_delay:
+	d-bs-8l-0-7 B-5 	d-bs-8l-0-7 B-7 
+int_enable:
+	d-bs-8l-0-7 A-5 	d-bs-8l-0-7 C-5 
+int_enable\:
+	d-bs-8l-0-7 B-5 
+int_inhibit\:
+	d-bs-8l-0-7 B-8 
+int_io_bus10\:
+	22 D-5          	d-bs-8l-0-10 C-5
+int_io_bus11\:
+	22 C-5          	d-bs-8l-0-10 C-4
+int_io_bus4\:
+	22 D-6          	d-bs-8l-0-10 C-7
+int_io_bus5\:
+	22 D-6          	d-bs-8l-0-10 C-7
+int_io_bus6\:
+	22 D-5          	d-bs-8l-0-10 C-6
+int_io_bus7\:
+	22 D-5          	d-bs-8l-0-10 C-6
+int_io_bus8\:
+	22 D-5          	d-bs-8l-0-10 C-6
+int_io_bus9\:
+	22 D-5          	d-bs-8l-0-10 C-5
+int_ok:
+	d-bs-8l-0-17 C-7	d-bs-8l-0-3 C-8 	d-bs-8l-0-7 B-7 
+int_ok\:
+	d-bs-8l-0-3 C-5 	d-bs-8l-0-4 C-5 	d-bs-8l-0-7 B-7 
+int_rqst:
+	d-bs-8l-0-10 C-4	d-bs-8l-0-7 C-6 
+int_skip_en\:
+	d-bs-8l-0-4 A-8 	d-bs-8l-0-4 B-8 	d-bs-8l-0-5 C-8 
+int_strobe:
+	d-bs-8l-0-2 C-6 	d-bs-8l-0-2 D-5 	d-bs-8l-0-7 B-6 
+	d-bs-8l-0-7 C-5 
+int_strobe\:
+	d-bs-8l-0-2 D-6 
+int_sync:
+	d-bs-8l-0-7 B-8 	d-bs-8l-0-7 C-5 
+io_enable:
+	d-bs-8l-0-4 A-8 	d-bs-8l-0-4 B-8 	d-bs-8l-0-4 C-3 
+	d-bs-8l-0-6 B-4 	d-bs-8l-0-6 B-6 	d-bs-8l-0-6 D-8 
+	d-bs-8l-0-9 B-3 	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+io_enable\:
+	d-bs-8l-0-4 B-8 
+io_end:
+	d-bs-8l-0-2 B-7 
+io_end\:
+	d-bs-8l-0-2 B-8 	d-bs-8l-0-2 C-2 	d-bs-8l-0-2 D-5 
+io_on:
+	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 C-1 	d-bs-8l-0-2 C-4 
+io_pc_enable\:
+	d-bs-8l-0-4 A-7 	d-bs-8l-0-4 B-7 	d-bs-8l-0-5 C-8 
+io_recycle\:
+	d-bs-8l-0-2 C-3 	d-bs-8l-0-2 D-5 
+io_rot\:
+	d-bs-8l-0-2 D-2 	d-bs-8l-0-2 D-3 	d-bs-8l-0-2 D-4 
+io_skip:
+	d-bs-8l-0-10 C-4	d-bs-8l-0-6 B-4 
+io_start\:
+	d-bs-8l-0-2 B-7 	d-bs-8l-0-2 C-7 	d-bs-8l-0-2 D-5 
+io_strobe:
+	d-bs-8l-0-2 C-3 	d-bs-8l-0-2 D-2 	d-bs-8l-0-6 B-5 
+	d-bs-8l-0-6 D-8 
+iop1:
+	21 B-7          	22 C-6          	23 B-8          
+	d-bs-8l-0-11 C-7	d-bs-8l-0-12 C-6	d-bs-8l-0-2 C-4 
+iop1\:
+	d-bs-8l-0-10 D-6	d-bs-8l-0-2 C-4 	d-bs-8l-0-4 A-8 
+iop2:
+	21 B-7          	22 C-6          	d-bs-8l-0-11 C-7
+	d-bs-8l-0-12 C-6	d-bs-8l-0-2 B-4 	d-bs-kp8l-0-1 B-8
+iop2\:
+	d-bs-8l-0-10 D-6	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 C-4 
+	d-bs-8l-0-4 A-8 
+iop4:
+	21 B-7          	22 C-6          	23 A-8          
+	23 B-8          	d-bs-8l-0-11 C-7	d-bs-8l-0-12 C-6
+	d-bs-8l-0-2 B-4 
+iop4\:
+	d-bs-8l-0-10 D-5	d-bs-8l-0-10 D-6	d-bs-8l-0-2 B-4 
+	d-bs-8l-0-4 A-8 
+iop_a:
+	d-bs-8l-0-2 C-5 	d-bs-8l-0-2 D-4 
+iop_a\:
+	d-bs-8l-0-2 D-3 	d-bs-8l-0-2 D-4 
+iop_b:
+	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 D-3 
+iop_b\:
+	d-bs-8l-0-2 D-3 
+iop_c:
+	d-bs-8l-0-2 B-5 	d-bs-8l-0-2 C-3 	d-bs-8l-0-2 D-2 
+	d-bs-8l-0-2 D-4 
+iop_c\:
+	d-bs-8l-0-2 C-3 	d-bs-8l-0-2 D-3 
+iot:
+	d-bs-8l-0-2 D-6 	d-bs-8l-0-3 C-6 	d-bs-8l-0-7 B-8 
+iot\:
+	d-bs-8l-0-2 D-6 	d-bs-8l-0-3 C-6 
+ir0:
+	d-bs-8l-0-3 B-5 	d-bs-8l-0-3 B-7 	d-bs-8l-0-3 C-7 
+	d-bs-8l-0-3 D-7 
+ir0\:
+	d-bs-8l-0-17 D-7	d-bs-8l-0-3 B-8 	d-bs-8l-0-3 C-8 
+	d-bs-8l-0-3 D-7 
+ir1:
+	d-bs-8l-0-3 B-5 	d-bs-8l-0-3 B-7 	d-bs-8l-0-3 B-8 
+	d-bs-8l-0-3 C-7 	d-bs-8l-0-3 C-8 	d-bs-8l-0-3 D-7 
+ir1\:
+	d-bs-8l-0-3 C-7 	d-bs-8l-0-3 C-8 	d-bs-8l-0-3 D-7 
+ir2:
+	d-bs-8l-0-3 B-7 	d-bs-8l-0-3 B-8 	d-bs-8l-0-3 C-7 
+	d-bs-8l-0-3 C-8 	d-bs-8l-0-3 D-6 
+ir2\:
+	d-bs-8l-0-3 C-7 	d-bs-8l-0-3 C-8 	d-bs-8l-0-3 D-6 
+isz:
+	d-bs-8l-0-3 C-7 	d-bs-8l-0-5 B-7 	d-bs-8l-0-6 B-4 
+isz\:
+	d-bs-8l-0-3 C-8 
+jmp:
+	d-bs-8l-0-3 C-6 	d-bs-8l-0-4 C-6 	d-bs-8l-0-4 C-8 
+	d-bs-8l-0-6 B-8 
+jmp\:
+	d-bs-8l-0-17 B-7	d-bs-8l-0-3 C-4 	d-bs-8l-0-3 C-6 
+	d-bs-8l-0-4 C-7 
+jmp_direct:
+	d-bs-8l-0-6 B-8 
+jmp_direct\:
+	d-bs-8l-0-4 C-6 	d-bs-8l-0-6 B-8 
+jms:
+	d-bs-8l-0-3 C-6 	d-bs-8l-0-4 A-8 	d-bs-8l-0-4 B-8 
+	d-bs-8l-0-4 C-5 	d-bs-8l-0-5 B-8 	d-bs-8l-0-6 C-8 
+jms\:
+	d-bs-8l-0-17 B-7	d-bs-8l-0-3 C-6 
+kcc\:
+	d-bs-8l-0-11 C-5	d-bs-8l-0-11 C-7
+key_cont:
+	d-bs-8l-0-2 B-5 	d-bs-8l-0-2 C-8 
+key_cont\:
+	d-bs-8l-0-2 A-8 	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 B-6 
+	d-bs-8l-0-6 C-8 
+key_dp:
+	d-bs-8l-0-2 B-5 	d-bs-8l-0-4 A-6 	d-bs-8l-0-4 B-7 
+key_dp\:
+	d-bs-8l-0-2 B-6 
+key_ex+dp:
+	d-bs-8l-0-2 B-5 	d-bs-8l-0-4 C-4 	d-bs-8l-0-5 B-8 
+key_ex+dp\:
+	d-bs-8l-0-2 A-8 	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 B-5 
+key_ex\:
+	d-bs-8l-0-2 B-6 
+key_la:
+	d-bs-8l-0-17 B-7	d-bs-8l-0-2 B-6 	d-bs-8l-0-4 A-6 
+key_la+ex+dp:
+	d-bs-8l-0-2 B-3 	d-bs-8l-0-6 B-8 	d-bs-8l-0-6 C-6 
+key_la+ex+dp\:
+	d-bs-8l-0-6 C-5 	d-bs-8l-0-7 C-6 
+key_la\:
+	d-bs-8l-0-17 C-7	d-bs-8l-0-2 A-8 	d-bs-8l-0-2 B-4 
+	d-bs-8l-0-2 B-6 
+key_protect:
+	d-bs-8l-0-3 A-7 
+key_protect\:
+	d-bs-8l-0-3 A-8 
+key_ss+i_ref:
+	d-bs-8l-0-2 B-3 	d-bs-8l-0-2 B-5 
+key_ss\:
+	d-bs-8l-0-2 B-6 
+key_st:
+	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 B-5 	d-bs-8l-0-3 C-5 
+	d-bs-8l-0-4 A-4 
+key_st+ex+dp:
+	d-bs-8l-0-2 B-4 	d-bs-8l-0-4 B-8 
+key_st\:
+	d-bs-8l-0-2 A-8 	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 B-6 
+key_stop:
+	d-bs-8l-0-2 B-5 	d-bs-8l-0-2 C-3 
+key_stop\:
+	d-bs-8l-0-2 B-6 
+l\_enable:
+	d-bs-8l-0-4 A-5 	d-bs-8l-0-8 B-8 
+l\_enable\:
+	d-bs-8l-0-4 A-6 
+l_enable:
+	d-bs-8l-0-4 B-3 	d-bs-8l-0-8 A-8 
+left_shift:
+	d-bs-8l-0-5 B-2 	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-3 
+	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 
+left_shift\:
+	d-bs-8l-0-5 B-3 	d-bs-8l-0-5 C-3 
+link:
+	d-bs-8l-0-6 A-7 	d-bs-8l-0-8 B-8 	d-bs-8l-0-8 D-8 
+link\:
+	d-bs-8l-0-8 A-8 	d-bs-8l-0-8 D-7 
+lock:
+	d-bs-8l-0-13 C-8	d-bs-8l-0-13 D-3
+lock\:
+	d-bs-8l-0-13 C-7	d-bs-8l-0-13 C-8	d-bs-8l-0-13 D-3
+ma00:
+	d-bs-8l-0-15 D-8	d-bs-8l-0-3 B-7 	d-bs-8l-0-8 B-7 
+ma00\:
+	d-bs-8l-0-15 C-8	d-bs-8l-0-17 D-8	d-bs-8l-0-5 D-8 
+	d-bs-8l-0-8 B-7 
+ma01:
+	d-bs-8l-0-15 C-8	d-bs-8l-0-15 D-8	d-bs-8l-0-3 B-7 
+	d-bs-8l-0-8 B-6 
+ma01\:
+	d-bs-8l-0-17 D-8	d-bs-8l-0-5 D-8 	d-bs-8l-0-8 B-6 
+ma02:
+	d-bs-8l-0-15 B-8	d-bs-8l-0-15 C-8	d-bs-8l-0-3 B-7 
+	d-bs-8l-0-8 B-6 
+ma02\:
+	d-bs-8l-0-17 D-8	d-bs-8l-0-5 D-8 	d-bs-8l-0-8 B-6 
+ma03:
+	d-bs-8l-0-15 A-5	d-bs-8l-0-3 B-7 	d-bs-8l-0-8 B-5 
+ma03\:
+	d-bs-8l-0-15 A-6	d-bs-8l-0-17 D-8	d-bs-8l-0-5 D-8 
+	d-bs-8l-0-8 B-5 
+ma04:
+	d-bs-8l-0-15 A-5	d-bs-8l-0-15 A-6	d-bs-8l-0-3 A-7 
+	d-bs-8l-0-8 B-5 
+ma04\:
+	d-bs-8l-0-14 D-5	d-bs-8l-0-17 D-8	d-bs-8l-0-5 C-8 
+	d-bs-8l-0-8 B-5 
+ma05:
+	d-bs-8l-0-15 A-4	d-bs-8l-0-15 A-6	d-bs-8l-0-8 B-4 
+ma05\:
+	d-bs-8l-0-14 D-5	d-bs-8l-0-17 C-8	d-bs-8l-0-5 C-8 
+	d-bs-8l-0-8 B-4 
+ma06:
+	d-bs-8l-0-16 D-8	d-bs-8l-0-8 B-4 
+ma06\:
+	d-bs-8l-0-14 D-5	d-bs-8l-0-16 C-8	d-bs-8l-0-17 C-8
+	d-bs-8l-0-5 C-8 	d-bs-8l-0-8 B-4 
+ma07:
+	d-bs-8l-0-16 C-8	d-bs-8l-0-16 D-8	d-bs-8l-0-8 B-3 
+ma07\:
+	d-bs-8l-0-14 C-5	d-bs-8l-0-17 C-8	d-bs-8l-0-5 C-8 
+	d-bs-8l-0-8 B-3 
+ma08:
+	d-bs-8l-0-16 C-8	d-bs-8l-0-5 C-8 	d-bs-8l-0-8 B-3 
+ma08\:
+	d-bs-8l-0-17 C-8	d-bs-8l-0-8 B-3 
+ma09:
+	d-bs-8l-0-16 A-5	d-bs-8l-0-8 B-2 
+ma09\:
+	d-bs-8l-0-16 A-6	d-bs-8l-0-17 C-8	d-bs-8l-0-8 B-2 
+ma10:
+	d-bs-8l-0-16 A-5	d-bs-8l-0-16 A-6	d-bs-8l-0-8 B-2 
+ma10\:
+	d-bs-8l-0-17 C-8	d-bs-8l-0-8 B-2 
+ma11:
+	d-bs-8l-0-16 A-5	d-bs-8l-0-16 A-6	d-bs-8l-0-8 B-1 
+ma11\:
+	d-bs-8l-0-17 C-8	d-bs-8l-0-8 B-1 
+ma_enable(0-4):
+	d-bs-8l-0-4 D-5 	d-bs-8l-0-9 A-4 	d-bs-8l-0-9 A-7 
+	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+ma_enable(5-11):
+	d-bs-8l-0-4 D-4 	d-bs-8l-0-9 A-2 	d-bs-8l-0-9 A-4 
+	d-bs-8l-0-9 A-7 	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+ma_enable(5-11)\:
+	d-bs-8l-0-4 C-4 	d-bs-8l-0-4 C-5 	d-bs-8l-0-4 D-5 
+ma_load:
+	d-bs-8l-0-6 C-7 	d-bs-8l-0-8 B-2 	d-bs-8l-0-8 B-4 
+	d-bs-8l-0-8 B-5 	d-bs-8l-0-8 B-6 	d-bs-8l-0-8 B-7 
+manual_preset\:
+	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 D-6 	d-bs-8l-0-2 D-7 
+	d-bs-8l-0-2 D-8 	d-bs-8l-0-3 B-4 	d-bs-8l-0-3 B-5 
+	d-bs-8l-0-3 D-3 	d-bs-8l-0-3 D-4 	d-bs-8l-0-3 D-5 
+	d-bs-8l-0-3 D-6 	d-bs-8l-0-7 C-5 	d-bs-8l-0-7 D-7 
+mb00:
+	23 D-6          	d-bs-8l-0-10 D-5	d-bs-8l-0-8 C-7 
+mb00\:
+	23 D-5          	d-bs-8l-0-14 D-7	d-bs-8l-0-8 C-7 
+mb01:
+	23 D-6          	d-bs-8l-0-10 C-4	d-bs-8l-0-8 C-6 
+mb01\:
+	23 D-5          	d-bs-8l-0-14 D-7	d-bs-8l-0-8 C-6 
+mb02:
+	23 D-6          	d-bs-8l-0-10 C-4	d-bs-8l-0-8 C-6 
+mb02\:
+	23 D-5          	d-bs-8l-0-14 D-7	d-bs-8l-0-8 C-6 
+mb03:
+	23 D-6          	d-bs-8l-0-10 C-4	d-bs-8l-0-3 B-7 
+	d-bs-8l-0-3 C-5 	d-bs-8l-0-8 C-5 
+mb03\:
+	21 B-7          	22 C-6          	23 B-8          
+	23 D-5          	d-bs-8l-0-10 C-4	d-bs-8l-0-11 C-7
+	d-bs-8l-0-12 C-6	d-bs-8l-0-14 C-7	d-bs-8l-0-3 B-7 
+	d-bs-8l-0-3 C-4 	d-bs-8l-0-4 C-6 	d-bs-8l-0-7 B-8 
+	d-bs-8l-0-8 C-5 	d-bs-kp8l-0-1 C-8
+mb04:
+	23 C-6          	d-bs-8l-0-10 C-3	d-bs-8l-0-4 B-3 
+	d-bs-8l-0-4 C-5 	d-bs-8l-0-8 C-5 
+mb04\:
+	21 B-7          	22 C-6          	23 B-8          
+	23 C-6          	d-bs-8l-0-10 D-4	d-bs-8l-0-11 C-7
+	d-bs-8l-0-12 C-6	d-bs-8l-0-4 B-3 	d-bs-8l-0-4 C-3 
+	d-bs-8l-0-7 B-8 	d-bs-8l-0-8 C-5 	d-bs-kp8l-0-1 C-8
+mb05:
+	23 B-8          	23 C-6          	d-bs-8l-0-10 C-3
+	d-bs-8l-0-4 B-4 	d-bs-8l-0-6 B-7 	d-bs-8l-0-8 C-4 
+	d-bs-kp8l-0-1 C-8
+mb05\:
+	21 B-7          	22 C-6          	23 C-5          
+	d-bs-8l-0-10 C-3	d-bs-8l-0-11 C-7	d-bs-8l-0-12 C-6
+	d-bs-8l-0-4 B-4 	d-bs-8l-0-7 B-8 	d-bs-8l-0-8 C-4 
+mb06:
+	23 C-6          	d-bs-8l-0-10 C-3	d-bs-8l-0-12 C-6
+	d-bs-8l-0-4 A-4 	d-bs-8l-0-4 B-3 	d-bs-8l-0-6 B-7 
+	d-bs-8l-0-8 C-4 
+mb06\:
+	21 B-7          	22 C-6          	23 B-8          
+	23 C-5          	d-bs-8l-0-10 C-3	d-bs-8l-0-11 C-7
+	d-bs-8l-0-4 B-3 	d-bs-8l-0-7 A-8 	d-bs-8l-0-8 C-4 
+	d-bs-kp8l-0-1 B-8
+mb07:
+	21 B-7          	23 C-6          	d-bs-8l-0-10 C-2
+	d-bs-8l-0-11 C-7	d-bs-8l-0-4 A-6 	d-bs-8l-0-4 B-4 
+	d-bs-8l-0-6 A-7 	d-bs-8l-0-8 C-3 
+mb07\:
+	22 C-6          	23 B-8          	23 C-5          
+	d-bs-8l-0-10 D-2	d-bs-8l-0-12 C-6	d-bs-8l-0-4 B-4 
+	d-bs-8l-0-7 A-8 	d-bs-8l-0-8 C-3 	d-bs-kp8l-0-1 B-8
+mb08:
+	22 C-6          	23 C-6          	d-bs-8l-0-10 C-2
+	d-bs-8l-0-11 C-7	d-bs-8l-0-5 C-4 	d-bs-8l-0-5 D-4 
+	d-bs-8l-0-6 A-4 	d-bs-8l-0-8 C-3 
+mb08\:
+	21 B-7          	23 B-8          	23 C-5          
+	d-bs-8l-0-10 C-2	d-bs-8l-0-12 C-6	d-bs-8l-0-14 D-3
+	d-bs-8l-0-5 B-4 	d-bs-8l-0-6 A-4 	d-bs-8l-0-7 A-8 
+	d-bs-8l-0-8 C-3 	d-bs-kp8l-0-1 B-8
+mb09:
+	23 C-6          	d-bs-8l-0-10 C-2	d-bs-8l-0-2 B-5 
+	d-bs-8l-0-4 A-6 	d-bs-8l-0-5 C-4 	d-bs-8l-0-8 C-2 
+mb09\:
+	23 C-5          	d-bs-8l-0-14 D-3	d-bs-8l-0-5 B-4 
+	d-bs-8l-0-8 C-2 
+mb10:
+	23 C-6          	d-bs-8l-0-10 C-2	d-bs-8l-0-2 B-4 
+	d-bs-8l-0-2 C-3 	d-bs-8l-0-5 C-4 	d-bs-8l-0-5 D-4 
+	d-bs-8l-0-8 C-2 
+mb10\:
+	23 C-5          	d-bs-8l-0-14 D-3	d-bs-8l-0-5 B-4 
+	d-bs-8l-0-5 C-4 	d-bs-8l-0-7 A-7 	d-bs-8l-0-8 C-2 
+mb11:
+	23 C-6          	d-bs-8l-0-10 D-1	d-bs-8l-0-2 C-4 
+	d-bs-8l-0-5 C-7 	d-bs-8l-0-8 C-1 
+mb11\:
+	23 C-6          	d-bs-8l-0-14 C-3	d-bs-8l-0-2 C-3 
+	d-bs-8l-0-3 B-7 	d-bs-8l-0-4 A-6 	d-bs-8l-0-7 A-7 
+	d-bs-8l-0-7 B-5 	d-bs-8l-0-8 C-1 
+mb_load:
+	d-bs-8l-0-6 C-7 	d-bs-8l-0-8 C-3 	d-bs-8l-0-8 C-4 
+	d-bs-8l-0-8 C-5 	d-bs-8l-0-8 C-6 	d-bs-8l-0-8 C-7 
+mb_parity_odd:
+	23 D-5          	d-bs-8l-0-14 D-8
+mem00:
+	23 D-3          	23 D-8          	d-bs-8l-0-14 C-7
+	d-bs-8l-0-3 C-8 	d-bs-8l-0-9 A-6 
+mem00\:
+	23 D-2          	23 D-8          
+mem01:
+	23 C-3          	23 D-8          	d-bs-8l-0-14 C-6
+	d-bs-8l-0-3 D-7 	d-bs-8l-0-9 A-4 
+mem01\:
+	23 C-2          	23 D-8          
+mem02:
+	23 C-3          	23 D-8          	d-bs-8l-0-14 C-6
+	d-bs-8l-0-3 C-6 	d-bs-8l-0-9 A-1 
+mem02\:
+	23 C-2          	23 D-8          
+mem03:
+	23 C-3          	23 D-8          	d-bs-8l-0-14 C-5
+	d-bs-8l-0-9 A-6 
+mem03\:
+	23 C-2          	23 D-8          
+mem04:
+	23 C-3          	23 C-8          	d-bs-8l-0-14 C-5
+	d-bs-8l-0-9 B-4 
+mem04\:
+	23 C-2          	23 C-8          
+mem05:
+	23 C-3          	23 C-8          	d-bs-8l-0-14 C-4
+	d-bs-8l-0-9 A-1 
+mem05\:
+	23 C-2          	23 C-8          
+mem06:
+	23 C-3          	23 C-8          	d-bs-8l-0-14 C-4
+	d-bs-8l-0-9 A-6 
+mem06\:
+	23 C-2          	23 C-8          
+mem07:
+	23 C-3          	23 C-8          	d-bs-8l-0-14 C-4
+	d-bs-8l-0-9 A-4 
+mem07\:
+	23 C-2          	23 C-8          
+mem08:
+	23 B-3          	23 C-8          	d-bs-8l-0-14 C-3
+	d-bs-8l-0-9 B-2 
+mem08\:
+	23 B-2          	23 C-8          
+mem09:
+	23 B-3          	23 C-8          	d-bs-8l-0-14 C-3
+	d-bs-8l-0-9 A-6 
+mem09\:
+	23 B-2          	23 C-8          
+mem10:
+	23 B-3          	23 C-8          	d-bs-8l-0-14 C-2
+	d-bs-8l-0-9 B-4 
+mem10\:
+	23 B-2          	23 C-8          
+mem11:
+	23 B-3          	23 C-8          	d-bs-8l-0-14 C-2
+	d-bs-8l-0-9 A-1 
+mem11\:
+	23 B-2          	23 C-8          
+mem_alt1\:
+	d-bs-8l-0-3 A-7 	d-bs-8l-0-4 C-8 
+mem_alt2\:
+	d-bs-8l-0-3 A-7 	d-bs-8l-0-5 B-6 
+mem_begin\:
+	d-bs-8l-0-13 C-3	d-bs-8l-0-13 C-5	d-bs-8l-0-13 C-6
+	d-bs-8l-0-14 A-2	d-bs-8l-0-14 A-3	d-bs-8l-0-14 A-4
+	d-bs-8l-0-14 A-5	d-bs-8l-0-14 A-6	d-bs-8l-0-14 A-7
+	d-bs-8l-0-14 A-8
+mem_done:
+	d-bs-8l-0-13 D-2
+mem_done\:
+	d-bs-8l-0-13 D-2	d-bs-8l-0-2 B-8 	d-bs-8l-0-2 C-8 
+	d-bs-8l-0-7 C-5 
+mem_done_not:
+	d-bs-8l-0-13 D-2
+mem_enable(0-4):
+	d-bs-8l-0-4 C-7 	d-bs-8l-0-4 D-7 	d-bs-8l-0-5 C-7 
+	d-bs-8l-0-9 A-4 	d-bs-8l-0-9 A-6 	d-bs-8l-0-9 B-3 
+	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+mem_enable(0-4)\:
+	d-bs-8l-0-4 C-5 	d-bs-8l-0-4 C-6 	d-bs-8l-0-4 D-6 
+mem_enable(5-11):
+	d-bs-8l-0-4 C-5 	d-bs-8l-0-4 D-5 	d-bs-8l-0-4 D-6 
+	d-bs-8l-0-9 A-1 	d-bs-8l-0-9 A-4 	d-bs-8l-0-9 A-6 
+	d-bs-8l-0-9 B-3 	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+mem_idle:
+	d-bs-8l-0-2 C-7 	d-bs-8l-0-2 C-8 
+mem_p:
+	23 D-3          	23 D-7          	d-bs-8l-0-14 C-8
+mem_p\:
+	23 D-3          	23 D-7          
+mem_parity_even:
+	23 B-6          	23 B-7          	23 D-6          
+mem_ret:
+	d-bs-8l-0-13 B-6	d-bs-8l-0-13 C-2
+mem_start:
+	d-bs-8l-0-13 C-8	d-bs-8l-0-2 C-7 
+mem_supply+:
+	d-bs-8l-0-13 A-4	d-bs-8l-0-13 A-5	d-bs-8l-0-13 B-5
+	d-bs-8l-0-13 B-7	d-bs-8l-0-14 C-2	d-bs-8l-0-14 C-4
+	d-bs-8l-0-14 C-6	d-bs-8l-0-14 D-2	d-bs-8l-0-14 D-4
+	d-bs-8l-0-14 D-6	d-bs-8l-0-14 D-8
+mem_supply-:
+	d-bs-8l-0-11 C-4	d-bs-8l-0-13 A-4	d-bs-8l-0-13 A-5
+	d-bs-8l-0-13 B-4	d-bs-8l-0-13 B-5	d-bs-8l-0-13 B-7
+	d-bs-8l-0-13 B-8	d-bs-8l-0-14 C-3	d-bs-8l-0-14 C-5
+	d-bs-8l-0-14 C-7	d-bs-8l-0-14 C-8
+memory_increment:
+	d-bs-8l-0-10 B-5	d-bs-8l-0-5 B-8 	d-bs-8l-0-7 C-7 
+mftp0:
+	d-bs-8l-0-17 C-7	d-bs-8l-0-2 A-6 	d-bs-8l-0-2 B-4 
+	d-bs-8l-0-2 B-5 
+mftp1:
+	d-bs-8l-0-17 B-7	d-bs-8l-0-2 A-5 	d-bs-8l-0-6 C-8 
+mftp2:
+	d-bs-8l-0-2 A-5 	d-bs-8l-0-2 C-8 	d-bs-8l-0-3 C-5 
+	d-bs-8l-0-6 B-8 
+mfts0:
+	d-bs-8l-0-2 A-6 	d-bs-8l-0-2 B-3 	d-bs-8l-0-2 B-8 
+mfts1:
+	d-bs-8l-0-2 A-6 	d-bs-8l-0-4 B-8 
+mfts1\:
+	d-bs-8l-0-2 A-6 	d-bs-8l-0-2 B-8 	d-bs-8l-0-4 A-7 
+mfts2:
+	d-bs-8l-0-2 A-5 	d-bs-8l-0-4 B-4 	d-bs-8l-0-4 C-4 
+	d-bs-8l-0-5 B-8 
+mfts2\:
+	d-bs-8l-0-2 A-5 	d-bs-8l-0-2 B-8 	d-bs-8l-0-4 A-7 
+mfts3:
+	d-bs-8l-0-2 B-7 	d-bs-8l-0-4 A-6 	d-bs-8l-0-4 B-7 
+mfts3\:
+	d-bs-8l-0-2 B-8 
+mma00:
+	d-bs-8l-0-17 D-8
+mma01:
+	d-bs-8l-0-17 D-8
+mma02:
+	d-bs-8l-0-17 D-8
+mma03:
+	d-bs-8l-0-17 D-8
+mma04:
+	d-bs-8l-0-17 D-8
+mma05:
+	d-bs-8l-0-17 C-8
+mma06:
+	d-bs-8l-0-17 C-8
+mma07:
+	d-bs-8l-0-17 C-8
+mma08:
+	d-bs-8l-0-17 C-8
+mma09:
+	d-bs-8l-0-17 C-8
+mma10:
+	d-bs-8l-0-17 C-8
+mma11:
+	d-bs-8l-0-17 C-8
+mp_int:
+	23 B-5          	23 B-6          
+mp_int\:
+	23 B-5          	23 B-8          	d-bs-8l-0-12 B-8
+mp_skip\:
+	23 B-8          	d-bs-8l-0-12 B-8
+neg_clamp:
+	d-bs-8l-0-13 A-2	d-bs-8l-0-13 A-3	d-bs-8l-0-13 A-5
+	d-bs-8l-0-13 B-5	d-bs-8l-0-15 A-4	d-bs-8l-0-15 A-5
+	d-bs-8l-0-15 B-8	d-bs-8l-0-15 C-8	d-bs-8l-0-16 A-4
+	d-bs-8l-0-16 A-6	d-bs-8l-0-16 B-8	d-bs-8l-0-16 C-8
+no_shift:
+	d-bs-8l-0-5 B-2 	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-3 
+	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 
+op1:
+	d-bs-8l-0-3 B-6 	d-bs-8l-0-4 A-4 	d-bs-8l-0-4 A-6 
+	d-bs-8l-0-4 B-3 	d-bs-8l-0-4 C-3 	d-bs-8l-0-5 B-3 
+	d-bs-8l-0-5 B-4 	d-bs-8l-0-5 C-4 	d-bs-8l-0-5 C-8 
+	d-bs-8l-0-5 D-4 
+op1\:
+	d-bs-8l-0-3 B-6 	d-bs-8l-0-6 B-5 
+op2:
+	d-bs-8l-0-2 C-3 	d-bs-8l-0-3 B-6 	d-bs-8l-0-4 A-6 
+	d-bs-8l-0-4 C-3 	d-bs-8l-0-6 A-4 	d-bs-8l-0-6 B-5 
+op2\:
+	d-bs-8l-0-3 B-6 	d-bs-8l-0-6 B-6 
+op_strobe\:
+	d-bs-8l-0-6 B-4 	d-bs-8l-0-6 D-7 
+out_stop2\:
+	d-bs-8l-0-12 B-6	d-bs-8l-0-12 C-5
+panel_lock:
+	d-bs-8l-0-13 A-6
+pause:
+	d-bs-8l-0-2 C-6 	d-bs-8l-0-4 B-8 
+pause\:
+	d-bs-8l-0-2 C-6 	d-bs-8l-0-2 C-8 
+pb0:
+	21 C-6          
+pb1:
+	21 C-6          
+pb2:
+	21 C-5          
+pb3:
+	21 C-5          
+pb4:
+	21 C-5          
+pb5:
+	21 C-4          
+pb6:
+	21 C-4          
+pb7:
+	21 C-4          
+pc00:
+	d-bs-8l-0-8 C-7 
+pc01:
+	d-bs-8l-0-8 C-6 
+pc02:
+	d-bs-8l-0-8 C-6 
+pc03:
+	d-bs-8l-0-8 C-5 
+pc04:
+	d-bs-8l-0-8 C-5 
+pc05:
+	d-bs-8l-0-8 C-4 
+pc06:
+	d-bs-8l-0-8 C-4 
+pc07:
+	d-bs-8l-0-8 C-3 
+pc08:
+	d-bs-8l-0-8 C-3 
+pc09:
+	d-bs-8l-0-8 C-2 
+pc10:
+	d-bs-8l-0-8 C-2 
+pc11:
+	d-bs-8l-0-8 C-1 
+pc_enable:
+	d-bs-8l-0-4 B-7 	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+pc_enable\:
+	d-bs-8l-0-4 A-8 	d-bs-8l-0-4 C-5 	d-bs-8l-0-5 C-8 
+pc_load:
+	d-bs-8l-0-6 A-4 	d-bs-8l-0-6 B-6 	d-bs-8l-0-8 B-2 
+	d-bs-8l-0-8 B-4 	d-bs-8l-0-8 B-5 	d-bs-8l-0-8 B-6 
+	d-bs-8l-0-8 B-7 
+pc_load\:
+	d-bs-8l-0-6 A-3 	d-bs-8l-0-6 A-4 	d-bs-8l-0-6 B-3 
+power_clear\:
+	d-bs-8l-0-13 B-8	d-bs-8l-0-13 C-3	d-bs-8l-0-13 C-4
+	d-bs-8l-0-13 C-5	d-bs-8l-0-13 C-6	d-bs-8l-0-13 C-7
+	d-bs-8l-0-13 C-8	d-bs-8l-0-2 A-3 	d-bs-8l-0-2 A-7 
+	d-bs-8l-0-2 B-3 	d-bs-8l-0-2 C-2 
+power_ok\:
+	d-bs-8l-0-13 B-8	d-bs-8l-0-2 B-3 
+protect\:
+	d-bs-8l-0-3 B-5 	d-bs-8l-0-4 A-6 	d-bs-8l-0-4 A-8 
+	d-bs-8l-0-4 B-6 	d-bs-8l-0-4 C-3 	d-bs-8l-0-4 C-7 
+	d-bs-8l-0-4 D-7 	d-bs-8l-0-5 B-5 
+pwr:
+	22 C-4          
+pwr_low\:
+	d-bs-8l-0-10 C-4	d-bs-kp8l-0-1 C-7
+pwr_skp\:
+	d-bs-8l-0-10 C-4	d-bs-kp8l-0-1 B-6
+rd_hole1:
+	22 B-5          
+rd_hole2:
+	22 B-5          
+rd_hole3:
+	22 B-5          
+rd_hole4:
+	22 B-5          
+rd_hole5:
+	22 B-5          
+rd_hole6:
+	22 B-5          
+rd_hole7:
+	22 B-6          
+rd_hole8:
+	22 B-6          
+rdr_done\:
+	21 B-4          
+rdr_feed_sw:
+	22 C-6          	22 C-7          
+rdr_int\:
+	21 C-7          	22 C-4          	d-bs-8l-0-10 C-3
+rdr_skp\:
+	21 C-7          	22 C-5          	d-bs-8l-0-10 C-4
+read:
+	d-bs-8l-0-13 A-2	d-bs-8l-0-13 A-4	d-bs-8l-0-13 B-2
+	d-bs-8l-0-13 B-4	d-bs-8l-0-13 C-4	d-bs-8l-0-13 D-6
+reader_run:
+	d-bs-8l-0-11 C-4	d-bs-8l-0-11 C-6
+restart\:
+	d-bs-8l-0-17 C-7	d-bs-8l-0-2 A-7 	d-bs-8l-0-2 B-5 
+	d-bs-8l-0-2 B-6 	d-bs-8l-0-4 B-8 	d-bs-kp8l-0-1 C-6
+right_shift:
+	d-bs-8l-0-5 C-2 	d-bs-8l-0-8 C-8 	d-bs-8l-0-9 C-3 
+	d-bs-8l-0-9 C-6 	d-bs-8l-0-9 C-8 
+right_shift\:
+	d-bs-8l-0-5 C-3 
+run:
+	d-bs-8l-0-2 C-1 	d-bs-8l-0-2 C-8 
+run\:
+	d-bs-8l-0-10 C-3	d-bs-8l-0-2 A-7 	d-bs-8l-0-2 C-1 
+rxd:
+	d-bs-8l-0-11 B-7	d-bs-8l-0-11 C-4
+set_io_on:
+	d-bs-8l-0-2 C-4 
+set_io_on\:
+	d-bs-8l-0-2 C-2 	d-bs-8l-0-2 C-4 	d-bs-8l-0-6 B-7 
+shift:
+	22 B-7          	22 C-6          
+shift\:
+	22 B-6          	22 B-7          
+shut_down\:
+	d-bs-8l-0-13 A-8	d-bs-kp8l-0-1 C-8
+skip:
+	d-bs-8l-0-5 C-8 	d-bs-8l-0-6 B-3 
+skip\:
+	d-bs-8l-0-6 B-3 	d-bs-8l-0-6 B-6 
+slice:
+	d-bs-8l-0-13 A-7	d-bs-8l-0-14 A-2	d-bs-8l-0-14 A-3
+	d-bs-8l-0-14 A-4	d-bs-8l-0-14 A-5	d-bs-8l-0-14 A-6
+	d-bs-8l-0-14 A-7	d-bs-8l-0-14 A-8
+special_cycle\:
+	d-bs-8l-0-3 B-3 	d-bs-8l-0-3 C-6 
+spike_detect:
+	d-bs-8l-0-11 B-7
+sr00:
+	d-bs-8l-0-9 B-7 
+sr01:
+	d-bs-8l-0-9 A-5 
+sr02:
+	d-bs-8l-0-9 B-3 
+sr03:
+	d-bs-8l-0-9 B-8 
+sr04:
+	d-bs-8l-0-9 A-5 
+sr05:
+	d-bs-8l-0-9 A-3 
+sr06:
+	d-bs-8l-0-9 B-7 
+sr07:
+	d-bs-8l-0-9 A-5 
+sr08:
+	d-bs-8l-0-9 A-3 
+sr09:
+	d-bs-8l-0-9 B-8 
+sr10:
+	d-bs-8l-0-9 A-5 
+sr11:
+	d-bs-8l-0-9 A-3 
+sr_enable:
+	d-bs-8l-0-4 A-5 	d-bs-8l-0-9 B-6 	d-bs-8l-0-9 B-8 
+stop_complete:
+	22 B-6          	22 C-7          
+stop_ok:
+	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-8	d-bs-8l-0-2 B-3 
+	d-bs-kp8l-0-1 C-8
+strobe\:
+	d-bs-8l-0-13 C-3	d-bs-8l-0-2 C-7 	d-bs-8l-0-2 C-8 
+	d-bs-8l-0-2 D-7 	d-bs-8l-0-2 D-8 	d-bs-8l-0-7 D-7 
+strobe_field0:
+	d-bs-8l-0-13 C-2	d-bs-8l-0-14 A-2	d-bs-8l-0-14 A-3
+	d-bs-8l-0-14 A-4	d-bs-8l-0-14 A-5	d-bs-8l-0-14 A-6
+	d-bs-8l-0-14 A-7	d-bs-8l-0-14 A-8
+sync:
+	d-bs-8l-0-3 B-3 	d-bs-8l-0-3 B-4 
+tad:
+	d-bs-8l-0-3 C-7 	d-bs-8l-0-4 C-2 
+tad\:
+	d-bs-8l-0-3 C-8 	d-bs-8l-0-6 D-8 
+tp1:
+	d-bs-8l-0-2 C-6 	d-bs-8l-0-3 A-4 	d-bs-8l-0-3 B-4 
+	d-bs-8l-0-6 C-8 	d-bs-8l-0-7 B-7 
+tp2:
+	d-bs-8l-0-2 C-5 	d-bs-8l-0-2 D-7 	d-bs-8l-0-3 A-5 
+	d-bs-8l-0-3 C-8 	d-bs-8l-0-6 B-5 	d-bs-8l-0-7 C-5 
+tp2\:
+	d-bs-8l-0-2 C-5 	d-bs-8l-0-2 C-7 	d-bs-8l-0-6 C-8 
+tp3:
+	23 B-6          	d-bs-8l-0-2 C-2 	d-bs-8l-0-2 C-5 
+	d-bs-8l-0-2 D-6 	d-bs-8l-0-2 D-7 	d-bs-8l-0-6 B-5 
+	d-bs-8l-0-6 B-8 	d-bs-8l-0-6 C-8 	d-bs-8l-0-6 D-8 
+tp4:
+	d-bs-8l-0-2 C-7 	d-bs-8l-0-2 D-6 	d-bs-8l-0-2 D-8 
+	d-bs-8l-0-3 C-3 	d-bs-8l-0-3 C-4 	d-bs-8l-0-3 C-5 
+	d-bs-8l-0-3 C-6 	d-bs-8l-0-3 D-3 	d-bs-8l-0-3 D-8 
+	d-bs-8l-0-6 C-8 	d-bs-8l-0-7 D-5 
+tp4\:
+	d-bs-8l-0-6 C-8 
+ts1:
+	d-bs-8l-0-2 D-8 	d-bs-8l-0-4 C-5 	d-bs-8l-0-5 C-8 
+ts1\:
+	d-bs-8l-0-10 D-5	d-bs-8l-0-2 D-8 
+ts2:
+	d-bs-8l-0-2 D-7 	d-bs-8l-0-3 B-6 	d-bs-8l-0-4 A-8 
+	d-bs-8l-0-4 B-6 	d-bs-8l-0-4 C-3 	d-bs-8l-0-4 C-8 
+	d-bs-8l-0-5 B-7 	d-bs-8l-0-6 B-4 
+ts3:
+	d-bs-8l-0-2 D-7 	d-bs-8l-0-3 B-7 	d-bs-8l-0-4 C-2 
+	d-bs-8l-0-4 C-5 	d-bs-8l-0-4 C-6 	d-bs-8l-0-4 C-8 
+	d-bs-8l-0-5 B-4 	d-bs-8l-0-5 C-8 
+ts3\:
+	d-bs-8l-0-10 D-5	d-bs-8l-0-2 D-7 
+ts4:
+	d-bs-8l-0-17 C-7	d-bs-8l-0-2 D-6 	d-bs-8l-0-4 A-8 
+	d-bs-8l-0-4 B-6 	d-bs-8l-0-4 C-4 	d-bs-8l-0-4 C-6 
+	d-bs-8l-0-4 C-7 
+ts4\:
+	d-bs-8l-0-2 D-6 	d-bs-8l-0-4 B-8 
+tt0\:
+	d-bs-8l-0-10 C-7	d-bs-8l-0-11 B-5
+tt1\:
+	d-bs-8l-0-10 C-7	d-bs-8l-0-11 B-5
+tt2\:
+	d-bs-8l-0-10 C-7	d-bs-8l-0-11 B-5
+tt3\:
+	d-bs-8l-0-10 C-6	d-bs-8l-0-11 B-5
+tt4\:
+	d-bs-8l-0-10 C-6	d-bs-8l-0-11 B-5
+tt5\:
+	d-bs-8l-0-10 C-5	d-bs-8l-0-11 B-5
+tt6\:
+	d-bs-8l-0-10 C-5	d-bs-8l-0-11 B-5
+tt7\:
+	d-bs-8l-0-10 C-4	d-bs-8l-0-11 B-5
+tt_ac_clear\:
+	d-bs-8l-0-10 C-3	d-bs-8l-0-11 C-6
+tt_int:
+	d-bs-8l-0-12 B-7
+tt_int\:
+	d-bs-8l-0-10 C-4	d-bs-8l-0-12 B-7
+tt_skip:
+	d-bs-8l-0-12 B-7
+tt_skip\:
+	d-bs-8l-0-10 C-4	d-bs-8l-0-12 B-7
+tti_clock:
+	d-bs-8l-0-11 B-7	d-bs-8l-0-12 C-7
+tti_flag\:
+	d-bs-8l-0-11 C-6	d-bs-8l-0-12 B-8
+tti_skip\:
+	d-bs-8l-0-11 C-6	d-bs-8l-0-12 B-8
+tto_clock\:
+	d-bs-8l-0-12 C-7	d-bs-8l-0-12 D-6
+tto_enable:
+	d-bs-8l-0-12 B-6	d-bs-8l-0-12 C-5
+tto_enable\:
+	d-bs-8l-0-12 C-4	d-bs-8l-0-12 D-6
+tto_flag\:
+	d-bs-8l-0-12 B-8	d-bs-8l-0-12 C-5
+tto_skip\:
+	d-bs-8l-0-12 B-8	d-bs-8l-0-12 C-5
+tty8bits:
+	d-bs-8l-0-11 B-7
+txd:
+	d-bs-8l-0-11 C-4	d-bs-8l-0-12 C-5
+v24l2:
+	d-bs-8l-0-15 C-7
+vcc:
+	d-bs-8l-0-11 D-4	d-bs-8l-0-11 D-6	d-bs-8l-0-12 D-5
+	d-bs-8l-0-13 B-6	d-bs-8l-0-17 B-8
+wc_overflow:
+	d-bs-8l-0-10 A-5
+wc_overflow\:
+	d-bs-8l-0-10 A-5	d-bs-8l-0-7 C-5 
+wc_set\:
+	d-bs-8l-0-17 D-7	d-bs-8l-0-3 C-3 	d-bs-8l-0-3 C-4 
+word_count:
+	d-bs-8l-0-3 C-3 	d-bs-8l-0-3 D-3 	d-bs-8l-0-3 D-4 
+word_count\:
+	d-bs-8l-0-17 D-7	d-bs-8l-0-3 A-3 	d-bs-8l-0-3 A-7 
+	d-bs-8l-0-3 D-4 	d-bs-8l-0-5 B-6 	d-bs-8l-0-7 C-7 
+write:
+	d-bs-8l-0-13 A-2	d-bs-8l-0-13 A-3	d-bs-8l-0-13 B-2
+	d-bs-8l-0-13 B-3	d-bs-8l-0-13 C-3	d-bs-8l-0-13 C-4
+	d-bs-8l-0-13 D-4
+x_r/w_return:
+	d-bs-8l-0-13 B-2	d-bs-8l-0-13 C-1	d-bs-8l-0-15 A-4
+	d-bs-8l-0-15 A-5
+x_r/w_source:
+	d-bs-8l-0-13 B-3	d-bs-8l-0-13 C-2	d-bs-8l-0-15 B-8
+	d-bs-8l-0-15 C-8
+y_r/w_return:
+	d-bs-8l-0-13 B-2	d-bs-8l-0-13 C-1	d-bs-8l-0-16 A-4
+	d-bs-8l-0-16 A-6
+y_r/w_source:
+	d-bs-8l-0-13 B-2	d-bs-8l-0-13 B-3	d-bs-8l-0-13 C-1
+	d-bs-8l-0-16 B-8	d-bs-8l-0-16 C-8
+Device	Occurances
+a01:
+	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-7	d-bs-8l-0-17 A-8
+	d-bs-8l-0-17 A-8	d-bs-8l-0-17 B-8	d-bs-8l-0-17 C-6
+	d-bs-8l-0-17 C-6	d-bs-8l-0-3 A-8 	d-bs-8l-0-3 B-8 
+	d-bs-8l-0-8 B-5 	d-bs-8l-0-8 B-5 	d-bs-8l-0-8 B-6 
+	d-bs-8l-0-8 B-6 	d-bs-8l-0-8 B-7 	d-bs-8l-0-8 C-5 
+	d-bs-8l-0-8 C-5 	d-bs-8l-0-8 C-6 	d-bs-8l-0-8 C-6 
+	d-bs-8l-0-8 C-7 	d-bs-8l-0-8 D-5 	d-bs-8l-0-8 D-6 
+	d-bs-8l-0-8 D-6 	d-bs-8l-0-8 D-7 	d-bs-8l-0-8 D-7 
+	d-bs-8l-0-9 A-3 	d-bs-8l-0-9 A-5 	d-bs-8l-0-9 A-5 
+	d-bs-8l-0-9 A-7 	d-bs-8l-0-9 A-8 
+a08:
+	d-bs-8l-0-4 A-3 	d-bs-8l-0-4 A-5 	d-bs-8l-0-4 A-8 
+	d-bs-8l-0-4 A-8 	d-bs-8l-0-4 B-7 	d-bs-8l-0-4 D-5 
+	d-bs-8l-0-4 D-7 
+a09:
+	d-bs-8l-0-4 B-5 	d-bs-8l-0-4 B-5 	d-bs-8l-0-4 C-8 
+	d-bs-8l-0-4 D-3 	d-bs-8l-0-4 D-4 	d-bs-8l-0-4 D-6 
+	d-bs-8l-0-5 B-3 	d-bs-8l-0-5 B-8 
+a10:
+	d-bs-8l-0-4 C-7 	d-bs-8l-0-4 C-8 	d-bs-8l-0-8 B-8 
+a11:
+	d-bs-8l-0-5 B-4 	d-bs-8l-0-5 B-4 	d-bs-8l-0-5 B-4 
+	d-bs-8l-0-5 B-6 	d-bs-8l-0-5 C-4 	d-bs-8l-0-5 C-4 
+	d-bs-8l-0-5 D-4 	d-bs-8l-0-6 B-4 
+a12:
+	d-bs-8l-0-4 B-3 	d-bs-8l-0-5 B-7 	d-bs-8l-0-5 C-7 
+a13:
+	d-bs-8l-0-4 B-4 	d-bs-8l-0-6 B-4 	d-bs-8l-0-6 B-7 
+a14:
+	23 B-6          	23 B-6          	23 B-6          
+	d-bs-8l-0-5 C-8 	d-bs-8l-0-6 B-6 	d-bs-8l-0-6 B-7 
+a15:
+	23 C-8          	23 D-8          
+a16:
+	23 C-8          	23 D-7          
+a17:
+	d-bs-8l-0-14 B-7
+a18:
+	d-bs-8l-0-14 B-7
+a19:
+	d-bs-8l-0-14 B-6
+a20:
+	d-bs-8l-0-14 B-5
+a21:
+	d-bs-8l-0-14 A-4	d-bs-8l-0-14 A-4	d-bs-8l-0-14 A-5
+	d-bs-8l-0-14 A-5	d-bs-8l-0-14 A-5	d-bs-8l-0-14 A-5
+	d-bs-8l-0-14 A-6	d-bs-8l-0-14 A-6	d-bs-8l-0-14 A-6
+	d-bs-8l-0-14 A-6	d-bs-8l-0-14 A-7	d-bs-8l-0-14 A-7
+	d-bs-8l-0-14 A-8	d-bs-8l-0-14 A-8
+a22:
+	d-bs-8l-0-14 D-5	d-bs-8l-0-14 D-5	d-bs-8l-0-14 D-7
+	d-bs-8l-0-14 D-7
+a23:
+	d-bs-8l-0-14 C-5	d-bs-8l-0-14 C-5	d-bs-8l-0-14 D-5
+	d-bs-8l-0-14 D-5	d-bs-8l-0-14 D-6
+a24:
+	d-bs-8l-0-14 D-7	d-bs-8l-0-14 D-8
+a25:
+	d-bs-8l-0-13 A-4	d-bs-8l-0-13 B-5	d-bs-8l-0-13 C-2
+	d-bs-8l-0-14 C-6	d-bs-8l-0-14 C-6	d-bs-8l-0-14 D-6
+	d-bs-8l-0-14 D-6
+a26:
+	d-bs-8l-0-13 A-5	d-bs-8l-0-13 B-5	d-bs-8l-0-13 B-5
+	d-bs-8l-0-13 C-2	d-bs-8l-0-14 D-7
+a27:
+	d-bs-8l-0-13 A-8	d-bs-8l-0-13 A-8	d-bs-8l-0-13 A-8
+	d-bs-8l-0-13 B-8	d-bs-8l-0-13 B-8
+a28:
+	d-bs-8l-0-13 A-6	d-bs-8l-0-13 A-6	d-bs-8l-0-13 A-6
+	d-bs-8l-0-13 A-6	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-7
+	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-7
+	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-7	d-bs-8l-0-13 B-6
+	d-bs-8l-0-13 B-6	d-bs-8l-0-13 B-6	d-bs-8l-0-13 B-6
+	d-bs-8l-0-13 B-6	d-bs-8l-0-13 B-6	d-bs-8l-0-13 B-6
+	d-bs-8l-0-13 B-7
+a32:
+	d-bs-8l-0-10 C-5	d-bs-8l-0-10 C-6	d-bs-8l-0-10 C-6
+	d-bs-8l-0-10 C-7	d-bs-8l-0-10 C-7	d-bs-8l-0-10 C-7
+a33:
+	d-bs-8l-0-10 B-5	d-bs-8l-0-10 C-3	d-bs-8l-0-10 C-4
+	d-bs-8l-0-10 C-4	d-bs-8l-0-10 C-4	d-bs-8l-0-10 C-5
+a34:
+	d-bs-8l-0-10 A-6	d-bs-8l-0-10 A-6	d-bs-8l-0-10 A-6
+	d-bs-8l-0-10 A-6	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7
+	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7
+	d-bs-8l-0-10 A-8	d-bs-8l-0-10 A-8	d-bs-8l-0-10 A-8
+	d-bs-8l-0-10 A-8	d-bs-8l-0-10 B-6	d-bs-8l-0-10 B-6
+	d-bs-8l-0-10 B-6
+a35:
+	d-bs-8l-0-17 C-8	d-bs-8l-0-17 C-8	d-bs-8l-0-17 C-8
+	d-bs-8l-0-17 C-8	d-bs-8l-0-17 C-8	d-bs-8l-0-17 C-8
+	d-bs-8l-0-17 C-8	d-bs-8l-0-17 D-6	d-bs-8l-0-17 D-6
+	d-bs-8l-0-17 D-8	d-bs-8l-0-17 D-8	d-bs-8l-0-17 D-8
+	d-bs-8l-0-17 D-8	d-bs-8l-0-17 D-8	d-bs-8l-0-4 B-8 
+a36:
+	d-bs-kp8l-0-1 B-7	d-bs-kp8l-0-1 B-7	d-bs-kp8l-0-1 C-7
+	d-bs-kp8l-0-1 C-7	d-bs-kp8l-0-1 C-7	d-bs-kp8l-0-1 C-7
+	d-bs-kp8l-0-1 C-7
+ab02:
+	d-bs-8l-0-8 C-2 	d-bs-8l-0-9 C-2 	d-bs-8l-0-9 C-4 
+ab03:
+	d-bs-8l-0-8 C-3 	d-bs-8l-0-9 C-2 	d-bs-8l-0-9 C-7 
+ab04:
+	d-bs-8l-0-8 C-4 	d-bs-8l-0-9 C-4 	d-bs-8l-0-9 C-7 
+ab05:
+	d-bs-8l-0-8 C-4 	d-bs-8l-0-9 C-2 	d-bs-8l-0-9 C-4 
+ab06:
+	d-bs-8l-0-8 C-5 	d-bs-8l-0-9 C-2 	d-bs-8l-0-9 C-7 
+ab07:
+	d-bs-8l-0-8 C-6 	d-bs-8l-0-9 C-4 	d-bs-8l-0-9 C-7 
+ab29:
+	22 C-7          
+ab30:
+	22 C-5          
+ab31:
+	21 B-5          	21 C-8          
+b01:
+	d-bs-8l-0-13 A-6	d-bs-8l-0-13 A-7	d-bs-8l-0-17 A-8
+	d-bs-8l-0-17 A-8	d-bs-8l-0-17 B-8	d-bs-8l-0-8 B-3 
+	d-bs-8l-0-8 B-3 	d-bs-8l-0-8 B-4 	d-bs-8l-0-8 B-4 
+	d-bs-8l-0-8 C-3 	d-bs-8l-0-8 C-3 	d-bs-8l-0-8 C-4 
+	d-bs-8l-0-8 C-4 	d-bs-8l-0-8 C-4 	d-bs-8l-0-8 C-5 
+	d-bs-8l-0-8 C-5 	d-bs-8l-0-8 C-6 	d-bs-8l-0-8 C-6 
+	d-bs-8l-0-8 C-7 	d-bs-8l-0-8 D-2 	d-bs-8l-0-8 D-3 
+	d-bs-8l-0-8 D-3 	d-bs-8l-0-8 D-4 	d-bs-8l-0-8 D-4 
+	d-bs-8l-0-8 D-5 
+b08:
+	d-bs-8l-0-2 B-4 	d-bs-8l-0-5 B-3 	d-bs-8l-0-6 B-7 
+	d-bs-8l-0-6 C-7 	d-bs-8l-0-6 C-7 	d-bs-8l-0-6 C-7 
+	d-bs-8l-0-6 D-7 	d-bs-8l-0-8 A-8 
+b09:
+	d-bs-8l-0-3 B-5 	d-bs-8l-0-3 B-5 	d-bs-8l-0-4 C-7 
+	d-bs-8l-0-5 B-3 	d-bs-8l-0-5 C-3 	d-bs-8l-0-5 C-3 
+	d-bs-8l-0-5 D-3 	d-bs-8l-0-7 B-5 
+b10:
+	d-bs-8l-0-4 C-4 	d-bs-8l-0-8 C-8 	d-bs-8l-0-8 D-8 
+b11:
+	d-bs-8l-0-3 B-4 	d-bs-8l-0-7 B-5 	d-bs-8l-0-7 B-5 
+	d-bs-8l-0-7 C-5 
+b12:
+	d-bs-8l-0-10 B-8	d-bs-8l-0-4 A-5 	d-bs-8l-0-4 C-7 
+	d-bs-8l-0-5 C-7 	d-bs-8l-0-6 A-7 	d-bs-8l-0-6 B-5 
+	d-bs-8l-0-6 B-7 	d-bs-8l-0-6 B-8 	d-bs-8l-0-6 C-8 
+	d-bs-8l-0-7 A-6 	d-bs-8l-0-7 A-7 	d-bs-8l-0-7 B-6 
+	d-bs-8l-0-7 B-6 	d-bs-8l-0-7 B-7 	d-bs-8l-0-8 B-8 
+	d-bs-8l-0-8 B-8 
+b13:
+	d-bs-8l-0-4 A-4 	d-bs-8l-0-4 A-6 	d-bs-8l-0-4 A-6 
+	d-bs-8l-0-4 A-8 	d-bs-8l-0-4 C-6 	d-bs-8l-0-5 B-5 
+	d-bs-8l-0-6 D-7 	d-bs-8l-0-7 B-6 	d-bs-8l-0-7 B-6 
+b14:
+	d-bs-8l-0-5 C-8 	d-bs-8l-0-6 B-8 	d-bs-8l-0-7 A-8 
+	d-bs-8l-0-7 A-8 
+b16:
+	23 C-6          	23 D-6          
+b17:
+	23 C-6          	23 D-5          
+b18:
+	d-bs-8l-0-14 B-4
+b19:
+	d-bs-8l-0-14 B-3
+b20:
+	d-bs-8l-0-14 B-2
+b21:
+	d-bs-8l-0-14 A-1	d-bs-8l-0-14 A-2	d-bs-8l-0-14 A-2
+	d-bs-8l-0-14 A-2	d-bs-8l-0-14 A-2	d-bs-8l-0-14 A-3
+	d-bs-8l-0-14 A-3	d-bs-8l-0-14 A-3	d-bs-8l-0-14 A-3
+	d-bs-8l-0-14 A-3	d-bs-8l-0-14 A-4	d-bs-8l-0-14 A-4
+b22:
+	d-bs-8l-0-13 A-8	d-bs-8l-0-13 A-8
+b23:
+	d-bs-8l-0-14 C-4	d-bs-8l-0-14 C-4	d-bs-8l-0-14 D-4
+	d-bs-8l-0-14 D-4	d-bs-8l-0-14 D-5
+b24:
+	d-bs-8l-0-14 C-2	d-bs-8l-0-14 C-2	d-bs-8l-0-14 D-2
+	d-bs-8l-0-14 D-2	d-bs-8l-0-14 D-3
+b25:
+	d-bs-8l-0-13 A-4	d-bs-8l-0-13 B-4	d-bs-8l-0-13 C-2
+	d-bs-8l-0-14 C-4	d-bs-8l-0-14 C-4	d-bs-8l-0-14 D-4
+	d-bs-8l-0-14 D-4
+b26:
+	d-bs-8l-0-13 A-4	d-bs-8l-0-13 A-4	d-bs-8l-0-13 C-2
+	d-bs-8l-0-14 C-2	d-bs-8l-0-14 C-2	d-bs-8l-0-14 D-2
+	d-bs-8l-0-14 D-2
+b27:
+	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-8
+	d-bs-8l-0-13 A-8	d-bs-8l-0-13 A-8	d-bs-8l-0-13 B-7
+	d-bs-8l-0-13 B-8
+b28:
+	d-bs-8l-0-13 A-6	d-bs-8l-0-13 A-6	d-bs-8l-0-13 A-6
+	d-bs-8l-0-13 A-6	d-bs-8l-0-13 A-6	d-bs-8l-0-13 A-7
+	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-7	d-bs-8l-0-13 B-6
+	d-bs-8l-0-13 B-6	d-bs-8l-0-13 B-7	d-bs-8l-0-13 B-7
+	d-bs-8l-0-13 B-7	d-bs-8l-0-13 B-7	d-bs-8l-0-13 B-7
+	d-bs-8l-0-13 B-7	d-bs-8l-0-13 B-7	d-bs-8l-0-13 B-7
+b32:
+	d-bs-8l-0-10 B-5	d-bs-8l-0-10 B-5	d-bs-8l-0-10 B-6
+	d-bs-8l-0-10 B-6	d-bs-8l-0-10 B-6	d-bs-8l-0-10 B-6
+	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7
+	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7
+	d-bs-8l-0-10 B-8	d-bs-8l-0-10 B-8	d-bs-8l-0-10 B-8
+	d-bs-8l-0-10 B-8
+b33:
+	d-bs-8l-0-10 A-5	d-bs-8l-0-10 A-6	d-bs-8l-0-10 A-6
+	d-bs-8l-0-10 A-6	d-bs-8l-0-10 A-6	d-bs-8l-0-10 A-6
+	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7
+	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7
+	d-bs-8l-0-10 A-8	d-bs-8l-0-10 A-8	d-bs-8l-0-10 A-8
+	d-bs-8l-0-10 A-8
+b34:
+	d-bs-8l-0-13 C-8	d-bs-8l-0-2 B-8 	d-bs-8l-0-2 C-5 
+	d-bs-8l-0-2 C-7 	d-bs-8l-0-2 C-7 
+b35:
+	d-bs-8l-0-3 A-8 	d-bs-8l-0-3 B-8 
+b36:
+	d-bs-8l-0-13 A-7	d-bs-8l-0-13 A-8	d-bs-8l-0-13 B-6
+	d-bs-8l-0-2 C-5 	d-bs-8l-0-7 B-8 
+c01:
+	d-bs-8l-0-13 A-7	d-bs-8l-0-17 A-8	d-bs-8l-0-17 A-8
+	d-bs-8l-0-17 B-8	d-bs-8l-0-3 D-5 	d-bs-8l-0-3 D-6 
+	d-bs-8l-0-3 D-7 	d-bs-8l-0-3 D-7 	d-bs-8l-0-7 B-5 
+	d-bs-8l-0-8 B-1 	d-bs-8l-0-8 B-2 	d-bs-8l-0-8 B-2 
+	d-bs-8l-0-8 C-1 	d-bs-8l-0-8 C-2 	d-bs-8l-0-8 C-2 
+	d-bs-8l-0-8 D-1 	d-bs-8l-0-8 D-2 	d-bs-8l-0-9 A-3 
+	d-bs-8l-0-9 A-3 	d-bs-8l-0-9 A-5 	d-bs-8l-0-9 A-5 
+	d-bs-8l-0-9 A-7 	d-bs-8l-0-9 A-8 
+c02:
+	d-bs-8l-0-2 B-3 	d-bs-8l-0-2 B-3 	d-bs-8l-0-2 B-6 
+	d-bs-8l-0-2 B-6 	d-bs-8l-0-2 B-6 	d-bs-8l-0-2 C-7 
+	d-bs-8l-0-2 C-7 	d-bs-8l-0-2 C-8 	d-bs-8l-0-2 C-8 
+	d-bs-8l-0-2 D-8 
+c05:
+	d-bs-8l-0-17 C-7	d-bs-8l-0-2 B-3 	d-bs-8l-0-2 C-3 
+	d-bs-8l-0-2 C-3 	d-bs-8l-0-2 C-3 	d-bs-8l-0-2 C-4 
+	d-bs-8l-0-2 D-5 	d-bs-8l-0-2 D-5 	d-bs-8l-0-2 D-5 
+	d-bs-8l-0-2 D-5 	d-bs-8l-0-6 C-8 
+c06:
+	d-bs-8l-0-2 C-2 	d-bs-8l-0-2 D-3 	d-bs-8l-0-2 D-3 
+	d-bs-8l-0-3 A-5 
+c07:
+	d-bs-8l-0-2 B-2 	d-bs-8l-0-3 B-6 	d-bs-8l-0-3 B-6 
+	d-bs-8l-0-3 B-6 	d-bs-8l-0-3 B-8 	d-bs-8l-0-3 C-4 
+	d-bs-8l-0-3 C-5 	d-bs-8l-0-3 C-5 	d-bs-8l-0-3 C-6 
+	d-bs-8l-0-3 C-6 	d-bs-8l-0-3 C-6 	d-bs-8l-0-3 C-8 
+	d-bs-8l-0-3 C-8 	d-bs-8l-0-3 C-8 	d-bs-8l-0-3 C-8 
+	d-bs-8l-0-3 D-3 
+c08:
+	d-bs-8l-0-3 D-7 
+c09:
+	d-bs-8l-0-3 B-8 	d-bs-8l-0-3 C-4 	d-bs-8l-0-3 C-5 
+	d-bs-8l-0-3 C-7 	d-bs-8l-0-3 C-7 	d-bs-8l-0-3 C-8 
+	d-bs-8l-0-3 C-8 	d-bs-8l-0-3 C-8 
+c10:
+	d-bs-8l-0-3 B-7 	d-bs-8l-0-3 B-7 	d-bs-8l-0-3 B-7 
+	d-bs-8l-0-3 B-8 
+c11:
+	d-bs-8l-0-3 B-3 	d-bs-8l-0-3 C-4 	d-bs-8l-0-3 C-5 
+	d-bs-8l-0-3 C-7 	d-bs-8l-0-4 A-8 	d-bs-8l-0-4 B-6 
+c12:
+	d-bs-8l-0-4 A-6 	d-bs-8l-0-4 A-6 	d-bs-8l-0-4 B-8 
+	d-bs-8l-0-4 C-2 	d-bs-8l-0-4 C-5 	d-bs-8l-0-6 B-5 
+	d-bs-8l-0-6 D-8 	d-bs-8l-0-6 D-8 
+c13:
+	d-bs-8l-0-13 C-7	d-bs-8l-0-4 C-6 	d-bs-8l-0-4 C-6 
+	d-bs-8l-0-6 A-8 	d-bs-8l-0-7 A-6 	d-bs-8l-0-7 B-7 
+c14:
+	d-bs-8l-0-6 A-4 	d-bs-8l-0-6 A-7 	d-bs-8l-0-6 B-5 
+	d-bs-8l-0-6 B-5 	d-bs-8l-0-6 B-5 	d-bs-8l-0-6 B-5 
+	d-bs-8l-0-6 B-7 	d-bs-8l-0-6 C-6 	d-bs-8l-0-7 A-7 
+	d-bs-8l-0-7 B-6 
+c15:
+	d-bs-8l-0-13 C-4	d-bs-8l-0-13 C-4	d-bs-8l-0-13 C-7
+	d-bs-8l-0-13 C-7	d-bs-8l-0-13 D-2	d-bs-8l-0-17 B-6
+	d-bs-8l-0-17 C-6	d-bs-8l-0-17 C-6	d-bs-8l-0-17 D-6
+	d-bs-8l-0-4 A-7 
+c16:
+	23 B-3          	23 B-3          	23 B-3          
+	23 B-3          	23 C-3          	23 C-3          
+	23 C-3          	23 C-3          	23 C-3          
+	23 C-3          	23 C-3          	23 D-3          
+	23 D-3          
+c17:
+	d-bs-8l-0-13 C-3	d-bs-8l-0-13 D-2
+c18:
+	d-bs-8l-0-16 D-7
+c19:
+	d-bs-8l-0-16 C-7
+c20:
+	d-bs-8l-0-16 B-7	d-bs-8l-0-16 B-7	d-bs-8l-0-16 B-7
+	d-bs-8l-0-16 C-7	d-bs-8l-0-16 C-7	d-bs-8l-0-16 C-7
+	d-bs-8l-0-16 C-7	d-bs-8l-0-16 C-7	d-bs-8l-0-16 C-7
+	d-bs-8l-0-16 C-7	d-bs-8l-0-16 C-7	d-bs-8l-0-16 C-7
+	d-bs-8l-0-16 D-7	d-bs-8l-0-16 D-7	d-bs-8l-0-16 D-7
+	d-bs-8l-0-16 D-7
+c21:
+	d-bs-8l-0-15 C-6
+c22:
+	d-bs-8l-0-15 B-7	d-bs-8l-0-15 B-7	d-bs-8l-0-15 B-7
+	d-bs-8l-0-15 C-7	d-bs-8l-0-15 C-7	d-bs-8l-0-15 C-7
+	d-bs-8l-0-15 C-7	d-bs-8l-0-15 C-7	d-bs-8l-0-15 C-7
+	d-bs-8l-0-15 C-7	d-bs-8l-0-15 C-7	d-bs-8l-0-15 C-7
+	d-bs-8l-0-15 D-7	d-bs-8l-0-15 D-7	d-bs-8l-0-15 D-7
+	d-bs-8l-0-15 D-7
+c23:
+	d-bs-8l-0-15 C-7
+c24:
+	d-bs-8l-0-15 C-7
+c25:
+	d-bs-8l-0-13 B-3
+c26:
+	d-bs-8l-0-12 B-8	d-bs-8l-0-12 B-8	d-bs-8l-0-13 C-8
+	d-bs-8l-0-17 D-7	d-bs-8l-0-17 D-7	d-bs-8l-0-3 B-8 
+	d-bs-8l-0-3 D-3 	d-bs-8l-0-3 D-4 	d-bs-8l-0-3 D-4 
+	d-bs-8l-0-7 B-8 	d-bs-kp8l-0-1 C-7
+c27:
+	d-bs-8l-0-10 A-5	d-bs-8l-0-10 B-5	d-bs-8l-0-10 C-3
+	d-bs-8l-0-10 D-1	d-bs-8l-0-10 D-2	d-bs-8l-0-10 D-2
+c28:
+	d-bs-8l-0-7 C-6 
+c29:
+	d-bs-8l-0-10 D-5	d-bs-8l-0-10 D-6	d-bs-8l-0-10 D-6
+c30:
+	d-bs-8l-0-10 D-5	d-bs-8l-0-10 D-5	d-bs-8l-0-10 D-5
+c31:
+	d-bs-8l-0-12 B-5	d-bs-8l-0-12 B-6	d-bs-8l-0-12 B-6
+	d-bs-8l-0-12 B-6	d-bs-8l-0-12 B-6	d-bs-8l-0-12 C-5
+	d-bs-8l-0-12 C-5	d-bs-8l-0-12 C-6	d-bs-8l-0-12 C-6
+	d-bs-8l-0-12 D-5
+c32:
+	d-bs-8l-0-11 A-6	d-bs-8l-0-11 B-7	d-bs-8l-0-11 B-7
+	d-bs-8l-0-11 B-7	d-bs-8l-0-11 B-7	d-bs-8l-0-11 C-6
+	d-bs-8l-0-11 D-6
+c33:
+	d-bs-8l-0-12 C-7	d-bs-8l-0-12 C-7	d-bs-8l-0-12 C-8
+	d-bs-8l-0-12 C-8	d-bs-8l-0-12 D-7	d-bs-8l-0-12 D-8
+c34:
+	21 B-3          	21 B-5          	21 B-6          
+	21 C-4          	21 C-4          	21 C-4          
+	21 C-5          	21 C-5          	21 C-5          
+	21 C-6          	21 C-6          	21 C-7          
+	21 C-7          	21 C-8          	22 B-4          
+	22 B-4          	22 B-4          	22 B-5          
+	22 B-5          	22 B-5          	22 B-5          
+	22 B-5          	22 B-5          	22 B-5          
+	22 B-6          	22 B-6          	22 C-4          
+	22 C-4          	22 C-6          	22 C-6          
+c35:
+	d-bs-8l-0-10 A-5	d-bs-8l-0-10 A-5	d-bs-8l-0-10 A-6
+	d-bs-8l-0-10 A-6	d-bs-8l-0-10 A-6	d-bs-8l-0-10 A-6
+	d-bs-8l-0-10 A-6	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7
+	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7	d-bs-8l-0-10 A-7
+	d-bs-8l-0-10 A-8	d-bs-8l-0-10 A-8	d-bs-8l-0-10 A-8
+	d-bs-8l-0-10 A-8
+c36:
+	d-bs-8l-0-10 B-5	d-bs-8l-0-10 B-5	d-bs-8l-0-10 B-5
+	d-bs-8l-0-10 B-5	d-bs-8l-0-10 B-6	d-bs-8l-0-10 B-6
+	d-bs-8l-0-10 B-6	d-bs-8l-0-10 B-6	d-bs-8l-0-10 B-6
+	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7
+	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-8
+	d-bs-8l-0-10 B-8	d-bs-8l-0-10 B-8	d-bs-8l-0-10 B-8
+cd03:
+	d-bs-8l-0-2 A-6 
+d01:
+	d-bs-8l-0-13 A-7	d-bs-8l-0-17 A-8	d-bs-8l-0-17 A-8
+	d-bs-8l-0-17 B-8	d-bs-8l-0-2 A-7 	d-bs-8l-0-2 A-8 
+	d-bs-8l-0-2 A-8 	d-bs-8l-0-2 A-8 	d-bs-8l-0-2 A-8 
+	d-bs-8l-0-2 B-6 	d-bs-8l-0-2 B-6 	d-bs-8l-0-2 B-6 
+	d-bs-8l-0-2 B-6 	d-bs-8l-0-2 B-6 	d-bs-8l-0-2 B-6 
+	d-bs-8l-0-2 B-6 	d-bs-8l-0-3 B-4 	d-bs-8l-0-3 D-3 
+	d-bs-8l-0-3 D-3 	d-bs-8l-0-3 D-4 	d-bs-8l-0-3 D-5 
+	d-bs-8l-0-3 D-6 	d-bs-8l-0-8 C-1 	d-bs-8l-0-8 C-2 
+	d-bs-8l-0-8 C-2 	d-bs-8l-0-8 C-3 	d-bs-8l-0-8 C-3 
+	d-bs-8l-0-8 C-4 	d-bs-8l-0-9 A-3 
+d02:
+	d-bs-8l-0-2 B-3 	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 B-4 
+	d-bs-8l-0-2 B-5 	d-bs-8l-0-2 B-6 	d-bs-8l-0-2 B-6 
+	d-bs-8l-0-2 B-6 	d-bs-8l-0-2 B-7 	d-bs-8l-0-2 B-8 
+	d-bs-8l-0-2 C-4 	d-bs-8l-0-2 C-5 	d-bs-8l-0-2 C-6 
+	d-bs-8l-0-2 D-6 	d-bs-8l-0-3 A-7 	d-bs-8l-0-3 D-3 
+	d-bs-8l-0-3 D-4 
+d04:
+	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 B-4 	d-bs-8l-0-2 B-4 
+	d-bs-8l-0-2 B-8 	d-bs-8l-0-2 C-4 	d-bs-8l-0-2 C-8 
+	d-bs-8l-0-3 A-6 	d-bs-8l-0-3 B-6 
+d05:
+	d-bs-8l-0-2 B-7 	d-bs-8l-0-2 B-7 	d-bs-8l-0-2 C-6 
+d06:
+	d-bs-8l-0-2 C-5 	d-bs-8l-0-2 C-6 
+d07:
+	d-bs-8l-0-2 C-5 
+d08:
+	d-bs-8l-0-2 D-4 
+d09:
+	d-bs-8l-0-2 B-3 	d-bs-8l-0-4 C-3 	d-bs-8l-0-4 C-3 
+d10:
+	d-bs-8l-0-7 C-5 	d-bs-8l-0-7 D-5 
+d11:
+	d-bs-8l-0-10 B-8	d-bs-8l-0-10 B-8	d-bs-8l-0-10 B-8
+	d-bs-8l-0-3 C-3 	d-bs-8l-0-3 C-4 	d-bs-8l-0-4 B-6 
+	d-bs-8l-0-4 B-7 	d-bs-8l-0-7 C-6 	d-bs-8l-0-7 C-6 
+	d-bs-8l-0-7 C-7 	d-bs-8l-0-7 D-6 	d-bs-8l-0-7 D-6 
+d12:
+	d-bs-8l-0-17 D-7	d-bs-8l-0-3 B-3 	d-bs-8l-0-3 B-5 
+	d-bs-8l-0-3 C-2 	d-bs-8l-0-3 C-4 	d-bs-8l-0-3 C-4 
+	d-bs-8l-0-3 C-5 	d-bs-8l-0-3 C-8 	d-bs-8l-0-3 D-8 
+d13:
+	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7
+	d-bs-8l-0-10 B-7	d-bs-8l-0-10 B-7	d-bs-8l-0-10 C-8
+	d-bs-8l-0-10 C-8	d-bs-8l-0-10 C-8	d-bs-8l-0-10 C-8
+	d-bs-8l-0-12 B-7	d-bs-8l-0-12 B-7	d-bs-8l-0-13 D-2
+	d-bs-8l-0-3 B-3 	d-bs-8l-0-3 C-3 	d-bs-8l-0-3 C-8 
+	d-bs-8l-0-4 B-3 
+d14:
+	d-bs-8l-0-13 B-6	d-bs-8l-0-13 C-6	d-bs-8l-0-13 C-6
+d15:
+	d-bs-8l-0-13 B-5	d-bs-8l-0-13 C-5	d-bs-8l-0-13 C-5
+d17:
+	d-bs-8l-0-13 D-5	d-bs-8l-0-13 D-6	d-bs-8l-0-13 D-7
+	d-bs-8l-0-13 D-8	d-bs-8l-0-17 B-6	d-bs-8l-0-17 C-6
+d18:
+	d-bs-8l-0-15 B-6
+d19:
+	d-bs-8l-0-15 B-5
+d21:
+	d-bs-8l-0-15 C-6
+d23:
+	d-bs-8l-0-16 B-6
+d24:
+	d-bs-8l-0-16 B-5
+d25:
+	d-bs-8l-0-13 B-2
+d26:
+	d-bs-8l-0-17 B-8
+d27:
+	d-bs-8l-0-10 D-6	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-7
+	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-8	d-bs-8l-0-10 D-8
+d28:
+	d-bs-8l-0-10 D-3	d-bs-8l-0-10 D-3	d-bs-8l-0-10 D-3
+	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-4
+d29:
+	d-bs-8l-0-10 B-6	d-bs-8l-0-10 C-3	d-bs-8l-0-10 C-8
+	d-bs-8l-0-10 C-8	d-bs-8l-0-10 C-8	d-bs-8l-0-10 C-8
+	d-bs-8l-0-10 D-6	d-bs-8l-0-10 D-6	d-bs-8l-0-10 D-7
+	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-7
+	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-8
+	d-bs-8l-0-10 D-8	d-bs-8l-0-10 D-8	d-bs-8l-0-10 D-8
+d30:
+	d-bs-8l-0-10 D-1	d-bs-8l-0-10 D-2	d-bs-8l-0-10 D-2
+	d-bs-8l-0-10 D-2	d-bs-8l-0-10 D-2	d-bs-8l-0-10 D-2
+	d-bs-8l-0-10 D-3	d-bs-8l-0-10 D-3	d-bs-8l-0-10 D-3
+	d-bs-8l-0-10 D-3	d-bs-8l-0-10 D-3	d-bs-8l-0-10 D-3
+	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-4
+	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-5
+d31:
+	d-bs-8l-0-12 B-5	d-bs-8l-0-12 B-5	d-bs-8l-0-12 C-5
+	d-bs-8l-0-12 C-5	d-bs-8l-0-12 C-5	d-bs-8l-0-12 C-6
+	d-bs-8l-0-12 C-6	d-bs-8l-0-12 D-5	d-bs-8l-0-12 D-6
+d32:
+	d-bs-8l-0-11 A-6	d-bs-8l-0-11 A-6	d-bs-8l-0-11 B-7
+	d-bs-8l-0-11 C-6	d-bs-8l-0-11 C-6	d-bs-8l-0-11 C-7
+	d-bs-8l-0-11 D-6
+d33:
+	d-bs-8l-0-11 C-4	d-bs-8l-0-11 D-4
+d34:
+	d-bs-8l-0-10 C-3	d-bs-8l-0-10 C-3	d-bs-8l-0-10 C-4
+	d-bs-8l-0-10 C-4	d-bs-8l-0-10 C-4	d-bs-8l-0-10 C-5
+	d-bs-8l-0-10 C-5	d-bs-8l-0-10 C-6	d-bs-8l-0-10 C-6
+	d-bs-8l-0-10 C-7	d-bs-8l-0-10 C-7	d-bs-8l-0-10 C-7
+	d-bs-8l-0-10 C-8	d-bs-8l-0-10 C-8	d-bs-8l-0-10 C-8
+	d-bs-8l-0-10 C-8
+d35:
+	d-bs-8l-0-10 D-1	d-bs-8l-0-10 D-1	d-bs-8l-0-10 D-2
+	d-bs-8l-0-10 D-2	d-bs-8l-0-10 D-2	d-bs-8l-0-10 D-2
+	d-bs-8l-0-10 D-2	d-bs-8l-0-10 D-3	d-bs-8l-0-10 D-3
+	d-bs-8l-0-10 D-3	d-bs-8l-0-10 D-3	d-bs-8l-0-10 D-3
+	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-4
+	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-4	d-bs-8l-0-10 D-4
+d36:
+	d-bs-8l-0-10 D-5	d-bs-8l-0-10 D-5	d-bs-8l-0-10 D-5
+	d-bs-8l-0-10 D-5	d-bs-8l-0-10 D-6	d-bs-8l-0-10 D-6
+	d-bs-8l-0-10 D-6	d-bs-8l-0-10 D-6	d-bs-8l-0-10 D-6
+	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-7
+	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-7	d-bs-8l-0-10 D-8
+	d-bs-8l-0-10 D-8	d-bs-8l-0-10 D-8	d-bs-8l-0-10 D-8

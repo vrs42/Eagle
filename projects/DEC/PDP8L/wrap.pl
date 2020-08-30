@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 #
 #  Turn a netlist into a wire-wrap list.
 #  This version correctly places as many connections as possible in
