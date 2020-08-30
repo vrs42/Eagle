@@ -1,0 +1,51 @@
+MODEL	PROD	DES	STATUS		Height		DESCRIPTION
+NO	LINE	ENGR		MO/YR		Length	
+" Modules, Gates"							
+R001	CAT		5		single	"5"""	"Diode Network, 7 diodes, both end brought to pins"
+R002	CAT		5		single	"5"""	"Diode Network, 5 groups of 2 diodes, cathode common"
+R012	15	DV	5		single	"5"""	"Diode Network, R002 etch, anodes common"
+R107	CAT		5		single	"5"""	"7 Inverters, 1 with expansion node"
+R111	CAT		5		single	"5"""	"3 2-Input Gates, Expandable, Open Collector, 3 clamp load resistors"
+R1110	10	ATT	5	Jan-73	single	"5"""	"R111 with 2mA fan-in & 6534-C transistors, sinks 63ma"
+R113	CAT		5		single	"5"""	5 2-Input Gates
+R1130	10	ATT	5	Jan-73	single	"5"""	"R113 with 2mA fan-in & 6534-C transistors, sinks 63ma"
+R121	CAT		5		single	"5"""	"2 2-Input, 1 3-Input, 1 4-Input Gates"
+R122	CAT		5		single	"5"""	Logical Complement of R121
+R123	CAT		5		single	"5"""	"Input Bus Gate, 6 Gates, 1 Independent Input, 1 Paired Common Input"
+R131	CAT		5		single	"5"""	"Exclusive OR, 4 circuits, Output is -3V if inputs are the same"
+R141	CAT		5		single	"5"""	"AND-NOR Gate, 7 sets of 2-Input AND Gates NORed together"
+R151	CAT		5		single	"5"""	"Binary-Octal Decoder, 6 Inputs + Enable, 8 Outputs"
+R152	10	AK	6	Apr-67	single	"5"""	"Obsolete, R151 without clamp loads, see B152"
+R181	CAT		5		single	"5"""	"DC Carry Cahin, 6 Interconnected Diode Gates + 1 Inverter"
+ Flip-flops							
+R200	CAT				single	"5"""	Set-Reset Flip-flop
+R201	CAT				single	"5"""	RS FF with 3 Set and 2 Reset DCD Gates
+R202	CAT				single	"5"""	"Dual FF, Direct Clear, Common Set, 1 set & 1 reset DCD Gate each"
+R203	CAT				single	"5"""	"Triple FF, Direct Clear, Set DCD Gate each"
+R204	CAT				single	"5"""	"Quad FF, Direct Set for each, Direct Clear for 2, Common for 2"
+R205	CAT				single	"5"""	"Dual FF, Common Direct Clear, 2 DCD Gates each"
+R210	8	WH			double	"5"""	PDP8 Accumulator
+R211	8	WH			double	"5"""	"MB, PC, MA, (PDP8)"
+R212	8	WH			single	"5"""	"MQ (PDP8), 2 FFs, SR, SL, Read-in, Clear"
+R220	8	WH			single	"5"""	"3-Bit SR, Parallel Read-in, Diodes out for detecting all 0s in R111 node"
+R284	8	WH			single	"5"""	"Quadraflop, PDP8, 4 stable states"
+ Delays							
+R302	CAT		5		single	"5"""	2 One-shots
+R303	CAT		5		single	"5"""	Integrating One-shot
+ Clocks							
+R401	CAT		5		single	"5"""	"Variable Clock, 30CPS to 2 MC"
+R405	CAT		5		single	"5"""	"Crystal Clock, 5KC to 2 Mc Available"
+R406	15	DV	5		single	"5"""	"Clock for PDP9/L, 1.5us"
+R407	15	DV	5		single	"5"""	"PDP9 Parity Clock, 1.2us"
+R408	8		5		single	"5"""	PDP8 Clock
+R409	15		5		single	"5"""	"PDP9 Clock, 1 MC"
+R450	8	WH	5		single	"5"""	"Clock for use with TTY, first pusle comes 1/2 period late"
+R451	10	SU	5		single	"5"""	"Teletype Clock, for faster teletype thank R450"
+ Output Converters							
+R601	CAT		5		single	"5"""	"Pulse Amplifier, 6 DCD Gates, 100 or 400 ns pulses"
+R602	CAT		5		single	"5"""	"Pulse Amplifier, 2 DCD Gates & 1 Diode Input each, 100 or 400 ns pulses"
+R603	CAT		5		single	"5"""	"Pulse Amplifier, 3 circuits, 1 DCD Gate & 1 Diode Input each"
+R613	8	WH	5		single	"5"""	"R603 that cannot be triggered from output, with 5 mA loads"
+R623	12	RI	3	May-73	single	"5"""	"R603 with 400us pulse, R603 etch, retrofit for LINC-8"
+R650	CAT		5		single	"5"""	"Bus Driver, 2 circuits, 2 Inputs & Node"
+R663	10	ATT	5	Feb-72	single	"5"""	"B163 with DEC 6534C (6 2-Input NANDs, 1 Input/Gate + 1 Input/Gate pair, 2mA fan-in"
