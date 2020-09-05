@@ -74,7 +74,8 @@ sub process {
     # Get a list of the subdirectories.
     @sub = ();
     opendir(DIR, '.') || die "$d: $!";
-    while (($_ = readdir(DIR))) {
+    sub byname { $a cmp $b }
+    foreach (sort byname readdir(DIR)) {
       $f = $_;
       if (-d $f) {
         next if $f eq '.';
