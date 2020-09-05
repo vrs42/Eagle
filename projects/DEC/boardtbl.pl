@@ -120,7 +120,8 @@ for $d1 ('Axxx', 'Bxxx', 'Gxxx', 'Hxxx', 'Kxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx')
   print "<h2>$d1</h2>\n";
   print "<table border=\"1\">\n";
   $column = 99;
-  foreach $d2 (readdir(DIR1)) {
+  sub byname { $a cmp $b }
+  foreach $d2 (sort byname readdir(DIR1)) {
     next if $d2 eq '.';
     next if $d2 eq '..';
     next unless -d "$d1/$d2";
@@ -143,7 +144,6 @@ for $d1 ('Axxx', 'Bxxx', 'Gxxx', 'Hxxx', 'Kxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx')
         $boards{$b} = 1 if $b =~ s/$suf$//; ;
       }
     }
-    sub byname { $a cmp $b }
     @boards = sort byname keys %boards;
     @boards = grep(!/brd$/ && !/sch$/, @boards);
     $d = "$d1/$d2";
