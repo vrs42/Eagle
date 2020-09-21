@@ -18826,7 +18826,7 @@ Mors, distributor Buerklin, 11G702</description>
 <label x="256.54" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+15V" class="0">
+<net name="+15V" class="1">
 <segment>
 <pinref part="SUPPLY11" gate="+15V" pin="+15V"/>
 <pinref part="OMNIBUS" gate="DA2" pin="1"/>
