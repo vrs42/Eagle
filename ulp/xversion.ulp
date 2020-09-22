@@ -169,6 +169,9 @@ count++;
 old[count] = "MPS3568";
 new[count] = "2N2907";
 count++;
+old[count] = "MPS6531";
+new[count] = "MPS6531";
+count++;
 old[count] = "DEC999";	// 15-01836 No data sheet, but crosses to NTE159 (nteinc.com)
 new[count] = "2N3906";	// vetcosurplus.com sells 2N3906/NTE159 as replacement for MM999.
 count++;
@@ -268,8 +271,17 @@ count++;
 old[count] = "7402N";
 new[count] = "7402N";
 count++;
+old[count] = "7404N";
+new[count] = "7404N";
+count++;
 old[count] = "7410N";
 new[count] = "7410N";
+count++;
+//old[count] = "N8881N"; // Not easier to find
+//new[count] = "7439N";
+//count++;
+old[count] = "7438N"; // Manual substitute for N8881N
+new[count] = "7438N";
 count++;
 old[count] = "7420N";
 new[count] = "7420N";
@@ -277,12 +289,24 @@ count++;
 //old[count] = "7440N";	// 7440 is totally obsoleted
 //new[count] = "7440N";
 //count++;
+old[count] = "7442N"; // Manual replacement for DEC8251 -- available?
+new[count] = "7442N";
+count++;
 old[count] = "7474N";
 new[count] = "7474N";
+count++;
+//old[count] = "9601"; // Not pin compatible
+//new[count] = "74122N";
+//count++;
+old[count] = "74121N"; // Manual replacement for 9601
+new[count] = "74121N";
 count++;
 old[count] = "7486N";
 new[count] = "7486N";
 count++;
+//old[count] = "DEC8271";	// Not pin compatible?, and not easier to find.
+//new[count] = "74179";
+//count++;
 //old[count] = "MC1709";	// aka LM709 or UA709
 //new[count] = "LM301AH";	// Too expensive (10X)
 //count++;
@@ -292,7 +316,6 @@ count++;
 old[count] = "MC1709N";	// aka LM709 or UA709
 new[count] = "LM301AN";
 count++;
-
 
 // *** Board coord. ***
 if (board) {
