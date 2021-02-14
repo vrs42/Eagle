@@ -1,0 +1,42 @@
+   1               /MI8-EJ (RK8-E)
+   2               CAF=6007        / CLEAR ALL FLAGS
+   3               DLAG=6743       / LOAD DISC ADDRESS & GO
+   4               DRST=6745       / READ THE STATUS
+   5               *14
+   6 000014  0032  PTR,    0032                    / POINTER INTO TEXT
+   7 000015  6007  START,  CAF                     / INITIALIZE
+   8 000016  1414          TAD I PTR               / GET A CHARACTER
+   9 000017  6046          TLS                     / START IT PRINTING
+  10 000020  6041          TSF                     / WAIT FOR IT
+  11 000021  5020          JMP .-1
+  12 000022  7200          CLA                     / CLEAR AC FOR NEXT
+  13 000023  2014          ISZ PTR                 / BUMP POINTER
+  14               /THE FOLLOWING INSTRUCTION IS MISSING, SO HOW DID IT WORK?
+  15               /       ISZ COUNT               / BUMP COUNTER
+  16 000024  5016          JMP START+1             / GO PRINT NEXT
+  17 000025  6745          DRST                    / READ STATUS
+  18 000026  7440          SZA                     / CLEAR?
+  19 000027  5025          JMP .-2                 / NO, WAIT FOR IT
+  20 000030  6743          DLAG                    / START AN I/O
+  21 000031  5031          JMP .                   / WAIT FOR THIS TO BE REPLACED
+  22 000032  7757  COUNT,  -21                     / NUMBER OF CHARS TO PRINT
+  23 000033  0215          0215                    / CR
+  24 000034  0212          0212                    / LF
+  25 000035  0000          0000                    / NUL
+  26 000036  0000          0000                    / NUL
+  27 000037  0000          0000                    / NUL
+  28 000040  0311          "I
+  29 000041  0316          "N
+  30 000042  0311          "I
+  31 000043  0324          "T
+  32 000044  0311          "I
+  33 000045  0301          "A
+  34 000046  0314          "L
+  35 000047  0311          "I
+  36 000050  0332          "Z
+  37 000051  0311          "I
+  38 000052  0316          "N
+  39 000053  0307          "G
+  40               
+  41               START=0015
+  42               $

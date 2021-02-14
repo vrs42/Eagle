@@ -1,0 +1,41 @@
+   1               /MI8-EH (TD8-E DECtape)
+   2               SDSS=6771       / SKIP ON SINGLE LINE
+   3               SDSQ=6773       / SKIP ON QUAD LINE
+   4               SDLC=6774       / LOAD COMMAND REGISTER
+   5               SDRC=6776       / READ MT REGISTER
+   6               SDRD=6777       / READ DATA REGISTER
+   7                       FIELD   0
+   8                       *7300
+   9 007300  1312  START,  TAD COMMND      / GET 2000
+  10 007301  4312          JMS COMMND      / EXECUTE 3312 COMMAND
+  11 007302  4312          JMS COMMND      / EXECUTE 1312 COMMAND
+  12 007303  6773  AGAIN,  SDSQ            / WAIT FOR A WORD
+  13 007304  5303          JMP .-1
+  14 007305  6777          SDRD            / GET DATA WORD
+  15 007306  3726          DCA I LOADAT    / STORE IT
+  16 007307  2326          ISZ LOADAT      / BUMP POINTER
+  17 007310  5303          JMP AGAIN       / NO SKIP, DO ANOTHER
+  18 007311  5732          JMP I RUNAT     / BRANCH TO LOADED CODE
+  19 007312  2000  COMMND, 2000            / "START COMMAND" SUBROUTINE
+  20 007313  1300          TAD START       / ADD/GET 1312
+  21 007314  6774          SDLC            / SEND THE COMMAND
+  22 007315  6771  L07315, SDSS            / DONE?
+  23 007316  5315          JMP .-1         / WAIT FOR IT
+  24 007317  6776          SDRC            / GET MT REGISTER
+  25 007320  0331          AND C77         / CHECK ONLY MT BITS
+  26 007321  1327  D07321, TAD N0022       / EXPECT 022
+  27 007322  7640          SZA CLA         / GOT IT?
+  28 007323  5315          JMP L07315      / NO, CHECK AGAIN
+  29 007324  2321          ISZ D07321      / HENCEFORTH EXPECT 031
+  30 007325  5712          JMP I COMMND    / RETURN TO CALLER
+  31 007326  7354  LOADAT, 7354            / STORE POINTER
+  32 007327  7756  N0022,  -22             / MTR1 AND MTR4 SET FIRST TIME
+  33 007330  7747          -31             / MTR1 MTR2, AND MTR5 SET THEREAFTER
+  34 007331  0077  C77,    0077            / MTR BIT MASK
+  35 007332  7400  RUNAT,  7400            / ADDRESS TO BRANCH TO
+  36 007333  7777          7777
+  37 007334  7777          7777
+  38 007335  7777          7777
+  39 007336  7777          7777
+  40 007337  7777          7777
+  41               $

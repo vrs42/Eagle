@@ -1,0 +1,40 @@
+   1               /MI8-EM (Typeset DECtape)
+   2               DTLB=6774       / LOAD REGISTER B
+   3               DTSF=6771       / SKIP ON FLAGS
+   4               DTCA=6762       / CLEAR REGISTER A
+   5               DTXA=6764       / LOAD REGISTER A
+   6                       FIELD   0
+   7                       *7730
+   8 007730  6774  START,  DTLB            / CLEAR EXISTING ERROR CONDITIONS
+   9 007731  1347          TAD D07747      / GET A MOVE UNIT 4 COMMAND
+  10 007732  4341          JMS DTGO        / DO IT
+  11 007733  7240          CLA CMA         / GET LOADAT-1
+  12 007734  1353          TAD LOADAT
+  13 007735  3355          DCA CA          / SET UP CA
+  14 007736  1352          TAD D07752      / GET READ UNIT 4 COMMAND
+  15 007737  4341          JMS DTGO        / DO IT -- WC WILL BE LOADED OVER
+  16 007740  5753          JMP I LOADAT    / BRANCH TO THE NEW CODE
+  17 007741  0000  DTGO,   .-.             / DO A DECTAPE COMMAND
+  18 007742  6766          DTCA DTXA       / SEND COMMAND
+  19 007743  3354          DCA WC          / CLEAR WC
+  20 007744  6771          DTSF            / DONE?
+  21 007745  5344          JMP .-1         / WAIT FOR IT
+  22 007746  5741          JMP I DTGO      / RETURN TO CALLER
+  23 007747  4600  D07747, 4600            / MOVE UNIT 4 COMMAND
+  24 007750  0000          0000            / UNUSED
+  25 007751  0000          0000            / UNUSED
+  26 007752  4220  D07752, 4220            / READ UNIT 4 COMMAND
+  27 007753  7400  LOADAT, 7400            / ADDRESS OF LOADED CODE
+  28 007754  0000  WC,     0000
+  29 007755  0000  CA,     0000
+  30 007756  0000          0000            / THESE ARE UNUSED
+  31 007757  0000          0000            / (LEFT THE DIODES IN)
+  32 007760  0000          0000
+  33 007761  0000          0000
+  34 007762  0000          0000
+  35 007763  0000          0000
+  36 007764  0000          0000
+  37 007765  0000          0000
+  38 007766  0000          0000
+  39 007767  0000          0000
+  40               $

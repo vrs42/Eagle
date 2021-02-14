@@ -1,0 +1,41 @@
+   1               /MI8-EC (TC08 DECtape)
+   2               DTLA=6766       / LOAD REGISTER A
+   3               DTSF=6771       / SKIP ON FLAGS
+   4               DTLB=6774       / LOAD REGISTER B
+   5                       FIELD   0
+   6                       *7554
+   7 007554  7600  START,  7600            / CLA; ALSO LOADING ADDRESS, AND COUNT
+   8 007555  6774          DTLB            / TRANSFER TO FIELD 0
+   9 007556  1374          TAD MOVE        / GET A MOVE COMMAND
+  10 007557  6766          DTLA            / MOVE
+  11 007560  6771          DTSF            / WAIT FOR IT
+  12 007561  5360          JMP .-1
+  13 007562  7240          CLA CMA         / GET LOADING ADDRESS - 1
+  14 007563  1354          TAD START
+  15 007564  3773          DCA I IDCA      / SET CA
+  16 007565  1354          TAD START       / GET COUNT
+  17 007566  3772          DCA I IDWC      / SET WC
+  18 007567  1375          TAD READ        / GET A READ COMMAND
+  19 007570  6766          DTLA            / READ
+  20 007571  5376          JMP WAIT        / GO WAIT
+  21 007572  7754  IDWC,   7754            / PTR TO WC
+  22 007573  7755  IDCA,   7755            / PTR TO CA
+  23 007574  0600  MOVE,   0600            / MOVE, NORMAL, GO
+  24 007575  0220  READ,   0220            / READ, GO
+  25 007576  6771  WAIT,   DTSF            / WAIT FOR THE READ
+  26 007577  5376          JMP .-1
+  27               / WHEN THE READ IS FINISHED, FALL THROUGH ONTO THE NEWLY LOADED CODE.
+  28                       *7600
+  29 007600  7777          7777            / REPLACED BY THE LOADED CODE.
+  30 007601  7777          7777            / (ALL DIODES REMOVED)
+  31 007602  7777          7777
+  32 007603  7777          7777
+  33 007604  7777          7777
+  34 007605  7777          7777
+  35 007606  7777          7777
+  36 007607  7777          7777
+  37 007610  7777          7777
+  38 007611  7777          7777
+  39 007612  7777          7777
+  40 007613  7777          7777
+  41               $

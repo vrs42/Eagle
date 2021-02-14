@@ -1,0 +1,41 @@
+   1               /MI8-EA (Paper Tape)
+   2                       FIELD   0
+   3                       *7737
+   4 007737  6014  START,  6014                    / FETCH FROM HSR
+   5 007740  0776  L07740, AND I P07776            / DELAY
+   6 007741  7326          CLA CLL CML RTL         / GET 0002
+   7 007742  1337          TAD START               / MAKE RRB
+   8 007743  2376          ISZ P07776              / DELAY OVER?
+   9 007744  5340          JMP L07740              / NO, KEEP WASTING TIME
+  10 007745  6011  D07745, 6011                    / YES.  READER READY?
+  11 007746  5356          JMP L07756              / NO, GO TO LSR RIM
+  12 007747  3361          DCA D07761              / YES, STORE RRB OVER KRB
+  13 007750  1361          TAD D07761              / GET IT BACK
+  14 007751  3371          DCA D07771              / STORE OVER KRS
+  15 007752  1345          TAD D07745              / GET A RSF
+  16 007753  3357          DCA L07757              / STORE OVER KSF
+  17 007754  1345          TAD D07745              / GET ANOTHER
+  18 007755  3367          DCA L07767              / STORE OVER KSF
+  19               / THIS KCC IS MOSTLY HARMLESS IF WE'RE READING HSR,
+  20               / BUT IS IMPORTANT IF READING FROM THE LSR.  (THE
+  21               / LSR WILL ADVANCE WHEN READING HSR, THOUGH.)
+  22 007756  6032  L07756, KCC                     / FETCH FROM LSR
+  23               / THIS IS THE RIM LOADER.  IT STARTS OUT LOW SPEED,
+  24               / BUT THE CODE ABOVE MAY PATCH IT FOR THE HSR.
+  25 007757  6031  L07757, KSF                     / SKIP IF READY
+  26 007760  5357          JMP .-1
+  27 007761  6036  D07761, KRB                     / GET HIGH 6 BITS
+  28 007762  7106          CLL RTL                 / SHIFT UP
+  29 007763  7006          RTL 
+  30 007764  7510          SPA                     / CHECK FOR LEADER
+  31 007765  5374          JMP L07774              / IGNORE LEADER
+  32 007766  7006          RTL                     / FINISH SHIFT UP
+  33 007767  6031  L07767, KSF                     / WAIT FOR LOW 6 BITS
+  34 007770  5367          JMP .-1
+  35 007771  6034  D07771, KRS                     / OR THEM IN
+  36 007772  7420          SNL                     / LOCATION OR DATA?
+  37 007773  3776          DCA I P07776            / DATA
+  38 007774  3376  L07774, DCA P07776              / LOCATION
+  39 007775  5356          JMP L07756              / GO LOOK FOR MORE
+  40 007776  0000  P07776, 0                       / SAVED LOCATION (OR 0)
+  41               $

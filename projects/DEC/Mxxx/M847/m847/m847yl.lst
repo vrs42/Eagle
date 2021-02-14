@@ -1,0 +1,42 @@
+   1               /MI8-EL (CAPS-8, CASSETTE)
+   2               /USES BSW, ROTATES BOTH WAYS!
+   3               KSDR=6701               / SKIP ON DATA FLAG
+   4               KSEN=6702               / SKIP ON BOT/EOT/EOF OR ERROR
+   5               KSBF=6703               / SKIP ON READY FLAG
+   6               KLSA=6704               / LOAD COMMAND REGISTER
+   7               KGOA=6706               / EXECUTE COMMAND REGISTER
+   8                       FIELD   0
+   9                       *4000
+  10 004000  1237  START,  TAD D04037      / FORM 1ST COMMAND (7214)
+  11 004001  1206          TAD D04006      / HERE FOR THE SECOND (7264)
+  12 004002  6704          KLSA            / LOAD COMMAND REGISTER
+  13 004003  6706          KGOA            / DO IT
+  14 004004  6703  L04004, KSBF            / READY?
+  15 004005  5204  D04005, JMP .-1         / 5204, WAIT FOR IT
+  16 004006  7264  D04006, CLA CMA CML RAL / 7264, NEW AC IGNORED BELOW
+  17 004007  6702          KSEN            / END/ERROR?
+  18 004010  7610          SKP CLA         / NO, PROCEED
+  19 004011  3211          DCA .           / YES. SHOULD THIS BE JMP .?
+  20 004012  3636          DCA I P04036    / ZERO THE WORD
+  21 004013  1205          TAD D04005      / GET 5204
+  22 004014  6704          KLSA            / LOAD COMMAND REGISTER
+  23 004015  6706  AGAIN,  KGOA            / DO IT
+  24 004016  6701          KSDR            / DATA READY?
+  25 004017  5216          JMP .-1         / WAIT FOR IT
+  26 004020  7002          BSW 
+  27 004021  7430          SZL 
+  28 004022  1636          TAD I P04036    / GET WORD
+  29 004023  7036          CML RTL RTR     / 7036 WTF?
+  30 004024  3636          DCA I P04036    / STORE A WORD
+  31 004025  7420          SNL 
+  32 004026  2236          ISZ P04036      / BUMP POINTER
+  33 004027  2235          ISZ D04035      / BUMP COUNT
+  34 004030  5215          JMP AGAIN       / GO AGAIN
+  35 004031  7346          CLA CLL CMA RTL / GET 7775
+  36 004032  7002          BSW             / GET 7577
+  37 004033  3235          DCA D04035      / STORE NEW COUNT
+  38 004034  5201          JMP START+1     / DO ANOTHER BLOCK
+  39 004035  7737  D04035, 7737            / COUNT OF WORDS
+  40 004036  3557  P04036, 3557            / STORE POINTER
+  41 004037  7730  D04037, 7730
+  42               $

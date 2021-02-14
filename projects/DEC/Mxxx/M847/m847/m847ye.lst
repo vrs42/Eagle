@@ -1,0 +1,39 @@
+   1               /MI8-EE (Typeset)
+   2               /THIS READS FROM HSR IN FUNKY FORMAT
+   3                       FIELD   0
+   4                       *7756
+   5 007756  7771  SUBR,   START+1         / ENTRY POINT FOR SUBR
+   6 007757  6014  AGAIN,  RFC             / FETCH NEXT CHARACTER
+   7 007760  6011          RSF             / WAIT FOR IT
+   8 007761  5360          JMP .-1
+   9 007762  7106          CLL RTL         / SHIFT AC UP
+  10 007763  7106          CLL RTL 
+  11 007764  6012          RRB             / OR IN NEXT CHARACTER
+  12 007765  7420          SNL             / DONE?
+  13 007766  5357          JMP AGAIN       / NO, MERGE IN NEXT CHAR
+  14 007767  5756          JMP I SUBR      / YES, RETURN
+  15 007770  4356  START,  JMS SUBR        / GET A WORD
+  16 007771  3373          DCA LOADP       / STORE NEXT WORD
+  17 007772  4356          JMS SUBR        / GET ANOTHER WORD
+  18               / FALL THROUGH ONTO LOADED WORD
+  19 007773  7777  LOADP,  7777            / DATA GETS STORED HERE
+  20 007774  7777          7777            / (ALL DIODES REMOVED)
+  21 007775  7777          7777
+  22 007776  7777          7777
+  23 007777  7777          7777
+  24               / ADDRESS WRAPS HERE
+  25 000000  7777          7777
+  26 000001  7777          7777
+  27 000002  7777          7777
+  28 000003  7777          7777
+  29 000004  7777          7777
+  30 000005  7777          7777
+  31 000006  7777          7777
+  32 000007  7777          7777
+  33 000010  7777          7777
+  34 000011  7777          7777
+  35 000012  7777          7777
+  36 000013  7777          7777
+  37 000014  7777          7777
+  38 000015  7777          7777
+  39               $
