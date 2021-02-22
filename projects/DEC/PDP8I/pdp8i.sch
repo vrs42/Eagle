@@ -16635,11 +16635,8 @@ DIN A3, landscape with extra doc field</description>
 <net name="ADDER03" class="0">
 <segment>
 <wire x1="30.48" y1="203.2" x2="2.54" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="203.2" x2="30.48" y2="203.2" width="0.1524" layer="91"/>
-<junction x="30.48" y="203.2"/>
 <label x="2.54" y="203.2" size="1.778" layer="95"/>
 <pinref part="EF34" gate="B0" pin="AJ2"/>
-<pinref part="EF35" gate="B0" pin="AJ2"/>
 </segment>
 <segment>
 <wire x1="269.24" y1="175.26" x2="246.38" y2="175.26" width="0.1524" layer="91"/>
@@ -16655,6 +16652,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="198.12" size="1.778" layer="95"/>
 <pinref part="EF34" gate="B0" pin="AB2"/>
 <pinref part="EF35" gate="B0" pin="AB2"/>
+<label x="246.38" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AND_ENABLE" class="0">
@@ -16665,6 +16663,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="195.58" size="1.778" layer="95"/>
 <pinref part="EF34" gate="B0" pin="AA1"/>
 <pinref part="EF35" gate="B0" pin="AA1"/>
+<label x="246.38" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RIGHT_SHIFT" class="0">
@@ -16675,6 +16674,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="193.04" size="1.778" layer="95"/>
 <pinref part="EF34" gate="B0" pin="AD2"/>
 <pinref part="EF35" gate="B0" pin="AD2"/>
+<label x="246.38" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DOUBLE_RIGHT_ROTATE" class="0">
@@ -16685,6 +16685,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="190.5" size="1.778" layer="95"/>
 <pinref part="EF34" gate="B0" pin="AD1"/>
 <pinref part="EF35" gate="B0" pin="AD1"/>
+<label x="246.38" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="NO_SHIFT" class="0">
@@ -16695,6 +16696,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="187.96" size="1.778" layer="95"/>
 <pinref part="EF34" gate="B0" pin="AE1"/>
 <pinref part="EF35" gate="B0" pin="AE1"/>
+<label x="246.38" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LEFT_SHIFT" class="0">
@@ -16705,6 +16707,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="185.42" size="1.778" layer="95"/>
 <pinref part="EF34" gate="B0" pin="AF2"/>
 <pinref part="EF35" gate="B0" pin="AF2"/>
+<label x="246.38" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DOUBLE_LEFT_ROTATE" class="0">
@@ -16715,6 +16718,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="182.88" size="1.778" layer="95"/>
 <pinref part="EF34" gate="B0" pin="AH1"/>
 <pinref part="EF35" gate="B0" pin="AH1"/>
+<label x="246.38" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADDER_L_" class="0">
@@ -17049,6 +17053,13 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="V18" gate="GND" pin="GND"/>
 </segment>
 </net>
+<net name="ADDER05" class="0">
+<segment>
+<pinref part="EF35" gate="B0" pin="AJ2"/>
+<wire x1="269.24" y1="203.2" x2="246.38" y2="203.2" width="0.1524" layer="91"/>
+<label x="246.38" y="203.2" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -17086,11 +17097,6 @@ DIN A3, landscape with extra doc field</description>
 </segment>
 </net>
 <net name="ADDER03" class="0">
-<segment>
-<wire x1="154.94" y1="200.66" x2="121.92" y2="200.66" width="0.1524" layer="91"/>
-<label x="121.92" y="200.66" size="1.778" layer="95"/>
-<pinref part="EF36" gate="B0" pin="AJ2"/>
-</segment>
 <segment>
 <wire x1="154.94" y1="177.8" x2="121.92" y2="177.8" width="0.1524" layer="91"/>
 <label x="121.92" y="177.8" size="1.778" layer="95"/>
@@ -17451,6 +17457,13 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="EF36" gate="B0" pin="BK2"/>
 </segment>
 </net>
+<net name="ADDER07" class="0">
+<segment>
+<wire x1="154.94" y1="200.66" x2="121.92" y2="200.66" width="0.1524" layer="91"/>
+<label x="121.92" y="200.66" size="1.778" layer="95"/>
+<pinref part="EF36" gate="B0" pin="AJ2"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -17486,12 +17499,9 @@ DIN A3, landscape with extra doc field</description>
 <nets>
 <net name="ADDER09" class="0">
 <segment>
-<wire x1="269.24" y1="213.36" x2="30.48" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="213.36" x2="2.54" y2="213.36" width="0.1524" layer="91"/>
-<junction x="30.48" y="213.36"/>
 <label x="2.54" y="213.36" size="1.778" layer="95"/>
 <pinref part="EF37" gate="B0" pin="AJ2"/>
-<pinref part="EF38" gate="B0" pin="AJ2"/>
 </segment>
 <segment>
 <wire x1="269.24" y1="185.42" x2="246.38" y2="185.42" width="0.1524" layer="91"/>
@@ -17507,6 +17517,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="208.28" size="1.778" layer="95"/>
 <pinref part="EF37" gate="B0" pin="AB2"/>
 <pinref part="EF38" gate="B0" pin="AB2"/>
+<label x="246.38" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AND_ENABLE" class="0">
@@ -17517,6 +17528,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="205.74" size="1.778" layer="95"/>
 <pinref part="EF37" gate="B0" pin="AA1"/>
 <pinref part="EF38" gate="B0" pin="AA1"/>
+<label x="246.38" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RIGHT_SHIFT" class="0">
@@ -17527,6 +17539,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="203.2" size="1.778" layer="95"/>
 <pinref part="EF37" gate="B0" pin="AD2"/>
 <pinref part="EF38" gate="B0" pin="AD2"/>
+<label x="246.38" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DOUBLE_RIGHT_ROTATE" class="0">
@@ -17537,6 +17550,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="200.66" size="1.778" layer="95"/>
 <pinref part="EF37" gate="B0" pin="AD1"/>
 <pinref part="EF38" gate="B0" pin="AD1"/>
+<label x="246.38" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="NO_SHIFT" class="0">
@@ -17547,6 +17561,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="198.12" size="1.778" layer="95"/>
 <pinref part="EF37" gate="B0" pin="AE1"/>
 <pinref part="EF38" gate="B0" pin="AE1"/>
+<label x="246.38" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LEFT_SHIFT" class="0">
@@ -17557,6 +17572,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="195.58" size="1.778" layer="95"/>
 <pinref part="EF37" gate="B0" pin="AF2"/>
 <pinref part="EF38" gate="B0" pin="AF2"/>
+<label x="246.38" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DOUBLE_LEFT_ROTATE" class="0">
@@ -17567,6 +17583,7 @@ DIN A3, landscape with extra doc field</description>
 <label x="2.54" y="193.04" size="1.778" layer="95"/>
 <pinref part="EF37" gate="B0" pin="AH1"/>
 <pinref part="EF38" gate="B0" pin="AH1"/>
+<label x="246.38" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADDER05" class="0">
@@ -17950,6 +17967,13 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="309.88" y1="63.5" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
 <label x="309.88" y="63.5" size="1.778" layer="95" rot="R90"/>
 <pinref part="EF38" gate="B0" pin="BD1"/>
+</segment>
+</net>
+<net name="ADDER11" class="0">
+<segment>
+<pinref part="EF38" gate="B0" pin="AJ2"/>
+<wire x1="269.24" y1="213.36" x2="246.38" y2="213.36" width="0.1524" layer="91"/>
+<label x="246.38" y="213.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

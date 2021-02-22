@@ -7395,7 +7395,9 @@ design rules under a new name.</description>
 <contactref element="F32" pad="P1"/>
 <contactref element="EF34" pad="AB1"/>
 <contactref element="EF39" pad="AF1"/>
-<wire x1="20.6375" y1="246.38" x2="84.1375" y2="259.08" width="0" layer="19" extent="1-1"/>
+<contactref element="EF38" pad="AJ2"/>
+<wire x1="26.9875" y1="240.03" x2="84.1375" y2="259.08" width="0" layer="19" extent="1-1"/>
+<wire x1="20.6375" y1="246.38" x2="26.9875" y2="240.03" width="0" layer="19" extent="1-1"/>
 <wire x1="112.7125" y1="154.305" x2="84.1375" y2="259.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDER11_">
@@ -7501,13 +7503,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="ADDER03">
 <contactref element="EF34" pad="AJ2"/>
-<contactref element="EF35" pad="AJ2"/>
 <contactref element="EF35" pad="AF1"/>
-<contactref element="EF36" pad="AJ2"/>
 <contactref element="EF36" pad="AC1"/>
 <wire x1="77.7875" y1="240.03" x2="71.4375" y2="246.38" width="0" layer="19" extent="1-1"/>
-<wire x1="65.0875" y1="240.03" x2="71.4375" y2="246.38" width="0" layer="19" extent="1-1"/>
-<wire x1="52.3875" y1="240.03" x2="65.0875" y2="240.03" width="0" layer="19" extent="1-1"/>
 <wire x1="61.9125" y1="255.905" x2="71.4375" y2="246.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TT_LINE_SHIFT_">
@@ -7709,6 +7707,8 @@ design rules under a new name.</description>
 <signal name="ADDER05">
 <contactref element="EF37" pad="AC1"/>
 <contactref element="EF36" pad="AF1"/>
+<contactref element="EF35" pad="AJ2"/>
+<wire x1="65.0875" y1="240.03" x2="58.7375" y2="246.38" width="0" layer="19" extent="1-1"/>
 <wire x1="49.2125" y1="255.905" x2="58.7375" y2="246.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDER06">
@@ -7723,6 +7723,8 @@ design rules under a new name.</description>
 <signal name="ADDER07">
 <contactref element="EF37" pad="AF1"/>
 <contactref element="EF38" pad="AC1"/>
+<contactref element="EF36" pad="AJ2"/>
+<wire x1="52.3875" y1="240.03" x2="46.0375" y2="246.38" width="0" layer="19" extent="1-1"/>
 <wire x1="36.5125" y1="255.905" x2="46.0375" y2="246.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADDER08">
@@ -7736,11 +7738,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="ADDER09">
 <contactref element="EF37" pad="AJ2"/>
-<contactref element="EF38" pad="AJ2"/>
 <contactref element="EF38" pad="AF1"/>
 <contactref element="EF39" pad="AC1"/>
 <wire x1="39.6875" y1="240.03" x2="33.3375" y2="246.38" width="0" layer="19" extent="1-1"/>
-<wire x1="26.9875" y1="240.03" x2="33.3375" y2="246.38" width="0" layer="19" extent="1-1"/>
 <wire x1="23.8125" y1="255.905" x2="33.3375" y2="246.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CARRY_OUT6_">
