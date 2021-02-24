@@ -26266,6 +26266,12 @@ DIN A3, landscape with extra doc field</description>
 <label x="231.14" y="121.92" size="1.778" layer="95"/>
 <pinref part="D24" gate="S1" pin="1"/>
 </segment>
+<segment>
+<wire x1="83.82" y1="132.08" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="132.08" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
+<label x="83.82" y="132.08" size="1.778" layer="95"/>
+<pinref part="D15" gate="N1" pin="IN2"/>
+</segment>
 </net>
 <net name="EAE_TP_" class="0">
 <segment>
@@ -26826,12 +26832,6 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="228.6" y1="114.3" x2="241.3" y2="114.3" width="0.1524" layer="91"/>
 <label x="231.14" y="114.3" size="1.778" layer="95"/>
 <pinref part="D24" gate="S1" pin="0"/>
-</segment>
-<segment>
-<wire x1="83.82" y1="132.08" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="132.08" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
-<label x="83.82" y="132.08" size="1.778" layer="95"/>
-<pinref part="D15" gate="N1" pin="IN2"/>
 </segment>
 </net>
 <net name="EAE_ON" class="0">

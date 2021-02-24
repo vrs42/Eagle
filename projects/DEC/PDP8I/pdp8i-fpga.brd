@@ -11196,9 +11196,11 @@ design rules under a new name.</description>
 <contactref element="C22" pad="U2"/>
 <contactref element="D24" pad="S1"/>
 <contactref element="D12" pad="M2"/>
+<contactref element="D15" pad="M1"/>
 <wire x1="233.3625" y1="344.17" x2="214.3125" y2="281.305" width="0" layer="19" extent="1-1"/>
-<wire x1="341.3125" y1="325.755" x2="233.3625" y2="344.17" width="0" layer="19" extent="1-1"/>
-<wire x1="360.3625" y1="294.005" x2="341.3125" y2="325.755" width="0" layer="19" extent="1-1"/>
+<wire x1="328.6125" y1="294.005" x2="233.3625" y2="344.17" width="0" layer="19" extent="1-1"/>
+<wire x1="360.3625" y1="294.005" x2="328.6125" y2="294.005" width="0" layer="19" extent="1-1"/>
+<wire x1="341.3125" y1="325.755" x2="328.6125" y2="294.005" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$596">
 <contactref element="C13" pad="E1"/>
@@ -11369,8 +11371,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="EAE_RUN_">
 <contactref element="D24" pad="U1"/>
-<contactref element="D15" pad="M1"/>
-<wire x1="328.6125" y1="294.005" x2="214.3125" y2="274.955" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EAE_ON">
 <contactref element="D24" pad="P1"/>
