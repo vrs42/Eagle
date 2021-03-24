@@ -60,6 +60,9 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -68,8 +71,33 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="ATT_MISO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="centerline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -132,7 +160,9 @@ DIN A3, landscape with extra doc field</description>
 <packages>
 <package name="H807">
 <description>One-wide female edge connector</description>
-<wire x1="-6.35" y1="-31.75" x2="-6.35" y2="34.925" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-31.75" x2="-6.35" y2="-27.94" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-27.94" x2="-6.35" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-26.67" x2="-6.35" y2="34.925" width="0.127" layer="21"/>
 <wire x1="6.4135" y1="34.925" x2="6.4135" y2="-31.75" width="0.127" layer="21"/>
 <wire x1="6.4135" y1="-31.75" x2="4.7625" y2="-31.75" width="0.127" layer="21"/>
 <wire x1="4.7625" y1="-31.75" x2="1.5875" y2="-31.75" width="0.127" layer="21"/>
@@ -211,10 +241,14 @@ DIN A3, landscape with extra doc field</description>
 <text x="-3.81" y="31.75" size="1.27" layer="21">&gt;Name</text>
 <text x="-3.81" y="-29.21" size="1.27" layer="21">&gt;Name</text>
 <rectangle x1="-6.35" y1="-29.21" x2="6.2865" y2="33.02" layer="39"/>
+<wire x1="6.35" y1="-27.94" x2="-6.35" y2="-27.94" width="0.3048" layer="21"/>
+<wire x1="6.35" y1="-26.67" x2="-6.35" y2="-26.67" width="0.3048" layer="21"/>
 </package>
 <package name="H807-2">
 <description>Two-wide Female Edge Connector</description>
-<wire x1="-6.35" y1="0" x2="-6.35" y2="66.675" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0" x2="-6.35" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="3.175" x2="-6.35" y2="4.7625" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="4.7625" x2="-6.35" y2="66.675" width="0.127" layer="21"/>
 <wire x1="1.5875" y1="66.675" x2="4.7625" y2="66.675" width="0.127" layer="21"/>
 <wire x1="4.7625" y1="66.675" x2="6.4135" y2="66.675" width="0.127" layer="21"/>
 <wire x1="6.4135" y1="66.675" x2="6.4135" y2="0" width="0.127" layer="21"/>
@@ -224,14 +258,12 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="-4.7625" y1="0" x2="-6.35" y2="0" width="0.127" layer="21"/>
 <wire x1="-1.5875" y1="66.675" x2="-4.7625" y2="66.675" width="0.127" layer="21"/>
 <wire x1="-4.7625" y1="66.675" x2="-6.35" y2="66.675" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="62.23" x2="1.27" y2="62.23" width="0.3048" layer="21"/>
-<wire x1="1.27" y1="62.23" x2="1.27" y2="5.08" width="0.3048" layer="21"/>
-<wire x1="1.27" y1="5.08" x2="-1.27" y2="5.08" width="0.3048" layer="21"/>
-<wire x1="-1.27" y1="5.08" x2="-1.27" y2="62.23" width="0.3048" layer="21"/>
-<wire x1="-1.27" y1="-7.62" x2="1.27" y2="-7.62" width="0.3048" layer="21"/>
-<wire x1="-1.27" y1="-64.77" x2="-1.27" y2="-7.62" width="0.3048" layer="21"/>
-<wire x1="1.27" y1="-7.62" x2="1.27" y2="-64.77" width="0.3048" layer="21"/>
-<wire x1="1.27" y1="-64.77" x2="-1.27" y2="-64.77" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="61.9125" x2="1.27" y2="61.9125" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="61.9125" x2="1.27" y2="4.7625" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="4.7625" x2="-1.27" y2="61.9125" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="-7.9375" x2="1.27" y2="-7.9375" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="-65.0875" x2="-1.27" y2="-7.9375" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="-7.9375" x2="1.27" y2="-65.0875" width="0.3048" layer="21"/>
 <wire x1="-1.5875" y1="-69.85" x2="-4.7625" y2="-69.85" width="0.127" layer="21"/>
 <wire x1="-4.7625" y1="-69.85" x2="-6.35" y2="-69.85" width="0.127" layer="21"/>
 <wire x1="6.4135" y1="-69.85" x2="4.7625" y2="-69.85" width="0.127" layer="21"/>
@@ -241,7 +273,9 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="4.7625" y1="-3.175" x2="6.4135" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="-1.5875" y1="-3.175" x2="-4.7625" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="-4.7625" y1="-3.175" x2="-6.35" y2="-3.175" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-69.85" x2="-6.35" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-69.85" x2="-6.35" y2="-66.675" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-66.675" x2="-6.35" y2="-65.0875" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-65.0875" x2="-6.35" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="1.5875" y1="-3.175" x2="-4.7625" y2="-3.175" width="0.127" layer="21" curve="-126.869898"/>
 <wire x1="4.7625" y1="-3.175" x2="-1.5875" y2="-3.175" width="0.127" layer="21" curve="-126.869898"/>
 <wire x1="-4.7625" y1="0" x2="1.5875" y2="0" width="0.127" layer="21" curve="-126.869898"/>
@@ -372,6 +406,14 @@ DIN A3, landscape with extra doc field</description>
 <text x="-0.635" y="-57.15" size="1.27" layer="22" rot="MR0">T</text>
 <rectangle x1="-6.35" y1="-67.6275" x2="6.2865" y2="-5.08" layer="39"/>
 <rectangle x1="-6.35" y1="1.7145" x2="6.2866" y2="64.2621" layer="39"/>
+<wire x1="-6.35" y1="4.7625" x2="-1.27" y2="4.7625" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="4.7625" x2="1.27" y2="4.7625" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="4.7625" x2="6.35" y2="4.7625" width="0.3048" layer="21"/>
+<wire x1="-6.35" y1="3.175" x2="6.35" y2="3.175" width="0.3048" layer="21"/>
+<wire x1="-6.35" y1="-66.675" x2="6.35" y2="-66.675" width="0.3048" layer="21"/>
+<wire x1="-6.35" y1="-65.0875" x2="-1.27" y2="-65.0875" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="-65.0875" x2="1.27" y2="-65.0875" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="-65.0875" x2="6.35" y2="-65.0875" width="0.3048" layer="21"/>
 </package>
 <package name="H800">
 <description>One-wide female edge connector, 18 pin</description>
@@ -793,6 +835,170 @@ DIN A3, landscape with extra doc field</description>
 <hole x="4.7625" y="9.525" drill="1.0922"/>
 <hole x="1.5875" y="6.35" drill="1.0922"/>
 </package>
+<package name="ECS2418">
+<wire x1="-6.35" y1="-31.75" x2="-6.35" y2="34.925" width="0.127" layer="21"/>
+<wire x1="6.4135" y1="34.925" x2="6.4135" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="6.4135" y1="-31.75" x2="4.7625" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-31.75" x2="1.5875" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-31.75" x2="-6.35" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="34.925" x2="-6.35" y2="34.925" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="30.48" x2="1.27" y2="30.48" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="30.48" x2="1.27" y2="-26.67" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="-26.67" x2="-1.27" y2="-26.67" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="-26.67" x2="-1.27" y2="30.48" width="0.3048" layer="21"/>
+<wire x1="1.5875" y1="34.925" x2="4.7625" y2="34.925" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="34.925" x2="6.35" y2="34.925" width="0.127" layer="21"/>
+<wire x1="1.5875" y1="34.925" x2="-4.7625" y2="34.925" width="0.127" layer="21" curve="-126.869898"/>
+<wire x1="-4.7625" y1="-31.75" x2="1.5875" y2="-31.75" width="0.127" layer="21" curve="-126.869898"/>
+<wire x1="4.7625" y1="34.925" x2="-1.5875" y2="34.925" width="0.127" layer="21" curve="-126.869898"/>
+<wire x1="-1.5875" y1="34.925" x2="-4.7625" y2="34.925" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="-31.75" x2="4.7625" y2="-31.75" width="0.127" layer="21" curve="-126.869898"/>
+<wire x1="-1.5875" y1="-31.75" x2="-4.7625" y2="-31.75" width="0.127" layer="21"/>
+<pad name="U2" x="-1.5875" y="-22.225" drill="1.15061875" shape="octagon"/>
+<pad name="V2" x="-1.5875" y="-25.4" drill="1.15061875" shape="octagon"/>
+<pad name="U1" x="1.5875" y="-22.225" drill="1.15061875" shape="octagon"/>
+<pad name="V1" x="1.5875" y="-25.4" drill="1.15061875" shape="octagon"/>
+<pad name="T2" x="-1.5875" y="-19.05" drill="1.15061875" shape="octagon"/>
+<pad name="R2" x="-1.5875" y="-12.7" drill="1.15061875" shape="octagon"/>
+<pad name="N2" x="-1.5875" y="-6.35" drill="1.15061875" shape="octagon"/>
+<pad name="T1" x="1.5875" y="-19.05" drill="1.15061875" shape="octagon"/>
+<pad name="S1" x="1.5875" y="-15.875" drill="1.15061875" shape="octagon"/>
+<pad name="S2" x="-1.5875" y="-15.875" drill="1.15061875" shape="octagon"/>
+<pad name="R1" x="1.5875" y="-12.7" drill="1.15061875" shape="octagon"/>
+<pad name="P1" x="1.5875" y="-9.525" drill="1.15061875" shape="octagon"/>
+<pad name="P2" x="-1.5875" y="-9.525" drill="1.15061875" shape="octagon"/>
+<pad name="N1" x="1.5875" y="-6.35" drill="1.15061875" shape="octagon"/>
+<pad name="M1" x="1.5875" y="-3.175" drill="1.15061875" shape="octagon"/>
+<pad name="K1" x="1.5875" y="3.175" drill="1.15061875" shape="octagon"/>
+<pad name="H1" x="1.5875" y="9.525" drill="1.15061875" shape="octagon"/>
+<pad name="E1" x="1.5875" y="15.875" drill="1.15061875" shape="octagon"/>
+<pad name="C1" x="1.5875" y="22.225" drill="1.15061875" shape="octagon"/>
+<pad name="A1" x="1.5875" y="28.575" drill="1.15061875" shape="octagon"/>
+<pad name="A2" x="-1.5875" y="28.575" drill="1.15061875" shape="octagon"/>
+<pad name="C2" x="-1.5875" y="22.225" drill="1.15061875" shape="octagon"/>
+<pad name="E2" x="-1.5875" y="15.875" drill="1.15061875" shape="octagon"/>
+<pad name="H2" x="-1.5875" y="9.525" drill="1.15061875" shape="octagon"/>
+<pad name="K2" x="-1.5875" y="3.175" drill="1.15061875" shape="octagon"/>
+<pad name="M2" x="-1.5875" y="-3.175" drill="1.15061875" shape="octagon"/>
+<pad name="L2" x="-1.5875" y="0" drill="1.15061875" shape="octagon"/>
+<pad name="J2" x="-1.5875" y="6.35" drill="1.15061875" shape="octagon"/>
+<pad name="F2" x="-1.5875" y="12.7" drill="1.15061875" shape="octagon"/>
+<pad name="D2" x="-1.5875" y="19.05" drill="1.15061875" shape="octagon"/>
+<pad name="B2" x="-1.5875" y="25.4" drill="1.15061875" shape="octagon"/>
+<pad name="B1" x="1.5875" y="25.4" drill="1.15061875" shape="octagon"/>
+<pad name="D1" x="1.5875" y="19.05" drill="1.15061875" shape="octagon"/>
+<pad name="F1" x="1.5875" y="12.7" drill="1.15061875" shape="octagon"/>
+<pad name="J1" x="1.5875" y="6.35" drill="1.15061875" shape="octagon"/>
+<pad name="L1" x="1.5875" y="0" drill="1.15061875" shape="octagon"/>
+<text x="4.1275" y="-25.4" size="1.27" layer="22" rot="MR0">V</text>
+<text x="4.1275" y="-22.225" size="1.27" layer="22" rot="MR0">U</text>
+<text x="4.1275" y="-19.05" size="1.27" layer="22" rot="MR0">T</text>
+<text x="4.1275" y="-15.875" size="1.27" layer="22" rot="MR0">S</text>
+<text x="4.1275" y="-12.7" size="1.27" layer="22" rot="MR0">R</text>
+<text x="4.1275" y="-9.525" size="1.27" layer="22" rot="MR0">P</text>
+<text x="4.1275" y="-6.35" size="1.27" layer="22" rot="MR0">N</text>
+<text x="4.1275" y="-3.175" size="1.27" layer="22" rot="MR0">M</text>
+<text x="4.1275" y="0" size="1.27" layer="22" rot="MR0">L</text>
+<text x="4.1275" y="3.175" size="1.27" layer="22" rot="MR0">K</text>
+<text x="4.1275" y="6.35" size="1.27" layer="22" rot="MR0">J</text>
+<text x="4.1275" y="9.525" size="1.27" layer="22" rot="MR0">H</text>
+<text x="4.1275" y="12.7" size="1.27" layer="22" rot="MR0">F</text>
+<text x="4.1275" y="15.875" size="1.27" layer="22" rot="MR0">E</text>
+<text x="4.1275" y="19.05" size="1.27" layer="22" rot="MR0">D</text>
+<text x="4.1275" y="22.225" size="1.27" layer="22" rot="MR0">C</text>
+<text x="4.1275" y="25.4" size="1.27" layer="22" rot="MR0">B</text>
+<text x="4.1275" y="28.575" size="1.27" layer="22" rot="MR0">A</text>
+<text x="3.175" y="30.48" size="1.27" layer="22" rot="MR0">1</text>
+<text x="-3.175" y="30.48" size="1.27" layer="22" rot="MR0">2</text>
+<text x="-3.175" y="-27.94" size="1.27" layer="22" rot="MR0">2</text>
+<text x="3.175" y="-27.94" size="1.27" layer="22" rot="MR0">1</text>
+<text x="-3.81" y="31.75" size="1.27" layer="21">&gt;Name</text>
+<text x="-3.81" y="-29.21" size="1.27" layer="21">&gt;Name</text>
+<rectangle x1="-6.35" y1="-29.21" x2="6.2865" y2="33.02" layer="39"/>
+<wire x1="6.35" y1="-26.67" x2="-6.35" y2="-26.67" width="0.3048" layer="21"/>
+<wire x1="6.35" y1="-28.575" x2="-6.35" y2="-28.575" width="0.3048" layer="21"/>
+</package>
+<package name="EDAC346-36">
+<wire x1="-6.35" y1="-31.75" x2="-6.35" y2="34.925" width="0.127" layer="21"/>
+<wire x1="6.4135" y1="34.925" x2="6.4135" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="6.4135" y1="-31.75" x2="4.7625" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-31.75" x2="1.5875" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-31.75" x2="-6.35" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="34.925" x2="-6.35" y2="34.925" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="30.48" x2="1.27" y2="30.48" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="30.48" x2="1.27" y2="-26.67" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="-26.67" x2="-1.27" y2="-26.67" width="0.3048" layer="21"/>
+<wire x1="-1.27" y1="-26.67" x2="-1.27" y2="30.48" width="0.3048" layer="21"/>
+<wire x1="1.5875" y1="34.925" x2="4.7625" y2="34.925" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="34.925" x2="6.35" y2="34.925" width="0.127" layer="21"/>
+<wire x1="1.5875" y1="34.925" x2="-4.7625" y2="34.925" width="0.127" layer="21" curve="-126.869898"/>
+<wire x1="-4.7625" y1="-31.75" x2="1.5875" y2="-31.75" width="0.127" layer="21" curve="-126.869898"/>
+<wire x1="4.7625" y1="34.925" x2="-1.5875" y2="34.925" width="0.127" layer="21" curve="-126.869898"/>
+<wire x1="-1.5875" y1="34.925" x2="-4.7625" y2="34.925" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="-31.75" x2="4.7625" y2="-31.75" width="0.127" layer="21" curve="-126.869898"/>
+<wire x1="-1.5875" y1="-31.75" x2="-4.7625" y2="-31.75" width="0.127" layer="21"/>
+<pad name="U2" x="-3.01625" y="-22.225" drill="1.0922" shape="octagon"/>
+<pad name="V2" x="-3.01625" y="-25.4" drill="1.0922" shape="octagon"/>
+<pad name="U1" x="3.01625" y="-22.225" drill="1.0922" shape="octagon"/>
+<pad name="V1" x="3.01625" y="-25.4" drill="1.0922" shape="octagon"/>
+<pad name="T2" x="-3.01625" y="-19.05" drill="1.0922" shape="octagon"/>
+<pad name="R2" x="-3.01625" y="-12.7" drill="1.0922" shape="octagon"/>
+<pad name="N2" x="-3.01625" y="-6.35" drill="1.0922" shape="octagon"/>
+<pad name="T1" x="3.01625" y="-19.05" drill="1.0922" shape="octagon"/>
+<pad name="S1" x="3.01625" y="-15.875" drill="1.0922" shape="octagon"/>
+<pad name="S2" x="-3.01625" y="-15.875" drill="1.0922" shape="octagon"/>
+<pad name="R1" x="3.01625" y="-12.7" drill="1.0922" shape="octagon"/>
+<pad name="P1" x="3.01625" y="-9.525" drill="1.0922" shape="octagon"/>
+<pad name="P2" x="-3.01625" y="-9.525" drill="1.0922" shape="octagon"/>
+<pad name="N1" x="3.01625" y="-6.35" drill="1.0922" shape="octagon"/>
+<pad name="M1" x="3.01625" y="-3.175" drill="1.0922" shape="octagon"/>
+<pad name="K1" x="3.01625" y="3.175" drill="1.0922" shape="octagon"/>
+<pad name="H1" x="3.01625" y="9.525" drill="1.0922" shape="octagon"/>
+<pad name="E1" x="3.01625" y="15.875" drill="1.0922" shape="octagon"/>
+<pad name="C1" x="3.01625" y="22.225" drill="1.0922" shape="octagon"/>
+<pad name="A1" x="3.01625" y="28.575" drill="1.0922" shape="octagon"/>
+<pad name="A2" x="-3.01625" y="28.575" drill="1.0922" shape="octagon"/>
+<pad name="C2" x="-3.01625" y="22.225" drill="1.0922" shape="octagon"/>
+<pad name="E2" x="-3.01625" y="15.875" drill="1.0922" shape="octagon"/>
+<pad name="H2" x="-3.01625" y="9.525" drill="1.0922" shape="octagon"/>
+<pad name="K2" x="-3.01625" y="3.175" drill="1.0922" shape="octagon"/>
+<pad name="M2" x="-3.01625" y="-3.175" drill="1.0922" shape="octagon"/>
+<pad name="L2" x="-3.01625" y="0" drill="1.0922" shape="octagon"/>
+<pad name="J2" x="-3.01625" y="6.35" drill="1.0922" shape="octagon"/>
+<pad name="F2" x="-3.01625" y="12.7" drill="1.0922" shape="octagon"/>
+<pad name="D2" x="-3.01625" y="19.05" drill="1.0922" shape="octagon"/>
+<pad name="B2" x="-3.01625" y="25.4" drill="1.0922" shape="octagon"/>
+<pad name="B1" x="3.01625" y="25.4" drill="1.0922" shape="octagon"/>
+<pad name="D1" x="3.01625" y="19.05" drill="1.0922" shape="octagon"/>
+<pad name="F1" x="3.01625" y="12.7" drill="1.0922" shape="octagon"/>
+<pad name="J1" x="3.01625" y="6.35" drill="1.0922" shape="octagon"/>
+<pad name="L1" x="3.01625" y="0" drill="1.0922" shape="octagon"/>
+<text x="5.3975" y="-25.4" size="1.27" layer="22" rot="MR0">V</text>
+<text x="5.3975" y="-22.225" size="1.27" layer="22" rot="MR0">U</text>
+<text x="5.3975" y="-19.05" size="1.27" layer="22" rot="MR0">T</text>
+<text x="5.3975" y="-15.875" size="1.27" layer="22" rot="MR0">S</text>
+<text x="5.3975" y="-12.7" size="1.27" layer="22" rot="MR0">R</text>
+<text x="5.3975" y="-9.525" size="1.27" layer="22" rot="MR0">P</text>
+<text x="5.3975" y="-6.35" size="1.27" layer="22" rot="MR0">N</text>
+<text x="5.3975" y="-3.175" size="1.27" layer="22" rot="MR0">M</text>
+<text x="5.3975" y="0" size="1.27" layer="22" rot="MR0">L</text>
+<text x="5.3975" y="3.175" size="1.27" layer="22" rot="MR0">K</text>
+<text x="5.3975" y="6.35" size="1.27" layer="22" rot="MR0">J</text>
+<text x="5.3975" y="9.525" size="1.27" layer="22" rot="MR0">H</text>
+<text x="5.3975" y="12.7" size="1.27" layer="22" rot="MR0">F</text>
+<text x="5.3975" y="15.875" size="1.27" layer="22" rot="MR0">E</text>
+<text x="5.3975" y="19.05" size="1.27" layer="22" rot="MR0">D</text>
+<text x="5.3975" y="22.225" size="1.27" layer="22" rot="MR0">C</text>
+<text x="5.3975" y="25.4" size="1.27" layer="22" rot="MR0">B</text>
+<text x="5.3975" y="28.575" size="1.27" layer="22" rot="MR0">A</text>
+<text x="3.175" y="30.48" size="1.27" layer="22" rot="MR0">1</text>
+<text x="-3.175" y="30.48" size="1.27" layer="22" rot="MR0">2</text>
+<text x="-3.175" y="-27.94" size="1.27" layer="22" rot="MR0">2</text>
+<text x="3.175" y="-27.94" size="1.27" layer="22" rot="MR0">1</text>
+<text x="-3.81" y="31.75" size="1.27" layer="21">&gt;Name</text>
+<text x="-3.81" y="-29.21" size="1.27" layer="21">&gt;Name</text>
+<rectangle x1="-6.35" y1="-29.21" x2="6.2865" y2="33.02" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="D-FLOP">
@@ -885,6 +1091,7 @@ DIN A3, landscape with extra doc field</description>
 <pin name="IN2" x="-10.16" y="-2.54" visible="pad" direction="in"/>
 </symbol>
 <symbol name="PULL-UP">
+<description>A pull-up.</description>
 <wire x1="-1.27" y1="3.556" x2="1.27" y2="2.286" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-0.254" x2="-1.27" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="1.27" y1="2.286" x2="-1.27" y2="1.016" width="0.254" layer="94"/>
@@ -900,6 +1107,7 @@ DIN A3, landscape with extra doc field</description>
 <text x="1.778" y="4.064" size="1.27" layer="94" rot="R90">+5V</text>
 <text x="2.54" y="0" size="1.27" layer="94">&gt;Part</text>
 <pin name="P$1" x="10.16" y="-7.62" visible="pad" length="middle" direction="pas" rot="R180"/>
+<text x="2.54" y="-2.54" size="1.27" layer="94">&gt;Value</text>
 </symbol>
 <symbol name="M310">
 <wire x1="-12.7" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
@@ -2580,9 +2788,9 @@ DIN A3, landscape with extra doc field</description>
 <pin name="P2" x="-27.94" y="15.24" visible="pad" length="middle" direction="in"/>
 </symbol>
 <symbol name="M706X">
-<wire x1="-96.52" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="94"/>
-<wire x1="-96.52" y1="-76.2" x2="96.52" y2="-76.2" width="0.1524" layer="94"/>
-<wire x1="-96.52" y1="78.74" x2="-96.52" y2="-76.2" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="76.2" x2="96.52" y2="78.74" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="-78.74" x2="96.52" y2="-76.2" width="0.1524" layer="94"/>
+<wire x1="-96.52" y1="76.2" x2="-96.52" y2="-78.74" width="0.1524" layer="94"/>
 <wire x1="96.52" y1="78.74" x2="96.52" y2="-76.2" width="0.1524" layer="94"/>
 <text x="-60.96" y="50.8" size="1.778" layer="94">&gt;PART</text>
 <text x="-60.96" y="48.26" size="1.778" layer="94">&gt;VALUE</text>
@@ -2605,7 +2813,7 @@ DIN A3, landscape with extra doc field</description>
 <text x="-93.98" y="0" size="1.778" layer="94">INITIALIZE</text>
 <text x="-93.98" y="-7.62" size="1.778" layer="94">TTI_CLOCK</text>
 <text x="-93.98" y="-12.7" size="1.778" layer="94">CLOCK_SCALE</text>
-<text x="-93.98" y="-20.32" size="1.778" layer="94">KCC_</text>
+<text x="-93.98" y="-22.86" size="1.778" layer="94">KCC_</text>
 <text x="-93.98" y="-35.56" size="1.778" layer="94">RX_DATA</text>
 <text x="-93.98" y="-43.18" size="1.778" layer="94">TTI_DATA</text>
 <text x="-93.98" y="-53.34" size="1.778" layer="94">TTI2</text>
@@ -2640,7 +2848,7 @@ DIN A3, landscape with extra doc field</description>
 <pin name="BF2" x="-101.6" y="0" visible="pad" length="middle" direction="in"/>
 <pin name="AN1" x="-101.6" y="-7.62" visible="pad" length="middle" direction="in"/>
 <pin name="BU1" x="-101.6" y="-12.7" visible="pad" length="middle" direction="in"/>
-<pin name="AV2" x="-101.6" y="-20.32" visible="pad" length="middle" direction="in"/>
+<pin name="AV2" x="-101.6" y="-22.86" visible="pad" length="middle" direction="in"/>
 <pin name="BM2" x="-101.6" y="-35.56" visible="pad" length="middle" direction="in"/>
 <pin name="AR1" x="-101.6" y="-43.18" visible="pad" length="middle" direction="in"/>
 <pin name="BR2" x="-101.6" y="-58.42" visible="pad" length="middle" direction="in"/>
@@ -2670,6 +2878,8 @@ DIN A3, landscape with extra doc field</description>
 <pin name="BV2" x="101.6" y="-63.5" visible="pad" length="middle" direction="out" rot="R180"/>
 <pin name="BD1" x="-101.6" y="-71.12" visible="pad" length="middle" direction="in"/>
 <pin name="AS1" x="101.6" y="25.4" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="BP2" x="-101.6" y="-17.78" visible="pad" length="middle" direction="in"/>
+<text x="-93.98" y="-17.78" size="1.778" layer="94">CLOCK_SCALE</text>
 </symbol>
 <symbol name="M701">
 <wire x1="-27.94" y1="-33.02" x2="30.48" y2="-33.02" width="0.1524" layer="94"/>
@@ -4548,6 +4758,92 @@ DIN A3, landscape with extra doc field</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="ECS" package="ECS2418">
+<connects>
+<connect gate="A1" pin="P$2" pad="A1"/>
+<connect gate="A2" pin="P$2" pad="A2"/>
+<connect gate="B1" pin="P$2" pad="B1"/>
+<connect gate="B2" pin="P$2" pad="B2"/>
+<connect gate="C1" pin="P$2" pad="C1"/>
+<connect gate="C2" pin="P$2" pad="C2"/>
+<connect gate="D1" pin="P$2" pad="D1"/>
+<connect gate="D2" pin="P$2" pad="D2"/>
+<connect gate="E1" pin="P$2" pad="E1"/>
+<connect gate="E2" pin="P$2" pad="E2"/>
+<connect gate="F1" pin="P$2" pad="F1"/>
+<connect gate="F2" pin="P$2" pad="F2"/>
+<connect gate="H1" pin="P$2" pad="H1"/>
+<connect gate="H2" pin="P$2" pad="H2"/>
+<connect gate="J1" pin="P$2" pad="J1"/>
+<connect gate="J2" pin="P$2" pad="J2"/>
+<connect gate="K1" pin="P$2" pad="K1"/>
+<connect gate="K2" pin="P$2" pad="K2"/>
+<connect gate="L1" pin="P$2" pad="L1"/>
+<connect gate="L2" pin="P$2" pad="L2"/>
+<connect gate="M1" pin="P$2" pad="M1"/>
+<connect gate="M2" pin="P$2" pad="M2"/>
+<connect gate="N1" pin="P$2" pad="N1"/>
+<connect gate="N2" pin="P$2" pad="N2"/>
+<connect gate="P1" pin="P$2" pad="P1"/>
+<connect gate="P2" pin="P$2" pad="P2"/>
+<connect gate="R1" pin="P$2" pad="R1"/>
+<connect gate="R2" pin="P$2" pad="R2"/>
+<connect gate="S1" pin="P$2" pad="S1"/>
+<connect gate="S2" pin="P$2" pad="S2"/>
+<connect gate="T1" pin="P$2" pad="T1"/>
+<connect gate="T2" pin="P$2" pad="T2"/>
+<connect gate="U1" pin="P$2" pad="U1"/>
+<connect gate="U2" pin="P$2" pad="U2"/>
+<connect gate="V1" pin="P$2" pad="V1"/>
+<connect gate="V2" pin="P$2" pad="V2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="EDAC" package="EDAC346-36">
+<connects>
+<connect gate="A1" pin="P$2" pad="A1"/>
+<connect gate="A2" pin="P$2" pad="A2"/>
+<connect gate="B1" pin="P$2" pad="B1"/>
+<connect gate="B2" pin="P$2" pad="B2"/>
+<connect gate="C1" pin="P$2" pad="C1"/>
+<connect gate="C2" pin="P$2" pad="C2"/>
+<connect gate="D1" pin="P$2" pad="D1"/>
+<connect gate="D2" pin="P$2" pad="D2"/>
+<connect gate="E1" pin="P$2" pad="E1"/>
+<connect gate="E2" pin="P$2" pad="E2"/>
+<connect gate="F1" pin="P$2" pad="F1"/>
+<connect gate="F2" pin="P$2" pad="F2"/>
+<connect gate="H1" pin="P$2" pad="H1"/>
+<connect gate="H2" pin="P$2" pad="H2"/>
+<connect gate="J1" pin="P$2" pad="J1"/>
+<connect gate="J2" pin="P$2" pad="J2"/>
+<connect gate="K1" pin="P$2" pad="K1"/>
+<connect gate="K2" pin="P$2" pad="K2"/>
+<connect gate="L1" pin="P$2" pad="L1"/>
+<connect gate="L2" pin="P$2" pad="L2"/>
+<connect gate="M1" pin="P$2" pad="M1"/>
+<connect gate="M2" pin="P$2" pad="M2"/>
+<connect gate="N1" pin="P$2" pad="N1"/>
+<connect gate="N2" pin="P$2" pad="N2"/>
+<connect gate="P1" pin="P$2" pad="P1"/>
+<connect gate="P2" pin="P$2" pad="P2"/>
+<connect gate="R1" pin="P$2" pad="R1"/>
+<connect gate="R2" pin="P$2" pad="R2"/>
+<connect gate="S1" pin="P$2" pad="S1"/>
+<connect gate="S2" pin="P$2" pad="S2"/>
+<connect gate="T1" pin="P$2" pad="T1"/>
+<connect gate="T2" pin="P$2" pad="T2"/>
+<connect gate="U1" pin="P$2" pad="U1"/>
+<connect gate="U2" pin="P$2" pad="U2"/>
+<connect gate="V1" pin="P$2" pad="V1"/>
+<connect gate="V2" pin="P$2" pad="V2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="W011" prefix="W011_">
@@ -5824,6 +6120,26 @@ DIN A3, landscape with extra doc field</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="ECS" package="ECS2418">
+<connects>
+<connect gate="G$1" pin="-15V" pad="B2"/>
+<connect gate="G$2" pin="GND" pad="C2"/>
+<connect gate="G$2" pin="VCC" pad="A2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="EDAC" package="EDAC346-36">
+<connects>
+<connect gate="G$1" pin="-15V" pad="B2"/>
+<connect gate="G$2" pin="GND" pad="C2"/>
+<connect gate="G$2" pin="VCC" pad="A2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="G792" prefix="G792_">
@@ -6148,6 +6464,7 @@ DIN A3, landscape with extra doc field</description>
 <connect gate="G$3" pin="BK2" pad="BK2"/>
 <connect gate="G$3" pin="BM2" pad="BM2"/>
 <connect gate="G$3" pin="BN2" pad="BN2"/>
+<connect gate="G$3" pin="BP2" pad="BP2"/>
 <connect gate="G$3" pin="BR1" pad="BR1"/>
 <connect gate="G$3" pin="BR2" pad="BR2"/>
 <connect gate="G$3" pin="BS1" pad="BS1"/>
@@ -14972,12 +15289,6 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="E33" gate="P2" pin="R"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
-<label x="83.82" y="198.12" size="1.778" layer="95"/>
-<pinref part="E33" gate="H2" pin="S"/>
-<wire x1="106.68" y1="198.12" x2="106.68" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="E33" gate="E1" pin="R"/>
 <wire x1="106.68" y1="254" x2="106.68" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="254" x2="106.68" y2="254" width="0.1524" layer="91"/>
@@ -15367,6 +15678,14 @@ DIN A3, landscape with extra doc field</description>
 <label x="185.42" y="45.72" size="1.778" layer="95"/>
 <pinref part="E33" gate="S1" pin="S"/>
 <pinref part="E26" gate="V2" pin="OUT"/>
+</segment>
+</net>
+<net name="MEM_DONE_" class="0">
+<segment>
+<wire x1="83.82" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
+<label x="83.82" y="198.12" size="1.778" layer="95"/>
+<pinref part="E33" gate="H2" pin="S"/>
+<wire x1="106.68" y1="198.12" x2="106.68" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -18991,11 +19310,6 @@ DIN A3, landscape with extra doc field</description>
 <label x="5.08" y="43.18" size="1.778" layer="95"/>
 <pinref part="H12" gate="G$2" pin="IN2"/>
 </segment>
-<segment>
-<wire x1="347.98" y1="170.18" x2="325.12" y2="170.18" width="0.1524" layer="91"/>
-<label x="325.12" y="170.18" size="1.778" layer="95"/>
-<pinref part="H20" gate="G$2" pin="IN3"/>
-</segment>
 </net>
 <net name="INITIALIZE_" class="0">
 <segment>
@@ -20898,6 +21212,10 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="H20" gate="G$1" pin="IN1"/>
 <pinref part="H20" gate="G$1" pin="IN3"/>
 <pinref part="H20" gate="G$2" pin="IN1"/>
+<wire x1="347.98" y1="170.18" x2="345.44" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="H20" gate="G$2" pin="IN3"/>
+<wire x1="345.44" y1="175.26" x2="345.44" y2="170.18" width="0.1524" layer="91"/>
+<junction x="345.44" y="175.26"/>
 </segment>
 <segment>
 <wire x1="350.52" y1="88.9" x2="347.98" y2="88.9" width="0.1524" layer="91"/>
@@ -21341,8 +21659,8 @@ DIN A3, landscape with extra doc field</description>
 </net>
 <net name="KCC_" class="0">
 <segment>
-<wire x1="83.82" y1="127" x2="106.68" y2="127" width="0.1524" layer="91"/>
-<label x="83.82" y="127" size="1.778" layer="95"/>
+<wire x1="83.82" y1="124.46" x2="106.68" y2="124.46" width="0.1524" layer="91"/>
+<label x="83.82" y="124.46" size="1.778" layer="95"/>
 <pinref part="EF01" gate="G$3" pin="AV2"/>
 </segment>
 <segment>
@@ -21430,9 +21748,14 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="EF01" gate="G$3" pin="BT2"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
 <label x="83.82" y="134.62" size="1.778" layer="95"/>
 <pinref part="EF01" gate="G$3" pin="BU1"/>
+<pinref part="EF01" gate="G$3" pin="BP2"/>
+<wire x1="104.14" y1="134.62" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="129.54" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
+<junction x="104.14" y="134.62"/>
 </segment>
 </net>
 </nets>
@@ -32262,13 +32585,6 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="D20" gate="P2" pin="OUT"/>
 </segment>
 </net>
-<net name="MQ01" class="0">
-<segment>
-<wire x1="259.08" y1="218.44" x2="271.78" y2="218.44" width="0.1524" layer="91"/>
-<label x="259.08" y="218.44" size="1.778" layer="95"/>
-<pinref part="D20" gate="P2" pin="IN1"/>
-</segment>
-</net>
 <net name="N$583" class="0">
 <segment>
 <wire x1="320.04" y1="180.34" x2="320.04" y2="190.5" width="0.1524" layer="91"/>
@@ -32324,6 +32640,11 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="251.46" y1="182.88" x2="231.14" y2="182.88" width="0.1524" layer="91"/>
 <label x="231.14" y="182.88" size="1.778" layer="95"/>
 <pinref part="D23" gate="V2" pin="IN1B"/>
+</segment>
+<segment>
+<wire x1="259.08" y1="218.44" x2="271.78" y2="218.44" width="0.1524" layer="91"/>
+<label x="259.08" y="218.44" size="1.778" layer="95"/>
+<pinref part="D20" gate="P2" pin="IN1"/>
 </segment>
 </net>
 <net name="+3V(28)" class="0">
