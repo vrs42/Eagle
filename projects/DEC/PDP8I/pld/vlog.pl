@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 
-$stem = "$ARGV[0]";
+$stem = "pdp8i";
+$oldway = 1;
 
 #
 # Map a signal name from Eagle to something legal 
@@ -14,29 +15,36 @@ sub eagle2pld {
 
   local($signal) = $eagle;
   # Fix up signal name.
-  $signal = "'b'1" if $signal eq "vcc";
-  $signal = "'b'0" if $signal eq "gnd";
   $signal =~ s/^[\+]//;
+$signal =~ s/_$/_low/ if $oldway;
   $signal =~ s/_$/_l/;
-  $signal =~ s/_low$/_l/;
+  $signal =~ s/_low$/_l/ unless $oldway;
   $signal =~ s/[.]/_/;
   $signal =~ s/[\(]/_lp_/g;
   $signal =~ s/[\)]/_rp_/g;
   $signal =~ s/[\[]/_lb_/g;
   $signal =~ s/[\]]/_rb_/g;
+$signal =~ s/[\\]/_low/g if $oldway;
+$signal =~ s/_$/_low/ if $oldway; # BUGBUG
   $signal =~ s/[\\]/_l/g;
+$signal =~ s/^!(.*)/\1_low/g if $oldway;
   $signal =~ s/^!(.*)/\1_l/g;
   $signal =~ s/[\+]/_or_/g;
   $signal =~ s/[\*]/_and_/g unless $signal =~ /^[*]/;
   $signal =~ s/[\-@\/]/_/g;
   $signal =~ s/[\$]/_t_/;
   $signal =~ s/^(n_t_\d+)$/\1x/;
+# redundant?
   $signal =~ s/\\$/_l/;
   $signal =~ s/__+/_/g;
   $signal =~ s/^_//;
   $signal =~ s/_$//;
+  $signal = 'and_h' if $signal eq 'and';
+  $signal = 'break_h' if $signal eq 'break';
   $signal = 'end_h' if $signal eq 'end';
   $signal =~ s/^/n/ if $signal =~ /^\d/;
+  $signal = "1'b1" if $signal eq "vcc";
+  $signal = "1'b0" if $signal eq "gnd";
   # CUPL symbol names are limited to about 60 characters.
   if (length($signal) > 60) {
     &qcode("/* Converted name $signal is too long. */\n");
@@ -44,8 +52,60 @@ sub eagle2pld {
     &qcode("/* ... using name $signal instead. */\n");
   }
   $eagle2pld{$eagle} = $signal;
+#die $signal if $signal =~ /_l$/;
   return $signal;
 }
+
+#
+# Parts to kludge the master clock into.
+%clocked = (
+  "m216", 1,
+  "m220", 1,
+  "m310", 1,
+  "m452", 1,
+  "m700", 1,
+  "m706", 1,
+  "m707", 1,
+);
+#
+# Instantiation names must not equal a signal name.
+# Instatiation names range from "a01" to "f32", etc.
+# Most don't look like signals, but "d00"-"d11" do.
+%hat = (
+  "d00", "_",
+  "d01", "_",
+  "d02", "_",
+  "d03", "_",
+  "d04", "_",
+  "d05", "_",
+  "d06", "_",
+  "d07", "_",
+  "d08", "_",
+  "d09", "_",
+  "d10", "_",
+  "d11", "_",
+);
+
+#
+# Don't instantiate difficult but not interesting parts of the model.
+%elide = (
+  "a607", 1,
+  "g826", 1,
+  "g792", 1,
+# "m040", 1,
+  "m401/m405/m501", 1,
+  "m701", 1,
+  "m703", 1,
+  "m704", 1,
+  "m705", 1,
+  "m708", 1,
+  "m709", 1,
+  "m710", 1,
+  "m714", 1,
+  "m715", 1,
+  "m716", 1,
+  "m720", 1,
+);
 
 #
 # Read the Part List.  Remember the part's device/value, 
@@ -75,7 +135,6 @@ while (<INPUT>) {
     $device =~ s/\d.*//;
     $value = $device;
   }
-#print STDERR "'$part' '$value' '$device' '$pack' '$lib'\n" if $part eq 'r35';
   $part =~ s/-/_/g;
   $value =~ s/-/_/g;
   $device =~ s/-/_/g;
@@ -140,7 +199,9 @@ while (<INPUT>) {
   y/A-Z/a-z/;
   if (/^$/) {
     next unless defined $part;
-print ");\n" unless $connector{$part};
+    print ");\n" unless $connector{$part};
+# Elide the stuff we were asked to elide.
+print "*/\n" if $elide{$partlist{$p}};
     undef $part;
     next;
   }
@@ -152,16 +213,24 @@ print ");\n" unless $connector{$part};
     next unless defined $partlist{$p};
     $part = $p;
     undef %pin;
-print "$partlist{$p} $p(" unless $connector{$part};
-$comma = 0;
-$lcount = 0;
+# Elide the stuff we were asked to elide.
+print "/*\n" if $elide{$partlist{$p}};
+# Instantiation names must not equal a signal name.
+    print "$partlist{$p} $p$hat{$p}(" unless $connector{$part};
+# BUGBUG: special kludge here to add ".clk(clk), " for Kyle.
+if ($clocked{$partlist{$p}}) {
+print ".clk(clk), ";
+#$tline++;
+}
+    $comma = 0;
+    $lcount = 0;
   } else {
     die "$_" unless /^\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)/;
     ($pad, $pin, $dir, $signal) = ($1, $2, $3, $4);
     next unless $part;
   }
   $signal = &eagle2pld($signal); # Fix up signal name.
-next if $signal eq '***';
+  next if $signal eq '***';
   if ($connector{$part}) {
     # Just make a note of signals that go to a connector pin.
     $con{$signal} = 1;
@@ -182,6 +251,7 @@ next if $signal eq '***';
   $pad =~ s/[\\]/_not/;
   # Ignore passive and power pins
   # Direction may be NC | IN | OUT | I/O | OC | HIZ | SUP | PAS | PWR | SUP
+  $dir = 'oc' if ($dir eq 'pas') && ($partlist{$p} eq 'm506');
   next if $dir eq 'pas';
   next if $dir eq 'pwr';
   # Ignore unconnected pins.
@@ -196,15 +266,17 @@ next if $signal eq '***';
   $out{$signal} = 1 if $dir eq 'oc';
   $out{$signal} = 1 if $dir eq 'hiz';
   $signals{$signal} = 1;
-next if $connector{$p};
-print ", " if $comma; $comma = 1;
-if ($tline%4 == 0) {
-printf "\n\t"; $tline = 0;
+  next if $connector{$p};
+  print ", " if $comma; $comma = 1;
+  if ($tline%4 == 0) {
+    printf "\n\t"; $tline = 0;
+  }
+  $pad =~ y/a-z/A-Z/;
+  print ".$pad($signal)";
+  $tline++;
 }
-$pad =~ y/a-z/A-Z/;
-print ".$pad($signal)";
-$tline++;
-}
+
+exit 0 if $oldway;
 
 @foo = sort keys %con;
 $foo = join(', ', @foo);
