@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
-$stem = "pdp8i";
-$oldway = 1;
+$stem = "tc08";
+#$oldway = 1;
 
 #
 # Map a signal name from Eagle to something legal 
@@ -27,7 +27,8 @@ $signal =~ s/_$/_low/ if $oldway;
 $signal =~ s/[\\]/_low/g if $oldway;
 $signal =~ s/_$/_low/ if $oldway; # BUGBUG
   $signal =~ s/[\\]/_l/g;
-$signal =~ s/^!(.*)/\1_low/g if $oldway;
+$signal =~ s/!([^!]*)/\1_l/g if $stem eq 'tc08';
+$signal =~ s/^!([^!]*)/\1_low/g if $oldway;
   $signal =~ s/^!(.*)/\1_l/g;
   $signal =~ s/[\+]/_or_/g;
   $signal =~ s/[\*]/_and_/g unless $signal =~ /^[*]/;
@@ -59,10 +60,18 @@ $signal =~ s/^!(.*)/\1_low/g if $oldway;
 #
 # Parts to kludge the master clock into.
 %clocked = (
+  "g888", 1,
+  "m206", 1,
+  "m207", 1,
   "m216", 1,
   "m220", 1,
+  "m228", 1,
+  "m302", 1,
+  "m307", 1,
   "m310", 1,
+  "m401", 1,
   "m452", 1,
+  "m602", 1,
   "m700", 1,
   "m706", 1,
   "m707", 1,
@@ -72,6 +81,7 @@ $signal =~ s/^!(.*)/\1_low/g if $oldway;
 # Instatiation names range from "a01" to "f32", etc.
 # Most don't look like signals, but "d00"-"d11" do.
 %hat = (
+  "c01", "_",
   "d00", "_",
   "d01", "_",
   "d02", "_",
@@ -90,6 +100,7 @@ $signal =~ s/^!(.*)/\1_low/g if $oldway;
 # Don't instantiate difficult but not interesting parts of the model.
 %elide = (
   "a607", 1,
+  "g821", 1,
   "g826", 1,
   "g792", 1,
 # "m040", 1,
@@ -105,6 +116,7 @@ $signal =~ s/^!(.*)/\1_low/g if $oldway;
   "m715", 1,
   "m716", 1,
   "m720", 1,
+# "m903", 1,	# Should probably be a connector
 );
 
 #
@@ -176,18 +188,18 @@ while (<INPUT>) {
   $connector{$part} = 1 if $device =~ /^9601/; # BUGBUG vrs kludge
   $connector{$part} = 1 if $device =~ /^w/; # BUGBUG vrs kludge
   $connector{$part} = 1 if $device =~ /^empty/;
+  $connector{$part} = 1 if $device =~ /^m903/;
   $connector{$part} = 1 if $device =~ /^m916/;
   $used{$value} = 1;
 }
 
-#@foo = sort keys %connector;
-#print "@foo\n";
-
 #
 # Scan the pin file, keeping track of which pin directions
-# are used for which signals.
+# are used for which signals.  As we go, build a string $code,
+# containing the Verilog instantiations of each part.
 #
 %in = %out = %con = ();
+$code = "";
 open(INPUT, "${stem}pins.txt") || die "${stem}pins.txt (pinlist): $!";
 while (<INPUT>) {
   last if /^Part/;
@@ -199,9 +211,9 @@ while (<INPUT>) {
   y/A-Z/a-z/;
   if (/^$/) {
     next unless defined $part;
-    print ");\n" unless $connector{$part};
-# Elide the stuff we were asked to elide.
-print "*/\n" if $elide{$partlist{$p}};
+    $code .= ");\n" unless $connector{$part};
+    # Elide the stuff we were asked to elide.
+    $code .= "*/\n" if $elide{$partlist{$p}};
     undef $part;
     next;
   }
@@ -213,15 +225,16 @@ print "*/\n" if $elide{$partlist{$p}};
     next unless defined $partlist{$p};
     $part = $p;
     undef %pin;
-# Elide the stuff we were asked to elide.
-print "/*\n" if $elide{$partlist{$p}};
-# Instantiation names must not equal a signal name.
-    print "$partlist{$p} $p$hat{$p}(" unless $connector{$part};
-# BUGBUG: special kludge here to add ".clk(clk), " for Kyle.
-if ($clocked{$partlist{$p}}) {
-print ".clk(clk), ";
-#$tline++;
-}
+    # Elide the stuff we were asked to elide.
+    $code .= "/*\n" if $elide{$partlist{$p}};
+    # Instantiation names must not equal a signal name.
+    $code .= "$partlist{$p} $p$hat{$p}(" unless $connector{$part};
+    $tline = 0;
+    # Special kludge here to add ".clk(clk), " for Kyle.
+    if ($clocked{$partlist{$p}}) {
+      $code .= ".clk(clk), ";
+      $tline++;
+    }
     $comma = 0;
     $lcount = 0;
   } else {
@@ -233,7 +246,7 @@ print ".clk(clk), ";
   next if $signal eq '***';
   if ($connector{$part}) {
     # Just make a note of signals that go to a connector pin.
-    $con{$signal} = 1;
+    $con{$signal} = 1 unless $dir eq 'pwr';
     next;
   }
   # Fix numeric pad names.
@@ -249,7 +262,7 @@ print ".clk(clk), ";
 # $pad = $pin unless $pin{$pin};
   $pin{$pin}++;
   $pad =~ s/[\\]/_not/;
-  # Ignore passive and power pins
+  # Ignore passive and power pins.
   # Direction may be NC | IN | OUT | I/O | OC | HIZ | SUP | PAS | PWR | SUP
   $dir = 'oc' if ($dir eq 'pas') && ($partlist{$p} eq 'm506');
   next if $dir eq 'pas';
@@ -267,23 +280,60 @@ print ".clk(clk), ";
   $out{$signal} = 1 if $dir eq 'hiz';
   $signals{$signal} = 1;
   next if $connector{$p};
-  print ", " if $comma; $comma = 1;
-  if ($tline%4 == 0) {
-    printf "\n\t"; $tline = 0;
+  $code .= ", " if $comma; $comma = 1;
+  if ($tline == 4) {
+    $code .= "\n\t"; $tline = 0;
   }
   $pad =~ y/a-z/A-Z/;
-  print ".$pad($signal)";
+  $code .= ".$pad($signal)";
   $tline++;
 }
 
-exit 0 if $oldway;
-
+#
+# Now we know how each pin was used, which is enough to emit the declarations.
+# (This outputs the interface signals alphabetically.)
+#
 @foo = sort keys %con;
-$foo = join(', ', @foo);
-printf "\n\nmodule $stem ($foo);\n";
+printf "module $stem (clk, ";
+$comma = 0;
 foreach $signal (@foo) {
+  next if $signal =~ /^1/;
+  print ", " if $comma;
+  print "$signal";
+  $comma = 1;
+  $tline++;
+  next unless $tline > 8;
+  print ",\n\t";
+  $tline = $comma = 0;
+}
+printf ");\n";
+printf "input clk;\n";
+foreach $signal (@foo) {
+  next if $signal =~ /^1/;
   $direction = 'input' if $in{$signal};
   $direction = 'output' if $out{$signal};
   $direction = 'inout' if $in{$signal} && $out{$signal};
   print "$direction $signal;\n";
 }
+printf "\n";
+
+#
+# Output wire declarations for everything in %signal
+# #that isn't also in %con.
+#
+@foo = sort keys %signals;
+foreach $signal (@foo) {
+  next if $signal =~ /^1/;
+# next if defined $con{$signal};
+  print "wire $signal;\n";
+}
+printf "\n";
+
+#
+# Now emit the code, and wrap things up.
+#
+print $code;
+print "\n/* lint_on */\n";
+print "endmodule\n";
+
+exit 0;
