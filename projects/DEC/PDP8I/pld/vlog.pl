@@ -3,7 +3,7 @@
 $stem = "$ARGV[0]";
 die "${stem}prts.txt is missing" unless -f "${stem}prts.txt";
 die "${stem}pins.txt is missing" unless -f "${stem}pins.txt";
-$oldway = 1;
+#$oldway = 1;
 
 #
 # Map a signal name from Eagle to something legal 
