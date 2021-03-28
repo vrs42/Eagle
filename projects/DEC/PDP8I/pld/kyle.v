@@ -1511,9 +1511,9 @@ assign state_cur_addr = !current_address_l;
 assign state_break = !break_l;
 
 /* Core memory (all on the memory bus). */
-mem core_mem(.clk(clk), .mem_start(b_mem_start), .mem_done_n(mem_done_l),
-             .strobe_n(strobe_l), .addr({ea0, ea1, ea2, ma}), 
-             .data_in(mb), .data_out(mem), .dt_ca(dt_ca), .dt_wc(dt_wc));
+mem core_mem(.clk(clk), .addr({ea0, ea1, ea2, ma}), .data_in(mb), .data_out(mem), 
+    .dt_ca(dt_ca), .dt_wc(dt_wc), .mem_done_n(mem_done_l), .mem_start(b_mem_start),
+    .strobe_n(strobe_l));
 
 wire [11:0] reg_bus;
 
