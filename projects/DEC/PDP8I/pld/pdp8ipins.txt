@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from pdp8i-fpga.sch at 3/23/2021 11:51:39 PM
+Exported from pdp8i-fpga.sch at 3/27/2021 11:58:42 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -936,34 +936,34 @@ B12      A1       IN1        in       MB00
          C2       GND        pwr      GND
          D1       IN4        in       +3V(08)
          D2       IN1        in       MB01
-         E1       OUT        oc       MCBMB00_
+         E1       OUT        out      MCBMB00_
          E2       IN2        in       +3V(08)
          F1       IN1        in       MB02
          F2       IN3        in       +3V(08)
          H1       IN2        in       +3V(08)
          H2       IN4        in       +3V(08)
          J1       IN3        in       +3V(08)
-         J2       OUT        oc       MCBMB01_
+         J2       OUT        out      MCBMB01_
          K1       IN4        in       +3V(08)
          K2       IN1        in       MB03
-         L1       OUT        oc       MCBMB02_
+         L1       OUT        out      MCBMB02_
          L2       IN2        in       +3V(09)
          M1       IN1        in       MB04
          M2       IN3        in       +3V(09)
          N1       IN2        in       +3V(09)
          N2       IN4        in       +3V(09)
          P1       IN3        in       +3V(09)
-         P2       OUT        oc       MCBMB03_
+         P2       OUT        out      MCBMB03_
          R1       IN4        in       +3V(09)
          R2       IN1        in       MB05
-         S1       OUT        oc       MCBMB04_
+         S1       OUT        out      MCBMB04_
          S2       IN2        in       +3V(10)
          T1       GND        pwr      GND
          T2       IN3        in       +3V(10)
          U1       P$1        pas               ***   unused    ***
          U2       IN4        in       +3V(10)
          V1       P$1        pas               ***   unused    ***
-         V2       OUT        oc       MCBMB05_
+         V2       OUT        out      MCBMB05_
 
 B13      A1       IN1        in       MB06
          A2       VCC        pwr      VCC
@@ -972,34 +972,34 @@ B13      A1       IN1        in       MB06
          C2       GND        pwr      GND
          D1       IN4        in       +3V(10)
          D2       IN1        in       MB07
-         E1       OUT        oc       MCBMB06_
+         E1       OUT        out      MCBMB06_
          E2       IN2        in       +3V(10)
          F1       IN1        in       MB08
          F2       IN3        in       +3V(10)
          H1       IN2        in       +3V(11)
          H2       IN4        in       +3V(10)
          J1       IN3        in       +3V(11)
-         J2       OUT        oc       MCBMB07_
+         J2       OUT        out      MCBMB07_
          K1       IN4        in       +3V(11)
          K2       IN1        in       MB09
-         L1       OUT        oc       MCBMB08_
+         L1       OUT        out      MCBMB08_
          L2       IN2        in       +3V(12)
          M1       IN1        in       MB10
          M2       IN3        in       +3V(12)
          N1       IN2        in       +3V(12)
          N2       IN4        in       +3V(12)
          P1       IN3        in       +3V(12)
-         P2       OUT        oc       MCBMB09_
+         P2       OUT        out      MCBMB09_
          R1       IN4        in       +3V(12)
          R2       IN1        in       MB11
-         S1       OUT        oc       MCBMB10_
+         S1       OUT        out      MCBMB10_
          S2       IN2        in       +3V(12)
          T1       GND        pwr      GND
          T2       IN3        in       +3V(12)
          U1       P$1        pas      +3V(12)
          U2       IN4        in       +3V(12)
          V1       P$1        pas      +3V(13)
-         V2       OUT        oc       MCBMB11_
+         V2       OUT        out      MCBMB11_
 
 B14      A1       IN1        in       MA00_
          A2       VCC        pwr      VCC
@@ -1008,34 +1008,34 @@ B14      A1       IN1        in       MA00_
          C2       GND        pwr      GND
          D1       IN4        in       +3V(12)
          D2       IN1        in       MA01_
-         E1       OUT        oc       BMA00
+         E1       OUT        out      BMA00
          E2       IN2        in       +3V(13)
          F1       IN1        in       MA02_
          F2       IN3        in       +3V(13)
          H1       IN2        in       +3V(14)
          H2       IN4        in       +3V(13)
          J1       IN3        in       +3V(14)
-         J2       OUT        oc       BMA01
+         J2       OUT        out      BMA01
          K1       IN4        in       +3V(14)
          K2       IN1        in       MA03_
-         L1       OUT        oc       BMA02
+         L1       OUT        out      BMA02
          L2       IN2        in       +3V(14)
          M1       IN1        in       MA04_
          M2       IN3        in       +3V(14)
          N1       IN2        in       +3V(14)
          N2       IN4        in       +3V(14)
          P1       IN3        in       +3V(14)
-         P2       OUT        oc       BMA03
+         P2       OUT        out      BMA03
          R1       IN4        in       +3V(14)
          R2       IN1        in       MA05_
-         S1       OUT        oc       BMA04
+         S1       OUT        out      BMA04
          S2       IN2        in       +3V(15)
          T1       GND        pwr      GND
          T2       IN3        in       +3V(15)
          U1       P$1        pas      +3V(14)
          U2       IN4        in       +3V(15)
          V1       P$1        pas      +3V(15)
-         V2       OUT        oc       BMA05
+         V2       OUT        out      BMA05
 
 B15      A1       IN1        in       MA06_
          A2       VCC        pwr      VCC
@@ -1044,34 +1044,34 @@ B15      A1       IN1        in       MA06_
          C2       GND        pwr      GND
          D1       IN4        in       +3V(15)
          D2       IN1        in       MA07_
-         E1       OUT        oc       BMA06
+         E1       OUT        out      BMA06
          E2       IN2        in       +3V(16)
          F1       IN1        in       MA08_
          F2       IN3        in       +3V(16)
          H1       IN2        in       +3V(16)
          H2       IN4        in       +3V(16)
          J1       IN3        in       +3V(16)
-         J2       OUT        oc       BMA07
+         J2       OUT        out      BMA07
          K1       IN4        in       +3V(16)
          K2       IN1        in       MA09_
-         L1       OUT        oc       BMA08
+         L1       OUT        out      BMA08
          L2       IN2        in       +3V(17)
          M1       IN1        in       MA10_
          M2       IN3        in       +3V(17)
          N1       IN2        in       +3V(17)
          N2       IN4        in       +3V(17)
          P1       IN3        in       +3V(17)
-         P2       OUT        oc       BMA09
+         P2       OUT        out      BMA09
          R1       IN4        in       +3V(17)
          R2       IN1        in       MA11_
-         S1       OUT        oc       BMA10
+         S1       OUT        out      BMA10
          S2       IN2        in       +3V(17)
          T1       GND        pwr      GND
          T2       IN3        in       +3V(17)
          U1       P$1        pas      +3V(16)
          U2       IN4        in       +3V(17)
          V1       P$1        pas               ***   unused    ***
-         V2       OUT        oc       BMA11
+         V2       OUT        out      BMA11
 
 B16      A1       IN1        in       N$411
          A2       VCC        pwr      VCC
@@ -1080,34 +1080,34 @@ B16      A1       IN1        in       N$411
          C2       GND        pwr      GND
          D1       IN4        in       +3V(18)
          D2       IN1        in       N$413
-         E1       OUT        oc       EA0
+         E1       OUT        out      EA0
          E2       IN2        in       N$414
          F1       IN1        in       N$416
          F2       IN3        in       N$415
          H1       IN2        in       N$417
          H2       IN4        in       +3V(18)
          J1       IN3        in       N$418
-         J2       OUT        oc       EA1
+         J2       OUT        out      EA1
          K1       IN4        in       +3V(18)
          K2       IN1        in       B_FETCH
-         L1       OUT        oc       EA2
+         L1       OUT        out      EA2
          L2       IN2        in       MB03_
          M1       IN1        in                ***   unused    ***
          M2       IN3        in       MB04
          N1       IN2        in                ***   unused    ***
          N2       IN4        in       MB05_
          P1       IN3        in                ***   unused    ***
-         P2       OUT        oc       N$452
+         P2       OUT        out      N$452
          R1       IN4        in                ***   unused    ***
          R2       IN1        in                ***   unused    ***
-         S1       OUT        oc                ***   unused    ***
+         S1       OUT        out               ***   unused    ***
          S2       IN2        in                ***   unused    ***
          T1       GND        pwr      GND
          T2       IN3        in                ***   unused    ***
          U1       P$1        pas      +3V(18)
          U2       IN4        in                ***   unused    ***
          V1       P$1        pas      +3V(17)
-         V2       OUT        oc                ***   unused    ***
+         V2       OUT        out               ***   unused    ***
 
 B17      A1       R          in       CLEAR_IF_
          A2       VCC        pwr      VCC
@@ -1563,34 +1563,34 @@ C12      A1       IN1        in                ***   unused    ***
          C2       GND        pwr      GND
          D1       IN4        in                ***   unused    ***
          D2       IN1        in       N$458
-         E1       OUT        oc                ***   unused    ***
+         E1       OUT        out               ***   unused    ***
          E2       IN2        in       TS3
          F1       IN1        in       +3V(43)
          F2       IN3        in       IOT
          H1       IN2        in       INITIALIZE
          H2       IN4        in       IOT
          J1       IN3        in       +3V(61)
-         J2       OUT        oc       MEM_EXT_IO_ENABLE_
+         J2       OUT        out      MEM_EXT_IO_ENABLE_
          K1       IN4        in       +3V(61)
          K2       IN1        in       INT_OK
-         L1       OUT        oc       INITIALIZE_
+         L1       OUT        out      INITIALIZE_
          L2       IN2        in       TS4
          M1       IN1        in       N$270
          M2       IN3        in       INT_STROBE_
          N1       IN2        in       N$270
          N2       IN4        in       +3V(61)
          P1       IN3        in       N$270
-         P2       OUT        oc       LOAD_SF_
+         P2       OUT        out      LOAD_SF_
          R1       IN4        in       N$270
          R2       IN1        in                ***   unused    ***
-         S1       OUT        oc       B_POWER_CLEAR_
+         S1       OUT        out      B_POWER_CLEAR_
          S2       IN2        in                ***   unused    ***
          T1       GND        pwr      GND
          T2       IN3        in                ***   unused    ***
          U1       P$1        pas      +3V(61)
          U2       IN4        in                ***   unused    ***
          V1       P$1        pas      +3V(08)
-         V2       OUT        oc                ***   unused    ***
+         V2       OUT        out               ***   unused    ***
 
 C13      A2       VCC        pwr      VCC
          C2       GND        pwr      GND
@@ -2684,34 +2684,34 @@ D22      A1       IN1        in       SC1
          C2       GND        pwr      GND
          D1       IN4        in       SC4
          D2       IN1        in       EAE_TP_
-         E1       OUT        oc       N$677
+         E1       OUT        out      N$677
          E2       IN2        in       SC1_
          F1       IN1        in       N$593
          F2       IN3        in       SC2_
          H1       IN2        in       +3V(31)
          H2       IN4        in       SC3_
          J1       IN3        in       +3V(31)
-         J2       OUT        oc       SC0_3_0_
+         J2       OUT        out      SC0_3_0_
          K1       IN4        in       +3V(31)
          K2       IN1        in       N$598
-         L1       OUT        oc       MQ_ENABLE
+         L1       OUT        out      MQ_ENABLE
          L2       IN2        in       +3V(31)
          M1       IN1        in       +3V(31)
          M2       IN3        in       +3V(31)
          N1       IN2        in       +3V(31)
          N2       IN4        in       +3V(31)
          P1       IN3        in       EAE_TG
-         P2       OUT        oc       SC_ENABLE
+         P2       OUT        out      SC_ENABLE
          R1       IN4        in       N$594
          R2       IN1        in       EAE_TG
-         S1       OUT        oc       MQ_LOAD
+         S1       OUT        out      MQ_LOAD
          S2       IN2        in       N$599
          T1       GND        pwr      GND
          T2       IN3        in       +3V(31)
          U1       P$1        pas      +3V(26)
          U2       IN4        in       N$595
          V1       P$1        pas      +3V(27)
-         V2       OUT        oc       SC_LOAD
+         V2       OUT        out      SC_LOAD
 
 D23      A1       IN1A       in       MUY
          A2       VCC        pwr      VCC
@@ -3577,34 +3577,34 @@ E31      A1       IN1        in       N$94
          C2       GND        pwr      GND
          D1       IN4        in       +3V(39)
          D2       IN1        in       +3V(39)
-         E1       OUT        oc       DOUBLE_RIGHT_ROTATE
+         E1       OUT        out      DOUBLE_RIGHT_ROTATE
          E2       IN2        in       +3V(39)
          F1       IN1        in       +3V(40)
          F2       IN3        in       +3V(40)
          H1       IN2        in       TT_RIGHT_SHIFT_ENABLE_
          H2       IN4        in       N$90
          J1       IN3        in       N$91
-         J2       OUT        oc       DOUBLE_LEFT_ROTATE
+         J2       OUT        out      DOUBLE_LEFT_ROTATE
          K1       IN4        in       EAE_RIGHT_SHIFT_ENABLE_
          K2       IN1        in       +3V(40)
-         L1       OUT        oc       RIGHT_SHIFT
+         L1       OUT        out      RIGHT_SHIFT
          L2       IN2        in       +3V(40)
          M1       IN1        in       N$88
          M2       IN3        in       N$92
          N1       IN2        in       N$83
          N2       IN4        in       EAE_LEFT_SHIFT_ENABLE_
          P1       IN3        in       TT_CARRY_INSERT_
-         P2       OUT        oc       LEFT_SHIFT
+         P2       OUT        out      LEFT_SHIFT
          R1       IN4        in       C_NO_SHIFT_
          R2       IN1        in       AND_ENABLE_
-         S1       OUT        oc       NO_SHIFT
+         S1       OUT        out      NO_SHIFT
          S2       IN2        in       +3V(40)
          T1       GND        pwr      GND
          T2       IN3        in       +3V(40)
          U1       P$1        pas      +3V(39)
          U2       IN4        in       +3V(40)
          V1       P$1        pas      +3V(40)
-         V2       OUT        oc       AND_ENABLE
+         V2       OUT        out      AND_ENABLE
 
 E32      A1       IN1        in       N$110
          A2       VCC        pwr      VCC
@@ -3613,34 +3613,34 @@ E32      A1       IN1        in       N$110
          C2       GND        pwr      GND
          D1       IN4        in       N$109
          D2       IN1        in       +3V(41)
-         E1       OUT        oc       MA_LOAD
+         E1       OUT        out      MA_LOAD
          E2       IN2        in       N$10
          F1       IN1        in       +3V(41)
          F2       IN3        in       N$96
          H1       IN2        in       +3V(41)
          H2       IN4        in       N$97
          J1       IN3        in       +3V(41)
-         J2       OUT        oc       PC_LOAD
+         J2       OUT        out      PC_LOAD
          K1       IN4        in       N$112
          K2       IN1        in       EAE_TP_
-         L1       OUT        oc       MB_LOAD
+         L1       OUT        out      MB_LOAD
          L2       IN2        in       N$95
          M1       IN1        in       AND_ENABLE_
          M2       IN3        in       TT_AC_LOAD_
          N1       IN2        in       N$79
          N2       IN4        in       MEM_EXT_AC_LOAD_ENABLE_
          P1       IN3        in       ADD_
-         P2       OUT        oc       AC_LOAD
+         P2       OUT        out      AC_LOAD
          R1       IN4        in       EAE_AC_ENABLE_
          R2       IN1        in       +3V(42)
-         S1       OUT        oc       AC_ENABLE
+         S1       OUT        out      AC_ENABLE
          S2       IN2        in       +3V(42)
          T1       GND        pwr      GND
          T2       IN3        in       N$72
          U1       P$1        pas      +3V(41)
          U2       IN4        in       EAE_ACBAR_ENABLE_
          V1       P$1        pas      +3V(42)
-         V2       OUT        oc       ACBAR_ENABLE
+         V2       OUT        out      ACBAR_ENABLE
 
 E33      A1       R          in       +3V(42)
          A2       VCC        pwr      VCC
@@ -4920,34 +4920,34 @@ F30      A1       IN1        in       N$749
          C2       GND        pwr      GND
          D1       IN4        in       +3V(45)
          D2       IN1        in       IOP124_
-         E1       OUT        oc       PC_ENABLE
+         E1       OUT        out      PC_ENABLE
          E2       IN2        in       MEM_EXT_IO_ENABLE_
          F1       IN1        in       N$67
          F2       IN3        in       +3V(45)
          H1       IN2        in       +3V(45)
          H2       IN4        in       TT_IO_ENABLE_
          J1       IN3        in       +3V(46)
-         J2       OUT        oc       IO_ENABLE
+         J2       OUT        out      IO_ENABLE
          K1       IN4        in       +3V(46)
          K2       IN1        in       N$69
-         L1       OUT        oc       DATA_ENABLE
+         L1       OUT        out      DATA_ENABLE
          L2       IN2        in       +3V(45)
          M1       IN1        in       N$71
          M2       IN3        in       +3V(45)
          N1       IN2        in       N$70
          N2       IN4        in       +3V(45)
          P1       IN3        in       KEY_LAMFTS0_
-         P2       OUT        oc       DATA_ADD_ENABLE
+         P2       OUT        out      DATA_ADD_ENABLE
          R1       IN4        in       +3V(46)
          R2       IN1        in       +3V(46)
-         S1       OUT        oc       SR_ENABLE
+         S1       OUT        out      SR_ENABLE
          S2       IN2        in       +3V(46)
          T1       GND        pwr      GND
          T2       IN3        in       +3V(46)
          U1       P$1        pas      +3V(46)
          U2       IN4        in       MFTP0
          V1       P$1        pas      +3V(45)
-         V2       OUT        oc       MANUAL_PRESET_
+         V2       OUT        out      MANUAL_PRESET_
 
 F31      A1       IN1        in       ADD_
          A2       VCC        pwr      VCC
@@ -4956,34 +4956,34 @@ F31      A1       IN1        in       ADD_
          C2       GND        pwr      GND
          D1       IN4        in       EAE_MEM_ENABLE_
          D2       IN1        in       EAE_MEM_ENABLE_
-         E1       OUT        oc       MEM_ENABLE0_4
+         E1       OUT        out      MEM_ENABLE0_4
          E2       IN2        in       N$61
          F1       IN1        in       N$74
          F2       IN3        in       MEM_ENABLE0_4_
          H1       IN2        in       N$62
          H2       IN4        in       N$73
          J1       IN3        in       +3V(46)
-         J2       OUT        oc       MEM_ENABLE5_8
+         J2       OUT        out      MEM_ENABLE5_8
          K1       IN4        in       +3V(47)
          K2       IN1        in       N$62
-         L1       OUT        oc       MA_ENABLE0_4
+         L1       OUT        out      MA_ENABLE0_4
          L2       IN2        in       +3V(47)
          M1       IN1        in       FETCH_
          M2       IN3        in       +3V(47)
          N1       IN2        in       +3V(47)
          N2       IN4        in       +3V(47)
          P1       IN3        in       +3V(47)
-         P2       OUT        oc       MA_ENABLE5_11
+         P2       OUT        out      MA_ENABLE5_11
          R1       IN4        in       +3V(47)
          R2       IN1        in       EXECUTE_
-         S1       OUT        oc       B_FETCH
+         S1       OUT        out      B_FETCH
          S2       IN2        in       +3V(47)
          T1       GND        pwr      GND
          T2       IN3        in       +3V(47)
          U1       P$1        pas      +3V(47)
          U2       IN4        in       +3V(47)
          V1       P$1        pas      +3V(48)
-         V2       OUT        oc       B_EXECUTE
+         V2       OUT        out      B_EXECUTE
 
 F32      A1       IN1        in       N$89
          A2       VCC        pwr      VCC

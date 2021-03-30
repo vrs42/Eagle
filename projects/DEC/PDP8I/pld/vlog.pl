@@ -327,7 +327,11 @@ printf "\n";
 foreach $signal (@foo) {
   next if $signal =~ /^1/;
 # next if defined $con{$signal};
-  print "wire $signal;\n";
+  if ($oc{$signal}) {
+    print "wire $signal = 1'b1;\n";
+  } else {
+    print "wire $signal;\n";
+  }
 }
 printf "\n";
 
