@@ -22914,7 +22914,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="E47" gate="A" pin="I1"/>
 </segment>
 </net>
-<net name="!TP3" class="0">
+<net name="BTP3" class="0">
 <segment>
 <wire x1="213.36" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="144.78" x2="213.36" y2="144.78" width="0.1524" layer="91"/>
@@ -22935,7 +22935,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="E41" gate="D" pin="I1"/>
 </segment>
 </net>
-<net name="BTP3" class="0">
+<net name="!TP3" class="0">
 <segment>
 <wire x1="241.3" y1="144.78" x2="251.46" y2="144.78" width="0.1524" layer="91"/>
 <label x="243.84" y="144.78" size="1.778" layer="95"/>
@@ -25422,7 +25422,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="E24" gate="A" pin="I1"/>
 </segment>
 </net>
-<net name="!TP3" class="0">
+<net name="BTP3" class="0">
 <segment>
 <wire x1="210.82" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
 <label x="210.82" y="114.3" size="1.778" layer="95"/>

@@ -23536,6 +23536,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="317.5" y="7.62" size="2.54" layer="94">D-CS-M8650-0-1</text>
 <text x="393.7" y="7.62" size="2.54" layer="94">D</text>
 <text x="317.5" y="27.94" size="2.54" layer="94">TX, RX Buffers and UART</text>
+<text x="386.08" y="76.2" size="1.778" layer="91">RTS</text>
+<text x="386.08" y="66.04" size="1.778" layer="91">DTR</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -23763,6 +23765,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="+3V18" gate="G$1" x="317.5" y="208.28" rot="MR0"/>
 <instance part="+3V19" gate="G$1" x="218.44" y="137.16"/>
 <instance part="+3V20" gate="G$1" x="294.64" y="116.84"/>
+<instance part="E32" gate="C" x="439.42" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -24307,6 +24310,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="5.08" y="55.88" size="1.778" layer="95"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
 </segment>
+<segment>
+<pinref part="E32" gate="C" pin="I1"/>
+<wire x1="426.72" y1="81.28" x2="424.18" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="81.28" x2="424.18" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="E32" gate="C" pin="I0"/>
+<wire x1="424.18" y1="86.36" x2="426.72" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="86.36" x2="416.56" y2="86.36" width="0.1524" layer="91"/>
+<junction x="424.18" y="86.36"/>
+<label x="416.56" y="86.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$120" class="0">
 <segment>
@@ -24464,11 +24477,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="396.24" y1="68.58" x2="383.54" y2="68.58" width="0.1524" layer="91"/>
 <label x="386.08" y="68.58" size="1.778" layer="95"/>
 <pinref part="J1" gate="G$1" pin="26"/>
-</segment>
-<segment>
-<wire x1="396.24" y1="78.74" x2="383.54" y2="78.74" width="0.1524" layer="91"/>
-<label x="386.08" y="78.74" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="18"/>
 </segment>
 <segment>
 <wire x1="274.32" y1="83.82" x2="284.48" y2="83.82" width="0.1524" layer="91"/>
@@ -25911,6 +25919,18 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="+3V20" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
+<net name="RTS" class="0">
+<segment>
+<pinref part="E32" gate="C" pin="O"/>
+<wire x1="462.28" y1="83.82" x2="452.12" y2="83.82" width="0.1524" layer="91"/>
+<label x="454.66" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="396.24" y1="78.74" x2="383.54" y2="78.74" width="0.1524" layer="91"/>
+<label x="386.08" y="78.74" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="18"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -25925,8 +25945,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <approved hash="114,2,353.06,121.327,E17,C,I,,,"/>
 <approved hash="114,2,353.06,121.327,E17,D,RC,,,"/>
 <approved hash="114,2,353.06,121.327,E17,D,I,,,"/>
-<approved hash="114,2,309.88,83.7565,E32,C,I0,,,"/>
-<approved hash="114,2,309.88,83.7565,E32,C,I1,,,"/>
 <approved hash="114,2,309.88,83.7565,E32,D,I0,,,"/>
 <approved hash="114,2,309.88,83.7565,E32,D,I1,,,"/>
 <approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
