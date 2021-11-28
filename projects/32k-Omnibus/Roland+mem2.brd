@@ -33756,7 +33756,7 @@ design rules under a new name.</description>
 <wire x1="157.48" y1="48.26" x2="158.75" y2="49.53" width="0.508" layer="1"/>
 <wire x1="158.75" y1="49.53" x2="158.75" y2="62.23" width="0.508" layer="1"/>
 </signal>
-<signal name="MEM07">
+<signal name="MEM04">
 <contactref element="E3" pad="16"/>
 <wire x1="215.9" y1="154.94" x2="209.55" y2="148.59" width="0.508" layer="1"/>
 <wire x1="209.55" y1="148.59" x2="209.55" y2="133.35" width="0.508" layer="1"/>
@@ -33771,7 +33771,7 @@ design rules under a new name.</description>
 <wire x1="158.75" y1="46.99" x2="160.02" y2="48.26" width="0.508" layer="1"/>
 <wire x1="160.02" y1="48.26" x2="160.02" y2="62.23" width="0.508" layer="1"/>
 </signal>
-<signal name="MEM06">
+<signal name="MEM05">
 <contactref element="E3" pad="17"/>
 <wire x1="215.9" y1="152.4" x2="210.82" y2="147.32" width="0.508" layer="1"/>
 <wire x1="210.82" y1="147.32" x2="210.82" y2="133.35" width="0.508" layer="1"/>
@@ -33787,7 +33787,7 @@ design rules under a new name.</description>
 <wire x1="161.29" y1="48.26" x2="161.29" y2="62.23" width="0.508" layer="1"/>
 <via x="160.02" y="40.64" extent="1-16" drill="0.8128" diameter="0.254"/>
 </signal>
-<signal name="MEM04">
+<signal name="MEM07">
 <contactref element="E3" pad="19"/>
 <wire x1="215.9" y1="147.32" x2="213.36" y2="144.78" width="0.508" layer="1"/>
 <wire x1="213.36" y1="144.78" x2="213.36" y2="133.35" width="0.508" layer="1"/>
@@ -33827,7 +33827,7 @@ design rules under a new name.</description>
 <wire x1="228.6" y1="45.72" x2="229.87" y2="46.99" width="0.508" layer="16"/>
 <wire x1="229.87" y1="46.99" x2="257.81" y2="46.99" width="0.508" layer="16"/>
 </signal>
-<signal name="MEM05">
+<signal name="MEM06">
 <contactref element="E3" pad="18"/>
 <wire x1="215.9" y1="149.86" x2="212.09" y2="146.05" width="0.508" layer="1"/>
 <wire x1="212.09" y1="146.05" x2="212.09" y2="133.35" width="0.508" layer="1"/>
@@ -34115,12 +34115,12 @@ design rules under a new name.</description>
 <wire x1="237.49" y1="48.26" x2="237.49" y2="138.43" width="0.508" layer="1"/>
 <wire x1="237.49" y1="138.43" x2="238.76" y2="139.7" width="0.508" layer="1"/>
 </signal>
-<signal name="N$40">
+<signal name="!BWRITE">
 <contactref element="E8" pad="16"/>
 <contactref element="E8" pad="5"/>
 <wire x1="200.66" y1="144.78" x2="208.28" y2="144.78" width="0.508" layer="16"/>
 </signal>
-<signal name="N$41">
+<signal name="BMD_DIR">
 <contactref element="E8" pad="3"/>
 <contactref element="E7" pad="9"/>
 <contactref element="E8" pad="12"/>
@@ -34133,28 +34133,28 @@ design rules under a new name.</description>
 <wire x1="194.31" y1="143.51" x2="193.04" y2="144.78" width="0.508" layer="16"/>
 <wire x1="193.04" y1="144.78" x2="193.04" y2="153.67" width="0.508" layer="16"/>
 </signal>
-<signal name="N$42">
+<signal name="!BSOURCE">
 <contactref element="E8" pad="14"/>
 <contactref element="E8" pad="7"/>
 <wire x1="200.66" y1="149.86" x2="208.28" y2="149.86" width="0.508" layer="16"/>
 </signal>
-<signal name="N$34">
+<signal name="!BMD_DIR">
 <contactref element="E8" pad="17"/>
 <contactref element="E7" pad="2"/>
 <wire x1="195.58" y1="142.24" x2="200.66" y2="142.24" width="0.508" layer="16"/>
 </signal>
-<signal name="N$43">
+<signal name="BSOURCE">
 <contactref element="E8" pad="13"/>
 <contactref element="E7" pad="5"/>
 <wire x1="195.58" y1="149.86" x2="198.12" y2="152.4" width="0.508" layer="16"/>
 <wire x1="198.12" y1="152.4" x2="200.66" y2="152.4" width="0.508" layer="16"/>
 </signal>
-<signal name="N$44">
+<signal name="BWRITE">
 <contactref element="E8" pad="15"/>
 <contactref element="E7" pad="4"/>
 <wire x1="195.58" y1="147.32" x2="200.66" y2="147.32" width="0.508" layer="16"/>
 </signal>
-<signal name="N$45">
+<signal name="!BDISABLE">
 <contactref element="E7" pad="10"/>
 <contactref element="E8" pad="18"/>
 <wire x1="200.66" y1="139.7" x2="199.39" y2="140.97" width="0.508" layer="16"/>
@@ -34247,6 +34247,8 @@ design rules under a new name.</description>
 <contactref element="R25" pad="3"/>
 <contactref element="E1" pad="7"/>
 <wire x1="236.22" y1="48.26" x2="241.3" y2="48.26" width="0.508" layer="16"/>
+</signal>
+<signal name="N$11" class="1">
 </signal>
 </signals>
 <errors>
