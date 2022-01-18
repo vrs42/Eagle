@@ -22087,19 +22087,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E36" gate="A" pin="O"/>
 </segment>
 </net>
-<net name="DATA_EN" class="0">
-<segment>
-<wire x1="215.9" y1="53.34" x2="231.14" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="53.34" x2="231.14" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="35.56" x2="231.14" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="27.94" x2="236.22" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="35.56" x2="231.14" y2="35.56" width="0.1524" layer="91"/>
-<junction x="231.14" y="35.56"/>
-<label x="264.16" y="35.56" size="1.778" layer="95"/>
-<pinref part="E30" gate="B" pin="Q"/>
-<pinref part="E22" gate="A" pin="I1"/>
-</segment>
-</net>
 <net name="!TS3" class="0">
 <segment>
 <wire x1="99.06" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
@@ -22375,6 +22362,19 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E36" gate="B" pin="I0"/>
 <pinref part="E30" gate="B" pin="!Q"/>
 <pinref part="E22" gate="B" pin="I1"/>
+</segment>
+</net>
+<net name="DATA_ENAB" class="0">
+<segment>
+<wire x1="215.9" y1="53.34" x2="231.14" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="53.34" x2="231.14" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="35.56" x2="231.14" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="27.94" x2="236.22" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="35.56" x2="231.14" y2="35.56" width="0.1524" layer="91"/>
+<junction x="231.14" y="35.56"/>
+<label x="264.16" y="35.56" size="1.778" layer="95"/>
+<pinref part="E30" gate="B" pin="Q"/>
+<pinref part="E22" gate="A" pin="I1"/>
 </segment>
 </net>
 </nets>
@@ -23263,14 +23263,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E36" gate="C" pin="O"/>
 </segment>
 </net>
-<net name="DATA_EN" class="0">
-<segment>
-<wire x1="238.76" y1="180.34" x2="251.46" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="180.34" x2="251.46" y2="185.42" width="0.1524" layer="91"/>
-<label x="238.76" y="180.34" size="1.778" layer="95"/>
-<pinref part="E33" gate="D" pin="I1"/>
-</segment>
-</net>
 <net name="!CLR_D3" class="0">
 <segment>
 <wire x1="116.84" y1="167.64" x2="119.38" y2="167.64" width="0.1524" layer="91"/>
@@ -23525,6 +23517,12 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="147.32" y1="127" x2="165.1" y2="127" width="0.1524" layer="91"/>
 <label x="147.32" y="127" size="1.778" layer="95"/>
 <pinref part="E13" gate="D" pin="I0"/>
+</segment>
+<segment>
+<wire x1="236.22" y1="180.34" x2="251.46" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="180.34" x2="251.46" y2="185.42" width="0.1524" layer="91"/>
+<label x="236.22" y="180.34" size="1.778" layer="95"/>
+<pinref part="E33" gate="D" pin="I1"/>
 </segment>
 </net>
 <net name="!MSIR_DISABLE" class="0">
