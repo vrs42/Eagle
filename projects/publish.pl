@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-$SVNURL="http://svn.so-much-stuff.com/svn/trunk/Eagle/projects";
+$SVNURL="https://svn.so-much-stuff.com/svn/trunk/Eagle/projects";
 
 $head = <<'EOM';
 <?php

@@ -3,7 +3,7 @@
 #
 # Scan the directory, find the boards, and make an HTML
 # table describing what we found.
-$WEBURL = "http://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
+$WEBURL = "https://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
 
 # <table border="1">
 # <tr>
