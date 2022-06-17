@@ -1,0 +1,1030 @@
+
+*******************************************************************************
+                                     M221D
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          f1504plcc84  Library DLIB-h-40-2
+Created         Sun Dec 02 07:23:13 2018
+Name            M221D 
+Partno          cpld 
+Revision        01 
+Date            12/1/2018 
+Designer        
+Company         
+Assembly        None 
+Location        E1 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+!a_eq_b =>
+    ac3_h & !mb3_h
+  # !ac3_h & mb3_h
+  # ac2_h & !mb2_h
+  # !ac2_h & mb2_h
+
+!ac2_h.d  =>
+    !reg_bus2
+
+ac2_h.ck  =>
+    load_ac
+
+ac2_l =>
+    !ac2_h
+
+!ac3_h.d  =>
+    !reg_bus3
+
+ac3_h.ck  =>
+    load_ac
+
+ac3_l =>
+    !ac3_h
+
+!adder2 =>
+    !ps_2 & !ps_3 & !ps_left_2 & !ps_left_3
+  # !carry_in & !ps_2 & !ps_left_2 & !ps_left_3
+  # ps_2 & !ps_3 & ps_left_2 & !ps_left_3
+  # !carry_in & ps_2 & ps_left_2 & !ps_left_3
+  # ps_2 & ps_3 & !ps_left_2 & ps_left_3
+  # carry_in & ps_2 & !ps_left_2 & ps_left_3
+  # !ps_2 & ps_3 & ps_left_2 & ps_left_3
+  # carry_in & !ps_2 & ps_left_2 & ps_left_3
+  # !carry_in & !ps_2 & !ps_3 & !ps_left_2
+  # carry_in & ps_2 & ps_3 & !ps_left_2
+  # !carry_in & ps_2 & !ps_3 & ps_left_2
+  # carry_in & !ps_2 & ps_3 & ps_left_2
+
+!adder3 =>
+    !carry_in & !ps_3 & !ps_left_3
+  # carry_in & ps_3 & !ps_left_3
+  # carry_in & !ps_3 & ps_left_3
+  # !carry_in & ps_3 & ps_left_3
+
+!addr_match =>
+    lsw3 & ma3_l
+  # !lsw3 & ma3_h
+  # lsw2 & ma2_l
+  # !lsw2 & ma2_h
+
+!carry_ok_l =>
+    ac3_h & !ps_3
+  # !ac3_h & ps_3
+  # ac2_h & !ps_2
+  # !ac2_h & ps_2
+
+!carry_out_2 =>
+    !ps_3 & !ps_left_2 & !ps_left_3
+  # !carry_in & !ps_left_2 & !ps_left_3
+  # !ps_2 & !ps_3 & !ps_left_3
+  # !carry_in & !ps_2 & !ps_left_3
+  # !carry_in & !ps_3 & !ps_left_2
+  # !carry_in & !ps_2 & !ps_3
+  # !ps_2 & !ps_left_2
+
+!gdollar_0 =>
+    lsw2 & !no_rot & !rot_left & !rot_right
+  # !adder1 & lsw2 & !no_rot & !rot_left
+  # !adder3 & lsw2 & !no_rot & !rot_right
+  # !adder1 & !adder3 & lsw2 & !no_rot
+  # !adder2 & lsw2 & !rot_left & !rot_right
+  # !adder1 & !adder2 & lsw2 & !rot_left
+  # !adder2 & !adder3 & lsw2 & !rot_right
+  # !adder1 & !adder2 & !adder3 & lsw2
+  # !adder2 & !lsw & !rot_left & !rot_right
+  # !adder1 & !adder2 & !lsw & !rot_left
+  # !adder2 & !adder3 & !lsw & !rot_right
+  # !adder1 & !adder2 & !adder3 & !lsw
+  # !adder3 & !lsw & !no_rot & !rot_right
+  # !adder1 & !adder3 & !lsw & !no_rot
+  # !lsw & !no_rot & !rot_left & !rot_right
+  # !adder1 & !lsw & !no_rot & !rot_left
+
+!gdollar_1 =>
+    adder1 & rot_right
+  # adder3 & rot_left
+  # adder2 & no_rot
+  # lsw & !lsw2
+
+!gdollar_2 =>
+    lsw2 & lsw3 & !ma2_l & !ma3_l
+  # lsw2 & !lsw3 & !ma2_l & !ma3_h
+  # lsw2 & !ma2_l & !ma3_h & !ma3_l
+  # !lsw2 & !lsw3 & !ma2_h & !ma3_h
+  # !lsw3 & !ma2_h & !ma2_l & !ma3_h
+  # !lsw2 & lsw3 & !ma2_h & !ma3_l
+  # lsw3 & !ma2_h & !ma2_l & !ma3_l
+  # !lsw2 & !ma2_h & !ma3_h & !ma3_l
+  # !ma2_h & !ma2_l & !ma3_h & !ma3_l
+
+!gdollar_3 =>
+    lsw2 & ma2_l
+  # lsw3 & ma3_l
+  # !lsw3 & ma3_h
+  # !lsw2 & ma2_h
+
+gdollar_4 =>
+    carry_in & ps_left_3
+  # ps_3 & ps_left_3
+  # carry_in & ps_3
+
+!gdollar_5 =>
+    !adder2 & !adder4 & !lsw & !no_rot
+  # !adder4 & !lsw & !no_rot & !rot_right
+  # !adder2 & !lsw & !no_rot & !rot_left
+  # !lsw & !no_rot & !rot_left & !rot_right
+  # !adder2 & !adder4 & lsw3 & !no_rot
+  # !adder4 & lsw3 & !no_rot & !rot_right
+  # !adder2 & lsw3 & !no_rot & !rot_left
+  # lsw3 & !no_rot & !rot_left & !rot_right
+  # !adder2 & !adder3 & !adder4 & lsw3
+  # !adder3 & !adder4 & lsw3 & !rot_right
+  # !adder2 & !adder3 & lsw3 & !rot_left
+  # !adder3 & lsw3 & !rot_left & !rot_right
+  # !adder2 & !adder3 & !lsw & !rot_left
+  # !adder3 & !lsw & !rot_left & !rot_right
+  # !adder2 & !adder3 & !adder4 & !lsw
+  # !adder3 & !adder4 & !lsw & !rot_right
+
+!gdollar_6 =>
+    adder2 & rot_right
+  # adder4 & rot_left
+  # lsw & !lsw3
+  # adder3 & no_rot
+
+!gdollar_7 =>
+    ac2_h & ac3_h & ps_2 & ps_3
+  # !ac2_h & ac3_h & !ps_2 & ps_3
+  # ac2_h & !ac3_h & ps_2 & !ps_3
+  # !ac2_h & !ac3_h & !ps_2 & !ps_3
+
+!gdollar_8 =>
+    !ac3_h & ps_3
+  # ac2_h & !ps_2
+  # !ac2_h & ps_2
+  # ac3_h & !ps_3
+
+!gdollar_9 =>
+    ac2_h & ac3_h & mb2_h & mb3_h
+  # !ac2_h & ac3_h & !mb2_h & mb3_h
+  # ac2_h & !ac3_h & mb2_h & !mb3_h
+  # !ac2_h & !ac3_h & !mb2_h & !mb3_h
+
+!gdollar_10 =>
+    !ac3_h & mb3_h
+  # ac2_h & !mb2_h
+  # !ac2_h & mb2_h
+  # ac3_h & !mb3_h
+
+!ma2_h.d  =>
+    !reg_bus2
+
+ma2_h.ck  =>
+    load_ma
+
+!ma2_l =>
+    ma2_h
+
+!ma3_h.d  =>
+    !reg_bus3
+
+ma3_h.ck  =>
+    load_ma
+
+!ma3_l =>
+    ma3_h
+
+!mb2_h.d  =>
+    !reg_bus2
+
+mb2_h.ck  =>
+    load_mb
+
+mb2_l =>
+    !mb2_h
+
+!mb3_h.d  =>
+    !reg_bus3
+
+mb3_h.ck  =>
+    load_mb
+
+mb3_l =>
+    !mb3_h
+
+n_t_10x =>
+    !lsw3
+
+!n_t_11x =>
+    !ac2_h
+
+!n_t_12x =>
+    ac2_h
+
+!n_t_13x =>
+    !ac3_h
+
+!n_t_14x =>
+    ac3_h
+
+!n_t_15x =>
+    !mb2_h
+
+!n_t_16x =>
+    mb2_h
+
+!n_t_17x =>
+    !mb3_h
+
+!n_t_18x =>
+    mb3_h
+
+n_t_19x =>
+    !ps_2
+
+!n_t_1x =>
+    !enable_ac & !enable_ac_l & !enable_bcl & !enable_bse & !enable_mq & 
+      !ls_msc3
+  # !enable_ac & !enable_ac_l & !enable_bse & !enable_mq & !ls_msc3 & mb3_h
+  # !enable_ac & !enable_ac_l & !enable_bcl & !enable_mq & !ls_msc3 & !mb3_h
+  # !enable_ac & !enable_ac_l & !enable_bcl & !enable_bse & !ls_msc3 & !mq3
+  # !enable_ac & !enable_ac_l & !enable_bse & !ls_msc3 & mb3_h & !mq3
+  # !enable_ac & !enable_ac_l & !enable_bcl & !ls_msc3 & !mb3_h & !mq3
+  # !ac3_h & !enable_ac & !enable_bse & !enable_mq & !ls_msc3
+  # !ac3_h & !enable_ac & !enable_mq & !ls_msc3 & !mb3_h
+  # !ac3_h & !enable_ac & !enable_bse & !ls_msc3 & !mq3
+  # !ac3_h & !enable_ac & !ls_msc3 & !mb3_h & !mq3
+  # ac3_h & !enable_ac_l & !enable_bcl & !enable_mq & !ls_msc3
+  # ac3_h & !enable_ac_l & !enable_mq & !ls_msc3 & mb3_h
+  # ac3_h & !enable_ac_l & !enable_bcl & !ls_msc3 & !mq3
+  # ac3_h & !enable_ac_l & !ls_msc3 & mb3_h & !mq3
+
+n_t_20x =>
+    !ps_3
+
+!n_t_2x =>
+    ac3_h & enable_bcl & !mb3_h
+  # !ac3_h & enable_bse & mb3_h
+  # enable_mq & mq3
+  # ls_msc3
+  # ac3_h & enable_ac_l
+  # !ac3_h & enable_ac
+
+!n_t_3x =>
+    !ac2_h & !data_add_2 & !enable_mem & !enable_pc & !ma2_h & !mb2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_mem & !enable_pc & !ma2_h & !mb2_h & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add_2 & !enable_mem & !enable_pc & !enable_rsw & !ma2_h & 
+      !mb2_h & !rs_msc2
+  # !data_add_2 & !enable_ac_r & !enable_mem & !enable_pc & !enable_rsw & 
+      !ma2_h & !mb2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_mem & !ma2_h & !mb2_h & !pc2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_mem & !ma2_h & !mb2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_mem & !enable_rsw & !ma2_h & !mb2_h & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_mem & !enable_rsw & !ma2_h & !mb2_h & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_mem & !enable_pc & !ma2_h & !mb2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add & !enable_ac_r & !enable_mem & !enable_pc & !ma2_h & !mb2_h & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add & !enable_mem & !enable_pc & !enable_rsw & !ma2_h & 
+      !mb2_h & !rs_msc2
+  # !data_add & !enable_ac_r & !enable_mem & !enable_pc & !enable_rsw & !ma2_h & 
+      !mb2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_mem & !ma2_h & !mb2_h & !pc2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add & !enable_ac_r & !enable_mem & !ma2_h & !mb2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_mem & !enable_rsw & !ma2_h & !mb2_h & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_mem & !enable_rsw & !ma2_h & !mb2_h & !pc2_h & 
+      !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_mb2 & !enable_mem & !enable_pc & !ma2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_mb2 & !enable_mem & !enable_pc & 
+      !ma2_h & !rs_msc2 & !rsw2
+  # !ac2_h & !data_add_2 & !enable_mb2 & !enable_mem & !enable_pc & 
+      !enable_rsw & !ma2_h & !rs_msc2
+  # !data_add_2 & !enable_ac_r & !enable_mb2 & !enable_mem & !enable_pc & 
+      !enable_rsw & !ma2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_mb2 & !enable_mem & !ma2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_mb2 & !enable_mem & !ma2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_mb2 & !enable_mem & !enable_rsw & 
+      !ma2_h & !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_mb2 & !enable_mem & !enable_rsw & !ma2_h & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_mb2 & !enable_mem & !enable_pc & !ma2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_mb2 & !enable_mem & !enable_pc & !ma2_h & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add & !enable_mb2 & !enable_mem & !enable_pc & !enable_rsw & 
+      !ma2_h & !rs_msc2
+  # !data_add & !enable_ac_r & !enable_mb2 & !enable_mem & !enable_pc & 
+      !enable_rsw & !ma2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_mb2 & !enable_mem & !ma2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_mb2 & !enable_mem & !ma2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_mb2 & !enable_mem & !enable_rsw & 
+      !ma2_h & !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_mb2 & !enable_mem & !enable_rsw & !ma2_h & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mem & !enable_pc & !mb2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mem & !enable_pc & 
+      !mb2_h & !rs_msc2 & !rsw2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mem & !enable_pc & 
+      !enable_rsw & !mb2_h & !rs_msc2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mem & !enable_pc & 
+      !enable_rsw & !mb2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mem & !mb2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mem & !mb2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mem & !enable_rsw & 
+      !mb2_h & !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mem & !enable_rsw & !mb2_h & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mem & !enable_pc & !mb2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mem & !enable_pc & !mb2_h & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mem & !enable_pc & !enable_rsw & 
+      !mb2_h & !rs_msc2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mem & !enable_pc & 
+      !enable_rsw & !mb2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mem & !mb2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mem & !mb2_h & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mem & !enable_rsw & 
+      !mb2_h & !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mem & !enable_rsw & !mb2_h & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !enable_pc & !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !enable_pc & !rs_msc2 & !rsw2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !enable_pc & !enable_rsw & !rs_msc2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !enable_pc & !enable_rsw & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mb2 & !enable_mem & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !pc2_h & !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !enable_rsw & !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !enable_rsw & !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mb2 & !enable_mem & !enable_pc & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !enable_pc & !rs_msc2 & !rsw2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mb2 & !enable_mem & !enable_pc & 
+      !enable_rsw & !rs_msc2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !enable_pc & !enable_rsw & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mb2 & !enable_mem & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !pc2_h & !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_mem & 
+      !enable_rsw & !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mb2 & !enable_mem & !enable_rsw & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_pc & !mb2_h & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_pc & !mb2_h & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_pc & !enable_rsw & !mb2_h & 
+      !mem2 & !rs_msc2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_pc & !enable_rsw & 
+      !mb2_h & !mem2 & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !mb2_h & !mem2 & !pc2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !mb2_h & !mem2 & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_rsw & !mb2_h & !mem2 & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_rsw & !mb2_h & !mem2 & !pc2_h & 
+      !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_pc & !mb2_h & !mem2 & !rs_msc2 & 
+      !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_pc & !mb2_h & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_pc & !enable_rsw & !mb2_h & 
+      !mem2 & !rs_msc2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_pc & !enable_rsw & !mb2_h & 
+      !mem2 & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !mb2_h & !mem2 & !pc2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !mb2_h & !mem2 & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_rsw & !mb2_h & !mem2 & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_rsw & !mb2_h & !mem2 & !pc2_h & 
+      !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mb2 & !enable_pc & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_pc & 
+      !mem2 & !rs_msc2 & !rsw2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mb2 & !enable_pc & 
+      !enable_rsw & !mem2 & !rs_msc2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_pc & 
+      !enable_rsw & !mem2 & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mb2 & !mem2 & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mb2 & !mem2 & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_rsw & 
+      !mem2 & !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_ma2 & !enable_mb2 & !enable_rsw & !mem2 & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mb2 & !enable_pc & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_pc & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mb2 & !enable_pc & !enable_rsw & 
+      !mem2 & !rs_msc2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_pc & 
+      !enable_rsw & !mem2 & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mb2 & !mem2 & !pc2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mb2 & !mem2 & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_ma2 & !enable_mb2 & !enable_rsw & !mem2 & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_ma2 & !enable_mb2 & !enable_rsw & !mem2 & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_mb2 & !enable_pc & !ma2_h & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_mb2 & !enable_pc & !ma2_h & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add_2 & !enable_mb2 & !enable_pc & !enable_rsw & !ma2_h & 
+      !mem2 & !rs_msc2
+  # !data_add_2 & !enable_ac_r & !enable_mb2 & !enable_pc & !enable_rsw & 
+      !ma2_h & !mem2 & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_mb2 & !ma2_h & !mem2 & !pc2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_mb2 & !ma2_h & !mem2 & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_mb2 & !enable_rsw & !ma2_h & !mem2 & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_mb2 & !enable_rsw & !ma2_h & !mem2 & !pc2_h & 
+      !rs_msc2
+  # !ac2_h & !data_add & !enable_mb2 & !enable_pc & !ma2_h & !mem2 & !rs_msc2 & 
+      !rsw2
+  # !data_add & !enable_ac_r & !enable_mb2 & !enable_pc & !ma2_h & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add & !enable_mb2 & !enable_pc & !enable_rsw & !ma2_h & 
+      !mem2 & !rs_msc2
+  # !data_add & !enable_ac_r & !enable_mb2 & !enable_pc & !enable_rsw & !ma2_h & 
+      !mem2 & !rs_msc2
+  # !ac2_h & !data_add & !enable_mb2 & !ma2_h & !mem2 & !pc2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add & !enable_ac_r & !enable_mb2 & !ma2_h & !mem2 & !pc2_h & 
+      !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !enable_mb2 & !enable_rsw & !ma2_h & !mem2 & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add & !enable_mb2 & !enable_rsw & !ma2_h & !mem2 & !pc2_h & 
+      !rs_msc2
+  # !ac2_h & !data_add & !enable_pc & !ma2_h & !mb2_h & !mem2 & !rs_msc2 & 
+      !rsw2
+  # !data_add & !enable_ac_r & !enable_pc & !ma2_h & !mb2_h & !mem2 & !rs_msc2 & 
+      !rsw2
+  # !ac2_h & !data_add & !enable_pc & !enable_rsw & !ma2_h & !mb2_h & !mem2 & 
+      !rs_msc2
+  # !data_add & !enable_ac_r & !enable_pc & !enable_rsw & !ma2_h & !mb2_h & 
+      !mem2 & !rs_msc2
+  # !ac2_h & !data_add & !ma2_h & !mb2_h & !mem2 & !pc2_h & !rs_msc2 & !rsw2
+  # !data_add & !enable_ac_r & !ma2_h & !mb2_h & !mem2 & !pc2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add & !enable_ac_r & !enable_rsw & !ma2_h & !mb2_h & !mem2 & !pc2_h & 
+      !rs_msc2
+  # !ac2_h & !data_add & !enable_rsw & !ma2_h & !mb2_h & !mem2 & !pc2_h & 
+      !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_pc & !ma2_h & !mb2_h & !mem2 & !rs_msc2 & 
+      !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_pc & !ma2_h & !mb2_h & !mem2 & 
+      !rs_msc2 & !rsw2
+  # !ac2_h & !data_add_2 & !enable_pc & !enable_rsw & !ma2_h & !mb2_h & !mem2 & 
+      !rs_msc2
+  # !data_add_2 & !enable_ac_r & !enable_pc & !enable_rsw & !ma2_h & !mb2_h & 
+      !mem2 & !rs_msc2
+  # !ac2_h & !data_add_2 & !ma2_h & !mb2_h & !mem2 & !pc2_h & !rs_msc2 & !rsw2
+  # !data_add_2 & !enable_ac_r & !ma2_h & !mb2_h & !mem2 & !pc2_h & !rs_msc2 & 
+      !rsw2
+  # !data_add_2 & !enable_ac_r & !enable_rsw & !ma2_h & !mb2_h & !mem2 & 
+      !pc2_h & !rs_msc2
+  # !ac2_h & !data_add_2 & !enable_rsw & !ma2_h & !mb2_h & !mem2 & !pc2_h & 
+      !rs_msc2
+
+!n_t_4x =>
+    data_add & data_add_2
+  # enable_mb2 & mb2_h
+  # enable_mem & mem2
+  # enable_ma2 & ma2_h
+  # ac2_h & enable_ac_r
+  # rs_msc2
+  # enable_pc & pc2_h
+  # enable_rsw & rsw2
+
+!n_t_5x =>
+    !ac2_h & enable_bse & mb2_h
+  # ac2_h & enable_bcl & !mb2_h
+  # enable_mq & mq2
+  # ls_msc2
+  # ac2_h & enable_ac_l
+  # !ac2_h & enable_ac
+
+!n_t_6x =>
+    !enable_ac & !enable_ac_l & !enable_bcl & !enable_mq & !ls_msc2 & !mb2_h
+  # !enable_ac & !enable_ac_l & !enable_bcl & !ls_msc2 & !mb2_h & !mq2
+  # !ac2_h & !enable_ac & !enable_mq & !ls_msc2 & !mb2_h
+  # !ac2_h & !enable_ac & !ls_msc2 & !mb2_h & !mq2
+  # !enable_ac & !enable_ac_l & !enable_bse & !enable_mq & !ls_msc2 & mb2_h
+  # !enable_ac & !enable_ac_l & !enable_bse & !ls_msc2 & mb2_h & !mq2
+  # !enable_ac & !enable_ac_l & !enable_bcl & !enable_bse & !enable_mq & 
+      !ls_msc2
+  # !enable_ac & !enable_ac_l & !enable_bcl & !enable_bse & !ls_msc2 & !mq2
+  # !ac2_h & !enable_ac & !enable_bse & !enable_mq & !ls_msc2
+  # !ac2_h & !enable_ac & !enable_bse & !ls_msc2 & !mq2
+  # ac2_h & !enable_ac_l & !enable_bcl & !ls_msc2 & !mq2
+  # ac2_h & !enable_ac_l & !enable_bcl & !enable_mq & !ls_msc2
+  # ac2_h & !enable_ac_l & !ls_msc2 & mb2_h & !mq2
+  # ac2_h & !enable_ac_l & !enable_mq & !ls_msc2 & mb2_h
+
+!n_t_7x =>
+    ac3_h & enable_ac_r
+  # rs_msc3
+  # enable_pc & pc3_h
+  # enable_rsw & rsw3
+  # data_add & data_add_3
+  # enable_mb3 & mb3_h
+  # enable_mem & mem3
+  # enable_ma3 & ma3_h
+
+!n_t_8x =>
+    !ac3_h & !data_add_3 & !enable_mem & !enable_pc & !ma3_h & !mb3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_mem & !enable_pc & !ma3_h & !mb3_h & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add_3 & !enable_mb3 & !enable_mem & !enable_pc & !ma3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_mb3 & !enable_mem & !enable_pc & !ma3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mem & !enable_pc & !mb3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mem & !enable_pc & !mb3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !enable_pc & !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mb3 & !enable_mem & !enable_pc & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_pc & !mb3_h & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_pc & !mb3_h & !mem3 & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mb3 & !enable_pc & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mb3 & !enable_pc & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add_3 & !enable_mb3 & !enable_pc & !ma3_h & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_mb3 & !enable_pc & !ma3_h & !mem3 & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add & !enable_pc & !ma3_h & !mb3_h & !mem3 & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add_3 & !enable_pc & !ma3_h & !mb3_h & !mem3 & !rs_msc3 & 
+      !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_mem & !enable_pc & !ma3_h & !mb3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_mem & !enable_pc & !ma3_h & !mb3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_mb3 & !enable_mem & !enable_pc & 
+      !ma3_h & !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_mb3 & !enable_mem & !enable_pc & !ma3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mem & !enable_pc & 
+      !mb3_h & !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mem & !enable_pc & !mb3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !enable_pc & !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !enable_pc & !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_pc & !mb3_h & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_pc & !mb3_h & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_pc & 
+      !mem3 & !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_pc & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_mb3 & !enable_pc & !ma3_h & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_mb3 & !enable_pc & !ma3_h & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_pc & !ma3_h & !mb3_h & !mem3 & !rs_msc3 & 
+      !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_pc & !ma3_h & !mb3_h & !mem3 & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add_3 & !enable_mem & !enable_pc & !enable_rsw & !ma3_h & 
+      !mb3_h & !rs_msc3
+  # !ac3_h & !data_add & !enable_mem & !enable_pc & !enable_rsw & !ma3_h & 
+      !mb3_h & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_mb3 & !enable_mem & !enable_pc & 
+      !enable_rsw & !ma3_h & !rs_msc3
+  # !ac3_h & !data_add & !enable_mb3 & !enable_mem & !enable_pc & !enable_rsw & 
+      !ma3_h & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mem & !enable_pc & 
+      !enable_rsw & !mb3_h & !rs_msc3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mem & !enable_pc & !enable_rsw & 
+      !mb3_h & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !enable_pc & !enable_rsw & !rs_msc3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mb3 & !enable_mem & !enable_pc & 
+      !enable_rsw & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_pc & !enable_rsw & !mb3_h & 
+      !mem3 & !rs_msc3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_pc & !enable_rsw & !mb3_h & 
+      !mem3 & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mb3 & !enable_pc & 
+      !enable_rsw & !mem3 & !rs_msc3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mb3 & !enable_pc & !enable_rsw & 
+      !mem3 & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_mb3 & !enable_pc & !enable_rsw & !ma3_h & 
+      !mem3 & !rs_msc3
+  # !ac3_h & !data_add & !enable_mb3 & !enable_pc & !enable_rsw & !ma3_h & 
+      !mem3 & !rs_msc3
+  # !ac3_h & !data_add & !enable_pc & !enable_rsw & !ma3_h & !mb3_h & !mem3 & 
+      !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_pc & !enable_rsw & !ma3_h & !mb3_h & !mem3 & 
+      !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_mem & !enable_pc & !enable_rsw & 
+      !ma3_h & !mb3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_mem & !enable_pc & !enable_rsw & !ma3_h & 
+      !mb3_h & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_mb3 & !enable_mem & !enable_pc & 
+      !enable_rsw & !ma3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_mb3 & !enable_mem & !enable_pc & 
+      !enable_rsw & !ma3_h & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mem & !enable_pc & 
+      !enable_rsw & !mb3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mem & !enable_pc & 
+      !enable_rsw & !mb3_h & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !enable_pc & !enable_rsw & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !enable_pc & !enable_rsw & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_pc & !enable_rsw & 
+      !mb3_h & !mem3 & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_pc & !enable_rsw & !mb3_h & 
+      !mem3 & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_pc & 
+      !enable_rsw & !mem3 & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_pc & 
+      !enable_rsw & !mem3 & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_mb3 & !enable_pc & !enable_rsw & 
+      !ma3_h & !mem3 & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_mb3 & !enable_pc & !enable_rsw & !ma3_h & 
+      !mem3 & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_pc & !enable_rsw & !ma3_h & !mb3_h & 
+      !mem3 & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_pc & !enable_rsw & !ma3_h & !mb3_h & 
+      !mem3 & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_mem & !ma3_h & !mb3_h & !pc3_h & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add & !enable_mem & !ma3_h & !mb3_h & !pc3_h & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add_3 & !enable_mb3 & !enable_mem & !ma3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_mb3 & !enable_mem & !ma3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mem & !mb3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mem & !mb3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mb3 & !enable_mem & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mb3 & !enable_mem & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !mb3_h & !mem3 & !pc3_h & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add & !enable_ma3 & !mb3_h & !mem3 & !pc3_h & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mb3 & !mem3 & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mb3 & !mem3 & !pc3_h & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add_3 & !enable_mb3 & !ma3_h & !mem3 & !pc3_h & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add & !enable_mb3 & !ma3_h & !mem3 & !pc3_h & !rs_msc3 & 
+      !rsw3
+  # !ac3_h & !data_add & !ma3_h & !mb3_h & !mem3 & !pc3_h & !rs_msc3 & !rsw3
+  # !ac3_h & !data_add_3 & !ma3_h & !mb3_h & !mem3 & !pc3_h & !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_mem & !ma3_h & !mb3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_mem & !ma3_h & !mb3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_mb3 & !enable_mem & !ma3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_mb3 & !enable_mem & !ma3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mem & !mb3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mem & !mb3_h & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !pc3_h & !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !pc3_h & !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !mb3_h & !mem3 & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_ma3 & !mb3_h & !mem3 & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mb3 & !mem3 & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mb3 & !mem3 & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_mb3 & !ma3_h & !mem3 & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !enable_mb3 & !ma3_h & !mem3 & !pc3_h & 
+      !rs_msc3 & !rsw3
+  # !data_add & !enable_ac_r & !ma3_h & !mb3_h & !mem3 & !pc3_h & !rs_msc3 & 
+      !rsw3
+  # !data_add_3 & !enable_ac_r & !ma3_h & !mb3_h & !mem3 & !pc3_h & !rs_msc3 & 
+      !rsw3
+  # !data_add_3 & !enable_ac_r & !enable_mem & !enable_rsw & !ma3_h & !mb3_h & 
+      !pc3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_mem & !enable_rsw & !ma3_h & !mb3_h & 
+      !pc3_h & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_mb3 & !enable_mem & !enable_rsw & 
+      !ma3_h & !pc3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_mb3 & !enable_mem & !enable_rsw & 
+      !ma3_h & !pc3_h & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mem & !enable_rsw & 
+      !mb3_h & !pc3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mem & !enable_rsw & 
+      !mb3_h & !pc3_h & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !enable_rsw & !pc3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !enable_rsw & !pc3_h & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_rsw & !mb3_h & !mem3 & 
+      !pc3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_rsw & !mb3_h & !mem3 & 
+      !pc3_h & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_rsw & 
+      !mem3 & !pc3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_ma3 & !enable_mb3 & !enable_rsw & !mem3 & 
+      !pc3_h & !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_mb3 & !enable_rsw & !ma3_h & !mem3 & 
+      !pc3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_mb3 & !enable_rsw & !ma3_h & !mem3 & 
+      !pc3_h & !rs_msc3
+  # !data_add & !enable_ac_r & !enable_rsw & !ma3_h & !mb3_h & !mem3 & !pc3_h & 
+      !rs_msc3
+  # !data_add_3 & !enable_ac_r & !enable_rsw & !ma3_h & !mb3_h & !mem3 & 
+      !pc3_h & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_mem & !enable_rsw & !ma3_h & !mb3_h & 
+      !pc3_h & !rs_msc3
+  # !ac3_h & !data_add & !enable_mem & !enable_rsw & !ma3_h & !mb3_h & !pc3_h & 
+      !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_mb3 & !enable_mem & !enable_rsw & !ma3_h & 
+      !pc3_h & !rs_msc3
+  # !ac3_h & !data_add & !enable_mb3 & !enable_mem & !enable_rsw & !ma3_h & 
+      !pc3_h & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mem & !enable_rsw & !mb3_h & 
+      !pc3_h & !rs_msc3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mem & !enable_rsw & !mb3_h & 
+      !pc3_h & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mb3 & !enable_mem & 
+      !enable_rsw & !pc3_h & !rs_msc3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mb3 & !enable_mem & !enable_rsw & 
+      !pc3_h & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_rsw & !mb3_h & !mem3 & !pc3_h & 
+      !rs_msc3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_rsw & !mb3_h & !mem3 & !pc3_h & 
+      !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_ma3 & !enable_mb3 & !enable_rsw & !mem3 & 
+      !pc3_h & !rs_msc3
+  # !ac3_h & !data_add & !enable_ma3 & !enable_mb3 & !enable_rsw & !mem3 & 
+      !pc3_h & !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_mb3 & !enable_rsw & !ma3_h & !mem3 & !pc3_h & 
+      !rs_msc3
+  # !ac3_h & !data_add & !enable_mb3 & !enable_rsw & !ma3_h & !mem3 & !pc3_h & 
+      !rs_msc3
+  # !ac3_h & !data_add & !enable_rsw & !ma3_h & !mb3_h & !mem3 & !pc3_h & 
+      !rs_msc3
+  # !ac3_h & !data_add_3 & !enable_rsw & !ma3_h & !mb3_h & !mem3 & !pc3_h & 
+      !rs_msc3
+
+n_t_9x =>
+    !lsw2
+
+!pc2_h.d  =>
+    !reg_bus2
+
+pc2_h.ck  =>
+    load_pc
+
+!pc2_l =>
+    pc2_h
+
+!pc3_h.d  =>
+    !reg_bus3
+
+pc3_h.ck  =>
+    load_pc
+
+!pc3_l =>
+    pc3_h
+
+!ps_2 =>
+    enable_rsw & rsw2
+  # enable_pc & pc2_h
+  # enable_mem & mem2
+  # enable_mb2 & mb2_h
+  # enable_ma2 & ma2_h
+  # ac2_h & enable_ac_r
+  # data_add & data_add_2
+  # rs_msc2
+
+!ps_3 =>
+    enable_rsw & rsw3
+  # enable_pc & pc3_h
+  # enable_mem & mem3
+  # enable_mb3 & mb3_h
+  # enable_ma3 & ma3_h
+  # ac3_h & enable_ac_r
+  # data_add & data_add_3
+  # rs_msc3
+
+!ps_left_2 =>
+    ac2_h & enable_bcl & !mb2_h
+  # !ac2_h & enable_bse & mb2_h
+  # enable_mq & mq2
+  # ac2_h & enable_ac_l
+  # !ac2_h & enable_ac
+  # ls_msc2
+
+!ps_left_3 =>
+    ac3_h & enable_bcl & !mb3_h
+  # !ac3_h & enable_bse & mb3_h
+  # enable_mq & mq3
+  # ac3_h & enable_ac_l
+  # !ac3_h & enable_ac
+  # ls_msc3
+
+!reg_bus2 =>
+    adder1 & rot_right
+  # adder3 & rot_left
+  # adder2 & no_rot
+  # lsw & !lsw2
+
+!reg_bus3 =>
+    adder2 & rot_right
+  # adder4 & rot_left
+  # adder3 & no_rot
+  # lsw & !lsw3
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    a_eq_b                      11       V        4       0       4     
+    ac2_h                       86       N        -       -       -     
+    ac2_h               d       86       M        1       0       4     
+    ac2_h               ck      86       M        1       0       1     
+    ac2_l                       0        I        1       -       -     
+    ac3_h                       85       N        -       -       -     
+    ac3_h               d       85       M        1       0       4     
+    ac3_h               ck      85       M        1       0       1     
+    ac3_l                       0        I        1       -       -     
+    adder1                      1        V        -       -       -     
+    adder2                      75       V        12      0       4     
+    adder3                      69       V        4       0       4     
+    adder4                      67       V        -       -       -     
+    addr_match                  14       V        4       0       4     
+    carry_in                    63       V        -       -       -     
+    carry_ok_l                  8        V        4       0       4     
+    carry_out_2                 74       V        7       0       4     
+    data_add                    25       V        -       -       -     
+    data_add_2                  60       V        -       -       -     
+    data_add_3                  16       V        -       -       -     
+    enable_ac                   31       V        -       -       -     
+    enable_ac_l                 51       V        -       -       -     
+    enable_ac_r                 70       V        -       -       -     
+    enable_bcl                  39       V        -       -       -     
+    enable_bse                  36       V        -       -       -     
+    enable_ma2                  55       V        -       -       -     
+    enable_ma3                  22       V        -       -       -     
+    enable_mb2                  57       V        -       -       -     
+    enable_mb3                  17       V        -       -       -     
+    enable_mem                  46       V        -       -       -     
+    enable_mq                   54       V        -       -       -     
+    enable_pc                   68       V        -       -       -     
+    enable_rsw                  83       V        -       -       -     
+    gdollar_0                   0        I        16      -       -     
+    gdollar_1                   0        I        4       -       -     
+    gdollar_2                   0        I        9       -       -     
+    gdollar_3                   0        I        4       -       -     
+    gdollar_4                   0        I        3       -       -     
+    gdollar_5                   0        I        16      -       -     
+    gdollar_6                   0        I        4       -       -     
+    gdollar_7                   0        I        4       -       -     
+    gdollar_8                   0        I        4       -       -     
+    gdollar_9                   0        I        4       -       -     
+    gdollar_10                  0        I        4       -       -     
+    load_ac                     50       V        -       -       -     
+    load_ma                     35       V        -       -       -     
+    load_mb                     41       V        -       -       -     
+    load_pc                     45       V        -       -       -     
+    ls_msc2                     49       V        -       -       -     
+    ls_msc3                     27       V        -       -       -     
+    lsw                         84       V        -       -       -     
+    lsw2                        61       V        -       -       -     
+    lsw3                        64       V        -       -       -     
+    ma2_h                       52       V        -       -       -     
+    ma2_h               d       52       X        1       0       4     
+    ma2_h               ck      52       X        1       0       1     
+    ma2_l                       4        V        1       0       4     
+    ma3_h                       20       V        -       -       -     
+    ma3_h               d       20       X        1       0       4     
+    ma3_h               ck      20       X        1       0       1     
+    ma3_l                       28       V        1       0       4     
+    mb2_h                       88       N        -       -       -     
+    mb2_h               d       88       M        1       0       4     
+    mb2_h               ck      88       M        1       0       1     
+    mb2_l                       0        I        1       -       -     
+    mb3_h                       87       N        -       -       -     
+    mb3_h               d       87       M        1       0       4     
+    mb3_h               ck      87       M        1       0       1     
+    mb3_l                       0        I        1       -       -     
+    mem2                        65       V        -       -       -     
+    mem3                        24       V        -       -       -     
+    mq2                         56       V        -       -       -     
+    mq3                         29       V        -       -       -     
+    n_t_10x                     0        I        1       -       -     
+    n_t_11x                     62       V        1       0       4     
+    n_t_12x                     6        V        1       0       4     
+    n_t_13x                     30       V        1       0       4     
+    n_t_14x                     40       V        1       0       4     
+    n_t_15x                     34       V        1       0       4     
+    n_t_16x                     10       V        1       0       4     
+    n_t_17x                     15       V        1       0       4     
+    n_t_18x                     12       V        1       0       4     
+    n_t_19x                     0        I        1       -       -     
+    n_t_1x                      0        I        14      -       -     
+    n_t_20x                     0        I        1       -       -     
+    n_t_2x                      0        I        6       -       -     
+    n_t_3x                      0        I        128     -       -     
+    n_t_4x                      0        I        8       -       -     
+    n_t_5x                      0        I        6       -       -     
+    n_t_6x                      0        I        14      -       -     
+    n_t_7x                      0        I        8       -       -     
+    n_t_8x                      0        I        128     -       -     
+    n_t_9x                      0        I        1       -       -     
+    no_rot                      73       V        -       -       -     
+    pc2_h                       90       N        -       -       -     
+    pc2_h               d       90       M        1       0       4     
+    pc2_h               ck      90       M        1       0       1     
+    pc2_l                       44       V        1       0       4     
+    pc3_h                       89       N        -       -       -     
+    pc3_h               d       89       M        1       0       4     
+    pc3_h               ck      89       M        1       0       1     
+    pc3_l                       37       V        1       0       4     
+    ps_2                        9        V        8       0       4     
+    ps_3                        5        V        8       0       4     
+    ps_left_2                   58       V        6       0       4     
+    ps_left_3                   33       V        6       0       4     
+    reg_bus2                    81       V        4       0       4     
+    reg_bus3                    48       V        4       0       4     
+    rot_left                    76       V        -       -       -     
+    rot_right                   79       V        -       -       -     
+    rs_msc2                     77       V        -       -       -     
+    rs_msc3                     18       V        -       -       -     
+    rsw2                        80       V        -       -       -     
+    rsw3                        21       V        -       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

@@ -1,0 +1,170 @@
+Name     M220B ;
+PartNo   cpld ;
+Date     11/11/2015 ;
+Revision 01 ;
+Designer  ;
+Company   ;
+Assembly None ;
+Location E1 ;
+Device   f1508plcc84;
+
+/* Input Pins */
+pin 62 = ab2;
+pin 71 = bb2;
+pin 33 = ac_enabl; /* BH2 */
+pin 30 = ac_low_enabl; /* BJ2 */
+pin  1 = adder0; /* AB1 */
+pin 84 = adder1; /* AC1 */
+pin 75 = adder4; /* AH2 */
+pin 73 = adder5; /* AJ2 */
+pin 68 = ak1; /* AK1 */
+pin 61 = an2; /* AN2 */
+pin  2 = and_h; /* AA1 */
+pin 55 = ar1; /* AR1 */
+pin 49 = au1; /* AU1 */
+pin 37 = be2; /* BE2 */
+pin 15 = br2; /* BR2 */
+pin  6 = bu1; /* BU1 */
+pin  4 = bv1; /* BV1 */
+pin  5 = bv2; /* BV2 */
+pin 29 = c0; /* BJ1 */
+pin 10 = da2; /* BS1 */
+pin  9 = da_enabl; /* BT2 */
+pin 22 = data2; /* BM2 */
+pin 17 = data3; /* BP2 */
+pin 24 = data_enabl; /* BL1 */
+pin 27 = io2; /* BK1 */
+pin 21 = io3; /* BM1 */
+pin 25 = io_enabl; /* BL2 */
+pin 16 = ma_enabl; /* BP1 */
+pin 12 = mem2; /* BR1 */
+pin  8 = mem_enabl; /* BU2 */
+pin 31 = mq2_h; /* BH1 */
+pin 20 = mq3_h; /* BN2 */
+pin 34 = mq_enabl; /* BF1 */
+pin 79 = no_shift; /* AE1 */
+pin 11 = pc_enabl; /* BS2 */
+pin 39 = sc2; /* BD1 */
+pin 18 = sc3; /* BN1 */
+pin 35 = sc_enabl; /* BF2 */
+pin 77 = shift_l1; /* AF2 */
+pin 74 = shift_l2; /* AH1 */
+pin 83 = shift_r1; /* AD2 */
+pin 81 = shift_r2; /* AD1 */
+pin 36 = sr2; /* BE1 */
+pin 40 = sr3; /* BD2 */
+pin 41 = sr_enabl; /* BC1 */
+
+/* Output Pins */
+pin 45 = ac2_h; /* BA1 */
+pin 44 = ac2_l; /* BB1*/
+pin 46 = ac3_h; /* AV1 */
+pin 48 = ac3_l; /* AV2 */
+pin 80 = adder2; /* AE2 */
+pin 76 = adder3; /* AF1 */
+pin 70 = aj1; /* AJ1 */
+pin 69 = ak2; /* AK2 */
+pin 52 = as1; /* AS1 */
+pin 54 = as2; /* AS2 */
+pin 51 = at2; /* AT2 */
+pin 50 = au2; /* AU2 */
+pin 28 = c2; /* BK2 */
+pin 64 = ma2_h; /* AM2 */
+pin 63 = ma2_l; /* AM1 */
+pin 67 = ma3_h; /* AL2 */
+pin 65 = ma3_l; /* AL1 */
+pin 57 = pc2_h; /* AP1 */
+pin 56 = pc2_l; /* AR2 */
+pin 60 = pc3_h; /* AN1 */
+pin 58 = pc3_l; /* AP2 */
+
+/* Internal nodes */
+pinnode = mb2_h;
+pinnode = mb3_h;
+pinnode = n_t_5x;
+pinnode = n_t_8x;
+pinnode = n_t_12x;
+pinnode = n_t_14x;
+
+/* Equations */
+
+tt_shift = !ab2;
+
+/* e1: sn7453 */
+!aj1 = shift_r1&adder1 # no_shift&adder2 # adder3&shift_l1 # shift_r2&adder0
+        # mb2_l&and_h # adder4&shift_l2 # bb2&tt_shift;
+
+/* e2: sn7453 */
+!ak2 = adder4&shift_l1 # adder3&no_shift # adder2&shift_r1 # shift_r2&adder1
+        # mb3_l&and_h # adder5&shift_l2 # adder3&tt_shift;
+
+/* e3: sn7460 */
+
+/* e4: sn7474 */
+ma2_h.d = aj1;
+ma2_h.ck = ak1;
+ma2_l = !ma2_h;
+ma3_h.d = ak2;
+ma3_h.ck = ak1;
+ma3_l = !ma3_h;
+
+/* e5: sn7460 */
+
+/* e6: sn7460 */
+
+/* e7: sn7440 */
+as2 = !mb3_l;
+as1 = !mb3_h;
+
+/* e8: sn7474 */
+mb2_h.d = aj1;
+mb2_h.ck = ar1;
+mb2_l = !mb2_h;
+mb3_h.d = ak2;
+mb3_h.ck = ar1;
+mb3_l = !mb3_h;
+
+/* e9: sn7474 */
+pc2_h.d = aj1;
+pc2_h.ck = an2;
+pc2_l = !pc2_h;
+pc3_h.d = ak2;
+pc3_h.ck = an2;
+pc3_l = !pc3_h;
+
+/* e10: sn7474 */
+ac2_h.d = aj1;
+ac2_h.ck = au1;
+ac2_l = !ac2_h;
+ac3_h.d = ak2;
+ac3_h.ck = au1;
+ac3_l = !ac3_h;
+
+/* e11: sn7440 */
+au2 = !mb2_h;
+at2 = !mb2_l;
+
+/* e12: sn7453 */
+!n_t_8x = be2 # ac3_h&ac_enabl # ac3_l&ac_low_enabl # mq3_h&mq_enabl
+        # sr_enabl&sr3 # sc3&sc_enabl # data3&data_enabl # io3&io_enabl;
+
+/* e13: sn7482 */
+adder3 = c0 $ n_t_8x $ n_t_14x;
+gdollar_0 = c0&n_t_8x # n_t_8x&n_t_14x # c0&n_t_14x;
+adder2 = n_t_12x $ n_t_5x $ gdollar_0;
+c2 = gdollar_0&n_t_12x # n_t_12x&n_t_5x # n_t_5x&gdollar_0;
+
+
+/* e14: sn7453 */
+!n_t_5x = sr_enabl&sr2 # sc2&sc_enabl # data2&data_enabl # io2&io_enabl 
+        # ac2_h&ac_enabl # ac2_l&ac_low_enabl # mq2_h&mq_enabl;
+
+/* e15: sn7453 */
+
+/* e16: sn7453 */
+
+/* e17: sn7453 */
+!n_t_12x = ma_enabl&ma2_h # pc2_h&pc_enabl # mem2&mem_enabl # da2&da_enabl;
+
+/* e18: sn7453 */
+!n_t_14x = br2&ma3_h # pc3_h&pc_enabl # bv2&bv1 # bu1&da_enabl;

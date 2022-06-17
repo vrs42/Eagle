@@ -1,0 +1,704 @@
+Atmel ATF1504AS Fitter Version 1.8.7.8 ,running Sun Dec 02 07:23:13 2018
+
+
+fit1504 C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M221\TOPLD\M221D.tt2 -CUPL -dev P1504C84 -JTAG OFF
+
+
+****** Initial fitting strategy and property ******
+ Pla_in_file = M221D.tt2
+ Pla_out_file = M221D.tt3
+ Jedec_file = M221D.jed
+ Vector_file = M221D.tmv
+ verilog_file = M221D.vt
+ Time_file = 
+ Log_file = M221D.fit
+ err_file = 
+ Device_name = PLCC84
+ Module_name = 
+ Package_type = PLCC
+ Preassign_file = 
+ Property_file = 
+ Sleep_mode = 
+ Preassignment = 
+ Security_mode = OFF
+ Pin_keep_mode = ON
+ Dedicated_input_clock = 
+ Dedicated_input_reset = 
+ Dedicated_input_oe = 
+ supporter = CUPL
+ optimize = ON
+ Soft_buffer = 
+ Xor_synthesis = OFF
+ Foldback_logic =  on
+ Expander = 
+ Cascade_logic = OFF
+ Dedicated_input = 
+ Output_fast = OFF
+ *******************************
+ Power down pin 1 = OFF
+ Power down pin 2 = OFF
+ power_reset = OFF
+ JTAG = OFF
+ TDI pullup = OFF
+ TMS pullup = OFF
+ MC_power = OFF
+ Open_collector = OFF
+ ITD0 = ON
+ ITD1 = ON
+ ITD2 = ON
+ Fast_inlatch = off
+ *******************************
+Info: C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M221\TOPLD\M221D uses 95% of the pins available in device PLCC84
+  If you wish to have more pins available for future logic changes
+  Atmel  recommends using a larger device
+---------------------------------------------------------
+ Fitter_Pass 1, Preassign = KEEP, LOGIC_DOUBLING : OFF 
+ ... 
+## ERROR : Bad user pin assignement : 90
+ ## ERROR : Bad user pin assignement 
+---------------------------------------------------------
+ Fitter_Pass 2, Preassign = KEEP, NODE ASSIGN : OFF 
+ ... 
+ ## Warning : Placement fail 
+---------------------------------------------------------
+ Fitter_Pass 3, Preassign = KEEP, CASCADE_LOGIC : (TRY) 
+ ... 
+Fail to route variable adder4 in Block 3
+Fail to route variable ls_msc2 in Block 2
+Fail to route variable ls_msc2 in Block 2
+
+Performing global Output Enable pin assignments ...
+
+Performing global pin assignments ...
+--------------------------------------
+
+
+
+Final global control pins assignment (if applicable)...
+-------------------------------------------------------
+
+
+
+Performing input pin pre-assignments ...
+------------------------------------
+enable_rsw assigned to pin  83
+adder1 assigned to pin  1
+lsw assigned to pin  84
+
+Attempt to place floating signals ...
+------------------------------------
+enable_ma3 is placed at pin 22 (MC 1)
+rsw3 is placed at pin 21 (MC 2)
+pc3_h is placed at feedback node 602 (MC 2)
+ma3_h is placed at pin 20 (MC 3)
+rs_msc3 is placed at pin 18 (MC 4)
+XXL_110 is placed at feedback node 604 (MC 4)
+enable_mb3 is placed at pin 17 (MC 5)
+XXL_109 is placed at feedback node 605 (MC 5)
+data_add_3 is placed at pin 16 (MC 6)
+XXL_108 is placed at feedback node 606 (MC 6)
+n_t_17x is placed at pin 15 (MC 7)
+addr_match is placed at pin 14 (MC 8)
+n_t_18x is placed at pin 12 (MC 9)
+a_eq_b is placed at pin 11 (MC 10)
+n_t_16x is placed at pin 10 (MC 11)
+ps_2 is placed at pin 9 (MC 12)
+carry_ok_l is placed at pin 8 (MC 13)
+n_t_12x is placed at pin 6 (MC 14)
+ps_3 is placed at pin 5 (MC 15)
+ma2_l is placed at pin 4 (MC 16)
+load_mb is placed at pin 41 (MC 17)
+n_t_14x is placed at pin 40 (MC 18)
+enable_bcl is placed at pin 39 (MC 19)
+pc3_l is placed at pin 37 (MC 20)
+enable_bse is placed at pin 36 (MC 21)
+load_ma is placed at pin 35 (MC 22)
+n_t_15x is placed at pin 34 (MC 23)
+ps_left_3 is placed at pin 33 (MC 24)
+enable_ac is placed at pin 31 (MC 25)
+XXL_107 is placed at feedback node 625 (MC 25)
+n_t_13x is placed at pin 30 (MC 26)
+mq3 is placed at pin 29 (MC 27)
+pc2_h is placed at feedback node 627 (MC 27)
+ma3_l is placed at pin 28 (MC 28)
+ls_msc3 is placed at pin 27 (MC 29)
+XXL_105 is placed at feedback node 629 (MC 29)
+data_add is placed at pin 25 (MC 30)
+mem3 is placed at pin 24 (MC 31)
+XXL_104 is placed at feedback node 631 (MC 31)
+pc2_l is placed at pin 44 (MC 33)
+load_pc is placed at pin 45 (MC 34)
+enable_mem is placed at pin 46 (MC 35)
+reg_bus3 is placed at pin 48 (MC 36)
+ls_msc2 is placed at pin 49 (MC 37)
+load_ac is placed at pin 50 (MC 38)
+enable_ac_l is placed at pin 51 (MC 39)
+ma2_h is placed at pin 52 (MC 40)
+enable_mq is placed at pin 54 (MC 41)
+enable_ma2 is placed at pin 55 (MC 42)
+mq2 is placed at pin 56 (MC 43)
+XXL_106 is placed at feedback node 643 (MC 43)
+enable_mb2 is placed at pin 57 (MC 44)
+ps_left_2 is placed at pin 58 (MC 45)
+data_add_2 is placed at pin 60 (MC 46)
+lsw2 is placed at pin 61 (MC 47)
+n_t_11x is placed at pin 62 (MC 48)
+carry_in is placed at pin 63 (MC 49)
+lsw3 is placed at pin 64 (MC 50)
+mem2 is placed at pin 65 (MC 51)
+adder4 is placed at pin 67 (MC 52)
+enable_pc is placed at pin 68 (MC 53)
+adder3 is placed at pin 69 (MC 54)
+enable_ac_r is placed at pin 70 (MC 55)
+no_rot is placed at pin 73 (MC 57)
+carry_out_2 is placed at pin 74 (MC 58)
+adder2 is placed at pin 75 (MC 59)
+rot_left is placed at pin 76 (MC 60)
+rs_msc2 is placed at pin 77 (MC 61)
+rot_right is placed at pin 79 (MC 62)
+rsw2 is placed at pin 80 (MC 63)
+reg_bus2 is placed at pin 81 (MC 64)
+
+                                                                                    
+                                                                                    
+                                                                                    
+                            c                e                                      
+                            a                n       r                              
+                            r                a   r   o     r                        
+                       n    r   n            b   e   t   r o                        
+                     a _    y   _         a  l   g   _   s t a                      
+                     _ t    _   t   m     d  e   _   r   _ _ d                      
+                     e _  p o   _ p a     d  _   b r i   m l d                      
+                     q 1  s k G 1 s 2 V   el r G u s g V s e e                     
+                     _ 6  _ _ N 2 _ _ C   rs s N s w h C c f r                     
+                     b x  2 l D x 3 l C   1w w D 2 2 t C 2 t 2                     
+                    -------------------------------------------                     
+                   / 11   9   7   5   3   1  83  81  79  77  75 \                   
+                  /    10   8   6   4   2  84  82  80  78  76    \                  
+         n_t_18x | 12                    (*)                   74 | carry_out_2     
+             VCC | 13                                          73 | no_rot          
+      addr_match | 14                                          72 | GND             
+         n_t_17x | 15                                          71 |                 
+      data_add_3 | 16                                          70 | enable_ac_r     
+      enable_mb3 | 17                                          69 | adder3          
+         rs_msc3 | 18                                          68 | enable_pc       
+             GND | 19                                          67 | adder4          
+           ma3_h | 20                                          66 | VCC             
+            rsw3 | 21                                          65 | mem2            
+      enable_ma3 | 22                 ATF1504                  64 | lsw3            
+                 | 23               84-Lead PLCC               63 | carry_in        
+            mem3 | 24                                          62 | n_t_11x         
+        data_add | 25                                          61 | lsw2            
+             VCC | 26                                          60 | data_add_2      
+         ls_msc3 | 27                                          59 | GND             
+           ma3_l | 28                                          58 | ps_left_2       
+             mq3 | 29                                          57 | enable_mb2      
+         n_t_13x | 30                                          56 | mq2             
+       enable_ac | 31                                          55 | enable_ma2      
+             GND | 32                                          54 | enable_mq       
+                  \     34  36  38  40  42  44  46  48  50  52   /                  
+                   \  33  35  37  39  41  43  45  47  49  51  53/                   
+              	    --------------------------------------------                    
+                      p n l e p V e n l G V p l e G r l l e m V                     
+                      s _ o n c C n _ o N C c o n N e s o n a C                     
+                      _ t a a 3 C a t a D C 2 a a D g _ a a 2 C                     
+                      l _ d b _   b _ d     _ d b   _ m d b _                       
+                      e 1 _ l l   l 1 _     l _ l   b s _ l h                       
+                      f 5 m e     e 4 m       p e   u c a e                         
+                      t x a _     _ x b       c _   s 2 c _                         
+                      _     b     b             m   3     a                         
+                      3     s     c             e         c                         
+                            e     l             m         _                         
+                                                          l                         
+
+
+
+VCC = Supply Voltage pin which must be connected to (5.0V or 3.0V)
+
+GND = GND pin which must be connected to ground
+
+NC = Unused I/O pins which must be unconnected on the board
+
+Universal-Interconnect-Multiplexer assignments
+------------------------------------------------
+FanIn assignment for block A [28]
+{
+XXL_104,XXL_106,
+carry_in,
+enable_mem,enable_pc,enable_rsw,
+lsw3,lsw2,load_ma,load_mb,load_pc,
+mem3,ma2_h,ma3_h,mem2,
+n_t_11x,n_t_15x,n_t_13x,n_t_17x,
+ps_2,ps_left_2,ps_left_3,pc3_h,ps_3,pc2_h,
+rsw3,rsw2,reg_bus3,
+}
+Multiplexer assignment for block A
+mem3			(MC19	P)   : MUX 0		Ref (B31p)
+lsw3			(MC24	P)   : MUX 1		Ref (D50p)
+ma2_h			(MC12	P)   : MUX 3		Ref (C40p)
+n_t_11x			(MC15	P)   : MUX 4		Ref (C48p)
+rsw3			(MC16	P)   : MUX 5		Ref (A2p)
+ma3_h			(MC2	P)   : MUX 7		Ref (A3p)
+mem2			(MC25	P)   : MUX 9		Ref (D51p)
+ps_2			(MC4	P)   : MUX 10		Ref (A12p)
+n_t_15x			(MC6	P)   : MUX 11		Ref (B23p)
+lsw2			(MC22	P)   : MUX 12		Ref (C47p)
+load_ma			(MC18	P)   : MUX 13		Ref (B22p)
+ps_left_2		(MC14	P)   : MUX 14		Ref (C45p)
+ps_left_3		(MC7	P)   : MUX 15		Ref (B24p)
+carry_in		(MC23	P)   : MUX 17		Ref (D49p)
+pc3_h			(MC1	FB)  : MUX 18		Ref (A2fb)
+XXL_104			(MC10	FB)  : MUX 19		Ref (B31fb)
+ps_3			(MC5	P)   : MUX 20		Ref (A15p)
+load_mb			(MC17	P)   : MUX 21		Ref (B17p)
+XXL_106			(MC13	FB)  : MUX 23		Ref (C43fb)
+rsw2			(MC27	P)   : MUX 24		Ref (D63p)
+enable_mem		(MC21	P)   : MUX 25		Ref (C35p)
+n_t_13x			(MC8	P)   : MUX 26		Ref (B26p)
+n_t_17x			(MC3	P)   : MUX 27		Ref (A7p)
+load_pc			(MC20	P)   : MUX 29		Ref (C34p)
+enable_pc		(MC26	P)   : MUX 31		Ref (D53p)
+pc2_h			(MC9	FB)  : MUX 33		Ref (B27fb)
+reg_bus3		(MC11	P)   : MUX 35		Ref (C36p)
+enable_rsw		(MC28	FB)  : MUX 37		Ref (GCLK)
+
+FanIn assignment for block B [27]
+{
+XXL_107,
+data_add,data_add_3,
+enable_ma3,enable_bse,enable_ac_l,enable_mb3,enable_ac,enable_bcl,enable_ac_r,enable_mq,
+ls_msc2,load_ac,ls_msc3,load_mb,load_pc,
+ma3_h,mq2,mq3,
+n_t_11x,n_t_15x,n_t_13x,n_t_17x,
+pc3_h,
+rs_msc3,reg_bus2,reg_bus3,
+}
+Multiplexer assignment for block B
+n_t_11x			(MC8	P)   : MUX 0		Ref (C48p)
+enable_ma3		(MC10	P)   : MUX 1		Ref (A1p)
+ma3_h			(MC2	FB)  : MUX 2		Ref (A3fb)
+ls_msc2			(MC22	P)   : MUX 3		Ref (C37p)
+enable_bse		(MC16	P)   : MUX 5		Ref (B21p)
+data_add		(MC20	P)   : MUX 6		Ref (B30p)
+enable_ac_l		(MC24	P)   : MUX 7		Ref (C39p)
+load_ac			(MC23	P)   : MUX 9		Ref (C38p)
+n_t_15x			(MC4	P)   : MUX 11		Ref (B23p)
+ls_msc3			(MC19	P)   : MUX 14		Ref (B29p)
+rs_msc3			(MC11	P)   : MUX 17		Ref (A4p)
+pc3_h			(MC1	FB)  : MUX 18		Ref (A2fb)
+reg_bus2		(MC9	P)   : MUX 20		Ref (D64p)
+enable_mb3		(MC12	P)   : MUX 21		Ref (A5p)
+enable_ac		(MC17	P)   : MUX 22		Ref (B25p)
+reg_bus3		(MC7	P)   : MUX 23		Ref (C36p)
+n_t_13x			(MC6	P)   : MUX 24		Ref (B26p)
+load_mb			(MC14	P)   : MUX 25		Ref (B17p)
+mq2			(MC26	P)   : MUX 26		Ref (C43p)
+n_t_17x			(MC3	P)   : MUX 27		Ref (A7p)
+mq3			(MC18	P)   : MUX 28		Ref (B27p)
+load_pc			(MC21	P)   : MUX 29		Ref (C34p)
+enable_bcl		(MC15	P)   : MUX 31		Ref (B19p)
+enable_ac_r		(MC27	P)   : MUX 33		Ref (D55p)
+enable_mq		(MC25	P)   : MUX 34		Ref (C41p)
+data_add_3		(MC13	P)   : MUX 35		Ref (A6p)
+XXL_107			(MC5	FB)  : MUX 39		Ref (B25fb)
+
+FanIn assignment for block C [23]
+{
+XXL_105,
+adder4,adder2,adder3,
+data_add_2,data_add,
+enable_bse,enable_ma2,enable_mb2,enable_ac_r,
+lsw3,load_ma,load_ac,lsw,
+ma2_h,
+n_t_15x,n_t_11x,no_rot,
+pc2_h,
+rot_left,reg_bus2,rs_msc2,rot_right,
+}
+Multiplexer assignment for block C
+rot_left		(MC20	P)   : MUX 0		Ref (D60p)
+lsw3			(MC16	P)   : MUX 1		Ref (D50p)
+data_add_2		(MC15	P)   : MUX 2		Ref (C46p)
+n_t_15x			(MC1	P)   : MUX 3		Ref (B23p)
+n_t_11x			(MC5	P)   : MUX 4		Ref (C48p)
+enable_bse		(MC9	P)   : MUX 5		Ref (B21p)
+data_add		(MC11	P)   : MUX 6		Ref (B30p)
+load_ma			(MC10	P)   : MUX 7		Ref (B22p)
+no_rot			(MC19	P)   : MUX 8		Ref (D57p)
+load_ac			(MC12	P)   : MUX 9		Ref (C38p)
+XXL_105			(MC3	FB)  : MUX 11		Ref (B29fb)
+adder4			(MC17	P)   : MUX 13		Ref (D52p)
+adder2			(MC7	P)   : MUX 14		Ref (D59p)
+ma2_h			(MC4	P)   : MUX 15		Ref (C40p)
+lsw			(MC23	FB)  : MUX 19		Ref (OE1)
+reg_bus2		(MC8	P)   : MUX 20		Ref (D64p)
+adder3			(MC6	P)   : MUX 21		Ref (D54p)
+enable_ma2		(MC13	P)   : MUX 22		Ref (C42p)
+pc2_h			(MC2	FB)  : MUX 23		Ref (B27fb)
+enable_mb2		(MC14	P)   : MUX 24		Ref (C44p)
+rs_msc2			(MC21	P)   : MUX 28		Ref (D61p)
+rot_right		(MC22	P)   : MUX 30		Ref (D62p)
+enable_ac_r		(MC18	P)   : MUX 33		Ref (D55p)
+
+FanIn assignment for block D [16]
+{
+XXL_110,XXL_108,XXL_109,
+adder2,adder3,adder1,
+carry_in,
+lsw2,lsw,
+no_rot,
+ps_2,ps_left_2,ps_left_3,ps_3,
+rot_left,rot_right,
+}
+Multiplexer assignment for block D
+rot_left		(MC13	P)   : MUX 0		Ref (D60p)
+adder2			(MC9	P)   : MUX 4		Ref (D59p)
+ps_2			(MC4	P)   : MUX 10		Ref (A12p)
+carry_in		(MC11	P)   : MUX 11		Ref (D49p)
+lsw2			(MC10	P)   : MUX 12		Ref (C47p)
+lsw			(MC16	FB)  : MUX 13		Ref (OE1)
+ps_left_2		(MC7	P)   : MUX 14		Ref (C45p)
+ps_left_3		(MC6	P)   : MUX 15		Ref (B24p)
+no_rot			(MC12	P)   : MUX 16		Ref (D57p)
+XXL_110			(MC1	FB)  : MUX 18		Ref (A4fb)
+XXL_108			(MC3	FB)  : MUX 20		Ref (A6fb)
+adder3			(MC8	P)   : MUX 21		Ref (D54p)
+ps_3			(MC5	P)   : MUX 26		Ref (A15p)
+XXL_109			(MC2	FB)  : MUX 28		Ref (A5fb)
+rot_right		(MC14	P)   : MUX 30		Ref (D62p)
+adder1			(MC15	FB)  : MUX 38		Ref (GCLR)
+
+Creating JEDEC file C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M221\TOPLD\M221D.jed ...
+
+PLCC84 programmed logic:
+-----------------------------------
+a_eq_b = ((!n_t_13x.Q & !n_t_17x.Q & n_t_11x.Q & n_t_15x.Q)
+	# (n_t_13x.Q & n_t_17x.Q & !n_t_11x.Q & !n_t_15x.Q)
+	# (n_t_13x.Q & n_t_17x.Q & n_t_11x.Q & n_t_15x.Q)
+	# (!n_t_13x.Q & !n_t_17x.Q & !n_t_11x.Q & !n_t_15x.Q));
+
+ma2_l = !ma2_h.Q;
+
+ma3_l = !ma3_h.Q;
+
+n_t_14x = !n_t_13x.Q;
+
+n_t_12x = !n_t_11x.Q;
+
+n_t_16x = !n_t_15x.Q;
+
+n_t_18x = !n_t_17x.Q;
+
+pc2_l = !pc2_h.Q;
+
+!ps_3 = ((enable_mem & mem3)
+	# (enable_pc & pc3_h.Q)
+	# (enable_rsw & rsw3)
+	# XXL_104);
+
+!ps_left_2 = ((!n_t_11x.Q & enable_bse & n_t_15x.Q)
+	# XXL_105);
+
+pc3_l = !pc3_h.Q;
+
+!ps_2 = ((enable_mem & mem2)
+	# (enable_pc & pc2_h.Q)
+	# (enable_rsw & rsw2)
+	# XXL_106);
+
+!ps_left_3 = ((!n_t_13x.Q & enable_bse & n_t_17x.Q)
+	# XXL_107);
+
+addr_match = ((!lsw3 & !ma3_h.Q & lsw2 & ma2_h.Q)
+	# (lsw3 & ma3_h.Q & !lsw2 & !ma2_h.Q)
+	# (lsw3 & ma3_h.Q & lsw2 & ma2_h.Q)
+	# (!lsw3 & !ma3_h.Q & !lsw2 & !ma2_h.Q));
+
+adder3 = ((carry_in & ps_3 & ps_left_3)
+	# (!carry_in & ps_3 & !ps_left_3)
+	# (!carry_in & !ps_3 & ps_left_3)
+	# (carry_in & !ps_3 & !ps_left_3));
+
+!adder2 = ((!ps_2 & !ps_left_2 & !ps_left_3 & !carry_in)
+	# (!ps_2 & !ps_3 & !ps_left_2 & !ps_left_3)
+	# XXL_108
+	# XXL_109);
+
+carry_ok_l = ((!n_t_13x.Q & !ps_3 & n_t_11x.Q & ps_2)
+	# (n_t_13x.Q & ps_3 & !n_t_11x.Q & !ps_2)
+	# (n_t_13x.Q & ps_3 & n_t_11x.Q & ps_2)
+	# (!n_t_13x.Q & !ps_3 & !n_t_11x.Q & !ps_2));
+
+carry_out_2 = ((ps_left_3 & carry_in & ps_2)
+	# (ps_3 & carry_in & ps_2)
+	# XXL_110);
+
+!reg_bus2 = ((adder2 & no_rot)
+	# (adder3 & rot_left)
+	# (adder1 & rot_right)
+	# (lsw & !lsw2));
+
+!reg_bus3 = ((adder3 & no_rot)
+	# (adder4 & rot_left)
+	# (adder2 & rot_right)
+	# (lsw & !lsw3));
+
+n_t_11x.D = reg_bus2;
+
+n_t_13x.D = reg_bus3;
+
+ma2_h.D = reg_bus2;
+
+n_t_17x.D = reg_bus3;
+
+ma3_h.D = reg_bus3;
+
+n_t_15x.D = reg_bus2;
+
+pc2_h.D = reg_bus2;
+
+pc3_h.D = reg_bus3;
+
+XXL_104 = (rs_msc3
+	# (data_add & data_add_3)
+	# (n_t_13x.Q & enable_ac_r)
+	# (enable_ma3 & ma3_h.Q)
+	# (enable_mb3 & n_t_17x.Q));
+
+XXL_105 = ((enable_mq & mq2)
+	# (!n_t_11x.Q & enable_ac)
+	# (n_t_11x.Q & !n_t_15x.Q & enable_bcl)
+	# (n_t_11x.Q & enable_ac_l)
+	# ls_msc2);
+
+XXL_106 = (rs_msc2
+	# (data_add & data_add_2)
+	# (n_t_11x.Q & enable_ac_r)
+	# (enable_ma2 & ma2_h.Q)
+	# (enable_mb2 & n_t_15x.Q));
+
+XXL_107 = ((enable_mq & mq3)
+	# (!n_t_13x.Q & enable_ac)
+	# (n_t_13x.Q & !n_t_17x.Q & enable_bcl)
+	# (n_t_13x.Q & enable_ac_l)
+	# ls_msc3);
+
+XXL_108 = ((!ps_2 & ps_3 & ps_left_2 & carry_in)
+	# (ps_2 & !ps_3 & ps_left_2 & !carry_in)
+	# (ps_2 & ps_3 & !ps_left_2 & carry_in)
+	# (!ps_2 & !ps_3 & !ps_left_2 & !carry_in)
+	# (!ps_2 & ps_left_2 & ps_left_3 & carry_in));
+
+XXL_109 = ((!ps_2 & ps_3 & ps_left_2 & ps_left_3)
+	# (ps_2 & !ps_left_2 & ps_left_3 & carry_in)
+	# (ps_2 & ps_3 & !ps_left_2 & ps_left_3)
+	# (ps_2 & ps_left_2 & !ps_left_3 & !carry_in)
+	# (ps_2 & !ps_3 & ps_left_2 & !ps_left_3));
+
+XXL_110 = ((ps_3 & ps_left_2 & carry_in)
+	# (ps_left_2 & ps_2)
+	# (ps_3 & ps_left_2 & ps_left_3)
+	# (ps_3 & ps_left_3 & ps_2)
+	# (ps_left_2 & ps_left_3 & carry_in));
+
+n_t_11x.C = load_ac;
+
+n_t_13x.C = load_ac;
+
+ma2_h.C = load_ma;
+
+n_t_17x.C = load_mb;
+
+ma3_h.C = load_ma;
+
+n_t_15x.C = load_mb;
+
+pc2_h.C = load_pc;
+
+pc3_h.C = load_pc;
+
+
+PLCC84 Pin/Node Placement:
+------------------------------------
+Pin 1  = adder1;
+Pin 4  = ma2_l; /* MC 16 */
+Pin 5  = ps_3; /* MC 15 */
+Pin 6  = n_t_12x; /* MC 14 */
+Pin 8  = carry_ok_l; /* MC 13 */
+Pin 9  = ps_2; /* MC 12 */
+Pin 10 = n_t_16x; /* MC 11 */ 
+Pin 11 = a_eq_b; /* MC 10 */ 
+Pin 12 = n_t_18x; /* MC  9 */
+Pin 14 = addr_match; /* MC  8 */
+Pin 15 = n_t_17x; /* MC  7 */
+Pin 16 = data_add_3; /* MC  6 */
+Pin 17 = enable_mb3; /* MC  5 */
+Pin 18 = rs_msc3; /* MC  4 */
+Pin 20 = ma3_h; /* MC  3 */
+Pin 21 = rsw3; /* MC  2 */
+Pin 22 = enable_ma3; /* MC  1 */
+Pin 24 = mem3; /* MC 31 */ 
+Pin 25 = data_add; /* MC 30 */ 
+Pin 27 = ls_msc3; /* MC 29 */ 
+Pin 28 = ma3_l; /* MC 28 */ 
+Pin 29 = mq3; /* MC 27 */ 
+Pin 30 = n_t_13x; /* MC 26 */ 
+Pin 31 = enable_ac; /* MC 25 */ 
+Pin 33 = ps_left_3; /* MC 24 */ 
+Pin 34 = n_t_15x; /* MC 23 */ 
+Pin 35 = load_ma; /* MC 22 */ 
+Pin 36 = enable_bse; /* MC 21 */ 
+Pin 37 = pc3_l; /* MC 20 */ 
+Pin 39 = enable_bcl; /* MC 19 */ 
+Pin 40 = n_t_14x; /* MC 18 */ 
+Pin 41 = load_mb; /* MC 17 */ 
+Pin 44 = pc2_l; /* MC 33 */ 
+Pin 45 = load_pc; /* MC 34 */ 
+Pin 46 = enable_mem; /* MC 35 */ 
+Pin 48 = reg_bus3; /* MC 36 */ 
+Pin 49 = ls_msc2; /* MC 37 */ 
+Pin 50 = load_ac; /* MC 38 */ 
+Pin 51 = enable_ac_l; /* MC 39 */ 
+Pin 52 = ma2_h; /* MC 40 */ 
+Pin 54 = enable_mq; /* MC 41 */ 
+Pin 55 = enable_ma2; /* MC 42 */ 
+Pin 56 = mq2; /* MC 43 */ 
+Pin 57 = enable_mb2; /* MC 44 */ 
+Pin 58 = ps_left_2; /* MC 45 */ 
+Pin 60 = data_add_2; /* MC 46 */ 
+Pin 61 = lsw2; /* MC 47 */ 
+Pin 62 = n_t_11x; /* MC 48 */ 
+Pin 63 = carry_in; /* MC 49 */ 
+Pin 64 = lsw3; /* MC 50 */ 
+Pin 65 = mem2; /* MC 51 */ 
+Pin 67 = adder4; /* MC 52 */ 
+Pin 68 = enable_pc; /* MC 53 */ 
+Pin 69 = adder3; /* MC 54 */ 
+Pin 70 = enable_ac_r; /* MC 55 */ 
+Pin 73 = no_rot; /* MC 57 */ 
+Pin 74 = carry_out_2; /* MC 58 */ 
+Pin 75 = adder2; /* MC 59 */ 
+Pin 76 = rot_left; /* MC 60 */ 
+Pin 77 = rs_msc2; /* MC 61 */ 
+Pin 79 = rot_right; /* MC 62 */ 
+Pin 80 = rsw2; /* MC 63 */ 
+Pin 81 = reg_bus2; /* MC 64 */ 
+Pin 83 = enable_rsw;
+Pin 84 = lsw;
+PINNODE 602 = pc3_h; /* MC 2 Feedback */
+PINNODE 604 = XXL_110; /* MC 4 Feedback */
+PINNODE 605 = XXL_109; /* MC 5 Feedback */
+PINNODE 606 = XXL_108; /* MC 6 Feedback */
+PINNODE 625 = XXL_107; /* MC 25 Feedback */
+PINNODE 627 = pc2_h; /* MC 27 Feedback */
+PINNODE 629 = XXL_105; /* MC 29 Feedback */
+PINNODE 631 = XXL_104; /* MC 31 Feedback */
+PINNODE 643 = XXL_106; /* MC 43 Feedback */
+
+** Resource Usage **
+
+
+DCERP Field = Summary of Allocations.
+|||||
+|||||_Preset [p,-]       ==  p = PT preset, - No Preset.
+||||
+||||__Reset [g,r,-]      ==  g= Global AR, r = PT reset, - No reset.
+|||
+|||___Clock Enable [e,-] ==  e = Product Term, - always enabled, - none.
+||
+||____Clock [c,g,-],     ==  c = Product term, g = Global term, - No Clock.
+|
+|_____Type [C,D,L,T],    ==  Register type C= combin, D=dff, L=latch, T=tff.
+
+For input only = INPUT.
+
+MCell Pin# Oe   PinDrive    DCERP  FBDrive  DCERP  Foldback  CascadeOut     TotPT output_slew
+MC1   22   --   enable_ma3  INPUT  --              --        --             0     slow
+MC2   21   --   rsw3        INPUT  pc3_h    Dc---  --        --             2     slow
+MC3   20   on   ma3_h       Dc---  --              --        --             2     slow
+MC4   18   --   rs_msc3     INPUT  XXL_110  C----  NA        --             5     slow
+MC5   17   --   enable_mb3  INPUT  XXL_109  C----  NA        --             5     slow
+MC6   16   --   data_add_3  INPUT  XXL_108  C----  NA        --             5     slow
+MC7   15   on   n_t_17x     Dc---  --              --        --             2     slow
+MC8   14   on   addr_match  C----  --              --        --             4     slow
+MC9   12   on   n_t_18x     C----  --              --        --             1     slow
+MC10  11   on   a_eq_b      C----  --              --        --             4     slow
+MC11  10   on   n_t_16x     C----  --              --        --             1     slow
+MC12  9    on   ps_2        C----  --              --        --             4     slow
+MC13  8    on   carry_ok_l  C----  --              --        --             4     slow
+MC14  6    on   n_t_12x     C----  --              --        --             1     slow
+MC15  5    on   ps_3        C----  --              --        --             4     slow
+MC16  4    on   ma2_l       C----  --              --        --             1     slow
+MC17  41   --   load_mb     INPUT  --              --        --             0     slow
+MC18  40   on   n_t_14x     C----  --              --        --             1     slow
+MC19  39   --   enable_bcl  INPUT  --              --        --             0     slow
+MC20  37   on   pc3_l       C----  --              --        --             1     slow
+MC21  36   --   enable_bse  INPUT  --              --        --             0     slow
+MC22  35   --   load_ma     INPUT  --              --        --             0     slow
+MC23  34   on   n_t_15x     Dc---  --              --        --             2     slow
+MC24  33   on   ps_left_3   C----  --              --        --             2     slow
+MC25  31   --   enable_ac   INPUT  XXL_107  C----  NA        --             5     slow
+MC26  30   on   n_t_13x     Dc---  --              --        --             2     slow
+MC27  29   --   mq3         INPUT  pc2_h    Dc---  --        --             2     slow
+MC28  28   on   ma3_l       C----  --              --        --             1     slow
+MC29  27   --   ls_msc3     INPUT  XXL_105  C----  NA        --             5     slow
+MC30  25   --   data_add    INPUT  --              --        --             0     slow
+MC31  24   --   mem3        INPUT  XXL_104  C----  NA        --             5     slow
+MC32  23        --                 --              --        --             0     slow
+MC33  44   on   pc2_l       C----  --              --        --             1     slow
+MC34  45   --   load_pc     INPUT  --              --        --             0     slow
+MC35  46   --   enable_mem  INPUT  --              --        --             0     slow
+MC36  48   on   reg_bus3    C----  --              --        --             4     slow
+MC37  49   --   ls_msc2     INPUT  --              --        --             0     slow
+MC38  50   --   load_ac     INPUT  --              --        --             0     slow
+MC39  51   --   enable_ac_l INPUT  --              --        --             0     slow
+MC40  52   on   ma2_h       Dc---  --              --        --             2     slow
+MC41  54   --   enable_mq   INPUT  --              --        --             0     slow
+MC42  55   --   enable_ma2  INPUT  --              --        --             0     slow
+MC43  56   --   mq2         INPUT  XXL_106  C----  NA        --             5     slow
+MC44  57   --   enable_mb2  INPUT  --              --        --             0     slow
+MC45  58   on   ps_left_2   C----  --              --        --             2     slow
+MC46  60   --   data_add_2  INPUT  --              --        --             0     slow
+MC47  61   --   lsw2        INPUT  --              --        --             0     slow
+MC48  62   on   n_t_11x     Dc---  --              --        --             2     slow
+MC49  63   --   carry_in    INPUT  --              --        --             0     slow
+MC50  64   --   lsw3        INPUT  --              --        --             0     slow
+MC51  65   --   mem2        INPUT  --              --        --             0     slow
+MC52  67   --   adder4      INPUT  --              --        --             0     slow
+MC53  68   --   enable_pc   INPUT  --              --        --             0     slow
+MC54  69   on   adder3      C----  --              --        --             4     slow
+MC55  70   --   enable_ac_r INPUT  --              --        --             0     slow
+MC56  71        --                 --              --        --             0     slow
+MC57  73   --   no_rot      INPUT  --              --        --             0     slow
+MC58  74   on   carry_out_2 C----  --              --        --             3     slow
+MC59  75   on   adder2      C----  --              --        --             4     slow
+MC60  76   --   rot_left    INPUT  --              --        --             0     slow
+MC61  77   --   rs_msc2     INPUT  --              --        --             0     slow
+MC62  79   --   rot_right   INPUT  --              --        --             0     slow
+MC63  80   --   rsw2        INPUT  --              --        --             0     slow
+MC64  81   on   reg_bus2    C----  --              --        --             4     slow
+MC0   2         --                 --              --        --             0     slow
+MC0   1         adder1      INPUT  --              --        --             0     slow
+MC0   84        lsw         INPUT  --              --        --             0     slow
+MC0   83        enable_rsw  INPUT  --              --        --             0     slow
+
+Logic Array Block	Logic Cells	I/O Pins	Foldbacks	TotalPT		FanIN	Cascades
+A: LC1	- LC16		15/16(93%)	16/16(100%)	0/16(0%)	45/80(56%)	(28)	0
+B: LC17	- LC32		10/16(62%)	15/16(93%)	0/16(0%)	26/80(32%)	(27)	0
+C: LC33	- LC48		6/16(37%)	16/16(100%)	0/16(0%)	16/80(20%)	(23)	0
+D: LC49	- LC64		4/16(25%)	15/16(93%)	0/16(0%)	15/80(18%)	(16)	0
+
+Total dedicated input used:	3/4 	(75%)
+Total I/O pins used		62/64 	(96%)
+Total Logic cells used 		35/64 	(54%)
+Total Flip-Flop used 		8/64 	(12%)
+Total Foldback logic used 	0/64 	(0%)
+Total Nodes+FB/MCells 		35/64 	(54%)
+Total cascade used 		0
+Total input pins 		39
+Total output pins 		26
+Total Pts 			102
+Creating pla file C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M221\TOPLD\M221D.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+
+----------------  End fitter, Design FITS
+$Device PLCC84 fits 
+FIT1504 completed in 0.00 seconds

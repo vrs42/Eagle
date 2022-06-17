@@ -8145,7 +8145,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="BE2" pin="1"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="AC_2" class="0">
 <segment>
 <wire x1="469.9" y1="355.6" x2="472.44" y2="355.6" width="0.1524" layer="91"/>
 <wire x1="472.44" y1="355.6" x2="472.44" y2="363.22" width="0.1524" layer="91"/>
@@ -8156,7 +8156,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="AB2" pin="1"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="!AC_2" class="0">
 <segment>
 <wire x1="469.9" y1="337.82" x2="480.06" y2="337.82" width="0.1524" layer="91"/>
 <wire x1="480.06" y1="337.82" x2="480.06" y2="363.22" width="0.1524" layer="91"/>
@@ -8167,7 +8167,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="BU1" pin="1"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="AC_3" class="0">
 <segment>
 <wire x1="469.9" y1="320.04" x2="487.68" y2="320.04" width="0.1524" layer="91"/>
 <wire x1="487.68" y1="320.04" x2="487.68" y2="363.22" width="0.1524" layer="91"/>
@@ -8178,7 +8178,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="BJ2" pin="1"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="!AC_3" class="0">
 <segment>
 <wire x1="469.9" y1="302.26" x2="495.3" y2="302.26" width="0.1524" layer="91"/>
 <wire x1="495.3" y1="302.26" x2="495.3" y2="363.22" width="0.1524" layer="91"/>
@@ -8189,7 +8189,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="BD2" pin="1"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="MB_2" class="0">
 <segment>
 <wire x1="469.9" y1="284.48" x2="502.92" y2="284.48" width="0.1524" layer="91"/>
 <wire x1="502.92" y1="284.48" x2="502.92" y2="363.22" width="0.1524" layer="91"/>
@@ -8200,7 +8200,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="BF1" pin="1"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="!MB_2" class="0">
 <segment>
 <wire x1="469.9" y1="266.7" x2="510.54" y2="266.7" width="0.1524" layer="91"/>
 <wire x1="510.54" y1="266.7" x2="510.54" y2="363.22" width="0.1524" layer="91"/>
@@ -8211,7 +8211,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="BS1" pin="1"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="MB_3" class="0">
 <segment>
 <wire x1="469.9" y1="248.92" x2="518.16" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="518.16" y1="248.92" x2="518.16" y2="363.22" width="0.1524" layer="91"/>
@@ -8222,7 +8222,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U$1" gate="BR2" pin="1"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="!MB_3" class="0">
 <segment>
 <wire x1="469.9" y1="231.14" x2="525.78" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="525.78" y1="231.14" x2="525.78" y2="363.22" width="0.1524" layer="91"/>

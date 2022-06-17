@@ -1,0 +1,501 @@
+Pinlist
+
+Exported from M221D.sch at 12/1/2018 1:28:01 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C1       1        1          pas      VCC
+         2        2          pas      GND
+
+C2       1        1          pas      VCC
+         2        2          pas      GND
+
+C3       1        1          pas      VCC
+         2        2          pas      GND
+
+C4       1        1          pas      VCC
+         2        2          pas      GND
+
+C5       1        1          pas      VCC
+         2        2          pas      GND
+
+C6       1        1          pas      VCC
+         2        2          pas      GND
+
+C7       1        1          pas      VCC
+         2        2          pas      GND
+
+C8       1        1          pas      VCC
+         2        2          pas      GND
+
+C9       1        1          pas      VCC
+         2        2          pas      GND
+
+C10      1        1          pas      VCC
+         2        2          pas      GND
+
+C11      1        1          pas      VCC
+         2        2          pas      GND
+
+C12      1        1          pas      VCC
+         2        2          pas      GND
+
+C13      1        1          pas      VCC
+         2        2          pas      GND
+
+C14      1        1          pas      VCC
+         2        2          pas      GND
+
+C15      1        1          pas      VCC
+         2        2          pas      GND
+
+C16      1        1          pas      VCC
+         2        2          pas      GND
+
+C17      1        1          pas      VCC
+         2        2          pas      GND
+
+C18      1        1          pas      VCC
+         2        2          pas      GND
+
+C19      1        1          pas      VCC
+         2        2          pas      GND
+
+C20      1        1          pas      VCC
+         2        2          pas      GND
+
+C21      1        1          pas      VCC
+         2        2          pas      GND
+
+E1       1        I4         in       AC2_H
+         2        I5         in       RS_MSC2
+         3        I6         in       RS_MSC2
+         4        I1         in       RSW2
+         5        I2         in       ENABLE_RSW
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      PS_2
+         9        I8         in       ENABLE_PC
+         10       I7         in       PC2_H
+         11       I10        pas      N$3
+         12       I9         pas      N$4
+         13       I3         in       ENABLE_AC_R
+         14       VCC        pwr      VCC
+
+E2       1        I4         in       ROT_RIGHT
+         2        I5         in       ROT_LEFT
+         3        I6         in       ADDER3
+         4        I1         in       NO_ROT
+         5        I2         in       ADDER2
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      REG_BUS2
+         9        I8         in       N$9
+         10       I7         in       LSW
+         11       I10        pas               *** unconnected ***
+         12       I9         pas               *** unconnected ***
+         13       I3         in       ADDER1
+         14       VCC        pwr      VCC
+
+E3       1        I4         in       LSW2
+         2        I5         in       LSW3
+         3        I6         in       MA3_L
+         4        I1         in       N$10
+         5        I2         in       MA3_H
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      ADDR_MATCH
+         9        I8         in       N$9
+         10       I7         in       MA2_H
+         11       I10        pas               *** unconnected ***
+         12       I9         pas               *** unconnected ***
+         13       I3         in       MA2_L
+         14       VCC        pwr      VCC
+
+E4       1        I4         in       DATA_ADD_2
+         2        I5         in       MB2_H
+         3        I6         in       ENABLE_MB2
+         4        I1         in       MA2_H
+         5        I2         in       ENABLE_MA2
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      PS_2
+         9        I8         in       ENABLE_MEM
+         10       I7         in       MEM2
+         11       I10        pas      N$3
+         12       I9         pas      N$4
+         13       I3         in       DATA_ADD
+         14       VCC        pwr      VCC
+
+E5       1        S1         out      ADDER3
+         2        A1         in       PS_LEFT_3
+         3        B1         in       PS_3
+         4        VCC        pwr      VCC
+         5        C0         in       CARRY_IN
+         6        P$2        pas               ***   unused    ***
+         7        P$2        pas               ***   unused    ***
+         8        P$2        pas               ***   unused    ***
+         9        P$2        pas               ***   unused    ***
+         10       C2         out      CARRY_OUT_2
+         11       GND        pwr      GND
+         12       S2         out      ADDER2
+         13       B2         in       PS_2
+         14       A2         in       PS_LEFT_2
+
+E6       1        I4         in       ADDER2
+         2        I5         in       ADDER4
+         3        I6         in       ROT_LEFT
+         4        I1         in       LSW
+         5        I2         in       N$10
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      REG_BUS3
+         9        I8         in       NO_ROT
+         10       I7         in       ADDER3
+         11       I10        pas               *** unconnected ***
+         12       I9         pas               *** unconnected ***
+         13       I3         in       ROT_RIGHT
+         14       VCC        pwr      VCC
+
+E7       1        I4         in       ENABLE_MQ
+         2        I5         in       LS_MSC2
+         3        I6         in       LS_MSC2
+         4        I1         in       ENABLE_AC_L
+         5        I2         in       AC2_H
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      PS_LEFT_2
+         9        I8         in       ENABLE_AC
+         10       I7         in       AC2_L
+         11       I10        pas      N$6
+         12       I9         pas      N$5
+         13       I3         in       MQ2
+         14       VCC        pwr      VCC
+
+E8       1        CLR        in                *** unconnected ***
+         2        D          in       REG_BUS3
+         3        CLK        in       LOAD_AC
+         4        PRE        in                *** unconnected ***
+         5        Q          out      AC3_H
+         6        !Q         out      AC3_L
+         7        GND        pwr      GND
+         8        !Q         out      AC2_L
+         9        Q          out      AC2_H
+         10       PRE        in                *** unconnected ***
+         11       CLK        in       LOAD_AC
+         12       D          in       REG_BUS2
+         13       CLR        in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E9       1        I0         in       PS_2
+         2        I1         in       PS_2
+         3        O          out      N$19
+         4        I0         in       PS_3
+         5        I1         in       PS_3
+         6        O          out      N$20
+         7        GND        pwr      GND
+         8        O          out      N$10
+         9        I0         in       LSW3
+         10       I1         in       LSW3
+         11       O          out      N$9
+         12       I0         in       LSW2
+         13       I1         in       LSW2
+         14       VCC        pwr      VCC
+
+E10      1        A          in       MB2_L
+         2        B          in       ENABLE_BCL
+         3        C          in       ENABLE_BCL
+         4        A          in       ENABLE_BCL
+         5        B          in       ENABLE_BCL
+         6        C          in       MB3_L
+         7        GND        pwr      GND
+         8        D          in       AC3_H
+         9        !X         out      N$2
+         10       X          out      N$1
+         11       X          out      N$6
+         12       !X         out      N$5
+         13       D          in       AC2_H
+         14       VCC        pwr      VCC
+
+E11      1        CLR        in                *** unconnected ***
+         2        D          in       REG_BUS3
+         3        CLK        in       LOAD_MB
+         4        PRE        in                *** unconnected ***
+         5        Q          out      MB3_H
+         6        !Q         out      MB3_L
+         7        GND        pwr      GND
+         8        !Q         out      MB2_L
+         9        Q          out      MB2_H
+         10       PRE        in                *** unconnected ***
+         11       CLK        in       LOAD_MB
+         12       D          in       REG_BUS2
+         13       CLR        in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E12      1        I4         in       AC3_L
+         2        I5         in       AC2_H
+         3        I6         in       N$19
+         4        I1         in       AC2_L
+         5        I2         in       PS_2
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      CARRY_OK_L
+         9        I8         in       N$20
+         10       I7         in       AC3_H
+         11       I10        pas               *** unconnected ***
+         12       I9         pas               *** unconnected ***
+         13       I3         in       PS_3
+         14       VCC        pwr      VCC
+
+E13      1        A          in       MB2_H
+         2        B          in       ENABLE_BSE
+         3        C          in       ENABLE_BSE
+         4        A          in       ENABLE_BSE
+         5        B          in       ENABLE_BSE
+         6        C          in       AC3_L
+         7        GND        pwr      GND
+         8        D          in       MB3_H
+         9        !X         out      N$2
+         10       X          out      N$1
+         11       X          out      N$6
+         12       !X         out      N$5
+         13       D          in       AC2_L
+         14       VCC        pwr      VCC
+
+E14      1        CLR        in                *** unconnected ***
+         2        D          in       REG_BUS3
+         3        CLK        in       LOAD_PC
+         4        PRE        in                *** unconnected ***
+         5        Q          out      PC3_H
+         6        !Q         out      PC3_L
+         7        GND        pwr      GND
+         8        !Q         out      PC2_L
+         9        Q          out      PC2_H
+         10       PRE        in                *** unconnected ***
+         11       CLK        in       LOAD_PC
+         12       D          in       REG_BUS2
+         13       CLR        in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E15      1        I4         in       AC3_L
+         2        I5         in       AC2_H
+         3        I6         in       MB2_L
+         4        I1         in       AC2_L
+         5        I2         in       MB2_H
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      A=B
+         9        I8         in       MB3_L
+         10       I7         in       AC3_H
+         11       I10        pas               *** unconnected ***
+         12       I9         pas               *** unconnected ***
+         13       I3         in       MB3_H
+         14       VCC        pwr      VCC
+
+E16      1        I4         in       ENABLE_MQ
+         2        I5         in       LS_MSC3
+         3        I6         in       LS_MSC3
+         4        I1         in       ENABLE_AC_L
+         5        I2         in       AC3_H
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      PS_LEFT_3
+         9        I8         in       ENABLE_AC
+         10       I7         in       AC3_L
+         11       I10        pas      N$1
+         12       I9         pas      N$2
+         13       I3         in       MQ3
+         14       VCC        pwr      VCC
+
+E17      1        CLR        in                *** unconnected ***
+         2        D          in       REG_BUS3
+         3        CLK        in       LOAD_MA
+         4        PRE        in                *** unconnected ***
+         5        Q          out      MA3_H
+         6        !Q         out      MA3_L
+         7        GND        pwr      GND
+         8        !Q         out      MA2_L
+         9        Q          out      MA2_H
+         10       PRE        in                *** unconnected ***
+         11       CLK        in       LOAD_MA
+         12       D          in       REG_BUS2
+         13       CLR        in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E18      1        I0         in       AC3_L
+         2        I1         in       AC3_L
+         3        O          out      N$13
+         4        I0         in       AC2_H
+         5        I1         in       AC2_H
+         6        O          out      N$12
+         7        GND        pwr      GND
+         8        O          out      N$14
+         9        I0         in       AC3_H
+         10       I1         in       AC3_H
+         11       O          out      N$11
+         12       I0         in       AC2_L
+         13       I1         in       AC2_L
+         14       VCC        pwr      VCC
+
+E19      1        I4         in       DATA_ADD_3
+         2        I5         in       MB3_H
+         3        I6         in       ENABLE_MB3
+         4        I1         in       MA3_H
+         5        I2         in       ENABLE_MA3
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      PS_3
+         9        I8         in       ENABLE_MEM
+         10       I7         in       MEM3
+         11       I10        pas      N$8
+         12       I9         pas      N$7
+         13       I3         in       DATA_ADD
+         14       VCC        pwr      VCC
+
+E20      1        I4         in       AC3_H
+         2        I5         in       RS_MSC3
+         3        I6         in       RS_MSC3
+         4        I1         in       RSW3
+         5        I2         in       ENABLE_RSW
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      PS_3
+         9        I8         in       ENABLE_PC
+         10       I7         in       PC3_H
+         11       I10        pas      N$8
+         12       I9         pas      N$7
+         13       I3         in       ENABLE_AC_R
+         14       VCC        pwr      VCC
+
+E21      1        I0         in       MB3_H
+         2        I1         in       MB3_H
+         3        O          out      N$18
+         4        I0         in       MB3_L
+         5        I1         in       MB3_L
+         6        O          out      N$17
+         7        GND        pwr      GND
+         8        O          out      N$15
+         9        I0         in       MB2_L
+         10       I1         in       MB2_L
+         11       O          out      N$16
+         12       I0         in       MB2_H
+         13       I1         in       MB2_H
+         14       VCC        pwr      VCC
+
+R1       1        1          pas      MEM2
+         2        2          pas      VCC
+
+R2       1        1          pas      MA2_L
+         2        2          pas      VCC
+
+R3       1        1          pas      MA2_H
+         2        2          pas      VCC
+
+R4       1        1          pas      MEM3
+         2        2          pas      VCC
+
+R5       1        1          pas      MA3_L
+         2        2          pas      VCC
+
+R6       1        1          pas      MA3_H
+         2        2          pas      VCC
+
+R7       1        1          pas      N$11
+         2        2          pas      VCC
+
+R8       1        1          pas      N$12
+         2        2          pas      VCC
+
+R9       1        1          pas      N$13
+         2        2          pas      VCC
+
+R10      1        1          pas      N$14
+         2        2          pas      VCC
+
+R11      1        1          pas      N$15
+         2        2          pas      VCC
+
+R12      1        1          pas      N$16
+         2        2          pas      VCC
+
+R13      1        1          pas      N$17
+         2        2          pas      VCC
+
+R14      1        1          pas      N$18
+         2        2          pas      VCC
+
+U$1      AA1      1          io       ADDR_MATCH
+         AA2      1          io       VCC
+         AB1      1          io       ADDER1
+         AB2      1          io       N$11
+         AC1      1          io       LSW
+         AC2      1          io       GND
+         AD1      1          io       REG_BUS2
+         AD2      1          io       ENABLE_RSW
+         AE1      1          io       ROT_RIGHT
+         AE2      1          io       RSW2
+         AF1      1          io       ROT_LEFT
+         AF2      1          io       RS_MSC2
+         AH1      1          io       CARRY_OUT_2
+         AH2      1          io       ADDER2
+         AJ1      1          io       ENABLE_AC_R
+         AJ2      1          io       NO_ROT
+         AK1      1          io       ENABLE_PC
+         AK2      1          io       ADDER3
+         AL1      1          io       MEM2
+         AL2      1          io       ADDER4
+         AM1      1          io       CARRY_IN
+         AM2      1          io       LSW3
+         AN1      1          io       DATA_ADD_2
+         AN2      1          io       LSW2
+         AP1      1          io       ENABLE_MB2
+         AP2      1          io       PS_LEFT_2
+         AR1      1          io       ENABLE_MA2
+         AR2      1          io       MQ2
+         AS1      1          io       MA2_H
+         AS2      1          io       ENABLE_MQ
+         AT1      1          io       GND
+         AT2      1          io       ENABLE_AC_L
+         AU1      1          io       LS_MSC2
+         AU2      1          io       LOAD_AC
+         AV1      1          io       ENABLE_MEM
+         AV2      1          io       REG_BUS3
+         BA1      1          io       LOAD_PC
+         BA2      1          io       VCC
+         BB1      1          io       PC2_L
+         BB2      1          io                ***   unused    ***
+         BC1      1          io       LOAD_MB
+         BC2      1          io       GND
+         BD1      1          io       ENABLE_BCL
+         BD2      1          io       N$14
+         BE1      1          io       ENABLE_BSE
+         BE2      1          io       PC3_L
+         BF1      1          io       N$15
+         BF2      1          io       LOAD_MA
+         BH1      1          io       ENABLE_AC
+         BH2      1          io       PS_LEFT_3
+         BJ1      1          io       MQ3
+         BJ2      1          io       N$13
+         BK1      1          io       LS_MSC3
+         BK2      1          io       MA3_L
+         BL1      1          io       MEM3
+         BL2      1          io       DATA_ADD
+         BM1      1          io       RSW3
+         BM2      1          io       ENABLE_MA3
+         BN1      1          io       RS_MSC3
+         BN2      1          io       MA3_H
+         BP1      1          io       DATA_ADD_3
+         BP2      1          io       ENABLE_MB3
+         BR1      1          io       N$18
+         BR2      1          io       N$17
+         BS1      1          io       N$16
+         BS2      1          io       A=B
+         BT1      1          io       GND
+         BT2      1          io       PS_2
+         BU1      1          io       N$12
+         BU2      1          io       CARRY_OK_L
+         BV1      1          io       MA2_L
+         BV2      1          io       PS_3
+
