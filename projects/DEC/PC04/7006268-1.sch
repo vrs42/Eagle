@@ -6,36 +6,36 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -1028,7 +1028,7 @@ DIN A3, landscape with extra doc field</description>
 <pin name="R" x="12.7" y="0" visible="pad" length="middle" direction="oc" function="dot" rot="R180"/>
 </symbol>
 <symbol name="ENABLE">
-<text x="2.54" y="-1.524" size="1.27" layer="94">&gt;Part</text>
+<text x="10.16" y="-0.762" size="1.27" layer="94">&gt;Part</text>
 <rectangle x1="7.62" y1="-0.762" x2="8.89" y2="0.508" layer="94"/>
 <pin name="P$1" x="0" y="0" visible="pad" direction="in"/>
 </symbol>
@@ -1106,9 +1106,13 @@ DIN A3, landscape with extra doc field</description>
 <pin name="H" x="-17.78" y="-5.08" visible="pad" length="middle" direction="in" swaplevel="1"/>
 <pin name="R" x="12.7" y="0" visible="pad" length="middle" direction="oc" function="dot" rot="R180"/>
 </symbol>
-<symbol name="-30V">
-<text x="1.778" y="0.254" size="1.27" layer="95" ratio="7" rot="R90">-30V</text>
-<pin name="-30V" x="0" y="5.08" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<symbol name="-36V">
+<text x="1.778" y="0.254" size="1.27" layer="95" ratio="7" rot="R90">-36V</text>
+<pin name="-36V" x="0" y="5.08" visible="pad" length="middle" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="GND">
+<text x="1.778" y="0.254" size="1.27" layer="95" ratio="7" rot="R90">GND</text>
+<pin name="GND" x="0" y="5.08" visible="pad" length="middle" direction="pwr" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1376,10 +1380,12 @@ DIN A3, landscape with extra doc field</description>
 <gate name="G$12" symbol="T1GND" x="43.18" y="7.62" addlevel="request"/>
 <gate name="U1" symbol="PULL-UP" x="38.1" y="-7.62" addlevel="request" swaplevel="2"/>
 <gate name="V1" symbol="PULL-UP" x="38.1" y="-27.94" addlevel="request" swaplevel="2"/>
+<gate name="B2" symbol="PIN" x="48.26" y="22.86" addlevel="request"/>
 </gates>
 <devices>
 <device name="" package="H807">
 <connects>
+<connect gate="B2" pin="P$2" pad="B2"/>
 <connect gate="C1" pin="IN1" pad="A1"/>
 <connect gate="C1" pin="IN2" pad="B1"/>
 <connect gate="C1" pin="OUT" pad="C1"/>
@@ -1590,8 +1596,9 @@ DIN A3, landscape with extra doc field</description>
 <gate name="G$3" symbol="M044" x="20.32" y="12.7" swaplevel="1"/>
 <gate name="G$4" symbol="M044" x="20.32" y="-2.54" swaplevel="1"/>
 <gate name="G$5" symbol="POWER" x="48.26" y="5.08" addlevel="request"/>
-<gate name="G$6" symbol="-15V" x="53.34" y="5.08" addlevel="request"/>
-<gate name="G$7" symbol="-30V" x="58.42" y="5.08" addlevel="request"/>
+<gate name="G$6" symbol="-15V" x="58.42" y="5.08" addlevel="request"/>
+<gate name="G$7" symbol="-36V" x="58.42" y="-10.16" addlevel="request"/>
+<gate name="G$8" symbol="GND" x="48.26" y="-10.16" addlevel="request"/>
 </gates>
 <devices>
 <device name="S" package="H800">
@@ -1611,7 +1618,6 @@ DIN A3, landscape with extra doc field</description>
 <connect gate="G$5" pin="GND" pad="C2"/>
 <connect gate="G$5" pin="VCC" pad="A2"/>
 <connect gate="G$6" pin="-15V" pad="B2"/>
-<connect gate="G$7" pin="-30V" pad="V2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1634,7 +1640,8 @@ DIN A3, landscape with extra doc field</description>
 <connect gate="G$5" pin="GND" pad="C2"/>
 <connect gate="G$5" pin="VCC" pad="A2"/>
 <connect gate="G$6" pin="-15V" pad="B2"/>
-<connect gate="G$7" pin="-30V" pad="V2"/>
+<connect gate="G$7" pin="-36V" pad="V2"/>
+<connect gate="G$8" pin="GND" pad="M2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1764,15 +1771,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="VCC" device=""/>
 <part name="A08" library="dec-m" deviceset="W023" device="" value="W033"/>
-<part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="-18V" device=""/>
 <part name="A03" library="dec-m" deviceset="M044" device=""/>
 <part name="A04" library="dec-m" deviceset="M044" device=""/>
 <part name="A05" library="dec-m" deviceset="M044" device=""/>
-<part name="SUPPLY9" library="supply2" deviceset="VCC" device=""/>
-<part name="SUPPLY10" library="supply2" deviceset="-15V" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1794,20 +1799,20 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="287.02" y="0"/>
 <instance part="B06" gate="G$1" x="53.34" y="60.96"/>
-<instance part="B06" gate="G$3" x="236.22" y="17.78" rot="R270"/>
+<instance part="B06" gate="G$3" x="218.44" y="17.78" rot="R270"/>
 <instance part="B06" gate="G$2" x="53.34" y="48.26"/>
 <instance part="B03" gate="G$1" x="53.34" y="144.78"/>
-<instance part="B03" gate="G$3" x="220.98" y="17.78" rot="R270"/>
+<instance part="B03" gate="G$3" x="203.2" y="17.78" rot="R270"/>
 <instance part="B03" gate="G$2" x="53.34" y="132.08"/>
 <instance part="B04" gate="G$1" x="53.34" y="116.84"/>
-<instance part="B04" gate="G$3" x="226.06" y="17.78" rot="R270"/>
+<instance part="B04" gate="G$3" x="208.28" y="17.78" rot="R270"/>
 <instance part="B04" gate="G$2" x="53.34" y="104.14"/>
 <instance part="B05" gate="G$1" x="53.34" y="88.9"/>
-<instance part="B05" gate="G$3" x="231.14" y="17.78" rot="R270"/>
+<instance part="B05" gate="G$3" x="213.36" y="17.78" rot="R270"/>
 <instance part="B05" gate="G$2" x="53.34" y="76.2"/>
-<instance part="AB07" gate="AA" x="254" y="27.94" rot="R270"/>
-<instance part="AB07" gate="AB" x="276.86" y="10.16" rot="R90"/>
-<instance part="AB07" gate="AC" x="254" y="10.16" rot="R90"/>
+<instance part="AB07" gate="AA" x="236.22" y="27.94" rot="R270"/>
+<instance part="AB07" gate="AB" x="266.7" y="10.16" rot="R90"/>
+<instance part="AB07" gate="AC" x="236.22" y="10.16" rot="R90"/>
 <instance part="AB07" gate="AE" x="53.34" y="241.3"/>
 <instance part="AB07" gate="AF" x="53.34" y="236.22"/>
 <instance part="AB07" gate="AJ" x="53.34" y="231.14"/>
@@ -1816,9 +1821,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="AB07" gate="AP" x="53.34" y="205.74"/>
 <instance part="AB07" gate="AR" x="53.34" y="200.66"/>
 <instance part="AB07" gate="AT" x="53.34" y="226.06"/>
-<instance part="AB07" gate="BA" x="259.08" y="27.94" rot="R270"/>
-<instance part="AB07" gate="BB" x="281.94" y="10.16" rot="R90"/>
-<instance part="AB07" gate="BC" x="259.08" y="10.16" rot="R90"/>
+<instance part="AB07" gate="BA" x="241.3" y="27.94" rot="R270"/>
+<instance part="AB07" gate="BB" x="271.78" y="10.16" rot="R90"/>
+<instance part="AB07" gate="BC" x="241.3" y="10.16" rot="R90"/>
 <instance part="AB07" gate="BD" x="53.34" y="220.98"/>
 <instance part="AB07" gate="BE" x="38.1" y="226.06" rot="R180"/>
 <instance part="AB07" gate="BF" x="38.1" y="200.66" rot="R180"/>
@@ -1831,10 +1836,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="AB07" gate="BM" x="38.1" y="231.14" rot="R180"/>
 <instance part="A06" gate="F2" x="167.64" y="106.68" rot="MR180"/>
 <instance part="A06" gate="K2" x="187.96" y="106.68"/>
-<instance part="A02" gate="G$3" x="271.78" y="27.94"/>
-<instance part="A01" gate="A" x="248.92" y="27.94" rot="R270"/>
+<instance part="A02" gate="G$3" x="261.62" y="27.94"/>
 <instance part="A01" gate="B" x="68.58" y="180.34" rot="R180"/>
-<instance part="A01" gate="C" x="248.92" y="10.16" rot="R90"/>
+<instance part="A01" gate="C" x="231.14" y="10.16" rot="R90"/>
 <instance part="A01" gate="D" x="81.28" y="241.3" rot="R180"/>
 <instance part="A01" gate="E" x="81.28" y="236.22" rot="R180"/>
 <instance part="A01" gate="F" x="81.28" y="231.14" rot="R180"/>
@@ -1859,18 +1863,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="B01" gate="R" x="185.42" y="132.08"/>
 <instance part="B01" gate="S" x="185.42" y="116.84"/>
 <instance part="B01" gate="T" x="137.16" y="139.7"/>
-<instance part="B01" gate="U" x="200.66" y="22.86"/>
-<instance part="B01" gate="V" x="200.66" y="17.78"/>
-<instance part="B08" gate="B" x="12.7" y="246.38"/>
+<instance part="B08" gate="R" x="12.7" y="246.38"/>
 <instance part="B08" gate="P" x="12.7" y="241.3"/>
 <instance part="B08" gate="N" x="12.7" y="236.22"/>
 <instance part="B08" gate="M" x="12.7" y="231.14"/>
 <instance part="B08" gate="S" x="12.7" y="226.06"/>
 <instance part="B08" gate="L" x="12.7" y="220.98"/>
 <instance part="B08" gate="K" x="12.7" y="215.9"/>
-<instance part="B08" gate="U" x="12.7" y="210.82"/>
-<instance part="B08" gate="F" x="12.7" y="205.74"/>
-<instance part="B08" gate="E" x="12.7" y="200.66"/>
+<instance part="B08" gate="J" x="12.7" y="210.82"/>
+<instance part="B08" gate="H" x="12.7" y="205.74"/>
+<instance part="B08" gate="F" x="12.7" y="200.66"/>
 <instance part="B02" gate="E" x="165.1" y="129.54" rot="R180"/>
 <instance part="B02" gate="D" x="165.1" y="124.46" rot="R180"/>
 <instance part="B02" gate="C" x="165.1" y="134.62" rot="R180"/>
@@ -1887,22 +1889,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="B02" gate="T" x="165.1" y="139.7" rot="R180"/>
 <instance part="B02" gate="U" x="165.1" y="160.02" rot="R180"/>
 <instance part="B02" gate="V" x="165.1" y="99.06" rot="R180"/>
-<instance part="SUPPLY1" gate="G$1" x="243.84" y="25.4"/>
-<instance part="SUPPLY2" gate="GND" x="243.84" y="12.7"/>
-<instance part="SUPPLY3" gate="G$1" x="271.78" y="12.7"/>
+<instance part="SUPPLY1" gate="G$1" x="226.06" y="25.4"/>
+<instance part="SUPPLY2" gate="GND" x="226.06" y="12.7"/>
+<instance part="SUPPLY3" gate="G$1" x="256.54" y="12.7"/>
 <instance part="SUPPLY4" gate="GND" x="144.78" y="154.94" rot="R90"/>
 <instance part="SUPPLY5" gate="GND" x="144.78" y="144.78" rot="R90"/>
 <instance part="SUPPLY6" gate="G$1" x="20.32" y="251.46"/>
-<instance part="A08" gate="A" x="48.26" y="185.42" rot="R180"/>
-<instance part="A08" gate="C" x="264.16" y="10.16" rot="R90"/>
-<instance part="SUPPLY7" gate="G$1" x="40.64" y="190.5"/>
+<instance part="A08" gate="A" x="246.38" y="27.94" rot="R270"/>
+<instance part="A08" gate="C" x="246.38" y="10.16" rot="R90"/>
 <instance part="A01" gate="P" x="12.7" y="149.86"/>
 <instance part="A01" gate="R" x="12.7" y="121.92"/>
 <instance part="A01" gate="S" x="12.7" y="93.98"/>
 <instance part="A01" gate="T" x="12.7" y="66.04"/>
 <instance part="A01" gate="U" x="12.7" y="40.64"/>
 <instance part="A01" gate="V" x="12.7" y="35.56"/>
-<instance part="SUPPLY8" gate="G$1" x="215.9" y="15.24"/>
+<instance part="SUPPLY8" gate="G$1" x="198.12" y="15.24"/>
 <instance part="A03" gate="G$1" x="226.06" y="226.06"/>
 <instance part="A03" gate="G$2" x="226.06" y="238.76"/>
 <instance part="A04" gate="G$2" x="226.06" y="185.42"/>
@@ -1913,71 +1914,73 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="A05" gate="G$3" x="226.06" y="142.24"/>
 <instance part="A05" gate="G$2" x="226.06" y="127"/>
 <instance part="A05" gate="G$1" x="226.06" y="111.76"/>
-<instance part="SUPPLY9" gate="G$1" x="208.28" y="27.94"/>
-<instance part="SUPPLY10" gate="G$1" x="208.28" y="12.7"/>
 <instance part="SUPPLY11" gate="GND" x="157.48" y="134.62" rot="MR90"/>
 <instance part="SUPPLY12" gate="GND" x="157.48" y="129.54" rot="R270"/>
 <instance part="A05" gate="G$7" x="147.32" y="116.84"/>
 <instance part="A04" gate="G$7" x="152.4" y="116.84"/>
 <instance part="A03" gate="G$7" x="157.48" y="116.84"/>
+<instance part="B08" gate="B" x="281.94" y="10.16" rot="R90"/>
+<instance part="B08" gate="C" x="251.46" y="10.16" rot="R90"/>
+<instance part="B08" gate="A" x="251.46" y="27.94" rot="R270"/>
+<instance part="A08" gate="B" x="276.86" y="10.16" rot="R90"/>
+<instance part="A02" gate="G$2" x="271.78" y="25.4"/>
+<instance part="SUPPLY7" gate="GND" x="271.78" y="22.86"/>
+<instance part="A02" gate="G$1" x="264.16" y="35.56"/>
+<instance part="A06" gate="B2" x="261.62" y="10.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
-<pinref part="A01" gate="A" pin="P$2"/>
-<pinref part="AB07" gate="AA" pin="P$2"/>
-<pinref part="AB07" gate="BA" pin="P$2"/>
-<wire x1="243.84" y1="22.86" x2="243.84" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="20.32" x2="248.92" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="20.32" x2="254" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="254" y1="20.32" x2="259.08" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="22.86" x2="259.08" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="254" y1="22.86" x2="254" y2="20.32" width="0.1524" layer="91"/>
-<junction x="254" y="20.32"/>
-<wire x1="248.92" y1="22.86" x2="248.92" y2="20.32" width="0.1524" layer="91"/>
-<junction x="248.92" y="20.32"/>
-</segment>
-<segment>
-<pinref part="B08" gate="B" pin="P$2"/>
+<pinref part="B08" gate="R" pin="P$2"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 <wire x1="17.78" y1="246.38" x2="20.32" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="246.38" x2="20.32" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
 <pinref part="A08" gate="A" pin="P$2"/>
-<wire x1="43.18" y1="185.42" x2="40.64" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="185.42" x2="40.64" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="B01" gate="U" pin="P$2"/>
-<pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
-<wire x1="205.74" y1="22.86" x2="208.28" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="22.86" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
+<pinref part="AB07" gate="AA" pin="P$2"/>
+<pinref part="AB07" gate="BA" pin="P$2"/>
+<wire x1="226.06" y1="22.86" x2="226.06" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="20.32" x2="236.22" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="20.32" x2="241.3" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="22.86" x2="241.3" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="22.86" x2="236.22" y2="20.32" width="0.1524" layer="91"/>
+<junction x="236.22" y="20.32"/>
+<pinref part="B08" gate="A" pin="P$2"/>
+<wire x1="241.3" y1="20.32" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="20.32" x2="251.46" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="20.32" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
+<junction x="241.3" y="20.32"/>
+<wire x1="246.38" y1="22.86" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
+<junction x="246.38" y="20.32"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="A01" gate="C" pin="P$2"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="243.84" y1="15.24" x2="243.84" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="17.78" x2="248.92" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="17.78" x2="254" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="254" y1="17.78" x2="259.08" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="15.24" x2="248.92" y2="17.78" width="0.1524" layer="91"/>
-<junction x="248.92" y="17.78"/>
+<wire x1="226.06" y1="15.24" x2="226.06" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="17.78" x2="231.14" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="17.78" x2="236.22" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="17.78" x2="241.3" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="15.24" x2="231.14" y2="17.78" width="0.1524" layer="91"/>
+<junction x="231.14" y="17.78"/>
 <pinref part="AB07" gate="AC" pin="P$2"/>
 <pinref part="AB07" gate="BC" pin="P$2"/>
-<wire x1="254" y1="15.24" x2="254" y2="17.78" width="0.1524" layer="91"/>
-<junction x="254" y="17.78"/>
-<wire x1="259.08" y1="15.24" x2="259.08" y2="17.78" width="0.1524" layer="91"/>
-<junction x="259.08" y="17.78"/>
+<wire x1="236.22" y1="15.24" x2="236.22" y2="17.78" width="0.1524" layer="91"/>
+<junction x="236.22" y="17.78"/>
+<wire x1="241.3" y1="15.24" x2="241.3" y2="17.78" width="0.1524" layer="91"/>
+<junction x="241.3" y="17.78"/>
 <pinref part="A08" gate="C" pin="P$2"/>
-<wire x1="259.08" y1="17.78" x2="264.16" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="17.78" x2="264.16" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="17.78" x2="246.38" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="17.78" x2="246.38" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="B08" gate="C" pin="P$2"/>
+<wire x1="246.38" y1="17.78" x2="251.46" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="17.78" x2="251.46" y2="15.24" width="0.1524" layer="91"/>
+<junction x="246.38" y="17.78"/>
 </segment>
 <segment>
 <pinref part="B01" gate="B" pin="P$2"/>
@@ -1995,38 +1998,50 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="B02" gate="E" pin="P$2"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<pinref part="A02" gate="G$2" pin="GND"/>
+</segment>
 </net>
 <net name="-15V" class="0">
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="-15V"/>
+<wire x1="256.54" y1="15.24" x2="256.54" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="17.78" x2="261.62" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="17.78" x2="266.7" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="17.78" x2="271.78" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="AB07" gate="AB" pin="P$2"/>
+<wire x1="266.7" y1="15.24" x2="266.7" y2="17.78" width="0.1524" layer="91"/>
+<junction x="266.7" y="17.78"/>
+<pinref part="AB07" gate="BB" pin="P$2"/>
 <wire x1="271.78" y1="15.24" x2="271.78" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="B08" gate="B" pin="P$2"/>
 <wire x1="271.78" y1="17.78" x2="276.86" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="17.78" x2="281.94" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="AB07" gate="AB" pin="P$2"/>
+<wire x1="281.94" y1="17.78" x2="281.94" y2="15.24" width="0.1524" layer="91"/>
+<junction x="271.78" y="17.78"/>
+<pinref part="A08" gate="B" pin="P$2"/>
 <wire x1="276.86" y1="15.24" x2="276.86" y2="17.78" width="0.1524" layer="91"/>
 <junction x="276.86" y="17.78"/>
-<pinref part="AB07" gate="BB" pin="P$2"/>
-<wire x1="281.94" y1="15.24" x2="281.94" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="B01" gate="V" pin="P$2"/>
-<pinref part="SUPPLY10" gate="G$1" pin="-15V"/>
-<wire x1="205.74" y1="17.78" x2="208.28" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="17.78" x2="208.28" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="A06" gate="B2" pin="P$2"/>
+<wire x1="261.62" y1="15.24" x2="261.62" y2="17.78" width="0.1524" layer="91"/>
+<junction x="261.62" y="17.78"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="PUN_FEED" class="0">
 <segment>
 <pinref part="B01" gate="A" pin="P$2"/>
 <pinref part="B02" gate="U" pin="P$2"/>
 <wire x1="160.02" y1="160.02" x2="142.24" y2="160.02" width="0.1524" layer="91"/>
+<label x="144.78" y="160.02" size="1.6764" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="PUN_SYNC" class="0">
 <segment>
 <pinref part="B01" gate="C" pin="P$2"/>
 <pinref part="B02" gate="F" pin="P$2"/>
 <wire x1="160.02" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
+<label x="144.78" y="149.86" size="1.6764" layer="95"/>
 </segment>
 </net>
 <net name="PUN_DONE" class="0">
@@ -2047,7 +2062,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="PHOTO8" class="0">
 <segment>
-<pinref part="B08" gate="E" pin="P$2"/>
+<pinref part="B08" gate="F" pin="P$2"/>
 <wire x1="33.02" y1="200.66" x2="17.78" y2="200.66" width="0.1524" layer="91"/>
 <label x="20.32" y="200.66" size="1.6764" layer="95"/>
 <pinref part="AB07" gate="BF" pin="P$2"/>
@@ -2055,7 +2070,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="PHOTO7" class="0">
 <segment>
-<pinref part="B08" gate="F" pin="P$2"/>
+<pinref part="B08" gate="H" pin="P$2"/>
 <wire x1="17.78" y1="205.74" x2="33.02" y2="205.74" width="0.1524" layer="91"/>
 <label x="20.32" y="205.74" size="1.6764" layer="95"/>
 <pinref part="AB07" gate="BH" pin="P$2"/>
@@ -2063,7 +2078,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="PHOTO6" class="0">
 <segment>
-<pinref part="B08" gate="U" pin="P$2"/>
+<pinref part="B08" gate="J" pin="P$2"/>
 <wire x1="17.78" y1="210.82" x2="33.02" y2="210.82" width="0.1524" layer="91"/>
 <label x="20.32" y="210.82" size="1.6764" layer="95"/>
 <pinref part="AB07" gate="BJ" pin="P$2"/>
@@ -2244,16 +2259,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="B06" gate="G$3" pin="P$1"/>
 <pinref part="B05" gate="G$3" pin="P$1"/>
-<wire x1="236.22" y1="17.78" x2="231.14" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="17.78" x2="213.36" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="B04" gate="G$3" pin="P$1"/>
-<wire x1="226.06" y1="17.78" x2="231.14" y2="17.78" width="0.1524" layer="91"/>
-<junction x="231.14" y="17.78"/>
+<wire x1="208.28" y1="17.78" x2="213.36" y2="17.78" width="0.1524" layer="91"/>
+<junction x="213.36" y="17.78"/>
 <pinref part="B03" gate="G$3" pin="P$1"/>
-<wire x1="220.98" y1="17.78" x2="226.06" y2="17.78" width="0.1524" layer="91"/>
-<junction x="226.06" y="17.78"/>
+<wire x1="203.2" y1="17.78" x2="208.28" y2="17.78" width="0.1524" layer="91"/>
+<junction x="208.28" y="17.78"/>
 <pinref part="SUPPLY8" gate="G$1" pin="-18V"/>
-<wire x1="220.98" y1="17.78" x2="215.9" y2="17.78" width="0.1524" layer="91"/>
-<junction x="220.98" y="17.78"/>
+<wire x1="203.2" y1="17.78" x2="198.12" y2="17.78" width="0.1524" layer="91"/>
+<junction x="203.2" y="17.78"/>
 </segment>
 </net>
 <net name="PWR" class="0">
@@ -2437,11 +2452,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="B01" gate="L" pin="P$2"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="OUTOFTAPE" class="0">
 <segment>
 <pinref part="B02" gate="T" pin="P$2"/>
 <pinref part="B01" gate="T" pin="P$2"/>
 <wire x1="142.24" y1="139.7" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
+<label x="144.78" y="139.7" size="1.6764" layer="95"/>
 </segment>
 </net>
 <net name="HOLE2" class="0">
@@ -2508,20 +2524,34 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="B02" gate="J" pin="P$2"/>
 </segment>
 </net>
-<net name="-30V" class="0">
+<net name="-36V" class="0">
 <segment>
-<pinref part="A05" gate="G$7" pin="-30V"/>
+<pinref part="A05" gate="G$7" pin="-36V"/>
 <wire x1="147.32" y1="121.92" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="B02" gate="D" pin="P$2"/>
 <wire x1="147.32" y1="124.46" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="A03" gate="G$7" pin="-30V"/>
+<pinref part="A03" gate="G$7" pin="-36V"/>
 <wire x1="152.4" y1="124.46" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="121.92" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
 <junction x="157.48" y="124.46"/>
-<pinref part="A04" gate="G$7" pin="-30V"/>
+<pinref part="A04" gate="G$7" pin="-36V"/>
 <wire x1="152.4" y1="121.92" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
 <junction x="152.4" y="124.46"/>
+</segment>
+</net>
+<net name="NC" class="0">
+<segment>
+<pinref part="A02" gate="G$2" pin="VCC"/>
+<wire x1="271.78" y1="40.64" x2="276.86" y2="40.64" width="0.1524" layer="91"/>
+<label x="271.78" y="40.64" size="1.6764" layer="95"/>
+</segment>
+</net>
+<net name="***" class="0">
+<segment>
+<pinref part="A02" gate="G$1" pin="-15V"/>
+<wire x1="264.16" y1="40.64" x2="269.24" y2="40.64" width="0.1524" layer="91"/>
+<label x="264.16" y="40.64" size="1.6764" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -2564,15 +2594,19 @@ In this library the device names are the same as the pin names of the symbols, t
 <approved hash="114,1,167.64,106.722,A06,S2,IN2,,,"/>
 <approved hash="114,1,167.64,106.722,A06,V2,IN1,,,"/>
 <approved hash="114,1,167.64,106.722,A06,V2,IN2,,,"/>
+<approved hash="104,1,264.16,40.64,A02G$1,-15V,***,,,"/>
+<approved hash="104,1,271.78,40.64,A02G$2,VCC,NC,,,"/>
 <approved hash="114,1,223.52,226.06,A03,G$3,D,,,"/>
 <approved hash="114,1,223.52,226.06,A03,G$3,H,,,"/>
 <approved hash="114,1,223.52,226.06,A03,G$4,D,,,"/>
 <approved hash="114,1,223.52,226.06,A03,G$4,H,,,"/>
 <approved hash="106,1,17.78,35.56,!RDR_FEED_SW,,,,,"/>
-<approved hash="209,1,236.22,17.78,-18V,,,,,"/>
-<approved hash="209,1,231.14,17.78,-18V,,,,,"/>
-<approved hash="209,1,226.06,17.78,-18V,,,,,"/>
-<approved hash="209,1,220.98,17.78,-18V,,,,,"/>
+<approved hash="106,1,264.16,40.64,***,,,,,"/>
+<approved hash="209,1,218.44,17.78,-18V,,,,,"/>
+<approved hash="209,1,213.36,17.78,-18V,,,,,"/>
+<approved hash="209,1,208.28,17.78,-18V,,,,,"/>
+<approved hash="209,1,203.2,17.78,-18V,,,,,"/>
+<approved hash="106,1,271.78,40.64,NC,,,,,"/>
 <approved hash="106,1,63.5,180.34,OFF_LINE,,,,,"/>
 </errors>
 </schematic>
