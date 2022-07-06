@@ -1,0 +1,4 @@
+CPLD versions of Mxxx
+<UL>
+<LI><b>single44</b> is a single-height module using a 44 pin PLCC.</LI>
+<LI><b>single84</b> is a single-height module using a 84 pin PLCC.</LI>

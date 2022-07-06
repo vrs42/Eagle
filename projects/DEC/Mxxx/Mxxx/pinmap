@@ -1,0 +1,88 @@
+#!/usr/bin/perl
+
+#
+# Read the schematics and look at the pin usage.
+#
+
+@todo = <../M[1246]??/M????*.sch>;
+
+%outputs = ();
+
+foreach $f (@todo) {
+  open(INPUT, "$f") || die "$f: $!";
+  $single = undef;
+  %symbol = %opin = ();
+  %library = %devset = ();
+  %net = %output = ();
+  while (<INPUT>) {
+    # When starting a library, remember it's name.
+    $library = $1 if /<library name="([^"]+)"/;
+    # When starting a symbol, remember it's name.
+    $symbol = $1 if /<symbol name="([^"]+)"/;
+    # When starting a deviceset, remember it's name.
+    $deviceset = $1 if /<deviceset name="([^"]+)"/;
+    # Remember which library gates go with which library symbols.
+    if (/<gate name="([^"]+)" symbol="([^"]+)"/) {
+      ($gate, $symbol) = ($1, $2);
+#warn "got <gate>: $library.$deviceset.$gate $symbol\n";
+      $symbol{"$library.$deviceset.$gate"} = $symbol;
+    }
+    # Library symbols contain pins with a direction.
+    if (/<pin name="([^"]+)"/) {
+       $pin = $1;
+#warn "got <pin>: $pin\n";
+       next unless /direction="([^"]+)"/;
+       $direction = $1;
+       $direction = "out" if $direction eq "oc";
+       next unless $direction eq "out";
+#warn "got <opin>: $library.$symbol.$pin\n";
+       # Found an output pin.
+       $opin{"$library.$symbol.$pin"} = 1;
+    }
+    # Once the library parts are described, instantiation begins.
+    if (/<part name="([^"]+)" library="([^"]+)" deviceset="([^"]+)"/) {
+      ($name, $library, $devset) = ($1, $2, $3);
+#warn "got <part> $name: $library $devset\n";
+      # Remember the library and deviceset for each part.
+      $library{$name} = $library;
+      $devset{$name} = $devset;
+      # For those that instantiate SINGLE, remember the edge connector's name.
+      $single = $1 if $3 eq "SINGLE";
+    }
+    # ... And eventually the netlist is given.
+    # When starting a net, remember it's name.
+    $net = $1 if /<net name="([^"+]*)"/;
+    # Nets contain pinrefs.
+    if (/<pinref part="([^"]+)" gate="([^"]+)" pin="([^"]+)"/) {
+      ($part, $gate, $pin) = ($1, $2, $3);
+#warn "got <pinref>\n";
+      # If this is the edge connector, remember the pinout!
+      $net{$gate} = $net if $part eq $single;
+      # Remember nets with output pins on them!
+      # To determine an output pin (%opin), we need libraray.symbol.pin.
+      # When $part was instantiated, the <part> gave the library and deviceset.
+      $library = $library{$part};
+      $devset = $devset{$part};
+      # When the deviceset gates were enumerated, the <gate> gave the symbol.
+      $symbol = $symbol{"$library.$devset.$gate"};
+      $output{$net} = 1 if $opin{"$library.$symbol.$pin"};
+    }
+  }
+  next unless defined $single;
+  # Iterate over the pinout marking %outputs if %output is set.
+  @output = ();
+  foreach $gate (sort keys %net) {
+    push (@output, $gate) if $output{$net{$gate}};
+  }
+  print "$f: @output\n";
+  foreach $gate (@output) {
+    $outputs{$gate} = 0 unless defined $outputs{$gate};
+    $outputs{$gate}++;
+  }
+}
+
+@outputs = sort keys %outputs;
+foreach $gate (@outputs) {
+  print "$gate: $outputs{$gate}\n";
+}
+exit 0;
