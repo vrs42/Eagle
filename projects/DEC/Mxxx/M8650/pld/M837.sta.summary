@@ -1,0 +1,17 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'load_addr'
+Slack : -30.000
+TNS   : -30.000
+
+Type  : Hold 'load_addr'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Minimum Pulse Width 'load_addr'
+Slack : -5.500
+TNS   : -11.000
+
+------------------------------------------------------------

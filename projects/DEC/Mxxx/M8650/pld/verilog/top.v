@@ -1,0 +1,166 @@
+module top;
+
+// Set up the configuration switches.
+reg sw1 = 1'b0;
+reg sw2 = 1'b0;
+reg sw3 = 1'b1;	// 100 => 9600 baud
+reg sw4 = 1'b1;
+reg sw5 = 1'b0;
+reg sw6 = 1'b0;	// 001 => 03/04 (console)
+
+wire [11:0] data_l;	// Declare the data bus.
+reg [11:0] md_l;		// Declare the memory data bus.
+reg [11:0] ac_l;		// Declare the AC.
+
+wire serial_in;		// Serial Data in to the M8650.
+wire serial_out;	// Serial Data out of the M8650.
+reg bd230400;		// Baud rate oscillator into M8650.
+
+reg initialize;		// Reset
+reg power_ok;		// Power is acceptable.
+reg io_pause_l;		// IOT in progress
+reg tp3;		// Time pulse 3
+
+reg didskip;		// Did the IOT skip?
+
+wire internal_io_l;	// Device responded
+wire c0_l;		// Device wants AC clear
+wire c1_l;		// Device doing input!
+wire skip_l;		// Device wants skip
+wire int_rqst_l;	// Device wants interrupt
+
+pullup(data_l);
+pullup(c0_l);
+pullup(c1_l);
+pullup(skip_l);
+pullup(int_rqst_l);
+
+// Set up a procedure to do an IOT.
+// We present the IOT on md_l, then assert io_pause_l.
+// We assert tp3_l after 200 nanoseconds.
+// We expect internal_io_l to be asserted in response, and the
+// direction of the data_l bus is controlled by c1_l.
+// Depending on c1_l, we present ac on data_l, or we modify ac_l
+// based on data_l.  Depending on c0_l, we may clear ac_l before
+// or after this.  We also monitor skip and int_rqst for proper
+// behavior.
+task do_iot(input [11:0] iot);
+begin
+  md_l = ~iot;		// Present the instruction
+  io_pause_l = 1'b0;	// IOT begins
+  #200 tp3 = 1'b1;	// Assert TP3
+  #100 tp3 = 1'b0;	// De-assert TP3
+  if (internal_io_l == 1'b1)
+    $display("Device failed to assert internal_io");
+  if (c0_l == 1'b0)
+    ac_l = 12'b111111111111;
+  if (c1_l == 1'b0)
+    ac_l = ac_l & data_l;
+  didskip = ~skip_l;
+//$display("skip_l is %b!", skip_l);
+  io_pause_l = 1'b1;	// IOT ends
+end
+endtask
+
+//$monitor("time = %g, edge skip_l = %b", $time, skip_l);
+always @(negedge skip_l)
+  $display("time = ", $time, " edge skip_l = ", skip_l);
+always @(posedge skip_l)
+  $display("time = ", $time, " edge skip_l = ", skip_l);
+
+//$monitor("time = %g, edge int_rqst_l = %b", $time, int_rqst_l);
+always @(negedge int_rqst_l)
+  $display("time = ", $time, " edge int_rqst_l = ", int_rqst_l);
+always @(posedge int_rqst_l)
+  $display("time = ", $time, " edge int_rqst_l = ", int_rqst_l);
+
+// This is essential for output transfers.
+assign data_l = (~io_pause_l & c1_l)? ac_l : 12'bzzzzzzzzzzzz;
+
+// Instantiate the "board" to be tested.
+// BUGBUG: n_t_103x, int_enab, rdr_run_l, tx_div_l still need to be removed!
+m8650 console(
+	.clk(bd230400),
+	.serial_in(serial_in), .serial_out(serial_out),
+	.sw1(sw1), .sw2(sw2), .sw3(sw3), .sw4(sw4), .sw5(sw5), .sw6(sw6), 
+	.data04_l(data_l[4]), .data05_l(data_l[5]),
+	.data06_l(data_l[6]), .data07_l(data_l[7]),  .data08_l(data_l[8]),
+	.data09_l(data_l[9]), .data10_l(data_l[10]), .data11_l(data_l[11]),
+	.initialize(initialize), .power_ok(power_ok),
+	.md03_l(md_l[3]), .md04_l(md_l[4]),  .md05_l(md_l[5]),
+	.md06_l(md_l[6]), .md07_l(md_l[7]),  .md08_l(md_l[8]),
+	.md09_l(md_l[9]), .md10_l(md_l[10]), .md11_l(md_l[11]),
+	.io_pause_l(io_pause_l), .tp3(tp3),
+	.internal_io_l(internal_io_l), .c0_l(c0_l), .c1_l(c1_l),
+	.skip_l(skip_l), .int_rqst_l(int_rqst_l)
+//	n_t_103x, int_enab, r_run_l, tx_div_l
+);
+
+// We don't really have another UART to talk to it with, so
+// Set up for a loop-back test.
+assign serial_out = serial_in;
+
+// Set the clock running..
+always
+  #271 if (~initialize) bd230400 = ~bd230400;
+
+initial
+begin
+
+  // Trigger a reset and bring up power_ok.
+  initialize = 1'b1;
+  bd230400 = 1'b0;
+  #200 power_ok = 1'b1;
+  #500 initialize = 1'b0;
+  
+  $display("time ", $time);
+  $display("initial int_rqst_l = %b", int_rqst_l);
+  $display("initial skip_l = %b", skip_l);
+
+  // Perform a TSF, and verify that it does not request a skip.
+  do_iot(12'o6041);
+  if (didskip == 1'b1)
+    $display("Initial TSF should not have skipped!");
+  
+  // Perform a TLS, verifying that it does not skip.
+  ac_l = ~12'o0325;
+  do_iot(12'o6046);
+  if (didskip == 1'b1)
+    $display("TLS should not have skipped!");
+  
+  // Perform repeated TSF, until one requests a skip.
+  // While we are at it, perform a KSF, which should not skip.
+  while (1)
+  begin
+    do_iot(12'o6041);
+    if (didskip == 1'b1)
+      break;
+    do_iot(12'o6031);
+    if (didskip == 1'b1)
+      $display("KSF should not have skipped!");
+  end
+  
+  // Perform repeated KSF, until one requests a skip.
+  while (1)
+  begin
+    do_iot(12'o6031);
+    if (didskip == 1'b1)
+      break;
+  end
+  
+  // Perform a KRB, verifying that it doesn not skip, and that it requests
+  // the appropriate modification of AC via the DATA_L bus.  DATA should
+  // match what was sent during the TLS.
+  do_iot(12'o6036);
+  if (didskip == 1'b1)
+    $display("KRB should not have skipped!");
+  
+  // Perform another KSF, verifying that it does not skip.
+  do_iot(12'o6031);
+  if (didskip == 1'b1)
+    $display("KSF should not have skipped!");
+  $finish("Ready for KRB");
+
+end
+
+endmodule

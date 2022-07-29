@@ -1,0 +1,971 @@
+%SIGNAL
+PIN   0 =  c1l 
+PIN 107 =  cdf_low 
+PIN 108 =  cif_low 
+PIN 109 =  cint_low 
+PIN   0 =  cpma_disable_low 
+PIN 110 =  cuf_low 
+PIN 111 =  d 
+PIN 112 =  d_in_low 
+PIN   0 =  d_low 
+PIN   0 =  data03_low 
+PIN   0 =  data05_low 
+PIN   0 =  data06_low 
+PIN   0 =  data07_low 
+PIN   0 =  data08_low 
+PIN   0 =  data09_low 
+PIN   0 =  data10_low 
+PIN   0 =  data11_low 
+PIN  98 =  db 
+PIN 113 =  db_load 
+PIN 104 =  df0 
+PIN 105 =  df1 
+PIN 106 =  df2 
+PIN   0 =  df_enable 
+PIN   0 =  ema0_low 
+PIN   0 =  ema1_low 
+PIN   0 =  ema2_low 
+PIN  97 =  ema_disable_low 
+PIN 114 =  error 
+PIN 115 =  ext_ld_low 
+PIN   0 =  f_low 
+PIN   0 =  f_set_low 
+PIN  93 =  gdollar_0 
+PIN  99 =  gdollar_1 
+PIN 103 =  gdollar_2 
+PIN 116 =  gtf_low 
+PIN  94 =  ib0 
+PIN  95 =  ib1 
+PIN  96 =  ib2 
+PIN 117 =  ibifdf_clr_low 
+PIN  86 =  if0 
+PIN  87 =  if1 
+PIN  88 =  if2 
+PIN   0 =  ind1_low 
+PIN   0 =  ind2_low 
+PIN 118 =  ind_low 
+PIN   0 =  initialize 
+PIN 119 =  initialize_low 
+PIN 120 =  int_in_prog_mams_ld_ctl 
+PIN   0 =  int_in_progress_low 
+PIN 121 =  int_inh 
+PIN   0 =  int_rqst_low 
+PIN   0 =  internal_io_low 
+PIN 122 =  io_pause 
+PIN   0 =  io_pause_low 
+PIN 123 =  iot000000xxx 
+PIN 124 =  iot010xxx0xx 
+PIN 125 =  iot010xxx1xx 
+PIN   0 =  ir00_low 
+PIN   0 =  ir01_low 
+PIN 126 =  jmp_or_jms 
+PIN   0 =  key_ctl_low 
+PIN   0 =  load_addr 
+PIN   0 =  load_cntl 
+PIN 129 =  lp__df_enab_and_ema_disab_rp_low 
+PIN 127 =  lp_d_in_or_cif_or_rmf_rp 
+PIN 128 =  lp_df_enab_and_ema_disab_rp_low 
+PIN 130 =  lp_gtf_or_rib_rp_low 
+PIN 131 =  lp_ind_or_rif_rp_low 
+PIN 132 =  lp_la_or_tp3_rp_low 
+PIN 133 =  lp_la_or_tp4_and_ld_ctl_rp_low 
+PIN   0 =  md00_low 
+PIN   0 =  md01_low 
+PIN   0 =  md02_low 
+PIN   0 =  md03_low 
+PIN 134 =  md04 
+PIN   0 =  md04_low 
+PIN 135 =  md05 
+PIN   0 =  md05_low 
+PIN 136 =  md06 
+PIN   0 =  md06_low 
+PIN 137 =  md07 
+PIN   0 =  md07_low 
+PIN 138 =  md08 
+PIN   0 =  md08_low 
+PIN   0 =  md09_low 
+PIN   0 =  md10_low 
+PIN 139 =  md11 
+PIN   0 =  md11_low 
+PIN 140 =  myc1 
+PIN   0 =  power_ok 
+PIN 141 =  power_ok_low 
+PIN 142 =  rdf_low 
+PIN 143 =  renamed0 
+PIN 144 =  rib_low 
+PIN 145 =  rif_low 
+PIN 146 =  rmf_low 
+PIN 147 =  rtf_low 
+PIN   0 =  run_low 
+PIN  90 =  sf0_l 
+PIN  91 =  sf1_l 
+PIN  92 =  sf2_l 
+PIN 100 =  sf3_l 
+PIN 101 =  sf4_l 
+PIN 102 =  sf5_l 
+PIN 148 =  sint_low 
+PIN   0 =  skip_low 
+PIN  89 =  suf_l 
+PIN 149 =  suf_low 
+PIN   0 =  tp2 
+PIN   0 =  tp3 
+PIN   0 =  tp4 
+PIN   0 =  tp_aa1 
+PIN   0 =  tp_ab1 
+PIN   0 =  tp_ba1 
+PIN   0 =  tp_bb1 
+PIN   0 =  ts1_low 
+PIN   0 =  ts_disable_low 
+PIN  85 =  uf 
+PIN 150 =  uint 
+PIN   0 =  user_mode_low 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!c1l =>
+    myc1
+
+c1l.oe  =>
+    myc1
+
+cdf_low =>
+    !md11 & md11_low
+  # md10_low & !md11
+  # !iot010xxx0xx
+
+cif_low =>
+    md10_low
+  # !iot010xxx0xx
+
+!cint_low =>
+    iot010xxx1xx & !md06 & !md07 & !md08
+
+!cuf_low =>
+    iot010xxx1xx & md06 & md07 & !md08
+
+!d =>
+    d_low
+  # !load_cntl
+
+!d_in_low =>
+    !ext_ld_low & !key_ctl_low
+  # !rtf_low
+
+!data03_low =>
+    !lp_gtf_or_rib_rp_low
+  # !ind_low & int_inh
+
+data03_low.oe  =>
+    !lp_gtf_or_rib_rp_low
+  # !ind_low & int_inh
+
+!data05_low =>
+    !lp_gtf_or_rib_rp_low & !suf_l
+  # !ind_low & uf
+
+data05_low.oe  =>
+    !lp_gtf_or_rib_rp_low & !suf_l
+  # !ind_low & uf
+
+!data06_low =>
+    !lp_gtf_or_rib_rp_low & !sf0_l
+  # if0 & !lp_ind_or_rif_rp_low
+  # df0 & !rdf_low
+
+data06_low.oe  =>
+    !lp_gtf_or_rib_rp_low & !sf0_l
+  # if0 & !lp_ind_or_rif_rp_low
+  # df0 & !rdf_low
+
+!data07_low =>
+    !lp_gtf_or_rib_rp_low & !sf1_l
+  # if1 & !lp_ind_or_rif_rp_low
+  # df1 & !rdf_low
+
+data07_low.oe  =>
+    !lp_gtf_or_rib_rp_low & !sf1_l
+  # if1 & !lp_ind_or_rif_rp_low
+  # df1 & !rdf_low
+
+!data08_low =>
+    !lp_gtf_or_rib_rp_low & !sf2_l
+  # if2 & !lp_ind_or_rif_rp_low
+  # df2 & !rdf_low
+
+data08_low.oe  =>
+    !lp_gtf_or_rib_rp_low & !sf2_l
+  # if2 & !lp_ind_or_rif_rp_low
+  # df2 & !rdf_low
+
+!data09_low =>
+    !lp_gtf_or_rib_rp_low & !sf3_l
+  # df0 & !ind_low
+
+data09_low.oe  =>
+    !lp_gtf_or_rib_rp_low & !sf3_l
+  # df0 & !ind_low
+
+!data10_low =>
+    !lp_gtf_or_rib_rp_low & !sf4_l
+  # df1 & !ind_low
+
+data10_low.oe  =>
+    !lp_gtf_or_rib_rp_low & !sf4_l
+  # df1 & !ind_low
+
+!data11_low =>
+    !lp_gtf_or_rib_rp_low & !sf5_l
+  # df2 & !ind_low
+
+data11_low.oe  =>
+    !lp_gtf_or_rib_rp_low & !sf5_l
+  # df2 & !ind_low
+
+db.d  =>
+    db_load
+
+db.ap  =>
+    !suf_low & tp3
+
+db.ar  =>
+    load_addr
+  # !cuf_low & tp3
+  # !ibifdf_clr_low
+
+db.ck  =>
+    !rtf_low & tp3
+  # !rmf_low & tp3
+
+db_load =>
+    !rmf_low & !suf_l
+  # !d_in_low & !data05_low
+
+df0.d  =>
+    !d_in_low & !data09_low
+  # !rmf_low & !sf3_l
+  # !cdf_low & md06 & rmf_low
+  # cdf_low & d_in_low & df0 & rmf_low
+
+df0.ar  =>
+    !ibifdf_clr_low
+
+df0.ck  =>
+    lp_la_or_tp3_rp_low
+
+df1.d  =>
+    !d_in_low & !data10_low
+  # !rmf_low & !sf4_l
+  # !cdf_low & md07 & rmf_low
+  # cdf_low & d_in_low & df1 & rmf_low
+
+df1.ar  =>
+    !ibifdf_clr_low
+
+df1.ck  =>
+    lp_la_or_tp3_rp_low
+
+df2.d  =>
+    !d_in_low & !data11_low
+  # !rmf_low & !sf5_l
+  # !cdf_low & md08 & rmf_low
+  # cdf_low & d_in_low & df2 & rmf_low
+
+df2.ar  =>
+    !ibifdf_clr_low
+
+df2.ck  =>
+    lp_la_or_tp3_rp_low
+
+df_enable.d  =>
+    !d & !f_set_low & load_cntl
+  # !f_set_low & jmp_or_jms & load_cntl
+  # !d & !df_enable
+  # !df_enable & jmp_or_jms
+
+df_enable.ap  =>
+    1 
+
+df_enable.ar  =>
+    !initialize_low
+
+df_enable.ck  =>
+    tp4
+
+!ema0_low =>
+    df0 & !lp_df_enab_and_ema_disab_rp_low
+  # if0 & !lp_df_enab_and_ema_disab_rp_low
+
+ema0_low.oe  =>
+    df0 & !lp_df_enab_and_ema_disab_rp_low
+  # if0 & !lp_df_enab_and_ema_disab_rp_low
+
+!ema1_low =>
+    df1 & !lp_df_enab_and_ema_disab_rp_low
+  # if1 & !lp_df_enab_and_ema_disab_rp_low
+
+ema1_low.oe  =>
+    df1 & !lp_df_enab_and_ema_disab_rp_low
+  # if1 & !lp_df_enab_and_ema_disab_rp_low
+
+!ema2_low =>
+    df2 & !lp_df_enab_and_ema_disab_rp_low
+  # if2 & !lp_df_enab_and_ema_disab_rp_low
+
+ema2_low.oe  =>
+    df2 & !lp_df_enab_and_ema_disab_rp_low
+  # if2 & !lp_df_enab_and_ema_disab_rp_low
+
+ema_disable_low.d  =>
+    cpma_disable_low
+
+ema_disable_low.ap  =>
+    !ibifdf_clr_low
+
+ema_disable_low.ar  =>
+    1 
+
+ema_disable_low.ck  =>
+    tp4
+
+!error =>
+    user_mode_low
+  # !md02_low & md03_low
+  # !md02_low & md09_low & md10_low
+  # !md02_low & !md11_low
+  # f_low
+  # md01_low
+  # md00_low
+
+!ext_ld_low =>
+    !ts1_low
+  # !ext_ld_low & !tp2
+
+gdollar_0.d  =>
+    gdollar_0 & !lp_d_in_or_cif_or_rmf_rp
+
+gdollar_0.ar  =>
+    !ibifdf_clr_low
+
+gdollar_0.ck  =>
+    lp_la_or_tp3_rp_low
+
+!gdollar_1.d  =>
+    gdollar_1 & !int_in_prog_mams_ld_ctl
+
+gdollar_1.ar  =>
+    1 
+
+gdollar_1.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+gdollar_2.d  =>
+    cdf_low & d_in_low & gdollar_2 & rmf_low
+
+gdollar_2.ar  =>
+    !ibifdf_clr_low
+
+gdollar_2.ck  =>
+    lp_la_or_tp3_rp_low
+
+gtf_low =>
+    !iot000000xxx
+  # md11
+  # !md10_low
+  # md09_low
+
+ib0.d  =>
+    !d_in_low & !data06_low & lp_d_in_or_cif_or_rmf_rp
+  # !cif_low & lp_d_in_or_cif_or_rmf_rp & md06 & rmf_low
+  # lp_d_in_or_cif_or_rmf_rp & !rmf_low & !sf0_l
+  # ib0 & !lp_d_in_or_cif_or_rmf_rp
+
+ib0.ar  =>
+    !ibifdf_clr_low
+
+ib0.ck  =>
+    lp_la_or_tp3_rp_low
+
+ib1.d  =>
+    !d_in_low & !data07_low & lp_d_in_or_cif_or_rmf_rp
+  # !cif_low & lp_d_in_or_cif_or_rmf_rp & md07 & rmf_low
+  # lp_d_in_or_cif_or_rmf_rp & !rmf_low & !sf1_l
+  # ib1 & !lp_d_in_or_cif_or_rmf_rp
+
+ib1.ar  =>
+    !ibifdf_clr_low
+
+ib1.ck  =>
+    lp_la_or_tp3_rp_low
+
+ib2.d  =>
+    !d_in_low & !data08_low & lp_d_in_or_cif_or_rmf_rp
+  # !cif_low & lp_d_in_or_cif_or_rmf_rp & md08 & rmf_low
+  # lp_d_in_or_cif_or_rmf_rp & !rmf_low & !sf2_l
+  # ib2 & !lp_d_in_or_cif_or_rmf_rp
+
+ib2.ar  =>
+    !ibifdf_clr_low
+
+ib2.ck  =>
+    lp_la_or_tp3_rp_low
+
+!ibifdf_clr_low =>
+    power_ok_low & run_low
+  # int_in_prog_mams_ld_ctl & tp4
+
+if0.d  =>
+    renamed0 & tp_bb1
+  # if0 & !renamed0
+
+if0.ar  =>
+    !ibifdf_clr_low
+
+if0.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+if1.d  =>
+    renamed0 & tp_aa1
+  # if1 & !renamed0
+
+if1.ar  =>
+    !ibifdf_clr_low
+
+if1.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+if2.d  =>
+    renamed0 & tp_ab1
+  # if2 & !renamed0
+
+if2.ar  =>
+    !ibifdf_clr_low
+
+if2.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+ind_low =>
+    !ind1_low
+  # ts1_low
+  # !ind2_low
+
+!initialize_low =>
+    load_addr
+  # initialize
+
+!int_in_prog_mams_ld_ctl =>
+    !load_cntl
+  # !int_in_progress_low
+
+!int_in_progress_low =>
+    int_inh
+
+int_in_progress_low.oe  =>
+    int_inh
+
+int_inh =>
+    !suf_low & tp3
+  # ibifdf_clr_low & int_inh & !tp3
+  # cuf_low & !d & f_low & ibifdf_clr_low & int_inh
+  # cuf_low & !d & ibifdf_clr_low & int_inh & !md03_low
+  # cuf_low & ibifdf_clr_low & int_inh & !jmp_or_jms
+  # lp_d_in_or_cif_or_rmf_rp & tp3
+
+!int_rqst_low =>
+    uint
+
+int_rqst_low.oe  =>
+    uint
+
+!internal_io_low =>
+    iot010xxx1xx
+  # iot000000xxx
+  # iot010xxx0xx
+
+internal_io_low.oe  =>
+    iot010xxx1xx
+  # iot000000xxx
+  # iot010xxx0xx
+
+io_pause =>
+    io_pause_low
+  # !load_cntl
+
+!iot000000xxx =>
+    !md03_low
+  # md05
+  # io_pause
+  # md04
+  # md08
+  # md06
+  # md07
+
+!iot010xxx0xx =>
+    io_pause
+  # md05
+  # !md03_low
+  # !md09_low
+  # md04_low
+
+!iot010xxx1xx =>
+    !md03_low
+  # md05
+  # io_pause
+  # md04_low
+  # md09_low
+  # !md10_low
+  # md11
+
+!jmp_or_jms =>
+    ir00_low
+  # !ir01_low
+
+lp__df_enab_and_ema_disab_rp_low =>
+    df_enable
+  # !ema_disable_low
+
+lp_d_in_or_cif_or_rmf_rp =>
+    !rmf_low
+  # !d_in_low
+  # !cif_low
+
+lp_df_enab_and_ema_disab_rp_low =>
+    !df_enable
+  # !ema_disable_low
+
+!lp_gtf_or_rib_rp_low =>
+    !gtf_low
+  # !rib_low
+
+!lp_ind_or_rif_rp_low =>
+    !ind_low
+  # !rif_low
+
+!lp_la_or_tp3_rp_low =>
+    tp3
+  # load_addr
+
+!lp_la_or_tp4_and_ld_ctl_rp_low =>
+    load_addr
+  # load_cntl & tp4
+
+!md04 =>
+    io_pause
+  # md04_low
+
+!md05 =>
+    io_pause
+  # md05_low
+
+!md06 =>
+    md06_low
+  # io_pause
+
+!md07 =>
+    io_pause
+  # md07_low
+
+!md08 =>
+    io_pause
+  # md08_low
+
+!md11 =>
+    io_pause
+  # md11_low
+
+myc1 =>
+    !rdf_low
+  # !rif_low
+  # !rib_low
+
+n_t_110x =>
+    !d_in_low
+  # !rmf_low
+  # !cdf_low
+
+n_t_11x =>
+    !f_set_low & load_cntl
+  # !df_enable
+
+n_t_120x =>
+    d_in_low
+  # data09_low
+
+n_t_122x =>
+    d_in_low
+  # data10_low
+
+n_t_124x =>
+    data11_low
+  # d_in_low
+
+n_t_126x =>
+    !md07 & sf4_l
+  # !md07 & rmf_low
+  # !rmf_low & sf4_l
+  # cdf_low & sf4_l
+  # cdf_low & rmf_low
+
+n_t_135x =>
+    !md08 & sf5_l
+  # !md08 & rmf_low
+  # !rmf_low & sf5_l
+  # cdf_low & sf5_l
+  # cdf_low & rmf_low
+
+n_t_13x =>
+    cint_low
+  # !tp3
+
+n_t_140x =>
+    !md06 & sf3_l
+  # !md06 & rmf_low
+  # !rmf_low & sf3_l
+  # cdf_low & sf3_l
+  # cdf_low & rmf_low
+
+n_t_141x =>
+    !d_in_low & !data11_low
+  # !rmf_low & !sf5_l
+  # !cdf_low & md08 & rmf_low
+
+n_t_142x =>
+    !rmf_low & !sf4_l
+  # !cdf_low & md07 & rmf_low
+  # !d_in_low & !data10_low
+
+n_t_143x =>
+    !rmf_low & !sf3_l
+  # !cdf_low & md06 & rmf_low
+  # !d_in_low & !data09_low
+
+!n_t_14x =>
+    !ext_ld_low & !tp2
+
+n_t_19x =>
+    !md10_low
+  # md09_low
+
+n_t_21x =>
+    !tp2
+  # !error
+
+n_t_23x =>
+    !ts_disable_low
+  # !initialize_low
+  # !cint_low & tp3
+  # !uint
+
+n_t_24x =>
+    rmf_low & rtf_low
+  # !tp3
+
+n_t_25x =>
+    d & jmp_or_jms & tp3
+  # !f_low & jmp_or_jms & md03_low & tp3
+  # !cuf_low & tp3
+  # !ibifdf_clr_low
+  # !int_inh
+
+n_t_28x =>
+    !d
+  # jmp_or_jms
+
+n_t_29x =>
+    !md09_low
+  # !md10_low
+
+n_t_40x =>
+    f_low
+  # !md03_low
+  # !jmp_or_jms
+
+n_t_43x =>
+    !load_cntl
+  # f_set_low
+
+n_t_44x =>
+    !jmp_or_jms
+  # !d
+
+!n_t_49x =>
+    !d & !f_set_low & load_cntl
+  # !f_set_low & jmp_or_jms & load_cntl
+  # !d & !df_enable
+  # !df_enable & jmp_or_jms
+
+n_t_50x =>
+    md11_low
+  # md10_low
+
+n_t_53x =>
+    cuf_low
+  # !tp3
+
+n_t_55x =>
+    md11
+  # !md10_low & !md11_low
+
+n_t_56x =>
+    !md10_low
+
+n_t_62x =>
+    !rtf_low
+  # !rmf_low
+
+n_t_66x =>
+    load_addr
+  # !cuf_low & tp3
+  # !ibifdf_clr_low
+
+!n_t_68x =>
+    !ext_ld_low & !key_ctl_low
+
+n_t_69x =>
+    !tp3
+  # suf_low
+
+!n_t_6x =>
+    !md02_low & md03_low
+
+n_t_71x =>
+    d & jmp_or_jms
+  # !f_low & jmp_or_jms & md03_low
+
+n_t_72x =>
+    !d & f_low
+  # !d & !md03_low
+  # !jmp_or_jms
+  # !tp3
+
+n_t_73x =>
+    !lp_d_in_or_cif_or_rmf_rp
+  # !tp3
+
+n_t_74x =>
+    suf_l
+  # rmf_low
+
+n_t_75x =>
+    !md06 & sf0_l
+  # !md06 & rmf_low
+  # !rmf_low & sf0_l
+  # cif_low & sf0_l
+  # cif_low & rmf_low
+
+n_t_76x =>
+    !md07 & sf1_l
+  # !md07 & rmf_low
+  # !rmf_low & sf1_l
+  # cif_low & sf1_l
+  # cif_low & rmf_low
+
+n_t_77x =>
+    !md08 & sf2_l
+  # !md08 & rmf_low
+  # !rmf_low & sf2_l
+  # cif_low & sf2_l
+  # cif_low & rmf_low
+
+n_t_78x =>
+    data05_low
+  # d_in_low
+
+n_t_79x =>
+    data06_low
+  # d_in_low
+
+n_t_80x =>
+    d_in_low
+  # data07_low
+
+n_t_81x =>
+    data08_low
+  # d_in_low
+
+n_t_82x =>
+    !d_in_low & !data07_low
+  # !rmf_low & !sf1_l
+  # !cif_low & md07 & rmf_low
+
+n_t_83x =>
+    !rmf_low & !sf0_l
+  # !cif_low & md06 & rmf_low
+  # !d_in_low & !data06_low
+
+n_t_84x =>
+    !d_in_low & !data08_low
+  # !rmf_low & !sf2_l
+  # !cif_low & md08 & rmf_low
+
+n_t_86x =>
+    !d_in_low
+  # !ib2
+
+n_t_87x =>
+    !d_in_low
+  # !ib1
+
+!n_t_8x =>
+    !md02_low & md09_low & md10_low
+
+n_t_93x =>
+    !ib0
+  # !d_in_low
+
+!n_t_9x =>
+    !md02_low & !md11_low
+
+!power_ok_low =>
+    ts1_low
+  # power_ok
+
+!rdf_low =>
+    iot010xxx1xx & !md06 & !md07 & md08
+
+renamed0 =>
+    d & jmp_or_jms
+  # !d_in_low
+  # !f_low & jmp_or_jms & md03_low
+
+!rib_low =>
+    iot010xxx1xx & !md06 & md07 & md08
+
+!rif_low =>
+    iot010xxx1xx & !md06 & md07 & !md08
+
+!rmf_low =>
+    iot010xxx1xx & md06 & !md07 & !md08
+
+rtf_low =>
+    !md11
+  # !iot000000xxx
+  # !md10_low
+  # md09_low
+
+!sf0_l.d  =>
+    !ib0 & int_in_prog_mams_ld_ctl
+  # !d_in_low & int_in_prog_mams_ld_ctl
+  # !int_in_prog_mams_ld_ctl & sf0_l
+
+sf0_l.ar  =>
+    1 
+
+sf0_l.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+!sf1_l.d  =>
+    !d_in_low & int_in_prog_mams_ld_ctl
+  # !ib1 & int_in_prog_mams_ld_ctl
+  # !int_in_prog_mams_ld_ctl & sf1_l
+
+sf1_l.ar  =>
+    1 
+
+sf1_l.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+!sf2_l.d  =>
+    !d_in_low & int_in_prog_mams_ld_ctl
+  # !ib2 & int_in_prog_mams_ld_ctl
+  # !int_in_prog_mams_ld_ctl & sf2_l
+
+sf2_l.ar  =>
+    1 
+
+sf2_l.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+!sf3_l.d  =>
+    !df0 & int_in_prog_mams_ld_ctl
+  # !int_in_prog_mams_ld_ctl & sf3_l
+
+sf3_l.ar  =>
+    1 
+
+sf3_l.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+!sf4_l.d  =>
+    !df1 & int_in_prog_mams_ld_ctl
+  # !int_in_prog_mams_ld_ctl & sf4_l
+
+sf4_l.ar  =>
+    1 
+
+sf4_l.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+!sf5_l.d  =>
+    !df2 & int_in_prog_mams_ld_ctl
+  # !int_in_prog_mams_ld_ctl & sf5_l
+
+sf5_l.ar  =>
+    1 
+
+sf5_l.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+!sint_low =>
+    iot010xxx1xx & md06 & !md07 & md08
+
+!skip_low =>
+    !sint_low & uint
+
+skip_low.oe  =>
+    !sint_low & uint
+
+!suf_l.d  =>
+    int_in_prog_mams_ld_ctl & !tp_ba1
+  # !int_in_prog_mams_ld_ctl & suf_l
+
+suf_l.ar  =>
+    1 
+
+suf_l.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+!suf_low =>
+    iot010xxx1xx & md06 & md07 & md08
+
+tp_aa1 =>
+    d_in_low & ib1
+  # !d_in_low & !data07_low
+
+tp_ab1 =>
+    d_in_low & ib2
+  # !d_in_low & !data08_low
+
+!tp_ba1 =>
+    !ts_disable_low
+  # !d_in_low
+  # !db
+
+tp_bb1 =>
+    d_in_low & ib0
+  # !d_in_low & !data06_low
+
+uf.d  =>
+    renamed0 & tp_ba1
+  # !renamed0 & uf
+
+uf.ar  =>
+    !ibifdf_clr_low
+
+uf.ck  =>
+    lp_la_or_tp4_and_ld_ctl_rp_low
+
+uint =>
+    cint_low & initialize_low & ts_disable_low & uint
+  # initialize_low & !tp3 & ts_disable_low & uint
+  # error & tp2
+
+!user_mode_low =>
+    uf
+
+user_mode_low.oe  =>
+    uf
+
+%END

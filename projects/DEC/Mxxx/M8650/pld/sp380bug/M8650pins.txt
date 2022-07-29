@@ -1,0 +1,1363 @@
+Pinlist
+
+Exported from M8650D+eco.sch at 10/16/2021 6:10:53 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+A        1        1          pas      N$59
+         2        2          pas      N$74
+         3        3          pas      N$3
+         4        4          pas      MD04
+
+B        1        1          pas      N$45
+         2        2          pas      N$50
+         3        3          pas      N$32
+         4        4          pas      MD03
+
+C        1        1          pas      N$93
+         2        2          pas      N$96
+         3        3          pas      N$95
+         4        4          pas      MD08
+
+C1       1        1          pas      VCC
+         2        2          pas      GND
+
+C2       1        1          pas      VCC
+         2        2          pas      GND
+
+C3       1        1          pas      VCC
+         2        2          pas      GND
+
+C4       1        1          pas      VCC
+         2        2          pas      GND
+
+C5       1        1          pas      VCC
+         2        2          pas      GND
+
+C6       1        1          pas      VCC
+         2        2          pas      GND
+
+C7       1        1          pas      VCC
+         2        2          pas      GND
+
+C8       1        1          pas      VCC
+         2        2          pas      GND
+
+C9       1        1          pas      VCC
+         2        2          pas      GND
+
+C10      1        1          pas      VCC
+         2        2          pas      GND
+
+C11      1        1          pas      VCC
+         2        2          pas      GND
+
+C12      1        1          pas      VCC
+         2        2          pas      GND
+
+C13      1        1          pas      VCC
+         2        2          pas      GND
+
+C14      1        1          pas      VCC
+         2        2          pas      GND
+
+C15      1        1          pas      VCC
+         2        2          pas      GND
+
+C16      1        1          pas      VCC
+         2        2          pas      GND
+
+C17      1        1          pas      VCC
+         2        2          pas      GND
+
+C18      1        1          pas      VCC
+         2        2          pas      GND
+
+C19      1        1          pas      VCC
+         2        2          pas      GND
+
+C20      1        1          pas      VCC
+         2        2          pas      GND
+
+C21      1        1          pas      VCC
+         2        2          pas      GND
+
+C22      1        1          pas      VCC
+         2        2          pas      GND
+
+C23      1        1          pas      VCC
+         2        2          pas      GND
+
+C24      1        1          pas      VCC
+         2        2          pas      GND
+
+C25      1        1          pas      VCC
+         2        2          pas      GND
+
+C26      1        1          pas      VCC
+         2        2          pas      GND
+
+C27      1        1          pas      VCC
+         2        2          pas      GND
+
+C28      1        1          pas      VCC
+         2        2          pas      GND
+
+C29      1        1          pas      VCC
+         2        2          pas      GND
+
+C30      1        1          pas      VCC
+         2        2          pas      GND
+
+C31      1        1          pas      VCC
+         2        2          pas      GND
+
+C32      1        1          pas      +12V
+         2        2          pas      GND
+
+C33      1        1          pas      VCC
+         2        2          pas      GND
+
+C34      1        1          pas      VCC
+         2        2          pas      GND
+
+C35      1        1          pas      VCC
+         2        2          pas      GND
+
+C36      1        1          pas      VCC
+         2        2          pas      GND
+
+C37      1        1          pas      VCC
+         2        2          pas      GND
+
+C38      1        1          pas      VCC
+         2        2          pas      GND
+
+C39      1        1          pas      VCC
+         2        2          pas      GND
+
+C40      1        1          pas      VCC
+         2        2          pas      GND
+
+C41      1        1          pas      VCC
+         2        2          pas      GND
+
+C42      1        1          pas      VCC
+         2        2          pas      GND
+
+C43      1        1          pas      VCC
+         2        2          pas      GND
+
+C44      1        1          pas      VCC
+         2        2          pas      GND
+
+C45      1        1          pas      VCC
+         2        2          pas      GND
+
+C46      1        1          pas      VCC
+         2        2          pas      GND
+
+C47      1        1          pas      VCC
+         2        2          pas      GND
+
+C48      1        1          pas      VCC
+         2        2          pas      GND
+
+C49      1        1          pas      +3V3
+         2        2          pas      GND
+
+C50      1        1          pas      +3V3
+         2        2          pas      GND
+
+C51      +        +          pas      VCC
+         -        -          pas      GND
+
+C52      +        +          pas      VCC
+         -        -          pas      GND
+
+C53      +        +          pas      VCC
+         -        -          pas      GND
+
+C54      +        +          pas      +15V
+         -        -          pas      GND
+
+C55      +        +          pas      GND
+         -        -          pas      -15V
+
+C56      +        +          pas      VCC
+         -        -          pas      GND
+
+C57      1        1          pas      VCC
+         2        2          pas      GND
+
+C58      1        1          pas      N$109
+         2        2          pas      N$64
+
+C59      1        1          pas      N$109
+         2        2          pas      N$148
+
+C60      1        1          pas      N$148
+         2        2          pas      GND
+
+C61      1        1          pas      N$148
+         2        2          pas      N$149
+
+C62      1        1          pas      READER_RUN+
+         2        2          pas      GND
+
+C63      1        1          pas      N$129
+         2        2          pas      N$73
+
+C64      1        1          pas      RX_20MA+
+         2        2          pas      RX_20MA-
+
+C65      1        1          pas      N$128
+         2        2          pas      RX20MA_DATA
+
+C66      +        +          pas      N$123
+         -        -          pas      GND
+
+C67      1        1          pas      N$64
+         2        2          pas      GND
+
+D        1        1          pas      N$92
+         2        2          pas      N$90
+         3        3          pas      N$58
+         4        4          pas      MD07
+
+D1       A        A          pas      N$151
+         C        C          pas      GND
+
+D2       A        A          pas      N$31
+         C        C          pas      GND
+
+D3       A        A          pas      N$121
+         C        C          pas      N$31
+
+D4       A        A          pas      N$120
+         C        C          pas      N$121
+
+D5       A        A          pas      READER_RUN+
+         C        C          pas      GND
+
+D6       A        A          pas      -15V
+         C        C          pas      TX_20MA+
+
+D7       A        A          pas      N$123
+         C        C          pas      VCC
+
+D8       A        A          pas      GND
+         C        C          pas      N$123
+
+D9       A        A          pas      N$73
+         C        C          pas      TX_20MA+
+
+D10      A        A          pas      +15V
+         C        C          pas      N$125
+
+D11      A        A          pas      N$125
+         C        C          pas      N$127
+
+D12      A        A          pas      N$127
+         C        C          pas      +12V
+
+D13      A        A          pas      N$79
+         C        C          pas      -15V
+
+D14      A        A          pas      N$122
+         C        C          pas      N$79
+
+D15      A        A          pas      -12V
+         C        C          pas      N$122
+
+DL1      1        1          pas      !TX_DIV
+         2        2          pas      GND
+         3        3          pas      N$103
+
+E        1        1          pas      N$84
+         2        2          pas      N$89
+         3        3          pas      MD06
+         4        4          pas      N$86
+
+E1       1        GND        pwr      GND
+         2        O          out      N$59
+         3        O          out      N$93
+         4        I0         in       MD08
+         5        I1         in       B_PAUSE_L
+         6        I0         in       B_PAUSE_L
+         7        I1         in       MD04
+         8        VCC        pwr      VCC
+         9        I0         in       B_PAUSE_L
+         10       I1         in       MD03
+         11       I0         in       RX7
+         12       I1         in       RX7
+         13       O          out      N$26
+         14       O          out      N$45
+
+E2       1        O          oc       DATA07_L
+         2        I0         in       N$35
+         3        I1         in       DOKRS
+         4        O          oc       DATA06_L
+         5        I0         in       DOKRS
+         6        I1         in       N$36
+         7        GND        pwr      GND
+         8        I0         in       N$34
+         9        I1         in       DOKRS
+         10       O          oc       DATA05_L
+         11       I0         in       DOKRS
+         12       I1         in       RX7
+         13       O          oc       DATA04_L
+         14       VCC        pwr      VCC
+
+E3       1        CLR        in       +3V3
+         2        D          in       N$76
+         3        CLK        in       RX_RATE
+         4        PRE        in       +3V3
+         5        Q          out      RX_DIV
+         6        !Q         out      !RX_DIV
+         7        GND        pwr      GND
+         8        !Q         out      CK_PULSE
+         9        Q          out               *** unconnected ***
+         10       PRE        in       RX_RATE
+         11       CLK        in       N$82
+         12       D          in       GND
+         13       CLR        in       +3V3
+         14       VCC        pwr      VCC
+
+E4       1        CLR        in       RX_LAST
+         2        D          in       !RX_DIV2
+         3        CLK        in       !RX_DIV
+         4        PRE        in       +3V3
+         5        Q          out               *** unconnected ***
+         6        !Q         out      !RX_DIV2
+         7        GND        pwr      GND
+         8        !Q         out      !RX_DIV4
+         9        Q          out               *** unconnected ***
+         10       PRE        in       +3V3
+         11       CLK        in       !RX_DIV2
+         12       D          in       !RX_DIV4
+         13       CLR        in       RX_LAST
+         14       VCC        pwr      VCC
+
+E5       1        CKB        in       N$155
+         2        R0(1)      in       GND
+         3        R0(2)      in       GND
+         5        VCC        pwr      VCC
+         8        QC         out               *** unconnected ***
+         9        QB         out               *** unconnected ***
+         10       GND        pwr      GND
+         11       QD         out      BD2400
+         12       QA         out      N$155
+         14       CKA        in       N$154
+
+E6       1        R          in       +3V3
+         2        I1         in       +3V3
+         3        I0         in       +3V3
+         4        D          in       N$44
+         5        Q0         out      RX7
+         6        C          in       N$41
+         7        Q1         out      N$34
+         8        GND        pwr      GND
+         9        Q2         out      N$36
+         10       L          in       +3V3
+         11       Q3         out      N$35
+         12       Q4         out               *** unconnected ***
+         13       S          in       !P_PULSE
+         14       I3         in       +3V3
+         15       I2         in       +3V3
+         16       VCC        pwr      VCC
+
+E7       1        CLR        in       N$72
+         2        D          in       GND
+         3        CLK        in       N$67
+         4        PRE        in       !RX_AGAIN
+         5        Q          out      RX_ACTIVE
+         6        !Q         out      !RX_ACTIVE
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      !P_PULSE
+         10       PRE        in       !RX_DIV4
+         11       CLK        in       RX_ACTIVE
+         12       D          in       GND
+         13       CLR        in       +3V3
+         14       VCC        pwr      VCC
+
+E8       1        CLR        in       N$91
+         2        D          in       RX_BOT
+         3        CLK        in       CK_PULSE
+         4        PRE        in       +3V3
+         5        Q          out      LAST_UNIT
+         6        !Q         out      !LAST_UNIT
+         7        GND        pwr      GND
+         8        !Q         out      N$87
+         9        Q          out      RX_DIV8
+         10       PRE        in       +3V3
+         11       CLK        in       !RX_DIV4
+         12       D          in       N$87
+         13       CLR        in       RX_LAST
+         14       VCC        pwr      VCC
+
+E9       1        GND        pwr      GND
+         3        O          out      N$4
+         4        I0         in       N$165
+         5        I1         in       N$2
+         6        I2         in       N$86
+         8        VCC        pwr      VCC
+         9        I3         in       N$3
+         10       I4         in       N$96
+         11       I5         in       N$50
+         12       I6         in       N$90
+
+E10      1        R          in       +3V3
+         2        I1         in       +3V3
+         3        I0         in       +3V3
+         4        D          in       N$35
+         5        Q0         out      N$37
+         6        C          in       N$41
+         7        Q1         out      N$38
+         8        GND        pwr      GND
+         9        Q2         out      N$39
+         10       L          in       +3V3
+         11       Q3         out      N$40
+         12       Q4         out      RX_BOT
+         13       S          in       !P_PULSE
+         14       I3         in       +3V3
+         15       I2         in       +3V3
+         16       VCC        pwr      VCC
+
+E11      1        O          out      N$81
+         2        I0         in       !SPIKE_DET
+         3        I1         in       SERIAL_IN
+         4        O          out      N$41
+         5        I0         in       CK_PULSE
+         6        I1         in       N$42
+         7        GND        pwr      GND
+         8        I0         in       !P_PULSE
+         9        I1         in       !RX_DIV2
+         10       O          out      N$42
+         11       I0         in       !RX_ACTIVE8
+         12       I1         in       !RX_ACTIVE8
+         13       O          out      N$82
+         14       VCC        pwr      VCC
+
+E12      1        I0         in       RX_ACTIVE
+         2        I1         in       RX_DIV8
+         3        O          out      !RX_ACTIVE8
+         4        I0         in       !RX_ACTIVE
+         5        I1         in       RX_DIV8
+         6        O          out      N$91
+         7        GND        pwr      GND
+         8        O          out      N$76
+         9        I0         in       RX_DIV
+         10       I1         in       !RX_LAST
+         11       O          out      !RX_LAST
+         12       I0         in       !LAST_UNIT
+         13       I1         in       !RX_ACTIVE
+         14       VCC        pwr      VCC
+
+E13      1        CKB        in       BD1200
+         2        R0(1)      in       GND
+         3        R0(2)      in       GND
+         5        VCC        pwr      VCC
+         8        QC         out      BD300
+         9        QB         out      BD600
+         10       GND        pwr      GND
+         11       QD         out      BD150
+         12       QA         out      BD1200
+         14       CKA        in       BD2400
+
+E14      1        GND        pwr      GND
+         3        O          out      N$5
+         4        I0         in       N$84
+         5        I1         in       N$1
+         6        I2         in       N$58
+         8        VCC        pwr      VCC
+         9        I3         in       N$32
+         10       I4         in       N$95
+         11       I5         in       N$2
+         12       I6         in       N$74
+
+E15      1        O          oc       DATA11_L
+         2        I0         in       N$40
+         3        I1         in       DOKRS
+         4        O          oc       DATA10_L
+         5        I0         in       DOKRS
+         6        I1         in       N$39
+         7        GND        pwr      GND
+         8        I0         in       N$38
+         9        I1         in       DOKRS
+         10       O          oc       DATA09_L
+         11       I0         in       DOKRS
+         12       I1         in       N$37
+         13       O          oc       DATA08_L
+         14       VCC        pwr      VCC
+
+E16      1        CLR        in       +3V3
+         2        D          in       N$94
+         3        CLK        in       TX_RATE
+         4        PRE        in       !INIT
+         5        Q          out      TX_DIV
+         6        !Q         out      !TX_DIV
+         7        GND        pwr      GND
+         8        !Q         out      !SPIKE_DET
+         9        Q          out               *** unconnected ***
+         10       PRE        in       !RX_AGAIN
+         11       CLK        in       !RX_ACTIVE8
+         12       D          in       GND
+         13       CLR        in       !INIT
+         14       VCC        pwr      VCC
+
+E17      1        I          in       EIA_IN
+         2        RC         in       N$77
+         3        O          out      N$83
+         4        I          in                ***   unused    ***
+         5        RC         in                ***   unused    ***
+         6        O          out               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out               ***   unused    ***
+         9        RC         in                ***   unused    ***
+         10       I          in                ***   unused    ***
+         11       O          out               ***   unused    ***
+         12       RC         in                ***   unused    ***
+         13       I          in                ***   unused    ***
+         14       VCC        pwr      VCC
+
+E18      1        CKB        in       RX_RATE
+         2        R0(1)      in       GND
+         3        R0(2)      in       GND
+         5        VCC        pwr      VCC
+         8        QC         out               *** unconnected ***
+         9        QB         out               *** unconnected ***
+         10       GND        pwr      GND
+         11       QD         out      N$162
+         12       QA         out      RX_RATE
+         14       CKA        in       TESTP4
+
+E19      1        I0         in       SERIAL_IN
+         2        I1         in       N$78
+         3        I0         in       N$68
+         4        I1         in       !TX_DIV
+         5        I2         in       N$69
+         6        O          out      TX8
+         7        GND        pwr      GND
+         8        O          out      TX7
+         9        I0         in       N$69
+         10       I1         in       N$69
+         11       I2         in       N$68
+         12       O          out      !RX_AGAIN
+         13       I2         in       RX_RATE
+         14       VCC        pwr      VCC
+
+E20      1        CLR        in       +3V3
+         2        D          in       N$108
+         3        CLK        in       TX_RATE
+         4        PRE        in       INIT_L
+         5        Q          out      !TX_ACTIVE
+         6        !Q         out      TX_ACTIVE
+         7        GND        pwr      GND
+         8        !Q         out      !START
+         9        Q          out               *** unconnected ***
+         10       PRE        in       +3V3
+         11       CLK        in       TX_ACTIVE
+         12       D          in       +3V3
+         13       CLR        in       TX_RATE
+         14       VCC        pwr      VCC
+
+E21      1        I          in       N$70
+         2        O          out      N$67
+         3        I          in       !TX_SHIFT
+         4        O          out      N$102
+         5        I          in       TX_RATE
+         6        O          out      N$145
+         7        GND        pwr      GND
+         8        O          out      N$44
+         9        I          in       SERIAL_IN
+         10       O          out      N$78
+         11       I          in       !RX_LAST
+         12       O          out      RX_DATA
+         13       I          in       N$83
+         14       VCC        pwr      VCC
+
+E22      1        B          in       GND
+         2        QB         out               *** unconnected ***
+         3        QA         out               *** unconnected ***
+         4        DN         in       +3V3
+         5        UP         in       N$152
+         6        QC         out               *** unconnected ***
+         7        QD         out      N$154
+         8        GND        pwr      GND
+         9        D          in       GND
+         10       C          in       GND
+         11       LD         in       +3V3
+         12       CO         out               *** unconnected ***
+         13       BO         out               *** unconnected ***
+         14       CLR        in       GND
+         15       A          in       GND
+         16       VCC        pwr      VCC
+
+E23      1        GND        pwr      GND
+         2        O          out      N$92
+         3        O          out      SELECTED_L
+         4        I0         in       N$4
+         5        I1         in       N$5
+         6        I0         in       B_PAUSE_L
+         7        I1         in       MD07
+         8        VCC        pwr      VCC
+         9        I0         in       MD05
+         10       I1         in       B_PAUSE_L
+         11       I0         in       B_PAUSE_L
+         12       I1         in       MD06
+         13       O          out      N$89
+         14       O          out      N$161
+
+E24      1        I0         in       N$56
+         2        I1         in       ENAB
+         4        I2         in       N$60
+         5        I3         in       N$62
+         6        O          out      N$69
+         7        GND        pwr      GND
+         8        O          out      N$68
+         9        I0         in       N$63
+         10       I1         in       N$65
+         12       I2         in       N$66
+         13       I3         in       N$61
+         14       VCC        pwr      VCC
+
+E25      1        I4         in       STP_MARK
+         2        I1         in       !TP3
+         3        I2         in       DOTPC
+         4        I3         in       TX_DIV
+         5        I4         in       N$103
+         6        O          out      !TX_SHIFT
+         7        GND        pwr      GND
+         8        O          out      N$108
+         9        I2         in       TX_ACTIVE
+         10       I1         in       TX8
+         11       I6         pas               *** unconnected ***
+         12       I5         pas               *** unconnected ***
+         13       I3         in       ENAB
+         14       VCC        pwr      VCC
+
+E26      1        R          in       TX_DIV
+         2        I1         in                *** unconnected ***
+         3        I0         in                *** unconnected ***
+         4        D          in       !TX_ACTIVE
+         5        Q0         out      N$146
+         6        C          in       N$145
+         7        Q1         out               *** unconnected ***
+         8        GND        pwr      GND
+         9        Q2         out      N$119
+         10       L          in       +3V3
+         11       Q3         out               *** unconnected ***
+         12       Q4         out               *** unconnected ***
+         13       S          in       +3V3
+         14       I3         in                *** unconnected ***
+         15       I2         in                *** unconnected ***
+         16       VCC        pwr      VCC
+
+E27      1        GND        pwr      GND
+         2        O          out      N$46
+         3        O          out      N$47
+         4        I0         in       DATA05_L
+         5        I1         in       !DOTPC
+         6        I0         in       !DOTPC
+         7        I1         in       DATA04_L
+         8        VCC        pwr      VCC
+         9        I0         in       DATA07_L
+         10       I1         in       !DOTPC
+         11       I0         in       !DOTPC
+         12       I1         in       DATA06_L
+         13       O          out      N$48
+         14       O          out      N$49
+
+E28      1        R          in       INIT_L
+         2        I1         in       N$47
+         3        I0         in       N$46
+         4        D          in       ENAB
+         5        Q0         out      N$60
+         6        C          in       !TX_SHIFT
+         7        Q1         out      N$62
+         8        GND        pwr      GND
+         9        Q2         out      N$56
+         10       L          in       +3V3
+         11       Q3         out      N$61
+         12       Q4         out               *** unconnected ***
+         13       S          in       !DOTPC
+         14       I3         in       N$49
+         15       I2         in       N$48
+         16       VCC        pwr      VCC
+
+E29      1        CLR        in       !START
+         2        D          in       TX_DATA
+         3        CLK        in       TX_DIV
+         4        PRE        in       TX_ACTIVE
+         5        Q          out      LINE
+         6        !Q         out      !LINE
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      ENAB
+         10       PRE        in       +3V3
+         11       CLK        in       N$102
+         12       D          in       DOTPC
+         13       CLR        in       !INIT
+         14       VCC        pwr      VCC
+
+E30      1        GND        pwr      GND
+         2        O          out      N$52
+         3        O          out      N$53
+         4        I0         in       DATA09_L
+         5        I1         in       !DOTPC
+         6        I0         in       !DOTPC
+         7        I1         in       DATA08_L
+         8        VCC        pwr      VCC
+         9        I0         in       DATA11_L
+         10       I1         in       !DOTPC
+         11       I0         in       !DOTPC
+         12       I1         in       DATA10_L
+         13       O          out      N$54
+         14       O          out      N$55
+
+E31      1        R          in       INIT_L
+         2        I1         in       N$53
+         3        I0         in       N$52
+         4        D          in       N$61
+         5        Q0         out      N$63
+         6        C          in       !TX_SHIFT
+         7        Q1         out      N$65
+         8        GND        pwr      GND
+         9        Q2         out      N$66
+         10       L          in       +3V3
+         11       Q3         out      TX_DATA
+         12       Q4         out               *** unconnected ***
+         13       S          in       !DOTPC
+         14       I3         in       N$55
+         15       I2         in       N$54
+         16       VCC        pwr      VCC
+
+E32      1        -12V       pwr      -12V
+         2        I          in       LINE
+         3        O          out      EIA_OUT
+         4        I0         in       GND
+         5        I1         in       GND
+         6        O          out      RTSDTR
+         7        GND        pwr      GND
+         8        O          out               ***   unused    ***
+         9        I0         in                ***   unused    ***
+         10       I1         in                ***   unused    ***
+         11       O          out               ***   unused    ***
+         12       I0         in                ***   unused    ***
+         13       I1         in                ***   unused    ***
+         14       +12V       pwr      +12V
+
+E33      1        O          oc       C0_L
+         2        I0         in       DOKCC
+         3        I1         in       DOKCC
+         4        O          oc       C1_L
+         5        I0         in       DOKRS
+         6        I1         in       DOKRS
+         7        GND        pwr      GND
+         8        I0         in       N$5
+         9        I1         in       N$5
+         10       O          oc       TX_SEL_L
+         11       I0         in       DOKCC
+         12       I1         in       DOKCC
+         13       O          oc       C1_L
+         14       VCC        pwr      VCC
+
+E34      1        GND        pwr      GND
+         2        O          out      N$8
+         3        O          out      N$2
+         4        I0         in       GND
+         5        I1         in       B_PAUSE_L
+         6        I0         in       N$2
+         7        I1         in       DATA11_L
+         8        VCC        pwr      VCC
+         9        I0         in       TP3
+         10       I1         in       GND
+         11       I0         in       GND
+         12       I1         in       IO_PAUSE_L
+         13       O          out      B_PAUSE_L
+         14       O          out      !TP3
+
+E35      1        I0         in       DOTPC
+         2        I1         in       DOTPC
+         3        O          out      !DOTPC
+         4        I0         in       !CKKCC
+         5        I1         in       INIT_L
+         6        O          out      N$29
+         7        GND        pwr      GND
+         8        O          out      N$94
+         9        I0         in       TX_DIV
+         10       I1         in       TX_ACTIVE
+         11       O          out      INIT_L
+         12       I0         in       N$14
+         13       I1         in       N$14
+         14       VCC        pwr      VCC
+
+E36      1        GND        pwr      GND
+         2        O          out      RX20MA_DATA
+         3        O          out      RX_LAST
+         4        I0         in       !RX_LAST
+         5        I1         in       !RX_LAST
+         6        I0         in       N$128
+         7        I1         in       N$128
+         8        VCC        pwr      VCC
+         9        I0         in       INITIALIZE
+         10       I1         in       GND
+         11       I0         in       GND
+         12       I1         in       POWER_OK
+         13       O          out      N$72
+         14       O          out      N$14
+
+E37      1        O          oc       INTERNAL_IO_L
+         2        I0         in       N$5
+         3        I1         in       N$5
+         4        O          oc       INTERNAL_IO_L
+         5        I0         in       N$4
+         6        I1         in       N$4
+         7        GND        pwr      GND
+         8        I0         in       N$22
+         9        I1         in       N$22
+         10       O          oc       SKIP_L
+         11       I0         in       FLGS
+         12       I1         in       INT_ENAB
+         13       O          oc       INT_RQST_L
+         14       VCC        pwr      VCC
+
+E38      1        CLR        in       !CKTFL
+         2        D          in       TX7
+         3        CLK        in       TX_DIV
+         4        PRE        in       N$17
+         5        Q          out      !TFLG
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out      INT_ENAB
+         9        Q          out      !INT_ENAB
+         10       PRE        in       +3V3
+         11       CLK        in       CKKIE
+         12       D          in       N$8
+         13       CLR        in       INIT_L
+         14       VCC        pwr      VCC
+
+E39      1        I4         in       !RX_ACTIVE8
+         2        I1         in       N$19
+         3        I2         in       FLGS
+         4        I3         in       TKSKP
+         5        I4         in       TKSKP
+         6        O          out      N$20
+         7        GND        pwr      GND
+         8        O          out      N$70
+         9        I2         in       N$81
+         10       I1         in       CK_PULSE
+         11       I6         pas               *** unconnected ***
+         12       I5         pas               *** unconnected ***
+         13       I3         in       LAST_UNIT
+         14       VCC        pwr      VCC
+
+E40      1        C          in       N$23
+         2        D          in       TX_SEL_L
+         3        5          out      !TSK
+         4        6          out      !TLS
+         5        7          out               *** unconnected ***
+         6        8          out               *** unconnected ***
+         7        9          out               *** unconnected ***
+         8        GND        pwr      GND
+         9        4          out      !TPC
+         10       3          out               *** unconnected ***
+         11       2          out      !TCF
+         12       1          out      !TSF
+         13       0          out      !TFL
+         14       B          in       N$21
+         15       A          in       N$25
+         16       VCC        pwr      VCC
+
+E41      1        I0         in       INIT_L
+         2        I1         in       CKTCF
+         3        O          out      N$16
+         4        I0         in       !TLS
+         5        I1         in       !TPC
+         6        O          out      DOTPC
+         7        GND        pwr      GND
+         8        O          out      DOTCF
+         9        I0         in       !TLS
+         10       I1         in       !TCF
+         11       O          out      CKTCF
+         12       I0         in       DOTCF
+         13       I1         in       !TP3
+         14       VCC        pwr      VCC
+
+E42      1        I          in       CKTFL
+         2        O          out      !CKTFL
+         3        I          in       !TP3
+         4        O          out      BTP3
+         5        I          in       N$16
+         6        O          out      N$17
+         7        GND        pwr      GND
+         8        O          out      N$22
+         9        I          in       N$20
+         10       O          out      TKSKP
+         11       I          in       N$10
+         12       O          out      RX_SEL_L
+         13       I          in       N$4
+         14       VCC        pwr      VCC
+
+E43      1        C          in       N$23
+         2        D          in       RX_SEL_L
+         3        5          out      !KIE
+         4        6          out      !KRB
+         5        7          out               *** unconnected ***
+         6        8          out               *** unconnected ***
+         7        9          out               *** unconnected ***
+         8        GND        pwr      GND
+         9        4          out      !KRS
+         10       3          out               *** unconnected ***
+         11       2          out      !KCC
+         12       1          out      !KSF
+         13       0          out      !KCF
+         14       B          in       N$21
+         15       A          in       N$25
+         16       VCC        pwr      VCC
+
+E44      1        I0         in       !RFLG
+         2        I1         in       !TFLG
+         3        O          out      FLGS
+         4        I0         in       !KRB
+         5        I1         in       !KRS
+         6        O          out      DOKRS
+         7        GND        pwr      GND
+         8        O          out      DOKCC
+         9        I0         in       !KRB
+         10       I1         in       !KCC
+         11       O          out      !CKKCC
+         12       I0         in       DOKCC
+         13       I1         in       !TP3
+         14       VCC        pwr      VCC
+
+E45      1        O          out      CKTFL
+         2        I0         in       !TFL
+         3        I1         in       BTP3
+         4        O          out      N$10
+         5        I0         in       KSKP
+         6        I1         in       TSKP
+         7        GND        pwr      GND
+         8        I0         in       !TSK
+         9        I1         in       !INT_ENAB
+         10       O          out      N$19
+         11       I0         in       !TFLG
+         12       I1         in       !TSF
+         13       O          out      TSKP
+         14       VCC        pwr      VCC
+
+E46      1        GND        pwr      GND
+         2        O          out      N$23
+         3        O          out      N$21
+         4        I0         in       MD10
+         5        I1         in       SELECTED_L
+         6        I0         in       SELECTED_L
+         7        I1         in       MD09
+         8        VCC        pwr      VCC
+         9        I0         in       MD11
+         10       I1         in       SELECTED_L
+         11       I0         in       N$14
+         12       I1         in       N$14
+         13       O          out      !INIT
+         14       O          out      N$25
+
+E47      1        O          out      N$28
+         2        I0         in       N$29
+         3        I1         in       CKKCF
+         4        O          out      CKKCF
+         5        I0         in       BTP3
+         6        I1         in       !KCF
+         7        GND        pwr      GND
+         8        I0         in       !KIE
+         9        I1         in       BTP3
+         10       O          out      CKKIE
+         11       I0         in       !KSF
+         12       I1         in       !RFLG
+         13       O          out      KSKP
+         14       VCC        pwr      VCC
+
+E48      1        CLR        in       N$28
+         2        D          in       RX_BOT
+         3        CLK        in       CK_PULSE
+         4        PRE        in       +3V3
+         5        Q          out               *** unconnected ***
+         6        !Q         out      !RFLG
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      !R_RUN
+         10       PRE        in       !INIT
+         11       CLK        in       N$26
+         12       D          in       +3V3
+         13       CLR        in       !CKKCC
+         14       VCC        pwr      VCC
+
+F        1        1          pas      N$165
+         2        2          pas      N$161
+         3        3          pas      MD05
+         4        4          pas      N$1
+
+G12      1        1          pas      BD1200
+         2        2          pas      TESTP4
+
+G34      1        1          pas      BD600
+         2        2          pas      TESTP4
+
+G56      1        1          pas      BD300
+         2        2          pas      TESTP4
+
+G78      1        1          pas      BD150
+         2        2          pas      TESTP4
+
+G910     1        1          pas      BD2400
+         2        2          pas      TESTP4
+
+H12      1        1          pas      N$162
+         2        2          pas      TX_RATE
+
+H123     1        1          pas      N$162
+         2        2          pas      TX_RATE
+         3        3          pas      RX_RATE
+
+J1       A        1          io       GND
+         B        2          io       GND
+         C        3          io       GND
+         D        4          io                *** unconnected ***
+         E        5          io       SERIAL_IN
+         F        6          io       EIA_OUT
+         H        7          io       RX20MA_DATA
+         J        8          io       EIA_IN
+         K        9          io       RX_20MA+
+         L        10         io                *** unconnected ***
+         M        11         io       RX_DATA
+         N        12         io                *** unconnected ***
+         P        13         io                *** unconnected ***
+         R        14         io                *** unconnected ***
+         S        15         io       RX_20MA-
+         T        16         io                *** unconnected ***
+         U        17         io                *** unconnected ***
+         V        18         io       RTSDTR
+         W        19         io                *** unconnected ***
+         X        20         io                *** unconnected ***
+         Y        21         io                *** unconnected ***
+         Z        22         io                *** unconnected ***
+         AA       23         io       TX_20MA+
+         BB       24         io                *** unconnected ***
+         CC       25         io                *** unconnected ***
+         DD       26         io       RTSDTR
+         EE       27         io       READER_RUN-
+         FF       28         io                *** unconnected ***
+         HH       29         io                *** unconnected ***
+         JJ       30         io                *** unconnected ***
+         KK       31         io       TX_20MA-
+         LL       32         io                *** unconnected ***
+         MM       33         io                *** unconnected ***
+         NN       34         io                *** unconnected ***
+         PP       35         io       READER_RUN+
+         RR       36         io                *** unconnected ***
+         SS       37         io                *** unconnected ***
+         TT       38         io                *** unconnected ***
+         UU       39         io       GND
+         VV       40         io       GND
+
+J23      1        1          pas      N$119
+         2        2          pas      STP_MARK
+         3        3          pas      N$146
+
+JA12     1        1          pas      N$59
+         2        2          pas      N$74
+
+JA13     1        1          pas      N$3
+         2        2          pas      N$59
+
+JB12     1        1          pas      N$45
+         2        2          pas      N$50
+
+JB13     1        1          pas      N$32
+         2        2          pas      N$45
+
+JC13     1        1          pas      N$95
+         2        2          pas      N$93
+
+JC24     1        1          pas      MD08
+         2        2          pas      N$96
+
+JD13     1        1          pas      N$58
+         2        2          pas      N$92
+
+JD24     1        1          pas      MD07
+         2        2          pas      N$90
+
+JE13     1        1          pas      MD06
+         2        2          pas      N$84
+
+JE24     1        1          pas      N$86
+         2        2          pas      N$89
+
+JF12     1        1          pas      N$161
+         2        2          pas      N$165
+
+JF24     1        1          pas      N$1
+         2        2          pas      N$161
+
+JJ23     1        1          pas      N$119
+         2        2          pas      STP_MARK
+
+Q1       1        E          pas      N$148
+         2        B          pas      N$109
+         3        C          pas      VCC
+
+Q2       1        E          pas      N$120
+         2        B          pas      !R_RUN
+         3        C          pas      READER_RUN+
+
+Q3       1        E          pas      VCC
+         2        B          pas      N$129
+         3        C          pas      N$73
+
+R1       1        1          pas      +3V3
+         2        2          pas      VCC
+
+R2       1        1          pas      GND
+         2        2          pas      +3V3
+
+R3       1        1          pas      N$109
+         2        2          pas      VCC
+
+R4       1        1          pas      N$148
+         2        2          pas      N$149
+
+R5       1        1          pas      N$151
+         2        2          pas      N$150
+
+R6       1        1          pas      N$150
+         2        2          pas      N$152
+
+R7       1        1          pas      N$151
+         2        2          pas      VCC
+
+R8       1        1          pas      N$120
+         2        2          pas      VCC
+
+R9       1        1          pas      -15V
+         2        2          pas      READER_RUN-
+
+R10      1        1          pas      !DOTPC
+         2        2          pas      VCC
+
+R11      1        1          pas      -15V
+         2        2          pas      TX_20MA-
+
+R12      1        1          pas      -15V
+         2        2          pas      N$73
+
+R13      1        1          pas      !LINE
+         2        2          pas      N$129
+
+R14      1        1          pas      !LINE
+         2        2          pas      VCC
+
+R15      1        1          pas      !RX_LAST
+         2        2          pas      VCC
+
+R16      1        1          pas      RX_20MA+
+         2        2          pas      VCC
+
+R17      1        1          pas      -15V
+         2        2          pas      RX_20MA-
+
+R18      1        1          pas      N$123
+         2        2          pas      N$128
+
+R19      1        1          pas      N$128
+         2        2          pas      RX20MA_DATA
+
+R20      1        1          pas      N$103
+         2        2          pas      GND
+
+R21      1        1          pas      !TX_DIV
+         2        2          pas      VCC
+
+R22      1        1          pas      RX_20MA+
+         2        2          pas      N$123
+
+R23      1        1          pas      N$77
+         2        2          pas      -15V
+
+R24      1        1          pas      RX7
+         2        2          pas      VCC
+
+R25      1        1          pas      -15V
+         2        2          pas      TX_20MA+
+
+R26      1        1          pas      TX_SEL_L
+         2        2          pas      VCC
+
+T1       1        1          pas      N$149
+         2        2          pas      N$11
+         3        3          pas      N$11
+         4        4          pas      GND
+         5        5          pas      N$149
+         6        6          pas      N$9
+         7        7          pas      N$9
+         8        8          pas      GND
+         9        9          pas      N$151
+         10       10         pas      N$15
+         11       11         pas      N$15
+         12       12         pas      N$13
+         13       13         pas      N$13
+         14       14         pas      N$12
+         15       15         pas      N$12
+         16       16         pas      N$150
+
+U$2      AA1      1          io       TESTP4
+         AA2      1          io       VCC
+         AB1      1          io       RX_ACTIVE
+         AB2      1          io                ***   unused    ***
+         AC1      1          io                ***   unused    ***
+         AC2      1          io       GND
+         AD1      1          io                ***   unused    ***
+         AD2      1          io                ***   unused    ***
+         AE1      1          io                ***   unused    ***
+         AE2      1          io                ***   unused    ***
+         AF1      1          io       GND
+         AF2      1          io       GND
+         AH1      1          io                ***   unused    ***
+         AH2      1          io                ***   unused    ***
+         AJ1      1          io                ***   unused    ***
+         AJ2      1          io                ***   unused    ***
+         AK1      1          io                ***   unused    ***
+         AK2      1          io                ***   unused    ***
+         AL1      1          io                ***   unused    ***
+         AL2      1          io                ***   unused    ***
+         AM1      1          io                ***   unused    ***
+         AM2      1          io                ***   unused    ***
+         AN1      1          io       GND
+         AN2      1          io       GND
+         AP1      1          io       MD03
+         AP2      1          io                ***   unused    ***
+         AR1      1          io                ***   unused    ***
+         AR2      1          io                ***   unused    ***
+         AS1      1          io                ***   unused    ***
+         AS2      1          io                ***   unused    ***
+         AT1      1          io       GND
+         AT2      1          io       GND
+         AU1      1          io                ***   unused    ***
+         AU2      1          io                ***   unused    ***
+         AV1      1          io                ***   unused    ***
+         AV2      1          io                ***   unused    ***
+         BA1      1          io       TX_ACTIVE
+         BA2      1          io       VCC
+         BB1      1          io       RX_20MA+
+         BB2      1          io                ***   unused    ***
+         BC1      1          io       GND
+         BC2      1          io       GND
+         BD1      1          io                ***   unused    ***
+         BD2      1          io                ***   unused    ***
+         BE1      1          io                ***   unused    ***
+         BE2      1          io                ***   unused    ***
+         BF1      1          io       GND
+         BF2      1          io       GND
+         BH1      1          io                ***   unused    ***
+         BH2      1          io                ***   unused    ***
+         BJ1      1          io                ***   unused    ***
+         BJ2      1          io                ***   unused    ***
+         BK1      1          io       MD04
+         BK2      1          io                ***   unused    ***
+         BL1      1          io       MD05
+         BL2      1          io                ***   unused    ***
+         BM1      1          io       MD06
+         BM2      1          io                ***   unused    ***
+         BN1      1          io       GND
+         BN2      1          io       GND
+         BP1      1          io       MD07
+         BP2      1          io                ***   unused    ***
+         BR1      1          io       DATA04_L
+         BR2      1          io                ***   unused    ***
+         BS1      1          io       DATA05_L
+         BS2      1          io                ***   unused    ***
+         BT1      1          io       GND
+         BT2      1          io       GND
+         BU1      1          io       DATA06_L
+         BU2      1          io                ***   unused    ***
+         BV1      1          io       DATA07_L
+         BV2      1          io       POWER_OK
+         CA1      1          io                ***   unused    ***
+         CA2      1          io       VCC
+         CB1      1          io       INT_ENAB
+         CB2      1          io                ***   unused    ***
+         CC1      1          io       GND
+         CC2      1          io       GND
+         CD1      1          io       IO_PAUSE_L
+         CD2      1          io                ***   unused    ***
+         CE1      1          io       C0_L
+         CE2      1          io                ***   unused    ***
+         CF1      1          io       GND
+         CF2      1          io       GND
+         CH1      1          io       C1_L
+         CH2      1          io       TP3
+         CJ1      1          io                ***   unused    ***
+         CJ2      1          io                ***   unused    ***
+         CK1      1          io                ***   unused    ***
+         CK2      1          io                ***   unused    ***
+         CL1      1          io       INTERNAL_IO_L
+         CL2      1          io                ***   unused    ***
+         CM1      1          io                ***   unused    ***
+         CM2      1          io                ***   unused    ***
+         CN1      1          io       GND
+         CN2      1          io       GND
+         CP1      1          io       INT_RQST_L
+         CP2      1          io                ***   unused    ***
+         CR1      1          io       INITIALIZE
+         CR2      1          io                ***   unused    ***
+         CS1      1          io       SKIP_L
+         CS2      1          io                ***   unused    ***
+         CT1      1          io       GND
+         CT2      1          io       GND
+         CU1      1          io                ***   unused    ***
+         CU2      1          io                ***   unused    ***
+         CV1      1          io                ***   unused    ***
+         CV2      1          io                ***   unused    ***
+         DA1      1          io       LINE
+         DA2      1          io       +15V
+         DB1      1          io       !R_RUN
+         DB2      1          io       -15V
+         DC1      1          io       GND
+         DC2      1          io       GND
+         DD1      1          io                ***   unused    ***
+         DD2      1          io                ***   unused    ***
+         DE1      1          io                ***   unused    ***
+         DE2      1          io                ***   unused    ***
+         DF1      1          io       GND
+         DF2      1          io       GND
+         DH1      1          io                ***   unused    ***
+         DH2      1          io                ***   unused    ***
+         DJ1      1          io                ***   unused    ***
+         DJ2      1          io                ***   unused    ***
+         DK1      1          io       MD08
+         DK2      1          io                ***   unused    ***
+         DL1      1          io       MD09
+         DL2      1          io                ***   unused    ***
+         DM1      1          io       MD10
+         DM2      1          io                ***   unused    ***
+         DN1      1          io       GND
+         DN2      1          io       GND
+         DP1      1          io       MD11
+         DP2      1          io                ***   unused    ***
+         DR1      1          io       DATA08_L
+         DR2      1          io                ***   unused    ***
+         DS1      1          io       DATA09_L
+         DS2      1          io                ***   unused    ***
+         DT1      1          io       GND
+         DT2      1          io       GND
+         DU1      1          io       DATA10_L
+         DU2      1          io                ***   unused    ***
+         DV1      1          io       DATA11_L
+         DV2      1          io                ***   unused    ***
+
+Y1       1        1          pas      N$64
+         2        2          pas      GND
+

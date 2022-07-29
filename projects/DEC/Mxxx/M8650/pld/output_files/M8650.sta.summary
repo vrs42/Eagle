@@ -1,0 +1,64 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'bd1200'
+Slack : -252.500
+TNS   : -2267.000
+
+Type  : Slow Model Setup 'sw1'
+Slack : -250.500
+TNS   : -2245.500
+
+Type  : Slow Model Setup 'clk'
+Slack : -250.000
+TNS   : -2253.000
+
+Type  : Slow Model Setup 'bd600'
+Slack : -243.500
+TNS   : -2194.500
+
+Type  : Slow Model Setup 'bd2400'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Slow Model Hold 'sw1'
+Slack : -120.000
+TNS   : -965.500
+
+Type  : Slow Model Hold 'bd600'
+Slack : -118.000
+TNS   : -948.000
+
+Type  : Slow Model Hold 'clk'
+Slack : -111.000
+TNS   : -888.000
+
+Type  : Slow Model Hold 'bd1200'
+Slack : -109.000
+TNS   : -876.000
+
+Type  : Slow Model Hold 'bd2400'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'sw1'
+Slack : -119.500
+TNS   : -12438.000
+
+Type  : Slow Model Minimum Pulse Width 'bd1200'
+Slack : -119.500
+TNS   : -8987.000
+
+Type  : Slow Model Minimum Pulse Width 'bd600'
+Slack : -119.500
+TNS   : -8987.000
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -119.500
+TNS   : -8985.000
+
+Type  : Slow Model Minimum Pulse Width 'bd2400'
+Slack : -5.500
+TNS   : -11.000
+

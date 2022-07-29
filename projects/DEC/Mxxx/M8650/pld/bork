@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+
+#
+# Find a number withing a percentage point that factors nicely.
+#
+
+$n = $ARGV[0];
+$np = int($n/100);
+
+for ($i = $n-$np; $i < $n+$np; $i++) {
+  $f = `factor $i`;
+  $f =~ s/.*://;
+  @f = split(/ /, $f);
+  $reject = 0;
+  foreach (@f) {
+    $reject = 1 if $_ > 16;
+  }
+  print "$i: $f" if !$reject;
+}

@@ -1,0 +1,752 @@
+TimeQuest Timing Analyzer report for M837
+Sat Nov 23 00:36:10 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Clock Transfers
+ 14. Report TCCS
+ 15. Report RSKM
+ 16. Unconstrained Paths
+ 17. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; M837                                                              ;
+; Device Family      ; MAX7000S                                                          ;
+; Device Name        ; EPM7128SLC84-10                                                   ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Slow Model                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
+-----------------
+; Setup Summary ;
+-----------------
+No paths to report.
+
+
+----------------
+; Hold Summary ;
+----------------
+No paths to report.
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
+-------------------------------
+; Minimum Pulse Width Summary ;
+-------------------------------
+No paths to report.
+
+
++-------------------------------------------------------------------------+
+; Propagation Delay                                                       ;
++---------------------+---------------+--------+--------+--------+--------+
+; Input Port          ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
++---------------------+---------------+--------+--------+--------+--------+
+; cpma_disable_low    ; ema0_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; cpma_disable_low    ; ema1_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; cpma_disable_low    ; ema2_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; d_low               ; data05_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; d_low               ; data06_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; d_low               ; data07_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; d_low               ; data08_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; d_low               ; df_enable     ;        ; 26.000 ; 26.000 ;        ;
+; d_low               ; ema0_low      ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; d_low               ; ema1_low      ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; d_low               ; ema2_low      ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; d_low               ; user_mode_low ; 31.000 ; 34.000 ; 34.000 ; 31.000 ;
+; data06_low          ; tp_bb1        ; 10.000 ;        ;        ; 10.000 ;
+; data07_low          ; tp_aa1        ;        ; 10.000 ; 10.000 ;        ;
+; data08_low          ; tp_ab1        ;        ; 10.000 ; 10.000 ;        ;
+; f_low               ; data05_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; f_low               ; data06_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; data07_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; data08_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; ema0_low      ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; ema1_low      ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; ema2_low      ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; user_mode_low ; 31.000 ; 34.000 ; 34.000 ; 31.000 ;
+; f_set_low           ; df_enable     ;        ; 26.000 ; 26.000 ;        ;
+; f_set_low           ; ema0_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; f_set_low           ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; f_set_low           ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ind1_low            ; data05_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data06_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data07_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data08_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data09_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data10_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data11_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data05_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data06_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data07_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data08_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data09_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data10_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data11_low    ; 10.000 ;        ;        ; 10.000 ;
+; initialize          ; df_enable     ; 23.000 ;        ;        ; 23.000 ;
+; initialize          ; ema0_low      ; 31.000 ; 31.000 ; 31.000 ; 31.000 ;
+; initialize          ; ema1_low      ; 31.000 ; 31.000 ; 31.000 ; 31.000 ;
+; initialize          ; ema2_low      ; 31.000 ; 31.000 ; 31.000 ; 31.000 ;
+; initialize          ; int_rqst_low  ; 15.000 ;        ;        ; 15.000 ;
+; int_in_progress_low ; data05_low    ; 66.000 ; 34.000 ; 34.000 ; 66.000 ;
+; int_in_progress_low ; data06_low    ; 58.000 ;        ;        ; 58.000 ;
+; int_in_progress_low ; data07_low    ; 34.000 ;        ;        ; 34.000 ;
+; int_in_progress_low ; data08_low    ; 34.000 ;        ;        ; 34.000 ;
+; int_in_progress_low ; data09_low    ; 34.000 ;        ;        ; 34.000 ;
+; int_in_progress_low ; data10_low    ; 34.000 ;        ;        ; 34.000 ;
+; int_in_progress_low ; data11_low    ; 34.000 ;        ;        ; 34.000 ;
+; int_in_progress_low ; ema0_low      ; 58.000 ; 34.000 ; 34.000 ; 58.000 ;
+; int_in_progress_low ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; int_in_progress_low ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; int_in_progress_low ; tp_aa1        ; 34.000 ;        ;        ; 34.000 ;
+; int_in_progress_low ; tp_ab1        ; 34.000 ;        ;        ; 34.000 ;
+; int_in_progress_low ; tp_ba1        ; 42.000 ;        ;        ; 42.000 ;
+; int_in_progress_low ; tp_bb1        ; 34.000 ;        ;        ; 34.000 ;
+; int_in_progress_low ; user_mode_low ; 26.000 ; 58.000 ; 58.000 ; 26.000 ;
+; io_pause_low        ; data05_low    ; 58.000 ; 58.000 ; 58.000 ; 58.000 ;
+; io_pause_low        ; tp_ba1        ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; io_pause_low        ; user_mode_low ; 50.000 ; 50.000 ; 50.000 ; 50.000 ;
+; ir00_low            ; data05_low    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir00_low            ; data06_low    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir00_low            ; data07_low    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir00_low            ; data08_low    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir00_low            ; df_enable     ; 26.000 ;        ;        ; 26.000 ;
+; ir00_low            ; ema0_low      ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir00_low            ; ema1_low      ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir00_low            ; ema2_low      ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir00_low            ; user_mode_low ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ir01_low            ; data05_low    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir01_low            ; data06_low    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir01_low            ; data07_low    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir01_low            ; data08_low    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir01_low            ; df_enable     ;        ; 26.000 ; 26.000 ;        ;
+; ir01_low            ; ema0_low      ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir01_low            ; ema1_low      ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir01_low            ; ema2_low      ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir01_low            ; user_mode_low ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; key_ctl_low         ; data05_low    ; 42.000 ; 34.000 ; 34.000 ; 42.000 ;
+; key_ctl_low         ; data06_low    ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; data07_low    ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; data08_low    ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; ema0_low      ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; ema1_low      ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; ema2_low      ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; tp_aa1        ;        ; 10.000 ; 10.000 ;        ;
+; key_ctl_low         ; tp_ab1        ;        ; 10.000 ; 10.000 ;        ;
+; key_ctl_low         ; tp_ba1        ; 10.000 ;        ;        ; 10.000 ;
+; key_ctl_low         ; tp_bb1        ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
+; key_ctl_low         ; user_mode_low ; 26.000 ; 34.000 ; 34.000 ; 26.000 ;
+; load_addr           ; data05_low    ; 26.000 ; 58.000 ; 58.000 ; 26.000 ;
+; load_addr           ; data06_low    ; 55.000 ; 50.000 ; 50.000 ; 55.000 ;
+; load_addr           ; data07_low    ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; load_addr           ; data08_low    ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; load_addr           ; data09_low    ; 31.000 ; 26.000 ; 26.000 ; 31.000 ;
+; load_addr           ; data10_low    ; 31.000 ; 26.000 ; 26.000 ; 31.000 ;
+; load_addr           ; data11_low    ; 31.000 ; 26.000 ; 26.000 ; 31.000 ;
+; load_addr           ; df_enable     ;        ; 23.000 ; 23.000 ;        ;
+; load_addr           ; ema0_low      ; 55.000 ; 50.000 ; 50.000 ; 55.000 ;
+; load_addr           ; ema1_low      ; 31.000 ; 31.000 ; 31.000 ; 31.000 ;
+; load_addr           ; ema2_low      ; 31.000 ; 31.000 ; 31.000 ; 31.000 ;
+; load_addr           ; int_rqst_low  ;        ; 15.000 ; 15.000 ;        ;
+; load_addr           ; tp_aa1        ; 31.000 ; 26.000 ; 26.000 ; 31.000 ;
+; load_addr           ; tp_ab1        ; 31.000 ; 26.000 ; 26.000 ; 31.000 ;
+; load_addr           ; tp_ba1        ;        ; 34.000 ; 34.000 ;        ;
+; load_addr           ; tp_bb1        ; 31.000 ; 26.000 ; 26.000 ; 31.000 ;
+; load_addr           ; user_mode_low ; 50.000 ; 18.000 ; 18.000 ; 50.000 ;
+; load_cntl           ; data05_low    ; 66.000 ; 58.000 ; 58.000 ; 66.000 ;
+; load_cntl           ; data06_low    ; 58.000 ; 39.000 ; 39.000 ; 58.000 ;
+; load_cntl           ; data07_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; load_cntl           ; data08_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; load_cntl           ; data09_low    ; 34.000 ;        ;        ; 34.000 ;
+; load_cntl           ; data10_low    ; 34.000 ;        ;        ; 34.000 ;
+; load_cntl           ; data11_low    ; 34.000 ;        ;        ; 34.000 ;
+; load_cntl           ; df_enable     ; 26.000 ;        ;        ; 26.000 ;
+; load_cntl           ; ema0_low      ; 58.000 ; 39.000 ; 39.000 ; 58.000 ;
+; load_cntl           ; ema1_low      ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; load_cntl           ; ema2_low      ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; load_cntl           ; tp_aa1        ; 34.000 ;        ;        ; 34.000 ;
+; load_cntl           ; tp_ab1        ; 34.000 ;        ;        ; 34.000 ;
+; load_cntl           ; tp_ba1        ; 42.000 ; 34.000 ; 34.000 ; 42.000 ;
+; load_cntl           ; tp_bb1        ; 34.000 ;        ;        ; 34.000 ;
+; load_cntl           ; user_mode_low ; 50.000 ; 58.000 ; 58.000 ; 50.000 ;
+; md03_low            ; data05_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; md03_low            ; data06_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; data07_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; data08_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; ema0_low      ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; ema1_low      ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; ema2_low      ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; user_mode_low ; 34.000 ; 31.000 ; 31.000 ; 34.000 ;
+; md06_low            ; data05_low    ; 58.000 ;        ;        ; 58.000 ;
+; md06_low            ; tp_ba1        ; 34.000 ;        ;        ; 34.000 ;
+; md06_low            ; user_mode_low ;        ; 50.000 ; 50.000 ;        ;
+; md07_low            ; data05_low    ;        ; 58.000 ; 58.000 ;        ;
+; md07_low            ; tp_ba1        ;        ; 34.000 ; 34.000 ;        ;
+; md07_low            ; user_mode_low ; 50.000 ;        ;        ; 50.000 ;
+; md08_low            ; data05_low    ;        ; 58.000 ; 58.000 ;        ;
+; md08_low            ; tp_ba1        ;        ; 34.000 ; 34.000 ;        ;
+; md08_low            ; user_mode_low ; 50.000 ;        ;        ; 50.000 ;
+; power_ok            ; data05_low    ; 66.000 ; 34.000 ; 34.000 ; 66.000 ;
+; power_ok            ; data06_low    ; 58.000 ;        ;        ; 58.000 ;
+; power_ok            ; data07_low    ; 34.000 ;        ;        ; 34.000 ;
+; power_ok            ; data08_low    ; 34.000 ;        ;        ; 34.000 ;
+; power_ok            ; data09_low    ; 34.000 ;        ;        ; 34.000 ;
+; power_ok            ; data10_low    ; 34.000 ;        ;        ; 34.000 ;
+; power_ok            ; data11_low    ; 34.000 ;        ;        ; 34.000 ;
+; power_ok            ; ema0_low      ; 58.000 ; 34.000 ; 34.000 ; 58.000 ;
+; power_ok            ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; power_ok            ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; power_ok            ; tp_aa1        ; 34.000 ;        ;        ; 34.000 ;
+; power_ok            ; tp_ab1        ; 34.000 ;        ;        ; 34.000 ;
+; power_ok            ; tp_ba1        ; 42.000 ;        ;        ; 42.000 ;
+; power_ok            ; tp_bb1        ; 34.000 ;        ;        ; 34.000 ;
+; power_ok            ; user_mode_low ; 26.000 ; 58.000 ; 58.000 ; 26.000 ;
+; run_low             ; data05_low    ; 34.000 ; 66.000 ; 66.000 ; 34.000 ;
+; run_low             ; data06_low    ;        ; 58.000 ; 58.000 ;        ;
+; run_low             ; data07_low    ;        ; 34.000 ; 34.000 ;        ;
+; run_low             ; data08_low    ;        ; 34.000 ; 34.000 ;        ;
+; run_low             ; data09_low    ;        ; 34.000 ; 34.000 ;        ;
+; run_low             ; data10_low    ;        ; 34.000 ; 34.000 ;        ;
+; run_low             ; data11_low    ;        ; 34.000 ; 34.000 ;        ;
+; run_low             ; ema0_low      ; 34.000 ; 58.000 ; 58.000 ; 34.000 ;
+; run_low             ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; run_low             ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; run_low             ; tp_aa1        ;        ; 34.000 ; 34.000 ;        ;
+; run_low             ; tp_ab1        ;        ; 34.000 ; 34.000 ;        ;
+; run_low             ; tp_ba1        ;        ; 42.000 ; 42.000 ;        ;
+; run_low             ; tp_bb1        ;        ; 34.000 ; 34.000 ;        ;
+; run_low             ; user_mode_low ; 58.000 ; 26.000 ; 26.000 ; 58.000 ;
+; tp2                 ; int_rqst_low  ; 10.000 ;        ;        ; 10.000 ;
+; tp3                 ; data05_low    ; 58.000 ; 50.000 ; 50.000 ; 58.000 ;
+; tp3                 ; data06_low    ; 50.000 ; 55.000 ; 55.000 ; 50.000 ;
+; tp3                 ; data09_low    ; 26.000 ; 31.000 ; 31.000 ; 26.000 ;
+; tp3                 ; data10_low    ; 26.000 ; 31.000 ; 31.000 ; 26.000 ;
+; tp3                 ; data11_low    ; 26.000 ; 31.000 ; 31.000 ; 26.000 ;
+; tp3                 ; ema0_low      ; 50.000 ; 55.000 ; 55.000 ; 50.000 ;
+; tp3                 ; ema1_low      ; 26.000 ; 31.000 ; 31.000 ; 26.000 ;
+; tp3                 ; ema2_low      ; 26.000 ; 31.000 ; 31.000 ; 26.000 ;
+; tp3                 ; tp_aa1        ; 26.000 ; 31.000 ; 31.000 ; 26.000 ;
+; tp3                 ; tp_ab1        ; 26.000 ; 31.000 ; 31.000 ; 26.000 ;
+; tp3                 ; tp_ba1        ; 34.000 ; 26.000 ; 26.000 ; 34.000 ;
+; tp3                 ; tp_bb1        ; 26.000 ; 31.000 ; 31.000 ; 26.000 ;
+; tp3                 ; user_mode_low ; 42.000 ; 50.000 ; 50.000 ; 42.000 ;
+; tp4                 ; data05_low    ; 66.000 ; 34.000 ; 34.000 ; 66.000 ;
+; tp4                 ; data06_low    ; 58.000 ; 31.000 ; 31.000 ; 58.000 ;
+; tp4                 ; data07_low    ; 34.000 ; 31.000 ; 31.000 ; 34.000 ;
+; tp4                 ; data08_low    ; 34.000 ; 31.000 ; 31.000 ; 34.000 ;
+; tp4                 ; data09_low    ; 34.000 ;        ;        ; 34.000 ;
+; tp4                 ; data10_low    ; 34.000 ;        ;        ; 34.000 ;
+; tp4                 ; data11_low    ; 34.000 ;        ;        ; 34.000 ;
+; tp4                 ; df_enable     ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; tp4                 ; ema0_low      ; 58.000 ; 34.000 ; 34.000 ; 58.000 ;
+; tp4                 ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; tp4                 ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; tp4                 ; tp_aa1        ; 34.000 ;        ;        ; 34.000 ;
+; tp4                 ; tp_ab1        ; 34.000 ;        ;        ; 34.000 ;
+; tp4                 ; tp_ba1        ; 42.000 ;        ;        ; 42.000 ;
+; tp4                 ; tp_bb1        ; 34.000 ;        ;        ; 34.000 ;
+; tp4                 ; user_mode_low ; 26.000 ; 58.000 ; 58.000 ; 26.000 ;
+; ts1_low             ; data05_low    ; 34.000 ; 66.000 ; 66.000 ; 34.000 ;
+; ts1_low             ; data06_low    ;        ; 58.000 ; 58.000 ;        ;
+; ts1_low             ; data07_low    ;        ; 34.000 ; 34.000 ;        ;
+; ts1_low             ; data08_low    ;        ; 34.000 ; 34.000 ;        ;
+; ts1_low             ; data09_low    ;        ; 34.000 ; 34.000 ;        ;
+; ts1_low             ; data10_low    ;        ; 34.000 ; 34.000 ;        ;
+; ts1_low             ; data11_low    ;        ; 34.000 ; 34.000 ;        ;
+; ts1_low             ; ema0_low      ; 34.000 ; 58.000 ; 58.000 ; 34.000 ;
+; ts1_low             ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ts1_low             ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ts1_low             ; tp_aa1        ;        ; 34.000 ; 34.000 ;        ;
+; ts1_low             ; tp_ab1        ;        ; 34.000 ; 34.000 ;        ;
+; ts1_low             ; tp_ba1        ;        ; 42.000 ; 42.000 ;        ;
+; ts1_low             ; tp_bb1        ;        ; 34.000 ; 34.000 ;        ;
+; ts1_low             ; user_mode_low ; 58.000 ; 26.000 ; 26.000 ; 58.000 ;
+; ts_disable_low      ; data05_low    ;        ; 34.000 ; 34.000 ;        ;
+; ts_disable_low      ; int_rqst_low  ;        ; 10.000 ; 10.000 ;        ;
+; ts_disable_low      ; tp_ba1        ;        ; 10.000 ; 10.000 ;        ;
+; ts_disable_low      ; user_mode_low ; 26.000 ;        ;        ; 26.000 ;
++---------------------+---------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Propagation Delay                                               ;
++---------------------+---------------+--------+--------+--------+--------+
+; Input Port          ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
++---------------------+---------------+--------+--------+--------+--------+
+; cpma_disable_low    ; ema0_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; cpma_disable_low    ; ema1_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; cpma_disable_low    ; ema2_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; d_low               ; data05_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; d_low               ; data06_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; d_low               ; data07_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; d_low               ; data08_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; d_low               ; df_enable     ;        ; 26.000 ; 26.000 ;        ;
+; d_low               ; ema0_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; d_low               ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; d_low               ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; d_low               ; user_mode_low ; 31.000 ; 34.000 ; 34.000 ; 31.000 ;
+; data06_low          ; tp_bb1        ; 10.000 ;        ;        ; 10.000 ;
+; data07_low          ; tp_aa1        ;        ; 10.000 ; 10.000 ;        ;
+; data08_low          ; tp_ab1        ;        ; 10.000 ; 10.000 ;        ;
+; f_low               ; data05_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; f_low               ; data06_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; data07_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; data08_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; ema0_low      ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; ema1_low      ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; ema2_low      ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; f_low               ; user_mode_low ; 31.000 ; 34.000 ; 34.000 ; 31.000 ;
+; f_set_low           ; df_enable     ;        ; 26.000 ; 26.000 ;        ;
+; f_set_low           ; ema0_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; f_set_low           ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; f_set_low           ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ind1_low            ; data05_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data06_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data07_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data08_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data09_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data10_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind1_low            ; data11_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data05_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data06_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data07_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data08_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data09_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data10_low    ; 10.000 ;        ;        ; 10.000 ;
+; ind2_low            ; data11_low    ; 10.000 ;        ;        ; 10.000 ;
+; initialize          ; df_enable     ; 15.000 ;        ;        ; 15.000 ;
+; initialize          ; ema0_low      ; 23.000 ; 23.000 ; 23.000 ; 23.000 ;
+; initialize          ; ema1_low      ; 23.000 ; 23.000 ; 23.000 ; 23.000 ;
+; initialize          ; ema2_low      ; 23.000 ; 23.000 ; 23.000 ; 23.000 ;
+; initialize          ; int_rqst_low  ; 15.000 ;        ;        ; 15.000 ;
+; int_in_progress_low ; data05_low    ; 50.000 ; 26.000 ; 26.000 ; 50.000 ;
+; int_in_progress_low ; data06_low    ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; data07_low    ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; data08_low    ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; data09_low    ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; data10_low    ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; data11_low    ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; ema0_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; int_in_progress_low ; ema1_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; int_in_progress_low ; ema2_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; int_in_progress_low ; tp_aa1        ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; tp_ab1        ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; tp_ba1        ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; tp_bb1        ; 26.000 ;        ;        ; 26.000 ;
+; int_in_progress_low ; user_mode_low ; 18.000 ; 42.000 ; 42.000 ; 18.000 ;
+; io_pause_low        ; data05_low    ; 50.000 ; 50.000 ; 50.000 ; 50.000 ;
+; io_pause_low        ; tp_ba1        ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; io_pause_low        ; user_mode_low ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; ir00_low            ; data05_low    ; 39.000 ; 39.000 ; 39.000 ; 39.000 ;
+; ir00_low            ; data06_low    ; 39.000 ; 39.000 ; 39.000 ; 39.000 ;
+; ir00_low            ; data07_low    ; 39.000 ; 39.000 ; 39.000 ; 39.000 ;
+; ir00_low            ; data08_low    ; 39.000 ; 39.000 ; 39.000 ; 39.000 ;
+; ir00_low            ; df_enable     ; 26.000 ;        ;        ; 26.000 ;
+; ir00_low            ; ema0_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ir00_low            ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ir00_low            ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ir00_low            ; user_mode_low ; 31.000 ; 31.000 ; 31.000 ; 31.000 ;
+; ir01_low            ; data05_low    ; 39.000 ; 39.000 ; 39.000 ; 39.000 ;
+; ir01_low            ; data06_low    ; 39.000 ; 39.000 ; 39.000 ; 39.000 ;
+; ir01_low            ; data07_low    ; 39.000 ; 39.000 ; 39.000 ; 39.000 ;
+; ir01_low            ; data08_low    ; 39.000 ; 39.000 ; 39.000 ; 39.000 ;
+; ir01_low            ; df_enable     ;        ; 26.000 ; 26.000 ;        ;
+; ir01_low            ; ema0_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ir01_low            ; ema1_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ir01_low            ; ema2_low      ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; ir01_low            ; user_mode_low ; 31.000 ; 31.000 ; 31.000 ; 31.000 ;
+; key_ctl_low         ; data05_low    ; 42.000 ; 34.000 ; 34.000 ; 42.000 ;
+; key_ctl_low         ; data06_low    ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; data07_low    ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; data08_low    ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; ema0_low      ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; ema1_low      ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; ema2_low      ; 34.000 ; 42.000 ; 42.000 ; 34.000 ;
+; key_ctl_low         ; tp_aa1        ;        ; 10.000 ; 10.000 ;        ;
+; key_ctl_low         ; tp_ab1        ;        ; 10.000 ; 10.000 ;        ;
+; key_ctl_low         ; tp_ba1        ; 10.000 ;        ;        ; 10.000 ;
+; key_ctl_low         ; tp_bb1        ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
+; key_ctl_low         ; user_mode_low ; 26.000 ; 34.000 ; 34.000 ; 26.000 ;
+; load_addr           ; data05_low    ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; load_addr           ; data06_low    ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; load_addr           ; data07_low    ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; load_addr           ; data08_low    ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; load_addr           ; data09_low    ; 23.000 ; 18.000 ; 18.000 ; 23.000 ;
+; load_addr           ; data10_low    ; 23.000 ; 18.000 ; 18.000 ; 23.000 ;
+; load_addr           ; data11_low    ; 23.000 ; 18.000 ; 18.000 ; 23.000 ;
+; load_addr           ; df_enable     ;        ; 15.000 ; 15.000 ;        ;
+; load_addr           ; ema0_low      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; load_addr           ; ema1_low      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; load_addr           ; ema2_low      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; load_addr           ; int_rqst_low  ;        ; 15.000 ; 15.000 ;        ;
+; load_addr           ; tp_aa1        ; 23.000 ; 18.000 ; 18.000 ; 23.000 ;
+; load_addr           ; tp_ab1        ; 23.000 ; 18.000 ; 18.000 ; 23.000 ;
+; load_addr           ; tp_ba1        ;        ; 18.000 ; 18.000 ;        ;
+; load_addr           ; tp_bb1        ; 23.000 ; 18.000 ; 18.000 ; 23.000 ;
+; load_addr           ; user_mode_low ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
+; load_cntl           ; data05_low    ; 23.000 ; 18.000 ; 18.000 ; 23.000 ;
+; load_cntl           ; data06_low    ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; load_cntl           ; data07_low    ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; load_cntl           ; data08_low    ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; load_cntl           ; data09_low    ; 26.000 ;        ;        ; 26.000 ;
+; load_cntl           ; data10_low    ; 26.000 ;        ;        ; 26.000 ;
+; load_cntl           ; data11_low    ; 26.000 ;        ;        ; 26.000 ;
+; load_cntl           ; df_enable     ; 26.000 ;        ;        ; 26.000 ;
+; load_cntl           ; ema0_low      ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; load_cntl           ; ema1_low      ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; load_cntl           ; ema2_low      ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; load_cntl           ; tp_aa1        ; 26.000 ;        ;        ; 26.000 ;
+; load_cntl           ; tp_ab1        ; 26.000 ;        ;        ; 26.000 ;
+; load_cntl           ; tp_ba1        ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; load_cntl           ; tp_bb1        ; 26.000 ;        ;        ; 26.000 ;
+; load_cntl           ; user_mode_low ; 10.000 ; 15.000 ; 15.000 ; 10.000 ;
+; md03_low            ; data05_low    ; 39.000 ; 42.000 ; 42.000 ; 39.000 ;
+; md03_low            ; data06_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; data07_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; data08_low    ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; ema0_low      ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; ema1_low      ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; ema2_low      ; 42.000 ; 39.000 ; 39.000 ; 42.000 ;
+; md03_low            ; user_mode_low ; 34.000 ; 31.000 ; 31.000 ; 34.000 ;
+; md06_low            ; data05_low    ; 50.000 ;        ;        ; 50.000 ;
+; md06_low            ; tp_ba1        ; 26.000 ;        ;        ; 26.000 ;
+; md06_low            ; user_mode_low ;        ; 42.000 ; 42.000 ;        ;
+; md07_low            ; data05_low    ;        ; 50.000 ; 50.000 ;        ;
+; md07_low            ; tp_ba1        ;        ; 26.000 ; 26.000 ;        ;
+; md07_low            ; user_mode_low ; 42.000 ;        ;        ; 42.000 ;
+; md08_low            ; data05_low    ;        ; 50.000 ; 50.000 ;        ;
+; md08_low            ; tp_ba1        ;        ; 26.000 ; 26.000 ;        ;
+; md08_low            ; user_mode_low ; 42.000 ;        ;        ; 42.000 ;
+; power_ok            ; data05_low    ; 50.000 ; 26.000 ; 26.000 ; 50.000 ;
+; power_ok            ; data06_low    ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; data07_low    ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; data08_low    ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; data09_low    ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; data10_low    ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; data11_low    ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; ema0_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; power_ok            ; ema1_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; power_ok            ; ema2_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; power_ok            ; tp_aa1        ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; tp_ab1        ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; tp_ba1        ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; tp_bb1        ; 26.000 ;        ;        ; 26.000 ;
+; power_ok            ; user_mode_low ; 18.000 ; 42.000 ; 42.000 ; 18.000 ;
+; run_low             ; data05_low    ; 26.000 ; 50.000 ; 50.000 ; 26.000 ;
+; run_low             ; data06_low    ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; data07_low    ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; data08_low    ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; data09_low    ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; data10_low    ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; data11_low    ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; ema0_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; run_low             ; ema1_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; run_low             ; ema2_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; run_low             ; tp_aa1        ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; tp_ab1        ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; tp_ba1        ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; tp_bb1        ;        ; 26.000 ; 26.000 ;        ;
+; run_low             ; user_mode_low ; 42.000 ; 18.000 ; 18.000 ; 42.000 ;
+; tp2                 ; int_rqst_low  ; 10.000 ;        ;        ; 10.000 ;
+; tp3                 ; data05_low    ; 42.000 ; 42.000 ; 42.000 ; 42.000 ;
+; tp3                 ; data06_low    ; 42.000 ; 47.000 ; 47.000 ; 42.000 ;
+; tp3                 ; data09_low    ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp3                 ; data10_low    ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp3                 ; data11_low    ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp3                 ; ema0_low      ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp3                 ; ema1_low      ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp3                 ; ema2_low      ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp3                 ; tp_aa1        ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp3                 ; tp_ab1        ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp3                 ; tp_ba1        ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; tp3                 ; tp_bb1        ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp3                 ; user_mode_low ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; tp4                 ; data05_low    ; 23.000 ; 18.000 ; 18.000 ; 23.000 ;
+; tp4                 ; data06_low    ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp4                 ; data07_low    ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp4                 ; data08_low    ; 18.000 ; 23.000 ; 23.000 ; 18.000 ;
+; tp4                 ; data09_low    ; 26.000 ;        ;        ; 26.000 ;
+; tp4                 ; data10_low    ; 26.000 ;        ;        ; 26.000 ;
+; tp4                 ; data11_low    ; 26.000 ;        ;        ; 26.000 ;
+; tp4                 ; df_enable     ; 10.000 ; 10.000 ; 10.000 ; 10.000 ;
+; tp4                 ; ema0_low      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; tp4                 ; ema1_low      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; tp4                 ; ema2_low      ; 18.000 ; 18.000 ; 18.000 ; 18.000 ;
+; tp4                 ; tp_aa1        ; 26.000 ;        ;        ; 26.000 ;
+; tp4                 ; tp_ab1        ; 26.000 ;        ;        ; 26.000 ;
+; tp4                 ; tp_ba1        ; 26.000 ;        ;        ; 26.000 ;
+; tp4                 ; tp_bb1        ; 26.000 ;        ;        ; 26.000 ;
+; tp4                 ; user_mode_low ; 10.000 ; 15.000 ; 15.000 ; 10.000 ;
+; ts1_low             ; data05_low    ; 26.000 ; 10.000 ; 10.000 ; 26.000 ;
+; ts1_low             ; data06_low    ;        ; 10.000 ; 10.000 ;        ;
+; ts1_low             ; data07_low    ;        ; 10.000 ; 10.000 ;        ;
+; ts1_low             ; data08_low    ;        ; 10.000 ; 10.000 ;        ;
+; ts1_low             ; data09_low    ;        ; 10.000 ; 10.000 ;        ;
+; ts1_low             ; data10_low    ;        ; 10.000 ; 10.000 ;        ;
+; ts1_low             ; data11_low    ;        ; 10.000 ; 10.000 ;        ;
+; ts1_low             ; ema0_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; ts1_low             ; ema1_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; ts1_low             ; ema2_low      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; ts1_low             ; tp_aa1        ;        ; 26.000 ; 26.000 ;        ;
+; ts1_low             ; tp_ab1        ;        ; 26.000 ; 26.000 ;        ;
+; ts1_low             ; tp_ba1        ;        ; 26.000 ; 26.000 ;        ;
+; ts1_low             ; tp_bb1        ;        ; 26.000 ; 26.000 ;        ;
+; ts1_low             ; user_mode_low ; 42.000 ; 18.000 ; 18.000 ; 42.000 ;
+; ts_disable_low      ; data05_low    ;        ; 34.000 ; 34.000 ;        ;
+; ts_disable_low      ; int_rqst_low  ;        ; 10.000 ; 10.000 ;        ;
+; ts_disable_low      ; tp_ba1        ;        ; 10.000 ; 10.000 ;        ;
+; ts_disable_low      ; user_mode_low ; 26.000 ;        ;        ; 26.000 ;
++---------------------+---------------+--------+--------+--------+--------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 28    ; 28   ;
+; Unconstrained Input Port Paths  ; 223   ; 223  ;
+; Unconstrained Output Ports      ; 17    ; 17   ;
+; Unconstrained Output Port Paths ; 223   ; 223  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Nov 23 00:36:08 2019
+Info: Command: quartus_sta M837 -c M837
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Warning (335095): TimeQuest Timing Analyzer does not support the analysis of latches as synchronous elements for the currently selected device family.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'M837.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332125): Found combinational loop of 10 nodes
+    Warning (332126): Node "uf_m~15|[3]"
+    Warning (332126): Node "uf_m~15|dataout"
+    Warning (332126): Node "uf_m~7|[3]"
+    Warning (332126): Node "uf_m~7|dataout"
+    Warning (332126): Node "uf_m~23|[0]"
+    Warning (332126): Node "uf_m~23|dataout"
+    Warning (332126): Node "uf_m~23|[2]"
+    Warning (332126): Node "uf~9|[0]"
+    Warning (332126): Node "uf~9|dataout"
+    Warning (332126): Node "uf~9|[2]"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "db~10|[3]"
+    Warning (332126): Node "db~10|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "ema_disable_low~9|[2]"
+    Warning (332126): Node "ema_disable_low~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "db_m~9|[2]"
+    Warning (332126): Node "db_m~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "ema_disable_low_m~9|[2]"
+    Warning (332126): Node "ema_disable_low_m~9|dataout"
+Warning (332125): Found combinational loop of 6 nodes
+    Warning (332126): Node "ib2_m~9|[0]"
+    Warning (332126): Node "ib2_m~9|dataout"
+    Warning (332126): Node "ib2~9|[0]"
+    Warning (332126): Node "ib2~9|dataout"
+    Warning (332126): Node "ib2~9|[2]"
+    Warning (332126): Node "ib2_m~9|[2]"
+Warning (332125): Found combinational loop of 6 nodes
+    Warning (332126): Node "ib1_m~9|[0]"
+    Warning (332126): Node "ib1_m~9|dataout"
+    Warning (332126): Node "ib1~9|[0]"
+    Warning (332126): Node "ib1~9|dataout"
+    Warning (332126): Node "ib1~9|[2]"
+    Warning (332126): Node "ib1_m~9|[2]"
+Warning (332125): Found combinational loop of 6 nodes
+    Warning (332126): Node "df2_m~9|[0]"
+    Warning (332126): Node "df2_m~9|dataout"
+    Warning (332126): Node "df2~9|[0]"
+    Warning (332126): Node "df2~9|dataout"
+    Warning (332126): Node "df2~9|[2]"
+    Warning (332126): Node "df2_m~9|[2]"
+Warning (332125): Found combinational loop of 6 nodes
+    Warning (332126): Node "df1_m~9|[0]"
+    Warning (332126): Node "df1_m~9|dataout"
+    Warning (332126): Node "df1~9|[0]"
+    Warning (332126): Node "df1~9|dataout"
+    Warning (332126): Node "df1~9|[2]"
+    Warning (332126): Node "df1_m~9|[2]"
+Warning (332125): Found combinational loop of 6 nodes
+    Warning (332126): Node "df0_m~9|[0]"
+    Warning (332126): Node "df0_m~9|dataout"
+    Warning (332126): Node "df0~9|[0]"
+    Warning (332126): Node "df0~9|dataout"
+    Warning (332126): Node "df0~9|[2]"
+    Warning (332126): Node "df0_m~9|[2]"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "uint~2|[1]"
+    Warning (332126): Node "uint~2|dataout"
+Warning (332125): Found combinational loop of 8 nodes
+    Warning (332126): Node "n_t_49x~2|[0]"
+    Warning (332126): Node "n_t_49x~2|dataout"
+    Warning (332126): Node "df_enable_m~9|[0]"
+    Warning (332126): Node "df_enable_m~9|dataout"
+    Warning (332126): Node "df_enable_m~9|[2]"
+    Warning (332126): Node "df_enable$latch~9|[0]"
+    Warning (332126): Node "df_enable$latch~9|dataout"
+    Warning (332126): Node "df_enable$latch~9|[2]"
+Warning (332125): Found combinational loop of 10 nodes
+    Warning (332126): Node "if2~9|dataout"
+    Warning (332126): Node "if2_m~15|[3]"
+    Warning (332126): Node "if2_m~15|dataout"
+    Warning (332126): Node "if2_m~7|[1]"
+    Warning (332126): Node "if2_m~7|dataout"
+    Warning (332126): Node "if2_m~22|[0]"
+    Warning (332126): Node "if2_m~22|dataout"
+    Warning (332126): Node "if2_m~22|[2]"
+    Warning (332126): Node "if2~9|[0]"
+    Warning (332126): Node "if2~9|[2]"
+Warning (332125): Found combinational loop of 10 nodes
+    Warning (332126): Node "if1~9|dataout"
+    Warning (332126): Node "if1_m~15|[3]"
+    Warning (332126): Node "if1_m~15|dataout"
+    Warning (332126): Node "if1_m~7|[1]"
+    Warning (332126): Node "if1_m~7|dataout"
+    Warning (332126): Node "if1_m~22|[0]"
+    Warning (332126): Node "if1_m~22|dataout"
+    Warning (332126): Node "if1_m~22|[2]"
+    Warning (332126): Node "if1~9|[0]"
+    Warning (332126): Node "if1~9|[2]"
+Warning (332125): Found combinational loop of 10 nodes
+    Warning (332126): Node "if0~9|dataout"
+    Warning (332126): Node "if0_m~15|[3]"
+    Warning (332126): Node "if0_m~15|dataout"
+    Warning (332126): Node "if0_m~7|[2]"
+    Warning (332126): Node "if0_m~7|dataout"
+    Warning (332126): Node "if0_m~22|[0]"
+    Warning (332126): Node "if0_m~22|dataout"
+    Warning (332126): Node "if0_m~22|[2]"
+    Warning (332126): Node "if0~9|[0]"
+    Warning (332126): Node "if0~9|[2]"
+Warning (332125): Found combinational loop of 6 nodes
+    Warning (332126): Node "ib0~9|dataout"
+    Warning (332126): Node "ib0~9|[2]"
+    Warning (332126): Node "ib0_m~9|[0]"
+    Warning (332126): Node "ib0_m~9|dataout"
+    Warning (332126): Node "ib0_m~9|[2]"
+    Warning (332126): Node "ib0~9|[0]"
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 114 warnings
+    Info: Peak virtual memory: 4525 megabytes
+    Info: Processing ended: Sat Nov 23 00:36:10 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
