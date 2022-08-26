@@ -1,0 +1,85 @@
+*** M8650.v	2022-08-25 12:35:03.620000000 -0700
+--- M8650.v--	2022-08-25 12:34:53.900000000 -0700
+***************
+*** 2,9 ****
+  // please don't edit it. 
+  // input pins 
+  // output pins 
+! module m8650 (n_t_103x, serial_in, sw1, sw2, sw3, sw4, sw5, sw6, c0_l, c1_l, clk, data04_l, data05_l, data06_l, data07_l, data08_l, data09_l, data10_l, data11_l, initialize, int_enab, int_rqst_l, internal_io_l, io_pause_l, md03_l, md04_l, md05_l, md06_l, md07_l, md08_l, md09_l, md10_l, md11_l, power_ok, r_run_l, serial_out, skip_l, tp3, tx_div_l);
+! input n_t_103x;
+  input serial_in;
+  input sw1;
+  input sw2;
+--- 2,11 ----
+  // please don't edit it. 
+  // input pins 
+  // output pins 
+! module m8650 (/*n_t_103x,*/tp_ca1, serial_in, sw1, sw2, sw3, sw4, sw5, sw6, c0_l, c1_l, clk, data04_l, data05_l, data06_l, data07_l, data08_l, data09_l, data10_l, data11_l, initialize, /*int_enab,*/ int_rqst_l, internal_io_l, io_pause_l, md03_l, md04_l, md05_l, md06_l, md07_l, md08_l, md09_l, md10_l, md11_l, power_ok, /*r_run_l,*/ serial_out, skip_l, tp3/*, tx_div_l*/);
+! // VRS Kludge
+! output tp_ca1;
+! //input n_t_103x; //VRS
+  input serial_in;
+  input sw1;
+  input sw2;
+***************
+*** 23,29 ****
+  inout data10_l;
+  inout data11_l;
+  input initialize;
+! inout int_enab;
+  output int_rqst_l;
+  output internal_io_l;
+  input io_pause_l;
+--- 25,31 ----
+  inout data10_l;
+  inout data11_l;
+  input initialize;
+! //inout int_enab; //VRS
+  output int_rqst_l;
+  output internal_io_l;
+  input io_pause_l;
+***************
+*** 37,47 ****
+  input md10_l;
+  input md11_l;
+  input power_ok;
+! output reg r_run_l;
+  output reg serial_out;
+  inout skip_l;
+  input tp3;
+! inout tx_div_l;
+  
+  reg bd1745_m;
+  reg ck_pulse_m;
+--- 39,51 ----
+  input md10_l;
+  input md11_l;
+  input power_ok;
+! //output reg r_run_l; //VRS
+  output reg serial_out;
+  inout skip_l;
+  input tp3;
+! //inout tx_div_l; //VRS
+! 
+! reg r_run_l;
+  
+  reg bd1745_m;
+  reg ck_pulse_m;
+***************
+*** 224,229 ****
+--- 228,242 ----
+  wire tx_sel;
+  wire tx_shift_l;
+  // code nodes 
++ 
++ // VRS Kludges
++ // n$103 is supposed to be a delayed tx_div_l.
++ //assign n_t_103x = tx_div_l;
++ assign n_t_103x = 1'b1;
++ // Output debug information on CA1.
++ //assign tp_ca1 = tx_active_l;
++ assign tp_ca1 = enab_m;
++ 
+  // equations 
+  // c1: c_us 
+  // c2: c_us 

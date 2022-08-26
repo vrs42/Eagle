@@ -31,7 +31,7 @@
 #**************************************************************
 
 set_time_format -unit ns -decimal_places 3
-
+set_operating_conditions -model slow
 
 
 #**************************************************************
@@ -39,10 +39,6 @@ set_time_format -unit ns -decimal_places 3
 #**************************************************************
 
 create_clock -name {clk} -period 1.000 -waveform { 0.000 0.500 } [get_ports {clk}]
-create_clock -name {sw1} -period 1.000 -waveform { 0.000 0.500 } [get_ports {sw1}]
-create_clock -name {bd600} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd600}]
-create_clock -name {bd1200} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd1200}]
-create_clock -name {bd2400} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd2400}]
 
 
 #**************************************************************

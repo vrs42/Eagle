@@ -3,7 +3,7 @@
 
 Name     M8650 ;
 PartNo   cpld ;
-Date     10/24/2021 ;
+Date     8/25/2022 ;
 Revision 01 ;
 Designer  ;
 Company   ;
@@ -62,8 +62,8 @@ node ck_pulse;
 node rx_div2_l;
 node rx_div4_l;
 node n_t_2x;
-node gdollar_0;
 node n_t_5x;
+node gdollar_0;
 node bd1745;
 node rx7;
 node n_t_34x;
@@ -91,12 +91,20 @@ node bd4800;
 node bd2400;
 node tx_div;
 node spike_det_l;
+node bd614400;
+node bd307200;
+node bd153600;
+node bd76800;
+node bd38400;
+node gdollar_1;
+node gdollar_2;
+node gdollar_3;
 node tx_active_l;
 node start_l;
 node stp1;
-node gdollar_1;
+node gdollar_4;
 node stp2;
-node gdollar_2;
+node gdollar_5;
 node n_t_60x;
 node n_t_62x;
 node n_t_56x;
@@ -109,15 +117,10 @@ node tx_data;
 node tflg_l;
 node int_enab_l;
 node rflg_l;
-node bd115200;
-node n_t_4x;
-node bd38400;
-node gdollar_3;
 
 /* Internal nodes */
 $IFNDEF OPTIMIZE
 node b_pause_l;
-node bd230400;
 node btp3;
 node ckkcc_l;
 node ckkcf;
@@ -125,6 +128,7 @@ node ckkie;
 node cktcf;
 node cktfl;
 node cktfl_l;
+node div11;
 node dokcc;
 node dokrs;
 node dotcf;
@@ -178,7 +182,6 @@ node n_t_25x;
 node n_t_26x;
 node n_t_28x;
 node n_t_29x;
-node n_t_3x;
 node n_t_41x;
 node n_t_42x;
 node n_t_44x;
@@ -193,7 +196,6 @@ node n_t_55x;
 node n_t_67x;
 node n_t_68x;
 node n_t_69x;
-node n_t_6x;
 node n_t_70x;
 node n_t_72x;
 node n_t_76x;
@@ -351,7 +353,6 @@ $ENDIF
 
 /* e1: sp380n */
 !tx_rate = n_t_1x;
-!bd230400 = clk;
 !n_t_26x = rx7;
 
 /* e2: sn97401 */
@@ -384,38 +385,38 @@ rx_div4_l.ar = !n3v3;
 /* e5: sn7493 */
 n_t_2x.ck = bd19200;
 n_t_2x.t = 'b'1;
-n_t_2x.ar = n_t_6x;
-gdollar_0.ck = n_t_2x;
-gdollar_0.t = 'b'1;
-gdollar_0.ar = n_t_6x;
-n_t_5x.ck = gdollar_0;
+n_t_2x.ar = div11;
+n_t_5x.ck = n_t_2x;
 n_t_5x.t = 'b'1;
-n_t_5x.ar = n_t_6x;
-bd1745.ck = n_t_5x;
+n_t_5x.ar = div11;
+gdollar_0.ck = n_t_5x;
+gdollar_0.t = 'b'1;
+gdollar_0.ar = div11;
+bd1745.ck = gdollar_0;
 bd1745.t = 'b'1;
-bd1745.ar = n_t_6x;
+bd1745.ar = div11;
 
 /* e6: dec8271 */
 rx7.ar = !n3v3;
 rx7.d = n_t_44x & p_pulse_l
       # n3v3 & !p_pulse_l
       # rx7 & !n3v3 & !p_pulse_l;
-rx7.ck = n_t_41x;
+rx7.ck = !n_t_41x;
 n_t_34x.ar = !n3v3;
 n_t_34x.d = rx7 & p_pulse_l
           # n3v3 & !p_pulse_l
           # n_t_34x & !n3v3 & !p_pulse_l;
-n_t_34x.ck = n_t_41x;
+n_t_34x.ck = !n_t_41x;
 n_t_36x.ar = !n3v3;
 n_t_36x.d = n_t_34x & p_pulse_l
           # n3v3 & !p_pulse_l
           # n_t_36x & !n3v3 & !p_pulse_l;
-n_t_36x.ck = n_t_41x;
+n_t_36x.ck = !n_t_41x;
 n_t_35x.ar = !n3v3;
 n_t_35x.d = n_t_36x & p_pulse_l
           # n3v3 & !p_pulse_l
           # n_t_35x & !n3v3 & !p_pulse_l;
-n_t_35x.ck = n_t_41x;
+n_t_35x.ck = !n_t_41x;
 
 /* e7: sn7474 */
 rx_active.ar = !n_t_72x;
@@ -459,22 +460,22 @@ n_t_37x.ar = !n3v3;
 n_t_37x.d = n_t_35x & p_pulse_l
           # n3v3 & !p_pulse_l
           # n_t_37x & !n3v3 & !p_pulse_l;
-n_t_37x.ck = n_t_41x;
+n_t_37x.ck = !n_t_41x;
 n_t_38x.ar = !n3v3;
 n_t_38x.d = n_t_37x & p_pulse_l
           # n3v3 & !p_pulse_l
           # n_t_38x & !n3v3 & !p_pulse_l;
-n_t_38x.ck = n_t_41x;
+n_t_38x.ck = !n_t_41x;
 n_t_39x.ar = !n3v3;
 n_t_39x.d = n_t_38x & p_pulse_l
           # n3v3 & !p_pulse_l
           # n_t_39x & !n3v3 & !p_pulse_l;
-n_t_39x.ck = n_t_41x;
+n_t_39x.ck = !n_t_41x;
 n_t_40x.ar = !n3v3;
 n_t_40x.d = n_t_39x & p_pulse_l
           # n3v3 & !p_pulse_l
           # n_t_40x & !n3v3 & !p_pulse_l;
-n_t_40x.ck = n_t_41x;
+n_t_40x.ck = !n_t_41x;
 rx_bot = !n_t_40x;
 
 /* e11: sn7402 */
@@ -537,6 +538,34 @@ spike_det_l.d = 'b'1;
 spike_det_l.ck = rx_active8_l;
 spike_det_l.ar = !rx_again_l;
 
+/* e17: sn7493 */
+bd614400.ck = clk;
+bd614400.t = 'b'1;
+bd614400.ar = 'b'0;
+bd307200.ck = bd614400;
+bd307200.t = 'b'1;
+bd307200.ar = 'b'0;
+bd153600.ck = bd307200;
+bd153600.t = 'b'1;
+bd153600.ar = 'b'0;
+bd76800.ck = bd153600;
+bd76800.t = 'b'1;
+bd76800.ar = 'b'0;
+
+/* e18: sn7493 */
+bd38400.ck = bd76800;
+bd38400.t = 'b'1;
+bd38400.ar = 'b'0;
+gdollar_1.ck = 'b'0;
+gdollar_1.t = 'b'1;
+gdollar_1.ar = 'b'0;
+gdollar_2.ck = gdollar_1;
+gdollar_2.t = 'b'1;
+gdollar_2.ar = 'b'0;
+gdollar_3.ck = gdollar_2;
+gdollar_3.t = 'b'1;
+gdollar_3.ar = 'b'0;
+
 /* e19: sn7410 */
 rx_again_l = !(serial_in & n_t_78x & rx_rate);
 tx8 = !(n_t_68x & tx_div_l & n_t_69x);
@@ -559,6 +588,7 @@ n_t_102x = !tx_shift_l;
 n_t_145x = !tx_rate;
 n_t_44x = !serial_in;
 n_t_78x = !rx_last_l;
+pause = !b_pause_l;
 
 /* e23: sp380n */
 !selected_l = rx_sel
@@ -591,22 +621,22 @@ stp1.ar = !tx_div;
 stp1.d = tx_active_l & n3v3
        #  & n3v3 & !n3v3
        # stp1 & !n3v3 & !n3v3;
-stp1.ck = n_t_145x;
-gdollar_1.ar = !tx_div;
-gdollar_1.d = stp1 & n3v3
+stp1.ck = !n_t_145x;
+gdollar_4.ar = !tx_div;
+gdollar_4.d = stp1 & n3v3
             #  & n3v3 & !n3v3
-            # gdollar_1 & !n3v3 & !n3v3;
-gdollar_1.ck = n_t_145x;
+            # gdollar_4 & !n3v3 & !n3v3;
+gdollar_4.ck = !n_t_145x;
 stp2.ar = !tx_div;
-stp2.d = gdollar_1 & n3v3
+stp2.d = gdollar_4 & n3v3
        #  & n3v3 & !n3v3
        # stp2 & !n3v3 & !n3v3;
-stp2.ck = n_t_145x;
-gdollar_2.ar = !tx_div;
-gdollar_2.d = stp2 & n3v3
+stp2.ck = !n_t_145x;
+gdollar_5.ar = !tx_div;
+gdollar_5.d = stp2 & n3v3
             #  & n3v3 & !n3v3
-            # gdollar_2 & !n3v3 & !n3v3;
-gdollar_2.ck = n_t_145x;
+            # gdollar_5 & !n3v3 & !n3v3;
+gdollar_5.ck = !n_t_145x;
 
 /* e27: sp380n */
 !n_t_47x = data05_l
@@ -623,22 +653,22 @@ n_t_60x.ar = !init_l;
 n_t_60x.d = enab & dotpc_l
           # n_t_46x & n3v3 & !dotpc_l
           # n_t_60x & !n3v3 & !dotpc_l;
-n_t_60x.ck = tx_shift_l;
+n_t_60x.ck = !tx_shift_l;
 n_t_62x.ar = !init_l;
 n_t_62x.d = n_t_60x & dotpc_l
           # n_t_47x & n3v3 & !dotpc_l
           # n_t_62x & !n3v3 & !dotpc_l;
-n_t_62x.ck = tx_shift_l;
+n_t_62x.ck = !tx_shift_l;
 n_t_56x.ar = !init_l;
 n_t_56x.d = n_t_62x & dotpc_l
           # n_t_48x & n3v3 & !dotpc_l
           # n_t_56x & !n3v3 & !dotpc_l;
-n_t_56x.ck = tx_shift_l;
+n_t_56x.ck = !tx_shift_l;
 n_t_61x.ar = !init_l;
 n_t_61x.d = n_t_56x & dotpc_l
           # n_t_49x & n3v3 & !dotpc_l
           # n_t_61x & !n3v3 & !dotpc_l;
-n_t_61x.ck = tx_shift_l;
+n_t_61x.ck = !tx_shift_l;
 
 /* e29: sn7474 */
 serial_out.ap = !start_l;
@@ -665,22 +695,22 @@ n_t_63x.ar = !init_l;
 n_t_63x.d = n_t_61x & dotpc_l
           # n_t_52x & n3v3 & !dotpc_l
           # n_t_63x & !n3v3 & !dotpc_l;
-n_t_63x.ck = tx_shift_l;
+n_t_63x.ck = !tx_shift_l;
 n_t_65x.ar = !init_l;
 n_t_65x.d = n_t_63x & dotpc_l
           # n_t_53x & n3v3 & !dotpc_l
           # n_t_65x & !n3v3 & !dotpc_l;
-n_t_65x.ck = tx_shift_l;
+n_t_65x.ck = !tx_shift_l;
 n_t_66x.ar = !init_l;
 n_t_66x.d = n_t_65x & dotpc_l
           # n_t_54x & n3v3 & !dotpc_l
           # n_t_66x & !n3v3 & !dotpc_l;
-n_t_66x.ck = tx_shift_l;
+n_t_66x.ck = !tx_shift_l;
 tx_data.ar = !init_l;
 tx_data.d = n_t_66x & dotpc_l
           # n_t_55x & n3v3 & !dotpc_l
           # tx_data & !n3v3 & !dotpc_l;
-tx_data.ck = tx_shift_l;
+tx_data.ck = !tx_shift_l;
 
 /* e33: sn97401 */
 /* c0_l = !dokcc; */
@@ -689,8 +719,7 @@ tx_data.ck = tx_shift_l;
 /* c1_l = !dokcc; */
 
 /* e34: sp384n */
-pause = b_pause_l;
-n_t_8x = pause
+n_t_8x = b_pause_l
        # data11_l;
 btp3 = tp3;
 b_pause_l = io_pause_l;
@@ -804,84 +833,67 @@ r_run_l.d = n3v3;
 r_run_l.ck = n_t_26x;
 r_run_l.ap = !init_l;
 
-/* e49: sn7493 */
-bd115200.ck = bd230400;
-bd115200.t = 'b'1;
-bd115200.ar = 'b'0;
-n_t_4x.ck = bd115200;
-n_t_4x.t = 'b'1;
-n_t_4x.ar = 'b'0;
-bd38400.ck = n_t_4x;
-bd38400.t = 'b'1;
-bd38400.ar = 'b'0;
-gdollar_3.ck = bd38400;
-gdollar_3.t = 'b'1;
-gdollar_3.ar = 'b'0;
-
 /* ic1: sn74138 */
-!iot0x_l = !md03_l & !md04_l & !md05_l & pause;
-!iot1x_l = !md03_l & !md04_l & md05_l & pause;
-!iot3x_l = !md03_l & md04_l & md05_l & pause;
-!iot4x_l = md03_l & !md04_l & !md05_l & pause;
+!iot4x_l = !md03_l & md04_l & md05_l & pause;
+!iot3x_l = md03_l & !md04_l & !md05_l & pause;
+!iot1x_l = md03_l & md04_l & !md05_l & pause;
+!iot0x_l = md03_l & md04_l & md05_l & pause;
 
 /* ic2: sn74138 */
-!iot40_l = !md06_l & !md07_l & !md08_l & !iot4x_l & pause;
-!iot41_l = !md06_l & !md07_l & md08_l & !iot4x_l & pause;
-!iot42_l = !md06_l & md07_l & !md08_l & !iot4x_l & pause;
-!iot43_l = !md06_l & md07_l & md08_l & !iot4x_l & pause;
-!iot44_l = md06_l & !md07_l & !md08_l & !iot4x_l & pause;
-!iot45_l = md06_l & !md07_l & md08_l & !iot4x_l & pause;
-!iot46_l = md06_l & md07_l & !md08_l & !iot4x_l & pause;
-!iot47_l = md06_l & md07_l & md08_l & !iot4x_l & pause;
+!iot47_l = !md06_l & !md07_l & !md08_l & !iot4x_l & pause;
+!iot46_l = !md06_l & !md07_l & md08_l & !iot4x_l & pause;
+!iot45_l = !md06_l & md07_l & !md08_l & !iot4x_l & pause;
+!iot44_l = !md06_l & md07_l & md08_l & !iot4x_l & pause;
+!iot43_l = md06_l & !md07_l & !md08_l & !iot4x_l & pause;
+!iot42_l = md06_l & !md07_l & md08_l & !iot4x_l & pause;
+!iot41_l = md06_l & md07_l & !md08_l & !iot4x_l & pause;
+!iot40_l = md06_l & md07_l & md08_l & !iot4x_l & pause;
 
 /* ic3: sn74151 */
-!tx_sel = 'b'1 & !'b'0 & !sw6 & !sw5 & !sw4
-    # iot04_l  & !'b'0 & !sw6 & !sw5 &  sw4
-    # iot41_l  & !'b'0 & !sw6 &  sw5 & !sw4
-    # iot43_l  & !'b'0 & !sw6 &  sw5 &  sw4
-    # iot45_l & !'b'0 &  sw6 & !sw5 & !sw4
-    # iot47_l & !'b'0 &  sw6 & !sw5 &  sw4
-    # iot35_l & !'b'0 &  sw6 &  sw5 & !sw4
-    # iot12_l & !'b'0 &  sw6 &  sw5 &  sw4;
+!tx_sel = 'b'1 & !'b'0 & !sw4 & !sw5 & !sw6
+    # iot04_l  & !'b'0 & !sw4 & !sw5 &  sw6
+    # iot41_l  & !'b'0 & !sw4 &  sw5 & !sw6
+    # iot43_l  & !'b'0 & !sw4 &  sw5 &  sw6
+    # iot45_l & !'b'0 &  sw4 & !sw5 & !sw6
+    # iot47_l & !'b'0 &  sw4 & !sw5 &  sw6
+    # iot35_l & !'b'0 &  sw4 &  sw5 & !sw6
+    # iot12_l & !'b'0 &  sw4 &  sw5 &  sw6;
 
 /* ic4: sn74151 */
-!rx_sel = 'b'1 & !'b'0 & !sw6 & !sw5 & !sw4
-    # iot03_l  & !'b'0 & !sw6 & !sw5 &  sw4
-    # iot40_l  & !'b'0 & !sw6 &  sw5 & !sw4
-    # iot42_l  & !'b'0 & !sw6 &  sw5 &  sw4
-    # iot44_l & !'b'0 &  sw6 & !sw5 & !sw4
-    # iot46_l & !'b'0 &  sw6 & !sw5 &  sw4
-    # iot34_l & !'b'0 &  sw6 &  sw5 & !sw4
-    # iot11_l & !'b'0 &  sw6 &  sw5 &  sw4;
+!rx_sel = 'b'1 & !'b'0 & !sw4 & !sw5 & !sw6
+    # iot03_l  & !'b'0 & !sw4 & !sw5 &  sw6
+    # iot40_l  & !'b'0 & !sw4 &  sw5 & !sw6
+    # iot42_l  & !'b'0 & !sw4 &  sw5 &  sw6
+    # iot44_l & !'b'0 &  sw4 & !sw5 & !sw6
+    # iot46_l & !'b'0 &  sw4 & !sw5 &  sw6
+    # iot34_l & !'b'0 &  sw4 &  sw5 & !sw6
+    # iot11_l & !'b'0 &  sw4 &  sw5 &  sw6;
 
 /* ic5: sn74138 */
-!iot03_l = !md06_l & md07_l & md08_l & !iot0x_l & pause;
-!iot04_l = md06_l & !md07_l & !md08_l & !iot0x_l & pause;
+!iot04_l = !md06_l & md07_l & md08_l & !iot0x_l & pause;
+!iot03_l = md06_l & !md07_l & !md08_l & !iot0x_l & pause;
 
 /* ic6: sn74138 */
-!iot11_l = !md06_l & !md07_l & md08_l & !iot1x_l & pause;
-!iot12_l = !md06_l & md07_l & !md08_l & !iot1x_l & pause;
+!iot12_l = md06_l & !md07_l & md08_l & !iot1x_l & pause;
+!iot11_l = md06_l & md07_l & !md08_l & !iot1x_l & pause;
 
 /* ic7: sn74138 */
-!iot34_l = md06_l & !md07_l & !md08_l & !iot3x_l & pause;
-!iot35_l = md06_l & !md07_l & md08_l & !iot3x_l & pause;
+!iot35_l = !md06_l & md07_l & !md08_l & !iot3x_l & pause;
+!iot34_l = !md06_l & md07_l & md08_l & !iot3x_l & pause;
 
 /* ic8: sn74151 */
-rx_rate = bd109 & !'b'0 & !sw3 & !sw2 & !sw1
-    # bd300  & !'b'0 & !sw3 & !sw2 &  sw1
-    # bd600  & !'b'0 & !sw3 &  sw2 & !sw1
-    # bd1200  & !'b'0 & !sw3 &  sw2 &  sw1
-    # bd9600 & !'b'0 &  sw3 & !sw2 & !sw1
-    # bd38400 & !'b'0 &  sw3 & !sw2 &  sw1
-    # bd115200 & !'b'0 &  sw3 &  sw2 & !sw1
-    # bd230400 & !'b'0 &  sw3 &  sw2 &  sw1;
+rx_rate = bd109 & !'b'0 & !sw1 & !sw2 & !sw3
+    # bd300  & !'b'0 & !sw1 & !sw2 &  sw3
+    # bd600  & !'b'0 & !sw1 &  sw2 & !sw3
+    # bd1200  & !'b'0 & !sw1 &  sw2 &  sw3
+    # bd9600 & !'b'0 &  sw1 & !sw2 & !sw3
+    # bd38400 & !'b'0 &  sw1 & !sw2 &  sw3
+    # bd76800 & !'b'0 &  sw1 &  sw2 & !sw3
+    # bd153600 & !'b'0 &  sw1 &  sw2 &  sw3;
 n_t_1x = !rx_rate;
 
 /* ic9: sn7411 */
-n_t_6x = n_t_2x & n_t_5x & bd1745;
-
-/* ic10: sn7408 */
-n_t_3x = (n_t_4x & bd38400);
+div11 = n_t_2x & n_t_5x & bd1745;
 
 /* ic12: sn7427 */
 is110 = !(sw1

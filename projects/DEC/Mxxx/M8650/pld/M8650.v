@@ -2,8 +2,10 @@
 // please don't edit it. 
 // input pins 
 // output pins 
-module m8650 (n_t_103x, serial_in, sw1, sw2, sw3, sw4, sw5, sw6, c0_l, c1_l, clk, data04_l, data05_l, data06_l, data07_l, data08_l, data09_l, data10_l, data11_l, initialize, int_enab, int_rqst_l, internal_io_l, io_pause_l, md03_l, md04_l, md05_l, md06_l, md07_l, md08_l, md09_l, md10_l, md11_l, power_ok, r_run_l, serial_out, skip_l, tp3, tx_div_l);
-input n_t_103x;
+module m8650 (/*n_t_103x,*/tp_ca1, serial_in, sw1, sw2, sw3, sw4, sw5, sw6, c0_l, c1_l, clk, data04_l, data05_l, data06_l, data07_l, data08_l, data09_l, data10_l, data11_l, initialize, /*int_enab,*/ int_rqst_l, internal_io_l, io_pause_l, md03_l, md04_l, md05_l, md06_l, md07_l, md08_l, md09_l, md10_l, md11_l, power_ok, /*r_run_l,*/ serial_out, skip_l, tp3/*, tx_div_l*/);
+// VRS Kludge
+output tp_ca1;
+//input n_t_103x; //VRS
 input serial_in;
 input sw1;
 input sw2;
@@ -23,7 +25,7 @@ inout data09_l;
 inout data10_l;
 inout data11_l;
 input initialize;
-inout int_enab;
+//inout int_enab; //VRS
 output int_rqst_l;
 output internal_io_l;
 input io_pause_l;
@@ -37,18 +39,20 @@ input md09_l;
 input md10_l;
 input md11_l;
 input power_ok;
-output reg r_run_l;
+//output reg r_run_l; //VRS
 output reg serial_out;
 inout skip_l;
 input tp3;
-inout tx_div_l;
+//inout tx_div_l; //VRS
+
+reg r_run_l;
 
 reg bd1745_m;
 reg ck_pulse_m;
 reg enab_m;
 reg gdollar_0_m;
-reg gdollar_1_m;
-reg gdollar_2_m;
+reg gdollar_4_m;
+reg gdollar_5_m;
 reg int_enab_l_m;
 reg last_unit_m;
 reg n_t_2x_m;
@@ -82,8 +86,8 @@ reg ck_pulse;
 reg rx_div2_l;
 reg rx_div4_l;
 reg n_t_2x;
-reg gdollar_0;
 reg n_t_5x;
+reg gdollar_0;
 reg bd1745;
 reg rx7;
 reg n_t_34x;
@@ -111,12 +115,20 @@ reg bd4800;
 reg bd2400;
 reg tx_div;
 reg spike_det_l;
+reg bd614400;
+reg bd307200;
+reg bd153600;
+reg bd76800;
+reg bd38400;
+reg gdollar_1;
+reg gdollar_2;
+reg gdollar_3;
 reg tx_active_l;
 reg start_l;
 reg stp1;
-reg gdollar_1;
+reg gdollar_4;
 reg stp2;
-reg gdollar_2;
+reg gdollar_5;
 reg n_t_60x;
 reg n_t_62x;
 reg n_t_56x;
@@ -129,16 +141,13 @@ reg tx_data;
 reg tflg_l;
 reg int_enab_l;
 reg rflg_l;
-reg bd115200;
-reg n_t_4x;
-reg bd38400;
-reg gdollar_3;
 // internal nodes 
 wire ckkcc_l;
 wire ckkcf;
 wire ckkie;
 wire cktcf;
 wire cktfl;
+wire div11;
 wire dokcc;
 wire dokrs;
 wire dotcf;
@@ -179,7 +188,6 @@ wire n_t_23x;
 wire n_t_25x;
 wire n_t_28x;
 wire n_t_29x;
-wire n_t_3x;
 wire n_t_41x;
 wire n_t_42x;
 wire n_t_46x;
@@ -192,7 +200,6 @@ wire n_t_54x;
 wire n_t_55x;
 wire n_t_68x;
 wire n_t_69x;
-wire n_t_6x;
 wire n_t_70x;
 wire n_t_76x;
 wire n_t_81x;
@@ -221,6 +228,15 @@ wire tx8;
 wire tx_sel;
 wire tx_shift_l;
 // code nodes 
+
+// VRS Kludges
+// n$103 is supposed to be a delayed tx_div_l.
+//assign n_t_103x = tx_div_l;
+assign n_t_103x = 1'b1;
+// Output debug information on CA1.
+//assign tp_ca1 = tx_active_l;
+assign tp_ca1 = enab_m;
+
 // equations 
 // c1: c_us 
 // c2: c_us 
@@ -331,80 +347,80 @@ always @(rx_div2_l, rx_last_l, rx_div4_l_m)
     rx_div4_l <= rx_div4_l_m;
   end
 // e5: sn7493 
-always @(bd19200, n_t_6x, n_t_2x)
-  if (n_t_6x) begin
+always @(bd19200, div11, n_t_2x)
+  if (div11) begin
     n_t_2x_m <= 1'b0;
   end else
   if (~(bd19200)) begin
     n_t_2x_m <= ~n_t_2x;
   end
-always @(bd19200, n_t_6x, n_t_2x_m)
-  if (n_t_6x) begin
+always @(bd19200, div11, n_t_2x_m)
+  if (div11) begin
     n_t_2x <= 1'b0;
   end else
   if (bd19200) begin
     n_t_2x <= n_t_2x_m;
   end
-always @(n_t_2x, n_t_6x, gdollar_0)
-  if (n_t_6x) begin
-    gdollar_0_m <= 1'b0;
-  end else
-  if (~(n_t_2x)) begin
-    gdollar_0_m <= ~gdollar_0;
-  end
-always @(n_t_2x, n_t_6x, gdollar_0_m)
-  if (n_t_6x) begin
-    gdollar_0 <= 1'b0;
-  end else
-  if (n_t_2x) begin
-    gdollar_0 <= gdollar_0_m;
-  end
-always @(gdollar_0, n_t_6x, n_t_5x)
-  if (n_t_6x) begin
+always @(n_t_2x, div11, n_t_5x)
+  if (div11) begin
     n_t_5x_m <= 1'b0;
   end else
-  if (~(gdollar_0)) begin
+  if (~(n_t_2x)) begin
     n_t_5x_m <= ~n_t_5x;
   end
-always @(gdollar_0, n_t_6x, n_t_5x_m)
-  if (n_t_6x) begin
+always @(n_t_2x, div11, n_t_5x_m)
+  if (div11) begin
     n_t_5x <= 1'b0;
   end else
-  if (gdollar_0) begin
+  if (n_t_2x) begin
     n_t_5x <= n_t_5x_m;
   end
-always @(n_t_5x, n_t_6x, bd1745)
-  if (n_t_6x) begin
-    bd1745_m <= 1'b0;
+always @(n_t_5x, div11, gdollar_0)
+  if (div11) begin
+    gdollar_0_m <= 1'b0;
   end else
   if (~(n_t_5x)) begin
-    bd1745_m <= ~bd1745;
+    gdollar_0_m <= ~gdollar_0;
   end
-always @(n_t_5x, n_t_6x, bd1745_m)
-  if (n_t_6x) begin
-    bd1745 <= 1'b0;
+always @(n_t_5x, div11, gdollar_0_m)
+  if (div11) begin
+    gdollar_0 <= 1'b0;
   end else
   if (n_t_5x) begin
+    gdollar_0 <= gdollar_0_m;
+  end
+always @(gdollar_0, div11, bd1745)
+  if (div11) begin
+    bd1745_m <= 1'b0;
+  end else
+  if (~(gdollar_0)) begin
+    bd1745_m <= ~bd1745;
+  end
+always @(gdollar_0, div11, bd1745_m)
+  if (div11) begin
+    bd1745 <= 1'b0;
+  end else
+  if (gdollar_0) begin
     bd1745 <= bd1745_m;
   end
 // e6: dec8271 
-always @(posedge n_t_41x)
-  if (n_t_41x) begin
+always @(negedge n_t_41x)
+  if (~n_t_41x) begin
     rx7 <= ~serial_in & p_pulse_l
                 | ~p_pulse_l;
   end
-always @(posedge n_t_41x)
-  if (n_t_41x) begin
+always @(negedge n_t_41x)
+  if (~n_t_41x) begin
     n_t_34x <= rx7 & p_pulse_l
                     | ~p_pulse_l;
   end
-always @(posedge n_t_41x)
-  if (n_t_41x) begin
+always @(negedge n_t_41x)
+  if (~n_t_41x) begin
     n_t_36x <= n_t_34x & p_pulse_l
                     | ~p_pulse_l;
   end
-always @(posedge n_t_41x)
-  if (n_t_41x) begin
+always @(negedge n_t_41x)
+  if (~n_t_41x) begin
     n_t_35x <= n_t_36x & p_pulse_l
                     | ~p_pulse_l;
   end
@@ -490,23 +506,23 @@ always @(posedge bd300)
     bd150 <= ~bd150;
   end
 // e10: dec8271 
-always @(posedge n_t_41x)
-  if (n_t_41x) begin
+always @(negedge n_t_41x)
+  if (~n_t_41x) begin
     n_t_37x <= n_t_35x & p_pulse_l
                     | ~p_pulse_l;
   end
-always @(posedge n_t_41x)
-  if (n_t_41x) begin
+always @(negedge n_t_41x)
+  if (~n_t_41x) begin
     n_t_38x <= n_t_37x & p_pulse_l
                     | ~p_pulse_l;
   end
-always @(posedge n_t_41x)
-  if (n_t_41x) begin
+always @(negedge n_t_41x)
+  if (~n_t_41x) begin
     n_t_39x <= n_t_38x & p_pulse_l
                     | ~p_pulse_l;
   end
-always @(posedge n_t_41x)
-  if (n_t_41x) begin
+always @(negedge n_t_41x)
+  if (~n_t_41x) begin
     n_t_40x <= n_t_39x & p_pulse_l
                     | ~p_pulse_l;
   end
@@ -598,6 +614,40 @@ always @(rx_active8_l, rx_again_l, initialize, spike_det_l_m)
   if (rx_active8_l) begin
     spike_det_l <= spike_det_l_m;
   end
+// e17: sn7493 
+always @(posedge clk)
+  if (clk) begin
+    bd614400 <= ~bd614400;
+  end
+always @(posedge bd614400)
+  if (bd614400) begin
+    bd307200 <= ~bd307200;
+  end
+always @(posedge bd307200)
+  if (bd307200) begin
+    bd153600 <= ~bd153600;
+  end
+always @(posedge bd153600)
+  if (bd153600) begin
+    bd76800 <= ~bd76800;
+  end
+// e18: sn7493 
+always @(posedge bd76800)
+  if (bd76800) begin
+    bd38400 <= ~bd38400;
+  end
+always @(posedge 1'b0)
+  if (1'b0) begin
+    gdollar_1 <= ~gdollar_1;
+  end
+always @(posedge gdollar_1)
+  if (gdollar_1) begin
+    gdollar_2 <= ~gdollar_2;
+  end
+always @(posedge gdollar_2)
+  if (gdollar_2) begin
+    gdollar_3 <= ~gdollar_3;
+  end
 // e19: sn7410 
 assign rx_again_l = ~(serial_in & ~rx_last_l & rx_rate);
 assign tx8 = ~(n_t_68x & tx_div_l & n_t_69x);
@@ -660,57 +710,57 @@ always @(rx_rate, tx_div, tx_active_l)
   if (~tx_div) begin
     stp1_m <= 1'b0;
   end else
-  if (~(~rx_rate)) begin
+  if (~(rx_rate)) begin
     stp1_m <= tx_active_l;
   end
 always @(rx_rate, tx_div, stp1_m)
   if (~tx_div) begin
     stp1 <= 1'b0;
   end else
-  if (~rx_rate) begin
+  if (rx_rate) begin
     stp1 <= stp1_m;
   end
 always @(rx_rate, tx_div, stp1)
   if (~tx_div) begin
-    gdollar_1_m <= 1'b0;
+    gdollar_4_m <= 1'b0;
   end else
-  if (~(~rx_rate)) begin
-    gdollar_1_m <= stp1;
+  if (~(rx_rate)) begin
+    gdollar_4_m <= stp1;
   end
-always @(rx_rate, tx_div, gdollar_1_m)
+always @(rx_rate, tx_div, gdollar_4_m)
   if (~tx_div) begin
-    gdollar_1 <= 1'b0;
+    gdollar_4 <= 1'b0;
   end else
-  if (~rx_rate) begin
-    gdollar_1 <= gdollar_1_m;
+  if (rx_rate) begin
+    gdollar_4 <= gdollar_4_m;
   end
-always @(rx_rate, tx_div, gdollar_1)
+always @(rx_rate, tx_div, gdollar_4)
   if (~tx_div) begin
     stp2_m <= 1'b0;
   end else
-  if (~(~rx_rate)) begin
-    stp2_m <= gdollar_1;
+  if (~(rx_rate)) begin
+    stp2_m <= gdollar_4;
   end
 always @(rx_rate, tx_div, stp2_m)
   if (~tx_div) begin
     stp2 <= 1'b0;
   end else
-  if (~rx_rate) begin
+  if (rx_rate) begin
     stp2 <= stp2_m;
   end
 always @(rx_rate, tx_div, stp2)
   if (~tx_div) begin
-    gdollar_2_m <= 1'b0;
+    gdollar_5_m <= 1'b0;
   end else
-  if (~(~rx_rate)) begin
-    gdollar_2_m <= stp2;
+  if (~(rx_rate)) begin
+    gdollar_5_m <= stp2;
   end
-always @(rx_rate, tx_div, gdollar_2_m)
+always @(rx_rate, tx_div, gdollar_5_m)
   if (~tx_div) begin
-    gdollar_2 <= 1'b0;
+    gdollar_5 <= 1'b0;
   end else
-  if (~rx_rate) begin
-    gdollar_2 <= gdollar_2_m;
+  if (rx_rate) begin
+    gdollar_5 <= gdollar_5_m;
   end
 // e27: sp380n 
 assign n_t_47x = ~(data05_l
@@ -726,7 +776,7 @@ always @(tx_shift_l, initialize, enab, dotpc, n_t_46x, dotpc)
   if (initialize) begin
     n_t_60x_m <= 1'b0;
   end else
-  if (~(tx_shift_l)) begin
+  if (~(~tx_shift_l)) begin
     n_t_60x_m <= enab & ~dotpc
                     | n_t_46x & dotpc;
   end
@@ -734,14 +784,14 @@ always @(tx_shift_l, initialize, n_t_60x_m)
   if (initialize) begin
     n_t_60x <= 1'b0;
   end else
-  if (tx_shift_l) begin
+  if (~tx_shift_l) begin
     n_t_60x <= n_t_60x_m;
   end
 always @(tx_shift_l, initialize, n_t_60x, dotpc, n_t_47x, dotpc)
   if (initialize) begin
     n_t_62x_m <= 1'b0;
   end else
-  if (~(tx_shift_l)) begin
+  if (~(~tx_shift_l)) begin
     n_t_62x_m <= n_t_60x & ~dotpc
                     | n_t_47x & dotpc;
   end
@@ -749,14 +799,14 @@ always @(tx_shift_l, initialize, n_t_62x_m)
   if (initialize) begin
     n_t_62x <= 1'b0;
   end else
-  if (tx_shift_l) begin
+  if (~tx_shift_l) begin
     n_t_62x <= n_t_62x_m;
   end
 always @(tx_shift_l, initialize, n_t_62x, dotpc, n_t_48x, dotpc)
   if (initialize) begin
     n_t_56x_m <= 1'b0;
   end else
-  if (~(tx_shift_l)) begin
+  if (~(~tx_shift_l)) begin
     n_t_56x_m <= n_t_62x & ~dotpc
                     | n_t_48x & dotpc;
   end
@@ -764,14 +814,14 @@ always @(tx_shift_l, initialize, n_t_56x_m)
   if (initialize) begin
     n_t_56x <= 1'b0;
   end else
-  if (tx_shift_l) begin
+  if (~tx_shift_l) begin
     n_t_56x <= n_t_56x_m;
   end
 always @(tx_shift_l, initialize, n_t_56x, dotpc, n_t_49x, dotpc)
   if (initialize) begin
     n_t_61x_m <= 1'b0;
   end else
-  if (~(tx_shift_l)) begin
+  if (~(~tx_shift_l)) begin
     n_t_61x_m <= n_t_56x & ~dotpc
                     | n_t_49x & dotpc;
   end
@@ -779,7 +829,7 @@ always @(tx_shift_l, initialize, n_t_61x_m)
   if (initialize) begin
     n_t_61x <= 1'b0;
   end else
-  if (tx_shift_l) begin
+  if (~tx_shift_l) begin
     n_t_61x <= n_t_61x_m;
   end
 // e29: sn7474 
@@ -831,7 +881,7 @@ always @(tx_shift_l, initialize, n_t_61x, dotpc, n_t_52x, dotpc)
   if (initialize) begin
     n_t_63x_m <= 1'b0;
   end else
-  if (~(tx_shift_l)) begin
+  if (~(~tx_shift_l)) begin
     n_t_63x_m <= n_t_61x & ~dotpc
                     | n_t_52x & dotpc;
   end
@@ -839,14 +889,14 @@ always @(tx_shift_l, initialize, n_t_63x_m)
   if (initialize) begin
     n_t_63x <= 1'b0;
   end else
-  if (tx_shift_l) begin
+  if (~tx_shift_l) begin
     n_t_63x <= n_t_63x_m;
   end
 always @(tx_shift_l, initialize, n_t_63x, dotpc, n_t_53x, dotpc)
   if (initialize) begin
     n_t_65x_m <= 1'b0;
   end else
-  if (~(tx_shift_l)) begin
+  if (~(~tx_shift_l)) begin
     n_t_65x_m <= n_t_63x & ~dotpc
                     | n_t_53x & dotpc;
   end
@@ -854,14 +904,14 @@ always @(tx_shift_l, initialize, n_t_65x_m)
   if (initialize) begin
     n_t_65x <= 1'b0;
   end else
-  if (tx_shift_l) begin
+  if (~tx_shift_l) begin
     n_t_65x <= n_t_65x_m;
   end
 always @(tx_shift_l, initialize, n_t_65x, dotpc, n_t_54x, dotpc)
   if (initialize) begin
     n_t_66x_m <= 1'b0;
   end else
-  if (~(tx_shift_l)) begin
+  if (~(~tx_shift_l)) begin
     n_t_66x_m <= n_t_65x & ~dotpc
                     | n_t_54x & dotpc;
   end
@@ -869,14 +919,14 @@ always @(tx_shift_l, initialize, n_t_66x_m)
   if (initialize) begin
     n_t_66x <= 1'b0;
   end else
-  if (tx_shift_l) begin
+  if (~tx_shift_l) begin
     n_t_66x <= n_t_66x_m;
   end
 always @(tx_shift_l, initialize, n_t_66x, dotpc, n_t_55x, dotpc)
   if (initialize) begin
     tx_data_m <= 1'b0;
   end else
-  if (~(tx_shift_l)) begin
+  if (~(~tx_shift_l)) begin
     tx_data_m <= n_t_66x & ~dotpc
                     | n_t_55x & dotpc;
   end
@@ -884,7 +934,7 @@ always @(tx_shift_l, initialize, tx_data_m)
   if (initialize) begin
     tx_data <= 1'b0;
   end else
-  if (tx_shift_l) begin
+  if (~tx_shift_l) begin
     tx_data <= tx_data_m;
   end
 // e33: sn97401 
@@ -1028,77 +1078,58 @@ always @(rx7, ckkcc_l, initialize, r_run_l_m)
   if (~rx7) begin
     r_run_l <= r_run_l_m;
   end
-// e49: sn7493 
-always @(negedge clk)
-  if (~clk) begin
-    bd115200 <= ~bd115200;
-  end
-always @(posedge bd115200)
-  if (bd115200) begin
-    n_t_4x <= ~n_t_4x;
-  end
-always @(posedge n_t_4x)
-  if (n_t_4x) begin
-    bd38400 <= ~bd38400;
-  end
-always @(posedge bd38400)
-  if (bd38400) begin
-    gdollar_3 <= ~gdollar_3;
-  end
 // ic1: sn74138 
-assign iot0x_l = ~(~md03_l & ~md04_l & ~md05_l & io_pause_l);
-assign iot1x_l = ~(~md03_l & ~md04_l & md05_l & io_pause_l);
-assign iot3x_l = ~(~md03_l & md04_l & md05_l & io_pause_l);
-assign iot4x_l = ~(md03_l & ~md04_l & ~md05_l & io_pause_l);
+assign iot4x_l = ~(~md03_l & md04_l & md05_l & ~io_pause_l);
+assign iot3x_l = ~(md03_l & ~md04_l & ~md05_l & ~io_pause_l);
+assign iot1x_l = ~(md03_l & md04_l & ~md05_l & ~io_pause_l);
+assign iot0x_l = ~(md03_l & md04_l & md05_l & ~io_pause_l);
 // ic2: sn74138 
-assign iot40_l = ~(~md06_l & ~md07_l & ~md08_l & ~iot4x_l & io_pause_l);
-assign iot41_l = ~(~md06_l & ~md07_l & md08_l & ~iot4x_l & io_pause_l);
-assign iot42_l = ~(~md06_l & md07_l & ~md08_l & ~iot4x_l & io_pause_l);
-assign iot43_l = ~(~md06_l & md07_l & md08_l & ~iot4x_l & io_pause_l);
-assign iot44_l = ~(md06_l & ~md07_l & ~md08_l & ~iot4x_l & io_pause_l);
-assign iot45_l = ~(md06_l & ~md07_l & md08_l & ~iot4x_l & io_pause_l);
-assign iot46_l = ~(md06_l & md07_l & ~md08_l & ~iot4x_l & io_pause_l);
-assign iot47_l = ~(md06_l & md07_l & md08_l & ~iot4x_l & io_pause_l);
+assign iot47_l = ~(~md06_l & ~md07_l & ~md08_l & ~iot4x_l & ~io_pause_l);
+assign iot46_l = ~(~md06_l & ~md07_l & md08_l & ~iot4x_l & ~io_pause_l);
+assign iot45_l = ~(~md06_l & md07_l & ~md08_l & ~iot4x_l & ~io_pause_l);
+assign iot44_l = ~(~md06_l & md07_l & md08_l & ~iot4x_l & ~io_pause_l);
+assign iot43_l = ~(md06_l & ~md07_l & ~md08_l & ~iot4x_l & ~io_pause_l);
+assign iot42_l = ~(md06_l & ~md07_l & md08_l & ~iot4x_l & ~io_pause_l);
+assign iot41_l = ~(md06_l & md07_l & ~md08_l & ~iot4x_l & ~io_pause_l);
+assign iot40_l = ~(md06_l & md07_l & md08_l & ~iot4x_l & ~io_pause_l);
 // ic3: sn74151 
-assign tx_sel = ~(~sw6 & ~sw5 & ~sw4
-                   | iot04_l & ~sw6 & ~sw5 & sw4
-                   | iot41_l & ~sw6 & sw5 & ~sw4
-                   | iot43_l & ~sw6 & sw5 & sw4
-                   | iot45_l & sw6 & ~sw5 & ~sw4
-                   | iot47_l & sw6 & ~sw5 & sw4
-                   | iot35_l & sw6 & sw5 & ~sw4
-                   | iot12_l & sw6 & sw5 & sw4);
+assign tx_sel = ~(~sw4 & ~sw5 & ~sw6
+                   | iot04_l & ~sw4 & ~sw5 & sw6
+                   | iot41_l & ~sw4 & sw5 & ~sw6
+                   | iot43_l & ~sw4 & sw5 & sw6
+                   | iot45_l & sw4 & ~sw5 & ~sw6
+                   | iot47_l & sw4 & ~sw5 & sw6
+                   | iot35_l & sw4 & sw5 & ~sw6
+                   | iot12_l & sw4 & sw5 & sw6);
 // ic4: sn74151 
-assign rx_sel = ~(~sw6 & ~sw5 & ~sw4
-                   | iot03_l & ~sw6 & ~sw5 & sw4
-                   | iot40_l & ~sw6 & sw5 & ~sw4
-                   | iot42_l & ~sw6 & sw5 & sw4
-                   | iot44_l & sw6 & ~sw5 & ~sw4
-                   | iot46_l & sw6 & ~sw5 & sw4
-                   | iot34_l & sw6 & sw5 & ~sw4
-                   | iot11_l & sw6 & sw5 & sw4);
+assign rx_sel = ~(~sw4 & ~sw5 & ~sw6
+                   | iot03_l & ~sw4 & ~sw5 & sw6
+                   | iot40_l & ~sw4 & sw5 & ~sw6
+                   | iot42_l & ~sw4 & sw5 & sw6
+                   | iot44_l & sw4 & ~sw5 & ~sw6
+                   | iot46_l & sw4 & ~sw5 & sw6
+                   | iot34_l & sw4 & sw5 & ~sw6
+                   | iot11_l & sw4 & sw5 & sw6);
 // ic5: sn74138 
-assign iot03_l = ~(~md06_l & md07_l & md08_l & ~iot0x_l & io_pause_l);
-assign iot04_l = ~(md06_l & ~md07_l & ~md08_l & ~iot0x_l & io_pause_l);
+assign iot04_l = ~(~md06_l & md07_l & md08_l & ~iot0x_l & ~io_pause_l);
+assign iot03_l = ~(md06_l & ~md07_l & ~md08_l & ~iot0x_l & ~io_pause_l);
 // ic6: sn74138 
-assign iot11_l = ~(~md06_l & ~md07_l & md08_l & ~iot1x_l & io_pause_l);
-assign iot12_l = ~(~md06_l & md07_l & ~md08_l & ~iot1x_l & io_pause_l);
+assign iot12_l = ~(md06_l & ~md07_l & md08_l & ~iot1x_l & ~io_pause_l);
+assign iot11_l = ~(md06_l & md07_l & ~md08_l & ~iot1x_l & ~io_pause_l);
 // ic7: sn74138 
-assign iot34_l = ~(md06_l & ~md07_l & ~md08_l & ~iot3x_l & io_pause_l);
-assign iot35_l = ~(md06_l & ~md07_l & md08_l & ~iot3x_l & io_pause_l);
+assign iot35_l = ~(~md06_l & md07_l & ~md08_l & ~iot3x_l & ~io_pause_l);
+assign iot34_l = ~(~md06_l & md07_l & md08_l & ~iot3x_l & ~io_pause_l);
 // ic8: sn74151 
-assign rx_rate = bd109 & ~sw3 & ~sw2 & ~sw1
-                  | bd300 & ~sw3 & ~sw2 & sw1
-                  | bd600 & ~sw3 & sw2 & ~sw1
-                  | bd1200 & ~sw3 & sw2 & sw1
-                  | bd9600 & sw3 & ~sw2 & ~sw1
-                  | bd38400 & sw3 & ~sw2 & sw1
-                  | bd115200 & sw3 & sw2 & ~sw1
-                  | ~clk & sw3 & sw2 & sw1;
+assign rx_rate = bd109 & ~sw1 & ~sw2 & ~sw3
+                  | bd300 & ~sw1 & ~sw2 & sw3
+                  | bd600 & ~sw1 & sw2 & ~sw3
+                  | bd1200 & ~sw1 & sw2 & sw3
+                  | bd9600 & sw1 & ~sw2 & ~sw3
+                  | bd38400 & sw1 & ~sw2 & sw3
+                  | bd76800 & sw1 & sw2 & ~sw3
+                  | bd153600 & sw1 & sw2 & sw3;
 // ic9: sn7411 
-assign n_t_6x = n_t_2x & n_t_5x & bd1745;
-// ic10: sn7408 
-assign n_t_3x = (n_t_4x & bd38400);
+assign div11 = n_t_2x & n_t_5x & bd1745;
 // ic12: sn7427 
 assign is110 = ~(sw1
                   | sw2

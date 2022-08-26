@@ -11,7 +11,7 @@ Conversion is completed
 Options :  (1508 only)
    Powerdown :		OFF
    Security Bit :	AUTO
-   Slew Rate :		AUTO
+   Slew Rate :		SLOW
    PinClk :		OFF
    Race Coverage :	ON
    Pin Keeper :		OFF

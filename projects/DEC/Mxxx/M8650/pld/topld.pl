@@ -729,14 +729,14 @@ sub dm8093 {
 $hidden{'dm8093'} = 0;
 
 sub sn74138 {
-  &qcode("!$pad{15} = !$pad{1} & !$pad{2} & !$pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{15};
-  &qcode("!$pad{14} = !$pad{1} & !$pad{2} &  $pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{14};
-  &qcode("!$pad{13} = !$pad{1} &  $pad{2} & !$pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{13};
-  &qcode("!$pad{12} = !$pad{1} &  $pad{2} &  $pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{12};
-  &qcode("!$pad{11} =  $pad{1} & !$pad{2} & !$pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{11};
-  &qcode("!$pad{10} =  $pad{1} & !$pad{2} &  $pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{10};
-  &qcode("!$pad{ 9} =  $pad{1} &  $pad{2} & !$pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{9};
-  &qcode("!$pad{ 7} =  $pad{1} &  $pad{2} &  $pad{3} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{7};
+  &qcode("!$pad{15} = !$pad{3} & !$pad{2} & !$pad{1} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{15};
+  &qcode("!$pad{14} = !$pad{3} & !$pad{2} &  $pad{1} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{14};
+  &qcode("!$pad{13} = !$pad{3} &  $pad{2} & !$pad{1} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{13};
+  &qcode("!$pad{12} = !$pad{3} &  $pad{2} &  $pad{1} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{12};
+  &qcode("!$pad{11} =  $pad{3} & !$pad{2} & !$pad{1} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{11};
+  &qcode("!$pad{10} =  $pad{3} & !$pad{2} &  $pad{1} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{10};
+  &qcode("!$pad{ 9} =  $pad{3} &  $pad{2} & !$pad{1} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{9};
+  &qcode("!$pad{ 7} =  $pad{3} &  $pad{2} &  $pad{1} & !$pad{4} & !$pad{5} & $pad{6};\n") if defined $pad{7};
 }
 $hidden{'sn74138'} = 0;
 
@@ -1499,6 +1499,7 @@ sub mc8266 {
 }
 $hidden{'mc8266'} = 0;
 
+# Note: Negative going clock transition!
 sub mc8271 {
   # We need Qa..Qd even if their pads are NC.
   $pad{5} = &gnext unless defined $pad{5};
@@ -1511,16 +1512,16 @@ sub mc8271 {
   &pinnode($pad{11});
   &qcode("$pad{5}.ar = !$pad{1};\n");
   &qcode("$pad{5}.d = $pad{4}&$pad{13} # $pad{3}&$pad{10}&!$pad{13} # $pad{5}&!$pad{10}&!$pad{13};\n");
-  &qcode("$pad{5}.ck = $pad{6};\n");
+  &qcode("$pad{5}.ck = !$pad{6};\n");
   &qcode("$pad{7}.ar = !$pad{1};\n");
   &qcode("$pad{7}.d = $pad{5}&$pad{13} # $pad{2}&$pad{10}&!$pad{13} # $pad{7}&!$pad{10}&!$pad{13};\n");
-  &qcode("$pad{7}.ck = $pad{6};\n");
+  &qcode("$pad{7}.ck = !$pad{6};\n");
   &qcode("$pad{9}.ar = !$pad{1};\n");
   &qcode("$pad{9}.d = $pad{7}&$pad{13} # $pad{15}&$pad{10}&!$pad{13} # $pad{9}&!$pad{10}&!$pad{13};\n");
-  &qcode("$pad{9}.ck = $pad{6};\n");
+  &qcode("$pad{9}.ck = !$pad{6};\n");
   &qcode("$pad{11}.ar = !$pad{1};\n");
   &qcode("$pad{11}.d = $pad{9}&$pad{13} # $pad{14}&$pad{10}&!$pad{13} # $pad{11}&!$pad{10}&!$pad{13};\n");
-  &qcode("$pad{11}.ck = $pad{6};\n");
+  &qcode("$pad{11}.ck = !$pad{6};\n");
   &qcode("$pad{12} = !$pad{11};\n") if defined $pad{12};
 }
 $hidden{'mc8271'} = 0;

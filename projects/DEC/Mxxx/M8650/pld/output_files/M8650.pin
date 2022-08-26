@@ -61,87 +61,87 @@ CHIP  "M8650"  ASSIGNED TO AN: EPM7128SLC84-15
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-GND+                         : 1         :        :                   :         :           :                
+sw1                          : 1         : input  : TTL               :         :           : Y              
 GND+                         : 2         :        :                   :         :           :                
 VCCINT                       : 3         : power  :                   : 5.0V    :           :                
-initialize                   : 4         : input  : TTL               :         :           : N              
-n_t_103x                     : 5         : input  : TTL               :         :           : N              
-RESERVED                     : 6         :        :                   :         :           :                
+data08_l                     : 4         : bidir  : TTL               :         :           : Y              
+RESERVED_INPUT               : 5         :        :                   :         :           :                
+md11_l                       : 6         : input  : TTL               :         :           : Y              
 GND                          : 7         : gnd    :                   :         :           :                
-power_ok                     : 8         : input  : TTL               :         :           : N              
-md04_l                       : 9         : input  : TTL               :         :           : N              
-RESERVED                     : 10        :        :                   :         :           :                
-serial_out                   : 11        : output : TTL               :         :           : N              
-tx_div_l                     : 12        : bidir  : TTL               :         :           : N              
+RESERVED_INPUT               : 8         :        :                   :         :           :                
+md10_l                       : 9         : input  : TTL               :         :           : Y              
+md09_l                       : 10        : input  : TTL               :         :           : Y              
+RESERVED_INPUT               : 11        :        :                   :         :           :                
+md08_l                       : 12        : input  : TTL               :         :           : Y              
 VCCIO                        : 13        : power  :                   : 5.0V    :           :                
-TDI                          : 14        : input  : TTL               :         :           : N              
-data08_l                     : 15        : bidir  : TTL               :         :           : N              
-internal_io_l                : 16        : output : TTL               :         :           : N              
-c0_l                         : 17        : output : TTL               :         :           : N              
-data09_l                     : 18        : bidir  : TTL               :         :           : N              
+TDI                          : 14        : input  : TTL               :         :           : Y              
+RESERVED_INPUT               : 15        :        :                   :         :           :                
+RESERVED_INPUT               : 16        :        :                   :         :           :                
+RESERVED_INPUT               : 17        :        :                   :         :           :                
+RESERVED_INPUT               : 18        :        :                   :         :           :                
 GND                          : 19        : gnd    :                   :         :           :                
-data07_l                     : 20        : bidir  : TTL               :         :           : N              
-data06_l                     : 21        : bidir  : TTL               :         :           : N              
-data11_l                     : 22        : bidir  : TTL               :         :           : N              
-TMS                          : 23        : input  : TTL               :         :           : N              
-c1_l                         : 24        : output : TTL               :         :           : N              
-data10_l                     : 25        : bidir  : TTL               :         :           : N              
+RESERVED_INPUT               : 20        :        :                   :         :           :                
+RESERVED_INPUT               : 21        :        :                   :         :           :                
+skip_l                       : 22        : bidir  : TTL               :         :           : Y              
+TMS                          : 23        : input  : TTL               :         :           : Y              
+initialize                   : 24        : input  : TTL               :         :           : Y              
+int_rqst_l                   : 25        : output : TTL               :         :           : Y              
 VCCIO                        : 26        : power  :                   : 5.0V    :           :                
-RESERVED                     : 27        :        :                   :         :           :                
-md07_l                       : 28        : input  : TTL               :         :           : N              
-RESERVED                     : 29        :        :                   :         :           :                
-data05_l                     : 30        : bidir  : TTL               :         :           : N              
-data04_l                     : 31        : bidir  : TTL               :         :           : N              
+RESERVED_INPUT               : 27        :        :                   :         :           :                
+internal_io_l                : 28        : output : TTL               :         :           : Y              
+RESERVED_INPUT               : 29        :        :                   :         :           :                
+RESERVED_INPUT               : 30        :        :                   :         :           :                
+tp3                          : 31        : input  : TTL               :         :           : Y              
 GND                          : 32        : gnd    :                   :         :           :                
-tp3                          : 33        : input  : TTL               :         :           : N              
-RESERVED                     : 34        :        :                   :         :           :                
-sw3                          : 35        : input  : TTL               :         :           : N              
-RESERVED                     : 36        :        :                   :         :           :                
-sw1                          : 37        : input  : TTL               :         :           : N              
+c1_l                         : 33        : output : TTL               :         :           : Y              
+RESERVED_INPUT               : 34        :        :                   :         :           :                
+c0_l                         : 35        : output : TTL               :         :           : Y              
+io_pause_l                   : 36        : input  : TTL               :         :           : Y              
+tp_ca1                       : 37        : output : TTL               :         :           : Y              
 VCCIO                        : 38        : power  :                   : 5.0V    :           :                
-sw2                          : 39        : input  : TTL               :         :           : N              
-RESERVED                     : 40        :        :                   :         :           :                
-sw5                          : 41        : input  : TTL               :         :           : N              
+power_ok                     : 39        : input  : TTL               :         :           : Y              
+data07_l                     : 40        : bidir  : TTL               :         :           : Y              
+RESERVED_INPUT               : 41        :        :                   :         :           :                
 GND                          : 42        : gnd    :                   :         :           :                
 VCCINT                       : 43        : power  :                   : 5.0V    :           :                
-RESERVED                     : 44        :        :                   :         :           :                
-RESERVED                     : 45        :        :                   :         :           :                
-RESERVED                     : 46        :        :                   :         :           :                
+data06_l                     : 44        : bidir  : TTL               :         :           : Y              
+data05_l                     : 45        : bidir  : TTL               :         :           : Y              
+data04_l                     : 46        : bidir  : TTL               :         :           : Y              
 GND                          : 47        : gnd    :                   :         :           :                
-sw4                          : 48        : input  : TTL               :         :           : N              
-RESERVED                     : 49        :        :                   :         :           :                
-RESERVED                     : 50        :        :                   :         :           :                
-RESERVED                     : 51        :        :                   :         :           :                
-md09_l                       : 52        : input  : TTL               :         :           : N              
+RESERVED_INPUT               : 48        :        :                   :         :           :                
+md07_l                       : 49        : input  : TTL               :         :           : Y              
+md06_l                       : 50        : input  : TTL               :         :           : Y              
+md05_l                       : 51        : input  : TTL               :         :           : Y              
+md04_l                       : 52        : input  : TTL               :         :           : Y              
 VCCIO                        : 53        : power  :                   : 5.0V    :           :                
-sw6                          : 54        : input  : TTL               :         :           : N              
-RESERVED                     : 55        :        :                   :         :           :                
-md05_l                       : 56        : input  : TTL               :         :           : N              
-md08_l                       : 57        : input  : TTL               :         :           : N              
-RESERVED                     : 58        :        :                   :         :           :                
+RESERVED_INPUT               : 54        :        :                   :         :           :                
+sw6                          : 55        : input  : TTL               :         :           : Y              
+sw5                          : 56        : input  : TTL               :         :           : Y              
+RESERVED_INPUT               : 57        :        :                   :         :           :                
+RESERVED_INPUT               : 58        :        :                   :         :           :                
 GND                          : 59        : gnd    :                   :         :           :                
-md10_l                       : 60        : input  : TTL               :         :           : N              
-RESERVED                     : 61        :        :                   :         :           :                
-TCK                          : 62        : input  : TTL               :         :           : N              
-int_rqst_l                   : 63        : output : TTL               :         :           : N              
-skip_l                       : 64        : bidir  : TTL               :         :           : N              
-int_enab                     : 65        : bidir  : TTL               :         :           : N              
+RESERVED_INPUT               : 60        :        :                   :         :           :                
+md03_l                       : 61        : input  : TTL               :         :           : Y              
+TCK                          : 62        : input  : TTL               :         :           : Y              
+RESERVED_INPUT               : 63        :        :                   :         :           :                
+RESERVED_INPUT               : 64        :        :                   :         :           :                
+RESERVED_INPUT               : 65        :        :                   :         :           :                
 VCCIO                        : 66        : power  :                   : 5.0V    :           :                
-r_run_l                      : 67        : output : TTL               :         :           : N              
-RESERVED                     : 68        :        :                   :         :           :                
-RESERVED                     : 69        :        :                   :         :           :                
-md03_l                       : 70        : input  : TTL               :         :           : N              
-TDO                          : 71        : output : TTL               :         :           : N              
+RESERVED_INPUT               : 67        :        :                   :         :           :                
+RESERVED_INPUT               : 68        :        :                   :         :           :                
+RESERVED_INPUT               : 69        :        :                   :         :           :                
+RESERVED_INPUT               : 70        :        :                   :         :           :                
+TDO                          : 71        : output : TTL               :         :           : Y              
 GND                          : 72        : gnd    :                   :         :           :                
-RESERVED                     : 73        :        :                   :         :           :                
-RESERVED                     : 74        :        :                   :         :           :                
-RESERVED                     : 75        :        :                   :         :           :                
-serial_in                    : 76        : input  : TTL               :         :           : N              
-RESERVED                     : 77        :        :                   :         :           :                
+sw4                          : 73        : input  : TTL               :         :           : Y              
+sw3                          : 74        : input  : TTL               :         :           : Y              
+serial_out                   : 75        : output : TTL               :         :           : Y              
+serial_in                    : 76        : input  : TTL               :         :           : Y              
+data11_l                     : 77        : bidir  : TTL               :         :           : Y              
 VCCIO                        : 78        : power  :                   : 5.0V    :           :                
-md11_l                       : 79        : input  : TTL               :         :           : N              
-md06_l                       : 80        : input  : TTL               :         :           : N              
-io_pause_l                   : 81        : input  : TTL               :         :           : N              
+RESERVED_INPUT               : 79        :        :                   :         :           :                
+data10_l                     : 80        : bidir  : TTL               :         :           : Y              
+data09_l                     : 81        : bidir  : TTL               :         :           : Y              
 GND                          : 82        : gnd    :                   :         :           :                
-clk                          : 83        : input  : TTL               :         :           : N              
-GND+                         : 84        :        :                   :         :           :                
+clk                          : 83        : input  : TTL               :         :           : Y              
+sw2                          : 84        : input  : TTL               :         :           : Y              

@@ -47,15 +47,57 @@ set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
 set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
 set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING OFF
 set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
-set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL OFF
 set_global_assignment -name DEVICE_FILTER_PACKAGE PLCC
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 84
 set_global_assignment -name SLOW_SLEW_RATE ON
 set_global_assignment -name TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS OFF
-set_global_assignment -name SDC_FILE //wsl\$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/M8650.sdc
-set_global_assignment -name VERILOG_FILE M8650.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name MAX7000_DEVICE_IO_STANDARD TTL
+set_location_assignment PIN_39 -to power_ok
+set_location_assignment PIN_35 -to c0_l
+set_location_assignment PIN_33 -to c1_l
+set_location_assignment PIN_83 -to clk
+set_location_assignment PIN_31 -to tp3
+set_location_assignment PIN_1 -to sw1
+set_location_assignment PIN_84 -to sw2
+set_location_assignment PIN_74 -to sw3
+set_location_assignment PIN_73 -to sw4
+set_location_assignment PIN_56 -to sw5
+set_location_assignment PIN_55 -to sw6
+set_location_assignment PIN_76 -to serial_in
+set_location_assignment PIN_75 -to serial_out
+set_location_assignment PIN_22 -to skip_l
+set_location_assignment PIN_6 -to md11_l
+set_location_assignment PIN_61 -to md03_l
+set_location_assignment PIN_52 -to md04_l
+set_location_assignment PIN_51 -to md05_l
+set_location_assignment PIN_50 -to md06_l
+set_location_assignment PIN_49 -to md07_l
+set_location_assignment PIN_12 -to md08_l
+set_location_assignment PIN_10 -to md09_l
+set_location_assignment PIN_9 -to md10_l
+set_location_assignment PIN_36 -to io_pause_l
+set_location_assignment PIN_46 -to data04_l
+set_location_assignment PIN_45 -to data05_l
+set_location_assignment PIN_44 -to data06_l
+set_location_assignment PIN_40 -to data07_l
+set_location_assignment PIN_4 -to data08_l
+set_location_assignment PIN_81 -to data09_l
+set_location_assignment PIN_80 -to data10_l
+set_location_assignment PIN_77 -to data11_l
+set_location_assignment PIN_24 -to initialize
+set_location_assignment PIN_25 -to int_rqst_l
+set_location_assignment PIN_28 -to internal_io_l
+set_location_assignment PIN_14 -to TDI
+set_location_assignment PIN_71 -to TDO
+set_location_assignment PIN_23 -to TMS
+set_location_assignment PIN_62 -to TCK
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_location_assignment PIN_37 -to tp_ca1
+set_global_assignment -name VERILOG_FILE M8650.v

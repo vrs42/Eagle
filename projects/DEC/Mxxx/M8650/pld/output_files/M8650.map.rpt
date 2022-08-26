@@ -1,5 +1,5 @@
 Analysis & Synthesis report for M8650
-Sun Oct 24 16:16:09 2021
+Thu Aug 25 12:37:31 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,13 +41,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Oct 24 16:16:09 2021           ;
+; Analysis & Synthesis Status ; Successful - Thu Aug 25 12:37:31 2022           ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name               ; M8650                                           ;
 ; Top-level Entity Name       ; m8650                                           ;
 ; Family                      ; MAX7000S                                        ;
-; Total macrocells            ; 130                                             ;
-; Total pins                  ; 39                                              ;
+; Total macrocells            ; 127                                             ;
+; Total pins                  ; 36                                              ;
 +-----------------------------+-------------------------------------------------+
 
 
@@ -121,7 +121,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -140,15 +140,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------+----------------------+
 ; Resource             ; Usage                ;
 +----------------------+----------------------+
-; Logic cells          ; 130                  ;
-; Total registers      ; 23                   ;
-; I/O pins             ; 39                   ;
-; Shareable expanders  ; 22                   ;
+; Logic cells          ; 127                  ;
+; Total registers      ; 25                   ;
+; I/O pins             ; 36                   ;
+; Shareable expanders  ; 31                   ;
 ; Parallel expanders   ; 10                   ;
-; Maximum fan-out node ; initialize           ;
-; Maximum fan-out      ; 31                   ;
-; Total fan-out        ; 782                  ;
-; Average fan-out      ; 4.09                 ;
+; Maximum fan-out node ; md09_l               ;
+; Maximum fan-out      ; 34                   ;
+; Total fan-out        ; 925                  ;
+; Average fan-out      ; 4.77                 ;
 +----------------------+----------------------+
 
 
@@ -157,7 +157,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+------------+------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+------------+------+---------------------+--------------+
-; |m8650                     ; 130        ; 39   ; |m8650              ; work         ;
+; |m8650                     ; 127        ; 36   ; |m8650              ; work         ;
 +----------------------------+------------+------+---------------------+--------------+
 
 
@@ -166,71 +166,69 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; r_run_l$latch                                       ; rx7                 ; yes                    ;
+; enab_m                                              ; tx_shift_l          ; yes                    ;
 ; serial_out$latch                                    ; tx_div              ; yes                    ;
-; tflg_l                                              ; tx_div              ; yes                    ;
-; rflg_l                                              ; ck_pulse            ; yes                    ;
-; r_run_l_m                                           ; GND                 ; yes                    ;
-; serial_out_m                                        ; tx_div              ; yes                    ;
 ; tx_div                                              ; rx_rate             ; yes                    ;
+; int_enab_l                                          ; ckkie               ; yes                    ;
+; rflg_l                                              ; ck_pulse            ; yes                    ;
+; tflg_l                                              ; tx_div              ; yes                    ;
+; serial_out_m                                        ; tx_div              ; yes                    ;
 ; tx_active_l                                         ; rx_rate             ; yes                    ;
 ; start_l                                             ; tx_active_l         ; yes                    ;
-; tflg_l_m                                            ; tx_div              ; yes                    ;
+; tx_div_m                                            ; rx_rate             ; yes                    ;
+; int_enab_l_m                                        ; ckkie               ; yes                    ;
 ; rflg_l_m                                            ; ck_pulse            ; yes                    ;
 ; ck_pulse                                            ; rx_active8_l        ; yes                    ;
-; p_pulse_l                                           ; rx_active           ; yes                    ;
-; rx_div2_l                                           ; rx_div              ; yes                    ;
+; tflg_l_m                                            ; tx_div              ; yes                    ;
 ; tx_data                                             ; tx_shift_l          ; yes                    ;
-; tx_div_m                                            ; rx_rate             ; yes                    ;
 ; tx_active_l_m                                       ; rx_rate             ; yes                    ;
 ; start_l_m                                           ; GND                 ; yes                    ;
-; int_enab_l                                          ; ckkie               ; yes                    ;
+; ck_pulse_m                                          ; GND                 ; yes                    ;
+; rx_active                                           ; n_t_70x             ; yes                    ;
+; rx_div8                                             ; rx_div4_l           ; yes                    ;
 ; enab                                                ; tx_shift_l          ; yes                    ;
 ; n_t_56x                                             ; tx_shift_l          ; yes                    ;
 ; n_t_62x                                             ; tx_shift_l          ; yes                    ;
 ; n_t_60x                                             ; tx_shift_l          ; yes                    ;
-; n_t_61x                                             ; tx_shift_l          ; yes                    ;
-; n_t_66x                                             ; tx_shift_l          ; yes                    ;
-; n_t_65x                                             ; tx_shift_l          ; yes                    ;
 ; n_t_63x                                             ; tx_shift_l          ; yes                    ;
-; ck_pulse_m                                          ; GND                 ; yes                    ;
-; rx_active                                           ; n_t_70x             ; yes                    ;
-; rx_div8                                             ; rx_div4_l           ; yes                    ;
-; p_pulse_l_m                                         ; GND                 ; yes                    ;
-; rx_div4_l                                           ; rx_div2_l           ; yes                    ;
-; rx_div2_l_m                                         ; rx_div              ; yes                    ;
-; last_unit                                           ; ck_pulse            ; yes                    ;
+; n_t_65x                                             ; tx_shift_l          ; yes                    ;
+; n_t_66x                                             ; tx_shift_l          ; yes                    ;
+; n_t_61x                                             ; tx_shift_l          ; yes                    ;
 ; tx_data_m                                           ; tx_shift_l          ; yes                    ;
 ; stp2                                                ; rx_rate             ; yes                    ;
 ; stp1                                                ; rx_rate             ; yes                    ;
-; int_enab_l_m                                        ; ckkie               ; yes                    ;
-; enab_m                                              ; tx_shift_l          ; yes                    ;
+; p_pulse_l                                           ; rx_active           ; yes                    ;
+; rx_div2_l                                           ; rx_div              ; yes                    ;
+; rx_active_m                                         ; GND                 ; yes                    ;
+; last_unit                                           ; ck_pulse            ; yes                    ;
+; spike_det_l                                         ; rx_active8_l        ; yes                    ;
+; rx_div8_m                                           ; rx_div4_l           ; yes                    ;
+; rx_div4_l                                           ; rx_div2_l           ; yes                    ;
 ; n_t_56x_m                                           ; tx_shift_l          ; yes                    ;
 ; n_t_62x_m                                           ; tx_shift_l          ; yes                    ;
 ; n_t_60x_m                                           ; tx_shift_l          ; yes                    ;
-; n_t_61x_m                                           ; tx_shift_l          ; yes                    ;
-; n_t_66x_m                                           ; tx_shift_l          ; yes                    ;
-; n_t_65x_m                                           ; tx_shift_l          ; yes                    ;
 ; n_t_63x_m                                           ; tx_shift_l          ; yes                    ;
-; rx_active_m                                         ; GND                 ; yes                    ;
-; spike_det_l                                         ; rx_active8_l        ; yes                    ;
-; rx_div8_m                                           ; rx_div4_l           ; yes                    ;
-; rx_div4_l_m                                         ; rx_div2_l           ; yes                    ;
-; last_unit_m                                         ; ck_pulse            ; yes                    ;
+; n_t_65x_m                                           ; tx_shift_l          ; yes                    ;
+; n_t_66x_m                                           ; tx_shift_l          ; yes                    ;
+; n_t_61x_m                                           ; tx_shift_l          ; yes                    ;
 ; stp2_m                                              ; rx_rate             ; yes                    ;
 ; stp1_m                                              ; rx_rate             ; yes                    ;
+; p_pulse_l_m                                         ; GND                 ; yes                    ;
+; rx_div2_l_m                                         ; rx_div              ; yes                    ;
+; last_unit_m                                         ; ck_pulse            ; yes                    ;
 ; spike_det_l_m                                       ; GND                 ; yes                    ;
-; gdollar_1                                           ; rx_rate             ; yes                    ;
-; bd1745                                              ; n_t_5x              ; yes                    ;
-; gdollar_1_m                                         ; rx_rate             ; yes                    ;
-; bd1745_m                                            ; n_t_5x              ; yes                    ;
-; n_t_5x                                              ; gdollar_0           ; yes                    ;
+; rx_div4_l_m                                         ; rx_div2_l           ; yes                    ;
+; gdollar_4                                           ; rx_rate             ; yes                    ;
+; bd1745                                              ; gdollar_0           ; yes                    ;
+; gdollar_4_m                                         ; rx_rate             ; yes                    ;
+; bd1745_m                                            ; gdollar_0           ; yes                    ;
+; gdollar_0                                           ; n_t_5x              ; yes                    ;
+; n_t_5x                                              ; n_t_2x              ; yes                    ;
 ; n_t_2x                                              ; bd19200             ; yes                    ;
-; n_t_5x_m                                            ; gdollar_0           ; yes                    ;
-; gdollar_0                                           ; n_t_2x              ; yes                    ;
+; gdollar_0_m                                         ; n_t_5x              ; yes                    ;
+; n_t_5x_m                                            ; n_t_2x              ; yes                    ;
 ; n_t_2x_m                                            ; bd19200             ; yes                    ;
-; gdollar_0_m                                         ; n_t_2x              ; yes                    ;
-; Number of user-specified and inferred latches = 64  ;                     ;                        ;
+; Number of user-specified and inferred latches = 62  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -241,39 +239,33 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Oct 24 16:16:05 2021
+    Info: Processing started: Thu Aug 25 12:37:29 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M8650 -c M8650
-Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file m8650.v
     Info (12023): Found entity 1: m8650
+Warning (10236): Verilog HDL Implicit Net warning at M8650.v(235): created implicit net for "n_t_103x"
+Warning (10236): Verilog HDL Implicit Net warning at M8650.v(596): created implicit net for "tx_div_l"
+Warning (10236): Verilog HDL Implicit Net warning at M8650.v(992): created implicit net for "int_enab"
+Warning (10037): Verilog HDL or VHDL warning at M8650.v(640): conditional expression evaluates to a constant
 Info (12127): Elaborating entity "m8650" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at M8650.v(119): object "gdollar_2" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at M8650.v(182): object "n_t_3x" assigned a value but never read
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "int_enab" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "tx_div_l" and its non-tri-state driver.
-Info (13060): One or more bidirs are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "int_enab" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "tx_div_l" is moved to its source
-Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "int_enab~synth"
-    Warning (13010): Node "tx_div_l~synth"
+Warning (10036): Verilog HDL or VHDL warning at M8650.v(48): object "r_run_l" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at M8650.v(131): object "gdollar_5" assigned a value but never read
 Info (280013): Promoted pin-driven signal(s) to global signal
     Info (280014): Promoted clock signal driven by pin "clk" to global clock signal
 Info (280013): Promoted pin-driven signal(s) to global signal
     Info (280014): Promoted clock signal driven by pin "clk" to global clock signal
-Info (21057): Implemented 191 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 22 input pins
+Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 21 input pins
     Info (21059): Implemented 6 output pins
-    Info (21060): Implemented 11 bidirectional pins
-    Info (21063): Implemented 130 macrocells
-    Info (21073): Implemented 22 shareable expanders
+    Info (21060): Implemented 9 bidirectional pins
+    Info (21063): Implemented 127 macrocells
+    Info (21073): Implemented 31 shareable expanders
 Info (144001): Generated suppressed messages file //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.map.smsg
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4563 megabytes
-    Info: Processing ended: Sun Oct 24 16:16:09 2021
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4562 megabytes
+    Info: Processing ended: Thu Aug 25 12:37:31 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +------------------------------------------+
