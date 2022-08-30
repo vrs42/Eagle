@@ -1,5 +1,5 @@
 |m8650
-tp_ca1 <= enab_m.DB_MAX_OUTPUT_PORT_TYPE
+tp_ca1 <= rx_rate.DB_MAX_OUTPUT_PORT_TYPE
 serial_in => rx7.IN0
 serial_in => n_t_81x.IN0
 serial_in => rx_again_l.IN1

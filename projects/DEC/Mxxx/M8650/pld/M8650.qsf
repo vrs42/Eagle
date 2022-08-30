@@ -101,3 +101,6 @@ set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
 set_location_assignment PIN_37 -to tp_ca1
 set_global_assignment -name VERILOG_FILE M8650.v
+set_global_assignment -name ALM_REGISTER_PACKING_EFFORT MEDIUM
+set_global_assignment -name OPTIMIZE_IOC_REGISTER_PLACEMENT_FOR_TIMING NORMAL
+set_global_assignment -name MAX7000_OPTIMIZATION_TECHNIQUE AREA

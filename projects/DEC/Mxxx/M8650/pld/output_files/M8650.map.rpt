@@ -1,5 +1,5 @@
 Analysis & Synthesis report for M8650
-Thu Aug 25 12:37:31 2022
+Mon Aug 29 16:45:57 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,12 +41,12 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Aug 25 12:37:31 2022           ;
+; Analysis & Synthesis Status ; Successful - Mon Aug 29 16:45:57 2022           ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name               ; M8650                                           ;
 ; Top-level Entity Name       ; m8650                                           ;
 ; Family                      ; MAX7000S                                        ;
-; Total macrocells            ; 127                                             ;
+; Total macrocells            ; 123                                             ;
 ; Total pins                  ; 36                                              ;
 +-----------------------------+-------------------------------------------------+
 
@@ -59,6 +59,7 @@ applicable agreement for further details.
 ; Device                                                                     ; EPM7128SLC84-15 ;               ;
 ; Top-level entity name                                                      ; m8650           ; M8650         ;
 ; Family name                                                                ; MAX7000S        ; Cyclone IV GX ;
+; Optimization Technique                                                     ; Area            ; Speed         ;
 ; Use smart compilation                                                      ; Off             ; Off           ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
 ; Enable compact report table                                                ; Off             ; Off           ;
@@ -87,7 +88,6 @@ applicable agreement for further details.
 ; Ignore LCELL Buffers                                                       ; Auto            ; Auto          ;
 ; Ignore SOFT Buffers                                                        ; Off             ; Off           ;
 ; Limit AHDL Integers to 32 Bits                                             ; Off             ; Off           ;
-; Optimization Technique                                                     ; Speed           ; Speed         ;
 ; Allow XOR Gate Usage                                                       ; On              ; On            ;
 ; Auto Logic Cell Insertion                                                  ; On              ; On            ;
 ; Parallel Expander Chain Length                                             ; 4               ; 4             ;
@@ -140,15 +140,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------+----------------------+
 ; Resource             ; Usage                ;
 +----------------------+----------------------+
-; Logic cells          ; 127                  ;
+; Logic cells          ; 123                  ;
 ; Total registers      ; 25                   ;
 ; I/O pins             ; 36                   ;
-; Shareable expanders  ; 31                   ;
-; Parallel expanders   ; 10                   ;
-; Maximum fan-out node ; md09_l               ;
-; Maximum fan-out      ; 34                   ;
-; Total fan-out        ; 925                  ;
-; Average fan-out      ; 4.77                 ;
+; Shareable expanders  ; 19                   ;
+; Parallel expanders   ; 5                    ;
+; Maximum fan-out node ; initialize           ;
+; Maximum fan-out      ; 29                   ;
+; Total fan-out        ; 620                  ;
+; Average fan-out      ; 3.48                 ;
 +----------------------+----------------------+
 
 
@@ -157,7 +157,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+------------+------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+------------+------+---------------------+--------------+
-; |m8650                     ; 127        ; 36   ; |m8650              ; work         ;
+; |m8650                     ; 123        ; 36   ; |m8650              ; work         ;
 +----------------------------+------------+------+---------------------+--------------+
 
 
@@ -166,21 +166,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; enab_m                                              ; tx_shift_l          ; yes                    ;
 ; serial_out$latch                                    ; tx_div              ; yes                    ;
-; tx_div                                              ; rx_rate             ; yes                    ;
 ; int_enab_l                                          ; ckkie               ; yes                    ;
 ; rflg_l                                              ; ck_pulse            ; yes                    ;
 ; tflg_l                                              ; tx_div              ; yes                    ;
 ; serial_out_m                                        ; tx_div              ; yes                    ;
+; tx_div                                              ; rx_rate             ; yes                    ;
 ; tx_active_l                                         ; rx_rate             ; yes                    ;
 ; start_l                                             ; tx_active_l         ; yes                    ;
-; tx_div_m                                            ; rx_rate             ; yes                    ;
 ; int_enab_l_m                                        ; ckkie               ; yes                    ;
 ; rflg_l_m                                            ; ck_pulse            ; yes                    ;
 ; ck_pulse                                            ; rx_active8_l        ; yes                    ;
 ; tflg_l_m                                            ; tx_div              ; yes                    ;
 ; tx_data                                             ; tx_shift_l          ; yes                    ;
+; tx_div_m                                            ; rx_rate             ; yes                    ;
 ; tx_active_l_m                                       ; rx_rate             ; yes                    ;
 ; start_l_m                                           ; GND                 ; yes                    ;
 ; ck_pulse_m                                          ; GND                 ; yes                    ;
@@ -199,11 +198,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; stp1                                                ; rx_rate             ; yes                    ;
 ; p_pulse_l                                           ; rx_active           ; yes                    ;
 ; rx_div2_l                                           ; rx_div              ; yes                    ;
+; bd1745                                              ; gdollar_0           ; yes                    ;
 ; rx_active_m                                         ; GND                 ; yes                    ;
 ; last_unit                                           ; ck_pulse            ; yes                    ;
 ; spike_det_l                                         ; rx_active8_l        ; yes                    ;
 ; rx_div8_m                                           ; rx_div4_l           ; yes                    ;
 ; rx_div4_l                                           ; rx_div2_l           ; yes                    ;
+; enab_m                                              ; tx_shift_l          ; yes                    ;
 ; n_t_56x_m                                           ; tx_shift_l          ; yes                    ;
 ; n_t_62x_m                                           ; tx_shift_l          ; yes                    ;
 ; n_t_60x_m                                           ; tx_shift_l          ; yes                    ;
@@ -215,19 +216,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; stp1_m                                              ; rx_rate             ; yes                    ;
 ; p_pulse_l_m                                         ; GND                 ; yes                    ;
 ; rx_div2_l_m                                         ; rx_div              ; yes                    ;
-; last_unit_m                                         ; ck_pulse            ; yes                    ;
-; spike_det_l_m                                       ; GND                 ; yes                    ;
-; rx_div4_l_m                                         ; rx_div2_l           ; yes                    ;
-; gdollar_4                                           ; rx_rate             ; yes                    ;
-; bd1745                                              ; gdollar_0           ; yes                    ;
-; gdollar_4_m                                         ; rx_rate             ; yes                    ;
 ; bd1745_m                                            ; gdollar_0           ; yes                    ;
 ; gdollar_0                                           ; n_t_5x              ; yes                    ;
 ; n_t_5x                                              ; n_t_2x              ; yes                    ;
 ; n_t_2x                                              ; bd19200             ; yes                    ;
+; last_unit_m                                         ; ck_pulse            ; yes                    ;
+; spike_det_l_m                                       ; GND                 ; yes                    ;
+; rx_div4_l_m                                         ; rx_div2_l           ; yes                    ;
+; gdollar_4                                           ; rx_rate             ; yes                    ;
 ; gdollar_0_m                                         ; n_t_5x              ; yes                    ;
 ; n_t_5x_m                                            ; n_t_2x              ; yes                    ;
 ; n_t_2x_m                                            ; bd19200             ; yes                    ;
+; gdollar_4_m                                         ; rx_rate             ; yes                    ;
 ; Number of user-specified and inferred latches = 62  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -239,7 +239,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Aug 25 12:37:29 2022
+    Info: Processing started: Mon Aug 29 16:45:55 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M8650 -c M8650
 Info (12021): Found 1 design units, including 1 entities, in source file m8650.v
     Info (12023): Found entity 1: m8650
@@ -252,18 +252,16 @@ Warning (10036): Verilog HDL or VHDL warning at M8650.v(48): object "r_run_l" as
 Warning (10036): Verilog HDL or VHDL warning at M8650.v(131): object "gdollar_5" assigned a value but never read
 Info (280013): Promoted pin-driven signal(s) to global signal
     Info (280014): Promoted clock signal driven by pin "clk" to global clock signal
-Info (280013): Promoted pin-driven signal(s) to global signal
-    Info (280014): Promoted clock signal driven by pin "clk" to global clock signal
-Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 178 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 6 output pins
     Info (21060): Implemented 9 bidirectional pins
-    Info (21063): Implemented 127 macrocells
-    Info (21073): Implemented 31 shareable expanders
+    Info (21063): Implemented 123 macrocells
+    Info (21073): Implemented 19 shareable expanders
 Info (144001): Generated suppressed messages file //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.map.smsg
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4562 megabytes
-    Info: Processing ended: Thu Aug 25 12:37:31 2022
+    Info: Processing ended: Mon Aug 29 16:45:57 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

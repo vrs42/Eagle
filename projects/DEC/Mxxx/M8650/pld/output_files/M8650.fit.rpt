@@ -1,5 +1,5 @@
 Fitter report for M8650
-Thu Aug 25 12:37:33 2022
+Mon Aug 29 16:46:00 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -56,14 +56,14 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Fitter Summary                                                              ;
 +---------------------------+-------------------------------------------------+
-; Fitter Status             ; Successful - Thu Aug 25 12:37:33 2022           ;
+; Fitter Status             ; Successful - Mon Aug 29 16:46:00 2022           ;
 ; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name             ; M8650                                           ;
 ; Top-level Entity Name     ; m8650                                           ;
 ; Family                    ; MAX7000S                                        ;
 ; Device                    ; EPM7128SLC84-15                                 ;
 ; Timing Models             ; Final                                           ;
-; Total macrocells          ; 127 / 128 ( 99 % )                              ;
+; Total macrocells          ; 123 / 128 ( 96 % )                              ;
 ; Total pins                ; 40 / 68 ( 59 % )                                ;
 +---------------------------+-------------------------------------------------+
 
@@ -110,21 +110,21 @@ The pin-out file can be found in //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/
 +------------------------------+--------------------+
 ; Resource                     ; Usage              ;
 +------------------------------+--------------------+
-; Logic cells                  ; 127 / 128 ( 99 % ) ;
+; Logic cells                  ; 123 / 128 ( 96 % ) ;
 ; Registers                    ; 25 / 128 ( 20 % )  ;
-; Number of pterms used        ; 398                ;
+; Number of pterms used        ; 360                ;
 ; I/O pins                     ; 40 / 68 ( 59 % )   ;
 ;     -- Clock pins            ; 1 / 2 ( 50 % )     ;
 ;     -- Dedicated input pins  ; 2 / 2 ( 100 % )    ;
 ;                              ;                    ;
 ; Global signals               ; 1                  ;
-; Shareable expanders          ; 44 / 128 ( 34 % )  ;
-; Parallel expanders           ; 10 / 120 ( 8 % )   ;
-; Cells using turbo bit        ; 127 / 128 ( 99 % ) ;
-; Maximum fan-out              ; 42                 ;
-; Highest non-global fan-out   ; 42                 ;
-; Total fan-out                ; 971                ;
-; Average fan-out              ; 4.60               ;
+; Shareable expanders          ; 22 / 128 ( 17 % )  ;
+; Parallel expanders           ; 5 / 120 ( 4 % )    ;
+; Cells using turbo bit        ; 123 / 128 ( 96 % ) ;
+; Maximum fan-out              ; 29                 ;
+; Highest non-global fan-out   ; 29                 ;
+; Total fan-out                ; 626                ;
+; Average fan-out              ; 3.38               ;
 +------------------------------+--------------------+
 
 
@@ -135,25 +135,25 @@ The pin-out file can be found in //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/
 +------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
 ; clk        ; 83    ; --       ; --  ; 1                     ; 0                  ; yes    ; no             ; TTL          ; User                 ;
 ; initialize ; 24    ; --       ; 3   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; io_pause_l ; 36    ; --       ; 4   ; 30                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md03_l     ; 61    ; --       ; 6   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md04_l     ; 52    ; --       ; 5   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md05_l     ; 51    ; --       ; 5   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md06_l     ; 50    ; --       ; 5   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md07_l     ; 49    ; --       ; 5   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md08_l     ; 12    ; --       ; 1   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md09_l     ; 10    ; --       ; 1   ; 42                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; io_pause_l ; 36    ; --       ; 4   ; 9                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md03_l     ; 61    ; --       ; 6   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md04_l     ; 52    ; --       ; 5   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md05_l     ; 51    ; --       ; 5   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md06_l     ; 50    ; --       ; 5   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md07_l     ; 49    ; --       ; 5   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md08_l     ; 12    ; --       ; 1   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md09_l     ; 10    ; --       ; 1   ; 14                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; md10_l     ; 9     ; --       ; 1   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md11_l     ; 6     ; --       ; 1   ; 14                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md11_l     ; 6     ; --       ; 1   ; 15                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; power_ok   ; 39    ; --       ; 4   ; 3                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; serial_in  ; 76    ; --       ; 8   ; 6                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; sw1        ; 1     ; --       ; --  ; 4                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; sw2        ; 84    ; --       ; --  ; 4                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; sw3        ; 74    ; --       ; 8   ; 4                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; sw4        ; 73    ; --       ; 8   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; sw5        ; 56    ; --       ; 6   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; sw6        ; 55    ; --       ; 6   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; tp3        ; 31    ; --       ; 3   ; 14                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; sw4        ; 73    ; --       ; 8   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; sw5        ; 56    ; --       ; 6   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; sw6        ; 55    ; --       ; 6   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; tp3        ; 31    ; --       ; 3   ; 6                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
 +------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
 
 
@@ -171,21 +171,21 @@ The pin-out file can be found in //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/
 +---------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Bidir Pins                                                                                                                                                                                                                                            ;
-+----------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+------------------------+---------------------+
-; Name     ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Slow Slew Rate ; Open Drain ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source   ; Output Enable Group ;
-+----------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+------------------------+---------------------+
-; data04_l ; 46    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data04_l~14 (inverted) ; -                   ;
-; data05_l ; 45    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data05_l~14 (inverted) ; -                   ;
-; data06_l ; 44    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data06_l~20 (inverted) ; -                   ;
-; data07_l ; 40    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data07_l~14 (inverted) ; -                   ;
-; data08_l ; 4     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data08_l~14 (inverted) ; -                   ;
-; data09_l ; 81    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data09_l~14 (inverted) ; -                   ;
-; data10_l ; 80    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data10_l~14 (inverted) ; -                   ;
-; data11_l ; 77    ; --       ; 8   ; 2                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data11_l~14 (inverted) ; -                   ;
-; skip_l   ; 22    ; --       ; 2   ; 0                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; skip_l~38 (inverted)   ; -                   ;
-+----------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+------------------------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Bidir Pins                                                                                                                                                                                                                                           ;
++----------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-----------------------+---------------------+
+; Name     ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Slow Slew Rate ; Open Drain ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source  ; Output Enable Group ;
++----------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-----------------------+---------------------+
+; data04_l ; 46    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data04_l~5 (inverted) ; -                   ;
+; data05_l ; 45    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data05_l~5 (inverted) ; -                   ;
+; data06_l ; 44    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data06_l~5 (inverted) ; -                   ;
+; data07_l ; 40    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data07_l~5 (inverted) ; -                   ;
+; data08_l ; 4     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data08_l~5 (inverted) ; -                   ;
+; data09_l ; 81    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data09_l~5 (inverted) ; -                   ;
+; data10_l ; 80    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data10_l~5 (inverted) ; -                   ;
+; data11_l ; 77    ; --       ; 8   ; 2                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; data11_l~5 (inverted) ; -                   ;
+; skip_l   ; 22    ; --       ; 2   ; 0                     ; 0                  ; no     ; no             ; no              ; yes            ; yes        ; TTL          ; User                 ; 10 pF ; skip_l~13 (inverted)  ; -                   ;
++----------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-----------------------+---------------------+
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -318,7 +318,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+------------+------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+------------+------+---------------------+--------------+
-; |m8650                     ; 127        ; 40   ; |m8650              ; work         ;
+; |m8650                     ; 123        ; 40   ; |m8650              ; work         ;
 +----------------------------+------------+------+---------------------+--------------+
 
 
@@ -327,25 +327,27 @@ Note: User assignments will override these defaults. The user specified values a
 +------------+----------+---------+-------+--------+----------------------+------------------+
 ; Name       ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ;
 +------------+----------+---------+-------+--------+----------------------+------------------+
-; bd1200     ; LC103    ; 2       ; Clock ; no     ; --                   ; --               ;
-; bd153600   ; LC31     ; 2       ; Clock ; no     ; --                   ; --               ;
-; bd1745~22  ; LC41     ; 4       ; Clock ; no     ; --                   ; --               ;
-; bd19200    ; LC57     ; 3       ; Clock ; no     ; --                   ; --               ;
-; bd218      ; LC78     ; 1       ; Clock ; no     ; --                   ; --               ;
-; bd2400     ; LC34     ; 1       ; Clock ; no     ; --                   ; --               ;
+; bd1200     ; LC121    ; 2       ; Clock ; no     ; --                   ; --               ;
+; bd153600   ; LC125    ; 2       ; Clock ; no     ; --                   ; --               ;
+; bd1745~9   ; LC3      ; 4       ; Clock ; no     ; --                   ; --               ;
+; bd19200    ; LC58     ; 3       ; Clock ; no     ; --                   ; --               ;
+; bd218      ; LC124    ; 1       ; Clock ; no     ; --                   ; --               ;
+; bd2400     ; LC122    ; 1       ; Clock ; no     ; --                   ; --               ;
 ; bd307200   ; LC120    ; 1       ; Clock ; no     ; --                   ; --               ;
-; bd38400    ; LC52     ; 2       ; Clock ; no     ; --                   ; --               ;
-; bd436      ; LC100    ; 1       ; Clock ; no     ; --                   ; --               ;
-; bd4800     ; LC99     ; 1       ; Clock ; no     ; --                   ; --               ;
-; bd600      ; LC101    ; 2       ; Clock ; no     ; --                   ; --               ;
-; bd614400   ; LC30     ; 1       ; Clock ; no     ; --                   ; --               ;
+; bd38400    ; LC54     ; 2       ; Clock ; no     ; --                   ; --               ;
+; bd436      ; LC57     ; 1       ; Clock ; no     ; --                   ; --               ;
+; bd4800     ; LC62     ; 1       ; Clock ; no     ; --                   ; --               ;
+; bd600      ; LC116    ; 2       ; Clock ; no     ; --                   ; --               ;
+; bd614400   ; LC119    ; 1       ; Clock ; no     ; --                   ; --               ;
 ; bd76800    ; LC61     ; 2       ; Clock ; no     ; --                   ; --               ;
 ; bd873      ; LC36     ; 1       ; Clock ; no     ; --                   ; --               ;
-; bd9600     ; LC35     ; 2       ; Clock ; no     ; --                   ; --               ;
+; bd9600     ; LC127    ; 2       ; Clock ; no     ; --                   ; --               ;
 ; clk        ; PIN_83   ; 1       ; Clock ; yes    ; On                   ; --               ;
-; n_t_41x~31 ; SEXP2    ; 8       ; Clock ; no     ; --                   ; --               ;
-; n_t_41x~32 ; SEXP4    ; 8       ; Clock ; no     ; --                   ; --               ;
-; rx_rate~32 ; LC3      ; 20      ; Clock ; no     ; --                   ; --               ;
+; n_t_41x~24 ; SEXP2    ; 7       ; Clock ; no     ; --                   ; --               ;
+; n_t_41x~25 ; SEXP3    ; 7       ; Clock ; no     ; --                   ; --               ;
+; n_t_41x~8  ; SEXP86   ; 1       ; Clock ; no     ; --                   ; --               ;
+; n_t_41x~9  ; SEXP84   ; 1       ; Clock ; no     ; --                   ; --               ;
+; rx_rate~21 ; LC56     ; 21      ; Clock ; no     ; --                   ; --               ;
 +------------+----------+---------+-------+--------+----------------------+------------------+
 
 
@@ -360,209 +362,183 @@ Note: User assignments will override these defaults. The user specified values a
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
-+----------------------+----------+
-; Name                 ; Fan-Out  ;
-+----------------------+----------+
-; md09_l               ; 42       ;
-; tx_div~21            ; 35       ;
-; n_t_25x~17           ; 32       ;
-; io_pause_l           ; 30       ;
-; initialize           ; 29       ;
-; md04_l               ; 29       ;
-; sw5                  ; 29       ;
-; sw4                  ; 29       ;
-; md06_l               ; 29       ;
-; sw6                  ; 29       ;
-; md05_l               ; 29       ;
-; md08_l               ; 29       ;
-; md07_l               ; 29       ;
-; md03_l               ; 29       ;
-; tx_sel~34            ; 23       ;
-; rx_rate~32           ; 20       ;
-; rx_active~22         ; 16       ;
-; tp3                  ; 14       ;
-; md11_l               ; 14       ;
-; last_unit~20         ; 12       ;
-; n_t_21x~17           ; 11       ;
-; p_pulse_l~21         ; 10       ;
-; rflg_l~21            ; 9        ;
-; tx_shift_l~15        ; 8        ;
-; md10_l               ; 8        ;
-; div11~4sexp          ; 8        ;
-; tx_active_l~21       ; 8        ;
-; n_t_41x~32           ; 8        ;
-; n_t_41x~31           ; 8        ;
-; ck_pulse~20          ; 8        ;
-; tx_shift_l~14        ; 7        ;
-; rx_div4_l~21         ; 7        ;
-; kcc_l~19             ; 7        ;
-; serial_in            ; 6        ;
-; rx_div8~20           ; 6        ;
-; tx_shift_l~18        ; 5        ;
-; tx_shift_l~16        ; 5        ;
-; rx_active8_l~4sexp   ; 5        ;
-; n_t_36x              ; 5        ;
-; rx_div2_l~21         ; 5        ;
-; n_t_5x~22            ; 5        ;
-; n_t_2x~22            ; 5        ;
-; enab~20              ; 5        ;
-; tx_shift_l~19        ; 4        ;
-; tx_shift_l~17        ; 4        ;
-; sw3                  ; 4        ;
-; sw2                  ; 4        ;
-; sw1                  ; 4        ;
-; n_t_66x~20           ; 4        ;
-; n_t_65x~20           ; 4        ;
-; n_t_63x~20           ; 4        ;
-; n_t_61x~20           ; 4        ;
-; n_t_56x~20           ; 4        ;
-; n_t_62x~20           ; 4        ;
-; n_t_60x~20           ; 4        ;
-; bd1745~22            ; 4        ;
-; gdollar_0~22         ; 4        ;
-; tpc_l~24             ; 3        ;
-; tx_shift_l~12        ; 3        ;
-; power_ok             ; 3        ;
-; tpc_l~21sexpand0     ; 3        ;
-; tflg_l~22            ; 3        ;
-; enab_m~20            ; 3        ;
-; start_l~21           ; 3        ;
-; int_enab_l~20        ; 3        ;
-; n_t_40x              ; 3        ;
-; stp1~20              ; 3        ;
-; rx_div               ; 3        ;
-; krs_l~7              ; 3        ;
-; bd19200              ; 3        ;
-; tx_shift_l~13        ; 2        ;
-; data11_l~0           ; 2        ;
-; n_t_94x~4sexp        ; 2        ;
-; rx_last_l~4sexp      ; 2        ;
-; rx_again_l~5sexp     ; 2        ;
-; n_t_91x~4sexp        ; 2        ;
-; tx_shift_l~9sexpand1 ; 2        ;
-; ckkie~12sexpand1     ; 2        ;
-; serial_out$latch~22  ; 2        ;
-; serial_out_m~22      ; 2        ;
-; tx_data~20           ; 2        ;
-; tx_data_m~35         ; 2        ;
-; tflg_l_m~22          ; 2        ;
-; tx_div_m~21          ; 2        ;
-; start_l_m~19         ; 2        ;
-; tx_active_l_m~21     ; 2        ;
-; n_t_66x_m~35         ; 2        ;
-; n_t_65x_m~35         ; 2        ;
-; n_t_63x_m~35         ; 2        ;
-; n_t_61x_m~35         ; 2        ;
-; n_t_56x_m~35         ; 2        ;
-; n_t_62x_m~35         ; 2        ;
-; n_t_60x_m~31         ; 2        ;
-; n_t_34x              ; 2        ;
-; rx7                  ; 2        ;
-; p_pulse_l_m~19       ; 2        ;
-; rx_div4_l_m~21       ; 2        ;
-; rx_active_m~26       ; 2        ;
-; n_t_70x~10           ; 2        ;
-; int_enab_l_m~20      ; 2        ;
-; stp2~20              ; 2        ;
-; last_unit_m~20       ; 2        ;
-; rflg_l_m~21          ; 2        ;
-; stp2_m~20            ; 2        ;
-; n_t_39x              ; 2        ;
-; gdollar_4~20         ; 2        ;
-; n_t_38x              ; 2        ;
-; n_t_37x              ; 2        ;
-; n_t_35x              ; 2        ;
-; gdollar_4_m~20       ; 2        ;
-; spike_det_l~22       ; 2        ;
-; spike_det_l_m~26     ; 2        ;
-; rx_div2_l_m~21       ; 2        ;
-; stp1_m~20            ; 2        ;
-; ck_pulse_m~19        ; 2        ;
-; bd1745_m~22          ; 2        ;
-; gdollar_0_m~22       ; 2        ;
-; n_t_5x_m~22          ; 2        ;
-; n_t_28x~23           ; 2        ;
-; n_t_28x~24           ; 2        ;
-; c1_l~20              ; 2        ;
-; bd600                ; 2        ;
-; n_t_2x_m~22          ; 2        ;
-; bd1200               ; 2        ;
-; bd9600               ; 2        ;
-; bd38400              ; 2        ;
-; rx_div8_m~20         ; 2        ;
-; bd76800              ; 2        ;
-; bd153600             ; 2        ;
-; cktfl~15             ; 1        ;
-; tpc_l~26             ; 1        ;
-; tx8~20               ; 1        ;
-; tpc_l~25             ; 1        ;
-; data10_l~0           ; 1        ;
-; data09_l~0           ; 1        ;
-; data08_l~0           ; 1        ;
-; data07_l~0           ; 1        ;
-; data06_l~0           ; 1        ;
-; data05_l~0           ; 1        ;
-; data04_l~0           ; 1        ;
-; n_t_108x~20sexp2     ; 1        ;
-; tx_shift_l~7sexp     ; 1        ;
-; tx8~11sexp           ; 1        ;
-; comb~41sexp          ; 1        ;
-; spike_det_l_m~18sexp ; 1        ;
-; comb~39sexpand0      ; 1        ;
-; n_t_108x~22sexpand0  ; 1        ;
-; n_t_8x~3sexpand1     ; 1        ;
-; cktfl~12sexpand1     ; 1        ;
-; rx_rate~39           ; 1        ;
-; n_t_28x~31           ; 1        ;
-; krs_l~8              ; 1        ;
-; c1_l~28              ; 1        ;
-; n_t_21x~18           ; 1        ;
-; tx_sel~35            ; 1        ;
-; n_t_25x~18           ; 1        ;
-; kcc_l~30             ; 1        ;
-; selected_l~22        ; 1        ;
-; kcc_l~27             ; 1        ;
-; skip_l~38            ; 1        ;
-; skip_l~33            ; 1        ;
-; skip_l~32            ; 1        ;
-; skip_l~31            ; 1        ;
-; skip_l~30            ; 1        ;
-; skip_l~29            ; 1        ;
-; skip_l~28            ; 1        ;
-; skip_l~26            ; 1        ;
-; n_t_108x~27          ; 1        ;
-; n_t_66x_m~24         ; 1        ;
-; n_t_65x_m~24         ; 1        ;
-; n_t_63x_m~24         ; 1        ;
-; n_t_61x_m~24         ; 1        ;
-; n_t_56x_m~24         ; 1        ;
-; n_t_62x_m~24         ; 1        ;
-; n_t_60x_m~22         ; 1        ;
-; comb~40              ; 1        ;
-; bd109                ; 1        ;
-; bd218                ; 1        ;
-; bd436                ; 1        ;
-; bd873                ; 1        ;
-; bd300                ; 1        ;
-; c1_l~26              ; 1        ;
-; kcc_l~25             ; 1        ;
-; bd2400               ; 1        ;
-; bd4800               ; 1        ;
-; selected_l~20        ; 1        ;
-; bd307200             ; 1        ;
-; bd614400             ; 1        ;
-; data11_l~14          ; 1        ;
-; data10_l~14          ; 1        ;
-; data09_l~14          ; 1        ;
-; data08_l~14          ; 1        ;
-; data07_l~14          ; 1        ;
-; data06_l~20          ; 1        ;
-; data06_l~15          ; 1        ;
-; data06_l~14          ; 1        ;
-; data06_l~13          ; 1        ;
-; data05_l~14          ; 1        ;
-; data04_l~14          ; 1        ;
-+----------------------+----------+
++---------------------+-----------+
+; Name                ; Fan-Out   ;
++---------------------+-----------+
+; initialize          ; 29        ;
+; rx_rate~21          ; 21        ;
+; selected_l~7        ; 19        ;
+; tx_shift_l~2        ; 18        ;
+; md11_l              ; 15        ;
+; rx_active~10        ; 15        ;
+; md09_l              ; 14        ;
+; tx_div~9            ; 14        ;
+; rx_sel~38           ; 13        ;
+; last_unit~9         ; 11        ;
+; p_pulse_l~9         ; 11        ;
+; tls_l~2             ; 10        ;
+; ck_pulse~9          ; 10        ;
+; io_pause_l          ; 9         ;
+; md10_l              ; 8         ;
+; md04_l              ; 8         ;
+; sw5                 ; 8         ;
+; sw4                 ; 8         ;
+; md06_l              ; 8         ;
+; sw6                 ; 8         ;
+; md05_l              ; 8         ;
+; md08_l              ; 8         ;
+; md07_l              ; 8         ;
+; md03_l              ; 8         ;
+; div11~1sexp         ; 8         ;
+; tx_active_l~9       ; 8         ;
+; n_t_41x~25          ; 7         ;
+; n_t_41x~24          ; 7         ;
+; rx_div4_l~9         ; 7         ;
+; serial_in           ; 6         ;
+; tp3                 ; 6         ;
+; rx_div2_l~9         ; 6         ;
+; enab~9              ; 6         ;
+; rx_div8~9           ; 6         ;
+; rx_active8_l~1sexp  ; 5         ;
+; n_t_2x~9            ; 5         ;
+; n_t_5x~9            ; 5         ;
+; tx_sel~34           ; 5         ;
+; sw3                 ; 4         ;
+; sw2                 ; 4         ;
+; sw1                 ; 4         ;
+; gdollar_0~9         ; 4         ;
+; bd1745~9            ; 4         ;
+; n_t_60x~9           ; 4         ;
+; n_t_62x~9           ; 4         ;
+; n_t_56x~9           ; 4         ;
+; n_t_61x~9           ; 4         ;
+; n_t_66x~9           ; 4         ;
+; n_t_65x~9           ; 4         ;
+; n_t_63x~9           ; 4         ;
+; power_ok            ; 3         ;
+; rx_last_l~1sexp     ; 3         ;
+; n_t_25x~1sexpand1   ; 3         ;
+; stp1~9              ; 3         ;
+; start_l~9           ; 3         ;
+; tflg_l~10           ; 3         ;
+; rflg_l~9            ; 3         ;
+; int_enab_l~9        ; 3         ;
+; rx_div              ; 3         ;
+; n_t_40x             ; 3         ;
+; bd19200             ; 3         ;
+; data11_l~0          ; 2         ;
+; n_t_91x~1sexp       ; 2         ;
+; rx_again_l~2sexp    ; 2         ;
+; gdollar_4_m~9       ; 2         ;
+; n_t_2x_m~9          ; 2         ;
+; n_t_5x_m~9          ; 2         ;
+; gdollar_0_m~9       ; 2         ;
+; gdollar_4~9         ; 2         ;
+; rx_div4_l_m~9       ; 2         ;
+; spike_det_l_m~13    ; 2         ;
+; last_unit_m~9       ; 2         ;
+; bd1745_m~9          ; 2         ;
+; rx_div2_l_m~9       ; 2         ;
+; p_pulse_l_m~9       ; 2         ;
+; stp1_m~9            ; 2         ;
+; stp2_m~9            ; 2         ;
+; n_t_60x_m~16        ; 2         ;
+; n_t_62x_m~16        ; 2         ;
+; n_t_56x_m~16        ; 2         ;
+; n_t_61x_m~16        ; 2         ;
+; n_t_66x_m~16        ; 2         ;
+; n_t_65x_m~16        ; 2         ;
+; n_t_63x_m~16        ; 2         ;
+; enab_m~9            ; 2         ;
+; rx_div8_m~9         ; 2         ;
+; spike_det_l~10      ; 2         ;
+; rx_active_m~13      ; 2         ;
+; stp2~9              ; 2         ;
+; tx_data_m~16        ; 2         ;
+; n_t_70x~4           ; 2         ;
+; ck_pulse_m~9        ; 2         ;
+; start_l_m~9         ; 2         ;
+; tx_active_l_m~9     ; 2         ;
+; tx_div_m~9          ; 2         ;
+; tx_data~9           ; 2         ;
+; tflg_l_m~10         ; 2         ;
+; rflg_l_m~9          ; 2         ;
+; int_enab_l_m~9      ; 2         ;
+; serial_out_m~10     ; 2         ;
+; cktfl~2             ; 2         ;
+; n_t_28x~4           ; 2         ;
+; ckkie~2             ; 2         ;
+; serial_out$latch~10 ; 2         ;
+; n_t_39x             ; 2         ;
+; n_t_38x             ; 2         ;
+; n_t_37x             ; 2         ;
+; n_t_35x             ; 2         ;
+; n_t_36x             ; 2         ;
+; n_t_34x             ; 2         ;
+; rx7                 ; 2         ;
+; bd153600            ; 2         ;
+; bd76800             ; 2         ;
+; bd38400             ; 2         ;
+; bd9600              ; 2         ;
+; bd1200              ; 2         ;
+; bd600               ; 2         ;
+; n_t_25x~3           ; 1         ;
+; data10_l~0          ; 1         ;
+; data09_l~0          ; 1         ;
+; data08_l~0          ; 1         ;
+; data07_l~0          ; 1         ;
+; data06_l~0          ; 1         ;
+; data05_l~0          ; 1         ;
+; data04_l~0          ; 1         ;
+; n_t_108x~8sexp3     ; 1         ;
+; n_t_108x~8sexp2     ; 1         ;
+; n_t_108x~8sexp1     ; 1         ;
+; spike_det_l_m~5sexp ; 1         ;
+; comb~15sexp         ; 1         ;
+; n_t_94x~1sexp       ; 1         ;
+; tx8~8sexp           ; 1         ;
+; comb~13sexpand0     ; 1         ;
+; n_t_8x~0sexpand1    ; 1         ;
+; rx_rate~28          ; 1         ;
+; tx_sel~35           ; 1         ;
+; selected_l~20       ; 1         ;
+; rx_sel~39           ; 1         ;
+; selected_l~15       ; 1         ;
+; n_t_60x_m~7         ; 1         ;
+; n_t_62x_m~7         ; 1         ;
+; n_t_56x_m~7         ; 1         ;
+; n_t_61x_m~7         ; 1         ;
+; n_t_66x_m~7         ; 1         ;
+; n_t_65x_m~7         ; 1         ;
+; n_t_63x_m~7         ; 1         ;
+; comb~14             ; 1         ;
+; n_t_108x~10         ; 1         ;
+; n_t_108x~9          ; 1         ;
+; bd873               ; 1         ;
+; n_t_41x~9           ; 1         ;
+; n_t_41x~8           ; 1         ;
+; bd614400            ; 1         ;
+; bd436               ; 1         ;
+; bd4800              ; 1         ;
+; bd307200            ; 1         ;
+; bd218               ; 1         ;
+; bd2400              ; 1         ;
+; bd109               ; 1         ;
+; bd300               ; 1         ;
+; skip_l~13           ; 1         ;
+; data11_l~5          ; 1         ;
+; data10_l~5          ; 1         ;
+; data09_l~5          ; 1         ;
+; data08_l~5          ; 1         ;
+; data07_l~5          ; 1         ;
+; data06_l~5          ; 1         ;
+; data05_l~5          ; 1         ;
+; data04_l~5          ; 1         ;
+; selected_l~13       ; 1         ;
+; int_rqst_l~5        ; 1         ;
+; c1_l~5              ; 1         ;
+; kcc_l~4             ; 1         ;
++---------------------+-----------+
 
 
 +--------------------------------------------------+
@@ -571,15 +547,15 @@ Note: User assignments will override these defaults. The user specified values a
 ; Other Routing Resource Type ; Usage              ;
 +-----------------------------+--------------------+
 ; Output enables              ; 0 / 6 ( 0 % )      ;
-; PIA buffers                 ; 234 / 288 ( 81 % ) ;
-; PIAs                        ; 266 / 288 ( 92 % ) ;
+; PIA buffers                 ; 192 / 288 ( 67 % ) ;
+; PIAs                        ; 218 / 288 ( 76 % ) ;
 +-----------------------------+--------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB External Interconnect                                                   ;
 +-----------------------------------------------+-----------------------------+
-; LAB External Interconnects  (Average = 33.25) ; Number of LABs  (Total = 8) ;
+; LAB External Interconnects  (Average = 27.25) ; Number of LABs  (Total = 8) ;
 +-----------------------------------------------+-----------------------------+
 ; 0 - 2                                         ; 0                           ;
 ; 3 - 5                                         ; 0                           ;
@@ -588,18 +564,17 @@ Note: User assignments will override these defaults. The user specified values a
 ; 12 - 14                                       ; 0                           ;
 ; 15 - 17                                       ; 0                           ;
 ; 18 - 20                                       ; 0                           ;
-; 21 - 23                                       ; 0                           ;
-; 24 - 26                                       ; 0                           ;
-; 27 - 29                                       ; 0                           ;
-; 30 - 32                                       ; 2                           ;
-; 33 - 35                                       ; 6                           ;
+; 21 - 23                                       ; 2                           ;
+; 24 - 26                                       ; 2                           ;
+; 27 - 29                                       ; 1                           ;
+; 30 - 32                                       ; 3                           ;
 +-----------------------------------------------+-----------------------------+
 
 
 +-----------------------------------------------------------------------+
 ; LAB Macrocells                                                        ;
 +-----------------------------------------+-----------------------------+
-; Number of Macrocells  (Average = 15.88) ; Number of LABs  (Total = 8) ;
+; Number of Macrocells  (Average = 15.38) ; Number of LABs  (Total = 8) ;
 +-----------------------------------------+-----------------------------+
 ; 0                                       ; 0                           ;
 ; 1                                       ; 0                           ;
@@ -615,9 +590,9 @@ Note: User assignments will override these defaults. The user specified values a
 ; 11                                      ; 0                           ;
 ; 12                                      ; 0                           ;
 ; 13                                      ; 0                           ;
-; 14                                      ; 0                           ;
+; 14                                      ; 2                           ;
 ; 15                                      ; 1                           ;
-; 16                                      ; 7                           ;
+; 16                                      ; 5                           ;
 +-----------------------------------------+-----------------------------+
 
 
@@ -627,163 +602,154 @@ Note: User assignments will override these defaults. The user specified values a
 ; Parallel Expander Length ; Number of Parallel Expanders ;
 +--------------------------+------------------------------+
 ; 0                        ; 0                            ;
-; 1                        ; 10                           ;
+; 1                        ; 5                            ;
 +--------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; Shareable Expander                                                            ;
 +-------------------------------------------------+-----------------------------+
-; Number of shareable expanders  (Average = 5.50) ; Number of LABs  (Total = 8) ;
+; Number of shareable expanders  (Average = 2.75) ; Number of LABs  (Total = 7) ;
 +-------------------------------------------------+-----------------------------+
-; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 0                           ;
-; 3                                               ; 3                           ;
-; 4                                               ; 1                           ;
-; 5                                               ; 0                           ;
-; 6                                               ; 2                           ;
-; 7                                               ; 0                           ;
-; 8                                               ; 1                           ;
-; 9                                               ; 0                           ;
-; 10                                              ; 0                           ;
-; 11                                              ; 1                           ;
+; 0                                               ; 1                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 2                           ;
+; 3                                               ; 2                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 1                           ;
+; 6                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
-+-----+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; LAB ; Logic Cell ; Input                                                                                                                                                                                                                       ; Output                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-+-----+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-;  A  ; LC13       ; bd600                                                                                                                                                                                                                       ; rx_rate~39                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  A  ; LC15       ; p_pulse_l~21, serial_in, n_t_41x~31, n_t_41x~32                                                                                                                                                                             ; data04_l~14, n_t_34x                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  A  ; LC3        ; rx_rate~39, bd109, sw1, sw2, sw3, bd9600, bd38400, bd76800, bd153600                                                                                                                                                        ; rx_div, ck_pulse_m~19, stp1_m~20, ck_pulse~20, stp1~20, gdollar_4_m~20, gdollar_4~20, stp2_m~20, stp2~20, tx_active_l_m~21, tx_active_l~21, start_l_m~19, tx_div_m~21, start_l~21, tx_div~21, comb~39sexpand0, rx_again_l~5sexp, comb~40, rx_active~22, rx_active_m~26                                                                                                                                                                                                         ;
-;  A  ; LC4        ; n_t_37x, p_pulse_l~21, n_t_41x~31, n_t_41x~32                                                                                                                                                                               ; data09_l~14, n_t_39x                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  A  ; LC14       ; rx7, p_pulse_l~21, n_t_41x~31, n_t_41x~32                                                                                                                                                                                   ; data05_l~14, n_t_36x                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  A  ; LC16       ; md09_l, kcc_l~19, n_t_37x                                                                                                                                                                                                   ; data08_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  A  ; LC10       ; rx_active_m~26, n_t_70x~10, power_ok, rx_active~22, rx_rate~32, serial_in, last_unit~20                                                                                                                                     ; rx_active~22, p_pulse_l~21, rx_active8_l~4sexp, ck_pulse~20, spike_det_l~22, n_t_91x~4sexp, rx_last_l~4sexp, rx_div2_l_m~21, rx_div2_l~21, rx_div4_l_m~21, rx_div4_l~21, rx_again_l~5sexp, comb~40, rx_active_m~26, comb~41sexp, rx_div                                                                                                                                                                                                                                        ;
-;  A  ; LC9        ; comb~40, rx_active_m~26, power_ok, rx_rate~32, serial_in, rx_active~22, last_unit~20                                                                                                                                        ; rx_active_m~26, rx_active~22                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  A  ; LC7        ; n_t_34x, p_pulse_l~21, n_t_41x~31, n_t_41x~32                                                                                                                                                                               ; data06_l~13, data06_l~14, data06_l~15, data06_l~20, n_t_35x                                                                                                                                                                                                                                                                                                                                                                                                                    ;
-;  A  ; LC6        ; enab~20, stp2~20, sw1, sw2, sw3, stp1~20, n_t_108x~22sexpand0                                                                                                                                                               ; tx_active_l_m~21                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
-;  A  ; LC8        ; power_ok, n_t_70x~10, rx_rate~32, serial_in, rx_active~22, last_unit~20                                                                                                                                                     ; rx_active_m~26                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
-;  A  ; LC1        ; n_t_39x, p_pulse_l~21, n_t_41x~31, n_t_41x~32                                                                                                                                                                               ; data11_l~14, rflg_l_m~21, last_unit_m~20                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  A  ; LC5        ; n_t_36x, p_pulse_l~21, n_t_41x~31, n_t_41x~32                                                                                                                                                                               ; data07_l~14, n_t_37x                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  A  ; LC11       ; n_t_35x, p_pulse_l~21, n_t_41x~31, n_t_41x~32                                                                                                                                                                               ; data08_l~14, n_t_38x                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  A  ; LC12       ; n_t_38x, p_pulse_l~21, n_t_41x~31, n_t_41x~32                                                                                                                                                                               ; data10_l~14, n_t_40x                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  A  ; LC2        ; bd600, sw1, sw2, sw3, bd1200, bd300                                                                                                                                                                                         ; rx_rate~32                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  B  ; LC24       ; n_t_60x_m~31, initialize, n_t_60x~20, tx_shift_l~14, tx_div~21, tx_shift_l~15                                                                                                                                               ; n_t_60x~20, n_t_62x_m~24, tx8~11sexp, tx8~20                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  B  ; LC30       ; clk                                                                                                                                                                                                                         ; bd307200                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  B  ; LC31       ; bd307200                                                                                                                                                                                                                    ; bd76800, rx_rate~32                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
-;  B  ; LC21       ; md08_l, md04_l, sw6, md03_l, sw5, sw4, md06_l, md05_l, io_pause_l, md07_l, md10_l                                                                                                                                           ; n_t_21x~17                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  B  ; LC27       ; tx_data_m~35, initialize, tx_data~20, tx_shift_l~14, tx_div~21, tx_shift_l~15                                                                                                                                               ; tx_data~20, serial_out_m~22                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
-;  B  ; LC18       ; md07_l, md08_l, sw6, io_pause_l, sw5, sw4, md05_l, md04_l, md06_l, md03_l                                                                                                                                                   ; tx_sel~34                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
-;  B  ; LC23       ; int_enab_l_m~20, initialize, int_enab_l~20, tp3, n_t_25x~17, krs_l~7, ckkie~12sexpand1                                                                                                                                      ; int_enab_l~20, skip_l~26, skip_l~38                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
-;  B  ; LC17       ; skip_l~28, skip_l~29, skip_l~30, skip_l~31, skip_l~32, skip_l~33, sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l, rflg_l~21, n_t_25x~17, n_t_21x~17, md09_l, int_enab_l~20, tx_sel~34, tflg_l~22 ; skip_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  B  ; LC29       ; initialize, tx_data_m~35, tpc_l~26, n_t_66x~20, md09_l, tx_sel~34, data11_l, n_t_25x~17, tx_shift_l~14, tx_div~21, tx_shift_l~15                                                                                            ; tx_data_m~35, tx_data~20                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  B  ; LC19       ; tx_sel~35, md07_l, md08_l, sw6, io_pause_l, sw5, sw4, md05_l, md04_l, md06_l, md03_l                                                                                                                                        ; skip_l~38, tpc_l~21sexpand0, n_t_60x_m~22, enab_m~20, cktfl~12sexpand1, tflg_l_m~22, tflg_l~22, n_t_62x_m~24, n_t_56x_m~24, n_t_61x_m~24, n_t_63x_m~24, n_t_65x_m~24, n_t_66x_m~24, tx_data_m~35, tx_shift_l~9sexpand1, tx_shift_l~12, tx_shift_l~15, tpc_l~24, tpc_l~25, tx_shift_l~16, tx_shift_l~18, tpc_l~26, cktfl~15                                                                                                                                                     ;
-;  B  ; LC22       ; n_t_21x~18, md04_l, sw6, md03_l, sw5, sw4, md06_l, md05_l, io_pause_l, md07_l, md10_l, md08_l                                                                                                                               ; skip_l~28, skip_l~29, skip_l~30, skip_l~31, skip_l~32, skip_l~33, skip_l~38, cktfl~12sexpand1, tflg_l_m~22, tflg_l~22, cktfl~15                                                                                                                                                                                                                                                                                                                                                ;
-;  B  ; LC28       ; initialize, int_enab_l_m~20, ckkie~12sexpand1, tp3, n_t_25x~17, krs_l~7, n_t_8x~3sexpand1                                                                                                                                   ; int_enab_l_m~20, int_enab_l~20                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
-;  B  ; LC20       ; n_t_62x_m~35, initialize, n_t_62x~20, tx_shift_l~14, tx_div~21, tx_shift_l~15                                                                                                                                               ; n_t_62x~20, n_t_56x_m~24, tx8~11sexp, tx8~20                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  B  ; LC32       ; n_t_66x_m~35, initialize, n_t_66x~20, tx_shift_l~14, tx_div~21, tx_shift_l~15                                                                                                                                               ; n_t_66x~20, tx_data_m~35, tx8~11sexp, tx8~20                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  B  ; LC25       ; n_t_66x_m~24, initialize, n_t_66x_m~35, tx_div~21, tx_shift_l~15, tx_shift_l~14                                                                                                                                             ; n_t_66x_m~35, n_t_66x~20                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  B  ; LC26       ; n_t_62x_m~24, initialize, n_t_62x_m~35, tx_div~21, tx_shift_l~15, tx_shift_l~14                                                                                                                                             ; n_t_62x_m~35, n_t_62x~20                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  C  ; LC45       ; int_enab_l~20, rflg_l~21, tflg_l~22                                                                                                                                                                                         ; int_rqst_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  C  ; LC46       ; n_t_2x_m~22, bd19200, n_t_2x~22, div11~4sexp                                                                                                                                                                                ; n_t_2x_m~22, n_t_2x~22, n_t_5x_m~22, n_t_5x~22, div11~4sexp                                                                                                                                                                                                                                                                                                                                                                                                                    ;
-;  C  ; LC44       ; n_t_5x~22, n_t_2x~22, n_t_5x_m~22, div11~4sexp                                                                                                                                                                              ; n_t_5x_m~22, n_t_5x~22                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  C  ; LC40       ; selected_l~22, md07_l, md06_l, sw6, md05_l, sw5, io_pause_l, md03_l, sw4, md04_l, md08_l                                                                                                                                    ; internal_io_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
-;  C  ; LC42       ; gdollar_0~22, n_t_5x~22, gdollar_0_m~22, div11~4sexp                                                                                                                                                                        ; gdollar_0_m~22, gdollar_0~22                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  C  ; LC38       ; gdollar_0_m~22, n_t_5x~22, gdollar_0~22, div11~4sexp                                                                                                                                                                        ; gdollar_0_m~22, gdollar_0~22, bd1745_m~22, bd1745~22                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  C  ; LC37       ; bd1745~22, gdollar_0~22, bd1745_m~22, div11~4sexp                                                                                                                                                                           ; bd1745_m~22, bd1745~22                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  C  ; LC41       ; bd1745_m~22, gdollar_0~22, bd1745~22, div11~4sexp                                                                                                                                                                           ; bd1745_m~22, bd1745~22, bd873, div11~4sexp                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  C  ; LC36       ; bd1745~22                                                                                                                                                                                                                   ; bd436                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
-;  C  ; LC47       ; n_t_2x~22, bd19200, n_t_2x_m~22, div11~4sexp                                                                                                                                                                                ; n_t_2x_m~22, n_t_2x~22                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  C  ; LC39       ; md07_l, md08_l, md06_l, sw6, md05_l, sw5, io_pause_l, md03_l, sw4, md04_l                                                                                                                                                   ; selected_l~20                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
-;  C  ; LC35       ; bd19200                                                                                                                                                                                                                     ; bd4800, rx_rate~32                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
-;  C  ; LC48       ; tflg_l_m~22, tx_div~21, tflg_l~22, cktfl~15, n_t_21x~17, tx_sel~34, tp3, n_t_25x~17, initialize                                                                                                                             ; tflg_l~22, skip_l~26, skip_l~38                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
-;  C  ; LC34       ; bd4800                                                                                                                                                                                                                      ; bd1200                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  C  ; LC33       ; n_t_62x~20, tpc_l~25, md09_l, tx_sel~34, n_t_25x~17, data06_l                                                                                                                                                               ; n_t_56x_m~35                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  C  ; LC43       ; n_t_5x_m~22, n_t_2x~22, n_t_5x~22, div11~4sexp                                                                                                                                                                              ; n_t_5x_m~22, n_t_5x~22, gdollar_0_m~22, gdollar_0~22, div11~4sexp                                                                                                                                                                                                                                                                                                                                                                                                              ;
-;  D  ; LC60       ; rflg_l_m~21, ck_pulse~20, rflg_l~21, n_t_28x~23                                                                                                                                                                             ; rflg_l~21, skip_l~26, skip_l~28, skip_l~29, skip_l~30, skip_l~31, skip_l~32, skip_l~33, skip_l~38                                                                                                                                                                                                                                                                                                                                                                              ;
-;  D  ; LC62       ; n_t_60x_m~22, initialize, n_t_60x_m~31, tx_div~21, tx_shift_l~12, tx_shift_l~13                                                                                                                                             ; n_t_60x_m~31, n_t_60x~20                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  D  ; LC56       ; initialize, enab_m~20, md09_l, tx_sel~34, n_t_25x~17, tx_shift_l~13, tx_div~21, tx_shift_l~12                                                                                                                               ; enab~20, enab_m~20, tp_ca1                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  D  ; LC51       ; md09_l, kcc_l~19, n_t_35x                                                                                                                                                                                                   ; data07_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  D  ; LC55       ; n_t_40x, ck_pulse~20, rflg_l_m~21, n_t_28x~23                                                                                                                                                                               ; rflg_l_m~21, rflg_l~21                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  D  ; LC58       ; md07_l, md06_l, sw6, md05_l, sw5, io_pause_l, md03_l, sw4, md04_l, md10_l, md08_l, md11_l                                                                                                                                   ; kcc_l~25                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  D  ; LC63       ; c1_l~20, md11_l, sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l                                                                                                                                  ; c1_l~26                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
-;  D  ; LC49       ; md09_l, sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l, md10_l                                                                                                                                   ; krs_l~7                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
-;  D  ; LC61       ; bd153600                                                                                                                                                                                                                    ; bd38400, rx_rate~32                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
-;  D  ; LC53       ; initialize, n_t_28x~24, tp3, md11_l, sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l                                                                                                              ; n_t_28x~23                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  D  ; LC57       ; bd38400                                                                                                                                                                                                                     ; bd9600, n_t_2x_m~22, n_t_2x~22                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
-;  D  ; LC59       ; kcc_l~30, md07_l, md06_l, sw6, md05_l, sw5, io_pause_l, md03_l, sw4, md04_l, md10_l, md08_l, md11_l                                                                                                                         ; c0_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  D  ; LC64       ; c1_l~28, c1_l~20, md11_l, sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l                                                                                                                         ; c1_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  D  ; LC50       ; krs_l~8, md09_l, sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l, md10_l                                                                                                                          ; ckkie~12sexpand1, int_enab_l_m~20, int_enab_l~20                                                                                                                                                                                                                                                                                                                                                                                                                               ;
-;  D  ; LC54       ; n_t_28x~31, n_t_28x~24, tp3, md11_l, sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l                                                                                                              ; rflg_l_m~21, rflg_l~21                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  D  ; LC52       ; bd76800                                                                                                                                                                                                                     ; bd19200, rx_rate~32                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
-;  E  ; LC69       ; rx7, md09_l, kcc_l~19                                                                                                                                                                                                       ; data04_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  E  ; LC67       ; md09_l, kcc_l~19, n_t_34x                                                                                                                                                                                                   ; data05_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  E  ; LC65       ; data06_l~13, data06_l~14, data06_l~15, md09_l, sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l, md11_l, n_t_36x                                                                                   ; data06_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  E  ; LC71       ; data04_l, enab~20, md09_l, tx_sel~34, n_t_25x~17, tpc_l~21sexpand0                                                                                                                                                          ; n_t_60x_m~31                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  E  ; LC76       ; sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l, md11_l                                                                                                                                           ; kcc_l~19                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  E  ; LC80       ; n_t_65x_m~35, initialize, n_t_65x~20, tx_shift_l~19, tx_div~21, tx_shift_l~18                                                                                                                                               ; n_t_65x~20, n_t_66x_m~24, tx8~11sexp, tx8~20                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  E  ; LC73       ; n_t_25x~18, md04_l, sw6, md03_l, sw5, sw4, md06_l, md05_l, io_pause_l, md07_l, md11_l, md08_l                                                                                                                               ; skip_l~28, skip_l~29, skip_l~30, skip_l~31, skip_l~32, skip_l~33, skip_l~38, tpc_l~21sexpand0, n_t_60x_m~22, enab_m~20, cktfl~12sexpand1, ckkie~12sexpand1, int_enab_l_m~20, int_enab_l~20, tflg_l_m~22, tflg_l~22, n_t_62x_m~24, n_t_56x_m~24, n_t_61x_m~24, n_t_63x_m~24, n_t_65x_m~24, n_t_66x_m~24, tx_data_m~35, tx_shift_l~9sexpand1, tx_shift_l~12, tx_shift_l~15, tpc_l~24, tpc_l~25, tx_shift_l~16, tx_shift_l~18, tpc_l~26, cktfl~15                                 ;
-;  E  ; LC70       ; n_t_63x_m~24, initialize, n_t_63x_m~35, tx_div~21, tx_shift_l~18, tx_shift_l~19                                                                                                                                             ; n_t_63x_m~35, n_t_63x~20                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  E  ; LC75       ; n_t_65x_m~24, initialize, n_t_65x_m~35, tx_div~21, tx_shift_l~18, tx_shift_l~19                                                                                                                                             ; n_t_65x_m~35, n_t_65x~20                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  E  ; LC79       ; n_t_63x_m~35, initialize, n_t_63x~20, tx_shift_l~19, tx_div~21, tx_shift_l~18                                                                                                                                               ; n_t_63x~20, n_t_65x_m~24, tx8~11sexp, tx8~20                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  E  ; LC77       ; kcc_l~27, sw5, sw6, md05_l, md06_l, md07_l, md03_l, md08_l, md04_l, sw4, io_pause_l, md11_l                                                                                                                                 ; data04_l~14, data05_l~14, data07_l~14, data08_l~14, data09_l~14, data10_l~14, data11_l~14                                                                                                                                                                                                                                                                                                                                                                                      ;
-;  E  ; LC74       ; n_t_63x~20, tpc_l~21sexpand0, md09_l, tx_sel~34, data09_l, n_t_25x~17                                                                                                                                                       ; n_t_65x_m~35                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  E  ; LC78       ; bd436                                                                                                                                                                                                                       ; bd109                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
-;  E  ; LC66       ; bd218                                                                                                                                                                                                                       ; rx_rate~32                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  E  ; LC68       ; n_t_65x~20, tpc_l~21sexpand0, md09_l, tx_sel~34, data10_l, n_t_25x~17                                                                                                                                                       ; n_t_66x_m~35                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  E  ; LC72       ; md08_l, md04_l, sw6, md03_l, sw5, sw4, md06_l, md05_l, io_pause_l, md07_l, md11_l                                                                                                                                           ; n_t_25x~17                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  F  ; LC82       ; rx_rate~32, start_l_m~19, comb~39sexpand0                                                                                                                                                                                   ; start_l_m~19, start_l~21                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  F  ; LC87       ; rx_rate~32, tx_div_m~21, initialize, n_t_94x~4sexp                                                                                                                                                                          ; tx_div_m~21, tx_div~21                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  F  ; LC89       ; start_l_m~19, tx_active_l~21, start_l~21, rx_rate~32                                                                                                                                                                        ; start_l~21, serial_out_m~22, serial_out$latch~22                                                                                                                                                                                                                                                                                                                                                                                                                               ;
-;  F  ; LC81       ; tx_div_m~21, rx_rate~32, tx_div~21, initialize                                                                                                                                                                              ; stp1_m~20, stp1~20, gdollar_4_m~20, gdollar_4~20, stp2_m~20, stp2~20, tx_div~21, tflg_l_m~22, tflg_l~22, serial_out_m~22, serial_out$latch~22, n_t_94x~4sexp, tx_shift_l~7sexp, enab~20, n_t_60x_m~31, n_t_60x~20, n_t_62x_m~35, n_t_62x~20, n_t_56x_m~35, n_t_56x~20, n_t_61x_m~35, n_t_61x~20, n_t_63x_m~35, n_t_63x~20, n_t_65x_m~35, n_t_65x~20, n_t_66x_m~35, n_t_66x~20, enab_m~20, tx_data_m~35, tx_data~20, tx_shift_l~13, tx_shift_l~14, tx_shift_l~17, tx_shift_l~19 ;
-;  F  ; LC95       ; rx_div2_l~21, rx_div, rx_div2_l_m~21, rx_active~22, last_unit~20                                                                                                                                                            ; rx_div2_l_m~21, rx_div2_l~21                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  F  ; LC93       ; spike_det_l_m~26, initialize, spike_det_l~22, rx_active8_l~4sexp, rx_active~22, rx_div8~20, rx_again_l~5sexp                                                                                                                ; spike_det_l~22, n_t_70x~10                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  F  ; LC94       ; rx_div2_l_m~21, rx_div, rx_div2_l~21, rx_active~22, last_unit~20                                                                                                                                                            ; rx_div2_l_m~21, rx_div2_l~21, n_t_41x~32, rx_div4_l_m~21, rx_div4_l~21                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  F  ; LC85       ; rx_div4_l~21, rx_div2_l~21, rx_div4_l_m~21, rx_active~22, last_unit~20                                                                                                                                                      ; rx_div4_l_m~21, rx_div4_l~21                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  F  ; LC92       ; rx_div4_l_m~21, rx_div2_l~21, rx_div4_l~21, rx_active~22, last_unit~20                                                                                                                                                      ; rx_div8_m~20, rx_div8~20, rx_div4_l_m~21, rx_div4_l~21, p_pulse_l_m~19, p_pulse_l~21, comb~41sexp                                                                                                                                                                                                                                                                                                                                                                              ;
-;  F  ; LC90       ; n_t_40x, ck_pulse~20, last_unit_m~20, n_t_91x~4sexp                                                                                                                                                                         ; last_unit_m~20, last_unit~20                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  F  ; LC88       ; last_unit_m~20, ck_pulse~20, last_unit~20, n_t_91x~4sexp                                                                                                                                                                    ; last_unit~20, n_t_70x~10, rx_last_l~4sexp, rx_div2_l_m~21, rx_div2_l~21, rx_div4_l_m~21, rx_div4_l~21, rx_again_l~5sexp, comb~40, rx_active~22, rx_active_m~26, rx_div                                                                                                                                                                                                                                                                                                         ;
-;  F  ; LC86       ; last_unit~20, rx_active8_l~4sexp, ck_pulse~20, spike_det_l~22, serial_in                                                                                                                                                    ; comb~40, rx_active~22                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
-;  F  ; LC84       ; ck_pulse_m~19, rx_rate~32, ck_pulse~20, rx_active~22, rx_div8~20, rx_active8_l~4sexp                                                                                                                                        ; ck_pulse~20, n_t_41x~31, n_t_41x~32, rflg_l_m~21, last_unit_m~20, rflg_l~21, last_unit~20, n_t_70x~10                                                                                                                                                                                                                                                                                                                                                                          ;
-;  F  ; LC96       ; spike_det_l_m~26, spike_det_l_m~18sexp, rx_again_l~5sexp                                                                                                                                                                    ; spike_det_l_m~26, spike_det_l~22                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
-;  F  ; LC83       ; rx_rate~32, ck_pulse_m~19, rx_active8_l~4sexp                                                                                                                                                                               ; ck_pulse_m~19, ck_pulse~20                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-;  F  ; LC91       ; rx_rate~32, tx_active_l_m~21, initialize, n_t_94x~4sexp, n_t_108x~20sexp2, n_t_108x~27                                                                                                                                      ; tx_active_l_m~21, tx_active_l~21                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
-;  G  ; LC104      ; rx_div4_l~21, p_pulse_l_m~19, comb~41sexp                                                                                                                                                                                   ; p_pulse_l_m~19, p_pulse_l~21                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  G  ; LC102      ; p_pulse_l_m~19, rx_active~22, p_pulse_l~21, rx_div4_l~21                                                                                                                                                                    ; n_t_36x, n_t_41x~31, n_t_35x, n_t_37x, n_t_38x, n_t_39x, n_t_40x, p_pulse_l~21, rx7, n_t_34x                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  G  ; LC105      ; enab_m~20, initialize, enab~20, tx_shift_l~7sexp, tx_div~21, tx_shift_l~9sexpand1                                                                                                                                           ; enab~20, n_t_60x_m~22, n_t_108x~27, tx8~11sexp, tx8~20                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  G  ; LC109      ; tx_active_l_m~21, rx_rate~32, tx_active_l~21, initialize                                                                                                                                                                    ; stp1_m~20, tx_active_l~21, start_l~21, serial_out_m~22, serial_out$latch~22, comb~39sexpand0, n_t_94x~4sexp, n_t_108x~20sexp2                                                                                                                                                                                                                                                                                                                                                  ;
-;  G  ; LC111      ; tx_div~21, tflg_l_m~22, cktfl~12sexpand1, n_t_21x~17, tx_sel~34, tp3, n_t_25x~17, initialize, tx8~20                                                                                                                        ; tflg_l_m~22, tflg_l~22                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  G  ; LC107      ; tx_active_l~21, tx_div~21, rx_rate~32, stp1_m~20                                                                                                                                                                            ; stp1_m~20, stp1~20                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
-;  G  ; LC103      ; bd2400                                                                                                                                                                                                                      ; bd600, rx_rate~39                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
-;  G  ; LC106      ; rx_div8_m~20, rx_div4_l~21, rx_div8~20, rx_last_l~4sexp                                                                                                                                                                     ; rx_div8_m~20, rx_div8~20, rx_active8_l~4sexp, ck_pulse~20, spike_det_l~22, n_t_91x~4sexp                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  G  ; LC100      ; bd873                                                                                                                                                                                                                       ; bd218                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
-;  G  ; LC97       ; stp1_m~20, tx_div~21, rx_rate~32, stp1~20                                                                                                                                                                                   ; stp1~20, gdollar_4_m~20, n_t_108x~27                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  G  ; LC99       ; bd9600                                                                                                                                                                                                                      ; bd2400                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-;  G  ; LC108      ; rx_div8~20, rx_div4_l~21, rx_div8_m~20, rx_last_l~4sexp                                                                                                                                                                     ; rx_div8_m~20, rx_div8~20                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  G  ; LC112      ; gdollar_4_m~20, tx_div~21, rx_rate~32, gdollar_4~20                                                                                                                                                                         ; gdollar_4~20, stp2_m~20                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
-;  G  ; LC110      ; stp1~20, tx_div~21, rx_rate~32, gdollar_4_m~20                                                                                                                                                                              ; gdollar_4_m~20, gdollar_4~20                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  G  ; LC101      ; bd1200                                                                                                                                                                                                                      ; bd300, rx_rate~39                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
-;  H  ; LC128      ; md09_l, kcc_l~19, n_t_38x                                                                                                                                                                                                   ; data09_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  H  ; LC126      ; md09_l, kcc_l~19, n_t_39x                                                                                                                                                                                                   ; data10_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  H  ; LC123      ; md09_l, kcc_l~19, n_t_40x                                                                                                                                                                                                   ; data11_l                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  H  ; LC120      ; bd614400                                                                                                                                                                                                                    ; bd153600                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  H  ; LC114      ; rx_div, rx_rate~32, rx_active~22, last_unit~20                                                                                                                                                                              ; rx_div, rx_div2_l_m~21, rx_div2_l~21                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  H  ; LC125      ; n_t_61x~20, tpc_l~24, md09_l, tx_sel~34, n_t_25x~17, data08_l                                                                                                                                                               ; n_t_63x_m~35                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  H  ; LC117      ; n_t_61x_m~35, initialize, n_t_61x~20, tx_shift_l~17, tx_div~21, tx_shift_l~16                                                                                                                                               ; n_t_61x~20, n_t_63x_m~24, tx8~11sexp, tx8~20                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  H  ; LC113      ; n_t_61x_m~24, initialize, n_t_61x_m~35, tx_div~21, tx_shift_l~16, tx_shift_l~17                                                                                                                                             ; n_t_61x_m~35, n_t_61x~20                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  H  ; LC124      ; n_t_56x~20, tpc_l~24, md09_l, tx_sel~34, n_t_25x~17, data07_l                                                                                                                                                               ; n_t_61x_m~35                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  H  ; LC115      ; n_t_56x_m~24, initialize, n_t_56x_m~35, tx_div~21, tx_shift_l~16, tx_shift_l~17                                                                                                                                             ; n_t_56x_m~35, n_t_56x~20                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-;  H  ; LC121      ; gdollar_4~20, tx_div~21, rx_rate~32, stp2_m~20                                                                                                                                                                              ; stp2_m~20, stp2~20                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
-;  H  ; LC119      ; n_t_60x~20, tpc_l~24, md09_l, tx_sel~34, n_t_25x~17, data05_l                                                                                                                                                               ; n_t_62x_m~35                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-;  H  ; LC127      ; tx_data~20, tx_div~21, tx_active_l~21, serial_out_m~22, start_l~21                                                                                                                                                          ; serial_out_m~22, serial_out$latch~22                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  H  ; LC118      ; serial_out_m~22, tx_div~21, tx_active_l~21, serial_out$latch~22, start_l~21                                                                                                                                                 ; serial_out$latch~22, serial_out                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
-;  H  ; LC122      ; stp2_m~20, tx_div~21, rx_rate~32, stp2~20                                                                                                                                                                                   ; stp2~20, n_t_108x~27                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
-;  H  ; LC116      ; n_t_56x_m~35, initialize, n_t_56x~20, tx_shift_l~17, tx_div~21, tx_shift_l~16                                                                                                                                               ; n_t_56x~20, n_t_61x_m~24, tx8~11sexp, tx8~20                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-+-----+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                           ;
++-----+------------+----------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                          ; Output                                                                                                                                                                                                                                                           ;
++-----+------------+----------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC11       ; rx7, p_pulse_l~9, n_t_41x~24, n_t_41x~25                                                                       ; data05_l~5, n_t_36x                                                                                                                                                                                                                                              ;
+;  A  ; LC9        ; n_t_34x, p_pulse_l~9, n_t_41x~24, n_t_41x~25                                                                   ; data06_l~5, n_t_35x                                                                                                                                                                                                                                              ;
+;  A  ; LC10       ; n_t_36x, p_pulse_l~9, n_t_41x~24, n_t_41x~25                                                                   ; data07_l~5, n_t_37x                                                                                                                                                                                                                                              ;
+;  A  ; LC7        ; n_t_35x, p_pulse_l~9, n_t_41x~24, n_t_41x~25                                                                   ; data08_l~5, n_t_38x                                                                                                                                                                                                                                              ;
+;  A  ; LC1        ; n_t_37x, p_pulse_l~9, n_t_41x~24, n_t_41x~25                                                                   ; data09_l~5, n_t_39x                                                                                                                                                                                                                                              ;
+;  A  ; LC6        ; n_t_38x, p_pulse_l~9, n_t_41x~24, n_t_41x~25                                                                   ; data10_l~5, n_t_40x                                                                                                                                                                                                                                              ;
+;  A  ; LC2        ; n_t_39x, p_pulse_l~9, n_t_41x~24, n_t_41x~25                                                                   ; data11_l~5, rflg_l_m~9, last_unit_m~9                                                                                                                                                                                                                            ;
+;  A  ; LC15       ; n_t_2x_m~9, bd19200, n_t_2x~9, div11~1sexp                                                                     ; n_t_5x~9, n_t_2x~9, n_t_5x_m~9, n_t_2x_m~9, div11~1sexp                                                                                                                                                                                                          ;
+;  A  ; LC16       ; n_t_37x, md09_l, selected_l~7, rx_sel~38, md11_l                                                               ; data08_l                                                                                                                                                                                                                                                         ;
+;  A  ; LC14       ; n_t_5x_m~9, n_t_2x~9, n_t_5x~9, div11~1sexp                                                                    ; gdollar_0~9, n_t_5x~9, gdollar_0_m~9, n_t_5x_m~9, div11~1sexp                                                                                                                                                                                                    ;
+;  A  ; LC12       ; bd1745~9, gdollar_0~9, bd1745_m~9, div11~1sexp                                                                 ; bd1745~9, bd1745_m~9                                                                                                                                                                                                                                             ;
+;  A  ; LC13       ; gdollar_0_m~9, n_t_5x~9, gdollar_0~9, div11~1sexp                                                              ; bd1745~9, bd1745_m~9, gdollar_0~9, gdollar_0_m~9                                                                                                                                                                                                                 ;
+;  A  ; LC3        ; bd1745_m~9, gdollar_0~9, bd1745~9, div11~1sexp                                                                 ; bd873, bd1745~9, bd1745_m~9, div11~1sexp                                                                                                                                                                                                                         ;
+;  A  ; LC8        ; n_t_2x~9, bd19200, n_t_2x_m~9, div11~1sexp                                                                     ; n_t_2x~9, n_t_2x_m~9                                                                                                                                                                                                                                             ;
+;  A  ; LC5        ; n_t_5x~9, n_t_2x~9, n_t_5x_m~9, div11~1sexp                                                                    ; n_t_5x~9, n_t_5x_m~9                                                                                                                                                                                                                                             ;
+;  A  ; LC4        ; gdollar_0~9, n_t_5x~9, gdollar_0_m~9, div11~1sexp                                                              ; gdollar_0~9, gdollar_0_m~9                                                                                                                                                                                                                                       ;
+;  B  ; LC17       ; rx_sel~38, rflg_l~9, md09_l, selected_l~7, md11_l, md10_l, tx_sel~34, tflg_l~10, int_enab_l~9                  ; skip_l                                                                                                                                                                                                                                                           ;
+;  B  ; LC23       ; stp2_m~9, tx_div~9, rx_rate~21, stp2~9                                                                         ; stp2~9, n_t_108x~8sexp1                                                                                                                                                                                                                                          ;
+;  B  ; LC19       ; tp3, tls_l~2, tx_div~9                                                                                         ; tx_data~9, enab~9, n_t_63x~9, n_t_65x~9, n_t_66x~9, n_t_61x~9, n_t_56x~9, n_t_62x~9, n_t_60x~9, tx_data_m~16, enab_m~9, n_t_63x_m~16, n_t_65x_m~16, n_t_66x_m~16, n_t_61x_m~16, n_t_56x_m~16, n_t_62x_m~16, n_t_60x_m~16                                         ;
+;  B  ; LC27       ; tx_active_l~9, tx_div~9, rx_rate~21, stp1_m~9                                                                  ; stp1~9, stp1_m~9                                                                                                                                                                                                                                                 ;
+;  B  ; LC30       ; stp1_m~9, tx_div~9, rx_rate~21, stp1~9                                                                         ; stp1~9, gdollar_4_m~9, n_t_108x~8sexp2                                                                                                                                                                                                                           ;
+;  B  ; LC22       ; tx_data_m~16, initialize, tx_shift_l~2, tx_data~9                                                              ; serial_out_m~10, tx_data~9                                                                                                                                                                                                                                       ;
+;  B  ; LC28       ; rx_rate~21, start_l_m~9, comb~13sexpand0                                                                       ; start_l~9, start_l_m~9                                                                                                                                                                                                                                           ;
+;  B  ; LC26       ; tflg_l_m~10, tx_div~9, cktfl~2, tflg_l~10, initialize, tx_sel~34, selected_l~7, tp3, md10_l, n_t_25x~3         ; int_rqst_l~5, skip_l~13, tflg_l~10                                                                                                                                                                                                                               ;
+;  B  ; LC25       ; tx_data~9, tx_div~9, tx_active_l~9, serial_out_m~10, start_l~9                                                 ; serial_out$latch~10, serial_out_m~10                                                                                                                                                                                                                             ;
+;  B  ; LC20       ; gdollar_4~9, tx_div~9, rx_rate~21, stp2_m~9                                                                    ; stp2~9, stp2_m~9                                                                                                                                                                                                                                                 ;
+;  B  ; LC18       ; tx_div_m~9, rx_rate~21, tx_div~9, initialize                                                                   ; serial_out$latch~10, tflg_l~10, serial_out_m~10, tx_div~9, tflg_l_m~10, tx_shift_l~2, n_t_108x~10, stp2~9, stp1~9, stp2_m~9, stp1_m~9, gdollar_4~9, gdollar_4_m~9, n_t_94x~1sexp                                                                                 ;
+;  B  ; LC21       ; start_l_m~9, tx_active_l~9, start_l~9, rx_rate~21                                                              ; start_l~9, serial_out$latch~10, serial_out_m~10                                                                                                                                                                                                                  ;
+;  B  ; LC32       ; rx_rate~21, tx_div_m~9, initialize, n_t_94x~1sexp                                                              ; tx_div~9, tx_div_m~9                                                                                                                                                                                                                                             ;
+;  B  ; LC24       ; initialize, tx_shift_l~2, tx_data_m~16, tls_l~2, data11_l, n_t_66x~9                                           ; tx_data~9, tx_data_m~16                                                                                                                                                                                                                                          ;
+;  B  ; LC31       ; stp1~9, tx_div~9, rx_rate~21, gdollar_4_m~9                                                                    ; gdollar_4~9, gdollar_4_m~9                                                                                                                                                                                                                                       ;
+;  B  ; LC29       ; gdollar_4_m~9, tx_div~9, rx_rate~21, gdollar_4~9                                                               ; stp2_m~9, gdollar_4~9                                                                                                                                                                                                                                            ;
+;  C  ; LC34       ; rx_sel~39, md08_l, md05_l, md04_l, md06_l, sw4, sw5, io_pause_l, sw6, md07_l, md03_l                           ; kcc_l~4, c1_l~5, data04_l~5, data05_l~5, data06_l~5, data07_l~5, data08_l~5, data09_l~5, data10_l~5, data11_l~5, skip_l~13, ckkie~2, n_t_28x~4                                                                                                                   ;
+;  C  ; LC35       ; n_t_40x, ck_pulse~9, rflg_l_m~9, n_t_28x~4                                                                     ; rflg_l~9, rflg_l_m~9                                                                                                                                                                                                                                             ;
+;  C  ; LC48       ; selected_l~15, md05_l, md06_l, md08_l, sw6, sw5, io_pause_l, md07_l, sw4, md04_l, md03_l                       ; kcc_l~4, c1_l~5, data04_l~5, data05_l~5, data06_l~5, data07_l~5, data08_l~5, data09_l~5, data10_l~5, data11_l~5, skip_l~13, ckkie~2, n_t_28x~4, cktfl~2, tls_l~2, n_t_25x~1sexpand1, tflg_l~10, tflg_l_m~10, n_t_25x~3                                           ;
+;  C  ; LC45       ; int_enab_l~9, rflg_l~9, tflg_l~10                                                                              ; int_rqst_l                                                                                                                                                                                                                                                       ;
+;  C  ; LC40       ; selected_l~20, md05_l, md06_l, md08_l, sw6, sw5, io_pause_l, md07_l, sw4, md04_l, md03_l                       ; internal_io_l                                                                                                                                                                                                                                                    ;
+;  C  ; LC41       ; last_unit_m~9, ck_pulse~9, last_unit~9, n_t_91x~1sexp                                                          ; n_t_70x~4, last_unit~9, rx_last_l~1sexp, rx_div2_l~9, rx_div4_l~9, rx_div2_l_m~9, rx_div4_l_m~9, rx_active~10, comb~14, rx_again_l~2sexp, rx_active_m~13                                                                                                         ;
+;  C  ; LC46       ; n_t_40x, ck_pulse~9, last_unit_m~9, n_t_91x~1sexp                                                              ; last_unit~9, last_unit_m~9                                                                                                                                                                                                                                       ;
+;  C  ; LC47       ; md05_l, md06_l, md08_l, sw6, sw5, io_pause_l, md07_l, sw4, md04_l, md03_l                                      ; selected_l~7                                                                                                                                                                                                                                                     ;
+;  C  ; LC33       ; md08_l, md05_l, md04_l, md06_l, sw4, sw5, io_pause_l, sw6, md07_l, md03_l                                      ; rx_sel~38                                                                                                                                                                                                                                                        ;
+;  C  ; LC39       ; md05_l, md06_l, md08_l, sw6, sw5, io_pause_l, md07_l, sw4, md04_l, md03_l                                      ; selected_l~13                                                                                                                                                                                                                                                    ;
+;  C  ; LC37       ; md07_l, md08_l, sw6, io_pause_l, sw5, sw4, md05_l, md04_l, md06_l, md03_l                                      ; tx_sel~34                                                                                                                                                                                                                                                        ;
+;  C  ; LC36       ; bd1745~9                                                                                                       ; bd436                                                                                                                                                                                                                                                            ;
+;  C  ; LC38       ; tx_sel~35, md07_l, md08_l, sw6, io_pause_l, sw5, sw4, md05_l, md04_l, md06_l, md03_l                           ; skip_l~13, cktfl~2, tls_l~2, tflg_l~10, tflg_l_m~10                                                                                                                                                                                                              ;
+;  C  ; LC42       ; int_enab_l_m~9, initialize, ckkie~2, int_enab_l~9                                                              ; int_rqst_l~5, skip_l~13, int_enab_l~9                                                                                                                                                                                                                            ;
+;  C  ; LC44       ; rflg_l_m~9, ck_pulse~9, rflg_l~9, n_t_28x~4                                                                    ; int_rqst_l~5, skip_l~13, rflg_l~9                                                                                                                                                                                                                                ;
+;  C  ; LC43       ; initialize, ckkie~2, int_enab_l_m~9, n_t_8x~0sexpand1                                                          ; int_enab_l~9, int_enab_l_m~9                                                                                                                                                                                                                                     ;
+;  D  ; LC59       ; selected_l~7, md10_l, rx_sel~38, n_t_25x~1sexpand1                                                             ; c0_l                                                                                                                                                                                                                                                             ;
+;  D  ; LC64       ; md09_l, selected_l~7, rx_sel~38, md11_l, md10_l                                                                ; c1_l                                                                                                                                                                                                                                                             ;
+;  D  ; LC51       ; n_t_35x, md09_l, selected_l~7, rx_sel~38, md11_l                                                               ; data07_l                                                                                                                                                                                                                                                         ;
+;  D  ; LC49       ; selected_l~7, md09_l, tx_sel~34, md11_l                                                                        ; tx_shift_l~2, enab_m~9, n_t_63x_m~7, n_t_65x_m~7, n_t_66x_m~7, n_t_61x_m~7, n_t_56x_m~7, n_t_62x_m~7, n_t_60x_m~7, tx_data_m~16                                                                                                                                  ;
+;  D  ; LC62       ; bd9600                                                                                                         ; bd2400                                                                                                                                                                                                                                                           ;
+;  D  ; LC57       ; bd873                                                                                                          ; bd218                                                                                                                                                                                                                                                            ;
+;  D  ; LC55       ; bd600, sw1, sw2, sw3, bd1200, bd300                                                                            ; rx_rate~21                                                                                                                                                                                                                                                       ;
+;  D  ; LC63       ; selected_l~7, md10_l, md09_l, rx_sel~38, tp3, n_t_25x~1sexpand1                                                ; int_enab_l~9, int_enab_l_m~9                                                                                                                                                                                                                                     ;
+;  D  ; LC50       ; tp3, md11_l, rx_sel~38, md09_l, selected_l~7, md10_l, initialize                                               ; rflg_l~9, rflg_l_m~9                                                                                                                                                                                                                                             ;
+;  D  ; LC54       ; bd76800                                                                                                        ; bd19200, rx_rate~21                                                                                                                                                                                                                                              ;
+;  D  ; LC61       ; bd153600                                                                                                       ; bd38400, rx_rate~21                                                                                                                                                                                                                                              ;
+;  D  ; LC56       ; rx_rate~28, bd109, sw1, sw2, sw3, bd9600, bd38400, bd76800, bd153600                                           ; tp_ca1, rx_div, tx_div~9, tx_active_l~9, start_l~9, ck_pulse~9, tx_div_m~9, tx_active_l_m~9, start_l_m~9, ck_pulse_m~9, stp2~9, stp1~9, stp2_m~9, stp1_m~9, gdollar_4~9, gdollar_4_m~9, comb~13sexpand0, rx_active~10, comb~14, rx_again_l~2sexp, rx_active_m~13 ;
+;  D  ; LC58       ; bd38400                                                                                                        ; bd9600, n_t_2x~9, n_t_2x_m~9                                                                                                                                                                                                                                     ;
+;  D  ; LC52       ; tx_div~9, cktfl~2, tflg_l_m~10, initialize, tx_sel~34, selected_l~7, tp3, md10_l, n_t_25x~1sexpand1, tx8~8sexp ; tflg_l~10, tflg_l_m~10                                                                                                                                                                                                                                           ;
+;  D  ; LC60       ; selected_l~7, md10_l, tp3, md09_l, tx_sel~34, md11_l                                                           ; tflg_l~10, tflg_l_m~10                                                                                                                                                                                                                                           ;
+;  E  ; LC69       ; rx7, md09_l, selected_l~7, rx_sel~38, md11_l                                                                   ; data04_l                                                                                                                                                                                                                                                         ;
+;  E  ; LC67       ; n_t_34x, md09_l, selected_l~7, rx_sel~38, md11_l                                                               ; data05_l                                                                                                                                                                                                                                                         ;
+;  E  ; LC65       ; n_t_36x, md09_l, selected_l~7, rx_sel~38, md11_l                                                               ; data06_l                                                                                                                                                                                                                                                         ;
+;  E  ; LC78       ; data07_l, tls_l~2, n_t_56x~9                                                                                   ; n_t_61x_m~16                                                                                                                                                                                                                                                     ;
+;  E  ; LC74       ; data10_l, tls_l~2, n_t_65x~9                                                                                   ; n_t_66x_m~16                                                                                                                                                                                                                                                     ;
+;  E  ; LC68       ; n_t_60x_m~7, initialize, tx_shift_l~2, n_t_60x_m~16                                                            ; n_t_60x~9, n_t_60x_m~16                                                                                                                                                                                                                                          ;
+;  E  ; LC80       ; data05_l, tls_l~2, n_t_60x~9                                                                                   ; n_t_62x_m~16                                                                                                                                                                                                                                                     ;
+;  E  ; LC76       ; n_t_65x_m~16, initialize, tx_shift_l~2, n_t_65x~9                                                              ; n_t_65x~9, n_t_66x_m~7, tx8~8sexp, n_t_108x~10                                                                                                                                                                                                                   ;
+;  E  ; LC79       ; n_t_56x_m~7, initialize, tx_shift_l~2, n_t_56x_m~16                                                            ; n_t_56x~9, n_t_56x_m~16                                                                                                                                                                                                                                          ;
+;  E  ; LC77       ; tx_active_l_m~9, rx_rate~21, tx_active_l~9, initialize                                                         ; serial_out$latch~10, serial_out_m~10, tx_active_l~9, start_l~9, stp1_m~9, comb~13sexpand0, n_t_94x~1sexp, n_t_108x~8sexp3                                                                                                                                        ;
+;  E  ; LC73       ; n_t_56x_m~16, initialize, tx_shift_l~2, n_t_56x~9                                                              ; n_t_56x~9, n_t_61x_m~7, tx8~8sexp, n_t_108x~10                                                                                                                                                                                                                   ;
+;  E  ; LC70       ; n_t_65x_m~7, initialize, tx_shift_l~2, n_t_65x_m~16                                                            ; n_t_65x~9, n_t_65x_m~16                                                                                                                                                                                                                                          ;
+;  E  ; LC71       ; n_t_60x_m~16, initialize, tx_shift_l~2, n_t_60x~9                                                              ; n_t_60x~9, n_t_62x_m~7, tx8~8sexp, n_t_108x~10                                                                                                                                                                                                                   ;
+;  E  ; LC66       ; data08_l, tls_l~2, n_t_61x~9                                                                                   ; n_t_63x_m~16                                                                                                                                                                                                                                                     ;
+;  F  ; LC90       ; rx_div8_m~9, rx_div4_l~9, rx_div8~9, rx_last_l~1sexp                                                           ; rx_div8~9, rx_div8_m~9, ck_pulse~9, rx_active8_l~1sexp, spike_det_l~10, n_t_91x~1sexp                                                                                                                                                                            ;
+;  F  ; LC85       ; rx_div2_l_m~9, rx_div, rx_div2_l~9, rx_active~10, last_unit~9                                                  ; n_t_41x~8, rx_div2_l~9, rx_div4_l~9, rx_div2_l_m~9, rx_div4_l_m~9, n_t_41x~24                                                                                                                                                                                    ;
+;  F  ; LC83       ; ck_pulse_m~9, rx_rate~21, ck_pulse~9, rx_active~10, rx_div8~9, rx_active8_l~1sexp                              ; n_t_41x~8, n_t_41x~9, rflg_l~9, rflg_l_m~9, ck_pulse~9, n_t_70x~4, last_unit~9, last_unit_m~9, n_t_41x~24, n_t_41x~25                                                                                                                                            ;
+;  F  ; LC87       ; power_ok, n_t_70x~4, rx_rate~21, serial_in, rx_active~10, last_unit~9                                          ; rx_active_m~13                                                                                                                                                                                                                                                   ;
+;  F  ; LC88       ; comb~14, rx_active_m~13, power_ok, rx_rate~21, serial_in, rx_active~10, last_unit~9                            ; rx_active~10, rx_active_m~13                                                                                                                                                                                                                                     ;
+;  F  ; LC82       ; rx_rate~21, ck_pulse_m~9, rx_active8_l~1sexp                                                                   ; ck_pulse~9, ck_pulse_m~9                                                                                                                                                                                                                                         ;
+;  F  ; LC94       ; spike_det_l_m~13, initialize, spike_det_l~10, rx_active8_l~1sexp, rx_active~10, rx_div8~9, rx_again_l~2sexp    ; n_t_70x~4, spike_det_l~10                                                                                                                                                                                                                                        ;
+;  F  ; LC96       ; rx_div8~9, rx_div4_l~9, rx_div8_m~9, rx_last_l~1sexp                                                           ; rx_div8~9, rx_div8_m~9                                                                                                                                                                                                                                           ;
+;  F  ; LC89       ; p_pulse_l~9, serial_in, n_t_41x~8, n_t_41x~9                                                                   ; data04_l~5, n_t_34x                                                                                                                                                                                                                                              ;
+;  F  ; LC84       ; rx_div4_l_m~9, rx_div2_l~9, rx_div4_l~9, rx_active~10, last_unit~9                                             ; rx_div8~9, p_pulse_l~9, rx_div8_m~9, rx_div4_l~9, p_pulse_l_m~9, rx_div4_l_m~9, comb~15sexp                                                                                                                                                                      ;
+;  F  ; LC91       ; rx_div2_l~9, rx_div, rx_div2_l_m~9, rx_active~10, last_unit~9                                                  ; rx_div2_l~9, rx_div2_l_m~9                                                                                                                                                                                                                                       ;
+;  F  ; LC95       ; rx_div, rx_rate~21, rx_last_l~1sexp                                                                            ; rx_div, rx_div2_l~9, rx_div2_l_m~9                                                                                                                                                                                                                               ;
+;  F  ; LC86       ; last_unit~9, spike_det_l~10, serial_in, ck_pulse~9, rx_active8_l~1sexp                                         ; rx_active~10, comb~14                                                                                                                                                                                                                                            ;
+;  F  ; LC92       ; spike_det_l_m~13, rx_again_l~2sexp, spike_det_l_m~5sexp                                                        ; spike_det_l~10, spike_det_l_m~13                                                                                                                                                                                                                                 ;
+;  F  ; LC93       ; rx_div4_l~9, rx_div2_l~9, rx_div4_l_m~9, rx_active~10, last_unit~9                                             ; rx_div4_l~9, rx_div4_l_m~9                                                                                                                                                                                                                                       ;
+;  F  ; LC81       ; rx_active_m~13, n_t_70x~4, power_ok, rx_active~10, rx_rate~21, serial_in, last_unit~9                          ; rx_active~10, p_pulse_l~9, ck_pulse~9, rx_active8_l~1sexp, spike_det_l~10, rx_last_l~1sexp, rx_div2_l~9, rx_div4_l~9, rx_div2_l_m~9, rx_div4_l_m~9, comb~14, rx_again_l~2sexp, rx_active_m~13, n_t_91x~1sexp, comb~15sexp                                        ;
+;  G  ; LC111      ; n_t_61x_m~7, initialize, tx_shift_l~2, n_t_61x_m~16                                                            ; n_t_61x~9, n_t_61x_m~16                                                                                                                                                                                                                                          ;
+;  G  ; LC102      ; data06_l, tls_l~2, n_t_62x~9                                                                                   ; n_t_56x_m~16                                                                                                                                                                                                                                                     ;
+;  G  ; LC105      ; n_t_66x_m~16, initialize, tx_shift_l~2, n_t_66x~9                                                              ; n_t_66x~9, tx_data_m~16, tx8~8sexp, n_t_108x~10                                                                                                                                                                                                                  ;
+;  G  ; LC97       ; n_t_62x_m~7, initialize, tx_shift_l~2, n_t_62x_m~16                                                            ; n_t_62x~9, n_t_62x_m~16                                                                                                                                                                                                                                          ;
+;  G  ; LC110      ; data04_l, tls_l~2, enab~9                                                                                      ; n_t_60x_m~16                                                                                                                                                                                                                                                     ;
+;  G  ; LC107      ; tls_l~2, initialize, tx_shift_l~2, enab_m~9                                                                    ; enab~9, enab_m~9                                                                                                                                                                                                                                                 ;
+;  G  ; LC103      ; rx_rate~21, tx_active_l_m~9, initialize, n_t_108x~8sexp1, n_t_108x~8sexp2, n_t_108x~8sexp3                     ; tx_active_l~9, tx_active_l_m~9                                                                                                                                                                                                                                   ;
+;  G  ; LC108      ; n_t_63x_m~7, initialize, tx_shift_l~2, n_t_63x_m~16                                                            ; n_t_63x~9, n_t_63x_m~16                                                                                                                                                                                                                                          ;
+;  G  ; LC101      ; data09_l, tls_l~2, n_t_63x~9                                                                                   ; n_t_65x_m~16                                                                                                                                                                                                                                                     ;
+;  G  ; LC106      ; n_t_62x_m~16, initialize, tx_shift_l~2, n_t_62x~9                                                              ; n_t_62x~9, n_t_56x_m~7, tx8~8sexp, n_t_108x~10                                                                                                                                                                                                                   ;
+;  G  ; LC98       ; n_t_61x_m~16, initialize, tx_shift_l~2, n_t_61x~9                                                              ; n_t_61x~9, n_t_63x_m~7, tx8~8sexp, n_t_108x~10                                                                                                                                                                                                                   ;
+;  G  ; LC109      ; n_t_66x_m~7, initialize, tx_shift_l~2, n_t_66x_m~16                                                            ; n_t_66x~9, n_t_66x_m~16                                                                                                                                                                                                                                          ;
+;  G  ; LC104      ; enab_m~9, initialize, tx_shift_l~2, enab~9                                                                     ; enab~9, n_t_60x_m~7, tx8~8sexp, n_t_108x~10, n_t_108x~8sexp1, n_t_108x~8sexp2                                                                                                                                                                                    ;
+;  G  ; LC99       ; n_t_63x_m~16, initialize, tx_shift_l~2, n_t_63x~9                                                              ; n_t_63x~9, n_t_65x_m~7, tx8~8sexp, n_t_108x~10                                                                                                                                                                                                                   ;
+;  H  ; LC128      ; n_t_38x, md09_l, selected_l~7, rx_sel~38, md11_l                                                               ; data09_l                                                                                                                                                                                                                                                         ;
+;  H  ; LC113      ; p_pulse_l_m~9, rx_active~10, p_pulse_l~9, rx_div4_l~9                                                          ; rx7, n_t_41x~9, n_t_34x, n_t_36x, n_t_35x, n_t_37x, n_t_38x, n_t_39x, n_t_40x, p_pulse_l~9, n_t_41x~25                                                                                                                                                           ;
+;  H  ; LC124      ; bd436                                                                                                          ; bd109                                                                                                                                                                                                                                                            ;
+;  H  ; LC122      ; bd4800                                                                                                         ; bd1200                                                                                                                                                                                                                                                           ;
+;  H  ; LC125      ; bd307200                                                                                                       ; bd76800, rx_rate~21                                                                                                                                                                                                                                              ;
+;  H  ; LC127      ; bd19200                                                                                                        ; bd4800, rx_rate~21                                                                                                                                                                                                                                               ;
+;  H  ; LC115      ; bd218                                                                                                          ; rx_rate~21                                                                                                                                                                                                                                                       ;
+;  H  ; LC114      ; bd600                                                                                                          ; rx_rate~28                                                                                                                                                                                                                                                       ;
+;  H  ; LC121      ; bd2400                                                                                                         ; bd600, rx_rate~28                                                                                                                                                                                                                                                ;
+;  H  ; LC118      ; serial_out_m~10, tx_div~9, tx_active_l~9, serial_out$latch~10, start_l~9                                       ; serial_out, serial_out$latch~10                                                                                                                                                                                                                                  ;
+;  H  ; LC116      ; bd1200                                                                                                         ; bd300, rx_rate~28                                                                                                                                                                                                                                                ;
+;  H  ; LC119      ; clk                                                                                                            ; bd307200                                                                                                                                                                                                                                                         ;
+;  H  ; LC123      ; n_t_40x, md09_l, selected_l~7, rx_sel~38, md11_l                                                               ; data11_l                                                                                                                                                                                                                                                         ;
+;  H  ; LC126      ; n_t_39x, md09_l, selected_l~7, rx_sel~38, md11_l                                                               ; data10_l                                                                                                                                                                                                                                                         ;
+;  H  ; LC120      ; bd614400                                                                                                       ; bd153600                                                                                                                                                                                                                                                         ;
+;  H  ; LC117      ; rx_div4_l~9, p_pulse_l_m~9, comb~15sexp                                                                        ; p_pulse_l~9, p_pulse_l_m~9                                                                                                                                                                                                                                       ;
++-----+------------+----------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -812,8 +778,8 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "TMS" is assigned to location or region, but does not exist in design
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4687 megabytes
-    Info: Processing ended: Thu Aug 25 12:37:33 2022
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Mon Aug 29 16:46:00 2022
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

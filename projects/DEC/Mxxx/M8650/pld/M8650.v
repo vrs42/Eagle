@@ -235,7 +235,7 @@ wire tx_shift_l;
 assign n_t_103x = 1'b1;
 // Output debug information on CA1.
 //assign tp_ca1 = tx_active_l;
-assign tp_ca1 = enab_m;
+assign tp_ca1 = rx_rate;
 
 // equations 
 // c1: c_us 
