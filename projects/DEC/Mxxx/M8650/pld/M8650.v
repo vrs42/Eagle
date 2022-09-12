@@ -2,7 +2,13 @@
 // please don't edit it. 
 // input pins 
 // output pins 
-module m8650 (/*n_t_103x,*/tp_ca1, serial_in, sw1, sw2, sw3, sw4, sw5, sw6, c0_l, c1_l, clk, data04_l, data05_l, data06_l, data07_l, data08_l, data09_l, data10_l, data11_l, initialize, /*int_enab,*/ int_rqst_l, internal_io_l, io_pause_l, md03_l, md04_l, md05_l, md06_l, md07_l, md08_l, md09_l, md10_l, md11_l, power_ok, /*r_run_l,*/ serial_out, skip_l, tp3/*, tx_div_l*/);
+module m8650 (/*n_t_103x,*/
+tp_ca1, 
+serial_in, sw1, sw2, sw3, 
+//sw4, sw5, sw6, 
+c0_l, c1_l, clk, data04_l, data05_l, data06_l, data07_l, data08_l, data09_l, data10_l, data11_l, initialize, /*int_enab,*/ int_rqst_l, internal_io_l, io_pause_l, md03_l, md04_l, md05_l, md06_l, md07_l, md08_l, md09_l, md10_l, md11_l, power_ok, /*r_run_l,*/ serial_out, skip_l, 
+tp_ab1, tp_ba1, tp_bb1, 
+tp3/*, tx_div_l*/);
 // VRS Kludge
 output tp_ca1;
 //input n_t_103x; //VRS
@@ -10,9 +16,10 @@ input serial_in;
 input sw1;
 input sw2;
 input sw3;
-input sw4;
-input sw5;
-input sw6;
+//input sw4;
+//input sw5;
+//input sw6;
+output tp_ab1, tp_ba1, tp_bb1;
 output c0_l;
 output c1_l;
 input clk;
@@ -231,11 +238,18 @@ wire tx_shift_l;
 
 // VRS Kludges
 // n$103 is supposed to be a delayed tx_div_l.
-//assign n_t_103x = tx_div_l;
-assign n_t_103x = 1'b1;
+assign n_t_103x = ~tx_active_l;
+//assign n_t_103x = 1'b1;
+// Stub out switches that map to the test points.
+assign sw4 = 1'b1; // Set device code to 12.
+assign sw5 = 1'b1;
+assign sw6 = 1'b1;
 // Output debug information on CA1.
 //assign tp_ca1 = tx_active_l;
-assign tp_ca1 = rx_rate;
+assign tp_ca1 = tp3;
+assign tp_bb1 = dotpc;
+assign tp_ba1 = tx_div;
+assign tp_ab1 = tx_shift_l;
 
 // equations 
 // c1: c_us 
@@ -346,61 +360,73 @@ always @(rx_div2_l, rx_last_l, rx_div4_l_m)
   if (rx_div2_l) begin
     rx_div4_l <= rx_div4_l_m;
   end
-// e5: sn7493 
+// e5: sn7493
+/*
+reg [3:0] ctr110;
+always @(posedge bd19200) begin
+  if (ctr110 == 10) begin
+    ctr110 <= 0;
+	 bd1745 <= 1;
+  end else begin
+    ctr110 <= ctr110 + 1;
+	 bd1745 <= 0;
+  end
+end
+*/
 always @(bd19200, div11, n_t_2x)
   if (div11) begin
     n_t_2x_m <= 1'b0;
   end else
-  if (~(bd19200)) begin
+  if ((bd19200)) begin
     n_t_2x_m <= ~n_t_2x;
   end
 always @(bd19200, div11, n_t_2x_m)
   if (div11) begin
     n_t_2x <= 1'b0;
   end else
-  if (bd19200) begin
+  if (~bd19200) begin
     n_t_2x <= n_t_2x_m;
   end
 always @(n_t_2x, div11, n_t_5x)
   if (div11) begin
     n_t_5x_m <= 1'b0;
   end else
-  if (~(n_t_2x)) begin
+  if ((n_t_2x)) begin
     n_t_5x_m <= ~n_t_5x;
   end
 always @(n_t_2x, div11, n_t_5x_m)
   if (div11) begin
     n_t_5x <= 1'b0;
   end else
-  if (n_t_2x) begin
+  if (~n_t_2x) begin
     n_t_5x <= n_t_5x_m;
   end
 always @(n_t_5x, div11, gdollar_0)
   if (div11) begin
     gdollar_0_m <= 1'b0;
   end else
-  if (~(n_t_5x)) begin
+  if ((n_t_5x)) begin
     gdollar_0_m <= ~gdollar_0;
   end
 always @(n_t_5x, div11, gdollar_0_m)
   if (div11) begin
     gdollar_0 <= 1'b0;
   end else
-  if (n_t_5x) begin
+  if (~n_t_5x) begin
     gdollar_0 <= gdollar_0_m;
   end
 always @(gdollar_0, div11, bd1745)
   if (div11) begin
     bd1745_m <= 1'b0;
   end else
-  if (~(gdollar_0)) begin
+  if ((gdollar_0)) begin
     bd1745_m <= ~bd1745;
   end
 always @(gdollar_0, div11, bd1745_m)
   if (div11) begin
     bd1745 <= 1'b0;
   end else
-  if (gdollar_0) begin
+  if (~gdollar_0) begin
     bd1745 <= bd1745_m;
   end
 // e6: dec8271 

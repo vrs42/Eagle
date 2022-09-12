@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="a7741f57c59870f0a80d"/>
+    <hash md5_digest_80b="7a4bcfde539e5f3c2277"/>
   </project>
   <file_info>
-    <file device="EPM7128SLC84-15" path="//wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.sof" usercode="0x00000000"/>
+    <file device="EPM7128SLC84-15" path="M8650.sof" usercode="0x00000000"/>
   </file_info>
 </sld_project_info>

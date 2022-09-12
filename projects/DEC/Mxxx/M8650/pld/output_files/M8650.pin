@@ -115,8 +115,8 @@ md05_l                       : 51        : input  : TTL               :         
 md04_l                       : 52        : input  : TTL               :         :           : Y              
 VCCIO                        : 53        : power  :                   : 5.0V    :           :                
 RESERVED_INPUT               : 54        :        :                   :         :           :                
-sw6                          : 55        : input  : TTL               :         :           : Y              
-sw5                          : 56        : input  : TTL               :         :           : Y              
+tp_bb1                       : 55        : output : TTL               :         :           : Y              
+tp_ba1                       : 56        : output : TTL               :         :           : Y              
 RESERVED_INPUT               : 57        :        :                   :         :           :                
 RESERVED_INPUT               : 58        :        :                   :         :           :                
 GND                          : 59        : gnd    :                   :         :           :                
@@ -133,10 +133,10 @@ RESERVED_INPUT               : 69        :        :                   :         
 RESERVED_INPUT               : 70        :        :                   :         :           :                
 TDO                          : 71        : output : TTL               :         :           : Y              
 GND                          : 72        : gnd    :                   :         :           :                
-sw4                          : 73        : input  : TTL               :         :           : Y              
+tp_ab1                       : 73        : output : TTL               :         :           : Y              
 sw3                          : 74        : input  : TTL               :         :           : Y              
-serial_out                   : 75        : output : TTL               :         :           : Y              
-serial_in                    : 76        : input  : TTL               :         :           : Y              
+serial_in                    : 75        : input  : TTL               :         :           : Y              
+serial_out                   : 76        : output : TTL               :         :           : Y              
 data11_l                     : 77        : bidir  : TTL               :         :           : Y              
 VCCIO                        : 78        : power  :                   : 5.0V    :           :                
 RESERVED_INPUT               : 79        :        :                   :         :           :                

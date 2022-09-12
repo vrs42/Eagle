@@ -65,11 +65,8 @@ set_location_assignment PIN_31 -to tp3
 set_location_assignment PIN_1 -to sw1
 set_location_assignment PIN_84 -to sw2
 set_location_assignment PIN_74 -to sw3
-set_location_assignment PIN_73 -to sw4
-set_location_assignment PIN_56 -to sw5
-set_location_assignment PIN_55 -to sw6
-set_location_assignment PIN_76 -to serial_in
-set_location_assignment PIN_75 -to serial_out
+set_location_assignment PIN_75 -to serial_in
+set_location_assignment PIN_76 -to serial_out
 set_location_assignment PIN_22 -to skip_l
 set_location_assignment PIN_6 -to md11_l
 set_location_assignment PIN_61 -to md03_l
@@ -104,3 +101,6 @@ set_global_assignment -name VERILOG_FILE M8650.v
 set_global_assignment -name ALM_REGISTER_PACKING_EFFORT MEDIUM
 set_global_assignment -name OPTIMIZE_IOC_REGISTER_PLACEMENT_FOR_TIMING NORMAL
 set_global_assignment -name MAX7000_OPTIMIZATION_TECHNIQUE AREA
+set_location_assignment PIN_73 -to tp_ab1
+set_location_assignment PIN_56 -to tp_ba1
+set_location_assignment PIN_55 -to tp_bb1

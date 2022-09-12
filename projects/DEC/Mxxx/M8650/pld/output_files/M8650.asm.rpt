@@ -1,5 +1,5 @@
 Assembler report for M8650
-Mon Aug 29 16:46:01 2022
+Thu Sep  1 15:28:49 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.pof
+  5. Assembler Device Options: M8650.pof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Aug 29 16:46:01 2022 ;
+; Assembler Status      ; Successful - Thu Sep  1 15:28:49 2022 ;
 ; Revision Name         ; M8650                                 ;
 ; Top-level Entity Name ; m8650                                 ;
 ; Family                ; MAX7000S                              ;
@@ -73,24 +73,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------------------------------+
-; Assembler Generated Files                                                       ;
-+---------------------------------------------------------------------------------+
-; File Name                                                                       ;
-+---------------------------------------------------------------------------------+
-; //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.pof ;
-+---------------------------------------------------------------------------------+
++---------------------------+
+; Assembler Generated Files ;
++---------------------------+
+; File Name                 ;
++---------------------------+
+; M8650.pof                 ;
++---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.pof ;
-+----------------+------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                  ;
-+----------------+------------------------------------------------------------------------------------------+
-; Device         ; EPM7128SLC84-15                                                                          ;
-; JTAG usercode  ; 0x00000000                                                                               ;
-; Checksum       ; 0x00184594                                                                               ;
-+----------------+------------------------------------------------------------------------------------------+
++-------------------------------------+
+; Assembler Device Options: M8650.pof ;
++----------------+--------------------+
+; Option         ; Setting            ;
++----------------+--------------------+
+; Device         ; EPM7128SLC84-15    ;
+; JTAG usercode  ; 0x00000000         ;
+; Checksum       ; 0x00179CD9         ;
++----------------+--------------------+
 
 
 +--------------------+
@@ -99,13 +99,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Aug 29 16:46:01 2022
+    Info: Processing started: Thu Sep  1 15:28:48 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off M8650 -c M8650
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4499 megabytes
-    Info: Processing ended: Mon Aug 29 16:46:01 2022
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 514 megabytes
+    Info: Processing ended: Thu Sep  1 15:28:49 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

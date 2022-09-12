@@ -1,133 +1,133 @@
-Warning (10262): Verilog HDL Event Control warning at M8650.v(306): event expression is a constant
-Warning (10262): Verilog HDL Event Control warning at M8650.v(428): event expression is a constant
-Warning (10262): Verilog HDL Event Control warning at M8650.v(448): event expression is a constant
-Warning (10262): Verilog HDL Event Control warning at M8650.v(597): event expression is a constant
-Warning (10262): Verilog HDL Event Control warning at M8650.v(639): event expression is a constant
-Warning (10262): Verilog HDL Event Control warning at M8650.v(670): event expression is a constant
-Warning (10262): Verilog HDL Event Control warning at M8650.v(1061): event expression is a constant
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(306): inferring latch(es) for variable "ck_pulse_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(313): inferring latch(es) for variable "ck_pulse", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(321): inferring latch(es) for variable "rx_div2_l_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(328): inferring latch(es) for variable "rx_div2_l", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(335): inferring latch(es) for variable "rx_div4_l_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(342): inferring latch(es) for variable "rx_div4_l", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(350): inferring latch(es) for variable "n_t_2x_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(357): inferring latch(es) for variable "n_t_2x", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(364): inferring latch(es) for variable "n_t_5x_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(371): inferring latch(es) for variable "n_t_5x", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(378): inferring latch(es) for variable "gdollar_0_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(385): inferring latch(es) for variable "gdollar_0", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(392): inferring latch(es) for variable "bd1745_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(399): inferring latch(es) for variable "bd1745", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(428): inferring latch(es) for variable "rx_active_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(438): inferring latch(es) for variable "rx_active", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(448): inferring latch(es) for variable "p_pulse_l_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(455): inferring latch(es) for variable "p_pulse_l", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(463): inferring latch(es) for variable "last_unit_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(470): inferring latch(es) for variable "last_unit", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(477): inferring latch(es) for variable "rx_div8_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(484): inferring latch(es) for variable "rx_div8", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(582): inferring latch(es) for variable "tx_div_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(589): inferring latch(es) for variable "tx_div", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(597): inferring latch(es) for variable "spike_det_l_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(607): inferring latch(es) for variable "spike_det_l", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(656): inferring latch(es) for variable "tx_active_l_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(663): inferring latch(es) for variable "tx_active_l", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(670): inferring latch(es) for variable "start_l_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(677): inferring latch(es) for variable "start_l", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(709): inferring latch(es) for variable "stp1_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(716): inferring latch(es) for variable "stp1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(723): inferring latch(es) for variable "gdollar_4_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(730): inferring latch(es) for variable "gdollar_4", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(737): inferring latch(es) for variable "stp2_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(744): inferring latch(es) for variable "stp2", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(751): inferring latch(es) for variable "gdollar_5_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(775): inferring latch(es) for variable "n_t_60x_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(783): inferring latch(es) for variable "n_t_60x", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(790): inferring latch(es) for variable "n_t_62x_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(798): inferring latch(es) for variable "n_t_62x", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(805): inferring latch(es) for variable "n_t_56x_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(813): inferring latch(es) for variable "n_t_56x", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(820): inferring latch(es) for variable "n_t_61x_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(828): inferring latch(es) for variable "n_t_61x", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(836): inferring latch(es) for variable "serial_out_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(846): inferring latch(es) for variable "serial_out", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(856): inferring latch(es) for variable "enab_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(863): inferring latch(es) for variable "enab", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(880): inferring latch(es) for variable "n_t_63x_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(888): inferring latch(es) for variable "n_t_63x", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(895): inferring latch(es) for variable "n_t_65x_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(903): inferring latch(es) for variable "n_t_65x", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(910): inferring latch(es) for variable "n_t_66x_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(918): inferring latch(es) for variable "n_t_66x", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(925): inferring latch(es) for variable "tx_data_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(933): inferring latch(es) for variable "tx_data", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(958): inferring latch(es) for variable "tflg_l_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(968): inferring latch(es) for variable "tflg_l", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(978): inferring latch(es) for variable "int_enab_l_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(985): inferring latch(es) for variable "int_enab_l", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(1047): inferring latch(es) for variable "rflg_l_m", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(1054): inferring latch(es) for variable "rflg_l", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at M8650.v(1061): inferring latch(es) for variable "r_run_l_m", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "rflg_l" at M8650.v(1054)
-Info (10041): Inferred latch for "rflg_l_m" at M8650.v(1047)
-Info (10041): Inferred latch for "int_enab_l" at M8650.v(985)
-Info (10041): Inferred latch for "int_enab_l_m" at M8650.v(978)
-Info (10041): Inferred latch for "tflg_l" at M8650.v(968)
-Info (10041): Inferred latch for "tflg_l_m" at M8650.v(958)
-Info (10041): Inferred latch for "tx_data" at M8650.v(933)
-Info (10041): Inferred latch for "tx_data_m" at M8650.v(925)
-Info (10041): Inferred latch for "n_t_66x" at M8650.v(918)
-Info (10041): Inferred latch for "n_t_66x_m" at M8650.v(910)
-Info (10041): Inferred latch for "n_t_65x" at M8650.v(903)
-Info (10041): Inferred latch for "n_t_65x_m" at M8650.v(895)
-Info (10041): Inferred latch for "n_t_63x" at M8650.v(888)
-Info (10041): Inferred latch for "n_t_63x_m" at M8650.v(880)
-Info (10041): Inferred latch for "enab" at M8650.v(863)
-Info (10041): Inferred latch for "enab_m" at M8650.v(856)
-Info (10041): Inferred latch for "serial_out" at M8650.v(846)
-Info (10041): Inferred latch for "serial_out_m" at M8650.v(836)
-Info (10041): Inferred latch for "n_t_61x" at M8650.v(828)
-Info (10041): Inferred latch for "n_t_61x_m" at M8650.v(820)
-Info (10041): Inferred latch for "n_t_56x" at M8650.v(813)
-Info (10041): Inferred latch for "n_t_56x_m" at M8650.v(805)
-Info (10041): Inferred latch for "n_t_62x" at M8650.v(798)
-Info (10041): Inferred latch for "n_t_62x_m" at M8650.v(790)
-Info (10041): Inferred latch for "n_t_60x" at M8650.v(783)
-Info (10041): Inferred latch for "n_t_60x_m" at M8650.v(775)
-Info (10041): Inferred latch for "stp2" at M8650.v(744)
-Info (10041): Inferred latch for "stp2_m" at M8650.v(737)
-Info (10041): Inferred latch for "gdollar_4" at M8650.v(730)
-Info (10041): Inferred latch for "gdollar_4_m" at M8650.v(723)
-Info (10041): Inferred latch for "stp1" at M8650.v(716)
-Info (10041): Inferred latch for "stp1_m" at M8650.v(709)
-Info (10041): Inferred latch for "start_l" at M8650.v(677)
-Info (10041): Inferred latch for "start_l_m" at M8650.v(670)
-Info (10041): Inferred latch for "tx_active_l" at M8650.v(663)
-Info (10041): Inferred latch for "tx_active_l_m" at M8650.v(656)
-Info (10041): Inferred latch for "spike_det_l" at M8650.v(607)
-Info (10041): Inferred latch for "spike_det_l_m" at M8650.v(597)
-Info (10041): Inferred latch for "tx_div" at M8650.v(589)
-Info (10041): Inferred latch for "tx_div_m" at M8650.v(582)
-Info (10041): Inferred latch for "rx_div8" at M8650.v(484)
-Info (10041): Inferred latch for "rx_div8_m" at M8650.v(477)
-Info (10041): Inferred latch for "last_unit" at M8650.v(470)
-Info (10041): Inferred latch for "last_unit_m" at M8650.v(463)
-Info (10041): Inferred latch for "p_pulse_l" at M8650.v(455)
-Info (10041): Inferred latch for "p_pulse_l_m" at M8650.v(448)
-Info (10041): Inferred latch for "rx_active" at M8650.v(438)
-Info (10041): Inferred latch for "rx_active_m" at M8650.v(428)
-Info (10041): Inferred latch for "bd1745" at M8650.v(399)
-Info (10041): Inferred latch for "bd1745_m" at M8650.v(392)
-Info (10041): Inferred latch for "gdollar_0" at M8650.v(385)
-Info (10041): Inferred latch for "gdollar_0_m" at M8650.v(378)
-Info (10041): Inferred latch for "n_t_5x" at M8650.v(371)
-Info (10041): Inferred latch for "n_t_5x_m" at M8650.v(364)
-Info (10041): Inferred latch for "n_t_2x" at M8650.v(357)
-Info (10041): Inferred latch for "n_t_2x_m" at M8650.v(350)
-Info (10041): Inferred latch for "rx_div4_l" at M8650.v(342)
-Info (10041): Inferred latch for "rx_div4_l_m" at M8650.v(335)
-Info (10041): Inferred latch for "rx_div2_l" at M8650.v(328)
-Info (10041): Inferred latch for "rx_div2_l_m" at M8650.v(321)
-Info (10041): Inferred latch for "ck_pulse" at M8650.v(313)
-Info (10041): Inferred latch for "ck_pulse_m" at M8650.v(306)
+Warning (10262): Verilog HDL Event Control warning at M8650.v(320): event expression is a constant
+Warning (10262): Verilog HDL Event Control warning at M8650.v(454): event expression is a constant
+Warning (10262): Verilog HDL Event Control warning at M8650.v(474): event expression is a constant
+Warning (10262): Verilog HDL Event Control warning at M8650.v(623): event expression is a constant
+Warning (10262): Verilog HDL Event Control warning at M8650.v(665): event expression is a constant
+Warning (10262): Verilog HDL Event Control warning at M8650.v(696): event expression is a constant
+Warning (10262): Verilog HDL Event Control warning at M8650.v(1087): event expression is a constant
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(320): inferring latch(es) for variable "ck_pulse_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(327): inferring latch(es) for variable "ck_pulse", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(335): inferring latch(es) for variable "rx_div2_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(342): inferring latch(es) for variable "rx_div2_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(349): inferring latch(es) for variable "rx_div4_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(356): inferring latch(es) for variable "rx_div4_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(376): inferring latch(es) for variable "n_t_2x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(383): inferring latch(es) for variable "n_t_2x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(390): inferring latch(es) for variable "n_t_5x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(397): inferring latch(es) for variable "n_t_5x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(404): inferring latch(es) for variable "gdollar_0_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(411): inferring latch(es) for variable "gdollar_0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(418): inferring latch(es) for variable "bd1745_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(425): inferring latch(es) for variable "bd1745", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(454): inferring latch(es) for variable "rx_active_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(464): inferring latch(es) for variable "rx_active", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(474): inferring latch(es) for variable "p_pulse_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(481): inferring latch(es) for variable "p_pulse_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(489): inferring latch(es) for variable "last_unit_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(496): inferring latch(es) for variable "last_unit", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(503): inferring latch(es) for variable "rx_div8_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(510): inferring latch(es) for variable "rx_div8", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(608): inferring latch(es) for variable "tx_div_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(615): inferring latch(es) for variable "tx_div", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(623): inferring latch(es) for variable "spike_det_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(633): inferring latch(es) for variable "spike_det_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(682): inferring latch(es) for variable "tx_active_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(689): inferring latch(es) for variable "tx_active_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(696): inferring latch(es) for variable "start_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(703): inferring latch(es) for variable "start_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(735): inferring latch(es) for variable "stp1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(742): inferring latch(es) for variable "stp1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(749): inferring latch(es) for variable "gdollar_4_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(756): inferring latch(es) for variable "gdollar_4", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(763): inferring latch(es) for variable "stp2_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(770): inferring latch(es) for variable "stp2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(777): inferring latch(es) for variable "gdollar_5_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(801): inferring latch(es) for variable "n_t_60x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(809): inferring latch(es) for variable "n_t_60x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(816): inferring latch(es) for variable "n_t_62x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(824): inferring latch(es) for variable "n_t_62x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(831): inferring latch(es) for variable "n_t_56x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(839): inferring latch(es) for variable "n_t_56x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(846): inferring latch(es) for variable "n_t_61x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(854): inferring latch(es) for variable "n_t_61x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(862): inferring latch(es) for variable "serial_out_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(872): inferring latch(es) for variable "serial_out", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(882): inferring latch(es) for variable "enab_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(889): inferring latch(es) for variable "enab", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(906): inferring latch(es) for variable "n_t_63x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(914): inferring latch(es) for variable "n_t_63x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(921): inferring latch(es) for variable "n_t_65x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(929): inferring latch(es) for variable "n_t_65x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(936): inferring latch(es) for variable "n_t_66x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(944): inferring latch(es) for variable "n_t_66x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(951): inferring latch(es) for variable "tx_data_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(959): inferring latch(es) for variable "tx_data", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(984): inferring latch(es) for variable "tflg_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(994): inferring latch(es) for variable "tflg_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(1004): inferring latch(es) for variable "int_enab_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(1011): inferring latch(es) for variable "int_enab_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(1073): inferring latch(es) for variable "rflg_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(1080): inferring latch(es) for variable "rflg_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at M8650.v(1087): inferring latch(es) for variable "r_run_l_m", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "rflg_l" at M8650.v(1080)
+Info (10041): Inferred latch for "rflg_l_m" at M8650.v(1073)
+Info (10041): Inferred latch for "int_enab_l" at M8650.v(1011)
+Info (10041): Inferred latch for "int_enab_l_m" at M8650.v(1004)
+Info (10041): Inferred latch for "tflg_l" at M8650.v(994)
+Info (10041): Inferred latch for "tflg_l_m" at M8650.v(984)
+Info (10041): Inferred latch for "tx_data" at M8650.v(959)
+Info (10041): Inferred latch for "tx_data_m" at M8650.v(951)
+Info (10041): Inferred latch for "n_t_66x" at M8650.v(944)
+Info (10041): Inferred latch for "n_t_66x_m" at M8650.v(936)
+Info (10041): Inferred latch for "n_t_65x" at M8650.v(929)
+Info (10041): Inferred latch for "n_t_65x_m" at M8650.v(921)
+Info (10041): Inferred latch for "n_t_63x" at M8650.v(914)
+Info (10041): Inferred latch for "n_t_63x_m" at M8650.v(906)
+Info (10041): Inferred latch for "enab" at M8650.v(889)
+Info (10041): Inferred latch for "enab_m" at M8650.v(882)
+Info (10041): Inferred latch for "serial_out" at M8650.v(872)
+Info (10041): Inferred latch for "serial_out_m" at M8650.v(862)
+Info (10041): Inferred latch for "n_t_61x" at M8650.v(854)
+Info (10041): Inferred latch for "n_t_61x_m" at M8650.v(846)
+Info (10041): Inferred latch for "n_t_56x" at M8650.v(839)
+Info (10041): Inferred latch for "n_t_56x_m" at M8650.v(831)
+Info (10041): Inferred latch for "n_t_62x" at M8650.v(824)
+Info (10041): Inferred latch for "n_t_62x_m" at M8650.v(816)
+Info (10041): Inferred latch for "n_t_60x" at M8650.v(809)
+Info (10041): Inferred latch for "n_t_60x_m" at M8650.v(801)
+Info (10041): Inferred latch for "stp2" at M8650.v(770)
+Info (10041): Inferred latch for "stp2_m" at M8650.v(763)
+Info (10041): Inferred latch for "gdollar_4" at M8650.v(756)
+Info (10041): Inferred latch for "gdollar_4_m" at M8650.v(749)
+Info (10041): Inferred latch for "stp1" at M8650.v(742)
+Info (10041): Inferred latch for "stp1_m" at M8650.v(735)
+Info (10041): Inferred latch for "start_l" at M8650.v(703)
+Info (10041): Inferred latch for "start_l_m" at M8650.v(696)
+Info (10041): Inferred latch for "tx_active_l" at M8650.v(689)
+Info (10041): Inferred latch for "tx_active_l_m" at M8650.v(682)
+Info (10041): Inferred latch for "spike_det_l" at M8650.v(633)
+Info (10041): Inferred latch for "spike_det_l_m" at M8650.v(623)
+Info (10041): Inferred latch for "tx_div" at M8650.v(615)
+Info (10041): Inferred latch for "tx_div_m" at M8650.v(608)
+Info (10041): Inferred latch for "rx_div8" at M8650.v(510)
+Info (10041): Inferred latch for "rx_div8_m" at M8650.v(503)
+Info (10041): Inferred latch for "last_unit" at M8650.v(496)
+Info (10041): Inferred latch for "last_unit_m" at M8650.v(489)
+Info (10041): Inferred latch for "p_pulse_l" at M8650.v(481)
+Info (10041): Inferred latch for "p_pulse_l_m" at M8650.v(474)
+Info (10041): Inferred latch for "rx_active" at M8650.v(464)
+Info (10041): Inferred latch for "rx_active_m" at M8650.v(454)
+Info (10041): Inferred latch for "bd1745" at M8650.v(425)
+Info (10041): Inferred latch for "bd1745_m" at M8650.v(418)
+Info (10041): Inferred latch for "gdollar_0" at M8650.v(411)
+Info (10041): Inferred latch for "gdollar_0_m" at M8650.v(404)
+Info (10041): Inferred latch for "n_t_5x" at M8650.v(397)
+Info (10041): Inferred latch for "n_t_5x_m" at M8650.v(390)
+Info (10041): Inferred latch for "n_t_2x" at M8650.v(383)
+Info (10041): Inferred latch for "n_t_2x_m" at M8650.v(376)
+Info (10041): Inferred latch for "rx_div4_l" at M8650.v(356)
+Info (10041): Inferred latch for "rx_div4_l_m" at M8650.v(349)
+Info (10041): Inferred latch for "rx_div2_l" at M8650.v(342)
+Info (10041): Inferred latch for "rx_div2_l_m" at M8650.v(335)
+Info (10041): Inferred latch for "ck_pulse" at M8650.v(327)
+Info (10041): Inferred latch for "ck_pulse_m" at M8650.v(320)
