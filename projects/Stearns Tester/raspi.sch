@@ -10578,21 +10578,28 @@ W = angled&lt;p&gt;
 <wire x1="99.06" y1="10.16" x2="60.96" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="60.96" y1="10.16" x2="60.96" y2="76.2" width="0.1524" layer="94" style="shortdash"/>
 <text x="71.12" y="12.7" size="1.778" layer="94">Cable Layout</text>
-<wire x1="58.42" y1="76.2" x2="-25.4" y2="76.2" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="27.94" y1="76.2" x2="-25.4" y2="76.2" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="-25.4" y1="76.2" x2="-25.4" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-25.4" y1="10.16" x2="58.42" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="58.42" y1="10.16" x2="58.42" y2="76.2" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-25.4" y1="10.16" x2="27.94" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="27.94" y1="10.16" x2="27.94" y2="76.2" width="0.1524" layer="94" style="shortdash"/>
 <text x="7.62" y="12.7" size="1.778" layer="94">2x20 Shroud</text>
 <text x="134.62" y="12.7" size="1.778" layer="94">2x13 Shroud</text>
 <wire x1="101.6" y1="76.2" x2="101.6" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="180.34" y1="76.2" x2="180.34" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="101.6" y1="10.16" x2="180.34" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="101.6" y1="76.2" x2="180.34" y2="76.2" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="154.94" y1="76.2" x2="154.94" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="101.6" y1="10.16" x2="154.94" y2="10.16" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="101.6" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="94" style="shortdash"/>
 <text x="66.04" y="88.9" size="1.778" layer="94">Solder components near tester header.</text>
-<text x="-20.32" y="93.98" size="1.778" layer="94">Build Cable.</text>
-<text x="-20.32" y="88.9" size="1.778" layer="94">Using cable as a spacer:</text>
-<text x="-17.78" y="86.36" size="1.778" layer="94">Install 2x13 right angle header in tester, SOLDER SIDE, pins facing in.</text>
-<text x="-20.32" y="91.44" size="1.778" layer="94">Install 2x20 right angle headers in Pi, pins facing out.</text>
+<text x="-20.32" y="96.52" size="1.778" layer="94">Build Cable.</text>
+<text x="-20.32" y="91.44" size="1.778" layer="94">Using cable as a spacer:</text>
+<text x="-17.78" y="88.9" size="1.778" layer="94">Install 2x13 right angle header in tester, SOLDER SIDE, pins facing in.</text>
+<text x="-20.32" y="93.98" size="1.778" layer="94">Install 2x20 right angle headers in Pi, pins facing out.</text>
+<text x="-20.32" y="109.22" size="1.778" layer="94">Notes:</text>
+<text x="-17.78" y="106.68" size="1.778" layer="94">Headers are depicted from the component side, opposite the soldering.</text>
+<text x="-17.78" y="104.14" size="1.778" layer="94">This also matches the "wire side" of the matching shroud.</text>
+<text x="-17.78" y="101.6" size="1.778" layer="94">The 90 degree bend doesn't affect this.</text>
+<text x="-22.86" y="73.66" size="1.778" layer="94">RasPi PCB</text>
+<text x="-20.32" y="83.82" size="1.778" layer="94">The shroud arrow really does mark pin 2, not pin 1.</text>
+<text x="-20.32" y="81.28" size="1.778" layer="94">Wire colors are often ambiguous.  Refer to "Cable Layout" below.</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="99.06" y="96.52"/>
