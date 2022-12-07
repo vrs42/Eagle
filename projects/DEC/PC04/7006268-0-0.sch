@@ -1063,7 +1063,7 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="-5.08" y1="0" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.2704" y1="-2.5399" x2="1.2704" y2="-12.6998" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-12.7" width="0.1778" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="-5.08" y2="0" width="0.1524" layer="94"/>
 <circle x="-5.08" y="0" radius="0.254" width="0.254" layer="94"/>
