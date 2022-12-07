@@ -15,6 +15,7 @@ svn propget svn:mime-type -R . | (
 status=0
 while read i; do
   case "$i" in 
+    *.ammdb" - application/octet-stream") ;;
     *.bmp" - image/bmp")  ;;
     *.gif" - image/gif")  ;;
     *.jpg" - image/jpeg") ;;
@@ -29,12 +30,17 @@ while read i; do
     *.cod" - application/octet-stream") ;;
     *.cof" - application/octet-stream") ;;
     *.ddb" - application/octet-stream") ;;
+    *.dfp" - application/octet-stream") ;;
     *.doc" - application/octet-stream") ;;
+    *.dpi" - application/octet-stream") ;;
     *.EXE" - application/octet-stream") ;;
     *.fpd" - application/octet-stream") ;;
     *.hdb" - application/octet-stream") ;;
     *.hif" - application/octet-stream") ;;
     *.hs" - application/octet-stream") ;;
+    *.hsd" - application/octet-stream") ;;
+    *.idb" - application/octet-stream") ;;
+    *.hb_info" - application/octet-stream") ;;
     *.ipinfo" - application/octet-stream") ;;
     *.ise" - application/octet-stream") ;;
     *.ise_ISE_Backup" - application/octet-stream") ;;
@@ -49,6 +55,7 @@ while read i; do
     *.sch" - application/octet-stream") ;;
     *.sci" - application/octet-stream") ;;
     *.snp" - application/octet-stream") ;;
+    *.sof" - application/octet-stream") ;;
     *.tdb" - application/octet-stream") ;;
     *.xls" - application/octet-stream") ;;
     *.zip" - application/octet-stream") ;;
