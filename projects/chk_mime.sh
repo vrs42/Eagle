@@ -50,6 +50,7 @@ while read i; do
     *.mcw" - application/octet-stream") ;;
     *.pof" - application/octet-stream") ;;
     *.qws" - application/octet-stream") ;;
+    *.rcfdb" - application/octet-stream") ;;
     *.rdb" - application/octet-stream") ;;
     *.rvd" - application/octet-stream") ;;
     *.sch" - application/octet-stream") ;;
