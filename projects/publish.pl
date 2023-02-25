@@ -5,7 +5,7 @@ $SVNURL="https://svn.so-much-stuff.com/svn/trunk/Eagle/projects";
 $head = <<'EOM';
 <?php
   $title = "CAD Project Files";
-  include $_SERVER{'DOCUMENT_ROOT'}.'/pdp8/header.php';
+  include $_SERVER['DOCUMENT_ROOT'].'/pdp8/header.php';
 ?>
 <BODY>
 EOM
@@ -106,6 +106,6 @@ $f = '';
 print STDERR "$files files in $dirs directories\n";
 
 $tail = <<'EOM';
-<?php include $_SERVER{'DOCUMENT_ROOT'}.'/pdp8/footer.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/pdp8/footer.php'; ?>
 EOM
 print $tail;
