@@ -16434,6 +16434,7 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <part name="E5A" library="memory-hitachi" deviceset="62832P" device="" value="62256"/>
 <part name="E2A" library="memory-hitachi" deviceset="62832P" device="" value="62256"/>
 <part name="OSC1" library="crystal" deviceset="QG5860" device="" value="19.6608 MHz"/>
+<part name="V65" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17639,6 +17640,7 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <text x="304.8" y="27.94" size="1.778" layer="94">Roland Huisman</text>
 <text x="378.46" y="7.62" size="1.778" layer="94">1.0</text>
 <text x="304.8" y="25.4" size="1.778" layer="94">www.technischmuseum.nl</text>
+<text x="86.36" y="111.76" size="1.778" layer="94">EXAM</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
@@ -17768,6 +17770,7 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <instance part="SW3" gate="-2" x="320.04" y="231.14" rot="MR270"/>
 <instance part="SW3" gate="-3" x="320.04" y="238.76" rot="MR270"/>
 <instance part="SW3" gate="-4" x="320.04" y="246.38" rot="MR270"/>
+<instance part="V65" gate="GND" x="86.36" y="106.68"/>
 </instances>
 <busses>
 </busses>
@@ -17967,6 +17970,17 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="V3" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U7" gate="B" pin="I0"/>
+<wire x1="106.68" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="96.52" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="I1"/>
+<wire x1="104.14" y1="109.22" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
+<junction x="104.14" y="109.22"/>
+<label x="86.36" y="109.22" size="1.778" layer="95"/>
+<pinref part="V65" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="DIP_3" class="0">
@@ -18243,16 +18257,6 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <pinref part="U1" gate="G$1" pin="PD4(XCK/T0)"/>
 <wire x1="83.82" y1="190.5" x2="101.6" y2="190.5" width="0.1524" layer="91"/>
 <label x="93.98" y="190.5" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U7" gate="B" pin="I0"/>
-<wire x1="106.68" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="96.52" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U7" gate="A" pin="I1"/>
-<wire x1="104.14" y1="109.22" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
-<junction x="104.14" y="109.22"/>
-<label x="86.36" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SHOW_DATA" class="0">
@@ -22009,6 +22013,9 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <approved hash="106,1,243.84,121.92,!TS2,,,,,"/>
 <approved hash="106,1,322.58,76.2,+15V,,,,,"/>
 <approved hash="106,1,322.58,76.2,+15V,,,,,"/>
+<approved hash="206,5,83.82,220.98,CLK,,,,,"/>
+<approved hash="206,5,83.82,220.98,CLK,,,,,"/>
+<approved hash="106,2,83.82,190.5,EXAM,,,,,"/>
 <approved hash="106,1,73.66,137.16,INHIBIT,,,,,"/>
 <approved hash="106,1,149.86,91.44,INT_STROBE,,,,,"/>
 <approved hash="105,4,123.19,60.96,N$11,,,,,"/>
@@ -22075,6 +22082,9 @@ Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
 <approved hash="112,3,368.3,81.28,,,,,,"/>
 <approved hash="112,3,368.3,53.34,,,,,,"/>
 <approved hash="112,3,368.3,63.5,,,,,,"/>
+<approved hash="112,5,60.96,215.9,,,,,,"/>
+<approved hash="112,5,60.96,226.06,,,,,,"/>
+<approved hash="112,5,81.28,220.98,,,,,,"/>
 </errors>
 </schematic>
 </drawing>
