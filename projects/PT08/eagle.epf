@@ -7,10 +7,8 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/atmel-cpld.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-con.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-m.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/rack.lbr"
+UsedLibrary="//wsl$/Debian/home/vrs/Eagle/lbr/atmel-cpld.lbr"
+UsedLibrary="//wsl$/Debian/home/vrs/Eagle/lbr/dec-con.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/41xx.lbr"
@@ -350,11 +348,11 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zilog.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="439 547 1562 1171"
+Loc="439 407 1562 1031"
 State=1
 Number=2
-File="PT08.brd"
-View="-8.55116 -7.34339 207.611 139.411"
+File="PT08M.brd"
+View="142.249 130.891 219.842 202"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.508"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.254 0.3048 0.4064 0.6096 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.8128"
@@ -396,18 +394,18 @@ Layer=16
 
 [Win_2]
 Type="Schematic Editor"
-Loc="233 548 1356 1171"
+Loc="233 408 1356 1031"
 State=1
 Number=1
-File="PT08.sch"
-View="-8.29656 -5.80736 396.709 269.759"
+File="PT08M.sch"
+View="22.7176 155.09 190.748 266.856"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.254 0.3048 0.4064 0.6096 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.8128"
 ViaDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 ViaDrills=" 0.254 0.3048 0.4064 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.6096"
 HoleDrills=" 0.254 0.3048 0.4064 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 0.6096"
-TextSizes=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.778"
+TextSizes=" 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.9304 2.1844 3.81 5.08 6.4516 0.254 2.54 1.778"
 PolygonSpacings=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.27"
 PolygonIsolates=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 MiterRadiuss=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
@@ -439,17 +437,17 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -8.29656 -5.80736 396.709 269.759 2: -8.29656 -5.80736 396.709 269.759"
-Sheet=1
+Views=" 1: -5.93326 -3.36003 412.179 274.747 2: 22.7176 155.09 190.748 266.856 3: 4.15782 16.8039 505.893 350.533"
+Sheet=2
 
 [Win_3]
 Type="Control Panel"
-Loc="656 387 1255 786"
+Loc="652 321 1251 720"
 State=1
 Number=0
 
 [Desktop]
-Screen="1920 1200"
+Screen="1920 1080"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"
