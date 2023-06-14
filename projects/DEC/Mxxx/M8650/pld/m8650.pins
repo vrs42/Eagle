@@ -1,4 +1,3 @@
-set_location_assignment PIN_ -to n_t_103x
 set_location_assignment PIN_ -to serial_in
 set_location_assignment PIN_ -to sw1
 set_location_assignment PIN_ -to sw2
@@ -6,9 +5,9 @@ set_location_assignment PIN_ -to sw3
 set_location_assignment PIN_ -to sw4
 set_location_assignment PIN_ -to sw5
 set_location_assignment PIN_ -to sw6
+set_location_assignment PIN_ -to bd230400
 set_location_assignment PIN_ -to c0_l
 set_location_assignment PIN_ -to c1_l
-set_location_assignment PIN_ -to clk
 set_location_assignment PIN_ -to data04_l
 set_location_assignment PIN_ -to data05_l
 set_location_assignment PIN_ -to data06_l
@@ -36,4 +35,8 @@ set_location_assignment PIN_ -to r_run_l
 set_location_assignment PIN_ -to serial_out
 set_location_assignment PIN_ -to skip_l
 set_location_assignment PIN_ -to tp3
+set_location_assignment PIN_ -to tp_ab1
+set_location_assignment PIN_ -to tp_ba1
+set_location_assignment PIN_ -to tp_bb1
+set_location_assignment PIN_ -to tp_ca1
 set_location_assignment PIN_ -to tx_div_l

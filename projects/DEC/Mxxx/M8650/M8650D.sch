@@ -21482,7 +21482,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="U$2" gate="CR1" x="162.56" y="220.98" rot="R180"/>
 <instance part="U$2" gate="CP1" x="332.74" y="68.58" rot="MR180"/>
 <instance part="U$2" gate="CN1" x="208.28" y="20.32" rot="R90"/>
-<instance part="U$2" gate="CL1" x="195.58" y="187.96"/>
+<instance part="U$2" gate="CL1" x="198.12" y="187.96"/>
 <instance part="U$2" gate="CH1" x="332.74" y="104.14" rot="MR180"/>
 <instance part="U$2" gate="CF1" x="213.36" y="20.32" rot="R90"/>
 <instance part="U$2" gate="CE1" x="332.74" y="134.62" rot="MR180"/>
@@ -21657,7 +21657,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="JC24" gate="1" x="73.66" y="91.44" rot="R90"/>
 <instance part="JF12" gate="1" x="68.58" y="162.56" rot="MR0"/>
 <instance part="V2" gate="GND" x="78.74" y="63.5"/>
-<instance part="+3V1" gate="G$1" x="124.46" y="246.38"/>
+<instance part="+3V1" gate="G$1" x="124.46" y="246.38" smashed="yes">
+<attribute name="VALUE" x="124.46" y="246.38" size="1.778" layer="96" rot="MR90"/>
+</instance>
 <instance part="+3V2" gate="G$1" x="254" y="180.34"/>
 <instance part="+3V3" gate="G$1" x="281.94" y="160.02"/>
 <instance part="+3V4" gate="G$1" x="96.52" y="30.48" rot="MR0"/>
@@ -22043,7 +22045,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="167.64" y1="203.2" x2="170.18" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="203.2" x2="170.18" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="187.96" x2="167.64" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="187.96" x2="193.04" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="187.96" x2="195.58" y2="187.96" width="0.1524" layer="91"/>
 <junction x="170.18" y="187.96"/>
 <label x="172.72" y="187.96" size="1.778" layer="95"/>
 <pinref part="U$2" gate="CL1" pin="1"/>

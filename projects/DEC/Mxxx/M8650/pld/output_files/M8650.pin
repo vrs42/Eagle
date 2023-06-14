@@ -101,7 +101,7 @@ tp_ca1                       : 37        : output : TTL               :         
 VCCIO                        : 38        : power  :                   : 5.0V    :           :                
 power_ok                     : 39        : input  : TTL               :         :           : Y              
 data07_l                     : 40        : bidir  : TTL               :         :           : Y              
-RESERVED_INPUT               : 41        :        :                   :         :           :                
+int_enab                     : 41        : bidir  : TTL               :         :           : N              
 GND                          : 42        : gnd    :                   :         :           :                
 VCCINT                       : 43        : power  :                   : 5.0V    :           :                
 data06_l                     : 44        : bidir  : TTL               :         :           : Y              
@@ -143,5 +143,5 @@ RESERVED_INPUT               : 79        :        :                   :         
 data10_l                     : 80        : bidir  : TTL               :         :           : Y              
 data09_l                     : 81        : bidir  : TTL               :         :           : Y              
 GND                          : 82        : gnd    :                   :         :           :                
-clk                          : 83        : input  : TTL               :         :           : Y              
+bd230400                     : 83        : input  : TTL               :         :           : Y              
 sw2                          : 84        : input  : TTL               :         :           : Y              

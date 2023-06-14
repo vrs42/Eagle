@@ -19,7 +19,7 @@
 ## PROGRAM "Quartus II"
 ## VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-## DATE    "Sun Oct 24 16:07:14 2021"
+## DATE    "Fri Jun 09 17:05:55 2023"
 
 ##
 ## DEVICE  "EPM7128SLC84-15"
@@ -31,14 +31,23 @@
 #**************************************************************
 
 set_time_format -unit ns -decimal_places 3
-set_operating_conditions -model slow
+
 
 
 #**************************************************************
 # Create Clock
 #**************************************************************
 
-create_clock -name {clk} -period 1.000 -waveform { 0.000 0.500 } [get_ports {clk}]
+create_clock -name {bd230400} -period 271.267 -waveform { 0.000 0.500 } [get_ports {bd230400}]
+create_clock -name {bd19200} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd19200}]
+create_clock -name {bd9600} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd9600}]
+create_clock -name {bd4800} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd4800}]
+create_clock -name {bd2400} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd2400}]
+create_clock -name {bd1200} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd1200}]
+create_clock -name {bd600} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd600}]
+create_clock -name {bd873} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd873}]
+create_clock -name {bd436} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd436}]
+create_clock -name {bd218} -period 1.000 -waveform { 0.000 0.500 } [get_registers {bd218}]
 
 
 #**************************************************************

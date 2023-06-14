@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from M8650D+cpld.sch at 8/23/2022 9:59:14 AM
+Exported from M8650D+cpld+.sch at 6/9/2023 4:28:26 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -400,27 +400,16 @@ E16      1        CLR        in       +3V3
          13       CLR        in       !INIT
          14       VCC        pwr      VCC
 
-E17      1        CKB        in       BD614400
-         2        R0(1)      in       GND
-         3        R0(2)      in       GND
+E18      1        CKB        in       BD115200
+         2        R0(1)      in       N$3
+         3        R0(2)      in       N$3
          5        VCC        pwr      VCC
-         8        QC         out      BD153600
-         9        QB         out      BD307200
-         10       GND        pwr      GND
-         11       QD         out      BD76800
-         12       QA         out      BD614400
-         14       CKA        in       CLK
-
-E18      1        CKB        in       GND
-         2        R0(1)      in       GND
-         3        R0(2)      in       GND
-         5        VCC        pwr      VCC
-         8        QC         out               *** unconnected ***
-         9        QB         out               *** unconnected ***
+         8        QC         out      BD38400
+         9        QB         out      BD57600
          10       GND        pwr      GND
          11       QD         out               *** unconnected ***
-         12       QA         out      BD38400
-         14       CKA        in       BD76800
+         12       QA         out      BD115200
+         14       CKA        in       BD230400
 
 E19      1        I0         in       SERIAL_IN
          2        I1         in       N$78
@@ -499,7 +488,7 @@ E25      1        I4         in       STP_MARK
          2        I1         in       BTP3
          3        I2         in       DOTPC
          4        I3         in       TX_DIV
-         5        I4         in       N$103
+         5        I4         in       TX_ACTIVE
          6        O          out      !TX_SHIFT
          7        GND        pwr      GND
          8        O          out      N$108
@@ -980,18 +969,18 @@ IC8      1        D3         in       BD1200
          9        C          in       SW1
          10       B          in       SW2
          11       A          in       SW3
-         12       D7         in       BD153600
-         13       D6         in       BD76800
+         12       D7         in       BD230400
+         13       D6         in       BD115200
          14       D5         in       BD38400
          15       D4         in       BD9600
          16       VCC        pwr      VCC
 
 IC9      1        I0         in       N$2
          2        I1         in       N$5
-         3        I0         in                ***   unused    ***
-         4        I1         in                ***   unused    ***
-         5        I2         in                ***   unused    ***
-         6        O          out               ***   unused    ***
+         3        I0         in       BD57600
+         4        I1         in       BD57600
+         5        I2         in       BD38400
+         6        O          out      N$3
          7        GND        pwr      GND
          8        O          out               ***   unused    ***
          9        I0         in                ***   unused    ***
@@ -999,6 +988,21 @@ IC9      1        I0         in       N$2
          11       I2         in                ***   unused    ***
          12       O          out      DIV11
          13       I2         in       BD1745
+         14       VCC        pwr      VCC
+
+IC10     1        I0         in       RX_ACTIVE
+         2        I1         in       RX_ACTIVE
+         3        O          out      TP_AB1
+         4        I0         in       TX_ACTIVE
+         5        I1         in       TX_ACTIVE
+         6        O          out      TP_BA1
+         7        GND        pwr      GND
+         8        O          out      TP_BB1
+         9        I0         in       DOTPC
+         10       I1         in       DOTPC
+         11       O          out      TP_CA1
+         12       I0         in       TP3
+         13       I1         in       TP3
          14       VCC        pwr      VCC
 
 IC12     1        I0         in       SW1
@@ -1017,11 +1021,11 @@ IC12     1        I0         in       SW1
          14       VCC        pwr      VCC
 
 OSC      4        GND        pwr      GND
-         5        OUT        out      CLK
+         5        OUT        out      BD230400
          8        VCC        pwr      VCC
 
 OSC1     7        GND        pwr      GND
-         8        OUT        out      CLK
+         8        OUT        out      BD230400
          14       VCC        pwr      VCC
 
 R1       1        1          pas      +3V3
@@ -1074,7 +1078,7 @@ SW1      1        1          pas      GND
 
 U$2      AA1      1          io                ***   unused    ***
          AA2      1          io       VCC
-         AB1      1          io                ***   unused    ***
+         AB1      1          io       TP_AB1
          AB2      1          io                ***   unused    ***
          AC1      1          io                ***   unused    ***
          AC2      1          io       GND
@@ -1108,9 +1112,9 @@ U$2      AA1      1          io                ***   unused    ***
          AU2      1          io                ***   unused    ***
          AV1      1          io                ***   unused    ***
          AV2      1          io                ***   unused    ***
-         BA1      1          io                ***   unused    ***
+         BA1      1          io       TP_BA1
          BA2      1          io       VCC
-         BB1      1          io                ***   unused    ***
+         BB1      1          io       TP_BB1
          BB2      1          io                ***   unused    ***
          BC1      1          io       GND
          BC2      1          io       GND
@@ -1144,7 +1148,7 @@ U$2      AA1      1          io                ***   unused    ***
          BU2      1          io                ***   unused    ***
          BV1      1          io       DATA07_L
          BV2      1          io       POWER_OK
-         CA1      1          io                ***   unused    ***
+         CA1      1          io       TP_CA1
          CA2      1          io       VCC
          CB1      1          io       INT_ENAB
          CB2      1          io                ***   unused    ***

@@ -3,7 +3,7 @@
 
 Name     M8650 ;
 PartNo   cpld ;
-Date     8/25/2022 ;
+Date     6/9/2023 ;
 Revision 01 ;
 Designer  ;
 Company   ;
@@ -16,7 +16,6 @@ $DEFINE OPTIMIZE
 $UNDEF  OPTIMIZE
 
 /* Input Pins */
-pin = n_t_103x;
 pin = serial_in;
 pin = sw1;
 pin = sw2;
@@ -26,9 +25,9 @@ pin = sw5;
 pin = sw6;
 
 /* Output Pins */
+pin = bd230400;
 pin = c0_l;
 pin = c1_l;
-pin = clk;
 pin = data04_l;
 pin = data05_l;
 pin = data06_l;
@@ -56,6 +55,10 @@ pin = r_run_l;
 pin = serial_out;
 pin = skip_l;
 pin = tp3;
+pin = tp_ab1;
+pin = tp_ba1;
+pin = tp_bb1;
+pin = tp_ca1;
 pin = tx_div_l;
 node rx_div;
 node ck_pulse;
@@ -91,20 +94,16 @@ node bd4800;
 node bd2400;
 node tx_div;
 node spike_det_l;
-node bd614400;
-node bd307200;
-node bd153600;
-node bd76800;
+node bd115200;
+node bd57600;
 node bd38400;
 node gdollar_1;
-node gdollar_2;
-node gdollar_3;
 node tx_active_l;
 node start_l;
 node stp1;
-node gdollar_4;
+node gdollar_2;
 node stp2;
-node gdollar_5;
+node gdollar_3;
 node n_t_60x;
 node n_t_62x;
 node n_t_56x;
@@ -182,6 +181,7 @@ node n_t_25x;
 node n_t_26x;
 node n_t_28x;
 node n_t_29x;
+node n_t_3x;
 node n_t_41x;
 node n_t_42x;
 node n_t_44x;
@@ -538,33 +538,19 @@ spike_det_l.d = 'b'1;
 spike_det_l.ck = rx_active8_l;
 spike_det_l.ar = !rx_again_l;
 
-/* e17: sn7493 */
-bd614400.ck = clk;
-bd614400.t = 'b'1;
-bd614400.ar = 'b'0;
-bd307200.ck = bd614400;
-bd307200.t = 'b'1;
-bd307200.ar = 'b'0;
-bd153600.ck = bd307200;
-bd153600.t = 'b'1;
-bd153600.ar = 'b'0;
-bd76800.ck = bd153600;
-bd76800.t = 'b'1;
-bd76800.ar = 'b'0;
-
 /* e18: sn7493 */
-bd38400.ck = bd76800;
+bd115200.ck = bd230400;
+bd115200.t = 'b'1;
+bd115200.ar = n_t_3x;
+bd57600.ck = bd115200;
+bd57600.t = 'b'1;
+bd57600.ar = n_t_3x;
+bd38400.ck = bd57600;
 bd38400.t = 'b'1;
-bd38400.ar = 'b'0;
-gdollar_1.ck = 'b'0;
+bd38400.ar = n_t_3x;
+gdollar_1.ck = bd38400;
 gdollar_1.t = 'b'1;
-gdollar_1.ar = 'b'0;
-gdollar_2.ck = gdollar_1;
-gdollar_2.t = 'b'1;
-gdollar_2.ar = 'b'0;
-gdollar_3.ck = gdollar_2;
-gdollar_3.t = 'b'1;
-gdollar_3.ar = 'b'0;
+gdollar_1.ar = n_t_3x;
 
 /* e19: sn7410 */
 rx_again_l = !(serial_in & n_t_78x & rx_rate);
@@ -614,7 +600,7 @@ pause = !b_pause_l;
 !n_t_108x = stp_mark & enab
           # tx_active & tx8;
 !tx_shift_l = btp3 & dotpc
-            # tx_div & n_t_103x;
+            # tx_div & tx_active;
 
 /* e26: dec8271 */
 stp1.ar = !tx_div;
@@ -622,21 +608,21 @@ stp1.d = tx_active_l & n3v3
        #  & n3v3 & !n3v3
        # stp1 & !n3v3 & !n3v3;
 stp1.ck = !n_t_145x;
-gdollar_4.ar = !tx_div;
-gdollar_4.d = stp1 & n3v3
+gdollar_2.ar = !tx_div;
+gdollar_2.d = stp1 & n3v3
             #  & n3v3 & !n3v3
-            # gdollar_4 & !n3v3 & !n3v3;
-gdollar_4.ck = !n_t_145x;
+            # gdollar_2 & !n3v3 & !n3v3;
+gdollar_2.ck = !n_t_145x;
 stp2.ar = !tx_div;
-stp2.d = gdollar_4 & n3v3
+stp2.d = gdollar_2 & n3v3
        #  & n3v3 & !n3v3
        # stp2 & !n3v3 & !n3v3;
 stp2.ck = !n_t_145x;
-gdollar_5.ar = !tx_div;
-gdollar_5.d = stp2 & n3v3
+gdollar_3.ar = !tx_div;
+gdollar_3.d = stp2 & n3v3
             #  & n3v3 & !n3v3
-            # gdollar_5 & !n3v3 & !n3v3;
-gdollar_5.ck = !n_t_145x;
+            # gdollar_3 & !n3v3 & !n3v3;
+gdollar_3.ck = !n_t_145x;
 
 /* e27: sp380n */
 !n_t_47x = data05_l
@@ -888,12 +874,19 @@ rx_rate = bd109 & !'b'0 & !sw1 & !sw2 & !sw3
     # bd1200  & !'b'0 & !sw1 &  sw2 &  sw3
     # bd9600 & !'b'0 &  sw1 & !sw2 & !sw3
     # bd38400 & !'b'0 &  sw1 & !sw2 &  sw3
-    # bd76800 & !'b'0 &  sw1 &  sw2 & !sw3
-    # bd153600 & !'b'0 &  sw1 &  sw2 &  sw3;
+    # bd115200 & !'b'0 &  sw1 &  sw2 & !sw3
+    # bd230400 & !'b'0 &  sw1 &  sw2 &  sw3;
 n_t_1x = !rx_rate;
 
 /* ic9: sn7411 */
 div11 = n_t_2x & n_t_5x & bd1745;
+n_t_3x = bd57600 & bd38400;
+
+/* ic10: sn7408 */
+tp_ab1 = rx_active;
+tp_ba1 = tx_active;
+tp_bb1 = dotpc;
+tp_ca1 = tp3;
 
 /* ic12: sn7427 */
 is110 = !(sw1

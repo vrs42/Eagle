@@ -1,5 +1,4 @@
 |m8650
-tp_ca1 <= tp3.DB_MAX_OUTPUT_PORT_TYPE
 serial_in => rx7.IN0
 serial_in => n_t_81x.IN0
 serial_in => rx_again_l.IN1
@@ -21,9 +20,11 @@ sw3 => rx_rate.IN1
 sw3 => rx_rate.IN0
 sw3 => rx_rate.IN1
 sw3 => is110.IN1
+bd230400 => always47.IN0
+bd230400 => rx_rate.IN1
+bd230400 => bd115200.LATCH_ENABLE
 c0_l <= c0_l.DB_MAX_OUTPUT_PORT_TYPE
 c1_l <= c1_l.DB_MAX_OUTPUT_PORT_TYPE
-clk => bd614400.CLK
 data04_l <> data04_l
 data05_l <> data05_l
 data06_l <> data06_l
@@ -59,6 +60,7 @@ initialize => n_t_60x_m.ACLR
 initialize => tx_active_l.PRESET
 initialize => tx_active_l_m.PRESET
 initialize => tx_div_m.PRESET
+int_enab <> int_enab
 int_rqst_l <= int_rqst_l.DB_MAX_OUTPUT_PORT_TYPE
 internal_io_l <= internal_io_l.DB_MAX_OUTPUT_PORT_TYPE
 io_pause_l => n_t_8x.IN1
@@ -75,17 +77,18 @@ md08_l => iot11_l.IN0
 md09_l => n_t_23x.IN0
 md10_l => n_t_21x.IN0
 md11_l => n_t_25x.IN0
-power_ok => always19.IN0
+power_ok => always20.IN0
 power_ok => comb.IN1
 serial_out <= serial_out$latch.DB_MAX_OUTPUT_PORT_TYPE
 skip_l <> skip_l
-tp_ab1 <= tx_shift_l.DB_MAX_OUTPUT_PORT_TYPE
-tp_ba1 <= tx_div.DB_MAX_OUTPUT_PORT_TYPE
-tp_bb1 <= dotpc.DB_MAX_OUTPUT_PORT_TYPE
 tp3 => tx_shift_l.IN0
 tp3 => cktcf.IN0
 tp3 => ckkcc_l.IN0
 tp3 => ckkie.IN0
 tp3 => tp_ca1.DATAIN
+tp_ab1 <= rx_active.DB_MAX_OUTPUT_PORT_TYPE
+tp_ba1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+tp_bb1 <= dotpc.DB_MAX_OUTPUT_PORT_TYPE
+tp_ca1 <= tp3.DB_MAX_OUTPUT_PORT_TYPE
 
 

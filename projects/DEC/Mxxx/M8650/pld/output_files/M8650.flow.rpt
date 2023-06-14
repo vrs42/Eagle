@@ -1,5 +1,5 @@
 Flow report for M8650
-Thu Sep  1 15:28:53 2022
+Sat Jun 10 00:15:07 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Flow Summary                                                                ;
 +---------------------------+-------------------------------------------------+
-; Flow Status               ; Successful - Thu Sep  1 15:28:49 2022           ;
+; Flow Status               ; Successful - Sat Jun 10 00:15:04 2023           ;
 ; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name             ; M8650                                           ;
 ; Top-level Entity Name     ; m8650                                           ;
 ; Family                    ; MAX7000S                                        ;
 ; Device                    ; EPM7128SLC84-15                                 ;
 ; Timing Models             ; Final                                           ;
-; Total macrocells          ; 117 / 128 ( 91 % )                              ;
-; Total pins                ; 40 / 68 ( 59 % )                                ;
+; Total macrocells          ; 118 / 128 ( 92 % )                              ;
+; Total pins                ; 41 / 68 ( 60 % )                                ;
 +---------------------------+-------------------------------------------------+
 
 
@@ -57,30 +57,31 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/01/2022 15:28:36 ;
+; Start date & time ; 06/10/2023 00:15:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; M8650               ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                    ;
-+--------------------------------------------------+-----------------------+---------------+-------------+------------+
-; Assignment Name                                  ; Value                 ; Default Value ; Entity Name ; Section Id ;
-+--------------------------------------------------+-----------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                            ; 0.166207131618952     ; --            ; --          ; --         ;
-; FITTER_EFFORT                                    ; Standard Fit          ; Auto Fit      ; --          ; --         ;
-; MAX7000_OPTIMIZATION_TECHNIQUE                   ; Area                  ; Speed         ; --          ; --         ;
-; OPTIMIZE_HOLD_TIMING                             ; All Paths             ; --            ; --          ; --         ;
-; PARTITION_COLOR                                  ; 16764057              ; --            ; m8650       ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL              ; PLACEMENT_AND_ROUTING ; --            ; m8650       ; Top        ;
-; PARTITION_NETLIST_TYPE                           ; SOURCE                ; --            ; m8650       ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY                         ; output_files          ; --            ; --          ; --         ;
-; SLOW_SLEW_RATE                                   ; On                    ; Off           ; --          ; --         ;
-; SYNTH_TIMING_DRIVEN_SYNTHESIS                    ; Off                   ; --            ; --          ; --         ;
-; TIMEQUEST_MULTICORNER_ANALYSIS                   ; On                    ; Off           ; --          ; --         ;
-; TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS ; Off                   ; On            ; --          ; --         ;
-+--------------------------------------------------+-----------------------+---------------+-------------+------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                                                     ;
++--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                                  ; Value                                                                                                                                                                  ; Default Value ; Entity Name ; Section Id ;
++--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID                            ; 91766947149.168638130018372                                                                                                                                            ; --            ; --          ; --         ;
+; DISABLE_DA_RULE                                  ; C101, C102, C103, C104, C105, C106, R101, R102, R103, R104, R105, T101, T102, A101, A102, A103, A104, A105, A106, A107, A108, S101, S102, S103, S104, D101, D102, D103 ; --            ; --          ; --         ;
+; ENABLE_DA_RULE                                   ; A109, A110                                                                                                                                                             ; --            ; --          ; --         ;
+; FITTER_EFFORT                                    ; Standard Fit                                                                                                                                                           ; Auto Fit      ; --          ; --         ;
+; MAX7000_OPTIMIZATION_TECHNIQUE                   ; Area                                                                                                                                                                   ; Speed         ; --          ; --         ;
+; OPTIMIZE_HOLD_TIMING                             ; All Paths                                                                                                                                                              ; --            ; --          ; --         ;
+; PARTITION_COLOR                                  ; 16764057                                                                                                                                                               ; --            ; m8650       ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL              ; PLACEMENT_AND_ROUTING                                                                                                                                                  ; --            ; m8650       ; Top        ;
+; PARTITION_NETLIST_TYPE                           ; SOURCE                                                                                                                                                                 ; --            ; m8650       ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY                         ; output_files                                                                                                                                                           ; --            ; --          ; --         ;
+; SLOW_SLEW_RATE                                   ; On                                                                                                                                                                     ; Off           ; --          ; --         ;
+; SYNTH_TIMING_DRIVEN_SYNTHESIS                    ; Off                                                                                                                                                                    ; --            ; --          ; --         ;
+; TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS ; Off                                                                                                                                                                    ; On            ; --          ; --         ;
++--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -88,24 +89,24 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 572 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:02     ; 1.0                     ; 461 MB              ; 00:00:01                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 514 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 470 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4577 MB             ; 00:00:00                           ;
+; Fitter                    ; 00:00:01     ; 1.0                     ; 4701 MB             ; 00:00:00                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 4513 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4522 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:04     ; --                      ; --                  ; 00:00:00                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; vrs-Studio-1737  ; Linux Mint ; 19         ; x86_64         ;
-; Fitter                    ; vrs-Studio-1737  ; Linux Mint ; 19         ; x86_64         ;
-; Assembler                 ; vrs-Studio-1737  ; Linux Mint ; 19         ; x86_64         ;
-; TimeQuest Timing Analyzer ; vrs-Studio-1737  ; Linux Mint ; 19         ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; vrs-w10          ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; vrs-w10          ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; vrs-w10          ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; vrs-w10          ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------

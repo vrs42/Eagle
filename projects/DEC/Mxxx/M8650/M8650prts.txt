@@ -1,6 +1,6 @@
 Partlist
 
-Exported from M8650D+cpld.sch at 8/23/2022 9:58:59 AM
+Exported from M8650D+cpld+.sch at 6/9/2023 4:25:19 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -62,7 +62,7 @@ C52      6.8uF          CPOL-USE20-8AXIAL E12-8        dec-con      1
 C53      6.8uF          CPOL-USE20-8AXIAL E12-8        dec-con      1
 C56      6.8uF          CPOL-USE20-8AXIAL E12-8        dec-con      1
 C57      .047uF         C-US050-025X075   C050-025X075 rcl          1
-DL1      RCL-L-100      RCL-L-00-05       RCL-L-00-05  dec-con      2
+DL1      30ns           RCL-L-00-05       RCL-L-00-05  dec-con      2
 E1       SP380N         SP380N            DIL14        dec-con      1
 E2       97401          74LS01N           DIL14        74xx-us      2
 E3       7474N          74S74N            DIL14        74xx-us      2
@@ -79,7 +79,6 @@ E13      7493N          74LS93N           DIL14        74xx-us      3
 E14      7493N          74LS93N           DIL14        74xx-us      3
 E15      97401          74LS01N           DIL14        74xx-us      2
 E16      7474N          74S74N            DIL14        74xx-us      2
-E17      7493N          74LS93N           DIL14        74xx-us      3
 E18      7493N          74LS93N           DIL14        74xx-us      3
 E19      7410N          7410N             DIL14        74xx-us      2
 E20      7474N          74S74N            DIL14        74xx-us      2
@@ -118,9 +117,10 @@ IC6      74S138N        74S138N           DIL16        74xx-us      3
 IC7      74S138N        74S138N           DIL16        74xx-us      3
 IC8      74151N         74151N            DIL16        74xx-us      3
 IC9      74S11N         74S11N            DIL14        74xx-us      3
+IC10     74LS08N        74LS08N           DIL14        74xx-us      3
 IC12     74LS27N        74LS27N           DIL14        74xx-us      3
-OSC      19.6608 MHz    QG5460            DIL08S       crystal      3
-OSC1     19.6608 MHz    QG5860            DIL14S       crystal      3
+OSC      3.6864 MHz     QG5460            DIL08S       crystal      3
+OSC1     3.6864 MHz     QG5860            DIL14S       crystal      3
 R1       220            R-US_0207/10      0207/10      rcl          1
 R2       750            R-US_0207/10      0207/10      rcl          1
 R10      1K             R-US_0207/10      0207/10      rcl          1

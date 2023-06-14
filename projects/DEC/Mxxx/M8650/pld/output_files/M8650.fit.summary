@@ -1,9 +1,9 @@
-Fitter Status : Successful - Thu Sep  1 15:28:44 2022
+Fitter Status : Successful - Sat Jun 10 00:15:03 2023
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : M8650
 Top-level Entity Name : m8650
 Family : MAX7000S
 Device : EPM7128SLC84-15
 Timing Models : Final
-Total macrocells : 117 / 128 ( 91 % )
-Total pins : 40 / 68 ( 59 % )
+Total macrocells : 118 / 128 ( 92 % )
+Total pins : 41 / 68 ( 60 % )

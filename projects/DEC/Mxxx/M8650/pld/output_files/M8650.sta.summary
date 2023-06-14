@@ -2,15 +2,124 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'clk'
+Type  : Setup 'bd9600'
+Slack : -297.000
+TNS   : -2649.000
+
+Type  : Setup 'bd600'
+Slack : -296.000
+TNS   : -2648.500
+
+Type  : Setup 'bd1200'
+Slack : -296.000
+TNS   : -2640.000
+
+Type  : Setup 'bd230400'
+Slack : -278.500
+TNS   : -2469.500
+
+Type  : Setup 'bd218'
 Slack : -12.000
 TNS   : -12.000
 
-Type  : Slow Model Hold 'clk'
+Type  : Setup 'bd19200'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'bd2400'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'bd436'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'bd4800'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'bd873'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Hold 'bd230400'
+Slack : -173.000
+TNS   : -1511.000
+
+Type  : Hold 'bd1200'
+Slack : -110.000
+TNS   : -884.000
+
+Type  : Hold 'bd600'
+Slack : -110.000
+TNS   : -880.000
+
+Type  : Hold 'bd9600'
+Slack : -109.000
+TNS   : -876.000
+
+Type  : Hold 'bd19200'
+Slack : -84.000
+TNS   : -88.000
+
+Type  : Hold 'bd2400'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'bd436'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'bd4800'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'bd873'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'bd218'
 Slack : 5.000
 TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'clk'
-Slack : -4.500
-TNS   : -9.000
+Type  : Minimum Pulse Width 'bd230400'
+Slack : -173.500
+TNS   : -10403.000
 
+Type  : Minimum Pulse Width 'bd1200'
+Slack : -111.500
+TNS   : -7664.000
+
+Type  : Minimum Pulse Width 'bd600'
+Slack : -111.500
+TNS   : -7664.000
+
+Type  : Minimum Pulse Width 'bd9600'
+Slack : -111.500
+TNS   : -7664.000
+
+Type  : Minimum Pulse Width 'bd19200'
+Slack : -59.500
+TNS   : -344.000
+
+Type  : Minimum Pulse Width 'bd218'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'bd2400'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'bd436'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'bd4800'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'bd873'
+Slack : -5.500
+TNS   : -11.000
+
+------------------------------------------------------------
