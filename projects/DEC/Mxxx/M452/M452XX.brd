@@ -937,6 +937,18 @@ design rules under a new name.</description>
 <wire x1="44.45" y1="46.99" x2="48.26" y2="43.18" width="0.8128" layer="1"/>
 <wire x1="38.1" y1="35.56" x2="41.91" y2="39.37" width="0.8128" layer="1"/>
 <wire x1="41.91" y1="39.37" x2="48.26" y2="39.37" width="0.8128" layer="1"/>
+<polygon width="0.8128" layer="1">
+<vertex x="10.16" y="0"/>
+<vertex x="10.16" y="62.23"/>
+<vertex x="107.95" y="62.23"/>
+<vertex x="107.95" y="0"/>
+</polygon>
+<polygon width="0.8128" layer="16">
+<vertex x="10.16" y="0"/>
+<vertex x="10.16" y="62.23"/>
+<vertex x="107.95" y="62.23"/>
+<vertex x="107.95" y="0"/>
+</polygon>
 </signal>
 <signal name="VCC" class="1">
 <contactref element="C1" pad="1"/>
