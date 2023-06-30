@@ -614,6 +614,7 @@ sub sn7486 {
 }
 $hidden{'sn7486'} = 0;
 
+# Note: Negative going clock transition!
 sub sn7493 {
   # We need Qa..Qd even if their pads are NC.
   $pad{12} = &gnext unless defined $pad{12};
@@ -626,16 +627,16 @@ sub sn7493 {
   &pinnode($pad{8});
   &pinnode($pad{11});
   # Now the hair
-  &qcode("$pad{12}.ck = $pad{14};\n");
+  &qcode("$pad{12}.ck = !$pad{14};\n");
   &qcode("$pad{12}.t = 'b'1;\n");
   &qcode("$pad{12}.ar = $pad{2} & $pad{3};\n");
-  &qcode("$pad{9}.ck = $pad{1};\n");
+  &qcode("$pad{9}.ck = !$pad{1};\n");
   &qcode("$pad{9}.t = 'b'1;\n");
   &qcode("$pad{9}.ar = $pad{2} & $pad{3};\n");
-  &qcode("$pad{8}.ck = $pad{9};\n");
+  &qcode("$pad{8}.ck = !$pad{9};\n");
   &qcode("$pad{8}.t = 'b'1;\n");
   &qcode("$pad{8}.ar = $pad{2} & $pad{3};\n");
-  &qcode("$pad{11}.ck = $pad{8};\n");
+  &qcode("$pad{11}.ck = !$pad{8};\n");
   &qcode("$pad{11}.t = 'b'1;\n");
   &qcode("$pad{11}.ar = $pad{2} & $pad{3};\n");
 }
