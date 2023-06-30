@@ -3,7 +3,7 @@
 
 Name     M8650 ;
 PartNo   cpld ;
-Date     6/9/2023 ;
+Date     6/29/2023 ;
 Revision 01 ;
 Designer  ;
 Company   ;
@@ -383,16 +383,16 @@ rx_div4_l.ck = rx_div2_l;
 rx_div4_l.ar = !n3v3;
 
 /* e5: sn7493 */
-n_t_2x.ck = bd19200;
+n_t_2x.ck = !bd19200;
 n_t_2x.t = 'b'1;
 n_t_2x.ar = div11;
-n_t_5x.ck = n_t_2x;
+n_t_5x.ck = !n_t_2x;
 n_t_5x.t = 'b'1;
 n_t_5x.ar = div11;
-gdollar_0.ck = n_t_5x;
+gdollar_0.ck = !n_t_5x;
 gdollar_0.t = 'b'1;
 gdollar_0.ar = div11;
-bd1745.ck = gdollar_0;
+bd1745.ck = !gdollar_0;
 bd1745.t = 'b'1;
 bd1745.ar = div11;
 
@@ -442,16 +442,16 @@ rx_div8.ap = !n3v3;
 n_t_87x = !rx_div8;
 
 /* e9: sn7493 */
-bd1200.ck = bd2400;
+bd1200.ck = !bd2400;
 bd1200.t = 'b'1;
 bd1200.ar = 'b'0;
-bd600.ck = bd1200;
+bd600.ck = !bd1200;
 bd600.t = 'b'1;
 bd600.ar = 'b'0;
-bd300.ck = bd600;
+bd300.ck = !bd600;
 bd300.t = 'b'1;
 bd300.ar = 'b'0;
-bd150.ck = bd300;
+bd150.ck = !bd300;
 bd150.t = 'b'1;
 bd150.ar = 'b'0;
 
@@ -494,30 +494,30 @@ n_t_76x = !(rx_div & rx_last_l);
 rx_last_l = !(last_unit_l & rx_active_l);
 
 /* e13: sn7493 */
-bd873.ck = bd1745;
+bd873.ck = !bd1745;
 bd873.t = 'b'1;
 bd873.ar = 'b'0;
-bd436.ck = bd873;
+bd436.ck = !bd873;
 bd436.t = 'b'1;
 bd436.ar = 'b'0;
-bd218.ck = bd436;
+bd218.ck = !bd436;
 bd218.t = 'b'1;
 bd218.ar = 'b'0;
-bd109.ck = bd218;
+bd109.ck = !bd218;
 bd109.t = 'b'1;
 bd109.ar = 'b'0;
 
 /* e14: sn7493 */
-bd19200.ck = bd38400;
+bd19200.ck = !bd38400;
 bd19200.t = 'b'1;
 bd19200.ar = 'b'0;
-bd9600.ck = bd19200;
+bd9600.ck = !bd19200;
 bd9600.t = 'b'1;
 bd9600.ar = 'b'0;
-bd4800.ck = bd9600;
+bd4800.ck = !bd9600;
 bd4800.t = 'b'1;
 bd4800.ar = 'b'0;
-bd2400.ck = bd4800;
+bd2400.ck = !bd4800;
 bd2400.t = 'b'1;
 bd2400.ar = 'b'0;
 
@@ -539,16 +539,16 @@ spike_det_l.ck = rx_active8_l;
 spike_det_l.ar = !rx_again_l;
 
 /* e18: sn7493 */
-bd115200.ck = bd230400;
+bd115200.ck = !bd230400;
 bd115200.t = 'b'1;
 bd115200.ar = n_t_3x;
-bd57600.ck = bd115200;
+bd57600.ck = !bd115200;
 bd57600.t = 'b'1;
 bd57600.ar = n_t_3x;
-bd38400.ck = bd57600;
+bd38400.ck = !bd57600;
 bd38400.t = 'b'1;
 bd38400.ar = n_t_3x;
-gdollar_1.ck = bd38400;
+gdollar_1.ck = !bd38400;
 gdollar_1.t = 'b'1;
 gdollar_1.ar = n_t_3x;
 

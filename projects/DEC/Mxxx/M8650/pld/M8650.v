@@ -350,56 +350,56 @@ always @(bd19200, div11, n_t_2x)
   if (div11) begin
     n_t_2x_m <= 1'b0;
   end else
-  if (~(bd19200)) begin
+  if (~(~bd19200)) begin
     n_t_2x_m <= ~n_t_2x;
   end
 always @(bd19200, div11, n_t_2x_m)
   if (div11) begin
     n_t_2x <= 1'b0;
   end else
-  if (bd19200) begin
+  if (~bd19200) begin
     n_t_2x <= n_t_2x_m;
   end
 always @(n_t_2x, div11, n_t_5x)
   if (div11) begin
     n_t_5x_m <= 1'b0;
   end else
-  if (~(n_t_2x)) begin
+  if (~(~n_t_2x)) begin
     n_t_5x_m <= ~n_t_5x;
   end
 always @(n_t_2x, div11, n_t_5x_m)
   if (div11) begin
     n_t_5x <= 1'b0;
   end else
-  if (n_t_2x) begin
+  if (~n_t_2x) begin
     n_t_5x <= n_t_5x_m;
   end
 always @(n_t_5x, div11, gdollar_0)
   if (div11) begin
     gdollar_0_m <= 1'b0;
   end else
-  if (~(n_t_5x)) begin
+  if (~(~n_t_5x)) begin
     gdollar_0_m <= ~gdollar_0;
   end
 always @(n_t_5x, div11, gdollar_0_m)
   if (div11) begin
     gdollar_0 <= 1'b0;
   end else
-  if (n_t_5x) begin
+  if (~n_t_5x) begin
     gdollar_0 <= gdollar_0_m;
   end
 always @(gdollar_0, div11, bd1745)
   if (div11) begin
     bd1745_m <= 1'b0;
   end else
-  if (~(gdollar_0)) begin
+  if (~(~gdollar_0)) begin
     bd1745_m <= ~bd1745;
   end
 always @(gdollar_0, div11, bd1745_m)
   if (div11) begin
     bd1745 <= 1'b0;
   end else
-  if (gdollar_0) begin
+  if (~gdollar_0) begin
     bd1745 <= bd1745_m;
   end
 // e6: dec8271 
@@ -488,20 +488,20 @@ always @(rx_div4_l, rx_last_l, rx_div8_m)
     rx_div8 <= rx_div8_m;
   end
 // e9: sn7493 
-always @(posedge bd2400)
-  if (bd2400) begin
+always @(negedge bd2400)
+  if (~bd2400) begin
     bd1200 <= ~bd1200;
   end
-always @(posedge bd1200)
-  if (bd1200) begin
+always @(negedge bd1200)
+  if (~bd1200) begin
     bd600 <= ~bd600;
   end
-always @(posedge bd600)
-  if (bd600) begin
+always @(negedge bd600)
+  if (~bd600) begin
     bd300 <= ~bd300;
   end
-always @(posedge bd300)
-  if (bd300) begin
+always @(negedge bd300)
+  if (~bd300) begin
     bd150 <= ~bd150;
   end
 // e10: dec8271 
@@ -539,37 +539,37 @@ assign n_t_91x = ~(~rx_active & rx_div8);
 assign n_t_76x = ~(rx_div & rx_last_l);
 assign rx_last_l = ~(~last_unit & ~rx_active);
 // e13: sn7493 
-always @(posedge bd1745)
-  if (bd1745) begin
+always @(negedge bd1745)
+  if (~bd1745) begin
     bd873 <= ~bd873;
   end
-always @(posedge bd873)
-  if (bd873) begin
+always @(negedge bd873)
+  if (~bd873) begin
     bd436 <= ~bd436;
   end
-always @(posedge bd436)
-  if (bd436) begin
+always @(negedge bd436)
+  if (~bd436) begin
     bd218 <= ~bd218;
   end
-always @(posedge bd218)
-  if (bd218) begin
+always @(negedge bd218)
+  if (~bd218) begin
     bd109 <= ~bd109;
   end
 // e14: sn7493 
-always @(posedge bd38400)
-  if (bd38400) begin
+always @(negedge bd38400)
+  if (~bd38400) begin
     bd19200 <= ~bd19200;
   end
-always @(posedge bd19200)
-  if (bd19200) begin
+always @(negedge bd19200)
+  if (~bd19200) begin
     bd9600 <= ~bd9600;
   end
-always @(posedge bd9600)
-  if (bd9600) begin
+always @(negedge bd9600)
+  if (~bd9600) begin
     bd4800 <= ~bd4800;
   end
-always @(posedge bd4800)
-  if (bd4800) begin
+always @(negedge bd4800)
+  if (~bd4800) begin
     bd2400 <= ~bd2400;
   end
 // e15: sn97401 
@@ -618,56 +618,56 @@ always @(bd230400, n_t_3x, bd115200)
   if (n_t_3x) begin
     bd115200_m <= 1'b0;
   end else
-  if (~(bd230400)) begin
+  if (~(~bd230400)) begin
     bd115200_m <= ~bd115200;
   end
 always @(bd230400, n_t_3x, bd115200_m)
   if (n_t_3x) begin
     bd115200 <= 1'b0;
   end else
-  if (bd230400) begin
+  if (~bd230400) begin
     bd115200 <= bd115200_m;
   end
 always @(bd115200, n_t_3x, bd57600)
   if (n_t_3x) begin
     bd57600_m <= 1'b0;
   end else
-  if (~(bd115200)) begin
+  if (~(~bd115200)) begin
     bd57600_m <= ~bd57600;
   end
 always @(bd115200, n_t_3x, bd57600_m)
   if (n_t_3x) begin
     bd57600 <= 1'b0;
   end else
-  if (bd115200) begin
+  if (~bd115200) begin
     bd57600 <= bd57600_m;
   end
 always @(bd57600, n_t_3x, bd38400)
   if (n_t_3x) begin
     bd38400_m <= 1'b0;
   end else
-  if (~(bd57600)) begin
+  if (~(~bd57600)) begin
     bd38400_m <= ~bd38400;
   end
 always @(bd57600, n_t_3x, bd38400_m)
   if (n_t_3x) begin
     bd38400 <= 1'b0;
   end else
-  if (bd57600) begin
+  if (~bd57600) begin
     bd38400 <= bd38400_m;
   end
 always @(bd38400, n_t_3x, gdollar_1)
   if (n_t_3x) begin
     gdollar_1_m <= 1'b0;
   end else
-  if (~(bd38400)) begin
+  if (~(~bd38400)) begin
     gdollar_1_m <= ~gdollar_1;
   end
 always @(bd38400, n_t_3x, gdollar_1_m)
   if (n_t_3x) begin
     gdollar_1 <= 1'b0;
   end else
-  if (bd38400) begin
+  if (~bd38400) begin
     gdollar_1 <= gdollar_1_m;
   end
 // e19: sn7410 

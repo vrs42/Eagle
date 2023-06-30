@@ -1,5 +1,5 @@
 Analysis & Synthesis report for M8650
-Sat Jun 10 00:15:01 2023
+Thu Jun 29 18:07:40 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Jun 10 00:15:01 2023           ;
+; Analysis & Synthesis Status ; Successful - Thu Jun 29 18:07:40 2023           ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name               ; M8650                                           ;
 ; Top-level Entity Name       ; m8650                                           ;
@@ -121,18 +121,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 2      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+------------------------------------------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                 ; Used in Netlist ; File Type              ; File Name with Absolute Path                                     ; Library ;
-+------------------------------------------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
-; //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/M8650.v ; yes             ; User Verilog HDL File  ; //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/M8650.v ;         ;
-+------------------------------------------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; M8650.v                          ; yes             ; User Verilog HDL File  ; /home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/M8650.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -147,8 +147,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Parallel expanders   ; 1                    ;
 ; Maximum fan-out node ; initialize           ;
 ; Maximum fan-out      ; 28                   ;
-; Total fan-out        ; 697                  ;
-; Average fan-out      ; 3.92                 ;
+; Total fan-out        ; 696                  ;
+; Average fan-out      ; 3.91                 ;
 +----------------------+----------------------+
 
 
@@ -198,9 +198,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; enab                                                ; tx_shift_l          ; yes                    ;
 ; stp2                                                ; rx_rate             ; yes                    ;
 ; stp1                                                ; rx_rate             ; yes                    ;
-; n_t_56x                                             ; tx_shift_l          ; yes                    ;
-; n_t_62x                                             ; tx_shift_l          ; yes                    ;
 ; n_t_60x                                             ; tx_shift_l          ; yes                    ;
+; n_t_62x                                             ; tx_shift_l          ; yes                    ;
+; n_t_56x                                             ; tx_shift_l          ; yes                    ;
 ; n_t_63x                                             ; tx_shift_l          ; yes                    ;
 ; n_t_65x                                             ; tx_shift_l          ; yes                    ;
 ; n_t_66x                                             ; tx_shift_l          ; yes                    ;
@@ -213,9 +213,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; enab_m                                              ; tx_shift_l          ; yes                    ;
 ; stp2_m                                              ; rx_rate             ; yes                    ;
 ; stp1_m                                              ; rx_rate             ; yes                    ;
-; n_t_56x_m                                           ; tx_shift_l          ; yes                    ;
-; n_t_62x_m                                           ; tx_shift_l          ; yes                    ;
 ; n_t_60x_m                                           ; tx_shift_l          ; yes                    ;
+; n_t_62x_m                                           ; tx_shift_l          ; yes                    ;
+; n_t_56x_m                                           ; tx_shift_l          ; yes                    ;
 ; n_t_63x_m                                           ; tx_shift_l          ; yes                    ;
 ; n_t_65x_m                                           ; tx_shift_l          ; yes                    ;
 ; n_t_66x_m                                           ; tx_shift_l          ; yes                    ;
@@ -245,10 +245,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Jun 10 00:15:00 2023
+    Info: Processing started: Thu Jun 29 18:07:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M8650 -c M8650
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (10238): Verilog Module Declaration warning at M8650.v(5): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "m8650"
-Info (12021): Found 1 design units, including 1 entities, in source file m8650.v
+Info (12021): Found 1 design units, including 1 entities, in source file M8650.v
     Info (12023): Found entity 1: m8650
 Info (12127): Elaborating entity "m8650" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at M8650.v(41): object "r_run_l" assigned a value but never read
@@ -265,17 +266,17 @@ Info (21057): Implemented 178 device resources after synthesis - the final resou
     Info (21060): Implemented 10 bidirectional pins
     Info (21063): Implemented 118 macrocells
     Info (21073): Implemented 23 shareable expanders
-Info (144001): Generated suppressed messages file //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.map.smsg
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4577 megabytes
-    Info: Processing ended: Sat Jun 10 00:15:01 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+Info (144001): Generated suppressed messages file /home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.map.smsg
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 564 megabytes
+    Info: Processing ended: Thu Jun 29 18:07:40 2023
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in //wsl$/Debian/home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.map.smsg.
+The suppressed messages can be found in /home/vrs/Eagle/projects/DEC/Mxxx/M8650/pld/output_files/M8650.map.smsg.
 
 
