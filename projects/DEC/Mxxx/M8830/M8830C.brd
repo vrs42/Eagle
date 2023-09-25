@@ -1803,7 +1803,7 @@ design rules under a new name.</description>
 <element name="E2" library="74xx-us" package="DIL14" value="7402N" x="252.73" y="93.98" rot="R270"/>
 <element name="E3" library="74xx-us" package="DIL14" value="7400N" x="252.73" y="142.24" rot="R270"/>
 <element name="E9" library="74xx-us" package="DIL14" value="7400N" x="186.69" y="93.98" rot="R270"/>
-<element name="EDGE" library="dec-con" package="EDGE-CON8" value="" x="0" y="0"/>
+<element name="EDGE" library="dec-con" package="EDGE-CON8" value=" " x="0" y="0"/>
 <element name="E7" library="74xx-us" package="DIL16" value="7475N" x="219.71" y="140.97" rot="R270"/>
 <element name="C1" library="rcl" package="C050-025X075" value=".01uF" x="254" y="33.02" rot="R180"/>
 <element name="C2" library="rcl" package="C050-025X075" value=".01uF" x="251.46" y="60.96" rot="R180"/>

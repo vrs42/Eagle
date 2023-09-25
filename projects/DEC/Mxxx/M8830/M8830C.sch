@@ -13242,14 +13242,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="E2" library="74xx-us" deviceset="74*02" device="N"/>
 <part name="E3" library="74xx-us" deviceset="74*00" device="N"/>
 <part name="E9" library="74xx-us" deviceset="74*00" device="N"/>
-<part name="EDGE" library="dec-con" deviceset="QUAD" device=""/>
+<part name="EDGE" library="dec-con" deviceset="QUAD" device="" value=" "/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
 <part name="V8" library="supply2" deviceset="GND" device=""/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
 <part name="V12" library="supply2" deviceset="GND" device=""/>
-<part name="FRAME1" library="frames" deviceset="TABL_L" device=""/>
+<part name="FRAME1" library="frames" deviceset="TABL_L" device="" value=" "/>
 <part name="V10" library="supply2" deviceset="VCC" device=""/>
 <part name="V1" library="supply2" deviceset="VCC" device=""/>
 <part name="V9" library="supply2" deviceset="VCC" device=""/>
@@ -13340,8 +13340,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <sheet>
 <plain>
 <text x="7.62" y="73.66" size="1.778" layer="94">Unused gates:</text>
-<text x="10.16" y="68.58" size="1.778" layer="94">E12A, E12B, E12C</text>
-<text x="10.16" y="71.12" size="1.778" layer="94">E8A</text>
+<text x="10.16" y="68.58" size="1.778" layer="94">E14A, E14B, E14D</text>
+<text x="10.16" y="71.12" size="1.778" layer="94">E9A, E9D</text>
 <text x="317.5" y="7.62" size="2.54" layer="94">D-CS-M8830-0-1</text>
 <text x="317.5" y="27.94" size="2.54" layer="94">Real Time Clock (Crystal)</text>
 <text x="393.7" y="7.62" size="2.54" layer="94">C</text>
@@ -14979,8 +14979,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <approved hash="202,1,208.28,238.76,E16,PRE,,,,"/>
 <approved hash="202,1,241.3,213.36,E17,CLR,,,,"/>
 <approved hash="202,1,241.3,238.76,E17,PRE,,,,"/>
-<approved hash="113,1,160.02,21.971,EDGE,,,,,"/>
-<approved hash="113,1,200.508,133.198,FRAME1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
