@@ -7,10 +7,6 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="C:/Users/Vince/Documents/Eagle/lbr/atmel-cpld.lbr"
-UsedLibrary="C:/Users/Vince/Documents/Eagle/lbr/dec-con.lbr"
-UsedLibrary="C:/Users/Vince/Documents/Eagle/lbr/dec-m.lbr"
-UsedLibrary="C:/Users/Vince/Documents/Eagle/lbr/rack.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/41xx.lbr"
@@ -438,18 +434,18 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=94
+Layer=91
 Views=" 1: -8.29656 -5.80736 396.709 269.759"
 Sheet=1
 
 [Win_3]
 Type="Control Panel"
-Loc="656 387 1255 786"
+Loc="656 325 1255 724"
 State=1
 Number=0
 
 [Desktop]
-Screen="1920 1200"
+Screen="1920 1080"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"

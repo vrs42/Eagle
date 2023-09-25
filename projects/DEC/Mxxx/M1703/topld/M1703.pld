@@ -9,7 +9,7 @@ Designer  ;
 Company   ;
 Assembly None ;
 Location E1 ;
-Device   f1508isptqfp100;
+Device   f1508ispplcc84;
 
 $DEFINE OPTIMIZE
 

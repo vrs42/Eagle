@@ -8441,6 +8441,13 @@ DIN A3, landscape with extra doc field</description>
 <text x="304.8" y="7.62" size="2.54" layer="94">B-CS-M1703-0-1</text>
 <text x="304.8" y="27.94" size="2.54" layer="94">Omnibus Input Interface</text>
 <text x="381" y="7.62" size="2.54" layer="94">D</text>
+<text x="124.46" y="106.68" size="1.778" layer="94" rot="R90">*</text>
+<text x="124.46" y="83.82" size="1.778" layer="94" rot="R90">*</text>
+<text x="124.46" y="68.58" size="1.778" layer="94" rot="R90">*</text>
+<text x="124.46" y="144.78" size="1.778" layer="94" rot="R90">*</text>
+<text x="124.46" y="129.54" size="1.778" layer="94" rot="R90">*</text>
+<text x="124.46" y="121.92" size="1.778" layer="94" rot="R90">*</text>
+<text x="119.38" y="60.96" size="1.778" layer="94">614x Default</text>
 </plain>
 <instances>
 <instance part="V1" gate="G$1" x="10.16" y="30.48"/>
@@ -9366,7 +9373,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="E10" gate="A" pin="D"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="MD07OK" class="0">
 <segment>
 <wire x1="152.4" y1="104.14" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="104.14" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
@@ -9378,7 +9385,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="W10" gate="1" pin="2"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="MD05OK" class="0">
 <segment>
 <wire x1="132.08" y1="111.76" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="E6" gate="A" pin="I4"/>
@@ -9389,7 +9396,7 @@ DIN A3, landscape with extra doc field</description>
 <junction x="132.08" y="111.76"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="MD03OK" class="0">
 <segment>
 <wire x1="132.08" y1="142.24" x2="132.08" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="149.86" x2="132.08" y2="149.86" width="0.1524" layer="91"/>
@@ -9401,7 +9408,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="W1" gate="1" pin="2"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="MD06OK" class="0">
 <segment>
 <wire x1="132.08" y1="96.52" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
@@ -9413,7 +9420,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="W7" gate="1" pin="2"/>
 </segment>
 </net>
-<net name="N$42" class="0">
+<net name="MD040OK" class="0">
 <segment>
 <wire x1="132.08" y1="134.62" x2="132.08" y2="127" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="134.62" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
@@ -9425,7 +9432,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="E6" gate="A" pin="I3"/>
 </segment>
 </net>
-<net name="N$45" class="0">
+<net name="MD08OK" class="0">
 <segment>
 <wire x1="132.08" y1="73.66" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="73.66" x2="132.08" y2="73.66" width="0.1524" layer="91"/>
