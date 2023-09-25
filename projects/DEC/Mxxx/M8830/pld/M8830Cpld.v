@@ -22,31 +22,31 @@ input tp1;
 input tp3;
 
 reg gdollar_6_m;
-reg gdollar_7_m;
 reg hz204800_m;
+reg hz409600_m;
 reg irq_enable_m;
-reg n_t_5x_m;
+reg n_t_1x_m;
 reg ticked_m;
 
 reg hz50;
 reg gdollar_0;
 reg gdollar_1;
-reg n_t_2x;
+reg hz100;
 reg ck_flag;
 reg ticked;
 reg irq_enable;
 reg hz800;
 reg gdollar_2;
 reg gdollar_3;
-reg n_t_3x;
+reg hz1600;
 reg hz12800;
 reg gdollar_4;
 reg gdollar_5;
-reg n_t_4x;
+reg hz25600;
 reg hz204800;
+reg n_t_1x;
 reg gdollar_6;
-reg gdollar_7;
-reg n_t_5x;
+reg hz409600;
 // internal nodes 
 wire cldi;
 wire clie;
@@ -103,8 +103,8 @@ assign maybecldi_l = ~(mymd10 & ~mymd11);
 assign maybe_clei_l = ~(~mymd10 & mymd11);
 assign maybe_clsk_l = ~(mymd10 & mymd11);
 // e4: sn7493 
-always @(negedge n_t_2x)
-  if (~n_t_2x) begin
+always @(negedge hz100)
+  if (~hz100) begin
     hz50 <= ~hz50;
   end
 always @(negedge hz800)
@@ -117,7 +117,7 @@ always @(negedge gdollar_0)
   end
 always @(negedge gdollar_1)
   if (~gdollar_1) begin
-    n_t_2x <= ~n_t_2x;
+    hz100 <= ~hz100;
   end
 // e5: sp314n 
 assign myiot = ~(iopmd03
@@ -142,7 +142,6 @@ always @(posedge tp1)
 // int_rqst_l = !(ck_flag & irq_enable); 
 // skip_l = !(!io6133_l & ck_flag); 
 // e9: sn7400 
-assign n_t_6x = ~(n_t_5x & hz204800);
 assign io6133_l = ~(myiot & clsk);
 // e10: sn7474 
 always @(hz50, do_clsk_l, 1'b1)
@@ -180,8 +179,8 @@ always @(init, io6132_l, io6131_l, irq_enable_m)
     irq_enable <= irq_enable_m;
   end
 // e11: sn7493 
-always @(negedge n_t_3x)
-  if (~n_t_3x) begin
+always @(negedge hz1600)
+  if (~hz1600) begin
     hz800 <= ~hz800;
   end
 always @(negedge hz12800)
@@ -194,7 +193,7 @@ always @(negedge gdollar_2)
   end
 always @(negedge gdollar_3)
   if (~gdollar_3) begin
-    n_t_3x <= ~n_t_3x;
+    hz1600 <= ~hz1600;
   end
 // e12: sp380n 
 // e13: sp380n 
@@ -205,8 +204,8 @@ assign mymd11 = ~(~myiot
 assign mymd10 = ~(~myiot
                    | md10_l);
 // e14: sn7493 
-always @(negedge n_t_4x)
-  if (~n_t_4x) begin
+always @(negedge hz25600)
+  if (~hz25600) begin
     hz12800 <= ~hz12800;
   end
 always @(negedge hz204800)
@@ -219,65 +218,67 @@ always @(negedge gdollar_4)
   end
 always @(negedge gdollar_5)
   if (~gdollar_5) begin
-    n_t_4x <= ~n_t_4x;
+    hz25600 <= ~hz25600;
   end
 // e15: sn7493 
-always @(n_t_5x, n_t_6x, hz204800)
+always @(hz409600, n_t_6x, hz204800)
   if (n_t_6x) begin
     hz204800_m <= 1'b0;
   end else
-  if (~(~n_t_5x)) begin
+  if (~(~hz409600)) begin
     hz204800_m <= ~hz204800;
   end
-always @(n_t_5x, n_t_6x, hz204800_m)
+always @(hz409600, n_t_6x, hz204800_m)
   if (n_t_6x) begin
     hz204800 <= 1'b0;
   end else
-  if (~n_t_5x) begin
+  if (~hz409600) begin
     hz204800 <= hz204800_m;
   end
-always @(hz1843200, n_t_6x, gdollar_6)
+always @(hz1843200, n_t_6x, n_t_1x)
+  if (n_t_6x) begin
+    n_t_1x_m <= 1'b0;
+  end else
+  if (~(~hz1843200)) begin
+    n_t_1x_m <= ~n_t_1x;
+  end
+always @(hz1843200, n_t_6x, n_t_1x_m)
+  if (n_t_6x) begin
+    n_t_1x <= 1'b0;
+  end else
+  if (~hz1843200) begin
+    n_t_1x <= n_t_1x_m;
+  end
+always @(n_t_1x, n_t_6x, gdollar_6)
   if (n_t_6x) begin
     gdollar_6_m <= 1'b0;
   end else
-  if (~(~hz1843200)) begin
+  if (~(~n_t_1x)) begin
     gdollar_6_m <= ~gdollar_6;
   end
-always @(hz1843200, n_t_6x, gdollar_6_m)
+always @(n_t_1x, n_t_6x, gdollar_6_m)
   if (n_t_6x) begin
     gdollar_6 <= 1'b0;
   end else
-  if (~hz1843200) begin
+  if (~n_t_1x) begin
     gdollar_6 <= gdollar_6_m;
   end
-always @(gdollar_6, n_t_6x, gdollar_7)
+always @(gdollar_6, n_t_6x, hz409600)
   if (n_t_6x) begin
-    gdollar_7_m <= 1'b0;
+    hz409600_m <= 1'b0;
   end else
   if (~(~gdollar_6)) begin
-    gdollar_7_m <= ~gdollar_7;
+    hz409600_m <= ~hz409600;
   end
-always @(gdollar_6, n_t_6x, gdollar_7_m)
+always @(gdollar_6, n_t_6x, hz409600_m)
   if (n_t_6x) begin
-    gdollar_7 <= 1'b0;
+    hz409600 <= 1'b0;
   end else
   if (~gdollar_6) begin
-    gdollar_7 <= gdollar_7_m;
+    hz409600 <= hz409600_m;
   end
-always @(gdollar_7, n_t_6x, n_t_5x)
-  if (n_t_6x) begin
-    n_t_5x_m <= 1'b0;
-  end else
-  if (~(~gdollar_7)) begin
-    n_t_5x_m <= ~n_t_5x;
-  end
-always @(gdollar_7, n_t_6x, n_t_5x_m)
-  if (n_t_6x) begin
-    n_t_5x <= 1'b0;
-  end else
-  if (~gdollar_7) begin
-    n_t_5x <= n_t_5x_m;
-  end
+// e16: sn7408 
+assign n_t_6x = (n_t_1x & hz204800);
 // r1: r_us_ 
 // r7: r_us_ 
 // open collector 'wire-or's 

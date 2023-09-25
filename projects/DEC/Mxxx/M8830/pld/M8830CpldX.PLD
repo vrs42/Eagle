@@ -38,22 +38,22 @@ pin = tp3;
 node hz50;
 node gdollar_0;
 node gdollar_1;
-node n_t_2x;
+node hz100;
 node ck_flag;
 node ticked;
 node irq_enable;
 node hz800;
 node gdollar_2;
 node gdollar_3;
-node n_t_3x;
+node hz1600;
 node hz12800;
 node gdollar_4;
 node gdollar_5;
-node n_t_4x;
+node hz25600;
 node hz204800;
+node n_t_1x;
 node gdollar_6;
-node gdollar_7;
-node n_t_5x;
+node hz409600;
 
 /* Internal nodes */
 $IFNDEF OPTIMIZE
@@ -135,7 +135,7 @@ maybe_clei_l = !(!mymd10 & mymd11);
 maybe_clsk_l = !(mymd10 & mymd11);
 
 /* e4: sn7493 */
-hz50.ck = !n_t_2x;
+hz50.ck = !hz100;
 hz50.t = 'b'1;
 hz50.ar = 'b'0;
 gdollar_0.ck = !hz800;
@@ -144,9 +144,9 @@ gdollar_0.ar = 'b'0;
 gdollar_1.ck = !gdollar_0;
 gdollar_1.t = 'b'1;
 gdollar_1.ar = 'b'0;
-n_t_2x.ck = !gdollar_1;
-n_t_2x.t = 'b'1;
-n_t_2x.ar = 'b'0;
+hz100.ck = !gdollar_1;
+hz100.t = 'b'1;
+hz100.ar = 'b'0;
 
 /* e5: sp314n */
 !myiot = iopmd03
@@ -175,7 +175,6 @@ ck_flag.ap = 'b'0;
 /* skip_l = !(!io6133_l & ck_flag); */
 
 /* e9: sn7400 */
-n_t_6x = !(n_t_5x & hz204800);
 io6133_l = !(myiot & clsk);
 
 /* e10: sn7474 */
@@ -189,7 +188,7 @@ irq_enable.ck = !init;
 irq_enable.ap = !io6131_l;
 
 /* e11: sn7493 */
-hz800.ck = !n_t_3x;
+hz800.ck = !hz1600;
 hz800.t = 'b'1;
 hz800.ar = 'b'0;
 gdollar_2.ck = !hz12800;
@@ -198,9 +197,9 @@ gdollar_2.ar = 'b'0;
 gdollar_3.ck = !gdollar_2;
 gdollar_3.t = 'b'1;
 gdollar_3.ar = 'b'0;
-n_t_3x.ck = !gdollar_3;
-n_t_3x.t = 'b'1;
-n_t_3x.ar = 'b'0;
+hz1600.ck = !gdollar_3;
+hz1600.t = 'b'1;
+hz1600.ar = 'b'0;
 
 /* e12: sp380n */
 
@@ -213,7 +212,7 @@ n_t_3x.ar = 'b'0;
         # md10_l;
 
 /* e14: sn7493 */
-hz12800.ck = !n_t_4x;
+hz12800.ck = !hz25600;
 hz12800.t = 'b'1;
 hz12800.ar = 'b'0;
 gdollar_4.ck = !hz204800;
@@ -222,23 +221,26 @@ gdollar_4.ar = 'b'0;
 gdollar_5.ck = !gdollar_4;
 gdollar_5.t = 'b'1;
 gdollar_5.ar = 'b'0;
-n_t_4x.ck = !gdollar_5;
-n_t_4x.t = 'b'1;
-n_t_4x.ar = 'b'0;
+hz25600.ck = !gdollar_5;
+hz25600.t = 'b'1;
+hz25600.ar = 'b'0;
 
 /* e15: sn7493 */
-hz204800.ck = !n_t_5x;
+hz204800.ck = !hz409600;
 hz204800.t = 'b'1;
 hz204800.ar = n_t_6x;
-gdollar_6.ck = !hz1843200;
+n_t_1x.ck = !hz1843200;
+n_t_1x.t = 'b'1;
+n_t_1x.ar = n_t_6x;
+gdollar_6.ck = !n_t_1x;
 gdollar_6.t = 'b'1;
 gdollar_6.ar = n_t_6x;
-gdollar_7.ck = !gdollar_6;
-gdollar_7.t = 'b'1;
-gdollar_7.ar = n_t_6x;
-n_t_5x.ck = !gdollar_7;
-n_t_5x.t = 'b'1;
-n_t_5x.ar = n_t_6x;
+hz409600.ck = !gdollar_6;
+hz409600.t = 'b'1;
+hz409600.ar = n_t_6x;
+
+/* e16: sn7408 */
+n_t_6x = (n_t_1x & hz204800);
 
 /* r1: r_us_ */
 

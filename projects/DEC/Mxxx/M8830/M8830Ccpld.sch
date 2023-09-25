@@ -2309,6 +2309,17 @@
 <pin name="QA" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
 <pin name="CKA" x="-12.7" y="5.08" length="middle" direction="in" function="clk"/>
 </symbol>
+<symbol name="7408">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
+<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
+<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="74*00" prefix="IC">
@@ -2686,6 +2697,90 @@
 </connects>
 <technologies>
 <technology name="LS"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74*08" prefix="IC">
+<description>Quad 2-input &lt;b&gt;AND&lt;/b&gt; gate</description>
+<gates>
+<gate name="A" symbol="7408" x="20.32" y="0" swaplevel="1"/>
+<gate name="B" symbol="7408" x="20.32" y="-12.7" swaplevel="1"/>
+<gate name="C" symbol="7408" x="50.8" y="0" swaplevel="1"/>
+<gate name="D" symbol="7408" x="50.8" y="-12.7" swaplevel="1"/>
+<gate name="P" symbol="PWRN" x="2.54" y="-7.62" addlevel="request"/>
+</gates>
+<devices>
+<device name="N" package="DIL14">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="3"/>
+<connect gate="B" pin="I0" pad="4"/>
+<connect gate="B" pin="I1" pad="5"/>
+<connect gate="B" pin="O" pad="6"/>
+<connect gate="C" pin="I0" pad="9"/>
+<connect gate="C" pin="I1" pad="10"/>
+<connect gate="C" pin="O" pad="8"/>
+<connect gate="D" pin="I0" pad="12"/>
+<connect gate="D" pin="I1" pad="13"/>
+<connect gate="D" pin="O" pad="11"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="LS"/>
+<technology name="S"/>
+</technologies>
+</device>
+<device name="D" package="SO14">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="3"/>
+<connect gate="B" pin="I0" pad="4"/>
+<connect gate="B" pin="I1" pad="5"/>
+<connect gate="B" pin="O" pad="6"/>
+<connect gate="C" pin="I0" pad="9"/>
+<connect gate="C" pin="I1" pad="10"/>
+<connect gate="C" pin="O" pad="8"/>
+<connect gate="D" pin="I0" pad="12"/>
+<connect gate="D" pin="I1" pad="13"/>
+<connect gate="D" pin="O" pad="11"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="LS"/>
+<technology name="S"/>
+</technologies>
+</device>
+<device name="FK" package="LCC20">
+<connects>
+<connect gate="A" pin="I0" pad="2"/>
+<connect gate="A" pin="I1" pad="3"/>
+<connect gate="A" pin="O" pad="4"/>
+<connect gate="B" pin="I0" pad="6"/>
+<connect gate="B" pin="I1" pad="8"/>
+<connect gate="B" pin="O" pad="9"/>
+<connect gate="C" pin="I0" pad="13"/>
+<connect gate="C" pin="I1" pad="14"/>
+<connect gate="C" pin="O" pad="12"/>
+<connect gate="D" pin="I0" pad="18"/>
+<connect gate="D" pin="I1" pad="19"/>
+<connect gate="D" pin="O" pad="16"/>
+<connect gate="P" pin="GND" pad="10"/>
+<connect gate="P" pin="VCC" pad="20"/>
+</connects>
+<technologies>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="LS"/>
+<technology name="S"/>
 </technologies>
 </device>
 </devices>
@@ -7655,6 +7750,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="E14" library="74xx-us" deviceset="74*93" device="N" technology="LS"/>
 <part name="E11" library="74xx-us" deviceset="74*93" device="N" technology="LS"/>
 <part name="E4" library="74xx-us" deviceset="74*93" device="N" technology="LS"/>
+<part name="E16" library="74xx-us" deviceset="74*08" device="N" technology="LS"/>
 </parts>
 <sheets>
 <sheet>
@@ -7792,10 +7888,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="V22" gate="G$1" x="167.64" y="233.68"/>
 <instance part="V23" gate="GND" x="167.64" y="218.44"/>
 <instance part="E15" gate="A" x="226.06" y="223.52"/>
-<instance part="E9" gate="A" x="226.06" y="203.2" rot="MR0"/>
 <instance part="E14" gate="A" x="266.7" y="223.52"/>
 <instance part="E11" gate="A" x="302.26" y="223.52"/>
 <instance part="E4" gate="A" x="337.82" y="223.52"/>
+<instance part="E16" gate="A" x="226.06" y="203.2" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -8652,20 +8748,20 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="HZ204800" class="0">
 <segment>
-<wire x1="238.76" y1="228.6" x2="243.84" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="228.6" x2="251.46" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="228.6" x2="246.38" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="228.6" x2="251.46" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="228.6" x2="251.46" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="226.06" x2="254" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="E15" gate="A" pin="QA"/>
-<pinref part="E9" gate="A" pin="I1"/>
-<wire x1="238.76" y1="200.66" x2="243.84" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="200.66" x2="243.84" y2="228.6" width="0.1524" layer="91"/>
-<junction x="243.84" y="228.6"/>
+<wire x1="238.76" y1="200.66" x2="246.38" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="200.66" x2="246.38" y2="228.6" width="0.1524" layer="91"/>
+<junction x="246.38" y="228.6"/>
 <wire x1="251.46" y1="228.6" x2="251.46" y2="238.76" width="0.1524" layer="91"/>
 <junction x="251.46" y="228.6"/>
 <wire x1="251.46" y1="238.76" x2="266.7" y2="238.76" width="0.1524" layer="91"/>
 <label x="254" y="238.76" size="1.778" layer="95"/>
 <pinref part="E14" gate="A" pin="CKB"/>
+<pinref part="E16" gate="A" pin="I1"/>
 </segment>
 </net>
 <net name="HZ12800" class="0">
@@ -8681,7 +8777,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="E11" gate="A" pin="CKB"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="HZ100" class="0">
 <segment>
 <wire x1="350.52" y1="220.98" x2="353.06" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="220.98" x2="353.06" y2="236.22" width="0.1524" layer="91"/>
@@ -8689,9 +8785,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="325.12" y1="236.22" x2="325.12" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="E4" gate="A" pin="QD"/>
 <pinref part="E4" gate="A" pin="CKA"/>
+<label x="345.44" y="236.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="HZ1600" class="0">
 <segment>
 <wire x1="314.96" y1="220.98" x2="317.5" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="220.98" x2="317.5" y2="236.22" width="0.1524" layer="91"/>
@@ -8699,9 +8796,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="289.56" y1="236.22" x2="289.56" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="E11" gate="A" pin="QD"/>
 <pinref part="E11" gate="A" pin="CKA"/>
+<label x="307.34" y="236.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="HZ25600" class="0">
 <segment>
 <wire x1="279.4" y1="220.98" x2="281.94" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="220.98" x2="281.94" y2="236.22" width="0.1524" layer="91"/>
@@ -8709,20 +8807,18 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="254" y1="236.22" x2="254" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="E14" gate="A" pin="QD"/>
 <pinref part="E14" gate="A" pin="CKA"/>
+<label x="271.78" y="236.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="HZ409600" class="0">
 <segment>
 <wire x1="213.36" y1="228.6" x2="213.36" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="236.22" x2="241.3" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="236.22" x2="241.3" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="220.98" x2="238.76" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="236.22" x2="243.84" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="236.22" x2="243.84" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="220.98" x2="238.76" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="E15" gate="A" pin="QD"/>
 <pinref part="E15" gate="A" pin="CKA"/>
-<pinref part="E9" gate="A" pin="I0"/>
-<wire x1="238.76" y1="205.74" x2="241.3" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="205.74" x2="241.3" y2="220.98" width="0.1524" layer="91"/>
-<junction x="241.3" y="220.98"/>
+<label x="228.6" y="236.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HZ1843200" class="0">
@@ -8743,9 +8839,9 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="213.36" y1="220.98" x2="210.82" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="220.98" x2="210.82" y2="218.44" width="0.1524" layer="91"/>
 <junction x="210.82" y="218.44"/>
-<pinref part="E9" gate="A" pin="O"/>
 <wire x1="213.36" y1="203.2" x2="210.82" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="203.2" x2="210.82" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="E16" gate="A" pin="O"/>
 </segment>
 </net>
 <net name="HZ800" class="0">
@@ -8761,14 +8857,31 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="E4" gate="A" pin="CKB"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<wire x1="238.76" y1="205.74" x2="241.3" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="E16" gate="A" pin="I0"/>
+<wire x1="241.3" y1="205.74" x2="241.3" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="E15" gate="A" pin="QB"/>
+<wire x1="241.3" y1="226.06" x2="238.76" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="114,1,236.22,53.2765,E9,A,I0,,,"/>
+<approved hash="114,1,236.22,53.2765,E9,A,I1,,,"/>
 <approved hash="114,1,320.04,139.637,E7,B,CLR,,,"/>
 <approved hash="114,1,320.04,139.637,E7,B,D,,,"/>
 <approved hash="114,1,320.04,139.637,E7,B,CLK,,,"/>
 <approved hash="114,1,320.04,139.637,E7,B,PRE,,,"/>
+<approved hash="114,1,226.06,203.137,E16,B,I0,,,"/>
+<approved hash="114,1,226.06,203.137,E16,B,I1,,,"/>
+<approved hash="114,1,226.06,203.137,E16,C,I0,,,"/>
+<approved hash="114,1,226.06,203.137,E16,C,I1,,,"/>
+<approved hash="114,1,226.06,203.137,E16,D,I0,,,"/>
+<approved hash="114,1,226.06,203.137,E16,D,I1,,,"/>
 <approved hash="206,1,193.04,226.06,HZ1843200,,,,,"/>
 <approved hash="206,1,193.04,226.06,HZ1843200,,,,,"/>
 <approved hash="112,1,170.18,220.98,,,,,,"/>

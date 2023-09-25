@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from M8830Ccpld.sch at 9/24/2023 1:47:43 PM
+Exported from M8830Ccpld.sch at 9/24/2023 10:45:07 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -106,9 +106,9 @@ E4       1        CKB        in       HZ800
          8        QC         out               *** unconnected ***
          9        QB         out               *** unconnected ***
          10       GND        pwr      GND
-         11       QD         out      N$2
+         11       QD         out      HZ100
          12       QA         out      HZ50
-         14       CKA        in       N$2
+         14       CKA        in       HZ100
 
 E5       1        GND        pwr      GND
          3        O          out      MYIOT
@@ -166,9 +166,9 @@ E8       1        O          oc       !BIOPAUSE
          13       O          oc       !SKIP
          14       VCC        pwr      VCC
 
-E9       1        I0         in       N$5
-         2        I1         in       HZ204800
-         3        O          out      N$6
+E9       1        I0         in                ***   unused    ***
+         2        I1         in                ***   unused    ***
+         3        O          out               ***   unused    ***
          4        I0         in       !IO6133
          5        I1         in       !IO6133
          6        O          out      IO6133
@@ -203,9 +203,9 @@ E11      1        CKB        in       HZ12800
          8        QC         out               *** unconnected ***
          9        QB         out               *** unconnected ***
          10       GND        pwr      GND
-         11       QD         out      N$3
+         11       QD         out      HZ1600
          12       QA         out      HZ800
-         14       CKA        in       N$3
+         14       CKA        in       HZ1600
 
 E12      1        GND        pwr      GND
          2        O          out      !TP1
@@ -244,20 +244,35 @@ E14      1        CKB        in       HZ204800
          8        QC         out               *** unconnected ***
          9        QB         out               *** unconnected ***
          10       GND        pwr      GND
-         11       QD         out      N$4
+         11       QD         out      HZ25600
          12       QA         out      HZ12800
-         14       CKA        in       N$4
+         14       CKA        in       HZ25600
 
 E15      1        CKB        in       HZ1843200
          2        R0(1)      in       N$6
          3        R0(2)      in       N$6
          5        VCC        pwr      VCC
          8        QC         out               *** unconnected ***
-         9        QB         out               *** unconnected ***
+         9        QB         out      N$1
          10       GND        pwr      GND
-         11       QD         out      N$5
+         11       QD         out      HZ409600
          12       QA         out      HZ204800
-         14       CKA        in       N$5
+         14       CKA        in       HZ409600
+
+E16      1        I0         in       N$1
+         2        I1         in       HZ204800
+         3        O          out      N$6
+         4        I0         in                ***   unused    ***
+         5        I1         in                ***   unused    ***
+         6        O          out               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out               ***   unused    ***
+         9        I0         in                ***   unused    ***
+         10       I1         in                ***   unused    ***
+         11       O          out               ***   unused    ***
+         12       I0         in                ***   unused    ***
+         13       I1         in                ***   unused    ***
+         14       VCC        pwr      VCC
 
 EDGE     AA1      1          io                ***   unused    ***
          AA2      1          io       VCC
