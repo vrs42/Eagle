@@ -1,0 +1,420 @@
+Pinlist
+
+Exported from M8830Ccpld.sch at 9/24/2023 1:47:43 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C1       1        1          pas      VCC
+         2        2          pas      GND
+
+C2       1        1          pas      VCC
+         2        2          pas      GND
+
+C3       1        1          pas      VCC
+         2        2          pas      GND
+
+C4       1        1          pas      VCC
+         2        2          pas      GND
+
+C5       1        1          pas      VCC
+         2        2          pas      GND
+
+C6       1        1          pas      VCC
+         2        2          pas      GND
+
+C7       1        1          pas      VCC
+         2        2          pas      GND
+
+C8       1        1          pas      VCC
+         2        2          pas      GND
+
+C9       1        1          pas      VCC
+         2        2          pas      GND
+
+C10      1        1          pas      VCC
+         2        2          pas      GND
+
+C11      1        1          pas      VCC
+         2        2          pas      GND
+
+C12      1        1          pas      VCC
+         2        2          pas      GND
+
+C13      1        1          pas      VCC
+         2        2          pas      GND
+
+C14      1        1          pas      VCC
+         2        2          pas      GND
+
+C15      1        1          pas      VCC
+         2        2          pas      GND
+
+C16      1        1          pas      VCC
+         2        2          pas      GND
+
+E1       1        GND        pwr      GND
+         2        O          out      IOPMD04
+         3        O          out      IOPMD06
+         4        I0         in       !BIOPAUSE
+         5        I1         in       !MD06
+         6        I0         in       !MD04
+         7        I1         in       !BIOPAUSE
+         8        VCC        pwr      VCC
+         9        I0         in       !MD03
+         10       I1         in       !BIOPAUSE
+         11       I0         in       !IO_PAUSE
+         12       I1         in       GND
+         13       O          out      IO_PAUSE
+         14       O          out      IOPMD03
+
+E2       1        O          out      CLDI
+         2        I0         in       !MAYBECLDI
+         3        I1         in       MYMD09
+         4        O          out      CLIE
+         5        I0         in       !MAYBE_CLEI
+         6        I1         in       MYMD09
+         7        GND        pwr      GND
+         8        I0         in       MYMD09
+         9        I1         in       !MAYBE_CLSK
+         10       O          out      CLSK
+         11       I0         in       MYMD11
+         12       I1         in       MYMD11
+         13       O          out      !MYMD11
+         14       VCC        pwr      VCC
+
+E3       1        I0         in       !TP1
+         2        I1         in       !TP1
+         3        O          out      BTP1
+         4        I0         in       MYMD10
+         5        I1         in       !MYMD11
+         6        O          out      !MAYBECLDI
+         7        GND        pwr      GND
+         8        O          out      !MAYBE_CLEI
+         9        I0         in       !MYMD10
+         10       I1         in       MYMD11
+         11       O          out      !MAYBE_CLSK
+         12       I0         in       MYMD10
+         13       I1         in       MYMD11
+         14       VCC        pwr      VCC
+
+E4       1        CKB        in       HZ800
+         2        R0(1)      in       GND
+         3        R0(2)      in       GND
+         5        VCC        pwr      VCC
+         8        QC         out               *** unconnected ***
+         9        QB         out               *** unconnected ***
+         10       GND        pwr      GND
+         11       QD         out      N$2
+         12       QA         out      HZ50
+         14       CKA        in       N$2
+
+E5       1        GND        pwr      GND
+         3        O          out      MYIOT
+         4        I0         in       IOPMD03
+         5        I1         in       IOPMD04
+         6        I2         in       IOPMD06
+         8        VCC        pwr      VCC
+         9        I3         in       !MD05
+         10       I4         in       !MD07
+         11       I5         in       !MD08
+         12       I6         in       !BIOPAUSE
+
+E6       1        I0         in       BTP3
+         2        I1         in       MYIOT
+         3        I0         in       CK_FLAG
+         4        I1         in       BTP3
+         5        I2         in       IO6133
+         6        O          out      !DO_CLSK
+         7        GND        pwr      GND
+         8        O          out      !IO6131
+         9        I0         in       MYIOT
+         10       I1         in       BTP3
+         11       I2         in       CLIE
+         12       O          out      !IO6132
+         13       I2         in       CLDI
+         14       VCC        pwr      VCC
+
+E7       1        CLR        in       VCC
+         2        D          in       TICKED
+         3        CLK        in       BTP1
+         4        PRE        in       VCC
+         5        Q          out      CK_FLAG
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out               ***   unused    ***
+         9        Q          out               ***   unused    ***
+         10       PRE        in                ***   unused    ***
+         11       CLK        in                ***   unused    ***
+         12       D          in                ***   unused    ***
+         13       CLR        in                ***   unused    ***
+         14       VCC        pwr      VCC
+
+E8       1        O          oc       !BIOPAUSE
+         2        I0         in       IO_PAUSE
+         3        I1         in       IO_PAUSE
+         4        O          oc       !INTERNAL_IO
+         5        I0         in       MYIOT
+         6        I1         in       VCC
+         7        GND        pwr      GND
+         8        I0         in       CK_FLAG
+         9        I1         in       IRQ_ENABLE
+         10       O          oc       !INT_RQST
+         11       I0         in       IO6133
+         12       I1         in       CK_FLAG
+         13       O          oc       !SKIP
+         14       VCC        pwr      VCC
+
+E9       1        I0         in       N$5
+         2        I1         in       HZ204800
+         3        O          out      N$6
+         4        I0         in       !IO6133
+         5        I1         in       !IO6133
+         6        O          out      IO6133
+         7        GND        pwr      GND
+         8        O          out      !IO6133
+         9        I0         in       MYIOT
+         10       I1         in       CLSK
+         11       O          out      !MYMD10
+         12       I0         in       MYMD10
+         13       I1         in       MYMD10
+         14       VCC        pwr      VCC
+
+E10      1        CLR        in       !DO_CLSK
+         2        D          in       VCC
+         3        CLK        in       HZ50
+         4        PRE        in       VCC
+         5        Q          out      TICKED
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      IRQ_ENABLE
+         10       PRE        in       !IO6131
+         11       CLK        in       !INIT
+         12       D          in       GND
+         13       CLR        in       !IO6132
+         14       VCC        pwr      VCC
+
+E11      1        CKB        in       HZ12800
+         2        R0(1)      in       GND
+         3        R0(2)      in       GND
+         5        VCC        pwr      VCC
+         8        QC         out               *** unconnected ***
+         9        QB         out               *** unconnected ***
+         10       GND        pwr      GND
+         11       QD         out      N$3
+         12       QA         out      HZ800
+         14       CKA        in       N$3
+
+E12      1        GND        pwr      GND
+         2        O          out      !TP1
+         3        O          out      !TP3
+         4        I0         in       GND
+         5        I1         in       TP3
+         6        I0         in       GND
+         7        I1         in       TP1
+         8        VCC        pwr      VCC
+         9        I0         in       !TP3
+         10       I1         in       !TP3
+         11       I0         in       INIT
+         12       I1         in       INIT
+         13       O          out      !INIT
+         14       O          out      BTP3
+
+E13      1        GND        pwr      GND
+         2        O          out      MYMD11
+         3        O          out      MYMD09
+         4        I0         in       !MD09
+         5        I1         in       !MYIOT
+         6        I0         in       !MYIOT
+         7        I1         in       !MD11
+         8        VCC        pwr      VCC
+         9        I0         in       !MYIOT
+         10       I1         in       !MD10
+         11       I0         in       MYIOT
+         12       I1         in       GND
+         13       O          out      !MYIOT
+         14       O          out      MYMD10
+
+E14      1        CKB        in       HZ204800
+         2        R0(1)      in       GND
+         3        R0(2)      in       GND
+         5        VCC        pwr      VCC
+         8        QC         out               *** unconnected ***
+         9        QB         out               *** unconnected ***
+         10       GND        pwr      GND
+         11       QD         out      N$4
+         12       QA         out      HZ12800
+         14       CKA        in       N$4
+
+E15      1        CKB        in       HZ1843200
+         2        R0(1)      in       N$6
+         3        R0(2)      in       N$6
+         5        VCC        pwr      VCC
+         8        QC         out               *** unconnected ***
+         9        QB         out               *** unconnected ***
+         10       GND        pwr      GND
+         11       QD         out      N$5
+         12       QA         out      HZ204800
+         14       CKA        in       N$5
+
+EDGE     AA1      1          io                ***   unused    ***
+         AA2      1          io       VCC
+         AB1      1          io                ***   unused    ***
+         AB2      1          io                ***   unused    ***
+         AC1      1          io                ***   unused    ***
+         AC2      1          io       GND
+         AD1      1          io                ***   unused    ***
+         AD2      1          io                ***   unused    ***
+         AE1      1          io                ***   unused    ***
+         AE2      1          io                ***   unused    ***
+         AF1      1          io       GND
+         AF2      1          io       GND
+         AH1      1          io                ***   unused    ***
+         AH2      1          io                ***   unused    ***
+         AJ1      1          io                ***   unused    ***
+         AJ2      1          io                ***   unused    ***
+         AK1      1          io                ***   unused    ***
+         AK2      1          io                ***   unused    ***
+         AL1      1          io                ***   unused    ***
+         AL2      1          io                ***   unused    ***
+         AM1      1          io                ***   unused    ***
+         AM2      1          io                ***   unused    ***
+         AN1      1          io       GND
+         AN2      1          io       GND
+         AP1      1          io       !MD03
+         AP2      1          io                ***   unused    ***
+         AR1      1          io                ***   unused    ***
+         AR2      1          io                ***   unused    ***
+         AS1      1          io                ***   unused    ***
+         AS2      1          io                ***   unused    ***
+         AT1      1          io       GND
+         AT2      1          io       GND
+         AU1      1          io                ***   unused    ***
+         AU2      1          io                ***   unused    ***
+         AV1      1          io                ***   unused    ***
+         AV2      1          io                ***   unused    ***
+         BA1      1          io                ***   unused    ***
+         BA2      1          io       VCC
+         BB1      1          io                ***   unused    ***
+         BB2      1          io                ***   unused    ***
+         BC1      1          io       GND
+         BC2      1          io       GND
+         BD1      1          io                ***   unused    ***
+         BD2      1          io                ***   unused    ***
+         BE1      1          io                ***   unused    ***
+         BE2      1          io                ***   unused    ***
+         BF1      1          io       GND
+         BF2      1          io       GND
+         BH1      1          io                ***   unused    ***
+         BH2      1          io                ***   unused    ***
+         BJ1      1          io                ***   unused    ***
+         BJ2      1          io                ***   unused    ***
+         BK1      1          io       !MD04
+         BK2      1          io                ***   unused    ***
+         BL1      1          io       !MD05
+         BL2      1          io                ***   unused    ***
+         BM1      1          io       !MD06
+         BM2      1          io                ***   unused    ***
+         BN1      1          io       GND
+         BN2      1          io       GND
+         BP1      1          io       !MD07
+         BP2      1          io                ***   unused    ***
+         BR1      1          io                ***   unused    ***
+         BR2      1          io                ***   unused    ***
+         BS1      1          io                ***   unused    ***
+         BS2      1          io                ***   unused    ***
+         BT1      1          io       GND
+         BT2      1          io       GND
+         BU1      1          io                ***   unused    ***
+         BU2      1          io                ***   unused    ***
+         BV1      1          io                ***   unused    ***
+         BV2      1          io                ***   unused    ***
+         CA1      1          io                ***   unused    ***
+         CA2      1          io       VCC
+         CB1      1          io                ***   unused    ***
+         CB2      1          io                ***   unused    ***
+         CC1      1          io       GND
+         CC2      1          io       GND
+         CD1      1          io       !IO_PAUSE
+         CD2      1          io       TP1
+         CE1      1          io                ***   unused    ***
+         CE2      1          io                ***   unused    ***
+         CF1      1          io       GND
+         CF2      1          io       GND
+         CH1      1          io                ***   unused    ***
+         CH2      1          io       TP3
+         CJ1      1          io                ***   unused    ***
+         CJ2      1          io                ***   unused    ***
+         CK1      1          io                ***   unused    ***
+         CK2      1          io                ***   unused    ***
+         CL1      1          io       !INTERNAL_IO
+         CL2      1          io                ***   unused    ***
+         CM1      1          io                ***   unused    ***
+         CM2      1          io                ***   unused    ***
+         CN1      1          io       GND
+         CN2      1          io       GND
+         CP1      1          io       !INT_RQST
+         CP2      1          io                ***   unused    ***
+         CR1      1          io       INIT
+         CR2      1          io                ***   unused    ***
+         CS1      1          io       !SKIP
+         CS2      1          io                ***   unused    ***
+         CT1      1          io       GND
+         CT2      1          io       GND
+         CU1      1          io                ***   unused    ***
+         CU2      1          io                ***   unused    ***
+         CV1      1          io                ***   unused    ***
+         CV2      1          io                ***   unused    ***
+         DA1      1          io                ***   unused    ***
+         DA2      1          io                ***   unused    ***
+         DB1      1          io                ***   unused    ***
+         DB2      1          io                ***   unused    ***
+         DC1      1          io       GND
+         DC2      1          io       GND
+         DD1      1          io                ***   unused    ***
+         DD2      1          io                ***   unused    ***
+         DE1      1          io                ***   unused    ***
+         DE2      1          io                ***   unused    ***
+         DF1      1          io       GND
+         DF2      1          io       GND
+         DH1      1          io                ***   unused    ***
+         DH2      1          io                ***   unused    ***
+         DJ1      1          io                ***   unused    ***
+         DJ2      1          io                ***   unused    ***
+         DK1      1          io       !MD08
+         DK2      1          io                ***   unused    ***
+         DL1      1          io       !MD09
+         DL2      1          io                ***   unused    ***
+         DM1      1          io       !MD10
+         DM2      1          io                ***   unused    ***
+         DN1      1          io       GND
+         DN2      1          io       GND
+         DP1      1          io       !MD11
+         DP2      1          io                ***   unused    ***
+         DR1      1          io                ***   unused    ***
+         DR2      1          io                ***   unused    ***
+         DS1      1          io                ***   unused    ***
+         DS2      1          io                ***   unused    ***
+         DT1      1          io       GND
+         DT2      1          io       GND
+         DU1      1          io                ***   unused    ***
+         DU2      1          io                ***   unused    ***
+         DV1      1          io                ***   unused    ***
+         DV2      1          io                ***   unused    ***
+
+OSC      4        GND        pwr      GND
+         5        OUT        out      HZ1843200
+         8        VCC        pwr      VCC
+
+OSC1     7        GND        pwr      GND
+         8        OUT        out      HZ1843200
+         14       VCC        pwr      VCC
+
+R1       1        1          pas      VCC
+         2        2          pas      !BIOPAUSE
+
+R7       1        1          pas      MYIOT
+         2        2          pas      VCC
+
