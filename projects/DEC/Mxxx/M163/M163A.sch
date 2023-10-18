@@ -4366,8 +4366,8 @@ In this library the device names are the same as the pin names of the symbols, t
 </class>
 </classes>
 <parts>
-<part name="E1" library="dec-con" deviceset="DEC8251" device="" value="DEC9601"/>
-<part name="E2" library="dec-con" deviceset="DEC8251" device="" value="DEC9601"/>
+<part name="E1" library="dec-con" deviceset="DEC8251" device="" value="DEC9301"/>
+<part name="E2" library="dec-con" deviceset="DEC8251" device="" value="DEC9301"/>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>
 <part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value=".01uF"/>

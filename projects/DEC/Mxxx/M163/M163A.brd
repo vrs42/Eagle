@@ -6682,8 +6682,8 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="E1" library="dec-con" package="DIL16" value="DEC9601" x="34.29" y="25.4" rot="R180"/>
-<element name="E2" library="dec-con" package="DIL16" value="DEC9601" x="34.29" y="49.53" rot="R180"/>
+<element name="E1" library="dec-con" package="DIL16" value="DEC9301" x="34.29" y="25.4" rot="R180"/>
+<element name="E2" library="dec-con" package="DIL16" value="DEC9301" x="34.29" y="49.53" rot="R180"/>
 <element name="C1" library="rcl" package="C050-025X075" value=".01uF" x="50.8" y="24.13" rot="R90"/>
 <element name="C2" library="rcl" package="C050-025X075" value=".01uF" x="50.8" y="48.26" rot="R90"/>
 <element name="U$1" library="dec-con" package="SINGLE" value="OUTLINE-SINGLE" x="0" y="0"/>

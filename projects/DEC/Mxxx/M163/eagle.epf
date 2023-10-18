@@ -7,10 +7,6 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/atmel-cpld.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-con.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-m.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/rack.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/41xx.lbr"
@@ -350,7 +346,7 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zilog.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="365 462 1488 1085"
+Loc="365 408 1488 1031"
 State=1
 Number=2
 File="M163X.brd"
@@ -392,7 +388,7 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=1
+Layer=16
 
 [Win_2]
 Type="Schematic Editor"
@@ -439,16 +435,17 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
+Views=" 1: -5.50256 -4.23256 254.215 189.445"
 Sheet=1
 
 [Win_3]
 Type="Control Panel"
-Loc="656 387 1255 786"
+Loc="656 325 1255 724"
 State=1
 Number=0
 
 [Desktop]
-Screen="1920 1200"
+Screen="1920 1080"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"
