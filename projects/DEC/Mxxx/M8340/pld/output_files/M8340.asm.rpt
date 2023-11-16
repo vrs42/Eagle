@@ -1,5 +1,5 @@
 Assembler report for M8340
-Wed Oct 16 17:31:45 2019
+Fri Oct 18 11:51:10 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Oct 16 17:31:45 2019 ;
+; Assembler Status      ; Successful - Fri Oct 18 11:51:10 2019 ;
 ; Revision Name         ; M8340                                 ;
 ; Top-level Entity Name ; M8340                                 ;
 ; Family                ; MAX7000S                              ;
@@ -99,13 +99,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Oct 16 17:31:45 2019
+    Info: Processing started: Fri Oct 18 11:51:09 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off M8340X -c M8340
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4521 megabytes
-    Info: Processing ended: Wed Oct 16 17:31:45 2019
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4522 megabytes
+    Info: Processing ended: Fri Oct 18 11:51:10 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
