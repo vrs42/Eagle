@@ -12403,7 +12403,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="63.5" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PC_LOAD" class="0">
+<net name="!PC_LOAD" class="0">
 <segment>
 <wire x1="271.78" y1="137.16" x2="254" y2="137.16" width="0.1524" layer="91"/>
 <label x="256.54" y="137.16" size="1.778" layer="95"/>
