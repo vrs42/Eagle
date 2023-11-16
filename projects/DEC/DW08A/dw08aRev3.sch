@@ -1152,6 +1152,9 @@ DIN A3, landscape with extra doc field</description>
 <sheets>
 <sheet>
 <plain>
+<text x="304.8" y="27.94" size="2.54" layer="94">Negative Bus Converter DW08A</text>
+<text x="304.8" y="7.62" size="2.54" layer="94">D-BS-DW08-A-NC1</text>
+<text x="381" y="7.62" size="2.54" layer="94">B</text>
 </plain>
 <instances>
 <instance part="B07" gate="U1" x="220.98" y="187.96"/>
@@ -1930,6 +1933,9 @@ DIN A3, landscape with extra doc field</description>
 </sheet>
 <sheet>
 <plain>
+<text x="304.8" y="27.94" size="2.54" layer="94">Negative Bus Converter DW08A</text>
+<text x="304.8" y="7.62" size="2.54" layer="94">D-BS-DW08-A-NC2</text>
+<text x="381" y="7.62" size="2.54" layer="94">B</text>
 </plain>
 <instances>
 <instance part="A10" gate="D" x="43.18" y="248.92"/>
@@ -2412,6 +2418,9 @@ DIN A3, landscape with extra doc field</description>
 </sheet>
 <sheet>
 <plain>
+<text x="304.8" y="27.94" size="2.54" layer="94">Negative Bus Converter DW08A</text>
+<text x="304.8" y="7.62" size="2.54" layer="94">D-BS-DW08-A-PC1</text>
+<text x="381" y="7.62" size="2.54" layer="94">B</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -2813,6 +2822,9 @@ DIN A3, landscape with extra doc field</description>
 </sheet>
 <sheet>
 <plain>
+<text x="304.8" y="27.94" size="2.54" layer="94">Negative Bus Converter DW08A</text>
+<text x="304.8" y="7.62" size="2.54" layer="94">D-BS-DW08-A-PC2</text>
+<text x="381" y="7.62" size="2.54" layer="94">B</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -3216,6 +3228,8 @@ DIN A3, landscape with extra doc field</description>
 </sheet>
 <sheet>
 <plain>
+<text x="304.8" y="27.94" size="2.54" layer="94">Negative Bus Converter DW08A</text>
+<text x="304.8" y="7.62" size="2.54" layer="94">D-BS-DW08-A-NBI</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
@@ -3944,6 +3958,9 @@ DIN A3, landscape with extra doc field</description>
 <sheet>
 <plain>
 <text x="25.4" y="114.3" size="1.778" layer="91">Empty Slots:</text>
+<text x="304.8" y="27.94" size="2.54" layer="94">Negative Bus Converter DW08A</text>
+<text x="304.8" y="7.62" size="2.54" layer="94">D-BS-DW08-A-PS</text>
+<text x="381" y="7.62" size="2.54" layer="94">A</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
