@@ -10899,7 +10899,7 @@ Based on the following sources:
 <label x="17.78" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="!BTP1" class="0">
+<net name="BTP1" class="0">
 <segment>
 <pinref part="E30" gate="D" pin="O"/>
 <wire x1="66.04" y1="76.2" x2="76.2" y2="76.2" width="0.1524" layer="91"/>
