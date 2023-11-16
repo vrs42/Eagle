@@ -1961,7 +1961,7 @@
 <part name="B13" library="dec-m" deviceset="W021" device="S"/>
 <part name="B14" library="dec-m" deviceset="W021" device="S"/>
 <part name="B15" library="dec-m" deviceset="W021" device="S"/>
-<part name="D16" library="dec-m" deviceset="W021" device="S"/>
+<part name="B16" library="dec-m" deviceset="W021" device="S"/>
 <part name="B07" library="dec-m" deviceset="W021" device="S"/>
 <part name="B08" library="dec-m" deviceset="W021" device="S"/>
 <part name="B09" library="dec-m" deviceset="W021" device="S"/>
@@ -2676,12 +2676,12 @@
 <instance part="B15" gate="K" x="99.06" y="182.88"/>
 <instance part="B15" gate="M" x="99.06" y="177.8"/>
 <instance part="B15" gate="P" x="99.06" y="172.72"/>
-<instance part="D16" gate="D" x="132.08" y="198.12"/>
-<instance part="D16" gate="E" x="132.08" y="193.04"/>
-<instance part="D16" gate="H" x="132.08" y="187.96"/>
-<instance part="D16" gate="K" x="132.08" y="182.88"/>
-<instance part="D16" gate="M" x="132.08" y="177.8"/>
-<instance part="D16" gate="P" x="132.08" y="172.72"/>
+<instance part="B16" gate="D" x="132.08" y="198.12"/>
+<instance part="B16" gate="E" x="132.08" y="193.04"/>
+<instance part="B16" gate="H" x="132.08" y="187.96"/>
+<instance part="B16" gate="K" x="132.08" y="182.88"/>
+<instance part="B16" gate="M" x="132.08" y="177.8"/>
+<instance part="B16" gate="P" x="132.08" y="172.72"/>
 <instance part="B07" gate="D" x="238.76" y="254"/>
 <instance part="B07" gate="E" x="238.76" y="248.92"/>
 <instance part="B07" gate="H" x="238.76" y="243.84"/>
@@ -2991,7 +2991,7 @@
 <segment>
 <wire x1="137.16" y1="172.72" x2="144.78" y2="172.72" width="0.1524" layer="91"/>
 <label x="139.7" y="172.72" size="1.778" layer="95"/>
-<pinref part="D16" gate="P" pin="P$2"/>
+<pinref part="B16" gate="P" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="360.68" y1="228.6" x2="373.38" y2="228.6" width="0.1524" layer="91"/>
@@ -3008,7 +3008,7 @@
 <segment>
 <wire x1="137.16" y1="177.8" x2="144.78" y2="177.8" width="0.1524" layer="91"/>
 <label x="139.7" y="177.8" size="1.778" layer="95"/>
-<pinref part="D16" gate="M" pin="P$2"/>
+<pinref part="B16" gate="M" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="360.68" y1="233.68" x2="373.38" y2="233.68" width="0.1524" layer="91"/>
@@ -3025,7 +3025,7 @@
 <segment>
 <wire x1="137.16" y1="182.88" x2="144.78" y2="182.88" width="0.1524" layer="91"/>
 <label x="139.7" y="182.88" size="1.778" layer="95"/>
-<pinref part="D16" gate="K" pin="P$2"/>
+<pinref part="B16" gate="K" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="360.68" y1="238.76" x2="373.38" y2="238.76" width="0.1524" layer="91"/>
@@ -3520,21 +3520,21 @@
 <segment>
 <wire x1="144.78" y1="198.12" x2="137.16" y2="198.12" width="0.1524" layer="91"/>
 <label x="139.7" y="198.12" size="1.778" layer="95"/>
-<pinref part="D16" gate="D" pin="P$2"/>
+<pinref part="B16" gate="D" pin="P$2"/>
 </segment>
 </net>
 <net name="DAEX2-1" class="0">
 <segment>
 <wire x1="137.16" y1="193.04" x2="144.78" y2="193.04" width="0.1524" layer="91"/>
 <label x="139.7" y="193.04" size="1.778" layer="95"/>
-<pinref part="D16" gate="E" pin="P$2"/>
+<pinref part="B16" gate="E" pin="P$2"/>
 </segment>
 </net>
 <net name="DAEX3-1" class="0">
 <segment>
 <wire x1="137.16" y1="187.96" x2="144.78" y2="187.96" width="0.1524" layer="91"/>
 <label x="139.7" y="187.96" size="1.778" layer="95"/>
-<pinref part="D16" gate="H" pin="P$2"/>
+<pinref part="B16" gate="H" pin="P$2"/>
 </segment>
 </net>
 </nets>
