@@ -17212,7 +17212,7 @@ Mors, distributor Buerklin, 11G702</description>
 <part name="SUPPLY49" library="supply2" deviceset="+15V" device=""/>
 <part name="SUPPLY63" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY64" library="supply2" deviceset="+5V" device=""/>
-<part name="E4A" library="74xx-us" deviceset="74*122" device="N" technology="LS"/>
+<part name="E4" library="74xx-us" deviceset="74*122" device="N" technology="LS"/>
 <part name="E15" library="74xx-us" deviceset="74*122" device="N" technology="LS"/>
 </parts>
 <sheets>
@@ -17490,7 +17490,7 @@ Mors, distributor Buerklin, 11G702</description>
 <instance part="SUPPLY49" gate="+15V" x="205.74" y="210.82"/>
 <instance part="SUPPLY63" gate="GND" x="218.44" y="198.12"/>
 <instance part="SUPPLY64" gate="+5V" x="231.14" y="210.82"/>
-<instance part="E4A" gate="A" x="231.14" y="45.72"/>
+<instance part="E4" gate="A" x="231.14" y="45.72"/>
 <instance part="E15" gate="A" x="175.26" y="172.72"/>
 </instances>
 <busses>
@@ -18178,12 +18178,12 @@ Mors, distributor Buerklin, 11G702</description>
 <pinref part="SUPPLY58" gate="G$1" pin="VCC"/>
 <wire x1="215.9" y1="50.8" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="50.8" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="E4A" gate="A" pin="B1"/>
-<pinref part="E4A" gate="A" pin="CLR"/>
+<pinref part="E4" gate="A" pin="B1"/>
+<pinref part="E4" gate="A" pin="CLR"/>
 <wire x1="218.44" y1="35.56" x2="215.9" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="35.56" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
 <junction x="215.9" y="50.8"/>
-<pinref part="E4A" gate="A" pin="B2"/>
+<pinref part="E4" gate="A" pin="B2"/>
 <wire x1="215.9" y1="48.26" x2="215.9" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="48.26" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
 <junction x="215.9" y="48.26"/>
@@ -18420,7 +18420,7 @@ Mors, distributor Buerklin, 11G702</description>
 <segment>
 <label x="246.38" y="35.56" size="1.778" layer="95"/>
 <wire x1="259.08" y1="35.56" x2="243.84" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="E4A" gate="A" pin="!Q"/>
+<pinref part="E4" gate="A" pin="!Q"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="233.68" x2="76.2" y2="254" width="0.1524" layer="91"/>
@@ -18995,7 +18995,7 @@ Mors, distributor Buerklin, 11G702</description>
 <wire x1="213.36" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 <junction x="182.88" y="91.44"/>
 <pinref part="DELAY" gate="1" pin="P"/>
-<pinref part="E4A" gate="A" pin="R/C"/>
+<pinref part="E4" gate="A" pin="R/C"/>
 <wire x1="218.44" y1="38.1" x2="213.36" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -19025,7 +19025,7 @@ Mors, distributor Buerklin, 11G702</description>
 <junction x="210.82" y="63.5"/>
 <wire x1="218.44" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="63.5" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="E4A" gate="A" pin="C"/>
+<pinref part="E4" gate="A" pin="C"/>
 </segment>
 </net>
 <net name="!DLY_DONE" class="0">
@@ -19093,7 +19093,8 @@ Mors, distributor Buerklin, 11G702</description>
 <pinref part="E2" gate="B" pin="R/C"/>
 <wire x1="251.46" y1="76.2" x2="261.62" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="71.12" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="71.12" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="71.12" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
 <junction x="246.38" y="71.12"/>
 </segment>
 </net>
@@ -19511,7 +19512,7 @@ Mors, distributor Buerklin, 11G702</description>
 <segment>
 <wire x1="200.66" y1="55.88" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
 <label x="200.66" y="55.88" size="1.778" layer="95"/>
-<pinref part="E4A" gate="A" pin="A1"/>
+<pinref part="E4" gate="A" pin="A1"/>
 </segment>
 </net>
 <net name="!LOAD_Y" class="0">
@@ -19535,7 +19536,7 @@ Mors, distributor Buerklin, 11G702</description>
 <segment>
 <wire x1="218.44" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
 <label x="200.66" y="53.34" size="1.778" layer="95"/>
-<pinref part="E4A" gate="A" pin="A2"/>
+<pinref part="E4" gate="A" pin="A2"/>
 </segment>
 </net>
 <net name="DEL_1" class="0">

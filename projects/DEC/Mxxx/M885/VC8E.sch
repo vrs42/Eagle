@@ -19943,7 +19943,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="259.08" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="PAUSE_L" class="0">
 <segment>
 <pinref part="E11" gate="D" pin="I0"/>
 <wire x1="33.02" y1="246.38" x2="30.48" y2="246.38" width="0.1524" layer="91"/>
@@ -20031,7 +20031,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="OMNIBUS" gate="DK1" pin="1"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="IO3" class="0">
 <segment>
 <pinref part="E11" gate="D" pin="O"/>
 <wire x1="58.42" y1="248.92" x2="60.96" y2="248.92" width="0.1524" layer="91"/>
@@ -20040,7 +20040,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="60.96" y1="241.3" x2="76.2" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="IO4" class="0">
 <segment>
 <pinref part="E11" gate="C" pin="O"/>
 <wire x1="58.42" y1="233.68" x2="60.96" y2="233.68" width="0.1524" layer="91"/>
@@ -20049,14 +20049,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="60.96" y1="238.76" x2="76.2" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="MD5" class="0">
 <segment>
 <pinref part="E11" gate="A" pin="O"/>
 <pinref part="W1" gate="1" pin="1"/>
 <wire x1="60.96" y1="213.36" x2="58.42" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="IO5" class="0">
 <segment>
 <pinref part="W1" gate="1" pin="2"/>
 <pinref part="W2" gate="1" pin="2"/>
@@ -20067,7 +20067,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <junction x="60.96" y="223.52"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="IO7" class="0">
 <segment>
 <pinref part="E11" gate="B" pin="O"/>
 <wire x1="58.42" y1="193.04" x2="68.58" y2="193.04" width="0.1524" layer="91"/>
@@ -20717,7 +20717,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="340.36" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="DEL_1Z" class="0">
 <segment>
 <pinref part="E28" gate="B" pin="I"/>
 <pinref part="E27" gate="D" pin="O"/>
@@ -20729,7 +20729,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <junction x="355.6" y="96.52"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="!DEL_1Z" class="0">
 <segment>
 <pinref part="E28" gate="B" pin="O"/>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -21346,7 +21346,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="E10" gate="C" pin="I"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="GDELAY" class="0">
 <segment>
 <pinref part="E10" gate="C" pin="O"/>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -21533,14 +21533,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="294.64" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="DLY_DN" class="0">
 <segment>
 <pinref part="E3" gate="C" pin="O"/>
 <pinref part="E1" gate="A" pin="A"/>
 <wire x1="292.1" y1="160.02" x2="292.1" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="DDELAY" class="0">
 <segment>
 <pinref part="E1" gate="A" pin="Q"/>
 <pinref part="E3" gate="D" pin="I0"/>
@@ -21665,7 +21665,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="E4" gate="G$1" pin="!Q"/>
 </segment>
 </net>
-<net name="N$43" class="0">
+<net name="BCOLOR" class="0">
 <segment>
 <pinref part="E10" gate="E" pin="O"/>
 <pinref part="R8" gate="G$1" pin="1"/>

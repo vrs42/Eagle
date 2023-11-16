@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from VC8E.sch at 5/26/2018 11:26:12 PM
+Exported from VC8E.sch at 9/26/2023 4:05:45 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
@@ -240,10 +240,10 @@ C77      +        +          pas      N$189
 C78      +        +          pas      GND
          -        -          pas      N$197
 
-D1       A        A          pas      N$27
+D1       A        A          pas      GDELAY
          C        C          pas      N$28
 
-D2       A        A          pas      N$43
+D2       A        A          pas      BCOLOR
          C        C          pas      N$44
 
 D3       A        A          pas      N$69
@@ -417,7 +417,7 @@ D58      A        A          pas      N$187
 D59      A        A          pas      N$186
          C        C          pas      GND
 
-E1       1        A          in       N$34
+E1       1        A          in       DLY_DN
          2        B          in       +3V
          3        CLR        in       +3V
          4        !Q         out               *** unconnected ***
@@ -429,7 +429,7 @@ E1       1        A          in       N$34
          10       B          in       N$40
          11       CLR        in       N$40
          12       !Q         out      !SET_DONE
-         13       Q          out      N$35
+         13       Q          out      DDELAY
          14       C          in       N$37
          15       R/C        in       N$36
          16       VCC        pwr      VCC
@@ -460,8 +460,8 @@ E3       1        O          out      !DLY_DONE
          7        GND        pwr      GND
          8        I0         in       GRN_DELAY
          9        I1         in       RED_DELAY
-         10       O          out      N$34
-         11       I0         in       N$35
+         10       O          out      DLY_DN
+         11       I0         in       DDELAY
          12       I1         in       ERASE
          13       O          out      !CLEAR_DONE
          14       VCC        pwr      VCC
@@ -557,39 +557,39 @@ E10      1        I          in                ***   unused    ***
          3        I          in       ERASE
          4        O          oc       !ERASE
          5        I          in       N$25
-         6        O          oc       N$27
+         6        O          oc       GDELAY
          7        GND        pwr      GND
          8        O          oc       !WRITE_THRU
          9        I          in       WRITE_THRU
-         10       O          oc       N$43
+         10       O          oc       BCOLOR
          11       I          in       !COLOR
          12       O          oc       !NON_STORE
          13       I          in       !STORE
          14       VCC        pwr      VCC
 
 E11      1        GND        pwr      GND
-         2        O          out      N$17
-         3        O          out      N$14
+         2        O          out      IO7
+         3        O          out      MD5
          4        I0         in       !MD5
-         5        I1         in       N$6
-         6        I0         in       N$6
+         5        I1         in       PAUSE_L
+         6        I0         in       PAUSE_L
          7        I1         in       !MD7
          8        VCC        pwr      VCC
          9        I0         in       !MD4
-         10       I1         in       N$6
-         11       I0         in       N$6
+         10       I1         in       PAUSE_L
+         11       I0         in       PAUSE_L
          12       I1         in       !MD3
-         13       O          out      N$10
-         14       O          out      N$12
+         13       O          out      IO3
+         14       O          out      IO4
 
 E12      1        GND        pwr      GND
          3        O          out      IOT
-         4        I0         in       N$15
-         5        I1         in       N$6
-         6        I2         in       N$17
+         4        I0         in       IO5
+         5        I1         in       PAUSE_L
+         6        I2         in       IO7
          8        VCC        pwr      VCC
-         9        I3         in       N$12
-         10       I4         in       N$10
+         9        I3         in       IO4
+         10       I4         in       IO3
          11       I5         in       !MD6
          12       I6         in       !MD8
 
@@ -617,7 +617,7 @@ E14      1        I          in       GND
          7        GND        pwr      GND
          8        O          out      BTP3
          9        I          in       !BTP3
-         10       O          out      N$6
+         10       O          out      PAUSE_L
          11       I          in       N$16
          12       O          out      +3V
          13       I          in       GND
@@ -809,15 +809,15 @@ E27      1        I0         in                ***   unused    ***
          8        O          out               ***   unused    ***
          9        I0         in                ***   unused    ***
          10       I1         in                ***   unused    ***
-         11       O          out      N$8
+         11       O          out      DEL_1
          12       I0         in       Z_PULSE
          13       I1         in       !DEL_1
          14       VCC        pwr      VCC
 
 E28      1        I          in       CHAN
          2        O          oc       !CHAN
-         3        I          in       N$8
-         4        O          oc       N$9
+         3        I          in       DEL_1
+         4        O          oc       DEL_1_L
          5        I          in       CLEAR
          6        O          oc       !CLEAR
          7        GND        pwr      GND
@@ -1690,7 +1690,7 @@ Q31      1        E          pas      VCC
          2        B          pas      N$153
          3        C          pas      N$154
 
-R1       1        1          pas      N$6
+R1       1        1          pas      PAUSE_L
          2        2          pas      VCC
 
 R2       1        1          pas      !IOT
@@ -1711,7 +1711,7 @@ R6       1        1          pas      !LOAD_DATA
 R7       1        1          pas      N$41
          2        2          pas      VCC
 
-R8       1        1          pas      N$43
+R8       1        1          pas      BCOLOR
          2        2          pas      VCC
 
 R9       1        1          pas      N$44
@@ -1726,7 +1726,7 @@ R11      1        1          pas      Z_PULSE
 R12      1        1          pas      !CHAN
          2        2          pas      VCC
 
-R13      1        1          pas      N$9
+R13      1        1          pas      DEL_1_L
          2        2          pas      VCC
 
 R14      1        1          pas      !ERASE_INTERVAL
@@ -1738,7 +1738,7 @@ R15      1        1          pas      N$39
 R16      1        1          pas      N$25
          2        2          pas      VCC
 
-R17      1        1          pas      N$27
+R17      1        1          pas      GDELAY
          2        2          pas      VCC
 
 R18      1        1          pas      N$28
@@ -2205,9 +2205,9 @@ R166     1        1          pas      N$199
 R167     1        1          pas      N$199
          2        2          pas      Y_ANALOG
 
-S1       1        A1         io       N$8
+S1       1        A1         io       DEL_1
          2        A2         io       INTENS
-         3        A3         io       N$9
+         3        A3         io       DEL_1_L
 
 S2       1        A1         io       N$47
          2        A2         io       N$45
@@ -2217,11 +2217,11 @@ TP1      TP       TP         in       RED_DELAY
 
 TP2      TP       TP         in       GRN_DELAY
 
-W1       1        1          pas      N$14
-         2        2          pas      N$15
+W1       1        1          pas      MD5
+         2        2          pas      IO5
 
 W2       1        1          pas      !MD5
-         2        2          pas      N$15
+         2        2          pas      IO5
 
 W3       1        1          pas      N$44
          2        2          pas      N$45
