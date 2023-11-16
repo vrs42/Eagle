@@ -15222,7 +15222,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E33" gate="C" pin="I"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="!BAC09" class="0">
 <segment>
 <wire x1="271.78" y1="251.46" x2="271.78" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="241.3" x2="266.7" y2="241.3" width="0.1524" layer="91"/>
@@ -15233,9 +15233,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E33" gate="E" pin="O"/>
 <pinref part="D10" gate="G$1" pin="A"/>
 <pinref part="R22" gate="G$1" pin="1"/>
+<label x="271.78" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="!BAC10" class="0">
 <segment>
 <wire x1="299.72" y1="251.46" x2="299.72" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="241.3" x2="294.64" y2="241.3" width="0.1524" layer="91"/>
@@ -15246,9 +15247,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E33" gate="A" pin="O"/>
 <pinref part="D11" gate="G$1" pin="A"/>
 <pinref part="R23" gate="G$1" pin="1"/>
+<label x="299.72" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="!BAC11" class="0">
 <segment>
 <wire x1="327.66" y1="251.46" x2="327.66" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="241.3" x2="322.58" y2="241.3" width="0.1524" layer="91"/>
@@ -15259,9 +15261,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E33" gate="C" pin="O"/>
 <pinref part="D12" gate="G$1" pin="A"/>
 <pinref part="R24" gate="G$1" pin="1"/>
+<label x="327.66" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="!BAC01" class="0">
 <segment>
 <wire x1="48.26" y1="251.46" x2="48.26" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="241.3" x2="43.18" y2="241.3" width="0.1524" layer="91"/>
@@ -15272,9 +15275,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E33" gate="F" pin="O"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="R14" gate="G$1" pin="1"/>
+<label x="48.26" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="!BAC02" class="0">
 <segment>
 <wire x1="76.2" y1="241.3" x2="76.2" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="241.3" x2="71.12" y2="241.3" width="0.1524" layer="91"/>
@@ -15285,9 +15289,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="J2" gate="G$12" pin="P$2"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="R15" gate="G$1" pin="1"/>
+<label x="76.2" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="!BAC03" class="0">
 <segment>
 <wire x1="104.14" y1="251.46" x2="104.14" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="241.3" x2="99.06" y2="241.3" width="0.1524" layer="91"/>
@@ -15298,9 +15303,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E36" gate="D" pin="O"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="R16" gate="G$1" pin="1"/>
+<label x="104.14" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="!BAC04" class="0">
 <segment>
 <wire x1="132.08" y1="241.3" x2="132.08" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="241.3" x2="127" y2="241.3" width="0.1524" layer="91"/>
@@ -15311,9 +15317,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="J2" gate="G$20" pin="P$2"/>
 <pinref part="D5" gate="G$1" pin="A"/>
 <pinref part="R17" gate="G$1" pin="1"/>
+<label x="132.08" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="!BAC05" class="0">
 <segment>
 <wire x1="160.02" y1="241.3" x2="160.02" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="241.3" x2="154.94" y2="241.3" width="0.1524" layer="91"/>
@@ -15324,9 +15331,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="J2" gate="G$24" pin="P$2"/>
 <pinref part="D6" gate="G$1" pin="A"/>
 <pinref part="R18" gate="G$1" pin="1"/>
+<label x="160.02" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="!BAC06" class="0">
 <segment>
 <wire x1="187.96" y1="241.3" x2="187.96" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="241.3" x2="182.88" y2="241.3" width="0.1524" layer="91"/>
@@ -15337,9 +15345,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="J2" gate="G$28" pin="P$2"/>
 <pinref part="D7" gate="G$1" pin="A"/>
 <pinref part="R19" gate="G$1" pin="1"/>
+<label x="187.96" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="!BAC07" class="0">
 <segment>
 <wire x1="215.9" y1="241.3" x2="215.9" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="241.3" x2="210.82" y2="241.3" width="0.1524" layer="91"/>
@@ -15350,9 +15359,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="J2" gate="G$32" pin="P$2"/>
 <pinref part="D8" gate="G$1" pin="A"/>
 <pinref part="R20" gate="G$1" pin="1"/>
+<label x="215.9" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="!BAC08" class="0">
 <segment>
 <wire x1="243.84" y1="251.46" x2="243.84" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="241.3" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
@@ -15363,6 +15373,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="E36" gate="A" pin="O"/>
 <pinref part="D9" gate="G$1" pin="A"/>
 <pinref part="R21" gate="G$1" pin="1"/>
+<label x="243.84" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="BMB00" class="0">
