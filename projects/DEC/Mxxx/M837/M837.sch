@@ -16801,22 +16801,6 @@ Based on the following sources:
 <pinref part="EDGE" gate="CA1" pin="1"/>
 </segment>
 </net>
-<net name="!!(DF_ENAB*EMA_DISAB)" class="0">
-<segment>
-<wire x1="485.14" y1="434.34" x2="485.14" y2="436.88" width="0.1524" layer="91"/>
-<wire x1="485.14" y1="436.88" x2="576.58" y2="436.88" width="0.1524" layer="91"/>
-<label x="546.1" y="436.88" size="1.778" layer="95"/>
-<pinref part="E18" gate="C" pin="O"/>
-</segment>
-</net>
-<net name="!!!(DF_ENAB*EMA_DISAB)" class="0">
-<segment>
-<wire x1="576.58" y1="439.42" x2="464.82" y2="439.42" width="0.1524" layer="91"/>
-<wire x1="464.82" y1="439.42" x2="464.82" y2="434.34" width="0.1524" layer="91"/>
-<label x="546.1" y="439.42" size="1.778" layer="95"/>
-<pinref part="E18" gate="D" pin="O"/>
-</segment>
-</net>
 <net name="UF" class="0">
 <segment>
 <wire x1="576.58" y1="251.46" x2="518.16" y2="251.46" width="0.1524" layer="91"/>
@@ -16855,6 +16839,22 @@ Based on the following sources:
 <pinref part="E26" gate="C" pin="I1"/>
 <pinref part="E43" gate="A" pin="I3"/>
 <pinref part="E43" gate="B" pin="O"/>
+</segment>
+</net>
+<net name="!(DF_ENAB_L*EMA_DISAB_L)" class="0">
+<segment>
+<wire x1="576.58" y1="439.42" x2="464.82" y2="439.42" width="0.1524" layer="91"/>
+<wire x1="464.82" y1="439.42" x2="464.82" y2="434.34" width="0.1524" layer="91"/>
+<label x="541.02" y="439.42" size="1.778" layer="95"/>
+<pinref part="E18" gate="D" pin="O"/>
+</segment>
+</net>
+<net name="!(DF_ENAB*EMA_DISAB_L)" class="0">
+<segment>
+<wire x1="485.14" y1="434.34" x2="485.14" y2="436.88" width="0.1524" layer="91"/>
+<wire x1="485.14" y1="436.88" x2="576.58" y2="436.88" width="0.1524" layer="91"/>
+<label x="541.02" y="436.88" size="1.778" layer="95"/>
+<pinref part="E18" gate="C" pin="O"/>
 </segment>
 </net>
 </nets>

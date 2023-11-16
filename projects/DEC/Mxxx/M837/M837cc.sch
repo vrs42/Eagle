@@ -14389,10 +14389,10 @@ Based on the following sources:
 <part name="V27" library="supply2" deviceset="VCC" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
-<part name="E15" library="dec-con" deviceset="8266" device=""/>
+<part name="E15" library="dec-con" deviceset="8266" device="" value="MC8266"/>
 <part name="E1" library="dec-con" deviceset="DEC8235" device=""/>
 <part name="E6" library="dec-con" deviceset="DEC8235" device=""/>
-<part name="E53" library="dec-con" deviceset="8266" device=""/>
+<part name="E53" library="dec-con" deviceset="8266" device="" value="MC8266"/>
 <part name="E50" library="dec-con" deviceset="DEC8235" device=""/>
 <part name="E2" library="dec-con" deviceset="DEC8271" device=""/>
 <part name="E3" library="dec-con" deviceset="DEC8271" device=""/>
@@ -14515,6 +14515,10 @@ Based on the following sources:
 <part name="V41" library="supply2" deviceset="GND" device=""/>
 <part name="V42" library="supply2" deviceset="GND" device=""/>
 <part name="V43" library="supply2" deviceset="VCC" device=""/>
+<part name="V62" library="supply2" deviceset="GND" device=""/>
+<part name="V63" library="supply2" deviceset="GND" device=""/>
+<part name="V64" library="supply2" deviceset="GND" device=""/>
+<part name="V65" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14746,6 +14750,10 @@ Based on the following sources:
 <instance part="V27" gate="G$1" x="464.82" y="396.24"/>
 <instance part="R2" gate="G$1" x="464.82" y="388.62" rot="R90"/>
 <instance part="V1" gate="GND" x="76.2" y="454.66"/>
+<instance part="V62" gate="GND" x="33.02" y="12.7"/>
+<instance part="V63" gate="GND" x="50.8" y="12.7"/>
+<instance part="V64" gate="GND" x="170.18" y="0" rot="MR0"/>
+<instance part="V65" gate="GND" x="190.5" y="0" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -14846,25 +14854,27 @@ Based on the following sources:
 <pinref part="V6" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<wire x1="289.56" y1="15.24" x2="289.56" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="15.24" x2="50.8" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="15.24" x2="190.5" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="10.16" x2="170.18" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="10.16" x2="170.18" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="10.16" x2="170.18" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="10.16" x2="33.02" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="10.16" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="10.16" x2="190.5" y2="10.16" width="0.1524" layer="91"/>
-<junction x="170.18" y="10.16"/>
-<junction x="50.8" y="10.16"/>
-<junction x="190.5" y="10.16"/>
-<junction x="289.56" y="10.16"/>
-<pinref part="E46" gate="C" pin="I1"/>
-<pinref part="E11" gate="C" pin="I0"/>
-<pinref part="E45" gate="B" pin="I0"/>
-<pinref part="E45" gate="C" pin="I1"/>
 <pinref part="E25" gate="D" pin="I1"/>
+<pinref part="V62" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="E11" gate="C" pin="I0"/>
+<pinref part="V63" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="E45" gate="C" pin="I1"/>
+<pinref part="V64" gate="GND" pin="GND"/>
+<wire x1="170.18" y1="2.54" x2="170.18" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="E46" gate="C" pin="I1"/>
+<wire x1="289.56" y1="15.24" x2="289.56" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="V11" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="E45" gate="B" pin="I0"/>
+<pinref part="V65" gate="GND" pin="GND"/>
+<wire x1="190.5" y1="2.54" x2="190.5" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="457.2" x2="78.74" y2="457.2" width="0.1524" layer="91"/>
@@ -15193,7 +15203,7 @@ Based on the following sources:
 <pinref part="E20" gate="D" pin="I1"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="!BMD02" class="0">
 <segment>
 <wire x1="33.02" y1="86.36" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="86.36" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
@@ -15283,7 +15293,7 @@ Based on the following sources:
 <pinref part="E34" gate="G$1" pin="I0"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="MD04" class="0">
 <segment>
 <wire x1="71.12" y1="40.64" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
@@ -15294,7 +15304,7 @@ Based on the following sources:
 <pinref part="E34" gate="G$1" pin="I3"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="MD05" class="0">
 <segment>
 <wire x1="88.9" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="40.64" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
@@ -15406,7 +15416,7 @@ Based on the following sources:
 <pinref part="E39" gate="B" pin="O"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="!IOT010XXX1XX" class="0">
 <segment>
 <wire x1="154.94" y1="147.32" x2="144.78" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="149.86" x2="144.78" y2="149.86" width="0.1524" layer="91"/>
@@ -15435,7 +15445,7 @@ Based on the following sources:
 <pinref part="E31" gate="C" pin="O"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="IOT010XXX1XX" class="0">
 <segment>
 <wire x1="88.9" y1="147.32" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="152.4" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
@@ -15707,7 +15717,7 @@ Based on the following sources:
 <pinref part="E34" gate="G$1" pin="I4"/>
 </segment>
 </net>
-<net name="N$54" class="0">
+<net name="IOT010XXX0XX" class="0">
 <segment>
 <wire x1="198.12" y1="142.24" x2="198.12" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="139.7" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
@@ -15870,7 +15880,7 @@ Based on the following sources:
 <pinref part="EDGE" gate="DE2" pin="1"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="IO_PAUSE" class="0">
 <segment>
 <wire x1="172.72" y1="111.76" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="111.76" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
@@ -16055,7 +16065,7 @@ Based on the following sources:
 <pinref part="E27" gate="E" pin="I"/>
 </segment>
 </net>
-<net name="N$57" class="0">
+<net name="MD11" class="0">
 <segment>
 <wire x1="358.14" y1="73.66" x2="353.06" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="73.66" x2="353.06" y2="96.52" width="0.1524" layer="91"/>
@@ -16316,7 +16326,7 @@ Based on the following sources:
 <pinref part="E27" gate="E" pin="O"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="IOT000000XXX" class="0">
 <segment>
 <wire x1="264.16" y1="139.7" x2="264.16" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="137.16" x2="266.7" y2="137.16" width="0.1524" layer="91"/>
@@ -16776,19 +16786,19 @@ Based on the following sources:
 <pinref part="EDGE" gate="CA1" pin="1"/>
 </segment>
 </net>
-<net name="!!(DF_ENAB*EMA_DISAB)" class="0">
+<net name="!(DF_ENAB*EMA_DISAB_L)" class="0">
 <segment>
 <wire x1="485.14" y1="434.34" x2="485.14" y2="436.88" width="0.1524" layer="91"/>
 <wire x1="485.14" y1="436.88" x2="576.58" y2="436.88" width="0.1524" layer="91"/>
-<label x="546.1" y="436.88" size="1.778" layer="95"/>
+<label x="543.56" y="436.88" size="1.778" layer="95"/>
 <pinref part="E18" gate="C" pin="O"/>
 </segment>
 </net>
-<net name="!!!(DF_ENAB*EMA_DISAB)" class="0">
+<net name="!(DF_ENAB_L*EMA_DISAB_L)" class="0">
 <segment>
 <wire x1="576.58" y1="439.42" x2="464.82" y2="439.42" width="0.1524" layer="91"/>
 <wire x1="464.82" y1="439.42" x2="464.82" y2="434.34" width="0.1524" layer="91"/>
-<label x="546.1" y="439.42" size="1.778" layer="95"/>
+<label x="543.56" y="439.42" size="1.778" layer="95"/>
 <pinref part="E18" gate="D" pin="O"/>
 </segment>
 </net>
@@ -18095,14 +18105,14 @@ Based on the following sources:
 <pinref part="E7" gate="A" pin="I1"/>
 </segment>
 </net>
-<net name="!!(DF_ENAB*EMA_DISAB)" class="0">
+<net name="!(DF_ENAB*EMA_DISAB_L)" class="0">
 <segment>
 <wire x1="5.08" y1="342.9" x2="68.58" y2="342.9" width="0.1524" layer="91"/>
 <label x="5.08" y="342.9" size="1.778" layer="95"/>
 <pinref part="E1" gate="E$1" pin="S1"/>
 </segment>
 </net>
-<net name="!!!(DF_ENAB*EMA_DISAB)" class="0">
+<net name="!(DF_ENAB_L*EMA_DISAB_L)" class="0">
 <segment>
 <wire x1="5.08" y1="347.98" x2="68.58" y2="347.98" width="0.1524" layer="91"/>
 <label x="5.08" y="347.98" size="1.778" layer="95"/>
