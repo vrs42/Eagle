@@ -9420,7 +9420,7 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="W7" gate="1" pin="2"/>
 </segment>
 </net>
-<net name="MD040OK" class="0">
+<net name="MD04OK" class="0">
 <segment>
 <wire x1="132.08" y1="134.62" x2="132.08" y2="127" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="134.62" x2="132.08" y2="134.62" width="0.1524" layer="91"/>

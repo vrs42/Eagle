@@ -87009,7 +87009,7 @@ design rules under a new name.</description>
 <wire x1="174.625" y1="86.995" x2="174.625" y2="76.835" width="0.8128" layer="1"/>
 <wire x1="174.625" y1="76.835" x2="172.72" y2="74.93" width="0.8128" layer="1"/>
 </signal>
-<signal name="MD040OK">
+<signal name="MD04OK">
 <contactref element="E6" pad="4"/>
 <contactref element="W4" pad="2"/>
 <contactref element="W3" pad="2"/>
