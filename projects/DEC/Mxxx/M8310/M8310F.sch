@@ -12739,7 +12739,7 @@ Based on the following sources:
 <pinref part="E36" gate="B" pin="O"/>
 </segment>
 </net>
-<net name="+3V" class="0">
+<net name="+3V" class="1">
 <segment>
 <pinref part="E40" gate="A" pin="CLR"/>
 <wire x1="40.64" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
