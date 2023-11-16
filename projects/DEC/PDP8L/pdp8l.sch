@@ -5374,6 +5374,7 @@
 <instance part="B08" gate="E1" x="231.14" y="83.82"/>
 <instance part="V8" gate="G$1" x="7.62" y="7.62"/>
 <instance part="V9" gate="GND" x="12.7" y="7.62"/>
+<instance part="D01" gate="H2" x="393.7" y="187.96" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6360,9 +6361,11 @@
 </net>
 <net name="!RUN" class="0">
 <segment>
+<wire x1="393.7" y1="182.88" x2="393.7" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="393.7" y1="180.34" x2="381" y2="180.34" width="0.1524" layer="91"/>
 <label x="383.54" y="180.34" size="1.778" layer="95"/>
 <pinref part="C06" gate="S1" pin="1"/>
+<pinref part="D01" gate="H2" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="111.76" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
@@ -18860,34 +18863,6 @@
 <pinref part="A23" gate="N1" pin="J"/>
 </segment>
 </net>
-<net name="!MA04" class="0">
-<segment>
-<wire x1="182.88" y1="241.3" x2="198.12" y2="241.3" width="0.1524" layer="91"/>
-<label x="182.88" y="241.3" size="1.778" layer="95"/>
-<pinref part="B23" gate="G$1" pin="D2"/>
-</segment>
-</net>
-<net name="!MA05" class="0">
-<segment>
-<wire x1="182.88" y1="231.14" x2="198.12" y2="231.14" width="0.1524" layer="91"/>
-<label x="182.88" y="231.14" size="1.778" layer="95"/>
-<pinref part="B23" gate="G$1" pin="D1"/>
-</segment>
-</net>
-<net name="!MA06" class="0">
-<segment>
-<wire x1="182.88" y1="215.9" x2="198.12" y2="215.9" width="0.1524" layer="91"/>
-<label x="182.88" y="215.9" size="1.778" layer="95"/>
-<pinref part="B23" gate="G$1" pin="M2"/>
-</segment>
-</net>
-<net name="!MA07" class="0">
-<segment>
-<wire x1="182.88" y1="205.74" x2="198.12" y2="205.74" width="0.1524" layer="91"/>
-<label x="182.88" y="205.74" size="1.778" layer="95"/>
-<pinref part="B23" gate="G$1" pin="L1"/>
-</segment>
-</net>
 <net name="B23M1" class="0">
 <segment>
 <wire x1="228.6" y1="190.5" x2="223.52" y2="190.5" width="0.1524" layer="91"/>
@@ -19164,6 +19139,34 @@
 <segment>
 <pinref part="A17" gate="G$1" pin="M1"/>
 <pinref part="V137" gate="GND" pin="GND"/>
+</segment>
+</net>
+<net name="!MB04" class="0">
+<segment>
+<wire x1="182.88" y1="241.3" x2="198.12" y2="241.3" width="0.1524" layer="91"/>
+<label x="182.88" y="241.3" size="1.778" layer="95"/>
+<pinref part="B23" gate="G$1" pin="D2"/>
+</segment>
+</net>
+<net name="!MB05" class="0">
+<segment>
+<wire x1="182.88" y1="231.14" x2="198.12" y2="231.14" width="0.1524" layer="91"/>
+<label x="182.88" y="231.14" size="1.778" layer="95"/>
+<pinref part="B23" gate="G$1" pin="D1"/>
+</segment>
+</net>
+<net name="!MB06" class="0">
+<segment>
+<wire x1="182.88" y1="215.9" x2="198.12" y2="215.9" width="0.1524" layer="91"/>
+<label x="182.88" y="215.9" size="1.778" layer="95"/>
+<pinref part="B23" gate="G$1" pin="M2"/>
+</segment>
+</net>
+<net name="!MB07" class="0">
+<segment>
+<wire x1="182.88" y1="205.74" x2="198.12" y2="205.74" width="0.1524" layer="91"/>
+<label x="182.88" y="205.74" size="1.778" layer="95"/>
+<pinref part="B23" gate="G$1" pin="L1"/>
 </segment>
 </net>
 </nets>
