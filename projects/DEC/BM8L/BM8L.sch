@@ -3004,7 +3004,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="162.56" y="241.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RETURN" class="0">
+<net name="RETURNH" class="0">
 <segment>
 <pinref part="C08" gate="E1" pin="OUT"/>
 <wire x1="187.96" y1="208.28" x2="187.96" y2="218.44" width="0.1524" layer="91"/>
@@ -5469,7 +5469,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="121.92" y="111.76" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="INT" class="0">
+<net name="INTH" class="0">
 <segment>
 <pinref part="D12" gate="E1" pin="1"/>
 <wire x1="99.06" y1="101.6" x2="91.44" y2="101.6" width="0.1524" layer="91"/>
@@ -9490,7 +9490,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="241.3" y="223.52"/>
 </segment>
 </net>
-<net name="RETURN" class="0">
+<net name="RETURNH" class="0">
 <segment>
 <pinref part="AB07" gate="AR2" pin="P$2"/>
 <wire x1="259.08" y1="215.9" x2="276.86" y2="215.9" width="0.1524" layer="91"/>
