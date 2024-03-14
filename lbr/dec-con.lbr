@@ -43702,7 +43702,7 @@ National Semiconductor</description>
 <pad name="6" x="0" y="5.0798" drill="0.8128" shape="octagon"/>
 <pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="octagon"/>
 <pad name="3" x="3.81" y="-3.81" drill="0.8128" shape="octagon"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="octagon" rot="R45"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="octagon"/>
 <pad name="7" x="-3.81" y="3.81" drill="0.8128" shape="octagon"/>
 <text x="-3.1749" y="0.6348" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.1749" y="-1.9046" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
@@ -44184,17 +44184,17 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 <wire x1="3.2873" y1="-1.8451" x2="2.7815" y2="-2.5525" width="0.2032" layer="21" curve="-13.209593"/>
 <wire x1="1.575" y1="-3.425" x2="0.75" y2="-3.7" width="0.2032" layer="21" curve="-13.209671"/>
 <circle x="0" y="0" radius="3.775" width="0.2032" layer="51"/>
-<circle x="1.225" y="-0.375" radius="0.3535" width="0" layer="21"/>
-<pad name="1" x="3.6235" y="-1.1773" drill="0.8128" rot="R342"/>
-<pad name="2" x="2.2394" y="-3.0824" drill="0.8128" rot="R306"/>
-<pad name="3" x="0" y="-3.8099" drill="0.8128" rot="R270"/>
-<pad name="4" x="-2.2394" y="-3.0823" drill="0.8128" rot="R234"/>
-<pad name="5" x="-3.6235" y="-1.1773" drill="0.8128" rot="R198"/>
-<pad name="6" x="-3.6235" y="1.1773" drill="0.8128" rot="R162"/>
-<pad name="7" x="-2.2394" y="3.0824" drill="0.8128" rot="R126"/>
-<pad name="8" x="0" y="3.8099" drill="0.8128" rot="R90"/>
-<pad name="9" x="2.2394" y="3.0823" drill="0.8128" rot="R54"/>
-<pad name="10" x="3.6235" y="1.1773" drill="0.8128" rot="R18"/>
+<circle x="-0.045" y="-1.01" radius="0.3535" width="0" layer="21"/>
+<pad name="1" x="3.6235" y="-1.1773" drill="0.8128"/>
+<pad name="2" x="2.2394" y="-3.0824" drill="0.8128"/>
+<pad name="3" x="0" y="-3.8099" drill="0.8128"/>
+<pad name="4" x="-2.2394" y="-3.0823" drill="0.8128"/>
+<pad name="5" x="-3.6235" y="-1.1773" drill="0.8128"/>
+<pad name="6" x="-3.6235" y="1.1773" drill="0.8128"/>
+<pad name="7" x="-2.2394" y="3.0824" drill="0.8128"/>
+<pad name="8" x="0" y="3.8099" drill="0.8128"/>
+<pad name="9" x="2.2394" y="3.0823" drill="0.8128"/>
+<pad name="10" x="3.6235" y="1.1773" drill="0.8128"/>
 <pad name="C1" x="0" y="-1.63" drill="0.8128"/>
 <pad name="C2" x="0" y="1.63" drill="0.8128"/>
 <text x="-2.7" y="4.315" size="1.27" layer="25">&gt;NAME</text>
@@ -44209,23 +44209,23 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 <text x="0.325" y="-2.7" size="0.8128" layer="51" rot="SR180">3</text>
 <text x="1.75" y="-2.05" size="0.8128" layer="51" rot="SR216">2</text>
 <text x="2.65" y="-0.5" size="0.8128" layer="51" rot="SR252">1</text>
-<rectangle x1="-1.575" y1="-0.25" x2="1.575" y2="0.25" layer="51" rot="R72"/>
+<rectangle x1="-1.575" y1="-0.25" x2="1.575" y2="0.25" layer="51"/>
 </package>
 <package name="75AP36-2">
 <description>&lt;b&gt;Single Deck Rotary Switches&lt;/b&gt;&lt;p&gt;
 Source: www.grayhill.com .. J-13-14.pdf</description>
 <circle x="0" y="0" radius="3.775" width="0.2032" layer="21"/>
-<circle x="1.225" y="-0.375" radius="0.3535" width="0" layer="21"/>
-<pad name="1" x="2.2587" y="-0.7339" drill="0.6" diameter="1" rot="R342"/>
-<pad name="2" x="1.3959" y="-1.9214" drill="0.6" diameter="1" rot="R306"/>
-<pad name="3" x="0" y="-2.375" drill="0.6" diameter="1" rot="R270"/>
-<pad name="4" x="-1.3959" y="-1.9214" drill="0.6" diameter="1" rot="R234"/>
-<pad name="5" x="-2.2587" y="-0.7339" drill="0.6" diameter="1" rot="R198"/>
-<pad name="6" x="-2.2587" y="0.7339" drill="0.6" diameter="1" rot="R162"/>
-<pad name="7" x="-1.3959" y="1.9214" drill="0.6" diameter="1" rot="R126"/>
-<pad name="8" x="0" y="2.375" drill="0.6" diameter="1" rot="R90"/>
-<pad name="9" x="1.3959" y="1.9214" drill="0.6" diameter="1" rot="R54"/>
-<pad name="10" x="2.2587" y="0.7339" drill="0.6" diameter="1" rot="R18"/>
+<circle x="-0.045" y="-1.01" radius="0.3535" width="0" layer="21"/>
+<pad name="1" x="2.2587" y="-0.7339" drill="0.6" diameter="1"/>
+<pad name="2" x="1.3959" y="-1.9214" drill="0.6" diameter="1"/>
+<pad name="3" x="0" y="-2.375" drill="0.6" diameter="1"/>
+<pad name="4" x="-1.3959" y="-1.9214" drill="0.6" diameter="1"/>
+<pad name="5" x="-2.2587" y="-0.7339" drill="0.6" diameter="1"/>
+<pad name="6" x="-2.2587" y="0.7339" drill="0.6" diameter="1"/>
+<pad name="7" x="-1.3959" y="1.9214" drill="0.6" diameter="1"/>
+<pad name="8" x="0" y="2.375" drill="0.6" diameter="1"/>
+<pad name="9" x="1.3959" y="1.9214" drill="0.6" diameter="1"/>
+<pad name="10" x="2.2587" y="0.7339" drill="0.6" diameter="1"/>
 <pad name="C1" x="0" y="-0.815" drill="0.6" diameter="1"/>
 <pad name="C2" x="0" y="0.815" drill="0.6" diameter="1"/>
 <text x="-2.7" y="4.315" size="1.27" layer="25">&gt;NAME</text>
@@ -44240,7 +44240,7 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 <text x="0.325" y="-2.7" size="0.8128" layer="51" rot="SR180">3</text>
 <text x="1.75" y="-2.05" size="0.8128" layer="51" rot="SR216">2</text>
 <text x="2.65" y="-0.5" size="0.8128" layer="51" rot="SR252">1</text>
-<rectangle x1="-1.575" y1="-0.25" x2="1.575" y2="0.25" layer="51" rot="R72"/>
+<rectangle x1="-1.575" y1="-0.25" x2="1.575" y2="0.25" layer="51"/>
 </package>
 <package name="75BF36-2">
 <description>&lt;b&gt;Single Deck Rotary Switches&lt;/b&gt;&lt;p&gt;
@@ -44266,16 +44266,16 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 <circle x="0" y="0" radius="3.775" width="0.2032" layer="51"/>
 <circle x="0" y="0" radius="1.475" width="0.2032" layer="51"/>
 <circle x="0" y="0" radius="1.075" width="0.2032" layer="51"/>
-<pad name="1" x="3.6235" y="-1.1773" drill="0.6" diameter="1" rot="R342"/>
-<pad name="2" x="2.2394" y="-3.0824" drill="0.6" diameter="1" rot="R306"/>
-<pad name="3" x="0" y="-3.8099" drill="0.6" diameter="1" rot="R270"/>
-<pad name="4" x="-2.2394" y="-3.0823" drill="0.6" diameter="1" rot="R234"/>
-<pad name="5" x="-3.6235" y="-1.1773" drill="0.6" diameter="1" rot="R198"/>
-<pad name="6" x="-3.6235" y="1.1773" drill="0.6" diameter="1" rot="R162"/>
-<pad name="7" x="-2.2394" y="3.0824" drill="0.6" diameter="1" rot="R126"/>
-<pad name="8" x="0" y="3.8099" drill="0.6" diameter="1" rot="R90"/>
-<pad name="9" x="2.2394" y="3.0823" drill="0.6" diameter="1" rot="R54"/>
-<pad name="10" x="3.6235" y="1.1773" drill="0.6" diameter="1" rot="R18"/>
+<pad name="1" x="3.6235" y="-1.1773" drill="0.6" diameter="1"/>
+<pad name="2" x="2.2394" y="-3.0824" drill="0.6" diameter="1"/>
+<pad name="3" x="0" y="-3.8099" drill="0.6" diameter="1"/>
+<pad name="4" x="-2.2394" y="-3.0823" drill="0.6" diameter="1"/>
+<pad name="5" x="-3.6235" y="-1.1773" drill="0.6" diameter="1"/>
+<pad name="6" x="-3.6235" y="1.1773" drill="0.6" diameter="1"/>
+<pad name="7" x="-2.2394" y="3.0824" drill="0.6" diameter="1"/>
+<pad name="8" x="0" y="3.8099" drill="0.6" diameter="1"/>
+<pad name="9" x="2.2394" y="3.0823" drill="0.6" diameter="1"/>
+<pad name="10" x="3.6235" y="1.1773" drill="0.6" diameter="1"/>
 <pad name="C1" x="0" y="-1.63" drill="0.6" diameter="1"/>
 <pad name="C2" x="0" y="1.63" drill="0.6" diameter="1"/>
 <text x="-2.7" y="4.315" size="1.27" layer="25">&gt;NAME</text>
@@ -44295,16 +44295,16 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 <circle x="0" y="0" radius="3.775" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="1.475" width="0.2032" layer="51"/>
 <circle x="0" y="0" radius="1.075" width="0.2032" layer="51"/>
-<pad name="1" x="2.2587" y="-0.7339" drill="0.6" diameter="1" rot="R342"/>
-<pad name="2" x="1.3959" y="-1.9214" drill="0.6" diameter="1" rot="R306"/>
-<pad name="3" x="0" y="-2.375" drill="0.6" diameter="1" rot="R270"/>
-<pad name="4" x="-1.3959" y="-1.9214" drill="0.6" diameter="1" rot="R234"/>
-<pad name="5" x="-2.2587" y="-0.7339" drill="0.6" diameter="1" rot="R198"/>
-<pad name="6" x="-2.2587" y="0.7339" drill="0.6" diameter="1" rot="R162"/>
-<pad name="7" x="-1.3959" y="1.9214" drill="0.6" diameter="1" rot="R126"/>
-<pad name="8" x="0" y="2.375" drill="0.6" diameter="1" rot="R90"/>
-<pad name="9" x="1.3959" y="1.9214" drill="0.6" diameter="1" rot="R54"/>
-<pad name="10" x="2.2587" y="0.7339" drill="0.6" diameter="1" rot="R18"/>
+<pad name="1" x="2.2587" y="-0.7339" drill="0.6" diameter="1"/>
+<pad name="2" x="1.3959" y="-1.9214" drill="0.6" diameter="1"/>
+<pad name="3" x="0" y="-2.375" drill="0.6" diameter="1"/>
+<pad name="4" x="-1.3959" y="-1.9214" drill="0.6" diameter="1"/>
+<pad name="5" x="-2.2587" y="-0.7339" drill="0.6" diameter="1"/>
+<pad name="6" x="-2.2587" y="0.7339" drill="0.6" diameter="1"/>
+<pad name="7" x="-1.3959" y="1.9214" drill="0.6" diameter="1"/>
+<pad name="8" x="0" y="2.375" drill="0.6" diameter="1"/>
+<pad name="9" x="1.3959" y="1.9214" drill="0.6" diameter="1"/>
+<pad name="10" x="2.2587" y="0.7339" drill="0.6" diameter="1"/>
 <pad name="C1" x="0" y="-0.815" drill="0.6" diameter="1"/>
 <pad name="C2" x="0" y="0.815" drill="0.6" diameter="1"/>
 <text x="-2.7" y="4.315" size="1.27" layer="25">&gt;NAME</text>
@@ -44380,16 +44380,16 @@ Source: www.grayhill.com .. J-13-14.pdf</description>
 <wire x1="2.875" y1="-2.425" x2="2.725" y2="-1.925" width="0.1016" layer="21"/>
 <wire x1="2.725" y1="-1.925" x2="3.25" y2="-1.9" width="0.1016" layer="21"/>
 <circle x="0" y="0" radius="3.775" width="0.2032" layer="51"/>
-<pad name="1" x="3.6235" y="-1.1773" drill="0.6" diameter="1" rot="R342"/>
-<pad name="2" x="2.2394" y="-3.0824" drill="0.6" diameter="1" rot="R306"/>
-<pad name="3" x="0" y="-3.8099" drill="0.6" diameter="1" rot="R270"/>
-<pad name="4" x="-2.2394" y="-3.0823" drill="0.6" diameter="1" rot="R234"/>
-<pad name="5" x="-3.6235" y="-1.1773" drill="0.6" diameter="1" rot="R198"/>
-<pad name="6" x="-3.6235" y="1.1773" drill="0.6" diameter="1" rot="R162"/>
-<pad name="7" x="-2.2394" y="3.0824" drill="0.6" diameter="1" rot="R126"/>
-<pad name="8" x="0" y="3.8099" drill="0.6" diameter="1" rot="R90"/>
-<pad name="9" x="2.2394" y="3.0823" drill="0.6" diameter="1" rot="R54"/>
-<pad name="10" x="3.6235" y="1.1773" drill="0.6" diameter="1" rot="R18"/>
+<pad name="1" x="3.6235" y="-1.1773" drill="0.6" diameter="1"/>
+<pad name="2" x="2.2394" y="-3.0824" drill="0.6" diameter="1"/>
+<pad name="3" x="0" y="-3.8099" drill="0.6" diameter="1"/>
+<pad name="4" x="-2.2394" y="-3.0823" drill="0.6" diameter="1"/>
+<pad name="5" x="-3.6235" y="-1.1773" drill="0.6" diameter="1"/>
+<pad name="6" x="-3.6235" y="1.1773" drill="0.6" diameter="1"/>
+<pad name="7" x="-2.2394" y="3.0824" drill="0.6" diameter="1"/>
+<pad name="8" x="0" y="3.8099" drill="0.6" diameter="1"/>
+<pad name="9" x="2.2394" y="3.0823" drill="0.6" diameter="1"/>
+<pad name="10" x="3.6235" y="1.1773" drill="0.6" diameter="1"/>
 <pad name="C1" x="0" y="-1.63" drill="0.6" diameter="1"/>
 <pad name="C2" x="0" y="1.63" drill="0.6" diameter="1"/>
 <text x="-2.7" y="4.315" size="1.27" layer="25">&gt;NAME</text>
@@ -47844,6 +47844,163 @@ rotated 45 deg.</description>
 <smd name="72" x="-1.524" y="-53.34" dx="1.6764" dy="0.8128" layer="16"/>
 <smd name="73" x="-1.524" y="-54.864" dx="1.6764" dy="0.8128" layer="16"/>
 <hole x="0" y="-54.864" drill="0.8128"/>
+</package>
+<package name="DECPROTO11111">
+<description>Five Single-height modules.</description>
+<wire x1="187.8329" y1="1.2699" x2="187.8331" y2="1.2699" width="0" layer="20"/>
+<wire x1="0" y1="125.73" x2="0" y2="18.415" width="0" layer="20"/>
+<wire x1="2.667" y1="18.415" x2="2.667" y2="1.27" width="0" layer="20"/>
+<wire x1="2.667" y1="1.27" x2="3.937" y2="0" width="0" layer="20"/>
+<wire x1="3.937" y1="0" x2="58.2931" y2="-0.0001" width="0" layer="20"/>
+<wire x1="58.2931" y1="-0.0001" x2="59.563" y2="1.27" width="0" layer="20"/>
+<wire x1="59.563" y1="1.27" x2="59.563" y2="15.875" width="0" layer="20"/>
+<wire x1="59.563" y1="15.875" x2="62.23" y2="15.875" width="0" layer="20"/>
+<wire x1="2.667" y1="18.415" x2="0" y2="18.415" width="0" layer="20"/>
+<wire x1="66.167" y1="18.415" x2="66.167" y2="1.27" width="0" layer="20"/>
+<wire x1="66.167" y1="1.27" x2="67.437" y2="0" width="0" layer="20"/>
+<wire x1="67.437" y1="0" x2="121.7931" y2="-0.0001" width="0" layer="20"/>
+<wire x1="121.7931" y1="-0.0001" x2="123.063" y2="1.27" width="0" layer="20"/>
+<wire x1="123.063" y1="1.27" x2="123.063" y2="15.875" width="0" layer="20"/>
+<wire x1="123.063" y1="15.875" x2="125.73" y2="15.875" width="0" layer="20"/>
+<wire x1="129.667" y1="18.415" x2="129.667" y2="1.27" width="0" layer="20"/>
+<wire x1="129.667" y1="1.27" x2="130.937" y2="0" width="0" layer="20"/>
+<wire x1="130.937" y1="0" x2="185.2931" y2="-0.0001" width="0" layer="20"/>
+<wire x1="185.2931" y1="-0.0001" x2="186.563" y2="1.27" width="0" layer="20"/>
+<wire x1="186.563" y1="1.27" x2="186.563" y2="15.875" width="0" layer="20"/>
+<wire x1="186.563" y1="15.875" x2="189.23" y2="15.875" width="0" layer="20"/>
+<wire x1="66.167" y1="18.415" x2="63.5" y2="18.415" width="0" layer="20"/>
+<wire x1="125.73" y1="18.415" x2="125.73" y2="15.875" width="0" layer="20"/>
+<wire x1="62.23" y1="15.875" x2="62.23" y2="17.78" width="0" layer="20"/>
+<wire x1="62.23" y1="17.78" x2="62.23" y2="18.415" width="0" layer="20"/>
+<wire x1="189.23" y1="18.415" x2="189.23" y2="17.78" width="0" layer="20"/>
+<wire x1="189.23" y1="17.78" x2="189.23" y2="15.875" width="0" layer="20"/>
+<wire x1="62.23" y1="125.73" x2="0" y2="125.73" width="0" layer="20"/>
+<wire x1="62.23" y1="125.73" x2="62.23" y2="114.3" width="0" layer="20"/>
+<wire x1="62.23" y1="109.22" x2="62.23" y2="71.12" width="0" layer="20"/>
+<wire x1="62.23" y1="66.04" x2="62.23" y2="30.48" width="0" layer="20"/>
+<wire x1="62.23" y1="25.4" x2="62.23" y2="17.78" width="0" layer="20"/>
+<wire x1="63.5" y1="125.73" x2="63.5" y2="114.3" width="0" layer="20"/>
+<wire x1="63.5" y1="25.4" x2="63.5" y2="18.415" width="0" layer="20"/>
+<wire x1="63.5" y1="30.48" x2="63.5" y2="66.04" width="0" layer="20"/>
+<wire x1="63.5" y1="109.22" x2="63.5" y2="71.12" width="0" layer="20"/>
+<wire x1="62.23" y1="109.22" x2="63.5" y2="109.22" width="0" layer="20" curve="-180"/>
+<wire x1="63.5" y1="114.3" x2="62.23" y2="114.3" width="0" layer="20" curve="-180"/>
+<wire x1="63.5" y1="71.12" x2="62.23" y2="71.12" width="0" layer="20" curve="-180"/>
+<wire x1="63.5" y1="30.48" x2="62.23" y2="30.48" width="0" layer="20" curve="-180"/>
+<wire x1="62.23" y1="25.4" x2="63.5" y2="25.4" width="0" layer="20" curve="-180"/>
+<wire x1="62.23" y1="66.04" x2="63.5" y2="66.04" width="0" layer="20" curve="-180"/>
+<wire x1="125.73" y1="109.22" x2="125.73" y2="71.12" width="0" layer="20"/>
+<wire x1="125.73" y1="66.04" x2="125.73" y2="30.48" width="0" layer="20"/>
+<wire x1="125.73" y1="25.4" x2="125.73" y2="17.78" width="0" layer="20"/>
+<wire x1="127" y1="125.73" x2="127" y2="114.3" width="0" layer="20"/>
+<wire x1="127" y1="25.4" x2="127" y2="18.415" width="0" layer="20"/>
+<wire x1="127" y1="30.48" x2="127" y2="66.04" width="0" layer="20"/>
+<wire x1="127" y1="109.22" x2="127" y2="71.12" width="0" layer="20"/>
+<wire x1="125.73" y1="109.22" x2="127" y2="109.22" width="0" layer="20" curve="-180"/>
+<wire x1="127" y1="114.3" x2="125.73" y2="114.3" width="0" layer="20" curve="-180"/>
+<wire x1="127" y1="71.12" x2="125.73" y2="71.12" width="0" layer="20" curve="-180"/>
+<wire x1="127" y1="30.48" x2="125.73" y2="30.48" width="0" layer="20" curve="-180"/>
+<wire x1="125.73" y1="25.4" x2="127" y2="25.4" width="0" layer="20" curve="-180"/>
+<wire x1="125.73" y1="66.04" x2="127" y2="66.04" width="0" layer="20" curve="-180"/>
+<wire x1="63.5" y1="125.73" x2="125.73" y2="125.73" width="0" layer="20"/>
+<wire x1="125.73" y1="125.73" x2="125.73" y2="114.3" width="0" layer="20"/>
+<wire x1="127" y1="125.73" x2="189.23" y2="125.73" width="0" layer="20"/>
+<wire x1="129.54" y1="18.415" x2="127" y2="18.415" width="0" layer="20"/>
+<hole x="183.515" y="120.65" drill="3.175"/>
+<hole x="132.715" y="120.65" drill="3.175"/>
+<hole x="69.2658" y="120.65" drill="3.175"/>
+<hole x="120.0658" y="120.65" drill="3.175"/>
+<hole x="56.5658" y="120.65" drill="3.175"/>
+<hole x="5.7658" y="120.65" drill="3.175"/>
+<hole x="62.865" y="69.85" drill="0.8128"/>
+<hole x="62.865" y="68.58" drill="0.8128"/>
+<hole x="62.865" y="67.31" drill="0.8128"/>
+<hole x="62.865" y="26.67" drill="0.8128"/>
+<hole x="62.865" y="27.94" drill="0.8128"/>
+<hole x="62.865" y="29.21" drill="0.8128"/>
+<hole x="62.865" y="113.03" drill="0.8128"/>
+<hole x="62.865" y="110.49" drill="0.8128"/>
+<hole x="62.865" y="111.76" drill="0.8128"/>
+<hole x="126.365" y="69.85" drill="0.8128"/>
+<hole x="126.365" y="68.58" drill="0.8128"/>
+<hole x="126.365" y="67.31" drill="0.8128"/>
+<hole x="126.365" y="26.67" drill="0.8128"/>
+<hole x="126.365" y="27.94" drill="0.8128"/>
+<hole x="126.365" y="29.21" drill="0.8128"/>
+<hole x="126.365" y="113.03" drill="0.8128"/>
+<hole x="126.365" y="110.49" drill="0.8128"/>
+<hole x="126.365" y="111.76" drill="0.8128"/>
+<wire x1="251.3329" y1="1.2699" x2="251.3331" y2="1.2699" width="0" layer="20"/>
+<wire x1="193.167" y1="18.415" x2="193.167" y2="1.27" width="0" layer="20"/>
+<wire x1="193.167" y1="1.27" x2="194.437" y2="0" width="0" layer="20"/>
+<wire x1="194.437" y1="0" x2="248.7931" y2="-0.0001" width="0" layer="20"/>
+<wire x1="248.7931" y1="-0.0001" x2="250.063" y2="1.27" width="0" layer="20"/>
+<wire x1="250.063" y1="1.27" x2="250.063" y2="15.875" width="0" layer="20"/>
+<wire x1="250.063" y1="15.875" x2="252.73" y2="15.875" width="0" layer="20"/>
+<wire x1="252.73" y1="18.415" x2="252.73" y2="15.875" width="0" layer="20"/>
+<wire x1="190.5" y1="125.73" x2="190.5" y2="114.3" width="0" layer="20"/>
+<wire x1="190.5" y1="25.4" x2="190.5" y2="18.415" width="0" layer="20"/>
+<wire x1="190.5" y1="30.48" x2="190.5" y2="66.04" width="0" layer="20"/>
+<wire x1="190.5" y1="109.22" x2="190.5" y2="71.12" width="0" layer="20"/>
+<wire x1="189.23" y1="109.22" x2="190.5" y2="109.22" width="0" layer="20" curve="-180"/>
+<wire x1="190.5" y1="114.3" x2="189.23" y2="114.3" width="0" layer="20" curve="-180"/>
+<wire x1="190.5" y1="71.12" x2="189.23" y2="71.12" width="0" layer="20" curve="-180"/>
+<wire x1="190.5" y1="30.48" x2="189.23" y2="30.48" width="0" layer="20" curve="-180"/>
+<wire x1="189.23" y1="25.4" x2="190.5" y2="25.4" width="0" layer="20" curve="-180"/>
+<wire x1="189.23" y1="66.04" x2="190.5" y2="66.04" width="0" layer="20" curve="-180"/>
+<wire x1="190.5" y1="125.73" x2="252.73" y2="125.73" width="0" layer="20"/>
+<wire x1="193.04" y1="18.415" x2="190.5" y2="18.415" width="0" layer="20"/>
+<hole x="247.015" y="120.65" drill="3.175"/>
+<hole x="196.215" y="120.65" drill="3.175"/>
+<wire x1="189.23" y1="125.73" x2="189.23" y2="114.3" width="0" layer="20"/>
+<wire x1="189.23" y1="109.22" x2="189.23" y2="71.12" width="0" layer="20"/>
+<wire x1="189.23" y1="25.4" x2="189.23" y2="17.78" width="0" layer="20"/>
+<wire x1="189.23" y1="66.04" x2="189.23" y2="30.48" width="0" layer="20"/>
+<hole x="189.865" y="26.67" drill="0.8128"/>
+<hole x="189.865" y="27.94" drill="0.8128"/>
+<hole x="189.865" y="29.21" drill="0.8128"/>
+<hole x="189.865" y="67.31" drill="0.8128"/>
+<hole x="189.865" y="68.58" drill="0.8128"/>
+<hole x="189.865" y="69.85" drill="0.8128"/>
+<hole x="189.865" y="110.49" drill="0.8128"/>
+<hole x="189.865" y="111.76" drill="0.8128"/>
+<hole x="189.865" y="113.03" drill="0.8128"/>
+<wire x1="314.8329" y1="1.2699" x2="314.8331" y2="1.2699" width="0" layer="20"/>
+<wire x1="256.667" y1="18.415" x2="256.667" y2="1.27" width="0" layer="20"/>
+<wire x1="256.667" y1="1.27" x2="257.937" y2="0" width="0" layer="20"/>
+<wire x1="257.937" y1="0" x2="312.2931" y2="-0.0001" width="0" layer="20"/>
+<wire x1="312.2931" y1="-0.0001" x2="313.563" y2="1.27" width="0" layer="20"/>
+<wire x1="313.563" y1="1.27" x2="313.563" y2="15.875" width="0" layer="20"/>
+<wire x1="313.563" y1="15.875" x2="316.23" y2="15.875" width="0" layer="20"/>
+<wire x1="316.23" y1="18.415" x2="316.23" y2="15.875" width="0" layer="20"/>
+<wire x1="254" y1="125.73" x2="254" y2="114.3" width="0" layer="20"/>
+<wire x1="254" y1="25.4" x2="254" y2="18.415" width="0" layer="20"/>
+<wire x1="254" y1="30.48" x2="254" y2="66.04" width="0" layer="20"/>
+<wire x1="254" y1="109.22" x2="254" y2="71.12" width="0" layer="20"/>
+<wire x1="252.73" y1="109.22" x2="254" y2="109.22" width="0" layer="20" curve="-180"/>
+<wire x1="254" y1="114.3" x2="252.73" y2="114.3" width="0" layer="20" curve="-180"/>
+<wire x1="254" y1="71.12" x2="252.73" y2="71.12" width="0" layer="20" curve="-180"/>
+<wire x1="254" y1="30.48" x2="252.73" y2="30.48" width="0" layer="20" curve="-180"/>
+<wire x1="252.73" y1="25.4" x2="254" y2="25.4" width="0" layer="20" curve="-180"/>
+<wire x1="252.73" y1="66.04" x2="254" y2="66.04" width="0" layer="20" curve="-180"/>
+<wire x1="254" y1="125.73" x2="316.23" y2="125.73" width="0" layer="20"/>
+<wire x1="256.54" y1="18.415" x2="254" y2="18.415" width="0" layer="20"/>
+<wire x1="316.23" y1="15.875" x2="316.23" y2="125.73" width="0" layer="20"/>
+<hole x="310.515" y="120.65" drill="3.175"/>
+<hole x="259.715" y="120.65" drill="3.175"/>
+<wire x1="252.73" y1="125.73" x2="252.73" y2="114.3" width="0" layer="20"/>
+<wire x1="252.73" y1="109.22" x2="252.73" y2="71.12" width="0" layer="20"/>
+<wire x1="252.73" y1="25.4" x2="252.73" y2="18.415" width="0" layer="20"/>
+<wire x1="252.73" y1="30.48" x2="252.73" y2="66.04" width="0" layer="20"/>
+<hole x="253.365" y="26.67" drill="0.8128"/>
+<hole x="253.365" y="27.94" drill="0.8128"/>
+<hole x="253.365" y="29.21" drill="0.8128"/>
+<hole x="253.365" y="67.31" drill="0.8128"/>
+<hole x="253.365" y="68.58" drill="0.8128"/>
+<hole x="253.365" y="69.85" drill="0.8128"/>
+<hole x="253.365" y="110.49" drill="0.8128"/>
+<hole x="253.365" y="111.76" drill="0.8128"/>
+<hole x="253.365" y="113.03" drill="0.8128"/>
 </package>
 </packages>
 <symbols>
@@ -52495,9 +52652,9 @@ rotated 45 deg.</description>
 <text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<pin name="B" x="-2.54" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
 <symbol name="PNP">
 <wire x1="2.0861" y1="1.6779" x2="1.5781" y2="2.5941" width="0.1524" layer="94"/>
@@ -52535,6 +52692,11 @@ rotated 45 deg.</description>
 <pin name="F2" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
 <pin name="F1" x="15.24" y="7.62" length="middle" direction="out" rot="R180"/>
 <pin name="F0" x="15.24" y="15.24" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="ARROW">
+<description>Attempt a generic directional arrow.</description>
+<wire x1="0" y1="0" x2="1.016" y2="1.016" width="0.254" layer="95"/>
+<wire x1="1.016" y1="-1.016" x2="0" y2="0" width="0.254" layer="95"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -53497,6 +53659,7 @@ rotated 45 deg.</description>
 <deviceset name="DECPROTO">
 <description>Various small DEC boards stuck together with break-away tab routing.</description>
 <gates>
+<gate name="G$1" symbol="DEVICE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DECPROTO111">
@@ -53510,6 +53673,11 @@ rotated 45 deg.</description>
 </technologies>
 </device>
 <device name="1111" package="DECPROTO1111">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="11111" package="DECPROTO11111">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -61964,6 +62132,49 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <connect gate="73" pin="P" pad="73"/>
 <connect gate="8" pin="P" pad="8"/>
 <connect gate="9" pin="P" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARROW">
+<description>Generic signal direction arrow.</description>
+<gates>
+<gate name="G$1" symbol="ARROW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DEC4011">
+<description>NPN Quad Transistor Array</description>
+<gates>
+<gate name="A" symbol="NPN" x="-22.86" y="5.08"/>
+<gate name="B" symbol="NPN" x="-7.62" y="5.08"/>
+<gate name="C" symbol="NPN" x="7.62" y="5.08"/>
+<gate name="D" symbol="NPN" x="22.86" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="DIL14">
+<connects>
+<connect gate="A" pin="B" pad="2"/>
+<connect gate="A" pin="C" pad="1"/>
+<connect gate="A" pin="E" pad="3"/>
+<connect gate="B" pin="B" pad="6"/>
+<connect gate="B" pin="C" pad="7"/>
+<connect gate="B" pin="E" pad="5"/>
+<connect gate="C" pin="B" pad="9"/>
+<connect gate="C" pin="C" pad="8"/>
+<connect gate="C" pin="E" pad="10"/>
+<connect gate="D" pin="B" pad="13"/>
+<connect gate="D" pin="C" pad="14"/>
+<connect gate="D" pin="E" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>
