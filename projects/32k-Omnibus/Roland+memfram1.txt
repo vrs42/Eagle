@@ -1,0 +1,3 @@
+Silkscreen is only required for the component side. 
+
+Solder mask is not needed between the edge connector fingers. If it is helpful for plating purposes to tent some vias, that is acceptable. 
