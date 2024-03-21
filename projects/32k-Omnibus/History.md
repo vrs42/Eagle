@@ -8,15 +8,20 @@ bc01lv attempts to describe a jig to aid in construction BC01V cables.
 legenda is a board which exposes every Omnibus signal to a labelled pad. It
 is meant to make connecting a logic analyser a little easier.
 
-TBD: Lafferty1ab Lafferty1 Lafferty2
+Lafferty1 is a drawing based on Steve Lafferty's prototype.
 
-TBD: msc3102
+Lafferty1ab is an "as built" version of Lafferty1, with the changes
+incorporated in the group buy.
+
+Lafferty2 is a drawing with ideas about a follow-on to Lafferty1.
+
+msc3102 is a drawing of the MSC3102 designby Monolithic systems.
 
 OmnibusB is a thought experiment about a larger SRAM.
 
-TBD: Omnimem
+Omnimem is a simplified version using 74244 instead of 74125.
 
-TBD: Roland
+Roland is a drawing of Roland's boot loader card.
 
 Roland+mem1 and Roland+mem2 differ only in that the 8-wide DIP switch
 is installed in such a way that the pin numbering related better to the
@@ -57,4 +62,4 @@ serial device or as an M837 memory controller.
 
 Roland+memser2308 just flips S1 to attempt to position it correctly.
 
-TBD: rtc
+rtc is a version of Lafferty1 with some thoughts about adding a clock circuit.

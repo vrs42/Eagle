@@ -17,5 +17,3 @@ Omnibus 32K SRAM board
 <LI><b>Roland+memser</b> adds a CPLD, which can be a serial or a memory controller..</LI>
 <LI><b>Roland+memser2308</b> fixes the orientation of switch S1.</LI>
 <LI><b>rtc</b> is a version of Lafferty1 with some thoughts about adding a clock circuit.</LI>
-(All are oversimplified implementations.)
-
