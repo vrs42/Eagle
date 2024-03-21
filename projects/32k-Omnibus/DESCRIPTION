@@ -5,12 +5,17 @@ Omnibus 32K SRAM board
 <LI><b>Lafferty1</b> is a drawing based on Steve Lafferty's prototype.</LI>
 <LI><b>Lafferty1ab</b> is an "as built" version of Lafferty1, with the changes incorporated in the group buy.</LI>
 <LI><b>Lafferty2</b> is a drawing with ideas about a follow-on to Lafferty1.</LI>
+<LI><b>legenda.brd</b> is a board that brings each Omnibus signal to a pad.</LI>
 <LI><b>msc3102</b> is a drawing of the MSC3102 design.</LI>
 <LI><b>OmnibusB</b> is a thought experiment about a larger SRAM.</LI>
 <LI><b>Omnimem</b> is a simplified version using 74244 instead of 74125.</LI>
+<LI><b>Roland</b> is a drawing of Roland's boot loader card.</LI>
 <LI><b>Roland+mem1</b> is a combination of the Lafferty memory design and Roland's bootloader.</LI>
 <LI><b>Roland+mem2</b> is a minor revision of Roland+mem1.</LI>
 <LI><b>Roland+mem3</b> is a revision to fix noise problems.</LI>
 <LI><b>Roland+memfram</b> is a revision to fix noise problems, and also to supports FRAM.</LI>
+<LI><b>Roland+memser</b> adds a CPLD, which can be a serial or a memory controller..</LI>
+<LI><b>Roland+memser2308</b> fixes the orientation of switch S1.</LI>
 <LI><b>rtc</b> is a version of Lafferty1 with some thoughts about adding a clock circuit.</LI>
 (All are oversimplified implementations.)
+
