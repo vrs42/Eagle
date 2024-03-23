@@ -17832,11 +17832,6 @@ small</description>
 <pinref part="E8" gate="A" pin="I0"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
-<label x="193.04" y="106.68" size="1.778" layer="95"/>
-<pinref part="E8" gate="B" pin="I0"/>
-</segment>
-<segment>
 <wire x1="350.52" y1="231.14" x2="365.76" y2="231.14" width="0.1524" layer="91"/>
 <label x="353.06" y="231.14" size="1.778" layer="95"/>
 <pinref part="E9" gate="A" pin="Y"/>
@@ -18496,6 +18491,13 @@ small</description>
 <wire x1="337.82" y1="162.56" x2="353.06" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="WRITE" class="0">
+<segment>
+<wire x1="193.04" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
+<label x="193.04" y="106.68" size="1.778" layer="95"/>
+<pinref part="E8" gate="B" pin="I0"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -18870,7 +18872,6 @@ small</description>
 <approved hash="106,1,243.84,91.44,TP1,,,,,"/>
 <approved hash="106,1,243.84,96.52,TP2,,,,,"/>
 <approved hash="106,1,243.84,106.68,TP3,,,,,"/>
-<approved hash="106,1,73.66,147.32,WRITE,,,,,"/>
 </errors>
 </schematic>
 </drawing>
