@@ -33392,12 +33392,6 @@ design rules under a new name.</description>
 <contactref element="U9" pad="3"/>
 <wire x1="91.44" y1="38.1" x2="99.06" y2="38.1" width="0.508" layer="16"/>
 </signal>
-<signal name="N$14">
-<contactref element="U8" pad="10"/>
-<contactref element="U9" pad="6"/>
-<wire x1="99.06" y1="45.72" x2="116.84" y2="45.72" width="0.508" layer="16"/>
-<wire x1="116.84" y1="45.72" x2="119.38" y2="43.18" width="0.508" layer="16"/>
-</signal>
 <signal name="N$15">
 <contactref element="U9" pad="8"/>
 <contactref element="U8" pad="9"/>
@@ -34111,12 +34105,12 @@ design rules under a new name.</description>
 <wire x1="237.49" y1="48.26" x2="237.49" y2="138.43" width="0.508" layer="1"/>
 <wire x1="237.49" y1="138.43" x2="238.76" y2="139.7" width="0.508" layer="1"/>
 </signal>
-<signal name="!BWRITE">
+<signal name="!WRITE">
 <contactref element="E8" pad="16"/>
 <contactref element="E8" pad="5"/>
 <wire x1="200.66" y1="144.78" x2="208.28" y2="144.78" width="0.508" layer="16"/>
 </signal>
-<signal name="BMD_DIR">
+<signal name="MD_DIR">
 <contactref element="E8" pad="3"/>
 <contactref element="E7" pad="9"/>
 <contactref element="E8" pad="12"/>
@@ -34129,7 +34123,7 @@ design rules under a new name.</description>
 <wire x1="194.31" y1="143.51" x2="193.04" y2="144.78" width="0.508" layer="16"/>
 <wire x1="193.04" y1="144.78" x2="193.04" y2="153.67" width="0.508" layer="16"/>
 </signal>
-<signal name="!BSOURCE">
+<signal name="!SOURCE">
 <contactref element="E8" pad="14"/>
 <contactref element="E8" pad="7"/>
 <wire x1="200.66" y1="149.86" x2="208.28" y2="149.86" width="0.508" layer="16"/>
@@ -34145,12 +34139,7 @@ design rules under a new name.</description>
 <wire x1="195.58" y1="149.86" x2="198.12" y2="152.4" width="0.508" layer="16"/>
 <wire x1="198.12" y1="152.4" x2="200.66" y2="152.4" width="0.508" layer="16"/>
 </signal>
-<signal name="BWRITE">
-<contactref element="E8" pad="15"/>
-<contactref element="E7" pad="4"/>
-<wire x1="195.58" y1="147.32" x2="200.66" y2="147.32" width="0.508" layer="16"/>
-</signal>
-<signal name="!BDISABLE">
+<signal name="!DISABLE">
 <contactref element="E7" pad="10"/>
 <contactref element="E8" pad="18"/>
 <wire x1="200.66" y1="139.7" x2="199.39" y2="140.97" width="0.508" layer="16"/>
@@ -34243,6 +34232,17 @@ design rules under a new name.</description>
 <contactref element="R25" pad="3"/>
 <contactref element="E1" pad="7"/>
 <wire x1="236.22" y1="48.26" x2="241.3" y2="48.26" width="0.508" layer="16"/>
+</signal>
+<signal name="!TP4">
+<contactref element="U8" pad="10"/>
+<contactref element="U9" pad="6"/>
+<wire x1="99.06" y1="45.72" x2="116.84" y2="45.72" width="0.508" layer="16"/>
+<wire x1="116.84" y1="45.72" x2="119.38" y2="43.18" width="0.508" layer="16"/>
+</signal>
+<signal name="BWRITE">
+<contactref element="E7" pad="4"/>
+<wire x1="195.58" y1="147.32" x2="200.66" y2="147.32" width="0.508" layer="16"/>
+<contactref element="E8" pad="15"/>
 </signal>
 </signals>
 <errors>
