@@ -11,4 +11,5 @@ Bus Connector paddles for Negibus and Posibus
 <LI><b>x-talk</b> is an attempt at a crosstalk measurement jig for Posibus cables.</LI>
 <LI><b>BC08J</b> is essentially a BC08J paddle with a cheaper ribbon connector.</LI>
 <LI><b>merge4</b> is four 8j-merge paddles on a single board.</LI>
+<LI><b>Doug</b> is a Posibus/Negibus paddle using parts from Warren by way of Doug.</LI>
 </UL>
