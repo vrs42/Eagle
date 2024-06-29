@@ -1,0 +1,37 @@
+#!/usr/bin/perl
+
+#
+# Dump a pair of M8317 boot roms.
+#
+# Two bytes (one from each ROM) are concatenated to form a 16 bit quantity.
+# The first nybble is a function code, as follows:
+#   bit 0	Load Addr
+#   bit 1	Load Ext. Addr
+#   bit 2	Deposit
+#   bit 3	Start
+#
+
+warn "@ARGV\n";
+open(ROM1, $ARGV[0]) || die "$ARGV[0]: $!";
+open(ROM2, $ARGV[1]) || die "$ARGV[1]: $!";
+binmode(ROM1);
+binmode(ROM2);
+
+$rom = 0;
+while (sysread(ROM1, $b1, 2)) {
+  sysread(ROM2, $b2, 2);
+  @b1 = unpack("CC", $b1);
+  @b2 = unpack("CC", $b2);
+die if $b1[0] > 15;
+die if $b1[1] > 15;
+die if $b2[0] > 15;
+die if $b2[1] > 15;
+  $w = ($b1[0]<<12) + ($b2[0]<<8) + ($b1[1]<<4) + $b2[1];
+# printf "0x%04x\n", $w;
+  printf "0%03o 0%04o ", $rom++, ($w & 07777);
+  print "LA "  if $w & 0100000;
+  print "LEA " if $w &  040000;
+  print "DEP " if $w &  020000;
+  print "GO "  if $w &  010000;
+  print "\n";
+}
