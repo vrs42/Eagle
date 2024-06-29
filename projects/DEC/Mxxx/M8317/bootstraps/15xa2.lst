@@ -29,7 +29,7 @@
   29 007751* 3371          DCA UKRS        /03371 /DEP
   30 007752* 1345          TAD KRSF        /01345 /DEP
   31 007753* 3357          DCA UKSF1       /03357 /DEP
-  32 007754* 1345          TAD KRSF,       /01345 /DEP
+  32 007754* 1345          TAD KRSF        /01345 /DEP
   33 007755* 3367          DCA UKSF2       /03367 /DEP
   34               /Code either runs as is, or was patched above.
   35 007756* 6032  UKCC,   KCC             /06032 /DEP
