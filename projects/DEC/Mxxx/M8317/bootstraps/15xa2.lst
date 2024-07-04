@@ -31,142 +31,150 @@
   31 007753* 3357          DCA UKSF1       /03357 /DEP
   32 007754* 1345          TAD KRSF        /01345 /DEP
   33 007755* 3367          DCA UKSF2       /03367 /DEP
-  34               /Code either runs as is, or was patched above.
-  35 007756* 6032  UKCC,   KCC             /06032 /DEP
-  36 007757* 6031  UKSF1,  KSF             /06031 /DEP
-  37 007760* 5357          JMP .-1         /05357 /DEP
-  38 007761* 6036  UKRB,   KRB             /06036 /DEP
-  39 007762* 7106          CLL RTL         /07106 /DEP
-  40 007763* 7006          RTL             /07006 /DEP
-  41               /Ignore if leader/trailer (0200 was punched)
-  42 007764* 7510          SPA             /07510 /DEP
-  43 007765* 5374          JMP IGNR        /05374 /DEP
-  44               /Finish rotate six and get low six
-  45 007766* 7006          RTL             /07006 /DEP
-  46 007767* 6031  UKSF2,  KSF             /06031 /DEP
-  47 007770* 5367          JMP .-1         /05367 /DEP
-  48 007771* 6034  UKRS,   KRS             /06034 /DEP
-  49 007772* 7420          SNL             /07420 /DEP
-  50 007773* 3776          DCA I PTR       /03776 /DEP
-  51 007774* 3376  IGNR,   DCA PTR         /03376 /DEP
-  52 007775* 5356          JMP UKCC        /05356 /DEP
-  53               PTR,
-  54 007776* 7737  07737 /LA GO
-  55               
-  56               /Bootstrap 2: RK8E
-  57 007777* 0023  00023 /LA
-  58 000000* 0000  00000 /LEA
-  59               RELOC 00023
-  60               DLAG=   6743
-  61               DRST=   6745
-  62               /Not sure how this helps.
-  63 000023* 2200          02200 /DEP
-  64               /Read status
-  65 000024* 6745  START2, DRST            /06745 /DEP
-  66               /Harmless AND instruction.
-  67 000025* 0023          START2-1        /00023 /DEP
-  68               /Wait for reasonable status.
-  69 000026* 7640          SZA CLA         /07640 /DEP
-  70 000027* 5024          JMP START2      /05024 /DEP
-  71               /Start a read. AC==0, so block zero.
-  72 000030* 6743          DLAG            /06743 /DEP
-  73               /Hang waiting for read to overlay us.
-  74 000031* 5031          JMP .           /05031 /DEP
-  75 000032* 0024  00024 /LA GO
-  76               
-  77               /Bootstrap 3: RX8E
-  78 000033* 0024  00024 /LA
-  79 000034* 0000  00000 /LEA
-  80               RELOC 00024
-  81               LCD=    6751            /Load Command Register
-  82               XDR=    6752            /Transfer Data Register
-  83               STR=    6753            /Skip if Transfer Requested
-  84               SER=    6754            /Skip if Error
-  85               SDN=    6755            /Skip if Done
-  86 000024* 7126          CLL CML RTL     /07126 /DEP
-  87 000025* 1060          01060 /DEP
-  88 000026* 6751          LCD             /06751 /DEP
-  89 000027* 7201          CLA IAC         /07201 /DEP
-  90 000030* 4053          04053 /DEP
-  91 000031* 4053          04053 /DEP
-  92 000032* 7104          CLL RAL         /07104 /DEP
-  93 000033* 6755  START3, SDN             /06755 /DEP
-  94 000034* 5054          05054 /DEP
-  95 000035* 6754          SER             /06754 /DEP
-  96 000036* 7450          SNA             /07450 /DEP
-  97 000037* 7610          CLA SKP         /07610 /DEP
-  98 000040* 5046          05046 /DEP
-  99 000041* 1060          01060 /DEP
- 100 000042* 7041          CIA             /07041 /DEP
- 101 000043* 1061          01061 /DEP
- 102 000044* 3060          03060 /DEP
- 103 000045* 5024          05024 /DEP
- 104 000046* 6751          LCD             /06751 /DEP
- 105 000047* 4053          04053 /DEP
- 106 000050* 3002          03002 /DEP
- 107 000051* 2050          02050 /DEP
- 108 000052* 5047          05047 /DEP
- 109 000053* 0000          00000 /DEP
- 110 000054* 6753          STR             /06753 /DEP
- 111 000055* 5033          05033 /DEP
- 112 000056* 6752          XDR             /06752 /DEP
- 113 000057* 5453          05453 /DEP
- 114 000060* 7024          CML RAL         /07024 /DEP
- 115 000061* 6030          06030 /DEP
- 116 000062* 0033  00033 /LA GO
- 117               
- 118               /Bootstrap 4: RF08/DF32
- 119 000063* 7750  07750 /LA
- 120 000064* 0000  00000 /LEA
- 121               RELOC 07750
- 122               DMAR=   6603            /Begin a Read
- 123               DFSC=   6622            /Skip if Complete
- 124 007750* 7600  START4, CLA 0400        /07600 /DEP
- 125 007751* 6603          DMAR            /06603 /DEP
- 126 007752* 6622          DFSC            /06622 /DEP
- 127 007753* 5352          JMP .-1         /05352 /DEP
- 128 007754* 5752          JMP I .-2       /05752 /DEP
- 129 007755* 7750  07750 /LA GO
- 130               
- 131               /Bootstrap 5: TA8E
- 132 007756* 4000  04000 /LA
- 133 007757* 0000  00000 /LEA
- 134               RELOC 04000
- 135 004000* 1237  START5, 01237 /DEP
- 136 004001* 1206          01206 /DEP
- 137 004002* 6704          06704 /DEP
- 138 004003* 6706          06706 /DEP
- 139 004004* 6703          06703 /DEP
- 140 004005* 5204          05204 /DEP
- 141 004006* 7264          07264 /DEP
- 142 004007* 6702          06702 /DEP
- 143 004010* 7610          07610 /DEP
- 144 004011* 3211          03211 /DEP
- 145 004012* 3636          03636 /DEP
- 146 004013* 1205          01205 /DEP
- 147 004014* 6704          06704 /DEP
- 148 004015* 6706          06706 /DEP
- 149 004016* 6701          06701 /DEP
- 150 004017* 5216          05216 /DEP
- 151 004020* 7002          07002 /DEP
- 152 004021* 7430          07430 /DEP
- 153 004022* 1636          01636 /DEP
- 154 004023* 7022          07022 /DEP
- 155 004024* 3636          03636 /DEP
- 156 004025* 7420          07420 /DEP
- 157 004026* 2236          02236 /DEP
- 158 004027* 2235          02235 /DEP
- 159 004030* 5215          05215 /DEP
- 160 004031* 7346          07346 /DEP
- 161 004032* 7002          07002 /DEP
- 162 004033* 3235          03235 /DEP
- 163 004034* 5201          05201 /DEP
- 164 004035* 7737          07737 /DEP
- 165 004036* 3557          03557 /DEP
- 166 004037* 7730          07730 /DEP
- 167 004040* 4000  04000 /LA GO
- 168               $
+  34               /This is just the stock RIM loader. It either runs as is, 
+  35               /or was patched above.
+  36 007756* 6032  UKCC,   KCC             /06032 /DEP
+  37 007757* 6031  UKSF1,  KSF             /06031 /DEP
+  38 007760* 5357          JMP .-1         /05357 /DEP
+  39 007761* 6036  UKRB,   KRB             /06036 /DEP
+  40 007762* 7106          CLL RTL         /07106 /DEP
+  41 007763* 7006          RTL             /07006 /DEP
+  42               /Ignore if leader/trailer (0200 was punched)
+  43 007764* 7510          SPA             /07510 /DEP
+  44 007765* 5374          JMP IGNR        /05374 /DEP
+  45               /Finish rotate six and get low six
+  46 007766* 7006          RTL             /07006 /DEP
+  47 007767* 6031  UKSF2,  KSF             /06031 /DEP
+  48 007770* 5367          JMP .-1         /05367 /DEP
+  49 007771* 6034  UKRS,   KRS             /06034 /DEP
+  50 007772* 7420          SNL             /07420 /DEP
+  51 007773* 3776          DCA I PTR       /03776 /DEP
+  52 007774* 3376  IGNR,   DCA PTR         /03376 /DEP
+  53 007775* 5356          JMP UKCC        /05356 /DEP
+  54               PTR,
+  55 007776* 7737  07737 /LA GO
+  56               
+  57               /Bootstrap 2: RK8E
+  58 007777* 0023  00023 /LA
+  59 000000* 0000  00000 /LEA
+  60               RELOC 00023
+  61               DLAG=   6743
+  62               DRST=   6745
+  63               /Not sure how this helps.
+  64 000023* 2200          02200 /DEP
+  65               /Read status
+  66 000024* 6745  START2, DRST            /06745 /DEP
+  67               /Harmless AND instruction.
+  68 000025* 0023          START2-1        /00023 /DEP
+  69               /Wait for reasonable status.
+  70 000026* 7640          SZA CLA         /07640 /DEP
+  71 000027* 5024          JMP START2      /05024 /DEP
+  72               /Start a read. AC==0, so block zero.
+  73 000030* 6743          DLAG            /06743 /DEP
+  74               /Hang waiting for read to overlay us.
+  75 000031* 5031          JMP .           /05031 /DEP
+  76 000032* 0024  00024 /LA GO
+  77               
+  78               /Bootstrap 3: RX8E
+  79               /This is the hunting bootstrap for single or double density on drive 0 or 1.
+  80               /(See XRX01S.PA.)
+  81 000033* 0024  00024 /LA
+  82 000034* 0000  00000 /LEA
+  83               RELOC 00024
+  84               LCD=    6751            /Load Command Register
+  85               XDR=    6752            /Transfer Data Register
+  86               STR=    6753            /Skip if Transfer Requested
+  87               SER=    6754            /Skip if Error
+  88               SDN=    6755            /Skip if Done
+  89 000024* 7126  BEG,    STL RTL         /07126 /DEP
+  90 000025* 1060          TAD SELCT       /01060 /DEP
+  91 000026* 6751          LCD             /06751 /DEP
+  92 000027* 7201          CLA IAC         /07201 /DEP
+  93 000030* 4053          JMS XFSUB       /04053 /DEP
+  94 000031* 4053          JMS XFSUB       /04053 /DEP
+  95 000032* 7104          CLL RAL         /07104 /DEP
+  96               /Wait for done
+  97 000033* 6755  START3, SDN             /06755 /DEP
+  98 000034* 5054          JMP XFSUB+1     /05054 /DEP
+  99 000035* 6754          SER             /06754 /DEP
+ 100 000036* 7450          SNA             /07450 /DEP
+ 101 000037* 7610          CLA SKP         /07610 /DEP
+ 102 000040* 5046          JMP UNLOAD      /05046 /DEP
+ 103               /Move on to the next drive
+ 104 000041* 1060          TAD SELCT       /01060 /DEP
+ 105 000042* 7041          CIA             /07041 /DEP
+ 106 000043* 1061          TAD SELCTD      /01061 /DEP
+ 107 000044* 3060          DCA SELCT       /03060 /DEP
+ 108 000045* 5024          JMP BEG         /05024 /DEP
+ 109 000046* 6751  UNLOAD, LCD             /06751 /DEP
+ 110 000047* 4053  DATLP,  JMS XFSUB       /04053 /DEP
+ 111 000050* 3002          DCA 2           /03002 /DEP
+ 112 000051* 2050          ISZ .-1         /02050 /DEP
+ 113 000052* 5047          JMP DATLP       /05047 /DEP
+ 114               /Data Transfer Subroutine
+ 115 000053* 0000  XFSUB,  0               /00000 /DEP
+ 116 000054* 6753          STR             /06753 /DEP
+ 117 000055* 5033          JMP START3      /05033 /DEP
+ 118 000056* 6752          XDR             /06752 /DEP
+ 119 000057* 5453          JMP I XFSUB     /05453 /DEP
+ 120 000060* 7024  SELCT,  7024            /07024 /DEP
+ 121 000061* 6030  SELCTD, 6030            /6030 /DEP
+ 122 000062* 0033  00033 /LA GO
+ 123               
+ 124               /Bootstrap 4: RF08/DF32
+ 125 000063* 7750  07750 /LA
+ 126 000064* 0000  00000 /LEA
+ 127               RELOC 07750
+ 128               DMAR=   6603            /Begin a Read
+ 129               DFSC=   6622            /Skip if Complete
+ 130 007750* 7600  START4, CLA 0400        /07600 /DEP
+ 131 007751* 6603          DMAR            /06603 /DEP
+ 132 007752* 6622          DFSC            /06622 /DEP
+ 133 007753* 5352          JMP .-1         /05352 /DEP
+ 134 007754* 5752          JMP I .-2       /05752 /DEP
+ 135 007755* 7750  07750 /LA GO
+ 136               
+ 137               /Bootstrap 5: TA8E
+ 138 007756* 4000  04000 /LA
+ 139 007757* 0000  00000 /LEA
+ 140               RELOC 04000
+ 141 004000* 1237  START5, 01237 /DEP
+ 142 004001* 1206          01206 /DEP
+ 143 004002* 6704          06704 /DEP
+ 144 004003* 6706          06706 /DEP
+ 145 004004* 6703          06703 /DEP
+ 146 004005* 5204          05204 /DEP
+ 147 004006* 7264          07264 /DEP
+ 148 004007* 6702          06702 /DEP
+ 149 004010* 7610          07610 /DEP
+ 150 004011* 3211          03211 /DEP
+ 151 004012* 3636          03636 /DEP
+ 152 004013* 1205          01205 /DEP
+ 153 004014* 6704          06704 /DEP
+ 154 004015* 6706          06706 /DEP
+ 155 004016* 6701          06701 /DEP
+ 156 004017* 5216          05216 /DEP
+ 157 004020* 7002          07002 /DEP
+ 158 004021* 7430          07430 /DEP
+ 159 004022* 1636          01636 /DEP
+ 160 004023* 7022          07022 /DEP
+ 161 004024* 3636          03636 /DEP
+ 162 004025* 7420          07420 /DEP
+ 163 004026* 2236          02236 /DEP
+ 164 004027* 2235          02235 /DEP
+ 165 004030* 5215          05215 /DEP
+ 166 004031* 7346          07346 /DEP
+ 167 004032* 7002          07002 /DEP
+ 168 004033* 3235          03235 /DEP
+ 169 004034* 5201          05201 /DEP
+ 170 004035* 7737          07737 /DEP
+ 171 004036* 3557          03557 /DEP
+ 172 004037* 7730          07730 /DEP
+ 173 004040* 4000  04000 /LA GO
+ 174               $
 
+BEG     0024
+DATLP   0047
 DFSC    6622
 DLAG    6743
 DMAR    6603
@@ -177,10 +185,12 @@ LCD     6751
 LOOP    7741
 PTR     7776
 SDN     6755
+SELCT   0060
+SELCTD  0061
 SER     6754
 START1  7737
 START2  0024
-START3  0033 unreferenced
+START3  0033
 START4  7750 unreferenced
 START5  4000 unreferenced
 STR     6753
@@ -189,4 +199,6 @@ UKRB    7761
 UKRS    7771
 UKSF1   7757
 UKSF2   7767
+UNLOAD  0046
 XDR     6752
+XFSUB   0053

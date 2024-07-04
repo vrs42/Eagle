@@ -31,28 +31,28 @@
   31 007753* 3357          DCA UKSF1       /03357 /DEP
   32 007754* 1345          TAD KRSF        /01345 /DEP
   33 007755* 3367          DCA UKSF2       /03367 /DEP
-  34               /Code either runs as is, or was patched above.
-  35 007756* 6032  UKCC,   KCC             /06032 /DEP
-  36 007757* 6031  UKSF1,  KSF             /06031 /DEP
-  37 007760* 5357          JMP .-1         /05357 /DEP
-  38 007761* 6036  UKRB,   KRB             /06036 /DEP
-  39 007762* 7106          CLL RTL         /07106 /DEP
-  40 007763* 7006          RTL             /07006 /DEP
-  41               /Ignore if leader/trailer (0200 was punched)
-  42 007764* 7510          SPA             /07510 /DEP
-  43 007765* 5374          JMP IGNR        /05374 /DEP
-  44               /Finish rotate six and get low six
-  45 007766* 7006          RTL             /07006 /DEP
-  46 007767* 6031  UKSF2,  KSF             /06031 /DEP
-  47 007770* 5367          JMP .-1         /05367 /DEP
-  48 007771* 6034  UKRS,   KRS             /06034 /DEP
-  49 007772* 7420          SNL             /07420 /DEP
-  50 007773* 3776          DCA I PTR       /03776 /DEP
-  51 007774* 3376  IGNR,   DCA PTR         /03376 /DEP
-  52 007775* 5356          JMP UKCC        /05356 /DEP
-  53               PTR,
-  54 007776* 7737  07737 /LA GO
-  55               
+  34               /This is just the stock RIM loader. It either runs as is,
+  35               /or was patched above.
+  36 007756* 6032  UKCC,   KCC             /06032 /DEP
+  37 007757* 6031  UKSF1,  KSF             /06031 /DEP
+  38 007760* 5357          JMP .-1         /05357 /DEP
+  39 007761* 6036  UKRB,   KRB             /06036 /DEP
+  40 007762* 7106          CLL RTL         /07106 /DEP
+  41 007763* 7006          RTL             /07006 /DEP
+  42               /Ignore if leader/trailer (0200 was punched)
+  43 007764* 7510          SPA             /07510 /DEP
+  44 007765* 5374          JMP IGNR        /05374 /DEP
+  45               /Finish rotate six and get low six
+  46 007766* 7006          RTL             /07006 /DEP
+  47 007767* 6031  UKSF2,  KSF             /06031 /DEP
+  48 007770* 5367          JMP .-1         /05367 /DEP
+  49 007771* 6034  UKRS,   KRS             /06034 /DEP
+  50 007772* 7420          SNL             /07420 /DEP
+  51 007773* 3776          DCA I PTR       /03776 /DEP
+  52 007774* 3376  IGNR,   DCA PTR         /03376 /DEP
+  53 007775* 5356          JMP UKCC        /05356 /DEP
+  54               PTR,
+  55 007776* 7737  07737 /LA GO
   56               
   57               /Bootstrap 2: RK8E
   58 007777* 0023  00023 /LA
@@ -75,8 +75,8 @@
   75 000031* 5031          JMP .           /05031 /DEP
   76 000032* 0024  00024 /LA GO
   77               
-  78               
-  79               /Bootstrap 3: RX8E
+  78               /Bootstrap 3: RX8E
+  79               /This is just the bootstrap from rxsy1.pa.
   80 000033* 0020  00020 /LA
   81 000034* 0000  00000 /LEA
   82               RELOC 00020
@@ -85,46 +85,46 @@
   85               STR=    6753            /Skip if Transfer Requested
   86               SER=    6754            /Skip if Error
   87               SDN=    6755            /Skip if Done
-  88 000020* 1061          01061 /DEP
-  89 000021* 1046          01046 /DEP
-  90 000022* 0060          00060 /DEP
-  91 000023* 3061          03061 /DEP
-  92 000024* 7327          CLA CLL CML IAC RTL /07327 /DEP
-  93 000025* 1061          01061 /DEP
+  88 000020* 1061  READ,   TAD UNIT        /01061 /DEP
+  89 000021* 1046          TAD CON360      /01046 /DEP
+  90 000022* 0060          AND CON420      /00060 /DEP
+  91 000023* 3061          DCA UNIT        /03061 /DEP
+  92 000024* 7327          CLA STL IAC RTL /07327 /DEP
+  93 000025* 1061          TAD UNIT        /01061 /DEP
   94 000026* 6751          LCD             /06751 /DEP
   95 000027* 7301          CLA CLL IAC     /07301 /DEP
-  96 000030* 4053          04053 /DEP
-  97 000031* 4053          04053 /DEP
-  98 000032* 7004          RAL             /07004 /DEP
+  96 000030* 4053          JMS LOAD        /04053 /DEP
+  97 000031* 4053          JMS LOAD        /04053 /DEP
+  98 000032* 7004  LITRAL, RAL             /07004 /DEP
   99 000033* 6755  START3, SDN             /06755 /DEP
- 100 000034* 5054          05054 /DEP
+ 100 000034* 5054          JMP LOAD+1      /05054 /DEP
  101 000035* 6754          SER             /06754 /DEP
  102 000036* 7450          SNA             /07450 /DEP
- 103 000037* 5020          05020 /DEP
- 104 000040* 1061          01061 /DEP
+ 103 000037* 5020          JMP READ        /05020 /DEP
+ 104 000040* 1061          TAD UNIT        /01061 /DEP
  105 000041* 6751          LCD             /06751 /DEP
- 106 000042* 1061          01061 /DEP
- 107 000043* 0046          00046 /DEP
- 108 000044* 1032          01032 /DEP
- 109 000045* 3060          03060 /DEP
- 110 000046* 0360          00360 /DEP
- 111 000047* 4053          04053 /DEP
- 112 000050* 3002          03002 /DEP
- 113 000051* 2050          02050 /DEP
- 114 000052* 5047          05047 /DEP
- 115 000053* 0000          00000 /DEP
+ 106 000042* 1061          TAD UNIT        /01061 /DEP
+ 107 000043* 0046          AND CON360      /00046 /DEP
+ 108 000044* 1032          TAD LITRAL      /01032 /DEP
+ 109 000045* 3060          DCA RX1SAV      /03060 /DEP
+ 110 000046* 0360  CON360, 360             /00360 /DEP
+ 111 000047* 4053          JMS LOAD        /04053 /DEP
+ 112 000050* 3002          DCA 2           /03002 /DEP
+ 113 000051* 2050          ISZ .-1         /02050 /DEP
+ 114 000052* 5047          JMP .-3         /05047 /DEP
+ 115 000053* 0000  LOAD,   0               /00000 /DEP
  116 000054* 6753          STR             /06753 /DEP
- 117 000055* 5033          05033 /DEP
+ 117 000055* 5033          JMP START3      /05033 /DEP
  118 000056* 6752          XDR             /06752 /DEP
- 119 000057* 5453          05453 /DEP
- 120 000060* 0420          00420 /DEP
- 121 000061* 0020          00020 /DEP
- 122 000062* 0033  00033 /LA GO
- 123 000063* 0000  00000
- 124 000064* 0000  00000
- 125 000065* 0000  00000
- 126 000066* 0000  00000
- 127               
+ 119 000057* 5453          JMP I LOAD      /05453 /DEP
+ 120               RX1SAV,
+ 121 000060* 0420  CON420, 420             /00420 /DEP
+ 122 000061* 0020  UNIT,   20              /00020 /DEP
+ 123 000062* 0033  00033 /LA GO
+ 124 000063* 0000  00000
+ 125 000064* 0000  00000
+ 126 000065* 0000  00000
+ 127 000066* 0000  00000
  128               
  129               /Bootstrap 4: RL8A
  130 000067* 0001  00001 /LA
@@ -167,22 +167,29 @@
  167               $
 
 BSW     7002
+CON360  0046
+CON420  0060
 DLAG    6743
 DRST    6745
 IGNR    7774
 KRSF    7745
 LCD     6751
+LITRAL  0032
+LOAD    0053
 LOOP    7741
 PTR     7776
+READ    0020
+RX1SAV  0060
 SDN     6755
 SER     6754
 START1  7737
 START2  0024
-START3  0033 unreferenced
+START3  0033
 STR     6753
 UKCC    7756
 UKRB    7761
 UKRS    7771
 UKSF1   7757
 UKSF2   7767
+UNIT    0061
 XDR     6752

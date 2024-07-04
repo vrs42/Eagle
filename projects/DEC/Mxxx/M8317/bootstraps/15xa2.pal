@@ -31,7 +31,8 @@ KRSF,	RSF		/06011 /DEP
 	DCA UKSF1	/03357 /DEP
 	TAD KRSF	/01345 /DEP
 	DCA UKSF2	/03367 /DEP
-/Code either runs as is, or was patched above.
+/This is just the stock RIM loader. It either runs as is, 
+/or was patched above.
 UKCC,	KCC		/06032 /DEP
 UKSF1,	KSF		/06031 /DEP
 	JMP .-1		/05357 /DEP
@@ -75,6 +76,8 @@ START2,	DRST		/06745 /DEP
 00024 /LA GO
 
 /Bootstrap 3: RX8E
+/This is the hunting bootstrap for single or double density on drive 0 or 1.
+/(See XRX01S.PA.)
 00024 /LA
 00000 /LEA
 RELOC 00024
@@ -83,36 +86,39 @@ XDR=	6752		/Transfer Data Register
 STR=	6753		/Skip if Transfer Requested
 SER=	6754		/Skip if Error
 SDN=	6755		/Skip if Done
-	CLL CML RTL	/07126 /DEP
-	01060 /DEP
+BEG,	STL RTL		/07126 /DEP
+	TAD SELCT	/01060 /DEP
 	LCD		/06751 /DEP
 	CLA IAC		/07201 /DEP
-	04053 /DEP
-	04053 /DEP
+	JMS XFSUB	/04053 /DEP
+	JMS XFSUB	/04053 /DEP
 	CLL RAL		/07104 /DEP
+/Wait for done
 START3,	SDN		/06755 /DEP
-	05054 /DEP
+	JMP XFSUB+1	/05054 /DEP
 	SER		/06754 /DEP
 	SNA		/07450 /DEP
 	CLA SKP		/07610 /DEP
-	05046 /DEP
-	01060 /DEP
+	JMP UNLOAD	/05046 /DEP
+/Move on to the next drive
+	TAD SELCT	/01060 /DEP
 	CIA		/07041 /DEP
-	01061 /DEP
-	03060 /DEP
-	05024 /DEP
-	LCD		/06751 /DEP
-	04053 /DEP
-	03002 /DEP
-	02050 /DEP
-	05047 /DEP
-	00000 /DEP
+	TAD SELCTD	/01061 /DEP
+	DCA SELCT	/03060 /DEP
+	JMP BEG		/05024 /DEP
+UNLOAD,	LCD		/06751 /DEP
+DATLP,	JMS XFSUB	/04053 /DEP
+	DCA 2		/03002 /DEP
+	ISZ .-1		/02050 /DEP
+	JMP DATLP	/05047 /DEP
+/Data Transfer Subroutine
+XFSUB,	0		/00000 /DEP
 	STR		/06753 /DEP
-	05033 /DEP
+	JMP START3	/05033 /DEP
 	XDR		/06752 /DEP
-	05453 /DEP
-	CML RAL		/07024 /DEP
-	06030 /DEP
+	JMP I XFSUB	/05453 /DEP
+SELCT,	7024		/07024 /DEP
+SELCTD,	6030		/6030 /DEP
 00033 /LA GO
 
 /Bootstrap 4: RF08/DF32
