@@ -128,52 +128,55 @@
  128               
  129               /Bootstrap 4: RL8A
  130               /This is the bootstrap from the Device Extensions User Guide (AA-D319A-TA).
- 131 000067* 0001  00001 /LA
- 132 000070* 0000  00000 /LEA
- 133               RLDC=   6600            /Clear Device
- 134               RLSD=   6601            /Skip on Done
- 135               RLCA=   6603            /Load Command A
- 136               RLCB=   6604            /Load Command B
- 137               RLSA=   6605            /Load Sector Address
- 138               RLWC=   6607            /Load Word Count
- 139               RRSI=   6615            /Read Silo
- 140               RLSE=   6617            /Skip on Error
- 141               BSW=    7002            /Byte Swap (8/A)
- 142               RELOC 1
- 143 000001* 6600  START4, RLDC            /06600 /DEP
- 144 000002* 7201          CLA IAC         /07201 /DEP
- 145 000003* 4027          JMS RLLOAD      /04027 /DEP
- 146 000004* 1004          TAD .           /01004 /DEP
- 147 000005* 4027          JMS RLLOAD      /04027 /DEP
- 148 000006* 6615          RRSI            /06615 /DEP
- 149 000007* 7002          BSW             /07002 /DEP
- 150 000010* 7012          RTR             /07012 /DEP
- 151 000011* 6615          RRSI            /06615 /DEP
- 152 000012* 0025          AND C377        /00025 /DEP
- 153 000013* 7004          RAL             /07004 /DEP
- 154 000014* 6603          RLCA            /06603 /DEP
- 155 000015* 7325          CLA STL IAC RAL /07325 /DEP
- 156 000016* 4027          JMS RLLOAD      /04027 /DEP
- 157 000017* 7332          CLA STL RTR     /07332 /DEP
- 158 000020* 6605          RLSA            /06605 /DEP
- 159 000021* 1026          TAD C7600       /01026 /DEP
- 160 000022* 6607          RLWC            /06607 /DEP
- 161 000023* 7327          CLA STL IAC RTL /07327 /DEP
- 162 000024* 4027          JMS RLLOAD      /04027 /DEP
- 163 000025* 0377  C377,   377             /00377 /DEP
- 164 000026* 7600  C7600,  CLA 7600        /07600 /DEP
- 165 000027* 0000  RLLOAD, 0               /00000 /DEP
- 166 000030* 6604          RLCB            /06604 /DEP
- 167 000031* 6601          RLSD            /06601 /DEP
- 168 000032* 5031          JMP .-1         /05031 /DEP
- 169 000033* 6617          RLSE            /06617 /DEP
- 170 000034* 5427          JMP I RLLOAD    /05427 /DEP
- 171 000035* 5001          JMP START4      /05001 /DEP
- 172 000036* 0001  00001 /LA GO
- 173 000037* 0000          00000
- 174 000040* 0000          00000
- 175 000041* 0000          00000
- 176               $
+ 131               /See Appendix B.
+ 132 000067* 0001  00001 /LA
+ 133 000070* 0000  00000 /LEA
+ 134               RLDC=   6600            /Clear Device
+ 135               RLSD=   6601            /Skip on Done
+ 136               RLCA=   6603            /Load Command A
+ 137               RLCB=   6604            /Load Command B
+ 138               RLSA=   6605            /Load Sector Address
+ 139               RLWC=   6607            /Load Word Count
+ 140               RRSI=   6615            /Read Silo
+ 141               RLSE=   6617            /Skip on Error
+ 142               BSW=    7002            /Byte Swap (8/A)
+ 143               RELOC 1
+ 144 000001* 6600  START4, RLDC            /06600 /DEP
+ 145 000002* 7201          CLA IAC         /07201 /DEP
+ 146 000003* 4027          JMS IO          /04027 /DEP
+ 147 000004* 1004          TAD .           /01004 /DEP
+ 148 000005* 4027          JMS IO          /04027 /DEP
+ 149 000006* 6615          RRSI            /06615 /DEP
+ 150 000007* 7002          BSW             /07002 /DEP
+ 151 000010* 7012          RTR             /07012 /DEP
+ 152 000011* 6615          RRSI            /06615 /DEP
+ 153 000012* 0025          AND C377        /00025 /DEP
+ 154 000013* 7004          RAL             /07004 /DEP
+ 155 000014* 6603          RLCA            /06603 /DEP
+ 156 000015* 7325          CLA STL IAC RAL /07325 /DEP
+ 157 000016* 4027          JMS IO          /04027 /DEP
+ 158 000017* 7332          CLA STL RTR     /07332 /DEP
+ 159 000020* 6605          RLSA            /06605 /DEP
+ 160 000021* 1026          TAD C7600       /01026 /DEP
+ 161 000022* 6607          RLWC            /06607 /DEP
+ 162 000023* 7327          CLA STL IAC RTL /07327 /DEP
+ 163 000024* 4027          JMS IO          /04027 /DEP
+ 164               /Reading in secondary bootstrap prevents "IO" from
+ 165               /returning. Control continues in secondary bootstrap.
+ 166 000025* 0377  C377,   377             /00377 /DEP
+ 167 000026* 7600  C7600,  CLA 7600        /07600 /DEP
+ 168 000027* 0000  IO,     0               /00000 /DEP
+ 169 000030* 6604          RLCB            /06604 /DEP
+ 170 000031* 6601          RLSD            /06601 /DEP
+ 171 000032* 5031          JMP .-1         /05031 /DEP
+ 172 000033* 6617          RLSE            /06617 /DEP
+ 173 000034* 5427          JMP I IO        /05427 /DEP
+ 174 000035* 5001          JMP START4      /05001 /DEP
+ 175 000036* 0001  00001 /LA GO
+ 176 000037* 0000          00000
+ 177 000040* 0000          00000
+ 178 000041* 0000          00000
+ 179               $
 
 BSW     7002
 C377    0025
@@ -183,6 +186,7 @@ CON420  0060
 DLAG    6743
 DRST    6745
 IGNR    7774
+IO      0027
 KRSF    7745
 LCD     6751
 LITRAL  0032
@@ -193,7 +197,6 @@ READ    0020
 RLCA    6603
 RLCB    6604
 RLDC    6600
-RLLOAD  0027
 RLSA    6605
 RLSD    6601
 RLSE    6617

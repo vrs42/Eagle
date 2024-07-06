@@ -134,56 +134,85 @@
  134 007754* 5752          JMP I .-2       /05752 /DEP
  135 007755* 7750  07750 /LA GO
  136               
- 137               /Bootstrap 5: TA8E
- 138 007756* 4000  04000 /LA
- 139 007757* 0000  00000 /LEA
- 140               RELOC 04000
- 141 004000* 1237  START5, 01237 /DEP
- 142 004001* 1206          01206 /DEP
- 143 004002* 6704          06704 /DEP
- 144 004003* 6706          06706 /DEP
- 145 004004* 6703          06703 /DEP
- 146 004005* 5204          05204 /DEP
- 147 004006* 7264          07264 /DEP
- 148 004007* 6702          06702 /DEP
- 149 004010* 7610          07610 /DEP
- 150 004011* 3211          03211 /DEP
- 151 004012* 3636          03636 /DEP
- 152 004013* 1205          01205 /DEP
- 153 004014* 6704          06704 /DEP
- 154 004015* 6706          06706 /DEP
- 155 004016* 6701          06701 /DEP
- 156 004017* 5216          05216 /DEP
- 157 004020* 7002          07002 /DEP
- 158 004021* 7430          07430 /DEP
- 159 004022* 1636          01636 /DEP
- 160 004023* 7022          07022 /DEP
- 161 004024* 3636          03636 /DEP
- 162 004025* 7420          07420 /DEP
- 163 004026* 2236          02236 /DEP
- 164 004027* 2235          02235 /DEP
- 165 004030* 5215          05215 /DEP
- 166 004031* 7346          07346 /DEP
- 167 004032* 7002          07002 /DEP
- 168 004033* 3235          03235 /DEP
- 169 004034* 5201          05201 /DEP
- 170 004035* 7737          07737 /DEP
- 171 004036* 3557          03557 /DEP
- 172 004037* 7730          07730 /DEP
- 173 004040* 4000  04000 /LA GO
- 174               $
+ 137               /Bootstrap 5: TA8E/DECASSETTE
+ 138               /This can also be found in bootv4.pa as the bootloader for /CA.
+ 139               /Source code is in Appendix D of the CAPS Users Manual, DEC-8E-OCASA-B-D.
+ 140 007756* 4000  04000 /LA
+ 141 007757* 0000  00000 /LEA
+ 142               RELOC 04000
+ 143               KCLR=   6700            /Clear all
+ 144               KSDR=   6701            /Skip on data flag
+ 145               KSEN=   6702            /Skip on error
+ 146               KSBF=   6703            /Skip on ready flag
+ 147               KLSA=   6704            /Load status A
+ 148               KSAF=   6705            /Skip on any flag or error
+ 149               KGOA=   6706            /Assert status A
+ 150               KRSB=   6707            /Read status B
+ 151               LOC=    3602
+ 152 004000* 1237  START5, TAD M50         /01237 /DEP
+ 153 004001* 1206  CRCCHK, TAD L260        /01206 /DEP
+ 154 004002* 6704          KLSA            /06704 /DEP
+ 155 004003* 6706          KGOA            /06706 /DEP
+ 156 004004* 6703          KSBF            /06703 /DEP
+ 157 004005* 5204  RDCOD,  JMP .-1         /05204 /DEP
+ 158 004006* 7264  L260,   CML STA RAL     /07264 /DEP
+ 159 004007* 6702          KSEN            /06702 /DEP
+ 160 004010* 7610          SKP CLA         /07610 /DEP
+ 161 004011* 3211          DCA .           /03211 /DEP
+ 162 004012* 3636          DCA I CPTR      /03636 /DEP
+ 163 004013* 1205          TAD RDCOD       /01205 /DEP
+ 164               /Load into status register A
+ 165 004014* 6704          KLSA            /06704 /DEP
+ 166 004015* 6706  CLOOP,  KGOA            /06706 /DEP
+ 167               /Wait for data flag
+ 168 004016* 6701          KSDR            /06701 /DEP
+ 169 004017* 5216          JMP .-1         /05216 /DEP
+ 170 004020* 7002          BSW             /07002 /DEP
+ 171 004021* 7430          SZL             /07430 /DEP
+ 172 004022* 1636          TAD I CPTR      /01636 /DEP
+ 173 004023* 7022          CML BSW         /07022 /DEP
+ 174 004024* 3636          DCA I CPTR      /03636 /DEP
+ 175 004025* 7420          SNL             /07420 /DEP
+ 176 004026* 2236          ISZ CPTR        /02236 /DEP
+ 177 004027* 2235          ISZ KNT         /02235 /DEP
+ 178 004030* 5215          JMP CLOOP       /05215 /DEP
+ 179 004031* 7346          STA CLL RTL     /07346 /DEP
+ 180 004032* 7002          BSW             /07002 /DEP
+ 181 004033* 3235          DCA KNT         /03235 /DEP
+ 182 004034* 5201          JMP CRCCHK      /05201 /DEP
+ 183 004035* 7737  KNT,    7737            /07737 /DEP
+ 184 004036* 3557  CPTR,   LOC-23          /03557 /DEP
+ 185 004037* 7730  M50,    -50             /07730 /DEP
+ 186 004040* 4000  04000 /LA GO
+ 187               $
 
 BEG     0024
+CLOOP   4015
+CPTR    4036
+CRCCHK  4001
 DATLP   0047
 DFSC    6622
 DLAG    6743
 DMAR    6603
 DRST    6745
 IGNR    7774
+KCLR    6700 unreferenced
+KGOA    6706
+KLSA    6704
+KNT     4035
+KRSB    6707 unreferenced
 KRSF    7745
+KSAF    6705 unreferenced
+KSBF    6703
+KSDR    6701
+KSEN    6702
+L260    4006
 LCD     6751
+LOC     3602
 LOOP    7741
+M50     4037
 PTR     7776
+RDCOD   4005
 SDN     6755
 SELCT   0060
 SELCTD  0061
