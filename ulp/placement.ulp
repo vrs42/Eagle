@@ -1,0 +1,55 @@
+#usage "<qt><b>Perform substitutions in a DEC schematic to bring in into the 21st century.</b>\n"
+       "<p>"
+       "Changes part numbers (values) to modern equivalents."
+       "<p>"
+       "Usage: RUN xversion"
+       "<p>"
+       "<h3>You can also run this ULP from the command line:</h3><p>"
+       "RUN xversion<br>"
+       "<hr> "
+       "<author>Author: vrs@msn.com</author></qt>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+
+string Version = "0.1.1";
+string fPinPad[] = { "", "PIN", "PAD" };
+
+string name, tmp;
+string cmd;
+
+int i;
+// BUGBUG: Need to initialize font size, ratio, layer, etc.
+cmd = "layer 104;\n";
+cmd += "change font proportional;\n";
+cmd += "change size 0.05;\n";
+cmd += "change ratio 10;\n";
+cmd += "change align center;\n";
+
+if (board) {
+   // *** Enumerate the parts in the board. ***
+   board(B) {
+      B.elements(E) {
+         // Add E.name as text in layer ?? at (E.x, E.y).
+         name = E.name;
+         tmp = E.package.library;
+         if ((E.package.library == "diode") || (E.package.library == "rcl")) {
+             name = "-" + name + "-";
+         }
+         cmd += "TEXT " + name;
+         if (E.angle) {
+             sprintf(tmp, " R%-3.0f", E.angle);
+             cmd += tmp;
+         }
+         sprintf(tmp, " (%3.2f %3.2f);\n", u2inch(E.x), u2inch(E.y));
+         //sprintf(tmp, " center (%3.2f %3.2f);\n", u2inch(E.x), u2inch(E.y));
+         cmd += tmp;
+      }
+   }
+dlgMessageBox(cmd, "OK");
+   //exit ("");
+   exit (cmd);
+} else {
+    // *** Not a board! */
+    dlgMessageBox("Start this ULP from a board!", "OK");
+    exit (0);
+}

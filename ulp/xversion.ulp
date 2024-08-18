@@ -1,4 +1,4 @@
-#usage "<qt><b>Perform substitutions in a DEC schematic to bring in into the 21st century.</b>\n"
+#usage "<qt><b>Perform substitutions in a DEC schematic to bring it into the 21st century.</b>\n"
        "<p>"
        "Changes part numbers (values) to modern equivalents."
        "<p>"
