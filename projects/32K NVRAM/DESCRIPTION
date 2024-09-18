@@ -15,6 +15,7 @@ core memory.</LI>
 <LI><b>H02</b> is a drawing of the board for slot H02.</LI>
 <LI><b>H03</b> is a drawing of the board for slot H02.</LI>
 <LI><b>H04</b> is a drawing of the board for slot H04.</LI>
+<LI><b>H05</b> is a drawing of the board for slot H05.</LI>
 <LI><b>H05-dl</b> is a drawing of the board for slot H05 using delay lines.</LI>
 <LI><b>H05X1</b> is a drawing of the board for slot H05 using monostables.</LI>
 </UL>
