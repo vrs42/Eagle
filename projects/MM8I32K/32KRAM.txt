@@ -1,0 +1,19 @@
+Vincent Slyngstad
+
+Please build a quantity of 5 pieces of this 2-layer board. We are requesting
+1-oz. finished copper weight, 0.062" thick on FR4 material.
+
+The Gerber files included in this zip:
+
+File Name Description:
+32KRAM.otl Board Outline
+32KRAM.cmp Layer 1 (component side) 
+32KRAM.sol Layer 2 solder side
+32KRAM.stc Component-side solder mask
+32KRAM.sts Solder-side solder mask
+32KRAM.plc Component-side silkscreen (nomenclature)
+32KRAM.drd Excellon drill file
+32KRAM.drl Drill tool description 
+
+Any technical questions can be referred to vincent.slyngstad@gmail.com
+My contact number is 503-259-9615.
