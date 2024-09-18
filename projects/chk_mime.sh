@@ -22,8 +22,10 @@ while read i; do
     *.JPG" - image/jpeg") ;;
     *.png" - image/png")  ;;
     *.pdf" - application/pdf") ;;
+    */index" - application/octet-stream") ;;
     *.abs" - application/octet-stream") ;;
     *.bin" - application/octet-stream") ;;
+    *.BIN" - application/octet-stream") ;;
     *.bit" - application/octet-stream") ;;
     *.brd" - application/octet-stream") ;;
     *.cdb" - application/octet-stream") ;;
@@ -42,13 +44,16 @@ while read i; do
     *.idb" - application/octet-stream") ;;
     *.hb_info" - application/octet-stream") ;;
     *.ipinfo" - application/octet-stream") ;;
+    *.idx" - application/octet-stream") ;;
     *.ise" - application/octet-stream") ;;
     *.ise_ISE_Backup" - application/octet-stream") ;;
     *.kpt" - application/octet-stream") ;;
     *.lbr" - application/octet-stream") ;;
     *.lock" - application/octet-stream") ;;
     *.mcw" - application/octet-stream") ;;
+    *.pack" - application/octet-stream") ;;
     *.pof" - application/octet-stream") ;;
+    *.ok" - application/octet-stream") ;;
     *.qws" - application/octet-stream") ;;
     *.rcfdb" - application/octet-stream") ;;
     *.rdb" - application/octet-stream") ;;
