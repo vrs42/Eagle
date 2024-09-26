@@ -2557,21 +2557,6 @@ high speed (Philips)</description>
 </library>
 <library name="wirepad">
 <packages>
-<package name="2,15/1,0">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<wire x1="1.143" y1="-1.143" x2="1.143" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="-1.143" x2="0.635" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="0.635" x2="1.143" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="1.143" x2="0.635" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.143" x2="-1.143" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="1.143" x2="-1.143" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="-0.635" x2="-1.143" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="-1.143" x2="-0.635" y2="-1.143" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
-<text x="-1.143" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="1" size="0.0254" layer="27">&gt;VALUE</text>
-</package>
 <package name="3,17/1,3">
 <description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
 <wire x1="1.524" y1="-1.016" x2="1.524" y2="-1.524" width="0.1524" layer="21"/>
@@ -2598,22 +2583,6 @@ high speed (Philips)</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="2,15/1,0" prefix="PAD" uservalue="yes">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="2,15/1,0">
-<connects>
-<connect gate="1" pin="P" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="3,17/1,3" prefix="PAD" uservalue="yes">
 <description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
 <gates>
@@ -2772,16 +2741,14 @@ high speed (Philips)</description>
 </classes>
 <parts>
 <part name="D2" library="diode" deviceset="1N4148" device="DO35-10" value="1N4151"/>
-<part name="#2" library="wirepad" deviceset="2,15/1,0" device=""/>
-<part name="#2L" library="wirepad" deviceset="2,15/1,0" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="120"/>
 <part name="BLUE" library="wirepad" deviceset="3,17/1,3" device="" value="Relay-"/>
 <part name="ORANGE" library="wirepad" deviceset="3,17/1,3" device="" value="Relay+"/>
 <part name="Y-WHITE" library="wirepad" deviceset="3,17/1,3" device="" value="L1"/>
 <part name="WHITE" library="wirepad" deviceset="3,17/1,3" device="" value="L2"/>
 <part name="D1" library="dec-con" deviceset="6RS20SP4B4" device=""/>
-<part name="M2" library="dec-con" deviceset="6RS20SP4B4" device=""/>
 <part name="RDR-RUN" library="dec-con" deviceset="3002-1D1" device="" value="Wheelock 3002-1D1 12V"/>
+<part name="NC" library="wirepad" deviceset="3,17/1,3" device="" value=" "/>
 </parts>
 <sheets>
 <sheet>
@@ -2802,8 +2769,6 @@ high speed (Philips)</description>
 </plain>
 <instances>
 <instance part="D2" gate="G$1" x="33.02" y="27.94" rot="R90"/>
-<instance part="#2" gate="1" x="104.14" y="35.56" rot="R180"/>
-<instance part="#2L" gate="1" x="104.14" y="15.24" rot="R180"/>
 <instance part="R1" gate="G$1" x="40.64" y="22.86" rot="R90"/>
 <instance part="BLUE" gate="1" x="7.62" y="15.24"/>
 <instance part="ORANGE" gate="1" x="7.62" y="43.18"/>
@@ -2817,20 +2782,17 @@ high speed (Philips)</description>
 <attribute name="NAME" x="69.7484" y="26.67" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="71.755" y="19.05" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="M2" gate="V" x="88.9" y="25.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="92.6084" y="26.67" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="94.615" y="19.05" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="RDR-RUN" gate="G$1" x="40.64" y="38.1"/>
-<instance part="RDR-RUN" gate="G$2" x="58.42" y="25.4"/>
+<instance part="RDR-RUN" gate="G$2" x="53.34" y="25.4"/>
+<instance part="NC" gate="1" x="55.88" y="30.48" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="L1" class="0">
 <segment>
-<wire x1="58.42" y1="30.48" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="30.48" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="30.48" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
 <junction x="66.04" y="38.1"/>
@@ -2842,9 +2804,9 @@ high speed (Philips)</description>
 </net>
 <net name="L2" class="0">
 <segment>
-<wire x1="58.42" y1="15.24" x2="66.04" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="15.24" x2="66.04" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="15.24" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="15.24" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="15.24" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="20.32" x2="66.04" y2="15.24" width="0.1524" layer="91"/>
 <junction x="66.04" y="15.24"/>
 <label x="71.374" y="15.494" size="1.778" layer="95"/>
@@ -2878,22 +2840,6 @@ high speed (Philips)</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="88.9" y1="35.56" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="#2" gate="1" pin="P"/>
-<pinref part="M2" gate="V" pin="2"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<wire x1="101.6" y1="15.24" x2="88.9" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="15.24" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="#2L" gate="1" pin="P"/>
-<pinref part="M2" gate="V" pin="1"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <wire x1="40.64" y1="33.02" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
@@ -2905,8 +2851,7 @@ high speed (Philips)</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="113,1,101.879,34.3874,#2,,,,,"/>
-<approved hash="113,1,101.879,14.0674,#2L,,,,,"/>
+<approved hash="101,1,55.88,27.94,NC,P,,,,"/>
 </errors>
 </schematic>
 </drawing>

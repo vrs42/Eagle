@@ -1,0 +1,19 @@
+Vincent Slyngstad
+
+Please build a quantity of 5 pieces of this 2-layer board. We are requesting
+1-oz. finished copper weight, 0.062" thick on FR4 material.
+
+The Gerber files included in this zip:
+
+File Name Description:
+4915dec.otl Board Outline
+4915dec.cmp Layer 1 (component side) 
+4915dec.sol Layer 2 solder side
+4915dec.stc Component-side solder mask
+4915dec.sts Solder-side solder mask
+4915dec.plc Component-side silkscreen (nomenclature)
+4915dec.drd Excellon drill file
+4915dec.drl Drill tool description 
+
+Any technical questions can be referred to vincent.slyngstad@gmail.com
+My contact number is 503-259-9615.

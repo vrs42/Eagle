@@ -193,21 +193,6 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 </library>
 <library name="wirepad">
 <packages>
-<package name="2,15/1,0">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<wire x1="1.143" y1="-1.143" x2="1.143" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="-1.143" x2="0.635" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="0.635" x2="1.143" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="1.143" x2="0.635" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.143" x2="-1.143" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="1.143" x2="-1.143" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="-0.635" x2="-1.143" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="-1.143" x2="-0.635" y2="-1.143" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
-<text x="-1.143" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="1" size="0.0254" layer="27">&gt;VALUE</text>
-</package>
 <package name="3,17/1,3">
 <description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
 <wire x1="1.524" y1="-1.016" x2="1.524" y2="-1.524" width="0.1524" layer="21"/>
@@ -441,31 +426,27 @@ design rules under a new name.</description>
 <attribute name="NAME" x="46.101" y="88.9" size="1.27" layer="25" ratio="24"/>
 <attribute name="VALUE" x="46.101" y="90.678" size="1.27" layer="27" ratio="24"/>
 </element>
-<element name="#2" library="wirepad" package="2,15/1,0" value="" x="79.375" y="66.675"/>
-<element name="#2L" library="wirepad" package="2,15/1,0" value="" x="79.375" y="25.4" rot="R180"/>
 <element name="R1" library="rcl" package="0207/10" value="120" x="48.26" y="84.455"/>
 <element name="BLUE" library="wirepad" package="3,17/1,3" value="Relay-" x="5.715" y="89.535"/>
 <element name="ORANGE" library="wirepad" package="3,17/1,3" value="Relay+" x="5.715" y="71.755"/>
 <element name="Y-WHITE" library="wirepad" package="3,17/1,3" value="L1" x="5.715" y="80.645"/>
 <element name="WHITE" library="wirepad" package="3,17/1,3" value="L2" x="55.245" y="67.31"/>
 <element name="D1" library="dec-con" package="6RS20SP4B4" value="6RS20SP4B4" x="46.355" y="47.625" rot="R90"/>
-<element name="M2" library="dec-con" package="6RS20SP4B4" value="6RS20SP4B4" x="79.375" y="45.72" rot="R90"/>
 <element name="RDR-RUN" library="dec-con" package="3002-1D1" value="Wheelock 3002-1D1 12V" x="22.86" y="60.325" rot="R90"/>
+<element name="NC" library="wirepad" package="3,17/1,3" value=" " x="22.86" y="85.725" rot="R180"/>
 </elements>
 <signals>
 <signal name="L1">
 <contactref element="Y-WHITE" pad="1"/>
 <contactref element="D1" pad="2"/>
 <contactref element="RDR-RUN" pad="4"/>
-<wire x1="5.715" y1="81.28" x2="5.715" y2="83.82" width="0.8128" layer="16"/>
+<wire x1="5.715" y1="80.645" x2="5.715" y2="83.82" width="0.8128" layer="16"/>
 <wire x1="5.715" y1="83.82" x2="15.24" y2="83.82" width="0.8128" layer="16"/>
 <wire x1="15.24" y1="83.82" x2="21.59" y2="90.17" width="0.8128" layer="16"/>
-<wire x1="30.48" y1="81.28" x2="46.355" y2="65.405" width="0.8128" layer="16"/>
-<wire x1="22.86" y1="88.9" x2="30.48" y2="81.28" width="0.8128" layer="16"/>
-<wire x1="22.86" y1="89.535" x2="22.86" y2="88.9" width="0.8128" layer="16"/>
-<wire x1="22.86" y1="90.805" x2="22.86" y2="89.535" width="0.8128" layer="16"/>
 <wire x1="21.59" y1="90.17" x2="22.86" y2="90.805" width="0.8128" layer="16"/>
-<wire x1="5.715" y1="80.645" x2="5.715" y2="81.28" width="0.8128" layer="16"/>
+<wire x1="22.86" y1="90.805" x2="23.495" y2="90.805" width="0.8128" layer="16"/>
+<wire x1="23.495" y1="90.805" x2="46.355" y2="67.945" width="0.8128" layer="16"/>
+<wire x1="46.355" y1="65.405" x2="46.355" y2="67.945" width="0.8128" layer="16"/>
 </signal>
 <signal name="L2">
 <contactref element="WHITE" pad="1"/>
@@ -484,30 +465,16 @@ design rules under a new name.</description>
 <contactref element="D2" pad="C"/>
 <contactref element="ORANGE" pad="1"/>
 <contactref element="RDR-RUN" pad="7"/>
-<wire x1="41.275" y1="74.93" x2="41.275" y2="85.725" width="0.8128" layer="16"/>
-<wire x1="49.53" y1="66.675" x2="41.275" y2="74.93" width="0.8128" layer="16"/>
+<wire x1="41.275" y1="76.2" x2="41.275" y2="85.725" width="0.8128" layer="16"/>
+<wire x1="49.53" y1="67.945" x2="41.275" y2="76.2" width="0.8128" layer="16"/>
 <wire x1="41.275" y1="85.725" x2="43.18" y2="87.63" width="0.8128" layer="16"/>
 <wire x1="9.525" y1="34.925" x2="5.08" y2="39.37" width="0.8128" layer="16"/>
-<wire x1="49.53" y1="53.975" x2="49.53" y2="66.675" width="0.8128" layer="16"/>
+<wire x1="49.53" y1="53.975" x2="49.53" y2="67.945" width="0.8128" layer="16"/>
 <wire x1="22.225" y1="34.925" x2="49.53" y2="53.975" width="0.8128" layer="16"/>
 <wire x1="17.145" y1="34.925" x2="22.225" y2="34.925" width="0.8128" layer="16"/>
 <wire x1="9.525" y1="34.925" x2="17.145" y2="34.925" width="0.8128" layer="16"/>
 <wire x1="5.08" y1="39.37" x2="5.08" y2="70.485" width="0.8128" layer="16"/>
 <wire x1="5.08" y1="70.485" x2="5.715" y2="71.755" width="0.8128" layer="16"/>
-</signal>
-<signal name="N$4">
-<contactref element="#2" pad="1"/>
-<contactref element="M2" pad="2"/>
-<wire x1="78.74" y1="64.135" x2="78.74" y2="66.04" width="0.8128" layer="16"/>
-<wire x1="78.74" y1="66.04" x2="79.375" y2="66.675" width="0.8128" layer="16"/>
-<wire x1="79.375" y1="63.5" x2="78.74" y2="64.135" width="0.8128" layer="16"/>
-</signal>
-<signal name="N$5">
-<contactref element="#2L" pad="1"/>
-<contactref element="M2" pad="1"/>
-<wire x1="78.74" y1="26.035" x2="78.74" y2="27.305" width="0.8128" layer="16"/>
-<wire x1="79.375" y1="25.4" x2="78.74" y2="26.035" width="0.8128" layer="16"/>
-<wire x1="78.74" y1="27.305" x2="79.375" y2="27.94" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$6">
 <wire x1="0" y1="25.4" x2="63.5" y2="25.4" width="0.8128" layer="16"/>
