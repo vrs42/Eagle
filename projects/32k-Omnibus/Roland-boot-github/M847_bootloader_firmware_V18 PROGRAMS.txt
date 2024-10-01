@@ -12,7 +12,7 @@ These programs can be selected by SW switch OR set as default with dipswitches
 11 RIM loader 03/04
 12 BIN loader 03/04
 13 BIN loader 40/41
-14 Kaleisoscope
+14 Kaleidoscope
 15 MI8-EE Typeset
 16 MI8-EF Edu sys low
 17 MI8-EG Edu sys high
@@ -34,7 +34,7 @@ The next can only be loaded by toggling the SW switch or pushbutton on the PCB o
 33 Echo test for one terminal at 03/04
 34 echo 1-4 terminals
 35 PC04 Punch alternating 1's and 0's
-36 PC04 read the papertape (doesn't load to core, just for test purposes)
+36 PC04 read the paper tape (doesn't load to core, just for test purposes)
 37 Place received character into AC from terminal at 03/04
 
 40 Wipe core field 0 (Just let it run for a few seconds)
