@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3448,6 +3448,7 @@
 <pin name="-30V@AE2" x="-10.16" y="22.86" visible="pad" length="middle" direction="sup"/>
 </symbol>
 <symbol name="G826">
+<description>Regulator Control</description>
 <wire x1="-20.32" y1="10.16" x2="-20.32" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-10.16" x2="20.32" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-10.16" x2="20.32" y2="10.16" width="0.254" layer="94"/>
@@ -3464,7 +3465,7 @@
 <text x="-17.526" y="-9.652" size="1.778" layer="94">STOP_OK</text>
 <pin name="BR2" x="-25.4" y="5.08" visible="pad" length="middle" direction="pas"/>
 <pin name="BS2" x="-25.4" y="-5.08" visible="pad" length="middle" direction="pas"/>
-<pin name="AH2" x="-12.7" y="-15.24" visible="pad" length="middle" direction="in" rot="R90"/>
+<pin name="AH2" x="-12.7" y="-15.24" visible="pad" length="middle" direction="pas" rot="R90"/>
 <pin name="AF2" x="12.7" y="-15.24" visible="pad" length="middle" direction="out" rot="R90"/>
 <pin name="AJ2" x="-12.7" y="15.24" visible="pad" length="middle" rot="R270"/>
 <pin name="BJ2" x="25.4" y="-7.62" visible="pad" length="middle" direction="out" rot="R180"/>
@@ -3472,6 +3473,9 @@
 <pin name="-6V@BM2" x="25.4" y="2.54" visible="pad" length="middle" direction="sup" rot="R180"/>
 <pin name="-30V@BV2" x="25.4" y="7.62" visible="pad" length="middle" direction="sup" rot="R180"/>
 <pin name="AS2" x="12.7" y="15.24" visible="pad" length="middle" rot="R270"/>
+<pin name="AT2" x="-2.54" y="-15.24" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="AR2" x="-5.08" y="-15.24" visible="pad" length="middle" direction="out" rot="R90"/>
+<pin name="BF2" x="2.54" y="-15.24" visible="pad" length="middle" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="-6V">
 <text x="1.778" y="0.254" size="1.27" layer="95" ratio="7" rot="R90">-6V</text>
@@ -14853,6 +14857,53 @@
 <circle x="-7.62" y="0" radius="0.127" width="0.1524" layer="94"/>
 <circle x="-7.62" y="0" radius="0.179603125" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="G785">
+<description>5V Regulator</description>
+<text x="-2.032" y="7.62" size="1.27" layer="94">&gt;Part</text>
+<pin name="VCC@3" x="20.32" y="10.16" visible="pad" direction="sup" rot="R180"/>
+<pin name="GND@3" x="-5.08" y="-27.94" visible="pad" direction="sup" rot="R90"/>
+<text x="-2.032" y="6.096" size="1.27" layer="94">&gt;Value</text>
+<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<pin name="VCC" x="20.32" y="15.24" visible="pad" direction="sup" rot="R180"/>
+<pin name="VCC@2" x="20.32" y="12.7" visible="pad" direction="sup" rot="R180"/>
+<pin name="VCC@4" x="20.32" y="7.62" visible="pad" direction="sup" rot="R180"/>
+<pin name="GND@2" x="-7.62" y="-27.94" visible="pad" direction="sup" rot="R90"/>
+<pin name="GND" x="-10.16" y="-27.94" visible="pad" direction="sup" rot="R90"/>
+<pin name="GND@4" x="-2.54" y="-27.94" visible="pad" direction="sup" rot="R90"/>
+<pin name="GND@5" x="2.54" y="-27.94" visible="pad" direction="sup" rot="R90"/>
+<pin name="GND@6" x="5.08" y="-27.94" visible="pad" direction="sup" rot="R90"/>
+<pin name="GND@7" x="7.62" y="-27.94" visible="pad" direction="sup" rot="R90"/>
+<pin name="VCC@5" x="20.32" y="5.08" visible="pad" direction="sup" rot="R180"/>
+<pin name="VCC@6" x="20.32" y="2.54" visible="pad" direction="sup" rot="R180"/>
+<pin name="VCC@7" x="20.32" y="0" visible="pad" direction="sup" rot="R180"/>
+<pin name="VCC@8" x="20.32" y="-2.54" visible="pad" direction="sup" rot="R180"/>
+<text x="-2.286" y="-20.574" size="1.27" layer="95" rot="R270">GND</text>
+<text x="10.414" y="-20.574" size="1.27" layer="95" rot="R270">GND</text>
+<text x="12.192" y="2.54" size="1.27" layer="94" rot="R90">5V Regulator</text>
+<pin name="GND@8" x="10.16" y="-27.94" visible="pad" direction="sup" rot="R90"/>
+<pin name="MEM_SUPPLY-@1" x="-20.32" y="15.24" visible="pad" direction="pwr"/>
+<pin name="MEM_SUPPLY+@1" x="-20.32" y="2.54" visible="pad" direction="pwr"/>
+<pin name="MEM_REG@1" x="-20.32" y="-10.16" visible="pad" direction="in"/>
+<pin name="MEM_REG@2" x="-20.32" y="-12.7" visible="pad" direction="in"/>
+<pin name="MEM_SUPPLY-@2" x="-20.32" y="12.7" visible="pad" direction="pwr"/>
+<pin name="MEM_SUPPLY-@3" x="-20.32" y="10.16" visible="pad" direction="pwr"/>
+<pin name="MEM_SUPPLY-@4" x="-20.32" y="7.62" visible="pad" direction="pwr"/>
+<pin name="MEM_SUPPLY+@2" x="-20.32" y="0" visible="pad" direction="pwr"/>
+<pin name="MEM_SUPPLY+@3" x="-20.32" y="-2.54" visible="pad" direction="pwr"/>
+<pin name="MEM_SUPPLY+@4" x="-20.32" y="-5.08" visible="pad" direction="pwr"/>
+<text x="-12.446" y="-12.7" size="1.27" layer="94">Mem. Reg.</text>
+<text x="-12.446" y="0" size="1.27" layer="94">Mem. Sup+</text>
+<text x="-12.446" y="12.7" size="1.27" layer="94">Mem. Sup-</text>
+<pin name="AU2" x="20.32" y="-7.62" visible="pad" direction="out" rot="R180"/>
+<pin name="AV2" x="20.32" y="-12.7" visible="pad" direction="out" rot="R180"/>
+<text x="12.446" y="-12.7" size="1.27" layer="94" rot="MR0">Slice</text>
+<text x="12.446" y="-7.62" size="1.27" layer="94" rot="MR0">Line Low</text>
+<pin name="AB2" x="-20.32" y="-17.78" visible="pad" direction="in"/>
+<text x="-12.446" y="-17.78" size="1.27" layer="94">-15V</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="M101" prefix="M101_">
@@ -17326,7 +17377,10 @@ Power: 5V@82ma (max.)
 <connect gate="G$1" pin="AF2" pad="AF2"/>
 <connect gate="G$1" pin="AH2" pad="AH2"/>
 <connect gate="G$1" pin="AJ2" pad="AJ2"/>
+<connect gate="G$1" pin="AR2" pad="AR2"/>
 <connect gate="G$1" pin="AS2" pad="AS2"/>
+<connect gate="G$1" pin="AT2" pad="AT2"/>
+<connect gate="G$1" pin="BF2" pad="BF2"/>
 <connect gate="G$1" pin="BJ2" pad="BJ2"/>
 <connect gate="G$1" pin="BK2" pad="BK2"/>
 <connect gate="G$1" pin="BR2" pad="BR2"/>
@@ -23529,6 +23583,50 @@ Power: 5V@82ma (max.)
 <connect gate="U2" pin="!OUT" pad="N1"/>
 <connect gate="U2" pin="IN" pad="V2"/>
 <connect gate="U2" pin="OUT" pad="U2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="G785" prefix="G785_">
+<description>G785 Power Supoply Connector</description>
+<gates>
+<gate name="G$1" symbol="G785" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H800-2">
+<connects>
+<connect gate="G$1" pin="AB2" pad="AB2"/>
+<connect gate="G$1" pin="AU2" pad="AU2"/>
+<connect gate="G$1" pin="AV2" pad="AV2"/>
+<connect gate="G$1" pin="GND" pad="AC2"/>
+<connect gate="G$1" pin="GND@2" pad="BC2"/>
+<connect gate="G$1" pin="GND@3" pad="AD2"/>
+<connect gate="G$1" pin="GND@4" pad="AE2"/>
+<connect gate="G$1" pin="GND@5" pad="BD2"/>
+<connect gate="G$1" pin="GND@6" pad="BE2"/>
+<connect gate="G$1" pin="GND@7" pad="BF2"/>
+<connect gate="G$1" pin="GND@8" pad="BH2"/>
+<connect gate="G$1" pin="MEM_REG@1" pad="BJ2"/>
+<connect gate="G$1" pin="MEM_REG@2" pad="BK2"/>
+<connect gate="G$1" pin="MEM_SUPPLY+@1" pad="BM2"/>
+<connect gate="G$1" pin="MEM_SUPPLY+@2" pad="AN2"/>
+<connect gate="G$1" pin="MEM_SUPPLY+@3" pad="AP2"/>
+<connect gate="G$1" pin="MEM_SUPPLY+@4" pad="AR2"/>
+<connect gate="G$1" pin="MEM_SUPPLY-@1" pad="BS2"/>
+<connect gate="G$1" pin="MEM_SUPPLY-@2" pad="BT2"/>
+<connect gate="G$1" pin="MEM_SUPPLY-@3" pad="BU2"/>
+<connect gate="G$1" pin="MEM_SUPPLY-@4" pad="BV2"/>
+<connect gate="G$1" pin="VCC" pad="AA2"/>
+<connect gate="G$1" pin="VCC@2" pad="AF2"/>
+<connect gate="G$1" pin="VCC@3" pad="BA2"/>
+<connect gate="G$1" pin="VCC@4" pad="AM2"/>
+<connect gate="G$1" pin="VCC@5" pad="AH2"/>
+<connect gate="G$1" pin="VCC@6" pad="AL2"/>
+<connect gate="G$1" pin="VCC@7" pad="AJ2"/>
+<connect gate="G$1" pin="VCC@8" pad="AK2"/>
 </connects>
 <technologies>
 <technology name=""/>
