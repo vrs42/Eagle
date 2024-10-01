@@ -1,0 +1,2661 @@
+Pinlist
+
+Exported from BM8L.sch at 3/29/2023 6:08:36 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+A08      A1       IN1        in       BMB06
+         A2       VCC        pwr      VCC
+         B1       IN2        in       !BMB05
+         C1       IN3        in       BMB04
+         C2       GND        pwr      GND
+         D1       IN4        in       !BMB03
+         D2       IN1        in       BIOP4
+         E1       OUT        out      N$43
+         E2       IN2        in       EXT_MEM
+         F1       IN1        in       +3V(A08V1)
+         F2       IN3        in       BMB07
+         H1       IN2        in       !BMB05
+         H2       IN4        in       !BMB08
+         J1       IN3        in       BMB04
+         J2       OUT        out      !RIF
+         K1       IN4        in       !BMB03
+         K2       IN1        in       BIOP4
+         L1       OUT        out      N$44
+         L2       IN2        in       EXT_MEM
+         M1       IN1        in       BIOP4
+         M2       IN3        in       !BMB07
+         N1       IN2        in       EXT_MEM
+         N2       IN4        in       BMB08
+         P1       IN3        in       BMB07
+         P2       OUT        out      !RDF
+         R1       IN4        in       BMB08
+         R2       IN1        in       BIOP4
+         S1       OUT        out      !RIB
+         S2       IN2        in       !BMB07
+         T1       GND        pwr      GND
+         T2       IN3        in       !BMB08
+         U1       P$1        pas               ***   unused    ***
+         U2       IN4        in       SAVE_FIELD
+         V1       P$1        pas      +3V(A08V1)
+         V2       OUT        out      !RMF
+
+A09      A1       IN         in       !RIF
+         A2       VCC        pwr      VCC
+         B1       OUT        out      RIF
+         C1       IN         in       !RDF
+         C2       GND        pwr      GND
+         D1       IN         in       !BF_ENABLE
+         D2       OUT        out      RDF
+         E1       OUT        out      BF_ENA
+         E2       IN         in       !KEY_IF2
+         F1       IN         in       !KEY_LOAD
+         F2       OUT        out      KEY_IF2
+         H1       OUT        out      KEY_LOAD
+         H2       IN         in                ***   unused    ***
+         J1       IN         in       !KEY_DF2
+         J2       OUT        out               ***   unused    ***
+         K1       OUT        out      KEY_DF2
+         K2       IN         in       !DF_ENABLE
+         L1       IN         in                ***   unused    ***
+         L2       OUT        out      DF_ENA
+         M1       OUT        out               ***   unused    ***
+         M2       IN         in                ***   unused    ***
+         N1       IN         in                ***   unused    ***
+         N2       OUT        out               ***   unused    ***
+         P1       OUT        out               ***   unused    ***
+         P2       IN         in                ***   unused    ***
+         R1       IN         in                ***   unused    ***
+         R2       OUT        out               ***   unused    ***
+         S1       OUT        out               ***   unused    ***
+         S2       IN         in                ***   unused    ***
+         T1       GND        pwr      GND
+         T2       OUT        out               ***   unused    ***
+         U1       OUT        out               ***   unused    ***
+         U2       IN         in                ***   unused    ***
+         V1       IN         in                ***   unused    ***
+         V2       OUT        out               ***   unused    ***
+
+A10      A1       R          in       N$51
+         A2       VCC        pwr      VCC
+         B1       C          in       N$49
+         C1       D          in       N$52
+         C2       GND        pwr      GND
+         D1       S          in       +3V(A08V1)
+         D2       C          in       N$49
+         E1       1          out               *** unconnected ***
+         E2       D          in       N$55
+         F1       0          out      N$68
+         F2       S          in       +3V(A08V1)
+         H1       C          in       N$49
+         H2       1          out               *** unconnected ***
+         J1       D          in       N$56
+         J2       0          out      N$69
+         K1       S          in       +3V(A08V1)
+         K2       R          in       N$51
+         L1       1          out               *** unconnected ***
+         L2       C          in       N$49
+         M1       0          out      N$70
+         M2       D          in       N$57
+         N1       C          in       N$49
+         N2       S          in       +3V(A08V1)
+         P1       D          in       N$61
+         P2       1          out               *** unconnected ***
+         R1       S          in       +3V(A08V1)
+         R2       0          out      N$71
+         S1       1          out               *** unconnected ***
+         S2       C          in       N$49
+         T1       GND        pwr      GND
+         T2       D          in       N$58
+         U1       0          out      N$66
+         U2       S          in       +3V(A08V1)
+         V1       0          out      N$67
+         V2       1          out               *** unconnected ***
+
+A11      A2       VCC        pwr      VCC
+         B2       -15V       pwr      -15V
+         C2       GND        pwr      GND
+
+A12      A2       VCC        pwr      VCC
+         B2       -15V       pwr      -15V
+         C2       GND        pwr      GND
+
+A13      A2       VCC        pwr      VCC
+         B2       -15V       pwr      -15V
+         C2       GND        pwr      GND
+
+A14      A1       A          in       !IF0
+         A2       VCC        pwr      VCC
+         B1       B          in       !IF1
+         C1       C          in       !RIF
+         C2       GND        pwr      GND
+         D1       D          oc       !AC06_BUS
+         D2       A          in       !SF0
+         E1       E          oc       !AC07_BUS
+         E2       B          in       !SF1
+         F1       A          in       !DF0
+         F2       C          in       !RIB
+         H1       B          in       !DF1
+         H2       D          oc       !AC06_BUS
+         J1       C          in       !RDF
+         J2       E          oc       !AC09_BUS
+         K1       D          oc       !AC06_BUS
+         K2       A          in       !SF2
+         L1       E          oc       !AC07_BUS
+         L2       B          in       !SF3
+         M1       A          in       N$42
+         M2       C          in       !RIB
+         N1       B          in       N$45
+         N2       D          oc       !AC07_BUS
+         P1       C          in       GND
+         P2       E          oc       !AC10_BUS
+         R1       D          oc       !AC08_BUS
+         R2       A          in       !SF4
+         S1       E          oc       !AC08_BUS
+         S2       B          in       !SF5
+         T1       GND        pwr      GND
+         T2       C          in       !RIB
+         U1       GND        pwr      GND
+         U2       D          oc       !AC08_BUS
+         V1       GND        pwr      GND
+         V2       E          oc       !AC11_BUS
+
+A15      A2       VCC        pwr      VCC
+         B2       -15V       pwr      -15V
+         C2       GND        pwr      GND
+
+A16      A1       GND        pwr      GND
+         B1       P$2        io       BAC00
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       BAC01
+         D2       P$2        io       BAC09
+         E1       P$2        io       BAC02
+         E2       P$2        io       BAC10
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       BAC03
+         H2       P$2        io       BAC11
+         J1       P$2        io       BAC04
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       BIOP1
+         L1       P$2        io       BAC05
+         L2       GND        pwr      GND
+         M1       P$2        io       BAC06
+         M2       P$2        io       BIOP2
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       BAC07
+         P2       P$2        io       BIOP4
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       BAC08
+         S2       P$2        io       BTS3
+         T1       GND        pwr      GND
+         T2       P$2        io       BTS1
+         U2       GND        pwr      GND
+         V2       P$2        io       B_INITIALIZE
+
+A17      A1       GND        pwr      GND
+         B1       P$2        io       BMB00
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       BMB01
+         D2       P$2        io       !BMB06
+         E1       P$2        io       BMB02
+         E2       P$2        io       BMB06
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       !BMB03
+         H2       P$2        io       !BMB07
+         J1       P$2        io       BMB03
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       BMB07
+         L1       P$2        io       !BMB04
+         L2       GND        pwr      GND
+         M1       P$2        io       BMB04
+         M2       P$2        io       !BMB08
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !BMB05
+         P2       P$2        io       BMB08
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       BMB05
+         S2       P$2        io       BMB09
+         T1       GND        pwr      GND
+         T2       P$2        io       BMB10
+         U2       GND        pwr      GND
+         V2       P$2        io       BMB11
+
+A18      A1       GND        pwr      GND
+         B1       P$2        io       !AC00_BUS
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       !AC01_BUS
+         D2       P$2        io       !AC09_BUS
+         E1       P$2        io       !AC02_BUS
+         E2       P$2        io       !AC10_BUS
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       !AC03_BUS
+         H2       P$2        io       !AC11_BUS
+         J1       P$2        io       !AC04_BUS
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       !SKIP_BUS
+         L1       P$2        io       !AC05_BUS
+         L2       GND        pwr      GND
+         M1       P$2        io       !AC06_BUS
+         M2       P$2        io       !IRQ_BUS
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !AC07_BUS
+         P2       P$2        io       !AC_CLR_BUS
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       !AC08_BUS
+         S2       P$2        io       !B_RUN
+         T1       GND        pwr      GND
+         T2       P$2        io       N$120
+         U2       GND        pwr      GND
+         V2       P$2        io       N$119
+
+A19      A1       GND        pwr      GND
+         B1       P$2        io       !DA00
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       !DA01
+         D2       P$2        io       !DA09
+         E1       P$2        io       !DA02
+         E2       P$2        io       !DA10
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       !DA03
+         H2       P$2        io       !DA11
+         J1       P$2        io       !DA04
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       !BRQ
+         L1       P$2        io       !DA05
+         L2       GND        pwr      GND
+         M1       P$2        io       !DA06
+         M2       P$2        io       !DATA_IN
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !DA07
+         P2       P$2        io       !BREAK
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       !DA08
+         S2       P$2        io       !ADD_ACCEPTED
+         T1       GND        pwr      GND
+         T2       P$2        io       !MB_INCR
+         U2       GND        pwr      GND
+         V2       P$2        io       B_INIT
+
+A20      A1       GND        pwr      GND
+         B1       P$2        io       !DATA00
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       !DATA01
+         D2       P$2        io       !DATA09
+         E1       P$2        io       !DATA02
+         E2       P$2        io       !DATA10
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       !DATA03
+         H2       P$2        io       !DATA11
+         J1       P$2        io       !DATA04
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       !3CYCLE
+         L1       P$2        io       !DATA05
+         L2       GND        pwr      GND
+         M1       P$2        io       !DATA06
+         M2       P$2        io       !CA_INCR
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !DATA07
+         P2       P$2        io       !WC_OVFL
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       !DATA08
+         S2       P$2        io       !EX_DA2
+         T1       GND        pwr      GND
+         T2       P$2        io       !EX_DA1
+         U2       GND        pwr      GND
+         V2       P$2        io       !EX_DA0
+
+AB01     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io                ***   unused    ***
+         AC2      P$2        io       GND
+         AD1      P$2        io                ***   unused    ***
+         AD2      P$2        io                ***   unused    ***
+         AE1      P$2        io                ***   unused    ***
+         AE2      P$2        io                ***   unused    ***
+         AF1      P$2        io                ***   unused    ***
+         AF2      P$2        io                ***   unused    ***
+         AH1      P$2        io                ***   unused    ***
+         AH2      P$2        io                ***   unused    ***
+         AJ1      P$2        io                ***   unused    ***
+         AJ2      P$2        io                ***   unused    ***
+         AK1      P$2        io                ***   unused    ***
+         AK2      P$2        io                ***   unused    ***
+         AL1      P$2        io                ***   unused    ***
+         AL2      P$2        io                ***   unused    ***
+         AM1      P$2        io                ***   unused    ***
+         AM2      P$2        io                ***   unused    ***
+         AN1      P$2        io                ***   unused    ***
+         AN2      P$2        io                ***   unused    ***
+         AP1      P$2        io                ***   unused    ***
+         AP2      P$2        io                ***   unused    ***
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io                ***   unused    ***
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io                ***   unused    ***
+         AT1      P$2        io                ***   unused    ***
+         AT2      P$2        io                ***   unused    ***
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io                ***   unused    ***
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       VCC
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io                ***   unused    ***
+         BC2      P$2        io       GND
+         BD1      P$2        io                ***   unused    ***
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io                ***   unused    ***
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io                ***   unused    ***
+         BF2      P$2        io                ***   unused    ***
+         BH1      P$2        io                ***   unused    ***
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io                ***   unused    ***
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io                ***   unused    ***
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io                ***   unused    ***
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io                ***   unused    ***
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io                ***   unused    ***
+         BN2      P$2        io                ***   unused    ***
+         BP1      P$2        io                ***   unused    ***
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io                ***   unused    ***
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io                ***   unused    ***
+         BT2      P$2        io                ***   unused    ***
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io                ***   unused    ***
+
+AB02     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io       !MA00
+         AD2      P$2        io       !EMA00
+         AE1      P$2        io       !MA01
+         AE2      P$2        io       !EMA01
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io       !MA02
+         AH2      P$2        io       !EMA02
+         AJ1      P$2        io       !MA03
+         AJ2      P$2        io                ***   unused    ***
+         AK1      P$2        io       !MD00
+         AK2      P$2        io       !READ
+         AL1      P$2        io       !MD01
+         AL2      P$2        io       SOURCE
+         AM1      P$2        io       !MD02
+         AM2      P$2        io       STROBE
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io       !MD03
+         AP2      P$2        io       INHIBIT
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io       RETURNH
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io       WRITE
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io       +3V
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       VCC
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA04
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA05
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA06
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA07
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD04
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD05
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD06
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD07
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io                ***   unused    ***
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io       AC_OK
+
+AB03     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io       !MA00
+         AD2      P$2        io       !EMA00
+         AE1      P$2        io       !MA01
+         AE2      P$2        io       !EMA01
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io       !MA02
+         AH2      P$2        io       !EMA02
+         AJ1      P$2        io       !MA03
+         AJ2      P$2        io                ***   unused    ***
+         AK1      P$2        io       !MD00
+         AK2      P$2        io       !READ
+         AL1      P$2        io       !MD01
+         AL2      P$2        io       SOURCE
+         AM1      P$2        io       !MD02
+         AM2      P$2        io       STROBE
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io       !MD03
+         AP2      P$2        io       INHIBIT
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io       RETURNH
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io       WRITE
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io       +3V
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       VCC
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA04
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA05
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA06
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA07
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD04
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD05
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD06
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD07
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io                ***   unused    ***
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io       AC_OK
+
+AB04     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io       !MA00
+         AD2      P$2        io       !EMA00
+         AE1      P$2        io       !MA01
+         AE2      P$2        io       !EMA01
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io       !MA02
+         AH2      P$2        io       !EMA02
+         AJ1      P$2        io       !MA03
+         AJ2      P$2        io                ***   unused    ***
+         AK1      P$2        io       !MD00
+         AK2      P$2        io       !READ
+         AL1      P$2        io       !MD01
+         AL2      P$2        io       SOURCE
+         AM1      P$2        io       !MD02
+         AM2      P$2        io       STROBE
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io       !MD03
+         AP2      P$2        io       INHIBIT
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io       RETURNH
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io       WRITE
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io       +3V
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       VCC
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA04
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA05
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA06
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA07
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD04
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD05
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD06
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD07
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io                ***   unused    ***
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io       AC_OK
+
+AB05     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io       !MA00
+         AD2      P$2        io       !EMA00
+         AE1      P$2        io       !MA01
+         AE2      P$2        io       !EMA01
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io       !MA02
+         AH2      P$2        io       !EMA02
+         AJ1      P$2        io       !MA03
+         AJ2      P$2        io                ***   unused    ***
+         AK1      P$2        io       !MD00
+         AK2      P$2        io       !READ
+         AL1      P$2        io       !MD01
+         AL2      P$2        io       SOURCE
+         AM1      P$2        io       !MD02
+         AM2      P$2        io       STROBE
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io       !MD03
+         AP2      P$2        io       INHIBIT
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io       RETURNH
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io       WRITE
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io       +3V
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       VCC
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA04
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA05
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA06
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA07
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD04
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD05
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD06
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD07
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io                ***   unused    ***
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io       AC_OK
+
+AB06     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io       !MA00
+         AD2      P$2        io       !EMA00
+         AE1      P$2        io       !MA01
+         AE2      P$2        io       !EMA01
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io       !MA02
+         AH2      P$2        io       !EMA02
+         AJ1      P$2        io       !MA03
+         AJ2      P$2        io                ***   unused    ***
+         AK1      P$2        io       !MD00
+         AK2      P$2        io       !READ
+         AL1      P$2        io       !MD01
+         AL2      P$2        io       SOURCE
+         AM1      P$2        io       !MD02
+         AM2      P$2        io       STROBE
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io       !MD03
+         AP2      P$2        io       INHIBIT
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io       RETURNH
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io       WRITE
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io       +3V
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       VCC
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA04
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA05
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA06
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA07
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD04
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD05
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD06
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD07
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io                ***   unused    ***
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io       AC_OK
+
+AB07     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io       !MA00
+         AD2      P$2        io       !EMA00
+         AE1      P$2        io       !MA01
+         AE2      P$2        io       !EMA01
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io       !MA02
+         AH2      P$2        io       !EMA02
+         AJ1      P$2        io       !MA03
+         AJ2      P$2        io                ***   unused    ***
+         AK1      P$2        io       !MD00
+         AK2      P$2        io       !READ
+         AL1      P$2        io       !MD01
+         AL2      P$2        io       SOURCE
+         AM1      P$2        io       !MD02
+         AM2      P$2        io       STROBE
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io       !MD03
+         AP2      P$2        io       INHIBIT
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io       RETURNH
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io       WRITE
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io       +3V
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       VCC
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA04
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA05
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA06
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA07
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD04
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD05
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD06
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD07
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io                ***   unused    ***
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io       AC_OK
+
+B08      A1       A          in       !BMB00
+         A2       VCC        pwr      VCC
+         B1       B          in       !BMB01
+         C1       C          in       N$50
+         C2       GND        pwr      GND
+         D1       D          oc       N$52
+         D2       A          in       !BMB06
+         E1       E          oc       N$55
+         E2       B          in       !BMB07
+         F1       A          in       !BMB02
+         F2       C          in       N$50
+         H1       B          in       !BMB03
+         H2       D          oc       N$60
+         J1       C          in       N$50
+         J2       E          oc       N$59
+         K1       D          oc       N$56
+         K2       A          in       !BMB08
+         L1       E          oc       N$57
+         L2       B          in       !BMB09
+         M1       A          in       !BMB04
+         M2       C          in       N$50
+         N1       B          in       !BMB05
+         N2       D          oc       N$62
+         P1       C          in       N$50
+         P2       E          oc       N$63
+         R1       D          oc       N$61
+         R2       A          in       !BMB10
+         S1       E          oc       N$58
+         S2       B          in       !BMB11
+         T1       GND        pwr      GND
+         T2       C          in       N$50
+         U1       GND        pwr      GND
+         U2       D          oc       N$64
+         V1       GND        pwr      GND
+         V2       E          oc       N$65
+
+B09      A1       R          in       N$51
+         A2       VCC        pwr      VCC
+         B1       C          in       N$49
+         C1       D          in       N$60
+         C2       GND        pwr      GND
+         D1       S          in       +3V(A08V1)
+         D2       C          in       N$49
+         E1       1          out               *** unconnected ***
+         E2       D          in       N$59
+         F1       0          out      N$72
+         F2       S          in       +3V(A08V1)
+         H1       C          in       N$49
+         H2       1          out               *** unconnected ***
+         J1       D          in       N$62
+         J2       0          out      N$73
+         K1       S          in       +3V(A08V1)
+         K2       R          in       N$51
+         L1       1          out               *** unconnected ***
+         L2       C          in       N$49
+         M1       0          out      N$74
+         M2       D          in       N$63
+         N1       C          in       N$49
+         N2       S          in       +3V(A08V1)
+         P1       D          in       N$64
+         P2       1          out               *** unconnected ***
+         R1       S          in       +3V(A08V1)
+         R2       0          out      N$75
+         S1       1          out               *** unconnected ***
+         S2       C          in       N$49
+         T1       GND        pwr      GND
+         T2       D          in       N$65
+         U1       0          out      N$76
+         U2       S          in       +3V(A08V1)
+         V1       0          out      N$77
+         V2       1          out               *** unconnected ***
+
+B10      A1       IN         in       BMB00
+         A2       VCC        pwr      VCC
+         B1       OUT        out      !BMB00
+         C1       IN         in       BMB01
+         C2       GND        pwr      GND
+         D1       IN         in       BMB02
+         D2       OUT        out      !BMB01
+         E1       OUT        out      !BMB02
+         E2       IN         in       BMB04
+         F1       IN         in       BMB03
+         F2       OUT        out      !BMB04
+         H1       OUT        out      !BMB03
+         H2       IN         in       BMB06
+         J1       IN         in       BMB05
+         J2       OUT        out      !BMB06
+         K1       OUT        out      !BMB05
+         K2       IN         in       BMB08
+         L1       IN         in       BMB07
+         L2       OUT        out      !BMB08
+         M1       OUT        out      !BMB07
+         M2       IN         in       BMB10
+         N1       IN         in       BMB09
+         N2       OUT        out      !BMB10
+         P1       OUT        out      !BMB09
+         P2       IN         in       N$43
+         R1       IN         in       BMB11
+         R2       OUT        out      SAVE_FIELD
+         S1       OUT        out      !BMB11
+         S2       IN         in       !FIELD1
+         T1       GND        pwr      GND
+         T2       OUT        out      FIELD1
+         U1       OUT        out      EXT_MEM
+         U2       IN         in       B_INIT
+         V1       IN         in       N$44
+         V2       OUT        out      N$1
+
+B11      A1       A          in       N$68
+         A2       VCC        pwr      VCC
+         B1       B          in       N$69
+         C1       C          in       N$48
+         C2       GND        pwr      GND
+         D1       D          oc       MEM00
+         D2       A          in       N$72
+         E1       E          oc       MEM01
+         E2       B          in       N$73
+         F1       A          in       N$70
+         F2       C          in       N$48
+         H1       B          in       N$71
+         H2       D          oc       MEM06
+         J1       C          in       N$48
+         J2       E          oc       MEM07
+         K1       D          oc       MEM02
+         K2       A          in       N$74
+         L1       E          oc       MEM03
+         L2       B          in       N$75
+         M1       A          in       N$66
+         M2       C          in       N$48
+         N1       B          in       N$67
+         N2       D          oc       MEM08
+         P1       C          in       N$48
+         P2       E          oc       MEM09
+         R1       D          oc       MEM04
+         R2       A          in       N$76
+         S1       E          oc       MEM05
+         S2       B          in       N$77
+         T1       GND        pwr      GND
+         T2       C          in       N$48
+         U1       GND        pwr      GND
+         U2       D          oc       MEM10
+         V1       GND        pwr      GND
+         V2       E          oc       MEM11
+
+B12      A1       IN1        in       EAB0
+         A2       VCC        pwr      VCC
+         B1       IN2        in       +3V(B12V1)
+         C1       IN3        in       +3V(B12V1)
+         C2       GND        pwr      GND
+         D1       IN4        in       +3V(B12V1)
+         D2       IN1        in       BMA00
+         E1       OUT        out      !EMA00
+         E2       IN2        in       +3V(B12U1)
+         F1       IN1        in       EAB1
+         F2       IN3        in       +3V(B12U1)
+         H1       IN2        in       +3V(B12V1)
+         H2       IN4        in       +3V(B12U1)
+         J1       IN3        in       +3V(B12V1)
+         J2       OUT        out      !MA00
+         K1       IN4        in       +3V(B12V1)
+         K2       IN1        in       BMA01
+         L1       OUT        out      !EMA01
+         L2       IN2        in       +3V(B12U1)
+         M1       IN1        in       EAB2
+         M2       IN3        in       +3V(B12U1)
+         N1       IN2        in       +3V(B12V1)
+         N2       IN4        in       +3V(B12U1)
+         P1       IN3        in       +3V(B12V1)
+         P2       OUT        out      !MA01
+         R1       IN4        in       +3V(B12V1)
+         R2       IN1        in       BMA02
+         S1       OUT        out      !EMA02
+         S2       IN2        in       +3V(B12U1)
+         T1       GND        pwr      GND
+         T2       IN3        in       +3V(B12U1)
+         U1       P$1        pas      +3V(B12U1)
+         U2       IN4        in       +3V(B12U1)
+         V1       P$1        pas      +3V(B12V1)
+         V2       OUT        out      !MA02
+
+B13      A1       IN1        in       BMA03
+         A2       VCC        pwr      VCC
+         B1       IN2        in       +3V(B13V1)
+         C1       IN3        in       +3V(B13V1)
+         C2       GND        pwr      GND
+         D1       IN4        in       +3V(B13V1)
+         D2       IN1        in       BMA06
+         E1       OUT        out      !MA03
+         E2       IN2        in       +3V(B13U1)
+         F1       IN1        in       BMA04
+         F2       IN3        in       +3V(B13U1)
+         H1       IN2        in       +3V(B13V1)
+         H2       IN4        in       +3V(B13U1)
+         J1       IN3        in       +3V(B13V1)
+         J2       OUT        out      !MA06
+         K1       IN4        in       +3V(B13V1)
+         K2       IN1        in       BMA07
+         L1       OUT        out      !MA04
+         L2       IN2        in       +3V(B13U1)
+         M1       IN1        in       BMA05
+         M2       IN3        in       +3V(B13U1)
+         N1       IN2        in       +3V(B13V1)
+         N2       IN4        in       +3V(B13U1)
+         P1       IN3        in       +3V(B13V1)
+         P2       OUT        out      !MA07
+         R1       IN4        in       +3V(B13V1)
+         R2       IN1        in       BMA08
+         S1       OUT        out      !MA05
+         S2       IN2        in       +3V(B13U1)
+         T1       GND        pwr      GND
+         T2       IN3        in       +3V(B13U1)
+         U1       P$1        pas      +3V(B13U1)
+         U2       IN4        in       +3V(B13U1)
+         V1       P$1        pas      +3V(B13V1)
+         V2       OUT        out      !MA08
+
+B14      A1       IN1        in       BMA09
+         A2       VCC        pwr      VCC
+         B1       IN2        in       +3V(B14V1)
+         C1       IN3        in       +3V(B14V1)
+         C2       GND        pwr      GND
+         D1       IN4        in       +3V(B14V1)
+         D2       IN1        in       WRITE
+         E1       OUT        out      !MA09
+         E2       IN2        in       +3V(B14U1)
+         F1       IN1        in       BMA10
+         F2       IN3        in       +3V(B14U1)
+         H1       IN2        in       +3V(B14V1)
+         H2       IN4        in       +3V(B14U1)
+         J1       IN3        in       +3V(B14V1)
+         J2       OUT        out      N$50
+         K1       IN4        in       +3V(B14V1)
+         K2       IN1        in       +3V(B14U1)
+         L1       OUT        out      !MA10
+         L2       IN2        in       +3V(B14U1)
+         M1       IN1        in       BMA11
+         M2       IN3        in       +3V(B14U1)
+         N1       IN2        in       +3V(B14V1)
+         N2       IN4        in       SELECT
+         P1       IN3        in       +3V(B14V1)
+         P2       OUT        out      N$48
+         R1       IN4        in       +3V(B14V1)
+         R2       IN1        in       !LOAD_SF
+         S1       OUT        out      !MA11
+         S2       IN2        in       !KEY_CLR
+         T1       GND        pwr      GND
+         T2       IN3        in       +3V(B14U1)
+         U1       P$1        pas      +3V(B14U1)
+         U2       IN4        in       +3V(B14U1)
+         V1       P$1        pas      +3V(B14V1)
+         V2       OUT        out      B_LOAD_SF
+
+B15      A1       A          in                ***   unused    ***
+         A2       VCC        pwr      VCC
+         B1       B          in                ***   unused    ***
+         C1       C          in                ***   unused    ***
+         C2       GND        pwr      GND
+         D1       D          oc                ***   unused    ***
+         D2       A          in                ***   unused    ***
+         E1       E          oc                ***   unused    ***
+         E2       B          in                ***   unused    ***
+         F1       A          in                ***   unused    ***
+         F2       C          in                ***   unused    ***
+         H1       B          in                ***   unused    ***
+         H2       D          oc                ***   unused    ***
+         J1       C          in                ***   unused    ***
+         J2       E          oc                ***   unused    ***
+         K1       D          oc                ***   unused    ***
+         K2       A          in                ***   unused    ***
+         L1       E          oc                ***   unused    ***
+         L2       B          in                ***   unused    ***
+         M1       A          in                ***   unused    ***
+         M2       C          in                ***   unused    ***
+         N1       B          in                ***   unused    ***
+         N2       D          oc                ***   unused    ***
+         P1       C          in                ***   unused    ***
+         P2       E          oc                ***   unused    ***
+         R1       D          oc                ***   unused    ***
+         R2       A          in       N$3
+         S1       E          oc                ***   unused    ***
+         S2       B          in       !DONE
+         T1       GND        pwr      GND
+         T2       C          in       !SELECT
+         U1       GND        pwr      GND
+         U2       D          oc       !STROBE
+         V1       GND        pwr      GND
+         V2       E          oc       !MEM_DONE
+
+B16      A1       GND        pwr      GND
+         B1       P$2        io       BAC00
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       BAC01
+         D2       P$2        io       BAC09
+         E1       P$2        io       BAC02
+         E2       P$2        io       BAC10
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       BAC03
+         H2       P$2        io       BAC11
+         J1       P$2        io       BAC04
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       BIOP1
+         L1       P$2        io       BAC05
+         L2       GND        pwr      GND
+         M1       P$2        io       BAC06
+         M2       P$2        io       BIOP2
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       BAC07
+         P2       P$2        io       BIOP4
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       BAC08
+         S2       P$2        io       BTS3
+         T1       GND        pwr      GND
+         T2       P$2        io       BTS1
+         U2       GND        pwr      GND
+         V2       P$2        io       B_INITIALIZE
+
+B17      A1       GND        pwr      GND
+         B1       P$2        io       BMB00
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       BMB01
+         D2       P$2        io       !BMB06
+         E1       P$2        io       BMB02
+         E2       P$2        io       BMB06
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       !BMB03
+         H2       P$2        io       !BMB07
+         J1       P$2        io       BMB03
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       BMB07
+         L1       P$2        io       !BMB04
+         L2       GND        pwr      GND
+         M1       P$2        io       BMB04
+         M2       P$2        io       !BMB08
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !BMB05
+         P2       P$2        io       BMB08
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       BMB05
+         S2       P$2        io       BMB09
+         T1       GND        pwr      GND
+         T2       P$2        io       BMB10
+         U2       GND        pwr      GND
+         V2       P$2        io       BMB11
+
+B18      A1       GND        pwr      GND
+         B1       P$2        io       !AC00_BUS
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       !AC01_BUS
+         D2       P$2        io       !AC09_BUS
+         E1       P$2        io       !AC02_BUS
+         E2       P$2        io       !AC10_BUS
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       !AC03_BUS
+         H2       P$2        io       !AC11_BUS
+         J1       P$2        io       !AC04_BUS
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       !SKIP_BUS
+         L1       P$2        io       !AC05_BUS
+         L2       GND        pwr      GND
+         M1       P$2        io       !AC06_BUS
+         M2       P$2        io       !IRQ_BUS
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !AC07_BUS
+         P2       P$2        io       !AC_CLR_BUS
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       !AC08_BUS
+         S2       P$2        io       !B_RUN
+         T1       GND        pwr      GND
+         T2       P$2        io       N$120
+         U2       GND        pwr      GND
+         V2       P$2        io       N$119
+
+B19      A1       GND        pwr      GND
+         B1       P$2        io       !DA00
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       !DA01
+         D2       P$2        io       !DA09
+         E1       P$2        io       !DA02
+         E2       P$2        io       !DA10
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       !DA03
+         H2       P$2        io       !DA11
+         J1       P$2        io       !DA04
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       !BRQ
+         L1       P$2        io       !DA05
+         L2       GND        pwr      GND
+         M1       P$2        io       !DA06
+         M2       P$2        io       !DATA_IN
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !DA07
+         P2       P$2        io       !BREAK
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       !DA08
+         S2       P$2        io       !ADD_ACCEPTED
+         T1       GND        pwr      GND
+         T2       P$2        io       !MB_INCR
+         U2       GND        pwr      GND
+         V2       P$2        io       B_INIT
+
+B20      A1       GND        pwr      GND
+         B1       P$2        io       !DATA00
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       !DATA01
+         D2       P$2        io       !DATA09
+         E1       P$2        io       !DATA02
+         E2       P$2        io       !DATA10
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       !DATA03
+         H2       P$2        io       !DATA11
+         J1       P$2        io       !DATA04
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       !3CYCLE
+         L1       P$2        io       !DATA05
+         L2       GND        pwr      GND
+         M1       P$2        io       !DATA06
+         M2       P$2        io       !CA_INCR
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !DATA07
+         P2       P$2        io       !WC_OVFL
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       !DATA08
+         S2       P$2        io       !EX_DA2
+         T1       GND        pwr      GND
+         T2       P$2        io       !EX_DA1
+         U2       GND        pwr      GND
+         V2       P$2        io       !EX_DA0
+
+C08      A1       IN1        in       +3V(C08U1)
+         A2       VCC        pwr      VCC
+         B1       IN2        in       +3V(C08U1)
+         C1       IN3        in       +3V(C08U1)
+         C2       GND        pwr      GND
+         D1       IN4        in       !RET
+         D2       IN1        in       +3V(C08V1)
+         E1       OUT        out      RETURNH
+         E2       IN2        in       +3V(C08V1)
+         F1       IN1        in       +3V(C08U1)
+         F2       IN3        in       +3V(C08V1)
+         H1       IN2        in       +3V(C08U1)
+         H2       IN4        in       !WRT
+         J1       IN3        in       +3V(C08U1)
+         J2       OUT        out      WRITE
+         K1       IN4        in       !SORC
+         K2       IN1        in       +3V(C08V1)
+         L1       OUT        out      SOURCE
+         L2       IN2        in       +3V(C08V1)
+         M1       IN1        in       +3V(C08V1)
+         M2       IN3        in       +3V(C08V1)
+         N1       IN2        in       +3V(C08V1)
+         N2       IN4        in       !STROB
+         P1       IN3        in       +3V(C08V1)
+         P2       OUT        out      STROBE
+         R1       IN4        in       !INH
+         R2       IN1        in                ***   unused    ***
+         S1       OUT        out      INHIBIT
+         S2       IN2        in                ***   unused    ***
+         T1       GND        pwr      GND
+         T2       IN3        in                ***   unused    ***
+         U1       P$1        pas      +3V(C08U1)
+         U2       IN4        in                ***   unused    ***
+         V1       P$1        pas      +3V(C08V1)
+         V2       OUT        out               ***   unused    ***
+
+C09      A1       IN1        in       +3V(C11V1)
+         A2       VCC        pwr      VCC
+         B1       IN2        in       +3V(C11V1)
+         C1       IN3        in       DEL1
+         C2       GND        pwr      GND
+         D1       OUT        out      !DEL1
+         D2       IN1        in       DEL2
+         E1       IN1        in       !BF_ENABLE
+         E2       IN2        in       READ
+         F1       IN2        in       !SP_CYC_NEXT
+         F2       IN3        in       READ
+         H1       IN3        in       !DF_ENABLE
+         H2       OUT        out      N$18
+         J1       OUT        out      N$30
+         J2       IN1        in       DEL1
+         K1       IN1        in       !EA0
+         K2       IN2        in       WRITE
+         L1       IN2        in       !EA1
+         L2       IN3        in       WRITE
+         M1       IN3        in       !EA2
+         M2       OUT        out      N$5
+         N1       OUT        out      NOT_FLD0
+         N2       IN1        in       DEL5
+         P1       IN1        in       DEL4
+         P2       IN2        in       READ
+         R1       IN2        in       READ
+         R2       IN3        in       READ
+         S1       IN3        in       READ
+         S2       OUT        out      N$19
+         T1       GND        pwr      GND
+         T2       IN1        in       E_OR_F_SET
+         U1       OUT        out      N$3
+         U2       IN2        in       JMP_OR_JMS
+         V1       OUT        out      !LOAD_INH
+         V2       IN3        in       BTP3
+
+C10      A1       IN1        in       E_OR_F_SET
+         A2       VCC        pwr      VCC
+         B1       IN2        in       JMP_OR_JMS
+         C1       OUT        out      IF_ENA
+         C2       GND        pwr      GND
+         D1       IN1        in       IB2
+         D2       IN1        in       IF2
+         E1       IN2        in       IB_ENA
+         E2       IN2        in       IF_ENA
+         F1       OUT        out      N$28
+         F2       OUT        out      N$29
+         H1       IN1        in       N$28
+         H2       IN1        in       DF0
+         J1       IN2        in       N$29
+         J2       IN2        in       DF_ENA
+         K1       OUT        out      N$27
+         K2       OUT        out      N$21
+         L1       IN1        in       N$21
+         L2       IN1        in       DF1
+         M1       IN2        in       N$22
+         M2       IN2        in       DF_ENA
+         N1       OUT        out      EAD0
+         N2       OUT        out      N$26
+         P1       IN1        in       N$26
+         P2       IN1        in       DF2
+         R1       IN2        in       N$25
+         R2       IN2        in       DF_ENA
+         S1       OUT        out      EAD1
+         S2       OUT        out      N$34
+         T1       GND        pwr      GND
+         T2       IN1        in       N$34
+         U1       P$1        pas               ***   unused    ***
+         U2       IN2        in       N$33
+         V1       P$1        pas               ***   unused    ***
+         V2       OUT        out      EAD2
+
+C11      A1       IN1        in       SF0
+         A2       VCC        pwr      VCC
+         B1       IN2        in       BMB09
+         C1       OUT        out      N$36
+         C2       GND        pwr      GND
+         D1       IN1        in       BMB06
+         D2       IN1        in       N$36
+         E1       IN2        in       !BMB09
+         E2       IN2        in       N$31
+         F1       OUT        out      N$31
+         F2       OUT        out      IBD0
+         H1       IN1        in       SF1
+         H2       IN1        in       N$31
+         J1       IN2        in       BMB09
+         J2       IN2        in       N$35
+         K1       OUT        out      N$35
+         K2       OUT        out      DFD0
+         L1       IN1        in       SF2
+         L2       IN1        in       BMB07
+         M1       IN2        in       BMB09
+         M2       IN2        in       !BMB09
+         N1       OUT        out      N$32
+         N2       OUT        out      N$38
+         P1       IN1        in       N$32
+         P2       IN1        in       SF3
+         R1       IN2        in       N$38
+         R2       IN2        in       BMB09
+         S1       OUT        out      IBD1
+         S2       OUT        out      N$37
+         T1       GND        pwr      GND
+         T2       IN1        in       N$38
+         U1       P$1        pas               ***   unused    ***
+         U2       IN2        in       N$37
+         V1       P$1        pas      +3V(C11V1)
+         V2       OUT        out      DFD1
+
+C12      A1       IN1        in       SF4
+         A2       VCC        pwr      VCC
+         B1       IN2        in       BMB09
+         C1       OUT        out      N$40
+         C2       GND        pwr      GND
+         D1       IN1        in       BMB08
+         D2       IN1        in       N$40
+         E1       IN2        in       !BMB09
+         E2       IN2        in       N$39
+         F1       OUT        out      N$39
+         F2       OUT        out      IBD2
+         H1       IN1        in       SF5
+         H2       IN1        in       N$39
+         J1       IN2        in       BMB09
+         J2       IN2        in       N$41
+         K1       OUT        out      N$41
+         K2       OUT        out      DFD2
+         L1       IN1        in       KEY_IF0
+         L2       IN1        in       KEY_DF0
+         M1       IN2        in       KEY_LOAD
+         M2       IN2        in       KEY_LOAD
+         N1       OUT        out      !SET_F0
+         N2       OUT        out      !SET_DF0
+         P1       IN1        in       KEY_IF1
+         P2       IN1        in       KEY_DF1
+         R1       IN2        in       KEY_LOAD
+         R2       IN2        in       KEY_LOAD
+         S1       OUT        out      !SET_F1
+         S2       OUT        out      !SET_DF1
+         T1       GND        pwr      GND
+         T2       IN1        in       KEY_IF2
+         U1       P$1        pas      +3V(C12U1)
+         U2       IN2        in       KEY_LOAD
+         V1       P$1        pas               ***   unused    ***
+         V2       OUT        out      !SET_F2
+
+C13      A1       IN1        in       IF2
+         A2       VCC        pwr      VCC
+         B1       IN2        in       RIF
+         C1       OUT        out      N$42
+         C2       GND        pwr      GND
+         D1       IN1        in       DF2
+         D2       IN1        in       KEY_DF2
+         E1       IN2        in       RDF
+         E2       IN2        in       KEY_LOAD
+         F1       OUT        out      N$45
+         F2       OUT        out      !SET_DF2
+         H1       IN1        in       N$1
+         H2       IN1        in       !MEM_START
+         J1       IN2        in       POWER_OK
+         J2       IN2        in       !BTP2
+         K1       OUT        out      N$2
+         K2       OUT        out      N$6
+         L1       IN1        in       BIOP1
+         L2       IN1        in       BIOP2
+         M1       IN2        in       EXT_MEM
+         M2       IN2        in       EXT_MEM
+         N1       OUT        out      !CDF
+         N2       OUT        out      !CIF
+         P1       IN1        in       !RMF
+         P2       IN1        in       !RMF
+         R1       IN2        in       !CDF
+         R2       IN2        in       !CIF
+         S1       OUT        out      LOAD_DF
+         S2       OUT        out      LOAD_IB
+         T1       GND        pwr      GND
+         T2       IN1        in       !LOAD_INH
+         U1       P$1        pas      !STROBE
+         U2       IN2        in       !KEY_CLR
+         V1       P$1        pas      +3V(C13V1)
+         V2       OUT        out      N$47
+
+C14      A1       IN1        in       !LOAD_MD
+         A2       VCC        pwr      VCC
+         B1       IN2        in       +3V(C14U1)
+         C1       IN3        in       +3V(C14U1)
+         C2       GND        pwr      GND
+         D1       IN4        in       +3V(C14U1)
+         D2       IN1        in       NOT_FLD0
+         E1       OUT        out      N$49
+         E2       IN2        in       +3V(C14V1)
+         F1       IN1        in       B_INIT
+         F2       IN3        in       +3V(C14V1)
+         H1       IN2        in       +3V(C14U1)
+         H2       IN4        in       +3V(C14V1)
+         J1       IN3        in       +3V(C14U1)
+         J2       OUT        out      !EA
+         K1       IN4        in       +3V(C14U1)
+         K2       IN1        in       EA2
+         L1       OUT        out      N$51
+         L2       IN2        in       +3V(C14V1)
+         M1       IN1        in       N$2
+         M2       IN3        in       +3V(C14V1)
+         N1       IN2        in       +3V(C14U1)
+         N2       IN4        in       +3V(C14V1)
+         P1       IN3        in       +3V(C14U1)
+         P2       OUT        out      !EMA
+         R1       IN4        in       +3V(C14U1)
+         R2       IN1        in       N$16
+         S1       OUT        out      !INIT
+         S2       IN2        in       +3V(C14V1)
+         T1       GND        pwr      GND
+         T2       IN3        in       +3V(C14V1)
+         U1       P$1        pas      +3V(C14U1)
+         U2       IN4        in       +3V(C14V1)
+         V1       P$1        pas      +3V(C14V1)
+         V2       OUT        out      BEMA
+
+C15      A1       R          in       !INIT
+         A2       VCC        pwr      VCC
+         B1       C          in       MEM_START
+         C1       D          in       EA0
+         C2       GND        pwr      GND
+         D1       S          in       !SET_F0
+         D2       C          in       MEM_START
+         E1       1          out      EAB0
+         E2       D          in       EA1
+         F1       0          out               *** unconnected ***
+         F2       S          in       !SET_F1
+         H1       C          in       MEM_START
+         H2       1          out      EAB1
+         J1       D          in       EA2
+         J2       0          out               *** unconnected ***
+         K1       S          in       !SET_F2
+         K2       R          in                ***   unused    ***
+         L1       1          out      EAB2
+         L2       C          in                ***   unused    ***
+         M1       0          out               *** unconnected ***
+         M2       D          in                ***   unused    ***
+         N1       C          in                ***   unused    ***
+         N2       S          in                ***   unused    ***
+         P1       D          in                ***   unused    ***
+         P2       1          out               ***   unused    ***
+         R1       S          in                ***   unused    ***
+         R2       0          out               ***   unused    ***
+         S1       1          out               ***   unused    ***
+         S2       C          in                ***   unused    ***
+         T1       GND        pwr      GND
+         T2       D          in                ***   unused    ***
+         U1       0          out               ***   unused    ***
+         U2       S          in                ***   unused    ***
+         V1       0          out               ***   unused    ***
+         V2       1          out               ***   unused    ***
+
+C16      A1       IN1        in       NOT_FLD0
+         A2       VCC        pwr      VCC
+         B1       IN2        in       N$17
+         C1       IN3        in       +3V(C12U1)
+         C2       GND        pwr      GND
+         D1       OUT        out      !EA_OK
+         D2       IN1        in                ***   unused    ***
+         E1       IN1        in       !EA_OK
+         E2       IN2        in                ***   unused    ***
+         F1       IN2        in       +3V(C12U1)
+         F2       IN3        in                ***   unused    ***
+         H1       IN3        in       +3V(C12U1)
+         H2       OUT        out               ***   unused    ***
+         J1       OUT        out      EA_OK
+         J2       IN1        in                ***   unused    ***
+         K1       IN1        in       !EA0
+         K2       IN2        in                ***   unused    ***
+         L1       IN2        in       !EA1
+         L2       IN3        in                ***   unused    ***
+         M1       IN3        in       EA2
+         M2       OUT        out               ***   unused    ***
+         N1       OUT        out      !FIELD1
+         N2       IN1        in       DEL3
+         P1       IN1        in       DEL4
+         P2       IN2        in       DEL3
+         R1       IN2        in       READ
+         R2       IN3        in       WRITE
+         S1       IN3        in       READ
+         S2       OUT        out      N$46
+         T1       GND        pwr      GND
+         T2       IN1        in       N$15
+         U1       OUT        out      !LOAD_MD
+         U2       IN2        in       N$14
+         V1       OUT        out      N$16
+         V2       IN3        in       N$13
+
+C17      A2       P$2        io                ***   unused    ***
+         B2       P$2        io                ***   unused    ***
+         C2       P$2        io                ***   unused    ***
+         D2       P$2        io       NOT_FLD0
+         E2       P$2        io       N$17
+         F2       P$2        io       !FIELD1
+         H2       P$2        io                ***   unused    ***
+         J2       P$2        io       EA0
+         K2       P$2        io       N$15
+         L2       P$2        io       !EA0
+         M2       P$2        io                ***   unused    ***
+         N2       P$2        io       EA1
+         P2       P$2        io       N$14
+         R2       P$2        io       !EA1
+         S2       P$2        io                ***   unused    ***
+         T2       P$2        io       EA2
+         U2       P$2        io       N$13
+         V2       P$2        io       !EA2
+
+C18      A1       GND        pwr      GND
+         B1       P$2        io       !DF_ENABLE
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       !SP_CYC_NEXT
+         D2       P$2        io       E_OR_F_SET
+         E1       P$2        io       !BF_ENABLE
+         E2       P$2        io       JMP_OR_JMS
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       BTP3
+         H2       P$2        io       !KEY_LOAD
+         J1       P$2        io       !KEY_CLR
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       N$91
+         L1       P$2        io       !INT_INHIBIT
+         L2       GND        pwr      GND
+         M1       P$2        io       !LOAD_SF
+         M2       P$2        io       N$90
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !KEY_IF2
+         P2       P$2        io       N$89
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       !KEY_DF2
+         S2       P$2        io       STOP_OK
+         T1       GND        pwr      GND
+         T2       P$2        io       POWER_OK
+         U2       GND        pwr      GND
+         V2       P$2        io       LINE_LOW
+
+C19      A1       GND        pwr      GND
+         B1       P$2        io       MEM_P
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       MEM00
+         D2       P$2        io       MEM08
+         E1       P$2        io       MEM01
+         E2       P$2        io       MEM09
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       MEM02
+         H2       P$2        io       MEM10
+         J1       P$2        io       MEM03
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       MEM11
+         L1       P$2        io       MEM04
+         L2       GND        pwr      GND
+         M1       P$2        io       MEM05
+         M2       P$2        io       MB_PARITY_ODD
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       MEM06
+         P2       P$2        io       N$83
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       MEM07
+         S2       P$2        io       N$84
+         T1       GND        pwr      GND
+         T2       P$2        io       BEMA
+         U2       GND        pwr      GND
+         V2       P$2        io       !EMA
+
+C20      A1       GND        pwr      GND
+         B1       P$2        io       !EA
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       BMA00
+         D2       P$2        io       BMA08
+         E1       P$2        io       BMA01
+         E2       P$2        io       BMA09
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       BMA02
+         H2       P$2        io       BMA10
+         J1       P$2        io       BMA03
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       BMA11
+         L1       P$2        io       BMA04
+         L2       GND        pwr      GND
+         M1       P$2        io       BMA05
+         M2       P$2        io       FIELD1
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       BMA06
+         P2       P$2        io       MEM_START
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       BMA07
+         S2       P$2        io       !STROBE
+         T1       GND        pwr      GND
+         T2       P$2        io       BTP2
+         U2       GND        pwr      GND
+         V2       P$2        io       !MEM_DONE
+
+CD01     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io                ***   unused    ***
+         AC2      P$2        io       GND
+         AD1      P$2        io                ***   unused    ***
+         AD2      P$2        io       KEY_IF1
+         AE1      P$2        io                ***   unused    ***
+         AE2      P$2        io       KEY_IF0
+         AF1      P$2        io                ***   unused    ***
+         AF2      P$2        io                ***   unused    ***
+         AH1      P$2        io                ***   unused    ***
+         AH2      P$2        io       KEY_DF1
+         AJ1      P$2        io                ***   unused    ***
+         AJ2      P$2        io       KEY_DF0
+         AK1      P$2        io                ***   unused    ***
+         AK2      P$2        io                ***   unused    ***
+         AL1      P$2        io                ***   unused    ***
+         AL2      P$2        io       EA1
+         AM1      P$2        io                ***   unused    ***
+         AM2      P$2        io       EA0
+         AN1      P$2        io                ***   unused    ***
+         AN2      P$2        io                ***   unused    ***
+         AP1      P$2        io                ***   unused    ***
+         AP2      P$2        io                ***   unused    ***
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io                ***   unused    ***
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io                ***   unused    ***
+         AT1      P$2        io                ***   unused    ***
+         AT2      P$2        io                ***   unused    ***
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io                ***   unused    ***
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io                ***   unused    ***
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io                ***   unused    ***
+         BC2      P$2        io       GND
+         BD1      P$2        io                ***   unused    ***
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io                ***   unused    ***
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io                ***   unused    ***
+         BF2      P$2        io                ***   unused    ***
+         BH1      P$2        io                ***   unused    ***
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io                ***   unused    ***
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io                ***   unused    ***
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io                ***   unused    ***
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io                ***   unused    ***
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io                ***   unused    ***
+         BN2      P$2        io                ***   unused    ***
+         BP1      P$2        io                ***   unused    ***
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io                ***   unused    ***
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io                ***   unused    ***
+         BT2      P$2        io                ***   unused    ***
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io                ***   unused    ***
+
+CD02     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io                ***   unused    ***
+         AD2      P$2        io       KEY_IF1
+         AE1      P$2        io                ***   unused    ***
+         AE2      P$2        io       KEY_IF0
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io                ***   unused    ***
+         AH2      P$2        io       KEY_DF1
+         AJ1      P$2        io                ***   unused    ***
+         AJ2      P$2        io       KEY_DF0
+         AK1      P$2        io                ***   unused    ***
+         AK2      P$2        io                ***   unused    ***
+         AL1      P$2        io                ***   unused    ***
+         AL2      P$2        io       EA1
+         AM1      P$2        io                ***   unused    ***
+         AM2      P$2        io       EA0
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io                ***   unused    ***
+         AP2      P$2        io                ***   unused    ***
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io                ***   unused    ***
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io                ***   unused    ***
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io                ***   unused    ***
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       +15V
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA08
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA09
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA10
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA11
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD08
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD09
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD10
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD11
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io       DONE
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io                ***   unused    ***
+
+CD03     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io                ***   unused    ***
+         AD2      P$2        io       KEY_IF1
+         AE1      P$2        io                ***   unused    ***
+         AE2      P$2        io       KEY_IF0
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io                ***   unused    ***
+         AH2      P$2        io       KEY_DF1
+         AJ1      P$2        io                ***   unused    ***
+         AJ2      P$2        io       KEY_DF0
+         AK1      P$2        io                ***   unused    ***
+         AK2      P$2        io                ***   unused    ***
+         AL1      P$2        io                ***   unused    ***
+         AL2      P$2        io       EA1
+         AM1      P$2        io                ***   unused    ***
+         AM2      P$2        io       EA0
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io                ***   unused    ***
+         AP2      P$2        io                ***   unused    ***
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io                ***   unused    ***
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io                ***   unused    ***
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io                ***   unused    ***
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       +15V
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA08
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA09
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA10
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA11
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD08
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD09
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD10
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD11
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io       DONE
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io                ***   unused    ***
+
+CD04     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io                ***   unused    ***
+         AD2      P$2        io       KEY_IF1
+         AE1      P$2        io                ***   unused    ***
+         AE2      P$2        io       KEY_IF0
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io                ***   unused    ***
+         AH2      P$2        io       KEY_DF1
+         AJ1      P$2        io                ***   unused    ***
+         AJ2      P$2        io       KEY_DF0
+         AK1      P$2        io                ***   unused    ***
+         AK2      P$2        io                ***   unused    ***
+         AL1      P$2        io                ***   unused    ***
+         AL2      P$2        io       EA1
+         AM1      P$2        io                ***   unused    ***
+         AM2      P$2        io       EA0
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io                ***   unused    ***
+         AP2      P$2        io                ***   unused    ***
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io                ***   unused    ***
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io                ***   unused    ***
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io                ***   unused    ***
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       +15V
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA08
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA09
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA10
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA11
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD08
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD09
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD10
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD11
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io       DONE
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io                ***   unused    ***
+
+CD05     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io                ***   unused    ***
+         AD2      P$2        io       KEY_IF1
+         AE1      P$2        io                ***   unused    ***
+         AE2      P$2        io       KEY_IF0
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io                ***   unused    ***
+         AH2      P$2        io       KEY_DF1
+         AJ1      P$2        io                ***   unused    ***
+         AJ2      P$2        io       KEY_DF0
+         AK1      P$2        io                ***   unused    ***
+         AK2      P$2        io                ***   unused    ***
+         AL1      P$2        io                ***   unused    ***
+         AL2      P$2        io       EA1
+         AM1      P$2        io                ***   unused    ***
+         AM2      P$2        io       EA0
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io                ***   unused    ***
+         AP2      P$2        io                ***   unused    ***
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io                ***   unused    ***
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io                ***   unused    ***
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io                ***   unused    ***
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       +15V
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA08
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA09
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA10
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA11
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD08
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD09
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD10
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD11
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io       DONE
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io                ***   unused    ***
+
+CD06     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io                ***   unused    ***
+         AD2      P$2        io       KEY_IF1
+         AE1      P$2        io                ***   unused    ***
+         AE2      P$2        io       KEY_IF0
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io                ***   unused    ***
+         AH2      P$2        io       KEY_DF1
+         AJ1      P$2        io                ***   unused    ***
+         AJ2      P$2        io       KEY_DF0
+         AK1      P$2        io                ***   unused    ***
+         AK2      P$2        io                ***   unused    ***
+         AL1      P$2        io                ***   unused    ***
+         AL2      P$2        io       EA1
+         AM1      P$2        io                ***   unused    ***
+         AM2      P$2        io       EA0
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io                ***   unused    ***
+         AP2      P$2        io                ***   unused    ***
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io                ***   unused    ***
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io                ***   unused    ***
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io                ***   unused    ***
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       +15V
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA08
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA09
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA10
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA11
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD08
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD09
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD10
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD11
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io       DONE
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io                ***   unused    ***
+
+CD07     AA1      P$2        io                ***   unused    ***
+         AA2      P$2        io       VCC
+         AB1      P$2        io                ***   unused    ***
+         AB2      P$2        io       -15V
+         AC1      P$2        io       GND
+         AC2      P$2        io       GND
+         AD1      P$2        io                ***   unused    ***
+         AD2      P$2        io       KEY_IF1
+         AE1      P$2        io                ***   unused    ***
+         AE2      P$2        io       KEY_IF0
+         AF1      P$2        io       GND
+         AF2      P$2        io       GND
+         AH1      P$2        io                ***   unused    ***
+         AH2      P$2        io       KEY_DF1
+         AJ1      P$2        io                ***   unused    ***
+         AJ2      P$2        io       KEY_DF0
+         AK1      P$2        io                ***   unused    ***
+         AK2      P$2        io                ***   unused    ***
+         AL1      P$2        io                ***   unused    ***
+         AL2      P$2        io       EA1
+         AM1      P$2        io                ***   unused    ***
+         AM2      P$2        io       EA0
+         AN1      P$2        io       GND
+         AN2      P$2        io       GND
+         AP1      P$2        io                ***   unused    ***
+         AP2      P$2        io                ***   unused    ***
+         AR1      P$2        io                ***   unused    ***
+         AR2      P$2        io                ***   unused    ***
+         AS1      P$2        io                ***   unused    ***
+         AS2      P$2        io                ***   unused    ***
+         AT1      P$2        io       GND
+         AT2      P$2        io       GND
+         AU1      P$2        io                ***   unused    ***
+         AU2      P$2        io                ***   unused    ***
+         AV1      P$2        io                ***   unused    ***
+         AV2      P$2        io                ***   unused    ***
+         BA1      P$2        io                ***   unused    ***
+         BA2      P$2        io       +15V
+         BB1      P$2        io                ***   unused    ***
+         BB2      P$2        io       -15V
+         BC1      P$2        io       GND
+         BC2      P$2        io       GND
+         BD1      P$2        io       !MA08
+         BD2      P$2        io                ***   unused    ***
+         BE1      P$2        io       !MA09
+         BE2      P$2        io                ***   unused    ***
+         BF1      P$2        io       GND
+         BF2      P$2        io       GND
+         BH1      P$2        io       !MA10
+         BH2      P$2        io                ***   unused    ***
+         BJ1      P$2        io       !MA11
+         BJ2      P$2        io                ***   unused    ***
+         BK1      P$2        io       !MD08
+         BK2      P$2        io                ***   unused    ***
+         BL1      P$2        io       !MD09
+         BL2      P$2        io                ***   unused    ***
+         BM1      P$2        io       !MD10
+         BM2      P$2        io                ***   unused    ***
+         BN1      P$2        io       GND
+         BN2      P$2        io       GND
+         BP1      P$2        io       !MD11
+         BP2      P$2        io                ***   unused    ***
+         BR1      P$2        io                ***   unused    ***
+         BR2      P$2        io                ***   unused    ***
+         BS1      P$2        io       DONE
+         BS2      P$2        io                ***   unused    ***
+         BT1      P$2        io       GND
+         BT2      P$2        io       GND
+         BU1      P$2        io                ***   unused    ***
+         BU2      P$2        io                ***   unused    ***
+         BV1      P$2        io                ***   unused    ***
+         BV2      P$2        io                ***   unused    ***
+
+D08      A1       IN         in       BTP2
+         A2       VCC        pwr      VCC
+         B1       OUT        out      !BTP2
+         C1       IN         in       N$46
+         C2       GND        pwr      GND
+         D1       IN         in       IF_ENA
+         D2       OUT        out      DEL3WRT
+         E1       OUT        out      IB_ENA
+         E2       IN         in       N$23
+         F1       IN         in       N$4
+         F2       OUT        out      N$24
+         H1       OUT        out      N$20
+         H2       IN         in       N$30
+         J1       IN         in       LOAD_IB
+         J2       OUT        out      IBIF_ENA
+         K1       OUT        out      !SET_INT
+         K2       IN         in       !LOAD_INH
+         L1       IN         in       INTH
+         L2       OUT        out      LOAD_IF
+         M1       OUT        out      !INT_INHIBIT
+         M2       IN         in       B_LOAD_SF
+         N1       IN         in       B_LOAD_SF
+         N2       OUT        out      !CLR_IF
+         P1       OUT        out      !CLR_EA
+         P2       IN         in       B_LOAD_SF
+         R1       IN         in       B_LOAD_SF
+         R2       OUT        out      !CLR_DF
+         S1       OUT        out      !CLR_IB
+         S2       IN         in       MEM_START
+         T1       GND        pwr      GND
+         T2       OUT        out      !MEM_START
+         U1       OUT        out               ***   unused    ***
+         U2       IN         in                ***   unused    ***
+         V1       IN         in                ***   unused    ***
+         V2       OUT        out               ***   unused    ***
+
+D09      A1       IN1A       in                ***   unused    ***
+         A2       VCC        pwr      VCC
+         B1       IN1B       in                ***   unused    ***
+         C1       IN2A       in                ***   unused    ***
+         C2       GND        pwr      GND
+         D1       IN2B       in                ***   unused    ***
+         D2       IN1A       in       BF0
+         E1       OUT        out               ***   unused    ***
+         E2       IN1B       in       BF_ENA
+         F1       IN1A       in       IB_ENA
+         F2       IN2A       in       IBIF_ENA
+         H1       IN1B       in       IB0
+         H2       IN2B       in       N$20
+         J1       IN2A       in       IF_ENA
+         J2       OUT        out      N$22
+         K1       IN2B       in       IF0
+         K2       IN1A       in       BF1
+         L1       OUT        out      N$4
+         L2       IN1B       in       BF_ENA
+         M1       IN1A       in       IB1
+         M2       IN2A       in       IBIF_ENA
+         N1       IN1B       in       IB_ENA
+         N2       IN2B       in       N$24
+         P1       IN2A       in       IF1
+         P2       OUT        out      N$25
+         R1       IN2B       in       IF_ENA
+         R2       IN1A       in       BF2
+         S1       OUT        out      N$23
+         S2       IN1B       in       BF_ENA
+         T1       GND        pwr      GND
+         T2       IN2A       in       IBIF_ENA
+         U1       P$1        pas               ***   unused    ***
+         U2       IN2B       in       N$27
+         V1       P$1        pas               ***   unused    ***
+         V2       OUT        out      N$33
+
+D10      A1       R          in       !CLR_EA
+         A2       VCC        pwr      VCC
+         B1       C          in       DEL3WRT
+         C1       D          in       EAD0
+         C2       GND        pwr      GND
+         D1       S          in       !SET_F0
+         D2       C          in       DEL3WRT
+         E1       1          out      EA0
+         E2       D          in       EAD1
+         F1       0          out      !EA0
+         F2       S          in       !SET_F1
+         H1       C          in       DEL3WRT
+         H2       1          out      EA1
+         J1       D          in       EAD2
+         J2       0          out      !EA1
+         K1       S          in       !SET_F2
+         K2       R          in       !CLR_IF
+         L1       1          out      EA2
+         L2       C          in       LOAD_IF
+         M1       0          out      !EA2
+         M2       D          in       IB0
+         N1       C          in       LOAD_IF
+         N2       S          in       !SET_F0
+         P1       D          in       IB1
+         P2       1          out      IF0
+         R1       S          in       !SET_F1
+         R2       0          out      !IF0
+         S1       1          out      IF1
+         S2       C          in       LOAD_IF
+         T1       GND        pwr      GND
+         T2       D          in       IB2
+         U1       0          out      !IF1
+         U2       S          in       !SET_F2
+         V1       0          out               *** unconnected ***
+         V2       1          out      IF2
+
+D11      A1       R          in       +3V(C11V1)
+         A2       VCC        pwr      VCC
+         B1       C          in       DEL2
+         C1       D          in       GND
+         C2       GND        pwr      GND
+         D1       S          in       !EX_DA0
+         D2       C          in       DEL2
+         E1       1          out      BF0
+         E2       D          in       GND
+         F1       0          out               *** unconnected ***
+         F2       S          in       !EX_DA1
+         H1       C          in       DEL2
+         H2       1          out      BF1
+         J1       D          in       GND
+         J2       0          out               *** unconnected ***
+         K1       S          in       !EX_DA2
+         K2       R          in       !CLR_IB
+         L1       1          out      BF2
+         L2       C          in       LOAD_IB
+         M1       0          out               *** unconnected ***
+         M2       D          in       IBD0
+         N1       C          in       LOAD_IB
+         N2       S          in       !SET_F0
+         P1       D          in       IBD1
+         P2       1          out      IB0
+         R1       S          in       !SET_F1
+         R2       0          out               *** unconnected ***
+         S1       1          out      IB1
+         S2       C          in       LOAD_IB
+         T1       GND        pwr      GND
+         T2       D          in       IBD2
+         U1       0          out               *** unconnected ***
+         U2       S          in       !SET_F2
+         V1       0          out               *** unconnected ***
+         V2       1          out      IB2
+
+D12      A1       R          in       !INIT
+         A2       VCC        pwr      VCC
+         B1       C          in       N$47
+         C1       D          in       GND
+         C2       GND        pwr      GND
+         D1       S          in       !SET_INT
+         D2       C          in       MEM_START
+         E1       1          out      INTH
+         E2       D          in       EA_OK
+         F1       0          out               *** unconnected ***
+         F2       S          in       +3V(C08U1)
+         H1       C          in       DEL6
+         H2       1          out      SELECT
+         J1       D          in       GND
+         J2       0          out      !SELECT
+         K1       S          in       N$19
+         K2       R          in       !CLR_DF
+         L1       1          out      DONE
+         L2       C          in       LOAD_DF
+         M1       0          out      !DONE
+         M2       D          in       DFD0
+         N1       C          in       LOAD_DF
+         N2       S          in       !SET_DF0
+         P1       D          in       DFD1
+         P2       1          out      DF0
+         R1       S          in       !SET_DF1
+         R2       0          out      !DF0
+         S1       1          out      DF1
+         S2       C          in       LOAD_DF
+         T1       GND        pwr      GND
+         T2       D          in       DFD2
+         U1       0          out      !DF1
+         U2       S          in       !SET_DF2
+         V1       0          out               *** unconnected ***
+         V2       1          out      DF2
+
+D13      A1       R          in       +3V(C13V1)
+         A2       VCC        pwr      VCC
+         B1       C          in       B_LOAD_SF
+         C1       D          in       IF0
+         C2       GND        pwr      GND
+         D1       S          in       +3V(C13V1)
+         D2       C          in       B_LOAD_SF
+         E1       1          out      SF0
+         E2       D          in       DF0
+         F1       0          out      !SF0
+         F2       S          in       +3V(C13V1)
+         H1       C          in       B_LOAD_SF
+         H2       1          out      SF1
+         J1       D          in       IF1
+         J2       0          out      !SF1
+         K1       S          in       +3V(C13V1)
+         K2       R          in       +3V(C13V1)
+         L1       1          out      SF2
+         L2       C          in       B_LOAD_SF
+         M1       0          out      !SF2
+         M2       D          in       DF1
+         N1       C          in       B_LOAD_SF
+         N2       S          in       +3V(C13V1)
+         P1       D          in       IF2
+         P2       1          out      SF3
+         R1       S          in       +3V(C13V1)
+         R2       0          out      !SF3
+         S1       1          out      SF4
+         S2       C          in       B_LOAD_SF
+         T1       GND        pwr      GND
+         T2       D          in       DF2
+         U1       0          out      !SF4
+         U2       S          in       +3V(C13V1)
+         V1       0          out      !SF5
+         V2       1          out      SF5
+
+D14      A1       R          in       !INIT
+         A2       VCC        pwr      VCC
+         B1       C          in       BTP2
+         C1       D          in       GND
+         C2       GND        pwr      GND
+         D1       S          in       !MEM_START
+         D2       C          in       DEL4
+         E1       1          out      READ
+         E2       D          in       GND
+         F1       0          out      !READ
+         F2       S          in       !DEL1
+         H1       C          in       DEL3
+         H2       1          out               *** unconnected ***
+         J1       D          in       GND
+         J2       0          out      !RET
+         K1       S          in       !DEL1
+         K2       R          in       !INIT
+         L1       1          out               *** unconnected ***
+         L2       C          in       DEL3
+         M1       0          out      !SORC
+         M2       D          in       GND
+         N1       C          in       DEL5
+         N2       S          in       N$18
+         P1       D          in       GND
+         P2       1          out               *** unconnected ***
+         R1       S          in       BTP2
+         R2       0          out      !STROB
+         S1       1          out               *** unconnected ***
+         S2       C          in       DEL4
+         T1       GND        pwr      GND
+         T2       D          in       GND
+         U1       0          out      !WRT
+         U2       S          in       N$5
+         V1       0          out      !INH
+         V2       1          out               *** unconnected ***
+
+D15      A2       VCC        pwr      VCC
+         C2       GND        pwr      GND
+         E1       IN         in       N$8
+         F1       OUT        out      DEL1
+         H1       IN         in       N$7
+         H2       H2         in       N$6
+         J1       OUT        out      DEL2
+         J2       J2         out               *** unconnected ***
+         K2       K2         out               *** unconnected ***
+         L2       L2         out               *** unconnected ***
+         M2       M2         out      N$8
+         N2       N2         out               *** unconnected ***
+         P2       P2         out               *** unconnected ***
+         R2       R2         out      N$7
+         S2       S2         out               *** unconnected ***
+         T1       GND        pwr      GND
+         T2       T2         out               *** unconnected ***
+         U2       U2         out               *** unconnected ***
+         V2       V2         out               *** unconnected ***
+
+D16      A2       VCC        pwr      VCC
+         C2       GND        pwr      GND
+         E1       IN         in       N$9
+         F1       OUT        out      DEL3
+         H1       IN         in       N$10
+         H2       H2         in       DEL2
+         J1       OUT        out      DEL4
+         J2       J2         out               *** unconnected ***
+         K2       K2         out               *** unconnected ***
+         L2       L2         out      N$9
+         M2       M2         out      N$10
+         N2       N2         out               *** unconnected ***
+         P2       P2         out               *** unconnected ***
+         R2       R2         out               *** unconnected ***
+         S2       S2         out               *** unconnected ***
+         T1       GND        pwr      GND
+         T2       T2         out               *** unconnected ***
+         U2       U2         out               *** unconnected ***
+         V2       V2         out               *** unconnected ***
+
+D17      A2       VCC        pwr      VCC
+         C2       GND        pwr      GND
+         E1       IN         in       N$11
+         F1       OUT        out      DEL5
+         H1       IN         in       N$12
+         H2       H2         in       DEL4
+         J1       OUT        out      DEL6
+         J2       J2         out      N$11
+         K2       K2         out               *** unconnected ***
+         L2       L2         out               *** unconnected ***
+         M2       M2         out      N$12
+         N2       N2         out               *** unconnected ***
+         P2       P2         out               *** unconnected ***
+         R2       R2         out               *** unconnected ***
+         S2       S2         out               *** unconnected ***
+         T1       GND        pwr      GND
+         T2       T2         out               *** unconnected ***
+         U2       U2         out               *** unconnected ***
+         V2       V2         out               *** unconnected ***
+
+D18      A1       GND        pwr      GND
+         B1       P$2        io       !DF_ENABLE
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       !SP_CYC_NEXT
+         D2       P$2        io       E_OR_F_SET
+         E1       P$2        io       !BF_ENABLE
+         E2       P$2        io       JMP_OR_JMS
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       BTP3
+         H2       P$2        io       !KEY_LOAD
+         J1       P$2        io       !KEY_CLR
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       N$91
+         L1       P$2        io       !INT_INHIBIT
+         L2       GND        pwr      GND
+         M1       P$2        io       !LOAD_SF
+         M2       P$2        io       N$90
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       !KEY_IF2
+         P2       P$2        io       N$89
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       !KEY_DF2
+         S2       P$2        io       STOP_OK
+         T1       GND        pwr      GND
+         T2       P$2        io       POWER_OK
+         U2       GND        pwr      GND
+         V2       P$2        io       LINE_LOW
+
+D19      A1       GND        pwr      GND
+         B1       P$2        io       MEM_P
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       MEM00
+         D2       P$2        io       MEM08
+         E1       P$2        io       MEM01
+         E2       P$2        io       MEM09
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       MEM02
+         H2       P$2        io       MEM10
+         J1       P$2        io       MEM03
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       MEM11
+         L1       P$2        io       MEM04
+         L2       GND        pwr      GND
+         M1       P$2        io       MEM05
+         M2       P$2        io       MB_PARITY_ODD
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       MEM06
+         P2       P$2        io       N$83
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       MEM07
+         S2       P$2        io       N$84
+         T1       GND        pwr      GND
+         T2       P$2        io       BEMA
+         U2       GND        pwr      GND
+         V2       P$2        io       !EMA
+
+D20      A1       GND        pwr      GND
+         B1       P$2        io       !EA
+         C1       GND        pwr      GND
+         C2       GND        pwr      GND
+         D1       P$2        io       BMA00
+         D2       P$2        io       BMA08
+         E1       P$2        io       BMA01
+         E2       P$2        io       BMA09
+         F1       GND        pwr      GND
+         F2       GND        pwr      GND
+         H1       P$2        io       BMA02
+         H2       P$2        io       BMA10
+         J1       P$2        io       BMA03
+         J2       GND        pwr      GND
+         K1       GND        pwr      GND
+         K2       P$2        io       BMA11
+         L1       P$2        io       BMA04
+         L2       GND        pwr      GND
+         M1       P$2        io       BMA05
+         M2       P$2        io       FIELD1
+         N1       GND        pwr      GND
+         N2       GND        pwr      GND
+         P1       P$2        io       BMA06
+         P2       P$2        io       MEM_START
+         R1       GND        pwr      GND
+         R2       GND        pwr      GND
+         S1       P$2        io       BMA07
+         S2       P$2        io       !STROBE
+         T1       GND        pwr      GND
+         T2       P$2        io       BTP2
+         U2       GND        pwr      GND
+         V2       P$2        io       !MEM_DONE
+

@@ -1,0 +1,485 @@
+Analysis & Synthesis report for BM8L
+Wed Mar 29 23:05:46 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Analysis & Synthesis Messages
+ 10. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Mar 29 23:05:45 2023           ;
+; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name               ; BM8L                                            ;
+; Top-level Entity Name       ; bm8l                                            ;
+; Family                      ; MAX7000S                                        ;
+; Total macrocells            ; 141                                             ;
+; Total pins                  ; 121                                             ;
++-----------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                 ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM7128SQC160-15 ;               ;
+; Top-level entity name                                                      ; bm8l             ; BM8L          ;
+; Family name                                                                ; MAX7000S         ; Cyclone IV GX ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Create Debugging Nodes for IP Cores                                        ; Off              ; Off           ;
+; Preserve fewer node names                                                  ; On               ; On            ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off              ; Off           ;
+; Verilog Version                                                            ; Verilog_2001     ; Verilog_2001  ;
+; VHDL Version                                                               ; VHDL_1993        ; VHDL_1993     ;
+; State Machine Processing                                                   ; Auto             ; Auto          ;
+; Safe State Machine                                                         ; Off              ; Off           ;
+; Extract Verilog State Machines                                             ; On               ; On            ;
+; Extract VHDL State Machines                                                ; On               ; On            ;
+; Ignore Verilog initial constructs                                          ; Off              ; Off           ;
+; Iteration limit for constant Verilog loops                                 ; 5000             ; 5000          ;
+; Iteration limit for non-constant Verilog loops                             ; 250              ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On               ; On            ;
+; Infer RAMs from Raw Logic                                                  ; On               ; On            ;
+; Parallel Synthesis                                                         ; On               ; On            ;
+; NOT Gate Push-Back                                                         ; On               ; On            ;
+; Power-Up Don't Care                                                        ; On               ; On            ;
+; Remove Duplicate Registers                                                 ; On               ; On            ;
+; Ignore CARRY Buffers                                                       ; Off              ; Off           ;
+; Ignore CASCADE Buffers                                                     ; Off              ; Off           ;
+; Ignore GLOBAL Buffers                                                      ; Off              ; Off           ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off              ; Off           ;
+; Ignore LCELL Buffers                                                       ; Auto             ; Auto          ;
+; Ignore SOFT Buffers                                                        ; Off              ; Off           ;
+; Limit AHDL Integers to 32 Bits                                             ; Off              ; Off           ;
+; Optimization Technique                                                     ; Speed            ; Speed         ;
+; Allow XOR Gate Usage                                                       ; On               ; On            ;
+; Auto Logic Cell Insertion                                                  ; On               ; On            ;
+; Parallel Expander Chain Length                                             ; 4                ; 4             ;
+; Auto Parallel Expanders                                                    ; On               ; On            ;
+; Auto Open-Drain Pins                                                       ; On               ; On            ;
+; Auto Resource Sharing                                                      ; Off              ; Off           ;
+; Maximum Fan-in Per Macrocell                                               ; 100              ; 100           ;
+; Use LogicLock Constraints during Resource Balancing                        ; On               ; On            ;
+; Ignore translate_off and synthesis_off directives                          ; Off              ; Off           ;
+; Report Parameter Settings                                                  ; On               ; On            ;
+; Report Source Assignments                                                  ; On               ; On            ;
+; Report Connectivity Checks                                                 ; On               ; On            ;
+; HDL message level                                                          ; Level2           ; Level2        ;
+; Suppress Register Optimization Related Messages                            ; Off              ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000             ; 5000          ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000             ; 5000          ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100              ; 100           ;
+; Block Design Naming                                                        ; Auto             ; Auto          ;
+; Synthesis Effort                                                           ; Auto             ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On               ; On            ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off              ; Off           ;
+; Analysis & Synthesis Message Level                                         ; Medium           ; Medium        ;
+; Disable Register Merging Across Hierarchies                                ; Auto             ; Auto          ;
+; Synthesis Seed                                                             ; 1                ; 1             ;
++----------------------------------------------------------------------------+------------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++--------------------------------------------------------------------+-----------------+------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type              ; File Name with Absolute Path                                       ; Library ;
++--------------------------------------------------------------------+-----------------+------------------------+--------------------------------------------------------------------+---------+
+; //wsl.localhost/Debian/home/vrs/Eagle/projects/DEC/BM8L/pld/BM8L.v ; yes             ; User Verilog HDL File  ; //wsl.localhost/Debian/home/vrs/Eagle/projects/DEC/BM8L/pld/BM8L.v ;         ;
++--------------------------------------------------------------------+-----------------+------------------------+--------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; Logic cells          ; 141                  ;
+; Total registers      ; 6                    ;
+; I/O pins             ; 121                  ;
+; Shareable expanders  ; 40                   ;
+; Maximum fan-out node ; b_init               ;
+; Maximum fan-out      ; 47                   ;
+; Total fan-out        ; 859                  ;
+; Average fan-out      ; 2.84                 ;
++----------------------+----------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                 ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |bm8l                      ; 141        ; 121  ; |bm8l               ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; eab0                                                ; mem_start           ; yes                    ;
+; eab1                                                ; mem_start           ; yes                    ;
+; eab2                                                ; mem_start           ; yes                    ;
+; inh_l                                               ; del4                ; yes                    ;
+; inth                                                ; n_t_47x             ; yes                    ;
+; read                                                ; btp2                ; yes                    ;
+; ret_l                                               ; del4                ; yes                    ;
+; sorc_l                                              ; del3                ; yes                    ;
+; strob_l                                             ; del3                ; yes                    ;
+; if0                                                 ; load_inh_l          ; yes                    ;
+; df0                                                 ; load_df             ; yes                    ;
+; if1                                                 ; load_inh_l          ; yes                    ;
+; df1                                                 ; load_df             ; yes                    ;
+; if2                                                 ; load_inh_l          ; yes                    ;
+; df2                                                 ; load_df             ; yes                    ;
+; eab0_m                                              ; mem_start           ; yes                    ;
+; eab1_m                                              ; mem_start           ; yes                    ;
+; eab2_m                                              ; mem_start           ; yes                    ;
+; inh_l_m                                             ; GND                 ; yes                    ;
+; inth_m                                              ; GND                 ; yes                    ;
+; n_t_68x                                             ; n_t_3x              ; yes                    ;
+; select                                              ; mem_start           ; yes                    ;
+; n_t_69x                                             ; n_t_3x              ; yes                    ;
+; n_t_70x                                             ; n_t_3x              ; yes                    ;
+; n_t_71x                                             ; n_t_3x              ; yes                    ;
+; n_t_66x                                             ; n_t_3x              ; yes                    ;
+; n_t_67x                                             ; n_t_3x              ; yes                    ;
+; n_t_72x                                             ; n_t_3x              ; yes                    ;
+; n_t_73x                                             ; n_t_3x              ; yes                    ;
+; n_t_74x                                             ; n_t_3x              ; yes                    ;
+; n_t_75x                                             ; n_t_3x              ; yes                    ;
+; n_t_76x                                             ; n_t_3x              ; yes                    ;
+; n_t_77x                                             ; n_t_3x              ; yes                    ;
+; read_m                                              ; GND                 ; yes                    ;
+; ret_l_m                                             ; GND                 ; yes                    ;
+; sorc_l_m                                            ; GND                 ; yes                    ;
+; strob_l_m                                           ; GND                 ; yes                    ;
+; if0_m                                               ; load_inh_l          ; yes                    ;
+; df0_m                                               ; load_df             ; yes                    ;
+; if1_m                                               ; load_inh_l          ; yes                    ;
+; df1_m                                               ; load_df             ; yes                    ;
+; if2_m                                               ; load_inh_l          ; yes                    ;
+; df2_m                                               ; load_df             ; yes                    ;
+; n_t_68x_m                                           ; n_t_3x              ; yes                    ;
+; select_m                                            ; mem_start           ; yes                    ;
+; n_t_69x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_70x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_71x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_66x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_67x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_72x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_73x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_74x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_75x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_76x_m                                           ; n_t_3x              ; yes                    ;
+; n_t_77x_m                                           ; n_t_3x              ; yes                    ;
+; done$latch                                          ; del6                ; yes                    ;
+; ea0$latch                                           ; del3wrt             ; yes                    ;
+; ea1$latch                                           ; del3wrt             ; yes                    ;
+; ea2$latch                                           ; del3wrt             ; yes                    ;
+; wrt_l                                               ; del5                ; yes                    ;
+; ib0                                                 ; load_ib             ; yes                    ;
+; ib1                                                 ; load_ib             ; yes                    ;
+; ib2                                                 ; load_ib             ; yes                    ;
+; done_m                                              ; GND                 ; yes                    ;
+; ea0_m                                               ; del3wrt             ; yes                    ;
+; ea1_m                                               ; del3wrt             ; yes                    ;
+; ea2_m                                               ; del3wrt             ; yes                    ;
+; wrt_l_m                                             ; GND                 ; yes                    ;
+; ib0_m                                               ; load_ib             ; yes                    ;
+; ib1_m                                               ; load_ib             ; yes                    ;
+; ib2_m                                               ; load_ib             ; yes                    ;
+; bf0                                                 ; del2                ; yes                    ;
+; bf1                                                 ; del2                ; yes                    ;
+; bf2                                                 ; del2                ; yes                    ;
+; bf0_m                                               ; GND                 ; yes                    ;
+; bf1_m                                               ; GND                 ; yes                    ;
+; bf2_m                                               ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 78  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Mar 29 23:05:44 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BM8L -c BM8L
+Info (12021): Found 1 design units, including 1 entities, in source file bm8l.v
+    Info (12023): Found entity 1: bm8l
+Info (12127): Elaborating entity "bm8l" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(301): inferring latch(es) for variable "n_t_68x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(308): inferring latch(es) for variable "n_t_68x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(315): inferring latch(es) for variable "n_t_69x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(322): inferring latch(es) for variable "n_t_69x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(329): inferring latch(es) for variable "n_t_70x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(336): inferring latch(es) for variable "n_t_70x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(343): inferring latch(es) for variable "n_t_71x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(350): inferring latch(es) for variable "n_t_71x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(357): inferring latch(es) for variable "n_t_66x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(364): inferring latch(es) for variable "n_t_66x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(371): inferring latch(es) for variable "n_t_67x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(378): inferring latch(es) for variable "n_t_67x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(416): inferring latch(es) for variable "n_t_72x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(423): inferring latch(es) for variable "n_t_72x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(430): inferring latch(es) for variable "n_t_73x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(437): inferring latch(es) for variable "n_t_73x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(444): inferring latch(es) for variable "n_t_74x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(451): inferring latch(es) for variable "n_t_74x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(458): inferring latch(es) for variable "n_t_75x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(465): inferring latch(es) for variable "n_t_75x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(472): inferring latch(es) for variable "n_t_76x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(479): inferring latch(es) for variable "n_t_76x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(486): inferring latch(es) for variable "n_t_77x_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(493): inferring latch(es) for variable "n_t_77x", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(612): inferring latch(es) for variable "eab0_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(622): inferring latch(es) for variable "eab0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(632): inferring latch(es) for variable "eab1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(642): inferring latch(es) for variable "eab1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(652): inferring latch(es) for variable "eab2_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(662): inferring latch(es) for variable "eab2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(693): inferring latch(es) for variable "ea0_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(703): inferring latch(es) for variable "ea0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(714): inferring latch(es) for variable "ea1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(724): inferring latch(es) for variable "ea1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(735): inferring latch(es) for variable "ea2_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(745): inferring latch(es) for variable "ea2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(756): inferring latch(es) for variable "if0_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(766): inferring latch(es) for variable "if0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(776): inferring latch(es) for variable "if1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(786): inferring latch(es) for variable "if1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(796): inferring latch(es) for variable "if2_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(806): inferring latch(es) for variable "if2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(817): inferring latch(es) for variable "bf0_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(824): inferring latch(es) for variable "bf0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(831): inferring latch(es) for variable "bf1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(838): inferring latch(es) for variable "bf1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(845): inferring latch(es) for variable "bf2_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(852): inferring latch(es) for variable "bf2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(859): inferring latch(es) for variable "ib0_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(869): inferring latch(es) for variable "ib0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(879): inferring latch(es) for variable "ib1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(889): inferring latch(es) for variable "ib1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(899): inferring latch(es) for variable "ib2_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(909): inferring latch(es) for variable "ib2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(920): inferring latch(es) for variable "inth_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(930): inferring latch(es) for variable "inth", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(940): inferring latch(es) for variable "select_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(947): inferring latch(es) for variable "select", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(954): inferring latch(es) for variable "done_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(964): inferring latch(es) for variable "done", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(974): inferring latch(es) for variable "df0_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(984): inferring latch(es) for variable "df0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(994): inferring latch(es) for variable "df1_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1004): inferring latch(es) for variable "df1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1014): inferring latch(es) for variable "df2_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1024): inferring latch(es) for variable "df2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1060): inferring latch(es) for variable "read_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1070): inferring latch(es) for variable "read", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1081): inferring latch(es) for variable "ret_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1091): inferring latch(es) for variable "ret_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1101): inferring latch(es) for variable "sorc_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1111): inferring latch(es) for variable "sorc_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1121): inferring latch(es) for variable "strob_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1131): inferring latch(es) for variable "strob_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1141): inferring latch(es) for variable "wrt_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1151): inferring latch(es) for variable "wrt_l", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1161): inferring latch(es) for variable "inh_l_m", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at BM8L.v(1171): inferring latch(es) for variable "inh_l", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "inh_l" at BM8L.v(1171)
+Info (10041): Inferred latch for "inh_l_m" at BM8L.v(1161)
+Info (10041): Inferred latch for "wrt_l" at BM8L.v(1151)
+Info (10041): Inferred latch for "wrt_l_m" at BM8L.v(1141)
+Info (10041): Inferred latch for "strob_l" at BM8L.v(1131)
+Info (10041): Inferred latch for "strob_l_m" at BM8L.v(1121)
+Info (10041): Inferred latch for "sorc_l" at BM8L.v(1111)
+Info (10041): Inferred latch for "sorc_l_m" at BM8L.v(1101)
+Info (10041): Inferred latch for "ret_l" at BM8L.v(1091)
+Info (10041): Inferred latch for "ret_l_m" at BM8L.v(1081)
+Info (10041): Inferred latch for "read" at BM8L.v(1070)
+Info (10041): Inferred latch for "read_m" at BM8L.v(1060)
+Info (10041): Inferred latch for "df2" at BM8L.v(1024)
+Info (10041): Inferred latch for "df2_m" at BM8L.v(1014)
+Info (10041): Inferred latch for "df1" at BM8L.v(1004)
+Info (10041): Inferred latch for "df1_m" at BM8L.v(994)
+Info (10041): Inferred latch for "df0" at BM8L.v(984)
+Info (10041): Inferred latch for "df0_m" at BM8L.v(974)
+Info (10041): Inferred latch for "done" at BM8L.v(964)
+Info (10041): Inferred latch for "done_m" at BM8L.v(954)
+Info (10041): Inferred latch for "select" at BM8L.v(947)
+Info (10041): Inferred latch for "select_m" at BM8L.v(940)
+Info (10041): Inferred latch for "inth" at BM8L.v(930)
+Info (10041): Inferred latch for "inth_m" at BM8L.v(920)
+Info (10041): Inferred latch for "ib2" at BM8L.v(909)
+Info (10041): Inferred latch for "ib2_m" at BM8L.v(899)
+Info (10041): Inferred latch for "ib1" at BM8L.v(889)
+Info (10041): Inferred latch for "ib1_m" at BM8L.v(879)
+Info (10041): Inferred latch for "ib0" at BM8L.v(869)
+Info (10041): Inferred latch for "ib0_m" at BM8L.v(859)
+Info (10041): Inferred latch for "bf2" at BM8L.v(852)
+Info (10041): Inferred latch for "bf2_m" at BM8L.v(845)
+Info (10041): Inferred latch for "bf1" at BM8L.v(838)
+Info (10041): Inferred latch for "bf1_m" at BM8L.v(831)
+Info (10041): Inferred latch for "bf0" at BM8L.v(824)
+Info (10041): Inferred latch for "bf0_m" at BM8L.v(817)
+Info (10041): Inferred latch for "if2" at BM8L.v(806)
+Info (10041): Inferred latch for "if2_m" at BM8L.v(796)
+Info (10041): Inferred latch for "if1" at BM8L.v(786)
+Info (10041): Inferred latch for "if1_m" at BM8L.v(776)
+Info (10041): Inferred latch for "if0" at BM8L.v(766)
+Info (10041): Inferred latch for "if0_m" at BM8L.v(756)
+Info (10041): Inferred latch for "ea2" at BM8L.v(745)
+Info (10041): Inferred latch for "ea2_m" at BM8L.v(735)
+Info (10041): Inferred latch for "ea1" at BM8L.v(724)
+Info (10041): Inferred latch for "ea1_m" at BM8L.v(714)
+Info (10041): Inferred latch for "ea0" at BM8L.v(703)
+Info (10041): Inferred latch for "ea0_m" at BM8L.v(693)
+Info (10041): Inferred latch for "eab2" at BM8L.v(662)
+Info (10041): Inferred latch for "eab2_m" at BM8L.v(652)
+Info (10041): Inferred latch for "eab1" at BM8L.v(642)
+Info (10041): Inferred latch for "eab1_m" at BM8L.v(632)
+Info (10041): Inferred latch for "eab0" at BM8L.v(622)
+Info (10041): Inferred latch for "eab0_m" at BM8L.v(612)
+Info (10041): Inferred latch for "n_t_77x" at BM8L.v(493)
+Info (10041): Inferred latch for "n_t_77x_m" at BM8L.v(486)
+Info (10041): Inferred latch for "n_t_76x" at BM8L.v(479)
+Info (10041): Inferred latch for "n_t_76x_m" at BM8L.v(472)
+Info (10041): Inferred latch for "n_t_75x" at BM8L.v(465)
+Info (10041): Inferred latch for "n_t_75x_m" at BM8L.v(458)
+Info (10041): Inferred latch for "n_t_74x" at BM8L.v(451)
+Info (10041): Inferred latch for "n_t_74x_m" at BM8L.v(444)
+Info (10041): Inferred latch for "n_t_73x" at BM8L.v(437)
+Info (10041): Inferred latch for "n_t_73x_m" at BM8L.v(430)
+Info (10041): Inferred latch for "n_t_72x" at BM8L.v(423)
+Info (10041): Inferred latch for "n_t_72x_m" at BM8L.v(416)
+Info (10041): Inferred latch for "n_t_67x" at BM8L.v(378)
+Info (10041): Inferred latch for "n_t_67x_m" at BM8L.v(371)
+Info (10041): Inferred latch for "n_t_66x" at BM8L.v(364)
+Info (10041): Inferred latch for "n_t_66x_m" at BM8L.v(357)
+Info (10041): Inferred latch for "n_t_71x" at BM8L.v(350)
+Info (10041): Inferred latch for "n_t_71x_m" at BM8L.v(343)
+Info (10041): Inferred latch for "n_t_70x" at BM8L.v(336)
+Info (10041): Inferred latch for "n_t_70x_m" at BM8L.v(329)
+Info (10041): Inferred latch for "n_t_69x" at BM8L.v(322)
+Info (10041): Inferred latch for "n_t_69x_m" at BM8L.v(315)
+Info (10041): Inferred latch for "n_t_68x" at BM8L.v(308)
+Info (10041): Inferred latch for "n_t_68x_m" at BM8L.v(301)
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "bmb03_l" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "bmb04_l" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "bmb05_l" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "bmb06_l" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "bmb07_l" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "bmb08_l" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "done" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "ea0" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "ea1" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "ea2" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "field1_l" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "not_fld0" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "write" and its non-tri-state driver.
+Info (13060): One or more bidirs are fed by always enabled tri-state buffers
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "bmb03_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "bmb04_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "bmb05_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "bmb06_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "bmb07_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "bmb08_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "done" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ea0" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ea0_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ea1" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ea1_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ea2" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ea2_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "field1_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "not_fld0" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "write" is moved to its source
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "bmb03_l~synth"
+    Warning (13010): Node "bmb04_l~synth"
+    Warning (13010): Node "bmb05_l~synth"
+    Warning (13010): Node "bmb06_l~synth"
+    Warning (13010): Node "bmb07_l~synth"
+    Warning (13010): Node "bmb08_l~synth"
+    Warning (13010): Node "done~synth"
+    Warning (13010): Node "ea0~synth"
+    Warning (13010): Node "ea0~synth"
+    Warning (13010): Node "ea1~synth"
+    Warning (13010): Node "ea1~synth"
+    Warning (13010): Node "ea2~synth"
+    Warning (13010): Node "ea2~synth"
+    Warning (13010): Node "field1_l~synth"
+    Warning (13010): Node "not_fld0~synth"
+    Warning (13010): Node "write~synth"
+Info (21057): Implemented 302 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 59 input pins
+    Info (21059): Implemented 46 output pins
+    Info (21060): Implemented 16 bidirectional pins
+    Info (21063): Implemented 141 macrocells
+    Info (21073): Implemented 40 shareable expanders
+Info (144001): Generated suppressed messages file //wsl.localhost/Debian/home/vrs/Eagle/projects/DEC/BM8L/pld/output_files/BM8L.map.smsg
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 109 warnings
+    Info: Peak virtual memory: 4577 megabytes
+    Info: Processing ended: Wed Mar 29 23:05:46 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in //wsl.localhost/Debian/home/vrs/Eagle/projects/DEC/BM8L/pld/output_files/BM8L.map.smsg.
+
+

@@ -1,0 +1,745 @@
+Fitter report for BM8L
+Wed Mar 29 23:05:47 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Fitter Resource Usage Summary
+  6. Input Pins
+  7. Output Pins
+  8. Bidir Pins
+  9. I/O Bank Usage
+ 10. All Package Pins
+ 11. Output Pin Default Load For Reported TCO
+ 12. Fitter Resource Utilization by Entity
+ 13. Control Signals
+ 14. Non-Global High Fan-Out Signals
+ 15. Fitter Device Options
+ 16. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Fitter Summary                                                              ;
++---------------------------+-------------------------------------------------+
+; Fitter Status             ; Failed - Wed Mar 29 23:05:47 2023               ;
+; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name             ; BM8L                                            ;
+; Top-level Entity Name     ; bm8l                                            ;
+; Family                    ; MAX7000S                                        ;
+; Device                    ; EPM7128SQC160-15                                ;
+; Timing Models             ; Final                                           ;
+; Total macrocells          ; 141 / 128 ( 110 % )                             ;
+; Total pins                ; 121 / 100 ( 121 % )                             ;
++---------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                               ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM7128SQC160-15 ;               ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Optimize Multi-Corner Timing                                               ; Off              ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off              ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off              ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; Normal           ; Normal        ;
+; Fitter Initial Placement Seed                                              ; 1                ; 1             ;
+; Slow Slew Rate                                                             ; Off              ; Off           ;
+; Fitter Effort                                                              ; Auto Fit         ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off              ; Off           ;
++----------------------------------------------------------------------------+------------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------+
+; Fitter Resource Usage Summary                      ;
++------------------------------+---------------------+
+; Resource                     ; Usage               ;
++------------------------------+---------------------+
+; Logic cells                  ; 141 / 128 ( 110 % ) ;
+; Registers                    ; 6 / 128 ( 5 % )     ;
+; Number of pterms used        ; 413                 ;
+; I/O pins                     ; 121 / 100 ( 121 % ) ;
+;     -- Clock pins            ; 0 / 2 ( 0 % )       ;
+;     -- Dedicated input pins  ; 0 / 2 ( 0 % )       ;
+;                              ;                     ;
+; Global signals               ; 0                   ;
+; Shareable expanders          ; 40 / 128 ( 31 % )   ;
+; Parallel expanders           ; 0 / 120 ( 0 % )     ;
+; Cells using turbo bit        ; 0 / 128 ( 0 % )     ;
+; Maximum fan-out              ; 47                  ;
+; Highest non-global fan-out   ; 47                  ;
+; Total fan-out                ; 859                 ;
+; Average fan-out              ; 2.84                ;
++------------------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                         ;
++---------------+------------+----------+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; Name          ; Pin #      ; I/O Bank ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; I/O Standard ; Location assigned by ;
++---------------+------------+----------+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; b_init        ; Unassigned ; --       ; 47                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bf_enable_l   ; Unassigned ; --       ; 9                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; biop1         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; biop2         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; biop4         ; Unassigned ; --       ; 8                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma00         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma01         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma02         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma03         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma04         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma05         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma06         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma07         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma08         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma09         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma10         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bma11         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb00         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb01         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb02         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb03         ; Unassigned ; --       ; 10                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb04         ; Unassigned ; --       ; 10                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb05         ; Unassigned ; --       ; 4                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb06         ; Unassigned ; --       ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb07         ; Unassigned ; --       ; 12                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb08         ; Unassigned ; --       ; 12                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb09         ; Unassigned ; --       ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb10         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; bmb11         ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; btp2          ; Unassigned ; --       ; 5                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; btp3          ; Unassigned ; --       ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; del1          ; Unassigned ; --       ; 5                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; del2          ; Unassigned ; --       ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; del3          ; Unassigned ; --       ; 10                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; del4          ; Unassigned ; --       ; 29                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; del5          ; Unassigned ; --       ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; del6          ; Unassigned ; --       ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; df_enable_l   ; Unassigned ; --       ; 9                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; e_or_f_set    ; Unassigned ; --       ; 13                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ex_da0_l      ; Unassigned ; --       ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ex_da1_l      ; Unassigned ; --       ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ex_da2_l      ; Unassigned ; --       ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; jmp_or_jms    ; Unassigned ; --       ; 13                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; key_clr_l     ; Unassigned ; --       ; 28                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; key_df0       ; Unassigned ; --       ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; key_df1       ; Unassigned ; --       ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; key_df2_l     ; Unassigned ; --       ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; key_if0       ; Unassigned ; --       ; 8                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; key_if1       ; Unassigned ; --       ; 8                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; key_if2_l     ; Unassigned ; --       ; 8                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; key_load_l    ; Unassigned ; --       ; 30                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; load_sf_l     ; Unassigned ; --       ; 25                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; mem_start     ; Unassigned ; --       ; 13                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; n_t_13x       ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; n_t_14x       ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; n_t_15x       ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; n_t_17x       ; Unassigned ; --       ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; power_ok      ; Unassigned ; --       ; 23                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; sp_cyc_next_l ; Unassigned ; --       ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
++---------------+------------+----------+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                      ;
++---------------+------------+----------+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name          ; Pin #      ; I/O Bank ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++---------------+------------+----------+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; ac06_bus_l    ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ac07_bus_l    ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ac08_bus_l    ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ac09_bus_l    ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ac10_bus_l    ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ac11_bus_l    ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; bema          ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ea_l          ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ema00_l       ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ema01_l       ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ema02_l       ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ema_l         ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; field1        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; inhibit       ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; int_inhibit_l ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma00_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma01_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma02_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma03_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma04_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma05_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma06_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma07_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma08_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma09_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma10_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ma11_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem00         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem01         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem02         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem03         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem04         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem05         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem06         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem07         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem08         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem09         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem10         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem11         ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; mem_done_l    ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; n_t_6x        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; read_l        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; returnh       ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; source        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; strobe        ; Unassigned ; --       ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; strobe_l      ; Unassigned ; --       ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
++---------------+------------+----------+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Bidir Pins                                                                                                                                                                                                                                         ;
++----------+------------+----------+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name     ; Pin #      ; I/O Bank ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Slow Slew Rate ; Open Drain ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++----------+------------+----------+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+----------------------+---------------------+
+; bmb03_l  ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; bmb04_l  ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; bmb05_l  ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; bmb06_l  ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; bmb07_l  ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; bmb08_l  ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; done     ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ea0      ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ea0_l    ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ea1      ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ea1_l    ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ea2      ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ea2_l    ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; field1_l ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; not_fld0 ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; write    ; Unassigned ; --       ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
++----------+------------+----------+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++-------------------------------------------------+
+; I/O Bank Usage                                  ;
++----------+-------+---------------+--------------+
+; I/O Bank ; Usage ; VCCIO Voltage ; VREF Voltage ;
++----------+-------+---------------+--------------+
+; Unknown  ; 121   ; --            ;              ;
++----------+-------+---------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                     ;
++----------+------------+----------+----------------+-------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.  ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+----------------+-------+--------------+---------+-----------------+
+; 1        ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 2        ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 3        ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 4        ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 5        ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 6        ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 7        ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 8        ; 27         ; --       ; VCCIO          ; power ;              ; 5.0V    ;                 ;
+; 9        ; 28         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 10       ; 29         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 11       ; 30         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 12       ; 31         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 13       ; 32         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 14       ; 33         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 15       ; 34         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 16       ; 35         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 17       ; 36         ; --       ; GND            ; gnd   ;              ;         ;                 ;
+; 18       ; 37         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 19       ; 38         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 20       ; 39         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 21       ; 40         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 22       ; 41         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 23       ; 42         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 24       ; 43         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 25       ; 44         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 26       ; 45         ; --       ; VCCIO          ; power ;              ; 5.0V    ;                 ;
+; 27       ; 46         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 28       ; 47         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 29       ; 48         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 30       ; 49         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 31       ; 50         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 32       ; 51         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 33       ; 52         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 34       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 35       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 36       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 37       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 38       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 39       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 40       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 41       ; 60         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 42       ; 61         ; --       ; GND            ; gnd   ;              ;         ;                 ;
+; 43       ; 62         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 44       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 45       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 46       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 47       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 48       ; 67         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 49       ; 68         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 50       ; 69         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 51       ; 70         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 52       ; 71         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 53       ; 72         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 54       ; 73         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 55       ; 74         ; --       ; VCCIO          ; power ;              ; 5.0V    ;                 ;
+; 56       ; 75         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 57       ; 76         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 58       ; 77         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 59       ; 78         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 60       ; 79         ; --       ; GND            ; gnd   ;              ;         ;                 ;
+; 61       ; 80         ; --       ; VCCINT         ; power ;              ; 5.0V    ;                 ;
+; 62       ; 81         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 63       ; 82         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 64       ; 83         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 65       ; 84         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 66       ; 85         ; --       ; GND            ; gnd   ;              ;         ;                 ;
+; 67       ; 86         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 68       ; 87         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 69       ; 88         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 70       ; 89         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 71       ; 90         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 72       ; 91         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 73       ; 92         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 74       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 75       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 76       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 77       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 78       ; 97         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 79       ; 98         ; --       ; VCCIO          ; power ;              ; 5.0V    ;                 ;
+; 80       ; 99         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 81       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 82       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 83       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 84       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 85       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 86       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 87       ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 88       ; 107        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 89       ; 108        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 90       ; 109        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 91       ; 110        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 92       ; 111        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 93       ; 112        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 94       ; 113        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 95       ; 114        ; --       ; GND            ; gnd   ;              ;         ;                 ;
+; 96       ; 115        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 97       ; 116        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 98       ; 117        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 99       ; 118        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 100      ; 119        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 101      ; 120        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 102      ; 121        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 103      ; 122        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 104      ; 123        ; --       ; VCCIO          ; power ;              ; 5.0V    ;                 ;
+; 105      ; 124        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 106      ; 125        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 107      ; 126        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 108      ; 127        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 109      ; 128        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 110      ; 129        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 111      ; 130        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 112      ; 131        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 113      ; 132        ; --       ; GND            ; gnd   ;              ;         ;                 ;
+; 114      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 115      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 116      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 117      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 118      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 119      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 120      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 121      ; 140        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 122      ; 141        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 123      ; 142        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 124      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 125      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 126      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 127      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 128      ; 147        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 129      ; 148        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 130      ; 149        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 131      ; 150        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 132      ; 151        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 133      ; 152        ; --       ; VCCIO          ; power ;              ; 5.0V    ;                 ;
+; 134      ; 153        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 135      ; 154        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 136      ; 155        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 137      ; 156        ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 138      ; 157        ; --       ; GND            ; gnd   ;              ;         ;                 ;
+; 139      ; 158        ; --       ; GND+           ;       ;              ;         ;                 ;
+; 140      ; 159        ; --       ; GND+           ;       ;              ;         ;                 ;
+; 141      ; 0          ; --       ; GND+           ;       ;              ;         ;                 ;
+; 142      ; 1          ; --       ; GND+           ;       ;              ;         ;                 ;
+; 143      ; 2          ; --       ; VCCINT         ; power ;              ; 5.0V    ;                 ;
+; 144      ; 3          ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 145      ; 4          ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 146      ; 5          ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 147      ; 6          ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 148      ; 7          ; --       ; GND            ; gnd   ;              ;         ;                 ;
+; 149      ; 8          ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 150      ; 9          ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 151      ; 10         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 152      ; 11         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 153      ; 12         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 154      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 155      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 156      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 157      ;            ;          ; NC             ;       ;              ;         ;                 ;
+; 158      ; 17         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 159      ; 18         ; --       ; RESERVED       ;       ;              ;         ;                 ;
+; 160      ; 19         ; --       ; RESERVED       ;       ;              ;         ;                 ;
++----------+------------+----------+----------------+-------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; TTL          ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++-------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                               ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |bm8l                      ; 141        ; 121  ; |bm8l               ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                   ;
++-----------------+------------+---------+-------+--------+----------------------+------------------+
+; Name            ; Location   ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ;
++-----------------+------------+---------+-------+--------+----------------------+------------------+
+; b_load_sf~4sexp ; Unassigned ; 6       ; Clock ; no     ; --                   ; --               ;
++-----------------+------------+---------+-------+--------+----------------------+------------------+
+
+
++---------------------------------+
+; Non-Global High Fan-Out Signals ;
++----------------------+----------+
+; Name                 ; Fan-Out  ;
++----------------------+----------+
+; b_init               ; 47       ;
+; read~23              ; 33       ;
+; key_load_l           ; 30       ;
+; del4                 ; 29       ;
+; key_clr_l            ; 28       ;
+; load_sf_l            ; 25       ;
+; n_t_3x~4sexpand0     ; 24       ;
+; power_ok             ; 23       ;
+; wrt_l~23             ; 22       ;
+; select~20            ; 15       ;
+; jmp_or_jms           ; 13       ;
+; e_or_f_set           ; 13       ;
+; mem_start            ; 13       ;
+; bmb07                ; 12       ;
+; bmb08                ; 12       ;
+; del3                 ; 10       ;
+; bmb04                ; 10       ;
+; bmb03                ; 10       ;
+; ea2$latch~30         ; 10       ;
+; load_ib~11           ; 10       ;
+; bf_enable_l          ; 9        ;
+; df_enable_l          ; 9        ;
+; load_inh_l~4sexpand0 ; 9        ;
+; ea1$latch~26         ; 9        ;
+; ea0$latch~26         ; 9        ;
+; key_if1              ; 8        ;
+; key_if0              ; 8        ;
+; key_if2_l            ; 8        ;
+; biop4                ; 8        ;
+; bmb09                ; 7        ;
+; del2                 ; 7        ;
+; btp3                 ; 7        ;
+; del5                 ; 6        ;
+; sp_cyc_next_l        ; 6        ;
+; bmb06                ; 6        ;
+; b_load_sf~4sexp      ; 6        ;
+; del3wrt~3sexpand0    ; 6        ;
+; n_t_2x~4sexpand0     ; 6        ;
+; load_df~6            ; 6        ;
+; del1                 ; 5        ;
+; btp2                 ; 5        ;
+; bmb05                ; 4        ;
+; if2~25               ; 4        ;
+; if1~25               ; 4        ;
+; if0~25               ; 4        ;
+; df2~28               ; 4        ;
+; df1~28               ; 4        ;
+; df0~28               ; 4        ;
+; ex_da1_l             ; 3        ;
+; ex_da0_l             ; 3        ;
+; ex_da2_l             ; 3        ;
+; ead1~18sexpand1      ; 3        ;
+; ead0~18sexpand1      ; 3        ;
+; n_t_34x~4sexpand0    ; 3        ;
+; inth_m~18sexpand1    ; 3        ;
+; done$latch~22        ; 3        ;
+; ib1~22               ; 3        ;
+; ib0~22               ; 3        ;
+; ib2~22               ; 3        ;
+; del6                 ; 2        ;
+; key_df2_l            ; 2        ;
+; key_df1              ; 2        ;
+; key_df0              ; 2        ;
+; n_t_23x~5sexpand1    ; 2        ;
+; n_t_4x~5sexpand1     ; 2        ;
+; n_t_18x~4sexpand0    ; 2        ;
+; n_t_5x~4sexpand0     ; 2        ;
+; sorc_l_m~18sexpand1  ; 2        ;
+; ret_l_m~15sexpand1   ; 2        ;
+; eab2~23              ; 2        ;
+; eab1~23              ; 2        ;
+; eab0~23              ; 2        ;
+; select_m~20          ; 2        ;
+; eab2_m~22            ; 2        ;
+; eab1_m~22            ; 2        ;
+; eab0_m~22            ; 2        ;
+; ea1_m~22             ; 2        ;
+; ea0_m~22             ; 2        ;
+; ea2_m~22             ; 2        ;
+; n_t_77x~21           ; 2        ;
+; n_t_76x~21           ; 2        ;
+; n_t_75x~21           ; 2        ;
+; n_t_74x~21           ; 2        ;
+; n_t_73x~21           ; 2        ;
+; n_t_72x~21           ; 2        ;
+; n_t_67x~21           ; 2        ;
+; n_t_66x~21           ; 2        ;
+; n_t_71x~21           ; 2        ;
+; n_t_70x~21           ; 2        ;
+; n_t_69x~21           ; 2        ;
+; n_t_68x~21           ; 2        ;
+; strob_l~23           ; 2        ;
+; sf4                  ; 2        ;
+; sf2                  ; 2        ;
+; sf0                  ; 2        ;
+; done_m~26            ; 2        ;
+; inh_l~23             ; 2        ;
+; n_t_77x_m~21         ; 2        ;
+; n_t_76x_m~21         ; 2        ;
+; n_t_75x_m~21         ; 2        ;
+; n_t_74x_m~21         ; 2        ;
+; n_t_73x_m~21         ; 2        ;
+; n_t_72x_m~21         ; 2        ;
+; n_t_67x_m~21         ; 2        ;
+; n_t_66x_m~21         ; 2        ;
+; n_t_71x_m~21         ; 2        ;
+; n_t_70x_m~21         ; 2        ;
+; n_t_69x_m~21         ; 2        ;
+; n_t_68x_m~21         ; 2        ;
+; strob_l_m~19         ; 2        ;
+; if2_m~22             ; 2        ;
+; if1_m~22             ; 2        ;
+; if0_m~22             ; 2        ;
+; inh_l_m~19           ; 2        ;
+; inth~23              ; 2        ;
+; inth_m~26            ; 2        ;
+; sorc_l~23            ; 2        ;
+; ret_l~23             ; 2        ;
+; bf1~21               ; 2        ;
+; bf0~21               ; 2        ;
+; bf2~21               ; 2        ;
+; df2_m~22             ; 2        ;
+; df1_m~22             ; 2        ;
+; df0_m~22             ; 2        ;
+; ib1_m~22             ; 2        ;
+; ib0_m~22             ; 2        ;
+; ib2_m~22             ; 2        ;
+; read_m~26            ; 2        ;
+; wrt_l_m~26           ; 2        ;
+; sorc_l_m~26          ; 2        ;
+; ret_l_m~26           ; 2        ;
+; bf1_m~19             ; 2        ;
+; bf0_m~19             ; 2        ;
+; bf2_m~19             ; 2        ;
+; sf5                  ; 2        ;
+; sf3                  ; 2        ;
+; sf1                  ; 2        ;
+; bmb11                ; 1        ;
+; bmb10                ; 1        ;
+; bmb02                ; 1        ;
+; bmb01                ; 1        ;
+; n_t_17x              ; 1        ;
+; bmb00                ; 1        ;
+; biop1                ; 1        ;
+; biop2                ; 1        ;
+; bma11                ; 1        ;
+; bma10                ; 1        ;
+; bma09                ; 1        ;
+; bma08                ; 1        ;
+; bma07                ; 1        ;
+; bma06                ; 1        ;
+; bma05                ; 1        ;
+; bma04                ; 1        ;
+; bma03                ; 1        ;
+; bma02                ; 1        ;
+; bma01                ; 1        ;
+; bma00                ; 1        ;
+; n_t_15x              ; 1        ;
+; n_t_14x              ; 1        ;
+; n_t_13x              ; 1        ;
+; ead1~15sexp3         ; 1        ;
+; ead1~15sexp2         ; 1        ;
+; ead1~15sexp1         ; 1        ;
+; ead0~15sexp3         ; 1        ;
+; ead0~15sexp2         ; 1        ;
+; ead0~15sexp1         ; 1        ;
+; ead2~16sexp3         ; 1        ;
+; ead2~16sexp2         ; 1        ;
+; ead2~16sexp1         ; 1        ;
+; if_ena~4sexpand0     ; 1        ;
+; comb~90sexpand0      ; 1        ;
+; comb~132sexpand1     ; 1        ;
+; done_m~18sexpand1    ; 1        ;
+; n_t_19x~4sexpand0    ; 1        ;
+; comb~88sexpand3      ; 1        ;
+; comb~88sexpand1      ; 1        ;
+; comb~88sexpand0      ; 1        ;
+; comb~89sexpand0      ; 1        ;
+; comb~122sexpand1     ; 1        ;
+; n_t_47x~4sexpand0    ; 1        ;
+; wrt_l_m~18sexpand1   ; 1        ;
+; read_m~18sexpand1    ; 1        ;
+; comb~93sexpand0      ; 1        ;
+; comb~92sexpand0      ; 1        ;
+; comb~91sexpand0      ; 1        ;
+; strobe_l~6           ; 1        ;
+; mem_done_l~6         ; 1        ;
+; mem11~6              ; 1        ;
+; mem10~6              ; 1        ;
+; mem09~6              ; 1        ;
+; mem08~6              ; 1        ;
+; mem07~6              ; 1        ;
+; mem06~6              ; 1        ;
+; mem05~6              ; 1        ;
+; mem04~6              ; 1        ;
+; mem03~6              ; 1        ;
+; mem02~6              ; 1        ;
+; mem01~6              ; 1        ;
+; mem00~6              ; 1        ;
+; ea_ok_l~6            ; 1        ;
+; field1_l~16          ; 1        ;
+; not_fld0~17          ; 1        ;
+; field1_l~13          ; 1        ;
+; not_fld0~14          ; 1        ;
+; ea1$latch~28         ; 1        ;
+; ea0$latch~28         ; 1        ;
+; ea2$latch~35         ; 1        ;
+; ea2$latch~32         ; 1        ;
+; ac08_bus_l~12        ; 1        ;
+; ac07_bus_l~14        ; 1        ;
+; ac06_bus_l~14        ; 1        ;
+; dfd2~7               ; 1        ;
+; dfd1~7               ; 1        ;
+; dfd0~7               ; 1        ;
+; ac11_bus_l~6         ; 1        ;
+; ac10_bus_l~6         ; 1        ;
+; ac09_bus_l~6         ; 1        ;
+; ibd1~6               ; 1        ;
+; ibd0~6               ; 1        ;
+; ibd2~6               ; 1        ;
+; n_t_16x~5            ; 1        ;
+; bmb08~4              ; 1        ;
+; bmb07~4              ; 1        ;
+; bmb06~4              ; 1        ;
+; bmb05~4              ; 1        ;
+; bmb04~4              ; 1        ;
+; bmb03~4              ; 1        ;
+; bma11~4              ; 1        ;
+; bma10~4              ; 1        ;
+; bma09~4              ; 1        ;
+; bma08~4              ; 1        ;
+; bma07~4              ; 1        ;
+; bma06~4              ; 1        ;
+; bma05~4              ; 1        ;
+; bma04~4              ; 1        ;
+; bma03~4              ; 1        ;
+; bma02~4              ; 1        ;
+; bma01~4              ; 1        ;
+; bma00~4              ; 1        ;
+; n_t_6x~4             ; 1        ;
++----------------------+----------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info (119006): Selected device EPM7128SQC160-15 for design "BM8L"
+Error (163011): Design requires 121 I/O pins, but the selected device can contain only 100 I/O pins
+Error (163017): Design requires 141 macrocells, but the selected device can contain only 128 macrocells.
+Error (163000): Cannot find fit.
+Error: Quartus II 64-Bit Fitter was unsuccessful. 3 errors, 0 warnings
+    Error: Peak virtual memory: 4701 megabytes
+    Error: Processing ended: Wed Mar 29 23:05:47 2023
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:00
+
+
