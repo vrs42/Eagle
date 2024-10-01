@@ -231,8 +231,8 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <wire x1="34.29" y1="8.89" x2="-34.29" y2="8.89" width="0.127" layer="21"/>
 <wire x1="-34.29" y1="8.89" x2="-34.29" y2="-8.89" width="0.127" layer="21"/>
 <pad name="9" x="-30.48" y="0" drill="1.27" diameter="3.175"/>
-<pad name="1" x="-25.4" y="-5.715" drill="1.27" diameter="3.175"/>
-<pad name="7" x="-25.4" y="5.715" drill="1.27" diameter="3.175"/>
+<pad name="1" x="-25.4" y="-5.08" drill="1.27" diameter="3.175"/>
+<pad name="7" x="-25.4" y="5.08" drill="1.27" diameter="3.175"/>
 <pad name="4" x="30.48" y="0" drill="1.27" diameter="3.175"/>
 <text x="-12.7" y="1.27" size="1.27" layer="21">&gt;Name</text>
 <text x="-22.86" y="-6.35" size="1.27" layer="21">1</text>
@@ -471,8 +471,8 @@ design rules under a new name.</description>
 <wire x1="9.525" y1="34.925" x2="5.08" y2="39.37" width="0.8128" layer="16"/>
 <wire x1="49.53" y1="53.975" x2="49.53" y2="67.945" width="0.8128" layer="16"/>
 <wire x1="22.225" y1="34.925" x2="49.53" y2="53.975" width="0.8128" layer="16"/>
-<wire x1="17.145" y1="34.925" x2="22.225" y2="34.925" width="0.8128" layer="16"/>
-<wire x1="9.525" y1="34.925" x2="17.145" y2="34.925" width="0.8128" layer="16"/>
+<wire x1="17.78" y1="34.925" x2="22.225" y2="34.925" width="0.8128" layer="16"/>
+<wire x1="9.525" y1="34.925" x2="17.78" y2="34.925" width="0.8128" layer="16"/>
 <wire x1="5.08" y1="39.37" x2="5.08" y2="70.485" width="0.8128" layer="16"/>
 <wire x1="5.08" y1="70.485" x2="5.715" y2="71.755" width="0.8128" layer="16"/>
 </signal>
@@ -498,7 +498,7 @@ design rules under a new name.</description>
 <wire x1="52.705" y1="71.755" x2="53.34" y2="73.66" width="0.8128" layer="16"/>
 <wire x1="52.705" y1="34.925" x2="52.705" y2="71.755" width="0.8128" layer="16"/>
 <wire x1="53.34" y1="73.66" x2="53.34" y2="84.455" width="0.8128" layer="16"/>
-<wire x1="28.575" y1="34.925" x2="52.705" y2="34.925" width="0.8128" layer="16"/>
+<wire x1="27.94" y1="34.925" x2="52.705" y2="34.925" width="0.8128" layer="16"/>
 </signal>
 </signals>
 </board>
