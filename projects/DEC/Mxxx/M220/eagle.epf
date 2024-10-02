@@ -7,9 +7,6 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/atmel-cpld.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-con.lbr"
-UsedLibrary="C:/Users/Vince/Documents/eagle/lbr/dec-m.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/41xx.lbr"
@@ -349,7 +346,7 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zilog.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="239 548 1362 1171"
+Loc="239 408 1362 1031"
 State=1
 Number=1
 File="M220C.sch"
@@ -443,12 +440,12 @@ Layer=16
 
 [Win_3]
 Type="Control Panel"
-Loc="656 387 1255 786"
+Loc="70 89 679 488"
 State=1
 Number=0
 
 [Desktop]
-Screen="1920 1200"
+Screen="1920 1080"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"

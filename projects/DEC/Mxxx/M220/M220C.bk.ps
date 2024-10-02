@@ -1,0 +1,116 @@
+%!PS
+
+% Assume the page is 11x17 inches, and the resolution is 72/inch.
+% Reserve a half inch border all around, making a print 
+%   area of 10x16.
+
+/inch { 72 mul } def
+/midy { 10 2 div inch } def
+/midx { 16 2 div inch } def
+<< /PageSize [17 inch 11 inch] >> setpagedevice
+
+/Courier findfont 12 scalefont setfont
+
+% Get a JPEG renderer
+(./viewjpeg.ps) run
+
+% Translate for lower and left margins.
+0.25 inch 0.25 inch translate
+
+% Procedure to center text
+/ct { % Pass text on stack
+  dup stringwidth pop 2 div dup 0 exch sub 0 translate
+  exch show 0 translate
+} bind def
+
+% Define a procedure to cut a page in half.
+% Assumes Landscape mode, so the new page is at 
+% (midx/2, 0) and rotated 90 degrees.
+/halfpage { % midx, midy assumed defined!!
+    % Remember the calling context
+    gsave
+    % Define a new clipping path
+    0 0 moveto
+    0 midy 2 mul lineto
+    midx midy 2 mul lineto
+    midx 0 lineto
+    0 0 closepath clip
+    % Landscape or Portrait in the half page
+    midx 0 translate % Starting at the new spot.
+    90 rotate
+    % Finally, set new midx, midy.  The new page is 
+    midy midx 2 div
+    /midy exch def
+    /midx exch def
+} bind def
+
+% Inverse for halfpage
+/fullpage {
+    midy 2 mul midx
+    /midy exch def
+    /midx exch def
+    grestore
+} bind def
+
+% Run, but with the page rotated 90 degrees.
+/rp {
+  gsave 90 rotate 0 -5.35 inch translate run grestore
+} bind def
+% Define a halfpage and draw the board top in it.
+halfpage
+(M220Cfront.jpg) dup viewJPEG
+% 0 10 moveto show
+gsave 0 midy moveto 270 rotate ct grestore
+fullpage
+
+% Draw the back on the other half.
+midx 0 translate
+halfpage
+(M220Cback.jpg) dup viewJPEG
+% 0 10 moveto show
+gsave 0 midy moveto 270 rotate ct grestore
+fullpage
+0 midx sub 0 midy sub translate
+
+% Show the JPEG images
+showpage
+
+% Inhibit showpage implicit in run.
+1 dict begin /showpage { } def
+
+halfpage
+halfpage
+0 20 moveto
+(M220C.cs.eps) rp
+5.5 inch midy moveto
+(Component Side Etch) ct
+fullpage
+midx 0 translate
+halfpage
+0 20 moveto
+(M220C.ss.eps) rp
+5.5 inch midy moveto
+(Solder Side Etch) ct
+fullpage
+fullpage
+
+midx 0 translate
+halfpage
+halfpage
+0 20 moveto
+(M220C.cn.eps) rp
+5.5 inch midy moveto
+(Component Names) ct
+fullpage
+midx 0 translate
+halfpage
+0 20 moveto
+(M220C.cv.eps) rp
+5.5 inch midy moveto
+(Component Values) ct
+fullpage
+halfpage
+0 midx sub 0 translate
+
+% Now force a showpage
+end showpage
