@@ -1,0 +1,14 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"MF";"MPN";"OC_FARNELL";"OC_NEWARK";
+"5";".01uF";"C-US050-025X075";"C050-025X075";"C1, C2, C3, C4, C5";"CAPACITOR, American symbol";"";"";"";"";
+"1";"220";"R-US_0207/10";"0207/10";"R14";"RESISTOR, American symbol";"";"";"";"";
+"1";"3.6864 MHz";"QG5460";"DIL08S";"OSC";"CRYSTAL RESONATOR";"";"";"unknown";"unknown";
+"1";"3.6864 MHz";"QG5860";"DIL14S";"OSC1";"CRYSTAL RESONATOR";"";"";"unknown";"unknown";
+"1";"470";"R-US_0207/10";"0207/10";"R15";"RESISTOR, American symbol";"";"";"";"";
+"1";"470pF";"C-US075-032X103";"C075-032X103";"C6";"CAPACITOR, American symbol";"";"";"";"";
+"1";"7400N";"74LS00N";"DIL14";"E6";"Quad 2-input NAND gate";"";"";"";"";
+"1";"7440N";"74S20N";"DIL14";"E1";"Dual 4-input NAND gate";"";"";"";"";
+"1";"74LS11N";"74LS11N";"DIL14";"E5";"Triple 3-input AND gate";"";"";"";"";
+"3";"74LS393N";"74LS393N";"DIL14";"E2, E3, E4";"Dual 4-bit decade and binary COUNTER";"";"";"";"";
+"1";"BAUD";"MA13-2";"MA13-2";"BAUD";"PIN HEADER";"";"";"unknown";"unknown";
+"1";"EDGE-1";"EDGE-1";"EDGE-CON1";"U$2";"Single-Sided DEC Edge Connector -- (side 2)";"";"";"";"";
+"1";"OUTLINE-SINGLE";"OUTLINE-SINGLE";"SINGLE";"U$1";"Board outlines for DEC boards.";"";"";"";"";
