@@ -1,0 +1,65 @@
+;PALASM Design Description
+
+;---------------------------------- Declaration Segment ------------
+TITLE    m220ic1.pds
+PATTERN  A
+REVISION 1.0
+AUTHOR   V.Slyngstad
+COMPANY  VRS
+DATE     01/08/08
+
+CHIP  M220IC1  PAL22V10
+
+;---------------------------------- PIN Declarations ---------------
+PIN  1          clk                  COMBINATORIAL             ; INPUT
+PIN  2          i1                   COMBINATORIAL             ; INPUT
+PIN  3          e1                   COMBINATORIAL             ; INPUT
+PIN  4          i2                   COMBINATORIAL             ; INPUT
+PIN  5          e2                   COMBINATORIAL             ; INPUT
+PIN  6          i3                   COMBINATORIAL             ; INPUT
+PIN  7          e3                   COMBINATORIAL             ; INPUT
+PIN  8          i4                   COMBINATORIAL             ; INPUT
+PIN  9          e4                   COMBINATORIAL             ; INPUT
+PIN  10         i5                   COMBINATORIAL             ; INPUT
+PIN  11         i6                   COMBINATORIAL             ; INPUT
+PIN  12         GND                                            ; INPUT
+PIN  13         e5                   COMBINATORIAL             ; INPUT
+PIN  14         e6                   COMBINATORIAL             ; INPUT
+PIN  15         i7                   COMBINATORIAL             ; INPUT
+PIN  16         e7                   COMBINATORIAL             ; INPUT
+PIN  17         o1                   COMBINATORIAL             ; OUTPUT
+PIN  18         d1                   COMBINATORIAL             ; INPUT
+PIN  19         qb1                  COMBINATORIAL             ; OUTPUT
+PIN  20         q1                   COMBINATORIAL             ; REGISTER
+PIN  21         d2                   COMBINATORIAL             ; INPUT
+PIN  22         qb2                  COMBINATORIAL             ; OUTPUT
+PIN  23         q2                   COMBINATORIAL             ; REGISTER
+PIN  24         VCC                                            ; INPUT
+
+;----------------------------------- Boolean Equation Segment ------
+EQUATIONS
+; Basically a 7x2 AND-OR-INVERT gate
+/o1 = i1 * e1 + i2 * e2 + i3 * e3 + i4 * e4 + i5 * e5 + i6 * e6 + i7 * e7
+
+; and a couple of register bits.
+q1 = d1
+q1.clkf = clk
+q1.setf = gnd
+q1.rstf = gnd
+/qb1 = q1
+
+q2 = d2
+q2.clkf = clk
+q2.setf = gnd
+q2.rstf = gnd
+/qb2 = q2
+
+
+;----------------------------------- Simulation Segment ------------
+SIMULATION
+TRACE_ON i1 e1 i2 e2 i3 e3 i4 e4 i5 e5 i6 e6 i7 e7 o1
+SETF /i1 /e1 /i2 /e2 /i3 /e3 /i4 /e4 /i5 /e5 /i6 /e6 /i7 /e7
+CHECK  /o1
+TRACE_OFF
+
+;-------------------------------------------------------------------

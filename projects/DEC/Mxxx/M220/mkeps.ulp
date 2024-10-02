@@ -1,0 +1,196 @@
+#usage "<B>Generate pretty name and value layers for EPS (postscript)</B><P>\n"
+
+# I'd normally do this in Perl or the like, reading 
+# the .brd file.  But that creates a problem with 
+# the accurate rendering as text.  An ULP has direct 
+# access to the drawing primitives to render a text, 
+# and that's why this is an ULP.
+
+# BUGBUG: This must output Postcript, not Eagle script.
+# BUGBUG: Need correct board name in cmd.
+# BUGBUG: Need correct BoundingBox in cmd.
+cmd  = "%!PS-Adobe-3.0 EPSF-3.0\n";
+cmd += "%%Title: EAGLE Drawing M220C.brd\n";
+cmd += "%%Creator: mkeps.ulp\n";
+cmd += "%%Pages: 1\n";
+cmd += "%%BoundingBox: 0 0 364 382\n";
+cmd += "%%EndComments\n\n";
+cmd += "% Coordinate transfer:\n\n";
+
+cmd += "/EU { 254 div 0.072 mul } def\n";
+cmd += "/inch { 72 mul } def\n\n";
+
+cmd += "% Linestyle:\n\n";
+
+cmd += "1 setlinecap\n";
+cmd += "1 setlinejoin\n\n";
+
+cmd += "% Drawing functions:\n\n";
+
+cmd += "/l {  % draw a line\n";
+cmd += "   /lw exch def\n";
+cmd += "   /y2 exch def\n";
+cmd += "   /x2 exch def\n";
+cmd += "   /y1 exch def\n";
+cmd += "   /x1 exch def\n";
+cmd += "   newpath\n";
+cmd += "   x1 EU y1 EU moveto\n";
+cmd += "   x2 EU y2 EU lineto\n";
+cmd += "   lw EU setlinewidth\n";
+cmd += "   stroke\n";
+cmd += "   } def\n\n";
+
+cmd += "/h {  % draw a hole\n";
+cmd += "   /d  exch def\n";
+cmd += "   /y  exch def\n";
+cmd += "   /x  exch def\n";
+cmd += "   d 0 gt {\n";
+cmd += "     newpath\n";
+cmd += "     x EU y EU d 2 div EU 0 360 arc\n";
+cmd += "     currentgray dup\n";
+cmd += "     1 exch sub setgray\n";
+cmd += "     fill\n";
+cmd += "     setgray\n";
+cmd += "     } if\n";
+cmd += "   } def\n\n";
+
+cmd += "/b {  % draw a bar\n";
+cmd += "   /an exch def\n";
+cmd += "   /y2 exch def\n";
+cmd += "   /x2 exch def\n";
+cmd += "   /y1 exch def\n";
+cmd += "   /x1 exch def\n";
+cmd += "   /w2 x2 x1 sub 2 div EU def\n";
+cmd += "   /h2 y2 y1 sub 2 div EU def\n";
+cmd += "   gsave\n";
+cmd += "   x1 x2 add 2 div EU y1 y2 add 2 div EU translate\n";
+cmd += "   an rotate\n";
+cmd += "   newpath\n";
+cmd += "   w2     h2     moveto\n";
+cmd += "   w2 neg h2     lineto\n";
+cmd += "   w2 neg h2 neg lineto\n";
+cmd += "   w2     h2 neg lineto\n";
+cmd += "   closepath\n";
+cmd += "   fill\n";
+cmd += "   grestore\n";
+cmd += "   } def\n\n";
+
+cmd += "/c {  % draw a circle\n";
+cmd += "   /lw exch def\n";
+cmd += "   /rd exch def\n";
+cmd += "   /y  exch def\n";
+cmd += "   /x  exch def\n";
+cmd += "   newpath\n";
+cmd += "   lw EU setlinewidth\n";
+cmd += "   x EU y EU rd EU 0 360 arc\n";
+cmd += "   stroke\n";
+cmd += "   } def\n\n";
+
+cmd += "/a {  % draw an arc\n";
+cmd += "   /lc exch def\n";
+cmd += "   /ae exch def\n";
+cmd += "   /as exch def\n";
+cmd += "   /lw exch def\n";
+cmd += "   /rd exch def\n";
+cmd += "   /y  exch def\n";
+cmd += "   /x  exch def\n";
+cmd += "   lw rd 2 mul gt {\n";
+cmd += "     /rd rd lw 2 div add 2 div def\n";
+cmd += "     /lw rd 2 mul def\n";
+cmd += "     } if\n";
+cmd += "   currentlinecap currentlinejoin\n";
+cmd += "   lc setlinecap 0 setlinejoin\n";
+cmd += "   newpath\n";
+cmd += "   lw EU setlinewidth\n";
+cmd += "   x EU y EU rd EU as ae arc\n";
+cmd += "   stroke\n";
+cmd += "   setlinejoin setlinecap\n";
+cmd += "   } def\n\n";
+
+cmd += "/p {  % draw a pie\n";
+cmd += "   /d exch def\n";
+cmd += "   /y exch def\n";
+cmd += "   /x exch def\n";
+cmd += "   newpath\n";
+cmd += "   x EU y EU d 2 div EU 0 360 arc\n";
+cmd += "   fill\n";
+cmd += "   } def\n\n";
+
+cmd += "/edge { 0.20710678119 mul } def\n\n";
+
+cmd += "/o {  % draw an octagon\n";
+cmd += "   /an exch def\n";
+cmd += "   /dy exch def\n";
+cmd += "   /dx exch def\n";
+cmd += "   /y  exch def\n";
+cmd += "   /x  exch def\n";
+cmd += "   gsave\n";
+cmd += "   x EU y EU translate\n";
+cmd += "   an dx dy lt { 90 add /dx dy /dy dx def def } if rotate\n";
+cmd += "   newpath\n";
+cmd += "      0 dx 2 div sub EU                    0 dy edge  add EU moveto\n";
+cmd += "      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div add EU lineto\n";
+cmd += "      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div add EU lineto\n";
+cmd += "      0 dx 2 div add EU                    0 dy edge  add EU lineto\n";
+cmd += "      0 dx 2 div add EU                    0 dy edge  sub EU lineto\n";
+cmd += "      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div sub EU lineto\n";
+cmd += "      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div sub EU lineto\n";
+cmd += "      0 dx 2 div sub EU                    0 dy edge  sub EU lineto\n";
+cmd += "   closepath\n";
+cmd += "   fill\n";
+cmd += "   grestore\n";
+cmd += "   } def\n\n";
+
+# BUGBUG:
+# Currently, just try to create EPS equivalent to 
+# the solder side, as output by Postscript.cam.
+
+# Layers that are assumed to pre-exist.
+int dimension = 20,
+    tplace = 21, 
+    bplace = 22, 
+    tnames = 25, 
+    bnames = 26, 
+    tvalues = 27, 
+    bvalues = 28;
+
+# For now, naively assume there's nothing on the solder side.
+int StartLayer = 210;
+int nnames = StartLayer,
+    nvalues = StartLayer+1;
+
+// Create our new layers, if they don't already exist.
+cmd += "LAYER nNames ", nnames, ";\n";
+cmd += "LAYER nValues ", nvalues, ";\n";
+
+// Free up a couple of layers to work in.
+# First, hide the layers we are not deleting from.
+cmd += "DISPLAY NONE ", nnames, " ", nvalues, ";\n";
+# Now, group and delete all that is still visible.
+cam += "GROUP ALL;\nDELETE (> 0 0);\n";
+# Restore the view.
+cmd += "DISPLAY LAST;\n";
+
+// Iterate the parts of the board, copying what we want to our new layers.
+board(B) {
+  # Copy the board outline.
+  B.wires(W) {
+    if (W.layer == dimension) {
+    }
+  }
+  # Copy free floating text.
+  B.texts(T) {
+    if (T.layer == top) {
+    }
+    if (T.layer == bottom) {
+    }
+  }
+  # Copy the component outlines, names, and values.
+  B.elements(E) {
+    if ((E.layer == nnames) || E.layer == nvalues)) {
+    }
+  }
+}
+
+
+// Place centered text on the appropriate layer for each name and value.

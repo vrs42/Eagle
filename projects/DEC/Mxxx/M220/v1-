@@ -1,0 +1,67 @@
+%!PS
+
+% Assume the page is 11x17 inches, and the resolution is 72/inch.
+% Reserve a half inch border all around, making a print 
+%   area of 10x16.
+
+/inch { 72 mul } def
+/midy { 10 2 div inch } def
+/midx { 16 2 div inch } def
+<< /PageSize [17 inch 11 inch] >> setpagedevice
+
+/Courier findfont 12 scalefont setfont
+
+% Inhibit showpage implicit in run.
+(/usr/share/ghostscript/8.63/lib/viewjpeg.ps) run
+
+% Translate for lower and left margins.
+0.5 inch 0.5 inch translate
+
+% Inhibit showpage implicit in run.
+save /showpage { } def
+
+gsave
+  0 midy translate     % set lower left of image
+% 5 inch 3 inch scale  % size of rendered image
+% 300 72 div dup scale % size of rendered image
+% What I think is going on here is that the space I want to 
+% render into is 6*72 wide, and the image is approximately 600 DPI.
+% 432/600 is 72%.  That doesn't explain why the other dimension 
+% has to be divided by approximately 3, though.  (I suspect that 
+% has to do with the transform array.)
+  72 19 scale          % size of rendered image
+  2048                 % number of columns per row
+  1360                 % number of rows
+  8                    % bits per color channel (1, 2, 4, or 8)
+  [500 0 0 -133 0 133]       % transform array... maps unit square to pixel
+  (M220Cfront.jpg) (r) file /DCTDecode filter % opens the file and filters the image data
+  false                % pull channels from separate sources
+  3                    % 3 color channels (RGB)
+  colorimage
+grestore
+(M220Cfront.jpg) viewJPEG
+gsave
+  0 0 midy sub translate % set lower left of image
+  72 19 scale          % size of rendered image
+  3032                 % number of columns per row
+  1420                 % number of rows
+  8                    % bits per color channel (1, 2, 4, or 8)
+  [500 0 0 -133 0 133]       % transform array... maps unit square to pixel
+  (M220Cback.jpg) (r) file /DCTDecode filter % opens the file and filters the image data
+  false                % pull channels from separate sources
+  3                    % 3 color channels (RGB)
+  colorimage
+grestore
+(M220CBack.jpg) viewJPEG
+
+midx midy translate
+0 2.75 inch moveto
+% (Component Side:) show
+% (M220Xfront.eps) run
+0 0 midy sub translate
+0 2.75 inch moveto
+% (Solder Side:) show
+% (M220Xback.eps) run
+
+% Now force a showpage
+restore showpage
