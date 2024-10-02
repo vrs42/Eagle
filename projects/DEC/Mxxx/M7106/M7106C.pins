@@ -1,0 +1,1468 @@
+Pinlist
+
+Exported from M7106C.sch at 9/9/2019 6:08:53 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C1       1        1          pas      VCC
+         2        2          pas      GND
+
+C2       1        1          pas      VCC
+         2        2          pas      GND
+
+C3       1        1          pas      VCC
+         2        2          pas      GND
+
+C4       1        1          pas      VCC
+         2        2          pas      GND
+
+C5       1        1          pas      VCC
+         2        2          pas      GND
+
+C6       1        1          pas      VCC
+         2        2          pas      GND
+
+C7       1        1          pas      VCC
+         2        2          pas      GND
+
+C8       1        1          pas      VCC
+         2        2          pas      GND
+
+C9       1        1          pas      VCC
+         2        2          pas      GND
+
+C10      1        1          pas      VCC
+         2        2          pas      GND
+
+C11      1        1          pas      VCC
+         2        2          pas      GND
+
+C12      1        1          pas      VCC
+         2        2          pas      GND
+
+C13      1        1          pas      VCC
+         2        2          pas      GND
+
+C14      1        1          pas      VCC
+         2        2          pas      GND
+
+C15      1        1          pas      VCC
+         2        2          pas      GND
+
+C16      1        1          pas      VCC
+         2        2          pas      GND
+
+C17      1        1          pas      VCC
+         2        2          pas      GND
+
+C18      1        1          pas      VCC
+         2        2          pas      GND
+
+C19      1        1          pas      VCC
+         2        2          pas      GND
+
+C20      1        1          pas      VCC
+         2        2          pas      GND
+
+C21      1        1          pas      VCC
+         2        2          pas      GND
+
+C22      1        1          pas      VCC
+         2        2          pas      GND
+
+C23      1        1          pas      VCC
+         2        2          pas      GND
+
+C24      1        1          pas      VCC
+         2        2          pas      GND
+
+C25      1        1          pas      VCC
+         2        2          pas      GND
+
+C26      1        1          pas      N$73
+         2        2          pas      N$74
+
+C27      +        +          pas      VCC
+         -        -          pas      GND
+
+C28      +        +          pas      VCC
+         -        -          pas      GND
+
+C29      +        +          pas      VCC
+         -        -          pas      GND
+
+C30      1        1          pas      N$18
+         2        2          pas      GND
+
+C31      1        1          pas      N$9
+         2        2          pas      N$8
+
+C32      1        1          pas      N$7
+         2        2          pas      GND
+
+C33      1        1          pas      N$49
+         2        2          pas      N$48
+
+C34      1        1          pas      N$57
+         2        2          pas      GND
+
+C35      1        1          pas      N$60
+         2        2          pas      GND
+
+C36      1        1          pas      N$52
+         2        2          pas      N$55
+
+C37      1        1          pas      N$20
+         2        2          pas      N$24
+
+C38      1        1          pas      N$21
+         2        2          pas      N$22
+
+C39      1        1          pas      N$36
+         2        2          pas      GND
+
+C40      1        1          pas      LAST_WORD
+         2        2          pas      GND
+
+C41      1        1          pas      VCC
+         2        2          pas      GND
+
+C42      1        1          pas      VCC
+         2        2          pas      GND
+
+C43      1        1          pas      VCC
+         2        2          pas      GND
+
+C44      1        1          pas      VCC
+         2        2          pas      GND
+
+C45      1        1          pas      +3V
+         2        2          pas      GND
+
+CR1      1        1          pas      N$23
+         2        2          pas      N$22
+
+D3       A        A          pas      N$73
+         C        C          pas      N$76
+
+E        A1       P          pas      CRC_DATA
+         A2       P          pas      !DSK_SEEK_FAIL
+         B1       P          pas      RD_CLK1
+         B2       P          pas      !DSK_CYL_AD64
+         C1       P          pas      IDLE
+         C2       P          pas      !DSK_CYL_AD16
+         D1       P          pas      RDY_S/R/W
+         D2       P          pas      !DSK_DRIVE0
+         E1       P          pas      FILE_RDY
+         E2       P          pas      !DSK_CYL_AD128
+         F1       P          pas      !CLR_SECTOR_AD
+         F2       P          pas      STROBE
+         H1       P          pas      !CLR_ALL
+         H2       P          pas      !DSK_CYL_AD4
+         J1       P          pas      BDATA11
+         J2       P          pas      !DSK_CYL_AD32
+         K1       P          pas      BDATA10
+         K2       P          pas      !DSK_CYL_AD2
+         L1       P          pas      BDATA9
+         L2       P          pas      !DSK_RDY_S-R-W
+         M1       P          pas      BDATA8
+         M2       P          pas      LD_DISK_ADDRS
+         N1       P          pas      !DSK_DRIVE3
+         N2       P          pas      CRC16
+         P1       P          pas      !DSK_DRIVE2
+         P2       P          pas      SECTOR_ADDRS1
+         R1       P          pas      !DSK_DRIVE1
+         R2       P          pas      BDATA7
+         S1       P          pas      !DSK_CYL_AD1
+         S2       P          pas      HALF_BLOCK
+         T1       P          pas      !DSK_CYL_AD8
+         T2       P          pas      FUNCTION02
+         U1       P          pas      DATA_ENABLE
+         U2       P          pas      FUNCTION00
+         V1       P          pas      !DATA_ENAB
+         V2       P          pas      FUNCTION01
+
+E1       1        CLR        in       !CLR_CNTRS
+         2        CLK        in       !INC_CNTRS
+         3        A          in       GND
+         4        B          in       GND
+         5        C          in       GND
+         6        D          in       GND
+         7        ENP        in       +3V
+         8        GND        pwr      GND
+         9        LD         in       +3V
+         10       ENT        in       +3V
+         11       QD         out               *** unconnected ***
+         12       QC         out               *** unconnected ***
+         13       QB         out               *** unconnected ***
+         14       QA         out               *** unconnected ***
+         15       RCO        out      16_CARRY
+         16       VCC        pwr      VCC
+
+E2       1        CLR        in       !CLR_CNTRS
+         2        CLK        in       !INC_CNTRS
+         3        A          in       GND
+         4        B          in       GND
+         5        C          in       GND
+         6        D          in       GND
+         7        ENP        in       +3V
+         8        GND        pwr      GND
+         9        LD         in       !12TH_CARRY
+         10       ENT        in       +3V
+         11       QD         out      N$14
+         12       QC         out               *** unconnected ***
+         13       QB         out      N$13
+         14       QA         out      N$11
+         15       RCO        out               *** unconnected ***
+         16       VCC        pwr      VCC
+
+E3       1        CLR        in       !CLR_CNTRS
+         2        CLK        in       !INC_CNTRS
+         3        A          in       GND
+         4        B          in       GND
+         5        C          in       GND
+         6        D          in       GND
+         7        ENP        in       12TH_CARRY
+         8        GND        pwr      GND
+         9        LD         in       +3V
+         10       ENT        in       12TH_CARRY
+         11       QD         out               *** unconnected ***
+         12       QC         out               *** unconnected ***
+         13       QB         out               *** unconnected ***
+         14       QA         out               *** unconnected ***
+         15       RCO        out      N$15
+         16       VCC        pwr      VCC
+
+E4       1        CLR        in       !CLR_CNTRS
+         2        CLK        in       !INC_CNTRS
+         3        A          in       GND
+         4        B          in       GND
+         5        C          in       GND
+         6        D          in       GND
+         7        ENP        in       N$15
+         8        GND        pwr      GND
+         9        LD         in       +3V
+         10       ENT        in       N$15
+         11       QD         out      128TH_WORD
+         12       QC         out               *** unconnected ***
+         13       QB         out               *** unconnected ***
+         14       QA         out               *** unconnected ***
+         15       RCO        out      N$16
+         16       VCC        pwr      VCC
+
+E5       1        CLR        in       !CLR_ALL
+         2        CLK        in       !INC_BRK_CNTR
+         3        A          in       GND
+         4        B          in       GND
+         5        C          in       GND
+         6        D          in       HALF_BLOCK
+         7        ENP        in       N$1
+         8        GND        pwr      GND
+         9        LD         in       !6RK3_OK
+         10       ENT        in       +3V
+         11       QD         out               *** unconnected ***
+         12       QC         out               *** unconnected ***
+         13       QB         out               *** unconnected ***
+         14       QA         out               *** unconnected ***
+         15       RCO        out      B_LAST_BRK
+         16       VCC        pwr      VCC
+
+E6       1        CLR        in       !CLR_ALL
+         2        CLK        in       !INC_BRK_CNTR
+         3        A          in       GND
+         4        B          in       GND
+         5        C          in       GND
+         6        D          in       GND
+         7        ENP        in       DATA_ENABLE
+         8        GND        pwr      GND
+         9        LD         in       !6RK3_OK
+         10       ENT        in       DATA_ENABLE
+         11       QD         out               *** unconnected ***
+         12       QC         out               *** unconnected ***
+         13       QB         out               *** unconnected ***
+         14       QA         out               *** unconnected ***
+         15       RCO        out      N$1
+         16       VCC        pwr      VCC
+
+E7       1        I          in                ***   unused    ***
+         2        O          out               ***   unused    ***
+         3        I          in       N$4
+         4        O          out      BRK_IN_CLK
+         5        I          in       RD_CLK2
+         6        O          out      !RD_CLK2
+         7        GND        pwr      GND
+         8        O          out      RD_CLK1
+         9        I          in       !RD_CLK1
+         10       O          out      N$59
+         11       I          in       !RD_CLK1
+         12       O          out      N$56
+         13       I          in       READ_CLK
+         14       VCC        pwr      VCC
+
+E8       1        I0         in       READ
+         2        I1         in       DATA_STATE
+         3        O          out      N$4
+         4        I0         in       N$4
+         5        I1         in       !WRITE
+         6        O          out      BRK_ENAB_CLK
+         7        GND        pwr      GND
+         8        O          out      !RD_SYNC_BIT
+         9        I0         in       DATA_IN
+         10       I1         in       RD_CLK2
+         11       O          out      !RD_CLK1
+         12       I0         in       N$57
+         13       I1         in       READ_CLK
+         14       VCC        pwr      VCC
+
+E9       1        I          in       GO
+         2        O          out      !GO
+         3        I          in       N$67
+         4        O          out      N$66
+         5        I          in       N$64
+         6        O          out      CLR_STATES
+         7        GND        pwr      GND
+         8        O          out      !6RK3_OK
+         9        I          in       6RK3_OK
+         10       O          out      CLR_DRIVE_CMD
+         11       I          in       !CLR_DRIVE_CMD
+         12       O          out      N$5
+         13       I          in       N$2
+         14       VCC        pwr      VCC
+
+E10      1        I0         in       !RD_CLK2
+         2        I1         in       !B_WRT_CLK
+         3        I0         in       N$10
+         4        I1         in       !CLR_ALL
+         5        I2         in       !DATA_CLR
+         6        O          out      CLR_CNTRS
+         7        GND        pwr      GND
+         8        O          out      !12TH_CARRY
+         9        I0         in       N$11
+         10       I1         in       N$13
+         11       I2         in       N$14
+         12       O          out      INC_CNTRS
+         13       I2         in       !HI_MAIN_SHFT
+         14       VCC        pwr      VCC
+
+E11      1        I          in       INC_CNTRS
+         2        O          out      !INC_CNTRS
+         3        I          in       CLR_CNTRS
+         4        O          out      !CLR_CNTRS
+         5        I          in       !12TH_CARRY
+         6        O          out      12TH_CARRY
+         7        GND        pwr      GND
+         8        O          out      LAST_WORD_PL
+         9        I          in       !LAST_WORD_PL
+         10       O          out      16TH_BIT
+         11       I          in       !16TH_BIT
+         12       O          out      N$6
+         13       I          in       N$5
+         14       VCC        pwr      VCC
+
+E12      1        I0         in       N$5
+         2        I1         in       N$7
+         3        O          out      N$10
+         4        I0         in       INC_CNTRS
+         5        I1         in       12TH_CARRY
+         6        O          out      N$19
+         7        GND        pwr      GND
+         8        O          out      !LAST_WORD_PL
+         9        I0         in       LAST_WORD
+         10       I1         in       12TH_CARRY
+         11       O          out      !16TH_BIT
+         12       I0         in       INC_CNTRS
+         13       I1         in       16_CARRY
+         14       VCC        pwr      VCC
+
+E13      1        O          out      N$2
+         2        I0         in       HEADER_E
+         3        I1         in       STATE_ENAB_B
+         4        O          out      !INC_BRK_CNTR
+         5        I0         in       N$3
+         6        I1         in       BTP2
+         7        GND        pwr      GND
+         8        I0         in       BTP3_OK
+         9        I1         in       !6RK3_OK
+         10       O          out      N$3
+         11       I0         in       N$19
+         12       I1         in       INH_12TH_BIT
+         13       O          out      12TH_BIT_OK
+         14       VCC        pwr      VCC
+
+E14      1        I0         in       !CRC_STATE
+         2        I1         in       !HEADER_C
+         3        O          out      STATE_ENAB_B
+         4        I0         in       HALF_BLOCK
+         5        I1         in       128TH_WORD
+         6        O          out      N$17
+         7        GND        pwr      GND
+         8        O          out      !RD_SHFT_DB
+         9        I0         in       RD_CLK1
+         10       I1         in       DATA_STATE
+         11       O          out      !SHFT_WRT_BUFF
+         12       I0         in       !INH_12TH_BIT
+         13       I1         in       N$42
+         14       VCC        pwr      VCC
+
+E15      1        CLR        in       READ
+         2        D          in       GND
+         3        CLK        in       !RD_CLK2
+         4        PRE        in       !READ_DATA_IN
+         5        Q          out      DATA_IN
+         6        !Q         out      !DATA_IN
+         7        GND        pwr      GND
+         8        !Q         out      INH_12TH_BIT
+         9        Q          out      !INH_12TH_BIT
+         10       PRE        in       !CLR_CNTRS
+         11       CLK        in       N$18
+         12       D          in       N$17
+         13       CLR        in       +3V
+         14       VCC        pwr      VCC
+
+E16      1        I0         in       RDY_S/R/W
+         2        I1         in       !DSK_ACKNOWLEDGE
+         3        O          out      DISK_OK
+         4        I0         in       N$51
+         5        I1         in       !CLR_ALL
+         6        O          out      N$54
+         7        GND        pwr      GND
+         8        O          out      DATA_CLK
+         9        I0         in       N$29
+         10       I1         in       N$31
+         11       O          out      RD_CLK2
+         12       I0         in       !RD_CLK1
+         13       I1         in       N$60
+         14       VCC        pwr      VCC
+
+E17      1        I0         in       DATA_CLK
+         2        I1         in       DATA_STATE
+         3        O          out      N$44
+         4        I0         in       N$44
+         5        I1         in       N$44
+         6        O          out      N$41
+         7        GND        pwr      GND
+         8        O          out      DATA_CLK_OK
+         9        I0         in       !LO_MAIN_SHFT
+         10       I1         in       N$43
+         11       O          out      N$43
+         12       I0         in       !INH_12TH_BIT
+         13       I1         in       N$41
+         14       VCC        pwr      VCC
+
+E18      1        CLR        in       N$64
+         2        D          in       GND
+         3        CLK        in       N$66
+         4        PRE        in       !GO
+         5        Q          out      !IDLE
+         6        !Q         out      IDLE
+         7        GND        pwr      GND
+         8        !Q         out      !RESTORE
+         9        Q          out      RESTORE
+         10       PRE        in       +3V
+         11       CLK        in       CLR_DRIVE_CMD
+         12       D          in       FILE_RDY
+         13       CLR        in       !CLR_STROBE
+         14       VCC        pwr      VCC
+
+E19      1        CLR        in       +3V
+         2        D          in       !CHECK_HEADER_CMD
+         3        CLK        in       DISK_OK
+         4        PRE        in       N$75
+         5        Q          out               *** unconnected ***
+         6        !Q         out      HEADER_A
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      STROBE
+         10       PRE        in       +3V
+         11       CLK        in       GO
+         12       D          in       FILE_RDY
+         13       CLR        in       !CLR_STROBE
+         14       VCC        pwr      VCC
+
+E20      1        CLR        in       N$77
+         2        D          in       HEADER_A
+         3        CLK        in       SECTOR_MK
+         4        PRE        in       +3V
+         5        Q          out      HEADER_B
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out      !HEADER_C
+         9        Q          out      HEADER_C
+         10       PRE        in       !HEADER_C
+         11       CLK        in       !RD_SYNC_BIT
+         12       D          in       HEADER_B
+         13       CLR        in       N$78
+         14       VCC        pwr      VCC
+
+E21      1        CLR        in       N$72
+         2        D          in       DATA_STATE
+         3        CLK        in       !LAST_WORD_PL
+         4        PRE        in       !CRC_STATE
+         5        Q          out      CRC_STATE
+         6        !Q         out      !CRC_STATE
+         7        GND        pwr      GND
+         8        !Q         out      !END_STATE
+         9        Q          out      END_STATE
+         10       PRE        in       +3V
+         11       CLK        in       !16TH_BIT
+         12       D          in       CRC_STATE
+         13       CLR        in       !IDLE
+         14       VCC        pwr      VCC
+
+E22      1        CLR        in       N$71
+         2        D          in       HEADER_E
+         3        CLK        in       !16TH_BIT
+         4        PRE        in       !DATA_STATE
+         5        Q          out      DATA_STATE
+         6        !Q         out      !DATA_STATE
+         7        GND        pwr      GND
+         8        !Q         out      !HEADER_E
+         9        Q          out      HEADER_E
+         10       PRE        in       !HEADER_E
+         11       CLK        in       N$80
+         12       D          in       HEADER_D
+         13       CLR        in       N$79
+         14       VCC        pwr      VCC
+
+E23      1        O          out      N$72
+         2        I0         in       CLR_STATES
+         3        I1         in       END_STATE
+         4        O          out      !STATE_ENAB_A
+         5        I0         in       DATA_STATE
+         6        I1         in       STATE_ENAB_B
+         7        GND        pwr      GND
+         8        I0         in       CLR_STATES
+         9        I1         in       CRC_STATE
+         10       O          out      N$71
+         11       I0         in       DATA_STATE
+         12       I1         in       CLR_STATES
+         13       O          out      N$79
+         14       VCC        pwr      VCC
+
+E24      1        CLR        in       N$70
+         2        D          in       NOT_CHK_HEADER_CMD
+         3        CLK        in       DISK_OK
+         4        PRE        in       !SET_SECTOR_SEEK
+         5        Q          out      SECTOR_SEEK
+         6        !Q         out      !SECTOR_SEEK
+         7        GND        pwr      GND
+         8        !Q         out      !HEADER_D
+         9        Q          out      HEADER_D
+         10       PRE        in       +3V
+         11       CLK        in       !SECTOR_MK
+         12       D          in       SECTOR_EQ
+         13       CLR        in       N$81
+         14       VCC        pwr      VCC
+
+E25      1        I0         in       N$68
+         2        I1         in       !ERASE_DLY
+         3        O          out      N$67
+         4        I0         in       !ERROR_CLR
+         5        I1         in       !CLR_ALL
+         6        O          out      N$62
+         7        GND        pwr      GND
+         8        O          out      N$68
+         9        I0         in       STROBE
+         10       I1         in       SEEK_ONLY
+         11       O          out      SEEK_ONLY
+         12       I0         in       !SEEK
+         13       I1         in       !RESTORE
+         14       VCC        pwr      VCC
+
+E26      1        O          out      N$75
+         2        I0         in       IDLE
+         3        I1         in       HEADER_B
+         4        O          out      N$77
+         5        I0         in       CLR_STATES
+         6        I1         in       HEADER_C
+         7        GND        pwr      GND
+         8        I0         in       CLR_STATES
+         9        I1         in       ACKNOWLEDGE
+         10       O          out      !CLR_STROBE
+         11       I0         in       N$62
+         12       I1         in       N$63
+         13       O          out      N$64
+         14       VCC        pwr      VCC
+
+E27      1        I0         in       N$58
+         2        I1         in       !SET_IDLE_PL
+         3        O          out      N$63
+         4        I0         in       HEADER_C
+         5        I1         in       16TH_BIT
+         6        O          out      !SET_SECTOR_SEEK
+         7        GND        pwr      GND
+         8        O          out      !SET_HEADER_E
+         9        I0         in       B_WRT_CLK
+         10       I1         in       WRT_SYNC_BIT
+         11       O          out      WRT_CLK_DATA
+         12       I0         in       !WRT_CLK
+         13       I1         in       !DATA_OUT_PL
+         14       VCC        pwr      VCC
+
+E28      1        I1         in       DATA_IN
+         2        I2         in       DATA_STATE
+         3        I3         in       DATA_STATE
+         4        I4         in       RK_DATA11
+         5        I5         in       WRITE
+         6        NC         pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O8         out      CRC_DATA
+         9        I9         pas               *** unconnected ***
+         10       I10        in       HEADER_C
+         11       I11        in       DATA_IN
+         12       I12        in       CRC_STATE
+         13       I13        in       DATA_IN
+         14       VCC        pwr      VCC
+
+E29      1        O          out      N$70
+         2        I0         in       IDLE
+         3        I1         in       HEADER_D
+         4        O          out      N$81
+         5        I0         in       CLR_STATES
+         6        I1         in       HEADER_E
+         7        GND        pwr      GND
+         8        I0         in       IDLE
+         9        I1         in       SECTOR_SEEK
+         10       O          out      N$78
+         11       I0         in       N$36
+         12       I1         in       !WRT_CLK
+         13       O          out      B_WRT_CLK
+         14       VCC        pwr      VCC
+
+E30      1        O          out      N$51
+         2        I0         in       SECTOR_SEEK
+         3        I1         in       END_STATE
+         4        O          out      N$46
+         5        I0         in       N$45
+         6        I1         in       HEADER_B
+         7        GND        pwr      GND
+         8        I0         in       !RD_CLK1
+         9        I1         in       !STATE_ENAB_A
+         10       O          out      RD_SHFT_CRC
+         11       I0         in       WRT_CMD
+         12       I1         in       !HEADER_D
+         13       O          out      N$45
+         14       VCC        pwr      VCC
+
+E31      1        1C         in       FUNCTION00
+         2        1G         in       GND
+         3        B          in       FUNCTION01
+         4        1Y3        out               *** unconnected ***
+         5        1Y2        out               *** unconnected ***
+         6        1Y1        out      !SK/WRT
+         7        1Y0        out      !SK/CHK/WRT
+         8        GND        pwr      GND
+         9        2Y0        out      !SK/CHK/RD
+         10       2Y1        out      !SK/RD
+         11       2Y2        out      !WRT_LOCK_OUT
+         12       2Y3        out      !SEEK
+         13       A          in       FUNCTION02
+         14       2G         in       GND
+         15       2C         in       FUNCTION00
+         16       VCC        pwr      VCC
+
+E32      1        I0         in       !SET_HEADER_E
+         2        I1         in       !RD_SYNC_BIT
+         3        O          out      N$80
+         4        I0         in       BTP3
+         5        I1         in       N$65
+         6        O          out      LD_DISK_ADDRS
+         7        GND        pwr      GND
+         8        O          out      !CHECK_HEADER_CMD
+         9        I0         in       !SK/CHK/RD
+         10       I1         in       !SK/CHK/WRT
+         11       O          out      N$65
+         12       I0         in       6RK3_OK
+         13       I1         in       !WRT_LOCK_OUT
+         14       VCC        pwr      VCC
+
+E33      1        I0         in       CRC16
+         2        I1         in       N$37
+         3        O          out      N$35
+         4        I0         in       !HEADER_E
+         5        I1         in       !CRC_STATE
+         6        O          out      N$37
+         7        GND        pwr      GND
+         8        O          out      N$32
+         9        I0         in       RK_DATA11
+         10       I1         in       DATA_STATE
+         11       O          out      WRT_CMD
+         12       I0         in       !SK/CHK/WRT
+         13       I1         in       !SK/WRT
+         14       VCC        pwr      VCC
+
+E34      1        I0         in       N$32
+         2        I1         in       N$35
+         3        I0         in       N$31
+         4        I1         in       N$29
+         5        I2         in       N$39
+         6        O          out      !DATA_OUT_PL
+         7        GND        pwr      GND
+         8        O          out      NOT_CHK_HEADER_CMD
+         9        I0         in       !SK/RD
+         10       I1         in       !SK/WRT
+         11       I2         in       !SK/WRT
+         12       O          out      N$39
+         13       I2         in       !WRT_SYNC_BIT
+         14       VCC        pwr      VCC
+
+E35      1        I          in       SECTOR_MK
+         2        O          out      !SECTOR_MK
+         3        I          in       READ_DATA_IN
+         4        O          out      !READ_DATA_IN
+         5        I          in       !WRT_LOCK_OUT
+         6        O          out      WRT_LOCK_OUT
+         7        GND        pwr      GND
+         8        O          out               ***   unused    ***
+         9        I          in                ***   unused    ***
+         10       O          out      B_IDLE
+         11       I          in       !IDLE
+         12       O          out      !B_WRT_CLK
+         13       I          in       B_WRT_CLK
+         14       VCC        pwr      VCC
+
+E36      1        I          in       N$29
+         2        O          out      N$30
+         3        I          in                ***   unused    ***
+         4        O          out               ***   unused    ***
+         5        I          in       WRT_CMD
+         6        O          out      !WRT_CMD
+         7        GND        pwr      GND
+         8        O          out               ***   unused    ***
+         9        I          in                ***   unused    ***
+         10       O          out      N$40
+         11       I          in       !WRT_CLK
+         12       O          out               ***   unused    ***
+         13       I          in                ***   unused    ***
+         14       VCC        pwr      VCC
+
+E37      1        CLR        in       HEADER_D
+         2        D          in       !SYNC_DLY
+         3        CLK        in       !B_WRT_CLK
+         4        PRE        in       +3V
+         5        Q          out      WRT_SYNC_BIT
+         6        !Q         out      !WRT_SYNC_BIT
+         7        GND        pwr      GND
+         8        !Q         out      READ
+         9        Q          out      !READ
+         10       PRE        in       N$54
+         11       CLK        in       !READ_DLY
+         12       D          in       N$46
+         13       CLR        in       +3V
+         14       VCC        pwr      VCC
+
+E38      1        A          in       GND
+         2        B          in       SECTOR_MK
+         3        CLR        in       +3V
+         4        !Q         out      !READ_DLY
+         5        Q          out               *** unconnected ***
+         6        C          in       N$52
+         7        R/C        in       N$53
+         8        GND        pwr      GND
+         9        A          in       !SECTOR_MK
+         10       B          in       WRT_CMD
+         11       CLR        in       +3V
+         12       !Q         out      !SYNC_DLY
+         13       Q          out               *** unconnected ***
+         14       C          in       N$49
+         15       R/C        in       N$90
+         16       VCC        pwr      VCC
+
+E39      1        I0         in       LD_DISK_ADDRS
+         2        I1         in       RDY_S/R/W
+         3        I0         in       !WRT_CMD
+         4        I1         in       LAST_BRK
+         5        I2         in       END_STATE
+         6        O          out      N$58
+         7        GND        pwr      GND
+         8        O          out      !WRT_CLK
+         9        I0         in       WRITE
+         10       I1         in       N$29
+         11       I2         in       N$12
+         12       O          out      N$69
+         13       I2         in       !MAIN
+         14       VCC        pwr      VCC
+
+E40      1        O          out      WRT_SHFT_CRC
+         2        I0         in       N$38
+         3        I1         in       !B_WRT_CLK
+         4        O          out      N$42
+         5        I0         in       !DATA_STATE
+         6        I1         in       !B_WRT_CLK
+         7        GND        pwr      GND
+         8        I0         in       N$37
+         9        I1         in       DATA_STATE
+         10       O          out      N$38
+         11       I0         in       RD_SHFT_CRC
+         12       I1         in       WRT_SHFT_CRC
+         13       O          out      !SHIFT_CRC
+         14       VCC        pwr      VCC
+
+E41      1        CLR        in       WRITE
+         2        D          in       N$12
+         3        CLK        in       N$30
+         4        PRE        in       +3V
+         5        Q          out      N$31
+         6        !Q         out      N$12
+         7        GND        pwr      GND
+         8        !Q         out      !WRITE
+         9        Q          out      WRITE
+         10       PRE        in       +3V
+         11       CLK        in       HEADER_D
+         12       D          in       WRT_CMD
+         13       CLR        in       !IDLE
+         14       VCC        pwr      VCC
+
+E42      1        GND        pwr      GND
+         2        O          out      ACKNOWLEDGE
+         3        O          out      DSK_SEC2
+         4        I0         in       !DSK_SEC2
+         5        I1         in       GND
+         6        I0         in       GND
+         7        I1         in       !DSK_ACKNOWLEDGE
+         8        VCC        pwr      VCC
+         9        I0         in                ***   unused    ***
+         10       I1         in                ***   unused    ***
+         11       I0         in                ***   unused    ***
+         12       I1         in                ***   unused    ***
+         13       O          out               ***   unused    ***
+         14       O          out               ***   unused    ***
+
+E43      1        A          in       !WRT_CMD
+         2        B          in       END_STATE
+         3        CLR        in       +3V
+         4        !Q         out      !ERASE_DLY
+         5        Q          out               *** unconnected ***
+         6        C          in       N$9
+         7        R/C        in       N$8
+         8        GND        pwr      GND
+         9        A          in       GND
+         10       B          in       DATA_STATE
+         11       CLR        in       +3V
+         12       !Q         out      !DATA_CLR
+         13       Q          out               *** unconnected ***
+         14       C          in       N$74
+         15       R/C        in       N$76
+         16       VCC        pwr      VCC
+
+E44      1        I0         in       WRT_CLK_DATA
+         2        I1         in       WRT_CLK_DATA
+         3        O          oc       !DSK_WRT_CLK_DATA
+         4        GND        pwr      GND
+         5        O          oc                ***   unused    ***
+         6        I0         in                ***   unused    ***
+         7        I1         in                ***   unused    ***
+         8        VCC        pwr      VCC
+
+E45      1        I0         in       N$26
+         2        I1         in       !INSIDE_IN
+         3        O          out      N$28
+         4        I0         in       N$28
+         5        I1         in       !OUTSIDE_CLK
+         6        O          out      N$27
+         7        GND        pwr      GND
+         8        O          out      N$29
+         9        I0         in       N$27
+         10       I1         in       WRITE
+         11       O          out      GO
+         12       I0         in       N$69
+         13       I1         in       !CLR_DRIVE_CMD
+         14       VCC        pwr      VCC
+
+E46      1        CLK        in       SHFT_SURF
+         2        A          in       BDATA7
+         3        B          in       BDATA8
+         4        C          in       BDATA9
+         5        VCC        pwr      VCC
+         6        D          in       BDATA10
+         7        E          in       BDATA11
+         8        PE         in       LD_DISK_ADDRS
+         9        SER        in       GND
+         10       QE         out      SECTOR_ADDRS1
+         11       QD         out      SECTOR_ADDRS2
+         12       GND        pwr      GND
+         13       QC         out      SECTOR_ADDRS4
+         14       QB         out      SECTOR_ADDRS8
+         15       QA         out      TOP_SURF
+         16       CLR        in       !CLR_SECTOR_AD
+
+E47      1        B3         in       SECTOR_ADDRS8
+         2        A<B_I      in       GND
+         3        A=B_I      in       SECTOR_SEEK
+         4        A>B_I      in       GND
+         5        A>B_O      out               *** unconnected ***
+         6        A=B_O      out      SECTOR_EQ
+         7        A<B_O      out               *** unconnected ***
+         8        GND        pwr      GND
+         9        B0         in       SECTOR_ADDRS1
+         10       A0         in       N$84
+         11       B1         in       SECTOR_ADDRS2
+         12       A1         in       DSK_SEC2
+         13       A2         in       N$83
+         14       B2         in       SECTOR_ADDRS4
+         15       A3         in       N$82
+         16       VCC        pwr      VCC
+
+E48      1        I0         in       STROBE
+         2        I1         in       STROBE
+         3        O          oc       !DSK_STROBE
+         4        GND        pwr      GND
+         5        O          oc       !DSK_HEAD_SEL1
+         6        I0         in       TOP_SURF
+         7        I1         in       TOP_SURF
+         8        VCC        pwr      VCC
+
+E49      1        I0         in       READ
+         2        I1         in       READ
+         3        O          oc       !DSK_READ
+         4        GND        pwr      GND
+         5        O          oc       !DSK_RESTORE
+         6        I0         in       RESTORE
+         7        I1         in       RESTORE
+         8        VCC        pwr      VCC
+
+E50      1        I0         in       WRITE
+         2        I1         in       WRITE
+         3        O          oc       !DSK_WRT-ERASE_GATE
+         4        GND        pwr      GND
+         5        O          oc       !DSK_WRT_PROTECT
+         6        I0         in       6RK3_OK
+         7        I1         in       WRT_LOCK_OUT
+         8        VCC        pwr      VCC
+
+E51      1        GND        pwr      GND
+         2        O          out      N$25
+         3        O          out      N$26
+         4        I0         in       N$20
+         5        I1         in       N$20
+         6        I0         in       N$24
+         7        I1         in       N$24
+         8        VCC        pwr      VCC
+         9        I0         in       !WRT_CMD
+         10       I1         in       !DSK_WRT_STATUS
+         11       I0         in       N$21
+         12       I1         in       N$21
+         13       O          out      N$20
+         14       O          out      N$85
+
+E52      1        GND        pwr      GND
+         2        O          out      BDATA8
+         3        O          out      BDATA9
+         4        I0         in       !DATA9
+         5        I1         in       !DATA_ENAB
+         6        I0         in       !DATA8
+         7        I1         in       !DATA_ENAB
+         8        VCC        pwr      VCC
+         9        I0         in       !DATA10
+         10       I1         in       !DATA_ENAB
+         11       I0         in       !DATA11
+         12       I1         in       !DATA_ENAB
+         13       O          out      BDATA11
+         14       O          out      BDATA10
+
+E53      1        GND        pwr      GND
+         2        O          out      N$82
+         3        O          out      N$83
+         4        I0         in       !DSK_SEC4
+         5        I1         in       GND
+         6        I0         in       !DSK_SEC8
+         7        I1         in       GND
+         8        VCC        pwr      VCC
+         9        I0         in       !DSK_SEC1
+         10       I1         in       GND
+         11       I0         in       !DSK_INDEX_MK
+         12       I1         in       B_IDLE
+         13       O          out      DRV_REVO
+         14       O          out      N$84
+
+E54      1        GND        pwr      GND
+         2        O          out      FILE_RDY
+         3        O          out      READ_DATA_IN
+         4        I0         in       !READ
+         5        I1         in       !DSK_DATA_IN
+         6        I0         in       !DSK_FILE_RDY
+         7        I1         in       N$85
+         8        VCC        pwr      VCC
+         9        I0         in       !DSK_RD_CLK
+         10       I1         in       !READ
+         11       I0         in       B_IDLE
+         12       I1         in       !DSK_SECTOR_MK
+         13       O          out      SECTOR_MK
+         14       O          out      READ_CLK
+
+F        A1       P          pas      12TH_BIT_OK
+         A2       P          pas      6RK3_OK
+         B1       P          pas      !DSK_FILE_RDY
+         B2       P          pas      !CLR_DRIVE_CMD
+         C1       P          pas      !DSK_CAPACITY_EX
+         C2       P          pas      DRV_REVO
+         D1       P          pas      !END_STATE
+         D2       P          pas      !DSK_WRT_STATUS
+         E1       P          pas      LAST_WORD_PL
+         E2       P          pas      !ERROR_CLR
+         F1       P          pas      WRITE
+         F2       P          pas      !SECTOR_SEEK
+         H1       P          pas      RK_DATA11
+         H2       P          pas      BTP2
+         J1       P          pas      BTP3
+         J2       P          pas      !SHFT_WRT_BUFF
+         K1       P          pas      !SET_IDLE_PL
+         K2       P          pas      BRK_ENAB_CLK
+         L1       P          pas      !LO_MAIN_SHFT
+         L2       P          pas      B_LAST_BRK
+         M1       P          pas      DATA_CLK_OK
+         M2       P          pas      BTP3_OK
+         N1       P          pas      !SHIFT_CRC
+         N2       P          pas      LAST_BRK
+         P1       P          pas      !DATA_STATE
+         P2       P          pas      !MAIN
+         R1       P          pas      !DATA_IN
+         R2       P          pas      !IDLE
+         S1       P          pas      !CLR_CNTRS
+         S2       P          pas      !RD_SHFT_DB
+         T1       P          pas               ***   unused    ***
+         T2       P          pas      !HI_MAIN_SHFT
+         U1       P          pas      SHFT_SURF
+         U2       P          pas      BRK_IN_CLK
+         V1       P          pas      STATE_ENAB_B
+         V2       P          pas      !WRT_CMD
+
+J1       A        P          pas      GND
+         B        P          pas      GND
+         C        P          pas      GND
+         D        P          pas      !DSK_DATA_IN
+         E        P          pas      GND
+         F        P          pas      !DSK_RD_CLK
+         H        P          pas      GND
+         J        P          pas      !DSK_WRT_PROTECT
+         K        P          pas      GND
+         L        P          pas      !DSK_READ
+         M        P          pas      GND
+         N        P          pas               ***   unused    ***
+         P        P          pas      GND
+         R        P          pas      !DSK_WRT_STATUS
+         S        P          pas      GND
+         T        P          pas      !DSK_SECTOR_MK
+         U        P          pas      GND
+         V        P          pas      !DSK_FILE_RDY
+         W        P          pas      GND
+         X        P          pas      !DSK_HEAD_SEL1
+         Y        P          pas      GND
+         Z        P          pas      !DSK_INDEX_MK
+         AA       P          pas      GND
+         BB       P          pas      !DSK_WRT-ERASE_GATE
+         CC       P          pas      GND
+         DD       P          pas      !DSK_SEC1
+         EE       P          pas      GND
+         FF       P          pas      !DSK_SEC4
+         HH       P          pas      GND
+         JJ       P          pas               ***   unused    ***
+         KK       P          pas      GND
+         LL       P          pas      !DSK_SEC8
+         MM       P          pas      GND
+         NN       P          pas               ***   unused    ***
+         PP       P          pas      GND
+         RR       P          pas      !DSK_STROBE
+         SS       P          pas      GND
+         TT       P          pas      J1TT
+         UU       P          pas      GND
+         VV       P          pas               ***   unused    ***
+
+J2       A        P          pas               ***   unused    ***
+         B        P          pas      GND
+         C        P          pas      !DSK_CAPACITY_EX
+         D        P          pas      GND
+         E        P          pas      !DSK_SEEK_FAIL
+         F        P          pas      GND
+         H        P          pas      !DSK_ACKNOWLEDGE
+         J        P          pas      GND
+         K        P          pas      !DSK_SEC2
+         L        P          pas      GND
+         M        P          pas      !DSK_DRIVE3
+         N        P          pas      GND
+         P        P          pas      !DSK_RESTORE
+         R        P          pas      GND
+         S        P          pas      !DSK_DRIVE2
+         T        P          pas      GND
+         U        P          pas      !DSK_CYL_AD4
+         V        P          pas      GND
+         W        P          pas      !DSK_DRIVE1
+         X        P          pas      GND
+         Y        P          pas      !DSK_CYL_AD1
+         Z        P          pas      GND
+         AA       P          pas      !DSK_DRIVE0
+         BB       P          pas      GND
+         CC       P          pas      !DSK_CYL_AD32
+         DD       P          pas      GND
+         EE       P          pas      !DSK_RDY_S-R-W
+         FF       P          pas      GND
+         HH       P          pas      !DSK_CYL_AD128
+         JJ       P          pas      GND
+         KK       P          pas      !DSK_WRT_CLK_DATA
+         LL       P          pas      GND
+         MM       P          pas      !DSK_CYL_AD16
+         NN       P          pas      GND
+         PP       P          pas      !DSK_CYL_AD64
+         RR       P          pas      GND
+         SS       P          pas      !DSK_CYL_AD2
+         TT       P          pas      GND
+         UU       P          pas      !DSK_CYL_AD8
+         VV       P          pas      GND
+
+OMNIBUS  AA1      1          io                ***   unused    ***
+         AA2      1          io       VCC
+         AB1      1          io                ***   unused    ***
+         AB2      1          io                ***   unused    ***
+         AC1      1          io                ***   unused    ***
+         AC2      1          io       GND
+         AD1      1          io       !MA0
+         AD2      1          io                ***   unused    ***
+         AE1      1          io       !MA1
+         AE2      1          io                ***   unused    ***
+         AF1      1          io       GND
+         AF2      1          io       GND
+         AH1      1          io                ***   unused    ***
+         AH2      1          io                ***   unused    ***
+         AJ1      1          io       !MA3
+         AJ2      1          io                ***   unused    ***
+         AK1      1          io       !MD0
+         AK2      1          io                ***   unused    ***
+         AL1      1          io       !MD1
+         AL2      1          io                ***   unused    ***
+         AM1      1          io       !MD2
+         AM2      1          io                ***   unused    ***
+         AN1      1          io       GND
+         AN2      1          io       GND
+         AP1      1          io                ***   unused    ***
+         AP2      1          io                ***   unused    ***
+         AR1      1          io                ***   unused    ***
+         AR2      1          io                ***   unused    ***
+         AS1      1          io                ***   unused    ***
+         AS2      1          io                ***   unused    ***
+         AT1      1          io       GND
+         AT2      1          io       GND
+         AU1      1          io                ***   unused    ***
+         AU2      1          io                ***   unused    ***
+         AV1      1          io                ***   unused    ***
+         AV2      1          io                ***   unused    ***
+         BA1      1          io                ***   unused    ***
+         BA2      1          io       VCC
+         BB1      1          io                ***   unused    ***
+         BB2      1          io                ***   unused    ***
+         BC1      1          io       GND
+         BC2      1          io       GND
+         BD1      1          io                ***   unused    ***
+         BD2      1          io                ***   unused    ***
+         BE1      1          io                ***   unused    ***
+         BE2      1          io                ***   unused    ***
+         BF1      1          io       GND
+         BF2      1          io       GND
+         BH1      1          io                ***   unused    ***
+         BH2      1          io                ***   unused    ***
+         BJ1      1          io                ***   unused    ***
+         BJ2      1          io                ***   unused    ***
+         BK1      1          io                ***   unused    ***
+         BK2      1          io                ***   unused    ***
+         BL1      1          io                ***   unused    ***
+         BL2      1          io                ***   unused    ***
+         BM1      1          io                ***   unused    ***
+         BM2      1          io                ***   unused    ***
+         BN1      1          io       GND
+         BN2      1          io       GND
+         BP1      1          io                ***   unused    ***
+         BP2      1          io                ***   unused    ***
+         BR1      1          io                ***   unused    ***
+         BR2      1          io                ***   unused    ***
+         BS1      1          io                ***   unused    ***
+         BS2      1          io                ***   unused    ***
+         BT1      1          io       GND
+         BT2      1          io       GND
+         BU1      1          io                ***   unused    ***
+         BU2      1          io                ***   unused    ***
+         BV1      1          io                ***   unused    ***
+         BV2      1          io       N$61
+         CA1      1          io                ***   unused    ***
+         CA2      1          io       VCC
+         CB1      1          io                ***   unused    ***
+         CB2      1          io                ***   unused    ***
+         CC1      1          io       GND
+         CC2      1          io       GND
+         CD1      1          io                ***   unused    ***
+         CD2      1          io                ***   unused    ***
+         CE1      1          io                ***   unused    ***
+         CE2      1          io                ***   unused    ***
+         CF1      1          io       GND
+         CF2      1          io       GND
+         CH1      1          io                ***   unused    ***
+         CH2      1          io                ***   unused    ***
+         CJ1      1          io                ***   unused    ***
+         CJ2      1          io                ***   unused    ***
+         CK1      1          io                ***   unused    ***
+         CK2      1          io                ***   unused    ***
+         CL1      1          io                ***   unused    ***
+         CL2      1          io                ***   unused    ***
+         CM1      1          io                ***   unused    ***
+         CM2      1          io                ***   unused    ***
+         CN1      1          io       GND
+         CN2      1          io       GND
+         CP1      1          io                ***   unused    ***
+         CP2      1          io                ***   unused    ***
+         CR1      1          io       INITIALIZE
+         CR2      1          io                ***   unused    ***
+         CS1      1          io       !SKIP
+         CS2      1          io                ***   unused    ***
+         CT1      1          io       GND
+         CT2      1          io       GND
+         CU1      1          io                ***   unused    ***
+         CU2      1          io                ***   unused    ***
+         CV1      1          io                ***   unused    ***
+         CV2      1          io                ***   unused    ***
+         DA1      1          io       !INSIDE_IN
+         DA2      1          io                ***   unused    ***
+         DB1      1          io       !OUTSIDE_CLK
+         DB2      1          io                ***   unused    ***
+         DC1      1          io       GND
+         DC2      1          io       GND
+         DD1      1          io                ***   unused    ***
+         DD2      1          io                ***   unused    ***
+         DE1      1          io                ***   unused    ***
+         DE2      1          io                ***   unused    ***
+         DF1      1          io       GND
+         DF2      1          io       GND
+         DH1      1          io       !MA10
+         DH2      1          io                ***   unused    ***
+         DJ1      1          io       !MA11
+         DJ2      1          io                ***   unused    ***
+         DK1      1          io       !MD8
+         DK2      1          io                ***   unused    ***
+         DL1      1          io       !MD9
+         DL2      1          io                ***   unused    ***
+         DM1      1          io       !MD10
+         DM2      1          io                ***   unused    ***
+         DN1      1          io       GND
+         DN2      1          io       GND
+         DP1      1          io       !MD11
+         DP2      1          io                ***   unused    ***
+         DR1      1          io       !DATA8
+         DR2      1          io                ***   unused    ***
+         DS1      1          io       !DATA9
+         DS2      1          io                ***   unused    ***
+         DT1      1          io       GND
+         DT2      1          io       GND
+         DU1      1          io       !DATA10
+         DU2      1          io                ***   unused    ***
+         DV1      1          io       !DATA11
+         DV2      1          io                ***   unused    ***
+
+R1       1        1          pas      !12TH_CARRY
+         2        2          pas      N$18
+
+R2       1        1          pas      VCC
+         2        2          pas      N$8
+
+R3       1        1          pas      N$6
+         2        2          pas      N$7
+
+R4       1        A          pas      VCC
+         2        S          pas      N$47
+         3        E          pas      N$47
+
+R5       1        1          pas      N$48
+         2        2          pas      N$47
+
+R6       1        1          pas      N$56
+         2        2          pas      N$57
+
+R7       1        1          pas      N$59
+         2        2          pas      N$60
+
+R8       1        1          pas      !OUTSIDE_CLK
+         2        2          pas      VCC
+
+R9       1        1          pas      !INSIDE_IN
+         2        2          pas      VCC
+
+R10      1        1          pas      !DSK_WRT_CLK_DATA
+         2        2          pas      VCC
+
+R11      1        1          pas      GND
+         2        2          pas      !DSK_WRT_CLK_DATA
+
+R12      1        A          pas      VCC
+         2        S          pas      N$50
+         3        E          pas      N$50
+
+R13      1        1          pas      N$55
+         2        2          pas      N$50
+
+R14      1        1          pas      N$23
+         2        2          pas      N$25
+
+R15      1        1          pas      N$24
+         2        2          pas      N$25
+
+R16      1        1          pas      GND
+         2        2          pas      N$22
+
+R17      1        1          pas      N$21
+         2        2          pas      N$20
+
+R18      1        1          pas      N$40
+         2        2          pas      N$36
+
+R19      1        1          pas      N$73
+         2        2          pas      VCC
+
+R20      1        1          pas      GND
+         2        2          pas      !DSK_RESTORE
+
+R21      1        1          pas      !DSK_RESTORE
+         2        2          pas      VCC
+
+R22      1        1          pas      !DSK_SEC2
+         2        2          pas      VCC
+
+R23      1        1          pas      GND
+         2        2          pas      !DSK_SEC2
+
+R24      1        1          pas      !DSK_ACKNOWLEDGE
+         2        2          pas      VCC
+
+R25      1        1          pas      GND
+         2        2          pas      !DSK_ACKNOWLEDGE
+
+R26      1        1          pas      B_IDLE
+         2        2          pas      VCC
+
+R27      1        1          pas      GND
+         2        2          pas      !DSK_SECTOR_MK
+
+R28      1        1          pas      !DSK_SECTOR_MK
+         2        2          pas      VCC
+
+R29      1        1          pas      !DSK_RD_CLK
+         2        2          pas      VCC
+
+R30      1        1          pas      GND
+         2        2          pas      !DSK_RD_CLK
+
+R31      1        1          pas      GND
+         2        2          pas      !DSK_DATA_IN
+
+R32      1        1          pas      !DSK_DATA_IN
+         2        2          pas      VCC
+
+R33      1        1          pas      !DSK_FILE_RDY
+         2        2          pas      VCC
+
+R34      1        1          pas      GND
+         2        2          pas      !DSK_FILE_RDY
+
+R35      1        1          pas      GND
+         2        2          pas      !DSK_SEC8
+
+R36      1        1          pas      !DSK_SEC8
+         2        2          pas      VCC
+
+R37      1        1          pas      GND
+         2        2          pas      !DSK_SEC4
+
+R38      1        1          pas      !DSK_SEC4
+         2        2          pas      VCC
+
+R39      1        1          pas      GND
+         2        2          pas      !DSK_SEC1
+
+R40      1        1          pas      !DSK_SEC1
+         2        2          pas      VCC
+
+R41      1        1          pas      GND
+         2        2          pas      !DSK_INDEX_MK
+
+R42      1        1          pas      !DSK_INDEX_MK
+         2        2          pas      VCC
+
+R43      1        1          pas      +3V
+         2        2          pas      VCC
+
+R44      1        1          pas      GND
+         2        2          pas      +3V
+
+R45      1        1          pas      GND
+         2        2          pas      !DSK_READ
+
+R46      1        1          pas      !DSK_READ
+         2        2          pas      VCC
+
+R47      1        1          pas      GND
+         2        2          pas      !DSK_HEAD_SEL1
+
+R48      1        1          pas      !DSK_HEAD_SEL1
+         2        2          pas      VCC
+
+R49      1        1          pas      GND
+         2        2          pas      !DSK_STROBE
+
+R50      1        1          pas      !DSK_STROBE
+         2        2          pas      VCC
+
+R51      1        1          pas      GND
+         2        2          pas      !DSK_WRT_PROTECT
+
+R52      1        1          pas      !DSK_WRT_PROTECT
+         2        2          pas      VCC
+
+R53      1        1          pas      GND
+         2        2          pas      !DSK_WRT-ERASE_GATE
+
+R54      1        1          pas      !DSK_WRT-ERASE_GATE
+         2        2          pas      VCC
+
+R55      1        1          pas      N$16
+         2        2          pas      LAST_WORD
+
+SV1      1        1          pas      !MD11
+
+SV2      1        1          pas      !MD10
+
+SV3      1        1          pas      !MD9
+
+SV4      1        1          pas      !MD8
+
+SV5      1        1          pas      !MA11
+
+SV6      1        1          pas      !MA10
+
+SV7      1        1          pas      !SKIP
+
+SV8      1        1          pas      INITIALIZE
+
+SV9      1        1          pas      !MD2
+
+SV10     1        1          pas      !MD1
+
+SV11     1        1          pas      !MD0
+
+SV12     1        1          pas      !MA3
+
+SV13     1        1          pas      !MA1
+
+SV14     1        1          pas      !MA0
+
+TP1      P$1      P          pas      16_CARRY
+
+TP2      P$1      P          pas      !INSIDE_IN
+
+TP3      P$1      P          pas      !OUTSIDE_CLK
+
+W1       1        1          pas      N$48
+         2        2          pas      N$90
+
+W2       1        1          pas      N$55
+         2        2          pas      N$53
+
+W3       1        1          pas      N$61
+         2        2          pas      J1TT
+
