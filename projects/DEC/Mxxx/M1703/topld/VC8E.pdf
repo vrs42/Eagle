@@ -1,0 +1,426 @@
+{COMPONENT C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M885\TOPLD\VC8E.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Thu May 31 14:57:04 2018 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P RED_DELA {Pt "INPUT"}{Lq 0}{Ploc 100 440}}
+   {P GRN_DELA {Pt "INPUT"}{Lq 0}{Ploc 100 400}}
+   {P LD_DEL_L {Pt "INPUT"}{Lq 0}{Ploc 100 380}}
+   {P IOT05XX {Pt "INPUT"}{Lq 0}{Ploc 100 360}}
+   {P MD11_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 340}}
+   {P MD10_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 320}}
+   {P MD9_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 300}}
+   {P MD8_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 280}}
+   {P INITIALI {Pt "INPUT"}{Lq 0}{Ploc 100 260}}
+   {P TP3 {Pt "INPUT"}{Lq 0}{Ploc 100 240}}
+   {P PAUSE_LO {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
+   {P MD7_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P MD6_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P MD5_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P MD4_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P MD3_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P SET_DONE {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P N_T_35X {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P SPARE {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P DEL_1_LO {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P DATA11_L {Pt "I/O"}{Lq 0}{Ploc 360 20}}
+   {P DATA10_L {Pt "I/O"}{Lq 0}{Ploc 360 40}}
+   {P DATA09_L {Pt "I/O"}{Lq 0}{Ploc 360 60}}
+   {P DATA08_L {Pt "I/O"}{Lq 0}{Ploc 360 80}}
+   {P SKIP_LOW {Pt "I/O"}{Lq 0}{Ploc 360 100}}
+   {P INTERRUP {Pt "I/O"}{Lq 0}{Ploc 360 120}}
+   {P INTERNAL {Pt "I/O"}{Lq 0}{Ploc 360 140}}
+   {P C1_LOW {Pt "I/O"}{Lq 0}{Ploc 360 160}}
+   {P C0_LOW {Pt "I/O"}{Lq 0}{Ploc 360 180}}
+   {P DATA07_L {Pt "I/O"}{Lq 0}{Ploc 360 200}}
+   {P DATA06_L {Pt "I/O"}{Lq 0}{Ploc 360 220}}
+   {P DATA05_L {Pt "I/O"}{Lq 0}{Ploc 360 240}}
+   {P DATA04_L {Pt "I/O"}{Lq 0}{Ploc 360 260}}
+   {P DATA03_L {Pt "I/O"}{Lq 0}{Ploc 360 280}}
+   {P DATA02_L {Pt "I/O"}{Lq 0}{Ploc 360 300}}
+   {P DATA00_L {Pt "I/O"}{Lq 0}{Ploc 360 320}}
+   {P BTP3 {Pt "I/O"}{Lq 0}{Ploc 360 340}}
+   {P B_DIXY_L {Pt "I/O"}{Lq 0}{Ploc 360 360}}
+   {P COL_RED_ {Pt "I/O"}{Lq 0}{Ploc 360 380}}
+   {P ERASE_LO {Pt "I/O"}{Lq 0}{Ploc 360 400}}
+   {P WRITE_TH {Pt "I/O"}{Lq 0}{Ploc 360 420}}
+   {P N_T_27X {Pt "I/O"}{Lq 0}{Ploc 360 440}}
+   {P DLY_DONE {Pt "I/O"}{Lq 0}{Ploc 360 460}}
+   {P DI02' {Pt "I/O"}{Lq 0}{Ploc 360 480}}
+   {P DI03 {Pt "I/O"}{Lq 0}{Ploc 360 500}}
+   {P DI04 {Pt "I/O"}{Lq 0}{Ploc 360 520}}
+   {P DI05 {Pt "I/O"}{Lq 0}{Ploc 360 540}}
+   {P DI06 {Pt "I/O"}{Lq 0}{Ploc 360 560}}
+   {P DI07 {Pt "I/O"}{Lq 0}{Ploc 360 580}}
+   {P DI08 {Pt "I/O"}{Lq 0}{Ploc 360 600}}
+   {P DI09 {Pt "I/O"}{Lq 0}{Ploc 360 620}}
+   {P DI10 {Pt "I/O"}{Lq 0}{Ploc 360 640}}
+   {P DI11 {Pt "I/O"}{Lq 0}{Ploc 360 660}}
+   {P LOAD_X' {Pt "I/O"}{Lq 0}{Ploc 360 680}}
+   {P LOAD_Y' {Pt "I/O"}{Lq 0}{Ploc 360 700}}
+   {P NON_STOR {Pt "I/O"}{Lq 0}{Ploc 360 720}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 230 770}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 450}
+   [Ts 15][Tj "RC"]
+   {Pnl 120 410}
+   {Pnl 120 390}
+   {Pnl 120 370}
+   {Pnl 120 350}
+   {Pnl 120 330}
+   {Pnl 120 310}
+   {Pnl 120 290}
+   {Pnl 120 270}
+   {Pnl 120 250}
+   {Pnl 120 230}
+   {Pnl 120 210}
+   {Pnl 120 190}
+   {Pnl 120 170}
+   {Pnl 120 150}
+   {Pnl 120 130}
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   [Ts 15][Tj "LC"]
+   {Pnl 340 30}
+   {Pnl 340 50}
+   {Pnl 340 70}
+   {Pnl 340 90}
+   {Pnl 340 110}
+   {Pnl 340 130}
+   {Pnl 340 150}
+   {Pnl 340 170}
+   {Pnl 340 190}
+   {Pnl 340 210}
+   {Pnl 340 230}
+   {Pnl 340 250}
+   {Pnl 340 270}
+   {Pnl 340 290}
+   {Pnl 340 310}
+   {Pnl 340 330}
+   {Pnl 340 350}
+   {Pnl 340 370}
+   {Pnl 340 390}
+   {Pnl 340 410}
+   {Pnl 340 430}
+   {Pnl 340 450}
+   {Pnl 340 470}
+   {Pnl 340 490}
+   {Pnl 340 510}
+   {Pnl 340 530}
+   {Pnl 340 550}
+   {Pnl 340 570}
+   {Pnl 340 590}
+   {Pnl 340 610}
+   {Pnl 340 630}
+   {Pnl 340 650}
+   {Pnl 340 670}
+   {Pnl 340 690}
+   {Pnl 340 710}
+   {Pnl 340 730}
+
+   {Sd A 83 1 2 4 18 20 21 22 25 29 33 39 40 41 44 49 51 52 54 84 12 15 16 17 24 27 28 30 31 34 35 36 37 45 46 48 50 55 56 58 60 61 63 64 65 67 68 69 70 73 74 75 76 77 79 80}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 760 330 0}
+   {L 130 440 100 440}
+   {L 130 450 140 440 130 430}
+   {L 130 400 100 400}
+   {L 130 380 100 380}
+   {L 130 360 100 360}
+   {L 130 340 100 340}
+   {L 130 320 100 320}
+   {L 130 300 100 300}
+   {L 130 280 100 280}
+   {L 130 260 100 260}
+   {L 130 240 100 240}
+   {L 130 220 100 220}
+   {L 130 200 100 200}
+   {L 130 180 100 180}
+   {L 130 160 100 160}
+   {L 130 140 100 140}
+   {L 130 120 100 120}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 330 20 360 20}
+   {L 330 40 360 40}
+   {L 330 60 360 60}
+   {L 330 80 360 80}
+   {L 330 100 360 100}
+   {L 330 120 360 120}
+   {L 330 140 360 140}
+   {L 330 160 360 160}
+   {L 330 180 360 180}
+   {L 330 200 360 200}
+   {L 330 220 360 220}
+   {L 330 240 360 240}
+   {L 330 260 360 260}
+   {L 330 280 360 280}
+   {L 330 300 360 300}
+   {L 330 320 360 320}
+   {L 330 340 360 340}
+   {L 330 360 360 360}
+   {L 330 380 360 380}
+   {L 330 400 360 400}
+   {L 330 420 360 420}
+   {L 330 440 360 440}
+   {L 330 460 360 460}
+   {C 335 480 5}
+   {L 340 480 360 480}
+   {L 330 500 360 500}
+   {L 330 520 360 520}
+   {L 330 540 360 540}
+   {L 330 560 360 560}
+   {L 330 580 360 580}
+   {L 330 600 360 600}
+   {L 330 620 360 620}
+   {L 330 640 360 640}
+   {L 330 660 360 660}
+   {C 335 680 5}
+   {L 340 680 360 680}
+   {C 335 700 5}
+   {L 340 700 360 700}
+   {L 330 720 360 720}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "RED_DELA" 140 440}
+   {T "GRN_DELA" 140 400}
+   {T "LD_DEL_L" 140 380}
+   {T "IOT05XX" 140 360}
+   {T "MD11_LOW" 140 340}
+   {T "MD10_LOW" 140 320}
+   {T "MD9_LOW" 140 300}
+   {T "MD8_LOW" 140 280}
+   {T "INITIALI" 140 260}
+   {T "TP3" 140 240}
+   {T "PAUSE_LO" 140 220}
+   {T "MD7_LOW" 140 200}
+   {T "MD6_LOW" 140 180}
+   {T "MD5_LOW" 140 160}
+   {T "MD4_LOW" 140 140}
+   {T "MD3_LOW" 140 120}
+   {T "SET_DONE" 140 100}
+   {T "N_T_35X" 140 80}
+   {T "SPARE" 140 60}
+   {T "DEL_1_LO" 140 40}
+   [Tj "RC"]
+   {T "DATA11_L" 320 20}
+   {T "DATA10_L" 320 40}
+   {T "DATA09_L" 320 60}
+   {T "DATA08_L" 320 80}
+   {T "SKIP_LOW" 320 100}
+   {T "INTERRUP" 320 120}
+   {T "INTERNAL" 320 140}
+   {T "C1_LOW" 320 160}
+   {T "C0_LOW" 320 180}
+   {T "DATA07_L" 320 200}
+   {T "DATA06_L" 320 220}
+   {T "DATA05_L" 320 240}
+   {T "DATA04_L" 320 260}
+   {T "DATA03_L" 320 280}
+   {T "DATA02_L" 320 300}
+   {T "DATA00_L" 320 320}
+   {T "BTP3" 320 340}
+   {T "B_DIXY_L" 320 360}
+   {T "COL_RED_" 320 380}
+   {T "ERASE_LO" 320 400}
+   {T "WRITE_TH" 320 420}
+   {T "N_T_27X" 320 440}
+   {T "DLY_DONE" 320 460}
+   {T "DI02'" 320 480}
+   {T "DI03" 320 500}
+   {T "DI04" 320 520}
+   {T "DI05" 320 540}
+   {T "DI06" 320 560}
+   {T "DI07" 320 580}
+   {T "DI08" 320 600}
+   {T "DI09" 320 620}
+   {T "DI10" 320 640}
+   {T "DI11" 320 660}
+   {T "LOAD_X'" 320 680}
+   {T "LOAD_Y'" 320 700}
+   {T "NON_STOR" 320 720}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "F1508ISPPLCC84" 230 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 40}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M885\TOPLD\VC8E 230 760}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N RED_DELA
+   }
+   {N GRN_DELA
+   }
+   {N LD_DEL_L
+   }
+   {N IOT05XX
+   }
+   {N MD11_LOW
+   }
+   {N MD10_LOW
+   }
+   {N MD9_LOW
+   }
+   {N MD8_LOW
+   }
+   {N INITIALI
+   }
+   {N TP3
+   }
+   {N PAUSE_LO
+   }
+   {N MD7_LOW
+   }
+   {N MD6_LOW
+   }
+   {N MD5_LOW
+   }
+   {N MD4_LOW
+   }
+   {N MD3_LOW
+   }
+   {N SET_DONE
+   }
+   {N N_T_35X
+   }
+   {N SPARE
+   }
+   {N DEL_1_LO
+   }
+   {N DATA11_L
+   }
+   {N DATA10_L
+   }
+   {N DATA09_L
+   }
+   {N DATA08_L
+   }
+   {N SKIP_LOW
+   }
+   {N INTERRUP
+   }
+   {N INTERNAL
+   }
+   {N C1_LOW
+   }
+   {N C0_LOW
+   }
+   {N DATA07_L
+   }
+   {N DATA06_L
+   }
+   {N DATA05_L
+   }
+   {N DATA04_L
+   }
+   {N DATA03_L
+   }
+   {N DATA02_L
+   }
+   {N DATA00_L
+   }
+   {N BTP3
+   }
+   {N B_DIXY_L
+   }
+   {N COL_RED_
+   }
+   {N ERASE_LO
+   }
+   {N WRITE_TH
+   }
+   {N N_T_27X
+   }
+   {N DLY_DONE
+   }
+   {N DI02'
+   }
+   {N DI03
+   }
+   {N DI04
+   }
+   {N DI05
+   }
+   {N DI06
+   }
+   {N DI07
+   }
+   {N DI08
+   }
+   {N DI09
+   }
+   {N DI10
+   }
+   {N DI11
+   }
+   {N LOAD_X'
+   }
+   {N LOAD_Y'
+   }
+   {N NON_STOR
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}

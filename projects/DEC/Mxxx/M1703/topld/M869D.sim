@@ -1,0 +1,531 @@
+%SIGNAL
+PIN   0 =  b_dixy_low 
+PIN   0 =  bit10 
+PIN   0 =  bit11 
+PIN   0 =  btp3 
+PIN   0 =  c0_low 
+PIN   0 =  c1_low 
+PIN 104 =  chan 
+PIN   0 =  chan_low 
+PIN   0 =  clear 
+PIN   0 =  col_red_low 
+PIN   0 =  color 
+PIN   0 =  color_low 
+PIN   0 =  data00_low 
+PIN   0 =  data06_low 
+PIN   0 =  data07_low 
+PIN   0 =  data08_low 
+PIN   0 =  data09_low 
+PIN   0 =  data10_low 
+PIN   0 =  data11_low 
+PIN   0 =  del_1_low 
+PIN   0 =  dile_low 
+PIN   0 =  dire_low 
+PIN 103 =  erase 
+PIN   0 =  erase_low 
+PIN   0 =  grn_delay 
+PIN   0 =  initialize 
+PIN 105 =  int_en 
+PIN   0 =  intens 
+PIN   0 =  internal_io_low 
+PIN   0 =  interrupt_low 
+PIN   0 =  ld_del_low 
+PIN   0 =  load_en_low 
+PIN   0 =  load_x 
+PIN   0 =  load_y 
+PIN   0 =  md10_low 
+PIN   0 =  md11_low 
+PIN   0 =  md3_low 
+PIN   0 =  md4_low 
+PIN   0 =  md5_low 
+PIN   0 =  md6_low 
+PIN   0 =  md7_low 
+PIN   0 =  md8_low 
+PIN   0 =  md9_low 
+PIN   0 =  n3v 
+PIN   0 =  n_t_15x 
+PIN 106 =  n_t_1x 
+PIN   0 =  n_t_27x 
+PIN   0 =  n_t_34x 
+PIN   0 =  n_t_35x 
+PIN   0 =  n_t_43x 
+PIN   0 =  n_t_45x 
+PIN   0 =  non_store_low 
+PIN   0 =  pause_low 
+PIN   0 =  red_delay 
+PIN   0 =  set_done 
+PIN   0 =  set_done_low 
+PIN   0 =  skip_low 
+PIN 102 =  store 
+PIN   0 =  tp3 
+PIN 101 =  write_thru 
+PIN   0 =  write_thru_low 
+PIN   0 =  z_pulse 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+b_dicd_low =>
+    !btp3
+  # n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+  # md11_low
+
+b_dixy_low =>
+    pause_low
+  # n_t_15x
+  # md9_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+  # md11_low
+  # !md10_low
+  # !btp3
+
+b_load_en_low =>
+    !erase & load_en_low & !n_t_35x
+  # !btp3
+
+!bit10 =>
+    dile_low & load_en_low
+  # data10_low
+
+!bit11 =>
+    dile_low & load_en_low
+  # data11_low
+
+btp3 =>
+    tp3
+
+!c0_low =>
+    !dire_low
+  # !dile_low
+
+c0_low.oe  =>
+    !c0_low
+
+!c1_low =>
+    !dire_low
+
+c1_low.oe  =>
+    !dire_low
+
+chan.d  =>
+    bit10
+
+chan.ap  =>
+    !n3v
+
+chan.ar  =>
+    clear
+
+chan.ck  =>
+    !dile_low & tp3
+
+!chan_low =>
+    chan
+
+chan_low.oe  =>
+    chan
+
+cl_done_low =>
+    b_dixy_low & !btp3 & !clear
+  # b_dixy_low & !clear & !erase & load_en_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !n_t_35x & !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !n_t_35x & !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & md11_low & !n_t_35x
+  # b_dixy_low & !clear & !erase & load_en_low & n_t_15x & !n_t_35x
+  # b_dixy_low & !clear & !erase & load_en_low & !n_t_35x & pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & !md7_low & !n_t_35x & !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & !md4_low & !n_t_35x & !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & !md3_low & !n_t_35x & !pause_low
+  # b_dixy_low & !clear & !erase & load_en_low & md6_low & !n_t_35x
+  # b_dixy_low & !clear & !erase & load_en_low & md8_low & !n_t_35x
+
+clear =>
+    md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & !pause_low & tp3
+  # initialize
+
+clear.oe  =>
+    !clear
+
+clear_done_low =>
+    !erase & !n_t_35x
+
+!col_red_low =>
+    color
+
+col_red_low.oe  =>
+    color
+
+color.d  =>
+    !data09_low & !load_en_low
+  # !data09_low & !dile_low
+
+color.ap  =>
+    !n3v
+
+color.ar  =>
+    clear
+
+color.ck  =>
+    !dile_low & tp3
+
+color_low =>
+    !color
+
+!data00_low =>
+    !dire_low & n_t_1x
+
+data00_low.oe  =>
+    !dire_low & n_t_1x
+
+!data06_low =>
+    !dire_low & write_thru
+
+data06_low.oe  =>
+    !dire_low & write_thru
+
+!data07_low =>
+    !dire_low & store
+
+data07_low.oe  =>
+    !dire_low & store
+
+!data09_low =>
+    color & !dire_low
+
+data09_low.oe  =>
+    color & !dire_low
+
+!data10_low =>
+    chan & !dire_low
+
+data10_low.oe  =>
+    chan & !dire_low
+
+!data11_low =>
+    !dire_low & int_en
+
+data11_low.oe  =>
+    !dire_low & int_en
+
+!dicd_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+  # md11_low
+
+!dicl_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+  # !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+!dile_low =>
+    !md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low
+
+!dilx_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low
+  # md10_low
+  # md11_low
+
+!dily_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md9_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+  # !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+!dire_low =>
+    !md10_low & !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low
+
+!disd_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low
+  # md10_low
+  # !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+!dixy_low =>
+    n_t_15x
+  # pause_low
+  # !md7_low & !pause_low
+  # !md4_low & !pause_low
+  # !md3_low & !pause_low
+  # md6_low
+  # md8_low
+  # md9_low
+  # !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+  # md11_low
+
+dly_done_low =>
+    !grn_delay & !red_delay
+
+erase.d  =>
+    !data08_low & !load_en_low
+  # !data08_low & !dile_low
+
+erase.ap  =>
+    !n3v
+
+erase.ar  =>
+    clear
+  # set_done
+
+erase.ck  =>
+    !dile_low & tp3
+
+!erase_low =>
+    erase
+
+erase_low.oe  =>
+    erase
+
+int_en.d  =>
+    bit11
+
+int_en.ap  =>
+    !n3v
+
+int_en.ar  =>
+    clear
+
+int_en.ck  =>
+    !dile_low & tp3
+
+!internal_io_low =>
+    md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+internal_io_low.oe  =>
+    md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+!interrupt_low =>
+    int_en & n_t_1x
+
+interrupt_low.oe  =>
+    int_en & n_t_1x
+
+!iot =>
+    md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+ld_en_reg =>
+    !dile_low & tp3
+
+!load_data_low =>
+    dile_low & load_en_low
+
+load_en_low =>
+    !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low
+  # md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & !pause_low
+  # !md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+  # !md7_low
+  # !md4_low
+  # !md3_low
+  # pause_low
+  # n_t_15x
+  # md8_low
+  # md6_low
+
+load_x =>
+    pause_low
+  # n_t_15x
+  # !md9_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+  # md11_low
+  # md10_low
+  # !btp3
+
+load_y =>
+    pause_low
+  # n_t_15x
+  # md9_low
+  # md8_low
+  # !md7_low
+  # md6_low
+  # !md4_low
+  # !md3_low
+  # !md11_low
+  # !md10_low
+  # !btp3
+
+n3v =>
+    1 
+
+!n_t_10x =>
+    !md3_low & !pause_low
+
+!n_t_11x =>
+    !data09_low & !dile_low
+  # !data09_low & !load_en_low
+
+!n_t_12x =>
+    !md4_low & !pause_low
+
+!n_t_13x =>
+    !data06_low & !dile_low
+  # !data06_low & !load_en_low
+
+!n_t_14x =>
+    !md5_low & !pause_low
+
+!n_t_17x =>
+    !md7_low & !pause_low
+
+!n_t_19x =>
+    !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+n_t_1x.d  =>
+    n3v
+
+n_t_1x.ap  =>
+    !n3v
+
+n_t_1x.ar  =>
+    clear
+  # btp3 & !load_en_low
+  # btp3 & n_t_35x
+  # btp3 & erase
+  # !b_dixy_low
+  # btp3 & md10_low & !md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & !pause_low
+
+n_t_1x.ck  =>
+    del_1_low & !grn_delay & ld_del_low & !red_delay & set_done_low
+
+!n_t_20x =>
+    !md10_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & !n_t_15x & !pause_low
+
+!n_t_21x =>
+    md3_low & md4_low & !md6_low & md7_low & !md8_low & !md9_low & !n_t_15x & !pause_low
+
+!n_t_22x =>
+    !data07_low & !dile_low
+  # !data07_low & !load_en_low
+
+n_t_23x =>
+    md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & !pause_low & tp3
+
+!n_t_24x =>
+    !data08_low & !dile_low
+  # !data08_low & !load_en_low
+
+n_t_26x =>
+    !clear & !set_done
+
+n_t_27x =>
+    color_low & !store
+
+n_t_27x.oe  =>
+    !n_t_27x
+
+n_t_2x =>
+    !load_en_low
+  # n_t_35x
+  # erase
+
+n_t_34x =>
+    !grn_delay & !red_delay
+
+n_t_3x =>
+    del_1_low & !grn_delay & ld_del_low & !red_delay & set_done_low
+
+!n_t_43x =>
+    color_low
+
+n_t_43x.oe  =>
+    color_low
+
+n_t_46x =>
+    1 
+
+!n_t_9x =>
+    del_1_low & z_pulse
+
+!non_store_low =>
+    !store
+
+non_store_low.oe  =>
+    !store
+
+!skip_low =>
+    !md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & n_t_1x & !pause_low
+
+skip_low.oe  =>
+    !md10_low & md11_low & md3_low & md4_low & !md6_low & md7_low & !md8_low & md9_low & !n_t_15x & n_t_1x & !pause_low
+
+store.d  =>
+    !data07_low & !load_en_low
+  # !data07_low & !dile_low
+
+store.ap  =>
+    !n3v
+
+store.ar  =>
+    clear
+
+store.ck  =>
+    !dile_low & tp3
+
+write_thru.d  =>
+    !data06_low & !load_en_low
+  # !data06_low & !dile_low
+
+write_thru.ap  =>
+    !n3v
+
+write_thru.ar  =>
+    clear
+
+write_thru.ck  =>
+    !dile_low & tp3
+
+!write_thru_low =>
+    write_thru
+
+write_thru_low.oe  =>
+    write_thru
+
+%END

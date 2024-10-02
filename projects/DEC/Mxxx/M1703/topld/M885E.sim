@@ -1,0 +1,530 @@
+%SIGNAL
+PIN   0 =  bit10 
+PIN   0 =  bit11 
+PIN   0 =  data02_low 
+PIN   0 =  data03_low 
+PIN   0 =  data04_low 
+PIN   0 =  data05_low 
+PIN   0 =  data06_low 
+PIN   0 =  data07_low 
+PIN   0 =  data08_low 
+PIN   0 =  data09_low 
+PIN   0 =  data10_low 
+PIN   0 =  data11_low 
+PIN 103 =  gdollar_0 
+PIN 104 =  gdollar_1 
+PIN 107 =  gdollar_2 
+PIN 108 =  gdollar_3 
+PIN   0 =  load_en_low 
+PIN   0 =  load_x 
+PIN   0 =  load_y 
+PIN   0 =  n5v_x 
+PIN   0 =  n5v_y 
+PIN   0 =  n_t_121x 
+PIN   0 =  n_t_145x 
+PIN   0 =  n_t_27x 
+PIN   0 =  n_t_52x 
+PIN 106 =  x02 
+PIN 105 =  x03 
+PIN 116 =  x04 
+PIN 115 =  x05 
+PIN 114 =  x06 
+PIN 113 =  x07 
+PIN 124 =  x08 
+PIN 123 =  x09 
+PIN 122 =  x10 
+PIN 121 =  x11 
+PIN   0 =  x_ac_low 
+PIN   0 =  x_dec 
+PIN   0 =  x_inc 
+PIN 102 =  y02 
+PIN 101 =  y03 
+PIN 112 =  y04 
+PIN 111 =  y05 
+PIN 110 =  y06 
+PIN 109 =  y07 
+PIN 120 =  y08 
+PIN 119 =  y09 
+PIN 118 =  y10 
+PIN 117 =  y11 
+PIN   0 =  y_ac_low 
+PIN   0 =  y_dec 
+PIN   0 =  y_inc 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!data02_low =>
+    y02 & !y_ac_low
+  # x02 & !x_ac_low
+
+data02_low.oe  =>
+    y02 & !y_ac_low
+  # x02 & !x_ac_low
+
+!data03_low =>
+    y03 & !y_ac_low
+  # x03 & !x_ac_low
+
+data03_low.oe  =>
+    y03 & !y_ac_low
+  # x03 & !x_ac_low
+
+!data04_low =>
+    y04 & !y_ac_low
+  # x04 & !x_ac_low
+
+data04_low.oe  =>
+    y04 & !y_ac_low
+  # x04 & !x_ac_low
+
+!data05_low =>
+    y05 & !y_ac_low
+  # x05 & !x_ac_low
+
+data05_low.oe  =>
+    y05 & !y_ac_low
+  # x05 & !x_ac_low
+
+!data06_low =>
+    y06 & !y_ac_low
+  # x06 & !x_ac_low
+
+data06_low.oe  =>
+    y06 & !y_ac_low
+  # x06 & !x_ac_low
+
+!data07_low =>
+    y07 & !y_ac_low
+  # x07 & !x_ac_low
+
+data07_low.oe  =>
+    y07 & !y_ac_low
+  # x07 & !x_ac_low
+
+!data08_low =>
+    y08 & !y_ac_low
+  # x08 & !x_ac_low
+
+data08_low.oe  =>
+    y08 & !y_ac_low
+  # x08 & !x_ac_low
+
+!data09_low =>
+    y09 & !y_ac_low
+  # x09 & !x_ac_low
+
+data09_low.oe  =>
+    y09 & !y_ac_low
+  # x09 & !x_ac_low
+
+!data10_low =>
+    y11 & !y_ac_low
+  # x11 & !x_ac_low
+
+data10_low.oe  =>
+    y11 & !y_ac_low
+  # x11 & !x_ac_low
+
+!data11_low =>
+    y10 & !y_ac_low
+  # x10 & !x_ac_low
+
+data11_low.oe  =>
+    y10 & !y_ac_low
+  # x10 & !x_ac_low
+
+!di02 =>
+    !data02_low & !load_en_low
+
+!di03 =>
+    !data03_low & !load_en_low
+
+!di04 =>
+    !data04_low & !load_en_low
+
+!di05 =>
+    !data05_low & !load_en_low
+
+!di06 =>
+    !data06_low & !load_en_low
+
+!di07 =>
+    !data07_low & !load_en_low
+
+!di08 =>
+    !data08_low & !load_en_low
+
+!di09 =>
+    !data09_low & !load_en_low
+
+gdollar_0.t  =>
+    1 
+
+gdollar_0.ap  =>
+    0 
+
+gdollar_0.ar  =>
+    !load_y
+
+gdollar_0.ck  =>
+    !y02 & !y03 & !y04 & !y05 & !y06 & !y07
+  # y02 & y03 & y04 & y05 & y06 & y07
+
+gdollar_1.t  =>
+    1 
+
+gdollar_1.ap  =>
+    0 
+
+gdollar_1.ar  =>
+    !load_y
+
+gdollar_1.ck  =>
+    !gdollar_0 & !y02 & !y03 & !y04 & !y05 & !y06 & !y07
+  # gdollar_0 & y02 & y03 & y04 & y05 & y06 & y07
+
+gdollar_2.t  =>
+    1 
+
+gdollar_2.ap  =>
+    0 
+
+gdollar_2.ar  =>
+    !load_x
+
+gdollar_2.ck  =>
+    !x02 & !x03 & !x04 & !x05 & !x06 & !x07
+  # x02 & x03 & x04 & x05 & x06 & x07
+
+gdollar_3.t  =>
+    1 
+
+gdollar_3.ap  =>
+    0 
+
+gdollar_3.ar  =>
+    !load_x
+
+gdollar_3.ck  =>
+    !gdollar_2 & !x02 & !x03 & !x04 & !x05 & !x06 & !x07
+  # gdollar_2 & x02 & x03 & x04 & x05 & x06 & x07
+
+n_t_102x =>
+    1 
+
+n_t_10x =>
+    y04 & y05 & y06 & y07
+
+n_t_110x =>
+    1 
+
+n_t_111x =>
+    1 
+
+n_t_12x =>
+    !y08 & !y09 & !y10 & !y11
+
+n_t_132x =>
+    1 
+
+n_t_14x =>
+    y08 & y09 & y10 & y11
+
+n_t_156x =>
+    1 
+
+n_t_21x =>
+    !x04 & !x05 & !x06 & !x07
+
+n_t_22x =>
+    x04 & x05 & x06 & x07
+
+n_t_23x =>
+    !x08 & !x09 & !x10 & !x11
+
+n_t_24x =>
+    x08 & x09 & x10 & x11
+
+n_t_6x =>
+    !y04 & !y05 & !y06 & !y07
+
+x02.t  =>
+    1 
+
+x02.ap  =>
+    !data02_low & !load_en_low & !load_x
+
+x02.ar  =>
+    load_en_low & !load_x
+  # data02_low & !load_x
+
+x02.ck  =>
+    !x03 & !x04 & !x05 & !x06 & !x07
+  # x03 & x04 & x05 & x06 & x07
+
+x03.t  =>
+    1 
+
+x03.ap  =>
+    !data03_low & !load_en_low & !load_x
+
+x03.ar  =>
+    data03_low & !load_x
+  # load_en_low & !load_x
+
+x03.ck  =>
+    !x04 & !x05 & !x06 & !x07
+  # x04 & x05 & x06 & x07
+
+x04.t  =>
+    1 
+
+x04.ap  =>
+    !data04_low & !load_en_low & !load_x
+
+x04.ar  =>
+    data04_low & !load_x
+  # load_en_low & !load_x
+
+x04.ck  =>
+    !x05 & !x06 & !x07 & !x08 & !x09 & !x10 & !x11
+  # x05 & x06 & x07 & x08 & x09 & x10 & x11
+
+x05.t  =>
+    1 
+
+x05.ap  =>
+    !data05_low & !load_en_low & !load_x
+
+x05.ar  =>
+    load_en_low & !load_x
+  # data05_low & !load_x
+
+x05.ck  =>
+    !x06 & !x07 & !x08 & !x09 & !x10 & !x11
+  # x06 & x07 & x08 & x09 & x10 & x11
+
+x06.t  =>
+    1 
+
+x06.ap  =>
+    !data06_low & !load_en_low & !load_x
+
+x06.ar  =>
+    load_en_low & !load_x
+  # data06_low & !load_x
+
+x06.ck  =>
+    !x07 & !x08 & !x09 & !x10 & !x11
+  # x07 & x08 & x09 & x10 & x11
+
+x07.t  =>
+    1 
+
+x07.ap  =>
+    !data07_low & !load_en_low & !load_x
+
+x07.ar  =>
+    load_en_low & !load_x
+  # data07_low & !load_x
+
+x07.ck  =>
+    !x08 & !x09 & !x10 & !x11
+  # x08 & x09 & x10 & x11
+
+x08.t  =>
+    1 
+
+x08.ap  =>
+    !data08_low & !load_en_low & !load_x
+
+x08.ar  =>
+    load_en_low & !load_x
+  # data08_low & !load_x
+
+x08.ck  =>
+    !x09 & !x10 & !x11 & x_dec
+  # x09 & x10 & x11 & x_inc
+
+x09.t  =>
+    1 
+
+x09.ap  =>
+    !data09_low & !load_en_low & !load_x
+
+x09.ar  =>
+    data09_low & !load_x
+  # load_en_low & !load_x
+
+x09.ck  =>
+    !x10 & !x11 & x_dec
+  # x10 & x11 & x_inc
+
+x10.t  =>
+    1 
+
+x10.ap  =>
+    bit10 & !load_x
+
+x10.ar  =>
+    !bit10 & !load_x
+
+x10.ck  =>
+    !x11 & x_dec
+  # x11 & x_inc
+
+x11.t  =>
+    1 
+
+x11.ap  =>
+    bit11 & !load_x
+
+x11.ar  =>
+    !bit11 & !load_x
+
+x11.ck  =>
+    x_dec
+  # x_inc
+
+y02.t  =>
+    1 
+
+y02.ap  =>
+    !data02_low & !load_en_low & !load_y
+
+y02.ar  =>
+    load_en_low & !load_y
+  # data02_low & !load_y
+
+y02.ck  =>
+    !y03 & !y04 & !y05 & !y06 & !y07
+  # y03 & y04 & y05 & y06 & y07
+
+y03.t  =>
+    1 
+
+y03.ap  =>
+    !data03_low & !load_en_low & !load_y
+
+y03.ar  =>
+    data03_low & !load_y
+  # load_en_low & !load_y
+
+y03.ck  =>
+    !y04 & !y05 & !y06 & !y07
+  # y04 & y05 & y06 & y07
+
+y04.t  =>
+    1 
+
+y04.ap  =>
+    !data04_low & !load_en_low & !load_y
+
+y04.ar  =>
+    data04_low & !load_y
+  # load_en_low & !load_y
+
+y04.ck  =>
+    !y05 & !y06 & !y07 & !y08 & !y09 & !y10 & !y11
+  # y05 & y06 & y07 & y08 & y09 & y10 & y11
+
+y05.t  =>
+    1 
+
+y05.ap  =>
+    !data05_low & !load_en_low & !load_y
+
+y05.ar  =>
+    load_en_low & !load_y
+  # data05_low & !load_y
+
+y05.ck  =>
+    !y06 & !y07 & !y08 & !y09 & !y10 & !y11
+  # y06 & y07 & y08 & y09 & y10 & y11
+
+y06.t  =>
+    1 
+
+y06.ap  =>
+    !data06_low & !load_en_low & !load_y
+
+y06.ar  =>
+    load_en_low & !load_y
+  # data06_low & !load_y
+
+y06.ck  =>
+    !y07 & !y08 & !y09 & !y10 & !y11
+  # y07 & y08 & y09 & y10 & y11
+
+y07.t  =>
+    1 
+
+y07.ap  =>
+    !data07_low & !load_en_low & !load_y
+
+y07.ar  =>
+    load_en_low & !load_y
+  # data07_low & !load_y
+
+y07.ck  =>
+    !y08 & !y09 & !y10 & !y11
+  # y08 & y09 & y10 & y11
+
+y08.t  =>
+    1 
+
+y08.ap  =>
+    !data08_low & !load_en_low & !load_y
+
+y08.ar  =>
+    load_en_low & !load_y
+  # data08_low & !load_y
+
+y08.ck  =>
+    !y09 & !y10 & !y11 & y_dec
+  # y09 & y10 & y11 & y_inc
+
+y09.t  =>
+    1 
+
+y09.ap  =>
+    !data09_low & !load_en_low & !load_y
+
+y09.ar  =>
+    data09_low & !load_y
+  # load_en_low & !load_y
+
+y09.ck  =>
+    !y10 & !y11 & y_dec
+  # y10 & y11 & y_inc
+
+y10.t  =>
+    1 
+
+y10.ap  =>
+    bit10 & !load_y
+
+y10.ar  =>
+    !bit10 & !load_y
+
+y10.ck  =>
+    !y11 & y_dec
+  # y11 & y_inc
+
+y11.t  =>
+    1 
+
+y11.ap  =>
+    bit11 & !load_y
+
+y11.ar  =>
+    !bit11 & !load_y
+
+y11.ck  =>
+    y_dec
+  # y_inc
+
+%END
