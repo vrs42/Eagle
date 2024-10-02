@@ -1,0 +1,71 @@
+Partlist
+
+Exported from G888-mk2.sch at 2020-01-14 21:51:39
+
+EAGLE Version 5.7.0 Copyright (c) 1988-2010 CadSoft
+
+Part     Value            Device           Package    Library    Sheet
+
+C1       68u/20V          CPOL-EUSMCD      SMC_D      anders     4
+C2       10u/10V          CPOL-EUSMCC      SMC_C      anders     4
+C3       10n              C0805            0805       capsmd     1
+C4       100n             C0805            0805       capsmd     4
+C5       10p              C0805            0805       capsmd     1
+C6       100n             C0805            0805       capsmd     4
+C7       100n             C0805            0805       capsmd     4
+C8       68u/20V          CPOL-EUSMCD      SMC_D      anders     4
+C9       10u/10V          CPOL-EUSMCC      SMC_C      anders     4
+C10      10u/10V          CPOL-EUSMCC      SMC_C      anders     4
+CON1     FLIPCHIP_1NORMAL FLIPCHIP_1NORMAL FLIPCHIP-1 anders     3
+D1       1N4148           1N4148-Y         SOD123     diode      1
+D2       1N4148           1N4148-Y         SOD123     diode      1
+D3       1N4148           1N4148-Y         SOD123     diode      1
+D4       1N4148           1N4148-Y         SOD123     diode      1
+D5       1N4148           1N4148-Y         SOD123     diode      1
+D6       1N4148           1N4148-Y         SOD123     diode      1
+D7       1N4148           1N4148-Y         SOD123     diode      1
+D8       1N4148           1N4148-Y         SOD123     diode      1
+D9       1N4148           1N4148-Y         SOD123     diode      1
+D10      1N4148           1N4148-Y         SOD123     diode      1
+D11      1N4148           1N4148-Y         SOD123     diode      1
+D12      MBR0540T1        MBR0540T1        SOD123     anders     2
+D13      MBR0540T1        MBR0540T1        SOD123     anders     2
+IC1      LM337            LM337-SOT223     SOT223     v-reg      4
+IC2      OPA2134D         OPA2134D         SOIC8      linear     1
+IC3      LM1117-3.3       LM1117-3.3       SOT223     v-reg      4
+IC4      7400N            7400N            DIL14      74xx-eu    1
+IC5      LM337            LM337-SOT223     SOT223     v-reg      4
+JP1                       PINHD-1X3/90     1X03/90    pinhead    3
+R1       10k              TRIM_EU-SP19L    SP19L      anders     1
+R2       22k              R-EU_R0805       R0805      anders     1
+R3       4k7              R-EU_R0805       R0805      anders     1
+R4       240              R-EU_R0805       R0805      anders     4
+R5       2k2              R-EU_R0805       R0805      anders     1
+R6       2k2              R-EU_R0805       R0805      anders     1
+R7       220              R-EU_R0805       R0805      anders     1
+R8       715              R-EU_R0805       R0805      anders     4
+R9       220              R-EU_R0805       R0805      anders     1
+R10      22k              R-EU_R0805       R0805      anders     1
+R11      470k             R-EU_R0805       R0805      anders     1
+R12      1k               R-EU_R0805       R0805      anders     1
+R13      4k7              R-EU_R0805       R0805      anders     1
+R14      470k             R-EU_R0805       R0805      anders     1
+R15      75 2W            R-EU_R2512       R2512      anders     2
+R16      680              R-EU_R0805       R0805      anders     2
+R17      150              R-EU_R0805       R0805      anders     2
+R18      6k8              R-EU_R0805       R0805      anders     2
+R19      75 2W            R-EU_R2512       R2512      anders     2
+R20      1k               R-EU_R0805       R0805      anders     2
+R21      6k8              R-EU_R0805       R0805      anders     2
+R22      1k               R-EU_R0805       R0805      anders     2
+R23      150              R-EU_R0805       R0805      anders     2
+R24      680              R-EU_R0805       R0805      anders     2
+R25      3k3              R-EU_R0805       R0805      anders     1
+R26      240              R-EU_R0805       R0805      anders     4
+R27      2k05             R-EU_R0805       R0805      anders     4
+R28      1k8              R-EU_R0805       R0805      anders     4
+T1       BC847            BC847            SOT23      transistor 1
+T2       IRLML0100TR      IRLML0100TR      SOT23      anders     2
+T3       BC857B           BC857B           SOT23      anders     2
+T4       IRLML0100TR      IRLML0100TR      SOT23      anders     2
+T5       BC857B           BC857B           SOT23      anders     2
