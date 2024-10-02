@@ -1,0 +1,629 @@
+Atmel ATF1504AS Fitter Version 1.8.7.8 ,running Tue Dec 18 13:41:41 2018
+
+
+fit1504 C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M707\TOPLD\M707.tt2 -CUPL -dev P1504C84 -JTAG ON
+
+
+****** Initial fitting strategy and property ******
+ Pla_in_file = M707.tt2
+ Pla_out_file = M707.tt3
+ Jedec_file = M707.jed
+ Vector_file = M707.tmv
+ verilog_file = M707.vt
+ Time_file = 
+ Log_file = M707.fit
+ err_file = 
+ Device_name = PLCC84
+ Module_name = 
+ Package_type = PLCC
+ Preassign_file = 
+ Property_file = 
+ Sleep_mode = 
+ Preassignment = 
+ Security_mode = OFF
+ Pin_keep_mode = ON
+ Dedicated_input_clock = 
+ Dedicated_input_reset = 
+ Dedicated_input_oe = 
+ supporter = CUPL
+ optimize = ON
+ Soft_buffer = 
+ Xor_synthesis = OFF
+ Foldback_logic =  on
+ Expander = 
+ Cascade_logic = OFF
+ Dedicated_input = 
+ Output_fast = OFF
+ *******************************
+ Power down pin 1 = OFF
+ Power down pin 2 = OFF
+ power_reset = OFF
+ JTAG = ON
+ TDI pullup = OFF
+ TMS pullup = OFF
+ MC_power = OFF
+ Open_collector = OFF
+ ITD0 = ON
+ ITD1 = ON
+ ITD2 = ON
+ Fast_inlatch = off
+ *******************************
+---------------------------------------------------------
+ Fitter_Pass 1, Preassign = KEEP, LOGIC_DOUBLING : OFF 
+ ... 
+## ERROR : Bad user pin assignement : 85
+ ## ERROR : Bad user pin assignement 
+---------------------------------------------------------
+ Fitter_Pass 2, Preassign = KEEP, NODE ASSIGN : OFF 
+ ... 
+
+Performing global Output Enable pin assignments ...
+
+Performing global pin assignments ...
+--------------------------------------
+
+
+
+Final global control pins assignment (if applicable)...
+-------------------------------------------------------
+
+
+
+Performing input pin pre-assignments ...
+------------------------------------
+echo assigned to pin  1
+irq.AP equation needs patching.
+1 control eqution need patching
+
+Attempt to place floating signals ...
+------------------------------------
+oactive is placed at feedback node 602 (MC 2)
+stop is placed at pin 20 (MC 3)
+bit2 is placed at feedback node 603 (MC 3)
+bn1 is placed at pin 18 (MC 4)
+n2xclk is placed at pin 17 (MC 5)
+bit4 is placed at feedback node 605 (MC 5)
+bp1 is placed at pin 16 (MC 6)
+n_t_63x is placed at pin 15 (MC 7)
+TDI is placed at pin 14 (MC 8)
+bit3 is placed at feedback node 608 (MC 8)
+n_t_166x is placed at feedback node 609 (MC 9)
+wait_low is placed at pin 11 (MC 10)
+bit1 is placed at feedback node 610 (MC 10)
+n_t_16x is placed at feedback node 611 (MC 11)
+n_t_138x is placed at feedback node 612 (MC 12)
+bit8 is placed at feedback node 613 (MC 13)
+bit7 is placed at feedback node 614 (MC 14)
+bit5 is placed at feedback node 615 (MC 15)
+line is placed at pin 4 (MC 16)
+clr_flag1 is placed at pin 40 (MC 18)
+ioclr is placed at pin 37 (MC 20)
+clr_flag2 is placed at pin 35 (MC 22)
+skp_strobe is placed at pin 33 (MC 24)
+skip is placed at pin 30 (MC 26)
+n3v is placed at pin 29 (MC 27)
+irq is placed at pin 28 (MC 28)
+TMS is placed at pin 23 (MC 32)
+irq.AP is placed at feedback node 632 (MC 32)
+serial_out is placed at pin 48 (MC 36)
+ac11 is placed at pin 49 (MC 37)
+ac08 is placed at pin 50 (MC 38)
+ac10 is placed at pin 51 (MC 39)
+load_buffer is placed at pin 52 (MC 40)
+ac09 is placed at pin 54 (MC 41)
+ar1 is placed at pin 55 (MC 42)
+ac05 is placed at pin 56 (MC 43)
+ac04 is placed at pin 58 (MC 45)
+enable_ds is placed at pin 60 (MC 46)
+enable is placed at pin 61 (MC 47)
+TCK is placed at pin 62 (MC 48)
+ac07 is placed at pin 64 (MC 50)
+al1 is placed at pin 65 (MC 51)
+ac06 is placed at pin 67 (MC 52)
+size is placed at pin 68 (MC 53)
+bit9 is placed at pin 69 (MC 54)
+bit6 is placed at pin 70 (MC 55)
+TDO is placed at pin 71 (MC 56)
+n_t_12x is placed at pin 73 (MC 57)
+ah1 is placed at pin 74 (MC 58)
+n_t_13x is placed at pin 75 (MC 59)
+af1 is placed at pin 76 (MC 60)
+n_t_15x is placed at pin 77 (MC 61)
+ae1 is placed at pin 79 (MC 62)
+n_t_17x is placed at pin 80 (MC 63)
+active is placed at pin 81 (MC 64)
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                     w                                                              
+                     a                             n     n   n                      
+                     i                           a _     _   _                      
+                     t                           c t     t   t                      
+                     _              l     e      t _     _   _                      
+                     l        G     i V   c    G i 1 a V 1 a 1                     
+                     o        N     n C   h    N v 7 e C 5 f 3                     
+                     w        D     e C   o    D e x 1 C x 1 x                     
+                    -------------------------------------------                     
+                   / 11   9   7   5   3   1  83  81  79  77  75 \                   
+                  /    10   8   6   4   2  84  82  80  78  76    \                  
+                 | 12                    (*)                   74 | ah1             
+             VCC | 13                                          73 | n_t_12x         
+             TDI | 14                                          72 | GND             
+         n_t_63x | 15                                          71 | TDO             
+             bp1 | 16                                          70 | bit6            
+          n2xclk | 17                                          69 | bit9            
+             bn1 | 18                                          68 | size            
+             GND | 19                                          67 | ac06            
+            stop | 20                                          66 | VCC             
+                 | 21                                          65 | al1             
+                 | 22                 ATF1504                  64 | ac07            
+             TMS | 23               84-Lead PLCC               63 |                 
+                 | 24                                          62 | TCK             
+                 | 25                                          61 | enable          
+             VCC | 26                                          60 | enable_ds       
+                 | 27                                          59 | GND             
+             irq | 28                                          58 | ac04            
+             n3v | 29                                          57 |                 
+            skip | 30                                          56 | ac05            
+                 | 31                                          55 | ar1             
+             GND | 32                                          54 | ac09            
+                  \     34  36  38  40  42  44  46  48  50  52   /                  
+                   \  33  35  37  39  41  43  45  47  49  51  53/                   
+              	    --------------------------------------------                    
+                      s   c   i V   c   G V       G s a a a l V                     
+                      k   l   o C   l   N C       N e c c c o C                     
+                      p   r   c C   r   D C       D r 1 0 1 a C                     
+                      _   _   l     _               i 1 8 0 d                       
+                      s   f   r     f               a       _                       
+                      t   l         l               l       b                       
+                      r   a         a               _       u                       
+                      o   g         g               o       f                       
+                      b   2         1               u       f                       
+                      e                             t       e                       
+                                                            r                       
+
+
+
+VCC = Supply Voltage pin which must be connected to (5.0V or 3.0V)
+
+GND = GND pin which must be connected to ground
+
+TMS,TDI,TDO,TDI = JTAG pins which must reserved for the JTAG interface
+
+NC = Unused I/O pins which must be unconnected on the board
+
+Universal-Interconnect-Multiplexer assignments
+------------------------------------------------
+FanIn assignment for block A [24]
+{
+ac08,ac11,ac10,ac07,ac04,active,ac05,ar1,ac09,
+bit2,bit1,bit9,bit3,bit8,bit4,bit5,bit6,
+ioclr,
+n_t_16x,n_t_166x,n_t_138x,n2xclk,
+oactive,
+wait_low,
+}
+Multiplexer assignment for block A
+oactive			(MC1	FB)  : MUX 0		Ref (A2fb)
+ac08			(MC19	P)   : MUX 1		Ref (C38p)
+bit2			(MC2	FB)  : MUX 2		Ref (A3fb)
+ac11			(MC17	P)   : MUX 3		Ref (C37p)
+ac10			(MC20	P)   : MUX 5		Ref (C39p)
+ac07			(MC21	P)   : MUX 7		Ref (D50p)
+bit1			(MC6	FB)  : MUX 9		Ref (A10fb)
+n_t_16x			(MC7	FB)  : MUX 11		Ref (A11fb)
+wait_low		(MC24	P)   : MUX 12		Ref (A10p)
+ac04			(MC23	P)   : MUX 14		Ref (C45p)
+n_t_166x		(MC5	FB)  : MUX 15		Ref (A9fb)
+n_t_138x		(MC8	FB)  : MUX 17		Ref (A12fb)
+bit9			(MC12	P)   : MUX 21		Ref (D54p)
+active			(MC14	P)   : MUX 22		Ref (D64p)
+n2xclk			(MC16	P)   : MUX 23		Ref (A5p)
+bit3			(MC4	FB)  : MUX 24		Ref (A8fb)
+bit8			(MC9	FB)  : MUX 25		Ref (A13fb)
+ac05			(MC22	P)   : MUX 26		Ref (C43p)
+bit4			(MC3	FB)  : MUX 28		Ref (A5fb)
+ar1			(MC11	P)   : MUX 30		Ref (C42p)
+bit5			(MC10	FB)  : MUX 31		Ref (A15fb)
+ac09			(MC18	P)   : MUX 32		Ref (C41p)
+bit6			(MC13	P)   : MUX 33		Ref (D55p)
+ioclr			(MC15	P)   : MUX 35		Ref (B20p)
+
+FanIn assignment for block B [22]
+{
+af1,ah1,ae1,
+bit2,bit7,bit8,bit4,bit6,bit5,bit3,
+clr_flag2,clr_flag1,
+enable_ds,
+irq.AP,irq,ioclr,
+n_t_13x,n_t_12x,n_t_16x,n_t_17x,n_t_15x,
+skp_strobe,
+}
+Multiplexer assignment for block B
+af1			(MC15	P)   : MUX 0		Ref (D60p)
+enable_ds		(MC13	P)   : MUX 2		Ref (C46p)
+n_t_13x			(MC17	P)   : MUX 4		Ref (D59p)
+irq.AP			(MC9	FB)  : MUX 5		Ref (B32fb)
+ah1			(MC12	P)   : MUX 6		Ref (D58p)
+n_t_12x			(MC16	P)   : MUX 8		Ref (D57p)
+n_t_16x			(MC4	FB)  : MUX 11		Ref (A11fb)
+clr_flag2		(MC22	P)   : MUX 13		Ref (B22p)
+skp_strobe		(MC20	P)   : MUX 15		Ref (B24p)
+bit2			(MC1	FB)  : MUX 16		Ref (A3fb)
+bit7			(MC6	FB)  : MUX 21		Ref (A14fb)
+irq			(MC8	P)   : MUX 22		Ref (B28p)
+bit8			(MC5	FB)  : MUX 23		Ref (A13fb)
+n_t_17x			(MC19	P)   : MUX 24		Ref (D63p)
+ae1			(MC14	P)   : MUX 26		Ref (D62p)
+clr_flag1		(MC21	P)   : MUX 27		Ref (B18p)
+bit4			(MC2	FB)  : MUX 28		Ref (A5fb)
+bit6			(MC10	P)   : MUX 29		Ref (D55p)
+bit5			(MC7	FB)  : MUX 31		Ref (A15fb)
+bit3			(MC3	FB)  : MUX 32		Ref (A8fb)
+ioclr			(MC11	P)   : MUX 35		Ref (B20p)
+n_t_15x			(MC18	P)   : MUX 36		Ref (D61p)
+
+FanIn assignment for block C [10]
+{
+af1,ae1,
+enable_ds,echo,
+load_buffer,line,
+n_t_13x,n_t_12x,n_t_17x,n_t_15x,
+}
+Multiplexer assignment for block C
+af1			(MC4	P)   : MUX 2		Ref (D60p)
+load_buffer		(MC9	P)   : MUX 3		Ref (C40p)
+n_t_13x			(MC6	P)   : MUX 4		Ref (D59p)
+n_t_12x			(MC5	P)   : MUX 8		Ref (D57p)
+enable_ds		(MC2	P)   : MUX 10		Ref (C46p)
+n_t_17x			(MC8	P)   : MUX 24		Ref (D63p)
+ae1			(MC3	P)   : MUX 26		Ref (D62p)
+n_t_15x			(MC7	P)   : MUX 28		Ref (D61p)
+line			(MC1	P)   : MUX 30		Ref (A16p)
+echo			(MC10	FB)  : MUX 36		Ref (GCLR)
+
+FanIn assignment for block D [18]
+{
+ah1,ac06,active,ar1,
+bit2,bit9,bit3,bit8,bit4,bit7,bit6,bit5,
+enable,
+ioclr,
+n_t_16x,n2xclk,
+stop,size,
+}
+Multiplexer assignment for block D
+bit2			(MC1	FB)  : MUX 2		Ref (A3fb)
+enable			(MC18	P)   : MUX 6		Ref (C47p)
+ah1			(MC14	P)   : MUX 10		Ref (D58p)
+stop			(MC15	P)   : MUX 11		Ref (A3p)
+ac06			(MC17	P)   : MUX 13		Ref (D52p)
+n_t_16x			(MC4	FB)  : MUX 19		Ref (A11fb)
+bit9			(MC9	P)   : MUX 21		Ref (D54p)
+active			(MC11	P)   : MUX 22		Ref (D64p)
+n2xclk			(MC13	P)   : MUX 23		Ref (A5p)
+bit3			(MC3	FB)  : MUX 24		Ref (A8fb)
+bit8			(MC5	FB)  : MUX 25		Ref (A13fb)
+bit4			(MC2	FB)  : MUX 26		Ref (A5fb)
+bit7			(MC6	FB)  : MUX 29		Ref (A14fb)
+ar1			(MC8	P)   : MUX 30		Ref (C42p)
+size			(MC16	P)   : MUX 31		Ref (D53p)
+bit6			(MC10	P)   : MUX 33		Ref (D55p)
+ioclr			(MC12	P)   : MUX 35		Ref (B20p)
+bit5			(MC7	FB)  : MUX 39		Ref (A15fb)
+
+Creating JEDEC file C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M707\TOPLD\M707.jed ...
+
+PLCC84 programmed logic:
+-----------------------------------
+!active.D = ((!active.Q & !stop)
+	# (!size & ah1 & !bit2.Q & !bit3.Q & !bit4.Q & !bit5.Q & !bit6.Q & !bit7.Q & !bit8.Q & !n_t_16x.Q)
+	# (!stop & ah1 & !bit2.Q & !bit3.Q & !bit4.Q & !bit5.Q & !bit6.Q & !bit7.Q & !bit8.Q & !n_t_16x.Q)
+	# (!active.Q & !size));
+
+bit1.D = bit2.Q;
+
+al1 = !bit9.Q;
+
+!ar1 = ((load_buffer & !enable_ds)
+	# (load_buffer & ae1 & af1 & n_t_12x & n_t_13x & n_t_15x & n_t_17x));
+
+bit2.D = bit3.Q;
+
+bit3.D = bit4.Q;
+
+bit4.D = bit5.Q;
+
+bit5.D = bit6.Q;
+
+bit7.D = bit8.Q;
+
+bit6.D = bit7.Q;
+
+bit8.D = bit9.Q;
+
+bit9.D = 0;
+
+bn1.D = !n_t_138x.Q;
+
+bp1 = !n_t_138x.Q;
+
+!irq.D = (ah1 & !bit2.Q & !bit3.Q & !bit4.Q & !bit5.Q & !bit6.Q & !bit7.Q & !bit8.Q);
+
+line.D = bit1.Q;
+
+n3v = 1;
+
+n_t_138x.D = n_t_166x.Q;
+
+!n_t_166x.D = (!active.Q & wait_low);
+
+!n_t_16x.D = (active.Q & n_t_16x.Q);
+
+n_t_63x = !n_t_166x.Q;
+
+!serial_out = (echo & line.Q);
+
+oactive.D = active.Q;
+
+!skip = ((!irq.Q & skp_strobe & !enable_ds)
+	# (!irq.Q & skp_strobe & ae1 & af1 & n_t_12x & n_t_13x & n_t_15x & n_t_17x));
+
+active.C = n2xclk;
+
+active.AR = ioclr;
+
+bit1.C = n_t_16x.Q;
+
+bit1.AR = ioclr;
+
+bit1.AP = (ac11 & !ar1);
+
+bit2.C = n_t_16x.Q;
+
+bit2.AR = ioclr;
+
+bit2.AP = (ac10 & !ar1);
+
+bit3.C = n_t_16x.Q;
+
+bit3.AR = ioclr;
+
+bit3.AP = (ac09 & !ar1);
+
+bit4.C = n_t_16x.Q;
+
+bit4.AR = ioclr;
+
+bit4.AP = (ac08 & !ar1);
+
+bit5.C = n_t_16x.Q;
+
+bit5.AR = ioclr;
+
+bit5.AP = (ac07 & !ar1);
+
+bit7.C = n_t_16x.Q;
+
+bit7.AR = ioclr;
+
+bit7.AP = (ac05 & !ar1);
+
+bit6.C = n_t_16x.Q;
+
+bit6.AR = ioclr;
+
+bit6.AP = (ac06 & !ar1);
+
+bit8.C = n_t_16x.Q;
+
+bit8.AR = ioclr;
+
+bit8.AP = (ac04 & !ar1);
+
+bit9.C = n_t_16x.Q;
+
+bit9.AR = ioclr;
+
+bit9.AP = (!ar1 & enable);
+
+bn1.C = n2xclk;
+
+bn1.AR = !n_t_16x.Q;
+
+irq.C = n_t_16x.Q;
+
+irq.AP = ((clr_flag1 & !enable_ds)
+	# !clr_flag2
+	# ioclr
+	# (ae1 & af1 & clr_flag1 & n_t_12x & n_t_13x & n_t_15x & n_t_17x));
+
+line.C = n_t_16x.Q;
+
+line.AR = (active.Q & !oactive.Q);
+
+line.AP = !active.Q;
+
+n_t_138x.C = n2xclk;
+
+n_t_138x.AP = !n_t_16x.Q;
+
+n_t_166x.C = n2xclk;
+
+n_t_166x.AP = !n_t_16x.Q;
+
+n_t_16x.C = n2xclk;
+
+n_t_16x.AP = ioclr;
+
+oactive.C = !n2xclk;
+
+
+PLCC84 Pin/Node Placement:
+------------------------------------
+Pin 1  = echo;
+Pin 4  = line; /* MC 16 */
+Pin 11 = wait_low; /* MC 10 */ 
+Pin 14 = TDI; /* MC  8 */
+Pin 15 = n_t_63x; /* MC  7 */
+Pin 16 = bp1; /* MC  6 */
+Pin 17 = n2xclk; /* MC  5 */
+Pin 18 = bn1; /* MC  4 */
+Pin 20 = stop; /* MC  3 */
+Pin 23 = TMS; /* MC 32 */ 
+Pin 28 = irq; /* MC 28 */ 
+Pin 29 = n3v; /* MC 27 */ 
+Pin 30 = skip; /* MC 26 */ 
+Pin 33 = skp_strobe; /* MC 24 */ 
+Pin 35 = clr_flag2; /* MC 22 */ 
+Pin 37 = ioclr; /* MC 20 */ 
+Pin 40 = clr_flag1; /* MC 18 */ 
+Pin 48 = serial_out; /* MC 36 */ 
+Pin 49 = ac11; /* MC 37 */ 
+Pin 50 = ac08; /* MC 38 */ 
+Pin 51 = ac10; /* MC 39 */ 
+Pin 52 = load_buffer; /* MC 40 */ 
+Pin 54 = ac09; /* MC 41 */ 
+Pin 55 = ar1; /* MC 42 */ 
+Pin 56 = ac05; /* MC 43 */ 
+Pin 58 = ac04; /* MC 45 */ 
+Pin 60 = enable_ds; /* MC 46 */ 
+Pin 61 = enable; /* MC 47 */ 
+Pin 62 = TCK; /* MC 48 */ 
+Pin 64 = ac07; /* MC 50 */ 
+Pin 65 = al1; /* MC 51 */ 
+Pin 67 = ac06; /* MC 52 */ 
+Pin 68 = size; /* MC 53 */ 
+Pin 69 = bit9; /* MC 54 */ 
+Pin 70 = bit6; /* MC 55 */ 
+Pin 71 = TDO; /* MC 56 */ 
+Pin 73 = n_t_12x; /* MC 57 */ 
+Pin 74 = ah1; /* MC 58 */ 
+Pin 75 = n_t_13x; /* MC 59 */ 
+Pin 76 = af1; /* MC 60 */ 
+Pin 77 = n_t_15x; /* MC 61 */ 
+Pin 79 = ae1; /* MC 62 */ 
+Pin 80 = n_t_17x; /* MC 63 */ 
+Pin 81 = active; /* MC 64 */ 
+PINNODE 602 = oactive; /* MC 2 Feedback */
+PINNODE 603 = bit2; /* MC 3 Feedback */
+PINNODE 605 = bit4; /* MC 5 Feedback */
+PINNODE 608 = bit3; /* MC 8 Feedback */
+PINNODE 609 = n_t_166x; /* MC 9 Feedback */
+PINNODE 610 = bit1; /* MC 10 Feedback */
+PINNODE 611 = n_t_16x; /* MC 11 Feedback */
+PINNODE 612 = n_t_138x; /* MC 12 Feedback */
+PINNODE 613 = bit8; /* MC 13 Feedback */
+PINNODE 614 = bit7; /* MC 14 Feedback */
+PINNODE 615 = bit5; /* MC 15 Feedback */
+PINNODE 632 = irq.AP; /* MC 32 Feedback */
+
+** Resource Usage **
+
+
+DCERP Field = Summary of Allocations.
+|||||
+|||||_Preset [p,-]       ==  p = PT preset, - No Preset.
+||||
+||||__Reset [g,r,-]      ==  g= Global AR, r = PT reset, - No reset.
+|||
+|||___Clock Enable [e,-] ==  e = Product Term, - always enabled, - none.
+||
+||____Clock [c,g,-],     ==  c = Product term, g = Global term, - No Clock.
+|
+|_____Type [C,D,L,T],    ==  Register type C= combin, D=dff, L=latch, T=tff.
+
+For input only = INPUT.
+
+MCell Pin# Oe   PinDrive    DCERP  FBDrive  DCERP  Foldback  CascadeOut     TotPT output_slew
+MC1   22        --                 --              --        --             0     slow
+MC2   21        --                 oactive  Dc---  --        --             2     slow
+MC3   20   --   stop        INPUT  bit2     Dc-rp  --        --             4     slow
+MC4   18   on   bn1         Dc-r-  --              --        --             3     slow
+MC5   17   --   n2xclk      INPUT  bit4     Dc-rp  --        --             4     slow
+MC6   16   on   bp1         C----  --              --        --             1     slow
+MC7   15   on   n_t_63x     C----  --              --        --             1     slow
+MC8   14   --   TDI         INPUT  bit3     Dc-rp  --        --             4     slow
+MC9   12        --                 n_t_166x Dc--p  --        --             3     slow
+MC10  11   --   wait_low    INPUT  bit1     Dc-rp  --        --             4     slow
+MC11  10        --                 n_t_16x  Dc--p  --        --             3     slow
+MC12  9         --                 n_t_138x Dc--p  --        --             3     slow
+MC13  8         --                 bit8     Dc-rp  --        --             4     slow
+MC14  6         --                 bit7     Dc-rp  --        --             4     slow
+MC15  5         --                 bit5     Dc-rp  --        --             4     slow
+MC16  4    on   line        Dc-rp  --              --        --             4     slow
+MC17  41        --                 --              --        --             0     slow
+MC18  40   --   clr_flag1   INPUT  --              --        --             0     slow
+MC19  39        --                 --              --        --             0     slow
+MC20  37   --   ioclr       INPUT  --              --        --             0     slow
+MC21  36        --                 --              --        --             0     slow
+MC22  35   --   clr_flag2   INPUT  --              --        --             0     slow
+MC23  34        --                 --              --        --             0     slow
+MC24  33   --   skp_strobe  INPUT  --              --        --             0     slow
+MC25  31        --                 --              --        --             0     slow
+MC26  30   on   skip        C----  --              --        --             2     slow
+MC27  29   on   n3v         C----  --              --        --             0     slow
+MC28  28   on   irq         Dc--p  --              --        --             3     slow
+MC29  27        --                 --              --        --             0     slow
+MC30  25        --                 --              --        --             0     slow
+MC31  24        --                 --              --        --             0     slow
+MC32  23   --   TMS         INPUT  irq.AP   C----  --        --             4     slow
+MC33  44        --                 --              --        --             0     slow
+MC34  45        --                 --              --        --             0     slow
+MC35  46        --                 --              --        --             0     slow
+MC36  48   on   serial_out  C----  --              --        --             1     slow
+MC37  49   --   ac11        INPUT  --              --        --             0     slow
+MC38  50   --   ac08        INPUT  --              --        --             0     slow
+MC39  51   --   ac10        INPUT  --              --        --             0     slow
+MC40  52   --   load_buffer INPUT  --              --        --             0     slow
+MC41  54   --   ac09        INPUT  --              --        --             0     slow
+MC42  55   on   ar1         C----  --              --        --             2     slow
+MC43  56   --   ac05        INPUT  --              --        --             0     slow
+MC44  57        --                 --              --        --             0     slow
+MC45  58   --   ac04        INPUT  --              --        --             0     slow
+MC46  60   --   enable_ds   INPUT  --              --        --             0     slow
+MC47  61   --   enable      INPUT  --              --        --             0     slow
+MC48  62   --   TCK         INPUT  --              --        --             0     slow
+MC49  63        --                 --              --        --             0     slow
+MC50  64   --   ac07        INPUT  --              --        --             0     slow
+MC51  65   on   al1         C----  --              --        --             1     slow
+MC52  67   --   ac06        INPUT  --              --        --             0     slow
+MC53  68   --   size        INPUT  --              --        --             0     slow
+MC54  69   on   bit9        Dc-rp  --              --        --             3     slow
+MC55  70   on   bit6        Dc-rp  --              --        --             4     slow
+MC56  71   --   TDO         INPUT  --              --        --             0     slow
+MC57  73   --   n_t_12x     INPUT  --              --        --             0     slow
+MC58  74   --   ah1         INPUT  --              --        --             0     slow
+MC59  75   --   n_t_13x     INPUT  --              --        --             0     slow
+MC60  76   --   af1         INPUT  --              --        --             0     slow
+MC61  77   --   n_t_15x     INPUT  --              --        --             0     slow
+MC62  79   --   ae1         INPUT  --              --        --             0     slow
+MC63  80   --   n_t_17x     INPUT  --              --        -> active      4     slow
+MC64  81   on   active      Dc-r-  --              --        --             2     slow
+MC0   2         --                 --              --        --             0     slow
+MC0   1         echo        INPUT  --              --        --             0     slow
+MC0   84        --                 --              --        --             0     slow
+MC0   83        --                 --              --        --             0     slow
+
+Logic Array Block	Logic Cells	I/O Pins	Foldbacks	TotalPT		FanIN	Cascades
+A: LC1	- LC16		15/16(93%)	8/16(50%)	0/16(0%)	48/80(60%)	(24)	0
+B: LC17	- LC32		4/16(25%)	8/16(50%)	0/16(0%)	9/80(11%)	(22)	0
+C: LC33	- LC48		2/16(12%)	12/16(75%)	0/16(0%)	3/80(3%)	(10)	0
+D: LC49	- LC64		4/16(25%)	15/16(93%)	0/16(0%)	14/80(17%)	(18)	1
+
+Total dedicated input used:	1/4 	(25%)
+Total I/O pins used		43/64 	(67%)
+Total Logic cells used 		26/64 	(40%)
+Total Flip-Flop used 		17/64 	(26%)
+Total Foldback logic used 	0/64 	(0%)
+Total Nodes+FB/MCells 		25/64 	(39%)
+Total cascade used 		1
+Total input pins 		31
+Total output pins 		13
+Total Pts 			74
+Creating pla file C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M707\TOPLD\M707.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+
+----------------  End fitter, Design FITS
+$Device PLCC84 fits 
+FIT1504 completed in 0.00 seconds

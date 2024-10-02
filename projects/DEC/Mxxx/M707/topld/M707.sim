@@ -1,0 +1,390 @@
+%SIGNAL
+PIN  58 =  ac04 
+PIN  56 =  ac05 
+PIN  67 =  ac06 
+PIN  64 =  ac07 
+PIN  50 =  ac08 
+PIN  54 =  ac09 
+PIN  51 =  ac10 
+PIN  49 =  ac11 
+PIN  81 =  active 
+PIN  79 =  ae1 
+PIN  76 =  af1 
+PIN  74 =  ah1 
+PIN  65 =  al1 
+PIN  55 =  ar1 
+PIN  85 =  bit1 
+PIN  92 =  bit2 
+PIN  93 =  bit3 
+PIN  88 =  bit4 
+PIN  89 =  bit5 
+PIN  70 =  bit6 
+PIN  87 =  bit7 
+PIN  86 =  bit8 
+PIN  69 =  bit9 
+PIN  18 =  bn1 
+PIN  16 =  bp1 
+PIN  40 =  clr_flag1 
+PIN  35 =  clr_flag2 
+PIN   1 =  echo 
+PIN  61 =  enable 
+PIN  60 =  enable_ds 
+PIN  37 =  ioclr 
+PIN  28 =  irq 
+PIN   4 =  line 
+PIN  52 =  load_buffer 
+PIN  17 =  n2xclk 
+PIN  29 =  n3v 
+PIN  73 =  n_t_12x 
+PIN  94 =  n_t_138x 
+PIN  75 =  n_t_13x 
+PIN  77 =  n_t_15x 
+PIN  90 =  n_t_166x 
+PIN  91 =  n_t_16x 
+PIN  80 =  n_t_17x 
+PIN  15 =  n_t_63x 
+PIN  95 =  oactive 
+PIN  48 =  serial_out 
+PIN  68 =  size 
+PIN  30 =  skip 
+PIN  33 =  skp_strobe 
+PIN  20 =  stop 
+PIN  11 =  wait_low 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!active.d  =>
+    ah1 & !bit2 & !bit3 & !bit4 & !bit5 & !bit6 & !bit7 & !bit8 & !n_t_16x & !stop
+  # ah1 & !bit2 & !bit3 & !bit4 & !bit5 & !bit6 & !bit7 & !bit8 & !n_t_16x & !size
+  # !active & !stop
+  # !active & !size
+
+active.ar  =>
+    ioclr
+
+active.ck  =>
+    n2xclk
+
+!al1 =>
+    bit9
+
+!ar1 =>
+    ae1 & af1 & load_buffer & n_t_12x & n_t_13x & n_t_15x & n_t_17x
+  # !enable_ds & load_buffer
+
+!bit1.d  =>
+    !bit2
+
+bit1.ap  =>
+    ac11 & !ar1
+
+bit1.ar  =>
+    ioclr
+
+bit1.ck  =>
+    n_t_16x
+
+!bit2.d  =>
+    !bit3
+
+bit2.ap  =>
+    ac10 & !ar1
+
+bit2.ar  =>
+    ioclr
+
+bit2.ck  =>
+    n_t_16x
+
+!bit3.d  =>
+    !bit4
+
+bit3.ap  =>
+    ac09 & !ar1
+
+bit3.ar  =>
+    ioclr
+
+bit3.ck  =>
+    n_t_16x
+
+!bit4.d  =>
+    !bit5
+
+bit4.ap  =>
+    ac08 & !ar1
+
+bit4.ar  =>
+    ioclr
+
+bit4.ck  =>
+    n_t_16x
+
+!bit5.d  =>
+    !bit6
+
+bit5.ap  =>
+    ac07 & !ar1
+
+bit5.ar  =>
+    ioclr
+
+bit5.ck  =>
+    n_t_16x
+
+!bit6.d  =>
+    !bit7
+
+bit6.ap  =>
+    ac06 & !ar1
+
+bit6.ar  =>
+    ioclr
+
+bit6.ck  =>
+    n_t_16x
+
+!bit7.d  =>
+    !bit8
+
+bit7.ap  =>
+    ac05 & !ar1
+
+bit7.ar  =>
+    ioclr
+
+bit7.ck  =>
+    n_t_16x
+
+!bit8.d  =>
+    !bit9
+
+bit8.ap  =>
+    ac04 & !ar1
+
+bit8.ar  =>
+    ioclr
+
+bit8.ck  =>
+    n_t_16x
+
+!bit9.d  =>
+    1 
+
+bit9.ap  =>
+    !ar1 & enable
+
+bit9.ar  =>
+    ioclr
+
+bit9.ck  =>
+    n_t_16x
+
+!bn1.d  =>
+    n_t_138x
+
+bn1.ar  =>
+    !n_t_16x
+
+bn1.ck  =>
+    n2xclk
+
+!bp1 =>
+    n_t_138x
+
+ioclr_low =>
+    !ioclr
+
+!irq.d  =>
+    ah1 & !bit2 & !bit3 & !bit4 & !bit5 & !bit6 & !bit7 & !bit8
+
+irq.ap  =>
+    ae1 & af1 & clr_flag1 & n_t_12x & n_t_13x & n_t_15x & n_t_17x
+  # clr_flag1 & !enable_ds
+  # !clr_flag2
+  # ioclr
+
+irq.ck  =>
+    n_t_16x
+
+!line.d  =>
+    !bit1
+
+line.ap  =>
+    !active
+
+line.ar  =>
+    active & !oactive
+
+line.ck  =>
+    n_t_16x
+
+!n3v =>
+    0 
+
+n_t_10x =>
+    ah1 & !bit2 & !bit3 & !bit4 & !bit5 & !bit6 & !bit7 & !bit8 & !n_t_16x
+  # !active
+
+n_t_11x =>
+    !active
+  # !n_t_16x
+
+n_t_132x =>
+    !clr_flag1
+  # enable_ds & !n_t_17x
+  # !ae1 & enable_ds
+  # enable_ds & !n_t_15x
+  # !af1 & enable_ds
+  # enable_ds & !n_t_13x
+  # enable_ds & !n_t_12x
+
+!n_t_138x.d  =>
+    !n_t_166x
+
+n_t_138x.ap  =>
+    !n_t_16x
+
+n_t_138x.ck  =>
+    n2xclk
+
+n_t_161x =>
+    !wait_low
+  # active
+
+!n_t_166x.d  =>
+    !active & wait_low
+
+n_t_166x.ap  =>
+    !n_t_16x
+
+n_t_166x.ck  =>
+    n2xclk
+
+!n_t_167x =>
+    !clr_flag1 & clr_flag2 & !ioclr
+  # clr_flag2 & enable_ds & !ioclr & !n_t_17x
+  # !ae1 & clr_flag2 & enable_ds & !ioclr
+  # clr_flag2 & enable_ds & !ioclr & !n_t_15x
+  # !af1 & clr_flag2 & enable_ds & !ioclr
+  # clr_flag2 & enable_ds & !ioclr & !n_t_12x
+  # clr_flag2 & enable_ds & !ioclr & !n_t_13x
+
+!n_t_16x.d  =>
+    active & n_t_16x
+
+n_t_16x.ap  =>
+    ioclr
+
+n_t_16x.ck  =>
+    n2xclk
+
+n_t_20x =>
+    !enable
+  # ar1
+
+n_t_28x =>
+    active & n_t_16x
+  # active & bit6
+  # active & bit7
+  # active & bit5
+  # active & bit4
+  # active & bit3
+  # active & bit2
+  # active & !ah1
+  # active & bit8
+  # size & stop
+
+n_t_378x =>
+    !ac05
+  # ar1
+
+n_t_37x =>
+    ar1
+  # !ac10
+
+n_t_381x =>
+    ar1
+  # !ac07
+
+n_t_39x =>
+    n_t_16x
+  # bit6
+  # bit7
+  # bit5
+  # bit4
+  # bit3
+  # bit2
+  # !ah1
+  # bit8
+
+n_t_3x =>
+    ar1
+  # !ac04
+
+n_t_42x =>
+    !ac08
+  # ar1
+
+!n_t_460x =>
+    ah1 & !bit2 & !bit3 & !bit4 & !bit5 & !bit6 & !bit7 & !bit8
+
+!n_t_4x =>
+    !active
+  # oactive
+
+n_t_52x =>
+    ar1
+  # !ac09
+
+n_t_53x =>
+    !ac06
+  # ar1
+
+n_t_54x =>
+    ar1
+  # !ac11
+
+!n_t_5x =>
+    n_t_16x
+
+n_t_62x =>
+    !stop
+  # !size
+
+!n_t_63x =>
+    n_t_166x
+
+n_t_9x =>
+    !n_t_17x
+  # !ae1
+  # !n_t_15x
+  # !af1
+  # !n_t_13x
+  # !n_t_12x
+
+!oactive.d  =>
+    !active
+
+oactive.ck  =>
+    !n2xclk
+
+selected =>
+    ae1 & af1 & n_t_12x & n_t_13x & n_t_15x & n_t_17x
+  # !enable_ds
+
+!serial_out =>
+    echo & line
+
+!skip =>
+    ae1 & af1 & !irq & n_t_12x & n_t_13x & n_t_15x & n_t_17x & skp_strobe
+  # !enable_ds & !irq & skp_strobe
+
+tx =>
+    !echo
+  # !line
+
+%END

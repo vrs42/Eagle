@@ -1,0 +1,325 @@
+{COMPONENT C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M707\TOPLD\M707.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Tue Dec 18 13:41:41 2018 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P ECHO {Pt "INPUT"}{Lq 0}{Ploc 100 660}}
+   {P LINE {Pt "INPUT"}{Lq 0}{Ploc 100 640}}
+   {P WAIT_LOW {Pt "INPUT"}{Lq 0}{Ploc 100 620}}
+   {P N2XCLK {Pt "INPUT"}{Lq 0}{Ploc 100 600}}
+   {P BN1 {Pt "INPUT"}{Lq 0}{Ploc 100 580}}
+   {P STOP {Pt "INPUT"}{Lq 0}{Ploc 100 560}}
+   {P IRQ {Pt "INPUT"}{Lq 0}{Ploc 100 540}}
+   {P SKP_STRO {Pt "INPUT"}{Lq 0}{Ploc 100 520}}
+   {P CLR_FL2 {Pt "INPUT"}{Lq 0}{Ploc 100 500}}
+   {P IOCLR {Pt "INPUT"}{Lq 0}{Ploc 100 480}}
+   {P CLR_FL1 {Pt "INPUT"}{Lq 0}{Ploc 100 460}}
+   {P AC11 {Pt "INPUT"}{Lq 0}{Ploc 100 440}}
+   {P AC08 {Pt "INPUT"}{Lq 0}{Ploc 100 420}}
+   {P AC10 {Pt "INPUT"}{Lq 0}{Ploc 100 400}}
+   {P LOAD_BUF {Pt "INPUT"}{Lq 0}{Ploc 100 380}}
+   {P AC09 {Pt "INPUT"}{Lq 0}{Ploc 100 360}}
+   {P AC05 {Pt "INPUT"}{Lq 0}{Ploc 100 340}}
+   {P AC04 {Pt "INPUT"}{Lq 0}{Ploc 100 320}}
+   {P ENABLE_D {Pt "INPUT"}{Lq 0}{Ploc 100 300}}
+   {P ENABLE {Pt "INPUT"}{Lq 0}{Ploc 100 280}}
+   {P AC07 {Pt "INPUT"}{Lq 0}{Ploc 100 260}}
+   {P AC06 {Pt "INPUT"}{Lq 0}{Ploc 100 240}}
+   {P SIZE {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
+   {P BIT9 {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P BIT6 {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P N_T_12X {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P AH1 {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P N_T_13X {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P AF1 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P N_T_15X {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P AE1 {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P N_T_17X {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P ACTIVE {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P N_T_63X {Pt "I/O"}{Lq 0}{Ploc 360 20}}
+   {P BP1 {Pt "I/O"}{Lq 0}{Ploc 360 40}}
+   {P N3V {Pt "I/O"}{Lq 0}{Ploc 360 60}}
+   {P SKIP {Pt "I/O"}{Lq 0}{Ploc 360 80}}
+   {P SERIAL_O {Pt "I/O"}{Lq 0}{Ploc 360 100}}
+   {P AR1 {Pt "I/O"}{Lq 0}{Ploc 360 120}}
+   {P AL1 {Pt "I/O"}{Lq 0}{Ploc 360 140}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 230 690}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 670}
+   {Pnl 120 650}
+   {Pnl 120 630}
+   {Pnl 120 610}
+   {Pnl 120 590}
+   {Pnl 120 570}
+   {Pnl 120 550}
+   {Pnl 120 530}
+   {Pnl 120 510}
+   {Pnl 120 490}
+   {Pnl 120 470}
+   {Pnl 120 450}
+   {Pnl 120 430}
+   {Pnl 120 410}
+   {Pnl 120 390}
+   {Pnl 120 370}
+   {Pnl 120 350}
+   {Pnl 120 330}
+   {Pnl 120 310}
+   {Pnl 120 290}
+   {Pnl 120 270}
+   {Pnl 120 250}
+   {Pnl 120 230}
+   {Pnl 120 210}
+   {Pnl 120 190}
+   {Pnl 120 170}
+   {Pnl 120 150}
+   {Pnl 120 130}
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+   {Pnl 340 30}
+   {Pnl 340 50}
+   {Pnl 340 70}
+   {Pnl 340 90}
+   {Pnl 340 110}
+   {Pnl 340 130}
+   {Pnl 340 150}
+
+   {Sd A 1 4 11 17 18 20 28 33 35 37 40 49 50 51 52 54 56 58 60 61 64 67 68 69 70 73 74 75 76 77 79 80 81 15 16 29 30 48 55 65}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 680 330 0}
+   {L 130 660 100 660}
+   {L 130 640 100 640}
+   {L 130 620 100 620}
+   {L 130 600 100 600}
+   {L 130 580 100 580}
+   {L 130 560 100 560}
+   {L 130 540 100 540}
+   {L 130 520 100 520}
+   {L 130 500 100 500}
+   {L 130 480 100 480}
+   {L 130 460 100 460}
+   {L 130 440 100 440}
+   {L 130 420 100 420}
+   {L 130 400 100 400}
+   {L 130 380 100 380}
+   {L 130 360 100 360}
+   {L 130 340 100 340}
+   {L 130 320 100 320}
+   {L 130 300 100 300}
+   {L 130 280 100 280}
+   {L 130 260 100 260}
+   {L 130 240 100 240}
+   {L 130 220 100 220}
+   {L 130 200 100 200}
+   {L 130 180 100 180}
+   {L 130 160 100 160}
+   {L 130 140 100 140}
+   {L 130 120 100 120}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   {L 330 20 360 20}
+   {L 330 40 360 40}
+   {L 330 60 360 60}
+   {L 330 80 360 80}
+   {L 330 100 360 100}
+   {L 330 120 360 120}
+   {L 330 140 360 140}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "ECHO" 140 660}
+   {T "LINE" 140 640}
+   {T "WAIT_LOW" 140 620}
+   {T "N2XCLK" 140 600}
+   {T "BN1" 140 580}
+   {T "STOP" 140 560}
+   {T "IRQ" 140 540}
+   {T "SKP_STRO" 140 520}
+   {T "CLR_FL2" 140 500}
+   {T "IOCLR" 140 480}
+   {T "CLR_FL1" 140 460}
+   {T "AC11" 140 440}
+   {T "AC08" 140 420}
+   {T "AC10" 140 400}
+   {T "LOAD_BUF" 140 380}
+   {T "AC09" 140 360}
+   {T "AC05" 140 340}
+   {T "AC04" 140 320}
+   {T "ENABLE_D" 140 300}
+   {T "ENABLE" 140 280}
+   {T "AC07" 140 260}
+   {T "AC06" 140 240}
+   {T "SIZE" 140 220}
+   {T "BIT9" 140 200}
+   {T "BIT6" 140 180}
+   {T "N_T_12X" 140 160}
+   {T "AH1" 140 140}
+   {T "N_T_13X" 140 120}
+   {T "AF1" 140 100}
+   {T "N_T_15X" 140 80}
+   {T "AE1" 140 60}
+   {T "N_T_17X" 140 40}
+   {T "ACTIVE" 140 20}
+   [Tj "RC"]
+   {T "N_T_63X" 320 20}
+   {T "BP1" 320 40}
+   {T "N3V" 320 60}
+   {T "SKIP" 320 80}
+   {T "SERIAL_O" 320 100}
+   {T "AR1" 320 120}
+   {T "AL1" 320 140}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "F1504ISPPLCC84" 230 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\USERS\VINCE\DOCUMENTS\EAGLE\PROJECTS\DEC\MXXX\M707\TOPLD\M707 230 680}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N ECHO
+   }
+   {N LINE
+   }
+   {N WAIT_LOW
+   }
+   {N N2XCLK
+   }
+   {N BN1
+   }
+   {N STOP
+   }
+   {N IRQ
+   }
+   {N SKP_STRO
+   }
+   {N CLR_FL2
+   }
+   {N IOCLR
+   }
+   {N CLR_FL1
+   }
+   {N AC11
+   }
+   {N AC08
+   }
+   {N AC10
+   }
+   {N LOAD_BUF
+   }
+   {N AC09
+   }
+   {N AC05
+   }
+   {N AC04
+   }
+   {N ENABLE_D
+   }
+   {N ENABLE
+   }
+   {N AC07
+   }
+   {N AC06
+   }
+   {N SIZE
+   }
+   {N BIT9
+   }
+   {N BIT6
+   }
+   {N N_T_12X
+   }
+   {N AH1
+   }
+   {N N_T_13X
+   }
+   {N AF1
+   }
+   {N N_T_15X
+   }
+   {N AE1
+   }
+   {N N_T_17X
+   }
+   {N ACTIVE
+   }
+   {N N_T_63X
+   }
+   {N BP1
+   }
+   {N N3V
+   }
+   {N SKIP
+   }
+   {N SERIAL_O
+   }
+   {N AR1
+   }
+   {N AL1
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}
