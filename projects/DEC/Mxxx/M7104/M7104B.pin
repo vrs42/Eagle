@@ -1,0 +1,74 @@
+H        A1       P          pas      BRK_RQ
+         A2       P          pas      MAIN
+         B1       P          pas      !AC7
+         B2       P          pas      B_BRK_RQ
+         C1       P          pas      DATA_CLK_OK
+         C2       P          pas      BTP2
+         D1       P          pas      CLR_ALL
+         D2       P          pas      !WT_BUFF_DATA
+         E1       P          pas      !DSK_FILE_RDY
+         E2       P          pas      DB_CONT4
+         F1       P          pas      RK_DATA11
+         F2       P          pas               ***   unused    ***
+         H1       P          pas      !WRT_BRK
+         H2       P          pas               ***   unused    ***
+         J1       P          pas      !MAK
+         J2       P          pas               ***   unused    ***
+         K1       P          pas      BTP3_OK
+         K2       P          pas               ***   unused    ***
+         L1       P          pas      DATA_STATE
+         L2       P          pas      !RD_BRK
+         M1       P          pas      12TH_BIT_OK
+         M2       P          pas      WRITE
+         N1       P          pas      DATA_ENABLE
+         N2       P          pas      6RK7_OK
+         P1       P          pas      !LO_MAIN_SHFT
+         P2       P          pas      !BRK_DIR
+         R1       P          pas      6RK6
+         R2       P          pas      !SHFT_WRT_BUFF
+         S1       P          pas      6RK3_OK
+         S2       P          pas      !6RK3_OK
+         T1       P          pas      MAIN_PL
+         T2       P          pas      BDATA1
+         U1       P          pas      !RDY_S/R/W
+         U2       P          pas      SEEK_FAIL
+         V1       P          pas      !DB_CONT1
+         V2       P          pas      LO_MAIN_DATA
+
+J        A1       P          pas      DEVICE_RK
+         A2       P          pas      BDATA10
+         B1       P          pas      ENAB_INT
+         B2       P          pas      LD_DISK_ADDRS
+         C1       P          pas      6RK7
+         C2       P          pas      !CLR_DRIVE_CMD
+         D1       P          pas      !ERROR_CLR
+         D2       P          pas      !DSK_WRT_STATUS
+         E1       P          pas      !MAIN
+         E2       P          pas      !WRT_CMD
+         F1       P          pas      !SECTOR_SEEK
+         F2       P          pas      !NOT_EQUAL
+         H1       P          pas      !BDATA11
+         H2       P          pas      DRIVE_STATUS_BAD
+         J1       P          pas      !SET_IDLE_PL
+         J2       P          pas      !END_STATE
+         K1       P          pas      !DSK_CAPACITY_EX
+         K2       P          pas      DRV_REVO
+         L1       P          pas      RDY_S/R/W_SLO
+         L2       P          pas      IDLE
+         M1       P          pas      HI_RD_CLK
+         M2       P          pas      !DATA_STATE
+         N1       P          pas      !IDLE
+         N2       P          pas      LAST_WORD_PL
+         P1       P          pas      LD_CMD_REG
+         P2       P          pas      !BDATA10
+         R1       P          pas      BDATA11
+         R2       P          pas      HI_DATA_IN
+         S1       P          pas      ENAB_SEEK_DONE
+         S2       P          pas      !6RK4
+         T1       P          pas      BTP3
+         T2       P          pas               ***   unused    ***
+         U1       P          pas      !BTP3
+         U2       P          pas      !CLR_ALL
+         V1       P          pas               ***   unused    ***
+         V2       P          pas               ***   unused    ***
+
