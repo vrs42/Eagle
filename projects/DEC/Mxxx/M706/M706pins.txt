@@ -1,0 +1,531 @@
+Pinlist
+
+Exported from M706O.sch at 3/18/2020 11:31:09 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C1       1        1          pas      VCC
+         2        2          pas      GND
+
+C2       1        1          pas      VCC
+         2        2          pas      GND
+
+C3       1        1          pas      VCC
+         2        2          pas      GND
+
+C4       1        1          pas      VCC
+         2        2          pas      GND
+
+C5       1        1          pas      VCC
+         2        2          pas      GND
+
+C6       1        1          pas      VCC
+         2        2          pas      GND
+
+C7       1        1          pas      VCC
+         2        2          pas      GND
+
+C8       1        1          pas      VCC
+         2        2          pas      GND
+
+C9       1        1          pas      VCC
+         2        2          pas      GND
+
+C10      1        1          pas      VCC
+         2        2          pas      GND
+
+C11      1        1          pas      VCC
+         2        2          pas      GND
+
+C12      1        1          pas      VCC
+         2        2          pas      GND
+
+C13      1        1          pas      VCC
+         2        2          pas      GND
+
+C14      1        1          pas      VCC
+         2        2          pas      GND
+
+C15      1        1          pas      VCC
+         2        2          pas      GND
+
+C16      1        1          pas      VCC
+         2        2          pas      GND
+
+C17      1        1          pas      VCC
+         2        2          pas      GND
+
+C18      1        1          pas      VCC
+         2        2          pas      GND
+
+C19      1        1          pas      VCC
+         2        2          pas      GND
+
+C20      1        1          pas      VCC
+         2        2          pas      GND
+
+C21      1        1          pas      VCC
+         2        2          pas      GND
+
+C22      1        1          pas      VCC
+         2        2          pas      GND
+
+C23      1        1          pas      VCC
+         2        2          pas      GND
+
+C24      1        1          pas      N$48
+         2        2          pas      N$53
+
+C25      1        1          pas      READER_ENABLE
+         2        2          pas      GND
+
+C26      1        1          pas      VCC
+         2        2          pas      GND
+
+C27      1        1          pas      +3V3
+         2        2          pas      GND
+
+C28      1        1          pas      N$58
+         2        2          pas      N$49
+
+D1       A        A          pas      GND
+         C        C          pas      SERIAL_IN
+
+D2       A        A          pas      SERIAL_IN
+         C        C          pas      VCC
+
+D3       A        A          pas      READER_ENABLE
+         C        C          pas      GND
+
+D4       A        A          pas      N$56
+         C        C          pas      GND
+
+D5       A        A          pas      N$54
+         C        C          pas      N$55
+
+D6       A        A          pas      GND
+         C        C          pas      N$53
+
+D7       A        A          pas      N$55
+         C        C          pas      N$56
+
+D8       A        A          pas      GND
+         C        C          pas      N$49
+
+E1       1        I0         in       N$15
+         2        I1         in       N$21
+         3        I2         in       N$20
+         4        I3         in       N$19
+         5        I4         in       N$18
+         6        I5         in       N$17
+         7        GND        pwr      GND
+         8        O          out      N$10
+         11       I6         in       +3V3
+         12       I7         in       +3V3
+         14       VCC        pwr      VCC
+
+E2       1        CLR        in       +3V3
+         2        D          in       N$27
+         3        CLK        in       CLOCK8_BAUD
+         4        PRE        in       +3V3
+         5        Q          out      2^0
+         6        !Q         out      N$33
+         7        GND        pwr      GND
+         8        !Q         out      !IRQ
+         9        Q          out      FLAG
+         10       PRE        in       +3V3
+         11       CLK        in       SHIFT
+         12       D          in       SET_FLAG
+         13       CLR        in       N$11
+         14       VCC        pwr      VCC
+
+E3       1        I0         in       N$22
+         2        I1         in       N$22
+         3        O          out      BUFFER_STROBE
+         4        I0         in       N$12
+         5        I1         in       N$12
+         6        O          out      N$11
+         7        GND        pwr      GND
+         8        O          out      N$23
+         9        I0         in       N$16
+         10       I1         in       N$10
+         11       O          out      N$22
+         12       I0         in       N$23
+         13       I1         in       READ_BUFFER
+         14       VCC        pwr      VCC
+
+E4       1        I0         in       N$6
+         2        I1         in       BUFFER_STROBE
+         3        O          out      BIT4
+         4        I0         in       N$9
+         5        I1         in       BUFFER_STROBE
+         6        O          out      BIT2
+         7        GND        pwr      GND
+         8        O          out      BIT6
+         9        I0         in       N$4
+         10       I1         in       BUFFER_STROBE
+         11       O          out      BIT5
+         12       I0         in       BUFFER_STROBE
+         13       I1         in       N$7
+         14       VCC        pwr      VCC
+
+E5       1        CLR        in       +3V3
+         2        D          in       N$9
+         3        CLK        in       SHIFT
+         4        PRE        in       PRESET
+         5        Q          out      N$8
+         6        !Q         out      SET_FLAG
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      N$9
+         10       PRE        in       PRESET
+         11       CLK        in       SHIFT
+         12       D          in       N$5
+         13       CLR        in       +3V3
+         14       VCC        pwr      VCC
+
+E6       1        CLR        in       +3V3
+         2        D          in       N$6
+         3        CLK        in       SHIFT
+         4        PRE        in       PRESET
+         5        Q          out      N$5
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      N$6
+         10       PRE        in       PRESET
+         11       CLK        in       SHIFT
+         12       D          in       N$7
+         13       CLR        in       +3V3
+         14       VCC        pwr      VCC
+
+E7       1        I0         in       N$5
+         2        I1         in       BUFFER_STROBE
+         3        O          out      BIT3
+         4        I0         in       BUFFER_STROBE
+         5        I1         in       N$2
+         6        O          out      BIT7
+         7        GND        pwr      GND
+         8        O          out      BIT8
+         9        I0         in       BUFFER_STROBE
+         10       I1         in       N$3
+         11       O          out      BIT1
+         12       I0         in       N$8
+         13       I1         in       BUFFER_STROBE
+         14       VCC        pwr      VCC
+
+E8       1        CLR        in       +3V3
+         2        D          in       N$31
+         3        CLK        in       SHIFT
+         4        PRE        in       PRESET
+         5        Q          out      N$7
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      N$4
+         10       PRE        in       PRESET
+         11       CLK        in       SHIFT
+         12       D          in       N$2
+         13       CLR        in       +3V3
+         14       VCC        pwr      VCC
+
+E9       1        I0         in       N$24
+         2        I1         in       !IO_CLEAR
+         3        I0         in       !IO_CLEAR
+         4        I1         in       !IO_CLEAR
+         5        I2         in       N$28
+         6        O          out      N$29
+         7        GND        pwr      GND
+         8        O          out      N$32
+         9        I0         in       N$29
+         10       I1         in       N$29
+         11       I2         in       N$29
+         12       O          out      N$12
+         13       I2         in       N$25
+         14       VCC        pwr      VCC
+
+E10      1        CLR        in       +3V3
+         2        D          in       N$3
+         3        CLK        in       SHIFT
+         4        PRE        in       PRESET
+         5        Q          out      N$2
+         6        !Q         out               *** unconnected ***
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      N$3
+         10       PRE        in       PRESET
+         11       CLK        in       SHIFT
+         12       D          in       N$14
+         13       CLR        in       +3V3
+         14       VCC        pwr      VCC
+
+E11      1        I0         in       SKIP_STROBE
+         2        I1         in       N$23
+         3        I0         in       N$23
+         4        I1         in       +3V3
+         5        I2         in       CLR_FLG2
+         6        O          out      N$25
+         7        GND        pwr      GND
+         8        O          out      N$28
+         9        I0         in       SHIFT
+         10       I1         in       SERIAL
+         11       I2         in       SPIKE
+         12       O          out      I/O_SKIP
+         13       I2         in       FLAG
+         14       VCC        pwr      VCC
+
+E12      1        I0         in       N$42
+         2        I1         in       N$42
+         3        O          out      N$13
+         4        I0         in       IN_LAST
+         5        I1         in       N$43
+         6        O          out      N$42
+         7        GND        pwr      GND
+         8        O          out      !IO_CLEAR
+         9        I0         in       I/O_CLEAR
+         10       I1         in       +3V3
+         11       O          out      N$24
+         12       I0         in       +3V3
+         13       I1         in       CLR_FLG1
+         14       VCC        pwr      VCC
+
+E13      1        CLR        in       PRESET
+         2        D          in       GND
+         3        CLK        in       GND
+         4        PRE        in       N$50
+         5        Q          out      N$52
+         6        !Q         out      !READER_RUN
+         7        GND        pwr      GND
+         8        !Q         out               *** unconnected ***
+         9        Q          out      SPIKE
+         10       PRE        in       PRESET
+         11       CLK        in       N$43
+         12       D          in       GND
+         13       CLR        in       !IO_CLEAR
+         14       VCC        pwr      VCC
+
+E14      1        CLR        in       N$32
+         2        D          in       GND
+         3        CLK        in       N$13
+         4        PRE        in       START
+         5        Q          out      ACTIVE
+         6        !Q         out      !ACTIVE
+         7        GND        pwr      GND
+         8        !Q         out      !IN_LAST
+         9        Q          out      IN_LAST
+         10       PRE        in       +3V3
+         11       CLK        in       SHIFT
+         12       D          in       SET_FLAG
+         13       CLR        in       N$57
+         14       VCC        pwr      VCC
+
+E15      1        I0         in       N$49
+         2        I1         in       N$49
+         4        I2         in       N$49
+         5        I3         in       N$49
+         6        O          out      PRESET
+         7        GND        pwr      GND
+         8        O          out      N$58
+         9        I0         in       !ACTIVE
+         10       I1         in       +3V3
+         12       I2         in       +3V3
+         13       I3         in       +3V3
+         14       VCC        pwr      VCC
+
+E16      1        I0         in       ACTIVE
+         2        I1         in       N$63
+         3        O          out      N$43
+         4        I0         in       N$43
+         5        I1         in       N$43
+         6        O          out      N$48
+         7        GND        pwr      GND
+         8        O          out      N$26
+         9        I0         in       N$53
+         10       I1         in       N$53
+         11       O          out      N$45
+         12       I0         in       !IN_LAST
+         13       I1         in       !ACTIVE
+         14       VCC        pwr      VCC
+
+E17      1        CLR        in       N$45
+         2        D          in       N$36
+         3        CLK        in       N$34
+         4        PRE        in       +3V3
+         5        Q          out      N$35
+         6        !Q         out      N$36
+         7        GND        pwr      GND
+         8        !Q         out      N$34
+         9        Q          out               *** unconnected ***
+         10       PRE        in       +3V3
+         11       CLK        in       N$33
+         12       D          in       N$34
+         13       CLR        in       N$45
+         14       VCC        pwr      VCC
+
+E18      1        A          in       SERIAL_IN
+         2        B          in       SERIAL_IN
+         3        C          in       SERIAL_IN
+         4        A          in       N$38
+         5        B          in       N$38
+         6        C          in       N$38
+         7        GND        pwr      GND
+         8        D          in       N$38
+         9        !X         out      !SERIAL
+         10       X          out      N$39
+         11       X          out      N$39
+         12       !X         out      N$38
+         13       D          in       SERIAL_IN
+         14       VCC        pwr      VCC
+
+E19      1        CLR        in       PRESET
+         2        D          in       !ACTIVE
+         3        CLK        in       N$37
+         4        PRE        in       N$62
+         5        Q          out      N$61
+         6        !Q         out      N$59
+         7        GND        pwr      GND
+         8        !Q         out      N$60
+         9        Q          out               *** unconnected ***
+         10       PRE        in       N$62
+         11       CLK        in       N$37
+         12       D          in       N$61
+         13       CLR        in       PRESET
+         14       VCC        pwr      VCC
+
+E20      1        I0         in       N$26
+         2        I1         in       N$26
+         4        I2         in       N$26
+         5        I3         in       N$26
+         6        O          out      SHIFT
+         7        GND        pwr      GND
+         8        O          out      START
+         9        I0         in       ENABLE
+         10       I1         in       N$1
+         12       I2         in       !SERIAL
+         13       I3         in       CLOCK8_BAUD
+         14       VCC        pwr      VCC
+
+E21      1        I0         in       2^0
+         2        I1         in       N$45
+         3        O          out      N$27
+         4        I0         in       N$47
+         5        I1         in       BUFFER_STROBE
+         6        O          out      N$46
+         7        GND        pwr      GND
+         8        O          out      SERIAL
+         9        I0         in       !SERIAL
+         10       I1         in       !SERIAL
+         11       O          out      N$1
+         12       I0         in       N$45
+         13       I1         in       N$45
+         14       VCC        pwr      VCC
+
+Q1       1        E          pas      N$54
+         2        B          pas      !READER_RUN
+         3        C          pas      READER_ENABLE
+
+R1       1        1          pas      GND
+         2        2          pas      +3V3
+
+R2       1        1          pas      +3V3
+         2        2          pas      VCC
+
+R3       1        1          pas      !READER_RUN
+         2        2          pas      VCC
+
+R4       1        1          pas      !SERIAL
+         2        2          pas      VCC
+
+R5       1        1          pas      GND
+         2        2          pas      N$39
+
+R6       1        1          pas      N$54
+         2        2          pas      VCC
+
+R7       1        1          pas      GND
+         2        2          pas      N$53
+
+R8       1        1          pas      N$48
+         2        2          pas      VCC
+
+R9       1        1          pas      N$58
+         2        2          pas      VCC
+
+R10      1        1          pas      GND
+         2        2          pas      N$49
+
+U$2      AA1      1          io                ***   unused    ***
+         AA2      1          io       VCC
+         AB1      1          io                ***   unused    ***
+         AB2      1          io                ***   unused    ***
+         AC1      1          io                ***   unused    ***
+         AC2      1          io       GND
+         AD1      1          io       +3V3
+         AD2      1          io       N$17
+         AE1      1          io       N$18
+         AE2      1          io       N$11
+         AF1      1          io       N$19
+         AF2      1          io       !IRQ
+         AH1      1          io       N$20
+         AH2      1          io       N$21
+         AJ1      1          io       N$15
+         AJ2      1          io       N$31
+         AK1      1          io       N$4
+         AK2      1          io       BIT8
+         AL1      1          io       BIT5
+         AL2      1          io       READ_BUFFER
+         AM1      1          io       BIT4
+         AM2      1          io       SERIAL
+         AN1      1          io       CLOCK8_BAUD
+         AN2      1          io       BIT1
+         AP1      1          io       N$16
+         AP2      1          io       BIT3
+         AR1      1          io       N$14
+         AR2      1          io       BIT7
+         AS1      1          io       SHIFT
+         AS2      1          io       BIT6
+         AT1      1          io       GND
+         AT2      1          io       BIT2
+         AU1      1          io                ***   unused    ***
+         AU2      1          io       READER_ENABLE
+         AV1      1          io       BUFFER_STROBE
+         AV2      1          io       N$50
+         BA1      1          io                ***   unused    ***
+         BA2      1          io       VCC
+         BB1      1          io                ***   unused    ***
+         BB2      1          io                ***   unused    ***
+         BC1      1          io                ***   unused    ***
+         BC2      1          io       GND
+         BD1      1          io       CLR_FLG1
+         BD2      1          io       SKIP_STROBE
+         BE1      1          io                ***   unused    ***
+         BE2      1          io       N$25
+         BF1      1          io                ***   unused    ***
+         BF2      1          io       I/O_CLEAR
+         BH1      1          io                ***   unused    ***
+         BH2      1          io       I/O_SKIP
+         BJ1      1          io                ***   unused    ***
+         BJ2      1          io       CLR_FLG2
+         BK1      1          io                ***   unused    ***
+         BK2      1          io                ***   unused    ***
+         BL1      1          io                ***   unused    ***
+         BL2      1          io       N$52
+         BM1      1          io       N$47
+         BM2      1          io       SERIAL_IN
+         BN1      1          io       N$46
+         BN2      1          io       !ACTIVE
+         BP1      1          io       N$62
+         BP2      1          io       N$37
+         BR1      1          io       ENABLE
+         BR2      1          io       N$57
+         BS1      1          io       N$36
+         BS2      1          io       PRESET
+         BT1      1          io       GND
+         BT2      1          io       N$35
+         BU1      1          io       N$63
+         BU2      1          io       N$59
+         BV1      1          io                ***   unused    ***
+         BV2      1          io       N$60
+
