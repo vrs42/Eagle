@@ -1,0 +1,36 @@
+EAE Hard to find parts:
+
+Exported from M8340E.sch at 9/26/2019 5:42:13 PM
+
+Part     Value          Device            Package      Library  Sheet
+E11      DEC23001A1     5600              DIL16        memory   1
+E17      SP384N         SP384N            DIL14        dec-con  1
+E19      DEC23002A1     5600              DIL16        memory   1
+E20      SP380N         SP380N            DIL14        dec-con  1
+E21      SP384N         SP384N            DIL14        dec-con  1
+E25      SP380N         SP380N            DIL14        dec-con  1
+E29      SP384N         SP384N            DIL14        dec-con  1
+E32      SP384N         SP384N            DIL14        dec-con  1
+E36      MC8266         MC8266            DIL16        dec-con  1
+
+Exported from M8341D.sch at 9/29/2019 10:43:55 AM
+
+Part     Value          Device            Package      Library  Sheet
+E3       SP380N         SP380N            DIL14        dec-con  1
+E16      DEC8235        DEC8235           DIL16        dec-con  2
+E20      DEC8235        DEC8235           DIL16        dec-con  2
+E22      N8881N         N8881N            DIL14        dec-con  2
+E24      DEC8235        DEC8235           DIL16        dec-con  2
+E27      DEC8235        DEC8235           DIL16        dec-con  2
+E29      SP380N         SP380N            DIL14        dec-con  1
+E30      SP384N         SP384N            DIL14        dec-con  1
+E31      DEC8235        DEC8235           DIL16        dec-con  2
+E32      N8881N         N8881N            DIL14        dec-con  2
+E36      N8881N         N8881N            DIL14        dec-con  1
+E40      SP380N         SP380N            DIL14        dec-con  1
+
+N8881 have a replacement (97401).
+SP380 can be replaced with high impedance 7402 variants.
+SP384 can be replaced with high impedance 7430 variants.
+
+Remaining issues: DEC ROMs, DEC8235, MC8266
