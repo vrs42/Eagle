@@ -1,0 +1,1096 @@
+%SIGNAL
+PIN  39 =  adlk_dis_low 
+PIN 124 =  be 
+PIN 125 =  bfetch 
+PIN 128 =  bmd8 
+PIN 129 =  bmd9 
+PIN 126 =  bmd10 
+PIN 127 =  bmd11 
+PIN  22 =  c0 
+PIN  63 =  dad_or_dst 
+PIN  69 =  dad_or_dst_low 
+PIN  24 =  data7 
+PIN   2 =  data8 
+PIN   1 =  data9 
+PIN 100 =  data10 
+PIN  99 =  data11 
+PIN 130 =  data_to_sc 
+PIN   9 =  defer 
+PIN  55 =  div_12_l 
+PIN   7 =  e 
+PIN 131 =  e_low 
+PIN 132 =  eae_inst 
+PIN  48 =  eir2 
+PIN  50 =  eir3 
+PIN 115 =  ex1 
+PIN 133 =  ex1_low 
+PIN 134 =  exec_divide 
+PIN 135 =  exec_multiply 
+PIN  44 =  fd_set 
+PIN  43 =  fe_set 
+PIN  11 =  fetch 
+PIN 136 =  fetch_low 
+PIN 117 =  gdollar_0 
+PIN 118 =  gdollar_1 
+PIN 119 =  gdollar_2 
+PIN  58 =  incr_sc 
+PIN  14 =  init 
+PIN 137 =  init_low 
+PIN  25 =  int_in_prog 
+PIN  73 =  last_step_l 
+PIN 138 =  ld_eir 
+PIN  32 =  ma_ms_lc 
+PIN  38 =  md0 
+PIN  35 =  md1 
+PIN  34 =  md2 
+PIN  33 =  md3 
+PIN  31 =  md4 
+PIN  30 =  md5 
+PIN  27 =  md6 
+PIN  26 =  md7 
+PIN  10 =  md8 
+PIN   8 =  md9 
+PIN   4 =  md10 
+PIN   3 =  md11 
+PIN 101 =  modea 
+PIN  78 =  modeb 
+PIN 139 =  n0_to_eir 
+PIN 140 =  n0_to_sc 
+PIN 141 =  n3v 
+PIN 142 =  n3v0 
+PIN 109 =  n_t_10x 
+PIN 110 =  n_t_11x 
+PIN 108 =  n_t_14x 
+PIN 143 =  n_t_15x 
+PIN 144 =  n_t_16x 
+PIN 111 =  n_t_17x 
+PIN 112 =  n_t_18x 
+PIN 122 =  n_t_19x 
+PIN 102 =  n_t_1x 
+PIN 145 =  n_t_20x 
+PIN 146 =  n_t_21x 
+PIN 147 =  n_t_22x 
+PIN 148 =  n_t_23x 
+PIN 149 =  n_t_24x 
+PIN 150 =  n_t_25x 
+PIN 114 =  n_t_26x 
+PIN 151 =  n_t_27x 
+PIN 152 =  n_t_28x 
+PIN 153 =  n_t_29x 
+PIN 103 =  n_t_2x 
+PIN 154 =  n_t_30x 
+PIN 155 =  n_t_31x 
+PIN 156 =  n_t_32x 
+PIN 157 =  n_t_33x 
+PIN 158 =  n_t_34x 
+PIN 159 =  n_t_35x 
+PIN 160 =  n_t_36x 
+PIN 161 =  n_t_37x 
+PIN 116 =  n_t_38x 
+PIN 120 =  n_t_39x 
+PIN 106 =  n_t_3x 
+PIN 121 =  n_t_40x 
+PIN 162 =  n_t_41x 
+PIN 123 =  n_t_42x 
+PIN 163 =  n_t_43x 
+PIN 164 =  n_t_44x 
+PIN 165 =  n_t_45x 
+PIN 166 =  n_t_46x 
+PIN 167 =  n_t_47x 
+PIN 168 =  n_t_48x 
+PIN 169 =  n_t_49x 
+PIN 104 =  n_t_4x 
+PIN 170 =  n_t_50x 
+PIN 171 =  n_t_51x 
+PIN 172 =  n_t_52x 
+PIN 173 =  n_t_53x 
+PIN 174 =  n_t_54x 
+PIN 175 =  n_t_55x 
+PIN 105 =  n_t_5x 
+PIN 176 =  n_t_6x 
+PIN 113 =  n_t_7x 
+PIN 107 =  n_t_8x 
+PIN 177 =  n_t_9x 
+PIN  52 =  next_loc 
+PIN  70 =  rom_11_l 
+PIN  74 =  rom_12_l 
+PIN  57 =  rom_13_l 
+PIN  77 =  rom_14_l 
+PIN  67 =  rom_15_l 
+PIN  72 =  rom_17_l 
+PIN 178 =  rom_19_l 
+PIN 179 =  rom_21_l 
+PIN  59 =  rom_22_l 
+PIN 180 =  rom_23_l 
+PIN  56 =  rom_24_l 
+PIN 181 =  rom_25_l 
+PIN 182 =  rom_26_l 
+PIN  46 =  sc_0_low 
+PIN 183 =  sc_load_low 
+PIN 184 =  sc_to_data 
+PIN 185 =  swab 
+PIN 186 =  swba 
+PIN  23 =  tp1 
+PIN  19 =  tp2 
+PIN  65 =  tp2_d 
+PIN  18 =  tp3 
+PIN 187 =  tp3_low 
+PIN  16 =  tp4 
+PIN  15 =  ts3 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!adlk_dis_low =>
+    dad_or_dst & !eir2 & !n_t_16x & !n_t_21x & !n_t_25x
+  # eir2 & !eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # !eir2 & eir3 & !n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+
+adlk_dis_low.oe  =>
+    dad_or_dst & !eir2 & !n_t_16x & !n_t_21x & !n_t_25x
+  # eir2 & !eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # !eir2 & eir3 & !n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+
+be =>
+    !e_low
+
+bfetch =>
+    fetch
+
+bmd8 =>
+    md8
+
+bmd9 =>
+    md9
+
+bmd10 =>
+    md10
+
+bmd11 =>
+    md11
+
+!c0 =>
+    modeb & n_t_26x
+
+c0.oe  =>
+    modeb & n_t_26x
+
+dad_or_dst =>
+    eae_inst & modeb & n_t_9x
+
+dad_or_dst_low =>
+    !dad_or_dst
+
+!data7 =>
+    n_t_38x & sc_to_data
+
+data7.oe  =>
+    n_t_38x & sc_to_data
+
+!data8 =>
+    n_t_42x & sc_to_data
+
+data8.oe  =>
+    n_t_42x & sc_to_data
+
+!data9 =>
+    n_t_19x & sc_to_data
+
+data9.oe  =>
+    n_t_19x & sc_to_data
+
+!data10 =>
+    n_t_40x & sc_to_data
+
+data10.oe  =>
+    n_t_40x & sc_to_data
+
+!data11 =>
+    n_t_39x & sc_to_data
+
+data11.oe  =>
+    n_t_39x & sc_to_data
+
+data_to_sc =>
+    !rom_21_l
+
+div_12_l =>
+    !n_t_20x
+
+e11_00010 =>
+    dad_or_dst & !eir2 & !eir3 & !n_t_16x & !n_t_21x
+
+e11_00100 =>
+    !dad_or_dst & !eir2 & !eir3 & n_t_16x & !n_t_21x
+
+e11_00111 =>
+    dad_or_dst & !eir2 & !eir3 & n_t_16x & n_t_21x
+
+e11_01101 =>
+    !dad_or_dst & eir2 & !eir3 & n_t_16x & n_t_21x
+
+e11_01110 =>
+    dad_or_dst & eir2 & !eir3 & n_t_16x & !n_t_21x
+
+e11_0111x =>
+    dad_or_dst & eir2 & !eir3 & n_t_16x
+
+e11_10010 =>
+    dad_or_dst & !eir2 & eir3 & !n_t_16x & !n_t_21x
+
+e11_10011 =>
+    dad_or_dst & !eir2 & eir3 & !n_t_16x & n_t_21x
+
+e11_10101 =>
+    !dad_or_dst & !eir2 & eir3 & n_t_16x & n_t_21x
+
+e11_00x10 =>
+    dad_or_dst & !eir2 & !eir3 & !n_t_21x
+
+e11_011x1 =>
+    eir2 & !eir3 & n_t_16x & n_t_21x
+
+e11_01x01 =>
+    !dad_or_dst & eir2 & !eir3 & n_t_21x
+
+e11_0x111 =>
+    dad_or_dst & !eir3 & n_t_16x & n_t_21x
+
+e11_100x1 =>
+    !eir2 & eir3 & !n_t_16x & n_t_21x
+
+e11_1011x =>
+    dad_or_dst & !eir2 & eir3 & n_t_16x
+
+e11_10x01 =>
+    !dad_or_dst & !eir2 & eir3 & n_t_21x
+
+e11_10x10 =>
+    dad_or_dst & !eir2 & eir3 & !n_t_21x
+
+e11_x0010 =>
+    dad_or_dst & !eir2 & !n_t_16x & !n_t_21x
+
+e11_x0111 =>
+    dad_or_dst & !eir2 & n_t_16x & n_t_21x
+
+e11_x1001 =>
+    !dad_or_dst & eir2 & !n_t_16x & n_t_21x
+
+e19_0001x =>
+    !eir2 & !eir3 & !n_t_16x & n_t_9x
+
+e19_00101 =>
+    !eir2 & !eir3 & modea & n_t_16x & !n_t_9x
+
+e19_0010x =>
+    !eir2 & !eir3 & n_t_16x & !n_t_9x
+
+e19_00110 =>
+    !eir2 & !eir3 & !modea & n_t_16x & n_t_9x
+
+e19_0100x =>
+    eir2 & !eir3 & !n_t_16x & !n_t_9x
+
+e19_01010 =>
+    eir2 & !eir3 & !modea & !n_t_16x & n_t_9x
+
+e19_01100 =>
+    eir2 & !eir3 & !modea & n_t_16x & !n_t_9x
+
+e19_0110x =>
+    eir2 & !eir3 & n_t_16x & !n_t_9x
+
+e19_01110 =>
+    eir2 & !eir3 & !modea & n_t_16x & n_t_9x
+
+e19_10001 =>
+    !eir2 & eir3 & modea & !n_t_16x & !n_t_9x
+
+e19_10010 =>
+    !eir2 & eir3 & !modea & !n_t_16x & n_t_9x
+
+e19_10100 =>
+    !eir2 & eir3 & !modea & n_t_16x & !n_t_9x
+
+e19_10111 =>
+    !eir2 & eir3 & modea & n_t_16x & n_t_9x
+
+e19_000x1 =>
+    !eir2 & !eir3 & modea & !n_t_16x
+
+e19_001x1 =>
+    !eir2 & !eir3 & modea & n_t_16x
+
+e19_00x10 =>
+    !eir2 & !eir3 & !modea & n_t_9x
+
+e19_010x0 =>
+    eir2 & !eir3 & !modea & !n_t_16x
+
+e19_011x1 =>
+    eir2 & !eir3 & modea & n_t_16x
+
+e19_0x100 =>
+    !eir3 & !modea & n_t_16x & !n_t_9x
+
+e19_0x111 =>
+    !eir3 & modea & n_t_16x & n_t_9x
+
+e19_100x1 =>
+    !eir2 & eir3 & modea & !n_t_16x
+
+e19_1011x =>
+    !eir2 & eir3 & n_t_16x & n_t_9x
+
+e19_10x01 =>
+    !eir2 & eir3 & modea & !n_t_9x
+
+e19_1101x =>
+    eir2 & eir3 & !n_t_16x & n_t_9x
+
+e19_110x1 =>
+    eir2 & eir3 & modea & !n_t_16x
+
+e19_1110x =>
+    eir2 & eir3 & n_t_16x & !n_t_9x
+
+e19_1111x =>
+    eir2 & eir3 & n_t_16x & n_t_9x
+
+e19_11x00 =>
+    eir2 & eir3 & !modea & !n_t_9x
+
+e19_11x10 =>
+    eir2 & eir3 & !modea & n_t_9x
+
+e19_11x11 =>
+    eir2 & eir3 & modea & n_t_9x
+
+e19_1x010 =>
+    eir3 & !modea & !n_t_16x & n_t_9x
+
+e19_1x011 =>
+    eir3 & modea & !n_t_16x & n_t_9x
+
+e19_1x101 =>
+    eir3 & modea & n_t_16x & !n_t_9x
+
+e19_x0101 =>
+    !eir2 & modea & n_t_16x & !n_t_9x
+
+e19_x0110 =>
+    !eir2 & !modea & n_t_16x & n_t_9x
+
+e19_x1001 =>
+    eir2 & modea & !n_t_16x & !n_t_9x
+
+e19_x1010 =>
+    eir2 & !modea & !n_t_16x & n_t_9x
+
+!e_low =>
+    e
+
+eae_inst =>
+    !n_t_6x
+
+eir2 =>
+    !n_t_17x
+
+eir3 =>
+    !n_t_18x
+
+ex1.d  =>
+    n_t_53x
+
+ex1.ap  =>
+    !n3v
+
+ex1.ar  =>
+    !bfetch
+
+ex1.ck  =>
+    n_t_52x
+
+ex1_low =>
+    !ex1
+
+exec_divide =>
+    !rom_12_l & !rom_14_l
+
+exec_multiply =>
+    !exec_divide & !rom_12_l
+
+!fd_set =>
+    !eir2 & !eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # eir2 & !eir3 & modea & n_t_16x & !n_t_21x
+  # eir2 & !eir3 & !modea & n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+
+fd_set.oe  =>
+    !eir2 & !eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # eir2 & !eir3 & modea & n_t_16x & !n_t_21x
+  # eir2 & !eir3 & !modea & n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+
+!fe_set =>
+    e_low & ex1
+  # !eir2 & !eir3 & modea & !n_t_16x & !n_t_21x
+  # !eir2 & !eir3 & !modea & !n_t_21x & n_t_9x
+  # eir2 & eir3 & n_t_16x & !n_t_21x
+  # !eir3 & n_t_16x & !n_t_21x & !n_t_9x
+  # eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # !eir3 & modea & n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & n_t_16x & !n_t_21x & n_t_9x
+  # eir2 & !eir3 & !modea & n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & modea & !n_t_21x & !n_t_9x
+  # !eir2 & eir3 & !modea & n_t_16x & !n_t_21x & !n_t_9x
+
+fe_set.oe  =>
+    e_low & ex1
+  # !eir2 & !eir3 & modea & !n_t_16x & !n_t_21x
+  # !eir2 & !eir3 & !modea & !n_t_21x & n_t_9x
+  # eir2 & eir3 & n_t_16x & !n_t_21x
+  # !eir3 & n_t_16x & !n_t_21x & !n_t_9x
+  # eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # !eir3 & modea & n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & n_t_16x & !n_t_21x & n_t_9x
+  # eir2 & !eir3 & !modea & n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & modea & !n_t_21x & !n_t_9x
+  # !eir2 & eir3 & !modea & n_t_16x & !n_t_21x & !n_t_9x
+
+fetch_low =>
+    !bfetch
+
+gdollar_0.t  =>
+    1 
+
+gdollar_0.ap  =>
+    0 
+
+gdollar_0.ar  =>
+    n0_to_sc
+  # !sc_load_low
+
+gdollar_0.ck  =>
+    n3v & !n_t_38x
+  # n_t_38x & n_t_46x
+
+gdollar_1.t  =>
+    1 
+
+gdollar_1.ap  =>
+    0 
+
+gdollar_1.ar  =>
+    n0_to_sc
+  # !sc_load_low
+
+gdollar_1.ck  =>
+    !gdollar_0 & n3v & !n_t_38x
+  # gdollar_0 & n_t_38x & n_t_46x
+
+gdollar_2.t  =>
+    1 
+
+gdollar_2.ap  =>
+    0 
+
+gdollar_2.ar  =>
+    n0_to_sc
+  # !sc_load_low
+
+gdollar_2.ck  =>
+    !gdollar_0 & !gdollar_1 & n3v & !n_t_38x
+  # gdollar_0 & gdollar_1 & n_t_38x & n_t_46x
+
+!init_low =>
+    init
+
+!last_step_l =>
+    n_t_19x & n_t_20x & n_t_38x
+  # exec_divide & n_t_19x & n_t_42x
+  # exec_multiply & n_t_20x & n_t_49x
+
+last_step_l.oe  =>
+    n_t_19x & n_t_20x & n_t_38x
+  # exec_divide & n_t_19x & n_t_42x
+  # exec_multiply & n_t_20x & n_t_49x
+
+ld_eir =>
+    fetch_low & tp2
+
+modea.j  =>
+    n_t_22x
+
+modea.k  =>
+    n_t_23x
+
+modea.ap  =>
+    !init_low
+
+modea.ar  =>
+    !n3v0
+
+modea.ck  =>
+    n_t_27x
+
+modeb =>
+    !modea
+
+!n0_to_eir =>
+    n_t_29x & n_t_52x
+  # fetch_low & n_t_28x
+
+n0_to_sc =>
+    !rom_23_l & !tp3_low
+
+n3v =>
+    1 
+
+n3v0 =>
+    1 
+
+n_t_10x.d  =>
+    md7
+
+n_t_10x.ap  =>
+    !n0_to_eir
+
+n_t_10x.ar  =>
+    !n3v0
+
+n_t_10x.ck  =>
+    ld_eir
+
+n_t_11x.d  =>
+    md8
+
+n_t_11x.ap  =>
+    !n0_to_eir
+
+n_t_11x.ar  =>
+    !n3v
+
+n_t_11x.ck  =>
+    ld_eir
+
+n_t_14x.d  =>
+    md6
+
+n_t_14x.ap  =>
+    !n0_to_eir
+
+n_t_14x.ar  =>
+    !n3v0
+
+n_t_14x.ck  =>
+    ld_eir
+
+n_t_15x =>
+    !n_t_10x
+
+n_t_16x =>
+    !n_t_11x
+
+n_t_17x.d  =>
+    md9
+
+n_t_17x.ap  =>
+    !n0_to_eir
+
+n_t_17x.ar  =>
+    !n3v
+
+n_t_17x.ck  =>
+    ld_eir
+
+n_t_18x.d  =>
+    md10
+
+n_t_18x.ap  =>
+    !n0_to_eir
+
+n_t_18x.ar  =>
+    !n3v
+
+n_t_18x.ck  =>
+    ld_eir
+
+n_t_19x.t  =>
+    1 
+
+n_t_19x.ap  =>
+    n_t_36x & !sc_load_low
+
+n_t_19x.ar  =>
+    n0_to_sc
+  # !n_t_36x & !sc_load_low
+
+n_t_19x.ck  =>
+    n3v & !n_t_39x & !n_t_40x
+  # incr_sc & n_t_39x & n_t_40x
+
+n_t_1x.d  =>
+    !md0
+
+n_t_1x.ap  =>
+    !n3v0
+
+n_t_1x.ar  =>
+    !n0_to_eir
+
+n_t_1x.ck  =>
+    ld_eir
+
+n_t_20x =>
+    n_t_39x & n_t_40x & n_t_42x
+
+n_t_21x =>
+    !eae_inst
+  # !fetch_low
+  # !swba
+  # !swab
+
+n_t_22x =>
+    !swba
+
+n_t_23x =>
+    !swab
+
+n_t_24x =>
+    !be
+  # !bfetch
+
+n_t_25x =>
+    !swab
+  # !swba
+  # !n_t_24x
+  # !eae_inst
+
+n_t_26x.d  =>
+    !rom_21_l
+
+n_t_26x.ap  =>
+    !n3v
+
+n_t_26x.ar  =>
+    !tp3_low
+
+n_t_26x.ck  =>
+    tp2_d
+
+n_t_27x =>
+    eae_inst & ld_eir
+
+n_t_28x =>
+    tp1
+
+n_t_29x =>
+    int_in_prog
+
+n_t_2x.d  =>
+    !md1
+
+n_t_2x.ap  =>
+    !n3v0
+
+n_t_2x.ar  =>
+    !n0_to_eir
+
+n_t_2x.ck  =>
+    ld_eir
+
+n_t_30x =>
+    data8
+
+n_t_31x =>
+    data9
+
+n_t_32x =>
+    data10
+
+n_t_33x =>
+    data11
+
+n_t_34x =>
+    bmd11 & !n_t_33x
+  # data_to_sc & !n_t_33x
+  # bmd11 & !data_to_sc
+
+n_t_35x =>
+    bmd10 & !n_t_32x
+  # data_to_sc & !n_t_32x
+  # bmd10 & !data_to_sc
+
+n_t_36x =>
+    bmd9 & !n_t_31x
+  # data_to_sc & !n_t_31x
+  # bmd9 & !data_to_sc
+
+n_t_37x =>
+    bmd8 & !n_t_30x
+  # data_to_sc & !n_t_30x
+  # bmd8 & !data_to_sc
+
+n_t_38x.t  =>
+    1 
+
+n_t_38x.ap  =>
+    n_t_44x & !sc_load_low
+
+n_t_38x.ar  =>
+    n0_to_sc
+  # !n_t_44x & !sc_load_low
+
+n_t_38x.ck  =>
+    n3v
+  # n_t_46x
+
+n_t_39x.t  =>
+    1 
+
+n_t_39x.ap  =>
+    n_t_34x & !sc_load_low
+
+n_t_39x.ar  =>
+    n0_to_sc
+  # !n_t_34x & !sc_load_low
+
+n_t_39x.ck  =>
+    n3v
+  # incr_sc
+
+n_t_3x.d  =>
+    md4
+
+n_t_3x.ap  =>
+    !n0_to_eir
+
+n_t_3x.ar  =>
+    !n3v0
+
+n_t_3x.ck  =>
+    ld_eir
+
+n_t_40x.t  =>
+    1 
+
+n_t_40x.ap  =>
+    n_t_35x & !sc_load_low
+
+n_t_40x.ar  =>
+    n0_to_sc
+  # !n_t_35x & !sc_load_low
+
+n_t_40x.ck  =>
+    n3v & !n_t_39x
+  # incr_sc & n_t_39x
+
+n_t_41x =>
+    ma_ms_lc
+
+n_t_42x.t  =>
+    1 
+
+n_t_42x.ap  =>
+    n_t_37x & !sc_load_low
+
+n_t_42x.ar  =>
+    n0_to_sc
+  # !n_t_37x & !sc_load_low
+
+n_t_42x.ck  =>
+    n3v & !n_t_19x & !n_t_39x & !n_t_40x
+  # incr_sc & n_t_19x & n_t_39x & n_t_40x
+
+!n_t_43x =>
+    data_to_sc
+  # md7
+
+!n_t_44x =>
+    data_to_sc & n_t_45x
+  # n_t_43x
+
+n_t_45x =>
+    data7
+
+n_t_46x =>
+    n_t_19x & n_t_39x & n_t_40x & n_t_42x
+
+n_t_47x =>
+    !n_t_39x
+
+n_t_48x =>
+    !n_t_40x & !n_t_42x
+
+n_t_49x =>
+    !n_t_19x & !n_t_38x
+
+n_t_4x.d  =>
+    !md2
+
+n_t_4x.ap  =>
+    !n3v0
+
+n_t_4x.ar  =>
+    !n0_to_eir
+
+n_t_4x.ck  =>
+    ld_eir
+
+n_t_50x =>
+    tp4
+
+n_t_51x =>
+    !n_t_50x
+  # !n_t_41x
+
+n_t_52x =>
+    !n_t_51x
+
+!n_t_53x =>
+    dad_or_dst_low
+  # defer
+
+n_t_54x =>
+    !n_t_55x & !rom_19_l
+
+n_t_55x =>
+    !tp2_d
+
+n_t_5x.d  =>
+    !md3
+
+n_t_5x.ap  =>
+    !n3v0
+
+n_t_5x.ar  =>
+    !n0_to_eir
+
+n_t_5x.ck  =>
+    ld_eir
+
+n_t_6x =>
+    !n3v0
+  # !n_t_1x
+  # !n_t_2x
+  # !n_t_4x
+  # !n_t_5x
+  # !n_t_7x
+
+n_t_7x.d  =>
+    !md11
+
+n_t_7x.ap  =>
+    !n3v
+
+n_t_7x.ar  =>
+    !n0_to_eir
+
+n_t_7x.ck  =>
+    ld_eir
+
+n_t_8x.d  =>
+    md5
+
+n_t_8x.ap  =>
+    !n0_to_eir
+
+n_t_8x.ar  =>
+    !n3v0
+
+n_t_8x.ck  =>
+    ld_eir
+
+n_t_9x =>
+    !n_t_14x
+
+next_loc =>
+    !rom_26_l
+  # !ex1_low
+
+!rom_11_l =>
+    dad_or_dst & !eir2 & eir3 & n_t_16x & !n_t_25x
+  # !dad_or_dst & !eir2 & eir3 & n_t_21x & !n_t_25x
+
+rom_11_l.oe  =>
+    dad_or_dst & !eir2 & eir3 & n_t_16x & !n_t_25x
+  # !dad_or_dst & !eir2 & eir3 & n_t_21x & !n_t_25x
+
+!rom_12_l =>
+    dad_or_dst & !eir2 & !eir3 & !n_t_21x & !n_t_25x
+  # !dad_or_dst & eir2 & !n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & !eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & eir3 & n_t_21x & !n_t_25x
+  # !dad_or_dst & eir2 & !eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & !eir2 & eir3 & !n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+
+rom_12_l.oe  =>
+    dad_or_dst & !eir2 & !eir3 & !n_t_21x & !n_t_25x
+  # !dad_or_dst & eir2 & !n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & !eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & eir3 & n_t_21x & !n_t_25x
+  # !dad_or_dst & eir2 & !eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & !eir2 & eir3 & !n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+
+!rom_13_l =>
+    dad_or_dst & !eir2 & !eir3 & !n_t_16x & !n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+  # !eir2 & eir3 & !n_t_16x & n_t_21x & !n_t_25x
+  # !dad_or_dst & eir2 & !n_t_16x & n_t_21x & !n_t_25x
+
+rom_13_l.oe  =>
+    dad_or_dst & !eir2 & !eir3 & !n_t_16x & !n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+  # !eir2 & eir3 & !n_t_16x & n_t_21x & !n_t_25x
+  # !dad_or_dst & eir2 & !n_t_16x & n_t_21x & !n_t_25x
+
+!rom_14_l =>
+    !dad_or_dst & !eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+  # dad_or_dst & eir2 & !eir3 & n_t_16x & !n_t_25x
+  # dad_or_dst & !eir2 & eir3 & !n_t_16x & !n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & eir3 & n_t_21x & !n_t_25x
+
+rom_14_l.oe  =>
+    !dad_or_dst & !eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+  # dad_or_dst & eir2 & !eir3 & n_t_16x & !n_t_25x
+  # dad_or_dst & !eir2 & eir3 & !n_t_16x & !n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & eir3 & n_t_21x & !n_t_25x
+
+!rom_15_l =>
+    dad_or_dst & !eir2 & !eir3 & !n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+  # dad_or_dst & !eir2 & !eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # !dad_or_dst & eir2 & !eir3 & n_t_21x & !n_t_25x
+
+rom_15_l.oe  =>
+    dad_or_dst & !eir2 & !eir3 & !n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+  # dad_or_dst & !eir2 & !eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # !dad_or_dst & eir2 & !eir3 & n_t_21x & !n_t_25x
+
+!rom_17_l =>
+    !eir2 & eir3 & !n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & !eir2 & !n_t_16x & !n_t_21x & !n_t_25x
+
+rom_17_l.oe  =>
+    !eir2 & eir3 & !n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & !eir2 & !n_t_16x & !n_t_21x & !n_t_25x
+
+!rom_19_l =>
+    dad_or_dst & !eir2 & !n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+  # dad_or_dst & !eir2 & n_t_16x & n_t_21x & !n_t_25x
+  # eir2 & !eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # dad_or_dst & eir2 & !eir3 & n_t_16x & !n_t_21x & !n_t_25x
+  # !dad_or_dst & !eir2 & eir3 & n_t_16x & n_t_21x & !n_t_25x
+  # !eir2 & eir3 & !n_t_16x & n_t_21x & !n_t_25x
+
+!rom_21_l =>
+    !eir2 & !eir3 & modea & n_t_16x & !n_t_21x
+  # !eir2 & !modea & n_t_16x & !n_t_21x & n_t_9x
+  # eir2 & eir3 & n_t_16x & !n_t_21x & n_t_9x
+  # eir3 & modea & !n_t_16x & !n_t_21x
+  # eir3 & !modea & !n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & modea & n_t_16x & !n_t_21x & n_t_9x
+  # eir3 & modea & n_t_16x & !n_t_21x & !n_t_9x
+
+!rom_22_l =>
+    !eir2 & !eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # eir3 & modea & n_t_16x & !n_t_21x & !n_t_9x
+  # !eir2 & !eir3 & modea & n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+  # !eir2 & eir3 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & !eir3 & !modea & !n_t_16x & !n_t_21x & n_t_9x
+
+rom_22_l.oe  =>
+    !eir2 & !eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # eir3 & modea & n_t_16x & !n_t_21x & !n_t_9x
+  # !eir2 & !eir3 & modea & n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+  # !eir2 & eir3 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & !eir3 & !modea & !n_t_16x & !n_t_21x & n_t_9x
+
+!rom_23_l =>
+    !eir2 & !eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # eir3 & modea & !n_t_16x & !n_t_21x & n_t_9x
+  # eir2 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & !modea & !n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & !modea & !n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+
+!rom_24_l =>
+    !eir2 & modea & n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & !eir3 & !modea & !n_t_16x & !n_t_21x
+  # eir2 & eir3 & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & eir3 & !modea & !n_t_21x & !n_t_9x
+
+rom_24_l.oe  =>
+    !eir2 & modea & n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & !eir3 & !modea & !n_t_16x & !n_t_21x
+  # eir2 & eir3 & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & eir3 & !modea & !n_t_21x & !n_t_9x
+
+!rom_25_l =>
+    !eir2 & !eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # eir2 & eir3 & !n_t_21x & n_t_9x
+  # !eir2 & !eir3 & modea & n_t_16x & !n_t_21x
+  # !eir2 & !eir3 & !modea & n_t_16x & !n_t_21x & n_t_9x
+  # eir2 & !eir3 & !modea & n_t_16x & !n_t_21x & !n_t_9x
+  # eir2 & !eir3 & !n_t_16x & !n_t_21x & !n_t_9x
+
+!rom_26_l =>
+    !eir2 & !eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # eir2 & eir3 & n_t_16x & !n_t_21x & !n_t_9x
+  # !eir3 & !modea & n_t_16x & !n_t_21x & !n_t_9x
+  # eir3 & !n_t_16x & !n_t_21x & n_t_9x
+  # !eir2 & eir3 & modea & !n_t_16x & !n_t_21x & !n_t_9x
+  # !eir2 & eir3 & !modea & n_t_16x & !n_t_21x & !n_t_9x
+
+sc_0_low =>
+    !n_t_47x
+  # !n_t_48x
+  # !n_t_49x
+
+sc_load_low =>
+    !n_t_26x & !n_t_54x
+
+!sc_to_data =>
+    ts3
+  # rom_25_l
+
+swab =>
+    !n_t_3x
+  # !n_t_8x
+  # !n_t_14x
+  # !n_t_15x
+  # !n_t_16x
+  # !n_t_17x
+  # !n_t_18x
+  # !n3v
+
+swba =>
+    !n_t_3x
+  # !n_t_8x
+  # !n_t_9x
+  # !n_t_10x
+  # !n_t_11x
+  # !eir2
+  # !eir3
+  # !n3v0
+
+!tp3_low =>
+    tp3
+
+%END
