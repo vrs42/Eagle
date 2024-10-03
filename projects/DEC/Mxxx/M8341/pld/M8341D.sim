@@ -1,0 +1,687 @@
+%SIGNAL
+PIN  54 =  ac0 
+PIN  51 =  ac1 
+PIN  57 =  ac0_ne_ac1 
+PIN  59 =  ac2_8_0 
+PIN 110 =  ac2_mq11_0 
+PIN  42 =  ac4_11_0 
+PIN  47 =  ac_0 
+PIN  50 =  ac_load_low 
+PIN  32 =  ac_to_bus_low 
+PIN  49 =  ac_to_mq_ena_low 
+PIN  55 =  ad0_low 
+PIN  52 =  ad_lk_low 
+PIN 111 =  bac0 
+PIN  21 =  c0 
+PIN  37 =  carry_in 
+PIN  48 =  carry_out_low 
+PIN  92 =  clock 
+PIN  83 =  dad_or_dst 
+PIN  90 =  dad_or_dst_low 
+PIN  24 =  data1 
+PIN  46 =  data_f 
+PIN  31 =  data_t 
+PIN 112 =  dcm_or_dpic_low 
+PIN  77 =  div_12_l 
+PIN 113 =  dvi 
+PIN 114 =  dvi_and_ts3 
+PIN   2 =  e 
+PIN 107 =  eae_on 
+PIN  71 =  eir2 
+PIN  73 =  eir3 
+PIN  33 =  en0 
+PIN  39 =  en1 
+PIN  29 =  en2 
+PIN 115 =  etp 
+PIN 116 =  etp_or_tp3 
+PIN   3 =  fetch 
+PIN 100 =  gtf_or_ind 
+PIN  80 =  incr_sc 
+PIN  10 =  init 
+PIN 117 =  last_dvi_low 
+PIN  95 =  last_step_l 
+PIN  60 =  left_low 
+PIN  23 =  link 
+PIN   9 =  link_data 
+PIN   7 =  link_load 
+PIN 118 =  lp_asr_or_lsr_rp_and_eae_on_low 
+PIN 119 =  lp_dcm_or_dpic_or_sam_rp_and_ts3 
+PIN 120 =  lp_shl_or_norms_rp_and_eae_on_lo 
+PIN  34 =  md_disable 
+PIN  99 =  modeb 
+PIN 121 =  mq0_gt_ac0 
+PIN  66 =  mq0_low 
+PIN  67 =  mq10_low 
+PIN  65 =  mq11_low 
+PIN  56 =  mq_0 
+PIN  63 =  mq_data_low 
+PIN 122 =  mq_ge_ac 
+PIN  38 =  mq_load 
+PIN  35 =  mq_to_bus_low 
+PIN   4 =  msir_disable 
+PIN 123 =  muy_and_eae_on_low 
+PIN 109 =  n_t_13x 
+PIN 124 =  n_t_15x 
+PIN 125 =  n_t_18x 
+PIN 126 =  n_t_19x 
+PIN 127 =  n_t_21x 
+PIN 103 =  n_t_22x 
+PIN 101 =  n_t_23x 
+PIN 128 =  n_t_24x 
+PIN 129 =  n_t_27x 
+PIN 130 =  n_t_28x 
+PIN 131 =  n_t_33x 
+PIN 132 =  n_t_34x 
+PIN 133 =  n_t_38x 
+PIN 134 =  n_t_3x 
+PIN 135 =  n_t_40x 
+PIN 104 =  n_t_42x 
+PIN 136 =  n_t_43x 
+PIN 137 =  n_t_44x 
+PIN 138 =  n_t_46x 
+PIN 139 =  n_t_49x 
+PIN 140 =  n_t_4x 
+PIN 141 =  n_t_52x 
+PIN 142 =  n_t_53x 
+PIN 143 =  n_t_56x 
+PIN 144 =  n_t_5x 
+PIN 108 =  n_t_60x 
+PIN 145 =  n_t_61x 
+PIN 146 =  n_t_63x 
+PIN 147 =  n_t_64x 
+PIN 102 =  n_t_65x 
+PIN 148 =  n_t_66x 
+PIN 149 =  n_t_67x 
+PIN 150 =  n_t_68x 
+PIN 106 =  n_t_69x 
+PIN 151 =  n_t_70x 
+PIN 152 =  n_t_73x 
+PIN 153 =  n_t_74x 
+PIN 154 =  n_t_76x 
+PIN 155 =  n_t_77x 
+PIN 156 =  n_t_82x 
+PIN 105 =  n_t_84x 
+PIN 157 =  n_t_85x 
+PIN 158 =  n_t_92x 
+PIN  74 =  next_loc 
+PIN 159 =  normal_dvi_low 
+PIN 160 =  norms_or_shl_or_asr_or_lsr 
+PIN  15 =  not_last_xfer 
+PIN  82 =  restart 
+PIN  62 =  right_low 
+PIN  91 =  rom_11_l 
+PIN  96 =  rom_12_l 
+PIN  79 =  rom_13_l 
+PIN  98 =  rom_14_l 
+PIN  89 =  rom_15_l 
+PIN  94 =  rom_17_l 
+PIN  81 =  rom_22_l 
+PIN  78 =  rom_24_l 
+PIN  72 =  rtf 
+PIN 161 =  sam_low 
+PIN  70 =  sc_0_low 
+PIN  86 =  sgt_low 
+PIN 162 =  shift_ok 
+PIN  30 =  shl_ena_low 
+PIN   8 =  skip 
+PIN  25 =  tp 
+PIN  22 =  tp1 
+PIN  19 =  tp2 
+PIN  85 =  tp2_d 
+PIN  18 =  tp3 
+PIN  16 =  ts2 
+PIN  14 =  ts3 
+PIN  11 =  ts4 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+ac2_mq11_0 =>
+    ac2_8_0 & !ac4_11_0 & mq_0
+
+!ac_load_low =>
+    !n_t_33x & tp3
+  # etp
+  # n_t_4x & tp3
+
+ac_load_low.oe  =>
+    !n_t_33x & tp3
+  # etp
+  # n_t_4x & tp3
+
+!ac_to_bus_low =>
+    !rom_15_l & !ts3
+
+ac_to_bus_low.oe  =>
+    !rom_15_l & !ts3
+
+ac_to_mq_ena_low =>
+    dad_or_dst_low
+  # e
+
+ac_to_mq_ena_low.oe  =>
+    !ac_to_mq_ena_low
+
+!ad_lk_low =>
+    !lp_shl_or_norms_rp_and_eae_on_lo & !mq0_low
+  # !dvi_and_ts3 & n_t_34x
+
+ad_lk_low.oe  =>
+    !lp_shl_or_norms_rp_and_eae_on_lo & !mq0_low
+  # !dvi_and_ts3 & n_t_34x
+
+bac0 =>
+    ac0
+
+!c0 =>
+    modeb & !n_t_19x
+
+c0.oe  =>
+    modeb & !n_t_19x
+
+!carry_in =>
+    n_t_53x & !ts3
+  # n_t_56x & next_loc
+  # !eae_on & lp_dcm_or_dpic_or_sam_rp_and_ts3
+
+carry_in.oe  =>
+    n_t_53x & !ts3
+  # n_t_56x & next_loc
+  # !eae_on & lp_dcm_or_dpic_or_sam_rp_and_ts3
+
+!data1 =>
+    gtf_or_ind & n_t_13x
+
+data1.oe  =>
+    gtf_or_ind & n_t_13x
+
+!data_f =>
+    eir2 & lp_dcm_or_dpic_or_sam_rp_and_ts3
+  # !last_dvi_low & !mq10_low
+  # n_t_82x & !normal_dvi_low
+
+data_f.oe  =>
+    eir2 & lp_dcm_or_dpic_or_sam_rp_and_ts3
+  # !last_dvi_low & !mq10_low
+  # n_t_82x & !normal_dvi_low
+
+!data_t =>
+    !eir3 & !n_t_5x
+
+data_t.oe  =>
+    !eir3 & !n_t_5x
+
+dcm_or_dpic_low =>
+    !n_t_24x
+  # rom_22_l
+
+dvi =>
+    !rom_12_l & !rom_14_l
+
+dvi_and_ts3 =>
+    !dvi
+  # ts3
+
+eae_on.d  =>
+    !n_t_84x
+
+eae_on.ap  =>
+    1 
+
+!eae_on.ar  =>
+    !init
+
+eae_on.ck  =>
+    etp_or_tp3
+
+!en0 =>
+    !en2
+  # n_t_56x & next_loc
+
+en0.oe  =>
+    !en2
+  # n_t_56x & next_loc
+
+!en1 =>
+    !n_t_5x
+  # eir3 & !n_t_33x
+  # !last_dvi_low & mq11_low
+  # !normal_dvi_low
+  # !mq11_low & !muy_and_eae_on_low
+
+en1.oe  =>
+    !n_t_5x
+  # eir3 & !n_t_33x
+  # !last_dvi_low & mq11_low
+  # !normal_dvi_low
+  # !mq11_low & !muy_and_eae_on_low
+
+!en2 =>
+    !rtf
+  # !sam_low
+
+en2.oe  =>
+    !rtf
+  # !sam_low
+
+etp =>
+    !n_t_22x & n_t_23x
+
+etp_or_tp3 =>
+    !etp & !tp3
+
+incr_sc =>
+    rom_15_l
+  # !n_t_64x
+
+last_dvi_low =>
+    !dvi
+  # ts3
+  # last_step_l
+
+!left_low =>
+    !lp_shl_or_norms_rp_and_eae_on_lo & shift_ok
+  # !last_dvi_low
+  # div_12_l & !normal_dvi_low
+
+left_low.oe  =>
+    !lp_shl_or_norms_rp_and_eae_on_lo & shift_ok
+  # !last_dvi_low
+  # div_12_l & !normal_dvi_low
+
+!link_data =>
+    bac0 & !rom_11_l
+  # dvi & !eae_on
+  # n_t_49x
+
+link_data.oe  =>
+    bac0 & !rom_11_l
+  # dvi & !eae_on
+  # n_t_49x
+
+!link_load =>
+    !rom_17_l & tp3
+  # n_t_44x & n_t_64x
+
+link_load.oe  =>
+    !rom_17_l & tp3
+  # n_t_44x & n_t_64x
+
+lp_asr_or_lsr_rp_and_eae_on_low =>
+    !rom_12_l
+  # !rom_14_l
+  # !n_t_61x
+
+!lp_dcm_or_dpic_or_sam_rp_and_ts3 =>
+    rom_22_l
+  # ts3
+
+lp_shl_or_norms_rp_and_eae_on_lo =>
+    rom_14_l
+  # !n_t_61x
+  # !rom_12_l
+
+!md_disable =>
+    !eir3 & !n_t_5x
+
+md_disable.oe  =>
+    !eir3 & !n_t_5x
+
+mq0_gt_ac0 =>
+    bac0 & mq0_low
+
+!mq_data_low =>
+    !lp_shl_or_norms_rp_and_eae_on_lo
+  # !dvi_and_ts3 & n_t_66x
+
+mq_data_low.oe  =>
+    !lp_shl_or_norms_rp_and_eae_on_lo
+  # !dvi_and_ts3 & n_t_66x
+
+mq_ge_ac =>
+    ad0_low & n_t_77x
+
+mq_load =>
+    etp_or_tp3
+
+mq_load.oe  =>
+    !n_t_52x
+
+!mq_to_bus_low =>
+    !n_t_5x
+  # !n_t_33x
+
+mq_to_bus_low.oe  =>
+    !n_t_5x
+  # !n_t_33x
+
+muy_and_eae_on_low =>
+    rom_12_l
+  # !n_t_61x
+  # !rom_14_l
+
+!n_t_13x.d  =>
+    !n_t_40x
+
+n_t_13x.ap  =>
+    1 
+
+n_t_13x.ar  =>
+    !modeb
+
+n_t_13x.ck  =>
+    !n_t_43x
+
+n_t_15x =>
+    !eae_on
+  # !norms_or_shl_or_asr_or_lsr
+  # fetch
+
+n_t_18x =>
+    !dad_or_dst & !n_t_15x
+
+!n_t_19x =>
+    !n_t_27x
+  # !n_t_18x
+  # !ac2_mq11_0
+
+n_t_21x =>
+    !n_t_65x
+  # !n_t_76x
+
+!n_t_22x.d  =>
+    n_t_21x
+
+n_t_22x.ap  =>
+    1 
+
+!n_t_22x.ar  =>
+    0 
+
+n_t_22x.ck  =>
+    !clock
+
+!n_t_23x.d  =>
+    n_t_22x
+
+n_t_23x.ap  =>
+    1 
+
+n_t_23x.ar  =>
+    1 
+
+n_t_23x.ck  =>
+    !clock
+
+n_t_24x =>
+    !eir2 & eir3
+  # eir2 & !eir3
+
+n_t_27x =>
+    !ac1 & !n_t_15x
+
+n_t_28x =>
+    !n_t_18x & !n_t_27x
+
+n_t_33x =>
+    ac_to_mq_ena_low
+  # ts3
+
+n_t_34x =>
+    !mq0_low & n_t_70x
+  # mq0_low & !n_t_70x
+
+!n_t_38x =>
+    !sc_0_low
+  # !mq10_low
+
+!n_t_3x =>
+    !eae_on & !n_t_84x
+  # eae_on & n_t_84x
+
+!n_t_40x =>
+    !data1 & !rtf
+  # mq0_gt_ac0 & !sam_low
+  # !rtf
+  # mq_ge_ac & !sam_low
+  # !muy_and_eae_on_low
+  # !lp_asr_or_lsr_rp_and_eae_on_low & !mq11_low
+
+n_t_42x.d  =>
+    !ad0_low
+
+n_t_42x.ap  =>
+    !dvi
+
+n_t_42x.ar  =>
+    1 
+
+n_t_42x.ck  =>
+    !ac_load_low
+
+!n_t_43x =>
+    !rtf & tp3
+  # !sam_low & tp3
+  # !muy_and_eae_on_low
+  # !lp_asr_or_lsr_rp_and_eae_on_low & n_t_64x
+
+n_t_44x =>
+    !last_dvi_low
+  # !dcm_or_dpic_low
+  # !lp_shl_or_norms_rp_and_eae_on_lo
+
+!n_t_46x =>
+    !n_t_33x
+  # !last_dvi_low
+  # !normal_dvi_low
+  # eae_on & last_dvi_low
+
+n_t_49x =>
+    !carry_out_low & !rom_13_l
+
+!n_t_4x =>
+    carry_out_low & dvi & n_t_84x
+  # dcm_or_dpic_low & rom_15_l
+
+n_t_52x =>
+    !shift_ok
+  # n_t_46x
+
+!n_t_53x =>
+    link
+  # rom_13_l
+
+!n_t_56x =>
+    !msir_disable
+  # ts4
+
+n_t_5x =>
+    ts2
+  # ac_to_mq_ena_low
+
+n_t_60x.d  =>
+    1 
+
+n_t_60x.ap  =>
+    1 
+
+!n_t_60x.ar  =>
+    !tp2_d
+
+n_t_60x.ck  =>
+    !tp2
+
+n_t_61x =>
+    eae_on & !rom_15_l
+
+n_t_63x =>
+    !eae_on
+  # !tp
+  # rom_12_l
+
+n_t_64x =>
+    etp & shift_ok
+
+!n_t_65x.d  =>
+    n_t_63x
+
+n_t_65x.ap  =>
+    1 
+
+n_t_65x.ar  =>
+    1 
+
+n_t_65x.ck  =>
+    !clock
+
+n_t_66x =>
+    carry_out_low & !n_t_92x
+  # !carry_out_low & n_t_92x
+
+n_t_67x =>
+    !rom_15_l
+  # !dcm_or_dpic_low
+
+!n_t_68x =>
+    tp1
+  # n_t_22x
+
+n_t_69x.d  =>
+    n_t_67x
+
+n_t_69x.ap  =>
+    1 
+
+n_t_69x.ar  =>
+    !n_t_68x
+
+n_t_69x.ck  =>
+    !tp2_d
+
+n_t_70x =>
+    eae_on & mq11_low
+
+n_t_73x =>
+    !n_t_4x
+  # !tp3
+
+n_t_74x =>
+    !dcm_or_dpic_low
+  # !last_step_l
+  # !shift_ok
+
+n_t_76x =>
+    !tp
+  # !eae_on
+  # !rom_12_l
+
+n_t_77x =>
+    bac0 & !mq0_low
+  # !bac0 & mq0_low
+
+n_t_82x =>
+    !sc_0_low
+  # !n_t_85x
+
+n_t_84x.d  =>
+    n_t_74x
+
+n_t_84x.ap  =>
+    init
+
+!n_t_84x.ar  =>
+    n_t_73x
+
+n_t_84x.ck  =>
+    etp
+
+n_t_85x =>
+    !mq10_low & !mq11_low
+  # mq10_low & mq11_low
+
+n_t_92x =>
+    !n_t_38x & n_t_42x
+  # n_t_38x & !n_t_42x
+
+normal_dvi_low =>
+    ts3
+  # !last_step_l
+  # !dvi
+
+norms_or_shl_or_asr_or_lsr =>
+    rom_12_l & !rom_15_l
+
+!not_last_xfer =>
+    n_t_4x & n_t_69x
+
+not_last_xfer.oe  =>
+    n_t_4x & n_t_69x
+
+!restart =>
+    n_t_3x
+
+restart.oe  =>
+    n_t_3x
+
+!right_low =>
+    !muy_and_eae_on_low
+  # !lp_asr_or_lsr_rp_and_eae_on_low & shift_ok
+
+right_low.oe  =>
+    !muy_and_eae_on_low
+  # !lp_asr_or_lsr_rp_and_eae_on_low & shift_ok
+
+sam_low =>
+    !lp_dcm_or_dpic_or_sam_rp_and_ts3
+  # n_t_24x
+
+!shift_ok =>
+    ac0_ne_ac1 & n_t_18x
+  # !last_step_l & modeb & norms_or_shl_or_asr_or_lsr
+  # ac2_mq11_0 & !n_t_28x
+
+!shl_ena_low =>
+    !lp_shl_or_norms_rp_and_eae_on_lo & shift_ok
+  # !dvi_and_ts3
+
+shl_ena_low.oe  =>
+    !lp_shl_or_norms_rp_and_eae_on_lo & shift_ok
+  # !dvi_and_ts3
+
+!skip =>
+    ac2_8_0 & ac_0 & !rom_24_l
+  # next_loc
+  # n_t_13x & !sgt_low
+
+skip.oe  =>
+    ac2_8_0 & ac_0 & !rom_24_l
+  # next_loc
+  # n_t_13x & !sgt_low
+
+tp.d  =>
+    !n_t_23x
+
+!tp.ap  =>
+    eae_on
+
+tp.ar  =>
+    1 
+
+tp.ck  =>
+    !clock
+
+!tp2_d.d  =>
+    n_t_60x
+
+tp2_d.ap  =>
+    1 
+
+!tp2_d.ar  =>
+    0 
+
+tp2_d.ck  =>
+    !clock
+
+%END
