@@ -1,0 +1,124 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'rx_rate'
+Slack : -241.000
+TNS   : -2152.000
+
+Type  : Slow Model Setup 'clk'
+Slack : -12.000
+TNS   : -48.000
+
+Type  : Slow Model Setup 'bd600'
+Slack : -12.000
+TNS   : -12.000
+
+Type  : Slow Model Setup 'bd1200'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Slow Model Setup 'bd2400'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Slow Model Setup 'gdollar_0'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Slow Model Setup 'gdollar_1'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Slow Model Setup 'n_t_154x'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Slow Model Setup 'n_t_155x'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Slow Model Setup 'sw1'
+Slack : 6.500
+TNS   : 0.000
+
+Type  : Slow Model Hold 'rx_rate'
+Slack : -109.000
+TNS   : -872.000
+
+Type  : Slow Model Hold 'sw1'
+Slack : -22.000
+TNS   : -22.000
+
+Type  : Slow Model Hold 'bd1200'
+Slack : -20.000
+TNS   : -24.000
+
+Type  : Slow Model Hold 'gdollar_0'
+Slack : -20.000
+TNS   : -24.000
+
+Type  : Slow Model Hold 'n_t_154x'
+Slack : -20.000
+TNS   : -24.000
+
+Type  : Slow Model Hold 'bd600'
+Slack : -20.000
+TNS   : -20.000
+
+Type  : Slow Model Hold 'clk'
+Slack : -14.000
+TNS   : -54.000
+
+Type  : Slow Model Hold 'bd2400'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Slow Model Hold 'gdollar_1'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Slow Model Hold 'n_t_155x'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'rx_rate'
+Slack : -119.500
+TNS   : -9046.000
+
+Type  : Slow Model Minimum Pulse Width 'sw1'
+Slack : -13.500
+TNS   : -68.000
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -5.500
+TNS   : -53.000
+
+Type  : Slow Model Minimum Pulse Width 'bd1200'
+Slack : -5.500
+TNS   : -22.000
+
+Type  : Slow Model Minimum Pulse Width 'bd600'
+Slack : -5.500
+TNS   : -22.000
+
+Type  : Slow Model Minimum Pulse Width 'gdollar_0'
+Slack : -5.500
+TNS   : -22.000
+
+Type  : Slow Model Minimum Pulse Width 'n_t_154x'
+Slack : -5.500
+TNS   : -22.000
+
+Type  : Slow Model Minimum Pulse Width 'bd2400'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Slow Model Minimum Pulse Width 'gdollar_1'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Slow Model Minimum Pulse Width 'n_t_155x'
+Slack : -5.500
+TNS   : -11.000
+

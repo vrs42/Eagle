@@ -1,0 +1,2143 @@
+TimeQuest Timing Analyzer report for M8650
+Fri Oct 22 00:40:05 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Legal Notice
+  3. TimeQuest Timing Analyzer Summary
+  4. Parallel Compilation
+  5. TimeQuest Timing Analyzer Messages
+  6. SDC File List
+  7. Clocks
+  8. Slow Model Fmax Summary
+  9. Slow Model Setup Summary
+ 10. Slow Model Hold Summary
+ 11. Slow Model Recovery Summary
+ 12. Slow Model Removal Summary
+ 13. Slow Model Minimum Pulse Width Summary
+ 14. Slow Model Setup: 'rx_rate'
+ 15. Slow Model Setup: 'clk'
+ 16. Slow Model Setup: 'bd600'
+ 17. Slow Model Setup: 'bd1200'
+ 18. Slow Model Setup: 'bd2400'
+ 19. Slow Model Setup: 'gdollar_0'
+ 20. Slow Model Setup: 'gdollar_1'
+ 21. Slow Model Setup: 'n_t_154x'
+ 22. Slow Model Setup: 'n_t_155x'
+ 23. Slow Model Setup: 'sw1'
+ 24. Slow Model Hold: 'rx_rate'
+ 25. Slow Model Hold: 'sw1'
+ 26. Slow Model Hold: 'bd1200'
+ 27. Slow Model Hold: 'gdollar_0'
+ 28. Slow Model Hold: 'n_t_154x'
+ 29. Slow Model Hold: 'bd600'
+ 30. Slow Model Hold: 'clk'
+ 31. Slow Model Hold: 'bd2400'
+ 32. Slow Model Hold: 'gdollar_1'
+ 33. Slow Model Hold: 'n_t_155x'
+ 34. Slow Model Minimum Pulse Width: 'rx_rate'
+ 35. Slow Model Minimum Pulse Width: 'sw1'
+ 36. Slow Model Minimum Pulse Width: 'clk'
+ 37. Slow Model Minimum Pulse Width: 'bd1200'
+ 38. Slow Model Minimum Pulse Width: 'bd600'
+ 39. Slow Model Minimum Pulse Width: 'gdollar_0'
+ 40. Slow Model Minimum Pulse Width: 'n_t_154x'
+ 41. Slow Model Minimum Pulse Width: 'bd2400'
+ 42. Slow Model Minimum Pulse Width: 'gdollar_1'
+ 43. Slow Model Minimum Pulse Width: 'n_t_155x'
+ 44. Setup Times
+ 45. Hold Times
+ 46. Clock to Output Times
+ 47. Minimum Clock to Output Times
+ 48. Propagation Delay
+ 49. Minimum Propagation Delay
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; M8650                                                             ;
+; Device Family      ; MAX7000S                                                          ;
+; Device Name        ; EPM7128SLC84-15                                                   ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Oct 22 00:39:58 2021
+Info: Command: quartus_sta M8650 -c M8650
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (335095): TimeQuest Timing Analyzer does not support the analysis of latches as synchronous elements for the currently selected device family.
+Info (332104): Reading SDC File: 'M8650.sdc'
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "line$latch~10|[3]"
+    Warning (332126): Node "line$latch~10|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "line_m~10|[3]"
+    Warning (332126): Node "line_m~10|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "tx_data~9|[2]"
+    Warning (332126): Node "tx_data~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "tflg_l~10|[4]"
+    Warning (332126): Node "tflg_l~10|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "tx_data_m~18|[1]"
+    Warning (332126): Node "tx_data_m~18|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "tflg_l_m~10|[3]"
+    Warning (332126): Node "tflg_l_m~10|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "int_enab_l~9|[3]"
+    Warning (332126): Node "int_enab_l~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "rflg_l~9|[2]"
+    Warning (332126): Node "rflg_l~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "int_enab_l_m~9|[2]"
+    Warning (332126): Node "int_enab_l_m~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "rflg_l_m~9|[2]"
+    Warning (332126): Node "rflg_l_m~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "r_run_l$latch~10|[3]"
+    Warning (332126): Node "r_run_l$latch~10|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "r_run_l_m~13|[0]"
+    Warning (332126): Node "r_run_l_m~13|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "start_l~9|[2]"
+    Warning (332126): Node "start_l~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "start_l_m~9|[1]"
+    Warning (332126): Node "start_l_m~9|dataout"
+Warning (332125): Found combinational loop of 165 nodes
+    Warning (332126): Node "n_t_146x_m~9|[3]"
+    Warning (332126): Node "n_t_146x_m~9|dataout"
+    Warning (332126): Node "n_t_146x~9|[0]"
+    Warning (332126): Node "n_t_146x~9|dataout"
+    Warning (332126): Node "gdollar_7_m~9|[0]"
+    Warning (332126): Node "gdollar_7_m~9|dataout"
+    Warning (332126): Node "gdollar_7_m~9|[3]"
+    Warning (332126): Node "gdollar_7~9|[0]"
+    Warning (332126): Node "gdollar_7~9|dataout"
+    Warning (332126): Node "gdollar_7~9|[3]"
+    Warning (332126): Node "n_t_119x_m~9|[0]"
+    Warning (332126): Node "n_t_119x_m~9|dataout"
+    Warning (332126): Node "n_t_119x_m~9|[3]"
+    Warning (332126): Node "n_t_119x~9|[0]"
+    Warning (332126): Node "n_t_119x~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[16]"
+    Warning (332126): Node "tx_active_l_m~16|pexpout"
+    Warning (332126): Node "tx_active_l_m~9|pexpin"
+    Warning (332126): Node "tx_active_l_m~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[3]"
+    Warning (332126): Node "tx_active_l_m~9|[1]"
+    Warning (332126): Node "tx_active_l~9|[0]"
+    Warning (332126): Node "tx_active_l~9|dataout"
+    Warning (332126): Node "tx_active_l~9|[2]"
+    Warning (332126): Node "tx_active_l_m~16|[7]"
+    Warning (332126): Node "tx_active_l_m~9|[13]"
+    Warning (332126): Node "tx_div_m~9|[3]"
+    Warning (332126): Node "tx_div_m~9|dataout"
+    Warning (332126): Node "tx_div_m~9|[1]"
+    Warning (332126): Node "tx_div~9|[0]"
+    Warning (332126): Node "tx_div~9|dataout"
+    Warning (332126): Node "n_t_146x_m~9|[1]"
+    Warning (332126): Node "tx_active_l_m~16|[12]"
+    Warning (332126): Node "tx_active_l_m~9|[9]"
+    Warning (332126): Node "n_t_66x~9|[3]"
+    Warning (332126): Node "n_t_66x~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[9]"
+    Warning (332126): Node "n_t_66x~9|[2]"
+    Warning (332126): Node "tx_active_l_m~9|[6]"
+    Warning (332126): Node "n_t_66x_m~18|[4]"
+    Warning (332126): Node "n_t_66x_m~18|dataout"
+    Warning (332126): Node "n_t_66x_m~18|[2]"
+    Warning (332126): Node "n_t_66x~9|[0]"
+    Warning (332126): Node "tx_shift_l~59|datain[0]"
+    Warning (332126): Node "tx_shift_l~59|dataout"
+    Warning (332126): Node "n_t_66x~9|[5]"
+    Warning (332126): Node "n_t_66x_m~18|[3]"
+    Warning (332126): Node "n_t_65x~9|[3]"
+    Warning (332126): Node "n_t_65x~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[10]"
+    Warning (332126): Node "tx_active_l_m~9|[7]"
+    Warning (332126): Node "n_t_65x~9|[2]"
+    Warning (332126): Node "n_t_66x_m~7|[0]"
+    Warning (332126): Node "n_t_66x_m~7|dataout"
+    Warning (332126): Node "n_t_66x_m~18|[0]"
+    Warning (332126): Node "n_t_65x_m~18|[4]"
+    Warning (332126): Node "n_t_65x_m~18|dataout"
+    Warning (332126): Node "n_t_65x_m~18|[2]"
+    Warning (332126): Node "n_t_65x~9|[0]"
+    Warning (332126): Node "n_t_63x~9|[3]"
+    Warning (332126): Node "n_t_63x~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[11]"
+    Warning (332126): Node "tx_active_l_m~9|[8]"
+    Warning (332126): Node "n_t_63x~9|[2]"
+    Warning (332126): Node "n_t_65x_m~7|[0]"
+    Warning (332126): Node "n_t_65x_m~7|dataout"
+    Warning (332126): Node "n_t_65x_m~18|[0]"
+    Warning (332126): Node "n_t_63x_m~18|[4]"
+    Warning (332126): Node "n_t_63x_m~18|dataout"
+    Warning (332126): Node "n_t_63x_m~18|[2]"
+    Warning (332126): Node "n_t_63x~9|[0]"
+    Warning (332126): Node "n_t_61x~9|[3]"
+    Warning (332126): Node "n_t_61x~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[8]"
+    Warning (332126): Node "n_t_63x_m~7|[0]"
+    Warning (332126): Node "n_t_63x_m~7|dataout"
+    Warning (332126): Node "n_t_63x_m~18|[0]"
+    Warning (332126): Node "n_t_61x~9|[2]"
+    Warning (332126): Node "tx_active_l_m~9|[5]"
+    Warning (332126): Node "n_t_61x_m~18|[4]"
+    Warning (332126): Node "n_t_61x_m~18|dataout"
+    Warning (332126): Node "n_t_61x_m~18|[2]"
+    Warning (332126): Node "n_t_61x~9|[0]"
+    Warning (332126): Node "tx_shift_l~58|datain[0]"
+    Warning (332126): Node "tx_shift_l~58|dataout"
+    Warning (332126): Node "n_t_63x~9|[5]"
+    Warning (332126): Node "n_t_63x_m~18|[3]"
+    Warning (332126): Node "n_t_61x~9|[5]"
+    Warning (332126): Node "n_t_61x_m~18|[3]"
+    Warning (332126): Node "n_t_56x~9|[5]"
+    Warning (332126): Node "n_t_56x~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[13]"
+    Warning (332126): Node "tx_active_l_m~9|[10]"
+    Warning (332126): Node "n_t_56x~9|[2]"
+    Warning (332126): Node "n_t_61x_m~7|[0]"
+    Warning (332126): Node "n_t_61x_m~7|dataout"
+    Warning (332126): Node "n_t_61x_m~18|[0]"
+    Warning (332126): Node "n_t_56x~9|[3]"
+    Warning (332126): Node "n_t_56x_m~18|[4]"
+    Warning (332126): Node "n_t_56x_m~18|dataout"
+    Warning (332126): Node "n_t_56x_m~18|[2]"
+    Warning (332126): Node "n_t_56x~9|[0]"
+    Warning (332126): Node "tx_shift_l~55|datain[0]"
+    Warning (332126): Node "tx_shift_l~55|dataout"
+    Warning (332126): Node "n_t_65x~9|[5]"
+    Warning (332126): Node "n_t_65x_m~18|[3]"
+    Warning (332126): Node "n_t_56x_m~18|[3]"
+    Warning (332126): Node "n_t_62x~9|[3]"
+    Warning (332126): Node "n_t_62x~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[14]"
+    Warning (332126): Node "tx_active_l_m~9|[11]"
+    Warning (332126): Node "n_t_62x~9|[2]"
+    Warning (332126): Node "n_t_56x_m~7|[0]"
+    Warning (332126): Node "n_t_56x_m~7|dataout"
+    Warning (332126): Node "n_t_56x_m~18|[0]"
+    Warning (332126): Node "n_t_62x_m~18|[4]"
+    Warning (332126): Node "n_t_62x_m~18|dataout"
+    Warning (332126): Node "n_t_62x_m~18|[2]"
+    Warning (332126): Node "n_t_62x~9|[0]"
+    Warning (332126): Node "n_t_60x~9|[3]"
+    Warning (332126): Node "n_t_60x~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[15]"
+    Warning (332126): Node "tx_active_l_m~9|[12]"
+    Warning (332126): Node "n_t_60x~9|[2]"
+    Warning (332126): Node "n_t_62x_m~7|[0]"
+    Warning (332126): Node "n_t_62x_m~7|dataout"
+    Warning (332126): Node "n_t_62x_m~18|[0]"
+    Warning (332126): Node "n_t_60x_m~18|[4]"
+    Warning (332126): Node "n_t_60x_m~18|dataout"
+    Warning (332126): Node "n_t_60x_m~18|[2]"
+    Warning (332126): Node "n_t_60x~9|[0]"
+    Warning (332126): Node "tx_shift_l~2sexp|datain[0]"
+    Warning (332126): Node "tx_shift_l~2sexp|dataout"
+    Warning (332126): Node "n_t_62x~9|[5]"
+    Warning (332126): Node "n_t_62x_m~18|[3]"
+    Warning (332126): Node "n_t_60x~9|[5]"
+    Warning (332126): Node "n_t_60x_m~18|[3]"
+    Warning (332126): Node "n_t_119x~9|[1]"
+    Warning (332126): Node "n_t_119x_m~9|[1]"
+    Warning (332126): Node "gdollar_7~9|[1]"
+    Warning (332126): Node "gdollar_7_m~9|[1]"
+    Warning (332126): Node "n_t_146x~9|[1]"
+    Warning (332126): Node "enab~9|[3]"
+    Warning (332126): Node "enab~9|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[2]"
+    Warning (332126): Node "n_t_60x_m~7|[0]"
+    Warning (332126): Node "n_t_60x_m~7|dataout"
+    Warning (332126): Node "n_t_60x_m~18|[0]"
+    Warning (332126): Node "tx_active_l_m~9|[4]"
+    Warning (332126): Node "enab~9|[2]"
+    Warning (332126): Node "n_t_108x~9sexp2|datain[0]"
+    Warning (332126): Node "n_t_108x~9sexp2|dataout"
+    Warning (332126): Node "tx_active_l_m~16|[1]"
+    Warning (332126): Node "tx_active_l_m~9|[3]"
+    Warning (332126): Node "tx_div~9|[2]"
+    Warning (332126): Node "tx_div_m~9|[4]"
+    Warning (332126): Node "enab_m~9|[3]"
+    Warning (332126): Node "enab_m~9|dataout"
+    Warning (332126): Node "enab_m~9|[2]"
+    Warning (332126): Node "enab~9|[0]"
+    Warning (332126): Node "n_t_146x_m~9|[0]"
+    Warning (332126): Node "n_t_119x~9|[3]"
+    Warning (332126): Node "tx_active_l_m~9|[17]"
+    Warning (332126): Node "n_t_146x~9|[3]"
+    Warning (332126): Node "n_t_108x~9sexp2|datain[3]"
+Critical Warning (332081): Design contains combinational loop of 165 nodes. Estimating the delays through the loop.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "p_pulse_l~9|dataout"
+    Warning (332126): Node "p_pulse_l~9|[2]"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "p_pulse_l_m~9|dataout"
+    Warning (332126): Node "p_pulse_l_m~9|[1]"
+Warning (332125): Found combinational loop of 102 nodes
+    Warning (332126): Node "rx_div8_m~9|[3]"
+    Warning (332126): Node "rx_div8_m~9|dataout"
+    Warning (332126): Node "rx_div8_m~9|[2]"
+    Warning (332126): Node "rx_div8~9|[0]"
+    Warning (332126): Node "rx_div8~9|dataout"
+    Warning (332126): Node "rx_div8~9|[2]"
+    Warning (332126): Node "spike_det_l~10|[4]"
+    Warning (332126): Node "spike_det_l~10|dataout"
+    Warning (332126): Node "spike_det_l~10|[2]"
+    Warning (332126): Node "n_t_70x~3|[3]"
+    Warning (332126): Node "n_t_70x~3|dataout"
+    Warning (332126): Node "rx_active~10|[1]"
+    Warning (332126): Node "rx_active~10|dataout"
+    Warning (332126): Node "rx_last_l~1sexp|datain[0]"
+    Warning (332126): Node "rx_last_l~1sexp|dataout"
+    Warning (332126): Node "rx_div8~9|[3]"
+    Warning (332126): Node "rx_div4_l~9|[3]"
+    Warning (332126): Node "rx_div4_l~9|dataout"
+    Warning (332126): Node "rx_div8_m~9|[1]"
+    Warning (332126): Node "rx_div4_l~9|[2]"
+    Warning (332126): Node "rx_div4_l_m~9|[0]"
+    Warning (332126): Node "rx_div4_l_m~9|dataout"
+    Warning (332126): Node "rx_div4_l_m~9|[2]"
+    Warning (332126): Node "rx_div4_l~9|[0]"
+    Warning (332126): Node "rx_div8~9|[1]"
+    Warning (332126): Node "rx_div4_l_m~9|[3]"
+    Warning (332126): Node "rx_div2_l~9|[3]"
+    Warning (332126): Node "rx_div2_l~9|dataout"
+    Warning (332126): Node "rx_div4_l~9|[1]"
+    Warning (332126): Node "rx_div2_l~9|[2]"
+    Warning (332126): Node "rx_div2_l_m~9|[0]"
+    Warning (332126): Node "rx_div2_l_m~9|dataout"
+    Warning (332126): Node "rx_div2_l_m~9|[2]"
+    Warning (332126): Node "rx_div2_l~9|[0]"
+    Warning (332126): Node "rx_div4_l_m~9|[1]"
+    Warning (332126): Node "rx_div2_l_m~9|[3]"
+    Warning (332126): Node "rx_active~10|[3]"
+    Warning (332126): Node "rx_active_m~13|[5]"
+    Warning (332126): Node "rx_active_m~13|dataout"
+    Warning (332126): Node "rx_active_m~13|[1]"
+    Warning (332126): Node "rx_active~10|[0]"
+    Warning (332126): Node "rx_again_l~1sexp|datain[2]"
+    Warning (332126): Node "rx_again_l~1sexp|dataout"
+    Warning (332126): Node "spike_det_l~10|[6]"
+    Warning (332126): Node "spike_det_l~10|[3]"
+    Warning (332126): Node "spike_det_l_m~20|[3]"
+    Warning (332126): Node "spike_det_l_m~20|pexpout"
+    Warning (332126): Node "spike_det_l_m~13|pexpin"
+    Warning (332126): Node "spike_det_l_m~13|dataout"
+    Warning (332126): Node "spike_det_l_m~13|[0]"
+    Warning (332126): Node "spike_det_l~10|[0]"
+    Warning (332126): Node "spike_det_l_m~5sexp|datain[1]"
+    Warning (332126): Node "spike_det_l_m~5sexp|dataout"
+    Warning (332126): Node "spike_det_l_m~20|[1]"
+    Warning (332126): Node "spike_det_l_m~13|[1]"
+    Warning (332126): Node "spike_det_l_m~13|[5]"
+    Warning (332126): Node "n_t_70x~3|[1]"
+    Warning (332126): Node "rx_active8_l~3|datain[0]"
+    Warning (332126): Node "rx_active8_l~3|dataout"
+    Warning (332126): Node "spike_det_l~10|[5]"
+    Warning (332126): Node "last_unit~9|[3]"
+    Warning (332126): Node "last_unit~9|dataout"
+    Warning (332126): Node "rx_last_l~1sexp|datain[1]"
+    Warning (332126): Node "rx_div4_l~9|[4]"
+    Warning (332126): Node "rx_div4_l_m~9|[4]"
+    Warning (332126): Node "rx_div2_l~9|[4]"
+    Warning (332126): Node "rx_div2_l_m~9|[4]"
+    Warning (332126): Node "rx_active~10|[6]"
+    Warning (332126): Node "rx_active_m~13|[6]"
+    Warning (332126): Node "rx_again_l~1sexp|datain[3]"
+    Warning (332126): Node "spike_det_l_m~13|[2]"
+    Warning (332126): Node "n_t_70x~3|[0]"
+    Warning (332126): Node "last_unit~9|[2]"
+    Warning (332126): Node "comb~11|[5]"
+    Warning (332126): Node "comb~11|dataout"
+    Warning (332126): Node "rx_active_m~13|[0]"
+    Warning (332126): Node "last_unit_m~9|[3]"
+    Warning (332126): Node "last_unit_m~9|dataout"
+    Warning (332126): Node "last_unit_m~9|[2]"
+    Warning (332126): Node "last_unit~9|[0]"
+    Warning (332126): Node "ck_pulse~9|[4]"
+    Warning (332126): Node "ck_pulse~9|dataout"
+    Warning (332126): Node "n_t_70x~3|[4]"
+    Warning (332126): Node "last_unit~9|[1]"
+    Warning (332126): Node "last_unit_m~9|[1]"
+    Warning (332126): Node "ck_pulse~9|[2]"
+    Warning (332126): Node "rx_active8_l~0sexp|datain[0]"
+    Warning (332126): Node "rx_active8_l~0sexp|dataout"
+    Warning (332126): Node "ck_pulse~9|[3]"
+    Warning (332126): Node "ck_pulse_m~9|[2]"
+    Warning (332126): Node "ck_pulse_m~9|dataout"
+    Warning (332126): Node "ck_pulse_m~9|[1]"
+    Warning (332126): Node "ck_pulse~9|[0]"
+    Warning (332126): Node "comb~11|[4]"
+    Warning (332126): Node "comb~11|[1]"
+    Warning (332126): Node "spike_det_l_m~5sexp|datain[2]"
+    Warning (332126): Node "n_t_70x~3|[2]"
+    Warning (332126): Node "rx_active8_l~3|datain[1]"
+    Warning (332126): Node "ck_pulse~9|[5]"
+    Warning (332126): Node "rx_active8_l~0sexp|datain[1]"
+    Warning (332126): Node "ck_pulse_m~9|[3]"
+    Warning (332126): Node "rx_div8_m~9|[0]"
+Critical Warning (332081): Design contains combinational loop of 102 nodes. Estimating the delays through the loop.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = OFF
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -241.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):  -241.000     -2152.000 rx_rate 
+    Info (332119):   -12.000       -48.000 clk 
+    Info (332119):   -12.000       -12.000 bd600 
+    Info (332119):    -3.500        -3.500 bd1200 
+    Info (332119):    -3.500        -3.500 bd2400 
+    Info (332119):    -3.500        -3.500 gdollar_0 
+    Info (332119):    -3.500        -3.500 gdollar_1 
+    Info (332119):    -3.500        -3.500 n_t_154x 
+    Info (332119):    -3.500        -3.500 n_t_155x 
+    Info (332119):     6.500         0.000 sw1 
+Info (332146): Worst-case hold slack is -109.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):  -109.000      -872.000 rx_rate 
+    Info (332119):   -22.000       -22.000 sw1 
+    Info (332119):   -20.000       -24.000 bd1200 
+    Info (332119):   -20.000       -24.000 gdollar_0 
+    Info (332119):   -20.000       -24.000 n_t_154x 
+    Info (332119):   -20.000       -20.000 bd600 
+    Info (332119):   -14.000       -54.000 clk 
+    Info (332119):    -4.000        -4.000 bd2400 
+    Info (332119):    -4.000        -4.000 gdollar_1 
+    Info (332119):    -4.000        -4.000 n_t_155x 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -119.500
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):  -119.500     -9046.000 rx_rate 
+    Info (332119):   -13.500       -68.000 sw1 
+    Info (332119):    -5.500       -53.000 clk 
+    Info (332119):    -5.500       -22.000 bd1200 
+    Info (332119):    -5.500       -22.000 bd600 
+    Info (332119):    -5.500       -22.000 gdollar_0 
+    Info (332119):    -5.500       -22.000 n_t_154x 
+    Info (332119):    -5.500       -11.000 bd2400 
+    Info (332119):    -5.500       -11.000 gdollar_1 
+    Info (332119):    -5.500       -11.000 n_t_155x 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Error (23035): Tcl error: ERROR: Values entered did not match any valid operating conditions. Available operating conditions are: Slow Model, Fast Model
+
+    while executing
+"set_operating_conditions $current_operating_conditions"
+    invoked from within
+"if {$current_operating_conditions != $default_operating_conditions} {
+
+                set pretty_name [get_pretty_corner_name $current_operating_conditions]
+                ..."
+    invoked from within
+"foreach_in_collection current_operating_conditions $available_operating_conditions {
+
+            # Make sure we don't re-analyze the default conditions.
+            if..."
+    (procedure "generate_default_reports" line 86)
+    invoked from within
+"generate_default_reports options"
+    invoked from within
+"if [is_project_open] {
+
+        if {$options(qsf2sdc)} {
+            post_message -type error "--qsf2sdc is no longer supported. Please use Quartus 11.0 or earlier t..."
+    (procedure "main" line 121)
+    invoked from within
+"main"
+    (file "c:/altera/13.0sp1/quartus/common/tcl/internal/qsta_default_script.tcl" line 1134)
+Error: Quartus II 64-Bit TimeQuest Timing Analyzer was unsuccessful. 1 error, 322 warnings
+    Error: Peak virtual memory: 4518 megabytes
+    Error: Processing ended: Fri Oct 22 00:40:05 2021
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:02
+
+
++---------------------------------------------------+
+; SDC File List                                     ;
++---------------+--------+--------------------------+
+; SDC File Path ; Status ; Read at                  ;
++---------------+--------+--------------------------+
+; M8650.sdc     ; OK     ; Fri Oct 22 00:40:02 2021 ;
++---------------+--------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; bd600      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { bd600 }     ;
+; bd1200     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { bd1200 }    ;
+; bd2400     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { bd2400 }    ;
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }       ;
+; gdollar_0  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { gdollar_0 } ;
+; gdollar_1  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { gdollar_1 } ;
+; n_t_154x   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { n_t_154x }  ;
+; n_t_155x   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { n_t_155x }  ;
+; rx_rate    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { rx_rate }   ;
+; sw1        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { sw1 }       ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+
+
++--------------------------------------------------------------------+
+; Slow Model Fmax Summary                                            ;
++-----------+-----------------+------------+-------------------------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note                    ;
++-----------+-----------------+------------+-------------------------+
+; 2.22 MHz  ; 2.22 MHz        ; rx_rate    ;                         ;
+; 45.45 MHz ; 41.67 MHz       ; clk        ; limit due to hold check ;
+; 76.92 MHz ; 76.92 MHz       ; bd600      ;                         ;
++-----------+-----------------+------------+-------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------+
+; Slow Model Setup Summary             ;
++-----------+----------+---------------+
+; Clock     ; Slack    ; End Point TNS ;
++-----------+----------+---------------+
+; rx_rate   ; -241.000 ; -2152.000     ;
+; clk       ; -12.000  ; -48.000       ;
+; bd600     ; -12.000  ; -12.000       ;
+; bd1200    ; -3.500   ; -3.500        ;
+; bd2400    ; -3.500   ; -3.500        ;
+; gdollar_0 ; -3.500   ; -3.500        ;
+; gdollar_1 ; -3.500   ; -3.500        ;
+; n_t_154x  ; -3.500   ; -3.500        ;
+; n_t_155x  ; -3.500   ; -3.500        ;
+; sw1       ; 6.500    ; 0.000         ;
++-----------+----------+---------------+
+
+
++--------------------------------------+
+; Slow Model Hold Summary              ;
++-----------+----------+---------------+
+; Clock     ; Slack    ; End Point TNS ;
++-----------+----------+---------------+
+; rx_rate   ; -109.000 ; -872.000      ;
+; sw1       ; -22.000  ; -22.000       ;
+; bd1200    ; -20.000  ; -24.000       ;
+; gdollar_0 ; -20.000  ; -24.000       ;
+; n_t_154x  ; -20.000  ; -24.000       ;
+; bd600     ; -20.000  ; -20.000       ;
+; clk       ; -14.000  ; -54.000       ;
+; bd2400    ; -4.000   ; -4.000        ;
+; gdollar_1 ; -4.000   ; -4.000        ;
+; n_t_155x  ; -4.000   ; -4.000        ;
++-----------+----------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-----------+----------+-----------------+
+; Clock     ; Slack    ; End Point TNS   ;
++-----------+----------+-----------------+
+; rx_rate   ; -119.500 ; -9046.000       ;
+; sw1       ; -13.500  ; -68.000         ;
+; clk       ; -5.500   ; -53.000         ;
+; bd1200    ; -5.500   ; -22.000         ;
+; bd600     ; -5.500   ; -22.000         ;
+; gdollar_0 ; -5.500   ; -22.000         ;
+; n_t_154x  ; -5.500   ; -22.000         ;
+; bd2400    ; -5.500   ; -11.000         ;
+; gdollar_1 ; -5.500   ; -11.000         ;
+; n_t_155x  ; -5.500   ; -11.000         ;
++-----------+----------+-----------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'rx_rate'                                                                          ;
++----------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack    ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++----------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -241.000 ; n_t_40x   ; rx7     ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 124.000    ;
+; -241.000 ; n_t_40x   ; n_t_34x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 124.000    ;
+; -241.000 ; n_t_40x   ; n_t_36x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 124.000    ;
+; -241.000 ; n_t_40x   ; n_t_35x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 124.000    ;
+; -241.000 ; n_t_40x   ; n_t_37x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 124.000    ;
+; -241.000 ; n_t_40x   ; n_t_38x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 124.000    ;
+; -241.000 ; n_t_40x   ; n_t_39x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 124.000    ;
+; -241.000 ; n_t_40x   ; n_t_40x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 124.000    ;
+; -224.500 ; n_t_40x   ; rx7     ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_34x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; rx7     ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_34x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.500 ; n_t_40x   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 124.000    ;
+; -224.000 ; n_t_40x   ; rx_div  ; rx_rate      ; rx_rate     ; 1.000        ; -123.000   ; 98.000     ;
+; -207.500 ; n_t_40x   ; rx_div  ; rx_rate      ; rx_rate     ; 0.500        ; -106.000   ; 98.000     ;
+; -207.000 ; n_t_40x   ; rx7     ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 124.000    ;
+; -207.000 ; n_t_40x   ; n_t_34x ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 124.000    ;
+; -207.000 ; n_t_40x   ; n_t_36x ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 124.000    ;
+; -207.000 ; n_t_40x   ; n_t_35x ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 124.000    ;
+; -207.000 ; n_t_40x   ; n_t_37x ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 124.000    ;
+; -207.000 ; n_t_40x   ; n_t_38x ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 124.000    ;
+; -207.000 ; n_t_40x   ; n_t_39x ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 124.000    ;
+; -207.000 ; n_t_40x   ; n_t_40x ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 124.000    ;
+; -126.000 ; rx7       ; n_t_34x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 9.000      ;
+; -126.000 ; n_t_34x   ; n_t_36x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 9.000      ;
+; -126.000 ; n_t_36x   ; n_t_35x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 9.000      ;
+; -126.000 ; n_t_35x   ; n_t_37x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 9.000      ;
+; -126.000 ; n_t_37x   ; n_t_38x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 9.000      ;
+; -126.000 ; n_t_38x   ; n_t_39x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 9.000      ;
+; -126.000 ; n_t_39x   ; n_t_40x ; rx_rate      ; rx_rate     ; 1.000        ; -114.000   ; 9.000      ;
+; -118.000 ; rx_div    ; rx7     ; rx_rate      ; rx_rate     ; 1.000        ; 9.000      ; 124.000    ;
+; -118.000 ; rx_div    ; n_t_34x ; rx_rate      ; rx_rate     ; 1.000        ; 9.000      ; 124.000    ;
+; -118.000 ; rx_div    ; n_t_36x ; rx_rate      ; rx_rate     ; 1.000        ; 9.000      ; 124.000    ;
+; -118.000 ; rx_div    ; n_t_35x ; rx_rate      ; rx_rate     ; 1.000        ; 9.000      ; 124.000    ;
+; -118.000 ; rx_div    ; n_t_37x ; rx_rate      ; rx_rate     ; 1.000        ; 9.000      ; 124.000    ;
+; -118.000 ; rx_div    ; n_t_38x ; rx_rate      ; rx_rate     ; 1.000        ; 9.000      ; 124.000    ;
+; -118.000 ; rx_div    ; n_t_39x ; rx_rate      ; rx_rate     ; 1.000        ; 9.000      ; 124.000    ;
+; -118.000 ; rx_div    ; n_t_40x ; rx_rate      ; rx_rate     ; 1.000        ; 9.000      ; 124.000    ;
+; -109.500 ; rx7       ; n_t_34x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_34x   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_36x   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_35x   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_37x   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_38x   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_39x   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; rx_rate   ; rx7     ; rx_rate      ; rx_rate     ; 0.500        ; 17.000     ; 124.000    ;
+; -109.500 ; rx_rate   ; n_t_34x ; rx_rate      ; rx_rate     ; 0.500        ; 17.000     ; 124.000    ;
+; -109.500 ; rx_rate   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.500        ; 17.000     ; 124.000    ;
+; -109.500 ; rx_rate   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.500        ; 17.000     ; 124.000    ;
+; -109.500 ; rx_rate   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.500        ; 17.000     ; 124.000    ;
+; -109.500 ; rx_rate   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.500        ; 17.000     ; 124.000    ;
+; -109.500 ; rx_rate   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.500        ; 17.000     ; 124.000    ;
+; -109.500 ; rx_rate   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.500        ; 17.000     ; 124.000    ;
+; -109.500 ; rx7       ; n_t_34x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_34x   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_36x   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_35x   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_37x   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_38x   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.500 ; n_t_39x   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.500        ; -97.000    ; 9.000      ;
+; -109.000 ; rx_rate   ; rx7     ; rx_rate      ; rx_rate     ; 1.000        ; 17.000     ; 124.000    ;
+; -109.000 ; rx_rate   ; n_t_34x ; rx_rate      ; rx_rate     ; 1.000        ; 17.000     ; 124.000    ;
+; -109.000 ; rx_rate   ; n_t_36x ; rx_rate      ; rx_rate     ; 1.000        ; 17.000     ; 124.000    ;
+; -109.000 ; rx_rate   ; n_t_35x ; rx_rate      ; rx_rate     ; 1.000        ; 17.000     ; 124.000    ;
+; -109.000 ; rx_rate   ; n_t_37x ; rx_rate      ; rx_rate     ; 1.000        ; 17.000     ; 124.000    ;
+; -109.000 ; rx_rate   ; n_t_38x ; rx_rate      ; rx_rate     ; 1.000        ; 17.000     ; 124.000    ;
+; -109.000 ; rx_rate   ; n_t_39x ; rx_rate      ; rx_rate     ; 1.000        ; 17.000     ; 124.000    ;
+; -109.000 ; rx_rate   ; n_t_40x ; rx_rate      ; rx_rate     ; 1.000        ; 17.000     ; 124.000    ;
+; -101.500 ; rx_div    ; rx7     ; rx_rate      ; rx_rate     ; 0.500        ; 26.000     ; 124.000    ;
+; -101.500 ; rx_div    ; n_t_34x ; rx_rate      ; rx_rate     ; 0.500        ; 26.000     ; 124.000    ;
+; -101.500 ; rx_div    ; n_t_36x ; rx_rate      ; rx_rate     ; 0.500        ; 26.000     ; 124.000    ;
+; -101.500 ; rx_div    ; n_t_35x ; rx_rate      ; rx_rate     ; 0.500        ; 26.000     ; 124.000    ;
+; -101.500 ; rx_div    ; n_t_37x ; rx_rate      ; rx_rate     ; 0.500        ; 26.000     ; 124.000    ;
+; -101.500 ; rx_div    ; n_t_38x ; rx_rate      ; rx_rate     ; 0.500        ; 26.000     ; 124.000    ;
+; -101.500 ; rx_div    ; n_t_39x ; rx_rate      ; rx_rate     ; 0.500        ; 26.000     ; 124.000    ;
+; -101.500 ; rx_div    ; n_t_40x ; rx_rate      ; rx_rate     ; 0.500        ; 26.000     ; 124.000    ;
+; -101.000 ; rx_div    ; rx_div  ; rx_rate      ; rx_rate     ; 1.000        ; 0.000      ; 98.000     ;
+; -92.500  ; rx_rate   ; rx_div  ; rx_rate      ; rx_rate     ; 0.500        ; 8.000      ; 98.000     ;
+; -92.500  ; rx_rate   ; rx7     ; rx_rate      ; rx_rate     ; 0.500        ; 34.000     ; 124.000    ;
+; -92.500  ; rx_rate   ; n_t_34x ; rx_rate      ; rx_rate     ; 0.500        ; 34.000     ; 124.000    ;
+; -92.500  ; rx_rate   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.500        ; 34.000     ; 124.000    ;
+; -92.500  ; rx_rate   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.500        ; 34.000     ; 124.000    ;
+; -92.500  ; rx_rate   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.500        ; 34.000     ; 124.000    ;
+; -92.500  ; rx_rate   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.500        ; 34.000     ; 124.000    ;
+; -92.500  ; rx_rate   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.500        ; 34.000     ; 124.000    ;
+; -92.500  ; rx_rate   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.500        ; 34.000     ; 124.000    ;
+; -92.000  ; rx_rate   ; rx_div  ; rx_rate      ; rx_rate     ; 1.000        ; 8.000      ; 98.000     ;
+; -92.000  ; rx7       ; n_t_34x ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 9.000      ;
+; -92.000  ; n_t_34x   ; n_t_36x ; rx_rate      ; rx_rate     ; 1.000        ; -80.000    ; 9.000      ;
++----------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                               ;
++---------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; -12.000 ; gdollar_4 ; gdollar_4 ; clk          ; clk         ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; gdollar_5 ; gdollar_5 ; clk          ; clk         ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; gdollar_6 ; gdollar_6 ; clk          ; clk         ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; gdollar_5 ; gdollar_6 ; clk          ; clk         ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; gdollar_6 ; n_t_154x  ; clk          ; clk         ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; gdollar_5 ; n_t_154x  ; clk          ; clk         ; 1.000        ; 0.000      ; 9.000      ;
+; -10.500 ; clk       ; gdollar_4 ; clk          ; clk         ; 0.500        ; 3.000      ; 10.000     ;
+; -10.000 ; clk       ; gdollar_4 ; clk          ; clk         ; 1.000        ; 3.000      ; 10.000     ;
+; 3.000   ; gdollar_4 ; gdollar_5 ; clk          ; clk         ; 1.000        ; 15.000     ; 9.000      ;
+; 3.000   ; gdollar_4 ; gdollar_6 ; clk          ; clk         ; 1.000        ; 15.000     ; 9.000      ;
+; 3.000   ; gdollar_4 ; n_t_154x  ; clk          ; clk         ; 1.000        ; 15.000     ; 9.000      ;
+; 4.500   ; clk       ; gdollar_5 ; clk          ; clk         ; 0.500        ; 18.000     ; 10.000     ;
+; 4.500   ; clk       ; gdollar_6 ; clk          ; clk         ; 0.500        ; 18.000     ; 10.000     ;
+; 4.500   ; clk       ; n_t_154x  ; clk          ; clk         ; 0.500        ; 18.000     ; 10.000     ;
+; 5.000   ; clk       ; gdollar_5 ; clk          ; clk         ; 1.000        ; 18.000     ; 10.000     ;
+; 5.000   ; clk       ; gdollar_6 ; clk          ; clk         ; 1.000        ; 18.000     ; 10.000     ;
+; 5.000   ; clk       ; n_t_154x  ; clk          ; clk         ; 1.000        ; 18.000     ; 10.000     ;
+; 6.500   ; n_t_154x  ; gdollar_6 ; n_t_154x     ; clk         ; 0.500        ; 18.000     ; 9.000      ;
+; 6.500   ; n_t_154x  ; n_t_154x  ; n_t_154x     ; clk         ; 0.500        ; 18.000     ; 9.000      ;
+; 6.500   ; rx_rate   ; rx_rate   ; rx_rate      ; clk         ; 0.500        ; 18.000     ; 9.000      ;
+; 7.000   ; n_t_154x  ; gdollar_6 ; n_t_154x     ; clk         ; 1.000        ; 18.000     ; 9.000      ;
+; 7.000   ; n_t_154x  ; n_t_154x  ; n_t_154x     ; clk         ; 1.000        ; 18.000     ; 9.000      ;
+; 7.000   ; rx_rate   ; rx_rate   ; rx_rate      ; clk         ; 1.000        ; 18.000     ; 9.000      ;
++---------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'bd600'                                                                           ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -12.000 ; bd300     ; bd300   ; bd600        ; bd600       ; 1.000        ; 0.000      ; 9.000      ;
+; 12.500  ; rx_rate   ; rx_rate ; rx_rate      ; bd600       ; 0.500        ; 24.000     ; 9.000      ;
+; 13.000  ; rx_rate   ; rx_rate ; rx_rate      ; bd600       ; 1.000        ; 24.000     ; 9.000      ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'bd1200'                                                                         ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -3.500 ; bd600     ; bd600   ; bd600        ; bd1200      ; 0.500        ; 8.000      ; 9.000      ;
+; -3.000 ; bd600     ; bd600   ; bd600        ; bd1200      ; 1.000        ; 8.000      ; 9.000      ;
+; 12.500 ; rx_rate   ; rx_rate ; rx_rate      ; bd1200      ; 0.500        ; 24.000     ; 9.000      ;
+; 13.000 ; rx_rate   ; rx_rate ; rx_rate      ; bd1200      ; 1.000        ; 24.000     ; 9.000      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'bd2400'                                                                         ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -3.500 ; bd1200    ; bd1200  ; bd1200       ; bd2400      ; 0.500        ; 8.000      ; 9.000      ;
+; -3.000 ; bd1200    ; bd1200  ; bd1200       ; bd2400      ; 1.000        ; 8.000      ; 9.000      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'gdollar_0'                                                                        ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; -3.500 ; gdollar_1 ; gdollar_1 ; gdollar_1    ; gdollar_0   ; 0.500        ; 8.000      ; 9.000      ;
+; -3.000 ; gdollar_1 ; gdollar_1 ; gdollar_1    ; gdollar_0   ; 1.000        ; 8.000      ; 9.000      ;
+; 12.500 ; rx_rate   ; rx_rate   ; rx_rate      ; gdollar_0   ; 0.500        ; 24.000     ; 9.000      ;
+; 13.000 ; rx_rate   ; rx_rate   ; rx_rate      ; gdollar_0   ; 1.000        ; 24.000     ; 9.000      ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'gdollar_1'                                                                      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -3.500 ; bd2400    ; bd2400  ; bd2400       ; gdollar_1   ; 0.500        ; 8.000      ; 9.000      ;
+; -3.000 ; bd2400    ; bd2400  ; bd2400       ; gdollar_1   ; 1.000        ; 8.000      ; 9.000      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'n_t_154x'                                                                        ;
++--------+-----------+----------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+----------+--------------+-------------+--------------+------------+------------+
+; -3.500 ; n_t_155x  ; n_t_155x ; n_t_155x     ; n_t_154x    ; 0.500        ; 8.000      ; 9.000      ;
+; -3.000 ; n_t_155x  ; n_t_155x ; n_t_155x     ; n_t_154x    ; 1.000        ; 8.000      ; 9.000      ;
+; 12.500 ; rx_rate   ; rx_rate  ; rx_rate      ; n_t_154x    ; 0.500        ; 24.000     ; 9.000      ;
+; 13.000 ; rx_rate   ; rx_rate  ; rx_rate      ; n_t_154x    ; 1.000        ; 24.000     ; 9.000      ;
++--------+-----------+----------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'n_t_155x'                                                                         ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; -3.500 ; gdollar_0 ; gdollar_0 ; gdollar_0    ; n_t_155x    ; 0.500        ; 8.000      ; 9.000      ;
+; -3.000 ; gdollar_0 ; gdollar_0 ; gdollar_0    ; n_t_155x    ; 1.000        ; 8.000      ; 9.000      ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'sw1'                                                                            ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; 6.500  ; rx_rate   ; rx_rate ; rx_rate      ; sw1         ; 0.500        ; 18.000     ; 9.000      ;
+; 7.000  ; rx_rate   ; rx_rate ; rx_rate      ; sw1         ; 1.000        ; 18.000     ; 9.000      ;
+; 14.500 ; rx_rate   ; rx_rate ; rx_rate      ; sw1         ; 0.500        ; 26.000     ; 9.000      ;
+; 15.000 ; rx_rate   ; rx_rate ; rx_rate      ; sw1         ; 1.000        ; 26.000     ; 9.000      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'rx_rate'                                                                           ;
++----------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack    ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++----------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -109.000 ; rx_rate   ; rx7     ; rx_rate      ; rx_rate     ; 0.000        ; 131.000    ; 27.000     ;
+; -109.000 ; rx7       ; n_t_34x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 9.000      ;
+; -109.000 ; rx_rate   ; n_t_34x ; rx_rate      ; rx_rate     ; 0.000        ; 131.000    ; 27.000     ;
+; -109.000 ; n_t_34x   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 9.000      ;
+; -109.000 ; rx_rate   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.000        ; 131.000    ; 27.000     ;
+; -109.000 ; n_t_36x   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 9.000      ;
+; -109.000 ; rx_rate   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.000        ; 131.000    ; 27.000     ;
+; -109.000 ; n_t_35x   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 9.000      ;
+; -109.000 ; rx_rate   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.000        ; 131.000    ; 27.000     ;
+; -109.000 ; n_t_37x   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 9.000      ;
+; -109.000 ; rx_rate   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.000        ; 131.000    ; 27.000     ;
+; -109.000 ; n_t_38x   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 9.000      ;
+; -109.000 ; rx_rate   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.000        ; 131.000    ; 27.000     ;
+; -109.000 ; n_t_39x   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 9.000      ;
+; -109.000 ; rx_rate   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.000        ; 131.000    ; 27.000     ;
+; -108.500 ; rx_rate   ; rx7     ; rx_rate      ; rx_rate     ; -0.500       ; 131.000    ; 27.000     ;
+; -108.500 ; rx_rate   ; n_t_34x ; rx_rate      ; rx_rate     ; -0.500       ; 131.000    ; 27.000     ;
+; -108.500 ; rx_rate   ; n_t_36x ; rx_rate      ; rx_rate     ; -0.500       ; 131.000    ; 27.000     ;
+; -108.500 ; rx_rate   ; n_t_35x ; rx_rate      ; rx_rate     ; -0.500       ; 131.000    ; 27.000     ;
+; -108.500 ; rx_rate   ; n_t_37x ; rx_rate      ; rx_rate     ; -0.500       ; 131.000    ; 27.000     ;
+; -108.500 ; rx_rate   ; n_t_38x ; rx_rate      ; rx_rate     ; -0.500       ; 131.000    ; 27.000     ;
+; -108.500 ; rx_rate   ; n_t_39x ; rx_rate      ; rx_rate     ; -0.500       ; 131.000    ; 27.000     ;
+; -108.500 ; rx_rate   ; n_t_40x ; rx_rate      ; rx_rate     ; -0.500       ; 131.000    ; 27.000     ;
+; -92.000  ; rx_rate   ; rx7     ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 27.000     ;
+; -92.000  ; rx_rate   ; n_t_34x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 27.000     ;
+; -92.000  ; rx_rate   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 27.000     ;
+; -92.000  ; rx_rate   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 27.000     ;
+; -92.000  ; rx_rate   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 27.000     ;
+; -92.000  ; rx_rate   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 27.000     ;
+; -92.000  ; rx_rate   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 27.000     ;
+; -92.000  ; rx_rate   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 27.000     ;
+; -91.500  ; rx7       ; n_t_34x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; n_t_34x   ; n_t_36x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; n_t_36x   ; n_t_35x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; n_t_35x   ; n_t_37x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; n_t_37x   ; n_t_38x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; n_t_38x   ; n_t_39x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; n_t_39x   ; n_t_40x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; rx_rate   ; rx7     ; rx_rate      ; rx_rate     ; -0.500       ; 114.000    ; 27.000     ;
+; -91.500  ; rx7       ; n_t_34x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; rx_rate   ; n_t_34x ; rx_rate      ; rx_rate     ; -0.500       ; 114.000    ; 27.000     ;
+; -91.500  ; n_t_34x   ; n_t_36x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; rx_rate   ; n_t_36x ; rx_rate      ; rx_rate     ; -0.500       ; 114.000    ; 27.000     ;
+; -91.500  ; n_t_36x   ; n_t_35x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; rx_rate   ; n_t_35x ; rx_rate      ; rx_rate     ; -0.500       ; 114.000    ; 27.000     ;
+; -91.500  ; n_t_35x   ; n_t_37x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; rx_rate   ; n_t_37x ; rx_rate      ; rx_rate     ; -0.500       ; 114.000    ; 27.000     ;
+; -91.500  ; n_t_37x   ; n_t_38x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; rx_rate   ; n_t_38x ; rx_rate      ; rx_rate     ; -0.500       ; 114.000    ; 27.000     ;
+; -91.500  ; n_t_38x   ; n_t_39x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; rx_rate   ; n_t_39x ; rx_rate      ; rx_rate     ; -0.500       ; 114.000    ; 27.000     ;
+; -91.500  ; n_t_39x   ; n_t_40x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 9.000      ;
+; -91.500  ; rx_rate   ; n_t_40x ; rx_rate      ; rx_rate     ; -0.500       ; 114.000    ; 27.000     ;
+; -75.000  ; rx7       ; n_t_34x ; rx_rate      ; rx_rate     ; 0.000        ; 80.000     ; 9.000      ;
+; -75.000  ; n_t_34x   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.000        ; 80.000     ; 9.000      ;
+; -75.000  ; n_t_36x   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.000        ; 80.000     ; 9.000      ;
+; -75.000  ; n_t_35x   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.000        ; 80.000     ; 9.000      ;
+; -75.000  ; n_t_37x   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.000        ; 80.000     ; 9.000      ;
+; -75.000  ; n_t_38x   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.000        ; 80.000     ; 9.000      ;
+; -75.000  ; n_t_39x   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.000        ; 80.000     ; 9.000      ;
+; -48.000  ; rx_div    ; rx7     ; rx_rate      ; rx_rate     ; 0.000        ; 123.000    ; 79.000     ;
+; -48.000  ; rx_div    ; n_t_34x ; rx_rate      ; rx_rate     ; 0.000        ; 123.000    ; 79.000     ;
+; -48.000  ; rx_div    ; n_t_36x ; rx_rate      ; rx_rate     ; 0.000        ; 123.000    ; 79.000     ;
+; -48.000  ; rx_div    ; n_t_35x ; rx_rate      ; rx_rate     ; 0.000        ; 123.000    ; 79.000     ;
+; -48.000  ; rx_div    ; n_t_37x ; rx_rate      ; rx_rate     ; 0.000        ; 123.000    ; 79.000     ;
+; -48.000  ; rx_div    ; n_t_38x ; rx_rate      ; rx_rate     ; 0.000        ; 123.000    ; 79.000     ;
+; -48.000  ; rx_div    ; n_t_39x ; rx_rate      ; rx_rate     ; 0.000        ; 123.000    ; 79.000     ;
+; -48.000  ; rx_div    ; n_t_40x ; rx_rate      ; rx_rate     ; 0.000        ; 123.000    ; 79.000     ;
+; -39.000  ; n_t_40x   ; rx7     ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 79.000     ;
+; -39.000  ; n_t_40x   ; n_t_34x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 79.000     ;
+; -39.000  ; n_t_40x   ; n_t_36x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 79.000     ;
+; -39.000  ; n_t_40x   ; n_t_35x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 79.000     ;
+; -39.000  ; n_t_40x   ; n_t_37x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 79.000     ;
+; -39.000  ; n_t_40x   ; n_t_38x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 79.000     ;
+; -39.000  ; n_t_40x   ; n_t_39x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 79.000     ;
+; -39.000  ; n_t_40x   ; n_t_40x ; rx_rate      ; rx_rate     ; 0.000        ; 114.000    ; 79.000     ;
+; -30.500  ; rx_div    ; rx7     ; rx_rate      ; rx_rate     ; -0.500       ; 106.000    ; 79.000     ;
+; -30.500  ; rx_div    ; n_t_34x ; rx_rate      ; rx_rate     ; -0.500       ; 106.000    ; 79.000     ;
+; -30.500  ; rx_div    ; n_t_36x ; rx_rate      ; rx_rate     ; -0.500       ; 106.000    ; 79.000     ;
+; -30.500  ; rx_div    ; n_t_35x ; rx_rate      ; rx_rate     ; -0.500       ; 106.000    ; 79.000     ;
+; -30.500  ; rx_div    ; n_t_37x ; rx_rate      ; rx_rate     ; -0.500       ; 106.000    ; 79.000     ;
+; -30.500  ; rx_div    ; n_t_38x ; rx_rate      ; rx_rate     ; -0.500       ; 106.000    ; 79.000     ;
+; -30.500  ; rx_div    ; n_t_39x ; rx_rate      ; rx_rate     ; -0.500       ; 106.000    ; 79.000     ;
+; -30.500  ; rx_div    ; n_t_40x ; rx_rate      ; rx_rate     ; -0.500       ; 106.000    ; 79.000     ;
+; -21.500  ; n_t_40x   ; rx7     ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_34x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_36x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_35x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_37x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_38x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_39x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_40x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; rx7     ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_34x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_36x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_35x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_37x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_38x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_39x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
+; -21.500  ; n_t_40x   ; n_t_40x ; rx_rate      ; rx_rate     ; -0.500       ; 97.000     ; 79.000     ;
++----------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'sw1'                                                                              ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -22.000 ; rx_rate   ; rx_rate ; rx_rate      ; sw1         ; 0.000        ; 26.000     ; 9.000      ;
+; -22.000 ; rx_rate   ; rx_rate ; rx_rate      ; sw1         ; 0.000        ; 26.000     ; 9.000      ;
+; -21.500 ; rx_rate   ; rx_rate ; rx_rate      ; sw1         ; -0.500       ; 26.000     ; 9.000      ;
+; -21.500 ; rx_rate   ; rx_rate ; rx_rate      ; sw1         ; -0.500       ; 26.000     ; 9.000      ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'bd1200'                                                                           ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -20.000 ; rx_rate   ; rx_rate ; rx_rate      ; bd1200      ; 0.000        ; 24.000     ; 9.000      ;
+; -19.500 ; rx_rate   ; rx_rate ; rx_rate      ; bd1200      ; -0.500       ; 24.000     ; 9.000      ;
+; -4.000  ; bd600     ; bd600   ; bd600        ; bd1200      ; 0.000        ; 8.000      ; 9.000      ;
+; -3.500  ; bd600     ; bd600   ; bd600        ; bd1200      ; -0.500       ; 8.000      ; 9.000      ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'gdollar_0'                                                                          ;
++---------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; -20.000 ; rx_rate   ; rx_rate   ; rx_rate      ; gdollar_0   ; 0.000        ; 24.000     ; 9.000      ;
+; -19.500 ; rx_rate   ; rx_rate   ; rx_rate      ; gdollar_0   ; -0.500       ; 24.000     ; 9.000      ;
+; -4.000  ; gdollar_1 ; gdollar_1 ; gdollar_1    ; gdollar_0   ; 0.000        ; 8.000      ; 9.000      ;
+; -3.500  ; gdollar_1 ; gdollar_1 ; gdollar_1    ; gdollar_0   ; -0.500       ; 8.000      ; 9.000      ;
++---------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'n_t_154x'                                                                          ;
++---------+-----------+----------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node ; To Node  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------+----------+--------------+-------------+--------------+------------+------------+
+; -20.000 ; rx_rate   ; rx_rate  ; rx_rate      ; n_t_154x    ; 0.000        ; 24.000     ; 9.000      ;
+; -19.500 ; rx_rate   ; rx_rate  ; rx_rate      ; n_t_154x    ; -0.500       ; 24.000     ; 9.000      ;
+; -4.000  ; n_t_155x  ; n_t_155x ; n_t_155x     ; n_t_154x    ; 0.000        ; 8.000      ; 9.000      ;
+; -3.500  ; n_t_155x  ; n_t_155x ; n_t_155x     ; n_t_154x    ; -0.500       ; 8.000      ; 9.000      ;
++---------+-----------+----------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'bd600'                                                                            ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -20.000 ; rx_rate   ; rx_rate ; rx_rate      ; bd600       ; 0.000        ; 24.000     ; 9.000      ;
+; -19.500 ; rx_rate   ; rx_rate ; rx_rate      ; bd600       ; -0.500       ; 24.000     ; 9.000      ;
+; 5.000   ; bd300     ; bd300   ; bd600        ; bd600       ; 0.000        ; 0.000      ; 9.000      ;
++---------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                ;
++---------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; -14.000 ; n_t_154x  ; gdollar_6 ; n_t_154x     ; clk         ; 0.000        ; 18.000     ; 9.000      ;
+; -14.000 ; n_t_154x  ; n_t_154x  ; n_t_154x     ; clk         ; 0.000        ; 18.000     ; 9.000      ;
+; -14.000 ; rx_rate   ; rx_rate   ; rx_rate      ; clk         ; 0.000        ; 18.000     ; 9.000      ;
+; -13.500 ; n_t_154x  ; gdollar_6 ; n_t_154x     ; clk         ; -0.500       ; 18.000     ; 9.000      ;
+; -13.500 ; n_t_154x  ; n_t_154x  ; n_t_154x     ; clk         ; -0.500       ; 18.000     ; 9.000      ;
+; -13.500 ; rx_rate   ; rx_rate   ; rx_rate      ; clk         ; -0.500       ; 18.000     ; 9.000      ;
+; -12.000 ; clk       ; gdollar_5 ; clk          ; clk         ; 0.000        ; 18.000     ; 10.000     ;
+; -12.000 ; clk       ; gdollar_6 ; clk          ; clk         ; 0.000        ; 18.000     ; 10.000     ;
+; -12.000 ; clk       ; n_t_154x  ; clk          ; clk         ; 0.000        ; 18.000     ; 10.000     ;
+; -11.500 ; clk       ; gdollar_5 ; clk          ; clk         ; -0.500       ; 18.000     ; 10.000     ;
+; -11.500 ; clk       ; gdollar_6 ; clk          ; clk         ; -0.500       ; 18.000     ; 10.000     ;
+; -11.500 ; clk       ; n_t_154x  ; clk          ; clk         ; -0.500       ; 18.000     ; 10.000     ;
+; -10.000 ; gdollar_4 ; gdollar_5 ; clk          ; clk         ; 0.000        ; 15.000     ; 9.000      ;
+; -10.000 ; gdollar_4 ; gdollar_6 ; clk          ; clk         ; 0.000        ; 15.000     ; 9.000      ;
+; -10.000 ; gdollar_4 ; n_t_154x  ; clk          ; clk         ; 0.000        ; 15.000     ; 9.000      ;
+; 3.000   ; clk       ; gdollar_4 ; clk          ; clk         ; 0.000        ; 3.000      ; 10.000     ;
+; 3.500   ; clk       ; gdollar_4 ; clk          ; clk         ; -0.500       ; 3.000      ; 10.000     ;
+; 5.000   ; gdollar_4 ; gdollar_4 ; clk          ; clk         ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000   ; gdollar_5 ; gdollar_5 ; clk          ; clk         ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000   ; gdollar_6 ; gdollar_6 ; clk          ; clk         ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000   ; gdollar_5 ; gdollar_6 ; clk          ; clk         ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000   ; gdollar_6 ; n_t_154x  ; clk          ; clk         ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000   ; gdollar_5 ; n_t_154x  ; clk          ; clk         ; 0.000        ; 0.000      ; 9.000      ;
++---------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'bd2400'                                                                          ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -4.000 ; bd1200    ; bd1200  ; bd1200       ; bd2400      ; 0.000        ; 8.000      ; 9.000      ;
+; -3.500 ; bd1200    ; bd1200  ; bd1200       ; bd2400      ; -0.500       ; 8.000      ; 9.000      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'gdollar_1'                                                                       ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -4.000 ; bd2400    ; bd2400  ; bd2400       ; gdollar_1   ; 0.000        ; 8.000      ; 9.000      ;
+; -3.500 ; bd2400    ; bd2400  ; bd2400       ; gdollar_1   ; -0.500       ; 8.000      ; 9.000      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'n_t_155x'                                                                          ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+; -4.000 ; gdollar_0 ; gdollar_0 ; gdollar_0    ; n_t_155x    ; 0.000        ; 8.000      ; 9.000      ;
+; -3.500 ; gdollar_0 ; gdollar_0 ; gdollar_0    ; n_t_155x    ; -0.500       ; 8.000      ; 9.000      ;
++--------+-----------+-----------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'rx_rate'                                                                 ;
++----------+--------------+----------------+------------------+---------+------------+----------------------+
+; Slack    ; Actual Width ; Required Width ; Type             ; Clock   ; Clock Edge ; Target               ;
++----------+--------------+----------------+------------------+---------+------------+----------------------+
+; -119.500 ; -113.500     ; 6.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_34x              ;
+; -119.500 ; -113.500     ; 6.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_34x              ;
+; -119.500 ; -113.500     ; 6.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_35x              ;
+; -119.500 ; -113.500     ; 6.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_35x              ;
+; -119.500 ; -113.500     ; 6.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_36x              ;
+; -119.500 ; -113.500     ; 6.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_36x              ;
+; -119.500 ; -113.500     ; 6.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_37x              ;
+; -119.500 ; -113.500     ; 6.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_37x              ;
+; -119.500 ; -113.500     ; 6.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_38x              ;
+; -119.500 ; -113.500     ; 6.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_38x              ;
+; -119.500 ; -113.500     ; 6.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_39x              ;
+; -119.500 ; -113.500     ; 6.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_39x              ;
+; -119.500 ; -113.500     ; 6.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_40x              ;
+; -119.500 ; -113.500     ; 6.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_40x              ;
+; -119.500 ; -113.500     ; 6.000          ; High Pulse Width ; rx_rate ; Rise       ; rx7                  ;
+; -119.500 ; -113.500     ; 6.000          ; Low Pulse Width  ; rx_rate ; Rise       ; rx7                  ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_34x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_34x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_35x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_35x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_36x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_36x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_37x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_37x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_38x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_38x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_39x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_39x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_40x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_40x|[3]          ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_41x~32|datain[1] ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_41x~32|datain[1] ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_41x~32|dataout   ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_41x~32|dataout   ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_41x~8|datain[1]  ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_41x~8|datain[1]  ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_41x~8|dataout    ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_41x~8|dataout    ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; p_pulse_l~9|dataout  ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; p_pulse_l~9|dataout  ;
+; -96.500  ; -96.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; rx7|[3]              ;
+; -96.500  ; -96.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; rx7|[3]              ;
+; -85.500  ; -79.500      ; 6.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_34x              ;
+; -85.500  ; -79.500      ; 6.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_34x              ;
+; -85.500  ; -79.500      ; 6.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_35x              ;
+; -85.500  ; -79.500      ; 6.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_35x              ;
+; -85.500  ; -79.500      ; 6.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_36x              ;
+; -85.500  ; -79.500      ; 6.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_36x              ;
+; -85.500  ; -79.500      ; 6.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_37x              ;
+; -85.500  ; -79.500      ; 6.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_37x              ;
+; -85.500  ; -79.500      ; 6.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_38x              ;
+; -85.500  ; -79.500      ; 6.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_38x              ;
+; -85.500  ; -79.500      ; 6.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_39x              ;
+; -85.500  ; -79.500      ; 6.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_39x              ;
+; -85.500  ; -79.500      ; 6.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_40x              ;
+; -85.500  ; -79.500      ; 6.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_40x              ;
+; -85.500  ; -79.500      ; 6.000          ; High Pulse Width ; rx_rate ; Fall       ; rx7                  ;
+; -85.500  ; -79.500      ; 6.000          ; Low Pulse Width  ; rx_rate ; Fall       ; rx7                  ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_34x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_34x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_35x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_35x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_36x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_36x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_37x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_37x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_38x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_38x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_39x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_39x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_40x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_40x|[3]          ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_41x~32|datain[1] ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_41x~32|datain[1] ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_41x~32|dataout   ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_41x~32|dataout   ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_41x~8|datain[1]  ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_41x~8|datain[1]  ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; n_t_41x~8|dataout    ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; n_t_41x~8|dataout    ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; p_pulse_l~9|dataout  ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; p_pulse_l~9|dataout  ;
+; -79.500  ; -79.500      ; 0.000          ; High Pulse Width ; rx_rate ; Fall       ; rx7|[3]              ;
+; -79.500  ; -79.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Fall       ; rx7|[3]              ;
+; -51.500  ; -51.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; ck_pulse~9|dataout   ;
+; -51.500  ; -51.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; ck_pulse~9|dataout   ;
+; -51.500  ; -51.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_34x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_34x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_35x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_35x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_36x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_36x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_37x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_37x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_38x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_38x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_39x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_39x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; High Pulse Width ; rx_rate ; Rise       ; n_t_40x|[2]          ;
+; -51.500  ; -51.500      ; 0.000          ; Low Pulse Width  ; rx_rate ; Rise       ; n_t_40x|[2]          ;
++----------+--------------+----------------+------------------+---------+------------+----------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'sw1'                                                                      ;
++---------+--------------+----------------+------------------+-------+------------+--------------------------+
+; Slack   ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                   ;
++---------+--------------+----------------+------------------+-------+------------+--------------------------+
+; -13.500 ; -7.500       ; 6.000          ; High Pulse Width ; sw1   ; Fall       ; rx_rate                  ;
+; -13.500 ; -7.500       ; 6.000          ; Low Pulse Width  ; sw1   ; Fall       ; rx_rate                  ;
+; -7.500  ; -7.500       ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; rx_rate|[2]              ;
+; -7.500  ; -7.500       ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; rx_rate|[2]              ;
+; -7.500  ; -7.500       ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~27|dataout        ;
+; -7.500  ; -7.500       ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~27|dataout        ;
+; -5.500  ; 0.500        ; 6.000          ; High Pulse Width ; sw1   ; Rise       ; rx_rate                  ;
+; -5.500  ; 0.500        ; 6.000          ; Low Pulse Width  ; sw1   ; Rise       ; rx_rate                  ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; rx_rate|[0]              ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; rx_rate|[0]              ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; rx_rate|[0]              ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; rx_rate|[0]              ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; rx_rate|[1]              ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; rx_rate|[1]              ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; rx_rate|[1]              ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; rx_rate|[1]              ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; rx_rate|[2]              ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; rx_rate|[2]              ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; rx_rate|[3]              ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; rx_rate|[3]              ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; rx_rate|[3]              ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; rx_rate|[3]              ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; sw1|dataout              ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; sw1|dataout              ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~25|datain[2]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~25|datain[2]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~25|datain[3]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~25|datain[3]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~25|datain[4]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~25|datain[4]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~25|datain[5]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~25|datain[5]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~25|datain[6]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~25|datain[6]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~25|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~25|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~25|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~25|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~26|datain[2]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~26|datain[2]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~26|datain[3]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~26|datain[3]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~26|datain[4]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~26|datain[4]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~26|datain[5]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~26|datain[5]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~26|datain[6]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~26|datain[6]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~26|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~26|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~26|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~26|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~27|datain[0]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~27|datain[0]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~27|datain[1]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~27|datain[1]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~27|datain[2]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~27|datain[2]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~27|datain[3]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~27|datain[3]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~27|datain[4]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~27|datain[4]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~27|datain[5]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~27|datain[5]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~27|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~27|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~28|datain[1]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~28|datain[1]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~28|datain[2]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~28|datain[2]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~28|datain[3]      ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~28|datain[3]      ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~28|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~28|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~28|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~28|dataout        ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~33sexp1|datain[0] ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~33sexp1|datain[0] ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~33sexp1|dataout   ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~33sexp1|dataout   ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~33sexp2|datain[0] ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~33sexp2|datain[0] ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~33sexp2|dataout   ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~33sexp2|dataout   ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~37sexp1|datain[3] ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~37sexp1|datain[3] ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~37sexp1|dataout   ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~37sexp1|dataout   ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~37sexp2|datain[3] ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~37sexp2|datain[3] ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Fall       ; testp4~37sexp2|dataout   ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Fall       ; testp4~37sexp2|dataout   ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~37sexp3|datain[3] ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~37sexp3|datain[3] ;
+; 0.500   ; 0.500        ; 0.000          ; High Pulse Width ; sw1   ; Rise       ; testp4~37sexp3|dataout   ;
+; 0.500   ; 0.500        ; 0.000          ; Low Pulse Width  ; sw1   ; Rise       ; testp4~37sexp3|dataout   ;
++---------+--------------+----------------+------------------+-------+------------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target               ;
++--------+--------------+----------------+------------------+-------+------------+----------------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; clk   ; Rise       ; gdollar_5            ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; clk   ; Rise       ; gdollar_5            ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; clk   ; Rise       ; gdollar_6            ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; clk   ; Rise       ; gdollar_6            ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; clk   ; Rise       ; n_t_154x             ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; clk   ; Rise       ; n_t_154x             ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; clk   ; Fall       ; rx_rate              ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; clk   ; Fall       ; rx_rate              ;
+; -4.500 ; 0.500        ; 5.000          ; High Pulse Width ; clk   ; Rise       ; gdollar_4            ;
+; -4.500 ; 0.500        ; 5.000          ; Low Pulse Width  ; clk   ; Rise       ; gdollar_4            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; always44~2|datain[1] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; always44~2|datain[1] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Fall       ; always44~2|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Fall       ; always44~2|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; always45~2|datain[2] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; always45~2|datain[2] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Fall       ; always45~2|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Fall       ; always45~2|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; always46~2|datain[3] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; always46~2|datain[3] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Fall       ; always46~2|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Fall       ; always46~2|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|dataout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|dataout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; gdollar_4|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; gdollar_4|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Fall       ; gdollar_5|[2]        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Fall       ; gdollar_5|[2]        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Fall       ; gdollar_6|[5]        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Fall       ; gdollar_6|[5]        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Fall       ; n_t_154x|[5]         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Fall       ; n_t_154x|[5]         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Fall       ; rx_rate|[1]          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Fall       ; rx_rate|[1]          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; testp4~26|datain[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; testp4~26|datain[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Fall       ; testp4~26|dataout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Fall       ; testp4~26|dataout    ;
++--------+--------------+----------------+------------------+-------+------------+----------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'bd1200'                                                                   ;
++--------+--------------+----------------+------------------+--------+------------+--------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target                   ;
++--------+--------------+----------------+------------------+--------+------------+--------------------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; bd1200 ; Rise       ; bd600                    ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; bd1200 ; Rise       ; bd600                    ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; bd1200 ; Fall       ; rx_rate                  ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; bd1200 ; Fall       ; rx_rate                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Rise       ; bd1200|dataout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Rise       ; bd1200|dataout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Rise       ; bd600|[0]                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Rise       ; bd600|[0]                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Fall       ; rx_rate|[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Fall       ; rx_rate|[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Fall       ; rx_rate|[1]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Fall       ; rx_rate|[1]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Fall       ; rx_rate|[2]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Fall       ; rx_rate|[2]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Rise       ; testp4~25|datain[3]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Rise       ; testp4~25|datain[3]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Fall       ; testp4~25|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Fall       ; testp4~25|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Rise       ; testp4~26|datain[3]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Rise       ; testp4~26|datain[3]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Fall       ; testp4~26|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Fall       ; testp4~26|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Rise       ; testp4~27|datain[2]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Rise       ; testp4~27|datain[2]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Fall       ; testp4~27|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Fall       ; testp4~27|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Rise       ; testp4~33sexp2|datain[1] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Rise       ; testp4~33sexp2|datain[1] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd1200 ; Rise       ; testp4~33sexp2|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd1200 ; Rise       ; testp4~33sexp2|dataout   ;
++--------+--------------+----------------+------------------+--------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'bd600'                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                   ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; bd600 ; Rise       ; bd300                    ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; bd600 ; Rise       ; bd300                    ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; bd600 ; Fall       ; rx_rate                  ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; bd600 ; Fall       ; rx_rate                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Rise       ; bd300|[0]                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Rise       ; bd300|[0]                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Rise       ; bd600|dataout            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Rise       ; bd600|dataout            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Fall       ; rx_rate|[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Fall       ; rx_rate|[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Fall       ; rx_rate|[1]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Fall       ; rx_rate|[1]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Fall       ; rx_rate|[2]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Fall       ; rx_rate|[2]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Fall       ; rx_rate|[3]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Fall       ; rx_rate|[3]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Rise       ; testp4~25|datain[5]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Rise       ; testp4~25|datain[5]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Fall       ; testp4~25|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Fall       ; testp4~25|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Rise       ; testp4~26|datain[5]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Rise       ; testp4~26|datain[5]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Fall       ; testp4~26|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Fall       ; testp4~26|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Rise       ; testp4~27|datain[4]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Rise       ; testp4~27|datain[4]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Fall       ; testp4~27|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Fall       ; testp4~27|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Rise       ; testp4~28|datain[2]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Rise       ; testp4~28|datain[2]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Fall       ; testp4~28|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Fall       ; testp4~28|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Rise       ; testp4~37sexp2|datain[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Rise       ; testp4~37sexp2|datain[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd600 ; Rise       ; testp4~37sexp2|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd600 ; Rise       ; testp4~37sexp2|dataout   ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'gdollar_0'                                                                   ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                   ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; gdollar_0 ; Rise       ; gdollar_1                ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; gdollar_0 ; Rise       ; gdollar_1                ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; gdollar_0 ; Fall       ; rx_rate                  ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; gdollar_0 ; Fall       ; rx_rate                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Rise       ; gdollar_0|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Rise       ; gdollar_0|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Rise       ; gdollar_1|[0]            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Rise       ; gdollar_1|[0]            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Fall       ; rx_rate|[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Fall       ; rx_rate|[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Fall       ; rx_rate|[1]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Fall       ; rx_rate|[1]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Fall       ; rx_rate|[2]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Fall       ; rx_rate|[2]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Fall       ; rx_rate|[3]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Fall       ; rx_rate|[3]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Rise       ; testp4~25|datain[4]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Rise       ; testp4~25|datain[4]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Fall       ; testp4~25|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Fall       ; testp4~25|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Rise       ; testp4~26|datain[4]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Rise       ; testp4~26|datain[4]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Fall       ; testp4~26|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Fall       ; testp4~26|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Rise       ; testp4~27|datain[3]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Rise       ; testp4~27|datain[3]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Fall       ; testp4~27|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Fall       ; testp4~27|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Rise       ; testp4~28|datain[1]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Rise       ; testp4~28|datain[1]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Fall       ; testp4~28|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Fall       ; testp4~28|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Rise       ; testp4~37sexp1|datain[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Rise       ; testp4~37sexp1|datain[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_0 ; Rise       ; testp4~37sexp1|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_0 ; Rise       ; testp4~37sexp1|dataout   ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'n_t_154x'                                                                  ;
++--------+--------------+----------------+------------------+----------+------------+-------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                  ;
++--------+--------------+----------------+------------------+----------+------------+-------------------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; n_t_154x ; Rise       ; n_t_155x                ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; n_t_154x ; Rise       ; n_t_155x                ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; n_t_154x ; Fall       ; rx_rate                 ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; n_t_154x ; Fall       ; rx_rate                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Rise       ; n_t_154x|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Rise       ; n_t_154x|dataout        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Rise       ; n_t_155x|[0]            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Rise       ; n_t_155x|[0]            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Fall       ; rx_rate|[0]             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Fall       ; rx_rate|[0]             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Fall       ; rx_rate|[1]             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Fall       ; rx_rate|[1]             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Rise       ; testp4~25|datain[1]     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Rise       ; testp4~25|datain[1]     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Fall       ; testp4~25|dataout       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Fall       ; testp4~25|dataout       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Rise       ; testp4~26|datain[1]     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Rise       ; testp4~26|datain[1]     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Fall       ; testp4~26|dataout       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Fall       ; testp4~26|dataout       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Rise       ; testp4~30sexp|datain[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Rise       ; testp4~30sexp|datain[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_154x ; Rise       ; testp4~30sexp|dataout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_154x ; Rise       ; testp4~30sexp|dataout   ;
++--------+--------------+----------------+------------------+----------+------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'bd2400'                                                         ;
++--------+--------------+----------------+------------------+--------+------------+----------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target         ;
++--------+--------------+----------------+------------------+--------+------------+----------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; bd2400 ; Rise       ; bd1200         ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; bd2400 ; Rise       ; bd1200         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd2400 ; Rise       ; bd1200|[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd2400 ; Rise       ; bd1200|[0]     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bd2400 ; Rise       ; bd2400|dataout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bd2400 ; Rise       ; bd2400|dataout ;
++--------+--------------+----------------+------------------+--------+------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'gdollar_1'                                                            ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target            ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; gdollar_1 ; Rise       ; bd2400            ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; gdollar_1 ; Rise       ; bd2400            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_1 ; Rise       ; bd2400|[0]        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_1 ; Rise       ; bd2400|[0]        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; gdollar_1 ; Rise       ; gdollar_1|dataout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; gdollar_1 ; Rise       ; gdollar_1|dataout ;
++--------+--------------+----------------+------------------+-----------+------------+-------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'n_t_155x'                                                           ;
++--------+--------------+----------------+------------------+----------+------------+------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target           ;
++--------+--------------+----------------+------------------+----------+------------+------------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; n_t_155x ; Rise       ; gdollar_0        ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; n_t_155x ; Rise       ; gdollar_0        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_155x ; Rise       ; gdollar_0|[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_155x ; Rise       ; gdollar_0|[0]    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; n_t_155x ; Rise       ; n_t_155x|dataout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; n_t_155x ; Rise       ; n_t_155x|dataout ;
++--------+--------------+----------------+------------------+----------+------------+------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++------------+------------+---------+---------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise    ; Fall    ; Clock Edge ; Clock Reference ;
++------------+------------+---------+---------+------------+-----------------+
+; clk        ; clk        ; 11.000  ; 11.000  ; Rise       ; clk             ;
+; initialize ; rx_rate    ; 112.000 ; 112.000 ; Rise       ; rx_rate         ;
+; power_ok   ; rx_rate    ; 112.000 ; 112.000 ; Rise       ; rx_rate         ;
+; serial_in  ; rx_rate    ; 112.000 ; 112.000 ; Rise       ; rx_rate         ;
+; initialize ; rx_rate    ; 95.000  ; 95.000  ; Fall       ; rx_rate         ;
+; power_ok   ; rx_rate    ; 95.000  ; 95.000  ; Fall       ; rx_rate         ;
+; serial_in  ; rx_rate    ; 95.000  ; 95.000  ; Fall       ; rx_rate         ;
++------------+------------+---------+---------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++------------+------------+---------+---------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise    ; Fall    ; Clock Edge ; Clock Reference ;
++------------+------------+---------+---------+------------+-----------------+
+; clk        ; clk        ; 12.000  ; 12.000  ; Rise       ; clk             ;
+; initialize ; rx_rate    ; 55.000  ; 55.000  ; Rise       ; rx_rate         ;
+; power_ok   ; rx_rate    ; 107.000 ; 107.000 ; Rise       ; rx_rate         ;
+; serial_in  ; rx_rate    ; 125.000 ; 125.000 ; Rise       ; rx_rate         ;
+; initialize ; rx_rate    ; 38.000  ; 38.000  ; Fall       ; rx_rate         ;
+; power_ok   ; rx_rate    ; 90.000  ; 90.000  ; Fall       ; rx_rate         ;
+; serial_in  ; rx_rate    ; 108.000 ; 108.000 ; Fall       ; rx_rate         ;
++------------+------------+---------+---------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Clock to Output Times                                                      ;
++------------+------------+---------+---------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise    ; Fall    ; Clock Edge ; Clock Reference ;
++------------+------------+---------+---------+------------+-----------------+
+; testp4     ; bd1200     ; 18.000  ;         ; Rise       ; bd1200          ;
+; testp4     ; bd1200     ;         ; 18.000  ; Fall       ; bd1200          ;
+; testp4     ; bd600      ; 27.000  ; 27.000  ; Rise       ; bd600           ;
+; testp4     ; bd600      ;         ; 17.000  ; Fall       ; bd600           ;
+; testp4     ; clk        ; 21.000  ; 21.000  ; Rise       ; clk             ;
+; testp4     ; clk        ; 19.000  ; 19.000  ; Fall       ; clk             ;
+; testp4     ; gdollar_0  ; 17.000  ;         ; Rise       ; gdollar_0       ;
+; testp4     ; gdollar_0  ;         ; 17.000  ; Fall       ; gdollar_0       ;
+; testp4     ; n_t_154x   ; 17.000  ;         ; Rise       ; n_t_154x        ;
+; testp4     ; n_t_154x   ;         ; 17.000  ; Fall       ; n_t_154x        ;
+; data04_l   ; rx_rate    ; 140.000 ; 140.000 ; Rise       ; rx_rate         ;
+; data05_l   ; rx_rate    ; 140.000 ; 140.000 ; Rise       ; rx_rate         ;
+; data06_l   ; rx_rate    ; 140.000 ; 140.000 ; Rise       ; rx_rate         ;
+; data07_l   ; rx_rate    ; 140.000 ; 140.000 ; Rise       ; rx_rate         ;
+; data08_l   ; rx_rate    ; 140.000 ; 140.000 ; Rise       ; rx_rate         ;
+; data09_l   ; rx_rate    ; 140.000 ; 140.000 ; Rise       ; rx_rate         ;
+; data10_l   ; rx_rate    ; 140.000 ; 140.000 ; Rise       ; rx_rate         ;
+; data11_l   ; rx_rate    ; 140.000 ; 140.000 ; Rise       ; rx_rate         ;
+; int_rqst_l ; rx_rate    ; 224.000 ; 224.000 ; Rise       ; rx_rate         ;
+; line       ; rx_rate    ; 135.000 ; 143.000 ; Rise       ; rx_rate         ;
+; r_run_l    ; rx_rate    ; 166.000 ; 166.000 ; Rise       ; rx_rate         ;
+; skip_l     ; rx_rate    ; 224.000 ; 224.000 ; Rise       ; rx_rate         ;
+; data04_l   ; rx_rate    ; 123.000 ; 123.000 ; Fall       ; rx_rate         ;
+; data05_l   ; rx_rate    ; 123.000 ; 123.000 ; Fall       ; rx_rate         ;
+; data06_l   ; rx_rate    ; 123.000 ; 123.000 ; Fall       ; rx_rate         ;
+; data07_l   ; rx_rate    ; 123.000 ; 123.000 ; Fall       ; rx_rate         ;
+; data08_l   ; rx_rate    ; 123.000 ; 123.000 ; Fall       ; rx_rate         ;
+; data09_l   ; rx_rate    ; 123.000 ; 123.000 ; Fall       ; rx_rate         ;
+; data10_l   ; rx_rate    ; 123.000 ; 123.000 ; Fall       ; rx_rate         ;
+; data11_l   ; rx_rate    ; 123.000 ; 123.000 ; Fall       ; rx_rate         ;
+; int_rqst_l ; rx_rate    ; 207.000 ; 207.000 ; Fall       ; rx_rate         ;
+; line       ; rx_rate    ; 143.000 ; 135.000 ; Fall       ; rx_rate         ;
+; r_run_l    ; rx_rate    ; 149.000 ; 149.000 ; Fall       ; rx_rate         ;
+; skip_l     ; rx_rate    ; 207.000 ; 207.000 ; Fall       ; rx_rate         ;
+; int_rqst_l ; sw1        ; 141.000 ; 141.000 ; Rise       ; sw1             ;
+; line       ; sw1        ; 145.000 ; 145.000 ; Rise       ; sw1             ;
+; skip_l     ; sw1        ; 141.000 ; 141.000 ; Rise       ; sw1             ;
+; testp4     ; sw1        ; 20.000  ; 20.000  ; Rise       ; sw1             ;
+; int_rqst_l ; sw1        ; 141.000 ; 141.000 ; Fall       ; sw1             ;
+; line       ; sw1        ; 145.000 ; 145.000 ; Fall       ; sw1             ;
+; skip_l     ; sw1        ; 141.000 ; 141.000 ; Fall       ; sw1             ;
+; testp4     ; sw1        ; 20.000  ; 20.000  ; Fall       ; sw1             ;
++------------+------------+---------+---------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; testp4     ; bd1200     ; 18.000 ;        ; Rise       ; bd1200          ;
+; testp4     ; bd1200     ;        ; 18.000 ; Fall       ; bd1200          ;
+; testp4     ; bd600      ; 17.000 ; 27.000 ; Rise       ; bd600           ;
+; testp4     ; bd600      ;        ; 17.000 ; Fall       ; bd600           ;
+; testp4     ; clk        ; 19.000 ; 19.000 ; Rise       ; clk             ;
+; testp4     ; clk        ; 19.000 ; 19.000 ; Fall       ; clk             ;
+; testp4     ; gdollar_0  ; 17.000 ;        ; Rise       ; gdollar_0       ;
+; testp4     ; gdollar_0  ;        ; 17.000 ; Fall       ; gdollar_0       ;
+; testp4     ; n_t_154x   ; 17.000 ;        ; Rise       ; n_t_154x        ;
+; testp4     ; n_t_154x   ;        ; 17.000 ; Fall       ; n_t_154x        ;
+; data04_l   ; rx_rate    ; 26.000 ; 26.000 ; Rise       ; rx_rate         ;
+; data05_l   ; rx_rate    ; 26.000 ; 26.000 ; Rise       ; rx_rate         ;
+; data06_l   ; rx_rate    ; 26.000 ; 26.000 ; Rise       ; rx_rate         ;
+; data07_l   ; rx_rate    ; 26.000 ; 26.000 ; Rise       ; rx_rate         ;
+; data08_l   ; rx_rate    ; 26.000 ; 26.000 ; Rise       ; rx_rate         ;
+; data09_l   ; rx_rate    ; 26.000 ; 26.000 ; Rise       ; rx_rate         ;
+; data10_l   ; rx_rate    ; 26.000 ; 26.000 ; Rise       ; rx_rate         ;
+; data11_l   ; rx_rate    ; 26.000 ; 26.000 ; Rise       ; rx_rate         ;
+; int_rqst_l ; rx_rate    ; 31.000 ; 31.000 ; Rise       ; rx_rate         ;
+; line       ; rx_rate    ; 26.000 ; 26.000 ; Rise       ; rx_rate         ;
+; r_run_l    ; rx_rate    ; 35.000 ; 35.000 ; Rise       ; rx_rate         ;
+; skip_l     ; rx_rate    ; 31.000 ; 31.000 ; Rise       ; rx_rate         ;
+; data04_l   ; rx_rate    ; 43.000 ; 43.000 ; Fall       ; rx_rate         ;
+; data05_l   ; rx_rate    ; 43.000 ; 43.000 ; Fall       ; rx_rate         ;
+; data06_l   ; rx_rate    ; 43.000 ; 43.000 ; Fall       ; rx_rate         ;
+; data07_l   ; rx_rate    ; 43.000 ; 43.000 ; Fall       ; rx_rate         ;
+; data08_l   ; rx_rate    ; 43.000 ; 43.000 ; Fall       ; rx_rate         ;
+; data09_l   ; rx_rate    ; 43.000 ; 43.000 ; Fall       ; rx_rate         ;
+; data10_l   ; rx_rate    ; 43.000 ; 43.000 ; Fall       ; rx_rate         ;
+; data11_l   ; rx_rate    ; 43.000 ; 43.000 ; Fall       ; rx_rate         ;
+; int_rqst_l ; rx_rate    ; 31.000 ; 31.000 ; Fall       ; rx_rate         ;
+; line       ; rx_rate    ; 26.000 ; 26.000 ; Fall       ; rx_rate         ;
+; r_run_l    ; rx_rate    ; 52.000 ; 52.000 ; Fall       ; rx_rate         ;
+; skip_l     ; rx_rate    ; 31.000 ; 31.000 ; Fall       ; rx_rate         ;
+; int_rqst_l ; sw1        ; 51.000 ; 51.000 ; Rise       ; sw1             ;
+; line       ; sw1        ; 64.000 ; 64.000 ; Rise       ; sw1             ;
+; skip_l     ; sw1        ; 51.000 ; 51.000 ; Rise       ; sw1             ;
+; testp4     ; sw1        ; 19.000 ; 19.000 ; Rise       ; sw1             ;
+; int_rqst_l ; sw1        ; 51.000 ; 51.000 ; Fall       ; sw1             ;
+; line       ; sw1        ; 64.000 ; 64.000 ; Fall       ; sw1             ;
+; skip_l     ; sw1        ; 51.000 ; 51.000 ; Fall       ; sw1             ;
+; testp4     ; sw1        ; 19.000 ; 19.000 ; Fall       ; sw1             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------+
+; Propagation Delay                                                  ;
++------------+---------------+---------+---------+---------+---------+
+; Input Port ; Output Port   ; RR      ; RF      ; FR      ; FF      ;
++------------+---------------+---------+---------+---------+---------+
+; data04_l   ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; data04_l   ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; data04_l   ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; data05_l   ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; data05_l   ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; data05_l   ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; data06_l   ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; data06_l   ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; data06_l   ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; data07_l   ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; data07_l   ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; data07_l   ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; data08_l   ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; data08_l   ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; data08_l   ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; data09_l   ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; data09_l   ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; data09_l   ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; data10_l   ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; data10_l   ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; data10_l   ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; data11_l   ; int_rqst_l    ;         ; 41.000  ; 41.000  ;         ;
+; data11_l   ; line          ;         ; 46.000  ; 46.000  ;         ;
+; data11_l   ; skip_l        ;         ; 41.000  ; 41.000  ;         ;
+; initialize ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; initialize ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; initialize ; r_run_l       ; 36.000  ;         ;         ; 36.000  ;
+; initialize ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; io_pause_l ; int_rqst_l    ;         ; 41.000  ; 41.000  ;         ;
+; io_pause_l ; skip_l        ;         ; 41.000  ; 41.000  ;         ;
+; md03_l     ; c0_l          ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; md03_l     ; c1_l          ; 25.000  ; 25.000  ; 25.000  ; 25.000  ;
+; md03_l     ; data04_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md03_l     ; data05_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md03_l     ; data06_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md03_l     ; data07_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md03_l     ; data08_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md03_l     ; data09_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md03_l     ; data10_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md03_l     ; data11_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md03_l     ; int_rqst_l    ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md03_l     ; internal_io_l ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; md03_l     ; line          ; 163.000 ; 163.000 ; 163.000 ; 163.000 ;
+; md03_l     ; r_run_l       ; 38.000  ; 38.000  ; 38.000  ; 38.000  ;
+; md03_l     ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md04_l     ; c0_l          ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; md04_l     ; c1_l          ; 25.000  ; 25.000  ; 25.000  ; 25.000  ;
+; md04_l     ; data04_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md04_l     ; data05_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md04_l     ; data06_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md04_l     ; data07_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md04_l     ; data08_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md04_l     ; data09_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md04_l     ; data10_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md04_l     ; data11_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md04_l     ; int_rqst_l    ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md04_l     ; internal_io_l ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; md04_l     ; line          ; 163.000 ; 163.000 ; 163.000 ; 163.000 ;
+; md04_l     ; r_run_l       ; 38.000  ; 38.000  ; 38.000  ; 38.000  ;
+; md04_l     ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md05_l     ; c0_l          ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; md05_l     ; c1_l          ; 25.000  ; 25.000  ; 25.000  ; 25.000  ;
+; md05_l     ; data04_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md05_l     ; data05_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md05_l     ; data06_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md05_l     ; data07_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md05_l     ; data08_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md05_l     ; data09_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md05_l     ; data10_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md05_l     ; data11_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md05_l     ; int_rqst_l    ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md05_l     ; internal_io_l ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; md05_l     ; line          ; 163.000 ; 163.000 ; 163.000 ; 163.000 ;
+; md05_l     ; r_run_l       ; 38.000  ; 38.000  ; 38.000  ; 38.000  ;
+; md05_l     ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md06_l     ; c0_l          ; 15.000  ; 16.000  ; 16.000  ; 15.000  ;
+; md06_l     ; c1_l          ; 24.000  ; 25.000  ; 25.000  ; 24.000  ;
+; md06_l     ; data04_l      ; 26.000  ; 27.000  ; 27.000  ; 26.000  ;
+; md06_l     ; data05_l      ; 26.000  ; 27.000  ; 27.000  ; 26.000  ;
+; md06_l     ; data06_l      ; 26.000  ; 27.000  ; 27.000  ; 26.000  ;
+; md06_l     ; data07_l      ; 26.000  ; 27.000  ; 27.000  ; 26.000  ;
+; md06_l     ; data08_l      ; 26.000  ; 27.000  ; 27.000  ; 26.000  ;
+; md06_l     ; data09_l      ; 26.000  ; 27.000  ; 27.000  ; 26.000  ;
+; md06_l     ; data10_l      ; 26.000  ; 27.000  ; 27.000  ; 26.000  ;
+; md06_l     ; data11_l      ; 26.000  ; 27.000  ; 27.000  ; 26.000  ;
+; md06_l     ; int_rqst_l    ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md06_l     ; internal_io_l ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; md06_l     ; line          ; 163.000 ; 163.000 ; 163.000 ; 163.000 ;
+; md06_l     ; r_run_l       ; 37.000  ; 38.000  ; 38.000  ; 37.000  ;
+; md06_l     ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md07_l     ; c0_l          ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; md07_l     ; c1_l          ; 25.000  ; 25.000  ; 25.000  ; 25.000  ;
+; md07_l     ; data04_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md07_l     ; data05_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md07_l     ; data06_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md07_l     ; data07_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md07_l     ; data08_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md07_l     ; data09_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md07_l     ; data10_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md07_l     ; data11_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; md07_l     ; int_rqst_l    ; 158.000 ; 159.000 ; 159.000 ; 158.000 ;
+; md07_l     ; internal_io_l ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; md07_l     ; line          ; 162.000 ; 163.000 ; 163.000 ; 162.000 ;
+; md07_l     ; r_run_l       ; 38.000  ; 38.000  ; 38.000  ; 38.000  ;
+; md07_l     ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md08_l     ; c0_l          ; 16.000  ; 15.000  ; 15.000  ; 16.000  ;
+; md08_l     ; c1_l          ; 25.000  ; 24.000  ; 24.000  ; 25.000  ;
+; md08_l     ; data04_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; md08_l     ; data05_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; md08_l     ; data06_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; md08_l     ; data07_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; md08_l     ; data08_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; md08_l     ; data09_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; md08_l     ; data10_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; md08_l     ; data11_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; md08_l     ; int_rqst_l    ; 159.000 ; 158.000 ; 158.000 ; 159.000 ;
+; md08_l     ; internal_io_l ; 16.000  ; 15.000  ; 15.000  ; 16.000  ;
+; md08_l     ; line          ; 163.000 ; 162.000 ; 162.000 ; 163.000 ;
+; md08_l     ; r_run_l       ; 38.000  ; 37.000  ; 37.000  ; 38.000  ;
+; md08_l     ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md09_l     ; c0_l          ;         ; 16.000  ; 16.000  ;         ;
+; md09_l     ; c1_l          ;         ; 25.000  ; 25.000  ;         ;
+; md09_l     ; data04_l      ;         ; 27.000  ; 27.000  ;         ;
+; md09_l     ; data05_l      ;         ; 27.000  ; 27.000  ;         ;
+; md09_l     ; data06_l      ;         ; 27.000  ; 27.000  ;         ;
+; md09_l     ; data07_l      ;         ; 27.000  ; 27.000  ;         ;
+; md09_l     ; data08_l      ;         ; 27.000  ; 27.000  ;         ;
+; md09_l     ; data09_l      ;         ; 27.000  ; 27.000  ;         ;
+; md09_l     ; data10_l      ;         ; 27.000  ; 27.000  ;         ;
+; md09_l     ; data11_l      ;         ; 27.000  ; 27.000  ;         ;
+; md09_l     ; int_rqst_l    ; 159.000 ; 142.000 ; 142.000 ; 159.000 ;
+; md09_l     ; line          ; 163.000 ; 155.000 ; 155.000 ; 163.000 ;
+; md09_l     ; r_run_l       ;         ; 38.000  ; 38.000  ;         ;
+; md09_l     ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md10_l     ; c0_l          ;         ; 16.000  ; 16.000  ;         ;
+; md10_l     ; c1_l          ;         ; 25.000  ; 25.000  ;         ;
+; md10_l     ; data04_l      ;         ; 27.000  ; 27.000  ;         ;
+; md10_l     ; data05_l      ;         ; 27.000  ; 27.000  ;         ;
+; md10_l     ; data06_l      ;         ; 27.000  ; 27.000  ;         ;
+; md10_l     ; data07_l      ;         ; 27.000  ; 27.000  ;         ;
+; md10_l     ; data08_l      ;         ; 27.000  ; 27.000  ;         ;
+; md10_l     ; data09_l      ;         ; 27.000  ; 27.000  ;         ;
+; md10_l     ; data10_l      ;         ; 27.000  ; 27.000  ;         ;
+; md10_l     ; data11_l      ;         ; 27.000  ; 27.000  ;         ;
+; md10_l     ; int_rqst_l    ; 159.000 ; 142.000 ; 142.000 ; 159.000 ;
+; md10_l     ; line          ; 163.000 ; 155.000 ; 155.000 ; 163.000 ;
+; md10_l     ; r_run_l       ;         ; 38.000  ; 38.000  ;         ;
+; md10_l     ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; md11_l     ; c0_l          ; 16.000  ;         ;         ; 16.000  ;
+; md11_l     ; c1_l          ; 25.000  ;         ;         ; 25.000  ;
+; md11_l     ; data04_l      ; 27.000  ;         ;         ; 27.000  ;
+; md11_l     ; data05_l      ; 27.000  ;         ;         ; 27.000  ;
+; md11_l     ; data06_l      ; 27.000  ;         ;         ; 27.000  ;
+; md11_l     ; data07_l      ; 27.000  ;         ;         ; 27.000  ;
+; md11_l     ; data08_l      ; 27.000  ;         ;         ; 27.000  ;
+; md11_l     ; data09_l      ; 27.000  ;         ;         ; 27.000  ;
+; md11_l     ; data10_l      ; 27.000  ;         ;         ; 27.000  ;
+; md11_l     ; data11_l      ; 27.000  ;         ;         ; 27.000  ;
+; md11_l     ; int_rqst_l    ; 142.000 ; 159.000 ; 159.000 ; 142.000 ;
+; md11_l     ; line          ; 155.000 ; 163.000 ; 163.000 ; 155.000 ;
+; md11_l     ; r_run_l       ; 38.000  ;         ;         ; 38.000  ;
+; md11_l     ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; power_ok   ; int_rqst_l    ; 94.000  ; 94.000  ; 94.000  ; 94.000  ;
+; power_ok   ; skip_l        ; 94.000  ; 94.000  ; 94.000  ; 94.000  ;
+; serial_in  ; int_rqst_l    ; 94.000  ; 94.000  ; 94.000  ; 94.000  ;
+; serial_in  ; skip_l        ; 94.000  ; 94.000  ; 94.000  ; 94.000  ;
+; sw2        ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; sw2        ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; sw2        ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; sw2        ; testp4        ; 20.000  ; 20.000  ; 20.000  ; 20.000  ;
+; sw3        ; int_rqst_l    ; 124.000 ; 141.000 ; 141.000 ; 124.000 ;
+; sw3        ; line          ; 137.000 ; 145.000 ; 145.000 ; 137.000 ;
+; sw3        ; skip_l        ; 141.000 ; 141.000 ; 141.000 ; 141.000 ;
+; sw3        ; testp4        ; 20.000  ; 19.000  ; 19.000  ; 20.000  ;
+; sw4        ; c0_l          ; 16.000  ; 15.000  ; 15.000  ; 16.000  ;
+; sw4        ; c1_l          ; 25.000  ; 24.000  ; 24.000  ; 25.000  ;
+; sw4        ; data04_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; sw4        ; data05_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; sw4        ; data06_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; sw4        ; data07_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; sw4        ; data08_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; sw4        ; data09_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; sw4        ; data10_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; sw4        ; data11_l      ; 27.000  ; 26.000  ; 26.000  ; 27.000  ;
+; sw4        ; int_rqst_l    ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; sw4        ; internal_io_l ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; sw4        ; line          ; 163.000 ; 163.000 ; 163.000 ; 163.000 ;
+; sw4        ; r_run_l       ; 38.000  ; 37.000  ; 37.000  ; 38.000  ;
+; sw4        ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; sw5        ; c0_l          ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; sw5        ; c1_l          ; 25.000  ; 25.000  ; 25.000  ; 25.000  ;
+; sw5        ; data04_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw5        ; data05_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw5        ; data06_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw5        ; data07_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw5        ; data08_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw5        ; data09_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw5        ; data10_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw5        ; data11_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw5        ; int_rqst_l    ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; sw5        ; internal_io_l ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; sw5        ; line          ; 163.000 ; 163.000 ; 163.000 ; 163.000 ;
+; sw5        ; r_run_l       ; 38.000  ; 38.000  ; 38.000  ; 38.000  ;
+; sw5        ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; sw6        ; c0_l          ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; sw6        ; c1_l          ; 25.000  ; 25.000  ; 25.000  ; 25.000  ;
+; sw6        ; data04_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw6        ; data05_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw6        ; data06_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw6        ; data07_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw6        ; data08_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw6        ; data09_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw6        ; data10_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw6        ; data11_l      ; 27.000  ; 27.000  ; 27.000  ; 27.000  ;
+; sw6        ; int_rqst_l    ; 159.000 ; 158.000 ; 158.000 ; 159.000 ;
+; sw6        ; internal_io_l ; 16.000  ; 16.000  ; 16.000  ; 16.000  ;
+; sw6        ; line          ; 163.000 ; 162.000 ; 162.000 ; 163.000 ;
+; sw6        ; r_run_l       ; 38.000  ; 38.000  ; 38.000  ; 38.000  ;
+; sw6        ; skip_l        ; 159.000 ; 159.000 ; 159.000 ; 159.000 ;
+; tp3        ; int_rqst_l    ; 132.000 ; 149.000 ; 149.000 ; 132.000 ;
+; tp3        ; line          ; 145.000 ; 153.000 ; 153.000 ; 145.000 ;
+; tp3        ; r_run_l       ; 28.000  ;         ;         ; 28.000  ;
+; tp3        ; skip_l        ; 149.000 ; 149.000 ; 149.000 ; 149.000 ;
++------------+---------------+---------+---------+---------+---------+
+
+
++----------------------------------------------------------------+
+; Minimum Propagation Delay                                      ;
++------------+---------------+--------+--------+--------+--------+
+; Input Port ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
++------------+---------------+--------+--------+--------+--------+
+; data04_l   ; int_rqst_l    ; 51.000 ; 59.000 ; 59.000 ; 51.000 ;
+; data04_l   ; line          ; 74.000 ; 64.000 ; 64.000 ; 74.000 ;
+; data04_l   ; skip_l        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; data05_l   ; int_rqst_l    ; 51.000 ; 59.000 ; 59.000 ; 51.000 ;
+; data05_l   ; line          ; 74.000 ; 64.000 ; 64.000 ; 74.000 ;
+; data05_l   ; skip_l        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; data06_l   ; int_rqst_l    ; 51.000 ; 59.000 ; 59.000 ; 51.000 ;
+; data06_l   ; line          ; 74.000 ; 64.000 ; 64.000 ; 74.000 ;
+; data06_l   ; skip_l        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; data07_l   ; int_rqst_l    ; 51.000 ; 59.000 ; 59.000 ; 51.000 ;
+; data07_l   ; line          ; 74.000 ; 64.000 ; 64.000 ; 74.000 ;
+; data07_l   ; skip_l        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; data08_l   ; int_rqst_l    ; 51.000 ; 59.000 ; 59.000 ; 51.000 ;
+; data08_l   ; line          ; 74.000 ; 64.000 ; 64.000 ; 74.000 ;
+; data08_l   ; skip_l        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; data09_l   ; int_rqst_l    ; 51.000 ; 59.000 ; 59.000 ; 51.000 ;
+; data09_l   ; line          ; 74.000 ; 64.000 ; 64.000 ; 74.000 ;
+; data09_l   ; skip_l        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; data10_l   ; int_rqst_l    ; 51.000 ; 59.000 ; 59.000 ; 51.000 ;
+; data10_l   ; line          ; 74.000 ; 64.000 ; 64.000 ; 74.000 ;
+; data10_l   ; skip_l        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; data11_l   ; int_rqst_l    ;        ; 41.000 ; 41.000 ;        ;
+; data11_l   ; line          ;        ; 46.000 ; 46.000 ;        ;
+; data11_l   ; skip_l        ;        ; 41.000 ; 41.000 ;        ;
+; initialize ; int_rqst_l    ; 24.000 ; 32.000 ; 32.000 ; 24.000 ;
+; initialize ; line          ; 28.000 ; 28.000 ; 28.000 ; 28.000 ;
+; initialize ; r_run_l       ; 19.000 ;        ;        ; 19.000 ;
+; initialize ; skip_l        ; 24.000 ; 32.000 ; 32.000 ; 24.000 ;
+; io_pause_l ; int_rqst_l    ;        ; 41.000 ; 41.000 ;        ;
+; io_pause_l ; skip_l        ;        ; 41.000 ; 41.000 ;        ;
+; md03_l     ; c0_l          ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; md03_l     ; c1_l          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md03_l     ; data04_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md03_l     ; data05_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md03_l     ; data06_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md03_l     ; data07_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md03_l     ; data08_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md03_l     ; data09_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md03_l     ; data10_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md03_l     ; data11_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md03_l     ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; md03_l     ; internal_io_l ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; md03_l     ; line          ; 54.000 ; 54.000 ; 54.000 ; 54.000 ;
+; md03_l     ; r_run_l       ; 28.000 ; 28.000 ; 28.000 ; 28.000 ;
+; md03_l     ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md04_l     ; c0_l          ; 15.000 ; 16.000 ; 16.000 ; 15.000 ;
+; md04_l     ; c1_l          ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; md04_l     ; data04_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md04_l     ; data05_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md04_l     ; data06_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md04_l     ; data07_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md04_l     ; data08_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md04_l     ; data09_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md04_l     ; data10_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md04_l     ; data11_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md04_l     ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; md04_l     ; internal_io_l ; 15.000 ; 16.000 ; 16.000 ; 15.000 ;
+; md04_l     ; line          ; 55.000 ; 54.000 ; 54.000 ; 55.000 ;
+; md04_l     ; r_run_l       ; 28.000 ; 29.000 ; 29.000 ; 28.000 ;
+; md04_l     ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md05_l     ; c0_l          ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; md05_l     ; c1_l          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md05_l     ; data04_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md05_l     ; data05_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md05_l     ; data06_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md05_l     ; data07_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md05_l     ; data08_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md05_l     ; data09_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md05_l     ; data10_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md05_l     ; data11_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md05_l     ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; md05_l     ; internal_io_l ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; md05_l     ; line          ; 54.000 ; 54.000 ; 54.000 ; 54.000 ;
+; md05_l     ; r_run_l       ; 28.000 ; 28.000 ; 28.000 ; 28.000 ;
+; md05_l     ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md06_l     ; c0_l          ; 15.000 ; 16.000 ; 16.000 ; 15.000 ;
+; md06_l     ; c1_l          ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; md06_l     ; data04_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md06_l     ; data05_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md06_l     ; data06_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md06_l     ; data07_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md06_l     ; data08_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md06_l     ; data09_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md06_l     ; data10_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md06_l     ; data11_l      ; 26.000 ; 27.000 ; 27.000 ; 26.000 ;
+; md06_l     ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; md06_l     ; internal_io_l ; 15.000 ; 16.000 ; 16.000 ; 15.000 ;
+; md06_l     ; line          ; 54.000 ; 54.000 ; 54.000 ; 54.000 ;
+; md06_l     ; r_run_l       ; 28.000 ; 29.000 ; 29.000 ; 28.000 ;
+; md06_l     ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md07_l     ; c0_l          ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; md07_l     ; c1_l          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md07_l     ; data04_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md07_l     ; data05_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md07_l     ; data06_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md07_l     ; data07_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md07_l     ; data08_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md07_l     ; data09_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md07_l     ; data10_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md07_l     ; data11_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md07_l     ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; md07_l     ; internal_io_l ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; md07_l     ; line          ; 54.000 ; 54.000 ; 54.000 ; 54.000 ;
+; md07_l     ; r_run_l       ; 28.000 ; 28.000 ; 28.000 ; 28.000 ;
+; md07_l     ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md08_l     ; c0_l          ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; md08_l     ; c1_l          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md08_l     ; data04_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md08_l     ; data05_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md08_l     ; data06_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md08_l     ; data07_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md08_l     ; data08_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md08_l     ; data09_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md08_l     ; data10_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md08_l     ; data11_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; md08_l     ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; md08_l     ; internal_io_l ; 16.000 ; 15.000 ; 15.000 ; 16.000 ;
+; md08_l     ; line          ; 54.000 ; 54.000 ; 54.000 ; 54.000 ;
+; md08_l     ; r_run_l       ; 28.000 ; 28.000 ; 28.000 ; 28.000 ;
+; md08_l     ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md09_l     ; c0_l          ;        ; 15.000 ; 15.000 ;        ;
+; md09_l     ; c1_l          ;        ; 24.000 ; 24.000 ;        ;
+; md09_l     ; data04_l      ;        ; 26.000 ; 26.000 ;        ;
+; md09_l     ; data05_l      ;        ; 26.000 ; 26.000 ;        ;
+; md09_l     ; data06_l      ;        ; 26.000 ; 26.000 ;        ;
+; md09_l     ; data07_l      ;        ; 26.000 ; 26.000 ;        ;
+; md09_l     ; data08_l      ;        ; 26.000 ; 26.000 ;        ;
+; md09_l     ; data09_l      ;        ; 26.000 ; 26.000 ;        ;
+; md09_l     ; data10_l      ;        ; 26.000 ; 26.000 ;        ;
+; md09_l     ; data11_l      ;        ; 26.000 ; 26.000 ;        ;
+; md09_l     ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; md09_l     ; line          ; 54.000 ; 55.000 ; 55.000 ; 54.000 ;
+; md09_l     ; r_run_l       ;        ; 28.000 ; 28.000 ;        ;
+; md09_l     ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; md10_l     ; c0_l          ;        ; 15.000 ; 15.000 ;        ;
+; md10_l     ; c1_l          ;        ; 24.000 ; 24.000 ;        ;
+; md10_l     ; data04_l      ;        ; 26.000 ; 26.000 ;        ;
+; md10_l     ; data05_l      ;        ; 26.000 ; 26.000 ;        ;
+; md10_l     ; data06_l      ;        ; 26.000 ; 26.000 ;        ;
+; md10_l     ; data07_l      ;        ; 26.000 ; 26.000 ;        ;
+; md10_l     ; data08_l      ;        ; 26.000 ; 26.000 ;        ;
+; md10_l     ; data09_l      ;        ; 26.000 ; 26.000 ;        ;
+; md10_l     ; data10_l      ;        ; 26.000 ; 26.000 ;        ;
+; md10_l     ; data11_l      ;        ; 26.000 ; 26.000 ;        ;
+; md10_l     ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; md10_l     ; line          ; 54.000 ; 55.000 ; 55.000 ; 54.000 ;
+; md10_l     ; r_run_l       ;        ; 28.000 ; 28.000 ;        ;
+; md10_l     ; skip_l        ; 24.000 ; 33.000 ; 33.000 ; 24.000 ;
+; md11_l     ; c0_l          ; 15.000 ;        ;        ; 15.000 ;
+; md11_l     ; c1_l          ; 24.000 ;        ;        ; 24.000 ;
+; md11_l     ; data04_l      ; 26.000 ;        ;        ; 26.000 ;
+; md11_l     ; data05_l      ; 26.000 ;        ;        ; 26.000 ;
+; md11_l     ; data06_l      ; 26.000 ;        ;        ; 26.000 ;
+; md11_l     ; data07_l      ; 26.000 ;        ;        ; 26.000 ;
+; md11_l     ; data08_l      ; 26.000 ;        ;        ; 26.000 ;
+; md11_l     ; data09_l      ; 26.000 ;        ;        ; 26.000 ;
+; md11_l     ; data10_l      ; 26.000 ;        ;        ; 26.000 ;
+; md11_l     ; data11_l      ; 26.000 ;        ;        ; 26.000 ;
+; md11_l     ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; md11_l     ; line          ; 55.000 ; 54.000 ; 54.000 ; 55.000 ;
+; md11_l     ; r_run_l       ; 28.000 ;        ;        ; 28.000 ;
+; md11_l     ; skip_l        ; 33.000 ; 24.000 ; 24.000 ; 33.000 ;
+; power_ok   ; int_rqst_l    ; 85.000 ; 85.000 ; 85.000 ; 85.000 ;
+; power_ok   ; skip_l        ; 85.000 ; 85.000 ; 85.000 ; 85.000 ;
+; serial_in  ; int_rqst_l    ; 85.000 ; 85.000 ; 85.000 ; 85.000 ;
+; serial_in  ; skip_l        ; 85.000 ; 85.000 ; 85.000 ; 85.000 ;
+; sw2        ; int_rqst_l    ; 51.000 ; 59.000 ; 59.000 ; 51.000 ;
+; sw2        ; line          ; 74.000 ; 64.000 ; 64.000 ; 74.000 ;
+; sw2        ; skip_l        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; sw2        ; testp4        ; 19.000 ; 19.000 ; 19.000 ; 19.000 ;
+; sw3        ; int_rqst_l    ; 51.000 ; 59.000 ; 59.000 ; 51.000 ;
+; sw3        ; line          ; 74.000 ; 64.000 ; 64.000 ; 74.000 ;
+; sw3        ; skip_l        ; 51.000 ; 51.000 ; 51.000 ; 51.000 ;
+; sw3        ; testp4        ; 19.000 ; 19.000 ; 19.000 ; 19.000 ;
+; sw4        ; c0_l          ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; sw4        ; c1_l          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; sw4        ; data04_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw4        ; data05_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw4        ; data06_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw4        ; data07_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw4        ; data08_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw4        ; data09_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw4        ; data10_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw4        ; data11_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw4        ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; sw4        ; internal_io_l ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; sw4        ; line          ; 54.000 ; 54.000 ; 54.000 ; 54.000 ;
+; sw4        ; r_run_l       ; 28.000 ; 28.000 ; 28.000 ; 28.000 ;
+; sw4        ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; sw5        ; c0_l          ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; sw5        ; c1_l          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; sw5        ; data04_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw5        ; data05_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw5        ; data06_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw5        ; data07_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw5        ; data08_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw5        ; data09_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw5        ; data10_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw5        ; data11_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw5        ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; sw5        ; internal_io_l ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; sw5        ; line          ; 54.000 ; 54.000 ; 54.000 ; 54.000 ;
+; sw5        ; r_run_l       ; 28.000 ; 28.000 ; 28.000 ; 28.000 ;
+; sw5        ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; sw6        ; c0_l          ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; sw6        ; c1_l          ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; sw6        ; data04_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw6        ; data05_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw6        ; data06_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw6        ; data07_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw6        ; data08_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw6        ; data09_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw6        ; data10_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw6        ; data11_l      ; 26.000 ; 26.000 ; 26.000 ; 26.000 ;
+; sw6        ; int_rqst_l    ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; sw6        ; internal_io_l ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; sw6        ; line          ; 54.000 ; 54.000 ; 54.000 ; 54.000 ;
+; sw6        ; r_run_l       ; 28.000 ; 28.000 ; 28.000 ; 28.000 ;
+; sw6        ; skip_l        ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; tp3        ; int_rqst_l    ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
+; tp3        ; line          ; 53.000 ; 45.000 ; 45.000 ; 53.000 ;
+; tp3        ; r_run_l       ; 19.000 ;        ;        ; 19.000 ;
+; tp3        ; skip_l        ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
++------------+---------------+--------+--------+--------+--------+
+
+

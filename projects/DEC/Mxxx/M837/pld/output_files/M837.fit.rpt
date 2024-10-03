@@ -1,0 +1,578 @@
+Fitter report for M837
+Sat Nov 23 00:36:05 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. Bidir Pins
+ 10. All Package Pins
+ 11. Output Pin Default Load For Reported TCO
+ 12. Fitter Resource Utilization by Entity
+ 13. Non-Global High Fan-Out Signals
+ 14. Other Routing Usage Summary
+ 15. LAB External Interconnect
+ 16. LAB Macrocells
+ 17. Shareable Expander
+ 18. Logic Cell Interconnection
+ 19. Fitter Device Options
+ 20. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Fitter Summary                                                              ;
++---------------------------+-------------------------------------------------+
+; Fitter Status             ; Successful - Sat Nov 23 00:36:05 2019           ;
+; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name             ; M837                                            ;
+; Top-level Entity Name     ; M837                                            ;
+; Family                    ; MAX7000S                                        ;
+; Device                    ; EPM7128SLC84-10                                 ;
+; Timing Models             ; Final                                           ;
+; Total macrocells          ; 57 / 128 ( 45 % )                               ;
+; Total pins                ; 58 / 68 ( 85 % )                                ;
++---------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                              ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM7128SLC84-10 ;               ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Optimize Multi-Corner Timing                                               ; Off             ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off             ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off             ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; Normal          ; Normal        ;
+; Fitter Initial Placement Seed                                              ; 1               ; 1             ;
+; Slow Slew Rate                                                             ; Off             ; Off           ;
+; Fitter Effort                                                              ; Auto Fit        ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off             ; Off           ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/vrs/Documents/Eagle/projects/DEC/Mxxx/M837/pld/output_files/M837.pin.
+
+
++--------------------------------------------------+
+; Fitter Resource Usage Summary                    ;
++------------------------------+-------------------+
+; Resource                     ; Usage             ;
++------------------------------+-------------------+
+; Logic cells                  ; 57 / 128 ( 45 % ) ;
+; Registers                    ; 0 / 128 ( 0 % )   ;
+; Number of pterms used        ; 156               ;
+; I/O pins                     ; 58 / 68 ( 85 % )  ;
+;     -- Clock pins            ; 0 / 2 ( 0 % )     ;
+;     -- Dedicated input pins  ; 0 / 2 ( 0 % )     ;
+;                              ;                   ;
+; Global signals               ; 0                 ;
+; Shareable expanders          ; 8 / 128 ( 6 % )   ;
+; Parallel expanders           ; 0 / 120 ( 0 % )   ;
+; Cells using turbo bit        ; 57 / 128 ( 45 % ) ;
+; Maximum fan-out              ; 26                ;
+; Highest non-global fan-out   ; 26                ;
+; Total fan-out                ; 328               ;
+; Average fan-out              ; 2.67              ;
++------------------------------+-------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                             ;
++------------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; Name             ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; I/O Standard ; Location assigned by ;
++------------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; cpma_disable_low ; 79    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; d_low            ; 70    ; --       ; 7   ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; f_low            ; 69    ; --       ; 7   ; 5                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; f_set_low        ; 16    ; --       ; 2   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ind1_low         ; 5     ; --       ; 1   ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ind2_low         ; 61    ; --       ; 6   ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; initialize       ; 57    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; io_pause_low     ; 50    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ir00_low         ; 67    ; --       ; 7   ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ir01_low         ; 9     ; --       ; 1   ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; key_ctl_low      ; 51    ; --       ; 5   ; 12                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; load_addr        ; 56    ; --       ; 6   ; 26                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; load_cntl        ; 4     ; --       ; 1   ; 19                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md00_low         ; 52    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md01_low         ; 55    ; --       ; 6   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md02_low         ; 46    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md03_low         ; 48    ; --       ; 5   ; 5                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md04_low         ; 10    ; --       ; 1   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md05_low         ; 49    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md06_low         ; 8     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md07_low         ; 58    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md08_low         ; 68    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md09_low         ; 74    ; --       ; 8   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md10_low         ; 65    ; --       ; 7   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; md11_low         ; 75    ; --       ; 8   ; 0                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; power_ok         ; 77    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; run_low          ; 15    ; --       ; 2   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; tp2              ; 76    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; tp3              ; 80    ; --       ; 8   ; 17                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; tp4              ; 81    ; --       ; 8   ; 15                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ts1_low          ; 60    ; --       ; 6   ; 8                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; ts_disable_low   ; 6     ; --       ; 1   ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
++------------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                         ;
++-----------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name            ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++-----------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; c1l             ; 36    ; --       ; 4   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; data03_low      ; 35    ; --       ; 4   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ema0_low        ; 27    ; --       ; 3   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ema1_low        ; 24    ; --       ; 3   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; ema2_low        ; 30    ; --       ; 3   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; int_rqst_low    ; 29    ; --       ; 3   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; internal_io_low ; 22    ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; skip_low        ; 21    ; --       ; 2   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
++-----------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Bidir Pins                                                                                                                                                                                                                                                        ;
++---------------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-------------------------+---------------------+
+; Name                ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Slow Slew Rate ; Open Drain ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source    ; Output Enable Group ;
++---------------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-------------------------+---------------------+
+; data05_low          ; 34    ; --       ; 4   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; data05_low~4 (inverted) ; -                   ;
+; data06_low          ; 39    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; data06_low~4 (inverted) ; -                   ;
+; data07_low          ; 41    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; data07_low~4 (inverted) ; -                   ;
+; data08_low          ; 40    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; data08_low~4 (inverted) ; -                   ;
+; data09_low          ; 33    ; --       ; 4   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; data09_low~4 (inverted) ; -                   ;
+; data10_low          ; 25    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; data10_low~4 (inverted) ; -                   ;
+; data11_low          ; 28    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; data11_low~4 (inverted) ; -                   ;
+; df_enable           ; 31    ; --       ; 3   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                       ; -                   ;
+; int_in_progress_low ; 37    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; ~VCC~0 (inverted)       ; -                   ;
+; tp_aa1              ; 18    ; --       ; 2   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                       ; -                   ;
+; tp_ab1              ; 17    ; --       ; 2   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                       ; -                   ;
+; tp_ba1              ; 11    ; --       ; 1   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                       ; -                   ;
+; tp_bb1              ; 20    ; --       ; 2   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; -                       ; -                   ;
+; user_mode_low       ; 12    ; --       ; 1   ; 0                     ; 0                  ; no     ; no             ; no              ; no             ; yes        ; TTL          ; Fitter               ; 10 pF ; uf~9 (inverted)         ; -                   ;
++---------------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-------------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                           ;
++----------+------------+----------+---------------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage      ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+---------------------+--------+--------------+---------+-----------------+
+; 1        ; 0          ; --       ; GND+                ;        ;              ;         ;                 ;
+; 2        ; 1          ; --       ; GND+                ;        ;              ;         ;                 ;
+; 3        ; 2          ; --       ; VCCINT              ; power  ;              ; 5.0V    ;                 ;
+; 4        ; 3          ; --       ; load_cntl           ; input  ; TTL          ;         ; N               ;
+; 5        ; 4          ; --       ; ind1_low            ; input  ; TTL          ;         ; N               ;
+; 6        ; 5          ; --       ; ts_disable_low      ; input  ; TTL          ;         ; N               ;
+; 7        ; 6          ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 8        ; 7          ; --       ; md06_low            ; input  ; TTL          ;         ; N               ;
+; 9        ; 8          ; --       ; ir01_low            ; input  ; TTL          ;         ; N               ;
+; 10       ; 9          ; --       ; md04_low            ; input  ; TTL          ;         ; N               ;
+; 11       ; 10         ; --       ; tp_ba1              ; bidir  ; TTL          ;         ; N               ;
+; 12       ; 11         ; --       ; user_mode_low       ; bidir  ; TTL          ;         ; N               ;
+; 13       ; 12         ; --       ; VCCIO               ; power  ;              ; 5.0V    ;                 ;
+; 14       ; 13         ; --       ; TDI                 ; input  ; TTL          ;         ; N               ;
+; 15       ; 14         ; --       ; run_low             ; input  ; TTL          ;         ; N               ;
+; 16       ; 15         ; --       ; f_set_low           ; input  ; TTL          ;         ; N               ;
+; 17       ; 16         ; --       ; tp_ab1              ; bidir  ; TTL          ;         ; N               ;
+; 18       ; 17         ; --       ; tp_aa1              ; bidir  ; TTL          ;         ; N               ;
+; 19       ; 18         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 20       ; 19         ; --       ; tp_bb1              ; bidir  ; TTL          ;         ; N               ;
+; 21       ; 20         ; --       ; skip_low            ; output ; TTL          ;         ; N               ;
+; 22       ; 21         ; --       ; internal_io_low     ; output ; TTL          ;         ; N               ;
+; 23       ; 22         ; --       ; TMS                 ; input  ; TTL          ;         ; N               ;
+; 24       ; 23         ; --       ; ema1_low            ; output ; TTL          ;         ; N               ;
+; 25       ; 24         ; --       ; data10_low          ; bidir  ; TTL          ;         ; N               ;
+; 26       ; 25         ; --       ; VCCIO               ; power  ;              ; 5.0V    ;                 ;
+; 27       ; 26         ; --       ; ema0_low            ; output ; TTL          ;         ; N               ;
+; 28       ; 27         ; --       ; data11_low          ; bidir  ; TTL          ;         ; N               ;
+; 29       ; 28         ; --       ; int_rqst_low        ; output ; TTL          ;         ; N               ;
+; 30       ; 29         ; --       ; ema2_low            ; output ; TTL          ;         ; N               ;
+; 31       ; 30         ; --       ; df_enable           ; bidir  ; TTL          ;         ; N               ;
+; 32       ; 31         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 33       ; 32         ; --       ; data09_low          ; bidir  ; TTL          ;         ; N               ;
+; 34       ; 33         ; --       ; data05_low          ; bidir  ; TTL          ;         ; N               ;
+; 35       ; 34         ; --       ; data03_low          ; output ; TTL          ;         ; N               ;
+; 36       ; 35         ; --       ; c1l                 ; output ; TTL          ;         ; N               ;
+; 37       ; 36         ; --       ; int_in_progress_low ; bidir  ; TTL          ;         ; N               ;
+; 38       ; 37         ; --       ; VCCIO               ; power  ;              ; 5.0V    ;                 ;
+; 39       ; 38         ; --       ; data06_low          ; bidir  ; TTL          ;         ; N               ;
+; 40       ; 39         ; --       ; data08_low          ; bidir  ; TTL          ;         ; N               ;
+; 41       ; 40         ; --       ; data07_low          ; bidir  ; TTL          ;         ; N               ;
+; 42       ; 41         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 43       ; 42         ; --       ; VCCINT              ; power  ;              ; 5.0V    ;                 ;
+; 44       ; 43         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 45       ; 44         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 46       ; 45         ; --       ; md02_low            ; input  ; TTL          ;         ; N               ;
+; 47       ; 46         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 48       ; 47         ; --       ; md03_low            ; input  ; TTL          ;         ; N               ;
+; 49       ; 48         ; --       ; md05_low            ; input  ; TTL          ;         ; N               ;
+; 50       ; 49         ; --       ; io_pause_low        ; input  ; TTL          ;         ; N               ;
+; 51       ; 50         ; --       ; key_ctl_low         ; input  ; TTL          ;         ; N               ;
+; 52       ; 51         ; --       ; md00_low            ; input  ; TTL          ;         ; N               ;
+; 53       ; 52         ; --       ; VCCIO               ; power  ;              ; 5.0V    ;                 ;
+; 54       ; 53         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 55       ; 54         ; --       ; md01_low            ; input  ; TTL          ;         ; N               ;
+; 56       ; 55         ; --       ; load_addr           ; input  ; TTL          ;         ; N               ;
+; 57       ; 56         ; --       ; initialize          ; input  ; TTL          ;         ; N               ;
+; 58       ; 57         ; --       ; md07_low            ; input  ; TTL          ;         ; N               ;
+; 59       ; 58         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 60       ; 59         ; --       ; ts1_low             ; input  ; TTL          ;         ; N               ;
+; 61       ; 60         ; --       ; ind2_low            ; input  ; TTL          ;         ; N               ;
+; 62       ; 61         ; --       ; TCK                 ; input  ; TTL          ;         ; N               ;
+; 63       ; 62         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 64       ; 63         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 65       ; 64         ; --       ; md10_low            ; input  ; TTL          ;         ; N               ;
+; 66       ; 65         ; --       ; VCCIO               ; power  ;              ; 5.0V    ;                 ;
+; 67       ; 66         ; --       ; ir00_low            ; input  ; TTL          ;         ; N               ;
+; 68       ; 67         ; --       ; md08_low            ; input  ; TTL          ;         ; N               ;
+; 69       ; 68         ; --       ; f_low               ; input  ; TTL          ;         ; N               ;
+; 70       ; 69         ; --       ; d_low               ; input  ; TTL          ;         ; N               ;
+; 71       ; 70         ; --       ; TDO                 ; output ; TTL          ;         ; N               ;
+; 72       ; 71         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 73       ; 72         ; --       ; RESERVED            ;        ;              ;         ;                 ;
+; 74       ; 73         ; --       ; md09_low            ; input  ; TTL          ;         ; N               ;
+; 75       ; 74         ; --       ; md11_low            ; input  ; TTL          ;         ; N               ;
+; 76       ; 75         ; --       ; tp2                 ; input  ; TTL          ;         ; N               ;
+; 77       ; 76         ; --       ; power_ok            ; input  ; TTL          ;         ; N               ;
+; 78       ; 77         ; --       ; VCCIO               ; power  ;              ; 5.0V    ;                 ;
+; 79       ; 78         ; --       ; cpma_disable_low    ; input  ; TTL          ;         ; N               ;
+; 80       ; 79         ; --       ; tp3                 ; input  ; TTL          ;         ; N               ;
+; 81       ; 80         ; --       ; tp4                 ; input  ; TTL          ;         ; N               ;
+; 82       ; 81         ; --       ; GND                 ; gnd    ;              ;         ;                 ;
+; 83       ; 82         ; --       ; GND+                ;        ;              ;         ;                 ;
+; 84       ; 83         ; --       ; GND+                ;        ;              ;         ;                 ;
++----------+------------+----------+---------------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; TTL          ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++-------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                               ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |M837                      ; 57         ; 58   ; |M837               ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++----------------------------------------------------+
+; Non-Global High Fan-Out Signals                    ;
++------------------------------------------+---------+
+; Name                                     ; Fan-Out ;
++------------------------------------------+---------+
+; load_addr                                ; 26      ;
+; ibifdf_clr_low~4                         ; 25      ;
+; load_cntl                                ; 19      ;
+; tp3                                      ; 17      ;
+; tp4                                      ; 15      ;
+; key_ctl_low                              ; 12      ;
+; lp_la_or_tp3_rp_low~0sexpand1            ; 10      ;
+; ts1_low                                  ; 8       ;
+; ir01_low                                 ; 7       ;
+; ir00_low                                 ; 7       ;
+; ind2_low                                 ; 7       ;
+; ind1_low                                 ; 7       ;
+; d_low                                    ; 7       ;
+; lp_la_or_tp4_and_ld_ctl_rp_low~1sexpand0 ; 6       ;
+; df_enable$latch~9                        ; 6       ;
+; md03_low                                 ; 5       ;
+; f_low                                    ; 5       ;
+; renamed0~4sexpand2                       ; 4       ;
+; renamed0~4sexpand1                       ; 4       ;
+; renamed0~4sexpand0                       ; 4       ;
+; uf~9                                     ; 4       ;
+; if2~9                                    ; 4       ;
+; if1~9                                    ; 4       ;
+; if0~9                                    ; 4       ;
+; ema_disable_low~9                        ; 4       ;
+; ib0~9                                    ; 4       ;
+; df2~9                                    ; 4       ;
+; df1~9                                    ; 4       ;
+; df0~9                                    ; 4       ;
+; ts_disable_low                           ; 3       ;
+; initialize_low~0sexpand1                 ; 3       ;
+; db~10                                    ; 3       ;
+; ib2~9                                    ; 3       ;
+; ib1~9                                    ; 3       ;
+; lp_la_or_tp4_and_ld_ctl_rp_low~5         ; 2       ;
+; lp_la_or_tp3_rp_low~3                    ; 2       ;
+; uf_m~23                                  ; 2       ;
+; if2_m~22                                 ; 2       ;
+; if1_m~22                                 ; 2       ;
+; if0_m~22                                 ; 2       ;
+; db_m~9                                   ; 2       ;
+; ema_disable_low_m~9                      ; 2       ;
+; df_enable_m~9                            ; 2       ;
+; ib0_m~9                                  ; 2       ;
+; ib2_m~9                                  ; 2       ;
+; ib1_m~9                                  ; 2       ;
+; comb~6                                   ; 2       ;
+; df2_m~9                                  ; 2       ;
+; df1_m~9                                  ; 2       ;
+; df0_m~9                                  ; 2       ;
+; uint~2                                   ; 2       ;
+; int_in_progress_low~0                    ; 1       ;
+; data08_low~0                             ; 1       ;
+; data07_low~0                             ; 1       ;
+; data06_low~0                             ; 1       ;
+; tp2                                      ; 1       ;
+; run_low                                  ; 1       ;
+; power_ok                                 ; 1       ;
+; md08_low                                 ; 1       ;
+; md07_low                                 ; 1       ;
+; md06_low                                 ; 1       ;
+; io_pause_low                             ; 1       ;
+; initialize                               ; 1       ;
+; f_set_low                                ; 1       ;
+; cpma_disable_low                         ; 1       ;
+; ~VCC~4                                   ; 1       ;
+; ~VCC~3                                   ; 1       ;
+; ~VCC~2                                   ; 1       ;
+; ~VCC~1                                   ; 1       ;
+; ~VCC~0                                   ; 1       ;
+; data05_low~4                             ; 1       ;
+; ema2_low~7                               ; 1       ;
+; ema1_low~7                               ; 1       ;
+; ema0_low~7                               ; 1       ;
+; uf_m~7                                   ; 1       ;
+; uf_m~15                                  ; 1       ;
+; tp_ba1~5                                 ; 1       ;
+; if2_m~7                                  ; 1       ;
+; if2_m~15                                 ; 1       ;
+; if1_m~7                                  ; 1       ;
+; if1_m~15                                 ; 1       ;
+; if0_m~7                                  ; 1       ;
+; if0_m~15                                 ; 1       ;
+; tp_ab1~7                                 ; 1       ;
+; tp_aa1~7                                 ; 1       ;
+; tp_bb1~8                                 ; 1       ;
+; data11_low~4                             ; 1       ;
+; data10_low~4                             ; 1       ;
+; data09_low~4                             ; 1       ;
+; n_t_49x~2                                ; 1       ;
+; data08_low~4                             ; 1       ;
+; data07_low~4                             ; 1       ;
+; data06_low~4                             ; 1       ;
++------------------------------------------+---------+
+
+
++-------------------------------------------------+
+; Other Routing Usage Summary                     ;
++-----------------------------+-------------------+
+; Other Routing Resource Type ; Usage             ;
++-----------------------------+-------------------+
+; Output enables              ; 0 / 6 ( 0 % )     ;
+; PIA buffers                 ; 94 / 288 ( 33 % ) ;
+; PIAs                        ; 94 / 288 ( 33 % ) ;
++-----------------------------+-------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB External Interconnect                                                   ;
++-----------------------------------------------+-----------------------------+
+; LAB External Interconnects  (Average = 11.75) ; Number of LABs  (Total = 4) ;
++-----------------------------------------------+-----------------------------+
+; 0 - 2                                         ; 4                           ;
+; 3 - 5                                         ; 0                           ;
+; 6 - 8                                         ; 0                           ;
+; 9 - 11                                        ; 0                           ;
+; 12 - 14                                       ; 1                           ;
+; 15 - 17                                       ; 0                           ;
+; 18 - 20                                       ; 0                           ;
+; 21 - 23                                       ; 1                           ;
+; 24 - 26                                       ; 0                           ;
+; 27 - 29                                       ; 2                           ;
++-----------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------+
+; LAB Macrocells                                                       ;
++----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 7.13) ; Number of LABs  (Total = 4) ;
++----------------------------------------+-----------------------------+
+; 0                                      ; 4                           ;
+; 1                                      ; 0                           ;
+; 2                                      ; 0                           ;
+; 3                                      ; 0                           ;
+; 4                                      ; 0                           ;
+; 5                                      ; 0                           ;
+; 6                                      ; 0                           ;
+; 7                                      ; 0                           ;
+; 8                                      ; 0                           ;
+; 9                                      ; 1                           ;
+; 10                                     ; 0                           ;
+; 11                                     ; 0                           ;
+; 12                                     ; 0                           ;
+; 13                                     ; 0                           ;
+; 14                                     ; 0                           ;
+; 15                                     ; 0                           ;
+; 16                                     ; 3                           ;
++----------------------------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 1.00) ; Number of LABs  (Total = 3) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 5                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 1                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                    ;
++-----+------------+----------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                    ; Output                                                                                                                                                                                                                          ;
++-----+------------+----------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC16       ; key_ctl_low, if1_m~15, renamed0~4sexpand0, renamed0~4sexpand1, renamed0~4sexpand2                        ; if1_m~22                                                                                                                                                                                                                        ;
+;  A  ; LC7        ; f_low, md03_low, ir00_low, if1~9, ir01_low, key_ctl_low, d_low, load_cntl                                ; if1_m~7                                                                                                                                                                                                                         ;
+;  A  ; LC6        ; ib0~9, key_ctl_low, if0_m~15, renamed0~4sexpand0, renamed0~4sexpand1, renamed0~4sexpand2                 ; if0_m~22                                                                                                                                                                                                                        ;
+;  A  ; LC8        ; df_enable$latch~9, f_set_low, ir00_low, d_low, load_cntl, ir01_low                                       ; df_enable_m~9                                                                                                                                                                                                                   ;
+;  A  ; LC14       ; key_ctl_low, if2_m~15, renamed0~4sexpand0, renamed0~4sexpand1, renamed0~4sexpand2                        ; if2_m~22                                                                                                                                                                                                                        ;
+;  A  ; LC9        ; ib0~9, ibifdf_clr_low~4, ib0_m~9, load_addr, tp3, lp_la_or_tp3_rp_low~3                                  ; ib0_m~9, ib0~9                                                                                                                                                                                                                  ;
+;  A  ; LC4        ; f_low, md03_low, ir00_low, if0~9, ir01_low, key_ctl_low, d_low, load_cntl                                ; if0_m~7                                                                                                                                                                                                                         ;
+;  A  ; LC1        ; ib0_m~9, ibifdf_clr_low~4, ib0~9, lp_la_or_tp3_rp_low~3, load_addr, tp3                                  ; ib0_m~9, ib0~9, tp_bb1~8, if0_m~7                                                                                                                                                                                               ;
+;  A  ; LC2        ; comb~6, tp3, db_m~9, load_addr, ibifdf_clr_low~4                                                         ; db_m~9, db~10                                                                                                                                                                                                                   ;
+;  A  ; LC15       ; f_low, md03_low, ir00_low, if2~9, ir01_low, key_ctl_low, d_low, load_cntl                                ; if2_m~7                                                                                                                                                                                                                         ;
+;  A  ; LC13       ; db_m~9, tp3, comb~6, db~10, load_addr, ibifdf_clr_low~4                                                  ; db~10, tp_ba1~5, uf_m~7                                                                                                                                                                                                         ;
+;  A  ; LC5        ; db~10, key_ctl_low, ts_disable_low                                                                       ; tp_ba1                                                                                                                                                                                                                          ;
+;  A  ; LC12       ; f_low, md03_low, ir00_low, uf~9, ir01_low, key_ctl_low, d_low, load_cntl                                 ; uf_m~7                                                                                                                                                                                                                          ;
+;  A  ; LC11       ; db~10, key_ctl_low, ts_disable_low, uf_m~15, renamed0~4sexpand0, renamed0~4sexpand1, renamed0~4sexpand2  ; uf_m~23                                                                                                                                                                                                                         ;
+;  A  ; LC10       ; uf_m~7, ibifdf_clr_low~4, uf_m~23, lp_la_or_tp4_and_ld_ctl_rp_low~5, load_cntl, tp4, load_addr           ; uf_m~23, uf~9                                                                                                                                                                                                                   ;
+;  A  ; LC3        ; uf_m~23, ibifdf_clr_low~4, uf~9, load_cntl, tp4, load_addr, lp_la_or_tp4_and_ld_ctl_rp_low~5             ; uf_m~15, uf~9, data05_low~4, user_mode_low                                                                                                                                                                                      ;
+;  B  ; LC26       ; df1~9, ibifdf_clr_low~4, df1_m~9, load_addr, tp3, lp_la_or_tp3_rp_low~0sexpand1                          ; df1_m~9, df1~9                                                                                                                                                                                                                  ;
+;  B  ; LC25       ; key_ctl_low, ib2~9, data08_low                                                                           ; tp_ab1                                                                                                                                                                                                                          ;
+;  B  ; LC23       ; df0~9, ibifdf_clr_low~4, df0_m~9, load_addr, tp3, lp_la_or_tp3_rp_low~0sexpand1                          ; df0_m~9, df0~9                                                                                                                                                                                                                  ;
+;  B  ; LC27       ; df2~9, ibifdf_clr_low~4, df2_m~9, load_addr, tp3, lp_la_or_tp3_rp_low~0sexpand1                          ; df2_m~9, df2~9                                                                                                                                                                                                                  ;
+;  B  ; LC28       ; tp3, load_addr, ibifdf_clr_low~4, io_pause_low, load_cntl, md06_low, md07_low, md08_low                  ; db_m~9, db~10                                                                                                                                                                                                                   ;
+;  B  ; LC29       ; ib1~9, ibifdf_clr_low~4, ib1_m~9, load_addr, tp3, lp_la_or_tp3_rp_low~0sexpand1                          ; ib1_m~9, ib1~9                                                                                                                                                                                                                  ;
+;  B  ; LC30       ; ib2~9, ibifdf_clr_low~4, ib2_m~9, load_addr, tp3, lp_la_or_tp3_rp_low~0sexpand1                          ; ib2_m~9, ib2~9                                                                                                                                                                                                                  ;
+;  B  ; LC21       ; ib0~9, key_ctl_low, data06_low                                                                           ; tp_bb1                                                                                                                                                                                                                          ;
+;  B  ; LC18       ; df0_m~9, ibifdf_clr_low~4, df0~9, lp_la_or_tp3_rp_low~0sexpand1, load_addr, tp3                          ; df0_m~9, df0~9, data09_low~4, ema0_low~7                                                                                                                                                                                        ;
+;  B  ; LC20       ; df1_m~9, ibifdf_clr_low~4, df1~9, lp_la_or_tp3_rp_low~0sexpand1, load_addr, tp3                          ; df1_m~9, df1~9, data10_low~4, ema1_low~7                                                                                                                                                                                        ;
+;  B  ; LC31       ; df2_m~9, ibifdf_clr_low~4, df2~9, lp_la_or_tp3_rp_low~0sexpand1, load_addr, tp3                          ; df2_m~9, df2~9, data11_low~4, ema2_low~7                                                                                                                                                                                        ;
+;  B  ; LC32       ; ib1_m~9, ibifdf_clr_low~4, ib1~9, lp_la_or_tp3_rp_low~0sexpand1, load_addr, tp3                          ; ib1_m~9, ib1~9, tp_aa1~7                                                                                                                                                                                                        ;
+;  B  ; LC22       ; ib2_m~9, ibifdf_clr_low~4, ib2~9, lp_la_or_tp3_rp_low~0sexpand1, load_addr, tp3                          ; ib2_m~9, ib2~9, tp_ab1~7                                                                                                                                                                                                        ;
+;  B  ; LC24       ; key_ctl_low, ib1~9, data07_low                                                                           ; tp_aa1                                                                                                                                                                                                                          ;
+;  B  ; LC19       ;                                                                                                          ; skip_low                                                                                                                                                                                                                        ;
+;  B  ; LC17       ;                                                                                                          ; internal_io_low                                                                                                                                                                                                                 ;
+;  C  ; LC40       ; df2~9, ind1_low, ind2_low, ts1_low                                                                       ; data11_low                                                                                                                                                                                                                      ;
+;  C  ; LC35       ; df_enable_m~9, tp4, df_enable$latch~9, initialize_low~0sexpand1                                          ; n_t_49x~2, df_enable$latch~9, df_enable, ema0_low~7, ema1_low~7, ema2_low~7                                                                                                                                                     ;
+;  C  ; LC39       ; ema_disable_low_m~9, tp4, ema_disable_low~9, ibifdf_clr_low~4                                            ; ema_disable_low~9, ema0_low~7, ema1_low~7, ema2_low~7                                                                                                                                                                           ;
+;  C  ; LC48       ; if0_m~7, ibifdf_clr_low~4, if0_m~22, lp_la_or_tp4_and_ld_ctl_rp_low~1sexpand0, load_cntl, tp4, load_addr ; if0_m~22, if0~9                                                                                                                                                                                                                 ;
+;  C  ; LC47       ; if1_m~7, ibifdf_clr_low~4, if1_m~22, lp_la_or_tp4_and_ld_ctl_rp_low~1sexpand0, load_cntl, tp4, load_addr ; if1_m~22, if1~9                                                                                                                                                                                                                 ;
+;  C  ; LC41       ; cpma_disable_low, tp4, ema_disable_low_m~9, ibifdf_clr_low~4                                             ; ema_disable_low_m~9, ema_disable_low~9                                                                                                                                                                                          ;
+;  C  ; LC38       ; ts_disable_low, uint~2, tp2, initialize_low~0sexpand1                                                    ; uint~2, int_rqst_low                                                                                                                                                                                                            ;
+;  C  ; LC33       ; if0_m~22, ibifdf_clr_low~4, if0~9, load_cntl, tp4, load_addr, lp_la_or_tp4_and_ld_ctl_rp_low~1sexpand0   ; data06_low~4, if0_m~15, if0~9, ema0_low~7                                                                                                                                                                                       ;
+;  C  ; LC34       ; if1_m~22, ibifdf_clr_low~4, if1~9, load_cntl, tp4, load_addr, lp_la_or_tp4_and_ld_ctl_rp_low~1sexpand0   ; data07_low~4, if1_m~15, if1~9, ema1_low~7                                                                                                                                                                                       ;
+;  C  ; LC36       ; if2_m~22, ibifdf_clr_low~4, if2~9, load_cntl, tp4, load_addr, lp_la_or_tp4_and_ld_ctl_rp_low~1sexpand0   ; data08_low~4, if2_m~15, if2~9, ema2_low~7                                                                                                                                                                                       ;
+;  C  ; LC43       ; if0~9, df_enable$latch~9, ema_disable_low~9, df0~9                                                       ; ema0_low                                                                                                                                                                                                                        ;
+;  C  ; LC46       ; if1~9, df_enable$latch~9, ema_disable_low~9, df1~9                                                       ; ema1_low                                                                                                                                                                                                                        ;
+;  C  ; LC44       ; if2_m~7, ibifdf_clr_low~4, if2_m~22, lp_la_or_tp4_and_ld_ctl_rp_low~1sexpand0, load_cntl, tp4, load_addr ; if2_m~22, if2~9                                                                                                                                                                                                                 ;
+;  C  ; LC42       ; n_t_49x~2, tp4, df_enable_m~9, initialize_low~0sexpand1                                                  ; df_enable_m~9, df_enable$latch~9                                                                                                                                                                                                ;
+;  C  ; LC45       ; ind1_low, ind2_low, ts1_low, df1~9                                                                       ; data10_low                                                                                                                                                                                                                      ;
+;  C  ; LC37       ; if2~9, df_enable$latch~9, ema_disable_low~9, df2~9                                                       ; ema2_low                                                                                                                                                                                                                        ;
+;  D  ; LC49       ; ind1_low, ind2_low, ts1_low, if1~9                                                                       ; data07_low                                                                                                                                                                                                                      ;
+;  D  ; LC64       ; ind1_low, ind2_low, ts1_low, df0~9                                                                       ; data09_low                                                                                                                                                                                                                      ;
+;  D  ; LC53       ; ind1_low, ind2_low, ts1_low, if0~9                                                                       ; data06_low                                                                                                                                                                                                                      ;
+;  D  ; LC61       ; ind1_low, ind2_low, ts1_low, uf~9                                                                        ; data05_low                                                                                                                                                                                                                      ;
+;  D  ; LC56       ;                                                                                                          ; int_in_progress_low                                                                                                                                                                                                             ;
+;  D  ; LC57       ;                                                                                                          ; c1l                                                                                                                                                                                                                             ;
+;  D  ; LC59       ;                                                                                                          ; data03_low                                                                                                                                                                                                                      ;
+;  D  ; LC50       ; int_in_progress_low, load_cntl, tp4, power_ok, run_low, ts1_low                                          ; df0_m~9, df1_m~9, df2_m~9, ib1_m~9, ib2_m~9, ib0_m~9, ema_disable_low_m~9, df0~9, df1~9, df2~9, ib1~9, ib2~9, ib0~9, ema_disable_low~9, if0_m~22, if1_m~22, if2_m~22, uf_m~23, if0~9, if1~9, if2~9, uf~9, comb~6, db_m~9, db~10 ;
+;  D  ; LC51       ; ind1_low, ind2_low, ts1_low, if2~9                                                                       ; data08_low                                                                                                                                                                                                                      ;
++-----+------------+----------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (119006): Selected device EPM7128SLC84-10 for design "M837"
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4697 megabytes
+    Info: Processing ended: Sat Nov 23 00:36:05 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

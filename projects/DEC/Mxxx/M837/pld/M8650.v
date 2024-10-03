@@ -1,0 +1,1099 @@
+module M8650 (
+		sw1, sw2, sw3, sw4, sw5, sw6, clk,
+		// n_t_165x, n_t_1x, n_t_32x, n_t_3x, n_t_50x, n_t_58x, n_t_74x, n_t_84x, n_t_86x, n_t_90x, n_t_95x, n_t_96x, 
+		// stp_mark, tx_rate, bd1200, bd150, bd2400, bd300, bd600, 
+		c0_l, c1_l, data04_l, data05_l, data06_l, data07_l, data08_l, data09_l, data10_l, data11_l, 
+		// eia_in, eia_out, int_enab, 
+		initialize, int_rqst_l, internal_io_l, io_pause_l, line, 
+		md03_l, md04_l, md05_l, md06_l, md07_l, md08_l, md09_l, md10_l, md11_l, 
+		// n15v, 
+		// n_t_119x, n_t_146x, n_t_161x, n_t_162x, n_t_45x, n_t_59x, n_t_89x, n_t_92x, n_t_93x, 
+		power_ok, r_run_l, 
+		// reader_run, reader_run_or, rtsdtr, rx20ma_data, rx_20ma, rx_20ma_or, rx_active, rx_data, rx_rate, 
+		serial_in, skip_l, testp4, tp3 
+		// tx_20ma, tx_20ma_or, tx_active
+		);
+input sw1, sw2, sw3, sw4, sw5, sw6;
+input clk;
+//input n_t_165x;		//MD05 Jumper
+//input n_t_1x;		//MD05 Jumper
+//input n_t_32x;		//MD03 Jumper
+//input n_t_3x;		//MD04 Jumper
+//input n_t_50x;		//MD03 Jumper
+//input n_t_58x;		//MD07 Jumper
+//input n_t_74x;		//MD04 Jumper
+//input n_t_84x;		//MD06 Jumper
+//input n_t_86x;		//MD06 Jumper
+//input n_t_90x;		//MD07 Jumper
+//input n_t_95x;		//MD08 Jumper
+//input n_t_96x;		//MD08 Jumper
+//input stp_mark;
+//input tx_rate;
+//inout reg bd1200;
+//output reg bd150;
+//inout reg bd2400;
+//inout reg bd300;
+//inout reg bd600;
+output c0_l;
+output c1_l;
+inout data04_l;
+inout data05_l;
+inout data06_l;
+inout data07_l;
+inout data08_l;
+inout data09_l;
+inout data10_l;
+inout data11_l;
+//output eia_in;
+///output eia_out;
+input initialize;
+//inout int_enab;
+output int_rqst_l;
+output internal_io_l;
+input io_pause_l;
+output reg line;
+input md03_l;
+input md04_l;
+input md05_l;
+input md06_l;
+input md07_l;
+input md08_l;
+input md09_l;
+input md10_l;
+input md11_l;
+//output n15v;
+//inout reg n_t_119x;	//stp_mark Jumper
+//inout reg n_t_146x;	//stp_mark Jumper
+//output n_t_161x;		//MD05 Jumper
+//output reg n_t_162x;	//tx_rate Jumper
+//output n_t_45x;		//MD03 Jumper
+//output n_t_59x;		//MD04 Jumper
+//output n_t_89x;		//MD06 Jumper
+//output n_t_92x;		//MD07 Jumper
+//output n_t_93x;		//MD08 Jumper
+input power_ok;
+output reg r_run_l;
+//output reader_run;
+//output reader_run_or;
+//output rtsdtr;
+//output rx20ma_data;
+//output rx_20ma;
+//output rx_20ma_or;
+//inout reg rx_active;
+//output rx_data;
+//inout reg rx_rate;
+input serial_in;
+inout skip_l;
+output testp4;
+input tp3;
+//output tx_20ma;
+//output tx_20ma_or;
+//inout tx_active;
+
+reg ck_pulse_m;
+reg enab_m;
+reg gdollar_7_m;
+reg gdollar_8_m;
+reg int_enab_l_m;
+reg last_unit_m;
+reg line_m;
+reg n_t_119x_m;
+reg n_t_146x_m;
+reg n_t_56x_m;
+reg n_t_60x_m;
+reg n_t_61x_m;
+reg n_t_62x_m;
+reg n_t_63x_m;
+reg n_t_65x_m;
+reg n_t_66x_m;
+reg p_pulse_l_m;
+reg r_run_l_m;
+reg rflg_l_m;
+reg rx_active_m;
+reg rx_div2_l_m;
+reg rx_div4_l_m;
+reg rx_div8_m;
+reg spike_det_l_m;
+reg start_l_m;
+reg tflg_l_m;
+reg tx_active_l_m;
+reg tx_data_m;
+reg tx_div_m;
+
+reg rx_div;
+reg ck_pulse;
+reg rx_div2_l;
+reg rx_div4_l;
+reg n_t_155x;
+reg gdollar_0;
+reg gdollar_1;
+reg rx7;
+reg n_t_34x;
+reg n_t_36x;
+reg n_t_35x;
+reg p_pulse_l;
+reg last_unit;
+reg rx_div8;
+reg n_t_37x;
+reg n_t_38x;
+reg n_t_39x;
+reg n_t_40x;
+reg tx_div;
+reg spike_det_l;
+reg gdollar_2;
+reg gdollar_3;
+reg tx_active_l;
+reg start_l;
+reg gdollar_4;
+reg gdollar_5;
+reg gdollar_6;
+reg n_t_154x;
+reg gdollar_7;
+reg gdollar_8;
+reg n_t_60x;
+reg n_t_62x;
+reg n_t_56x;
+reg n_t_61x;
+reg enab;
+reg n_t_63x;
+reg n_t_65x;
+reg n_t_66x;
+reg tx_data;
+reg tflg_l;
+reg int_enab_l;
+reg rflg_l;
+
+//VRS: Made these local.
+reg n_t_119x;	//stp_mark Jumper
+reg n_t_146x;	//stp_mark Jumper
+assign stp_mark = (~sw1 & ~sw2 & ~sw3)? n_t_146x: n_t_119x;
+reg n_t_162x;	//tx_rate Jumper
+assign tx_rate = rx_rate; //BUGBUG: n_t_162x unused
+assign testp4 = (~sw1 & ~sw2 & ~sw3) & bd110
+              | (~sw1 & ~sw2 &  sw3) & bd300
+              | (~sw1 &  sw2 & ~sw3) & bd600
+              | (~sw1 &  sw2 &  sw3) & bd1200
+              | ( sw1 & ~sw2 & ~sw3) & bd9600
+              | ( sw1 & ~sw2 &  sw3) & bd38400
+              | ( sw1 &  sw2 & ~sw3) & bd115200
+              | ( sw1 &  sw2 &  sw3) & bd230400;
+
+// internal nodes 
+wire ckkcc_l;
+wire ckkcf;
+wire ckkie;
+wire cktcf;
+wire cktfl;
+wire dokcc;
+wire dokrs;
+wire dotcf;
+wire dotpc;
+wire flgs;
+wire kcc_l;
+wire kcf_l;
+wire kie_l;
+wire krb_l;
+wire krs_l;
+wire ksf_l;
+wire kskp;
+wire n_t_108x;
+wire n_t_152x;
+wire n_t_16x;
+wire n_t_19x;
+wire n_t_21x;
+wire n_t_23x;
+wire n_t_25x;
+wire n_t_28x;
+wire n_t_29x;
+wire n_t_41x;
+wire n_t_42x;
+wire n_t_46x;
+wire n_t_47x;
+wire n_t_48x;
+wire n_t_49x;
+wire n_t_52x;
+wire n_t_53x;
+wire n_t_54x;
+wire n_t_55x;
+wire n_t_68x;
+wire n_t_69x;
+wire n_t_70x;
+wire n_t_76x;
+wire n_t_77x;
+wire n_t_81x;
+wire n_t_8x;
+wire n_t_91x;
+wire n_t_94x;
+wire rx_active8_l;
+wire rx_again_l;
+wire rx_bot;
+wire rx_last_l;
+wire rx_sel_l;
+wire selected_l;
+wire tcf_l;
+wire tfl_l;
+wire tkskp;
+wire tls_l;
+wire tpc_l;
+wire tsf_l;
+wire tsk_l;
+wire tskp;
+wire tx7;
+wire tx8;
+wire tx_sel_l;
+wire tx_shift_l;
+
+wire stp_mark, tx_rate, tx_active;
+reg rx_rate, rx_active;
+reg bd2400, bd1200, bd600, bd300, bd150;
+wire bd230400, bd115200, bd38400, bd19200, bd9600, bd4800, bd110;
+assign bd110 = 0;	// BUGBUG: Disabled for now!
+wire int_enab;
+
+// code nodes 
+// equations 
+// dl1: rcl_l_100 
+// VRS: 7.3728 Mhz clock comes in from offboard oscillator.
+assign n_t_152x = clk;
+// Originally, the M8650 used a 19,660,800 Hz crystal oscillator
+// fed into a divide by 16 to get a master 1,228,800 Hz reference,
+// then divided by 16 again to get a 76,800 Hz reference clock for
+// 2400 baud (32x).  Ultimately, the clock rate is divided by 2, to
+// generate the 16x "rx_rate".  This same rate is used for tx_rate
+// in the default configuration.
+// This has the limitation that it can't do 110 baud.  To get 110
+// baud, a 14,418,000 Hz crystal is used, and then dividing by 16
+// and 16 again gives 1 56,320 Hz reference or 1760 baud.  Dividing
+// this by 16 gives gives 110 baud.
+// The M8655 uses a different baud rate generator, capable of deriving
+// 110 baud.  A 5,068,800 Hz crystal is used instead.  This number
+// divides evenly by 10, 11, and 15, leaving 3 * 2^10.  A clever trick
+// is used to accomplish the division by 3, leaving 2^10.
+// We also desire to support 230400 and 115200 baud, which are basically
+// 6X and 3X of the 38400 baud clock.  Adding a divide-by-11 would require
+// a very fast clock, so instead we require you to change crystals for
+// 110 baud.  (BUGBUG: Could special case an approximation for 110.)
+// Here, we give nice names to the higher baud rates we'd like to support.
+assign bd230400 = clk;
+assign bd115200 = gdollar_4;
+// The gdollar_4 and gdollar_5 flops have been slightly hacked to divide by 3.
+// This effectively makes E22 behave as a divide by 12 instead of a divide by 16.
+assign bd38400 = n_t_154x;
+assign bd19200 = n_t_155x;
+assign bd9600 = gdollar_0;
+assign bd4800 = gdollar_1;
+
+// e1: sp380n 
+//assign n_t_93x = ~(md08_l | io_pause_l);
+//assign n_t_59x = ~(io_pause_l | md04_l);
+//assign n_t_45x = ~(io_pause_l | md03_l);
+// e2: sn97401 
+// data07_l = !(n_t_35x & dokrs); 
+// data06_l = !(dokrs & n_t_36x); 
+// data05_l = !(n_t_34x & dokrs); 
+// data04_l = !(dokrs & rx7); 
+// e3: sn7474 
+always @(posedge rx_rate)
+  if (rx_rate) begin
+    rx_div <= n_t_76x;
+  end
+always @(rx_active8_l, rx_rate, 1'b1)
+  if (~rx_rate) begin
+    ck_pulse_m <= 1'b0;
+  end else
+  if (~(~rx_active8_l)) begin
+    ck_pulse_m <= 1'b1;
+  end
+always @(rx_active8_l, rx_rate, ck_pulse_m)
+  if (~rx_rate) begin
+    ck_pulse <= 1'b0;
+  end else
+  if (~rx_active8_l) begin
+    ck_pulse <= ck_pulse_m;
+  end
+// e4: sn7474 
+always @(rx_div, rx_last_l, rx_div2_l)
+  if (~rx_last_l) begin
+    rx_div2_l_m <= 1'b1;
+  end else
+  if (~(~rx_div)) begin
+    rx_div2_l_m <= ~rx_div2_l;
+  end
+always @(rx_div, rx_last_l, rx_div2_l_m)
+  if (~rx_last_l) begin
+    rx_div2_l <= 1'b1;
+  end else
+  if (~rx_div) begin
+    rx_div2_l <= rx_div2_l_m;
+  end
+always @(rx_div2_l, rx_last_l, rx_div4_l)
+  if (~rx_last_l) begin
+    rx_div4_l_m <= 1'b1;
+  end else
+  if (~(rx_div2_l)) begin
+    rx_div4_l_m <= ~rx_div4_l;
+  end
+always @(rx_div2_l, rx_last_l, rx_div4_l_m)
+  if (~rx_last_l) begin
+    rx_div4_l <= 1'b1;
+  end else
+  if (rx_div2_l) begin
+    rx_div4_l <= rx_div4_l_m;
+  end
+// e5: sn7493 
+always @(posedge n_t_154x)
+  if (n_t_154x) begin
+    n_t_155x <= ~n_t_155x;
+  end
+always @(posedge n_t_155x)
+  if (n_t_155x) begin
+    gdollar_0 <= ~gdollar_0;
+  end
+always @(posedge gdollar_0)
+  if (gdollar_0) begin
+    gdollar_1 <= ~gdollar_1;
+  end
+always @(posedge gdollar_1)
+  if (gdollar_1) begin
+    bd2400 <= ~bd2400;
+  end
+// e6: dec8271 
+always @(posedge n_t_41x)
+  if (n_t_41x) begin
+    rx7 <= ~serial_in & p_pulse_l
+                | ~p_pulse_l;
+  end
+always @(posedge n_t_41x)
+  if (n_t_41x) begin
+    n_t_34x <= rx7 & p_pulse_l
+                    | ~p_pulse_l;
+  end
+always @(posedge n_t_41x)
+  if (n_t_41x) begin
+    n_t_36x <= n_t_34x & p_pulse_l
+                    | ~p_pulse_l;
+  end
+always @(posedge n_t_41x)
+  if (n_t_41x) begin
+    n_t_35x <= n_t_36x & p_pulse_l
+                    | ~p_pulse_l;
+  end
+// e7: sn7474 
+always @(n_t_70x, power_ok, rx_again_l, 1'b0)
+  if (~power_ok) begin
+    rx_active_m <= 1'b0;
+  end else
+  if (~rx_again_l) begin
+    rx_active_m <= 1'b1;
+  end else
+  if (~(~n_t_70x)) begin
+    rx_active_m <= 1'b0;
+  end
+always @(n_t_70x, power_ok, rx_again_l, rx_active_m)
+  if (~power_ok) begin
+    rx_active <= 1'b0;
+  end else
+  if (~rx_again_l) begin
+    rx_active <= 1'b1;
+  end else
+  if (~n_t_70x) begin
+    rx_active <= rx_active_m;
+  end
+always @(rx_active, rx_div4_l, 1'b0)
+  if (~rx_div4_l) begin
+    p_pulse_l_m <= 1'b1;
+  end else
+  if (~(rx_active)) begin
+    p_pulse_l_m <= 1'b0;
+  end
+always @(rx_active, rx_div4_l, p_pulse_l_m)
+  if (~rx_div4_l) begin
+    p_pulse_l <= 1'b1;
+  end else
+  if (rx_active) begin
+    p_pulse_l <= p_pulse_l_m;
+  end
+// e8: sn7474 
+always @(ck_pulse, n_t_91x, rx_bot)
+  if (~n_t_91x) begin
+    last_unit_m <= 1'b0;
+  end else
+  if (~(ck_pulse)) begin
+    last_unit_m <= rx_bot;
+  end
+always @(ck_pulse, n_t_91x, last_unit_m)
+  if (~n_t_91x) begin
+    last_unit <= 1'b0;
+  end else
+  if (ck_pulse) begin
+    last_unit <= last_unit_m;
+  end
+always @(rx_div4_l, rx_last_l, rx_div8)
+  if (~rx_last_l) begin
+    rx_div8_m <= 1'b0;
+  end else
+  if (~(rx_div4_l)) begin
+    rx_div8_m <= ~rx_div8;
+  end
+always @(rx_div4_l, rx_last_l, rx_div8_m)
+  if (~rx_last_l) begin
+    rx_div8 <= 1'b0;
+  end else
+  if (rx_div4_l) begin
+    rx_div8 <= rx_div8_m;
+  end
+// e9: sp314n 
+//assign rx_sel_l = n_t_165x
+//                   | io_pause_l
+//                   | n_t_86x
+//                   | n_t_3x
+//                   | n_t_96x
+//                   | n_t_50x
+//                   | n_t_90x;
+//VRS: Use the DIP switches instead of the jumper farm to determine the receive IOT address.
+// IOT Address Input (456):
+// sw4	sw5	sw6	md03	md04	md05	md06	md07	md08	Note
+//	0		0		0		X		X		X		X		X		X		Disabled
+//	0		0		1		_		_		_		O		I		I		03/04
+//	0		1		0		1		_		_		_		_		O		40/41
+//	0		1		1		1		_		_		_		1		O		42/43
+//	1		0		0		1		_		_		1		_		O		44/45
+//	1		0		1		1		_		_		1		1		O		46/47
+//	1		1		0		_		1		1		1		_		O		34/35
+//	1		1		1		_		_		1		_		O		I		11/12
+wire md03_set, md04_set, md05_set, md06_set, md07_set, md08_set;
+wire md03_ok,  md04_ok,  md05_ok,  md06_ok,  md07_ok,  md08_ok;
+wire md06_in,  md07_in,  md08_in;
+wire md06_out, md07_out, md08_out;
+assign md03_set = (~sw4 &  sw5)
+                | ( sw4 & ~sw5);
+assign md04_set = ( sw4 &  sw5 & ~sw6);
+assign md05_set = ( sw4 &  sw5);
+assign md06_in  = ( sw4 & ~sw5)
+                | ( sw4 &  sw5 & ~sw6);
+assign md06_out = md06_in
+					 | ( sw4 &  sw5 &  sw6);
+assign md07_set = (~sw4 &  sw5 &  sw6)
+                | ( sw4 & ~sw5 &  sw6);
+assign md07_in  = md07_set
+                | (~sw4 & ~sw5 & ~sw6);
+assign md07_out = md07_set
+                | ( sw4 &  sw5 &  sw6);
+assign md08_in  = (~sw4 & ~sw5 & ~sw6)
+                | ( sw4 &  sw5 &  sw6);
+assign md08_out = ~md08_in;
+assign md03_ok  = ( md03_set & ~md03_l)
+                | (~md03_set &  md03_l);
+assign md04_ok  = ( md04_set & ~md04_l)
+                | (~md04_set &  md04_l);
+assign md05_ok  = ( md05_set & ~md05_l)
+                | (~md05_set &  md05_l);
+assign rx_sel_l = ~(md03_ok & md04_ok & md05_ok
+							& ((md06_in & ~md06_l) | (~md06_in & md06_l))
+							& ((md07_in & ~md07_l) | (~md07_in & md07_l))
+							& ((md08_in & ~md08_l) | (~md08_in & md08_l)));
+
+// e10: dec8271 
+always @(posedge n_t_41x)
+  if (n_t_41x) begin
+    n_t_37x <= n_t_35x & p_pulse_l
+                    | ~p_pulse_l;
+  end
+always @(posedge n_t_41x)
+  if (n_t_41x) begin
+    n_t_38x <= n_t_37x & p_pulse_l
+                    | ~p_pulse_l;
+  end
+always @(posedge n_t_41x)
+  if (n_t_41x) begin
+    n_t_39x <= n_t_38x & p_pulse_l
+                    | ~p_pulse_l;
+  end
+always @(posedge n_t_41x)
+  if (n_t_41x) begin
+    n_t_40x <= n_t_39x & p_pulse_l
+                    | ~p_pulse_l;
+  end
+assign rx_bot = ~n_t_40x;
+// e11: sn7402 
+assign n_t_81x = ~(spike_det_l
+                    | serial_in);
+assign n_t_41x = ~(ck_pulse
+                    | n_t_42x);
+assign n_t_42x = ~(p_pulse_l
+                    | rx_div2_l);
+// e12: sn7400 
+assign rx_active8_l = ~rx_active & rx_div8;
+assign n_t_91x = ~(~rx_active & rx_div8);
+assign n_t_76x = ~rx_div & rx_last_l;
+assign rx_last_l = ~(~last_unit & ~rx_active);
+// e13: sn7493 
+always @(posedge bd2400)
+  if (bd2400) begin
+    bd1200 <= ~bd1200;
+  end
+always @(posedge bd1200)
+  if (bd1200) begin
+    bd600 <= ~bd600;
+  end
+always @(posedge bd600)
+  if (bd600) begin
+    bd300 <= ~bd300;
+  end
+always @(posedge bd300)
+  if (bd300) begin
+    bd150 <= ~bd150;
+  end
+// e14: sp314n 
+//assign tx_sel_l = n_t_84x
+//                   | n_t_1x
+//                   | n_t_58x
+//                   | n_t_32x
+//                   | n_t_95x
+//                   | io_pause_l
+//                   | n_t_74x;
+//VRS: Use the DIP switches instead of the jumper farm to determine the transmit IOT address.
+assign tx_sel_l = ~(md03_ok & md04_ok & md05_ok
+							& ((md06_out & ~md06_l) | (~md06_out & md06_l))
+							& ((md07_out & ~md07_l) | (~md07_out & md07_l))
+							& ((md08_out & ~md08_l) | (~md08_out & md08_l)));
+
+// e15: sn97401 
+// data11_l = !(n_t_40x & dokrs); 
+// data10_l = !(dokrs & n_t_39x); 
+// data09_l = !(n_t_38x & dokrs); 
+// data08_l = !(dokrs & n_t_37x); 
+// e16: sn7474 
+always @(tx_rate, initialize, n_t_94x)
+  if (initialize) begin
+    tx_div_m <= 1'b1;
+  end else
+  if (~(tx_rate)) begin
+    tx_div_m <= n_t_94x;
+  end
+always @(tx_rate, initialize, tx_div_m)
+  if (initialize) begin
+    tx_div <= 1'b1;
+  end else
+  if (tx_rate) begin
+    tx_div <= tx_div_m;
+  end
+always @(rx_active8_l, rx_again_l, initialize, 1'b1)
+  if (~rx_again_l) begin
+    spike_det_l_m <= 1'b0;
+  end else
+  if (initialize) begin
+    spike_det_l_m <= 1'b1;
+  end else
+  if (~(rx_active8_l)) begin
+    spike_det_l_m <= 1'b1;
+  end
+always @(rx_active8_l, rx_again_l, initialize, spike_det_l_m)
+  if (~rx_again_l) begin
+    spike_det_l <= 1'b0;
+  end else
+  if (initialize) begin
+    spike_det_l <= 1'b1;
+  end else
+  if (rx_active8_l) begin
+    spike_det_l <= spike_det_l_m;
+  end
+// e17: 1489n 
+// e18: sn7493 
+always @(posedge testp4)
+  if (testp4) begin
+    rx_rate <= ~rx_rate;
+  end
+always @(posedge rx_rate)
+  if (rx_rate) begin
+    gdollar_2 <= ~gdollar_2;
+  end
+always @(posedge gdollar_2)
+  if (gdollar_2) begin
+    gdollar_3 <= ~gdollar_3;
+  end
+always @(posedge gdollar_3)
+  if (gdollar_3) begin
+    n_t_162x <= ~n_t_162x;
+  end
+// e19: sn7410 
+assign rx_again_l = ~(serial_in & ~rx_last_l & rx_rate);
+assign tx8 = ~(n_t_68x & ~tx_div & n_t_69x);
+assign tx7 = ~n_t_69x & n_t_68x;
+// e20: sn7474 
+always @(tx_rate, initialize, n_t_108x)
+  if (initialize) begin
+    tx_active_l_m <= 1'b1;
+  end else
+  if (~(tx_rate)) begin
+    tx_active_l_m <= n_t_108x;
+  end
+always @(tx_rate, initialize, tx_active_l_m)
+  if (initialize) begin
+    tx_active_l <= 1'b1;
+  end else
+  if (tx_rate) begin
+    tx_active_l <= tx_active_l_m;
+  end
+assign tx_active = ~tx_active_l;
+always @(tx_active, tx_rate, 1'b0)
+  if (~tx_rate) begin
+    start_l_m <= 1'b1;
+  end else
+  if (~(tx_active)) begin
+    start_l_m <= 1'b0;
+  end
+always @(tx_active, tx_rate, start_l_m)
+  if (~tx_rate) begin
+    start_l <= 1'b1;
+  end else
+  if (tx_active) begin
+    start_l <= start_l_m;
+  end
+// e21: sn7404 
+// e22: sn74193 
+always @(negedge (~n_t_152x))
+  if (~(~n_t_152x)) begin
+    gdollar_4 <= ~gdollar_4;
+  end
+always @(negedge (~n_t_152x & gdollar_4))
+  if (~(~n_t_152x & gdollar_4)) begin
+    gdollar_5 <= ~gdollar_5;
+  end
+// The gdollar_5 and n_t_154x flops have been slightly hacked to divide by 3.
+// This effectively makes E22 behave as a divide by 12 instead of a divide by 16.
+// Note: An asymetric duty cycle results, in the 38400 baud clock.  We depend on
+// E18 to clear that up.
+// BUGBUG: To be Implemented!
+always @(negedge (~n_t_152x & gdollar_4 & gdollar_5))
+  if (~(~n_t_152x & gdollar_4 & gdollar_5)) begin
+    gdollar_6 <= ~gdollar_6;
+  end else
+  if (n_t_154x) begin	// VRS: Divide by 3, not 4
+    gdollar_6 <= 1'b0;
+  end
+always @(negedge (~n_t_152x & gdollar_6 & gdollar_4 & gdollar_5))
+  if (~(~n_t_152x & gdollar_6 & gdollar_4 & gdollar_5)) begin
+    n_t_154x <= ~n_t_154x;
+  end else
+  if (n_t_154x) begin	// VRS: Divide by 3, not 4
+    n_t_154x <= 1'b0;
+  end
+// e23: sp380n 
+assign selected_l = ~(~rx_sel_l
+                       | ~tx_sel_l);
+//assign n_t_92x = ~(io_pause_l | md07_l);
+//assign n_t_161x = ~(md05_l    | io_pause_l);
+//assign n_t_89x = ~(io_pause_l | md06_l);
+// e24: n8815 
+assign n_t_69x = ~(n_t_56x
+                    | enab
+                    | n_t_60x
+                    | n_t_62x);
+assign n_t_68x = ~(n_t_63x
+                    | n_t_65x
+                    | n_t_66x
+                    | n_t_61x);
+// e25: sn7450 
+assign n_t_108x = ~(stp_mark & enab
+                     | tx_active & tx8);
+assign tx_shift_l = ~(tp3 & dotpc
+                       | tx_div);
+// e26: dec8271 
+always @(tx_rate, tx_div, tx_active_l)
+  if (~tx_div) begin
+    n_t_146x_m <= 1'b0;
+  end else
+  if (~(~tx_rate)) begin
+    n_t_146x_m <= tx_active_l;
+  end
+always @(tx_rate, tx_div, n_t_146x_m)
+  if (~tx_div) begin
+    n_t_146x <= 1'b0;
+  end else
+  if (~tx_rate) begin
+    n_t_146x <= n_t_146x_m;
+  end
+always @(tx_rate, tx_div, n_t_146x)
+  if (~tx_div) begin
+    gdollar_7_m <= 1'b0;
+  end else
+  if (~(~tx_rate)) begin
+    gdollar_7_m <= n_t_146x;
+  end
+always @(tx_rate, tx_div, gdollar_7_m)
+  if (~tx_div) begin
+    gdollar_7 <= 1'b0;
+  end else
+  if (~tx_rate) begin
+    gdollar_7 <= gdollar_7_m;
+  end
+always @(tx_rate, tx_div, gdollar_7)
+  if (~tx_div) begin
+    n_t_119x_m <= 1'b0;
+  end else
+  if (~(~tx_rate)) begin
+    n_t_119x_m <= gdollar_7;
+  end
+always @(tx_rate, tx_div, n_t_119x_m)
+  if (~tx_div) begin
+    n_t_119x <= 1'b0;
+  end else
+  if (~tx_rate) begin
+    n_t_119x <= n_t_119x_m;
+  end
+//always @(tx_rate, tx_div, n_t_119x)
+//  if (~tx_div) begin
+//    gdollar_8_m <= 1'b0;
+//  end else
+//  if (~(~tx_rate)) begin
+//    gdollar_8_m <= n_t_119x;
+//  end
+//always @(tx_rate, tx_div, gdollar_8_m)
+//  if (~tx_div) begin
+//    gdollar_8 <= 1'b0;
+//  end else
+//  if (~tx_rate) begin
+//    gdollar_8 <= gdollar_8_m;
+//  end
+// e27: sp380n 
+assign n_t_47x = ~(data05_l
+                    | ~dotpc);
+assign n_t_46x = ~(~dotpc
+                    | data04_l);
+assign n_t_49x = ~(data07_l
+                    | ~dotpc);
+assign n_t_48x = ~(~dotpc
+                    | data06_l);
+// e28: dec8271 
+always @(tx_shift_l, initialize, enab, dotpc, n_t_46x, dotpc)
+  if (initialize) begin
+    n_t_60x_m <= 1'b0;
+  end else
+  if (~(tx_shift_l)) begin
+    n_t_60x_m <= enab & ~dotpc
+                    | n_t_46x & dotpc;
+  end
+always @(tx_shift_l, initialize, n_t_60x_m)
+  if (initialize) begin
+    n_t_60x <= 1'b0;
+  end else
+  if (tx_shift_l) begin
+    n_t_60x <= n_t_60x_m;
+  end
+always @(tx_shift_l, initialize, n_t_60x, dotpc, n_t_47x, dotpc)
+  if (initialize) begin
+    n_t_62x_m <= 1'b0;
+  end else
+  if (~(tx_shift_l)) begin
+    n_t_62x_m <= n_t_60x & ~dotpc
+                    | n_t_47x & dotpc;
+  end
+always @(tx_shift_l, initialize, n_t_62x_m)
+  if (initialize) begin
+    n_t_62x <= 1'b0;
+  end else
+  if (tx_shift_l) begin
+    n_t_62x <= n_t_62x_m;
+  end
+always @(tx_shift_l, initialize, n_t_62x, dotpc, n_t_48x, dotpc)
+  if (initialize) begin
+    n_t_56x_m <= 1'b0;
+  end else
+  if (~(tx_shift_l)) begin
+    n_t_56x_m <= n_t_62x & ~dotpc
+                    | n_t_48x & dotpc;
+  end
+always @(tx_shift_l, initialize, n_t_56x_m)
+  if (initialize) begin
+    n_t_56x <= 1'b0;
+  end else
+  if (tx_shift_l) begin
+    n_t_56x <= n_t_56x_m;
+  end
+always @(tx_shift_l, initialize, n_t_56x, dotpc, n_t_49x, dotpc)
+  if (initialize) begin
+    n_t_61x_m <= 1'b0;
+  end else
+  if (~(tx_shift_l)) begin
+    n_t_61x_m <= n_t_56x & ~dotpc
+                    | n_t_49x & dotpc;
+  end
+always @(tx_shift_l, initialize, n_t_61x_m)
+  if (initialize) begin
+    n_t_61x <= 1'b0;
+  end else
+  if (tx_shift_l) begin
+    n_t_61x <= n_t_61x_m;
+  end
+// e29: sn7474 
+always @(tx_div, start_l, tx_active, tx_data)
+  if (~start_l) begin
+    line_m <= 1'b0;
+  end else
+  if (~tx_active) begin
+    line_m <= 1'b1;
+  end else
+  if (~(tx_div)) begin
+    line_m <= tx_data;
+  end
+always @(tx_div, start_l, tx_active, line_m)
+  if (~start_l) begin
+    line <= 1'b0;
+  end else
+  if (~tx_active) begin
+    line <= 1'b1;
+  end else
+  if (tx_div) begin
+    line <= line_m;
+  end
+always @(tx_shift_l, initialize, dotpc)
+  if (initialize) begin
+    enab_m <= 1'b0;
+  end else
+  if (~(~tx_shift_l)) begin
+    enab_m <= dotpc;
+  end
+always @(tx_shift_l, initialize, enab_m)
+  if (initialize) begin
+    enab <= 1'b0;
+  end else
+  if (~tx_shift_l) begin
+    enab <= enab_m;
+  end
+// e30: sp380n 
+assign n_t_53x = ~(data09_l
+                    | ~dotpc);
+assign n_t_52x = ~(~dotpc
+                    | data08_l);
+assign n_t_55x = ~(data11_l
+                    | ~dotpc);
+assign n_t_54x = ~(~dotpc
+                    | data10_l);
+// e31: dec8271 
+always @(tx_shift_l, initialize, n_t_61x, dotpc, n_t_52x, dotpc)
+  if (initialize) begin
+    n_t_63x_m <= 1'b0;
+  end else
+  if (~(tx_shift_l)) begin
+    n_t_63x_m <= n_t_61x & ~dotpc
+                    | n_t_52x & dotpc;
+  end
+always @(tx_shift_l, initialize, n_t_63x_m)
+  if (initialize) begin
+    n_t_63x <= 1'b0;
+  end else
+  if (tx_shift_l) begin
+    n_t_63x <= n_t_63x_m;
+  end
+always @(tx_shift_l, initialize, n_t_63x, dotpc, n_t_53x, dotpc)
+  if (initialize) begin
+    n_t_65x_m <= 1'b0;
+  end else
+  if (~(tx_shift_l)) begin
+    n_t_65x_m <= n_t_63x & ~dotpc
+                    | n_t_53x & dotpc;
+  end
+always @(tx_shift_l, initialize, n_t_65x_m)
+  if (initialize) begin
+    n_t_65x <= 1'b0;
+  end else
+  if (tx_shift_l) begin
+    n_t_65x <= n_t_65x_m;
+  end
+always @(tx_shift_l, initialize, n_t_65x, dotpc, n_t_54x, dotpc)
+  if (initialize) begin
+    n_t_66x_m <= 1'b0;
+  end else
+  if (~(tx_shift_l)) begin
+    n_t_66x_m <= n_t_65x & ~dotpc
+                    | n_t_54x & dotpc;
+  end
+always @(tx_shift_l, initialize, n_t_66x_m)
+  if (initialize) begin
+    n_t_66x <= 1'b0;
+  end else
+  if (tx_shift_l) begin
+    n_t_66x <= n_t_66x_m;
+  end
+always @(tx_shift_l, initialize, n_t_66x, dotpc, n_t_55x, dotpc)
+  if (initialize) begin
+    tx_data_m <= 1'b0;
+  end else
+  if (~(tx_shift_l)) begin
+    tx_data_m <= n_t_66x & ~dotpc
+                    | n_t_55x & dotpc;
+  end
+always @(tx_shift_l, initialize, tx_data_m)
+  if (initialize) begin
+    tx_data <= 1'b0;
+  end else
+  if (tx_shift_l) begin
+    tx_data <= tx_data_m;
+  end
+// e32: 1488n 
+// e33: sn97401 
+// c0_l = !dokcc; 
+// c1_l = !dokrs; 
+// tx_sel_l = tx_sel_l; 
+// c1_l = !dokcc; 
+// e34: sp384n 
+assign n_t_8x = io_pause_l
+                 | data11_l;
+// e35: sn74h00 
+assign n_t_29x = ~(ckkcc_l & ~initialize);
+assign n_t_94x = ~tx_div & tx_active;
+// e36: sp384n 
+// e37: sn97401 
+// internal_io_l = tx_sel_l; 
+// internal_io_l = rx_sel_l; 
+// skip_l = skip_l; 
+// int_rqst_l = !(flgs & int_enab); 
+// e38: sn7474 
+always @(tx_div, cktfl, n_t_16x, tx7)
+  if (cktfl) begin
+    tflg_l_m <= 1'b0;
+  end else
+  if (n_t_16x) begin
+    tflg_l_m <= 1'b1;
+  end else
+  if (~(tx_div)) begin
+    tflg_l_m <= tx7;
+  end
+always @(tx_div, cktfl, n_t_16x, tflg_l_m)
+  if (cktfl) begin
+    tflg_l <= 1'b0;
+  end else
+  if (n_t_16x) begin
+    tflg_l <= 1'b1;
+  end else
+  if (tx_div) begin
+    tflg_l <= tflg_l_m;
+  end
+always @(ckkie, initialize, n_t_8x)
+  if (initialize) begin
+    int_enab_l_m <= 1'b0;
+  end else
+  if (~(ckkie)) begin
+    int_enab_l_m <= n_t_8x;
+  end
+always @(ckkie, initialize, int_enab_l_m)
+  if (initialize) begin
+    int_enab_l <= 1'b0;
+  end else
+  if (ckkie) begin
+    int_enab_l <= int_enab_l_m;
+  end
+assign int_enab = ~int_enab_l;
+// e39: sn7450 
+assign n_t_70x = ~(rx_active8_l & last_unit
+                    | n_t_81x & ck_pulse);
+// e40: dec8251 
+assign tfl_l = ~(~tx_sel_l & ~n_t_23x & ~n_t_21x & ~n_t_25x);
+assign tsf_l = ~(~tx_sel_l & ~n_t_23x & ~n_t_21x & n_t_25x);
+assign tcf_l = ~(~tx_sel_l & ~n_t_23x & n_t_21x & ~n_t_25x);
+assign tpc_l = ~(~tx_sel_l & n_t_23x & ~n_t_21x & ~n_t_25x);
+assign tsk_l = ~(~tx_sel_l & n_t_23x & ~n_t_21x & n_t_25x);
+assign tls_l = ~(~tx_sel_l & n_t_23x & n_t_21x & ~n_t_25x);
+// e41: sn7400 
+assign n_t_16x = ~(~initialize & cktcf);
+assign dotpc = ~tls_l & tpc_l;
+assign dotcf = ~tls_l & tcf_l;
+assign cktcf = ~dotcf & tp3;
+// e42: sn7404 
+// e43: dec8251 
+assign kcf_l = ~(~rx_sel_l & ~n_t_23x & ~n_t_21x & ~n_t_25x);
+assign ksf_l = ~(~rx_sel_l & ~n_t_23x & ~n_t_21x & n_t_25x);
+assign kcc_l = ~(~rx_sel_l & ~n_t_23x & n_t_21x & ~n_t_25x);
+assign krs_l = ~(~rx_sel_l & n_t_23x & ~n_t_21x & ~n_t_25x);
+assign kie_l = ~(~rx_sel_l & n_t_23x & ~n_t_21x & n_t_25x);
+assign krb_l = ~(~rx_sel_l & n_t_23x & n_t_21x & ~n_t_25x);
+// e44: sn7400 
+assign flgs = ~rflg_l & tflg_l;
+assign dokrs = ~krb_l & krs_l;
+assign dokcc = ~krb_l & kcc_l;
+assign ckkcc_l = ~dokcc & tp3;
+// e45: sn7402 
+assign cktfl = ~(tfl_l
+                  | ~tp3);
+assign tkskp = kskp | tskp;
+assign n_t_19x = ~(tsk_l | int_enab_l);
+assign tskp = ~(tflg_l | tsf_l);
+// e46: sp380n 
+assign n_t_21x = ~(md10_l | selected_l);
+assign n_t_23x = ~(selected_l | md09_l);
+assign n_t_25x = ~(md11_l | selected_l);
+// e47: sn7402 
+assign n_t_28x = ~(n_t_29x
+                    | ckkcf);
+assign ckkcf = ~(~tp3
+                  | kcf_l);
+assign ckkie = ~(kie_l
+                  | ~tp3);
+assign kskp = ~(ksf_l
+                 | rflg_l);
+// e48: sn7474 
+always @(ck_pulse, n_t_28x, rx_bot)
+  if (~n_t_28x) begin
+    rflg_l_m <= 1'b1;
+  end else
+  if (~(ck_pulse)) begin
+    rflg_l_m <= ~rx_bot;
+  end
+always @(ck_pulse, n_t_28x, rflg_l_m)
+  if (~n_t_28x) begin
+    rflg_l <= 1'b1;
+  end else
+  if (ck_pulse) begin
+    rflg_l <= rflg_l_m;
+  end
+always @(rx7, ckkcc_l, initialize, 1'b1)
+  if (~ckkcc_l) begin
+    r_run_l_m <= 1'b0;
+  end else
+  if (initialize) begin
+    r_run_l_m <= 1'b1;
+  end else
+  if (~(~rx7)) begin
+    r_run_l_m <= 1'b1;
+  end
+always @(rx7, ckkcc_l, initialize, r_run_l_m)
+  if (~ckkcc_l) begin
+    r_run_l <= 1'b0;
+  end else
+  if (initialize) begin
+    r_run_l <= 1'b1;
+  end else
+  if (~rx7) begin
+    r_run_l <= r_run_l_m;
+  end
+
+// open collector 'wire-or's 
+assign c0_l = dokcc? ~dokcc: 1'bz;
+assign c1_l = dokrs | dokcc? 1'b0: 1'bz;
+//VRS: Rework DATA lines for fewer enables.
+// BUGBUG: These were missing the needed paranthesese to
+// work correcty!
+//assign data04_l = dokrs & rx7? ~dokrs & rx7: 1'bz;
+//assign data05_l = n_t_34x & dokrs? ~n_t_34x & dokrs: 1'bz;
+//assign data06_l = dokrs & n_t_36x? ~dokrs & n_t_36x: 1'bz;
+//assign data07_l = n_t_35x & dokrs? ~n_t_35x & dokrs: 1'bz;
+//assign data08_l = dokrs & n_t_37x? ~dokrs & n_t_37x: 1'bz;
+//assign data09_l = n_t_38x & dokrs? ~n_t_38x & dokrs: 1'bz;
+//assign data10_l = dokrs & n_t_39x? ~dokrs & n_t_39x: 1'bz;
+//assign data11_l = n_t_40x & dokrs? ~n_t_40x & dokrs: 1'bz;
+assign data04_l = dokrs? ~rx7: 1'bz;
+assign data05_l = dokrs? ~n_t_34x: 1'bz;
+assign data06_l = dokrs? ~n_t_36x: 1'bz;
+assign data07_l = dokrs? ~n_t_35x: 1'bz;
+assign data08_l = dokrs? ~n_t_37x: 1'bz;
+assign data09_l = dokrs? ~n_t_38x: 1'bz;
+assign data10_l = dokrs? ~n_t_39x: 1'bz;
+assign data11_l = dokrs? ~n_t_40x: 1'bz;
+
+assign int_rqst_l = flgs & int_enab? ~(flgs & int_enab): 1'bz;
+assign internal_io_l = (~tx_sel_l) | (~rx_sel_l)? 1'b0: 1'bz;
+assign skip_l = ~(~(n_t_19x & flgs
+                   | tkskp))? ~(n_t_19x & flgs
+                   | tkskp): 1'bz;
+endmodule
