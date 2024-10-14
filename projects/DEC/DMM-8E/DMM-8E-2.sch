@@ -14002,6 +14002,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="JP1" library="jumper" deviceset="JP1E" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="E26" library="dec-con" deviceset="I3107" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14090,8 +14091,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="E33" gate="A" x="172.72" y="401.32"/>
 <instance part="E30" gate="A" x="144.78" y="373.38"/>
 <instance part="E29" gate="A" x="144.78" y="350.52"/>
-<instance part="E20" gate="A" x="485.14" y="238.76"/>
-<instance part="E23" gate="A" x="485.14" y="276.86"/>
+<instance part="E20" gate="A" x="627.38" y="264.16"/>
+<instance part="E23" gate="A" x="627.38" y="302.26"/>
 <instance part="E27" gate="A" x="271.78" y="401.32"/>
 <instance part="E32" gate="A" x="284.48" y="170.18" rot="MR180"/>
 <instance part="E14" gate="A" x="284.48" y="213.36" rot="MR180"/>
@@ -14130,7 +14131,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="E10" gate="D" x="91.44" y="50.8"/>
 <instance part="E34" gate="A" x="93.98" y="353.06"/>
 <instance part="E1" gate="B" x="523.24" y="177.8"/>
-<instance part="E1" gate="D" x="523.24" y="213.36"/>
+<instance part="E1" gate="D" x="523.24" y="213.36" rot="MR180"/>
 <instance part="C2" gate="G$1" x="396.24" y="22.86"/>
 <instance part="C3" gate="G$1" x="403.86" y="22.86"/>
 <instance part="C4" gate="G$1" x="411.48" y="22.86"/>
@@ -14143,7 +14144,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="E3" gate="B" x="243.84" y="347.98"/>
 <instance part="E11" gate="B" x="177.8" y="355.6"/>
 <instance part="E11" gate="C" x="485.14" y="193.04"/>
-<instance part="E11" gate="D" x="177.8" y="320.04"/>
+<instance part="E11" gate="D" x="190.5" y="299.72"/>
 <instance part="E4" gate="B" x="139.7" y="86.36"/>
 <instance part="E4" gate="C" x="139.7" y="33.02" rot="MR180"/>
 <instance part="E4" gate="D" x="139.7" y="50.8"/>
@@ -14190,9 +14191,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY3" gate="GND" x="500.38" y="142.24" rot="MR0"/>
 <instance part="SUPPLY14" gate="GND" x="76.2" y="25.4" rot="MR0"/>
 <instance part="SUPPLY15" gate="GND" x="246.38" y="27.94" rot="MR0"/>
-<instance part="R4" gate="G$1" x="492.76" y="132.08" rot="MR0"/>
-<instance part="C10" gate="G$1" x="500.38" y="121.92" rot="MR0"/>
-<instance part="SUPPLY16" gate="GND" x="500.38" y="114.3" rot="MR0"/>
+<instance part="R4" gate="G$1" x="154.94" y="302.26" rot="MR0"/>
+<instance part="C10" gate="G$1" x="162.56" y="292.1" rot="MR0"/>
+<instance part="SUPPLY16" gate="GND" x="162.56" y="284.48" rot="MR0"/>
 <instance part="R5" gate="G$1" x="492.76" y="106.68" rot="MR0"/>
 <instance part="C11" gate="G$1" x="500.38" y="96.52" rot="MR0"/>
 <instance part="SUPPLY17" gate="GND" x="500.38" y="88.9" rot="MR0"/>
@@ -14209,11 +14210,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY21" gate="G$1" x="370.84" y="27.94"/>
 <instance part="SUPPLY22" gate="GND" x="370.84" y="15.24"/>
 <instance part="SUPPLY23" gate="GND" x="124.46" y="25.4" rot="MR0"/>
-<instance part="R10" gate="G$1" x="543.56" y="276.86" rot="MR270"/>
-<instance part="SUPPLY24" gate="G$1" x="543.56" y="284.48"/>
+<instance part="R10" gate="G$1" x="685.8" y="304.8" rot="MR270"/>
+<instance part="SUPPLY24" gate="G$1" x="685.8" y="312.42" rot="MR0"/>
 <instance part="JP1" gate="A" x="167.64" y="127"/>
 <instance part="SUPPLY4" gate="GND" x="287.02" y="71.12" rot="MR0"/>
-<instance part="E26" gate="A" x="525.78" y="256.54"/>
+<instance part="E26" gate="A" x="668.02" y="309.88" rot="MR180"/>
+<instance part="SUPPLY5" gate="GND" x="612.14" y="246.38" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -14441,12 +14443,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="195.58" y1="71.12" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="E25" gate="A" pin="I1"/>
 <wire x1="193.04" y1="88.9" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="53.34" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="E25" gate="D" pin="I0"/>
-<wire x1="193.04" y1="71.12" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
 <junction x="193.04" y="71.12"/>
-<wire x1="193.04" y1="53.34" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
-<junction x="193.04" y="53.34"/>
+<wire x1="193.04" y1="71.12" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <wire x1="193.04" y1="27.94" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="30.48" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
@@ -14537,12 +14535,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="246.38" y1="91.44" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="E16" gate="C" pin="I1"/>
 <wire x1="248.92" y1="38.1" x2="246.38" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="73.66" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
 <junction x="246.38" y="73.66"/>
-<pinref part="E16" gate="D" pin="I0"/>
-<wire x1="246.38" y1="55.88" x2="246.38" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="55.88" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
-<junction x="246.38" y="55.88"/>
+<wire x1="246.38" y1="73.66" x2="246.38" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="GND" pin="GND"/>
 <wire x1="246.38" y1="30.48" x2="246.38" y2="38.1" width="0.1524" layer="91"/>
 <junction x="246.38" y="38.1"/>
@@ -14570,6 +14564,24 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="287.02" y1="76.2" x2="287.02" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="E33" gate="A" pin="G"/>
+<wire x1="160.02" y1="391.16" x2="157.48" y2="391.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="E23" gate="A" pin="G"/>
+<wire x1="614.68" y1="292.1" x2="612.14" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="612.14" y1="292.1" x2="612.14" y2="254" width="0.1524" layer="91"/>
+<pinref part="E20" gate="A" pin="G"/>
+<wire x1="612.14" y1="254" x2="612.14" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="614.68" y1="254" x2="612.14" y2="254" width="0.1524" layer="91"/>
+<junction x="612.14" y="254"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="E18" gate="A" pin="1G"/>
+<wire x1="426.72" y1="406.4" x2="424.18" y2="406.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="!MD00" class="0">
 <segment>
@@ -14578,8 +14590,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="25.4" y="198.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="129.54" y1="325.12" x2="132.08" y2="325.12" width="0.1524" layer="91"/>
 <pinref part="E5" gate="A" pin="I4"/>
+<wire x1="132.08" y1="325.12" x2="127" y2="325.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="E4" gate="C" pin="I0"/>
@@ -14594,7 +14606,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="25.4" y="203.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="132.08" y1="327.66" x2="129.54" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="327.66" x2="127" y2="327.66" width="0.1524" layer="91"/>
 <pinref part="E5" gate="A" pin="I3"/>
 </segment>
 <segment>
@@ -14999,6 +15011,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="480.06" y1="320.04" x2="477.52" y2="320.04" width="0.1524" layer="91"/>
 <pinref part="E22" gate="D" pin="O"/>
 </segment>
+<segment>
+<wire x1="480.06" y1="337.82" x2="477.52" y2="337.82" width="0.1524" layer="91"/>
+<pinref part="E22" gate="C" pin="O"/>
+</segment>
 </net>
 <net name="!NOT_LAST_XFR" class="0">
 <segment>
@@ -15037,7 +15053,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="213.36" y="193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="129.54" y1="335.28" x2="132.08" y2="335.28" width="0.1524" layer="91"/>
+<wire x1="127" y1="335.28" x2="132.08" y2="335.28" width="0.1524" layer="91"/>
 <pinref part="E5" gate="A" pin="I0"/>
 </segment>
 </net>
@@ -15189,9 +15205,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="E17" gate="A" pin="2C"/>
 </segment>
 <segment>
-<wire x1="459.74" y1="274.32" x2="472.44" y2="274.32" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="299.72" x2="614.68" y2="299.72" width="0.1524" layer="91"/>
 <pinref part="E23" gate="A" pin="4A"/>
-<label x="459.74" y="274.32" size="1.778" layer="95"/>
+<label x="601.98" y="299.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MD05" class="0">
@@ -15206,9 +15222,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="261.62" y="210.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="459.74" y1="246.38" x2="472.44" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="271.78" x2="614.68" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="E20" gate="A" pin="2A"/>
-<label x="459.74" y="246.38" size="1.778" layer="95"/>
+<label x="601.98" y="271.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="368.3" x2="129.54" y2="368.3" width="0.1524" layer="91"/>
@@ -15239,25 +15255,32 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="261.62" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="459.74" y1="279.4" x2="472.44" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="304.8" x2="614.68" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="E23" gate="A" pin="3A"/>
-<label x="459.74" y="279.4" size="1.778" layer="95"/>
+<label x="601.98" y="304.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$71" class="0">
 <segment>
-<pinref part="E1" gate="D" pin="I0"/>
-<wire x1="508" y1="215.9" x2="510.54" y2="215.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="256.54" y1="342.9" x2="259.08" y2="342.9" width="0.1524" layer="91"/>
 <pinref part="E3" gate="B" pin="!Q"/>
+</segment>
+<segment>
+<pinref part="E1" gate="B" pin="I1"/>
+<wire x1="510.54" y1="175.26" x2="508" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="E1" gate="A" pin="I1"/>
+<wire x1="510.54" y1="193.04" x2="508" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="508" y1="175.26" x2="508" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="E1" gate="D" pin="I0"/>
+<wire x1="508" y1="210.82" x2="510.54" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="508" y1="193.04" x2="508" y2="210.82" width="0.1524" layer="91"/>
+<junction x="508" y="193.04"/>
 </segment>
 </net>
 <net name="N$72" class="0">
 <segment>
 <pinref part="E1" gate="B" pin="I0"/>
-<wire x1="510.54" y1="180.34" x2="508" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="510.54" y1="180.34" x2="505.46" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="419.1" y1="414.02" x2="416.56" y2="414.02" width="0.1524" layer="91"/>
@@ -15267,7 +15290,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="N$73" class="0">
 <segment>
 <pinref part="E1" gate="A" pin="I0"/>
-<wire x1="510.54" y1="198.12" x2="508" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="510.54" y1="198.12" x2="505.46" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="416.56" y1="408.94" x2="419.1" y2="408.94" width="0.1524" layer="91"/>
@@ -15277,23 +15300,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="N$74" class="0">
 <segment>
 <pinref part="E1" gate="D" pin="I1"/>
-<wire x1="510.54" y1="210.82" x2="508" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="510.54" y1="215.9" x2="505.46" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="416.56" y1="403.86" x2="419.1" y2="403.86" width="0.1524" layer="91"/>
 <pinref part="E2" gate="A" pin="Q3"/>
-</segment>
-</net>
-<net name="N$75" class="0">
-<segment>
-<pinref part="E1" gate="A" pin="I1"/>
-<wire x1="510.54" y1="193.04" x2="508" y2="193.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$76" class="0">
-<segment>
-<pinref part="E1" gate="B" pin="I1"/>
-<wire x1="510.54" y1="175.26" x2="508" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$77" class="0">
@@ -15411,9 +15422,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="353.06" y="215.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="472.44" y1="243.84" x2="459.74" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="614.68" y1="269.24" x2="601.98" y2="269.24" width="0.1524" layer="91"/>
 <pinref part="E20" gate="A" pin="2B"/>
-<label x="459.74" y="243.84" size="1.778" layer="95"/>
+<label x="601.98" y="269.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA04" class="0">
@@ -15423,9 +15434,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="353.06" y="213.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="472.44" y1="238.76" x2="459.74" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="614.68" y1="264.16" x2="601.98" y2="264.16" width="0.1524" layer="91"/>
 <pinref part="E20" gate="A" pin="3B"/>
-<label x="459.74" y="238.76" size="1.778" layer="95"/>
+<label x="601.98" y="264.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA01" class="0">
@@ -15442,9 +15453,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="353.06" y="251.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="459.74" y1="233.68" x2="472.44" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="259.08" x2="614.68" y2="259.08" width="0.1524" layer="91"/>
 <pinref part="E20" gate="A" pin="4B"/>
-<label x="459.74" y="233.68" size="1.778" layer="95"/>
+<label x="601.98" y="259.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA02" class="0">
@@ -15497,7 +15508,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="81.28" y1="332.74" x2="81.28" y2="330.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="317.5" x2="165.1" y2="317.5" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="297.18" x2="177.8" y2="297.18" width="0.1524" layer="91"/>
 <pinref part="E11" gate="D" pin="I1"/>
 </segment>
 <segment>
@@ -15524,9 +15535,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="353.06" y="170.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="472.44" y1="281.94" x2="459.74" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="614.68" y1="307.34" x2="601.98" y2="307.34" width="0.1524" layer="91"/>
 <pinref part="E23" gate="A" pin="2B"/>
-<label x="459.74" y="281.94" size="1.778" layer="95"/>
+<label x="601.98" y="307.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$119" class="0">
@@ -15547,9 +15558,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="353.06" y="210.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="459.74" y1="271.78" x2="472.44" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="297.18" x2="614.68" y2="297.18" width="0.1524" layer="91"/>
 <pinref part="E23" gate="A" pin="4B"/>
-<label x="459.74" y="271.78" size="1.778" layer="95"/>
+<label x="601.98" y="297.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA07" class="0">
@@ -15563,9 +15574,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="353.06" y="208.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="472.44" y1="276.86" x2="459.74" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="614.68" y1="302.26" x2="601.98" y2="302.26" width="0.1524" layer="91"/>
 <pinref part="E23" gate="A" pin="3B"/>
-<label x="459.74" y="276.86" size="1.778" layer="95"/>
+<label x="601.98" y="302.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -15584,7 +15595,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="76.2" y1="373.38" x2="76.2" y2="378.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="320.04" x2="190.5" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="299.72" x2="203.2" y2="299.72" width="0.1524" layer="91"/>
 <pinref part="E11" gate="D" pin="O"/>
 </segment>
 </net>
@@ -15639,6 +15650,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="E31" gate="G$1" pin="I3"/>
 <wire x1="350.52" y1="165.1" x2="360.68" y2="165.1" width="0.1524" layer="91"/>
 <label x="353.06" y="165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="E26" gate="A" pin="DIN"/>
+<wire x1="652.78" y1="325.12" x2="650.24" y2="325.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$143" class="0">
@@ -15746,6 +15761,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="134.62" y1="403.86" x2="132.08" y2="403.86" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<wire x1="419.1" y1="375.92" x2="416.56" y2="375.92" width="0.1524" layer="91"/>
+<pinref part="E21" gate="A" pin="I0"/>
+</segment>
 </net>
 <net name="N$46" class="0">
 <segment>
@@ -15806,9 +15825,9 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="MD04" class="0">
 <segment>
-<wire x1="459.74" y1="241.3" x2="472.44" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="266.7" x2="614.68" y2="266.7" width="0.1524" layer="91"/>
 <pinref part="E20" gate="A" pin="3A"/>
-<label x="459.74" y="241.3" size="1.778" layer="95"/>
+<label x="601.98" y="266.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="E10" gate="C" pin="O"/>
@@ -15823,20 +15842,11 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$4" class="0">
 <segment>
-<wire x1="497.84" y1="236.22" x2="500.38" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="E20" gate="A" pin="4Y"/>
-</segment>
-</net>
-<net name="N$183" class="0">
-<segment>
-<wire x1="497.84" y1="241.3" x2="500.38" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="E20" gate="A" pin="3Y"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<wire x1="497.84" y1="246.38" x2="500.38" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="E20" gate="A" pin="2Y"/>
+<wire x1="640.08" y1="261.62" x2="650.24" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="261.62" x2="650.24" y2="297.18" width="0.1524" layer="91"/>
+<pinref part="E26" gate="A" pin="A2"/>
+<wire x1="652.78" y1="297.18" x2="650.24" y2="297.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$185" class="0">
@@ -15862,39 +15872,24 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="132.08" y1="373.38" x2="129.54" y2="373.38" width="0.1524" layer="91"/>
 <pinref part="E30" gate="A" pin="I3"/>
 </segment>
-</net>
-<net name="N$202" class="0">
 <segment>
-<wire x1="132.08" y1="332.74" x2="129.54" y2="332.74" width="0.1524" layer="91"/>
-<pinref part="E5" gate="A" pin="I1"/>
-</segment>
-<segment>
-<wire x1="132.08" y1="322.58" x2="129.54" y2="322.58" width="0.1524" layer="91"/>
-<pinref part="E5" gate="A" pin="I5"/>
-</segment>
-</net>
-<net name="N$207" class="0">
-<segment>
-<wire x1="129.54" y1="320.04" x2="132.08" y2="320.04" width="0.1524" layer="91"/>
-<pinref part="E5" gate="A" pin="I6"/>
-</segment>
-</net>
-<net name="N$209" class="0">
-<segment>
-<wire x1="485.14" y1="375.92" x2="482.6" y2="375.92" width="0.1524" layer="91"/>
-<pinref part="E24" gate="A" pin="I0"/>
+<wire x1="320.04" y1="347.98" x2="317.5" y2="347.98" width="0.1524" layer="91"/>
+<pinref part="E12" gate="C" pin="O"/>
 </segment>
 </net>
 <net name="N$210" class="0">
 <segment>
-<wire x1="482.6" y1="373.38" x2="485.14" y2="373.38" width="0.1524" layer="91"/>
 <pinref part="E24" gate="A" pin="I1"/>
+<wire x1="480.06" y1="373.38" x2="482.6" y2="373.38" width="0.1524" layer="91"/>
+<wire x1="482.6" y1="373.38" x2="485.14" y2="373.38" width="0.1524" layer="91"/>
+<wire x1="482.6" y1="375.92" x2="482.6" y2="373.38" width="0.1524" layer="91"/>
+<junction x="482.6" y="373.38"/>
+<pinref part="E24" gate="A" pin="I0"/>
+<wire x1="482.6" y1="375.92" x2="485.14" y2="375.92" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$212" class="0">
 <segment>
-<wire x1="419.1" y1="375.92" x2="416.56" y2="375.92" width="0.1524" layer="91"/>
-<pinref part="E21" gate="A" pin="I0"/>
+<wire x1="317.5" y1="309.88" x2="320.04" y2="309.88" width="0.1524" layer="91"/>
+<pinref part="E12" gate="F" pin="O"/>
 </segment>
 </net>
 <net name="N$213" class="0">
@@ -15905,18 +15900,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="256.54" y1="391.16" x2="259.08" y2="391.16" width="0.1524" layer="91"/>
 <pinref part="E27" gate="A" pin="CLK"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<wire x1="497.84" y1="210.82" x2="500.38" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="E11" gate="A" pin="O"/>
-</segment>
-</net>
-<net name="N$217" class="0">
-<segment>
-<wire x1="469.9" y1="208.28" x2="472.44" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="E11" gate="A" pin="I1"/>
 </segment>
 </net>
 <net name="N$218" class="0">
@@ -15931,44 +15914,11 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$20" class="0">
 <segment>
-<wire x1="497.84" y1="274.32" x2="500.38" y2="274.32" width="0.1524" layer="91"/>
 <pinref part="E23" gate="A" pin="4Y"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<wire x1="497.84" y1="279.4" x2="500.38" y2="279.4" width="0.1524" layer="91"/>
-<pinref part="E23" gate="A" pin="3Y"/>
-</segment>
-</net>
-<net name="N$232" class="0">
-<segment>
-<wire x1="497.84" y1="284.48" x2="500.38" y2="284.48" width="0.1524" layer="91"/>
-<pinref part="E23" gate="A" pin="2Y"/>
-</segment>
-</net>
-<net name="N$241" class="0">
-<segment>
-<wire x1="287.02" y1="411.48" x2="284.48" y2="411.48" width="0.1524" layer="91"/>
-<pinref part="E27" gate="A" pin="!Q1"/>
-</segment>
-</net>
-<net name="N$242" class="0">
-<segment>
-<wire x1="284.48" y1="396.24" x2="287.02" y2="396.24" width="0.1524" layer="91"/>
-<pinref part="E27" gate="A" pin="!Q4"/>
-</segment>
-</net>
-<net name="N$243" class="0">
-<segment>
-<wire x1="284.48" y1="401.32" x2="287.02" y2="401.32" width="0.1524" layer="91"/>
-<pinref part="E27" gate="A" pin="!Q3"/>
-</segment>
-</net>
-<net name="N$244" class="0">
-<segment>
-<wire x1="284.48" y1="406.4" x2="287.02" y2="406.4" width="0.1524" layer="91"/>
-<pinref part="E27" gate="A" pin="!Q2"/>
+<wire x1="640.08" y1="299.72" x2="642.62" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="642.62" y1="299.72" x2="642.62" y2="304.8" width="0.1524" layer="91"/>
+<pinref part="E26" gate="A" pin="A5"/>
+<wire x1="642.62" y1="304.8" x2="652.78" y2="304.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MD08" class="0">
@@ -15982,18 +15932,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="E17" gate="A" pin="A"/>
 </segment>
 <segment>
-<wire x1="424.18" y1="398.78" x2="426.72" y2="398.78" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="2G"/>
-</segment>
-<segment>
 <pinref part="E28" gate="C" pin="O"/>
 <wire x1="53.34" y1="33.02" x2="63.5" y2="33.02" width="0.1524" layer="91"/>
 <label x="55.88" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="459.74" y1="284.48" x2="472.44" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="309.88" x2="614.68" y2="309.88" width="0.1524" layer="91"/>
 <pinref part="E23" gate="A" pin="2A"/>
-<label x="459.74" y="284.48" size="1.778" layer="95"/>
+<label x="601.98" y="309.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="426.72" y1="414.02" x2="424.18" y2="414.02" width="0.1524" layer="91"/>
+<pinref part="E18" gate="A" pin="A"/>
 </segment>
 </net>
 <net name="MD11" class="0">
@@ -16052,6 +16002,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="388.62" y1="391.16" x2="391.16" y2="391.16" width="0.1524" layer="91"/>
 <pinref part="E2" gate="A" pin="CLK"/>
 </segment>
+<segment>
+<wire x1="223.52" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="E25" gate="D" pin="O"/>
+</segment>
 </net>
 <net name="N$42" class="0">
 <segment>
@@ -16066,36 +16020,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="457.2" y1="147.32" x2="457.2" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$299" class="0">
-<segment>
-<wire x1="419.1" y1="411.48" x2="416.56" y2="411.48" width="0.1524" layer="91"/>
-<pinref part="E2" gate="A" pin="!Q1"/>
-</segment>
-</net>
-<net name="N$300" class="0">
-<segment>
-<wire x1="416.56" y1="396.24" x2="419.1" y2="396.24" width="0.1524" layer="91"/>
-<pinref part="E2" gate="A" pin="!Q4"/>
-</segment>
-</net>
-<net name="N$301" class="0">
-<segment>
-<wire x1="416.56" y1="401.32" x2="419.1" y2="401.32" width="0.1524" layer="91"/>
-<pinref part="E2" gate="A" pin="!Q3"/>
-</segment>
-</net>
-<net name="N$302" class="0">
-<segment>
-<wire x1="416.56" y1="406.4" x2="419.1" y2="406.4" width="0.1524" layer="91"/>
-<pinref part="E2" gate="A" pin="!Q2"/>
-</segment>
-</net>
-<net name="N$303" class="0">
-<segment>
-<wire x1="426.72" y1="414.02" x2="424.18" y2="414.02" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="A"/>
-</segment>
-</net>
 <net name="N$305" class="0">
 <segment>
 <wire x1="424.18" y1="403.86" x2="426.72" y2="403.86" width="0.1524" layer="91"/>
@@ -16108,24 +16032,15 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$308" class="0">
 <segment>
-<wire x1="424.18" y1="396.24" x2="426.72" y2="396.24" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="2C"/>
-</segment>
-<segment>
 <wire x1="320.04" y1="373.38" x2="317.5" y2="373.38" width="0.1524" layer="91"/>
 <pinref part="E12" gate="A" pin="O"/>
 </segment>
-</net>
-<net name="N$310" class="0">
 <segment>
-<wire x1="424.18" y1="406.4" x2="426.72" y2="406.4" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="1G"/>
-</segment>
-</net>
-<net name="N$311" class="0">
-<segment>
-<wire x1="454.66" y1="414.02" x2="452.12" y2="414.02" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="1Y0"/>
+<wire x1="424.18" y1="398.78" x2="426.72" y2="398.78" width="0.1524" layer="91"/>
+<pinref part="E18" gate="A" pin="2G"/>
+<pinref part="E18" gate="A" pin="2C"/>
+<wire x1="426.72" y1="396.24" x2="424.18" y2="396.24" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="396.24" x2="424.18" y2="398.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$312" class="0">
@@ -16137,29 +16052,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="485.14" y1="337.82" x2="482.6" y2="337.82" width="0.1524" layer="91"/>
 <pinref part="E24" gate="C" pin="I1"/>
 </segment>
-</net>
-<net name="N$313" class="0">
 <segment>
-<wire x1="452.12" y1="403.86" x2="454.66" y2="403.86" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="2Y0"/>
-</segment>
-</net>
-<net name="N$314" class="0">
-<segment>
-<wire x1="452.12" y1="408.94" x2="454.66" y2="408.94" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="1Y2"/>
-</segment>
-</net>
-<net name="N$315" class="0">
-<segment>
-<wire x1="454.66" y1="411.48" x2="452.12" y2="411.48" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="1Y1"/>
-</segment>
-</net>
-<net name="N$316" class="0">
-<segment>
-<wire x1="452.12" y1="396.24" x2="454.66" y2="396.24" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="2Y3"/>
+<wire x1="485.14" y1="355.6" x2="482.6" y2="355.6" width="0.1524" layer="91"/>
+<pinref part="E24" gate="B" pin="I1"/>
 </segment>
 </net>
 <net name="N$317" class="0">
@@ -16171,11 +16066,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="485.14" y1="340.36" x2="482.6" y2="340.36" width="0.1524" layer="91"/>
 <pinref part="E24" gate="C" pin="I0"/>
 </segment>
-</net>
-<net name="N$318" class="0">
 <segment>
-<wire x1="452.12" y1="406.4" x2="454.66" y2="406.4" width="0.1524" layer="91"/>
-<pinref part="E18" gate="A" pin="1Y3"/>
+<wire x1="485.14" y1="353.06" x2="482.6" y2="353.06" width="0.1524" layer="91"/>
+<pinref part="E24" gate="B" pin="I2"/>
 </segment>
 </net>
 <net name="N$320" class="0">
@@ -16187,8 +16080,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="320.04" y1="360.68" x2="317.5" y2="360.68" width="0.1524" layer="91"/>
 <pinref part="E12" gate="B" pin="O"/>
 </segment>
-</net>
-<net name="N$326" class="0">
 <segment>
 <wire x1="457.2" y1="406.4" x2="459.74" y2="406.4" width="0.1524" layer="91"/>
 <pinref part="E17" gate="A" pin="1G"/>
@@ -16202,12 +16093,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="325.12" y1="360.68" x2="322.58" y2="360.68" width="0.1524" layer="91"/>
 <pinref part="E15" gate="B" pin="I"/>
-</segment>
-</net>
-<net name="N$331" class="0">
-<segment>
-<wire x1="487.68" y1="411.48" x2="485.14" y2="411.48" width="0.1524" layer="91"/>
-<pinref part="E17" gate="A" pin="1Y1"/>
 </segment>
 </net>
 <net name="N$333" class="0">
@@ -16240,12 +16125,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="E21" gate="B" pin="O"/>
 </segment>
 </net>
-<net name="N$335" class="0">
-<segment>
-<wire x1="419.1" y1="165.1" x2="421.64" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="E6" gate="A" pin="PRE"/>
-</segment>
-</net>
 <net name="N$338" class="0">
 <segment>
 <pinref part="E9" gate="B" pin="I3"/>
@@ -16260,37 +16139,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="457.2" y="139.7"/>
 </segment>
 </net>
-<net name="N$341" class="0">
-<segment>
-<wire x1="426.72" y1="218.44" x2="429.26" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="E3" gate="A" pin="CLK"/>
-</segment>
-</net>
-<net name="N$345" class="0">
-<segment>
-<wire x1="426.72" y1="226.06" x2="429.26" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="E3" gate="A" pin="PRE"/>
-</segment>
-</net>
-<net name="N$348" class="0">
-<segment>
-<wire x1="454.66" y1="215.9" x2="457.2" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="E3" gate="A" pin="!Q"/>
-</segment>
-</net>
 <net name="N$17" class="0">
-<segment>
-<wire x1="454.66" y1="226.06" x2="457.2" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="E3" gate="A" pin="Q"/>
-</segment>
-<segment>
-<wire x1="472.44" y1="195.58" x2="469.9" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="E11" gate="C" pin="I0"/>
-</segment>
-<segment>
-<wire x1="472.44" y1="213.36" x2="469.9" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="E11" gate="A" pin="I0"/>
-</segment>
 <segment>
 <wire x1="452.12" y1="238.76" x2="449.58" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="E15" gate="A" pin="O"/>
@@ -16304,12 +16153,12 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <pinref part="E20" gate="A" pin="!A!/B"/>
-<wire x1="459.74" y1="226.06" x2="469.9" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="469.9" y1="226.06" x2="472.44" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="472.44" y1="264.16" x2="469.9" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="251.46" x2="609.6" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="609.6" y1="251.46" x2="614.68" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="614.68" y1="289.56" x2="609.6" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="E23" gate="A" pin="!A!/B"/>
-<wire x1="469.9" y1="226.06" x2="469.9" y2="264.16" width="0.1524" layer="91"/>
-<junction x="469.9" y="226.06"/>
+<wire x1="609.6" y1="251.46" x2="609.6" y2="289.56" width="0.1524" layer="91"/>
+<junction x="609.6" y="251.46"/>
 </segment>
 <segment>
 <wire x1="439.42" y1="198.12" x2="436.88" y2="198.12" width="0.1524" layer="91"/>
@@ -16319,13 +16168,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="436.88" y1="198.12" x2="436.88" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="429.26" y1="254" x2="426.72" y2="254" width="0.1524" layer="91"/>
-<pinref part="E22" gate="B" pin="I1"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="170.18" y1="124.46" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="121.92" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="469.9" y1="208.28" x2="472.44" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="E11" gate="A" pin="I1"/>
+<wire x1="472.44" y1="213.36" x2="469.9" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="E11" gate="A" pin="I0"/>
+<wire x1="469.9" y1="208.28" x2="469.9" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="469.9" y1="213.36" x2="467.36" y2="213.36" width="0.1524" layer="91"/>
+<junction x="469.9" y="213.36"/>
 </segment>
 </net>
 <net name="N$325" class="0">
@@ -16355,8 +16209,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="223.52" y1="86.36" x2="220.98" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="E25" gate="B" pin="O"/>
 </segment>
-</net>
-<net name="N$339" class="0">
+<segment>
+<wire x1="228.6" y1="342.9" x2="231.14" y2="342.9" width="0.1524" layer="91"/>
+<pinref part="E3" gate="B" pin="CLR"/>
+</segment>
+<segment>
+<wire x1="426.72" y1="226.06" x2="429.26" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="E3" gate="A" pin="PRE"/>
+</segment>
 <segment>
 <wire x1="195.58" y1="353.06" x2="198.12" y2="353.06" width="0.1524" layer="91"/>
 <pinref part="E6" gate="B" pin="PRE"/>
@@ -16370,12 +16230,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="320.04" y1="335.28" x2="317.5" y2="335.28" width="0.1524" layer="91"/>
 <pinref part="E12" gate="D" pin="O"/>
-</segment>
-</net>
-<net name="N$347" class="0">
-<segment>
-<wire x1="228.6" y1="342.9" x2="231.14" y2="342.9" width="0.1524" layer="91"/>
-<pinref part="E3" gate="B" pin="CLR"/>
 </segment>
 </net>
 <net name="N$59" class="0">
@@ -16394,18 +16248,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="256.54" y1="388.62" x2="259.08" y2="388.62" width="0.1524" layer="91"/>
 <pinref part="E27" gate="A" pin="CLR"/>
-</segment>
-</net>
-<net name="N$351" class="0">
-<segment>
-<wire x1="223.52" y1="342.9" x2="226.06" y2="342.9" width="0.1524" layer="91"/>
-<pinref part="E6" gate="B" pin="!Q"/>
-</segment>
-</net>
-<net name="N$354" class="0">
-<segment>
-<wire x1="256.54" y1="353.06" x2="259.08" y2="353.06" width="0.1524" layer="91"/>
-<pinref part="E3" gate="B" pin="Q"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -16432,16 +16274,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="E17" gate="A" pin="1Y2"/>
 </segment>
 </net>
-<net name="N$359" class="0">
-<segment>
-<wire x1="165.1" y1="322.58" x2="162.56" y2="322.58" width="0.1524" layer="91"/>
-<pinref part="E11" gate="D" pin="I0"/>
-</segment>
-</net>
 <net name="N$361" class="0">
 <segment>
 <wire x1="193.04" y1="355.6" x2="190.5" y2="355.6" width="0.1524" layer="91"/>
 <pinref part="E11" gate="B" pin="O"/>
+</segment>
+<segment>
+<wire x1="426.72" y1="218.44" x2="429.26" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="E3" gate="A" pin="CLK"/>
 </segment>
 </net>
 <net name="MD00" class="0">
@@ -16460,6 +16300,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="129.54" y1="330.2" x2="132.08" y2="330.2" width="0.1524" layer="91"/>
 <pinref part="E5" gate="A" pin="I2"/>
+<wire x1="132.08" y1="332.74" x2="129.54" y2="332.74" width="0.1524" layer="91"/>
+<pinref part="E5" gate="A" pin="I1"/>
+<wire x1="129.54" y1="330.2" x2="129.54" y2="332.74" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="322.58" x2="129.54" y2="322.58" width="0.1524" layer="91"/>
+<pinref part="E5" gate="A" pin="I5"/>
+<pinref part="E5" gate="A" pin="I6"/>
+<wire x1="132.08" y1="320.04" x2="129.54" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="320.04" x2="129.54" y2="322.58" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="322.58" x2="129.54" y2="330.2" width="0.1524" layer="91"/>
+<junction x="129.54" y="322.58"/>
+<junction x="129.54" y="330.2"/>
 </segment>
 <segment>
 <wire x1="261.62" y1="248.92" x2="271.78" y2="248.92" width="0.1524" layer="91"/>
@@ -16479,9 +16330,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="261.62" y="243.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="459.74" y1="236.22" x2="472.44" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="261.62" x2="614.68" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="E20" gate="A" pin="4A"/>
-<label x="459.74" y="236.22" size="1.778" layer="95"/>
+<label x="601.98" y="261.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="350.52" x2="129.54" y2="350.52" width="0.1524" layer="91"/>
@@ -16546,6 +16397,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="E12" gate="C" pin="I"/>
 <wire x1="297.18" y1="347.98" x2="294.64" y2="347.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="416.56" y1="358.14" x2="419.1" y2="358.14" width="0.1524" layer="91"/>
+<pinref part="E21" gate="B" pin="I0"/>
+</segment>
+<segment>
+<wire x1="157.48" y1="327.66" x2="160.02" y2="327.66" width="0.1524" layer="91"/>
+<pinref part="E5" gate="A" pin="O"/>
+</segment>
 </net>
 <net name="N$58" class="0">
 <segment>
@@ -16572,24 +16431,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="E25" gate="A" pin="O"/>
 </segment>
 </net>
-<net name="N$395" class="0">
-<segment>
-<wire x1="320.04" y1="347.98" x2="317.5" y2="347.98" width="0.1524" layer="91"/>
-<pinref part="E12" gate="C" pin="O"/>
-</segment>
-</net>
-<net name="N$397" class="0">
-<segment>
-<wire x1="317.5" y1="309.88" x2="320.04" y2="309.88" width="0.1524" layer="91"/>
-<pinref part="E12" gate="F" pin="O"/>
-</segment>
-</net>
-<net name="N$399" class="0">
-<segment>
-<wire x1="429.26" y1="238.76" x2="426.72" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="E15" gate="A" pin="I"/>
-</segment>
-</net>
 <net name="N$406" class="0">
 <segment>
 <wire x1="347.98" y1="360.68" x2="345.44" y2="360.68" width="0.1524" layer="91"/>
@@ -16598,6 +16439,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="452.12" y1="317.5" x2="449.58" y2="317.5" width="0.1524" layer="91"/>
 <pinref part="E22" gate="D" pin="I1"/>
+</segment>
+<segment>
+<wire x1="452.12" y1="322.58" x2="449.58" y2="322.58" width="0.1524" layer="91"/>
+<pinref part="E22" gate="D" pin="I0"/>
 </segment>
 </net>
 <net name="N$407" class="0">
@@ -16616,41 +16461,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="E15" gate="F" pin="O"/>
 </segment>
 <segment>
-<wire x1="383.54" y1="375.92" x2="386.08" y2="375.92" width="0.1524" layer="91"/>
-<pinref part="E19" gate="A" pin="I0"/>
-</segment>
-<segment>
-<wire x1="386.08" y1="358.14" x2="383.54" y2="358.14" width="0.1524" layer="91"/>
 <pinref part="E19" gate="B" pin="I0"/>
-</segment>
-</net>
-<net name="N$413" class="0">
-<segment>
-<pinref part="E16" gate="D" pin="I1"/>
-<wire x1="248.92" y1="50.8" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
-<label x="231.14" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$423" class="0">
-<segment>
 <wire x1="386.08" y1="353.06" x2="383.54" y2="353.06" width="0.1524" layer="91"/>
 <pinref part="E19" gate="B" pin="I1"/>
+<wire x1="383.54" y1="353.06" x2="383.54" y2="358.14" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="358.14" x2="383.54" y2="358.14" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$425" class="0">
 <segment>
 <wire x1="386.08" y1="370.84" x2="383.54" y2="370.84" width="0.1524" layer="91"/>
 <pinref part="E19" gate="A" pin="I1"/>
-</segment>
-</net>
-<net name="N$426" class="0">
-<segment>
-<wire x1="416.56" y1="358.14" x2="419.1" y2="358.14" width="0.1524" layer="91"/>
-<pinref part="E21" gate="B" pin="I0"/>
-</segment>
-<segment>
-<wire x1="157.48" y1="327.66" x2="160.02" y2="327.66" width="0.1524" layer="91"/>
-<pinref part="E5" gate="A" pin="O"/>
+<wire x1="383.54" y1="375.92" x2="386.08" y2="375.92" width="0.1524" layer="91"/>
+<pinref part="E19" gate="A" pin="I0"/>
+<wire x1="383.54" y1="370.84" x2="383.54" y2="375.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$433" class="0">
@@ -16658,23 +16480,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="419.1" y1="353.06" x2="416.56" y2="353.06" width="0.1524" layer="91"/>
 <pinref part="E21" gate="B" pin="I1"/>
 </segment>
-</net>
-<net name="N$436" class="0">
 <segment>
-<wire x1="452.12" y1="322.58" x2="449.58" y2="322.58" width="0.1524" layer="91"/>
-<pinref part="E22" gate="D" pin="I0"/>
-</segment>
-</net>
-<net name="N$444" class="0">
-<segment>
-<wire x1="485.14" y1="355.6" x2="482.6" y2="355.6" width="0.1524" layer="91"/>
-<pinref part="E24" gate="B" pin="I1"/>
-</segment>
-</net>
-<net name="N$447" class="0">
-<segment>
-<wire x1="485.14" y1="353.06" x2="482.6" y2="353.06" width="0.1524" layer="91"/>
-<pinref part="E24" gate="B" pin="I2"/>
+<wire x1="513.08" y1="337.82" x2="510.54" y2="337.82" width="0.1524" layer="91"/>
+<pinref part="E24" gate="C" pin="O"/>
 </segment>
 </net>
 <net name="N$459" class="0">
@@ -16696,32 +16504,15 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <pinref part="E26" gate="A" pin="CS2"/>
-<wire x1="510.54" y1="246.38" x2="508" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="320.04" x2="650.24" y2="320.04" width="0.1524" layer="91"/>
 <pinref part="E26" gate="A" pin="CS1"/>
-<wire x1="510.54" y1="248.92" x2="508" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="508" y1="246.38" x2="508" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="317.5" x2="650.24" y2="317.5" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="320.04" x2="650.24" y2="317.5" width="0.1524" layer="91"/>
 <pinref part="E26" gate="A" pin="CS0"/>
-<wire x1="510.54" y1="251.46" x2="508" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="508" y1="248.92" x2="508" y2="251.46" width="0.1524" layer="91"/>
-<junction x="508" y="248.92"/>
-</segment>
-</net>
-<net name="N$464" class="0">
-<segment>
-<wire x1="480.06" y1="337.82" x2="477.52" y2="337.82" width="0.1524" layer="91"/>
-<pinref part="E22" gate="C" pin="O"/>
-</segment>
-</net>
-<net name="N$470" class="0">
-<segment>
-<wire x1="513.08" y1="337.82" x2="510.54" y2="337.82" width="0.1524" layer="91"/>
-<pinref part="E24" gate="C" pin="O"/>
-</segment>
-</net>
-<net name="N$473" class="0">
-<segment>
-<wire x1="223.52" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="E25" gate="D" pin="O"/>
+<wire x1="652.78" y1="314.96" x2="650.24" y2="314.96" width="0.1524" layer="91"/>
+<wire x1="650.24" y1="317.5" x2="650.24" y2="314.96" width="0.1524" layer="91"/>
+<junction x="650.24" y="317.5"/>
+<wire x1="650.24" y1="317.5" x2="647.7" y2="317.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -16845,6 +16636,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="E16" gate="C" pin="O"/>
 <wire x1="274.32" y1="35.56" x2="276.86" y2="35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="E25" gate="D" pin="I0"/>
+<wire x1="195.58" y1="53.34" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<label x="182.88" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="E16" gate="D" pin="I1"/>
+<wire x1="248.92" y1="50.8" x2="243.84" y2="50.8" width="0.1524" layer="91"/>
+<label x="231.14" y="50.8" size="1.778" layer="95"/>
+<pinref part="E16" gate="D" pin="I0"/>
+<wire x1="243.84" y1="50.8" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="55.88" x2="243.84" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="55.88" x2="243.84" y2="50.8" width="0.1524" layer="91"/>
+<junction x="243.84" y="50.8"/>
+</segment>
 </net>
 <net name="N$23" class="0">
 <segment>
@@ -16868,18 +16674,19 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$60" class="0">
 <segment>
-<wire x1="510.54" y1="132.08" x2="500.38" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="E11" gate="D" pin="I0"/>
+<wire x1="177.8" y1="302.26" x2="162.56" y2="302.26" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="C10" gate="G$1" pin="+"/>
-<wire x1="500.38" y1="132.08" x2="497.84" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="500.38" y1="124.46" x2="500.38" y2="132.08" width="0.1524" layer="91"/>
-<junction x="500.38" y="132.08"/>
+<wire x1="162.56" y1="302.26" x2="160.02" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="294.64" x2="162.56" y2="302.26" width="0.1524" layer="91"/>
+<junction x="162.56" y="302.26"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="487.68" y1="132.08" x2="485.14" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="302.26" x2="147.32" y2="302.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="325.12" y1="322.58" x2="322.58" y2="322.58" width="0.1524" layer="91"/>
@@ -16908,6 +16715,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="485.14" y1="396.24" x2="487.68" y2="396.24" width="0.1524" layer="91"/>
 <pinref part="E17" gate="A" pin="2Y3"/>
+</segment>
+<segment>
+<wire x1="429.26" y1="238.76" x2="426.72" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="E15" gate="A" pin="I"/>
 </segment>
 </net>
 <net name="INTERNAL_IO" class="0">
@@ -16957,84 +16768,98 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$5" class="0">
 <segment>
+<pinref part="E20" gate="A" pin="2Y"/>
+<wire x1="640.08" y1="271.78" x2="645.16" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="645.16" y1="271.78" x2="645.16" y2="302.26" width="0.1524" layer="91"/>
 <pinref part="E26" gate="A" pin="A4"/>
-<wire x1="510.54" y1="264.16" x2="508" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="645.16" y1="302.26" x2="652.78" y2="302.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="E26" gate="A" pin="WE"/>
-<wire x1="510.54" y1="238.76" x2="508" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="652.78" y1="327.66" x2="650.24" y2="327.66" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$7" class="0">
 <segment>
-<pinref part="E26" gate="A" pin="DIN"/>
-<wire x1="510.54" y1="241.3" x2="508" y2="241.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="E26" gate="A" pin="A2"/>
-<wire x1="510.54" y1="269.24" x2="508" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="497.84" y1="210.82" x2="500.38" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="E11" gate="A" pin="O"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
+<pinref part="E20" gate="A" pin="3Y"/>
+<wire x1="640.08" y1="266.7" x2="647.7" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="647.7" y1="266.7" x2="647.7" y2="299.72" width="0.1524" layer="91"/>
 <pinref part="E26" gate="A" pin="A3"/>
-<wire x1="510.54" y1="266.7" x2="508" y2="266.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="E26" gate="A" pin="A5"/>
-<wire x1="510.54" y1="261.62" x2="508" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="647.7" y1="299.72" x2="652.78" y2="299.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
+<pinref part="E23" gate="A" pin="3Y"/>
+<wire x1="640.08" y1="304.8" x2="640.08" y2="307.34" width="0.1524" layer="91"/>
 <pinref part="E26" gate="A" pin="A6"/>
-<wire x1="508" y1="259.08" x2="510.54" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="640.08" y1="307.34" x2="652.78" y2="307.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
+<pinref part="E23" gate="A" pin="2Y"/>
 <pinref part="E26" gate="A" pin="A7"/>
-<wire x1="510.54" y1="256.54" x2="508" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="640.08" y1="309.88" x2="652.78" y2="309.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="543.56" y1="271.78" x2="543.56" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="685.8" y1="299.72" x2="685.8" y2="297.18" width="0.1524" layer="91"/>
 <pinref part="E26" gate="A" pin="DOUT"/>
-<wire x1="541.02" y1="269.24" x2="543.56" y2="269.24" width="0.1524" layer="91"/>
-<junction x="543.56" y="269.24"/>
-<wire x1="543.56" y1="269.24" x2="546.1" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="683.26" y1="297.18" x2="685.8" y2="297.18" width="0.1524" layer="91"/>
+<junction x="685.8" y="297.18"/>
+<wire x1="685.8" y1="297.18" x2="688.34" y2="297.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="485.14" y1="358.14" x2="482.6" y2="358.14" width="0.1524" layer="91"/>
 <pinref part="E24" gate="B" pin="I0"/>
 </segment>
 </net>
+<net name="N$7" class="0">
+<segment>
+<wire x1="472.44" y1="195.58" x2="469.9" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="E11" gate="C" pin="I0"/>
+</segment>
+<segment>
+<wire x1="429.26" y1="254" x2="426.72" y2="254" width="0.1524" layer="91"/>
+<pinref part="E22" gate="B" pin="I1"/>
+</segment>
+<segment>
+<wire x1="454.66" y1="226.06" x2="457.2" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="E3" gate="A" pin="Q"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="202,1,472.44,251.46,E20,1A,,,,"/>
-<approved hash="202,1,472.44,248.92,E20,1B,,,,"/>
-<approved hash="202,1,472.44,228.6,E20,G,,,,"/>
-<approved hash="202,1,472.44,289.56,E23,1A,,,,"/>
-<approved hash="202,1,472.44,287.02,E23,1B,,,,"/>
-<approved hash="202,1,472.44,266.7,E23,G,,,,"/>
+<approved hash="202,1,160.02,401.32,E33,3B,,,,"/>
+<approved hash="202,1,160.02,403.86,E33,3A,,,,"/>
+<approved hash="202,1,614.68,276.86,E20,1A,,,,"/>
+<approved hash="202,1,614.68,274.32,E20,1B,,,,"/>
+<approved hash="202,1,614.68,314.96,E23,1A,,,,"/>
+<approved hash="202,1,614.68,312.42,E23,1B,,,,"/>
 <approved hash="202,1,271.78,182.88,E32,CLR,,,,"/>
 <approved hash="202,1,271.78,226.06,E14,CLR,,,,"/>
 <approved hash="202,1,271.78,269.24,E8,CLR,,,,"/>
+<approved hash="202,1,421.64,165.1,E6A,PRE,,,,"/>
+<approved hash="202,1,652.78,292.1,E26,A0,,,,"/>
+<approved hash="202,1,652.78,294.64,E26,A1,,,,"/>
 <approved hash="106,1,139.7,208.28,!NOT_LAST_XFR,,,,,"/>
 <approved hash="106,1,350.52,256.54,DATA00,,,,,"/>
 <approved hash="106,1,350.52,259.08,DATA01,,,,,"/>
 <approved hash="106,1,350.52,254,DATA02,,,,,"/>
+<approved hash="106,1,104.14,279.4,N$97,,,,,"/>
 <approved hash="106,1,63.5,342.9,N$119,,,,,"/>
+<approved hash="106,1,160.02,177.8,TP2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
