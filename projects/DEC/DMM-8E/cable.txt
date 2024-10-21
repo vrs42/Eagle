@@ -1,0 +1,17 @@
+PIN	COLOR	M837	NAME	DMM-8E	DESCRIPTION
+16	black1	E2-3	TP_BA1	in	UF latch input
+15	brown1	E2-2	TP_BB1	in	IF0 latch input
+14	red1	E2-15	TP_AA1	in	IF1 latch input
+13	orange1	E2-14	TP_AB1	in	IF2 latch input
+12	yellow1	E52-12	DF0	in	should be E47-7??
+11	green1	E47-9	!SF4	in	Why do these appear negated?
+10	blue1	E47-11	!SF5	in	
+9	violet1	GND	GND	gnd	
+8	grey1	E35-6	GND	gnd	
+7	white1	E44-11	TRAP	in	N$21, sets UM interrupt request
+6	black2			out	Request trap? Inhibit trap?
+5	brown2	E41-11		in	Unused gate??
+4	red2	E17-12		in	DB_LOAD
+3	orange2	E13-1	!BIFDF_CLR	in	
+2	yellow2	E12-8	N$71	in	N$71, sets int_inh flop
+1	green2	E3-8	GND	gnd	

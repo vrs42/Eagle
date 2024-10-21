@@ -1,0 +1,33 @@
+6205 = RTM: Read Trap Register; Jam-loads the AC with the contents of the
+Trap Register. The Trap Register contains the instruction that was last
+trapped by the MMU.
+
+6215 = SKME: Skip if Memory Management enabled.
+
+6225 = SKMM: Skip if Memory Management installed.
+
+6235 = LTM: LOAD Trap Memory; Loads bit 11 of the AC in the trap/untrap
+memory addressed by AC bits 3-8, e.g if AC=230 then the IOT's with
+device code 23 (CDF 30, CIF 30 and CDF CIF 30) will be trapped,
+if AC=231 these IOT's will NOT be trapped.
+The AC is cleared.
+
+6245 = LRM: Load Relocation Memory. AC 6-8 contains the real address
+(to become the contents of one word of the Relocation Memory),
+AC 9-11 contains the virtual address (used to address to Relocation Memory).
+The AC is cleared.
+
+6255 = not used.
+
+6265 = SMME: Set Memory Management Enable.
+
+6275 = CMME: Clear Memory Management Enable. If disabled the MMU is fully
+compatible with the normal Memory Extension Control.
+The MMU is also disabled by pressing the Load Extended Address key/button
+on the front panel.
+
+6200 = CDIF sets DF to match IF.
+
+Other quirks: SGT, RDF, RIF never trap in user mode.
+
+On the other hand, 62x[04567] always trap.

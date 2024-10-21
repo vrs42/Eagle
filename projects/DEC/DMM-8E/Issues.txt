@@ -1,0 +1,7 @@
+OK, I have largely cleaned up the board drawing, though the schematic still has to be arranged into something readable.  The following issues remain in the board drawing:
+
+Output pins 10 and 13 on E19 are presumably connected to either !C0 (pin 4) or !C1  (pin 1) by traces under the chip. Unfortunately, I can't see which.
+
+I can't read a value on the large foil caps. Similarly for the small foil caps.
+
+The resistors with a red body are difficult to read the color code. Most are near E19 and E22, but one is over by E26. What are thier values?
