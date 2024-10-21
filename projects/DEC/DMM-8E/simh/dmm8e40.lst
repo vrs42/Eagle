@@ -1,0 +1,1557 @@
+   1               /DM8E40.PA 15-MAR-80
+   2               /TEST PROGRAM FOR DM8E40 MEMORY MANAGEMENT BOARD
+   3               /       E. LOPES CARDOZO
+   4               /       WESTVRIES COMPUTER CONSULTING BV
+   5               /       RIJKSSTRAATWEG 19A
+   6               /       1969 LB HEEMSKERK
+   7               /       02510 - 43244
+   8               
+   9               /SYMBOL DEFINITIONS:
+  10               SINT=6254
+  11               SUF=6274
+  12               CINT=6204
+  13               CUF=6264
+  14               RTM=6205
+  15               LTM=6235
+  16               LRM=6245
+  17               SMME=6265
+  18               CMME=6275
+  19               SKME=6215
+  20               SKMM=6225
+  21               
+  22               /FOR PRODUCTION TEST DEFINE PRODUCTION:
+  23                       PRODUCTION=1
+  24               
+  25               /INTERRUPT SERVICE ROUTINE:
+  26                       *0
+  27 000000  0000          0
+  28 000001  5020          JMP SERV
+  29               
+  30                       *20
+  31 000020  3123  SERV,   DCA AC          /SAVE AC
+  32 000021  6254          SINT            /TRAP ?
+  33                        JMP INTERR     /NO, ILLEGAL INTERRUPT
+off page        	           ^
+     000022  5777  
+  34 000023  6204          CINT            /CLEAR TRAP FLAG
+  35 000024  6205          RTM             /READ TRAP REGISTER
+  36 000025  3124          DCA TRAPD       /THAT IS THE INSTR. THE HARDWARE SAW
+  37 000026  7240          CLA CMA
+  38 000027  1000          TAD 0
+  39 000030  3000          DCA 0           /BACKUP PC
+  40 000031  1400          TAD I 0         /GET TRAPPED INSTRUCTION FROM MEMORY
+  41 000032  7041          CIA             /AND COMPARE TO
+  42 000033  1124          TAD TRAPD       /TRAP REGISTER CONTENTS
+  43 000034  7640          SZA CLA         /SHOULD BE EQUAL
+  44                        JMS TRPERR     /ERROR IN TRAP REGISTER
+off page        	           ^
+     000035  4776  
+  45 000036  1000          TAD 0           /DID WE TRAP THE SAFETY HLT ?
+  46                       TAD (-HALT      /
+page zero       	    ^
+page zero       	    ^
+     000037  1175  
+  47 000040  7640          SZA CLA         /?
+  48 000041  7040           CMA            /NO, SET AC=-1
+  49 000042  5443          JMP I ENDTRP    /BACK TO MAIN LOOP
+  50 000043  0042  ENDTRP, .-1             /CONTINUATION ADDRESS
+  51               
+  52               /VIRTUAL CODE SEQUENCES:
+  53               RELTST, TAD I (7000     /RELOCATION TEST; GET DATAFIELD
+page zero              	      ^
+page zero              	      ^
+     000044  1574  
+  54 000045  5051          JMP HALT        /EXIT FROM USER MODE
+  55               
+  56 000046  5046  TRPTST, JMP .           /GETS IOT TO BE TESTED
+  57 000047  5051          JMP .+2         /FOR CIF: ENABLE INTERRUPTS
+  58 000050  6001          ION             /FOR SKON: REENABLE INTERRUPTS
+  59 000051  7402  HALT,   HLT             /EXIT FROM USER MODE
+  60 000052  5052          JMP .           /*** IF HERE, HLT DID NOT TRAP ***
+  61               
+  62 000053  1125  TTYTST, TAD BELL        /TEST TTY IN UNTRAPED MODE
+  63 000054  6046          TLS             /SEND A BELL TO THE CONSOLE
+  64 000055  6041          TSF             /WAIT TILL READY
+  65 000056  5055          JMP .-1         /
+  66               IFNDEF PRODUCTION <
+  67                       CLA             / >
+  68               IFDEF PRODUCTION <
+  69 000057  6032          KCC             /USED TO CLEAR THE AC
+  70 000060  7440          SZA             /DIDITDO ?
+  71 000061  5061           JMP .          /NO !!! *** UNTRAPPED KCC DID NOT CLA ***
+  72 000062  6042          TCF             /EXIT WITH TTY FLAG CLEAR
+  73 000063  6041          TSF             /DID THAT WORK ?
+  74 000064  7410          SKP             /YES
+  75 000065  5065          JMP .           /***TCF DID NOT CLEAR FLAG *** >
+  76 000066  5051          JMP HALT        /NOW EXIT FROM USER MODE
+  77               
+  78               /MD-LINE TEST:
+  79               MDTST,  DCA I (Q
+page zero             	      ^
+page zero             	      ^
+     000067  3573  
+  80                       TAD I (Q
+page zero       	      ^
+page zero       	      ^
+     000070  1573  
+  81 000071  7001          IAC
+  82 000072  7440          SZA             /TEST ALL 4096 VALUES
+  83 000073  5067           JMP MDTST
+  84 000074  5051          JMP HALT
+  85 000075  0000  Q,      0
+  86               
+  87               /CDTOIF TEST ROUTINE
+  88 000076  0000  CDTF,   0
+  89 000077  6200          6200            /CDTOIF
+  90 000100  6202          CIF 0
+  91 000101  5476          JMP I CDTF
+  92               
+  93               /RDF TEST ROUTINE:
+  94 000102  6214  TSTRDF, RDF
+  95 000103  1105  KK,     TAD K0          /GET ACTUAL FIELD NUMBER
+  96 000104  5051          JMP HALT        /GOT THROUGH
+  97               
+  98 000105  0000  K0,     0
+  99 000106  0001  K1,     1
+ 100 000107  0002  K2,     2
+ 101 000110  0003  K3,     3
+ 102 000111  0004  K4,     4
+ 103 000112  0005  K5,     5
+ 104 000113  0006  K6,     6
+ 105 000114  0007  K7,     7
+ 106               
+ 107               /VARIABLES, COUNTERS AND POINTERS:
+ 108 000115  0000  COUNT,  0
+ 109 000116  0000  COUNT1, 0
+ 110 000117  0000  COUNT2, 0
+ 111 000120  0000  COUNT3, 0
+ 112 000121  0000  PTR,    0
+ 113 000122  0000  FIELDS, 0       /NUMBER OF FIELDS AVAILABLE
+ 114 000123  0000  AC,     0
+ 115 000124  0000  TRAPD,  0
+ 116 000125  0207  BELL,   207
+ 117               
+ 118               PAGE
+ 119                      JMS INIT        /SETUP FIELDS
+off page         	        ^
+     000200  4777  
+ 120 000201  6007  START,  CAF
+ 121 000202  6035          KIE             /DISABLE KEYBOARD INTERRUPTS
+ 122               LOOP0,  JMS COPY        /MOVE PAGE 0 TO ALL FIELDS
+off page              	        ^
+     000203  4776  
+ 123                       JMS IOTTST      /STATIC TEST OF DM8E40 IOTS
+off page        	          ^
+     000204  4775  
+ 124 000205  1122          TAD FIELDS
+ 125 000206  7041          CIA
+ 126 000207  3115          DCA COUNT       /FOR ALL FIELDS
+ 127 000210  1374          TAD (CDF
+ 128 000211  3214          DCA FCDF        /SET A CDF TO EACH FIELD
+ 129 000212  1115  LOOP1,  TAD COUNT       /
+ 130 000213  1122          TAD FIELDS
+ 131 000214  6201  FCDF,   CDF 0           //CDF0, CDF10, CDF 20, ...
+ 132 000215  3773          DCA I (7000     //PUT THE FIELD NUMBER AT 7000
+ 133 000216  6201          CDF 0           //RESTORE THE DATAFIELD
+ 134 000217  1214          TAD FCDF        /MAKE A NEW CDF
+ 135 000220  1372          TAD (10
+ 136 000221  3214          DCA FCDF        /
+ 137 000222  2115          ISZ COUNT       /ALL FIELDS DONE
+ 138 000223  5212           JMP LOOP1      /
+ 139               /NOW A SIMPLE RELOCATION TEST. WE SET UP A SEQUENCE OF
+ 140               /RELOCATION AND THAN GO VIRTUAL, PICK UP THE FIELD
+ 141               /CONSTANT FROM 7000 AND HLT, TO GET OUT OF USER MODE
+ 142               /WE TRY TO TEST IF ALL WORDS OF THE RELOCATION RAM
+ 143               /CAN TAKE ALL VALUES, AT LEAST ALL VALUES FOR WHICH
+ 144               /THERE ARE FIELDS IN THE SYSTEM.
+ 145 000224  1371          TAD (RET1       /SETUP TRAP RETURN ADDRESS
+ 146 000225  3043          DCA ENDTRP      /
+ 147 000226  1122          TAD FIELDS      /SET UP COUNTER FOR FIELDS
+ 148 000227  7041          CIA
+ 149 000230  3115          DCA COUNT       /
+ 150 000231  1370  LOOP2,  TAD (-10        /TEST ALL 8 WORDS OF THE RELOCATION RAM
+ 151 000232  3116          DCA COUNT1      /
+ 152 000233  1370  LOOP3,  TAD (-10        /LOAD ALL WORDS OF THE RAM
+ 153 000234  3117          DCA COUNT2      /
+ 154 000235  1117  LOOP4,  TAD COUNT2      /
+ 155 000236  1372          TAD (10         /MAKE 0, 1, 2, ...
+ 156 000237  6245          LRM             /SET ALL WORDS TO 0
+ 157 000240  2117          ISZ COUNT2      /
+ 158 000241  5235           JMP LOOP4      /
+ 159 000242  1115          TAD COUNT       /
+ 160 000243  1122          TAD FIELDS      /POSITIVE REAL FIELD #
+ 161 000244  7106          CLL RTL         /
+ 162 000245  7004          RAL             /SHIFT TO BITS 6-8
+ 163 000246  1116          TAD COUNT1      /ADD VIRTUAL FIELD #
+ 164 000247  1372          TAD (10         /(POSITIVE)
+ 165 000250  6245          LRM             /THIS SETS ONE WORD
+ 166 000251  1116          TAD COUNT1      /
+ 167 000252  1372          TAD (10         /
+ 168 000253  1367          TAD (100        /USER MODE+VIRTUAL DATA FIELD
+ 169 000254  6005          RTF             /RESTORE FLAGS
+ 170 000255  7200          CLA             /?!
+ 171 000256  5044          JMP RELTST      /JMP TO RELOCATION TEST
+ 172               /RELTST MUST BE AVAILABLE IN EACH FIELD
+ 173 000257  7200  RET1,   CLA
+ 174 000260  1123          TAD AC          /GET AC FROM TRAP
+ 175 000261  7041          CIA             /AND COMPARE TO INTENDED FIELD #
+ 176 000262  1115          TAD COUNT       /
+ 177 000263  1122          TAD FIELDS      /
+ 178 000264  7640          SZA CLA         /
+ 179                        JMS RELERR     /RELOCATION ERROR
+off page        	           ^
+     000265  4766  
+ 180 000266  2116          ISZ COUNT1      /
+ 181 000267  5233           JMP LOOP3      /
+ 182 000270  2115          ISZ COUNT       /
+ 183 000271  5231           JMP LOOP2      /
+ 184               /END OF RELOCATION TEST. NOW COMES THE TRAP/UNTRAP TEST
+ 185               /IN EACH AVAILABLE FIELD WE TEST EACH IOT FROM THE TABLE
+ 186 000272  1122          TAD FIELDS      /
+ 187 000273  7041          CIA
+ 188 000274  3115          DCA COUNT       /
+ 189 000275  1370  LOOP5,  TAD (-10
+ 190 000276  3116          DCA COUNT1      /ZERO THE RELOCATION RAM
+ 191 000277  1115  LOOP6,  TAD COUNT       /
+ 192 000300  1122          TAD FIELDS      /
+ 193 000301  7106          CLL RTL
+ 194 000302  7004          RAL             /
+ 195 000303  1116          TAD COUNT1      /
+ 196 000304  1372          TAD (10         /MAKE ONE-TO-ONE MAPPING
+ 197 000305  6245          LRM             /LOAD RELOCATION MEMORY
+ 198 000306  2116          ISZ COUNT1      /
+ 199 000307  5277           JMP LOOP6      /
+ 200 000310  1115          TAD COUNT       /
+ 201 000311  1122          TAD FIELDS      /
+ 202 000312  7106          CLL RTL
+ 203 000313  7004          RAL             /
+ 204 000314  1374          TAD (CDF        /MAKE CDF
+ 205 000315  3325          DCA XCDF        /CDF TO TARGET FIELD
+ 206 000316  1365          TAD (TABLE      /SETP POINTER FOR IOT TABLE
+ 207 000317  3121          DCA PTR         /
+ 208 000320  1521  LOOP7,  TAD I PTR       /
+ 209 000321  3046          DCA TRPTST      /DROP IT IN THE TRAPTEST
+ 210 000322  1364          TAD (RET2
+ 211 000323  3043          DCA ENDTRP
+ 212 000324  1046          TAD TRPTST      /
+ 213 000325  6201  XCDF,   CDF             /CDF TARGET FIELD
+ 214 000326  3763          DCA I (TRPTST   /IN THE TARGET FIELD TOO
+ 215 000327  6201          CDF 0           /
+ 216                       JMS UTRALL      /UNTRAP ALL DEVICE CODES
+off page        	          ^
+     000330  4762  
+ 217 000331  1046          TAD TRPTST      /GET TEST IOT AGAIN
+ 218 000332  0361          AND (7776       /CLEAR UNTRAP BIT
+ 219 000333  6235          LTM             /AND SET DM8E40 TO TRAP FOR THIS IOT
+ 220 000334  6274          SUF             /ENTER USER MODE
+ 221 000335  6001          ION             /WITH INTERRUPT ON
+ 222 000336  5046          JMP TRPTST      /THIS BRINGS US INTHE TARGET FIELD !
+ 223               /- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 224 000337  2121  RET2,   ISZ PTR         /RETURN FROM TRAP HANDLER
+ 225 000340  1521          TAD I PTR       /GET TRAP/UNTRAP INDICATOR
+ 226 000341  7010          RAR             /BIT 11 IS XOR!
+ 227 000342  7630          SZL CLA         /OK ?
+ 228                        JMS TERROR     /TRAP ERROR
+off page        	           ^
+     000343  4760  
+ 229 000344  1357          TAD (RET3
+ 230 000345  3043          DCA ENDTRP      /SET NEW RETURN POINT
+ 231                       JMS TRPALL      /TRAP ALL DEVICE CODES
+off page        	          ^
+     000346  4756  
+ 232 000347  1046          TAD TRPTST
+ 233 000350  0361          AND (7776
+ 234 000351  7001          IAC             /SET UNTRBP BIT
+ 235 000352  6235          LTM             /
+ 236 000353  6274          SUF
+ 237 000354  6001          ION
+ 238 000355  5046          JMP TRPTST      /GO !
+ 239               
+ 240 000356  1600  PAGE
+     000357  0400  
+     000360  1120  
+     000361  7776  
+     000362  1615  
+     000363  0046  
+     000364  0337  
+     000365  2200  
+     000366  1057  
+     000367  0100  
+     000370  7770  
+     000371  0257  
+     000372  0010  
+     000373  7000  
+     000374  6201  
+     000375  0502  
+     000376  0437  
+     000377  2000  
+ 241               /- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 242 000400  2121  RET3,   ISZ PTR
+ 243 000401  1521          TAD I PTR
+ 244 000402  7010          RAR             /BIT 11 DOES XOR
+ 245 000403  7630          SZL CLA         /OK ?
+ 246                        JMS UERROR     /NO, UNTRAP ERROR
+off page        	           ^
+     000404  4777  
+ 247 000405  2121          ISZ PTR         /SELECT NEXT IOT
+ 248 000406  1521          TAD I PTR       /AND FETCH IT
+ 249 000407  7640          SZA CLA         /END OF LIST ?
+ 250                        JMP LOOP7      /NO, TEST NEXT IOT
+off page        	          ^
+     000410  5776  
+ 251               IFNDEF FYSIOL <
+ 252               /FINALY, WE TEST THE CONSOLE TERMINAL WITH IT'S IOTS UNTRAPPED:
+ 253 000411  1375          TAD (RET4
+ 254 000412  3043          DCA ENDTRP
+ 255                       JMS TRPALL      /TRAP ALL DEVICE CODES,
+off page        	          ^
+     000413  4774  
+ 256 000414  1373          TAD (6031       /EXCEPT FOR THE TERMINAL
+ 257 000415  6235          LTM
+ 258 000416  1372          TAD (6041       /
+ 259 000417  6235          LTM             /
+ 260 000420  6274          SUF
+ 261 000421  6001          ION
+ 262 000422  5053          JMP TTYTST      /
+ 263               /- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 264 000423  7300  RET4,   CLA CLL         / >
+ 265 000424  1371          TAD (RET5
+ 266 000425  3043          DCA ENDTRP
+ 267 000426  6274          SUF
+ 268 000427  6001          ION
+ 269 000430  5067          JMP MDTST       /TEST ALL VALUES FOR MD DATA
+ 270               /- - - - - - - - - - - - - - - - - - - - - - - - - -
+ 271 000431  7640  RET5,   SZA CLA         /SHOULD NOT TRAP
+ 272                        JMS MDERR
+off page        	         ^
+     000432  4770  
+ 273                       JMS RDFTST      /NOW EXERCIZE RDF IN USER MODE
+off page        	          ^
+     000433  4767  
+ 274 000434  2115          ISZ COUNT       /SELECT NEXT TARGET FIELD
+ 275                        JMP LOOP5      /NOT DONE YET
+off page        	          ^
+     000435  5766  
+ 276                       JMP LOOP0       /START OVER AGAIN
+off page        	         ^
+     000436  5765  
+ 277               
+ 278 000437  0000  COPY,   0
+ 279 000440  1122          TAD FIELDS
+ 280 000441  7041          CIA
+ 281 000442  7001          IAC
+ 282 000443  7450          SNA
+ 283 000444  5637           JMP I COPY     /ONLY 4K
+ 284 000445  3115          DCA COUNT
+ 285 000446  7040  COPY1,  CMA
+ 286 000447  3010          DCA 10
+ 287 000450  7040          CMA
+ 288 000451  3011          DCA 11
+ 289 000452  1115          TAD COUNT
+ 290 000453  1122          TAD FIELDS
+ 291 000454  7104          CLL RAL
+ 292 000455  7006          RTL
+ 293 000456  1364          TAD (CDF
+ 294 000457  3264          DCA YCDF
+ 295 000460  1363          TAD (-200
+ 296 000461  3116          DCA COUNT1
+ 297 000462  6201  COPY2,  CDF 0
+ 298 000463  1410          TAD I 10
+ 299 000464  7402  YCDF,   HLT
+ 300 000465  3411          DCA I 11
+ 301 000466  2116          ISZ COUNT1
+ 302 000467  5262           JMP COPY2
+ 303 000470  1264          TAD YCDF
+ 304 000471  0362          AND (70
+ 305 000472  7112          CLL RTR
+ 306 000473  7010          RAR
+ 307 000474  1761          TAD I (KK
+ 308 000475  3761          DCA I (KK
+ 309 000476  6201          CDF 0
+ 310 000477  2115          ISZ COUNT
+ 311 000500  5246           JMP COPY1
+ 312 000501  5637          JMP I COPY
+ 313               
+ 314               /STATIC IOT TST FOR DM8E40 INSTRUCTIONS:
+ 315 000502  0000  IOTTST, 0
+ 316 000503  1360          TAD (IOTLST-1   /SETUP LIST POINTER
+ 317 000504  3010          DCA 10
+ 318 000505  1410          TAD I 10        /FETCH FIRST IOT
+ 319 000506  3310  IOT1,   DCA IOTX        /
+ 320 000507  1357          TAD (5252       /GET A TEST PATERN IN THE AC
+ 321 000510  7402  IOTX,   HLT             /REPLACED BY THE IOT UNDER TEST
+ 322 000511  5317          JMP IOT2        /IOT DID NOT SKIP
+ 323 000512  3123          DCA AC          /REMEBER AC AFTER IOT
+ 324 000513  1410          TAD I 10        /GET SKIP FLAG
+ 325 000514  7650          SNA CLA         /SHOULD HE HAVE SKIPPED ?
+ 326                        JMS ERR1       /NO, BUT HE DID !
+off page        	         ^
+     000515  4756  
+ 327 000516  5323          JMP IOT3        /GO CHECK AC EFFECTS
+ 328 000517  3123  IOT2,   DCA AC          /REMEMBER AC
+ 329 000520  1410          TAD I 10        /GET SKIP FLAG
+ 330 000521  7640          SZA CLA         /SHOULD HE HAVE SKIPPED ?
+ 331                        JMS ERR2       /YES, BUT HE DIDN'T !
+off page        	         ^
+     000522  4755  
+ 332 000523  1410  IOT3,   TAD I 10        /GET AC-CHANGED FLAG
+ 333 000524  7650          SNA CLA         /SHOULD AC HAVE CHANGED ?
+ 334 000525  5335           JMP IOT4       /NO, GO CHECK THAT
+ 335 000526  1410          TAD I 10        /YES, MUST AC BE CLEAR NOW ?
+ 336 000527  7650          SNA CLA         /
+ 337 000530  5341           JMP IOT5       /NO, UNDEFINED AC NOW
+ 338 000531  1123          TAD AC          /YES, TEST AC
+ 339 000532  7640          SZA CLA         /ZERO ?
+ 340                        JMS ERR3       /NO, IOT DID NOT CLA !
+off page        	         ^
+     000533  4754  
+ 341 000534  5341          JMP IOT5        /DONE ALL TESTS
+ 342 000535  1123  IOT4,   TAD AC          /IF HERE AC SHOULD NOT HAVE CHANGED
+ 343 000536  1353          TAD (-5252      /TEST IF STILL OK
+ 344 000537  7640          SZA CLA         /
+ 345                        JMS ERR4       /IOT SPOILED AC
+off page        	         ^
+     000540  4752  
+ 346 000541  1410  IOT5,   TAD I 10        /GET NEXT IOT
+ 347 000542  7440          SZA             /END OF LIST ?
+ 348 000543  5306           JMP IOT1       /NO, TEST NEXT IOT
+ 349 000544  4572          JMS I [CDTOIF   /TEST 6200
+ 350 000545  5702          JMP I IOTTST
+ 351               
+ 352 000552  1344  PAGE
+     000553  2526  
+     000554  1324  
+     000555  1306  
+     000556  1267  
+     000557  5252  
+     000560  2764  
+     000561  0103  
+     000562  0070  
+     000563  7600  
+     000564  6201  
+     000565  0203  
+     000566  0275  
+     000567  0600  
+     000570  1245  
+     000571  0431  
+     000572  6041  
+     000573  6031  
+     000574  1600  
+     000575  0423  
+     000576  0320  
+     000577  1200  
+ 353 000600  0000  RDFTST,        0               /TEST RDF IN USER MODE
+ 354                       JMS TRPALL
+off page        	         ^
+     000601  4777  
+ 355 000602  1376          TAD (RET6
+ 356 000603  3043          DCA ENDTRP
+ 357 000604  1775          TAD I (XCDF     /SET DATAFIELD TO
+ 358 000605  7040          CMA             /COMPLEMENT OF
+ 359 000606  0374          AND (70         /REAL FIELD
+ 360 000607  1373          TAD (CDF
+ 361 000610  3222          DCA KCDF
+ 362 000611  1372          TAD (-7
+ 363 000612  3116          DCA COUNT1      /CHANGE MAPPING
+ 364 000613  1222  LOOP8,  TAD KCDF        /
+ 365 000614  0374          AND (70         /
+ 366 000615  1116          TAD COUNT1      /
+ 367 000616  1371          TAD (10         /
+ 368 000617  6245          LRM             /
+ 369 000620  2116          ISZ COUNT1      /
+ 370 000621  5213           JMP LOOP8      /
+ 371 000622  6271  KCDF,   CDF 70
+ 372 000623  6274          SUF
+ 373 000624  6001          ION
+ 374 000625  5102          JMP TSTRDF
+ 375               /- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 376 000626  7640  RET6,   SZA CLA         /DID RDF TRAP ?
+ 377                        JMS RDFER1     /YES, ERROR
+off page        	           ^
+     000627  4770  
+ 378 000630  1222          TAD KCDF        /COMPUTE CORRECT AC
+ 379 000631  0374          AND (70
+ 380 000632  7421          MQL
+ 381 000633  7501          MQA
+ 382 000634  7040          CMA
+ 383 000635  0374          AND (70
+ 384 000636  7112          CLL RTR
+ 385 000637  7010          RAR
+ 386 000640  7501          MQA
+ 387 000641  7041          CIA
+ 388 000642  1123          TAD AC          /GET VIRTUAL AC
+ 389 000643  7640          SZA CLA         / ?
+ 390                        JMS RDFER2     /NO, AC WAS SPOILED !
+off page        	           ^
+     000644  4767  
+ 391 000645  5600          JMP I RDFTST    /RETURN
+ 392               
+ 393 000767  1414  PAGE
+     000770  1400  
+     000771  0010  
+     000772  7771  
+     000773  6201  
+     000774  0070  
+     000775  0325  
+     000776  0626  
+     000777  1600  
+ 394               /ERROR MESSAGE PROCESSORS:
+ 395 001000  6007  INTERR, CAF
+ 396 001001  6035          KIE
+ 397 001002  4571          JMS I [STRING
+ 398 001003  2516          TEXT /UNEXPECTED INTERRUPT/
+     001004  0530  
+     001005  2005  
+     001006  0324  
+     001007  0504  
+     001010  4011  
+     001011  1624  
+     001012  0522  
+     001013  2225  
+     001014  2024  
+     001015  0000  
+ 399 001016  4570          JMS I [CRLF
+ 400 001017  1123          TAD AC
+ 401 001020  6244          RMF
+ 402 001021  6001          ION
+ 403 001022  5400          JMP I 0
+ 404               
+ 405 001023  0000  TRPERR, 0
+ 406 001024  4571          JMS I [STRING
+ 407 001025  2422          TEXT /TRAP REGISTER WRONG: (PC-1)=/
+     001026  0120  
+     001027  4022  
+     001030  0507  
+     001031  1123  
+     001032  2405  
+     001033  2240  
+     001034  2722  
+     001035  1716  
+     001036  0772  
+     001037  4050  
+     001040  2003  
+     001041  5561  
+     001042  5175  
+     001043  0000  
+ 408 001044  1400          TAD I 0
+ 409                       JMS OCTOUT
+off page        	         ^
+     001045  4777  
+ 410 001046  4571          JMS I [STRING
+ 411 001047  5440          TEXT /, RTM=/
+     001050  2224  
+     001051  1575  
+     001052  0000  
+ 412 001053  1124          TAD TRAPD
+ 413                       JMS OCTOUT
+off page        	         ^
+     001054  4777  
+ 414 001055  4570          JMS I [CRLF
+ 415 001056  5623          JMP I TRPERR
+ 416               
+ 417 001057  0000  RELERR, 0
+ 418 001060  4571          JMS I [STRING
+ 419 001061  2205          TEXT /RELOCATION ERROR, GOOD FIELD=/
+     001062  1417  
+     001063  0301  
+     001064  2411  
+     001065  1716  
+     001066  4005  
+     001067  2222  
+     001070  1722  
+     001071  5440  
+     001072  0717  
+     001073  1704  
+     001074  4006  
+     001075  1105  
+     001076  1404  
+     001077  7500  
+ 420 001100  1115          TAD COUNT
+ 421 001101  1122          TAD FIELDS
+ 422                       JMS OCTOUT
+off page        	         ^
+     001102  4777  
+ 423 001103  4571          JMS I [STRING
+ 424 001104  5440          TEXT /, ACTUAL FIELD=/
+     001105  0103  
+     001106  2425  
+     001107  0114  
+     001110  4006  
+     001111  1105  
+     001112  1404  
+     001113  7500  
+ 425 001114  1123          TAD AC
+ 426                       JMS OCTOUT
+off page        	         ^
+     001115  4777  
+ 427 001116  4570          JMS I [CRLF
+ 428 001117  5657          JMP I RELERR
+ 429               
+ 430 001120  0000  TERROR, 0
+ 431 001121  1046          TAD TRPTST
+ 432                       JMS OCTOUT
+off page        	         ^
+     001122  4777  
+ 433 001123  1521          TAD I PTR
+ 434 001124  7650          SNA CLA
+ 435 001125  5340           JMP TER1
+ 436 001126  4571          JMS I [STRING
+ 437 001127  4006          TEXT / FAILED TO TRAP/
+     001130  0111  
+     001131  1405  
+     001132  0440  
+     001133  2417  
+     001134  4024  
+     001135  2201  
+     001136  2000  
+ 438 001137  5350          JMP TER2
+ 439 001140  4571  TER1,   JMS I [STRING
+ 440 001141  4040          TEXT /  DID  TRAP /
+     001142  0411  
+     001143  0440  
+     001144  4024  
+     001145  2201  
+     001146  2040  
+     001147  0000  
+ 441 001150  4571  TER2,   JMS I [STRING
+ 442 001151  4011          TEXT / IN FIELD /
+     001152  1640  
+     001153  0611  
+     001154  0514  
+     001155  0440  
+     001156  0000  
+ 443 001157  1115          TAD COUNT
+ 444 001160  1122          TAD FIELDS
+ 445 001161  0376          AND (7
+ 446 001162  1375          TAD ("0
+ 447                       JMS TYPE
+off page        	       ^
+     001163  4774  
+ 448 001164  4570          JMS I [CRLF
+ 449 001165  5720          JMP I TERROR
+ 450               
+ 451 001174  2054  PAGE
+     001175  0260  
+     001176  0007  
+     001177  1715  
+ 452 001200  0000  UERROR,        0
+ 453 001201  1046          TAD TRPTST
+ 454                       JMS OCTOUT
+off page        	         ^
+     001202  4777  
+ 455 001203  1521          TAD I PTR
+ 456 001204  7640          SZA CLA
+ 457 001205  5220           JMP UER1
+ 458 001206  4571          JMS I [STRING
+ 459 001207  4004          TEXT / DID NOT UNTRAP/
+     001210  1104  
+     001211  4016  
+     001212  1724  
+     001213  4025  
+     001214  1624  
+     001215  2201  
+     001216  2000  
+ 460 001217  5227          JMP UER2
+ 461 001220  4571  UER1,   JMS I [STRING
+ 462 001221  4004          TEXT / DID UNTRAP/
+     001222  1104  
+     001223  4025  
+     001224  1624  
+     001225  2201  
+     001226  2000  
+ 463 001227  4571  UER2,   JMS I [STRING
+ 464 001230  4011          TEXT / IN FIELD /
+     001231  1640  
+     001232  0611  
+     001233  0514  
+     001234  0440  
+     001235  0000  
+ 465 001236  1115          TAD COUNT
+ 466 001237  1122          TAD FIELDS
+ 467 001240  0376          AND (7
+ 468 001241  1375          TAD ("0
+ 469                       JMS TYPE
+off page        	       ^
+     001242  4774  
+ 470 001243  4570          JMS I [CRLF
+ 471 001244  5600          JMP I UERROR
+ 472               
+ 473 001245  0000  MDERR,  0
+ 474 001246  4571          JMS I [STRING
+ 475 001247  2422          TEXT /TRAPPED ON MEMORY DATA /
+     001250  0120  
+     001251  2005  
+     001252  0440  
+     001253  1716  
+     001254  4015  
+     001255  0515  
+     001256  1722  
+     001257  3140  
+     001260  0401  
+     001261  2401  
+     001262  4000  
+ 476 001263  1075          TAD Q
+ 477                       JMS OCTOUT
+off page        	         ^
+     001264  4777  
+ 478 001265  4570          JMS I [CRLF
+ 479 001266  5645          JMP I MDERR
+ 480               
+ 481 001267  0000  ERR1,   0
+ 482 001270  1773          TAD I (IOTX
+ 483 001271  4567          JMS I [OCTOUT
+ 484 001272  4571          JMS I [STRING
+ 485 001273  4027          TEXT / WRONGLY SKIPPED/
+     001274  2217  
+     001275  1607  
+     001276  1431  
+     001277  4023  
+     001300  1311  
+     001301  2020  
+     001302  0504  
+     001303  0000  
+ 486 001304  4570          JMS I [CRLF
+ 487 001305  5667          JMP I ERR1
+ 488               
+ 489 001306  0000  ERR2,   0
+ 490 001307  1566          TAD I [IOTX
+ 491 001310  4567          JMS I [OCTOUT
+ 492 001311  4571          JMS I [STRING
+ 493 001312  4006          TEXT / FAILED TO SKIP/
+     001313  0111  
+     001314  1405  
+     001315  0440  
+     001316  2417  
+     001317  4023  
+     001320  1311  
+     001321  2000  
+ 494 001322  4570          JMS I [CRLF
+ 495 001323  5706          JMP I ERR2
+ 496               
+ 497 001324  0000  ERR3,   0
+ 498 001325  1566          TAD I [IOTX
+ 499 001326  4567          JMS I [OCTOUT
+ 500 001327  4571          JMS I [STRING
+ 501 001330  4006          TEXT / FAILED TO CLEAR AC/
+     001331  0111  
+     001332  1405  
+     001333  0440  
+     001334  2417  
+     001335  4003  
+     001336  1405  
+     001337  0122  
+     001340  4001  
+     001341  0300  
+ 502 001342  4570          JMS I [CRLF
+ 503 001343  5724          JMP I ERR3
+ 504               
+ 505 001344  0000  ERR4,   0
+ 506 001345  1566          TAD I [IOTX
+ 507 001346  4567          JMS I [OCTOUT
+ 508 001347  4571          JMS I [STRING
+ 509 001350  4023          TEXT / SPOILED THE AC/
+     001351  2017  
+     001352  1114  
+     001353  0504  
+     001354  4024  
+     001355  1005  
+     001356  4001  
+     001357  0300  
+ 510 001360  4570          JMS I [CRLF
+ 511 001361  5744          JMP I ERR4
+ 512 001373  0510  PAGE
+     001374  2054  
+     001375  0260  
+     001376  0007  
+     001377  1715  
+ 513               
+ 514 001400  0000  RDFER1, 0
+ 515 001401  4571          JMS I [STRING
+ 516 001402  2204          TEXT /RDF DID TRAP !/
+     001403  0640  
+     001404  0411  
+     001405  0440  
+     001406  2422  
+     001407  0120  
+     001410  4041  
+     001411  0000  
+ 517 001412  4570          JMS I [CRLF
+ 518 001413  5600          JMP I RDFER1
+ 519               
+ 520 001414  0000  RDFER2, 0
+ 521 001415  4571          JMS I [STRING
+ 522 001416  2204          TEXT /RDF RETURNED WRONG ANSWER: /
+     001417  0640  
+     001420  2205  
+     001421  2425  
+     001422  2216  
+     001423  0504  
+     001424  4027  
+     001425  2217  
+     001426  1607  
+     001427  4001  
+     001430  1623  
+     001431  2705  
+     001432  2272  
+     001433  4000  
+ 523 001434  1123          TAD AC
+ 524 001435  4567          JMS I [OCTOUT
+ 525 001436  4570          JMS I [CRLF
+ 526 001437  5614          JMP I RDFER2
+ 527               
+ 528               PAGE
+ 529 001600  0000  TRPALL,        0               /SUBROUTINE TO SET ALL BITS
+ 530 001601  1377          TAD (-100       /IN THE TRAP MEMORY (EXCEPT 600X)
+ 531 001602  3231          DCA TRPCNT
+ 532 001603  1231  TRP1,   TAD TRPCNT
+ 533 001604  1376          TAD (100        /MAKE IT POSITIVE
+ 534 001605  7104          CLL RAL
+ 535 001606  7006          RTL
+ 536 001607  6235          LTM             /SET TO TRAP
+ 537 001610  2231          ISZ TRPCNT      /DONE ?
+ 538 001611  5203           JMP TRP1       /NO
+ 539 001612  1375          TAD (6001       /UNTRAP ION FOR 6215, 6225
+ 540 001613  6235          LTM             /
+ 541 001614  5600          JMP I TRPALL    /YES, RETURN
+ 542               
+ 543 001615  0000  UTRALL, 0               /SUBROUTINE TO UNTRAP ALL DEVICE CODES
+ 544 001616  1377          TAD (-100
+ 545 001617  3231          DCA TRPCNT      /
+ 546 001620  1231  UTR1,   TAD TRPCNT
+ 547 001621  1376          TAD (100        /MAKE IT POTIVE
+ 548 001622  7104          CLL RAL
+ 549 001623  7006          RTL
+ 550 001624  7001          IAC             /SET UNTRAP BIT
+ 551 001625  6235          LTM
+ 552 001626  2231          ISZ TRPCNT      /DONE ?
+ 553 001627  5220           JMP UTR1       /NO
+ 554 001630  5615          JMP I UTRALL    /YES, RETURN
+ 555               
+ 556 001631  0000  TRPCNT, 0
+ 557               
+ 558 001632  0000  CDTOIF, 0       /TEST CDTOIF INSTRUCTION
+ 559 001633  1122          TAD FIELDS      /FOR ALL AVAILABLE FIELDS
+ 560 001634  7041          CIA
+ 561 001635  3116          DCA COUNT1      /
+ 562 001636  1116  CDT1,   TAD COUNT1
+ 563 001637  1122          TAD FIELDS      /MAKE POSITIVE FIELD NUMBER
+ 564 001640  7104          CLL RAL
+ 565 001641  7006          RTL
+ 566 001642  1165          TAD [CIF
+ 567 001643  3252          DCA CDT3        /
+ 568 001644  1252          TAD CDT3
+ 569 001645  7040          CMA             /MAKE COMPLEMENTARY CDF
+ 570 001646  0164          AND [70
+ 571 001647  1163          TAD [CDF
+ 572 001650  3251          DCA CDT2
+ 573 001651  7402  CDT2,   HLT             /CDF
+ 574 001652  7402  CDT3,   HLT             /CIF
+ 575 001653  4076          JMS CDTF        /DO CDTOIF IN SOME FIELD
+ 576 001654  6214          RDF             /READ DATA FIELD
+ 577 001655  6201          CDF 0           /RESET DF
+ 578 001656  7041          CIA
+ 579 001657  1252          TAD CDT3        /AND COMPARE WITH PREVIOUS
+ 580 001660  0164          AND [70         /INSTRUCTION FIELD
+ 581 001661  7640          SZA CLA         /OK ?
+ 582                        JMS CDTERR     /NO, CDTOIF DID NOT WORK
+off page        	           ^
+     001662  4774  
+ 583 001663  2116          ISZ COUNT1      /TRY NEXT FIELD
+ 584 001664  5236           JMP CDT1
+ 585 001665  5632          JMP I CDTOIF    /END OF TEST
+ 586               
+ 587 001666  0000  CRLF,   0
+ 588 001667  1373          TAD (215
+ 589                       JMS TYPE
+off page        	       ^
+     001670  4772  
+ 590 001671  1371          TAD (212
+ 591                       JMS TYPE
+off page        	       ^
+     001672  4772  
+ 592 001673  5666          JMP I CRLF
+ 593               
+ 594 001674  0000  STRING, 0
+ 595 001675  1674          TAD I STRING
+ 596 001676  7002          BSW
+ 597 001677  4304          JMS BYTE
+ 598 001700  1674          TAD I STRING
+ 599 001701  2274          ISZ STRING
+ 600 001702  4304          JMS BYTE
+ 601 001703  5275          JMP STRING+1
+ 602               
+ 603 001704  0000  BYTE,   0
+ 604 001705  0370          AND (77
+ 605 001706  7450          SNA
+ 606 001707  5674           JMP I STRING
+ 607 001710  1367          TAD (240
+ 608 001711  0370          AND (77
+ 609 001712  1367          TAD (240
+ 610                       JMS TYPE
+off page        	       ^
+     001713  4772  
+ 611 001714  5704          JMP I BYTE
+ 612               
+ 613 001715  0000  OCTOUT, 0
+ 614 001716  7004          RAL
+ 615 001717  4325          JMS DIGIT
+ 616 001720  4325          JMS DIGIT
+ 617 001721  4325          JMS DIGIT
+ 618 001722  4325          JMS DIGIT
+ 619 001723  7200          CLA
+ 620 001724  5715          JMP I OCTOUT
+ 621               
+ 622 001725  0000  DIGIT,  0
+ 623 001726  7004          RAL
+ 624 001727  7006          RTL
+ 625 001730  3337          DCA OCTEMP
+ 626 001731  1337          TAD OCTEMP
+ 627 001732  0366          AND (7
+ 628 001733  1365          TAD ("0
+ 629                       JMS TYPE
+off page        	       ^
+     001734  4772  
+ 630 001735  1337          TAD OCTEMP
+ 631 001736  5725          JMP I DIGIT
+ 632               
+ 633 001737  0000  OCTEMP, 0
+ 634               
+ 635 001765  0260  PAGE
+     001766  0007  
+     001767  0240  
+     001770  0077  
+     001771  0212  
+     001772  2054  
+     001773  0215  
+     001774  2027  
+     001775  6001  
+     001776  0100  
+     001777  7700  
+ 636 002000  0000  INIT,  0
+ 637 002001  4571          JMS I [STRING
+ 638 002002  1011          TEXT /HIGHEST FIELD # ? /
+     002003  0710  
+     002004  0523  
+     002005  2440  
+     002006  0611  
+     002007  0514  
+     002010  0440  
+     002011  4340  
+     002012  7740  
+     002013  0000  
+ 639 002014  6031          KSF
+ 640 002015  5214           JMP .-1
+ 641 002016  6036          KRB
+ 642 002017  6046          TLS
+ 643 002020  6041          TSF
+ 644 002021  5220           JMP .-1
+ 645 002022  0377          AND (7
+ 646 002023  7001          IAC
+ 647 002024  3122          DCA FIELDS
+ 648 002025  4570          JMS I [CRLF
+ 649 002026  5600          JMP I INIT
+ 650               
+ 651 002027  0000  CDTERR, 0
+ 652 002030  4571          JMS I [STRING
+ 653 002031  0304          TEXT /CDTOIF FAILED IN FIELD /
+     002032  2417  
+     002033  1106  
+     002034  4006  
+     002035  0111  
+     002036  1405  
+     002037  0440  
+     002040  1116  
+     002041  4006  
+     002042  1105  
+     002043  1404  
+     002044  4000  
+ 654 002045  1116          TAD COUNT1
+ 655 002046  1122          TAD FIELDS
+ 656 002047  0162          AND [7
+ 657 002050  1161          TAD ["0
+ 658 002051  4254          JMS TYPE
+ 659 002052  4570          JMS I [CRLF
+ 660 002053  5627          JMP I CDTERR
+ 661               
+ 662 002054  0000  TYPE,   0
+ 663 002055  6046          TLS
+ 664 002056  6041          TSF
+ 665 002057  5256          JMP .-1
+ 666 002060  7200          CLA
+ 667 002061  6031          KSF
+ 668 002062  5654          JMP I TYPE
+ 669 002063  1376  CTRLQ,  TAD (7600
+ 670 002064  6034          KRS
+ 671 002065  1375          TAD (-7603
+ 672 002066  7450          SNA
+ 673 002067  5776          JMP I (7600
+ 674 002070  1374          TAD (3-23
+ 675 002071  7650          SNA CLA
+ 676 002072  5275          JMP CTRLS
+ 677 002073  6032          KCC
+ 678 002074  5654          JMP I TYPE
+ 679 002075  6032  CTRLS,  KCC
+ 680 002076  6031          KSF
+ 681 002077  5276          JMP .-1
+ 682 002100  5263          JMP CTRLQ
+ 683 002174  7760  PAGE
+     002175  0175  
+     002176  7600  
+     002177  0007  
+ 684               /THE IOT TABLE. THE FORMAT IS: IOT;SHOULD-TRAP-IF-TRAPPED;SHOULD-TRAP-
+ 685               /IF-UNTRAPPED. THE TABLE ENDS WITH IOT=0
+ 686               
+ 687                       Y=7777
+ 688                       N=0000
+ 689 002200  6000  TABLE,  6000;Y;N
+     002201  7777  
+     002202  0000  
+ 690 002203  6006          6006;N;N        /SGT
+     002204  0000  
+     002205  0000  
+ 691               IFDEF PRODUCTION <
+ 692 002206  6010          6010;Y;N
+     002207  7777  
+     002210  0000  
+ 693 002211  6020          6020;Y;N
+     002212  7777  
+     002213  0000  
+ 694 002214  6030          6030;Y;N
+     002215  7777  
+     002216  0000  
+ 695 002217  6040          6040;Y;N
+     002220  7777  
+     002221  0000  
+ 696 002222  6050          6050;Y;N
+     002223  7777  
+     002224  0000  
+ 697 002225  6060          6060;Y;N
+     002226  7777  
+     002227  0000  
+ 698 002230  6070          6070;Y;N
+     002231  7777  
+     002232  0000  
+ 699 002233  6100          6100;Y;N
+     002234  7777  
+     002235  0000  
+ 700 002236  6110          6110;Y;N
+     002237  7777  
+     002240  0000  
+ 701 002241  6120          6120;Y;N
+     002242  7777  
+     002243  0000  
+ 702 002244  6130          6130;Y;N
+     002245  7777  
+     002246  0000  
+ 703 002247  6140          6140;Y;N
+     002250  7777  
+     002251  0000  
+ 704 002252  6150          6150;Y;N
+     002253  7777  
+     002254  0000  
+ 705 002255  6160          6160;Y;N
+     002256  7777  
+     002257  0000  
+ 706 002260  6170          6170;Y;N        / >
+     002261  7777  
+     002262  0000  
+ 707 002263  6200          6200;Y;Y        /CDTOIF
+     002264  7777  
+     002265  7777  
+ 708 002266  6201          6201;Y;N        /CDF 0
+     002267  7777  
+     002270  0000  
+ 709 002271  6202          6202;Y;N        /CIF 0
+     002272  7777  
+     002273  0000  
+ 710 002274  6203          6203;Y;N        /CDF CIF 0
+     002275  7777  
+     002276  0000  
+ 711 002277  6204          6204;Y;Y        /CINT
+     002300  7777  
+     002301  7777  
+ 712 002302  6205          6205;Y;Y        /RTM
+     002303  7777  
+     002304  7777  
+ 713 002305  6206          6206;Y;Y
+     002306  7777  
+     002307  7777  
+ 714 002310  6207          6207;Y;Y
+     002311  7777  
+     002312  7777  
+ 715 002313  6210          6210;Y;Y
+     002314  7777  
+     002315  7777  
+ 716 002316  6211          6211;Y;N        /CDF 10
+     002317  7777  
+     002320  0000  
+ 717 002321  6212          6212;Y;N        /CIF 10
+     002322  7777  
+     002323  0000  
+ 718 002324  6213          6213;Y;N        /CDF CIF 10
+     002325  7777  
+     002326  0000  
+ 719 002327  6214          6214;N;N        /RDF
+     002330  0000  
+     002331  0000  
+ 720 002332  6215          6215;Y;Y        /SKME
+     002333  7777  
+     002334  7777  
+ 721 002335  6216          6216;Y;Y
+     002336  7777  
+     002337  7777  
+ 722 002340  6217          6217;Y;Y
+     002341  7777  
+     002342  7777  
+ 723 002343  6220          6220;Y;Y
+     002344  7777  
+     002345  7777  
+ 724 002346  6221          6221;Y;N        /CDF 20
+     002347  7777  
+     002350  0000  
+ 725 002351  6222          6222;Y;N        /CIF 20
+     002352  7777  
+     002353  0000  
+ 726 002354  6223          6223;Y;N        /CDF CIF 30
+     002355  7777  
+     002356  0000  
+ 727 002357  6224          6224;N;N        /RIF
+     002360  0000  
+     002361  0000  
+ 728 002362  6225          6225;Y;Y        /SKMM
+     002363  7777  
+     002364  7777  
+ 729 002365  6226          6226;Y;Y
+     002366  7777  
+     002367  7777  
+ 730 002370  6227          6227;Y;Y
+     002371  7777  
+     002372  7777  
+ 731 002373  6230          6230;Y;Y
+     002374  7777  
+     002375  7777  
+ 732 002376  6231          6231;Y;N        /CDF 30
+     002377  7777  
+     002400  0000  
+ 733 002401  6232          6232;Y;N        /CIF 30
+     002402  7777  
+     002403  0000  
+ 734 002404  6233          6233;Y;N        /CDF CIF 0
+     002405  7777  
+     002406  0000  
+ 735 002407  6234          6234;Y;Y
+     002410  7777  
+     002411  7777  
+ 736 002412  6235          6235;Y;Y
+     002413  7777  
+     002414  7777  
+ 737 002415  6236          6236;Y;Y
+     002416  7777  
+     002417  7777  
+ 738 002420  6237          6237;Y;Y
+     002421  7777  
+     002422  7777  
+ 739 002423  6240          6240;Y;Y
+     002424  7777  
+     002425  7777  
+ 740 002426  6241          6241;Y;N        /CDF 40
+     002427  7777  
+     002430  0000  
+ 741 002431  6242          6242;Y;N        /CIF 40
+     002432  7777  
+     002433  0000  
+ 742 002434  6243          6243;Y;N        /CDF CIF 40
+     002435  7777  
+     002436  0000  
+ 743 002437  6244          6244;Y;Y
+     002440  7777  
+     002441  7777  
+ 744 002442  6245          6245;Y;Y
+     002443  7777  
+     002444  7777  
+ 745 002445  6246          6246;Y;Y
+     002446  7777  
+     002447  7777  
+ 746 002450  6247          6247;Y;Y
+     002451  7777  
+     002452  7777  
+ 747 002453  6250          6250;Y;Y
+     002454  7777  
+     002455  7777  
+ 748 002456  6251          6251;Y;N        /CDF 50
+     002457  7777  
+     002460  0000  
+ 749 002461  6252          6252;Y;N        /CIF 50
+     002462  7777  
+     002463  0000  
+ 750 002464  6253          6253;Y;N        /CDF CIF 50
+     002465  7777  
+     002466  0000  
+ 751 002467  6254          6254;Y;Y
+     002470  7777  
+     002471  7777  
+ 752 002472  6255          6255;Y;Y
+     002473  7777  
+     002474  7777  
+ 753 002475  6256          6256;Y;Y
+     002476  7777  
+     002477  7777  
+ 754 002500  6257          6257;Y;Y
+     002501  7777  
+     002502  7777  
+ 755 002503  6260          6260;Y;Y
+     002504  7777  
+     002505  7777  
+ 756 002506  6261          6261;Y;N        /CDF 60
+     002507  7777  
+     002510  0000  
+ 757 002511  6262          6262;Y;N        /CIF 60
+     002512  7777  
+     002513  0000  
+ 758 002514  6263          6263;Y;N        /CDF CIF 60
+     002515  7777  
+     002516  0000  
+ 759 002517  6264          6264;Y;Y
+     002520  7777  
+     002521  7777  
+ 760 002522  6265          6265;Y;Y
+     002523  7777  
+     002524  7777  
+ 761 002525  6266          6266;Y;Y
+     002526  7777  
+     002527  7777  
+ 762 002530  6267          6267;Y;Y
+     002531  7777  
+     002532  7777  
+ 763 002533  6270          6270;Y;Y
+     002534  7777  
+     002535  7777  
+ 764 002536  6271          6271;Y;N        /CDF 70
+     002537  7777  
+     002540  0000  
+ 765 002541  6272          6272;Y;N        /CIF 70
+     002542  7777  
+     002543  0000  
+ 766 002544  6273          6273;Y;N        /CDF CIF 70
+     002545  7777  
+     002546  0000  
+ 767 002547  6274          6274;Y;Y
+     002550  7777  
+     002551  7777  
+ 768 002552  6275          6275;Y;Y
+     002553  7777  
+     002554  7777  
+ 769 002555  6276          6276;Y;Y
+     002556  7777  
+     002557  7777  
+ 770 002560  6277          6277;Y;Y
+     002561  7777  
+     002562  7777  
+ 771               IFDEF PRODUCTION <
+ 772 002563  6300          6300;Y;N
+     002564  7777  
+     002565  0000  
+ 773 002566  6310          6310;Y;N
+     002567  7777  
+     002570  0000  
+ 774 002571  6320          6320;Y;N
+     002572  7777  
+     002573  0000  
+ 775 002574  6320          6320;Y;N
+     002575  7777  
+     002576  0000  
+ 776 002577  6330          6330;Y;N
+     002600  7777  
+     002601  0000  
+ 777 002602  6340          6340;Y;N
+     002603  7777  
+     002604  0000  
+ 778 002605  6350          6350;Y;N
+     002606  7777  
+     002607  0000  
+ 779 002610  6360          6360;Y;N
+     002611  7777  
+     002612  0000  
+ 780 002613  6370          6370;Y;N
+     002614  7777  
+     002615  0000  
+ 781 002616  6400          6400;Y;N
+     002617  7777  
+     002620  0000  
+ 782 002621  6410          6410;Y;N
+     002622  7777  
+     002623  0000  
+ 783 002624  6420          6420;Y;N
+     002625  7777  
+     002626  0000  
+ 784 002627  6430          6430;Y;N
+     002630  7777  
+     002631  0000  
+ 785 002632  6440          6440;Y;N
+     002633  7777  
+     002634  0000  
+ 786 002635  6450          6450;Y;N
+     002636  7777  
+     002637  0000  
+ 787 002640  6460          6460;Y;N
+     002641  7777  
+     002642  0000  
+ 788 002643  6470          6470;Y;N
+     002644  7777  
+     002645  0000  
+ 789 002646  6500          6500;Y;N
+     002647  7777  
+     002650  0000  
+ 790 002651  6510          6510;Y;N
+     002652  7777  
+     002653  0000  
+ 791 002654  6520          6520;Y;N
+     002655  7777  
+     002656  0000  
+ 792 002657  6530          6530;Y;N
+     002660  7777  
+     002661  0000  
+ 793 002662  6540          6540;Y;N
+     002663  7777  
+     002664  0000  
+ 794 002665  6550          6550;Y;N
+     002666  7777  
+     002667  0000  
+ 795 002670  6560          6560;Y;N
+     002671  7777  
+     002672  0000  
+ 796 002673  6570          6570;Y;N
+     002674  7777  
+     002675  0000  
+ 797 002676  6600          6600;Y;N
+     002677  7777  
+     002700  0000  
+ 798 002701  6610          6610;Y;N
+     002702  7777  
+     002703  0000  
+ 799 002704  6620          6620;Y;N
+     002705  7777  
+     002706  0000  
+ 800 002707  6630          6630;Y;N
+     002710  7777  
+     002711  0000  
+ 801 002712  6640          6640;Y;N
+     002713  7777  
+     002714  0000  
+ 802 002715  6650          6650;Y;N
+     002716  7777  
+     002717  0000  
+ 803 002720  6660          6660;Y;N
+     002721  7777  
+     002722  0000  
+ 804 002723  6670          6670;Y;N
+     002724  7777  
+     002725  0000  
+ 805 002726  6700          6700;Y;N
+     002727  7777  
+     002730  0000  
+ 806 002731  6710          6710;Y;N
+     002732  7777  
+     002733  0000  
+ 807 002734  6720          6720;Y;N
+     002735  7777  
+     002736  0000  
+ 808 002737  6730          6730;Y;N
+     002740  7777  
+     002741  0000  
+ 809 002742  6740          6740;Y;N
+     002743  7777  
+     002744  0000  
+ 810 002745  6750          6750;Y;N
+     002746  7777  
+     002747  0000  
+ 811 002750  6760          6760;Y;N
+     002751  7777  
+     002752  0000  
+ 812 002753  6770          6770;Y;N        / >
+     002754  7777  
+     002755  0000  
+ 813 002756  7402          7402;Y;Y        /HLT
+     002757  7777  
+     002760  7777  
+ 814 002761  7404          7404;Y;Y        /OSR
+     002762  7777  
+     002763  7777  
+ 815 002764  0000          0               /END OF TABLE
+ 816               
+ 817               /LIST FOR STATIC IOT TEST. EACH ENTRY CONSISTS OF
+ 818               /IOT-CODE, SHOULD-SKIP, MAY-CHANGE-AC, (SHOULD-CLEAR-AC).
+ 819               /THE LAST ELEMENT IS ONLY NEEDED IF MAY-CHANGE-AC IS YES.
+ 820 002765  6200  IOTLST, 6200;N;N
+     002766  0000  
+     002767  0000  
+ 821 002770  6275          CMME;N;N
+     002771  0000  
+     002772  0000  
+ 822 002773  6205          RTM;N;Y;N
+     002774  0000  
+     002775  7777  
+     002776  0000  
+ 823 002777  6215          SKME;N;N
+     003000  0000  
+     003001  0000  
+ 824 003002  6225          SKMM;Y;N
+     003003  7777  
+     003004  0000  
+ 825 003005  6235          LTM;N;Y;Y
+     003006  0000  
+     003007  7777  
+     003010  7777  
+ 826 003011  6245          LRM;N;Y;Y
+     003012  0000  
+     003013  7777  
+     003014  7777  
+ 827 003015  6265          SMME;N;N
+     003016  0000  
+     003017  0000  
+ 828 003020  6215          SKME;Y;N
+     003021  7777  
+     003022  0000  
+ 829 003023  6225          SKMM;Y;N
+     003024  7777  
+     003025  0000  
+ 830 003026  6205          RTM;N;Y;N
+     003027  0000  
+     003030  7777  
+     003031  0000  
+ 831 003032  6235          LTM;N;Y;Y
+     003033  0000  
+     003034  7777  
+     003035  7777  
+ 832 003036  6245          LRM;N;Y;Y
+     003037  0000  
+     003040  7777  
+     003041  7777  
+ 833 003042  0000          0
+ 834 000161  0260  $
+     000162  0007  
+     000163  6201  
+     000164  0070  
+     000165  6202  
+     000166  0510  
+     000167  1715  
+     000170  1666  
+     000171  1674  
+     000172  1632  
+     000173  0075  
+     000174  7000  
+     000175  7727  
+     000176  1023  
+     000177  1000  
+
+AC      0123
+BELL    0125
+BYTE    1704
+CDT1    1636
+CDT2    1651
+CDT3    1652
+CDTERR  2027
+CDTF    0076
+CDTOIF  1632
+CINT    6204
+CMME    6275
+COPY    0437
+COPY1   0446
+COPY2   0462
+COUNT   0115
+COUNT1  0116
+COUNT2  0117
+COUNT3  0120 unreferenced
+CRLF    1666
+CTRLQ   2063
+CTRLS   2075
+CUF     6264 unreferenced
+DIGIT   1725
+ENDTRP  0043
+ERR1    1267
+ERR2    1306
+ERR3    1324
+ERR4    1344
+FCDF    0214
+FIELDS  0122
+HALT    0051
+INIT    2000
+INTERR  1000
+IOT1    0506
+IOT2    0517
+IOT3    0523
+IOT4    0535
+IOT5    0541
+IOTLST  2765
+IOTTST  0502
+IOTX    0510
+K0      0105
+K1      0106 unreferenced
+K2      0107 unreferenced
+K3      0110 unreferenced
+K4      0111 unreferenced
+K5      0112 unreferenced
+K6      0113 unreferenced
+K7      0114 unreferenced
+KCDF    0622
+KK      0103
+LOOP0   0203
+LOOP1   0212
+LOOP2   0231
+LOOP3   0233
+LOOP4   0235
+LOOP5   0275
+LOOP6   0277
+LOOP7   0320
+LOOP8   0613
+LRM     6245
+LTM     6235
+MDERR   1245
+MDTST   0067
+N       0000
+OCTEMP  1737
+OCTOUT  1715
+PRODUC  0001
+PTR     0121
+Q       0075
+RDFER1  1400
+RDFER2  1414
+RDFTST  0600
+RELERR  1057
+RELTST  0044
+RET1    0257
+RET2    0337
+RET3    0400
+RET4    0423
+RET5    0431
+RET6    0626
+RTM     6205
+SERV    0020
+SINT    6254
+SKME    6215
+SKMM    6225
+SMME    6265
+START   0201 unreferenced
+STRING  1674
+SUF     6274
+TABLE   2200
+TER1    1140
+TER2    1150
+TERROR  1120
+TRAPD   0124
+TRP1    1603
+TRPALL  1600
+TRPCNT  1631
+TRPERR  1023
+TRPTST  0046
+TSTRDF  0102
+TTYTST  0053
+TYPE    2054
+UER1    1220
+UER2    1227
+UERROR  1200
+UTR1    1620
+UTRALL  1615
+XCDF    0325
+Y       7777
+YCDF    0464
