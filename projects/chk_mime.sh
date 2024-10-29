@@ -27,6 +27,7 @@ while read i; do
     *.bin" - application/octet-stream") ;;
     *.BIN" - application/octet-stream") ;;
     *.bit" - application/octet-stream") ;;
+    *.bmp" - application/octet-stream") ;;
     *.brd" - application/octet-stream") ;;
     *.cdb" - application/octet-stream") ;;
     *.cod" - application/octet-stream") ;;
@@ -53,6 +54,7 @@ while read i; do
     *.mcw" - application/octet-stream") ;;
     *.pack" - application/octet-stream") ;;
     *.pof" - application/octet-stream") ;;
+    *.pt" - application/octet-stream") ;;
     *.ok" - application/octet-stream") ;;
     *.qws" - application/octet-stream") ;;
     *.rcfdb" - application/octet-stream") ;;
