@@ -59,6 +59,7 @@ $important{"TPL"} = 1;
 
 $previous = "";
 while (<STDIN>) {
+  chop;
   ($key, $prod, $desc) = split(/\t/);
   next if $key eq "MODULE";
   $key =~ s/-[A-Z]+$//;
@@ -67,8 +68,18 @@ while (<STDIN>) {
   warn "$previous > $key\n" unless $previous le $key;
   $previous = $key;
   $class = $key; $class =~ s/\d+//;
-  $dir = $class . "xxx";
+  $class .= "xxx" if $class;
+  $dir = "./$class/$key";
   next unless defined $important{$prod};
-  next if -d "./$dir/$key";
-  print "$key\t$prod\t$desc";
+  next if -d "$dir";
+# print "$key\t$prod\t$desc";
+  # Create $dir and populate with DESCRIPTION and eagle.epf.
+  print "mkdir $dir\n";
+  $desc =~ s/'/\\'/g;
+  print "echo '$desc' >$dir/DESCRIPTION\n"; 
+  print "cp flipchip/eagle.epf $dir/eagle.epf\n"; 
+  print "svn add $dir\n"; 
+  $add{$dir} = 1;
 }
+@add = sort keys %add;
+print ": svn commit @add\n";
