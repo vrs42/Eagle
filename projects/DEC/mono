@@ -1,0 +1,74 @@
+#!/usr/bin/perl
+
+#
+# Check that the first field of the input file is monotonic and well formed.
+$products{""} = 1;
+$products{"1"} = 1;
+$products{"8"} = 1;
+$products{"8/A"} = 1;
+$products{"8/E"} = 1;
+$products{"10"} = 1;
+$products{"11"} = 1;
+$products{"11/03"} = 1;
+$products{"11/04"} = 1;
+$products{"11/05"} = 1;
+$products{"11/20"} = 1;
+$products{"11/35"} = 1;
+$products{"11/40"} = 1;
+$products{"11/45"} = 1;
+$products{"11/70"} = 1;
+$products{"12"} = 1;
+$products{"14"} = 1;
+$products{"15"} = 1;
+$products{"16"} = 1;
+$products{"CAT"} = 1;
+$products{"CLP"} = 1;
+$products{"COM"} = 1;
+$products{"COMM"} = 1;
+$products{"CPL"} = 1;
+$products{"CSS"} = 1;
+$products{"DAS"} = 1;
+$products{"DIS"} = 1;
+$products{"FS"} = 1;
+$products{"GRAPH"} = 1;
+$products{"IPG"} = 1;
+$products{"KL10"} = 1;
+$products{"LDP"} = 1;
+$products{"MOD"} = 1;
+$products{"MTST"} = 1;
+$products{"PS"} = 1;
+$products{"PERIPH"} = 1;
+$products{"PROE"} = 1;
+$products{"SSCAL"} = 1;
+$products{"TPL"} = 1;
+$products{"TYP"} = 1;
+$products{"XML"} = 1;
+
+$important{"8"} = 1;
+$important{"8/A"} = 1;
+$important{"8/E"} = 1;
+$important{"12"} = 1;
+$important{"CAT"} = 1;
+$important{"FS"} = 1;
+$important{"LDP"} = 1;
+$important{"MOD"} = 1;
+$important{"PERIPH"} = 1;
+$important{"PROE"} = 1;
+$important{"PS"} = 1;
+$important{"TPL"} = 1;
+
+$previous = "";
+while (<STDIN>) {
+  ($key, $prod, $desc) = split(/\t/);
+  next if $key eq "MODULE";
+  $key =~ s/-[A-Z]+$//;
+  warn "$key not well formed\n" unless $key =~ /^[A-Z]\d+$/;
+  warn "Product line $prod unknown\n" unless defined $products{$prod};
+  warn "$previous > $key\n" unless $previous le $key;
+  $previous = $key;
+  $class = $key; $class =~ s/\d+//;
+  $dir = $class . "xxx";
+  next unless defined $important{$prod};
+  next if -d "./$dir/$key";
+  print "$key\t$prod\t$desc";
+}
