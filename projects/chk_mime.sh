@@ -65,6 +65,7 @@ while read i; do
     *.snp" - application/octet-stream") ;;
     *.sof" - application/octet-stream") ;;
     *.tdb" - application/octet-stream") ;;
+    *.tif" - application/octet-stream") ;;
     *.xls" - application/octet-stream") ;;
     *.zip" - application/octet-stream") ;;
     *) echo $i; status=1 ;;
