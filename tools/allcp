@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+#
+# Run brd2cp on all extant boards, as needed.
+#
+$EAGLE="$ENV{'HOME'}/Eagle";
+
+open(INPUT, "find $EAGLE/projects/DEC/?xxx -name '*.brd' |") || die "find: $!";
+foreach $brd (<INPUT>) {
+  chop $brd;
+  $eps = $brd; $eps =~ s/[.]brd$/.cp.eps/;
+  $pdf = $brd; $pdf =~ s/[.]brd$/.cp.pdf/;
+  if ((!-e $pdf) || (-M $pdf) > (-M $brd)) {
+    print "$EAGLE/tools/brd2cp '$brd'\n";
+    print "epstopdf '$eps'\n";
+#   $exit = system("$EAGLE/tools/brd2cp '$f'");
+  }
+}

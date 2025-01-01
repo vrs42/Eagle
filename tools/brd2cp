@@ -1,0 +1,246 @@
+#!/usr/bin/perl
+
+# Pass a file name for a board to be processed.
+# EPS is output to draw the component placement diagram.
+
+$prolog = <<'!POSTSCRIPT!';
+%!PS
+
+% Assume the page is 11x17 inches, and the resolution is 72/inch.
+% Reserve a half inch border all around, making a print
+%   area of 10x16.
+
+/inch { 72 mul } def
+/midy { 10 2 div inch } def
+/midx { 16 2 div inch } def
+<< /PageSize [17 inch 11 inch] >> setpagedevice
+
+/Courier findfont 12 scalefont setfont
+
+% Procedure to center text
+
+/ct { % Pass text on stack
+  gsave
+  moveto rotate
+  dup stringwidth pop 2 div dup 0 exch sub 0 translate
+  exch show 0 translate
+  grestore
+} bind def
+
+% Coordinate transfer:
+
+/EU { 254 div 0.072 mul } def
+/inch { 72 mul } def
+
+% Linestyle:
+
+1 setlinecap
+1 setlinejoin
+
+% Drawing functions:
+
+/l {  % draw a line
+   /lw exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   newpath
+   x1 EU y1 EU moveto
+   x2 EU y2 EU lineto
+   lw EU setlinewidth
+   stroke
+   } def
+
+/h {  % draw a hole
+   /d  exch def
+   /y  exch def
+   /x  exch def
+   d 0 gt {
+     newpath
+     x EU y EU d 2 div EU 0 360 arc
+     currentgray dup
+     1 exch sub setgray
+     fill
+     setgray
+     } if
+   } def
+
+/b {  % draw a bar
+   /an exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   /w2 x2 x1 sub 2 div EU def
+   /h2 y2 y1 sub 2 div EU def
+   gsave
+   x1 x2 add 2 div EU y1 y2 add 2 div EU translate
+   an rotate
+   newpath
+   w2     h2     moveto
+   w2 neg h2     lineto
+   w2 neg h2 neg lineto
+   w2     h2 neg lineto
+   closepath
+   fill
+   grestore
+   } def
+
+/c {  % draw a circle
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU 0 360 arc
+   stroke
+   } def
+
+/a {  % draw an arc
+   /lc exch def
+   /ae exch def
+   /as exch def
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   lw rd 2 mul gt {
+     /rd rd lw 2 div add 2 div def
+     /lw rd 2 mul def
+     } if
+   currentlinecap currentlinejoin
+   lc setlinecap 0 setlinejoin
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU as ae arc
+   stroke
+   setlinejoin setlinecap
+   } def
+
+/p {  % draw a pie
+   /d exch def
+   /y exch def
+   /x exch def
+   newpath
+   x EU y EU d 2 div EU 0 360 arc
+   fill
+   } def
+
+/edge { 0.20710678119 mul } def
+
+/o {  % draw an octagon
+   /an exch def
+   /dy exch def
+   /dx exch def
+   /y  exch def
+   /x  exch def
+   gsave
+   x EU y EU translate
+   an dx dy lt { 90 add /dx dy /dy dx def def } if rotate
+   newpath
+      0 dx 2 div sub EU                    0 dy edge  add EU moveto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div add EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div add EU lineto
+      0 dx 2 div add EU                    0 dy edge  add EU lineto
+      0 dx 2 div add EU                    0 dy edge  sub EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div sub EU lineto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div sub EU lineto
+      0 dx 2 div sub EU                    0 dy edge  sub EU lineto
+   closepath
+   fill
+   grestore
+   } def
+
+
+!POSTSCRIPT!
+
+open(INPUT, $ARGV[0]) || die "$ARGV[0]: $!";
+
+$of = $ARGV[0];
+die "usage: $0 <foo>.brd\n" unless $of =~ s/.brd$//;
+$of .= ".cp.eps";
+open(OUTPUT, ">$of") || die "$of: $!";
+print OUTPUT $prolog;
+
+$board = 0;
+
+# Convert input units (mm) to output units (1/72 inches)
+sub mm {
+  local($m) = @_;
+  
+$m *= 7200;
+  $m = $m * 72 / 25.4;	# mm to units
+  return int($m * 1000 + 0.5) / 1000;
+}
+
+$geometry = "";
+while (<INPUT>) {
+  $board = 1 if /<board>/;
+  next unless $board;
+  if (/<element /) {
+    die unless /name="([^"]*)"/;
+    $name = $1;
+    $library = ""; $library = $1 if /library="([^"]*)"/;
+#   $name = "-$name-" if $library eq "diode";
+#   $name = "-$name-" if $library eq "rcl";
+    $foo = 6; # BUGBUG not EU
+    $foo = 5.825; # BUGBUG not EU
+    die $_ unless /\bx="([^"]*)"/; $x = $foo * $1; # BUGBUG not EU
+    die $_ unless /\by="([^"]*)"/; $y = $foo * $1; # BUGBUG not EU
+    die $_ unless /package="([^"]*)"/; $package = $1;
+    $rot = "R0"; $rot = $1 if /rot="([^"]*)"/;
+    $rot =~ s/[MRS]//g;
+die $_ unless $rot =~ /^[.\d]+$/;
+    $rot %= 180;
+    print OUTPUT "($name) $rot $x $y ct\n";
+    # Place the geometry the package memorized above.
+    die $_ unless /\bpackage="([^"]*)"/; $package = $1;
+    next if $geometry{$package} eq "";
+    # Emit the geometry here, with correct position and rotation.
+    die $_ unless /\bx="([^"]*)"/; $x = &mm($1);
+    die $_ unless /\by="([^"]*)"/; $y = &mm($1);
+    $rot = "R0"; $rot = $1 if /\brot="([^"]*)"/;
+    $rot =~ s/[MRS]//g;
+die $_ unless $rot =~ /^[.\d]+$/;
+# Kludge because the diode symbol overprints the name.
+$geometry{"DO35-10"} = $geometry{"0207/10"} if defined $geometry{"0207/10"};
+    print OUTPUT "gsave $x EU $y EU translate $rot rotate\n";
+    print OUTPUT $geometry{$package};
+    print OUTPUT "grestore\n";
+  } elsif (/<circle /) {
+    # Add to the package description if the wire is on
+    # a layer we want to be visible.
+    next unless /layer="20"/ || /layer="21"/;
+    die $_ unless /\bx="([^"]*)"/; $x = &mm($1);
+    die $_ unless /\by="([^"]*)"/; $y = &mm($1);
+    die $_ unless /\bradius="([^"]*)"/; $radius = &mm($1);
+    $geometry{$package} .=  "$x $y $radius 10 c\n";
+  } elsif (/<wire /) {
+    # Add to the package description if the wire is on
+    # a layer we want to be visible.
+    next unless /layer="20"/ || /layer="21"/;
+    # Output geometry from layer 20 (Dimension)
+    die $_ unless /\bx1="([^"]*)"/; $x1 = &mm($1);
+    die $_ unless /\by1="([^"]*)"/; $y1 = &mm($1);
+    die $_ unless /\bx2="([^"]*)"/; $x2 = &mm($1);
+    die $_ unless /\by2="([^"]*)"/; $y2 = &mm($1);
+    $geometry{$package} .=  "$x1 $y1 $x2 $y2 10 l\n";
+  } elsif (/<package /) {
+    die $_ unless /\bname="([^"]*)"/; $package = $1;
+    $geometry{$package} = "";
+  }
+}
+# Epilogue (showpage?)
+#print OUTPUT $geometry if $board;
+
+# Debug output -- table dump
+if (0) {
+  foreach $package (sort keys %geometry) {
+    next if $geometry{$package} eq "";
+    print "$package:\n$geometry{$package}";
+  }
+}
+
+exit ($board == 0);
