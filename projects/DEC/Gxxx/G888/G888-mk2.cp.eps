@@ -1,0 +1,330 @@
+%!PS
+
+% Assume the page is 11x17 inches, and the resolution is 72/inch.
+% Reserve a half inch border all around, making a print
+%   area of 10x16.
+
+/inch { 72 mul } def
+/midy { 10 2 div inch } def
+/midx { 16 2 div inch } def
+<< /PageSize [17 inch 11 inch] >> setpagedevice
+
+/Courier findfont 12 scalefont setfont
+
+% Procedure to center text
+
+/ct { % Pass text on stack
+  gsave
+  moveto rotate
+  dup stringwidth pop 2 div dup 0 exch sub 0 translate
+  exch show 0 translate
+  grestore
+} bind def
+
+% Coordinate transfer:
+
+/EU { 254 div 0.072 mul } def
+/inch { 72 mul } def
+
+% Linestyle:
+
+1 setlinecap
+1 setlinejoin
+
+% Drawing functions:
+
+/l {  % draw a line
+   /lw exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   newpath
+   x1 EU y1 EU moveto
+   x2 EU y2 EU lineto
+   lw EU setlinewidth
+   stroke
+   } def
+
+/h {  % draw a hole
+   /d  exch def
+   /y  exch def
+   /x  exch def
+   d 0 gt {
+     newpath
+     x EU y EU d 2 div EU 0 360 arc
+     currentgray dup
+     1 exch sub setgray
+     fill
+     setgray
+     } if
+   } def
+
+/b {  % draw a bar
+   /an exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   /w2 x2 x1 sub 2 div EU def
+   /h2 y2 y1 sub 2 div EU def
+   gsave
+   x1 x2 add 2 div EU y1 y2 add 2 div EU translate
+   an rotate
+   newpath
+   w2     h2     moveto
+   w2 neg h2     lineto
+   w2 neg h2 neg lineto
+   w2     h2 neg lineto
+   closepath
+   fill
+   grestore
+   } def
+
+/c {  % draw a circle
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU 0 360 arc
+   stroke
+   } def
+
+/a {  % draw an arc
+   /lc exch def
+   /ae exch def
+   /as exch def
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   lw rd 2 mul gt {
+     /rd rd lw 2 div add 2 div def
+     /lw rd 2 mul def
+     } if
+   currentlinecap currentlinejoin
+   lc setlinecap 0 setlinejoin
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU as ae arc
+   stroke
+   setlinejoin setlinecap
+   } def
+
+/p {  % draw a pie
+   /d exch def
+   /y exch def
+   /x exch def
+   newpath
+   x EU y EU d 2 div EU 0 360 arc
+   fill
+   } def
+
+/edge { 0.20710678119 mul } def
+
+/o {  % draw an octagon
+   /an exch def
+   /dy exch def
+   /dx exch def
+   /y  exch def
+   /x  exch def
+   gsave
+   x EU y EU translate
+   an dx dy lt { 90 add /dx dy /dy dx def def } if rotate
+   newpath
+      0 dx 2 div sub EU                    0 dy edge  add EU moveto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div add EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div add EU lineto
+      0 dx 2 div add EU                    0 dy edge  add EU lineto
+      0 dx 2 div add EU                    0 dy edge  sub EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div sub EU lineto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div sub EU lineto
+      0 dx 2 div sub EU                    0 dy edge  sub EU lineto
+   closepath
+   fill
+   grestore
+   } def
+
+
+(R7) 0 153.5033125 81.37525 ct
+(R9) 0 153.5033125 96.17075 ct
+(R2) 0 214.53475 55.483125 ct
+(R3) 0 258.92125 68.4291875 ct
+(R14) 0 303.30775 138.7078125 ct
+(R13) 90 380.984125 133.1595 ct
+(D8) 0 321.802125 125.76175 ct
+(D5) 0 284.813375 110.96625 ct
+(D6) 0 321.802125 110.96625 ct
+(D7) 0 284.813375 125.76175 ct
+(R12) 90 368.0380625 133.1595 ct
+(R10) 0 153.5033125 110.96625 ct
+(C2) 0 334.7481875 38.8381875 ct
+(IC1) 90 334.7481875 73.9775 ct
+gsave 1172880 EU 259200 EU translate 270 rotate
+66881.764 36288 66881.764 -36287.999 10 l
+66881.764 -36287.999 -66881.763 -36287.999 10 l
+-66881.763 -36287.999 -66881.763 36288 10 l
+-66881.763 36288 66881.764 36288 10 l
+grestore
+(R8) 0 290.3616875 88.773 ct
+(R4) 90 290.3616875 66.57975 ct
+(IC3) 90 338.4470625 273.71675 ct
+gsave 1185840 EU 959040 EU translate 90 rotate
+66881.764 36288 66881.764 -36287.999 10 l
+66881.764 -36287.999 -66881.763 -36287.999 10 l
+-66881.763 -36287.999 -66881.763 36288 10 l
+-66881.763 36288 66881.764 36288 10 l
+grestore
+(C9) 0 338.4470625 308.8560625 ct
+(D9) 0 159.051625 125.76175 ct
+(D10) 0 159.051625 140.55725 ct
+(D4) 90 194.1909375 92.471875 ct
+(D3) 90 179.3954375 92.471875 ct
+(R23) 0 277.415625 251.5235 ct
+(R19) 0 171.9976875 214.53475 ct
+gsave 602640 EU 751680 EU translate 180 rotate
+-30063.117 30063.118 30573.354 30063.118 10 l
+-30063.117 -30063.117 30573.354 -30063.117 10 l
+grestore
+(R21) 0 288.51225 208.9864375 ct
+(R24) 0 277.415625 270.017875 ct
+(T5) 0 303.30775 229.33025 ct
+(T4) 0 277.415625 229.33025 ct
+(D13) 0 218.233625 214.53475 ct
+(R17) 0 288.51225 192.3415 ct
+(R15) 0 171.9976875 166.449375 ct
+gsave 602640 EU 583200 EU translate 180 rotate
+-30063.117 30063.118 30573.354 30063.118 10 l
+-30063.117 -30063.117 30573.354 -30063.117 10 l
+grestore
+(R18) 0 318.10325 208.9864375 ct
+(R16) 0 318.10325 192.3415 ct
+(T3) 0 329.199875 229.33025 ct
+(T2) 90 258.92125 166.449375 ct
+(D12) 0 218.233625 166.449375 ct
+(T1) 90 343.995375 160.9010625 ct
+(C3) 0 258.92125 55.483125 ct
+gsave 907200 EU 194400 EU translate 0 rotate
+-7257.599 9331.2 7257.6 9331.2 10 l
+7257.6 -9331.199 -7257.599 -9331.199 10 l
+7257.6 9331.2 7257.6 -9331.199 10 l
+-7257.599 9331.2 -7257.599 -9331.199 10 l
+grestore
+(C6) 0 247.824625 123.9123125 ct
+gsave 868320 EU 434160 EU translate 0 rotate
+-7257.599 9331.2 7257.6 9331.2 10 l
+7257.6 -9331.199 -7257.599 -9331.199 10 l
+7257.6 9331.2 7257.6 -9331.199 10 l
+-7257.599 9331.2 -7257.599 -9331.199 10 l
+grestore
+(C4) 0 214.53475 83.2246875 ct
+gsave 751680 EU 291600 EU translate 180 rotate
+-7257.599 9331.2 7257.6 9331.2 10 l
+7257.6 -9331.199 -7257.599 -9331.199 10 l
+7257.6 9331.2 7257.6 -9331.199 10 l
+-7257.599 9331.2 -7257.599 -9331.199 10 l
+grestore
+(R25) 0 236.728 318.10325 ct
+(R11) 90 355.092 133.1595 ct
+(D11) 0 303.30775 155.35275 ct
+(C5) 90 355.092 110.96625 ct
+gsave 1244160 EU 388800 EU translate 270 rotate
+-7257.599 9331.2 7257.6 9331.2 10 l
+7257.6 -9331.199 -7257.599 -9331.199 10 l
+7257.6 9331.2 7257.6 -9331.199 10 l
+-7257.599 9331.2 -7257.599 -9331.199 10 l
+grestore
+(IC4) 0 170.14825 295.91 ct
+gsave 596160 EU 1036800 EU translate 180 rotate
+181440 59616 -181439.999 59616 10 l
+-181439.999 -59615.999 181440 -59615.999 10 l
+181440 59616 181440 -59615.999 10 l
+-181439.999 59616 -181439.999 20736 10 l
+-181439.999 -59615.999 -181439.999 -20735.999 10 l
+-181439.999 20736 -181439.999 -20735.999 10 l
+grestore
+(C7) 0 236.728 273.71675 ct
+gsave 829440 EU 959040 EU translate 180 rotate
+-7257.599 9331.2 7257.6 9331.2 10 l
+7257.6 -9331.199 -7257.599 -9331.199 10 l
+7257.6 9331.2 7257.6 -9331.199 10 l
+-7257.599 9331.2 -7257.599 -9331.199 10 l
+grestore
+(CON1) 0 51.78425 22.19325 ct
+gsave 181440 EU 77760 EU translate 0 rotate
+-142559.999 -29807.999 194400 -29807.999 10 l
+194400 -29807.999 194400 -81647.999 10 l
+194400 -81647.999 2410560 -81647.999 10 l
+2410560 -81647.999 2410560 1181952 10 l
+2410560 1181952 246240 1181952 10 l
+246240 1181952 246240 1130112 10 l
+246240 1130112 -142559.999 1130112 10 l
+-142559.999 1130112 -142559.999 -29807.999 10 l
+grestore
+(R22) 0 208.9864375 258.92125 ct
+(R20) 0 208.9864375 244.12575 ct
+(D1) 0 421.67175 81.37525 ct
+(D2) 0 475.3054375 81.37525 ct
+(R5) 0 406.87625 66.57975 ct
+(R6) 0 480.85375 66.57975 ct
+(R1) 0 443.865 44.3865 ct
+gsave 1555200 EU 155520 EU translate 180 rotate
+-207359.999 -49247.999 194400 -49247.999 10 l
+194400 -49247.999 194400 54432 10 l
+194400 54432 -207359.999 54432 10 l
+-207359.999 54432 -207359.999 -49247.999 10 l
+114048 25920 106272 25920 10 l
+114048 25920 111456 23328 10 l
+114048 25920 111456 28512 10 l
+108864 20736 108864 31104 10 l
+108864 20736 106272 18144 10 l
+108864 31104 106272 33696 10 l
+111456 23328 111456 28512 10 l
+111456 23328 108864 20736 10 l
+111456 28512 108864 31104 10 l
+106272 25920 106272 33696 10 l
+106272 18144 106272 25920 10 l
+103680 15552 106272 18144 10 l
+106272 33696 103680 36288 10 l
+103680 36288 103680 15552 10 l
+64800 25920 106272 25920 10 l
+grestore
+(C1) 0 266.319 29.591 ct
+(C8) 0 233.029125 192.3415 ct
+(IC2) 90 236.728 103.5685 ct
+gsave 829440 EU 362880 EU translate 270 rotate
+48982.677 38777.953 48982.677 -28573.227 10 l
+48982.677 -28573.227 48982.677 -38777.952 10 l
+-48982.676 -38777.952 -48982.676 -28573.227 10 l
+-48982.676 -28573.227 -48982.676 38777.953 10 l
+48982.677 -28573.227 -48982.676 -28573.227 10 l
+grestore
+(IC5) 90 162.7505 44.3865 ct
+gsave 570240 EU 155520 EU translate 270 rotate
+66881.764 36288 66881.764 -36287.999 10 l
+66881.764 -36287.999 -66881.763 -36287.999 10 l
+-66881.763 -36287.999 -66881.763 36288 10 l
+-66881.763 36288 66881.764 36288 10 l
+grestore
+(R26) 90 129.460625 36.98875 ct
+(R27) 0 125.76175 66.57975 ct
+(C10) 0 214.53475 29.591 ct
+(R28) 0 170.14825 196.040375 ct
+(JP1) 90 687.99075 273.71675 ct
+gsave 2410560 EU 959040 EU translate 270 rotate
+-77759.999 -38879.999 -25919.999 -38879.999 10 l
+-25919.999 -38879.999 -25919.999 12960 10 l
+-25919.999 12960 -77759.999 12960 10 l
+-77759.999 12960 -77759.999 -38879.999 10 l
+-51839.999 142560 -51839.999 25920 10 l
+-25919.999 -38879.999 25920 -38879.999 10 l
+25920 -38879.999 25920 12960 10 l
+25920 12960 -25919.999 12960 10 l
+0 142560 0 25920 10 l
+25920 -38879.999 77760 -38879.999 10 l
+77760 -38879.999 77760 12960 10 l
+77760 12960 25920 12960 10 l
+51840 142560 51840 25920 10 l
+grestore
