@@ -56,7 +56,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 CHIP  "warv"  ASSIGNED TO AN: EPM7128SLC84-15
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -111,7 +111,7 @@ GND                          : 47        : gnd    :                   :         
 data01_low                   : 48        : bidir  : TTL               :         :           : Y              
 data00_low                   : 49        : bidir  : TTL               :         :           : Y              
 md3_low                      : 50        : input  : TTL               :         :           : Y              
-btp3                         : 51        : output : TTL               :         :           : Y              
+red_delay                    : 51        : input  : TTL               :         :           : Y              
 set_done                     : 52        : input  : TTL               :         :           : Y              
 VCCIO                        : 53        : power  :                   : 5.0V    :           :                
 n_t_35x                      : 54        : input  : TTL               :         :           : Y              
@@ -143,5 +143,5 @@ load_y                       : 79        : output : TTL               :         
 non_store_low                : 80        : output : TTL               :         :           : Y              
 ld_del_low                   : 81        : input  : TTL               :         :           : Y              
 GND                          : 82        : gnd    :                   :         :           :                
-red_delay                    : 83        : input  : TTL               :         :           : Y              
+clock                        : 83        : input  : TTL               :         :           : Y              
 del_1_low                    : 84        : input  : TTL               :         :           : Y              

@@ -2,6 +2,14 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Setup 'dk14'
+Slack : -12.000
+TNS   : -12.000
+
+Type  : Setup 'clock'
+Slack : -8.500
+TNS   : -8.500
+
 Type  : Setup 'md10_low'
 Slack : -3.500
 TNS   : -21.000
@@ -45,6 +53,58 @@ TNS   : -21.000
 Type  : Setup 'tp3'
 Slack : -3.500
 TNS   : -21.000
+
+Type  : Setup 'dk01'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk02'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk05'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk06'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk07'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk08'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk09'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk10'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk11'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk12'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk13'
+Slack : -3.500
+TNS   : -3.500
+
+Type  : Setup 'dk03'
+Slack : 12.500
+TNS   : 0.000
+
+Type  : Hold 'dk03'
+Slack : -20.000
+TNS   : -20.000
 
 Type  : Hold 'md10_low'
 Slack : -4.000
@@ -90,25 +150,57 @@ Type  : Hold 'tp3'
 Slack : -4.000
 TNS   : -24.000
 
-Type  : Recovery 'del_1_low'
-Slack : -32.000
-TNS   : -32.000
+Type  : Hold 'dk01'
+Slack : -4.000
+TNS   : -4.000
 
-Type  : Recovery 'grn_delay'
-Slack : -32.000
-TNS   : -32.000
+Type  : Hold 'dk02'
+Slack : -4.000
+TNS   : -4.000
 
-Type  : Recovery 'ld_del_low'
-Slack : -32.000
-TNS   : -32.000
+Type  : Hold 'dk05'
+Slack : -4.000
+TNS   : -4.000
 
-Type  : Recovery 'red_delay'
-Slack : -32.000
-TNS   : -32.000
+Type  : Hold 'dk06'
+Slack : -4.000
+TNS   : -4.000
 
-Type  : Recovery 'set_done'
-Slack : -32.000
-TNS   : -32.000
+Type  : Hold 'dk07'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'dk08'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'dk09'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'dk10'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'dk11'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'dk12'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'dk13'
+Slack : -4.000
+TNS   : -4.000
+
+Type  : Hold 'clock'
+Slack : 1.000
+TNS   : 0.000
+
+Type  : Hold 'dk14'
+Slack : 5.000
+TNS   : 0.000
 
 Type  : Recovery 'md10_low'
 Slack : -23.500
@@ -154,67 +246,71 @@ Type  : Recovery 'tp3'
 Slack : -23.500
 TNS   : -141.000
 
+Type  : Recovery 'clock'
+Slack : -14.500
+TNS   : -14.500
+
+Type  : Recovery 'dk01'
+Slack : -9.500
+TNS   : -9.500
+
+Type  : Recovery 'dk02'
+Slack : -9.500
+TNS   : -9.500
+
+Type  : Removal 'dk01'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Removal 'dk02'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Removal 'clock'
+Slack : 5.000
+TNS   : 0.000
+
 Type  : Removal 'md10_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'md11_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'md3_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'md4_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'md5_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'md6_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'md7_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'md8_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'md9_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'pause_low'
-Slack : 8.000
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Removal 'tp3'
-Slack : 8.000
-TNS   : 0.000
-
-Type  : Removal 'del_1_low'
-Slack : 16.000
-TNS   : 0.000
-
-Type  : Removal 'grn_delay'
-Slack : 16.000
-TNS   : 0.000
-
-Type  : Removal 'ld_del_low'
-Slack : 16.000
-TNS   : 0.000
-
-Type  : Removal 'red_delay'
-Slack : 16.000
-TNS   : 0.000
-
-Type  : Removal 'set_done'
 Slack : 16.000
 TNS   : 0.000
 
@@ -262,24 +358,60 @@ Type  : Minimum Pulse Width 'tp3'
 Slack : -5.500
 TNS   : -66.000
 
-Type  : Minimum Pulse Width 'del_1_low'
+Type  : Minimum Pulse Width 'dk03'
+Slack : -5.500
+TNS   : -22.000
+
+Type  : Minimum Pulse Width 'dk01'
 Slack : -5.500
 TNS   : -11.000
 
-Type  : Minimum Pulse Width 'grn_delay'
+Type  : Minimum Pulse Width 'dk02'
 Slack : -5.500
 TNS   : -11.000
 
-Type  : Minimum Pulse Width 'ld_del_low'
+Type  : Minimum Pulse Width 'dk05'
 Slack : -5.500
 TNS   : -11.000
 
-Type  : Minimum Pulse Width 'red_delay'
+Type  : Minimum Pulse Width 'dk06'
 Slack : -5.500
 TNS   : -11.000
 
-Type  : Minimum Pulse Width 'set_done'
+Type  : Minimum Pulse Width 'dk07'
 Slack : -5.500
 TNS   : -11.000
+
+Type  : Minimum Pulse Width 'dk08'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'dk09'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'dk10'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'dk11'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'dk12'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'dk13'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'dk14'
+Slack : -5.500
+TNS   : -11.000
+
+Type  : Minimum Pulse Width 'clock'
+Slack : -4.500
+TNS   : -9.000
 
 ------------------------------------------------------------

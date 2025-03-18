@@ -29,7 +29,8 @@ module warv
   d11_l,
 /* Output s */
   b_dixy_low,
-  btp3,
+//  btp3,
+  clock,
   c0_low,
   c1_low,
   chan_low,
@@ -96,7 +97,8 @@ input d10_l;
 input d11_l;
 
 output b_dixy_low;
-output btp3;
+//output btp3;
+input clock;
 output c0_low;
 output c1_low;
 output chan_low;
@@ -133,6 +135,8 @@ output di08;
 output di09;
 output di10;
 output di11;
+
+wire btp3;
 
 wire b_dicd_low;
 wire b_load_en_low;
@@ -234,8 +238,12 @@ assign y_ac_low = 1'b1;
 //assign z_pulse = 1'b1;
 
 /* e3: sn7402 */
-assign dly_done_low = !(red_delay || grn_delay);
-assign n_t_26x = !(clear || set_done);
+//BUGBUG: dly_done_low should reflect whether a color change is in progress.
+//assign dly_done_low = !(red_delay || grn_delay);
+assign dly_done_low = 1'b1; //!(red_delay || grn_delay);
+//BUGBUG: set_done tracks the erase and should be used here.
+//assign n_t_26x = !(clear || set_done);
+assign n_t_26x = !(clear);
 //assign n_t_34x = !(grn_delay || red_delay);
 assign clear_done_low = !(n_t_35x || erase);
 
@@ -366,7 +374,9 @@ assign load_x = !(!dilx_low && btp3);
 assign load_y = !(btp3 && !dily_low);
 
 /* e23: sn74h21 */
-assign cl_done_low = !clear && b_load_en_low && b_dixy_low && b_dicd_low;
+//BUGBUG: Possibly asserting cl_done_low because !clear??
+//assign cl_done_low = !clear && b_load_en_low && b_dixy_low && b_dicd_low;
+assign cl_done_low = 1'b1;
 // n_t_3x should generate a rising edge whenever something interesting finishes.
 // del_1_low says says the intensify interval has expired.
 // !set_done implies no erase interval in progress.
@@ -426,7 +436,6 @@ assign di07 = !(load_en_low || data07_low);
 /* e33: sn74193 */
 // We cheat here, knowing X_INC and Y_INC cannot be asserted, 
 // which also means carry and borrow won't happen.
-
 always @(di02, di03, load_y)
   if (!load_y) begin
     y03 <= di03;
@@ -512,7 +521,7 @@ always @(di08, di09, di10, di11, load_x)
            || x02 && !x_ac_low); */
 
 /* e46: sn7430 */
-assign iotl = !(md8_low && md3_low && md4_low && !md5_low && !pause_low && md7_low && !md6_low);
+assign iotl = !(md8_low && md7_low && !md6_low && !md5_low && md4_low && md3_low && !pause_low);
 
 /* e47: sn7474 */
 always @(iot1l, n_t_208x)
@@ -555,6 +564,86 @@ assign n_t_219x = !initialize && iot2l && iot4l;
 /* r168: r_us_ */
 assign rd_rqst = 1'b1;
 
+/* DK8E Registers */
+wire iotck, clei, cldi, clsk, dkis9;
+reg dk8ie, dk8flg;
+reg dk01, dk02, dk03, dk04, dk05, dk06, dk07, dk08, dk09, dk10, dk11, dk12, dk13, dk14, dk15;
+/* DK8E IOT Recognition */
+assign iotck = md3_low && md4_low && !md5_low && md6_low && !md7_low && !md8_low && !pause_low;
+assign clei = iotck && md9_low && md10_low && !md11_low;
+assign cldi = iotck && md9_low && !md10_low && md11_low;
+assign clsk = iotck && md9_low && !md10_low && !md11_low;
+/* DK8E Interrupt Enable */
+always @(clei, cldi, initialize)
+  if (initialize)
+    dk8ie <= 1'b0;
+  else if (!clei)
+    dk8ie <= 1'b1;
+  else if (cldi)
+    dk8ie <= 1'b0;
+/* DK8E Clocking */
+/* Input clock at 1,843,200 Hz */
+/* Divide by 18,432 = 2048*9 */
+assign dkis9 = clock && dk03;
+always @(posedge clock, posedge dkis9)
+  if (dkis9)
+    dk01 <= 1'b0;
+  else if (clock)
+    dk01 <= ~ dk01;
+always @(posedge dk01, posedge dkis9)
+  if (dkis9)
+    dk02 <= 1'b0;
+  else if (dk01)
+    dk02 <= ~ dk02;
+always @(posedge dk02, posedge dkis9)
+  if (dkis9)
+    dk03 <= 1'b0;
+  else if (dk02)
+    dk03 <= ~ dk03;
+always @(posedge dk03, posedge dkis9)
+  if (dk03)
+    dk04 <= ~ dk04;
+always @(posedge dk04)
+  if (dk04)
+    dk05 <= ~ dk05;
+always @(posedge dk05)
+  if (dk05)
+    dk06 <= ~ dk06;
+always @(posedge dk06)
+  if (dk06)
+    dk07 <= ~ dk07;
+always @(posedge dk07)
+  if (dk07)
+    dk08 <= ~ dk08;
+always @(posedge dk08)
+  if (dk08)
+    dk09 <= ~ dk09;
+always @(posedge dk09)
+  if (dk09)
+    dk10 <= ~ dk10;
+always @(posedge dk10)
+  if (dk10)
+    dk11 <= ~ dk11;
+always @(posedge dk11)
+  if (dk11)
+    dk12 <= ~ dk12;
+always @(posedge dk12)
+  if (dk12)
+    dk13 <= ~ dk13;
+always @(posedge dk13)
+  if (dk13)
+    dk14 <= ~ dk14;
+always @(posedge dk14)
+  if (dk14)
+    dk15 <= ~ dk15;
+always @(clsk, dk15)
+  if (clsk)
+    dk8flg <= 1'b0;
+  else if (dk15)
+    dk8flg <= 1'b1;
+/* TODO: Add OC terms below for internal_io_low, skip_low and interrupt_low. */
+/* No need to assert c0_low or c1_low. */
+	 
 /* Open collector 1'wire-or's */
 assign c0_low = !(n_t_4x || !iot4l)? 1'bz : 1'b0;
 assign c1_low = !(!dire_low || (!iot4l))? 1'bz : 1'b0;
@@ -574,14 +663,13 @@ assign data09_low = !((color && !dire_low) || (d09 && !iot4l) || (y09 && !y_ac_l
 assign data10_low = !((d10 && !iot4l) || (chan && !dire_low) || (y11 && !y_ac_low || x11 && !x_ac_low))? 1'bz : 1'b0;
 assign data11_low = !((d11 && !iot4l) || (!dire_low && int_en) || (y10 && !y_ac_low || x10 && !x_ac_low))? 1'bz : 1'b0;
 assign erase_low = !erase? 1'bz : 1'b0;
-assign internal_io_low = !(iot || !iotl)? 1'bz : 1'b0;
-assign interrupt_low = !(done && int_en || device_flag && int_enable)? 1'bz : 1'b0;
+assign internal_io_low = !(iot || !iotl || iotck)? 1'bz : 1'b0;
+assign interrupt_low = !(done && int_en || device_flag && int_enable || dk8ie && dk8flg)? 1'bz : 1'b0;
 assign n_t_27x = (!store && color_low)? 1'bz : 1'b0;
 //assign n_t_43x = !color_low? 1'bz : 1'b0;
-// BUGBUG: Using non_store_low as debug output.
-//assign non_store_low = cl_done_low;
-assign non_store_low = del_1_low && (!set_done) && dly_done_low && ld_del_low;
-assign skip_low = !((!disd_low && done) || (!iot3l))? 1'bz : 1'b0;
+assign non_store_low = store;
+//assign skip_low = !((!disd_low && done) || (!iot3l))? 1'bz : 1'b0;
+assign skip_low = !((!disd_low && done) || (!iot3l) || (clsk && dk8flg))? 1'bz : 1'b0;
 assign write_thru_low = !write_thru? 1'bz : 1'b0;
 
 endmodule
