@@ -1,38 +1,45 @@
-   1               /MI8-EG (Edu Sys High)
-   2               /INSTALLED DIODES REPRESENT BITS WITH VALUE '0'.
-   3               *7737
-   4 007737  6007  6007
-   5 007740  7604  7604
-   6 007741  7510  7510
-   7 007742  3343  3343
-   8 007743  6766  6766
-   9 007744  6771  6771
-  10 007745  5344  5344
-  11 007746  1376  1376
-  12 007747  5343  5343
-  13 007750  7600  7600
-  14 007751  6603  6603
-  15 007752  6622  6622
-  16 007753  5352  5352
-  17 007754  5752  5752
-  18 007755  7577  7577
-  19 007756  6014  6014
-  20 007757  6011  6011
-  21 007760  5357  5357
-  22 007761  6016  6016
-  23 007762  7106  7106
-  24 007763  7006  7006
-  25 007764  7510  7510
-  26 007765  5374  5374
-  27 007766  7006  7006
-  28 007767  6011  6011
-  29 007770  5367  5367
-  30 007771  6016  6016
-  31 007772  7420  7420
-  32 007773  3776  3776
-  33 007774  3376  3376
-  34 007775  5357  5357
-  35 007776  0220  0220
-  36               
-  37               START=7737
-  38               $
+   1               /MI8-EF (Edu Sys Low)
+   2               CAF=6007        / CLEAR ALL FLAGS
+   3               DTLA=6766       / LOAD REGISTER A
+   4               DTSF=6771       / SKIP ON FLAGS
+   5               DMAR=6603       / START READ
+   6               DFSC=6622       / SKIP IF DONE
+   7                       FIELD   0
+   8                       *7737
+   9 007737  6007  START,  CAF                     / INITIALIZE
+  10 007740  7604          LAS                     / READ THE SWITCHES
+  11 007741  7510          SPA                     / BIT 0 SET?
+  12 007742  3343          DCA .+1                 / YES, USE IT INSTEAD
+  13 007743  6766  L07743, DTLA                    / MOVE DECTAPE
+  14 007744  6771          DTSF                    / WAIT FOR IT
+  15 007745  5344          JMP .-1
+  16               / THE READ COMMAND WILL REPLACE THIS CODE
+  17               / THE SECOND TIME THROUGH.
+  18 007746  1376          TAD P07776              / GET READ COMMAND
+  19 007747  5343          JMP L07743              / GO DO IT
+  20               / DF32 BOOT
+  21 007750  7600          7600                    / CLA, ALSO WORD COUNT!
+  22 007751  6603          DMAR                    / START A READ, ALSO CA!
+  23 007752  6622          DFSC                    / WAIT FOR IT
+  24 007753  5352          JMP .-1
+  25 007754  5752          JMP I .-2               / JUMP INTO THE NEW CODE
+  26 007755  7577          7577                    / UNUSED
+  27               / THIS REST IS JUST THE HIGH SPEED RIM LOADER.
+  28 007756  6014  L07756, RFC                     / FETCH FROM LSR
+  29 007757  6011  L07757, RSF                     / SKIP IF READY
+  30 007760  5357          JMP .-1
+  31 007761  6016  D07761, RRB RFC                 / GET HIGH 6 BITS
+  32 007762  7106          CLL RTL                 / SHIFT UP
+  33 007763  7006          RTL 
+  34 007764  7510          SPA                     / CHECK FOR LEADER
+  35 007765  5374          JMP L07774              / IGNORE LEADER
+  36 007766  7006          RTL                     / FINISH SHIFT UP
+  37 007767  6011  L07767, RSF                     / WAIT FOR LOW 6 BITS
+  38 007770  5367          JMP .-1
+  39 007771  6016  D07771, RRB RFC                 / OR THEM IN
+  40 007772  7420          SNL                     / LOCATION OR DATA?
+  41 007773  3776          DCA I P07776            / DATA
+  42 007774  3376  L07774, DCA P07776              / LOCATION
+  43 007775  5357          JMP L07757              / GO LOOK FOR MORE
+  44 007776  0220  P07776, 220                     / SAVED LOCATION (OR 0)
+  45               $
