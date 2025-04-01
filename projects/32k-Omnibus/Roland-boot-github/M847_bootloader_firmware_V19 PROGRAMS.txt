@@ -39,4 +39,4 @@ The next can only be loaded by toggling the SW switch or pushbutton on the PCB o
 
 40 Wipe core field 0 (Just let it run for a few seconds)
 
-Program list for software version V1.8
+Program list for software version V1.9
