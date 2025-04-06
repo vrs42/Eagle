@@ -15,6 +15,7 @@ svn propget svn:mime-type -R . | (
 status=0
 while read i; do
   case "$i" in 
+    *.git/*) ;;
     *.ammdb" - application/octet-stream") ;;
     *.bmp" - image/bmp")  ;;
     *.gif" - image/gif")  ;;
