@@ -19854,7 +19854,7 @@ Mors, distributor Buerklin, 11G702</description>
 <approved hash="104,1,299.72,144.78,E7,VDD,VCC,,,"/>
 <approved hash="104,1,147.32,55.88,E8P,V+,+15V,,,"/>
 <approved hash="104,1,147.32,40.64,E8P,V-,-15V,,,"/>
-<approved hash="202,1,218.44,40.64,E4A,R,,,,"/>
+<approved hash="202,1,218.44,40.64,E4,R,,,,"/>
 <approved hash="202,1,162.56,167.64,E15,R,,,,"/>
 <approved hash="206,1,198.12,142.24,CLOCK,,,,,"/>
 <approved hash="206,1,198.12,142.24,CLOCK,,,,,"/>
