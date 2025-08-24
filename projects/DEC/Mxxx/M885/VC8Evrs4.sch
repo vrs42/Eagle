@@ -12107,6 +12107,21 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
 <text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
 </symbol>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DIODE-" prefix="D" uservalue="yes">
@@ -12668,6 +12683,24 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BAT42" prefix="D">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+ barrier diode</description>
+<gates>
+<gate name="1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO35-10">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17063,7 +17096,7 @@ Mors, distributor Buerklin, 11G702</description>
 <part name="R18" library="rcl" deviceset="R-US_" device="0207/15" value="39.2K 1%"/>
 <part name="SUPPLY25" library="supply2" deviceset="VCC" device=""/>
 <part name="D1" library="diode" deviceset="DIODE-" device="DO35-10" value="1N4154"/>
-<part name="C40" library="dec-con" deviceset="C-US" device="" value="220pF"/>
+<part name="C40" library="dec-con" deviceset="C-US" device="" value="470pF"/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="C33" library="rcl" deviceset="C-US" device="102-043X133" value=".033uF"/>
 <part name="SUPPLY27" library="supply2" deviceset="VCC" device=""/>
@@ -17214,6 +17247,7 @@ Mors, distributor Buerklin, 11G702</description>
 <part name="SUPPLY64" library="supply2" deviceset="+5V" device=""/>
 <part name="E4" library="74xx-us" deviceset="74*122" device="N" technology="LS"/>
 <part name="E15" library="74xx-us" deviceset="74*122" device="N" technology="LS"/>
+<part name="D3" library="diode" deviceset="BAT42" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17223,7 +17257,7 @@ Mors, distributor Buerklin, 11G702</description>
 <text x="12.7" y="40.64" size="1.778" layer="94">Debounce</text>
 <text x="12.7" y="66.04" size="1.778" layer="94">Pull-up/Pull-down</text>
 <text x="393.7" y="7.62" size="2.54" layer="94">1</text>
-<text x="53.34" y="76.2" size="1.016" layer="91">Went to wrong side of R79</text>
+<text x="63.5" y="76.2" size="1.016" layer="91">Went to wrong side of R79</text>
 <text x="248.92" y="203.2" size="1.016" layer="91">Fixed VREF</text>
 <text x="248.92" y="139.7" size="1.016" layer="91">Fixed VREF</text>
 <text x="355.6" y="48.26" size="1.016" layer="91">Moved up to avoid ledge.</text>
@@ -17377,11 +17411,11 @@ Mors, distributor Buerklin, 11G702</description>
 <instance part="R81" gate="G$1" x="81.28" y="101.6"/>
 <instance part="R82" gate="G$1" x="114.3" y="104.14" rot="R90"/>
 <instance part="R83" gate="G$1" x="104.14" y="93.98"/>
-<instance part="R84" gate="G$1" x="91.44" y="71.12" rot="R90"/>
-<instance part="R85" gate="G$1" x="114.3" y="68.58" rot="R90"/>
+<instance part="R84" gate="G$1" x="91.44" y="63.5" rot="R90"/>
+<instance part="R85" gate="G$1" x="114.3" y="63.5" rot="R90"/>
 <instance part="R86" gate="G$1" x="119.38" y="81.28" rot="R90"/>
 <instance part="R87" gate="G$1" x="127" y="86.36"/>
-<instance part="C63" gate="G$1" x="78.74" y="76.2" rot="MR270"/>
+<instance part="C63" gate="G$1" x="86.36" y="73.66" rot="MR0"/>
 <instance part="C64" gate="G$1" x="119.38" y="99.06" rot="MR270"/>
 <instance part="C65" gate="G$1" x="124.46" y="68.58"/>
 <instance part="Q13" gate="G$1" x="111.76" y="93.98"/>
@@ -17473,7 +17507,7 @@ Mors, distributor Buerklin, 11G702</description>
 <instance part="SUPPLY53" gate="G$1" x="7.62" y="119.38" rot="MR0"/>
 <instance part="SUPPLY56" gate="G$1" x="302.26" y="213.36"/>
 <instance part="SUPPLY7" gate="G$1" x="302.26" y="149.86"/>
-<instance part="SUPPLY44" gate="G$1" x="99.06" y="58.42"/>
+<instance part="SUPPLY44" gate="G$1" x="99.06" y="53.34"/>
 <instance part="SUPPLY57" gate="G$1" x="160.02" y="187.96"/>
 <instance part="SUPPLY58" gate="G$1" x="215.9" y="60.96"/>
 <instance part="R1" gate="G$1" x="134.62" y="203.2" rot="R90"/>
@@ -17492,6 +17526,7 @@ Mors, distributor Buerklin, 11G702</description>
 <instance part="SUPPLY64" gate="+5V" x="231.14" y="210.82"/>
 <instance part="E4" gate="A" x="231.14" y="45.72"/>
 <instance part="E15" gate="A" x="175.26" y="172.72"/>
+<instance part="D3" gate="1" x="76.2" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -18478,18 +18513,19 @@ Mors, distributor Buerklin, 11G702</description>
 <wire x1="58.42" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
 <label x="60.96" y="86.36" size="1.778" layer="95"/>
 <pinref part="S1" gate="1" pin="P"/>
+<pinref part="D3" gate="1" pin="A"/>
+<wire x1="73.66" y1="81.28" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-15V" class="1">
 <segment>
 <pinref part="R84" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="63.5" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R85" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="63.5" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY44" gate="G$1" pin="-15V"/>
-<wire x1="99.06" y1="60.96" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
-<junction x="99.06" y="63.5"/>
-<wire x1="99.06" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="55.88" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
+<junction x="99.06" y="58.42"/>
+<wire x1="99.06" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY23" gate="G$1" pin="-15V"/>
@@ -19202,8 +19238,10 @@ Mors, distributor Buerklin, 11G702</description>
 <wire x1="86.36" y1="86.36" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
 <junction x="86.36" y="86.36"/>
 <pinref part="C63" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="81.28" x2="76.2" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="D3" gate="1" pin="C"/>
+<wire x1="86.36" y1="81.28" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
+<junction x="86.36" y="81.28"/>
 </segment>
 </net>
 <net name="N$156" class="0">
@@ -19211,9 +19249,10 @@ Mors, distributor Buerklin, 11G702</description>
 <pinref part="Q14" gate="G$1" pin="C"/>
 <pinref part="R85" gate="G$1" pin="2"/>
 <pinref part="C65" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="73.66" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="73.66" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
-<junction x="114.3" y="73.66"/>
+<wire x1="114.3" y1="68.58" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="71.12" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<junction x="114.3" y="71.12"/>
 </segment>
 </net>
 <net name="N$157" class="0">
@@ -19775,7 +19814,7 @@ Mors, distributor Buerklin, 11G702</description>
 <pinref part="Q31" gate="G$1" pin="C"/>
 <wire x1="91.44" y1="78.74" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R84" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="78.74" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="78.74" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
 <junction x="91.44" y="78.74"/>
 <pinref part="Q14" gate="G$1" pin="B"/>
 <wire x1="109.22" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
@@ -19783,8 +19822,8 @@ Mors, distributor Buerklin, 11G702</description>
 <wire x1="99.06" y1="93.98" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
 <junction x="99.06" y="93.98"/>
 <junction x="99.06" y="78.74"/>
-<wire x1="91.44" y1="76.2" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
-<junction x="91.44" y="76.2"/>
+<wire x1="91.44" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<junction x="91.44" y="68.58"/>
 </segment>
 </net>
 <net name="CLOCK" class="0">
