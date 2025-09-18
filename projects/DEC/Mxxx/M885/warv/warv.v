@@ -577,7 +577,7 @@ assign clsk = iotck && md9_low && !md10_low && !md11_low;
 always @(clei, cldi, initialize)
   if (initialize)
     dk8ie <= 1'b0;
-  else if (!clei)
+  else if (clei)
     dk8ie <= 1'b1;
   else if (cldi)
     dk8ie <= 1'b0;

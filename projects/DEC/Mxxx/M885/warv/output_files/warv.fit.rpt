@@ -1,5 +1,5 @@
 Fitter report for warv
-Fri Sep 22 17:59:01 2023
+Thu Sep 18 07:37:08 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -26,11 +26,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  18. Other Routing Usage Summary
  19. LAB External Interconnect
  20. LAB Macrocells
- 21. Parallel Expander
- 22. Shareable Expander
- 23. Logic Cell Interconnection
- 24. Fitter Device Options
- 25. Fitter Messages
+ 21. Shareable Expander
+ 22. Logic Cell Interconnection
+ 23. Fitter Device Options
+ 24. Fitter Messages
 
 
 
@@ -56,14 +55,14 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Fitter Summary                                                              ;
 +---------------------------+-------------------------------------------------+
-; Fitter Status             ; Successful - Fri Sep 22 17:59:01 2023           ;
+; Fitter Status             ; Successful - Thu Sep 18 07:37:08 2025           ;
 ; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name             ; warv                                            ;
 ; Top-level Entity Name     ; warv                                            ;
 ; Family                    ; MAX7000S                                        ;
 ; Device                    ; EPM7128SLC84-15                                 ;
 ; Timing Models             ; Final                                           ;
-; Total macrocells          ; 59 / 128 ( 46 % )                               ;
+; Total macrocells          ; 54 / 128 ( 42 % )                               ;
 ; Total pins                ; 68 / 68 ( 100 % )                               ;
 +---------------------------+-------------------------------------------------+
 
@@ -110,21 +109,21 @@ The pin-out file can be found in /home/vrs/Eagle/projects/DEC/Mxxx/M885/warv/out
 +------------------------------+-------------------+
 ; Resource                     ; Usage             ;
 +------------------------------+-------------------+
-; Logic cells                  ; 59 / 128 ( 46 % ) ;
+; Logic cells                  ; 54 / 128 ( 42 % ) ;
 ; Registers                    ; 20 / 128 ( 16 % ) ;
-; Number of pterms used        ; 128               ;
+; Number of pterms used        ; 106               ;
 ; I/O pins                     ; 68 / 68 ( 100 % ) ;
 ;     -- Clock pins            ; 2 / 2 ( 100 % )   ;
 ;     -- Dedicated input pins  ; 2 / 2 ( 100 % )   ;
 ;                              ;                   ;
 ; Global signals               ; 1                 ;
-; Shareable expanders          ; 7 / 128 ( 5 % )   ;
-; Parallel expanders           ; 5 / 120 ( 4 % )   ;
-; Cells using turbo bit        ; 59 / 128 ( 46 % ) ;
-; Maximum fan-out              ; 38                ;
-; Highest non-global fan-out   ; 38                ;
-; Total fan-out                ; 509               ;
-; Average fan-out              ; 3.80              ;
+; Shareable expanders          ; 12 / 128 ( 9 % )  ;
+; Parallel expanders           ; 0 / 120 ( 0 % )   ;
+; Cells using turbo bit        ; 54 / 128 ( 42 % ) ;
+; Maximum fan-out              ; 40                ;
+; Highest non-global fan-out   ; 40                ;
+; Total fan-out                ; 529               ;
+; Average fan-out              ; 3.95              ;
 +------------------------------+-------------------+
 
 
@@ -146,17 +145,17 @@ The pin-out file can be found in /home/vrs/Eagle/projects/DEC/Mxxx/M885/warv/out
 ; grn_delay  ; 1     ; --       ; --  ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; initialize ; 25    ; --       ; 3   ; 5                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; ld_del_low ; 81    ; --       ; 8   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md10_low   ; 20    ; --       ; 2   ; 37                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md11_low   ; 18    ; --       ; 2   ; 37                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md3_low    ; 50    ; --       ; 5   ; 38                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md4_low    ; 44    ; --       ; 5   ; 38                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md5_low    ; 41    ; --       ; 4   ; 38                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md6_low    ; 40    ; --       ; 4   ; 38                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md7_low    ; 39    ; --       ; 4   ; 38                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md8_low    ; 22    ; --       ; 2   ; 38                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; md9_low    ; 21    ; --       ; 2   ; 37                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md10_low   ; 20    ; --       ; 2   ; 39                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md11_low   ; 18    ; --       ; 2   ; 39                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md3_low    ; 50    ; --       ; 5   ; 40                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md4_low    ; 44    ; --       ; 5   ; 40                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md5_low    ; 41    ; --       ; 4   ; 40                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md6_low    ; 40    ; --       ; 4   ; 40                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md7_low    ; 39    ; --       ; 4   ; 40                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md8_low    ; 22    ; --       ; 2   ; 40                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; md9_low    ; 21    ; --       ; 2   ; 39                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; n_t_35x    ; 54    ; --       ; 6   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; pause_low  ; 33    ; --       ; 4   ; 38                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; pause_low  ; 33    ; --       ; 4   ; 40                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; red_delay  ; 51    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; set_done   ; 52    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
 ; tp3        ; 29    ; --       ; 3   ; 11                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
@@ -347,7 +346,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+------------+------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+------------+------+---------------------+--------------+
-; |warv                      ; 59         ; 68   ; |warv               ; work         ;
+; |warv                      ; 54         ; 68   ; |warv               ; work         ;
 +----------------------------+------------+------+---------------------+--------------+
 
 
@@ -356,34 +355,34 @@ Note: User assignments will override these defaults. The user specified values a
 +------------+----------+---------+--------------+--------+----------------------+------------------+
 ; Name       ; Location ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
 +------------+----------+---------+--------------+--------+----------------------+------------------+
-; clear~19   ; SEXP113  ; 2       ; Async. clear ; no     ; --                   ; --               ;
-; clear~5    ; SEXP81   ; 4       ; Preset       ; no     ; --                   ; --               ;
+; clear~11   ; SEXP120  ; 2       ; Async. clear ; no     ; --                   ; --               ;
+; clear~5    ; SEXP86   ; 4       ; Preset       ; no     ; --                   ; --               ;
 ; clock      ; PIN_83   ; 3       ; Clock        ; yes    ; On                   ; --               ;
 ; clock      ; PIN_83   ; 3       ; Async. clear ; no     ; --                   ; --               ;
-; dk01       ; LC1      ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk02       ; LC11     ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk03       ; LC12     ; 5       ; Async. clear ; no     ; --                   ; --               ;
-; dk04~8sexp ; SEXP3    ; 2       ; Clock        ; no     ; --                   ; --               ;
-; dk05       ; LC10     ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk06       ; LC8      ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk07       ; LC2      ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk08       ; LC60     ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk09       ; LC58     ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk10       ; LC55     ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk11       ; LC52     ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk12       ; LC51     ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk13       ; LC50     ; 1       ; Clock        ; no     ; --                   ; --               ;
-; dk14       ; LC49     ; 1       ; Clock        ; no     ; --                   ; --               ;
-; md10_low   ; PIN_20   ; 37      ; Clock        ; no     ; --                   ; --               ;
-; md11_low   ; PIN_18   ; 37      ; Clock        ; no     ; --                   ; --               ;
-; md3_low    ; PIN_50   ; 38      ; Clock        ; no     ; --                   ; --               ;
-; md4_low    ; PIN_44   ; 38      ; Clock        ; no     ; --                   ; --               ;
-; md5_low    ; PIN_41   ; 38      ; Clock        ; no     ; --                   ; --               ;
-; md6_low    ; PIN_40   ; 38      ; Clock        ; no     ; --                   ; --               ;
-; md7_low    ; PIN_39   ; 38      ; Clock        ; no     ; --                   ; --               ;
-; md8_low    ; PIN_22   ; 38      ; Clock        ; no     ; --                   ; --               ;
-; md9_low    ; PIN_21   ; 37      ; Clock        ; no     ; --                   ; --               ;
-; pause_low  ; PIN_33   ; 38      ; Clock        ; no     ; --                   ; --               ;
+; dk01       ; LC116    ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk02       ; LC124    ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk03       ; LC128    ; 5       ; Async. clear ; no     ; --                   ; --               ;
+; dk04~8sexp ; SEXP113  ; 2       ; Clock        ; no     ; --                   ; --               ;
+; dk05       ; LC122    ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk06       ; LC121    ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk07       ; LC119    ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk08       ; LC10     ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk09       ; LC8      ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk10       ; LC7      ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk11       ; LC5      ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk12       ; LC2      ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk13       ; LC1      ; 1       ; Clock        ; no     ; --                   ; --               ;
+; dk14       ; LC11     ; 1       ; Clock        ; no     ; --                   ; --               ;
+; md10_low   ; PIN_20   ; 39      ; Clock        ; no     ; --                   ; --               ;
+; md11_low   ; PIN_18   ; 39      ; Clock        ; no     ; --                   ; --               ;
+; md3_low    ; PIN_50   ; 40      ; Clock        ; no     ; --                   ; --               ;
+; md4_low    ; PIN_44   ; 40      ; Clock        ; no     ; --                   ; --               ;
+; md5_low    ; PIN_41   ; 40      ; Clock        ; no     ; --                   ; --               ;
+; md6_low    ; PIN_40   ; 40      ; Clock        ; no     ; --                   ; --               ;
+; md7_low    ; PIN_39   ; 40      ; Clock        ; no     ; --                   ; --               ;
+; md8_low    ; PIN_22   ; 40      ; Clock        ; no     ; --                   ; --               ;
+; md9_low    ; PIN_21   ; 39      ; Clock        ; no     ; --                   ; --               ;
+; pause_low  ; PIN_33   ; 40      ; Clock        ; no     ; --                   ; --               ;
 ; tp3        ; PIN_29   ; 11      ; Clock        ; no     ; --                   ; --               ;
 +------------+----------+---------+--------------+--------+----------------------+------------------+
 
@@ -402,24 +401,25 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------+-------------+
 ; Name              ; Fan-Out     ;
 +-------------------+-------------+
-; pause_low         ; 38          ;
-; md8_low           ; 38          ;
-; md7_low           ; 38          ;
-; md6_low           ; 38          ;
-; md5_low           ; 38          ;
-; md4_low           ; 38          ;
-; md3_low           ; 38          ;
-; md11_low          ; 37          ;
-; md10_low          ; 37          ;
-; md9_low           ; 37          ;
+; pause_low         ; 40          ;
+; md8_low           ; 40          ;
+; md7_low           ; 40          ;
+; md6_low           ; 40          ;
+; md5_low           ; 40          ;
+; md4_low           ; 40          ;
+; md3_low           ; 40          ;
+; md11_low          ; 39          ;
+; md10_low          ; 39          ;
+; md9_low           ; 39          ;
 ; tp3               ; 11          ;
 ; initialize        ; 5           ;
 ; dk03              ; 5           ;
-; dk8flg~9          ; 4           ;
 ; clear~5           ; 4           ;
+; dk8ie~6sexpand0   ; 3           ;
+; dk8flg~9          ; 3           ;
 ; color             ; 3           ;
 ; store             ; 3           ;
-; clear~19          ; 2           ;
+; clear~11          ; 2           ;
 ; data11_low~0      ; 2           ;
 ; data10_low~0      ; 2           ;
 ; data09_low~0      ; 2           ;
@@ -429,12 +429,11 @@ Note: User assignments will override these defaults. The user specified values a
 ; dk04~8sexp        ; 2           ;
 ; dk04~7sexp        ; 2           ;
 ; dk04~5sexp        ; 2           ;
-; dk15              ; 2           ;
-; dk8ie~15          ; 2           ;
+; dk8ie~14          ; 2           ;
 ; int_en            ; 2           ;
 ; chan              ; 2           ;
 ; write_thru        ; 2           ;
-; n_t_23x~13        ; 1           ;
+; n_t_23x~5         ; 1           ;
 ; data05_low~0      ; 1           ;
 ; data04_low~0      ; 1           ;
 ; data03_low~0      ; 1           ;
@@ -447,17 +446,17 @@ Note: User assignments will override these defaults. The user specified values a
 ; d02_l             ; 1           ;
 ; d01_l             ; 1           ;
 ; d00_l             ; 1           ;
-; dk8flg~30         ; 1           ;
-; dk8flg~29         ; 1           ;
-; dk8flg~28         ; 1           ;
-; dk8ie~26          ; 1           ;
-; dk8ie~25          ; 1           ;
 ; n_t_23x~4sexp     ; 1           ;
+; comb~5sexpand3    ; 1           ;
+; comb~5sexpand2    ; 1           ;
+; comb~5sexpand1    ; 1           ;
+; clsk~3sexpand0    ; 1           ;
 ; ~VCC~2            ; 1           ;
 ; ~VCC~1            ; 1           ;
 ; ~VCC~0            ; 1           ;
 ; skip_low~11       ; 1           ;
 ; interrupt_low~4   ; 1           ;
+; dk15              ; 1           ;
 ; dk14              ; 1           ;
 ; dk13              ; 1           ;
 ; dk12              ; 1           ;
@@ -508,14 +507,14 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------+--------------------+
 ; Output enables              ; 0 / 6 ( 0 % )      ;
 ; PIA buffers                 ; 95 / 288 ( 33 % )  ;
-; PIAs                        ; 134 / 288 ( 47 % ) ;
+; PIAs                        ; 133 / 288 ( 46 % ) ;
 +-----------------------------+--------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB External Interconnect                                                   ;
 +-----------------------------------------------+-----------------------------+
-; LAB External Interconnects  (Average = 16.75) ; Number of LABs  (Total = 8) ;
+; LAB External Interconnects  (Average = 16.62) ; Number of LABs  (Total = 8) ;
 +-----------------------------------------------+-----------------------------+
 ; 0 - 1                                         ; 0                           ;
 ; 2 - 3                                         ; 0                           ;
@@ -524,123 +523,117 @@ Note: User assignments will override these defaults. The user specified values a
 ; 8 - 9                                         ; 0                           ;
 ; 10 - 11                                       ; 0                           ;
 ; 12 - 13                                       ; 1                           ;
-; 14 - 15                                       ; 2                           ;
-; 16 - 17                                       ; 2                           ;
+; 14 - 15                                       ; 3                           ;
+; 16 - 17                                       ; 1                           ;
 ; 18 - 19                                       ; 1                           ;
-; 20 - 21                                       ; 2                           ;
+; 20 - 21                                       ; 1                           ;
+; 22 - 23                                       ; 0                           ;
+; 24 - 25                                       ; 1                           ;
 +-----------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------+
 ; LAB Macrocells                                                       ;
 +----------------------------------------+-----------------------------+
-; Number of Macrocells  (Average = 7.38) ; Number of LABs  (Total = 8) ;
+; Number of Macrocells  (Average = 6.75) ; Number of LABs  (Total = 8) ;
 +----------------------------------------+-----------------------------+
 ; 0                                      ; 0                           ;
 ; 1                                      ; 0                           ;
 ; 2                                      ; 0                           ;
 ; 3                                      ; 1                           ;
-; 4                                      ; 1                           ;
-; 5                                      ; 1                           ;
-; 6                                      ; 0                           ;
+; 4                                      ; 2                           ;
+; 5                                      ; 0                           ;
+; 6                                      ; 2                           ;
 ; 7                                      ; 1                           ;
-; 8                                      ; 1                           ;
+; 8                                      ; 0                           ;
 ; 9                                      ; 1                           ;
 ; 10                                     ; 0                           ;
-; 11                                     ; 1                           ;
-; 12                                     ; 1                           ;
+; 11                                     ; 0                           ;
+; 12                                     ; 0                           ;
+; 13                                     ; 0                           ;
+; 14                                     ; 0                           ;
+; 15                                     ; 1                           ;
 +----------------------------------------+-----------------------------+
-
-
-+---------------------------------------------------------+
-; Parallel Expander                                       ;
-+--------------------------+------------------------------+
-; Parallel Expander Length ; Number of Parallel Expanders ;
-+--------------------------+------------------------------+
-; 0                        ; 0                            ;
-; 1                        ; 0                            ;
-; 2                        ; 1                            ;
-; 3                        ; 1                            ;
-+--------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; Shareable Expander                                                            ;
 +-------------------------------------------------+-----------------------------+
-; Number of shareable expanders  (Average = 0.88) ; Number of LABs  (Total = 3) ;
+; Number of shareable expanders  (Average = 1.50) ; Number of LABs  (Total = 3) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 5                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 2                           ;
-; 3                                               ; 1                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 1                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Logic Cell Interconnection                                                                                                                                                                     ;
-+-----+------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+
-; LAB ; Logic Cell ; Input                                                                                                                   ; Output                                            ;
-+-----+------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+
-;  A  ; LC3        ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d11_l, int_en             ; data11_low                                        ;
-;  A  ; LC10       ; dk04~8sexp                                                                                                              ; dk06                                              ;
-;  A  ; LC1        ; clock, dk03, clock                                                                                                      ; dk02                                              ;
-;  A  ; LC11       ; dk01, dk03, clock                                                                                                       ; dk03                                              ;
-;  A  ; LC2        ; dk06                                                                                                                    ; dk08                                              ;
-;  A  ; LC12       ; dk02, dk03, clock                                                                                                       ; dk01, dk02, dk03, dk04~5sexp, dk04~7sexp          ;
-;  A  ; LC8        ; dk05                                                                                                                    ; dk07                                              ;
-;  A  ; LC7        ; dk8flg~28, dk8flg~9, md10_low, md9_low, md11_low, md5_low, md6_low                                                      ; dk8flg~9, interrupt_low~4, skip_low~11, dk8flg~28 ;
-;  A  ; LC4        ; md7_low, dk15, md8_low, md3_low, md4_low, pause_low                                                                     ; dk8flg~29                                         ;
-;  A  ; LC6        ; dk8flg~29, dk8flg~9, md7_low, md8_low, md3_low, md4_low, pause_low                                                      ; dk8flg~9                                          ;
-;  A  ; LC5        ; dk8flg~30, md9_low, dk15, md11_low, md5_low, md6_low, md10_low                                                          ; dk8flg~28                                         ;
-;  B  ; LC25       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d08_l                     ; data08_low                                        ;
-;  B  ; LC27       ; color, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low, d09_l              ; data09_low                                        ;
-;  B  ; LC29       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d10_l, chan               ; data10_low                                        ;
-;  C  ; LC40       ; md5_low, md6_low, md7_low, md8_low, md3_low, md4_low, pause_low                                                         ; internal_io_low                                   ;
-;  C  ; LC43       ; dk8ie~15, dk8flg~9, int_en                                                                                              ; interrupt_low                                     ;
-;  C  ; LC37       ; md5_low, md11_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low                            ; c1_low                                            ;
-;  C  ; LC35       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low                            ; c0_low                                            ;
-;  C  ; LC46       ; dk8flg~9, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low                  ; skip_low                                          ;
-;  D  ; LC59       ; write_thru, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low                ; data06_low                                        ;
-;  D  ; LC61       ; store, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low                     ; data07_low                                        ;
-;  D  ; LC51       ; dk11                                                                                                                    ; dk13                                              ;
-;  D  ; LC53       ; dk14                                                                                                                    ; dk8flg~29, dk8flg~30                              ;
-;  D  ; LC49       ; dk13                                                                                                                    ; dk15                                              ;
-;  D  ; LC50       ; dk12                                                                                                                    ; dk14                                              ;
-;  D  ; LC52       ; dk10                                                                                                                    ; dk12                                              ;
-;  D  ; LC55       ; dk09                                                                                                                    ; dk11                                              ;
-;  D  ; LC58       ; dk08                                                                                                                    ; dk10                                              ;
-;  D  ; LC60       ; dk07                                                                                                                    ; dk09                                              ;
-;  D  ; LC57       ;                                                                                                                         ; data05_low                                        ;
-;  D  ; LC56       ;                                                                                                                         ; data04_low                                        ;
-;  E  ; LC72       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d01_l                     ; data01_low                                        ;
-;  E  ; LC73       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low, d00_l                     ; data00_low                                        ;
-;  E  ; LC69       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d02_l                     ; data02_low                                        ;
-;  E  ; LC67       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d03_l                     ; data03_low                                        ;
-;  F  ; LC88       ; data10_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~5  ; data10_low~7, chan_low                            ;
-;  F  ; LC83       ; dk8ie~25, initialize, dk8ie~15, md10_low, md9_low, md11_low, md5_low                                                    ; dk8ie~15, interrupt_low~4                         ;
-;  F  ; LC94       ; store, color                                                                                                            ; n_t_27x                                           ;
-;  F  ; LC85       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low, tp3                       ; b_dixy_low                                        ;
-;  F  ; LC93       ; data06_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~5  ; data06_low~4, write_thru_low                      ;
-;  F  ; LC82       ; dk8ie~26, md6_low, initialize, md7_low, md8_low, md3_low, md4_low                                                       ; dk8ie~15                                          ;
-;  F  ; LC81       ; pause_low, initialize                                                                                                   ; dk8ie~25                                          ;
-;  F  ; LC91       ; data08_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~5  ; erase_low                                         ;
-;  F  ; LC86       ; data09_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~5  ; data09_low~7, n_t_27x~2, col_red_low              ;
-;  G  ; LC109      ; md11_low, data07_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                ; di07                                              ;
-;  G  ; LC107      ; md11_low, data06_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                ; di06                                              ;
-;  G  ; LC105      ; md11_low, data05_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                ; di05                                              ;
-;  G  ; LC104      ; md11_low, data04_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                ; di04                                              ;
-;  G  ; LC99       ; md11_low, data02_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                ; di02_l                                            ;
-;  G  ; LC101      ; md11_low, data03_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                ; di03                                              ;
-;  G  ; LC97       ;                                                                                                                         ; dly_done_low                                      ;
-;  H  ; LC113      ; data11_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~19 ; data11_low~7, interrupt_low~4                     ;
-;  H  ; LC118      ; data10_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low                ; di10                                              ;
-;  H  ; LC115      ; md11_low, data08_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                ; di08                                              ;
-;  H  ; LC123      ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low, tp3                       ; load_x                                            ;
-;  H  ; LC125      ; md10_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, tp3, md11_low, md9_low                       ; load_y                                            ;
-;  H  ; LC120      ; data11_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low                ; di11                                              ;
-;  H  ; LC117      ; md11_low, data09_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                ; di09                                              ;
-;  H  ; LC126      ; data07_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~19 ; data07_low~4, n_t_27x~2, non_store_low            ;
-+-----+------------+-------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                       ;
++-----+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                                                              ; Output                                   ;
++-----+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+;  A  ; LC2        ; dk11                                                                                                                                                               ; dk13                                     ;
+;  A  ; LC4        ; dk14                                                                                                                                                               ; dk8flg~9                                 ;
+;  A  ; LC3        ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d11_l, int_en                                                        ; data11_low                               ;
+;  A  ; LC5        ; dk10                                                                                                                                                               ; dk12                                     ;
+;  A  ; LC7        ; dk09                                                                                                                                                               ; dk11                                     ;
+;  A  ; LC8        ; dk08                                                                                                                                                               ; dk10                                     ;
+;  A  ; LC10       ; dk07                                                                                                                                                               ; dk09                                     ;
+;  A  ; LC11       ; dk13                                                                                                                                                               ; dk15                                     ;
+;  A  ; LC1        ; dk12                                                                                                                                                               ; dk14                                     ;
+;  B  ; LC29       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d10_l, chan                                                          ; data10_low                               ;
+;  B  ; LC25       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d08_l                                                                ; data08_low                               ;
+;  B  ; LC27       ; color, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low, d09_l                                                         ; data09_low                               ;
+;  C  ; LC40       ; md5_low, md6_low, md7_low, md8_low, md3_low, md4_low, pause_low                                                                                                    ; internal_io_low                          ;
+;  C  ; LC46       ; dk8flg~9, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low                                                             ; skip_low                                 ;
+;  C  ; LC43       ; dk8ie~14, dk8flg~9, int_en                                                                                                                                         ; interrupt_low                            ;
+;  C  ; LC37       ; md5_low, md11_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low                                                                       ; c1_low                                   ;
+;  C  ; LC35       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low                                                                       ; c0_low                                   ;
+;  C  ; LC34       ; dk8flg~9, dk15, clsk~3sexpand0                                                                                                                                     ; dk8flg~9, interrupt_low~4, skip_low~11   ;
+;  D  ; LC59       ; write_thru, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low                                                           ; data06_low                               ;
+;  D  ; LC61       ; store, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low                                                                ; data07_low                               ;
+;  D  ; LC57       ;                                                                                                                                                                    ; data05_low                               ;
+;  D  ; LC56       ;                                                                                                                                                                    ; data04_low                               ;
+;  E  ; LC67       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d03_l                                                                ; data03_low                               ;
+;  E  ; LC73       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low, d00_l                                                                ; data00_low                               ;
+;  E  ; LC69       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d02_l                                                                ; data02_low                               ;
+;  E  ; LC72       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md9_low, md10_low, md11_low, d01_l                                                                ; data01_low                               ;
+;  F  ; LC93       ; data06_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~5                                             ; data06_low~4, write_thru_low             ;
+;  F  ; LC86       ; data09_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~5                                             ; data09_low~7, n_t_27x~2, col_red_low     ;
+;  F  ; LC88       ; data10_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~5                                             ; data10_low~7, chan_low                   ;
+;  F  ; LC94       ; store, color                                                                                                                                                       ; n_t_27x                                  ;
+;  F  ; LC91       ; data08_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~5                                             ; erase_low                                ;
+;  F  ; LC85       ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low, tp3                                                                  ; b_dixy_low                               ;
+;  G  ; LC109      ; md11_low, data07_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                                                           ; di07                                     ;
+;  G  ; LC107      ; md11_low, data06_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                                                           ; di06                                     ;
+;  G  ; LC105      ; md11_low, data05_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                                                           ; di05                                     ;
+;  G  ; LC104      ; md11_low, data04_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                                                           ; di04                                     ;
+;  G  ; LC99       ; md11_low, data02_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                                                           ; di02_l                                   ;
+;  G  ; LC101      ; md11_low, data03_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                                                           ; di03                                     ;
+;  G  ; LC97       ;                                                                                                                                                                    ; dly_done_low                             ;
+;  H  ; LC116      ; clock, dk03, clock                                                                                                                                                 ; dk02                                     ;
+;  H  ; LC124      ; dk01, dk03, clock                                                                                                                                                  ; dk03                                     ;
+;  H  ; LC120      ; data11_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low                                                           ; di11                                     ;
+;  H  ; LC117      ; md11_low, data09_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                                                           ; di09                                     ;
+;  H  ; LC121      ; dk05                                                                                                                                                               ; dk07                                     ;
+;  H  ; LC126      ; data07_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~11                                            ; data07_low~4, n_t_27x~2, non_store_low   ;
+;  H  ; LC118      ; data10_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low                                                           ; di10                                     ;
+;  H  ; LC114      ; data11_low, md9_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md10_low, tp3, clear~11                                            ; data11_low~7, interrupt_low~4            ;
+;  H  ; LC119      ; dk06                                                                                                                                                               ; dk08                                     ;
+;  H  ; LC113      ; dk8ie~14, md7_low, md4_low, md11_low, initialize, md8_low, md5_low, md9_low, md6_low, pause_low, md3_low, md10_low, comb~5sexpand1, comb~5sexpand2, comb~5sexpand3 ; dk8ie~14, interrupt_low~4                ;
+;  H  ; LC122      ; dk04~8sexp                                                                                                                                                         ; dk06                                     ;
+;  H  ; LC115      ; md11_low, data08_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md10_low, md9_low                                                           ; di08                                     ;
+;  H  ; LC123      ; md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, md11_low, md9_low, md10_low, tp3                                                                  ; load_x                                   ;
+;  H  ; LC125      ; md10_low, md5_low, md8_low, md6_low, md7_low, md3_low, md4_low, pause_low, tp3, md11_low, md9_low                                                                  ; load_y                                   ;
+;  H  ; LC128      ; dk02, dk03, clock                                                                                                                                                  ; dk01, dk02, dk03, dk04~5sexp, dk04~7sexp ;
++-----+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -664,8 +657,8 @@ Note: User assignments will override these defaults. The user specified values a
 Info (119006): Selected device EPM7128SLC84-15 for design "warv"
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 450 megabytes
-    Info: Processing ended: Fri Sep 22 17:59:01 2023
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Thu Sep 18 07:37:08 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

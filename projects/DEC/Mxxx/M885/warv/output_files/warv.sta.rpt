@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for warv
-Fri Sep 22 17:59:12 2023
+Thu Sep 18 07:37:21 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -6437,8 +6437,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------+------------+--------+--------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------------+------------+--------+--------+------------+-----------------+
-; interrupt_low   ; dk14       ; 34.000 ; 34.000 ; Rise       ; dk14            ;
-; skip_low        ; dk14       ; 34.000 ; 34.000 ; Rise       ; dk14            ;
+; interrupt_low   ; dk14       ; 31.000 ; 31.000 ; Rise       ; dk14            ;
+; skip_low        ; dk14       ; 31.000 ; 31.000 ; Rise       ; dk14            ;
 ; b_dixy_low      ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; c0_low          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; c1_low          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
@@ -6465,12 +6465,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; di11            ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; erase_low       ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
-; interrupt_low   ; md10_low   ; 26.000 ; 26.000 ; Rise       ; md10_low        ;
+; interrupt_low   ; md10_low   ; 40.000 ; 40.000 ; Rise       ; md10_low        ;
 ; load_x          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; load_y          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; n_t_27x         ; md10_low   ; 24.000 ; 24.000 ; Rise       ; md10_low        ;
 ; non_store_low   ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
-; skip_low        ; md10_low   ; 26.000 ; 26.000 ; Rise       ; md10_low        ;
+; skip_low        ; md10_low   ; 32.000 ; 32.000 ; Rise       ; md10_low        ;
 ; write_thru_low  ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; b_dixy_low      ; md10_low   ; 15.000 ; 15.000 ; Fall       ; md10_low        ;
 ; c0_low          ; md10_low   ; 15.000 ; 15.000 ; Fall       ; md10_low        ;
@@ -6495,10 +6495,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di09            ; md10_low   ; 15.000 ; 15.000 ; Fall       ; md10_low        ;
 ; di10            ; md10_low   ; 15.000 ; 15.000 ; Fall       ; md10_low        ;
 ; di11            ; md10_low   ; 15.000 ; 15.000 ; Fall       ; md10_low        ;
-; interrupt_low   ; md10_low   ; 26.000 ; 26.000 ; Fall       ; md10_low        ;
+; interrupt_low   ; md10_low   ; 40.000 ; 40.000 ; Fall       ; md10_low        ;
 ; load_x          ; md10_low   ; 15.000 ; 15.000 ; Fall       ; md10_low        ;
 ; load_y          ; md10_low   ; 15.000 ; 15.000 ; Fall       ; md10_low        ;
-; skip_low        ; md10_low   ; 26.000 ; 26.000 ; Fall       ; md10_low        ;
+; skip_low        ; md10_low   ; 32.000 ; 32.000 ; Fall       ; md10_low        ;
 ; b_dixy_low      ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
 ; c0_low          ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
 ; c1_low          ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
@@ -6525,12 +6525,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
 ; di11            ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
 ; erase_low       ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
-; interrupt_low   ; md11_low   ; 26.000 ; 26.000 ; Rise       ; md11_low        ;
+; interrupt_low   ; md11_low   ; 40.000 ; 40.000 ; Rise       ; md11_low        ;
 ; load_x          ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
 ; load_y          ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
 ; n_t_27x         ; md11_low   ; 24.000 ; 24.000 ; Rise       ; md11_low        ;
 ; non_store_low   ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
-; skip_low        ; md11_low   ; 26.000 ; 26.000 ; Rise       ; md11_low        ;
+; skip_low        ; md11_low   ; 32.000 ; 32.000 ; Rise       ; md11_low        ;
 ; write_thru_low  ; md11_low   ; 15.000 ; 15.000 ; Rise       ; md11_low        ;
 ; b_dixy_low      ; md11_low   ; 15.000 ; 15.000 ; Fall       ; md11_low        ;
 ; c0_low          ; md11_low   ; 15.000 ; 15.000 ; Fall       ; md11_low        ;
@@ -6555,10 +6555,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di09            ; md11_low   ; 15.000 ; 15.000 ; Fall       ; md11_low        ;
 ; di10            ; md11_low   ; 15.000 ; 15.000 ; Fall       ; md11_low        ;
 ; di11            ; md11_low   ; 15.000 ; 15.000 ; Fall       ; md11_low        ;
-; interrupt_low   ; md11_low   ; 26.000 ; 26.000 ; Fall       ; md11_low        ;
+; interrupt_low   ; md11_low   ; 40.000 ; 40.000 ; Fall       ; md11_low        ;
 ; load_x          ; md11_low   ; 15.000 ; 15.000 ; Fall       ; md11_low        ;
 ; load_y          ; md11_low   ; 15.000 ; 15.000 ; Fall       ; md11_low        ;
-; skip_low        ; md11_low   ; 26.000 ; 26.000 ; Fall       ; md11_low        ;
+; skip_low        ; md11_low   ; 32.000 ; 32.000 ; Fall       ; md11_low        ;
 ; b_dixy_low      ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
 ; c0_low          ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
 ; c1_low          ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
@@ -6586,12 +6586,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di11            ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
 ; erase_low       ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
 ; internal_io_low ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
-; interrupt_low   ; md3_low    ; 27.000 ; 27.000 ; Rise       ; md3_low         ;
+; interrupt_low   ; md3_low    ; 40.000 ; 40.000 ; Rise       ; md3_low         ;
 ; load_x          ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
 ; load_y          ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
 ; n_t_27x         ; md3_low    ; 24.000 ; 24.000 ; Rise       ; md3_low         ;
 ; non_store_low   ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
-; skip_low        ; md3_low    ; 27.000 ; 27.000 ; Rise       ; md3_low         ;
+; skip_low        ; md3_low    ; 32.000 ; 32.000 ; Rise       ; md3_low         ;
 ; write_thru_low  ; md3_low    ; 15.000 ; 15.000 ; Rise       ; md3_low         ;
 ; b_dixy_low      ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
 ; c0_low          ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
@@ -6617,10 +6617,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
 ; di11            ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
 ; internal_io_low ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
-; interrupt_low   ; md3_low    ; 27.000 ; 27.000 ; Fall       ; md3_low         ;
+; interrupt_low   ; md3_low    ; 40.000 ; 40.000 ; Fall       ; md3_low         ;
 ; load_x          ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
 ; load_y          ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
-; skip_low        ; md3_low    ; 27.000 ; 27.000 ; Fall       ; md3_low         ;
+; skip_low        ; md3_low    ; 32.000 ; 32.000 ; Fall       ; md3_low         ;
 ; b_dixy_low      ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
 ; c0_low          ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
 ; c1_low          ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
@@ -6648,12 +6648,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di11            ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
 ; erase_low       ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
 ; internal_io_low ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
-; interrupt_low   ; md4_low    ; 27.000 ; 27.000 ; Rise       ; md4_low         ;
+; interrupt_low   ; md4_low    ; 40.000 ; 40.000 ; Rise       ; md4_low         ;
 ; load_x          ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
 ; load_y          ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
 ; n_t_27x         ; md4_low    ; 24.000 ; 24.000 ; Rise       ; md4_low         ;
 ; non_store_low   ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
-; skip_low        ; md4_low    ; 27.000 ; 27.000 ; Rise       ; md4_low         ;
+; skip_low        ; md4_low    ; 32.000 ; 32.000 ; Rise       ; md4_low         ;
 ; write_thru_low  ; md4_low    ; 15.000 ; 15.000 ; Rise       ; md4_low         ;
 ; b_dixy_low      ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
 ; c0_low          ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
@@ -6679,10 +6679,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
 ; di11            ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
 ; internal_io_low ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
-; interrupt_low   ; md4_low    ; 27.000 ; 27.000 ; Fall       ; md4_low         ;
+; interrupt_low   ; md4_low    ; 40.000 ; 40.000 ; Fall       ; md4_low         ;
 ; load_x          ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
 ; load_y          ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
-; skip_low        ; md4_low    ; 27.000 ; 27.000 ; Fall       ; md4_low         ;
+; skip_low        ; md4_low    ; 32.000 ; 32.000 ; Fall       ; md4_low         ;
 ; b_dixy_low      ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
 ; c0_low          ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
 ; c1_low          ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
@@ -6710,12 +6710,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di11            ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
 ; erase_low       ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
 ; internal_io_low ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
-; interrupt_low   ; md5_low    ; 26.000 ; 26.000 ; Rise       ; md5_low         ;
+; interrupt_low   ; md5_low    ; 40.000 ; 40.000 ; Rise       ; md5_low         ;
 ; load_x          ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
 ; load_y          ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
 ; n_t_27x         ; md5_low    ; 24.000 ; 24.000 ; Rise       ; md5_low         ;
 ; non_store_low   ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
-; skip_low        ; md5_low    ; 26.000 ; 26.000 ; Rise       ; md5_low         ;
+; skip_low        ; md5_low    ; 32.000 ; 32.000 ; Rise       ; md5_low         ;
 ; write_thru_low  ; md5_low    ; 15.000 ; 15.000 ; Rise       ; md5_low         ;
 ; b_dixy_low      ; md5_low    ; 15.000 ; 15.000 ; Fall       ; md5_low         ;
 ; c0_low          ; md5_low    ; 15.000 ; 15.000 ; Fall       ; md5_low         ;
@@ -6741,10 +6741,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md5_low    ; 15.000 ; 15.000 ; Fall       ; md5_low         ;
 ; di11            ; md5_low    ; 15.000 ; 15.000 ; Fall       ; md5_low         ;
 ; internal_io_low ; md5_low    ; 15.000 ; 15.000 ; Fall       ; md5_low         ;
-; interrupt_low   ; md5_low    ; 26.000 ; 26.000 ; Fall       ; md5_low         ;
+; interrupt_low   ; md5_low    ; 40.000 ; 40.000 ; Fall       ; md5_low         ;
 ; load_x          ; md5_low    ; 15.000 ; 15.000 ; Fall       ; md5_low         ;
 ; load_y          ; md5_low    ; 15.000 ; 15.000 ; Fall       ; md5_low         ;
-; skip_low        ; md5_low    ; 26.000 ; 26.000 ; Fall       ; md5_low         ;
+; skip_low        ; md5_low    ; 32.000 ; 32.000 ; Fall       ; md5_low         ;
 ; b_dixy_low      ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
 ; c0_low          ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
 ; c1_low          ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
@@ -6772,12 +6772,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di11            ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
 ; erase_low       ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
 ; internal_io_low ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
-; interrupt_low   ; md6_low    ; 26.000 ; 26.000 ; Rise       ; md6_low         ;
+; interrupt_low   ; md6_low    ; 40.000 ; 40.000 ; Rise       ; md6_low         ;
 ; load_x          ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
 ; load_y          ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
 ; n_t_27x         ; md6_low    ; 24.000 ; 24.000 ; Rise       ; md6_low         ;
 ; non_store_low   ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
-; skip_low        ; md6_low    ; 26.000 ; 26.000 ; Rise       ; md6_low         ;
+; skip_low        ; md6_low    ; 32.000 ; 32.000 ; Rise       ; md6_low         ;
 ; write_thru_low  ; md6_low    ; 15.000 ; 15.000 ; Rise       ; md6_low         ;
 ; b_dixy_low      ; md6_low    ; 15.000 ; 15.000 ; Fall       ; md6_low         ;
 ; c0_low          ; md6_low    ; 15.000 ; 15.000 ; Fall       ; md6_low         ;
@@ -6803,10 +6803,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md6_low    ; 15.000 ; 15.000 ; Fall       ; md6_low         ;
 ; di11            ; md6_low    ; 15.000 ; 15.000 ; Fall       ; md6_low         ;
 ; internal_io_low ; md6_low    ; 15.000 ; 15.000 ; Fall       ; md6_low         ;
-; interrupt_low   ; md6_low    ; 26.000 ; 26.000 ; Fall       ; md6_low         ;
+; interrupt_low   ; md6_low    ; 40.000 ; 40.000 ; Fall       ; md6_low         ;
 ; load_x          ; md6_low    ; 15.000 ; 15.000 ; Fall       ; md6_low         ;
 ; load_y          ; md6_low    ; 15.000 ; 15.000 ; Fall       ; md6_low         ;
-; skip_low        ; md6_low    ; 26.000 ; 26.000 ; Fall       ; md6_low         ;
+; skip_low        ; md6_low    ; 32.000 ; 32.000 ; Fall       ; md6_low         ;
 ; b_dixy_low      ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
 ; c0_low          ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
 ; c1_low          ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
@@ -6834,12 +6834,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di11            ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
 ; erase_low       ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
 ; internal_io_low ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
-; interrupt_low   ; md7_low    ; 27.000 ; 27.000 ; Rise       ; md7_low         ;
+; interrupt_low   ; md7_low    ; 40.000 ; 40.000 ; Rise       ; md7_low         ;
 ; load_x          ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
 ; load_y          ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
 ; n_t_27x         ; md7_low    ; 24.000 ; 24.000 ; Rise       ; md7_low         ;
 ; non_store_low   ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
-; skip_low        ; md7_low    ; 27.000 ; 27.000 ; Rise       ; md7_low         ;
+; skip_low        ; md7_low    ; 32.000 ; 32.000 ; Rise       ; md7_low         ;
 ; write_thru_low  ; md7_low    ; 15.000 ; 15.000 ; Rise       ; md7_low         ;
 ; b_dixy_low      ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
 ; c0_low          ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
@@ -6865,10 +6865,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
 ; di11            ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
 ; internal_io_low ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
-; interrupt_low   ; md7_low    ; 27.000 ; 27.000 ; Fall       ; md7_low         ;
+; interrupt_low   ; md7_low    ; 40.000 ; 40.000 ; Fall       ; md7_low         ;
 ; load_x          ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
 ; load_y          ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
-; skip_low        ; md7_low    ; 27.000 ; 27.000 ; Fall       ; md7_low         ;
+; skip_low        ; md7_low    ; 32.000 ; 32.000 ; Fall       ; md7_low         ;
 ; b_dixy_low      ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
 ; c0_low          ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
 ; c1_low          ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
@@ -6896,12 +6896,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di11            ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
 ; erase_low       ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
 ; internal_io_low ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
-; interrupt_low   ; md8_low    ; 27.000 ; 27.000 ; Rise       ; md8_low         ;
+; interrupt_low   ; md8_low    ; 40.000 ; 40.000 ; Rise       ; md8_low         ;
 ; load_x          ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
 ; load_y          ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
 ; n_t_27x         ; md8_low    ; 24.000 ; 24.000 ; Rise       ; md8_low         ;
 ; non_store_low   ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
-; skip_low        ; md8_low    ; 27.000 ; 27.000 ; Rise       ; md8_low         ;
+; skip_low        ; md8_low    ; 32.000 ; 32.000 ; Rise       ; md8_low         ;
 ; write_thru_low  ; md8_low    ; 15.000 ; 15.000 ; Rise       ; md8_low         ;
 ; b_dixy_low      ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
 ; c0_low          ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
@@ -6927,10 +6927,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
 ; di11            ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
 ; internal_io_low ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
-; interrupt_low   ; md8_low    ; 27.000 ; 27.000 ; Fall       ; md8_low         ;
+; interrupt_low   ; md8_low    ; 40.000 ; 40.000 ; Fall       ; md8_low         ;
 ; load_x          ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
 ; load_y          ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
-; skip_low        ; md8_low    ; 27.000 ; 27.000 ; Fall       ; md8_low         ;
+; skip_low        ; md8_low    ; 32.000 ; 32.000 ; Fall       ; md8_low         ;
 ; b_dixy_low      ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
 ; c0_low          ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
 ; c1_low          ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
@@ -6957,12 +6957,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
 ; di11            ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
 ; erase_low       ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
-; interrupt_low   ; md9_low    ; 26.000 ; 26.000 ; Rise       ; md9_low         ;
+; interrupt_low   ; md9_low    ; 40.000 ; 40.000 ; Rise       ; md9_low         ;
 ; load_x          ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
 ; load_y          ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
 ; n_t_27x         ; md9_low    ; 24.000 ; 24.000 ; Rise       ; md9_low         ;
 ; non_store_low   ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
-; skip_low        ; md9_low    ; 26.000 ; 26.000 ; Rise       ; md9_low         ;
+; skip_low        ; md9_low    ; 32.000 ; 32.000 ; Rise       ; md9_low         ;
 ; write_thru_low  ; md9_low    ; 15.000 ; 15.000 ; Rise       ; md9_low         ;
 ; b_dixy_low      ; md9_low    ; 15.000 ; 15.000 ; Fall       ; md9_low         ;
 ; c0_low          ; md9_low    ; 15.000 ; 15.000 ; Fall       ; md9_low         ;
@@ -6987,10 +6987,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di09            ; md9_low    ; 15.000 ; 15.000 ; Fall       ; md9_low         ;
 ; di10            ; md9_low    ; 15.000 ; 15.000 ; Fall       ; md9_low         ;
 ; di11            ; md9_low    ; 15.000 ; 15.000 ; Fall       ; md9_low         ;
-; interrupt_low   ; md9_low    ; 26.000 ; 26.000 ; Fall       ; md9_low         ;
+; interrupt_low   ; md9_low    ; 40.000 ; 40.000 ; Fall       ; md9_low         ;
 ; load_x          ; md9_low    ; 15.000 ; 15.000 ; Fall       ; md9_low         ;
 ; load_y          ; md9_low    ; 15.000 ; 15.000 ; Fall       ; md9_low         ;
-; skip_low        ; md9_low    ; 26.000 ; 26.000 ; Fall       ; md9_low         ;
+; skip_low        ; md9_low    ; 32.000 ; 32.000 ; Fall       ; md9_low         ;
 ; b_dixy_low      ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
 ; c0_low          ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
 ; c1_low          ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
@@ -7018,12 +7018,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di11            ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
 ; erase_low       ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
 ; internal_io_low ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
-; interrupt_low   ; pause_low  ; 27.000 ; 27.000 ; Rise       ; pause_low       ;
+; interrupt_low   ; pause_low  ; 40.000 ; 40.000 ; Rise       ; pause_low       ;
 ; load_x          ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
 ; load_y          ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
 ; n_t_27x         ; pause_low  ; 24.000 ; 24.000 ; Rise       ; pause_low       ;
 ; non_store_low   ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
-; skip_low        ; pause_low  ; 27.000 ; 27.000 ; Rise       ; pause_low       ;
+; skip_low        ; pause_low  ; 32.000 ; 32.000 ; Rise       ; pause_low       ;
 ; write_thru_low  ; pause_low  ; 15.000 ; 15.000 ; Rise       ; pause_low       ;
 ; b_dixy_low      ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
 ; c0_low          ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
@@ -7049,10 +7049,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
 ; di11            ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
 ; internal_io_low ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
-; interrupt_low   ; pause_low  ; 27.000 ; 27.000 ; Fall       ; pause_low       ;
+; interrupt_low   ; pause_low  ; 40.000 ; 40.000 ; Fall       ; pause_low       ;
 ; load_x          ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
 ; load_y          ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
-; skip_low        ; pause_low  ; 27.000 ; 27.000 ; Fall       ; pause_low       ;
+; skip_low        ; pause_low  ; 32.000 ; 32.000 ; Fall       ; pause_low       ;
 ; b_dixy_low      ; tp3        ; 15.000 ; 15.000 ; Rise       ; tp3             ;
 ; chan_low        ; tp3        ; 15.000 ; 15.000 ; Rise       ; tp3             ;
 ; col_red_low     ; tp3        ; 15.000 ; 15.000 ; Rise       ; tp3             ;
@@ -7079,8 +7079,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------+------------+--------+--------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------------+------------+--------+--------+------------+-----------------+
-; interrupt_low   ; dk14       ; 33.000 ; 33.000 ; Rise       ; dk14            ;
-; skip_low        ; dk14       ; 33.000 ; 33.000 ; Rise       ; dk14            ;
+; interrupt_low   ; dk14       ; 31.000 ; 31.000 ; Rise       ; dk14            ;
+; skip_low        ; dk14       ; 31.000 ; 31.000 ; Rise       ; dk14            ;
 ; b_dixy_low      ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; c0_low          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
 ; c1_low          ; md10_low   ; 15.000 ; 15.000 ; Rise       ; md10_low        ;
@@ -7259,7 +7259,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
 ; di11            ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
 ; internal_io_low ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
-; interrupt_low   ; md3_low    ; 25.000 ; 25.000 ; Fall       ; md3_low         ;
+; interrupt_low   ; md3_low    ; 24.000 ; 24.000 ; Fall       ; md3_low         ;
 ; load_x          ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
 ; load_y          ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
 ; skip_low        ; md3_low    ; 15.000 ; 15.000 ; Fall       ; md3_low         ;
@@ -7321,7 +7321,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
 ; di11            ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
 ; internal_io_low ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
-; interrupt_low   ; md4_low    ; 25.000 ; 25.000 ; Fall       ; md4_low         ;
+; interrupt_low   ; md4_low    ; 24.000 ; 24.000 ; Fall       ; md4_low         ;
 ; load_x          ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
 ; load_y          ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
 ; skip_low        ; md4_low    ; 15.000 ; 15.000 ; Fall       ; md4_low         ;
@@ -7507,7 +7507,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
 ; di11            ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
 ; internal_io_low ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
-; interrupt_low   ; md7_low    ; 25.000 ; 25.000 ; Fall       ; md7_low         ;
+; interrupt_low   ; md7_low    ; 24.000 ; 24.000 ; Fall       ; md7_low         ;
 ; load_x          ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
 ; load_y          ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
 ; skip_low        ; md7_low    ; 15.000 ; 15.000 ; Fall       ; md7_low         ;
@@ -7569,7 +7569,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
 ; di11            ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
 ; internal_io_low ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
-; interrupt_low   ; md8_low    ; 25.000 ; 25.000 ; Fall       ; md8_low         ;
+; interrupt_low   ; md8_low    ; 24.000 ; 24.000 ; Fall       ; md8_low         ;
 ; load_x          ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
 ; load_y          ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
 ; skip_low        ; md8_low    ; 15.000 ; 15.000 ; Fall       ; md8_low         ;
@@ -7691,7 +7691,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; di10            ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
 ; di11            ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
 ; internal_io_low ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
-; interrupt_low   ; pause_low  ; 25.000 ; 25.000 ; Fall       ; pause_low       ;
+; interrupt_low   ; pause_low  ; 24.000 ; 24.000 ; Fall       ; pause_low       ;
 ; load_x          ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
 ; load_y          ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
 ; skip_low        ; pause_low  ; 15.000 ; 15.000 ; Fall       ; pause_low       ;
@@ -7739,7 +7739,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; data09_low ; di09          ;    ; 15.000 ; 15.000 ;    ;
 ; data10_low ; di10          ;    ; 15.000 ; 15.000 ;    ;
 ; data11_low ; di11          ;    ; 15.000 ; 15.000 ;    ;
-; initialize ; interrupt_low ;    ; 26.000 ; 26.000 ;    ;
+; initialize ; interrupt_low ;    ; 40.000 ; 40.000 ;    ;
 +------------+---------------+----+--------+--------+----+
 
 
@@ -8366,7 +8366,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Sep 22 17:59:08 2023
+    Info: Processing started: Thu Sep 18 07:37:17 2025
 Info: Command: quartus_sta warv -c warv
 Info: qsta_default_script.tcl version: #1
 Info (306004): Started post-fitting delay annotation
@@ -8400,15 +8400,12 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name dk12 dk12
     Info (332105): create_clock -period 1.000 -name dk13 dk13
     Info (332105): create_clock -period 1.000 -name dk14 dk14
-Warning (332125): Found combinational loop of 5 nodes
-    Warning (332126): Node "dk8flg~9|pexpin"
-    Warning (332126): Node "dk8flg~9|dataout"
-    Warning (332126): Node "dk8flg~28|[0]"
-    Warning (332126): Node "dk8flg~28|pexpout"
-    Warning (332126): Node "dk8flg~9|[0]"
 Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "dk8ie~15|[1]"
-    Warning (332126): Node "dk8ie~15|dataout"
+    Warning (332126): Node "dk8flg~9|[0]"
+    Warning (332126): Node "dk8flg~9|dataout"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "dk8ie~14|[0]"
+    Warning (332126): Node "dk8ie~14|dataout"
 Warning (332125): Found combinational loop of 8 nodes
     Warning (332126): Node "dk04~8sexp|dataout"
     Warning (332126): Node "dk04~7sexp|datain[1]"
@@ -8544,9 +8541,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info (144001): Generated suppressed messages file /home/vrs/Eagle/projects/DEC/Mxxx/M885/warv/output_files/warv.sta.smsg
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 485 megabytes
-    Info: Processing ended: Fri Sep 22 17:59:12 2023
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 488 megabytes
+    Info: Processing ended: Thu Sep 18 07:37:21 2025
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
