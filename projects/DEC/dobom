@@ -1,0 +1,49 @@
+#!/bin/sh
+#
+# Run generate_interactive_bom on all .brd files found in . and sub-directories.
+#
+# usage: generate_interactive_bom [-h] [--show-dialog] [--version] [--dark-mode]
+#                                 [--hide-pads] [--show-fabrication]
+#                                 [--hide-silkscreen]
+#                                 [--highlight-pin1 [{none,all,selected}]]
+#                                 [--no-redraw-on-drag]
+#                                 [--board-rotation BOARD_ROTATION]
+#                                 [--offset-back-rotation]
+#                                 [--checkboxes CHECKBOXES]
+#                                 [--bom-view {bom-only,left-right,top-bottom}]
+#                                 [--layer-view {F,FB,B}] [--no-compression]
+#                                 [--no-browser] [--dest-dir DEST_DIR]
+#                                 [--name-format NAME_FORMAT] [--include-tracks]
+#                                 [--include-nets] [--sort-order SORT_ORDER]
+#                                 [--blacklist BLACKLIST]
+#                                 [--no-blacklist-virtual]
+#                                 [--blacklist-empty-val]
+#                                 [--netlist-file NETLIST_FILE]
+#                                 [--extra-data-file EXTRA_DATA_FILE]
+#                                 [--extra-fields EXTRA_FIELDS]
+#                                 [--show-fields SHOW_FIELDS]
+#                                 [--group-fields GROUP_FIELDS]
+#                                 [--normalize-field-case]
+#                                 [--variant-field VARIANT_FIELD]
+#                                 [--variants-whitelist VARIANTS_WHITELIST]
+#                                 [--variants-blacklist VARIANTS_BLACKLIST]
+#                                 [--dnp-field DNP_FIELD]
+#                                 file
+#
+# Flag not used		Reason
+# --show dialog		Use command line options to run in batch mode
+#
+# Flag used
+# --dark-mode		Default to dark mode (looks nicer)
+# --name-format "%f"	Name HTML file for the board
+# --include-tracks	Display clickable traces
+# --include-nets	Include netlist mode as well as BOM mode
+# --bom-view top-bottom	Choose presentation
+# --no-browser		Don't invoke interactive editor
+# --dest-dir .		Don't create ./bom directories everywhere
+#
+# Users may wish to select "highlight on click" in the config options
+# For a more stable display.
+#
+find . -name "*.brd" -print0 |
+xargs -0 -n1 generate_interactive_bom --name-format "%f" --dark-mode --include-tracks --include-nets --bom-view top-bottom --no-browser --dest-dir .
