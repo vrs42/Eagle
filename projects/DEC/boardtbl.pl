@@ -20,6 +20,7 @@ $WEBURL = "https://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
 # Keep these tables ordered as you want them presented
 # (and the indices must line up).
 @suffix = (
+  ".html",
   ".pdf",
   ".brd",
   ".sch",
@@ -36,6 +37,7 @@ $WEBURL = "https://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
 # "hb.pdf",
 );
 @desc = (
+  "Javascript view",
   "PDF schematic",
   "Eagle board",
   "Eagle schematic",
