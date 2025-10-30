@@ -15296,7 +15296,7 @@ Based on the following sources:
 <instance part="U$2" gate="BJ1" x="274.32" y="25.4"/>
 <instance part="U$2" gate="BS2" x="251.46" y="43.18" rot="R90"/>
 <instance part="U$2" gate="BR2" x="215.9" y="127"/>
-<instance part="U$2" gate="BP2" x="10.16" y="99.06"/>
+<instance part="U$2" gate="BP2" x="10.16" y="96.52"/>
 <instance part="U$2" gate="BN2" x="238.76" y="71.12" rot="MR0"/>
 <instance part="U$2" gate="BK2" x="45.72" y="157.48"/>
 <instance part="U$2" gate="BJ2" x="10.16" y="190.5"/>
@@ -16551,7 +16551,7 @@ Based on the following sources:
 </net>
 <net name="2XCLK" class="0">
 <segment>
-<wire x1="12.7" y1="99.06" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="96.52" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="96.52" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="96.52" x2="251.46" y2="96.52" width="0.1524" layer="91"/>
@@ -16569,7 +16569,7 @@ Based on the following sources:
 <junction x="218.44" y="96.52"/>
 <junction x="251.46" y="96.52"/>
 <junction x="177.8" y="96.52"/>
-<label x="15.24" y="99.06" size="1.778" layer="95"/>
+<label x="15.24" y="96.52" size="1.778" layer="95"/>
 <pinref part="E14" gate="A" pin="CLK"/>
 <pinref part="E17" gate="A" pin="CLK"/>
 <pinref part="E16" gate="B" pin="CLK"/>
