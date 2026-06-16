@@ -1,0 +1,1 @@
+create_clock -name CLK -period 50.000 -waveform {0 25}
