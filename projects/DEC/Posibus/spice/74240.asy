@@ -1,0 +1,53 @@
+Version 4
+Symboltype CELL
+LINE Normal -48 64 48 64
+LINE Normal 48 64 48 -48
+LINE Normal 48 -48 -48 -48
+LINE Normal -48 -48 -48 64
+WINDOW 0 -48 -52 Left 2
+WINDOW 3 -48 80 Left 2
+LINE Normal -80 48 -48 48
+WINDOW 123 -80 40 Right 2
+CIRCLE Normal -48 44 -40 52
+LINE Normal -80 -32 -48 -32
+WINDOW 123 -80 -40 Right 2
+LINE Normal -80 -16 -48 -16
+WINDOW 123 -80 -24 Right 2
+LINE Normal -80 0 -48 0
+WINDOW 123 -80 -8 Right 2
+LINE Normal -80 16 -48 16
+WINDOW 123 -80 8 Right 2
+LINE Normal 80 16 48 16
+WINDOW 123 80 8 Right 2
+CIRCLE Normal 48 12 56 20
+LINE Normal 80 0 48 0
+WINDOW 123 80 -8 Right 2
+CIRCLE Normal 48 -4 56 4
+LINE Normal 80 -16 48 -16
+WINDOW 123 80 -24 Right 2
+CIRCLE Normal 48 -20 56 -12
+LINE Normal 80 -32 48 -32
+WINDOW 123 80 -40 Right 2
+CIRCLE Normal 48 -36 56 -28
+SYMATTR Value 74240
+SYMATTR Prefix X
+SYMATTR Description 74xx-us/74240
+PIN -80 48 dot 0
+PINATTR PinName G
+PIN -80 -32 none 0
+PINATTR PinName A1
+PIN -80 -16 none 0
+PINATTR PinName A2
+PIN -80 0 none 0
+PINATTR PinName A3
+PIN -80 16 none 0
+PINATTR PinName A4
+PIN 80 16 dot 0
+PINATTR PinName Y4
+PIN 80 0 dot 0
+PINATTR PinName Y3
+PIN 80 -16 dot 0
+PINATTR PinName Y2
+PIN 80 -32 dot 0
+PINATTR PinName Y1
+

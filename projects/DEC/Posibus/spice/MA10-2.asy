@@ -1,0 +1,112 @@
+Version 4
+Symboltype CELL
+LINE Normal 24 80 -24 80
+LINE Normal 8 32 16 32
+LINE Normal 8 48 16 48
+LINE Normal 8 64 16 64
+LINE Normal -16 32 -8 32
+LINE Normal -16 48 -8 48
+LINE Normal -16 64 -8 64
+LINE Normal 8 0 16 0
+LINE Normal 8 16 16 16
+LINE Normal -16 0 -8 0
+LINE Normal -16 16 -8 16
+LINE Normal 8 -48 16 -48
+LINE Normal 8 -32 16 -32
+LINE Normal 8 -16 16 -16
+LINE Normal -16 -48 -8 -48
+LINE Normal -16 -32 -8 -32
+LINE Normal -16 -16 -8 -16
+LINE Normal -24 -96 -24 80
+LINE Normal 24 80 24 -96
+LINE Normal -24 -96 24 -96
+LINE Normal 8 -80 16 -80
+LINE Normal 8 -64 16 -64
+LINE Normal -16 -80 -8 -80
+LINE Normal -16 -64 -8 -64
+WINDOW 3 -24 96 Left 2
+WINDOW 0 -24 -100 Left 2
+LINE Normal 48 64 16 64
+WINDOW 123 48 56 Right 2
+LINE Normal 48 48 16 48
+WINDOW 123 48 40 Right 2
+LINE Normal 48 32 16 32
+WINDOW 123 48 24 Right 2
+LINE Normal -48 64 -16 64
+WINDOW 123 -48 56 Right 2
+LINE Normal -48 48 -16 48
+WINDOW 123 -48 40 Right 2
+LINE Normal -48 32 -16 32
+WINDOW 123 -48 24 Right 2
+LINE Normal 48 16 16 16
+WINDOW 123 48 8 Right 2
+LINE Normal 48 0 16 0
+WINDOW 123 48 -8 Right 2
+LINE Normal -48 16 -16 16
+WINDOW 123 -48 8 Right 2
+LINE Normal -48 0 -16 0
+WINDOW 123 -48 -8 Right 2
+LINE Normal 48 -16 16 -16
+WINDOW 123 48 -24 Right 2
+LINE Normal 48 -32 16 -32
+WINDOW 123 48 -40 Right 2
+LINE Normal 48 -48 16 -48
+WINDOW 123 48 -56 Right 2
+LINE Normal -48 -16 -16 -16
+WINDOW 123 -48 -24 Right 2
+LINE Normal -48 -32 -16 -32
+WINDOW 123 -48 -40 Right 2
+LINE Normal -48 -48 -16 -48
+WINDOW 123 -48 -56 Right 2
+LINE Normal 48 -64 16 -64
+WINDOW 123 48 -72 Right 2
+LINE Normal 48 -80 16 -80
+WINDOW 123 48 -88 Right 2
+LINE Normal -48 -64 -16 -64
+WINDOW 123 -48 -72 Right 2
+LINE Normal -48 -80 -16 -80
+WINDOW 123 -48 -88 Right 2
+SYMATTR Value MA10-2
+SYMATTR Prefix X
+SYMATTR Description con-lstb/MA10-2
+PIN 48 64 none 0
+PINATTR PinName 1
+PIN 48 48 none 0
+PINATTR PinName 3
+PIN 48 32 none 0
+PINATTR PinName 5
+PIN -48 64 none 0
+PINATTR PinName 2
+PIN -48 48 none 0
+PINATTR PinName 4
+PIN -48 32 none 0
+PINATTR PinName 6
+PIN 48 16 none 0
+PINATTR PinName 7
+PIN 48 0 none 0
+PINATTR PinName 9
+PIN -48 16 none 0
+PINATTR PinName 8
+PIN -48 0 none 0
+PINATTR PinName 10
+PIN 48 -16 none 0
+PINATTR PinName 11
+PIN 48 -32 none 0
+PINATTR PinName 13
+PIN 48 -48 none 0
+PINATTR PinName 15
+PIN -48 -16 none 0
+PINATTR PinName 12
+PIN -48 -32 none 0
+PINATTR PinName 14
+PIN -48 -48 none 0
+PINATTR PinName 16
+PIN 48 -64 none 0
+PINATTR PinName 17
+PIN 48 -80 none 0
+PINATTR PinName 19
+PIN -48 -64 none 0
+PINATTR PinName 18
+PIN -48 -80 none 0
+PINATTR PinName 20
+

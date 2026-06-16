@@ -1,0 +1,16 @@
+LTspice 24.1.10 for Windows
+Circuit: \\wsl.localhost\Ubuntu\home\vrs\Eagle\projects\DEC\Posibus\spice\DW08B.net
+Start Time: Sun May 31 23:14:39 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 1.915 seconds.
+
+Files loaded:
+\\wsl.localhost\Ubuntu\home\vrs\Eagle\projects\DEC\Posibus\spice\DW08B.net
+C:\Users\vrs\AppData\Local\LTspice\lib\cmp\standard.dio
+\\wsl.localhost\Ubuntu\home\vrs\Eagle\projects\DEC\Posibus\spice\myparts.lib
+

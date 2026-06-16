@@ -1,0 +1,6 @@
+Stuff pertaining to implementing Posibus peripherals.
+<UL>
+<LI><b>io</b> is a template with the board outline and stacking headers.
+<LI><b>PPaddle</b> is the basic Posibus paddle card, for making cables.
+<LI><b>NPaddle</b> is the Negibus paddle card, for making cables.
+<LI><b>MMU8L</b> is a compatible MMU for the PDP-8/L.

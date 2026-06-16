@@ -1,0 +1,37 @@
+Version 4
+Symboltype CELL
+LINE Normal 24 48 -8 48
+LINE Normal 8 0 16 0
+LINE Normal 8 16 16 16
+LINE Normal 8 32 16 32
+LINE Normal -8 -48 -8 48
+LINE Normal 24 48 24 -48
+LINE Normal -8 -48 24 -48
+LINE Normal 8 -32 16 -32
+LINE Normal 8 -16 16 -16
+WINDOW 3 -8 64 Left 2
+WINDOW 0 -8 -52 Left 2
+LINE Normal 48 32 16 32
+WINDOW 123 48 24 Right 2
+LINE Normal 48 16 16 16
+WINDOW 123 48 8 Right 2
+LINE Normal 48 0 16 0
+WINDOW 123 48 -8 Right 2
+LINE Normal 48 -16 16 -16
+WINDOW 123 48 -24 Right 2
+LINE Normal 48 -32 16 -32
+WINDOW 123 48 -40 Right 2
+SYMATTR Value MA05-1
+SYMATTR Prefix X
+SYMATTR Description con-lstb/MA05-1
+PIN 48 32 none 0
+PINATTR PinName 1
+PIN 48 16 none 0
+PINATTR PinName 2
+PIN 48 0 none 0
+PINATTR PinName 3
+PIN 48 -16 none 0
+PINATTR PinName 4
+PIN 48 -32 none 0
+PINATTR PinName 5
+
