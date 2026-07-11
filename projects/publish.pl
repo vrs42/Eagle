@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 
-$SVNURL="https://svn.so-much-stuff.com/svn/trunk/Eagle/projects";
+#$SVNURL="https://svn.so-much-stuff.com/svn/trunk/Eagle/projects";
+$SVNURL="/pdp8/trunk/Eagle/projects";
 
 $head = <<'EOM';
 <?php
@@ -41,7 +42,7 @@ sub description {
       $tag = $1;
       $desc = $_;
       while ($desc !~ /<\/LI>/) {
-        $desc .= <INPUT> || die "$tag: Missing </LI> in DESCRIPTION";
+        $desc .= <INPUT> || die "$d:$tag: Missing </LI> in DESCRIPTION";
       }
       push(@work, $tag);
       # Remove old HTML that might make a mess later.

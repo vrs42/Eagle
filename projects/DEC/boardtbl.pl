@@ -3,7 +3,8 @@
 #
 # Scan the directory, find the boards, and make an HTML
 # table describing what we found.
-$WEBURL = "https://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
+#$WEBURL = "https://svn.so-much-stuff.com/svn/trunk/Eagle/projects/DEC";
+$WEBURL = "/pdp8/trunk/Eagle/projects/DEC";
 
 # <table border="1">
 # <tr>
@@ -151,7 +152,7 @@ for $d1 ('Axxx', 'Bxxx', 'Gxxx', 'Hxxx', 'Kxxx', 'Mxxx', 'Rxxx', 'Sxxx', 'Wxxx')
     @boards = sort byname keys %boards;
     @boards = grep(!/brd$/ && !/sch$/, @boards);
     $d = "$d1/$d2";
-    warn "$d2: no extant revisions??" unless @boards;
+    warn "$d2: no extant revisions??\n" unless @boards;
     foreach $b (sort byname @boards) {
       next unless $b =~ /^$d2([A-Z])$/
                || $b =~ /^$d2([S]..)$/
