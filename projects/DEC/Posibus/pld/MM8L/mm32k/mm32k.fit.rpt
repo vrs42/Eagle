@@ -1,5 +1,5 @@
 Fitter report for mm32k
-Mon Mar 16 23:35:46 2026
+Mon Jun 29 00:14:12 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,19 +16,17 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Output Pins
   9. Bidir Pins
  10. All Package Pins
- 11. I/O Standard
- 12. Dedicated Inputs I/O
- 13. Output Pin Default Load For Reported TCO
- 14. Fitter Resource Utilization by Entity
- 15. Non-Global High Fan-Out Signals
- 16. Other Routing Usage Summary
- 17. LAB External Interconnect
- 18. LAB Macrocells
- 19. Parallel Expander
- 20. Shareable Expander
- 21. Logic Cell Interconnection
- 22. Fitter Device Options
- 23. Fitter Messages
+ 11. Output Pin Default Load For Reported TCO
+ 12. Fitter Resource Utilization by Entity
+ 13. Non-Global High Fan-Out Signals
+ 14. Other Routing Usage Summary
+ 15. LAB External Interconnect
+ 16. LAB Macrocells
+ 17. Parallel Expander
+ 18. Shareable Expander
+ 19. Logic Cell Interconnection
+ 20. Fitter Device Options
+ 21. Fitter Messages
 
 
 
@@ -54,36 +52,36 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Fitter Summary                                                              ;
 +---------------------------+-------------------------------------------------+
-; Fitter Status             ; Successful - Mon Mar 16 23:35:46 2026           ;
+; Fitter Status             ; Successful - Mon Jun 29 00:14:12 2026           ;
 ; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name             ; mm32k                                           ;
 ; Top-level Entity Name     ; mm32k                                           ;
 ; Family                    ; MAX7000S                                        ;
-; Device                    ; EPM7128SLC84-15                                 ;
+; Device                    ; EPM7128SQC100-15                                ;
 ; Timing Models             ; Final                                           ;
-; Total macrocells          ; 66 / 128 ( 52 % )                               ;
-; Total pins                ; 62 / 68 ( 91 % )                                ;
+; Total macrocells          ; 62 / 128 ( 48 % )                               ;
+; Total pins                ; 73 / 84 ( 87 % )                                ;
 +---------------------------+-------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Fitter Settings                                                                                              ;
-+----------------------------------------------------------------------------+-----------------+---------------+
-; Option                                                                     ; Setting         ; Default Value ;
-+----------------------------------------------------------------------------+-----------------+---------------+
-; Device                                                                     ; EPM7128SLC84-15 ;               ;
-; Use smart compilation                                                      ; Off             ; Off           ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
-; Enable compact report table                                                ; Off             ; Off           ;
-; Optimize Multi-Corner Timing                                               ; Off             ; Off           ;
-; Optimize Timing for ECOs                                                   ; Off             ; Off           ;
-; Regenerate full fit report during ECO compiles                             ; Off             ; Off           ;
-; Optimize IOC Register Placement for Timing                                 ; Normal          ; Normal        ;
-; Fitter Initial Placement Seed                                              ; 1               ; 1             ;
-; Slow Slew Rate                                                             ; Off             ; Off           ;
-; Fitter Effort                                                              ; Auto Fit        ; Auto Fit      ;
-; Force Fitter to Avoid Periphery Placement Warnings                         ; Off             ; Off           ;
-+----------------------------------------------------------------------------+-----------------+---------------+
++---------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                               ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM7128SQC100-15 ;               ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Optimize Multi-Corner Timing                                               ; Off              ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off              ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off              ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; Normal           ; Normal        ;
+; Fitter Initial Placement Seed                                              ; 1                ; 1             ;
+; Slow Slew Rate                                                             ; Off              ; Off           ;
+; Fitter Effort                                                              ; Auto Fit         ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off              ; Off           ;
++----------------------------------------------------------------------------+------------------+---------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -100,7 +98,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in //wsl.localhost/Ubuntu/home/vrs/Verilog/projects/mmu8l/mm32k.pin.
+The pin-out file can be found in //wsl.localhost/Ubuntu/home/vrs/Eagle/projects/DEC/Posibus/pld/MM8L/mm32k/mm32k.pin.
 
 
 +--------------------------------------------------+
@@ -108,21 +106,21 @@ The pin-out file can be found in //wsl.localhost/Ubuntu/home/vrs/Verilog/project
 +------------------------------+-------------------+
 ; Resource                     ; Usage             ;
 +------------------------------+-------------------+
-; Logic cells                  ; 66 / 128 ( 52 % ) ;
+; Logic cells                  ; 62 / 128 ( 48 % ) ;
 ; Registers                    ; 0 / 128 ( 0 % )   ;
-; Number of pterms used        ; 142               ;
-; I/O pins                     ; 62 / 68 ( 91 % )  ;
-;     -- Clock pins            ; 1 / 2 ( 50 % )    ;
+; Number of pterms used        ; 112               ;
+; I/O pins                     ; 73 / 84 ( 87 % )  ;
+;     -- Clock pins            ; 0 / 2 ( 0 % )     ;
 ;     -- Dedicated input pins  ; 0 / 2 ( 0 % )     ;
 ;                              ;                   ;
 ; Global signals               ; 0                 ;
-; Shareable expanders          ; 4 / 128 ( 3 % )   ;
+; Shareable expanders          ; 5 / 128 ( 4 % )   ;
 ; Parallel expanders           ; 2 / 120 ( 2 % )   ;
-; Cells using turbo bit        ; 66 / 128 ( 52 % ) ;
-; Maximum fan-out              ; 29                ;
-; Highest non-global fan-out   ; 29                ;
-; Total fan-out                ; 332               ;
-; Average fan-out              ; 2.52              ;
+; Cells using turbo bit        ; 62 / 128 ( 48 % ) ;
+; Maximum fan-out              ; 17                ;
+; Highest non-global fan-out   ; 17                ;
+; Total fan-out                ; 382               ;
+; Average fan-out              ; 2.73              ;
 +------------------------------+-------------------+
 
 
@@ -131,33 +129,33 @@ The pin-out file can be found in //wsl.localhost/Ubuntu/home/vrs/Verilog/project
 +----------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
 ; Name     ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; I/O Standard ; Location assigned by ;
 +----------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
-; BMB[0]   ; 11    ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[10]  ; 76    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[11]  ; 75    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[1]   ; 10    ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[2]   ; 9     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[3]   ; 8     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[4]   ; 6     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[5]   ; 5     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[6]   ; 4     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[7]   ; 80    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[8]   ; 79    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; BMB[9]   ; 77    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; CLK      ; 83    ; --       ; --  ; 27                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; EA[0]    ; 70    ; --       ; 7   ; 4                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; EA[1]    ; 73    ; --       ; 8   ; 4                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; EA[2]    ; 74    ; --       ; 8   ; 4                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; FS_L[0]  ; 63    ; --       ; 7   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; FS_L[1]  ; 61    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; FS_L[2]  ; 60    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; FS_L[3]  ; 58    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; FS_L[4]  ; 57    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; FS_L[5]  ; 56    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; FS_L[6]  ; 55    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; FS_L[7]  ; 54    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; MBODD_P  ; 12    ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; MEMSTART ; 36    ; --       ; 4   ; 29                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
-; TP2      ; 34    ; --       ; 4   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; CLK      ; 63    ; --       ; 6   ; 14                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; EA[0]    ; 74    ; --       ; 7   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; EA[1]    ; 87    ; --       ; 8   ; 6                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; EA[2]    ; 51    ; --       ; 5   ; 7                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; FS_L[0]  ; 73    ; --       ; 7   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; FS_L[1]  ; 86    ; --       ; 8   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; FS_L[2]  ; 7     ; --       ; 2   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; FS_L[3]  ; 8     ; --       ; 2   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; FS_L[4]  ; 62    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; FS_L[5]  ; 85    ; --       ; 8   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; FS_L[6]  ; 60    ; --       ; 6   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; FS_L[7]  ; 72    ; --       ; 7   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MBODD_P  ; 9     ; --       ; 2   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[0]    ; 71    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[10]   ; 56    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[11]   ; 58    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[1]    ; 82    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[2]    ; 59    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[3]    ; 81    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[4]    ; 70    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[5]    ; 80    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[6]    ; 57    ; --       ; 6   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[7]    ; 69    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[8]    ; 67    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MB[9]    ; 79    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; MEMSTART ; 52    ; --       ; 5   ; 17                    ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; TP2      ; 83    ; --       ; 8   ; 2                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
 +----------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
 
 
@@ -166,46 +164,57 @@ The pin-out file can be found in //wsl.localhost/Ubuntu/home/vrs/Verilog/project
 +-----------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
 ; Name      ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
 +-----------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
-; CS_L      ; 40    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEMDONE_L ; 33    ; --       ; 4   ; no              ; no             ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[0]    ; 29    ; --       ; 3   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[10]   ; 16    ; --       ; 2   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[11]   ; 15    ; --       ; 2   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[1]    ; 28    ; --       ; 3   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[2]    ; 27    ; --       ; 3   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[3]    ; 25    ; --       ; 3   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[4]    ; 24    ; --       ; 3   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[5]    ; 22    ; --       ; 2   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[6]    ; 21    ; --       ; 2   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[7]    ; 20    ; --       ; 2   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[8]    ; 18    ; --       ; 2   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM[9]    ; 17    ; --       ; 2   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; MEM_P     ; 30    ; --       ; 3   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; OE_L      ; 41    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; STROBE_L  ; 35    ; --       ; 4   ; no              ; no             ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
-; WE_L      ; 44    ; --       ; 5   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; CS_L      ; 10    ; --       ; 2   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; DEL1      ; 2     ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; DEL2      ; 96    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; DEL3      ; 99    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; DEL4      ; 1     ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; DEL5      ; 95    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; DEL6      ; 94    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; EA_L[0]   ; 11    ; --       ; 2   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; EA_L[1]   ; 12    ; --       ; 2   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; EA_L[2]   ; 14    ; --       ; 2   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; EMA_L     ; 15    ; --       ; 2   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEMDONE_L ; 3     ; --       ; 1   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[0]    ; 50    ; --       ; 5   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[10]   ; 32    ; --       ; 4   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[11]   ; 34    ; --       ; 4   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[1]    ; 49    ; --       ; 5   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[2]    ; 48    ; --       ; 5   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[3]    ; 47    ; --       ; 5   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[4]    ; 46    ; --       ; 5   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[5]    ; 44    ; --       ; 5   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[6]    ; 43    ; --       ; 5   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[7]    ; 29    ; --       ; 4   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[8]    ; 30    ; --       ; 4   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM[9]    ; 31    ; --       ; 4   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; MEM_P     ; 42    ; --       ; 5   ; no              ; no             ; no         ; yes           ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; OE_L      ; 100   ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; PEMA      ; 16    ; --       ; 2   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; STROBE_L  ; 4     ; --       ; 1   ; no              ; no             ; yes        ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
+; WE_L      ; 98    ; --       ; 1   ; no              ; no             ; no         ; no            ; TTL          ; Fitter               ; 10 pF ; -                    ; -                   ;
 +-----------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Bidir Pins                                                                                                                                                                                                                                            ;
-+--------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+--------------------------+---------------------+
-; Name   ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Slow Slew Rate ; Open Drain ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source     ; Output Enable Group ;
-+--------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+--------------------------+---------------------+
-; D[0]   ; 68    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[10]  ; 51    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[11]  ; 81    ; --       ; 8   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[1]   ; 69    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[2]   ; 67    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[3]   ; 65    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[4]   ; 64    ; --       ; 7   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[5]   ; 50    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[6]   ; 49    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[7]   ; 48    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[8]   ; 46    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; D[9]   ; 45    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-; PARITY ; 39    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; User                 ; 10 pF ; WE_L$latch~10 (inverted) ; -                   ;
-+--------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+--------------------------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Bidir Pins                                                                                                                                                                                                                                           ;
++--------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-------------------------+---------------------+
+; Name   ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Slow Slew Rate ; Open Drain ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source    ; Output Enable Group ;
++--------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-------------------------+---------------------+
+; D[0]   ; 35    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[10]  ; 24    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[11]  ; 25    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[1]   ; 37    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[2]   ; 38    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[3]   ; 39    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[4]   ; 18    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[5]   ; 19    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[6]   ; 26    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[7]   ; 21    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[8]   ; 22    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; D[9]   ; 23    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
+; PARITY ; 33    ; --       ; 4   ; 1                     ; 0                  ; no     ; no             ; no              ; no             ; no         ; TTL          ; Fitter               ; 10 pF ; WE_L$latch~9 (inverted) ; -                   ;
++--------+-------+----------+-----+-----------------------+--------------------+--------+----------------+-----------------+----------------+------------+--------------+----------------------+-------+-------------------------+---------------------+
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -213,110 +222,108 @@ The pin-out file can be found in //wsl.localhost/Ubuntu/home/vrs/Verilog/project
 +----------+------------+----------+----------------+--------+--------------+---------+-----------------+
 ; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
 +----------+------------+----------+----------------+--------+--------------+---------+-----------------+
-; 1        ; 0          ; --       ; GND+           ;        ;              ;         ;                 ;
-; 2        ; 1          ; --       ; GND+           ;        ;              ;         ;                 ;
-; 3        ; 2          ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
-; 4        ; 3          ; --       ; BMB[6]         ; input  ; TTL          ;         ; Y               ;
-; 5        ; 4          ; --       ; BMB[5]         ; input  ; TTL          ;         ; Y               ;
-; 6        ; 5          ; --       ; BMB[4]         ; input  ; TTL          ;         ; Y               ;
-; 7        ; 6          ; --       ; GND            ; gnd    ;              ;         ;                 ;
-; 8        ; 7          ; --       ; BMB[3]         ; input  ; TTL          ;         ; Y               ;
-; 9        ; 8          ; --       ; BMB[2]         ; input  ; TTL          ;         ; Y               ;
-; 10       ; 9          ; --       ; BMB[1]         ; input  ; TTL          ;         ; Y               ;
-; 11       ; 10         ; --       ; BMB[0]         ; input  ; TTL          ;         ; Y               ;
-; 12       ; 11         ; --       ; MBODD_P        ; input  ; TTL          ;         ; Y               ;
-; 13       ; 12         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
-; 14       ; 13         ; --       ; TDI            ; input  ; TTL          ;         ; N               ;
-; 15       ; 14         ; --       ; MEM[11]        ; output ; TTL          ;         ; Y               ;
-; 16       ; 15         ; --       ; MEM[10]        ; output ; TTL          ;         ; Y               ;
-; 17       ; 16         ; --       ; MEM[9]         ; output ; TTL          ;         ; Y               ;
-; 18       ; 17         ; --       ; MEM[8]         ; output ; TTL          ;         ; Y               ;
-; 19       ; 18         ; --       ; GND            ; gnd    ;              ;         ;                 ;
-; 20       ; 19         ; --       ; MEM[7]         ; output ; TTL          ;         ; Y               ;
-; 21       ; 20         ; --       ; MEM[6]         ; output ; TTL          ;         ; Y               ;
-; 22       ; 21         ; --       ; MEM[5]         ; output ; TTL          ;         ; Y               ;
-; 23       ; 22         ; --       ; TMS            ; input  ; TTL          ;         ; N               ;
-; 24       ; 23         ; --       ; MEM[4]         ; output ; TTL          ;         ; Y               ;
-; 25       ; 24         ; --       ; MEM[3]         ; output ; TTL          ;         ; Y               ;
-; 26       ; 25         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
-; 27       ; 26         ; --       ; MEM[2]         ; output ; TTL          ;         ; Y               ;
-; 28       ; 27         ; --       ; MEM[1]         ; output ; TTL          ;         ; Y               ;
-; 29       ; 28         ; --       ; MEM[0]         ; output ; TTL          ;         ; Y               ;
-; 30       ; 29         ; --       ; MEM_P          ; output ; TTL          ;         ; Y               ;
-; 31       ; 30         ; --       ; RESERVED       ;        ;              ;         ;                 ;
-; 32       ; 31         ; --       ; GND            ; gnd    ;              ;         ;                 ;
-; 33       ; 32         ; --       ; MEMDONE_L      ; output ; TTL          ;         ; Y               ;
-; 34       ; 33         ; --       ; TP2            ; input  ; TTL          ;         ; Y               ;
-; 35       ; 34         ; --       ; STROBE_L       ; output ; TTL          ;         ; Y               ;
-; 36       ; 35         ; --       ; MEMSTART       ; input  ; TTL          ;         ; Y               ;
-; 37       ; 36         ; --       ; RESERVED       ;        ;              ;         ;                 ;
-; 38       ; 37         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
-; 39       ; 38         ; --       ; PARITY         ; bidir  ; TTL          ;         ; Y               ;
-; 40       ; 39         ; --       ; CS_L           ; output ; TTL          ;         ; Y               ;
-; 41       ; 40         ; --       ; OE_L           ; output ; TTL          ;         ; Y               ;
-; 42       ; 41         ; --       ; GND            ; gnd    ;              ;         ;                 ;
-; 43       ; 42         ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
-; 44       ; 43         ; --       ; WE_L           ; output ; TTL          ;         ; Y               ;
-; 45       ; 44         ; --       ; D[9]           ; bidir  ; TTL          ;         ; N               ;
-; 46       ; 45         ; --       ; D[8]           ; bidir  ; TTL          ;         ; N               ;
-; 47       ; 46         ; --       ; GND            ; gnd    ;              ;         ;                 ;
-; 48       ; 47         ; --       ; D[7]           ; bidir  ; TTL          ;         ; N               ;
-; 49       ; 48         ; --       ; D[6]           ; bidir  ; TTL          ;         ; N               ;
-; 50       ; 49         ; --       ; D[5]           ; bidir  ; TTL          ;         ; N               ;
-; 51       ; 50         ; --       ; D[10]          ; bidir  ; TTL          ;         ; N               ;
-; 52       ; 51         ; --       ; RESERVED       ;        ;              ;         ;                 ;
-; 53       ; 52         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
-; 54       ; 53         ; --       ; FS_L[7]        ; input  ; TTL          ;         ; Y               ;
-; 55       ; 54         ; --       ; FS_L[6]        ; input  ; TTL          ;         ; Y               ;
-; 56       ; 55         ; --       ; FS_L[5]        ; input  ; TTL          ;         ; Y               ;
-; 57       ; 56         ; --       ; FS_L[4]        ; input  ; TTL          ;         ; Y               ;
-; 58       ; 57         ; --       ; FS_L[3]        ; input  ; TTL          ;         ; Y               ;
-; 59       ; 58         ; --       ; GND            ; gnd    ;              ;         ;                 ;
-; 60       ; 59         ; --       ; FS_L[2]        ; input  ; TTL          ;         ; Y               ;
-; 61       ; 60         ; --       ; FS_L[1]        ; input  ; TTL          ;         ; Y               ;
-; 62       ; 61         ; --       ; TCK            ; input  ; TTL          ;         ; N               ;
-; 63       ; 62         ; --       ; FS_L[0]        ; input  ; TTL          ;         ; Y               ;
-; 64       ; 63         ; --       ; D[4]           ; bidir  ; TTL          ;         ; N               ;
-; 65       ; 64         ; --       ; D[3]           ; bidir  ; TTL          ;         ; N               ;
-; 66       ; 65         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
-; 67       ; 66         ; --       ; D[2]           ; bidir  ; TTL          ;         ; N               ;
-; 68       ; 67         ; --       ; D[0]           ; bidir  ; TTL          ;         ; N               ;
-; 69       ; 68         ; --       ; D[1]           ; bidir  ; TTL          ;         ; N               ;
-; 70       ; 69         ; --       ; EA[0]          ; input  ; TTL          ;         ; Y               ;
-; 71       ; 70         ; --       ; TDO            ; output ; TTL          ;         ; N               ;
-; 72       ; 71         ; --       ; GND            ; gnd    ;              ;         ;                 ;
-; 73       ; 72         ; --       ; EA[1]          ; input  ; TTL          ;         ; Y               ;
-; 74       ; 73         ; --       ; EA[2]          ; input  ; TTL          ;         ; Y               ;
-; 75       ; 74         ; --       ; BMB[11]        ; input  ; TTL          ;         ; Y               ;
-; 76       ; 75         ; --       ; BMB[10]        ; input  ; TTL          ;         ; Y               ;
-; 77       ; 76         ; --       ; BMB[9]         ; input  ; TTL          ;         ; Y               ;
-; 78       ; 77         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
-; 79       ; 78         ; --       ; BMB[8]         ; input  ; TTL          ;         ; Y               ;
-; 80       ; 79         ; --       ; BMB[7]         ; input  ; TTL          ;         ; Y               ;
-; 81       ; 80         ; --       ; D[11]          ; bidir  ; TTL          ;         ; N               ;
-; 82       ; 81         ; --       ; GND            ; gnd    ;              ;         ;                 ;
-; 83       ; 82         ; --       ; CLK            ; input  ; TTL          ;         ; Y               ;
-; 84       ; 83         ; --       ; GND+           ;        ;              ;         ;                 ;
+; 1        ; 10         ; --       ; DEL4           ; output ; TTL          ;         ; N               ;
+; 2        ; 11         ; --       ; DEL1           ; output ; TTL          ;         ; N               ;
+; 3        ; 12         ; --       ; MEMDONE_L      ; output ; TTL          ;         ; N               ;
+; 4        ; 13         ; --       ; STROBE_L       ; output ; TTL          ;         ; N               ;
+; 5        ; 14         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 6        ; 15         ; --       ; TDI            ; input  ; TTL          ;         ; N               ;
+; 7        ; 16         ; --       ; FS_L[2]        ; input  ; TTL          ;         ; N               ;
+; 8        ; 17         ; --       ; FS_L[3]        ; input  ; TTL          ;         ; N               ;
+; 9        ; 18         ; --       ; MBODD_P        ; input  ; TTL          ;         ; N               ;
+; 10       ; 19         ; --       ; CS_L           ; output ; TTL          ;         ; N               ;
+; 11       ; 20         ; --       ; EA_L[0]        ; output ; TTL          ;         ; N               ;
+; 12       ; 21         ; --       ; EA_L[1]        ; output ; TTL          ;         ; N               ;
+; 13       ; 22         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 14       ; 23         ; --       ; EA_L[2]        ; output ; TTL          ;         ; N               ;
+; 15       ; 24         ; --       ; EMA_L          ; output ; TTL          ;         ; N               ;
+; 16       ; 25         ; --       ; PEMA           ; output ; TTL          ;         ; N               ;
+; 17       ; 26         ; --       ; TMS            ; input  ; TTL          ;         ; N               ;
+; 18       ; 27         ; --       ; D[4]           ; bidir  ; TTL          ;         ; N               ;
+; 19       ; 28         ; --       ; D[5]           ; bidir  ; TTL          ;         ; N               ;
+; 20       ; 29         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 21       ; 30         ; --       ; D[7]           ; bidir  ; TTL          ;         ; N               ;
+; 22       ; 31         ; --       ; D[8]           ; bidir  ; TTL          ;         ; N               ;
+; 23       ; 32         ; --       ; D[9]           ; bidir  ; TTL          ;         ; N               ;
+; 24       ; 33         ; --       ; D[10]          ; bidir  ; TTL          ;         ; N               ;
+; 25       ; 34         ; --       ; D[11]          ; bidir  ; TTL          ;         ; N               ;
+; 26       ; 35         ; --       ; D[6]           ; bidir  ; TTL          ;         ; N               ;
+; 27       ; 36         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 28       ; 37         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 29       ; 38         ; --       ; MEM[7]         ; output ; TTL          ;         ; N               ;
+; 30       ; 39         ; --       ; MEM[8]         ; output ; TTL          ;         ; N               ;
+; 31       ; 40         ; --       ; MEM[9]         ; output ; TTL          ;         ; N               ;
+; 32       ; 41         ; --       ; MEM[10]        ; output ; TTL          ;         ; N               ;
+; 33       ; 42         ; --       ; PARITY         ; bidir  ; TTL          ;         ; N               ;
+; 34       ; 43         ; --       ; MEM[11]        ; output ; TTL          ;         ; N               ;
+; 35       ; 44         ; --       ; D[0]           ; bidir  ; TTL          ;         ; N               ;
+; 36       ; 45         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 37       ; 46         ; --       ; D[1]           ; bidir  ; TTL          ;         ; N               ;
+; 38       ; 47         ; --       ; D[2]           ; bidir  ; TTL          ;         ; N               ;
+; 39       ; 48         ; --       ; D[3]           ; bidir  ; TTL          ;         ; N               ;
+; 40       ; 49         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 41       ; 50         ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
+; 42       ; 51         ; --       ; MEM_P          ; output ; TTL          ;         ; N               ;
+; 43       ; 52         ; --       ; MEM[6]         ; output ; TTL          ;         ; N               ;
+; 44       ; 53         ; --       ; MEM[5]         ; output ; TTL          ;         ; N               ;
+; 45       ; 54         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 46       ; 55         ; --       ; MEM[4]         ; output ; TTL          ;         ; N               ;
+; 47       ; 56         ; --       ; MEM[3]         ; output ; TTL          ;         ; N               ;
+; 48       ; 57         ; --       ; MEM[2]         ; output ; TTL          ;         ; N               ;
+; 49       ; 58         ; --       ; MEM[1]         ; output ; TTL          ;         ; N               ;
+; 50       ; 59         ; --       ; MEM[0]         ; output ; TTL          ;         ; N               ;
+; 51       ; 60         ; --       ; EA[2]          ; input  ; TTL          ;         ; N               ;
+; 52       ; 61         ; --       ; MEMSTART       ; input  ; TTL          ;         ; N               ;
+; 53       ; 62         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 54       ; 63         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 55       ; 64         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 56       ; 65         ; --       ; MB[10]         ; input  ; TTL          ;         ; N               ;
+; 57       ; 66         ; --       ; MB[6]          ; input  ; TTL          ;         ; N               ;
+; 58       ; 67         ; --       ; MB[11]         ; input  ; TTL          ;         ; N               ;
+; 59       ; 68         ; --       ; MB[2]          ; input  ; TTL          ;         ; N               ;
+; 60       ; 69         ; --       ; FS_L[6]        ; input  ; TTL          ;         ; N               ;
+; 61       ; 70         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 62       ; 71         ; --       ; FS_L[4]        ; input  ; TTL          ;         ; N               ;
+; 63       ; 72         ; --       ; CLK            ; input  ; TTL          ;         ; N               ;
+; 64       ; 73         ; --       ; TCK            ; input  ; TTL          ;         ; N               ;
+; 65       ; 74         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 66       ; 75         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 67       ; 76         ; --       ; MB[8]          ; input  ; TTL          ;         ; N               ;
+; 68       ; 77         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 69       ; 78         ; --       ; MB[7]          ; input  ; TTL          ;         ; N               ;
+; 70       ; 79         ; --       ; MB[4]          ; input  ; TTL          ;         ; N               ;
+; 71       ; 80         ; --       ; MB[0]          ; input  ; TTL          ;         ; N               ;
+; 72       ; 81         ; --       ; FS_L[7]        ; input  ; TTL          ;         ; N               ;
+; 73       ; 82         ; --       ; FS_L[0]        ; input  ; TTL          ;         ; N               ;
+; 74       ; 83         ; --       ; EA[0]          ; input  ; TTL          ;         ; N               ;
+; 75       ; 84         ; --       ; TDO            ; output ; TTL          ;         ; N               ;
+; 76       ; 85         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 77       ; 86         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 78       ; 87         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 79       ; 88         ; --       ; MB[9]          ; input  ; TTL          ;         ; N               ;
+; 80       ; 89         ; --       ; MB[5]          ; input  ; TTL          ;         ; N               ;
+; 81       ; 90         ; --       ; MB[3]          ; input  ; TTL          ;         ; N               ;
+; 82       ; 91         ; --       ; MB[1]          ; input  ; TTL          ;         ; N               ;
+; 83       ; 92         ; --       ; TP2            ; input  ; TTL          ;         ; N               ;
+; 84       ; 93         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 85       ; 94         ; --       ; FS_L[5]        ; input  ; TTL          ;         ; N               ;
+; 86       ; 95         ; --       ; FS_L[1]        ; input  ; TTL          ;         ; N               ;
+; 87       ; 96         ; --       ; EA[1]          ; input  ; TTL          ;         ; N               ;
+; 88       ; 97         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 89       ; 98         ; --       ; GND+           ;        ;              ;         ;                 ;
+; 90       ; 99         ; --       ; GND+           ;        ;              ;         ;                 ;
+; 91       ; 0          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 92       ; 1          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 93       ; 2          ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
+; 94       ; 3          ; --       ; DEL6           ; output ; TTL          ;         ; N               ;
+; 95       ; 4          ; --       ; DEL5           ; output ; TTL          ;         ; N               ;
+; 96       ; 5          ; --       ; DEL2           ; output ; TTL          ;         ; N               ;
+; 97       ; 6          ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 98       ; 7          ; --       ; WE_L           ; output ; TTL          ;         ; N               ;
+; 99       ; 8          ; --       ; DEL3           ; output ; TTL          ;         ; N               ;
+; 100      ; 9          ; --       ; OE_L           ; output ; TTL          ;         ; N               ;
 +----------+------------+----------+----------------+--------+--------------+---------+-----------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
-
-
-+--------------------------------------------------------------------------------------------------+
-; I/O Standard                                                                                     ;
-+--------------+------------+----------------------+-------------------+-------------------+-------+
-; I/O Standard ; Input Vref ; Dedicated Input Pins ; Pins in I/O Bank1 ; Pins in I/O Bank2 ; Total ;
-+--------------+------------+----------------------+-------------------+-------------------+-------+
-; TTL          ; -          ; 1                    ; 0                 ; 0                 ; 1     ;
-+--------------+------------+----------------------+-------------------+-------------------+-------+
-
-
-+--------------------------------------------------------------------+
-; Dedicated Inputs I/O                                               ;
-+------+-------+-------+-------+--------------+------------+---------+
-; Name ; Pin # ; Type  ; VCCIO ; I/O Standard ; Input Vref ; Current ;
-+------+-------+-------+-------+--------------+------------+---------+
-; CLK  ; 83    ; Input ; --    ; TTL          ; -          ; 0 mA    ;
-+------+-------+-------+-------+--------------+------------+---------+
 
 
 +-----------------------------------------------+
@@ -336,7 +343,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+------------+------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+------------+------+---------------------+--------------+
-; |mm32k                     ; 66         ; 62   ; |mm32k              ; work         ;
+; |mm32k                     ; 62         ; 73   ; |mm32k              ; work         ;
 +----------------------------+------------+------+---------------------+--------------+
 
 
@@ -345,33 +352,32 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------+---------------+
 ; Name            ; Fan-Out       ;
 +-----------------+---------------+
-; MEMSTART        ; 29            ;
-; CLK             ; 27            ;
-; WE_L$latch~10   ; 13            ;
-; OE_L$latch~10   ; 13            ;
-; mt[12]~147      ; 8             ;
-; mt[11]~143      ; 8             ;
-; mt[10]~139      ; 8             ;
-; mt[9]~135       ; 8             ;
-; mt[8]~131       ; 8             ;
-; mt[7]~127       ; 8             ;
-; mt[6]~123       ; 8             ;
-; mt[5]~119       ; 8             ;
-; mt[4]~115       ; 8             ;
-; mt[3]~111       ; 8             ;
-; mt[2]~107       ; 8             ;
-; mt[1]~103       ; 8             ;
-; mt[0]~99        ; 8             ;
-; mt[13]~151      ; 7             ;
-; EA[0]           ; 4             ;
-; EA[1]           ; 4             ;
-; EA[2]           ; 4             ;
-; WE_L$latch~9    ; 4             ;
-; OE_L$latch~9    ; 4             ;
+; MEMSTART        ; 17            ;
+; WE_L$latch~9    ; 16            ;
+; OE_L$latch~9    ; 16            ;
+; CLK             ; 14            ;
+; mt[12]~147      ; 14            ;
+; mt[11]~143      ; 14            ;
+; mt[10]~139      ; 14            ;
+; mt[9]~135       ; 14            ;
+; mt[8]~131       ; 14            ;
+; mt[7]~127       ; 14            ;
+; mt[6]~123       ; 14            ;
+; mt[5]~119       ; 14            ;
+; mt[4]~115       ; 14            ;
+; mt[3]~111       ; 14            ;
+; mt[2]~107       ; 14            ;
+; mt[1]~103       ; 14            ;
+; mt[0]~100       ; 14            ;
+; mt[13]~151      ; 13            ;
+; EA[2]           ; 7             ;
+; EA[0]           ; 6             ;
+; EA[1]           ; 6             ;
 ; ddelay~9        ; 3             ;
 ; sdelay~9        ; 3             ;
-; comb~8          ; 3             ;
+; comb~10         ; 3             ;
 ; tp2_l~0         ; 3             ;
+; TP2             ; 2             ;
 ; FS_L[0]         ; 2             ;
 ; FS_L[1]         ; 2             ;
 ; FS_L[2]         ; 2             ;
@@ -380,22 +386,8 @@ Note: User assignments will override these defaults. The user specified values a
 ; FS_L[5]         ; 2             ;
 ; FS_L[6]         ; 2             ;
 ; FS_L[7]         ; 2             ;
-; TP2             ; 2             ;
 ; memdone~9       ; 2             ;
 ; strobe~9        ; 2             ;
-; mtnext[13]~142  ; 2             ;
-; mtnext[12]~138  ; 2             ;
-; mtnext[11]~134  ; 2             ;
-; mtnext[10]~130  ; 2             ;
-; mtnext[9]~126   ; 2             ;
-; mtnext[8]~122   ; 2             ;
-; mtnext[7]~118   ; 2             ;
-; mtnext[6]~114   ; 2             ;
-; mtnext[5]~110   ; 2             ;
-; mtnext[4]~106   ; 2             ;
-; mtnext[3]~102   ; 2             ;
-; mtnext[2]~98    ; 2             ;
-; mtnext[1]~93    ; 2             ;
 ; PARITY~0        ; 1             ;
 ; D[0]~11         ; 1             ;
 ; D[1]~10         ; 1             ;
@@ -410,24 +402,26 @@ Note: User assignments will override these defaults. The user specified values a
 ; D[10]~1         ; 1             ;
 ; D[11]~0         ; 1             ;
 ; MBODD_P         ; 1             ;
-; BMB[0]          ; 1             ;
-; BMB[1]          ; 1             ;
-; BMB[2]          ; 1             ;
-; BMB[3]          ; 1             ;
-; BMB[4]          ; 1             ;
-; BMB[5]          ; 1             ;
-; BMB[6]          ; 1             ;
-; BMB[7]          ; 1             ;
-; BMB[8]          ; 1             ;
-; BMB[9]          ; 1             ;
-; BMB[10]         ; 1             ;
-; BMB[11]         ; 1             ;
-; comb~10sexpand0 ; 1             ;
-; comb~9sexpand1  ; 1             ;
-; comb~12sexpand0 ; 1             ;
+; MB[0]           ; 1             ;
+; MB[1]           ; 1             ;
+; MB[2]           ; 1             ;
+; MB[3]           ; 1             ;
+; MB[4]           ; 1             ;
+; MB[5]           ; 1             ;
+; MB[6]           ; 1             ;
+; MB[7]           ; 1             ;
+; MB[8]           ; 1             ;
+; MB[9]           ; 1             ;
+; MB[10]          ; 1             ;
+; MB[11]          ; 1             ;
+; comb~12sexpand1 ; 1             ;
+; comb~13sexpand1 ; 1             ;
+; comb~14sexpand0 ; 1             ;
+; comb~15sexpand1 ; 1             ;
 ; comb~11sexpand0 ; 1             ;
-; comb~31         ; 1             ;
+; comb~38         ; 1             ;
 ; tp2_l~7         ; 1             ;
+; PARITY~3        ; 1             ;
 ; D[0]~58         ; 1             ;
 ; D[1]~56         ; 1             ;
 ; D[2]~54         ; 1             ;
@@ -440,74 +434,87 @@ Note: User assignments will override these defaults. The user specified values a
 ; D[9]~40         ; 1             ;
 ; D[10]~38        ; 1             ;
 ; D[11]~36        ; 1             ;
-; PARITY~3        ; 1             ;
 ; CS_L~2          ; 1             ;
+; Equal14~2       ; 1             ;
+; Equal11~7       ; 1             ;
+; Equal8~4        ; 1             ;
+; Equal10~6       ; 1             ;
+; Equal11~5       ; 1             ;
+; Equal7~5        ; 1             ;
+; EA[0]~10        ; 1             ;
+; EA[1]~8         ; 1             ;
+; EA[2]~6         ; 1             ;
+; EA[2]~4         ; 1             ;
+; Equal0~2        ; 1             ;
 ; MBODD_P~1       ; 1             ;
-; BMB[0]~34       ; 1             ;
-; BMB[1]~32       ; 1             ;
-; BMB[2]~30       ; 1             ;
-; BMB[3]~28       ; 1             ;
-; BMB[4]~26       ; 1             ;
-; BMB[5]~24       ; 1             ;
-; BMB[6]~22       ; 1             ;
-; BMB[7]~20       ; 1             ;
-; BMB[8]~18       ; 1             ;
-; BMB[9]~16       ; 1             ;
-; BMB[10]~14      ; 1             ;
-; BMB[11]~12      ; 1             ;
+; MB[0]~34        ; 1             ;
+; MB[1]~32        ; 1             ;
+; MB[2]~30        ; 1             ;
+; MB[3]~28        ; 1             ;
+; MB[4]~26        ; 1             ;
+; MB[5]~24        ; 1             ;
+; MB[6]~22        ; 1             ;
+; MB[7]~20        ; 1             ;
+; MB[8]~18        ; 1             ;
+; MB[9]~16        ; 1             ;
+; MB[10]~14       ; 1             ;
+; MB[11]~12       ; 1             ;
 +-----------------+---------------+
 
 
-+--------------------------------------------------+
-; Other Routing Usage Summary                      ;
-+-----------------------------+--------------------+
-; Other Routing Resource Type ; Usage              ;
-+-----------------------------+--------------------+
-; Output enables              ; 2 / 6 ( 33 % )     ;
-; PIA buffers                 ; 85 / 288 ( 30 % )  ;
-; PIAs                        ; 103 / 288 ( 36 % ) ;
-+-----------------------------+--------------------+
++-------------------------------------------------+
+; Other Routing Usage Summary                     ;
++-----------------------------+-------------------+
+; Other Routing Resource Type ; Usage             ;
++-----------------------------+-------------------+
+; Output enables              ; 2 / 6 ( 33 % )    ;
+; PIA buffers                 ; 80 / 288 ( 28 % ) ;
+; PIAs                        ; 80 / 288 ( 28 % ) ;
++-----------------------------+-------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB External Interconnect                                                   ;
 +-----------------------------------------------+-----------------------------+
-; LAB External Interconnects  (Average = 12.88) ; Number of LABs  (Total = 7) ;
+; LAB External Interconnects  (Average = 10.00) ; Number of LABs  (Total = 5) ;
 +-----------------------------------------------+-----------------------------+
-; 0 - 2                                         ; 2                           ;
-; 3 - 5                                         ; 1                           ;
-; 6 - 8                                         ; 2                           ;
-; 9 - 11                                        ; 0                           ;
-; 12 - 14                                       ; 0                           ;
-; 15 - 17                                       ; 0                           ;
-; 18 - 20                                       ; 0                           ;
-; 21 - 23                                       ; 0                           ;
-; 24 - 26                                       ; 0                           ;
-; 27 - 29                                       ; 3                           ;
+; 0 - 1                                         ; 3                           ;
+; 2 - 3                                         ; 0                           ;
+; 4 - 5                                         ; 0                           ;
+; 6 - 7                                         ; 0                           ;
+; 8 - 9                                         ; 1                           ;
+; 10 - 11                                       ; 1                           ;
+; 12 - 13                                       ; 0                           ;
+; 14 - 15                                       ; 0                           ;
+; 16 - 17                                       ; 1                           ;
+; 18 - 19                                       ; 0                           ;
+; 20 - 21                                       ; 1                           ;
+; 22 - 23                                       ; 0                           ;
+; 24 - 25                                       ; 1                           ;
 +-----------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------+
 ; LAB Macrocells                                                       ;
 +----------------------------------------+-----------------------------+
-; Number of Macrocells  (Average = 8.25) ; Number of LABs  (Total = 7) ;
+; Number of Macrocells  (Average = 7.75) ; Number of LABs  (Total = 5) ;
 +----------------------------------------+-----------------------------+
-; 0                                      ; 1                           ;
-; 1                                      ; 1                           ;
+; 0                                      ; 3                           ;
+; 1                                      ; 0                           ;
 ; 2                                      ; 0                           ;
 ; 3                                      ; 0                           ;
 ; 4                                      ; 0                           ;
-; 5                                      ; 1                           ;
-; 6                                      ; 1                           ;
-; 7                                      ; 1                           ;
-; 8                                      ; 0                           ;
+; 5                                      ; 0                           ;
+; 6                                      ; 0                           ;
+; 7                                      ; 0                           ;
+; 8                                      ; 1                           ;
 ; 9                                      ; 0                           ;
-; 10                                     ; 0                           ;
+; 10                                     ; 1                           ;
 ; 11                                     ; 0                           ;
-; 12                                     ; 0                           ;
+; 12                                     ; 1                           ;
 ; 13                                     ; 0                           ;
 ; 14                                     ; 0                           ;
-; 15                                     ; 1                           ;
+; 15                                     ; 0                           ;
 ; 16                                     ; 2                           ;
 +----------------------------------------+-----------------------------+
 
@@ -525,88 +532,84 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------------------------------------------+
 ; Shareable Expander                                                            ;
 +-------------------------------------------------+-----------------------------+
-; Number of shareable expanders  (Average = 0.50) ; Number of LABs  (Total = 1) ;
+; Number of shareable expanders  (Average = 0.63) ; Number of LABs  (Total = 2) ;
 +-------------------------------------------------+-----------------------------+
-; 0                                               ; 7                           ;
-; 1                                               ; 0                           ;
+; 0                                               ; 6                           ;
+; 1                                               ; 1                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                        ;
-+-----+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-; LAB ; Logic Cell ; Input                                                                                                                                                                              ; Output                                                                                                                    ;
-+-----+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-;  A  ; LC15       ; mt[0]~99, CLK, mtnext[1]~93, MEMSTART                                                                                                                                              ; mtnext[1]~93, mt[1]~103                                                                                                   ;
-;  A  ; LC3        ; FS_L[0], MEMSTART, EA[2], EA[1], EA[0], FS_L[4], FS_L[6]                                                                                                                           ; comb~8                                                                                                                    ;
-;  A  ; LC1        ; FS_L[0], TP2, EA[2], EA[1], EA[0], FS_L[4], FS_L[6]                                                                                                                                ; tp2_l~0                                                                                                                   ;
-;  A  ; LC2        ; tp2_l~7, FS_L[2], TP2, EA[2], EA[1], EA[0], FS_L[1], FS_L[5], FS_L[7], FS_L[3]                                                                                                     ; WE_L$latch~9, ddelay~9, comb~12sexpand0                                                                                   ;
-;  A  ; LC4        ; comb~31, FS_L[2], MEMSTART, EA[2], EA[1], EA[0], FS_L[1], FS_L[5], FS_L[7], FS_L[3]                                                                                                ; OE_L$latch~9, sdelay~9, comb~11sexpand0                                                                                   ;
-;  A  ; LC7        ; mtnext[1]~93, MEMSTART, CLK, mt[1]~103                                                                                                                                             ; mt[1]~103, mtnext[2]~98, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1    ;
-;  A  ; LC13       ; mt[1]~103, MEMSTART, CLK, mtnext[2]~98                                                                                                                                             ; mtnext[2]~98, mt[2]~107                                                                                                   ;
-;  A  ; LC16       ; mtnext[2]~98, MEMSTART, CLK, mt[2]~107                                                                                                                                             ; mt[2]~107, mtnext[3]~102, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1   ;
-;  A  ; LC6        ; mt[2]~107, MEMSTART, CLK, mtnext[3]~102                                                                                                                                            ; mtnext[3]~102, mt[3]~111                                                                                                  ;
-;  A  ; LC12       ; mtnext[3]~102, MEMSTART, CLK, mt[3]~111                                                                                                                                            ; mt[3]~111, mtnext[4]~106, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1   ;
-;  A  ; LC14       ; mt[3]~111, MEMSTART, CLK, mtnext[4]~106                                                                                                                                            ; mtnext[4]~106, mt[4]~115                                                                                                  ;
-;  A  ; LC11       ; mtnext[4]~106, MEMSTART, CLK, mt[4]~115                                                                                                                                            ; mt[4]~115, mtnext[5]~110, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1   ;
-;  A  ; LC9        ; mt[4]~115, MEMSTART, CLK, mtnext[5]~110                                                                                                                                            ; mtnext[5]~110, mt[5]~119                                                                                                  ;
-;  A  ; LC10       ; mtnext[5]~110, MEMSTART, CLK, mt[5]~119                                                                                                                                            ; mt[5]~119, mtnext[6]~114, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1   ;
-;  A  ; LC5        ; mt[5]~119, MEMSTART, CLK, mtnext[6]~114                                                                                                                                            ; mtnext[6]~114, mt[6]~123                                                                                                  ;
-;  A  ; LC8        ; mtnext[6]~114, MEMSTART, CLK, mt[6]~123                                                                                                                                            ; mt[6]~123, mtnext[7]~118, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9   ;
-;  B  ; LC25       ; D[9]                                                                                                                                                                               ; MEM[9]                                                                                                                    ;
-;  B  ; LC27       ; D[10]                                                                                                                                                                              ; MEM[10]                                                                                                                   ;
-;  B  ; LC17       ; D[5]                                                                                                                                                                               ; MEM[5]                                                                                                                    ;
-;  B  ; LC19       ; D[6]                                                                                                                                                                               ; MEM[6]                                                                                                                    ;
-;  B  ; LC29       ; D[11]                                                                                                                                                                              ; MEM[11]                                                                                                                   ;
-;  B  ; LC21       ; D[7]                                                                                                                                                                               ; MEM[7]                                                                                                                    ;
-;  B  ; LC24       ; D[8]                                                                                                                                                                               ; MEM[8]                                                                                                                    ;
-;  C  ; LC38       ; D[0]                                                                                                                                                                               ; MEM[0]                                                                                                                    ;
-;  C  ; LC40       ; D[1]                                                                                                                                                                               ; MEM[1]                                                                                                                    ;
-;  C  ; LC45       ; D[3]                                                                                                                                                                               ; MEM[3]                                                                                                                    ;
-;  C  ; LC43       ; D[2]                                                                                                                                                                               ; MEM[2]                                                                                                                    ;
-;  C  ; LC46       ; D[4]                                                                                                                                                                               ; MEM[4]                                                                                                                    ;
-;  C  ; LC37       ; PARITY                                                                                                                                                                             ; MEM_P                                                                                                                     ;
-;  D  ; LC64       ; memdone~9, ddelay~9, comb~10sexpand0                                                                                                                                               ; memdone~9, MEMDONE_L                                                                                                      ;
-;  D  ; LC56       ; WE_L$latch~9                                                                                                                                                                       ; D[11], D[10], D[9], D[8], D[7], D[6], D[5], D[4], D[3], D[2], D[1], D[0], PARITY                                          ;
-;  D  ; LC53       ; MBODD_P                                                                                                                                                                            ; PARITY                                                                                                                    ;
-;  D  ; LC52       ; CLK, mt[0]~99, MEMSTART                                                                                                                                                            ; mt[0]~99, mtnext[1]~93, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1     ;
-;  D  ; LC62       ; mtnext[13]~142, MEMSTART, CLK, mt[13]~151                                                                                                                                          ; mt[13]~151, OE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1, comb~10sexpand0, WE_L$latch~9                 ;
-;  D  ; LC55       ; mt[10]~139, MEMSTART, CLK, mtnext[11]~134                                                                                                                                          ; mtnext[11]~134, mt[11]~143                                                                                                ;
-;  D  ; LC57       ; mtnext[11]~134, MEMSTART, CLK, mt[11]~143                                                                                                                                          ; mt[11]~143, mtnext[12]~138, OE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1, comb~10sexpand0, WE_L$latch~9 ;
-;  D  ; LC63       ; mt[11]~143, MEMSTART, CLK, mtnext[12]~138                                                                                                                                          ; mtnext[12]~138, mt[12]~147                                                                                                ;
-;  D  ; LC50       ; mtnext[12]~138, MEMSTART, CLK, mt[12]~147                                                                                                                                          ; mt[12]~147, mtnext[13]~142, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1 ;
-;  D  ; LC61       ; mt[12]~147, MEMSTART, CLK, mtnext[13]~142                                                                                                                                          ; mtnext[13]~142, mt[13]~151                                                                                                ;
-;  D  ; LC49       ; comb~8, OE_L$latch~9, mt[13]~151, mt[11]~143, mt[0]~99, mt[12]~147, mt[10]~139, mt[2]~107, mt[1]~103, mt[9]~135, mt[8]~131, mt[7]~127, mt[6]~123, mt[5]~119, mt[4]~115, mt[3]~111  ; OE_L$latch~9, OE_L, CS_L~2, OE_L$latch~10                                                                                 ;
-;  D  ; LC51       ; WE_L$latch~9, OE_L$latch~9                                                                                                                                                         ; CS_L                                                                                                                      ;
-;  D  ; LC60       ; sdelay~9, comb~8, comb~11sexpand0                                                                                                                                                  ; sdelay~9, strobe~9, comb~9sexpand1                                                                                        ;
-;  D  ; LC58       ; tp2_l~0, ddelay~9, comb~12sexpand0                                                                                                                                                 ; ddelay~9, memdone~9, comb~10sexpand0                                                                                      ;
-;  D  ; LC59       ; strobe~9, sdelay~9, comb~9sexpand1                                                                                                                                                 ; strobe~9, STROBE_L                                                                                                        ;
-;  E  ; LC77       ; BMB[10]                                                                                                                                                                            ; D[10]                                                                                                                     ;
-;  E  ; LC67       ; BMB[9]                                                                                                                                                                             ; D[9]                                                                                                                      ;
-;  E  ; LC71       ; mtnext[10]~130, MEMSTART, CLK, mt[10]~139                                                                                                                                          ; mt[10]~139, mtnext[11]~134, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9 ;
-;  E  ; LC79       ; mt[8]~131, MEMSTART, CLK, mtnext[9]~126                                                                                                                                            ; mtnext[9]~126, mt[9]~135                                                                                                  ;
-;  E  ; LC76       ; mtnext[8]~122, MEMSTART, CLK, mt[8]~131                                                                                                                                            ; mt[8]~131, mtnext[9]~126, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9   ;
-;  E  ; LC68       ; mt[7]~127, MEMSTART, CLK, mtnext[8]~122                                                                                                                                            ; mtnext[8]~122, mt[8]~131                                                                                                  ;
-;  E  ; LC78       ; mtnext[7]~118, MEMSTART, CLK, mt[7]~127                                                                                                                                            ; mt[7]~127, mtnext[8]~122, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9   ;
-;  E  ; LC70       ; mt[6]~123, MEMSTART, CLK, mtnext[7]~118                                                                                                                                            ; mtnext[7]~118, mt[7]~127                                                                                                  ;
-;  E  ; LC75       ; BMB[5]                                                                                                                                                                             ; D[5]                                                                                                                      ;
-;  E  ; LC73       ; BMB[6]                                                                                                                                                                             ; D[6]                                                                                                                      ;
-;  E  ; LC65       ; tp2_l~0, WE_L$latch~9, mt[0]~99, mt[13]~151, mt[12]~147, mt[11]~143, mt[10]~139, mt[2]~107, mt[1]~103, mt[9]~135, mt[8]~131, mt[7]~127, mt[6]~123, mt[5]~119, mt[4]~115, mt[3]~111 ; WE_L$latch~9, CS_L~2, WE_L, WE_L$latch~10                                                                                 ;
-;  E  ; LC66       ; mt[9]~135, MEMSTART, CLK, mtnext[10]~130                                                                                                                                           ; mtnext[10]~130, mt[10]~139                                                                                                ;
-;  E  ; LC72       ; BMB[7]                                                                                                                                                                             ; D[7]                                                                                                                      ;
-;  E  ; LC69       ; BMB[8]                                                                                                                                                                             ; D[8]                                                                                                                      ;
-;  E  ; LC80       ; OE_L$latch~9                                                                                                                                                                       ; MEM_P, MEM[11], MEM[10], MEM[9], MEM[8], MEM[7], MEM[6], MEM[5], MEM[4], MEM[3], MEM[2], MEM[1], MEM[0]                   ;
-;  E  ; LC74       ; mtnext[9]~126, MEMSTART, CLK, mt[9]~135                                                                                                                                            ; mt[9]~135, mtnext[10]~130, OE_L$latch~9, comb~10sexpand0, WE_L$latch~9, comb~11sexpand0, comb~12sexpand0, comb~9sexpand1  ;
-;  G  ; LC105      ; BMB[0]                                                                                                                                                                             ; D[0]                                                                                                                      ;
-;  G  ; LC107      ; BMB[1]                                                                                                                                                                             ; D[1]                                                                                                                      ;
-;  G  ; LC104      ; BMB[2]                                                                                                                                                                             ; D[2]                                                                                                                      ;
-;  G  ; LC99       ; BMB[4]                                                                                                                                                                             ; D[4]                                                                                                                      ;
-;  G  ; LC101      ; BMB[3]                                                                                                                                                                             ; D[3]                                                                                                                      ;
-;  H  ; LC128      ; BMB[11]                                                                                                                                                                            ; D[11]                                                                                                                     ;
-+-----+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                      ;
++-----+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                                                                               ; Output                                                                                                                                                                                 ;
++-----+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC15       ; mt[10]~139, MEMSTART, CLK, mt[11]~143                                                                                                                                               ; mt[11]~143, mt[12]~147, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, Equal8~4, comb~15sexpand1, WE_L$latch~9 ;
+;  A  ; LC14       ; mt[9]~135, mt[8]~131, mt[11]~143, mt[10]~139, mt[12]~147, mt[7]~127, mt[6]~123, mt[1]~103, mt[2]~107, mt[4]~115, mt[5]~119, mt[0]~100, mt[3]~111, mt[13]~151                        ; DEL5                                                                                                                                                                                   ;
+;  A  ; LC9        ; mt[8]~131, mt[9]~135, mt[7]~127, mt[6]~123, mt[1]~103, mt[2]~107, mt[4]~115, mt[5]~119, mt[0]~100, mt[3]~111, mt[13]~151, mt[11]~143, mt[10]~139, mt[12]~147                        ; DEL3                                                                                                                                                                                   ;
+;  A  ; LC6        ; mt[9]~135, mt[8]~131, mt[11]~143, mt[10]~139, mt[12]~147, mt[7]~127, mt[6]~123, mt[1]~103, mt[2]~107, mt[4]~115, mt[5]~119, mt[0]~100, mt[3]~111, mt[13]~151                        ; DEL4                                                                                                                                                                                   ;
+;  A  ; LC5        ; mt[3]~111, mt[13]~151, mt[7]~127, mt[6]~123, mt[1]~103, mt[2]~107, mt[4]~115, mt[5]~119, mt[0]~100, mt[9]~135, mt[8]~131, mt[11]~143, mt[10]~139, mt[12]~147                        ; DEL1                                                                                                                                                                                   ;
+;  A  ; LC10       ; mt[12]~147, MEMSTART, CLK, mt[13]~151                                                                                                                                               ; mt[13]~151, Equal7~5, Equal11~5, Equal10~6, Equal8~4, Equal11~7, Equal14~2, OE_L$latch~9, comb~15sexpand1, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, WE_L$latch~9             ;
+;  A  ; LC2        ; mt[11]~143, MEMSTART, CLK, mt[12]~147                                                                                                                                               ; mt[12]~147, mt[13]~151, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, Equal8~4, comb~15sexpand1, WE_L$latch~9 ;
+;  A  ; LC12       ; mt[9]~135, MEMSTART, CLK, mt[10]~139                                                                                                                                                ; mt[10]~139, mt[11]~143, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, Equal8~4, comb~15sexpand1, WE_L$latch~9 ;
+;  A  ; LC13       ; mt[6]~123, mt[7]~127, mt[3]~111, mt[13]~151, mt[0]~100, mt[5]~119, mt[4]~115, mt[2]~107, mt[1]~103, mt[9]~135, mt[8]~131, mt[11]~143, mt[10]~139, mt[12]~147                        ; DEL2                                                                                                                                                                                   ;
+;  A  ; LC16       ; mt[10]~139, mt[12]~147, mt[11]~143, mt[8]~131, mt[9]~135, mt[7]~127, mt[6]~123, mt[1]~103, mt[2]~107, mt[4]~115, mt[5]~119, mt[0]~100, mt[3]~111, mt[13]~151                        ; DEL6                                                                                                                                                                                   ;
+;  A  ; LC8        ; comb~10, OE_L$latch~9, mt[12]~147, mt[11]~143, mt[10]~139, mt[9]~135, mt[8]~131, mt[3]~111, mt[13]~151, mt[0]~100, mt[7]~127, mt[6]~123, mt[5]~119, mt[4]~115, mt[2]~107, mt[1]~103 ; OE_L$latch~9, OE_L, CS_L~2, MEM[11], MEM[10], MEM[9], MEM[8], MEM[7], MEM[6], MEM[5], MEM[4], MEM[3], MEM[2], MEM[1], MEM[0], MEM_P                                                    ;
+;  A  ; LC7        ; sdelay~9, comb~10, comb~15sexpand1                                                                                                                                                  ; sdelay~9, strobe~9, comb~13sexpand1                                                                                                                                                    ;
+;  A  ; LC11       ; tp2_l~0, WE_L$latch~9, mt[0]~100, mt[7]~127, mt[6]~123, mt[5]~119, mt[4]~115, mt[3]~111, mt[2]~107, mt[1]~103, mt[13]~151, mt[9]~135, mt[8]~131, mt[11]~143, mt[10]~139, mt[12]~147 ; D[11], D[10], D[9], D[8], D[7], D[6], D[5], D[4], D[3], D[2], D[1], D[0], PARITY, WE_L$latch~9, CS_L~2, WE_L                                                                           ;
+;  A  ; LC4        ; tp2_l~0, ddelay~9, comb~14sexpand0                                                                                                                                                  ; ddelay~9, memdone~9, comb~12sexpand1                                                                                                                                                   ;
+;  A  ; LC1        ; strobe~9, sdelay~9, comb~13sexpand1                                                                                                                                                 ; strobe~9, STROBE_L                                                                                                                                                                     ;
+;  A  ; LC3        ; memdone~9, ddelay~9, comb~12sexpand1                                                                                                                                                ; memdone~9, MEMDONE_L                                                                                                                                                                   ;
+;  B  ; LC19       ; EA[2]                                                                                                                                                                               ; EMA_L                                                                                                                                                                                  ;
+;  B  ; LC23       ; mt[1]~103, MEMSTART, CLK, mt[2]~107                                                                                                                                                 ; mt[2]~107, mt[3]~111, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, Equal8~4, comb~15sexpand1, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, WE_L$latch~9   ;
+;  B  ; LC26       ; mt[2]~107, MEMSTART, CLK, mt[3]~111                                                                                                                                                 ; mt[3]~111, mt[4]~115, Equal7~5, Equal11~5, Equal10~6, Equal8~4, Equal11~7, Equal14~2, OE_L$latch~9, comb~15sexpand1, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, WE_L$latch~9   ;
+;  B  ; LC28       ; mt[4]~115, MEMSTART, CLK, mt[5]~119                                                                                                                                                 ; mt[5]~119, mt[6]~123, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, Equal8~4, comb~15sexpand1, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, WE_L$latch~9   ;
+;  B  ; LC29       ; mt[5]~119, MEMSTART, CLK, mt[6]~123                                                                                                                                                 ; mt[6]~123, mt[7]~127, Equal7~5, Equal11~5, Equal10~6, Equal8~4, Equal11~7, Equal14~2, comb~15sexpand1, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, WE_L$latch~9   ;
+;  B  ; LC30       ; mt[6]~123, MEMSTART, CLK, mt[7]~127                                                                                                                                                 ; mt[7]~127, mt[8]~131, Equal7~5, Equal11~5, Equal10~6, Equal8~4, Equal11~7, Equal14~2, comb~15sexpand1, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, WE_L$latch~9   ;
+;  B  ; LC17       ; EA[2], EA[1], EA[0]                                                                                                                                                                 ; PEMA                                                                                                                                                                                   ;
+;  B  ; LC31       ; mt[7]~127, MEMSTART, CLK, mt[8]~131                                                                                                                                                 ; mt[8]~131, mt[9]~135, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, Equal8~4, comb~15sexpand1, WE_L$latch~9   ;
+;  B  ; LC21       ; EA[2]                                                                                                                                                                               ; EA_L[2]                                                                                                                                                                                ;
+;  B  ; LC22       ; EA[1]                                                                                                                                                                               ; EA_L[1]                                                                                                                                                                                ;
+;  B  ; LC24       ; EA[0]                                                                                                                                                                               ; EA_L[0]                                                                                                                                                                                ;
+;  B  ; LC18       ; mt[0]~100, MEMSTART, comb~11sexpand0                                                                                                                                                ; mt[0]~100, mt[1]~103, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, Equal8~4, comb~15sexpand1, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, WE_L$latch~9   ;
+;  B  ; LC32       ; mt[8]~131, MEMSTART, CLK, mt[9]~135                                                                                                                                                 ; mt[9]~135, mt[10]~139, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, Equal8~4, comb~15sexpand1, WE_L$latch~9  ;
+;  B  ; LC20       ; mt[0]~100, MEMSTART, CLK, mt[1]~103                                                                                                                                                 ; mt[1]~103, mt[2]~107, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, Equal8~4, comb~15sexpand1, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, WE_L$latch~9   ;
+;  B  ; LC27       ; mt[3]~111, MEMSTART, CLK, mt[4]~115                                                                                                                                                 ; mt[4]~115, mt[5]~119, Equal7~5, Equal11~5, Equal10~6, Equal11~7, Equal14~2, Equal8~4, comb~15sexpand1, OE_L$latch~9, comb~14sexpand0, comb~13sexpand1, comb~12sexpand1, WE_L$latch~9   ;
+;  B  ; LC25       ; WE_L$latch~9, OE_L$latch~9                                                                                                                                                          ; CS_L                                                                                                                                                                                   ;
+;  C  ; LC38       ; MB[10]                                                                                                                                                                              ; D[10]                                                                                                                                                                                  ;
+;  C  ; LC40       ; MB[9]                                                                                                                                                                               ; D[9]                                                                                                                                                                                   ;
+;  C  ; LC41       ; MB[8]                                                                                                                                                                               ; D[8]                                                                                                                                                                                   ;
+;  C  ; LC43       ; MB[7]                                                                                                                                                                               ; D[7]                                                                                                                                                                                   ;
+;  C  ; LC35       ; MB[6]                                                                                                                                                                               ; D[6]                                                                                                                                                                                   ;
+;  C  ; LC45       ; MB[5]                                                                                                                                                                               ; D[5]                                                                                                                                                                                   ;
+;  C  ; LC46       ; MB[4]                                                                                                                                                                               ; D[4]                                                                                                                                                                                   ;
+;  C  ; LC34       ; tp2_l~7, FS_L[2], TP2, EA[2], EA[1], EA[0], FS_L[1], FS_L[5], FS_L[7], FS_L[3]                                                                                                      ; WE_L$latch~9, ddelay~9, comb~14sexpand0                                                                                                                                                ;
+;  C  ; LC47       ; FS_L[0], MEMSTART, EA[2], EA[1], EA[0], FS_L[4], FS_L[6]                                                                                                                            ; comb~10                                                                                                                                                                                ;
+;  C  ; LC48       ; comb~38, FS_L[2], MEMSTART, EA[2], EA[1], EA[0], FS_L[1], FS_L[5], FS_L[7], FS_L[3]                                                                                                 ; OE_L$latch~9, sdelay~9, comb~15sexpand1                                                                                                                                                ;
+;  C  ; LC37       ; MB[11]                                                                                                                                                                              ; D[11]                                                                                                                                                                                  ;
+;  C  ; LC33       ; FS_L[0], TP2, EA[2], EA[1], EA[0], FS_L[4], FS_L[6]                                                                                                                                 ; tp2_l~0                                                                                                                                                                                ;
+;  D  ; LC53       ; MB[1]                                                                                                                                                                               ; D[1]                                                                                                                                                                                   ;
+;  D  ; LC56       ; D[11]                                                                                                                                                                               ; MEM[11]                                                                                                                                                                                ;
+;  D  ; LC59       ; D[10]                                                                                                                                                                               ; MEM[10]                                                                                                                                                                                ;
+;  D  ; LC51       ; MB[2]                                                                                                                                                                               ; D[2]                                                                                                                                                                                   ;
+;  D  ; LC62       ; D[8]                                                                                                                                                                                ; MEM[8]                                                                                                                                                                                 ;
+;  D  ; LC64       ; D[7]                                                                                                                                                                                ; MEM[7]                                                                                                                                                                                 ;
+;  D  ; LC61       ; D[9]                                                                                                                                                                                ; MEM[9]                                                                                                                                                                                 ;
+;  D  ; LC49       ; MB[3]                                                                                                                                                                               ; D[3]                                                                                                                                                                                   ;
+;  D  ; LC57       ; MBODD_P                                                                                                                                                                             ; PARITY                                                                                                                                                                                 ;
+;  D  ; LC54       ; MB[0]                                                                                                                                                                               ; D[0]                                                                                                                                                                                   ;
+;  E  ; LC67       ; D[6]                                                                                                                                                                                ; MEM[6]                                                                                                                                                                                 ;
+;  E  ; LC69       ; D[5]                                                                                                                                                                                ; MEM[5]                                                                                                                                                                                 ;
+;  E  ; LC70       ; D[4]                                                                                                                                                                                ; MEM[4]                                                                                                                                                                                 ;
+;  E  ; LC72       ; D[3]                                                                                                                                                                                ; MEM[3]                                                                                                                                                                                 ;
+;  E  ; LC75       ; D[1]                                                                                                                                                                                ; MEM[1]                                                                                                                                                                                 ;
+;  E  ; LC77       ; D[0]                                                                                                                                                                                ; MEM[0]                                                                                                                                                                                 ;
+;  E  ; LC65       ; PARITY                                                                                                                                                                              ; MEM_P                                                                                                                                                                                  ;
+;  E  ; LC73       ; D[2]                                                                                                                                                                                ; MEM[2]                                                                                                                                                                                 ;
++-----+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -627,12 +630,10 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (119006): Selected device EPM7128SLC84-15 for design "mm32k"
-Warning (163076): Macrocell buffer inserted after node "OE_L$latch~9"
-Warning (163076): Macrocell buffer inserted after node "WE_L$latch~9"
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4703 megabytes
-    Info: Processing ended: Mon Mar 16 23:35:46 2026
+Info (119006): Selected device EPM7128SQC100-15 for design "mm32k"
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4702 megabytes
+    Info: Processing ended: Mon Jun 29 00:14:12 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

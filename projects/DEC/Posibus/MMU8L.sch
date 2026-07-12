@@ -8177,8 +8177,8 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <part name="PROG1" library="con-harting-ml" deviceset="ML10" device="" value=" "/>
 <part name="V3" library="supply2" deviceset="VCC" device=""/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
-<part name="E1" library="atmel-cpld" deviceset="ATF150X100" device="PQFP" value="ATF1508-100"/>
-<part name="E2" library="atmel-cpld" deviceset="ATF150X100" device="PQFP" value="ATF1508-100"/>
+<part name="MMU8L" library="atmel-cpld" deviceset="ATF150X100" device="PQFP" value="ATF1508-100"/>
+<part name="MM32K" library="atmel-cpld" deviceset="ATF150X100" device="PQFP" value="ATF1508-100"/>
 <part name="C1" library="rcl" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="C7" library="rcl" deviceset="C-US" device="C0805" value="0.1uF"/>
@@ -8234,6 +8234,8 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <part name="R9" library="rcl" deviceset="R-US_" device="M0805" value="100"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="M0805" value="100"/>
 <part name="V48" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
+<part name="PANEL" library="con-lstb" deviceset="MA10-2" device="" value="10x2"/>
 </parts>
 <sheets>
 <sheet>
@@ -8404,21 +8406,21 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="DAT2P" gate="G$1" pin="7"/>
 </segment>
 </net>
-<net name="EXDA0" class="0">
+<net name="!EXDA0" class="0">
 <segment>
 <wire x1="137.16" y1="137.16" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
 <label x="137.16" y="137.16" size="1.778" layer="95"/>
 <pinref part="DAT2P" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="EXDA1" class="0">
+<net name="!EXDA1" class="0">
 <segment>
 <wire x1="144.78" y1="139.7" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
 <label x="137.16" y="139.7" size="1.778" layer="95"/>
 <pinref part="DAT2P" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="EXDA2" class="0">
+<net name="!EXDA2" class="0">
 <segment>
 <wire x1="137.16" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
 <label x="137.16" y="142.24" size="1.778" layer="95"/>
@@ -9818,7 +9820,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="BMA1P" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="BTP3" class="0">
+<net name="TP3" class="0">
 <segment>
 <wire x1="261.62" y1="93.98" x2="248.92" y2="93.98" width="0.1524" layer="91"/>
 <label x="251.46" y="93.98" size="1.778" layer="95"/>
@@ -9867,7 +9869,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="CPU1P" gate="G$1" pin="5"/>
 </segment>
 </net>
-<net name="!INT_INHIBIT" class="0">
+<net name="!INT_INH" class="0">
 <segment>
 <wire x1="261.62" y1="88.9" x2="248.92" y2="88.9" width="0.1524" layer="91"/>
 <label x="251.46" y="88.9" size="1.778" layer="95"/>
@@ -9881,7 +9883,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="CPU1P" gate="G$1" pin="9"/>
 </segment>
 </net>
-<net name="BTP2" class="0">
+<net name="TP2" class="0">
 <segment>
 <wire x1="281.94" y1="190.5" x2="294.64" y2="190.5" width="0.1524" layer="91"/>
 <label x="284.48" y="190.5" size="1.778" layer="95"/>
@@ -9944,14 +9946,14 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="MEM2P" gate="G$1" pin="9"/>
 </segment>
 </net>
-<net name="BEMA" class="0">
+<net name="EMA" class="0">
 <segment>
 <wire x1="281.94" y1="137.16" x2="294.64" y2="137.16" width="0.1524" layer="91"/>
 <label x="284.48" y="137.16" size="1.778" layer="95"/>
 <pinref part="MEM2P" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="LINE_LOW" class="0">
+<net name="AC_LOW" class="0">
 <segment>
 <wire x1="281.94" y1="81.28" x2="294.64" y2="81.28" width="0.1524" layer="91"/>
 <label x="284.48" y="81.28" size="1.778" layer="95"/>
@@ -10041,16 +10043,17 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <text x="165.1" y="27.94" size="1.778" layer="94">Cable Terminators:</text>
 <text x="167.64" y="25.4" size="1.778" layer="94">Install if cable ends here.</text>
 <text x="15.24" y="264.16" size="1.778" layer="94">Bring Power</text>
-<text x="15.24" y="261.62" size="1.778" layer="94">Timing Signals</text>
 <text x="15.24" y="259.08" size="1.778" layer="94">Lamps, switches?</text>
-<text x="15.24" y="256.54" size="1.778" layer="94">Field0 disable?</text>
-<text x="15.24" y="231.14" size="1.778" layer="94">Time Sharing</text>
-<text x="63.5" y="208.28" size="1.778" layer="94">To Do List</text>
-<text x="33.02" y="256.54" size="1.778" layer="94">(!FS0 for !EA)</text>
+<text x="15.24" y="251.46" size="1.778" layer="94">Field0 disable?</text>
+<text x="15.24" y="248.92" size="1.778" layer="94">Time Sharing</text>
+<text x="15.24" y="243.84" size="1.778" layer="94">To Do List</text>
+<text x="33.02" y="251.46" size="1.778" layer="94">(!FS0 for !EA)</text>
 <text x="48.26" y="264.16" size="1.778" layer="94">AdaFruit 3366 Stacking Headers</text>
 <text x="289.56" y="182.88" size="1.778" layer="94">MMU</text>
 <text x="289.56" y="180.34" size="1.778" layer="94">(Calculate EA)</text>
 <text x="261.62" y="48.26" size="1.778" layer="94">Memory Timing and Control</text>
+<text x="73.66" y="50.8" size="1.778" layer="94">Power</text>
+<text x="63.5" y="210.82" size="1.778" layer="94">Switches, Lights</text>
 </plain>
 <instances>
 <instance part="V5" gate="GND" x="78.74" y="121.92"/>
@@ -10093,10 +10096,10 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <instance part="PROG1" gate="G$1" x="185.42" y="185.42" rot="R180"/>
 <instance part="V3" gate="G$1" x="198.12" y="195.58"/>
 <instance part="V4" gate="GND" x="195.58" y="177.8" rot="MR0"/>
-<instance part="E1" gate="JEDEC" x="185.42" y="210.82"/>
-<instance part="E1" gate="IO" x="259.08" y="218.44"/>
-<instance part="E2" gate="IO" x="287.02" y="99.06"/>
-<instance part="E2" gate="JEDEC" x="187.96" y="149.86"/>
+<instance part="MMU8L" gate="JEDEC" x="185.42" y="210.82"/>
+<instance part="MMU8L" gate="IO" x="259.08" y="218.44"/>
+<instance part="MM32K" gate="IO" x="287.02" y="99.06"/>
+<instance part="MM32K" gate="JEDEC" x="187.96" y="149.86"/>
 <instance part="C1" gate="G$1" x="167.64" y="256.54"/>
 <instance part="V6" gate="GND" x="167.64" y="248.92"/>
 <instance part="C7" gate="G$1" x="187.96" y="233.68"/>
@@ -10128,22 +10131,22 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <instance part="V27" gate="GND" x="134.62" y="76.2"/>
 <instance part="V28" gate="GND" x="93.98" y="76.2"/>
 <instance part="V29" gate="G$1" x="91.44" y="96.52"/>
-<instance part="E2" gate="G$1" x="45.72" y="91.44"/>
-<instance part="E2" gate="G$3" x="48.26" y="91.44"/>
-<instance part="E2" gate="G$4" x="50.8" y="91.44"/>
-<instance part="E2" gate="G$5" x="53.34" y="91.44"/>
-<instance part="E2" gate="G$6" x="55.88" y="91.44"/>
-<instance part="E2" gate="G$7" x="58.42" y="91.44"/>
-<instance part="E2" gate="G$8" x="60.96" y="91.44"/>
-<instance part="E2" gate="G$9" x="63.5" y="91.44"/>
-<instance part="E1" gate="G$1" x="22.86" y="91.44"/>
-<instance part="E1" gate="G$3" x="25.4" y="91.44"/>
-<instance part="E1" gate="G$4" x="27.94" y="91.44"/>
-<instance part="E1" gate="G$5" x="30.48" y="91.44"/>
-<instance part="E1" gate="G$6" x="33.02" y="91.44"/>
-<instance part="E1" gate="G$7" x="35.56" y="91.44"/>
-<instance part="E1" gate="G$8" x="38.1" y="91.44"/>
-<instance part="E1" gate="G$9" x="40.64" y="91.44"/>
+<instance part="MM32K" gate="G$1" x="45.72" y="91.44"/>
+<instance part="MM32K" gate="G$3" x="48.26" y="91.44"/>
+<instance part="MM32K" gate="G$4" x="50.8" y="91.44"/>
+<instance part="MM32K" gate="G$5" x="53.34" y="91.44"/>
+<instance part="MM32K" gate="G$6" x="55.88" y="91.44"/>
+<instance part="MM32K" gate="G$7" x="58.42" y="91.44"/>
+<instance part="MM32K" gate="G$8" x="60.96" y="91.44"/>
+<instance part="MM32K" gate="G$9" x="63.5" y="91.44"/>
+<instance part="MMU8L" gate="G$1" x="22.86" y="91.44"/>
+<instance part="MMU8L" gate="G$3" x="25.4" y="91.44"/>
+<instance part="MMU8L" gate="G$4" x="27.94" y="91.44"/>
+<instance part="MMU8L" gate="G$5" x="30.48" y="91.44"/>
+<instance part="MMU8L" gate="G$6" x="33.02" y="91.44"/>
+<instance part="MMU8L" gate="G$7" x="35.56" y="91.44"/>
+<instance part="MMU8L" gate="G$8" x="38.1" y="91.44"/>
+<instance part="MMU8L" gate="G$9" x="40.64" y="91.44"/>
 <instance part="V22" gate="G$1" x="43.18" y="96.52"/>
 <instance part="V26" gate="G$1" x="167.64" y="261.62"/>
 <instance part="V30" gate="G$1" x="177.8" y="261.62"/>
@@ -10161,6 +10164,8 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <instance part="V43" gate="G$1" x="190.5" y="81.28"/>
 <instance part="V44" gate="G$1" x="180.34" y="81.28"/>
 <instance part="V45" gate="G$1" x="170.18" y="81.28"/>
+<instance part="SUPPLY19" gate="GND" x="83.82" y="223.52"/>
+<instance part="PANEL" gate="G$1" x="73.66" y="238.76" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -10357,6 +10362,48 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="93.98" y1="86.36" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="V28" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<wire x1="81.28" y1="251.46" x2="83.82" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="251.46" x2="83.82" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
+<wire x1="83.82" y1="248.92" x2="83.82" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="246.38" x2="83.82" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="243.84" x2="83.82" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="241.3" x2="83.82" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="238.76" x2="83.82" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="236.22" x2="83.82" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="233.68" x2="83.82" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="231.14" x2="83.82" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="228.6" x2="83.82" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="228.6" x2="83.82" y2="228.6" width="0.1524" layer="91"/>
+<junction x="83.82" y="228.6"/>
+<wire x1="81.28" y1="231.14" x2="83.82" y2="231.14" width="0.1524" layer="91"/>
+<junction x="83.82" y="231.14"/>
+<wire x1="81.28" y1="233.68" x2="83.82" y2="233.68" width="0.1524" layer="91"/>
+<junction x="83.82" y="233.68"/>
+<wire x1="81.28" y1="236.22" x2="83.82" y2="236.22" width="0.1524" layer="91"/>
+<junction x="83.82" y="236.22"/>
+<wire x1="81.28" y1="238.76" x2="83.82" y2="238.76" width="0.1524" layer="91"/>
+<junction x="83.82" y="238.76"/>
+<wire x1="81.28" y1="241.3" x2="83.82" y2="241.3" width="0.1524" layer="91"/>
+<junction x="83.82" y="241.3"/>
+<wire x1="81.28" y1="243.84" x2="83.82" y2="243.84" width="0.1524" layer="91"/>
+<junction x="83.82" y="243.84"/>
+<wire x1="81.28" y1="246.38" x2="83.82" y2="246.38" width="0.1524" layer="91"/>
+<junction x="83.82" y="246.38"/>
+<wire x1="81.28" y1="248.92" x2="83.82" y2="248.92" width="0.1524" layer="91"/>
+<junction x="83.82" y="248.92"/>
+<pinref part="PANEL" gate="G$1" pin="2"/>
+<pinref part="PANEL" gate="G$1" pin="4"/>
+<pinref part="PANEL" gate="G$1" pin="6"/>
+<pinref part="PANEL" gate="G$1" pin="8"/>
+<pinref part="PANEL" gate="G$1" pin="10"/>
+<pinref part="PANEL" gate="G$1" pin="12"/>
+<pinref part="PANEL" gate="G$1" pin="14"/>
+<pinref part="PANEL" gate="G$1" pin="16"/>
+<pinref part="PANEL" gate="G$1" pin="18"/>
+<pinref part="PANEL" gate="G$1" pin="20"/>
+</segment>
 </net>
 <net name="VCC" class="1">
 <segment>
@@ -10413,11 +10460,11 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="V29" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="E1" gate="G$1" pin="VCCIO"/>
+<pinref part="MMU8L" gate="G$1" pin="VCCIO"/>
 <wire x1="22.86" y1="91.44" x2="22.86" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="V22" gate="G$1" pin="VCC"/>
 <wire x1="22.86" y1="93.98" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="E2" gate="G$9" pin="VCCIO"/>
+<pinref part="MM32K" gate="G$9" pin="VCCIO"/>
 <wire x1="25.4" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="93.98" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
@@ -10435,46 +10482,46 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="60.96" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="93.98" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
 <junction x="43.18" y="93.98"/>
-<pinref part="E1" gate="G$3" pin="VCCINT"/>
+<pinref part="MMU8L" gate="G$3" pin="VCCINT"/>
 <wire x1="25.4" y1="91.44" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
 <junction x="25.4" y="93.98"/>
-<pinref part="E1" gate="G$4" pin="VCCINT"/>
+<pinref part="MMU8L" gate="G$4" pin="VCCINT"/>
 <wire x1="27.94" y1="91.44" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
 <junction x="27.94" y="93.98"/>
-<pinref part="E1" gate="G$5" pin="VCCIO"/>
+<pinref part="MMU8L" gate="G$5" pin="VCCIO"/>
 <wire x1="30.48" y1="93.98" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
 <junction x="30.48" y="93.98"/>
-<pinref part="E1" gate="G$6" pin="VCCIO"/>
+<pinref part="MMU8L" gate="G$6" pin="VCCIO"/>
 <wire x1="33.02" y1="91.44" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
 <junction x="33.02" y="93.98"/>
-<pinref part="E1" gate="G$7" pin="VCCIO"/>
+<pinref part="MMU8L" gate="G$7" pin="VCCIO"/>
 <wire x1="35.56" y1="93.98" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
 <junction x="35.56" y="93.98"/>
-<pinref part="E1" gate="G$8" pin="VCCIO"/>
+<pinref part="MMU8L" gate="G$8" pin="VCCIO"/>
 <wire x1="38.1" y1="91.44" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
 <junction x="38.1" y="93.98"/>
-<pinref part="E1" gate="G$9" pin="VCCIO"/>
+<pinref part="MMU8L" gate="G$9" pin="VCCIO"/>
 <wire x1="40.64" y1="91.44" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
 <junction x="40.64" y="93.98"/>
-<pinref part="E2" gate="G$1" pin="VCCIO"/>
+<pinref part="MM32K" gate="G$1" pin="VCCIO"/>
 <wire x1="45.72" y1="91.44" x2="45.72" y2="93.98" width="0.1524" layer="91"/>
 <junction x="45.72" y="93.98"/>
-<pinref part="E2" gate="G$4" pin="VCCINT"/>
+<pinref part="MM32K" gate="G$4" pin="VCCINT"/>
 <wire x1="50.8" y1="91.44" x2="50.8" y2="93.98" width="0.1524" layer="91"/>
 <junction x="50.8" y="93.98"/>
-<pinref part="E2" gate="G$3" pin="VCCINT"/>
+<pinref part="MM32K" gate="G$3" pin="VCCINT"/>
 <wire x1="48.26" y1="91.44" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
 <junction x="48.26" y="93.98"/>
-<pinref part="E2" gate="G$8" pin="VCCIO"/>
+<pinref part="MM32K" gate="G$8" pin="VCCIO"/>
 <wire x1="60.96" y1="91.44" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
 <junction x="60.96" y="93.98"/>
-<pinref part="E2" gate="G$7" pin="VCCIO"/>
+<pinref part="MM32K" gate="G$7" pin="VCCIO"/>
 <wire x1="58.42" y1="91.44" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
 <junction x="58.42" y="93.98"/>
-<pinref part="E2" gate="G$6" pin="VCCIO"/>
+<pinref part="MM32K" gate="G$6" pin="VCCIO"/>
 <wire x1="55.88" y1="91.44" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
 <junction x="55.88" y="93.98"/>
-<pinref part="E2" gate="G$5" pin="VCCIO"/>
+<pinref part="MM32K" gate="G$5" pin="VCCIO"/>
 <wire x1="53.34" y1="91.44" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
 <junction x="53.34" y="93.98"/>
 </segment>
@@ -10554,7 +10601,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="281.94" y1="55.88" x2="281.94" y2="63.5" width="0.1524" layer="91"/>
 <label x="281.94" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO29"/>
+<pinref part="MM32K" gate="IO" pin="IO29"/>
 </segment>
 </net>
 <net name="D1" class="0">
@@ -10568,7 +10615,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="279.4" y1="55.88" x2="279.4" y2="63.5" width="0.1524" layer="91"/>
 <label x="279.4" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO28"/>
+<pinref part="MM32K" gate="IO" pin="IO28"/>
 </segment>
 </net>
 <net name="D2" class="0">
@@ -10582,7 +10629,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="276.86" y1="55.88" x2="276.86" y2="63.5" width="0.1524" layer="91"/>
 <label x="276.86" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO27"/>
+<pinref part="MM32K" gate="IO" pin="IO27"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -10596,7 +10643,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="292.1" y1="55.88" x2="292.1" y2="63.5" width="0.1524" layer="91"/>
 <label x="292.1" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO33"/>
+<pinref part="MM32K" gate="IO" pin="IO33"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -10610,7 +10657,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="294.64" y1="55.88" x2="294.64" y2="63.5" width="0.1524" layer="91"/>
 <label x="294.64" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO34"/>
+<pinref part="MM32K" gate="IO" pin="IO34"/>
 </segment>
 </net>
 <net name="D5" class="0">
@@ -10624,7 +10671,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="297.18" y1="55.88" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
 <label x="297.18" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO35"/>
+<pinref part="MM32K" gate="IO" pin="IO35"/>
 </segment>
 </net>
 <net name="D6" class="0">
@@ -10638,7 +10685,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="299.72" y1="55.88" x2="299.72" y2="63.5" width="0.1524" layer="91"/>
 <label x="299.72" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO36"/>
+<pinref part="MM32K" gate="IO" pin="IO36"/>
 </segment>
 </net>
 <net name="D7" class="0">
@@ -10652,63 +10699,63 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="302.26" y1="55.88" x2="302.26" y2="63.5" width="0.1524" layer="91"/>
 <label x="302.26" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO37"/>
+<pinref part="MM32K" gate="IO" pin="IO37"/>
 </segment>
 </net>
 <net name="MEM00" class="0">
 <segment>
 <wire x1="248.92" y1="91.44" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
 <label x="248.92" y="91.44" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO14"/>
+<pinref part="MM32K" gate="IO" pin="IO14"/>
 </segment>
 </net>
 <net name="MEM02" class="0">
 <segment>
 <wire x1="248.92" y1="101.6" x2="241.3" y2="101.6" width="0.1524" layer="91"/>
 <label x="248.92" y="101.6" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO10"/>
+<pinref part="MM32K" gate="IO" pin="IO10"/>
 </segment>
 </net>
 <net name="MEM04" class="0">
 <segment>
 <wire x1="248.92" y1="111.76" x2="241.3" y2="111.76" width="0.1524" layer="91"/>
 <label x="248.92" y="111.76" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO6"/>
+<pinref part="MM32K" gate="IO" pin="IO6"/>
 </segment>
 </net>
 <net name="MEM06" class="0">
 <segment>
 <wire x1="248.92" y1="116.84" x2="241.3" y2="116.84" width="0.1524" layer="91"/>
 <label x="248.92" y="116.84" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO4"/>
+<pinref part="MM32K" gate="IO" pin="IO4"/>
 </segment>
 </net>
 <net name="MEM01" class="0">
 <segment>
 <wire x1="241.3" y1="96.52" x2="248.92" y2="96.52" width="0.1524" layer="91"/>
 <label x="248.92" y="96.52" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO12"/>
+<pinref part="MM32K" gate="IO" pin="IO12"/>
 </segment>
 </net>
 <net name="MEM03" class="0">
 <segment>
 <wire x1="241.3" y1="106.68" x2="248.92" y2="106.68" width="0.1524" layer="91"/>
 <label x="248.92" y="106.68" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO8"/>
+<pinref part="MM32K" gate="IO" pin="IO8"/>
 </segment>
 </net>
 <net name="MEM05" class="0">
 <segment>
 <wire x1="241.3" y1="114.3" x2="248.92" y2="114.3" width="0.1524" layer="91"/>
 <label x="248.92" y="114.3" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO5"/>
+<pinref part="MM32K" gate="IO" pin="IO5"/>
 </segment>
 </net>
 <net name="MEM07" class="0">
 <segment>
 <wire x1="241.3" y1="121.92" x2="248.92" y2="121.92" width="0.1524" layer="91"/>
 <label x="248.92" y="121.92" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO2"/>
+<pinref part="MM32K" gate="IO" pin="IO2"/>
 </segment>
 </net>
 <net name="!OE" class="0">
@@ -10729,7 +10776,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="307.34" y1="55.88" x2="307.34" y2="63.5" width="0.1524" layer="91"/>
 <label x="307.34" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO39"/>
+<pinref part="MM32K" gate="IO" pin="IO39"/>
 </segment>
 </net>
 <net name="EA0" class="0">
@@ -10750,12 +10797,12 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="289.56" y1="63.5" x2="289.56" y2="55.88" width="0.1524" layer="91"/>
 <label x="289.56" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO/PD2"/>
+<pinref part="MM32K" gate="IO" pin="IO/PD2"/>
 </segment>
 <segment>
-<wire x1="238.76" y1="182.88" x2="238.76" y2="175.26" width="0.1524" layer="91"/>
-<label x="238.76" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO23"/>
+<wire x1="236.22" y1="182.88" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
+<label x="236.22" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO22"/>
 </segment>
 </net>
 <net name="EA2" class="0">
@@ -10776,12 +10823,12 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="284.48" y1="63.5" x2="284.48" y2="55.88" width="0.1524" layer="91"/>
 <label x="284.48" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO30"/>
+<pinref part="MM32K" gate="IO" pin="IO30"/>
 </segment>
 <segment>
-<wire x1="233.68" y1="182.88" x2="233.68" y2="175.26" width="0.1524" layer="91"/>
-<label x="233.68" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO21"/>
+<wire x1="220.98" y1="195.58" x2="213.36" y2="195.58" width="0.1524" layer="91"/>
+<label x="220.98" y="195.58" size="1.778" layer="95" rot="MR0"/>
+<pinref part="MMU8L" gate="IO" pin="IO20"/>
 </segment>
 </net>
 <net name="EA1" class="0">
@@ -10802,12 +10849,12 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="287.02" y1="63.5" x2="287.02" y2="55.88" width="0.1524" layer="91"/>
 <label x="287.02" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO31"/>
+<pinref part="MM32K" gate="IO" pin="IO31"/>
 </segment>
 <segment>
-<wire x1="236.22" y1="182.88" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
-<label x="236.22" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO22"/>
+<wire x1="233.68" y1="182.88" x2="233.68" y2="175.26" width="0.1524" layer="91"/>
+<label x="233.68" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO21"/>
 </segment>
 </net>
 <net name="!CS" class="0">
@@ -10828,7 +10875,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="309.88" y1="55.88" x2="309.88" y2="63.5" width="0.1524" layer="91"/>
 <label x="309.88" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO40"/>
+<pinref part="MM32K" gate="IO" pin="IO40"/>
 </segment>
 </net>
 <net name="D8" class="0">
@@ -10842,7 +10889,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="330.2" y1="76.2" x2="322.58" y2="76.2" width="0.1524" layer="91"/>
 <label x="322.58" y="76.2" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO41"/>
+<pinref part="MM32K" gate="IO" pin="IO41"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -10856,7 +10903,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="330.2" y1="78.74" x2="322.58" y2="78.74" width="0.1524" layer="91"/>
 <label x="322.58" y="78.74" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO42"/>
+<pinref part="MM32K" gate="IO" pin="IO42"/>
 </segment>
 </net>
 <net name="D10" class="0">
@@ -10870,7 +10917,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="330.2" y1="81.28" x2="322.58" y2="81.28" width="0.1524" layer="91"/>
 <label x="322.58" y="81.28" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO43"/>
+<pinref part="MM32K" gate="IO" pin="IO43"/>
 </segment>
 </net>
 <net name="D11" class="0">
@@ -10884,7 +10931,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="274.32" y1="55.88" x2="274.32" y2="63.5" width="0.1524" layer="91"/>
 <label x="274.32" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO26"/>
+<pinref part="MM32K" gate="IO" pin="IO26"/>
 </segment>
 </net>
 <net name="PARITY" class="0">
@@ -10898,42 +10945,42 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="271.78" y1="55.88" x2="271.78" y2="63.5" width="0.1524" layer="91"/>
 <label x="271.78" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO25"/>
+<pinref part="MM32K" gate="IO" pin="IO25"/>
 </segment>
 </net>
 <net name="MEM08" class="0">
 <segment>
 <wire x1="241.3" y1="88.9" x2="248.92" y2="88.9" width="0.1524" layer="91"/>
 <label x="248.92" y="88.9" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO15"/>
+<pinref part="MM32K" gate="IO" pin="IO15"/>
 </segment>
 </net>
 <net name="MEM10" class="0">
 <segment>
 <wire x1="248.92" y1="99.06" x2="241.3" y2="99.06" width="0.1524" layer="91"/>
 <label x="248.92" y="99.06" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO11"/>
+<pinref part="MM32K" gate="IO" pin="IO11"/>
 </segment>
 </net>
 <net name="MEM_P" class="0">
 <segment>
 <wire x1="241.3" y1="86.36" x2="248.92" y2="86.36" width="0.1524" layer="91"/>
 <label x="248.92" y="86.36" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO16"/>
+<pinref part="MM32K" gate="IO" pin="IO16"/>
 </segment>
 </net>
 <net name="MEM09" class="0">
 <segment>
 <wire x1="248.92" y1="93.98" x2="241.3" y2="93.98" width="0.1524" layer="91"/>
 <label x="248.92" y="93.98" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO13"/>
+<pinref part="MM32K" gate="IO" pin="IO13"/>
 </segment>
 </net>
 <net name="MEM11" class="0">
 <segment>
 <wire x1="248.92" y1="104.14" x2="241.3" y2="104.14" width="0.1524" layer="91"/>
 <label x="248.92" y="104.14" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO9"/>
+<pinref part="MM32K" gate="IO" pin="IO9"/>
 </segment>
 </net>
 <net name="!WE" class="0">
@@ -10954,7 +11001,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="304.8" y1="55.88" x2="304.8" y2="63.5" width="0.1524" layer="91"/>
 <label x="304.8" y="63.5" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E2" gate="IO" pin="IO38"/>
+<pinref part="MM32K" gate="IO" pin="IO38"/>
 </segment>
 </net>
 <net name="!FS4" class="0">
@@ -10962,7 +11009,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="FIELDS" gate="G$1" pin="8"/>
 <wire x1="248.92" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
 <label x="241.3" y="76.2" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO20"/>
+<pinref part="MM32K" gate="IO" pin="IO20"/>
 </segment>
 </net>
 <net name="!FS5" class="0">
@@ -10970,7 +11017,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="FIELDS" gate="G$1" pin="6"/>
 <wire x1="238.76" y1="78.74" x2="248.92" y2="78.74" width="0.1524" layer="91"/>
 <label x="241.3" y="78.74" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO19"/>
+<pinref part="MM32K" gate="IO" pin="IO19"/>
 </segment>
 </net>
 <net name="!FS6" class="0">
@@ -10978,7 +11025,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="FIELDS" gate="G$1" pin="4"/>
 <wire x1="248.92" y1="81.28" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
 <label x="241.3" y="81.28" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO18"/>
+<pinref part="MM32K" gate="IO" pin="IO18"/>
 </segment>
 </net>
 <net name="!FS7" class="0">
@@ -10986,7 +11033,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="FIELDS" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="83.82" x2="248.92" y2="83.82" width="0.1524" layer="91"/>
 <label x="241.3" y="83.82" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO17"/>
+<pinref part="MM32K" gate="IO" pin="IO17"/>
 </segment>
 </net>
 <net name="!FS3" class="0">
@@ -10996,7 +11043,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="248.92" y1="73.66" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="63.5" x2="261.62" y2="63.5" width="0.1524" layer="91"/>
 <label x="251.46" y="63.5" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO21"/>
+<pinref part="MM32K" gate="IO" pin="IO21"/>
 </segment>
 </net>
 <net name="!FS2" class="0">
@@ -11007,7 +11054,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="246.38" y1="60.96" x2="264.16" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="60.96" x2="264.16" y2="63.5" width="0.1524" layer="91"/>
 <label x="251.46" y="60.96" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO22"/>
+<pinref part="MM32K" gate="IO" pin="IO22"/>
 </segment>
 </net>
 <net name="!FS0" class="0">
@@ -11018,7 +11065,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="241.3" y1="55.88" x2="269.24" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="55.88" x2="269.24" y2="63.5" width="0.1524" layer="91"/>
 <label x="251.46" y="55.88" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO24"/>
+<pinref part="MM32K" gate="IO" pin="IO24"/>
 </segment>
 </net>
 <net name="!FS1" class="0">
@@ -11029,7 +11076,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="243.84" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="FIELDS" gate="G$1" pin="14"/>
 <label x="251.46" y="58.42" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO23"/>
+<pinref part="MM32K" gate="IO" pin="IO23"/>
 </segment>
 </net>
 <net name="MEMSTART" class="0">
@@ -11041,12 +11088,12 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="274.32" y1="137.16" x2="274.32" y2="144.78" width="0.1524" layer="91"/>
 <label x="274.32" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="E2" gate="IO" pin="IO71"/>
+<pinref part="MM32K" gate="IO" pin="IO71"/>
 </segment>
 <segment>
-<wire x1="248.92" y1="182.88" x2="248.92" y2="175.26" width="0.1524" layer="91"/>
-<label x="248.92" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO27"/>
+<wire x1="246.38" y1="182.88" x2="246.38" y2="175.26" width="0.1524" layer="91"/>
+<label x="246.38" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO26"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -11074,7 +11121,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="220.98" y1="198.12" x2="213.36" y2="198.12" width="0.1524" layer="91"/>
 <label x="220.98" y="198.12" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO19"/>
+<pinref part="MMU8L" gate="IO" pin="IO19"/>
 </segment>
 </net>
 <net name="BMA00" class="0">
@@ -11205,70 +11252,80 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <junction x="50.8" y="137.16"/>
 </segment>
 </net>
-<net name="BTP3" class="0">
+<net name="TP3" class="0">
 <segment>
 <wire x1="220.98" y1="223.52" x2="213.36" y2="223.52" width="0.1524" layer="91"/>
 <label x="220.98" y="223.52" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO9"/>
+<pinref part="MMU8L" gate="IO" pin="IO9"/>
 </segment>
 </net>
 <net name="!DF_ENABLE" class="0">
 <segment>
 <wire x1="213.36" y1="208.28" x2="220.98" y2="208.28" width="0.1524" layer="91"/>
 <label x="220.98" y="208.28" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO15"/>
+<pinref part="MMU8L" gate="IO" pin="IO15"/>
 </segment>
 </net>
 <net name="!SP_CYC_NEXT" class="0">
 <segment>
 <wire x1="220.98" y1="213.36" x2="213.36" y2="213.36" width="0.1524" layer="91"/>
 <label x="220.98" y="213.36" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO13"/>
+<pinref part="MMU8L" gate="IO" pin="IO13"/>
 </segment>
 </net>
 <net name="!BF_ENABLE" class="0">
 <segment>
 <wire x1="213.36" y1="218.44" x2="220.98" y2="218.44" width="0.1524" layer="91"/>
 <label x="220.98" y="218.44" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO11"/>
+<pinref part="MMU8L" gate="IO" pin="IO11"/>
 </segment>
 </net>
 <net name="!KEY_DF2" class="0">
 <segment>
 <wire x1="220.98" y1="241.3" x2="213.36" y2="241.3" width="0.1524" layer="91"/>
 <label x="220.98" y="241.3" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO2"/>
+<pinref part="MMU8L" gate="IO" pin="IO2"/>
+</segment>
+<segment>
+<wire x1="53.34" y1="236.22" x2="66.04" y2="236.22" width="0.1524" layer="91"/>
+<label x="53.34" y="236.22" size="1.778" layer="95"/>
+<pinref part="PANEL" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="!KEY_IF2" class="0">
 <segment>
 <wire x1="213.36" y1="236.22" x2="220.98" y2="236.22" width="0.1524" layer="91"/>
 <label x="220.98" y="236.22" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO4"/>
+<pinref part="MMU8L" gate="IO" pin="IO4"/>
+</segment>
+<segment>
+<wire x1="53.34" y1="243.84" x2="66.04" y2="243.84" width="0.1524" layer="91"/>
+<label x="53.34" y="243.84" size="1.778" layer="95"/>
+<pinref part="PANEL" gate="G$1" pin="13"/>
 </segment>
 </net>
 <net name="!LOAD_SF" class="0">
 <segment>
 <wire x1="220.98" y1="231.14" x2="213.36" y2="231.14" width="0.1524" layer="91"/>
 <label x="220.98" y="231.14" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO6"/>
+<pinref part="MMU8L" gate="IO" pin="IO6"/>
 </segment>
 </net>
-<net name="!INT_INHIBIT" class="0">
+<net name="!INT_INH" class="0">
 <segment>
 <wire x1="220.98" y1="228.6" x2="213.36" y2="228.6" width="0.1524" layer="91"/>
 <label x="220.98" y="228.6" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO7"/>
+<pinref part="MMU8L" gate="IO" pin="IO7"/>
 </segment>
 </net>
 <net name="!KEY_CLR" class="0">
 <segment>
 <wire x1="213.36" y1="226.06" x2="220.98" y2="226.06" width="0.1524" layer="91"/>
 <label x="220.98" y="226.06" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO8"/>
+<pinref part="MMU8L" gate="IO" pin="IO8"/>
 </segment>
 </net>
-<net name="BTP2" class="0">
+<net name="TP2" class="0">
 <segment>
 <wire x1="182.88" y1="40.64" x2="165.1" y2="40.64" width="0.1524" layer="91"/>
 <label x="165.1" y="40.64" size="1.778" layer="95"/>
@@ -11277,12 +11334,12 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="269.24" y1="137.16" x2="269.24" y2="144.78" width="0.1524" layer="91"/>
 <label x="269.24" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="E2" gate="IO" pin="IO73"/>
+<pinref part="MM32K" gate="IO" pin="IO73"/>
 </segment>
 <segment>
-<wire x1="243.84" y1="182.88" x2="243.84" y2="175.26" width="0.1524" layer="91"/>
-<label x="243.84" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO25"/>
+<wire x1="241.3" y1="182.88" x2="241.3" y2="175.26" width="0.1524" layer="91"/>
+<label x="241.3" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO24"/>
 </segment>
 </net>
 <net name="BMA11" class="0">
@@ -11321,19 +11378,19 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="266.7" y1="137.16" x2="266.7" y2="144.78" width="0.1524" layer="91"/>
 <label x="266.7" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="E2" gate="IO" pin="IO74"/>
+<pinref part="MM32K" gate="IO" pin="IO74"/>
 </segment>
 <segment>
-<wire x1="241.3" y1="182.88" x2="241.3" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="E1" gate="IO" pin="IO24"/>
-<label x="241.3" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<wire x1="238.76" y1="182.88" x2="238.76" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="MMU8L" gate="IO" pin="IO23"/>
+<label x="238.76" y="182.88" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="FIELD1" class="0">
 <segment>
-<wire x1="251.46" y1="182.88" x2="251.46" y2="175.26" width="0.1524" layer="91"/>
-<label x="251.46" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO28"/>
+<wire x1="248.92" y1="182.88" x2="248.92" y2="175.26" width="0.1524" layer="91"/>
+<label x="248.92" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO27"/>
 </segment>
 </net>
 <net name="BMA10" class="0">
@@ -11356,334 +11413,334 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="271.78" y1="137.16" x2="271.78" y2="144.78" width="0.1524" layer="91"/>
 <label x="271.78" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="E2" gate="IO" pin="IO72"/>
+<pinref part="MM32K" gate="IO" pin="IO72"/>
 </segment>
 <segment>
-<wire x1="246.38" y1="182.88" x2="246.38" y2="175.26" width="0.1524" layer="91"/>
-<label x="246.38" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO26"/>
+<wire x1="243.84" y1="182.88" x2="243.84" y2="175.26" width="0.1524" layer="91"/>
+<label x="243.84" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO25"/>
 </segment>
 </net>
 <net name="MBODD_P" class="0">
 <segment>
 <wire x1="248.92" y1="109.22" x2="241.3" y2="109.22" width="0.1524" layer="91"/>
 <label x="248.92" y="109.22" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E2" gate="IO" pin="IO7"/>
+<pinref part="MM32K" gate="IO" pin="IO7"/>
 </segment>
 </net>
-<net name="BEMA" class="0">
+<net name="EMA" class="0">
 <segment>
-<wire x1="259.08" y1="182.88" x2="259.08" y2="175.26" width="0.1524" layer="91"/>
-<label x="259.08" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO31"/>
+<wire x1="256.54" y1="182.88" x2="256.54" y2="175.26" width="0.1524" layer="91"/>
+<label x="256.54" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO30"/>
 </segment>
 <segment>
 <wire x1="279.4" y1="144.78" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
 <label x="279.4" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="E2" gate="IO" pin="IO69"/>
+<pinref part="MM32K" gate="IO" pin="IO69"/>
 </segment>
 </net>
-<net name="LINE_LOW" class="0">
+<net name="AC_LOW" class="0">
 <segment>
 <wire x1="213.36" y1="243.84" x2="220.98" y2="243.84" width="0.1524" layer="91"/>
 <label x="220.98" y="243.84" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO/PD1"/>
+<pinref part="MMU8L" gate="IO" pin="IO/PD1"/>
 </segment>
 </net>
 <net name="POWER_OK" class="0">
 <segment>
 <wire x1="220.98" y1="238.76" x2="213.36" y2="238.76" width="0.1524" layer="91"/>
 <label x="220.98" y="238.76" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO3"/>
+<pinref part="MMU8L" gate="IO" pin="IO3"/>
 </segment>
 </net>
 <net name="STOP_OK" class="0">
 <segment>
 <wire x1="213.36" y1="233.68" x2="220.98" y2="233.68" width="0.1524" layer="91"/>
 <label x="220.98" y="233.68" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO5"/>
+<pinref part="MMU8L" gate="IO" pin="IO5"/>
 </segment>
 </net>
 <net name="!KEY_LOAD" class="0">
 <segment>
 <wire x1="213.36" y1="220.98" x2="220.98" y2="220.98" width="0.1524" layer="91"/>
 <label x="220.98" y="220.98" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO10"/>
+<pinref part="MMU8L" gate="IO" pin="IO10"/>
 </segment>
 </net>
 <net name="JMP_OR_JMS" class="0">
 <segment>
 <wire x1="220.98" y1="215.9" x2="213.36" y2="215.9" width="0.1524" layer="91"/>
 <label x="220.98" y="215.9" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO12"/>
+<pinref part="MMU8L" gate="IO" pin="IO12"/>
 </segment>
 </net>
 <net name="E_OR_F_SET" class="0">
 <segment>
 <wire x1="213.36" y1="210.82" x2="220.98" y2="210.82" width="0.1524" layer="91"/>
 <label x="220.98" y="210.82" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO14"/>
+<pinref part="MMU8L" gate="IO" pin="IO14"/>
 </segment>
 </net>
 <net name="!EMA" class="0">
 <segment>
-<wire x1="256.54" y1="182.88" x2="256.54" y2="175.26" width="0.1524" layer="91"/>
-<label x="256.54" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO30"/>
+<wire x1="254" y1="182.88" x2="254" y2="175.26" width="0.1524" layer="91"/>
+<label x="254" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO29"/>
 </segment>
 <segment>
 <wire x1="276.86" y1="144.78" x2="276.86" y2="137.16" width="0.1524" layer="91"/>
 <label x="276.86" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="E2" gate="IO" pin="IO70"/>
+<pinref part="MM32K" gate="IO" pin="IO70"/>
 </segment>
 </net>
 <net name="IOP4" class="0">
 <segment>
 <wire x1="261.62" y1="256.54" x2="261.62" y2="264.16" width="0.1524" layer="91"/>
 <label x="261.62" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IN/GCLK1"/>
+<pinref part="MMU8L" gate="IO" pin="IN/GCLK1"/>
 </segment>
 </net>
 <net name="IOP2" class="0">
 <segment>
 <wire x1="264.16" y1="256.54" x2="264.16" y2="264.16" width="0.1524" layer="91"/>
 <label x="264.16" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IO/GCLK3"/>
+<pinref part="MMU8L" gate="IO" pin="IO/GCLK3"/>
 </segment>
 </net>
 <net name="IOP1" class="0">
 <segment>
 <wire x1="254" y1="256.54" x2="254" y2="264.16" width="0.1524" layer="91"/>
 <label x="254" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IN/GCLK2/OE2"/>
+<pinref part="MMU8L" gate="IO" pin="IN/GCLK2/OE2"/>
 </segment>
 </net>
 <net name="MB11" class="0">
 <segment>
 <wire x1="309.88" y1="137.16" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
 <label x="309.88" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="E2" gate="IO" pin="IO61"/>
+<pinref part="MM32K" gate="IO" pin="IO61"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="200.66" x2="294.64" y2="200.66" width="0.1524" layer="91"/>
-<label x="294.64" y="200.66" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO43"/>
+<wire x1="302.26" y1="213.36" x2="294.64" y2="213.36" width="0.1524" layer="91"/>
+<label x="294.64" y="213.36" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO48"/>
 </segment>
 </net>
 <net name="MB10" class="0">
 <segment>
 <wire x1="330.2" y1="124.46" x2="322.58" y2="124.46" width="0.1524" layer="91"/>
 <label x="322.58" y="124.46" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO60"/>
+<pinref part="MM32K" gate="IO" pin="IO60"/>
 </segment>
 <segment>
-<wire x1="294.64" y1="198.12" x2="302.26" y2="198.12" width="0.1524" layer="91"/>
-<label x="294.64" y="198.12" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO42"/>
+<wire x1="294.64" y1="210.82" x2="302.26" y2="210.82" width="0.1524" layer="91"/>
+<label x="294.64" y="210.82" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO47"/>
 </segment>
 </net>
 <net name="MB09" class="0">
 <segment>
 <wire x1="322.58" y1="119.38" x2="330.2" y2="119.38" width="0.1524" layer="91"/>
 <label x="322.58" y="119.38" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO58"/>
+<pinref part="MM32K" gate="IO" pin="IO58"/>
 </segment>
 <segment>
-<wire x1="281.94" y1="175.26" x2="281.94" y2="182.88" width="0.1524" layer="91"/>
-<label x="281.94" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO40"/>
+<wire x1="302.26" y1="205.74" x2="294.64" y2="205.74" width="0.1524" layer="91"/>
+<label x="294.64" y="205.74" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO45"/>
 </segment>
 </net>
 <net name="MB08" class="0">
 <segment>
 <wire x1="330.2" y1="116.84" x2="322.58" y2="116.84" width="0.1524" layer="91"/>
 <label x="322.58" y="116.84" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO57"/>
+<pinref part="MM32K" gate="IO" pin="IO57"/>
 </segment>
 <segment>
-<wire x1="279.4" y1="182.88" x2="279.4" y2="175.26" width="0.1524" layer="91"/>
-<label x="279.4" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO39"/>
+<wire x1="294.64" y1="203.2" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
+<label x="294.64" y="203.2" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO44"/>
 </segment>
 </net>
 <net name="MB07" class="0">
 <segment>
 <wire x1="330.2" y1="111.76" x2="322.58" y2="111.76" width="0.1524" layer="91"/>
 <label x="322.58" y="111.76" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO55"/>
+<pinref part="MM32K" gate="IO" pin="IO55"/>
 </segment>
 <segment>
-<wire x1="274.32" y1="182.88" x2="274.32" y2="175.26" width="0.1524" layer="91"/>
-<label x="274.32" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO37"/>
+<wire x1="294.64" y1="198.12" x2="302.26" y2="198.12" width="0.1524" layer="91"/>
+<label x="294.64" y="198.12" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO42"/>
 </segment>
 </net>
 <net name="MB06" class="0">
 <segment>
 <wire x1="330.2" y1="109.22" x2="322.58" y2="109.22" width="0.1524" layer="91"/>
 <label x="322.58" y="109.22" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO54"/>
+<pinref part="MM32K" gate="IO" pin="IO54"/>
 </segment>
 <segment>
-<wire x1="271.78" y1="182.88" x2="271.78" y2="175.26" width="0.1524" layer="91"/>
-<label x="271.78" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO36"/>
+<wire x1="281.94" y1="182.88" x2="281.94" y2="175.26" width="0.1524" layer="91"/>
+<label x="281.94" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO40"/>
 </segment>
 </net>
 <net name="MB05" class="0">
 <segment>
 <wire x1="307.34" y1="137.16" x2="307.34" y2="144.78" width="0.1524" layer="91"/>
 <label x="307.34" y="137.16" size="1.778" layer="95" rot="R90"/>
-<pinref part="E2" gate="IO" pin="IO62"/>
+<pinref part="MM32K" gate="IO" pin="IO62"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="203.2" x2="294.64" y2="203.2" width="0.1524" layer="91"/>
-<label x="294.64" y="203.2" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO44"/>
+<wire x1="302.26" y1="215.9" x2="294.64" y2="215.9" width="0.1524" layer="91"/>
+<label x="294.64" y="215.9" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO49"/>
 </segment>
 </net>
 <net name="MB04" class="0">
 <segment>
 <wire x1="322.58" y1="121.92" x2="330.2" y2="121.92" width="0.1524" layer="91"/>
 <label x="322.58" y="121.92" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO59"/>
+<pinref part="MM32K" gate="IO" pin="IO59"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="195.58" x2="294.64" y2="195.58" width="0.1524" layer="91"/>
-<label x="294.64" y="195.58" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO41"/>
+<wire x1="302.26" y1="208.28" x2="294.64" y2="208.28" width="0.1524" layer="91"/>
+<label x="294.64" y="208.28" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO46"/>
 </segment>
 </net>
 <net name="MB03" class="0">
 <segment>
 <wire x1="330.2" y1="114.3" x2="322.58" y2="114.3" width="0.1524" layer="91"/>
 <label x="322.58" y="114.3" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO56"/>
+<pinref part="MM32K" gate="IO" pin="IO56"/>
 </segment>
 <segment>
-<wire x1="276.86" y1="182.88" x2="276.86" y2="175.26" width="0.1524" layer="91"/>
-<label x="276.86" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO38"/>
+<wire x1="294.64" y1="200.66" x2="302.26" y2="200.66" width="0.1524" layer="91"/>
+<label x="294.64" y="200.66" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO43"/>
 </segment>
 </net>
 <net name="MB02" class="0">
 <segment>
 <wire x1="330.2" y1="106.68" x2="322.58" y2="106.68" width="0.1524" layer="91"/>
 <label x="322.58" y="106.68" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO53"/>
+<pinref part="MM32K" gate="IO" pin="IO53"/>
 </segment>
 <segment>
-<wire x1="269.24" y1="182.88" x2="269.24" y2="175.26" width="0.1524" layer="91"/>
-<label x="269.24" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO35"/>
+<wire x1="279.4" y1="182.88" x2="279.4" y2="175.26" width="0.1524" layer="91"/>
+<label x="279.4" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO39"/>
 </segment>
 </net>
 <net name="MB01" class="0">
 <segment>
 <wire x1="330.2" y1="104.14" x2="322.58" y2="104.14" width="0.1524" layer="91"/>
 <label x="322.58" y="104.14" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO52"/>
+<pinref part="MM32K" gate="IO" pin="IO52"/>
 </segment>
 <segment>
-<wire x1="266.7" y1="182.88" x2="266.7" y2="175.26" width="0.1524" layer="91"/>
-<label x="266.7" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO34"/>
+<wire x1="276.86" y1="182.88" x2="276.86" y2="175.26" width="0.1524" layer="91"/>
+<label x="276.86" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO38"/>
 </segment>
 </net>
 <net name="MB00" class="0">
 <segment>
 <wire x1="330.2" y1="101.6" x2="322.58" y2="101.6" width="0.1524" layer="91"/>
 <label x="322.58" y="101.6" size="1.778" layer="95"/>
-<pinref part="E2" gate="IO" pin="IO51"/>
+<pinref part="MM32K" gate="IO" pin="IO51"/>
 </segment>
 <segment>
-<wire x1="264.16" y1="182.88" x2="264.16" y2="175.26" width="0.1524" layer="91"/>
-<label x="264.16" y="182.88" size="1.778" layer="95" rot="MR270"/>
-<pinref part="E1" gate="IO" pin="IO33"/>
+<wire x1="274.32" y1="182.88" x2="274.32" y2="175.26" width="0.1524" layer="91"/>
+<label x="274.32" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO37"/>
 </segment>
 </net>
 <net name="!ACLR" class="0">
 <segment>
-<wire x1="294.64" y1="231.14" x2="302.26" y2="231.14" width="0.1524" layer="91"/>
-<label x="294.64" y="231.14" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO55"/>
+<wire x1="294.64" y1="243.84" x2="302.26" y2="243.84" width="0.1524" layer="91"/>
+<label x="294.64" y="243.84" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO60"/>
 </segment>
 </net>
 <net name="!IRQ" class="0">
 <segment>
-<wire x1="294.64" y1="226.06" x2="302.26" y2="226.06" width="0.1524" layer="91"/>
-<label x="294.64" y="226.06" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO53"/>
+<wire x1="294.64" y1="238.76" x2="302.26" y2="238.76" width="0.1524" layer="91"/>
+<label x="294.64" y="238.76" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO58"/>
 </segment>
 </net>
 <net name="!SKIP" class="0">
 <segment>
-<wire x1="294.64" y1="220.98" x2="302.26" y2="220.98" width="0.1524" layer="91"/>
-<label x="294.64" y="220.98" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO51"/>
+<wire x1="294.64" y1="233.68" x2="302.26" y2="233.68" width="0.1524" layer="91"/>
+<label x="294.64" y="233.68" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO56"/>
 </segment>
 </net>
 <net name="!IB11" class="0">
 <segment>
-<wire x1="294.64" y1="215.9" x2="302.26" y2="215.9" width="0.1524" layer="91"/>
-<label x="294.64" y="215.9" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO49"/>
+<wire x1="294.64" y1="228.6" x2="302.26" y2="228.6" width="0.1524" layer="91"/>
+<label x="294.64" y="228.6" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO54"/>
 </segment>
 </net>
 <net name="!IB10" class="0">
 <segment>
-<wire x1="294.64" y1="210.82" x2="302.26" y2="210.82" width="0.1524" layer="91"/>
-<label x="294.64" y="210.82" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO47"/>
+<wire x1="294.64" y1="223.52" x2="302.26" y2="223.52" width="0.1524" layer="91"/>
+<label x="294.64" y="223.52" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO52"/>
 </segment>
 </net>
 <net name="!IB09" class="0">
 <segment>
-<wire x1="294.64" y1="205.74" x2="302.26" y2="205.74" width="0.1524" layer="91"/>
-<label x="294.64" y="205.74" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO45"/>
+<wire x1="294.64" y1="218.44" x2="302.26" y2="218.44" width="0.1524" layer="91"/>
+<label x="294.64" y="218.44" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO50"/>
 </segment>
 </net>
 <net name="!IB08" class="0">
 <segment>
-<wire x1="279.4" y1="264.16" x2="279.4" y2="256.54" width="0.1524" layer="91"/>
-<label x="279.4" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IO62"/>
+<wire x1="266.7" y1="264.16" x2="266.7" y2="256.54" width="0.1524" layer="91"/>
+<label x="266.7" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO67"/>
 </segment>
 </net>
 <net name="!IB07" class="0">
 <segment>
-<wire x1="302.26" y1="243.84" x2="294.64" y2="243.84" width="0.1524" layer="91"/>
-<label x="294.64" y="243.84" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO60"/>
+<wire x1="271.78" y1="264.16" x2="271.78" y2="256.54" width="0.1524" layer="91"/>
+<label x="271.78" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO65"/>
 </segment>
 </net>
 <net name="!IB06" class="0">
 <segment>
-<wire x1="294.64" y1="238.76" x2="302.26" y2="238.76" width="0.1524" layer="91"/>
-<label x="294.64" y="238.76" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO58"/>
+<wire x1="276.86" y1="256.54" x2="276.86" y2="264.16" width="0.1524" layer="91"/>
+<label x="276.86" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO63"/>
 </segment>
 </net>
-<net name="EXDA0" class="0">
+<net name="!EXDA0" class="0">
 <segment>
 <wire x1="220.98" y1="205.74" x2="213.36" y2="205.74" width="0.1524" layer="91"/>
 <label x="220.98" y="205.74" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO16"/>
+<pinref part="MMU8L" gate="IO" pin="IO16"/>
 </segment>
 </net>
-<net name="EXDA1" class="0">
+<net name="!EXDA1" class="0">
 <segment>
 <wire x1="213.36" y1="203.2" x2="220.98" y2="203.2" width="0.1524" layer="91"/>
 <label x="220.98" y="203.2" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO17"/>
+<pinref part="MMU8L" gate="IO" pin="IO17"/>
 </segment>
 </net>
-<net name="EXDA2" class="0">
+<net name="!EXDA2" class="0">
 <segment>
 <wire x1="220.98" y1="200.66" x2="213.36" y2="200.66" width="0.1524" layer="91"/>
 <label x="220.98" y="200.66" size="1.778" layer="95" rot="MR0"/>
-<pinref part="E1" gate="IO" pin="IO18"/>
+<pinref part="MMU8L" gate="IO" pin="IO18"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -11696,7 +11753,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 </segment>
 <segment>
 <wire x1="289.56" y1="144.78" x2="289.56" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="E2" gate="IO" pin="IN/GCLK1"/>
+<pinref part="MM32K" gate="IO" pin="IN/GCLK1"/>
 <label x="289.56" y="137.16" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
@@ -11704,42 +11761,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="256.54" y1="256.54" x2="256.54" y2="264.16" width="0.1524" layer="91"/>
 <label x="256.54" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IN/GCLR"/>
-</segment>
-</net>
-<net name="SUF" class="0">
-<segment>
-<wire x1="241.3" y1="264.16" x2="241.3" y2="256.54" width="0.1524" layer="91"/>
-<label x="241.3" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IO73"/>
-</segment>
-</net>
-<net name="SINT" class="0">
-<segment>
-<wire x1="246.38" y1="256.54" x2="246.38" y2="264.16" width="0.1524" layer="91"/>
-<label x="246.38" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IO71"/>
-</segment>
-</net>
-<net name="CINT" class="0">
-<segment>
-<wire x1="248.92" y1="256.54" x2="248.92" y2="264.16" width="0.1524" layer="91"/>
-<label x="248.92" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IO70"/>
-</segment>
-</net>
-<net name="CUF" class="0">
-<segment>
-<wire x1="243.84" y1="256.54" x2="243.84" y2="264.16" width="0.1524" layer="91"/>
-<label x="243.84" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IO72"/>
-</segment>
-</net>
-<net name="U" class="0">
-<segment>
-<wire x1="238.76" y1="256.54" x2="238.76" y2="264.16" width="0.1524" layer="91"/>
-<label x="238.76" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IO74"/>
+<pinref part="MMU8L" gate="IO" pin="IN/GCLR"/>
 </segment>
 </net>
 <net name="TCK2" class="0">
@@ -11751,7 +11773,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="167.64" y1="147.32" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
 <label x="170.18" y="147.32" size="1.778" layer="95"/>
-<pinref part="E2" gate="JEDEC" pin="TCK"/>
+<pinref part="MM32K" gate="JEDEC" pin="TCK"/>
 </segment>
 </net>
 <net name="TDO2" class="0">
@@ -11763,7 +11785,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="180.34" y1="149.86" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
 <label x="170.18" y="149.86" size="1.778" layer="95"/>
-<pinref part="E2" gate="JEDEC" pin="TDO"/>
+<pinref part="MM32K" gate="JEDEC" pin="TDO"/>
 </segment>
 </net>
 <net name="TMS2" class="0">
@@ -11775,7 +11797,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="180.34" y1="144.78" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
 <label x="170.18" y="144.78" size="1.778" layer="95"/>
-<pinref part="E2" gate="JEDEC" pin="TMS"/>
+<pinref part="MM32K" gate="JEDEC" pin="TMS"/>
 </segment>
 </net>
 <net name="TDI2" class="0">
@@ -11787,7 +11809,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="167.64" y1="152.4" x2="180.34" y2="152.4" width="0.1524" layer="91"/>
 <label x="170.18" y="152.4" size="1.778" layer="95"/>
-<pinref part="E2" gate="JEDEC" pin="TDI"/>
+<pinref part="MM32K" gate="JEDEC" pin="TDI"/>
 </segment>
 </net>
 <net name="TCK1" class="0">
@@ -11799,7 +11821,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="165.1" y1="208.28" x2="177.8" y2="208.28" width="0.1524" layer="91"/>
 <label x="167.64" y="208.28" size="1.778" layer="95"/>
-<pinref part="E1" gate="JEDEC" pin="TCK"/>
+<pinref part="MMU8L" gate="JEDEC" pin="TCK"/>
 </segment>
 </net>
 <net name="TDO1" class="0">
@@ -11811,7 +11833,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="177.8" y1="210.82" x2="165.1" y2="210.82" width="0.1524" layer="91"/>
 <label x="167.64" y="210.82" size="1.778" layer="95"/>
-<pinref part="E1" gate="JEDEC" pin="TDO"/>
+<pinref part="MMU8L" gate="JEDEC" pin="TDO"/>
 </segment>
 </net>
 <net name="TMS1" class="0">
@@ -11823,7 +11845,7 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="177.8" y1="205.74" x2="165.1" y2="205.74" width="0.1524" layer="91"/>
 <label x="167.64" y="205.74" size="1.778" layer="95"/>
-<pinref part="E1" gate="JEDEC" pin="TMS"/>
+<pinref part="MMU8L" gate="JEDEC" pin="TMS"/>
 </segment>
 </net>
 <net name="TDI1" class="0">
@@ -11835,70 +11857,70 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="165.1" y1="213.36" x2="177.8" y2="213.36" width="0.1524" layer="91"/>
 <label x="167.64" y="213.36" size="1.778" layer="95"/>
-<pinref part="E1" gate="JEDEC" pin="TDI"/>
+<pinref part="MMU8L" gate="JEDEC" pin="TDI"/>
 </segment>
 </net>
 <net name="!IB00" class="0">
 <segment>
-<wire x1="294.64" y1="208.28" x2="302.26" y2="208.28" width="0.1524" layer="91"/>
-<label x="294.64" y="208.28" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO46"/>
+<wire x1="294.64" y1="220.98" x2="302.26" y2="220.98" width="0.1524" layer="91"/>
+<label x="294.64" y="220.98" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO51"/>
 </segment>
 </net>
 <net name="!IB01" class="0">
 <segment>
-<wire x1="294.64" y1="213.36" x2="302.26" y2="213.36" width="0.1524" layer="91"/>
-<label x="294.64" y="213.36" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO48"/>
+<wire x1="294.64" y1="226.06" x2="302.26" y2="226.06" width="0.1524" layer="91"/>
+<label x="294.64" y="226.06" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO53"/>
 </segment>
 </net>
 <net name="!IB02" class="0">
 <segment>
-<wire x1="294.64" y1="218.44" x2="302.26" y2="218.44" width="0.1524" layer="91"/>
-<label x="294.64" y="218.44" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO50"/>
+<wire x1="294.64" y1="231.14" x2="302.26" y2="231.14" width="0.1524" layer="91"/>
+<label x="294.64" y="231.14" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO55"/>
 </segment>
 </net>
 <net name="!IB03" class="0">
 <segment>
-<wire x1="294.64" y1="223.52" x2="302.26" y2="223.52" width="0.1524" layer="91"/>
-<label x="294.64" y="223.52" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO52"/>
+<wire x1="294.64" y1="236.22" x2="302.26" y2="236.22" width="0.1524" layer="91"/>
+<label x="294.64" y="236.22" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO57"/>
 </segment>
 </net>
 <net name="!IB04" class="0">
 <segment>
-<wire x1="294.64" y1="228.6" x2="302.26" y2="228.6" width="0.1524" layer="91"/>
-<label x="294.64" y="228.6" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO54"/>
+<wire x1="294.64" y1="241.3" x2="302.26" y2="241.3" width="0.1524" layer="91"/>
+<label x="294.64" y="241.3" size="1.778" layer="95"/>
+<pinref part="MMU8L" gate="IO" pin="IO59"/>
 </segment>
 </net>
 <net name="!IB05" class="0">
 <segment>
-<wire x1="294.64" y1="233.68" x2="302.26" y2="233.68" width="0.1524" layer="91"/>
-<label x="294.64" y="233.68" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO56"/>
+<wire x1="281.94" y1="256.54" x2="281.94" y2="264.16" width="0.1524" layer="91"/>
+<label x="281.94" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO61"/>
 </segment>
 </net>
 <net name="!RUN" class="0">
 <segment>
-<wire x1="294.64" y1="236.22" x2="302.26" y2="236.22" width="0.1524" layer="91"/>
-<label x="294.64" y="236.22" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO57"/>
+<wire x1="279.4" y1="256.54" x2="279.4" y2="264.16" width="0.1524" layer="91"/>
+<label x="279.4" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO62"/>
 </segment>
 </net>
 <net name="!TTINST" class="0">
 <segment>
-<wire x1="302.26" y1="241.3" x2="294.64" y2="241.3" width="0.1524" layer="91"/>
-<label x="294.64" y="241.3" size="1.778" layer="95"/>
-<pinref part="E1" gate="IO" pin="IO59"/>
+<wire x1="274.32" y1="264.16" x2="274.32" y2="256.54" width="0.1524" layer="91"/>
+<label x="274.32" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO64"/>
 </segment>
 </net>
 <net name="!LINE" class="0">
 <segment>
-<wire x1="281.94" y1="264.16" x2="281.94" y2="256.54" width="0.1524" layer="91"/>
-<label x="281.94" y="256.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="E1" gate="IO" pin="IO61"/>
+<wire x1="269.24" y1="264.16" x2="269.24" y2="256.54" width="0.1524" layer="91"/>
+<label x="269.24" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO66"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -11931,6 +11953,162 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="E4" gate="G$1" pin="A10"/>
 <pinref part="E4A" gate="G$1" pin="A10"/>
 <junction x="50.8" y="144.78"/>
+</segment>
+</net>
+<net name="DEL6" class="0">
+<segment>
+<wire x1="271.78" y1="182.88" x2="271.78" y2="175.26" width="0.1524" layer="91"/>
+<label x="271.78" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO36"/>
+</segment>
+<segment>
+<wire x1="304.8" y1="137.16" x2="304.8" y2="144.78" width="0.1524" layer="91"/>
+<label x="304.8" y="137.16" size="1.778" layer="95" rot="R90"/>
+<pinref part="MM32K" gate="IO" pin="IO63"/>
+</segment>
+</net>
+<net name="DEL1" class="0">
+<segment>
+<wire x1="259.08" y1="182.88" x2="259.08" y2="175.26" width="0.1524" layer="91"/>
+<label x="259.08" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO31"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="137.16" x2="292.1" y2="144.78" width="0.1524" layer="91"/>
+<label x="292.1" y="137.16" size="1.778" layer="95" rot="R90"/>
+<pinref part="MM32K" gate="IO" pin="IO/GCLK3"/>
+</segment>
+</net>
+<net name="DEL2" class="0">
+<segment>
+<wire x1="261.62" y1="182.88" x2="261.62" y2="175.26" width="0.1524" layer="91"/>
+<label x="261.62" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO/PD2"/>
+</segment>
+<segment>
+<wire x1="294.64" y1="137.16" x2="294.64" y2="144.78" width="0.1524" layer="91"/>
+<label x="294.64" y="137.16" size="1.778" layer="95" rot="R90"/>
+<pinref part="MM32K" gate="IO" pin="IO67"/>
+</segment>
+</net>
+<net name="DEL3" class="0">
+<segment>
+<wire x1="264.16" y1="182.88" x2="264.16" y2="175.26" width="0.1524" layer="91"/>
+<label x="264.16" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO33"/>
+</segment>
+<segment>
+<wire x1="297.18" y1="137.16" x2="297.18" y2="144.78" width="0.1524" layer="91"/>
+<label x="297.18" y="137.16" size="1.778" layer="95" rot="R90"/>
+<pinref part="MM32K" gate="IO" pin="IO66"/>
+</segment>
+</net>
+<net name="DEL4" class="0">
+<segment>
+<wire x1="266.7" y1="182.88" x2="266.7" y2="175.26" width="0.1524" layer="91"/>
+<label x="266.7" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO34"/>
+</segment>
+<segment>
+<wire x1="299.72" y1="137.16" x2="299.72" y2="144.78" width="0.1524" layer="91"/>
+<label x="299.72" y="137.16" size="1.778" layer="95" rot="R90"/>
+<pinref part="MM32K" gate="IO" pin="IO65"/>
+</segment>
+</net>
+<net name="DEL5" class="0">
+<segment>
+<wire x1="269.24" y1="182.88" x2="269.24" y2="175.26" width="0.1524" layer="91"/>
+<label x="269.24" y="182.88" size="1.778" layer="95" rot="MR270"/>
+<pinref part="MMU8L" gate="IO" pin="IO35"/>
+</segment>
+<segment>
+<wire x1="302.26" y1="137.16" x2="302.26" y2="144.78" width="0.1524" layer="91"/>
+<label x="302.26" y="137.16" size="1.778" layer="95" rot="R90"/>
+<pinref part="MM32K" gate="IO" pin="IO64"/>
+</segment>
+</net>
+<net name="!KEY_IF0" class="0">
+<segment>
+<wire x1="53.34" y1="248.92" x2="66.04" y2="248.92" width="0.1524" layer="91"/>
+<label x="53.34" y="248.92" size="1.778" layer="95"/>
+<pinref part="PANEL" gate="G$1" pin="17"/>
+</segment>
+<segment>
+<wire x1="248.92" y1="256.54" x2="248.92" y2="269.24" width="0.1524" layer="91"/>
+<label x="248.92" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO70"/>
+</segment>
+</net>
+<net name="!KEY_IF1" class="0">
+<segment>
+<wire x1="53.34" y1="246.38" x2="66.04" y2="246.38" width="0.1524" layer="91"/>
+<label x="53.34" y="246.38" size="1.778" layer="95"/>
+<pinref part="PANEL" gate="G$1" pin="15"/>
+</segment>
+<segment>
+<wire x1="246.38" y1="256.54" x2="246.38" y2="269.24" width="0.1524" layer="91"/>
+<label x="246.38" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO71"/>
+</segment>
+</net>
+<net name="!KEY_DF0" class="0">
+<segment>
+<wire x1="53.34" y1="241.3" x2="66.04" y2="241.3" width="0.1524" layer="91"/>
+<label x="53.34" y="241.3" size="1.778" layer="95"/>
+<pinref part="PANEL" gate="G$1" pin="11"/>
+</segment>
+<segment>
+<wire x1="238.76" y1="256.54" x2="238.76" y2="269.24" width="0.1524" layer="91"/>
+<label x="238.76" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO74"/>
+</segment>
+</net>
+<net name="!KEY_DF1" class="0">
+<segment>
+<wire x1="53.34" y1="238.76" x2="66.04" y2="238.76" width="0.1524" layer="91"/>
+<label x="53.34" y="238.76" size="1.778" layer="95"/>
+<pinref part="PANEL" gate="G$1" pin="9"/>
+</segment>
+<segment>
+<wire x1="241.3" y1="256.54" x2="241.3" y2="269.24" width="0.1524" layer="91"/>
+<label x="241.3" y="256.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="MMU8L" gate="IO" pin="IO73"/>
+</segment>
+</net>
+<net name="!EA0" class="0">
+<segment>
+<wire x1="53.34" y1="233.68" x2="66.04" y2="233.68" width="0.1524" layer="91"/>
+<label x="53.34" y="233.68" size="1.778" layer="95"/>
+<pinref part="PANEL" gate="G$1" pin="5"/>
+</segment>
+<segment>
+<wire x1="322.58" y1="86.36" x2="330.2" y2="86.36" width="0.1524" layer="91"/>
+<label x="322.58" y="86.36" size="1.778" layer="95"/>
+<pinref part="MM32K" gate="IO" pin="IO45"/>
+</segment>
+</net>
+<net name="!EA1" class="0">
+<segment>
+<wire x1="66.04" y1="231.14" x2="53.34" y2="231.14" width="0.1524" layer="91"/>
+<label x="53.34" y="231.14" size="1.778" layer="95"/>
+<pinref part="PANEL" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<wire x1="330.2" y1="88.9" x2="322.58" y2="88.9" width="0.1524" layer="91"/>
+<label x="322.58" y="88.9" size="1.778" layer="95"/>
+<pinref part="MM32K" gate="IO" pin="IO46"/>
+</segment>
+</net>
+<net name="!EA2" class="0">
+<segment>
+<wire x1="53.34" y1="228.6" x2="66.04" y2="228.6" width="0.1524" layer="91"/>
+<label x="53.34" y="228.6" size="1.778" layer="95"/>
+<pinref part="PANEL" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="322.58" y1="91.44" x2="330.2" y2="91.44" width="0.1524" layer="91"/>
+<label x="322.58" y="91.44" size="1.778" layer="95"/>
+<pinref part="MM32K" gate="IO" pin="IO47"/>
 </segment>
 </net>
 </nets>

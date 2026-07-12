@@ -1,39 +1,22 @@
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Warning (10240): Verilog HDL Always Construct warning at mm32k.v(75): inferring latch(es) for variable "mt", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at mm32k.v(75): inferring latch(es) for variable "mtnext", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at mm32k.v(99): inferring latch(es) for variable "OE_L", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at mm32k.v(105): inferring latch(es) for variable "WE_L", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at mm32k.v(116): inferring latch(es) for variable "sdelay", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at mm32k.v(122): inferring latch(es) for variable "strobe", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at mm32k.v(132): inferring latch(es) for variable "ddelay", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at mm32k.v(138): inferring latch(es) for variable "memdone", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "memdone" at mm32k.v(141)
-Info (10041): Inferred latch for "ddelay" at mm32k.v(135)
-Info (10041): Inferred latch for "strobe" at mm32k.v(125)
-Info (10041): Inferred latch for "sdelay" at mm32k.v(119)
-Info (10041): Inferred latch for "WE_L" at mm32k.v(108)
-Info (10041): Inferred latch for "OE_L" at mm32k.v(102)
-Info (10041): Inferred latch for "mtnext[13]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[12]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[11]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[10]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[9]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[8]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[7]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[6]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[5]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[4]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[3]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[2]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[1]" at mm32k.v(79)
-Info (10041): Inferred latch for "mtnext[0]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[13]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[12]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[11]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[10]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[9]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[8]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[7]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[6]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[5]" at mm32k.v(79)
-Info (10041): Inferred latch for "mt[4]" at mm32k.v(79)
+Warning (10240): Verilog HDL Always Construct warning at mm32k.v(115): inferring latch(es) for variable "mt", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mm32k.v(136): inferring latch(es) for variable "OE_L", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mm32k.v(142): inferring latch(es) for variable "WE_L", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mm32k.v(153): inferring latch(es) for variable "sdelay", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mm32k.v(159): inferring latch(es) for variable "strobe", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mm32k.v(169): inferring latch(es) for variable "ddelay", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mm32k.v(175): inferring latch(es) for variable "memdone", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "memdone" at mm32k.v(178)
+Info (10041): Inferred latch for "ddelay" at mm32k.v(172)
+Info (10041): Inferred latch for "strobe" at mm32k.v(162)
+Info (10041): Inferred latch for "sdelay" at mm32k.v(156)
+Info (10041): Inferred latch for "WE_L" at mm32k.v(145)
+Info (10041): Inferred latch for "OE_L" at mm32k.v(139)
+Info (10041): Inferred latch for "mt[13]" at mm32k.v(118)
+Info (10041): Inferred latch for "mt[12]" at mm32k.v(118)
+Info (10041): Inferred latch for "mt[11]" at mm32k.v(118)
+Info (10041): Inferred latch for "mt[10]" at mm32k.v(118)
+Info (10041): Inferred latch for "mt[9]" at mm32k.v(118)
+Info (10041): Inferred latch for "mt[8]" at mm32k.v(118)
+Info (10041): Inferred latch for "mt[7]" at mm32k.v(118)
+Info (10041): Inferred latch for "mt[6]" at mm32k.v(118)

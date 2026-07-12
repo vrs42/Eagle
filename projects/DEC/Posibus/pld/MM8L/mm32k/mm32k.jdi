@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="340e94c0c5e48ed4cb43"/>
+    <hash md5_digest_80b="10bec6d0739d7ea4d0ed"/>
   </project>
   <file_info>
-    <file device="EPM7128SLC84-15" path="//wsl.localhost/Ubuntu/home/vrs/Verilog/projects/mmu8l/mm32k.sof" usercode="0x00000000"/>
+    <file device="EPM7128SQC100-15" path="//wsl.localhost/Ubuntu/home/vrs/Eagle/projects/DEC/Posibus/pld/MM8L/mm32k/mm32k.sof" usercode="0x00000000"/>
   </file_info>
 </sld_project_info>

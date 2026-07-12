@@ -1,0 +1,622 @@
+Fitter report for mmu8l
+Thu Jun 25 23:21:49 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. All Package Pins
+ 10. I/O Standard
+ 11. Dedicated Inputs I/O
+ 12. Output Pin Default Load For Reported TCO
+ 13. Fitter Resource Utilization by Entity
+ 14. Non-Global High Fan-Out Signals
+ 15. Other Routing Usage Summary
+ 16. LAB External Interconnect
+ 17. LAB Macrocells
+ 18. Parallel Expander
+ 19. Shareable Expander
+ 20. Logic Cell Interconnection
+ 21. Fitter Device Options
+ 22. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Fitter Summary                                                              ;
++---------------------------+-------------------------------------------------+
+; Fitter Status             ; Successful - Thu Jun 25 23:21:49 2026           ;
+; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name             ; mmu8l                                           ;
+; Top-level Entity Name     ; mmu8l                                           ;
+; Family                    ; MAX7000S                                        ;
+; Device                    ; EPM7128SQI100-10                                ;
+; Timing Models             ; Final                                           ;
+; Total macrocells          ; 51 / 128 ( 40 % )                               ;
+; Total pins                ; 72 / 84 ( 86 % )                                ;
++---------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                               ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM7128SQI100-10 ;               ;
+; Fitter Effort                                                              ; Standard Fit     ; Auto Fit      ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Optimize Multi-Corner Timing                                               ; Off              ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off              ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off              ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; Normal           ; Normal        ;
+; Fitter Initial Placement Seed                                              ; 1                ; 1             ;
+; Slow Slew Rate                                                             ; Off              ; Off           ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off              ; Off           ;
++----------------------------------------------------------------------------+------------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in //wsl.localhost/Ubuntu/home/vrs/Eagle/projects/DEC/Posibus/pld/MM8L/mmu8l/output_files/mmu8l.pin.
+
+
++--------------------------------------------------+
+; Fitter Resource Usage Summary                    ;
++------------------------------+-------------------+
+; Resource                     ; Usage             ;
++------------------------------+-------------------+
+; Logic cells                  ; 51 / 128 ( 40 % ) ;
+; Registers                    ; 0 / 128 ( 0 % )   ;
+; Number of pterms used        ; 128               ;
+; I/O pins                     ; 72 / 84 ( 86 % )  ;
+;     -- Clock pins            ; 2 / 2 ( 100 % )   ;
+;     -- Dedicated input pins  ; 1 / 2 ( 50 % )    ;
+;                              ;                   ;
+; Global signals               ; 0                 ;
+; Shareable expanders          ; 11 / 128 ( 9 % )  ;
+; Parallel expanders           ; 1 / 120 ( < 1 % ) ;
+; Cells using turbo bit        ; 51 / 128 ( 40 % ) ;
+; Maximum fan-out              ; 24                ;
+; Highest non-global fan-out   ; 24                ;
+; Total fan-out                ; 408               ;
+; Average fan-out              ; 3.04              ;
++------------------------------+-------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                          ;
++---------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; Name          ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; I/O Standard ; Location assigned by ;
++---------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+; AC_LOW        ; 3     ; --       ; 1   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; BF_ENABLE_L   ; 16    ; --       ; 2   ; 3                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; DEL1          ; 42    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; DEL2          ; 43    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; DEL3          ; 44    ; --       ; 5   ; 9                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; DEL4          ; 46    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; DEL5          ; 47    ; --       ; 5   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; DEL6          ; 48    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; DF_ENABLE_L   ; 22    ; --       ; 3   ; 3                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; EXDA_L[0]     ; 23    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; EXDA_L[1]     ; 24    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; EXDA_L[2]     ; 25    ; --       ; 3   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; E_OR_F_SET    ; 21    ; --       ; 3   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; INIT          ; 91    ; --       ; --  ; 21                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; IOP1          ; 92    ; --       ; --  ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; IOP2          ; 87    ; --       ; 8   ; 8                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; IOP4          ; 89    ; --       ; --  ; 19                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; JMP_OR_JMS    ; 18    ; --       ; 3   ; 11                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; KEY_CLR_L     ; 12    ; --       ; 2   ; 3                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; KEY_DF_L[0]   ; 96    ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; KEY_DF_L[1]   ; 95    ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; KEY_DF_L[2]   ; 4     ; --       ; 1   ; 1                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; KEY_IF_L[0]   ; 100   ; --       ; 1   ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; KEY_IF_L[1]   ; 99    ; --       ; 1   ; 3                     ; 0                  ; no     ; no             ; TTL          ; Fitter               ;
+; KEY_IF_L[2]   ; 8     ; --       ; 2   ; 3                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; KEY_LOAD_L    ; 15    ; --       ; 2   ; 13                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; LOAD_SF_L     ; 10    ; --       ; 2   ; 5                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[0]         ; 49    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[10]        ; 60    ; --       ; 6   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[11]        ; 62    ; --       ; 6   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[1]         ; 50    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[2]         ; 51    ; --       ; 5   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[3]         ; 56    ; --       ; 6   ; 24                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[4]         ; 59    ; --       ; 6   ; 24                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[5]         ; 63    ; --       ; 6   ; 24                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[6]         ; 52    ; --       ; 5   ; 20                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[7]         ; 55    ; --       ; 6   ; 19                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[8]         ; 57    ; --       ; 6   ; 19                    ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MB[9]         ; 58    ; --       ; 6   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; MEMSTART      ; 34    ; --       ; 4   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; POWER_OK      ; 7     ; --       ; 2   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; SP_CYC_NEXT_L ; 19    ; --       ; 3   ; 3                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; STOP_OK       ; 9     ; --       ; 2   ; 0                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; TP2           ; 32    ; --       ; 4   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
+; TP3           ; 14    ; --       ; 2   ; 2                     ; 0                  ; no     ; no             ; TTL          ; User                 ;
++---------------+-------+----------+-----+-----------------------+--------------------+--------+----------------+--------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                   ;
++-----------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name      ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++-----------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; ACLR_L    ; 78    ; --       ; 8   ; no              ; no             ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; EA[0]     ; 30    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; EA[1]     ; 29    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; EA[2]     ; 27    ; --       ; 3   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; EA_L      ; 26    ; --       ; 3   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; EMA       ; 39    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; EMA_L     ; 38    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; FIELD1    ; 35    ; --       ; 4   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[0]   ; 66    ; --       ; 7   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[10]  ; 67    ; --       ; 7   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[11]  ; 70    ; --       ; 7   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[1]   ; 69    ; --       ; 7   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[2]   ; 71    ; --       ; 7   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[3]   ; 73    ; --       ; 7   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[4]   ; 77    ; --       ; 8   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[5]   ; 79    ; --       ; 8   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[6]   ; 81    ; --       ; 8   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[7]   ; 83    ; --       ; 8   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[8]   ; 86    ; --       ; 8   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IB_L[9]   ; 65    ; --       ; 7   ; no              ; no             ; no         ; yes           ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; INT_INH_L ; 11    ; --       ; 2   ; no              ; no             ; no         ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; IRQ_L     ; 74    ; --       ; 7   ; no              ; no             ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
+; SKIP_L    ; 72    ; --       ; 7   ; no              ; no             ; yes        ; no            ; TTL          ; User                 ; 10 pF ; -                    ; -                   ;
++-----------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                      ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; 1        ; 10         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 2        ; 11         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 3        ; 12         ; --       ; AC_LOW         ; input  ; TTL          ;         ; Y               ;
+; 4        ; 13         ; --       ; KEY_DF_L[2]    ; input  ; TTL          ;         ; Y               ;
+; 5        ; 14         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 6        ; 15         ; --       ; TDI            ; input  ; TTL          ;         ; N               ;
+; 7        ; 16         ; --       ; POWER_OK       ; input  ; TTL          ;         ; Y               ;
+; 8        ; 17         ; --       ; KEY_IF_L[2]    ; input  ; TTL          ;         ; Y               ;
+; 9        ; 18         ; --       ; STOP_OK        ; input  ; TTL          ;         ; Y               ;
+; 10       ; 19         ; --       ; LOAD_SF_L      ; input  ; TTL          ;         ; Y               ;
+; 11       ; 20         ; --       ; INT_INH_L      ; output ; TTL          ;         ; Y               ;
+; 12       ; 21         ; --       ; KEY_CLR_L      ; input  ; TTL          ;         ; Y               ;
+; 13       ; 22         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 14       ; 23         ; --       ; TP3            ; input  ; TTL          ;         ; Y               ;
+; 15       ; 24         ; --       ; KEY_LOAD_L     ; input  ; TTL          ;         ; Y               ;
+; 16       ; 25         ; --       ; BF_ENABLE_L    ; input  ; TTL          ;         ; Y               ;
+; 17       ; 26         ; --       ; TMS            ; input  ; TTL          ;         ; N               ;
+; 18       ; 27         ; --       ; JMP_OR_JMS     ; input  ; TTL          ;         ; Y               ;
+; 19       ; 28         ; --       ; SP_CYC_NEXT_L  ; input  ; TTL          ;         ; Y               ;
+; 20       ; 29         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 21       ; 30         ; --       ; E_OR_F_SET     ; input  ; TTL          ;         ; Y               ;
+; 22       ; 31         ; --       ; DF_ENABLE_L    ; input  ; TTL          ;         ; Y               ;
+; 23       ; 32         ; --       ; EXDA_L[0]      ; input  ; TTL          ;         ; Y               ;
+; 24       ; 33         ; --       ; EXDA_L[1]      ; input  ; TTL          ;         ; Y               ;
+; 25       ; 34         ; --       ; EXDA_L[2]      ; input  ; TTL          ;         ; Y               ;
+; 26       ; 35         ; --       ; EA_L           ; output ; TTL          ;         ; Y               ;
+; 27       ; 36         ; --       ; EA[2]          ; output ; TTL          ;         ; Y               ;
+; 28       ; 37         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 29       ; 38         ; --       ; EA[1]          ; output ; TTL          ;         ; Y               ;
+; 30       ; 39         ; --       ; EA[0]          ; output ; TTL          ;         ; Y               ;
+; 31       ; 40         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 32       ; 41         ; --       ; TP2            ; input  ; TTL          ;         ; Y               ;
+; 33       ; 42         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 34       ; 43         ; --       ; MEMSTART       ; input  ; TTL          ;         ; Y               ;
+; 35       ; 44         ; --       ; FIELD1         ; output ; TTL          ;         ; Y               ;
+; 36       ; 45         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 37       ; 46         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 38       ; 47         ; --       ; EMA_L          ; output ; TTL          ;         ; Y               ;
+; 39       ; 48         ; --       ; EMA            ; output ; TTL          ;         ; Y               ;
+; 40       ; 49         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 41       ; 50         ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
+; 42       ; 51         ; --       ; DEL1           ; input  ; TTL          ;         ; Y               ;
+; 43       ; 52         ; --       ; DEL2           ; input  ; TTL          ;         ; Y               ;
+; 44       ; 53         ; --       ; DEL3           ; input  ; TTL          ;         ; Y               ;
+; 45       ; 54         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 46       ; 55         ; --       ; DEL4           ; input  ; TTL          ;         ; Y               ;
+; 47       ; 56         ; --       ; DEL5           ; input  ; TTL          ;         ; Y               ;
+; 48       ; 57         ; --       ; DEL6           ; input  ; TTL          ;         ; Y               ;
+; 49       ; 58         ; --       ; MB[0]          ; input  ; TTL          ;         ; Y               ;
+; 50       ; 59         ; --       ; MB[1]          ; input  ; TTL          ;         ; Y               ;
+; 51       ; 60         ; --       ; MB[2]          ; input  ; TTL          ;         ; Y               ;
+; 52       ; 61         ; --       ; MB[6]          ; input  ; TTL          ;         ; Y               ;
+; 53       ; 62         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 54       ; 63         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 55       ; 64         ; --       ; MB[7]          ; input  ; TTL          ;         ; Y               ;
+; 56       ; 65         ; --       ; MB[3]          ; input  ; TTL          ;         ; Y               ;
+; 57       ; 66         ; --       ; MB[8]          ; input  ; TTL          ;         ; Y               ;
+; 58       ; 67         ; --       ; MB[9]          ; input  ; TTL          ;         ; Y               ;
+; 59       ; 68         ; --       ; MB[4]          ; input  ; TTL          ;         ; Y               ;
+; 60       ; 69         ; --       ; MB[10]         ; input  ; TTL          ;         ; Y               ;
+; 61       ; 70         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 62       ; 71         ; --       ; MB[11]         ; input  ; TTL          ;         ; Y               ;
+; 63       ; 72         ; --       ; MB[5]          ; input  ; TTL          ;         ; Y               ;
+; 64       ; 73         ; --       ; TCK            ; input  ; TTL          ;         ; N               ;
+; 65       ; 74         ; --       ; IB_L[9]        ; output ; TTL          ;         ; Y               ;
+; 66       ; 75         ; --       ; IB_L[0]        ; output ; TTL          ;         ; Y               ;
+; 67       ; 76         ; --       ; IB_L[10]       ; output ; TTL          ;         ; Y               ;
+; 68       ; 77         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 69       ; 78         ; --       ; IB_L[1]        ; output ; TTL          ;         ; Y               ;
+; 70       ; 79         ; --       ; IB_L[11]       ; output ; TTL          ;         ; Y               ;
+; 71       ; 80         ; --       ; IB_L[2]        ; output ; TTL          ;         ; Y               ;
+; 72       ; 81         ; --       ; SKIP_L         ; output ; TTL          ;         ; Y               ;
+; 73       ; 82         ; --       ; IB_L[3]        ; output ; TTL          ;         ; Y               ;
+; 74       ; 83         ; --       ; IRQ_L          ; output ; TTL          ;         ; Y               ;
+; 75       ; 84         ; --       ; TDO            ; output ; TTL          ;         ; N               ;
+; 76       ; 85         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 77       ; 86         ; --       ; IB_L[4]        ; output ; TTL          ;         ; Y               ;
+; 78       ; 87         ; --       ; ACLR_L         ; output ; TTL          ;         ; Y               ;
+; 79       ; 88         ; --       ; IB_L[5]        ; output ; TTL          ;         ; Y               ;
+; 80       ; 89         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 81       ; 90         ; --       ; IB_L[6]        ; output ; TTL          ;         ; Y               ;
+; 82       ; 91         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 83       ; 92         ; --       ; IB_L[7]        ; output ; TTL          ;         ; Y               ;
+; 84       ; 93         ; --       ; VCCIO          ; power  ;              ; 5.0V    ;                 ;
+; 85       ; 94         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 86       ; 95         ; --       ; IB_L[8]        ; output ; TTL          ;         ; Y               ;
+; 87       ; 96         ; --       ; IOP2           ; input  ; TTL          ;         ; Y               ;
+; 88       ; 97         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 89       ; 98         ; --       ; IOP4           ; input  ; TTL          ;         ; Y               ;
+; 90       ; 99         ; --       ; GND+           ;        ;              ;         ;                 ;
+; 91       ; 0          ; --       ; INIT           ; input  ; TTL          ;         ; Y               ;
+; 92       ; 1          ; --       ; IOP1           ; input  ; TTL          ;         ; Y               ;
+; 93       ; 2          ; --       ; VCCINT         ; power  ;              ; 5.0V    ;                 ;
+; 94       ; 3          ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 95       ; 4          ; --       ; KEY_DF_L[1]    ; input  ; TTL          ;         ; N               ;
+; 96       ; 5          ; --       ; KEY_DF_L[0]    ; input  ; TTL          ;         ; N               ;
+; 97       ; 6          ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 98       ; 7          ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 99       ; 8          ; --       ; KEY_IF_L[1]    ; input  ; TTL          ;         ; N               ;
+; 100      ; 9          ; --       ; KEY_IF_L[0]    ; input  ; TTL          ;         ; N               ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++--------------------------------------------------------------------------------------------------+
+; I/O Standard                                                                                     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; I/O Standard ; Input Vref ; Dedicated Input Pins ; Pins in I/O Bank1 ; Pins in I/O Bank2 ; Total ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; TTL          ; -          ; 3                    ; 0                 ; 0                 ; 3     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+
+
++--------------------------------------------------------------------+
+; Dedicated Inputs I/O                                               ;
++------+-------+-------+-------+--------------+------------+---------+
+; Name ; Pin # ; Type  ; VCCIO ; I/O Standard ; Input Vref ; Current ;
++------+-------+-------+-------+--------------+------------+---------+
+; INIT ; 91    ; Input ; --    ; TTL          ; -          ; 0 mA    ;
+; IOP1 ; 92    ; Input ; --    ; TTL          ; -          ; 0 mA    ;
+; IOP4 ; 89    ; Input ; --    ; TTL          ; -          ; 0 mA    ;
++------+-------+-------+-------+--------------+------------+---------+
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; TTL          ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++-------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                               ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |mmu8l                     ; 51         ; 72   ; |mmu8l              ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++---------------------------------+
+; Non-Global High Fan-Out Signals ;
++-------------------+-------------+
+; Name              ; Fan-Out     ;
++-------------------+-------------+
+; MB[3]             ; 24          ;
+; MB[4]             ; 24          ;
+; MB[5]             ; 24          ;
+; INIT              ; 21          ;
+; MB[6]             ; 20          ;
+; MB[7]             ; 19          ;
+; MB[8]             ; 19          ;
+; IOP4              ; 19          ;
+; KEY_LOAD_L        ; 13          ;
+; IB_L[0]~15        ; 12          ;
+; JMP_OR_JMS        ; 11          ;
+; WRITE~13          ; 10          ;
+; DEL3              ; 9           ;
+; IOP2              ; 8           ;
+; IOP1              ; 8           ;
+; E_OR_F_SET        ; 8           ;
+; DF[0]~21sexpand1  ; 7           ;
+; EA[2]$latch~10    ; 6           ;
+; LOAD_SF_L         ; 5           ;
+; ib[0]~19sexpand0  ; 5           ;
+; EA[1]$latch~9     ; 5           ;
+; EA[0]$latch~9     ; 5           ;
+; DF[1]~61          ; 4           ;
+; DF[0]~52          ; 4           ;
+; IF[2]~52          ; 4           ;
+; sf[3]~41          ; 4           ;
+; IF[1]~43          ; 4           ;
+; sf[2]~37          ; 4           ;
+; IF[0]~37          ; 4           ;
+; SP_CYC_NEXT_L     ; 3           ;
+; KEY_IF_L[0]       ; 3           ;
+; KEY_IF_L[1]       ; 3           ;
+; KEY_IF_L[2]       ; 3           ;
+; KEY_CLR_L         ; 3           ;
+; DF_ENABLE_L       ; 3           ;
+; BF_ENABLE_L       ; 3           ;
+; DF[0]~21sexpand0  ; 3           ;
+; IF[0]~13sexpand1  ; 3           ;
+; DF[2]~76          ; 3           ;
+; ib[2]~69          ; 3           ;
+; ib[1]~54          ; 3           ;
+; ib[0]~45          ; 3           ;
+; TP3               ; 2           ;
+; TP2               ; 2           ;
+; comb~22sexpand1   ; 2           ;
+; EA[0]~31sexpand0  ; 2           ;
+; sf[6]~53          ; 2           ;
+; sf[5]~49          ; 2           ;
+; sf[4]~45          ; 2           ;
+; inth~10           ; 2           ;
+; EA[0]~74          ; 1           ;
+; comb~26           ; 1           ;
+; DF[0]~79          ; 1           ;
+; DF[0]~78          ; 1           ;
+; KEY_DF_L[0]       ; 1           ;
+; KEY_DF_L[1]       ; 1           ;
+; KEY_DF_L[2]       ; 1           ;
+; EXDA_L[0]         ; 1           ;
+; EXDA_L[1]         ; 1           ;
+; EXDA_L[2]         ; 1           ;
+; DEL5              ; 1           ;
+; comb~6sexpand0bal ; 1           ;
+; comb~8sexpand0    ; 1           ;
+; ~VCC~9            ; 1           ;
+; ~VCC~8            ; 1           ;
+; ~VCC~7            ; 1           ;
+; ~VCC~6            ; 1           ;
+; ~VCC~5            ; 1           ;
+; ~VCC~4            ; 1           ;
+; ~VCC~3            ; 1           ;
+; ~VCC~2            ; 1           ;
+; ~VCC~1            ; 1           ;
+; ~VCC~0            ; 1           ;
+; comb~24           ; 1           ;
+; EA[2]$latch~12    ; 1           ;
+; Equal2~2          ; 1           ;
+; Equal1~2          ; 1           ;
+; Equal0~3          ; 1           ;
+; EA[2]~32          ; 1           ;
+; EA[2]~69          ; 1           ;
+; acb[8]~36         ; 1           ;
+; DF[2]~26          ; 1           ;
+; EA[1]~30          ; 1           ;
+; acb[7]~31         ; 1           ;
+; DF[1]~20          ; 1           ;
+; EA[0]~33          ; 1           ;
+; acb~26            ; 1           ;
+; DF[0]~31          ; 1           ;
+; ib[2]~24          ; 1           ;
+; acb[11]~22        ; 1           ;
+; ib[1]~18          ; 1           ;
+; acb[10]~19        ; 1           ;
+; comb~7            ; 1           ;
++-------------------+-------------+
+
+
++--------------------------------------------------+
+; Other Routing Usage Summary                      ;
++-----------------------------+--------------------+
+; Other Routing Resource Type ; Usage              ;
++-----------------------------+--------------------+
+; Output enables              ; 1 / 6 ( 17 % )     ;
+; PIA buffers                 ; 113 / 288 ( 39 % ) ;
+; PIAs                        ; 120 / 288 ( 42 % ) ;
++-----------------------------+--------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB External Interconnect                                                   ;
++-----------------------------------------------+-----------------------------+
+; LAB External Interconnects  (Average = 15.00) ; Number of LABs  (Total = 7) ;
++-----------------------------------------------+-----------------------------+
+; 0 - 2                                         ; 1                           ;
+; 3 - 5                                         ; 1                           ;
+; 6 - 8                                         ; 0                           ;
+; 9 - 11                                        ; 1                           ;
+; 12 - 14                                       ; 2                           ;
+; 15 - 17                                       ; 1                           ;
+; 18 - 20                                       ; 0                           ;
+; 21 - 23                                       ; 0                           ;
+; 24 - 26                                       ; 0                           ;
+; 27 - 29                                       ; 0                           ;
+; 30 - 32                                       ; 2                           ;
++-----------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------+
+; LAB Macrocells                                                       ;
++----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 6.38) ; Number of LABs  (Total = 7) ;
++----------------------------------------+-----------------------------+
+; 0                                      ; 1                           ;
+; 1                                      ; 2                           ;
+; 2                                      ; 1                           ;
+; 3                                      ; 0                           ;
+; 4                                      ; 0                           ;
+; 5                                      ; 0                           ;
+; 6                                      ; 1                           ;
+; 7                                      ; 0                           ;
+; 8                                      ; 0                           ;
+; 9                                      ; 0                           ;
+; 10                                     ; 0                           ;
+; 11                                     ; 0                           ;
+; 12                                     ; 0                           ;
+; 13                                     ; 1                           ;
+; 14                                     ; 2                           ;
++----------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------+
+; Parallel Expander                                       ;
++--------------------------+------------------------------+
+; Parallel Expander Length ; Number of Parallel Expanders ;
++--------------------------+------------------------------+
+; 0                        ; 0                            ;
+; 1                        ; 1                            ;
++--------------------------+------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 1.38) ; Number of LABs  (Total = 5) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 3                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 2                           ;
+; 3                                               ; 2                           ;
++-------------------------------------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                        ;
++-----+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                                                             ; Output                                                                                                                     ;
++-----+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC3        ; DF[2]~76, DF_ENABLE_L, EA[2]~69, DEL3, WRITE~13, EXDA_L[1], BF_ENABLE_L, EXDA_L[0], EXDA_L[2], IF[2]~52, E_OR_F_SET, SP_CYC_NEXT_L, JMP_OR_JMS, comb~26, ib[2]~69 ; EA[2]$latch~10                                                                                                             ;
+;  B  ; LC24       ; inth~10, comb~7, comb~6sexpand0bal, INIT, KEY_CLR_L                                                                                                               ; inth~10, INT_INH_L                                                                                                         ;
+;  C  ; LC40       ; IF[0]~37, INIT, LOAD_SF_L, sf[2]~37                                                                                                                               ; sf[2]~37, acb[10]~19, ib[1]~18, acb[7]~31                                                                                  ;
+;  C  ; LC35       ; EA[2]$latch~10, EA[1]$latch~9, EA[0]$latch~9                                                                                                                      ; EA_L                                                                                                                       ;
+;  C  ; LC41       ; INIT, IF[0]~37, IF[0]~13sexpand1, KEY_LOAD_L, JMP_OR_JMS, ib[0]~45                                                                                                ; IF[0]~37, sf[2]~37, acb~26, EA[0]~33                                                                                       ;
+;  C  ; LC45       ; DF[0]~52, INIT, LOAD_SF_L, sf[5]~49                                                                                                                               ; sf[5]~49, DF[1]~20                                                                                                         ;
+;  C  ; LC33       ; EA[2]~32, INIT, EA[2]$latch~10, DEL3, WRITE~13, KEY_LOAD_L, EA[0]~74                                                                                              ; EA[2]$latch~10, EA[2], Equal0~3, Equal1~2, Equal2~2, EA[2]$latch~12                                                        ;
+;  C  ; LC48       ; INIT, IF[1]~43, IF[0]~13sexpand1, KEY_LOAD_L, JMP_OR_JMS, ib[1]~54                                                                                                ; IF[1]~43, sf[3]~41, acb[7]~31, EA[1]~30                                                                                    ;
+;  C  ; LC36       ; IF[1]~43, INIT, LOAD_SF_L, sf[3]~41                                                                                                                               ; sf[3]~41, acb[11]~22, ib[2]~24, acb[8]~36                                                                                  ;
+;  C  ; LC39       ; DF[1]~61, DF_ENABLE_L, DEL3, WRITE~13, IF[1]~43, BF_ENABLE_L, E_OR_F_SET, SP_CYC_NEXT_L, JMP_OR_JMS, comb~22sexpand1, ib[1]~54                                    ; EA[1]$latch~9                                                                                                              ;
+;  C  ; LC38       ; WRITE~13, DEL3, KEY_IF_L[2], KEY_IF_L[1], KEY_IF_L[0]                                                                                                             ; EA[2]~32                                                                                                                   ;
+;  C  ; LC37       ; INIT, IF[2]~52, IF[0]~13sexpand1, KEY_LOAD_L, JMP_OR_JMS, ib[2]~69, KEY_IF_L[2], KEY_IF_L[1], KEY_IF_L[0]                                                         ; IF[2]~52, sf[4]~45, acb[8]~36, EA[2]~32                                                                                    ;
+;  C  ; LC42       ; IF[2]~52, INIT, LOAD_SF_L, sf[4]~45                                                                                                                               ; sf[4]~45, DF[0]~31                                                                                                         ;
+;  C  ; LC44       ; DF[1]~61, INIT, LOAD_SF_L, sf[6]~53                                                                                                                               ; sf[6]~53, DF[2]~26                                                                                                         ;
+;  C  ; LC43       ; DF[0]~52, DF_ENABLE_L, DEL3, WRITE~13, BF_ENABLE_L, E_OR_F_SET, SP_CYC_NEXT_L, JMP_OR_JMS, IF[0]~37, comb~22sexpand1, ib[0]~45                                    ; EA[0]$latch~9                                                                                                              ;
+;  C  ; LC34       ; E_OR_F_SET, JMP_OR_JMS, TP3                                                                                                                                       ; inth~10                                                                                                                    ;
+;  D  ; LC52       ; WRITE~13, TP2, INIT, comb~8sexpand0                                                                                                                               ; WRITE~13, EA[2]~69, EA[0]~31sexpand0, EA[0]$latch~9, EA[1]$latch~9, EA[2]$latch~10, EA[0]~33, EA[1]~30, EA[2]~32, EA[0]~74 ;
+;  D  ; LC51       ; EA[2]$latch~10                                                                                                                                                    ; EMA_L                                                                                                                      ;
+;  D  ; LC54       ; EA[2]$latch~10, EA[1]$latch~9, EA[0]$latch~9                                                                                                                      ; FIELD1                                                                                                                     ;
+;  D  ; LC62       ; EA[0]~33, INIT, EA[0]$latch~9, DEL3, WRITE~13, KEY_LOAD_L, EA[0]~31sexpand0                                                                                       ; EA[0]$latch~9, EA[0], Equal0~3, Equal1~2, Equal2~2                                                                         ;
+;  D  ; LC64       ; EA[1]~30, INIT, EA[1]$latch~9, DEL3, WRITE~13, KEY_LOAD_L, EA[0]~31sexpand0                                                                                       ; EA[1]$latch~9, EA[1], Equal0~3, Equal1~2, Equal2~2                                                                         ;
+;  D  ; LC49       ; EA[1]$latch~9, EA[2]$latch~10, EA[0]$latch~9                                                                                                                      ; EMA                                                                                                                        ;
+;  F  ; LC82       ; comb~24, IOP2, JMP_OR_JMS, MB[5], MB[4], MB[3], INIT, KEY_CLR_L, TP3, E_OR_F_SET, MB[8], MB[7], MB[6], IOP4                                                       ; inth~10                                                                                                                    ;
+;  F  ; LC81       ; IOP2, E_OR_F_SET, MB[5], MB[4], MB[3], INIT, KEY_CLR_L                                                                                                            ; comb~7                                                                                                                     ;
+;  G  ; LC106      ; sf[5]~49, MB[6], MB[5], MB[8], IOP4, MB[4], MB[7], IOP1, MB[3]                                                                                                    ; DF[1]~61                                                                                                                   ;
+;  G  ; LC112      ; MB[7], MB[6], IOP4, MB[5], MB[4], MB[3], MB[8]                                                                                                                    ; IB_L[9], IB_L[5], IB_L[4], IB_L[3], IB_L[2], IB_L[1], IB_L[0], IB_L[10], IB_L[11], IB_L[6], IB_L[7], IB_L[8]               ;
+;  G  ; LC111      ; sf[6]~53, MB[6], MB[5], MB[8], IOP4, MB[4], MB[7], MB[3], DF[0]~78, DF[0]~79, IOP1, KEY_DF_L[2], KEY_DF_L[1], KEY_DF_L[0]                                         ; DF[2]~76                                                                                                                   ;
+;  G  ; LC101      ; sf[2]~37, MB[8], MB[7], MB[6], IOP4, MB[5], MB[4], MB[3]                                                                                                          ; IB_L[10]                                                                                                                   ;
+;  G  ; LC104      ; sf[3]~41, MB[8], MB[7], MB[6], IOP4, MB[5], MB[4], MB[3]                                                                                                          ; IB_L[11]                                                                                                                   ;
+;  G  ; LC103      ; sf[4]~45, MB[6], MB[5], MB[8], IOP4, MB[4], MB[7], IOP1, MB[3]                                                                                                    ; DF[0]~52                                                                                                                   ;
+;  G  ; LC110      ;                                                                                                                                                                   ; IRQ_L                                                                                                                      ;
+;  G  ; LC107      ;                                                                                                                                                                   ; SKIP_L                                                                                                                     ;
+;  G  ; LC97       ;                                                                                                                                                                   ; IB_L[9]                                                                                                                    ;
+;  G  ; LC109      ;                                                                                                                                                                   ; IB_L[3]                                                                                                                    ;
+;  G  ; LC105      ;                                                                                                                                                                   ; IB_L[2]                                                                                                                    ;
+;  G  ; LC102      ;                                                                                                                                                                   ; IB_L[1]                                                                                                                    ;
+;  G  ; LC99       ;                                                                                                                                                                   ; IB_L[0]                                                                                                                    ;
+;  H  ; LC120      ; IF[0]~37, MB[8], MB[7], MB[6], IOP4, MB[5], MB[4], MB[3], DF[0]~52                                                                                                ; IB_L[6]                                                                                                                    ;
+;  H  ; LC121      ; DF[0]~31, INIT, DF[0]~52, MB[5], MB[4], IOP1, MB[3], MB[6], MB[8], IOP4, MB[7], KEY_LOAD_L, DF[0]~21sexpand0, DF[0]~21sexpand1                                    ; DF[0]~52, acb~26, EA[0]~33, sf[5]~49                                                                                       ;
+;  H  ; LC124      ; DF[1]~20, INIT, DF[1]~61, MB[5], MB[4], IOP1, MB[3], MB[6], MB[8], IOP4, MB[7], KEY_LOAD_L, DF[0]~21sexpand0, DF[0]~21sexpand1                                    ; DF[1]~61, acb[7]~31, EA[1]~30, sf[6]~53                                                                                    ;
+;  H  ; LC115      ;                                                                                                                                                                   ; ACLR_L                                                                                                                     ;
+;  H  ; LC118      ; DF[2]~26, INIT, DF[2]~76, MB[5], MB[4], IOP1, MB[3], MB[6], MB[8], IOP4, MB[7], KEY_LOAD_L, DF[0]~21sexpand0, DF[0]~21sexpand1                                    ; DF[2]~76, acb[8]~36, EA[2]~32                                                                                              ;
+;  H  ; LC126      ; sf[3]~41, MB[7], MB[8], MB[6], IOP4, MB[5], MB[4], MB[3], IF[2]~52, DF[2]~76                                                                                      ; IB_L[8]                                                                                                                    ;
+;  H  ; LC114      ; ib[2]~24, INIT, ib[2]~69, IOP2, MB[5], MB[4], MB[3], MB[6], MB[8], IOP4, MB[7], KEY_LOAD_L, ib[0]~19sexpand0, DF[0]~21sexpand1                                    ; ib[2]~69, IF[2]~52, EA[2]~32                                                                                               ;
+;  H  ; LC123      ; sf[2]~37, MB[7], MB[8], MB[6], IOP4, MB[5], MB[4], MB[3], IF[1]~43, DF[1]~61                                                                                      ; IB_L[7]                                                                                                                    ;
+;  H  ; LC113      ;                                                                                                                                                                   ; IB_L[4]                                                                                                                    ;
+;  H  ; LC116      ; sf[3]~41, ib[0]~19sexpand0, MB[6], MB[5], MB[8], IOP4, MB[4], MB[7], MB[3], DF[0]~21sexpand1, IOP2, KEY_IF_L[2], KEY_IF_L[1], KEY_IF_L[0]                         ; ib[2]~69                                                                                                                   ;
+;  H  ; LC128      ; ib[1]~18, INIT, ib[1]~54, IOP2, MB[5], MB[4], MB[3], MB[6], MB[8], IOP4, MB[7], KEY_LOAD_L, ib[0]~19sexpand0, DF[0]~21sexpand1                                    ; ib[1]~54, IF[1]~43, EA[1]~30                                                                                               ;
+;  H  ; LC119      ; sf[2]~37, ib[0]~19sexpand0, MB[6], MB[5], MB[8], IOP4, MB[4], MB[7], MB[3], IOP2                                                                                  ; ib[1]~54                                                                                                                   ;
+;  H  ; LC122      ; INIT, ib[0]~45, MB[6], IOP2, MB[5], MB[4], MB[3], ib[0]~19sexpand0, DF[0]~21sexpand1, KEY_LOAD_L                                                                  ; ib[0]~45, IF[0]~37, EA[0]~33                                                                                               ;
+;  H  ; LC117      ;                                                                                                                                                                   ; IB_L[5]                                                                                                                    ;
++-----+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info (119006): Selected device EPM7128SQI100-10 for design "mmu8l"
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4695 megabytes
+    Info: Processing ended: Thu Jun 25 23:21:49 2026
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+

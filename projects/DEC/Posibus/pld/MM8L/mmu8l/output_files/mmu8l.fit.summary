@@ -1,0 +1,9 @@
+Fitter Status : Successful - Thu Jun 25 23:21:49 2026
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : mmu8l
+Top-level Entity Name : mmu8l
+Family : MAX7000S
+Device : EPM7128SQI100-10
+Timing Models : Final
+Total macrocells : 51 / 128 ( 40 % )
+Total pins : 72 / 84 ( 86 % )

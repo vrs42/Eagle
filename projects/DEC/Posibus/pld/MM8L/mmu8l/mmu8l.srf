@@ -192,3 +192,146 @@
 { "" "" "" "Inferred latch for \"mt\[2\]\" at mm32k.v(79)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
 { "" "" "" "Inferred latch for \"mt\[1\]\" at mm32k.v(79)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
 { "" "" "" "Inferred latch for \"mt\[0\]\" at mm32k.v(79)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(267): inferring latch(es) for variable \"EA\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(275): inferring latch(es) for variable \"IF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[6\]\" at mmu8l.v(488)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[5\]\" at mmu8l.v(488)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[4\]\" at mmu8l.v(488)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[3\]\" at mmu8l.v(488)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[2\]\" at mmu8l.v(488)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[1\]\" at mmu8l.v(488)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(306): inferring latch(es) for variable \"DF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(485): inferring latch(es) for variable \"sf\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[2\]\" at mmu8l.v(309)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[1\]\" at mmu8l.v(309)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[0\]\" at mmu8l.v(309)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[2\]\" at mmu8l.v(288)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[1\]\" at mmu8l.v(288)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[0\]\" at mmu8l.v(288)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[2\]\" at mmu8l.v(278)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[1\]\" at mmu8l.v(278)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[0\]\" at mmu8l.v(278)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[2\]\" at mmu8l.v(270)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[1\]\" at mmu8l.v(270)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[0\]\" at mmu8l.v(270)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Converted the fanout from the open-drain buffer \"acb\[9\]\" to the node \"IB_L\[9\]\" into a wire" {  } {  } 0 13051 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Converted the fanout from the open-drain buffer \"acb\[5\]\" to the node \"IB_L\[5\]\" into a wire" {  } {  } 0 13051 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Converted the fanout from the open-drain buffer \"acb\[4\]\" to the node \"IB_L\[4\]\" into a wire" {  } {  } 0 13051 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Converted the fanout from the open-drain buffer \"acb\[3\]\" to the node \"IB_L\[3\]\" into a wire" {  } {  } 0 13051 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Converted the fanout from the open-drain buffer \"acb\[2\]\" to the node \"IB_L\[2\]\" into a wire" {  } {  } 0 13051 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Converted the fanout from the open-drain buffer \"acb\[1\]\" to the node \"IB_L\[1\]\" into a wire" {  } {  } 0 13051 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Converted the fanout from the open-drain buffer \"acb\[0\]\" to the node \"IB_L\[0\]\" into a wire" {  } {  } 0 13051 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Pin \"ACLR_L\" is stuck at VCC" {  } {  } 0 13410 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"MB\[2\]\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"MB\[1\]\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"MB\[0\]\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"MB\[11\]\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"MB\[10\]\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"MB\[9\]\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Pin \"IRQ_L\" is stuck at VCC" {  } {  } 0 13410 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Pin \"SKIP_L\" is stuck at VCC" {  } {  } 0 13410 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"MEMSTART\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"POWER_OK\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"STOP_OK\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"TP3\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "No output dependent on input pin \"AC_LOW\"" {  } {  } 0 15610 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(285): inferring latch(es) for variable \"ib\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(309): inferring latch(es) for variable \"DF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(488): inferring latch(es) for variable \"sf\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(224): inferring latch(es) for variable \"EA\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(232): inferring latch(es) for variable \"IF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(242): inferring latch(es) for variable \"ib\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(266): inferring latch(es) for variable \"DF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(281): inferring latch(es) for variable \"inth\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(370): inferring latch(es) for variable \"sf\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[6\]\" at mmu8l.v(373)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[5\]\" at mmu8l.v(373)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[4\]\" at mmu8l.v(373)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[3\]\" at mmu8l.v(373)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[2\]\" at mmu8l.v(373)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[1\]\" at mmu8l.v(373)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"WRITE\" at mmu8l.v(296)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"inth\" at mmu8l.v(284)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[2\]\" at mmu8l.v(269)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[1\]\" at mmu8l.v(269)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[0\]\" at mmu8l.v(269)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[2\]\" at mmu8l.v(245)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[1\]\" at mmu8l.v(245)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[0\]\" at mmu8l.v(245)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[2\]\" at mmu8l.v(235)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[1\]\" at mmu8l.v(235)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[0\]\" at mmu8l.v(235)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[2\]\" at mmu8l.v(227)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[1\]\" at mmu8l.v(227)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[0\]\" at mmu8l.v(227)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(293): inferring latch(es) for variable \"WRITE\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(367): inferring latch(es) for variable \"sf\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(223): inferring latch(es) for variable \"EA\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(233): inferring latch(es) for variable \"IF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(243): inferring latch(es) for variable \"ib\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(267): inferring latch(es) for variable \"DF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(282): inferring latch(es) for variable \"inth\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(294): inferring latch(es) for variable \"WRITE\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(368): inferring latch(es) for variable \"sf\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[6\]\" at mmu8l.v(371)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[5\]\" at mmu8l.v(371)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[4\]\" at mmu8l.v(371)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[3\]\" at mmu8l.v(371)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[2\]\" at mmu8l.v(371)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[1\]\" at mmu8l.v(371)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"WRITE\" at mmu8l.v(297)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"inth\" at mmu8l.v(285)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[2\]\" at mmu8l.v(270)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[1\]\" at mmu8l.v(270)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[0\]\" at mmu8l.v(270)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[2\]\" at mmu8l.v(246)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[1\]\" at mmu8l.v(246)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[0\]\" at mmu8l.v(246)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[2\]\" at mmu8l.v(236)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[1\]\" at mmu8l.v(236)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[0\]\" at mmu8l.v(236)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[2\]\" at mmu8l.v(226)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[1\]\" at mmu8l.v(226)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[0\]\" at mmu8l.v(226)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(255): inferring latch(es) for variable \"DF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(270): inferring latch(es) for variable \"inth\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(282): inferring latch(es) for variable \"WRITE\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(356): inferring latch(es) for variable \"sf\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[6\]\" at mmu8l.v(359)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[5\]\" at mmu8l.v(359)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[4\]\" at mmu8l.v(359)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[3\]\" at mmu8l.v(359)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[2\]\" at mmu8l.v(359)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[1\]\" at mmu8l.v(359)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"WRITE\" at mmu8l.v(285)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"inth\" at mmu8l.v(273)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[2\]\" at mmu8l.v(258)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[1\]\" at mmu8l.v(258)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[0\]\" at mmu8l.v(258)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(171): inferring latch(es) for variable \"EA\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(181): inferring latch(es) for variable \"IF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(191): inferring latch(es) for variable \"ib\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(203): inferring latch(es) for variable \"DF\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(218): inferring latch(es) for variable \"inth\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(230): inferring latch(es) for variable \"WRITE\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Verilog HDL Always Construct warning at mmu8l.v(297): inferring latch(es) for variable \"sf\", which holds its previous value in one or more paths through the always construct" {  } {  } 0 10240 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[6\]\" at mmu8l.v(300)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[5\]\" at mmu8l.v(300)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[4\]\" at mmu8l.v(300)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[3\]\" at mmu8l.v(300)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[2\]\" at mmu8l.v(300)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"sf\[1\]\" at mmu8l.v(300)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"WRITE\" at mmu8l.v(233)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"inth\" at mmu8l.v(221)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[2\]\" at mmu8l.v(206)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[1\]\" at mmu8l.v(206)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"DF\[0\]\" at mmu8l.v(206)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[2\]\" at mmu8l.v(194)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[1\]\" at mmu8l.v(194)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"ib\[0\]\" at mmu8l.v(194)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[2\]\" at mmu8l.v(184)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[1\]\" at mmu8l.v(184)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"IF\[0\]\" at mmu8l.v(184)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[2\]\" at mmu8l.v(174)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[1\]\" at mmu8l.v(174)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Inferred latch for \"EA\[0\]\" at mmu8l.v(174)" {  } {  } 0 10041 "" 0 0 "Quartus II" 0 -1 0 ""}

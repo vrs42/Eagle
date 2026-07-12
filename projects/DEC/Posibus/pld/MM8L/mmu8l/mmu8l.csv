@@ -1,0 +1,93 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# File: \\wsl.localhost\Ubuntu\home\vrs\Eagle\projects\DEC\Posibus\pld\MM8L\mmu8l\mmu8l.csv
+# Generated on: Wed Jun 24 23:47:47 2026
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,Reserved
+ACLR_L,Output,PIN_78,
+AC_LOW,Input,PIN_3,
+BF_ENABLE_L,Input,PIN_16,
+DEL1,Input,PIN_42,
+DEL2,Input,PIN_43,
+DEL3,Input,PIN_44,
+DEL4,Input,PIN_46,
+DEL5,Input,PIN_47,
+DEL6,Input,PIN_48,
+DF_ENABLE_L,Input,PIN_22,
+EA[0],Output,PIN_30,
+EA[1],Output,PIN_29,
+EA[2],Output,PIN_27,
+EA_L,Input,PIN_26,
+EMA,Output,PIN_39,
+EMA_L,Output,PIN_38,
+EXDA_L[0],Input,PIN_23,
+EXDA_L[1],Input,PIN_24,
+EXDA_L[2],Input,PIN_25,
+E_OR_F_SET,Input,PIN_21,
+FIELD1,Output,PIN_35,
+IB_L[0],Output,PIN_66,
+IB_L[1],Output,PIN_69,
+IB_L[2],Output,PIN_71,
+IB_L[3],Output,PIN_73,
+IB_L[4],Output,PIN_77,
+IB_L[5],Output,PIN_79,
+IB_L[6],Output,PIN_81,
+IB_L[7],Output,PIN_83,
+IB_L[8],Output,PIN_86,
+IB_L[9],Output,PIN_65,
+IB_L[10],Output,PIN_67,
+IB_L[11],Output,PIN_70,
+INIT,Input,PIN_91,
+INT_INH_L,Input,PIN_11,
+IOP1,Input,PIN_92,
+IOP2,Input,PIN_87,
+IOP4,Input,PIN_89,
+IRQ_L,Output,PIN_74,
+JMP_OR_JMS,Input,PIN_18,
+KEY_CLR_L,Input,PIN_12,
+KEY_DF_L[0],Input,,
+KEY_DF_L[1],Input,,
+KEY_DF_L[2],Input,PIN_4,
+KEY_IF_L[0],Input,,
+KEY_IF_L[1],Input,,
+KEY_IF_L[2],Input,PIN_8,
+KEY_LOAD_L,Input,PIN_15,
+LOAD_SF_L,Input,PIN_10,
+MB[0],Input,PIN_49,
+MB[1],Input,PIN_50,
+MB[2],Input,PIN_51,
+MB[3],Input,PIN_56,
+MB[4],Input,PIN_59,
+MB[5],Input,PIN_63,
+MB[6],Input,PIN_52,
+MB[7],Input,PIN_55,
+MB[8],Input,PIN_57,
+MB[9],Input,PIN_58,
+MB[10],Input,PIN_60,
+MB[11],Input,PIN_62,
+MEMSTART,Input,PIN_34,
+POWER_OK,Input,PIN_7,
+SKIP_L,Output,PIN_72,
+SP_CYC_NEXT_L,Input,PIN_19,
+STOP_OK,Input,PIN_9,
+TCK,Input,,
+TDI,Input,,
+TDO,Output,,
+TMS,Input,,
+TP2,Input,PIN_32,
+TP3,Input,PIN_14,

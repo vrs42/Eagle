@@ -57,91 +57,107 @@
  ---------------------------------------------------------------------------------
 
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-CHIP  "mm32k"  ASSIGNED TO AN: EPM7128SLC84-15
+CHIP  "mm32k"  ASSIGNED TO AN: EPM7128SQC100-15
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-GND+                         : 1         :        :                   :         :           :                
-GND+                         : 2         :        :                   :         :           :                
-VCCINT                       : 3         : power  :                   : 5.0V    :           :                
-BMB[6]                       : 4         : input  : TTL               :         :           : Y              
-BMB[5]                       : 5         : input  : TTL               :         :           : Y              
-BMB[4]                       : 6         : input  : TTL               :         :           : Y              
-GND                          : 7         : gnd    :                   :         :           :                
-BMB[3]                       : 8         : input  : TTL               :         :           : Y              
-BMB[2]                       : 9         : input  : TTL               :         :           : Y              
-BMB[1]                       : 10        : input  : TTL               :         :           : Y              
-BMB[0]                       : 11        : input  : TTL               :         :           : Y              
-MBODD_P                      : 12        : input  : TTL               :         :           : Y              
-VCCIO                        : 13        : power  :                   : 5.0V    :           :                
-TDI                          : 14        : input  : TTL               :         :           : N              
-MEM[11]                      : 15        : output : TTL               :         :           : Y              
-MEM[10]                      : 16        : output : TTL               :         :           : Y              
-MEM[9]                       : 17        : output : TTL               :         :           : Y              
-MEM[8]                       : 18        : output : TTL               :         :           : Y              
-GND                          : 19        : gnd    :                   :         :           :                
-MEM[7]                       : 20        : output : TTL               :         :           : Y              
-MEM[6]                       : 21        : output : TTL               :         :           : Y              
-MEM[5]                       : 22        : output : TTL               :         :           : Y              
-TMS                          : 23        : input  : TTL               :         :           : N              
-MEM[4]                       : 24        : output : TTL               :         :           : Y              
-MEM[3]                       : 25        : output : TTL               :         :           : Y              
-VCCIO                        : 26        : power  :                   : 5.0V    :           :                
-MEM[2]                       : 27        : output : TTL               :         :           : Y              
-MEM[1]                       : 28        : output : TTL               :         :           : Y              
-MEM[0]                       : 29        : output : TTL               :         :           : Y              
-MEM_P                        : 30        : output : TTL               :         :           : Y              
-RESERVED                     : 31        :        :                   :         :           :                
-GND                          : 32        : gnd    :                   :         :           :                
-MEMDONE_L                    : 33        : output : TTL               :         :           : Y              
-TP2                          : 34        : input  : TTL               :         :           : Y              
-STROBE_L                     : 35        : output : TTL               :         :           : Y              
-MEMSTART                     : 36        : input  : TTL               :         :           : Y              
-RESERVED                     : 37        :        :                   :         :           :                
-VCCIO                        : 38        : power  :                   : 5.0V    :           :                
-PARITY                       : 39        : bidir  : TTL               :         :           : Y              
-CS_L                         : 40        : output : TTL               :         :           : Y              
-OE_L                         : 41        : output : TTL               :         :           : Y              
-GND                          : 42        : gnd    :                   :         :           :                
-VCCINT                       : 43        : power  :                   : 5.0V    :           :                
-WE_L                         : 44        : output : TTL               :         :           : Y              
-D[9]                         : 45        : bidir  : TTL               :         :           : N              
-D[8]                         : 46        : bidir  : TTL               :         :           : N              
-GND                          : 47        : gnd    :                   :         :           :                
-D[7]                         : 48        : bidir  : TTL               :         :           : N              
-D[6]                         : 49        : bidir  : TTL               :         :           : N              
-D[5]                         : 50        : bidir  : TTL               :         :           : N              
-D[10]                        : 51        : bidir  : TTL               :         :           : N              
-RESERVED                     : 52        :        :                   :         :           :                
+DEL4                         : 1         : output : TTL               :         :           : N              
+DEL1                         : 2         : output : TTL               :         :           : N              
+MEMDONE_L                    : 3         : output : TTL               :         :           : N              
+STROBE_L                     : 4         : output : TTL               :         :           : N              
+VCCIO                        : 5         : power  :                   : 5.0V    :           :                
+TDI                          : 6         : input  : TTL               :         :           : N              
+FS_L[2]                      : 7         : input  : TTL               :         :           : N              
+FS_L[3]                      : 8         : input  : TTL               :         :           : N              
+MBODD_P                      : 9         : input  : TTL               :         :           : N              
+CS_L                         : 10        : output : TTL               :         :           : N              
+EA_L[0]                      : 11        : output : TTL               :         :           : N              
+EA_L[1]                      : 12        : output : TTL               :         :           : N              
+GND                          : 13        : gnd    :                   :         :           :                
+EA_L[2]                      : 14        : output : TTL               :         :           : N              
+EMA_L                        : 15        : output : TTL               :         :           : N              
+PEMA                         : 16        : output : TTL               :         :           : N              
+TMS                          : 17        : input  : TTL               :         :           : N              
+D[4]                         : 18        : bidir  : TTL               :         :           : N              
+D[5]                         : 19        : bidir  : TTL               :         :           : N              
+VCCIO                        : 20        : power  :                   : 5.0V    :           :                
+D[7]                         : 21        : bidir  : TTL               :         :           : N              
+D[8]                         : 22        : bidir  : TTL               :         :           : N              
+D[9]                         : 23        : bidir  : TTL               :         :           : N              
+D[10]                        : 24        : bidir  : TTL               :         :           : N              
+D[11]                        : 25        : bidir  : TTL               :         :           : N              
+D[6]                         : 26        : bidir  : TTL               :         :           : N              
+RESERVED                     : 27        :        :                   :         :           :                
+GND                          : 28        : gnd    :                   :         :           :                
+MEM[7]                       : 29        : output : TTL               :         :           : N              
+MEM[8]                       : 30        : output : TTL               :         :           : N              
+MEM[9]                       : 31        : output : TTL               :         :           : N              
+MEM[10]                      : 32        : output : TTL               :         :           : N              
+PARITY                       : 33        : bidir  : TTL               :         :           : N              
+MEM[11]                      : 34        : output : TTL               :         :           : N              
+D[0]                         : 35        : bidir  : TTL               :         :           : N              
+VCCIO                        : 36        : power  :                   : 5.0V    :           :                
+D[1]                         : 37        : bidir  : TTL               :         :           : N              
+D[2]                         : 38        : bidir  : TTL               :         :           : N              
+D[3]                         : 39        : bidir  : TTL               :         :           : N              
+GND                          : 40        : gnd    :                   :         :           :                
+VCCINT                       : 41        : power  :                   : 5.0V    :           :                
+MEM_P                        : 42        : output : TTL               :         :           : N              
+MEM[6]                       : 43        : output : TTL               :         :           : N              
+MEM[5]                       : 44        : output : TTL               :         :           : N              
+GND                          : 45        : gnd    :                   :         :           :                
+MEM[4]                       : 46        : output : TTL               :         :           : N              
+MEM[3]                       : 47        : output : TTL               :         :           : N              
+MEM[2]                       : 48        : output : TTL               :         :           : N              
+MEM[1]                       : 49        : output : TTL               :         :           : N              
+MEM[0]                       : 50        : output : TTL               :         :           : N              
+EA[2]                        : 51        : input  : TTL               :         :           : N              
+MEMSTART                     : 52        : input  : TTL               :         :           : N              
 VCCIO                        : 53        : power  :                   : 5.0V    :           :                
-FS_L[7]                      : 54        : input  : TTL               :         :           : Y              
-FS_L[6]                      : 55        : input  : TTL               :         :           : Y              
-FS_L[5]                      : 56        : input  : TTL               :         :           : Y              
-FS_L[4]                      : 57        : input  : TTL               :         :           : Y              
-FS_L[3]                      : 58        : input  : TTL               :         :           : Y              
-GND                          : 59        : gnd    :                   :         :           :                
-FS_L[2]                      : 60        : input  : TTL               :         :           : Y              
-FS_L[1]                      : 61        : input  : TTL               :         :           : Y              
-TCK                          : 62        : input  : TTL               :         :           : N              
-FS_L[0]                      : 63        : input  : TTL               :         :           : Y              
-D[4]                         : 64        : bidir  : TTL               :         :           : N              
-D[3]                         : 65        : bidir  : TTL               :         :           : N              
-VCCIO                        : 66        : power  :                   : 5.0V    :           :                
-D[2]                         : 67        : bidir  : TTL               :         :           : N              
-D[0]                         : 68        : bidir  : TTL               :         :           : N              
-D[1]                         : 69        : bidir  : TTL               :         :           : N              
-EA[0]                        : 70        : input  : TTL               :         :           : Y              
-TDO                          : 71        : output : TTL               :         :           : N              
-GND                          : 72        : gnd    :                   :         :           :                
-EA[1]                        : 73        : input  : TTL               :         :           : Y              
-EA[2]                        : 74        : input  : TTL               :         :           : Y              
-BMB[11]                      : 75        : input  : TTL               :         :           : Y              
-BMB[10]                      : 76        : input  : TTL               :         :           : Y              
-BMB[9]                       : 77        : input  : TTL               :         :           : Y              
-VCCIO                        : 78        : power  :                   : 5.0V    :           :                
-BMB[8]                       : 79        : input  : TTL               :         :           : Y              
-BMB[7]                       : 80        : input  : TTL               :         :           : Y              
-D[11]                        : 81        : bidir  : TTL               :         :           : N              
-GND                          : 82        : gnd    :                   :         :           :                
-CLK                          : 83        : input  : TTL               :         :           : Y              
-GND+                         : 84        :        :                   :         :           :                
+RESERVED                     : 54        :        :                   :         :           :                
+RESERVED                     : 55        :        :                   :         :           :                
+MB[10]                       : 56        : input  : TTL               :         :           : N              
+MB[6]                        : 57        : input  : TTL               :         :           : N              
+MB[11]                       : 58        : input  : TTL               :         :           : N              
+MB[2]                        : 59        : input  : TTL               :         :           : N              
+FS_L[6]                      : 60        : input  : TTL               :         :           : N              
+GND                          : 61        : gnd    :                   :         :           :                
+FS_L[4]                      : 62        : input  : TTL               :         :           : N              
+CLK                          : 63        : input  : TTL               :         :           : N              
+TCK                          : 64        : input  : TTL               :         :           : N              
+RESERVED                     : 65        :        :                   :         :           :                
+RESERVED                     : 66        :        :                   :         :           :                
+MB[8]                        : 67        : input  : TTL               :         :           : N              
+VCCIO                        : 68        : power  :                   : 5.0V    :           :                
+MB[7]                        : 69        : input  : TTL               :         :           : N              
+MB[4]                        : 70        : input  : TTL               :         :           : N              
+MB[0]                        : 71        : input  : TTL               :         :           : N              
+FS_L[7]                      : 72        : input  : TTL               :         :           : N              
+FS_L[0]                      : 73        : input  : TTL               :         :           : N              
+EA[0]                        : 74        : input  : TTL               :         :           : N              
+TDO                          : 75        : output : TTL               :         :           : N              
+GND                          : 76        : gnd    :                   :         :           :                
+RESERVED                     : 77        :        :                   :         :           :                
+RESERVED                     : 78        :        :                   :         :           :                
+MB[9]                        : 79        : input  : TTL               :         :           : N              
+MB[5]                        : 80        : input  : TTL               :         :           : N              
+MB[3]                        : 81        : input  : TTL               :         :           : N              
+MB[1]                        : 82        : input  : TTL               :         :           : N              
+TP2                          : 83        : input  : TTL               :         :           : N              
+VCCIO                        : 84        : power  :                   : 5.0V    :           :                
+FS_L[5]                      : 85        : input  : TTL               :         :           : N              
+FS_L[1]                      : 86        : input  : TTL               :         :           : N              
+EA[1]                        : 87        : input  : TTL               :         :           : N              
+GND                          : 88        : gnd    :                   :         :           :                
+GND+                         : 89        :        :                   :         :           :                
+GND+                         : 90        :        :                   :         :           :                
+GND+                         : 91        :        :                   :         :           :                
+GND+                         : 92        :        :                   :         :           :                
+VCCINT                       : 93        : power  :                   : 5.0V    :           :                
+DEL6                         : 94        : output : TTL               :         :           : N              
+DEL5                         : 95        : output : TTL               :         :           : N              
+DEL2                         : 96        : output : TTL               :         :           : N              
+GND                          : 97        : gnd    :                   :         :           :                
+WE_L                         : 98        : output : TTL               :         :           : N              
+DEL3                         : 99        : output : TTL               :         :           : N              
+OE_L                         : 100       : output : TTL               :         :           : N              
