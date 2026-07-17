@@ -4,3 +4,4 @@ CPLD versions of Mxxx
 <LI><b>single84</b> is a single-height module using a 84 pin PLCC.</LI>
 <LI><b>single100</b> is a single-height module using a 100 pin PQFP.</LI>
 <LI><b>double100</b> is a double-height module using a 100 pin PQFP.</LI>
+<LI><b>double100tqfp</b> is a double-height module using a 100 pin TQFP.</LI>

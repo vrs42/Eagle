@@ -1,0 +1,74 @@
+#!/usr/bin/perl
+
+#
+# Read an Eagle .brd file, looking for parts.
+# Output the suitable BOM and CPL spreadsheets
+# needed to assemble the boards with pick and place
+#
+# Lines of interest in the .brd look a bit like this:
+# <element name="E1" library="atmel-cpld" package="PQFP-100" value="ATF150X100PQFP" x="53.34" y="68.58" rot="R180"/>
+#
+
+#
+# Pick and place needs position and orientation information 
+# relative to the center of mass.  For various reasons, the
+# "center" of an Eagle part can have more to do with the
+# visual center, and/or the alignments of pins to a grid.
+#
+# To compensate, these tables note parts whose Eagle center
+# is known to deviate from center-of-mass.  Each part may
+# specify an angle and a distance from the Eagle center to
+# center of mass.
+%angle = (
+);
+%distance = (
+);
+
+#
+# A key function of the BOM is to indicate which parts
+# should be placed by the pick and place machine.  This
+# means a sketchy mapping between the library;package;value
+# tuple and a JLC part number.
+#
+%parts = (
+  "atmel-cpld;PQFP-100;ATF150X100PQFP", "C184063",
+  "rcl;C0805;.22uF", "C5378",
+  "rcl;C0805;10uF", "C15850",
+);
+
+die "$ARGV[0]: Use a .brd file\n" unless $ARGV[0] =~ /[.]brd$/;
+open(INPUT, $ARGV[0]) || die "$ARGV[0]: $!";
+$comment = "$ARGV[0]"; $comment =~ s/[.]brd$//;
+open(BOM, ">$comment.bom.csv") || die "$comment.bom.csv: $!";
+print BOM "Comment,Designator,Footprint,PartNo\n";
+open(CPL, ">$comment.cpl.csv") || die "$comment.cpl.csv: $!";
+print CPL "Designator,Mid X,Mid Y,Layer,Rotation\n";
+
+while (<INPUT>) {
+  next unless /[<]element name="([^"]*)" library="([^"]*)" package="([^"]*)"/;
+# <element name="E1" library="atmel-cpld" package="PQFP-100" value="ATF150X100PQFP" x="53.34" y="68.58" rot="R180"/>
+  ($name, $library, $package) = ($1, $2, $3);
+  $value = "";
+  $value = $1 if /value="([^"]*)"/;
+  die "$name: no position" unless /x="([^"]*)" y="([^"]*)"/;
+  ($x, $y) = ($1, $2);
+  $rot = "R0";
+  $rot = $1 if /rot="([^"]*)"/;
+  die "$name: confusing rotation: $rot" unless $rot =~ /^(M*)R(\d+)/;
+  ($mirror, $angle) = ($1, $2);
+
+  # Attempt to discern a JLC part number.
+  $hash = "$library;$package;$value";
+  $jlc = $parts{$hash};
+
+  # Don't place parts unless we know the JLC part number.
+  next unless defined $jlc;
+
+  # Rotation of parts is CCW, per unit circle intuition.
+  # Unit circle follows mirror; CCW from current side.
+  # Is this the same at JLC?
+  $mirror = "Bottom" if $mirror eq "M";
+  $mirror = "Top" unless $mirror eq "Bottom";
+  print BOM "$value,$name,$package,$jlc\n";
+  print CPL "$name,$x,$y,$mirror,$angle\n";
+}
