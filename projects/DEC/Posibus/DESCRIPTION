@@ -4,3 +4,4 @@ Stuff pertaining to implementing Posibus peripherals.
 <LI><b>PPaddle</b> is the basic Posibus paddle card, for making cables.</LI>
 <LI><b>NPaddle</b> is the Negibus paddle card, for making cables.</LI>
 <LI><b>MMU8L</b> is a compatible MMU for the PDP-8/L.</LI>
+<LI><b>PT08</b> is a Posibus terminal controller.</LI>

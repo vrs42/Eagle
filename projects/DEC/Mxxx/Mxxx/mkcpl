@@ -10,16 +10,27 @@
 #
 
 #
+# A known issue is that the origin appears to be 0.5mm
+# down and left of where Eagle expects.
+#
+$jlcx = -0.5;
+$jlcy = -0.5;
+
+#
 # Pick and place needs position and orientation information 
 # relative to the center of mass.  For various reasons, the
 # "center" of an Eagle part can have more to do with the
 # visual center, and/or the alignments of pins to a grid.
+#
+# It is also possible for the Eagle part to be drawn with
+# a different orientation (rotation) than JLC uses.
 #
 # To compensate, these tables note parts whose Eagle center
 # is known to deviate from center-of-mass.  Each part may
 # specify an angle and a distance from the Eagle center to
 # center of mass.
 %angle = (
+  "C8512", 270,
 );
 %distance = (
 );
@@ -31,9 +42,21 @@
 # tuple and a JLC part number.
 #
 %parts = (
+  "atmel-cpld;TQFP-100;ATF1508-100", "C1521282",
+  "atmel-cpld;TQFP-100;ATF150X100TQFP", "C1521282",
   "atmel-cpld;PQFP-100;ATF150X100PQFP", "C184063",
+  "con-shiua-chyuan;SCD-014-A;15V (CL)", " ", # omit
+  "diode;SOD323-W;1N4148", "C2128",
+  "rcl;C0805;0.1uF", "C5378",
+  "rcl;C0805;100nF", "C5378",
   "rcl;C0805;.22uF", "C5378",
   "rcl;C0805;10uF", "C15850",
+  "rcl;R1206;100", "C17901", # Must be 1/4 watt at 5V
+  "rcl;R0805;220", "C17557",
+  "rcl;R0805;470", "C17710",
+  "rcl;R0805;5.1K", "C27834",
+  "transistor;SOT23-EBC;PN2222", "C8512",
+  "USB4970-00-A;USB497000A;USB-C", " ", # omit
 );
 
 die "$ARGV[0]: Use a .brd file\n" unless $ARGV[0] =~ /[.]brd$/;
@@ -52,23 +75,59 @@ while (<INPUT>) {
   $value = $1 if /value="([^"]*)"/;
   die "$name: no position" unless /x="([^"]*)" y="([^"]*)"/;
   ($x, $y) = ($1, $2);
+  $x += $jlcx;
+  $y += $jlcy;
   $rot = "R0";
   $rot = $1 if /rot="([^"]*)"/;
   die "$name: confusing rotation: $rot" unless $rot =~ /^(M*)R(\d+)/;
   ($mirror, $angle) = ($1, $2);
 
+  $jlc = undef;
+
+  # Don't place through-hole connectors.
+  $jlc = " " if $library eq "con-harting-ml";
+  $jlc = " " if $library eq "con-lstb";
+  $jlc = " " if $library eq "jumper";
+  $jlc = " " if $package eq "DEC40PINH";
+
+  # Don't place DIP packages (for now).
+  $jlc = " " if $package =~ /^DIL.*/;
+
+  # Don't place through-hole resistors.
+  $jlc = " " if $package =~ /^0207\/10/;
+
+  # Don't place components with value " ".
+  $jlc = " " if $value eq " ";
+
+  # Don't place board outlines or edge connectors.
+  $jlc = " " if $package =~ /^EDGE-/;
+  $jlc = " " if $value =~ /^OUTLINE-/;
+
   # Attempt to discern a JLC part number.
   $hash = "$library;$package;$value";
-  $jlc = $parts{$hash};
+  $jlc = $parts{$hash} unless defined $jlc;
 
   # Don't place parts unless we know the JLC part number.
-  next unless defined $jlc;
+  die "$name: $hash: no match\n" unless defined $jlc;
+
+  # Don't place parts we are meant to skip.
+  $names{$hash} .= "$name " if $jlc eq " ";
+  $count{$hash}++ if $jlc eq " ";
+  next if $jlc eq " ";
 
   # Rotation of parts is CCW, per unit circle intuition.
   # Unit circle follows mirror; CCW from current side.
   # Is this the same at JLC?
   $mirror = "Bottom" if $mirror eq "M";
   $mirror = "Top" unless $mirror eq "Bottom";
+  $angle += $angle{$jlc} if defined $angle{$jlc};
+  $angle %= 360;
+  # TODO: Adjust non-zero part-specific X and Y offsets!
   print BOM "$value,$name,$package,$jlc\n";
   print CPL "$name,$x,$y,$mirror,$angle\n";
+}
+
+foreach $part (sort keys %names) {
+  chop $names{$part};
+  print "$count{$part}\t$part\n";
 }
