@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Note: The .csv files didn't seem to work at JLC.
+# Here we include the .xlsx files instead, which is
+# just the same content in a different format.
+for i in $*; do
+  base=`basename $i .brd`
+  for ext in otl cmp sol plc stc sts gpi dri drd l02 l15 bom.xlsx cpl.xlsx; do
+    if test -f $base.$ext; then
+      zip $base.zip $base.$ext
+    fi
+  done
+done
