@@ -9490,8 +9490,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
 <part name="P-10" library="supply1" deviceset="V-" device=""/>
-<part name="C1" library="rcl" deviceset="C-US" device="050-025X075"/>
-<part name="C2" library="rcl" deviceset="C-US" device="050-025X075"/>
+<part name="C1" library="rcl" deviceset="C-US" device="050-025X075" value=" "/>
+<part name="C2" library="rcl" deviceset="C-US" device="050-025X075" value=" "/>
 <part name="SUPPLY9" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>

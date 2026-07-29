@@ -13,8 +13,8 @@
 # A known issue is that the origin appears to be 0.5mm
 # down and left of where Eagle expects.
 #
-$jlcx = 0.5;
-$jlcy = 0.5;
+$jlcx = -0.5;
+$jlcy = -0.5;
 
 #
 # Pick and place needs position and orientation information 
@@ -43,9 +43,11 @@ $jlcy = 0.5;
 #
 %parts = (
   "atmel-cpld;TQFP-100;ATF1508-100", "C1521282",
+  "atmel-cpld;TQFP-100;ATF150X100TQFP", "C1521282",
   "atmel-cpld;PQFP-100;ATF150X100PQFP", "C184063",
   "con-shiua-chyuan;SCD-014-A;15V (CL)", " ", # omit
   "diode;SOD323-W;1N4148", "C2128",
+  "diode;SOD323-W;1N4148WS", "C2128",
   "rcl;C0805;0.1uF", "C5378",
   "rcl;C0805;100nF", "C5378",
   "rcl;C0805;.22uF", "C5378",
@@ -56,6 +58,8 @@ $jlcy = 0.5;
   "rcl;R0805;5.1K", "C27834",
   "transistor;SOT23-EBC;PN2222", "C8512",
   "USB4970-00-A;USB497000A;USB-C", " ", # omit
+  "74xx-us;SO20W;74LS240DW", "C22449636",
+  "rcl;C050-025X075;", " ", # omit
 );
 
 die "$ARGV[0]: Use a .brd file\n" unless $ARGV[0] =~ /[.]brd$/;
@@ -86,6 +90,7 @@ while (<INPUT>) {
   # Don't place through-hole connectors.
   $jlc = " " if $library eq "con-harting-ml";
   $jlc = " " if $library eq "con-lstb";
+  $jlc = " " if $library eq "jumper";
   $jlc = " " if $package eq "DEC40PINH";
 
   # Don't place DIP packages (for now).
@@ -96,6 +101,10 @@ while (<INPUT>) {
 
   # Don't place components with value " ".
   $jlc = " " if $value eq " ";
+
+  # Don't place board outlines or edge connectors.
+  $jlc = " " if $package =~ /^EDGE-/;
+  $jlc = " " if $value =~ /^OUTLINE-/;
 
   # Attempt to discern a JLC part number.
   $hash = "$library;$package;$value";

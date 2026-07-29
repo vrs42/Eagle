@@ -1,48 +1,67 @@
 Partlist
 
-Exported from PT08tqfp.brd at 7/25/2026 1:14:21 PM
+Exported from PT08tqfp.brd at 7/28/2026 7:06:09 PM
 
 EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
 
 Assembly variant: 
 
-Part     Value          Package     Library          Position (inch)       Orientation
+Part     Value          Package    Library          Position (inch)       Orientation
 
-C1       0.1uF          C0805       rcl              (1.3 3.35)            MR180
-C2       0.1uF          C0805       rcl              (1.7 3.4)             MR0
-C3       0.1uF          C0805       rcl              (1.35 3.2)            MR180
-C4       0.1uF          C0805       rcl              (1.55 3.2)            MR0
-C5       0.1uF          C0805       rcl              (1.7 3.3)             MR0
-C6       0.1uF          C0805       rcl              (1.7 3.6)             MR0
-C7       0.1uF          C0805       rcl              (1.35 3.6)            MR0
-C8       0.1uF          C0805       rcl              (1.3 3.5)             MR180
-C14      100nF          C0805       rcl              (5.05 1.75)           R0
-C15      100nF          C0805       rcl              (5.45 1.75)           R0
-C16      100nF          C0805       rcl              (5.2 1.75)            R270
-C17      100nF          C0805       rcl              (5.6 1.75)            R90
-D1       1N914          MICROMELF-W diode            (6 2.05)              R90
-E1       ATF1508-100    TQFP-100    atmel-cpld       (1.5 3.35)            R90
-E2       LTV845         DIL16       optocoupler      (5.45 2.75)           R0
-E3       MAX232         DIL16       maxim            (5.45 2.05)           R0
-J2       USB-C          USB497000A  USB4970-00-A     (0.15 1.3)            R270
-J3       15V (CL)       SCD-014-A   con-shiua-chyuan (0.05 1.7)            R270
-OSC      3.6864MHz      DIL08S      crystal          (2.45 4.25)           R270
-Q2       PN2222         SOT23-EBC   transistor       (5.65 2.45)           R270
-R1       5.1K           R0805       rcl              (4.9 2.8)             R90
-R2       5.1K           R0805       rcl              (5.7 3.05)            R90
-R3       5.1K           R0805       rcl              (0.55 1.35)           R90
-R4       5.1K           R0805       rcl              (0.7 1.35)            R90
-R5       100            R0805       rcl              (4.15 4.75)           R90
-R6       100            R0805       rcl              (4.3 4.75)            R90
-R7       100            R0805       rcl              (4.45 4.75)           R90
-R8       100            R0805       rcl              (4.6 4.75)            R90
-R9       100            R0805       rcl              (4.75 4.75)           R90
-R10      100            R0805       rcl              (4.9 4.75)            R90
-R11      220            R0805       rcl              (5.5 2.5)             R270
-R12      220            R0805       rcl              (5.25 1.6)            R180
-R13      1K 1/2W        R0805       rcl              (5.95 2.8)            R0
-R14      5.1K           R0805       rcl              (5.95 2.7)            R180
-R15      680 1/2W       R0805       rcl              (4.9 2.6)             R270
-R16      470            R0805       rcl              (5.8 2.3)             R90
-R21      680 1/2W       R0805       rcl              (4.9 3.05)            R270
-R23      5.1K           R0805       rcl              (5.1 3.05)            R270
+ACB1P    10x2           MA10-2     con-lstb         (1.45 4.35)           R0
+ACB2P    10x2           MA10-2     con-lstb         (1.45 4.75)           R0
+BAC1P    10x2           MA10-2     con-lstb         (5.55 4.35)           R0
+BAC2P    10x2           MA10-2     con-lstb         (5.55 4.75)           R0
+BAUD     BAUD           MA13-2     con-lstb         (1.7 2.15)            R180
+BMB1P    10x2           MA10-2     con-lstb         (3.45 4.35)           R0
+BMB2P    10x2           MA10-2     con-lstb         (3.45 4.75)           R0
+C1       0.1uF          C0805      rcl              (1.3 3.35)            MR180
+C2       0.1uF          C0805      rcl              (1.7 3.4)             MR0
+C3       0.1uF          C0805      rcl              (1.35 3.2)            MR180
+C4       0.1uF          C0805      rcl              (1.55 3.2)            MR0
+C5       0.1uF          C0805      rcl              (1.7 3.3)             MR0
+C6       0.1uF          C0805      rcl              (1.7 3.6)             MR0
+C7       0.1uF          C0805      rcl              (1.35 3.6)            MR0
+C8       0.1uF          C0805      rcl              (1.3 3.5)             MR180
+C9       10uF           C0805      rcl              (0.85 1.35)           R90
+C10      10uF           C0805      rcl              (2.9 3.85)            R0
+C14      100nF          C0805      rcl              (5.05 1.75)           R0
+C15      100nF          C0805      rcl              (5.45 1.75)           R0
+C16      100nF          C0805      rcl              (5.2 1.75)            R270
+C17      100nF          C0805      rcl              (5.6 1.75)            R90
+D1       1N4148         SOD323-W   diode            (6 2.05)              R90
+DAD1P    10x2           MA10-2     con-lstb         (5.55 0.25)           R0
+DAD2P    10x2           MA10-2     con-lstb         (5.55 0.65)           R0
+DAT1P    10x2           MA10-2     con-lstb         (1.45 0.25)           R0
+DAT2P    10x2           MA10-2     con-lstb         (1.45 0.65)           R0
+DS0                     JP2        jumper           (1.1 1.5)             R90
+DS1                     JP2        jumper           (1.2 1.5)             R90
+DS2                     JP2        jumper           (1.3 1.5)             R90
+E1       ATF1508-100    TQFP-100   atmel-cpld       (1.5 3.35)            R90
+E2       LTV845         DIL16      optocoupler      (5.45 2.75)           R0
+E3       MAX232         DIL16      maxim            (5.45 2.05)           R0
+J1                      DEC40PINH  dec-con          (6.2 2.6)             R270
+J2       USB-C          USB497000A USB4970-00-A     (0.15 1.3)            R270
+J3       15V (CL)       SCD-014-A  con-shiua-chyuan (0.05 1.7)            R270
+OSC      3.6864MHz      DIL08S     crystal          (2.45 4.25)           R270
+OSC1     3.6864MHz      DIL14S     crystal          (2.45 4.1)            R270
+PROG1                   ML10       con-harting-ml   (0.65 2.5)            R270
+Q2       PN2222         SOT23-EBC  transistor       (5.65 2.45)           R270
+R1       5.1K           R0805      rcl              (4.9 2.8)             R90
+R2       5.1K           R0805      rcl              (5.7 3.05)            R90
+R3       5.1K           R0805      rcl              (0.55 1.35)           R90
+R4       5.1K           R0805      rcl              (0.7 1.35)            R90
+R5       100            R1206      rcl              (4.15 4.75)           R90
+R6       100            R1206      rcl              (4.3 4.75)            R90
+R7       100            R1206      rcl              (4.45 4.75)           R90
+R8       100            R1206      rcl              (4.6 4.75)            R90
+R9       100            R1206      rcl              (4.75 4.75)           R90
+R10      100            R1206      rcl              (4.9 4.75)            R90
+R11      220            R0805      rcl              (5.5 2.5)             R270
+R12      220            R0805      rcl              (5.25 1.6)            R180
+R13      1K 1/2W        0207/10    rcl              (5.9 3)               R90
+R14      5.1K           R0805      rcl              (5.95 2.7)            R180
+R15      680 1/2W       0207/10    rcl              (5 2.5)               R0
+R16      470            R0805      rcl              (5.8 2.3)             R90
+R21      680 1/2W       0207/10    rcl              (5.3 3.2)             R0
+R23      5.1K           R0805      rcl              (5.1 3.05)            R270
