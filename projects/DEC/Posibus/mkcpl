@@ -15,6 +15,8 @@
 #
 $jlcx = -0.5;
 $jlcy = -0.5;
+# BUGBUG: The above isn't actually working.
+$jlcx = $jlcy = 0;
 
 #
 # Pick and place needs position and orientation information 
@@ -44,6 +46,7 @@ $jlcy = -0.5;
 %parts = (
   "atmel-cpld;TQFP-100;ATF1508-100", "C1521282",
   "atmel-cpld;TQFP-100;ATF150X100TQFP", "C1521282",
+  "atmel-cpld;PQFP-100;ATF1508-100", "C184063",
   "atmel-cpld;PQFP-100;ATF150X100PQFP", "C184063",
   "con-shiua-chyuan;SCD-014-A;15V (CL)", " ", # omit
   "diode;SOD323-W;1N4148", "C2128",
