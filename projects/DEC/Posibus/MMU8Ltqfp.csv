@@ -1,0 +1,13 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"DESCRIPTION";"HEIGHT";"MANUFACTURER_NAME";"MANUFACTURER_PART_NUMBER";"MF";"MOUSER_PART_NUMBER";"MOUSER_PRICE-STOCK";"MPN";"OC_FARNELL";"OC_NEWARK";
+"1";" ";"MA08-2";"MA08-2";"FIELDS";"PIN HEADER";"";"";"";"";"";"";"";"";"unknown";"unknown";
+"2";" ";"ML10";"ML10";"PROG1, PROG2";"HARTING";"";"";"";"";"";"";"";"";"unknown";"unknown";
+"18";"0.1uF";"C-USC0805";"C0805";"C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18";"CAPACITOR, American symbol";"";"";"";"";"";"";"";"";"";"";
+"8";"100";"R-US_R1206";"R1206";"R1, R2, R5, R6, R7, R8, R9, R10";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";
+"17";"10x2";"MA10-2";"MA10-2";"ACB1P, ACB2P, BAC1P, BAC2P, BMA1P, BMA2P, BMB1P, BMB2P, CPU1P, CPU2P, DAD1P, DAD2P, DAT1P, DAT2P, MEM1P, MEM2P, PANEL";"PIN HEADER";"";"";"";"";"";"";"";"";"unknown";"unknown";
+"1";"20MHz";"QG5460";"DIL08S";"Q1A";"CRYSTAL RESONATOR";"";"";"";"";"";"";"";"";"unknown";"unknown";
+"1";"20MHz";"QG5860";"DIL14S";"Q1";"CRYSTAL RESONATOR";"";"";"";"";"";"";"";"";"unknown";"unknown";
+"2";"5.1K";"R-US_R0805";"R0805";"R3, R4";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";
+"2";"ATF1508-100";"ATF150X100TQFP";"TQFP-100";"MM32K, MMU8L";"ATF150x in 100 pin package.";"";"";"";"";"";"";"";"";"";"";
+"2";"DS1230";"62256P";"DIL28-6";"E3, E4";"MEMORY";"";"";"";"";"";"";"";"";"unknown";"unknown";
+"2";"DS1230";"62832P";"DIL28-3";"E3A, E4A";"MEMORY";"";"";"";"";"";"";"";"";"unknown";"unknown";
+"1";"USB-C";"USB4970-00-A";"USB497000A";"J2";"USB-C (USB TYPE-C) Receptacle Connector 24 (6+18 Dummy) Position Surface Mount, Right Angle; Through Hole";"USB-C (USB TYPE-C) Receptacle Connector 24 (6+18 Dummy) Position Surface Mount, Right Angle";" Through Hole";"3.41mm";"GCT (GLOBAL CONNECTOR TECHNOLOGY)";"USB4970-00-A";"";"";"";"";"";

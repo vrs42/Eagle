@@ -8236,6 +8236,12 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <part name="V48" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="PANEL" library="con-lstb" deviceset="MA10-2" device="" value="10x2"/>
+<part name="C19" library="rcl" deviceset="C-US" device="C0805" value="10uF"/>
+<part name="V46" library="supply2" deviceset="GND" device=""/>
+<part name="C20" library="rcl" deviceset="C-US" device="C0805" value="10uF"/>
+<part name="V47" library="supply2" deviceset="GND" device=""/>
+<part name="V49" library="supply2" deviceset="VCC" device=""/>
+<part name="V50" library="supply2" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10164,6 +10170,12 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <instance part="V45" gate="G$1" x="170.18" y="81.28"/>
 <instance part="SUPPLY19" gate="GND" x="83.82" y="223.52"/>
 <instance part="PANEL" gate="G$1" x="73.66" y="238.76" rot="MR0"/>
+<instance part="C19" gate="G$1" x="43.18" y="60.96"/>
+<instance part="V46" gate="GND" x="43.18" y="53.34"/>
+<instance part="C20" gate="G$1" x="33.02" y="60.96"/>
+<instance part="V47" gate="GND" x="33.02" y="53.34"/>
+<instance part="V49" gate="G$1" x="33.02" y="66.04"/>
+<instance part="V50" gate="G$1" x="43.18" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -10402,6 +10414,14 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="PANEL" gate="G$1" pin="18"/>
 <pinref part="PANEL" gate="G$1" pin="20"/>
 </segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="V46" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="V47" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="VCC" class="1">
 <segment>
@@ -10586,6 +10606,14 @@ Source: &lt;a href="3dcadmodel"&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <pinref part="C13" gate="G$1" pin="1"/>
 <pinref part="V45" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="V49" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="V50" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="D0" class="0">

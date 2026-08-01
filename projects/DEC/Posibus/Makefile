@@ -1,6 +1,6 @@
 BRD	= PT08.brd NPaddle.brd PPaddle.brd DW08B.brd MMU8L.brd PT08tqfp.brd \
 	RF08.brd io.brd
-BRD	= MMU8Ltqfp.brd PT08tqfp.brd NPaddle.brd
+BRD	= MMU8L.brd MMU8Ltqfp.brd PT08tqfp.brd NPaddle.brd
 XLS	= $(BRD:.brd=.bom.xls) $(BRD:.brd=.cpl.xls)
 ZIP	= $(BRD:.brd=.zip)
 .PRECIOUS: .bom.csv .cpl.csv
