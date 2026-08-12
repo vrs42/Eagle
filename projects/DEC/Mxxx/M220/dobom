@@ -1,0 +1,35 @@
+#!/usr/bin/perl
+
+#
+# Read the schematics and generate a "by value" BOM.
+#
+
+print "PART,COUNT,BOARD\n";
+foreach $f (@ARGV) {
+  $variant = $f;
+  $variant =~ s:.*/::;
+  $variant =~ s/[.]sch$//;
+  #
+  # Open and read the schematic.
+  %parts = %values = ();
+  open(SCH, "$f") || die "$f";
+  while (<SCH>) {
+    next if /library="frames"/;
+    next if /library="supply2"/;
+    next if /DOUBLE/;
+    next if /R-US/;
+    next if /"0.1uf"/;
+    next if /"6.8uf"/;
+    next unless /<part .* deviceset="([^"]*)"/;
+    $value = $1;
+#   $value = $1 if /<part .* value="([^"]*)"/;
+    $values{$value}++;
+  }
+  #
+  # Print a table of component counts.
+  if (%values) {
+    foreach $value (sort keys %values) {
+      print "$value,$values{$value},$variant\n";
+    }
+  }
+}

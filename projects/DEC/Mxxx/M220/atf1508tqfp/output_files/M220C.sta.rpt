@@ -1,0 +1,1296 @@
+TimeQuest Timing Analyzer report for M220C
+Thu Aug 06 23:09:43 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'au1'
+ 12. Setup: 'ak1'
+ 13. Setup: 'an2'
+ 14. Setup: 'ar1'
+ 15. Hold: 'ak1'
+ 16. Hold: 'an2'
+ 17. Hold: 'ar1'
+ 18. Hold: 'au1'
+ 19. Minimum Pulse Width: 'ak1'
+ 20. Minimum Pulse Width: 'an2'
+ 21. Minimum Pulse Width: 'ar1'
+ 22. Minimum Pulse Width: 'au1'
+ 23. Setup Times
+ 24. Hold Times
+ 25. Clock to Output Times
+ 26. Minimum Clock to Output Times
+ 27. Propagation Delay
+ 28. Minimum Propagation Delay
+ 29. Setup Transfers
+ 30. Hold Transfers
+ 31. Report TCCS
+ 32. Report RSKM
+ 33. Unconstrained Paths
+ 34. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; M220C                                                             ;
+; Device Family      ; MAX7000S                                                          ;
+; Device Name        ; EPM7128STC100-15                                                  ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Slow Model                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; ak1        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ak1 } ;
+; an2        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { an2 } ;
+; ar1        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ar1 } ;
+; au1        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { au1 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++-------------------------------------------------+
+; Fmax Summary                                    ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 25.64 MHz ; 25.64 MHz       ; ak1        ;      ;
+; 25.64 MHz ; 25.64 MHz       ; an2        ;      ;
+; 25.64 MHz ; 25.64 MHz       ; au1        ;      ;
+; 76.92 MHz ; 76.92 MHz       ; ar1        ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------+
+; Setup Summary                   ;
++-------+---------+---------------+
+; Clock ; Slack   ; End Point TNS ;
++-------+---------+---------------+
+; au1   ; -38.000 ; -76.000       ;
+; ak1   ; -38.000 ; -69.000       ;
+; an2   ; -38.000 ; -69.000       ;
+; ar1   ; -38.000 ; -69.000       ;
++-------+---------+---------------+
+
+
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; ak1   ; 5.000 ; 0.000         ;
+; an2   ; 5.000 ; 0.000         ;
+; ar1   ; 5.000 ; 0.000         ;
+; au1   ; 5.000 ; 0.000         ;
++-------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------+
+; Minimum Pulse Width Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; ak1   ; -5.500 ; -22.000       ;
+; an2   ; -5.500 ; -22.000       ;
+; ar1   ; -5.500 ; -22.000       ;
+; au1   ; -5.500 ; -22.000       ;
++-------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Setup: 'au1'                                                                                            ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node  ; To Node    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+; -38.000 ; ac2_h~reg0 ; ac3_h~reg0 ; au1          ; au1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ac2_h~reg0 ; ac2_h~reg0 ; au1          ; au1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ac3_h~reg0 ; ac3_h~reg0 ; au1          ; au1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ac3_h~reg0 ; ac2_h~reg0 ; au1          ; au1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ma3_h~reg0 ; ac3_h~reg0 ; ak1          ; au1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ma3_h~reg0 ; ac2_h~reg0 ; ak1          ; au1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; pc3_h~reg0 ; ac3_h~reg0 ; an2          ; au1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; pc3_h~reg0 ; ac2_h~reg0 ; an2          ; au1         ; 1.000        ; 0.000      ; 35.000     ;
+; -37.000 ; ma2_h~reg0 ; ac3_h~reg0 ; ak1          ; au1         ; 1.000        ; 0.000      ; 34.000     ;
+; -37.000 ; ma2_h~reg0 ; ac2_h~reg0 ; ak1          ; au1         ; 1.000        ; 0.000      ; 34.000     ;
+; -37.000 ; pc2_h~reg0 ; ac3_h~reg0 ; an2          ; au1         ; 1.000        ; 0.000      ; 34.000     ;
+; -37.000 ; pc2_h~reg0 ; ac2_h~reg0 ; an2          ; au1         ; 1.000        ; 0.000      ; 34.000     ;
+; -12.000 ; mb3_h      ; ac3_h~reg0 ; ar1          ; au1         ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; mb2_h      ; ac2_h~reg0 ; ar1          ; au1         ; 1.000        ; 0.000      ; 9.000      ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Setup: 'ak1'                                                                                            ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node  ; To Node    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+; -38.000 ; ac2_h~reg0 ; ma2_h~reg0 ; au1          ; ak1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ac3_h~reg0 ; ma2_h~reg0 ; au1          ; ak1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ma3_h~reg0 ; ma2_h~reg0 ; ak1          ; ak1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; pc3_h~reg0 ; ma2_h~reg0 ; an2          ; ak1         ; 1.000        ; 0.000      ; 35.000     ;
+; -37.000 ; ma2_h~reg0 ; ma2_h~reg0 ; ak1          ; ak1         ; 1.000        ; 0.000      ; 34.000     ;
+; -37.000 ; pc2_h~reg0 ; ma2_h~reg0 ; an2          ; ak1         ; 1.000        ; 0.000      ; 34.000     ;
+; -31.000 ; ac2_h~reg0 ; ma3_h~reg0 ; au1          ; ak1         ; 1.000        ; 0.000      ; 28.000     ;
+; -31.000 ; ac3_h~reg0 ; ma3_h~reg0 ; au1          ; ak1         ; 1.000        ; 0.000      ; 28.000     ;
+; -31.000 ; ma3_h~reg0 ; ma3_h~reg0 ; ak1          ; ak1         ; 1.000        ; 0.000      ; 28.000     ;
+; -31.000 ; pc3_h~reg0 ; ma3_h~reg0 ; an2          ; ak1         ; 1.000        ; 0.000      ; 28.000     ;
+; -30.000 ; ma2_h~reg0 ; ma3_h~reg0 ; ak1          ; ak1         ; 1.000        ; 0.000      ; 27.000     ;
+; -30.000 ; pc2_h~reg0 ; ma3_h~reg0 ; an2          ; ak1         ; 1.000        ; 0.000      ; 27.000     ;
+; -12.000 ; mb3_h      ; ma3_h~reg0 ; ar1          ; ak1         ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; mb2_h      ; ma2_h~reg0 ; ar1          ; ak1         ; 1.000        ; 0.000      ; 9.000      ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Setup: 'an2'                                                                                            ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node  ; To Node    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+; -38.000 ; ac2_h~reg0 ; pc2_h~reg0 ; au1          ; an2         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ac3_h~reg0 ; pc2_h~reg0 ; au1          ; an2         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ma3_h~reg0 ; pc2_h~reg0 ; ak1          ; an2         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; pc3_h~reg0 ; pc2_h~reg0 ; an2          ; an2         ; 1.000        ; 0.000      ; 35.000     ;
+; -37.000 ; ma2_h~reg0 ; pc2_h~reg0 ; ak1          ; an2         ; 1.000        ; 0.000      ; 34.000     ;
+; -37.000 ; pc2_h~reg0 ; pc2_h~reg0 ; an2          ; an2         ; 1.000        ; 0.000      ; 34.000     ;
+; -31.000 ; ac2_h~reg0 ; pc3_h~reg0 ; au1          ; an2         ; 1.000        ; 0.000      ; 28.000     ;
+; -31.000 ; ac3_h~reg0 ; pc3_h~reg0 ; au1          ; an2         ; 1.000        ; 0.000      ; 28.000     ;
+; -31.000 ; ma3_h~reg0 ; pc3_h~reg0 ; ak1          ; an2         ; 1.000        ; 0.000      ; 28.000     ;
+; -31.000 ; pc3_h~reg0 ; pc3_h~reg0 ; an2          ; an2         ; 1.000        ; 0.000      ; 28.000     ;
+; -30.000 ; ma2_h~reg0 ; pc3_h~reg0 ; ak1          ; an2         ; 1.000        ; 0.000      ; 27.000     ;
+; -30.000 ; pc2_h~reg0 ; pc3_h~reg0 ; an2          ; an2         ; 1.000        ; 0.000      ; 27.000     ;
+; -12.000 ; mb3_h      ; pc3_h~reg0 ; ar1          ; an2         ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; mb2_h      ; pc2_h~reg0 ; ar1          ; an2         ; 1.000        ; 0.000      ; 9.000      ;
++---------+------------+------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Setup: 'ar1'                                                                                         ;
++---------+------------+---------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node  ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+------------+---------+--------------+-------------+--------------+------------+------------+
+; -38.000 ; ac2_h~reg0 ; mb3_h   ; au1          ; ar1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ac3_h~reg0 ; mb3_h   ; au1          ; ar1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; ma3_h~reg0 ; mb3_h   ; ak1          ; ar1         ; 1.000        ; 0.000      ; 35.000     ;
+; -38.000 ; pc3_h~reg0 ; mb3_h   ; an2          ; ar1         ; 1.000        ; 0.000      ; 35.000     ;
+; -37.000 ; ma2_h~reg0 ; mb3_h   ; ak1          ; ar1         ; 1.000        ; 0.000      ; 34.000     ;
+; -37.000 ; pc2_h~reg0 ; mb3_h   ; an2          ; ar1         ; 1.000        ; 0.000      ; 34.000     ;
+; -31.000 ; ac2_h~reg0 ; mb2_h   ; au1          ; ar1         ; 1.000        ; 0.000      ; 28.000     ;
+; -31.000 ; ac3_h~reg0 ; mb2_h   ; au1          ; ar1         ; 1.000        ; 0.000      ; 28.000     ;
+; -31.000 ; ma3_h~reg0 ; mb2_h   ; ak1          ; ar1         ; 1.000        ; 0.000      ; 28.000     ;
+; -31.000 ; pc3_h~reg0 ; mb2_h   ; an2          ; ar1         ; 1.000        ; 0.000      ; 28.000     ;
+; -30.000 ; ma2_h~reg0 ; mb2_h   ; ak1          ; ar1         ; 1.000        ; 0.000      ; 27.000     ;
+; -30.000 ; pc2_h~reg0 ; mb2_h   ; an2          ; ar1         ; 1.000        ; 0.000      ; 27.000     ;
+; -12.000 ; mb3_h      ; mb3_h   ; ar1          ; ar1         ; 1.000        ; 0.000      ; 9.000      ;
+; -12.000 ; mb2_h      ; mb2_h   ; ar1          ; ar1         ; 1.000        ; 0.000      ; 9.000      ;
++---------+------------+---------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Hold: 'ak1'                                                                                            ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+; 5.000  ; mb3_h      ; ma3_h~reg0 ; ar1          ; ak1         ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000  ; mb2_h      ; ma2_h~reg0 ; ar1          ; ak1         ; 0.000        ; 0.000      ; 9.000      ;
+; 14.000 ; ac3_h~reg0 ; ma3_h~reg0 ; au1          ; ak1         ; 0.000        ; 0.000      ; 18.000     ;
+; 22.000 ; ac3_h~reg0 ; ma2_h~reg0 ; au1          ; ak1         ; 0.000        ; 0.000      ; 26.000     ;
+; 23.000 ; ma3_h~reg0 ; ma3_h~reg0 ; ak1          ; ak1         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; ma2_h~reg0 ; ma3_h~reg0 ; ak1          ; ak1         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; pc3_h~reg0 ; ma3_h~reg0 ; an2          ; ak1         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; pc2_h~reg0 ; ma3_h~reg0 ; an2          ; ak1         ; 0.000        ; 0.000      ; 27.000     ;
+; 24.000 ; ac2_h~reg0 ; ma3_h~reg0 ; au1          ; ak1         ; 0.000        ; 0.000      ; 28.000     ;
+; 30.000 ; ma2_h~reg0 ; ma2_h~reg0 ; ak1          ; ak1         ; 0.000        ; 0.000      ; 34.000     ;
+; 30.000 ; pc2_h~reg0 ; ma2_h~reg0 ; an2          ; ak1         ; 0.000        ; 0.000      ; 34.000     ;
+; 31.000 ; ac2_h~reg0 ; ma2_h~reg0 ; au1          ; ak1         ; 0.000        ; 0.000      ; 35.000     ;
+; 31.000 ; ma3_h~reg0 ; ma2_h~reg0 ; ak1          ; ak1         ; 0.000        ; 0.000      ; 35.000     ;
+; 31.000 ; pc3_h~reg0 ; ma2_h~reg0 ; an2          ; ak1         ; 0.000        ; 0.000      ; 35.000     ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Hold: 'an2'                                                                                            ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+; 5.000  ; mb3_h      ; pc3_h~reg0 ; ar1          ; an2         ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000  ; mb2_h      ; pc2_h~reg0 ; ar1          ; an2         ; 0.000        ; 0.000      ; 9.000      ;
+; 14.000 ; ac3_h~reg0 ; pc3_h~reg0 ; au1          ; an2         ; 0.000        ; 0.000      ; 18.000     ;
+; 22.000 ; ac3_h~reg0 ; pc2_h~reg0 ; au1          ; an2         ; 0.000        ; 0.000      ; 26.000     ;
+; 23.000 ; ma3_h~reg0 ; pc3_h~reg0 ; ak1          ; an2         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; ma2_h~reg0 ; pc3_h~reg0 ; ak1          ; an2         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; pc3_h~reg0 ; pc3_h~reg0 ; an2          ; an2         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; pc2_h~reg0 ; pc3_h~reg0 ; an2          ; an2         ; 0.000        ; 0.000      ; 27.000     ;
+; 24.000 ; ac2_h~reg0 ; pc3_h~reg0 ; au1          ; an2         ; 0.000        ; 0.000      ; 28.000     ;
+; 30.000 ; ma2_h~reg0 ; pc2_h~reg0 ; ak1          ; an2         ; 0.000        ; 0.000      ; 34.000     ;
+; 30.000 ; pc2_h~reg0 ; pc2_h~reg0 ; an2          ; an2         ; 0.000        ; 0.000      ; 34.000     ;
+; 31.000 ; ac2_h~reg0 ; pc2_h~reg0 ; au1          ; an2         ; 0.000        ; 0.000      ; 35.000     ;
+; 31.000 ; ma3_h~reg0 ; pc2_h~reg0 ; ak1          ; an2         ; 0.000        ; 0.000      ; 35.000     ;
+; 31.000 ; pc3_h~reg0 ; pc2_h~reg0 ; an2          ; an2         ; 0.000        ; 0.000      ; 35.000     ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Hold: 'ar1'                                                                                         ;
++--------+------------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+---------+--------------+-------------+--------------+------------+------------+
+; 5.000  ; mb3_h      ; mb3_h   ; ar1          ; ar1         ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000  ; mb2_h      ; mb2_h   ; ar1          ; ar1         ; 0.000        ; 0.000      ; 9.000      ;
+; 14.000 ; ac3_h~reg0 ; mb3_h   ; au1          ; ar1         ; 0.000        ; 0.000      ; 18.000     ;
+; 15.000 ; ac3_h~reg0 ; mb2_h   ; au1          ; ar1         ; 0.000        ; 0.000      ; 19.000     ;
+; 23.000 ; ma3_h~reg0 ; mb3_h   ; ak1          ; ar1         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; ma2_h~reg0 ; mb2_h   ; ak1          ; ar1         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; pc3_h~reg0 ; mb3_h   ; an2          ; ar1         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; pc2_h~reg0 ; mb2_h   ; an2          ; ar1         ; 0.000        ; 0.000      ; 27.000     ;
+; 24.000 ; ac2_h~reg0 ; mb2_h   ; au1          ; ar1         ; 0.000        ; 0.000      ; 28.000     ;
+; 24.000 ; ma3_h~reg0 ; mb2_h   ; ak1          ; ar1         ; 0.000        ; 0.000      ; 28.000     ;
+; 24.000 ; pc3_h~reg0 ; mb2_h   ; an2          ; ar1         ; 0.000        ; 0.000      ; 28.000     ;
+; 30.000 ; ma2_h~reg0 ; mb3_h   ; ak1          ; ar1         ; 0.000        ; 0.000      ; 34.000     ;
+; 30.000 ; pc2_h~reg0 ; mb3_h   ; an2          ; ar1         ; 0.000        ; 0.000      ; 34.000     ;
+; 31.000 ; ac2_h~reg0 ; mb3_h   ; au1          ; ar1         ; 0.000        ; 0.000      ; 35.000     ;
++--------+------------+---------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Hold: 'au1'                                                                                            ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+; 5.000  ; mb3_h      ; ac3_h~reg0 ; ar1          ; au1         ; 0.000        ; 0.000      ; 9.000      ;
+; 5.000  ; mb2_h      ; ac2_h~reg0 ; ar1          ; au1         ; 0.000        ; 0.000      ; 9.000      ;
+; 14.000 ; ac3_h~reg0 ; ac3_h~reg0 ; au1          ; au1         ; 0.000        ; 0.000      ; 18.000     ;
+; 22.000 ; ac3_h~reg0 ; ac2_h~reg0 ; au1          ; au1         ; 0.000        ; 0.000      ; 26.000     ;
+; 23.000 ; ma3_h~reg0 ; ac3_h~reg0 ; ak1          ; au1         ; 0.000        ; 0.000      ; 27.000     ;
+; 23.000 ; pc3_h~reg0 ; ac3_h~reg0 ; an2          ; au1         ; 0.000        ; 0.000      ; 27.000     ;
+; 30.000 ; ma2_h~reg0 ; ac3_h~reg0 ; ak1          ; au1         ; 0.000        ; 0.000      ; 34.000     ;
+; 30.000 ; ma2_h~reg0 ; ac2_h~reg0 ; ak1          ; au1         ; 0.000        ; 0.000      ; 34.000     ;
+; 30.000 ; pc2_h~reg0 ; ac3_h~reg0 ; an2          ; au1         ; 0.000        ; 0.000      ; 34.000     ;
+; 30.000 ; pc2_h~reg0 ; ac2_h~reg0 ; an2          ; au1         ; 0.000        ; 0.000      ; 34.000     ;
+; 31.000 ; ac2_h~reg0 ; ac3_h~reg0 ; au1          ; au1         ; 0.000        ; 0.000      ; 35.000     ;
+; 31.000 ; ac2_h~reg0 ; ac2_h~reg0 ; au1          ; au1         ; 0.000        ; 0.000      ; 35.000     ;
+; 31.000 ; ma3_h~reg0 ; ac2_h~reg0 ; ak1          ; au1         ; 0.000        ; 0.000      ; 35.000     ;
+; 31.000 ; pc3_h~reg0 ; ac2_h~reg0 ; an2          ; au1         ; 0.000        ; 0.000      ; 35.000     ;
++--------+------------+------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'ak1'                                                                       ;
++--------+--------------+----------------+------------------+-------+------------+-----------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target          ;
++--------+--------------+----------------+------------------+-------+------------+-----------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; ak1   ; Rise       ; ma2_h~reg0      ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; ak1   ; Rise       ; ma2_h~reg0      ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; ak1   ; Rise       ; ma3_h~reg0      ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; ak1   ; Rise       ; ma3_h~reg0      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ak1   ; Rise       ; ak1|dataout     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ak1   ; Rise       ; ak1|dataout     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ak1   ; Rise       ; ma2_h~reg0|[10] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ak1   ; Rise       ; ma2_h~reg0|[10] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ak1   ; Rise       ; ma3_h~reg0|[7]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ak1   ; Rise       ; ma3_h~reg0|[7]  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'an2'                                                                       ;
++--------+--------------+----------------+------------------+-------+------------+-----------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target          ;
++--------+--------------+----------------+------------------+-------+------------+-----------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; an2   ; Rise       ; pc2_h~reg0      ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; an2   ; Rise       ; pc2_h~reg0      ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; an2   ; Rise       ; pc3_h~reg0      ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; an2   ; Rise       ; pc3_h~reg0      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; an2   ; Rise       ; an2|dataout     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; an2   ; Rise       ; an2|dataout     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; an2   ; Rise       ; pc2_h~reg0|[10] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; an2   ; Rise       ; pc2_h~reg0|[10] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; an2   ; Rise       ; pc3_h~reg0|[7]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; an2   ; Rise       ; pc3_h~reg0|[7]  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'ar1'                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target      ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; ar1   ; Rise       ; mb2_h       ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; ar1   ; Rise       ; mb2_h       ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; ar1   ; Rise       ; mb3_h       ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; ar1   ; Rise       ; mb3_h       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ar1   ; Rise       ; ar1|dataout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ar1   ; Rise       ; ar1|dataout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ar1   ; Rise       ; mb2_h|[8]   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ar1   ; Rise       ; mb2_h|[8]   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; ar1   ; Rise       ; mb3_h|[8]   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; ar1   ; Rise       ; mb3_h|[8]   ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'au1'                                                                       ;
++--------+--------------+----------------+------------------+-------+------------+-----------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target          ;
++--------+--------------+----------------+------------------+-------+------------+-----------------+
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; au1   ; Rise       ; ac2_h~reg0      ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; au1   ; Rise       ; ac2_h~reg0      ;
+; -5.500 ; 0.500        ; 6.000          ; High Pulse Width ; au1   ; Rise       ; ac3_h~reg0      ;
+; -5.500 ; 0.500        ; 6.000          ; Low Pulse Width  ; au1   ; Rise       ; ac3_h~reg0      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; au1   ; Rise       ; ac2_h~reg0|[10] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; au1   ; Rise       ; ac2_h~reg0|[10] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; au1   ; Rise       ; ac3_h~reg0|[8]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; au1   ; Rise       ; ac3_h~reg0|[8]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; au1   ; Rise       ; au1|dataout     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; au1   ; Rise       ; au1|dataout     ;
++--------+--------------+----------------+------------------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; ac_enabl   ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; ac_enabl_l ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; adder0     ; ak1        ; 12.000 ; 12.000 ; Rise       ; ak1             ;
+; adder1     ; ak1        ; 12.000 ; 12.000 ; Rise       ; ak1             ;
+; adder4     ; ak1        ; 5.000  ; 5.000  ; Rise       ; ak1             ;
+; adder5     ; ak1        ; 4.000  ; 4.000  ; Rise       ; ak1             ;
+; and_h      ; ak1        ; 4.000  ; 4.000  ; Rise       ; ak1             ;
+; bb2        ; ak1        ; 4.000  ; 4.000  ; Rise       ; ak1             ;
+; be2        ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; br2        ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; bu1        ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; bv1        ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; bv2        ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; c0         ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; da2        ; ak1        ; 29.000 ; 29.000 ; Rise       ; ak1             ;
+; da_enabl   ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; data2      ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; data3      ; ak1        ; 31.000 ; 31.000 ; Rise       ; ak1             ;
+; data_enabl ; ak1        ; 31.000 ; 31.000 ; Rise       ; ak1             ;
+; io2        ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; io3        ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; io_enabl   ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; ma_enabl   ; ak1        ; 29.000 ; 29.000 ; Rise       ; ak1             ;
+; mem2       ; ak1        ; 29.000 ; 29.000 ; Rise       ; ak1             ;
+; mem_enabl  ; ak1        ; 29.000 ; 29.000 ; Rise       ; ak1             ;
+; mq2_h      ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; mq3_h      ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; mq_enabl   ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; no_shift   ; ak1        ; 12.000 ; 12.000 ; Rise       ; ak1             ;
+; pc_enabl   ; ak1        ; 30.000 ; 30.000 ; Rise       ; ak1             ;
+; sc2        ; ak1        ; 31.000 ; 31.000 ; Rise       ; ak1             ;
+; sc3        ; ak1        ; 31.000 ; 31.000 ; Rise       ; ak1             ;
+; sc_enabl   ; ak1        ; 31.000 ; 31.000 ; Rise       ; ak1             ;
+; shift_l1   ; ak1        ; 12.000 ; 12.000 ; Rise       ; ak1             ;
+; shift_l2   ; ak1        ; 4.000  ; 4.000  ; Rise       ; ak1             ;
+; shift_r1   ; ak1        ; 12.000 ; 12.000 ; Rise       ; ak1             ;
+; shift_r2   ; ak1        ; 12.000 ; 12.000 ; Rise       ; ak1             ;
+; sr2        ; ak1        ; 31.000 ; 31.000 ; Rise       ; ak1             ;
+; sr3        ; ak1        ; 31.000 ; 31.000 ; Rise       ; ak1             ;
+; sr_enabl   ; ak1        ; 31.000 ; 31.000 ; Rise       ; ak1             ;
+; tt_shift_l ; ak1        ; 12.000 ; 12.000 ; Rise       ; ak1             ;
+; ac_enabl   ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; ac_enabl_l ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; adder0     ; an2        ; 12.000 ; 12.000 ; Rise       ; an2             ;
+; adder1     ; an2        ; 12.000 ; 12.000 ; Rise       ; an2             ;
+; adder4     ; an2        ; 5.000  ; 5.000  ; Rise       ; an2             ;
+; adder5     ; an2        ; 4.000  ; 4.000  ; Rise       ; an2             ;
+; and_h      ; an2        ; 4.000  ; 4.000  ; Rise       ; an2             ;
+; bb2        ; an2        ; 4.000  ; 4.000  ; Rise       ; an2             ;
+; be2        ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; br2        ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; bu1        ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; bv1        ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; bv2        ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; c0         ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; da2        ; an2        ; 29.000 ; 29.000 ; Rise       ; an2             ;
+; da_enabl   ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; data2      ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; data3      ; an2        ; 31.000 ; 31.000 ; Rise       ; an2             ;
+; data_enabl ; an2        ; 31.000 ; 31.000 ; Rise       ; an2             ;
+; io2        ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; io3        ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; io_enabl   ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; ma_enabl   ; an2        ; 29.000 ; 29.000 ; Rise       ; an2             ;
+; mem2       ; an2        ; 29.000 ; 29.000 ; Rise       ; an2             ;
+; mem_enabl  ; an2        ; 29.000 ; 29.000 ; Rise       ; an2             ;
+; mq2_h      ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; mq3_h      ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; mq_enabl   ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; no_shift   ; an2        ; 12.000 ; 12.000 ; Rise       ; an2             ;
+; pc_enabl   ; an2        ; 30.000 ; 30.000 ; Rise       ; an2             ;
+; sc2        ; an2        ; 31.000 ; 31.000 ; Rise       ; an2             ;
+; sc3        ; an2        ; 31.000 ; 31.000 ; Rise       ; an2             ;
+; sc_enabl   ; an2        ; 31.000 ; 31.000 ; Rise       ; an2             ;
+; shift_l1   ; an2        ; 12.000 ; 12.000 ; Rise       ; an2             ;
+; shift_l2   ; an2        ; 4.000  ; 4.000  ; Rise       ; an2             ;
+; shift_r1   ; an2        ; 12.000 ; 12.000 ; Rise       ; an2             ;
+; shift_r2   ; an2        ; 12.000 ; 12.000 ; Rise       ; an2             ;
+; sr2        ; an2        ; 31.000 ; 31.000 ; Rise       ; an2             ;
+; sr3        ; an2        ; 31.000 ; 31.000 ; Rise       ; an2             ;
+; sr_enabl   ; an2        ; 31.000 ; 31.000 ; Rise       ; an2             ;
+; tt_shift_l ; an2        ; 12.000 ; 12.000 ; Rise       ; an2             ;
+; ac_enabl   ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; ac_enabl_l ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; adder0     ; ar1        ; 4.000  ; 4.000  ; Rise       ; ar1             ;
+; adder1     ; ar1        ; 12.000 ; 12.000 ; Rise       ; ar1             ;
+; adder4     ; ar1        ; 12.000 ; 12.000 ; Rise       ; ar1             ;
+; adder5     ; ar1        ; 4.000  ; 4.000  ; Rise       ; ar1             ;
+; and_h      ; ar1        ; 4.000  ; 4.000  ; Rise       ; ar1             ;
+; bb2        ; ar1        ; 4.000  ; 4.000  ; Rise       ; ar1             ;
+; be2        ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; br2        ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; bu1        ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; bv1        ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; bv2        ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; c0         ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; da2        ; ar1        ; 29.000 ; 29.000 ; Rise       ; ar1             ;
+; da_enabl   ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; data2      ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; data3      ; ar1        ; 31.000 ; 31.000 ; Rise       ; ar1             ;
+; data_enabl ; ar1        ; 31.000 ; 31.000 ; Rise       ; ar1             ;
+; io2        ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; io3        ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; io_enabl   ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; ma_enabl   ; ar1        ; 29.000 ; 29.000 ; Rise       ; ar1             ;
+; mem2       ; ar1        ; 29.000 ; 29.000 ; Rise       ; ar1             ;
+; mem_enabl  ; ar1        ; 29.000 ; 29.000 ; Rise       ; ar1             ;
+; mq2_h      ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; mq3_h      ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; mq_enabl   ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; no_shift   ; ar1        ; 12.000 ; 12.000 ; Rise       ; ar1             ;
+; pc_enabl   ; ar1        ; 30.000 ; 30.000 ; Rise       ; ar1             ;
+; sc2        ; ar1        ; 31.000 ; 31.000 ; Rise       ; ar1             ;
+; sc3        ; ar1        ; 31.000 ; 31.000 ; Rise       ; ar1             ;
+; sc_enabl   ; ar1        ; 31.000 ; 31.000 ; Rise       ; ar1             ;
+; shift_l1   ; ar1        ; 12.000 ; 12.000 ; Rise       ; ar1             ;
+; shift_l2   ; ar1        ; 4.000  ; 4.000  ; Rise       ; ar1             ;
+; shift_r1   ; ar1        ; 12.000 ; 12.000 ; Rise       ; ar1             ;
+; shift_r2   ; ar1        ; 12.000 ; 12.000 ; Rise       ; ar1             ;
+; sr2        ; ar1        ; 31.000 ; 31.000 ; Rise       ; ar1             ;
+; sr3        ; ar1        ; 31.000 ; 31.000 ; Rise       ; ar1             ;
+; sr_enabl   ; ar1        ; 31.000 ; 31.000 ; Rise       ; ar1             ;
+; tt_shift_l ; ar1        ; 12.000 ; 12.000 ; Rise       ; ar1             ;
+; ac_enabl   ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; ac_enabl_l ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; adder0     ; au1        ; 12.000 ; 12.000 ; Rise       ; au1             ;
+; adder1     ; au1        ; 12.000 ; 12.000 ; Rise       ; au1             ;
+; adder4     ; au1        ; 12.000 ; 12.000 ; Rise       ; au1             ;
+; adder5     ; au1        ; 4.000  ; 4.000  ; Rise       ; au1             ;
+; and_h      ; au1        ; 4.000  ; 4.000  ; Rise       ; au1             ;
+; bb2        ; au1        ; 4.000  ; 4.000  ; Rise       ; au1             ;
+; be2        ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; br2        ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; bu1        ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; bv1        ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; bv2        ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; c0         ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; da2        ; au1        ; 29.000 ; 29.000 ; Rise       ; au1             ;
+; da_enabl   ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; data2      ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; data3      ; au1        ; 31.000 ; 31.000 ; Rise       ; au1             ;
+; data_enabl ; au1        ; 31.000 ; 31.000 ; Rise       ; au1             ;
+; io2        ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; io3        ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; io_enabl   ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; ma_enabl   ; au1        ; 29.000 ; 29.000 ; Rise       ; au1             ;
+; mem2       ; au1        ; 29.000 ; 29.000 ; Rise       ; au1             ;
+; mem_enabl  ; au1        ; 29.000 ; 29.000 ; Rise       ; au1             ;
+; mq2_h      ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; mq3_h      ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; mq_enabl   ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; no_shift   ; au1        ; 12.000 ; 12.000 ; Rise       ; au1             ;
+; pc_enabl   ; au1        ; 30.000 ; 30.000 ; Rise       ; au1             ;
+; sc2        ; au1        ; 31.000 ; 31.000 ; Rise       ; au1             ;
+; sc3        ; au1        ; 31.000 ; 31.000 ; Rise       ; au1             ;
+; sc_enabl   ; au1        ; 31.000 ; 31.000 ; Rise       ; au1             ;
+; shift_l1   ; au1        ; 12.000 ; 12.000 ; Rise       ; au1             ;
+; shift_l2   ; au1        ; 4.000  ; 4.000  ; Rise       ; au1             ;
+; shift_r1   ; au1        ; 12.000 ; 12.000 ; Rise       ; au1             ;
+; shift_r2   ; au1        ; 12.000 ; 12.000 ; Rise       ; au1             ;
+; sr2        ; au1        ; 31.000 ; 31.000 ; Rise       ; au1             ;
+; sr3        ; au1        ; 31.000 ; 31.000 ; Rise       ; au1             ;
+; sr_enabl   ; au1        ; 31.000 ; 31.000 ; Rise       ; au1             ;
+; tt_shift_l ; au1        ; 12.000 ; 12.000 ; Rise       ; au1             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++------------+------------+---------+---------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise    ; Fall    ; Clock Edge ; Clock Reference ;
++------------+------------+---------+---------+------------+-----------------+
+; ac_enabl   ; ak1        ; -5.000  ; -5.000  ; Rise       ; ak1             ;
+; ac_enabl_l ; ak1        ; -5.000  ; -5.000  ; Rise       ; ak1             ;
+; adder0     ; ak1        ; -4.000  ; -4.000  ; Rise       ; ak1             ;
+; adder1     ; ak1        ; 4.000   ; 4.000   ; Rise       ; ak1             ;
+; adder4     ; ak1        ; 4.000   ; 4.000   ; Rise       ; ak1             ;
+; adder5     ; ak1        ; 4.000   ; 4.000   ; Rise       ; ak1             ;
+; and_h      ; ak1        ; 4.000   ; 4.000   ; Rise       ; ak1             ;
+; bb2        ; ak1        ; 4.000   ; 4.000   ; Rise       ; ak1             ;
+; be2        ; ak1        ; -5.000  ; -5.000  ; Rise       ; ak1             ;
+; br2        ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; bu1        ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; bv1        ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; bv2        ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; c0         ; ak1        ; -5.000  ; -5.000  ; Rise       ; ak1             ;
+; da2        ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; da_enabl   ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; data2      ; ak1        ; -15.000 ; -15.000 ; Rise       ; ak1             ;
+; data3      ; ak1        ; -6.000  ; -6.000  ; Rise       ; ak1             ;
+; data_enabl ; ak1        ; -6.000  ; -6.000  ; Rise       ; ak1             ;
+; io2        ; ak1        ; -15.000 ; -15.000 ; Rise       ; ak1             ;
+; io3        ; ak1        ; -5.000  ; -5.000  ; Rise       ; ak1             ;
+; io_enabl   ; ak1        ; -5.000  ; -5.000  ; Rise       ; ak1             ;
+; ma_enabl   ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; mem2       ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; mem_enabl  ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; mq2_h      ; ak1        ; -15.000 ; -15.000 ; Rise       ; ak1             ;
+; mq3_h      ; ak1        ; -6.000  ; -6.000  ; Rise       ; ak1             ;
+; mq_enabl   ; ak1        ; -6.000  ; -6.000  ; Rise       ; ak1             ;
+; no_shift   ; ak1        ; -4.000  ; -4.000  ; Rise       ; ak1             ;
+; pc_enabl   ; ak1        ; -14.000 ; -14.000 ; Rise       ; ak1             ;
+; sc2        ; ak1        ; -16.000 ; -16.000 ; Rise       ; ak1             ;
+; sc3        ; ak1        ; -6.000  ; -6.000  ; Rise       ; ak1             ;
+; sc_enabl   ; ak1        ; -6.000  ; -6.000  ; Rise       ; ak1             ;
+; shift_l1   ; ak1        ; 3.000   ; 3.000   ; Rise       ; ak1             ;
+; shift_l2   ; ak1        ; 4.000   ; 4.000   ; Rise       ; ak1             ;
+; shift_r1   ; ak1        ; 3.000   ; 3.000   ; Rise       ; ak1             ;
+; shift_r2   ; ak1        ; 4.000   ; 4.000   ; Rise       ; ak1             ;
+; sr2        ; ak1        ; -16.000 ; -16.000 ; Rise       ; ak1             ;
+; sr3        ; ak1        ; -6.000  ; -6.000  ; Rise       ; ak1             ;
+; sr_enabl   ; ak1        ; -6.000  ; -6.000  ; Rise       ; ak1             ;
+; tt_shift_l ; ak1        ; 4.000   ; 4.000   ; Rise       ; ak1             ;
+; ac_enabl   ; an2        ; -5.000  ; -5.000  ; Rise       ; an2             ;
+; ac_enabl_l ; an2        ; -5.000  ; -5.000  ; Rise       ; an2             ;
+; adder0     ; an2        ; -4.000  ; -4.000  ; Rise       ; an2             ;
+; adder1     ; an2        ; 4.000   ; 4.000   ; Rise       ; an2             ;
+; adder4     ; an2        ; 4.000   ; 4.000   ; Rise       ; an2             ;
+; adder5     ; an2        ; 4.000   ; 4.000   ; Rise       ; an2             ;
+; and_h      ; an2        ; 4.000   ; 4.000   ; Rise       ; an2             ;
+; bb2        ; an2        ; 4.000   ; 4.000   ; Rise       ; an2             ;
+; be2        ; an2        ; -5.000  ; -5.000  ; Rise       ; an2             ;
+; br2        ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; bu1        ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; bv1        ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; bv2        ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; c0         ; an2        ; -5.000  ; -5.000  ; Rise       ; an2             ;
+; da2        ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; da_enabl   ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; data2      ; an2        ; -15.000 ; -15.000 ; Rise       ; an2             ;
+; data3      ; an2        ; -6.000  ; -6.000  ; Rise       ; an2             ;
+; data_enabl ; an2        ; -6.000  ; -6.000  ; Rise       ; an2             ;
+; io2        ; an2        ; -15.000 ; -15.000 ; Rise       ; an2             ;
+; io3        ; an2        ; -5.000  ; -5.000  ; Rise       ; an2             ;
+; io_enabl   ; an2        ; -5.000  ; -5.000  ; Rise       ; an2             ;
+; ma_enabl   ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; mem2       ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; mem_enabl  ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; mq2_h      ; an2        ; -15.000 ; -15.000 ; Rise       ; an2             ;
+; mq3_h      ; an2        ; -6.000  ; -6.000  ; Rise       ; an2             ;
+; mq_enabl   ; an2        ; -6.000  ; -6.000  ; Rise       ; an2             ;
+; no_shift   ; an2        ; -4.000  ; -4.000  ; Rise       ; an2             ;
+; pc_enabl   ; an2        ; -14.000 ; -14.000 ; Rise       ; an2             ;
+; sc2        ; an2        ; -16.000 ; -16.000 ; Rise       ; an2             ;
+; sc3        ; an2        ; -6.000  ; -6.000  ; Rise       ; an2             ;
+; sc_enabl   ; an2        ; -6.000  ; -6.000  ; Rise       ; an2             ;
+; shift_l1   ; an2        ; 3.000   ; 3.000   ; Rise       ; an2             ;
+; shift_l2   ; an2        ; 4.000   ; 4.000   ; Rise       ; an2             ;
+; shift_r1   ; an2        ; 3.000   ; 3.000   ; Rise       ; an2             ;
+; shift_r2   ; an2        ; 4.000   ; 4.000   ; Rise       ; an2             ;
+; sr2        ; an2        ; -16.000 ; -16.000 ; Rise       ; an2             ;
+; sr3        ; an2        ; -6.000  ; -6.000  ; Rise       ; an2             ;
+; sr_enabl   ; an2        ; -6.000  ; -6.000  ; Rise       ; an2             ;
+; tt_shift_l ; an2        ; 4.000   ; 4.000   ; Rise       ; an2             ;
+; ac_enabl   ; ar1        ; -5.000  ; -5.000  ; Rise       ; ar1             ;
+; ac_enabl_l ; ar1        ; -5.000  ; -5.000  ; Rise       ; ar1             ;
+; adder0     ; ar1        ; 4.000   ; 4.000   ; Rise       ; ar1             ;
+; adder1     ; ar1        ; 3.000   ; 3.000   ; Rise       ; ar1             ;
+; adder4     ; ar1        ; 4.000   ; 4.000   ; Rise       ; ar1             ;
+; adder5     ; ar1        ; 4.000   ; 4.000   ; Rise       ; ar1             ;
+; and_h      ; ar1        ; 4.000   ; 4.000   ; Rise       ; ar1             ;
+; bb2        ; ar1        ; 4.000   ; 4.000   ; Rise       ; ar1             ;
+; be2        ; ar1        ; -5.000  ; -5.000  ; Rise       ; ar1             ;
+; br2        ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; bu1        ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; bv1        ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; bv2        ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; c0         ; ar1        ; -5.000  ; -5.000  ; Rise       ; ar1             ;
+; da2        ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; da_enabl   ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; data2      ; ar1        ; -15.000 ; -15.000 ; Rise       ; ar1             ;
+; data3      ; ar1        ; -6.000  ; -6.000  ; Rise       ; ar1             ;
+; data_enabl ; ar1        ; -6.000  ; -6.000  ; Rise       ; ar1             ;
+; io2        ; ar1        ; -15.000 ; -15.000 ; Rise       ; ar1             ;
+; io3        ; ar1        ; -5.000  ; -5.000  ; Rise       ; ar1             ;
+; io_enabl   ; ar1        ; -5.000  ; -5.000  ; Rise       ; ar1             ;
+; ma_enabl   ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; mem2       ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; mem_enabl  ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; mq2_h      ; ar1        ; -15.000 ; -15.000 ; Rise       ; ar1             ;
+; mq3_h      ; ar1        ; -6.000  ; -6.000  ; Rise       ; ar1             ;
+; mq_enabl   ; ar1        ; -6.000  ; -6.000  ; Rise       ; ar1             ;
+; no_shift   ; ar1        ; 3.000   ; 3.000   ; Rise       ; ar1             ;
+; pc_enabl   ; ar1        ; -14.000 ; -14.000 ; Rise       ; ar1             ;
+; sc2        ; ar1        ; -16.000 ; -16.000 ; Rise       ; ar1             ;
+; sc3        ; ar1        ; -6.000  ; -6.000  ; Rise       ; ar1             ;
+; sc_enabl   ; ar1        ; -6.000  ; -6.000  ; Rise       ; ar1             ;
+; shift_l1   ; ar1        ; 3.000   ; 3.000   ; Rise       ; ar1             ;
+; shift_l2   ; ar1        ; 4.000   ; 4.000   ; Rise       ; ar1             ;
+; shift_r1   ; ar1        ; 3.000   ; 3.000   ; Rise       ; ar1             ;
+; shift_r2   ; ar1        ; 4.000   ; 4.000   ; Rise       ; ar1             ;
+; sr2        ; ar1        ; -16.000 ; -16.000 ; Rise       ; ar1             ;
+; sr3        ; ar1        ; -6.000  ; -6.000  ; Rise       ; ar1             ;
+; sr_enabl   ; ar1        ; -6.000  ; -6.000  ; Rise       ; ar1             ;
+; tt_shift_l ; ar1        ; 4.000   ; 4.000   ; Rise       ; ar1             ;
+; ac_enabl   ; au1        ; -5.000  ; -5.000  ; Rise       ; au1             ;
+; ac_enabl_l ; au1        ; -5.000  ; -5.000  ; Rise       ; au1             ;
+; adder0     ; au1        ; -4.000  ; -4.000  ; Rise       ; au1             ;
+; adder1     ; au1        ; -4.000  ; -4.000  ; Rise       ; au1             ;
+; adder4     ; au1        ; 4.000   ; 4.000   ; Rise       ; au1             ;
+; adder5     ; au1        ; 4.000   ; 4.000   ; Rise       ; au1             ;
+; and_h      ; au1        ; 4.000   ; 4.000   ; Rise       ; au1             ;
+; bb2        ; au1        ; 4.000   ; 4.000   ; Rise       ; au1             ;
+; be2        ; au1        ; -5.000  ; -5.000  ; Rise       ; au1             ;
+; br2        ; au1        ; -14.000 ; -14.000 ; Rise       ; au1             ;
+; bu1        ; au1        ; -14.000 ; -14.000 ; Rise       ; au1             ;
+; bv1        ; au1        ; -14.000 ; -14.000 ; Rise       ; au1             ;
+; bv2        ; au1        ; -14.000 ; -14.000 ; Rise       ; au1             ;
+; c0         ; au1        ; -5.000  ; -5.000  ; Rise       ; au1             ;
+; da2        ; au1        ; -21.000 ; -21.000 ; Rise       ; au1             ;
+; da_enabl   ; au1        ; -14.000 ; -14.000 ; Rise       ; au1             ;
+; data2      ; au1        ; -22.000 ; -22.000 ; Rise       ; au1             ;
+; data3      ; au1        ; -6.000  ; -6.000  ; Rise       ; au1             ;
+; data_enabl ; au1        ; -6.000  ; -6.000  ; Rise       ; au1             ;
+; io2        ; au1        ; -22.000 ; -22.000 ; Rise       ; au1             ;
+; io3        ; au1        ; -5.000  ; -5.000  ; Rise       ; au1             ;
+; io_enabl   ; au1        ; -5.000  ; -5.000  ; Rise       ; au1             ;
+; ma_enabl   ; au1        ; -21.000 ; -21.000 ; Rise       ; au1             ;
+; mem2       ; au1        ; -21.000 ; -21.000 ; Rise       ; au1             ;
+; mem_enabl  ; au1        ; -21.000 ; -21.000 ; Rise       ; au1             ;
+; mq2_h      ; au1        ; -22.000 ; -22.000 ; Rise       ; au1             ;
+; mq3_h      ; au1        ; -6.000  ; -6.000  ; Rise       ; au1             ;
+; mq_enabl   ; au1        ; -6.000  ; -6.000  ; Rise       ; au1             ;
+; no_shift   ; au1        ; -4.000  ; -4.000  ; Rise       ; au1             ;
+; pc_enabl   ; au1        ; -14.000 ; -14.000 ; Rise       ; au1             ;
+; sc2        ; au1        ; -23.000 ; -23.000 ; Rise       ; au1             ;
+; sc3        ; au1        ; -6.000  ; -6.000  ; Rise       ; au1             ;
+; sc_enabl   ; au1        ; -6.000  ; -6.000  ; Rise       ; au1             ;
+; shift_l1   ; au1        ; -4.000  ; -4.000  ; Rise       ; au1             ;
+; shift_l2   ; au1        ; 4.000   ; 4.000   ; Rise       ; au1             ;
+; shift_r1   ; au1        ; -4.000  ; -4.000  ; Rise       ; au1             ;
+; shift_r2   ; au1        ; -4.000  ; -4.000  ; Rise       ; au1             ;
+; sr2        ; au1        ; -23.000 ; -23.000 ; Rise       ; au1             ;
+; sr3        ; au1        ; -6.000  ; -6.000  ; Rise       ; au1             ;
+; sr_enabl   ; au1        ; -6.000  ; -6.000  ; Rise       ; au1             ;
+; tt_shift_l ; au1        ; 4.000   ; 4.000   ; Rise       ; au1             ;
++------------+------------+---------+---------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; adder2    ; ak1        ; 33.000 ; 33.000 ; Rise       ; ak1             ;
+; adder3    ; ak1        ; 33.000 ; 33.000 ; Rise       ; ak1             ;
+; aj1       ; ak1        ; 42.000 ; 42.000 ; Rise       ; ak1             ;
+; ak2       ; ak1        ; 50.000 ; 50.000 ; Rise       ; ak1             ;
+; c2        ; ak1        ; 33.000 ; 33.000 ; Rise       ; ak1             ;
+; ma2_h     ; ak1        ; 15.000 ; 15.000 ; Rise       ; ak1             ;
+; ma2_l     ; ak1        ; 24.000 ; 24.000 ; Rise       ; ak1             ;
+; ma3_h     ; ak1        ; 15.000 ; 15.000 ; Rise       ; ak1             ;
+; ma3_l     ; ak1        ; 24.000 ; 24.000 ; Rise       ; ak1             ;
+; adder2    ; an2        ; 33.000 ; 33.000 ; Rise       ; an2             ;
+; adder3    ; an2        ; 33.000 ; 33.000 ; Rise       ; an2             ;
+; aj1       ; an2        ; 42.000 ; 42.000 ; Rise       ; an2             ;
+; ak2       ; an2        ; 50.000 ; 50.000 ; Rise       ; an2             ;
+; c2        ; an2        ; 33.000 ; 33.000 ; Rise       ; an2             ;
+; pc2_h     ; an2        ; 15.000 ; 15.000 ; Rise       ; an2             ;
+; pc2_l     ; an2        ; 24.000 ; 24.000 ; Rise       ; an2             ;
+; pc3_h     ; an2        ; 15.000 ; 15.000 ; Rise       ; an2             ;
+; pc3_l     ; an2        ; 24.000 ; 24.000 ; Rise       ; an2             ;
+; aj1       ; ar1        ; 25.000 ; 25.000 ; Rise       ; ar1             ;
+; ak2       ; ar1        ; 32.000 ; 32.000 ; Rise       ; ar1             ;
+; as1       ; ar1        ; 24.000 ; 24.000 ; Rise       ; ar1             ;
+; as2       ; ar1        ; 15.000 ; 15.000 ; Rise       ; ar1             ;
+; at2       ; ar1        ; 15.000 ; 15.000 ; Rise       ; ar1             ;
+; au2       ; ar1        ; 24.000 ; 24.000 ; Rise       ; ar1             ;
+; ac2_h     ; au1        ; 15.000 ; 15.000 ; Rise       ; au1             ;
+; ac2_l     ; au1        ; 24.000 ; 24.000 ; Rise       ; au1             ;
+; ac3_h     ; au1        ; 15.000 ; 15.000 ; Rise       ; au1             ;
+; ac3_l     ; au1        ; 24.000 ; 24.000 ; Rise       ; au1             ;
+; adder2    ; au1        ; 33.000 ; 33.000 ; Rise       ; au1             ;
+; adder3    ; au1        ; 33.000 ; 33.000 ; Rise       ; au1             ;
+; aj1       ; au1        ; 42.000 ; 42.000 ; Rise       ; au1             ;
+; ak2       ; au1        ; 43.000 ; 43.000 ; Rise       ; au1             ;
+; c2        ; au1        ; 33.000 ; 33.000 ; Rise       ; au1             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; adder2    ; ak1        ; 33.000 ; 33.000 ; Rise       ; ak1             ;
+; adder3    ; ak1        ; 33.000 ; 33.000 ; Rise       ; ak1             ;
+; aj1       ; ak1        ; 41.000 ; 41.000 ; Rise       ; ak1             ;
+; ak2       ; ak1        ; 41.000 ; 41.000 ; Rise       ; ak1             ;
+; c2        ; ak1        ; 33.000 ; 33.000 ; Rise       ; ak1             ;
+; ma2_h     ; ak1        ; 15.000 ; 15.000 ; Rise       ; ak1             ;
+; ma2_l     ; ak1        ; 24.000 ; 24.000 ; Rise       ; ak1             ;
+; ma3_h     ; ak1        ; 15.000 ; 15.000 ; Rise       ; ak1             ;
+; ma3_l     ; ak1        ; 24.000 ; 24.000 ; Rise       ; ak1             ;
+; adder2    ; an2        ; 33.000 ; 33.000 ; Rise       ; an2             ;
+; adder3    ; an2        ; 33.000 ; 33.000 ; Rise       ; an2             ;
+; aj1       ; an2        ; 41.000 ; 41.000 ; Rise       ; an2             ;
+; ak2       ; an2        ; 41.000 ; 41.000 ; Rise       ; an2             ;
+; c2        ; an2        ; 33.000 ; 33.000 ; Rise       ; an2             ;
+; pc2_h     ; an2        ; 15.000 ; 15.000 ; Rise       ; an2             ;
+; pc2_l     ; an2        ; 24.000 ; 24.000 ; Rise       ; an2             ;
+; pc3_h     ; an2        ; 15.000 ; 15.000 ; Rise       ; an2             ;
+; pc3_l     ; an2        ; 24.000 ; 24.000 ; Rise       ; an2             ;
+; aj1       ; ar1        ; 25.000 ; 25.000 ; Rise       ; ar1             ;
+; ak2       ; ar1        ; 32.000 ; 32.000 ; Rise       ; ar1             ;
+; as1       ; ar1        ; 24.000 ; 24.000 ; Rise       ; ar1             ;
+; as2       ; ar1        ; 15.000 ; 15.000 ; Rise       ; ar1             ;
+; at2       ; ar1        ; 15.000 ; 15.000 ; Rise       ; ar1             ;
+; au2       ; ar1        ; 24.000 ; 24.000 ; Rise       ; ar1             ;
+; ac2_h     ; au1        ; 15.000 ; 15.000 ; Rise       ; au1             ;
+; ac2_l     ; au1        ; 24.000 ; 24.000 ; Rise       ; au1             ;
+; ac3_h     ; au1        ; 15.000 ; 15.000 ; Rise       ; au1             ;
+; ac3_l     ; au1        ; 24.000 ; 24.000 ; Rise       ; au1             ;
+; adder2    ; au1        ; 33.000 ; 33.000 ; Rise       ; au1             ;
+; adder3    ; au1        ; 33.000 ; 33.000 ; Rise       ; au1             ;
+; aj1       ; au1        ; 33.000 ; 33.000 ; Rise       ; au1             ;
+; ak2       ; au1        ; 41.000 ; 41.000 ; Rise       ; au1             ;
+; c2        ; au1        ; 33.000 ; 33.000 ; Rise       ; au1             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; ac_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ac_enabl   ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ac_enabl   ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; ac_enabl   ; ak2         ; 34.000 ; 33.000 ; 33.000 ; 34.000 ;
+; ac_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; ac_enabl_l ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ac_enabl_l ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ac_enabl_l ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; ac_enabl_l ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; ac_enabl_l ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; adder0     ; aj1         ; 16.000 ;        ;        ; 16.000 ;
+; adder1     ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; adder1     ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; adder4     ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; adder4     ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; adder5     ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; and_h      ; aj1         ; 16.000 ;        ;        ; 16.000 ;
+; and_h      ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; bb2        ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; be2        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; be2        ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; be2        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; be2        ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; be2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; br2        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; br2        ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; br2        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; br2        ; ak2         ; 41.000 ; 33.000 ; 33.000 ; 41.000 ;
+; br2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; bu1        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; bu1        ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; bu1        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; bu1        ; ak2         ; 41.000 ; 33.000 ; 33.000 ; 41.000 ;
+; bu1        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; bv1        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; bv1        ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; bv1        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; bv1        ; ak2         ; 41.000 ; 33.000 ; 33.000 ; 41.000 ;
+; bv1        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; bv2        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; bv2        ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; bv2        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; bv2        ; ak2         ; 41.000 ; 33.000 ; 33.000 ; 41.000 ;
+; bv2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; c0         ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; c0         ; adder3      ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; c0         ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; c0         ; ak2         ; 33.000 ; 34.000 ; 34.000 ; 33.000 ;
+; c0         ; c2          ; 24.000 ;        ;        ; 24.000 ;
+; da2        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; da2        ; aj1         ; 32.000 ;        ;        ; 32.000 ;
+; da2        ; ak2         ;        ; 32.000 ; 32.000 ;        ;
+; da2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; da_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; da_enabl   ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; da_enabl   ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; da_enabl   ; ak2         ; 41.000 ; 33.000 ; 33.000 ; 41.000 ;
+; da_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; data2      ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; data2      ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; data2      ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; data2      ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; data3      ; adder2      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; data3      ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; data3      ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; data3      ; ak2         ; 34.000 ; 40.000 ; 40.000 ; 34.000 ;
+; data3      ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; data_enabl ; adder2      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; data_enabl ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; data_enabl ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; data_enabl ; ak2         ; 34.000 ; 40.000 ; 40.000 ; 34.000 ;
+; data_enabl ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; io2        ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; io2        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; io2        ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; io2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; io3        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; io3        ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; io3        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; io3        ; ak2         ; 33.000 ; 40.000 ; 40.000 ; 33.000 ;
+; io3        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; io_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; io_enabl   ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; io_enabl   ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; io_enabl   ; ak2         ; 33.000 ; 40.000 ; 40.000 ; 33.000 ;
+; io_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; ma_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ma_enabl   ; aj1         ; 32.000 ;        ;        ; 32.000 ;
+; ma_enabl   ; ak2         ;        ; 32.000 ; 32.000 ;        ;
+; ma_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mem2       ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mem2       ; aj1         ; 32.000 ;        ;        ; 32.000 ;
+; mem2       ; ak2         ;        ; 32.000 ; 32.000 ;        ;
+; mem2       ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mem_enabl  ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mem_enabl  ; aj1         ; 32.000 ;        ;        ; 32.000 ;
+; mem_enabl  ; ak2         ;        ; 32.000 ; 32.000 ;        ;
+; mem_enabl  ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mq2_h      ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; mq2_h      ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; mq2_h      ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; mq2_h      ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mq3_h      ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mq3_h      ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mq3_h      ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; mq3_h      ; ak2         ; 33.000 ; 40.000 ; 40.000 ; 33.000 ;
+; mq3_h      ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mq_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mq_enabl   ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mq_enabl   ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; mq_enabl   ; ak2         ; 33.000 ; 40.000 ; 40.000 ; 33.000 ;
+; mq_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; no_shift   ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; no_shift   ; ak2         ;        ; 31.000 ; 31.000 ;        ;
+; pc_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; pc_enabl   ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; pc_enabl   ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; pc_enabl   ; ak2         ; 41.000 ; 33.000 ; 33.000 ; 41.000 ;
+; pc_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; sc2        ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; sc2        ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sc2        ; ak2         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sc2        ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; sc3        ; adder2      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sc3        ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sc3        ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sc3        ; ak2         ; 34.000 ; 40.000 ; 40.000 ; 34.000 ;
+; sc3        ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; sc_enabl   ; adder2      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sc_enabl   ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sc_enabl   ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sc_enabl   ; ak2         ; 34.000 ; 40.000 ; 40.000 ; 34.000 ;
+; sc_enabl   ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; shift_l1   ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; shift_l1   ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; shift_l2   ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; shift_l2   ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; shift_r1   ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; shift_r1   ; ak2         ;        ; 15.000 ; 15.000 ;        ;
+; shift_r2   ; aj1         ; 16.000 ;        ;        ; 16.000 ;
+; shift_r2   ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; sr2        ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; sr2        ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sr2        ; ak2         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sr2        ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; sr3        ; adder2      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sr3        ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sr3        ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sr3        ; ak2         ; 34.000 ; 40.000 ; 40.000 ; 34.000 ;
+; sr3        ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; sr_enabl   ; adder2      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sr_enabl   ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sr_enabl   ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sr_enabl   ; ak2         ; 34.000 ; 40.000 ; 40.000 ; 34.000 ;
+; sr_enabl   ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; tt_shift_l ; aj1         ;        ; 15.000 ; 15.000 ;        ;
+; tt_shift_l ; ak2         ; 31.000 ;        ;        ; 31.000 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; ac_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ac_enabl   ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ac_enabl   ; aj1         ; 24.000 ; 26.000 ; 26.000 ; 24.000 ;
+; ac_enabl   ; ak2         ; 33.000 ; 32.000 ; 32.000 ; 33.000 ;
+; ac_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; ac_enabl_l ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ac_enabl_l ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ac_enabl_l ; aj1         ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; ac_enabl_l ; ak2         ; 33.000 ; 32.000 ; 32.000 ; 33.000 ;
+; ac_enabl_l ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; adder0     ; aj1         ; 16.000 ;        ;        ; 16.000 ;
+; adder1     ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; adder1     ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; adder4     ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; adder4     ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; adder5     ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; and_h      ; aj1         ; 16.000 ;        ;        ; 16.000 ;
+; and_h      ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; bb2        ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; be2        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; be2        ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; be2        ; aj1         ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; be2        ; ak2         ; 32.000 ; 32.000 ; 32.000 ; 32.000 ;
+; be2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; br2        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; br2        ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; br2        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; br2        ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; br2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; bu1        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; bu1        ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; bu1        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; bu1        ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; bu1        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; bv1        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; bv1        ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; bv1        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; bv1        ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; bv1        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; bv2        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; bv2        ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; bv2        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; bv2        ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; bv2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; c0         ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; c0         ; adder3      ; 15.000 ; 15.000 ; 15.000 ; 15.000 ;
+; c0         ; aj1         ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; c0         ; ak2         ; 32.000 ; 32.000 ; 32.000 ; 32.000 ;
+; c0         ; c2          ; 24.000 ;        ;        ; 24.000 ;
+; da2        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; da2        ; aj1         ; 32.000 ;        ;        ; 32.000 ;
+; da2        ; ak2         ;        ; 32.000 ; 32.000 ;        ;
+; da2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; da_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; da_enabl   ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; da_enabl   ; aj1         ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
+; da_enabl   ; ak2         ; 33.000 ; 32.000 ; 32.000 ; 33.000 ;
+; da_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; data2      ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; data2      ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; data2      ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; data2      ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; data3      ; adder2      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; data3      ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; data3      ; aj1         ; 32.000 ; 25.000 ; 25.000 ; 32.000 ;
+; data3      ; ak2         ; 33.000 ; 34.000 ; 34.000 ; 33.000 ;
+; data3      ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; data_enabl ; adder2      ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; data_enabl ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; data_enabl ; aj1         ; 32.000 ; 25.000 ; 25.000 ; 32.000 ;
+; data_enabl ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; data_enabl ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; io2        ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; io2        ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; io2        ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; io2        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; io3        ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; io3        ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; io3        ; aj1         ; 32.000 ; 24.000 ; 24.000 ; 32.000 ;
+; io3        ; ak2         ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
+; io3        ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; io_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; io_enabl   ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; io_enabl   ; aj1         ; 32.000 ; 24.000 ; 24.000 ; 32.000 ;
+; io_enabl   ; ak2         ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
+; io_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; ma_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; ma_enabl   ; aj1         ; 32.000 ;        ;        ; 32.000 ;
+; ma_enabl   ; ak2         ;        ; 32.000 ; 32.000 ;        ;
+; ma_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mem2       ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mem2       ; aj1         ; 32.000 ;        ;        ; 32.000 ;
+; mem2       ; ak2         ;        ; 32.000 ; 32.000 ;        ;
+; mem2       ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mem_enabl  ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mem_enabl  ; aj1         ; 32.000 ;        ;        ; 32.000 ;
+; mem_enabl  ; ak2         ;        ; 32.000 ; 32.000 ;        ;
+; mem_enabl  ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mq2_h      ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; mq2_h      ; aj1         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; mq2_h      ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; mq2_h      ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mq3_h      ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mq3_h      ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mq3_h      ; aj1         ; 32.000 ; 25.000 ; 25.000 ; 32.000 ;
+; mq3_h      ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; mq3_h      ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; mq_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mq_enabl   ; adder3      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; mq_enabl   ; aj1         ; 32.000 ; 25.000 ; 25.000 ; 32.000 ;
+; mq_enabl   ; ak2         ; 33.000 ; 33.000 ; 33.000 ; 33.000 ;
+; mq_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; no_shift   ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; no_shift   ; ak2         ;        ; 31.000 ; 31.000 ;        ;
+; pc_enabl   ; adder2      ; 24.000 ; 24.000 ; 24.000 ; 24.000 ;
+; pc_enabl   ; adder3      ; 24.000 ;        ;        ; 24.000 ;
+; pc_enabl   ; aj1         ; 32.000 ; 33.000 ; 33.000 ; 32.000 ;
+; pc_enabl   ; ak2         ; 33.000 ; 32.000 ; 32.000 ; 33.000 ;
+; pc_enabl   ; c2          ;        ; 24.000 ; 24.000 ;        ;
+; sc2        ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; sc2        ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sc2        ; ak2         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sc2        ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; sc3        ; adder2      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sc3        ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sc3        ; aj1         ; 32.000 ; 25.000 ; 25.000 ; 32.000 ;
+; sc3        ; ak2         ; 33.000 ; 34.000 ; 34.000 ; 33.000 ;
+; sc3        ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; sc_enabl   ; adder2      ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; sc_enabl   ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sc_enabl   ; aj1         ; 32.000 ; 25.000 ; 25.000 ; 32.000 ;
+; sc_enabl   ; ak2         ; 33.000 ; 34.000 ; 34.000 ; 33.000 ;
+; sc_enabl   ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; shift_l1   ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; shift_l1   ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; shift_l2   ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; shift_l2   ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; shift_r1   ; aj1         ; 15.000 ;        ;        ; 15.000 ;
+; shift_r1   ; ak2         ;        ; 15.000 ; 15.000 ;        ;
+; shift_r2   ; aj1         ; 16.000 ;        ;        ; 16.000 ;
+; shift_r2   ; ak2         ;        ; 23.000 ; 23.000 ;        ;
+; sr2        ; adder2      ; 24.000 ;        ;        ; 24.000 ;
+; sr2        ; aj1         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sr2        ; ak2         ; 34.000 ; 34.000 ; 34.000 ; 34.000 ;
+; sr2        ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; sr3        ; adder2      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sr3        ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sr3        ; aj1         ; 32.000 ; 25.000 ; 25.000 ; 32.000 ;
+; sr3        ; ak2         ; 33.000 ; 34.000 ; 34.000 ; 33.000 ;
+; sr3        ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; sr_enabl   ; adder2      ; 24.000 ; 25.000 ; 25.000 ; 24.000 ;
+; sr_enabl   ; adder3      ; 25.000 ; 25.000 ; 25.000 ; 25.000 ;
+; sr_enabl   ; aj1         ; 32.000 ; 25.000 ; 25.000 ; 32.000 ;
+; sr_enabl   ; ak2         ; 33.000 ; 34.000 ; 34.000 ; 33.000 ;
+; sr_enabl   ; c2          ;        ; 25.000 ; 25.000 ;        ;
+; tt_shift_l ; aj1         ;        ; 15.000 ; 15.000 ;        ;
+; tt_shift_l ; ak2         ; 31.000 ;        ;        ; 31.000 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; ak1        ; ak1      ; 35       ; 0        ; 0        ; 0        ;
+; an2        ; ak1      ; 35       ; 0        ; 0        ; 0        ;
+; ar1        ; ak1      ; 2        ; 0        ; 0        ; 0        ;
+; au1        ; ak1      ; 80       ; 0        ; 0        ; 0        ;
+; ak1        ; an2      ; 35       ; 0        ; 0        ; 0        ;
+; an2        ; an2      ; 35       ; 0        ; 0        ; 0        ;
+; ar1        ; an2      ; 2        ; 0        ; 0        ; 0        ;
+; au1        ; an2      ; 80       ; 0        ; 0        ; 0        ;
+; ak1        ; ar1      ; 32       ; 0        ; 0        ; 0        ;
+; an2        ; ar1      ; 32       ; 0        ; 0        ; 0        ;
+; ar1        ; ar1      ; 2        ; 0        ; 0        ; 0        ;
+; au1        ; ar1      ; 68       ; 0        ; 0        ; 0        ;
+; ak1        ; au1      ; 53       ; 0        ; 0        ; 0        ;
+; an2        ; au1      ; 53       ; 0        ; 0        ; 0        ;
+; ar1        ; au1      ; 2        ; 0        ; 0        ; 0        ;
+; au1        ; au1      ; 116      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; ak1        ; ak1      ; 35       ; 0        ; 0        ; 0        ;
+; an2        ; ak1      ; 35       ; 0        ; 0        ; 0        ;
+; ar1        ; ak1      ; 2        ; 0        ; 0        ; 0        ;
+; au1        ; ak1      ; 80       ; 0        ; 0        ; 0        ;
+; ak1        ; an2      ; 35       ; 0        ; 0        ; 0        ;
+; an2        ; an2      ; 35       ; 0        ; 0        ; 0        ;
+; ar1        ; an2      ; 2        ; 0        ; 0        ; 0        ;
+; au1        ; an2      ; 80       ; 0        ; 0        ; 0        ;
+; ak1        ; ar1      ; 32       ; 0        ; 0        ; 0        ;
+; an2        ; ar1      ; 32       ; 0        ; 0        ; 0        ;
+; ar1        ; ar1      ; 2        ; 0        ; 0        ; 0        ;
+; au1        ; ar1      ; 68       ; 0        ; 0        ; 0        ;
+; ak1        ; au1      ; 53       ; 0        ; 0        ; 0        ;
+; an2        ; au1      ; 53       ; 0        ; 0        ; 0        ;
+; ar1        ; au1      ; 2        ; 0        ; 0        ; 0        ;
+; au1        ; au1      ; 116      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 41    ; 41   ;
+; Unconstrained Input Port Paths  ; 473   ; 473  ;
+; Unconstrained Output Ports      ; 21    ; 21   ;
+; Unconstrained Output Port Paths ; 202   ; 202  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Aug 06 23:09:42 2026
+Info: Command: quartus_sta M220C -c M220C
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Warning (335095): TimeQuest Timing Analyzer does not support the analysis of latches as synchronous elements for the currently selected device family.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'M220C.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name au1 au1
+    Info (332105): create_clock -period 1.000 -name ar1 ar1
+    Info (332105): create_clock -period 1.000 -name ak1 ak1
+    Info (332105): create_clock -period 1.000 -name an2 an2
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -38.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):   -38.000       -76.000 au1 
+    Info (332119):   -38.000       -69.000 ak1 
+    Info (332119):   -38.000       -69.000 an2 
+    Info (332119):   -38.000       -69.000 ar1 
+Info (332146): Worst-case hold slack is 5.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     5.000         0.000 ak1 
+    Info (332119):     5.000         0.000 an2 
+    Info (332119):     5.000         0.000 ar1 
+    Info (332119):     5.000         0.000 au1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -5.500
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -5.500       -22.000 ak1 
+    Info (332119):    -5.500       -22.000 an2 
+    Info (332119):    -5.500       -22.000 ar1 
+    Info (332119):    -5.500       -22.000 au1 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4524 megabytes
+    Info: Processing ended: Thu Aug 06 23:09:43 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,57 @@
+%SIGNAL
+PIN   1 =  clk 
+PIN   2 =  d1 
+PIN   4 =  d2 
+PIN   6 =  d3 
+PIN   8 =  d4 
+PIN  14 =  da 
+PIN  17 =  db 
+PIN   3 =  e1 
+PIN   5 =  e2 
+PIN   7 =  e3 
+PIN   9 =  e4 
+PIN  12 =  o1 
+PIN  15 =  qa 
+PIN  18 =  qb 
+PIN  16 =  qba 
+PIN  19 =  qbb 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!o1 =>
+    d1 & e1
+  # d2 & e2
+  # d3 & e3
+  # d4 & e4
+
+qa.d  =>
+    da
+
+qb.d  =>
+    db
+
+!qba =>
+    qa
+
+!qbb =>
+    qb
+
+da.oe  =>
+    0 
+
+db.oe  =>
+    0 
+
+o1.oe  =>
+    1 
+
+qba.oe  =>
+    1 
+
+qbb.oe  =>
+    1 
+
+%END

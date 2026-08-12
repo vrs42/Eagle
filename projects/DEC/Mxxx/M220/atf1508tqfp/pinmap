@@ -1,0 +1,44 @@
+#!/usr/bin/perl
+
+#
+# Read the pinlists and output a pin mapping.
+#
+
+@todo = <../M[1246]??/M????*.sch>;
+
+%outputs = ();
+
+#U$1      AA1      1          io       AND
+#         AA2      1          io       VCC
+open(INPUT, "pins.txt") || die "pins.txt: $!";
+while (<INPUT>) {
+  chop; s/\r//g;
+  die "input format: $_" unless /^.* +([^ ]+) +[^ ]+ +[^ ]+ +([^ ]+)$/;
+  ($pin, $signal) = ($1, $2);
+  $signal{$pin} = $signal;
+}
+
+#E1       1        BV2
+#         10       BS1
+open(INPUT, "double100tqfp.pins") || die "double100tqfp.pins: $!";
+while (<INPUT>) {
+  chop; s/\r//g;
+  next if /unconnected/;
+  die "input format: $_" unless /^.* +([^ ]+) +([^ ]+)$/;
+  ($pin, $edge) = ($1, $2);
+  $edge{$pin} = $edge;
+}
+
+@pins = sort keys %edge;
+#warn "@pins";
+foreach $pin (@pins) {
+  $edge = $edge{$pin};
+  $signal = $signal{$edge};
+  next unless defined $signal;
+  next if $signal eq "GND";
+  next if $signal eq "VCC";
+  $signal =~ y/A-Z/a-z/;
+  # set_location_assignment PIN_44 -to ac2_h
+  print "set_location_assignment PIN_$pin -to $signal\n" if $signal;
+}
+exit 0;

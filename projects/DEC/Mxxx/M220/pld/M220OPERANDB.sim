@@ -1,0 +1,54 @@
+%SIGNAL
+PIN   8 =  d1a 
+PIN  14 =  d1b 
+PIN   9 =  d2a 
+PIN  15 =  d2b 
+PIN  11 =  d3a 
+PIN  16 =  d3b 
+PIN  13 =  d4a 
+PIN  17 =  d4b 
+PIN   2 =  e1 
+PIN   3 =  e2 
+PIN   4 =  e3 
+PIN   5 =  e4 
+PIN   6 =  e5 
+PIN   7 =  e6 
+PIN  18 =  oa 
+PIN  19 =  ob 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!oa =>
+    d1a & e1
+  # d2a & e2
+  # d3a & e3
+  # d4a & e4
+
+!ob =>
+    d2b & e1
+  # d2b & e2
+  # d3b & e5
+  # d4b & e6
+
+d2b.oe  =>
+    0 
+
+d3b.oe  =>
+    0 
+
+d4a.oe  =>
+    0 
+
+d4b.oe  =>
+    0 
+
+oa.oe  =>
+    1 
+
+ob.oe  =>
+    1 
+
+%END

@@ -1,0 +1,181 @@
+{COMPONENT C:\USERS\VINCE\DOCUMENTS\WEBSVN\TRUNK\EAGLE\PROJECTS\DEC\MXXX\M220\PLD\M220OPERANDB.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Thu Mar 07 14:55:26 2013 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P E1 {Pt "INPUT"}{Lq 0}{Ploc 100 280}}
+   {P E2 {Pt "INPUT"}{Lq 0}{Ploc 100 260}}
+   {P E3 {Pt "INPUT"}{Lq 0}{Ploc 100 240}}
+   {P E4 {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
+   {P E5 {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P E6 {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P D1A {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P D2A {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P D3A {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P D4A {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P D1B {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P D2B {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P D3B {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P D4B {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P OA {Pt "I/O"}{Lq 0}{Ploc 280 20}}
+   {P OB {Pt "I/O"}{Lq 0}{Ploc 280 40}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 190 310}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 290}
+   {Pnl 120 270}
+   {Pnl 120 250}
+   {Pnl 120 230}
+   {Pnl 120 210}
+   {Pnl 120 190}
+   {Pnl 120 170}
+   {Pnl 120 150}
+   {Pnl 120 130}
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+   {Pnl 260 30}
+   {Pnl 260 50}
+
+   {Sd A 2 3 4 5 6 7 8 9 11 13 14 15 16 17 18 19}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 300 250 0}
+   {L 130 280 100 280}
+   {L 130 260 100 260}
+   {L 130 240 100 240}
+   {L 130 220 100 220}
+   {L 130 200 100 200}
+   {L 130 180 100 180}
+   {L 130 160 100 160}
+   {L 130 140 100 140}
+   {L 130 120 100 120}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   {L 250 20 280 20}
+   {L 250 40 280 40}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "E1" 140 280}
+   {T "E2" 140 260}
+   {T "E3" 140 240}
+   {T "E4" 140 220}
+   {T "E5" 140 200}
+   {T "E6" 140 180}
+   {T "D1A" 140 160}
+   {T "D2A" 140 140}
+   {T "D3A" 140 120}
+   {T "D4A" 140 100}
+   {T "D1B" 140 80}
+   {T "D2B" 140 60}
+   {T "D3B" 140 40}
+   {T "D4B" 140 20}
+   [Tj "RC"]
+   {T "OA" 240 20}
+   {T "OB" 240 40}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "G16V8MA" 190 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\USERS\VINCE\DOCUMENTS\WEBSVN\TRUNK\EAGLE\PROJECTS\DEC\MXXX\M220\PLD\M220OPERANDB 190 300}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N E1
+   }
+   {N E2
+   }
+   {N E3
+   }
+   {N E4
+   }
+   {N E5
+   }
+   {N E6
+   }
+   {N D1A
+   }
+   {N D2A
+   }
+   {N D3A
+   }
+   {N D4A
+   }
+   {N D1B
+   }
+   {N D2B
+   }
+   {N D3B
+   }
+   {N D4B
+   }
+   {N OA
+   }
+   {N OB
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}

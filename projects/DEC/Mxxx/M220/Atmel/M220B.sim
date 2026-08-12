@@ -1,0 +1,693 @@
+%SIGNAL
+PIN  62 =  ab2 
+PIN  45 =  ac2_h 
+PIN  44 =  ac2_l 
+PIN  46 =  ac3_h 
+PIN  48 =  ac3_l 
+PIN  33 =  ac_enabl 
+PIN  30 =  ac_low_enabl 
+PIN   1 =  adder0 
+PIN  84 =  adder1 
+PIN  80 =  adder2 
+PIN  76 =  adder3 
+PIN  75 =  adder4 
+PIN  73 =  adder5 
+PIN  70 =  aj1 
+PIN  68 =  ak1 
+PIN  69 =  ak2 
+PIN  61 =  an2 
+PIN   2 =  and_h 
+PIN  55 =  ar1 
+PIN  52 =  as1 
+PIN  54 =  as2 
+PIN  51 =  at2 
+PIN  49 =  au1 
+PIN  50 =  au2 
+PIN  71 =  bb2 
+PIN  37 =  be2 
+PIN  15 =  br2 
+PIN   6 =  bu1 
+PIN   4 =  bv1 
+PIN   5 =  bv2 
+PIN  29 =  c0 
+PIN  28 =  c2 
+PIN  10 =  da2 
+PIN   9 =  da_enabl 
+PIN  22 =  data2 
+PIN  17 =  data3 
+PIN  24 =  data_enabl 
+PIN  27 =  io2 
+PIN  21 =  io3 
+PIN  25 =  io_enabl 
+PIN  64 =  ma2_h 
+PIN  63 =  ma2_l 
+PIN  67 =  ma3_h 
+PIN  65 =  ma3_l 
+PIN  16 =  ma_enabl 
+PIN   0 =  mb2_h 
+PIN   0 =  mb3_h 
+PIN  12 =  mem2 
+PIN   8 =  mem_enabl 
+PIN  31 =  mq2_h 
+PIN  20 =  mq3_h 
+PIN  34 =  mq_enabl 
+PIN   0 =  n_t_12x 
+PIN   0 =  n_t_14x 
+PIN   0 =  n_t_5x 
+PIN   0 =  n_t_8x 
+PIN  79 =  no_shift 
+PIN  57 =  pc2_h 
+PIN  56 =  pc2_l 
+PIN  60 =  pc3_h 
+PIN  58 =  pc3_l 
+PIN  11 =  pc_enabl 
+PIN  39 =  sc2 
+PIN  18 =  sc3 
+PIN  35 =  sc_enabl 
+PIN  77 =  shift_l1 
+PIN  74 =  shift_l2 
+PIN  83 =  shift_r1 
+PIN  81 =  shift_r2 
+PIN  36 =  sr2 
+PIN  40 =  sr3 
+PIN  41 =  sr_enabl 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!ac2_h.d  =>
+    !aj1
+
+ac2_h.ck  =>
+    au1
+
+!ac2_l =>
+    ac2_h
+
+!ac3_h.d  =>
+    !ak2
+
+ac3_h.ck  =>
+    au1
+
+!ac3_l =>
+    ac3_h
+
+!adder2 =>
+    !n_t_12x & !n_t_14x & !n_t_5x & !n_t_8x
+  # !c0 & !n_t_12x & !n_t_5x & !n_t_8x
+  # n_t_12x & !n_t_14x & n_t_5x & !n_t_8x
+  # !c0 & n_t_12x & n_t_5x & !n_t_8x
+  # n_t_12x & n_t_14x & !n_t_5x & n_t_8x
+  # c0 & n_t_12x & !n_t_5x & n_t_8x
+  # !n_t_12x & n_t_14x & n_t_5x & n_t_8x
+  # c0 & !n_t_12x & n_t_5x & n_t_8x
+  # !c0 & !n_t_12x & !n_t_14x & !n_t_5x
+  # c0 & n_t_12x & n_t_14x & !n_t_5x
+  # !c0 & n_t_12x & !n_t_14x & n_t_5x
+  # c0 & !n_t_12x & n_t_14x & n_t_5x
+
+!adder3 =>
+    !c0 & !n_t_14x & !n_t_8x
+  # c0 & n_t_14x & !n_t_8x
+  # c0 & !n_t_14x & n_t_8x
+  # !c0 & n_t_14x & n_t_8x
+
+aj1 =>
+    !bb2 & mb2_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & mb2_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # !and_h & !bb2 & !no_shift & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !and_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder2 & !bb2 & mb2_h & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !adder2 & mb2_h & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder2 & !and_h & !bb2 & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !adder2 & !and_h & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder3 & !bb2 & mb2_h & !no_shift & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !adder3 & mb2_h & !no_shift & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder3 & !and_h & !bb2 & !no_shift & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !adder3 & !and_h & !no_shift & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder2 & !adder3 & !bb2 & mb2_h & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !adder2 & !adder3 & mb2_h & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder2 & !adder3 & !and_h & !bb2 & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !adder2 & !adder3 & !and_h & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder4 & !bb2 & mb2_h & !no_shift & !shift_l1 & !shift_r1 & !shift_r2
+  # ab2 & !adder4 & mb2_h & !no_shift & !shift_l1 & !shift_r1 & !shift_r2
+  # !adder4 & !and_h & !bb2 & !no_shift & !shift_l1 & !shift_r1 & !shift_r2
+  # ab2 & !adder4 & !and_h & !no_shift & !shift_l1 & !shift_r1 & !shift_r2
+  # !adder2 & !adder4 & !bb2 & mb2_h & !shift_l1 & !shift_r1 & !shift_r2
+  # ab2 & !adder2 & !adder4 & mb2_h & !shift_l1 & !shift_r1 & !shift_r2
+  # !adder2 & !adder4 & !and_h & !bb2 & !shift_l1 & !shift_r1 & !shift_r2
+  # ab2 & !adder2 & !adder4 & !and_h & !shift_l1 & !shift_r1 & !shift_r2
+  # !adder3 & !adder4 & !bb2 & mb2_h & !no_shift & !shift_r1 & !shift_r2
+  # ab2 & !adder3 & !adder4 & mb2_h & !no_shift & !shift_r1 & !shift_r2
+  # !adder3 & !adder4 & !and_h & !bb2 & !no_shift & !shift_r1 & !shift_r2
+  # ab2 & !adder3 & !adder4 & !and_h & !no_shift & !shift_r1 & !shift_r2
+  # !adder2 & !adder3 & !adder4 & !bb2 & mb2_h & !shift_r1 & !shift_r2
+  # ab2 & !adder2 & !adder3 & !adder4 & mb2_h & !shift_r1 & !shift_r2
+  # !adder2 & !adder3 & !adder4 & !and_h & !bb2 & !shift_r1 & !shift_r2
+  # ab2 & !adder2 & !adder3 & !adder4 & !and_h & !shift_r1 & !shift_r2
+  # !adder1 & !bb2 & mb2_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r2
+  # ab2 & !adder1 & mb2_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r2
+  # !adder1 & !and_h & !bb2 & !no_shift & !shift_l1 & !shift_l2 & !shift_r2
+  # ab2 & !adder1 & !and_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r2
+  # !adder1 & !adder2 & !bb2 & mb2_h & !shift_l1 & !shift_l2 & !shift_r2
+  # ab2 & !adder1 & !adder2 & mb2_h & !shift_l1 & !shift_l2 & !shift_r2
+  # !adder1 & !adder2 & !and_h & !bb2 & !shift_l1 & !shift_l2 & !shift_r2
+  # ab2 & !adder1 & !adder2 & !and_h & !shift_l1 & !shift_l2 & !shift_r2
+  # !adder1 & !adder3 & !bb2 & mb2_h & !no_shift & !shift_l2 & !shift_r2
+  # ab2 & !adder1 & !adder3 & mb2_h & !no_shift & !shift_l2 & !shift_r2
+  # !adder1 & !adder3 & !and_h & !bb2 & !no_shift & !shift_l2 & !shift_r2
+  # ab2 & !adder1 & !adder3 & !and_h & !no_shift & !shift_l2 & !shift_r2
+  # !adder1 & !adder2 & !adder3 & !bb2 & mb2_h & !shift_l2 & !shift_r2
+  # ab2 & !adder1 & !adder2 & !adder3 & mb2_h & !shift_l2 & !shift_r2
+  # !adder1 & !adder2 & !adder3 & !and_h & !bb2 & !shift_l2 & !shift_r2
+  # ab2 & !adder1 & !adder2 & !adder3 & !and_h & !shift_l2 & !shift_r2
+  # !adder1 & !adder4 & !bb2 & mb2_h & !no_shift & !shift_l1 & !shift_r2
+  # ab2 & !adder1 & !adder4 & mb2_h & !no_shift & !shift_l1 & !shift_r2
+  # !adder1 & !adder4 & !and_h & !bb2 & !no_shift & !shift_l1 & !shift_r2
+  # ab2 & !adder1 & !adder4 & !and_h & !no_shift & !shift_l1 & !shift_r2
+  # !adder1 & !adder2 & !adder4 & !bb2 & mb2_h & !shift_l1 & !shift_r2
+  # ab2 & !adder1 & !adder2 & !adder4 & mb2_h & !shift_l1 & !shift_r2
+  # !adder1 & !adder2 & !adder4 & !and_h & !bb2 & !shift_l1 & !shift_r2
+  # ab2 & !adder1 & !adder2 & !adder4 & !and_h & !shift_l1 & !shift_r2
+  # !adder1 & !adder3 & !adder4 & !bb2 & mb2_h & !no_shift & !shift_r2
+  # ab2 & !adder1 & !adder3 & !adder4 & mb2_h & !no_shift & !shift_r2
+  # !adder1 & !adder3 & !adder4 & !and_h & !bb2 & !no_shift & !shift_r2
+  # ab2 & !adder1 & !adder3 & !adder4 & !and_h & !no_shift & !shift_r2
+  # !adder1 & !adder2 & !adder3 & !adder4 & !bb2 & mb2_h & !shift_r2
+  # ab2 & !adder1 & !adder2 & !adder3 & !adder4 & mb2_h & !shift_r2
+  # !adder1 & !adder2 & !adder3 & !adder4 & !and_h & !bb2 & !shift_r2
+  # ab2 & !adder1 & !adder2 & !adder3 & !adder4 & !and_h & !shift_r2
+  # !adder0 & !bb2 & mb2_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1
+  # ab2 & !adder0 & mb2_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1
+  # !adder0 & !and_h & !bb2 & !no_shift & !shift_l1 & !shift_l2 & !shift_r1
+  # ab2 & !adder0 & !and_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1
+  # !adder0 & !adder2 & !bb2 & mb2_h & !shift_l1 & !shift_l2 & !shift_r1
+  # ab2 & !adder0 & !adder2 & mb2_h & !shift_l1 & !shift_l2 & !shift_r1
+  # !adder0 & !adder2 & !and_h & !bb2 & !shift_l1 & !shift_l2 & !shift_r1
+  # ab2 & !adder0 & !adder2 & !and_h & !shift_l1 & !shift_l2 & !shift_r1
+  # !adder0 & !adder3 & !bb2 & mb2_h & !no_shift & !shift_l2 & !shift_r1
+  # ab2 & !adder0 & !adder3 & mb2_h & !no_shift & !shift_l2 & !shift_r1
+  # !adder0 & !adder3 & !and_h & !bb2 & !no_shift & !shift_l2 & !shift_r1
+  # ab2 & !adder0 & !adder3 & !and_h & !no_shift & !shift_l2 & !shift_r1
+  # !adder0 & !adder2 & !adder3 & !bb2 & mb2_h & !shift_l2 & !shift_r1
+  # ab2 & !adder0 & !adder2 & !adder3 & mb2_h & !shift_l2 & !shift_r1
+  # !adder0 & !adder2 & !adder3 & !and_h & !bb2 & !shift_l2 & !shift_r1
+  # ab2 & !adder0 & !adder2 & !adder3 & !and_h & !shift_l2 & !shift_r1
+  # !adder0 & !adder4 & !bb2 & mb2_h & !no_shift & !shift_l1 & !shift_r1
+  # ab2 & !adder0 & !adder4 & mb2_h & !no_shift & !shift_l1 & !shift_r1
+  # !adder0 & !adder4 & !and_h & !bb2 & !no_shift & !shift_l1 & !shift_r1
+  # ab2 & !adder0 & !adder4 & !and_h & !no_shift & !shift_l1 & !shift_r1
+  # !adder0 & !adder2 & !adder4 & !bb2 & mb2_h & !shift_l1 & !shift_r1
+  # ab2 & !adder0 & !adder2 & !adder4 & mb2_h & !shift_l1 & !shift_r1
+  # !adder0 & !adder2 & !adder4 & !and_h & !bb2 & !shift_l1 & !shift_r1
+  # ab2 & !adder0 & !adder2 & !adder4 & !and_h & !shift_l1 & !shift_r1
+  # !adder0 & !adder3 & !adder4 & !bb2 & mb2_h & !no_shift & !shift_r1
+  # ab2 & !adder0 & !adder3 & !adder4 & mb2_h & !no_shift & !shift_r1
+  # !adder0 & !adder3 & !adder4 & !and_h & !bb2 & !no_shift & !shift_r1
+  # ab2 & !adder0 & !adder3 & !adder4 & !and_h & !no_shift & !shift_r1
+  # !adder0 & !adder2 & !adder3 & !adder4 & !bb2 & mb2_h & !shift_r1
+  # ab2 & !adder0 & !adder2 & !adder3 & !adder4 & mb2_h & !shift_r1
+  # !adder0 & !adder2 & !adder3 & !adder4 & !and_h & !bb2 & !shift_r1
+  # ab2 & !adder0 & !adder2 & !adder3 & !adder4 & !and_h & !shift_r1
+  # !adder0 & !adder1 & !bb2 & mb2_h & !no_shift & !shift_l1 & !shift_l2
+  # ab2 & !adder0 & !adder1 & mb2_h & !no_shift & !shift_l1 & !shift_l2
+  # !adder0 & !adder1 & !and_h & !bb2 & !no_shift & !shift_l1 & !shift_l2
+  # ab2 & !adder0 & !adder1 & !and_h & !no_shift & !shift_l1 & !shift_l2
+  # !adder0 & !adder1 & !adder2 & !bb2 & mb2_h & !shift_l1 & !shift_l2
+  # ab2 & !adder0 & !adder1 & !adder2 & mb2_h & !shift_l1 & !shift_l2
+  # !adder0 & !adder1 & !adder2 & !and_h & !bb2 & !shift_l1 & !shift_l2
+  # ab2 & !adder0 & !adder1 & !adder2 & !and_h & !shift_l1 & !shift_l2
+  # !adder0 & !adder1 & !adder3 & !bb2 & mb2_h & !no_shift & !shift_l2
+  # ab2 & !adder0 & !adder1 & !adder3 & mb2_h & !no_shift & !shift_l2
+  # !adder0 & !adder1 & !adder3 & !and_h & !bb2 & !no_shift & !shift_l2
+  # ab2 & !adder0 & !adder1 & !adder3 & !and_h & !no_shift & !shift_l2
+  # !adder0 & !adder1 & !adder2 & !adder3 & !bb2 & mb2_h & !shift_l2
+  # ab2 & !adder0 & !adder1 & !adder2 & !adder3 & mb2_h & !shift_l2
+  # !adder0 & !adder1 & !adder2 & !adder3 & !and_h & !bb2 & !shift_l2
+  # ab2 & !adder0 & !adder1 & !adder2 & !adder3 & !and_h & !shift_l2
+  # !adder0 & !adder1 & !adder4 & !bb2 & mb2_h & !no_shift & !shift_l1
+  # ab2 & !adder0 & !adder1 & !adder4 & mb2_h & !no_shift & !shift_l1
+  # !adder0 & !adder1 & !adder4 & !and_h & !bb2 & !no_shift & !shift_l1
+  # ab2 & !adder0 & !adder1 & !adder4 & !and_h & !no_shift & !shift_l1
+  # !adder0 & !adder1 & !adder2 & !adder4 & !bb2 & mb2_h & !shift_l1
+  # ab2 & !adder0 & !adder1 & !adder2 & !adder4 & mb2_h & !shift_l1
+  # !adder0 & !adder1 & !adder2 & !adder4 & !and_h & !bb2 & !shift_l1
+  # ab2 & !adder0 & !adder1 & !adder2 & !adder4 & !and_h & !shift_l1
+  # !adder0 & !adder1 & !adder3 & !adder4 & !bb2 & mb2_h & !no_shift
+  # ab2 & !adder0 & !adder1 & !adder3 & !adder4 & mb2_h & !no_shift
+  # !adder0 & !adder1 & !adder3 & !adder4 & !and_h & !bb2 & !no_shift
+  # ab2 & !adder0 & !adder1 & !adder3 & !adder4 & !and_h & !no_shift
+  # !adder0 & !adder1 & !adder2 & !adder3 & !adder4 & !bb2 & mb2_h
+  # ab2 & !adder0 & !adder1 & !adder2 & !adder3 & !adder4 & mb2_h
+  # !adder0 & !adder1 & !adder2 & !adder3 & !adder4 & !and_h & !bb2
+  # ab2 & !adder0 & !adder1 & !adder2 & !adder3 & !adder4 & !and_h
+
+ak2 =>
+    ab2 & mb3_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !and_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !adder4 & mb3_h & !no_shift & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !adder4 & !and_h & !no_shift & !shift_l2 & !shift_r1 & !shift_r2
+  # ab2 & !adder5 & mb3_h & !no_shift & !shift_l1 & !shift_r1 & !shift_r2
+  # ab2 & !adder5 & !and_h & !no_shift & !shift_l1 & !shift_r1 & !shift_r2
+  # ab2 & !adder4 & !adder5 & mb3_h & !no_shift & !shift_r1 & !shift_r2
+  # ab2 & !adder4 & !adder5 & !and_h & !no_shift & !shift_r1 & !shift_r2
+  # ab2 & !adder2 & mb3_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r2
+  # ab2 & !adder2 & !and_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r2
+  # ab2 & !adder2 & !adder4 & mb3_h & !no_shift & !shift_l2 & !shift_r2
+  # ab2 & !adder2 & !adder4 & !and_h & !no_shift & !shift_l2 & !shift_r2
+  # ab2 & !adder2 & !adder5 & mb3_h & !no_shift & !shift_l1 & !shift_r2
+  # ab2 & !adder2 & !adder5 & !and_h & !no_shift & !shift_l1 & !shift_r2
+  # ab2 & !adder2 & !adder4 & !adder5 & mb3_h & !no_shift & !shift_r2
+  # ab2 & !adder2 & !adder4 & !adder5 & !and_h & !no_shift & !shift_r2
+  # ab2 & !adder1 & mb3_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1
+  # ab2 & !adder1 & !and_h & !no_shift & !shift_l1 & !shift_l2 & !shift_r1
+  # ab2 & !adder1 & !adder4 & mb3_h & !no_shift & !shift_l2 & !shift_r1
+  # ab2 & !adder1 & !adder4 & !and_h & !no_shift & !shift_l2 & !shift_r1
+  # ab2 & !adder1 & !adder5 & mb3_h & !no_shift & !shift_l1 & !shift_r1
+  # ab2 & !adder1 & !adder5 & !and_h & !no_shift & !shift_l1 & !shift_r1
+  # ab2 & !adder1 & !adder4 & !adder5 & mb3_h & !no_shift & !shift_r1
+  # ab2 & !adder1 & !adder4 & !adder5 & !and_h & !no_shift & !shift_r1
+  # ab2 & !adder1 & !adder2 & mb3_h & !no_shift & !shift_l1 & !shift_l2
+  # ab2 & !adder1 & !adder2 & !and_h & !no_shift & !shift_l1 & !shift_l2
+  # ab2 & !adder1 & !adder2 & !adder4 & mb3_h & !no_shift & !shift_l2
+  # ab2 & !adder1 & !adder2 & !adder4 & !and_h & !no_shift & !shift_l2
+  # ab2 & !adder1 & !adder2 & !adder5 & mb3_h & !no_shift & !shift_l1
+  # ab2 & !adder1 & !adder2 & !adder5 & !and_h & !no_shift & !shift_l1
+  # ab2 & !adder1 & !adder2 & !adder4 & !adder5 & mb3_h & !no_shift
+  # ab2 & !adder1 & !adder2 & !adder4 & !adder5 & !and_h & !no_shift
+  # !adder3 & mb3_h & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder3 & !and_h & !shift_l1 & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder3 & !adder4 & mb3_h & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder3 & !adder4 & !and_h & !shift_l2 & !shift_r1 & !shift_r2
+  # !adder3 & !adder5 & mb3_h & !shift_l1 & !shift_r1 & !shift_r2
+  # !adder3 & !adder5 & !and_h & !shift_l1 & !shift_r1 & !shift_r2
+  # !adder3 & !adder4 & !adder5 & mb3_h & !shift_r1 & !shift_r2
+  # !adder3 & !adder4 & !adder5 & !and_h & !shift_r1 & !shift_r2
+  # !adder2 & !adder3 & mb3_h & !shift_l1 & !shift_l2 & !shift_r2
+  # !adder2 & !adder3 & !and_h & !shift_l1 & !shift_l2 & !shift_r2
+  # !adder2 & !adder3 & !adder4 & mb3_h & !shift_l2 & !shift_r2
+  # !adder2 & !adder3 & !adder4 & !and_h & !shift_l2 & !shift_r2
+  # !adder2 & !adder3 & !adder5 & mb3_h & !shift_l1 & !shift_r2
+  # !adder2 & !adder3 & !adder5 & !and_h & !shift_l1 & !shift_r2
+  # !adder2 & !adder3 & !adder4 & !adder5 & mb3_h & !shift_r2
+  # !adder2 & !adder3 & !adder4 & !adder5 & !and_h & !shift_r2
+  # !adder1 & !adder3 & mb3_h & !shift_l1 & !shift_l2 & !shift_r1
+  # !adder1 & !adder3 & !and_h & !shift_l1 & !shift_l2 & !shift_r1
+  # !adder1 & !adder3 & !adder4 & mb3_h & !shift_l2 & !shift_r1
+  # !adder1 & !adder3 & !adder4 & !and_h & !shift_l2 & !shift_r1
+  # !adder1 & !adder3 & !adder5 & mb3_h & !shift_l1 & !shift_r1
+  # !adder1 & !adder3 & !adder5 & !and_h & !shift_l1 & !shift_r1
+  # !adder1 & !adder3 & !adder4 & !adder5 & mb3_h & !shift_r1
+  # !adder1 & !adder3 & !adder4 & !adder5 & !and_h & !shift_r1
+  # !adder1 & !adder2 & !adder3 & mb3_h & !shift_l1 & !shift_l2
+  # !adder1 & !adder2 & !adder3 & !and_h & !shift_l1 & !shift_l2
+  # !adder1 & !adder2 & !adder3 & !adder4 & mb3_h & !shift_l2
+  # !adder1 & !adder2 & !adder3 & !adder4 & !and_h & !shift_l2
+  # !adder1 & !adder2 & !adder3 & !adder5 & mb3_h & !shift_l1
+  # !adder1 & !adder2 & !adder3 & !adder5 & !and_h & !shift_l1
+  # !adder1 & !adder2 & !adder3 & !adder4 & !adder5 & mb3_h
+  # !adder1 & !adder2 & !adder3 & !adder4 & !adder5 & !and_h
+
+!as1 =>
+    mb3_h
+
+!as2 =>
+    !mb3_h
+
+!at2 =>
+    !mb2_h
+
+!au2 =>
+    mb2_h
+
+!c2 =>
+    !n_t_14x & !n_t_5x & !n_t_8x
+  # !c0 & !n_t_5x & !n_t_8x
+  # !n_t_12x & !n_t_14x & !n_t_8x
+  # !c0 & !n_t_12x & !n_t_8x
+  # !c0 & !n_t_14x & !n_t_5x
+  # !c0 & !n_t_12x & !n_t_14x
+  # !n_t_12x & !n_t_5x
+
+gdollar_0 =>
+    c0 & n_t_8x
+  # n_t_14x & n_t_8x
+  # c0 & n_t_14x
+
+!ma2_h.d  =>
+    !aj1
+
+ma2_h.ck  =>
+    ak1
+
+!ma2_l =>
+    ma2_h
+
+!ma3_h.d  =>
+    !ak2
+
+ma3_h.ck  =>
+    ak1
+
+!ma3_l =>
+    ma3_h
+
+!mb2_h.d  =>
+    !aj1
+
+mb2_h.ck  =>
+    ar1
+
+mb2_l =>
+    !mb2_h
+
+!mb3_h.d  =>
+    !ak2
+
+mb3_h.ck  =>
+    ar1
+
+mb3_l =>
+    !mb3_h
+
+n_t_12x =>
+    !da_enabl & !ma_enabl & !mem_enabl & !pc_enabl
+  # !da2 & !ma_enabl & !mem_enabl & !pc_enabl
+  # !da_enabl & !ma2_h & !mem_enabl & !pc_enabl
+  # !da2 & !ma2_h & !mem_enabl & !pc_enabl
+  # !da_enabl & !ma_enabl & !mem2 & !pc_enabl
+  # !da2 & !ma_enabl & !mem2 & !pc_enabl
+  # !da_enabl & !ma2_h & !mem2 & !pc_enabl
+  # !da2 & !ma2_h & !mem2 & !pc_enabl
+  # !da_enabl & !ma_enabl & !mem_enabl & !pc2_h
+  # !da2 & !ma_enabl & !mem_enabl & !pc2_h
+  # !da_enabl & !ma2_h & !mem_enabl & !pc2_h
+  # !da2 & !ma2_h & !mem_enabl & !pc2_h
+  # !da_enabl & !ma_enabl & !mem2 & !pc2_h
+  # !da2 & !ma_enabl & !mem2 & !pc2_h
+  # !da_enabl & !ma2_h & !mem2 & !pc2_h
+  # !da2 & !ma2_h & !mem2 & !pc2_h
+
+n_t_14x =>
+    !bv2 & !da_enabl & !ma3_h & !pc_enabl
+  # !bv1 & !da_enabl & !ma3_h & !pc_enabl
+  # !bu1 & !bv2 & !ma3_h & !pc_enabl
+  # !bu1 & !bv1 & !ma3_h & !pc_enabl
+  # !br2 & !bv2 & !da_enabl & !pc_enabl
+  # !br2 & !bv1 & !da_enabl & !pc_enabl
+  # !br2 & !bu1 & !bv2 & !pc_enabl
+  # !br2 & !bu1 & !bv1 & !pc_enabl
+  # !bv2 & !da_enabl & !ma3_h & !pc3_h
+  # !bv1 & !da_enabl & !ma3_h & !pc3_h
+  # !bu1 & !bv2 & !ma3_h & !pc3_h
+  # !bu1 & !bv1 & !ma3_h & !pc3_h
+  # !br2 & !bv2 & !da_enabl & !pc3_h
+  # !br2 & !bv1 & !da_enabl & !pc3_h
+  # !br2 & !bu1 & !bv2 & !pc3_h
+  # !br2 & !bu1 & !bv1 & !pc3_h
+
+n_t_5x =>
+    !ac_enabl & !ac_low_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_l & !ac_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac2_l & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data2 & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data2 & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_l & !ac_enabl & !data2 & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac2_l & !data2 & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io2 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io2 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_l & !ac_enabl & !data_enabl & !io2 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac2_l & !data_enabl & !io2 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data2 & !io2 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data2 & !io2 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_l & !ac_enabl & !data2 & !io2 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac2_l & !data2 & !io2 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io_enabl & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io_enabl & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_l & !ac_enabl & !data_enabl & !io_enabl & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac2_l & !data_enabl & !io_enabl & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data2 & !io_enabl & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data2 & !io_enabl & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_l & !ac_enabl & !data2 & !io_enabl & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac2_l & !data2 & !io_enabl & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io2 & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io2 & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_l & !ac_enabl & !data_enabl & !io2 & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac2_l & !data_enabl & !io2 & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data2 & !io2 & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data2 & !io2 & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_l & !ac_enabl & !data2 & !io2 & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac2_h & !ac2_l & !data2 & !io2 & !mq2_h & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_l & !ac_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_h & !ac2_l & !data_enabl & !io_enabl & !mq_enabl & !sc2 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data2 & !io_enabl & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data2 & !io_enabl & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_l & !ac_enabl & !data2 & !io_enabl & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_h & !ac2_l & !data2 & !io_enabl & !mq_enabl & !sc2 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io2 & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io2 & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_l & !ac_enabl & !data_enabl & !io2 & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_h & !ac2_l & !data_enabl & !io2 & !mq_enabl & !sc2 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data2 & !io2 & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data2 & !io2 & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_l & !ac_enabl & !data2 & !io2 & !mq_enabl & !sc2 & !sr_enabl
+  # !ac2_h & !ac2_l & !data2 & !io2 & !mq_enabl & !sc2 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io_enabl & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io_enabl & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_l & !ac_enabl & !data_enabl & !io_enabl & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_h & !ac2_l & !data_enabl & !io_enabl & !mq2_h & !sc2 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data2 & !io_enabl & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data2 & !io_enabl & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_l & !ac_enabl & !data2 & !io_enabl & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_h & !ac2_l & !data2 & !io_enabl & !mq2_h & !sc2 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io2 & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io2 & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_l & !ac_enabl & !data_enabl & !io2 & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_h & !ac2_l & !data_enabl & !io2 & !mq2_h & !sc2 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data2 & !io2 & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_h & !ac_low_enabl & !data2 & !io2 & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_l & !ac_enabl & !data2 & !io2 & !mq2_h & !sc2 & !sr_enabl
+  # !ac2_h & !ac2_l & !data2 & !io2 & !mq2_h & !sc2 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_l & !ac_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_h & !ac2_l & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr2
+  # !ac_enabl & !ac_low_enabl & !data2 & !io_enabl & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_h & !ac_low_enabl & !data2 & !io_enabl & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_l & !ac_enabl & !data2 & !io_enabl & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_h & !ac2_l & !data2 & !io_enabl & !mq_enabl & !sc_enabl & !sr2
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io2 & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io2 & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_l & !ac_enabl & !data_enabl & !io2 & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_h & !ac2_l & !data_enabl & !io2 & !mq_enabl & !sc_enabl & !sr2
+  # !ac_enabl & !ac_low_enabl & !data2 & !io2 & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_h & !ac_low_enabl & !data2 & !io2 & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_l & !ac_enabl & !data2 & !io2 & !mq_enabl & !sc_enabl & !sr2
+  # !ac2_h & !ac2_l & !data2 & !io2 & !mq_enabl & !sc_enabl & !sr2
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io_enabl & !mq2_h & !sc_enabl & !sr2
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io_enabl & !mq2_h & !sc_enabl & !sr2
+  # !ac2_l & !ac_enabl & !data_enabl & !io_enabl & !mq2_h & !sc_enabl & !sr2
+  # !ac2_h & !ac2_l & !data_enabl & !io_enabl & !mq2_h & !sc_enabl & !sr2
+  # !ac_enabl & !ac_low_enabl & !data2 & !io_enabl & !mq2_h & !sc_enabl & !sr2
+  # !ac2_h & !ac_low_enabl & !data2 & !io_enabl & !mq2_h & !sc_enabl & !sr2
+  # !ac2_l & !ac_enabl & !data2 & !io_enabl & !mq2_h & !sc_enabl & !sr2
+  # !ac2_h & !ac2_l & !data2 & !io_enabl & !mq2_h & !sc_enabl & !sr2
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io2 & !mq2_h & !sc_enabl & !sr2
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io2 & !mq2_h & !sc_enabl & !sr2
+  # !ac2_l & !ac_enabl & !data_enabl & !io2 & !mq2_h & !sc_enabl & !sr2
+  # !ac2_h & !ac2_l & !data_enabl & !io2 & !mq2_h & !sc_enabl & !sr2
+  # !ac_enabl & !ac_low_enabl & !data2 & !io2 & !mq2_h & !sc_enabl & !sr2
+  # !ac2_h & !ac_low_enabl & !data2 & !io2 & !mq2_h & !sc_enabl & !sr2
+  # !ac2_l & !ac_enabl & !data2 & !io2 & !mq2_h & !sc_enabl & !sr2
+  # !ac2_h & !ac2_l & !data2 & !io2 & !mq2_h & !sc_enabl & !sr2
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc2 & !sr2
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc2 & !sr2
+  # !ac2_l & !ac_enabl & !data_enabl & !io_enabl & !mq_enabl & !sc2 & !sr2
+  # !ac2_h & !ac2_l & !data_enabl & !io_enabl & !mq_enabl & !sc2 & !sr2
+  # !ac_enabl & !ac_low_enabl & !data2 & !io_enabl & !mq_enabl & !sc2 & !sr2
+  # !ac2_h & !ac_low_enabl & !data2 & !io_enabl & !mq_enabl & !sc2 & !sr2
+  # !ac2_l & !ac_enabl & !data2 & !io_enabl & !mq_enabl & !sc2 & !sr2
+  # !ac2_h & !ac2_l & !data2 & !io_enabl & !mq_enabl & !sc2 & !sr2
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io2 & !mq_enabl & !sc2 & !sr2
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io2 & !mq_enabl & !sc2 & !sr2
+  # !ac2_l & !ac_enabl & !data_enabl & !io2 & !mq_enabl & !sc2 & !sr2
+  # !ac2_h & !ac2_l & !data_enabl & !io2 & !mq_enabl & !sc2 & !sr2
+  # !ac_enabl & !ac_low_enabl & !data2 & !io2 & !mq_enabl & !sc2 & !sr2
+  # !ac2_h & !ac_low_enabl & !data2 & !io2 & !mq_enabl & !sc2 & !sr2
+  # !ac2_l & !ac_enabl & !data2 & !io2 & !mq_enabl & !sc2 & !sr2
+  # !ac2_h & !ac2_l & !data2 & !io2 & !mq_enabl & !sc2 & !sr2
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io_enabl & !mq2_h & !sc2 & !sr2
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io_enabl & !mq2_h & !sc2 & !sr2
+  # !ac2_l & !ac_enabl & !data_enabl & !io_enabl & !mq2_h & !sc2 & !sr2
+  # !ac2_h & !ac2_l & !data_enabl & !io_enabl & !mq2_h & !sc2 & !sr2
+  # !ac_enabl & !ac_low_enabl & !data2 & !io_enabl & !mq2_h & !sc2 & !sr2
+  # !ac2_h & !ac_low_enabl & !data2 & !io_enabl & !mq2_h & !sc2 & !sr2
+  # !ac2_l & !ac_enabl & !data2 & !io_enabl & !mq2_h & !sc2 & !sr2
+  # !ac2_h & !ac2_l & !data2 & !io_enabl & !mq2_h & !sc2 & !sr2
+  # !ac_enabl & !ac_low_enabl & !data_enabl & !io2 & !mq2_h & !sc2 & !sr2
+  # !ac2_h & !ac_low_enabl & !data_enabl & !io2 & !mq2_h & !sc2 & !sr2
+  # !ac2_l & !ac_enabl & !data_enabl & !io2 & !mq2_h & !sc2 & !sr2
+  # !ac2_h & !ac2_l & !data_enabl & !io2 & !mq2_h & !sc2 & !sr2
+  # !ac_enabl & !ac_low_enabl & !data2 & !io2 & !mq2_h & !sc2 & !sr2
+  # !ac2_h & !ac_low_enabl & !data2 & !io2 & !mq2_h & !sc2 & !sr2
+  # !ac2_l & !ac_enabl & !data2 & !io2 & !mq2_h & !sc2 & !sr2
+  # !ac2_h & !ac2_l & !data2 & !io2 & !mq2_h & !sc2 & !sr2
+
+n_t_8x =>
+    !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io_enabl & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io3 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io3 & !mq_enabl & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io_enabl & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io3 & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io3 & !mq3_h & !sc_enabl & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc3 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io_enabl & !mq_enabl & !sc3 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io3 & !mq_enabl & !sc3 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc3 & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io3 & !mq_enabl & !sc3 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc3 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io_enabl & !mq3_h & !sc3 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io3 & !mq3_h & !sc3 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc3 & !sr_enabl
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io3 & !mq3_h & !sc3 & !sr_enabl
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc_enabl & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io_enabl & !mq_enabl & !sc_enabl & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io3 & !mq_enabl & !sc_enabl & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc_enabl & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io3 & !mq_enabl & !sc_enabl & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc_enabl & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc_enabl & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc_enabl & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc_enabl & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc_enabl & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc_enabl & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc_enabl & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io_enabl & !mq3_h & !sc_enabl & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc_enabl & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc_enabl & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc_enabl & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io3 & !mq3_h & !sc_enabl & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc_enabl & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc_enabl & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc_enabl & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io3 & !mq3_h & !sc_enabl & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc3 & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc3 & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc3 & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io_enabl & !mq_enabl & !sc3 & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc3 & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc3 & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io_enabl & !mq_enabl & !sc3 & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io_enabl & !mq_enabl & !sc3 & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc3 & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc3 & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io3 & !mq_enabl & !sc3 & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io3 & !mq_enabl & !sc3 & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc3 & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc3 & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io3 & !mq_enabl & !sc3 & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io3 & !mq_enabl & !sc3 & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc3 & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc3 & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc3 & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io_enabl & !mq3_h & !sc3 & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc3 & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc3 & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io_enabl & !mq3_h & !sc3 & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io_enabl & !mq3_h & !sc3 & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc3 & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc3 & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data_enabl & !io3 & !mq3_h & !sc3 & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data_enabl & !io3 & !mq3_h & !sc3 & !sr3
+  # !ac_enabl & !ac_low_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc3 & !sr3
+  # !ac3_h & !ac_low_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc3 & !sr3
+  # !ac3_l & !ac_enabl & !be2 & !data3 & !io3 & !mq3_h & !sc3 & !sr3
+  # !ac3_h & !ac3_l & !be2 & !data3 & !io3 & !mq3_h & !sc3 & !sr3
+
+!pc2_h.d  =>
+    !aj1
+
+pc2_h.ck  =>
+    an2
+
+!pc2_l =>
+    pc2_h
+
+!pc3_h.d  =>
+    !ak2
+
+pc3_h.ck  =>
+    an2
+
+!pc3_l =>
+    pc3_h
+
+tt_shift =>
+    !ab2
+
+%END

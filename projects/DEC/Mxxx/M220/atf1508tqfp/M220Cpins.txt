@@ -1,0 +1,399 @@
+Pinlist
+
+Exported from M220C.sch at 10/8/2023 7:32:59 PM
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C1       +        +          pas      VCC
+         -        -          pas      GND
+
+C2       +        +          pas      VCC
+         -        -          pas      GND
+
+C3       +        +          pas      VCC
+         -        -          pas      GND
+
+C4       +        +          pas      VCC
+         -        -          pas      GND
+
+C5       +        +          pas      VCC
+         -        -          pas      GND
+
+C6       +        +          pas      VCC
+         -        -          pas      GND
+
+C7       +        +          pas      VCC
+         -        -          pas      GND
+
+C8       +        +          pas      VCC
+         -        -          pas      GND
+
+C9       +        +          pas      +3V
+         -        -          pas      GND
+
+E1       1        I4         in       SHIFT_R1
+         2        I5         in       NO_SHIFT
+         3        I6         in       ADDER2
+         4        I1         in       ADDER3
+         5        I2         in       SHIFT_L1
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      AJ1
+         9        I8         in       SHIFT_R2
+         10       I7         in       ADDER0
+         11       I10        pas      N$13
+         12       I9         pas      N$10
+         13       I3         in       ADDER1
+         14       VCC        pwr      VCC
+
+E2       1        I4         in       ADDER4
+         2        I5         in       ADDER3
+         3        I6         in       NO_SHIFT
+         4        I1         in       ADDER2
+         5        I2         in       SHIFT_R1
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      AK2
+         9        I8         in       SHIFT_R2
+         10       I7         in       ADDER1
+         11       I10        pas      N$11
+         12       I9         pas      N$9
+         13       I3         in       SHIFT_L1
+         14       VCC        pwr      VCC
+
+E3       1        A          in       MB2_L
+         2        B          in       +3V
+         3        C          in       +3V
+         4        A          in       +3V
+         5        B          in       +3V
+         6        C          in       ADDER4
+         7        GND        pwr      GND
+         8        D          in       SHIFT_L2
+         9        !X         out      N$10
+         10       X          out      N$13
+         11       X          out      N$13
+         12       !X         out      N$10
+         13       D          in       AND
+         14       VCC        pwr      VCC
+
+E4       1        CLR        in                *** unconnected ***
+         2        D          in       AJ1
+         3        CLK        in       AK1
+         4        PRE        in                *** unconnected ***
+         5        Q          out      MA2_H
+         6        !Q         out      MA2_L
+         7        GND        pwr      GND
+         8        !Q         out      MA3_L
+         9        Q          out      MA3_H
+         10       PRE        in                *** unconnected ***
+         11       CLK        in       AK1
+         12       D          in       AK2
+         13       CLR        in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E5       1        A          in       MB3_L
+         2        B          in       +3V
+         3        C          in       +3V
+         4        A          in       +3V
+         5        B          in       +3V
+         6        C          in       ADDER5
+         7        GND        pwr      GND
+         8        D          in       SHIFT_L2
+         9        !X         out      N$9
+         10       X          out      N$11
+         11       X          out      N$11
+         12       !X         out      N$9
+         13       D          in       AND
+         14       VCC        pwr      VCC
+
+E6       1        A          in       BB2
+         2        B          in       +3V
+         3        C          in       +3V
+         4        A          in       +3V
+         5        B          in       +3V
+         6        C          in       ADDER3
+         7        GND        pwr      GND
+         8        D          in       TT_SHIFT
+         9        !X         out      N$9
+         10       X          out      N$11
+         11       X          out      N$13
+         12       !X         out      N$10
+         13       D          in       TT_SHIFT
+         14       VCC        pwr      VCC
+
+E7       1        I0         in       MB3_L
+         2        I1         in       MB3_L
+         4        I2         in       MB3_L
+         5        I3         in       MB3_L
+         6        O          out      AS2
+         7        GND        pwr      GND
+         8        O          out      AS1
+         9        I0         in       MB3_H
+         10       I1         in       MB3_H
+         12       I2         in       MB3_H
+         13       I3         in       MB3_H
+         14       VCC        pwr      VCC
+
+E8       1        CLR        in                *** unconnected ***
+         2        D          in       AJ1
+         3        CLK        in       AR1
+         4        PRE        in                *** unconnected ***
+         5        Q          out      MB2_H
+         6        !Q         out      MB2_L
+         7        GND        pwr      GND
+         8        !Q         out      MB3_L
+         9        Q          out      MB3_H
+         10       PRE        in                *** unconnected ***
+         11       CLK        in       AR1
+         12       D          in       AK2
+         13       CLR        in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E9       1        CLR        in                *** unconnected ***
+         2        D          in       AJ1
+         3        CLK        in       AN2
+         4        PRE        in                *** unconnected ***
+         5        Q          out      PC2_H
+         6        !Q         out      PC2_L
+         7        GND        pwr      GND
+         8        !Q         out      PC3_L
+         9        Q          out      PC3_H
+         10       PRE        in                *** unconnected ***
+         11       CLK        in       AN2
+         12       D          in       AK2
+         13       CLR        in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E10      1        CLR        in                *** unconnected ***
+         2        D          in       AJ1
+         3        CLK        in       AU1
+         4        PRE        in                *** unconnected ***
+         5        Q          out      AC2_H
+         6        !Q         out      AC2_L
+         7        GND        pwr      GND
+         8        !Q         out      AC3_L
+         9        Q          out      AC3_H
+         10       PRE        in                *** unconnected ***
+         11       CLK        in       AU1
+         12       D          in       AK2
+         13       CLR        in                *** unconnected ***
+         14       VCC        pwr      VCC
+
+E11      1        I0         in       MB2_H
+         2        I1         in       MB2_H
+         4        I2         in       MB2_H
+         5        I3         in       MB2_H
+         6        O          out      AU2
+         7        GND        pwr      GND
+         8        O          out      AT2
+         9        I0         in       MB2_L
+         10       I1         in       MB2_L
+         12       I2         in       MB2_L
+         13       I3         in       MB2_L
+         14       VCC        pwr      VCC
+
+E12      1        I4         in       +3V
+         2        I5         in       AC3_H
+         3        I6         in       AC_ENABL
+         4        I1         in       AC3_L
+         5        I2         in       !AC_ENABL
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      N$8
+         9        I8         in       MQ3_H
+         10       I7         in       MQ_ENABL
+         11       I10        pas      N$4
+         12       I9         pas      N$2
+         13       I3         in       BE2
+         14       VCC        pwr      VCC
+
+E13      1        S1         out      ADDER3
+         2        A1         in       N$8
+         3        B1         in       N$14
+         4        VCC        pwr      VCC
+         5        C0         in       C0
+         6        P$2        pas               ***   unused    ***
+         7        P$2        pas               ***   unused    ***
+         8        P$2        pas               ***   unused    ***
+         9        P$2        pas               ***   unused    ***
+         10       C2         out      C2
+         11       GND        pwr      GND
+         12       S2         out      ADDER2
+         13       B2         in       N$12
+         14       A2         in       N$5
+
+E14      1        I4         in       SR_ENABL
+         2        I5         in       SC2
+         3        I6         in       SC_ENABL
+         4        I1         in       DATA2
+         5        I2         in       DATA_ENABL
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      N$5
+         9        I8         in       IO2
+         10       I7         in       IO_ENABL
+         11       I10        pas      N$6
+         12       I9         pas      N$7
+         13       I3         in       SR2
+         14       VCC        pwr      VCC
+
+E15      1        I4         in       SR_ENABL
+         2        I5         in       SC3
+         3        I6         in       SC_ENABL
+         4        I1         in       DATA3
+         5        I2         in       DATA_ENABL
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      N$8
+         9        I8         in       IO3
+         10       I7         in       IO_ENABL
+         11       I10        pas      N$4
+         12       I9         pas      N$2
+         13       I3         in       SR3
+         14       VCC        pwr      VCC
+
+E16      1        I4         in       GND
+         2        I5         in       AC2_H
+         3        I6         in       AC_ENABL
+         4        I1         in       AC2_L
+         5        I2         in       !AC_ENABL
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      N$5
+         9        I8         in       MQ2_H
+         10       I7         in       MQ_ENABL
+         11       I10        pas      N$6
+         12       I9         pas      N$7
+         13       I3         in       GND
+         14       VCC        pwr      VCC
+
+E17      1        I4         in       MA_ENABL
+         2        I5         in       PC2_H
+         3        I6         in       PC_ENABL
+         4        I1         in       MEM2
+         5        I2         in       MEM_ENABL
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      N$12
+         9        I8         in       DA2
+         10       I7         in       DA_ENABL
+         11       I10        pas               *** unconnected ***
+         12       I9         pas               *** unconnected ***
+         13       I3         in       MA2_H
+         14       VCC        pwr      VCC
+
+E18      1        I4         in       BR2
+         2        I5         in       PC3_H
+         3        I6         in       PC_ENABL
+         4        I1         in       BV2
+         5        I2         in       BV1
+         6        SPARE      pas               ***   unused    ***
+         7        GND        pwr      GND
+         8        O          out      N$14
+         9        I8         in       BU1
+         10       I7         in       DA_ENABL
+         11       I10        pas               *** unconnected ***
+         12       I9         pas               *** unconnected ***
+         13       I3         in       MA3_H
+         14       VCC        pwr      VCC
+
+R1       1        1          pas      MEM2
+         2        2          pas      VCC
+
+R2       1        1          pas      BV2
+         2        2          pas      VCC
+
+R3       1        1          pas      !TT_SHIFT
+         2        2          pas      N$3
+
+R4       1        1          pas      !TT_SHIFT
+         2        2          pas      VCC
+
+R5       1        1          pas      TT_SHIFT
+         2        2          pas      +3V
+
+R6       1        1          pas      +3V
+         2        2          pas      VCC
+
+R7       1        1          pas      GND
+         2        2          pas      +3V
+
+T1       1        E          pas      GND
+         2        B          pas      N$3
+         3        C          pas      TT_SHIFT
+
+U$1      AA1      1          io       AND
+         AA2      1          io       VCC
+         AB1      1          io       ADDER0
+         AB2      1          io       !TT_SHIFT
+         AC1      1          io       ADDER1
+         AC2      1          io       GND
+         AD1      1          io       SHIFT_R2
+         AD2      1          io       SHIFT_R1
+         AE1      1          io       NO_SHIFT
+         AE2      1          io       ADDER2
+         AF1      1          io       ADDER3
+         AF2      1          io       SHIFT_L1
+         AH1      1          io       SHIFT_L2
+         AH2      1          io       ADDER4
+         AJ1      1          io       AJ1
+         AJ2      1          io       ADDER5
+         AK1      1          io       AK1
+         AK2      1          io       AK2
+         AL1      1          io       MA3_L
+         AL2      1          io       MA3_H
+         AM1      1          io       MA2_L
+         AM2      1          io       MA2_H
+         AN1      1          io       PC3_H
+         AN2      1          io       AN2
+         AP1      1          io       PC2_H
+         AP2      1          io       PC3_L
+         AR1      1          io       AR1
+         AR2      1          io       PC2_L
+         AS1      1          io       AS1
+         AS2      1          io       AS2
+         AT1      1          io       GND
+         AT2      1          io       AT2
+         AU1      1          io       AU1
+         AU2      1          io       AU2
+         AV1      1          io       AC3_H
+         AV2      1          io       AC3_L
+         BA1      1          io       AC2_H
+         BA2      1          io       VCC
+         BB1      1          io       AC2_L
+         BB2      1          io       BB2
+         BC1      1          io       SR_ENABL
+         BC2      1          io       GND
+         BD1      1          io       SC2
+         BD2      1          io       SR3
+         BE1      1          io       SR2
+         BE2      1          io       BE2
+         BF1      1          io       MQ_ENABL
+         BF2      1          io       SC_ENABL
+         BH1      1          io       MQ2_H
+         BH2      1          io       AC_ENABL
+         BJ1      1          io       C0
+         BJ2      1          io       !AC_ENABL
+         BK1      1          io       IO2
+         BK2      1          io       C2
+         BL1      1          io       DATA_ENABL
+         BL2      1          io       IO_ENABL
+         BM1      1          io       IO3
+         BM2      1          io       DATA2
+         BN1      1          io       SC3
+         BN2      1          io       MQ3_H
+         BP1      1          io       MA_ENABL
+         BP2      1          io       DATA3
+         BR1      1          io       MEM2
+         BR2      1          io       BR2
+         BS1      1          io       DA2
+         BS2      1          io       PC_ENABL
+         BT1      1          io       GND
+         BT2      1          io       DA_ENABL
+         BU1      1          io       BU1
+         BU2      1          io       MEM_ENABL
+         BV1      1          io       BV1
+         BV2      1          io       BV2
+

@@ -1,0 +1,58 @@
+%SIGNAL
+PIN  18 =  aoi 
+PIN   2 =  e1 
+PIN   4 =  e2 
+PIN   6 =  e3 
+PIN   8 =  e4 
+PIN  11 =  e5 
+PIN  14 =  e6 
+PIN  16 =  e7 
+PIN   1 =  i1 
+PIN   3 =  i2 
+PIN   5 =  i3 
+PIN   7 =  i4 
+PIN   9 =  i5 
+PIN  13 =  i6 
+PIN  15 =  i7 
+PIN  17 =  i8 
+PIN  19 =  o1 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!aoi =>
+    e1 & i1
+  # e2 & i2
+  # e3 & i3
+  # e4 & i4
+  # e5 & i5
+  # e6 & i6
+  # e7 & i7
+
+o1 =>
+    aoi & !i8
+
+aoi.oe  =>
+    1 
+
+e6.oe  =>
+    0 
+
+e7.oe  =>
+    0 
+
+i6.oe  =>
+    0 
+
+i7.oe  =>
+    0 
+
+i8.oe  =>
+    0 
+
+o1.oe  =>
+    1 
+
+%END

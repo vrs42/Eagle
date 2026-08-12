@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'au1'
+Slack : -38.000
+TNS   : -76.000
+
+Type  : Setup 'ak1'
+Slack : -38.000
+TNS   : -69.000
+
+Type  : Setup 'an2'
+Slack : -38.000
+TNS   : -69.000
+
+Type  : Setup 'ar1'
+Slack : -38.000
+TNS   : -69.000
+
+Type  : Hold 'ak1'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Hold 'an2'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Hold 'ar1'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Hold 'au1'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'ak1'
+Slack : -5.500
+TNS   : -22.000
+
+Type  : Minimum Pulse Width 'an2'
+Slack : -5.500
+TNS   : -22.000
+
+Type  : Minimum Pulse Width 'ar1'
+Slack : -5.500
+TNS   : -22.000
+
+Type  : Minimum Pulse Width 'au1'
+Slack : -5.500
+TNS   : -22.000
+
+------------------------------------------------------------

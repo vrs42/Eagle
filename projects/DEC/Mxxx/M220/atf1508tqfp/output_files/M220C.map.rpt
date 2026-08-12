@@ -1,0 +1,223 @@
+Analysis & Synthesis report for M220C
+Thu Aug 06 23:09:37 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Aug 06 23:09:37 2026           ;
+; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name               ; M220C                                           ;
+; Top-level Entity Name       ; m220c                                           ;
+; Family                      ; MAX7000S                                        ;
+; Total macrocells            ; 39                                              ;
+; Total pins                  ; 66                                              ;
++-----------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                 ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM7128STC100-15 ;               ;
+; Top-level entity name                                                      ; m220c            ; M220C         ;
+; Family name                                                                ; MAX7000S         ; Cyclone IV GX ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Create Debugging Nodes for IP Cores                                        ; Off              ; Off           ;
+; Preserve fewer node names                                                  ; On               ; On            ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off              ; Off           ;
+; Verilog Version                                                            ; Verilog_2001     ; Verilog_2001  ;
+; VHDL Version                                                               ; VHDL_1993        ; VHDL_1993     ;
+; State Machine Processing                                                   ; Auto             ; Auto          ;
+; Safe State Machine                                                         ; Off              ; Off           ;
+; Extract Verilog State Machines                                             ; On               ; On            ;
+; Extract VHDL State Machines                                                ; On               ; On            ;
+; Ignore Verilog initial constructs                                          ; Off              ; Off           ;
+; Iteration limit for constant Verilog loops                                 ; 5000             ; 5000          ;
+; Iteration limit for non-constant Verilog loops                             ; 250              ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On               ; On            ;
+; Infer RAMs from Raw Logic                                                  ; On               ; On            ;
+; Parallel Synthesis                                                         ; On               ; On            ;
+; NOT Gate Push-Back                                                         ; On               ; On            ;
+; Power-Up Don't Care                                                        ; On               ; On            ;
+; Remove Duplicate Registers                                                 ; On               ; On            ;
+; Ignore CARRY Buffers                                                       ; Off              ; Off           ;
+; Ignore CASCADE Buffers                                                     ; Off              ; Off           ;
+; Ignore GLOBAL Buffers                                                      ; Off              ; Off           ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off              ; Off           ;
+; Ignore LCELL Buffers                                                       ; Auto             ; Auto          ;
+; Ignore SOFT Buffers                                                        ; Off              ; Off           ;
+; Limit AHDL Integers to 32 Bits                                             ; Off              ; Off           ;
+; Optimization Technique                                                     ; Speed            ; Speed         ;
+; Allow XOR Gate Usage                                                       ; On               ; On            ;
+; Auto Logic Cell Insertion                                                  ; On               ; On            ;
+; Parallel Expander Chain Length                                             ; 4                ; 4             ;
+; Auto Parallel Expanders                                                    ; On               ; On            ;
+; Auto Open-Drain Pins                                                       ; On               ; On            ;
+; Auto Resource Sharing                                                      ; Off              ; Off           ;
+; Maximum Fan-in Per Macrocell                                               ; 100              ; 100           ;
+; Use LogicLock Constraints during Resource Balancing                        ; On               ; On            ;
+; Ignore translate_off and synthesis_off directives                          ; Off              ; Off           ;
+; Report Parameter Settings                                                  ; On               ; On            ;
+; Report Source Assignments                                                  ; On               ; On            ;
+; Report Connectivity Checks                                                 ; On               ; On            ;
+; HDL message level                                                          ; Level2           ; Level2        ;
+; Suppress Register Optimization Related Messages                            ; Off              ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000             ; 5000          ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000             ; 5000          ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100              ; 100           ;
+; Block Design Naming                                                        ; Auto             ; Auto          ;
+; Synthesis Effort                                                           ; Auto             ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On               ; On            ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off              ; Off           ;
+; Analysis & Synthesis Message Level                                         ; Medium           ; Medium        ;
+; Disable Register Merging Across Hierarchies                                ; Auto             ; Auto          ;
+; Synthesis Seed                                                             ; 1                ; 1             ;
++----------------------------------------------------------------------------+------------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                   ;
++----------------------------------------------------------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                                 ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------------------------------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------+---------+
+; //wsl.localhost/Ubuntu/home/vrs/Eagle/projects/DEC/Mxxx/M220/atf1508tqfp/M220C.v ; yes             ; User Verilog HDL File  ; //wsl.localhost/Ubuntu/home/vrs/Eagle/projects/DEC/Mxxx/M220/atf1508tqfp/M220C.v ;         ;
++----------------------------------------------------------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; Logic cells          ; 39                   ;
+; Total registers      ; 8                    ;
+; I/O pins             ; 66                   ;
+; Shareable expanders  ; 20                   ;
+; Parallel expanders   ; 8                    ;
+; Maximum fan-out node ; and_h                ;
+; Maximum fan-out      ; 10                   ;
+; Total fan-out        ; 316                  ;
+; Average fan-out      ; 2.53                 ;
++----------------------+----------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                 ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |m220c                     ; 39         ; 66   ; |m220c              ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Aug 06 23:09:34 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M220C -c M220C
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file m220c.v
+    Info (12023): Found entity 1: m220c
+Info (12127): Elaborating entity "m220c" for the top level hierarchy
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "ac2_h" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "ac3_h" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "adder2" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "adder3" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "aj1" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "ak2" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "ma2_h" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "ma3_h" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "pc2_h" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "pc3_h" and its non-tri-state driver.
+Info (13060): One or more bidirs are fed by always enabled tri-state buffers
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ac2_h" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ac2_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ac3_h" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ac3_l" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "adder2" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "adder3" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "aj1" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ak2" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ma2_h" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "ma3_h" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "pc2_h" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "pc3_h" is moved to its source
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "ac2_h~synth"
+    Warning (13010): Node "ac2_h~synth"
+    Warning (13010): Node "ac3_h~synth"
+    Warning (13010): Node "ac3_h~synth"
+    Warning (13010): Node "adder2~synth"
+    Warning (13010): Node "adder3~synth"
+    Warning (13010): Node "aj1~synth"
+    Warning (13010): Node "ak2~synth"
+    Warning (13010): Node "ma2_h~synth"
+    Warning (13010): Node "ma3_h~synth"
+    Warning (13010): Node "pc2_h~synth"
+    Warning (13010): Node "pc3_h~synth"
+Info (21057): Implemented 125 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 45 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21060): Implemented 12 bidirectional pins
+    Info (21063): Implemented 39 macrocells
+    Info (21073): Implemented 20 shareable expanders
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4583 megabytes
+    Info: Processing ended: Thu Aug 06 23:09:37 2026
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

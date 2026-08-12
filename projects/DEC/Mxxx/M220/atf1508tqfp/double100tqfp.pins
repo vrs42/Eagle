@@ -1,0 +1,100 @@
+E1       1        BV2
+         10       BS1
+         100               *** unconnected ***
+         11       GND
+         12       BR2
+         13       BR1
+         14       BP2
+         15       TMS
+         16       BP1
+         17       BN2
+         18       VCC
+         19       BN1
+         2        BV1
+         20       BM2
+         21       BM1
+         22       BL2
+         23       BL1
+         24       BK2
+         25       BK1
+         26       GND
+         27       BJ2
+         28       BJ1
+         29       BH2
+         3        VCC
+         30       BH1
+         31       BF2
+         32       BF1
+         33       BE2
+         34       VCC
+         35       BE1
+         36       BD2
+         37       BD1
+         38       GND
+         39       VCC
+         4        TDI
+         40       BC1
+         41       BB2
+         42       BB1
+         43       GND
+         44       BA1
+         45       AV2
+         46       AV1
+         47       AU2
+         48       AU1
+         49       AT2
+         5        BU2
+         50       AT1
+         51       VCC
+         52       AS2
+         53       AS1
+         54       AR2
+         55       AR1
+         56       AP2
+         57       AP1
+         58       AN2
+         59       GND
+         6        BU1
+         60       AN1
+         61       AM2
+         62       TCK
+         63       AM1
+         64       AL2
+         65       AL1
+         66       VCC
+         67       AK2
+         68       AK1
+         69       AJ2
+         7        BT2
+         70       AJ1
+         71       AH2
+         72       AH1
+         73       TDO
+         74       GND
+         75       AF2
+         76       AF1
+         77       AE2
+         78       AE1
+         79       AD2
+         8        BT1
+         80       AD1
+         81       AC1
+         82       VCC
+         83       AB2
+         84       AB1
+         85       AA1
+         86       GND
+         87       OSC
+         88                *** unconnected ***
+         89                *** unconnected ***
+         9        BS2
+         90                *** unconnected ***
+         91       VCC
+         92                *** unconnected ***
+         93                *** unconnected ***
+         94                *** unconnected ***
+         95       GND
+         96                *** unconnected ***
+         97                *** unconnected ***
+         98                *** unconnected ***
+         99                *** unconnected ***

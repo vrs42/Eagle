@@ -1,0 +1,119 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 17:40:07  August 06, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		M220C_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY MAX7000S
+set_global_assignment -name DEVICE "EPM7128STC100-15"
+set_global_assignment -name TOP_LEVEL_ENTITY m220c
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:40:07  AUGUST 06, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name VERILOG_FILE M220C.v
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 100
+set_global_assignment -name MAX7000_DEVICE_IO_STANDARD TTL
+set_location_assignment PIN_1 -to bv2
+set_location_assignment PIN_2 -to bv1
+set_location_assignment PIN_5 -to mem_enabl
+set_location_assignment PIN_6 -to bu1
+set_location_assignment PIN_7 -to da_enabl
+set_location_assignment PIN_9 -to pc_enabl
+set_location_assignment PIN_10 -to da2
+set_location_assignment PIN_12 -to br2
+set_location_assignment PIN_13 -to mem2
+set_location_assignment PIN_14 -to data3
+set_location_assignment PIN_16 -to ma_enabl
+set_location_assignment PIN_17 -to mq3_h
+set_location_assignment PIN_19 -to sc3
+set_location_assignment PIN_20 -to data2
+set_location_assignment PIN_21 -to io3
+set_location_assignment PIN_22 -to io_enabl
+set_location_assignment PIN_23 -to data_enabl
+set_location_assignment PIN_24 -to c2
+set_location_assignment PIN_25 -to io2
+set_location_assignment PIN_27 -to ac_enabl_l
+set_location_assignment PIN_28 -to c0
+set_location_assignment PIN_29 -to ac_enabl
+set_location_assignment PIN_30 -to mq2_h
+set_location_assignment PIN_31 -to sc_enabl
+set_location_assignment PIN_32 -to mq_enabl
+set_location_assignment PIN_33 -to be2
+set_location_assignment PIN_35 -to sr2
+set_location_assignment PIN_36 -to sr3
+set_location_assignment PIN_37 -to sc2
+set_location_assignment PIN_40 -to sr_enabl
+set_location_assignment PIN_41 -to bb2
+set_location_assignment PIN_42 -to ac2_l
+set_location_assignment PIN_44 -to ac2_h
+set_location_assignment PIN_45 -to ac3_l
+set_location_assignment PIN_46 -to ac3_h
+set_location_assignment PIN_47 -to au2
+set_location_assignment PIN_48 -to au1
+set_location_assignment PIN_49 -to at2
+set_location_assignment PIN_52 -to as2
+set_location_assignment PIN_53 -to as1
+set_location_assignment PIN_54 -to pc2_l
+set_location_assignment PIN_55 -to ar1
+set_location_assignment PIN_56 -to pc3_l
+set_location_assignment PIN_57 -to pc2_h
+set_location_assignment PIN_58 -to an2
+set_location_assignment PIN_60 -to pc3_h
+set_location_assignment PIN_61 -to ma2_h
+set_location_assignment PIN_63 -to ma2_l
+set_location_assignment PIN_64 -to ma3_h
+set_location_assignment PIN_65 -to ma3_l
+set_location_assignment PIN_67 -to ak2
+set_location_assignment PIN_68 -to ak1
+set_location_assignment PIN_69 -to adder5
+set_location_assignment PIN_70 -to aj1
+set_location_assignment PIN_71 -to adder4
+set_location_assignment PIN_72 -to shift_l2
+set_location_assignment PIN_75 -to shift_l1
+set_location_assignment PIN_76 -to adder3
+set_location_assignment PIN_77 -to adder2
+set_location_assignment PIN_78 -to no_shift
+set_location_assignment PIN_79 -to shift_r1
+set_location_assignment PIN_80 -to shift_r2
+set_location_assignment PIN_81 -to adder1
+set_location_assignment PIN_83 -to tt_shift_l
+set_location_assignment PIN_84 -to adder0
+set_location_assignment PIN_85 -to and_h
