@@ -1,0 +1,101 @@
+#!/usr/bin/perl
+
+#
+# Read a .ls or .lst file, and attempt to
+# re-create the original source.
+#
+
+#
+# Known bugs:
+#
+
+$of = $ARGV[0];
+$of =~ s/.lst$/.pal/;
+$of =~ s/.ls$/.pa/;
+die "list file?: $of" if $of eq $ARGV[0];
+
+open(INPUT, $ARGV[0]) || die "$ARGV[0]: $!";
+open(OUTPUT, ">$of") || die "$of: $!";
+
+$nl = 0; # No blank lines seen yet
+while (<INPUT>) {
+  s/\r//;	# Remove CR, if any
+  chop;		# Remove LF
+  s/\f//;	# Remove FF
+# Page zero literals are output after the '$'
+# which terminates the program.  This means
+# they won't be output here.
+#print "*$1;$2\n" if /(\d+)\s+(\d+)/;
+  if ($_ eq "") {
+#warn "blank\n";
+    $nl++;
+    next;
+  }
+  # This line is non-blank. Maybe it is a page header?
+  if (/PAL8.*PAGE/) {
+#warn "header\n";
+    # Ignore previous blank lines, and set up to
+    # ignore the blank line which follows.
+    $nl = -1;
+    next;
+  }
+  # Not a page header, so preserve the blank lines
+  # preceding it (if any).
+  while ($nl > 0) {
+#warn "saved nl\n";
+    print OUTPUT "\r\n";
+    $nl--;
+  }
+  if (s/^\d+\s+\d+['\s]//) {
+#warn "program data\n";
+    # Output it without line number or octal content
+# TODO: Save the octal elsewhere??
+    s/^\s+//;	# Lose leading spaces
+    # Two cases, it contains a comma, or it doesn't.
+    if (m:^[^/]+,:) {
+      s/,\s+/,\t/; # Convert to tab, preserves alignment
+    } else {
+      print OUTPUT "\t";
+    }
+    print OUTPUT $_, "\r\n";
+    $nl = 0;
+    next;
+  }
+  # Comments are just output as is.
+  # Note: Spaces before the /, if any, are elided.
+  if (s:\s+/:/:) {
+#warn "comment\n";
+    print OUTPUT $_, "\r\n";
+    $nl = 0;
+    next;
+  }
+  # Multi-word output in the listing is elided.
+  next if /^\d+\s+\d+\s*$/;
+  # The "$" indicates the end of the program.
+  # Exit so that we don't try to process the
+  # symbol table.
+  if (s:\s+\$:\$:) {
+#warn "end\n";
+    print OUTPUT $_, "\r\n";
+    exit 0;
+  }
+  # Some lines don't generate stored code,
+  # but do get an octal number in front.
+  if (s/\s+\d+\s\s//) {
+#warn "nocode\n";
+    s/\s+// unless /^\s\s\s/;
+    print OUTPUT $_, "\r\n";
+    $nl = 0;
+    next;
+  }
+  # Some lines don't generate code, but should be
+  # output anyway. (Comments, ifdef stuff, etc.)
+  # We don't know how much leadint whitespace
+  # to remove, so we remove it all.
+  if (s:\s+::) {
+#warn "comment\n";
+    print OUTPUT $_, "\r\n";
+    $nl = 0;
+    next;
+  }
+}
